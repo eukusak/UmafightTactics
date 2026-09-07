@@ -1,0 +1,1274 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-09-07T01:31:57+00:00",
+  "source": "UmaRefs",
+  "source_page": "https://umarefs.crd.co/",
+  "asset_type": "character-race-reference",
+  "npcs_included": false,
+  "outfits_included": false,
+  "character_count": 143,
+  "ok_count": 23,
+  "incomplete_count": 11,
+  "failure_count": 120,
+  "characters": [
+    {
+      "character_name": "Special Week",
+      "incomplete_on_source": false,
+      "source_page": "https://umarefs.crd.co/",
+      "drive_url": "https://drive.google.com/drive/folders/1_BJMmeFekxP5eXBZZH9bXGEpXWtVLWX8?usp=drive_link",
+      "file_name": "SpecialWeek-Race.png",
+      "path": "public/assets/characters/race/SpecialWeek-Race.png",
+      "width": 14000,
+      "height": 5600,
+      "bytes": 11634565,
+      "sha256": "dd80433d16a4dedeb5bdc1dceb36cfd96c721cd9d65ad513e6a5cd6045c48e04",
+      "status": "ok"
+    },
+    {
+      "character_name": "Silence Suzuka",
+      "incomplete_on_source": false,
+      "source_page": "https://umarefs.crd.co/",
+      "drive_url": "https://drive.google.com/drive/folders/1qyxKDFARKzlA4x9swNNHEyKDnSbJyug0?usp=drive_link",
+      "file_name": "SilenceSuzuka-Race.png",
+      "path": "public/assets/characters/race/SilenceSuzuka-Race.png",
+      "width": 14000,
+      "height": 5600,
+      "bytes": 10933848,
+      "sha256": "2573dea6d1a0045842606579ca37256c46d6c184261d106d35e64c9cdbbc3f1d",
+      "status": "ok"
+    },
+    {
+      "character_name": "Tokai Teio",
+      "incomplete_on_source": false,
+      "source_page": "https://umarefs.crd.co/",
+      "drive_url": "https://drive.google.com/drive/folders/1y42M0ZsggbYRgwqFCqwwbF75vXmn-T6N?usp=drive_link",
+      "file_name": "TokaiTeio-Race.png",
+      "path": "public/assets/characters/race/TokaiTeio-Race.png",
+      "width": 14000,
+      "height": 5600,
+      "bytes": 13558433,
+      "sha256": "97848cd8e47d288760cc95071fe22b43b93ba99a086fd9738998ae21c437343b",
+      "status": "ok"
+    },
+    {
+      "character_name": "Maruzensky",
+      "incomplete_on_source": false,
+      "source_page": "https://umarefs.crd.co/",
+      "drive_url": "https://drive.google.com/drive/folders/1PSYfGJSoIPxsKmEF3PnFL7OXx-2YSnSE?usp=drive_link",
+      "file_name": "Maruzensky-Race.png",
+      "path": "public/assets/characters/race/Maruzensky-Race.png",
+      "width": 14000,
+      "height": 5600,
+      "bytes": 16119213,
+      "sha256": "f754064a2ce56063b7a6fbcbe0214a0af3f22e7b886d6a16e251e0c1911d007e",
+      "status": "ok"
+    },
+    {
+      "character_name": "Fuji Kiseki",
+      "incomplete_on_source": false,
+      "source_page": "https://umarefs.crd.co/",
+      "drive_url": "https://drive.google.com/drive/folders/1SGyCXds4-cRtzFfnwEFcjG-J7IcisIWQ?usp=drive_link",
+      "file_name": "FujiKiseki-Race.png",
+      "path": "public/assets/characters/race/FujiKiseki-Race.png",
+      "width": 14000,
+      "height": 5600,
+      "bytes": 12494188,
+      "sha256": "d027d46e05b3399806942062a9d8428db016d54fa911fff4f400d51b7d74c670",
+      "status": "ok"
+    },
+    {
+      "character_name": "Oguri Cap",
+      "incomplete_on_source": false,
+      "source_page": "https://umarefs.crd.co/",
+      "drive_url": "https://drive.google.com/drive/folders/1N5BNDhAyQQmTnZ_wIOb5QHsZ-Mkxeat1?usp=drive_link",
+      "file_name": "OguriCap-Race.png",
+      "path": "public/assets/characters/race/OguriCap-Race.png",
+      "width": 14000,
+      "height": 5600,
+      "bytes": 11840474,
+      "sha256": "13c93caa9030af9504092121ec8677700e239805231c8415f2e3c7f5b1e2257e",
+      "status": "ok"
+    },
+    {
+      "character_name": "Gold Ship",
+      "incomplete_on_source": false,
+      "source_page": "https://umarefs.crd.co/",
+      "drive_url": "https://drive.google.com/drive/folders/1du5fCphp6FpGJVIO2WsymdKjL5Ig162y?usp=drive_link",
+      "file_name": "GoldShip-Race.png",
+      "path": "public/assets/characters/race/GoldShip-Race.png",
+      "width": 14000,
+      "height": 5600,
+      "bytes": 16399787,
+      "sha256": "526e566a4cde9311908861dd6e905ef3baee86c83a06a09aa7d5510786d0435b",
+      "status": "ok"
+    },
+    {
+      "character_name": "Vodka",
+      "incomplete_on_source": false,
+      "source_page": "https://umarefs.crd.co/",
+      "drive_url": "https://drive.google.com/drive/folders/1KRUJv9eMY_HTRFu_ZOvc_1VYIZYb7gEh?usp=drive_link",
+      "file_name": "Vodka-Race.png",
+      "path": "public/assets/characters/race/Vodka-Race.png",
+      "width": 14000,
+      "height": 5600,
+      "bytes": 13262047,
+      "sha256": "ebe476f3aef42d03c6d75d05ebe1f162e29c9346bf798c8bdbf323f4f20e46ce",
+      "status": "ok"
+    },
+    {
+      "character_name": "Daiwa Scarlet",
+      "incomplete_on_source": false,
+      "source_page": "https://umarefs.crd.co/",
+      "drive_url": "https://drive.google.com/drive/folders/11RdY7Q9L29R8cr25e5gH9gjYkiIYuAJR?usp=drive_link",
+      "file_name": "DaiwaScarlet-Race.png",
+      "path": "public/assets/characters/race/DaiwaScarlet-Race.png",
+      "width": 14000,
+      "height": 5600,
+      "bytes": 13532102,
+      "sha256": "9ea0f9c73902c0b9dd7c7eada525fcef47a8c87419c1ccdc09b20b848e66ec31",
+      "status": "ok"
+    },
+    {
+      "character_name": "Taiki Shuttle",
+      "incomplete_on_source": false,
+      "source_page": "https://umarefs.crd.co/",
+      "drive_url": "https://drive.google.com/drive/folders/1t2ZcpID7SIoCEECL8fPDBM3hRFv4xnOw?usp=drive_link",
+      "file_name": "TaikiShuttle-Race.png",
+      "path": "public/assets/characters/race/TaikiShuttle-Race.png",
+      "width": 16000,
+      "height": 4000,
+      "bytes": 10567435,
+      "sha256": "bde88adb93d6af30326e054530041a91e2a1e1f023270246177717b9c953a852",
+      "status": "ok"
+    },
+    {
+      "character_name": "Grass Wonder",
+      "incomplete_on_source": false,
+      "source_page": "https://umarefs.crd.co/",
+      "drive_url": "https://drive.google.com/drive/folders/10vJn55C0YlRO9ad-V7iUxQ-zvZ-Ds7Ub?usp=drive_link",
+      "file_name": "GrassWonder-Race.png",
+      "path": "public/assets/characters/race/GrassWonder-Race.png",
+      "width": 8192,
+      "height": 2048,
+      "bytes": 3566123,
+      "sha256": "99299ecb7637979c6bc918fd04f4b17ee17430f9c16f6d791bc40028429f5b89",
+      "status": "ok"
+    },
+    {
+      "character_name": "Hishi Amazon",
+      "incomplete_on_source": false,
+      "source_page": "https://umarefs.crd.co/",
+      "drive_url": "https://drive.google.com/drive/folders/1u_F899WTHTcXs65WwAd4_onnUZBPdWLz?usp=drive_link",
+      "file_name": "HishiAmazon-Race.png",
+      "path": "public/assets/characters/race/HishiAmazon-Race.png",
+      "width": 8192,
+      "height": 2048,
+      "bytes": 4250254,
+      "sha256": "9263a91036b6b0d4b75330e49b078406a919a036ee0a1f884f0206f7952d8adf",
+      "status": "ok"
+    },
+    {
+      "character_name": "Mejiro McQueen",
+      "incomplete_on_source": false,
+      "source_page": "https://umarefs.crd.co/",
+      "drive_url": "https://drive.google.com/drive/folders/1ZFlWiTmwRUAg8IGe7JDTJ4FplrWRY5es?usp=drive_link",
+      "file_name": "MejiroMcQueen-Race.png",
+      "path": "public/assets/characters/race/MejiroMcQueen-Race.png",
+      "width": 8192,
+      "height": 2048,
+      "bytes": 4083929,
+      "sha256": "e2625677d2b85bc726cbeb3864fe67c742b8e40996442d8bc03228af152c6649",
+      "status": "ok"
+    },
+    {
+      "character_name": "El Condor Pasa",
+      "incomplete_on_source": false,
+      "source_page": "https://umarefs.crd.co/",
+      "drive_url": "https://drive.google.com/drive/folders/1O-VW5rAu3GV9Uat5rOJpSXeqNgMewvse?usp=drive_link",
+      "file_name": "ElCondorPasa-Race.png",
+      "path": "public/assets/characters/race/ElCondorPasa-Race.png",
+      "width": 8192,
+      "height": 2048,
+      "bytes": 4061658,
+      "sha256": "ac65106c63cbf2e3ee0efe6dfa64f2d8eecf4aa9944d7145f9d1a8fb9e65944c",
+      "status": "ok"
+    },
+    {
+      "character_name": "T.M. Opera O",
+      "incomplete_on_source": false,
+      "source_page": "https://umarefs.crd.co/",
+      "drive_url": "https://drive.google.com/drive/folders/1Lu20SQuY00gd3M_F00gLVwF4NnjZNDnn?usp=drive_link",
+      "file_name": "TMOperaO-Race.png",
+      "path": "public/assets/characters/race/TMOperaO-Race.png",
+      "width": 16000,
+      "height": 4000,
+      "bytes": 11502469,
+      "sha256": "11fa38abeadb5ea9f9b96d1b024305fc526e0f3e99e3175f6900855d0c429091",
+      "status": "ok"
+    },
+    {
+      "character_name": "Narita Brian",
+      "incomplete_on_source": false,
+      "source_page": "https://umarefs.crd.co/",
+      "drive_url": "https://drive.google.com/drive/folders/1pCP47vRiBZHWUlYhUSVVq_XqMp_BxQAe?usp=drive_link",
+      "file_name": "NaritaBrian-Race.png",
+      "path": "public/assets/characters/race/NaritaBrian-Race.png",
+      "width": 16000,
+      "height": 4000,
+      "bytes": 9944490,
+      "sha256": "b82303c510a38c3ee05c9c661620b7f0315aaac88eb77282858181fca476c664",
+      "status": "ok"
+    },
+    {
+      "character_name": "Symboli Rudolf",
+      "incomplete_on_source": false,
+      "source_page": "https://umarefs.crd.co/",
+      "drive_url": "https://drive.google.com/drive/folders/1qFLkjYKU56WlQ9xbjsBONUVSBdev06Z1?usp=drive_link",
+      "file_name": "SymboliRudolf-Race.png",
+      "path": "public/assets/characters/race/SymboliRudolf-Race.png",
+      "width": 16000,
+      "height": 4000,
+      "bytes": 10892121,
+      "sha256": "152b4afa60e4e7d5c1f9f6eae4401c7cdc105e60b13054c7f768543c3ca30534",
+      "status": "ok"
+    },
+    {
+      "character_name": "Air Groove",
+      "incomplete_on_source": false,
+      "source_page": "https://umarefs.crd.co/",
+      "drive_url": "https://drive.google.com/drive/folders/12SppcRFekh7li0VjKPXc5EKWL4pASWgA?usp=drive_link",
+      "file_name": "AirGroove-Race.png",
+      "path": "public/assets/characters/race/AirGroove-Race.png",
+      "width": 8192,
+      "height": 2048,
+      "bytes": 3912423,
+      "sha256": "54f3e7c9fecdc4966736551c5d20e17056b1e2548a866fbc05ddca41ed9b9eaf",
+      "status": "ok"
+    },
+    {
+      "character_name": "Agnes Digital",
+      "incomplete_on_source": false,
+      "source_page": "https://umarefs.crd.co/",
+      "drive_url": "https://drive.google.com/drive/folders/1E-xahwc1oBnty9Pgw__XxfIBdtfo50UE?usp=drive_link",
+      "file_name": "AgnesDigital-Race.png",
+      "path": "public/assets/characters/race/AgnesDigital-Race.png",
+      "width": 8192,
+      "height": 2048,
+      "bytes": 3516576,
+      "sha256": "753d3da4b1f99d86f51fcd009ae43783d0f6013ca1c9d6581f7f72d817445289",
+      "status": "ok"
+    },
+    {
+      "character_name": "Seiun Sky",
+      "incomplete_on_source": false,
+      "source_page": "https://umarefs.crd.co/",
+      "drive_url": "https://drive.google.com/drive/folders/1MZjfDdOSgczecQqlG3mNtwoie6QQEFXm?usp=drive_link",
+      "file_name": "SeiunSky-Race.png",
+      "path": "public/assets/characters/race/SeiunSky-Race.png",
+      "width": 14000,
+      "height": 5600,
+      "bytes": 11068670,
+      "sha256": "ab9f21377d3dc5d7fc0d275a141cf45b2db036f7fe91d616bc84fa6d4b82d17f",
+      "status": "ok"
+    },
+    {
+      "character_name": "Tamamo Cross",
+      "incomplete_on_source": false,
+      "source_page": "https://umarefs.crd.co/",
+      "drive_url": "https://drive.google.com/drive/folders/1NBJKcDRRa3EfvgfrgKkcqIIXrTYyEyvr?usp=drive_link",
+      "file_name": "TamamoCross-Race.png",
+      "path": "public/assets/characters/race/TamamoCross-Race.png",
+      "width": 8192,
+      "height": 2048,
+      "bytes": 3097340,
+      "sha256": "8b990863ae63e136328f58671637d11952a523487cf81c375a277ff07a4e692b",
+      "status": "ok"
+    },
+    {
+      "character_name": "Fine Motion",
+      "incomplete_on_source": false,
+      "source_page": "https://umarefs.crd.co/",
+      "drive_url": "https://drive.google.com/drive/folders/12vG57dAI0P6ZrIWHsRLan_2bjgMK0zOW?usp=drive_link",
+      "file_name": "FineMotion-Race.png",
+      "path": "public/assets/characters/race/FineMotion-Race.png",
+      "width": 14000,
+      "height": 5600,
+      "bytes": 10476030,
+      "sha256": "55633cb0dd9ec39cdd91b4f251441b76959b13112857d6cae96e97e0552ea2a1",
+      "status": "ok"
+    },
+    {
+      "character_name": "Biwa Hayahide",
+      "incomplete_on_source": false,
+      "source_page": "https://umarefs.crd.co/",
+      "drive_url": "https://drive.google.com/drive/folders/1I7B0KvcIUe15tX6hOs27Krb1sq3HP-aS?usp=drive_link",
+      "file_name": "BiwaHayahide-Race.png",
+      "path": "public/assets/characters/race/BiwaHayahide-Race.png",
+      "width": 8192,
+      "height": 2048,
+      "bytes": 3831469,
+      "sha256": "9db160b50c8705ac486a7767153d5c4da6923ee1b32842622005077c8c94d500",
+      "status": "ok"
+    },
+    {
+      "character_name": "Mayano Top Gun",
+      "incomplete_on_source": false,
+      "source_page": "https://umarefs.crd.co/",
+      "drive_url": "https://drive.google.com/drive/folders/1B2nRnyYH907nsbFm5Btx_zoqNDoPQ3eQ?usp=drive_link",
+      "status": "download-error",
+      "error": "FileURLRetrievalError: Failed to retrieve file url:\n\n\tCannot retrieve the public link of the file. You may need to change\n\tthe permission to 'Anyone with the link', or have had many accesses.\n\tCheck FAQ in https://github.com/wkentaro/gdown?tab=readme-ov-file#faq.\n\nYou may still be able to access the file from the browser:\n\n\thttps://drive.google.com/uc?id=1bCTs7MeukWLfEg_nsDjJCNUVyfNXugIV\n\nbut Gdown can't. Please check connections and permissions."
+    },
+    {
+      "character_name": "Manhattan Cafe",
+      "incomplete_on_source": false,
+      "source_page": "https://umarefs.crd.co/",
+      "drive_url": "https://drive.google.com/drive/folders/1yceTFWhi53R_HKXTtlb6Nz2OnsJpfcXR?usp=drive_link",
+      "status": "download-error",
+      "error": "FileURLRetrievalError: Failed to retrieve file url:\n\n\tCannot retrieve the public link of the file. You may need to change\n\tthe permission to 'Anyone with the link', or have had many accesses.\n\tCheck FAQ in https://github.com/wkentaro/gdown?tab=readme-ov-file#faq.\n\nYou may still be able to access the file from the browser:\n\n\thttps://drive.google.com/uc?id=1YDsQYpLKG75UMcLwX7mKfcVrjqkHFLip\n\nbut Gdown can't. Please check connections and permissions."
+    },
+    {
+      "character_name": "Mihono Bourbon",
+      "incomplete_on_source": false,
+      "source_page": "https://umarefs.crd.co/",
+      "drive_url": "https://drive.google.com/drive/folders/13Xq2Mdba3iPzsAQzkfw1kuI5SixBxpJb?usp=drive_link",
+      "status": "download-error",
+      "error": "FileURLRetrievalError: Failed to retrieve file url:\n\n\tCannot retrieve the public link of the file. You may need to change\n\tthe permission to 'Anyone with the link', or have had many accesses.\n\tCheck FAQ in https://github.com/wkentaro/gdown?tab=readme-ov-file#faq.\n\nYou may still be able to access the file from the browser:\n\n\thttps://drive.google.com/uc?id=1m7eJwIx10P5j0J6iM6UiK4N3cXL6t9cW\n\nbut Gdown can't. Please check connections and permissions."
+    },
+    {
+      "character_name": "Mejiro Ryan",
+      "incomplete_on_source": false,
+      "source_page": "https://umarefs.crd.co/",
+      "drive_url": "https://drive.google.com/drive/folders/1cCaGfrPnJPQiGmmV0aPrcaV65AJPWTyr?usp=drive_link",
+      "status": "download-error",
+      "error": "FileURLRetrievalError: Failed to retrieve file url:\n\n\tCannot retrieve the public link of the file. You may need to change\n\tthe permission to 'Anyone with the link', or have had many accesses.\n\tCheck FAQ in https://github.com/wkentaro/gdown?tab=readme-ov-file#faq.\n\nYou may still be able to access the file from the browser:\n\n\thttps://drive.google.com/uc?id=1yHZKw059pUrINKZcwLjpFbAVkg-h2wsp\n\nbut Gdown can't. Please check connections and permissions."
+    },
+    {
+      "character_name": "Hishi Akebono",
+      "incomplete_on_source": false,
+      "source_page": "https://umarefs.crd.co/",
+      "drive_url": "https://drive.google.com/drive/folders/1I__fv-gt5lIZ4BLSZfxPCJojtUGM_5sa?usp=drive_link",
+      "status": "download-error",
+      "error": "FileURLRetrievalError: Failed to retrieve file url:\n\n\tCannot retrieve the public link of the file. You may need to change\n\tthe permission to 'Anyone with the link', or have had many accesses.\n\tCheck FAQ in https://github.com/wkentaro/gdown?tab=readme-ov-file#faq.\n\nYou may still be able to access the file from the browser:\n\n\thttps://drive.google.com/uc?id=1wauOLDPGciZua_yJ6_mfPZcn3LJ1IPWF\n\nbut Gdown can't. Please check connections and permissions."
+    },
+    {
+      "character_name": "Yukino Bijin",
+      "incomplete_on_source": false,
+      "source_page": "https://umarefs.crd.co/",
+      "drive_url": "https://drive.google.com/drive/folders/1GtVut-s72OtSPmxtmgXkLYNuuWqFhQ9C?usp=drive_link",
+      "status": "download-error",
+      "error": "FileURLRetrievalError: Failed to retrieve file url:\n\n\tCannot retrieve the public link of the file. You may need to change\n\tthe permission to 'Anyone with the link', or have had many accesses.\n\tCheck FAQ in https://github.com/wkentaro/gdown?tab=readme-ov-file#faq.\n\nYou may still be able to access the file from the browser:\n\n\thttps://drive.google.com/uc?id=1WVNmlE6LOBfWND8HAWLD7hzLJdqfDsjm\n\nbut Gdown can't. Please check connections and permissions."
+    },
+    {
+      "character_name": "Rice Shower",
+      "incomplete_on_source": false,
+      "source_page": "https://umarefs.crd.co/",
+      "drive_url": "https://drive.google.com/drive/folders/1pb19VTI9IW_e2z1wFf5oP2xsY7ECo7yQ?usp=drive_link",
+      "status": "download-error",
+      "error": "FileURLRetrievalError: Failed to retrieve file url:\n\n\tCannot retrieve the public link of the file. You may need to change\n\tthe permission to 'Anyone with the link', or have had many accesses.\n\tCheck FAQ in https://github.com/wkentaro/gdown?tab=readme-ov-file#faq.\n\nYou may still be able to access the file from the browser:\n\n\thttps://drive.google.com/uc?id=1dVWLnJL_ze2FRNKrNPY5wqtZmx5IHEUl\n\nbut Gdown can't. Please check connections and permissions."
+    },
+    {
+      "character_name": "Ines Fujin",
+      "incomplete_on_source": false,
+      "source_page": "https://umarefs.crd.co/",
+      "drive_url": "https://drive.google.com/drive/folders/1Eo43UFnm0zfsVeXqdmT4_gxfthSmGEXP?usp=drive_link",
+      "status": "download-error",
+      "error": "FileURLRetrievalError: Failed to retrieve file url:\n\n\tCannot retrieve the public link of the file. You may need to change\n\tthe permission to 'Anyone with the link', or have had many accesses.\n\tCheck FAQ in https://github.com/wkentaro/gdown?tab=readme-ov-file#faq.\n\nYou may still be able to access the file from the browser:\n\n\thttps://drive.google.com/uc?id=1mKU8wv2NxjFJP8mauw3BhEa3y89RtdSZ\n\nbut Gdown can't. Please check connections and permissions."
+    },
+    {
+      "character_name": "Agnes Tachyon",
+      "incomplete_on_source": false,
+      "source_page": "https://umarefs.crd.co/",
+      "drive_url": "https://drive.google.com/drive/folders/1zc7trK7HmiRJZmrbFPSHT7w_okmtfpoX?usp=drive_link",
+      "status": "download-error",
+      "error": "FileURLRetrievalError: Failed to retrieve file url:\n\n\tCannot retrieve the public link of the file. You may need to change\n\tthe permission to 'Anyone with the link', or have had many accesses.\n\tCheck FAQ in https://github.com/wkentaro/gdown?tab=readme-ov-file#faq.\n\nYou may still be able to access the file from the browser:\n\n\thttps://drive.google.com/uc?id=1OK148vz_RXtlbSfztAU_oif0DTY4mE-v\n\nbut Gdown can't. Please check connections and permissions."
+    },
+    {
+      "character_name": "Admire Vega",
+      "incomplete_on_source": false,
+      "source_page": "https://umarefs.crd.co/",
+      "drive_url": "https://drive.google.com/drive/folders/1Qit3ZxmUHtxpl-3C7XE_9rMrTxXngQhD?usp=drive_link",
+      "status": "download-error",
+      "error": "FileURLRetrievalError: Failed to retrieve file url:\n\n\tCannot retrieve the public link of the file. You may need to change\n\tthe permission to 'Anyone with the link', or have had many accesses.\n\tCheck FAQ in https://github.com/wkentaro/gdown?tab=readme-ov-file#faq.\n\nYou may still be able to access the file from the browser:\n\n\thttps://drive.google.com/uc?id=1klVtJAKmSlLaOT-PMoBM39Ksn29mQWID\n\nbut Gdown can't. Please check connections and permissions."
+    },
+    {
+      "character_name": "Inari One",
+      "incomplete_on_source": false,
+      "source_page": "https://umarefs.crd.co/",
+      "drive_url": "https://drive.google.com/drive/folders/1QhRmheowp2beorqEO2qSytTJBMGJ6kj-?usp=drive_link",
+      "status": "download-error",
+      "error": "FileURLRetrievalError: Failed to retrieve file url:\n\n\tCannot retrieve the public link of the file. You may need to change\n\tthe permission to 'Anyone with the link', or have had many accesses.\n\tCheck FAQ in https://github.com/wkentaro/gdown?tab=readme-ov-file#faq.\n\nYou may still be able to access the file from the browser:\n\n\thttps://drive.google.com/uc?id=1vthz6nChuUoXKmUhG06potA7JgrWO4xj\n\nbut Gdown can't. Please check connections and permissions."
+    },
+    {
+      "character_name": "Winning Ticket",
+      "incomplete_on_source": false,
+      "source_page": "https://umarefs.crd.co/",
+      "drive_url": "https://drive.google.com/drive/folders/1vPtSkf2dNy4aUEW32K97qlBdbs94bhBz?usp=drive_link",
+      "status": "download-error",
+      "error": "FileURLRetrievalError: Failed to retrieve file url:\n\n\tCannot retrieve the public link of the file. You may need to change\n\tthe permission to 'Anyone with the link', or have had many accesses.\n\tCheck FAQ in https://github.com/wkentaro/gdown?tab=readme-ov-file#faq.\n\nYou may still be able to access the file from the browser:\n\n\thttps://drive.google.com/uc?id=1_KEgSEIxYMirXX4l-84wcPAbszcp0bgP\n\nbut Gdown can't. Please check connections and permissions."
+    },
+    {
+      "character_name": "Air Shakur",
+      "incomplete_on_source": false,
+      "source_page": "https://umarefs.crd.co/",
+      "drive_url": "https://drive.google.com/drive/folders/1URdLEbpaD37G0Km6tSCKtfiTR5M1h2zI?usp=drive_link",
+      "status": "download-error",
+      "error": "FileURLRetrievalError: Failed to retrieve file url:\n\n\tCannot retrieve the public link of the file. You may need to change\n\tthe permission to 'Anyone with the link', or have had many accesses.\n\tCheck FAQ in https://github.com/wkentaro/gdown?tab=readme-ov-file#faq.\n\nYou may still be able to access the file from the browser:\n\n\thttps://drive.google.com/uc?id=1tIHpWJEmIZR1zx-4V7UgMeUZIm3XX8FI\n\nbut Gdown can't. Please check connections and permissions."
+    },
+    {
+      "character_name": "Eishin Flash",
+      "incomplete_on_source": false,
+      "source_page": "https://umarefs.crd.co/",
+      "drive_url": "https://drive.google.com/drive/folders/1L7Z7HzZcMGvdyPFwFMECso12UCdboJH-?usp=drive_link",
+      "status": "download-error",
+      "error": "FileURLRetrievalError: Failed to retrieve file url:\n\n\tCannot retrieve the public link of the file. You may need to change\n\tthe permission to 'Anyone with the link', or have had many accesses.\n\tCheck FAQ in https://github.com/wkentaro/gdown?tab=readme-ov-file#faq.\n\nYou may still be able to access the file from the browser:\n\n\thttps://drive.google.com/uc?id=12SfoESTQGbutmCffwAkwPR24EueziCDs\n\nbut Gdown can't. Please check connections and permissions."
+    },
+    {
+      "character_name": "Curren Chan",
+      "incomplete_on_source": false,
+      "source_page": "https://umarefs.crd.co/",
+      "drive_url": "https://drive.google.com/drive/folders/1b5mKx4s9mnfOpSxTadfPQ3Cs9ulUEhKo?usp=drive_link",
+      "status": "download-error",
+      "error": "FileURLRetrievalError: Failed to retrieve file url:\n\n\tCannot retrieve the public link of the file. You may need to change\n\tthe permission to 'Anyone with the link', or have had many accesses.\n\tCheck FAQ in https://github.com/wkentaro/gdown?tab=readme-ov-file#faq.\n\nYou may still be able to access the file from the browser:\n\n\thttps://drive.google.com/uc?id=1v5sTyHV-ZZajXgoVDFZpVJnTeHox4VWN\n\nbut Gdown can't. Please check connections and permissions."
+    },
+    {
+      "character_name": "Kawakami Princess",
+      "incomplete_on_source": false,
+      "source_page": "https://umarefs.crd.co/",
+      "drive_url": "https://drive.google.com/drive/folders/1ImjbCjjfdLOzaDaMrlV7uqm7o_7OC3P5?usp=drive_link",
+      "status": "download-error",
+      "error": "FileURLRetrievalError: Failed to retrieve file url:\n\n\tCannot retrieve the public link of the file. You may need to change\n\tthe permission to 'Anyone with the link', or have had many accesses.\n\tCheck FAQ in https://github.com/wkentaro/gdown?tab=readme-ov-file#faq.\n\nYou may still be able to access the file from the browser:\n\n\thttps://drive.google.com/uc?id=1dqNlLQAH0SSWyzSSfsC7XfGPfbl3McFr\n\nbut Gdown can't. Please check connections and permissions."
+    },
+    {
+      "character_name": "Gold City",
+      "incomplete_on_source": false,
+      "source_page": "https://umarefs.crd.co/",
+      "drive_url": "https://drive.google.com/drive/folders/1nCBicgzsb7F9Qz5JiWaFrQZ48Khvch-1?usp=drive_link",
+      "status": "download-error",
+      "error": "FileURLRetrievalError: Failed to retrieve file url:\n\n\tCannot retrieve the public link of the file. You may need to change\n\tthe permission to 'Anyone with the link', or have had many accesses.\n\tCheck FAQ in https://github.com/wkentaro/gdown?tab=readme-ov-file#faq.\n\nYou may still be able to access the file from the browser:\n\n\thttps://drive.google.com/uc?id=1KlHgGQc2XjtttChU5GkmHWGuZOL-ZWUe\n\nbut Gdown can't. Please check connections and permissions."
+    },
+    {
+      "character_name": "Sakura Bakushin O",
+      "incomplete_on_source": false,
+      "source_page": "https://umarefs.crd.co/",
+      "drive_url": "https://drive.google.com/drive/folders/1cA0Txr3Ol2aPmDfeaDINFZnE7iWb7kDK?usp=drive_link",
+      "status": "download-error",
+      "error": "FileURLRetrievalError: Failed to retrieve file url:\n\n\tCannot retrieve the public link of the file. You may need to change\n\tthe permission to 'Anyone with the link', or have had many accesses.\n\tCheck FAQ in https://github.com/wkentaro/gdown?tab=readme-ov-file#faq.\n\nYou may still be able to access the file from the browser:\n\n\thttps://drive.google.com/uc?id=1WIplWRLKeXlpPfNeB3i0MYTgUgi3g06H\n\nbut Gdown can't. Please check connections and permissions."
+    },
+    {
+      "character_name": "Seeking the Pearl",
+      "incomplete_on_source": false,
+      "source_page": "https://umarefs.crd.co/",
+      "drive_url": "https://drive.google.com/drive/folders/1St21_e-XfLz-Wyeg0DQ1lOED7-t3Fl7L?usp=drive_link",
+      "status": "download-error",
+      "error": "FileURLRetrievalError: Failed to retrieve file url:\n\n\tCannot retrieve the public link of the file. You may need to change\n\tthe permission to 'Anyone with the link', or have had many accesses.\n\tCheck FAQ in https://github.com/wkentaro/gdown?tab=readme-ov-file#faq.\n\nYou may still be able to access the file from the browser:\n\n\thttps://drive.google.com/uc?id=15MY3Z2HIjX7qxouh3v4v-NpS5p6Oa0I0\n\nbut Gdown can't. Please check connections and permissions."
+    },
+    {
+      "character_name": "Shinko Windy",
+      "incomplete_on_source": false,
+      "source_page": "https://umarefs.crd.co/",
+      "drive_url": "https://drive.google.com/drive/folders/115gIlfS73qGqF6qJlKE_JS2c2aSE9Xvd?usp=drive_link",
+      "status": "download-error",
+      "error": "FileURLRetrievalError: Failed to retrieve file url:\n\n\tCannot retrieve the public link of the file. You may need to change\n\tthe permission to 'Anyone with the link', or have had many accesses.\n\tCheck FAQ in https://github.com/wkentaro/gdown?tab=readme-ov-file#faq.\n\nYou may still be able to access the file from the browser:\n\n\thttps://drive.google.com/uc?id=1m0g8L505A_IMnhLp5ZKByq1RjgWYV_Qn\n\nbut Gdown can't. Please check connections and permissions."
+    },
+    {
+      "character_name": "Sweep Tosho",
+      "incomplete_on_source": false,
+      "source_page": "https://umarefs.crd.co/",
+      "drive_url": "https://drive.google.com/drive/folders/1ljs2vRi30xJAuEnrZBlkdaCznCmR42oQ?usp=drive_link",
+      "status": "download-error",
+      "error": "FileURLRetrievalError: Failed to retrieve file url:\n\n\tCannot retrieve the public link of the file. You may need to change\n\tthe permission to 'Anyone with the link', or have had many accesses.\n\tCheck FAQ in https://github.com/wkentaro/gdown?tab=readme-ov-file#faq.\n\nYou may still be able to access the file from the browser:\n\n\thttps://drive.google.com/uc?id=1s4-DIR-4qODs_Zy83ws2d5YDI1ZIT-OF\n\nbut Gdown can't. Please check connections and permissions."
+    },
+    {
+      "character_name": "Super Creek",
+      "incomplete_on_source": false,
+      "source_page": "https://umarefs.crd.co/",
+      "drive_url": "https://drive.google.com/drive/folders/1sCb236KzIbUz7T1LIDwvovsMJxqyNSpS?usp=drive_link",
+      "status": "download-error",
+      "error": "FileURLRetrievalError: Failed to retrieve file url:\n\n\tCannot retrieve the public link of the file. You may need to change\n\tthe permission to 'Anyone with the link', or have had many accesses.\n\tCheck FAQ in https://github.com/wkentaro/gdown?tab=readme-ov-file#faq.\n\nYou may still be able to access the file from the browser:\n\n\thttps://drive.google.com/uc?id=1byfEA5Ia0-Lk_E-UXjoxVDxLINMfJpb1\n\nbut Gdown can't. Please check connections and permissions."
+    },
+    {
+      "character_name": "Smart Falcon",
+      "incomplete_on_source": false,
+      "source_page": "https://umarefs.crd.co/",
+      "drive_url": "https://drive.google.com/drive/folders/1cshKZji_G1zNvtyKybngJTD00LSUIHV8?usp=drive_link",
+      "status": "download-error",
+      "error": "FileURLRetrievalError: Failed to retrieve file url:\n\n\tCannot retrieve the public link of the file. You may need to change\n\tthe permission to 'Anyone with the link', or have had many accesses.\n\tCheck FAQ in https://github.com/wkentaro/gdown?tab=readme-ov-file#faq.\n\nYou may still be able to access the file from the browser:\n\n\thttps://drive.google.com/uc?id=1cucgPqaCR9oqguac-HuBeh3peZYzxioi\n\nbut Gdown can't. Please check connections and permissions."
+    },
+    {
+      "character_name": "Zenno Rob Roy",
+      "incomplete_on_source": false,
+      "source_page": "https://umarefs.crd.co/",
+      "drive_url": "https://drive.google.com/drive/folders/1P0FeG8WvBw-Y6mof8LhAEU0U5dToDqKb?usp=drive_link",
+      "status": "download-error",
+      "error": "FileURLRetrievalError: Failed to retrieve file url:\n\n\tCannot retrieve the public link of the file. You may need to change\n\tthe permission to 'Anyone with the link', or have had many accesses.\n\tCheck FAQ in https://github.com/wkentaro/gdown?tab=readme-ov-file#faq.\n\nYou may still be able to access the file from the browser:\n\n\thttps://drive.google.com/uc?id=1k65aBcwhT6cmZ0DmHgwd2KA2_U1X_tcJ\n\nbut Gdown can't. Please check connections and permissions."
+    },
+    {
+      "character_name": "Tosen Jordan",
+      "incomplete_on_source": false,
+      "source_page": "https://umarefs.crd.co/",
+      "drive_url": "https://drive.google.com/drive/folders/1CkD4DLmu2bvtMaejb621h9oCSkv_t2Bj?usp=drive_link",
+      "status": "download-error",
+      "error": "FileURLRetrievalError: Failed to retrieve file url:\n\n\tCannot retrieve the public link of the file. You may need to change\n\tthe permission to 'Anyone with the link', or have had many accesses.\n\tCheck FAQ in https://github.com/wkentaro/gdown?tab=readme-ov-file#faq.\n\nYou may still be able to access the file from the browser:\n\n\thttps://drive.google.com/uc?id=17m_mbLffa5oQiVBY4LGSai4xI1XZuz0G\n\nbut Gdown can't. Please check connections and permissions."
+    },
+    {
+      "character_name": "Nakayama Festa",
+      "incomplete_on_source": false,
+      "source_page": "https://umarefs.crd.co/",
+      "drive_url": "https://drive.google.com/drive/folders/1RfPX5BP4j2krOtPxIR7DG8gtfw1L4BQn?usp=drive_link",
+      "status": "download-error",
+      "error": "FileURLRetrievalError: Failed to retrieve file url:\n\n\tCannot retrieve the public link of the file. You may need to change\n\tthe permission to 'Anyone with the link', or have had many accesses.\n\tCheck FAQ in https://github.com/wkentaro/gdown?tab=readme-ov-file#faq.\n\nYou may still be able to access the file from the browser:\n\n\thttps://drive.google.com/uc?id=1lgMbs9fTe69HmjyaMULQNw-Y2FGBXy04\n\nbut Gdown can't. Please check connections and permissions."
+    },
+    {
+      "character_name": "Narita Taishin",
+      "incomplete_on_source": false,
+      "source_page": "https://umarefs.crd.co/",
+      "drive_url": "https://drive.google.com/drive/folders/1ueJmG9DhDFzREi-GQQoJ_gXa4S9CVf-O?usp=drive_link",
+      "status": "download-error",
+      "error": "FileURLRetrievalError: Failed to retrieve file url:\n\n\tCannot retrieve the public link of the file. You may need to change\n\tthe permission to 'Anyone with the link', or have had many accesses.\n\tCheck FAQ in https://github.com/wkentaro/gdown?tab=readme-ov-file#faq.\n\nYou may still be able to access the file from the browser:\n\n\thttps://drive.google.com/uc?id=15VOclfzzSFWsmdHPSvgkyp3573X9UAj7\n\nbut Gdown can't. Please check connections and permissions."
+    },
+    {
+      "character_name": "Nishino Flower",
+      "incomplete_on_source": false,
+      "source_page": "https://umarefs.crd.co/",
+      "drive_url": "https://drive.google.com/drive/folders/1qZtaTEuSKe7Dbd5WAzQKZxE25_ZzvCS2?usp=drive_link",
+      "status": "download-error",
+      "error": "FileURLRetrievalError: Failed to retrieve file url:\n\n\tCannot retrieve the public link of the file. You may need to change\n\tthe permission to 'Anyone with the link', or have had many accesses.\n\tCheck FAQ in https://github.com/wkentaro/gdown?tab=readme-ov-file#faq.\n\nYou may still be able to access the file from the browser:\n\n\thttps://drive.google.com/uc?id=15srwq--iEFCp4JMq6x5Eq-BSckKOltEV\n\nbut Gdown can't. Please check connections and permissions."
+    },
+    {
+      "character_name": "Haru Urara",
+      "incomplete_on_source": false,
+      "source_page": "https://umarefs.crd.co/",
+      "drive_url": "https://drive.google.com/drive/folders/1cAZRXHzV7GqwIG9F2QtkkU_bwQXW0U85?usp=drive_link",
+      "status": "download-error",
+      "error": "FileURLRetrievalError: Failed to retrieve file url:\n\n\tCannot retrieve the public link of the file. You may need to change\n\tthe permission to 'Anyone with the link', or have had many accesses.\n\tCheck FAQ in https://github.com/wkentaro/gdown?tab=readme-ov-file#faq.\n\nYou may still be able to access the file from the browser:\n\n\thttps://drive.google.com/uc?id=1f_u0QqJ8mj_-qH93G6Y76stv07JUNA8W\n\nbut Gdown can't. Please check connections and permissions."
+    },
+    {
+      "character_name": "Bamboo Memory",
+      "incomplete_on_source": false,
+      "source_page": "https://umarefs.crd.co/",
+      "drive_url": "https://drive.google.com/drive/folders/12IPhoJEZeRwllPrq3AiVUT5ptYL0hTQm?usp=drive_link",
+      "status": "download-error",
+      "error": "FileURLRetrievalError: Failed to retrieve file url:\n\n\tCannot retrieve the public link of the file. You may need to change\n\tthe permission to 'Anyone with the link', or have had many accesses.\n\tCheck FAQ in https://github.com/wkentaro/gdown?tab=readme-ov-file#faq.\n\nYou may still be able to access the file from the browser:\n\n\thttps://drive.google.com/uc?id=1Gpe9R50qmAS8e67t4_nK5YGnnOETOR2F\n\nbut Gdown can't. Please check connections and permissions."
+    },
+    {
+      "character_name": "Biko Pegasus",
+      "incomplete_on_source": false,
+      "source_page": "https://umarefs.crd.co/",
+      "drive_url": "https://drive.google.com/drive/folders/117NvUrnMt1ka-imi9fh1tstClDjl67H-?usp=drive_link",
+      "status": "download-error",
+      "error": "FileURLRetrievalError: Failed to retrieve file url:\n\n\tCannot retrieve the public link of the file. You may need to change\n\tthe permission to 'Anyone with the link', or have had many accesses.\n\tCheck FAQ in https://github.com/wkentaro/gdown?tab=readme-ov-file#faq.\n\nYou may still be able to access the file from the browser:\n\n\thttps://drive.google.com/uc?id=1Lyzq3okPZGzC4upAFb1p-SHi7ZmttCwh\n\nbut Gdown can't. Please check connections and permissions."
+    },
+    {
+      "character_name": "Marvelous Sunday",
+      "incomplete_on_source": false,
+      "source_page": "https://umarefs.crd.co/",
+      "drive_url": "https://drive.google.com/drive/folders/1wg2MZbewHXTjepVFfaNEsEja502IDGT8?usp=drive_link",
+      "status": "download-error",
+      "error": "FileURLRetrievalError: Failed to retrieve file url:\n\n\tCannot retrieve the public link of the file. You may need to change\n\tthe permission to 'Anyone with the link', or have had many accesses.\n\tCheck FAQ in https://github.com/wkentaro/gdown?tab=readme-ov-file#faq.\n\nYou may still be able to access the file from the browser:\n\n\thttps://drive.google.com/uc?id=1dKHd-smSEYS_-17zvnoYs5WyoOun7rAF\n\nbut Gdown can't. Please check connections and permissions."
+    },
+    {
+      "character_name": "Matikanefukukitaru",
+      "incomplete_on_source": false,
+      "source_page": "https://umarefs.crd.co/",
+      "drive_url": "https://drive.google.com/drive/folders/1wFeA4EKrf-CcIZJvjUa4_TE2verTGIU9?usp=drive_link",
+      "status": "download-error",
+      "error": "FileURLRetrievalError: Failed to retrieve file url:\n\n\tCannot retrieve the public link of the file. You may need to change\n\tthe permission to 'Anyone with the link', or have had many accesses.\n\tCheck FAQ in https://github.com/wkentaro/gdown?tab=readme-ov-file#faq.\n\nYou may still be able to access the file from the browser:\n\n\thttps://drive.google.com/uc?id=1Tbl6EIUTKFkb0KytgLglqw5j3laJDsb6\n\nbut Gdown can't. Please check connections and permissions."
+    },
+    {
+      "character_name": "Mr. C.B.",
+      "incomplete_on_source": false,
+      "source_page": "https://umarefs.crd.co/",
+      "drive_url": "https://drive.google.com/drive/folders/1vErfJzkTYH3GQBbvgEavu0xZrfLWPE-X?usp=drive_link",
+      "status": "download-error",
+      "error": "FileURLRetrievalError: Failed to retrieve file url:\n\n\tCannot retrieve the public link of the file. You may need to change\n\tthe permission to 'Anyone with the link', or have had many accesses.\n\tCheck FAQ in https://github.com/wkentaro/gdown?tab=readme-ov-file#faq.\n\nYou may still be able to access the file from the browser:\n\n\thttps://drive.google.com/uc?id=1SrVsK4HQRMEqDWWjc-ki9pvxgQRTQhF2\n\nbut Gdown can't. Please check connections and permissions."
+    },
+    {
+      "character_name": "Meisho Doto",
+      "incomplete_on_source": false,
+      "source_page": "https://umarefs.crd.co/",
+      "drive_url": "https://drive.google.com/drive/folders/11JpJIYJIB7BRiIv7xuBufvRJgdbPU_2j?usp=drive_link",
+      "status": "download-error",
+      "error": "FileURLRetrievalError: Failed to retrieve file url:\n\n\tCannot retrieve the public link of the file. You may need to change\n\tthe permission to 'Anyone with the link', or have had many accesses.\n\tCheck FAQ in https://github.com/wkentaro/gdown?tab=readme-ov-file#faq.\n\nYou may still be able to access the file from the browser:\n\n\thttps://drive.google.com/uc?id=1ff_tNvUzkRWMJWl30DdgaWaSL0Zg8-jX\n\nbut Gdown can't. Please check connections and permissions."
+    },
+    {
+      "character_name": "Mejiro Dober",
+      "incomplete_on_source": false,
+      "source_page": "https://umarefs.crd.co/",
+      "drive_url": "https://drive.google.com/drive/folders/1gQyF6lmYDiYXCU4rPGmty4XG5V9Av8Hz?usp=drive_link",
+      "status": "download-error",
+      "error": "FileURLRetrievalError: Failed to retrieve file url:\n\n\tCannot retrieve the public link of the file. You may need to change\n\tthe permission to 'Anyone with the link', or have had many accesses.\n\tCheck FAQ in https://github.com/wkentaro/gdown?tab=readme-ov-file#faq.\n\nYou may still be able to access the file from the browser:\n\n\thttps://drive.google.com/uc?id=1d_ZXrlwV17jIFfXf9HBfzIB3m3rCrcko\n\nbut Gdown can't. Please check connections and permissions."
+    },
+    {
+      "character_name": "Nice Nature",
+      "incomplete_on_source": false,
+      "source_page": "https://umarefs.crd.co/",
+      "drive_url": "https://drive.google.com/drive/folders/1q2F9gG4sED8_TWXA84tkTAQjLAs28hPQ?usp=drive_link",
+      "status": "download-error",
+      "error": "FileURLRetrievalError: Failed to retrieve file url:\n\n\tCannot retrieve the public link of the file. You may need to change\n\tthe permission to 'Anyone with the link', or have had many accesses.\n\tCheck FAQ in https://github.com/wkentaro/gdown?tab=readme-ov-file#faq.\n\nYou may still be able to access the file from the browser:\n\n\thttps://drive.google.com/uc?id=1XbmKLfNnSYuByQ7YaLvxWeSWYUEeR4gj\n\nbut Gdown can't. Please check connections and permissions."
+    },
+    {
+      "character_name": "King Halo",
+      "incomplete_on_source": false,
+      "source_page": "https://umarefs.crd.co/",
+      "drive_url": "https://drive.google.com/drive/folders/1qY0LZzCaw0lS9nXX1CtnsahMC4mHnRbo?usp=drive_link",
+      "status": "download-error",
+      "error": "FileURLRetrievalError: Failed to retrieve file url:\n\n\tCannot retrieve the public link of the file. You may need to change\n\tthe permission to 'Anyone with the link', or have had many accesses.\n\tCheck FAQ in https://github.com/wkentaro/gdown?tab=readme-ov-file#faq.\n\nYou may still be able to access the file from the browser:\n\n\thttps://drive.google.com/uc?id=1Alni_WFiXiXzXZCxPTPCcYMT9O7zqOIs\n\nbut Gdown can't. Please check connections and permissions."
+    },
+    {
+      "character_name": "Matikanetannhauser",
+      "incomplete_on_source": false,
+      "source_page": "https://umarefs.crd.co/",
+      "drive_url": "https://drive.google.com/drive/folders/1HnP0xaOwbVguZN1tFCiLWutzGygqpwWj?usp=drive_link",
+      "status": "download-error",
+      "error": "FileURLRetrievalError: Failed to retrieve file url:\n\n\tCannot retrieve the public link of the file. You may need to change\n\tthe permission to 'Anyone with the link', or have had many accesses.\n\tCheck FAQ in https://github.com/wkentaro/gdown?tab=readme-ov-file#faq.\n\nYou may still be able to access the file from the browser:\n\n\thttps://drive.google.com/uc?id=1KqHXGwVNUUAEf3qFm5XTjg8gZ2yDlPFM\n\nbut Gdown can't. Please check connections and permissions."
+    },
+    {
+      "character_name": "Ikuno Dictus",
+      "incomplete_on_source": false,
+      "source_page": "https://umarefs.crd.co/",
+      "drive_url": "https://drive.google.com/drive/folders/1vAcYWYoGsZemN3VInkZ28TFDw2MxYJ9E?usp=drive_link",
+      "status": "download-error",
+      "error": "FileURLRetrievalError: Failed to retrieve file url:\n\n\tCannot retrieve the public link of the file. You may need to change\n\tthe permission to 'Anyone with the link', or have had many accesses.\n\tCheck FAQ in https://github.com/wkentaro/gdown?tab=readme-ov-file#faq.\n\nYou may still be able to access the file from the browser:\n\n\thttps://drive.google.com/uc?id=1U4rrkfU2IwHJO0KgoMHTnB-Znz465-sy\n\nbut Gdown can't. Please check connections and permissions."
+    },
+    {
+      "character_name": "Mejiro Palmer",
+      "incomplete_on_source": false,
+      "source_page": "https://umarefs.crd.co/",
+      "drive_url": "https://drive.google.com/drive/folders/1ff8wGscFCwKPQKO89tJOyoPAmunGC3Ao?usp=drive_link",
+      "status": "download-error",
+      "error": "FileURLRetrievalError: Failed to retrieve file url:\n\n\tCannot retrieve the public link of the file. You may need to change\n\tthe permission to 'Anyone with the link', or have had many accesses.\n\tCheck FAQ in https://github.com/wkentaro/gdown?tab=readme-ov-file#faq.\n\nYou may still be able to access the file from the browser:\n\n\thttps://drive.google.com/uc?id=1bUKSYHeaZxEwO1XYNf_dMp6qMzlIODrI\n\nbut Gdown can't. Please check connections and permissions."
+    },
+    {
+      "character_name": "Daitaku Helios",
+      "incomplete_on_source": false,
+      "source_page": "https://umarefs.crd.co/",
+      "drive_url": "https://drive.google.com/drive/folders/1lmwRHSqqZH_QAwv8jKDUXTMIXQCsN_PB?usp=drive_link",
+      "status": "download-error",
+      "error": "FileURLRetrievalError: Failed to retrieve file url:\n\n\tCannot retrieve the public link of the file. You may need to change\n\tthe permission to 'Anyone with the link', or have had many accesses.\n\tCheck FAQ in https://github.com/wkentaro/gdown?tab=readme-ov-file#faq.\n\nYou may still be able to access the file from the browser:\n\n\thttps://drive.google.com/uc?id=1tJDvHHj9zg8nAWTqy9vSHauIvHwNUJZP\n\nbut Gdown can't. Please check connections and permissions."
+    },
+    {
+      "character_name": "Twin Turbo",
+      "incomplete_on_source": false,
+      "source_page": "https://umarefs.crd.co/",
+      "drive_url": "https://drive.google.com/drive/folders/1MkpNtI_Dfkaec_AYbMYCq7y75B9OlJ6W?usp=drive_link",
+      "status": "download-error",
+      "error": "FileURLRetrievalError: Failed to retrieve file url:\n\n\tCannot retrieve the public link of the file. You may need to change\n\tthe permission to 'Anyone with the link', or have had many accesses.\n\tCheck FAQ in https://github.com/wkentaro/gdown?tab=readme-ov-file#faq.\n\nYou may still be able to access the file from the browser:\n\n\thttps://drive.google.com/uc?id=1umklYQDpUYqjJG9Uo6a2ZYlwH8ihIyKG\n\nbut Gdown can't. Please check connections and permissions."
+    },
+    {
+      "character_name": "Satono Diamond",
+      "incomplete_on_source": false,
+      "source_page": "https://umarefs.crd.co/",
+      "drive_url": "https://drive.google.com/drive/folders/1BzNG1Mp5cK9hT_yaC8TahDDj9K4E-5hl?usp=drive_link",
+      "status": "download-error",
+      "error": "FileURLRetrievalError: Failed to retrieve file url:\n\n\tCannot retrieve the public link of the file. You may need to change\n\tthe permission to 'Anyone with the link', or have had many accesses.\n\tCheck FAQ in https://github.com/wkentaro/gdown?tab=readme-ov-file#faq.\n\nYou may still be able to access the file from the browser:\n\n\thttps://drive.google.com/uc?id=12imSf9dQJsKAncQHYtztnZaUHIHXKGWd\n\nbut Gdown can't. Please check connections and permissions."
+    },
+    {
+      "character_name": "Kitasan Black",
+      "incomplete_on_source": false,
+      "source_page": "https://umarefs.crd.co/",
+      "drive_url": "https://drive.google.com/drive/folders/19UwvJ7TzoBzAZbhY7agfYBfR4RCltmS-?usp=drive_link",
+      "status": "download-error",
+      "error": "FileURLRetrievalError: Failed to retrieve file url:\n\n\tCannot retrieve the public link of the file. You may need to change\n\tthe permission to 'Anyone with the link', or have had many accesses.\n\tCheck FAQ in https://github.com/wkentaro/gdown?tab=readme-ov-file#faq.\n\nYou may still be able to access the file from the browser:\n\n\thttps://drive.google.com/uc?id=1TFQy14lwsO__iLlTcpgkRjYU_TLOGbAT\n\nbut Gdown can't. Please check connections and permissions."
+    },
+    {
+      "character_name": "Sakura Chiyono O",
+      "incomplete_on_source": false,
+      "source_page": "https://umarefs.crd.co/",
+      "drive_url": "https://drive.google.com/drive/folders/1t4bS7iG8cyzpg6LejYk2whXs1u0korDN?usp=drive_link",
+      "status": "download-error",
+      "error": "FileURLRetrievalError: Failed to retrieve file url:\n\n\tCannot retrieve the public link of the file. You may need to change\n\tthe permission to 'Anyone with the link', or have had many accesses.\n\tCheck FAQ in https://github.com/wkentaro/gdown?tab=readme-ov-file#faq.\n\nYou may still be able to access the file from the browser:\n\n\thttps://drive.google.com/uc?id=18uXgUV1KXA_MNvxC25aNrMf3PXwIT6JV\n\nbut Gdown can't. Please check connections and permissions."
+    },
+    {
+      "character_name": "Sirius Symboli",
+      "incomplete_on_source": false,
+      "source_page": "https://umarefs.crd.co/",
+      "drive_url": "https://drive.google.com/drive/folders/1-bKfRolhP_R1ICMdEmSa-LHxeLeZu6DZ?usp=drive_link",
+      "status": "download-error",
+      "error": "FileURLRetrievalError: Failed to retrieve file url:\n\n\tCannot retrieve the public link of the file. You may need to change\n\tthe permission to 'Anyone with the link', or have had many accesses.\n\tCheck FAQ in https://github.com/wkentaro/gdown?tab=readme-ov-file#faq.\n\nYou may still be able to access the file from the browser:\n\n\thttps://drive.google.com/uc?id=13jakKj7H4UvN0wrQW2MJQCg_WYPdzi0f\n\nbut Gdown can't. Please check connections and permissions."
+    },
+    {
+      "character_name": "Mejiro Ardan",
+      "incomplete_on_source": false,
+      "source_page": "https://umarefs.crd.co/",
+      "drive_url": "https://drive.google.com/drive/folders/1HgY37SETe_f-PP7EohWzsRR7LRp3RLVd?usp=drive_link",
+      "status": "download-error",
+      "error": "FileURLRetrievalError: Failed to retrieve file url:\n\n\tCannot retrieve the public link of the file. You may need to change\n\tthe permission to 'Anyone with the link', or have had many accesses.\n\tCheck FAQ in https://github.com/wkentaro/gdown?tab=readme-ov-file#faq.\n\nYou may still be able to access the file from the browser:\n\n\thttps://drive.google.com/uc?id=1gvJHyG8Q2WqtzkZ2fhEi36rMiupezJKt\n\nbut Gdown can't. Please check connections and permissions."
+    },
+    {
+      "character_name": "Yaeno Muteki",
+      "incomplete_on_source": false,
+      "source_page": "https://umarefs.crd.co/",
+      "drive_url": "https://drive.google.com/drive/folders/1k8k8mvcJS1EvqhArJQBnTITnsUlZYdZL?usp=drive_link",
+      "status": "download-error",
+      "error": "FileURLRetrievalError: Failed to retrieve file url:\n\n\tCannot retrieve the public link of the file. You may need to change\n\tthe permission to 'Anyone with the link', or have had many accesses.\n\tCheck FAQ in https://github.com/wkentaro/gdown?tab=readme-ov-file#faq.\n\nYou may still be able to access the file from the browser:\n\n\thttps://drive.google.com/uc?id=1XAAbbPsuyW54wrW4xsJFW2hmrizkILBH\n\nbut Gdown can't. Please check connections and permissions."
+    },
+    {
+      "character_name": "Tsurumaru Tsuyoshi",
+      "incomplete_on_source": false,
+      "source_page": "https://umarefs.crd.co/",
+      "drive_url": "https://drive.google.com/drive/folders/1IIMthRotfph4gLvwKTenkqaYKwzaSb5E?usp=drive_link",
+      "status": "download-error",
+      "error": "FileURLRetrievalError: Failed to retrieve file url:\n\n\tCannot retrieve the public link of the file. You may need to change\n\tthe permission to 'Anyone with the link', or have had many accesses.\n\tCheck FAQ in https://github.com/wkentaro/gdown?tab=readme-ov-file#faq.\n\nYou may still be able to access the file from the browser:\n\n\thttps://drive.google.com/uc?id=1lNXR6l1DcwMwmNGdIUUPQMWRL6BRgyo9\n\nbut Gdown can't. Please check connections and permissions."
+    },
+    {
+      "character_name": "Mejiro Bright",
+      "incomplete_on_source": false,
+      "source_page": "https://umarefs.crd.co/",
+      "drive_url": "https://drive.google.com/drive/folders/1fMxRk6n-1PAsZ-U_eQXQ4Tlb8AqkTntV?usp=drive_link",
+      "status": "download-error",
+      "error": "FileURLRetrievalError: Failed to retrieve file url:\n\n\tCannot retrieve the public link of the file. You may need to change\n\tthe permission to 'Anyone with the link', or have had many accesses.\n\tCheck FAQ in https://github.com/wkentaro/gdown?tab=readme-ov-file#faq.\n\nYou may still be able to access the file from the browser:\n\n\thttps://drive.google.com/uc?id=1H6rIvLOHpjzS6QBUl-ItpL2MWkxvZwMq\n\nbut Gdown can't. Please check connections and permissions."
+    },
+    {
+      "character_name": "Daring Tact",
+      "incomplete_on_source": true,
+      "source_page": "https://umarefs.crd.co/",
+      "drive_url": "https://drive.google.com/drive/folders/1UNqJhCpD_ZGBdCdLqZsirmqo_mxFJVJZ?usp=drive_link",
+      "status": "download-error",
+      "error": "FileURLRetrievalError: Failed to retrieve file url:\n\n\tCannot retrieve the public link of the file. You may need to change\n\tthe permission to 'Anyone with the link', or have had many accesses.\n\tCheck FAQ in https://github.com/wkentaro/gdown?tab=readme-ov-file#faq.\n\nYou may still be able to access the file from the browser:\n\n\thttps://drive.google.com/uc?id=16RXk0ZCLwibOPYupHnN_UzNnptiMQlKm\n\nbut Gdown can't. Please check connections and permissions."
+    },
+    {
+      "character_name": "Sakura Laurel",
+      "incomplete_on_source": false,
+      "source_page": "https://umarefs.crd.co/",
+      "drive_url": "https://drive.google.com/drive/folders/1UNqJhCpD_ZGBdCdLqZsirmqo_mxFJVJZ?usp=drive_link",
+      "status": "download-error",
+      "error": "FileURLRetrievalError: Failed to retrieve file url:\n\n\tCannot retrieve the public link of the file. You may need to change\n\tthe permission to 'Anyone with the link', or have had many accesses.\n\tCheck FAQ in https://github.com/wkentaro/gdown?tab=readme-ov-file#faq.\n\nYou may still be able to access the file from the browser:\n\n\thttps://drive.google.com/uc?id=16RXk0ZCLwibOPYupHnN_UzNnptiMQlKm\n\nbut Gdown can't. Please check connections and permissions."
+    },
+    {
+      "character_name": "Narita Top Road",
+      "incomplete_on_source": false,
+      "source_page": "https://umarefs.crd.co/",
+      "drive_url": "https://drive.google.com/drive/folders/1E_ndMZARZis7u3FOaZxjF6oSkgEqGCUW?usp=sharing",
+      "status": "download-error",
+      "error": "FileURLRetrievalError: Failed to retrieve file url:\n\n\tCannot retrieve the public link of the file. You may need to change\n\tthe permission to 'Anyone with the link', or have had many accesses.\n\tCheck FAQ in https://github.com/wkentaro/gdown?tab=readme-ov-file#faq.\n\nYou may still be able to access the file from the browser:\n\n\thttps://drive.google.com/uc?id=1AokZa6ecquRKMK3kVDX6OEwwsPRVoVmt\n\nbut Gdown can't. Please check connections and permissions."
+    },
+    {
+      "character_name": "Yamanin Zephyr",
+      "incomplete_on_source": false,
+      "source_page": "https://umarefs.crd.co/",
+      "drive_url": "https://drive.google.com/drive/folders/1aiVe9SbikjjDajKM-Np5Abh0SO-HZfqU?usp=drive_link",
+      "status": "download-error",
+      "error": "FileURLRetrievalError: Failed to retrieve file url:\n\n\tCannot retrieve the public link of the file. You may need to change\n\tthe permission to 'Anyone with the link', or have had many accesses.\n\tCheck FAQ in https://github.com/wkentaro/gdown?tab=readme-ov-file#faq.\n\nYou may still be able to access the file from the browser:\n\n\thttps://drive.google.com/uc?id=1-Yd9h7zcHzhL84D2aIshWzGq-HEsC-gp\n\nbut Gdown can't. Please check connections and permissions."
+    },
+    {
+      "character_name": "Furioso",
+      "incomplete_on_source": false,
+      "source_page": "https://umarefs.crd.co/",
+      "drive_url": "https://drive.google.com/drive/folders/1WvUoVCtK2vyRV3txYa2cwapb8XVBky-z?usp=drive_link",
+      "status": "download-error",
+      "error": "FileURLRetrievalError: Failed to retrieve file url:\n\n\tCannot retrieve the public link of the file. You may need to change\n\tthe permission to 'Anyone with the link', or have had many accesses.\n\tCheck FAQ in https://github.com/wkentaro/gdown?tab=readme-ov-file#faq.\n\nYou may still be able to access the file from the browser:\n\n\thttps://drive.google.com/uc?id=19DIX5x0CFhVw_XnXgsmO1zbrnFYU0NHj\n\nbut Gdown can't. Please check connections and permissions."
+    },
+    {
+      "character_name": "Transcend",
+      "incomplete_on_source": false,
+      "source_page": "https://umarefs.crd.co/",
+      "drive_url": "https://drive.google.com/drive/u/6/folders/1E69MTMtrl1GVRQAFTSlGd1DIasnld3vg",
+      "status": "download-error",
+      "error": "FileURLRetrievalError: Failed to retrieve file url:\n\n\tCannot retrieve the public link of the file. You may need to change\n\tthe permission to 'Anyone with the link', or have had many accesses.\n\tCheck FAQ in https://github.com/wkentaro/gdown?tab=readme-ov-file#faq.\n\nYou may still be able to access the file from the browser:\n\n\thttps://drive.google.com/uc?id=190f9tlUXu9iD5OxupkVRydS9ax-96k0W\n\nbut Gdown can't. Please check connections and permissions."
+    },
+    {
+      "character_name": "Espoir City",
+      "incomplete_on_source": false,
+      "source_page": "https://umarefs.crd.co/",
+      "drive_url": "https://drive.google.com/drive/u/6/folders/1pjXIUHqiPQiPkcHnx_w3YDh2Iqt9SP_X",
+      "status": "download-error",
+      "error": "FileURLRetrievalError: Failed to retrieve file url:\n\n\tCannot retrieve the public link of the file. You may need to change\n\tthe permission to 'Anyone with the link', or have had many accesses.\n\tCheck FAQ in https://github.com/wkentaro/gdown?tab=readme-ov-file#faq.\n\nYou may still be able to access the file from the browser:\n\n\thttps://drive.google.com/uc?id=1lWdWOg2rT1qi-2M9VS6g9wGtNDuePyeZ\n\nbut Gdown can't. Please check connections and permissions."
+    },
+    {
+      "character_name": "North Flight",
+      "incomplete_on_source": false,
+      "source_page": "https://umarefs.crd.co/",
+      "drive_url": "https://drive.google.com/drive/u/6/folders/1yX6jvbe4pDfF9pRuKoJwFu4wlxLLtHoQ",
+      "status": "download-error",
+      "error": "FileURLRetrievalError: Failed to retrieve file url:\n\n\tCannot retrieve the public link of the file. You may need to change\n\tthe permission to 'Anyone with the link', or have had many accesses.\n\tCheck FAQ in https://github.com/wkentaro/gdown?tab=readme-ov-file#faq.\n\nYou may still be able to access the file from the browser:\n\n\thttps://drive.google.com/uc?id=1zfU0POXU5N9Tca3aYqRmGFWvSaxsCzil\n\nbut Gdown can't. Please check connections and permissions."
+    },
+    {
+      "character_name": "Symboli Kris S",
+      "incomplete_on_source": false,
+      "source_page": "https://umarefs.crd.co/",
+      "drive_url": "https://drive.google.com/drive/u/6/folders/1YMlhyG129_yz_v_5qSnc9WSkCn9A80nq",
+      "status": "download-error",
+      "error": "FileURLRetrievalError: Failed to retrieve file url:\n\n\tCannot retrieve the public link of the file. You may need to change\n\tthe permission to 'Anyone with the link', or have had many accesses.\n\tCheck FAQ in https://github.com/wkentaro/gdown?tab=readme-ov-file#faq.\n\nYou may still be able to access the file from the browser:\n\n\thttps://drive.google.com/uc?id=11gMNFaEZV8Q1I5-hLs4AJIQdDebWnw6f\n\nbut Gdown can't. Please check connections and permissions."
+    },
+    {
+      "character_name": "Tanino Gimlet",
+      "incomplete_on_source": false,
+      "source_page": "https://umarefs.crd.co/",
+      "drive_url": "https://drive.google.com/drive/u/6/folders/1hyFtTBw4zOqI1j6tm3U3tUs21XZX7BGV",
+      "status": "download-error",
+      "error": "FileURLRetrievalError: Failed to retrieve file url:\n\n\tCannot retrieve the public link of the file. You may need to change\n\tthe permission to 'Anyone with the link', or have had many accesses.\n\tCheck FAQ in https://github.com/wkentaro/gdown?tab=readme-ov-file#faq.\n\nYou may still be able to access the file from the browser:\n\n\thttps://drive.google.com/uc?id=1UxIUU4ykeTiznMhWufgOfdpr5npNgaNb\n\nbut Gdown can't. Please check connections and permissions."
+    },
+    {
+      "character_name": "Daiichi Ruby",
+      "incomplete_on_source": false,
+      "source_page": "https://umarefs.crd.co/",
+      "drive_url": "https://drive.google.com/drive/u/6/folders/1ZvOxEvclz0iBQ8o4QW1KVB80wZ2sQC7c",
+      "status": "download-error",
+      "error": "FileURLRetrievalError: Failed to retrieve file url:\n\n\tCannot retrieve the public link of the file. You may need to change\n\tthe permission to 'Anyone with the link', or have had many accesses.\n\tCheck FAQ in https://github.com/wkentaro/gdown?tab=readme-ov-file#faq.\n\nYou may still be able to access the file from the browser:\n\n\thttps://drive.google.com/uc?id=1t7yXCkQg1e044xf7MAH_9XKQu0lSMrrp\n\nbut Gdown can't. Please check connections and permissions."
+    },
+    {
+      "character_name": "Mejiro Ramonu",
+      "incomplete_on_source": false,
+      "source_page": "https://umarefs.crd.co/",
+      "drive_url": "https://drive.google.com/drive/u/6/folders/1mXaEaj5mySqJXFZCynwIb4M-PR6wDBxy",
+      "status": "download-error",
+      "error": "FileURLRetrievalError: Failed to retrieve file url:\n\n\tCannot retrieve the public link of the file. You may need to change\n\tthe permission to 'Anyone with the link', or have had many accesses.\n\tCheck FAQ in https://github.com/wkentaro/gdown?tab=readme-ov-file#faq.\n\nYou may still be able to access the file from the browser:\n\n\thttps://drive.google.com/uc?id=1uqWoIDFtBqrcO7nB0INc5apNooVI0i-i\n\nbut Gdown can't. Please check connections and permissions."
+    },
+    {
+      "character_name": "Aston Machan",
+      "incomplete_on_source": false,
+      "source_page": "https://umarefs.crd.co/",
+      "drive_url": "https://drive.google.com/drive/u/6/folders/1Yy1stcZK9m7pNSTpBSH03KQGWEFv5ONF",
+      "status": "download-error",
+      "error": "FileURLRetrievalError: Failed to retrieve file url:\n\n\tCannot retrieve the public link of the file. You may need to change\n\tthe permission to 'Anyone with the link', or have had many accesses.\n\tCheck FAQ in https://github.com/wkentaro/gdown?tab=readme-ov-file#faq.\n\nYou may still be able to access the file from the browser:\n\n\thttps://drive.google.com/uc?id=1DrrjOjAKodQvJ-LvuS697_HBAYJ5JpSs\n\nbut Gdown can't. Please check connections and permissions."
+    },
+    {
+      "character_name": "Satono Crown",
+      "incomplete_on_source": false,
+      "source_page": "https://umarefs.crd.co/",
+      "drive_url": "https://drive.google.com/drive/u/6/folders/1n9S3_jS1lXv6fJi4ZSBocixBAzsGbdiz",
+      "status": "download-error",
+      "error": "FileURLRetrievalError: Failed to retrieve file url:\n\n\tCannot retrieve the public link of the file. You may need to change\n\tthe permission to 'Anyone with the link', or have had many accesses.\n\tCheck FAQ in https://github.com/wkentaro/gdown?tab=readme-ov-file#faq.\n\nYou may still be able to access the file from the browser:\n\n\thttps://drive.google.com/uc?id=1Sb9L5wg1FNki1UuT7I7uJFh5mMrhBxrZ\n\nbut Gdown can't. Please check connections and permissions."
+    },
+    {
+      "character_name": "Cheval Grand",
+      "incomplete_on_source": false,
+      "source_page": "https://umarefs.crd.co/",
+      "drive_url": "https://drive.google.com/drive/u/6/folders/1vAF5454DK55JrdDPMXC1KqlszJDoAapw",
+      "status": "download-error",
+      "error": "FileURLRetrievalError: Failed to retrieve file url:\n\n\tCannot retrieve the public link of the file. You may need to change\n\tthe permission to 'Anyone with the link', or have had many accesses.\n\tCheck FAQ in https://github.com/wkentaro/gdown?tab=readme-ov-file#faq.\n\nYou may still be able to access the file from the browser:\n\n\thttps://drive.google.com/uc?id=11aFPl1Bg8BzU_PZ8uy2arKWjM0eGk5Qh\n\nbut Gdown can't. Please check connections and permissions."
+    },
+    {
+      "character_name": "Verxina",
+      "incomplete_on_source": false,
+      "source_page": "https://umarefs.crd.co/",
+      "drive_url": "https://drive.google.com/drive/u/6/folders/1gRvUxbXI5mCyjkhTOVsO79tTBSQrn4iL",
+      "status": "download-error",
+      "error": "FileURLRetrievalError: Failed to retrieve file url:\n\n\tCannot retrieve the public link of the file. You may need to change\n\tthe permission to 'Anyone with the link', or have had many accesses.\n\tCheck FAQ in https://github.com/wkentaro/gdown?tab=readme-ov-file#faq.\n\nYou may still be able to access the file from the browser:\n\n\thttps://drive.google.com/uc?id=16RjA07sAefvOomNuzMu0NSfaUGWDx4Gu\n\nbut Gdown can't. Please check connections and permissions."
+    },
+    {
+      "character_name": "Vivlos",
+      "incomplete_on_source": false,
+      "source_page": "https://umarefs.crd.co/",
+      "drive_url": "https://drive.google.com/drive/u/6/folders/1IRDbQHBsXUcQPpUVTXUXy4SI0lD7dFYr",
+      "status": "download-error",
+      "error": "FileURLRetrievalError: Failed to retrieve file url:\n\n\tCannot retrieve the public link of the file. You may need to change\n\tthe permission to 'Anyone with the link', or have had many accesses.\n\tCheck FAQ in https://github.com/wkentaro/gdown?tab=readme-ov-file#faq.\n\nYou may still be able to access the file from the browser:\n\n\thttps://drive.google.com/uc?id=1_iNd2aU9_o8ehZ6UFvEy_WZV9o0YWbqk\n\nbut Gdown can't. Please check connections and permissions."
+    },
+    {
+      "character_name": "Dantsu Flame",
+      "incomplete_on_source": false,
+      "source_page": "https://umarefs.crd.co/",
+      "drive_url": "https://drive.google.com/drive/u/6/folders/11Qm1yqpFp7lXPnAJmtjaTAuVdiqFyzpT",
+      "status": "download-error",
+      "error": "FileURLRetrievalError: Failed to retrieve file url:\n\n\tCannot retrieve the public link of the file. You may need to change\n\tthe permission to 'Anyone with the link', or have had many accesses.\n\tCheck FAQ in https://github.com/wkentaro/gdown?tab=readme-ov-file#faq.\n\nYou may still be able to access the file from the browser:\n\n\thttps://drive.google.com/uc?id=1sXDNfByVB8x6revKn0DBbceyHcTCM-nY\n\nbut Gdown can't. Please check connections and permissions."
+    },
+    {
+      "character_name": "K.S. Miracle",
+      "incomplete_on_source": false,
+      "source_page": "https://umarefs.crd.co/",
+      "drive_url": "https://drive.google.com/drive/u/6/folders/1qlyVk8VOquSDWNMrvjo8vT_yWqU_m-yI",
+      "status": "download-error",
+      "error": "FileURLRetrievalError: Failed to retrieve file url:\n\n\tCannot retrieve the public link of the file. You may need to change\n\tthe permission to 'Anyone with the link', or have had many accesses.\n\tCheck FAQ in https://github.com/wkentaro/gdown?tab=readme-ov-file#faq.\n\nYou may still be able to access the file from the browser:\n\n\thttps://drive.google.com/uc?id=13vyP6dyTv8gOfgBXDkrM4SKI2r1XMLCw\n\nbut Gdown can't. Please check connections and permissions."
+    },
+    {
+      "character_name": "Jungle Pocket",
+      "incomplete_on_source": false,
+      "source_page": "https://umarefs.crd.co/",
+      "drive_url": "https://drive.google.com/drive/u/6/folders/18Dj17LsZlHTIqubV42oxcbarlj0jl8tX",
+      "status": "download-error",
+      "error": "FileURLRetrievalError: Failed to retrieve file url:\n\n\tCannot retrieve the public link of the file. You may need to change\n\tthe permission to 'Anyone with the link', or have had many accesses.\n\tCheck FAQ in https://github.com/wkentaro/gdown?tab=readme-ov-file#faq.\n\nYou may still be able to access the file from the browser:\n\n\thttps://drive.google.com/uc?id=11b5tJnZPVcI6Odbsh3eGej66f1S9Jf-Q\n\nbut Gdown can't. Please check connections and permissions."
+    },
+    {
+      "character_name": "Believe",
+      "incomplete_on_source": false,
+      "source_page": "https://umarefs.crd.co/",
+      "drive_url": "https://drive.google.com/drive/u/6/folders/1OIvIWT45GBNWk2BHqSuQO9IUs1VFgp38",
+      "status": "download-error",
+      "error": "FileURLRetrievalError: Failed to retrieve file url:\n\n\tCannot retrieve the public link of the file. You may need to change\n\tthe permission to 'Anyone with the link', or have had many accesses.\n\tCheck FAQ in https://github.com/wkentaro/gdown?tab=readme-ov-file#faq.\n\nYou may still be able to access the file from the browser:\n\n\thttps://drive.google.com/uc?id=1Sbmd_KNTvRiKuEw6MyGDsIGsqB3OceMV\n\nbut Gdown can't. Please check connections and permissions."
+    },
+    {
+      "character_name": "No Reason",
+      "incomplete_on_source": false,
+      "source_page": "https://umarefs.crd.co/",
+      "drive_url": "https://drive.google.com/drive/u/6/folders/1SkP5RnmjzFgNxVVvaFyRa0Ne-mPhSg7N",
+      "status": "download-error",
+      "error": "FileURLRetrievalError: Failed to retrieve file url:\n\n\tCannot retrieve the public link of the file. You may need to change\n\tthe permission to 'Anyone with the link', or have had many accesses.\n\tCheck FAQ in https://github.com/wkentaro/gdown?tab=readme-ov-file#faq.\n\nYou may still be able to access the file from the browser:\n\n\thttps://drive.google.com/uc?id=1mbtiHhwWZtkmqzFeZoSbZuYJWsDhSwQI\n\nbut Gdown can't. Please check connections and permissions."
+    },
+    {
+      "character_name": "Still In Love",
+      "incomplete_on_source": false,
+      "source_page": "https://umarefs.crd.co/",
+      "drive_url": "https://drive.google.com/drive/u/6/folders/1k0t6czmJByAEJDH_nNdg92tdzN9BLUco",
+      "status": "download-error",
+      "error": "FileURLRetrievalError: Failed to retrieve file url:\n\n\tCannot retrieve the public link of the file. You may need to change\n\tthe permission to 'Anyone with the link', or have had many accesses.\n\tCheck FAQ in https://github.com/wkentaro/gdown?tab=readme-ov-file#faq.\n\nYou may still be able to access the file from the browser:\n\n\thttps://drive.google.com/uc?id=1hJYITAYt3V2Kh-1ADqllXi6xUsPPOkra\n\nbut Gdown can't. Please check connections and permissions."
+    },
+    {
+      "character_name": "Copano Rickey",
+      "incomplete_on_source": false,
+      "source_page": "https://umarefs.crd.co/",
+      "drive_url": "https://drive.google.com/drive/u/6/folders/1WdCc2rR7vo2bdgsAW3v51JpZJvpL1Gpm",
+      "status": "download-error",
+      "error": "FileURLRetrievalError: Failed to retrieve file url:\n\n\tCannot retrieve the public link of the file. You may need to change\n\tthe permission to 'Anyone with the link', or have had many accesses.\n\tCheck FAQ in https://github.com/wkentaro/gdown?tab=readme-ov-file#faq.\n\nYou may still be able to access the file from the browser:\n\n\thttps://drive.google.com/uc?id=1ITbpmaCdNHAEyv5aAFzC3FPxXP6ZP7iJ\n\nbut Gdown can't. Please check connections and permissions."
+    },
+    {
+      "character_name": "Hokko Tarumae",
+      "incomplete_on_source": false,
+      "source_page": "https://umarefs.crd.co/",
+      "drive_url": "https://drive.google.com/drive/u/6/folders/1rl6fL_VM6gZ4vyhjU2c0Wfq2nGMqStsQ",
+      "status": "download-error",
+      "error": "FileURLRetrievalError: Failed to retrieve file url:\n\n\tCannot retrieve the public link of the file. You may need to change\n\tthe permission to 'Anyone with the link', or have had many accesses.\n\tCheck FAQ in https://github.com/wkentaro/gdown?tab=readme-ov-file#faq.\n\nYou may still be able to access the file from the browser:\n\n\thttps://drive.google.com/uc?id=1RD56L9s9C1OjQ_M3aVekm9quh6-UH4K5\n\nbut Gdown can't. Please check connections and permissions."
+    },
+    {
+      "character_name": "Wonder Acute",
+      "incomplete_on_source": false,
+      "source_page": "https://umarefs.crd.co/",
+      "drive_url": "https://drive.google.com/drive/u/6/folders/1KpmeQL9SbDvSc-5JeBdO1X8xsgYI4QF8",
+      "status": "download-error",
+      "error": "FileURLRetrievalError: Failed to retrieve file url:\n\n\tCannot retrieve the public link of the file. You may need to change\n\tthe permission to 'Anyone with the link', or have had many accesses.\n\tCheck FAQ in https://github.com/wkentaro/gdown?tab=readme-ov-file#faq.\n\nYou may still be able to access the file from the browser:\n\n\thttps://drive.google.com/uc?id=1KdR4sjCYUPkL_dTuIG2yU6jmAOS0B6Ui\n\nbut Gdown can't. Please check connections and permissions."
+    },
+    {
+      "character_name": "Sounds of Earth",
+      "incomplete_on_source": false,
+      "source_page": "https://umarefs.crd.co/",
+      "drive_url": "https://drive.google.com/drive/u/6/folders/1rEXvy0IEf2NzpWAvW5iTyjJwf9tjSeoa",
+      "status": "download-error",
+      "error": "FileURLRetrievalError: Failed to retrieve file url:\n\n\tCannot retrieve the public link of the file. You may need to change\n\tthe permission to 'Anyone with the link', or have had many accesses.\n\tCheck FAQ in https://github.com/wkentaro/gdown?tab=readme-ov-file#faq.\n\nYou may still be able to access the file from the browser:\n\n\thttps://drive.google.com/uc?id=1SmC6u6_1Aky2LcbiNs3zKKqH6haz9_uz\n\nbut Gdown can't. Please check connections and permissions."
+    },
+    {
+      "character_name": "Royce and Royce",
+      "incomplete_on_source": false,
+      "source_page": "https://umarefs.crd.co/",
+      "drive_url": "https://drive.google.com/drive/u/6/folders/1oIBDmrAe4piTlSEogx4S-FrzNpsAwYtb",
+      "status": "download-error",
+      "error": "FileURLRetrievalError: Failed to retrieve file url:\n\n\tCannot retrieve the public link of the file. You may need to change\n\tthe permission to 'Anyone with the link', or have had many accesses.\n\tCheck FAQ in https://github.com/wkentaro/gdown?tab=readme-ov-file#faq.\n\nYou may still be able to access the file from the browser:\n\n\thttps://drive.google.com/uc?id=1W6Y2vCWBE3hIkLWKA6_8HD5v0z-MMPNX\n\nbut Gdown can't. Please check connections and permissions."
+    },
+    {
+      "character_name": "Katsuragi Ace",
+      "incomplete_on_source": false,
+      "source_page": "https://umarefs.crd.co/",
+      "drive_url": "https://drive.google.com/drive/u/6/folders/1oA5hWeImFJ2QBS9vJz_2npif8NzlHol8",
+      "status": "download-error",
+      "error": "FileURLRetrievalError: Failed to retrieve file url:\n\n\tCannot retrieve the public link of the file. You may need to change\n\tthe permission to 'Anyone with the link', or have had many accesses.\n\tCheck FAQ in https://github.com/wkentaro/gdown?tab=readme-ov-file#faq.\n\nYou may still be able to access the file from the browser:\n\n\thttps://drive.google.com/uc?id=15a4Gq8NbPGXKNWzJ859vB9W-TCCoqDYH\n\nbut Gdown can't. Please check connections and permissions."
+    },
+    {
+      "character_name": "Neo Universe",
+      "incomplete_on_source": false,
+      "source_page": "https://umarefs.crd.co/",
+      "drive_url": "https://drive.google.com/drive/u/6/folders/1INVWDdqxWnBZJIKp4lmIv1VWRgppjrkh",
+      "status": "download-error",
+      "error": "FileURLRetrievalError: Failed to retrieve file url:\n\n\tCannot retrieve the public link of the file. You may need to change\n\tthe permission to 'Anyone with the link', or have had many accesses.\n\tCheck FAQ in https://github.com/wkentaro/gdown?tab=readme-ov-file#faq.\n\nYou may still be able to access the file from the browser:\n\n\thttps://drive.google.com/uc?id=1qEblFqJ3gefF_WA4cUhOJtIXufSZqtv_\n\nbut Gdown can't. Please check connections and permissions."
+    },
+    {
+      "character_name": "Hishi Miracle",
+      "incomplete_on_source": false,
+      "source_page": "https://umarefs.crd.co/",
+      "drive_url": "https://drive.google.com/drive/u/6/folders/1Y4UCiExt5lfTTOzQb_k2F2RjpFXb_5Gv",
+      "status": "download-error",
+      "error": "FileURLRetrievalError: Failed to retrieve file url:\n\n\tCannot retrieve the public link of the file. You may need to change\n\tthe permission to 'Anyone with the link', or have had many accesses.\n\tCheck FAQ in https://github.com/wkentaro/gdown?tab=readme-ov-file#faq.\n\nYou may still be able to access the file from the browser:\n\n\thttps://drive.google.com/uc?id=14aDxaBaOoo0LybEWo79tdHtRRID15m7G\n\nbut Gdown can't. Please check connections and permissions."
+    },
+    {
+      "character_name": "Tap Dance City",
+      "incomplete_on_source": false,
+      "source_page": "https://umarefs.crd.co/",
+      "drive_url": "https://drive.google.com/drive/u/6/folders/1NjveUl7tUHDRnxaBOZVmUpp7jNbCQE3a",
+      "status": "download-error",
+      "error": "FileURLRetrievalError: Failed to retrieve file url:\n\n\tCannot retrieve the public link of the file. You may need to change\n\tthe permission to 'Anyone with the link', or have had many accesses.\n\tCheck FAQ in https://github.com/wkentaro/gdown?tab=readme-ov-file#faq.\n\nYou may still be able to access the file from the browser:\n\n\thttps://drive.google.com/uc?id=1iahKEAXmet8mc_5W_luHaHSFFaOweC3j\n\nbut Gdown can't. Please check connections and permissions."
+    },
+    {
+      "character_name": "Duramente",
+      "incomplete_on_source": false,
+      "source_page": "https://umarefs.crd.co/",
+      "drive_url": "https://drive.google.com/drive/u/6/folders/1yS0iNFhhMaajSgGjkvlSBWWWbubnGXB_",
+      "status": "download-error",
+      "error": "FileURLRetrievalError: Failed to retrieve file url:\n\n\tCannot retrieve the public link of the file. You may need to change\n\tthe permission to 'Anyone with the link', or have had many accesses.\n\tCheck FAQ in https://github.com/wkentaro/gdown?tab=readme-ov-file#faq.\n\nYou may still be able to access the file from the browser:\n\n\thttps://drive.google.com/uc?id=15-nUovk82ogRUQjjjWvxj_s2ywNnmiMY\n\nbut Gdown can't. Please check connections and permissions."
+    },
+    {
+      "character_name": "Rhein Kraft",
+      "incomplete_on_source": false,
+      "source_page": "https://umarefs.crd.co/",
+      "drive_url": "https://drive.google.com/drive/u/6/folders/1rSs7q_vMXB8UlFM7qRvjO_W-34HqLRuv",
+      "status": "download-error",
+      "error": "FileURLRetrievalError: Failed to retrieve file url:\n\n\tCannot retrieve the public link of the file. You may need to change\n\tthe permission to 'Anyone with the link', or have had many accesses.\n\tCheck FAQ in https://github.com/wkentaro/gdown?tab=readme-ov-file#faq.\n\nYou may still be able to access the file from the browser:\n\n\thttps://drive.google.com/uc?id=18L-1rvJySBsQJBD6kTZC4VzEGSpkhM6v\n\nbut Gdown can't. Please check connections and permissions."
+    },
+    {
+      "character_name": "Cesario",
+      "incomplete_on_source": false,
+      "source_page": "https://umarefs.crd.co/",
+      "drive_url": "https://drive.google.com/drive/u/6/folders/1ubx9YQi5-w8DmeJ17yADomelZruSR0t_",
+      "status": "download-error",
+      "error": "FileURLRetrievalError: Failed to retrieve file url:\n\n\tCannot retrieve the public link of the file. You may need to change\n\tthe permission to 'Anyone with the link', or have had many accesses.\n\tCheck FAQ in https://github.com/wkentaro/gdown?tab=readme-ov-file#faq.\n\nYou may still be able to access the file from the browser:\n\n\thttps://drive.google.com/uc?id=1SfNacYdqMJborIJ7oBejL3pH1bQMrKZg\n\nbut Gdown can't. Please check connections and permissions."
+    },
+    {
+      "character_name": "Air Messiah",
+      "incomplete_on_source": false,
+      "source_page": "https://umarefs.crd.co/",
+      "drive_url": "https://drive.google.com/drive/u/6/folders/1Psw8fnajJyqwxKJsSiUvuPceaAm0cYeI",
+      "status": "download-error",
+      "error": "FileURLRetrievalError: Failed to retrieve file url:\n\n\tCannot retrieve the public link of the file. You may need to change\n\tthe permission to 'Anyone with the link', or have had many accesses.\n\tCheck FAQ in https://github.com/wkentaro/gdown?tab=readme-ov-file#faq.\n\nYou may still be able to access the file from the browser:\n\n\thttps://drive.google.com/uc?id=10mreDYl0o_AZDtNwCB0tJMibgwSVUcss\n\nbut Gdown can't. Please check connections and permissions."
+    },
+    {
+      "character_name": "Daring Heart",
+      "incomplete_on_source": false,
+      "source_page": "https://umarefs.crd.co/",
+      "drive_url": "https://drive.google.com/drive/u/6/folders/1guozNtikPp6TByG7smfRLxYnt8dNYwjl",
+      "status": "download-error",
+      "error": "FileURLRetrievalError: Failed to retrieve file url:\n\n\tCannot retrieve the public link of the file. You may need to change\n\tthe permission to 'Anyone with the link', or have had many accesses.\n\tCheck FAQ in https://github.com/wkentaro/gdown?tab=readme-ov-file#faq.\n\nYou may still be able to access the file from the browser:\n\n\thttps://drive.google.com/uc?id=12NsgBjWBNlRogGwYijnBY10N-L2IhSRS\n\nbut Gdown can't. Please check connections and permissions."
+    },
+    {
+      "character_name": "Fusaichi Pandora",
+      "incomplete_on_source": false,
+      "source_page": "https://umarefs.crd.co/",
+      "drive_url": "https://drive.google.com/drive/u/6/folders/1VcKn6x13yjDgAhR68kNDsHiw9tMy44-s",
+      "status": "download-error",
+      "error": "FileURLRetrievalError: Failed to retrieve file url:\n\n\tCannot retrieve the public link of the file. You may need to change\n\tthe permission to 'Anyone with the link', or have had many accesses.\n\tCheck FAQ in https://github.com/wkentaro/gdown?tab=readme-ov-file#faq.\n\nYou may still be able to access the file from the browser:\n\n\thttps://drive.google.com/uc?id=1gnXLQGwJ3gGg-Pl8SK0-YR2QCfO49LMd\n\nbut Gdown can't. Please check connections and permissions."
+    },
+    {
+      "character_name": "Buena Vista",
+      "incomplete_on_source": false,
+      "source_page": "https://umarefs.crd.co/",
+      "drive_url": "https://drive.google.com/drive/u/6/folders/1FC29LTi_6HPM6RnYofwKMm3WwIdYkGKO",
+      "status": "download-error",
+      "error": "FileURLRetrievalError: Failed to retrieve file url:\n\n\tCannot retrieve the public link of the file. You may need to change\n\tthe permission to 'Anyone with the link', or have had many accesses.\n\tCheck FAQ in https://github.com/wkentaro/gdown?tab=readme-ov-file#faq.\n\nYou may still be able to access the file from the browser:\n\n\thttps://drive.google.com/uc?id=1Ha_H6mg5G3GUYEYPuQRJT79z0GR4bnoD\n\nbut Gdown can't. Please check connections and permissions."
+    },
+    {
+      "character_name": "Orfevre",
+      "incomplete_on_source": false,
+      "source_page": "https://umarefs.crd.co/",
+      "drive_url": "https://drive.google.com/drive/u/6/folders/1jJHlFYODH8mtFNPdcAOWaDikMaRzkiI-",
+      "status": "download-error",
+      "error": "FileURLRetrievalError: Failed to retrieve file url:\n\n\tCannot retrieve the public link of the file. You may need to change\n\tthe permission to 'Anyone with the link', or have had many accesses.\n\tCheck FAQ in https://github.com/wkentaro/gdown?tab=readme-ov-file#faq.\n\nYou may still be able to access the file from the browser:\n\n\thttps://drive.google.com/uc?id=1cCHsdPRtumZ6-IwI_zOaYEZAozzHzVNU\n\nbut Gdown can't. Please check connections and permissions."
+    },
+    {
+      "character_name": "Gentildonna",
+      "incomplete_on_source": false,
+      "source_page": "https://umarefs.crd.co/",
+      "drive_url": "https://drive.google.com/drive/u/6/folders/1xpPjcIoxZVDlfkEfb_iq4FrncQTBegnk",
+      "status": "download-error",
+      "error": "FileURLRetrievalError: Failed to retrieve file url:\n\n\tCannot retrieve the public link of the file. You may need to change\n\tthe permission to 'Anyone with the link', or have had many accesses.\n\tCheck FAQ in https://github.com/wkentaro/gdown?tab=readme-ov-file#faq.\n\nYou may still be able to access the file from the browser:\n\n\thttps://drive.google.com/uc?id=1q4HYg9yvO5MtVa6O5UHyqiAjqpr2n3fR\n\nbut Gdown can't. Please check connections and permissions."
+    },
+    {
+      "character_name": "Win Variation",
+      "incomplete_on_source": false,
+      "source_page": "https://umarefs.crd.co/",
+      "drive_url": "https://drive.google.com/drive/u/6/folders/1iEkJrqKqB7C53ZXRH7gDIyWVpE9gctCO",
+      "status": "download-error",
+      "error": "FileURLRetrievalError: Failed to retrieve file url:\n\n\tCannot retrieve the public link of the file. You may need to change\n\tthe permission to 'Anyone with the link', or have had many accesses.\n\tCheck FAQ in https://github.com/wkentaro/gdown?tab=readme-ov-file#faq.\n\nYou may still be able to access the file from the browser:\n\n\thttps://drive.google.com/uc?id=1mMH9TEs9sYFhg2qH7ijta5GFmbUjxM1r\n\nbut Gdown can't. Please check connections and permissions."
+    },
+    {
+      "character_name": "Admire Groove",
+      "incomplete_on_source": false,
+      "source_page": "https://umarefs.crd.co/",
+      "drive_url": "https://drive.google.com/drive/u/6/folders/1zMjmo5b5HzHpgQTP1eeo3Rn3cJqi68OR",
+      "status": "download-error",
+      "error": "FileURLRetrievalError: Failed to retrieve file url:\n\n\tCannot retrieve the public link of the file. You may need to change\n\tthe permission to 'Anyone with the link', or have had many accesses.\n\tCheck FAQ in https://github.com/wkentaro/gdown?tab=readme-ov-file#faq.\n\nYou may still be able to access the file from the browser:\n\n\thttps://drive.google.com/uc?id=1rKX3IZT1COavad7J_f59js2Mci5-8etH\n\nbut Gdown can't. Please check connections and permissions."
+    },
+    {
+      "character_name": "Dream Journey",
+      "incomplete_on_source": false,
+      "source_page": "https://umarefs.crd.co/",
+      "drive_url": "https://drive.google.com/drive/u/6/folders/1L4TG62jj51SjYKfL2XVZFN9xw1ATNj0h",
+      "status": "download-error",
+      "error": "FileURLRetrievalError: Failed to retrieve file url:\n\n\tCannot retrieve the public link of the file. You may need to change\n\tthe permission to 'Anyone with the link', or have had many accesses.\n\tCheck FAQ in https://github.com/wkentaro/gdown?tab=readme-ov-file#faq.\n\nYou may still be able to access the file from the browser:\n\n\thttps://drive.google.com/uc?id=1R559SssOjXGBf5Yl30MJmd0kGCLaGEja\n\nbut Gdown can't. Please check connections and permissions."
+    },
+    {
+      "character_name": "Calstone Light O",
+      "incomplete_on_source": false,
+      "source_page": "https://umarefs.crd.co/",
+      "drive_url": "https://drive.google.com/drive/u/6/folders/1XX3S4UZnglO6WZXJbrLtCQ3ThV5PQrop",
+      "status": "download-error",
+      "error": "FileURLRetrievalError: Failed to retrieve file url:\n\n\tCannot retrieve the public link of the file. You may need to change\n\tthe permission to 'Anyone with the link', or have had many accesses.\n\tCheck FAQ in https://github.com/wkentaro/gdown?tab=readme-ov-file#faq.\n\nYou may still be able to access the file from the browser:\n\n\thttps://drive.google.com/uc?id=1en9Tueb5yX044HybRFlT-c8t3tNVsTDV\n\nbut Gdown can't. Please check connections and permissions."
+    },
+    {
+      "character_name": "Durandal",
+      "incomplete_on_source": false,
+      "source_page": "https://umarefs.crd.co/",
+      "drive_url": "https://drive.google.com/drive/u/6/folders/1jYm_vuvAxYzwc3ad8h3Qq0bSaPeUgVLj",
+      "status": "download-error",
+      "error": "FileURLRetrievalError: Failed to retrieve file url:\n\n\tCannot retrieve the public link of the file. You may need to change\n\tthe permission to 'Anyone with the link', or have had many accesses.\n\tCheck FAQ in https://github.com/wkentaro/gdown?tab=readme-ov-file#faq.\n\nYou may still be able to access the file from the browser:\n\n\thttps://drive.google.com/uc?id=1Pn0-J759sk72mTMkIqWmEr1AKYQJVC4_\n\nbut Gdown can't. Please check connections and permissions."
+    },
+    {
+      "character_name": "Bubble Gum Fellow",
+      "incomplete_on_source": false,
+      "source_page": "https://umarefs.crd.co/",
+      "drive_url": "https://drive.google.com/drive/folders/1Dfg75h23NNEkl8m55GEixZ4xxYrLMpd3?usp=drive_link",
+      "status": "download-error",
+      "error": "FileURLRetrievalError: Failed to retrieve file url:\n\n\tCannot retrieve the public link of the file. You may need to change\n\tthe permission to 'Anyone with the link', or have had many accesses.\n\tCheck FAQ in https://github.com/wkentaro/gdown?tab=readme-ov-file#faq.\n\nYou may still be able to access the file from the browser:\n\n\thttps://drive.google.com/uc?id=1iTIriO6NzN-UBAT8VrBS3coh8vDB4oir\n\nbut Gdown can't. Please check connections and permissions."
+    },
+    {
+      "character_name": "Sakura Chitose O",
+      "incomplete_on_source": true,
+      "source_page": "https://umarefs.crd.co/",
+      "drive_url": "https://drive.google.com/drive/u/6/folders/18vGmXYh7KCCwV70vMnij2Naj4oInGDgK",
+      "status": "download-error",
+      "error": "FileURLRetrievalError: Failed to retrieve file url:\n\n\tCannot retrieve the public link of the file. You may need to change\n\tthe permission to 'Anyone with the link', or have had many accesses.\n\tCheck FAQ in https://github.com/wkentaro/gdown?tab=readme-ov-file#faq.\n\nYou may still be able to access the file from the browser:\n\n\thttps://drive.google.com/uc?id=1OnbPibffbDChJsAyRj_nyNeV1LxdyaSX\n\nbut Gdown can't. Please check connections and permissions."
+    },
+    {
+      "character_name": "Fenomeno",
+      "incomplete_on_source": false,
+      "source_page": "https://umarefs.crd.co/",
+      "drive_url": "https://drive.google.com/drive/u/6/folders/18vGmXYh7KCCwV70vMnij2Naj4oInGDgK",
+      "status": "download-error",
+      "error": "FileURLRetrievalError: Failed to retrieve file url:\n\n\tCannot retrieve the public link of the file. You may need to change\n\tthe permission to 'Anyone with the link', or have had many accesses.\n\tCheck FAQ in https://github.com/wkentaro/gdown?tab=readme-ov-file#faq.\n\nYou may still be able to access the file from the browser:\n\n\thttps://drive.google.com/uc?id=1OnbPibffbDChJsAyRj_nyNeV1LxdyaSX\n\nbut Gdown can't. Please check connections and permissions."
+    },
+    {
+      "character_name": "Blast Onepiece",
+      "incomplete_on_source": true,
+      "source_page": "https://umarefs.crd.co/",
+      "drive_url": "https://drive.google.com/drive/u/6/folders/1CC2h1NLnhV7vx3v2l5YAwnOriQfXpafX",
+      "status": "download-error",
+      "error": "FileURLRetrievalError: Failed to retrieve file url:\n\n\tCannot retrieve the public link of the file. You may need to change\n\tthe permission to 'Anyone with the link', or have had many accesses.\n\tCheck FAQ in https://github.com/wkentaro/gdown?tab=readme-ov-file#faq.\n\nYou may still be able to access the file from the browser:\n\n\thttps://drive.google.com/uc?id=1p1nL9OoyPGBRuV98-ApoWkBYMFYXmHmU\n\nbut Gdown can't. Please check connections and permissions."
+    },
+    {
+      "character_name": "Almond Eye",
+      "incomplete_on_source": false,
+      "source_page": "https://umarefs.crd.co/",
+      "drive_url": "https://drive.google.com/drive/u/6/folders/1CC2h1NLnhV7vx3v2l5YAwnOriQfXpafX",
+      "status": "download-error",
+      "error": "FileURLRetrievalError: Failed to retrieve file url:\n\n\tCannot retrieve the public link of the file. You may need to change\n\tthe permission to 'Anyone with the link', or have had many accesses.\n\tCheck FAQ in https://github.com/wkentaro/gdown?tab=readme-ov-file#faq.\n\nYou may still be able to access the file from the browser:\n\n\thttps://drive.google.com/uc?id=1p1nL9OoyPGBRuV98-ApoWkBYMFYXmHmU\n\nbut Gdown can't. Please check connections and permissions."
+    },
+    {
+      "character_name": "Lucky Lilac",
+      "incomplete_on_source": false,
+      "source_page": "https://umarefs.crd.co/",
+      "drive_url": "https://drive.google.com/drive/u/6/folders/1CGABsEbeEU57mKth3dJzmoCiyhBMmBEP",
+      "status": "download-error",
+      "error": "FileURLRetrievalError: Failed to retrieve file url:\n\n\tCannot retrieve the public link of the file. You may need to change\n\tthe permission to 'Anyone with the link', or have had many accesses.\n\tCheck FAQ in https://github.com/wkentaro/gdown?tab=readme-ov-file#faq.\n\nYou may still be able to access the file from the browser:\n\n\thttps://drive.google.com/uc?id=1Tt0POyu2sRd5KSZXON492vcUiiewVo1s\n\nbut Gdown can't. Please check connections and permissions."
+    },
+    {
+      "character_name": "Gran Alegria",
+      "incomplete_on_source": false,
+      "source_page": "https://umarefs.crd.co/",
+      "drive_url": "https://drive.google.com/drive/u/6/folders/1HLhYk63UWG5GAGqO85CoISQTnht6cOky",
+      "status": "download-error",
+      "error": "FileURLRetrievalError: Failed to retrieve file url:\n\n\tCannot retrieve the public link of the file. You may need to change\n\tthe permission to 'Anyone with the link', or have had many accesses.\n\tCheck FAQ in https://github.com/wkentaro/gdown?tab=readme-ov-file#faq.\n\nYou may still be able to access the file from the browser:\n\n\thttps://drive.google.com/uc?id=1RRA5iB7VBLiZj2r60qhW28W375d1eaDz\n\nbut Gdown can't. Please check connections and permissions."
+    },
+    {
+      "character_name": "Loves Only You",
+      "incomplete_on_source": false,
+      "source_page": "https://umarefs.crd.co/",
+      "drive_url": "https://drive.google.com/drive/u/6/folders/1oYPiWJc2c4uEp0o_ceqlTUWtdvE6GBYM",
+      "status": "download-error",
+      "error": "FileURLRetrievalError: Failed to retrieve file url:\n\n\tCannot retrieve the public link of the file. You may need to change\n\tthe permission to 'Anyone with the link', or have had many accesses.\n\tCheck FAQ in https://github.com/wkentaro/gdown?tab=readme-ov-file#faq.\n\nYou may still be able to access the file from the browser:\n\n\thttps://drive.google.com/uc?id=1Pf7MSfHlJDdSA7dKyaS6vLRKFBIgqhRz\n\nbut Gdown can't. Please check connections and permissions."
+    },
+    {
+      "character_name": "Chrono Genesis",
+      "incomplete_on_source": false,
+      "source_page": "https://umarefs.crd.co/",
+      "drive_url": "https://drive.google.com/drive/u/6/folders/1RtiWu2yMsrQ7Mnv035D71Ola8V7fQedf",
+      "status": "download-error",
+      "error": "FileURLRetrievalError: Failed to retrieve file url:\n\n\tCannot retrieve the public link of the file. You may need to change\n\tthe permission to 'Anyone with the link', or have had many accesses.\n\tCheck FAQ in https://github.com/wkentaro/gdown?tab=readme-ov-file#faq.\n\nYou may still be able to access the file from the browser:\n\n\thttps://drive.google.com/uc?id=1xzHZfGCt614KM8nO_F-jTyckFptV0szp\n\nbut Gdown can't. Please check connections and permissions."
+    },
+    {
+      "character_name": "Curren Bouquetd'or",
+      "incomplete_on_source": false,
+      "source_page": "https://umarefs.crd.co/",
+      "drive_url": "https://drive.google.com/drive/u/6/folders/1uJmkxxHUfT0GXX83Ha3Oi3SO-X5JZFD6",
+      "status": "download-error",
+      "error": "FileURLRetrievalError: Failed to retrieve file url:\n\n\tCannot retrieve the public link of the file. You may need to change\n\tthe permission to 'Anyone with the link', or have had many accesses.\n\tCheck FAQ in https://github.com/wkentaro/gdown?tab=readme-ov-file#faq.\n\nYou may still be able to access the file from the browser:\n\n\thttps://drive.google.com/uc?id=1GiAHhzFCHXL-CadoQ0Kf2dPnbrFrJoQv\n\nbut Gdown can't. Please check connections and permissions."
+    },
+    {
+      "character_name": "Stay Gold",
+      "incomplete_on_source": false,
+      "source_page": "https://umarefs.crd.co/",
+      "drive_url": "https://drive.google.com/drive/u/6/folders/1SyybPYoJJpJqwupZSPJP6SXeB3ARoBnj",
+      "status": "download-error",
+      "error": "FileURLRetrievalError: Failed to retrieve file url:\n\n\tCannot retrieve the public link of the file. You may need to change\n\tthe permission to 'Anyone with the link', or have had many accesses.\n\tCheck FAQ in https://github.com/wkentaro/gdown?tab=readme-ov-file#faq.\n\nYou may still be able to access the file from the browser:\n\n\thttps://drive.google.com/uc?id=1mY46rpHj0VZKNYLKI9D6Y4h-uJkVbEDM\n\nbut Gdown can't. Please check connections and permissions."
+    },
+    {
+      "character_name": "Red Desire",
+      "incomplete_on_source": false,
+      "source_page": "https://umarefs.crd.co/",
+      "drive_url": "https://drive.google.com/drive/u/2/folders/1Tfb2r22Xygxn7jDT-k_I3dWpvUUmi018",
+      "status": "download-error",
+      "error": "FileURLRetrievalError: Failed to retrieve file url:\n\n\tCannot retrieve the public link of the file. You may need to change\n\tthe permission to 'Anyone with the link', or have had many accesses.\n\tCheck FAQ in https://github.com/wkentaro/gdown?tab=readme-ov-file#faq.\n\nYou may still be able to access the file from the browser:\n\n\thttps://drive.google.com/uc?id=16Uz_xJjExj_pC3ik-v8O_KrmcsHdbESg\n\nbut Gdown can't. Please check connections and permissions."
+    },
+    {
+      "character_name": "Kiseki",
+      "incomplete_on_source": false,
+      "source_page": "https://umarefs.crd.co/",
+      "drive_url": "https://drive.google.com/drive/u/2/folders/1KMK-kH2u98o8IxX_Rd2I2fe2jMMfSvFO",
+      "status": "download-error",
+      "error": "FileURLRetrievalError: Failed to retrieve file url:\n\n\tCannot retrieve the public link of the file. You may need to change\n\tthe permission to 'Anyone with the link', or have had many accesses.\n\tCheck FAQ in https://github.com/wkentaro/gdown?tab=readme-ov-file#faq.\n\nYou may still be able to access the file from the browser:\n\n\thttps://drive.google.com/uc?id=1XkyslMMjdfTrI_rCfSgEws9nu07rxSA8\n\nbut Gdown can't. Please check connections and permissions."
+    },
+    {
+      "character_name": "Forever Young",
+      "incomplete_on_source": true,
+      "source_page": "https://umarefs.crd.co/",
+      "drive_url": "https://drive.google.com/drive/u/2/folders/1ULsfqVnaBam8gAXFWSFS5svuaiVkGs7v",
+      "status": "download-error",
+      "error": "FileURLRetrievalError: Failed to retrieve file url:\n\n\tCannot retrieve the public link of the file. You may need to change\n\tthe permission to 'Anyone with the link', or have had many accesses.\n\tCheck FAQ in https://github.com/wkentaro/gdown?tab=readme-ov-file#faq.\n\nYou may still be able to access the file from the browser:\n\n\thttps://drive.google.com/uc?id=1vz1GgVa6TJ5BoUIxjbUmBcd79RVMgNCf\n\nbut Gdown can't. Please check connections and permissions."
+    },
+    {
+      "character_name": "Marche Lorraine",
+      "incomplete_on_source": true,
+      "source_page": "https://umarefs.crd.co/",
+      "drive_url": "https://drive.google.com/drive/u/2/folders/1WN3riduJ27DgxM-VExuEcYg3Kg9LJCmA",
+      "status": "download-error",
+      "error": "FileURLRetrievalError: Failed to retrieve file url:\n\n\tCannot retrieve the public link of the file. You may need to change\n\tthe permission to 'Anyone with the link', or have had many accesses.\n\tCheck FAQ in https://github.com/wkentaro/gdown?tab=readme-ov-file#faq.\n\nYou may still be able to access the file from the browser:\n\n\thttps://drive.google.com/uc?id=1JBsOGMFUtv0PiK0GtqP0N6hGb9of81Gf\n\nbut Gdown can't. Please check connections and permissions."
+    },
+    {
+      "character_name": "Epiphaneia",
+      "incomplete_on_source": false,
+      "source_page": "https://umarefs.crd.co/",
+      "drive_url": "https://drive.google.com/drive/u/2/folders/1WN3riduJ27DgxM-VExuEcYg3Kg9LJCmA",
+      "status": "download-error",
+      "error": "FileURLRetrievalError: Failed to retrieve file url:\n\n\tCannot retrieve the public link of the file. You may need to change\n\tthe permission to 'Anyone with the link', or have had many accesses.\n\tCheck FAQ in https://github.com/wkentaro/gdown?tab=readme-ov-file#faq.\n\nYou may still be able to access the file from the browser:\n\n\thttps://drive.google.com/uc?id=1JBsOGMFUtv0PiK0GtqP0N6hGb9of81Gf\n\nbut Gdown can't. Please check connections and permissions."
+    },
+    {
+      "character_name": "Logotype",
+      "incomplete_on_source": true,
+      "source_page": "https://umarefs.crd.co/",
+      "drive_url": "https://drive.google.com/drive/u/2/folders/1LBz9Uw0gTIM0lUOq2eW6nLxp6c7jkpfQ",
+      "status": "download-error",
+      "error": "FileURLRetrievalError: Failed to retrieve file url:\n\n\tCannot retrieve the public link of the file. You may need to change\n\tthe permission to 'Anyone with the link', or have had many accesses.\n\tCheck FAQ in https://github.com/wkentaro/gdown?tab=readme-ov-file#faq.\n\nYou may still be able to access the file from the browser:\n\n\thttps://drive.google.com/uc?id=1M-YM4DmP78DC886HJ_betMw4vGKVEeTw\n\nbut Gdown can't. Please check connections and permissions."
+    },
+    {
+      "character_name": "Victoire Pisa",
+      "incomplete_on_source": false,
+      "source_page": "https://umarefs.crd.co/",
+      "drive_url": "https://drive.google.com/drive/u/2/folders/1LBz9Uw0gTIM0lUOq2eW6nLxp6c7jkpfQ",
+      "status": "download-error",
+      "error": "FileURLRetrievalError: Failed to retrieve file url:\n\n\tCannot retrieve the public link of the file. You may need to change\n\tthe permission to 'Anyone with the link', or have had many accesses.\n\tCheck FAQ in https://github.com/wkentaro/gdown?tab=readme-ov-file#faq.\n\nYou may still be able to access the file from the browser:\n\n\thttps://drive.google.com/uc?id=1M-YM4DmP78DC886HJ_betMw4vGKVEeTw\n\nbut Gdown can't. Please check connections and permissions."
+    },
+    {
+      "character_name": "Rose Kingdom",
+      "incomplete_on_source": true,
+      "source_page": "https://umarefs.crd.co/",
+      "drive_url": "https://drive.google.com/drive/u/2/folders/1cAtepEFxAzSuF5p3mX9WqIYQuT-0qGIZ",
+      "status": "download-error",
+      "error": "FileURLRetrievalError: Failed to retrieve file url:\n\n\tCannot retrieve the public link of the file. You may need to change\n\tthe permission to 'Anyone with the link', or have had many accesses.\n\tCheck FAQ in https://github.com/wkentaro/gdown?tab=readme-ov-file#faq.\n\nYou may still be able to access the file from the browser:\n\n\thttps://drive.google.com/uc?id=186V8oEnnZIN9J5dgFSzfDjtp9rk-iO6N\n\nbut Gdown can't. Please check connections and permissions."
+    },
+    {
+      "character_name": "Rulership",
+      "incomplete_on_source": true,
+      "source_page": "https://umarefs.crd.co/",
+      "drive_url": "https://drive.google.com/drive/u/2/folders/1h5r9cAwAQyPMNc5MttT6D9uyRM2iHHD0",
+      "status": "download-error",
+      "error": "FileURLRetrievalError: Failed to retrieve file url:\n\n\tCannot retrieve the public link of the file. You may need to change\n\tthe permission to 'Anyone with the link', or have had many accesses.\n\tCheck FAQ in https://github.com/wkentaro/gdown?tab=readme-ov-file#faq.\n\nYou may still be able to access the file from the browser:\n\n\thttps://drive.google.com/uc?id=1kFPK-cl3x5q-2S36pd-O5TOv-ZsGM4AY\n\nbut Gdown can't. Please check connections and permissions."
+    },
+    {
+      "character_name": "Efforia",
+      "incomplete_on_source": true,
+      "source_page": "https://umarefs.crd.co/",
+      "drive_url": "https://drive.google.com/drive/u/2/folders/1yGNKQ2nIR2epx1acCoet-l61_uLDGMAp",
+      "status": "download-error",
+      "error": "FileURLRetrievalError: Failed to retrieve file url:\n\n\tCannot retrieve the public link of the file. You may need to change\n\tthe permission to 'Anyone with the link', or have had many accesses.\n\tCheck FAQ in https://github.com/wkentaro/gdown?tab=readme-ov-file#faq.\n\nYou may still be able to access the file from the browser:\n\n\thttps://drive.google.com/uc?id=17p-dQDkA9vX60rV7-JWkNVm_13JyHNm5\n\nbut Gdown can't. Please check connections and permissions."
+    },
+    {
+      "character_name": "Titleholder",
+      "incomplete_on_source": true,
+      "source_page": "https://umarefs.crd.co/",
+      "drive_url": "https://drive.google.com/drive/u/2/folders/1Q_dPz8KCNFR4mpe9UokD_JrV-I2eNb4M",
+      "status": "download-error",
+      "error": "FileURLRetrievalError: Failed to retrieve file url:\n\n\tCannot retrieve the public link of the file. You may need to change\n\tthe permission to 'Anyone with the link', or have had many accesses.\n\tCheck FAQ in https://github.com/wkentaro/gdown?tab=readme-ov-file#faq.\n\nYou may still be able to access the file from the browser:\n\n\thttps://drive.google.com/uc?id=1k3PL3Cf35SeJ5hNB6J1BylPg9B6U4ks4\n\nbut Gdown can't. Please check connections and permissions."
+    },
+    {
+      "character_name": "Phalaenopsis",
+      "incomplete_on_source": true,
+      "source_page": "https://umarefs.crd.co/",
+      "drive_url": "https://drive.google.com/drive/u/2/folders/1Q_dPz8KCNFR4mpe9UokD_JrV-I2eNb4M",
+      "status": "download-error",
+      "error": "FileURLRetrievalError: Failed to retrieve file url:\n\n\tCannot retrieve the public link of the file. You may need to change\n\tthe permission to 'Anyone with the link', or have had many accesses.\n\tCheck FAQ in https://github.com/wkentaro/gdown?tab=readme-ov-file#faq.\n\nYou may still be able to access the file from the browser:\n\n\thttps://drive.google.com/uc?id=1k3PL3Cf35SeJ5hNB6J1BylPg9B6U4ks4\n\nbut Gdown can't. Please check connections and permissions."
+    }
+  ]
+}
