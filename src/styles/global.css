@@ -1,0 +1,242 @@
+/* Logical layout is authored at 1920x1080 and scaled to fit (spec §13.2). */
+:root {
+  --bg: #0b1018;
+  --panel: #182331;
+  --panel-bright: #24384a;
+  --edge-dark: #05080c;
+  --edge-light: #7ea7b5;
+  --text: #edf5f1;
+  --muted: #91a8a6;
+  --gold: #ffcc33;
+  --success: #7dff8a;
+  --danger: #ff5a4d;
+  --cyan: #4fe3ff;
+  --violet: #b98ae0;
+
+  --cost-1: #8fa3ad;
+  --cost-2: #5bd07a;
+  --cost-3: #4fa8ff;
+  --cost-4: #b98ae0;
+  --cost-5: #ffcc33;
+}
+
+* { box-sizing: border-box; }
+
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Noto Sans KR', 'Pretendard', system-ui, -apple-system, sans-serif;
+  overflow: hidden;
+}
+
+button {
+  font-family: inherit;
+  color: inherit;
+  cursor: pointer;
+  border: 2px solid var(--edge-light);
+  background: var(--panel-bright);
+  border-radius: 6px;
+  padding: 8px 14px;
+  font-size: 15px;
+  transition: filter 0.12s ease, transform 0.06s ease;
+}
+button:hover:not(:disabled) { filter: brightness(1.25); }
+button:active:not(:disabled) { transform: translateY(1px); }
+button:disabled { opacity: 0.42; cursor: not-allowed; }
+
+.btn-primary { background: var(--gold); color: #1b1405; border-color: #ffe9a3; font-weight: 700; }
+.btn-danger { background: var(--danger); border-color: #ffb1aa; color: #2a0906; }
+.btn-ghost { background: transparent; border-color: var(--edge-light); }
+
+/* ---------- viewport scaling ---------- */
+.stage-root {
+  position: fixed;
+  inset: 0;
+  overflow: hidden;
+  background: radial-gradient(circle at 50% 0%, #16233a 0%, var(--bg) 62%);
+}
+/*
+ * The design canvas is authored at 1920x1080 and scaled to fit. `transform`
+ * does not shrink the layout box, so a centred oversized element still
+ * overflows the viewport; anchoring at top-left and positioning explicitly
+ * keeps the visual and layout boxes in agreement at any window size.
+ */
+.stage {
+  position: absolute;
+  width: 1920px;
+  height: 1080px;
+  transform-origin: 0 0;
+  overflow: hidden;
+}
+
+/* ---------- shared panels ---------- */
+.panel {
+  background: var(--panel);
+  border: 2px solid var(--edge-light);
+  border-radius: 8px;
+}
+.panel-dark { background: #101823; border: 2px solid #24384a; border-radius: 8px; }
+
+.muted { color: var(--muted); }
+.gold-text { color: var(--gold); }
+.danger-text { color: var(--danger); }
+
+/* ---------- battle screen layout (spec §13.2) ---------- */
+.hud-top {
+  position: absolute; left: 0; top: 0; width: 1920px; height: 72px;
+  display: flex; align-items: center; gap: 26px; padding: 0 22px;
+  background: linear-gradient(180deg, #17222f 0%, #101823 100%);
+  border-bottom: 2px solid var(--edge-light);
+}
+.hud-left { position: absolute; left: 0; top: 72px; width: 280px; height: 752px; padding: 12px; overflow-y: auto; }
+.hud-field { position: absolute; left: 300px; top: 72px; width: 1320px; height: 658px; }
+.hud-right { position: absolute; left: 1640px; top: 72px; width: 280px; height: 752px; padding: 12px; overflow-y: auto; }
+.hud-bench { position: absolute; left: 300px; top: 742px; width: 1320px; height: 82px; }
+.hud-shop { position: absolute; left: 300px; top: 836px; width: 1320px; height: 182px; }
+.hud-footer { position: absolute; left: 0; top: 1018px; width: 1920px; height: 62px;
+  display: flex; align-items: center; justify-content: space-between; padding: 0 22px;
+  border-top: 2px solid #24384a; }
+
+/* ---------- stat pills ---------- */
+.stat { display: flex; align-items: center; gap: 7px; font-size: 17px; }
+.stat b { font-size: 21px; }
+.pill {
+  display: inline-flex; align-items: center; gap: 6px;
+  padding: 3px 10px; border-radius: 999px; font-size: 12px;
+  background: var(--panel-bright); border: 1px solid var(--edge-light);
+}
+
+/* ---------- shop ---------- */
+.shop-row { display: grid; grid-template-columns: repeat(5, 1fr); gap: 12px; height: 100%; }
+.shop-card {
+  position: relative; display: flex; flex-direction: column; align-items: center;
+  justify-content: center; gap: 4px; padding: 10px; border-radius: 8px;
+  background: var(--panel); border: 3px solid var(--edge-light); cursor: pointer;
+  transition: transform 0.1s ease, filter 0.1s ease;
+}
+.shop-card:hover:not(.sold) { transform: translateY(-4px); filter: brightness(1.2); }
+.shop-card.sold { opacity: 0.22; cursor: default; }
+.shop-card .name { font-size: 16px; font-weight: 700; }
+.shop-card .cost { position: absolute; top: 6px; right: 10px; font-weight: 700; color: var(--gold); }
+.shop-card .traits { display: flex; gap: 4px; flex-wrap: wrap; justify-content: center; }
+
+/* ---------- bench ---------- */
+.bench-row { display: flex; gap: 8px; height: 100%; align-items: center; padding: 0 8px; }
+.bench-slot {
+  width: 74px; height: 74px; border-radius: 8px; flex: 0 0 auto;
+  border: 2px dashed #33506a; display: grid; place-items: center;
+  background: rgba(24, 35, 49, 0.65); position: relative;
+}
+.bench-slot.filled { border-style: solid; cursor: grab; }
+
+/* ---------- unit token ---------- */
+.token { position: relative; width: 64px; height: 64px; border-radius: 50%;
+  display: grid; place-items: center; background: var(--panel); font-weight: 700; font-size: 22px; }
+.token .stars { position: absolute; top: -12px; left: 0; right: 0; text-align: center;
+  font-size: 11px; color: var(--gold); letter-spacing: -1px; }
+.token .items { position: absolute; bottom: -6px; left: 0; right: 0;
+  display: flex; gap: 2px; justify-content: center; }
+.token .items i { width: 12px; height: 12px; border-radius: 2px; display: block; }
+
+/* ---------- traits panel ---------- */
+.trait-row {
+  display: flex; align-items: center; gap: 8px; padding: 5px 8px; margin-bottom: 4px;
+  border-radius: 6px; background: rgba(36, 56, 74, 0.5); font-size: 13px;
+}
+.trait-row.active { background: rgba(255, 204, 51, 0.16); border-left: 3px solid var(--gold); }
+.trait-row .count { margin-left: auto; font-variant-numeric: tabular-nums; }
+.trait-icon { width: 22px; height: 22px; border-radius: 4px; flex: 0 0 auto; }
+
+/* ---------- leaderboard ---------- */
+.leader-row {
+  display: flex; align-items: center; gap: 8px; padding: 6px 8px; margin-bottom: 4px;
+  border-radius: 6px; background: rgba(36, 56, 74, 0.45); font-size: 13px; cursor: pointer;
+}
+.leader-row.self { border: 1px solid var(--gold); }
+.leader-row.dead { opacity: 0.4; }
+.leader-row .hpbar { flex: 1; height: 7px; background: var(--edge-dark); border-radius: 4px; overflow: hidden; }
+.leader-row .hpbar span { display: block; height: 100%; background: var(--success); }
+
+/* ---------- overlays ---------- */
+.overlay {
+  position: absolute; inset: 0; background: rgba(5, 8, 12, 0.86);
+  display: grid; place-items: center; z-index: 40;
+}
+.overlay-card { background: var(--panel); border: 3px solid var(--gold);
+  border-radius: 12px; padding: 30px 36px; max-width: 1320px; }
+
+.choice-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin-top: 20px; }
+.choice-card {
+  padding: 20px; border-radius: 10px; background: var(--panel-bright);
+  border: 3px solid var(--edge-light); cursor: pointer; text-align: left;
+}
+.choice-card:hover { border-color: var(--gold); filter: brightness(1.2); }
+.choice-card h4 { margin: 0 0 8px; font-size: 19px; }
+.choice-card p { margin: 0; font-size: 14px; color: var(--muted); line-height: 1.5; }
+
+.draft-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-top: 18px; }
+.draft-card { padding: 14px; border-radius: 10px; background: var(--panel-bright);
+  border: 3px solid var(--edge-light); cursor: pointer; text-align: center; }
+.draft-card:hover:not(.taken) { border-color: var(--gold); }
+.draft-card.taken { opacity: 0.3; cursor: default; }
+
+/* ---------- title / menu ---------- */
+.menu-screen { position: absolute; inset: 0; display: flex; flex-direction: column;
+  align-items: center; justify-content: center; gap: 18px; }
+.menu-title { font-size: 74px; font-weight: 900; letter-spacing: 3px;
+  background: linear-gradient(180deg, #ffe9a3, var(--gold));
+  -webkit-background-clip: text; background-clip: text; color: transparent; margin: 0; }
+.menu-sub { color: var(--muted); font-size: 17px; margin: 0 0 14px; }
+.menu-buttons { display: flex; flex-direction: column; gap: 12px; width: 340px; }
+.menu-buttons button { padding: 14px; font-size: 18px; }
+
+/* ---------- collection ---------- */
+.collection-grid {
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+  gap: 12px; padding: 16px; overflow-y: auto; height: 820px; align-content: start;
+}
+.collection-card { padding: 12px; border-radius: 8px; background: var(--panel);
+  border: 2px solid var(--edge-light); cursor: pointer; }
+.collection-card.inactive { opacity: 0.5; }
+.filters { display: flex; gap: 10px; flex-wrap: wrap; padding: 12px 16px; align-items: center; }
+.filters input, .filters select {
+  background: var(--panel-bright); color: var(--text); border: 2px solid var(--edge-light);
+  border-radius: 6px; padding: 7px 10px; font-family: inherit; font-size: 14px;
+}
+
+/* ---------- tooltip ---------- */
+.tooltip {
+  position: fixed; z-index: 90; max-width: 360px; padding: 12px 14px;
+  background: #0d1520; border: 2px solid var(--gold); border-radius: 8px;
+  font-size: 13px; line-height: 1.55; pointer-events: none;
+}
+.tooltip h5 { margin: 0 0 6px; font-size: 16px; }
+.tooltip dl { display: grid; grid-template-columns: auto 1fr; gap: 2px 12px; margin: 8px 0 0; }
+.tooltip dt { color: var(--muted); }
+.tooltip dd { margin: 0; text-align: right; font-variant-numeric: tabular-nums; }
+
+/* ---------- toast ---------- */
+.toast {
+  position: absolute; left: 50%; top: 96px; transform: translateX(-50%);
+  background: var(--danger); color: #2a0906; padding: 10px 18px; border-radius: 8px;
+  font-weight: 700; z-index: 80;
+}
+
+/* ---------- dev panel ---------- */
+/* Sits over the empty right side of the field so it never covers the shop. */
+.dev-panel {
+  position: absolute; right: 12px; top: 84px; width: 300px; max-height: 430px;
+  overflow-y: auto; z-index: 70; padding: 12px; font-size: 13px;
+}
+.dev-panel.collapsed { max-height: 44px; overflow: hidden; }
+.dev-panel .dev-head { display: flex; align-items: center; justify-content: space-between; }
+.dev-panel h4 { margin: 0 0 8px; }
+.dev-panel .row { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 8px; }
+.dev-panel button { padding: 4px 8px; font-size: 12px; }
+
+.scroll { overflow-y: auto; }
+.scroll::-webkit-scrollbar { width: 8px; }
+.scroll::-webkit-scrollbar-thumb { background: #33506a; border-radius: 4px; }

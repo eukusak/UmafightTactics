@@ -15,7 +15,7 @@ import { grantRoundXp, resetRoundEconomy, roundIncome, reducePlayerDamage } from
 import { addItemToStorage, resolveTrickGloves } from '../items/inventory';
 import { runAiPrep, ensureInitialBoard } from '../ai';
 import { AI_PROFILE_IDS } from '../ai/profiles';
-import { simulateBattle, type BattleSideInput } from '../battle/engine';
+import { BattleEngine, simulateBattle, type BattleFrame, type BattleSideInput } from '../battle/engine';
 import { PVE_UNIT_IDS } from '../battle/pve-units';
 import { applyAugment, createAugmentOffers } from '../augments/offers';
 import type {
@@ -25,7 +25,9 @@ import { getPlayer, isAlive, livingPlayers } from '../state';
 import { PVE_ENEMIES, pveEnemyFor, pveScale, rollPveLoot } from './pve';
 import { createDraft, draftComplete, pickDraftOption, currentPickers } from './draft';
 import { makePairings, recordOpponent } from './matchmaking';
-import { absoluteRound, hasAugmentBefore, nextRound, roundInfo, roundsInStage } from './schedule';
+import {
+  absoluteRound, hasAugmentBefore, hasStartSelection, nextRound, roundInfo, roundsInStage,
+} from './schedule';
 
 export type CreateMatchOptions = {
   seed: number;
@@ -92,6 +94,16 @@ export function createMatch(options: CreateMatchOptions): MatchState {
 
 export class RoundDirector {
   readonly rngs: RngRegistry;
+  /**
+   * Frames of the human player's own fight from the most recent resolveRound.
+   *
+   * They are recorded during the real resolution rather than replayed from a
+   * separate preview run: a preview would consume a different RNG stream and
+   * could show the player an outcome that disagrees with the actual result.
+   */
+  lastHumanFrames: BattleFrame[] | null = null;
+  /** Whether the human's fight was against PvE, for the battle banner. */
+  lastHumanBattleWasPve = false;
 
   constructor(readonly state: MatchState) {
     this.rngs = new RngRegistry(state.seed);
@@ -131,9 +143,11 @@ export class RoundDirector {
       this.resolveAiAugments();
     }
 
-    if (this.info.kind === 'DRAFT') {
-      const isFirst = !s.history.some((h) => h.kind === 'DRAFT');
-      s.draft = createDraft(s, this.rngs.get('draft'), isFirst);
+    // 1-1 opens with the Twinkle Start selection; later x-4 rounds are drafts.
+    const startSelection = hasStartSelection(s.stage, s.round);
+    if (startSelection || this.info.kind === 'DRAFT') {
+      const isFirst = startSelection || !s.history.some((h) => h.kind === 'DRAFT');
+      s.draft = createDraft(s, this.rngs.get('draft'), isFirst, startSelection);
       s.phase = 'DRAFT';
       this.resolveAiDraftPicks();
     }
@@ -222,6 +236,8 @@ export class RoundDirector {
   resolveRound(): RoundResolution {
     const s = this.state;
     s.phase = 'BATTLE';
+    this.lastHumanFrames = null;
+    this.lastHumanBattleWasPve = false;
 
     for (const p of s.players) {
       if (!isAlive(p)) continue;
@@ -302,6 +318,18 @@ export class RoundDirector {
     }
   }
 
+  /**
+   * Runs one battle. When `record` is set the frames are kept for playback, so
+   * what the player watches is the very run that produced the result.
+   */
+  private runBattle(a: BattleSideInput, b: BattleSideInput, rng: Rng, record: boolean) {
+    if (!record) return simulateBattle(a, b, rng);
+    const engine = new BattleEngine(a, b, rng, { recordFrames: true });
+    const result = engine.run();
+    this.lastHumanFrames = engine.frames;
+    return result;
+  }
+
   private sideFor(player: PlayerState): BattleSideInput {
     return {
       playerId: player.id,
@@ -347,7 +375,8 @@ export class RoundDirector {
     const enemy = this.pveSide();
     for (const p of livingPlayers(s)) {
       const rng = this.rngs.get(`battle-pair-${absoluteRound(s.stage, s.round)}-${p.id}`);
-      const result = simulateBattle(this.sideFor(p), enemy, rng);
+      const result = this.runBattle(this.sideFor(p), enemy, rng, p.isHuman);
+      if (p.isHuman) this.lastHumanBattleWasPve = true;
       const won = result.winner === 'A';
       outcomes.push({
         attackerId: p.id, defenderId: enemy.playerId,
@@ -383,7 +412,10 @@ export class RoundDirector {
       const attacker = getPlayer(s, pair.attackerId);
       const defender = getPlayer(s, pair.defenderId);
       const rng = this.rngs.get(`battle-pair-${roundKey}-${pair.attackerId}-${pair.defenderId}`);
-      const result = simulateBattle(this.sideFor(attacker), this.sideFor(defender), rng);
+      const humanInvolved = attacker.isHuman || defender.isHuman;
+      const result = this.runBattle(
+        this.sideFor(attacker), this.sideFor(defender), rng, humanInvolved,
+      );
 
       recordOpponent(attacker, defender.id);
       if (!pair.isGhost) recordOpponent(defender, attacker.id);

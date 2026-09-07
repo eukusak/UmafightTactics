@@ -441,6 +441,7 @@ type Coverage = {
   dirt: number;
   era: Record<'80s' | '90s' | '00s' | '10s+', number>;
   role: Record<Role, number>;
+  history: Partial<Record<HistoryTrait, number>>;
 };
 const emptyCoverage = (): Coverage => ({
   style: { nige: 0, senko: 0, sashi: 0, oikomi: 0 },
@@ -448,6 +449,7 @@ const emptyCoverage = (): Coverage => ({
   dirt: 0,
   era: { '80s': 0, '90s': 0, '00s': 0, '10s+': 0 },
   role: { TANK: 0, BRUISER: 0, AD_CARRY: 0, AP_CARRY: 0, SUPPORT: 0 },
+  history: {},
 });
 
 /** Spec §7.4 minimum coverage inside the active 60. */
@@ -458,6 +460,12 @@ const MIN_STYLE = 8, MIN_DISTANCE = 7, MIN_DIRT = 6;
  * activate on almost every board. Caps keep every trait meaningfully contested.
  */
 const MAX_STYLE = 18, MAX_DISTANCE = 14, MAX_DIRT = 12;
+/**
+ * History traits have low breakpoints (명가 maxes at 4 of 60), so an oversupplied
+ * one is trivially activated on almost every board. Without this cap 명가 landed
+ * on 10 of the active 60 and took a 30.7% top-1 share against a 25% warning line.
+ */
+const MAX_HISTORY = 7;
 const MIN_ERA: Record<'80s' | '90s' | '00s' | '10s+', number> = { '80s': 6, '90s': 10, '00s': 10, '10s+': 12 };
 const MIN_ROLE = 8;
 
@@ -471,6 +479,8 @@ function addCoverage(cov: Coverage, n: string, delta: number): void {
   else if (ds !== 'all_rounder') cov.distance[ds] += delta;
   cov.era[eraOf(n)] += delta;
   cov.role[roleOf.get(n)!] += delta;
+  const h = historyOfName.get(n)!;
+  cov.history[h] = (cov.history[h] ?? 0) + delta;
 }
 
 /** Hard floors from spec §7.4 — these must reach 0. */
@@ -497,6 +507,7 @@ function deficit(cov: Coverage): number {
   }
   d += Math.max(0, MIN_DIRT - cov.dirt);
   d += Math.max(0, cov.dirt - MAX_DIRT);
+  for (const n of Object.values(cov.history)) d += Math.max(0, (n ?? 0) - MAX_HISTORY);
   for (const e of Object.keys(MIN_ERA) as Array<keyof typeof MIN_ERA>) d += Math.max(0, MIN_ERA[e] - cov.era[e]);
   for (const r of ALL_ROLES) d += Math.max(0, MIN_ROLE - cov.role[r]);
   return d;
@@ -513,11 +524,12 @@ function diversityNeed(cov: Coverage, n: string, remaining: number): number {
   const roleGap = Math.max(0, MIN_ROLE - cov.role[roleOf.get(n)!]);
   const norm = (gap: number, min: number) => Math.min(1, gap / Math.max(1, Math.min(min, remaining)));
   // Picking into an already-saturated bucket is actively bad, not merely neutral.
+  const overHistory = Math.max(0, (cov.history[historyOfName.get(n)!] ?? 0) - MAX_HISTORY + 1);
   const overStyle = Math.max(0, cov.style[styleOfName.get(n)!] - MAX_STYLE + 1);
   const overDist = ds === 'dirt_champion'
     ? Math.max(0, cov.dirt - MAX_DIRT + 1)
     : ds === 'all_rounder' ? 0 : Math.max(0, cov.distance[distTrait] - MAX_DISTANCE + 1);
-  const saturation = Math.min(1, (overStyle + overDist) / 4);
+  const saturation = Math.min(1, (overStyle + overDist + overHistory) / 4);
   return (
     norm(styleGap, MIN_STYLE) * 0.30 +
     norm(distGap, MIN_DISTANCE) * 0.25 +

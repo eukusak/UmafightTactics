@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-07T01:09:22.744Z",
+  "generatedAt": "2026-09-07T05:53:20.712Z",
   "characters": [
     {
       "id": "special_week",
@@ -293,7 +293,7 @@
     {
       "id": "inari_one",
       "nameKo": "이나리 원",
-      "activeS1": false,
+      "activeS1": true,
       "cost": 1,
       "portrait": "portraits/inari_one.png",
       "battleSheet": "characters/inari_one.png",
@@ -347,7 +347,7 @@
     {
       "id": "gold_city",
       "nameKo": "골드 시티",
-      "activeS1": false,
+      "activeS1": true,
       "cost": 1,
       "portrait": "portraits/gold_city.png",
       "battleSheet": "characters/gold_city.png",
@@ -455,7 +455,7 @@
     {
       "id": "haru_urara",
       "nameKo": "하루 우라라",
-      "activeS1": false,
+      "activeS1": true,
       "cost": 1,
       "portrait": "portraits/haru_urara.png",
       "battleSheet": "characters/haru_urara.png",
@@ -465,7 +465,7 @@
       "id": "bamboo_memory",
       "nameKo": "뱀부 메모리",
       "activeS1": true,
-      "cost": 1,
+      "cost": 2,
       "portrait": "portraits/bamboo_memory.png",
       "battleSheet": "characters/bamboo_memory.png",
       "cutinRequired": false
@@ -536,7 +536,7 @@
     {
       "id": "king_halo",
       "nameKo": "킹 헤일로",
-      "activeS1": false,
+      "activeS1": true,
       "cost": 1,
       "portrait": "portraits/king_halo.png",
       "battleSheet": "characters/king_halo.png",
@@ -698,8 +698,8 @@
     {
       "id": "furioso",
       "nameKo": "푸리오소",
-      "activeS1": false,
-      "cost": 3,
+      "activeS1": true,
+      "cost": 2,
       "portrait": "portraits/furioso.png",
       "battleSheet": "characters/furioso.png",
       "cutinRequired": false
@@ -770,7 +770,7 @@
     {
       "id": "satono_crown",
       "nameKo": "사토노 크라운",
-      "activeS1": true,
+      "activeS1": false,
       "cost": 1,
       "portrait": "portraits/satono_crown.png",
       "battleSheet": "characters/satono_crown.png",
@@ -950,8 +950,8 @@
     {
       "id": "rhein_kraft",
       "nameKo": "라인 크라프트",
-      "activeS1": true,
-      "cost": 2,
+      "activeS1": false,
+      "cost": 3,
       "portrait": "portraits/rhein_kraft.png",
       "battleSheet": "characters/rhein_kraft.png",
       "cutinRequired": false
@@ -1031,8 +1031,8 @@
     {
       "id": "admire_groove",
       "nameKo": "어드마이어 그루브",
-      "activeS1": true,
-      "cost": 1,
+      "activeS1": false,
+      "cost": 2,
       "portrait": "portraits/admire_groove.png",
       "battleSheet": "characters/admire_groove.png",
       "cutinRequired": false
@@ -1040,8 +1040,8 @@
     {
       "id": "dream_journey",
       "nameKo": "드림 저니",
-      "activeS1": true,
-      "cost": 1,
+      "activeS1": false,
+      "cost": 2,
       "portrait": "portraits/dream_journey.png",
       "battleSheet": "characters/dream_journey.png",
       "cutinRequired": false
@@ -1076,8 +1076,8 @@
     {
       "id": "bubble_gum_fellow",
       "nameKo": "버블검 펠로",
-      "activeS1": true,
-      "cost": 2,
+      "activeS1": false,
+      "cost": 3,
       "portrait": "portraits/bubble_gum_fellow.png",
       "battleSheet": "characters/bubble_gum_fellow.png",
       "cutinRequired": false
@@ -1085,8 +1085,8 @@
     {
       "id": "sakura_chitose_o",
       "nameKo": "사쿠라 치토세 오",
-      "activeS1": true,
-      "cost": 1,
+      "activeS1": false,
+      "cost": 2,
       "portrait": "portraits/sakura_chitose_o.png",
       "battleSheet": "characters/sakura_chitose_o.png",
       "cutinRequired": false
@@ -1103,7 +1103,7 @@
     {
       "id": "blast_onepiece",
       "nameKo": "블래스트 원피스",
-      "activeS1": false,
+      "activeS1": true,
       "cost": 1,
       "portrait": "portraits/blast_onepiece.png",
       "battleSheet": "characters/blast_onepiece.png",

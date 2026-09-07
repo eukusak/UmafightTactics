@@ -8,7 +8,7 @@
     "ratingFormulaVersion": "horse-rating-v2",
     "skillFormulaVersion": "horse-skill-v2"
   },
-  "rosterHash": "f483c5e275f82e25",
+  "rosterHash": "15f19f20f7e4234d",
   "units": [
     {
       "id": "special_week",
@@ -3275,7 +3275,7 @@
       "nameEn": "Inari One",
       "cost": 1,
       "role": "BRUISER",
-      "activeS1": false,
+      "activeS1": true,
       "uftRating": 0.32,
       "hp": 625,
       "attackDamage": 46,
@@ -3875,7 +3875,7 @@
       "nameEn": "Gold City",
       "cost": 1,
       "role": "SUPPORT",
-      "activeS1": false,
+      "activeS1": true,
       "uftRating": 0.18,
       "hp": 605,
       "attackDamage": 44,
@@ -5119,7 +5119,7 @@
       "nameEn": "Haru Urara",
       "cost": 1,
       "role": "SUPPORT",
-      "activeS1": false,
+      "activeS1": true,
       "uftRating": 0.01,
       "hp": 575,
       "attackDamage": 42,
@@ -5216,16 +5216,16 @@
       "nameKo": "뱀부 메모리",
       "nameJa": "バンブーメモリー",
       "nameEn": "Bamboo Memory",
-      "cost": 1,
+      "cost": 2,
       "role": "SUPPORT",
       "activeS1": true,
       "uftRating": 0.37,
-      "hp": 605,
-      "attackDamage": 47,
+      "hp": 670,
+      "attackDamage": 52,
       "abilityPower": 100,
-      "armor": 35,
-      "magicResist": 37,
-      "attackSpeed": 0.67,
+      "armor": 37,
+      "magicResist": 39,
+      "attackSpeed": 0.69,
       "attackRange": 3,
       "moveSpeedHexPerSec": 1.78,
       "critChance": 0.25,
@@ -5243,8 +5243,8 @@
         "displayName": "뱀부 메모리 · 安田記念(GI)",
         "template": "CONTROL",
         "baseValues": [
-          176,
-          195,
+          190,
+          211,
           30
         ],
         "starMultipliers": [
@@ -5258,7 +5258,7 @@
         "effects": [
           {
             "kind": "DAMAGE",
-            "value": 106,
+            "value": 114,
             "damageType": "MAGIC",
             "target": "LARGEST_ENEMY_CLUSTER",
             "radius": 1
@@ -5277,7 +5277,7 @@
           }
         ],
         "vfxKey": "vfx_stun",
-        "description": "[진로 봉쇄] 대상 주변 적에게 106 마법피해를 입히고 1.5초간 기절시킨다."
+        "description": "[진로 봉쇄] 대상 주변 적에게 114 마법피해를 입히고 1.5초간 기절시킨다."
       },
       "source": {
         "powerIndex": 0.5009,
@@ -6041,7 +6041,7 @@
       "nameEn": "King Halo",
       "cost": 1,
       "role": "SUPPORT",
-      "activeS1": false,
+      "activeS1": true,
       "uftRating": 0.24,
       "hp": 595,
       "attackDamage": 45,
@@ -7918,16 +7918,16 @@
       "nameKo": "푸리오소",
       "nameJa": "フリオーソ",
       "nameEn": "Furioso",
-      "cost": 3,
+      "cost": 2,
       "role": "TANK",
-      "activeS1": false,
+      "activeS1": true,
       "uftRating": 0.62,
-      "hp": 850,
-      "attackDamage": 61,
+      "hp": 745,
+      "attackDamage": 55,
       "abilityPower": 100,
-      "armor": 52,
-      "magicResist": 50,
-      "attackSpeed": 0.73,
+      "armor": 50,
+      "magicResist": 48,
+      "attackSpeed": 0.71,
       "attackRange": 1,
       "moveSpeedHexPerSec": 1.87,
       "critChance": 0.25,
@@ -7945,8 +7945,8 @@
         "displayName": "푸리오소 · 全日本2歳優駿(JpnI)",
         "template": "AURA",
         "baseValues": [
-          213,
-          236,
+          198,
+          220,
           30
         ],
         "starMultipliers": [
@@ -8731,7 +8731,7 @@
       "nameEn": "Satono Crown",
       "cost": 1,
       "role": "AD_CARRY",
-      "activeS1": true,
+      "activeS1": false,
       "uftRating": 0.22,
       "hp": 600,
       "attackDamage": 45,
@@ -10764,16 +10764,16 @@
       "nameKo": "라인 크라프트",
       "nameJa": "ラインクラフト",
       "nameEn": "Rhein Kraft",
-      "cost": 2,
+      "cost": 3,
       "role": "SUPPORT",
-      "activeS1": true,
+      "activeS1": false,
       "uftRating": 0.63,
-      "hp": 720,
-      "attackDamage": 56,
+      "hp": 820,
+      "attackDamage": 62,
       "abilityPower": 100,
-      "armor": 45,
-      "magicResist": 48,
-      "attackSpeed": 0.72,
+      "armor": 47,
+      "magicResist": 50,
+      "attackSpeed": 0.74,
       "attackRange": 3,
       "moveSpeedHexPerSec": 1.89,
       "critChance": 0.25,
@@ -10791,8 +10791,8 @@
         "displayName": "라인 크라프트 · NHKマイルC(GI)",
         "template": "AURA",
         "baseValues": [
-          202,
-          224,
+          217,
+          241,
           31
         ],
         "starMultipliers": [
@@ -11703,16 +11703,16 @@
       "nameKo": "어드마이어 그루브",
       "nameJa": "アドマイヤグルーヴ",
       "nameEn": "Admire Groove",
-      "cost": 1,
+      "cost": 2,
       "role": "AD_CARRY",
-      "activeS1": true,
+      "activeS1": false,
       "uftRating": 0.4,
-      "hp": 620,
-      "attackDamage": 47,
+      "hp": 690,
+      "attackDamage": 53,
       "abilityPower": 100,
-      "armor": 38,
-      "magicResist": 38,
-      "attackSpeed": 0.67,
+      "armor": 40,
+      "magicResist": 40,
+      "attackSpeed": 0.69,
       "attackRange": 3,
       "moveSpeedHexPerSec": 1.8,
       "critChance": 0.25,
@@ -11730,8 +11730,8 @@
         "displayName": "어드마이어 그루브 · エリザベス女王杯(GI)",
         "template": "DASH_LINE",
         "baseValues": [
-          177,
-          197,
+          191,
+          213,
           30
         ],
         "starMultipliers": [
@@ -11750,7 +11750,7 @@
           },
           {
             "kind": "DAMAGE",
-            "value": 177,
+            "value": 191,
             "damageType": "PHYSICAL",
             "target": "CURRENT_TARGET",
             "radius": 1
@@ -11768,7 +11768,7 @@
           }
         ],
         "vfxKey": "vfx_dash_sashi",
-        "description": "[직선 돌파] 대상 방향으로 돌진해 주변 적에게 177 물리피해를 입히고 4초간 공격속도 +35%."
+        "description": "[직선 돌파] 대상 방향으로 돌진해 주변 적에게 191 물리피해를 입히고 4초간 공격속도 +35%."
       },
       "source": {
         "powerIndex": 0.5477,
@@ -11808,16 +11808,16 @@
       "nameKo": "드림 저니",
       "nameJa": "ドリームジャーニー",
       "nameEn": "Dream Journey",
-      "cost": 1,
+      "cost": 2,
       "role": "AD_CARRY",
-      "activeS1": true,
+      "activeS1": false,
       "uftRating": 0.5,
-      "hp": 645,
-      "attackDamage": 49,
+      "hp": 715,
+      "attackDamage": 55,
       "abilityPower": 100,
-      "armor": 42,
-      "magicResist": 39,
-      "attackSpeed": 0.69,
+      "armor": 44,
+      "magicResist": 41,
+      "attackSpeed": 0.71,
       "attackRange": 2,
       "moveSpeedHexPerSec": 1.84,
       "critChance": 0.25,
@@ -11835,8 +11835,8 @@
         "displayName": "드림 저니 · 朝日フューチュリティ(GI)",
         "template": "SINGLE_EXECUTE",
         "baseValues": [
-          178,
-          197,
+          192,
+          213,
           30
         ],
         "starMultipliers": [
@@ -11850,7 +11850,7 @@
         "effects": [
           {
             "kind": "DAMAGE",
-            "value": 240,
+            "value": 259,
             "damageType": "PHYSICAL",
             "target": "LOWEST_HP_PCT_ENEMY"
           },
@@ -11870,7 +11870,7 @@
           }
         ],
         "vfxKey": "vfx_execute",
-        "description": "[결정타] 체력 비율이 가장 낮은 적에게 240 물리피해. 체력 10% 미만이면 즉시 처치."
+        "description": "[결정타] 체력 비율이 가장 낮은 적에게 259 물리피해. 체력 10% 미만이면 즉시 처치."
       },
       "source": {
         "powerIndex": 0.572,
@@ -12221,16 +12221,16 @@
       "nameKo": "버블검 펠로",
       "nameJa": "バブルガムフェロー",
       "nameEn": "Bubble Gum Fellow",
-      "cost": 2,
+      "cost": 3,
       "role": "AD_CARRY",
-      "activeS1": true,
+      "activeS1": false,
       "uftRating": 0.71,
-      "hp": 745,
-      "attackDamage": 58,
+      "hp": 850,
+      "attackDamage": 64,
       "abilityPower": 100,
-      "armor": 50,
-      "magicResist": 47,
-      "attackSpeed": 0.73,
+      "armor": 52,
+      "magicResist": 49,
+      "attackSpeed": 0.75,
       "attackRange": 3,
       "moveSpeedHexPerSec": 1.92,
       "critChance": 0.25,
@@ -12248,8 +12248,8 @@
         "displayName": "버블검 펠로 · 朝日杯3歳S(GI)",
         "template": "MULTI_SHOT",
         "baseValues": [
-          206,
-          229,
+          221,
+          246,
           31
         ],
         "starMultipliers": [
@@ -12263,7 +12263,7 @@
         "effects": [
           {
             "kind": "DAMAGE",
-            "value": 87,
+            "value": 93,
             "damageType": "PHYSICAL",
             "target": "CURRENT_TARGET",
             "tag": "REPEAT:3"
@@ -12280,7 +12280,7 @@
           }
         ],
         "vfxKey": "vfx_projectile",
-        "description": "[연속 스퍼트] 대상에게 87 물리피해를 3회 연속으로 가한다."
+        "description": "[연속 스퍼트] 대상에게 93 물리피해를 3회 연속으로 가한다."
       },
       "source": {
         "powerIndex": 0.8659,
@@ -12319,16 +12319,16 @@
       "nameKo": "사쿠라 치토세 오",
       "nameJa": "サクラチトセオー",
       "nameEn": "Sakura Chitose O",
-      "cost": 1,
+      "cost": 2,
       "role": "SUPPORT",
-      "activeS1": true,
+      "activeS1": false,
       "uftRating": 0.41,
-      "hp": 630,
-      "attackDamage": 48,
+      "hp": 700,
+      "attackDamage": 53,
       "abilityPower": 100,
-      "armor": 39,
-      "magicResist": 39,
-      "attackSpeed": 0.67,
+      "armor": 41,
+      "magicResist": 41,
+      "attackSpeed": 0.69,
       "attackRange": 3,
       "moveSpeedHexPerSec": 1.78,
       "critChance": 0.25,
@@ -12346,8 +12346,8 @@
         "displayName": "사쿠라 치토세 오 · 天皇賞(秋)(GI)",
         "template": "CONTROL",
         "baseValues": [
-          177,
-          196,
+          191,
+          212,
           30
         ],
         "starMultipliers": [
@@ -12361,7 +12361,7 @@
         "effects": [
           {
             "kind": "DAMAGE",
-            "value": 106,
+            "value": 115,
             "damageType": "MAGIC",
             "target": "LARGEST_ENEMY_CLUSTER",
             "radius": 1
@@ -12384,7 +12384,7 @@
           }
         ],
         "vfxKey": "vfx_stun",
-        "description": "[진로 봉쇄] 대상 주변 적에게 106 마법피해를 입히고 1.5초간 기절시킨다."
+        "description": "[진로 봉쇄] 대상 주변 적에게 115 마법피해를 입히고 1.5초간 기절시킨다."
       },
       "source": {
         "powerIndex": 0.5294,
@@ -12530,7 +12530,7 @@
       "nameEn": "Blast Onepiece",
       "cost": 1,
       "role": "AD_CARRY",
-      "activeS1": false,
+      "activeS1": true,
       "uftRating": 0.21,
       "hp": 605,
       "attackDamage": 45,

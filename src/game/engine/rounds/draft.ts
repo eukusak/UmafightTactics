@@ -11,15 +11,19 @@ import { benchCapacity, itemStorageCapacity, newInstance, applyCombines } from '
 export const DRAFT_OPTION_COUNT = 9;
 
 /** Cost mix of the pedestals, escalating with the stage. */
-function draftCostWeights(stage: number): Record<Cost, number> {
+function draftCostWeights(stage: number, isStartSelection = false): Record<Cost, number> {
+  // The 1-1 start selection hands out first units, so it stays low-cost.
+  if (isStartSelection) return { 1: 60, 2: 40, 3: 0, 4: 0, 5: 0 };
   if (stage <= 2) return { 1: 20, 2: 45, 3: 30, 4: 5, 5: 0 };
   if (stage === 3) return { 1: 5, 2: 30, 3: 45, 4: 18, 5: 2 };
   if (stage === 4) return { 1: 0, 2: 15, 3: 40, 4: 37, 5: 8 };
   return { 1: 0, 2: 5, 3: 30, 4: 45, 5: 20 };
 }
 
-export function buildDraftOptions(state: MatchState, stage: number, rng: Rng): DraftOption[] {
-  const weights = draftCostWeights(stage);
+export function buildDraftOptions(
+  state: MatchState, stage: number, rng: Rng, isStartSelection = false,
+): DraftOption[] {
+  const weights = draftCostWeights(stage, isStartSelection);
   const costs: Cost[] = [1, 2, 3, 4, 5];
   const options: DraftOption[] = [];
   const used = new Set<string>();
@@ -74,9 +78,11 @@ export function draftOrder(state: MatchState, rng: Rng, isFirstDraft: boolean): 
     .map((p) => p.id);
 }
 
-export function createDraft(state: MatchState, rng: Rng, isFirstDraft: boolean): DraftState {
+export function createDraft(
+  state: MatchState, rng: Rng, isFirstDraft: boolean, isStartSelection = false,
+): DraftState {
   return {
-    options: buildDraftOptions(state, state.stage, rng),
+    options: buildDraftOptions(state, state.stage, rng, isStartSelection),
     order: draftOrder(state, rng, isFirstDraft),
     cursor: 0,
   };

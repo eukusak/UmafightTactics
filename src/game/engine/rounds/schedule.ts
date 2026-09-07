@@ -23,6 +23,15 @@ export function roundKind(stage: number, round: number): RoundKind {
   return 'PVP';
 }
 
+/**
+ * Spec §16.1 / §19.1 — 1-1 opens with the Twinkle Start selection, which is
+ * what gives every player their first unit. Without it both the human and the
+ * AI would enter 1-1 with an empty board and no gold to fix it.
+ */
+export function hasStartSelection(stage: number, round: number): boolean {
+  return stage === 1 && round === 1;
+}
+
 export function hasAugmentBefore(stage: number, round: number): boolean {
   return AUGMENT_ROUNDS.some((a) => a.stage === stage && a.round === round);
 }
