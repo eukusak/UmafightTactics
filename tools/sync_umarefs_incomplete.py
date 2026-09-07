@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
 """Recover UmaRefs characters marked Incomplete by physically clicking cards.
 
-Carrd can place an invisible link overlay beside/above the visible text, so a
-DOM parent lookup may miss the actual Google Drive target. This script uses
-Playwright mouse clicks at each incomplete character label, captures popup or
-same-tab navigation, and downloads the Race PNG when a Drive target exists.
+Carrd can render a character name and the '(Incomplete)' marker inside the same
+text container. This script therefore locates the exact substring using a DOM
+Range, clicks the screen coordinates of the character-name text itself, captures
+popup/same-tab Google Drive navigation, and downloads the Race PNG when one is
+actually available.
 """
 
 from __future__ import annotations
@@ -25,108 +26,183 @@ def is_drive(url: str | None) -> bool:
     if not url:
         return False
     host = (urlparse(url).hostname or "").lower()
-    return host in {"drive.google.com", "docs.google.com", "drive.usercontent.google.com"}
+    return host in {
+        "drive.google.com",
+        "docs.google.com",
+        "drive.usercontent.google.com",
+        "drive.googleusercontent.com",
+    }
+
+
+def locate_name_range(page, name: str) -> dict | None:
+    """Return viewport coordinates for the exact character-name substring."""
+    return page.evaluate(
+        """
+        (name) => {
+          const walker = document.createTreeWalker(
+            document.body,
+            NodeFilter.SHOW_TEXT,
+            {
+              acceptNode(node) {
+                const value = node.nodeValue || '';
+                return value.includes(name)
+                  ? NodeFilter.FILTER_ACCEPT
+                  : NodeFilter.FILTER_REJECT;
+              }
+            }
+          );
+
+          let node;
+          const candidates = [];
+          while ((node = walker.nextNode())) {
+            const value = node.nodeValue || '';
+            let start = 0;
+            while (true) {
+              const idx = value.indexOf(name, start);
+              if (idx < 0) break;
+              const range = document.createRange();
+              range.setStart(node, idx);
+              range.setEnd(node, idx + name.length);
+              const rect = range.getBoundingClientRect();
+              const parent = node.parentElement;
+              if (parent && rect.width > 0 && rect.height > 0) {
+                const style = getComputedStyle(parent);
+                if (style.display !== 'none' && style.visibility !== 'hidden') {
+                  candidates.push({node, parent, idx, area: rect.width * rect.height});
+                }
+              }
+              start = idx + name.length;
+            }
+          }
+
+          if (!candidates.length) return null;
+          candidates.sort((a,b) => a.area - b.area);
+          const best = candidates[0];
+          best.parent.scrollIntoView({block:'center', inline:'center'});
+          const range = document.createRange();
+          range.setStart(best.node, best.idx);
+          range.setEnd(best.node, best.idx + name.length);
+          const r = range.getBoundingClientRect();
+          return {
+            x: r.x,
+            y: r.y,
+            width: r.width,
+            height: r.height,
+            parentText: (best.parent.textContent || '').replace(/\s+/g, ' ').trim().slice(0, 240)
+          };
+        }
+        """,
+        name,
+    )
+
+
+def nearby_drive_anchor(page, name: str) -> str | None:
+    """Accept only a Drive anchor spatially overlapping/near the exact text range."""
+    return page.evaluate(
+        """
+        (name) => {
+          const drive = u => /(drive|docs)\.google\.com|drive\.(usercontent|googleusercontent)\.google\.com/i.test(u || '');
+
+          function findRange() {
+            const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
+            let node;
+            let best = null;
+            while ((node = walker.nextNode())) {
+              const value = node.nodeValue || '';
+              const idx = value.indexOf(name);
+              if (idx < 0) continue;
+              const range = document.createRange();
+              range.setStart(node, idx);
+              range.setEnd(node, idx + name.length);
+              const r = range.getBoundingClientRect();
+              if (r.width <= 0 || r.height <= 0) continue;
+              const area = r.width * r.height;
+              if (!best || area < best.area) best = {rect:r, area};
+            }
+            return best ? best.rect : null;
+          }
+
+          const r = findRange();
+          if (!r) return null;
+          const cx = r.left + r.width / 2;
+          const cy = r.top + r.height / 2;
+          const anchors = Array.from(document.querySelectorAll('a[href]')).filter(a => drive(a.href));
+          let best = null;
+          for (const a of anchors) {
+            const ar = a.getBoundingClientRect();
+            if (ar.width <= 0 || ar.height <= 0) continue;
+            const contains = cx >= ar.left && cx <= ar.right && cy >= ar.top && cy <= ar.bottom;
+            const dx = Math.max(ar.left - cx, 0, cx - ar.right);
+            const dy = Math.max(ar.top - cy, 0, cy - ar.bottom);
+            const distance = Math.hypot(dx, dy);
+            const score = contains ? -100000 : distance;
+            if (!best || score < best.score) best = {href:a.href, score};
+          }
+          // Tight threshold prevents borrowing a neighboring character's link.
+          return best && best.score <= 45 ? best.href : null;
+        }
+        """,
+        name,
+    )
 
 
 def click_character_for_url(context, name: str) -> tuple[str | None, str]:
     page = context.new_page()
+    popup_pages = []
     try:
         page.goto(base.SOURCE_PAGE, wait_until="domcontentloaded", timeout=120_000)
         try:
             page.wait_for_load_state("networkidle", timeout=20_000)
         except PlaywrightTimeoutError:
             pass
-        page.wait_for_timeout(1000)
+        page.wait_for_timeout(1200)
 
-        # Exact visible-text match. Carrd may wrap the text in multiple spans, so
-        # pick the smallest visible element whose normalized text is exact.
-        handle = page.evaluate_handle(
-            """
-            (name) => {
-              const norm = s => (s || '').replace(/\\s+/g, ' ').trim();
-              const els = Array.from(document.querySelectorAll('body *'))
-                .filter(el => norm(el.textContent) === name)
-                .filter(el => {
-                  const r = el.getBoundingClientRect();
-                  const s = getComputedStyle(el);
-                  return r.width > 0 && r.height > 0 && s.visibility !== 'hidden' && s.display !== 'none';
-                });
-              els.sort((a,b) => {
-                const ra = a.getBoundingClientRect(), rb = b.getBoundingClientRect();
-                return (ra.width * ra.height) - (rb.width * rb.height);
-              });
-              return els[0] || null;
-            }
-            """,
-            name,
-        )
-        el = handle.as_element()
-        if not el:
-            return None, "text-not-found"
-        box = el.bounding_box()
-        if not box:
-            return None, "no-bounding-box"
+        rect = locate_name_range(page, name)
+        if not rect:
+            return None, "text-range-not-found"
+        page.wait_for_timeout(200)
+
+        # Recompute after scroll because Range coordinates are viewport-relative.
+        rect = locate_name_range(page, name)
+        if not rect:
+            return None, "text-range-lost-after-scroll"
 
         before_pages = set(context.pages)
         before_url = page.url
-        cx = box["x"] + box["width"] / 2
-        cy = box["y"] + box["height"] / 2
+        cx = rect["x"] + rect["width"] / 2
+        cy = rect["y"] + rect["height"] / 2
         page.mouse.click(cx, cy)
-        page.wait_for_timeout(1800)
+        page.wait_for_timeout(1600)
 
-        # Check new popup/window first.
         for candidate in context.pages:
             if candidate not in before_pages:
+                popup_pages.append(candidate)
                 try:
                     candidate.wait_for_load_state("domcontentloaded", timeout=10_000)
                 except Exception:
                     pass
                 if is_drive(candidate.url):
-                    return candidate.url, "physical-click-popup"
+                    return candidate.url, "text-range-click-popup"
 
-        # Then same-tab navigation.
         if page.url != before_url and is_drive(page.url):
-            return page.url, "physical-click-same-tab"
+            return page.url, "text-range-click-same-tab"
 
-        # Some cards use a sibling/overlay anchor. Find the closest Drive anchor
-        # to the clicked label by screen geometry as a secondary exact-card test.
-        geometric = page.evaluate(
-            """
-            ({name}) => {
-              const norm = s => (s || '').replace(/\\s+/g, ' ').trim();
-              const drive = u => /(drive|docs)\\.google\\.com|drive\\.usercontent\\.google\\.com/i.test(u || '');
-              const labels = Array.from(document.querySelectorAll('body *')).filter(el => norm(el.textContent) === name);
-              if (!labels.length) return null;
-              labels.sort((a,b) => {
-                const ra=a.getBoundingClientRect(), rb=b.getBoundingClientRect();
-                return (ra.width*ra.height)-(rb.width*rb.height);
-              });
-              const r = labels[0].getBoundingClientRect();
-              const cx = r.left + r.width/2, cy = r.top + r.height/2;
-              const anchors = Array.from(document.querySelectorAll('a[href]')).filter(a => drive(a.href));
-              let best = null;
-              for (const a of anchors) {
-                const ar = a.getBoundingClientRect();
-                if (ar.width <= 0 || ar.height <= 0) continue;
-                const contains = cx >= ar.left && cx <= ar.right && cy >= ar.top && cy <= ar.bottom;
-                const dx = Math.max(ar.left-cx, 0, cx-ar.right);
-                const dy = Math.max(ar.top-cy, 0, cy-ar.bottom);
-                const d = Math.hypot(dx,dy);
-                const score = contains ? -100000 : d;
-                if (!best || score < best.score) best = {href:a.href, score};
-              }
-              // Only accept a nearby/overlapping card anchor; never borrow the
-              // previous/next character's link merely because it is in the HTML.
-              return best && best.score <= 80 ? best.href : null;
-            }
-            """,
-            {"name": name},
-        )
+        geometric = nearby_drive_anchor(page, name)
         if geometric and is_drive(geometric):
-            return geometric, "geometry-anchor"
+            return geometric, "text-range-nearby-anchor"
         return None, "no-drive-navigation"
     finally:
-        page.close()
+        for popup in popup_pages:
+            try:
+                if not popup.is_closed():
+                    popup.close()
+            except Exception:
+                pass
+        try:
+            if not page.is_closed():
+                page.close()
+        except Exception:
+            pass
 
 
 def main() -> int:
@@ -135,7 +211,7 @@ def main() -> int:
 
     manifest = json.loads(base.MANIFEST_PATH.read_text(encoding="utf-8"))
     records = manifest.get("characters", [])
-    targets = [r for r in records if r.get("incomplete_on_source")]
+    targets = [r for r in records if r.get("incomplete_on_source") and r.get("status") != "ok"]
 
     if not hasattr(base, "_original_download_from_drive"):
         base._original_download_from_drive = base.download_from_drive
@@ -148,13 +224,14 @@ def main() -> int:
 
         for i, record in enumerate(targets, 1):
             name = record["character_name"]
-            print(f"[{i}/{len(targets)}] {name}: clicking source card")
+            print(f"[{i}/{len(targets)}] {name}: locating/clicking source card")
             url, method = click_character_for_url(context, name)
             result = {"character_name": name, "drive_url": url, "discovery_method": method}
 
             if not url:
                 record["drive_url"] = None
                 record["status"] = "incomplete-no-drive-link"
+                record.pop("error", None)
                 result["status"] = record["status"]
                 results.append(result)
                 print(f"    no Drive navigation ({method})")
