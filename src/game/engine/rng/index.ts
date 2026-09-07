@@ -36,12 +36,35 @@ export function deriveSeed(matchSeed: number, streamName: string): number {
   return s >>> 0;
 }
 
+/**
+ * Avalanche mix (MurmurHash3 finalizer). A raw xorshift32 seeded with small
+ * sequential numbers emits near-linear first draws — seeds 1..10 produce
+ * 0.000063, 0.000126, 0.000189, … — so neighbouring match seeds would make the
+ * same early decisions. Seeds are mixed before they ever become state.
+ */
+export function mixSeed(seed: number): number {
+  let h = seed >>> 0;
+  h ^= h >>> 16;
+  h = Math.imul(h, 0x85ebca6b) >>> 0;
+  h ^= h >>> 13;
+  h = Math.imul(h, 0xc2b2ae35) >>> 0;
+  h ^= h >>> 16;
+  return h >>> 0 || 0x9e3779b9;
+}
+
 export class Rng {
   private state: number;
 
+  /** Builds a generator from a *seed*; the seed is mixed before use. */
   constructor(seed: number) {
-    const s = seed >>> 0;
-    this.state = s === 0 ? 0x9e3779b9 : s;
+    this.state = mixSeed(seed);
+  }
+
+  /** Restores a generator from a previously serialized raw state, unmixed. */
+  static fromState(state: number): Rng {
+    const rng = new Rng(1);
+    rng.setState(state);
+    return rng;
   }
 
   static forStream(matchSeed: number, streamName: string): Rng {
@@ -58,7 +81,7 @@ export class Rng {
   }
 
   clone(): Rng {
-    return new Rng(this.state);
+    return Rng.fromState(this.state);
   }
 
   nextUint32(): number {
@@ -161,7 +184,7 @@ export class RngRegistry {
   restore(states: Record<string, number>): void {
     this.streams.clear();
     for (const [name, state] of Object.entries(states)) {
-      this.streams.set(name, new Rng(state));
+      this.streams.set(name, Rng.fromState(state));
     }
   }
 

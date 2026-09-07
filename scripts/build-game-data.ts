@@ -195,8 +195,8 @@ const g1Raw = pick((h) => {
 });
 const g1Score = percentileMap(g1Raw);
 
-const winRate = pick((h) => (h.historySummary.starts > 0 ? h.historySummary.wins / h.historySummary.starts : 0));
-const winScore = percentileMap(winRate);
+// `winScore` / `top3Score` are listed as available features in spec §7.3 but the
+// authoritative recordCore formula does not consume them, so they are not computed.
 
 /** Aptitude spread across distances and surfaces. */
 const versatilityRaw = pick((h) => {
