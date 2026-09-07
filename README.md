@@ -52,6 +52,13 @@ npm run dev           # http://localhost:5173
 `sync:data`와 `data:build`의 산출물은 저장소에 커밋되어 있으므로,
 그냥 실행만 할 거라면 `npm ci && npm run dev`로 충분합니다.
 
+프로덕션 빌드를 로컬에서 확인하려면:
+
+```bash
+npm run build
+npm start             # http://localhost:4173 (PORT 환경변수로 변경 가능)
+```
+
 ### 개발자 모드
 
 ```text
@@ -160,15 +167,60 @@ STRICT_ART=1 npm run check:art   # 규격·알파·크기까지 전수 검사
 
 ## Render 배포
 
-저장소 루트의 `render.yaml`이 정적 사이트 배포를 정의합니다.
+이 게임은 **정적 SPA**입니다. 서버 런타임이 필요 없습니다.
+
+### 권장: Static Site
+
+Render 대시보드에서 **New → Blueprint**로 저장소를 연결하면 루트의 `render.yaml`을 그대로 사용합니다.
 
 ```yaml
-buildCommand: npm ci && npm run verify
+runtime: static
+buildCommand: npm ci && npm run build
 staticPublishPath: ./dist
 ```
 
-SPA fallback(`/* → /index.html`)과 `/assets/*` 장기 캐시 헤더가 함께 설정되어 있습니다.
-Render 대시보드에서 **New → Blueprint**로 저장소를 연결하면 `render.yaml`을 그대로 사용합니다.
+SPA fallback(`/* → /index.html`), `/assets/*` 장기 캐시 헤더, `NODE_VERSION=22`가 함께 설정됩니다.
+
+> **`render.yaml`은 Blueprint로 만든 서비스에만 적용됩니다.**
+> 대시보드에서 손으로 만든 서비스는 이 파일을 무시하고 대시보드 설정을 씁니다.
+> Node 프로젝트의 기본값은 `yarn`(설치만) + `yarn start`라서, 빌드가 일어나지 않고
+> `start` 스크립트도 없어 `Command "start" not found`로 실패합니다.
+
+이미 손으로 만든 서비스가 있다면 **Settings**에서 다음으로 맞추세요.
+
+| 항목 | 값 |
+|---|---|
+| Service Type | Static Site |
+| Build Command | `npm ci && npm run build` |
+| Publish Directory | `dist` |
+| Rewrite Rule | `/*` → `/index.html` (Action: Rewrite) |
+
+### 대안: Node Web Service
+
+정적 사이트로 못 바꾸는 상황이면 Web Service로도 뜹니다.
+
+| 항목 | 값 |
+|---|---|
+| Build Command | `npm ci && npm run build` |
+| Start Command | `npm start` |
+
+`npm start`는 `scripts/serve.mjs`(외부 의존성 없음)를 실행해 `dist/`를 `0.0.0.0:$PORT`로 서빙합니다.
+SPA fallback, gzip, 해시 자산 immutable 캐시, 경로 탈출 차단이 들어 있습니다.
+**`dist/`가 없으면 먼저 빌드한 뒤 서빙하므로**, 빌드 커맨드가 설치만 하는 기본값(`yarn`)이어도 동작합니다.
+
+### Node 버전
+
+`.node-version`이 **22**로 고정되어 있습니다. Render는 `.node-version`을 `package.json`의
+`engines`보다 우선하므로, `engines: ">=22"`가 최신 메이저(26 등)를 끌어오는 일을 막습니다.
+프로젝트가 검증된 버전은 Node 22 LTS입니다.
+
+### 배포 빌드에 `verify`를 쓰지 않는 이유
+
+명세 §39는 `buildCommand: npm ci && npm run verify`를 제시하지만, `verify`에는 테스트와
+250매치 시뮬레이션이 포함되어 배포마다 수 분이 걸리고 실패 지점이 늘어납니다.
+생성 데이터는 저장소에 커밋되어 있으므로 배포에는 `npm run build`로 충분합니다.
+전체 게이트는 **`.github/workflows/verify.yml`** 에서 push/PR마다 실행됩니다
+(데이터 재생성 후 diff 검사 · typecheck · lint · 테스트 · 시뮬레이션 · 빌드 · 서버 기동 확인).
 
 ---
 
