@@ -69,10 +69,6 @@ def sha256_file(path: Path) -> str:
 
 
 def fallback_filename(character_name: str) -> str:
-    # Example: "Special Week" -> "SpecialWeek-Race.png"
-    # Preserve ASCII letters/digits only because UmaRefs filenames use a compact
-    # latin-name form. The downloaded original filename is preferred whenever
-    # available, so this is only a fallback.
     compact = re.sub(r"[^A-Za-z0-9]+", "", character_name)
     return f"{compact}-Race.png"
 
@@ -83,14 +79,7 @@ def clean_drive_url(url: str) -> str:
     return value.rstrip("),.;]}")
 
 
-def is_drive_url(value: str | None) -> bool:
-    if not value:
-        return False
-    return bool(re.search(r"(?:drive|docs)\.google\.com|drive\.usercontent\.google\.com", value, re.I))
-
-
 def parse_character_section(body_text: str) -> tuple[list[str], set[str]]:
-    """Extract character names from the main list and mark incomplete entries."""
     raw_lines = [re.sub(r"\s+", " ", line).strip() for line in body_text.splitlines()]
     lines = [line for line in raw_lines if line]
 
@@ -118,10 +107,7 @@ def parse_character_section(body_text: str) -> tuple[list[str], set[str]]:
             if last_name:
                 incomplete.add(last_name)
             continue
-        # Carrd occasionally emits isolated decorative glyphs / headings.
-        if len(line) <= 1:
-            continue
-        if line.startswith("DISCLAIMER"):
+        if len(line) <= 1 or line.startswith("DISCLAIMER"):
             continue
         if line not in names:
             names.append(line)
@@ -143,7 +129,6 @@ def extract_all_drive_urls_from_html(page_html: str) -> list[str]:
 
 
 def discover_dom_url(page, character_name: str) -> str | None:
-    """Find a Drive URL structurally associated with the exact text node."""
     result = page.evaluate(
         """
         (name) => {
@@ -171,14 +156,12 @@ def discover_dom_url(page, character_name: str) -> str | None:
             for (let depth = 0; cur && depth < 6; depth++, cur = cur.parentElement) {
               const direct = urlFromElement(cur);
               if (direct) return direct;
-
               const anchors = Array.from(cur.querySelectorAll('a[href]'));
               const driveAnchors = anchors.filter(a => driveRe.test(a.href));
               if (driveAnchors.length === 1) return driveAnchors[0].href;
             }
           }
 
-          // Direct anchor whose visible text contains exactly the character name.
           for (const a of Array.from(document.querySelectorAll('a[href]'))) {
             if (driveRe.test(a.href) && normalize(a.textContent) === name) return a.href;
           }
@@ -191,7 +174,6 @@ def discover_dom_url(page, character_name: str) -> str | None:
 
 
 def discover_nearest_html_url(page_html: str, character_name: str, all_urls: list[str]) -> str | None:
-    """Fallback: choose a Drive URL physically near the character text in HTML."""
     if not all_urls:
         return None
     decoded = html_lib.unescape(page_html).replace("\\/", "/")
@@ -216,7 +198,6 @@ def discover_nearest_html_url(page_html: str, character_name: str, all_urls: lis
                 best_distance = distance
                 best_url = url
 
-    # A Carrd card's label and href should be relatively close in source HTML.
     if best_distance is not None and best_distance <= 12000:
         return best_url
     return None
@@ -239,9 +220,6 @@ def discover_links(page, names: list[str]) -> tuple[dict[str, str], dict[str, An
             mapping[name] = url
             method[name] = "html-nearest"
 
-    # If some characters remain unresolved but the page exposes Drive links in
-    # the same order as the character list, pair only when the remaining counts
-    # line up exactly. This avoids silently shifting mappings.
     unresolved = [n for n in names if n not in mapping]
     used_urls = set(mapping.values())
     unused_urls = [u for u in all_urls if u not in used_urls]
@@ -286,8 +264,6 @@ def find_race_png(paths: list[Path], character_name: str) -> Path | None:
     if len(exactish) == 1:
         return exactish[0]
 
-    # When the Drive link points directly to a PNG, there may be no '-Race'
-    # suffix in the temporary name. If there is exactly one PNG, accept it.
     if len(pngs) == 1:
         return pngs[0]
     return None
@@ -332,7 +308,7 @@ def download_from_drive(url: str, character_name: str, temp_root: Path) -> tuple
         if not candidate:
             return None, "Drive download succeeded but no unambiguous *-Race.png was found"
         return candidate, None
-    except Exception as exc:  # gdown emits several request/parser exception types
+    except Exception as exc:
         return None, f"{type(exc).__name__}: {exc}"
 
 
@@ -348,9 +324,6 @@ def validate_and_store(source: Path, character_name: str) -> dict[str, Any]:
     original_name = source.name
     if not original_name.lower().endswith(".png"):
         original_name = fallback_filename(character_name)
-
-    # Prefer the source's `Something-Race.png` filename. If Drive loses the
-    # filename during download, enforce the UmaRefs naming convention.
     if not original_name.lower().endswith("-race.png"):
         original_name = fallback_filename(character_name)
 
@@ -379,13 +352,14 @@ def existing_manifest() -> dict[str, Any]:
 
 
 def main() -> int:
+    global SOURCE_PAGE
+
     parser = argparse.ArgumentParser()
     parser.add_argument("--source", default=SOURCE_PAGE)
     parser.add_argument("--limit", type=int, default=0, help="0 means all characters")
     parser.add_argument("--discovery-only", action="store_true")
     args = parser.parse_args()
 
-    global SOURCE_PAGE
     SOURCE_PAGE = args.source
     OUT_DIR.mkdir(parents=True, exist_ok=True)
 
@@ -506,8 +480,6 @@ def main() -> int:
     print(f"[UmaRefs] manifest written to {MANIFEST_PATH}")
     if failures:
         print(f"[UmaRefs] completed with {failures} unresolved/download failures")
-        # Do not hard-fail: commit the manifest/debug output so subsequent passes
-        # can inspect and improve link discovery without losing successful files.
     return 0
 
 
