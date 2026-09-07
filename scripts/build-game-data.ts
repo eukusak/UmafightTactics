@@ -111,7 +111,10 @@ const normalizeName = (s: string): string => s.replace(/[\s·・ー-]/g, '').nor
 // ------------------------------------------------------------------------ load
 console.log('data:build — generating game data');
 
-const db = readJson<{ snapshot: { version: string; sourceDb: string }; horses: Horse[] }>(
+const db = readJson<{
+  snapshot: { version: string; sourceDb: string; normalizedAt: string };
+  horses: Horse[];
+}>(
   path.join(SRC, 'horse-game-db.json'),
 );
 const canonical = readJson<CanonicalRoster>(path.join(MANUAL, 'canonical-roster.json'));
@@ -817,7 +820,9 @@ write('augments.json', { version: 1, augments: AUGMENT_DEFS });
 
 const manifest: ArtManifest = {
   version: 1,
-  generatedAt: new Date().toISOString(),
+  // Derived from the source snapshot, not the wall clock: this file is
+  // committed, and a build-time timestamp would change it on every run.
+  generatedAt: db.snapshot.normalizedAt,
   characters: units.map((u) => ({
     id: u.id,
     nameKo: u.nameKo,

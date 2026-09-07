@@ -133,13 +133,17 @@ async function main(): Promise<void> {
     JSON.parse(buf.toString('utf8')); // fail fast on malformed JSON
     await writeFile(dest, buf);
     payloads[file] = buf;
+    const digest = sha256(buf);
+    const recorded = lock.files[file];
+    // The lock file is committed, so a re-sync that fetches identical bytes must
+    // not rewrite it — otherwise every `npm run verify` dirties the work tree.
     nextLock.files[file] = {
-      sha256: sha256(buf),
+      sha256: digest,
       bytes: buf.byteLength,
-      fetchedAt: new Date().toISOString(),
+      fetchedAt: recorded?.sha256 === digest ? recorded.fetchedAt : new Date().toISOString(),
       origin,
     };
-    console.log(`  ${file}: ${buf.byteLength} bytes  sha256=${sha256(buf).slice(0, 12)}…`);
+    console.log(`  ${file}: ${buf.byteLength} bytes  sha256=${digest.slice(0, 12)}…`);
   }
 
   assertIntegrity(
