@@ -8,6 +8,12 @@ on:
       - ".github/workflows/sync-umarefs.yml"
       - "tools/sync_umarefs.py"
       - "requirements-umarefs.txt"
+  pull_request:
+    branches: [main]
+    paths:
+      - ".github/workflows/sync-umarefs.yml"
+      - "tools/sync_umarefs.py"
+      - "requirements-umarefs.txt"
 
 permissions:
   contents: write
@@ -36,10 +42,16 @@ jobs:
           pip install -r requirements-umarefs.txt
           python -m playwright install --with-deps chromium
 
+      - name: Test one character on pull requests
+        if: github.event_name == 'pull_request'
+        run: python tools/sync_umarefs.py --limit 1
+
       - name: Download all playable-character Race images
+        if: github.event_name != 'pull_request'
         run: python tools/sync_umarefs.py
 
       - name: Guard against GitHub single-file limit
+        if: github.event_name != 'pull_request'
         shell: bash
         run: |
           oversized="$(find public/assets/characters/race -type f -size +95M -print || true)"
@@ -50,6 +62,7 @@ jobs:
           fi
 
       - name: Commit synchronized image database
+        if: github.event_name != 'pull_request'
         shell: bash
         run: |
           git config user.name "github-actions[bot]"
