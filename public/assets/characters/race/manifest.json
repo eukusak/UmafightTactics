@@ -978,7 +978,7 @@
       "incomplete_on_source": true,
       "source_page": "https://umarefs.crd.co/",
       "drive_url": null,
-      "status": "incomplete"
+      "status": "incomplete-no-drive-link"
     },
     {
       "character_name": "Sakura Laurel",
@@ -1583,7 +1583,7 @@
       "incomplete_on_source": true,
       "source_page": "https://umarefs.crd.co/",
       "drive_url": null,
-      "status": "incomplete"
+      "status": "incomplete-no-drive-link"
     },
     {
       "character_name": "Fenomeno",
@@ -1603,7 +1603,7 @@
       "incomplete_on_source": true,
       "source_page": "https://umarefs.crd.co/",
       "drive_url": null,
-      "status": "incomplete"
+      "status": "incomplete-no-drive-link"
     },
     {
       "character_name": "Almond Eye",
@@ -1727,14 +1727,14 @@
       "incomplete_on_source": true,
       "source_page": "https://umarefs.crd.co/",
       "drive_url": null,
-      "status": "incomplete"
+      "status": "incomplete-no-drive-link"
     },
     {
       "character_name": "Marche Lorraine",
       "incomplete_on_source": true,
       "source_page": "https://umarefs.crd.co/",
       "drive_url": null,
-      "status": "incomplete"
+      "status": "incomplete-no-drive-link"
     },
     {
       "character_name": "Epiphaneia",
@@ -1754,7 +1754,7 @@
       "incomplete_on_source": true,
       "source_page": "https://umarefs.crd.co/",
       "drive_url": null,
-      "status": "incomplete"
+      "status": "incomplete-no-drive-link"
     },
     {
       "character_name": "Victoire Pisa",
@@ -1774,36 +1774,37 @@
       "incomplete_on_source": true,
       "source_page": "https://umarefs.crd.co/",
       "drive_url": null,
-      "status": "incomplete"
+      "status": "incomplete-no-drive-link"
     },
     {
       "character_name": "Rulership",
       "incomplete_on_source": true,
       "source_page": "https://umarefs.crd.co/",
       "drive_url": null,
-      "status": "incomplete"
+      "status": "incomplete-no-drive-link"
     },
     {
       "character_name": "Efforia",
       "incomplete_on_source": true,
       "source_page": "https://umarefs.crd.co/",
       "drive_url": null,
-      "status": "incomplete"
+      "status": "incomplete-no-drive-link"
     },
     {
       "character_name": "Titleholder",
       "incomplete_on_source": true,
       "source_page": "https://umarefs.crd.co/",
       "drive_url": null,
-      "status": "incomplete"
+      "status": "incomplete-no-drive-link"
     },
     {
       "character_name": "Phalaenopsis",
       "incomplete_on_source": true,
       "source_page": "https://umarefs.crd.co/",
       "drive_url": null,
-      "status": "incomplete"
+      "status": "incomplete-no-drive-link"
     }
   ],
-  "last_retry_at": "2026-09-07T01:38:16+00:00"
+  "last_retry_at": "2026-09-07T01:38:16+00:00",
+  "last_incomplete_attempt_at": "2026-09-07T01:45:25+00:00"
 }
