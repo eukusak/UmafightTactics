@@ -106,7 +106,7 @@ function toUnitId(nameEn: string, horseId: string, taken: Set<string>): string {
   return id;
 }
 
-const normalizeName = (s: string): string => s.replace(/[\s·・ー\-]/g, '').normalize('NFC');
+const normalizeName = (s: string): string => s.replace(/[\s·・ー-]/g, '').normalize('NFC');
 
 // ------------------------------------------------------------------------ load
 console.log('data:build — generating game data');
