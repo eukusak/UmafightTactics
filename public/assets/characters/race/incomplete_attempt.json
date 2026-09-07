@@ -1,74 +1,122 @@
 [
   {
-    "character_name": "Daring Tact",
-    "drive_url": "https://drive.google.com/drive/folders/1CwrcGODM4z8cr8ddl8Vv5Qjh6psr_UdB?usp=drive_link",
-    "discovery_method": "text-range-click-same-tab",
-    "file_name": "DaringTact-Race.png",
-    "path": "public/assets/characters/race/DaringTact-Race.png",
-    "width": 8192,
-    "height": 2048,
-    "bytes": 3857151,
-    "sha256": "2569a0db84099c97e2843883eb9dd56222c8883be0574af41dd7eb3a70914fda",
+    "character_name": "Sakura Chitose O",
+    "drive_url": "https://drive.google.com/drive/u/2/folders/15Ru9veMLY9chqqVtx2yp_ALZ_S-BNwuK",
+    "discovery_method": "element-at-text-point",
+    "file_name": "SakuraChitoseO-Race.png",
+    "path": "public/assets/characters/race/SakuraChitoseO-Race.png",
+    "width": 16000,
+    "height": 4000,
+    "bytes": 11278049,
+    "sha256": "8a45df6809947c2e0e3758c12e22e6787e8b8dfd1200177113969709966eab32",
     "status": "ok"
   },
   {
-    "character_name": "Sakura Chitose O",
-    "drive_url": null,
-    "discovery_method": "text-range-not-found",
-    "status": "incomplete-no-drive-link"
-  },
-  {
     "character_name": "Blast Onepiece",
-    "drive_url": null,
-    "discovery_method": "text-range-not-found",
-    "status": "incomplete-no-drive-link"
+    "drive_url": "https://drive.google.com/drive/u/6/folders/13Oyx9p8zxnqVGI03T5elcLuz7U-YAowS",
+    "discovery_method": "element-at-text-point",
+    "file_name": "BlastOnepiece-Race.png",
+    "path": "public/assets/characters/race/BlastOnepiece-Race.png",
+    "width": 8192,
+    "height": 2048,
+    "bytes": 4983485,
+    "sha256": "619fc18416f2cfe2a1d51ccec34949397f840f5ab52ddad909772420dc640979",
+    "status": "ok"
   },
   {
     "character_name": "Forever Young",
-    "drive_url": null,
-    "discovery_method": "text-range-not-found",
-    "status": "incomplete-no-drive-link"
+    "drive_url": "https://drive.google.com/drive/u/2/folders/1K_RzbNKkN5gohaHEBqph8RRRsOcz0qN-",
+    "discovery_method": "element-at-text-point",
+    "file_name": "ForeverYoung-Race.png",
+    "path": "public/assets/characters/race/ForeverYoung-Race.png",
+    "width": 16000,
+    "height": 4000,
+    "bytes": 12185027,
+    "sha256": "22fb49be8f1b6dc22f3b35f8f6e034dcfc9e06f4a6b48c7c9d1f56d4a3e40027",
+    "status": "ok"
   },
   {
     "character_name": "Marche Lorraine",
-    "drive_url": null,
-    "discovery_method": "text-range-not-found",
-    "status": "incomplete-no-drive-link"
+    "drive_url": "https://drive.google.com/drive/u/2/folders/1ULsfqVnaBam8gAXFWSFS5svuaiVkGs7v",
+    "discovery_method": "element-at-text-point",
+    "file_name": "MarcheLorraine-Race.png",
+    "path": "public/assets/characters/race/MarcheLorraine-Race.png",
+    "width": 16000,
+    "height": 4000,
+    "bytes": 11545235,
+    "sha256": "662ee5496dda11abb5f69e974636dd60e4d310c8b8d5e566932731e62bbc1c9d",
+    "status": "ok"
   },
   {
     "character_name": "Logotype",
-    "drive_url": null,
-    "discovery_method": "text-range-not-found",
-    "status": "incomplete-no-drive-link"
+    "drive_url": "https://drive.google.com/drive/u/2/folders/1xYJOylnJXyIZxL3dOgO50rUhQiK0BrvL",
+    "discovery_method": "element-at-text-point",
+    "file_name": "Logotype-Race.png",
+    "path": "public/assets/characters/race/Logotype-Race.png",
+    "width": 16000,
+    "height": 4000,
+    "bytes": 9106091,
+    "sha256": "917cf142de675bcf93a3525aaf30f6778a98955225366539d3e680fc273a8d9c",
+    "status": "ok"
   },
   {
     "character_name": "Rose Kingdom",
-    "drive_url": null,
-    "discovery_method": "text-range-not-found",
-    "status": "incomplete-no-drive-link"
+    "drive_url": "https://drive.google.com/drive/u/2/folders/1CByU_vCF85AtKap9bw_bNHGqAdJ4IY4-",
+    "discovery_method": "element-at-text-point",
+    "file_name": "RoseKingdom-Race.png",
+    "path": "public/assets/characters/race/RoseKingdom-Race.png",
+    "width": 16000,
+    "height": 4000,
+    "bytes": 11372515,
+    "sha256": "4a325630c778db8c6225dd2faf7d03348c205261e8ed695c0ff5725e77637f11",
+    "status": "ok"
   },
   {
     "character_name": "Rulership",
-    "drive_url": null,
-    "discovery_method": "text-range-not-found",
-    "status": "incomplete-no-drive-link"
+    "drive_url": "https://drive.google.com/drive/u/2/folders/1cAtepEFxAzSuF5p3mX9WqIYQuT-0qGIZ",
+    "discovery_method": "element-at-text-point",
+    "file_name": "Rulership-Race.png",
+    "path": "public/assets/characters/race/Rulership-Race.png",
+    "width": 14000,
+    "height": 5600,
+    "bytes": 14221154,
+    "sha256": "75ca7e78875d263062bb70865ec6692b1c78e57f1862ba11f1cf95015d8c5a49",
+    "status": "ok"
   },
   {
     "character_name": "Efforia",
-    "drive_url": null,
-    "discovery_method": "text-range-not-found",
-    "status": "incomplete-no-drive-link"
+    "drive_url": "https://drive.google.com/drive/u/2/folders/1h5r9cAwAQyPMNc5MttT6D9uyRM2iHHD0",
+    "discovery_method": "element-at-text-point",
+    "file_name": "Efforia-Race.png",
+    "path": "public/assets/characters/race/Efforia-Race.png",
+    "width": 14000,
+    "height": 5600,
+    "bytes": 18559934,
+    "sha256": "a755c5fabd86acc4af43938ce8d2998fd8ee694e37acc248fbbaa919188d5bde",
+    "status": "ok"
   },
   {
     "character_name": "Titleholder",
-    "drive_url": null,
-    "discovery_method": "text-range-not-found",
-    "status": "incomplete-no-drive-link"
+    "drive_url": "https://drive.google.com/drive/u/2/folders/1yGNKQ2nIR2epx1acCoet-l61_uLDGMAp",
+    "discovery_method": "element-at-text-point",
+    "file_name": "Titleholder-Race.png",
+    "path": "public/assets/characters/race/Titleholder-Race.png",
+    "width": 14000,
+    "height": 5600,
+    "bytes": 13173358,
+    "sha256": "35959c83cbcf58caa547b5162a75e282f514fb1d7fdf5c37a59f4d9539c64356",
+    "status": "ok"
   },
   {
     "character_name": "Phalaenopsis",
-    "drive_url": null,
-    "discovery_method": "text-range-not-found",
-    "status": "incomplete-no-drive-link"
+    "drive_url": "https://drive.google.com/drive/u/2/folders/1Q_dPz8KCNFR4mpe9UokD_JrV-I2eNb4M",
+    "discovery_method": "element-at-text-point",
+    "file_name": "Phalaenopsis-Race.png",
+    "path": "public/assets/characters/race/Phalaenopsis-Race.png",
+    "width": 14000,
+    "height": 5600,
+    "bytes": 15212762,
+    "sha256": "5bd82a3c881335e649b96de98f5dd4039b467479676775ca8e10eb71459ed756",
+    "status": "ok"
   }
 ]
