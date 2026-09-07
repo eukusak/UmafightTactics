@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
-"""Recover UmaRefs characters marked Incomplete by physically clicking cards.
+"""Recover UmaRefs characters marked Incomplete without reloading Carrd per card.
 
-Carrd can render a character name and the '(Incomplete)' marker inside the same
-text container. This script therefore locates the exact substring using a DOM
-Range, clicks the screen coordinates of the character-name text itself, captures
-popup/same-tab Google Drive navigation, and downloads the Race PNG when one is
-actually available.
+The page is loaded once. For each unresolved character, this script locates the
+exact character-name substring with a DOM Range, captures the real link target
+under that text while preventing navigation, and downloads only *-Race.png from
+the linked Google Drive folder. This avoids Carrd throttling caused by opening
+the site repeatedly.
 """
 
 from __future__ import annotations
@@ -37,21 +37,19 @@ def is_drive(url: str | None) -> bool:
 def locate_name_range(page, name: str) -> dict | None:
     """Return viewport coordinates for the exact character-name substring."""
     return page.evaluate(
-        """
+        r"""
         (name) => {
           const walker = document.createTreeWalker(
             document.body,
             NodeFilter.SHOW_TEXT,
             {
               acceptNode(node) {
-                const value = node.nodeValue || '';
-                return value.includes(name)
+                return (node.nodeValue || '').includes(name)
                   ? NodeFilter.FILTER_ACCEPT
                   : NodeFilter.FILTER_REJECT;
               }
             }
           );
-
           let node;
           const candidates = [];
           while ((node = walker.nextNode())) {
@@ -74,7 +72,6 @@ def locate_name_range(page, name: str) -> dict | None:
               start = idx + name.length;
             }
           }
-
           if (!candidates.length) return null;
           candidates.sort((a,b) => a.area - b.area);
           const best = candidates[0];
@@ -83,126 +80,112 @@ def locate_name_range(page, name: str) -> dict | None:
           range.setStart(best.node, best.idx);
           range.setEnd(best.node, best.idx + name.length);
           const r = range.getBoundingClientRect();
-          return {
-            x: r.x,
-            y: r.y,
-            width: r.width,
-            height: r.height,
-            parentText: (best.parent.textContent || '').replace(/\s+/g, ' ').trim().slice(0, 240)
-          };
+          return {x:r.x, y:r.y, width:r.width, height:r.height};
         }
         """,
         name,
     )
 
 
-def nearby_drive_anchor(page, name: str) -> str | None:
-    """Accept only a Drive anchor spatially overlapping/near the exact text range."""
+def drive_url_at_point(page, x: float, y: float) -> str | None:
     return page.evaluate(
-        """
-        (name) => {
+        r"""
+        ({x,y}) => {
           const drive = u => /(drive|docs)\.google\.com|drive\.(usercontent|googleusercontent)\.google\.com/i.test(u || '');
-
-          function findRange() {
-            const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
-            let node;
-            let best = null;
-            while ((node = walker.nextNode())) {
-              const value = node.nodeValue || '';
-              const idx = value.indexOf(name);
-              if (idx < 0) continue;
-              const range = document.createRange();
-              range.setStart(node, idx);
-              range.setEnd(node, idx + name.length);
-              const r = range.getBoundingClientRect();
-              if (r.width <= 0 || r.height <= 0) continue;
-              const area = r.width * r.height;
-              if (!best || area < best.area) best = {rect:r, area};
+          const els = document.elementsFromPoint(x,y);
+          for (const initial of els) {
+            let el = initial;
+            for (let depth=0; el && depth<8; depth++, el=el.parentElement) {
+              if (el.href && drive(el.href)) return el.href;
+              for (const attr of Array.from(el.attributes || [])) {
+                const value = attr.value || '';
+                const m = value.match(/https?:\/\/(?:drive\.google\.com|docs\.google\.com|drive\.(?:usercontent|googleusercontent)\.google\.com)\/[^\"'<>\s]+/i);
+                if (m) return m[0];
+              }
             }
-            return best ? best.rect : null;
           }
+          return null;
+        }
+        """,
+        {"x": x, "y": y},
+    )
 
-          const r = findRange();
-          if (!r) return null;
-          const cx = r.left + r.width / 2;
-          const cy = r.top + r.height / 2;
+
+def nearby_drive_anchor(page, x: float, y: float) -> str | None:
+    return page.evaluate(
+        r"""
+        ({x,y}) => {
+          const drive = u => /(drive|docs)\.google\.com|drive\.(usercontent|googleusercontent)\.google\.com/i.test(u || '');
           const anchors = Array.from(document.querySelectorAll('a[href]')).filter(a => drive(a.href));
           let best = null;
           for (const a of anchors) {
-            const ar = a.getBoundingClientRect();
-            if (ar.width <= 0 || ar.height <= 0) continue;
-            const contains = cx >= ar.left && cx <= ar.right && cy >= ar.top && cy <= ar.bottom;
-            const dx = Math.max(ar.left - cx, 0, cx - ar.right);
-            const dy = Math.max(ar.top - cy, 0, cy - ar.bottom);
-            const distance = Math.hypot(dx, dy);
+            const r = a.getBoundingClientRect();
+            if (r.width <= 0 || r.height <= 0) continue;
+            const contains = x >= r.left && x <= r.right && y >= r.top && y <= r.bottom;
+            const dx = Math.max(r.left-x, 0, x-r.right);
+            const dy = Math.max(r.top-y, 0, y-r.bottom);
+            const distance = Math.hypot(dx,dy);
             const score = contains ? -100000 : distance;
             if (!best || score < best.score) best = {href:a.href, score};
           }
-          // Tight threshold prevents borrowing a neighboring character's link.
           return best && best.score <= 45 ? best.href : null;
         }
         """,
-        name,
+        {"x": x, "y": y},
     )
 
 
-def click_character_for_url(context, name: str) -> tuple[str | None, str]:
-    page = context.new_page()
-    popup_pages = []
-    try:
-        page.goto(base.SOURCE_PAGE, wait_until="domcontentloaded", timeout=120_000)
-        try:
-            page.wait_for_load_state("networkidle", timeout=20_000)
-        except PlaywrightTimeoutError:
-            pass
-        page.wait_for_timeout(1200)
+def resolve_character_url(page, name: str) -> tuple[str | None, str]:
+    rect = locate_name_range(page, name)
+    if not rect:
+        return None, "text-range-not-found"
+    page.wait_for_timeout(150)
+    rect = locate_name_range(page, name)
+    if not rect:
+        return None, "text-range-lost-after-scroll"
 
-        rect = locate_name_range(page, name)
-        if not rect:
-            return None, "text-range-not-found"
-        page.wait_for_timeout(200)
+    cx = rect["x"] + rect["width"] / 2
+    cy = rect["y"] + rect["height"] / 2
 
-        # Recompute after scroll because Range coordinates are viewport-relative.
-        rect = locate_name_range(page, name)
-        if not rect:
-            return None, "text-range-lost-after-scroll"
+    direct = drive_url_at_point(page, cx, cy)
+    if direct and is_drive(direct):
+        return direct, "element-at-text-point"
 
-        before_pages = set(context.pages)
-        before_url = page.url
-        cx = rect["x"] + rect["width"] / 2
-        cy = rect["y"] + rect["height"] / 2
-        page.mouse.click(cx, cy)
-        page.wait_for_timeout(1600)
+    nearby = nearby_drive_anchor(page, cx, cy)
+    if nearby and is_drive(nearby):
+        return nearby, "nearby-anchor"
 
-        for candidate in context.pages:
-            if candidate not in before_pages:
-                popup_pages.append(candidate)
-                try:
-                    candidate.wait_for_load_state("domcontentloaded", timeout=10_000)
-                except Exception:
-                    pass
-                if is_drive(candidate.url):
-                    return candidate.url, "text-range-click-popup"
-
-        if page.url != before_url and is_drive(page.url):
-            return page.url, "text-range-click-same-tab"
-
-        geometric = nearby_drive_anchor(page, name)
-        if geometric and is_drive(geometric):
-            return geometric, "text-range-nearby-anchor"
-        return None, "no-drive-navigation"
-    finally:
-        for popup in popup_pages:
-            try:
-                if not popup.is_closed():
-                    popup.close()
-            except Exception:
-                pass
-        try:
-            if not page.is_closed():
-                page.close()
-        except Exception:
-            pass
+    # Last resort: capture the real trusted click target while preventing the
+    # browser from leaving UmaRefs. The listener is installed in capture phase.
+    page.evaluate(
+        r"""
+        () => {
+          window.__umarefsCapturedHref = null;
+          if (!window.__umarefsCaptureInstalled) {
+            document.addEventListener('click', (event) => {
+              let el = event.target;
+              while (el && el !== document) {
+                if (el.href) {
+                  window.__umarefsCapturedHref = el.href;
+                  break;
+                }
+                el = el.parentElement;
+              }
+              event.preventDefault();
+              event.stopImmediatePropagation();
+              event.stopPropagation();
+            }, true);
+            window.__umarefsCaptureInstalled = true;
+          }
+        }
+        """
+    )
+    page.mouse.click(cx, cy)
+    page.wait_for_timeout(250)
+    captured = page.evaluate("() => window.__umarefsCapturedHref")
+    if captured and is_drive(captured):
+        return captured, "captured-click-href"
+    return None, "no-drive-target-at-card"
 
 
 def main() -> int:
@@ -219,13 +202,20 @@ def main() -> int:
     results = []
     with sync_playwright() as p, tempfile.TemporaryDirectory(prefix="umarefs-incomplete-") as td:
         browser = p.chromium.launch(headless=True)
-        context = browser.new_context(viewport={"width": 1440, "height": 1200})
-        temp_root = Path(td)
+        page = browser.new_page(viewport={"width": 1440, "height": 1200})
+        page.goto(base.SOURCE_PAGE, wait_until="domcontentloaded", timeout=120_000)
+        try:
+            page.wait_for_load_state("networkidle", timeout=20_000)
+        except PlaywrightTimeoutError:
+            pass
+        page.wait_for_timeout(1800)
+        print(f"[UmaRefs incomplete] page loaded once; targets={len(targets)}")
 
+        temp_root = Path(td)
         for i, record in enumerate(targets, 1):
             name = record["character_name"]
-            print(f"[{i}/{len(targets)}] {name}: locating/clicking source card")
-            url, method = click_character_for_url(context, name)
+            print(f"[{i}/{len(targets)}] {name}: resolving source card")
+            url, method = resolve_character_url(page, name)
             result = {"character_name": name, "drive_url": url, "discovery_method": method}
 
             if not url:
@@ -234,9 +224,10 @@ def main() -> int:
                 record.pop("error", None)
                 result["status"] = record["status"]
                 results.append(result)
-                print(f"    no Drive navigation ({method})")
+                print(f"    no Drive target ({method})")
                 continue
 
+            print(f"    Drive target: {url}")
             record["drive_url"] = url
             downloaded, error = fast.fast_download_from_drive(url, name, temp_root)
             if not downloaded:
@@ -277,8 +268,9 @@ def main() -> int:
     out = base.OUT_DIR / "incomplete_attempt.json"
     out.write_text(json.dumps(results, indent=2, ensure_ascii=False), encoding="utf-8")
     print(
-        f"[UmaRefs incomplete] recovered={sum(1 for x in results if x.get('status') == 'ok')} "
-        f"remaining={sum(1 for x in results if x.get('status') != 'ok')}"
+        f"[UmaRefs incomplete] recovered_now={sum(1 for x in results if x.get('status') == 'ok')} "
+        f"remaining={sum(1 for x in results if x.get('status') != 'ok')} "
+        f"total_ok={manifest['ok_count']}"
     )
     return 0
 
