@@ -1,68 +1,74 @@
 [
   {
     "character_name": "Daring Tact",
-    "drive_url": null,
-    "discovery_method": "text-not-found",
-    "status": "incomplete-no-drive-link"
+    "drive_url": "https://drive.google.com/drive/folders/1CwrcGODM4z8cr8ddl8Vv5Qjh6psr_UdB?usp=drive_link",
+    "discovery_method": "text-range-click-same-tab",
+    "file_name": "DaringTact-Race.png",
+    "path": "public/assets/characters/race/DaringTact-Race.png",
+    "width": 8192,
+    "height": 2048,
+    "bytes": 3857151,
+    "sha256": "2569a0db84099c97e2843883eb9dd56222c8883be0574af41dd7eb3a70914fda",
+    "status": "ok"
   },
   {
     "character_name": "Sakura Chitose O",
     "drive_url": null,
-    "discovery_method": "text-not-found",
+    "discovery_method": "text-range-not-found",
     "status": "incomplete-no-drive-link"
   },
   {
     "character_name": "Blast Onepiece",
     "drive_url": null,
-    "discovery_method": "text-not-found",
+    "discovery_method": "text-range-not-found",
     "status": "incomplete-no-drive-link"
   },
   {
     "character_name": "Forever Young",
     "drive_url": null,
-    "discovery_method": "text-not-found",
+    "discovery_method": "text-range-not-found",
     "status": "incomplete-no-drive-link"
   },
   {
     "character_name": "Marche Lorraine",
     "drive_url": null,
-    "discovery_method": "text-not-found",
+    "discovery_method": "text-range-not-found",
     "status": "incomplete-no-drive-link"
   },
   {
     "character_name": "Logotype",
     "drive_url": null,
-    "discovery_method": "text-not-found",
+    "discovery_method": "text-range-not-found",
     "status": "incomplete-no-drive-link"
   },
   {
     "character_name": "Rose Kingdom",
     "drive_url": null,
-    "discovery_method": "text-not-found",
+    "discovery_method": "text-range-not-found",
     "status": "incomplete-no-drive-link"
   },
   {
     "character_name": "Rulership",
     "drive_url": null,
-    "discovery_method": "text-not-found",
+    "discovery_method": "text-range-not-found",
     "status": "incomplete-no-drive-link"
   },
   {
     "character_name": "Efforia",
     "drive_url": null,
-    "discovery_method": "text-not-found",
+    "discovery_method": "text-range-not-found",
     "status": "incomplete-no-drive-link"
   },
   {
     "character_name": "Titleholder",
     "drive_url": null,
-    "discovery_method": "text-not-found",
+    "discovery_method": "text-range-not-found",
     "status": "incomplete-no-drive-link"
   },
   {
     "character_name": "Phalaenopsis",
     "drive_url": null,
-    "discovery_method": "text-not-found",
+    "discovery_method": "text-range-not-found",
     "status": "incomplete-no-drive-link"
   }
 ]

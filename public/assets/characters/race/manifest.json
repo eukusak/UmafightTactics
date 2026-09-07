@@ -7,8 +7,8 @@
   "npcs_included": false,
   "outfits_included": false,
   "character_count": 143,
-  "ok_count": 132,
-  "incomplete_count": 11,
+  "ok_count": 133,
+  "incomplete_count": 10,
   "failure_count": 0,
   "characters": [
     {
@@ -977,8 +977,14 @@
       "character_name": "Daring Tact",
       "incomplete_on_source": true,
       "source_page": "https://umarefs.crd.co/",
-      "drive_url": null,
-      "status": "incomplete-no-drive-link"
+      "drive_url": "https://drive.google.com/drive/folders/1CwrcGODM4z8cr8ddl8Vv5Qjh6psr_UdB?usp=drive_link",
+      "status": "ok",
+      "file_name": "DaringTact-Race.png",
+      "path": "public/assets/characters/race/DaringTact-Race.png",
+      "width": 8192,
+      "height": 2048,
+      "bytes": 3857151,
+      "sha256": "2569a0db84099c97e2843883eb9dd56222c8883be0574af41dd7eb3a70914fda"
     },
     {
       "character_name": "Sakura Laurel",
@@ -1806,5 +1812,5 @@
     }
   ],
   "last_retry_at": "2026-09-07T01:38:16+00:00",
-  "last_incomplete_attempt_at": "2026-09-07T01:45:25+00:00"
+  "last_incomplete_attempt_at": "2026-09-07T01:52:24+00:00"
 }
