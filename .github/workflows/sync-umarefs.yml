@@ -1,0 +1,76 @@
+name: Sync UmaRefs race images
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/sync-umarefs.yml"
+      - "tools/sync_umarefs.py"
+      - "requirements-umarefs.txt"
+  pull_request:
+    branches: [main]
+    paths:
+      - ".github/workflows/sync-umarefs.yml"
+      - "tools/sync_umarefs.py"
+      - "requirements-umarefs.txt"
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: true
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: requirements-umarefs.txt
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements-umarefs.txt
+          python -m playwright install --with-deps chromium
+
+      - name: Test one character on pull requests
+        if: github.event_name == 'pull_request'
+        run: python tools/sync_umarefs.py --limit 1
+
+      - name: Download all playable-character Race images
+        if: github.event_name != 'pull_request'
+        run: python tools/sync_umarefs.py
+
+      - name: Guard against GitHub single-file limit
+        if: github.event_name != 'pull_request'
+        shell: bash
+        run: |
+          oversized="$(find public/assets/characters/race -type f -size +95M -print || true)"
+          if [ -n "$oversized" ]; then
+            echo "The following files exceed the safe GitHub file-size threshold:"
+            echo "$oversized"
+            exit 1
+          fi
+
+      - name: Commit synchronized image database
+        if: github.event_name != 'pull_request'
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add public/assets/characters/race
+          if git diff --cached --quiet; then
+            echo "No asset changes to commit."
+            exit 0
+          fi
+          git commit -m "chore: sync UmaRefs character race images"
+          git push origin HEAD:main

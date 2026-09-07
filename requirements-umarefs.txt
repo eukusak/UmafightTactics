@@ -1,0 +1,4 @@
+# Dependencies for the automated UmaRefs race-image database sync.
+gdown>=5.2.0,<6
+Pillow>=11.0.0,<13
+playwright>=1.55.0,<2

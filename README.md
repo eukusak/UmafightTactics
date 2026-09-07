@@ -139,6 +139,23 @@ STRICT_ART=1 npm run check:art   # 규격·알파·크기까지 전수 검사
 
 디자인팀 발주 사양은 **[docs/ART_REQUEST.md](docs/ART_REQUEST.md)** 에 있습니다.
 
+### 캐릭터 레퍼런스 이미지 (`public/assets/characters/race/`)
+
+이 디렉터리의 캐릭터 레퍼런스 이미지는 공개 UmaRefs 페이지(`https://umarefs.crd.co/`)에서
+자동 워크플로(`.github/workflows/sync-umarefs*.yml`, `tools/sync_umarefs*.py`)로 동기화된다.
+
+- 원본 파일명을 보존한다 (예: `SpecialWeek-Race.png`).
+- `manifest.json`이 캐릭터↔파일 매핑, 원본 링크, 크기, 용량, SHA-256을 기록한다.
+- UmaRefs에서 incomplete로 표시된 항목은 다운로드를 강제하지 않고 매니페스트에만 남긴다.
+- NPC/승부복 레퍼런스는 이 세트에서 의도적으로 제외한다.
+
+> **게임이 직접 로드하는 자산이 아니다.** 게임은 `art-manifest.json`이 정의하는 경로
+> (`portraits/`, `characters/<unitId>.png` 등)만 읽는다. 레이스 이미지는 도트 아트 제작 시
+> **참고용 레퍼런스**이며, 그대로 게임에 넣지 않는다.
+>
+> UmaRefs는 Cygames와 무관하다고 명시하고 있으며, 이 저장소 역시 제3자 레퍼런스 아트/자산의
+> 권리를 주장하지 않는다. 재배포·공개 전에 해당 권리와 허가 범위를 반드시 확인할 것.
+
 ---
 
 ## Render 배포
@@ -198,4 +215,5 @@ src/
 - **공식 우마무스메 / TFT의 이미지·UI·스프라이트·음원을 저장소에 포함하지 마세요.**
   발주 아트는 공식 자산을 트레이싱하지 않은 독자 제작물이어야 합니다.
 - 실존 경주마의 전적 데이터는 공개 기록에 기반합니다.
+- `public/assets/characters/race/`의 레퍼런스 이미지는 제3자(UmaRefs) 자산이며 이 저장소가 권리를 주장하지 않습니다.
 - 본 프로젝트는 비영리 팬 제작물이며 상업적 이용을 의도하지 않습니다.
