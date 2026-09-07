@@ -452,25 +452,51 @@ const emptyCoverage = (): Coverage => ({
 
 /** Spec §7.4 minimum coverage inside the active 60. */
 const MIN_STYLE = 8, MIN_DISTANCE = 7, MIN_DIRT = 6;
+/**
+ * Soft caps. The spec fixes only minimums, but the source data skews heavily
+ * middle-distance (56 of 145) and front-running, which would let 중거리 and 도주
+ * activate on almost every board. Caps keep every trait meaningfully contested.
+ */
+const MAX_STYLE = 18, MAX_DISTANCE = 14, MAX_DIRT = 12;
 const MIN_ERA: Record<'80s' | '90s' | '00s' | '10s+', number> = { '80s': 6, '90s': 10, '00s': 10, '10s+': 12 };
 const MIN_ROLE = 8;
 
 function addCoverage(cov: Coverage, n: string, delta: number): void {
   cov.style[styleOfName.get(n)!] += delta;
+  // Only the trait a unit actually carries counts: that is what activates a
+  // synergy, so counting a dirt unit's notional best distance would overstate
+  // coverage for a trait no board can ever reach through it.
   const ds = distanceSlotOfName.get(n)!;
   if (ds === 'dirt_champion') cov.dirt += delta;
   else if (ds !== 'all_rounder') cov.distance[ds] += delta;
-  // An all_rounder also counts toward its natural best distance for coverage purposes.
-  if (ds === 'all_rounder' || ds === 'dirt_champion') cov.distance[bestDistance(horseOf(n))] += delta;
   cov.era[eraOf(n)] += delta;
   cov.role[roleOf.get(n)!] += delta;
 }
 
-function deficit(cov: Coverage): number {
+/** Hard floors from spec §7.4 — these must reach 0. */
+function hardDeficit(cov: Coverage): number {
   let d = 0;
   for (const s of ['nige', 'senko', 'sashi', 'oikomi'] as RunStyle[]) d += Math.max(0, MIN_STYLE - cov.style[s]);
   for (const t of ['sprinter', 'miler', 'middle', 'stayer'] as DistanceTrait[]) d += Math.max(0, MIN_DISTANCE - cov.distance[t]);
   d += Math.max(0, MIN_DIRT - cov.dirt);
+  for (const e of Object.keys(MIN_ERA) as Array<keyof typeof MIN_ERA>) d += Math.max(0, MIN_ERA[e] - cov.era[e]);
+  for (const r of ALL_ROLES) d += Math.max(0, MIN_ROLE - cov.role[r]);
+  return d;
+}
+
+/** Floors plus the soft caps; drives the swap search. */
+function deficit(cov: Coverage): number {
+  let d = 0;
+  for (const s of ['nige', 'senko', 'sashi', 'oikomi'] as RunStyle[]) {
+    d += Math.max(0, MIN_STYLE - cov.style[s]);
+    d += Math.max(0, cov.style[s] - MAX_STYLE);
+  }
+  for (const t of ['sprinter', 'miler', 'middle', 'stayer'] as DistanceTrait[]) {
+    d += Math.max(0, MIN_DISTANCE - cov.distance[t]);
+    d += Math.max(0, cov.distance[t] - MAX_DISTANCE);
+  }
+  d += Math.max(0, MIN_DIRT - cov.dirt);
+  d += Math.max(0, cov.dirt - MAX_DIRT);
   for (const e of Object.keys(MIN_ERA) as Array<keyof typeof MIN_ERA>) d += Math.max(0, MIN_ERA[e] - cov.era[e]);
   for (const r of ALL_ROLES) d += Math.max(0, MIN_ROLE - cov.role[r]);
   return d;
@@ -486,12 +512,19 @@ function diversityNeed(cov: Coverage, n: string, remaining: number): number {
   const eraGap = Math.max(0, MIN_ERA[eraOf(n)] - cov.era[eraOf(n)]);
   const roleGap = Math.max(0, MIN_ROLE - cov.role[roleOf.get(n)!]);
   const norm = (gap: number, min: number) => Math.min(1, gap / Math.max(1, Math.min(min, remaining)));
+  // Picking into an already-saturated bucket is actively bad, not merely neutral.
+  const overStyle = Math.max(0, cov.style[styleOfName.get(n)!] - MAX_STYLE + 1);
+  const overDist = ds === 'dirt_champion'
+    ? Math.max(0, cov.dirt - MAX_DIRT + 1)
+    : ds === 'all_rounder' ? 0 : Math.max(0, cov.distance[distTrait] - MAX_DISTANCE + 1);
+  const saturation = Math.min(1, (overStyle + overDist) / 4);
   return (
     norm(styleGap, MIN_STYLE) * 0.30 +
     norm(distGap, MIN_DISTANCE) * 0.25 +
     norm(surfaceGap, MIN_DIRT) * 0.20 +
     norm(eraGap, MIN_ERA[eraOf(n)]) * 0.15 +
-    norm(roleGap, MIN_ROLE) * 0.10
+    norm(roleGap, MIN_ROLE) * 0.10 -
+    saturation * 0.55
   );
 }
 
@@ -549,10 +582,15 @@ for (let pass = 0; pass < 400 && deficit(coverage) > 0; pass += 1) {
 }
 
 if (active.size !== ACTIVE_S1_SIZE) throw new Error(`Active roster size ${active.size} != ${ACTIVE_S1_SIZE}`);
-const remainingDeficit = deficit(coverage);
-console.log(`  active roster: ${active.size} units, coverage deficit ${remainingDeficit}`);
-if (remainingDeficit > 0) {
-  console.log(`  coverage detail: ${JSON.stringify(coverage)}`);
+const hard = hardDeficit(coverage);
+const softOverflow = deficit(coverage) - hard;
+console.log(
+  `  active roster: ${active.size} units, hard-floor deficit ${hard}, soft-cap overflow ${softOverflow}`,
+);
+if (hard > 0) {
+  throw new Error(
+    `Season 1 roster violates spec §7.4 minimum coverage by ${hard}: ${JSON.stringify(coverage)}`,
+  );
 }
 
 // -------------------------------------------------------------- cost assignment

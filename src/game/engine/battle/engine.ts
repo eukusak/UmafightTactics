@@ -39,6 +39,8 @@ export type BattleSideInput = {
     position: Hex;
     /** Traits granted outside the unit definition (이중 적성 augment). */
     extraTraits?: TraitId[];
+    /** Flat multiplier on hp / attack damage; PvE encounters scale by stage. */
+    statScale?: number;
   }>;
   augments: string[];
   tacticianItems: string[];
@@ -80,6 +82,9 @@ export type BattleOptions = {
   maxSeconds?: number;
 };
 
+/** Maximum nesting for damage that itself causes damage. */
+const MAX_DAMAGE_DEPTH = 4;
+
 type EffectBinding = {
   effect: EffectDef;
   index: number;
@@ -102,6 +107,10 @@ export class BattleEngine {
   /** Passive effect bindings per unit id, rebuilt once at combat start. */
   private readonly bindings = new Map<string, EffectBinding[]>();
   private readonly periodicNext = new Map<string, number>();
+  /** Cooldown clocks for event-triggered effects that declare an `interval`. */
+  private readonly triggerReadyAt = new Map<string, number>();
+  /** Guards against damage -> on-hit-damage -> damage ping-pong between units. */
+  private damageDepth = 0;
   private readonly ctx: EffectContext;
 
   constructor(
@@ -130,7 +139,7 @@ export class BattleEngine {
   private spawn(side: BattleSideInput, team: Team): void {
     for (const u of side.units) {
       const cell: Hex = toBattleCell(u.position, team);
-      this.units.push(makeCombatUnit({
+      const unit = makeCombatUnit({
         id: `${side.playerId}#${u.instanceId}`,
         instanceId: u.instanceId,
         unitDefId: u.unitDefId,
@@ -139,7 +148,14 @@ export class BattleEngine {
         extraTraits: u.extraTraits ?? [],
         team,
         cell,
-      }));
+      });
+      if (u.statScale && u.statScale !== 1) {
+        unit.base.hp *= u.statScale;
+        unit.base.attackDamage *= u.statScale;
+        unit.maxHp = unit.base.hp;
+        unit.hp = unit.maxHp;
+      }
+      this.units.push(unit);
     }
   }
 
@@ -501,6 +517,21 @@ export class BattleEngine {
     type: NonNullable<EffectDef['damageType']>, isSkill: boolean,
   ): number {
     if (!target.alive || rawAmount <= 0) return 0;
+    // Reflect-style effects can chain: A's on-hit damage triggers B's, and back.
+    // The per-effect cooldown normally stops this; the depth cap is the backstop.
+    if (this.damageDepth >= MAX_DAMAGE_DEPTH) return 0;
+    this.damageDepth += 1;
+    try {
+      return this.resolveDamage(source, target, rawAmount, type, isSkill);
+    } finally {
+      this.damageDepth -= 1;
+    }
+  }
+
+  private resolveDamage(
+    source: CombatUnit, target: CombatUnit, rawAmount: number,
+    type: NonNullable<EffectDef['damageType']>, isSkill: boolean,
+  ): number {
 
     let amount = rawAmount;
     if (isSkill) {
@@ -742,14 +773,22 @@ export class BattleEngine {
 
   private fireFor(unit: CombatUnit, event: TriggerEvent, contextTarget: CombatUnit | null): void {
     const target = contextTarget ?? (unit.targetId ? this.byId(unit.targetId) : null);
-    for (const b of this.bindings.get(unit.id) ?? []) {
+    const list = this.bindings.get(unit.id) ?? [];
+    for (let i = 0; i < list.length; i += 1) {
+      const b = list[i];
       if (isAuraKind(b.effect.kind)) continue;
       const gate = b.effect.trigger;
       if (event === 'COMBAT_START') {
         // At combat start, run untriggered passives plus explicit COMBAT_START effects.
         if (gate && gate.when !== 'COMBAT_START' && gate.when !== 'ALWAYS') continue;
-      } else if (!gate || !triggerHolds(unit, gate, this.ctx, event, target)) {
+      } else if (!gate || gate.when === 'EVERY_SECONDS' || !triggerHolds(unit, gate, this.ctx, event, target)) {
         continue;
+      }
+      // An `interval` on an event-triggered effect is a re-use cooldown.
+      if (b.effect.interval && gate && gate.when !== 'EVERY_SECONDS') {
+        const key = `${unit.id}:${i}`;
+        if (this.time < (this.triggerReadyAt.get(key) ?? 0)) continue;
+        this.triggerReadyAt.set(key, this.time + b.effect.interval);
       }
       applyEffect(this.ctx, unit, b.effect, b.index, {
         power: b.power, sourceKey: b.sourceKey, currentTarget: target, event,

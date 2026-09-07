@@ -30,6 +30,16 @@ export const ACTIVE_BY_COST: Record<Cost, UnitDef[]> = {
   5: (activeSet.byCost['5'] ?? []).map((id) => UNIT_BY_ID.get(id)!),
 };
 
+/**
+ * Registers a unit definition that exists only for combat (PvE enemies).
+ * Synthetic units are resolvable by id but never appear in ALL_UNITS,
+ * ACTIVE_UNITS or ACTIVE_BY_COST, so they cannot enter the pool or the shop.
+ */
+export function registerSyntheticUnit(def: UnitDef): void {
+  if (UNIT_BY_ID.has(def.id)) throw new Error(`Unit id already registered: ${def.id}`);
+  UNIT_BY_ID.set(def.id, def);
+}
+
 export function getUnitDef(id: string): UnitDef {
   const u = UNIT_BY_ID.get(id);
   if (!u) throw new Error(`Unknown unit def: ${id}`);
