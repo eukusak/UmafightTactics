@@ -4,9 +4,12 @@
   "version": "1.0.0",
   "type": "module",
   "description": "UmafightTactics - fan-made Uma Musume auto-battler (unofficial)",
-  "engines": { "node": ">=22" },
+  "engines": {
+    "node": ">=22"
+  },
   "scripts": {
     "dev": "vite",
+    "start": "node scripts/serve.mjs",
     "build": "tsc -b && vite build",
     "preview": "vite preview",
     "typecheck": "tsc -b --pretty false",

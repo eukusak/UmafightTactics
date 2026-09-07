@@ -1,11 +1,27 @@
+# Blueprint for Render.
+#
+# IMPORTANT: this file only takes effect for a service created from a Blueprint
+# (Render dashboard -> New -> Blueprint). A service created by hand ignores it
+# and uses the dashboard settings instead, which for a Node project default to
+# `yarn` + `yarn start` -- an install with no build, and no start command.
+#
+# The game is a static SPA, so a Static Site is the right shape. If the service
+# is already a Node web service, `npm start` (scripts/serve.mjs) serves dist/
+# and builds it first when missing, so that path works too.
 services:
   - type: web
     name: umafight-tactics
     runtime: static
-    buildCommand: npm ci && npm run verify
+    # `npm ci` needs the committed package-lock.json; do not switch this to yarn.
+    buildCommand: npm ci && npm run build
     staticPublishPath: ./dist
     pullRequestPreviewsEnabled: true
+    envVars:
+      # Matches .node-version and the Node 22 LTS the project is tested on.
+      - key: NODE_VERSION
+        value: "22"
     routes:
+      # SPA fallback so deep links resolve to the app shell.
       - type: rewrite
         source: /*
         destination: /index.html
