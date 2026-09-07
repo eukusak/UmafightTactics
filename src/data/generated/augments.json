@@ -1,0 +1,644 @@
+{
+  "version": 1,
+  "augments": [
+    {
+      "id": "economy_interest_seed",
+      "grade": "S",
+      "name": "저축의 미학",
+      "description": "최대 이자 +1. 즉시 5골드.",
+      "teamEffects": [],
+      "economy": {
+        "maxInterestDelta": 1,
+        "instantGold": 5
+      }
+    },
+    {
+      "id": "economy_free_refresh",
+      "grade": "S",
+      "name": "가벼운 재편",
+      "description": "매 라운드 첫 상점 새로고침 무료.",
+      "teamEffects": [],
+      "economy": {
+        "freeRefreshPerRound": 1
+      }
+    },
+    {
+      "id": "economy_sell_back",
+      "grade": "S",
+      "name": "깔끔한 정리",
+      "description": "2·3성 판매 손실이 추가로 1골드 감소.",
+      "teamEffects": [],
+      "economy": {
+        "sellLossReduction": 1
+      }
+    },
+    {
+      "id": "shop_low_cost",
+      "grade": "S",
+      "name": "기초 훈련 집중",
+      "description": "1·2코 상점 등장 후 해당 코스트 내 중복 유닛 가중치 +8%.",
+      "teamEffects": [],
+      "economy": {
+        "duplicateWeightLowCost": 0.08
+      }
+    },
+    {
+      "id": "trait_nige",
+      "grade": "S",
+      "name": "도주의 기본",
+      "description": "도주 유닛 공격속도 +8%. 도주 유닛 1명 획득.",
+      "teamEffects": [
+        {
+          "kind": "STAT_MUL",
+          "stat": "attackSpeed",
+          "value": 0.08,
+          "tag": "TRAIT:nige"
+        }
+      ],
+      "grants": {
+        "unitOfTrait": "nige"
+      }
+    },
+    {
+      "id": "trait_senko",
+      "grade": "S",
+      "name": "선행의 기본",
+      "description": "선행 유닛 최대 체력 +6%. 선행 유닛 1명 획득.",
+      "teamEffects": [
+        {
+          "kind": "STAT_MUL",
+          "stat": "hp",
+          "value": 0.06,
+          "tag": "TRAIT:senko"
+        }
+      ],
+      "grants": {
+        "unitOfTrait": "senko"
+      }
+    },
+    {
+      "id": "trait_sashi",
+      "grade": "S",
+      "name": "선입의 기본",
+      "description": "선입 유닛 치명타 +8%. 선입 유닛 1명 획득.",
+      "teamEffects": [
+        {
+          "kind": "CRIT_CHANCE_ADD",
+          "value": 0.08,
+          "tag": "TRAIT:sashi"
+        }
+      ],
+      "grants": {
+        "unitOfTrait": "sashi"
+      }
+    },
+    {
+      "id": "trait_oikomi",
+      "grade": "S",
+      "name": "추입의 기본",
+      "description": "추입 유닛 처형 기준 체력 50%→55%. 추입 유닛 1명 획득.",
+      "teamEffects": [
+        {
+          "kind": "DAMAGE_AMP",
+          "value": 0.2,
+          "tag": "TRAIT:oikomi",
+          "trigger": {
+            "when": "TARGET_HP_BELOW",
+            "threshold": 0.55
+          }
+        }
+      ],
+      "grants": {
+        "unitOfTrait": "oikomi"
+      }
+    },
+    {
+      "id": "item_component_choice",
+      "grade": "S",
+      "name": "트레이닝 보급",
+      "description": "재료 아이템 선택 모루 1개.",
+      "teamEffects": [],
+      "grants": {
+        "componentChoice": 1
+      }
+    },
+    {
+      "id": "item_remove",
+      "grade": "S",
+      "name": "장비 점검",
+      "description": "아이템 제거기 2개.",
+      "teamEffects": [],
+      "grants": {
+        "removers": 2
+      }
+    },
+    {
+      "id": "combat_front_guard",
+      "grade": "S",
+      "name": "초반 버티기",
+      "description": "앞 2열 유닛 방어력/마저 +8.",
+      "teamEffects": [
+        {
+          "kind": "STAT_ADD",
+          "stat": "armor",
+          "value": 8,
+          "trigger": {
+            "when": "IN_FRONT_ROWS"
+          }
+        },
+        {
+          "kind": "STAT_ADD",
+          "stat": "magicResist",
+          "value": 8,
+          "trigger": {
+            "when": "IN_FRONT_ROWS"
+          }
+        }
+      ]
+    },
+    {
+      "id": "combat_back_focus",
+      "grade": "S",
+      "name": "후열 집중",
+      "description": "뒤 2열 유닛 시작 마나 +5.",
+      "teamEffects": [
+        {
+          "kind": "STAT_ADD",
+          "stat": "startMana",
+          "value": 5,
+          "trigger": {
+            "when": "IN_BACK_ROWS"
+          }
+        }
+      ]
+    },
+    {
+      "id": "bench_expand",
+      "grade": "S",
+      "name": "넓은 마방",
+      "description": "벤치 +1칸.",
+      "teamEffects": [],
+      "economy": {
+        "benchSlots": 1
+      }
+    },
+    {
+      "id": "xp_small",
+      "grade": "S",
+      "name": "집중 육성",
+      "description": "즉시 경험치 8.",
+      "teamEffects": [],
+      "economy": {
+        "instantXp": 8
+      }
+    },
+    {
+      "id": "healing_small",
+      "grade": "S",
+      "name": "컨디션 관리",
+      "description": "아군 모든 회복/보호막 +8%.",
+      "teamEffects": [
+        {
+          "kind": "HEAL_SHIELD_AMP",
+          "value": 0.08
+        }
+      ]
+    },
+    {
+      "id": "crit_small",
+      "grade": "S",
+      "name": "승부 감각",
+      "description": "아군 치명타 확률 +5%.",
+      "teamEffects": [
+        {
+          "kind": "CRIT_CHANCE_ADD",
+          "value": 0.05
+        }
+      ]
+    },
+    {
+      "id": "economy_rich",
+      "grade": "G",
+      "name": "대형 스폰서",
+      "description": "즉시 18골드. 이후 기본 라운드 수입 -1.",
+      "teamEffects": [],
+      "economy": {
+        "instantGold": 18,
+        "baseIncomeDelta": -1
+      }
+    },
+    {
+      "id": "economy_streak",
+      "grade": "G",
+      "name": "연승의 박자",
+      "description": "연승/연패 보너스 골드 구간을 1연속 앞당김.",
+      "teamEffects": [],
+      "economy": {
+        "streakShift": 1
+      }
+    },
+    {
+      "id": "shop_pair_hunter",
+      "grade": "G",
+      "name": "쌍둥이 훈련",
+      "description": "상점에 보유 유닛과 동일 유닛이 등장할 상대 가중치 +15%.",
+      "teamEffects": [],
+      "economy": {
+        "pairHunterWeight": 0.15
+      }
+    },
+    {
+      "id": "reroll_credit",
+      "grade": "G",
+      "name": "리롤 크레딧",
+      "description": "라운드마다 리롤 2회까지 비용 1골드.",
+      "teamEffects": [],
+      "economy": {
+        "cheapRerollCount": 2,
+        "cheapRerollCost": 1
+      }
+    },
+    {
+      "id": "trait_distance_flex",
+      "grade": "G",
+      "name": "거리 적성 확장",
+      "description": "스프린터/마일러/중거리/스테이어 중 현재 가장 높은 특성 +1.",
+      "teamEffects": [],
+      "grants": {
+        "traitPlusOne": "DISTANCE_BEST"
+      }
+    },
+    {
+      "id": "trait_surface_flex",
+      "grade": "G",
+      "name": "주로 적응",
+      "description": "더트 챔피언 또는 올라운더 중 현재 더 높은 특성 +1.",
+      "teamEffects": [],
+      "grants": {
+        "traitPlusOne": "SURFACE_BEST"
+      }
+    },
+    {
+      "id": "trait_legacy_flex",
+      "grade": "G",
+      "name": "명예의 혈통",
+      "description": "황금세대/명가/국제파/삼관 중 무작위 엠블럼 1개.",
+      "teamEffects": [],
+      "grants": {
+        "randomLegacyEmblem": true
+      }
+    },
+    {
+      "id": "item_complete_anvil",
+      "grade": "G",
+      "name": "완성 장비 보급",
+      "description": "완성 아이템 선택 모루 1개.",
+      "teamEffects": [],
+      "grants": {
+        "completedChoice": 1
+      }
+    },
+    {
+      "id": "item_reforge",
+      "grade": "G",
+      "name": "장비 재조정",
+      "description": "재조합기 2개.",
+      "teamEffects": [],
+      "grants": {
+        "reforgers": 2
+      }
+    },
+    {
+      "id": "combat_first_cast",
+      "grade": "G",
+      "name": "선수필승",
+      "description": "아군 첫 스킬 피해 +25%.",
+      "teamEffects": [
+        {
+          "kind": "SKILL_DAMAGE_AMP",
+          "value": 0.25,
+          "oncePerCombat": true
+        }
+      ]
+    },
+    {
+      "id": "combat_last_stand",
+      "grade": "G",
+      "name": "마지막 직선",
+      "description": "체력 30% 아래 아군 피해 증폭 +20%.",
+      "teamEffects": [
+        {
+          "kind": "DAMAGE_AMP",
+          "value": 0.2,
+          "trigger": {
+            "when": "HP_BELOW",
+            "threshold": 0.3
+          }
+        }
+      ]
+    },
+    {
+      "id": "combat_adjacent",
+      "grade": "G",
+      "name": "페이스메이커",
+      "description": "전투 시작 시 인접 아군 2명 이상인 유닛 방어력/마저 +15.",
+      "teamEffects": [
+        {
+          "kind": "STAT_ADD",
+          "stat": "armor",
+          "value": 15,
+          "trigger": {
+            "when": "ADJACENT_ALLIES_AT_LEAST",
+            "threshold": 2
+          }
+        },
+        {
+          "kind": "STAT_ADD",
+          "stat": "magicResist",
+          "value": 15,
+          "trigger": {
+            "when": "ADJACENT_ALLIES_AT_LEAST",
+            "threshold": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "combat_isolated",
+      "grade": "G",
+      "name": "단독 질주",
+      "description": "전투 시작 시 인접 아군이 없는 유닛 공격력/주문력 +18%.",
+      "teamEffects": [
+        {
+          "kind": "STAT_MUL",
+          "stat": "attackDamage",
+          "value": 0.18,
+          "trigger": {
+            "when": "NO_ADJACENT_ALLIES"
+          }
+        },
+        {
+          "kind": "STAT_MUL",
+          "stat": "abilityPower",
+          "value": 0.18,
+          "trigger": {
+            "when": "NO_ADJACENT_ALLIES"
+          }
+        }
+      ]
+    },
+    {
+      "id": "clone_low",
+      "grade": "G",
+      "name": "육성 복제권",
+      "description": "1~3코 유닛 복제기 1개.",
+      "teamEffects": [],
+      "grants": {
+        "cloneMaxCost": 3
+      }
+    },
+    {
+      "id": "level_cap_speed",
+      "grade": "G",
+      "name": "조기 승급",
+      "description": "다음 레벨업에 필요한 경험치 12 감소(최소 0).",
+      "teamEffects": [],
+      "economy": {
+        "levelXpDiscount": 12
+      }
+    },
+    {
+      "id": "player_damage_guard",
+      "grade": "G",
+      "name": "안전한 운영",
+      "description": "플레이어가 받는 전투 피해 2 감소(최소 1).",
+      "teamEffects": [],
+      "economy": {
+        "playerDamageReduction": 2
+      }
+    },
+    {
+      "id": "economy_windfall",
+      "grade": "P",
+      "name": "대박 스폰서 계약",
+      "description": "즉시 40골드. 최대 이자 +2.",
+      "teamEffects": [],
+      "economy": {
+        "instantGold": 40,
+        "maxInterestDelta": 2
+      }
+    },
+    {
+      "id": "shop_high_cost",
+      "grade": "P",
+      "name": "스타 발굴",
+      "description": "4·5코 상점 등장 확률을 레벨별 총 +5%p, 1코부터 비례 차감.",
+      "teamEffects": [],
+      "economy": {
+        "shopOddsShiftHighCost": 5
+      }
+    },
+    {
+      "id": "shop_extra_slot",
+      "grade": "P",
+      "name": "확장 스카우팅",
+      "description": "상점 슬롯 5→6칸.",
+      "teamEffects": [],
+      "economy": {
+        "shopSlots": 1
+      }
+    },
+    {
+      "id": "team_size",
+      "grade": "P",
+      "name": "특별 출전권",
+      "description": "팀 최대 규모 +1.",
+      "teamEffects": [],
+      "economy": {
+        "teamSizeBonus": 1
+      }
+    },
+    {
+      "id": "trait_any_emblem",
+      "grade": "P",
+      "name": "궁극의 인자",
+      "description": "원하는 제작 가능 특성 엠블럼 1개 선택.",
+      "teamEffects": [],
+      "grants": {
+        "emblemChoice": 1
+      }
+    },
+    {
+      "id": "trait_double",
+      "grade": "P",
+      "name": "이중 적성",
+      "description": "선택한 유닛 1명에게 보조 특성 +1 부여. 같은 유닛 1회.",
+      "teamEffects": [],
+      "grants": {
+        "secondaryTraitPick": true
+      }
+    },
+    {
+      "id": "item_radiant",
+      "grade": "P",
+      "name": "찬란한 레이스 장비",
+      "description": "찬란한 완성 아이템 선택 모루 1개(효과 ×1.5).",
+      "teamEffects": [],
+      "grants": {
+        "radiantChoice": 1
+      }
+    },
+    {
+      "id": "item_crown",
+      "grade": "P",
+      "name": "왕관의 자격",
+      "description": "트레이너 왕관 1개.",
+      "teamEffects": [],
+      "grants": {
+        "tacticianCrown": 1
+      }
+    },
+    {
+      "id": "combat_all_stats",
+      "grade": "P",
+      "name": "완성형 육성",
+      "description": "아군 공격력/주문력/방어력/마저 +12%, 공격속도 +12%.",
+      "teamEffects": [
+        {
+          "kind": "STAT_MUL",
+          "stat": "attackDamage",
+          "value": 0.12
+        },
+        {
+          "kind": "STAT_MUL",
+          "stat": "abilityPower",
+          "value": 0.12
+        },
+        {
+          "kind": "STAT_MUL",
+          "stat": "armor",
+          "value": 0.12
+        },
+        {
+          "kind": "STAT_MUL",
+          "stat": "magicResist",
+          "value": 0.12
+        },
+        {
+          "kind": "STAT_MUL",
+          "stat": "attackSpeed",
+          "value": 0.12
+        }
+      ]
+    },
+    {
+      "id": "combat_execute",
+      "grade": "P",
+      "name": "결승선 집념",
+      "description": "아군이 체력 12% 미만 적을 즉시 처치.",
+      "teamEffects": [
+        {
+          "kind": "EXECUTE_THRESHOLD",
+          "value": 0.12
+        }
+      ]
+    },
+    {
+      "id": "combat_revive",
+      "grade": "P",
+      "name": "기적의 복귀",
+      "description": "각 유닛이 처음 사망할 때 1.5초 후 체력 25%로 부활.",
+      "teamEffects": [
+        {
+          "kind": "REVIVE",
+          "value": 0.25,
+          "duration": 1.5,
+          "oncePerCombat": true
+        }
+      ]
+    },
+    {
+      "id": "combat_mana",
+      "grade": "P",
+      "name": "완벽한 작전",
+      "description": "모든 아군 시작 마나 +20, 최대 마나 -10(최소 30).",
+      "teamEffects": [
+        {
+          "kind": "STAT_ADD",
+          "stat": "startMana",
+          "value": 20
+        },
+        {
+          "kind": "MANA_MAX_ADD",
+          "value": -10
+        }
+      ]
+    },
+    {
+      "id": "clone_any",
+      "grade": "P",
+      "name": "전설의 복제권",
+      "description": "모든 코스트 유닛 복제기 1개.",
+      "teamEffects": [],
+      "grants": {
+        "cloneMaxCost": 5
+      }
+    },
+    {
+      "id": "level_10",
+      "grade": "P",
+      "name": "엘리트 트레이너",
+      "description": "즉시 경험치 36. 10레벨 상점에서 5코 등장확률 +5%p.",
+      "teamEffects": [],
+      "economy": {
+        "instantXp": 36,
+        "shopOddsLevel10FiveCost": 5
+      }
+    },
+    {
+      "id": "bench_dual",
+      "grade": "P",
+      "name": "대형 트레이닝 센터",
+      "description": "벤치 +2칸, 아이템 보관함 +2칸.",
+      "teamEffects": [],
+      "economy": {
+        "benchSlots": 2,
+        "itemSlots": 2
+      }
+    },
+    {
+      "id": "overtime_master",
+      "grade": "P",
+      "name": "장기전의 제왕",
+      "description": "전투 15초 후 아군 공격력/주문력 +25%, 받는 피해 15% 감소.",
+      "teamEffects": [
+        {
+          "kind": "STAT_MUL",
+          "stat": "attackDamage",
+          "value": 0.25,
+          "trigger": {
+            "when": "AFTER_SECONDS",
+            "threshold": 15
+          }
+        },
+        {
+          "kind": "STAT_MUL",
+          "stat": "abilityPower",
+          "value": 0.25,
+          "trigger": {
+            "when": "AFTER_SECONDS",
+            "threshold": 15
+          }
+        },
+        {
+          "kind": "DAMAGE_REDUCTION",
+          "value": 0.15,
+          "trigger": {
+            "when": "AFTER_SECONDS",
+            "threshold": 15
+          }
+        }
+      ]
+    }
+  ]
+}

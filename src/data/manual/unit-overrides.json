@@ -1,0 +1,8 @@
+{
+  "version": 1,
+  "note": "Final manual overrides applied after the automatic roster/cost pass. Spec §7.5 requires a reason string on every entry. Keys are canonical Korean names. Leave empty unless a balance pass demands a change.",
+  "forceActiveS1": [],
+  "forceInactiveS1": [],
+  "costOverride": {},
+  "roleOverride": {}
+}
