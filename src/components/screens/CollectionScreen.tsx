@@ -4,7 +4,7 @@ import { useGameStore } from '../../store/gameStore';
 import { ALL_UNITS } from '../../game/engine/roster';
 import { getTrait } from '../../game/engine/traits/trait-defs';
 import { ROLE_LABELS } from '../../game/ui/palette';
-import { costVar, RoleChip, TraitChip } from '../common';
+import { Portrait, costVar, RoleChip, TraitChip } from '../common';
 import type { UnitDef } from '../../game/engine/types';
 
 const DECADES = ['~1989', '1990s', '2000s', '2010s+'];
@@ -53,7 +53,7 @@ export function CollectionScreen(): JSX.Element {
         </button>
       </div>
 
-      <div className="filters">
+      <div className="filters" style={{ marginTop: 84 }}>
         <input placeholder="이름 검색" value={query} onChange={(e) => setQuery(e.target.value)} />
         <select value={activeOnly} onChange={(e) => setActiveOnly(e.target.value as never)}>
           <option value="all">전체</option>
@@ -94,7 +94,7 @@ export function CollectionScreen(): JSX.Element {
           >
             <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
               <div className="token" style={{ width: 42, height: 42, fontSize: 18, border: `3px solid ${costVar(u.cost)}` }}>
-                {Array.from(u.nameKo)[0]}
+                <Portrait id={u.id} name={u.nameKo} size={74} />
               </div>
               <div style={{ minWidth: 0 }}>
                 <div style={{ fontWeight: 700, fontSize: 14, whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>

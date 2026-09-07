@@ -5,9 +5,12 @@
 import { useEffect, useRef, useState } from 'react';
 import Phaser from 'phaser';
 import { useGameStore } from '../store/gameStore';
-import { BOARD_COLS, BOARD_ROWS_PER_SIDE, HEX_ODD_ROW_OFFSET_X, HEX_STEP_X, HEX_STEP_Y } from '../game/engine/constants';
+import { BOARD_COLS, BOARD_ROWS_PER_SIDE } from '../game/engine/constants';
 import { BattleScene } from '../game/phaser/BattleScene';
 import { UnitToken } from './common';
+import { prepPoint } from '../game/ui/board-projection';
+import { arenaUrl } from '../game/ui/art';
+import { roundInfo } from '../game/engine/rounds/schedule';
 import type { UnitInstance } from '../game/engine/state';
 
 const FIELD_W = 1320;
@@ -18,6 +21,7 @@ export function PrepBoard({
 }: {
   onUnitContext: (e: React.MouseEvent, unit: UnitInstance) => void;
 }): JSX.Element | null {
+  const match = useGameStore((s) => s.match);
   const player = useGameStore((s) => s.human());
   const moveUnit = useGameStore((s) => s.moveUnit);
   const equip = useGameStore((s) => s.equip);
@@ -36,13 +40,12 @@ export function PrepBoard({
     for (let q = 0; q < BOARD_COLS; q += 1) {
       const key = `${q},${r}`;
       const unit = byCell.get(key);
-      // Row 0 is the front line, so draw the rows bottom-up for a facing board.
-      const x = q * HEX_STEP_X + ((r & 1) === 1 ? HEX_ODD_ROW_OFFSET_X : 0) + 244;
-      const y = (BOARD_ROWS_PER_SIDE - 1 - r) * HEX_STEP_Y + 210;
+      const { x, y, scale } = prepPoint({ q, r });
 
       cells.push(
         <div
           key={key}
+          className={`arena-cell${unit ? ' occupied' : ''}${dragOver === key ? ' hovered' : ''}`}
           onDragOver={(e) => { e.preventDefault(); setDragOver(key); }}
           onDragLeave={() => setDragOver((d) => (d === key ? null : d))}
           onDrop={(e) => {
@@ -59,14 +62,10 @@ export function PrepBoard({
             else if (unit) selectUnit(unit.instanceId);
           }}
           style={{
-            position: 'absolute', left: x, top: y,
-            width: HEX_STEP_X - 6, height: HEX_STEP_Y + 12,
+            position: 'absolute', left: x - 50 * scale, top: y - 30,
+            width: 100 * scale, height: 60,
             display: 'grid', placeItems: 'center',
-            clipPath: 'polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%)',
-            background: dragOver === key ? 'rgba(79,227,255,0.3)'
-              : selectedUnitId ? 'rgba(79,227,255,0.14)' : 'rgba(24,35,49,0.55)',
-            border: 'none',
-            outline: dragOver === key ? '2px solid var(--cyan)' : 'none',
+            background: dragOver === key ? 'rgba(79,227,255,0.3)' : selectedUnitId ? 'rgba(79,227,255,0.14)' : undefined,
             cursor: selectedUnitId || unit ? 'pointer' : 'default',
             transition: 'background 0.1s ease',
           }}
@@ -80,7 +79,7 @@ export function PrepBoard({
               }}
               onContextMenu={(e) => { e.preventDefault(); onUnitContext(e, unit); }}
               style={{
-                cursor: 'grab',
+                cursor: 'grab', position: 'relative', top: -25,
                 filter: selectedUnitId === unit.instanceId ? 'drop-shadow(0 0 8px var(--gold))' : undefined,
               }}
             >
@@ -96,11 +95,11 @@ export function PrepBoard({
     <div style={{ position: 'relative', width: FIELD_W, height: FIELD_H }}>
       <div style={{
         position: 'absolute', inset: 0,
-        background: 'linear-gradient(180deg, rgba(31,48,38,0.55) 0%, rgba(16,24,35,0.9) 100%)',
+        background: `url(${arenaUrl(match?.stage, !!match && roundInfo(match.stage, match.round).kind === 'PVE')}) center / 100% 100%`,
         borderRadius: 10, border: '2px solid #24384a',
       }} />
-      <div style={{ position: 'absolute', top: 14, left: 20, color: 'var(--muted)', fontSize: 14 }}>
-        준비 단계 — 유닛을 드래그해 배치하세요
+      <div style={{ position: 'absolute', top: 14, left: 20, color: '#fff5da', fontSize: 14, background: '#122a3b', padding: '8px 14px', borderRadius: 6 }}>
+        TWINKLE ARENA  /  준비 단계 · 클릭 또는 드래그로 배치
       </div>
       {cells}
     </div>
@@ -118,7 +117,9 @@ export function BattleBoard({ onFinished }: { onFinished: () => void }): JSX.Ele
 
   useEffect(() => {
     if (!hostRef.current || gameRef.current) return;
-    const scene = new BattleScene();
+    const state = useGameStore.getState();
+    const match = state.match;
+    const scene = new BattleScene(frames ?? [], state.settings.showDamageNumbers, arenaUrl(match?.stage, !!match && roundInfo(match.stage, match.round).kind === 'PVE'));
     sceneRef.current = scene;
     gameRef.current = new Phaser.Game({
       type: Phaser.AUTO,
@@ -135,6 +136,8 @@ export function BattleBoard({ onFinished }: { onFinished: () => void }): JSX.Ele
       gameRef.current = null;
       sceneRef.current = null;
     };
+    // This host is mounted once per battle recording.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   useEffect(() => {
@@ -142,8 +145,8 @@ export function BattleBoard({ onFinished }: { onFinished: () => void }): JSX.Ele
     if (!scene || !frames) return;
     doneRef.current = false;
     // The scene queues this itself when Phaser has not finished booting.
-    scene.playBattle(frames, speed);
-  }, [frames, speed]);
+    scene.playBattle(frames, useGameStore.getState().settings.battleSpeed);
+  }, [frames]);
 
   useEffect(() => {
     sceneRef.current?.setSpeed(speed);

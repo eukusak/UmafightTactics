@@ -5,7 +5,7 @@ import { activeTierIndex } from '../game/engine/traits/trait-defs';
 import { interestGold, streakBonus, xpToNextLevel } from '../game/engine/economy';
 import { itemStorageCapacity, teamSizeLimit } from '../game/engine/shop';
 import { roundInfo } from '../game/engine/rounds/schedule';
-import { ItemIcon, Stat, traitColor } from './common';
+import { ItemIcon, Stat } from './common';
 import { traitTierLabel } from './UnitTooltip';
 import type { PlayerState } from '../game/engine/state';
 
@@ -72,7 +72,7 @@ export function TraitPanel(): JSX.Element | null {
           <div key={trait.id} className={`trait-row${tier >= 0 ? ' active' : ''}`} title={
             tier >= 0 ? trait.tiers[tier].description : trait.description
           }>
-            <span className="trait-icon" style={{ background: traitColor(trait.id) }} />
+            <img className="trait-icon" src={`/assets/traits/${trait.id}.png`} alt="" />
             <span>{trait.name}</span>
             <span className="count">{traitTierLabel(trait.id, count)}</span>
           </div>

@@ -7,12 +7,15 @@ import { ROSTER_HASH } from '../../game/engine/roster';
 export function TitleScreen(): JSX.Element {
   const setScreen = useGameStore((s) => s.setScreen);
   return (
-    <div className="menu-screen">
-      <h1 className="menu-title">UmafightTactics</h1>
-      <p className="menu-sub">우마무스메 팬메이드 오토배틀러 · 비공식 2차 창작</p>
+    <div className="menu-screen title-hero">
+      <div className="eyebrow">SEASON 01 / TWINKLE ARENA</div>
+      <h1 className="menu-title">Umafight<br />Tactics</h1>
+      <div className="title-korean">말토체스</div>
+      <p className="hero-description">최고의 레이스는, 최고의 팀에서.<br />나만의 조합으로 아레나의 정상을 향해.</p>
       <div className="menu-buttons">
         <button className="btn-primary" onClick={() => setScreen('MAIN_MENU')}>시작하기</button>
       </div>
+      <div className="hero-meta"><div><strong>60</strong><span>시즌 출전 캐릭터</span></div><div><strong>8</strong><span>트레이너의 대결</span></div><div><strong>24</strong><span>특성의 조합</span></div></div>
       <p className="muted" style={{ position: 'absolute', bottom: 26, fontSize: 12 }}>
         본 게임은 팬 제작 비공식 작품이며 Cygames와 무관합니다.
       </p>
@@ -175,7 +178,7 @@ export function ResultScreen(): JSX.Element {
   const human = match.players.find((p) => p.isHuman);
 
   return (
-    <div className="menu-screen" style={{ justifyContent: 'flex-start', paddingTop: 50 }}>
+    <div className="menu-screen result-screen" style={{ justifyContent: 'flex-start', paddingTop: 50 }}>
       <h1 className="menu-title" style={{ fontSize: 48 }}>
         {human?.placement === 1 ? '우승!' : `${human?.placement ?? '-'}위`}
       </h1>

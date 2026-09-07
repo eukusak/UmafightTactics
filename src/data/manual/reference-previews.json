@@ -1,0 +1,860 @@
+{
+  "special_week": {
+    "preview": "characters/reference_previews/special_week.png",
+    "source": "public/assets/characters/race/SpecialWeek-Race.png",
+    "sourceSha256": "dd80433d16a4dedeb5bdc1dceb36cfd96c721cd9d65ad513e6a5cd6045c48e04",
+    "status": "reference-preview-only"
+  },
+  "silence_suzuka": {
+    "preview": "characters/reference_previews/silence_suzuka.png",
+    "source": "public/assets/characters/race/SilenceSuzuka-Race.png",
+    "sourceSha256": "2573dea6d1a0045842606579ca37256c46d6c184261d106d35e64c9cdbbc3f1d",
+    "status": "reference-preview-only"
+  },
+  "tokai_teio": {
+    "preview": "characters/reference_previews/tokai_teio.png",
+    "source": "public/assets/characters/race/TokaiTeio-Race.png",
+    "sourceSha256": "97848cd8e47d288760cc95071fe22b43b93ba99a086fd9738998ae21c437343b",
+    "status": "reference-preview-only"
+  },
+  "maruzensky": {
+    "preview": "characters/reference_previews/maruzensky.png",
+    "source": "public/assets/characters/race/Maruzensky-Race.png",
+    "sourceSha256": "f754064a2ce56063b7a6fbcbe0214a0af3f22e7b886d6a16e251e0c1911d007e",
+    "status": "reference-preview-only"
+  },
+  "fuji_kiseki": {
+    "preview": "characters/reference_previews/fuji_kiseki.png",
+    "source": "public/assets/characters/race/FujiKiseki-Race.png",
+    "sourceSha256": "d027d46e05b3399806942062a9d8428db016d54fa911fff4f400d51b7d74c670",
+    "status": "reference-preview-only"
+  },
+  "oguri_cap": {
+    "preview": "characters/reference_previews/oguri_cap.png",
+    "source": "public/assets/characters/race/OguriCap-Race.png",
+    "sourceSha256": "13c93caa9030af9504092121ec8677700e239805231c8415f2e3c7f5b1e2257e",
+    "status": "reference-preview-only"
+  },
+  "gold_ship": {
+    "preview": "characters/reference_previews/gold_ship.png",
+    "source": "public/assets/characters/race/GoldShip-Race.png",
+    "sourceSha256": "526e566a4cde9311908861dd6e905ef3baee86c83a06a09aa7d5510786d0435b",
+    "status": "reference-preview-only"
+  },
+  "vodka": {
+    "preview": "characters/reference_previews/vodka.png",
+    "source": "public/assets/characters/race/Vodka-Race.png",
+    "sourceSha256": "ebe476f3aef42d03c6d75d05ebe1f162e29c9346bf798c8bdbf323f4f20e46ce",
+    "status": "reference-preview-only"
+  },
+  "daiwa_scarlet": {
+    "preview": "characters/reference_previews/daiwa_scarlet.png",
+    "source": "public/assets/characters/race/DaiwaScarlet-Race.png",
+    "sourceSha256": "9ea0f9c73902c0b9dd7c7eada525fcef47a8c87419c1ccdc09b20b848e66ec31",
+    "status": "reference-preview-only"
+  },
+  "taiki_shuttle": {
+    "preview": "characters/reference_previews/taiki_shuttle.png",
+    "source": "public/assets/characters/race/TaikiShuttle-Race.png",
+    "sourceSha256": "bde88adb93d6af30326e054530041a91e2a1e1f023270246177717b9c953a852",
+    "status": "reference-preview-only"
+  },
+  "grass_wonder": {
+    "preview": "characters/reference_previews/grass_wonder.png",
+    "source": "public/assets/characters/race/GrassWonder-Race.png",
+    "sourceSha256": "99299ecb7637979c6bc918fd04f4b17ee17430f9c16f6d791bc40028429f5b89",
+    "status": "reference-preview-only"
+  },
+  "hishi_amazon": {
+    "preview": "characters/reference_previews/hishi_amazon.png",
+    "source": "public/assets/characters/race/HishiAmazon-Race.png",
+    "sourceSha256": "9263a91036b6b0d4b75330e49b078406a919a036ee0a1f884f0206f7952d8adf",
+    "status": "reference-preview-only"
+  },
+  "mejiro_mcqueen": {
+    "preview": "characters/reference_previews/mejiro_mcqueen.png",
+    "source": "public/assets/characters/race/MejiroMcQueen-Race.png",
+    "sourceSha256": "e2625677d2b85bc726cbeb3864fe67c742b8e40996442d8bc03228af152c6649",
+    "status": "reference-preview-only"
+  },
+  "el_condor_pasa": {
+    "preview": "characters/reference_previews/el_condor_pasa.png",
+    "source": "public/assets/characters/race/ElCondorPasa-Race.png",
+    "sourceSha256": "ac65106c63cbf2e3ee0efe6dfa64f2d8eecf4aa9944d7145f9d1a8fb9e65944c",
+    "status": "reference-preview-only"
+  },
+  "tm_opera_o": {
+    "preview": "characters/reference_previews/tm_opera_o.png",
+    "source": "public/assets/characters/race/TMOperaO-Race.png",
+    "sourceSha256": "11fa38abeadb5ea9f9b96d1b024305fc526e0f3e99e3175f6900855d0c429091",
+    "status": "reference-preview-only"
+  },
+  "narita_brian": {
+    "preview": "characters/reference_previews/narita_brian.png",
+    "source": "public/assets/characters/race/NaritaBrian-Race.png",
+    "sourceSha256": "b82303c510a38c3ee05c9c661620b7f0315aaac88eb77282858181fca476c664",
+    "status": "reference-preview-only"
+  },
+  "symboli_rudolf": {
+    "preview": "characters/reference_previews/symboli_rudolf.png",
+    "source": "public/assets/characters/race/SymboliRudolf-Race.png",
+    "sourceSha256": "152b4afa60e4e7d5c1f9f6eae4401c7cdc105e60b13054c7f768543c3ca30534",
+    "status": "reference-preview-only"
+  },
+  "air_groove": {
+    "preview": "characters/reference_previews/air_groove.png",
+    "source": "public/assets/characters/race/AirGroove-Race.png",
+    "sourceSha256": "54f3e7c9fecdc4966736551c5d20e17056b1e2548a866fbc05ddca41ed9b9eaf",
+    "status": "reference-preview-only"
+  },
+  "agnes_digital": {
+    "preview": "characters/reference_previews/agnes_digital.png",
+    "source": "public/assets/characters/race/AgnesDigital-Race.png",
+    "sourceSha256": "753d3da4b1f99d86f51fcd009ae43783d0f6013ca1c9d6581f7f72d817445289",
+    "status": "reference-preview-only"
+  },
+  "seiun_sky": {
+    "preview": "characters/reference_previews/seiun_sky.png",
+    "source": "public/assets/characters/race/SeiunSky-Race.png",
+    "sourceSha256": "ab9f21377d3dc5d7fc0d275a141cf45b2db036f7fe91d616bc84fa6d4b82d17f",
+    "status": "reference-preview-only"
+  },
+  "tamamo_cross": {
+    "preview": "characters/reference_previews/tamamo_cross.png",
+    "source": "public/assets/characters/race/TamamoCross-Race.png",
+    "sourceSha256": "8b990863ae63e136328f58671637d11952a523487cf81c375a277ff07a4e692b",
+    "status": "reference-preview-only"
+  },
+  "fine_motion": {
+    "preview": "characters/reference_previews/fine_motion.png",
+    "source": "public/assets/characters/race/FineMotion-Race.png",
+    "sourceSha256": "55633cb0dd9ec39cdd91b4f251441b76959b13112857d6cae96e97e0552ea2a1",
+    "status": "reference-preview-only"
+  },
+  "biwa_hayahide": {
+    "preview": "characters/reference_previews/biwa_hayahide.png",
+    "source": "public/assets/characters/race/BiwaHayahide-Race.png",
+    "sourceSha256": "9db160b50c8705ac486a7767153d5c4da6923ee1b32842622005077c8c94d500",
+    "status": "reference-preview-only"
+  },
+  "mayano_top_gun": {
+    "preview": "characters/reference_previews/mayano_top_gun.png",
+    "source": "public/assets/characters/race/MayanoTopGun-Race.png",
+    "sourceSha256": "4324b2e239b7646da58e6f1351cd90a5312790d992bd708bac9e55977f8622c4",
+    "status": "reference-preview-only"
+  },
+  "mihono_bourbon": {
+    "preview": "characters/reference_previews/mihono_bourbon.png",
+    "source": "public/assets/characters/race/MihonoBourbon-Race.png",
+    "sourceSha256": "94c5ac89683b5b448a694ce12652de0d99ca464380f42af9d9ed934896f8d257",
+    "status": "reference-preview-only"
+  },
+  "mejiro_ryan": {
+    "preview": "characters/reference_previews/mejiro_ryan.png",
+    "source": "public/assets/characters/race/MejiroRyan-Race.png",
+    "sourceSha256": "dcd7c298d1c2943fc9338476c5eba4e15f864b2ec5e1f4d5e4de8afdc8cddc04",
+    "status": "reference-preview-only"
+  },
+  "hishi_akebono": {
+    "preview": "characters/reference_previews/hishi_akebono.png",
+    "source": "public/assets/characters/race/HishiAkebono-Race.png",
+    "sourceSha256": "6335bdcf9b8cfa9f49314e5ac9fc16c5a3f7a1976a83fae6bdff0cc82de53a3f",
+    "status": "reference-preview-only"
+  },
+  "yukino_bijin": {
+    "preview": "characters/reference_previews/yukino_bijin.png",
+    "source": "public/assets/characters/race/YukinoBijin-Race.png",
+    "sourceSha256": "39bb86369280692c7b6ca1fd17c043f77690e584681d64d41da9536feaf3d25e",
+    "status": "reference-preview-only"
+  },
+  "rice_shower": {
+    "preview": "characters/reference_previews/rice_shower.png",
+    "source": "public/assets/characters/race/RiceShower-Race.png",
+    "sourceSha256": "3c414f5e697ab2c3b37ab493fac2d87cd4a50a72f5fc456e9db726479cdf4f8f",
+    "status": "reference-preview-only"
+  },
+  "ines_fujin": {
+    "preview": "characters/reference_previews/ines_fujin.png",
+    "source": "public/assets/characters/race/InesFujin-Race.png",
+    "sourceSha256": "347289dd067001a7366b30764d23b0ca31bde6a9081d42ce8476e2c3ca2e40fe",
+    "status": "reference-preview-only"
+  },
+  "agnes_tachyon": {
+    "preview": "characters/reference_previews/agnes_tachyon.png",
+    "source": "public/assets/characters/race/AgnesTachyon-Race.png",
+    "sourceSha256": "1a731d67a404a46b8781b8658320ce18bdd54dc4054fa3edbdc9a4fc5bea3071",
+    "status": "reference-preview-only"
+  },
+  "admire_vega": {
+    "preview": "characters/reference_previews/admire_vega.png",
+    "source": "public/assets/characters/race/AdmireVega-Race.png",
+    "sourceSha256": "6ac43d8e967c81ed40a5a75f61761391d5ec5d54acd337b2c82d4d1b3d57704d",
+    "status": "reference-preview-only"
+  },
+  "inari_one": {
+    "preview": "characters/reference_previews/inari_one.png",
+    "source": "public/assets/characters/race/InariOne-Race.png",
+    "sourceSha256": "1e6181099515a58b429497163ec261f6cd908b92cc8ba866f839ec8a3f5bb481",
+    "status": "reference-preview-only"
+  },
+  "winning_ticket": {
+    "preview": "characters/reference_previews/winning_ticket.png",
+    "source": "public/assets/characters/race/WinningTicket-Race.png",
+    "sourceSha256": "0c512837e88f3daab7a038a8bb3abfc13f59eece283682499ff9f102aba0814a",
+    "status": "reference-preview-only"
+  },
+  "air_shakur": {
+    "preview": "characters/reference_previews/air_shakur.png",
+    "source": "public/assets/characters/race/AirShakur-Race.png",
+    "sourceSha256": "354766bc79f5dd7c2d69a533da1e8d497309c25499727ada3541093b90af85b4",
+    "status": "reference-preview-only"
+  },
+  "eishin_flash": {
+    "preview": "characters/reference_previews/eishin_flash.png",
+    "source": "public/assets/characters/race/EishinFlash-Race.png",
+    "sourceSha256": "bfb03b698727824a27eb329d3abdf17ffdd761842628f02c8b1609c8a29435b6",
+    "status": "reference-preview-only"
+  },
+  "curren_chan": {
+    "preview": "characters/reference_previews/curren_chan.png",
+    "source": "public/assets/characters/race/CurrenChan-Race.png",
+    "sourceSha256": "6a00cbfa63a8cf96167773f4316588b77e4dc1cb37ad43be6e5e730ee5531352",
+    "status": "reference-preview-only"
+  },
+  "kawakami_princess": {
+    "preview": "characters/reference_previews/kawakami_princess.png",
+    "source": "public/assets/characters/race/KawakamiPrincess-Race.png",
+    "sourceSha256": "9f6bd53a795ec31fd480133467b4e111eeca319f9dc5b349d2ffb4142d3f47d6",
+    "status": "reference-preview-only"
+  },
+  "gold_city": {
+    "preview": "characters/reference_previews/gold_city.png",
+    "source": "public/assets/characters/race/GoldCity-Race.png",
+    "sourceSha256": "9023cef9c18b060127d7c558aa061e3335aaad9c0e7824e261fcfaf789f82b5a",
+    "status": "reference-preview-only"
+  },
+  "sakura_bakushin_o": {
+    "preview": "characters/reference_previews/sakura_bakushin_o.png",
+    "source": "public/assets/characters/race/SakuraBakushinO-Race.png",
+    "sourceSha256": "9a1bc4387b2df97d6615d8a6a4e621e2630c095e422fdaff05e871062f3562c0",
+    "status": "reference-preview-only"
+  },
+  "seeking_the_pearl": {
+    "preview": "characters/reference_previews/seeking_the_pearl.png",
+    "source": "public/assets/characters/race/SeekingthePearl-Race.png",
+    "sourceSha256": "35c6f4e1b51182f4908cd2839f2f785fead63ee1e6bf6008e4c10f5c12eb8086",
+    "status": "reference-preview-only"
+  },
+  "shinko_windy": {
+    "preview": "characters/reference_previews/shinko_windy.png",
+    "source": "public/assets/characters/race/ShinkoWindy-Race.png",
+    "sourceSha256": "715e9cbc26dbd1de619c771c1239602f1a25552c0edcb3ad7b718eef9ca4ca93",
+    "status": "reference-preview-only"
+  },
+  "sweep_tosho": {
+    "preview": "characters/reference_previews/sweep_tosho.png",
+    "source": "public/assets/characters/race/SweepTosho-Race.png",
+    "sourceSha256": "64a00405b2b02577fef195bb4f63d00a9b75a766876c23d935b797dfe00c2f8c",
+    "status": "reference-preview-only"
+  },
+  "super_creek": {
+    "preview": "characters/reference_previews/super_creek.png",
+    "source": "public/assets/characters/race/SuperCreek-Race.png",
+    "sourceSha256": "65ba3f05f265d1b6c4f9a80d2383898f19787e87063a4028b8ec1cb854bab9d3",
+    "status": "reference-preview-only"
+  },
+  "smart_falcon": {
+    "preview": "characters/reference_previews/smart_falcon.png",
+    "source": "public/assets/characters/race/SmartFalcon-Race.png",
+    "sourceSha256": "9b0add65eb1f1c397867991a88a4a228abc85c014cf8d6ce9378a69a542e6198",
+    "status": "reference-preview-only"
+  },
+  "zenno_rob_roy": {
+    "preview": "characters/reference_previews/zenno_rob_roy.png",
+    "source": "public/assets/characters/race/ZennoRobRoy-Race.png",
+    "sourceSha256": "74cd5f5e941a365563be0b8affb4dfdae25dbe9f6494dee1788863938543905c",
+    "status": "reference-preview-only"
+  },
+  "tosen_jordan": {
+    "preview": "characters/reference_previews/tosen_jordan.png",
+    "source": "public/assets/characters/race/TosenJordan-Race.png",
+    "sourceSha256": "e417399e3759304a45728ad8c6448e2b61802d2a2f95da2528cab564931e9b36",
+    "status": "reference-preview-only"
+  },
+  "nakayama_festa": {
+    "preview": "characters/reference_previews/nakayama_festa.png",
+    "source": "public/assets/characters/race/NakayamaFesta-Race.png",
+    "sourceSha256": "536d8828d143ec9a85352fd850f11e56232b3dc17c58e59545c6d26858f80b6f",
+    "status": "reference-preview-only"
+  },
+  "narita_taishin": {
+    "preview": "characters/reference_previews/narita_taishin.png",
+    "source": "public/assets/characters/race/NaritaTaishin-Race.png",
+    "sourceSha256": "cb83795279018bde3a4b4cac6a8bd395ef1a7a950315115c38ed656b8dcf54cb",
+    "status": "reference-preview-only"
+  },
+  "nishino_flower": {
+    "preview": "characters/reference_previews/nishino_flower.png",
+    "source": "public/assets/characters/race/NishinoFlower-Race.png",
+    "sourceSha256": "6be6c1f5f261b5e41aa01bd0c605ec5302088e0e29552219f3fb3057535a0e8d",
+    "status": "reference-preview-only"
+  },
+  "haru_urara": {
+    "preview": "characters/reference_previews/haru_urara.png",
+    "source": "public/assets/characters/race/HaruUrara-Race.png",
+    "sourceSha256": "5ae799b71731403c42956c8e07b21faf75fe3eeac2da36ae40dbef449e39629e",
+    "status": "reference-preview-only"
+  },
+  "bamboo_memory": {
+    "preview": "characters/reference_previews/bamboo_memory.png",
+    "source": "public/assets/characters/race/BambooMemory-Race.png",
+    "sourceSha256": "e21fae988a52d731042da535e3c0caf15533fcc95bfeb998da261f9fc1fd1ba7",
+    "status": "reference-preview-only"
+  },
+  "biko_pegasus": {
+    "preview": "characters/reference_previews/biko_pegasus.png",
+    "source": "public/assets/characters/race/BikoPegasus-Race.png",
+    "sourceSha256": "6d66a44f1346ff9e50e4de0abdda65c7aee59d8e60ff3be0e66e381e77c1e01c",
+    "status": "reference-preview-only"
+  },
+  "marvelous_sunday": {
+    "preview": "characters/reference_previews/marvelous_sunday.png",
+    "source": "public/assets/characters/race/MarvelousSunday-Race.png",
+    "sourceSha256": "d9092d4fd2b03223c23e8cddf9a8510fb8cc9818e628b6b3fa5cd6f7312fa9be",
+    "status": "reference-preview-only"
+  },
+  "matikanefukukitaru": {
+    "preview": "characters/reference_previews/matikanefukukitaru.png",
+    "source": "public/assets/characters/race/Matikanefukukitaru-Race.png",
+    "sourceSha256": "e6f848dfb3d98893f815d2cd116151f262ef4a649f4325e4c3793d4c5f8c629a",
+    "status": "reference-preview-only"
+  },
+  "mr_cb": {
+    "preview": "characters/reference_previews/mr_cb.png",
+    "source": "public/assets/characters/race/MrCB-Race.png",
+    "sourceSha256": "352881ffe9424dc2bd51a74171b0edaf41c05ac517adfcecd472c86000092c1e",
+    "status": "reference-preview-only"
+  },
+  "meisho_doto": {
+    "preview": "characters/reference_previews/meisho_doto.png",
+    "source": "public/assets/characters/race/MeishoDoto-Race.png",
+    "sourceSha256": "bd06a29cec0092c4152f0ef96f100d8dbc4eb3b55fdd98c04400839deb8fc6ed",
+    "status": "reference-preview-only"
+  },
+  "mejiro_dober": {
+    "preview": "characters/reference_previews/mejiro_dober.png",
+    "source": "public/assets/characters/race/MejiroDober-Race.png",
+    "sourceSha256": "bbb1e9912c56650540b3541ea442cee349a0a98e2687311cc1629a79911ccb3e",
+    "status": "reference-preview-only"
+  },
+  "nice_nature": {
+    "preview": "characters/reference_previews/nice_nature.png",
+    "source": "public/assets/characters/race/NiceNature-Race.png",
+    "sourceSha256": "4e303a72d3466a4818d3707797346a2470fa503295209c4d5804fc539de54362",
+    "status": "reference-preview-only"
+  },
+  "king_halo": {
+    "preview": "characters/reference_previews/king_halo.png",
+    "source": "public/assets/characters/race/KingHalo-Race.png",
+    "sourceSha256": "0fac3f7eefee1757a491a2960125ca595901682f3364a9c1866d7ca7da4c57d0",
+    "status": "reference-preview-only"
+  },
+  "matikanetannhauser": {
+    "preview": "characters/reference_previews/matikanetannhauser.png",
+    "source": "public/assets/characters/race/Matikanetannhauser-Race.png",
+    "sourceSha256": "cdff10baf7abf030658aaba0d635126df700720e7fd45f58b3e6d98a77642386",
+    "status": "reference-preview-only"
+  },
+  "ikuno_dictus": {
+    "preview": "characters/reference_previews/ikuno_dictus.png",
+    "source": "public/assets/characters/race/IkunoDictus-Race.png",
+    "sourceSha256": "da4c0ca3d96567cd0ab6db915479b22ecf50bb7bdc034740a4a158f00574a985",
+    "status": "reference-preview-only"
+  },
+  "mejiro_palmer": {
+    "preview": "characters/reference_previews/mejiro_palmer.png",
+    "source": "public/assets/characters/race/MejiroPalmer-Race.png",
+    "sourceSha256": "2133ce6454d3227d2bf0523f0a35c3bd2e5a8e668723f04d87a220494619c9c5",
+    "status": "reference-preview-only"
+  },
+  "daitaku_helios": {
+    "preview": "characters/reference_previews/daitaku_helios.png",
+    "source": "public/assets/characters/race/DaitakuHelios-Race.png",
+    "sourceSha256": "bdbe919a02deea3a4714b2f92a7ceef2d238ce9f0ee5c5a8fefac678e51594d9",
+    "status": "reference-preview-only"
+  },
+  "twin_turbo": {
+    "preview": "characters/reference_previews/twin_turbo.png",
+    "source": "public/assets/characters/race/TwinTurbo-Race.png",
+    "sourceSha256": "0116ad8792fffc0e6a9cbadbeb26d3cc2985c92b32e8da576b494022b3c69bc6",
+    "status": "reference-preview-only"
+  },
+  "satono_diamond": {
+    "preview": "characters/reference_previews/satono_diamond.png",
+    "source": "public/assets/characters/race/SatonoDiamond-Race.png",
+    "sourceSha256": "1dfdb2a2684287f16d05a666cf491a9e4db5526dd10f591fdfa758d9d94cdb1a",
+    "status": "reference-preview-only"
+  },
+  "kitasan_black": {
+    "preview": "characters/reference_previews/kitasan_black.png",
+    "source": "public/assets/characters/race/KitasanBlack-Race.png",
+    "sourceSha256": "d7051f363f9c133bf928c08bd4da392635f147d2ea4ff6c66f4b106d501cb588",
+    "status": "reference-preview-only"
+  },
+  "sakura_chiyono_o": {
+    "preview": "characters/reference_previews/sakura_chiyono_o.png",
+    "source": "public/assets/characters/race/SakuraChiyonoO-Race.png",
+    "sourceSha256": "02caa83d7106fd589e636cd2dc10800dcea542b2559fc2ef4b09e34c935577f7",
+    "status": "reference-preview-only"
+  },
+  "sirius_symboli": {
+    "preview": "characters/reference_previews/sirius_symboli.png",
+    "source": "public/assets/characters/race/SiriusSymboli-Race.png",
+    "sourceSha256": "9cf6acf1c6e0a1e4fd97a05a95b87877207572107fcfc360253bf5284056c5c6",
+    "status": "reference-preview-only"
+  },
+  "mejiro_ardan": {
+    "preview": "characters/reference_previews/mejiro_ardan.png",
+    "source": "public/assets/characters/race/MejiroArdan-Race.png",
+    "sourceSha256": "204fe0af6cbc98fb235dd612ef670eb94cdd7f797d346bac0a8213934fa602c4",
+    "status": "reference-preview-only"
+  },
+  "yaeno_muteki": {
+    "preview": "characters/reference_previews/yaeno_muteki.png",
+    "source": "public/assets/characters/race/YaenoMuteki-Race.png",
+    "sourceSha256": "16c6826b8686dc1f3e83686224434cdc522bf8f12bca6479cf3daa01eac13ec7",
+    "status": "reference-preview-only"
+  },
+  "tsurumaru_tsuyoshi": {
+    "preview": "characters/reference_previews/tsurumaru_tsuyoshi.png",
+    "source": "public/assets/characters/race/TsurumaruTsuyoshi-Race.png",
+    "sourceSha256": "7dadc66e552557e9634ddd4dbe2cc81b36bf91b29beb498946020a61a5bf92de",
+    "status": "reference-preview-only"
+  },
+  "mejiro_bright": {
+    "preview": "characters/reference_previews/mejiro_bright.png",
+    "source": "public/assets/characters/race/MejiroBright-Race.png",
+    "sourceSha256": "4eacaa6023358a8642f6d8969c7072ad98f63f18059c5f942ac8eebddc3084de",
+    "status": "reference-preview-only"
+  },
+  "daring_tact": {
+    "preview": "characters/reference_previews/daring_tact.png",
+    "source": "public/assets/characters/race/DaringTact-Race.png",
+    "sourceSha256": "2569a0db84099c97e2843883eb9dd56222c8883be0574af41dd7eb3a70914fda",
+    "status": "reference-preview-only"
+  },
+  "sakura_laurel": {
+    "preview": "characters/reference_previews/sakura_laurel.png",
+    "source": "public/assets/characters/race/SakuraLaurel-Race.png",
+    "sourceSha256": "72b7956928b62cd73a3e75e0f7b0e802be7b1273cb91d12ea445efd9bb8eb9c9",
+    "status": "reference-preview-only"
+  },
+  "narita_top_road": {
+    "preview": "characters/reference_previews/narita_top_road.png",
+    "source": "public/assets/characters/race/NaritaTopRoad-Race.png",
+    "sourceSha256": "d6e22866ac871108215bdfaff3d95cbc207d05dbd877e75116b4969056b399e4",
+    "status": "reference-preview-only"
+  },
+  "yamanin_zephyr": {
+    "preview": "characters/reference_previews/yamanin_zephyr.png",
+    "source": "public/assets/characters/race/YamaninZephyr-Race.png",
+    "sourceSha256": "1210b90f2c4caccac5d5dfa8371fe1d4ae52cba749d5d24eaa41adef4b16a673",
+    "status": "reference-preview-only"
+  },
+  "furioso": {
+    "preview": "characters/reference_previews/furioso.png",
+    "source": "public/assets/characters/race/Furioso-Race.png",
+    "sourceSha256": "957f854873d8ab15debab979b37460643b44a7c416bea135c3c2c2102f0db9c0",
+    "status": "reference-preview-only"
+  },
+  "transcend": {
+    "preview": "characters/reference_previews/transcend.png",
+    "source": "public/assets/characters/race/Transcend-Race.png",
+    "sourceSha256": "916d425ee39bdb63d1862760c6164a2bcdb8803aa2f9ce74aecaeff826b6ba68",
+    "status": "reference-preview-only"
+  },
+  "north_flight": {
+    "preview": "characters/reference_previews/north_flight.png",
+    "source": "public/assets/characters/race/NorthFlight-Race.png",
+    "sourceSha256": "42a8bea2c12f80776b7d639218d470c0eb07923ad45e859ebf84233df5c84d82",
+    "status": "reference-preview-only"
+  },
+  "symboli_kris_s": {
+    "preview": "characters/reference_previews/symboli_kris_s.png",
+    "source": "public/assets/characters/race/SymboliKrisS-Race.png",
+    "sourceSha256": "a6bef3ccca58310ac878969121fb5d47858d60654143ea8eeb446dbc05f6ac84",
+    "status": "reference-preview-only"
+  },
+  "tanino_gimlet": {
+    "preview": "characters/reference_previews/tanino_gimlet.png",
+    "source": "public/assets/characters/race/TaninoGimlet-Race.png",
+    "sourceSha256": "804e36b3c64a3fbfec7d8246ab23ee7d6db83d19e9a36a7813980a56b84d763d",
+    "status": "reference-preview-only"
+  },
+  "daiichi_ruby": {
+    "preview": "characters/reference_previews/daiichi_ruby.png",
+    "source": "public/assets/characters/race/DaiichiRuby-Race.png",
+    "sourceSha256": "587c1e281d3bc895ccfdcb608fa3821efc171ea71c0d0d3ad8728c7100d98ad8",
+    "status": "reference-preview-only"
+  },
+  "mejiro_ramonu": {
+    "preview": "characters/reference_previews/mejiro_ramonu.png",
+    "source": "public/assets/characters/race/MejiroRamonu-Race.png",
+    "sourceSha256": "1d860a520bf1332f44ea2b445f0fcb81e3177216fd28e47dc757b95519d8cd68",
+    "status": "reference-preview-only"
+  },
+  "aston_machan": {
+    "preview": "characters/reference_previews/aston_machan.png",
+    "source": "public/assets/characters/race/AstonMachan-Race.png",
+    "sourceSha256": "bb5addbeafda6966f474827bc8843f0129bc5a5cd4b0918d8a2a17b27e66bf7c",
+    "status": "reference-preview-only"
+  },
+  "satono_crown": {
+    "preview": "characters/reference_previews/satono_crown.png",
+    "source": "public/assets/characters/race/SatonoCrown-Race.png",
+    "sourceSha256": "42f3eb8d289a4f880855462b77fbf6d825bc7511f1171f0533e45d919e967498",
+    "status": "reference-preview-only"
+  },
+  "cheval_grand": {
+    "preview": "characters/reference_previews/cheval_grand.png",
+    "source": "public/assets/characters/race/ChevalGrand-Race.png",
+    "sourceSha256": "653437b53372b623b258d68d5d6d0edb0f18c9e2a31cca81b62b9035a31b760c",
+    "status": "reference-preview-only"
+  },
+  "vivlos": {
+    "preview": "characters/reference_previews/vivlos.png",
+    "source": "public/assets/characters/race/Vivlos-Race.png",
+    "sourceSha256": "efe8dc291deb333ac8aa263217e276288ede2373c58859bf474b2d3be08b8f39",
+    "status": "reference-preview-only"
+  },
+  "dantsu_flame": {
+    "preview": "characters/reference_previews/dantsu_flame.png",
+    "source": "public/assets/characters/race/DantsuFlame-Race.png",
+    "sourceSha256": "c205f26a719aafa7b574d5d6929297a405009edb953a3cd03d422a94fa465746",
+    "status": "reference-preview-only"
+  },
+  "ks_miracle": {
+    "preview": "characters/reference_previews/ks_miracle.png",
+    "source": "public/assets/characters/race/KSMiracle-Race.png",
+    "sourceSha256": "62616d3d1bc51e519c7e6fb5f5a5598daac57740f405e75cfb86bdb85661f237",
+    "status": "reference-preview-only"
+  },
+  "jungle_pocket": {
+    "preview": "characters/reference_previews/jungle_pocket.png",
+    "source": "public/assets/characters/race/JunglePocket-Race.png",
+    "sourceSha256": "3a7175fd0fa72da9dc4ab451ae19ca7cb81515e435471735d8acad7425ff6b86",
+    "status": "reference-preview-only"
+  },
+  "believe": {
+    "preview": "characters/reference_previews/believe.png",
+    "source": "public/assets/characters/race/Believe-Race.png",
+    "sourceSha256": "19861ed0ca5d5e3ed1c1b711b704c7c2a3a49bb4766f785d2194fab018e22841",
+    "status": "reference-preview-only"
+  },
+  "no_reason": {
+    "preview": "characters/reference_previews/no_reason.png",
+    "source": "public/assets/characters/race/NoReason-Race.png",
+    "sourceSha256": "8dbe400055dc72449347951e7f5ebd8b455950d73186268f2b641599fd52eeb2",
+    "status": "reference-preview-only"
+  },
+  "still_in_love": {
+    "preview": "characters/reference_previews/still_in_love.png",
+    "source": "public/assets/characters/race/StillInLove-Race.png",
+    "sourceSha256": "9e49cfc76af1e1696f69124f845c0227290f343ef0113390eabd4272850a60ed",
+    "status": "reference-preview-only"
+  },
+  "copano_rickey": {
+    "preview": "characters/reference_previews/copano_rickey.png",
+    "source": "public/assets/characters/race/CopanoRickey-Race.png",
+    "sourceSha256": "d126f1d2c682d59b27de51599778bb55ed89f1f491dbbe1ea2f5b829c24d7be0",
+    "status": "reference-preview-only"
+  },
+  "hokko_tarumae": {
+    "preview": "characters/reference_previews/hokko_tarumae.png",
+    "source": "public/assets/characters/race/HokkoTarumae-Race.png",
+    "sourceSha256": "eaa1aa603d74f15e5ce612787a4b0468c2c0bc1f6b564a62a747d74516ac1d55",
+    "status": "reference-preview-only"
+  },
+  "wonder_acute": {
+    "preview": "characters/reference_previews/wonder_acute.png",
+    "source": "public/assets/characters/race/WonderAcute-Race.png",
+    "sourceSha256": "d97fd10661d7b7f7886a93044ae5708e446cbed5bf02285d14500b569de1663c",
+    "status": "reference-preview-only"
+  },
+  "sounds_of_earth": {
+    "preview": "characters/reference_previews/sounds_of_earth.png",
+    "source": "public/assets/characters/race/SoundsOfEarth-Race.png",
+    "sourceSha256": "be480c2f3e522516170a02f56f19d79b3277243ffdc7e01314c3b48bdd1f7c9c",
+    "status": "reference-preview-only"
+  },
+  "royce_and_royce": {
+    "preview": "characters/reference_previews/royce_and_royce.png",
+    "source": "public/assets/characters/race/RoyceAndRoyce-Race.png",
+    "sourceSha256": "37177c494ec0055892feb8b8b1d56e8149ba7aa92b2fd38567ffc3e9fe6566c6",
+    "status": "reference-preview-only"
+  },
+  "katsuragi_ace": {
+    "preview": "characters/reference_previews/katsuragi_ace.png",
+    "source": "public/assets/characters/race/KatsuragiAce-Race.png",
+    "sourceSha256": "b24d0896bcf939a3aa87ccac1c61a390f31cbbb2e167e849307f8fa0609e7885",
+    "status": "reference-preview-only"
+  },
+  "neo_universe": {
+    "preview": "characters/reference_previews/neo_universe.png",
+    "source": "public/assets/characters/race/NeoUniverse-Race.png",
+    "sourceSha256": "94838545df5fe39621ed9a40892c80647df39fba3397d60eeb3f0f1553d5f87c",
+    "status": "reference-preview-only"
+  },
+  "hishi_miracle": {
+    "preview": "characters/reference_previews/hishi_miracle.png",
+    "source": "public/assets/characters/race/HishiMiracle-Race.png",
+    "sourceSha256": "2e0744b650bf4db7ba22a6820396879bc368fcba38a4017f296d52253975fe14",
+    "status": "reference-preview-only"
+  },
+  "tap_dance_city": {
+    "preview": "characters/reference_previews/tap_dance_city.png",
+    "source": "public/assets/characters/race/TapDanceCity-Race.png",
+    "sourceSha256": "a1a5f683a9bf1926bfb6c5f5db11b8e13b4f14cc04e42d050c56a45c4a67a3fb",
+    "status": "reference-preview-only"
+  },
+  "duramente": {
+    "preview": "characters/reference_previews/duramente.png",
+    "source": "public/assets/characters/race/Duramente-Race.png",
+    "sourceSha256": "a718c064b1c966c459612e7c8e966d341b73014cfde91bf18e3af6929a2dd073",
+    "status": "reference-preview-only"
+  },
+  "rhein_kraft": {
+    "preview": "characters/reference_previews/rhein_kraft.png",
+    "source": "public/assets/characters/race/RheinKraft-Race.png",
+    "sourceSha256": "f4941279d5c6a02bb32ae3b083d9577de92ddaf1fc108ed88f83c52177dafafe",
+    "status": "reference-preview-only"
+  },
+  "cesario": {
+    "preview": "characters/reference_previews/cesario.png",
+    "source": "public/assets/characters/race/Cesario-Race.png",
+    "sourceSha256": "f0bae37ae400e0ec5cbff30233918ba496bf0a7a8b7b0851ca5d8d0a79adc3b9",
+    "status": "reference-preview-only"
+  },
+  "air_messiah": {
+    "preview": "characters/reference_previews/air_messiah.png",
+    "source": "public/assets/characters/race/AirMessiah-Race.png",
+    "sourceSha256": "65ac268eb29193d8464afd9a96a20abac823a063f44f1a4e543278467cdf765b",
+    "status": "reference-preview-only"
+  },
+  "daring_heart": {
+    "preview": "characters/reference_previews/daring_heart.png",
+    "source": "public/assets/characters/race/DaringHeart-Race.png",
+    "sourceSha256": "7d5ca0cbd4fe16062f88119510930794ade9f43dccdf1048d9a6bd46d00ae6d1",
+    "status": "reference-preview-only"
+  },
+  "fusaichi_pandora": {
+    "preview": "characters/reference_previews/fusaichi_pandora.png",
+    "source": "public/assets/characters/race/FusaichiPandora-Race.png",
+    "sourceSha256": "627878097265344a044382ed8f7c69bba19045cef6f496058f17cecf1ee6ea23",
+    "status": "reference-preview-only"
+  },
+  "buena_vista": {
+    "preview": "characters/reference_previews/buena_vista.png",
+    "source": "public/assets/characters/race/BuenaVista-Race.png",
+    "sourceSha256": "a6a809b7c2b922cb407b47b98fc0f999ca2835fe3ec9f5786b58821d897e34b0",
+    "status": "reference-preview-only"
+  },
+  "orfevre": {
+    "preview": "characters/reference_previews/orfevre.png",
+    "source": "public/assets/characters/race/Orfevre-Race.png",
+    "sourceSha256": "9a64bb5ecec777b3e257e9e16034be66e151b137de2ac3e7fca7f79d447c17ff",
+    "status": "reference-preview-only"
+  },
+  "gentildonna": {
+    "preview": "characters/reference_previews/gentildonna.png",
+    "source": "public/assets/characters/race/Gentildonna-Race.png",
+    "sourceSha256": "b426c5f941987d705a738cefde15fd351c6af8799f9f1885d2342535a44033dc",
+    "status": "reference-preview-only"
+  },
+  "win_variation": {
+    "preview": "characters/reference_previews/win_variation.png",
+    "source": "public/assets/characters/race/WinVariation-Race.png",
+    "sourceSha256": "194d464ab1d1811670ebf3f7f36a65f7b75cc30c0150f1948266da9cbba9a5f1",
+    "status": "reference-preview-only"
+  },
+  "admire_groove": {
+    "preview": "characters/reference_previews/admire_groove.png",
+    "source": "public/assets/characters/race/AdmireGroove-Race.png",
+    "sourceSha256": "8129ce9a02df12e56fb680e57f32132341c765229696e1361d9e8ad2edaa71ce",
+    "status": "reference-preview-only"
+  },
+  "dream_journey": {
+    "preview": "characters/reference_previews/dream_journey.png",
+    "source": "public/assets/characters/race/DreamJourney-Race.png",
+    "sourceSha256": "e96c8145347abe3f489c5fd14cb300f7184762a9b642fba670cbc62bde363aa0",
+    "status": "reference-preview-only"
+  },
+  "calstone_light_o": {
+    "preview": "characters/reference_previews/calstone_light_o.png",
+    "source": "public/assets/characters/race/CalstoneLightO-Race.png",
+    "sourceSha256": "5c1edee1f8c25a8c47763bf91118607d619beda27f7ce17c60adf0a8a0dec6df",
+    "status": "reference-preview-only"
+  },
+  "durandal": {
+    "preview": "characters/reference_previews/durandal.png",
+    "source": "public/assets/characters/race/Durandal-Race.png",
+    "sourceSha256": "40152e70eacfc5d196162f1aad3b19055bfecb8610e52cdd4de0db2e91c6387f",
+    "status": "reference-preview-only"
+  },
+  "bubble_gum_fellow": {
+    "preview": "characters/reference_previews/bubble_gum_fellow.png",
+    "source": "public/assets/characters/race/BubbleGumFellow-Race.png",
+    "sourceSha256": "703c6034a194b62987b4a2b258e61c219ed57db68cb76f7709823f66a6997be4",
+    "status": "reference-preview-only"
+  },
+  "sakura_chitose_o": {
+    "preview": "characters/reference_previews/sakura_chitose_o.png",
+    "source": "public/assets/characters/race/SakuraChitoseO-Race.png",
+    "sourceSha256": "8a45df6809947c2e0e3758c12e22e6787e8b8dfd1200177113969709966eab32",
+    "status": "reference-preview-only"
+  },
+  "fenomeno": {
+    "preview": "characters/reference_previews/fenomeno.png",
+    "source": "public/assets/characters/race/Fenomeno-Race.png",
+    "sourceSha256": "5cc2e2340d848a9decbbbd9a10929a1cf77958758213f42821ad685dc20909bb",
+    "status": "reference-preview-only"
+  },
+  "blast_onepiece": {
+    "preview": "characters/reference_previews/blast_onepiece.png",
+    "source": "public/assets/characters/race/BlastOnepiece-Race.png",
+    "sourceSha256": "619fc18416f2cfe2a1d51ccec34949397f840f5ab52ddad909772420dc640979",
+    "status": "reference-preview-only"
+  },
+  "almond_eye": {
+    "preview": "characters/reference_previews/almond_eye.png",
+    "source": "public/assets/characters/race/AlmondEye-Race.png",
+    "sourceSha256": "acce566341cc3114b5fa5616819daee3a6ba72f2d587249ff257db02e144531b",
+    "status": "reference-preview-only"
+  },
+  "lucky_lilac": {
+    "preview": "characters/reference_previews/lucky_lilac.png",
+    "source": "public/assets/characters/race/LuckyLilac-Race.png",
+    "sourceSha256": "25fa234e0bd5dfb23f0d5c8f07edf67e8627262acca1d142e2b3bab3488c89a1",
+    "status": "reference-preview-only"
+  },
+  "gran_alegria": {
+    "preview": "characters/reference_previews/gran_alegria.png",
+    "source": "public/assets/characters/race/GranAlegria-Race.png",
+    "sourceSha256": "5fe29991402877976ad4f1958314b6eaff183cef33b0a91b4b8bae1450ff0d28",
+    "status": "reference-preview-only"
+  },
+  "loves_only_you": {
+    "preview": "characters/reference_previews/loves_only_you.png",
+    "source": "public/assets/characters/race/LovesOnlyYou-Race.png",
+    "sourceSha256": "67145f33042aac2e57c404872f047023313ea280ec3ec984765fe853b7dd0e0d",
+    "status": "reference-preview-only"
+  },
+  "chrono_genesis": {
+    "preview": "characters/reference_previews/chrono_genesis.png",
+    "source": "public/assets/characters/race/ChronoGenesis-Race.png",
+    "sourceSha256": "f05a8fc4b798dc942eacc6c34a77de85c3ce4cdd2a8b71c71378045d3ce47638",
+    "status": "reference-preview-only"
+  },
+  "curren_bouquetdor": {
+    "preview": "characters/reference_previews/curren_bouquetdor.png",
+    "source": "public/assets/characters/race/CurrenBouquetdor-Race.png",
+    "sourceSha256": "c9f1234ba951c0c79582b5e2395e81ac379ddb83cd8fbef488524ddcb993d136",
+    "status": "reference-preview-only"
+  },
+  "stay_gold": {
+    "preview": "characters/reference_previews/stay_gold.png",
+    "source": "public/assets/characters/race/StayGold-Race.png",
+    "sourceSha256": "489c0317be7859fe1dd846f208d6732c759104f07210a5cbee9a4e685b550d5f",
+    "status": "reference-preview-only"
+  },
+  "red_desire": {
+    "preview": "characters/reference_previews/red_desire.png",
+    "source": "public/assets/characters/race/RedDesire-Race.png",
+    "sourceSha256": "23849df91763ce79900ad6ce7cc8d25c9cbdf00adb7d7658d50e1df25192592a",
+    "status": "reference-preview-only"
+  },
+  "kiseki": {
+    "preview": "characters/reference_previews/kiseki.png",
+    "source": "public/assets/characters/race/Kiseki-Race.png",
+    "sourceSha256": "61cd4f7ee98a01bf8925177c43a47c765e0433e4f3229fa97b5b8cc7f336755c",
+    "status": "reference-preview-only"
+  },
+  "forever_young": {
+    "preview": "characters/reference_previews/forever_young.png",
+    "source": "public/assets/characters/race/ForeverYoung-Race.png",
+    "sourceSha256": "22fb49be8f1b6dc22f3b35f8f6e034dcfc9e06f4a6b48c7c9d1f56d4a3e40027",
+    "status": "reference-preview-only"
+  },
+  "marche_lorraine": {
+    "preview": "characters/reference_previews/marche_lorraine.png",
+    "source": "public/assets/characters/race/MarcheLorraine-Race.png",
+    "sourceSha256": "662ee5496dda11abb5f69e974636dd60e4d310c8b8d5e566932731e62bbc1c9d",
+    "status": "reference-preview-only"
+  },
+  "epiphaneia": {
+    "preview": "characters/reference_previews/epiphaneia.png",
+    "source": "public/assets/characters/race/Epiphaneia-Race.png",
+    "sourceSha256": "659926d72a4661071802751a65e72d9e18d21f644fdc3565d7d41fc228d78f90",
+    "status": "reference-preview-only"
+  },
+  "logotype": {
+    "preview": "characters/reference_previews/logotype.png",
+    "source": "public/assets/characters/race/Logotype-Race.png",
+    "sourceSha256": "917cf142de675bcf93a3525aaf30f6778a98955225366539d3e680fc273a8d9c",
+    "status": "reference-preview-only"
+  },
+  "victoire_pisa": {
+    "preview": "characters/reference_previews/victoire_pisa.png",
+    "source": "public/assets/characters/race/VictoirePisa-Race.png",
+    "sourceSha256": "ff3df920ca011d6a19682c00dcd7074f0dd1034b29a33e10c6caf07628afee7e",
+    "status": "reference-preview-only"
+  },
+  "rose_kingdom": {
+    "preview": "characters/reference_previews/rose_kingdom.png",
+    "source": "public/assets/characters/race/RoseKingdom-Race.png",
+    "sourceSha256": "4a325630c778db8c6225dd2faf7d03348c205261e8ed695c0ff5725e77637f11",
+    "status": "reference-preview-only"
+  },
+  "rulership": {
+    "preview": "characters/reference_previews/rulership.png",
+    "source": "public/assets/characters/race/Rulership-Race.png",
+    "sourceSha256": "75ca7e78875d263062bb70865ec6692b1c78e57f1862ba11f1cf95015d8c5a49",
+    "status": "reference-preview-only"
+  },
+  "efforia": {
+    "preview": "characters/reference_previews/efforia.png",
+    "source": "public/assets/characters/race/Efforia-Race.png",
+    "sourceSha256": "a755c5fabd86acc4af43938ce8d2998fd8ee694e37acc248fbbaa919188d5bde",
+    "status": "reference-preview-only"
+  },
+  "titleholder": {
+    "preview": "characters/reference_previews/titleholder.png",
+    "source": "public/assets/characters/race/Titleholder-Race.png",
+    "sourceSha256": "35959c83cbcf58caa547b5162a75e282f514fb1d7fdf5c37a59f4d9539c64356",
+    "status": "reference-preview-only"
+  },
+  "phalaenopsis": {
+    "preview": "characters/reference_previews/phalaenopsis.png",
+    "source": "public/assets/characters/race/Phalaenopsis-Race.png",
+    "sourceSha256": "5bd82a3c881335e649b96de98f5dd4039b467479676775ca8e10eb71459ed756",
+    "status": "reference-preview-only"
+  },
+  "verxina": {
+    "preview": "characters/reference_previews/verxina.png",
+    "source": "public/assets/characters/race/Verxina-Race.png",
+    "sourceSha256": "a17610c249bcc11b1eccc2c2ca0e1bf0d7305321b6ef71a524086ba56a321a81",
+    "status": "reference-preview-only"
+  },
+  "manhattan_cafe": {
+    "preview": "characters/reference_previews/manhattan_cafe.png",
+    "source": "public/assets/characters/race/ManhattanCafe-Race.png",
+    "sourceSha256": "5aeb785f18c9de0e64a6dc4052d0b2256f245ae63ad17209b758ce691cd99115",
+    "status": "reference-preview-only"
+  },
+  "espoir_city": {
+    "preview": "characters/reference_previews/espoir_city.png",
+    "source": "public/assets/characters/race/EspoirCity-Race.png",
+    "sourceSha256": "1e1b44426a2eb08ea61fe91317df5657e6c85bfbf8526770f0bec89c7f6a71e4",
+    "status": "reference-preview-only"
+  }
+}

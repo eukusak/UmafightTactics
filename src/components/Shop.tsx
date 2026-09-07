@@ -5,7 +5,7 @@ import { getTrait } from '../game/engine/traits/trait-defs';
 import { rerollCost } from '../game/engine/economy';
 import { benchCapacity } from '../game/engine/shop';
 import { XP_PURCHASE_COST } from '../game/engine/constants';
-import { UnitToken, costVar } from './common';
+import { Portrait, UnitToken, costVar } from './common';
 import type { UnitInstance } from '../game/engine/state';
 
 export function ShopRow(): JSX.Element | null {
@@ -36,7 +36,7 @@ export function ShopRow(): JSX.Element | null {
               className="token"
               style={{ width: 52, height: 52, fontSize: 20, border: `3px solid ${costVar(def.cost)}` }}
             >
-              {Array.from(def.nameKo)[0]}
+              <Portrait id={def.id} name={def.nameKo} size={74} />
             </div>
             <span className="name">{def.nameKo}</span>
             <div className="traits">

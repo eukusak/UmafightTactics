@@ -4,7 +4,7 @@ import { useGameStore } from '../store/gameStore';
 import { AUGMENT_BY_ID, ACTIVE_UNITS, getUnitDef } from '../game/engine/roster';
 import { getItem } from '../game/engine/items/item-defs';
 import { currentPickers } from '../game/engine/rounds/draft';
-import { ItemIcon, costVar } from './common';
+import { Portrait, ItemIcon, costVar } from './common';
 
 const GRADE_LABEL: Record<string, string> = { S: 'Silver', G: 'Gold', P: 'Prism' };
 const GRADE_COLOR: Record<string, string> = { S: '#c9d6e0', G: '#ffcc33', P: '#b98ae0' };
@@ -34,7 +34,7 @@ export function AugmentOverlay(): JSX.Element | null {
             return (
               <button key={id} className="choice-card" onClick={() => choose(id)}
                 style={{ borderColor: GRADE_COLOR[offer.grade] }}>
-                <h4>{aug?.name ?? id}</h4>
+                <img src={`/assets/augments/${id}.png`} alt="" width={82} height={82} /><h4>{aug?.name ?? id}</h4>
                 <p>{aug?.description ?? ''}</p>
               </button>
             );
@@ -56,7 +56,7 @@ export function DraftOverlay(): JSX.Element | null {
   const myTurn = pickers.includes(human.id);
 
   return (
-    <div className="overlay">
+    <div className="overlay draft-overlay">
       <div className="overlay-card" style={{ maxWidth: 1180 }}>
         <h2 style={{ margin: 0 }}>트윙클 드래프트</h2>
         <p className="muted" style={{ margin: '6px 0 0' }}>
@@ -78,7 +78,7 @@ export function DraftOverlay(): JSX.Element | null {
               >
                 <div style={{ display: 'flex', alignItems: 'center', gap: 10, justifyContent: 'center' }}>
                   <div className="token" style={{ width: 46, height: 46, fontSize: 18, border: `3px solid ${costVar(def.cost)}` }}>
-                    {Array.from(def.nameKo)[0]}
+                    <Portrait id={def.id} name={def.nameKo} size={74} />
                   </div>
                   <ItemIcon itemId={o.itemId} size={30} />
                 </div>
@@ -116,7 +116,7 @@ export function BattleResultOverlay({ onContinue }: { onContinue: () => void }):
   return (
     <div className="overlay">
       <div className="overlay-card" style={{ textAlign: 'center', borderColor: color }}>
-        <h2 style={{ margin: 0, fontSize: 42, color }}>{label}</h2>
+        <h2 style={{ margin: 0, fontSize: 42, color, width: 600, padding: '28px 80px', background: `url(/assets/ui/banner_${draw ? 'draw' : won ? 'victory' : 'defeat'}.png) center / 100% 100%` }}>{label}</h2>
         {damage > 0 && (
           <p style={{ margin: '10px 0 0', fontSize: 18 }} className="danger-text">
             체력 -{damage}
