@@ -1,0 +1,110 @@
+{
+  "version": 1,
+  "note": "Manual history/legacy trait assignments. Spec §11.3: queen / emperor / golden_generation / era_star are never auto-derived and MUST be listed here. Keys are canonical Korean names from canonical-roster.json. Every entry carries a reason string.",
+  "historyTrait": {
+    "심볼리 루돌프": {
+      "trait": "emperor",
+      "reason": "Undefeated Triple Crown winner; the canonical 'Emperor' of Japanese racing."
+    },
+    "에어 그루브": {
+      "trait": "queen",
+      "reason": "First mare to take the Tenno Sho (Autumn); the reigning 'Queen'."
+    },
+    "젠틸돈나": {
+      "trait": "queen",
+      "reason": "Fillies' Triple Crown plus two Japan Cups."
+    },
+    "아몬드 아이": {
+      "trait": "queen",
+      "reason": "Fillies' Triple Crown and record nine G1 titles."
+    },
+    "메지로 라모누": {
+      "trait": "queen",
+      "reason": "First fillies' Triple Crown winner."
+    },
+    "티엠 오페라 오": {
+      "trait": "iron_horse",
+      "reason": "26 career starts across four seasons at the top level; 'emperor' is a unique trait already held by 심볼리 루돌프."
+    },
+    "메지로 맥퀸": {
+      "trait": "famous_house",
+      "reason": "Mejiro stable flagship stayer."
+    },
+    "메지로 라이언": {
+      "trait": "famous_house",
+      "reason": "Mejiro stable."
+    },
+    "메지로 도베르": {
+      "trait": "famous_house",
+      "reason": "Mejiro stable."
+    },
+    "메지로 파머": {
+      "trait": "famous_house",
+      "reason": "Mejiro stable."
+    },
+    "메지로 아르당": {
+      "trait": "famous_house",
+      "reason": "Mejiro stable."
+    },
+    "메지로 브라이트": {
+      "trait": "famous_house",
+      "reason": "Mejiro stable."
+    },
+    "사쿠라 바쿠신 오": {
+      "trait": "famous_house",
+      "reason": "Sakura stable."
+    },
+    "사쿠라 치요노 오": {
+      "trait": "famous_house",
+      "reason": "Sakura stable."
+    },
+    "사쿠라 로렐": {
+      "trait": "famous_house",
+      "reason": "Sakura stable."
+    },
+    "사쿠라 치토세 오": {
+      "trait": "famous_house",
+      "reason": "Sakura stable."
+    },
+    "스페셜 위크": {
+      "trait": "golden_generation",
+      "reason": "1998 golden generation."
+    },
+    "세이운 스카이": {
+      "trait": "golden_generation",
+      "reason": "1998 golden generation."
+    },
+    "그래스 원더": {
+      "trait": "golden_generation",
+      "reason": "1998 golden generation."
+    },
+    "엘 콘도르 파사": {
+      "trait": "golden_generation",
+      "reason": "1998 golden generation."
+    },
+    "킹 헤일로": {
+      "trait": "golden_generation",
+      "reason": "1998 golden generation."
+    },
+    "토카이 테이오": {
+      "trait": "era_star",
+      "reason": "Defining star of the early-90s; the 'miracle comeback' Arima Kinen."
+    },
+    "오구리 캡": {
+      "trait": "era_star",
+      "reason": "Face of the late-80s Japanese racing boom."
+    },
+    "하루 우라라": {
+      "trait": "era_star",
+      "reason": "National media phenomenon across a winless career."
+    },
+    "골드 쉽": {
+      "trait": "era_star",
+      "reason": "Six G1 wins and the most-covered personality of the 2010s."
+    },
+    "키타산 블랙": {
+      "trait": "era_star",
+      "reason": "Seven G1 wins; two-time Horse of the Year and public idol."
+    }
+  }
+}

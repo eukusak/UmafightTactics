@@ -1,0 +1,1547 @@
+{
+  "version": 1,
+  "generatedAt": "2026-09-06T06:30:52Z",
+  "characters": [
+    {
+      "id": "special_week",
+      "nameKo": "스페셜 위크",
+      "activeS1": true,
+      "cost": 5,
+      "portrait": "portraits/special_week.png",
+      "battleSheet": "characters/special_week.png",
+      "cutinRequired": true
+    },
+    {
+      "id": "silence_suzuka",
+      "nameKo": "사일런스 스즈카",
+      "activeS1": false,
+      "cost": 2,
+      "portrait": "portraits/silence_suzuka.png",
+      "battleSheet": "characters/silence_suzuka.png",
+      "cutinRequired": false
+    },
+    {
+      "id": "tokai_teio",
+      "nameKo": "토카이 테이오",
+      "activeS1": false,
+      "cost": 4,
+      "portrait": "portraits/tokai_teio.png",
+      "battleSheet": "characters/tokai_teio.png",
+      "cutinRequired": false
+    },
+    {
+      "id": "maruzensky",
+      "nameKo": "마루젠스키",
+      "activeS1": true,
+      "cost": 5,
+      "portrait": "portraits/maruzensky.png",
+      "battleSheet": "characters/maruzensky.png",
+      "cutinRequired": true
+    },
+    {
+      "id": "fuji_kiseki",
+      "nameKo": "후지 키세키",
+      "activeS1": true,
+      "cost": 4,
+      "portrait": "portraits/fuji_kiseki.png",
+      "battleSheet": "characters/fuji_kiseki.png",
+      "cutinRequired": false
+    },
+    {
+      "id": "oguri_cap",
+      "nameKo": "오구리 캡",
+      "activeS1": true,
+      "cost": 4,
+      "portrait": "portraits/oguri_cap.png",
+      "battleSheet": "characters/oguri_cap.png",
+      "cutinRequired": false
+    },
+    {
+      "id": "gold_ship",
+      "nameKo": "골드 쉽",
+      "activeS1": true,
+      "cost": 2,
+      "portrait": "portraits/gold_ship.png",
+      "battleSheet": "characters/gold_ship.png",
+      "cutinRequired": false
+    },
+    {
+      "id": "vodka",
+      "nameKo": "보드카",
+      "activeS1": true,
+      "cost": 3,
+      "portrait": "portraits/vodka.png",
+      "battleSheet": "characters/vodka.png",
+      "cutinRequired": false
+    },
+    {
+      "id": "daiwa_scarlet",
+      "nameKo": "다이와 스칼렛",
+      "activeS1": true,
+      "cost": 5,
+      "portrait": "portraits/daiwa_scarlet.png",
+      "battleSheet": "characters/daiwa_scarlet.png",
+      "cutinRequired": true
+    },
+    {
+      "id": "taiki_shuttle",
+      "nameKo": "타이키 셔틀",
+      "activeS1": true,
+      "cost": 5,
+      "portrait": "portraits/taiki_shuttle.png",
+      "battleSheet": "characters/taiki_shuttle.png",
+      "cutinRequired": true
+    },
+    {
+      "id": "grass_wonder",
+      "nameKo": "그래스 원더",
+      "activeS1": true,
+      "cost": 3,
+      "portrait": "portraits/grass_wonder.png",
+      "battleSheet": "characters/grass_wonder.png",
+      "cutinRequired": false
+    },
+    {
+      "id": "hishi_amazon",
+      "nameKo": "히시 아마존",
+      "activeS1": false,
+      "cost": 3,
+      "portrait": "portraits/hishi_amazon.png",
+      "battleSheet": "characters/hishi_amazon.png",
+      "cutinRequired": false
+    },
+    {
+      "id": "mejiro_mcqueen",
+      "nameKo": "메지로 맥퀸",
+      "activeS1": true,
+      "cost": 3,
+      "portrait": "portraits/mejiro_mcqueen.png",
+      "battleSheet": "characters/mejiro_mcqueen.png",
+      "cutinRequired": false
+    },
+    {
+      "id": "el_condor_pasa",
+      "nameKo": "엘 콘도르 파사",
+      "activeS1": true,
+      "cost": 3,
+      "portrait": "portraits/el_condor_pasa.png",
+      "battleSheet": "characters/el_condor_pasa.png",
+      "cutinRequired": false
+    },
+    {
+      "id": "tm_opera_o",
+      "nameKo": "티엠 오페라 오",
+      "activeS1": true,
+      "cost": 5,
+      "portrait": "portraits/tm_opera_o.png",
+      "battleSheet": "characters/tm_opera_o.png",
+      "cutinRequired": true
+    },
+    {
+      "id": "narita_brian",
+      "nameKo": "나리타 브라이언",
+      "activeS1": true,
+      "cost": 3,
+      "portrait": "portraits/narita_brian.png",
+      "battleSheet": "characters/narita_brian.png",
+      "cutinRequired": false
+    },
+    {
+      "id": "symboli_rudolf",
+      "nameKo": "심볼리 루돌프",
+      "activeS1": true,
+      "cost": 4,
+      "portrait": "portraits/symboli_rudolf.png",
+      "battleSheet": "characters/symboli_rudolf.png",
+      "cutinRequired": false
+    },
+    {
+      "id": "air_groove",
+      "nameKo": "에어 그루브",
+      "activeS1": false,
+      "cost": 3,
+      "portrait": "portraits/air_groove.png",
+      "battleSheet": "characters/air_groove.png",
+      "cutinRequired": false
+    },
+    {
+      "id": "agnes_digital",
+      "nameKo": "아그네스 디지털",
+      "activeS1": true,
+      "cost": 2,
+      "portrait": "portraits/agnes_digital.png",
+      "battleSheet": "characters/agnes_digital.png",
+      "cutinRequired": false
+    },
+    {
+      "id": "seiun_sky",
+      "nameKo": "세이운 스카이",
+      "activeS1": false,
+      "cost": 2,
+      "portrait": "portraits/seiun_sky.png",
+      "battleSheet": "characters/seiun_sky.png",
+      "cutinRequired": false
+    },
+    {
+      "id": "tamamo_cross",
+      "nameKo": "타마모 크로스",
+      "activeS1": true,
+      "cost": 3,
+      "portrait": "portraits/tamamo_cross.png",
+      "battleSheet": "characters/tamamo_cross.png",
+      "cutinRequired": false
+    },
+    {
+      "id": "fine_motion",
+      "nameKo": "파인 모션",
+      "activeS1": false,
+      "cost": 2,
+      "portrait": "portraits/fine_motion.png",
+      "battleSheet": "characters/fine_motion.png",
+      "cutinRequired": false
+    },
+    {
+      "id": "biwa_hayahide",
+      "nameKo": "비와 하야히데",
+      "activeS1": true,
+      "cost": 4,
+      "portrait": "portraits/biwa_hayahide.png",
+      "battleSheet": "characters/biwa_hayahide.png",
+      "cutinRequired": false
+    },
+    {
+      "id": "mayano_top_gun",
+      "nameKo": "마야노 탑건",
+      "activeS1": false,
+      "cost": 4,
+      "portrait": "portraits/mayano_top_gun.png",
+      "battleSheet": "characters/mayano_top_gun.png",
+      "cutinRequired": false
+    },
+    {
+      "id": "mihono_bourbon",
+      "nameKo": "미호노 부르봉",
+      "activeS1": true,
+      "cost": 5,
+      "portrait": "portraits/mihono_bourbon.png",
+      "battleSheet": "characters/mihono_bourbon.png",
+      "cutinRequired": true
+    },
+    {
+      "id": "mejiro_ryan",
+      "nameKo": "메지로 라이언",
+      "activeS1": false,
+      "cost": 2,
+      "portrait": "portraits/mejiro_ryan.png",
+      "battleSheet": "characters/mejiro_ryan.png",
+      "cutinRequired": false
+    },
+    {
+      "id": "hishi_akebono",
+      "nameKo": "히시 아케보노",
+      "activeS1": false,
+      "cost": 1,
+      "portrait": "portraits/hishi_akebono.png",
+      "battleSheet": "characters/hishi_akebono.png",
+      "cutinRequired": false
+    },
+    {
+      "id": "yukino_bijin",
+      "nameKo": "유키노 비진",
+      "activeS1": false,
+      "cost": 1,
+      "portrait": "portraits/yukino_bijin.png",
+      "battleSheet": "characters/yukino_bijin.png",
+      "cutinRequired": false
+    },
+    {
+      "id": "rice_shower",
+      "nameKo": "라이스 샤워",
+      "activeS1": false,
+      "cost": 2,
+      "portrait": "portraits/rice_shower.png",
+      "battleSheet": "characters/rice_shower.png",
+      "cutinRequired": false
+    },
+    {
+      "id": "ines_fujin",
+      "nameKo": "아이네스 후진",
+      "activeS1": false,
+      "cost": 2,
+      "portrait": "portraits/ines_fujin.png",
+      "battleSheet": "characters/ines_fujin.png",
+      "cutinRequired": false
+    },
+    {
+      "id": "agnes_tachyon",
+      "nameKo": "아그네스 타키온",
+      "activeS1": true,
+      "cost": 4,
+      "portrait": "portraits/agnes_tachyon.png",
+      "battleSheet": "characters/agnes_tachyon.png",
+      "cutinRequired": false
+    },
+    {
+      "id": "admire_vega",
+      "nameKo": "어드마이어 베가",
+      "activeS1": false,
+      "cost": 1,
+      "portrait": "portraits/admire_vega.png",
+      "battleSheet": "characters/admire_vega.png",
+      "cutinRequired": false
+    },
+    {
+      "id": "inari_one",
+      "nameKo": "이나리 원",
+      "activeS1": true,
+      "cost": 1,
+      "portrait": "portraits/inari_one.png",
+      "battleSheet": "characters/inari_one.png",
+      "cutinRequired": false
+    },
+    {
+      "id": "winning_ticket",
+      "nameKo": "위닝 티켓",
+      "activeS1": false,
+      "cost": 1,
+      "portrait": "portraits/winning_ticket.png",
+      "battleSheet": "characters/winning_ticket.png",
+      "cutinRequired": false
+    },
+    {
+      "id": "air_shakur",
+      "nameKo": "에어 샤커",
+      "activeS1": false,
+      "cost": 1,
+      "portrait": "portraits/air_shakur.png",
+      "battleSheet": "characters/air_shakur.png",
+      "cutinRequired": false
+    },
+    {
+      "id": "eishin_flash",
+      "nameKo": "에이신 플래시",
+      "activeS1": false,
+      "cost": 2,
+      "portrait": "portraits/eishin_flash.png",
+      "battleSheet": "characters/eishin_flash.png",
+      "cutinRequired": false
+    },
+    {
+      "id": "curren_chan",
+      "nameKo": "카렌짱",
+      "activeS1": true,
+      "cost": 2,
+      "portrait": "portraits/curren_chan.png",
+      "battleSheet": "characters/curren_chan.png",
+      "cutinRequired": false
+    },
+    {
+      "id": "kawakami_princess",
+      "nameKo": "카와카미 프린세스",
+      "activeS1": false,
+      "cost": 1,
+      "portrait": "portraits/kawakami_princess.png",
+      "battleSheet": "characters/kawakami_princess.png",
+      "cutinRequired": false
+    },
+    {
+      "id": "gold_city",
+      "nameKo": "골드 시티",
+      "activeS1": true,
+      "cost": 1,
+      "portrait": "portraits/gold_city.png",
+      "battleSheet": "characters/gold_city.png",
+      "cutinRequired": false
+    },
+    {
+      "id": "sakura_bakushin_o",
+      "nameKo": "사쿠라 바쿠신 오",
+      "activeS1": false,
+      "cost": 2,
+      "portrait": "portraits/sakura_bakushin_o.png",
+      "battleSheet": "characters/sakura_bakushin_o.png",
+      "cutinRequired": false
+    },
+    {
+      "id": "seeking_the_pearl",
+      "nameKo": "시킹 더 펄",
+      "activeS1": true,
+      "cost": 1,
+      "portrait": "portraits/seeking_the_pearl.png",
+      "battleSheet": "characters/seeking_the_pearl.png",
+      "cutinRequired": false
+    },
+    {
+      "id": "shinko_windy",
+      "nameKo": "신코 윈디",
+      "activeS1": false,
+      "cost": 1,
+      "portrait": "portraits/shinko_windy.png",
+      "battleSheet": "characters/shinko_windy.png",
+      "cutinRequired": false
+    },
+    {
+      "id": "sweep_tosho",
+      "nameKo": "스윕 토쇼",
+      "activeS1": false,
+      "cost": 2,
+      "portrait": "portraits/sweep_tosho.png",
+      "battleSheet": "characters/sweep_tosho.png",
+      "cutinRequired": false
+    },
+    {
+      "id": "super_creek",
+      "nameKo": "슈퍼 크릭",
+      "activeS1": true,
+      "cost": 3,
+      "portrait": "portraits/super_creek.png",
+      "battleSheet": "characters/super_creek.png",
+      "cutinRequired": false
+    },
+    {
+      "id": "smart_falcon",
+      "nameKo": "스마트 팔콘",
+      "activeS1": true,
+      "cost": 4,
+      "portrait": "portraits/smart_falcon.png",
+      "battleSheet": "characters/smart_falcon.png",
+      "cutinRequired": false
+    },
+    {
+      "id": "zenno_rob_roy",
+      "nameKo": "젠노 롭 로이",
+      "activeS1": false,
+      "cost": 4,
+      "portrait": "portraits/zenno_rob_roy.png",
+      "battleSheet": "characters/zenno_rob_roy.png",
+      "cutinRequired": false
+    },
+    {
+      "id": "tosen_jordan",
+      "nameKo": "토센 조던",
+      "activeS1": false,
+      "cost": 1,
+      "portrait": "portraits/tosen_jordan.png",
+      "battleSheet": "characters/tosen_jordan.png",
+      "cutinRequired": false
+    },
+    {
+      "id": "nakayama_festa",
+      "nameKo": "나카야마 페스타",
+      "activeS1": false,
+      "cost": 1,
+      "portrait": "portraits/nakayama_festa.png",
+      "battleSheet": "characters/nakayama_festa.png",
+      "cutinRequired": false
+    },
+    {
+      "id": "narita_taishin",
+      "nameKo": "나리타 타이신",
+      "activeS1": false,
+      "cost": 1,
+      "portrait": "portraits/narita_taishin.png",
+      "battleSheet": "characters/narita_taishin.png",
+      "cutinRequired": false
+    },
+    {
+      "id": "nishino_flower",
+      "nameKo": "니시노 플라워",
+      "activeS1": true,
+      "cost": 2,
+      "portrait": "portraits/nishino_flower.png",
+      "battleSheet": "characters/nishino_flower.png",
+      "cutinRequired": false
+    },
+    {
+      "id": "haru_urara",
+      "nameKo": "하루 우라라",
+      "activeS1": true,
+      "cost": 1,
+      "portrait": "portraits/haru_urara.png",
+      "battleSheet": "characters/haru_urara.png",
+      "cutinRequired": false
+    },
+    {
+      "id": "bamboo_memory",
+      "nameKo": "뱀부 메모리",
+      "activeS1": true,
+      "cost": 2,
+      "portrait": "portraits/bamboo_memory.png",
+      "battleSheet": "characters/bamboo_memory.png",
+      "cutinRequired": false
+    },
+    {
+      "id": "biko_pegasus",
+      "nameKo": "비코 페가수스",
+      "activeS1": true,
+      "cost": 1,
+      "portrait": "portraits/biko_pegasus.png",
+      "battleSheet": "characters/biko_pegasus.png",
+      "cutinRequired": false
+    },
+    {
+      "id": "marvelous_sunday",
+      "nameKo": "마블러스 선데이",
+      "activeS1": false,
+      "cost": 3,
+      "portrait": "portraits/marvelous_sunday.png",
+      "battleSheet": "characters/marvelous_sunday.png",
+      "cutinRequired": false
+    },
+    {
+      "id": "matikanefukukitaru",
+      "nameKo": "마치카네 후쿠키타루",
+      "activeS1": false,
+      "cost": 1,
+      "portrait": "portraits/matikanefukukitaru.png",
+      "battleSheet": "characters/matikanefukukitaru.png",
+      "cutinRequired": false
+    },
+    {
+      "id": "mr_cb",
+      "nameKo": "미스터 시비",
+      "activeS1": false,
+      "cost": 1,
+      "portrait": "portraits/mr_cb.png",
+      "battleSheet": "characters/mr_cb.png",
+      "cutinRequired": false
+    },
+    {
+      "id": "meisho_doto",
+      "nameKo": "메이쇼 도토",
+      "activeS1": false,
+      "cost": 3,
+      "portrait": "portraits/meisho_doto.png",
+      "battleSheet": "characters/meisho_doto.png",
+      "cutinRequired": false
+    },
+    {
+      "id": "mejiro_dober",
+      "nameKo": "메지로 도베르",
+      "activeS1": false,
+      "cost": 3,
+      "portrait": "portraits/mejiro_dober.png",
+      "battleSheet": "characters/mejiro_dober.png",
+      "cutinRequired": false
+    },
+    {
+      "id": "nice_nature",
+      "nameKo": "나이스 네이처",
+      "activeS1": true,
+      "cost": 1,
+      "portrait": "portraits/nice_nature.png",
+      "battleSheet": "characters/nice_nature.png",
+      "cutinRequired": false
+    },
+    {
+      "id": "king_halo",
+      "nameKo": "킹 헤일로",
+      "activeS1": true,
+      "cost": 1,
+      "portrait": "portraits/king_halo.png",
+      "battleSheet": "characters/king_halo.png",
+      "cutinRequired": false
+    },
+    {
+      "id": "matikanetannhauser",
+      "nameKo": "마치카네 탄호이저",
+      "activeS1": false,
+      "cost": 1,
+      "portrait": "portraits/matikanetannhauser.png",
+      "battleSheet": "characters/matikanetannhauser.png",
+      "cutinRequired": false
+    },
+    {
+      "id": "ikuno_dictus",
+      "nameKo": "이쿠노 딕터스",
+      "activeS1": false,
+      "cost": 1,
+      "portrait": "portraits/ikuno_dictus.png",
+      "battleSheet": "characters/ikuno_dictus.png",
+      "cutinRequired": false
+    },
+    {
+      "id": "mejiro_palmer",
+      "nameKo": "메지로 파머",
+      "activeS1": false,
+      "cost": 1,
+      "portrait": "portraits/mejiro_palmer.png",
+      "battleSheet": "characters/mejiro_palmer.png",
+      "cutinRequired": false
+    },
+    {
+      "id": "daitaku_helios",
+      "nameKo": "다이타쿠 헬리오스",
+      "activeS1": false,
+      "cost": 2,
+      "portrait": "portraits/daitaku_helios.png",
+      "battleSheet": "characters/daitaku_helios.png",
+      "cutinRequired": false
+    },
+    {
+      "id": "twin_turbo",
+      "nameKo": "트윈 터보",
+      "activeS1": false,
+      "cost": 1,
+      "portrait": "portraits/twin_turbo.png",
+      "battleSheet": "characters/twin_turbo.png",
+      "cutinRequired": false
+    },
+    {
+      "id": "satono_diamond",
+      "nameKo": "사토노 다이아몬드",
+      "activeS1": true,
+      "cost": 2,
+      "portrait": "portraits/satono_diamond.png",
+      "battleSheet": "characters/satono_diamond.png",
+      "cutinRequired": false
+    },
+    {
+      "id": "kitasan_black",
+      "nameKo": "키타산 블랙",
+      "activeS1": true,
+      "cost": 5,
+      "portrait": "portraits/kitasan_black.png",
+      "battleSheet": "characters/kitasan_black.png",
+      "cutinRequired": true
+    },
+    {
+      "id": "sakura_chiyono_o",
+      "nameKo": "사쿠라 치요노 오",
+      "activeS1": false,
+      "cost": 2,
+      "portrait": "portraits/sakura_chiyono_o.png",
+      "battleSheet": "characters/sakura_chiyono_o.png",
+      "cutinRequired": false
+    },
+    {
+      "id": "sirius_symboli",
+      "nameKo": "시리우스 심볼리",
+      "activeS1": false,
+      "cost": 1,
+      "portrait": "portraits/sirius_symboli.png",
+      "battleSheet": "characters/sirius_symboli.png",
+      "cutinRequired": false
+    },
+    {
+      "id": "mejiro_ardan",
+      "nameKo": "메지로 아르당",
+      "activeS1": false,
+      "cost": 1,
+      "portrait": "portraits/mejiro_ardan.png",
+      "battleSheet": "characters/mejiro_ardan.png",
+      "cutinRequired": false
+    },
+    {
+      "id": "yaeno_muteki",
+      "nameKo": "야에노 무테키",
+      "activeS1": false,
+      "cost": 2,
+      "portrait": "portraits/yaeno_muteki.png",
+      "battleSheet": "characters/yaeno_muteki.png",
+      "cutinRequired": false
+    },
+    {
+      "id": "tsurumaru_tsuyoshi",
+      "nameKo": "츠루마루 츠요시",
+      "activeS1": false,
+      "cost": 1,
+      "portrait": "portraits/tsurumaru_tsuyoshi.png",
+      "battleSheet": "characters/tsurumaru_tsuyoshi.png",
+      "cutinRequired": false
+    },
+    {
+      "id": "mejiro_bright",
+      "nameKo": "메지로 브라이트",
+      "activeS1": true,
+      "cost": 2,
+      "portrait": "portraits/mejiro_bright.png",
+      "battleSheet": "characters/mejiro_bright.png",
+      "cutinRequired": false
+    },
+    {
+      "id": "daring_tact",
+      "nameKo": "데어링 택트",
+      "activeS1": false,
+      "cost": 3,
+      "portrait": "portraits/daring_tact.png",
+      "battleSheet": "characters/daring_tact.png",
+      "cutinRequired": false
+    },
+    {
+      "id": "sakura_laurel",
+      "nameKo": "사쿠라 로렐",
+      "activeS1": true,
+      "cost": 2,
+      "portrait": "portraits/sakura_laurel.png",
+      "battleSheet": "characters/sakura_laurel.png",
+      "cutinRequired": false
+    },
+    {
+      "id": "narita_top_road",
+      "nameKo": "나리타 탑 로드",
+      "activeS1": false,
+      "cost": 2,
+      "portrait": "portraits/narita_top_road.png",
+      "battleSheet": "characters/narita_top_road.png",
+      "cutinRequired": false
+    },
+    {
+      "id": "yamanin_zephyr",
+      "nameKo": "야마닌 제퍼",
+      "activeS1": false,
+      "cost": 3,
+      "portrait": "portraits/yamanin_zephyr.png",
+      "battleSheet": "characters/yamanin_zephyr.png",
+      "cutinRequired": false
+    },
+    {
+      "id": "furioso",
+      "nameKo": "푸리오소",
+      "activeS1": true,
+      "cost": 2,
+      "portrait": "portraits/furioso.png",
+      "battleSheet": "characters/furioso.png",
+      "cutinRequired": false
+    },
+    {
+      "id": "transcend",
+      "nameKo": "트랜센드",
+      "activeS1": false,
+      "cost": 3,
+      "portrait": "portraits/transcend.png",
+      "battleSheet": "characters/transcend.png",
+      "cutinRequired": false
+    },
+    {
+      "id": "north_flight",
+      "nameKo": "노스 플라이트",
+      "activeS1": true,
+      "cost": 3,
+      "portrait": "portraits/north_flight.png",
+      "battleSheet": "characters/north_flight.png",
+      "cutinRequired": false
+    },
+    {
+      "id": "symboli_kris_s",
+      "nameKo": "심볼리 크리스 에스",
+      "activeS1": true,
+      "cost": 4,
+      "portrait": "portraits/symboli_kris_s.png",
+      "battleSheet": "characters/symboli_kris_s.png",
+      "cutinRequired": false
+    },
+    {
+      "id": "tanino_gimlet",
+      "nameKo": "타니노 김렛",
+      "activeS1": false,
+      "cost": 3,
+      "portrait": "portraits/tanino_gimlet.png",
+      "battleSheet": "characters/tanino_gimlet.png",
+      "cutinRequired": false
+    },
+    {
+      "id": "daiichi_ruby",
+      "nameKo": "다이이치 루비",
+      "activeS1": true,
+      "cost": 1,
+      "portrait": "portraits/daiichi_ruby.png",
+      "battleSheet": "characters/daiichi_ruby.png",
+      "cutinRequired": false
+    },
+    {
+      "id": "mejiro_ramonu",
+      "nameKo": "메지로 라모누",
+      "activeS1": true,
+      "cost": 2,
+      "portrait": "portraits/mejiro_ramonu.png",
+      "battleSheet": "characters/mejiro_ramonu.png",
+      "cutinRequired": false
+    },
+    {
+      "id": "aston_machan",
+      "nameKo": "애스턴 마짱",
+      "activeS1": false,
+      "cost": 1,
+      "portrait": "portraits/aston_machan.png",
+      "battleSheet": "characters/aston_machan.png",
+      "cutinRequired": false
+    },
+    {
+      "id": "satono_crown",
+      "nameKo": "사토노 크라운",
+      "activeS1": false,
+      "cost": 1,
+      "portrait": "portraits/satono_crown.png",
+      "battleSheet": "characters/satono_crown.png",
+      "cutinRequired": false
+    },
+    {
+      "id": "cheval_grand",
+      "nameKo": "슈발 그랑",
+      "activeS1": true,
+      "cost": 1,
+      "portrait": "portraits/cheval_grand.png",
+      "battleSheet": "characters/cheval_grand.png",
+      "cutinRequired": false
+    },
+    {
+      "id": "vivlos",
+      "nameKo": "비블로스",
+      "activeS1": false,
+      "cost": 1,
+      "portrait": "portraits/vivlos.png",
+      "battleSheet": "characters/vivlos.png",
+      "cutinRequired": false
+    },
+    {
+      "id": "dantsu_flame",
+      "nameKo": "단츠 플레임",
+      "activeS1": false,
+      "cost": 1,
+      "portrait": "portraits/dantsu_flame.png",
+      "battleSheet": "characters/dantsu_flame.png",
+      "cutinRequired": false
+    },
+    {
+      "id": "ks_miracle",
+      "nameKo": "케이에스 미라클",
+      "activeS1": false,
+      "cost": 1,
+      "portrait": "portraits/ks_miracle.png",
+      "battleSheet": "characters/ks_miracle.png",
+      "cutinRequired": false
+    },
+    {
+      "id": "jungle_pocket",
+      "nameKo": "정글 포켓",
+      "activeS1": false,
+      "cost": 2,
+      "portrait": "portraits/jungle_pocket.png",
+      "battleSheet": "characters/jungle_pocket.png",
+      "cutinRequired": false
+    },
+    {
+      "id": "believe",
+      "nameKo": "빌리브",
+      "activeS1": false,
+      "cost": 2,
+      "portrait": "portraits/believe.png",
+      "battleSheet": "characters/believe.png",
+      "cutinRequired": false
+    },
+    {
+      "id": "no_reason",
+      "nameKo": "노 리즌",
+      "activeS1": false,
+      "cost": 1,
+      "portrait": "portraits/no_reason.png",
+      "battleSheet": "characters/no_reason.png",
+      "cutinRequired": false
+    },
+    {
+      "id": "still_in_love",
+      "nameKo": "스틸 인 러브",
+      "activeS1": true,
+      "cost": 1,
+      "portrait": "portraits/still_in_love.png",
+      "battleSheet": "characters/still_in_love.png",
+      "cutinRequired": false
+    },
+    {
+      "id": "copano_rickey",
+      "nameKo": "코파노 리키",
+      "activeS1": true,
+      "cost": 3,
+      "portrait": "portraits/copano_rickey.png",
+      "battleSheet": "characters/copano_rickey.png",
+      "cutinRequired": false
+    },
+    {
+      "id": "hokko_tarumae",
+      "nameKo": "홋코 타루마에",
+      "activeS1": true,
+      "cost": 3,
+      "portrait": "portraits/hokko_tarumae.png",
+      "battleSheet": "characters/hokko_tarumae.png",
+      "cutinRequired": false
+    },
+    {
+      "id": "wonder_acute",
+      "nameKo": "원더 어큐트",
+      "activeS1": true,
+      "cost": 2,
+      "portrait": "portraits/wonder_acute.png",
+      "battleSheet": "characters/wonder_acute.png",
+      "cutinRequired": false
+    },
+    {
+      "id": "samson_big",
+      "nameKo": "삼손 빅",
+      "activeS1": false,
+      "cost": 1,
+      "portrait": "portraits/samson_big.png",
+      "battleSheet": "characters/samson_big.png",
+      "cutinRequired": false
+    },
+    {
+      "id": "sounds_of_earth",
+      "nameKo": "사운즈 오브 어스",
+      "activeS1": false,
+      "cost": 1,
+      "portrait": "portraits/sounds_of_earth.png",
+      "battleSheet": "characters/sounds_of_earth.png",
+      "cutinRequired": false
+    },
+    {
+      "id": "royce_and_royce",
+      "nameKo": "로이스 앤 로이스",
+      "activeS1": false,
+      "cost": 1,
+      "portrait": "portraits/royce_and_royce.png",
+      "battleSheet": "characters/royce_and_royce.png",
+      "cutinRequired": false
+    },
+    {
+      "id": "katsuragi_ace",
+      "nameKo": "카츠라기 에이스",
+      "activeS1": false,
+      "cost": 1,
+      "portrait": "portraits/katsuragi_ace.png",
+      "battleSheet": "characters/katsuragi_ace.png",
+      "cutinRequired": false
+    },
+    {
+      "id": "neo_universe",
+      "nameKo": "네오 유니버스",
+      "activeS1": false,
+      "cost": 2,
+      "portrait": "portraits/neo_universe.png",
+      "battleSheet": "characters/neo_universe.png",
+      "cutinRequired": false
+    },
+    {
+      "id": "hishi_miracle",
+      "nameKo": "히시 미라클",
+      "activeS1": false,
+      "cost": 1,
+      "portrait": "portraits/hishi_miracle.png",
+      "battleSheet": "characters/hishi_miracle.png",
+      "cutinRequired": false
+    },
+    {
+      "id": "tap_dance_city",
+      "nameKo": "탭 댄스 시티",
+      "activeS1": false,
+      "cost": 2,
+      "portrait": "portraits/tap_dance_city.png",
+      "battleSheet": "characters/tap_dance_city.png",
+      "cutinRequired": false
+    },
+    {
+      "id": "duramente",
+      "nameKo": "두라멘테",
+      "activeS1": true,
+      "cost": 2,
+      "portrait": "portraits/duramente.png",
+      "battleSheet": "characters/duramente.png",
+      "cutinRequired": false
+    },
+    {
+      "id": "rhein_kraft",
+      "nameKo": "라인 크라프트",
+      "activeS1": false,
+      "cost": 3,
+      "portrait": "portraits/rhein_kraft.png",
+      "battleSheet": "characters/rhein_kraft.png",
+      "cutinRequired": false
+    },
+    {
+      "id": "cesario",
+      "nameKo": "세자리오",
+      "activeS1": false,
+      "cost": 3,
+      "portrait": "portraits/cesario.png",
+      "battleSheet": "characters/cesario.png",
+      "cutinRequired": false
+    },
+    {
+      "id": "air_messiah",
+      "nameKo": "에어 메사이어",
+      "activeS1": false,
+      "cost": 2,
+      "portrait": "portraits/air_messiah.png",
+      "battleSheet": "characters/air_messiah.png",
+      "cutinRequired": false
+    },
+    {
+      "id": "daring_heart",
+      "nameKo": "데어링 하트",
+      "activeS1": false,
+      "cost": 1,
+      "portrait": "portraits/daring_heart.png",
+      "battleSheet": "characters/daring_heart.png",
+      "cutinRequired": false
+    },
+    {
+      "id": "fusaichi_pandora",
+      "nameKo": "후사이치 판도라",
+      "activeS1": false,
+      "cost": 1,
+      "portrait": "portraits/fusaichi_pandora.png",
+      "battleSheet": "characters/fusaichi_pandora.png",
+      "cutinRequired": false
+    },
+    {
+      "id": "buena_vista",
+      "nameKo": "부에나 비스타",
+      "activeS1": true,
+      "cost": 4,
+      "portrait": "portraits/buena_vista.png",
+      "battleSheet": "characters/buena_vista.png",
+      "cutinRequired": false
+    },
+    {
+      "id": "orfevre",
+      "nameKo": "오르페브르",
+      "activeS1": true,
+      "cost": 4,
+      "portrait": "portraits/orfevre.png",
+      "battleSheet": "characters/orfevre.png",
+      "cutinRequired": false
+    },
+    {
+      "id": "gentildonna",
+      "nameKo": "젠틸돈나",
+      "activeS1": true,
+      "cost": 3,
+      "portrait": "portraits/gentildonna.png",
+      "battleSheet": "characters/gentildonna.png",
+      "cutinRequired": false
+    },
+    {
+      "id": "win_variation",
+      "nameKo": "윈 바리아시옹",
+      "activeS1": false,
+      "cost": 1,
+      "portrait": "portraits/win_variation.png",
+      "battleSheet": "characters/win_variation.png",
+      "cutinRequired": false
+    },
+    {
+      "id": "admire_groove",
+      "nameKo": "어드마이어 그루브",
+      "activeS1": false,
+      "cost": 2,
+      "portrait": "portraits/admire_groove.png",
+      "battleSheet": "characters/admire_groove.png",
+      "cutinRequired": false
+    },
+    {
+      "id": "dream_journey",
+      "nameKo": "드림 저니",
+      "activeS1": false,
+      "cost": 2,
+      "portrait": "portraits/dream_journey.png",
+      "battleSheet": "characters/dream_journey.png",
+      "cutinRequired": false
+    },
+    {
+      "id": "calstone_light_o",
+      "nameKo": "칼스톤 라이트 오",
+      "activeS1": false,
+      "cost": 1,
+      "portrait": "portraits/calstone_light_o.png",
+      "battleSheet": "characters/calstone_light_o.png",
+      "cutinRequired": false
+    },
+    {
+      "id": "durandal",
+      "nameKo": "뒤랑달",
+      "activeS1": true,
+      "cost": 2,
+      "portrait": "portraits/durandal.png",
+      "battleSheet": "characters/durandal.png",
+      "cutinRequired": false
+    },
+    {
+      "id": "genuine",
+      "nameKo": "제뉴인",
+      "activeS1": true,
+      "cost": 1,
+      "portrait": "portraits/genuine.png",
+      "battleSheet": "characters/genuine.png",
+      "cutinRequired": false
+    },
+    {
+      "id": "bubble_gum_fellow",
+      "nameKo": "버블검 펠로",
+      "activeS1": false,
+      "cost": 3,
+      "portrait": "portraits/bubble_gum_fellow.png",
+      "battleSheet": "characters/bubble_gum_fellow.png",
+      "cutinRequired": false
+    },
+    {
+      "id": "sakura_chitose_o",
+      "nameKo": "사쿠라 치토세 오",
+      "activeS1": false,
+      "cost": 2,
+      "portrait": "portraits/sakura_chitose_o.png",
+      "battleSheet": "characters/sakura_chitose_o.png",
+      "cutinRequired": false
+    },
+    {
+      "id": "fenomeno",
+      "nameKo": "페노메노",
+      "activeS1": false,
+      "cost": 2,
+      "portrait": "portraits/fenomeno.png",
+      "battleSheet": "characters/fenomeno.png",
+      "cutinRequired": false
+    },
+    {
+      "id": "blast_onepiece",
+      "nameKo": "블래스트 원피스",
+      "activeS1": true,
+      "cost": 1,
+      "portrait": "portraits/blast_onepiece.png",
+      "battleSheet": "characters/blast_onepiece.png",
+      "cutinRequired": false
+    },
+    {
+      "id": "almond_eye",
+      "nameKo": "아몬드 아이",
+      "activeS1": true,
+      "cost": 5,
+      "portrait": "portraits/almond_eye.png",
+      "battleSheet": "characters/almond_eye.png",
+      "cutinRequired": true
+    },
+    {
+      "id": "lucky_lilac",
+      "nameKo": "럭키 라일락",
+      "activeS1": true,
+      "cost": 2,
+      "portrait": "portraits/lucky_lilac.png",
+      "battleSheet": "characters/lucky_lilac.png",
+      "cutinRequired": false
+    },
+    {
+      "id": "gran_alegria",
+      "nameKo": "그란 알레그리아",
+      "activeS1": true,
+      "cost": 4,
+      "portrait": "portraits/gran_alegria.png",
+      "battleSheet": "characters/gran_alegria.png",
+      "cutinRequired": false
+    },
+    {
+      "id": "loves_only_you",
+      "nameKo": "러브즈 온리 유",
+      "activeS1": false,
+      "cost": 1,
+      "portrait": "portraits/loves_only_you.png",
+      "battleSheet": "characters/loves_only_you.png",
+      "cutinRequired": false
+    },
+    {
+      "id": "chrono_genesis",
+      "nameKo": "크로노 제네시스",
+      "activeS1": true,
+      "cost": 4,
+      "portrait": "portraits/chrono_genesis.png",
+      "battleSheet": "characters/chrono_genesis.png",
+      "cutinRequired": false
+    },
+    {
+      "id": "curren_bouquetdor",
+      "nameKo": "카렌 부케도르",
+      "activeS1": false,
+      "cost": 1,
+      "portrait": "portraits/curren_bouquetdor.png",
+      "battleSheet": "characters/curren_bouquetdor.png",
+      "cutinRequired": false
+    },
+    {
+      "id": "stay_gold",
+      "nameKo": "스테이 골드",
+      "activeS1": false,
+      "cost": 1,
+      "portrait": "portraits/stay_gold.png",
+      "battleSheet": "characters/stay_gold.png",
+      "cutinRequired": false
+    },
+    {
+      "id": "red_desire",
+      "nameKo": "레드 디자이어",
+      "activeS1": false,
+      "cost": 1,
+      "portrait": "portraits/red_desire.png",
+      "battleSheet": "characters/red_desire.png",
+      "cutinRequired": false
+    },
+    {
+      "id": "kiseki",
+      "nameKo": "키세키",
+      "activeS1": false,
+      "cost": 1,
+      "portrait": "portraits/kiseki.png",
+      "battleSheet": "characters/kiseki.png",
+      "cutinRequired": false
+    },
+    {
+      "id": "forever_young",
+      "nameKo": "포에버 영",
+      "activeS1": true,
+      "cost": 3,
+      "portrait": "portraits/forever_young.png",
+      "battleSheet": "characters/forever_young.png",
+      "cutinRequired": false
+    },
+    {
+      "id": "marche_lorraine",
+      "nameKo": "마르슈 로렌",
+      "activeS1": true,
+      "cost": 1,
+      "portrait": "portraits/marche_lorraine.png",
+      "battleSheet": "characters/marche_lorraine.png",
+      "cutinRequired": false
+    },
+    {
+      "id": "epiphaneia",
+      "nameKo": "에피파네이아",
+      "activeS1": false,
+      "cost": 3,
+      "portrait": "portraits/epiphaneia.png",
+      "battleSheet": "characters/epiphaneia.png",
+      "cutinRequired": false
+    },
+    {
+      "id": "logotype",
+      "nameKo": "로고타입",
+      "activeS1": false,
+      "cost": 2,
+      "portrait": "portraits/logotype.png",
+      "battleSheet": "characters/logotype.png",
+      "cutinRequired": false
+    },
+    {
+      "id": "victoire_pisa",
+      "nameKo": "빅투아르 피사",
+      "activeS1": false,
+      "cost": 3,
+      "portrait": "portraits/victoire_pisa.png",
+      "battleSheet": "characters/victoire_pisa.png",
+      "cutinRequired": false
+    },
+    {
+      "id": "rose_kingdom",
+      "nameKo": "로즈 킹덤",
+      "activeS1": false,
+      "cost": 1,
+      "portrait": "portraits/rose_kingdom.png",
+      "battleSheet": "characters/rose_kingdom.png",
+      "cutinRequired": false
+    },
+    {
+      "id": "rulership",
+      "nameKo": "룰러쉽",
+      "activeS1": false,
+      "cost": 2,
+      "portrait": "portraits/rulership.png",
+      "battleSheet": "characters/rulership.png",
+      "cutinRequired": false
+    },
+    {
+      "id": "efforia",
+      "nameKo": "에프포리아",
+      "activeS1": false,
+      "cost": 3,
+      "portrait": "portraits/efforia.png",
+      "battleSheet": "characters/efforia.png",
+      "cutinRequired": false
+    },
+    {
+      "id": "titleholder",
+      "nameKo": "타이틀홀더",
+      "activeS1": false,
+      "cost": 3,
+      "portrait": "portraits/titleholder.png",
+      "battleSheet": "characters/titleholder.png",
+      "cutinRequired": false
+    },
+    {
+      "id": "phalaenopsis",
+      "nameKo": "팔레놉시스",
+      "activeS1": false,
+      "cost": 2,
+      "portrait": "portraits/phalaenopsis.png",
+      "battleSheet": "characters/phalaenopsis.png",
+      "cutinRequired": false
+    },
+    {
+      "id": "verxina",
+      "nameKo": "베르시나",
+      "activeS1": false,
+      "cost": 1,
+      "portrait": "portraits/verxina.png",
+      "battleSheet": "characters/verxina.png",
+      "cutinRequired": false
+    },
+    {
+      "id": "manhattan_cafe",
+      "nameKo": "맨하탄 카페",
+      "activeS1": true,
+      "cost": 1,
+      "portrait": "portraits/manhattan_cafe.png",
+      "battleSheet": "characters/manhattan_cafe.png",
+      "cutinRequired": false
+    },
+    {
+      "id": "espoir_city",
+      "nameKo": "에스포와르 시티",
+      "activeS1": true,
+      "cost": 3,
+      "portrait": "portraits/espoir_city.png",
+      "battleSheet": "characters/espoir_city.png",
+      "cutinRequired": false
+    }
+  ],
+  "items": [
+    "items/components/winner_ribbon.png",
+    "items/components/reinforced_horseshoe.png",
+    "items/components/training_belt.png",
+    "items/components/tactics_notebook.png",
+    "items/components/spurt_band.png",
+    "items/components/focus_drop.png",
+    "items/components/weather_cloak.png",
+    "items/components/race_glove.png",
+    "items/components/factor_badge.png",
+    "items/components/support_card.png",
+    "items/complete/champion_trophy.png",
+    "items/complete/twilight_racing_suit.png",
+    "items/complete/unyielding_fighting_spirit.png",
+    "items/complete/trainer_lifeblade.png",
+    "items/complete/giant_overtaker.png",
+    "items/complete/start_dash_plan.png",
+    "items/complete/victory_bloodwind.png",
+    "items/complete/finish_line_strike.png",
+    "items/complete/iron_stable.png",
+    "items/complete/heated_training_blanket.png",
+    "items/complete/trainer_crownguard.png",
+    "items/complete/iron_horseshoe_resolve.png",
+    "items/complete/pre_race_vow.png",
+    "items/complete/racecourse_stoneplate.png",
+    "items/complete/steadfast_heart.png",
+    "items/complete/long_distance_training_coat.png",
+    "items/complete/burning_spirit_strategy.png",
+    "items/complete/pace_up_snack.png",
+    "items/complete/recovery_saddle.png",
+    "items/complete/evening_race_armor.png",
+    "items/complete/frontline_retake_mallet.png",
+    "items/complete/genius_trainer_hat.png",
+    "items/complete/endless_spurt.png",
+    "items/complete/accumulated_fighting_spirit.png",
+    "items/complete/gate_shock_device.png",
+    "items/complete/jewel_race_glove.png",
+    "items/complete/red_turf_booster.png",
+    "items/complete/corner_piercer.png",
+    "items/complete/breakaway_horseshoe.png",
+    "items/complete/last_overtake.png",
+    "items/complete/blue_focus.png",
+    "items/complete/adaptive_headgear.png",
+    "items/complete/hand_of_victory.png",
+    "items/complete/stormproof_racing_cloak.png",
+    "items/complete/composure_ribbon.png",
+    "items/complete/trick_strategy_gloves.png",
+    "items/complete/emblem_nige.png",
+    "items/complete/emblem_senko.png",
+    "items/complete/emblem_sashi.png",
+    "items/complete/emblem_oikomi.png",
+    "items/complete/emblem_sprinter.png",
+    "items/complete/emblem_miler.png",
+    "items/complete/emblem_middle.png",
+    "items/complete/emblem_stayer.png",
+    "items/complete/emblem_golden_generation.png",
+    "items/complete/emblem_famous_house.png",
+    "items/complete/emblem_dirt_champion.png",
+    "items/complete/emblem_international.png",
+    "items/complete/emblem_unbeaten.png",
+    "items/complete/emblem_comeback.png",
+    "items/complete/emblem_triple_crown.png",
+    "items/complete/emblem_era_star.png",
+    "items/complete/trainer_crown.png",
+    "items/complete/trainer_cloak.png",
+    "items/complete/trainer_shield.png"
+  ],
+  "traits": [
+    "traits/nige.png",
+    "traits/senko.png",
+    "traits/sashi.png",
+    "traits/oikomi.png",
+    "traits/sprinter.png",
+    "traits/miler.png",
+    "traits/middle.png",
+    "traits/stayer.png",
+    "traits/dirt_champion.png",
+    "traits/all_rounder.png",
+    "traits/golden_generation.png",
+    "traits/famous_house.png",
+    "traits/international.png",
+    "traits/unbeaten.png",
+    "traits/comeback.png",
+    "traits/triple_crown.png",
+    "traits/era_star.png",
+    "traits/classic_legend.png",
+    "traits/heisei_dynasty.png",
+    "traits/reiwa_elite.png",
+    "traits/queen.png",
+    "traits/emperor.png",
+    "traits/record_breaker.png",
+    "traits/iron_horse.png"
+  ],
+  "augments": [
+    "augments/economy_interest_seed.png",
+    "augments/economy_free_refresh.png",
+    "augments/economy_sell_back.png",
+    "augments/shop_low_cost.png",
+    "augments/trait_nige.png",
+    "augments/trait_senko.png",
+    "augments/trait_sashi.png",
+    "augments/trait_oikomi.png",
+    "augments/item_component_choice.png",
+    "augments/item_remove.png",
+    "augments/combat_front_guard.png",
+    "augments/combat_back_focus.png",
+    "augments/bench_expand.png",
+    "augments/xp_small.png",
+    "augments/healing_small.png",
+    "augments/crit_small.png",
+    "augments/economy_rich.png",
+    "augments/economy_streak.png",
+    "augments/shop_pair_hunter.png",
+    "augments/reroll_credit.png",
+    "augments/trait_distance_flex.png",
+    "augments/trait_surface_flex.png",
+    "augments/trait_legacy_flex.png",
+    "augments/item_complete_anvil.png",
+    "augments/item_reforge.png",
+    "augments/combat_first_cast.png",
+    "augments/combat_last_stand.png",
+    "augments/combat_adjacent.png",
+    "augments/combat_isolated.png",
+    "augments/clone_low.png",
+    "augments/level_cap_speed.png",
+    "augments/player_damage_guard.png",
+    "augments/economy_windfall.png",
+    "augments/shop_high_cost.png",
+    "augments/shop_extra_slot.png",
+    "augments/team_size.png",
+    "augments/trait_any_emblem.png",
+    "augments/trait_double.png",
+    "augments/item_radiant.png",
+    "augments/item_crown.png",
+    "augments/combat_all_stats.png",
+    "augments/combat_execute.png",
+    "augments/combat_revive.png",
+    "augments/combat_mana.png",
+    "augments/clone_any.png",
+    "augments/level_10.png",
+    "augments/bench_dual.png",
+    "augments/overtime_master.png"
+  ],
+  "status": [
+    "status/stun.png",
+    "status/silence.png",
+    "status/taunt.png",
+    "status/burn.png",
+    "status/wound.png",
+    "status/shield.png",
+    "status/heal_up.png",
+    "status/damage_up.png",
+    "status/damage_down.png",
+    "status/armor_up.png",
+    "status/armor_down.png",
+    "status/mr_up.png",
+    "status/mr_down.png",
+    "status/attack_speed_up.png",
+    "status/attack_speed_down.png",
+    "status/mana_lock.png",
+    "status/untargetable.png",
+    "status/revive.png",
+    "status/overtime.png",
+    "status/win_streak.png",
+    "status/lose_streak.png",
+    "status/shop_lock.png",
+    "status/reroll.png",
+    "status/xp.png"
+  ],
+  "vfx": [
+    "vfx/vfx_hit_physical.png",
+    "vfx/vfx_hit_magic.png",
+    "vfx/vfx_crit.png",
+    "vfx/vfx_heal.png",
+    "vfx/vfx_shield.png",
+    "vfx/vfx_burn.png",
+    "vfx/vfx_stun.png",
+    "vfx/vfx_silence.png",
+    "vfx/vfx_taunt.png",
+    "vfx/vfx_dash_nige.png",
+    "vfx/vfx_dash_senko.png",
+    "vfx/vfx_dash_sashi.png",
+    "vfx/vfx_dash_oikomi.png",
+    "vfx/vfx_line_red.png",
+    "vfx/vfx_cone_gold.png",
+    "vfx/vfx_wedge_cyan.png",
+    "vfx/vfx_arc_violet.png",
+    "vfx/vfx_aoe_burst.png",
+    "vfx/vfx_projectile.png",
+    "vfx/vfx_execute.png",
+    "vfx/vfx_buff.png",
+    "vfx/vfx_debuff.png",
+    "vfx/vfx_mana.png",
+    "vfx/vfx_item_equip.png"
+  ],
+  "starVfx": [
+    "vfx/vfx_star_2.png",
+    "vfx/vfx_star_3.png",
+    "vfx/vfx_cost5_star3.png"
+  ],
+  "pve": [
+    "pve/training_dummy.png",
+    "pve/track_golem.png",
+    "pve/supply_robot.png",
+    "pve/trophy_guardian.png",
+    "pve/grand_trophy_guardian.png"
+  ],
+  "boards": [
+    "boards/bg_title.png",
+    "boards/bg_main_menu.png",
+    "boards/bg_board_turf_day.png",
+    "boards/bg_board_turf_night.png",
+    "boards/bg_board_dirt.png",
+    "boards/bg_twinkle_draft.png",
+    "boards/bg_pve_training.png",
+    "boards/bg_final_result.png"
+  ],
+  "ui": [
+    "ui/board_hex_tiles.png",
+    "ui/ui_frames.png",
+    "ui/ui_slots.png"
+  ],
+  "banners": [
+    "ui/banner_round_start.png",
+    "ui/banner_preparation.png",
+    "ui/banner_battle.png",
+    "ui/banner_overtime.png",
+    "ui/banner_victory.png",
+    "ui/banner_defeat.png",
+    "ui/banner_draw.png",
+    "ui/banner_pve.png",
+    "ui/banner_draft.png",
+    "ui/banner_augment.png",
+    "ui/banner_eliminated.png",
+    "ui/banner_champion.png"
+  ]
+}

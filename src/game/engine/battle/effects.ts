@@ -1,0 +1,364 @@
+/**
+ * The single generic interpreter for every EffectDef in the game.
+ *
+ * Traits, items, augments and skills all express themselves as EffectDefs, so
+ * the battle engine holds no per-item or per-skill branching (spec §23.4, §42).
+ */
+import { OVERTIME_HEAL_MULT } from '../constants';
+import type { BattleStats, EffectDef, TargetRule, TriggerDef } from '../types';
+import {
+  addModifier, addShield, heal, hasStatus, isTargetable, stat, type CombatUnit,
+} from './combat-unit';
+import { hexDistance, isBackRow, isFrontRow, neighbours, hexKey } from './hex';
+
+/** Everything an effect may need from the battle it runs inside. */
+export type EffectContext = {
+  now: number;
+  overtime: boolean;
+  units: CombatUnit[];
+  /** Applies damage through the full mitigation pipeline. */
+  dealDamage: (source: CombatUnit, target: CombatUnit, amount: number, type: EffectDef['damageType'], isSkill: boolean) => number;
+  applyStatus: (source: CombatUnit, target: CombatUnit, effect: EffectDef) => void;
+  /** Moves a unit toward a hex, respecting occupancy. */
+  dash: (unit: CombatUnit, target: CombatUnit, maxDistance: number) => void;
+  summon: (owner: CombatUnit, power: number, duration: number) => void;
+};
+
+export type EffectSource = 'TRAIT' | 'ITEM' | 'AUGMENT' | 'SKILL';
+
+const allies = (ctx: EffectContext, unit: CombatUnit): CombatUnit[] =>
+  ctx.units.filter((u) => u.team === unit.team && u.alive);
+const enemies = (ctx: EffectContext, unit: CombatUnit): CombatUnit[] =>
+  ctx.units.filter((u) => u.team !== unit.team && u.alive);
+
+/** Resolves a target rule into concrete units, deterministically. */
+export function resolveTargets(
+  ctx: EffectContext, self: CombatUnit, rule: TargetRule | undefined, radius: number | undefined,
+  currentTarget: CombatUnit | null,
+): CombatUnit[] {
+  const byId = (a: CombatUnit, b: CombatUnit) => a.id.localeCompare(b.id);
+  const foes = enemies(ctx, self).filter((u) => isTargetable(u, ctx.now));
+
+  const expand = (centre: CombatUnit | null, pool: CombatUnit[]): CombatUnit[] => {
+    if (!centre) return [];
+    if (!radius || radius <= 0) return [centre];
+    return pool.filter((u) => hexDistance(u.cell, centre.cell) <= radius);
+  };
+
+  switch (rule) {
+    case 'SELF': return [self];
+    case 'ALL_ALLIES': return allies(ctx, self);
+    case 'ALL_ENEMIES': return radius ? expand(self, foes) : foes;
+    case 'NEAREST_ENEMY': {
+      const sorted = foes.slice().sort(
+        (a, b) => hexDistance(self.cell, a.cell) - hexDistance(self.cell, b.cell) || byId(a, b),
+      );
+      return expand(sorted[0] ?? null, foes);
+    }
+    case 'FARTHEST_ENEMY': {
+      const sorted = foes.slice().sort(
+        (a, b) => hexDistance(self.cell, b.cell) - hexDistance(self.cell, a.cell) || byId(a, b),
+      );
+      return expand(sorted[0] ?? null, foes);
+    }
+    case 'LOWEST_HP_ENEMY': {
+      const sorted = foes.slice().sort((a, b) => a.hp - b.hp || byId(a, b));
+      return expand(sorted[0] ?? null, foes);
+    }
+    case 'LOWEST_HP_PCT_ENEMY': {
+      const sorted = foes.slice().sort((a, b) => a.hp / a.maxHp - b.hp / b.maxHp || byId(a, b));
+      return expand(sorted[0] ?? null, foes);
+    }
+    case 'HIGHEST_HP_ENEMY': {
+      const sorted = foes.slice().sort((a, b) => b.hp - a.hp || byId(a, b));
+      return expand(sorted[0] ?? null, foes);
+    }
+    case 'LARGEST_ENEMY_CLUSTER': {
+      let best: CombatUnit | null = null;
+      let bestCount = -1;
+      const r = radius ?? 1;
+      for (const candidate of foes.slice().sort(byId)) {
+        const count = foes.filter((u) => hexDistance(u.cell, candidate.cell) <= r).length;
+        if (count > bestCount) { bestCount = count; best = candidate; }
+      }
+      return expand(best, foes);
+    }
+    case 'LOWEST_HP_ALLY': {
+      const pool = allies(ctx, self);
+      const sorted = pool.slice().sort((a, b) => a.hp / a.maxHp - b.hp / b.maxHp || byId(a, b));
+      return sorted.length ? [sorted[0]] : [];
+    }
+    case 'CURRENT_TARGET':
+    default:
+      return expand(currentTarget, foes);
+  }
+}
+
+/** True when the effect's trigger gate is currently satisfied. */
+export function triggerHolds(
+  unit: CombatUnit, trigger: TriggerDef | undefined, ctx: EffectContext,
+  event: TriggerEvent, currentTarget: CombatUnit | null,
+): boolean {
+  if (!trigger || trigger.when === 'ALWAYS') return event === 'PASSIVE' || event === 'RECOMPUTE';
+  const t = trigger.threshold ?? 0;
+
+  switch (trigger.when) {
+    case 'COMBAT_START': return event === 'COMBAT_START';
+    case 'ON_ATTACK': return event === 'ON_ATTACK';
+    case 'ON_NTH_ATTACK': return event === 'ON_ATTACK' && t > 0 && unit.attackCount % t === 0;
+    case 'ON_HIT_TAKEN': return event === 'ON_HIT_TAKEN';
+    case 'ON_CAST': return event === 'ON_CAST';
+    case 'ON_KILL': return event === 'ON_KILL';
+    case 'ON_TAKEDOWN_ASSIST': return event === 'ON_KILL' || event === 'ON_ASSIST';
+    case 'ON_DEATH': return event === 'ON_DEATH';
+    case 'EVERY_SECONDS': return event === 'TICK';
+    case 'AFTER_SECONDS': return (event === 'PASSIVE' || event === 'RECOMPUTE') && ctx.now >= t;
+    case 'HP_BELOW': return unit.hp / unit.maxHp < t;
+    case 'HP_ABOVE': return unit.hp / unit.maxHp >= t;
+    case 'TARGET_HP_BELOW': return !!currentTarget && currentTarget.hp / currentTarget.maxHp <= t;
+    case 'IN_FRONT_ROWS': return isFrontRow(unit.cell, unit.team);
+    case 'IN_BACK_ROWS': return isBackRow(unit.cell, unit.team);
+    case 'ADJACENT_ALLIES_AT_LEAST': {
+      const keys = new Set(neighbours(unit.cell).map(hexKey));
+      const n = ctx.units.filter(
+        (u) => u.alive && u.team === unit.team && u.id !== unit.id && keys.has(hexKey(u.cell)),
+      ).length;
+      return n >= t;
+    }
+    case 'NO_ADJACENT_ALLIES': {
+      const keys = new Set(neighbours(unit.cell).map(hexKey));
+      return !ctx.units.some(
+        (u) => u.alive && u.team === unit.team && u.id !== unit.id && keys.has(hexKey(u.cell)),
+      );
+    }
+    default:
+      return false;
+  }
+}
+
+export type TriggerEvent =
+  | 'PASSIVE' | 'RECOMPUTE' | 'COMBAT_START' | 'ON_ATTACK' | 'ON_HIT_TAKEN' | 'ON_CAST'
+  | 'ON_KILL' | 'ON_ASSIST' | 'ON_DEATH' | 'TICK';
+
+/**
+ * Aura-shaped effects are recomputed from scratch each tick rather than applied
+ * once, so conditional gates (HP thresholds, adjacency, elapsed time) turn on
+ * and off cleanly without leaking stacks.
+ */
+const AURA_KINDS = new Set([
+  'DAMAGE_AMP', 'DAMAGE_REDUCTION', 'OMNIVAMP', 'CRIT_DAMAGE_ADD', 'CRIT_CHANCE_ADD',
+  'SKILL_DAMAGE_AMP', 'SHIELD_DAMAGE_AMP', 'HEAL_SHIELD_AMP', 'CC_RESIST',
+  'EXECUTE_THRESHOLD', 'ATTACK_SPEED_CAP_ADD', 'SKILLS_CAN_CRIT',
+]);
+
+export const isAuraKind = (kind: string): boolean => AURA_KINDS.has(kind);
+
+/** Folds one aura effect into the unit's aggregate totals. */
+export function accumulateAura(unit: CombatUnit, effect: EffectDef): void {
+  const v = effect.value ?? 0;
+  switch (effect.kind) {
+    case 'DAMAGE_AMP': unit.aura.damageAmp += v; break;
+    case 'DAMAGE_REDUCTION': unit.aura.damageReduction += v; break;
+    case 'OMNIVAMP': unit.aura.omnivamp += v; break;
+    case 'CRIT_DAMAGE_ADD': unit.aura.critDamage += v; break;
+    case 'CRIT_CHANCE_ADD': unit.aura.critChance += v; break;
+    case 'SKILL_DAMAGE_AMP': unit.aura.skillDamageAmp += v; break;
+    case 'SHIELD_DAMAGE_AMP': unit.aura.shieldDamageAmp += v; break;
+    case 'HEAL_SHIELD_AMP': unit.aura.healShieldAmp += v; break;
+    case 'CC_RESIST': unit.aura.ccResist += v; break;
+    case 'EXECUTE_THRESHOLD': unit.aura.executeThreshold = Math.max(unit.aura.executeThreshold, v); break;
+    case 'ATTACK_SPEED_CAP_ADD': unit.aura.attackSpeedCapBonus += v; break;
+    case 'SKILLS_CAN_CRIT': unit.aura.skillsCanCrit = true; break;
+    default: break;
+  }
+}
+
+export type ApplyOptions = {
+  /** Star scaling for skill effects. */
+  power: number;
+  /** Stable key prefix used by oncePerCombat gating. */
+  sourceKey: string;
+  currentTarget: CombatUnit | null;
+  event: TriggerEvent;
+};
+
+/**
+ * Applies one non-aura effect. Returns the number of units it touched, which
+ * the caller uses only for logging.
+ */
+export function applyEffect(
+  ctx: EffectContext, self: CombatUnit, effect: EffectDef, index: number, opts: ApplyOptions,
+): number {
+  const onceKey = `${opts.sourceKey}:${effect.kind}:${index}`;
+  if (effect.oncePerCombat) {
+    if (self.usedOnce.has(onceKey)) return 0;
+    self.usedOnce.add(onceKey);
+  }
+
+  const power = opts.power;
+  const value = (effect.value ?? 0) * (effect.kind === 'DAMAGE' || effect.kind === 'HEAL' ? power : 1);
+  const healScale = ctx.overtime ? OVERTIME_HEAL_MULT : 1;
+  const targets = resolveTargets(ctx, self, effect.target as TargetRule, effect.radius, opts.currentTarget);
+
+  switch (effect.kind) {
+    case 'STAT_ADD':
+    case 'STAT_MUL': {
+      const list = effect.target ? targets : [self];
+      for (const t of list) {
+        addModifier(t, effect.stat as keyof BattleStats, value, effect.kind === 'STAT_MUL', effect.duration ?? 0, ctx.now);
+      }
+      return list.length;
+    }
+    case 'STACKING_STAT': {
+      const max = effect.maxStacks ?? 99;
+      const key = effect.tag === 'PCT' ? `pct:${effect.stat}` : `flat:${effect.stat}`;
+      const countKey = `count:${onceKey}`;
+      const used = self.stacks[countKey] ?? 0;
+      if (used >= max) return 0;
+      self.stacks[countKey] = used + 1;
+      self.stacks[key] = (self.stacks[key] ?? 0) + (effect.value ?? 0);
+      if (effect.stat === 'hp') {
+        const ratio = self.maxHp > 0 ? self.hp / self.maxHp : 1;
+        self.maxHp = stat(self, 'hp', ctx.now);
+        self.hp = Math.min(self.maxHp, self.maxHp * ratio);
+      }
+      return 1;
+    }
+    case 'DAMAGE': {
+      const repeat = effect.tag?.startsWith('REPEAT:') ? Number(effect.tag.slice(7)) || 1 : 1;
+      let hits = 0;
+      for (let i = 0; i < repeat; i += 1) {
+        for (const t of targets) { ctx.dealDamage(self, t, value, effect.damageType ?? 'MAGIC', true); hits += 1; }
+      }
+      return hits;
+    }
+    case 'DAMAGE_MAXHP_PCT': {
+      for (const t of targets) {
+        ctx.dealDamage(self, t, t.maxHp * (effect.value ?? 0), effect.damageType ?? 'TRUE', true);
+      }
+      return targets.length;
+    }
+    case 'ON_HIT_DAMAGE': {
+      const list = targets.length ? targets : opts.currentTarget ? [opts.currentTarget] : [];
+      for (const t of list) ctx.dealDamage(self, t, effect.value ?? 0, effect.damageType ?? 'PHYSICAL', false);
+      return list.length;
+    }
+    case 'SPLASH_ON_HIT': {
+      const centre = opts.currentTarget;
+      if (!centre) return 0;
+      const splash = enemies(ctx, self).filter(
+        (u) => u.id !== centre.id && hexDistance(u.cell, centre.cell) <= (effect.radius ?? 1),
+      ).sort((a, b) => a.id.localeCompare(b.id));
+      const victim = splash[0];
+      if (!victim) return 0;
+      ctx.dealDamage(self, victim, stat(self, 'attackDamage', ctx.now) * (effect.value ?? 0), 'PHYSICAL', false);
+      return 1;
+    }
+    case 'HEAL': {
+      const list = targets.length ? targets : [self];
+      for (const t of list) heal(t, value * healScale, ctx.now);
+      return list.length;
+    }
+    case 'HEAL_MAXHP_PCT': {
+      const list = targets.length ? targets : [self];
+      for (const t of list) heal(t, t.maxHp * (effect.value ?? 0) * healScale, ctx.now);
+      return list.length;
+    }
+    case 'HEAL_MISSING_PCT': {
+      const list = targets.length ? targets : [self];
+      for (const t of list) heal(t, (t.maxHp - t.hp) * (effect.value ?? 0) * healScale, ctx.now);
+      return list.length;
+    }
+    case 'SHIELD_MAXHP_PCT': {
+      const list = targets.length ? targets : [self];
+      for (const t of list) addShield(t, t.maxHp * (effect.value ?? 0) * healScale, effect.duration ?? 5, ctx.now);
+      return list.length;
+    }
+    case 'SHIELD_FLAT': {
+      const list = targets.length ? targets : [self];
+      for (const t of list) addShield(t, value * healScale, effect.duration ?? 5, ctx.now);
+      return list.length;
+    }
+    case 'MANA_ADD': {
+      const list = effect.target ? targets : [self];
+      for (const t of list) {
+        const amount = effect.tag === 'MAX_MANA_FRACTION'
+          ? stat(t, 'maxMana', ctx.now) * (effect.value ?? 0)
+          : (effect.value ?? 0);
+        t.mana = Math.min(stat(t, 'maxMana', ctx.now), t.mana + amount);
+      }
+      return list.length;
+    }
+    case 'ON_HIT_MANA': {
+      self.mana = Math.min(stat(self, 'maxMana', ctx.now), self.mana + (effect.value ?? 0));
+      return 1;
+    }
+    case 'MANA_MAX_ADD': {
+      const list = effect.target ? targets : [self];
+      for (const t of list) {
+        t.base.maxMana = Math.max(30, t.base.maxMana + (effect.value ?? 0));
+        t.mana = Math.min(t.mana, t.base.maxMana);
+      }
+      return list.length;
+    }
+    case 'APPLY_STATUS':
+    case 'TAUNT': {
+      const list = targets.length ? targets : opts.currentTarget ? [opts.currentTarget] : [];
+      for (const t of list) ctx.applyStatus(self, t, { ...effect, status: effect.status ?? 'TAUNT' });
+      return list.length;
+    }
+    case 'BURN':
+    case 'WOUND': {
+      const list = targets.length ? targets : opts.currentTarget ? [opts.currentTarget] : [];
+      for (const t of list) ctx.applyStatus(self, t, { ...effect, status: effect.kind });
+      return list.length;
+    }
+    case 'SUNDER_ARMOR_PCT': {
+      const list = targets.length ? targets : opts.currentTarget ? [opts.currentTarget] : [];
+      for (const t of list) t.stacks['shred:armor'] = Math.max(t.stacks['shred:armor'] ?? 0, effect.value ?? 0);
+      return list.length;
+    }
+    case 'SHRED_MR_PCT': {
+      const list = targets.length ? targets : opts.currentTarget ? [opts.currentTarget] : [];
+      for (const t of list) t.stacks['shred:magicResist'] = Math.max(t.stacks['shred:magicResist'] ?? 0, effect.value ?? 0);
+      return list.length;
+    }
+    case 'CC_IMMUNE': {
+      self.aura.ccImmuneUntil = Math.max(self.aura.ccImmuneUntil, ctx.now + (effect.duration ?? 0));
+      return 1;
+    }
+    case 'UNTARGETABLE': {
+      self.aura.untargetableUntil = Math.max(self.aura.untargetableUntil, ctx.now + (effect.duration ?? 0));
+      return 1;
+    }
+    case 'MANA_LOCK': {
+      const list = targets.length ? targets : opts.currentTarget ? [opts.currentTarget] : [];
+      for (const t of list) t.manaLockUntil = Math.max(t.manaLockUntil, ctx.now + (effect.duration ?? 1));
+      return list.length;
+    }
+    case 'DASH': {
+      const t = opts.currentTarget ?? resolveTargets(ctx, self, effect.target as TargetRule, undefined, null)[0];
+      if (t) ctx.dash(self, t, effect.value ?? 2);
+      return t ? 1 : 0;
+    }
+    case 'SUMMON': {
+      ctx.summon(self, effect.value ?? 0, effect.duration ?? 10);
+      return 1;
+    }
+    case 'REVIVE': {
+      // Handled at death time; recording the intent here is enough.
+      self.stacks['revive:pct'] = effect.value ?? 0.25;
+      self.stacks['revive:delay'] = effect.duration ?? 1.5;
+      return 1;
+    }
+    case 'SURVIVE_LETHAL': {
+      const list = targets.length ? targets : [self];
+      for (const t of list) t.stacks['surviveLethal'] = 1;
+      return list.length;
+    }
+    default:
+      return 0;
+  }
+}
+
+export const unitHasWound = (unit: CombatUnit, now: number): boolean => hasStatus(unit, 'WOUND', now);

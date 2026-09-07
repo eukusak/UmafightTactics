@@ -1,0 +1,41 @@
+{
+  "version": 1,
+  "note": "Historical facts the source DB does not encode per-race. horse-game-db.json only stores aggregate gradeWins plus a single mainWin string, so Triple Crown and overseas-G1 status cannot be derived from it. These lists are explicit and auditable rather than fuzzy-matched (spec §6 forbids silent fuzzy inference). Keys are canonical Korean names.",
+  "tripleCrown": {
+    "심볼리 루돌프": "1984 Satsuki Sho / Tokyo Yushun / Kikuka Sho — undefeated Triple Crown.",
+    "나리타 브라이언": "1994 Triple Crown.",
+    "오르페브르": "2011 Triple Crown.",
+    "메지로 라모누": "1986 fillies' Triple Crown.",
+    "스틸 인 러브": "2003 fillies' Triple Crown.",
+    "젠틸돈나": "2012 fillies' Triple Crown.",
+    "아몬드 아이": "2018 fillies' Triple Crown.",
+    "데어링 택트": "2020 undefeated fillies' Triple Crown."
+  },
+  "internationalG1": {
+    "엘 콘도르 파사": "1999 Grand Prix de Saint-Cloud (G1, FRA).",
+    "아그네스 디지털": "2001 Hong Kong Cup (G1).",
+    "스테이 골드": "2001 Hong Kong Vase (G1), 2001 Dubai Sheema Classic (G1).",
+    "세자리오": "2005 American Oaks (G1, USA).",
+    "빅투아르 피사": "2011 Dubai World Cup (G1).",
+    "룰러쉽": "2012 Queen Elizabeth II Cup (G1, HK).",
+    "아몬드 아이": "2018 Dubai Turf (G1).",
+    "비블로스": "2019 Dubai Turf (G1).",
+    "러브즈 온리 유": "2021 Breeders' Cup Filly & Mare Turf (G1), 2021 Hong Kong Cup (G1).",
+    "마르슈 로렌": "2021 Breeders' Cup Distaff (G1).",
+    "포에버 영": "2025 Saudi Cup (G1), 2025 Breeders' Cup Classic (G1)."
+  },
+  "famousHouseGroups": {
+    "메지로": ["메지로 맥퀸", "메지로 라이언", "메지로 도베르", "메지로 파머", "메지로 아르당", "메지로 브라이트", "메지로 라모누"],
+    "사쿠라": ["사쿠라 바쿠신 오", "사쿠라 치요노 오", "사쿠라 로렐", "사쿠라 치토세 오"],
+    "어드마이어": ["어드마이어 베가", "어드마이어 그루브"],
+    "아그네스": ["아그네스 디지털", "아그네스 타키온"],
+    "나리타": ["나리타 브라이언", "나리타 타이신", "나리타 탑 로드"],
+    "에어": ["에어 그루브", "에어 샤커", "에어 메사이어"],
+    "히시": ["히시 아마존", "히시 아케보노", "히시 미라클"],
+    "마치카네": ["마치카네 후쿠키타루", "마치카네 탄호이저"],
+    "심볼리": ["심볼리 루돌프", "심볼리 크리스 에스", "시리우스 심볼리"],
+    "사토노": ["사토노 다이아몬드", "사토노 크라운"],
+    "카렌": ["카렌짱", "카렌 부케도르"],
+    "다이와": ["다이와 스칼렛"]
+  }
+}
