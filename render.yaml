@@ -6,8 +6,10 @@
 # `yarn` + `yarn start` -- an install with no build, and no start command.
 #
 # The game is a static SPA, so a Static Site is the right shape. If the service
-# is already a Node web service, `npm start` (scripts/serve.mjs) serves dist/
-# and builds it first when missing, so that path works too.
+# is already a Node web service, the build still runs during install via
+# scripts/render-postinstall.mjs and `npm start` serves the result. The runtime
+# instance never builds: this build needs ~500MB of heap and a small instance
+# caps it near 256MB, which crash-loops the service.
 services:
   - type: web
     name: umafight-tactics
@@ -20,6 +22,10 @@ services:
       # Matches .node-version and the Node 22 LTS the project is tested on.
       - key: NODE_VERSION
         value: "22"
+      # The bundle needs roughly 500MB of heap; a small container defaults to
+      # about 256MB. This only ever raises the ceiling.
+      - key: NODE_OPTIONS
+        value: "--max-old-space-size=1024"
     routes:
       # SPA fallback so deep links resolve to the app shell.
       - type: rewrite

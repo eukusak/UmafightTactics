@@ -206,7 +206,27 @@ SPA fallback(`/* → /index.html`), `/assets/*` 장기 캐시 헤더, `NODE_VERS
 
 `npm start`는 `scripts/serve.mjs`(외부 의존성 없음)를 실행해 `dist/`를 `0.0.0.0:$PORT`로 서빙합니다.
 SPA fallback, gzip, 해시 자산 immutable 캐시, 경로 탈출 차단이 들어 있습니다.
-**`dist/`가 없으면 먼저 빌드한 뒤 서빙하므로**, 빌드 커맨드가 설치만 하는 기본값(`yarn`)이어도 동작합니다.
+
+빌드 커맨드가 설치만 하는 기본값(`yarn`)이어도, 설치 중 `scripts/render-postinstall.mjs`가
+빌드를 대신 수행하므로 서비스가 뜹니다.
+
+### 런타임 인스턴스는 빌드하지 않는다
+
+`serve.mjs`는 **빌드를 시도하지 않고**, `dist/`가 없으면 안내 메시지와 함께 즉시 종료합니다.
+
+이 빌드는 힙이 **약 500MB** 필요한데 작은 런타임 인스턴스는 기본 힙이 **256MB 부근**입니다.
+실제로 시작 시점에 빌드를 시도했더니 2분간 GC를 돌다
+`Reached heap limit Allocation failed`로 죽으면서 서비스가 크래시 루프에 빠졌습니다.
+
+그래서 빌드는 **메모리가 넉넉한 빌드 단계**에서만 수행합니다.
+
+- `scripts/render-postinstall.mjs`가 `RENDER` 환경변수가 있을 때만, 그리고 `dist/`가 없을 때만 빌드합니다.
+  로컬 `npm ci`에는 아무 영향이 없습니다.
+- 빌드 시 `NODE_OPTIONS`에 `--max-old-space-size=1024`를 덧붙입니다. 상한을 **올리기만** 하므로
+  큰 빌드 머신의 기본값을 낮추지 않습니다.
+
+검증: 부모 힙을 256MB로 묶은 상태에서 상향 없이는 `exit 134 / heap out of memory`,
+상향 후에는 13초 만에 정상 빌드됩니다.
 
 ### Node 버전
 

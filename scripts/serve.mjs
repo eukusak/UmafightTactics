@@ -3,13 +3,16 @@
  *
  * The game is a static site and `render.yaml` deploys it as one. This exists so
  * the repo also works when the host runs it as a plain Node web service, which
- * is Render's default for a Node project: that path runs `yarn` (install only)
- * and then `yarn start`, so there is no build step and no start command.
+ * is Render's default for a Node project (`yarn` to install, then `yarn start`).
  *
- * It therefore builds `dist/` on first boot when it is missing, then serves it.
+ * It deliberately does NOT build. The build needs roughly 500MB of heap, and a
+ * small runtime instance caps it near 256MB: an earlier version built here on
+ * first boot and spent two minutes in GC before dying with "Reached heap limit
+ * Allocation failed", which crash-looped the service. The build belongs on the
+ * build machine — scripts/render-postinstall.mjs runs it during install.
+ *
  * Dependency-free on purpose — nothing here should need an install to work.
  */
-import { spawnSync } from 'node:child_process';
 import { createReadStream, existsSync, statSync } from 'node:fs';
 import { createServer } from 'node:http';
 import path from 'node:path';
@@ -50,21 +53,23 @@ const COMPRESSIBLE = new Set([
   '.html', '.js', '.mjs', '.css', '.json', '.map', '.svg', '.txt', '.wasm',
 ]);
 
-/** Builds the site when `dist/` is absent, so an install-only deploy still works. */
-function ensureBuilt() {
+/** Refuses to start without a build rather than attempting one here. */
+function requireBuild() {
   if (existsSync(INDEX)) return;
-  console.log('[serve] dist/ is missing — running the production build first.');
-  const npm = process.platform === 'win32' ? 'npm.cmd' : 'npm';
-  const result = spawnSync(npm, ['run', 'build'], { cwd: ROOT, stdio: 'inherit' });
-  if (result.status !== 0) {
-    console.error(
-      '\n[serve] Build failed, so there is nothing to serve.\n' +
-        '        Deploy this repository as a Render *Static Site* instead:\n' +
-        '          Build Command:   npm ci && npm run build\n' +
-        '          Publish Directory: dist\n',
-    );
-    process.exit(result.status ?? 1);
-  }
+  console.error(
+    '\n[serve] dist/ is missing, so there is nothing to serve.\n\n' +
+      '        This server does not build: the build needs ~500MB of heap and a small\n' +
+      '        runtime instance caps it near 256MB, which crash-loops the service.\n' +
+      '        Run the build on the build machine instead.\n\n' +
+      '        Render Static Site (recommended):\n' +
+      '          Build Command:     npm ci && npm run build\n' +
+      '          Publish Directory: dist\n\n' +
+      '        Render Node web service:\n' +
+      '          Build Command:     npm ci && npm run build\n' +
+      '          Start Command:     npm start\n\n' +
+      '        Locally:  npm run build && npm start\n',
+  );
+  process.exit(1);
 }
 
 /** Resolves a URL path to a file inside dist, or null when it escapes the root. */
@@ -115,7 +120,7 @@ function send(req, res, file, status = 200) {
   createReadStream(file).pipe(res);
 }
 
-ensureBuilt();
+requireBuild();
 
 const NOT_FOUND_BODY = gzipSync(Buffer.from('Not found', 'utf8'));
 
