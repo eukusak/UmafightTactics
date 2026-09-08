@@ -1,16 +1,8 @@
 {
-  "acceptedArt": 359,
-  "baseCommit": "f2079268776507f4ead6599635094696da6be9e9",
-  "batchSize": 5,
+  "acceptedArt": 369,
+  "baseCommit": "c662b5caae3a42a956796ccd6d974f5ec14f85fc",
+  "batchSize": 10,
   "completedBatch": [
-    "royce_and_royce",
-    "katsuragi_ace",
-    "neo_universe",
-    "hishi_miracle",
-    "tap_dance_city"
-  ],
-  "completedPortraits": 135,
-  "nextPortraitIds": [
     "duramente",
     "rhein_kraft",
     "cesario",
@@ -22,9 +14,11 @@
     "gentildonna",
     "win_variation"
   ],
+  "completedPortraits": 145,
+  "nextPortraitIds": [],
   "portraitTarget": 145,
   "remaining": {
-    "portraits": 10,
+    "portraits": 0,
     "battleSheets": 145,
     "cutins": 0
   },
@@ -54,10 +48,10 @@
       "compiled model and runtime verification"
     ]
   },
-  "workflow": "This session generates five distinct portraits, inspects and saves to GitHub, verifies, then begins the next five. Preserve the separate concurrent ten-character batches and reservations. Complete all 145 portraits before rigging one character at a time.",
-  "latestTenCharacterBatch": "batch-1003",
+  "workflow": "Generate up to ten distinct portraits, inspect and save to PR 6, verify remote commit, then next batch. Finish 145 portraits before character-by-character Cubism work.",
+  "latestTenCharacterBatch": "batch-2001",
   "latestFiveCharacterBatch": "batch-20",
-  "activeTenCharacterBatch": {
+  "previousReservation": {
     "session": "8bd244030e73",
     "batch": "batch-1004",
     "ids": [
@@ -72,7 +66,9 @@
       "gentildonna",
       "win_variation"
     ],
-    "status": "reserved-for-next-batch",
+    "status": "resumed-after-user-reported-stalled-session",
     "note": "Other concurrent sessions should skip these ten IDs. Start after batch-1003 is saved and verified."
-  }
+  },
+  "concurrentMerge": "Preserved five portraits from c662b5c; local duplicate sources kept as alternatives and not double counted.",
+  "portraitStatus": "complete; all 145 runtime portraits present"
 }

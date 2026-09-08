@@ -2644,5 +2644,215 @@
       256
     ],
     "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "duramente": {
+    "file": "portraits/duramente.png",
+    "source": "docs/art-source/portraits/batch-2001/duramente.png",
+    "sourceSha256": "5df5526c1504b5bae21868d004b2f5ebbab7655242499aac996a08225bd0a148",
+    "reference": "public/assets/characters/race/Duramente-Race.png",
+    "sourceSize": [
+      1254,
+      1254
+    ],
+    "crop": [
+      51,
+      17,
+      1176,
+      1240
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "rhein_kraft": {
+    "file": "portraits/rhein_kraft.png",
+    "source": "docs/art-source/portraits/batch-2001/rhein_kraft.png",
+    "sourceSha256": "bad70e4853edd2f8064c0ed5538ced6ee52dd3acb9a08b5fd6ed84e5d053bfa2",
+    "reference": "public/assets/characters/race/RheinKraft-Race.png",
+    "sourceSize": [
+      1246,
+      1263
+    ],
+    "crop": [
+      33,
+      21,
+      1189,
+      1240
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "cesario": {
+    "file": "portraits/cesario.png",
+    "source": "docs/art-source/portraits/batch-2001/cesario.png",
+    "sourceSha256": "2ca20c2cfc62ce059cd127a613552aa01a10a234be3525c19c91c6c87a7e28f9",
+    "reference": "public/assets/characters/race/Cesario-Race.png",
+    "sourceSize": [
+      1230,
+      1278
+    ],
+    "crop": [
+      0,
+      23,
+      1202,
+      1262
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "air_messiah": {
+    "file": "portraits/air_messiah.png",
+    "source": "docs/art-source/portraits/batch-2001/air_messiah.png",
+    "sourceSha256": "90e6b39d6a384e28e87ad5a82ad521c5a8d4ebd0e2102c3532c9c8993d373a32",
+    "reference": "public/assets/characters/race/AirMessiah-Race.png",
+    "sourceSize": [
+      1199,
+      1312
+    ],
+    "crop": [
+      0,
+      21,
+      1152,
+      1312
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "daring_heart": {
+    "file": "portraits/daring_heart.png",
+    "source": "docs/art-source/portraits/batch-2001/daring_heart.png",
+    "sourceSha256": "355d4d8d07540e7312f464c55045599ab6e308345a7b9966f805d845cfcf0c74",
+    "reference": "public/assets/characters/race/DaringHeart-Race.png",
+    "sourceSize": [
+      1254,
+      1254
+    ],
+    "crop": [
+      59,
+      51,
+      1236,
+      1238
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "fusaichi_pandora": {
+    "file": "portraits/fusaichi_pandora.png",
+    "source": "docs/art-source/portraits/batch-2001/fusaichi_pandora.png",
+    "sourceSha256": "362f149fde34ed4e3c042d5c36360020cae4ab1144c760deb7f19e83ea1f4924",
+    "reference": "public/assets/characters/race/FusaichiPandora-Race.png",
+    "sourceSize": [
+      1247,
+      1261
+    ],
+    "crop": [
+      0,
+      21,
+      1207,
+      1261
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "buena_vista": {
+    "file": "portraits/buena_vista.png",
+    "source": "docs/art-source/portraits/batch-2001/buena_vista.png",
+    "sourceSha256": "c2280efee8299a57a0c015346a0c27e2e087838e789e89848824ee52faf937af",
+    "reference": "public/assets/characters/race/BuenaVista-Race.png",
+    "sourceSize": [
+      1241,
+      1268
+    ],
+    "crop": [
+      27,
+      29,
+      1092,
+      1254
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "orfevre": {
+    "file": "portraits/orfevre.png",
+    "source": "docs/art-source/portraits/batch-2001/orfevre.png",
+    "sourceSha256": "80e2f80bfd2634257bd85e4a5af9a5d2b1dc74e3e2d69439ddeb11f7afff11d7",
+    "reference": "public/assets/characters/race/Orfevre-Race.png",
+    "sourceSize": [
+      1312,
+      1199
+    ],
+    "crop": [
+      0,
+      20,
+      1288,
+      1199
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "gentildonna": {
+    "file": "portraits/gentildonna.png",
+    "source": "docs/art-source/portraits/batch-2001/gentildonna.png",
+    "sourceSha256": "e117347c4d3a543fa419c17e3ada40e0c86a60340da8c2d479e4537ebb41fe0b",
+    "reference": "public/assets/characters/race/Gentildonna-Race.png",
+    "sourceSize": [
+      1213,
+      1296
+    ],
+    "crop": [
+      0,
+      21,
+      1167,
+      1296
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "win_variation": {
+    "file": "portraits/win_variation.png",
+    "source": "docs/art-source/portraits/batch-2001/win_variation.png",
+    "sourceSha256": "800fb9749d2daa296871d7f184b2f535a08ab6689a295d40a18457de2ee9e336",
+    "reference": "public/assets/characters/race/WinVariation-Race.png",
+    "sourceSize": [
+      1254,
+      1254
+    ],
+    "crop": [
+      0,
+      25,
+      1236,
+      1254
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
   }
 }

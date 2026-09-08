@@ -14,7 +14,7 @@ p.add_argument('--batch', default='batch-02')
 a = p.parse_args()
 if not a.batch.startswith('batch-') or not a.batch[6:].isdigit():
     p.error('Batch must have the form batch-03')
-manifest = json.loads((ROOT / 'src/data/generated/art-manifest.json').read_text())
+manifest = json.loads((ROOT / 'src/data/generated/art-manifest.json').read_text(encoding='utf-8'))
 if not any(c['id'] == a.id for c in manifest['characters']):
     p.error('Unknown character')
 im = Image.open(a.file)
@@ -24,8 +24,8 @@ bbox = im.getchannel('A').getbbox()
 dest = ROOT / 'public/assets/portraits' / f'{a.id}.png'
 source = ROOT / 'docs/art-source/portraits' / a.batch / f'{a.id}.png'
 inventory_path = ROOT / 'src/data/manual/delivered-art.json'
-inventory = set(json.loads(inventory_path.read_text()))
-asset = str(dest.relative_to(ROOT / 'public/assets'))
+inventory = set(json.loads(inventory_path.read_text(encoding='utf-8')))
+asset = dest.relative_to(ROOT / 'public/assets').as_posix()
 if dest.exists() or source.exists() or asset in inventory:
     p.error('Existing art must be preserved')
 for path in (dest, source):
@@ -37,15 +37,15 @@ canvas = Image.new('RGBA', (256, 256))
 canvas.paste(figure, ((256 - figure.width) // 2, (256 - figure.height) // 2))
 canvas.save(dest)
 inventory.add(asset)
-inventory_path.write_text(json.dumps(sorted(inventory), indent=2) + '\n')
+inventory_path.write_text(json.dumps(sorted(inventory), indent=2) + '\n', encoding='utf-8')
 meta_path = ROOT / 'src/data/manual/generated-portraits.json'
-meta = json.loads(meta_path.read_text()) if meta_path.exists() else {}
+meta = json.loads(meta_path.read_text(encoding='utf-8')) if meta_path.exists() else {}
 meta[a.id] = {
-    'file': asset, 'source': str(source.relative_to(ROOT)),
+    'file': asset, 'source': source.relative_to(ROOT).as_posix(),
     'sourceSha256': hashlib.sha256(a.file.read_bytes()).hexdigest(),
-    'reference': json.loads((ROOT / 'src/data/manual/reference-previews.json').read_text())[a.id]['source'],
+    'reference': json.loads((ROOT / 'src/data/manual/reference-previews.json').read_text(encoding='utf-8'))[a.id]['source'],
     'sourceSize': list(im.size), 'crop': list(bbox), 'size': [256, 256],
     'status': 'independent-generated-static-portrait; not-rigged-model',
 }
-meta_path.write_text(json.dumps(meta, ensure_ascii=False, indent=2) + '\n')
+meta_path.write_text(json.dumps(meta, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
 print(a.id, 'portrait imported')

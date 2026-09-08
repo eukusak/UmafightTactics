@@ -1,0 +1,205 @@
+{
+  "batch": "batch-2001",
+  "count": 10,
+  "portraits": 145,
+  "checks": [
+    "source hash",
+    "registered runtime",
+    "race source exists",
+    "256x256 RGBA",
+    "real alpha",
+    "6px margins"
+  ],
+  "records": [
+    {
+      "id": "duramente",
+      "sourceSha256": "5df5526c1504b5bae21868d004b2f5ebbab7655242499aac996a08225bd0a148",
+      "runtimeSha256": "42dbd3a4fa65f7c7ab8b8014e31da1df9fa4a12691e803f9f0100e52c0f11e36",
+      "size": [
+        256,
+        256
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "bbox": [
+        20,
+        6,
+        240,
+        250
+      ]
+    },
+    {
+      "id": "rhein_kraft",
+      "sourceSha256": "bad70e4853edd2f8064c0ed5538ced6ee52dd3acb9a08b5fd6ed84e5d053bfa2",
+      "runtimeSha256": "beb3d520bf03e682f5e352185a1059f0b96e8001e6fe529c822f1a243f13c65a",
+      "size": [
+        256,
+        256
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "bbox": [
+        55,
+        15,
+        200,
+        250
+      ]
+    },
+    {
+      "id": "cesario",
+      "sourceSha256": "2ca20c2cfc62ce059cd127a613552aa01a10a234be3525c19c91c6c87a7e28f9",
+      "runtimeSha256": "f809bd86a206bdfd904a3de9eee12cc9d8e0a0a6bb5143702d0be0e034494279",
+      "size": [
+        256,
+        256
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "bbox": [
+        17,
+        10,
+        202,
+        250
+      ]
+    },
+    {
+      "id": "air_messiah",
+      "sourceSha256": "90e6b39d6a384e28e87ad5a82ad521c5a8d4ebd0e2102c3532c9c8993d373a32",
+      "runtimeSha256": "fe49b8c14373704f128ba4e25578d8b2ff9be430f96fb3d3ce71bc21a44b369b",
+      "size": [
+        256,
+        256
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "bbox": [
+        52,
+        11,
+        217,
+        243
+      ]
+    },
+    {
+      "id": "daring_heart",
+      "sourceSha256": "355d4d8d07540e7312f464c55045599ab6e308345a7b9966f805d845cfcf0c74",
+      "runtimeSha256": "6a8314fd31951d0e7dae357933ac86390fb798771746b18add1d49be160381c9",
+      "size": [
+        256,
+        256
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "bbox": [
+        31,
+        6,
+        221,
+        250
+      ]
+    },
+    {
+      "id": "fusaichi_pandora",
+      "sourceSha256": "362f149fde34ed4e3c042d5c36360020cae4ab1144c760deb7f19e83ea1f4924",
+      "runtimeSha256": "2ad2c293409032c7395581a3f128cf8bcfb53f8c62a59e807091699c64ed445f",
+      "size": [
+        256,
+        256
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "bbox": [
+        24,
+        6,
+        231,
+        248
+      ]
+    },
+    {
+      "id": "buena_vista",
+      "sourceSha256": "c2280efee8299a57a0c015346a0c27e2e087838e789e89848824ee52faf937af",
+      "runtimeSha256": "8dc3d2e019ec35d90e7ddd4b504183b9a794ab834a5cec0dd04e8c15139b2bcd",
+      "size": [
+        256,
+        256
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "bbox": [
+        59,
+        6,
+        221,
+        249
+      ]
+    },
+    {
+      "id": "orfevre",
+      "sourceSha256": "80e2f80bfd2634257bd85e4a5af9a5d2b1dc74e3e2d69439ddeb11f7afff11d7",
+      "runtimeSha256": "64fe66d3b719e3eb4b39e1a651d16b9a8b30e7293624d73d8d73e9be3da47daf",
+      "size": [
+        256,
+        256
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "bbox": [
+        29,
+        16,
+        237,
+        239
+      ]
+    },
+    {
+      "id": "gentildonna",
+      "sourceSha256": "e117347c4d3a543fa419c17e3ada40e0c86a60340da8c2d479e4537ebb41fe0b",
+      "runtimeSha256": "b339a4d583c3955c42f5cffdf1cac7fdc292e3e6efe36d10a337ac52c532784b",
+      "size": [
+        256,
+        256
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "bbox": [
+        46,
+        7,
+        222,
+        250
+      ]
+    },
+    {
+      "id": "win_variation",
+      "sourceSha256": "800fb9749d2daa296871d7f184b2f535a08ab6689a295d40a18457de2ee9e336",
+      "runtimeSha256": "8d4315d2ef16da7834bc8d27a110798cd94fca05ee4bd1c0daf22f28e8482c10",
+      "size": [
+        256,
+        256
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "bbox": [
+        34,
+        6,
+        228,
+        246
+      ]
+    }
+  ]
+}
