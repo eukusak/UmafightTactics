@@ -1,15 +1,20 @@
 {
-  "acceptedArt": 314,
-  "baseCommit": "928a627ce652dabe3a7e81d2c614dc266e189697",
-  "batchSize": 5,
+  "acceptedArt": 324,
+  "baseCommit": "4d04c06a21d68cf4f0473cf663ab872427c44aeb",
+  "batchSize": 10,
   "completedBatch": [
-    "daring_tact",
-    "sakura_laurel",
-    "narita_top_road",
-    "yamanin_zephyr",
-    "furioso"
+    "curren_bouquetdor",
+    "kiseki",
+    "marche_lorraine",
+    "epiphaneia",
+    "chrono_genesis",
+    "stay_gold",
+    "loves_only_you",
+    "forever_young",
+    "red_desire",
+    "gran_alegria"
   ],
-  "completedPortraits": 90,
+  "completedPortraits": 100,
   "nextPortraitIds": [
     "transcend",
     "north_flight",
@@ -55,21 +60,11 @@
     "fenomeno",
     "blast_onepiece",
     "almond_eye",
-    "lucky_lilac",
-    "gran_alegria",
-    "loves_only_you",
-    "chrono_genesis",
-    "curren_bouquetdor",
-    "stay_gold",
-    "red_desire",
-    "kiseki",
-    "forever_young",
-    "marche_lorraine",
-    "epiphaneia"
+    "lucky_lilac"
   ],
   "portraitTarget": 145,
   "remaining": {
-    "portraits": 55,
+    "portraits": 45,
     "battleSheets": 145,
     "cutins": 0
   },
@@ -99,8 +94,7 @@
       "compiled model and runtime verification"
     ]
   },
-  "workflow": "This session generates five distinct portraits, inspects and saves to GitHub, verifies, then begins the next five. Preserve the separate concurrent ten-character batches. Complete all 145 portraits before rigging one character at a time.",
-  "latestTenCharacterBatch": "batch-1001",
-  "batchSelectionNote": "Last ten missing IDs selected to avoid overlap with another active session working from the start of the queue.",
+  "workflow": "Generate ten distinct portraits, inspect and save to GitHub, verify, then begin the next ten (final remainder allowed). Complete all 145 portraits before rigging one character at a time.",
+  "latestTenCharacterBatch": "batch-1002",
   "latestFiveCharacterBatch": "batch-15"
 }

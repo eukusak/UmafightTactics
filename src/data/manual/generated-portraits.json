@@ -1699,5 +1699,215 @@
       256
     ],
     "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "curren_bouquetdor": {
+    "file": "portraits/curren_bouquetdor.png",
+    "source": "docs/art-source/portraits/batch-1002/curren_bouquetdor.png",
+    "sourceSha256": "16d39d142368fef6f6c43a9a358d533ca6e21c35623d905abf9c8881288670a1",
+    "reference": "public/assets/characters/race/CurrenBouquetdor-Race.png",
+    "sourceSize": [
+      1254,
+      1254
+    ],
+    "crop": [
+      0,
+      0,
+      1236,
+      1254
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "kiseki": {
+    "file": "portraits/kiseki.png",
+    "source": "docs/art-source/portraits/batch-1002/kiseki.png",
+    "sourceSha256": "b5a6afc062ac022c345230271dff8295d23adba65a6b81212e46f7c281e4019e",
+    "reference": "public/assets/characters/race/Kiseki-Race.png",
+    "sourceSize": [
+      1254,
+      1254
+    ],
+    "crop": [
+      51,
+      7,
+      1176,
+      1254
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "marche_lorraine": {
+    "file": "portraits/marche_lorraine.png",
+    "source": "docs/art-source/portraits/batch-1002/marche_lorraine.png",
+    "sourceSha256": "9223e1bd8d75433b5156bd94c70a6e6fed150c760e50d62eb5e70d11846c93df",
+    "reference": "public/assets/characters/race/MarcheLorraine-Race.png",
+    "sourceSize": [
+      1254,
+      1254
+    ],
+    "crop": [
+      0,
+      19,
+      1200,
+      1254
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "epiphaneia": {
+    "file": "portraits/epiphaneia.png",
+    "source": "docs/art-source/portraits/batch-1002/epiphaneia.png",
+    "sourceSha256": "08da0c135b35dd3c75a0bd9ea8d8f1b1f568160665f94c50a22bce50f6f114e0",
+    "reference": "public/assets/characters/race/Epiphaneia-Race.png",
+    "sourceSize": [
+      1254,
+      1254
+    ],
+    "crop": [
+      19,
+      7,
+      1216,
+      1254
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "chrono_genesis": {
+    "file": "portraits/chrono_genesis.png",
+    "source": "docs/art-source/portraits/batch-1002/chrono_genesis.png",
+    "sourceSha256": "8da22e7944282c75e5cdfe1abb256209642f1d263652786b67ed548c0bfe8fd2",
+    "reference": "public/assets/characters/race/ChronoGenesis-Race.png",
+    "sourceSize": [
+      1254,
+      1254
+    ],
+    "crop": [
+      96,
+      16,
+      1236,
+      1254
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "stay_gold": {
+    "file": "portraits/stay_gold.png",
+    "source": "docs/art-source/portraits/batch-1002/stay_gold.png",
+    "sourceSha256": "678e50c577ece2c8872a48feb9f7b26480275c6e786b00d5797cebe2181209dc",
+    "reference": "public/assets/characters/race/StayGold-Race.png",
+    "sourceSize": [
+      1254,
+      1254
+    ],
+    "crop": [
+      0,
+      14,
+      1168,
+      1254
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "loves_only_you": {
+    "file": "portraits/loves_only_you.png",
+    "source": "docs/art-source/portraits/batch-1002/loves_only_you.png",
+    "sourceSha256": "b086c2a7e8839b38e2237f986052fc92f354d2649fd89b8fcaf2edde844f9f65",
+    "reference": "public/assets/characters/race/LovesOnlyYou-Race.png",
+    "sourceSize": [
+      1254,
+      1254
+    ],
+    "crop": [
+      37,
+      10,
+      1222,
+      1254
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "forever_young": {
+    "file": "portraits/forever_young.png",
+    "source": "docs/art-source/portraits/batch-1002/forever_young.png",
+    "sourceSha256": "2cb4f482555b77d5f5c04417fa23b7fb0d5163a696375e15e8fec7ea58b6ce7d",
+    "reference": "public/assets/characters/race/ForeverYoung-Race.png",
+    "sourceSize": [
+      1254,
+      1254
+    ],
+    "crop": [
+      37,
+      12,
+      1186,
+      1254
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "red_desire": {
+    "file": "portraits/red_desire.png",
+    "source": "docs/art-source/portraits/batch-1002/red_desire.png",
+    "sourceSha256": "0f3b415dd3c7e9f1d53a0730ea6658192e70ea9859b95500172e665bc82765d8",
+    "reference": "public/assets/characters/race/RedDesire-Race.png",
+    "sourceSize": [
+      1254,
+      1254
+    ],
+    "crop": [
+      0,
+      21,
+      1196,
+      1254
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "gran_alegria": {
+    "file": "portraits/gran_alegria.png",
+    "source": "docs/art-source/portraits/batch-1002/gran_alegria.png",
+    "sourceSha256": "6902af4c02cd7cc2d651d2633866a2a8a6b031f56ca0014fb0176596be38f5b8",
+    "reference": "public/assets/characters/race/GranAlegria-Race.png",
+    "sourceSize": [
+      1254,
+      1254
+    ],
+    "crop": [
+      105,
+      33,
+      1138,
+      1254
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
   }
 }
