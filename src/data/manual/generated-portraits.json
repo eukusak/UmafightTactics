@@ -124,5 +124,110 @@
       256
     ],
     "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "hishi_amazon": {
+    "file": "portraits/hishi_amazon.png",
+    "source": "docs/art-source/portraits/batch-03/hishi_amazon.png",
+    "sourceSha256": "a910cbb7cdf986cc018ca85b4828a7feafb7f14ae01bc9274a90e6fe33653085",
+    "reference": "public/assets/characters/race/HishiAmazon-Race.png",
+    "sourceSize": [
+      1223,
+      1286
+    ],
+    "crop": [
+      0,
+      10,
+      1201,
+      1286
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "mejiro_mcqueen": {
+    "file": "portraits/mejiro_mcqueen.png",
+    "source": "docs/art-source/portraits/batch-03/mejiro_mcqueen.png",
+    "sourceSha256": "1e4e9af548fd83869299956e372d1a7d7c0c9f6b3cd4f2f378461be31e721d34",
+    "reference": "public/assets/characters/race/MejiroMcQueen-Race.png",
+    "sourceSize": [
+      1141,
+      1379
+    ],
+    "crop": [
+      27,
+      0,
+      1126,
+      1379
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "el_condor_pasa": {
+    "file": "portraits/el_condor_pasa.png",
+    "source": "docs/art-source/portraits/batch-03/el_condor_pasa.png",
+    "sourceSha256": "fcfcbcb0bbe40990368186fa411f1f2d5e9dc275a03597a1af2f11393e762d48",
+    "reference": "public/assets/characters/race/ElCondorPasa-Race.png",
+    "sourceSize": [
+      1145,
+      1374
+    ],
+    "crop": [
+      43,
+      11,
+      1145,
+      1360
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "narita_brian": {
+    "file": "portraits/narita_brian.png",
+    "source": "docs/art-source/portraits/batch-03/narita_brian.png",
+    "sourceSha256": "d9ef37ae6941ce39aa8c33c713504dbd7f272bbf868328c2ec9cc19c41f524c9",
+    "reference": "public/assets/characters/race/NaritaBrian-Race.png",
+    "sourceSize": [
+      1145,
+      1374
+    ],
+    "crop": [
+      17,
+      0,
+      1145,
+      1374
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "symboli_rudolf": {
+    "file": "portraits/symboli_rudolf.png",
+    "source": "docs/art-source/portraits/batch-03/symboli_rudolf.png",
+    "sourceSha256": "8b0a150b7b67b35cc738bba66f74c08e70c67ad89d0f2f3e646615ddc126ea2b",
+    "reference": "public/assets/characters/race/SymboliRudolf-Race.png",
+    "sourceSize": [
+      1199,
+      1312
+    ],
+    "crop": [
+      0,
+      0,
+      1199,
+      1312
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
   }
 }

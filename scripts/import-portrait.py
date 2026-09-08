@@ -10,7 +10,10 @@ ROOT = Path(__file__).resolve().parents[1]
 p = argparse.ArgumentParser(description=__doc__)
 p.add_argument('id')
 p.add_argument('file', type=Path)
+p.add_argument('--batch', default='batch-02')
 a = p.parse_args()
+if not a.batch.startswith('batch-') or not a.batch[6:].isdigit():
+    p.error('Batch must have the form batch-03')
 manifest = json.loads((ROOT / 'src/data/generated/art-manifest.json').read_text())
 if not any(c['id'] == a.id for c in manifest['characters']):
     p.error('Unknown character')
@@ -19,7 +22,7 @@ if im.mode != 'RGBA' or im.getchannel('A').getextrema()[0] != 0 or im.getchannel
     p.error('True transparent RGBA with an opaque subject required')
 bbox = im.getchannel('A').getbbox()
 dest = ROOT / 'public/assets/portraits' / f'{a.id}.png'
-source = ROOT / 'docs/art-source/portraits/batch-02' / f'{a.id}.png'
+source = ROOT / 'docs/art-source/portraits' / a.batch / f'{a.id}.png'
 inventory_path = ROOT / 'src/data/manual/delivered-art.json'
 inventory = set(json.loads(inventory_path.read_text()))
 asset = str(dest.relative_to(ROOT / 'public/assets'))
@@ -40,7 +43,7 @@ meta = json.loads(meta_path.read_text()) if meta_path.exists() else {}
 meta[a.id] = {
     'file': asset, 'source': str(source.relative_to(ROOT)),
     'sourceSha256': hashlib.sha256(a.file.read_bytes()).hexdigest(),
-    'reference': f'public/assets/characters/reference_previews/{a.id}.png',
+    'reference': json.loads((ROOT / 'src/data/manual/reference-previews.json').read_text())[a.id]['source'],
     'sourceSize': list(im.size), 'crop': list(bbox), 'size': [256, 256],
     'status': 'independent-generated-static-portrait; not-rigged-model',
 }
