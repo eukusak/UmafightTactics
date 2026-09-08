@@ -12,6 +12,7 @@ export type SaveGame = {
 };
 
 export function serializeMatch(director: RoundDirector): SaveGame {
+  if (director.hasPendingSettlement) throw new Error('An unsettled battle is not a save checkpoint');
   director.syncRng();
   return {
     version: 1,

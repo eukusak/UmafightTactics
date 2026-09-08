@@ -126,3 +126,36 @@ html, body, #root { font-family: "Noto Sans KR Variable", "Malgun Gothic", syste
 .prep-clock strong { color:#ffe4a6; font-size:24px; font-variant-numeric:tabular-nums; min-width:42px; }
 .prep-clock button { padding:5px 9px; }
 .prep-clock.urgent strong { color:#ffaaa1; }
+
+/* Combat information stays on the arena rim, below the shared foot plane. */
+.battle-clock { position:absolute; top:24px; right:28px; z-index:800; width:205px; padding:12px 16px; border:1px solid #d9c89877; border-radius:12px; background:linear-gradient(140deg,#183847ed,#0d2438ed); box-shadow:0 8px 24px #07182940; }
+.battle-clock>span { color:#bfe1d7; font-size:14px; }
+.battle-clock>strong { float:right; font-size:28px; color:#ffe4a6; font-variant-numeric:tabular-nums; line-height:1; }
+.battle-clock small { font-size:12px; margin-left:5px; color:#bfe1d7; }
+.battle-clock.overtime { border-color:#ff9e85; }
+.battle-clock.overtime>strong { color:#ffaaa1; }
+.battle-survivors { display:flex; justify-content:space-between; margin-top:18px; font-size:12px; color:#c4ddd9; }
+.team-vitals { display:grid; grid-template-columns:1fr; gap:4px; margin-top:7px; }
+.team-vitals i { height:3px; background:#8ff7bb; transition:width .12s linear; }
+.team-vitals i+i { background:#ff8887; }
+.battle-damage-panel { position:absolute; left:32px; right:32px; bottom:18px; z-index:800; padding:14px 20px; border:1px solid #c6ddc633; border-radius:12px; background:linear-gradient(110deg,#102d35ed,#10253de0); pointer-events:none; box-shadow:0 6px 22px #07182930; }
+.battle-damage-heading { display:flex; align-items:center; justify-content:space-between; margin-bottom:10px; color:#f3e5c0; font-size:14px; }
+.battle-damage-heading span { color:#a3c6c2; font-size:12px; }
+.battle-damage-rows { display:grid; grid-template-columns:repeat(4,1fr); gap:22px; }
+.battle-damage-row { display:flex; align-items:center; gap:10px; min-width:0; }
+.battle-damage-row>div { flex:1; min-width:0; }
+.battle-damage-row span { display:block; font-size:12px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+.battle-damage-row b { font-size:15px; color:#ffe3a0; font-variant-numeric:tabular-nums; }
+.battle-damage-row.fallen .portrait-art { filter:grayscale(.8); opacity:.6; }
+.damage-meter { height:4px; margin-top:7px; background:#071926; border-radius:3px; overflow:hidden; }
+.damage-meter i { display:block; height:100%; background:linear-gradient(90deg,#58b8a0,#e4dc9b); transition:width .15s linear; }
+.leader-row.inspecting { outline:2px solid #98e0d3; background:#32665977; }
+.leader-row:focus-visible { outline:2px solid #ffe3a0; }
+.scout-board { display:grid; grid-template-columns:repeat(7,1fr); gap:3px; margin:14px 0 10px; padding:7px; border:1px solid #c5dfce30; background:#061c2c99; border-radius:9px; }
+.scout-cell { display:grid; place-items:center; height:30px; min-width:0; border-radius:5px; background:#4d797733; overflow:hidden; }
+.scout-roster>div { display:flex; align-items:center; gap:8px; padding:5px 0; border-top:1px solid #c5dfce15; font-size:12px; }
+.scout-roster span { flex:1; }
+.scout-roster b { color:#eed491; }
+.scout-roster small { color:#abc7c6; }
+/* The scouting grid uses the sidebar space beside the shop as well. */
+.hud-right { height:920px; }

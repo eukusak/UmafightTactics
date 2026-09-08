@@ -129,6 +129,11 @@ export function SettingsScreen(): JSX.Element {
           <span>피해량 표시</span>
         </label>
         <label style={{ display: 'flex', gap: 8, alignItems: 'center', marginBottom: 18 }}>
+          <input type="checkbox" checked={settings.autoContinue}
+            onChange={(e) => setSettings({ autoContinue: e.target.checked })} />
+          <span>전투 결과 확인 후 5초 뒤 자동 진행</span>
+        </label>
+        <label style={{ display: 'flex', gap: 8, alignItems: 'center', marginBottom: 18 }}>
           <input type="checkbox" checked={devMode} onChange={(e) => setDevMode(e.target.checked)} />
           <span>개발자 패널</span>
         </label>

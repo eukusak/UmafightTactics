@@ -229,6 +229,12 @@ export function runAiPrep(state: MatchState, player: PlayerState, rng: Rng): voi
   }
 
   sellSurplus(state, player);
+  finalizeAiFormation(player);
+}
+
+/** Re-evaluate a late draft reward without running a second economy turn. */
+export function finalizeAiFormation(player: PlayerState): void {
+  if (player.aiProfile === null) return;
   assignItems(player);
   applyPlacement(player, planPlacement(player, true));
 }

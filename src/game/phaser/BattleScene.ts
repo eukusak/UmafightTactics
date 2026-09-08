@@ -5,6 +5,7 @@ import { getUnitDef } from '../engine/roster';
 import { costColor, initialOf } from './fallback-art';
 import { assetUrl, portraitUrl, standeeUrl, animationFrame, type AnimationName } from '../ui/art';
 import { movingPoint } from '../ui/board-projection';
+import { orientSnapshot, samplePosition, effectProgress, frameAt, attackExtension } from '../ui/battle-playback';
 import { STATUS_PRESENTATION } from '../ui/status-presentation';
 
 type Snapshot = BattleFrame['units'][number];
@@ -22,6 +23,9 @@ type Actor = {
   fullBody: boolean;
   facing: number;
   attackDuration: number;
+  attackReleaseAt: number;
+  hitAt: number;
+  hpTrail: Phaser.GameObjects.Rectangle;
   bodyScaleX: number;
   bodyScaleY: number;
   mesh: Phaser.GameObjects.Rope | null;
@@ -40,9 +44,11 @@ export class BattleScene extends Phaser.Scene {
   private showNumbers: boolean;
   private readySent = false;
   private frameDelta = 0;
+  private mirrored = false;
+  private effects: Array<{ start: number; duration: number; object: Phaser.GameObjects.GameObject; update: (progress: number) => void }> = [];
   private projectiles: Array<{ image: Phaser.GameObjects.Arc; source: string; target: string; start: number; end: number; x: number; y: number }> = [];
 
-  constructor(frames: BattleFrame[] = [], showNumbers = true, private onReady: () => void = () => {}) {
+  constructor(frames: BattleFrame[] = [], showNumbers = true, private onReady: () => void = () => {}, private onTime: (time: number) => void = () => {}, private humanId = 'p1') {
     super({ key: 'BattleScene' });
     this.frames = frames;
     this.showNumbers = showNumbers;
@@ -73,12 +79,16 @@ export class BattleScene extends Phaser.Scene {
     this.tweens.timeScale = this.speed;
   }
 
-  playBattle(frames: BattleFrame[], speed = 1): void {
+  playBattle(frames: BattleFrame[], speed = 1, time = 0): void {
     this.frames = frames;
     this.setSpeed(speed);
-    this.frameIndex = 0;
+    this.frameIndex = frameAt(frames, time);
     this.eventIndex = -1;
-    this.playbackTime = 0;
+    this.playbackTime = time;
+    this.readySent = false;
+    this.mirrored = frames[0]?.units.some((u) => u.id.startsWith(`${this.humanId}#`) && u.team === 'B') ?? false;
+    this.effects.forEach((e) => e.object.destroy()); this.effects = [];
+    this.projectiles.forEach((p) => p.image.destroy()); this.projectiles = [];
     this.started = true;
     for (const a of this.actors.values()) a.container.destroy();
     this.actors.clear();
@@ -95,14 +105,14 @@ export class BattleScene extends Phaser.Scene {
 
   override update(_time: number, delta: number): void {
     if (!this.ready || !this.started || !this.frames.length) return;
-    this.playbackTime += delta * this.speed / 1000;
-    this.frameDelta = delta * this.speed / 1000;
+    this.frameDelta = Math.min(delta, 100) * this.speed / 1000;
+    this.playbackTime = Math.min(this.frames[this.frames.length - 1].t + .7, this.playbackTime + this.frameDelta);
     while (this.frameIndex < this.frames.length - 1 && this.frames[this.frameIndex + 1].t <= this.playbackTime) this.frameIndex += 1;
     const frame = this.frames[this.frameIndex];
     // Create actors before replaying events so the first tick has a visual target.
-    for (const u of frame.units) if (!this.actors.has(u.id)) this.actors.set(u.id, this.createActor(u));
+    for (const u of frame.units) if (!this.actors.has(u.id)) this.actors.set(u.id, this.createActor(orientSnapshot(u, this.mirrored)));
     for (const u of frame.units) {
-      const p = this.position(u);
+      const p = this.position(orientSnapshot(u, this.mirrored));
       this.actors.get(u.id)!.container.setPosition(p.x, p.y);
     }
     // Consume every intervening event once, including at 10x playback.
@@ -113,12 +123,21 @@ export class BattleScene extends Phaser.Scene {
     const next = this.frames[Math.min(this.frameIndex + 1, this.frames.length - 1)];
     const mix = next.t > frame.t ? Phaser.Math.Clamp((this.playbackTime - frame.t) / (next.t - frame.t), 0, 1) : 0;
     const nextById = new Map(next.units.map((u) => [u.id, u]));
-    for (const u of frame.units) this.renderActor(u, nextById.get(u.id), mix);
+    for (const u of frame.units) {
+      const nextUnit = nextById.get(u.id);
+      this.renderActor(orientSnapshot(u, this.mirrored), nextUnit ? orientSnapshot(nextUnit, this.mirrored) : undefined, mix);
+    }
+    this.effects = this.effects.filter((effect) => {
+      const progress = effectProgress(this.playbackTime, effect.start, effect.duration);
+      if (progress >= 1) { effect.object.destroy(); return false; }
+      effect.update(progress); return true;
+    });
+    this.onTime(this.playbackTime);
     this.projectiles = this.projectiles.filter((projectile) => {
       const target = this.actors.get(projectile.target);
       if (!target || this.playbackTime >= projectile.end) { projectile.image.destroy(); return false; }
       const t = Phaser.Math.Clamp((this.playbackTime - projectile.start) / Math.max(.001, projectile.end - projectile.start), 0, 1);
-      projectile.image.setPosition(Phaser.Math.Linear(projectile.x, target.container.x, t), Phaser.Math.Linear(projectile.y, target.container.y - 38, t) - Math.sin(t * Math.PI) * 12);
+      projectile.image.setPosition(Phaser.Math.Linear(projectile.x, target.container.x, t), Phaser.Math.Linear(projectile.y, target.container.y - 38 * target.container.scaleX, t) - Math.sin(t * Math.PI) * 12);
       return true;
     });
     if (!this.readySent) { this.readySent = true; this.onReady(); }
@@ -160,26 +179,31 @@ export class BattleScene extends Phaser.Scene {
     container.add(this.add.text(0, 24, def.nameKo, { fontFamily: 'Noto Sans KR Variable, sans-serif', fontSize: '12px', color: '#fff5dc', stroke: '#0a1727', strokeThickness: 4 }).setOrigin(.5));
     container.add(this.add.text(0, fullBody && !sheet ? -130 : -83, '★'.repeat(u.star), { fontFamily: 'Noto Sans KR Variable, sans-serif', fontSize: '13px', color: '#ffdc84', stroke: '#17362a', strokeThickness: 3 }).setOrigin(.5));
     container.add(this.add.rectangle(0, 13, 68, 8, 0x071926));
+    const hpTrail = this.add.rectangle(-33, 11, 66 * u.hp / Math.max(1, u.maxHp), 5, 0xffce8a).setOrigin(0, .5);
     const hp = this.add.rectangle(-33, 11, 66, 5, u.team === 'B' ? 0xff8887 : 0x8ff7bb).setOrigin(0, .5);
     const mana = this.add.rectangle(-33, 17, 66, 3, 0x7bdcfa).setOrigin(0, .5);
     const shield = this.add.rectangle(-33, 7, 66, 2, 0xe0faff).setOrigin(0, .5);
-    container.add([hp, mana, shield]);
+    hp.width = 66 * u.hp / Math.max(1, u.maxHp);
+    mana.width = 66 * u.mana / Math.max(1, u.maxMana);
+    shield.width = Math.min(66, 66 * u.shield / Math.max(1, u.maxHp));
+    container.add([hpTrail, hp, mana, shield]);
     const statuses = this.add.container(0, fullBody && !sheet ? -155 : -108);
     container.add(statuses);
-    return { container, body, hp, mana, shield, statuses, statusKey: '', action: 'idle', actionAt: 0, sheet, fullBody, mesh, facing: u.team === 'B' ? -1 : 1, attackDuration: .4, bodyScaleX: body.scaleX, bodyScaleY: body.scaleY };
+    return { container, body, hp, hpTrail, hitAt: -Infinity, mana, shield, statuses, statusKey: '', action: 'idle', actionAt: 0, sheet, fullBody, mesh, facing: u.team === 'B' ? -1 : 1, attackDuration: .4, attackReleaseAt: 0, bodyScaleX: body.scaleX, bodyScaleY: body.scaleY };
   }
 
   private renderActor(u: Snapshot, next: Snapshot | undefined, mix: number): void {
     const a = this.actors.get(u.id)!;
     const p = this.position(u);const to = next ? this.position(next) : p;
-    a.container.setPosition(Phaser.Math.Linear(p.x, to.x, mix), Phaser.Math.Linear(p.y, to.y, mix)).setDepth(100 + p.y).setScale(p.scale);
-    const elapsed = this.playbackTime - a.actionAt;
+    const sampled = samplePosition(u, next, mix);
+    a.container.setPosition(sampled.x, sampled.y).setDepth(100 + sampled.y).setScale(sampled.scale);
+    let elapsed = this.playbackTime - a.actionAt;
     let action = a.action;
     if (!u.alive) action = 'ko';
     else if (action === 'ko' || (action === 'hit' && elapsed > .33) || (action === 'basic_attack' && elapsed > a.attackDuration) || (action === 'skill_cast' && elapsed > .67)) {
       action = u.fromQ !== null ? 'run' : 'idle';
     } else if (action === 'idle' || action === 'run') action = u.fromQ !== null ? 'run' : 'idle';
-    if (action !== a.action) { a.action = action; a.actionAt = this.playbackTime; }
+    if (action !== a.action) { a.action = action; a.actionAt = this.playbackTime; elapsed = 0; }
     if (a.sheet) {
       if (u.unitDefId.startsWith('pve_')) {
         const clip = action === 'ko' ? { start: 30, count: 6, fps: 10 } : action === 'hit' ? { start: 20, count: 4, fps: 12 } : action === 'basic_attack' || action === 'skill_cast' ? { start: 10, count: 8, fps: 14 } : { start: 0, count: 6, fps: 8 };
@@ -193,9 +217,9 @@ export class BattleScene extends Phaser.Scene {
     a.body.setFlipX(a.fullBody && a.facing < 0);
     const idle = Math.sin(this.playbackTime * 3 + u.id.length);
     const run = Math.sin(this.playbackTime * 15);
-    const attackT = Phaser.Math.Clamp(elapsed / a.attackDuration, 0, 1);
-    const lunge = action === 'basic_attack' ? Math.sin(attackT * Math.PI) : 0;
-    const recoil = action === 'hit' ? Math.exp(-elapsed * 12) : 0;
+    const lunge = action === 'basic_attack' ? attackExtension(this.playbackTime, a.actionAt, a.attackReleaseAt) : 0;
+    const hitAge = this.playbackTime - a.hitAt;
+    const recoil = u.alive && hitAge < .33 ? Math.exp(-hitAge * 12) : 0;
     const skill = action === 'skill_cast' ? Math.sin(Math.min(1, elapsed / .67) * Math.PI) : 0;
     const dash = getUnitDef(u.unitDefId).skill.template === 'DASH_LINE';
     a.body.x = a.facing * (lunge * 9 - recoil * 5 + (dash ? skill * 11 : 0));
@@ -205,6 +229,7 @@ export class BattleScene extends Phaser.Scene {
     a.container.alpha = u.alive ? 1 : Math.max(0, 1 - (this.playbackTime - a.actionAt) / .65);
     const settle = 1 - Math.exp(-this.frameDelta * 22);
     a.hp.width = Phaser.Math.Linear(a.hp.width, 66 * Phaser.Math.Clamp(u.hp / Math.max(1, u.maxHp), 0, 1), settle);
+    a.hpTrail.width = Math.max(a.hp.width, Phaser.Math.Linear(a.hpTrail.width, a.hp.width, 1 - Math.exp(-this.frameDelta * 5)));
     a.mana.width = Phaser.Math.Linear(a.mana.width, 66 * Phaser.Math.Clamp(u.mana / Math.max(1, u.maxMana), 0, 1), settle);
     a.shield.width = Math.min(66, 66 * u.shield / Math.max(1, u.maxHp));
     const active = u.alive ? [...new Set(u.statuses)].sort() : [];
@@ -225,7 +250,7 @@ export class BattleScene extends Phaser.Scene {
         }
       });
     }
-    if (u.statuses.includes('STUN')) a.body.setTint(0xc8a4ff); else a.body.clearTint();
+    if (u.statuses.includes('STUN')) a.body.setTint(0xc8a4ff); else if (recoil > .35) a.body.setTint(0xffd5c4); else a.body.clearTint();
     if (a.mesh) {
       a.mesh.setPosition(a.body.x, a.body.y).setScale(a.body.scaleX, a.body.scaleY).setRotation(a.body.rotation).setFlipX(a.body.flipX);
       a.mesh.points.forEach((point, i) => {
@@ -234,9 +259,14 @@ export class BattleScene extends Phaser.Scene {
         point.x = weight * weight * (idle * 4 + (action === 'run' ? run * 12 : 0) + a.facing * (lunge * 16 - recoil * 13 + skill * 15));
         point.y = y;
       });
-      a.mesh.setColors(u.statuses.includes('STUN') ? 0xc8a4ff : 0xffffff).setDirty();
+      a.mesh.setColors(u.statuses.includes('STUN') ? 0xc8a4ff : recoil > .35 ? 0xffd5c4 : 0xffffff).setDirty();
     }
 
+  }
+
+  private track(object: Phaser.GameObjects.GameObject, start: number, duration: number, update: (progress: number) => void): void {
+    if (this.playbackTime >= start + duration) { object.destroy(); return; }
+    this.effects.push({ object, start, duration, update });
   }
 
   private setAction(id: string, action: AnimationName, t: number): Actor | undefined {
@@ -250,38 +280,46 @@ export class BattleScene extends Phaser.Scene {
       const actor = this.setAction(event.source, 'basic_attack', event.t);
       const target = this.actors.get(event.target);
       if (actor) {
-        actor.attackDuration = Math.max(.1, event.impactAt - event.t + .12);
+        actor.attackReleaseAt = event.releaseAt;
+        actor.attackDuration = Math.max(.1, event.releaseAt - event.t + .18);
         if (target) actor.facing = target.container.x >= actor.container.x ? 1 : -1;
       }
     } else if (event.type === 'PROJECTILE') {
       const actor = this.actors.get(event.source);
-      if (!actor) return;
+      if (!actor || this.playbackTime >= event.impactAt) return;
+      const sourceFrame = this.frames[this.eventIndex].units.find((u) => u.id === event.source);
+      const sourcePoint = sourceFrame ? this.position(orientSnapshot(sourceFrame, this.mirrored)) : actor.container;
       const image = this.add.circle(actor.container.x, actor.container.y - 38, 5, 0xffe2a0).setStrokeStyle(2, 0xffffff, .8).setDepth(800).setBlendMode(Phaser.BlendModes.ADD);
-      this.projectiles.push({ image, source: event.source, target: event.target, start: event.t, end: event.impactAt, x: actor.container.x, y: actor.container.y - 38 });
+      this.projectiles.push({ image, source: event.source, target: event.target, start: event.t, end: event.impactAt, x: sourcePoint.x, y: sourcePoint.y - 38 * actor.container.scaleX });
     } else if (event.type === 'DAMAGE') {
-      const actor = this.setAction(event.target, 'hit', event.t);
+      const actor = this.actors.get(event.target);
       if (!actor) return;
+      actor.hitAt = event.t;
+      if (actor.action === 'idle' || actor.action === 'run' || actor.action === 'hit') this.setAction(event.target, 'hit', event.t);
+      if (this.playbackTime - event.t >= .6) return;
       const ring = this.add.circle(actor.container.x, actor.container.y - 35, 9, event.isSkill ? 0xc7b4ff : 0xffedb5, .65).setDepth(801);
-      this.tweens.add({ targets: ring, scale: 2.8, alpha: 0, duration: 180, onComplete: () => ring.destroy() });
+      this.track(ring, event.t, .18, (t) => ring.setPosition(actor.container.x, actor.container.y - 35 * actor.container.scaleX).setScale((1 + t * 1.8) * actor.container.scaleX).setAlpha(1 - t));
       if (this.showNumbers && (event.damage > 0 || event.absorbed > 0)) {
         const critical = this.frames[this.eventIndex].events.some((e) => e.type === 'ATTACK' && e.source === event.source && e.target === event.target && e.crit);
         const label = this.add.text(actor.container.x, actor.container.y - 78, event.damage > 0 ? `${critical ? '✦ ' : ''}${Math.round(event.damage)}` : '방어', { fontFamily: 'Noto Sans KR Variable, sans-serif', fontSize: critical ? '26px' : '20px', color: critical ? '#ffdc80' : event.isSkill ? '#dac7ff' : '#ffffff', stroke: '#182238', strokeThickness: 4 }).setOrigin(.5).setDepth(900);
-        this.tweens.add({ targets: label, y: label.y - 36, alpha: 0, duration: 600, onComplete: () => label.destroy() });
+        const x = label.x, y = label.y;
+        this.track(label, event.t, .6, (t) => label.setPosition(x, y - t * 36).setAlpha(1 - t));
       }
     } else if (event.type === 'CAST') {
       const actor = this.setAction(event.source, 'skill_cast', event.t);
       const unit = this.frames[this.eventIndex].units.find((u) => u.id === event.source);
-      if (!actor || !unit) return;
+      if (!actor || !unit || this.playbackTime - event.t >= .85) return;
       const def = getUnitDef(unit.unitDefId);
       if (this.textures.exists(def.skill.vfxKey)) {
         const target = event.target ? this.actors.get(event.target) : undefined;
         const centeredOnCaster = ['DASH_LINE', 'AURA', 'SHIELD_WALL', 'SUMMON', 'REVIVE'].includes(def.skill.template);
         const anchor = !centeredOnCaster && target ? target : actor;
         const effect = this.add.image(anchor.container.x, anchor.container.y - 20, def.skill.vfxKey, 0).setDepth(820).setScale(anchor.container.scaleX).setBlendMode(Phaser.BlendModes.ADD);
-        this.tweens.addCounter({ from: 0, to: 9, duration: 600, onUpdate: (tween) => effect.setFrame(Math.floor(tween.getValue() ?? 0)), onComplete: () => effect.destroy() });
+        this.track(effect, event.t, .6, (t) => effect.setFrame(Math.min(9, Math.floor(t * 10))).setPosition(anchor.container.x, anchor.container.y - 20 * anchor.container.scaleX).setScale(anchor.container.scaleX));
       }
       const label = this.add.text(actor.container.x, actor.container.y - 98, def.skill.displayName, { fontFamily: 'Noto Sans KR Variable, sans-serif', fontSize: '14px', color: '#ffdd8e', backgroundColor: '#182b43', padding: { x: 8, y: 5 } }).setOrigin(.5).setDepth(910);
-      this.tweens.add({ targets: label, y: label.y - 16, alpha: 0, delay: 500, duration: 350, onComplete: () => label.destroy() });
+      const x = label.x, y = label.y;
+      this.track(label, event.t, .85, (t) => label.setPosition(x, y - t * 16).setAlpha(Math.min(1, (1 - t) * 3)));
     } else if (event.type === 'END') {
       for (const u of this.frames[this.eventIndex].units) {
         if (u.alive && u.team === event.winner) this.setAction(u.id, 'victory', event.t);
@@ -290,7 +328,7 @@ export class BattleScene extends Phaser.Scene {
     else if (event.type === 'REVIVE') this.setAction(event.unit, 'idle', event.t);
     else if (event.type === 'OVERTIME') {
       const text = this.add.text(660, 90, 'OVERTIME', { fontFamily: 'Noto Sans KR Variable, sans-serif', fontSize: '32px', color: '#ffe6ae', stroke: '#96372a', strokeThickness: 5 }).setOrigin(.5).setDepth(950);
-      this.tweens.add({ targets: text, alpha: 0, delay: 1200, duration: 500, onComplete: () => text.destroy() });
+      this.track(text, event.t, 1.7, (t) => text.setAlpha(Math.min(1, (1 - t) * 3)));
     }
   }
 }

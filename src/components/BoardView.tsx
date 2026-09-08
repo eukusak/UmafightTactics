@@ -82,6 +82,7 @@ export function PrepBoard({ onUnitContext }: { onUnitContext: (e: React.MouseEve
 /** Phaser-hosted playback of the recorded battle frames. */
 export function BattleBoard({ onFinished, onReady }: { onFinished: () => void; onReady: () => void }): JSX.Element {
   const frames = useGameStore((s) => s.battleFrames);
+  const complete = useGameStore((s) => s.battleComplete);
   const speed = useGameStore((s) => s.settings.battleSpeed);
   const hostRef = useRef<HTMLDivElement>(null);
   const gameRef = useRef<Phaser.Game | null>(null);
@@ -91,7 +92,10 @@ export function BattleBoard({ onFinished, onReady }: { onFinished: () => void; o
   useEffect(() => {
     if (!hostRef.current || gameRef.current) return;
     const state = useGameStore.getState();
-    const scene = new BattleScene(frames ?? [], state.settings.showDamageNumbers, onReady);
+    const scene = new BattleScene(frames ?? [], state.settings.showDamageNumbers, onReady, (time) => {
+      const store = useGameStore.getState();
+      if (Math.abs(time - store.battleTime) >= .1) store.setBattleTime(time);
+    }, state.human()?.id ?? 'p1');
     sceneRef.current = scene;
     gameRef.current = new Phaser.Game({
       type: Phaser.AUTO,
@@ -118,12 +122,12 @@ export function BattleBoard({ onFinished, onReady }: { onFinished: () => void; o
     if (!scene || !frames) return;
     doneRef.current = false;
     // The scene queues this itself when Phaser has not finished booting.
-    scene.playBattle(frames, useGameStore.getState().settings.battleSpeed);
+    scene.playBattle(frames, useGameStore.getState().settings.battleSpeed, useGameStore.getState().battleTime);
   }, [frames]);
 
   useEffect(() => {
-    sceneRef.current?.setSpeed(speed);
-  }, [speed]);
+    sceneRef.current?.setSpeed(useGameStore.getState().battleComplete ? 0 : speed);
+  }, [speed, complete]);
 
   // Poll for playback completion; the scene owns the clock.
   useEffect(() => {

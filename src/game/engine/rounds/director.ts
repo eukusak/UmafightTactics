@@ -13,7 +13,7 @@ import { createPool, returnInstance } from '../pool';
 import { emptyShop, rollShop, applyCombines, teamSizeLimit } from '../shop';
 import { grantRoundXp, resetRoundEconomy, roundIncome, reducePlayerDamage } from '../economy';
 import { addItemToStorage, resolveTrickGloves } from '../items/inventory';
-import { runAiPrep, ensureInitialBoard } from '../ai';
+import { runAiPrep, ensureInitialBoard, finalizeAiFormation } from '../ai';
 import { AI_PROFILE_IDS } from '../ai/profiles';
 import { BattleEngine, simulateBattle, type BattleFrame, type BattleSideInput } from '../battle/engine';
 import { PVE_UNIT_IDS } from '../battle/pve-units';
@@ -104,6 +104,16 @@ export class RoundDirector {
   lastHumanFrames: BattleFrame[] | null = null;
   /** Whether the human's fight was against PvE, for the battle banner. */
   lastHumanBattleWasPve = false;
+  private pendingSettlement: (() => RoundResolution) | null = null;
+
+  get hasPendingSettlement(): boolean { return this.pendingSettlement !== null; }
+
+  /** Commit rewards and standings once the recorded fight has finished. */
+  settleRound(): RoundResolution | null {
+    const settle = this.pendingSettlement;
+    this.pendingSettlement = null;
+    return settle ? settle() : this.state.lastResolution;
+  }
 
   constructor(readonly state: MatchState) {
     this.rngs = new RngRegistry(state.seed);
@@ -227,13 +237,15 @@ export class RoundDirector {
     const result = pickDraftOption(s, getPlayer(s, playerId), optionIndex);
     if (!result.ok) return false;
     this.resolveAiDraftPicks();
+    if (!s.draft) for (const player of livingPlayers(s)) finalizeAiFormation(player);
     this.syncRng();
     return true;
   }
 
   // ----------------------------------------------------------------- battle
   /** Resolves the whole round: fights, damage, elimination, income. */
-  resolveRound(): RoundResolution {
+  resolveRound(deferSettlement = false): RoundResolution {
+    if (this.pendingSettlement) throw new Error('The previous battle has not settled');
     const s = this.state;
     s.phase = 'BATTLE';
     this.lastHumanFrames = null;
@@ -250,56 +262,66 @@ export class RoundDirector {
     const damage: Record<string, number> = {};
     const pvpWinners = new Set<string>();
 
+    const beforeStreaks = new Map(s.players.map((p) => [p.id, p.streak]));
     if (kind === 'PVE') {
       this.resolvePve(outcomes, damage);
     } else {
       this.resolvePvp(outcomes, damage, pvpWinners);
     }
 
-    // Apply damage and update streaks.
-    const roundKey = absoluteRound(s.stage, s.round);
-    for (const p of s.players) {
-      if (!isAlive(p)) continue;
-      const dmg = damage[p.id] ?? 0;
-      if (dmg > 0) {
-        p.hp = Math.max(0, p.hp - dmg);
-        p.hpChangedAtRound = roundKey;
-      }
-    }
-
-    // Eliminations, lowest HP resolved last so placements are stable.
-    s.phase = 'ELIMINATION';
-    const eliminated: string[] = [];
-    // Not-yet-eliminated players whose HP has just run out. `isAlive` already
-    // requires hp > 0, so it must not be part of this filter.
-    const dying = s.players.filter((p) => p.eliminatedAtRound === null && p.hp <= 0);
-    // Lowest HP is eliminated "first" and so takes the worst remaining place.
-    dying.sort((a, b) => a.hp - b.hp || a.id.localeCompare(b.id));
-    const stillInMatch = s.players.filter((p) => p.eliminatedAtRound === null).length;
-    dying.forEach((p, i) => {
-      p.eliminatedAtRound = roundKey;
-      p.placement = stillInMatch - i;
-      eliminated.push(p.id);
-      // Spec §17.3 — everything they hold goes straight back to the pool.
-      for (const u of [...p.board, ...p.bench]) returnInstance(s.pool, u);
-      p.board = [];
-      p.bench = [];
-    });
-
-    // Income for everyone still standing.
-    for (const p of livingPlayers(s)) {
-      p.gold += roundIncome(p, s.stage, s.round, pvpWinners.has(p.id));
-      grantRoundXp(p);
-    }
-
+    const afterStreaks = new Map(s.players.map((p) => [p.id, p.streak]));
+    for (const p of s.players) p.streak = beforeStreaks.get(p.id)!;
     const resolution: RoundResolution = {
-      stage: s.stage, round: s.round, kind: this.info.kind, outcomes, damage, eliminated,
+      stage: s.stage, round: s.round, kind: this.info.kind, outcomes, damage, eliminated: [],
     };
-    s.lastResolution = resolution;
-    s.history.push(resolution);
-    s.phase = 'ROUND_RESOLVE';
+    this.pendingSettlement = () => {
+      for (const p of s.players) p.streak = afterStreaks.get(p.id)!;
+      if (kind === 'PVE') this.grantPveRewards(outcomes);
+      // Damage, loot, income and eliminations become visible together at END.
+      const roundKey = absoluteRound(s.stage, s.round);
+      for (const p of s.players) {
+        if (!isAlive(p)) continue;
+        const dmg = damage[p.id] ?? 0;
+        if (dmg > 0) {
+          p.hp = Math.max(0, p.hp - dmg);
+          p.hpChangedAtRound = roundKey;
+        }
+      }
+
+      // Eliminations, lowest HP resolved last so placements are stable.
+      s.phase = 'ELIMINATION';
+      const eliminated: string[] = [];
+      // Not-yet-eliminated players whose HP has just run out. `isAlive` already
+      // requires hp > 0, so it must not be part of this filter.
+      const dying = s.players.filter((p) => p.eliminatedAtRound === null && p.hp <= 0);
+      // Lowest HP is eliminated "first" and so takes the worst remaining place.
+      dying.sort((a, b) => a.hp - b.hp || a.id.localeCompare(b.id));
+      const stillInMatch = s.players.filter((p) => p.eliminatedAtRound === null).length;
+      dying.forEach((p, i) => {
+        p.eliminatedAtRound = roundKey;
+        p.placement = stillInMatch - i;
+        eliminated.push(p.id);
+        // Spec §17.3 — everything they hold goes straight back to the pool.
+        for (const u of [...p.board, ...p.bench]) returnInstance(s.pool, u);
+        p.board = [];
+        p.bench = [];
+      });
+
+      // Income for everyone still standing.
+      for (const p of livingPlayers(s)) {
+        p.gold += roundIncome(p, s.stage, s.round, pvpWinners.has(p.id));
+        grantRoundXp(p);
+      }
+
+      resolution.eliminated = eliminated;
+      s.lastResolution = resolution;
+      s.history.push(resolution);
+      s.phase = 'ROUND_RESOLVE';
+      this.syncRng();
+      return resolution;
+    };
     this.syncRng();
-    return resolution;
+    return deferSettlement ? resolution : this.settleRound()!;
   }
 
   /** Drops board units beyond the team size limit back onto the bench. */
@@ -389,6 +411,14 @@ export class RoundDirector {
       });
       // Spec §21 — losing PvE costs no player HP, only a reward tier.
       damage[p.id] = 0;
+    }
+  }
+
+  private grantPveRewards(outcomes: BattleOutcome[]): void {
+    const s = this.state;
+    for (const outcome of outcomes) {
+      const p = getPlayer(s, outcome.attackerId);
+      const won = outcome.winnerId === p.id;
       const loot = rollPveLoot(this.rngs.get('loot'), s.stage, won);
       p.gold += loot.gold;
       for (const c of loot.components) addItemToStorage(s, p, c);
@@ -412,7 +442,7 @@ export class RoundDirector {
       const attacker = getPlayer(s, pair.attackerId);
       const defender = getPlayer(s, pair.defenderId);
       const rng = this.rngs.get(`battle-pair-${roundKey}-${pair.attackerId}-${pair.defenderId}`);
-      const humanInvolved = attacker.isHuman || defender.isHuman;
+      const humanInvolved = attacker.isHuman || (!pair.isGhost && defender.isHuman);
       const result = this.runBattle(
         this.sideFor(attacker), this.sideFor(defender), rng, humanInvolved,
       );
@@ -466,6 +496,7 @@ export class RoundDirector {
   // ------------------------------------------------------------------ flow
   /** Advances to the next round, or ends the match. */
   advance(): void {
+    if (this.pendingSettlement) throw new Error('Cannot advance during battle');
     const s = this.state;
     const living = livingPlayers(s);
     if (living.length <= 1) {
@@ -497,8 +528,8 @@ export class RoundDirector {
   }
 
   /** Runs a complete match headlessly; used by tests and the balance simulator. */
-  runToCompletion(maxRounds = 120): void {
-    this.beginPrep();
+  runToCompletion(maxRounds = 120, beginPrep = true): void {
+    if (beginPrep) this.beginPrep();
     for (let i = 0; i < maxRounds && !this.isOver; i += 1) {
       this.resolveRound();
       this.advance();

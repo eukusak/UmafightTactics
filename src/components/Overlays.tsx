@@ -1,5 +1,5 @@
 /** Augment select, twinkle draft, battle result banner and the dev panel. */
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useGameStore } from '../store/gameStore';
 import { AUGMENT_BY_ID, ACTIVE_UNITS, getUnitDef } from '../game/engine/roster';
 import { getItem } from '../game/engine/items/item-defs';
@@ -99,13 +99,22 @@ export function DraftOverlay(): JSX.Element | null {
 }
 
 export function BattleResultOverlay({ onContinue }: { onContinue: () => void }): JSX.Element | null {
+  const autoContinue = useGameStore((s) => s.settings.autoContinue);
+  const [held, setHeld] = useState(false);
+  const [remaining, setRemaining] = useState(5);
+  useEffect(() => {
+    if (!autoContinue || held) return;
+    const timer = window.setInterval(() => setRemaining((n) => Math.max(0, n - 1)), 1000);
+    return () => window.clearInterval(timer);
+  }, [autoContinue, held]);
+  useEffect(() => { if (autoContinue && !held && remaining === 0) onContinue(); }, [autoContinue, held, remaining, onContinue]);
   const match = useGameStore((s) => s.match);
   const human = useGameStore((s) => s.human());
   useGameStore((s) => s.revision);
   const res = match?.lastResolution;
   if (!res || !human) return null;
 
-  const mine = res.outcomes.find((o) => o.attackerId === human.id || o.defenderId === human.id);
+  const mine = res.outcomes.find((o) => o.attackerId === human.id || (!o.isGhost && o.defenderId === human.id));
   const damage = res.damage[human.id] ?? 0;
   const won = mine ? mine.winnerId === human.id : false;
   const draw = mine ? mine.winnerId === null : false;
@@ -136,8 +145,9 @@ export function BattleResultOverlay({ onContinue }: { onContinue: () => void }):
           </p>
         )}
         <button className="btn-primary" style={{ marginTop: 20 }} onClick={onContinue}>
-          다음 라운드로
+          다음 라운드로{autoContinue && !held ? ` · ${remaining}초` : ''}
         </button>
+        {autoContinue && <button className="btn-ghost" style={{ marginLeft: 10 }} onClick={() => setHeld((value) => !value)}>{held ? '자동 진행 재개' : '결과 계속 보기'}</button>}
       </div>
     </div>
   );

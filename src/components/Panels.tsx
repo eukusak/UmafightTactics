@@ -1,11 +1,11 @@
 /** Left (traits + items), right (leaderboard), top HUD and footer panels. */
 import { useGameStore } from '../store/gameStore';
-import { AUGMENT_BY_ID, TRAIT_DEFS } from '../game/engine/roster';
+import { AUGMENT_BY_ID, TRAIT_DEFS, getUnitDef } from '../game/engine/roster';
 import { activeTierIndex } from '../game/engine/traits/trait-defs';
 import { interestGold, streakBonus, xpToNextLevel } from '../game/engine/economy';
 import { itemStorageCapacity, teamSizeLimit } from '../game/engine/shop';
 import { roundInfo } from '../game/engine/rounds/schedule';
-import { ItemIcon, Stat } from './common';
+import { ItemIcon, Stat, Portrait } from './common';
 import { traitTierLabel } from './UnitTooltip';
 import type { PlayerState } from '../game/engine/state';
 
@@ -51,6 +51,7 @@ export function TopHud(): JSX.Element | null {
 
 export function TraitPanel(): JSX.Element | null {
   const counts = useGameStore((s) => s.traitCounts());
+  const viewed = useGameStore((s) => s.viewedPlayer());
   useGameStore((s) => s.revision);
 
   const rows = TRAIT_DEFS
@@ -64,7 +65,7 @@ export function TraitPanel(): JSX.Element | null {
 
   return (
     <div className="panel scroll" style={{ padding: 10, marginBottom: 12 }}>
-      <h4 style={{ margin: '0 0 8px', fontSize: 15 }}>활성 특성</h4>
+      <h4 style={{ margin: '0 0 8px', fontSize: 15 }}>{viewed && !viewed.isHuman ? `${viewed.name} 특성` : '활성 특성'}</h4>
       {rows.length === 0 && <div className="muted" style={{ fontSize: 13 }}>배치된 유닛이 없습니다.</div>}
       {rows.map(({ trait, count }) => {
         const tier = activeTierIndex(trait, count);
@@ -126,7 +127,7 @@ export function ItemPanel(): JSX.Element | null {
 export function Leaderboard(): JSX.Element | null {
   const match = useGameStore((s) => s.match);
   const spectating = useGameStore((s) => s.spectating);
-  const setSpectate = useGameStore((s) => s.spectate);
+  const inspectPlayer = useGameStore((s) => s.inspectPlayer);
   useGameStore((s) => s.revision);
   if (!match) return null;
 
@@ -142,8 +143,11 @@ export function Leaderboard(): JSX.Element | null {
       {ordered.map((p, i) => (
         <div
           key={p.id}
-          className={`leader-row${p.isHuman ? ' self' : ''}${p.eliminatedAtRound !== null ? ' dead' : ''}`}
-          onClick={() => { if (!p.isHuman && p.eliminatedAtRound === null) setSpectate(1); }}
+          className={`leader-row${p.isHuman ? ' self' : ''}${spectating === p.id ? ' inspecting' : ''}${p.eliminatedAtRound !== null ? ' dead' : ''}`}
+          role="button" tabIndex={p.eliminatedAtRound === null ? 0 : -1}
+          aria-label={`${p.name} 편성 확인`} aria-pressed={spectating === p.id}
+          onKeyDown={(e) => { if ((e.key === 'Enter' || e.key === ' ') && p.eliminatedAtRound === null) { e.preventDefault(); inspectPlayer(p.id); } }}
+          onClick={() => { if (p.eliminatedAtRound === null) inspectPlayer(p.id); }}
           title={p.aiProfile ? `성향: ${p.aiProfile}` : '플레이어'}
         >
           <span style={{ width: 18 }}>{i + 1}</span>
@@ -156,8 +160,8 @@ export function Leaderboard(): JSX.Element | null {
         </div>
       ))}
       {spectating && (
-        <button className="btn-ghost" style={{ width: '100%', marginTop: 8 }} onClick={() => setSpectate(1)}>
-          관전 전환 (1 / 3)
+        <button className="btn-ghost" style={{ width: '100%', marginTop: 8 }} onClick={() => inspectPlayer(null)}>
+          내 편성으로 돌아가기 · Space
         </button>
       )}
     </div>
@@ -171,9 +175,21 @@ export function OpponentBoardPeek(): JSX.Element | null {
   if (!viewed || !human || viewed.id === human.id) return null;
   return (
     <div className="panel" style={{ padding: 10 }}>
-      <h4 style={{ margin: '0 0 6px', fontSize: 14 }}>{viewed.name} 관전 중</h4>
+      <h4 style={{ margin: '0 0 6px', fontSize: 14 }}>{viewed.name} 편성 정찰</h4>
       <div className="muted" style={{ fontSize: 12 }}>
         레벨 {viewed.level} · 유닛 {viewed.board.length} · 골드 {viewed.gold}
+      </div>
+      <div className="scout-board" aria-label={`${viewed.name} 배치`}>
+        {Array.from({ length: 28 }, (_, i) => {
+          const unit = viewed.board.find((u) => u.position?.q === i % 7 && u.position.r === Math.floor(i / 7));
+          const def = unit ? getUnitDef(unit.unitDefId) : null;
+          return <div key={i} className="scout-cell" title={def && unit ? `${def.nameKo} ${'★'.repeat(unit.star)}` : '빈 칸'}>
+            {def && <Portrait id={def.id} name={def.nameKo} size={27} />}
+          </div>;
+        })}
+      </div>
+      <div className="scout-roster">
+        {viewed.board.map((unit) => <div key={unit.instanceId}><span>{getUnitDef(unit.unitDefId).nameKo}</span><b>{'★'.repeat(unit.star)}</b><small>{unit.items.length} 장비</small></div>)}
       </div>
     </div>
   );

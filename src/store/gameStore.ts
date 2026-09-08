@@ -25,6 +25,7 @@ export type Screen =
 export type Settings = {
   battleSpeed: 1 | 2 | 4 | 10;
   showDamageNumbers: boolean;
+  autoContinue: boolean;
   keybinds: Record<string, string>;
 };
 
@@ -48,6 +49,10 @@ type GameStore = {
   revision: number;
   battleFrames: BattleFrame[] | null;
   battleRunning: boolean;
+  battleComplete: boolean;
+  battleTime: number;
+  prepRemaining: number | null;
+  prepPaused: boolean;
   spectating: string | null;
   /** Unit selected by click, for click-to-place as an alternative to dragging. */
   selectedUnitId: string | null;
@@ -79,6 +84,10 @@ type GameStore = {
 
   startBattle: () => void;
   finishBattle: () => void;
+  completeBattle: () => void;
+  setBattleTime: (seconds: number) => void;
+  setPrepClock: (remaining: number, paused?: boolean) => void;
+  inspectPlayer: (id: string | null) => void;
   spectate: (direction: 1 | -1) => void;
   selectUnit: (instanceId: string | null) => void;
   placeSelected: (position: HexPos | null) => void;
@@ -99,10 +108,13 @@ export const useGameStore = create<GameStore>((set, get) => ({
   revision: 0,
   battleFrames: null,
   battleRunning: false,
+  battleComplete: false,
+  battleTime: 0,
+  prepRemaining: null, prepPaused: false,
   spectating: null,
   selectedUnitId: null,
-  settings: { battleSpeed: 1, showDamageNumbers: true, keybinds: { ...DEFAULT_KEYBINDS } },
-  devMode: typeof window !== 'undefined' && new URLSearchParams(window.location.search).get('dev') === '1',
+  settings: { battleSpeed: 1, showDamageNumbers: true, autoContinue: true, keybinds: { ...DEFAULT_KEYBINDS } },
+  devMode: new URLSearchParams((globalThis as { location?: { search: string } }).location?.search ?? '').get('dev') === '1',
   lastError: null,
 
   setScreen: (screen) => set({ screen }),
@@ -112,7 +124,7 @@ export const useGameStore = create<GameStore>((set, get) => ({
     const director = new RoundDirector(match);
     director.beginPrep();
     saveToStorage(director);
-    set({ director, match, screen: 'BATTLE', battleFrames: null, spectating: null, revision: 0 });
+    set({ director, match, screen: 'BATTLE', battleFrames: null, battleRunning: false, battleComplete: false, battleTime: 0, prepRemaining: null, prepPaused: false, selectedUnitId: null, lastError: null, spectating: null, revision: 0 });
   },
 
   continueMatch: () => {
@@ -124,11 +136,14 @@ export const useGameStore = create<GameStore>((set, get) => ({
       return false;
     }
     const director = restoreDirector(result.save);
+    if (director.state.phase === 'ROUND_RESOLVE') director.advance();
+    if (director.state.players.some((p) => p.isHuman && p.eliminatedAtRound !== null) && !director.isOver) director.runToCompletion(120, false);
     set({
       director,
       match: director.state,
       screen: director.state.phase === 'GAME_OVER' ? 'RESULT' : 'BATTLE',
       battleFrames: null,
+      battleRunning: false, battleComplete: false, battleTime: 0, prepRemaining: null, prepPaused: false, selectedUnitId: null, spectating: null,
       lastError: null,
       revision: 0,
     });
@@ -139,7 +154,7 @@ export const useGameStore = create<GameStore>((set, get) => ({
 
   abandonMatch: () => {
     clearSave();
-    set({ director: null, match: null, screen: 'MAIN_MENU', battleFrames: null });
+    set({ director: null, match: null, screen: 'MAIN_MENU', battleFrames: null, battleRunning: false, battleComplete: false, battleTime: 0 });
   },
 
   human: () => get().match?.players.find((p) => p.isHuman) ?? null,
@@ -168,6 +183,7 @@ export const useGameStore = create<GameStore>((set, get) => ({
   },
 
   sell: (instanceId) => {
+    if (get().battleRunning && get().human()?.board.some((u) => u.instanceId === instanceId)) { set({ lastError: '전투 중인 유닛은 종료 후 판매할 수 있습니다.' }); return; }
     const { director } = get();
     const player = get().human();
     if (!director || !player) return;
@@ -201,6 +217,8 @@ export const useGameStore = create<GameStore>((set, get) => ({
   },
 
   moveUnit: (instanceId, position) => {
+    if (get().battleRunning) { set({ lastError: '전투 종료 후 배치를 변경할 수 있습니다.' }); return; }
+    if (position && (!Number.isInteger(position.q) || !Number.isInteger(position.r) || position.q < 0 || position.q > 6 || position.r < 0 || position.r > 3)) return;
     const { director } = get();
     const player = get().human();
     if (!director || !player) return;
@@ -258,6 +276,7 @@ export const useGameStore = create<GameStore>((set, get) => ({
   },
 
   equip: (unitInstanceId, itemInstanceId) => {
+    if (get().battleRunning) { set({ lastError: '전투 종료 후 장착할 수 있습니다.' }); return; }
     const { director } = get();
     const player = get().human();
     if (!director || !player) return;
@@ -274,6 +293,7 @@ export const useGameStore = create<GameStore>((set, get) => ({
   },
 
   unequip: (unitInstanceId) => {
+    if (get().battleRunning) { set({ lastError: '전투 종료 후 장비를 변경할 수 있습니다.' }); return; }
     const { director } = get();
     const player = get().human();
     if (!director || !player) return;
@@ -323,25 +343,48 @@ export const useGameStore = create<GameStore>((set, get) => ({
     }
     // Resolve now and play back the frames the resolution itself produced, so
     // the animation can never disagree with the result it leads to.
-    director.resolveRound();
-    saveToStorage(director);
-    set({ battleFrames: director.lastHumanFrames, battleRunning: true });
+    saveToStorage(director); // Reload returns to a complete preparation checkpoint.
+    director.resolveRound(true);
+    set({ battleFrames: director.lastHumanFrames, battleRunning: true, battleComplete: false, battleTime: 0, prepRemaining: null, prepPaused: false, selectedUnitId: null, spectating: null, lastError: null });
     bump(set);
   },
 
-  /** Called once playback finishes (or is skipped): advances to the next round. */
+  setPrepClock: (remaining, paused) => set((s) => ({ prepRemaining: Math.max(0, remaining), prepPaused: paused ?? s.prepPaused })),
+
+  setBattleTime: (seconds) => set({ battleTime: seconds }),
+
+  completeBattle: () => {
+    const { director, battleRunning, battleComplete } = get();
+    if (!director || !battleRunning || battleComplete) return;
+    director.settleRound();
+    saveToStorage(director);
+    set({ battleComplete: true });
+    bump(set);
+  },
+
+  /** Results are committed once; continuing advances exactly one round. */
   finishBattle: () => {
     const { director } = get();
-    if (!director) return;
+    if (!director || !get().battleRunning) return;
+    get().completeBattle();
     director.advance();
+    if (get().human()?.eliminatedAtRound !== null && !director.isOver) director.runToCompletion(120, false);
     saveToStorage(director);
     set({
       battleRunning: false,
+      battleComplete: false,
+      battleTime: 0,
+      prepRemaining: null, prepPaused: false,
       battleFrames: null,
       screen: director.isOver ? 'RESULT' : 'BATTLE',
       spectating: null,
     });
     bump(set);
+  },
+
+  inspectPlayer: (id) => {
+    const player = get().match?.players.find((p) => p.id === id && p.eliminatedAtRound === null);
+    set({ spectating: player && !player.isHuman ? player.id : null, selectedUnitId: null });
   },
 
   spectate: (direction) => {
@@ -371,6 +414,7 @@ export const useGameStore = create<GameStore>((set, get) => ({
   setDevMode: (on) => set({ devMode: on }),
 
   devGrant: (action, payload) => {
+    if (get().battleRunning) return;
     const { director } = get();
     const player = get().human();
     if (!director || !player) return;
@@ -420,7 +464,7 @@ export const useGameStore = create<GameStore>((set, get) => ({
 
   save: () => {
     const { director } = get();
-    if (director) saveToStorage(director);
+    if (director && !director.hasPendingSettlement) saveToStorage(director);
   },
 }));
 

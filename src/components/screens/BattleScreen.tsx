@@ -10,6 +10,7 @@ import { UnitTooltip } from '../UnitTooltip';
 import { roundInfo } from '../../game/engine/rounds/schedule';
 import type { UnitInstance } from '../../game/engine/state';
 import { PromotionFeedback } from '../PromotionFeedback';
+import { BattleTelemetry } from '../BattleTelemetry';
 import { PrepCountdown } from '../PrepCountdown';
 
 export function BattleScreen(): JSX.Element | null {
@@ -25,7 +26,7 @@ export function BattleScreen(): JSX.Element | null {
   useGameStore((s) => s.revision);
 
   const [tooltip, setTooltip] = useState<{ x: number; y: number; unit: UnitInstance } | null>(null);
-  const [showResult, setShowResult] = useState(false);
+  const showResult = useGameStore((s) => s.battleComplete);
   const [arenaReady, setArenaReady] = useState(false);
   const onArenaReady = useCallback(() => setArenaReady(true), []);
   useEffect(() => { if (!battleRunning) setArenaReady(false); }, [battleRunning]);
@@ -34,10 +35,9 @@ export function BattleScreen(): JSX.Element | null {
     setTooltip({ x: e.clientX, y: e.clientY, unit });
   }, []);
 
-  const onPlaybackFinished = useCallback(() => setShowResult(true), []);
+  const onPlaybackFinished = useCallback(() => useGameStore.getState().completeBattle(), []);
 
   const handleContinue = useCallback(() => {
-    setShowResult(false);
     finishBattle();
   }, [finishBattle]);
 
@@ -52,6 +52,7 @@ export function BattleScreen(): JSX.Element | null {
       else if (key === binds.buyXp) { store.buyExperience(); e.preventDefault(); }
       else if (key === binds.prevPlayer) store.spectate(-1);
       else if (key === binds.nextPlayer) store.spectate(1);
+      else if (key === binds.ownBoard) { store.inspectPlayer(null); e.preventDefault(); }
       else if (key === binds.settings) store.setScreen('SETTINGS');
     };
     window.addEventListener('keydown', onKey);
@@ -77,6 +78,7 @@ export function BattleScreen(): JSX.Element | null {
         <ArenaBackdrop />
         {(!battleRunning || !arenaReady) && <PrepBoard onUnitContext={onUnitContext} />}
         {battleRunning && <BattleBoard onFinished={onPlaybackFinished} onReady={onArenaReady} />}
+        {battleRunning && arenaReady && <BattleTelemetry />}
         {!battleRunning && <PrepCountdown key={info.label} active={!awaitingAugment && !awaitingDraft} seconds={info.prepSeconds} />}
       </div>
 
