@@ -1489,5 +1489,110 @@
       256
     ],
     "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "sirius_symboli": {
+    "file": "portraits/sirius_symboli.png",
+    "source": "docs/art-source/portraits/batch-14/sirius_symboli.png",
+    "sourceSha256": "87c3aa0e9ae355d217240a6e313f0090014069a202ad580520a201dd22eb1c34",
+    "reference": "public/assets/characters/race/SiriusSymboli-Race.png",
+    "sourceSize": [
+      1207,
+      1303
+    ],
+    "crop": [
+      0,
+      0,
+      1207,
+      1303
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "mejiro_ardan": {
+    "file": "portraits/mejiro_ardan.png",
+    "source": "docs/art-source/portraits/batch-14/mejiro_ardan.png",
+    "sourceSha256": "3519dc7179a4572c2fafb8ec904e886928bb938997eb92c2dd7d7a66495b7802",
+    "reference": "public/assets/characters/race/MejiroArdan-Race.png",
+    "sourceSize": [
+      1185,
+      1327
+    ],
+    "crop": [
+      0,
+      0,
+      1185,
+      1327
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "yaeno_muteki": {
+    "file": "portraits/yaeno_muteki.png",
+    "source": "docs/art-source/portraits/batch-14/yaeno_muteki.png",
+    "sourceSha256": "35bdd42723fb94cefe4e68f5205794d561481d30b30370f74681c56434f1ea53",
+    "reference": "public/assets/characters/race/YaenoMuteki-Race.png",
+    "sourceSize": [
+      1206,
+      1305
+    ],
+    "crop": [
+      81,
+      0,
+      1145,
+      1305
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "tsurumaru_tsuyoshi": {
+    "file": "portraits/tsurumaru_tsuyoshi.png",
+    "source": "docs/art-source/portraits/batch-14/tsurumaru_tsuyoshi.png",
+    "sourceSha256": "4f8d8f5deb343ee9b2e4081275a5bcb5371cb0789f3573e0a6ccf480a5be9cfa",
+    "reference": "public/assets/characters/race/TsurumaruTsuyoshi-Race.png",
+    "sourceSize": [
+      1205,
+      1305
+    ],
+    "crop": [
+      0,
+      0,
+      1205,
+      1305
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "mejiro_bright": {
+    "file": "portraits/mejiro_bright.png",
+    "source": "docs/art-source/portraits/batch-14/mejiro_bright.png",
+    "sourceSha256": "f37ed72be541b76d84b6b6b3e4cf3e04f1325f03e1ee333ce9598d597a36c064",
+    "reference": "public/assets/characters/race/MejiroBright-Race.png",
+    "sourceSize": [
+      1145,
+      1374
+    ],
+    "crop": [
+      0,
+      0,
+      1145,
+      1374
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
   }
 }
