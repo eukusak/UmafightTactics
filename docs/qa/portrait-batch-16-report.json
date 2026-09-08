@@ -1,0 +1,106 @@
+{
+  "batchSize": 5,
+  "validation": "new portraits only; full app test/build not rerun",
+  "files": [
+    {
+      "id": "transcend",
+      "size": [
+        256,
+        256
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "bounds": [
+        25,
+        6,
+        230,
+        250
+      ],
+      "sourceSha256": "357ebdde938c95915bee3ff416e32ddc421c16a3fdb19de91490ea7ce8f6874b",
+      "runtimeSha256": "99ec557feb60065ae4af029a533a1ac1f2a0e1bf74720d8600aa51808eb0f349",
+      "reference": "public/assets/characters/race/Transcend-Race.png"
+    },
+    {
+      "id": "north_flight",
+      "size": [
+        256,
+        256
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "bounds": [
+        21,
+        6,
+        235,
+        250
+      ],
+      "sourceSha256": "57b7c9bff767f9472e904c7c9464344e90fbb4282d6af61b114484ad84e39f7e",
+      "runtimeSha256": "83defdc74910bec884d2a0491b3b0e9352364e87f22a4114a2373d3274e3ce0e",
+      "reference": "public/assets/characters/race/NorthFlight-Race.png"
+    },
+    {
+      "id": "symboli_kris_s",
+      "size": [
+        256,
+        256
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "bounds": [
+        16,
+        6,
+        239,
+        250
+      ],
+      "sourceSha256": "a0445f803409902c118f814e16dcedfe23ffbcf39da4079bbba7747a1edaad2b",
+      "runtimeSha256": "f8b939dc38018ec43679c0c6a45f6afa3f9f4fcd210fbcadd7973f473f887427",
+      "reference": "public/assets/characters/race/SymboliKrisS-Race.png"
+    },
+    {
+      "id": "tanino_gimlet",
+      "size": [
+        256,
+        256
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "bounds": [
+        29,
+        6,
+        228,
+        250
+      ],
+      "sourceSha256": "1f9f8a4bb7d5313fedb3ffd569284bdd470613fe04955eaa200cfb146e0adfea",
+      "runtimeSha256": "1ca410dec98b73a14979b2989191638005914b7930a5ea9344a97e69f9a4ab85",
+      "reference": "public/assets/characters/race/TaninoGimlet-Race.png"
+    },
+    {
+      "id": "daiichi_ruby",
+      "size": [
+        256,
+        256
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "bounds": [
+        26,
+        6,
+        229,
+        250
+      ],
+      "sourceSha256": "9dee4e4e1f47319ca026459d1331fbd56d017a54d6d62b29ccff3b9d85486e24",
+      "runtimeSha256": "a43dc57edb4b791f614331682e5fb9170aff59cbe0a064311a948860fb890540",
+      "reference": "public/assets/characters/race/DaiichiRuby-Race.png"
+    }
+  ]
+}

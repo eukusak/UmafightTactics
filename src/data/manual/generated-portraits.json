@@ -1909,5 +1909,110 @@
       256
     ],
     "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "transcend": {
+    "file": "portraits/transcend.png",
+    "source": "docs/art-source/portraits/batch-16/transcend.png",
+    "sourceSha256": "357ebdde938c95915bee3ff416e32ddc421c16a3fdb19de91490ea7ce8f6874b",
+    "reference": "public/assets/characters/race/Transcend-Race.png",
+    "sourceSize": [
+      1165,
+      1350
+    ],
+    "crop": [
+      13,
+      0,
+      1149,
+      1350
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "north_flight": {
+    "file": "portraits/north_flight.png",
+    "source": "docs/art-source/portraits/batch-16/north_flight.png",
+    "sourceSha256": "57b7c9bff767f9472e904c7c9464344e90fbb4282d6af61b114484ad84e39f7e",
+    "reference": "public/assets/characters/race/NorthFlight-Race.png",
+    "sourceSize": [
+      1199,
+      1312
+    ],
+    "crop": [
+      45,
+      0,
+      1198,
+      1312
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "symboli_kris_s": {
+    "file": "portraits/symboli_kris_s.png",
+    "source": "docs/art-source/portraits/batch-16/symboli_kris_s.png",
+    "sourceSha256": "a0445f803409902c118f814e16dcedfe23ffbcf39da4079bbba7747a1edaad2b",
+    "reference": "public/assets/characters/race/SymboliKrisS-Race.png",
+    "sourceSize": [
+      1199,
+      1312
+    ],
+    "crop": [
+      0,
+      0,
+      1199,
+      1312
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "tanino_gimlet": {
+    "file": "portraits/tanino_gimlet.png",
+    "source": "docs/art-source/portraits/batch-16/tanino_gimlet.png",
+    "sourceSha256": "1f9f8a4bb7d5313fedb3ffd569284bdd470613fe04955eaa200cfb146e0adfea",
+    "reference": "public/assets/characters/race/TaninoGimlet-Race.png",
+    "sourceSize": [
+      1145,
+      1374
+    ],
+    "crop": [
+      0,
+      0,
+      1131,
+      1374
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "daiichi_ruby": {
+    "file": "portraits/daiichi_ruby.png",
+    "source": "docs/art-source/portraits/batch-16/daiichi_ruby.png",
+    "sourceSha256": "9dee4e4e1f47319ca026459d1331fbd56d017a54d6d62b29ccff3b9d85486e24",
+    "reference": "public/assets/characters/race/DaiichiRuby-Race.png",
+    "sourceSize": [
+      1145,
+      1374
+    ],
+    "crop": [
+      0,
+      0,
+      1145,
+      1374
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
   }
 }
