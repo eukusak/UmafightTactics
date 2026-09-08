@@ -2119,5 +2119,215 @@
       256
     ],
     "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "admire_groove": {
+    "file": "portraits/admire_groove.png",
+    "source": "docs/art-source/portraits/batch-1003/admire_groove.png",
+    "sourceSha256": "700ceceb830432a50e5686ab61a3f721b9762ba242a0b184c084a6d12e6f779b",
+    "reference": "public/assets/characters/race/AdmireGroove-Race.png",
+    "sourceSize": [
+      1254,
+      1254
+    ],
+    "crop": [
+      23,
+      17,
+      1218,
+      1224
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "dream_journey": {
+    "file": "portraits/dream_journey.png",
+    "source": "docs/art-source/portraits/batch-1003/dream_journey.png",
+    "sourceSha256": "df3d9f65c496165b8eff52eabf14c4138905dd79c77d9584cce4fee1775cedbf",
+    "reference": "public/assets/characters/race/DreamJourney-Race.png",
+    "sourceSize": [
+      1254,
+      1254
+    ],
+    "crop": [
+      91,
+      27,
+      1170,
+      1254
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "calstone_light_o": {
+    "file": "portraits/calstone_light_o.png",
+    "source": "docs/art-source/portraits/batch-1003/calstone_light_o.png",
+    "sourceSha256": "ce4049e62474123212a79ba160c3281642465cfd079c7683eb22f42518c08d9e",
+    "reference": "public/assets/characters/race/CalstoneLightO-Race.png",
+    "sourceSize": [
+      1254,
+      1254
+    ],
+    "crop": [
+      33,
+      36,
+      1199,
+      1230
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "durandal": {
+    "file": "portraits/durandal.png",
+    "source": "docs/art-source/portraits/batch-1003/durandal.png",
+    "sourceSha256": "7b8553a362587c505d6c6d1793feb9dd7c41296c6c48d3fd9bdb7b161912fce7",
+    "reference": "public/assets/characters/race/Durandal-Race.png",
+    "sourceSize": [
+      1254,
+      1254
+    ],
+    "crop": [
+      69,
+      20,
+      1083,
+      1242
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "bubble_gum_fellow": {
+    "file": "portraits/bubble_gum_fellow.png",
+    "source": "docs/art-source/portraits/batch-1003/bubble_gum_fellow.png",
+    "sourceSha256": "e598bc10c4ed18f4d31b119a2b6cb6d1b2357d5e1af9f1e4e1d0f786dadffbe3",
+    "reference": "public/assets/characters/race/BubbleGumFellow-Race.png",
+    "sourceSize": [
+      1254,
+      1254
+    ],
+    "crop": [
+      105,
+      21,
+      1230,
+      1254
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "sakura_chitose_o": {
+    "file": "portraits/sakura_chitose_o.png",
+    "source": "docs/art-source/portraits/batch-1003/sakura_chitose_o.png",
+    "sourceSha256": "043328ff79700b331cf1339196b13660c8f60595bc914f228a5500e4c9127063",
+    "reference": "public/assets/characters/race/SakuraChitoseO-Race.png",
+    "sourceSize": [
+      1254,
+      1254
+    ],
+    "crop": [
+      0,
+      23,
+      1214,
+      1254
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "fenomeno": {
+    "file": "portraits/fenomeno.png",
+    "source": "docs/art-source/portraits/batch-1003/fenomeno.png",
+    "sourceSha256": "7e54dbf22c184c038bba1aaac1988dece1d27dc0d59a05e25e5327c184cda21d",
+    "reference": "public/assets/characters/race/Fenomeno-Race.png",
+    "sourceSize": [
+      1254,
+      1254
+    ],
+    "crop": [
+      59,
+      21,
+      1134,
+      1225
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "blast_onepiece": {
+    "file": "portraits/blast_onepiece.png",
+    "source": "docs/art-source/portraits/batch-1003/blast_onepiece.png",
+    "sourceSha256": "769617f728ec47453d39313b2f086e325264c470a34023a9d3d404febc61b906",
+    "reference": "public/assets/characters/race/BlastOnepiece-Race.png",
+    "sourceSize": [
+      1254,
+      1254
+    ],
+    "crop": [
+      19,
+      40,
+      1224,
+      1254
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "almond_eye": {
+    "file": "portraits/almond_eye.png",
+    "source": "docs/art-source/portraits/batch-1003/almond_eye.png",
+    "sourceSha256": "99bb408a4e436c2328dbe2d36e688bd876c11ddc9eb3c48cefe32d3327299d8f",
+    "reference": "public/assets/characters/race/AlmondEye-Race.png",
+    "sourceSize": [
+      1254,
+      1254
+    ],
+    "crop": [
+      0,
+      21,
+      1190,
+      1254
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "lucky_lilac": {
+    "file": "portraits/lucky_lilac.png",
+    "source": "docs/art-source/portraits/batch-1003/lucky_lilac.png",
+    "sourceSha256": "8977e8de8e0e616a71923db9ea2c0b3cf1fd17e91c28c74ebc90a92e2141a05f",
+    "reference": "public/assets/characters/race/LuckyLilac-Race.png",
+    "sourceSize": [
+      1254,
+      1254
+    ],
+    "crop": [
+      19,
+      47,
+      1192,
+      1254
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
   }
 }

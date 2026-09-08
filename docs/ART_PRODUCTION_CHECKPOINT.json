@@ -1,15 +1,20 @@
 {
-  "acceptedArt": 334,
-  "baseCommit": "0d042e471bac0490dff5d82fcd69541631735cae",
-  "batchSize": 5,
+  "acceptedArt": 344,
+  "baseCommit": "32d17486c5c8859f430bb5db0cf3cdbe23c14c6f",
+  "batchSize": 10,
   "completedBatch": [
-    "mejiro_ramonu",
-    "aston_machan",
-    "satono_crown",
-    "cheval_grand",
-    "vivlos"
+    "admire_groove",
+    "dream_journey",
+    "calstone_light_o",
+    "durandal",
+    "bubble_gum_fellow",
+    "sakura_chitose_o",
+    "fenomeno",
+    "blast_onepiece",
+    "almond_eye",
+    "lucky_lilac"
   ],
-  "completedPortraits": 110,
+  "completedPortraits": 120,
   "nextPortraitIds": [
     "dantsu_flame",
     "ks_miracle",
@@ -35,21 +40,11 @@
     "buena_vista",
     "orfevre",
     "gentildonna",
-    "win_variation",
-    "admire_groove",
-    "dream_journey",
-    "calstone_light_o",
-    "durandal",
-    "bubble_gum_fellow",
-    "sakura_chitose_o",
-    "fenomeno",
-    "blast_onepiece",
-    "almond_eye",
-    "lucky_lilac"
+    "win_variation"
   ],
   "portraitTarget": 145,
   "remaining": {
-    "portraits": 35,
+    "portraits": 25,
     "battleSheets": 145,
     "cutins": 0
   },
@@ -79,25 +74,25 @@
       "compiled model and runtime verification"
     ]
   },
-  "workflow": "This session generates five distinct portraits, inspects and saves to GitHub, verifies, then begins the next five. Preserve the separate concurrent ten-character batches and reservations. Complete all 145 portraits before rigging one character at a time.",
-  "latestTenCharacterBatch": "batch-1002",
+  "workflow": "Generate ten distinct portraits, inspect and save to GitHub, verify, then begin the next ten (final remainder allowed). Complete all 145 portraits before rigging one character at a time.",
+  "latestTenCharacterBatch": "batch-1003",
   "latestFiveCharacterBatch": "batch-17",
   "activeTenCharacterBatch": {
     "session": "8bd244030e73",
-    "batch": "batch-1003",
+    "batch": "batch-1004",
     "ids": [
-      "admire_groove",
-      "dream_journey",
-      "calstone_light_o",
-      "durandal",
-      "bubble_gum_fellow",
-      "sakura_chitose_o",
-      "fenomeno",
-      "blast_onepiece",
-      "almond_eye",
-      "lucky_lilac"
+      "duramente",
+      "rhein_kraft",
+      "cesario",
+      "air_messiah",
+      "daring_heart",
+      "fusaichi_pandora",
+      "buena_vista",
+      "orfevre",
+      "gentildonna",
+      "win_variation"
     ],
-    "status": "reference-inspection",
-    "note": "This session owns the last ten missing IDs to avoid overlap. Other concurrent sessions should skip these IDs. Complete all 145 portraits before character-by-character Live2D."
+    "status": "reserved-for-next-batch",
+    "note": "Other concurrent sessions should skip these ten IDs. Start after batch-1003 is saved and verified."
   }
 }
