@@ -2329,5 +2329,110 @@
       256
     ],
     "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "dantsu_flame": {
+    "file": "portraits/dantsu_flame.png",
+    "source": "docs/art-source/portraits/batch-18/dantsu_flame.png",
+    "sourceSha256": "1d296894de377ebe8ade31d14bccb8339796ea4964d434b22711b1b24e0a345c",
+    "reference": "public/assets/characters/race/DantsuFlame-Race.png",
+    "sourceSize": [
+      1199,
+      1312
+    ],
+    "crop": [
+      33,
+      1,
+      1189,
+      1312
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "ks_miracle": {
+    "file": "portraits/ks_miracle.png",
+    "source": "docs/art-source/portraits/batch-18/ks_miracle.png",
+    "sourceSha256": "8d9a0706f60d8a17cd72a2350e0c852c839a5354b483ba6deca080b64310e548",
+    "reference": "public/assets/characters/race/KSMiracle-Race.png",
+    "sourceSize": [
+      1230,
+      1278
+    ],
+    "crop": [
+      0,
+      7,
+      1210,
+      1278
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "jungle_pocket": {
+    "file": "portraits/jungle_pocket.png",
+    "source": "docs/art-source/portraits/batch-18/jungle_pocket.png",
+    "sourceSha256": "2dab0c07487acebcbfbb1728eaf6ce6aee7f5cd4f4326cf05622795410fd6a52",
+    "reference": "public/assets/characters/race/JunglePocket-Race.png",
+    "sourceSize": [
+      1161,
+      1354
+    ],
+    "crop": [
+      43,
+      0,
+      1133,
+      1354
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "believe": {
+    "file": "portraits/believe.png",
+    "source": "docs/art-source/portraits/batch-18/believe.png",
+    "sourceSha256": "1594aaf201f935b3a2ff52de866572bc25df2db842266789df5fe51157f3bda4",
+    "reference": "public/assets/characters/race/Believe-Race.png",
+    "sourceSize": [
+      1262,
+      1246
+    ],
+    "crop": [
+      92,
+      12,
+      1207,
+      1246
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "no_reason": {
+    "file": "portraits/no_reason.png",
+    "source": "docs/art-source/portraits/batch-18/no_reason.png",
+    "sourceSha256": "ae4ee5f7ff0ac5b8f7105635665e7e47df54d4f04f5abff8a5bf227774a1413d",
+    "reference": "public/assets/characters/race/NoReason-Race.png",
+    "sourceSize": [
+      1145,
+      1374
+    ],
+    "crop": [
+      0,
+      0,
+      1145,
+      1374
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
   }
 }

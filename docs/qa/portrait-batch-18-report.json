@@ -1,0 +1,106 @@
+{
+  "batchSize": 5,
+  "validation": "new portraits only; full app test/build not rerun",
+  "files": [
+    {
+      "id": "dantsu_flame",
+      "size": [
+        256,
+        256
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "bounds": [
+        39,
+        6,
+        219,
+        250
+      ],
+      "sourceSha256": "1d296894de377ebe8ade31d14bccb8339796ea4964d434b22711b1b24e0a345c",
+      "runtimeSha256": "ac2e56bcf00ab99a0836f160717b894bd6b76888a44f0c481a09219a3f2188eb",
+      "reference": "public/assets/characters/race/DantsuFlame-Race.png"
+    },
+    {
+      "id": "ks_miracle",
+      "size": [
+        256,
+        256
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "bounds": [
+        22,
+        6,
+        239,
+        250
+      ],
+      "sourceSha256": "8d9a0706f60d8a17cd72a2350e0c852c839a5354b483ba6deca080b64310e548",
+      "runtimeSha256": "50b6a9e67f65fc4b4639fa1329187b538c6e78f7d68686d6f6bb6a08162a01ae",
+      "reference": "public/assets/characters/race/KSMiracle-Race.png"
+    },
+    {
+      "id": "jungle_pocket",
+      "size": [
+        256,
+        256
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "bounds": [
+        34,
+        6,
+        225,
+        250
+      ],
+      "sourceSha256": "2dab0c07487acebcbfbb1728eaf6ce6aee7f5cd4f4326cf05622795410fd6a52",
+      "runtimeSha256": "f995bdc6e8a79937bccade12fa13e945550cd0f772c9c8a3ad57977183d99028",
+      "reference": "public/assets/characters/race/JunglePocket-Race.png"
+    },
+    {
+      "id": "believe",
+      "size": [
+        256,
+        256
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "bounds": [
+        22,
+        6,
+        232,
+        250
+      ],
+      "sourceSha256": "1594aaf201f935b3a2ff52de866572bc25df2db842266789df5fe51157f3bda4",
+      "runtimeSha256": "1312e4c18642dd192be7f6755720783d0956b166b61fc4e472d678feb889411e",
+      "reference": "public/assets/characters/race/Believe-Race.png"
+    },
+    {
+      "id": "no_reason",
+      "size": [
+        256,
+        256
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "bounds": [
+        26,
+        6,
+        229,
+        250
+      ],
+      "sourceSha256": "ae4ee5f7ff0ac5b8f7105635665e7e47df54d4f04f5abff8a5bf227774a1413d",
+      "runtimeSha256": "afac81684da8e0b43aa7220e21f0002932a54e5c2af01cd0fc29b8951a25168d",
+      "reference": "public/assets/characters/race/NoReason-Race.png"
+    }
+  ]
+}

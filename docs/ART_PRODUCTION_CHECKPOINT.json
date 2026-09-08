@@ -1,26 +1,16 @@
 {
-  "acceptedArt": 344,
-  "baseCommit": "32d17486c5c8859f430bb5db0cf3cdbe23c14c6f",
-  "batchSize": 10,
+  "acceptedArt": 349,
+  "baseCommit": "ea3de73a02479d5dbac72f004fa0acbf7790600e",
+  "batchSize": 5,
   "completedBatch": [
-    "admire_groove",
-    "dream_journey",
-    "calstone_light_o",
-    "durandal",
-    "bubble_gum_fellow",
-    "sakura_chitose_o",
-    "fenomeno",
-    "blast_onepiece",
-    "almond_eye",
-    "lucky_lilac"
-  ],
-  "completedPortraits": 120,
-  "nextPortraitIds": [
     "dantsu_flame",
     "ks_miracle",
     "jungle_pocket",
     "believe",
-    "no_reason",
+    "no_reason"
+  ],
+  "completedPortraits": 125,
+  "nextPortraitIds": [
     "still_in_love",
     "copano_rickey",
     "hokko_tarumae",
@@ -44,7 +34,7 @@
   ],
   "portraitTarget": 145,
   "remaining": {
-    "portraits": 25,
+    "portraits": 20,
     "battleSheets": 145,
     "cutins": 0
   },
@@ -74,9 +64,9 @@
       "compiled model and runtime verification"
     ]
   },
-  "workflow": "Generate ten distinct portraits, inspect and save to GitHub, verify, then begin the next ten (final remainder allowed). Complete all 145 portraits before rigging one character at a time.",
+  "workflow": "This session generates five distinct portraits, inspects and saves to GitHub, verifies, then begins the next five. Preserve the separate concurrent ten-character batches and reservations. Complete all 145 portraits before rigging one character at a time.",
   "latestTenCharacterBatch": "batch-1003",
-  "latestFiveCharacterBatch": "batch-17",
+  "latestFiveCharacterBatch": "batch-18",
   "activeTenCharacterBatch": {
     "session": "8bd244030e73",
     "batch": "batch-1004",
