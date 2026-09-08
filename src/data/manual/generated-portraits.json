@@ -2539,5 +2539,110 @@
       256
     ],
     "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "royce_and_royce": {
+    "file": "portraits/royce_and_royce.png",
+    "source": "docs/art-source/portraits/batch-20/royce_and_royce.png",
+    "sourceSha256": "93cfbf03ffb17daaee60045ad1998adf646483c648dfb7c497f88ada2d16a56a",
+    "reference": "public/assets/characters/race/RoyceAndRoyce-Race.png",
+    "sourceSize": [
+      1223,
+      1286
+    ],
+    "crop": [
+      0,
+      0,
+      1222,
+      1286
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "katsuragi_ace": {
+    "file": "portraits/katsuragi_ace.png",
+    "source": "docs/art-source/portraits/batch-20/katsuragi_ace.png",
+    "sourceSha256": "1fbe56929db69c0205fe97286bc2cee8ee28d9bd3927fcb2c7351abdea3ab77f",
+    "reference": "public/assets/characters/race/KatsuragiAce-Race.png",
+    "sourceSize": [
+      1227,
+      1282
+    ],
+    "crop": [
+      0,
+      0,
+      1227,
+      1282
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "neo_universe": {
+    "file": "portraits/neo_universe.png",
+    "source": "docs/art-source/portraits/batch-20/neo_universe.png",
+    "sourceSha256": "59ce03a39ccd52a0938a5b9df5e88f84d6246fa11aebcf303aeea0af6b47a673",
+    "reference": "public/assets/characters/race/NeoUniverse-Race.png",
+    "sourceSize": [
+      1204,
+      1306
+    ],
+    "crop": [
+      0,
+      0,
+      1204,
+      1306
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "hishi_miracle": {
+    "file": "portraits/hishi_miracle.png",
+    "source": "docs/art-source/portraits/batch-20/hishi_miracle.png",
+    "sourceSha256": "e318f4f21443abe78faea2bcc7275d7181e5cbfd0e92ec6d1735fdd7d41c162f",
+    "reference": "public/assets/characters/race/HishiMiracle-Race.png",
+    "sourceSize": [
+      1214,
+      1295
+    ],
+    "crop": [
+      0,
+      0,
+      1190,
+      1295
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "tap_dance_city": {
+    "file": "portraits/tap_dance_city.png",
+    "source": "docs/art-source/portraits/batch-20/tap_dance_city.png",
+    "sourceSha256": "c9495bff29e0b0a9e74857fcfb8300ce463121bbdbc158aaa977e7fc9dfb0dbb",
+    "reference": "public/assets/characters/race/TapDanceCity-Race.png",
+    "sourceSize": [
+      1230,
+      1278
+    ],
+    "crop": [
+      0,
+      0,
+      1212,
+      1278
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
   }
 }

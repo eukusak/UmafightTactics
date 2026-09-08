@@ -1,0 +1,106 @@
+{
+  "batchSize": 5,
+  "validation": "new portraits only; full app test/build not rerun",
+  "files": [
+    {
+      "id": "royce_and_royce",
+      "size": [
+        256,
+        256
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "bounds": [
+        23,
+        6,
+        243,
+        250
+      ],
+      "sourceSha256": "93cfbf03ffb17daaee60045ad1998adf646483c648dfb7c497f88ada2d16a56a",
+      "runtimeSha256": "e4fa7be39e7c2b00adfcdeeb5c9084bb258cc90fab12e48427f265b4bd8c90cd",
+      "reference": "public/assets/characters/race/RoyceAndRoyce-Race.png"
+    },
+    {
+      "id": "katsuragi_ace",
+      "size": [
+        256,
+        256
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "bounds": [
+        11,
+        6,
+        245,
+        250
+      ],
+      "sourceSha256": "1fbe56929db69c0205fe97286bc2cee8ee28d9bd3927fcb2c7351abdea3ab77f",
+      "runtimeSha256": "08bad7f55068573c709fafc57109c0d54cb316584f84da44f694c510a87d25d4",
+      "reference": "public/assets/characters/race/KatsuragiAce-Race.png"
+    },
+    {
+      "id": "neo_universe",
+      "size": [
+        256,
+        256
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "bounds": [
+        15,
+        6,
+        240,
+        250
+      ],
+      "sourceSha256": "59ce03a39ccd52a0938a5b9df5e88f84d6246fa11aebcf303aeea0af6b47a673",
+      "runtimeSha256": "c099e26dc4ddeae2dc9e1d72e713c210777285537c9d44f9e40d14b0272db973",
+      "reference": "public/assets/characters/race/NeoUniverse-Race.png"
+    },
+    {
+      "id": "hishi_miracle",
+      "size": [
+        256,
+        256
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "bounds": [
+        32,
+        6,
+        238,
+        250
+      ],
+      "sourceSha256": "e318f4f21443abe78faea2bcc7275d7181e5cbfd0e92ec6d1735fdd7d41c162f",
+      "runtimeSha256": "07342a78e64e5cc74ca4574195ca842890a67e085d58d87b561ac7ef3888bef4",
+      "reference": "public/assets/characters/race/HishiMiracle-Race.png"
+    },
+    {
+      "id": "tap_dance_city",
+      "size": [
+        256,
+        256
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "bounds": [
+        31,
+        6,
+        231,
+        250
+      ],
+      "sourceSha256": "c9495bff29e0b0a9e74857fcfb8300ce463121bbdbc158aaa977e7fc9dfb0dbb",
+      "runtimeSha256": "efd21e9da5e5c009d0b7005e433f7d597befce772b2520ac674e4e912cd1c746",
+      "reference": "public/assets/characters/race/TapDanceCity-Race.png"
+    }
+  ]
+}
