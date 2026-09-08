@@ -1,0 +1,443 @@
+{
+  "format": "uft-baked-frames-v1",
+  "scale": 0.4425531914893617,
+  "anchor": [
+    64,
+    110
+  ],
+  "runtimeSha256": "b90d12a4abda69e4e36bab022cb5f103ddfcadfb0215bd5b2a3fd67a404dcaa6",
+  "frames": [
+    {
+      "frame": 0,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/production-144/eishin_flash/alpha.png",
+      "sourceSha256": "59be0b15d21f92cfb314347aebe1c3afa2f651755157309a8d91d9b5d1d7e36c",
+      "crop": [
+        54,
+        26,
+        201,
+        256
+      ],
+      "destination": [
+        31,
+        8,
+        65,
+        102
+      ]
+    },
+    {
+      "frame": 1,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/production-144/eishin_flash/alpha.png",
+      "sourceSha256": "59be0b15d21f92cfb314347aebe1c3afa2f651755157309a8d91d9b5d1d7e36c",
+      "crop": [
+        310,
+        25,
+        453,
+        255
+      ],
+      "destination": [
+        160,
+        8,
+        63,
+        102
+      ]
+    },
+    {
+      "frame": 2,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/production-144/eishin_flash/alpha.png",
+      "sourceSha256": "59be0b15d21f92cfb314347aebe1c3afa2f651755157309a8d91d9b5d1d7e36c",
+      "crop": [
+        558,
+        26,
+        699,
+        255
+      ],
+      "destination": [
+        289,
+        9,
+        62,
+        101
+      ]
+    },
+    {
+      "frame": 3,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/production-144/eishin_flash/alpha.png",
+      "sourceSha256": "59be0b15d21f92cfb314347aebe1c3afa2f651755157309a8d91d9b5d1d7e36c",
+      "crop": [
+        822,
+        25,
+        969,
+        256
+      ],
+      "destination": [
+        415,
+        8,
+        65,
+        102
+      ]
+    },
+    {
+      "frame": 4,
+      "sourceFrame": 4,
+      "source": "docs/art-source/motions/production-144/eishin_flash/alpha.png",
+      "sourceSha256": "59be0b15d21f92cfb314347aebe1c3afa2f651755157309a8d91d9b5d1d7e36c",
+      "crop": [
+        42,
+        280,
+        212,
+        507
+      ],
+      "destination": [
+        26,
+        138,
+        75,
+        100
+      ]
+    },
+    {
+      "frame": 5,
+      "sourceFrame": 5,
+      "source": "docs/art-source/motions/production-144/eishin_flash/alpha.png",
+      "sourceSha256": "59be0b15d21f92cfb314347aebe1c3afa2f651755157309a8d91d9b5d1d7e36c",
+      "crop": [
+        283,
+        280,
+        462,
+        508
+      ],
+      "destination": [
+        152,
+        137,
+        79,
+        101
+      ]
+    },
+    {
+      "frame": 6,
+      "sourceFrame": 6,
+      "source": "docs/art-source/motions/production-144/eishin_flash/alpha.png",
+      "sourceSha256": "59be0b15d21f92cfb314347aebe1c3afa2f651755157309a8d91d9b5d1d7e36c",
+      "crop": [
+        545,
+        278,
+        722,
+        508
+      ],
+      "destination": [
+        281,
+        136,
+        78,
+        102
+      ]
+    },
+    {
+      "frame": 7,
+      "sourceFrame": 7,
+      "source": "docs/art-source/motions/production-144/eishin_flash/alpha.png",
+      "sourceSha256": "59be0b15d21f92cfb314347aebe1c3afa2f651755157309a8d91d9b5d1d7e36c",
+      "crop": [
+        795,
+        283,
+        977,
+        508
+      ],
+      "destination": [
+        407,
+        138,
+        81,
+        100
+      ]
+    },
+    {
+      "frame": 8,
+      "sourceFrame": 8,
+      "source": "docs/art-source/motions/production-144/eishin_flash/alpha.png",
+      "sourceSha256": "59be0b15d21f92cfb314347aebe1c3afa2f651755157309a8d91d9b5d1d7e36c",
+      "crop": [
+        46,
+        529,
+        206,
+        764
+      ],
+      "destination": [
+        28,
+        262,
+        71,
+        104
+      ]
+    },
+    {
+      "frame": 9,
+      "sourceFrame": 9,
+      "source": "docs/art-source/motions/production-144/eishin_flash/alpha.png",
+      "sourceSha256": "59be0b15d21f92cfb314347aebe1c3afa2f651755157309a8d91d9b5d1d7e36c",
+      "crop": [
+        309,
+        529,
+        462,
+        764
+      ],
+      "destination": [
+        158,
+        262,
+        68,
+        104
+      ]
+    },
+    {
+      "frame": 10,
+      "sourceFrame": 10,
+      "source": "docs/art-source/motions/production-144/eishin_flash/alpha.png",
+      "sourceSha256": "59be0b15d21f92cfb314347aebe1c3afa2f651755157309a8d91d9b5d1d7e36c",
+      "crop": [
+        552,
+        532,
+        744,
+        764
+      ],
+      "destination": [
+        277,
+        263,
+        85,
+        103
+      ]
+    },
+    {
+      "frame": 11,
+      "sourceFrame": 11,
+      "source": "docs/art-source/motions/production-144/eishin_flash/alpha.png",
+      "sourceSha256": "59be0b15d21f92cfb314347aebe1c3afa2f651755157309a8d91d9b5d1d7e36c",
+      "crop": [
+        820,
+        531,
+        968,
+        764
+      ],
+      "destination": [
+        415,
+        263,
+        65,
+        103
+      ]
+    },
+    {
+      "frame": 12,
+      "sourceFrame": 12,
+      "source": "docs/art-source/motions/production-144/eishin_flash/alpha.png",
+      "sourceSha256": "59be0b15d21f92cfb314347aebe1c3afa2f651755157309a8d91d9b5d1d7e36c",
+      "crop": [
+        46,
+        794,
+        228,
+        1024
+      ],
+      "destination": [
+        23,
+        392,
+        81,
+        102
+      ]
+    },
+    {
+      "frame": 13,
+      "sourceFrame": 13,
+      "source": "docs/art-source/motions/production-144/eishin_flash/alpha.png",
+      "sourceSha256": "59be0b15d21f92cfb314347aebe1c3afa2f651755157309a8d91d9b5d1d7e36c",
+      "crop": [
+        321,
+        794,
+        461,
+        1024
+      ],
+      "destination": [
+        161,
+        392,
+        62,
+        102
+      ]
+    },
+    {
+      "frame": 14,
+      "sourceFrame": 14,
+      "source": "docs/art-source/motions/production-144/eishin_flash/alpha.png",
+      "sourceSha256": "59be0b15d21f92cfb314347aebe1c3afa2f651755157309a8d91d9b5d1d7e36c",
+      "crop": [
+        561,
+        798,
+        736,
+        1024
+      ],
+      "destination": [
+        281,
+        394,
+        77,
+        100
+      ]
+    },
+    {
+      "frame": 15,
+      "sourceFrame": 15,
+      "source": "docs/art-source/motions/production-144/eishin_flash/alpha.png",
+      "sourceSha256": "59be0b15d21f92cfb314347aebe1c3afa2f651755157309a8d91d9b5d1d7e36c",
+      "crop": [
+        836,
+        795,
+        965,
+        1024
+      ],
+      "destination": [
+        419,
+        393,
+        57,
+        101
+      ]
+    },
+    {
+      "frame": 16,
+      "sourceFrame": 16,
+      "source": "docs/art-source/motions/production-144/eishin_flash/alpha.png",
+      "sourceSha256": "59be0b15d21f92cfb314347aebe1c3afa2f651755157309a8d91d9b5d1d7e36c",
+      "crop": [
+        68,
+        1051,
+        209,
+        1267
+      ],
+      "destination": [
+        33,
+        526,
+        62,
+        96
+      ]
+    },
+    {
+      "frame": 17,
+      "sourceFrame": 17,
+      "source": "docs/art-source/motions/production-144/eishin_flash/alpha.png",
+      "sourceSha256": "59be0b15d21f92cfb314347aebe1c3afa2f651755157309a8d91d9b5d1d7e36c",
+      "crop": [
+        309,
+        1089,
+        469,
+        1262
+      ],
+      "destination": [
+        156,
+        545,
+        71,
+        77
+      ]
+    },
+    {
+      "frame": 18,
+      "sourceFrame": 18,
+      "source": "docs/art-source/motions/production-144/eishin_flash/alpha.png",
+      "sourceSha256": "59be0b15d21f92cfb314347aebe1c3afa2f651755157309a8d91d9b5d1d7e36c",
+      "crop": [
+        543,
+        1093,
+        725,
+        1266
+      ],
+      "destination": [
+        279,
+        545,
+        81,
+        77
+      ]
+    },
+    {
+      "frame": 19,
+      "sourceFrame": 19,
+      "source": "docs/art-source/motions/production-144/eishin_flash/alpha.png",
+      "sourceSha256": "59be0b15d21f92cfb314347aebe1c3afa2f651755157309a8d91d9b5d1d7e36c",
+      "crop": [
+        790,
+        1161,
+        990,
+        1259
+      ],
+      "destination": [
+        403,
+        579,
+        89,
+        43
+      ]
+    },
+    {
+      "frame": 20,
+      "sourceFrame": 20,
+      "source": "docs/art-source/motions/production-144/eishin_flash/alpha.png",
+      "sourceSha256": "59be0b15d21f92cfb314347aebe1c3afa2f651755157309a8d91d9b5d1d7e36c",
+      "crop": [
+        71,
+        1296,
+        204,
+        1518
+      ],
+      "destination": [
+        34,
+        652,
+        59,
+        98
+      ]
+    },
+    {
+      "frame": 21,
+      "sourceFrame": 21,
+      "source": "docs/art-source/motions/production-144/eishin_flash/alpha.png",
+      "sourceSha256": "59be0b15d21f92cfb314347aebe1c3afa2f651755157309a8d91d9b5d1d7e36c",
+      "crop": [
+        309,
+        1291,
+        471,
+        1497
+      ],
+      "destination": [
+        156,
+        659,
+        72,
+        91
+      ]
+    },
+    {
+      "frame": 22,
+      "sourceFrame": 22,
+      "source": "docs/art-source/motions/production-144/eishin_flash/alpha.png",
+      "sourceSha256": "59be0b15d21f92cfb314347aebe1c3afa2f651755157309a8d91d9b5d1d7e36c",
+      "crop": [
+        563,
+        1290,
+        700,
+        1520
+      ],
+      "destination": [
+        289,
+        648,
+        61,
+        102
+      ]
+    },
+    {
+      "frame": 23,
+      "sourceFrame": 23,
+      "source": "docs/art-source/motions/production-144/eishin_flash/alpha.png",
+      "sourceSha256": "59be0b15d21f92cfb314347aebe1c3afa2f651755157309a8d91d9b5d1d7e36c",
+      "crop": [
+        834,
+        1294,
+        955,
+        1521
+      ],
+      "destination": [
+        421,
+        650,
+        54,
+        100
+      ]
+    }
+  ]
+}

@@ -1,0 +1,443 @@
+{
+  "format": "uft-baked-frames-v1",
+  "scale": 0.42276422764227645,
+  "anchor": [
+    64,
+    110
+  ],
+  "runtimeSha256": "c4a06bd87a234566f1ffdb0c6a4328bedab452f0a1c84bf731919830bfa0b5e4",
+  "frames": [
+    {
+      "frame": 0,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/production-144/seeking_the_pearl/alpha.png",
+      "sourceSha256": "fa45954627188357020f6f563be8042ac706d42a90e71eac0032d6d29b57336a",
+      "crop": [
+        51,
+        17,
+        198,
+        261
+      ],
+      "destination": [
+        33,
+        7,
+        62,
+        103
+      ]
+    },
+    {
+      "frame": 1,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/production-144/seeking_the_pearl/alpha.png",
+      "sourceSha256": "fa45954627188357020f6f563be8042ac706d42a90e71eac0032d6d29b57336a",
+      "crop": [
+        300,
+        17,
+        448,
+        261
+      ],
+      "destination": [
+        160,
+        7,
+        63,
+        103
+      ]
+    },
+    {
+      "frame": 2,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/production-144/seeking_the_pearl/alpha.png",
+      "sourceSha256": "fa45954627188357020f6f563be8042ac706d42a90e71eac0032d6d29b57336a",
+      "crop": [
+        555,
+        16,
+        703,
+        261
+      ],
+      "destination": [
+        288,
+        6,
+        63,
+        104
+      ]
+    },
+    {
+      "frame": 3,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/production-144/seeking_the_pearl/alpha.png",
+      "sourceSha256": "fa45954627188357020f6f563be8042ac706d42a90e71eac0032d6d29b57336a",
+      "crop": [
+        813,
+        17,
+        955,
+        261
+      ],
+      "destination": [
+        418,
+        7,
+        60,
+        103
+      ]
+    },
+    {
+      "frame": 4,
+      "sourceFrame": 4,
+      "source": "docs/art-source/motions/production-144/seeking_the_pearl/alpha.png",
+      "sourceSha256": "fa45954627188357020f6f563be8042ac706d42a90e71eac0032d6d29b57336a",
+      "crop": [
+        33,
+        278,
+        216,
+        517
+      ],
+      "destination": [
+        25,
+        137,
+        77,
+        101
+      ]
+    },
+    {
+      "frame": 5,
+      "sourceFrame": 5,
+      "source": "docs/art-source/motions/production-144/seeking_the_pearl/alpha.png",
+      "sourceSha256": "fa45954627188357020f6f563be8042ac706d42a90e71eac0032d6d29b57336a",
+      "crop": [
+        284,
+        278,
+        468,
+        505
+      ],
+      "destination": [
+        153,
+        142,
+        78,
+        96
+      ]
+    },
+    {
+      "frame": 6,
+      "sourceFrame": 6,
+      "source": "docs/art-source/motions/production-144/seeking_the_pearl/alpha.png",
+      "sourceSha256": "fa45954627188357020f6f563be8042ac706d42a90e71eac0032d6d29b57336a",
+      "crop": [
+        537,
+        283,
+        725,
+        517
+      ],
+      "destination": [
+        280,
+        139,
+        79,
+        99
+      ]
+    },
+    {
+      "frame": 7,
+      "sourceFrame": 7,
+      "source": "docs/art-source/motions/production-144/seeking_the_pearl/alpha.png",
+      "sourceSha256": "fa45954627188357020f6f563be8042ac706d42a90e71eac0032d6d29b57336a",
+      "crop": [
+        791,
+        280,
+        975,
+        517
+      ],
+      "destination": [
+        409,
+        138,
+        78,
+        100
+      ]
+    },
+    {
+      "frame": 8,
+      "sourceFrame": 8,
+      "source": "docs/art-source/motions/production-144/seeking_the_pearl/alpha.png",
+      "sourceSha256": "fa45954627188357020f6f563be8042ac706d42a90e71eac0032d6d29b57336a",
+      "crop": [
+        37,
+        530,
+        227,
+        768
+      ],
+      "destination": [
+        24,
+        265,
+        80,
+        101
+      ]
+    },
+    {
+      "frame": 9,
+      "sourceFrame": 9,
+      "source": "docs/art-source/motions/production-144/seeking_the_pearl/alpha.png",
+      "sourceSha256": "fa45954627188357020f6f563be8042ac706d42a90e71eac0032d6d29b57336a",
+      "crop": [
+        288,
+        530,
+        450,
+        768
+      ],
+      "destination": [
+        158,
+        265,
+        68,
+        101
+      ]
+    },
+    {
+      "frame": 10,
+      "sourceFrame": 10,
+      "source": "docs/art-source/motions/production-144/seeking_the_pearl/alpha.png",
+      "sourceSha256": "fa45954627188357020f6f563be8042ac706d42a90e71eac0032d6d29b57336a",
+      "crop": [
+        539,
+        530,
+        742,
+        768
+      ],
+      "destination": [
+        277,
+        265,
+        86,
+        101
+      ]
+    },
+    {
+      "frame": 11,
+      "sourceFrame": 11,
+      "source": "docs/art-source/motions/production-144/seeking_the_pearl/alpha.png",
+      "sourceSha256": "fa45954627188357020f6f563be8042ac706d42a90e71eac0032d6d29b57336a",
+      "crop": [
+        809,
+        532,
+        963,
+        768
+      ],
+      "destination": [
+        415,
+        266,
+        65,
+        100
+      ]
+    },
+    {
+      "frame": 12,
+      "sourceFrame": 12,
+      "source": "docs/art-source/motions/production-144/seeking_the_pearl/alpha.png",
+      "sourceSha256": "fa45954627188357020f6f563be8042ac706d42a90e71eac0032d6d29b57336a",
+      "crop": [
+        39,
+        789,
+        228,
+        1027
+      ],
+      "destination": [
+        24,
+        393,
+        80,
+        101
+      ]
+    },
+    {
+      "frame": 13,
+      "sourceFrame": 13,
+      "source": "docs/art-source/motions/production-144/seeking_the_pearl/alpha.png",
+      "sourceSha256": "fa45954627188357020f6f563be8042ac706d42a90e71eac0032d6d29b57336a",
+      "crop": [
+        289,
+        791,
+        479,
+        1027
+      ],
+      "destination": [
+        152,
+        394,
+        80,
+        100
+      ]
+    },
+    {
+      "frame": 14,
+      "sourceFrame": 14,
+      "source": "docs/art-source/motions/production-144/seeking_the_pearl/alpha.png",
+      "sourceSha256": "fa45954627188357020f6f563be8042ac706d42a90e71eac0032d6d29b57336a",
+      "crop": [
+        546,
+        785,
+        743,
+        1027
+      ],
+      "destination": [
+        278,
+        392,
+        83,
+        102
+      ]
+    },
+    {
+      "frame": 15,
+      "sourceFrame": 15,
+      "source": "docs/art-source/motions/production-144/seeking_the_pearl/alpha.png",
+      "sourceSha256": "fa45954627188357020f6f563be8042ac706d42a90e71eac0032d6d29b57336a",
+      "crop": [
+        810,
+        793,
+        977,
+        1028
+      ],
+      "destination": [
+        412,
+        395,
+        71,
+        99
+      ]
+    },
+    {
+      "frame": 16,
+      "sourceFrame": 16,
+      "source": "docs/art-source/motions/production-144/seeking_the_pearl/alpha.png",
+      "sourceSha256": "fa45954627188357020f6f563be8042ac706d42a90e71eac0032d6d29b57336a",
+      "crop": [
+        37,
+        1054,
+        214,
+        1270
+      ],
+      "destination": [
+        26,
+        531,
+        75,
+        91
+      ]
+    },
+    {
+      "frame": 17,
+      "sourceFrame": 17,
+      "source": "docs/art-source/motions/production-144/seeking_the_pearl/alpha.png",
+      "sourceSha256": "fa45954627188357020f6f563be8042ac706d42a90e71eac0032d6d29b57336a",
+      "crop": [
+        289,
+        1091,
+        469,
+        1259
+      ],
+      "destination": [
+        154,
+        551,
+        76,
+        71
+      ]
+    },
+    {
+      "frame": 18,
+      "sourceFrame": 18,
+      "source": "docs/art-source/motions/production-144/seeking_the_pearl/alpha.png",
+      "sourceSha256": "fa45954627188357020f6f563be8042ac706d42a90e71eac0032d6d29b57336a",
+      "crop": [
+        536,
+        1100,
+        718,
+        1264
+      ],
+      "destination": [
+        281,
+        553,
+        77,
+        69
+      ]
+    },
+    {
+      "frame": 19,
+      "sourceFrame": 19,
+      "source": "docs/art-source/motions/production-144/seeking_the_pearl/alpha.png",
+      "sourceSha256": "fa45954627188357020f6f563be8042ac706d42a90e71eac0032d6d29b57336a",
+      "crop": [
+        769,
+        1157,
+        999,
+        1258
+      ],
+      "destination": [
+        399,
+        579,
+        97,
+        43
+      ]
+    },
+    {
+      "frame": 20,
+      "sourceFrame": 20,
+      "source": "docs/art-source/motions/production-144/seeking_the_pearl/alpha.png",
+      "sourceSha256": "fa45954627188357020f6f563be8042ac706d42a90e71eac0032d6d29b57336a",
+      "crop": [
+        49,
+        1282,
+        196,
+        1527
+      ],
+      "destination": [
+        33,
+        646,
+        62,
+        104
+      ]
+    },
+    {
+      "frame": 21,
+      "sourceFrame": 21,
+      "source": "docs/art-source/motions/production-144/seeking_the_pearl/alpha.png",
+      "sourceSha256": "fa45954627188357020f6f563be8042ac706d42a90e71eac0032d6d29b57336a",
+      "crop": [
+        300,
+        1281,
+        449,
+        1527
+      ],
+      "destination": [
+        160,
+        646,
+        63,
+        104
+      ]
+    },
+    {
+      "frame": 22,
+      "sourceFrame": 22,
+      "source": "docs/art-source/motions/production-144/seeking_the_pearl/alpha.png",
+      "sourceSha256": "fa45954627188357020f6f563be8042ac706d42a90e71eac0032d6d29b57336a",
+      "crop": [
+        546,
+        1281,
+        700,
+        1527
+      ],
+      "destination": [
+        287,
+        646,
+        65,
+        104
+      ]
+    },
+    {
+      "frame": 23,
+      "sourceFrame": 23,
+      "source": "docs/art-source/motions/production-144/seeking_the_pearl/alpha.png",
+      "sourceSha256": "fa45954627188357020f6f563be8042ac706d42a90e71eac0032d6d29b57336a",
+      "crop": [
+        820,
+        1282,
+        995,
+        1527
+      ],
+      "destination": [
+        411,
+        646,
+        74,
+        104
+      ]
+    }
+  ]
+}

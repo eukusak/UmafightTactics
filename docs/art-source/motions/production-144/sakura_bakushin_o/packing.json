@@ -1,0 +1,443 @@
+{
+  "format": "uft-baked-frames-v1",
+  "scale": 0.41767068273092367,
+  "anchor": [
+    64,
+    110
+  ],
+  "runtimeSha256": "4e850134449b96d34d8723f64600824857cf6a875b058bd8c3a687235ade0bf3",
+  "frames": [
+    {
+      "frame": 0,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/production-144/sakura_bakushin_o/alpha.png",
+      "sourceSha256": "7bc3b878d6bcef080be55474f5e46a047af1fa7be22d85a90d94969d1c01e079",
+      "crop": [
+        62,
+        31,
+        214,
+        263
+      ],
+      "destination": [
+        32,
+        13,
+        63,
+        97
+      ]
+    },
+    {
+      "frame": 1,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/production-144/sakura_bakushin_o/alpha.png",
+      "sourceSha256": "7bc3b878d6bcef080be55474f5e46a047af1fa7be22d85a90d94969d1c01e079",
+      "crop": [
+        290,
+        31,
+        450,
+        263
+      ],
+      "destination": [
+        158,
+        13,
+        67,
+        97
+      ]
+    },
+    {
+      "frame": 2,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/production-144/sakura_bakushin_o/alpha.png",
+      "sourceSha256": "7bc3b878d6bcef080be55474f5e46a047af1fa7be22d85a90d94969d1c01e079",
+      "crop": [
+        544,
+        28,
+        697,
+        263
+      ],
+      "destination": [
+        288,
+        12,
+        64,
+        98
+      ]
+    },
+    {
+      "frame": 3,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/production-144/sakura_bakushin_o/alpha.png",
+      "sourceSha256": "7bc3b878d6bcef080be55474f5e46a047af1fa7be22d85a90d94969d1c01e079",
+      "crop": [
+        812,
+        33,
+        962,
+        263
+      ],
+      "destination": [
+        416,
+        14,
+        63,
+        96
+      ]
+    },
+    {
+      "frame": 4,
+      "sourceFrame": 4,
+      "source": "docs/art-source/motions/production-144/sakura_bakushin_o/alpha.png",
+      "sourceSha256": "7bc3b878d6bcef080be55474f5e46a047af1fa7be22d85a90d94969d1c01e079",
+      "crop": [
+        36,
+        292,
+        226,
+        512
+      ],
+      "destination": [
+        24,
+        146,
+        79,
+        92
+      ]
+    },
+    {
+      "frame": 5,
+      "sourceFrame": 5,
+      "source": "docs/art-source/motions/production-144/sakura_bakushin_o/alpha.png",
+      "sourceSha256": "7bc3b878d6bcef080be55474f5e46a047af1fa7be22d85a90d94969d1c01e079",
+      "crop": [
+        287,
+        296,
+        483,
+        508
+      ],
+      "destination": [
+        151,
+        149,
+        82,
+        89
+      ]
+    },
+    {
+      "frame": 6,
+      "sourceFrame": 6,
+      "source": "docs/art-source/motions/production-144/sakura_bakushin_o/alpha.png",
+      "sourceSha256": "7bc3b878d6bcef080be55474f5e46a047af1fa7be22d85a90d94969d1c01e079",
+      "crop": [
+        527,
+        298,
+        724,
+        512
+      ],
+      "destination": [
+        279,
+        149,
+        82,
+        89
+      ]
+    },
+    {
+      "frame": 7,
+      "sourceFrame": 7,
+      "source": "docs/art-source/motions/production-144/sakura_bakushin_o/alpha.png",
+      "sourceSha256": "7bc3b878d6bcef080be55474f5e46a047af1fa7be22d85a90d94969d1c01e079",
+      "crop": [
+        802,
+        288,
+        993,
+        512
+      ],
+      "destination": [
+        408,
+        144,
+        80,
+        94
+      ]
+    },
+    {
+      "frame": 8,
+      "sourceFrame": 8,
+      "source": "docs/art-source/motions/production-144/sakura_bakushin_o/alpha.png",
+      "sourceSha256": "7bc3b878d6bcef080be55474f5e46a047af1fa7be22d85a90d94969d1c01e079",
+      "crop": [
+        45,
+        532,
+        228,
+        767
+      ],
+      "destination": [
+        26,
+        268,
+        76,
+        98
+      ]
+    },
+    {
+      "frame": 9,
+      "sourceFrame": 9,
+      "source": "docs/art-source/motions/production-144/sakura_bakushin_o/alpha.png",
+      "sourceSha256": "7bc3b878d6bcef080be55474f5e46a047af1fa7be22d85a90d94969d1c01e079",
+      "crop": [
+        285,
+        529,
+        475,
+        767
+      ],
+      "destination": [
+        152,
+        267,
+        79,
+        99
+      ]
+    },
+    {
+      "frame": 10,
+      "sourceFrame": 10,
+      "source": "docs/art-source/motions/production-144/sakura_bakushin_o/alpha.png",
+      "sourceSha256": "7bc3b878d6bcef080be55474f5e46a047af1fa7be22d85a90d94969d1c01e079",
+      "crop": [
+        542,
+        532,
+        757,
+        767
+      ],
+      "destination": [
+        275,
+        268,
+        90,
+        98
+      ]
+    },
+    {
+      "frame": 11,
+      "sourceFrame": 11,
+      "source": "docs/art-source/motions/production-144/sakura_bakushin_o/alpha.png",
+      "sourceSha256": "7bc3b878d6bcef080be55474f5e46a047af1fa7be22d85a90d94969d1c01e079",
+      "crop": [
+        813,
+        530,
+        969,
+        767
+      ],
+      "destination": [
+        415,
+        267,
+        65,
+        99
+      ]
+    },
+    {
+      "frame": 12,
+      "sourceFrame": 12,
+      "source": "docs/art-source/motions/production-144/sakura_bakushin_o/alpha.png",
+      "sourceSha256": "7bc3b878d6bcef080be55474f5e46a047af1fa7be22d85a90d94969d1c01e079",
+      "crop": [
+        58,
+        785,
+        201,
+        1029
+      ],
+      "destination": [
+        34,
+        392,
+        60,
+        102
+      ]
+    },
+    {
+      "frame": 13,
+      "sourceFrame": 13,
+      "source": "docs/art-source/motions/production-144/sakura_bakushin_o/alpha.png",
+      "sourceSha256": "7bc3b878d6bcef080be55474f5e46a047af1fa7be22d85a90d94969d1c01e079",
+      "crop": [
+        295,
+        781,
+        479,
+        1030
+      ],
+      "destination": [
+        153,
+        390,
+        77,
+        104
+      ]
+    },
+    {
+      "frame": 14,
+      "sourceFrame": 14,
+      "source": "docs/art-source/motions/production-144/sakura_bakushin_o/alpha.png",
+      "sourceSha256": "7bc3b878d6bcef080be55474f5e46a047af1fa7be22d85a90d94969d1c01e079",
+      "crop": [
+        549,
+        784,
+        752,
+        1030
+      ],
+      "destination": [
+        277,
+        391,
+        85,
+        103
+      ]
+    },
+    {
+      "frame": 15,
+      "sourceFrame": 15,
+      "source": "docs/art-source/motions/production-144/sakura_bakushin_o/alpha.png",
+      "sourceSha256": "7bc3b878d6bcef080be55474f5e46a047af1fa7be22d85a90d94969d1c01e079",
+      "crop": [
+        811,
+        787,
+        970,
+        1030
+      ],
+      "destination": [
+        415,
+        393,
+        66,
+        101
+      ]
+    },
+    {
+      "frame": 16,
+      "sourceFrame": 16,
+      "source": "docs/art-source/motions/production-144/sakura_bakushin_o/alpha.png",
+      "sourceSha256": "7bc3b878d6bcef080be55474f5e46a047af1fa7be22d85a90d94969d1c01e079",
+      "crop": [
+        49,
+        1065,
+        224,
+        1272
+      ],
+      "destination": [
+        27,
+        536,
+        73,
+        86
+      ]
+    },
+    {
+      "frame": 17,
+      "sourceFrame": 17,
+      "source": "docs/art-source/motions/production-144/sakura_bakushin_o/alpha.png",
+      "sourceSha256": "7bc3b878d6bcef080be55474f5e46a047af1fa7be22d85a90d94969d1c01e079",
+      "crop": [
+        299,
+        1102,
+        481,
+        1267
+      ],
+      "destination": [
+        154,
+        553,
+        76,
+        69
+      ]
+    },
+    {
+      "frame": 18,
+      "sourceFrame": 18,
+      "source": "docs/art-source/motions/production-144/sakura_bakushin_o/alpha.png",
+      "sourceSha256": "7bc3b878d6bcef080be55474f5e46a047af1fa7be22d85a90d94969d1c01e079",
+      "crop": [
+        544,
+        1092,
+        703,
+        1268
+      ],
+      "destination": [
+        287,
+        548,
+        66,
+        74
+      ]
+    },
+    {
+      "frame": 19,
+      "sourceFrame": 19,
+      "source": "docs/art-source/motions/production-144/sakura_bakushin_o/alpha.png",
+      "sourceSha256": "7bc3b878d6bcef080be55474f5e46a047af1fa7be22d85a90d94969d1c01e079",
+      "crop": [
+        778,
+        1155,
+        994,
+        1260
+      ],
+      "destination": [
+        403,
+        578,
+        90,
+        44
+      ]
+    },
+    {
+      "frame": 20,
+      "sourceFrame": 20,
+      "source": "docs/art-source/motions/production-144/sakura_bakushin_o/alpha.png",
+      "sourceSha256": "7bc3b878d6bcef080be55474f5e46a047af1fa7be22d85a90d94969d1c01e079",
+      "crop": [
+        52,
+        1283,
+        196,
+        1524
+      ],
+      "destination": [
+        34,
+        649,
+        60,
+        101
+      ]
+    },
+    {
+      "frame": 21,
+      "sourceFrame": 21,
+      "source": "docs/art-source/motions/production-144/sakura_bakushin_o/alpha.png",
+      "sourceSha256": "7bc3b878d6bcef080be55474f5e46a047af1fa7be22d85a90d94969d1c01e079",
+      "crop": [
+        306,
+        1289,
+        459,
+        1525
+      ],
+      "destination": [
+        160,
+        651,
+        64,
+        99
+      ]
+    },
+    {
+      "frame": 22,
+      "sourceFrame": 22,
+      "source": "docs/art-source/motions/production-144/sakura_bakushin_o/alpha.png",
+      "sourceSha256": "7bc3b878d6bcef080be55474f5e46a047af1fa7be22d85a90d94969d1c01e079",
+      "crop": [
+        551,
+        1280,
+        710,
+        1512
+      ],
+      "destination": [
+        287,
+        653,
+        66,
+        97
+      ]
+    },
+    {
+      "frame": 23,
+      "sourceFrame": 23,
+      "source": "docs/art-source/motions/production-144/sakura_bakushin_o/alpha.png",
+      "sourceSha256": "7bc3b878d6bcef080be55474f5e46a047af1fa7be22d85a90d94969d1c01e079",
+      "crop": [
+        815,
+        1290,
+        962,
+        1527
+      ],
+      "destination": [
+        417,
+        651,
+        61,
+        99
+      ]
+    }
+  ]
+}

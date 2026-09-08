@@ -1,0 +1,443 @@
+{
+  "format": "uft-baked-frames-v1",
+  "scale": 0.4388185654008439,
+  "anchor": [
+    64,
+    110
+  ],
+  "runtimeSha256": "36776e0b48a91363906239031fa41572d56889323ea525dba6b20c939b856fae",
+  "frames": [
+    {
+      "frame": 0,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/production-144/admire_vega/alpha.png",
+      "sourceSha256": "9ce7dc6718c62fcf36f7a29724685b95c7bea8c793ba91182e5ce25e86e8c128",
+      "crop": [
+        51,
+        40,
+        195,
+        277
+      ],
+      "destination": [
+        32,
+        6,
+        63,
+        104
+      ]
+    },
+    {
+      "frame": 1,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/production-144/admire_vega/alpha.png",
+      "sourceSha256": "9ce7dc6718c62fcf36f7a29724685b95c7bea8c793ba91182e5ce25e86e8c128",
+      "crop": [
+        309,
+        41,
+        452,
+        277
+      ],
+      "destination": [
+        160,
+        6,
+        63,
+        104
+      ]
+    },
+    {
+      "frame": 2,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/production-144/admire_vega/alpha.png",
+      "sourceSha256": "9ce7dc6718c62fcf36f7a29724685b95c7bea8c793ba91182e5ce25e86e8c128",
+      "crop": [
+        561,
+        41,
+        705,
+        277
+      ],
+      "destination": [
+        288,
+        6,
+        63,
+        104
+      ]
+    },
+    {
+      "frame": 3,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/production-144/admire_vega/alpha.png",
+      "sourceSha256": "9ce7dc6718c62fcf36f7a29724685b95c7bea8c793ba91182e5ce25e86e8c128",
+      "crop": [
+        816,
+        41,
+        959,
+        277
+      ],
+      "destination": [
+        416,
+        6,
+        63,
+        104
+      ]
+    },
+    {
+      "frame": 4,
+      "sourceFrame": 4,
+      "source": "docs/art-source/motions/production-144/admire_vega/alpha.png",
+      "sourceSha256": "9ce7dc6718c62fcf36f7a29724685b95c7bea8c793ba91182e5ce25e86e8c128",
+      "crop": [
+        28,
+        305,
+        219,
+        533
+      ],
+      "destination": [
+        22,
+        138,
+        84,
+        100
+      ]
+    },
+    {
+      "frame": 5,
+      "sourceFrame": 5,
+      "source": "docs/art-source/motions/production-144/admire_vega/alpha.png",
+      "sourceSha256": "9ce7dc6718c62fcf36f7a29724685b95c7bea8c793ba91182e5ce25e86e8c128",
+      "crop": [
+        277,
+        305,
+        476,
+        523
+      ],
+      "destination": [
+        148,
+        142,
+        87,
+        96
+      ]
+    },
+    {
+      "frame": 6,
+      "sourceFrame": 6,
+      "source": "docs/art-source/motions/production-144/admire_vega/alpha.png",
+      "sourceSha256": "9ce7dc6718c62fcf36f7a29724685b95c7bea8c793ba91182e5ce25e86e8c128",
+      "crop": [
+        535,
+        305,
+        731,
+        533
+      ],
+      "destination": [
+        277,
+        138,
+        86,
+        100
+      ]
+    },
+    {
+      "frame": 7,
+      "sourceFrame": 7,
+      "source": "docs/art-source/motions/production-144/admire_vega/alpha.png",
+      "sourceSha256": "9ce7dc6718c62fcf36f7a29724685b95c7bea8c793ba91182e5ce25e86e8c128",
+      "crop": [
+        790,
+        305,
+        988,
+        533
+      ],
+      "destination": [
+        404,
+        138,
+        87,
+        100
+      ]
+    },
+    {
+      "frame": 8,
+      "sourceFrame": 8,
+      "source": "docs/art-source/motions/production-144/admire_vega/alpha.png",
+      "sourceSha256": "9ce7dc6718c62fcf36f7a29724685b95c7bea8c793ba91182e5ce25e86e8c128",
+      "crop": [
+        38,
+        553,
+        204,
+        782
+      ],
+      "destination": [
+        27,
+        266,
+        73,
+        100
+      ]
+    },
+    {
+      "frame": 9,
+      "sourceFrame": 9,
+      "source": "docs/art-source/motions/production-144/admire_vega/alpha.png",
+      "sourceSha256": "9ce7dc6718c62fcf36f7a29724685b95c7bea8c793ba91182e5ce25e86e8c128",
+      "crop": [
+        289,
+        554,
+        466,
+        782
+      ],
+      "destination": [
+        153,
+        266,
+        78,
+        100
+      ]
+    },
+    {
+      "frame": 10,
+      "sourceFrame": 10,
+      "source": "docs/art-source/motions/production-144/admire_vega/alpha.png",
+      "sourceSha256": "9ce7dc6718c62fcf36f7a29724685b95c7bea8c793ba91182e5ce25e86e8c128",
+      "crop": [
+        548,
+        553,
+        764,
+        782
+      ],
+      "destination": [
+        272,
+        266,
+        95,
+        100
+      ]
+    },
+    {
+      "frame": 11,
+      "sourceFrame": 11,
+      "source": "docs/art-source/motions/production-144/admire_vega/alpha.png",
+      "sourceSha256": "9ce7dc6718c62fcf36f7a29724685b95c7bea8c793ba91182e5ce25e86e8c128",
+      "crop": [
+        813,
+        552,
+        974,
+        782
+      ],
+      "destination": [
+        412,
+        265,
+        71,
+        101
+      ]
+    },
+    {
+      "frame": 12,
+      "sourceFrame": 12,
+      "source": "docs/art-source/motions/production-144/admire_vega/alpha.png",
+      "sourceSha256": "9ce7dc6718c62fcf36f7a29724685b95c7bea8c793ba91182e5ce25e86e8c128",
+      "crop": [
+        33,
+        847,
+        229,
+        1024
+      ],
+      "destination": [
+        21,
+        416,
+        86,
+        78
+      ]
+    },
+    {
+      "frame": 13,
+      "sourceFrame": 13,
+      "source": "docs/art-source/motions/production-144/admire_vega/alpha.png",
+      "sourceSha256": "9ce7dc6718c62fcf36f7a29724685b95c7bea8c793ba91182e5ce25e86e8c128",
+      "crop": [
+        279,
+        826,
+        505,
+        1021
+      ],
+      "destination": [
+        142,
+        408,
+        99,
+        86
+      ]
+    },
+    {
+      "frame": 14,
+      "sourceFrame": 14,
+      "source": "docs/art-source/motions/production-144/admire_vega/alpha.png",
+      "sourceSha256": "9ce7dc6718c62fcf36f7a29724685b95c7bea8c793ba91182e5ce25e86e8c128",
+      "crop": [
+        523,
+        859,
+        768,
+        1006
+      ],
+      "destination": [
+        266,
+        429,
+        108,
+        65
+      ]
+    },
+    {
+      "frame": 15,
+      "sourceFrame": 15,
+      "source": "docs/art-source/motions/production-144/admire_vega/alpha.png",
+      "sourceSha256": "9ce7dc6718c62fcf36f7a29724685b95c7bea8c793ba91182e5ce25e86e8c128",
+      "crop": [
+        807,
+        835,
+        987,
+        1024
+      ],
+      "destination": [
+        408,
+        411,
+        79,
+        83
+      ]
+    },
+    {
+      "frame": 16,
+      "sourceFrame": 16,
+      "source": "docs/art-source/motions/production-144/admire_vega/alpha.png",
+      "sourceSha256": "9ce7dc6718c62fcf36f7a29724685b95c7bea8c793ba91182e5ce25e86e8c128",
+      "crop": [
+        53,
+        1047,
+        209,
+        1266
+      ],
+      "destination": [
+        30,
+        526,
+        68,
+        96
+      ]
+    },
+    {
+      "frame": 17,
+      "sourceFrame": 17,
+      "source": "docs/art-source/motions/production-144/admire_vega/alpha.png",
+      "sourceSha256": "9ce7dc6718c62fcf36f7a29724685b95c7bea8c793ba91182e5ce25e86e8c128",
+      "crop": [
+        296,
+        1077,
+        489,
+        1261
+      ],
+      "destination": [
+        149,
+        541,
+        85,
+        81
+      ]
+    },
+    {
+      "frame": 18,
+      "sourceFrame": 18,
+      "source": "docs/art-source/motions/production-144/admire_vega/alpha.png",
+      "sourceSha256": "9ce7dc6718c62fcf36f7a29724685b95c7bea8c793ba91182e5ce25e86e8c128",
+      "crop": [
+        551,
+        1085,
+        725,
+        1251
+      ],
+      "destination": [
+        282,
+        549,
+        76,
+        73
+      ]
+    },
+    {
+      "frame": 19,
+      "sourceFrame": 19,
+      "source": "docs/art-source/motions/production-144/admire_vega/alpha.png",
+      "sourceSha256": "9ce7dc6718c62fcf36f7a29724685b95c7bea8c793ba91182e5ce25e86e8c128",
+      "crop": [
+        775,
+        1154,
+        993,
+        1254
+      ],
+      "destination": [
+        400,
+        578,
+        96,
+        44
+      ]
+    },
+    {
+      "frame": 20,
+      "sourceFrame": 20,
+      "source": "docs/art-source/motions/production-144/admire_vega/alpha.png",
+      "sourceSha256": "9ce7dc6718c62fcf36f7a29724685b95c7bea8c793ba91182e5ce25e86e8c128",
+      "crop": [
+        58,
+        1281,
+        197,
+        1516
+      ],
+      "destination": [
+        33,
+        647,
+        61,
+        103
+      ]
+    },
+    {
+      "frame": 21,
+      "sourceFrame": 21,
+      "source": "docs/art-source/motions/production-144/admire_vega/alpha.png",
+      "sourceSha256": "9ce7dc6718c62fcf36f7a29724685b95c7bea8c793ba91182e5ce25e86e8c128",
+      "crop": [
+        317,
+        1281,
+        459,
+        1516
+      ],
+      "destination": [
+        161,
+        647,
+        62,
+        103
+      ]
+    },
+    {
+      "frame": 22,
+      "sourceFrame": 22,
+      "source": "docs/art-source/motions/production-144/admire_vega/alpha.png",
+      "sourceSha256": "9ce7dc6718c62fcf36f7a29724685b95c7bea8c793ba91182e5ce25e86e8c128",
+      "crop": [
+        564,
+        1281,
+        708,
+        1516
+      ],
+      "destination": [
+        288,
+        647,
+        63,
+        103
+      ]
+    },
+    {
+      "frame": 23,
+      "sourceFrame": 23,
+      "source": "docs/art-source/motions/production-144/admire_vega/alpha.png",
+      "sourceSha256": "9ce7dc6718c62fcf36f7a29724685b95c7bea8c793ba91182e5ce25e86e8c128",
+      "crop": [
+        830,
+        1281,
+        962,
+        1516
+      ],
+      "destination": [
+        419,
+        647,
+        58,
+        103
+      ]
+    }
+  ]
+}
