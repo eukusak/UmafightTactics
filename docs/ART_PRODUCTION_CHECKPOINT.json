@@ -148,6 +148,23 @@
   ],
   "portraitTarget": 145,
   "completedPortraits": 40,
-  "batchSize": 5,
-  "workflow": "Generate five distinct portraits, inspect and package, commit/push and verify, then begin next five. Complete all 145 portraits before rigging one character at a time."
+  "batchSize": 10,
+  "workflow": "Generate ten distinct portraits, inspect and package, commit/push and verify, then begin next ten (final remainder allowed). Complete all 145 portraits before rigging one character at a time.",
+  "inProgressBatch": {
+    "session": "e17e1cf9437c",
+    "ids": [
+      "logotype",
+      "victoire_pisa",
+      "rose_kingdom",
+      "rulership",
+      "efforia",
+      "titleholder",
+      "phalaenopsis",
+      "verxina",
+      "manhattan_cafe",
+      "espoir_city"
+    ],
+    "status": "generating; other sessions should skip these ids",
+    "batchSize": 10
+  }
 }
