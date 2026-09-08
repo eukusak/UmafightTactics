@@ -1,113 +1,86 @@
-/**
- * The battlefield. In prep it is a DOM hex grid for drag/drop; during a fight it
- * hands playback to the Phaser scene.
- */
+/** One background and projection across preparation and recorded combat. */
 import { useEffect, useRef, useState } from 'react';
 import Phaser from 'phaser';
 import { useGameStore } from '../store/gameStore';
-import { BOARD_COLS, BOARD_ROWS_PER_SIDE } from '../game/engine/constants';
 import { BattleScene } from '../game/phaser/BattleScene';
-import { UnitToken } from './common';
-import { prepPoint } from '../game/ui/board-projection';
-import { arenaUrl } from '../game/ui/art';
+import { Portrait } from './common';
+import { getUnitDef } from '../game/engine/roster';
+import { prepPoint, boardHexPoints } from '../game/ui/board-projection';
+import { arenaUrl, standeeUrl } from '../game/ui/art';
 import { roundInfo } from '../game/engine/rounds/schedule';
 import type { UnitInstance } from '../game/engine/state';
 
 const FIELD_W = 1320;
 const FIELD_H = 658;
 
-export function PrepBoard({
-  onUnitContext,
-}: {
-  onUnitContext: (e: React.MouseEvent, unit: UnitInstance) => void;
-}): JSX.Element | null {
+export function ArenaBackdrop(): JSX.Element {
   const match = useGameStore((s) => s.match);
+  const running = useGameStore((s) => s.battleRunning);
+  useGameStore((s) => s.revision);
+  const background = arenaUrl(match?.stage, !!match && roundInfo(match.stage, match.round).kind === 'PVE');
+  return <div className="arena-backdrop" style={{ backgroundImage: `url(${background})` }}>
+    <svg className="arena-grid" width={FIELD_W} height={FIELD_H} aria-hidden="true">
+      {Array.from({ length: 56 }, (_, i) => {
+        const cell = { q: i % 7, r: Math.floor(i / 7) };
+        return <polygon key={i} points={boardHexPoints(cell).map((p) => `${p.x},${p.y}`).join(' ')} className={cell.r < 4 ? 'enemy' : 'friendly'} />;
+      })}
+    </svg>
+    <div className="arena-phase-label">TWINKLE ARENA <span>{running ? '전투' : '준비 · 클릭 또는 드래그로 배치'}</span></div>
+  </div>;
+}
+
+export function PrepBoard({ onUnitContext }: { onUnitContext: (e: React.MouseEvent, unit: UnitInstance) => void }): JSX.Element | null {
   const player = useGameStore((s) => s.human());
-  const moveUnit = useGameStore((s) => s.moveUnit);
-  const equip = useGameStore((s) => s.equip);
   const selectedUnitId = useGameStore((s) => s.selectedUnitId);
-  const selectUnit = useGameStore((s) => s.selectUnit);
-  const placeSelected = useGameStore((s) => s.placeSelected);
+  const running = useGameStore((s) => s.battleRunning);
   const [dragOver, setDragOver] = useState<string | null>(null);
   useGameStore((s) => s.revision);
   if (!player) return null;
-
-  const byCell = new Map<string, UnitInstance>();
-  for (const u of player.board) if (u.position) byCell.set(`${u.position.q},${u.position.r}`, u);
-
-  const cells: JSX.Element[] = [];
-  for (let r = 0; r < BOARD_ROWS_PER_SIDE; r += 1) {
-    for (let q = 0; q < BOARD_COLS; q += 1) {
-      const key = `${q},${r}`;
-      const unit = byCell.get(key);
-      const { x, y, scale } = prepPoint({ q, r });
-
-      cells.push(
-        <div
-          key={key}
-          className={`arena-cell${unit ? ' occupied' : ''}${dragOver === key ? ' hovered' : ''}`}
-          onDragOver={(e) => { e.preventDefault(); setDragOver(key); }}
-          onDragLeave={() => setDragOver((d) => (d === key ? null : d))}
-          onDrop={(e) => {
-            e.preventDefault();
-            setDragOver(null);
-            const unitId = e.dataTransfer.getData('application/x-unit');
-            const itemId = e.dataTransfer.getData('application/x-item');
-            if (itemId && unit) equip(unit.instanceId, itemId);
-            else if (unitId) moveUnit(unitId, { q, r });
-          }}
-          onClick={() => {
-            // Click-to-place: pick a unit up with one click, drop it with another.
-            if (selectedUnitId) placeSelected({ q, r });
-            else if (unit) selectUnit(unit.instanceId);
-          }}
-          style={{
-            position: 'absolute', left: x - 50 * scale, top: y - 30,
-            width: 100 * scale, height: 60,
-            display: 'grid', placeItems: 'center',
-            background: dragOver === key ? 'rgba(79,227,255,0.3)' : selectedUnitId ? 'rgba(79,227,255,0.14)' : undefined,
-            cursor: selectedUnitId || unit ? 'pointer' : 'default',
-            transition: 'background 0.1s ease',
-          }}
-        >
-          {unit && (
-            <div
-              draggable
-              onDragStart={(e) => {
-                e.dataTransfer.setData('application/x-unit', unit.instanceId);
-                e.dataTransfer.effectAllowed = 'move';
-              }}
-              onContextMenu={(e) => { e.preventDefault(); onUnitContext(e, unit); }}
-              style={{
-                cursor: 'grab', position: 'relative', top: -25,
-                filter: selectedUnitId === unit.instanceId ? 'drop-shadow(0 0 8px var(--gold))' : undefined,
-              }}
-            >
-              <UnitToken unit={unit} size={62} />
-            </div>
-          )}
-        </div>,
-      );
-    }
-  }
-
-  return (
-    <div style={{ position: 'relative', width: FIELD_W, height: FIELD_H }}>
-      <div style={{
-        position: 'absolute', inset: 0,
-        background: `url(${arenaUrl(match?.stage, !!match && roundInfo(match.stage, match.round).kind === 'PVE')}) center / 100% 100%`,
-        borderRadius: 10, border: '2px solid #24384a',
-      }} />
-      <div style={{ position: 'absolute', top: 14, left: 20, color: '#fff5da', fontSize: 14, background: '#122a3b', padding: '8px 14px', borderRadius: 6 }}>
-        TWINKLE ARENA  /  준비 단계 · 클릭 또는 드래그로 배치
-      </div>
-      {cells}
-    </div>
-  );
+  const drop = (e: React.DragEvent, q: number, r: number, unit?: UnitInstance): void => {
+    e.preventDefault(); setDragOver(null);
+    const store = useGameStore.getState();
+    const item = e.dataTransfer.getData('application/x-item');
+    const id = e.dataTransfer.getData('application/x-unit');
+    if (item && unit) store.equip(unit.instanceId, item);
+    else if (id) store.moveUnit(id, { q, r });
+  };
+  const click = (q: number, r: number, unit?: UnitInstance): void => {
+    const store = useGameStore.getState();
+    if (selectedUnitId) store.placeSelected({ q, r });
+    else if (unit) store.selectUnit(unit.instanceId);
+  };
+  return <div className="prep-layer" style={{ pointerEvents: running ? 'none' : undefined }}>
+    {Array.from({ length: 28 }, (_, i) => {
+      const q = i % 7, r = Math.floor(i / 7), key = `${q},${r}`;
+      const p = prepPoint({ q, r });
+      const unit = player.board.find((u) => u.position?.q === q && u.position.r === r);
+      return <div key={key} className={`arena-cell${dragOver === key ? ' hovered' : ''}`}
+        style={{ position: 'absolute', left: p.x - 50 * p.scale, top: p.y - 30, width: 100 * p.scale, height: 60 }}
+        onDragOver={(e) => { e.preventDefault(); setDragOver(key); }} onDragLeave={() => setDragOver(null)}
+        onDrop={(e) => drop(e, q, r, unit)} onClick={() => click(q, r, unit)} />;
+    })}
+    {player.board.filter((u) => u.position).map((unit) => {
+      const p = prepPoint(unit.position!); const def = getUnitDef(unit.unitDefId); const sprite = standeeUrl(def.id);
+      return <div key={unit.instanceId} className={`arena-unit${selectedUnitId === unit.instanceId ? ' selected' : ''}`}
+        data-unit-id={unit.instanceId} data-unit-def={unit.unitDefId}
+        style={{ transform: `translate3d(${p.x}px,${p.y}px,0) scale(${p.scale})`, zIndex: Math.round(p.y) }}>
+        <div className="arena-unit-touch" draggable onDragStart={(e) => { e.dataTransfer.setData('application/x-unit', unit.instanceId); e.dataTransfer.effectAllowed = 'move'; }}
+          onDragOver={(e) => e.preventDefault()} onDrop={(e) => drop(e, unit.position!.q, unit.position!.r, unit)}
+          onClick={() => click(unit.position!.q, unit.position!.r, unit)}
+          onContextMenu={(e) => { e.preventDefault(); onUnitContext(e, unit); }}>
+          <span className="arena-unit-base" style={{ borderColor: `var(--cost-${def.cost})` }} />
+          {sprite ? <img className="arena-standee" src={sprite} alt={def.nameKo} draggable={false} /> : <div className="arena-unit-portrait"><Portrait id={def.id} name={def.nameKo} /></div>}
+          <span className="arena-unit-stars" style={{ top: sprite ? 14 : 61 }}>{'★'.repeat(unit.star)}</span>
+          <span className="arena-unit-health" />
+          <span className="arena-unit-name">{def.nameKo}</span>
+        </div>
+      </div>;
+    })}
+  </div>;
 }
 
 /** Phaser-hosted playback of the recorded battle frames. */
-export function BattleBoard({ onFinished }: { onFinished: () => void }): JSX.Element {
+export function BattleBoard({ onFinished, onReady }: { onFinished: () => void; onReady: () => void }): JSX.Element {
   const frames = useGameStore((s) => s.battleFrames);
   const speed = useGameStore((s) => s.settings.battleSpeed);
   const hostRef = useRef<HTMLDivElement>(null);
@@ -118,15 +91,15 @@ export function BattleBoard({ onFinished }: { onFinished: () => void }): JSX.Ele
   useEffect(() => {
     if (!hostRef.current || gameRef.current) return;
     const state = useGameStore.getState();
-    const match = state.match;
-    const scene = new BattleScene(frames ?? [], state.settings.showDamageNumbers, arenaUrl(match?.stage, !!match && roundInfo(match.stage, match.round).kind === 'PVE'));
+    const scene = new BattleScene(frames ?? [], state.settings.showDamageNumbers, onReady);
     sceneRef.current = scene;
     gameRef.current = new Phaser.Game({
       type: Phaser.AUTO,
       parent: hostRef.current,
       width: FIELD_W,
       height: FIELD_H,
-      backgroundColor: '#101823',
+      transparent: true,
+      antialias: true,
       scene: [scene],
       audio: { noAudio: true },
       banner: false,
@@ -165,5 +138,5 @@ export function BattleBoard({ onFinished }: { onFinished: () => void }): JSX.Ele
     return () => window.clearInterval(timer);
   }, [onFinished]);
 
-  return <div ref={hostRef} style={{ width: FIELD_W, height: FIELD_H, borderRadius: 10, overflow: 'hidden' }} />;
+  return <div ref={hostRef} className="battle-layer" style={{ width: FIELD_W, height: FIELD_H }} />;
 }

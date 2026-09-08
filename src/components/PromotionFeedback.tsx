@@ -4,6 +4,23 @@ import { getUnitDef } from '../game/engine/roster';
 import { assetUrl } from '../game/ui/art';
 import { Portrait } from './common';
 
+function PromotionEffect({ url }: { url: string }): JSX.Element {
+  const [frame, setFrame] = useState(0);
+  useEffect(() => {
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) { setFrame(11); return; }
+    const start = performance.now();
+    let request = 0;
+    const tick = (): void => {
+      const next = Math.min(11, Math.floor((performance.now() - start) / 50));
+      setFrame(next);
+      if (next < 11) request = requestAnimationFrame(tick);
+    };
+    request = requestAnimationFrame(tick);
+    return () => cancelAnimationFrame(request);
+  }, []);
+  return <span aria-hidden="true" className="promotion-vfx" style={{ backgroundImage: `url(${url})`, backgroundPosition: `${(frame % 6) * 20}% ${Math.floor(frame / 6) * 100}%` }} />;
+}
+
 /** Observe primitive snapshots: the engine upgrades instances in place. */
 export function PromotionFeedback(): JSX.Element | null {
   const revision = useGameStore((s) => s.revision);
@@ -42,7 +59,7 @@ export function PromotionFeedback(): JSX.Element | null {
       {promotions.map((unit) => (
         <div className="promotion-card" key={`${unit.id}-${unit.star}`}>
           <Portrait id={unit.id} name={unit.name} size={58} />
-          {unit.effect && <span aria-hidden="true" className="promotion-vfx" style={{ backgroundImage: `url(${unit.effect})` }} />}
+          {unit.effect && <PromotionEffect url={unit.effect} />}
           <div><strong>{unit.name}</strong><div className="gold-text">{'★'.repeat(unit.star)} 합성 완료</div></div>
         </div>
       ))}

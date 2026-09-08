@@ -6,8 +6,8 @@
   "asset_type": "character-race-reference",
   "npcs_included": false,
   "outfits_included": false,
-  "character_count": 143,
-  "ok_count": 143,
+  "character_count": 145,
+  "ok_count": 145,
   "incomplete_count": 0,
   "failure_count": 0,
   "characters": [
@@ -1869,6 +1869,44 @@
       "height": 5600,
       "bytes": 15212762,
       "sha256": "5bd82a3c881335e649b96de98f5dd4039b467479676775ca8e10eb71459ed756"
+    },
+    {
+      "character_name": "Genuine",
+      "incomplete_on_source": false,
+      "source": "user-upload",
+      "source_file": "Genuine.png",
+      "file_name": "Genuine-Race.png",
+      "path": "public/assets/characters/race/Genuine-Race.png",
+      "width": 2048,
+      "height": 682,
+      "bytes": 2390642,
+      "sha256": "6af35cb7998fdae39651613a5849c27aabcdac0adebac7dbfb2f12a7c38041a3",
+      "status": "ok",
+      "preview_box": [
+        560,
+        0,
+        880,
+        320
+      ]
+    },
+    {
+      "character_name": "Samson Big",
+      "incomplete_on_source": false,
+      "source": "user-upload",
+      "source_file": "SamsonBig.png",
+      "file_name": "SamsonBig-Race.png",
+      "path": "public/assets/characters/race/SamsonBig-Race.png",
+      "width": 2048,
+      "height": 682,
+      "bytes": 2065308,
+      "sha256": "60852d8cf9016db8a90aeede6e2b0a20a4e178947041938a837d67237d5a7f0f",
+      "status": "ok",
+      "preview_box": [
+        570,
+        45,
+        890,
+        365
+      ]
     }
   ],
   "last_retry_at": "2026-09-07T01:38:16+00:00",

@@ -60,6 +60,8 @@ export function pveEnemyFor(stage: number, round: number): PveEnemyId {
 
 /** Scales the encounter so it keeps pace with the players' boards. */
 export function pveScale(stage: number): number {
+  // Opening training must be clearable with the draft starter, before the player can build a team.
+  if (stage === 1) return .35;
   return 1 + Math.max(0, stage - 1) * 0.28;
 }
 

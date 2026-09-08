@@ -56,8 +56,11 @@ export type BattleResult = {
 };
 
 export type BattleEvent =
+  | { t: number; type: 'ATTACK_START'; source: string; target: string; releaseAt: number; impactAt: number; ranged: boolean }
+  | { t: number; type: 'PROJECTILE'; source: string; target: string; impactAt: number }
+  | { t: number; type: 'DAMAGE'; source: string; target: string; damage: number; absorbed: number; isSkill: boolean }
   | { t: number; type: 'ATTACK'; source: string; target: string; damage: number; crit: boolean }
-  | { t: number; type: 'CAST'; source: string; skill: string }
+  | { t: number; type: 'CAST'; source: string; skill: string; target?: string }
   | { t: number; type: 'DEATH'; unit: string }
   | { t: number; type: 'REVIVE'; unit: string }
   | { t: number; type: 'OVERTIME' }
@@ -111,6 +114,7 @@ export class BattleEngine {
   private readonly triggerReadyAt = new Map<string, number>();
   /** Guards against damage -> on-hit-damage -> damage ping-pong between units. */
   private damageDepth = 0;
+  private attacks: Array<{ source: string; target: string; releaseAt: number; impactAt: number; ranged: boolean; released: boolean }> = [];
   private readonly ctx: EffectContext;
 
   constructor(
@@ -236,6 +240,7 @@ export class BattleEngine {
   /** Runs the whole battle and returns the result. */
   run(): BattleResult {
     this.fire('COMBAT_START');
+    if (this.options.recordFrames) this.recordFrame();
     const maxSeconds = this.options.maxSeconds ?? BATTLE_MAX_SECONDS;
     const dt = BATTLE_TICK_MS / 1000;
 
@@ -271,6 +276,7 @@ export class BattleEngine {
 
     this.tickStatuses();
     this.tickPeriodics();
+    this.resolveAttacks();
 
     // Deterministic act order: team then id.
     const teamRank = (t: Team): number => (t === this.firstTeam ? 0 : 1);
@@ -320,7 +326,14 @@ export class BattleEngine {
   }
 
   private act(unit: CombatUnit, dt: number): void {
+    unit.attackCooldown -= dt;
     if (isStunned(unit, this.time)) return;
+    // A reserved destination remains occupied while the body travels to it.
+    if (unit.moveFrom) {
+      this.advanceMove(unit, dt);
+      return;
+    }
+    if (this.attacks.some((a) => a.source === unit.id && !a.released)) return;
 
     // Cast as soon as mana fills, unless silenced or mana-locked.
     const maxMana = stat(unit, 'maxMana', this.time);
@@ -337,9 +350,9 @@ export class BattleEngine {
 
     if (dist <= range) {
       unit.blockedSince = -1;
-      unit.attackCooldown -= dt;
-      if (unit.attackCooldown <= 0) {
-        this.basicAttack(unit, target);
+      const disarmed = unit.statuses.some((s) => s.kind === 'DISARM' && s.expiresAt > this.time);
+      if (unit.attackCooldown <= 0 && !disarmed) {
+        this.beginAttack(unit, target);
         unit.attackCooldown = 1 / Math.max(0.1, stat(unit, 'attackSpeed', this.time));
       }
       return;
@@ -421,16 +434,19 @@ export class BattleEngine {
     }
     unit.blockedSince = -1;
 
-    const speed = stat(unit, 'moveSpeedHexPerSec', this.time);
-    unit.moveProgress += speed * dt;
-    while (unit.moveProgress >= 1) {
-      unit.moveProgress -= 1;
-      const next = path.shift();
-      if (!next) break;
-      if (this.occupied(unit.id).has(hexKey(next))) { unit.moveProgress = 0; break; }
-      unit.moveFrom = unit.cell;
-      unit.cell = next;
-      if (path.length === 0) break;
+    const next = path[0];
+    if (!next || this.occupied(unit.id).has(hexKey(next))) return;
+    unit.moveFrom = { ...unit.cell };
+    unit.cell = { ...next };
+    unit.moveProgress = 0;
+    this.advanceMove(unit, dt);
+  }
+
+  private advanceMove(unit: CombatUnit, dt: number): void {
+    unit.moveProgress = Math.min(1, unit.moveProgress + stat(unit, 'moveSpeedHexPerSec', this.time) * dt);
+    if (unit.moveProgress >= 1) {
+      unit.moveFrom = null;
+      unit.moveProgress = 0;
     }
   }
 
@@ -483,6 +499,35 @@ export class BattleEngine {
   }
 
   // ----------------------------------------------------------------- attacks
+  private beginAttack(unit: CombatUnit, target: CombatUnit): void {
+    const interval = 1 / Math.max(.1, stat(unit, 'attackSpeed', this.time));
+    const windup = Math.min(.24, Math.max(.06, interval * .22));
+    const ranged = stat(unit, 'attackRange', this.time) > 1;
+    const releaseAt = this.time + windup;
+    const impactAt = releaseAt + (ranged ? Math.min(.35, .065 * hexDistance(unit.cell, target.cell)) : 0);
+    this.attacks.push({ source: unit.id, target: target.id, releaseAt, impactAt, ranged, released: false });
+    this.events.push({ t: this.time, type: 'ATTACK_START', source: unit.id, target: target.id, releaseAt, impactAt, ranged });
+  }
+
+  private resolveAttacks(): void {
+    const pending = this.attacks;
+    this.attacks = [];
+    for (const attack of pending) {
+      const source = this.byId(attack.source);
+      const target = this.byId(attack.target);
+      if (!source || !target?.alive || !isTargetable(target, this.time)) continue;
+      if (!attack.released) {
+        if (!source.alive || isStunned(source, this.time) || source.statuses.some((s) => s.kind === 'DISARM' && s.expiresAt > this.time)) continue;
+        if (this.time < attack.releaseAt) { this.attacks.push(attack); continue; }
+        if (!attack.ranged && hexDistance(source.cell, target.cell) > stat(source, 'attackRange', this.time)) continue;
+        attack.released = true;
+        if (attack.ranged) this.events.push({ t: this.time, type: 'PROJECTILE', source: source.id, target: target.id, impactAt: Math.max(this.time, attack.impactAt) });
+      }
+      if (this.time + 1e-8 < attack.impactAt) this.attacks.push(attack);
+      else this.basicAttack(source, target);
+    }
+  }
+
   private basicAttack(unit: CombatUnit, target: CombatUnit): void {
     unit.attackCount += 1;
     if (unit.lastTargetId === target.id) unit.attacksOnCurrentTarget += 1;
@@ -567,7 +612,9 @@ export class BattleEngine {
     }
 
     const postMitigation = Math.max(0, remaining);
+    const visibleDamage = Math.min(target.hp, postMitigation);
     target.hp -= postMitigation;
+    this.events.push({ t: this.time, type: 'DAMAGE', source: source.id, target: target.id, damage: Math.max(0, visibleDamage), absorbed: Math.max(0, amount - remaining), isSkill });
 
     // Spec §14.6 — mana from taking damage.
     if (this.time >= target.manaLockUntil) {
@@ -644,10 +691,10 @@ export class BattleEngine {
     const target = this.acquireTarget(unit);
     unit.mana = 0;
     unit.manaLockUntil = this.time + MANA_LOCK_AFTER_CAST_SECONDS;
-    this.events.push({ t: this.time, type: 'CAST', source: unit.id, skill: unit.skill.id });
 
     const skillTargets = resolveTargets(this.ctx, unit, unit.skill.targetRule as never, undefined, target);
     const primary = skillTargets[0] ?? target;
+    this.events.push({ t: this.time, type: 'CAST', source: unit.id, skill: unit.skill.id, target: primary?.id });
 
     unit.skill.effects.forEach((effect, i) => {
       applyEffect(this.ctx, unit, effect, i, {

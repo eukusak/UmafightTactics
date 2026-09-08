@@ -306,9 +306,21 @@ export const useGameStore = create<GameStore>((set, get) => ({
   startBattle: () => {
     const { director } = get();
     const player = get().human();
-    if (!director || !player) return;
+    if (!director || !player || get().battleRunning || director.isOver) return;
+    if (director.state.draft || director.state.augmentOffers.some((offer) => offer.playerId === player.id && offer.chosen === null)) return;
 
     applyCombines(director.state, player);
+    // Fill only open team slots. Existing placements stay exactly where the player put them.
+    while (player.bench.length && player.board.length < teamSizeLimit(player)) {
+      const unit = player.bench.shift()!;
+      const def = getUnitDef(unit.unitDefId);
+      const rows = def.role === 'TANK' || def.role === 'BRUISER' ? [0, 1, 2, 3] : [3, 2, 1, 0];
+      const position = rows.flatMap((r) => [3, 2, 4, 1, 5, 0, 6].map((q) => ({ q, r })))
+        .find((cell) => !player.board.some((other) => other.position?.q === cell.q && other.position.r === cell.r));
+      if (!position) { player.bench.unshift(unit); break; }
+      unit.position = position;
+      player.board.push(unit);
+    }
     // Resolve now and play back the frames the resolution itself produced, so
     // the animation can never disagree with the result it leads to.
     director.resolveRound();

@@ -581,6 +581,12 @@
     "sourceSha256": "d97fd10661d7b7f7886a93044ae5708e446cbed5bf02285d14500b569de1663c",
     "status": "reference-preview-only"
   },
+  "samson_big": {
+    "preview": "characters/reference_previews/samson_big.png",
+    "source": "public/assets/characters/race/SamsonBig-Race.png",
+    "sourceSha256": "60852d8cf9016db8a90aeede6e2b0a20a4e178947041938a837d67237d5a7f0f",
+    "status": "reference-preview-only"
+  },
   "sounds_of_earth": {
     "preview": "characters/reference_previews/sounds_of_earth.png",
     "source": "public/assets/characters/race/SoundsOfEarth-Race.png",
@@ -699,6 +705,12 @@
     "preview": "characters/reference_previews/durandal.png",
     "source": "public/assets/characters/race/Durandal-Race.png",
     "sourceSha256": "40152e70eacfc5d196162f1aad3b19055bfecb8610e52cdd4de0db2e91c6387f",
+    "status": "reference-preview-only"
+  },
+  "genuine": {
+    "preview": "characters/reference_previews/genuine.png",
+    "source": "public/assets/characters/race/Genuine-Race.png",
+    "sourceSha256": "6af35cb7998fdae39651613a5849c27aabcdac0adebac7dbfb2f12a7c38041a3",
     "status": "reference-preview-only"
   },
   "bubble_gum_fellow": {

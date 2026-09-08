@@ -20,6 +20,10 @@ for unit in units:
         continue
     with Image.open(ROOT / ref['path']) as image:
         w, h = image.size
+        if 'preview_box' in ref:
+            image.crop(tuple(ref['preview_box'])).resize((256, 256), Image.Resampling.LANCZOS).save(output / f"{unit['id']}.png")
+            result[unit['id']] = {'preview': f"characters/reference_previews/{unit['id']}.png", 'source': ref['path'], 'sourceSha256': ref['sha256'], 'status': 'reference-preview-only'}
+            continue
         # Two inspected turnaround layouts: 8 views + details, or 7 views.
         if abs(w / h - 2.5) < .01:
             cx, max_y = .4175 * w, .5 * h

@@ -3,13 +3,14 @@ import { useCallback, useEffect, useState } from 'react';
 import { useGameStore } from '../../store/gameStore';
 import { TopHud, TraitPanel, ItemPanel, Leaderboard, OpponentBoardPeek } from '../Panels';
 import { ShopRow, BenchRow, ShopControls } from '../Shop';
-import { PrepBoard, BattleBoard } from '../BoardView';
+import { ArenaBackdrop, PrepBoard, BattleBoard } from '../BoardView';
 import { AugmentOverlay, DraftOverlay, BattleResultOverlay, DevPanel } from '../Overlays';
 import { Tooltip } from '../common';
 import { UnitTooltip } from '../UnitTooltip';
 import { roundInfo } from '../../game/engine/rounds/schedule';
 import type { UnitInstance } from '../../game/engine/state';
 import { PromotionFeedback } from '../PromotionFeedback';
+import { PrepCountdown } from '../PrepCountdown';
 
 export function BattleScreen(): JSX.Element | null {
   const match = useGameStore((s) => s.match);
@@ -25,6 +26,9 @@ export function BattleScreen(): JSX.Element | null {
 
   const [tooltip, setTooltip] = useState<{ x: number; y: number; unit: UnitInstance } | null>(null);
   const [showResult, setShowResult] = useState(false);
+  const [arenaReady, setArenaReady] = useState(false);
+  const onArenaReady = useCallback(() => setArenaReady(true), []);
+  useEffect(() => { if (!battleRunning) setArenaReady(false); }, [battleRunning]);
 
   const onUnitContext = useCallback((e: React.MouseEvent, unit: UnitInstance) => {
     setTooltip({ x: e.clientX, y: e.clientY, unit });
@@ -70,9 +74,10 @@ export function BattleScreen(): JSX.Element | null {
       </div>
 
       <div className="hud-field">
-        {battleRunning
-          ? <BattleBoard onFinished={onPlaybackFinished} />
-          : <PrepBoard onUnitContext={onUnitContext} />}
+        <ArenaBackdrop />
+        {(!battleRunning || !arenaReady) && <PrepBoard onUnitContext={onUnitContext} />}
+        {battleRunning && <BattleBoard onFinished={onPlaybackFinished} onReady={onArenaReady} />}
+        {!battleRunning && <PrepCountdown key={info.label} active={!awaitingAugment && !awaitingDraft} seconds={info.prepSeconds} />}
       </div>
 
       <div className="hud-right scroll">
