@@ -859,5 +859,215 @@
       256
     ],
     "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "logotype": {
+    "file": "portraits/logotype.png",
+    "source": "docs/art-source/portraits/batch-1001/logotype.png",
+    "sourceSha256": "1f182081e7b4b149c3eb801e30b9dcf4733ff55305d0ead8e4c21f6dda204770",
+    "reference": "public/assets/characters/race/Logotype-Race.png",
+    "sourceSize": [
+      1175,
+      1338
+    ],
+    "crop": [
+      10,
+      0,
+      1175,
+      1338
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "victoire_pisa": {
+    "file": "portraits/victoire_pisa.png",
+    "source": "docs/art-source/portraits/batch-1001/victoire_pisa.png",
+    "sourceSha256": "9a6d7c6be29a8c4f5579b31334861c70fa5e58817b7249fdbf57f380c182b395",
+    "reference": "public/assets/characters/race/VictoirePisa-Race.png",
+    "sourceSize": [
+      1230,
+      1278
+    ],
+    "crop": [
+      0,
+      0,
+      1216,
+      1278
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "rose_kingdom": {
+    "file": "portraits/rose_kingdom.png",
+    "source": "docs/art-source/portraits/batch-1001/rose_kingdom.png",
+    "sourceSha256": "2b3e3a107dff8917062c949803cb765b2b08f24f6004c4c33782472f0839e800",
+    "reference": "public/assets/characters/race/RoseKingdom-Race.png",
+    "sourceSize": [
+      1151,
+      1367
+    ],
+    "crop": [
+      0,
+      1,
+      1143,
+      1367
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "rulership": {
+    "file": "portraits/rulership.png",
+    "source": "docs/art-source/portraits/batch-1001/rulership.png",
+    "sourceSha256": "27b7a7054a0637aff55f32c7b00b118211a47094bdbe63447e392d3b28fee0ff",
+    "reference": "public/assets/characters/race/Rulership-Race.png",
+    "sourceSize": [
+      1295,
+      1214
+    ],
+    "crop": [
+      54,
+      0,
+      1271,
+      1214
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "efforia": {
+    "file": "portraits/efforia.png",
+    "source": "docs/art-source/portraits/batch-1001/efforia.png",
+    "sourceSha256": "5dd37a49baedf2c118fabdd0d4fad6cd52705fa5b31b8928171853fb27d22f5d",
+    "reference": "public/assets/characters/race/Efforia-Race.png",
+    "sourceSize": [
+      1192,
+      1320
+    ],
+    "crop": [
+      0,
+      0,
+      1192,
+      1320
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "titleholder": {
+    "file": "portraits/titleholder.png",
+    "source": "docs/art-source/portraits/batch-1001/titleholder.png",
+    "sourceSha256": "2b311a6e6b009de1200641b81565e95c6fa9d9636b2254c7780129f32ac8c511",
+    "reference": "public/assets/characters/race/Titleholder-Race.png",
+    "sourceSize": [
+      1145,
+      1374
+    ],
+    "crop": [
+      45,
+      30,
+      1134,
+      1374
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "phalaenopsis": {
+    "file": "portraits/phalaenopsis.png",
+    "source": "docs/art-source/portraits/batch-1001/phalaenopsis.png",
+    "sourceSha256": "ed5cb4ff5f911b63e33d0040b5cec4284e3c6182a6e580516e7c30bbe55cf866",
+    "reference": "public/assets/characters/race/Phalaenopsis-Race.png",
+    "sourceSize": [
+      1199,
+      1312
+    ],
+    "crop": [
+      0,
+      25,
+      1169,
+      1312
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "verxina": {
+    "file": "portraits/verxina.png",
+    "source": "docs/art-source/portraits/batch-1001/verxina.png",
+    "sourceSha256": "a4e6c5d07c662fda308f4dde8d2428a948340199ef0d953adb21f566620a07e8",
+    "reference": "public/assets/characters/race/Verxina-Race.png",
+    "sourceSize": [
+      1230,
+      1278
+    ],
+    "crop": [
+      0,
+      0,
+      1230,
+      1278
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "manhattan_cafe": {
+    "file": "portraits/manhattan_cafe.png",
+    "source": "docs/art-source/portraits/batch-1001/manhattan_cafe.png",
+    "sourceSha256": "c652e20aa6811309e4c899f0812e7db3588e740d7399c617c1721fa8e7c9b342",
+    "reference": "public/assets/characters/race/ManhattanCafe-Race.png",
+    "sourceSize": [
+      1145,
+      1374
+    ],
+    "crop": [
+      0,
+      4,
+      1145,
+      1374
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "espoir_city": {
+    "file": "portraits/espoir_city.png",
+    "source": "docs/art-source/portraits/batch-1001/espoir_city.png",
+    "sourceSha256": "719ef542108c46a10987e5d26974e9b60ffd5f3d9a27b62d5fff68ab1b045b85",
+    "reference": "public/assets/characters/race/EspoirCity-Race.png",
+    "sourceSize": [
+      1205,
+      1306
+    ],
+    "crop": [
+      0,
+      0,
+      1205,
+      1306
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
   }
 }

@@ -1,0 +1,206 @@
+{
+  "batchSize": 10,
+  "validation": "new portraits only; full app test/build not rerun",
+  "files": [
+    {
+      "id": "logotype",
+      "size": [
+        256,
+        256
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "bounds": [
+        22,
+        6,
+        234,
+        250
+      ],
+      "sourceSha256": "1f182081e7b4b149c3eb801e30b9dcf4733ff55305d0ead8e4c21f6dda204770",
+      "runtimeSha256": "695826b3297170fe61f0505f0c7de7aefb9af0f885060e2fd31fc7cb4839cf46",
+      "reference": "public/assets/characters/race/Logotype-Race.png"
+    },
+    {
+      "id": "victoire_pisa",
+      "size": [
+        256,
+        256
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "bounds": [
+        12,
+        6,
+        244,
+        250
+      ],
+      "sourceSha256": "9a6d7c6be29a8c4f5579b31334861c70fa5e58817b7249fdbf57f380c182b395",
+      "runtimeSha256": "5683fef0330b156165663337b2524b78f59d46bf23e413a19eecf620e9a86f74",
+      "reference": "public/assets/characters/race/VictoirePisa-Race.png"
+    },
+    {
+      "id": "rose_kingdom",
+      "size": [
+        256,
+        256
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "bounds": [
+        27,
+        6,
+        230,
+        250
+      ],
+      "sourceSha256": "2b3e3a107dff8917062c949803cb765b2b08f24f6004c4c33782472f0839e800",
+      "runtimeSha256": "09ce2b3304b0f3c4016cd269b1a4adabc054c28ddd57386987d1f6930a833d6c",
+      "reference": "public/assets/characters/race/RoseKingdom-Race.png"
+    },
+    {
+      "id": "rulership",
+      "size": [
+        256,
+        256
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "bounds": [
+        10,
+        6,
+        250,
+        249
+      ],
+      "sourceSha256": "27b7a7054a0637aff55f32c7b00b118211a47094bdbe63447e392d3b28fee0ff",
+      "runtimeSha256": "f7a2c8e4cc40941045c81e2af8133e256712182a3422b344d3997dfeaf6a7b28",
+      "reference": "public/assets/characters/race/Rulership-Race.png"
+    },
+    {
+      "id": "efforia",
+      "size": [
+        256,
+        256
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "bounds": [
+        18,
+        6,
+        238,
+        250
+      ],
+      "sourceSha256": "5dd37a49baedf2c118fabdd0d4fad6cd52705fa5b31b8928171853fb27d22f5d",
+      "runtimeSha256": "2c92bf2079c369ee9c83a98390f2ed74fdcac36812f6ad7a5608f21ff77de284",
+      "reference": "public/assets/characters/race/Efforia-Race.png"
+    },
+    {
+      "id": "titleholder",
+      "size": [
+        256,
+        256
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "bounds": [
+        37,
+        6,
+        227,
+        250
+      ],
+      "sourceSha256": "2b311a6e6b009de1200641b81565e95c6fa9d9636b2254c7780129f32ac8c511",
+      "runtimeSha256": "fa55150236d89f11a40a8739238025cc7b67a0dd6474c3848cc5506757e7bede",
+      "reference": "public/assets/characters/race/Titleholder-Race.png"
+    },
+    {
+      "id": "phalaenopsis",
+      "size": [
+        256,
+        256
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "bounds": [
+        21,
+        6,
+        239,
+        250
+      ],
+      "sourceSha256": "ed5cb4ff5f911b63e33d0040b5cec4284e3c6182a6e580516e7c30bbe55cf866",
+      "runtimeSha256": "a6b9b708158522e59cdf4307cae0779f6482211e782a9e50f76ae89eda9877c7",
+      "reference": "public/assets/characters/race/Phalaenopsis-Race.png"
+    },
+    {
+      "id": "verxina",
+      "size": [
+        256,
+        256
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "bounds": [
+        10,
+        6,
+        245,
+        250
+      ],
+      "sourceSha256": "a4e6c5d07c662fda308f4dde8d2428a948340199ef0d953adb21f566620a07e8",
+      "runtimeSha256": "36e07bbcf201c361d7b31b8d4a127e541d05a6bfaf7159cdf23663dd1a77d6a5",
+      "reference": "public/assets/characters/race/Verxina-Race.png"
+    },
+    {
+      "id": "manhattan_cafe",
+      "size": [
+        256,
+        256
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "bounds": [
+        26,
+        6,
+        230,
+        250
+      ],
+      "sourceSha256": "c652e20aa6811309e4c899f0812e7db3588e740d7399c617c1721fa8e7c9b342",
+      "runtimeSha256": "546ad0d52fab0e20f54c8b76b50f26c9cd40c3cd0a40a18b208567661a89483d",
+      "reference": "public/assets/characters/race/ManhattanCafe-Race.png"
+    },
+    {
+      "id": "espoir_city",
+      "size": [
+        256,
+        256
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "bounds": [
+        15,
+        6,
+        240,
+        250
+      ],
+      "sourceSha256": "719ef542108c46a10987e5d26974e9b60ffd5f3d9a27b62d5fff68ab1b045b85",
+      "runtimeSha256": "211d2a284136c77acdf0eb6be1e0a5893e683c9dee705b20069e7e7635431516",
+      "reference": "public/assets/characters/race/EspoirCity-Race.png"
+    }
+  ]
+}

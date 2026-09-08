@@ -1,32 +1,20 @@
 {
-  "acceptedArt": 274,
-  "baseCommit": "888a722cde9dfa140c94c9e7fce50e80c97dae56",
-  "batchSize": 5,
+  "acceptedArt": 284,
+  "baseCommit": "3dec43b587ffe64e915c0ff3f2895e630f605a6c",
+  "batchSize": 10,
   "completedBatch": [
-    "super_creek",
-    "smart_falcon",
-    "zenno_rob_roy",
-    "tosen_jordan",
-    "nakayama_festa"
+    "logotype",
+    "victoire_pisa",
+    "rose_kingdom",
+    "rulership",
+    "efforia",
+    "titleholder",
+    "phalaenopsis",
+    "verxina",
+    "manhattan_cafe",
+    "espoir_city"
   ],
-  "completedPortraits": 50,
-  "inProgressBatch": {
-    "batchSize": 10,
-    "ids": [
-      "logotype",
-      "victoire_pisa",
-      "rose_kingdom",
-      "rulership",
-      "efforia",
-      "titleholder",
-      "phalaenopsis",
-      "verxina",
-      "manhattan_cafe",
-      "espoir_city"
-    ],
-    "session": "e17e1cf9437c",
-    "status": "generating; other sessions should skip these ids"
-  },
+  "completedPortraits": 60,
   "nextPortraitIds": [
     "narita_taishin",
     "nishino_flower",
@@ -112,21 +100,11 @@
     "kiseki",
     "forever_young",
     "marche_lorraine",
-    "epiphaneia",
-    "logotype",
-    "victoire_pisa",
-    "rose_kingdom",
-    "rulership",
-    "efforia",
-    "titleholder",
-    "phalaenopsis",
-    "verxina",
-    "manhattan_cafe",
-    "espoir_city"
+    "epiphaneia"
   ],
   "portraitTarget": 145,
   "remaining": {
-    "portraits": 95,
+    "portraits": 85,
     "battleSheets": 145,
     "cutins": 0
   },
@@ -156,5 +134,7 @@
       "compiled model and runtime verification"
     ]
   },
-  "workflow": "This session generates five portraits, inspects, saves and verifies before next five. Preserve concurrent session's separate ten-character reservation. Finish all 145 portraits before rigging one character at a time."
+  "workflow": "Generate ten distinct portraits, inspect and package, commit/push and verify, then begin next ten (final remainder allowed). Complete all 145 portraits before rigging one character at a time.",
+  "latestTenCharacterBatch": "batch-1001",
+  "batchSelectionNote": "Last ten missing IDs selected to avoid overlap with another active session working from the start of the queue."
 }
