@@ -1,5 +1,5 @@
 {
-  "acceptedArt": 369,
+  "acceptedArt": 416,
   "baseCommit": "c662b5caae3a42a956796ccd6d974f5ec14f85fc",
   "batchSize": 10,
   "completedBatch": [
@@ -19,17 +19,17 @@
   "portraitTarget": 145,
   "remaining": {
     "portraits": 0,
-    "battleSheets": 145,
+    "battleSheets": 98,
     "cutins": 0
   },
   "requiredArt": 514,
   "resumeInstructions": [
-    "Read this checkpoint and current PR head before creating assets.",
-    "Skip paths already listed in delivered-art.json.",
-    "Inspect true alpha and identity before running scripts/import-portrait.py.",
-    "Upload and verify original/runtime Git blob hashes before advancing branch ref.",
-    "Update counts only for accepted runtime assets; source components are not completed battle sheets.",
-    "Include genuine and samson_big in the 145-character target; their race sources and portraits already exist."
+    "Read current PR head, docs/FRAME_ANIMATION.md, and desktop-reservation.json before creating assets.",
+    "Skip characters already registered in frame-sheets.json and those reserved by another active session.",
+    "Inspect original Race references and current skill effects; generate distinct poses using imagegen.",
+    "Verify actual PNG alpha, 24 pose cells, identity, and skill targeting before scripts/import-reviewed-motion.py.",
+    "Run art:briefs and frame-animation tests, inspect runtime rendering, preserve provenance and merge concurrent additions before pushing.",
+    "Count registered runtime atlases only; alternatives and generation drafts do not increase completion."
   ],
   "rigging": {
     "character": "special_week",
@@ -40,7 +40,7 @@
       "tail",
       "hand"
     ],
-    "status": "partial-source-only",
+    "status": "historical-source-only; superseded by PNG frame animation at user request on 2026-09-08",
     "riggedModels": 0,
     "requires": [
       "complete separated artwork",
@@ -49,7 +49,7 @@
     ],
     "environmentStatus": "Cubism Editor/compiler not found in standard install locations; user asked for available environment"
   },
-  "workflow": "Generate up to ten distinct portraits, inspect and save to PR 6, verify remote commit, then next batch. Finish 145 portraits before character-by-character Cubism work.",
+  "workflow": "Generate individual 24-pose PNG atlases from Race references and actual skill effects; inspect transparent alpha and all six action rows, import reviewed sources, test, and push to PR 6. Read remote HEAD and desktop-reservation.json first to avoid concurrent duplicate production.",
   "latestTenCharacterBatch": "batch-2001",
   "latestFiveCharacterBatch": "batch-20",
   "previousReservation": {
@@ -78,5 +78,15 @@
     "actualCubismModels": 0,
     "status": "generated full-body images with procedural runtime animation"
   },
-  "latestValidation": "docs/qa/PR6_RESUME_2026-09-08.md"
+  "latestValidation": "docs/qa/PR6_DESKTOP_MOTIONS_2026-09-09.md",
+  "motionStatus": {
+    "format": "24 poses; 4 columns x 6 rows; 512x768 RGBA runtime",
+    "characters": 47,
+    "characterTarget": 145,
+    "pve": 5,
+    "pveTarget": 5,
+    "remainingCharacters": 98,
+    "registry": "src/data/manual/frame-sheets.json",
+    "reservation": "docs/art-source/motions/desktop-reservation.json"
+  }
 }

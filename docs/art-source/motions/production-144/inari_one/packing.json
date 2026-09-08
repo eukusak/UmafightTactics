@@ -1,0 +1,443 @@
+{
+  "format": "uft-baked-frames-v1",
+  "scale": 0.41935483870967744,
+  "anchor": [
+    64,
+    110
+  ],
+  "runtimeSha256": "2e24fd74d7a187de85e6837985da109fb9722cb66c5e33be2b4892973bf7fadb",
+  "frames": [
+    {
+      "frame": 0,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/production-144/inari_one/alpha.png",
+      "sourceSha256": "f0506839c3ae44c1ab9ccd4a08b06a3c315b05a325681fe299c175ce7b741a18",
+      "crop": [
+        50,
+        23,
+        220,
+        258
+      ],
+      "destination": [
+        28,
+        11,
+        71,
+        99
+      ]
+    },
+    {
+      "frame": 1,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/production-144/inari_one/alpha.png",
+      "sourceSha256": "f0506839c3ae44c1ab9ccd4a08b06a3c315b05a325681fe299c175ce7b741a18",
+      "crop": [
+        306,
+        23,
+        473,
+        258
+      ],
+      "destination": [
+        157,
+        11,
+        70,
+        99
+      ]
+    },
+    {
+      "frame": 2,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/production-144/inari_one/alpha.png",
+      "sourceSha256": "f0506839c3ae44c1ab9ccd4a08b06a3c315b05a325681fe299c175ce7b741a18",
+      "crop": [
+        563,
+        23,
+        730,
+        258
+      ],
+      "destination": [
+        285,
+        11,
+        70,
+        99
+      ]
+    },
+    {
+      "frame": 3,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/production-144/inari_one/alpha.png",
+      "sourceSha256": "f0506839c3ae44c1ab9ccd4a08b06a3c315b05a325681fe299c175ce7b741a18",
+      "crop": [
+        815,
+        23,
+        985,
+        258
+      ],
+      "destination": [
+        412,
+        11,
+        71,
+        99
+      ]
+    },
+    {
+      "frame": 4,
+      "sourceFrame": 4,
+      "source": "docs/art-source/motions/production-144/inari_one/alpha.png",
+      "sourceSha256": "f0506839c3ae44c1ab9ccd4a08b06a3c315b05a325681fe299c175ce7b741a18",
+      "crop": [
+        20,
+        279,
+        235,
+        509
+      ],
+      "destination": [
+        19,
+        142,
+        90,
+        96
+      ]
+    },
+    {
+      "frame": 5,
+      "sourceFrame": 5,
+      "source": "docs/art-source/motions/production-144/inari_one/alpha.png",
+      "sourceSha256": "f0506839c3ae44c1ab9ccd4a08b06a3c315b05a325681fe299c175ce7b741a18",
+      "crop": [
+        277,
+        280,
+        486,
+        499
+      ],
+      "destination": [
+        148,
+        146,
+        88,
+        92
+      ]
+    },
+    {
+      "frame": 6,
+      "sourceFrame": 6,
+      "source": "docs/art-source/motions/production-144/inari_one/alpha.png",
+      "sourceSha256": "f0506839c3ae44c1ab9ccd4a08b06a3c315b05a325681fe299c175ce7b741a18",
+      "crop": [
+        541,
+        282,
+        749,
+        511
+      ],
+      "destination": [
+        276,
+        142,
+        87,
+        96
+      ]
+    },
+    {
+      "frame": 7,
+      "sourceFrame": 7,
+      "source": "docs/art-source/motions/production-144/inari_one/alpha.png",
+      "sourceSha256": "f0506839c3ae44c1ab9ccd4a08b06a3c315b05a325681fe299c175ce7b741a18",
+      "crop": [
+        799,
+        286,
+        1002,
+        512
+      ],
+      "destination": [
+        405,
+        143,
+        85,
+        95
+      ]
+    },
+    {
+      "frame": 8,
+      "sourceFrame": 8,
+      "source": "docs/art-source/motions/production-144/inari_one/alpha.png",
+      "sourceSha256": "f0506839c3ae44c1ab9ccd4a08b06a3c315b05a325681fe299c175ce7b741a18",
+      "crop": [
+        46,
+        528,
+        216,
+        765
+      ],
+      "destination": [
+        28,
+        267,
+        71,
+        99
+      ]
+    },
+    {
+      "frame": 9,
+      "sourceFrame": 9,
+      "source": "docs/art-source/motions/production-144/inari_one/alpha.png",
+      "sourceSha256": "f0506839c3ae44c1ab9ccd4a08b06a3c315b05a325681fe299c175ce7b741a18",
+      "crop": [
+        288,
+        529,
+        475,
+        765
+      ],
+      "destination": [
+        153,
+        267,
+        78,
+        99
+      ]
+    },
+    {
+      "frame": 10,
+      "sourceFrame": 10,
+      "source": "docs/art-source/motions/production-144/inari_one/alpha.png",
+      "sourceSha256": "f0506839c3ae44c1ab9ccd4a08b06a3c315b05a325681fe299c175ce7b741a18",
+      "crop": [
+        534,
+        529,
+        746,
+        763
+      ],
+      "destination": [
+        275,
+        268,
+        89,
+        98
+      ]
+    },
+    {
+      "frame": 11,
+      "sourceFrame": 11,
+      "source": "docs/art-source/motions/production-144/inari_one/alpha.png",
+      "sourceSha256": "f0506839c3ae44c1ab9ccd4a08b06a3c315b05a325681fe299c175ce7b741a18",
+      "crop": [
+        817,
+        529,
+        988,
+        769
+      ],
+      "destination": [
+        412,
+        265,
+        72,
+        101
+      ]
+    },
+    {
+      "frame": 12,
+      "sourceFrame": 12,
+      "source": "docs/art-source/motions/production-144/inari_one/alpha.png",
+      "sourceSha256": "f0506839c3ae44c1ab9ccd4a08b06a3c315b05a325681fe299c175ce7b741a18",
+      "crop": [
+        16,
+        831,
+        213,
+        1014
+      ],
+      "destination": [
+        22,
+        417,
+        83,
+        77
+      ]
+    },
+    {
+      "frame": 13,
+      "sourceFrame": 13,
+      "source": "docs/art-source/motions/production-144/inari_one/alpha.png",
+      "sourceSha256": "f0506839c3ae44c1ab9ccd4a08b06a3c315b05a325681fe299c175ce7b741a18",
+      "crop": [
+        261,
+        792,
+        502,
+        985
+      ],
+      "destination": [
+        141,
+        413,
+        101,
+        81
+      ]
+    },
+    {
+      "frame": 14,
+      "sourceFrame": 14,
+      "source": "docs/art-source/motions/production-144/inari_one/alpha.png",
+      "sourceSha256": "f0506839c3ae44c1ab9ccd4a08b06a3c315b05a325681fe299c175ce7b741a18",
+      "crop": [
+        524,
+        843,
+        774,
+        992
+      ],
+      "destination": [
+        267,
+        432,
+        105,
+        62
+      ]
+    },
+    {
+      "frame": 15,
+      "sourceFrame": 15,
+      "source": "docs/art-source/motions/production-144/inari_one/alpha.png",
+      "sourceSha256": "f0506839c3ae44c1ab9ccd4a08b06a3c315b05a325681fe299c175ce7b741a18",
+      "crop": [
+        800,
+        841,
+        1008,
+        1014
+      ],
+      "destination": [
+        404,
+        421,
+        87,
+        73
+      ]
+    },
+    {
+      "frame": 16,
+      "sourceFrame": 16,
+      "source": "docs/art-source/motions/production-144/inari_one/alpha.png",
+      "sourceSha256": "f0506839c3ae44c1ab9ccd4a08b06a3c315b05a325681fe299c175ce7b741a18",
+      "crop": [
+        38,
+        1036,
+        227,
+        1256
+      ],
+      "destination": [
+        24,
+        530,
+        79,
+        92
+      ]
+    },
+    {
+      "frame": 17,
+      "sourceFrame": 17,
+      "source": "docs/art-source/motions/production-144/inari_one/alpha.png",
+      "sourceSha256": "f0506839c3ae44c1ab9ccd4a08b06a3c315b05a325681fe299c175ce7b741a18",
+      "crop": [
+        294,
+        1059,
+        475,
+        1249
+      ],
+      "destination": [
+        154,
+        542,
+        76,
+        80
+      ]
+    },
+    {
+      "frame": 18,
+      "sourceFrame": 18,
+      "source": "docs/art-source/motions/production-144/inari_one/alpha.png",
+      "sourceSha256": "f0506839c3ae44c1ab9ccd4a08b06a3c315b05a325681fe299c175ce7b741a18",
+      "crop": [
+        544,
+        1082,
+        713,
+        1252
+      ],
+      "destination": [
+        284,
+        551,
+        71,
+        71
+      ]
+    },
+    {
+      "frame": 19,
+      "sourceFrame": 19,
+      "source": "docs/art-source/motions/production-144/inari_one/alpha.png",
+      "sourceSha256": "f0506839c3ae44c1ab9ccd4a08b06a3c315b05a325681fe299c175ce7b741a18",
+      "crop": [
+        786,
+        1149,
+        1008,
+        1253
+      ],
+      "destination": [
+        401,
+        578,
+        93,
+        44
+      ]
+    },
+    {
+      "frame": 20,
+      "sourceFrame": 20,
+      "source": "docs/art-source/motions/production-144/inari_one/alpha.png",
+      "sourceSha256": "f0506839c3ae44c1ab9ccd4a08b06a3c315b05a325681fe299c175ce7b741a18",
+      "crop": [
+        52,
+        1276,
+        206,
+        1524
+      ],
+      "destination": [
+        31,
+        646,
+        65,
+        104
+      ]
+    },
+    {
+      "frame": 21,
+      "sourceFrame": 21,
+      "source": "docs/art-source/motions/production-144/inari_one/alpha.png",
+      "sourceSha256": "f0506839c3ae44c1ab9ccd4a08b06a3c315b05a325681fe299c175ce7b741a18",
+      "crop": [
+        299,
+        1269,
+        475,
+        1498
+      ],
+      "destination": [
+        155,
+        654,
+        74,
+        96
+      ]
+    },
+    {
+      "frame": 22,
+      "sourceFrame": 22,
+      "source": "docs/art-source/motions/production-144/inari_one/alpha.png",
+      "sourceSha256": "f0506839c3ae44c1ab9ccd4a08b06a3c315b05a325681fe299c175ce7b741a18",
+      "crop": [
+        550,
+        1276,
+        718,
+        1524
+      ],
+      "destination": [
+        285,
+        646,
+        70,
+        104
+      ]
+    },
+    {
+      "frame": 23,
+      "sourceFrame": 23,
+      "source": "docs/art-source/motions/production-144/inari_one/alpha.png",
+      "sourceSha256": "f0506839c3ae44c1ab9ccd4a08b06a3c315b05a325681fe299c175ce7b741a18",
+      "crop": [
+        823,
+        1276,
+        983,
+        1524
+      ],
+      "destination": [
+        414,
+        646,
+        67,
+        104
+      ]
+    }
+  ]
+}
