@@ -2014,5 +2014,110 @@
       256
     ],
     "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "mejiro_ramonu": {
+    "file": "portraits/mejiro_ramonu.png",
+    "source": "docs/art-source/portraits/batch-17/mejiro_ramonu.png",
+    "sourceSha256": "881c3fbf869518eae934c13f4088a5376d95ef76d26115b63c2fd903d1d5f53a",
+    "reference": "public/assets/characters/race/MejiroRamonu-Race.png",
+    "sourceSize": [
+      1298,
+      1212
+    ],
+    "crop": [
+      0,
+      0,
+      1274,
+      1212
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "aston_machan": {
+    "file": "portraits/aston_machan.png",
+    "source": "docs/art-source/portraits/batch-17/aston_machan.png",
+    "sourceSha256": "5b72fff9ce964d4cb309f4c0ab7d5ab5e21a6a407f564f240c7f236e1639ba12",
+    "reference": "public/assets/characters/race/AstonMachan-Race.png",
+    "sourceSize": [
+      1224,
+      1285
+    ],
+    "crop": [
+      0,
+      0,
+      1196,
+      1285
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "satono_crown": {
+    "file": "portraits/satono_crown.png",
+    "source": "docs/art-source/portraits/batch-17/satono_crown.png",
+    "sourceSha256": "6bac23bb5edc7cec4285d1f24cf5c75f2c52b50346f7b1f4c2463541b127b61c",
+    "reference": "public/assets/characters/race/SatonoCrown-Race.png",
+    "sourceSize": [
+      1193,
+      1318
+    ],
+    "crop": [
+      25,
+      0,
+      1110,
+      1318
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "cheval_grand": {
+    "file": "portraits/cheval_grand.png",
+    "source": "docs/art-source/portraits/batch-17/cheval_grand.png",
+    "sourceSha256": "f3e0200116b99419889f33213e65b6f20c3d8beec43608cd4b8196b8517e9983",
+    "reference": "public/assets/characters/race/ChevalGrand-Race.png",
+    "sourceSize": [
+      1239,
+      1269
+    ],
+    "crop": [
+      0,
+      0,
+      1239,
+      1269
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "vivlos": {
+    "file": "portraits/vivlos.png",
+    "source": "docs/art-source/portraits/batch-17/vivlos.png",
+    "sourceSha256": "fe903fb5621fcc8d1fbf0fa16e7a4abce9ec8890183eb0a9e5b93b61c9518b31",
+    "reference": "public/assets/characters/race/Vivlos-Race.png",
+    "sourceSize": [
+      1214,
+      1295
+    ],
+    "crop": [
+      0,
+      0,
+      1214,
+      1295
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
   }
 }
