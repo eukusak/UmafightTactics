@@ -1,0 +1,4 @@
+{
+  "tool": "builtin-imagegen",
+  "prompt": "Edit this exact 1024x1536 sprite atlas. Remove the gray/white checkerboard background completely and return a PNG with genuine transparent alpha (RGBA), not a painted checkerboard. Preserve all 24 Fine Motion character poses, costume, face, outline and shading. Arrange the same 24 poses in exact 4 columns x 6 rows. Shrink each figure uniformly to leave at least 24 px clear transparent space inside its 256x256 cell and prevent any row overlap. Do not crop ears, boots or tail. Keep action rows unchanged. The second row should have alternating front legs (pose 1 left leg forward, pose 3 right leg forward), with passing poses 2 and 4. Do not draw any background or grid. This is a transparent game asset, not a preview on checkerboard."
+}

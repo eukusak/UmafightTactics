@@ -1,0 +1,443 @@
+{
+  "format": "uft-baked-frames-v1",
+  "scale": 0.4297520661157025,
+  "anchor": [
+    64,
+    110
+  ],
+  "runtimeSha256": "c7c345750363e3668954808da7c1c2d5cb09515787b30a44cef76950282f6f0f",
+  "frames": [
+    {
+      "frame": 0,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/alternatives-20260909-desktop/fine_motion/alpha.png",
+      "sourceSha256": "9ef20aab9c06ee0d053792f1c42cd838475ef000e6943ede6e263dd1e3a66365",
+      "crop": [
+        69,
+        30,
+        219,
+        262
+      ],
+      "destination": [
+        32,
+        10,
+        64,
+        100
+      ]
+    },
+    {
+      "frame": 1,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/alternatives-20260909-desktop/fine_motion/alpha.png",
+      "sourceSha256": "9ef20aab9c06ee0d053792f1c42cd838475ef000e6943ede6e263dd1e3a66365",
+      "crop": [
+        319,
+        30,
+        460,
+        262
+      ],
+      "destination": [
+        161,
+        10,
+        61,
+        100
+      ]
+    },
+    {
+      "frame": 2,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/alternatives-20260909-desktop/fine_motion/alpha.png",
+      "sourceSha256": "9ef20aab9c06ee0d053792f1c42cd838475ef000e6943ede6e263dd1e3a66365",
+      "crop": [
+        562,
+        30,
+        699,
+        262
+      ],
+      "destination": [
+        290,
+        10,
+        59,
+        100
+      ]
+    },
+    {
+      "frame": 3,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/alternatives-20260909-desktop/fine_motion/alpha.png",
+      "sourceSha256": "9ef20aab9c06ee0d053792f1c42cd838475ef000e6943ede6e263dd1e3a66365",
+      "crop": [
+        802,
+        30,
+        948,
+        262
+      ],
+      "destination": [
+        416,
+        10,
+        63,
+        100
+      ]
+    },
+    {
+      "frame": 4,
+      "sourceFrame": 4,
+      "source": "docs/art-source/motions/alternatives-20260909-desktop/fine_motion/alpha.png",
+      "sourceSha256": "9ef20aab9c06ee0d053792f1c42cd838475ef000e6943ede6e263dd1e3a66365",
+      "crop": [
+        42,
+        287,
+        236,
+        521
+      ],
+      "destination": [
+        22,
+        137,
+        83,
+        101
+      ]
+    },
+    {
+      "frame": 5,
+      "sourceFrame": 5,
+      "source": "docs/art-source/motions/alternatives-20260909-desktop/fine_motion/alpha.png",
+      "sourceSha256": "9ef20aab9c06ee0d053792f1c42cd838475ef000e6943ede6e263dd1e3a66365",
+      "crop": [
+        290,
+        289,
+        488,
+        521
+      ],
+      "destination": [
+        149,
+        138,
+        85,
+        100
+      ]
+    },
+    {
+      "frame": 6,
+      "sourceFrame": 6,
+      "source": "docs/art-source/motions/alternatives-20260909-desktop/fine_motion/alpha.png",
+      "sourceSha256": "9ef20aab9c06ee0d053792f1c42cd838475ef000e6943ede6e263dd1e3a66365",
+      "crop": [
+        537,
+        288,
+        731,
+        521
+      ],
+      "destination": [
+        278,
+        138,
+        83,
+        100
+      ]
+    },
+    {
+      "frame": 7,
+      "sourceFrame": 7,
+      "source": "docs/art-source/motions/alternatives-20260909-desktop/fine_motion/alpha.png",
+      "sourceSha256": "9ef20aab9c06ee0d053792f1c42cd838475ef000e6943ede6e263dd1e3a66365",
+      "crop": [
+        783,
+        293,
+        977,
+        521
+      ],
+      "destination": [
+        406,
+        140,
+        83,
+        98
+      ]
+    },
+    {
+      "frame": 8,
+      "sourceFrame": 8,
+      "source": "docs/art-source/motions/alternatives-20260909-desktop/fine_motion/alpha.png",
+      "sourceSha256": "9ef20aab9c06ee0d053792f1c42cd838475ef000e6943ede6e263dd1e3a66365",
+      "crop": [
+        61,
+        551,
+        243,
+        793
+      ],
+      "destination": [
+        25,
+        262,
+        78,
+        104
+      ]
+    },
+    {
+      "frame": 9,
+      "sourceFrame": 9,
+      "source": "docs/art-source/motions/alternatives-20260909-desktop/fine_motion/alpha.png",
+      "sourceSha256": "9ef20aab9c06ee0d053792f1c42cd838475ef000e6943ede6e263dd1e3a66365",
+      "crop": [
+        301,
+        552,
+        463,
+        793
+      ],
+      "destination": [
+        157,
+        262,
+        70,
+        104
+      ]
+    },
+    {
+      "frame": 10,
+      "sourceFrame": 10,
+      "source": "docs/art-source/motions/alternatives-20260909-desktop/fine_motion/alpha.png",
+      "sourceSha256": "9ef20aab9c06ee0d053792f1c42cd838475ef000e6943ede6e263dd1e3a66365",
+      "crop": [
+        544,
+        553,
+        735,
+        793
+      ],
+      "destination": [
+        279,
+        263,
+        82,
+        103
+      ]
+    },
+    {
+      "frame": 11,
+      "sourceFrame": 11,
+      "source": "docs/art-source/motions/alternatives-20260909-desktop/fine_motion/alpha.png",
+      "sourceSha256": "9ef20aab9c06ee0d053792f1c42cd838475ef000e6943ede6e263dd1e3a66365",
+      "crop": [
+        804,
+        551,
+        960,
+        793
+      ],
+      "destination": [
+        414,
+        262,
+        67,
+        104
+      ]
+    },
+    {
+      "frame": 12,
+      "sourceFrame": 12,
+      "source": "docs/art-source/motions/alternatives-20260909-desktop/fine_motion/alpha.png",
+      "sourceSha256": "9ef20aab9c06ee0d053792f1c42cd838475ef000e6943ede6e263dd1e3a66365",
+      "crop": [
+        30,
+        835,
+        224,
+        1006
+      ],
+      "destination": [
+        22,
+        421,
+        83,
+        73
+      ]
+    },
+    {
+      "frame": 13,
+      "sourceFrame": 13,
+      "source": "docs/art-source/motions/alternatives-20260909-desktop/fine_motion/alpha.png",
+      "sourceSha256": "9ef20aab9c06ee0d053792f1c42cd838475ef000e6943ede6e263dd1e3a66365",
+      "crop": [
+        292,
+        834,
+        487,
+        1009
+      ],
+      "destination": [
+        150,
+        419,
+        84,
+        75
+      ]
+    },
+    {
+      "frame": 14,
+      "sourceFrame": 14,
+      "source": "docs/art-source/motions/alternatives-20260909-desktop/fine_motion/alpha.png",
+      "sourceSha256": "9ef20aab9c06ee0d053792f1c42cd838475ef000e6943ede6e263dd1e3a66365",
+      "crop": [
+        534,
+        860,
+        739,
+        1002
+      ],
+      "destination": [
+        276,
+        433,
+        88,
+        61
+      ]
+    },
+    {
+      "frame": 15,
+      "sourceFrame": 15,
+      "source": "docs/art-source/motions/alternatives-20260909-desktop/fine_motion/alpha.png",
+      "sourceSha256": "9ef20aab9c06ee0d053792f1c42cd838475ef000e6943ede6e263dd1e3a66365",
+      "crop": [
+        779,
+        836,
+        985,
+        1012
+      ],
+      "destination": [
+        403,
+        418,
+        89,
+        76
+      ]
+    },
+    {
+      "frame": 16,
+      "sourceFrame": 16,
+      "source": "docs/art-source/motions/alternatives-20260909-desktop/fine_motion/alpha.png",
+      "sourceSha256": "9ef20aab9c06ee0d053792f1c42cd838475ef000e6943ede6e263dd1e3a66365",
+      "crop": [
+        57,
+        1030,
+        217,
+        1267
+      ],
+      "destination": [
+        29,
+        520,
+        69,
+        102
+      ]
+    },
+    {
+      "frame": 17,
+      "sourceFrame": 17,
+      "source": "docs/art-source/motions/alternatives-20260909-desktop/fine_motion/alpha.png",
+      "sourceSha256": "9ef20aab9c06ee0d053792f1c42cd838475ef000e6943ede6e263dd1e3a66365",
+      "crop": [
+        302,
+        1033,
+        463,
+        1268
+      ],
+      "destination": [
+        157,
+        521,
+        69,
+        101
+      ]
+    },
+    {
+      "frame": 18,
+      "sourceFrame": 18,
+      "source": "docs/art-source/motions/alternatives-20260909-desktop/fine_motion/alpha.png",
+      "sourceSha256": "9ef20aab9c06ee0d053792f1c42cd838475ef000e6943ede6e263dd1e3a66365",
+      "crop": [
+        547,
+        1054,
+        712,
+        1255
+      ],
+      "destination": [
+        284,
+        536,
+        71,
+        86
+      ]
+    },
+    {
+      "frame": 19,
+      "sourceFrame": 19,
+      "source": "docs/art-source/motions/alternatives-20260909-desktop/fine_motion/alpha.png",
+      "sourceSha256": "9ef20aab9c06ee0d053792f1c42cd838475ef000e6943ede6e263dd1e3a66365",
+      "crop": [
+        768,
+        1133,
+        1008,
+        1256
+      ],
+      "destination": [
+        396,
+        569,
+        103,
+        53
+      ]
+    },
+    {
+      "frame": 20,
+      "sourceFrame": 20,
+      "source": "docs/art-source/motions/alternatives-20260909-desktop/fine_motion/alpha.png",
+      "sourceSha256": "9ef20aab9c06ee0d053792f1c42cd838475ef000e6943ede6e263dd1e3a66365",
+      "crop": [
+        55,
+        1287,
+        202,
+        1526
+      ],
+      "destination": [
+        32,
+        647,
+        63,
+        103
+      ]
+    },
+    {
+      "frame": 21,
+      "sourceFrame": 21,
+      "source": "docs/art-source/motions/alternatives-20260909-desktop/fine_motion/alpha.png",
+      "sourceSha256": "9ef20aab9c06ee0d053792f1c42cd838475ef000e6943ede6e263dd1e3a66365",
+      "crop": [
+        312,
+        1286,
+        465,
+        1525
+      ],
+      "destination": [
+        159,
+        647,
+        66,
+        103
+      ]
+    },
+    {
+      "frame": 22,
+      "sourceFrame": 22,
+      "source": "docs/art-source/motions/alternatives-20260909-desktop/fine_motion/alpha.png",
+      "sourceSha256": "9ef20aab9c06ee0d053792f1c42cd838475ef000e6943ede6e263dd1e3a66365",
+      "crop": [
+        542,
+        1279,
+        708,
+        1518
+      ],
+      "destination": [
+        284,
+        647,
+        71,
+        103
+      ]
+    },
+    {
+      "frame": 23,
+      "sourceFrame": 23,
+      "source": "docs/art-source/motions/alternatives-20260909-desktop/fine_motion/alpha.png",
+      "sourceSha256": "9ef20aab9c06ee0d053792f1c42cd838475ef000e6943ede6e263dd1e3a66365",
+      "crop": [
+        804,
+        1286,
+        958,
+        1524
+      ],
+      "destination": [
+        415,
+        648,
+        66,
+        102
+      ]
+    }
+  ]
+}

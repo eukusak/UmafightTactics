@@ -1,0 +1,12 @@
+{
+  "skillReview": "원거리 조준/손짓 발사. 광역 폭발: 안경을 짚어 목표 확인 → 두 손으로 기운 응축 → 양팔로 적 무리 방향 방출 → 회복. 안경, 풍성한 흰 머리, 보라 승부복 유지. 돌진/치유 없음.",
+  "source": "alpha.png",
+  "approved": true,
+  "reviewedAt": "2026-09-09",
+  "checks": [
+    "Race costume and identity",
+    "24 poses with correct action rows",
+    "actual skill target and effect",
+    "transparent RGBA"
+  ]
+}

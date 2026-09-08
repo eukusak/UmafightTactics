@@ -1,0 +1,443 @@
+{
+  "format": "uft-baked-frames-v1",
+  "scale": 0.41935483870967744,
+  "anchor": [
+    64,
+    110
+  ],
+  "runtimeSha256": "7b70c3b1067673cc2325b3abfd2a1568ad8554b841f686226d8c20f6ceca0640",
+  "frames": [
+    {
+      "frame": 0,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/alternatives-20260909-desktop/rice_shower/alpha.png",
+      "sourceSha256": "0043fb4f9e0e7b670b09c64b6c368683b7400740789a26649f2c9e2c65d3f53b",
+      "crop": [
+        54,
+        9,
+        216,
+        249
+      ],
+      "destination": [
+        30,
+        9,
+        68,
+        101
+      ]
+    },
+    {
+      "frame": 1,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/alternatives-20260909-desktop/rice_shower/alpha.png",
+      "sourceSha256": "0043fb4f9e0e7b670b09c64b6c368683b7400740789a26649f2c9e2c65d3f53b",
+      "crop": [
+        309,
+        9,
+        472,
+        249
+      ],
+      "destination": [
+        158,
+        9,
+        68,
+        101
+      ]
+    },
+    {
+      "frame": 2,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/alternatives-20260909-desktop/rice_shower/alpha.png",
+      "sourceSha256": "0043fb4f9e0e7b670b09c64b6c368683b7400740789a26649f2c9e2c65d3f53b",
+      "crop": [
+        561,
+        10,
+        724,
+        249
+      ],
+      "destination": [
+        286,
+        10,
+        68,
+        100
+      ]
+    },
+    {
+      "frame": 3,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/alternatives-20260909-desktop/rice_shower/alpha.png",
+      "sourceSha256": "0043fb4f9e0e7b670b09c64b6c368683b7400740789a26649f2c9e2c65d3f53b",
+      "crop": [
+        818,
+        9,
+        979,
+        249
+      ],
+      "destination": [
+        414,
+        9,
+        68,
+        101
+      ]
+    },
+    {
+      "frame": 4,
+      "sourceFrame": 4,
+      "source": "docs/art-source/motions/alternatives-20260909-desktop/rice_shower/alpha.png",
+      "sourceSha256": "0043fb4f9e0e7b670b09c64b6c368683b7400740789a26649f2c9e2c65d3f53b",
+      "crop": [
+        28,
+        265,
+        237,
+        504
+      ],
+      "destination": [
+        20,
+        138,
+        88,
+        100
+      ]
+    },
+    {
+      "frame": 5,
+      "sourceFrame": 5,
+      "source": "docs/art-source/motions/alternatives-20260909-desktop/rice_shower/alpha.png",
+      "sourceSha256": "0043fb4f9e0e7b670b09c64b6c368683b7400740789a26649f2c9e2c65d3f53b",
+      "crop": [
+        301,
+        270,
+        498,
+        507
+      ],
+      "destination": [
+        150,
+        139,
+        83,
+        99
+      ]
+    },
+    {
+      "frame": 6,
+      "sourceFrame": 6,
+      "source": "docs/art-source/motions/alternatives-20260909-desktop/rice_shower/alpha.png",
+      "sourceSha256": "0043fb4f9e0e7b670b09c64b6c368683b7400740789a26649f2c9e2c65d3f53b",
+      "crop": [
+        553,
+        268,
+        746,
+        506
+      ],
+      "destination": [
+        279,
+        138,
+        81,
+        100
+      ]
+    },
+    {
+      "frame": 7,
+      "sourceFrame": 7,
+      "source": "docs/art-source/motions/alternatives-20260909-desktop/rice_shower/alpha.png",
+      "sourceSha256": "0043fb4f9e0e7b670b09c64b6c368683b7400740789a26649f2c9e2c65d3f53b",
+      "crop": [
+        814,
+        269,
+        1003,
+        503
+      ],
+      "destination": [
+        408,
+        140,
+        79,
+        98
+      ]
+    },
+    {
+      "frame": 8,
+      "sourceFrame": 8,
+      "source": "docs/art-source/motions/alternatives-20260909-desktop/rice_shower/alpha.png",
+      "sourceSha256": "0043fb4f9e0e7b670b09c64b6c368683b7400740789a26649f2c9e2c65d3f53b",
+      "crop": [
+        44,
+        523,
+        211,
+        767
+      ],
+      "destination": [
+        29,
+        264,
+        70,
+        102
+      ]
+    },
+    {
+      "frame": 9,
+      "sourceFrame": 9,
+      "source": "docs/art-source/motions/alternatives-20260909-desktop/rice_shower/alpha.png",
+      "sourceSha256": "0043fb4f9e0e7b670b09c64b6c368683b7400740789a26649f2c9e2c65d3f53b",
+      "crop": [
+        294,
+        524,
+        478,
+        767
+      ],
+      "destination": [
+        153,
+        264,
+        77,
+        102
+      ]
+    },
+    {
+      "frame": 10,
+      "sourceFrame": 10,
+      "source": "docs/art-source/motions/alternatives-20260909-desktop/rice_shower/alpha.png",
+      "sourceSha256": "0043fb4f9e0e7b670b09c64b6c368683b7400740789a26649f2c9e2c65d3f53b",
+      "crop": [
+        558,
+        524,
+        772,
+        767
+      ],
+      "destination": [
+        275,
+        264,
+        90,
+        102
+      ]
+    },
+    {
+      "frame": 11,
+      "sourceFrame": 11,
+      "source": "docs/art-source/motions/alternatives-20260909-desktop/rice_shower/alpha.png",
+      "sourceSha256": "0043fb4f9e0e7b670b09c64b6c368683b7400740789a26649f2c9e2c65d3f53b",
+      "crop": [
+        822,
+        523,
+        982,
+        767
+      ],
+      "destination": [
+        414,
+        264,
+        67,
+        102
+      ]
+    },
+    {
+      "frame": 12,
+      "sourceFrame": 12,
+      "source": "docs/art-source/motions/alternatives-20260909-desktop/rice_shower/alpha.png",
+      "sourceSha256": "0043fb4f9e0e7b670b09c64b6c368683b7400740789a26649f2c9e2c65d3f53b",
+      "crop": [
+        30,
+        799,
+        230,
+        1010
+      ],
+      "destination": [
+        22,
+        406,
+        84,
+        88
+      ]
+    },
+    {
+      "frame": 13,
+      "sourceFrame": 13,
+      "source": "docs/art-source/motions/alternatives-20260909-desktop/rice_shower/alpha.png",
+      "sourceSha256": "0043fb4f9e0e7b670b09c64b6c368683b7400740789a26649f2c9e2c65d3f53b",
+      "crop": [
+        302,
+        790,
+        502,
+        1011
+      ],
+      "destination": [
+        150,
+        401,
+        84,
+        93
+      ]
+    },
+    {
+      "frame": 14,
+      "sourceFrame": 14,
+      "source": "docs/art-source/motions/alternatives-20260909-desktop/rice_shower/alpha.png",
+      "sourceSha256": "0043fb4f9e0e7b670b09c64b6c368683b7400740789a26649f2c9e2c65d3f53b",
+      "crop": [
+        565,
+        784,
+        768,
+        1012
+      ],
+      "destination": [
+        277,
+        398,
+        85,
+        96
+      ]
+    },
+    {
+      "frame": 15,
+      "sourceFrame": 15,
+      "source": "docs/art-source/motions/alternatives-20260909-desktop/rice_shower/alpha.png",
+      "sourceSha256": "0043fb4f9e0e7b670b09c64b6c368683b7400740789a26649f2c9e2c65d3f53b",
+      "crop": [
+        817,
+        788,
+        1000,
+        1012
+      ],
+      "destination": [
+        409,
+        400,
+        77,
+        94
+      ]
+    },
+    {
+      "frame": 16,
+      "sourceFrame": 16,
+      "source": "docs/art-source/motions/alternatives-20260909-desktop/rice_shower/alpha.png",
+      "sourceSha256": "0043fb4f9e0e7b670b09c64b6c368683b7400740789a26649f2c9e2c65d3f53b",
+      "crop": [
+        37,
+        1037,
+        232,
+        1256
+      ],
+      "destination": [
+        23,
+        530,
+        82,
+        92
+      ]
+    },
+    {
+      "frame": 17,
+      "sourceFrame": 17,
+      "source": "docs/art-source/motions/alternatives-20260909-desktop/rice_shower/alpha.png",
+      "sourceSha256": "0043fb4f9e0e7b670b09c64b6c368683b7400740789a26649f2c9e2c65d3f53b",
+      "crop": [
+        307,
+        1056,
+        497,
+        1255
+      ],
+      "destination": [
+        152,
+        539,
+        80,
+        83
+      ]
+    },
+    {
+      "frame": 18,
+      "sourceFrame": 18,
+      "source": "docs/art-source/motions/alternatives-20260909-desktop/rice_shower/alpha.png",
+      "sourceSha256": "0043fb4f9e0e7b670b09c64b6c368683b7400740789a26649f2c9e2c65d3f53b",
+      "crop": [
+        554,
+        1087,
+        726,
+        1258
+      ],
+      "destination": [
+        284,
+        550,
+        72,
+        72
+      ]
+    },
+    {
+      "frame": 19,
+      "sourceFrame": 19,
+      "source": "docs/art-source/motions/alternatives-20260909-desktop/rice_shower/alpha.png",
+      "sourceSha256": "0043fb4f9e0e7b670b09c64b6c368683b7400740789a26649f2c9e2c65d3f53b",
+      "crop": [
+        774,
+        1153,
+        1024,
+        1259
+      ],
+      "destination": [
+        395,
+        578,
+        105,
+        44
+      ]
+    },
+    {
+      "frame": 20,
+      "sourceFrame": 20,
+      "source": "docs/art-source/motions/alternatives-20260909-desktop/rice_shower/alpha.png",
+      "sourceSha256": "0043fb4f9e0e7b670b09c64b6c368683b7400740789a26649f2c9e2c65d3f53b",
+      "crop": [
+        52,
+        1278,
+        211,
+        1526
+      ],
+      "destination": [
+        30,
+        646,
+        67,
+        104
+      ]
+    },
+    {
+      "frame": 21,
+      "sourceFrame": 21,
+      "source": "docs/art-source/motions/alternatives-20260909-desktop/rice_shower/alpha.png",
+      "sourceSha256": "0043fb4f9e0e7b670b09c64b6c368683b7400740789a26649f2c9e2c65d3f53b",
+      "crop": [
+        312,
+        1279,
+        480,
+        1526
+      ],
+      "destination": [
+        157,
+        646,
+        70,
+        104
+      ]
+    },
+    {
+      "frame": 22,
+      "sourceFrame": 22,
+      "source": "docs/art-source/motions/alternatives-20260909-desktop/rice_shower/alpha.png",
+      "sourceSha256": "0043fb4f9e0e7b670b09c64b6c368683b7400740789a26649f2c9e2c65d3f53b",
+      "crop": [
+        552,
+        1275,
+        735,
+        1506
+      ],
+      "destination": [
+        281,
+        653,
+        77,
+        97
+      ]
+    },
+    {
+      "frame": 23,
+      "sourceFrame": 23,
+      "source": "docs/art-source/motions/alternatives-20260909-desktop/rice_shower/alpha.png",
+      "sourceSha256": "0043fb4f9e0e7b670b09c64b6c368683b7400740789a26649f2c9e2c65d3f53b",
+      "crop": [
+        812,
+        1278,
+        980,
+        1526
+      ],
+      "destination": [
+        413,
+        646,
+        70,
+        104
+      ]
+    }
+  ]
+}

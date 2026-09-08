@@ -1,0 +1,12 @@
+{
+  "approved": true,
+  "source": "alpha.png",
+  "skillReview": "근접 주먹 공격. 아군 전체 강화: 가슴 앞 집중 → 양팔을 들어 격려 → 팔을 펼친 지휘 → 경례 유지. 비행 재킷과 주황 머리 유지. 치유/광역 공격/비행기 소환 없음.",
+  "reviewedAt": "2026-09-09",
+  "checks": [
+    "Race costume and identity",
+    "24 poses with correct action rows",
+    "actual skill target and effect",
+    "transparent RGBA"
+  ]
+}

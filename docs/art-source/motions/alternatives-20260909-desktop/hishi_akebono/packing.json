@@ -1,0 +1,443 @@
+{
+  "format": "uft-baked-frames-v1",
+  "scale": 0.39245283018867927,
+  "anchor": [
+    64,
+    110
+  ],
+  "runtimeSha256": "dbd8599fb62f3a6ab03254d2b9b78c8743774a5146908c5d1b9c3ecfa72ba2e4",
+  "frames": [
+    {
+      "frame": 0,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/alternatives-20260909-desktop/hishi_akebono/alpha.png",
+      "sourceSha256": "5370715e572f45cd1a46a0a0eb8f99938e3bd23b0c9658bdf4a3591ad8946851",
+      "crop": [
+        35,
+        5,
+        224,
+        256
+      ],
+      "destination": [
+        27,
+        11,
+        74,
+        99
+      ]
+    },
+    {
+      "frame": 1,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/alternatives-20260909-desktop/hishi_akebono/alpha.png",
+      "sourceSha256": "5370715e572f45cd1a46a0a0eb8f99938e3bd23b0c9658bdf4a3591ad8946851",
+      "crop": [
+        291,
+        6,
+        482,
+        256
+      ],
+      "destination": [
+        154,
+        12,
+        75,
+        98
+      ]
+    },
+    {
+      "frame": 2,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/alternatives-20260909-desktop/hishi_akebono/alpha.png",
+      "sourceSha256": "5370715e572f45cd1a46a0a0eb8f99938e3bd23b0c9658bdf4a3591ad8946851",
+      "crop": [
+        549,
+        7,
+        738,
+        256
+      ],
+      "destination": [
+        283,
+        12,
+        74,
+        98
+      ]
+    },
+    {
+      "frame": 3,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/alternatives-20260909-desktop/hishi_akebono/alpha.png",
+      "sourceSha256": "5370715e572f45cd1a46a0a0eb8f99938e3bd23b0c9658bdf4a3591ad8946851",
+      "crop": [
+        804,
+        7,
+        994,
+        256
+      ],
+      "destination": [
+        410,
+        12,
+        75,
+        98
+      ]
+    },
+    {
+      "frame": 4,
+      "sourceFrame": 4,
+      "source": "docs/art-source/motions/alternatives-20260909-desktop/hishi_akebono/alpha.png",
+      "sourceSha256": "5370715e572f45cd1a46a0a0eb8f99938e3bd23b0c9658bdf4a3591ad8946851",
+      "crop": [
+        30,
+        259,
+        234,
+        510
+      ],
+      "destination": [
+        24,
+        139,
+        80,
+        99
+      ]
+    },
+    {
+      "frame": 5,
+      "sourceFrame": 5,
+      "source": "docs/art-source/motions/alternatives-20260909-desktop/hishi_akebono/alpha.png",
+      "sourceSha256": "5370715e572f45cd1a46a0a0eb8f99938e3bd23b0c9658bdf4a3591ad8946851",
+      "crop": [
+        290,
+        258,
+        484,
+        509
+      ],
+      "destination": [
+        154,
+        139,
+        76,
+        99
+      ]
+    },
+    {
+      "frame": 6,
+      "sourceFrame": 6,
+      "source": "docs/art-source/motions/alternatives-20260909-desktop/hishi_akebono/alpha.png",
+      "sourceSha256": "5370715e572f45cd1a46a0a0eb8f99938e3bd23b0c9658bdf4a3591ad8946851",
+      "crop": [
+        537,
+        257,
+        750,
+        511
+      ],
+      "destination": [
+        278,
+        138,
+        84,
+        100
+      ]
+    },
+    {
+      "frame": 7,
+      "sourceFrame": 7,
+      "source": "docs/art-source/motions/alternatives-20260909-desktop/hishi_akebono/alpha.png",
+      "sourceSha256": "5370715e572f45cd1a46a0a0eb8f99938e3bd23b0c9658bdf4a3591ad8946851",
+      "crop": [
+        801,
+        263,
+        998,
+        509
+      ],
+      "destination": [
+        409,
+        141,
+        77,
+        97
+      ]
+    },
+    {
+      "frame": 8,
+      "sourceFrame": 8,
+      "source": "docs/art-source/motions/alternatives-20260909-desktop/hishi_akebono/alpha.png",
+      "sourceSha256": "5370715e572f45cd1a46a0a0eb8f99938e3bd23b0c9658bdf4a3591ad8946851",
+      "crop": [
+        30,
+        514,
+        240,
+        767
+      ],
+      "destination": [
+        23,
+        267,
+        82,
+        99
+      ]
+    },
+    {
+      "frame": 9,
+      "sourceFrame": 9,
+      "source": "docs/art-source/motions/alternatives-20260909-desktop/hishi_akebono/alpha.png",
+      "sourceSha256": "5370715e572f45cd1a46a0a0eb8f99938e3bd23b0c9658bdf4a3591ad8946851",
+      "crop": [
+        293,
+        511,
+        484,
+        767
+      ],
+      "destination": [
+        154,
+        266,
+        75,
+        100
+      ]
+    },
+    {
+      "frame": 10,
+      "sourceFrame": 10,
+      "source": "docs/art-source/motions/alternatives-20260909-desktop/hishi_akebono/alpha.png",
+      "sourceSha256": "5370715e572f45cd1a46a0a0eb8f99938e3bd23b0c9658bdf4a3591ad8946851",
+      "crop": [
+        543,
+        511,
+        763,
+        768
+      ],
+      "destination": [
+        277,
+        265,
+        86,
+        101
+      ]
+    },
+    {
+      "frame": 11,
+      "sourceFrame": 11,
+      "source": "docs/art-source/motions/alternatives-20260909-desktop/hishi_akebono/alpha.png",
+      "sourceSha256": "5370715e572f45cd1a46a0a0eb8f99938e3bd23b0c9658bdf4a3591ad8946851",
+      "crop": [
+        803,
+        515,
+        993,
+        768
+      ],
+      "destination": [
+        410,
+        267,
+        75,
+        99
+      ]
+    },
+    {
+      "frame": 12,
+      "sourceFrame": 12,
+      "source": "docs/art-source/motions/alternatives-20260909-desktop/hishi_akebono/alpha.png",
+      "sourceSha256": "5370715e572f45cd1a46a0a0eb8f99938e3bd23b0c9658bdf4a3591ad8946851",
+      "crop": [
+        35,
+        778,
+        232,
+        1038
+      ],
+      "destination": [
+        25,
+        392,
+        77,
+        102
+      ]
+    },
+    {
+      "frame": 13,
+      "sourceFrame": 13,
+      "source": "docs/art-source/motions/alternatives-20260909-desktop/hishi_akebono/alpha.png",
+      "sourceSha256": "5370715e572f45cd1a46a0a0eb8f99938e3bd23b0c9658bdf4a3591ad8946851",
+      "crop": [
+        290,
+        774,
+        490,
+        1039
+      ],
+      "destination": [
+        153,
+        390,
+        78,
+        104
+      ]
+    },
+    {
+      "frame": 14,
+      "sourceFrame": 14,
+      "source": "docs/art-source/motions/alternatives-20260909-desktop/hishi_akebono/alpha.png",
+      "sourceSha256": "5370715e572f45cd1a46a0a0eb8f99938e3bd23b0c9658bdf4a3591ad8946851",
+      "crop": [
+        538,
+        774,
+        757,
+        1039
+      ],
+      "destination": [
+        277,
+        390,
+        86,
+        104
+      ]
+    },
+    {
+      "frame": 15,
+      "sourceFrame": 15,
+      "source": "docs/art-source/motions/alternatives-20260909-desktop/hishi_akebono/alpha.png",
+      "sourceSha256": "5370715e572f45cd1a46a0a0eb8f99938e3bd23b0c9658bdf4a3591ad8946851",
+      "crop": [
+        803,
+        779,
+        995,
+        1039
+      ],
+      "destination": [
+        410,
+        392,
+        75,
+        102
+      ]
+    },
+    {
+      "frame": 16,
+      "sourceFrame": 16,
+      "source": "docs/art-source/motions/alternatives-20260909-desktop/hishi_akebono/alpha.png",
+      "sourceSha256": "5370715e572f45cd1a46a0a0eb8f99938e3bd23b0c9658bdf4a3591ad8946851",
+      "crop": [
+        36,
+        1053,
+        231,
+        1277
+      ],
+      "destination": [
+        25,
+        534,
+        77,
+        88
+      ]
+    },
+    {
+      "frame": 17,
+      "sourceFrame": 17,
+      "source": "docs/art-source/motions/alternatives-20260909-desktop/hishi_akebono/alpha.png",
+      "sourceSha256": "5370715e572f45cd1a46a0a0eb8f99938e3bd23b0c9658bdf4a3591ad8946851",
+      "crop": [
+        290,
+        1058,
+        493,
+        1276
+      ],
+      "destination": [
+        152,
+        536,
+        80,
+        86
+      ]
+    },
+    {
+      "frame": 18,
+      "sourceFrame": 18,
+      "source": "docs/art-source/motions/alternatives-20260909-desktop/hishi_akebono/alpha.png",
+      "sourceSha256": "5370715e572f45cd1a46a0a0eb8f99938e3bd23b0c9658bdf4a3591ad8946851",
+      "crop": [
+        534,
+        1089,
+        727,
+        1276
+      ],
+      "destination": [
+        282,
+        549,
+        76,
+        73
+      ]
+    },
+    {
+      "frame": 19,
+      "sourceFrame": 19,
+      "source": "docs/art-source/motions/alternatives-20260909-desktop/hishi_akebono/alpha.png",
+      "sourceSha256": "5370715e572f45cd1a46a0a0eb8f99938e3bd23b0c9658bdf4a3591ad8946851",
+      "crop": [
+        768,
+        1154,
+        1019,
+        1272
+      ],
+      "destination": [
+        398,
+        576,
+        99,
+        46
+      ]
+    },
+    {
+      "frame": 20,
+      "sourceFrame": 20,
+      "source": "docs/art-source/motions/alternatives-20260909-desktop/hishi_akebono/alpha.png",
+      "sourceSha256": "5370715e572f45cd1a46a0a0eb8f99938e3bd23b0c9658bdf4a3591ad8946851",
+      "crop": [
+        34,
+        1283,
+        225,
+        1531
+      ],
+      "destination": [
+        26,
+        653,
+        75,
+        97
+      ]
+    },
+    {
+      "frame": 21,
+      "sourceFrame": 21,
+      "source": "docs/art-source/motions/alternatives-20260909-desktop/hishi_akebono/alpha.png",
+      "sourceSha256": "5370715e572f45cd1a46a0a0eb8f99938e3bd23b0c9658bdf4a3591ad8946851",
+      "crop": [
+        285,
+        1278,
+        483,
+        1534
+      ],
+      "destination": [
+        153,
+        650,
+        78,
+        100
+      ]
+    },
+    {
+      "frame": 22,
+      "sourceFrame": 22,
+      "source": "docs/art-source/motions/alternatives-20260909-desktop/hishi_akebono/alpha.png",
+      "sourceSha256": "5370715e572f45cd1a46a0a0eb8f99938e3bd23b0c9658bdf4a3591ad8946851",
+      "crop": [
+        545,
+        1278,
+        744,
+        1535
+      ],
+      "destination": [
+        281,
+        649,
+        78,
+        101
+      ]
+    },
+    {
+      "frame": 23,
+      "sourceFrame": 23,
+      "source": "docs/art-source/motions/alternatives-20260909-desktop/hishi_akebono/alpha.png",
+      "sourceSha256": "5370715e572f45cd1a46a0a0eb8f99938e3bd23b0c9658bdf4a3591ad8946851",
+      "crop": [
+        799,
+        1283,
+        995,
+        1533
+      ],
+      "destination": [
+        409,
+        652,
+        77,
+        98
+      ]
+    }
+  ]
+}
