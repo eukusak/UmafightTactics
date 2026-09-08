@@ -1,7 +1,7 @@
 {
   "acceptedArt": 329,
   "baseCommit": "777ead88896acd83bb2cbf12f323b0becf00f5b7",
-  "batchSize": 5,
+  "batchSize": 10,
   "completedBatch": [
     "transcend",
     "north_flight",
@@ -84,7 +84,25 @@
       "compiled model and runtime verification"
     ]
   },
-  "workflow": "This session generates five distinct portraits, inspects and saves to GitHub, verifies, then begins the next five. Preserve the separate concurrent ten-character batches. Complete all 145 portraits before rigging one character at a time.",
+  "workflow": "Generate ten distinct portraits, inspect and save to GitHub, verify, then begin the next ten (final remainder allowed). Complete all 145 portraits before rigging one character at a time.",
   "latestTenCharacterBatch": "batch-1002",
-  "latestFiveCharacterBatch": "batch-16"
+  "latestFiveCharacterBatch": "batch-16",
+  "activeTenCharacterBatch": {
+    "session": "8bd244030e73",
+    "batch": "batch-1003",
+    "ids": [
+      "admire_groove",
+      "dream_journey",
+      "calstone_light_o",
+      "durandal",
+      "bubble_gum_fellow",
+      "sakura_chitose_o",
+      "fenomeno",
+      "blast_onepiece",
+      "almond_eye",
+      "lucky_lilac"
+    ],
+    "status": "reference-inspection",
+    "note": "This session owns the last ten missing IDs to avoid overlap. Other concurrent sessions should skip these IDs. Complete all 145 portraits before character-by-character Live2D."
+  }
 }
