@@ -1,15 +1,15 @@
 {
-  "acceptedArt": 269,
-  "baseCommit": "0deb2bc7191f136c94cd1166be1df12dc9307f47",
+  "acceptedArt": 274,
+  "baseCommit": "888a722cde9dfa140c94c9e7fce50e80c97dae56",
   "batchSize": 5,
   "completedBatch": [
-    "gold_city",
-    "sakura_bakushin_o",
-    "seeking_the_pearl",
-    "shinko_windy",
-    "sweep_tosho"
+    "super_creek",
+    "smart_falcon",
+    "zenno_rob_roy",
+    "tosen_jordan",
+    "nakayama_festa"
   ],
-  "completedPortraits": 45,
+  "completedPortraits": 50,
   "inProgressBatch": {
     "batchSize": 10,
     "ids": [
@@ -28,11 +28,6 @@
     "status": "generating; other sessions should skip these ids"
   },
   "nextPortraitIds": [
-    "super_creek",
-    "smart_falcon",
-    "zenno_rob_roy",
-    "tosen_jordan",
-    "nakayama_festa",
     "narita_taishin",
     "nishino_flower",
     "haru_urara",
@@ -131,7 +126,7 @@
   ],
   "portraitTarget": 145,
   "remaining": {
-    "portraits": 100,
+    "portraits": 95,
     "battleSheets": 145,
     "cutins": 0
   },

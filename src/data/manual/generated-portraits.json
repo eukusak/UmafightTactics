@@ -754,5 +754,110 @@
       256
     ],
     "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "super_creek": {
+    "file": "portraits/super_creek.png",
+    "source": "docs/art-source/portraits/batch-09/super_creek.png",
+    "sourceSha256": "7f8a1feacea8d2c0d4bb31270e517857cd6837afb9d483590d6ffe075e431e25",
+    "reference": "public/assets/characters/race/SuperCreek-Race.png",
+    "sourceSize": [
+      1145,
+      1374
+    ],
+    "crop": [
+      49,
+      0,
+      1145,
+      1374
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "smart_falcon": {
+    "file": "portraits/smart_falcon.png",
+    "source": "docs/art-source/portraits/batch-09/smart_falcon.png",
+    "sourceSha256": "c5aa60703832aced0267453d704a5f2f5ad97f1f802fabff6cad22ef783ecff6",
+    "reference": "public/assets/characters/race/SmartFalcon-Race.png",
+    "sourceSize": [
+      1131,
+      1391
+    ],
+    "crop": [
+      0,
+      0,
+      1113,
+      1391
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "zenno_rob_roy": {
+    "file": "portraits/zenno_rob_roy.png",
+    "source": "docs/art-source/portraits/batch-09/zenno_rob_roy.png",
+    "sourceSha256": "24cfa24a39ac1bc5a8ce3a99ce6db20a283cd2e5a92f67b7a35156974170b0de",
+    "reference": "public/assets/characters/race/ZennoRobRoy-Race.png",
+    "sourceSize": [
+      1145,
+      1374
+    ],
+    "crop": [
+      49,
+      0,
+      1095,
+      1374
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "tosen_jordan": {
+    "file": "portraits/tosen_jordan.png",
+    "source": "docs/art-source/portraits/batch-09/tosen_jordan.png",
+    "sourceSha256": "0eb1555c4b851ede439eb1a51a8c15cb5c49ecb9928af648d78e637980b15d43",
+    "reference": "public/assets/characters/race/TosenJordan-Race.png",
+    "sourceSize": [
+      1141,
+      1379
+    ],
+    "crop": [
+      0,
+      0,
+      1141,
+      1379
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "nakayama_festa": {
+    "file": "portraits/nakayama_festa.png",
+    "source": "docs/art-source/portraits/batch-09/nakayama_festa.png",
+    "sourceSha256": "d6ec78b3d57011e3dbf4c0d011bddbcbdf623650e633c4ea01e920429db3f7e5",
+    "reference": "public/assets/characters/race/NakayamaFesta-Race.png",
+    "sourceSize": [
+      1188,
+      1324
+    ],
+    "crop": [
+      0,
+      0,
+      1188,
+      1324
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
   }
 }

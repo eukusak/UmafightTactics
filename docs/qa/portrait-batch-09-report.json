@@ -1,0 +1,106 @@
+{
+  "batchSize": 5,
+  "validation": "new portraits only; full app test/build not rerun",
+  "files": [
+    {
+      "id": "super_creek",
+      "size": [
+        256,
+        256
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "bounds": [
+        33,
+        6,
+        225,
+        250
+      ],
+      "sourceSha256": "7f8a1feacea8d2c0d4bb31270e517857cd6837afb9d483590d6ffe075e431e25",
+      "runtimeSha256": "01ef55e308cef50f15f9852e23f9e3174e35e8edf2de6b9c653214e01fe16423",
+      "reference": "public/assets/characters/race/SuperCreek-Race.png"
+    },
+    {
+      "id": "smart_falcon",
+      "size": [
+        256,
+        256
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "bounds": [
+        33,
+        6,
+        223,
+        250
+      ],
+      "sourceSha256": "c5aa60703832aced0267453d704a5f2f5ad97f1f802fabff6cad22ef783ecff6",
+      "runtimeSha256": "4925e98ef79d80ae1c393510a6a9536b5fa4fdaa5324dfec739b671a26aae1da",
+      "reference": "public/assets/characters/race/SmartFalcon-Race.png"
+    },
+    {
+      "id": "zenno_rob_roy",
+      "size": [
+        256,
+        256
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "bounds": [
+        38,
+        6,
+        220,
+        250
+      ],
+      "sourceSha256": "24cfa24a39ac1bc5a8ce3a99ce6db20a283cd2e5a92f67b7a35156974170b0de",
+      "runtimeSha256": "1d982fa36deadeb4d71f939dc3704e201970f753971b1504fc23ea2a4d609e2a",
+      "reference": "public/assets/characters/race/ZennoRobRoy-Race.png"
+    },
+    {
+      "id": "tosen_jordan",
+      "size": [
+        256,
+        256
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "bounds": [
+        27,
+        6,
+        229,
+        250
+      ],
+      "sourceSha256": "0eb1555c4b851ede439eb1a51a8c15cb5c49ecb9928af648d78e637980b15d43",
+      "runtimeSha256": "7cd73b25ff08e583d32cac320cc864134cfea693c353a4796676a14abf874ab7",
+      "reference": "public/assets/characters/race/TosenJordan-Race.png"
+    },
+    {
+      "id": "nakayama_festa",
+      "size": [
+        256,
+        256
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "bounds": [
+        18,
+        6,
+        237,
+        250
+      ],
+      "sourceSha256": "d6ec78b3d57011e3dbf4c0d011bddbcbdf623650e633c4ea01e920429db3f7e5",
+      "runtimeSha256": "9987062300211f38252596a2e12afdedc9d2d3fb5fc01d88371f80ae2951509d",
+      "reference": "public/assets/characters/race/NakayamaFesta-Race.png"
+    }
+  ]
+}
