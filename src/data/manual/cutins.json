@@ -20,5 +20,71 @@
     ],
     "leftClearPixels": 384,
     "status": "static-skill-illustration; not-rigged-model"
+  },
+  "special_week": {
+    "file": "characters/cutin/special_week.png",
+    "source": "docs/art-source/cutins/special_week.png",
+    "sourceSha256": "eb69d1f5cfe8869e8b0abb22854f010468b6242572dc8c69974d64d2857dc8e7",
+    "size": [
+      960,
+      540
+    ],
+    "leftClearPixels": 384,
+    "status": "static-skill-illustration; not-rigged-model"
+  },
+  "maruzensky": {
+    "file": "characters/cutin/maruzensky.png",
+    "source": "docs/art-source/cutins/maruzensky.png",
+    "sourceSha256": "684b8c2d8e0fa3fd3fcdc9f48e0a61c340bdc73dc12caf5b4243f01670248f0d",
+    "size": [
+      960,
+      540
+    ],
+    "leftClearPixels": 384,
+    "status": "static-skill-illustration; not-rigged-model"
+  },
+  "daiwa_scarlet": {
+    "file": "characters/cutin/daiwa_scarlet.png",
+    "source": "docs/art-source/cutins/daiwa_scarlet.png",
+    "sourceSha256": "0cba3d483e7f540e9896052287bd5648bcbeaa2160dfb329efdc935e4b00bc9e",
+    "size": [
+      960,
+      540
+    ],
+    "leftClearPixels": 384,
+    "status": "static-skill-illustration; not-rigged-model"
+  },
+  "taiki_shuttle": {
+    "file": "characters/cutin/taiki_shuttle.png",
+    "source": "docs/art-source/cutins/taiki_shuttle.png",
+    "sourceSha256": "b03a998ee940e5033416ed54f7e6e5eee1c8565dd218252ade3635068b3f176f",
+    "size": [
+      960,
+      540
+    ],
+    "leftClearPixels": 384,
+    "status": "static-skill-illustration; not-rigged-model"
+  },
+  "tm_opera_o": {
+    "file": "characters/cutin/tm_opera_o.png",
+    "source": "docs/art-source/cutins/tm_opera_o.png",
+    "sourceSha256": "407d5a2725aaad2b456df68ea5982c1ac376af5f6ea899b40ca3e984944c3895",
+    "size": [
+      960,
+      540
+    ],
+    "leftClearPixels": 384,
+    "status": "static-skill-illustration; not-rigged-model"
+  },
+  "mihono_bourbon": {
+    "file": "characters/cutin/mihono_bourbon.png",
+    "source": "docs/art-source/cutins/mihono_bourbon.png",
+    "sourceSha256": "22579239ff22977a932fb6d57971903f9efb80c8bbb78b10e6b0a85e74294d0f",
+    "size": [
+      960,
+      540
+    ],
+    "leftClearPixels": 384,
+    "status": "static-skill-illustration; not-rigged-model"
   }
 }

@@ -25,7 +25,9 @@
       41,
       42,
       43
-    ]
+    ],
+    "cutinStatus": "delivered-transparent-960x540",
+    "riggingStatus": "five-source-components-delivered; not-assembled-or-rigged"
   },
   {
     "unitId": "silence_suzuka",
@@ -88,7 +90,7 @@
     "name": "마루젠스키",
     "priority": "P0",
     "reference": "public/assets/characters/race/Maruzensky-Race.png",
-    "status": "missing-transparent-character-art",
+    "status": "portrait-complete-from-generated-cutin; standee-and-46-pose-sheet-pending",
     "style": "smooth cel-shaded 2.5D / Live2D-like; not pixel art",
     "skillTemplate": "AURA",
     "skillName": "마루젠스키 · 76'朝日杯3歳S(OP)",
@@ -109,7 +111,8 @@
       41,
       42,
       43
-    ]
+    ],
+    "cutinStatus": "delivered-transparent-960x540"
   },
   {
     "unitId": "fuji_kiseki",
@@ -228,7 +231,7 @@
     "name": "다이와 스칼렛",
     "priority": "P0",
     "reference": "public/assets/characters/race/DaiwaScarlet-Race.png",
-    "status": "missing-transparent-character-art",
+    "status": "portrait-complete-from-generated-cutin; standee-and-46-pose-sheet-pending",
     "style": "smooth cel-shaded 2.5D / Live2D-like; not pixel art",
     "skillTemplate": "AOE_BURST",
     "skillName": "다이와 스칼렛 · 秋華賞(GI)",
@@ -249,14 +252,15 @@
       41,
       42,
       43
-    ]
+    ],
+    "cutinStatus": "delivered-transparent-960x540"
   },
   {
     "unitId": "taiki_shuttle",
     "name": "타이키 셔틀",
     "priority": "P0",
     "reference": "public/assets/characters/race/TaikiShuttle-Race.png",
-    "status": "missing-transparent-character-art",
+    "status": "portrait-complete-from-generated-cutin; standee-and-46-pose-sheet-pending",
     "style": "smooth cel-shaded 2.5D / Live2D-like; not pixel art",
     "skillTemplate": "AOE_BURST",
     "skillName": "타이키 셔틀 · スプリンターズS(GI)",
@@ -277,7 +281,8 @@
       41,
       42,
       43
-    ]
+    ],
+    "cutinStatus": "delivered-transparent-960x540"
   },
   {
     "unitId": "grass_wonder",
@@ -396,7 +401,7 @@
     "name": "티엠 오페라 오",
     "priority": "P0",
     "reference": "public/assets/characters/race/TMOperaO-Race.png",
-    "status": "missing-transparent-character-art",
+    "status": "portrait-complete-from-generated-cutin; standee-and-46-pose-sheet-pending",
     "style": "smooth cel-shaded 2.5D / Live2D-like; not pixel art",
     "skillTemplate": "SHIELD_TAUNT",
     "skillName": "티엠 오페라 오 · 皐月賞(GI)",
@@ -417,7 +422,8 @@
       41,
       42,
       43
-    ]
+    ],
+    "cutinStatus": "delivered-transparent-960x540"
   },
   {
     "unitId": "narita_brian",
@@ -676,7 +682,7 @@
     "name": "미호노 부르봉",
     "priority": "P0",
     "reference": "public/assets/characters/race/MihonoBourbon-Race.png",
-    "status": "missing-transparent-character-art",
+    "status": "portrait-complete-from-generated-cutin; standee-and-46-pose-sheet-pending",
     "style": "smooth cel-shaded 2.5D / Live2D-like; not pixel art",
     "skillTemplate": "AOE_BURST",
     "skillName": "미호노 부르봉 · 朝日杯3歳S(GI)",
@@ -697,7 +703,8 @@
       41,
       42,
       43
-    ]
+    ],
+    "cutinStatus": "delivered-transparent-960x540"
   },
   {
     "unitId": "mejiro_ryan",
