@@ -1,25 +1,33 @@
 {
-  "baseCommit": "a81d215b0f96019d9fc118665aa32d7b27406d5b",
+  "acceptedArt": 269,
+  "baseCommit": "0deb2bc7191f136c94cd1166be1df12dc9307f47",
+  "batchSize": 5,
   "completedBatch": [
-    "winning_ticket",
-    "air_shakur",
-    "eishin_flash",
-    "curren_chan",
-    "kawakami_princess"
-  ],
-  "acceptedArt": 264,
-  "requiredArt": 514,
-  "remaining": {
-    "portraits": 105,
-    "battleSheets": 145,
-    "cutins": 0
-  },
-  "nextPortraitIds": [
     "gold_city",
     "sakura_bakushin_o",
     "seeking_the_pearl",
     "shinko_windy",
-    "sweep_tosho",
+    "sweep_tosho"
+  ],
+  "completedPortraits": 45,
+  "inProgressBatch": {
+    "batchSize": 10,
+    "ids": [
+      "logotype",
+      "victoire_pisa",
+      "rose_kingdom",
+      "rulership",
+      "efforia",
+      "titleholder",
+      "phalaenopsis",
+      "verxina",
+      "manhattan_cafe",
+      "espoir_city"
+    ],
+    "session": "e17e1cf9437c",
+    "status": "generating; other sessions should skip these ids"
+  },
+  "nextPortraitIds": [
     "super_creek",
     "smart_falcon",
     "zenno_rob_roy",
@@ -121,6 +129,21 @@
     "manhattan_cafe",
     "espoir_city"
   ],
+  "portraitTarget": 145,
+  "remaining": {
+    "portraits": 100,
+    "battleSheets": 145,
+    "cutins": 0
+  },
+  "requiredArt": 514,
+  "resumeInstructions": [
+    "Read this checkpoint and current PR head before creating assets.",
+    "Skip paths already listed in delivered-art.json.",
+    "Inspect true alpha and identity before running scripts/import-portrait.py.",
+    "Upload and verify original/runtime Git blob hashes before advancing branch ref.",
+    "Update counts only for accepted runtime assets; source components are not completed battle sheets.",
+    "Include genuine and samson_big in the 145-character target; their race sources and portraits already exist."
+  ],
   "rigging": {
     "character": "special_week",
     "availableComponents": [
@@ -138,33 +161,5 @@
       "compiled model and runtime verification"
     ]
   },
-  "resumeInstructions": [
-    "Read this checkpoint and current PR head before creating assets.",
-    "Skip paths already listed in delivered-art.json.",
-    "Inspect true alpha and identity before running scripts/import-portrait.py.",
-    "Upload and verify original/runtime Git blob hashes before advancing branch ref.",
-    "Update counts only for accepted runtime assets; source components are not completed battle sheets.",
-    "Include genuine and samson_big in the 145-character target; their race sources and portraits already exist."
-  ],
-  "portraitTarget": 145,
-  "completedPortraits": 40,
-  "batchSize": 10,
-  "workflow": "Generate ten distinct portraits, inspect and package, commit/push and verify, then begin next ten (final remainder allowed). Complete all 145 portraits before rigging one character at a time.",
-  "inProgressBatch": {
-    "session": "e17e1cf9437c",
-    "ids": [
-      "logotype",
-      "victoire_pisa",
-      "rose_kingdom",
-      "rulership",
-      "efforia",
-      "titleholder",
-      "phalaenopsis",
-      "verxina",
-      "manhattan_cafe",
-      "espoir_city"
-    ],
-    "status": "generating; other sessions should skip these ids",
-    "batchSize": 10
-  }
+  "workflow": "This session generates five portraits, inspects, saves and verifies before next five. Preserve concurrent session's separate ten-character reservation. Finish all 145 portraits before rigging one character at a time."
 }

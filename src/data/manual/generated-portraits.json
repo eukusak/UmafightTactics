@@ -649,5 +649,110 @@
       256
     ],
     "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "gold_city": {
+    "file": "portraits/gold_city.png",
+    "source": "docs/art-source/portraits/batch-08/gold_city.png",
+    "sourceSha256": "f8936a2f17e837f752f0b07bb2cebeba533fedf647a3e87d5bbde9e2f49d0a9a",
+    "reference": "public/assets/characters/race/GoldCity-Race.png",
+    "sourceSize": [
+      1199,
+      1312
+    ],
+    "crop": [
+      0,
+      0,
+      1199,
+      1312
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "sakura_bakushin_o": {
+    "file": "portraits/sakura_bakushin_o.png",
+    "source": "docs/art-source/portraits/batch-08/sakura_bakushin_o.png",
+    "sourceSha256": "54a7b4df1365aa4dd79ab76a4fd129eb6ab2ac9e0ead7ee41c8208a865498975",
+    "reference": "public/assets/characters/race/SakuraBakushinO-Race.png",
+    "sourceSize": [
+      1145,
+      1374
+    ],
+    "crop": [
+      0,
+      0,
+      1145,
+      1374
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "seeking_the_pearl": {
+    "file": "portraits/seeking_the_pearl.png",
+    "source": "docs/art-source/portraits/batch-08/seeking_the_pearl.png",
+    "sourceSha256": "13485c0eaad40a6cbb91c3d8c9c649b8d802de50e134f203a69e0fb4fab40780",
+    "reference": "public/assets/characters/race/SeekingthePearl-Race.png",
+    "sourceSize": [
+      1247,
+      1261
+    ],
+    "crop": [
+      0,
+      0,
+      1247,
+      1261
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "shinko_windy": {
+    "file": "portraits/shinko_windy.png",
+    "source": "docs/art-source/portraits/batch-08/shinko_windy.png",
+    "sourceSha256": "8208291de8b3198da10ead38932299e52cf3878a04c67cec129c97697c5b7098",
+    "reference": "public/assets/characters/race/ShinkoWindy-Race.png",
+    "sourceSize": [
+      1145,
+      1374
+    ],
+    "crop": [
+      0,
+      0,
+      1115,
+      1374
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "sweep_tosho": {
+    "file": "portraits/sweep_tosho.png",
+    "source": "docs/art-source/portraits/batch-08/sweep_tosho.png",
+    "sourceSha256": "908fa5c67d8a8e7d32739084f09782b1464b8652cbb5c80a33704558ac19c46b",
+    "reference": "public/assets/characters/race/SweepTosho-Race.png",
+    "sourceSize": [
+      1213,
+      1296
+    ],
+    "crop": [
+      0,
+      0,
+      1213,
+      1296
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
   }
 }
