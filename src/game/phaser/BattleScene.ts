@@ -5,6 +5,7 @@ import { getUnitDef } from '../engine/roster';
 import { costColor, initialOf } from './fallback-art';
 import { arenaUrl, assetUrl, portraitUrl, animationFrame, type AnimationName } from '../ui/art';
 import { boardPoint } from '../ui/board-projection';
+import { STATUS_PRESENTATION } from '../ui/status-presentation';
 
 type Snapshot = BattleFrame['units'][number];
 type Actor = {
@@ -16,6 +17,8 @@ type Actor = {
   action: AnimationName;
   actionAt: number;
   sheet: boolean;
+  statuses: Phaser.GameObjects.Container;
+  statusKey: string;
 };
 const tint = (value: string): number => parseInt(value.replace('#', ''), 16);
 
@@ -38,6 +41,10 @@ export class BattleScene extends Phaser.Scene {
 
   preload(): void {
     this.load.image('arena', this.arena);
+    for (const status of Object.values(STATUS_PRESENTATION)) {
+      const url = status.icon ? assetUrl(`status/${status.icon}.png`) : null;
+      if (url) this.load.image(`status:${status.icon}`, url);
+    }
     const ids = new Set(this.frames.flatMap((frame) => frame.units.map((u) => u.unitDefId)));
     for (const id of ids) {
       const sheet = assetUrl(`characters/${id}.png`) ?? (id.startsWith('pve_') ? assetUrl(`pve/${id.slice(4)}.png`) : null);
@@ -146,7 +153,9 @@ export class BattleScene extends Phaser.Scene {
     const mana = this.add.rectangle(-33, 17, 66, 3, 0x7bdcfa).setOrigin(0, .5);
     const shield = this.add.rectangle(-33, 7, 66, 2, 0xe0faff).setOrigin(0, .5);
     container.add([hp, mana, shield]);
-    return { container, body, hp, mana, shield, action: 'idle', actionAt: 0, sheet };
+    const statuses = this.add.container(0, -108);
+    container.add(statuses);
+    return { container, body, hp, mana, shield, statuses, statusKey: '', action: 'idle', actionAt: 0, sheet };
   }
 
   private renderActor(u: Snapshot, next: Snapshot | undefined, mix: number): void {
@@ -173,9 +182,27 @@ export class BattleScene extends Phaser.Scene {
       a.body.rotation = !u.alive ? (u.team === 'B' ? -.75 : .75) : action === 'basic_attack' ? Math.sin(elapsed * 11) * .12 : 0;
     }
     a.container.alpha = u.alive ? 1 : Math.max(0, 1 - (this.playbackTime - a.actionAt) / .65);
-    a.hp.width = Math.max(0, 66 * u.hp / Math.max(1, u.maxHp));
-    a.mana.width = Math.max(0, 66 * u.mana / Math.max(1, u.maxMana));
+    a.hp.width = 66 * Phaser.Math.Clamp(u.hp / Math.max(1, u.maxHp), 0, 1);
+    a.mana.width = 66 * Phaser.Math.Clamp(u.mana / Math.max(1, u.maxMana), 0, 1);
     a.shield.width = Math.min(66, 66 * u.shield / Math.max(1, u.maxHp));
+    const active = u.alive ? [...new Set(u.statuses)].sort() : [];
+    const statusKey = active.join(',');
+    if (a.statusKey !== statusKey) {
+      a.statusKey = statusKey;
+      a.statuses.removeAll(true);
+      active.forEach((kind, i) => {
+        const status = STATUS_PRESENTATION[kind];
+        const rowCount = Math.min(4, active.length - Math.floor(i / 4) * 4);
+        const x = ((i % 4) - (rowCount - 1) / 2) * 25;
+        const y = -Math.floor(i / 4) * 25;
+        a.statuses.add(this.add.rectangle(x, y, 23, 23, 0x102336, .95).setStrokeStyle(1, 0xd9c898));
+        if (status.icon && this.textures.exists(`status:${status.icon}`)) {
+          a.statuses.add(this.add.image(x, y, `status:${status.icon}`).setDisplaySize(21, 21));
+        } else {
+          a.statuses.add(this.add.text(x, y, status.label, { fontFamily: 'Noto Sans KR Variable, sans-serif', fontSize: '10px', color: '#fff5da' }).setOrigin(.5));
+        }
+      });
+    }
     if (u.statuses.includes('STUN')) a.body.setTint(0xc8a4ff); else a.body.clearTint();
   }
 

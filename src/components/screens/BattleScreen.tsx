@@ -9,6 +9,7 @@ import { Tooltip } from '../common';
 import { UnitTooltip } from '../UnitTooltip';
 import { roundInfo } from '../../game/engine/rounds/schedule';
 import type { UnitInstance } from '../../game/engine/state';
+import { PromotionFeedback } from '../PromotionFeedback';
 
 export function BattleScreen(): JSX.Element | null {
   const match = useGameStore((s) => s.match);
@@ -61,6 +62,7 @@ export function BattleScreen(): JSX.Element | null {
   return (
     <>
       <TopHud />
+      <PromotionFeedback />
 
       <div className="hud-left scroll">
         <TraitPanel />

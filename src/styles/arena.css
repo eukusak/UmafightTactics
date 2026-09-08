@@ -97,3 +97,8 @@ html, body, #root { font-family: "Noto Sans KR Variable", "Malgun Gothic", syste
 
 .draft-overlay { background:linear-gradient(#081b3280,#081325cc),url(/assets/boards/bg_twinkle_draft.png) center/cover; }
 .result-screen { background:linear-gradient(#07152970,#07152999),url(/assets/boards/bg_final_result.png) center/cover; }
+
+.promotion-feedback { position:fixed; top:76px; left:50%; transform:translateX(-50%); z-index:1100; pointer-events:none; display:grid; gap:8px; }
+.promotion-card { position:relative; display:flex; align-items:center; gap:16px; min-width:230px; padding:12px 24px; color:#fff5da; border:1px solid #e2c376; border-radius:14px; background:linear-gradient(120deg,#173c50f5,#142638f5); box-shadow:0 8px 40px #05122190,0 0 25px #efc36835; }
+.promotion-vfx { position:absolute; width:128px; height:128px; left:-10px; top:50%; transform:translateY(-50%); background-size:1200% 100%; animation:promotion-burst .66s steps(11,end) forwards; }
+@keyframes promotion-burst { from { background-position:0% 0; } to { background-position:100% 0; } }
