@@ -1,25 +1,20 @@
 {
-  "baseCommit": "d5e93e84e38404aa1bf4fee928f3411852ed11a4",
+  "baseCommit": "a81d215b0f96019d9fc118665aa32d7b27406d5b",
   "completedBatch": [
-    "rice_shower",
-    "ines_fujin",
-    "agnes_tachyon",
-    "admire_vega",
-    "inari_one"
-  ],
-  "acceptedArt": 259,
-  "requiredArt": 514,
-  "remaining": {
-    "portraits": 110,
-    "battleSheets": 145,
-    "cutins": 0
-  },
-  "nextPortraitIds": [
     "winning_ticket",
     "air_shakur",
     "eishin_flash",
     "curren_chan",
-    "kawakami_princess",
+    "kawakami_princess"
+  ],
+  "acceptedArt": 264,
+  "requiredArt": 514,
+  "remaining": {
+    "portraits": 105,
+    "battleSheets": 145,
+    "cutins": 0
+  },
+  "nextPortraitIds": [
     "gold_city",
     "sakura_bakushin_o",
     "seeking_the_pearl",
@@ -152,7 +147,7 @@
     "Include genuine and samson_big in the 145-character target; their race sources and portraits already exist."
   ],
   "portraitTarget": 145,
-  "completedPortraits": 35,
+  "completedPortraits": 40,
   "batchSize": 5,
   "workflow": "Generate five distinct portraits, inspect and package, commit/push and verify, then begin next five. Complete all 145 portraits before rigging one character at a time."
 }

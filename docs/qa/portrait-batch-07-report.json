@@ -1,0 +1,106 @@
+{
+  "batchSize": 5,
+  "validation": "new portraits only; full app test/build not rerun",
+  "files": [
+    {
+      "id": "winning_ticket",
+      "size": [
+        256,
+        256
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "bounds": [
+        35,
+        6,
+        215,
+        250
+      ],
+      "sourceSha256": "2bf24271e2665c07ca8fe232559347a56301744950a02e928aabfdb9498978c3",
+      "runtimeSha256": "1b91307aef04dbca3ec3b895098160e93adf310f3f1c734ab40600eaec7e33ae",
+      "reference": "public/assets/characters/race/WinningTicket-Race.png"
+    },
+    {
+      "id": "air_shakur",
+      "size": [
+        256,
+        256
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "bounds": [
+        27,
+        6,
+        229,
+        250
+      ],
+      "sourceSha256": "89484fd131fb969662612283dc2e5bdb448a4dec53d6ca49fc55d6e9302ca417",
+      "runtimeSha256": "1042c95ad64d08e2682ae5d6d3061011eaa90e44a6923062c24aed51d092b447",
+      "reference": "public/assets/characters/race/AirShakur-Race.png"
+    },
+    {
+      "id": "eishin_flash",
+      "size": [
+        256,
+        256
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "bounds": [
+        28,
+        6,
+        239,
+        250
+      ],
+      "sourceSha256": "1345a0ff77ab9a15bd1bbdc508067fe9cfeb08a65ae88f5612ace9d50fe3a965",
+      "runtimeSha256": "13c5197103e582709f260285d99347c81a09ee718bb4f8672020af6d994a7e72",
+      "reference": "public/assets/characters/race/EishinFlash-Race.png"
+    },
+    {
+      "id": "curren_chan",
+      "size": [
+        256,
+        256
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "bounds": [
+        53,
+        6,
+        230,
+        250
+      ],
+      "sourceSha256": "77c332fcb74a3031ab6621cfcce346798b3bc15e638f6abd79e802bd9360dc61",
+      "runtimeSha256": "966b2f641e7e9af68adadb03f99b98a550bd5cb8b2b0fcbd7216dbfa3bc55aa8",
+      "reference": "public/assets/characters/race/CurrenChan-Race.png"
+    },
+    {
+      "id": "kawakami_princess",
+      "size": [
+        256,
+        256
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "bounds": [
+        16,
+        6,
+        239,
+        250
+      ],
+      "sourceSha256": "48184a1dec1d5da16e776f1f6c0a1e8a3c17e019699c71f28bfd637043288921",
+      "runtimeSha256": "757c13b3059221d634c585e2cab93598be77007a5b5dbedfe3391c821bfe4876",
+      "reference": "public/assets/characters/race/KawakamiPrincess-Race.png"
+    }
+  ]
+}

@@ -544,5 +544,110 @@
       256
     ],
     "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "winning_ticket": {
+    "file": "portraits/winning_ticket.png",
+    "source": "docs/art-source/portraits/batch-07/winning_ticket.png",
+    "sourceSha256": "2bf24271e2665c07ca8fe232559347a56301744950a02e928aabfdb9498978c3",
+    "reference": "public/assets/characters/race/WinningTicket-Race.png",
+    "sourceSize": [
+      1223,
+      1286
+    ],
+    "crop": [
+      0,
+      0,
+      1209,
+      1286
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "air_shakur": {
+    "file": "portraits/air_shakur.png",
+    "source": "docs/art-source/portraits/batch-07/air_shakur.png",
+    "sourceSha256": "89484fd131fb969662612283dc2e5bdb448a4dec53d6ca49fc55d6e9302ca417",
+    "reference": "public/assets/characters/race/AirShakur-Race.png",
+    "sourceSize": [
+      1151,
+      1367
+    ],
+    "crop": [
+      10,
+      0,
+      1143,
+      1367
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "eishin_flash": {
+    "file": "portraits/eishin_flash.png",
+    "source": "docs/art-source/portraits/batch-07/eishin_flash.png",
+    "sourceSha256": "1345a0ff77ab9a15bd1bbdc508067fe9cfeb08a65ae88f5612ace9d50fe3a965",
+    "reference": "public/assets/characters/race/EishinFlash-Race.png",
+    "sourceSize": [
+      1230,
+      1278
+    ],
+    "crop": [
+      0,
+      0,
+      1169,
+      1278
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "curren_chan": {
+    "file": "portraits/curren_chan.png",
+    "source": "docs/art-source/portraits/batch-07/curren_chan.png",
+    "sourceSha256": "77c332fcb74a3031ab6621cfcce346798b3bc15e638f6abd79e802bd9360dc61",
+    "reference": "public/assets/characters/race/CurrenChan-Race.png",
+    "sourceSize": [
+      1190,
+      1322
+    ],
+    "crop": [
+      0,
+      6,
+      1122,
+      1322
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "kawakami_princess": {
+    "file": "portraits/kawakami_princess.png",
+    "source": "docs/art-source/portraits/batch-07/kawakami_princess.png",
+    "sourceSha256": "48184a1dec1d5da16e776f1f6c0a1e8a3c17e019699c71f28bfd637043288921",
+    "reference": "public/assets/characters/race/KawakamiPrincess-Race.png",
+    "sourceSize": [
+      1199,
+      1312
+    ],
+    "crop": [
+      0,
+      0,
+      1199,
+      1312
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
   }
 }
