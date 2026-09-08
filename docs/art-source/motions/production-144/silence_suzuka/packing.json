@@ -1,0 +1,443 @@
+{
+  "format": "uft-baked-frames-v1",
+  "scale": 0.4406779661016949,
+  "anchor": [
+    64,
+    110
+  ],
+  "runtimeSha256": "73b3484ebf3a4322279f7d69dc42883ccafa4fdf8db4f0660cf345d545d73d56",
+  "frames": [
+    {
+      "frame": 0,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/production-144/silence_suzuka/alpha.png",
+      "sourceSha256": "bed4f53fe17f37cf9c0aa4816a28d23c47cc866279306c9de46ad25c1973f539",
+      "crop": [
+        56,
+        37,
+        193,
+        260
+      ],
+      "destination": [
+        34,
+        12,
+        60,
+        98
+      ]
+    },
+    {
+      "frame": 1,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/production-144/silence_suzuka/alpha.png",
+      "sourceSha256": "bed4f53fe17f37cf9c0aa4816a28d23c47cc866279306c9de46ad25c1973f539",
+      "crop": [
+        309,
+        36,
+        441,
+        260
+      ],
+      "destination": [
+        163,
+        11,
+        58,
+        99
+      ]
+    },
+    {
+      "frame": 2,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/production-144/silence_suzuka/alpha.png",
+      "sourceSha256": "bed4f53fe17f37cf9c0aa4816a28d23c47cc866279306c9de46ad25c1973f539",
+      "crop": [
+        553,
+        36,
+        689,
+        260
+      ],
+      "destination": [
+        290,
+        11,
+        60,
+        99
+      ]
+    },
+    {
+      "frame": 3,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/production-144/silence_suzuka/alpha.png",
+      "sourceSha256": "bed4f53fe17f37cf9c0aa4816a28d23c47cc866279306c9de46ad25c1973f539",
+      "crop": [
+        806,
+        36,
+        939,
+        260
+      ],
+      "destination": [
+        418,
+        11,
+        59,
+        99
+      ]
+    },
+    {
+      "frame": 4,
+      "sourceFrame": 4,
+      "source": "docs/art-source/motions/production-144/silence_suzuka/alpha.png",
+      "sourceSha256": "bed4f53fe17f37cf9c0aa4816a28d23c47cc866279306c9de46ad25c1973f539",
+      "crop": [
+        34,
+        299,
+        212,
+        513
+      ],
+      "destination": [
+        25,
+        144,
+        78,
+        94
+      ]
+    },
+    {
+      "frame": 5,
+      "sourceFrame": 5,
+      "source": "docs/art-source/motions/production-144/silence_suzuka/alpha.png",
+      "sourceSha256": "bed4f53fe17f37cf9c0aa4816a28d23c47cc866279306c9de46ad25c1973f539",
+      "crop": [
+        287,
+        299,
+        470,
+        513
+      ],
+      "destination": [
+        151,
+        144,
+        81,
+        94
+      ]
+    },
+    {
+      "frame": 6,
+      "sourceFrame": 6,
+      "source": "docs/art-source/motions/production-144/silence_suzuka/alpha.png",
+      "sourceSha256": "bed4f53fe17f37cf9c0aa4816a28d23c47cc866279306c9de46ad25c1973f539",
+      "crop": [
+        539,
+        297,
+        723,
+        513
+      ],
+      "destination": [
+        279,
+        143,
+        81,
+        95
+      ]
+    },
+    {
+      "frame": 7,
+      "sourceFrame": 7,
+      "source": "docs/art-source/motions/production-144/silence_suzuka/alpha.png",
+      "sourceSha256": "bed4f53fe17f37cf9c0aa4816a28d23c47cc866279306c9de46ad25c1973f539",
+      "crop": [
+        792,
+        299,
+        979,
+        513
+      ],
+      "destination": [
+        407,
+        144,
+        82,
+        94
+      ]
+    },
+    {
+      "frame": 8,
+      "sourceFrame": 8,
+      "source": "docs/art-source/motions/production-144/silence_suzuka/alpha.png",
+      "sourceSha256": "bed4f53fe17f37cf9c0aa4816a28d23c47cc866279306c9de46ad25c1973f539",
+      "crop": [
+        35,
+        542,
+        233,
+        766
+      ],
+      "destination": [
+        20,
+        267,
+        87,
+        99
+      ]
+    },
+    {
+      "frame": 9,
+      "sourceFrame": 9,
+      "source": "docs/art-source/motions/production-144/silence_suzuka/alpha.png",
+      "sourceSha256": "bed4f53fe17f37cf9c0aa4816a28d23c47cc866279306c9de46ad25c1973f539",
+      "crop": [
+        285,
+        536,
+        441,
+        767
+      ],
+      "destination": [
+        157,
+        264,
+        69,
+        102
+      ]
+    },
+    {
+      "frame": 10,
+      "sourceFrame": 10,
+      "source": "docs/art-source/motions/production-144/silence_suzuka/alpha.png",
+      "sourceSha256": "bed4f53fe17f37cf9c0aa4816a28d23c47cc866279306c9de46ad25c1973f539",
+      "crop": [
+        523,
+        536,
+        740,
+        767
+      ],
+      "destination": [
+        272,
+        264,
+        96,
+        102
+      ]
+    },
+    {
+      "frame": 11,
+      "sourceFrame": 11,
+      "source": "docs/art-source/motions/production-144/silence_suzuka/alpha.png",
+      "sourceSha256": "bed4f53fe17f37cf9c0aa4816a28d23c47cc866279306c9de46ad25c1973f539",
+      "crop": [
+        781,
+        538,
+        951,
+        767
+      ],
+      "destination": [
+        410,
+        265,
+        75,
+        101
+      ]
+    },
+    {
+      "frame": 12,
+      "sourceFrame": 12,
+      "source": "docs/art-source/motions/production-144/silence_suzuka/alpha.png",
+      "sourceSha256": "bed4f53fe17f37cf9c0aa4816a28d23c47cc866279306c9de46ad25c1973f539",
+      "crop": [
+        42,
+        796,
+        199,
+        1024
+      ],
+      "destination": [
+        29,
+        394,
+        69,
+        100
+      ]
+    },
+    {
+      "frame": 13,
+      "sourceFrame": 13,
+      "source": "docs/art-source/motions/production-144/silence_suzuka/alpha.png",
+      "sourceSha256": "bed4f53fe17f37cf9c0aa4816a28d23c47cc866279306c9de46ad25c1973f539",
+      "crop": [
+        281,
+        794,
+        481,
+        1024
+      ],
+      "destination": [
+        148,
+        393,
+        88,
+        101
+      ]
+    },
+    {
+      "frame": 14,
+      "sourceFrame": 14,
+      "source": "docs/art-source/motions/production-144/silence_suzuka/alpha.png",
+      "sourceSha256": "bed4f53fe17f37cf9c0aa4816a28d23c47cc866279306c9de46ad25c1973f539",
+      "crop": [
+        533,
+        797,
+        755,
+        1024
+      ],
+      "destination": [
+        271,
+        394,
+        98,
+        100
+      ]
+    },
+    {
+      "frame": 15,
+      "sourceFrame": 15,
+      "source": "docs/art-source/motions/production-144/silence_suzuka/alpha.png",
+      "sourceSha256": "bed4f53fe17f37cf9c0aa4816a28d23c47cc866279306c9de46ad25c1973f539",
+      "crop": [
+        791,
+        795,
+        967,
+        1024
+      ],
+      "destination": [
+        409,
+        393,
+        78,
+        101
+      ]
+    },
+    {
+      "frame": 16,
+      "sourceFrame": 16,
+      "source": "docs/art-source/motions/production-144/silence_suzuka/alpha.png",
+      "sourceSha256": "bed4f53fe17f37cf9c0aa4816a28d23c47cc866279306c9de46ad25c1973f539",
+      "crop": [
+        46,
+        1059,
+        207,
+        1254
+      ],
+      "destination": [
+        28,
+        536,
+        71,
+        86
+      ]
+    },
+    {
+      "frame": 17,
+      "sourceFrame": 17,
+      "source": "docs/art-source/motions/production-144/silence_suzuka/alpha.png",
+      "sourceSha256": "bed4f53fe17f37cf9c0aa4816a28d23c47cc866279306c9de46ad25c1973f539",
+      "crop": [
+        291,
+        1085,
+        466,
+        1252
+      ],
+      "destination": [
+        153,
+        548,
+        77,
+        74
+      ]
+    },
+    {
+      "frame": 18,
+      "sourceFrame": 18,
+      "source": "docs/art-source/motions/production-144/silence_suzuka/alpha.png",
+      "sourceSha256": "bed4f53fe17f37cf9c0aa4816a28d23c47cc866279306c9de46ad25c1973f539",
+      "crop": [
+        537,
+        1096,
+        710,
+        1251
+      ],
+      "destination": [
+        282,
+        554,
+        76,
+        68
+      ]
+    },
+    {
+      "frame": 19,
+      "sourceFrame": 19,
+      "source": "docs/art-source/motions/production-144/silence_suzuka/alpha.png",
+      "sourceSha256": "bed4f53fe17f37cf9c0aa4816a28d23c47cc866279306c9de46ad25c1973f539",
+      "crop": [
+        768,
+        1148,
+        997,
+        1250
+      ],
+      "destination": [
+        397,
+        577,
+        101,
+        45
+      ]
+    },
+    {
+      "frame": 20,
+      "sourceFrame": 20,
+      "source": "docs/art-source/motions/production-144/silence_suzuka/alpha.png",
+      "sourceSha256": "bed4f53fe17f37cf9c0aa4816a28d23c47cc866279306c9de46ad25c1973f539",
+      "crop": [
+        57,
+        1287,
+        187,
+        1514
+      ],
+      "destination": [
+        35,
+        650,
+        57,
+        100
+      ]
+    },
+    {
+      "frame": 21,
+      "sourceFrame": 21,
+      "source": "docs/art-source/motions/production-144/silence_suzuka/alpha.png",
+      "sourceSha256": "bed4f53fe17f37cf9c0aa4816a28d23c47cc866279306c9de46ad25c1973f539",
+      "crop": [
+        313,
+        1280,
+        449,
+        1514
+      ],
+      "destination": [
+        162,
+        647,
+        60,
+        103
+      ]
+    },
+    {
+      "frame": 22,
+      "sourceFrame": 22,
+      "source": "docs/art-source/motions/production-144/silence_suzuka/alpha.png",
+      "sourceSha256": "bed4f53fe17f37cf9c0aa4816a28d23c47cc866279306c9de46ad25c1973f539",
+      "crop": [
+        563,
+        1276,
+        706,
+        1512
+      ],
+      "destination": [
+        288,
+        646,
+        63,
+        104
+      ]
+    },
+    {
+      "frame": 23,
+      "sourceFrame": 23,
+      "source": "docs/art-source/motions/production-144/silence_suzuka/alpha.png",
+      "sourceSha256": "bed4f53fe17f37cf9c0aa4816a28d23c47cc866279306c9de46ad25c1973f539",
+      "crop": [
+        815,
+        1288,
+        948,
+        1513
+      ],
+      "destination": [
+        418,
+        651,
+        59,
+        99
+      ]
+    }
+  ]
+}

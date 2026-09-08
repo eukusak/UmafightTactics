@@ -1,0 +1,443 @@
+{
+  "format": "uft-baked-frames-v1",
+  "scale": 0.41106719367588934,
+  "anchor": [
+    64,
+    110
+  ],
+  "runtimeSha256": "aca77564120633ac22b2e9deb083a524ed02f658dcf38984453abebbe7ae2d63",
+  "frames": [
+    {
+      "frame": 0,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/production-144/oguri_cap/alpha.png",
+      "sourceSha256": "103e6c76bcb1fc3fd66376394f8fd1d46957be2315b3dd8e4ddf3f19c0024a44",
+      "crop": [
+        34,
+        14,
+        193,
+        260
+      ],
+      "destination": [
+        31,
+        9,
+        65,
+        101
+      ]
+    },
+    {
+      "frame": 1,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/production-144/oguri_cap/alpha.png",
+      "sourceSha256": "103e6c76bcb1fc3fd66376394f8fd1d46957be2315b3dd8e4ddf3f19c0024a44",
+      "crop": [
+        292,
+        15,
+        449,
+        260
+      ],
+      "destination": [
+        159,
+        9,
+        65,
+        101
+      ]
+    },
+    {
+      "frame": 2,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/production-144/oguri_cap/alpha.png",
+      "sourceSha256": "103e6c76bcb1fc3fd66376394f8fd1d46957be2315b3dd8e4ddf3f19c0024a44",
+      "crop": [
+        547,
+        14,
+        703,
+        260
+      ],
+      "destination": [
+        288,
+        9,
+        64,
+        101
+      ]
+    },
+    {
+      "frame": 3,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/production-144/oguri_cap/alpha.png",
+      "sourceSha256": "103e6c76bcb1fc3fd66376394f8fd1d46957be2315b3dd8e4ddf3f19c0024a44",
+      "crop": [
+        808,
+        14,
+        963,
+        260
+      ],
+      "destination": [
+        416,
+        9,
+        64,
+        101
+      ]
+    },
+    {
+      "frame": 4,
+      "sourceFrame": 4,
+      "source": "docs/art-source/motions/production-144/oguri_cap/alpha.png",
+      "sourceSha256": "103e6c76bcb1fc3fd66376394f8fd1d46957be2315b3dd8e4ddf3f19c0024a44",
+      "crop": [
+        25,
+        284,
+        221,
+        514
+      ],
+      "destination": [
+        23,
+        143,
+        81,
+        95
+      ]
+    },
+    {
+      "frame": 5,
+      "sourceFrame": 5,
+      "source": "docs/art-source/motions/production-144/oguri_cap/alpha.png",
+      "sourceSha256": "103e6c76bcb1fc3fd66376394f8fd1d46957be2315b3dd8e4ddf3f19c0024a44",
+      "crop": [
+        279,
+        279,
+        478,
+        514
+      ],
+      "destination": [
+        151,
+        141,
+        82,
+        97
+      ]
+    },
+    {
+      "frame": 6,
+      "sourceFrame": 6,
+      "source": "docs/art-source/motions/production-144/oguri_cap/alpha.png",
+      "sourceSha256": "103e6c76bcb1fc3fd66376394f8fd1d46957be2315b3dd8e4ddf3f19c0024a44",
+      "crop": [
+        552,
+        287,
+        743,
+        514
+      ],
+      "destination": [
+        280,
+        145,
+        79,
+        93
+      ]
+    },
+    {
+      "frame": 7,
+      "sourceFrame": 7,
+      "source": "docs/art-source/motions/production-144/oguri_cap/alpha.png",
+      "sourceSha256": "103e6c76bcb1fc3fd66376394f8fd1d46957be2315b3dd8e4ddf3f19c0024a44",
+      "crop": [
+        801,
+        282,
+        995,
+        514
+      ],
+      "destination": [
+        408,
+        143,
+        80,
+        95
+      ]
+    },
+    {
+      "frame": 8,
+      "sourceFrame": 8,
+      "source": "docs/art-source/motions/production-144/oguri_cap/alpha.png",
+      "sourceSha256": "103e6c76bcb1fc3fd66376394f8fd1d46957be2315b3dd8e4ddf3f19c0024a44",
+      "crop": [
+        31,
+        524,
+        226,
+        763
+      ],
+      "destination": [
+        24,
+        268,
+        80,
+        98
+      ]
+    },
+    {
+      "frame": 9,
+      "sourceFrame": 9,
+      "source": "docs/art-source/motions/production-144/oguri_cap/alpha.png",
+      "sourceSha256": "103e6c76bcb1fc3fd66376394f8fd1d46957be2315b3dd8e4ddf3f19c0024a44",
+      "crop": [
+        283,
+        527,
+        448,
+        763
+      ],
+      "destination": [
+        158,
+        269,
+        68,
+        97
+      ]
+    },
+    {
+      "frame": 10,
+      "sourceFrame": 10,
+      "source": "docs/art-source/motions/production-144/oguri_cap/alpha.png",
+      "sourceSha256": "103e6c76bcb1fc3fd66376394f8fd1d46957be2315b3dd8e4ddf3f19c0024a44",
+      "crop": [
+        526,
+        532,
+        781,
+        765
+      ],
+      "destination": [
+        267,
+        270,
+        105,
+        96
+      ]
+    },
+    {
+      "frame": 11,
+      "sourceFrame": 11,
+      "source": "docs/art-source/motions/production-144/oguri_cap/alpha.png",
+      "sourceSha256": "103e6c76bcb1fc3fd66376394f8fd1d46957be2315b3dd8e4ddf3f19c0024a44",
+      "crop": [
+        806,
+        530,
+        972,
+        766
+      ],
+      "destination": [
+        414,
+        269,
+        68,
+        97
+      ]
+    },
+    {
+      "frame": 12,
+      "sourceFrame": 12,
+      "source": "docs/art-source/motions/production-144/oguri_cap/alpha.png",
+      "sourceSha256": "103e6c76bcb1fc3fd66376394f8fd1d46957be2315b3dd8e4ddf3f19c0024a44",
+      "crop": [
+        34,
+        779,
+        208,
+        1032
+      ],
+      "destination": [
+        28,
+        390,
+        72,
+        104
+      ]
+    },
+    {
+      "frame": 13,
+      "sourceFrame": 13,
+      "source": "docs/art-source/motions/production-144/oguri_cap/alpha.png",
+      "sourceSha256": "103e6c76bcb1fc3fd66376394f8fd1d46957be2315b3dd8e4ddf3f19c0024a44",
+      "crop": [
+        299,
+        779,
+        459,
+        1032
+      ],
+      "destination": [
+        159,
+        390,
+        66,
+        104
+      ]
+    },
+    {
+      "frame": 14,
+      "sourceFrame": 14,
+      "source": "docs/art-source/motions/production-144/oguri_cap/alpha.png",
+      "sourceSha256": "103e6c76bcb1fc3fd66376394f8fd1d46957be2315b3dd8e4ddf3f19c0024a44",
+      "crop": [
+        533,
+        791,
+        784,
+        1032
+      ],
+      "destination": [
+        268,
+        395,
+        103,
+        99
+      ]
+    },
+    {
+      "frame": 15,
+      "sourceFrame": 15,
+      "source": "docs/art-source/motions/production-144/oguri_cap/alpha.png",
+      "sourceSha256": "103e6c76bcb1fc3fd66376394f8fd1d46957be2315b3dd8e4ddf3f19c0024a44",
+      "crop": [
+        804,
+        790,
+        978,
+        1032
+      ],
+      "destination": [
+        412,
+        395,
+        72,
+        99
+      ]
+    },
+    {
+      "frame": 16,
+      "sourceFrame": 16,
+      "source": "docs/art-source/motions/production-144/oguri_cap/alpha.png",
+      "sourceSha256": "103e6c76bcb1fc3fd66376394f8fd1d46957be2315b3dd8e4ddf3f19c0024a44",
+      "crop": [
+        44,
+        1047,
+        214,
+        1274
+      ],
+      "destination": [
+        29,
+        529,
+        70,
+        93
+      ]
+    },
+    {
+      "frame": 17,
+      "sourceFrame": 17,
+      "source": "docs/art-source/motions/production-144/oguri_cap/alpha.png",
+      "sourceSha256": "103e6c76bcb1fc3fd66376394f8fd1d46957be2315b3dd8e4ddf3f19c0024a44",
+      "crop": [
+        299,
+        1080,
+        467,
+        1271
+      ],
+      "destination": [
+        157,
+        543,
+        69,
+        79
+      ]
+    },
+    {
+      "frame": 18,
+      "sourceFrame": 18,
+      "source": "docs/art-source/motions/production-144/oguri_cap/alpha.png",
+      "sourceSha256": "103e6c76bcb1fc3fd66376394f8fd1d46957be2315b3dd8e4ddf3f19c0024a44",
+      "crop": [
+        534,
+        1117,
+        716,
+        1271
+      ],
+      "destination": [
+        282,
+        559,
+        75,
+        63
+      ]
+    },
+    {
+      "frame": 19,
+      "sourceFrame": 19,
+      "source": "docs/art-source/motions/production-144/oguri_cap/alpha.png",
+      "sourceSha256": "103e6c76bcb1fc3fd66376394f8fd1d46957be2315b3dd8e4ddf3f19c0024a44",
+      "crop": [
+        775,
+        1173,
+        1004,
+        1277
+      ],
+      "destination": [
+        401,
+        579,
+        94,
+        43
+      ]
+    },
+    {
+      "frame": 20,
+      "sourceFrame": 20,
+      "source": "docs/art-source/motions/production-144/oguri_cap/alpha.png",
+      "sourceSha256": "103e6c76bcb1fc3fd66376394f8fd1d46957be2315b3dd8e4ddf3f19c0024a44",
+      "crop": [
+        36,
+        1280,
+        206,
+        1527
+      ],
+      "destination": [
+        29,
+        648,
+        70,
+        102
+      ]
+    },
+    {
+      "frame": 21,
+      "sourceFrame": 21,
+      "source": "docs/art-source/motions/production-144/oguri_cap/alpha.png",
+      "sourceSha256": "103e6c76bcb1fc3fd66376394f8fd1d46957be2315b3dd8e4ddf3f19c0024a44",
+      "crop": [
+        300,
+        1288,
+        466,
+        1514
+      ],
+      "destination": [
+        158,
+        657,
+        68,
+        93
+      ]
+    },
+    {
+      "frame": 22,
+      "sourceFrame": 22,
+      "source": "docs/art-source/motions/production-144/oguri_cap/alpha.png",
+      "sourceSha256": "103e6c76bcb1fc3fd66376394f8fd1d46957be2315b3dd8e4ddf3f19c0024a44",
+      "crop": [
+        547,
+        1284,
+        707,
+        1529
+      ],
+      "destination": [
+        287,
+        649,
+        66,
+        101
+      ]
+    },
+    {
+      "frame": 23,
+      "sourceFrame": 23,
+      "source": "docs/art-source/motions/production-144/oguri_cap/alpha.png",
+      "sourceSha256": "103e6c76bcb1fc3fd66376394f8fd1d46957be2315b3dd8e4ddf3f19c0024a44",
+      "crop": [
+        802,
+        1292,
+        968,
+        1529
+      ],
+      "destination": [
+        414,
+        653,
+        68,
+        97
+      ]
+    }
+  ]
+}

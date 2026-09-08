@@ -12,6 +12,7 @@ describe('generated frame animation playback', () => {
     expect(motionFrame('skill_cast', 0, .24, true)).toBe(14);
     expect(motionFrame('skill_cast', .2, .24, true)).toBe(15);
     expect(motionFrame('skill_cast', 0)).toBe(12);
+    expect([0, 1 / 6, 2 / 6, 3 / 6].map(t => motionFrame('skill_cast', t, .24, true, 0))).toEqual([12, 13, 14, 15]);
   });
   it('requires reviewed skill data and a real alpha atlas with traceable source frames', () => {
     for (const [id, sheet] of Object.entries(FRAME_SHEETS)) {

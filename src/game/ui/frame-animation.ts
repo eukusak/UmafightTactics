@@ -1,7 +1,7 @@
 import sheetsRaw from '../../data/manual/frame-sheets.json';
 import type { AnimationName } from './art';
 
-export type FrameSheet = { file: string; frameWidth: number; frameHeight: number; columns: number; rows: number; source: string; skillId: string; skillSignature: string; skillReview: string };
+export type FrameSheet = { file: string; frameWidth: number; frameHeight: number; columns: number; rows: number; source: string; skillId: string; skillSignature: string; skillReview: string; skillReleaseFrame?: number };
 export const FRAME_SHEETS: Record<string, FrameSheet> = sheetsRaw;
 export const FRAME_CLIPS = {
   idle: { start: 0, count: 4, fps: 4, loop: true },
@@ -17,7 +17,7 @@ export function frameSheetUrl(id: string): string | null {
 }
 
 /** Attack frame 2 is the strike; align it with the recorded release event. */
-export function motionFrame(action: AnimationName, elapsed: number, releaseDelay = .24, skillAlreadyReleased = false): number {
+export function motionFrame(action: AnimationName, elapsed: number, releaseDelay = .24, skillAlreadyReleased = false, skillReleaseFrame = 2): number {
   const clip = FRAME_CLIPS[action], time = Math.max(0, elapsed);
   if (action === 'basic_attack') {
     const release = Math.max(.001, releaseDelay);
@@ -25,7 +25,7 @@ export function motionFrame(action: AnimationName, elapsed: number, releaseDelay
     return clip.start + index;
   }
   // CAST effects are immediate in this engine; never show a windup after damage.
-  if (action === 'skill_cast' && skillAlreadyReleased) return clip.start + (time < 1 / clip.fps ? 2 : 3);
+  if (action === 'skill_cast' && skillAlreadyReleased) return clip.start + Math.min(3, Math.max(0, Math.min(3, Math.floor(skillReleaseFrame))) + Math.floor(time * clip.fps));
   const index = Math.floor(time * clip.fps);
   return clip.start + (clip.loop ? index % clip.count : Math.min(index, clip.count - 1));
 }

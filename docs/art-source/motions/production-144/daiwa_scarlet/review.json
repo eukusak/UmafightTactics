@@ -1,0 +1,13 @@
+{
+  "approved": true,
+  "source": "clean-alpha.png",
+  "skillReview": "범위 마법 공격: 가슴에 손을 모음 → 손을 높여 응축 → 적 무리에 손바닥 방출 → 허리에 손을 둔 회복.",
+  "reviewedAt": "2026-09-09",
+  "checks": [
+    "Race costume and identity",
+    "24 poses with correct action rows",
+    "actual skill target and effect",
+    "transparent RGBA",
+    "Removed overflow effects; body poses preserved"
+  ]
+}

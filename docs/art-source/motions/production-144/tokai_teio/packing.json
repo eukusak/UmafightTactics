@@ -1,0 +1,443 @@
+{
+  "format": "uft-baked-frames-v1",
+  "scale": 0.44,
+  "anchor": [
+    64,
+    110
+  ],
+  "runtimeSha256": "6edaed035547692278bc300b6a68ba4a140a6024b02fc3c607fbc4b2132f9773",
+  "frames": [
+    {
+      "frame": 0,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/production-144/tokai_teio/alpha.png",
+      "sourceSha256": "f6902b8e0a686d112f646b14d973f5500d3f79dc0a6bb1dd4a472db473c5b1f1",
+      "crop": [
+        59,
+        36,
+        218,
+        255
+      ],
+      "destination": [
+        29,
+        14,
+        70,
+        96
+      ]
+    },
+    {
+      "frame": 1,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/production-144/tokai_teio/alpha.png",
+      "sourceSha256": "f6902b8e0a686d112f646b14d973f5500d3f79dc0a6bb1dd4a472db473c5b1f1",
+      "crop": [
+        307,
+        38,
+        463,
+        255
+      ],
+      "destination": [
+        157,
+        15,
+        69,
+        95
+      ]
+    },
+    {
+      "frame": 2,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/production-144/tokai_teio/alpha.png",
+      "sourceSha256": "f6902b8e0a686d112f646b14d973f5500d3f79dc0a6bb1dd4a472db473c5b1f1",
+      "crop": [
+        555,
+        39,
+        714,
+        254
+      ],
+      "destination": [
+        285,
+        15,
+        70,
+        95
+      ]
+    },
+    {
+      "frame": 3,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/production-144/tokai_teio/alpha.png",
+      "sourceSha256": "f6902b8e0a686d112f646b14d973f5500d3f79dc0a6bb1dd4a472db473c5b1f1",
+      "crop": [
+        820,
+        38,
+        977,
+        255
+      ],
+      "destination": [
+        413,
+        15,
+        69,
+        95
+      ]
+    },
+    {
+      "frame": 4,
+      "sourceFrame": 4,
+      "source": "docs/art-source/motions/production-144/tokai_teio/alpha.png",
+      "sourceSha256": "f6902b8e0a686d112f646b14d973f5500d3f79dc0a6bb1dd4a472db473c5b1f1",
+      "crop": [
+        17,
+        290,
+        226,
+        508
+      ],
+      "destination": [
+        18,
+        142,
+        92,
+        96
+      ]
+    },
+    {
+      "frame": 5,
+      "sourceFrame": 5,
+      "source": "docs/art-source/motions/production-144/tokai_teio/alpha.png",
+      "sourceSha256": "f6902b8e0a686d112f646b14d973f5500d3f79dc0a6bb1dd4a472db473c5b1f1",
+      "crop": [
+        277,
+        291,
+        489,
+        509
+      ],
+      "destination": [
+        145,
+        142,
+        93,
+        96
+      ]
+    },
+    {
+      "frame": 6,
+      "sourceFrame": 6,
+      "source": "docs/art-source/motions/production-144/tokai_teio/alpha.png",
+      "sourceSha256": "f6902b8e0a686d112f646b14d973f5500d3f79dc0a6bb1dd4a472db473c5b1f1",
+      "crop": [
+        530,
+        291,
+        750,
+        508
+      ],
+      "destination": [
+        271,
+        143,
+        97,
+        95
+      ]
+    },
+    {
+      "frame": 7,
+      "sourceFrame": 7,
+      "source": "docs/art-source/motions/production-144/tokai_teio/alpha.png",
+      "sourceSha256": "f6902b8e0a686d112f646b14d973f5500d3f79dc0a6bb1dd4a472db473c5b1f1",
+      "crop": [
+        793,
+        289,
+        1007,
+        506
+      ],
+      "destination": [
+        401,
+        143,
+        94,
+        95
+      ]
+    },
+    {
+      "frame": 8,
+      "sourceFrame": 8,
+      "source": "docs/art-source/motions/production-144/tokai_teio/alpha.png",
+      "sourceSha256": "f6902b8e0a686d112f646b14d973f5500d3f79dc0a6bb1dd4a472db473c5b1f1",
+      "crop": [
+        38,
+        548,
+        217,
+        760
+      ],
+      "destination": [
+        24,
+        273,
+        79,
+        93
+      ]
+    },
+    {
+      "frame": 9,
+      "sourceFrame": 9,
+      "source": "docs/art-source/motions/production-144/tokai_teio/alpha.png",
+      "sourceSha256": "f6902b8e0a686d112f646b14d973f5500d3f79dc0a6bb1dd4a472db473c5b1f1",
+      "crop": [
+        296,
+        542,
+        470,
+        760
+      ],
+      "destination": [
+        153,
+        270,
+        77,
+        96
+      ]
+    },
+    {
+      "frame": 10,
+      "sourceFrame": 10,
+      "source": "docs/art-source/motions/production-144/tokai_teio/alpha.png",
+      "sourceSha256": "f6902b8e0a686d112f646b14d973f5500d3f79dc0a6bb1dd4a472db473c5b1f1",
+      "crop": [
+        518,
+        548,
+        768,
+        759
+      ],
+      "destination": [
+        265,
+        273,
+        110,
+        93
+      ]
+    },
+    {
+      "frame": 11,
+      "sourceFrame": 11,
+      "source": "docs/art-source/motions/production-144/tokai_teio/alpha.png",
+      "sourceSha256": "f6902b8e0a686d112f646b14d973f5500d3f79dc0a6bb1dd4a472db473c5b1f1",
+      "crop": [
+        808,
+        542,
+        979,
+        760
+      ],
+      "destination": [
+        410,
+        270,
+        75,
+        96
+      ]
+    },
+    {
+      "frame": 12,
+      "sourceFrame": 12,
+      "source": "docs/art-source/motions/production-144/tokai_teio/alpha.png",
+      "sourceSha256": "f6902b8e0a686d112f646b14d973f5500d3f79dc0a6bb1dd4a472db473c5b1f1",
+      "crop": [
+        40,
+        797,
+        251,
+        1014
+      ],
+      "destination": [
+        17,
+        399,
+        93,
+        95
+      ]
+    },
+    {
+      "frame": 13,
+      "sourceFrame": 13,
+      "source": "docs/art-source/motions/production-144/tokai_teio/alpha.png",
+      "sourceSha256": "f6902b8e0a686d112f646b14d973f5500d3f79dc0a6bb1dd4a472db473c5b1f1",
+      "crop": [
+        289,
+        807,
+        508,
+        1014
+      ],
+      "destination": [
+        144,
+        403,
+        96,
+        91
+      ]
+    },
+    {
+      "frame": 14,
+      "sourceFrame": 14,
+      "source": "docs/art-source/motions/production-144/tokai_teio/alpha.png",
+      "sourceSha256": "f6902b8e0a686d112f646b14d973f5500d3f79dc0a6bb1dd4a472db473c5b1f1",
+      "crop": [
+        529,
+        799,
+        768,
+        1014
+      ],
+      "destination": [
+        267,
+        399,
+        105,
+        95
+      ]
+    },
+    {
+      "frame": 15,
+      "sourceFrame": 15,
+      "source": "docs/art-source/motions/production-144/tokai_teio/alpha.png",
+      "sourceSha256": "f6902b8e0a686d112f646b14d973f5500d3f79dc0a6bb1dd4a472db473c5b1f1",
+      "crop": [
+        813,
+        798,
+        984,
+        1016
+      ],
+      "destination": [
+        410,
+        398,
+        75,
+        96
+      ]
+    },
+    {
+      "frame": 16,
+      "sourceFrame": 16,
+      "source": "docs/art-source/motions/production-144/tokai_teio/alpha.png",
+      "sourceSha256": "f6902b8e0a686d112f646b14d973f5500d3f79dc0a6bb1dd4a472db473c5b1f1",
+      "crop": [
+        49,
+        1062,
+        219,
+        1265
+      ],
+      "destination": [
+        26,
+        533,
+        75,
+        89
+      ]
+    },
+    {
+      "frame": 17,
+      "sourceFrame": 17,
+      "source": "docs/art-source/motions/production-144/tokai_teio/alpha.png",
+      "sourceSha256": "f6902b8e0a686d112f646b14d973f5500d3f79dc0a6bb1dd4a472db473c5b1f1",
+      "crop": [
+        301,
+        1088,
+        486,
+        1264
+      ],
+      "destination": [
+        151,
+        545,
+        81,
+        77
+      ]
+    },
+    {
+      "frame": 18,
+      "sourceFrame": 18,
+      "source": "docs/art-source/motions/production-144/tokai_teio/alpha.png",
+      "sourceSha256": "f6902b8e0a686d112f646b14d973f5500d3f79dc0a6bb1dd4a472db473c5b1f1",
+      "crop": [
+        546,
+        1108,
+        710,
+        1263
+      ],
+      "destination": [
+        284,
+        554,
+        72,
+        68
+      ]
+    },
+    {
+      "frame": 19,
+      "sourceFrame": 19,
+      "source": "docs/art-source/motions/production-144/tokai_teio/alpha.png",
+      "sourceSha256": "f6902b8e0a686d112f646b14d973f5500d3f79dc0a6bb1dd4a472db473c5b1f1",
+      "crop": [
+        783,
+        1162,
+        1001,
+        1259
+      ],
+      "destination": [
+        400,
+        579,
+        96,
+        43
+      ]
+    },
+    {
+      "frame": 20,
+      "sourceFrame": 20,
+      "source": "docs/art-source/motions/production-144/tokai_teio/alpha.png",
+      "sourceSha256": "f6902b8e0a686d112f646b14d973f5500d3f79dc0a6bb1dd4a472db473c5b1f1",
+      "crop": [
+        56,
+        1296,
+        214,
+        1515
+      ],
+      "destination": [
+        29,
+        654,
+        70,
+        96
+      ]
+    },
+    {
+      "frame": 21,
+      "sourceFrame": 21,
+      "source": "docs/art-source/motions/production-144/tokai_teio/alpha.png",
+      "sourceSha256": "f6902b8e0a686d112f646b14d973f5500d3f79dc0a6bb1dd4a472db473c5b1f1",
+      "crop": [
+        300,
+        1296,
+        461,
+        1514
+      ],
+      "destination": [
+        156,
+        654,
+        71,
+        96
+      ]
+    },
+    {
+      "frame": 22,
+      "sourceFrame": 22,
+      "source": "docs/art-source/motions/production-144/tokai_teio/alpha.png",
+      "sourceSha256": "f6902b8e0a686d112f646b14d973f5500d3f79dc0a6bb1dd4a472db473c5b1f1",
+      "crop": [
+        549,
+        1286,
+        717,
+        1510
+      ],
+      "destination": [
+        283,
+        651,
+        74,
+        99
+      ]
+    },
+    {
+      "frame": 23,
+      "sourceFrame": 23,
+      "source": "docs/art-source/motions/production-144/tokai_teio/alpha.png",
+      "sourceSha256": "f6902b8e0a686d112f646b14d973f5500d3f79dc0a6bb1dd4a472db473c5b1f1",
+      "crop": [
+        822,
+        1302,
+        988,
+        1514
+      ],
+      "destination": [
+        411,
+        657,
+        73,
+        93
+      ]
+    }
+  ]
+}

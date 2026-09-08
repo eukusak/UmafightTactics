@@ -1,0 +1,13 @@
+{
+  "approved": true,
+  "source": "clean-alpha.png",
+  "skillReview": "연속 스퍼트: 동일 대상 방향으로 첫 발사 → 두 번째 발사 → 세 번째 발사 → 반동 회복. 첫 세 스킬 프레임을 모두 재생.",
+  "reviewedAt": "2026-09-09",
+  "checks": [
+    "Race costume and identity",
+    "24 poses with correct action rows",
+    "actual skill target and effect",
+    "transparent RGBA",
+    "Removed overflow effects; body poses preserved"
+  ]
+}

@@ -1,0 +1,443 @@
+{
+  "format": "uft-baked-frames-v1",
+  "scale": 0.41509433962264153,
+  "anchor": [
+    64,
+    110
+  ],
+  "runtimeSha256": "cd35a411a6a7d0aa29d4e15b0b702f684d7a02c4da367d20717e905dc025d5c0",
+  "frames": [
+    {
+      "frame": 0,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/production-144/gold_ship/alpha.png",
+      "sourceSha256": "cc09b16a20a02392ceaefa6a2a59dca1729aefcbd12c3f81bd418961ecc88769",
+      "crop": [
+        40,
+        32,
+        228,
+        260
+      ],
+      "destination": [
+        25,
+        15,
+        78,
+        95
+      ]
+    },
+    {
+      "frame": 1,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/production-144/gold_ship/alpha.png",
+      "sourceSha256": "cc09b16a20a02392ceaefa6a2a59dca1729aefcbd12c3f81bd418961ecc88769",
+      "crop": [
+        300,
+        32,
+        484,
+        260
+      ],
+      "destination": [
+        154,
+        15,
+        76,
+        95
+      ]
+    },
+    {
+      "frame": 2,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/production-144/gold_ship/alpha.png",
+      "sourceSha256": "cc09b16a20a02392ceaefa6a2a59dca1729aefcbd12c3f81bd418961ecc88769",
+      "crop": [
+        553,
+        32,
+        732,
+        260
+      ],
+      "destination": [
+        283,
+        15,
+        74,
+        95
+      ]
+    },
+    {
+      "frame": 3,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/production-144/gold_ship/alpha.png",
+      "sourceSha256": "cc09b16a20a02392ceaefa6a2a59dca1729aefcbd12c3f81bd418961ecc88769",
+      "crop": [
+        819,
+        32,
+        987,
+        260
+      ],
+      "destination": [
+        413,
+        15,
+        70,
+        95
+      ]
+    },
+    {
+      "frame": 4,
+      "sourceFrame": 4,
+      "source": "docs/art-source/motions/production-144/gold_ship/alpha.png",
+      "sourceSha256": "cc09b16a20a02392ceaefa6a2a59dca1729aefcbd12c3f81bd418961ecc88769",
+      "crop": [
+        26,
+        287,
+        238,
+        520
+      ],
+      "destination": [
+        20,
+        141,
+        88,
+        97
+      ]
+    },
+    {
+      "frame": 5,
+      "sourceFrame": 5,
+      "source": "docs/art-source/motions/production-144/gold_ship/alpha.png",
+      "sourceSha256": "cc09b16a20a02392ceaefa6a2a59dca1729aefcbd12c3f81bd418961ecc88769",
+      "crop": [
+        283,
+        290,
+        494,
+        520
+      ],
+      "destination": [
+        148,
+        143,
+        88,
+        95
+      ]
+    },
+    {
+      "frame": 6,
+      "sourceFrame": 6,
+      "source": "docs/art-source/motions/production-144/gold_ship/alpha.png",
+      "sourceSha256": "cc09b16a20a02392ceaefa6a2a59dca1729aefcbd12c3f81bd418961ecc88769",
+      "crop": [
+        532,
+        290,
+        739,
+        520
+      ],
+      "destination": [
+        277,
+        143,
+        86,
+        95
+      ]
+    },
+    {
+      "frame": 7,
+      "sourceFrame": 7,
+      "source": "docs/art-source/motions/production-144/gold_ship/alpha.png",
+      "sourceSha256": "cc09b16a20a02392ceaefa6a2a59dca1729aefcbd12c3f81bd418961ecc88769",
+      "crop": [
+        790,
+        296,
+        996,
+        520
+      ],
+      "destination": [
+        405,
+        145,
+        86,
+        93
+      ]
+    },
+    {
+      "frame": 8,
+      "sourceFrame": 8,
+      "source": "docs/art-source/motions/production-144/gold_ship/alpha.png",
+      "sourceSha256": "cc09b16a20a02392ceaefa6a2a59dca1729aefcbd12c3f81bd418961ecc88769",
+      "crop": [
+        38,
+        544,
+        208,
+        768
+      ],
+      "destination": [
+        28,
+        273,
+        71,
+        93
+      ]
+    },
+    {
+      "frame": 9,
+      "sourceFrame": 9,
+      "source": "docs/art-source/motions/production-144/gold_ship/alpha.png",
+      "sourceSha256": "cc09b16a20a02392ceaefa6a2a59dca1729aefcbd12c3f81bd418961ecc88769",
+      "crop": [
+        293,
+        544,
+        484,
+        768
+      ],
+      "destination": [
+        152,
+        273,
+        79,
+        93
+      ]
+    },
+    {
+      "frame": 10,
+      "sourceFrame": 10,
+      "source": "docs/art-source/motions/production-144/gold_ship/alpha.png",
+      "sourceSha256": "cc09b16a20a02392ceaefa6a2a59dca1729aefcbd12c3f81bd418961ecc88769",
+      "crop": [
+        538,
+        549,
+        788,
+        763
+      ],
+      "destination": [
+        268,
+        277,
+        104,
+        89
+      ]
+    },
+    {
+      "frame": 11,
+      "sourceFrame": 11,
+      "source": "docs/art-source/motions/production-144/gold_ship/alpha.png",
+      "sourceSha256": "cc09b16a20a02392ceaefa6a2a59dca1729aefcbd12c3f81bd418961ecc88769",
+      "crop": [
+        822,
+        548,
+        987,
+        767
+      ],
+      "destination": [
+        414,
+        275,
+        68,
+        91
+      ]
+    },
+    {
+      "frame": 12,
+      "sourceFrame": 12,
+      "source": "docs/art-source/motions/production-144/gold_ship/alpha.png",
+      "sourceSha256": "cc09b16a20a02392ceaefa6a2a59dca1729aefcbd12c3f81bd418961ecc88769",
+      "crop": [
+        29,
+        832,
+        249,
+        1003
+      ],
+      "destination": [
+        18,
+        423,
+        91,
+        71
+      ]
+    },
+    {
+      "frame": 13,
+      "sourceFrame": 13,
+      "source": "docs/art-source/motions/production-144/gold_ship/alpha.png",
+      "sourceSha256": "cc09b16a20a02392ceaefa6a2a59dca1729aefcbd12c3f81bd418961ecc88769",
+      "crop": [
+        278,
+        827,
+        506,
+        1004
+      ],
+      "destination": [
+        144,
+        421,
+        95,
+        73
+      ]
+    },
+    {
+      "frame": 14,
+      "sourceFrame": 14,
+      "source": "docs/art-source/motions/production-144/gold_ship/alpha.png",
+      "sourceSha256": "cc09b16a20a02392ceaefa6a2a59dca1729aefcbd12c3f81bd418961ecc88769",
+      "crop": [
+        512,
+        843,
+        777,
+        1004
+      ],
+      "destination": [
+        265,
+        427,
+        110,
+        67
+      ]
+    },
+    {
+      "frame": 15,
+      "sourceFrame": 15,
+      "source": "docs/art-source/motions/production-144/gold_ship/alpha.png",
+      "sourceSha256": "cc09b16a20a02392ceaefa6a2a59dca1729aefcbd12c3f81bd418961ecc88769",
+      "crop": [
+        802,
+        814,
+        1003,
+        1007
+      ],
+      "destination": [
+        406,
+        414,
+        83,
+        80
+      ]
+    },
+    {
+      "frame": 16,
+      "sourceFrame": 16,
+      "source": "docs/art-source/motions/production-144/gold_ship/alpha.png",
+      "sourceSha256": "cc09b16a20a02392ceaefa6a2a59dca1729aefcbd12c3f81bd418961ecc88769",
+      "crop": [
+        34,
+        1050,
+        233,
+        1256
+      ],
+      "destination": [
+        22,
+        536,
+        83,
+        86
+      ]
+    },
+    {
+      "frame": 17,
+      "sourceFrame": 17,
+      "source": "docs/art-source/motions/production-144/gold_ship/alpha.png",
+      "sourceSha256": "cc09b16a20a02392ceaefa6a2a59dca1729aefcbd12c3f81bd418961ecc88769",
+      "crop": [
+        299,
+        1071,
+        490,
+        1255
+      ],
+      "destination": [
+        152,
+        546,
+        79,
+        76
+      ]
+    },
+    {
+      "frame": 18,
+      "sourceFrame": 18,
+      "source": "docs/art-source/motions/production-144/gold_ship/alpha.png",
+      "sourceSha256": "cc09b16a20a02392ceaefa6a2a59dca1729aefcbd12c3f81bd418961ecc88769",
+      "crop": [
+        553,
+        1086,
+        716,
+        1259
+      ],
+      "destination": [
+        286,
+        550,
+        68,
+        72
+      ]
+    },
+    {
+      "frame": 19,
+      "sourceFrame": 19,
+      "source": "docs/art-source/motions/production-144/gold_ship/alpha.png",
+      "sourceSha256": "cc09b16a20a02392ceaefa6a2a59dca1729aefcbd12c3f81bd418961ecc88769",
+      "crop": [
+        786,
+        1146,
+        1001,
+        1249
+      ],
+      "destination": [
+        403,
+        579,
+        89,
+        43
+      ]
+    },
+    {
+      "frame": 20,
+      "sourceFrame": 20,
+      "source": "docs/art-source/motions/production-144/gold_ship/alpha.png",
+      "sourceSha256": "cc09b16a20a02392ceaefa6a2a59dca1729aefcbd12c3f81bd418961ecc88769",
+      "crop": [
+        38,
+        1280,
+        209,
+        1519
+      ],
+      "destination": [
+        28,
+        651,
+        71,
+        99
+      ]
+    },
+    {
+      "frame": 21,
+      "sourceFrame": 21,
+      "source": "docs/art-source/motions/production-144/gold_ship/alpha.png",
+      "sourceSha256": "cc09b16a20a02392ceaefa6a2a59dca1729aefcbd12c3f81bd418961ecc88769",
+      "crop": [
+        299,
+        1282,
+        469,
+        1519
+      ],
+      "destination": [
+        156,
+        652,
+        71,
+        98
+      ]
+    },
+    {
+      "frame": 22,
+      "sourceFrame": 22,
+      "source": "docs/art-source/motions/production-144/gold_ship/alpha.png",
+      "sourceSha256": "cc09b16a20a02392ceaefa6a2a59dca1729aefcbd12c3f81bd418961ecc88769",
+      "crop": [
+        553,
+        1283,
+        722,
+        1519
+      ],
+      "destination": [
+        285,
+        652,
+        70,
+        98
+      ]
+    },
+    {
+      "frame": 23,
+      "sourceFrame": 23,
+      "source": "docs/art-source/motions/production-144/gold_ship/alpha.png",
+      "sourceSha256": "cc09b16a20a02392ceaefa6a2a59dca1729aefcbd12c3f81bd418961ecc88769",
+      "crop": [
+        802,
+        1285,
+        991,
+        1519
+      ],
+      "destination": [
+        409,
+        653,
+        78,
+        97
+      ]
+    }
+  ]
+}

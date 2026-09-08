@@ -1,0 +1,443 @@
+{
+  "format": "uft-baked-frames-v1",
+  "scale": 0.42448979591836733,
+  "anchor": [
+    64,
+    110
+  ],
+  "runtimeSha256": "858e7b0d0fb4557dadf063d2309182799ea2493cba9dd2545225f1f474303c19",
+  "frames": [
+    {
+      "frame": 0,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/production-144/grass_wonder/alpha.png",
+      "sourceSha256": "3e2833c367702deec992433f354fd3ddac0f413ae6c6041c7f6cf849594b3822",
+      "crop": [
+        38,
+        26,
+        184,
+        271
+      ],
+      "destination": [
+        33,
+        6,
+        62,
+        104
+      ]
+    },
+    {
+      "frame": 1,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/production-144/grass_wonder/alpha.png",
+      "sourceSha256": "3e2833c367702deec992433f354fd3ddac0f413ae6c6041c7f6cf849594b3822",
+      "crop": [
+        296,
+        26,
+        450,
+        271
+      ],
+      "destination": [
+        159,
+        6,
+        65,
+        104
+      ]
+    },
+    {
+      "frame": 2,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/production-144/grass_wonder/alpha.png",
+      "sourceSha256": "3e2833c367702deec992433f354fd3ddac0f413ae6c6041c7f6cf849594b3822",
+      "crop": [
+        556,
+        26,
+        700,
+        271
+      ],
+      "destination": [
+        289,
+        6,
+        61,
+        104
+      ]
+    },
+    {
+      "frame": 3,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/production-144/grass_wonder/alpha.png",
+      "sourceSha256": "3e2833c367702deec992433f354fd3ddac0f413ae6c6041c7f6cf849594b3822",
+      "crop": [
+        812,
+        26,
+        960,
+        271
+      ],
+      "destination": [
+        416,
+        6,
+        63,
+        104
+      ]
+    },
+    {
+      "frame": 4,
+      "sourceFrame": 4,
+      "source": "docs/art-source/motions/production-144/grass_wonder/alpha.png",
+      "sourceSha256": "3e2833c367702deec992433f354fd3ddac0f413ae6c6041c7f6cf849594b3822",
+      "crop": [
+        29,
+        291,
+        211,
+        531
+      ],
+      "destination": [
+        25,
+        136,
+        77,
+        102
+      ]
+    },
+    {
+      "frame": 5,
+      "sourceFrame": 5,
+      "source": "docs/art-source/motions/production-144/grass_wonder/alpha.png",
+      "sourceSha256": "3e2833c367702deec992433f354fd3ddac0f413ae6c6041c7f6cf849594b3822",
+      "crop": [
+        290,
+        293,
+        474,
+        531
+      ],
+      "destination": [
+        153,
+        137,
+        78,
+        101
+      ]
+    },
+    {
+      "frame": 6,
+      "sourceFrame": 6,
+      "source": "docs/art-source/motions/production-144/grass_wonder/alpha.png",
+      "sourceSha256": "3e2833c367702deec992433f354fd3ddac0f413ae6c6041c7f6cf849594b3822",
+      "crop": [
+        547,
+        293,
+        736,
+        531
+      ],
+      "destination": [
+        280,
+        137,
+        80,
+        101
+      ]
+    },
+    {
+      "frame": 7,
+      "sourceFrame": 7,
+      "source": "docs/art-source/motions/production-144/grass_wonder/alpha.png",
+      "sourceSha256": "3e2833c367702deec992433f354fd3ddac0f413ae6c6041c7f6cf849594b3822",
+      "crop": [
+        808,
+        294,
+        992,
+        531
+      ],
+      "destination": [
+        409,
+        137,
+        78,
+        101
+      ]
+    },
+    {
+      "frame": 8,
+      "sourceFrame": 8,
+      "source": "docs/art-source/motions/production-144/grass_wonder/alpha.png",
+      "sourceSha256": "3e2833c367702deec992433f354fd3ddac0f413ae6c6041c7f6cf849594b3822",
+      "crop": [
+        34,
+        539,
+        234,
+        776
+      ],
+      "destination": [
+        21,
+        265,
+        85,
+        101
+      ]
+    },
+    {
+      "frame": 9,
+      "sourceFrame": 9,
+      "source": "docs/art-source/motions/production-144/grass_wonder/alpha.png",
+      "sourceSha256": "3e2833c367702deec992433f354fd3ddac0f413ae6c6041c7f6cf849594b3822",
+      "crop": [
+        307,
+        545,
+        467,
+        776
+      ],
+      "destination": [
+        158,
+        268,
+        68,
+        98
+      ]
+    },
+    {
+      "frame": 10,
+      "sourceFrame": 10,
+      "source": "docs/art-source/motions/production-144/grass_wonder/alpha.png",
+      "sourceSha256": "3e2833c367702deec992433f354fd3ddac0f413ae6c6041c7f6cf849594b3822",
+      "crop": [
+        536,
+        542,
+        780,
+        776
+      ],
+      "destination": [
+        268,
+        267,
+        104,
+        99
+      ]
+    },
+    {
+      "frame": 11,
+      "sourceFrame": 11,
+      "source": "docs/art-source/motions/production-144/grass_wonder/alpha.png",
+      "sourceSha256": "3e2833c367702deec992433f354fd3ddac0f413ae6c6041c7f6cf849594b3822",
+      "crop": [
+        805,
+        544,
+        976,
+        776
+      ],
+      "destination": [
+        411,
+        268,
+        73,
+        98
+      ]
+    },
+    {
+      "frame": 12,
+      "sourceFrame": 12,
+      "source": "docs/art-source/motions/production-144/grass_wonder/alpha.png",
+      "sourceSha256": "3e2833c367702deec992433f354fd3ddac0f413ae6c6041c7f6cf849594b3822",
+      "crop": [
+        34,
+        834,
+        229,
+        1013
+      ],
+      "destination": [
+        22,
+        418,
+        83,
+        76
+      ]
+    },
+    {
+      "frame": 13,
+      "sourceFrame": 13,
+      "source": "docs/art-source/motions/production-144/grass_wonder/alpha.png",
+      "sourceSha256": "3e2833c367702deec992433f354fd3ddac0f413ae6c6041c7f6cf849594b3822",
+      "crop": [
+        273,
+        815,
+        476,
+        1008
+      ],
+      "destination": [
+        149,
+        412,
+        86,
+        82
+      ]
+    },
+    {
+      "frame": 14,
+      "sourceFrame": 14,
+      "source": "docs/art-source/motions/production-144/grass_wonder/alpha.png",
+      "sourceSha256": "3e2833c367702deec992433f354fd3ddac0f413ae6c6041c7f6cf849594b3822",
+      "crop": [
+        516,
+        836,
+        768,
+        1009
+      ],
+      "destination": [
+        266,
+        421,
+        107,
+        73
+      ]
+    },
+    {
+      "frame": 15,
+      "sourceFrame": 15,
+      "source": "docs/art-source/motions/production-144/grass_wonder/alpha.png",
+      "sourceSha256": "3e2833c367702deec992433f354fd3ddac0f413ae6c6041c7f6cf849594b3822",
+      "crop": [
+        796,
+        808,
+        996,
+        1010
+      ],
+      "destination": [
+        405,
+        408,
+        85,
+        86
+      ]
+    },
+    {
+      "frame": 16,
+      "sourceFrame": 16,
+      "source": "docs/art-source/motions/production-144/grass_wonder/alpha.png",
+      "sourceSha256": "3e2833c367702deec992433f354fd3ddac0f413ae6c6041c7f6cf849594b3822",
+      "crop": [
+        38,
+        1038,
+        209,
+        1257
+      ],
+      "destination": [
+        27,
+        529,
+        73,
+        93
+      ]
+    },
+    {
+      "frame": 17,
+      "sourceFrame": 17,
+      "source": "docs/art-source/motions/production-144/grass_wonder/alpha.png",
+      "sourceSha256": "3e2833c367702deec992433f354fd3ddac0f413ae6c6041c7f6cf849594b3822",
+      "crop": [
+        295,
+        1061,
+        468,
+        1253
+      ],
+      "destination": [
+        155,
+        540,
+        73,
+        82
+      ]
+    },
+    {
+      "frame": 18,
+      "sourceFrame": 18,
+      "source": "docs/art-source/motions/production-144/grass_wonder/alpha.png",
+      "sourceSha256": "3e2833c367702deec992433f354fd3ddac0f413ae6c6041c7f6cf849594b3822",
+      "crop": [
+        541,
+        1069,
+        736,
+        1261
+      ],
+      "destination": [
+        278,
+        540,
+        83,
+        82
+      ]
+    },
+    {
+      "frame": 19,
+      "sourceFrame": 19,
+      "source": "docs/art-source/motions/production-144/grass_wonder/alpha.png",
+      "sourceSha256": "3e2833c367702deec992433f354fd3ddac0f413ae6c6041c7f6cf849594b3822",
+      "crop": [
+        779,
+        1146,
+        1011,
+        1243
+      ],
+      "destination": [
+        399,
+        581,
+        98,
+        41
+      ]
+    },
+    {
+      "frame": 20,
+      "sourceFrame": 20,
+      "source": "docs/art-source/motions/production-144/grass_wonder/alpha.png",
+      "sourceSha256": "3e2833c367702deec992433f354fd3ddac0f413ae6c6041c7f6cf849594b3822",
+      "crop": [
+        45,
+        1280,
+        191,
+        1519
+      ],
+      "destination": [
+        33,
+        649,
+        62,
+        101
+      ]
+    },
+    {
+      "frame": 21,
+      "sourceFrame": 21,
+      "source": "docs/art-source/motions/production-144/grass_wonder/alpha.png",
+      "sourceSha256": "3e2833c367702deec992433f354fd3ddac0f413ae6c6041c7f6cf849594b3822",
+      "crop": [
+        298,
+        1280,
+        456,
+        1518
+      ],
+      "destination": [
+        158,
+        649,
+        67,
+        101
+      ]
+    },
+    {
+      "frame": 22,
+      "sourceFrame": 22,
+      "source": "docs/art-source/motions/production-144/grass_wonder/alpha.png",
+      "sourceSha256": "3e2833c367702deec992433f354fd3ddac0f413ae6c6041c7f6cf849594b3822",
+      "crop": [
+        551,
+        1280,
+        739,
+        1519
+      ],
+      "destination": [
+        280,
+        649,
+        80,
+        101
+      ]
+    },
+    {
+      "frame": 23,
+      "sourceFrame": 23,
+      "source": "docs/art-source/motions/production-144/grass_wonder/alpha.png",
+      "sourceSha256": "3e2833c367702deec992433f354fd3ddac0f413ae6c6041c7f6cf849594b3822",
+      "crop": [
+        816,
+        1281,
+        962,
+        1522
+      ],
+      "destination": [
+        417,
+        648,
+        62,
+        102
+      ]
+    }
+  ]
+}

@@ -216,7 +216,7 @@ export class BattleScene extends Phaser.Scene {
     } else if (action === 'idle' || action === 'run') action = u.fromQ !== null ? 'run' : 'idle';
     if (action !== a.action) { a.action = action; a.actionAt = this.playbackTime; elapsed = 0; }
     if (a.sheet) {
-      if (a.frameSheet) a.body.setFrame(motionFrame(action, elapsed, a.attackReleaseAt - a.actionAt, true));
+      if (a.frameSheet) a.body.setFrame(motionFrame(action, elapsed, a.attackReleaseAt - a.actionAt, true, FRAME_SHEETS[u.unitDefId].skillReleaseFrame ?? 2));
       else if (u.unitDefId.startsWith('pve_')) {
         const clip = action === 'ko' ? { start: 30, count: 6, fps: 10 } : action === 'basic_attack' || action === 'skill_cast' ? { start: 10, count: 8, fps: 14 } : { start: 0, count: 6, fps: 8 };
         const n = Math.floor((this.playbackTime - a.actionAt) * clip.fps);
