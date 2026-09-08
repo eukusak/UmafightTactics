@@ -1,21 +1,16 @@
 {
-  "acceptedArt": 349,
-  "baseCommit": "ea3de73a02479d5dbac72f004fa0acbf7790600e",
+  "acceptedArt": 354,
+  "baseCommit": "cee9c12a33ffae12faa9fb0826c61eba847cba88",
   "batchSize": 5,
   "completedBatch": [
-    "dantsu_flame",
-    "ks_miracle",
-    "jungle_pocket",
-    "believe",
-    "no_reason"
-  ],
-  "completedPortraits": 125,
-  "nextPortraitIds": [
     "still_in_love",
     "copano_rickey",
     "hokko_tarumae",
     "wonder_acute",
-    "sounds_of_earth",
+    "sounds_of_earth"
+  ],
+  "completedPortraits": 130,
+  "nextPortraitIds": [
     "royce_and_royce",
     "katsuragi_ace",
     "neo_universe",
@@ -34,7 +29,7 @@
   ],
   "portraitTarget": 145,
   "remaining": {
-    "portraits": 20,
+    "portraits": 15,
     "battleSheets": 145,
     "cutins": 0
   },
@@ -66,7 +61,7 @@
   },
   "workflow": "This session generates five distinct portraits, inspects and saves to GitHub, verifies, then begins the next five. Preserve the separate concurrent ten-character batches and reservations. Complete all 145 portraits before rigging one character at a time.",
   "latestTenCharacterBatch": "batch-1003",
-  "latestFiveCharacterBatch": "batch-18",
+  "latestFiveCharacterBatch": "batch-19",
   "activeTenCharacterBatch": {
     "session": "8bd244030e73",
     "batch": "batch-1004",

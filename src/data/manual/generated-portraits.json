@@ -2434,5 +2434,110 @@
       256
     ],
     "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "still_in_love": {
+    "file": "portraits/still_in_love.png",
+    "source": "docs/art-source/portraits/batch-19/still_in_love.png",
+    "sourceSha256": "d2cb70cf8b66dde0a52c4880a96641bbe891342a5c6a03ec7666ea26ecb429d3",
+    "reference": "public/assets/characters/race/StillInLove-Race.png",
+    "sourceSize": [
+      1145,
+      1374
+    ],
+    "crop": [
+      0,
+      0,
+      1135,
+      1374
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "copano_rickey": {
+    "file": "portraits/copano_rickey.png",
+    "source": "docs/art-source/portraits/batch-19/copano_rickey.png",
+    "sourceSha256": "dece5a7767bf5fd9807ea3814b6f8b94ae3d79d0cb6e118e688a225012a59416",
+    "reference": "public/assets/characters/race/CopanoRickey-Race.png",
+    "sourceSize": [
+      1211,
+      1299
+    ],
+    "crop": [
+      0,
+      0,
+      1197,
+      1299
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "hokko_tarumae": {
+    "file": "portraits/hokko_tarumae.png",
+    "source": "docs/art-source/portraits/batch-19/hokko_tarumae.png",
+    "sourceSha256": "09563600f0acffeba70250552652c40cbb780ca618032bb4594e84d6f10b9850",
+    "reference": "public/assets/characters/race/HokkoTarumae-Race.png",
+    "sourceSize": [
+      1209,
+      1301
+    ],
+    "crop": [
+      0,
+      0,
+      1209,
+      1301
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "wonder_acute": {
+    "file": "portraits/wonder_acute.png",
+    "source": "docs/art-source/portraits/batch-19/wonder_acute.png",
+    "sourceSha256": "6aa8c701d3abc27ef4c7f55af2da8505036f123347bf4d45757c41ca40cb12eb",
+    "reference": "public/assets/characters/race/WonderAcute-Race.png",
+    "sourceSize": [
+      1193,
+      1319
+    ],
+    "crop": [
+      0,
+      0,
+      1193,
+      1319
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "sounds_of_earth": {
+    "file": "portraits/sounds_of_earth.png",
+    "source": "docs/art-source/portraits/batch-19/sounds_of_earth.png",
+    "sourceSha256": "51fc19d6c7ac577fae053e84cd17f65a54bc80221fb45f8473a374b4f424241d",
+    "reference": "public/assets/characters/race/SoundsOfEarth-Race.png",
+    "sourceSize": [
+      1159,
+      1358
+    ],
+    "crop": [
+      39,
+      0,
+      1145,
+      1358
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
   }
 }
