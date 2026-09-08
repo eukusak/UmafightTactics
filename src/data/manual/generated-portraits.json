@@ -1174,5 +1174,110 @@
       256
     ],
     "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "marvelous_sunday": {
+    "file": "portraits/marvelous_sunday.png",
+    "source": "docs/art-source/portraits/batch-11/marvelous_sunday.png",
+    "sourceSha256": "9d059ae09f80a2c5b3d63172cb128bb26920a1a358a1cb596a98002f740e83c0",
+    "reference": "public/assets/characters/race/MarvelousSunday-Race.png",
+    "sourceSize": [
+      1212,
+      1297
+    ],
+    "crop": [
+      0,
+      0,
+      1212,
+      1297
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "matikanefukukitaru": {
+    "file": "portraits/matikanefukukitaru.png",
+    "source": "docs/art-source/portraits/batch-11/matikanefukukitaru.png",
+    "sourceSha256": "10de560d94ee914f039884c9541925c10520b151e21ec27281839659406a8f6d",
+    "reference": "public/assets/characters/race/Matikanefukukitaru-Race.png",
+    "sourceSize": [
+      1183,
+      1329
+    ],
+    "crop": [
+      0,
+      0,
+      1110,
+      1329
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "mr_cb": {
+    "file": "portraits/mr_cb.png",
+    "source": "docs/art-source/portraits/batch-11/mr_cb.png",
+    "sourceSha256": "9cf20d65f6c78f4ac7fcf6b8c40867e33c23fac7ffa186544343ea0078753688",
+    "reference": "public/assets/characters/race/MrCB-Race.png",
+    "sourceSize": [
+      1145,
+      1374
+    ],
+    "crop": [
+      0,
+      0,
+      1145,
+      1374
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "meisho_doto": {
+    "file": "portraits/meisho_doto.png",
+    "source": "docs/art-source/portraits/batch-11/meisho_doto.png",
+    "sourceSha256": "441270c5c8d38c750013742ffb3b55fe2797cfcee66445fa60e197268346eeb9",
+    "reference": "public/assets/characters/race/MeishoDoto-Race.png",
+    "sourceSize": [
+      1150,
+      1368
+    ],
+    "crop": [
+      65,
+      0,
+      1112,
+      1368
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "mejiro_dober": {
+    "file": "portraits/mejiro_dober.png",
+    "source": "docs/art-source/portraits/batch-11/mejiro_dober.png",
+    "sourceSha256": "d87966402528f5470042b3b731910f166313da6c63e4a70647c975037607936a",
+    "reference": "public/assets/characters/race/MejiroDober-Race.png",
+    "sourceSize": [
+      1213,
+      1296
+    ],
+    "crop": [
+      0,
+      0,
+      1186,
+      1296
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
   }
 }

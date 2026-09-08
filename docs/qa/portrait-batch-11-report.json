@@ -1,0 +1,106 @@
+{
+  "batchSize": 5,
+  "validation": "new portraits only; full app test/build not rerun",
+  "files": [
+    {
+      "id": "marvelous_sunday",
+      "size": [
+        256,
+        256
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "bounds": [
+        14,
+        6,
+        242,
+        250
+      ],
+      "sourceSha256": "9d059ae09f80a2c5b3d63172cb128bb26920a1a358a1cb596a98002f740e83c0",
+      "runtimeSha256": "a21cf77822e272ccecfe1f8e62ca0163c4329ec8860704738d4e97751d9fb5d4",
+      "reference": "public/assets/characters/race/MarvelousSunday-Race.png"
+    },
+    {
+      "id": "matikanefukukitaru",
+      "size": [
+        256,
+        256
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "bounds": [
+        26,
+        6,
+        229,
+        250
+      ],
+      "sourceSha256": "10de560d94ee914f039884c9541925c10520b151e21ec27281839659406a8f6d",
+      "runtimeSha256": "0add08b4316abd2266b4f8c53b21a2e78e218297dd7032e5b52e4afc9f748a68",
+      "reference": "public/assets/characters/race/Matikanefukukitaru-Race.png"
+    },
+    {
+      "id": "mr_cb",
+      "size": [
+        256,
+        256
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "bounds": [
+        27,
+        6,
+        229,
+        250
+      ],
+      "sourceSha256": "9cf20d65f6c78f4ac7fcf6b8c40867e33c23fac7ffa186544343ea0078753688",
+      "runtimeSha256": "f66015221c059599975d2ebb10519721f5a7e179fa9bf88664d8aff99c8174e9",
+      "reference": "public/assets/characters/race/MrCB-Race.png"
+    },
+    {
+      "id": "meisho_doto",
+      "size": [
+        256,
+        256
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "bounds": [
+        34,
+        6,
+        221,
+        250
+      ],
+      "sourceSha256": "441270c5c8d38c750013742ffb3b55fe2797cfcee66445fa60e197268346eeb9",
+      "runtimeSha256": "1a6aa21d32b43d4a9886b3e43834355281838f9fccb09bd92060f8891eda40dd",
+      "reference": "public/assets/characters/race/MeishoDoto-Race.png"
+    },
+    {
+      "id": "mejiro_dober",
+      "size": [
+        256,
+        256
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "bounds": [
+        20,
+        6,
+        239,
+        249
+      ],
+      "sourceSha256": "d87966402528f5470042b3b731910f166313da6c63e4a70647c975037607936a",
+      "runtimeSha256": "80723ea8c835c151d29a27027cf117b0bdfba0c32f762e3e7bc1e9b49a9e8d4a",
+      "reference": "public/assets/characters/race/MejiroDober-Race.png"
+    }
+  ]
+}
