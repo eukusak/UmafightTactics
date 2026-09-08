@@ -46,7 +46,8 @@
       "complete separated artwork",
       "Cubism Editor mesh/deformers/parameters/physics",
       "compiled model and runtime verification"
-    ]
+    ],
+    "environmentStatus": "Cubism Editor/compiler not found in standard install locations; user asked for available environment"
   },
   "workflow": "Generate up to ten distinct portraits, inspect and save to PR 6, verify remote commit, then next batch. Finish 145 portraits before character-by-character Cubism work.",
   "latestTenCharacterBatch": "batch-2001",
@@ -70,5 +71,12 @@
     "note": "Other concurrent sessions should skip these ten IDs. Start after batch-1003 is saved and verified."
   },
   "concurrentMerge": "Preserved five portraits from c662b5c; local duplicate sources kept as alternatives and not double counted.",
-  "portraitStatus": "complete; all 145 runtime portraits present"
+  "portraitStatus": "complete; all 145 runtime portraits present",
+  "portraitCompletionCommit": "ab557e769c406fa9555b5e01ccbf65f6254bbd6e",
+  "extraPveStandees": {
+    "count": 5,
+    "actualCubismModels": 0,
+    "status": "generated full-body images with procedural runtime animation"
+  },
+  "latestValidation": "docs/qa/PR6_RESUME_2026-09-08.md"
 }

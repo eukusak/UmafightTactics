@@ -132,6 +132,20 @@ export function findPath(
 export function findAttackPosition(
   from: Hex, target: Hex, range: number, blocked: ReadonlySet<string>, keyOf: KeyFn = hexKey,
 ): Hex | null {
+  // An empty firing cell may still be sealed off by other units. Rank only
+  // reachable cells by walking distance so a unit takes an available flank.
+  const distances = new Map<string, number>([[hexKey(from), 0]]);
+  const queue: Hex[] = [from];
+  for (let i = 0; i < queue.length; i += 1) {
+    const cell = queue[i];
+    const distance = distances.get(hexKey(cell))!;
+    for (const next of neighbours(cell)) {
+      const key = hexKey(next);
+      if (!inBounds(next) || blocked.has(key) || distances.has(key)) continue;
+      distances.set(key, distance + 1);
+      queue.push(next);
+    }
+  }
   let best: Hex | null = null;
   let bestScore = Infinity;
   let bestKey = '';
@@ -141,7 +155,9 @@ export function findAttackPosition(
       if (hexDistance(cand, target) > range) continue;
       const key = hexKey(cand);
       if (blocked.has(key) && !hexEquals(cand, from)) continue;
-      const score = hexDistance(from, cand) * 100 + hexDistance(cand, target);
+      const walkingDistance = distances.get(key);
+      if (walkingDistance === undefined) continue;
+      const score = walkingDistance * 100 + hexDistance(cand, target);
       const candKey = keyOf(cand);
       if (score < bestScore || (score === bestScore && best !== null && candKey < bestKey)) {
         bestScore = score;

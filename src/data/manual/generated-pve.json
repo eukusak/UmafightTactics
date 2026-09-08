@@ -1,0 +1,127 @@
+{
+  "track_golem": {
+    "source": "docs/art-source/pve/standees/track_golem.png",
+    "runtime": "public/assets/pve/standees/track_golem.png",
+    "sourceSha256": "f6fefadf5f8d2a85f7c29465614e574c09bb21c2398374b5c609428f9e6f7e72",
+    "runtimeSha256": "d64fefa82bf095744238609b3d685b4c45f722933db8c09893d843744689c0a7",
+    "sourceSize": [
+      1199,
+      1312
+    ],
+    "crop": [
+      0,
+      21,
+      1184,
+      1312
+    ],
+    "size": [
+      512,
+      512
+    ],
+    "footAnchor": [
+      256,
+      440
+    ],
+    "status": "generated-standee-with-procedural-runtime-motion; not-Cubism"
+  },
+  "grand_trophy_guardian": {
+    "source": "docs/art-source/pve/standees/grand_trophy_guardian.png",
+    "runtime": "public/assets/pve/standees/grand_trophy_guardian.png",
+    "sourceSha256": "37ef65a39eb9fc90b34eb2dd59670435a8f32f25b0f050bcbb297165ee3c61b4",
+    "runtimeSha256": "53fbf07e57e97c8d367e2ca1494d8d33c9ccd129a784d71fe789e14efd2fdcc9",
+    "sourceSize": [
+      1225,
+      1284
+    ],
+    "crop": [
+      0,
+      0,
+      1144,
+      1284
+    ],
+    "size": [
+      512,
+      512
+    ],
+    "footAnchor": [
+      256,
+      440
+    ],
+    "status": "generated-standee-with-procedural-runtime-motion; not-Cubism"
+  },
+  "supply_robot": {
+    "source": "docs/art-source/pve/standees/supply_robot.png",
+    "runtime": "public/assets/pve/standees/supply_robot.png",
+    "sourceSha256": "38f9cb57bfdd4aab5f7ba63f4315c5c8c7d73b0dfc841fdd35cd73b2953faa00",
+    "runtimeSha256": "98f25597bbdc98892d896bce7793afef3426e9bfde066f35fcfb925a7023975d",
+    "sourceSize": [
+      1189,
+      1323
+    ],
+    "crop": [
+      0,
+      17,
+      1175,
+      1301
+    ],
+    "size": [
+      512,
+      512
+    ],
+    "footAnchor": [
+      256,
+      440
+    ],
+    "status": "generated-standee-with-procedural-runtime-motion; not-Cubism"
+  },
+  "trophy_guardian": {
+    "source": "docs/art-source/pve/standees/trophy_guardian.png",
+    "runtime": "public/assets/pve/standees/trophy_guardian.png",
+    "sourceSha256": "d8ee030ba3ac157b827c5401959e38dfb3b59d49614c261e73af6bf5d33d2651",
+    "runtimeSha256": "9de0e5f55146370ce869af940c04105dcf48c364878f8c14425cc1f97768ca97",
+    "sourceSize": [
+      1209,
+      1300
+    ],
+    "crop": [
+      71,
+      10,
+      1187,
+      1300
+    ],
+    "size": [
+      512,
+      512
+    ],
+    "footAnchor": [
+      256,
+      440
+    ],
+    "status": "generated-standee-with-procedural-runtime-motion; not-Cubism"
+  },
+  "training_dummy": {
+    "source": "docs/art-source/pve/standees/training_dummy.png",
+    "runtime": "public/assets/pve/standees/training_dummy.png",
+    "sourceSha256": "c3a1d16678174189f9c2be22e1a04c104cc9c0a770f2136d6834cf3d72fa397d",
+    "runtimeSha256": "fd6afadff02bac160ff059207b9699277acaff9d069831db589bda4863fc99c1",
+    "sourceSize": [
+      1199,
+      1312
+    ],
+    "crop": [
+      0,
+      0,
+      1152,
+      1312
+    ],
+    "size": [
+      512,
+      512
+    ],
+    "footAnchor": [
+      256,
+      440
+    ],
+    "status": "generated-standee-with-procedural-runtime-motion; not-Cubism"
+  }
+}

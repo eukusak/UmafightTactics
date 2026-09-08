@@ -10,7 +10,7 @@ export function portraitUrl(id: string): string | null {
   return assetUrl(`portraits/${id}.png`) ?? (previews[id] ? `/assets/${previews[id].preview}` : null);
 }
 export function standeeUrl(id: string): string | null {
-  return assetUrl(`characters/standees/${id}.png`);
+  return id.startsWith('pve_') ? assetUrl(`pve/standees/${id.slice(4)}.png`) : assetUrl(`characters/standees/${id}.png`);
 }
 /** Decorative environments only: never affect surface traits or combat rules. */
 export function arenaUrl(stage = 1, pve = false): string {

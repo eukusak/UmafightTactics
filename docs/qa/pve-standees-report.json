@@ -1,0 +1,68 @@
+{
+  "count": 5,
+  "checks": [
+    "preserved source and runtime SHA256",
+    "512x512 RGBA",
+    "real transparency",
+    "grounded at y=440",
+    "registered runtime"
+  ],
+  "actualCubismModels": 0,
+  "records": [
+    {
+      "id": "grand_trophy_guardian",
+      "bbox": [
+        85,
+        56,
+        427,
+        440
+      ],
+      "sourceSha256": "37ef65a39eb9fc90b34eb2dd59670435a8f32f25b0f050bcbb297165ee3c61b4",
+      "runtimeSha256": "53fbf07e57e97c8d367e2ca1494d8d33c9ccd129a784d71fe789e14efd2fdcc9"
+    },
+    {
+      "id": "supply_robot",
+      "bbox": [
+        103,
+        56,
+        431,
+        438
+      ],
+      "sourceSha256": "38f9cb57bfdd4aab5f7ba63f4315c5c8c7d73b0dfc841fdd35cd73b2953faa00",
+      "runtimeSha256": "98f25597bbdc98892d896bce7793afef3426e9bfde066f35fcfb925a7023975d"
+    },
+    {
+      "id": "track_golem",
+      "bbox": [
+        84,
+        57,
+        432,
+        433
+      ],
+      "sourceSha256": "f6fefadf5f8d2a85f7c29465614e574c09bb21c2398374b5c609428f9e6f7e72",
+      "runtimeSha256": "d64fefa82bf095744238609b3d685b4c45f722933db8c09893d843744689c0a7"
+    },
+    {
+      "id": "training_dummy",
+      "bbox": [
+        154,
+        56,
+        419,
+        436
+      ],
+      "sourceSha256": "c3a1d16678174189f9c2be22e1a04c104cc9c0a770f2136d6834cf3d72fa397d",
+      "runtimeSha256": "fd6afadff02bac160ff059207b9699277acaff9d069831db589bda4863fc99c1"
+    },
+    {
+      "id": "trophy_guardian",
+      "bbox": [
+        135,
+        56,
+        398,
+        440
+      ],
+      "sourceSha256": "d8ee030ba3ac157b827c5401959e38dfb3b59d49614c261e73af6bf5d33d2651",
+      "runtimeSha256": "9de0e5f55146370ce869af940c04105dcf48c364878f8c14425cc1f97768ca97"
+    }
+  ]
+}

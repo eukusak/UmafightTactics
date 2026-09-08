@@ -66,7 +66,8 @@ export class BattleScene extends Phaser.Scene {
       const portrait = portraitUrl(id);
       const cutin = assetUrl(`characters/cutin/${id}.png`);
       if (cutin) this.load.image(`cutin:${id}`, cutin);
-      if (sheet) this.load.spritesheet(`sheet:${id}`, sheet, { frameWidth: 128, frameHeight: 128 });
+      if (id.startsWith('pve_') && standeeUrl(id)) this.load.image(`standee:${id}`, standeeUrl(id)!);
+      else if (sheet) this.load.spritesheet(`sheet:${id}`, sheet, { frameWidth: 128, frameHeight: 128 });
       else if (standeeUrl(id)) this.load.image(`standee:${id}`, standeeUrl(id)!);
       else if (portrait) this.load.image(`portrait:${id}`, portrait);
     }
@@ -177,7 +178,7 @@ export class BattleScene extends Phaser.Scene {
       g.lineStyle(2, tint(costColor(def.cost)));g.strokeRoundedRect(1, 1, 62, 62, 18);
       g.generateTexture(texture, 64, 64);g.destroy();
     }
-    if (!sheet && !portraitUrl(u.unitDefId)) {
+    if (!fullBody && !portraitUrl(u.unitDefId)) {
       container.add(this.add.text(0, -38, initialOf(def.nameKo), { fontFamily: 'Noto Sans KR Variable, sans-serif', fontSize: '25px', color: '#fff8e3' }).setOrigin(.5).setDepth(2));
     }
     const size = sheet ? 110 : fullBody ? 148 : 64;

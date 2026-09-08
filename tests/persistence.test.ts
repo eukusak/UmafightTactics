@@ -13,7 +13,9 @@ it('atomically replaces a private checkpoint, tolerates first boot and preserves
     expect(loadRooms(file, service)).toBe(false);
     service.receive({ send: () => {}, close: () => {} }, { type: 'create', name: 'Trainer' });
     saveRooms(file, service);
-    expect(statSync(file).mode & 0o777).toBe(0o600);
+    // Windows reports synthetic POSIX mode bits; its privacy boundary is the directory ACL.
+    // Keep the actual POSIX permission assertion on Linux/macOS and exercise recovery everywhere.
+    if (process.platform !== 'win32') expect(statSync(file).mode & 0o777).toBe(0o600);
     const restored = new RoomService(() => 2000);
     expect(loadRooms(file, restored)).toBe(true);
     expect([...restored.rooms.keys()]).toEqual([...service.rooms.keys()]);
