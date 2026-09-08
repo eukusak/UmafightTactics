@@ -1,0 +1,106 @@
+{
+  "batchSize": 5,
+  "validation": "new portraits only; full app test/build not rerun",
+  "files": [
+    {
+      "id": "air_groove",
+      "size": [
+        256,
+        256
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "bounds": [
+        23,
+        6,
+        232,
+        250
+      ],
+      "sourceSha256": "a68b5789f3ac8d765a17455692ee2611b3b2da12ac8d0383dddd8ac7f46dcb1c",
+      "runtimeSha256": "7858041ea65dee4727a9929546dad7f2a940789445c45b3d67dcb47a57e47b9e",
+      "reference": "public/assets/characters/race/AirGroove-Race.png"
+    },
+    {
+      "id": "agnes_digital",
+      "size": [
+        256,
+        256
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "bounds": [
+        18,
+        6,
+        241,
+        249
+      ],
+      "sourceSha256": "f0210539724c7496650c8fd594cdbae492e43791aab06fbfaf775e4242081dc4",
+      "runtimeSha256": "b186ade2fafb02ce3f31c20f3272d8d18940359cb19b5e5181f5aae767ef1ae1",
+      "reference": "public/assets/characters/race/AgnesDigital-Race.png"
+    },
+    {
+      "id": "seiun_sky",
+      "size": [
+        256,
+        256
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "bounds": [
+        28,
+        6,
+        230,
+        250
+      ],
+      "sourceSha256": "975fbc3b0649e5ede4155d61b4d613eb66f7e7bbfbda160a174b3232f18f2839",
+      "runtimeSha256": "5ce1e71bd03bff15d034795ec5e7b62ad0149eac50c37d6569b9655dc768e14d",
+      "reference": "public/assets/characters/race/SeiunSky-Race.png"
+    },
+    {
+      "id": "tamamo_cross",
+      "size": [
+        256,
+        256
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "bounds": [
+        19,
+        6,
+        236,
+        250
+      ],
+      "sourceSha256": "323d3172734051f0be1a284f0d4641fa422dcf3e6b4f4f9af714de0be15af8d4",
+      "runtimeSha256": "5414baae426ddd89a4cf428826a69dcfa8ff91ebef3e597710f146d7a1b38bcc",
+      "reference": "public/assets/characters/race/TamamoCross-Race.png"
+    },
+    {
+      "id": "fine_motion",
+      "size": [
+        256,
+        256
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "bounds": [
+        40,
+        6,
+        217,
+        250
+      ],
+      "sourceSha256": "ba26c7a822f4724e3284031f35edce26aac718a1d8db34c32254f308f1025377",
+      "runtimeSha256": "2e77a8240855dcaf845e38c11e1a7d820f3fc743e2b0ac052cdc92a651cfc29f",
+      "reference": "public/assets/characters/race/FineMotion-Race.png"
+    }
+  ]
+}

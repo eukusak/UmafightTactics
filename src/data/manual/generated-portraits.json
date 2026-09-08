@@ -229,5 +229,110 @@
       256
     ],
     "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "air_groove": {
+    "file": "portraits/air_groove.png",
+    "source": "docs/art-source/portraits/batch-04/air_groove.png",
+    "sourceSha256": "a68b5789f3ac8d765a17455692ee2611b3b2da12ac8d0383dddd8ac7f46dcb1c",
+    "reference": "public/assets/characters/race/AirGroove-Race.png",
+    "sourceSize": [
+      1192,
+      1319
+    ],
+    "crop": [
+      33,
+      0,
+      1165,
+      1319
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "agnes_digital": {
+    "file": "portraits/agnes_digital.png",
+    "source": "docs/art-source/portraits/batch-04/agnes_digital.png",
+    "sourceSha256": "f0210539724c7496650c8fd594cdbae492e43791aab06fbfaf775e4242081dc4",
+    "reference": "public/assets/characters/race/AgnesDigital-Race.png",
+    "sourceSize": [
+      1214,
+      1295
+    ],
+    "crop": [
+      0,
+      7,
+      1199,
+      1295
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "seiun_sky": {
+    "file": "portraits/seiun_sky.png",
+    "source": "docs/art-source/portraits/batch-04/seiun_sky.png",
+    "sourceSha256": "975fbc3b0649e5ede4155d61b4d613eb66f7e7bbfbda160a174b3232f18f2839",
+    "reference": "public/assets/characters/race/SeiunSky-Race.png",
+    "sourceSize": [
+      1152,
+      1365
+    ],
+    "crop": [
+      0,
+      0,
+      1140,
+      1365
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "tamamo_cross": {
+    "file": "portraits/tamamo_cross.png",
+    "source": "docs/art-source/portraits/batch-04/tamamo_cross.png",
+    "sourceSha256": "323d3172734051f0be1a284f0d4641fa422dcf3e6b4f4f9af714de0be15af8d4",
+    "reference": "public/assets/characters/race/TamamoCross-Race.png",
+    "sourceSize": [
+      1190,
+      1322
+    ],
+    "crop": [
+      14,
+      0,
+      1189,
+      1322
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "fine_motion": {
+    "file": "portraits/fine_motion.png",
+    "source": "docs/art-source/portraits/batch-04/fine_motion.png",
+    "sourceSha256": "ba26c7a822f4724e3284031f35edce26aac718a1d8db34c32254f308f1025377",
+    "reference": "public/assets/characters/race/FineMotion-Race.png",
+    "sourceSize": [
+      1151,
+      1367
+    ],
+    "crop": [
+      82,
+      0,
+      1084,
+      1367
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
   }
 }
