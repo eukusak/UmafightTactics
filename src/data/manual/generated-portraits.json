@@ -439,5 +439,110 @@
       256
     ],
     "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "rice_shower": {
+    "file": "portraits/rice_shower.png",
+    "source": "docs/art-source/portraits/batch-06/rice_shower.png",
+    "sourceSha256": "6d2b886bf8187aa722b30843e58458c50c09ced7394332ea7c33f9a7f68fc32b",
+    "reference": "public/assets/characters/race/RiceShower-Race.png",
+    "sourceSize": [
+      1178,
+      1335
+    ],
+    "crop": [
+      0,
+      0,
+      1178,
+      1335
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "ines_fujin": {
+    "file": "portraits/ines_fujin.png",
+    "source": "docs/art-source/portraits/batch-06/ines_fujin.png",
+    "sourceSha256": "1372a17cc4f7aec34b7c6cb8025d9f76a8fc050b946345b1e60ef8691efab6f6",
+    "reference": "public/assets/characters/race/InesFujin-Race.png",
+    "sourceSize": [
+      1219,
+      1290
+    ],
+    "crop": [
+      0,
+      0,
+      1189,
+      1290
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "agnes_tachyon": {
+    "file": "portraits/agnes_tachyon.png",
+    "source": "docs/art-source/portraits/batch-06/agnes_tachyon.png",
+    "sourceSha256": "7cb9c6fc989fcad3a433bf19d509a5d90f7be622e82a57f8c7225788fc5f992a",
+    "reference": "public/assets/characters/race/AgnesTachyon-Race.png",
+    "sourceSize": [
+      1133,
+      1388
+    ],
+    "crop": [
+      0,
+      0,
+      1133,
+      1388
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "admire_vega": {
+    "file": "portraits/admire_vega.png",
+    "source": "docs/art-source/portraits/batch-06/admire_vega.png",
+    "sourceSha256": "5bdbd97ef457bae476bc8249a4c7df536d2706d91da76d54a1c5450f241ec422",
+    "reference": "public/assets/characters/race/AdmireVega-Race.png",
+    "sourceSize": [
+      1145,
+      1374
+    ],
+    "crop": [
+      51,
+      0,
+      1145,
+      1374
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "inari_one": {
+    "file": "portraits/inari_one.png",
+    "source": "docs/art-source/portraits/batch-06/inari_one.png",
+    "sourceSha256": "4cf22c425b24a57bdb7ee50a1e3f8ba2f1a77679bddc0fc325e8d1bde150b092",
+    "reference": "public/assets/characters/race/InariOne-Race.png",
+    "sourceSize": [
+      1230,
+      1278
+    ],
+    "crop": [
+      27,
+      0,
+      1208,
+      1278
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
   }
 }
