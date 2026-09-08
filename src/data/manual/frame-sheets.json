@@ -424,5 +424,77 @@
     "skillSignature": "ae87e8922ffd068dde121571a31a710960ef79d699895db6eeb238e580e94d90",
     "skillReview": "연속 스퍼트: 긴 소매를 뻗은 첫 발사 → 같은 대상 두 번째 발사 → 손바닥을 드러낸 세 번째 발사 → 소매를 모은 방어 회복. 실제 3회 동일 대상 공격.",
     "skillReleaseFrame": 0
+  },
+  "espoir_city": {
+    "file": "motions/espoir_city.png",
+    "frameWidth": 128,
+    "frameHeight": 128,
+    "columns": 4,
+    "rows": 6,
+    "source": "docs/art-source/motions/production-144/espoir_city/packing.json",
+    "skillId": "skill_espoir_city",
+    "skillSignature": "158da0d8208908aa1adae1d39eaccf440099544cd88db4e9b1f108c9b9044300",
+    "skillReview": "원거리 손짓 공격. 아군 전체 강화: 가슴 앞 집중 → 양팔 격려 → 팔을 펼친 지휘 → 준비 자세 유지. 붉은 재킷, 금발 그라데이션과 교차 머리핀 유지. 치유/공격 스킬 없음.",
+    "skillReleaseFrame": 2
+  },
+  "manhattan_cafe": {
+    "file": "motions/manhattan_cafe.png",
+    "frameWidth": 128,
+    "frameHeight": 128,
+    "columns": 4,
+    "rows": 6,
+    "source": "docs/art-source/motions/production-144/manhattan_cafe/packing.json",
+    "skillId": "skill_manhattan_cafe",
+    "skillSignature": "a9c2fb2133342d46161e9711e2a54cb07c392db4a0e586664aeedb20755f5ef6",
+    "skillReview": "근접 손바닥 타격. 직선 돌파: 낮게 웅크림 → 발진 → 수평 돌파 → 착지. 검은 긴 머리, 금색 장식 긴 코트 유지. 치명타/공격속도 강화이며 유령 소환이나 마법 발사 없음.",
+    "skillReleaseFrame": 2
+  },
+  "verxina": {
+    "file": "motions/verxina.png",
+    "frameWidth": 128,
+    "frameHeight": 128,
+    "columns": 4,
+    "rows": 6,
+    "source": "docs/art-source/motions/production-144/verxina/packing.json",
+    "skillId": "skill_verxina",
+    "skillSignature": "3e01c8d25dde354c4912cc9788c73424699293ded8d787656a3c726d7a67dd07",
+    "skillReview": "원거리 손짓 발사. 광역 폭발: 적 무리 조준 → 팔을 모아 응축 → 양팔 방출 → 회복. 남색 긴 머리, 흰 앞머리, 민트 장식과 비대칭 재킷 유지. 치유/돌진 없음.",
+    "skillReleaseFrame": 2
+  },
+  "phalaenopsis": {
+    "file": "motions/phalaenopsis.png",
+    "frameWidth": 128,
+    "frameHeight": 128,
+    "columns": 4,
+    "rows": 6,
+    "source": "docs/art-source/motions/production-144/phalaenopsis/packing.json",
+    "skillId": "skill_phalaenopsis",
+    "skillSignature": "71a70da8dbe80553e10ed9f2e050178a452c2f1592710330c0bdddc1cf89e1c6",
+    "skillReview": "원거리 소매/손짓 발사. 직선 돌파: 출발 crouch → 발진 → 낮은 수평 돌파 → 착지. 난초 장식, 붉은 넓은 소매, 매듭 허리띠 유지. 공격속도/이동속도 강화이며 치유 없음.",
+    "skillReleaseFrame": 2
+  },
+  "titleholder": {
+    "file": "motions/titleholder.png",
+    "frameWidth": 128,
+    "frameHeight": 128,
+    "columns": 4,
+    "rows": 6,
+    "source": "docs/art-source/motions/production-144/titleholder/packing.json",
+    "skillId": "skill_titleholder",
+    "skillSignature": "e478885685cdb5ddb2ecbbdb95590a1965b0deb7d40a7c4d6485818362ad58e6",
+    "skillReview": "근접 손바닥 타격. 아군 강화: 가슴 앞 집중 → 두 팔 격려 → 양팔 펼친 지휘 → 강화 유지. 흰 옆머리, 초록 허리천과 보석 단추 유지. 치유/공격 스킬 없음.",
+    "skillReleaseFrame": 2
+  },
+  "efforia": {
+    "file": "motions/efforia.png",
+    "frameWidth": 128,
+    "frameHeight": 128,
+    "columns": 4,
+    "rows": 6,
+    "source": "docs/art-source/motions/production-144/efforia/packing.json",
+    "skillId": "skill_efforia",
+    "skillSignature": "344c1f73519dfdfdaa621de5414e6ca4111d2b3dc95beb09491d71bc19be9405",
+    "skillReview": "근접 손바닥 타격. 직선 돌파: 낮은 출발 → 발진 → 수평 돌파 → 착지. 청록·흰 비대칭 소매와 장식천 유지. 공격속도 및 자기 보호막 강화.",
+    "skillReleaseFrame": 2
   }
 }

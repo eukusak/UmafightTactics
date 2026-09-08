@@ -1,0 +1,443 @@
+{
+  "format": "uft-baked-frames-v1",
+  "scale": 0.3880597014925373,
+  "anchor": [
+    64,
+    110
+  ],
+  "runtimeSha256": "acd705ed94f4d9ca2a90ef8b44c7e03165e7427f796c1db3426dce8315c32ece",
+  "frames": [
+    {
+      "frame": 0,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/production-144/espoir_city/alpha.png",
+      "sourceSha256": "ad3f2b1d4abc407d244b55635a2480d052d31de36864e29b64f193eb746ce089",
+      "crop": [
+        44,
+        4,
+        224,
+        258
+      ],
+      "destination": [
+        29,
+        11,
+        70,
+        99
+      ]
+    },
+    {
+      "frame": 1,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/production-144/espoir_city/alpha.png",
+      "sourceSha256": "ad3f2b1d4abc407d244b55635a2480d052d31de36864e29b64f193eb746ce089",
+      "crop": [
+        288,
+        4,
+        461,
+        258
+      ],
+      "destination": [
+        158,
+        11,
+        67,
+        99
+      ]
+    },
+    {
+      "frame": 2,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/production-144/espoir_city/alpha.png",
+      "sourceSha256": "ad3f2b1d4abc407d244b55635a2480d052d31de36864e29b64f193eb746ce089",
+      "crop": [
+        546,
+        4,
+        718,
+        258
+      ],
+      "destination": [
+        286,
+        11,
+        67,
+        99
+      ]
+    },
+    {
+      "frame": 3,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/production-144/espoir_city/alpha.png",
+      "sourceSha256": "ad3f2b1d4abc407d244b55635a2480d052d31de36864e29b64f193eb746ce089",
+      "crop": [
+        801,
+        4,
+        975,
+        258
+      ],
+      "destination": [
+        414,
+        11,
+        68,
+        99
+      ]
+    },
+    {
+      "frame": 4,
+      "sourceFrame": 4,
+      "source": "docs/art-source/motions/production-144/espoir_city/alpha.png",
+      "sourceSha256": "ad3f2b1d4abc407d244b55635a2480d052d31de36864e29b64f193eb746ce089",
+      "crop": [
+        27,
+        260,
+        235,
+        520
+      ],
+      "destination": [
+        23,
+        137,
+        81,
+        101
+      ]
+    },
+    {
+      "frame": 5,
+      "sourceFrame": 5,
+      "source": "docs/art-source/motions/production-144/espoir_city/alpha.png",
+      "sourceSha256": "ad3f2b1d4abc407d244b55635a2480d052d31de36864e29b64f193eb746ce089",
+      "crop": [
+        278,
+        267,
+        483,
+        520
+      ],
+      "destination": [
+        152,
+        140,
+        80,
+        98
+      ]
+    },
+    {
+      "frame": 6,
+      "sourceFrame": 6,
+      "source": "docs/art-source/motions/production-144/espoir_city/alpha.png",
+      "sourceSha256": "ad3f2b1d4abc407d244b55635a2480d052d31de36864e29b64f193eb746ce089",
+      "crop": [
+        520,
+        258,
+        749,
+        521
+      ],
+      "destination": [
+        275,
+        136,
+        89,
+        102
+      ]
+    },
+    {
+      "frame": 7,
+      "sourceFrame": 7,
+      "source": "docs/art-source/motions/production-144/espoir_city/alpha.png",
+      "sourceSha256": "ad3f2b1d4abc407d244b55635a2480d052d31de36864e29b64f193eb746ce089",
+      "crop": [
+        778,
+        266,
+        992,
+        521
+      ],
+      "destination": [
+        406,
+        139,
+        83,
+        99
+      ]
+    },
+    {
+      "frame": 8,
+      "sourceFrame": 8,
+      "source": "docs/art-source/motions/production-144/espoir_city/alpha.png",
+      "sourceSha256": "ad3f2b1d4abc407d244b55635a2480d052d31de36864e29b64f193eb746ce089",
+      "crop": [
+        38,
+        521,
+        244,
+        774
+      ],
+      "destination": [
+        24,
+        268,
+        80,
+        98
+      ]
+    },
+    {
+      "frame": 9,
+      "sourceFrame": 9,
+      "source": "docs/art-source/motions/production-144/espoir_city/alpha.png",
+      "sourceSha256": "ad3f2b1d4abc407d244b55635a2480d052d31de36864e29b64f193eb746ce089",
+      "crop": [
+        274,
+        523,
+        467,
+        772
+      ],
+      "destination": [
+        154,
+        269,
+        75,
+        97
+      ]
+    },
+    {
+      "frame": 10,
+      "sourceFrame": 10,
+      "source": "docs/art-source/motions/production-144/espoir_city/alpha.png",
+      "sourceSha256": "ad3f2b1d4abc407d244b55635a2480d052d31de36864e29b64f193eb746ce089",
+      "crop": [
+        524,
+        521,
+        755,
+        774
+      ],
+      "destination": [
+        275,
+        268,
+        90,
+        98
+      ]
+    },
+    {
+      "frame": 11,
+      "sourceFrame": 11,
+      "source": "docs/art-source/motions/production-144/espoir_city/alpha.png",
+      "sourceSha256": "ad3f2b1d4abc407d244b55635a2480d052d31de36864e29b64f193eb746ce089",
+      "crop": [
+        783,
+        521,
+        973,
+        774
+      ],
+      "destination": [
+        411,
+        268,
+        74,
+        98
+      ]
+    },
+    {
+      "frame": 12,
+      "sourceFrame": 12,
+      "source": "docs/art-source/motions/production-144/espoir_city/alpha.png",
+      "sourceSha256": "ad3f2b1d4abc407d244b55635a2480d052d31de36864e29b64f193eb746ce089",
+      "crop": [
+        37,
+        774,
+        211,
+        1042
+      ],
+      "destination": [
+        30,
+        390,
+        68,
+        104
+      ]
+    },
+    {
+      "frame": 13,
+      "sourceFrame": 13,
+      "source": "docs/art-source/motions/production-144/espoir_city/alpha.png",
+      "sourceSha256": "ad3f2b1d4abc407d244b55635a2480d052d31de36864e29b64f193eb746ce089",
+      "crop": [
+        285,
+        774,
+        485,
+        1039
+      ],
+      "destination": [
+        153,
+        391,
+        78,
+        103
+      ]
+    },
+    {
+      "frame": 14,
+      "sourceFrame": 14,
+      "source": "docs/art-source/motions/production-144/espoir_city/alpha.png",
+      "sourceSha256": "ad3f2b1d4abc407d244b55635a2480d052d31de36864e29b64f193eb746ce089",
+      "crop": [
+        536,
+        778,
+        755,
+        1042
+      ],
+      "destination": [
+        277,
+        392,
+        85,
+        102
+      ]
+    },
+    {
+      "frame": 15,
+      "sourceFrame": 15,
+      "source": "docs/art-source/motions/production-144/espoir_city/alpha.png",
+      "sourceSha256": "ad3f2b1d4abc407d244b55635a2480d052d31de36864e29b64f193eb746ce089",
+      "crop": [
+        799,
+        776,
+        972,
+        1040
+      ],
+      "destination": [
+        414,
+        392,
+        67,
+        102
+      ]
+    },
+    {
+      "frame": 16,
+      "sourceFrame": 16,
+      "source": "docs/art-source/motions/production-144/espoir_city/alpha.png",
+      "sourceSha256": "ad3f2b1d4abc407d244b55635a2480d052d31de36864e29b64f193eb746ce089",
+      "crop": [
+        33,
+        1042,
+        225,
+        1267
+      ],
+      "destination": [
+        26,
+        535,
+        75,
+        87
+      ]
+    },
+    {
+      "frame": 17,
+      "sourceFrame": 17,
+      "source": "docs/art-source/motions/production-144/espoir_city/alpha.png",
+      "sourceSha256": "ad3f2b1d4abc407d244b55635a2480d052d31de36864e29b64f193eb746ce089",
+      "crop": [
+        283,
+        1072,
+        487,
+        1263
+      ],
+      "destination": [
+        152,
+        548,
+        79,
+        74
+      ]
+    },
+    {
+      "frame": 18,
+      "sourceFrame": 18,
+      "source": "docs/art-source/motions/production-144/espoir_city/alpha.png",
+      "sourceSha256": "ad3f2b1d4abc407d244b55635a2480d052d31de36864e29b64f193eb746ce089",
+      "crop": [
+        526,
+        1082,
+        721,
+        1259
+      ],
+      "destination": [
+        282,
+        553,
+        76,
+        69
+      ]
+    },
+    {
+      "frame": 19,
+      "sourceFrame": 19,
+      "source": "docs/art-source/motions/production-144/espoir_city/alpha.png",
+      "sourceSha256": "ad3f2b1d4abc407d244b55635a2480d052d31de36864e29b64f193eb746ce089",
+      "crop": [
+        767,
+        1143,
+        1018,
+        1260
+      ],
+      "destination": [
+        399,
+        577,
+        97,
+        45
+      ]
+    },
+    {
+      "frame": 20,
+      "sourceFrame": 20,
+      "source": "docs/art-source/motions/production-144/espoir_city/alpha.png",
+      "sourceSha256": "ad3f2b1d4abc407d244b55635a2480d052d31de36864e29b64f193eb746ce089",
+      "crop": [
+        27,
+        1274,
+        210,
+        1531
+      ],
+      "destination": [
+        28,
+        650,
+        71,
+        100
+      ]
+    },
+    {
+      "frame": 21,
+      "sourceFrame": 21,
+      "source": "docs/art-source/motions/production-144/espoir_city/alpha.png",
+      "sourceSha256": "ad3f2b1d4abc407d244b55635a2480d052d31de36864e29b64f193eb746ce089",
+      "crop": [
+        294,
+        1275,
+        463,
+        1530
+      ],
+      "destination": [
+        159,
+        651,
+        66,
+        99
+      ]
+    },
+    {
+      "frame": 22,
+      "sourceFrame": 22,
+      "source": "docs/art-source/motions/production-144/espoir_city/alpha.png",
+      "sourceSha256": "ad3f2b1d4abc407d244b55635a2480d052d31de36864e29b64f193eb746ce089",
+      "crop": [
+        532,
+        1274,
+        727,
+        1527
+      ],
+      "destination": [
+        282,
+        652,
+        76,
+        98
+      ]
+    },
+    {
+      "frame": 23,
+      "sourceFrame": 23,
+      "source": "docs/art-source/motions/production-144/espoir_city/alpha.png",
+      "sourceSha256": "ad3f2b1d4abc407d244b55635a2480d052d31de36864e29b64f193eb746ce089",
+      "crop": [
+        792,
+        1278,
+        975,
+        1532
+      ],
+      "destination": [
+        412,
+        651,
+        71,
+        99
+      ]
+    }
+  ]
+}

@@ -1,0 +1,443 @@
+{
+  "format": "uft-baked-frames-v1",
+  "scale": 0.4,
+  "anchor": [
+    64,
+    110
+  ],
+  "runtimeSha256": "4f88d03a5ee682ba1f8232361886b970cb81b5753118910e3ae043962a8fde3e",
+  "frames": [
+    {
+      "frame": 0,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/production-144/manhattan_cafe/alpha.png",
+      "sourceSha256": "f10b2f2ba5182d8658229fa6ca4c4325373cf6a5f9250fb597f880374d90eb43",
+      "crop": [
+        48,
+        9,
+        216,
+        246
+      ],
+      "destination": [
+        30,
+        15,
+        67,
+        95
+      ]
+    },
+    {
+      "frame": 1,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/production-144/manhattan_cafe/alpha.png",
+      "sourceSha256": "f10b2f2ba5182d8658229fa6ca4c4325373cf6a5f9250fb597f880374d90eb43",
+      "crop": [
+        302,
+        12,
+        468,
+        246
+      ],
+      "destination": [
+        159,
+        16,
+        66,
+        94
+      ]
+    },
+    {
+      "frame": 2,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/production-144/manhattan_cafe/alpha.png",
+      "sourceSha256": "f10b2f2ba5182d8658229fa6ca4c4325373cf6a5f9250fb597f880374d90eb43",
+      "crop": [
+        558,
+        11,
+        723,
+        246
+      ],
+      "destination": [
+        287,
+        16,
+        66,
+        94
+      ]
+    },
+    {
+      "frame": 3,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/production-144/manhattan_cafe/alpha.png",
+      "sourceSha256": "f10b2f2ba5182d8658229fa6ca4c4325373cf6a5f9250fb597f880374d90eb43",
+      "crop": [
+        812,
+        11,
+        977,
+        246
+      ],
+      "destination": [
+        415,
+        16,
+        66,
+        94
+      ]
+    },
+    {
+      "frame": 4,
+      "sourceFrame": 4,
+      "source": "docs/art-source/motions/production-144/manhattan_cafe/alpha.png",
+      "sourceSha256": "f10b2f2ba5182d8658229fa6ca4c4325373cf6a5f9250fb597f880374d90eb43",
+      "crop": [
+        43,
+        273,
+        241,
+        511
+      ],
+      "destination": [
+        24,
+        143,
+        79,
+        95
+      ]
+    },
+    {
+      "frame": 5,
+      "sourceFrame": 5,
+      "source": "docs/art-source/motions/production-144/manhattan_cafe/alpha.png",
+      "sourceSha256": "f10b2f2ba5182d8658229fa6ca4c4325373cf6a5f9250fb597f880374d90eb43",
+      "crop": [
+        296,
+        276,
+        483,
+        513
+      ],
+      "destination": [
+        154,
+        143,
+        75,
+        95
+      ]
+    },
+    {
+      "frame": 6,
+      "sourceFrame": 6,
+      "source": "docs/art-source/motions/production-144/manhattan_cafe/alpha.png",
+      "sourceSha256": "f10b2f2ba5182d8658229fa6ca4c4325373cf6a5f9250fb597f880374d90eb43",
+      "crop": [
+        536,
+        274,
+        730,
+        513
+      ],
+      "destination": [
+        281,
+        142,
+        78,
+        96
+      ]
+    },
+    {
+      "frame": 7,
+      "sourceFrame": 7,
+      "source": "docs/art-source/motions/production-144/manhattan_cafe/alpha.png",
+      "sourceSha256": "f10b2f2ba5182d8658229fa6ca4c4325373cf6a5f9250fb597f880374d90eb43",
+      "crop": [
+        797,
+        274,
+        992,
+        513
+      ],
+      "destination": [
+        409,
+        142,
+        78,
+        96
+      ]
+    },
+    {
+      "frame": 8,
+      "sourceFrame": 8,
+      "source": "docs/art-source/motions/production-144/manhattan_cafe/alpha.png",
+      "sourceSha256": "f10b2f2ba5182d8658229fa6ca4c4325373cf6a5f9250fb597f880374d90eb43",
+      "crop": [
+        36,
+        528,
+        208,
+        768
+      ],
+      "destination": [
+        29,
+        270,
+        69,
+        96
+      ]
+    },
+    {
+      "frame": 9,
+      "sourceFrame": 9,
+      "source": "docs/art-source/motions/production-144/manhattan_cafe/alpha.png",
+      "sourceSha256": "f10b2f2ba5182d8658229fa6ca4c4325373cf6a5f9250fb597f880374d90eb43",
+      "crop": [
+        289,
+        531,
+        465,
+        768
+      ],
+      "destination": [
+        157,
+        271,
+        70,
+        95
+      ]
+    },
+    {
+      "frame": 10,
+      "sourceFrame": 10,
+      "source": "docs/art-source/motions/production-144/manhattan_cafe/alpha.png",
+      "sourceSha256": "f10b2f2ba5182d8658229fa6ca4c4325373cf6a5f9250fb597f880374d90eb43",
+      "crop": [
+        545,
+        532,
+        753,
+        768
+      ],
+      "destination": [
+        278,
+        272,
+        83,
+        94
+      ]
+    },
+    {
+      "frame": 11,
+      "sourceFrame": 11,
+      "source": "docs/art-source/motions/production-144/manhattan_cafe/alpha.png",
+      "sourceSha256": "f10b2f2ba5182d8658229fa6ca4c4325373cf6a5f9250fb597f880374d90eb43",
+      "crop": [
+        810,
+        534,
+        983,
+        764
+      ],
+      "destination": [
+        413,
+        274,
+        69,
+        92
+      ]
+    },
+    {
+      "frame": 12,
+      "sourceFrame": 12,
+      "source": "docs/art-source/motions/production-144/manhattan_cafe/alpha.png",
+      "sourceSha256": "f10b2f2ba5182d8658229fa6ca4c4325373cf6a5f9250fb597f880374d90eb43",
+      "crop": [
+        36,
+        801,
+        231,
+        987
+      ],
+      "destination": [
+        25,
+        420,
+        78,
+        74
+      ]
+    },
+    {
+      "frame": 13,
+      "sourceFrame": 13,
+      "source": "docs/art-source/motions/production-144/manhattan_cafe/alpha.png",
+      "sourceSha256": "f10b2f2ba5182d8658229fa6ca4c4325373cf6a5f9250fb597f880374d90eb43",
+      "crop": [
+        287,
+        788,
+        492,
+        983
+      ],
+      "destination": [
+        151,
+        416,
+        82,
+        78
+      ]
+    },
+    {
+      "frame": 14,
+      "sourceFrame": 14,
+      "source": "docs/art-source/motions/production-144/manhattan_cafe/alpha.png",
+      "sourceSha256": "f10b2f2ba5182d8658229fa6ca4c4325373cf6a5f9250fb597f880374d90eb43",
+      "crop": [
+        536,
+        827,
+        769,
+        977
+      ],
+      "destination": [
+        273,
+        434,
+        93,
+        60
+      ]
+    },
+    {
+      "frame": 15,
+      "sourceFrame": 15,
+      "source": "docs/art-source/motions/production-144/manhattan_cafe/alpha.png",
+      "sourceSha256": "f10b2f2ba5182d8658229fa6ca4c4325373cf6a5f9250fb597f880374d90eb43",
+      "crop": [
+        807,
+        802,
+        1010,
+        982
+      ],
+      "destination": [
+        407,
+        422,
+        81,
+        72
+      ]
+    },
+    {
+      "frame": 16,
+      "sourceFrame": 16,
+      "source": "docs/art-source/motions/production-144/manhattan_cafe/alpha.png",
+      "sourceSha256": "f10b2f2ba5182d8658229fa6ca4c4325373cf6a5f9250fb597f880374d90eb43",
+      "crop": [
+        39,
+        1006,
+        223,
+        1232
+      ],
+      "destination": [
+        27,
+        532,
+        74,
+        90
+      ]
+    },
+    {
+      "frame": 17,
+      "sourceFrame": 17,
+      "source": "docs/art-source/motions/production-144/manhattan_cafe/alpha.png",
+      "sourceSha256": "f10b2f2ba5182d8658229fa6ca4c4325373cf6a5f9250fb597f880374d90eb43",
+      "crop": [
+        299,
+        1012,
+        496,
+        1231
+      ],
+      "destination": [
+        152,
+        534,
+        79,
+        88
+      ]
+    },
+    {
+      "frame": 18,
+      "sourceFrame": 18,
+      "source": "docs/art-source/motions/production-144/manhattan_cafe/alpha.png",
+      "sourceSha256": "f10b2f2ba5182d8658229fa6ca4c4325373cf6a5f9250fb597f880374d90eb43",
+      "crop": [
+        527,
+        1054,
+        718,
+        1233
+      ],
+      "destination": [
+        282,
+        550,
+        76,
+        72
+      ]
+    },
+    {
+      "frame": 19,
+      "sourceFrame": 19,
+      "source": "docs/art-source/motions/production-144/manhattan_cafe/alpha.png",
+      "sourceSha256": "f10b2f2ba5182d8658229fa6ca4c4325373cf6a5f9250fb597f880374d90eb43",
+      "crop": [
+        767,
+        1116,
+        1014,
+        1228
+      ],
+      "destination": [
+        398,
+        577,
+        99,
+        45
+      ]
+    },
+    {
+      "frame": 20,
+      "sourceFrame": 20,
+      "source": "docs/art-source/motions/production-144/manhattan_cafe/alpha.png",
+      "sourceSha256": "f10b2f2ba5182d8658229fa6ca4c4325373cf6a5f9250fb597f880374d90eb43",
+      "crop": [
+        37,
+        1259,
+        201,
+        1511
+      ],
+      "destination": [
+        31,
+        649,
+        66,
+        101
+      ]
+    },
+    {
+      "frame": 21,
+      "sourceFrame": 21,
+      "source": "docs/art-source/motions/production-144/manhattan_cafe/alpha.png",
+      "sourceSha256": "f10b2f2ba5182d8658229fa6ca4c4325373cf6a5f9250fb597f880374d90eb43",
+      "crop": [
+        286,
+        1265,
+        469,
+        1513
+      ],
+      "destination": [
+        155,
+        651,
+        73,
+        99
+      ]
+    },
+    {
+      "frame": 22,
+      "sourceFrame": 22,
+      "source": "docs/art-source/motions/production-144/manhattan_cafe/alpha.png",
+      "sourceSha256": "f10b2f2ba5182d8658229fa6ca4c4325373cf6a5f9250fb597f880374d90eb43",
+      "crop": [
+        547,
+        1260,
+        729,
+        1504
+      ],
+      "destination": [
+        283,
+        652,
+        73,
+        98
+      ]
+    },
+    {
+      "frame": 23,
+      "sourceFrame": 23,
+      "source": "docs/art-source/motions/production-144/manhattan_cafe/alpha.png",
+      "sourceSha256": "f10b2f2ba5182d8658229fa6ca4c4325373cf6a5f9250fb597f880374d90eb43",
+      "crop": [
+        801,
+        1254,
+        979,
+        1514
+      ],
+      "destination": [
+        412,
+        646,
+        71,
+        104
+      ]
+    }
+  ]
+}
