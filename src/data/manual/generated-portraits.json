@@ -334,5 +334,110 @@
       256
     ],
     "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "biwa_hayahide": {
+    "file": "portraits/biwa_hayahide.png",
+    "source": "docs/art-source/portraits/batch-05/biwa_hayahide.png",
+    "sourceSha256": "2816164d2920d611a4059baa3a61e541413ce0501caf0505327222b945d28016",
+    "reference": "public/assets/characters/race/BiwaHayahide-Race.png",
+    "sourceSize": [
+      1145,
+      1374
+    ],
+    "crop": [
+      0,
+      8,
+      1145,
+      1374
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "mayano_top_gun": {
+    "file": "portraits/mayano_top_gun.png",
+    "source": "docs/art-source/portraits/batch-05/mayano_top_gun.png",
+    "sourceSha256": "d4c8240c2aae261ee7ec2a98f5efc05fd6ec2d74052a15619d2b7a611952cf26",
+    "reference": "public/assets/characters/race/MayanoTopGun-Race.png",
+    "sourceSize": [
+      1223,
+      1286
+    ],
+    "crop": [
+      0,
+      0,
+      1223,
+      1286
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "mejiro_ryan": {
+    "file": "portraits/mejiro_ryan.png",
+    "source": "docs/art-source/portraits/batch-05/mejiro_ryan.png",
+    "sourceSha256": "47a53259c03ee7258f3a2bb25e59b0f95b6d0a4ad653a01bb90619daefe33176",
+    "reference": "public/assets/characters/race/MejiroRyan-Race.png",
+    "sourceSize": [
+      1145,
+      1374
+    ],
+    "crop": [
+      53,
+      0,
+      1119,
+      1374
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "hishi_akebono": {
+    "file": "portraits/hishi_akebono.png",
+    "source": "docs/art-source/portraits/batch-05/hishi_akebono.png",
+    "sourceSha256": "c0d3c26de25976ad2dfb140aecf46988b6d20fb1ed75a6da2e02bbd1e0cc6c83",
+    "reference": "public/assets/characters/race/HishiAkebono-Race.png",
+    "sourceSize": [
+      1233,
+      1276
+    ],
+    "crop": [
+      0,
+      1,
+      1233,
+      1276
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "yukino_bijin": {
+    "file": "portraits/yukino_bijin.png",
+    "source": "docs/art-source/portraits/batch-05/yukino_bijin.png",
+    "sourceSha256": "1e8addb59992c64f612b3daa64554851110c66135761a58301074cc4f206466f",
+    "reference": "public/assets/characters/race/YukinoBijin-Race.png",
+    "sourceSize": [
+      1145,
+      1374
+    ],
+    "crop": [
+      0,
+      0,
+      1131,
+      1374
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
   }
 }
