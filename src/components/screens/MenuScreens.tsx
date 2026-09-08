@@ -37,6 +37,7 @@ export function MainMenu(): JSX.Element {
         <button className="btn-primary" onClick={() => setScreen('ONLINE')}>온라인 대전 · 최대 8인</button>
         <button disabled={!hasSave} onClick={() => { continueMatch(); }}>이어하기</button>
         <button onClick={() => setScreen('COLLECTION')}>도감 (145명)</button>
+        <button onClick={() => setScreen('MOTION')}>기물 모션 미리보기</button>
         <button onClick={() => setScreen('SETTINGS')}>설정</button>
         <button className="btn-ghost" onClick={() => setScreen('TITLE')}>뒤로</button>
       </div>

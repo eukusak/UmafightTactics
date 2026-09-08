@@ -10,6 +10,7 @@ import { existsSync, readFileSync, statSync } from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import type { ArtManifest } from '../src/game/engine/types';
+import { FRAME_SHEETS } from '../src/game/ui/frame-animation';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const ASSETS = path.join(ROOT, 'public', 'assets');
@@ -49,7 +50,9 @@ const checks: Check[] = [];
 for (const c of manifest.characters) {
   const priority = c.activeS1 ? 'P0' : 'P1';
   checks.push({ rel: c.portrait, label: `초상화 ${c.nameKo}`, priority, expect: { w: 256, h: 256 } });
-  checks.push({ rel: c.battleSheet, label: `전투시트 ${c.nameKo}`, priority, expect: { w: 1280, h: 768 } });
+  const frames = FRAME_SHEETS[c.id];
+  checks.push({ rel: frames?.file ?? c.battleSheet, label: `전투시트 ${c.nameKo}`, priority,
+    expect: frames ? { w: frames.frameWidth * frames.columns, h: frames.frameHeight * frames.rows } : { w: 1280, h: 768 } });
   if (c.cutinRequired) {
     checks.push({
       rel: `characters/cutin/${c.id}.png`, label: `컷인 ${c.nameKo}`,
@@ -63,7 +66,11 @@ for (const rel of manifest.augments) checks.push({ rel, label: '증강', priorit
 for (const rel of manifest.status) checks.push({ rel, label: '상태', priority: 'P0', expect: { w: 96, h: 96 } });
 for (const rel of manifest.vfx) checks.push({ rel, label: 'VFX', priority: 'P0', expect: { w: 1920, h: 192 } });
 for (const rel of manifest.starVfx) checks.push({ rel, label: '별 VFX', priority: 'P0', expect: { w: 1536, h: 512 } });
-for (const rel of manifest.pve) checks.push({ rel, label: 'PvE', priority: 'P0', expect: { w: 1280, h: 512 } });
+for (const rel of manifest.pve) {
+  const frames = FRAME_SHEETS[`pve_${path.basename(rel, '.png')}`];
+  checks.push({ rel: frames?.file ?? rel, label: 'PvE', priority: 'P0',
+    expect: frames ? { w: frames.frameWidth * frames.columns, h: frames.frameHeight * frames.rows } : { w: 1280, h: 512 } });
+}
 for (const rel of manifest.boards) checks.push({ rel, label: '배경', priority: 'P0', expect: { w: 1920, h: 1080 } });
 for (const rel of manifest.banners) checks.push({ rel, label: '배너', priority: 'P0', expect: { w: 960, h: 180 } });
 checks.push({ rel: 'ui/board_hex_tiles.png', label: 'Hex 타일', priority: 'P0', expect: { w: 768, h: 96 } });

@@ -51,6 +51,14 @@ jobs:
       - name: Art manifest report
         run: npm run check:art
 
+      - name: Motion briefs stay aligned with skills
+        run: |
+          npm run art:briefs
+          git diff --exit-code -- docs/art-source/motions/briefs.json
+
+      - name: TFT comparison report (not a parity pass gate)
+        run: npm run audit:tft
+
       - name: Build
         run: npm run build
 

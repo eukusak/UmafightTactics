@@ -1,0 +1,268 @@
+{
+  "checkedAt": "2026-09-08",
+  "latestOfficialPatchReviewed": "18.1, including Aug 31 / Sep 1 update",
+  "verdict": "NOT_IDENTICAL",
+  "method": "Public-rule fixture comparison, not binary/replay equivalence. Each row pins its own published baseline; older values are not asserted to be a complete 18.1 ruleset.",
+  "counts": {
+    "MATCH": 4,
+    "DIFFERENT": 11,
+    "UNVERIFIED": 4
+  },
+  "results": [
+    {
+      "id": "attack_mana_TANK",
+      "status": "DIFFERENT",
+      "expected": 5,
+      "actual": 10,
+      "source": "https://teamfighttactics.leagueoflegends.com/en-us/news/game-updates/teamfight-tactics-patch-15-1-notes-2025/",
+      "baseline": "15.1 published role contract",
+      "evidence": "One isolated attack; enemy stunned; mana initially zero. AP_CARRY mapped to Caster and AD_CARRY to Marksman for this comparison."
+    },
+    {
+      "id": "attack_mana_AP_CARRY",
+      "status": "DIFFERENT",
+      "expected": 7,
+      "actual": 10,
+      "source": "https://teamfighttactics.leagueoflegends.com/en-us/news/game-updates/teamfight-tactics-patch-15-1-notes-2025/",
+      "baseline": "15.1 published role contract",
+      "evidence": "One isolated attack; enemy stunned; mana initially zero. AP_CARRY mapped to Caster and AD_CARRY to Marksman for this comparison."
+    },
+    {
+      "id": "attack_mana_AD_CARRY",
+      "status": "MATCH",
+      "expected": 10,
+      "actual": 10,
+      "source": "https://teamfighttactics.leagueoflegends.com/en-us/news/game-updates/teamfight-tactics-patch-15-1-notes-2025/",
+      "baseline": "15.1 published role contract",
+      "evidence": "One isolated attack; enemy stunned; mana initially zero. AP_CARRY mapped to Caster and AD_CARRY to Marksman for this comparison."
+    },
+    {
+      "id": "caster_passive_mana_per_second",
+      "status": "DIFFERENT",
+      "expected": 2,
+      "actual": 0,
+      "source": "https://teamfighttactics.leagueoflegends.com/en-us/news/game-updates/teamfight-tactics-patch-15-1-notes-2025/",
+      "baseline": "15.1 published role contract",
+      "evidence": "1 second, no attacks or damage, no items."
+    },
+    {
+      "id": "equal_distance_tank_priority",
+      "status": "DIFFERENT",
+      "expected": "auditB#auditB1",
+      "actual": "auditB#auditB0",
+      "source": "https://teamfighttactics.leagueoflegends.com/en-us/news/game-updates/teamfight-tactics-patch-15-1-notes-2025/",
+      "baseline": "15.1 targeting priority",
+      "evidence": "Two adjacent full-health targets. Non-tank sorts first by ID, so an ID tie-break cannot be mistaken for role priority."
+    },
+    {
+      "id": "retarget_in_range_before_chasing",
+      "status": "DIFFERENT",
+      "expected": "auditB#auditB1",
+      "actual": "auditB#auditB0",
+      "source": "https://teamfighttactics.leagueoflegends.com/en-us/news/game-updates/teamfight-tactics-patch-17-1/",
+      "baseline": "17.1 published targeting change",
+      "evidence": "Existing target outside range; another enemy already in range."
+    },
+    {
+      "id": "retain_valid_target_after_cc",
+      "status": "MATCH",
+      "expected": "auditB#auditB0",
+      "actual": "auditB#auditB0",
+      "source": "https://teamfighttactics.leagueoflegends.com/en-us/news/game-updates/teamfight-tactics-patch-18-1/",
+      "baseline": "18.1 targeting change",
+      "evidence": "Existing target stays in attack range; a closer enemy does not replace it solely because stun ends."
+    },
+    {
+      "id": "augment_rounds",
+      "status": "MATCH",
+      "expected": [
+        "2-1",
+        "3-2",
+        "4-2"
+      ],
+      "actual": [
+        "2-1",
+        "3-2",
+        "4-2"
+      ],
+      "source": "https://teamfighttactics.leagueoflegends.com/en-us/news/game-updates/teamfight-tactics-patch-12-11-notes/",
+      "baseline": "12.11 default augment schedule",
+      "evidence": "Runtime constants; opening-encounter exceptions excluded."
+    },
+    {
+      "id": "pool_copies",
+      "status": "DIFFERENT",
+      "expected": [
+        30,
+        25,
+        18,
+        10,
+        9
+      ],
+      "actual": [
+        22,
+        20,
+        17,
+        10,
+        9
+      ],
+      "source": "https://teamfighttactics.leagueoflegends.com/en-us/news/game-updates/teamfight-tactics-patch-14-15-notes/",
+      "baseline": "14.15 historical standard pool",
+      "evidence": "Historical comparison only: latest 18.1 full pool table not independently confirmed."
+    },
+    {
+      "id": "shop_level_7",
+      "status": "DIFFERENT",
+      "expected": [
+        19,
+        30,
+        40,
+        10,
+        1
+      ],
+      "actual": [
+        19,
+        35,
+        35,
+        10,
+        1
+      ],
+      "source": "https://teamfighttactics.leagueoflegends.com/en-us/news/game-updates/teamfight-tactics-patch-17-1/",
+      "baseline": "17.1 published odds",
+      "evidence": "Unmodified base odds, no augment/encounter effects."
+    },
+    {
+      "id": "shop_level_8",
+      "status": "DIFFERENT",
+      "expected": [
+        15,
+        20,
+        32,
+        30,
+        3
+      ],
+      "actual": [
+        18,
+        25,
+        36,
+        18,
+        3
+      ],
+      "source": "https://teamfighttactics.leagueoflegends.com/en-us/news/game-updates/teamfight-tactics-patch-16-1/",
+      "baseline": "16.1 published odds",
+      "evidence": "Unmodified base odds, no augment/encounter effects."
+    },
+    {
+      "id": "shop_level_9",
+      "status": "DIFFERENT",
+      "expected": [
+        10,
+        17,
+        25,
+        33,
+        15
+      ],
+      "actual": [
+        10,
+        20,
+        25,
+        35,
+        10
+      ],
+      "source": "https://teamfighttactics.leagueoflegends.com/en-us/news/game-updates/teamfight-tactics-patch-16-1/",
+      "baseline": "16.1 published odds",
+      "evidence": "Unmodified base odds, no augment/encounter effects."
+    },
+    {
+      "id": "xp_to_levels_8_9_10",
+      "status": "MATCH",
+      "expected": [
+        60,
+        68,
+        68
+      ],
+      "actual": [
+        60,
+        68,
+        68
+      ],
+      "source": "https://teamfighttactics.leagueoflegends.com/en-us/news/game-updates/teamfight-tactics-patch-16-4/",
+      "baseline": "16.1 + 16.4 rollback",
+      "evidence": "Runtime constants. Level 8 and 10 baseline: https://teamfighttactics.leagueoflegends.com/en-us/news/game-updates/teamfight-tactics-patch-16-1/"
+    },
+    {
+      "id": "stage_3_4_player_damage",
+      "status": "DIFFERENT",
+      "expected": [
+        6,
+        7
+      ],
+      "actual": [
+        2,
+        3
+      ],
+      "source": "https://teamfighttactics.leagueoflegends.com/en-us/news/game-updates/teamfight-tactics-patch-16-1/",
+      "baseline": "16.1 published base player damage",
+      "evidence": "No player damage reduction effects."
+    },
+    {
+      "id": "surviving_enemy_damage",
+      "status": "DIFFERENT",
+      "expected": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "actual": [
+        2,
+        4,
+        6,
+        8,
+        10,
+        11
+      ],
+      "source": "https://teamfighttactics.leagueoflegends.com/en-us/news/game-updates/teamfight-tactics-patch-16-1/",
+      "baseline": "16.1 survivor damage description",
+      "evidence": "One damage per surviving enemy in the published rule."
+    },
+    {
+      "id": "latest_full_set_content",
+      "status": "UNVERIFIED",
+      "expected": null,
+      "actual": "Uma Musume roster, custom skills/items/traits; no Wisps",
+      "source": "https://teamfighttactics.leagueoflegends.com/en-us/news/game-updates/teamfight-tactics-patch-18-1/",
+      "baseline": "18.1 scope limit",
+      "evidence": "18.1 introduces Wisps and a different roster; content equivalence is intentionally absent."
+    },
+    {
+      "id": "riot_internal_combat_timing",
+      "status": "UNVERIFIED",
+      "expected": null,
+      "actual": "50ms deterministic simulation; custom windup/projectile timing",
+      "source": "https://teamfighttactics.leagueoflegends.com/en-us/news/game-updates/teamfight-tactics-patch-18-1/",
+      "baseline": "18.1 scope limit",
+      "evidence": "No official executable oracle or complete internal timing specification was available."
+    },
+    {
+      "id": "latest_complete_numeric_tables",
+      "status": "UNVERIFIED",
+      "expected": null,
+      "actual": "Only individually cited patch values were checked",
+      "source": "https://teamfighttactics.leagueoflegends.com/en-us/news/game-updates/teamfight-tactics-patch-18-1/",
+      "baseline": "18.1 scope limit",
+      "evidence": "Patch notes are deltas, not a complete versioned engine specification; intervening per-set exceptions may exist."
+    },
+    {
+      "id": "matchmaking_and_randomness",
+      "status": "UNVERIFIED",
+      "expected": null,
+      "actual": "Custom seeded RNG and round pairing",
+      "source": "https://teamfighttactics.leagueoflegends.com/en-us/news/game-updates/teamfight-tactics-patch-18-1/",
+      "baseline": "18.1 scope limit",
+      "evidence": "No Riot replay corpus with identical champion data and seeds was available for differential replay."
+    }
+  ]
+}

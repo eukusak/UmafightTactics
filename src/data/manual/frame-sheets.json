@@ -1,0 +1,68 @@
+{
+  "special_week": {
+    "file": "motions/special_week.png",
+    "frameWidth": 128,
+    "frameHeight": 128,
+    "columns": 4,
+    "rows": 6,
+    "source": "docs/art-source/motions/batch-01/special_week/packing.json",
+    "skillId": "skill_special_week",
+    "skillSignature": "8ac194cdae59ec9105bc27211fa715ff2d9f3538ac1b6bcda89f36a89d16bbab",
+    "skillReview": "사거리 3의 손짓 발사. 직선 돌파: 웅크린 출발 → 전방 발진 → 낮은 돌진 → 착지. 마법 구체 시전 포즈를 사용하지 않음."
+  },
+  "pve_training_dummy": {
+    "file": "motions/pve_training_dummy.png",
+    "frameWidth": 128,
+    "frameHeight": 128,
+    "columns": 4,
+    "rows": 6,
+    "source": "docs/art-source/motions/batch-01/training_dummy/packing.json",
+    "skillId": "skill_pve_training_dummy",
+    "skillSignature": "c1101d01a1c44338ba7d5f389d49706a3f2694801e5bc0d2c87012ed5a0bef81",
+    "skillReview": "장갑 펀치와 몸을 낮춘 충전 → 두 장갑 들기 → 광역 반격 방출 → 기본 자세."
+  },
+  "pve_track_golem": {
+    "file": "motions/pve_track_golem.png",
+    "frameWidth": 128,
+    "frameHeight": 128,
+    "columns": 4,
+    "rows": 6,
+    "source": "docs/art-source/motions/batch-01/track_golem/packing.json",
+    "skillId": "skill_pve_track_golem",
+    "skillSignature": "3fd88979f2ae7189349a358247afbca6b18ea00a6bc46533e9b3541701c2f887",
+    "skillReview": "바위 팔 타격과 몸을 낮춘 충전 → 양팔 들기 → 힘 방출 → 자세 회복."
+  },
+  "pve_supply_robot": {
+    "file": "motions/pve_supply_robot.png",
+    "frameWidth": 128,
+    "frameHeight": 128,
+    "columns": 4,
+    "rows": 6,
+    "source": "docs/art-source/motions/batch-01/supply_robot/packing.json",
+    "skillId": "skill_pve_supply_robot",
+    "skillSignature": "0bb71467fa62e30a99076635ce846881769b1d6e1d728b3a3e57ff84e3d3dd49",
+    "skillReview": "원거리 집게 발사와 양팔 충전 → 전방 광역 반격 방출. 실제 스킬에 없는 치유/보급 효과를 추가하지 않음."
+  },
+  "pve_trophy_guardian": {
+    "file": "motions/pve_trophy_guardian.png",
+    "frameWidth": 128,
+    "frameHeight": 128,
+    "columns": 4,
+    "rows": 6,
+    "source": "docs/art-source/motions/batch-01/trophy_guardian/packing.json",
+    "skillId": "skill_pve_trophy_guardian",
+    "skillSignature": "9f4ddb0b72fe06801d9d49848eb8fdc66d4e776044ef3d7b697557a4fd939206",
+    "skillReview": "원거리 주먹 발사, 방패를 든 채 힘 모으기 → 팔을 들어 광역 반격 방출. 방패 외형을 무적 스킬로 해석하지 않음."
+  },
+  "pve_grand_trophy_guardian": {
+    "file": "motions/pve_grand_trophy_guardian.png",
+    "frameWidth": 128,
+    "frameHeight": 128,
+    "columns": 4,
+    "rows": 6,
+    "source": "docs/art-source/motions/batch-01/grand_trophy_guardian/packing.json",
+    "skillId": "skill_pve_grand_trophy_guardian",
+    "skillSignature": "1743ca077a92dd2c85482c9db52523c5e260ee7ab5756f82040f0f5f992c28a4",
+    "skillReview": "대형 왕관/망토를 유지한 공격과 양팔 충전 → 광역 반격 방출 → 회복."
+  }
+}

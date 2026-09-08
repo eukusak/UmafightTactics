@@ -4,6 +4,7 @@ import { useGameStore } from '../store/gameStore';
 import { OnlineScreen } from '../components/screens/OnlineScreen';
 import { BattleScreen } from '../components/screens/BattleScreen';
 import { CollectionScreen } from '../components/screens/CollectionScreen';
+import { MotionScreen } from '../components/screens/MotionScreen';
 import {
   MainMenu, MatchSetup, ResultScreen, SettingsScreen, TitleScreen,
 } from '../components/screens/MenuScreens';
@@ -52,6 +53,7 @@ export function App(): JSX.Element {
     case 'ONLINE': content = <OnlineScreen />; break;
     case 'BATTLE': content = <BattleScreen />; break;
     case 'COLLECTION': content = <CollectionScreen />; break;
+    case 'MOTION': content = <MotionScreen />; break;
     case 'SETTINGS': content = <SettingsScreen />; break;
     case 'RESULT': content = <ResultScreen />; break;
     default: content = <TitleScreen />;

@@ -1,0 +1,103 @@
+{
+  "format": "uft-paper-rig-v1",
+  "notCubism": true,
+  "mirroredLimbs": true,
+  "components": {
+    "head": {
+      "source": "docs/art-source/rigging/special_week/parts/head.png",
+      "sourceSha256": "02045f8fd017eababc7368d1a8e615b842a93db076873072337c2f62a7292873",
+      "crop": [
+        41,
+        26,
+        393,
+        446
+      ],
+      "runtime": "public/assets/rigs/special_week/head.png",
+      "runtimeSha256": "bfd222d3226314e719fefc5c3913e49195e6cffe8821055f3fd06724a237b9a5",
+      "size": [
+        352,
+        420
+      ]
+    },
+    "torso": {
+      "source": "docs/art-source/rigging/special_week/parts/torso.png",
+      "sourceSha256": "87386df4f180c1418f6fd8b0ad77252ae4d677aaeb77b74794f3a9f63f234f4a",
+      "crop": [
+        64,
+        53,
+        344,
+        393
+      ],
+      "runtime": "public/assets/rigs/special_week/torso.png",
+      "runtimeSha256": "58bba034200e77706bab505e9711bc40889a9d4e35e1868814656e5e47d2edf8",
+      "size": [
+        280,
+        340
+      ]
+    },
+    "skirt": {
+      "source": "docs/art-source/rigging/special_week/parts/skirt.png",
+      "sourceSha256": "5a011fff55ba2533514d52b813d4e1dcfea9f4a741d8072268bda44c627f7470",
+      "crop": [
+        3,
+        102,
+        437,
+        355
+      ],
+      "runtime": "public/assets/rigs/special_week/skirt.png",
+      "runtimeSha256": "2fb2289fc41dd643d054022ca1d0cdca50cbb9cbd28128ee418b4e7b8e1d0af7",
+      "size": [
+        434,
+        253
+      ]
+    },
+    "tail": {
+      "source": "docs/art-source/rigging/special_week/parts/tail.png",
+      "sourceSha256": "64c1803873514419e15bbd43f3be0c055e299da17c01b9e4c63a4e00034ab2bb",
+      "crop": [
+        93,
+        27,
+        328,
+        458
+      ],
+      "runtime": "public/assets/rigs/special_week/tail.png",
+      "runtimeSha256": "a32fd8c2cf9635f397da56d7ae47224aa35091c58b58c31581428f9675cccc65",
+      "size": [
+        235,
+        431
+      ]
+    },
+    "arm": {
+      "source": "docs/art-source/rigging/special_week/lightweight-originals/arm.png",
+      "sourceSha256": "f9a4aabc68fbbca95bcab6797cd09711877995c5cfeee6f4efa9b659e7e147c1",
+      "crop": [
+        350,
+        133,
+        646,
+        1449
+      ],
+      "runtime": "public/assets/rigs/special_week/arm.png",
+      "runtimeSha256": "089a3338f3a352818fedb1bdc0e7a36c546331b7248690130b13deef05fc3c73",
+      "size": [
+        108,
+        480
+      ]
+    },
+    "leg": {
+      "source": "docs/art-source/rigging/special_week/lightweight-originals/leg.png",
+      "sourceSha256": "92d029e490db9026b3f45f31702877c50be3973b547bba3716bfc99e1865220b",
+      "crop": [
+        383,
+        147,
+        628,
+        1375
+      ],
+      "runtime": "public/assets/rigs/special_week/leg.png",
+      "runtimeSha256": "c794f349e9bff4567223fbe45a42635779ae6887eda50a1277523255abcb04ca",
+      "size": [
+        96,
+        480
+      ]
+    }
+  }
+}

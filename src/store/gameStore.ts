@@ -21,7 +21,7 @@ import type { TraitId } from '../game/engine/types';
 
 export type Screen =
   | 'BOOT' | 'TITLE' | 'MAIN_MENU' | 'MATCH_SETUP' | 'BATTLE' | 'DRAFT'
-  | 'AUGMENT' | 'COLLECTION' | 'SETTINGS' | 'RESULT' | 'ONLINE';
+  | 'AUGMENT' | 'COLLECTION' | 'SETTINGS' | 'RESULT' | 'ONLINE' | 'MOTION';
 
 export type Settings = {
   battleSpeed: 1 | 2 | 4 | 10;

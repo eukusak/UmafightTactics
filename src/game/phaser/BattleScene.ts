@@ -7,6 +7,7 @@ import { assetUrl, portraitUrl, standeeUrl, animationFrame, type AnimationName }
 import { movingPoint } from '../ui/board-projection';
 import { orientSnapshot, samplePosition, effectProgress, frameAt, attackExtension } from '../ui/battle-playback';
 import { STATUS_PRESENTATION } from '../ui/status-presentation';
+import { FRAME_SHEETS, frameSheetUrl, motionFrame } from '../ui/frame-animation';
 
 type Snapshot = BattleFrame['units'][number];
 type Actor = {
@@ -27,7 +28,7 @@ type Actor = {
   hpTrail: Phaser.GameObjects.Rectangle;
   bodyScaleX: number;
   bodyScaleY: number;
-  mesh: Phaser.GameObjects.Rope | null;
+  frameSheet: boolean;
 };
 const tint = (value: string): number => parseInt(value.replace('#', ''), 16);
 
@@ -62,11 +63,13 @@ export class BattleScene extends Phaser.Scene {
     }
     const ids = new Set(this.frames.flatMap((frame) => frame.units.map((u) => u.unitDefId)));
     for (const id of ids) {
+      const frames = frameSheetUrl(id);
       const sheet = assetUrl(`characters/${id}.png`) ?? (id.startsWith('pve_') ? assetUrl(`pve/${id.slice(4)}.png`) : null);
       const portrait = portraitUrl(id);
       const cutin = assetUrl(`characters/cutin/${id}.png`);
       if (cutin) this.load.image(`cutin:${id}`, cutin);
-      if (id.startsWith('pve_') && standeeUrl(id)) this.load.image(`standee:${id}`, standeeUrl(id)!);
+      if (frames) this.load.spritesheet(`sheet:${id}`, frames, { frameWidth: FRAME_SHEETS[id].frameWidth, frameHeight: FRAME_SHEETS[id].frameHeight });
+      else if (id.startsWith('pve_') && standeeUrl(id)) this.load.image(`standee:${id}`, standeeUrl(id)!);
       else if (sheet) this.load.spritesheet(`sheet:${id}`, sheet, { frameWidth: 128, frameHeight: 128 });
       else if (standeeUrl(id)) this.load.image(`standee:${id}`, standeeUrl(id)!);
       else if (portrait) this.load.image(`portrait:${id}`, portrait);
@@ -184,13 +187,6 @@ export class BattleScene extends Phaser.Scene {
     const size = sheet ? 110 : fullBody ? 148 : 64;
     const body = this.add.image(0, 0, texture).setOrigin(.5, fullBody ? 440 / 512 : 1).setDisplaySize(size, size);
     container.addAt(body, 2);
-    let mesh: Phaser.GameObjects.Rope | null = null;
-    if (fullBody && !sheet && this.game.renderer.type === Phaser.WEBGL) {
-      const points = Array.from({ length: 17 }, (_, i) => ({ x: 0, y: i * 32 - 440 }));
-      mesh = this.add.rope(0, 0, texture, undefined, points, false).setScale(body.scaleX, body.scaleY);
-      body.setVisible(false);
-      container.addAt(mesh, 3);
-    }
     container.add(this.add.text(0, 24, def.nameKo, { fontFamily: 'Noto Sans KR Variable, sans-serif', fontSize: '12px', color: '#fff5dc', stroke: '#0a1727', strokeThickness: 4 }).setOrigin(.5));
     container.add(this.add.text(0, fullBody && !sheet ? -130 : -83, '★'.repeat(u.star), { fontFamily: 'Noto Sans KR Variable, sans-serif', fontSize: '13px', color: '#ffdc84', stroke: '#17362a', strokeThickness: 3 }).setOrigin(.5));
     container.add(this.add.rectangle(0, 13, 68, 8, 0x071926));
@@ -204,7 +200,7 @@ export class BattleScene extends Phaser.Scene {
     container.add([hpTrail, hp, mana, shield]);
     const statuses = this.add.container(0, fullBody && !sheet ? -155 : -108);
     container.add(statuses);
-    return { container, body, hp, hpTrail, mana, shield, statuses, statusKey: '', action: 'idle', actionAt: 0, sheet, fullBody, mesh, facing: u.team === 'B' ? -1 : 1, attackDuration: .4, attackReleaseAt: 0, bodyScaleX: body.scaleX, bodyScaleY: body.scaleY };
+    return { container, body, hp, hpTrail, mana, shield, statuses, statusKey: '', action: 'idle', actionAt: 0, sheet, fullBody, frameSheet: sheet && !!FRAME_SHEETS[u.unitDefId], facing: u.team === 'B' ? -1 : 1, attackDuration: .4, attackReleaseAt: 0, bodyScaleX: body.scaleX, bodyScaleY: body.scaleY };
   }
 
   private renderActor(u: Snapshot, next: Snapshot | undefined, mix: number): void {
@@ -220,7 +216,8 @@ export class BattleScene extends Phaser.Scene {
     } else if (action === 'idle' || action === 'run') action = u.fromQ !== null ? 'run' : 'idle';
     if (action !== a.action) { a.action = action; a.actionAt = this.playbackTime; elapsed = 0; }
     if (a.sheet) {
-      if (u.unitDefId.startsWith('pve_')) {
+      if (a.frameSheet) a.body.setFrame(motionFrame(action, elapsed, a.attackReleaseAt - a.actionAt, true));
+      else if (u.unitDefId.startsWith('pve_')) {
         const clip = action === 'ko' ? { start: 30, count: 6, fps: 10 } : action === 'basic_attack' || action === 'skill_cast' ? { start: 10, count: 8, fps: 14 } : { start: 0, count: 6, fps: 8 };
         const n = Math.floor((this.playbackTime - a.actionAt) * clip.fps);
         a.body.setFrame(clip.start + (clip.start === 0 ? n % clip.count : Math.min(n, clip.count - 1)));
@@ -239,6 +236,8 @@ export class BattleScene extends Phaser.Scene {
     a.body.y = !u.alive ? Math.min(15, elapsed * 25) : action === 'run' ? -Math.abs(run) * 2 : -skill * (dash ? 1 : 5);
     a.body.rotation = !u.alive ? a.facing * Math.min(.8, elapsed * 1.3) : a.facing * (lunge * .09 + (action === 'run' ? .055 : idle * .006) + skill * (dash ? .14 : -.025));
     a.body.setScale(a.bodyScaleX, a.bodyScaleY * (1 + idle * .008 - lunge * .025));
+    // Generated frames own the pose. Do not deform or rotate the baked drawing again.
+    if (a.frameSheet) a.body.setPosition(0, 0).setRotation(0).setScale(a.bodyScaleX, a.bodyScaleY);
     a.container.alpha = u.alive ? 1 : Math.max(0, 1 - (this.playbackTime - a.actionAt) / .65);
     const settle = 1 - Math.exp(-this.frameDelta * 22);
     a.hp.width = Phaser.Math.Linear(a.hp.width, 66 * Phaser.Math.Clamp(u.hp / Math.max(1, u.maxHp), 0, 1), settle);
@@ -264,16 +263,6 @@ export class BattleScene extends Phaser.Scene {
       });
     }
     if (u.statuses.includes('STUN')) a.body.setTint(0xc8a4ff); else a.body.clearTint();
-    if (a.mesh) {
-      a.mesh.setPosition(a.body.x, a.body.y).setScale(a.body.scaleX, a.body.scaleY).setRotation(a.body.rotation).setFlipX(a.body.flipX);
-      a.mesh.points.forEach((point, i) => {
-        const y = i * 32 - 440;
-        const weight = Math.max(0, -y / 440);
-        point.x = weight * weight * (idle * 4 + (action === 'run' ? run * 12 : 0) + a.facing * (lunge * 16 + skill * 15));
-        point.y = y;
-      });
-      a.mesh.setColors(u.statuses.includes('STUN') ? 0xc8a4ff : 0xffffff).setDirty();
-    }
 
   }
 

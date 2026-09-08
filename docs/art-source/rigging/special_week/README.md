@@ -1,4 +1,8 @@
-# Special Week — 부분 분리 원화, 리깅 미완료
+# Special Week — 중단한 부위 리깅 제작 기록
+
+2026-09-08 사용자 요청으로 부위 리깅을 중단하고 [스킬별 프레임 방식](../../../FRAME_ANIMATION.md)으로 변경했다. lightweight-originals의 팔·다리 원화와 lightweight-components.json은 중단한 시도의 기록이며 현재 런타임 자산을 뜻하지 않는다.
+
+## 이전 부분 원화 기록
 
 이번 납품은 **머리·몸통·치마·꼬리·손 5개 독립 생성 원화**다. `originals/`는 생성 결과 원본, `parts/`는 실제 알파 경계로 크롭하고 최대 460px로 축소한 편집용 부품이다. `special_week_partial_source.ora`에는 5개가 각각 독립 레이어로 들어 있다. `parts-board.png`는 이 파일의 부품 배치 미리보기다. 이 배치 좌표는 부품 목록을 보기 위한 좌표이며 모델의 관절/조립 좌표가 아니다.
 
