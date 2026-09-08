@@ -1,0 +1,443 @@
+{
+  "format": "uft-baked-frames-v1",
+  "scale": 0.4315352697095436,
+  "anchor": [
+    64,
+    110
+  ],
+  "runtimeSha256": "b3209383c678409fa4f275957ddab99ab4988e20962d3d2e0d9848a88a06b48d",
+  "frames": [
+    {
+      "frame": 0,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/production-144/agnes_tachyon/alpha.png",
+      "sourceSha256": "85b6b265c0a360c30a509059bfbe5eb8b5274d4499a0f847cd49bfe9ebd94e7a",
+      "crop": [
+        60,
+        26,
+        195,
+        255
+      ],
+      "destination": [
+        35,
+        11,
+        58,
+        99
+      ]
+    },
+    {
+      "frame": 1,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/production-144/agnes_tachyon/alpha.png",
+      "sourceSha256": "85b6b265c0a360c30a509059bfbe5eb8b5274d4499a0f847cd49bfe9ebd94e7a",
+      "crop": [
+        316,
+        26,
+        449,
+        255
+      ],
+      "destination": [
+        163,
+        11,
+        57,
+        99
+      ]
+    },
+    {
+      "frame": 2,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/production-144/agnes_tachyon/alpha.png",
+      "sourceSha256": "85b6b265c0a360c30a509059bfbe5eb8b5274d4499a0f847cd49bfe9ebd94e7a",
+      "crop": [
+        574,
+        26,
+        705,
+        256
+      ],
+      "destination": [
+        291,
+        11,
+        57,
+        99
+      ]
+    },
+    {
+      "frame": 3,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/production-144/agnes_tachyon/alpha.png",
+      "sourceSha256": "85b6b265c0a360c30a509059bfbe5eb8b5274d4499a0f847cd49bfe9ebd94e7a",
+      "crop": [
+        830,
+        25,
+        962,
+        255
+      ],
+      "destination": [
+        419,
+        11,
+        57,
+        99
+      ]
+    },
+    {
+      "frame": 4,
+      "sourceFrame": 4,
+      "source": "docs/art-source/motions/production-144/agnes_tachyon/alpha.png",
+      "sourceSha256": "85b6b265c0a360c30a509059bfbe5eb8b5274d4499a0f847cd49bfe9ebd94e7a",
+      "crop": [
+        35,
+        277,
+        209,
+        504
+      ],
+      "destination": [
+        26,
+        140,
+        75,
+        98
+      ]
+    },
+    {
+      "frame": 5,
+      "sourceFrame": 5,
+      "source": "docs/art-source/motions/production-144/agnes_tachyon/alpha.png",
+      "sourceSha256": "85b6b265c0a360c30a509059bfbe5eb8b5274d4499a0f847cd49bfe9ebd94e7a",
+      "crop": [
+        294,
+        275,
+        475,
+        501
+      ],
+      "destination": [
+        153,
+        140,
+        78,
+        98
+      ]
+    },
+    {
+      "frame": 6,
+      "sourceFrame": 6,
+      "source": "docs/art-source/motions/production-144/agnes_tachyon/alpha.png",
+      "sourceSha256": "85b6b265c0a360c30a509059bfbe5eb8b5274d4499a0f847cd49bfe9ebd94e7a",
+      "crop": [
+        538,
+        277,
+        723,
+        505
+      ],
+      "destination": [
+        280,
+        140,
+        80,
+        98
+      ]
+    },
+    {
+      "frame": 7,
+      "sourceFrame": 7,
+      "source": "docs/art-source/motions/production-144/agnes_tachyon/alpha.png",
+      "sourceSha256": "85b6b265c0a360c30a509059bfbe5eb8b5274d4499a0f847cd49bfe9ebd94e7a",
+      "crop": [
+        805,
+        276,
+        978,
+        503
+      ],
+      "destination": [
+        410,
+        140,
+        75,
+        98
+      ]
+    },
+    {
+      "frame": 8,
+      "sourceFrame": 8,
+      "source": "docs/art-source/motions/production-144/agnes_tachyon/alpha.png",
+      "sourceSha256": "85b6b265c0a360c30a509059bfbe5eb8b5274d4499a0f847cd49bfe9ebd94e7a",
+      "crop": [
+        46,
+        523,
+        204,
+        757
+      ],
+      "destination": [
+        30,
+        265,
+        68,
+        101
+      ]
+    },
+    {
+      "frame": 9,
+      "sourceFrame": 9,
+      "source": "docs/art-source/motions/production-144/agnes_tachyon/alpha.png",
+      "sourceSha256": "85b6b265c0a360c30a509059bfbe5eb8b5274d4499a0f847cd49bfe9ebd94e7a",
+      "crop": [
+        293,
+        522,
+        502,
+        756
+      ],
+      "destination": [
+        147,
+        265,
+        90,
+        101
+      ]
+    },
+    {
+      "frame": 10,
+      "sourceFrame": 10,
+      "source": "docs/art-source/motions/production-144/agnes_tachyon/alpha.png",
+      "sourceSha256": "85b6b265c0a360c30a509059bfbe5eb8b5274d4499a0f847cd49bfe9ebd94e7a",
+      "crop": [
+        544,
+        524,
+        746,
+        756
+      ],
+      "destination": [
+        276,
+        266,
+        87,
+        100
+      ]
+    },
+    {
+      "frame": 11,
+      "sourceFrame": 11,
+      "source": "docs/art-source/motions/production-144/agnes_tachyon/alpha.png",
+      "sourceSha256": "85b6b265c0a360c30a509059bfbe5eb8b5274d4499a0f847cd49bfe9ebd94e7a",
+      "crop": [
+        812,
+        523,
+        962,
+        758
+      ],
+      "destination": [
+        415,
+        265,
+        65,
+        101
+      ]
+    },
+    {
+      "frame": 12,
+      "sourceFrame": 12,
+      "source": "docs/art-source/motions/production-144/agnes_tachyon/alpha.png",
+      "sourceSha256": "85b6b265c0a360c30a509059bfbe5eb8b5274d4499a0f847cd49bfe9ebd94e7a",
+      "crop": [
+        40,
+        783,
+        214,
+        1011
+      ],
+      "destination": [
+        26,
+        396,
+        75,
+        98
+      ]
+    },
+    {
+      "frame": 13,
+      "sourceFrame": 13,
+      "source": "docs/art-source/motions/production-144/agnes_tachyon/alpha.png",
+      "sourceSha256": "85b6b265c0a360c30a509059bfbe5eb8b5274d4499a0f847cd49bfe9ebd94e7a",
+      "crop": [
+        299,
+        784,
+        504,
+        1010
+      ],
+      "destination": [
+        148,
+        396,
+        88,
+        98
+      ]
+    },
+    {
+      "frame": 14,
+      "sourceFrame": 14,
+      "source": "docs/art-source/motions/production-144/agnes_tachyon/alpha.png",
+      "sourceSha256": "85b6b265c0a360c30a509059bfbe5eb8b5274d4499a0f847cd49bfe9ebd94e7a",
+      "crop": [
+        543,
+        787,
+        757,
+        1012
+      ],
+      "destination": [
+        274,
+        397,
+        92,
+        97
+      ]
+    },
+    {
+      "frame": 15,
+      "sourceFrame": 15,
+      "source": "docs/art-source/motions/production-144/agnes_tachyon/alpha.png",
+      "sourceSha256": "85b6b265c0a360c30a509059bfbe5eb8b5274d4499a0f847cd49bfe9ebd94e7a",
+      "crop": [
+        813,
+        789,
+        981,
+        1015
+      ],
+      "destination": [
+        412,
+        396,
+        72,
+        98
+      ]
+    },
+    {
+      "frame": 16,
+      "sourceFrame": 16,
+      "source": "docs/art-source/motions/production-144/agnes_tachyon/alpha.png",
+      "sourceSha256": "85b6b265c0a360c30a509059bfbe5eb8b5274d4499a0f847cd49bfe9ebd94e7a",
+      "crop": [
+        39,
+        1049,
+        213,
+        1261
+      ],
+      "destination": [
+        26,
+        531,
+        75,
+        91
+      ]
+    },
+    {
+      "frame": 17,
+      "sourceFrame": 17,
+      "source": "docs/art-source/motions/production-144/agnes_tachyon/alpha.png",
+      "sourceSha256": "85b6b265c0a360c30a509059bfbe5eb8b5274d4499a0f847cd49bfe9ebd94e7a",
+      "crop": [
+        288,
+        1087,
+        467,
+        1259
+      ],
+      "destination": [
+        153,
+        548,
+        77,
+        74
+      ]
+    },
+    {
+      "frame": 18,
+      "sourceFrame": 18,
+      "source": "docs/art-source/motions/production-144/agnes_tachyon/alpha.png",
+      "sourceSha256": "85b6b265c0a360c30a509059bfbe5eb8b5274d4499a0f847cd49bfe9ebd94e7a",
+      "crop": [
+        537,
+        1092,
+        707,
+        1262
+      ],
+      "destination": [
+        283,
+        549,
+        73,
+        73
+      ]
+    },
+    {
+      "frame": 19,
+      "sourceFrame": 19,
+      "source": "docs/art-source/motions/production-144/agnes_tachyon/alpha.png",
+      "sourceSha256": "85b6b265c0a360c30a509059bfbe5eb8b5274d4499a0f847cd49bfe9ebd94e7a",
+      "crop": [
+        775,
+        1152,
+        1005,
+        1259
+      ],
+      "destination": [
+        398,
+        576,
+        99,
+        46
+      ]
+    },
+    {
+      "frame": 20,
+      "sourceFrame": 20,
+      "source": "docs/art-source/motions/production-144/agnes_tachyon/alpha.png",
+      "sourceSha256": "85b6b265c0a360c30a509059bfbe5eb8b5274d4499a0f847cd49bfe9ebd94e7a",
+      "crop": [
+        61,
+        1285,
+        195,
+        1517
+      ],
+      "destination": [
+        35,
+        650,
+        58,
+        100
+      ]
+    },
+    {
+      "frame": 21,
+      "sourceFrame": 21,
+      "source": "docs/art-source/motions/production-144/agnes_tachyon/alpha.png",
+      "sourceSha256": "85b6b265c0a360c30a509059bfbe5eb8b5274d4499a0f847cd49bfe9ebd94e7a",
+      "crop": [
+        320,
+        1280,
+        455,
+        1521
+      ],
+      "destination": [
+        163,
+        646,
+        58,
+        104
+      ]
+    },
+    {
+      "frame": 22,
+      "sourceFrame": 22,
+      "source": "docs/art-source/motions/production-144/agnes_tachyon/alpha.png",
+      "sourceSha256": "85b6b265c0a360c30a509059bfbe5eb8b5274d4499a0f847cd49bfe9ebd94e7a",
+      "crop": [
+        558,
+        1280,
+        709,
+        1511
+      ],
+      "destination": [
+        287,
+        650,
+        65,
+        100
+      ]
+    },
+    {
+      "frame": 23,
+      "sourceFrame": 23,
+      "source": "docs/art-source/motions/production-144/agnes_tachyon/alpha.png",
+      "sourceSha256": "85b6b265c0a360c30a509059bfbe5eb8b5274d4499a0f847cd49bfe9ebd94e7a",
+      "crop": [
+        827,
+        1285,
+        968,
+        1518
+      ],
+      "destination": [
+        417,
+        649,
+        61,
+        101
+      ]
+    }
+  ]
+}

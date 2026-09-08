@@ -1,0 +1,12 @@
+{
+  "approved": true,
+  "source": "alpha.png",
+  "skillReview": "직선 돌파: 자세를 낮춘 출발 → 전방 발진 → 수평으로 몸을 뻗은 돌파 → 낮은 착지. 실제 물리 범위 피해와 자기 속도 강화.",
+  "reviewedAt": "2026-09-09",
+  "checks": [
+    "Race costume and identity",
+    "24 poses with correct action rows",
+    "actual skill target and effect",
+    "transparent RGBA"
+  ]
+}

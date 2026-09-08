@@ -1,0 +1,12 @@
+{
+  "approved": true,
+  "source": "alpha.png",
+  "skillReview": "아군 강화: 가슴에 손 → 비행사식 경례 → 양팔을 벌려 전체 아군 격려 → 허리에 손. 근접 주먹 공격과 강화 스킬을 구분.",
+  "reviewedAt": "2026-09-09",
+  "checks": [
+    "Race costume and identity",
+    "24 poses with correct action rows",
+    "actual skill target and effect",
+    "transparent RGBA"
+  ]
+}

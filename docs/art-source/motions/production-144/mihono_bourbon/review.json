@@ -1,0 +1,12 @@
+{
+  "approved": true,
+  "source": "alpha.png",
+  "skillReview": "광역 폭발: 허리 앞 대기 → 양팔 교차 충전 → 정밀한 양손 방출 → 대기 자세. 원본의 보라색 허리 장비를 유지하고 무기를 추가하지 않음.",
+  "reviewedAt": "2026-09-09",
+  "checks": [
+    "Race costume and identity",
+    "24 poses with correct action rows",
+    "actual skill target and effect",
+    "transparent RGBA"
+  ]
+}

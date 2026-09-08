@@ -1,0 +1,443 @@
+{
+  "format": "uft-baked-frames-v1",
+  "scale": 0.4297520661157025,
+  "anchor": [
+    64,
+    110
+  ],
+  "runtimeSha256": "0d0c2fc474caa87fbaa2bc24cde135f15f5fd87a63c7e2be06880f635f328a22",
+  "frames": [
+    {
+      "frame": 0,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/production-144/yukino_bijin/alpha.png",
+      "sourceSha256": "94d13c9477b9939974c82443d5f12a56a77a4ea9525535405ae67ae14406f566",
+      "crop": [
+        56,
+        21,
+        178,
+        256
+      ],
+      "destination": [
+        38,
+        9,
+        52,
+        101
+      ]
+    },
+    {
+      "frame": 1,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/production-144/yukino_bijin/alpha.png",
+      "sourceSha256": "94d13c9477b9939974c82443d5f12a56a77a4ea9525535405ae67ae14406f566",
+      "crop": [
+        312,
+        21,
+        436,
+        255
+      ],
+      "destination": [
+        165,
+        9,
+        53,
+        101
+      ]
+    },
+    {
+      "frame": 2,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/production-144/yukino_bijin/alpha.png",
+      "sourceSha256": "94d13c9477b9939974c82443d5f12a56a77a4ea9525535405ae67ae14406f566",
+      "crop": [
+        573,
+        21,
+        693,
+        255
+      ],
+      "destination": [
+        294,
+        9,
+        52,
+        101
+      ]
+    },
+    {
+      "frame": 3,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/production-144/yukino_bijin/alpha.png",
+      "sourceSha256": "94d13c9477b9939974c82443d5f12a56a77a4ea9525535405ae67ae14406f566",
+      "crop": [
+        824,
+        22,
+        948,
+        256
+      ],
+      "destination": [
+        421,
+        9,
+        53,
+        101
+      ]
+    },
+    {
+      "frame": 4,
+      "sourceFrame": 4,
+      "source": "docs/art-source/motions/production-144/yukino_bijin/alpha.png",
+      "sourceSha256": "94d13c9477b9939974c82443d5f12a56a77a4ea9525535405ae67ae14406f566",
+      "crop": [
+        42,
+        289,
+        202,
+        515
+      ],
+      "destination": [
+        29,
+        141,
+        69,
+        97
+      ]
+    },
+    {
+      "frame": 5,
+      "sourceFrame": 5,
+      "source": "docs/art-source/motions/production-144/yukino_bijin/alpha.png",
+      "sourceSha256": "94d13c9477b9939974c82443d5f12a56a77a4ea9525535405ae67ae14406f566",
+      "crop": [
+        299,
+        288,
+        461,
+        515
+      ],
+      "destination": [
+        157,
+        140,
+        70,
+        98
+      ]
+    },
+    {
+      "frame": 6,
+      "sourceFrame": 6,
+      "source": "docs/art-source/motions/production-144/yukino_bijin/alpha.png",
+      "sourceSha256": "94d13c9477b9939974c82443d5f12a56a77a4ea9525535405ae67ae14406f566",
+      "crop": [
+        564,
+        289,
+        728,
+        515
+      ],
+      "destination": [
+        285,
+        141,
+        70,
+        97
+      ]
+    },
+    {
+      "frame": 7,
+      "sourceFrame": 7,
+      "source": "docs/art-source/motions/production-144/yukino_bijin/alpha.png",
+      "sourceSha256": "94d13c9477b9939974c82443d5f12a56a77a4ea9525535405ae67ae14406f566",
+      "crop": [
+        817,
+        289,
+        974,
+        515
+      ],
+      "destination": [
+        414,
+        141,
+        67,
+        97
+      ]
+    },
+    {
+      "frame": 8,
+      "sourceFrame": 8,
+      "source": "docs/art-source/motions/production-144/yukino_bijin/alpha.png",
+      "sourceSha256": "94d13c9477b9939974c82443d5f12a56a77a4ea9525535405ae67ae14406f566",
+      "crop": [
+        37,
+        537,
+        208,
+        772
+      ],
+      "destination": [
+        27,
+        265,
+        73,
+        101
+      ]
+    },
+    {
+      "frame": 9,
+      "sourceFrame": 9,
+      "source": "docs/art-source/motions/production-144/yukino_bijin/alpha.png",
+      "sourceSha256": "94d13c9477b9939974c82443d5f12a56a77a4ea9525535405ae67ae14406f566",
+      "crop": [
+        290,
+        537,
+        449,
+        774
+      ],
+      "destination": [
+        158,
+        264,
+        68,
+        102
+      ]
+    },
+    {
+      "frame": 10,
+      "sourceFrame": 10,
+      "source": "docs/art-source/motions/production-144/yukino_bijin/alpha.png",
+      "sourceSha256": "94d13c9477b9939974c82443d5f12a56a77a4ea9525535405ae67ae14406f566",
+      "crop": [
+        550,
+        536,
+        757,
+        771
+      ],
+      "destination": [
+        275,
+        265,
+        89,
+        101
+      ]
+    },
+    {
+      "frame": 11,
+      "sourceFrame": 11,
+      "source": "docs/art-source/motions/production-144/yukino_bijin/alpha.png",
+      "sourceSha256": "94d13c9477b9939974c82443d5f12a56a77a4ea9525535405ae67ae14406f566",
+      "crop": [
+        825,
+        547,
+        974,
+        775
+      ],
+      "destination": [
+        416,
+        268,
+        64,
+        98
+      ]
+    },
+    {
+      "frame": 12,
+      "sourceFrame": 12,
+      "source": "docs/art-source/motions/production-144/yukino_bijin/alpha.png",
+      "sourceSha256": "94d13c9477b9939974c82443d5f12a56a77a4ea9525535405ae67ae14406f566",
+      "crop": [
+        56,
+        793,
+        188,
+        1032
+      ],
+      "destination": [
+        35,
+        391,
+        57,
+        103
+      ]
+    },
+    {
+      "frame": 13,
+      "sourceFrame": 13,
+      "source": "docs/art-source/motions/production-144/yukino_bijin/alpha.png",
+      "sourceSha256": "94d13c9477b9939974c82443d5f12a56a77a4ea9525535405ae67ae14406f566",
+      "crop": [
+        305,
+        794,
+        476,
+        1029
+      ],
+      "destination": [
+        155,
+        393,
+        73,
+        101
+      ]
+    },
+    {
+      "frame": 14,
+      "sourceFrame": 14,
+      "source": "docs/art-source/motions/production-144/yukino_bijin/alpha.png",
+      "sourceSha256": "94d13c9477b9939974c82443d5f12a56a77a4ea9525535405ae67ae14406f566",
+      "crop": [
+        555,
+        796,
+        749,
+        1032
+      ],
+      "destination": [
+        278,
+        393,
+        83,
+        101
+      ]
+    },
+    {
+      "frame": 15,
+      "sourceFrame": 15,
+      "source": "docs/art-source/motions/production-144/yukino_bijin/alpha.png",
+      "sourceSha256": "94d13c9477b9939974c82443d5f12a56a77a4ea9525535405ae67ae14406f566",
+      "crop": [
+        818,
+        811,
+        986,
+        1032
+      ],
+      "destination": [
+        412,
+        399,
+        72,
+        95
+      ]
+    },
+    {
+      "frame": 16,
+      "sourceFrame": 16,
+      "source": "docs/art-source/motions/production-144/yukino_bijin/alpha.png",
+      "sourceSha256": "94d13c9477b9939974c82443d5f12a56a77a4ea9525535405ae67ae14406f566",
+      "crop": [
+        46,
+        1059,
+        224,
+        1267
+      ],
+      "destination": [
+        26,
+        533,
+        76,
+        89
+      ]
+    },
+    {
+      "frame": 17,
+      "sourceFrame": 17,
+      "source": "docs/art-source/motions/production-144/yukino_bijin/alpha.png",
+      "sourceSha256": "94d13c9477b9939974c82443d5f12a56a77a4ea9525535405ae67ae14406f566",
+      "crop": [
+        300,
+        1074,
+        478,
+        1267
+      ],
+      "destination": [
+        154,
+        539,
+        76,
+        83
+      ]
+    },
+    {
+      "frame": 18,
+      "sourceFrame": 18,
+      "source": "docs/art-source/motions/production-144/yukino_bijin/alpha.png",
+      "sourceSha256": "94d13c9477b9939974c82443d5f12a56a77a4ea9525535405ae67ae14406f566",
+      "crop": [
+        543,
+        1102,
+        731,
+        1262
+      ],
+      "destination": [
+        279,
+        553,
+        81,
+        69
+      ]
+    },
+    {
+      "frame": 19,
+      "sourceFrame": 19,
+      "source": "docs/art-source/motions/production-144/yukino_bijin/alpha.png",
+      "sourceSha256": "94d13c9477b9939974c82443d5f12a56a77a4ea9525535405ae67ae14406f566",
+      "crop": [
+        790,
+        1162,
+        998,
+        1261
+      ],
+      "destination": [
+        403,
+        579,
+        89,
+        43
+      ]
+    },
+    {
+      "frame": 20,
+      "sourceFrame": 20,
+      "source": "docs/art-source/motions/production-144/yukino_bijin/alpha.png",
+      "sourceSha256": "94d13c9477b9939974c82443d5f12a56a77a4ea9525535405ae67ae14406f566",
+      "crop": [
+        46,
+        1282,
+        187,
+        1515
+      ],
+      "destination": [
+        33,
+        650,
+        61,
+        100
+      ]
+    },
+    {
+      "frame": 21,
+      "sourceFrame": 21,
+      "source": "docs/art-source/motions/production-144/yukino_bijin/alpha.png",
+      "sourceSha256": "94d13c9477b9939974c82443d5f12a56a77a4ea9525535405ae67ae14406f566",
+      "crop": [
+        310,
+        1277,
+        466,
+        1519
+      ],
+      "destination": [
+        158,
+        646,
+        67,
+        104
+      ]
+    },
+    {
+      "frame": 22,
+      "sourceFrame": 22,
+      "source": "docs/art-source/motions/production-144/yukino_bijin/alpha.png",
+      "sourceSha256": "94d13c9477b9939974c82443d5f12a56a77a4ea9525535405ae67ae14406f566",
+      "crop": [
+        575,
+        1289,
+        708,
+        1518
+      ],
+      "destination": [
+        291,
+        652,
+        57,
+        98
+      ]
+    },
+    {
+      "frame": 23,
+      "sourceFrame": 23,
+      "source": "docs/art-source/motions/production-144/yukino_bijin/alpha.png",
+      "sourceSha256": "94d13c9477b9939974c82443d5f12a56a77a4ea9525535405ae67ae14406f566",
+      "crop": [
+        843,
+        1287,
+        996,
+        1518
+      ],
+      "destination": [
+        415,
+        651,
+        66,
+        99
+      ]
+    }
+  ]
+}

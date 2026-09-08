@@ -1,0 +1,443 @@
+{
+  "format": "uft-baked-frames-v1",
+  "scale": 0.41935483870967744,
+  "anchor": [
+    64,
+    110
+  ],
+  "runtimeSha256": "4ffd61de57029539de731cad45414fe9c6bc5b41169d27df583b9a45cf1811f0",
+  "frames": [
+    {
+      "frame": 0,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/production-144/ines_fujin/alpha.png",
+      "sourceSha256": "2a3a5df4909ebe653b5aa433e5ed5109d757672a5c043e1c43b294d9ee61e8ee",
+      "crop": [
+        55,
+        21,
+        200,
+        265
+      ],
+      "destination": [
+        33,
+        8,
+        61,
+        102
+      ]
+    },
+    {
+      "frame": 1,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/production-144/ines_fujin/alpha.png",
+      "sourceSha256": "2a3a5df4909ebe653b5aa433e5ed5109d757672a5c043e1c43b294d9ee61e8ee",
+      "crop": [
+        310,
+        21,
+        458,
+        265
+      ],
+      "destination": [
+        161,
+        8,
+        62,
+        102
+      ]
+    },
+    {
+      "frame": 2,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/production-144/ines_fujin/alpha.png",
+      "sourceSha256": "2a3a5df4909ebe653b5aa433e5ed5109d757672a5c043e1c43b294d9ee61e8ee",
+      "crop": [
+        566,
+        21,
+        710,
+        265
+      ],
+      "destination": [
+        290,
+        8,
+        60,
+        102
+      ]
+    },
+    {
+      "frame": 3,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/production-144/ines_fujin/alpha.png",
+      "sourceSha256": "2a3a5df4909ebe653b5aa433e5ed5109d757672a5c043e1c43b294d9ee61e8ee",
+      "crop": [
+        821,
+        22,
+        965,
+        265
+      ],
+      "destination": [
+        418,
+        8,
+        60,
+        102
+      ]
+    },
+    {
+      "frame": 4,
+      "sourceFrame": 4,
+      "source": "docs/art-source/motions/production-144/ines_fujin/alpha.png",
+      "sourceSha256": "2a3a5df4909ebe653b5aa433e5ed5109d757672a5c043e1c43b294d9ee61e8ee",
+      "crop": [
+        20,
+        290,
+        251,
+        512
+      ],
+      "destination": [
+        15,
+        145,
+        97,
+        93
+      ]
+    },
+    {
+      "frame": 5,
+      "sourceFrame": 5,
+      "source": "docs/art-source/motions/production-144/ines_fujin/alpha.png",
+      "sourceSha256": "2a3a5df4909ebe653b5aa433e5ed5109d757672a5c043e1c43b294d9ee61e8ee",
+      "crop": [
+        286,
+        286,
+        510,
+        510
+      ],
+      "destination": [
+        145,
+        144,
+        94,
+        94
+      ]
+    },
+    {
+      "frame": 6,
+      "sourceFrame": 6,
+      "source": "docs/art-source/motions/production-144/ines_fujin/alpha.png",
+      "sourceSha256": "2a3a5df4909ebe653b5aa433e5ed5109d757672a5c043e1c43b294d9ee61e8ee",
+      "crop": [
+        537,
+        288,
+        754,
+        512
+      ],
+      "destination": [
+        274,
+        144,
+        91,
+        94
+      ]
+    },
+    {
+      "frame": 7,
+      "sourceFrame": 7,
+      "source": "docs/art-source/motions/production-144/ines_fujin/alpha.png",
+      "sourceSha256": "2a3a5df4909ebe653b5aa433e5ed5109d757672a5c043e1c43b294d9ee61e8ee",
+      "crop": [
+        797,
+        295,
+        1015,
+        509
+      ],
+      "destination": [
+        402,
+        148,
+        91,
+        90
+      ]
+    },
+    {
+      "frame": 8,
+      "sourceFrame": 8,
+      "source": "docs/art-source/motions/production-144/ines_fujin/alpha.png",
+      "sourceSha256": "2a3a5df4909ebe653b5aa433e5ed5109d757672a5c043e1c43b294d9ee61e8ee",
+      "crop": [
+        44,
+        529,
+        205,
+        761
+      ],
+      "destination": [
+        30,
+        269,
+        68,
+        97
+      ]
+    },
+    {
+      "frame": 9,
+      "sourceFrame": 9,
+      "source": "docs/art-source/motions/production-144/ines_fujin/alpha.png",
+      "sourceSha256": "2a3a5df4909ebe653b5aa433e5ed5109d757672a5c043e1c43b294d9ee61e8ee",
+      "crop": [
+        287,
+        528,
+        462,
+        761
+      ],
+      "destination": [
+        155,
+        268,
+        73,
+        98
+      ]
+    },
+    {
+      "frame": 10,
+      "sourceFrame": 10,
+      "source": "docs/art-source/motions/production-144/ines_fujin/alpha.png",
+      "sourceSha256": "2a3a5df4909ebe653b5aa433e5ed5109d757672a5c043e1c43b294d9ee61e8ee",
+      "crop": [
+        546,
+        527,
+        745,
+        761
+      ],
+      "destination": [
+        278,
+        268,
+        83,
+        98
+      ]
+    },
+    {
+      "frame": 11,
+      "sourceFrame": 11,
+      "source": "docs/art-source/motions/production-144/ines_fujin/alpha.png",
+      "sourceSha256": "2a3a5df4909ebe653b5aa433e5ed5109d757672a5c043e1c43b294d9ee61e8ee",
+      "crop": [
+        809,
+        529,
+        969,
+        761
+      ],
+      "destination": [
+        414,
+        269,
+        67,
+        97
+      ]
+    },
+    {
+      "frame": 12,
+      "sourceFrame": 12,
+      "source": "docs/art-source/motions/production-144/ines_fujin/alpha.png",
+      "sourceSha256": "2a3a5df4909ebe653b5aa433e5ed5109d757672a5c043e1c43b294d9ee61e8ee",
+      "crop": [
+        54,
+        789,
+        203,
+        1036
+      ],
+      "destination": [
+        33,
+        390,
+        62,
+        104
+      ]
+    },
+    {
+      "frame": 13,
+      "sourceFrame": 13,
+      "source": "docs/art-source/motions/production-144/ines_fujin/alpha.png",
+      "sourceSha256": "2a3a5df4909ebe653b5aa433e5ed5109d757672a5c043e1c43b294d9ee61e8ee",
+      "crop": [
+        303,
+        788,
+        471,
+        1036
+      ],
+      "destination": [
+        157,
+        390,
+        70,
+        104
+      ]
+    },
+    {
+      "frame": 14,
+      "sourceFrame": 14,
+      "source": "docs/art-source/motions/production-144/ines_fujin/alpha.png",
+      "sourceSha256": "2a3a5df4909ebe653b5aa433e5ed5109d757672a5c043e1c43b294d9ee61e8ee",
+      "crop": [
+        553,
+        790,
+        741,
+        1036
+      ],
+      "destination": [
+        280,
+        391,
+        79,
+        103
+      ]
+    },
+    {
+      "frame": 15,
+      "sourceFrame": 15,
+      "source": "docs/art-source/motions/production-144/ines_fujin/alpha.png",
+      "sourceSha256": "2a3a5df4909ebe653b5aa433e5ed5109d757672a5c043e1c43b294d9ee61e8ee",
+      "crop": [
+        813,
+        788,
+        970,
+        1036
+      ],
+      "destination": [
+        415,
+        390,
+        66,
+        104
+      ]
+    },
+    {
+      "frame": 16,
+      "sourceFrame": 16,
+      "source": "docs/art-source/motions/production-144/ines_fujin/alpha.png",
+      "sourceSha256": "2a3a5df4909ebe653b5aa433e5ed5109d757672a5c043e1c43b294d9ee61e8ee",
+      "crop": [
+        45,
+        1070,
+        225,
+        1272
+      ],
+      "destination": [
+        26,
+        537,
+        75,
+        85
+      ]
+    },
+    {
+      "frame": 17,
+      "sourceFrame": 17,
+      "source": "docs/art-source/motions/production-144/ines_fujin/alpha.png",
+      "sourceSha256": "2a3a5df4909ebe653b5aa433e5ed5109d757672a5c043e1c43b294d9ee61e8ee",
+      "crop": [
+        302,
+        1086,
+        474,
+        1274
+      ],
+      "destination": [
+        156,
+        543,
+        72,
+        79
+      ]
+    },
+    {
+      "frame": 18,
+      "sourceFrame": 18,
+      "source": "docs/art-source/motions/production-144/ines_fujin/alpha.png",
+      "sourceSha256": "2a3a5df4909ebe653b5aa433e5ed5109d757672a5c043e1c43b294d9ee61e8ee",
+      "crop": [
+        532,
+        1110,
+        724,
+        1274
+      ],
+      "destination": [
+        279,
+        553,
+        81,
+        69
+      ]
+    },
+    {
+      "frame": 19,
+      "sourceFrame": 19,
+      "source": "docs/art-source/motions/production-144/ines_fujin/alpha.png",
+      "sourceSha256": "2a3a5df4909ebe653b5aa433e5ed5109d757672a5c043e1c43b294d9ee61e8ee",
+      "crop": [
+        766,
+        1151,
+        1017,
+        1269
+      ],
+      "destination": [
+        395,
+        573,
+        105,
+        49
+      ]
+    },
+    {
+      "frame": 20,
+      "sourceFrame": 20,
+      "source": "docs/art-source/motions/production-144/ines_fujin/alpha.png",
+      "sourceSha256": "2a3a5df4909ebe653b5aa433e5ed5109d757672a5c043e1c43b294d9ee61e8ee",
+      "crop": [
+        54,
+        1287,
+        202,
+        1526
+      ],
+      "destination": [
+        33,
+        650,
+        62,
+        100
+      ]
+    },
+    {
+      "frame": 21,
+      "sourceFrame": 21,
+      "source": "docs/art-source/motions/production-144/ines_fujin/alpha.png",
+      "sourceSha256": "2a3a5df4909ebe653b5aa433e5ed5109d757672a5c043e1c43b294d9ee61e8ee",
+      "crop": [
+        313,
+        1282,
+        463,
+        1526
+      ],
+      "destination": [
+        160,
+        648,
+        63,
+        102
+      ]
+    },
+    {
+      "frame": 22,
+      "sourceFrame": 22,
+      "source": "docs/art-source/motions/production-144/ines_fujin/alpha.png",
+      "sourceSha256": "2a3a5df4909ebe653b5aa433e5ed5109d757672a5c043e1c43b294d9ee61e8ee",
+      "crop": [
+        565,
+        1280,
+        718,
+        1526
+      ],
+      "destination": [
+        288,
+        647,
+        64,
+        103
+      ]
+    },
+    {
+      "frame": 23,
+      "sourceFrame": 23,
+      "source": "docs/art-source/motions/production-144/ines_fujin/alpha.png",
+      "sourceSha256": "2a3a5df4909ebe653b5aa433e5ed5109d757672a5c043e1c43b294d9ee61e8ee",
+      "crop": [
+        815,
+        1285,
+        959,
+        1526
+      ],
+      "destination": [
+        418,
+        649,
+        60,
+        101
+      ]
+    }
+  ]
+}

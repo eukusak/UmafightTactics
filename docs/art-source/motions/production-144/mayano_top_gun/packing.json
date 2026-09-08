@@ -1,0 +1,443 @@
+{
+  "format": "uft-baked-frames-v1",
+  "scale": 0.4297520661157025,
+  "anchor": [
+    64,
+    110
+  ],
+  "runtimeSha256": "f160e09800d71e03fa0ea5b91ff4af8f3631d32882747a572069b58545a94eba",
+  "frames": [
+    {
+      "frame": 0,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/production-144/mayano_top_gun/alpha.png",
+      "sourceSha256": "487ef5c5c96688261eb1d27fd5f7deb6513fbdd7b50637d2a92f5411f9e5af25",
+      "crop": [
+        61,
+        28,
+        194,
+        258
+      ],
+      "destination": [
+        35,
+        11,
+        57,
+        99
+      ]
+    },
+    {
+      "frame": 1,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/production-144/mayano_top_gun/alpha.png",
+      "sourceSha256": "487ef5c5c96688261eb1d27fd5f7deb6513fbdd7b50637d2a92f5411f9e5af25",
+      "crop": [
+        317,
+        27,
+        453,
+        258
+      ],
+      "destination": [
+        163,
+        11,
+        58,
+        99
+      ]
+    },
+    {
+      "frame": 2,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/production-144/mayano_top_gun/alpha.png",
+      "sourceSha256": "487ef5c5c96688261eb1d27fd5f7deb6513fbdd7b50637d2a92f5411f9e5af25",
+      "crop": [
+        565,
+        28,
+        697,
+        258
+      ],
+      "destination": [
+        291,
+        11,
+        57,
+        99
+      ]
+    },
+    {
+      "frame": 3,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/production-144/mayano_top_gun/alpha.png",
+      "sourceSha256": "487ef5c5c96688261eb1d27fd5f7deb6513fbdd7b50637d2a92f5411f9e5af25",
+      "crop": [
+        819,
+        28,
+        952,
+        258
+      ],
+      "destination": [
+        419,
+        11,
+        57,
+        99
+      ]
+    },
+    {
+      "frame": 4,
+      "sourceFrame": 4,
+      "source": "docs/art-source/motions/production-144/mayano_top_gun/alpha.png",
+      "sourceSha256": "487ef5c5c96688261eb1d27fd5f7deb6513fbdd7b50637d2a92f5411f9e5af25",
+      "crop": [
+        40,
+        277,
+        211,
+        511
+      ],
+      "destination": [
+        27,
+        137,
+        73,
+        101
+      ]
+    },
+    {
+      "frame": 5,
+      "sourceFrame": 5,
+      "source": "docs/art-source/motions/production-144/mayano_top_gun/alpha.png",
+      "sourceSha256": "487ef5c5c96688261eb1d27fd5f7deb6513fbdd7b50637d2a92f5411f9e5af25",
+      "crop": [
+        298,
+        278,
+        483,
+        511
+      ],
+      "destination": [
+        152,
+        138,
+        80,
+        100
+      ]
+    },
+    {
+      "frame": 6,
+      "sourceFrame": 6,
+      "source": "docs/art-source/motions/production-144/mayano_top_gun/alpha.png",
+      "sourceSha256": "487ef5c5c96688261eb1d27fd5f7deb6513fbdd7b50637d2a92f5411f9e5af25",
+      "crop": [
+        554,
+        280,
+        725,
+        512
+      ],
+      "destination": [
+        283,
+        138,
+        73,
+        100
+      ]
+    },
+    {
+      "frame": 7,
+      "sourceFrame": 7,
+      "source": "docs/art-source/motions/production-144/mayano_top_gun/alpha.png",
+      "sourceSha256": "487ef5c5c96688261eb1d27fd5f7deb6513fbdd7b50637d2a92f5411f9e5af25",
+      "crop": [
+        804,
+        281,
+        978,
+        511
+      ],
+      "destination": [
+        410,
+        139,
+        75,
+        99
+      ]
+    },
+    {
+      "frame": 8,
+      "sourceFrame": 8,
+      "source": "docs/art-source/motions/production-144/mayano_top_gun/alpha.png",
+      "sourceSha256": "487ef5c5c96688261eb1d27fd5f7deb6513fbdd7b50637d2a92f5411f9e5af25",
+      "crop": [
+        45,
+        538,
+        196,
+        768
+      ],
+      "destination": [
+        31,
+        267,
+        65,
+        99
+      ]
+    },
+    {
+      "frame": 9,
+      "sourceFrame": 9,
+      "source": "docs/art-source/motions/production-144/mayano_top_gun/alpha.png",
+      "sourceSha256": "487ef5c5c96688261eb1d27fd5f7deb6513fbdd7b50637d2a92f5411f9e5af25",
+      "crop": [
+        304,
+        538,
+        483,
+        768
+      ],
+      "destination": [
+        153,
+        267,
+        77,
+        99
+      ]
+    },
+    {
+      "frame": 10,
+      "sourceFrame": 10,
+      "source": "docs/art-source/motions/production-144/mayano_top_gun/alpha.png",
+      "sourceSha256": "487ef5c5c96688261eb1d27fd5f7deb6513fbdd7b50637d2a92f5411f9e5af25",
+      "crop": [
+        544,
+        541,
+        747,
+        767
+      ],
+      "destination": [
+        276,
+        269,
+        87,
+        97
+      ]
+    },
+    {
+      "frame": 11,
+      "sourceFrame": 11,
+      "source": "docs/art-source/motions/production-144/mayano_top_gun/alpha.png",
+      "sourceSha256": "487ef5c5c96688261eb1d27fd5f7deb6513fbdd7b50637d2a92f5411f9e5af25",
+      "crop": [
+        815,
+        535,
+        964,
+        767
+      ],
+      "destination": [
+        416,
+        266,
+        64,
+        100
+      ]
+    },
+    {
+      "frame": 12,
+      "sourceFrame": 12,
+      "source": "docs/art-source/motions/production-144/mayano_top_gun/alpha.png",
+      "sourceSha256": "487ef5c5c96688261eb1d27fd5f7deb6513fbdd7b50637d2a92f5411f9e5af25",
+      "crop": [
+        61,
+        793,
+        196,
+        1029
+      ],
+      "destination": [
+        35,
+        393,
+        58,
+        101
+      ]
+    },
+    {
+      "frame": 13,
+      "sourceFrame": 13,
+      "source": "docs/art-source/motions/production-144/mayano_top_gun/alpha.png",
+      "sourceSha256": "487ef5c5c96688261eb1d27fd5f7deb6513fbdd7b50637d2a92f5411f9e5af25",
+      "crop": [
+        309,
+        793,
+        457,
+        1029
+      ],
+      "destination": [
+        160,
+        393,
+        64,
+        101
+      ]
+    },
+    {
+      "frame": 14,
+      "sourceFrame": 14,
+      "source": "docs/art-source/motions/production-144/mayano_top_gun/alpha.png",
+      "sourceSha256": "487ef5c5c96688261eb1d27fd5f7deb6513fbdd7b50637d2a92f5411f9e5af25",
+      "crop": [
+        551,
+        794,
+        748,
+        1029
+      ],
+      "destination": [
+        277,
+        393,
+        85,
+        101
+      ]
+    },
+    {
+      "frame": 15,
+      "sourceFrame": 15,
+      "source": "docs/art-source/motions/production-144/mayano_top_gun/alpha.png",
+      "sourceSha256": "487ef5c5c96688261eb1d27fd5f7deb6513fbdd7b50637d2a92f5411f9e5af25",
+      "crop": [
+        823,
+        793,
+        958,
+        1029
+      ],
+      "destination": [
+        419,
+        393,
+        58,
+        101
+      ]
+    },
+    {
+      "frame": 16,
+      "sourceFrame": 16,
+      "source": "docs/art-source/motions/production-144/mayano_top_gun/alpha.png",
+      "sourceSha256": "487ef5c5c96688261eb1d27fd5f7deb6513fbdd7b50637d2a92f5411f9e5af25",
+      "crop": [
+        47,
+        1052,
+        217,
+        1264
+      ],
+      "destination": [
+        27,
+        531,
+        73,
+        91
+      ]
+    },
+    {
+      "frame": 17,
+      "sourceFrame": 17,
+      "source": "docs/art-source/motions/production-144/mayano_top_gun/alpha.png",
+      "sourceSha256": "487ef5c5c96688261eb1d27fd5f7deb6513fbdd7b50637d2a92f5411f9e5af25",
+      "crop": [
+        310,
+        1069,
+        477,
+        1264
+      ],
+      "destination": [
+        156,
+        538,
+        72,
+        84
+      ]
+    },
+    {
+      "frame": 18,
+      "sourceFrame": 18,
+      "source": "docs/art-source/motions/production-144/mayano_top_gun/alpha.png",
+      "sourceSha256": "487ef5c5c96688261eb1d27fd5f7deb6513fbdd7b50637d2a92f5411f9e5af25",
+      "crop": [
+        545,
+        1101,
+        707,
+        1264
+      ],
+      "destination": [
+        285,
+        552,
+        70,
+        70
+      ]
+    },
+    {
+      "frame": 19,
+      "sourceFrame": 19,
+      "source": "docs/art-source/motions/production-144/mayano_top_gun/alpha.png",
+      "sourceSha256": "487ef5c5c96688261eb1d27fd5f7deb6513fbdd7b50637d2a92f5411f9e5af25",
+      "crop": [
+        778,
+        1159,
+        1005,
+        1261
+      ],
+      "destination": [
+        399,
+        578,
+        98,
+        44
+      ]
+    },
+    {
+      "frame": 20,
+      "sourceFrame": 20,
+      "source": "docs/art-source/motions/production-144/mayano_top_gun/alpha.png",
+      "sourceSha256": "487ef5c5c96688261eb1d27fd5f7deb6513fbdd7b50637d2a92f5411f9e5af25",
+      "crop": [
+        61,
+        1282,
+        195,
+        1522
+      ],
+      "destination": [
+        35,
+        647,
+        58,
+        103
+      ]
+    },
+    {
+      "frame": 21,
+      "sourceFrame": 21,
+      "source": "docs/art-source/motions/production-144/mayano_top_gun/alpha.png",
+      "sourceSha256": "487ef5c5c96688261eb1d27fd5f7deb6513fbdd7b50637d2a92f5411f9e5af25",
+      "crop": [
+        317,
+        1280,
+        458,
+        1522
+      ],
+      "destination": [
+        161,
+        646,
+        61,
+        104
+      ]
+    },
+    {
+      "frame": 22,
+      "sourceFrame": 22,
+      "source": "docs/art-source/motions/production-144/mayano_top_gun/alpha.png",
+      "sourceSha256": "487ef5c5c96688261eb1d27fd5f7deb6513fbdd7b50637d2a92f5411f9e5af25",
+      "crop": [
+        562,
+        1287,
+        699,
+        1519
+      ],
+      "destination": [
+        290,
+        650,
+        59,
+        100
+      ]
+    },
+    {
+      "frame": 23,
+      "sourceFrame": 23,
+      "source": "docs/art-source/motions/production-144/mayano_top_gun/alpha.png",
+      "sourceSha256": "487ef5c5c96688261eb1d27fd5f7deb6513fbdd7b50637d2a92f5411f9e5af25",
+      "crop": [
+        828,
+        1285,
+        965,
+        1519
+      ],
+      "destination": [
+        418,
+        649,
+        59,
+        101
+      ]
+    }
+  ]
+}

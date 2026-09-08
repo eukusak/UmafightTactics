@@ -1280,8 +1280,8 @@
         "착지하며 자세 회복"
       ],
       "productionRule": "이 초안은 제작 완료가 아니다. 원본 -Race.png의 의상·머리·장식과 이 캐릭터의 실제 효과/대상/이동을 함께 검토하여 개별 원화를 생성하고 검수한다. 존재하지 않는 치유·소환·무기를 추가하지 않는다.",
-      "status": "PENDING_ART",
-      "reviewedPoses": null
+      "status": "REVIEWED_FRAMES",
+      "reviewedPoses": "직선 돌파: 자세를 낮춘 출발 → 전방 발진 → 수평으로 몸을 뻗은 돌파 → 낮은 착지. 실제 물리 범위 피해와 자기 속도 강화."
     },
     {
       "id": "biwa_hayahide",
@@ -1331,8 +1331,8 @@
         "팔을 내리며 회복"
       ],
       "productionRule": "이 초안은 제작 완료가 아니다. 원본 -Race.png의 의상·머리·장식과 이 캐릭터의 실제 효과/대상/이동을 함께 검토하여 개별 원화를 생성하고 검수한다. 존재하지 않는 치유·소환·무기를 추가하지 않는다.",
-      "status": "PENDING_ART",
-      "reviewedPoses": null
+      "status": "REVIEWED_FRAMES",
+      "reviewedPoses": "광역 폭발: 안경에 손을 대며 조준 → 가슴 앞 응축 → 양손으로 적 무리 방향 방출 → 팔을 내린 회복. 안경과 풍성한 백발 유지."
     },
     {
       "id": "mayano_top_gun",
@@ -1396,8 +1396,8 @@
         "오라를 유지하며 기본 자세"
       ],
       "productionRule": "이 초안은 제작 완료가 아니다. 원본 -Race.png의 의상·머리·장식과 이 캐릭터의 실제 효과/대상/이동을 함께 검토하여 개별 원화를 생성하고 검수한다. 존재하지 않는 치유·소환·무기를 추가하지 않는다.",
-      "status": "PENDING_ART",
-      "reviewedPoses": null
+      "status": "REVIEWED_FRAMES",
+      "reviewedPoses": "아군 강화: 가슴에 손 → 비행사식 경례 → 양팔을 벌려 전체 아군 격려 → 허리에 손. 근접 주먹 공격과 강화 스킬을 구분."
     },
     {
       "id": "mihono_bourbon",
@@ -1447,8 +1447,8 @@
         "팔을 내리며 회복"
       ],
       "productionRule": "이 초안은 제작 완료가 아니다. 원본 -Race.png의 의상·머리·장식과 이 캐릭터의 실제 효과/대상/이동을 함께 검토하여 개별 원화를 생성하고 검수한다. 존재하지 않는 치유·소환·무기를 추가하지 않는다.",
-      "status": "PENDING_ART",
-      "reviewedPoses": null
+      "status": "REVIEWED_FRAMES",
+      "reviewedPoses": "광역 폭발: 허리 앞 대기 → 양팔 교차 충전 → 정밀한 양손 방출 → 대기 자세. 원본의 보라색 허리 장비를 유지하고 무기를 추가하지 않음."
     },
     {
       "id": "mejiro_ryan",
@@ -1508,8 +1508,8 @@
         "착지하며 자세 회복"
       ],
       "productionRule": "이 초안은 제작 완료가 아니다. 원본 -Race.png의 의상·머리·장식과 이 캐릭터의 실제 효과/대상/이동을 함께 검토하여 개별 원화를 생성하고 검수한다. 존재하지 않는 치유·소환·무기를 추가하지 않는다.",
-      "status": "PENDING_ART",
-      "reviewedPoses": null
+      "status": "REVIEWED_FRAMES",
+      "reviewedPoses": "직선 돌파: 낮은 운동선수 출발 → 강한 발진 → 어깨를 앞세운 수평 돌파 → 넓게 착지. 기본 주먹 공격과 물리 돌진 구분."
     },
     {
       "id": "hishi_akebono",
@@ -1573,8 +1573,8 @@
         "오라를 유지하며 기본 자세"
       ],
       "productionRule": "이 초안은 제작 완료가 아니다. 원본 -Race.png의 의상·머리·장식과 이 캐릭터의 실제 효과/대상/이동을 함께 검토하여 개별 원화를 생성하고 검수한다. 존재하지 않는 치유·소환·무기를 추가하지 않는다.",
-      "status": "PENDING_ART",
-      "reviewedPoses": null
+      "status": "REVIEWED_FRAMES",
+      "reviewedPoses": "아군 강화: 가슴 앞 손 모음 → 양팔 들어올림 → 넓게 팔을 벌려 전체 아군 격려 → 편안한 회복. 회복 스킬로 변경하지 않음."
     },
     {
       "id": "yukino_bijin",
@@ -1638,8 +1638,8 @@
         "오라를 유지하며 기본 자세"
       ],
       "productionRule": "이 초안은 제작 완료가 아니다. 원본 -Race.png의 의상·머리·장식과 이 캐릭터의 실제 효과/대상/이동을 함께 검토하여 개별 원화를 생성하고 검수한다. 존재하지 않는 치유·소환·무기를 추가하지 않는다.",
-      "status": "PENDING_ART",
-      "reviewedPoses": null
+      "status": "REVIEWED_FRAMES",
+      "reviewedPoses": "아군 강화: 가슴 앞 손 모음 → 양팔 올리기 → 자신 있게 팔을 펼침 → 인사하며 회복. 겨울 장식 의상과 털 부츠 유지."
     },
     {
       "id": "rice_shower",
@@ -1700,8 +1700,8 @@
         "방어 유지"
       ],
       "productionRule": "이 초안은 제작 완료가 아니다. 원본 -Race.png의 의상·머리·장식과 이 캐릭터의 실제 효과/대상/이동을 함께 검토하여 개별 원화를 생성하고 검수한다. 존재하지 않는 치유·소환·무기를 추가하지 않는다.",
-      "status": "PENDING_ART",
-      "reviewedPoses": null
+      "status": "REVIEWED_FRAMES",
+      "reviewedPoses": "보호막·도발: 소극적인 가슴 앞 방어 → 팔을 들어 준비 → 용기를 내어 정면에 도전 손바닥 → 방어 유지. 단검 스킬로 변경하지 않음."
     },
     {
       "id": "ines_fujin",
@@ -1765,8 +1765,8 @@
         "오라를 유지하며 기본 자세"
       ],
       "productionRule": "이 초안은 제작 완료가 아니다. 원본 -Race.png의 의상·머리·장식과 이 캐릭터의 실제 효과/대상/이동을 함께 검토하여 개별 원화를 생성하고 검수한다. 존재하지 않는 치유·소환·무기를 추가하지 않는다.",
-      "status": "PENDING_ART",
-      "reviewedPoses": null
+      "status": "REVIEWED_FRAMES",
+      "reviewedPoses": "아군 강화: 가슴에 손 → 경쾌한 팔 올리기 → 양팔을 벌린 전체 아군 격려 → 경례 회복. 기본 주먹 공격과 구분."
     },
     {
       "id": "agnes_tachyon",
@@ -1820,8 +1820,8 @@
         "반동 회복"
       ],
       "productionRule": "이 초안은 제작 완료가 아니다. 원본 -Race.png의 의상·머리·장식과 이 캐릭터의 실제 효과/대상/이동을 함께 검토하여 개별 원화를 생성하고 검수한다. 존재하지 않는 치유·소환·무기를 추가하지 않는다.",
-      "status": "PENDING_ART",
-      "reviewedPoses": null
+      "status": "REVIEWED_FRAMES",
+      "reviewedPoses": "연속 스퍼트: 긴 소매를 뻗은 첫 발사 → 같은 대상 두 번째 발사 → 손바닥을 드러낸 세 번째 발사 → 소매를 모은 방어 회복. 실제 3회 동일 대상 공격."
     },
     {
       "id": "admire_vega",

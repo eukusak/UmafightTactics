@@ -1,0 +1,12 @@
+{
+  "approved": true,
+  "source": "alpha.png",
+  "skillReview": "아군 강화: 가슴 앞 손 모음 → 양팔 들어올림 → 넓게 팔을 벌려 전체 아군 격려 → 편안한 회복. 회복 스킬로 변경하지 않음.",
+  "reviewedAt": "2026-09-09",
+  "checks": [
+    "Race costume and identity",
+    "24 poses with correct action rows",
+    "actual skill target and effect",
+    "transparent RGBA"
+  ]
+}

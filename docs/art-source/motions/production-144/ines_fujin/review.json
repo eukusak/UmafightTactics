@@ -1,0 +1,12 @@
+{
+  "approved": true,
+  "source": "alpha.png",
+  "skillReview": "아군 강화: 가슴에 손 → 경쾌한 팔 올리기 → 양팔을 벌린 전체 아군 격려 → 경례 회복. 기본 주먹 공격과 구분.",
+  "reviewedAt": "2026-09-09",
+  "checks": [
+    "Race costume and identity",
+    "24 poses with correct action rows",
+    "actual skill target and effect",
+    "transparent RGBA"
+  ]
+}
