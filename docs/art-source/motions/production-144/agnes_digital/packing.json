@@ -1,0 +1,443 @@
+{
+  "format": "uft-baked-frames-v1",
+  "scale": 0.45021645021645024,
+  "anchor": [
+    64,
+    110
+  ],
+  "runtimeSha256": "673f76c0674c066b61f0b0ba94653a4ba501a2c43dd346b11660660d0439a899",
+  "frames": [
+    {
+      "frame": 0,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/production-144/agnes_digital/alpha.png",
+      "sourceSha256": "22f98a285705bb39b32f2e0b31bd392ee208824630364e04369aabdee21a1696",
+      "crop": [
+        69,
+        48,
+        218,
+        257
+      ],
+      "destination": [
+        30,
+        16,
+        67,
+        94
+      ]
+    },
+    {
+      "frame": 1,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/production-144/agnes_digital/alpha.png",
+      "sourceSha256": "22f98a285705bb39b32f2e0b31bd392ee208824630364e04369aabdee21a1696",
+      "crop": [
+        322,
+        48,
+        468,
+        257
+      ],
+      "destination": [
+        159,
+        16,
+        66,
+        94
+      ]
+    },
+    {
+      "frame": 2,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/production-144/agnes_digital/alpha.png",
+      "sourceSha256": "22f98a285705bb39b32f2e0b31bd392ee208824630364e04369aabdee21a1696",
+      "crop": [
+        574,
+        48,
+        718,
+        257
+      ],
+      "destination": [
+        287,
+        16,
+        65,
+        94
+      ]
+    },
+    {
+      "frame": 3,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/production-144/agnes_digital/alpha.png",
+      "sourceSha256": "22f98a285705bb39b32f2e0b31bd392ee208824630364e04369aabdee21a1696",
+      "crop": [
+        830,
+        49,
+        974,
+        257
+      ],
+      "destination": [
+        415,
+        16,
+        65,
+        94
+      ]
+    },
+    {
+      "frame": 4,
+      "sourceFrame": 4,
+      "source": "docs/art-source/motions/production-144/agnes_digital/alpha.png",
+      "sourceSha256": "22f98a285705bb39b32f2e0b31bd392ee208824630364e04369aabdee21a1696",
+      "crop": [
+        40,
+        295,
+        227,
+        512
+      ],
+      "destination": [
+        22,
+        140,
+        84,
+        98
+      ]
+    },
+    {
+      "frame": 5,
+      "sourceFrame": 5,
+      "source": "docs/art-source/motions/production-144/agnes_digital/alpha.png",
+      "sourceSha256": "22f98a285705bb39b32f2e0b31bd392ee208824630364e04369aabdee21a1696",
+      "crop": [
+        298,
+        296,
+        472,
+        509
+      ],
+      "destination": [
+        153,
+        142,
+        78,
+        96
+      ]
+    },
+    {
+      "frame": 6,
+      "sourceFrame": 6,
+      "source": "docs/art-source/motions/production-144/agnes_digital/alpha.png",
+      "sourceSha256": "22f98a285705bb39b32f2e0b31bd392ee208824630364e04369aabdee21a1696",
+      "crop": [
+        550,
+        300,
+        733,
+        512
+      ],
+      "destination": [
+        279,
+        143,
+        82,
+        95
+      ]
+    },
+    {
+      "frame": 7,
+      "sourceFrame": 7,
+      "source": "docs/art-source/motions/production-144/agnes_digital/alpha.png",
+      "sourceSha256": "22f98a285705bb39b32f2e0b31bd392ee208824630364e04369aabdee21a1696",
+      "crop": [
+        807,
+        297,
+        975,
+        512
+      ],
+      "destination": [
+        410,
+        141,
+        76,
+        97
+      ]
+    },
+    {
+      "frame": 8,
+      "sourceFrame": 8,
+      "source": "docs/art-source/motions/production-144/agnes_digital/alpha.png",
+      "sourceSha256": "22f98a285705bb39b32f2e0b31bd392ee208824630364e04369aabdee21a1696",
+      "crop": [
+        57,
+        534,
+        244,
+        750
+      ],
+      "destination": [
+        22,
+        269,
+        84,
+        97
+      ]
+    },
+    {
+      "frame": 9,
+      "sourceFrame": 9,
+      "source": "docs/art-source/motions/production-144/agnes_digital/alpha.png",
+      "sourceSha256": "22f98a285705bb39b32f2e0b31bd392ee208824630364e04369aabdee21a1696",
+      "crop": [
+        307,
+        532,
+        466,
+        748
+      ],
+      "destination": [
+        156,
+        269,
+        72,
+        97
+      ]
+    },
+    {
+      "frame": 10,
+      "sourceFrame": 10,
+      "source": "docs/art-source/motions/production-144/agnes_digital/alpha.png",
+      "sourceSha256": "22f98a285705bb39b32f2e0b31bd392ee208824630364e04369aabdee21a1696",
+      "crop": [
+        546,
+        536,
+        730,
+        750
+      ],
+      "destination": [
+        278,
+        270,
+        83,
+        96
+      ]
+    },
+    {
+      "frame": 11,
+      "sourceFrame": 11,
+      "source": "docs/art-source/motions/production-144/agnes_digital/alpha.png",
+      "sourceSha256": "22f98a285705bb39b32f2e0b31bd392ee208824630364e04369aabdee21a1696",
+      "crop": [
+        827,
+        534,
+        974,
+        750
+      ],
+      "destination": [
+        415,
+        269,
+        66,
+        97
+      ]
+    },
+    {
+      "frame": 12,
+      "sourceFrame": 12,
+      "source": "docs/art-source/motions/production-144/agnes_digital/alpha.png",
+      "sourceSha256": "22f98a285705bb39b32f2e0b31bd392ee208824630364e04369aabdee21a1696",
+      "crop": [
+        43,
+        786,
+        235,
+        1006
+      ],
+      "destination": [
+        21,
+        395,
+        86,
+        99
+      ]
+    },
+    {
+      "frame": 13,
+      "sourceFrame": 13,
+      "source": "docs/art-source/motions/production-144/agnes_digital/alpha.png",
+      "sourceSha256": "22f98a285705bb39b32f2e0b31bd392ee208824630364e04369aabdee21a1696",
+      "crop": [
+        303,
+        792,
+        496,
+        1005
+      ],
+      "destination": [
+        148,
+        398,
+        87,
+        96
+      ]
+    },
+    {
+      "frame": 14,
+      "sourceFrame": 14,
+      "source": "docs/art-source/motions/production-144/agnes_digital/alpha.png",
+      "sourceSha256": "22f98a285705bb39b32f2e0b31bd392ee208824630364e04369aabdee21a1696",
+      "crop": [
+        559,
+        791,
+        737,
+        1005
+      ],
+      "destination": [
+        280,
+        398,
+        80,
+        96
+      ]
+    },
+    {
+      "frame": 15,
+      "sourceFrame": 15,
+      "source": "docs/art-source/motions/production-144/agnes_digital/alpha.png",
+      "sourceSha256": "22f98a285705bb39b32f2e0b31bd392ee208824630364e04369aabdee21a1696",
+      "crop": [
+        819,
+        810,
+        988,
+        1005
+      ],
+      "destination": [
+        410,
+        406,
+        76,
+        88
+      ]
+    },
+    {
+      "frame": 16,
+      "sourceFrame": 16,
+      "source": "docs/art-source/motions/production-144/agnes_digital/alpha.png",
+      "sourceSha256": "22f98a285705bb39b32f2e0b31bd392ee208824630364e04369aabdee21a1696",
+      "crop": [
+        61,
+        1045,
+        219,
+        1257
+      ],
+      "destination": [
+        28,
+        527,
+        71,
+        95
+      ]
+    },
+    {
+      "frame": 17,
+      "sourceFrame": 17,
+      "source": "docs/art-source/motions/production-144/agnes_digital/alpha.png",
+      "sourceSha256": "22f98a285705bb39b32f2e0b31bd392ee208824630364e04369aabdee21a1696",
+      "crop": [
+        311,
+        1083,
+        477,
+        1251
+      ],
+      "destination": [
+        154,
+        546,
+        75,
+        76
+      ]
+    },
+    {
+      "frame": 18,
+      "sourceFrame": 18,
+      "source": "docs/art-source/motions/production-144/agnes_digital/alpha.png",
+      "sourceSha256": "22f98a285705bb39b32f2e0b31bd392ee208824630364e04369aabdee21a1696",
+      "crop": [
+        537,
+        1094,
+        708,
+        1251
+      ],
+      "destination": [
+        281,
+        551,
+        77,
+        71
+      ]
+    },
+    {
+      "frame": 19,
+      "sourceFrame": 19,
+      "source": "docs/art-source/motions/production-144/agnes_digital/alpha.png",
+      "sourceSha256": "22f98a285705bb39b32f2e0b31bd392ee208824630364e04369aabdee21a1696",
+      "crop": [
+        784,
+        1154,
+        995,
+        1249
+      ],
+      "destination": [
+        400,
+        579,
+        95,
+        43
+      ]
+    },
+    {
+      "frame": 20,
+      "sourceFrame": 20,
+      "source": "docs/art-source/motions/production-144/agnes_digital/alpha.png",
+      "sourceSha256": "22f98a285705bb39b32f2e0b31bd392ee208824630364e04369aabdee21a1696",
+      "crop": [
+        57,
+        1285,
+        208,
+        1515
+      ],
+      "destination": [
+        30,
+        646,
+        68,
+        104
+      ]
+    },
+    {
+      "frame": 21,
+      "sourceFrame": 21,
+      "source": "docs/art-source/motions/production-144/agnes_digital/alpha.png",
+      "sourceSha256": "22f98a285705bb39b32f2e0b31bd392ee208824630364e04369aabdee21a1696",
+      "crop": [
+        305,
+        1293,
+        463,
+        1517
+      ],
+      "destination": [
+        156,
+        649,
+        71,
+        101
+      ]
+    },
+    {
+      "frame": 22,
+      "sourceFrame": 22,
+      "source": "docs/art-source/motions/production-144/agnes_digital/alpha.png",
+      "sourceSha256": "22f98a285705bb39b32f2e0b31bd392ee208824630364e04369aabdee21a1696",
+      "crop": [
+        550,
+        1285,
+        710,
+        1516
+      ],
+      "destination": [
+        284,
+        646,
+        72,
+        104
+      ]
+    },
+    {
+      "frame": 23,
+      "sourceFrame": 23,
+      "source": "docs/art-source/motions/production-144/agnes_digital/alpha.png",
+      "sourceSha256": "22f98a285705bb39b32f2e0b31bd392ee208824630364e04369aabdee21a1696",
+      "crop": [
+        818,
+        1289,
+        974,
+        1518
+      ],
+      "destination": [
+        413,
+        647,
+        70,
+        103
+      ]
+    }
+  ]
+}

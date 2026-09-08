@@ -1,0 +1,4 @@
+{
+  "prompt": "Extract this sprite sheet onto a genuinely transparent alpha-zero background. Remove the gray checkerboard surrounding every character and between limbs. Also remove floating sparks, aura rings, shield shapes, speed lines and decorative particles: the game engine draws these separately. Preserve every one of the 24 character BODY POSES, identity, hair, hands, costume details including white areas, proportions and 4-column 6-row layout exactly. No redesign, no checkerboard visualization or colored backdrop in the delivered 1024x1536 PNG. Only 24 separate character drawings with transparent gaps.",
+  "tool": "builtin-imagegen"
+}
