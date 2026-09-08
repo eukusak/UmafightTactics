@@ -3,12 +3,22 @@ import { createMatch, RoundDirector } from '../src/game/engine/rounds/director';
 import { isAlive, type MatchState } from '../src/game/engine/state';
 import { currentPickers } from '../src/game/engine/rounds/draft';
 import { roundInfo } from '../src/game/engine/rounds/schedule';
+import { ROSTER_HASH } from '../src/game/engine/roster';
+import type { PendingSettlement } from '../src/game/engine/rounds/director';
+import type { BattleFrame } from '../src/game/engine/battle/engine';
 import { applyOnlineCommand, autoField } from '../src/game/network/commands';
 import type { ClientMessage, RoomView, ServerMessage } from '../src/game/network/protocol';
 
 export type Peer = { send: (message: ServerMessage) => void; close: () => void };
 type Seat = { id: string; name: string; token: string; ready: boolean; peer: Peer | null; disconnectedAt: number; lastSeq: number; sentFrames: number };
 export type Room = { code: string; hostId: string; seats: Seat[]; director: RoundDirector | null; deadline: number; changedAt: number; phaseKey: string; battleStarted: number; battleDuration: number; battleId: string | null; settled: boolean };
+type SavedRoom = Omit<Room, 'director' | 'seats'> & {
+  seats: Omit<Seat, 'peer'>[];
+  match: MatchState | null;
+  pending: PendingSettlement | null;
+  frames: [string, BattleFrame[]][];
+};
+export type RoomSnapshot = { version: 1; rosterHash: string; savedAt: number; rooms: SavedRoom[] };
 
 /** Only public scouting data and the recipient's private economy leave the server. */
 export function privateMatch(state: MatchState, playerId: string): MatchState {
@@ -25,6 +35,40 @@ export class RoomService {
   readonly rooms = new Map<string, Room>();
   private memberships = new Map<Peer, { room: Room; seat: Seat }>();
   constructor(private now: () => number = Date.now, private maxRooms = 16) {}
+
+  /** Private server checkpoint, including tokens and future frames. Never serve it over HTTP. */
+  snapshot(): RoomSnapshot {
+    return structuredClone({ version: 1, rosterHash: ROSTER_HASH, savedAt: this.now(), rooms: [...this.rooms.values()].map((room) => {
+      const { director, seats, ...rest } = room;
+      director?.syncRng();
+      return { ...rest, seats: seats.map(({ peer: _peer, ...seat }) => seat),
+        match: director?.state ?? null, pending: director?.exportPendingSettlement() ?? null,
+        frames: director ? [...director.playerFrames] : [] };
+    }) });
+  }
+
+  restore(snapshot: RoomSnapshot): void {
+    if (this.rooms.size || this.memberships.size) throw new Error('Restore requires an empty room service');
+    if (snapshot.version !== 1 || snapshot.rosterHash !== ROSTER_HASH || !Number.isFinite(snapshot.savedAt)
+      || !Array.isArray(snapshot.rooms) || snapshot.rooms.length > this.maxRooms) throw new Error('Incompatible room checkpoint');
+    const saved = structuredClone(snapshot);
+    const restored = new Map<string, Room>();
+    const now = this.now();
+    // Pause downtime: players return to the same remaining selection/battle time.
+    const shift = now - saved.savedAt;
+    for (const entry of saved.rooms) {
+      const { match, pending, frames, seats, ...rest } = entry;
+      if (!/^[A-Z2-9]{6}$/.test(rest.code) || restored.has(rest.code) || !seats.length || seats.length > 8
+        || !Number.isFinite(rest.deadline) || !Number.isFinite(rest.battleStarted)) throw new Error('Invalid saved room');
+      const director = match ? new RoundDirector(match) : null;
+      director?.restorePendingSettlement(pending);
+      for (const [id, record] of frames) director?.playerFrames.set(id, record);
+      restored.set(rest.code, { ...rest, director, deadline: rest.deadline ? rest.deadline + shift : 0,
+        battleStarted: rest.battleId ? rest.battleStarted + shift : 0, changedAt: now,
+        seats: seats.map((seat) => ({ ...seat, peer: null, disconnectedAt: now, sentFrames: 0 })) });
+    }
+    for (const [code, room] of restored) this.rooms.set(code, room);
+  }
 
   receive(peer: Peer, message: ClientMessage): void {
     try { this.handle(peer, message); } catch (e) {

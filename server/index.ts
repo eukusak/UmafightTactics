@@ -3,6 +3,8 @@ import { WebSocketServer, WebSocket } from 'ws';
 import { pathToFileURL } from 'node:url';
 import { clientMessageSchema } from '../src/game/network/protocol';
 import { RoomService, type Peer } from './rooms';
+import { loadRooms, saveRooms } from './persistence';
+import { resolve, relative, isAbsolute } from 'node:path';
 
 export function attachMultiplayer(server: Server, rooms = new RoomService()) {
   const wss = new WebSocketServer({ noServer: true, maxPayload: 8192, perMessageDeflate: { threshold: 1024 } });
@@ -50,8 +52,30 @@ async function main(): Promise<void> {
     if (req.url === '/health') { res.writeHead(200, { 'Content-Type': 'application/json', 'Cache-Control': 'no-store' }); res.end('{"ok":true,"multiplayer":true}'); return; }
     staticHandler(req, res);
   });
-  attachMultiplayer(server);
+  const rooms = new RoomService();
+  const checkpoint = process.env.ROOM_STATE_FILE;
+  if (checkpoint) {
+    for (const directory of ['public', 'dist']) {
+      const subpath = relative(resolve(directory), resolve(checkpoint));
+      if (!subpath || (!subpath.startsWith('..') && !isAbsolute(subpath))) throw new Error('ROOM_STATE_FILE must be outside public/dist');
+    }
+    loadRooms(checkpoint, rooms);
+  }
+  const { wss } = attachMultiplayer(server, rooms);
+  const persist = () => { if (checkpoint) saveRooms(checkpoint, rooms); };
+  const saver = checkpoint ? setInterval(() => {
+    try { persist(); } catch { console.error('Room checkpoint failed; check disk space and permissions.'); }
+  }, 2000) : null;
+  saver?.unref();
   server.listen(Number(process.env.PORT) || 4173, process.env.HOST || '0.0.0.0', () => console.log('UmafightTactics HTTP + multiplayer server ready'));
-  for (const signal of ['SIGTERM', 'SIGINT']) process.once(signal, () => server.close(() => process.exit(0)));
+  let stopping = false;
+  for (const signal of ['SIGTERM', 'SIGINT']) process.once(signal, () => {
+    if (stopping) return;
+    stopping = true;
+    if (saver) clearInterval(saver);
+    try { persist(); } catch { console.error('Final room checkpoint failed.'); process.exitCode = 1; }
+    for (const ws of wss.clients) ws.terminate();
+    server.close(() => process.exit(process.exitCode ?? 0));
+  });
 }
 if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) void main();

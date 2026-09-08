@@ -92,6 +92,13 @@ export function createMatch(options: CreateMatchOptions): MatchState {
   };
 }
 
+export type PendingSettlement = {
+  resolution: RoundResolution;
+  afterStreaks: Record<string, number>;
+  pvpWinners: string[];
+  isPve: boolean;
+};
+
 export class RoundDirector {
   readonly rngs: RngRegistry;
   /**
@@ -105,15 +112,20 @@ export class RoundDirector {
   readonly playerFrames = new Map<string, BattleFrame[]>();
   /** Whether the human's fight was against PvE, for the battle banner. */
   lastHumanBattleWasPve = false;
-  private pendingSettlement: (() => RoundResolution) | null = null;
+  private pendingSettlement: PendingSettlement | null = null;
 
   get hasPendingSettlement(): boolean { return this.pendingSettlement !== null; }
 
-  /** Commit rewards and standings once the recorded fight has finished. */
-  settleRound(): RoundResolution | null {
-    const settle = this.pendingSettlement;
-    this.pendingSettlement = null;
-    return settle ? settle() : this.state.lastResolution;
+  /** Internal persistence data; never include this in a client state. */
+  exportPendingSettlement(): PendingSettlement | null {
+    return structuredClone(this.pendingSettlement);
+  }
+
+  restorePendingSettlement(pending: PendingSettlement | null): void {
+    if ((this.state.phase === 'BATTLE') !== (pending !== null)) {
+      throw new Error('Battle settlement does not match saved phase');
+    }
+    this.pendingSettlement = structuredClone(pending);
   }
 
   constructor(readonly state: MatchState) {
@@ -276,54 +288,66 @@ export class RoundDirector {
     const resolution: RoundResolution = {
       stage: s.stage, round: s.round, kind: this.info.kind, outcomes, damage, eliminated: [],
     };
-    this.pendingSettlement = () => {
-      for (const p of s.players) p.streak = afterStreaks.get(p.id)!;
-      if (kind === 'PVE') this.grantPveRewards(outcomes);
-      // Damage, loot, income and eliminations become visible together at END.
-      const roundKey = absoluteRound(s.stage, s.round);
-      for (const p of s.players) {
-        if (!isAlive(p)) continue;
-        const dmg = damage[p.id] ?? 0;
-        if (dmg > 0) {
-          p.hp = Math.max(0, p.hp - dmg);
-          p.hpChangedAtRound = roundKey;
-        }
-      }
-
-      // Eliminations, lowest HP resolved last so placements are stable.
-      s.phase = 'ELIMINATION';
-      const eliminated: string[] = [];
-      // Not-yet-eliminated players whose HP has just run out. `isAlive` already
-      // requires hp > 0, so it must not be part of this filter.
-      const dying = s.players.filter((p) => p.eliminatedAtRound === null && p.hp <= 0);
-      // Lowest HP is eliminated "first" and so takes the worst remaining place.
-      dying.sort((a, b) => a.hp - b.hp || a.id.localeCompare(b.id));
-      const stillInMatch = s.players.filter((p) => p.eliminatedAtRound === null).length;
-      dying.forEach((p, i) => {
-        p.eliminatedAtRound = roundKey;
-        p.placement = stillInMatch - i;
-        eliminated.push(p.id);
-        // Spec §17.3 — everything they hold goes straight back to the pool.
-        for (const u of [...p.board, ...p.bench]) returnInstance(s.pool, u);
-        p.board = [];
-        p.bench = [];
-      });
-
-      // Income for everyone still standing.
-      for (const p of livingPlayers(s)) {
-        p.gold += roundIncome(p, s.stage, s.round, pvpWinners.has(p.id));
-        grantRoundXp(p);
-      }
-
-      resolution.eliminated = eliminated;
-      s.lastResolution = resolution;
-      s.history.push(resolution);
-      s.phase = 'ROUND_RESOLVE';
-      this.syncRng();
-      return resolution;
+    this.pendingSettlement = {
+      resolution, afterStreaks: Object.fromEntries(afterStreaks),
+      pvpWinners: [...pvpWinners], isPve: kind === 'PVE',
     };
     this.syncRng();
     return deferSettlement ? resolution : this.settleRound()!;
+  }
+
+  /** Commit rewards and standings once, including after a server restart. */
+  settleRound(): RoundResolution | null {
+    const pending = this.pendingSettlement;
+    if (!pending) return this.state.lastResolution;
+    this.pendingSettlement = null;
+    const s = this.state;
+    const { resolution, afterStreaks, pvpWinners, isPve } = pending;
+    const { outcomes, damage } = resolution;
+    for (const p of s.players) p.streak = afterStreaks[p.id];
+    if (isPve) this.grantPveRewards(outcomes);
+    // Damage, loot, income and eliminations become visible together at END.
+    const roundKey = absoluteRound(s.stage, s.round);
+    for (const p of s.players) {
+      if (!isAlive(p)) continue;
+      const dmg = damage[p.id] ?? 0;
+      if (dmg > 0) {
+        p.hp = Math.max(0, p.hp - dmg);
+        p.hpChangedAtRound = roundKey;
+      }
+    }
+
+    // Eliminations, lowest HP resolved last so placements are stable.
+    s.phase = 'ELIMINATION';
+    const eliminated: string[] = [];
+    // Not-yet-eliminated players whose HP has just run out. `isAlive` already
+    // requires hp > 0, so it must not be part of this filter.
+    const dying = s.players.filter((p) => p.eliminatedAtRound === null && p.hp <= 0);
+    // Lowest HP is eliminated "first" and so takes the worst remaining place.
+    dying.sort((a, b) => a.hp - b.hp || a.id.localeCompare(b.id));
+    const stillInMatch = s.players.filter((p) => p.eliminatedAtRound === null).length;
+    dying.forEach((p, i) => {
+      p.eliminatedAtRound = roundKey;
+      p.placement = stillInMatch - i;
+      eliminated.push(p.id);
+      // Spec §17.3 — everything they hold goes straight back to the pool.
+      for (const u of [...p.board, ...p.bench]) returnInstance(s.pool, u);
+      p.board = [];
+      p.bench = [];
+    });
+
+    // Income for everyone still standing.
+    for (const p of livingPlayers(s)) {
+      p.gold += roundIncome(p, s.stage, s.round, pvpWinners.includes(p.id));
+      grantRoundXp(p);
+    }
+
+    resolution.eliminated = eliminated;
+    s.lastResolution = resolution;
+    s.history.push(resolution);
+    s.phase = 'ROUND_RESOLVE';
+    this.syncRng();
+    return resolution;
   }
 
   /** Drops board units beyond the team size limit back onto the bench. */

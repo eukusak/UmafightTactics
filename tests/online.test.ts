@@ -109,3 +109,62 @@ describe('authoritative eight-player rooms', () => {
     expect(clientMessageSchema.safeParse({ type: 'state', match: {} }).success).toBe(false);
   });
 });
+
+describe('server restart checkpoints', () => {
+  it('preserves eight seats, private state and the remaining draft deadline', () => {
+    const f = fixture(); f.start();
+    const saved = JSON.parse(JSON.stringify(f.service.snapshot()));
+    const resumedAt = saved.savedAt + 60_000;
+    const restored = new RoomService(() => resumedAt);
+    restored.restore(saved);
+    const room = restored.rooms.get(f.room.code)!;
+    expect(room.director!.state).toEqual(f.room.director!.state);
+    expect(room.deadline - resumedAt).toBe(f.room.deadline - saved.savedAt);
+    expect(room.seats.every((seat) => seat.peer === null)).toBe(true);
+    const peers = Array.from({ length: 8 }, peer);
+    peers.forEach((p, i) => restored.receive(p, { type: 'resume', code: room.code, token: f.room.seats[i].token }));
+    expect(room.seats.every((seat) => seat.peer !== null)).toBe(true);
+    peers.forEach((p, i) => {
+      const state = p.messages.filter((m) => m.type === 'state').at(-1)!;
+      expect(state.match.players.filter((player) => player.id !== `p${i + 1}`).every((player) => !player.shop.length)).toBe(true);
+      expect(JSON.stringify(p.messages)).not.toContain(f.room.seats[(i + 1) % 8].token);
+    });
+  });
+
+  it('resumes battle without future frames, duplicate rewards or RNG divergence', () => {
+    const f = fixture(); f.start(); f.prep(); f.tick();
+    // Purchases during playback must survive too; restoring must not rerun combat.
+    const d = f.room.director!;
+    f.send(0, { type: 'command', seq: 7, round: `${d.state.stage}-${d.state.round}`, command: { action: 'lock' } });
+    f.tick(f.room.battleStarted + 500);
+    const saved = JSON.parse(JSON.stringify(f.service.snapshot()));
+    let time = saved.savedAt + 90_000;
+    const restored = new RoomService(() => time); restored.restore(saved);
+    const room = restored.rooms.get(f.room.code)!;
+    const p = peer(); restored.receive(p, { type: 'resume', code: room.code, token: f.room.seats[0].token });
+    expect(p.messages.find((m) => m.type === 'welcome')).toMatchObject({ lastSeq: 7 });
+    const frames = p.messages.find((m) => m.type === 'frames')!;
+    expect(frames.reset).toBe(true);
+    expect(frames.frames.length).toBeGreaterThan(0);
+    expect(frames.frames.every((frame) => frame.t <= 0.5)).toBe(true);
+    time = room.deadline + 1; restored.tick(); f.tick();
+    expect(room.director!.state).toEqual(d.state);
+    const settled = structuredClone(room.director!.state);
+    room.director!.settleRound(); expect(room.director!.state).toEqual(settled);
+    time = room.deadline + 1; restored.tick(); f.tick();
+    expect(room.director!.state).toEqual(d.state);
+  });
+
+  it('restores settled rounds without a second payout and rejects incompatible snapshots atomically', () => {
+    const f = fixture(); f.start(); f.prep(); f.tick(); f.tick();
+    const saved = f.service.snapshot();
+    const restored = new RoomService(); restored.restore(saved);
+    const d = restored.rooms.get(f.room.code)!.director!;
+    const before = structuredClone(d.state); d.settleRound(); expect(d.state).toEqual(before);
+    const empty = new RoomService();
+    expect(() => empty.restore({ ...saved, rosterHash: 'different' })).toThrow();
+    expect(empty.rooms.size).toBe(0);
+    const broken = structuredClone(saved); broken.rooms[0].match!.phase = 'BATTLE';
+    expect(() => empty.restore(broken)).toThrow(); expect(empty.rooms.size).toBe(0);
+  });
+});
