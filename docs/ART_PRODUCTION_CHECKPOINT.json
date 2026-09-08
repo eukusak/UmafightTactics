@@ -1,0 +1,56 @@
+{
+  "baseCommit": "7752f389fdcfeceb739b44f6879949a8c742509f",
+  "completedBatch": [
+    "silence_suzuka",
+    "fuji_kiseki",
+    "oguri_cap",
+    "gold_ship",
+    "vodka",
+    "grass_wonder"
+  ],
+  "acceptedArt": 239,
+  "requiredArt": 514,
+  "remaining": {
+    "portraits": 130,
+    "battleSheets": 145,
+    "cutins": 0
+  },
+  "nextPortraitIds": [
+    "hishi_amazon",
+    "mejiro_mcqueen",
+    "el_condor_pasa",
+    "narita_brian",
+    "symboli_rudolf",
+    "air_groove",
+    "agnes_digital",
+    "seiun_sky",
+    "tamamo_cross",
+    "fine_motion",
+    "biwa_hayahide",
+    "mayano_top_gun"
+  ],
+  "rigging": {
+    "character": "special_week",
+    "availableComponents": [
+      "head",
+      "torso",
+      "skirt",
+      "tail",
+      "hand"
+    ],
+    "status": "partial-source-only",
+    "riggedModels": 0,
+    "requires": [
+      "complete separated artwork",
+      "Cubism Editor mesh/deformers/parameters/physics",
+      "compiled model and runtime verification"
+    ]
+  },
+  "resumeInstructions": [
+    "Read this checkpoint and current PR head before creating assets.",
+    "Skip paths already listed in delivered-art.json.",
+    "Inspect true alpha and identity before running scripts/import-portrait.py.",
+    "Upload and verify original/runtime Git blob hashes before advancing branch ref.",
+    "Update counts only for accepted runtime assets; source components are not completed battle sheets."
+  ]
+}

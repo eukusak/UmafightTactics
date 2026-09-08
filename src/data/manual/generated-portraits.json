@@ -1,0 +1,128 @@
+{
+  "silence_suzuka": {
+    "file": "portraits/silence_suzuka.png",
+    "source": "docs/art-source/portraits/batch-02/silence_suzuka.png",
+    "sourceSha256": "38df78e047673e7a54400cd95ec7131b2e94d9cef9289dbe2b29c68b9f127f01",
+    "reference": "public/assets/characters/reference_previews/silence_suzuka.png",
+    "sourceSize": [
+      1254,
+      1254
+    ],
+    "crop": [
+      91,
+      25,
+      1190,
+      1254
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "fuji_kiseki": {
+    "file": "portraits/fuji_kiseki.png",
+    "source": "docs/art-source/portraits/batch-02/fuji_kiseki.png",
+    "sourceSha256": "fb3aec34fac250e6febfab0feb3950072de4fc062dbe482dff2b0ea789ee744b",
+    "reference": "public/assets/characters/reference_previews/fuji_kiseki.png",
+    "sourceSize": [
+      1254,
+      1254
+    ],
+    "crop": [
+      19,
+      1,
+      1200,
+      1254
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "oguri_cap": {
+    "file": "portraits/oguri_cap.png",
+    "source": "docs/art-source/portraits/batch-02/oguri_cap.png",
+    "sourceSha256": "f11ab80e3dfe8015e0c9cbb55c9210baacd89a38a85bc52cbdb906266fff2082",
+    "reference": "public/assets/characters/reference_previews/oguri_cap.png",
+    "sourceSize": [
+      1254,
+      1254
+    ],
+    "crop": [
+      49,
+      23,
+      1217,
+      1254
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "gold_ship": {
+    "file": "portraits/gold_ship.png",
+    "source": "docs/art-source/portraits/batch-02/gold_ship.png",
+    "sourceSha256": "27b60eafb830d6b3a17f728626f8180ba293ce953d196b11dd4d1d273ed9a79e",
+    "reference": "public/assets/characters/reference_previews/gold_ship.png",
+    "sourceSize": [
+      1254,
+      1254
+    ],
+    "crop": [
+      61,
+      30,
+      1210,
+      1254
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "vodka": {
+    "file": "portraits/vodka.png",
+    "source": "docs/art-source/portraits/batch-02/vodka.png",
+    "sourceSha256": "0cc58f80942b1de36510a4a39fb5a901bcf64e75af89e42c761c08ea476b8066",
+    "reference": "public/assets/characters/reference_previews/vodka.png",
+    "sourceSize": [
+      1254,
+      1254
+    ],
+    "crop": [
+      0,
+      17,
+      1196,
+      1254
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "grass_wonder": {
+    "file": "portraits/grass_wonder.png",
+    "source": "docs/art-source/portraits/batch-02/grass_wonder.png",
+    "sourceSha256": "50f7b4aade6341bcc9bb6c87b974b38c86cc8901121b4267463842988b5be918",
+    "reference": "public/assets/characters/reference_previews/grass_wonder.png",
+    "sourceSize": [
+      1254,
+      1254
+    ],
+    "crop": [
+      41,
+      10,
+      1218,
+      1254
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  }
+}
