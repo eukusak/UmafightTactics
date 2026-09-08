@@ -1,26 +1,16 @@
 {
-  "acceptedArt": 284,
-  "baseCommit": "3dec43b587ffe64e915c0ff3f2895e630f605a6c",
-  "batchSize": 10,
+  "acceptedArt": 289,
+  "baseCommit": "319e088ee481f3fb9967760254c4dc3a51d56243",
+  "batchSize": 5,
   "completedBatch": [
-    "logotype",
-    "victoire_pisa",
-    "rose_kingdom",
-    "rulership",
-    "efforia",
-    "titleholder",
-    "phalaenopsis",
-    "verxina",
-    "manhattan_cafe",
-    "espoir_city"
-  ],
-  "completedPortraits": 60,
-  "nextPortraitIds": [
     "narita_taishin",
     "nishino_flower",
     "haru_urara",
     "bamboo_memory",
-    "biko_pegasus",
+    "biko_pegasus"
+  ],
+  "completedPortraits": 65,
+  "nextPortraitIds": [
     "marvelous_sunday",
     "matikanefukukitaru",
     "mr_cb",
@@ -104,7 +94,7 @@
   ],
   "portraitTarget": 145,
   "remaining": {
-    "portraits": 85,
+    "portraits": 80,
     "battleSheets": 145,
     "cutins": 0
   },
@@ -134,7 +124,8 @@
       "compiled model and runtime verification"
     ]
   },
-  "workflow": "Generate ten distinct portraits, inspect and package, commit/push and verify, then begin next ten (final remainder allowed). Complete all 145 portraits before rigging one character at a time.",
+  "workflow": "This session generates five distinct portraits, inspects and saves to GitHub, verifies, then begins the next five. Preserve the separate concurrent ten-character batches. Complete all 145 portraits before rigging one character at a time.",
   "latestTenCharacterBatch": "batch-1001",
-  "batchSelectionNote": "Last ten missing IDs selected to avoid overlap with another active session working from the start of the queue."
+  "batchSelectionNote": "Last ten missing IDs selected to avoid overlap with another active session working from the start of the queue.",
+  "latestFiveCharacterBatch": "batch-10"
 }

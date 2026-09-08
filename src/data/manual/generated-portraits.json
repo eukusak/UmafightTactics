@@ -1069,5 +1069,110 @@
       256
     ],
     "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "narita_taishin": {
+    "file": "portraits/narita_taishin.png",
+    "source": "docs/art-source/portraits/batch-10/narita_taishin.png",
+    "sourceSha256": "95eeae144afd37a8246462b7bb7634bfaf791173dce71298df5eeaa66fef471e",
+    "reference": "public/assets/characters/race/NaritaTaishin-Race.png",
+    "sourceSize": [
+      1199,
+      1312
+    ],
+    "crop": [
+      0,
+      6,
+      1185,
+      1312
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "nishino_flower": {
+    "file": "portraits/nishino_flower.png",
+    "source": "docs/art-source/portraits/batch-10/nishino_flower.png",
+    "sourceSha256": "8bc7597f22b7e40c6b97d605bbee2fa804d00b7ddc7c11a5917e8d6368a64ca0",
+    "reference": "public/assets/characters/race/NishinoFlower-Race.png",
+    "sourceSize": [
+      1206,
+      1304
+    ],
+    "crop": [
+      0,
+      0,
+      1098,
+      1304
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "haru_urara": {
+    "file": "portraits/haru_urara.png",
+    "source": "docs/art-source/portraits/batch-10/haru_urara.png",
+    "sourceSha256": "acb66f352b9fa4291bedb275919d84631eb861b01f0d591eee99052c2453f231",
+    "reference": "public/assets/characters/race/HaruUrara-Race.png",
+    "sourceSize": [
+      1159,
+      1358
+    ],
+    "crop": [
+      0,
+      10,
+      1159,
+      1358
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "bamboo_memory": {
+    "file": "portraits/bamboo_memory.png",
+    "source": "docs/art-source/portraits/batch-10/bamboo_memory.png",
+    "sourceSha256": "e8f72115ced03dd29bac2bb0a3c940e486a29b6094db5dcad25d3a2de852f0f6",
+    "reference": "public/assets/characters/race/BambooMemory-Race.png",
+    "sourceSize": [
+      1145,
+      1374
+    ],
+    "crop": [
+      49,
+      0,
+      1129,
+      1374
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "biko_pegasus": {
+    "file": "portraits/biko_pegasus.png",
+    "source": "docs/art-source/portraits/batch-10/biko_pegasus.png",
+    "sourceSha256": "ad595b5e152f62a822d8e801915a7396ee33c526a10698eba3356d75e753b10a",
+    "reference": "public/assets/characters/race/BikoPegasus-Race.png",
+    "sourceSize": [
+      1225,
+      1284
+    ],
+    "crop": [
+      0,
+      16,
+      1207,
+      1284
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
   }
 }
