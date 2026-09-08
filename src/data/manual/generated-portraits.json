@@ -1384,5 +1384,110 @@
       256
     ],
     "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "daitaku_helios": {
+    "file": "portraits/daitaku_helios.png",
+    "source": "docs/art-source/portraits/batch-13/daitaku_helios.png",
+    "sourceSha256": "bb5938add9707adccd9456d59ba8e3b78693775f34cd0e6e5910c82b43d72470",
+    "reference": "public/assets/characters/race/DaitakuHelios-Race.png",
+    "sourceSize": [
+      1230,
+      1278
+    ],
+    "crop": [
+      0,
+      0,
+      1230,
+      1278
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "twin_turbo": {
+    "file": "portraits/twin_turbo.png",
+    "source": "docs/art-source/portraits/batch-13/twin_turbo.png",
+    "sourceSha256": "88958419d5a36e5cd7869618e77649bc275362bb3d0c2bd55b453ca7dd095ded",
+    "reference": "public/assets/characters/race/TwinTurbo-Race.png",
+    "sourceSize": [
+      1306,
+      1205
+    ],
+    "crop": [
+      0,
+      0,
+      1306,
+      1205
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "satono_diamond": {
+    "file": "portraits/satono_diamond.png",
+    "source": "docs/art-source/portraits/batch-13/satono_diamond.png",
+    "sourceSha256": "a1730d87eb0aab0d6b0acb0ea31084c9da7eecdda913c4096f76671ba92f58ef",
+    "reference": "public/assets/characters/race/SatonoDiamond-Race.png",
+    "sourceSize": [
+      1149,
+      1369
+    ],
+    "crop": [
+      0,
+      0,
+      1149,
+      1369
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "kitasan_black": {
+    "file": "portraits/kitasan_black.png",
+    "source": "docs/art-source/portraits/batch-13/kitasan_black.png",
+    "sourceSha256": "19d79c7a3888a728ad4444c1f7da207394c39d75b972132949f89cab8f70bb2e",
+    "reference": "public/assets/characters/race/KitasanBlack-Race.png",
+    "sourceSize": [
+      1159,
+      1357
+    ],
+    "crop": [
+      15,
+      0,
+      1159,
+      1357
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "sakura_chiyono_o": {
+    "file": "portraits/sakura_chiyono_o.png",
+    "source": "docs/art-source/portraits/batch-13/sakura_chiyono_o.png",
+    "sourceSha256": "45c8d20c8ae26965174edcffea43c6a5b029a19ea8258ea248ee5ea13dbefa5b",
+    "reference": "public/assets/characters/race/SakuraChiyonoO-Race.png",
+    "sourceSize": [
+      1157,
+      1360
+    ],
+    "crop": [
+      34,
+      0,
+      1121,
+      1360
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
   }
 }

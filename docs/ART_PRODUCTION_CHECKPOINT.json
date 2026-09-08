@@ -1,21 +1,16 @@
 {
-  "acceptedArt": 299,
-  "baseCommit": "8866b3cc4b2d00a15348e36ba5aeb0b1b06d5147",
+  "acceptedArt": 304,
+  "baseCommit": "88f468137e372ba06fc89626f1f340bea7c903b4",
   "batchSize": 5,
   "completedBatch": [
-    "nice_nature",
-    "king_halo",
-    "matikanetannhauser",
-    "ikuno_dictus",
-    "mejiro_palmer"
-  ],
-  "completedPortraits": 75,
-  "nextPortraitIds": [
     "daitaku_helios",
     "twin_turbo",
     "satono_diamond",
     "kitasan_black",
-    "sakura_chiyono_o",
+    "sakura_chiyono_o"
+  ],
+  "completedPortraits": 80,
+  "nextPortraitIds": [
     "sirius_symboli",
     "mejiro_ardan",
     "yaeno_muteki",
@@ -84,7 +79,7 @@
   ],
   "portraitTarget": 145,
   "remaining": {
-    "portraits": 70,
+    "portraits": 65,
     "battleSheets": 145,
     "cutins": 0
   },
@@ -117,5 +112,5 @@
   "workflow": "This session generates five distinct portraits, inspects and saves to GitHub, verifies, then begins the next five. Preserve the separate concurrent ten-character batches. Complete all 145 portraits before rigging one character at a time.",
   "latestTenCharacterBatch": "batch-1001",
   "batchSelectionNote": "Last ten missing IDs selected to avoid overlap with another active session working from the start of the queue.",
-  "latestFiveCharacterBatch": "batch-12"
+  "latestFiveCharacterBatch": "batch-13"
 }
