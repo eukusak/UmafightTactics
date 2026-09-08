@@ -1,37 +1,15 @@
-# Blueprint for Render.
-#
-# IMPORTANT: this file only takes effect for a service created from a Blueprint
-# (Render dashboard -> New -> Blueprint). A service created by hand ignores it
-# and uses the dashboard settings instead, which for a Node project default to
-# `yarn` + `yarn start` -- an install with no build, and no start command.
-#
-# The game is a static SPA, so a Static Site is the right shape. If the service
-# is already a Node web service, the build still runs during install via
-# scripts/render-postinstall.mjs and `npm start` serves the result. The runtime
-# instance never builds: this build needs ~500MB of heap and a small instance
-# caps it near 256MB, which crash-loops the service.
+# A persistent Node web process is required for WebSocket rooms.
+# Existing Static Sites must be recreated as a Web Service to enable multiplayer.
 services:
   - type: web
     name: umafight-tactics
-    runtime: static
-    # `npm ci` needs the committed package-lock.json; do not switch this to yarn.
+    runtime: node
     buildCommand: npm ci && npm run build
-    staticPublishPath: ./dist
-    pullRequestPreviewsEnabled: true
+    startCommand: npm start
+    healthCheckPath: /health
+    numInstances: 1
     envVars:
-      # Matches .node-version and the Node 22 LTS the project is tested on.
       - key: NODE_VERSION
         value: "22"
-      # The bundle needs roughly 500MB of heap; a small container defaults to
-      # about 256MB. This only ever raises the ceiling.
       - key: NODE_OPTIONS
         value: "--max-old-space-size=1024"
-    routes:
-      # SPA fallback so deep links resolve to the app shell.
-      - type: rewrite
-        source: /*
-        destination: /index.html
-    headers:
-      - path: /assets/*
-        name: Cache-Control
-        value: public, max-age=31536000, immutable

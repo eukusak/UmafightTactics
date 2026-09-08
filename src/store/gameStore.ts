@@ -5,6 +5,7 @@
  * the engine; this file only sequences commands and mirrors state for render.
  */
 import { create } from 'zustand';
+import { onlineBridge } from '../game/network/bridge';
 import { DEFAULT_SEED } from '../game/engine/constants';
 import { createMatch, RoundDirector } from '../game/engine/rounds/director';
 import type { BattleFrame, BattleSideInput } from '../game/engine/battle/engine';
@@ -20,7 +21,7 @@ import type { TraitId } from '../game/engine/types';
 
 export type Screen =
   | 'BOOT' | 'TITLE' | 'MAIN_MENU' | 'MATCH_SETUP' | 'BATTLE' | 'DRAFT'
-  | 'AUGMENT' | 'COLLECTION' | 'SETTINGS' | 'RESULT';
+  | 'AUGMENT' | 'COLLECTION' | 'SETTINGS' | 'RESULT' | 'ONLINE';
 
 export type Settings = {
   battleSpeed: 1 | 2 | 4 | 10;
@@ -43,6 +44,11 @@ export const DEFAULT_KEYBINDS: Record<string, string> = {
 
 type GameStore = {
   screen: Screen;
+  onlinePlayerId: string | null;
+  onlineBattleId: string | null;
+  onlineDeadline: number;
+  onlineClockOffset: number;
+  networkConnected: boolean;
   director: RoundDirector | null;
   match: MatchState | null;
   /** Bumped on every mutation so React re-renders. */
@@ -103,6 +109,7 @@ const bump = (set: (fn: (s: GameStore) => Partial<GameStore>) => void) =>
 
 export const useGameStore = create<GameStore>((set, get) => ({
   screen: 'BOOT',
+  onlinePlayerId: null, onlineBattleId: null, onlineDeadline: 0, onlineClockOffset: 0, networkConnected: false,
   director: null,
   match: null,
   revision: 0,
@@ -120,6 +127,7 @@ export const useGameStore = create<GameStore>((set, get) => ({
   setScreen: (screen) => set({ screen }),
 
   newMatch: (seed = DEFAULT_SEED, name = '트레이너') => {
+    if (get().onlinePlayerId) onlineBridge.leave?.();
     const match = createMatch({ seed, humanName: name });
     const director = new RoundDirector(match);
     director.beginPrep();
@@ -128,6 +136,7 @@ export const useGameStore = create<GameStore>((set, get) => ({
   },
 
   continueMatch: () => {
+    if (get().onlinePlayerId) onlineBridge.leave?.();
     const result = loadFromStorage();
     if (!result.ok) {
       set({ lastError: result.reason === 'ROSTER_MISMATCH'
@@ -153,7 +162,9 @@ export const useGameStore = create<GameStore>((set, get) => ({
   hasSavedMatch: () => hasSave(),
 
   abandonMatch: () => {
-    clearSave();
+    const online = !!get().onlinePlayerId;
+    if (online) onlineBridge.leave?.();
+    else clearSave();
     set({ director: null, match: null, screen: 'MAIN_MENU', battleFrames: null, battleRunning: false, battleComplete: false, battleTime: 0 });
   },
 
@@ -173,6 +184,7 @@ export const useGameStore = create<GameStore>((set, get) => ({
   },
 
   buy: (slotIndex) => {
+    if (get().onlinePlayerId) { onlineBridge.send?.({ action: 'buy', slot: slotIndex }); return; }
     const { director } = get();
     const player = get().human();
     if (!director || !player) return;
@@ -183,6 +195,7 @@ export const useGameStore = create<GameStore>((set, get) => ({
   },
 
   sell: (instanceId) => {
+    if (get().onlinePlayerId) { onlineBridge.send?.({ action: 'sell', unit: instanceId }); return; }
     if (get().battleRunning && get().human()?.board.some((u) => u.instanceId === instanceId)) { set({ lastError: '전투 중인 유닛은 종료 후 판매할 수 있습니다.' }); return; }
     const { director } = get();
     const player = get().human();
@@ -193,6 +206,7 @@ export const useGameStore = create<GameStore>((set, get) => ({
   },
 
   reroll: () => {
+    if (get().onlinePlayerId) { onlineBridge.send?.({ action: 'reroll' }); return; }
     const { director } = get();
     const player = get().human();
     if (!director || !player) return;
@@ -203,6 +217,7 @@ export const useGameStore = create<GameStore>((set, get) => ({
   },
 
   buyExperience: () => {
+    if (get().onlinePlayerId) { onlineBridge.send?.({ action: 'xp' }); return; }
     const player = get().human();
     if (!player) return;
     if (!buyXp(player).ok) set({ lastError: '골드가 부족하거나 이미 최대 레벨입니다.' });
@@ -210,6 +225,7 @@ export const useGameStore = create<GameStore>((set, get) => ({
   },
 
   toggleLock: () => {
+    if (get().onlinePlayerId) { onlineBridge.send?.({ action: 'lock' }); return; }
     const player = get().human();
     if (!player) return;
     player.shopLocked = !player.shopLocked;
@@ -217,6 +233,7 @@ export const useGameStore = create<GameStore>((set, get) => ({
   },
 
   moveUnit: (instanceId, position) => {
+    if (get().onlinePlayerId) { onlineBridge.send?.({ action: 'move', unit: instanceId, position }); return; }
     if (get().battleRunning) { set({ lastError: '전투 종료 후 배치를 변경할 수 있습니다.' }); return; }
     if (position && (!Number.isInteger(position.q) || !Number.isInteger(position.r) || position.q < 0 || position.q > 6 || position.r < 0 || position.r > 3)) return;
     const { director } = get();
@@ -276,6 +293,7 @@ export const useGameStore = create<GameStore>((set, get) => ({
   },
 
   equip: (unitInstanceId, itemInstanceId) => {
+    if (get().onlinePlayerId) { onlineBridge.send?.({ action: 'equip', unit: unitInstanceId, item: itemInstanceId }); return; }
     if (get().battleRunning) { set({ lastError: '전투 종료 후 장착할 수 있습니다.' }); return; }
     const { director } = get();
     const player = get().human();
@@ -293,6 +311,7 @@ export const useGameStore = create<GameStore>((set, get) => ({
   },
 
   unequip: (unitInstanceId) => {
+    if (get().onlinePlayerId) return;
     if (get().battleRunning) { set({ lastError: '전투 종료 후 장비를 변경할 수 있습니다.' }); return; }
     const { director } = get();
     const player = get().human();
@@ -304,6 +323,7 @@ export const useGameStore = create<GameStore>((set, get) => ({
   },
 
   chooseAugment: (augmentId) => {
+    if (get().onlinePlayerId) { onlineBridge.send?.({ action: 'augment', id: augmentId }); return; }
     const { director } = get();
     const player = get().human();
     if (!director || !player) return;
@@ -313,6 +333,7 @@ export const useGameStore = create<GameStore>((set, get) => ({
   },
 
   pickDraft: (optionIndex) => {
+    if (get().onlinePlayerId) { onlineBridge.send?.({ action: 'draft', index: optionIndex }); return; }
     const { director } = get();
     const player = get().human();
     if (!director || !player) return;
@@ -324,6 +345,7 @@ export const useGameStore = create<GameStore>((set, get) => ({
   },
 
   startBattle: () => {
+    if (get().onlinePlayerId) return;
     const { director } = get();
     const player = get().human();
     if (!director || !player || get().battleRunning || director.isOver) return;
@@ -354,6 +376,7 @@ export const useGameStore = create<GameStore>((set, get) => ({
   setBattleTime: (seconds) => set({ battleTime: seconds }),
 
   completeBattle: () => {
+    if (get().onlinePlayerId) return;
     const { director, battleRunning, battleComplete } = get();
     if (!director || !battleRunning || battleComplete) return;
     director.settleRound();
@@ -364,6 +387,7 @@ export const useGameStore = create<GameStore>((set, get) => ({
 
   /** Results are committed once; continuing advances exactly one round. */
   finishBattle: () => {
+    if (get().onlinePlayerId) return;
     const { director } = get();
     if (!director || !get().battleRunning) return;
     get().completeBattle();
@@ -414,6 +438,7 @@ export const useGameStore = create<GameStore>((set, get) => ({
   setDevMode: (on) => set({ devMode: on }),
 
   devGrant: (action, payload) => {
+    if (get().onlinePlayerId) return;
     if (get().battleRunning) return;
     const { director } = get();
     const player = get().human();
@@ -463,6 +488,7 @@ export const useGameStore = create<GameStore>((set, get) => ({
   },
 
   save: () => {
+    if (get().onlinePlayerId) return;
     const { director } = get();
     if (director && !director.hasPendingSettlement) saveToStorage(director);
   },

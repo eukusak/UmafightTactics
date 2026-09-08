@@ -11,9 +11,15 @@ import { roundInfo } from '../../game/engine/rounds/schedule';
 import type { UnitInstance } from '../../game/engine/state';
 import { PromotionFeedback } from '../PromotionFeedback';
 import { BattleTelemetry } from '../BattleTelemetry';
+import { OnlineClock } from './OnlineScreen';
+import { useOnlineStore } from '../../store/onlineStore';
 import { PrepCountdown } from '../PrepCountdown';
 
 export function BattleScreen(): JSX.Element | null {
+  const online = useGameStore((s) => s.onlinePlayerId !== null);
+  const frames = useGameStore((s) => s.battleFrames);
+  const battleId = useGameStore((s) => s.onlineBattleId);
+  const connected = useGameStore((s) => s.networkConnected);
   const match = useGameStore((s) => s.match);
   const human = useGameStore((s) => s.human());
   const battleRunning = useGameStore((s) => s.battleRunning);
@@ -77,9 +83,10 @@ export function BattleScreen(): JSX.Element | null {
       <div className="hud-field">
         <ArenaBackdrop />
         {(!battleRunning || !arenaReady) && <PrepBoard onUnitContext={onUnitContext} />}
-        {battleRunning && <BattleBoard onFinished={onPlaybackFinished} onReady={onArenaReady} />}
+        {battleRunning && (!online || !!frames?.length) && <BattleBoard key={battleId ?? 'solo'} onFinished={onPlaybackFinished} onReady={onArenaReady} />}
         {battleRunning && arenaReady && <BattleTelemetry />}
-        {!battleRunning && <PrepCountdown key={info.label} active={!awaitingAugment && !awaitingDraft} seconds={info.prepSeconds} />}
+        {online && !battleRunning && <OnlineClock />}
+        {!online && !battleRunning && <PrepCountdown key={info.label} active={!awaitingAugment && !awaitingDraft} seconds={info.prepSeconds} />}
       </div>
 
       <div className="hud-right scroll">
@@ -98,7 +105,7 @@ export function BattleScreen(): JSX.Element | null {
       <div className="hud-footer">
         <ShopControls />
         <div style={{ display: 'flex', gap: 10, alignItems: 'center' }}>
-          {battleRunning && (
+          {battleRunning && !online && (
             <>
               {[1, 2, 4, 10].map((s) => (
                 <button
@@ -112,16 +119,18 @@ export function BattleScreen(): JSX.Element | null {
               <button className="btn-ghost" onClick={onPlaybackFinished}>전투 건너뛰기</button>
             </>
           )}
-          {!battleRunning && !awaitingAugment && !awaitingDraft && (
+          {!online && !battleRunning && !awaitingAugment && !awaitingDraft && (
             <button className="btn-primary" onClick={() => { startBattle(); }}>
               전투 시작 ({info.kind === 'PVE' ? 'PvE' : 'PvP'})
             </button>
           )}
+          {online && <button className="btn-ghost" onClick={() => { useOnlineStore.getState().leave(); setScreen('ONLINE'); }}>방 나가기</button>}
           <button className="btn-ghost" onClick={() => setScreen('COLLECTION')}>도감</button>
           <button className="btn-ghost" onClick={() => setScreen('SETTINGS')}>설정</button>
         </div>
       </div>
 
+      {online && !connected && <div className="network-banner">연결이 끊어졌습니다 · 재접속 중 · 경기는 계속 진행됩니다</div>}
       {lastError && <div className="toast">{lastError}</div>}
       {awaitingAugment && <AugmentOverlay />}
       {awaitingDraft && !awaitingAugment && <DraftOverlay />}

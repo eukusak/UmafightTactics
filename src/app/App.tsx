@@ -1,6 +1,7 @@
 /** Root shell: screen routing plus the 1920x1080 scale-to-fit wrapper. */
 import { useEffect, useLayoutEffect, useRef, useState } from 'react';
 import { useGameStore } from '../store/gameStore';
+import { OnlineScreen } from '../components/screens/OnlineScreen';
 import { BattleScreen } from '../components/screens/BattleScreen';
 import { CollectionScreen } from '../components/screens/CollectionScreen';
 import {
@@ -48,6 +49,7 @@ export function App(): JSX.Element {
     case 'TITLE': content = <TitleScreen />; break;
     case 'MAIN_MENU': content = <MainMenu />; break;
     case 'MATCH_SETUP': content = <MatchSetup />; break;
+    case 'ONLINE': content = <OnlineScreen />; break;
     case 'BATTLE': content = <BattleScreen />; break;
     case 'COLLECTION': content = <CollectionScreen />; break;
     case 'SETTINGS': content = <SettingsScreen />; break;

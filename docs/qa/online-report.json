@@ -1,0 +1,118 @@
+{
+  "states": [
+    {
+      "id": "p1",
+      "phase": "BATTLE",
+      "frames": 158,
+      "time": 7.183326666666666,
+      "motion": {
+        "hits": 22,
+        "overlap": 15,
+        "changed": 0,
+        "creates": 0
+      },
+      "event": 143
+    },
+    {
+      "id": "p2",
+      "phase": "BATTLE",
+      "frames": 158,
+      "time": 7.066666666666666,
+      "motion": {
+        "hits": 14,
+        "overlap": 7,
+        "changed": 0,
+        "creates": 0
+      },
+      "event": 143
+    },
+    {
+      "id": "p3",
+      "phase": "BATTLE",
+      "frames": 158,
+      "time": 7.066666666666666,
+      "motion": {
+        "hits": 14,
+        "overlap": 10,
+        "changed": 0,
+        "creates": 0
+      },
+      "event": 143
+    },
+    {
+      "id": "p4",
+      "phase": "BATTLE",
+      "frames": 158,
+      "time": 7.183333333333333,
+      "motion": {
+        "hits": 23,
+        "overlap": 19,
+        "changed": 0,
+        "creates": 0
+      },
+      "event": 143
+    },
+    {
+      "id": "p5",
+      "phase": "BATTLE",
+      "frames": 158,
+      "time": 7.066666666666666,
+      "motion": {
+        "hits": 14,
+        "overlap": 10,
+        "changed": 0,
+        "creates": 0
+      },
+      "event": 143
+    },
+    {
+      "id": "p6",
+      "phase": "BATTLE",
+      "frames": 158,
+      "time": 7.183333333333333,
+      "motion": {
+        "hits": 21,
+        "overlap": 13,
+        "changed": 0,
+        "creates": 0
+      },
+      "event": 143
+    },
+    {
+      "id": "p7",
+      "phase": "BATTLE",
+      "frames": 158,
+      "time": 7.066666666666666,
+      "motion": {
+        "hits": 13,
+        "overlap": 7,
+        "changed": 0,
+        "creates": 0
+      },
+      "event": 143
+    },
+    {
+      "id": "p8",
+      "phase": "BATTLE",
+      "frames": 158,
+      "time": 7.183333333333333,
+      "motion": {
+        "hits": 23,
+        "overlap": 13,
+        "changed": 0,
+        "creates": 0
+      },
+      "event": 143
+    }
+  ],
+  "errors": [],
+  "broken": [],
+  "round": 2,
+  "reconnect": "p4",
+  "motionTotals": {
+    "hits": 144,
+    "overlap": 94,
+    "changed": 0
+  },
+  "scope": "Local Chromium 8 independent contexts; accelerated server phase deadlines; real WebSocket transport and real-time battle playback."
+}

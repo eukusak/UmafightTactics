@@ -102,6 +102,7 @@ export class RoundDirector {
    * could show the player an outcome that disagrees with the actual result.
    */
   lastHumanFrames: BattleFrame[] | null = null;
+  readonly playerFrames = new Map<string, BattleFrame[]>();
   /** Whether the human's fight was against PvE, for the battle banner. */
   lastHumanBattleWasPve = false;
   private pendingSettlement: (() => RoundResolution) | null = null;
@@ -249,6 +250,7 @@ export class RoundDirector {
     const s = this.state;
     s.phase = 'BATTLE';
     this.lastHumanFrames = null;
+    this.playerFrames.clear();
     this.lastHumanBattleWasPve = false;
 
     for (const p of s.players) {
@@ -344,11 +346,13 @@ export class RoundDirector {
    * Runs one battle. When `record` is set the frames are kept for playback, so
    * what the player watches is the very run that produced the result.
    */
-  private runBattle(a: BattleSideInput, b: BattleSideInput, rng: Rng, record: boolean) {
+  private runBattle(a: BattleSideInput, b: BattleSideInput, rng: Rng, record: boolean, isGhost = false) {
     if (!record) return simulateBattle(a, b, rng);
     const engine = new BattleEngine(a, b, rng, { recordFrames: true });
     const result = engine.run();
     this.lastHumanFrames = engine.frames;
+    if (this.state.players.some((p) => p.id === a.playerId && p.isHuman)) this.playerFrames.set(a.playerId, engine.frames);
+    if (!isGhost && this.state.players.some((p) => p.id === b.playerId && p.isHuman)) this.playerFrames.set(b.playerId, engine.frames);
     return result;
   }
 
@@ -444,7 +448,7 @@ export class RoundDirector {
       const rng = this.rngs.get(`battle-pair-${roundKey}-${pair.attackerId}-${pair.defenderId}`);
       const humanInvolved = attacker.isHuman || (!pair.isGhost && defender.isHuman);
       const result = this.runBattle(
-        this.sideFor(attacker), this.sideFor(defender), rng, humanInvolved,
+        this.sideFor(attacker), this.sideFor(defender), rng, humanInvolved, pair.isGhost,
       );
 
       recordOpponent(attacker, defender.id);

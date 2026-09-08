@@ -1,4 +1,4 @@
-"""Import a reviewed transparent 10x6 character sheet into 50 individual PNGs.
+"""Import a reviewed transparent 10x6 character sheet into 46 individual PNGs.
 Never guesses object bounds, removes a background, copies frames, or trims limbs.
 Usage: python3 scripts/slice-character-sheet.py UNIT_ID /absolute/sheet.png
 Requires Pillow. Review alpha and poses before import.
@@ -7,7 +7,7 @@ import argparse, json, hashlib, tempfile, shutil
 from pathlib import Path
 from PIL import Image
 ROOT=Path(__file__).resolve().parents[1]
-CLIPS={'idle':(0,6,8),'run':(10,8,12),'basic_attack':(20,8,14),'skill_cast':(30,10,15),'hit':(40,4,12),'ko':(44,6,10),'victory':(50,8,10)}
+CLIPS={'idle':(0,6,8),'run':(10,8,12),'basic_attack':(20,8,14),'skill_cast':(30,10,15),'ko':(44,6,10),'victory':(50,8,10)}
 def validate(image):
     if image.mode!='RGBA': raise ValueError('Actual RGBA required; opaque/checkerboard RGB sheets are rejected.')
     w,h=image.size
@@ -48,5 +48,5 @@ def main():
         (staging/'animation.json').write_text(json.dumps(manifest,indent=2)+'\n')
         dest.parent.mkdir(parents=True,exist_ok=True);shutil.copytree(staging,dest)
         image.resize((1280,768),Image.Resampling.LANCZOS).save(sheet_dest)
-    print(f'Imported {args.unit_id}: 50 actual frames, 7 clips. Run python3 scripts/build-system-art.py to refresh the asset inventory.')
+    print(f'Imported {args.unit_id}: 46 actual frames, 6 clips. Run python3 scripts/build-system-art.py to refresh the asset inventory.')
 if __name__=='__main__':main()

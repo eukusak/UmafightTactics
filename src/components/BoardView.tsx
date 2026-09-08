@@ -122,11 +122,13 @@ export function BattleBoard({ onFinished, onReady }: { onFinished: () => void; o
     if (!scene || !frames) return;
     doneRef.current = false;
     // The scene queues this itself when Phaser has not finished booting.
-    scene.playBattle(frames, useGameStore.getState().settings.battleSpeed, useGameStore.getState().battleTime);
+    const state = useGameStore.getState();
+    if (state.onlinePlayerId) scene.streamFrames(frames, state.battleTime);
+    else scene.playBattle(frames, state.settings.battleSpeed, state.battleTime);
   }, [frames]);
 
   useEffect(() => {
-    sceneRef.current?.setSpeed(useGameStore.getState().battleComplete ? 0 : speed);
+    sceneRef.current?.setSpeed(useGameStore.getState().battleComplete ? 0 : useGameStore.getState().onlinePlayerId ? 1 : speed);
   }, [speed, complete]);
 
   // Poll for playback completion; the scene owns the clock.

@@ -22,7 +22,6 @@ export const ANIMATION_CLIPS = {
   run: { start: 10, count: 8, fps: 12, loop: true },
   basic_attack: { start: 20, count: 8, fps: 14, loop: false },
   skill_cast: { start: 30, count: 10, fps: 15, loop: false },
-  hit: { start: 40, count: 4, fps: 12, loop: false },
   ko: { start: 44, count: 6, fps: 10, loop: false },
   victory: { start: 50, count: 8, fps: 10, loop: true },
 } as const;

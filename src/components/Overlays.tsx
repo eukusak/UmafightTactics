@@ -99,7 +99,8 @@ export function DraftOverlay(): JSX.Element | null {
 }
 
 export function BattleResultOverlay({ onContinue }: { onContinue: () => void }): JSX.Element | null {
-  const autoContinue = useGameStore((s) => s.settings.autoContinue);
+  const online = useGameStore((s) => s.onlinePlayerId !== null);
+  const autoContinue = useGameStore((s) => !s.onlinePlayerId && s.settings.autoContinue);
   const [held, setHeld] = useState(false);
   const [remaining, setRemaining] = useState(5);
   useEffect(() => {
@@ -144,8 +145,8 @@ export function BattleResultOverlay({ onContinue }: { onContinue: () => void }):
             탈락: {res.eliminated.map((id) => match?.players.find((p) => p.id === id)?.name).join(', ')}
           </p>
         )}
-        <button className="btn-primary" style={{ marginTop: 20 }} onClick={onContinue}>
-          다음 라운드로{autoContinue && !held ? ` · ${remaining}초` : ''}
+        <button className="btn-primary" style={{ marginTop: 20 }} disabled={online} onClick={onContinue}>
+          {online ? '다음 라운드 대기 중' : '다음 라운드로'}{autoContinue && !held ? ` · ${remaining}초` : ''}
         </button>
         {autoContinue && <button className="btn-ghost" style={{ marginLeft: 10 }} onClick={() => setHeld((value) => !value)}>{held ? '자동 진행 재개' : '결과 계속 보기'}</button>}
       </div>

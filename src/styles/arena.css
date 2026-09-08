@@ -19,7 +19,7 @@ button:focus-visible, input:focus-visible, select:focus-visible { outline:3px so
 .stat { padding:10px 6px; }
 .stat b { font-variant-numeric:tabular-nums; text-shadow:0 2px 8px #0004; }
 .hud-left,.hud-right { top:86px; padding:10px; }
-.hud-field { top:88px; border-radius:18px; box-shadow:0 20px 40px #0005,0 0 0 1px #eccd8c50; overflow:hidden; }
+.hud-field { isolation:isolate; top:88px; border-radius:18px; box-shadow:0 20px 40px #0005,0 0 0 1px #eccd8c50; overflow:hidden; }
 .hud-bench { top:758px; height:84px; }
 .hud-shop { top:856px; height:154px; }
 .hud-footer { background:linear-gradient(0deg,#081827,#162e41); border-top:1px solid #e7cb8744; }
@@ -159,3 +159,30 @@ html, body, #root { font-family: "Noto Sans KR Variable", "Malgun Gothic", syste
 .scout-roster small { color:#abc7c6; }
 /* The scouting grid uses the sidebar space beside the shop as well. */
 .hud-right { height:920px; }
+
+.online-screen { gap:24px; background:radial-gradient(ellipse at 50% 25%,#37645888,transparent 65%); }
+.online-heading { text-align:center; }
+.online-heading>span { color:var(--cyan); letter-spacing:4px; font-size:13px; }
+.online-heading h1 { font-size:48px; color:var(--gold); margin:12px 0; }
+.online-heading p { color:var(--muted); }
+.online-connect { width:440px; display:grid; gap:16px; padding:32px; }
+.online-connect label { display:grid; gap:8px; color:var(--muted); font-size:14px; }
+.online-connect input { padding:14px; font:inherit; border:1px solid #8dad9c66; border-radius:9px; color:var(--text); background:#071e2b; }
+.online-divider { text-align:center; font-size:12px; color:var(--muted); padding:8px; }
+.online-lobby { width:1020px; padding:30px; }
+.room-code { display:flex; align-items:center; gap:24px; padding:0 0 24px; color:var(--muted); }
+.room-code strong { font-size:32px; letter-spacing:8px; color:var(--gold); user-select:all; }
+.room-code b { margin-left:auto; font-size:24px; }
+.online-seats { display:grid; grid-template-columns:repeat(4,1fr); gap:16px; }
+.online-seat { position:relative; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:12px; min-height:160px; border:1px dashed #819e9e55; border-radius:12px; background:#0a203466; color:var(--muted); }
+.online-seat.occupied { border-style:solid; background:linear-gradient(150deg,#325261,#192d43); color:var(--text); }
+.online-seat.ready { border-color:var(--success); box-shadow:inset 0 -3px 0 #8ae9b244; }
+.seat-emblem { display:grid; place-items:center; width:52px; height:52px; border-radius:50%; background:#7edac41a; border:1px solid #8bafad55; font-size:26px; color:var(--gold); }
+.online-seat small { color:var(--muted); font-size:12px; }
+.online-seat.ready small { color:var(--success); }
+.host-badge { position:absolute; top:12px; right:12px; font-size:10px; color:var(--gold); }
+.online-actions { display:flex; align-items:center; gap:18px; margin-top:26px; }
+.online-actions label { color:var(--muted); font-size:13px; }
+.online-actions button:last-child { margin-left:auto; }
+.online-error,.network-banner { color:#ffe4d5; padding:12px 22px; border:1px solid #ffae8188; border-radius:10px; background:#663b35; }
+.network-banner { position:absolute; top:82px; left:50%; transform:translateX(-50%); z-index:2000; }

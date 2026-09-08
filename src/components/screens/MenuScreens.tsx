@@ -34,6 +34,7 @@ export function MainMenu(): JSX.Element {
       <h1 className="menu-title" style={{ fontSize: 54 }}>트레이닝 센터</h1>
       <div className="menu-buttons">
         <button className="btn-primary" onClick={() => setScreen('MATCH_SETUP')}>새 게임</button>
+        <button className="btn-primary" onClick={() => setScreen('ONLINE')}>온라인 대전 · 최대 8인</button>
         <button disabled={!hasSave} onClick={() => { continueMatch(); }}>이어하기</button>
         <button onClick={() => setScreen('COLLECTION')}>도감 (145명)</button>
         <button onClick={() => setScreen('SETTINGS')}>설정</button>

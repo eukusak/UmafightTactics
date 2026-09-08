@@ -122,11 +122,11 @@ for i,rel in enumerate(m['banners']):
 # Five original geometric PvE characters, articulated in vector form.
 for idx,rel in enumerate(m['pve']):
  sheet=Image.new('RGBA',(1280,512));kind=Path(rel).stem
- for row,count in [(0,6),(1,8),(2,4),(3,6)]:
+ for row,count in [(0,6),(1,8),(3,6)]:
   for frame in range(count):
    t=frame/max(1,count-1);bob=math.sin(t*math.pi*2)*2 if row==0 else 0
    arm=math.sin(t*math.pi)*-65 if row==1 else 0
-   tilt=math.sin(t*math.pi)*-12 if row==2 else t*78 if row==3 else 0
+   tilt=t*78 if row==3 else 0
    drop=t*6 if row==3 else 0
    color=['#bd8a51','#6b9c8d','#9ebfd2','#e0b952','#eed794'][idx]
    body = '<path d="M45 57h38v40H45Z"/><path d="M45 62h38M45 87h38" fill="none"/>' if idx==0 else '<path d="m39 58 25-8 25 8-6 40H45Z"/>'
@@ -136,9 +136,9 @@ for idx,rel in enumerate(m['pve']):
    png=cairosvg.svg2png(bytestring=svg.encode(),output_width=384,output_height=384)
    import io
    im=Image.open(io.BytesIO(png)).resize((128,128),Image.Resampling.LANCZOS);sheet.alpha_composite(im,(frame*128,row*128))
-   target=ASSETS/'pve/frames'/kind/['idle','basic_attack','hit','ko'][row]/f'{frame:02}.png';target.parent.mkdir(parents=True,exist_ok=True);im.save(target)
+   target=ASSETS/'pve/frames'/kind/{0:'idle',1:'basic_attack',3:'ko'}[row]/f'{frame:02}.png';target.parent.mkdir(parents=True,exist_ok=True);im.save(target)
  sheet.save(ASSETS/rel)
- clips={name:{'fps':fps,'loop':name=='idle','files':[f'pve/frames/{kind}/{name}/{f:02}.png' for f in range(count)]} for name,count,fps in [('idle',6,8),('basic_attack',8,14),('hit',4,12),('ko',6,10)]}
+ clips={name:{'fps':fps,'loop':name=='idle','files':[f'pve/frames/{kind}/{name}/{f:02}.png' for f in range(count)]} for name,count,fps in [('idle',6,8),('basic_attack',8,14),('ko',6,10)]}
  (ASSETS/'pve/frames'/kind/'animation.json').write_text(json.dumps({'sheet':rel,'cell':[128,128],'anchor':[64,110],'clips':clips},indent=2)+'\n')
 files=sorted(str(p.relative_to(ASSETS)) for p in ASSETS.rglob('*.png') if '/race/' not in str(p) and '/reference_previews/' not in str(p))
 (ROOT/'src/data/manual/delivered-art.json').write_text(json.dumps(files,indent=2)+'\n')

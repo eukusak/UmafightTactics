@@ -19,7 +19,7 @@ describe('art playback contract', () => {
   });
 
   it('never plays padding cells, including at long elapsed times', () => {
-    const blanks = new Set([6, 7, 8, 9, 18, 19, 28, 29, 58, 59]);
+    const blanks = new Set([6, 7, 8, 9, 18, 19, 28, 29, 40, 41, 42, 43, 58, 59]);
     for (const name of Object.keys(ANIMATION_CLIPS) as AnimationName[]) {
       const clip = ANIMATION_CLIPS[name];
       for (const t of [-1, 0, .01, .35, .8, 1, 10000]) {

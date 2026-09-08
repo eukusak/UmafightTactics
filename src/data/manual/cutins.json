@@ -1,0 +1,24 @@
+{
+  "kitasan_black": {
+    "file": "characters/cutin/kitasan_black.png",
+    "source": "docs/art-source/cutins/kitasan_black.png",
+    "sourceSha256": "1ee9464f6c2625b3be03f8b207dd8d8e478ceb3b829b77af0603d927671b4e76",
+    "size": [
+      960,
+      540
+    ],
+    "leftClearPixels": 384,
+    "status": "static-skill-illustration; not-rigged-model"
+  },
+  "almond_eye": {
+    "file": "characters/cutin/almond_eye.png",
+    "source": "docs/art-source/cutins/almond_eye.png",
+    "sourceSha256": "85bf1bd3344293d0edd2c1e2866b886854b76f67de432efa54a2b6bc481698b8",
+    "size": [
+      960,
+      540
+    ],
+    "leftClearPixels": 384,
+    "status": "static-skill-illustration; not-rigged-model"
+  }
+}

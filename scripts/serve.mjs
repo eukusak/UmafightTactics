@@ -1,9 +1,8 @@
 /**
  * Production static server for the built SPA.
  *
- * The game is a static site and `render.yaml` deploys it as one. This exists so
- * the repo also works when the host runs it as a plain Node web service, which
- * is Render's default for a Node project (`yarn` to install, then `yarn start`).
+ * Used by server/index.ts for HTTP assets alongside WebSocket multiplayer.
+ * Run this file directly only for an offline, static-only deployment.
  *
  * It deliberately does NOT build. The build needs roughly 500MB of heap, and a
  * small runtime instance caps it near 256MB: an earlier version built here on
@@ -16,7 +15,7 @@
 import { createReadStream, existsSync, statSync } from 'node:fs';
 import { createServer } from 'node:http';
 import path from 'node:path';
-import { fileURLToPath } from 'node:url';
+import { fileURLToPath, pathToFileURL } from 'node:url';
 import { createGzip, gzipSync } from 'node:zlib';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
@@ -54,14 +53,14 @@ const COMPRESSIBLE = new Set([
 ]);
 
 /** Refuses to start without a build rather than attempting one here. */
-function requireBuild() {
+export function requireBuild() {
   if (existsSync(INDEX)) return;
   console.error(
     '\n[serve] dist/ is missing, so there is nothing to serve.\n\n' +
       '        This server does not build: the build needs ~500MB of heap and a small\n' +
       '        runtime instance caps it near 256MB, which crash-loops the service.\n' +
       '        Run the build on the build machine instead.\n\n' +
-      '        Render Static Site (recommended):\n' +
+      '        Render Static Site (offline only):\n' +
       '          Build Command:     npm ci && npm run build\n' +
       '          Publish Directory: dist\n\n' +
       '        Render Node web service:\n' +
@@ -120,11 +119,10 @@ function send(req, res, file, status = 200) {
   createReadStream(file).pipe(res);
 }
 
-requireBuild();
 
 const NOT_FOUND_BODY = gzipSync(Buffer.from('Not found', 'utf8'));
 
-const server = createServer((req, res) => {
+export function staticHandler(req, res) {
   if (req.method !== 'GET' && req.method !== 'HEAD') {
     res.writeHead(405, { Allow: 'GET, HEAD', 'Content-Type': 'text/plain; charset=utf-8' });
     res.end('Method not allowed');
@@ -145,12 +143,17 @@ const server = createServer((req, res) => {
     Vary: 'Accept-Encoding',
   });
   res.end(NOT_FOUND_BODY);
-});
+}
 
+if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {
+requireBuild();
+const server = createServer(staticHandler);
 server.listen(PORT, HOST, () => {
   console.log(`[serve] UmafightTactics listening on http://${HOST}:${PORT}`);
 });
 
 for (const signal of ['SIGTERM', 'SIGINT']) {
   process.on(signal, () => server.close(() => process.exit(0)));
+}
+
 }
