@@ -1,0 +1,443 @@
+{
+  "format": "uft-baked-frames-v1",
+  "scale": 0.40310077519379844,
+  "anchor": [
+    64,
+    110
+  ],
+  "runtimeSha256": "b34475916a9d4b4cce100901b8074f6fb4c10eb941df4a8fe6ecf88ccc2030f2",
+  "frames": [
+    {
+      "frame": 0,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/production-144/buena_vista/alpha.png",
+      "sourceSha256": "a4bc361266e8e62c8e5404220a8b71377d3b5a4912fe9ab2e190c4f35790c5d6",
+      "crop": [
+        51,
+        12,
+        211,
+        267
+      ],
+      "destination": [
+        32,
+        7,
+        64,
+        103
+      ]
+    },
+    {
+      "frame": 1,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/production-144/buena_vista/alpha.png",
+      "sourceSha256": "a4bc361266e8e62c8e5404220a8b71377d3b5a4912fe9ab2e190c4f35790c5d6",
+      "crop": [
+        308,
+        13,
+        469,
+        267
+      ],
+      "destination": [
+        159,
+        8,
+        65,
+        102
+      ]
+    },
+    {
+      "frame": 2,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/production-144/buena_vista/alpha.png",
+      "sourceSha256": "a4bc361266e8e62c8e5404220a8b71377d3b5a4912fe9ab2e190c4f35790c5d6",
+      "crop": [
+        558,
+        12,
+        720,
+        267
+      ],
+      "destination": [
+        287,
+        7,
+        65,
+        103
+      ]
+    },
+    {
+      "frame": 3,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/production-144/buena_vista/alpha.png",
+      "sourceSha256": "a4bc361266e8e62c8e5404220a8b71377d3b5a4912fe9ab2e190c4f35790c5d6",
+      "crop": [
+        817,
+        13,
+        979,
+        267
+      ],
+      "destination": [
+        415,
+        8,
+        65,
+        102
+      ]
+    },
+    {
+      "frame": 4,
+      "sourceFrame": 4,
+      "source": "docs/art-source/motions/production-144/buena_vista/alpha.png",
+      "sourceSha256": "a4bc361266e8e62c8e5404220a8b71377d3b5a4912fe9ab2e190c4f35790c5d6",
+      "crop": [
+        43,
+        270,
+        243,
+        516
+      ],
+      "destination": [
+        23,
+        139,
+        81,
+        99
+      ]
+    },
+    {
+      "frame": 5,
+      "sourceFrame": 5,
+      "source": "docs/art-source/motions/production-144/buena_vista/alpha.png",
+      "sourceSha256": "a4bc361266e8e62c8e5404220a8b71377d3b5a4912fe9ab2e190c4f35790c5d6",
+      "crop": [
+        305,
+        272,
+        497,
+        509
+      ],
+      "destination": [
+        153,
+        142,
+        77,
+        96
+      ]
+    },
+    {
+      "frame": 6,
+      "sourceFrame": 6,
+      "source": "docs/art-source/motions/production-144/buena_vista/alpha.png",
+      "sourceSha256": "a4bc361266e8e62c8e5404220a8b71377d3b5a4912fe9ab2e190c4f35790c5d6",
+      "crop": [
+        555,
+        272,
+        752,
+        516
+      ],
+      "destination": [
+        280,
+        140,
+        79,
+        98
+      ]
+    },
+    {
+      "frame": 7,
+      "sourceFrame": 7,
+      "source": "docs/art-source/motions/production-144/buena_vista/alpha.png",
+      "sourceSha256": "a4bc361266e8e62c8e5404220a8b71377d3b5a4912fe9ab2e190c4f35790c5d6",
+      "crop": [
+        814,
+        275,
+        1000,
+        516
+      ],
+      "destination": [
+        410,
+        141,
+        75,
+        97
+      ]
+    },
+    {
+      "frame": 8,
+      "sourceFrame": 8,
+      "source": "docs/art-source/motions/production-144/buena_vista/alpha.png",
+      "sourceSha256": "a4bc361266e8e62c8e5404220a8b71377d3b5a4912fe9ab2e190c4f35790c5d6",
+      "crop": [
+        39,
+        521,
+        249,
+        779
+      ],
+      "destination": [
+        21,
+        262,
+        85,
+        104
+      ]
+    },
+    {
+      "frame": 9,
+      "sourceFrame": 9,
+      "source": "docs/art-source/motions/production-144/buena_vista/alpha.png",
+      "sourceSha256": "a4bc361266e8e62c8e5404220a8b71377d3b5a4912fe9ab2e190c4f35790c5d6",
+      "crop": [
+        294,
+        521,
+        473,
+        779
+      ],
+      "destination": [
+        156,
+        262,
+        72,
+        104
+      ]
+    },
+    {
+      "frame": 10,
+      "sourceFrame": 10,
+      "source": "docs/art-source/motions/production-144/buena_vista/alpha.png",
+      "sourceSha256": "a4bc361266e8e62c8e5404220a8b71377d3b5a4912fe9ab2e190c4f35790c5d6",
+      "crop": [
+        547,
+        522,
+        763,
+        779
+      ],
+      "destination": [
+        276,
+        262,
+        87,
+        104
+      ]
+    },
+    {
+      "frame": 11,
+      "sourceFrame": 11,
+      "source": "docs/art-source/motions/production-144/buena_vista/alpha.png",
+      "sourceSha256": "a4bc361266e8e62c8e5404220a8b71377d3b5a4912fe9ab2e190c4f35790c5d6",
+      "crop": [
+        802,
+        521,
+        981,
+        779
+      ],
+      "destination": [
+        412,
+        262,
+        72,
+        104
+      ]
+    },
+    {
+      "frame": 12,
+      "sourceFrame": 12,
+      "source": "docs/art-source/motions/production-144/buena_vista/alpha.png",
+      "sourceSha256": "a4bc361266e8e62c8e5404220a8b71377d3b5a4912fe9ab2e190c4f35790c5d6",
+      "crop": [
+        35,
+        787,
+        254,
+        1037
+      ],
+      "destination": [
+        20,
+        393,
+        88,
+        101
+      ]
+    },
+    {
+      "frame": 13,
+      "sourceFrame": 13,
+      "source": "docs/art-source/motions/production-144/buena_vista/alpha.png",
+      "sourceSha256": "a4bc361266e8e62c8e5404220a8b71377d3b5a4912fe9ab2e190c4f35790c5d6",
+      "crop": [
+        297,
+        787,
+        479,
+        1037
+      ],
+      "destination": [
+        155,
+        393,
+        73,
+        101
+      ]
+    },
+    {
+      "frame": 14,
+      "sourceFrame": 14,
+      "source": "docs/art-source/motions/production-144/buena_vista/alpha.png",
+      "sourceSha256": "a4bc361266e8e62c8e5404220a8b71377d3b5a4912fe9ab2e190c4f35790c5d6",
+      "crop": [
+        545,
+        787,
+        773,
+        1037
+      ],
+      "destination": [
+        274,
+        393,
+        92,
+        101
+      ]
+    },
+    {
+      "frame": 15,
+      "sourceFrame": 15,
+      "source": "docs/art-source/motions/production-144/buena_vista/alpha.png",
+      "sourceSha256": "a4bc361266e8e62c8e5404220a8b71377d3b5a4912fe9ab2e190c4f35790c5d6",
+      "crop": [
+        815,
+        788,
+        979,
+        1037
+      ],
+      "destination": [
+        415,
+        394,
+        66,
+        100
+      ]
+    },
+    {
+      "frame": 16,
+      "sourceFrame": 16,
+      "source": "docs/art-source/motions/production-144/buena_vista/alpha.png",
+      "sourceSha256": "a4bc361266e8e62c8e5404220a8b71377d3b5a4912fe9ab2e190c4f35790c5d6",
+      "crop": [
+        47,
+        1037,
+        216,
+        1267
+      ],
+      "destination": [
+        30,
+        529,
+        68,
+        93
+      ]
+    },
+    {
+      "frame": 17,
+      "sourceFrame": 17,
+      "source": "docs/art-source/motions/production-144/buena_vista/alpha.png",
+      "sourceSha256": "a4bc361266e8e62c8e5404220a8b71377d3b5a4912fe9ab2e190c4f35790c5d6",
+      "crop": [
+        289,
+        1054,
+        494,
+        1265
+      ],
+      "destination": [
+        150,
+        537,
+        83,
+        85
+      ]
+    },
+    {
+      "frame": 18,
+      "sourceFrame": 18,
+      "source": "docs/art-source/motions/production-144/buena_vista/alpha.png",
+      "sourceSha256": "a4bc361266e8e62c8e5404220a8b71377d3b5a4912fe9ab2e190c4f35790c5d6",
+      "crop": [
+        523,
+        1058,
+        722,
+        1268
+      ],
+      "destination": [
+        280,
+        537,
+        80,
+        85
+      ]
+    },
+    {
+      "frame": 19,
+      "sourceFrame": 19,
+      "source": "docs/art-source/motions/production-144/buena_vista/alpha.png",
+      "sourceSha256": "a4bc361266e8e62c8e5404220a8b71377d3b5a4912fe9ab2e190c4f35790c5d6",
+      "crop": [
+        756,
+        1143,
+        1022,
+        1261
+      ],
+      "destination": [
+        394,
+        574,
+        107,
+        48
+      ]
+    },
+    {
+      "frame": 20,
+      "sourceFrame": 20,
+      "source": "docs/art-source/motions/production-144/buena_vista/alpha.png",
+      "sourceSha256": "a4bc361266e8e62c8e5404220a8b71377d3b5a4912fe9ab2e190c4f35790c5d6",
+      "crop": [
+        51,
+        1276,
+        213,
+        1523
+      ],
+      "destination": [
+        31,
+        650,
+        65,
+        100
+      ]
+    },
+    {
+      "frame": 21,
+      "sourceFrame": 21,
+      "source": "docs/art-source/motions/production-144/buena_vista/alpha.png",
+      "sourceSha256": "a4bc361266e8e62c8e5404220a8b71377d3b5a4912fe9ab2e190c4f35790c5d6",
+      "crop": [
+        288,
+        1276,
+        468,
+        1524
+      ],
+      "destination": [
+        155,
+        650,
+        73,
+        100
+      ]
+    },
+    {
+      "frame": 22,
+      "sourceFrame": 22,
+      "source": "docs/art-source/motions/production-144/buena_vista/alpha.png",
+      "sourceSha256": "a4bc361266e8e62c8e5404220a8b71377d3b5a4912fe9ab2e190c4f35790c5d6",
+      "crop": [
+        551,
+        1276,
+        738,
+        1518
+      ],
+      "destination": [
+        282,
+        652,
+        75,
+        98
+      ]
+    },
+    {
+      "frame": 23,
+      "sourceFrame": 23,
+      "source": "docs/art-source/motions/production-144/buena_vista/alpha.png",
+      "sourceSha256": "a4bc361266e8e62c8e5404220a8b71377d3b5a4912fe9ab2e190c4f35790c5d6",
+      "crop": [
+        809,
+        1289,
+        977,
+        1534
+      ],
+      "destination": [
+        414,
+        651,
+        68,
+        99
+      ]
+    }
+  ]
+}

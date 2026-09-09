@@ -904,5 +904,65 @@
     "skillSignature": "fa37e0a4753f10620e8a0caad867a8fa8d8a08f70c6cd5b1304abc80a16a39ed",
     "skillReview": "흰 앞머리와 안경, 붉은 끈 장식의 긴 코트 유지. 단일 약화된 적을 조준하고 힘을 모아 제자리 결정타 방출. 원거리 기본 공격과 구별된 스킬 준비와 주먹 방출. 24포즈 확인.",
     "skillReleaseFrame": 2
+  },
+  "admire_groove": {
+    "file": "motions/admire_groove.png",
+    "frameWidth": 128,
+    "frameHeight": 128,
+    "columns": 4,
+    "rows": 6,
+    "source": "docs/art-source/motions/production-144/admire_groove/packing.json",
+    "skillId": "skill_admire_groove",
+    "skillSignature": "622322115189158e69669b9314cef18dd4f0a3eb72527eb285d339592bb7b874",
+    "skillReview": "직선 돌파의 낮은 출발, 발진, 수평 돌파, 착지. 원거리 기본 공격. 푸른 머리와 흰 앞머리, 장미와 긴 리본, 청록색 비대칭 의상 유지. 24포즈 확인.",
+    "skillReleaseFrame": 2
+  },
+  "win_variation": {
+    "file": "motions/win_variation.png",
+    "frameWidth": 128,
+    "frameHeight": 128,
+    "columns": 4,
+    "rows": 6,
+    "source": "docs/art-source/motions/production-144/win_variation/packing.json",
+    "skillId": "skill_win_variation",
+    "skillSignature": "21cceac6f660594c59f03f4f7c7ea3a3349c2d604f10985b129b7457241adc6a",
+    "skillReview": "근접 기본 공격의 주먹 준비, 당김, 타격, 회수. 적 밀집 지점 조준 후 양손 광역 기절 방출. 붉은 단발과 흰 앞머리, 붉은 드레스와 검정 흰색 신발 유지. 24포즈 확인.",
+    "skillReleaseFrame": 2
+  },
+  "gentildonna": {
+    "file": "motions/gentildonna.png",
+    "frameWidth": 128,
+    "frameHeight": 128,
+    "columns": 4,
+    "rows": 6,
+    "source": "docs/art-source/motions/production-144/gentildonna/packing.json",
+    "skillId": "skill_gentildonna",
+    "skillSignature": "8ce408247dc36b18f12c021f6e0d7cb72ad16f0bc1f7c8a9c576e9de39c419c2",
+    "skillReview": "근접 펀치의 준비, 당김, 타격, 회수. 아군 전체 강화는 가슴 앞 집중 후 양팔 확장 및 유지. 붉은 드레스와 흰 장갑, 어깨 깃털, 검은 리본과 왕관 유지. 24포즈 확인.",
+    "skillReleaseFrame": 2
+  },
+  "orfevre": {
+    "file": "motions/orfevre.png",
+    "frameWidth": 128,
+    "frameHeight": 128,
+    "columns": 4,
+    "rows": 6,
+    "source": "docs/art-source/motions/production-144/orfevre/packing.json",
+    "skillId": "skill_orfevre",
+    "skillSignature": "45c4bce88a33d9d2aaece19c1266ed1612939296804b1eb915351b7fd1ce7ac6",
+    "skillReview": "원거리 기본 공격, 직선 돌파의 웅크림, 발진, 수평 돌파, 착지. 흰 앞머리와 주황색 긴 머리, 왕관, 흰 코트와 붉은 망토 유지. 실제 공격속도 및 치명타 증가 스킬에 맞춤. 24포즈 확인.",
+    "skillReleaseFrame": 2
+  },
+  "buena_vista": {
+    "file": "motions/buena_vista.png",
+    "frameWidth": 128,
+    "frameHeight": 128,
+    "columns": 4,
+    "rows": 6,
+    "source": "docs/art-source/motions/production-144/buena_vista/packing.json",
+    "skillId": "skill_buena_vista",
+    "skillSignature": "a5fb0cba9ac434372e683bc01b1cc9071bfcbe58f4cf35e78396fd0d3d24affc",
+    "skillReview": "초안의 잘못된 스킬 및 쓰러짐 행을 다시 생성. 낮은 체력 비율 적 조준, 집중, 제자리 결정타, 회복. 체크 치마와 금색 머리띠, 좌우 다른 양말 및 신발 유지. 최종 6행 24포즈 확인.",
+    "skillReleaseFrame": 2
   }
 }
