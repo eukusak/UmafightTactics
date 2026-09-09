@@ -24,12 +24,8 @@
   },
   "requiredArt": 514,
   "resumeInstructions": [
-    "Read current PR head, docs/FRAME_ANIMATION.md, and desktop-reservation.json before creating assets.",
-    "Skip characters already registered in frame-sheets.json and those reserved by another active session.",
-    "Inspect original Race references and current skill effects; generate distinct poses using imagegen.",
-    "Verify actual PNG alpha, 24 pose cells, identity, and skill targeting before scripts/import-reviewed-motion.py.",
-    "Run art:briefs and frame-animation tests, inspect runtime rendering, preserve provenance and merge concurrent additions before pushing.",
-    "Count registered runtime atlases only; alternatives and generation drafts do not increase completion."
+    "All 145 character and five PvE frame sheets are registered and reviewed. Do not regenerate completed assets without a new request.",
+    "Read docs/qa/PR6_MOTIONS_144_2026-09-09.md for final checks and docs/TFT_PARITY_AUDIT.md for unresolved gameplay differences."
   ],
   "rigging": {
     "character": "special_week",
@@ -76,7 +72,7 @@
   "extraPveStandees": {
     "count": 5,
     "actualCubismModels": 0,
-    "status": "generated full-body images with procedural runtime animation"
+    "status": "generated full-body images and reviewed PNG frame animations"
   },
   "latestValidation": "docs/qa/PR6_DESKTOP_MOTIONS_2026-09-09.md",
   "motionStatus": {
@@ -87,6 +83,7 @@
     "pveTarget": 5,
     "remainingCharacters": 0,
     "registry": "src/data/manual/frame-sheets.json",
-    "reservation": "docs/art-source/motions/desktop-reservation.json"
+    "reservation": "docs/art-source/motions/desktop-reservation.json",
+    "status": "COMPLETE"
   }
 }

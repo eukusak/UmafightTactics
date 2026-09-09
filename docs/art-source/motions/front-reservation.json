@@ -1,7 +1,7 @@
 {
   "session": "codex-front-production-01a08088",
   "updatedAt": "2026-09-09",
-  "status": "FRONT_104_COMPLETE",
+  "status": "COMPLETE",
   "note": "Front104 complete, 30 of desktop40 merged. Ten remaining belong to desktop session. Local draft-only alternatives for Rhein Kraft through Buena Vista are not counted.",
   "completed": [
     "silence_suzuka",
@@ -108,6 +108,11 @@
     "hishi_miracle",
     "tap_dance_city",
     "duramente",
+    "rhein_kraft",
+    "cesario",
+    "air_messiah",
+    "daring_heart",
+    "fusaichi_pandora",
     "buena_vista",
     "orfevre",
     "gentildonna",
@@ -124,11 +129,7 @@
     "almond_eye",
     "lucky_lilac"
   ],
-  "ids": [
-    "rhein_kraft",
-    "cesario",
-    "air_messiah",
-    "daring_heart",
-    "fusaichi_pandora"
-  ]
+  "ids": [],
+  "remainingIds": [],
+  "completedAt": "2026-09-09"
 }
