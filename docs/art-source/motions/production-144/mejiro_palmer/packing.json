@@ -1,0 +1,443 @@
+{
+  "format": "uft-baked-frames-v1",
+  "scale": 0.4444444444444444,
+  "anchor": [
+    64,
+    110
+  ],
+  "runtimeSha256": "5b290e58fb9978170330e4d23733559d90efc99ba28acd21d9d67eca3cf23265",
+  "frames": [
+    {
+      "frame": 0,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/production-144/mejiro_palmer/alpha.png",
+      "sourceSha256": "f0f054975883f80e0b5f2dc72c5737b8431246136a852715b56eb762cf484a99",
+      "crop": [
+        52,
+        39,
+        215,
+        269
+      ],
+      "destination": [
+        28,
+        8,
+        72,
+        102
+      ]
+    },
+    {
+      "frame": 1,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/production-144/mejiro_palmer/alpha.png",
+      "sourceSha256": "f0f054975883f80e0b5f2dc72c5737b8431246136a852715b56eb762cf484a99",
+      "crop": [
+        305,
+        37,
+        467,
+        269
+      ],
+      "destination": [
+        156,
+        7,
+        72,
+        103
+      ]
+    },
+    {
+      "frame": 2,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/production-144/mejiro_palmer/alpha.png",
+      "sourceSha256": "f0f054975883f80e0b5f2dc72c5737b8431246136a852715b56eb762cf484a99",
+      "crop": [
+        547,
+        39,
+        711,
+        269
+      ],
+      "destination": [
+        283,
+        8,
+        73,
+        102
+      ]
+    },
+    {
+      "frame": 3,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/production-144/mejiro_palmer/alpha.png",
+      "sourceSha256": "f0f054975883f80e0b5f2dc72c5737b8431246136a852715b56eb762cf484a99",
+      "crop": [
+        806,
+        40,
+        968,
+        269
+      ],
+      "destination": [
+        412,
+        8,
+        72,
+        102
+      ]
+    },
+    {
+      "frame": 4,
+      "sourceFrame": 4,
+      "source": "docs/art-source/motions/production-144/mejiro_palmer/alpha.png",
+      "sourceSha256": "f0f054975883f80e0b5f2dc72c5737b8431246136a852715b56eb762cf484a99",
+      "crop": [
+        41,
+        305,
+        238,
+        527
+      ],
+      "destination": [
+        20,
+        139,
+        88,
+        99
+      ]
+    },
+    {
+      "frame": 5,
+      "sourceFrame": 5,
+      "source": "docs/art-source/motions/production-144/mejiro_palmer/alpha.png",
+      "sourceSha256": "f0f054975883f80e0b5f2dc72c5737b8431246136a852715b56eb762cf484a99",
+      "crop": [
+        288,
+        300,
+        496,
+        527
+      ],
+      "destination": [
+        146,
+        137,
+        92,
+        101
+      ]
+    },
+    {
+      "frame": 6,
+      "sourceFrame": 6,
+      "source": "docs/art-source/motions/production-144/mejiro_palmer/alpha.png",
+      "sourceSha256": "f0f054975883f80e0b5f2dc72c5737b8431246136a852715b56eb762cf484a99",
+      "crop": [
+        542,
+        304,
+        744,
+        527
+      ],
+      "destination": [
+        275,
+        139,
+        90,
+        99
+      ]
+    },
+    {
+      "frame": 7,
+      "sourceFrame": 7,
+      "source": "docs/art-source/motions/production-144/mejiro_palmer/alpha.png",
+      "sourceSha256": "f0f054975883f80e0b5f2dc72c5737b8431246136a852715b56eb762cf484a99",
+      "crop": [
+        799,
+        303,
+        997,
+        527
+      ],
+      "destination": [
+        404,
+        138,
+        88,
+        100
+      ]
+    },
+    {
+      "frame": 8,
+      "sourceFrame": 8,
+      "source": "docs/art-source/motions/production-144/mejiro_palmer/alpha.png",
+      "sourceSha256": "f0f054975883f80e0b5f2dc72c5737b8431246136a852715b56eb762cf484a99",
+      "crop": [
+        57,
+        556,
+        223,
+        784
+      ],
+      "destination": [
+        27,
+        265,
+        74,
+        101
+      ]
+    },
+    {
+      "frame": 9,
+      "sourceFrame": 9,
+      "source": "docs/art-source/motions/production-144/mejiro_palmer/alpha.png",
+      "sourceSha256": "f0f054975883f80e0b5f2dc72c5737b8431246136a852715b56eb762cf484a99",
+      "crop": [
+        294,
+        553,
+        460,
+        784
+      ],
+      "destination": [
+        155,
+        263,
+        74,
+        103
+      ]
+    },
+    {
+      "frame": 10,
+      "sourceFrame": 10,
+      "source": "docs/art-source/motions/production-144/mejiro_palmer/alpha.png",
+      "sourceSha256": "f0f054975883f80e0b5f2dc72c5737b8431246136a852715b56eb762cf484a99",
+      "crop": [
+        535,
+        550,
+        729,
+        784
+      ],
+      "destination": [
+        277,
+        262,
+        86,
+        104
+      ]
+    },
+    {
+      "frame": 11,
+      "sourceFrame": 11,
+      "source": "docs/art-source/motions/production-144/mejiro_palmer/alpha.png",
+      "sourceSha256": "f0f054975883f80e0b5f2dc72c5737b8431246136a852715b56eb762cf484a99",
+      "crop": [
+        795,
+        559,
+        957,
+        784
+      ],
+      "destination": [
+        412,
+        266,
+        72,
+        100
+      ]
+    },
+    {
+      "frame": 12,
+      "sourceFrame": 12,
+      "source": "docs/art-source/motions/production-144/mejiro_palmer/alpha.png",
+      "sourceSha256": "f0f054975883f80e0b5f2dc72c5737b8431246136a852715b56eb762cf484a99",
+      "crop": [
+        45,
+        811,
+        208,
+        1042
+      ],
+      "destination": [
+        28,
+        391,
+        72,
+        103
+      ]
+    },
+    {
+      "frame": 13,
+      "sourceFrame": 13,
+      "source": "docs/art-source/motions/production-144/mejiro_palmer/alpha.png",
+      "sourceSha256": "f0f054975883f80e0b5f2dc72c5737b8431246136a852715b56eb762cf484a99",
+      "crop": [
+        298,
+        808,
+        457,
+        1042
+      ],
+      "destination": [
+        156,
+        390,
+        71,
+        104
+      ]
+    },
+    {
+      "frame": 14,
+      "sourceFrame": 14,
+      "source": "docs/art-source/motions/production-144/mejiro_palmer/alpha.png",
+      "sourceSha256": "f0f054975883f80e0b5f2dc72c5737b8431246136a852715b56eb762cf484a99",
+      "crop": [
+        539,
+        819,
+        730,
+        1042
+      ],
+      "destination": [
+        277,
+        395,
+        85,
+        99
+      ]
+    },
+    {
+      "frame": 15,
+      "sourceFrame": 15,
+      "source": "docs/art-source/motions/production-144/mejiro_palmer/alpha.png",
+      "sourceSha256": "f0f054975883f80e0b5f2dc72c5737b8431246136a852715b56eb762cf484a99",
+      "crop": [
+        799,
+        815,
+        968,
+        1042
+      ],
+      "destination": [
+        410,
+        393,
+        75,
+        101
+      ]
+    },
+    {
+      "frame": 16,
+      "sourceFrame": 16,
+      "source": "docs/art-source/motions/production-144/mejiro_palmer/alpha.png",
+      "sourceSha256": "f0f054975883f80e0b5f2dc72c5737b8431246136a852715b56eb762cf484a99",
+      "crop": [
+        51,
+        1067,
+        222,
+        1280
+      ],
+      "destination": [
+        26,
+        527,
+        76,
+        95
+      ]
+    },
+    {
+      "frame": 17,
+      "sourceFrame": 17,
+      "source": "docs/art-source/motions/production-144/mejiro_palmer/alpha.png",
+      "sourceSha256": "f0f054975883f80e0b5f2dc72c5737b8431246136a852715b56eb762cf484a99",
+      "crop": [
+        303,
+        1080,
+        475,
+        1274
+      ],
+      "destination": [
+        154,
+        536,
+        76,
+        86
+      ]
+    },
+    {
+      "frame": 18,
+      "sourceFrame": 18,
+      "source": "docs/art-source/motions/production-144/mejiro_palmer/alpha.png",
+      "sourceSha256": "f0f054975883f80e0b5f2dc72c5737b8431246136a852715b56eb762cf484a99",
+      "crop": [
+        540,
+        1101,
+        717,
+        1279
+      ],
+      "destination": [
+        280,
+        543,
+        79,
+        79
+      ]
+    },
+    {
+      "frame": 19,
+      "sourceFrame": 19,
+      "source": "docs/art-source/motions/production-144/mejiro_palmer/alpha.png",
+      "sourceSha256": "f0f054975883f80e0b5f2dc72c5737b8431246136a852715b56eb762cf484a99",
+      "crop": [
+        781,
+        1162,
+        991,
+        1271
+      ],
+      "destination": [
+        401,
+        574,
+        93,
+        48
+      ]
+    },
+    {
+      "frame": 20,
+      "sourceFrame": 20,
+      "source": "docs/art-source/motions/production-144/mejiro_palmer/alpha.png",
+      "sourceSha256": "f0f054975883f80e0b5f2dc72c5737b8431246136a852715b56eb762cf484a99",
+      "crop": [
+        43,
+        1302,
+        202,
+        1532
+      ],
+      "destination": [
+        28,
+        648,
+        71,
+        102
+      ]
+    },
+    {
+      "frame": 21,
+      "sourceFrame": 21,
+      "source": "docs/art-source/motions/production-144/mejiro_palmer/alpha.png",
+      "sourceSha256": "f0f054975883f80e0b5f2dc72c5737b8431246136a852715b56eb762cf484a99",
+      "crop": [
+        298,
+        1297,
+        455,
+        1531
+      ],
+      "destination": [
+        157,
+        646,
+        70,
+        104
+      ]
+    },
+    {
+      "frame": 22,
+      "sourceFrame": 22,
+      "source": "docs/art-source/motions/production-144/mejiro_palmer/alpha.png",
+      "sourceSha256": "f0f054975883f80e0b5f2dc72c5737b8431246136a852715b56eb762cf484a99",
+      "crop": [
+        544,
+        1299,
+        707,
+        1532
+      ],
+      "destination": [
+        284,
+        646,
+        72,
+        104
+      ]
+    },
+    {
+      "frame": 23,
+      "sourceFrame": 23,
+      "source": "docs/art-source/motions/production-144/mejiro_palmer/alpha.png",
+      "sourceSha256": "f0f054975883f80e0b5f2dc72c5737b8431246136a852715b56eb762cf484a99",
+      "crop": [
+        808,
+        1304,
+        966,
+        1532
+      ],
+      "destination": [
+        413,
+        649,
+        70,
+        101
+      ]
+    }
+  ]
+}

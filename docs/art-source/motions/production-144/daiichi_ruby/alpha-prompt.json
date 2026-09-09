@@ -1,0 +1,4 @@
+{
+  "tool": "builtin-imagegen",
+  "prompt": "Edit this 4-column, 6-row sprite sheet. Keep ALL 24 poses and the purple-dress character identity, proportions and cell positions. In row FOUR, column TWO ONLY, change her hands to clearly extend her RIGHT-facing palm in a second projectile RELEASE gesture, visibly different from the first and third firing poses but aimed at the SAME target to the right. Row4 frames1,2,3 must all show successive actual shot releases, frame4 recovery. Do not draw projectiles or effects. Also remove the gray checkerboard surrounding ALL characters to genuinely transparent alpha zero. Preserve white tights and costume. Exactly 1024x1536, 24 full body poses, transparent PNG."
+}

@@ -1,0 +1,443 @@
+{
+  "format": "uft-baked-frames-v1",
+  "scale": 0.40784313725490196,
+  "anchor": [
+    64,
+    110
+  ],
+  "runtimeSha256": "c0ec5d537a3650ba9bc3f8239b1445fa3a46afb827148e9cf7794dd15e4812be",
+  "frames": [
+    {
+      "frame": 0,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/production-144/ikuno_dictus/alpha.png",
+      "sourceSha256": "9756d6b04d470a7cd6ad7d8604f1535e201825ba1c9764a1140785d993fb64a1",
+      "crop": [
+        61,
+        13,
+        209,
+        266
+      ],
+      "destination": [
+        34,
+        7,
+        60,
+        103
+      ]
+    },
+    {
+      "frame": 1,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/production-144/ikuno_dictus/alpha.png",
+      "sourceSha256": "9756d6b04d470a7cd6ad7d8604f1535e201825ba1c9764a1140785d993fb64a1",
+      "crop": [
+        326,
+        14,
+        480,
+        266
+      ],
+      "destination": [
+        160,
+        7,
+        63,
+        103
+      ]
+    },
+    {
+      "frame": 2,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/production-144/ikuno_dictus/alpha.png",
+      "sourceSha256": "9756d6b04d470a7cd6ad7d8604f1535e201825ba1c9764a1140785d993fb64a1",
+      "crop": [
+        590,
+        15,
+        733,
+        266
+      ],
+      "destination": [
+        291,
+        8,
+        58,
+        102
+      ]
+    },
+    {
+      "frame": 3,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/production-144/ikuno_dictus/alpha.png",
+      "sourceSha256": "9756d6b04d470a7cd6ad7d8604f1535e201825ba1c9764a1140785d993fb64a1",
+      "crop": [
+        831,
+        14,
+        976,
+        266
+      ],
+      "destination": [
+        418,
+        7,
+        59,
+        103
+      ]
+    },
+    {
+      "frame": 4,
+      "sourceFrame": 4,
+      "source": "docs/art-source/motions/production-144/ikuno_dictus/alpha.png",
+      "sourceSha256": "9756d6b04d470a7cd6ad7d8604f1535e201825ba1c9764a1140785d993fb64a1",
+      "crop": [
+        31,
+        290,
+        208,
+        519
+      ],
+      "destination": [
+        28,
+        145,
+        72,
+        93
+      ]
+    },
+    {
+      "frame": 5,
+      "sourceFrame": 5,
+      "source": "docs/art-source/motions/production-144/ikuno_dictus/alpha.png",
+      "sourceSha256": "9756d6b04d470a7cd6ad7d8604f1535e201825ba1c9764a1140785d993fb64a1",
+      "crop": [
+        296,
+        291,
+        490,
+        519
+      ],
+      "destination": [
+        152,
+        145,
+        79,
+        93
+      ]
+    },
+    {
+      "frame": 6,
+      "sourceFrame": 6,
+      "source": "docs/art-source/motions/production-144/ikuno_dictus/alpha.png",
+      "sourceSha256": "9756d6b04d470a7cd6ad7d8604f1535e201825ba1c9764a1140785d993fb64a1",
+      "crop": [
+        563,
+        294,
+        753,
+        519
+      ],
+      "destination": [
+        281,
+        146,
+        77,
+        92
+      ]
+    },
+    {
+      "frame": 7,
+      "sourceFrame": 7,
+      "source": "docs/art-source/motions/production-144/ikuno_dictus/alpha.png",
+      "sourceSha256": "9756d6b04d470a7cd6ad7d8604f1535e201825ba1c9764a1140785d993fb64a1",
+      "crop": [
+        813,
+        291,
+        998,
+        519
+      ],
+      "destination": [
+        410,
+        145,
+        75,
+        93
+      ]
+    },
+    {
+      "frame": 8,
+      "sourceFrame": 8,
+      "source": "docs/art-source/motions/production-144/ikuno_dictus/alpha.png",
+      "sourceSha256": "9756d6b04d470a7cd6ad7d8604f1535e201825ba1c9764a1140785d993fb64a1",
+      "crop": [
+        41,
+        532,
+        238,
+        780
+      ],
+      "destination": [
+        24,
+        265,
+        80,
+        101
+      ]
+    },
+    {
+      "frame": 9,
+      "sourceFrame": 9,
+      "source": "docs/art-source/motions/production-144/ikuno_dictus/alpha.png",
+      "sourceSha256": "9756d6b04d470a7cd6ad7d8604f1535e201825ba1c9764a1140785d993fb64a1",
+      "crop": [
+        301,
+        532,
+        486,
+        780
+      ],
+      "destination": [
+        154,
+        265,
+        75,
+        101
+      ]
+    },
+    {
+      "frame": 10,
+      "sourceFrame": 10,
+      "source": "docs/art-source/motions/production-144/ikuno_dictus/alpha.png",
+      "sourceSha256": "9756d6b04d470a7cd6ad7d8604f1535e201825ba1c9764a1140785d993fb64a1",
+      "crop": [
+        557,
+        532,
+        768,
+        780
+      ],
+      "destination": [
+        277,
+        265,
+        86,
+        101
+      ]
+    },
+    {
+      "frame": 11,
+      "sourceFrame": 11,
+      "source": "docs/art-source/motions/production-144/ikuno_dictus/alpha.png",
+      "sourceSha256": "9756d6b04d470a7cd6ad7d8604f1535e201825ba1c9764a1140785d993fb64a1",
+      "crop": [
+        818,
+        532,
+        972,
+        780
+      ],
+      "destination": [
+        416,
+        265,
+        63,
+        101
+      ]
+    },
+    {
+      "frame": 12,
+      "sourceFrame": 12,
+      "source": "docs/art-source/motions/production-144/ikuno_dictus/alpha.png",
+      "sourceSha256": "9756d6b04d470a7cd6ad7d8604f1535e201825ba1c9764a1140785d993fb64a1",
+      "crop": [
+        49,
+        801,
+        200,
+        1055
+      ],
+      "destination": [
+        33,
+        390,
+        62,
+        104
+      ]
+    },
+    {
+      "frame": 13,
+      "sourceFrame": 13,
+      "source": "docs/art-source/motions/production-144/ikuno_dictus/alpha.png",
+      "sourceSha256": "9756d6b04d470a7cd6ad7d8604f1535e201825ba1c9764a1140785d993fb64a1",
+      "crop": [
+        316,
+        803,
+        503,
+        1055
+      ],
+      "destination": [
+        154,
+        391,
+        76,
+        103
+      ]
+    },
+    {
+      "frame": 14,
+      "sourceFrame": 14,
+      "source": "docs/art-source/motions/production-144/ikuno_dictus/alpha.png",
+      "sourceSha256": "9756d6b04d470a7cd6ad7d8604f1535e201825ba1c9764a1140785d993fb64a1",
+      "crop": [
+        578,
+        816,
+        747,
+        1055
+      ],
+      "destination": [
+        285,
+        397,
+        69,
+        97
+      ]
+    },
+    {
+      "frame": 15,
+      "sourceFrame": 15,
+      "source": "docs/art-source/motions/production-144/ikuno_dictus/alpha.png",
+      "sourceSha256": "9756d6b04d470a7cd6ad7d8604f1535e201825ba1c9764a1140785d993fb64a1",
+      "crop": [
+        828,
+        800,
+        995,
+        1055
+      ],
+      "destination": [
+        414,
+        390,
+        68,
+        104
+      ]
+    },
+    {
+      "frame": 16,
+      "sourceFrame": 16,
+      "source": "docs/art-source/motions/production-144/ikuno_dictus/alpha.png",
+      "sourceSha256": "9756d6b04d470a7cd6ad7d8604f1535e201825ba1c9764a1140785d993fb64a1",
+      "crop": [
+        47,
+        1070,
+        217,
+        1280
+      ],
+      "destination": [
+        29,
+        536,
+        69,
+        86
+      ]
+    },
+    {
+      "frame": 17,
+      "sourceFrame": 17,
+      "source": "docs/art-source/motions/production-144/ikuno_dictus/alpha.png",
+      "sourceSha256": "9756d6b04d470a7cd6ad7d8604f1535e201825ba1c9764a1140785d993fb64a1",
+      "crop": [
+        305,
+        1094,
+        480,
+        1273
+      ],
+      "destination": [
+        156,
+        549,
+        71,
+        73
+      ]
+    },
+    {
+      "frame": 18,
+      "sourceFrame": 18,
+      "source": "docs/art-source/motions/production-144/ikuno_dictus/alpha.png",
+      "sourceSha256": "9756d6b04d470a7cd6ad7d8604f1535e201825ba1c9764a1140785d993fb64a1",
+      "crop": [
+        567,
+        1105,
+        726,
+        1273
+      ],
+      "destination": [
+        287,
+        553,
+        65,
+        69
+      ]
+    },
+    {
+      "frame": 19,
+      "sourceFrame": 19,
+      "source": "docs/art-source/motions/production-144/ikuno_dictus/alpha.png",
+      "sourceSha256": "9756d6b04d470a7cd6ad7d8604f1535e201825ba1c9764a1140785d993fb64a1",
+      "crop": [
+        794,
+        1163,
+        1024,
+        1280
+      ],
+      "destination": [
+        401,
+        574,
+        94,
+        48
+      ]
+    },
+    {
+      "frame": 20,
+      "sourceFrame": 20,
+      "source": "docs/art-source/motions/production-144/ikuno_dictus/alpha.png",
+      "sourceSha256": "9756d6b04d470a7cd6ad7d8604f1535e201825ba1c9764a1140785d993fb64a1",
+      "crop": [
+        52,
+        1293,
+        199,
+        1535
+      ],
+      "destination": [
+        34,
+        651,
+        60,
+        99
+      ]
+    },
+    {
+      "frame": 21,
+      "sourceFrame": 21,
+      "source": "docs/art-source/motions/production-144/ikuno_dictus/alpha.png",
+      "sourceSha256": "9756d6b04d470a7cd6ad7d8604f1535e201825ba1c9764a1140785d993fb64a1",
+      "crop": [
+        316,
+        1293,
+        467,
+        1534
+      ],
+      "destination": [
+        161,
+        652,
+        62,
+        98
+      ]
+    },
+    {
+      "frame": 22,
+      "sourceFrame": 22,
+      "source": "docs/art-source/motions/production-144/ikuno_dictus/alpha.png",
+      "sourceSha256": "9756d6b04d470a7cd6ad7d8604f1535e201825ba1c9764a1140785d993fb64a1",
+      "crop": [
+        569,
+        1296,
+        723,
+        1516
+      ],
+      "destination": [
+        288,
+        660,
+        63,
+        90
+      ]
+    },
+    {
+      "frame": 23,
+      "sourceFrame": 23,
+      "source": "docs/art-source/motions/production-144/ikuno_dictus/alpha.png",
+      "sourceSha256": "9756d6b04d470a7cd6ad7d8604f1535e201825ba1c9764a1140785d993fb64a1",
+      "crop": [
+        822,
+        1295,
+        964,
+        1534
+      ],
+      "destination": [
+        419,
+        653,
+        58,
+        97
+      ]
+    }
+  ]
+}

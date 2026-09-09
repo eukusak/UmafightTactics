@@ -1,0 +1,443 @@
+{
+  "format": "uft-baked-frames-v1",
+  "scale": 0.41434262948207173,
+  "anchor": [
+    64,
+    110
+  ],
+  "runtimeSha256": "25bc65d55166444169054c8de2fe63dfc9fa28c0973f67ee79345a3172a0b18e",
+  "frames": [
+    {
+      "frame": 0,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/production-144/narita_taishin/alpha.png",
+      "sourceSha256": "1d5d7ba6680f53d93ed2164ed32eff681fce824ebf83f5a2573e09e073bc73c7",
+      "crop": [
+        50,
+        21,
+        196,
+        257
+      ],
+      "destination": [
+        34,
+        12,
+        60,
+        98
+      ]
+    },
+    {
+      "frame": 1,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/production-144/narita_taishin/alpha.png",
+      "sourceSha256": "1d5d7ba6680f53d93ed2164ed32eff681fce824ebf83f5a2573e09e073bc73c7",
+      "crop": [
+        312,
+        27,
+        445,
+        257
+      ],
+      "destination": [
+        164,
+        15,
+        55,
+        95
+      ]
+    },
+    {
+      "frame": 2,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/production-144/narita_taishin/alpha.png",
+      "sourceSha256": "1d5d7ba6680f53d93ed2164ed32eff681fce824ebf83f5a2573e09e073bc73c7",
+      "crop": [
+        574,
+        22,
+        706,
+        257
+      ],
+      "destination": [
+        292,
+        13,
+        55,
+        97
+      ]
+    },
+    {
+      "frame": 3,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/production-144/narita_taishin/alpha.png",
+      "sourceSha256": "1d5d7ba6680f53d93ed2164ed32eff681fce824ebf83f5a2573e09e073bc73c7",
+      "crop": [
+        818,
+        21,
+        963,
+        257
+      ],
+      "destination": [
+        418,
+        12,
+        60,
+        98
+      ]
+    },
+    {
+      "frame": 4,
+      "sourceFrame": 4,
+      "source": "docs/art-source/motions/production-144/narita_taishin/alpha.png",
+      "sourceSha256": "1d5d7ba6680f53d93ed2164ed32eff681fce824ebf83f5a2573e09e073bc73c7",
+      "crop": [
+        35,
+        274,
+        219,
+        497
+      ],
+      "destination": [
+        26,
+        146,
+        76,
+        92
+      ]
+    },
+    {
+      "frame": 5,
+      "sourceFrame": 5,
+      "source": "docs/art-source/motions/production-144/narita_taishin/alpha.png",
+      "sourceSha256": "1d5d7ba6680f53d93ed2164ed32eff681fce824ebf83f5a2573e09e073bc73c7",
+      "crop": [
+        301,
+        282,
+        482,
+        508
+      ],
+      "destination": [
+        154,
+        144,
+        75,
+        94
+      ]
+    },
+    {
+      "frame": 6,
+      "sourceFrame": 6,
+      "source": "docs/art-source/motions/production-144/narita_taishin/alpha.png",
+      "sourceSha256": "1d5d7ba6680f53d93ed2164ed32eff681fce824ebf83f5a2573e09e073bc73c7",
+      "crop": [
+        548,
+        283,
+        734,
+        508
+      ],
+      "destination": [
+        281,
+        145,
+        77,
+        93
+      ]
+    },
+    {
+      "frame": 7,
+      "sourceFrame": 7,
+      "source": "docs/art-source/motions/production-144/narita_taishin/alpha.png",
+      "sourceSha256": "1d5d7ba6680f53d93ed2164ed32eff681fce824ebf83f5a2573e09e073bc73c7",
+      "crop": [
+        804,
+        275,
+        995,
+        507
+      ],
+      "destination": [
+        408,
+        142,
+        79,
+        96
+      ]
+    },
+    {
+      "frame": 8,
+      "sourceFrame": 8,
+      "source": "docs/art-source/motions/production-144/narita_taishin/alpha.png",
+      "sourceSha256": "1d5d7ba6680f53d93ed2164ed32eff681fce824ebf83f5a2573e09e073bc73c7",
+      "crop": [
+        51,
+        524,
+        199,
+        761
+      ],
+      "destination": [
+        33,
+        268,
+        61,
+        98
+      ]
+    },
+    {
+      "frame": 9,
+      "sourceFrame": 9,
+      "source": "docs/art-source/motions/production-144/narita_taishin/alpha.png",
+      "sourceSha256": "1d5d7ba6680f53d93ed2164ed32eff681fce824ebf83f5a2573e09e073bc73c7",
+      "crop": [
+        305,
+        530,
+        476,
+        760
+      ],
+      "destination": [
+        156,
+        271,
+        71,
+        95
+      ]
+    },
+    {
+      "frame": 10,
+      "sourceFrame": 10,
+      "source": "docs/art-source/motions/production-144/narita_taishin/alpha.png",
+      "sourceSha256": "1d5d7ba6680f53d93ed2164ed32eff681fce824ebf83f5a2573e09e073bc73c7",
+      "crop": [
+        547,
+        529,
+        764,
+        759
+      ],
+      "destination": [
+        275,
+        271,
+        90,
+        95
+      ]
+    },
+    {
+      "frame": 11,
+      "sourceFrame": 11,
+      "source": "docs/art-source/motions/production-144/narita_taishin/alpha.png",
+      "sourceSha256": "1d5d7ba6680f53d93ed2164ed32eff681fce824ebf83f5a2573e09e073bc73c7",
+      "crop": [
+        819,
+        531,
+        978,
+        761
+      ],
+      "destination": [
+        415,
+        271,
+        66,
+        95
+      ]
+    },
+    {
+      "frame": 12,
+      "sourceFrame": 12,
+      "source": "docs/art-source/motions/production-144/narita_taishin/alpha.png",
+      "sourceSha256": "1d5d7ba6680f53d93ed2164ed32eff681fce824ebf83f5a2573e09e073bc73c7",
+      "crop": [
+        33,
+        811,
+        238,
+        1001
+      ],
+      "destination": [
+        21,
+        415,
+        85,
+        79
+      ]
+    },
+    {
+      "frame": 13,
+      "sourceFrame": 13,
+      "source": "docs/art-source/motions/production-144/narita_taishin/alpha.png",
+      "sourceSha256": "1d5d7ba6680f53d93ed2164ed32eff681fce824ebf83f5a2573e09e073bc73c7",
+      "crop": [
+        279,
+        786,
+        487,
+        993
+      ],
+      "destination": [
+        149,
+        408,
+        86,
+        86
+      ]
+    },
+    {
+      "frame": 14,
+      "sourceFrame": 14,
+      "source": "docs/art-source/motions/production-144/narita_taishin/alpha.png",
+      "sourceSha256": "1d5d7ba6680f53d93ed2164ed32eff681fce824ebf83f5a2573e09e073bc73c7",
+      "crop": [
+        518,
+        805,
+        761,
+        984
+      ],
+      "destination": [
+        269,
+        420,
+        101,
+        74
+      ]
+    },
+    {
+      "frame": 15,
+      "sourceFrame": 15,
+      "source": "docs/art-source/motions/production-144/narita_taishin/alpha.png",
+      "sourceSha256": "1d5d7ba6680f53d93ed2164ed32eff681fce824ebf83f5a2573e09e073bc73c7",
+      "crop": [
+        800,
+        820,
+        1008,
+        996
+      ],
+      "destination": [
+        405,
+        421,
+        86,
+        73
+      ]
+    },
+    {
+      "frame": 16,
+      "sourceFrame": 16,
+      "source": "docs/art-source/motions/production-144/narita_taishin/alpha.png",
+      "sourceSha256": "1d5d7ba6680f53d93ed2164ed32eff681fce824ebf83f5a2573e09e073bc73c7",
+      "crop": [
+        44,
+        1032,
+        227,
+        1255
+      ],
+      "destination": [
+        26,
+        530,
+        76,
+        92
+      ]
+    },
+    {
+      "frame": 17,
+      "sourceFrame": 17,
+      "source": "docs/art-source/motions/production-144/narita_taishin/alpha.png",
+      "sourceSha256": "1d5d7ba6680f53d93ed2164ed32eff681fce824ebf83f5a2573e09e073bc73c7",
+      "crop": [
+        299,
+        1071,
+        488,
+        1254
+      ],
+      "destination": [
+        153,
+        546,
+        78,
+        76
+      ]
+    },
+    {
+      "frame": 18,
+      "sourceFrame": 18,
+      "source": "docs/art-source/motions/production-144/narita_taishin/alpha.png",
+      "sourceSha256": "1d5d7ba6680f53d93ed2164ed32eff681fce824ebf83f5a2573e09e073bc73c7",
+      "crop": [
+        551,
+        1081,
+        729,
+        1250
+      ],
+      "destination": [
+        283,
+        552,
+        74,
+        70
+      ]
+    },
+    {
+      "frame": 19,
+      "sourceFrame": 19,
+      "source": "docs/art-source/motions/production-144/narita_taishin/alpha.png",
+      "sourceSha256": "1d5d7ba6680f53d93ed2164ed32eff681fce824ebf83f5a2573e09e073bc73c7",
+      "crop": [
+        772,
+        1145,
+        1011,
+        1255
+      ],
+      "destination": [
+        398,
+        576,
+        99,
+        46
+      ]
+    },
+    {
+      "frame": 20,
+      "sourceFrame": 20,
+      "source": "docs/art-source/motions/production-144/narita_taishin/alpha.png",
+      "sourceSha256": "1d5d7ba6680f53d93ed2164ed32eff681fce824ebf83f5a2573e09e073bc73c7",
+      "crop": [
+        49,
+        1268,
+        197,
+        1519
+      ],
+      "destination": [
+        33,
+        646,
+        61,
+        104
+      ]
+    },
+    {
+      "frame": 21,
+      "sourceFrame": 21,
+      "source": "docs/art-source/motions/production-144/narita_taishin/alpha.png",
+      "sourceSha256": "1d5d7ba6680f53d93ed2164ed32eff681fce824ebf83f5a2573e09e073bc73c7",
+      "crop": [
+        316,
+        1276,
+        459,
+        1519
+      ],
+      "destination": [
+        162,
+        649,
+        59,
+        101
+      ]
+    },
+    {
+      "frame": 22,
+      "sourceFrame": 22,
+      "source": "docs/art-source/motions/production-144/narita_taishin/alpha.png",
+      "sourceSha256": "1d5d7ba6680f53d93ed2164ed32eff681fce824ebf83f5a2573e09e073bc73c7",
+      "crop": [
+        559,
+        1268,
+        708,
+        1518
+      ],
+      "destination": [
+        289,
+        646,
+        62,
+        104
+      ]
+    },
+    {
+      "frame": 23,
+      "sourceFrame": 23,
+      "source": "docs/art-source/motions/production-144/narita_taishin/alpha.png",
+      "sourceSha256": "1d5d7ba6680f53d93ed2164ed32eff681fce824ebf83f5a2573e09e073bc73c7",
+      "crop": [
+        815,
+        1275,
+        977,
+        1519
+      ],
+      "destination": [
+        414,
+        649,
+        67,
+        101
+      ]
+    }
+  ]
+}

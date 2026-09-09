@@ -1,0 +1,443 @@
+{
+  "format": "uft-baked-frames-v1",
+  "scale": 0.4094488188976378,
+  "anchor": [
+    64,
+    110
+  ],
+  "runtimeSha256": "4ad3dd7401cf1b69d147f4fc060158d944277a98e87e9b1eb2d878c4dcd04879",
+  "frames": [
+    {
+      "frame": 0,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/production-144/kitasan_black/alpha.png",
+      "sourceSha256": "63179848caa1cb6884325056216a38e135d7ee0e60530ce62446399e4f2a125f",
+      "crop": [
+        53,
+        16,
+        207,
+        261
+      ],
+      "destination": [
+        32,
+        10,
+        63,
+        100
+      ]
+    },
+    {
+      "frame": 1,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/production-144/kitasan_black/alpha.png",
+      "sourceSha256": "63179848caa1cb6884325056216a38e135d7ee0e60530ce62446399e4f2a125f",
+      "crop": [
+        314,
+        16,
+        454,
+        261
+      ],
+      "destination": [
+        163,
+        10,
+        57,
+        100
+      ]
+    },
+    {
+      "frame": 2,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/production-144/kitasan_black/alpha.png",
+      "sourceSha256": "63179848caa1cb6884325056216a38e135d7ee0e60530ce62446399e4f2a125f",
+      "crop": [
+        556,
+        15,
+        706,
+        261
+      ],
+      "destination": [
+        289,
+        9,
+        61,
+        101
+      ]
+    },
+    {
+      "frame": 3,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/production-144/kitasan_black/alpha.png",
+      "sourceSha256": "63179848caa1cb6884325056216a38e135d7ee0e60530ce62446399e4f2a125f",
+      "crop": [
+        810,
+        16,
+        957,
+        261
+      ],
+      "destination": [
+        418,
+        10,
+        60,
+        100
+      ]
+    },
+    {
+      "frame": 4,
+      "sourceFrame": 4,
+      "source": "docs/art-source/motions/production-144/kitasan_black/alpha.png",
+      "sourceSha256": "63179848caa1cb6884325056216a38e135d7ee0e60530ce62446399e4f2a125f",
+      "crop": [
+        38,
+        274,
+        217,
+        516
+      ],
+      "destination": [
+        27,
+        139,
+        73,
+        99
+      ]
+    },
+    {
+      "frame": 5,
+      "sourceFrame": 5,
+      "source": "docs/art-source/motions/production-144/kitasan_black/alpha.png",
+      "sourceSha256": "63179848caa1cb6884325056216a38e135d7ee0e60530ce62446399e4f2a125f",
+      "crop": [
+        287,
+        283,
+        465,
+        516
+      ],
+      "destination": [
+        155,
+        143,
+        73,
+        95
+      ]
+    },
+    {
+      "frame": 6,
+      "sourceFrame": 6,
+      "source": "docs/art-source/motions/production-144/kitasan_black/alpha.png",
+      "sourceSha256": "63179848caa1cb6884325056216a38e135d7ee0e60530ce62446399e4f2a125f",
+      "crop": [
+        539,
+        277,
+        721,
+        516
+      ],
+      "destination": [
+        282,
+        140,
+        75,
+        98
+      ]
+    },
+    {
+      "frame": 7,
+      "sourceFrame": 7,
+      "source": "docs/art-source/motions/production-144/kitasan_black/alpha.png",
+      "sourceSha256": "63179848caa1cb6884325056216a38e135d7ee0e60530ce62446399e4f2a125f",
+      "crop": [
+        788,
+        284,
+        971,
+        516
+      ],
+      "destination": [
+        410,
+        143,
+        75,
+        95
+      ]
+    },
+    {
+      "frame": 8,
+      "sourceFrame": 8,
+      "source": "docs/art-source/motions/production-144/kitasan_black/alpha.png",
+      "sourceSha256": "63179848caa1cb6884325056216a38e135d7ee0e60530ce62446399e4f2a125f",
+      "crop": [
+        46,
+        531,
+        214,
+        764
+      ],
+      "destination": [
+        29,
+        271,
+        69,
+        95
+      ]
+    },
+    {
+      "frame": 9,
+      "sourceFrame": 9,
+      "source": "docs/art-source/motions/production-144/kitasan_black/alpha.png",
+      "sourceSha256": "63179848caa1cb6884325056216a38e135d7ee0e60530ce62446399e4f2a125f",
+      "crop": [
+        288,
+        534,
+        474,
+        763
+      ],
+      "destination": [
+        154,
+        272,
+        76,
+        94
+      ]
+    },
+    {
+      "frame": 10,
+      "sourceFrame": 10,
+      "source": "docs/art-source/motions/production-144/kitasan_black/alpha.png",
+      "sourceSha256": "63179848caa1cb6884325056216a38e135d7ee0e60530ce62446399e4f2a125f",
+      "crop": [
+        535,
+        533,
+        741,
+        768
+      ],
+      "destination": [
+        278,
+        270,
+        84,
+        96
+      ]
+    },
+    {
+      "frame": 11,
+      "sourceFrame": 11,
+      "source": "docs/art-source/motions/production-144/kitasan_black/alpha.png",
+      "sourceSha256": "63179848caa1cb6884325056216a38e135d7ee0e60530ce62446399e4f2a125f",
+      "crop": [
+        808,
+        535,
+        971,
+        768
+      ],
+      "destination": [
+        414,
+        271,
+        67,
+        95
+      ]
+    },
+    {
+      "frame": 12,
+      "sourceFrame": 12,
+      "source": "docs/art-source/motions/production-144/kitasan_black/alpha.png",
+      "sourceSha256": "63179848caa1cb6884325056216a38e135d7ee0e60530ce62446399e4f2a125f",
+      "crop": [
+        54,
+        787,
+        207,
+        1034
+      ],
+      "destination": [
+        32,
+        393,
+        63,
+        101
+      ]
+    },
+    {
+      "frame": 13,
+      "sourceFrame": 13,
+      "source": "docs/art-source/motions/production-144/kitasan_black/alpha.png",
+      "sourceSha256": "63179848caa1cb6884325056216a38e135d7ee0e60530ce62446399e4f2a125f",
+      "crop": [
+        305,
+        785,
+        461,
+        1037
+      ],
+      "destination": [
+        160,
+        391,
+        64,
+        103
+      ]
+    },
+    {
+      "frame": 14,
+      "sourceFrame": 14,
+      "source": "docs/art-source/motions/production-144/kitasan_black/alpha.png",
+      "sourceSha256": "63179848caa1cb6884325056216a38e135d7ee0e60530ce62446399e4f2a125f",
+      "crop": [
+        545,
+        786,
+        748,
+        1039
+      ],
+      "destination": [
+        278,
+        390,
+        83,
+        104
+      ]
+    },
+    {
+      "frame": 15,
+      "sourceFrame": 15,
+      "source": "docs/art-source/motions/production-144/kitasan_black/alpha.png",
+      "sourceSha256": "63179848caa1cb6884325056216a38e135d7ee0e60530ce62446399e4f2a125f",
+      "crop": [
+        816,
+        785,
+        966,
+        1039
+      ],
+      "destination": [
+        417,
+        390,
+        61,
+        104
+      ]
+    },
+    {
+      "frame": 16,
+      "sourceFrame": 16,
+      "source": "docs/art-source/motions/production-144/kitasan_black/alpha.png",
+      "sourceSha256": "63179848caa1cb6884325056216a38e135d7ee0e60530ce62446399e4f2a125f",
+      "crop": [
+        46,
+        1054,
+        225,
+        1264
+      ],
+      "destination": [
+        27,
+        536,
+        73,
+        86
+      ]
+    },
+    {
+      "frame": 17,
+      "sourceFrame": 17,
+      "source": "docs/art-source/motions/production-144/kitasan_black/alpha.png",
+      "sourceSha256": "63179848caa1cb6884325056216a38e135d7ee0e60530ce62446399e4f2a125f",
+      "crop": [
+        292,
+        1082,
+        474,
+        1260
+      ],
+      "destination": [
+        154,
+        549,
+        75,
+        73
+      ]
+    },
+    {
+      "frame": 18,
+      "sourceFrame": 18,
+      "source": "docs/art-source/motions/production-144/kitasan_black/alpha.png",
+      "sourceSha256": "63179848caa1cb6884325056216a38e135d7ee0e60530ce62446399e4f2a125f",
+      "crop": [
+        536,
+        1095,
+        739,
+        1259
+      ],
+      "destination": [
+        278,
+        555,
+        83,
+        67
+      ]
+    },
+    {
+      "frame": 19,
+      "sourceFrame": 19,
+      "source": "docs/art-source/motions/production-144/kitasan_black/alpha.png",
+      "sourceSha256": "63179848caa1cb6884325056216a38e135d7ee0e60530ce62446399e4f2a125f",
+      "crop": [
+        772,
+        1153,
+        1006,
+        1257
+      ],
+      "destination": [
+        400,
+        579,
+        96,
+        43
+      ]
+    },
+    {
+      "frame": 20,
+      "sourceFrame": 20,
+      "source": "docs/art-source/motions/production-144/kitasan_black/alpha.png",
+      "sourceSha256": "63179848caa1cb6884325056216a38e135d7ee0e60530ce62446399e4f2a125f",
+      "crop": [
+        51,
+        1277,
+        204,
+        1522
+      ],
+      "destination": [
+        32,
+        650,
+        63,
+        100
+      ]
+    },
+    {
+      "frame": 21,
+      "sourceFrame": 21,
+      "source": "docs/art-source/motions/production-144/kitasan_black/alpha.png",
+      "sourceSha256": "63179848caa1cb6884325056216a38e135d7ee0e60530ce62446399e4f2a125f",
+      "crop": [
+        300,
+        1277,
+        468,
+        1524
+      ],
+      "destination": [
+        157,
+        649,
+        69,
+        101
+      ]
+    },
+    {
+      "frame": 22,
+      "sourceFrame": 22,
+      "source": "docs/art-source/motions/production-144/kitasan_black/alpha.png",
+      "sourceSha256": "63179848caa1cb6884325056216a38e135d7ee0e60530ce62446399e4f2a125f",
+      "crop": [
+        559,
+        1287,
+        713,
+        1500
+      ],
+      "destination": [
+        288,
+        663,
+        63,
+        87
+      ]
+    },
+    {
+      "frame": 23,
+      "sourceFrame": 23,
+      "source": "docs/art-source/motions/production-144/kitasan_black/alpha.png",
+      "sourceSha256": "63179848caa1cb6884325056216a38e135d7ee0e60530ce62446399e4f2a125f",
+      "crop": [
+        815,
+        1282,
+        958,
+        1523
+      ],
+      "destination": [
+        418,
+        651,
+        59,
+        99
+      ]
+    }
+  ]
+}

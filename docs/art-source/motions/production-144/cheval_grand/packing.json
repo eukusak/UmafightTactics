@@ -1,0 +1,443 @@
+{
+  "format": "uft-baked-frames-v1",
+  "scale": 0.4297520661157025,
+  "anchor": [
+    64,
+    110
+  ],
+  "runtimeSha256": "72c0490ba8f097ddf506de3ce9ea87986779f999887f085c803c67f12ad20549",
+  "frames": [
+    {
+      "frame": 0,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/production-144/cheval_grand/alpha.png",
+      "sourceSha256": "9ae7d9e4a37af02f9a069dd77eda1c2e1b525b26cc92c9a33f004bb6ae71d129",
+      "crop": [
+        75,
+        32,
+        223,
+        267
+      ],
+      "destination": [
+        32,
+        9,
+        64,
+        101
+      ]
+    },
+    {
+      "frame": 1,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/production-144/cheval_grand/alpha.png",
+      "sourceSha256": "9ae7d9e4a37af02f9a069dd77eda1c2e1b525b26cc92c9a33f004bb6ae71d129",
+      "crop": [
+        321,
+        32,
+        460,
+        267
+      ],
+      "destination": [
+        162,
+        9,
+        60,
+        101
+      ]
+    },
+    {
+      "frame": 2,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/production-144/cheval_grand/alpha.png",
+      "sourceSha256": "9ae7d9e4a37af02f9a069dd77eda1c2e1b525b26cc92c9a33f004bb6ae71d129",
+      "crop": [
+        559,
+        32,
+        701,
+        267
+      ],
+      "destination": [
+        289,
+        9,
+        61,
+        101
+      ]
+    },
+    {
+      "frame": 3,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/production-144/cheval_grand/alpha.png",
+      "sourceSha256": "9ae7d9e4a37af02f9a069dd77eda1c2e1b525b26cc92c9a33f004bb6ae71d129",
+      "crop": [
+        799,
+        32,
+        935,
+        267
+      ],
+      "destination": [
+        419,
+        9,
+        58,
+        101
+      ]
+    },
+    {
+      "frame": 4,
+      "sourceFrame": 4,
+      "source": "docs/art-source/motions/production-144/cheval_grand/alpha.png",
+      "sourceSha256": "9ae7d9e4a37af02f9a069dd77eda1c2e1b525b26cc92c9a33f004bb6ae71d129",
+      "crop": [
+        33,
+        292,
+        237,
+        512
+      ],
+      "destination": [
+        20,
+        143,
+        88,
+        95
+      ]
+    },
+    {
+      "frame": 5,
+      "sourceFrame": 5,
+      "source": "docs/art-source/motions/production-144/cheval_grand/alpha.png",
+      "sourceSha256": "9ae7d9e4a37af02f9a069dd77eda1c2e1b525b26cc92c9a33f004bb6ae71d129",
+      "crop": [
+        295,
+        291,
+        483,
+        513
+      ],
+      "destination": [
+        151,
+        143,
+        81,
+        95
+      ]
+    },
+    {
+      "frame": 6,
+      "sourceFrame": 6,
+      "source": "docs/art-source/motions/production-144/cheval_grand/alpha.png",
+      "sourceSha256": "9ae7d9e4a37af02f9a069dd77eda1c2e1b525b26cc92c9a33f004bb6ae71d129",
+      "crop": [
+        530,
+        293,
+        730,
+        515
+      ],
+      "destination": [
+        277,
+        143,
+        86,
+        95
+      ]
+    },
+    {
+      "frame": 7,
+      "sourceFrame": 7,
+      "source": "docs/art-source/motions/production-144/cheval_grand/alpha.png",
+      "sourceSha256": "9ae7d9e4a37af02f9a069dd77eda1c2e1b525b26cc92c9a33f004bb6ae71d129",
+      "crop": [
+        782,
+        294,
+        972,
+        515
+      ],
+      "destination": [
+        407,
+        143,
+        82,
+        95
+      ]
+    },
+    {
+      "frame": 8,
+      "sourceFrame": 8,
+      "source": "docs/art-source/motions/production-144/cheval_grand/alpha.png",
+      "sourceSha256": "9ae7d9e4a37af02f9a069dd77eda1c2e1b525b26cc92c9a33f004bb6ae71d129",
+      "crop": [
+        48,
+        531,
+        214,
+        762
+      ],
+      "destination": [
+        28,
+        267,
+        71,
+        99
+      ]
+    },
+    {
+      "frame": 9,
+      "sourceFrame": 9,
+      "source": "docs/art-source/motions/production-144/cheval_grand/alpha.png",
+      "sourceSha256": "9ae7d9e4a37af02f9a069dd77eda1c2e1b525b26cc92c9a33f004bb6ae71d129",
+      "crop": [
+        298,
+        539,
+        475,
+        762
+      ],
+      "destination": [
+        154,
+        270,
+        76,
+        96
+      ]
+    },
+    {
+      "frame": 10,
+      "sourceFrame": 10,
+      "source": "docs/art-source/motions/production-144/cheval_grand/alpha.png",
+      "sourceSha256": "9ae7d9e4a37af02f9a069dd77eda1c2e1b525b26cc92c9a33f004bb6ae71d129",
+      "crop": [
+        557,
+        536,
+        745,
+        763
+      ],
+      "destination": [
+        279,
+        268,
+        81,
+        98
+      ]
+    },
+    {
+      "frame": 11,
+      "sourceFrame": 11,
+      "source": "docs/art-source/motions/production-144/cheval_grand/alpha.png",
+      "sourceSha256": "9ae7d9e4a37af02f9a069dd77eda1c2e1b525b26cc92c9a33f004bb6ae71d129",
+      "crop": [
+        811,
+        535,
+        963,
+        763
+      ],
+      "destination": [
+        415,
+        268,
+        65,
+        98
+      ]
+    },
+    {
+      "frame": 12,
+      "sourceFrame": 12,
+      "source": "docs/art-source/motions/production-144/cheval_grand/alpha.png",
+      "sourceSha256": "9ae7d9e4a37af02f9a069dd77eda1c2e1b525b26cc92c9a33f004bb6ae71d129",
+      "crop": [
+        55,
+        792,
+        244,
+        1031
+      ],
+      "destination": [
+        23,
+        391,
+        81,
+        103
+      ]
+    },
+    {
+      "frame": 13,
+      "sourceFrame": 13,
+      "source": "docs/art-source/motions/production-144/cheval_grand/alpha.png",
+      "sourceSha256": "9ae7d9e4a37af02f9a069dd77eda1c2e1b525b26cc92c9a33f004bb6ae71d129",
+      "crop": [
+        312,
+        791,
+        460,
+        1031
+      ],
+      "destination": [
+        160,
+        391,
+        64,
+        103
+      ]
+    },
+    {
+      "frame": 14,
+      "sourceFrame": 14,
+      "source": "docs/art-source/motions/production-144/cheval_grand/alpha.png",
+      "sourceSha256": "9ae7d9e4a37af02f9a069dd77eda1c2e1b525b26cc92c9a33f004bb6ae71d129",
+      "crop": [
+        551,
+        792,
+        748,
+        1030
+      ],
+      "destination": [
+        277,
+        392,
+        85,
+        102
+      ]
+    },
+    {
+      "frame": 15,
+      "sourceFrame": 15,
+      "source": "docs/art-source/motions/production-144/cheval_grand/alpha.png",
+      "sourceSha256": "9ae7d9e4a37af02f9a069dd77eda1c2e1b525b26cc92c9a33f004bb6ae71d129",
+      "crop": [
+        823,
+        796,
+        962,
+        1031
+      ],
+      "destination": [
+        418,
+        393,
+        60,
+        101
+      ]
+    },
+    {
+      "frame": 16,
+      "sourceFrame": 16,
+      "source": "docs/art-source/motions/production-144/cheval_grand/alpha.png",
+      "sourceSha256": "9ae7d9e4a37af02f9a069dd77eda1c2e1b525b26cc92c9a33f004bb6ae71d129",
+      "crop": [
+        44,
+        1060,
+        238,
+        1268
+      ],
+      "destination": [
+        22,
+        533,
+        83,
+        89
+      ]
+    },
+    {
+      "frame": 17,
+      "sourceFrame": 17,
+      "source": "docs/art-source/motions/production-144/cheval_grand/alpha.png",
+      "sourceSha256": "9ae7d9e4a37af02f9a069dd77eda1c2e1b525b26cc92c9a33f004bb6ae71d129",
+      "crop": [
+        311,
+        1077,
+        486,
+        1263
+      ],
+      "destination": [
+        154,
+        542,
+        75,
+        80
+      ]
+    },
+    {
+      "frame": 18,
+      "sourceFrame": 18,
+      "source": "docs/art-source/motions/production-144/cheval_grand/alpha.png",
+      "sourceSha256": "9ae7d9e4a37af02f9a069dd77eda1c2e1b525b26cc92c9a33f004bb6ae71d129",
+      "crop": [
+        542,
+        1090,
+        717,
+        1264
+      ],
+      "destination": [
+        282,
+        547,
+        75,
+        75
+      ]
+    },
+    {
+      "frame": 19,
+      "sourceFrame": 19,
+      "source": "docs/art-source/motions/production-144/cheval_grand/alpha.png",
+      "sourceSha256": "9ae7d9e4a37af02f9a069dd77eda1c2e1b525b26cc92c9a33f004bb6ae71d129",
+      "crop": [
+        771,
+        1153,
+        1003,
+        1251
+      ],
+      "destination": [
+        398,
+        580,
+        100,
+        42
+      ]
+    },
+    {
+      "frame": 20,
+      "sourceFrame": 20,
+      "source": "docs/art-source/motions/production-144/cheval_grand/alpha.png",
+      "sourceSha256": "9ae7d9e4a37af02f9a069dd77eda1c2e1b525b26cc92c9a33f004bb6ae71d129",
+      "crop": [
+        72,
+        1288,
+        208,
+        1526
+      ],
+      "destination": [
+        35,
+        648,
+        58,
+        102
+      ]
+    },
+    {
+      "frame": 21,
+      "sourceFrame": 21,
+      "source": "docs/art-source/motions/production-144/cheval_grand/alpha.png",
+      "sourceSha256": "9ae7d9e4a37af02f9a069dd77eda1c2e1b525b26cc92c9a33f004bb6ae71d129",
+      "crop": [
+        298,
+        1284,
+        450,
+        1526
+      ],
+      "destination": [
+        159,
+        646,
+        65,
+        104
+      ]
+    },
+    {
+      "frame": 22,
+      "sourceFrame": 22,
+      "source": "docs/art-source/motions/production-144/cheval_grand/alpha.png",
+      "sourceSha256": "9ae7d9e4a37af02f9a069dd77eda1c2e1b525b26cc92c9a33f004bb6ae71d129",
+      "crop": [
+        567,
+        1285,
+        707,
+        1508
+      ],
+      "destination": [
+        290,
+        654,
+        60,
+        96
+      ]
+    },
+    {
+      "frame": 23,
+      "sourceFrame": 23,
+      "source": "docs/art-source/motions/production-144/cheval_grand/alpha.png",
+      "sourceSha256": "9ae7d9e4a37af02f9a069dd77eda1c2e1b525b26cc92c9a33f004bb6ae71d129",
+      "crop": [
+        821,
+        1285,
+        951,
+        1526
+      ],
+      "destination": [
+        420,
+        646,
+        56,
+        104
+      ]
+    }
+  ]
+}

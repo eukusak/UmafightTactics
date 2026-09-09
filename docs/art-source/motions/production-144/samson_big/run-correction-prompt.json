@@ -1,0 +1,4 @@
+{
+  "tool": "builtin-imagegen",
+  "prompt": "Correct ONLY the second row RUN cycle of this exact 4-column by 6-row 1024x1536 character atlas. The current four running pictures all repeat the same leading leg. Replace row2 with four clearly different full-body running poses: col1 LEFT foot forward extended contact, right leg trailing; col2 LEFT leg supporting under hips while RIGHT knee swings forward high, arms swap; col3 RIGHT foot forward extended contact, left leg trailing; col4 RIGHT leg supporting under hips while LEFT knee swings forward high, arms swap. Preserve the same character clothes identity, camera facing right, size and cell positions. Keep the other 20 drawings unchanged. Return full 24-pose atlas with genuine transparent ALPHA background, no checkerboard or background color. No floating effects. Do not omit any rows."
+}

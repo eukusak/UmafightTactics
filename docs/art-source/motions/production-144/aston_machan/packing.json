@@ -1,0 +1,443 @@
+{
+  "format": "uft-baked-frames-v1",
+  "scale": 0.4444444444444444,
+  "anchor": [
+    64,
+    110
+  ],
+  "runtimeSha256": "1b7da634747307a4c1994d30b4081c8293a3ef3d288928fcb74a5772a25e490e",
+  "frames": [
+    {
+      "frame": 0,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/production-144/aston_machan/alpha.png",
+      "sourceSha256": "d826eb122f480d048edaa98c93f6dce4f89e84b1c661927f5998bfcdd2eebb26",
+      "crop": [
+        49,
+        27,
+        194,
+        253
+      ],
+      "destination": [
+        32,
+        10,
+        64,
+        100
+      ]
+    },
+    {
+      "frame": 1,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/production-144/aston_machan/alpha.png",
+      "sourceSha256": "d826eb122f480d048edaa98c93f6dce4f89e84b1c661927f5998bfcdd2eebb26",
+      "crop": [
+        304,
+        26,
+        450,
+        253
+      ],
+      "destination": [
+        159,
+        9,
+        65,
+        101
+      ]
+    },
+    {
+      "frame": 2,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/production-144/aston_machan/alpha.png",
+      "sourceSha256": "d826eb122f480d048edaa98c93f6dce4f89e84b1c661927f5998bfcdd2eebb26",
+      "crop": [
+        559,
+        27,
+        705,
+        254
+      ],
+      "destination": [
+        287,
+        9,
+        65,
+        101
+      ]
+    },
+    {
+      "frame": 3,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/production-144/aston_machan/alpha.png",
+      "sourceSha256": "d826eb122f480d048edaa98c93f6dce4f89e84b1c661927f5998bfcdd2eebb26",
+      "crop": [
+        814,
+        27,
+        960,
+        253
+      ],
+      "destination": [
+        415,
+        10,
+        65,
+        100
+      ]
+    },
+    {
+      "frame": 4,
+      "sourceFrame": 4,
+      "source": "docs/art-source/motions/production-144/aston_machan/alpha.png",
+      "sourceSha256": "d826eb122f480d048edaa98c93f6dce4f89e84b1c661927f5998bfcdd2eebb26",
+      "crop": [
+        43,
+        285,
+        205,
+        512
+      ],
+      "destination": [
+        28,
+        137,
+        72,
+        101
+      ]
+    },
+    {
+      "frame": 5,
+      "sourceFrame": 5,
+      "source": "docs/art-source/motions/production-144/aston_machan/alpha.png",
+      "sourceSha256": "d826eb122f480d048edaa98c93f6dce4f89e84b1c661927f5998bfcdd2eebb26",
+      "crop": [
+        296,
+        285,
+        460,
+        509
+      ],
+      "destination": [
+        155,
+        138,
+        73,
+        100
+      ]
+    },
+    {
+      "frame": 6,
+      "sourceFrame": 6,
+      "source": "docs/art-source/motions/production-144/aston_machan/alpha.png",
+      "sourceSha256": "d826eb122f480d048edaa98c93f6dce4f89e84b1c661927f5998bfcdd2eebb26",
+      "crop": [
+        552,
+        285,
+        715,
+        512
+      ],
+      "destination": [
+        284,
+        137,
+        72,
+        101
+      ]
+    },
+    {
+      "frame": 7,
+      "sourceFrame": 7,
+      "source": "docs/art-source/motions/production-144/aston_machan/alpha.png",
+      "sourceSha256": "d826eb122f480d048edaa98c93f6dce4f89e84b1c661927f5998bfcdd2eebb26",
+      "crop": [
+        807,
+        285,
+        972,
+        512
+      ],
+      "destination": [
+        411,
+        137,
+        73,
+        101
+      ]
+    },
+    {
+      "frame": 8,
+      "sourceFrame": 8,
+      "source": "docs/art-source/motions/production-144/aston_machan/alpha.png",
+      "sourceSha256": "d826eb122f480d048edaa98c93f6dce4f89e84b1c661927f5998bfcdd2eebb26",
+      "crop": [
+        53,
+        538,
+        215,
+        767
+      ],
+      "destination": [
+        28,
+        264,
+        72,
+        102
+      ]
+    },
+    {
+      "frame": 9,
+      "sourceFrame": 9,
+      "source": "docs/art-source/motions/production-144/aston_machan/alpha.png",
+      "sourceSha256": "d826eb122f480d048edaa98c93f6dce4f89e84b1c661927f5998bfcdd2eebb26",
+      "crop": [
+        295,
+        538,
+        454,
+        768
+      ],
+      "destination": [
+        156,
+        264,
+        71,
+        102
+      ]
+    },
+    {
+      "frame": 10,
+      "sourceFrame": 10,
+      "source": "docs/art-source/motions/production-144/aston_machan/alpha.png",
+      "sourceSha256": "d826eb122f480d048edaa98c93f6dce4f89e84b1c661927f5998bfcdd2eebb26",
+      "crop": [
+        553,
+        538,
+        744,
+        768
+      ],
+      "destination": [
+        277,
+        264,
+        85,
+        102
+      ]
+    },
+    {
+      "frame": 11,
+      "sourceFrame": 11,
+      "source": "docs/art-source/motions/production-144/aston_machan/alpha.png",
+      "sourceSha256": "d826eb122f480d048edaa98c93f6dce4f89e84b1c661927f5998bfcdd2eebb26",
+      "crop": [
+        815,
+        538,
+        960,
+        768
+      ],
+      "destination": [
+        416,
+        264,
+        64,
+        102
+      ]
+    },
+    {
+      "frame": 12,
+      "sourceFrame": 12,
+      "source": "docs/art-source/motions/production-144/aston_machan/alpha.png",
+      "sourceSha256": "d826eb122f480d048edaa98c93f6dce4f89e84b1c661927f5998bfcdd2eebb26",
+      "crop": [
+        47,
+        808,
+        206,
+        1024
+      ],
+      "destination": [
+        28,
+        398,
+        71,
+        96
+      ]
+    },
+    {
+      "frame": 13,
+      "sourceFrame": 13,
+      "source": "docs/art-source/motions/production-144/aston_machan/alpha.png",
+      "sourceSha256": "d826eb122f480d048edaa98c93f6dce4f89e84b1c661927f5998bfcdd2eebb26",
+      "crop": [
+        299,
+        791,
+        467,
+        1024
+      ],
+      "destination": [
+        154,
+        390,
+        75,
+        104
+      ]
+    },
+    {
+      "frame": 14,
+      "sourceFrame": 14,
+      "source": "docs/art-source/motions/production-144/aston_machan/alpha.png",
+      "sourceSha256": "d826eb122f480d048edaa98c93f6dce4f89e84b1c661927f5998bfcdd2eebb26",
+      "crop": [
+        555,
+        807,
+        728,
+        1024
+      ],
+      "destination": [
+        281,
+        398,
+        77,
+        96
+      ]
+    },
+    {
+      "frame": 15,
+      "sourceFrame": 15,
+      "source": "docs/art-source/motions/production-144/aston_machan/alpha.png",
+      "sourceSha256": "d826eb122f480d048edaa98c93f6dce4f89e84b1c661927f5998bfcdd2eebb26",
+      "crop": [
+        822,
+        801,
+        963,
+        1024
+      ],
+      "destination": [
+        416,
+        395,
+        63,
+        99
+      ]
+    },
+    {
+      "frame": 16,
+      "sourceFrame": 16,
+      "source": "docs/art-source/motions/production-144/aston_machan/alpha.png",
+      "sourceSha256": "d826eb122f480d048edaa98c93f6dce4f89e84b1c661927f5998bfcdd2eebb26",
+      "crop": [
+        49,
+        1060,
+        215,
+        1269
+      ],
+      "destination": [
+        27,
+        529,
+        74,
+        93
+      ]
+    },
+    {
+      "frame": 17,
+      "sourceFrame": 17,
+      "source": "docs/art-source/motions/production-144/aston_machan/alpha.png",
+      "sourceSha256": "d826eb122f480d048edaa98c93f6dce4f89e84b1c661927f5998bfcdd2eebb26",
+      "crop": [
+        304,
+        1077,
+        473,
+        1249
+      ],
+      "destination": [
+        154,
+        546,
+        75,
+        76
+      ]
+    },
+    {
+      "frame": 18,
+      "sourceFrame": 18,
+      "source": "docs/art-source/motions/production-144/aston_machan/alpha.png",
+      "sourceSha256": "d826eb122f480d048edaa98c93f6dce4f89e84b1c661927f5998bfcdd2eebb26",
+      "crop": [
+        544,
+        1093,
+        711,
+        1253
+      ],
+      "destination": [
+        283,
+        551,
+        74,
+        71
+      ]
+    },
+    {
+      "frame": 19,
+      "sourceFrame": 19,
+      "source": "docs/art-source/motions/production-144/aston_machan/alpha.png",
+      "sourceSha256": "d826eb122f480d048edaa98c93f6dce4f89e84b1c661927f5998bfcdd2eebb26",
+      "crop": [
+        782,
+        1143,
+        1001,
+        1254
+      ],
+      "destination": [
+        399,
+        573,
+        97,
+        49
+      ]
+    },
+    {
+      "frame": 20,
+      "sourceFrame": 20,
+      "source": "docs/art-source/motions/production-144/aston_machan/alpha.png",
+      "sourceSha256": "d826eb122f480d048edaa98c93f6dce4f89e84b1c661927f5998bfcdd2eebb26",
+      "crop": [
+        52,
+        1287,
+        198,
+        1519
+      ],
+      "destination": [
+        31,
+        647,
+        65,
+        103
+      ]
+    },
+    {
+      "frame": 21,
+      "sourceFrame": 21,
+      "source": "docs/art-source/motions/production-144/aston_machan/alpha.png",
+      "sourceSha256": "d826eb122f480d048edaa98c93f6dce4f89e84b1c661927f5998bfcdd2eebb26",
+      "crop": [
+        309,
+        1283,
+        460,
+        1511
+      ],
+      "destination": [
+        158,
+        649,
+        67,
+        101
+      ]
+    },
+    {
+      "frame": 22,
+      "sourceFrame": 22,
+      "source": "docs/art-source/motions/production-144/aston_machan/alpha.png",
+      "sourceSha256": "d826eb122f480d048edaa98c93f6dce4f89e84b1c661927f5998bfcdd2eebb26",
+      "crop": [
+        564,
+        1285,
+        706,
+        1519
+      ],
+      "destination": [
+        288,
+        646,
+        63,
+        104
+      ]
+    },
+    {
+      "frame": 23,
+      "sourceFrame": 23,
+      "source": "docs/art-source/motions/production-144/aston_machan/alpha.png",
+      "sourceSha256": "d826eb122f480d048edaa98c93f6dce4f89e84b1c661927f5998bfcdd2eebb26",
+      "crop": [
+        824,
+        1287,
+        975,
+        1519
+      ],
+      "destination": [
+        414,
+        647,
+        67,
+        103
+      ]
+    }
+  ]
+}

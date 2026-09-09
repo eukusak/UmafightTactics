@@ -1,0 +1,443 @@
+{
+  "format": "uft-baked-frames-v1",
+  "scale": 0.4297520661157025,
+  "anchor": [
+    64,
+    110
+  ],
+  "runtimeSha256": "95ad0c32d3b0a8c4a653ea30c71775fb0f6c2e8b17a7e444b57b5e638bff7687",
+  "frames": [
+    {
+      "frame": 0,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/production-144/nakayama_festa/alpha.png",
+      "sourceSha256": "11493441d722b3ec358d5dee379700893e418484d81fe90a51d0532862e7c170",
+      "crop": [
+        64,
+        24,
+        211,
+        263
+      ],
+      "destination": [
+        32,
+        7,
+        63,
+        103
+      ]
+    },
+    {
+      "frame": 1,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/production-144/nakayama_festa/alpha.png",
+      "sourceSha256": "11493441d722b3ec358d5dee379700893e418484d81fe90a51d0532862e7c170",
+      "crop": [
+        307,
+        23,
+        449,
+        263
+      ],
+      "destination": [
+        161,
+        7,
+        61,
+        103
+      ]
+    },
+    {
+      "frame": 2,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/production-144/nakayama_festa/alpha.png",
+      "sourceSha256": "11493441d722b3ec358d5dee379700893e418484d81fe90a51d0532862e7c170",
+      "crop": [
+        550,
+        24,
+        699,
+        263
+      ],
+      "destination": [
+        288,
+        7,
+        64,
+        103
+      ]
+    },
+    {
+      "frame": 3,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/production-144/nakayama_festa/alpha.png",
+      "sourceSha256": "11493441d722b3ec358d5dee379700893e418484d81fe90a51d0532862e7c170",
+      "crop": [
+        797,
+        23,
+        941,
+        263
+      ],
+      "destination": [
+        417,
+        7,
+        62,
+        103
+      ]
+    },
+    {
+      "frame": 4,
+      "sourceFrame": 4,
+      "source": "docs/art-source/motions/production-144/nakayama_festa/alpha.png",
+      "sourceSha256": "11493441d722b3ec358d5dee379700893e418484d81fe90a51d0532862e7c170",
+      "crop": [
+        46,
+        283,
+        219,
+        519
+      ],
+      "destination": [
+        27,
+        137,
+        74,
+        101
+      ]
+    },
+    {
+      "frame": 5,
+      "sourceFrame": 5,
+      "source": "docs/art-source/motions/production-144/nakayama_festa/alpha.png",
+      "sourceSha256": "11493441d722b3ec358d5dee379700893e418484d81fe90a51d0532862e7c170",
+      "crop": [
+        289,
+        285,
+        469,
+        510
+      ],
+      "destination": [
+        153,
+        141,
+        77,
+        97
+      ]
+    },
+    {
+      "frame": 6,
+      "sourceFrame": 6,
+      "source": "docs/art-source/motions/production-144/nakayama_festa/alpha.png",
+      "sourceSha256": "11493441d722b3ec358d5dee379700893e418484d81fe90a51d0532862e7c170",
+      "crop": [
+        543,
+        287,
+        726,
+        520
+      ],
+      "destination": [
+        280,
+        138,
+        79,
+        100
+      ]
+    },
+    {
+      "frame": 7,
+      "sourceFrame": 7,
+      "source": "docs/art-source/motions/production-144/nakayama_festa/alpha.png",
+      "sourceSha256": "11493441d722b3ec358d5dee379700893e418484d81fe90a51d0532862e7c170",
+      "crop": [
+        800,
+        286,
+        982,
+        515
+      ],
+      "destination": [
+        409,
+        140,
+        78,
+        98
+      ]
+    },
+    {
+      "frame": 8,
+      "sourceFrame": 8,
+      "source": "docs/art-source/motions/production-144/nakayama_festa/alpha.png",
+      "sourceSha256": "11493441d722b3ec358d5dee379700893e418484d81fe90a51d0532862e7c170",
+      "crop": [
+        56,
+        540,
+        229,
+        774
+      ],
+      "destination": [
+        27,
+        265,
+        74,
+        101
+      ]
+    },
+    {
+      "frame": 9,
+      "sourceFrame": 9,
+      "source": "docs/art-source/motions/production-144/nakayama_festa/alpha.png",
+      "sourceSha256": "11493441d722b3ec358d5dee379700893e418484d81fe90a51d0532862e7c170",
+      "crop": [
+        299,
+        535,
+        474,
+        774
+      ],
+      "destination": [
+        154,
+        263,
+        75,
+        103
+      ]
+    },
+    {
+      "frame": 10,
+      "sourceFrame": 10,
+      "source": "docs/art-source/motions/production-144/nakayama_festa/alpha.png",
+      "sourceSha256": "11493441d722b3ec358d5dee379700893e418484d81fe90a51d0532862e7c170",
+      "crop": [
+        536,
+        536,
+        742,
+        774
+      ],
+      "destination": [
+        275,
+        264,
+        89,
+        102
+      ]
+    },
+    {
+      "frame": 11,
+      "sourceFrame": 11,
+      "source": "docs/art-source/motions/production-144/nakayama_festa/alpha.png",
+      "sourceSha256": "11493441d722b3ec358d5dee379700893e418484d81fe90a51d0532862e7c170",
+      "crop": [
+        811,
+        542,
+        960,
+        774
+      ],
+      "destination": [
+        416,
+        266,
+        64,
+        100
+      ]
+    },
+    {
+      "frame": 12,
+      "sourceFrame": 12,
+      "source": "docs/art-source/motions/production-144/nakayama_festa/alpha.png",
+      "sourceSha256": "11493441d722b3ec358d5dee379700893e418484d81fe90a51d0532862e7c170",
+      "crop": [
+        53,
+        792,
+        201,
+        1034
+      ],
+      "destination": [
+        32,
+        390,
+        64,
+        104
+      ]
+    },
+    {
+      "frame": 13,
+      "sourceFrame": 13,
+      "source": "docs/art-source/motions/production-144/nakayama_festa/alpha.png",
+      "sourceSha256": "11493441d722b3ec358d5dee379700893e418484d81fe90a51d0532862e7c170",
+      "crop": [
+        297,
+        792,
+        494,
+        1034
+      ],
+      "destination": [
+        149,
+        390,
+        85,
+        104
+      ]
+    },
+    {
+      "frame": 14,
+      "sourceFrame": 14,
+      "source": "docs/art-source/motions/production-144/nakayama_festa/alpha.png",
+      "sourceSha256": "11493441d722b3ec358d5dee379700893e418484d81fe90a51d0532862e7c170",
+      "crop": [
+        537,
+        795,
+        728,
+        1034
+      ],
+      "destination": [
+        279,
+        391,
+        82,
+        103
+      ]
+    },
+    {
+      "frame": 15,
+      "sourceFrame": 15,
+      "source": "docs/art-source/motions/production-144/nakayama_festa/alpha.png",
+      "sourceSha256": "11493441d722b3ec358d5dee379700893e418484d81fe90a51d0532862e7c170",
+      "crop": [
+        805,
+        795,
+        953,
+        1034
+      ],
+      "destination": [
+        416,
+        391,
+        64,
+        103
+      ]
+    },
+    {
+      "frame": 16,
+      "sourceFrame": 16,
+      "source": "docs/art-source/motions/production-144/nakayama_festa/alpha.png",
+      "sourceSha256": "11493441d722b3ec358d5dee379700893e418484d81fe90a51d0532862e7c170",
+      "crop": [
+        41,
+        1067,
+        223,
+        1270
+      ],
+      "destination": [
+        25,
+        535,
+        78,
+        87
+      ]
+    },
+    {
+      "frame": 17,
+      "sourceFrame": 17,
+      "source": "docs/art-source/motions/production-144/nakayama_festa/alpha.png",
+      "sourceSha256": "11493441d722b3ec358d5dee379700893e418484d81fe90a51d0532862e7c170",
+      "crop": [
+        289,
+        1079,
+        470,
+        1267
+      ],
+      "destination": [
+        153,
+        541,
+        78,
+        81
+      ]
+    },
+    {
+      "frame": 18,
+      "sourceFrame": 18,
+      "source": "docs/art-source/motions/production-144/nakayama_festa/alpha.png",
+      "sourceSha256": "11493441d722b3ec358d5dee379700893e418484d81fe90a51d0532862e7c170",
+      "crop": [
+        539,
+        1097,
+        723,
+        1270
+      ],
+      "destination": [
+        280,
+        548,
+        79,
+        74
+      ]
+    },
+    {
+      "frame": 19,
+      "sourceFrame": 19,
+      "source": "docs/art-source/motions/production-144/nakayama_festa/alpha.png",
+      "sourceSha256": "11493441d722b3ec358d5dee379700893e418484d81fe90a51d0532862e7c170",
+      "crop": [
+        775,
+        1157,
+        1011,
+        1263
+      ],
+      "destination": [
+        397,
+        576,
+        101,
+        46
+      ]
+    },
+    {
+      "frame": 20,
+      "sourceFrame": 20,
+      "source": "docs/art-source/motions/production-144/nakayama_festa/alpha.png",
+      "sourceSha256": "11493441d722b3ec358d5dee379700893e418484d81fe90a51d0532862e7c170",
+      "crop": [
+        51,
+        1284,
+        201,
+        1522
+      ],
+      "destination": [
+        32,
+        648,
+        64,
+        102
+      ]
+    },
+    {
+      "frame": 21,
+      "sourceFrame": 21,
+      "source": "docs/art-source/motions/production-144/nakayama_festa/alpha.png",
+      "sourceSha256": "11493441d722b3ec358d5dee379700893e418484d81fe90a51d0532862e7c170",
+      "crop": [
+        319,
+        1285,
+        470,
+        1522
+      ],
+      "destination": [
+        159,
+        648,
+        65,
+        102
+      ]
+    },
+    {
+      "frame": 22,
+      "sourceFrame": 22,
+      "source": "docs/art-source/motions/production-144/nakayama_festa/alpha.png",
+      "sourceSha256": "11493441d722b3ec358d5dee379700893e418484d81fe90a51d0532862e7c170",
+      "crop": [
+        550,
+        1286,
+        703,
+        1522
+      ],
+      "destination": [
+        287,
+        649,
+        66,
+        101
+      ]
+    },
+    {
+      "frame": 23,
+      "sourceFrame": 23,
+      "source": "docs/art-source/motions/production-144/nakayama_festa/alpha.png",
+      "sourceSha256": "11493441d722b3ec358d5dee379700893e418484d81fe90a51d0532862e7c170",
+      "crop": [
+        812,
+        1280,
+        953,
+        1522
+      ],
+      "destination": [
+        417,
+        646,
+        61,
+        104
+      ]
+    }
+  ]
+}

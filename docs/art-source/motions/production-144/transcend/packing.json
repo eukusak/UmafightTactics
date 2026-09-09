@@ -1,0 +1,443 @@
+{
+  "format": "uft-baked-frames-v1",
+  "scale": 0.45217391304347826,
+  "anchor": [
+    64,
+    110
+  ],
+  "runtimeSha256": "f45727cbd3cf89496555755d93edd2511042344cd5f0109c7b20d16036205f43",
+  "frames": [
+    {
+      "frame": 0,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/production-144/transcend/alpha.png",
+      "sourceSha256": "55a11e09040ab6ca1c51da03b3afe48be5a148cb391a564819f56919184dbe85",
+      "crop": [
+        67,
+        24,
+        192,
+        243
+      ],
+      "destination": [
+        35,
+        11,
+        57,
+        99
+      ]
+    },
+    {
+      "frame": 1,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/production-144/transcend/alpha.png",
+      "sourceSha256": "55a11e09040ab6ca1c51da03b3afe48be5a148cb391a564819f56919184dbe85",
+      "crop": [
+        319,
+        23,
+        441,
+        243
+      ],
+      "destination": [
+        164,
+        11,
+        55,
+        99
+      ]
+    },
+    {
+      "frame": 2,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/production-144/transcend/alpha.png",
+      "sourceSha256": "55a11e09040ab6ca1c51da03b3afe48be5a148cb391a564819f56919184dbe85",
+      "crop": [
+        574,
+        24,
+        696,
+        243
+      ],
+      "destination": [
+        292,
+        11,
+        55,
+        99
+      ]
+    },
+    {
+      "frame": 3,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/production-144/transcend/alpha.png",
+      "sourceSha256": "55a11e09040ab6ca1c51da03b3afe48be5a148cb391a564819f56919184dbe85",
+      "crop": [
+        830,
+        24,
+        952,
+        243
+      ],
+      "destination": [
+        420,
+        11,
+        55,
+        99
+      ]
+    },
+    {
+      "frame": 4,
+      "sourceFrame": 4,
+      "source": "docs/art-source/motions/production-144/transcend/alpha.png",
+      "sourceSha256": "55a11e09040ab6ca1c51da03b3afe48be5a148cb391a564819f56919184dbe85",
+      "crop": [
+        42,
+        273,
+        200,
+        495
+      ],
+      "destination": [
+        28,
+        138,
+        71,
+        100
+      ]
+    },
+    {
+      "frame": 5,
+      "sourceFrame": 5,
+      "source": "docs/art-source/motions/production-144/transcend/alpha.png",
+      "sourceSha256": "55a11e09040ab6ca1c51da03b3afe48be5a148cb391a564819f56919184dbe85",
+      "crop": [
+        300,
+        272,
+        457,
+        496
+      ],
+      "destination": [
+        156,
+        137,
+        71,
+        101
+      ]
+    },
+    {
+      "frame": 6,
+      "sourceFrame": 6,
+      "source": "docs/art-source/motions/production-144/transcend/alpha.png",
+      "sourceSha256": "55a11e09040ab6ca1c51da03b3afe48be5a148cb391a564819f56919184dbe85",
+      "crop": [
+        543,
+        276,
+        722,
+        494
+      ],
+      "destination": [
+        279,
+        139,
+        81,
+        99
+      ]
+    },
+    {
+      "frame": 7,
+      "sourceFrame": 7,
+      "source": "docs/art-source/motions/production-144/transcend/alpha.png",
+      "sourceSha256": "55a11e09040ab6ca1c51da03b3afe48be5a148cb391a564819f56919184dbe85",
+      "crop": [
+        817,
+        274,
+        975,
+        496
+      ],
+      "destination": [
+        412,
+        138,
+        71,
+        100
+      ]
+    },
+    {
+      "frame": 8,
+      "sourceFrame": 8,
+      "source": "docs/art-source/motions/production-144/transcend/alpha.png",
+      "sourceSha256": "55a11e09040ab6ca1c51da03b3afe48be5a148cb391a564819f56919184dbe85",
+      "crop": [
+        43,
+        526,
+        226,
+        750
+      ],
+      "destination": [
+        22,
+        265,
+        83,
+        101
+      ]
+    },
+    {
+      "frame": 9,
+      "sourceFrame": 9,
+      "source": "docs/art-source/motions/production-144/transcend/alpha.png",
+      "sourceSha256": "55a11e09040ab6ca1c51da03b3afe48be5a148cb391a564819f56919184dbe85",
+      "crop": [
+        298,
+        527,
+        445,
+        753
+      ],
+      "destination": [
+        159,
+        264,
+        66,
+        102
+      ]
+    },
+    {
+      "frame": 10,
+      "sourceFrame": 10,
+      "source": "docs/art-source/motions/production-144/transcend/alpha.png",
+      "sourceSha256": "55a11e09040ab6ca1c51da03b3afe48be5a148cb391a564819f56919184dbe85",
+      "crop": [
+        537,
+        532,
+        721,
+        751
+      ],
+      "destination": [
+        278,
+        267,
+        83,
+        99
+      ]
+    },
+    {
+      "frame": 11,
+      "sourceFrame": 11,
+      "source": "docs/art-source/motions/production-144/transcend/alpha.png",
+      "sourceSha256": "55a11e09040ab6ca1c51da03b3afe48be5a148cb391a564819f56919184dbe85",
+      "crop": [
+        815,
+        532,
+        962,
+        751
+      ],
+      "destination": [
+        415,
+        267,
+        66,
+        99
+      ]
+    },
+    {
+      "frame": 12,
+      "sourceFrame": 12,
+      "source": "docs/art-source/motions/production-144/transcend/alpha.png",
+      "sourceSha256": "55a11e09040ab6ca1c51da03b3afe48be5a148cb391a564819f56919184dbe85",
+      "crop": [
+        49,
+        817,
+        195,
+        1018
+      ],
+      "destination": [
+        31,
+        403,
+        66,
+        91
+      ]
+    },
+    {
+      "frame": 13,
+      "sourceFrame": 13,
+      "source": "docs/art-source/motions/production-144/transcend/alpha.png",
+      "sourceSha256": "55a11e09040ab6ca1c51da03b3afe48be5a148cb391a564819f56919184dbe85",
+      "crop": [
+        304,
+        790,
+        450,
+        1020
+      ],
+      "destination": [
+        159,
+        390,
+        66,
+        104
+      ]
+    },
+    {
+      "frame": 14,
+      "sourceFrame": 14,
+      "source": "docs/art-source/motions/production-144/transcend/alpha.png",
+      "sourceSha256": "55a11e09040ab6ca1c51da03b3afe48be5a148cb391a564819f56919184dbe85",
+      "crop": [
+        535,
+        809,
+        725,
+        1020
+      ],
+      "destination": [
+        277,
+        399,
+        86,
+        95
+      ]
+    },
+    {
+      "frame": 15,
+      "sourceFrame": 15,
+      "source": "docs/art-source/motions/production-144/transcend/alpha.png",
+      "sourceSha256": "55a11e09040ab6ca1c51da03b3afe48be5a148cb391a564819f56919184dbe85",
+      "crop": [
+        822,
+        809,
+        974,
+        1021
+      ],
+      "destination": [
+        413,
+        398,
+        69,
+        96
+      ]
+    },
+    {
+      "frame": 16,
+      "sourceFrame": 16,
+      "source": "docs/art-source/motions/production-144/transcend/alpha.png",
+      "sourceSha256": "55a11e09040ab6ca1c51da03b3afe48be5a148cb391a564819f56919184dbe85",
+      "crop": [
+        43,
+        1057,
+        201,
+        1260
+      ],
+      "destination": [
+        28,
+        530,
+        71,
+        92
+      ]
+    },
+    {
+      "frame": 17,
+      "sourceFrame": 17,
+      "source": "docs/art-source/motions/production-144/transcend/alpha.png",
+      "sourceSha256": "55a11e09040ab6ca1c51da03b3afe48be5a148cb391a564819f56919184dbe85",
+      "crop": [
+        292,
+        1091,
+        464,
+        1253
+      ],
+      "destination": [
+        153,
+        549,
+        78,
+        73
+      ]
+    },
+    {
+      "frame": 18,
+      "sourceFrame": 18,
+      "source": "docs/art-source/motions/production-144/transcend/alpha.png",
+      "sourceSha256": "55a11e09040ab6ca1c51da03b3afe48be5a148cb391a564819f56919184dbe85",
+      "crop": [
+        549,
+        1098,
+        707,
+        1254
+      ],
+      "destination": [
+        284,
+        551,
+        71,
+        71
+      ]
+    },
+    {
+      "frame": 19,
+      "sourceFrame": 19,
+      "source": "docs/art-source/motions/production-144/transcend/alpha.png",
+      "sourceSha256": "55a11e09040ab6ca1c51da03b3afe48be5a148cb391a564819f56919184dbe85",
+      "crop": [
+        790,
+        1159,
+        1005,
+        1253
+      ],
+      "destination": [
+        399,
+        579,
+        97,
+        43
+      ]
+    },
+    {
+      "frame": 20,
+      "sourceFrame": 20,
+      "source": "docs/art-source/motions/production-144/transcend/alpha.png",
+      "sourceSha256": "55a11e09040ab6ca1c51da03b3afe48be5a148cb391a564819f56919184dbe85",
+      "crop": [
+        65,
+        1287,
+        192,
+        1517
+      ],
+      "destination": [
+        35,
+        646,
+        57,
+        104
+      ]
+    },
+    {
+      "frame": 21,
+      "sourceFrame": 21,
+      "source": "docs/art-source/motions/production-144/transcend/alpha.png",
+      "sourceSha256": "55a11e09040ab6ca1c51da03b3afe48be5a148cb391a564819f56919184dbe85",
+      "crop": [
+        313,
+        1287,
+        448,
+        1516
+      ],
+      "destination": [
+        161,
+        646,
+        61,
+        104
+      ]
+    },
+    {
+      "frame": 22,
+      "sourceFrame": 22,
+      "source": "docs/art-source/motions/production-144/transcend/alpha.png",
+      "sourceSha256": "55a11e09040ab6ca1c51da03b3afe48be5a148cb391a564819f56919184dbe85",
+      "crop": [
+        564,
+        1290,
+        699,
+        1512
+      ],
+      "destination": [
+        289,
+        650,
+        61,
+        100
+      ]
+    },
+    {
+      "frame": 23,
+      "sourceFrame": 23,
+      "source": "docs/art-source/motions/production-144/transcend/alpha.png",
+      "sourceSha256": "55a11e09040ab6ca1c51da03b3afe48be5a148cb391a564819f56919184dbe85",
+      "crop": [
+        829,
+        1291,
+        952,
+        1517
+      ],
+      "destination": [
+        420,
+        648,
+        56,
+        102
+      ]
+    }
+  ]
+}

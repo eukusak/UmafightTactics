@@ -1,0 +1,443 @@
+{
+  "format": "uft-baked-frames-v1",
+  "scale": 0.42105263157894735,
+  "anchor": [
+    64,
+    110
+  ],
+  "runtimeSha256": "5cc36db5534ffe1c5d5780866e74032954d2106a95781f11b7dfdd58c1e7d11a",
+  "frames": [
+    {
+      "frame": 0,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/production-144/royce_and_royce/alpha.png",
+      "sourceSha256": "dfd659cc571800e3e595c820ce0d571637a1800de858ac6aa6130421aca78076",
+      "crop": [
+        56,
+        23,
+        208,
+        269
+      ],
+      "destination": [
+        32,
+        6,
+        64,
+        104
+      ]
+    },
+    {
+      "frame": 1,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/production-144/royce_and_royce/alpha.png",
+      "sourceSha256": "dfd659cc571800e3e595c820ce0d571637a1800de858ac6aa6130421aca78076",
+      "crop": [
+        311,
+        23,
+        464,
+        269
+      ],
+      "destination": [
+        160,
+        6,
+        64,
+        104
+      ]
+    },
+    {
+      "frame": 2,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/production-144/royce_and_royce/alpha.png",
+      "sourceSha256": "dfd659cc571800e3e595c820ce0d571637a1800de858ac6aa6130421aca78076",
+      "crop": [
+        567,
+        22,
+        720,
+        269
+      ],
+      "destination": [
+        288,
+        6,
+        64,
+        104
+      ]
+    },
+    {
+      "frame": 3,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/production-144/royce_and_royce/alpha.png",
+      "sourceSha256": "dfd659cc571800e3e595c820ce0d571637a1800de858ac6aa6130421aca78076",
+      "crop": [
+        823,
+        23,
+        976,
+        269
+      ],
+      "destination": [
+        416,
+        6,
+        64,
+        104
+      ]
+    },
+    {
+      "frame": 4,
+      "sourceFrame": 4,
+      "source": "docs/art-source/motions/production-144/royce_and_royce/alpha.png",
+      "sourceSha256": "dfd659cc571800e3e595c820ce0d571637a1800de858ac6aa6130421aca78076",
+      "crop": [
+        35,
+        280,
+        219,
+        514
+      ],
+      "destination": [
+        25,
+        139,
+        77,
+        99
+      ]
+    },
+    {
+      "frame": 5,
+      "sourceFrame": 5,
+      "source": "docs/art-source/motions/production-144/royce_and_royce/alpha.png",
+      "sourceSha256": "dfd659cc571800e3e595c820ce0d571637a1800de858ac6aa6130421aca78076",
+      "crop": [
+        279,
+        282,
+        485,
+        514
+      ],
+      "destination": [
+        148,
+        140,
+        87,
+        98
+      ]
+    },
+    {
+      "frame": 6,
+      "sourceFrame": 6,
+      "source": "docs/art-source/motions/production-144/royce_and_royce/alpha.png",
+      "sourceSha256": "dfd659cc571800e3e595c820ce0d571637a1800de858ac6aa6130421aca78076",
+      "crop": [
+        547,
+        284,
+        732,
+        514
+      ],
+      "destination": [
+        281,
+        141,
+        78,
+        97
+      ]
+    },
+    {
+      "frame": 7,
+      "sourceFrame": 7,
+      "source": "docs/art-source/motions/production-144/royce_and_royce/alpha.png",
+      "sourceSha256": "dfd659cc571800e3e595c820ce0d571637a1800de858ac6aa6130421aca78076",
+      "crop": [
+        809,
+        283,
+        988,
+        514
+      ],
+      "destination": [
+        410,
+        141,
+        75,
+        97
+      ]
+    },
+    {
+      "frame": 8,
+      "sourceFrame": 8,
+      "source": "docs/art-source/motions/production-144/royce_and_royce/alpha.png",
+      "sourceSha256": "dfd659cc571800e3e595c820ce0d571637a1800de858ac6aa6130421aca78076",
+      "crop": [
+        50,
+        522,
+        208,
+        769
+      ],
+      "destination": [
+        30,
+        262,
+        67,
+        104
+      ]
+    },
+    {
+      "frame": 9,
+      "sourceFrame": 9,
+      "source": "docs/art-source/motions/production-144/royce_and_royce/alpha.png",
+      "sourceSha256": "dfd659cc571800e3e595c820ce0d571637a1800de858ac6aa6130421aca78076",
+      "crop": [
+        285,
+        528,
+        496,
+        769
+      ],
+      "destination": [
+        147,
+        265,
+        89,
+        101
+      ]
+    },
+    {
+      "frame": 10,
+      "sourceFrame": 10,
+      "source": "docs/art-source/motions/production-144/royce_and_royce/alpha.png",
+      "sourceSha256": "dfd659cc571800e3e595c820ce0d571637a1800de858ac6aa6130421aca78076",
+      "crop": [
+        542,
+        525,
+        764,
+        769
+      ],
+      "destination": [
+        273,
+        263,
+        93,
+        103
+      ]
+    },
+    {
+      "frame": 11,
+      "sourceFrame": 11,
+      "source": "docs/art-source/motions/production-144/royce_and_royce/alpha.png",
+      "sourceSha256": "dfd659cc571800e3e595c820ce0d571637a1800de858ac6aa6130421aca78076",
+      "crop": [
+        824,
+        529,
+        983,
+        769
+      ],
+      "destination": [
+        414,
+        265,
+        67,
+        101
+      ]
+    },
+    {
+      "frame": 12,
+      "sourceFrame": 12,
+      "source": "docs/art-source/motions/production-144/royce_and_royce/alpha.png",
+      "sourceSha256": "dfd659cc571800e3e595c820ce0d571637a1800de858ac6aa6130421aca78076",
+      "crop": [
+        47,
+        781,
+        206,
+        1027
+      ],
+      "destination": [
+        30,
+        390,
+        67,
+        104
+      ]
+    },
+    {
+      "frame": 13,
+      "sourceFrame": 13,
+      "source": "docs/art-source/motions/production-144/royce_and_royce/alpha.png",
+      "sourceSha256": "dfd659cc571800e3e595c820ce0d571637a1800de858ac6aa6130421aca78076",
+      "crop": [
+        287,
+        786,
+        482,
+        1027
+      ],
+      "destination": [
+        151,
+        393,
+        82,
+        101
+      ]
+    },
+    {
+      "frame": 14,
+      "sourceFrame": 14,
+      "source": "docs/art-source/motions/production-144/royce_and_royce/alpha.png",
+      "sourceSha256": "dfd659cc571800e3e595c820ce0d571637a1800de858ac6aa6130421aca78076",
+      "crop": [
+        543,
+        783,
+        747,
+        1027
+      ],
+      "destination": [
+        277,
+        391,
+        86,
+        103
+      ]
+    },
+    {
+      "frame": 15,
+      "sourceFrame": 15,
+      "source": "docs/art-source/motions/production-144/royce_and_royce/alpha.png",
+      "sourceSha256": "dfd659cc571800e3e595c820ce0d571637a1800de858ac6aa6130421aca78076",
+      "crop": [
+        817,
+        782,
+        973,
+        1027
+      ],
+      "destination": [
+        415,
+        391,
+        66,
+        103
+      ]
+    },
+    {
+      "frame": 16,
+      "sourceFrame": 16,
+      "source": "docs/art-source/motions/production-144/royce_and_royce/alpha.png",
+      "sourceSha256": "dfd659cc571800e3e595c820ce0d571637a1800de858ac6aa6130421aca78076",
+      "crop": [
+        39,
+        1048,
+        237,
+        1273
+      ],
+      "destination": [
+        22,
+        527,
+        83,
+        95
+      ]
+    },
+    {
+      "frame": 17,
+      "sourceFrame": 17,
+      "source": "docs/art-source/motions/production-144/royce_and_royce/alpha.png",
+      "sourceSha256": "dfd659cc571800e3e595c820ce0d571637a1800de858ac6aa6130421aca78076",
+      "crop": [
+        302,
+        1069,
+        489,
+        1265
+      ],
+      "destination": [
+        152,
+        539,
+        79,
+        83
+      ]
+    },
+    {
+      "frame": 18,
+      "sourceFrame": 18,
+      "source": "docs/art-source/motions/production-144/royce_and_royce/alpha.png",
+      "sourceSha256": "dfd659cc571800e3e595c820ce0d571637a1800de858ac6aa6130421aca78076",
+      "crop": [
+        528,
+        1091,
+        734,
+        1267
+      ],
+      "destination": [
+        276,
+        548,
+        87,
+        74
+      ]
+    },
+    {
+      "frame": 19,
+      "sourceFrame": 19,
+      "source": "docs/art-source/motions/production-144/royce_and_royce/alpha.png",
+      "sourceSha256": "dfd659cc571800e3e595c820ce0d571637a1800de858ac6aa6130421aca78076",
+      "crop": [
+        785,
+        1150,
+        1007,
+        1267
+      ],
+      "destination": [
+        401,
+        573,
+        93,
+        49
+      ]
+    },
+    {
+      "frame": 20,
+      "sourceFrame": 20,
+      "source": "docs/art-source/motions/production-144/royce_and_royce/alpha.png",
+      "sourceSha256": "dfd659cc571800e3e595c820ce0d571637a1800de858ac6aa6130421aca78076",
+      "crop": [
+        64,
+        1287,
+        208,
+        1526
+      ],
+      "destination": [
+        33,
+        649,
+        61,
+        101
+      ]
+    },
+    {
+      "frame": 21,
+      "sourceFrame": 21,
+      "source": "docs/art-source/motions/production-144/royce_and_royce/alpha.png",
+      "sourceSha256": "dfd659cc571800e3e595c820ce0d571637a1800de858ac6aa6130421aca78076",
+      "crop": [
+        314,
+        1280,
+        463,
+        1526
+      ],
+      "destination": [
+        160,
+        646,
+        63,
+        104
+      ]
+    },
+    {
+      "frame": 22,
+      "sourceFrame": 22,
+      "source": "docs/art-source/motions/production-144/royce_and_royce/alpha.png",
+      "sourceSha256": "dfd659cc571800e3e595c820ce0d571637a1800de858ac6aa6130421aca78076",
+      "crop": [
+        569,
+        1280,
+        722,
+        1526
+      ],
+      "destination": [
+        288,
+        646,
+        64,
+        104
+      ]
+    },
+    {
+      "frame": 23,
+      "sourceFrame": 23,
+      "source": "docs/art-source/motions/production-144/royce_and_royce/alpha.png",
+      "sourceSha256": "dfd659cc571800e3e595c820ce0d571637a1800de858ac6aa6130421aca78076",
+      "crop": [
+        826,
+        1286,
+        967,
+        1526
+      ],
+      "destination": [
+        418,
+        649,
+        59,
+        101
+      ]
+    }
+  ]
+}

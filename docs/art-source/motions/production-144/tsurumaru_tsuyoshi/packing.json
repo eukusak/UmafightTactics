@@ -1,0 +1,443 @@
+{
+  "format": "uft-baked-frames-v1",
+  "scale": 0.416,
+  "anchor": [
+    64,
+    110
+  ],
+  "runtimeSha256": "a8eec91e1402f100d502fc7a35a592821cc462afcf9e636a819211a4a40ed123",
+  "frames": [
+    {
+      "frame": 0,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/production-144/tsurumaru_tsuyoshi/alpha.png",
+      "sourceSha256": "34bc882cab4205a4b3cbd6511acfccb15ab75f07b75eb4eec27b54a6327aa6c8",
+      "crop": [
+        59,
+        9,
+        214,
+        251
+      ],
+      "destination": [
+        32,
+        9,
+        64,
+        101
+      ]
+    },
+    {
+      "frame": 1,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/production-144/tsurumaru_tsuyoshi/alpha.png",
+      "sourceSha256": "34bc882cab4205a4b3cbd6511acfccb15ab75f07b75eb4eec27b54a6327aa6c8",
+      "crop": [
+        316,
+        12,
+        467,
+        251
+      ],
+      "destination": [
+        160,
+        11,
+        63,
+        99
+      ]
+    },
+    {
+      "frame": 2,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/production-144/tsurumaru_tsuyoshi/alpha.png",
+      "sourceSha256": "34bc882cab4205a4b3cbd6511acfccb15ab75f07b75eb4eec27b54a6327aa6c8",
+      "crop": [
+        564,
+        10,
+        725,
+        251
+      ],
+      "destination": [
+        286,
+        10,
+        67,
+        100
+      ]
+    },
+    {
+      "frame": 3,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/production-144/tsurumaru_tsuyoshi/alpha.png",
+      "sourceSha256": "34bc882cab4205a4b3cbd6511acfccb15ab75f07b75eb4eec27b54a6327aa6c8",
+      "crop": [
+        829,
+        10,
+        980,
+        251
+      ],
+      "destination": [
+        416,
+        10,
+        63,
+        100
+      ]
+    },
+    {
+      "frame": 4,
+      "sourceFrame": 4,
+      "source": "docs/art-source/motions/production-144/tsurumaru_tsuyoshi/alpha.png",
+      "sourceSha256": "34bc882cab4205a4b3cbd6511acfccb15ab75f07b75eb4eec27b54a6327aa6c8",
+      "crop": [
+        33,
+        262,
+        228,
+        498
+      ],
+      "destination": [
+        23,
+        140,
+        81,
+        98
+      ]
+    },
+    {
+      "frame": 5,
+      "sourceFrame": 5,
+      "source": "docs/art-source/motions/production-144/tsurumaru_tsuyoshi/alpha.png",
+      "sourceSha256": "34bc882cab4205a4b3cbd6511acfccb15ab75f07b75eb4eec27b54a6327aa6c8",
+      "crop": [
+        286,
+        261,
+        485,
+        500
+      ],
+      "destination": [
+        150,
+        139,
+        83,
+        99
+      ]
+    },
+    {
+      "frame": 6,
+      "sourceFrame": 6,
+      "source": "docs/art-source/motions/production-144/tsurumaru_tsuyoshi/alpha.png",
+      "sourceSha256": "34bc882cab4205a4b3cbd6511acfccb15ab75f07b75eb4eec27b54a6327aa6c8",
+      "crop": [
+        548,
+        267,
+        738,
+        502
+      ],
+      "destination": [
+        280,
+        140,
+        79,
+        98
+      ]
+    },
+    {
+      "frame": 7,
+      "sourceFrame": 7,
+      "source": "docs/art-source/motions/production-144/tsurumaru_tsuyoshi/alpha.png",
+      "sourceSha256": "34bc882cab4205a4b3cbd6511acfccb15ab75f07b75eb4eec27b54a6327aa6c8",
+      "crop": [
+        813,
+        261,
+        992,
+        500
+      ],
+      "destination": [
+        411,
+        139,
+        74,
+        99
+      ]
+    },
+    {
+      "frame": 8,
+      "sourceFrame": 8,
+      "source": "docs/art-source/motions/production-144/tsurumaru_tsuyoshi/alpha.png",
+      "sourceSha256": "34bc882cab4205a4b3cbd6511acfccb15ab75f07b75eb4eec27b54a6327aa6c8",
+      "crop": [
+        33,
+        519,
+        231,
+        758
+      ],
+      "destination": [
+        23,
+        267,
+        82,
+        99
+      ]
+    },
+    {
+      "frame": 9,
+      "sourceFrame": 9,
+      "source": "docs/art-source/motions/production-144/tsurumaru_tsuyoshi/alpha.png",
+      "sourceSha256": "34bc882cab4205a4b3cbd6511acfccb15ab75f07b75eb4eec27b54a6327aa6c8",
+      "crop": [
+        303,
+        517,
+        470,
+        759
+      ],
+      "destination": [
+        157,
+        265,
+        69,
+        101
+      ]
+    },
+    {
+      "frame": 10,
+      "sourceFrame": 10,
+      "source": "docs/art-source/motions/production-144/tsurumaru_tsuyoshi/alpha.png",
+      "sourceSha256": "34bc882cab4205a4b3cbd6511acfccb15ab75f07b75eb4eec27b54a6327aa6c8",
+      "crop": [
+        545,
+        519,
+        764,
+        759
+      ],
+      "destination": [
+        274,
+        266,
+        91,
+        100
+      ]
+    },
+    {
+      "frame": 11,
+      "sourceFrame": 11,
+      "source": "docs/art-source/motions/production-144/tsurumaru_tsuyoshi/alpha.png",
+      "sourceSha256": "34bc882cab4205a4b3cbd6511acfccb15ab75f07b75eb4eec27b54a6327aa6c8",
+      "crop": [
+        831,
+        516,
+        980,
+        762
+      ],
+      "destination": [
+        417,
+        264,
+        62,
+        102
+      ]
+    },
+    {
+      "frame": 12,
+      "sourceFrame": 12,
+      "source": "docs/art-source/motions/production-144/tsurumaru_tsuyoshi/alpha.png",
+      "sourceSha256": "34bc882cab4205a4b3cbd6511acfccb15ab75f07b75eb4eec27b54a6327aa6c8",
+      "crop": [
+        41,
+        778,
+        227,
+        1020
+      ],
+      "destination": [
+        25,
+        393,
+        77,
+        101
+      ]
+    },
+    {
+      "frame": 13,
+      "sourceFrame": 13,
+      "source": "docs/art-source/motions/production-144/tsurumaru_tsuyoshi/alpha.png",
+      "sourceSha256": "34bc882cab4205a4b3cbd6511acfccb15ab75f07b75eb4eec27b54a6327aa6c8",
+      "crop": [
+        310,
+        773,
+        465,
+        1023
+      ],
+      "destination": [
+        160,
+        390,
+        64,
+        104
+      ]
+    },
+    {
+      "frame": 14,
+      "sourceFrame": 14,
+      "source": "docs/art-source/motions/production-144/tsurumaru_tsuyoshi/alpha.png",
+      "sourceSha256": "34bc882cab4205a4b3cbd6511acfccb15ab75f07b75eb4eec27b54a6327aa6c8",
+      "crop": [
+        553,
+        778,
+        751,
+        1023
+      ],
+      "destination": [
+        279,
+        392,
+        82,
+        102
+      ]
+    },
+    {
+      "frame": 15,
+      "sourceFrame": 15,
+      "source": "docs/art-source/motions/production-144/tsurumaru_tsuyoshi/alpha.png",
+      "sourceSha256": "34bc882cab4205a4b3cbd6511acfccb15ab75f07b75eb4eec27b54a6327aa6c8",
+      "crop": [
+        829,
+        779,
+        988,
+        1024
+      ],
+      "destination": [
+        415,
+        392,
+        66,
+        102
+      ]
+    },
+    {
+      "frame": 16,
+      "sourceFrame": 16,
+      "source": "docs/art-source/motions/production-144/tsurumaru_tsuyoshi/alpha.png",
+      "sourceSha256": "34bc882cab4205a4b3cbd6511acfccb15ab75f07b75eb4eec27b54a6327aa6c8",
+      "crop": [
+        43,
+        1038,
+        224,
+        1268
+      ],
+      "destination": [
+        26,
+        526,
+        75,
+        96
+      ]
+    },
+    {
+      "frame": 17,
+      "sourceFrame": 17,
+      "source": "docs/art-source/motions/production-144/tsurumaru_tsuyoshi/alpha.png",
+      "sourceSha256": "34bc882cab4205a4b3cbd6511acfccb15ab75f07b75eb4eec27b54a6327aa6c8",
+      "crop": [
+        293,
+        1073,
+        482,
+        1266
+      ],
+      "destination": [
+        152,
+        542,
+        79,
+        80
+      ]
+    },
+    {
+      "frame": 18,
+      "sourceFrame": 18,
+      "source": "docs/art-source/motions/production-144/tsurumaru_tsuyoshi/alpha.png",
+      "sourceSha256": "34bc882cab4205a4b3cbd6511acfccb15ab75f07b75eb4eec27b54a6327aa6c8",
+      "crop": [
+        540,
+        1089,
+        724,
+        1265
+      ],
+      "destination": [
+        281,
+        549,
+        77,
+        73
+      ]
+    },
+    {
+      "frame": 19,
+      "sourceFrame": 19,
+      "source": "docs/art-source/motions/production-144/tsurumaru_tsuyoshi/alpha.png",
+      "sourceSha256": "34bc882cab4205a4b3cbd6511acfccb15ab75f07b75eb4eec27b54a6327aa6c8",
+      "crop": [
+        786,
+        1157,
+        1018,
+        1261
+      ],
+      "destination": [
+        399,
+        579,
+        97,
+        43
+      ]
+    },
+    {
+      "frame": 20,
+      "sourceFrame": 20,
+      "source": "docs/art-source/motions/production-144/tsurumaru_tsuyoshi/alpha.png",
+      "sourceSha256": "34bc882cab4205a4b3cbd6511acfccb15ab75f07b75eb4eec27b54a6327aa6c8",
+      "crop": [
+        61,
+        1285,
+        206,
+        1521
+      ],
+      "destination": [
+        34,
+        652,
+        60,
+        98
+      ]
+    },
+    {
+      "frame": 21,
+      "sourceFrame": 21,
+      "source": "docs/art-source/motions/production-144/tsurumaru_tsuyoshi/alpha.png",
+      "sourceSha256": "34bc882cab4205a4b3cbd6511acfccb15ab75f07b75eb4eec27b54a6327aa6c8",
+      "crop": [
+        305,
+        1281,
+        463,
+        1518
+      ],
+      "destination": [
+        159,
+        651,
+        66,
+        99
+      ]
+    },
+    {
+      "frame": 22,
+      "sourceFrame": 22,
+      "source": "docs/art-source/motions/production-144/tsurumaru_tsuyoshi/alpha.png",
+      "sourceSha256": "34bc882cab4205a4b3cbd6511acfccb15ab75f07b75eb4eec27b54a6327aa6c8",
+      "crop": [
+        569,
+        1286,
+        717,
+        1525
+      ],
+      "destination": [
+        289,
+        651,
+        62,
+        99
+      ]
+    },
+    {
+      "frame": 23,
+      "sourceFrame": 23,
+      "source": "docs/art-source/motions/production-144/tsurumaru_tsuyoshi/alpha.png",
+      "sourceSha256": "34bc882cab4205a4b3cbd6511acfccb15ab75f07b75eb4eec27b54a6327aa6c8",
+      "crop": [
+        826,
+        1288,
+        981,
+        1524
+      ],
+      "destination": [
+        416,
+        652,
+        64,
+        98
+      ]
+    }
+  ]
+}

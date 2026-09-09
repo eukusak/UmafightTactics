@@ -1,0 +1,443 @@
+{
+  "format": "uft-baked-frames-v1",
+  "scale": 0.4279835390946502,
+  "anchor": [
+    64,
+    110
+  ],
+  "runtimeSha256": "325cca6b28c1889dcc5b08e7af80c0bdd8b69e5a8990a9cc71eca19024e10771",
+  "frames": [
+    {
+      "frame": 0,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/production-144/furioso/alpha.png",
+      "sourceSha256": "f985cc4c0dec4588c09c42584cbc7431a348af1a5d65b43c7a75153405752164",
+      "crop": [
+        57,
+        21,
+        192,
+        247
+      ],
+      "destination": [
+        35,
+        13,
+        58,
+        97
+      ]
+    },
+    {
+      "frame": 1,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/production-144/furioso/alpha.png",
+      "sourceSha256": "f985cc4c0dec4588c09c42584cbc7431a348af1a5d65b43c7a75153405752164",
+      "crop": [
+        313,
+        21,
+        450,
+        247
+      ],
+      "destination": [
+        162,
+        13,
+        59,
+        97
+      ]
+    },
+    {
+      "frame": 2,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/production-144/furioso/alpha.png",
+      "sourceSha256": "f985cc4c0dec4588c09c42584cbc7431a348af1a5d65b43c7a75153405752164",
+      "crop": [
+        565,
+        21,
+        703,
+        247
+      ],
+      "destination": [
+        290,
+        13,
+        59,
+        97
+      ]
+    },
+    {
+      "frame": 3,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/production-144/furioso/alpha.png",
+      "sourceSha256": "f985cc4c0dec4588c09c42584cbc7431a348af1a5d65b43c7a75153405752164",
+      "crop": [
+        821,
+        21,
+        958,
+        247
+      ],
+      "destination": [
+        418,
+        13,
+        59,
+        97
+      ]
+    },
+    {
+      "frame": 4,
+      "sourceFrame": 4,
+      "source": "docs/art-source/motions/production-144/furioso/alpha.png",
+      "sourceSha256": "f985cc4c0dec4588c09c42584cbc7431a348af1a5d65b43c7a75153405752164",
+      "crop": [
+        38,
+        273,
+        217,
+        490
+      ],
+      "destination": [
+        25,
+        145,
+        77,
+        93
+      ]
+    },
+    {
+      "frame": 5,
+      "sourceFrame": 5,
+      "source": "docs/art-source/motions/production-144/furioso/alpha.png",
+      "sourceSha256": "f985cc4c0dec4588c09c42584cbc7431a348af1a5d65b43c7a75153405752164",
+      "crop": [
+        296,
+        275,
+        479,
+        491
+      ],
+      "destination": [
+        153,
+        146,
+        78,
+        92
+      ]
+    },
+    {
+      "frame": 6,
+      "sourceFrame": 6,
+      "source": "docs/art-source/motions/production-144/furioso/alpha.png",
+      "sourceSha256": "f985cc4c0dec4588c09c42584cbc7431a348af1a5d65b43c7a75153405752164",
+      "crop": [
+        547,
+        274,
+        729,
+        495
+      ],
+      "destination": [
+        281,
+        143,
+        78,
+        95
+      ]
+    },
+    {
+      "frame": 7,
+      "sourceFrame": 7,
+      "source": "docs/art-source/motions/production-144/furioso/alpha.png",
+      "sourceSha256": "f985cc4c0dec4588c09c42584cbc7431a348af1a5d65b43c7a75153405752164",
+      "crop": [
+        787,
+        276,
+        989,
+        491
+      ],
+      "destination": [
+        405,
+        146,
+        86,
+        92
+      ]
+    },
+    {
+      "frame": 8,
+      "sourceFrame": 8,
+      "source": "docs/art-source/motions/production-144/furioso/alpha.png",
+      "sourceSha256": "f985cc4c0dec4588c09c42584cbc7431a348af1a5d65b43c7a75153405752164",
+      "crop": [
+        46,
+        514,
+        200,
+        742
+      ],
+      "destination": [
+        31,
+        268,
+        66,
+        98
+      ]
+    },
+    {
+      "frame": 9,
+      "sourceFrame": 9,
+      "source": "docs/art-source/motions/production-144/furioso/alpha.png",
+      "sourceSha256": "f985cc4c0dec4588c09c42584cbc7431a348af1a5d65b43c7a75153405752164",
+      "crop": [
+        289,
+        518,
+        451,
+        743
+      ],
+      "destination": [
+        157,
+        270,
+        69,
+        96
+      ]
+    },
+    {
+      "frame": 10,
+      "sourceFrame": 10,
+      "source": "docs/art-source/motions/production-144/furioso/alpha.png",
+      "sourceSha256": "f985cc4c0dec4588c09c42584cbc7431a348af1a5d65b43c7a75153405752164",
+      "crop": [
+        540,
+        518,
+        734,
+        743
+      ],
+      "destination": [
+        278,
+        270,
+        83,
+        96
+      ]
+    },
+    {
+      "frame": 11,
+      "sourceFrame": 11,
+      "source": "docs/art-source/motions/production-144/furioso/alpha.png",
+      "sourceSha256": "f985cc4c0dec4588c09c42584cbc7431a348af1a5d65b43c7a75153405752164",
+      "crop": [
+        813,
+        516,
+        963,
+        747
+      ],
+      "destination": [
+        416,
+        267,
+        64,
+        99
+      ]
+    },
+    {
+      "frame": 12,
+      "sourceFrame": 12,
+      "source": "docs/art-source/motions/production-144/furioso/alpha.png",
+      "sourceSha256": "f985cc4c0dec4588c09c42584cbc7431a348af1a5d65b43c7a75153405752164",
+      "crop": [
+        53,
+        781,
+        199,
+        1019
+      ],
+      "destination": [
+        33,
+        392,
+        62,
+        102
+      ]
+    },
+    {
+      "frame": 13,
+      "sourceFrame": 13,
+      "source": "docs/art-source/motions/production-144/furioso/alpha.png",
+      "sourceSha256": "f985cc4c0dec4588c09c42584cbc7431a348af1a5d65b43c7a75153405752164",
+      "crop": [
+        300,
+        781,
+        480,
+        1020
+      ],
+      "destination": [
+        153,
+        392,
+        77,
+        102
+      ]
+    },
+    {
+      "frame": 14,
+      "sourceFrame": 14,
+      "source": "docs/art-source/motions/production-144/furioso/alpha.png",
+      "sourceSha256": "f985cc4c0dec4588c09c42584cbc7431a348af1a5d65b43c7a75153405752164",
+      "crop": [
+        551,
+        780,
+        746,
+        1020
+      ],
+      "destination": [
+        278,
+        391,
+        83,
+        103
+      ]
+    },
+    {
+      "frame": 15,
+      "sourceFrame": 15,
+      "source": "docs/art-source/motions/production-144/furioso/alpha.png",
+      "sourceSha256": "f985cc4c0dec4588c09c42584cbc7431a348af1a5d65b43c7a75153405752164",
+      "crop": [
+        820,
+        781,
+        964,
+        1024
+      ],
+      "destination": [
+        417,
+        390,
+        62,
+        104
+      ]
+    },
+    {
+      "frame": 16,
+      "sourceFrame": 16,
+      "source": "docs/art-source/motions/production-144/furioso/alpha.png",
+      "sourceSha256": "f985cc4c0dec4588c09c42584cbc7431a348af1a5d65b43c7a75153405752164",
+      "crop": [
+        46,
+        1052,
+        199,
+        1248
+      ],
+      "destination": [
+        31,
+        538,
+        65,
+        84
+      ]
+    },
+    {
+      "frame": 17,
+      "sourceFrame": 17,
+      "source": "docs/art-source/motions/production-144/furioso/alpha.png",
+      "sourceSha256": "f985cc4c0dec4588c09c42584cbc7431a348af1a5d65b43c7a75153405752164",
+      "crop": [
+        302,
+        1071,
+        472,
+        1244
+      ],
+      "destination": [
+        155,
+        548,
+        73,
+        74
+      ]
+    },
+    {
+      "frame": 18,
+      "sourceFrame": 18,
+      "source": "docs/art-source/motions/production-144/furioso/alpha.png",
+      "sourceSha256": "f985cc4c0dec4588c09c42584cbc7431a348af1a5d65b43c7a75153405752164",
+      "crop": [
+        535,
+        1071,
+        710,
+        1247
+      ],
+      "destination": [
+        282,
+        547,
+        75,
+        75
+      ]
+    },
+    {
+      "frame": 19,
+      "sourceFrame": 19,
+      "source": "docs/art-source/motions/production-144/furioso/alpha.png",
+      "sourceSha256": "f985cc4c0dec4588c09c42584cbc7431a348af1a5d65b43c7a75153405752164",
+      "crop": [
+        789,
+        1134,
+        998,
+        1243
+      ],
+      "destination": [
+        403,
+        575,
+        89,
+        47
+      ]
+    },
+    {
+      "frame": 20,
+      "sourceFrame": 20,
+      "source": "docs/art-source/motions/production-144/furioso/alpha.png",
+      "sourceSha256": "f985cc4c0dec4588c09c42584cbc7431a348af1a5d65b43c7a75153405752164",
+      "crop": [
+        54,
+        1284,
+        202,
+        1519
+      ],
+      "destination": [
+        32,
+        649,
+        63,
+        101
+      ]
+    },
+    {
+      "frame": 21,
+      "sourceFrame": 21,
+      "source": "docs/art-source/motions/production-144/furioso/alpha.png",
+      "sourceSha256": "f985cc4c0dec4588c09c42584cbc7431a348af1a5d65b43c7a75153405752164",
+      "crop": [
+        304,
+        1283,
+        459,
+        1509
+      ],
+      "destination": [
+        159,
+        653,
+        66,
+        97
+      ]
+    },
+    {
+      "frame": 22,
+      "sourceFrame": 22,
+      "source": "docs/art-source/motions/production-144/furioso/alpha.png",
+      "sourceSha256": "f985cc4c0dec4588c09c42584cbc7431a348af1a5d65b43c7a75153405752164",
+      "crop": [
+        565,
+        1286,
+        712,
+        1519
+      ],
+      "destination": [
+        288,
+        650,
+        63,
+        100
+      ]
+    },
+    {
+      "frame": 23,
+      "sourceFrame": 23,
+      "source": "docs/art-source/motions/production-144/furioso/alpha.png",
+      "sourceSha256": "f985cc4c0dec4588c09c42584cbc7431a348af1a5d65b43c7a75153405752164",
+      "crop": [
+        817,
+        1288,
+        972,
+        1517
+      ],
+      "destination": [
+        415,
+        652,
+        66,
+        98
+      ]
+    }
+  ]
+}

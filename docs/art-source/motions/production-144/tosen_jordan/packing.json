@@ -1,0 +1,443 @@
+{
+  "format": "uft-baked-frames-v1",
+  "scale": 0.4,
+  "anchor": [
+    64,
+    110
+  ],
+  "runtimeSha256": "c24c12442b87a06413e60e56383cf876797e1f481dd8c45d0ffaa359b5a389c7",
+  "frames": [
+    {
+      "frame": 0,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/production-144/tosen_jordan/alpha.png",
+      "sourceSha256": "d8788efb19c8e0a4fe785cf3fbfa5591379a5c0286ffe3d5664023fef8769017",
+      "crop": [
+        60,
+        12,
+        212,
+        259
+      ],
+      "destination": [
+        33,
+        11,
+        61,
+        99
+      ]
+    },
+    {
+      "frame": 1,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/production-144/tosen_jordan/alpha.png",
+      "sourceSha256": "d8788efb19c8e0a4fe785cf3fbfa5591379a5c0286ffe3d5664023fef8769017",
+      "crop": [
+        302,
+        12,
+        456,
+        259
+      ],
+      "destination": [
+        161,
+        11,
+        62,
+        99
+      ]
+    },
+    {
+      "frame": 2,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/production-144/tosen_jordan/alpha.png",
+      "sourceSha256": "d8788efb19c8e0a4fe785cf3fbfa5591379a5c0286ffe3d5664023fef8769017",
+      "crop": [
+        552,
+        14,
+        702,
+        259
+      ],
+      "destination": [
+        290,
+        12,
+        60,
+        98
+      ]
+    },
+    {
+      "frame": 3,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/production-144/tosen_jordan/alpha.png",
+      "sourceSha256": "d8788efb19c8e0a4fe785cf3fbfa5591379a5c0286ffe3d5664023fef8769017",
+      "crop": [
+        800,
+        12,
+        951,
+        259
+      ],
+      "destination": [
+        418,
+        11,
+        60,
+        99
+      ]
+    },
+    {
+      "frame": 4,
+      "sourceFrame": 4,
+      "source": "docs/art-source/motions/production-144/tosen_jordan/alpha.png",
+      "sourceSha256": "d8788efb19c8e0a4fe785cf3fbfa5591379a5c0286ffe3d5664023fef8769017",
+      "crop": [
+        46,
+        268,
+        228,
+        512
+      ],
+      "destination": [
+        27,
+        140,
+        73,
+        98
+      ]
+    },
+    {
+      "frame": 5,
+      "sourceFrame": 5,
+      "source": "docs/art-source/motions/production-144/tosen_jordan/alpha.png",
+      "sourceSha256": "d8788efb19c8e0a4fe785cf3fbfa5591379a5c0286ffe3d5664023fef8769017",
+      "crop": [
+        302,
+        270,
+        494,
+        508
+      ],
+      "destination": [
+        153,
+        143,
+        77,
+        95
+      ]
+    },
+    {
+      "frame": 6,
+      "sourceFrame": 6,
+      "source": "docs/art-source/motions/production-144/tosen_jordan/alpha.png",
+      "sourceSha256": "d8788efb19c8e0a4fe785cf3fbfa5591379a5c0286ffe3d5664023fef8769017",
+      "crop": [
+        551,
+        274,
+        738,
+        512
+      ],
+      "destination": [
+        282,
+        143,
+        75,
+        95
+      ]
+    },
+    {
+      "frame": 7,
+      "sourceFrame": 7,
+      "source": "docs/art-source/motions/production-144/tosen_jordan/alpha.png",
+      "sourceSha256": "d8788efb19c8e0a4fe785cf3fbfa5591379a5c0286ffe3d5664023fef8769017",
+      "crop": [
+        814,
+        277,
+        1002,
+        512
+      ],
+      "destination": [
+        410,
+        144,
+        75,
+        94
+      ]
+    },
+    {
+      "frame": 8,
+      "sourceFrame": 8,
+      "source": "docs/art-source/motions/production-144/tosen_jordan/alpha.png",
+      "sourceSha256": "d8788efb19c8e0a4fe785cf3fbfa5591379a5c0286ffe3d5664023fef8769017",
+      "crop": [
+        37,
+        522,
+        198,
+        768
+      ],
+      "destination": [
+        32,
+        268,
+        64,
+        98
+      ]
+    },
+    {
+      "frame": 9,
+      "sourceFrame": 9,
+      "source": "docs/art-source/motions/production-144/tosen_jordan/alpha.png",
+      "sourceSha256": "d8788efb19c8e0a4fe785cf3fbfa5591379a5c0286ffe3d5664023fef8769017",
+      "crop": [
+        291,
+        522,
+        466,
+        767
+      ],
+      "destination": [
+        157,
+        268,
+        70,
+        98
+      ]
+    },
+    {
+      "frame": 10,
+      "sourceFrame": 10,
+      "source": "docs/art-source/motions/production-144/tosen_jordan/alpha.png",
+      "sourceSha256": "d8788efb19c8e0a4fe785cf3fbfa5591379a5c0286ffe3d5664023fef8769017",
+      "crop": [
+        545,
+        527,
+        750,
+        768
+      ],
+      "destination": [
+        279,
+        270,
+        82,
+        96
+      ]
+    },
+    {
+      "frame": 11,
+      "sourceFrame": 11,
+      "source": "docs/art-source/motions/production-144/tosen_jordan/alpha.png",
+      "sourceSha256": "d8788efb19c8e0a4fe785cf3fbfa5591379a5c0286ffe3d5664023fef8769017",
+      "crop": [
+        802,
+        523,
+        965,
+        768
+      ],
+      "destination": [
+        415,
+        268,
+        65,
+        98
+      ]
+    },
+    {
+      "frame": 12,
+      "sourceFrame": 12,
+      "source": "docs/art-source/motions/production-144/tosen_jordan/alpha.png",
+      "sourceSha256": "d8788efb19c8e0a4fe785cf3fbfa5591379a5c0286ffe3d5664023fef8769017",
+      "crop": [
+        52,
+        772,
+        203,
+        1032
+      ],
+      "destination": [
+        34,
+        390,
+        60,
+        104
+      ]
+    },
+    {
+      "frame": 13,
+      "sourceFrame": 13,
+      "source": "docs/art-source/motions/production-144/tosen_jordan/alpha.png",
+      "sourceSha256": "d8788efb19c8e0a4fe785cf3fbfa5591379a5c0286ffe3d5664023fef8769017",
+      "crop": [
+        292,
+        778,
+        458,
+        1032
+      ],
+      "destination": [
+        159,
+        392,
+        66,
+        102
+      ]
+    },
+    {
+      "frame": 14,
+      "sourceFrame": 14,
+      "source": "docs/art-source/motions/production-144/tosen_jordan/alpha.png",
+      "sourceSha256": "d8788efb19c8e0a4fe785cf3fbfa5591379a5c0286ffe3d5664023fef8769017",
+      "crop": [
+        537,
+        785,
+        739,
+        1033
+      ],
+      "destination": [
+        279,
+        395,
+        81,
+        99
+      ]
+    },
+    {
+      "frame": 15,
+      "sourceFrame": 15,
+      "source": "docs/art-source/motions/production-144/tosen_jordan/alpha.png",
+      "sourceSha256": "d8788efb19c8e0a4fe785cf3fbfa5591379a5c0286ffe3d5664023fef8769017",
+      "crop": [
+        804,
+        781,
+        954,
+        1033
+      ],
+      "destination": [
+        418,
+        393,
+        60,
+        101
+      ]
+    },
+    {
+      "frame": 16,
+      "sourceFrame": 16,
+      "source": "docs/art-source/motions/production-144/tosen_jordan/alpha.png",
+      "sourceSha256": "d8788efb19c8e0a4fe785cf3fbfa5591379a5c0286ffe3d5664023fef8769017",
+      "crop": [
+        47,
+        1037,
+        230,
+        1260
+      ],
+      "destination": [
+        27,
+        533,
+        73,
+        89
+      ]
+    },
+    {
+      "frame": 17,
+      "sourceFrame": 17,
+      "source": "docs/art-source/motions/production-144/tosen_jordan/alpha.png",
+      "sourceSha256": "d8788efb19c8e0a4fe785cf3fbfa5591379a5c0286ffe3d5664023fef8769017",
+      "crop": [
+        301,
+        1070,
+        486,
+        1260
+      ],
+      "destination": [
+        155,
+        546,
+        74,
+        76
+      ]
+    },
+    {
+      "frame": 18,
+      "sourceFrame": 18,
+      "source": "docs/art-source/motions/production-144/tosen_jordan/alpha.png",
+      "sourceSha256": "d8788efb19c8e0a4fe785cf3fbfa5591379a5c0286ffe3d5664023fef8769017",
+      "crop": [
+        553,
+        1074,
+        716,
+        1257
+      ],
+      "destination": [
+        287,
+        549,
+        65,
+        73
+      ]
+    },
+    {
+      "frame": 19,
+      "sourceFrame": 19,
+      "source": "docs/art-source/motions/production-144/tosen_jordan/alpha.png",
+      "sourceSha256": "d8788efb19c8e0a4fe785cf3fbfa5591379a5c0286ffe3d5664023fef8769017",
+      "crop": [
+        774,
+        1147,
+        1014,
+        1256
+      ],
+      "destination": [
+        400,
+        578,
+        96,
+        44
+      ]
+    },
+    {
+      "frame": 20,
+      "sourceFrame": 20,
+      "source": "docs/art-source/motions/production-144/tosen_jordan/alpha.png",
+      "sourceSha256": "d8788efb19c8e0a4fe785cf3fbfa5591379a5c0286ffe3d5664023fef8769017",
+      "crop": [
+        50,
+        1271,
+        206,
+        1520
+      ],
+      "destination": [
+        33,
+        650,
+        62,
+        100
+      ]
+    },
+    {
+      "frame": 21,
+      "sourceFrame": 21,
+      "source": "docs/art-source/motions/production-144/tosen_jordan/alpha.png",
+      "sourceSha256": "d8788efb19c8e0a4fe785cf3fbfa5591379a5c0286ffe3d5664023fef8769017",
+      "crop": [
+        315,
+        1271,
+        470,
+        1522
+      ],
+      "destination": [
+        161,
+        650,
+        62,
+        100
+      ]
+    },
+    {
+      "frame": 22,
+      "sourceFrame": 22,
+      "source": "docs/art-source/motions/production-144/tosen_jordan/alpha.png",
+      "sourceSha256": "d8788efb19c8e0a4fe785cf3fbfa5591379a5c0286ffe3d5664023fef8769017",
+      "crop": [
+        552,
+        1271,
+        713,
+        1522
+      ],
+      "destination": [
+        288,
+        650,
+        64,
+        100
+      ]
+    },
+    {
+      "frame": 23,
+      "sourceFrame": 23,
+      "source": "docs/art-source/motions/production-144/tosen_jordan/alpha.png",
+      "sourceSha256": "d8788efb19c8e0a4fe785cf3fbfa5591379a5c0286ffe3d5664023fef8769017",
+      "crop": [
+        807,
+        1276,
+        964,
+        1520
+      ],
+      "destination": [
+        416,
+        652,
+        63,
+        98
+      ]
+    }
+  ]
+}

@@ -1,0 +1,443 @@
+{
+  "format": "uft-baked-frames-v1",
+  "scale": 0.4406779661016949,
+  "anchor": [
+    64,
+    110
+  ],
+  "runtimeSha256": "19da18fa3a272262290e8e3bdff29ac46c58b9f7779c9f14ff67af7a2100c127",
+  "frames": [
+    {
+      "frame": 0,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/production-144/sakura_laurel/alpha.png",
+      "sourceSha256": "e2c3d79246906f6a709fe8aded14c68d0d6fe36d3c0d16f989a7f2f06d37e8f7",
+      "crop": [
+        54,
+        35,
+        179,
+        256
+      ],
+      "destination": [
+        36,
+        13,
+        55,
+        97
+      ]
+    },
+    {
+      "frame": 1,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/production-144/sakura_laurel/alpha.png",
+      "sourceSha256": "e2c3d79246906f6a709fe8aded14c68d0d6fe36d3c0d16f989a7f2f06d37e8f7",
+      "crop": [
+        303,
+        35,
+        438,
+        256
+      ],
+      "destination": [
+        162,
+        13,
+        59,
+        97
+      ]
+    },
+    {
+      "frame": 2,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/production-144/sakura_laurel/alpha.png",
+      "sourceSha256": "e2c3d79246906f6a709fe8aded14c68d0d6fe36d3c0d16f989a7f2f06d37e8f7",
+      "crop": [
+        563,
+        35,
+        700,
+        256
+      ],
+      "destination": [
+        290,
+        13,
+        60,
+        97
+      ]
+    },
+    {
+      "frame": 3,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/production-144/sakura_laurel/alpha.png",
+      "sourceSha256": "e2c3d79246906f6a709fe8aded14c68d0d6fe36d3c0d16f989a7f2f06d37e8f7",
+      "crop": [
+        827,
+        35,
+        959,
+        256
+      ],
+      "destination": [
+        419,
+        13,
+        58,
+        97
+      ]
+    },
+    {
+      "frame": 4,
+      "sourceFrame": 4,
+      "source": "docs/art-source/motions/production-144/sakura_laurel/alpha.png",
+      "sourceSha256": "e2c3d79246906f6a709fe8aded14c68d0d6fe36d3c0d16f989a7f2f06d37e8f7",
+      "crop": [
+        42,
+        279,
+        208,
+        504
+      ],
+      "destination": [
+        27,
+        139,
+        73,
+        99
+      ]
+    },
+    {
+      "frame": 5,
+      "sourceFrame": 5,
+      "source": "docs/art-source/motions/production-144/sakura_laurel/alpha.png",
+      "sourceSha256": "e2c3d79246906f6a709fe8aded14c68d0d6fe36d3c0d16f989a7f2f06d37e8f7",
+      "crop": [
+        304,
+        279,
+        466,
+        503
+      ],
+      "destination": [
+        156,
+        139,
+        71,
+        99
+      ]
+    },
+    {
+      "frame": 6,
+      "sourceFrame": 6,
+      "source": "docs/art-source/motions/production-144/sakura_laurel/alpha.png",
+      "sourceSha256": "e2c3d79246906f6a709fe8aded14c68d0d6fe36d3c0d16f989a7f2f06d37e8f7",
+      "crop": [
+        548,
+        281,
+        722,
+        502
+      ],
+      "destination": [
+        281,
+        141,
+        77,
+        97
+      ]
+    },
+    {
+      "frame": 7,
+      "sourceFrame": 7,
+      "source": "docs/art-source/motions/production-144/sakura_laurel/alpha.png",
+      "sourceSha256": "e2c3d79246906f6a709fe8aded14c68d0d6fe36d3c0d16f989a7f2f06d37e8f7",
+      "crop": [
+        812,
+        281,
+        981,
+        507
+      ],
+      "destination": [
+        411,
+        138,
+        74,
+        100
+      ]
+    },
+    {
+      "frame": 8,
+      "sourceFrame": 8,
+      "source": "docs/art-source/motions/production-144/sakura_laurel/alpha.png",
+      "sourceSha256": "e2c3d79246906f6a709fe8aded14c68d0d6fe36d3c0d16f989a7f2f06d37e8f7",
+      "crop": [
+        49,
+        529,
+        202,
+        756
+      ],
+      "destination": [
+        30,
+        266,
+        67,
+        100
+      ]
+    },
+    {
+      "frame": 9,
+      "sourceFrame": 9,
+      "source": "docs/art-source/motions/production-144/sakura_laurel/alpha.png",
+      "sourceSha256": "e2c3d79246906f6a709fe8aded14c68d0d6fe36d3c0d16f989a7f2f06d37e8f7",
+      "crop": [
+        300,
+        529,
+        462,
+        756
+      ],
+      "destination": [
+        156,
+        266,
+        71,
+        100
+      ]
+    },
+    {
+      "frame": 10,
+      "sourceFrame": 10,
+      "source": "docs/art-source/motions/production-144/sakura_laurel/alpha.png",
+      "sourceSha256": "e2c3d79246906f6a709fe8aded14c68d0d6fe36d3c0d16f989a7f2f06d37e8f7",
+      "crop": [
+        553,
+        529,
+        749,
+        754
+      ],
+      "destination": [
+        277,
+        267,
+        86,
+        99
+      ]
+    },
+    {
+      "frame": 11,
+      "sourceFrame": 11,
+      "source": "docs/art-source/motions/production-144/sakura_laurel/alpha.png",
+      "sourceSha256": "e2c3d79246906f6a709fe8aded14c68d0d6fe36d3c0d16f989a7f2f06d37e8f7",
+      "crop": [
+        829,
+        535,
+        967,
+        757
+      ],
+      "destination": [
+        417,
+        268,
+        61,
+        98
+      ]
+    },
+    {
+      "frame": 12,
+      "sourceFrame": 12,
+      "source": "docs/art-source/motions/production-144/sakura_laurel/alpha.png",
+      "sourceSha256": "e2c3d79246906f6a709fe8aded14c68d0d6fe36d3c0d16f989a7f2f06d37e8f7",
+      "crop": [
+        56,
+        782,
+        231,
+        1015
+      ],
+      "destination": [
+        25,
+        391,
+        77,
+        103
+      ]
+    },
+    {
+      "frame": 13,
+      "sourceFrame": 13,
+      "source": "docs/art-source/motions/production-144/sakura_laurel/alpha.png",
+      "sourceSha256": "e2c3d79246906f6a709fe8aded14c68d0d6fe36d3c0d16f989a7f2f06d37e8f7",
+      "crop": [
+        305,
+        783,
+        446,
+        1014
+      ],
+      "destination": [
+        161,
+        392,
+        62,
+        102
+      ]
+    },
+    {
+      "frame": 14,
+      "sourceFrame": 14,
+      "source": "docs/art-source/motions/production-144/sakura_laurel/alpha.png",
+      "sourceSha256": "e2c3d79246906f6a709fe8aded14c68d0d6fe36d3c0d16f989a7f2f06d37e8f7",
+      "crop": [
+        559,
+        782,
+        731,
+        1014
+      ],
+      "destination": [
+        282,
+        392,
+        76,
+        102
+      ]
+    },
+    {
+      "frame": 15,
+      "sourceFrame": 15,
+      "source": "docs/art-source/motions/production-144/sakura_laurel/alpha.png",
+      "sourceSha256": "e2c3d79246906f6a709fe8aded14c68d0d6fe36d3c0d16f989a7f2f06d37e8f7",
+      "crop": [
+        834,
+        782,
+        972,
+        1015
+      ],
+      "destination": [
+        417,
+        391,
+        61,
+        103
+      ]
+    },
+    {
+      "frame": 16,
+      "sourceFrame": 16,
+      "source": "docs/art-source/motions/production-144/sakura_laurel/alpha.png",
+      "sourceSha256": "e2c3d79246906f6a709fe8aded14c68d0d6fe36d3c0d16f989a7f2f06d37e8f7",
+      "crop": [
+        36,
+        1048,
+        210,
+        1260
+      ],
+      "destination": [
+        25,
+        529,
+        77,
+        93
+      ]
+    },
+    {
+      "frame": 17,
+      "sourceFrame": 17,
+      "source": "docs/art-source/motions/production-144/sakura_laurel/alpha.png",
+      "sourceSha256": "e2c3d79246906f6a709fe8aded14c68d0d6fe36d3c0d16f989a7f2f06d37e8f7",
+      "crop": [
+        300,
+        1077,
+        476,
+        1259
+      ],
+      "destination": [
+        153,
+        542,
+        78,
+        80
+      ]
+    },
+    {
+      "frame": 18,
+      "sourceFrame": 18,
+      "source": "docs/art-source/motions/production-144/sakura_laurel/alpha.png",
+      "sourceSha256": "e2c3d79246906f6a709fe8aded14c68d0d6fe36d3c0d16f989a7f2f06d37e8f7",
+      "crop": [
+        537,
+        1094,
+        719,
+        1259
+      ],
+      "destination": [
+        280,
+        549,
+        80,
+        73
+      ]
+    },
+    {
+      "frame": 19,
+      "sourceFrame": 19,
+      "source": "docs/art-source/motions/production-144/sakura_laurel/alpha.png",
+      "sourceSha256": "e2c3d79246906f6a709fe8aded14c68d0d6fe36d3c0d16f989a7f2f06d37e8f7",
+      "crop": [
+        791,
+        1156,
+        1000,
+        1259
+      ],
+      "destination": [
+        402,
+        577,
+        92,
+        45
+      ]
+    },
+    {
+      "frame": 20,
+      "sourceFrame": 20,
+      "source": "docs/art-source/motions/production-144/sakura_laurel/alpha.png",
+      "sourceSha256": "e2c3d79246906f6a709fe8aded14c68d0d6fe36d3c0d16f989a7f2f06d37e8f7",
+      "crop": [
+        51,
+        1287,
+        195,
+        1522
+      ],
+      "destination": [
+        32,
+        646,
+        63,
+        104
+      ]
+    },
+    {
+      "frame": 21,
+      "sourceFrame": 21,
+      "source": "docs/art-source/motions/production-144/sakura_laurel/alpha.png",
+      "sourceSha256": "e2c3d79246906f6a709fe8aded14c68d0d6fe36d3c0d16f989a7f2f06d37e8f7",
+      "crop": [
+        313,
+        1286,
+        452,
+        1522
+      ],
+      "destination": [
+        161,
+        646,
+        61,
+        104
+      ]
+    },
+    {
+      "frame": 22,
+      "sourceFrame": 22,
+      "source": "docs/art-source/motions/production-144/sakura_laurel/alpha.png",
+      "sourceSha256": "e2c3d79246906f6a709fe8aded14c68d0d6fe36d3c0d16f989a7f2f06d37e8f7",
+      "crop": [
+        559,
+        1287,
+        703,
+        1522
+      ],
+      "destination": [
+        288,
+        646,
+        63,
+        104
+      ]
+    },
+    {
+      "frame": 23,
+      "sourceFrame": 23,
+      "source": "docs/art-source/motions/production-144/sakura_laurel/alpha.png",
+      "sourceSha256": "e2c3d79246906f6a709fe8aded14c68d0d6fe36d3c0d16f989a7f2f06d37e8f7",
+      "crop": [
+        831,
+        1288,
+        975,
+        1523
+      ],
+      "destination": [
+        416,
+        646,
+        63,
+        104
+      ]
+    }
+  ]
+}
