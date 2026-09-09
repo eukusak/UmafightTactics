@@ -1,0 +1,86 @@
+{
+  "genuine": {
+    "file": "characters/standees/genuine.png",
+    "source": "docs/art-source/standees/genuine.png",
+    "sourceSha256": "6a2237bd7a6b05c815fdab55ae9e8bccf1dbaaa7d8c4f54ec30c3fd124176c7e",
+    "cell": [
+      512,
+      512
+    ],
+    "anchor": [
+      256,
+      440
+    ],
+    "faceCrop": [
+      260,
+      0,
+      850,
+      590
+    ],
+    "skillTemplate": "DASH_LINE",
+    "status": "static-art-runtime-motion; multi-pose-sheet-pending"
+  },
+  "samson_big": {
+    "file": "characters/standees/samson_big.png",
+    "source": "docs/art-source/standees/samson_big.png",
+    "sourceSha256": "0fbe2e37079f44d870be89144a07cdb2b4d031042a6718b109f989b6c1c8ffa6",
+    "cell": [
+      512,
+      512
+    ],
+    "anchor": [
+      256,
+      440
+    ],
+    "faceCrop": [
+      245,
+      0,
+      835,
+      590
+    ],
+    "skillTemplate": "CONTROL",
+    "status": "static-art-runtime-motion; multi-pose-sheet-pending"
+  },
+  "special_week": {
+    "file": "characters/standees/special_week.png",
+    "source": "docs/art-source/standees/special_week.png",
+    "sourceSha256": "797020cf78755a697a4c2bd39a5efa72e29832852ab18957ab01bff0ead04847",
+    "cell": [
+      512,
+      512
+    ],
+    "anchor": [
+      256,
+      440
+    ],
+    "faceCrop": [
+      250,
+      0,
+      840,
+      590
+    ],
+    "skillTemplate": "DASH_LINE",
+    "status": "static-art-runtime-motion; multi-pose-sheet-pending"
+  },
+  "tokai_teio": {
+    "file": "characters/standees/tokai_teio.png",
+    "source": "docs/art-source/standees/tokai_teio.png",
+    "sourceSha256": "5363d95f1b6fc51529c73f7481d18c6519898150fd96e46d01d49344b93c74b9",
+    "cell": [
+      512,
+      512
+    ],
+    "anchor": [
+      256,
+      440
+    ],
+    "faceCrop": [
+      210,
+      0,
+      800,
+      590
+    ],
+    "skillTemplate": "MULTI_SHOT",
+    "status": "static-art-runtime-motion; multi-pose-sheet-pending"
+  }
+}

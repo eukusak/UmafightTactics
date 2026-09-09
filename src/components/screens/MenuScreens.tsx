@@ -2,17 +2,23 @@
 import { useState } from 'react';
 import { useGameStore, DEFAULT_KEYBINDS } from '../../store/gameStore';
 import { DEFAULT_SEED } from '../../game/engine/constants';
+import { SeasonPicker } from '../SeasonPicker';
+import type { SeasonId } from '../../game/engine/seasons/catalog';
 import { ROSTER_HASH } from '../../game/engine/roster';
+import { seasonBackdrop } from '../../game/ui/season-art';
 
 export function TitleScreen(): JSX.Element {
   const setScreen = useGameStore((s) => s.setScreen);
   return (
-    <div className="menu-screen">
-      <h1 className="menu-title">UmafightTactics</h1>
-      <p className="menu-sub">우마무스메 팬메이드 오토배틀러 · 비공식 2차 창작</p>
+    <div className="menu-screen title-hero">
+      <div className="eyebrow">FIVE SEASONS / TWINKLE ARENA</div>
+      <h1 className="menu-title">Umafight<br />Tactics</h1>
+      <div className="title-korean">말토체스</div>
+      <p className="hero-description">최고의 레이스는, 최고의 팀에서.<br />나만의 조합으로 아레나의 정상을 향해.</p>
       <div className="menu-buttons">
         <button className="btn-primary" onClick={() => setScreen('MAIN_MENU')}>시작하기</button>
       </div>
+      <div className="hero-meta"><div><strong>145</strong><span>전체 출전 캐릭터</span></div><div><strong>5</strong><span>서로 다른 시즌</span></div><div><strong>20</strong><span>새 시즌 시너지</span></div></div>
       <p className="muted" style={{ position: 'absolute', bottom: 26, fontSize: 12 }}>
         본 게임은 팬 제작 비공식 작품이며 Cygames와 무관합니다.
       </p>
@@ -31,8 +37,10 @@ export function MainMenu(): JSX.Element {
       <h1 className="menu-title" style={{ fontSize: 54 }}>트레이닝 센터</h1>
       <div className="menu-buttons">
         <button className="btn-primary" onClick={() => setScreen('MATCH_SETUP')}>새 게임</button>
+        <button className="btn-primary" onClick={() => setScreen('ONLINE')}>온라인 대전 · 최대 8인</button>
         <button disabled={!hasSave} onClick={() => { continueMatch(); }}>이어하기</button>
         <button onClick={() => setScreen('COLLECTION')}>도감 (145명)</button>
+        <button onClick={() => setScreen('MOTION')}>기물 모션 미리보기</button>
         <button onClick={() => setScreen('SETTINGS')}>설정</button>
         <button className="btn-ghost" onClick={() => setScreen('TITLE')}>뒤로</button>
       </div>
@@ -48,6 +56,7 @@ export function MatchSetup(): JSX.Element {
   const newMatch = useGameStore((s) => s.newMatch);
   const setScreen = useGameStore((s) => s.setScreen);
   const [name, setName] = useState('트레이너');
+  const [seasonId, setSeasonId] = useState<SeasonId>('s1');
   const [seed, setSeed] = useState(String(DEFAULT_SEED));
   const [randomSeed, setRandomSeed] = useState(true);
 
@@ -55,7 +64,7 @@ export function MatchSetup(): JSX.Element {
     // A player-facing "random" seed still resolves to a concrete number so the
     // match stays reproducible and shareable.
     const value = randomSeed ? (Date.now() % 2_147_483_647) : Number(seed) || DEFAULT_SEED;
-    newMatch(value, name.trim() || '트레이너');
+    newMatch(value, name.trim() || '트레이너', seasonId);
   };
 
   const inputStyle = {
@@ -64,9 +73,10 @@ export function MatchSetup(): JSX.Element {
   } as const;
 
   return (
-    <div className="menu-screen">
-      <h1 className="menu-title" style={{ fontSize: 48 }}>매치 설정</h1>
-      <div className="panel" style={{ padding: 24, width: 420 }}>
+    <div className="menu-screen season-screen" style={seasonBackdrop(seasonId)}>
+      <h1 className="menu-title" style={{ fontSize: 40, marginBottom: 12 }}>매치 설정</h1>
+      <SeasonPicker value={seasonId} onChange={setSeasonId} />
+      <div className="panel" style={{ padding: 16, width: 620, marginTop: 14 }}>
         <label style={{ display: 'block', marginBottom: 14 }}>
           <div className="muted" style={{ fontSize: 13, marginBottom: 5 }}>트레이너 이름</div>
           <input value={name} onChange={(e) => setName(e.target.value)} style={inputStyle} />
@@ -82,7 +92,7 @@ export function MatchSetup(): JSX.Element {
           </label>
         )}
         <div className="muted" style={{ fontSize: 12, marginTop: 14, lineHeight: 1.6 }}>
-          플레이어 1명 + AI 7명 · 시작 체력 100 · Season 1 활성 60명
+          플레이어 1명 + AI 7명 · 시작 체력 100 · {seasonId.toUpperCase()} 출전 60명
         </div>
       </div>
       <div className="menu-buttons" style={{ marginTop: 18 }}>
@@ -124,6 +134,11 @@ export function SettingsScreen(): JSX.Element {
           <input type="checkbox" checked={settings.showDamageNumbers}
             onChange={(e) => setSettings({ showDamageNumbers: e.target.checked })} />
           <span>피해량 표시</span>
+        </label>
+        <label style={{ display: 'flex', gap: 8, alignItems: 'center', marginBottom: 18 }}>
+          <input type="checkbox" checked={settings.autoContinue}
+            onChange={(e) => setSettings({ autoContinue: e.target.checked })} />
+          <span>전투 결과 확인 후 5초 뒤 자동 진행</span>
         </label>
         <label style={{ display: 'flex', gap: 8, alignItems: 'center', marginBottom: 18 }}>
           <input type="checkbox" checked={devMode} onChange={(e) => setDevMode(e.target.checked)} />
@@ -175,7 +190,7 @@ export function ResultScreen(): JSX.Element {
   const human = match.players.find((p) => p.isHuman);
 
   return (
-    <div className="menu-screen" style={{ justifyContent: 'flex-start', paddingTop: 50 }}>
+    <div className="menu-screen result-screen" style={{ justifyContent: 'flex-start', paddingTop: 50 }}>
       <h1 className="menu-title" style={{ fontSize: 48 }}>
         {human?.placement === 1 ? '우승!' : `${human?.placement ?? '-'}위`}
       </h1>

@@ -1,0 +1,106 @@
+{
+  "batchSize": 5,
+  "validation": "new portraits only; full app test/build not rerun",
+  "files": [
+    {
+      "id": "sirius_symboli",
+      "size": [
+        256,
+        256
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "bounds": [
+        15,
+        6,
+        241,
+        250
+      ],
+      "sourceSha256": "87c3aa0e9ae355d217240a6e313f0090014069a202ad580520a201dd22eb1c34",
+      "runtimeSha256": "a9608dee180dc090e8f71ddc6f7c0f9e08536ff2be8d9d761649da807b8b935b",
+      "reference": "public/assets/characters/race/SiriusSymboli-Race.png"
+    },
+    {
+      "id": "mejiro_ardan",
+      "size": [
+        256,
+        256
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "bounds": [
+        19,
+        6,
+        237,
+        250
+      ],
+      "sourceSha256": "3519dc7179a4572c2fafb8ec904e886928bb938997eb92c2dd7d7a66495b7802",
+      "runtimeSha256": "e01c96fbfeb95fdf67f0d29b9aaf620026fec8a1a5085212c941046cf31ea092",
+      "reference": "public/assets/characters/race/MejiroArdan-Race.png"
+    },
+    {
+      "id": "yaeno_muteki",
+      "size": [
+        256,
+        256
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "bounds": [
+        28,
+        6,
+        227,
+        250
+      ],
+      "sourceSha256": "35bdd42723fb94cefe4e68f5205794d561481d30b30370f74681c56434f1ea53",
+      "runtimeSha256": "0638d549a150faf46477ff2d6ea002e765cac209f39eb2dbcab06bba56f2cbfc",
+      "reference": "public/assets/characters/race/YaenoMuteki-Race.png"
+    },
+    {
+      "id": "tsurumaru_tsuyoshi",
+      "size": [
+        256,
+        256
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "bounds": [
+        15,
+        6,
+        240,
+        250
+      ],
+      "sourceSha256": "4f8d8f5deb343ee9b2e4081275a5bcb5371cb0789f3573e0a6ccf480a5be9cfa",
+      "runtimeSha256": "c637b481f35af9cf3c376c416857f9cb87706df06406017323bec3cda6bce089",
+      "reference": "public/assets/characters/race/TsurumaruTsuyoshi-Race.png"
+    },
+    {
+      "id": "mejiro_bright",
+      "size": [
+        256,
+        256
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "bounds": [
+        26,
+        6,
+        229,
+        250
+      ],
+      "sourceSha256": "f37ed72be541b76d84b6b6b3e4cf3e04f1325f03e1ee333ce9598d597a36c064",
+      "runtimeSha256": "fe7c017cd3f3b3f773f19bbd334a06f54ced96332937b77f2655baa906b1d37a",
+      "reference": "public/assets/characters/race/MejiroBright-Race.png"
+    }
+  ]
+}

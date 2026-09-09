@@ -1,0 +1,1938 @@
+{
+  "version": 1,
+  "rosterHash": "e4ea4debfadc7400",
+  "seasons": [
+    {
+      "id": "s1",
+      "name": "트윙클 개막전",
+      "subtitle": "속공과 기본기, 첫 번째 스타들의 무대",
+      "color": "#f5c76a",
+      "focus": [
+        "nige",
+        "sprinter"
+      ],
+      "unitIds": [
+        "special_week",
+        "maruzensky",
+        "fuji_kiseki",
+        "oguri_cap",
+        "gold_ship",
+        "vodka",
+        "daiwa_scarlet",
+        "taiki_shuttle",
+        "grass_wonder",
+        "mejiro_mcqueen",
+        "el_condor_pasa",
+        "tm_opera_o",
+        "narita_brian",
+        "symboli_rudolf",
+        "agnes_digital",
+        "tamamo_cross",
+        "biwa_hayahide",
+        "mihono_bourbon",
+        "agnes_tachyon",
+        "inari_one",
+        "curren_chan",
+        "gold_city",
+        "seeking_the_pearl",
+        "super_creek",
+        "smart_falcon",
+        "nishino_flower",
+        "haru_urara",
+        "bamboo_memory",
+        "biko_pegasus",
+        "nice_nature",
+        "king_halo",
+        "satono_diamond",
+        "kitasan_black",
+        "mejiro_bright",
+        "sakura_laurel",
+        "furioso",
+        "north_flight",
+        "symboli_kris_s",
+        "daiichi_ruby",
+        "mejiro_ramonu",
+        "cheval_grand",
+        "still_in_love",
+        "copano_rickey",
+        "hokko_tarumae",
+        "wonder_acute",
+        "duramente",
+        "buena_vista",
+        "orfevre",
+        "gentildonna",
+        "durandal",
+        "genuine",
+        "blast_onepiece",
+        "almond_eye",
+        "lucky_lilac",
+        "gran_alegria",
+        "chrono_genesis",
+        "forever_young",
+        "marche_lorraine",
+        "manhattan_cafe",
+        "espoir_city"
+      ],
+      "traits": [
+        {
+          "id": "s1_pace",
+          "name": "페이스메이커",
+          "category": "SEASON",
+          "thresholds": [
+            3,
+            5,
+            7
+          ],
+          "emblemItemId": null,
+          "description": "트윙클 개막전 전용 · 해당 특성 기물에게 적용 · 서로 다른 기물 3/5/7명",
+          "tiers": [
+            {
+              "count": 3,
+              "effects": [
+                {
+                  "kind": "STAT_MUL",
+                  "stat": "attackSpeed",
+                  "value": 0.06,
+                  "target": "SELF"
+                },
+                {
+                  "kind": "STAT_MUL",
+                  "stat": "moveSpeedHexPerSec",
+                  "value": 0.08,
+                  "target": "SELF"
+                }
+              ],
+              "description": "공격속도 +6%, 이동속도 +8%"
+            },
+            {
+              "count": 5,
+              "effects": [
+                {
+                  "kind": "STAT_MUL",
+                  "stat": "attackSpeed",
+                  "value": 0.12,
+                  "target": "SELF"
+                },
+                {
+                  "kind": "STAT_MUL",
+                  "stat": "moveSpeedHexPerSec",
+                  "value": 0.16,
+                  "target": "SELF"
+                }
+              ],
+              "description": "공격속도 +12%, 이동속도 +16%"
+            },
+            {
+              "count": 7,
+              "effects": [
+                {
+                  "kind": "STAT_MUL",
+                  "stat": "attackSpeed",
+                  "value": 0.18,
+                  "target": "SELF"
+                },
+                {
+                  "kind": "STAT_MUL",
+                  "stat": "moveSpeedHexPerSec",
+                  "value": 0.24,
+                  "target": "SELF"
+                }
+              ],
+              "description": "공격속도 +18%, 이동속도 +24%"
+            }
+          ]
+        },
+        {
+          "id": "s1_banner",
+          "name": "개막 기수",
+          "category": "SEASON",
+          "thresholds": [
+            3,
+            5,
+            7
+          ],
+          "emblemItemId": null,
+          "description": "트윙클 개막전 전용 · 해당 특성 기물에게 적용 · 서로 다른 기물 3/5/7명",
+          "tiers": [
+            {
+              "count": 3,
+              "effects": [
+                {
+                  "kind": "SHIELD_MAXHP_PCT",
+                  "value": 0.08,
+                  "duration": 8,
+                  "trigger": {
+                    "when": "COMBAT_START"
+                  },
+                  "target": "SELF"
+                }
+              ],
+              "description": "전투 시작 시 8초 동안 최대 체력 8% 보호막"
+            },
+            {
+              "count": 5,
+              "effects": [
+                {
+                  "kind": "SHIELD_MAXHP_PCT",
+                  "value": 0.16,
+                  "duration": 8,
+                  "trigger": {
+                    "when": "COMBAT_START"
+                  },
+                  "target": "SELF"
+                }
+              ],
+              "description": "전투 시작 시 8초 동안 최대 체력 16% 보호막"
+            },
+            {
+              "count": 7,
+              "effects": [
+                {
+                  "kind": "SHIELD_MAXHP_PCT",
+                  "value": 0.24,
+                  "duration": 8,
+                  "trigger": {
+                    "when": "COMBAT_START"
+                  },
+                  "target": "SELF"
+                }
+              ],
+              "description": "전투 시작 시 8초 동안 최대 체력 24% 보호막"
+            }
+          ]
+        },
+        {
+          "id": "s1_spark",
+          "name": "샛별",
+          "category": "SEASON",
+          "thresholds": [
+            3,
+            5,
+            7
+          ],
+          "emblemItemId": null,
+          "description": "트윙클 개막전 전용 · 해당 특성 기물에게 적용 · 서로 다른 기물 3/5/7명",
+          "tiers": [
+            {
+              "count": 3,
+              "effects": [
+                {
+                  "kind": "STAT_ADD",
+                  "stat": "startMana",
+                  "value": 8,
+                  "target": "SELF"
+                },
+                {
+                  "kind": "STAT_ADD",
+                  "stat": "abilityPower",
+                  "value": 5,
+                  "target": "SELF"
+                }
+              ],
+              "description": "시작 마나 +8, 주문력 +5"
+            },
+            {
+              "count": 5,
+              "effects": [
+                {
+                  "kind": "STAT_ADD",
+                  "stat": "startMana",
+                  "value": 16,
+                  "target": "SELF"
+                },
+                {
+                  "kind": "STAT_ADD",
+                  "stat": "abilityPower",
+                  "value": 10,
+                  "target": "SELF"
+                }
+              ],
+              "description": "시작 마나 +16, 주문력 +10"
+            },
+            {
+              "count": 7,
+              "effects": [
+                {
+                  "kind": "STAT_ADD",
+                  "stat": "startMana",
+                  "value": 24,
+                  "target": "SELF"
+                },
+                {
+                  "kind": "STAT_ADD",
+                  "stat": "abilityPower",
+                  "value": 15,
+                  "target": "SELF"
+                }
+              ],
+              "description": "시작 마나 +24, 주문력 +15"
+            }
+          ]
+        },
+        {
+          "id": "s1_team",
+          "name": "원팀",
+          "category": "SEASON",
+          "thresholds": [
+            3,
+            5,
+            7
+          ],
+          "emblemItemId": null,
+          "description": "트윙클 개막전 전용 · 해당 특성 기물에게 적용 · 서로 다른 기물 3/5/7명",
+          "tiers": [
+            {
+              "count": 3,
+              "effects": [
+                {
+                  "kind": "STAT_ADD",
+                  "stat": "armor",
+                  "value": 8,
+                  "target": "SELF"
+                },
+                {
+                  "kind": "STAT_ADD",
+                  "stat": "magicResist",
+                  "value": 8,
+                  "target": "SELF"
+                }
+              ],
+              "description": "방어력·마법 저항력 +8"
+            },
+            {
+              "count": 5,
+              "effects": [
+                {
+                  "kind": "STAT_ADD",
+                  "stat": "armor",
+                  "value": 16,
+                  "target": "SELF"
+                },
+                {
+                  "kind": "STAT_ADD",
+                  "stat": "magicResist",
+                  "value": 16,
+                  "target": "SELF"
+                }
+              ],
+              "description": "방어력·마법 저항력 +16"
+            },
+            {
+              "count": 7,
+              "effects": [
+                {
+                  "kind": "STAT_ADD",
+                  "stat": "armor",
+                  "value": 24,
+                  "target": "SELF"
+                },
+                {
+                  "kind": "STAT_ADD",
+                  "stat": "magicResist",
+                  "value": 24,
+                  "target": "SELF"
+                }
+              ],
+              "description": "방어력·마법 저항력 +24"
+            }
+          ]
+        }
+      ],
+      "unitTraits": {
+        "blast_onepiece": "s1_pace",
+        "daiichi_ruby": "s1_banner",
+        "genuine": "s1_spark",
+        "seeking_the_pearl": "s1_team",
+        "inari_one": "s1_pace",
+        "manhattan_cafe": "s1_banner",
+        "still_in_love": "s1_spark",
+        "biko_pegasus": "s1_team",
+        "gold_city": "s1_pace",
+        "haru_urara": "s1_banner",
+        "king_halo": "s1_spark",
+        "marche_lorraine": "s1_team",
+        "nice_nature": "s1_pace",
+        "cheval_grand": "s1_banner",
+        "agnes_digital": "s1_spark",
+        "durandal": "s1_team",
+        "nishino_flower": "s1_pace",
+        "curren_chan": "s1_banner",
+        "lucky_lilac": "s1_spark",
+        "duramente": "s1_team",
+        "gold_ship": "s1_pace",
+        "mejiro_ramonu": "s1_banner",
+        "bamboo_memory": "s1_spark",
+        "wonder_acute": "s1_team",
+        "furioso": "s1_pace",
+        "mejiro_bright": "s1_spark",
+        "sakura_laurel": "s1_team",
+        "satono_diamond": "s1_banner",
+        "copano_rickey": "s1_banner",
+        "grass_wonder": "s1_pace",
+        "narita_brian": "s1_spark",
+        "north_flight": "s1_team",
+        "vodka": "s1_banner",
+        "forever_young": "s1_pace",
+        "hokko_tarumae": "s1_team",
+        "tamamo_cross": "s1_spark",
+        "el_condor_pasa": "s1_banner",
+        "espoir_city": "s1_pace",
+        "gentildonna": "s1_spark",
+        "mejiro_mcqueen": "s1_team",
+        "super_creek": "s1_pace",
+        "agnes_tachyon": "s1_banner",
+        "buena_vista": "s1_spark",
+        "gran_alegria": "s1_team",
+        "orfevre": "s1_pace",
+        "biwa_hayahide": "s1_banner",
+        "fuji_kiseki": "s1_spark",
+        "oguri_cap": "s1_team",
+        "smart_falcon": "s1_pace",
+        "chrono_genesis": "s1_team",
+        "symboli_kris_s": "s1_banner",
+        "symboli_rudolf": "s1_spark",
+        "almond_eye": "s1_pace",
+        "special_week": "s1_banner",
+        "daiwa_scarlet": "s1_spark",
+        "mihono_bourbon": "s1_team",
+        "taiki_shuttle": "s1_pace",
+        "maruzensky": "s1_banner",
+        "kitasan_black": "s1_team",
+        "tm_opera_o": "s1_spark"
+      }
+    },
+    {
+      "id": "s2",
+      "name": "별빛 오케스트라",
+      "subtitle": "마나와 스킬 연계로 완성하는 협주곡",
+      "color": "#ad9bff",
+      "focus": [
+        "middle",
+        "queen"
+      ],
+      "unitIds": [
+        "admire_vega",
+        "aston_machan",
+        "samson_big",
+        "stay_gold",
+        "vivlos",
+        "calstone_light_o",
+        "hishi_miracle",
+        "rose_kingdom",
+        "tsurumaru_tsuyoshi",
+        "mr_cb",
+        "verxina",
+        "still_in_love",
+        "cheval_grand",
+        "haru_urara",
+        "believe",
+        "phalaenopsis",
+        "rulership",
+        "admire_groove",
+        "rice_shower",
+        "mejiro_ryan",
+        "sakura_bakushin_o",
+        "mejiro_ramonu",
+        "agnes_digital",
+        "curren_chan",
+        "gold_ship",
+        "wonder_acute",
+        "lucky_lilac",
+        "nishino_flower",
+        "epiphaneia",
+        "bubble_gum_fellow",
+        "transcend",
+        "daring_tact",
+        "grass_wonder",
+        "hokko_tarumae",
+        "super_creek",
+        "el_condor_pasa",
+        "tamamo_cross",
+        "espoir_city",
+        "gentildonna",
+        "vodka",
+        "forever_young",
+        "mayano_top_gun",
+        "fuji_kiseki",
+        "symboli_rudolf",
+        "gran_alegria",
+        "oguri_cap",
+        "symboli_kris_s",
+        "smart_falcon",
+        "orfevre",
+        "chrono_genesis",
+        "biwa_hayahide",
+        "agnes_tachyon",
+        "maruzensky",
+        "kitasan_black",
+        "tm_opera_o",
+        "special_week",
+        "taiki_shuttle",
+        "almond_eye",
+        "mihono_bourbon",
+        "daiwa_scarlet"
+      ],
+      "traits": [
+        {
+          "id": "s2_rhythm",
+          "name": "리듬 메이커",
+          "category": "SEASON",
+          "thresholds": [
+            3,
+            5,
+            7
+          ],
+          "emblemItemId": null,
+          "description": "별빛 오케스트라 전용 · 해당 특성 기물에게 적용 · 서로 다른 기물 3/5/7명",
+          "tiers": [
+            {
+              "count": 3,
+              "effects": [
+                {
+                  "kind": "ON_HIT_MANA",
+                  "value": 1,
+                  "trigger": {
+                    "when": "ON_ATTACK"
+                  },
+                  "target": "SELF"
+                }
+              ],
+              "description": "기본 공격 적중 시 추가 마나 1"
+            },
+            {
+              "count": 5,
+              "effects": [
+                {
+                  "kind": "ON_HIT_MANA",
+                  "value": 2,
+                  "trigger": {
+                    "when": "ON_ATTACK"
+                  },
+                  "target": "SELF"
+                }
+              ],
+              "description": "기본 공격 적중 시 추가 마나 2"
+            },
+            {
+              "count": 7,
+              "effects": [
+                {
+                  "kind": "ON_HIT_MANA",
+                  "value": 3,
+                  "trigger": {
+                    "when": "ON_ATTACK"
+                  },
+                  "target": "SELF"
+                }
+              ],
+              "description": "기본 공격 적중 시 추가 마나 3"
+            }
+          ]
+        },
+        {
+          "id": "s2_aria",
+          "name": "별빛 아리아",
+          "category": "SEASON",
+          "thresholds": [
+            3,
+            5,
+            7
+          ],
+          "emblemItemId": null,
+          "description": "별빛 오케스트라 전용 · 해당 특성 기물에게 적용 · 서로 다른 기물 3/5/7명",
+          "tiers": [
+            {
+              "count": 3,
+              "effects": [
+                {
+                  "kind": "SKILL_DAMAGE_AMP",
+                  "value": 0.07,
+                  "target": "SELF"
+                }
+              ],
+              "description": "스킬 피해 +7%"
+            },
+            {
+              "count": 5,
+              "effects": [
+                {
+                  "kind": "SKILL_DAMAGE_AMP",
+                  "value": 0.14,
+                  "target": "SELF"
+                }
+              ],
+              "description": "스킬 피해 +14%"
+            },
+            {
+              "count": 7,
+              "effects": [
+                {
+                  "kind": "SKILL_DAMAGE_AMP",
+                  "value": 0.21000000000000002,
+                  "target": "SELF"
+                }
+              ],
+              "description": "스킬 피해 +21%"
+            }
+          ]
+        },
+        {
+          "id": "s2_encore",
+          "name": "앙코르",
+          "category": "SEASON",
+          "thresholds": [
+            3,
+            5,
+            7
+          ],
+          "emblemItemId": null,
+          "description": "별빛 오케스트라 전용 · 해당 특성 기물에게 적용 · 서로 다른 기물 3/5/7명",
+          "tiers": [
+            {
+              "count": 3,
+              "effects": [
+                {
+                  "kind": "HEAL_MAXHP_PCT",
+                  "value": 0.025,
+                  "trigger": {
+                    "when": "ON_CAST"
+                  },
+                  "target": "SELF"
+                }
+              ],
+              "description": "스킬 사용 시 자신의 최대 체력 2.5% 회복"
+            },
+            {
+              "count": 5,
+              "effects": [
+                {
+                  "kind": "HEAL_MAXHP_PCT",
+                  "value": 0.05,
+                  "trigger": {
+                    "when": "ON_CAST"
+                  },
+                  "target": "SELF"
+                }
+              ],
+              "description": "스킬 사용 시 자신의 최대 체력 5% 회복"
+            },
+            {
+              "count": 7,
+              "effects": [
+                {
+                  "kind": "HEAL_MAXHP_PCT",
+                  "value": 0.07500000000000001,
+                  "trigger": {
+                    "when": "ON_CAST"
+                  },
+                  "target": "SELF"
+                }
+              ],
+              "description": "스킬 사용 시 자신의 최대 체력 7.5% 회복"
+            }
+          ]
+        },
+        {
+          "id": "s2_harmony",
+          "name": "하모니",
+          "category": "SEASON",
+          "thresholds": [
+            3,
+            5,
+            7
+          ],
+          "emblemItemId": null,
+          "description": "별빛 오케스트라 전용 · 해당 특성 기물에게 적용 · 서로 다른 기물 3/5/7명",
+          "tiers": [
+            {
+              "count": 3,
+              "effects": [
+                {
+                  "kind": "SHIELD_MAXHP_PCT",
+                  "value": 0.04,
+                  "duration": 3,
+                  "trigger": {
+                    "when": "ON_CAST"
+                  },
+                  "target": "SELF"
+                }
+              ],
+              "description": "스킬 사용 시 3초 동안 자신의 최대 체력 4% 보호막"
+            },
+            {
+              "count": 5,
+              "effects": [
+                {
+                  "kind": "SHIELD_MAXHP_PCT",
+                  "value": 0.08,
+                  "duration": 3,
+                  "trigger": {
+                    "when": "ON_CAST"
+                  },
+                  "target": "SELF"
+                }
+              ],
+              "description": "스킬 사용 시 3초 동안 자신의 최대 체력 8% 보호막"
+            },
+            {
+              "count": 7,
+              "effects": [
+                {
+                  "kind": "SHIELD_MAXHP_PCT",
+                  "value": 0.12,
+                  "duration": 3,
+                  "trigger": {
+                    "when": "ON_CAST"
+                  },
+                  "target": "SELF"
+                }
+              ],
+              "description": "스킬 사용 시 3초 동안 자신의 최대 체력 12% 보호막"
+            }
+          ]
+        }
+      ],
+      "unitTraits": {
+        "hishi_miracle": "s2_harmony",
+        "vivlos": "s2_rhythm",
+        "aston_machan": "s2_aria",
+        "verxina": "s2_encore",
+        "admire_vega": "s2_harmony",
+        "rose_kingdom": "s2_rhythm",
+        "still_in_love": "s2_aria",
+        "calstone_light_o": "s2_encore",
+        "haru_urara": "s2_harmony",
+        "samson_big": "s2_rhythm",
+        "tsurumaru_tsuyoshi": "s2_aria",
+        "cheval_grand": "s2_encore",
+        "mr_cb": "s2_harmony",
+        "stay_gold": "s2_rhythm",
+        "admire_groove": "s2_aria",
+        "agnes_digital": "s2_encore",
+        "nishino_flower": "s2_harmony",
+        "phalaenopsis": "s2_rhythm",
+        "believe": "s2_aria",
+        "curren_chan": "s2_encore",
+        "lucky_lilac": "s2_harmony",
+        "gold_ship": "s2_encore",
+        "mejiro_ramonu": "s2_rhythm",
+        "mejiro_ryan": "s2_aria",
+        "sakura_bakushin_o": "s2_harmony",
+        "wonder_acute": "s2_rhythm",
+        "rice_shower": "s2_aria",
+        "rulership": "s2_encore",
+        "bubble_gum_fellow": "s2_aria",
+        "grass_wonder": "s2_encore",
+        "vodka": "s2_harmony",
+        "forever_young": "s2_rhythm",
+        "hokko_tarumae": "s2_harmony",
+        "transcend": "s2_rhythm",
+        "daring_tact": "s2_encore",
+        "tamamo_cross": "s2_aria",
+        "el_condor_pasa": "s2_aria",
+        "espoir_city": "s2_encore",
+        "epiphaneia": "s2_harmony",
+        "gentildonna": "s2_rhythm",
+        "super_creek": "s2_aria",
+        "agnes_tachyon": "s2_rhythm",
+        "gran_alegria": "s2_encore",
+        "orfevre": "s2_harmony",
+        "biwa_hayahide": "s2_aria",
+        "fuji_kiseki": "s2_harmony",
+        "oguri_cap": "s2_rhythm",
+        "smart_falcon": "s2_encore",
+        "chrono_genesis": "s2_harmony",
+        "symboli_kris_s": "s2_rhythm",
+        "mayano_top_gun": "s2_aria",
+        "symboli_rudolf": "s2_encore",
+        "almond_eye": "s2_aria",
+        "special_week": "s2_rhythm",
+        "daiwa_scarlet": "s2_harmony",
+        "mihono_bourbon": "s2_encore",
+        "taiki_shuttle": "s2_rhythm",
+        "maruzensky": "s2_harmony",
+        "kitasan_black": "s2_aria",
+        "tm_opera_o": "s2_encore"
+      }
+    },
+    {
+      "id": "s3",
+      "name": "와일드 프런티어",
+      "subtitle": "회복과 강인함으로 끝까지 버티는 레이스",
+      "color": "#72d6ad",
+      "focus": [
+        "dirt_champion",
+        "stayer"
+      ],
+      "unitIds": [
+        "air_shakur",
+        "kawakami_princess",
+        "red_desire",
+        "hishi_akebono",
+        "winning_ticket",
+        "satono_crown",
+        "katsuragi_ace",
+        "shinko_windy",
+        "loves_only_you",
+        "ks_miracle",
+        "inari_one",
+        "daiichi_ruby",
+        "gold_city",
+        "aston_machan",
+        "sakura_chiyono_o",
+        "dream_journey",
+        "seiun_sky",
+        "silence_suzuka",
+        "narita_top_road",
+        "sweep_tosho",
+        "agnes_digital",
+        "furioso",
+        "curren_chan",
+        "gold_ship",
+        "wonder_acute",
+        "duramente",
+        "durandal",
+        "believe",
+        "titleholder",
+        "efforia",
+        "rhein_kraft",
+        "mejiro_dober",
+        "forever_young",
+        "grass_wonder",
+        "hokko_tarumae",
+        "tamamo_cross",
+        "espoir_city",
+        "daring_tact",
+        "narita_brian",
+        "super_creek",
+        "copano_rickey",
+        "tokai_teio",
+        "fuji_kiseki",
+        "oguri_cap",
+        "symboli_rudolf",
+        "smart_falcon",
+        "gran_alegria",
+        "symboli_kris_s",
+        "mayano_top_gun",
+        "chrono_genesis",
+        "biwa_hayahide",
+        "orfevre",
+        "maruzensky",
+        "kitasan_black",
+        "taiki_shuttle",
+        "special_week",
+        "tm_opera_o",
+        "almond_eye",
+        "mihono_bourbon",
+        "daiwa_scarlet"
+      ],
+      "traits": [
+        {
+          "id": "s3_trail",
+          "name": "개척단",
+          "category": "SEASON",
+          "thresholds": [
+            3,
+            5,
+            7
+          ],
+          "emblemItemId": null,
+          "description": "와일드 프런티어 전용 · 해당 특성 기물에게 적용 · 서로 다른 기물 3/5/7명",
+          "tiers": [
+            {
+              "count": 3,
+              "effects": [
+                {
+                  "kind": "STAT_MUL",
+                  "stat": "hp",
+                  "value": 0.08,
+                  "target": "SELF"
+                }
+              ],
+              "description": "최대 체력 +8%"
+            },
+            {
+              "count": 5,
+              "effects": [
+                {
+                  "kind": "STAT_MUL",
+                  "stat": "hp",
+                  "value": 0.16,
+                  "target": "SELF"
+                }
+              ],
+              "description": "최대 체력 +16%"
+            },
+            {
+              "count": 7,
+              "effects": [
+                {
+                  "kind": "STAT_MUL",
+                  "stat": "hp",
+                  "value": 0.24,
+                  "target": "SELF"
+                }
+              ],
+              "description": "최대 체력 +24%"
+            }
+          ]
+        },
+        {
+          "id": "s3_spring",
+          "name": "오아시스",
+          "category": "SEASON",
+          "thresholds": [
+            3,
+            5,
+            7
+          ],
+          "emblemItemId": null,
+          "description": "와일드 프런티어 전용 · 해당 특성 기물에게 적용 · 서로 다른 기물 3/5/7명",
+          "tiers": [
+            {
+              "count": 3,
+              "effects": [
+                {
+                  "kind": "HEAL_MAXHP_PCT",
+                  "value": 0.03,
+                  "trigger": {
+                    "when": "EVERY_SECONDS",
+                    "threshold": 5
+                  },
+                  "target": "SELF"
+                }
+              ],
+              "description": "5초마다 자신의 최대 체력 3% 회복"
+            },
+            {
+              "count": 5,
+              "effects": [
+                {
+                  "kind": "HEAL_MAXHP_PCT",
+                  "value": 0.06,
+                  "trigger": {
+                    "when": "EVERY_SECONDS",
+                    "threshold": 5
+                  },
+                  "target": "SELF"
+                }
+              ],
+              "description": "5초마다 자신의 최대 체력 6% 회복"
+            },
+            {
+              "count": 7,
+              "effects": [
+                {
+                  "kind": "HEAL_MAXHP_PCT",
+                  "value": 0.09,
+                  "trigger": {
+                    "when": "EVERY_SECONDS",
+                    "threshold": 5
+                  },
+                  "target": "SELF"
+                }
+              ],
+              "description": "5초마다 자신의 최대 체력 9% 회복"
+            }
+          ]
+        },
+        {
+          "id": "s3_fang",
+          "name": "야생의 송곳니",
+          "category": "SEASON",
+          "thresholds": [
+            3,
+            5,
+            7
+          ],
+          "emblemItemId": null,
+          "description": "와일드 프런티어 전용 · 해당 특성 기물에게 적용 · 서로 다른 기물 3/5/7명",
+          "tiers": [
+            {
+              "count": 3,
+              "effects": [
+                {
+                  "kind": "OMNIVAMP",
+                  "value": 0.04,
+                  "target": "SELF"
+                },
+                {
+                  "kind": "STAT_MUL",
+                  "stat": "attackDamage",
+                  "value": 0.04,
+                  "target": "SELF"
+                }
+              ],
+              "description": "모든 피해 흡혈 +4%, 공격력 +4%"
+            },
+            {
+              "count": 5,
+              "effects": [
+                {
+                  "kind": "OMNIVAMP",
+                  "value": 0.08,
+                  "target": "SELF"
+                },
+                {
+                  "kind": "STAT_MUL",
+                  "stat": "attackDamage",
+                  "value": 0.08,
+                  "target": "SELF"
+                }
+              ],
+              "description": "모든 피해 흡혈 +8%, 공격력 +8%"
+            },
+            {
+              "count": 7,
+              "effects": [
+                {
+                  "kind": "OMNIVAMP",
+                  "value": 0.12,
+                  "target": "SELF"
+                },
+                {
+                  "kind": "STAT_MUL",
+                  "stat": "attackDamage",
+                  "value": 0.12,
+                  "target": "SELF"
+                }
+              ],
+              "description": "모든 피해 흡혈 +12%, 공격력 +12%"
+            }
+          ]
+        },
+        {
+          "id": "s3_stone",
+          "name": "바위 수호자",
+          "category": "SEASON",
+          "thresholds": [
+            3,
+            5,
+            7
+          ],
+          "emblemItemId": null,
+          "description": "와일드 프런티어 전용 · 해당 특성 기물에게 적용 · 서로 다른 기물 3/5/7명",
+          "tiers": [
+            {
+              "count": 3,
+              "effects": [
+                {
+                  "kind": "DAMAGE_REDUCTION",
+                  "value": 0.04,
+                  "target": "SELF"
+                },
+                {
+                  "kind": "CC_IMMUNE",
+                  "value": 0,
+                  "duration": 2,
+                  "trigger": {
+                    "when": "COMBAT_START"
+                  },
+                  "target": "SELF"
+                }
+              ],
+              "description": "받는 피해 4% 감소, 시작 2초 방해 효과 면역"
+            },
+            {
+              "count": 5,
+              "effects": [
+                {
+                  "kind": "DAMAGE_REDUCTION",
+                  "value": 0.08,
+                  "target": "SELF"
+                },
+                {
+                  "kind": "CC_IMMUNE",
+                  "value": 0,
+                  "duration": 4,
+                  "trigger": {
+                    "when": "COMBAT_START"
+                  },
+                  "target": "SELF"
+                }
+              ],
+              "description": "받는 피해 8% 감소, 시작 4초 방해 효과 면역"
+            },
+            {
+              "count": 7,
+              "effects": [
+                {
+                  "kind": "DAMAGE_REDUCTION",
+                  "value": 0.12,
+                  "target": "SELF"
+                },
+                {
+                  "kind": "CC_IMMUNE",
+                  "value": 0,
+                  "duration": 6,
+                  "trigger": {
+                    "when": "COMBAT_START"
+                  },
+                  "target": "SELF"
+                }
+              ],
+              "description": "받는 피해 12% 감소, 시작 6초 방해 효과 면역"
+            }
+          ]
+        }
+      ],
+      "unitTraits": {
+        "daiichi_ruby": "s3_fang",
+        "satono_crown": "s3_stone",
+        "aston_machan": "s3_trail",
+        "kawakami_princess": "s3_spring",
+        "inari_one": "s3_fang",
+        "winning_ticket": "s3_stone",
+        "air_shakur": "s3_trail",
+        "gold_city": "s3_spring",
+        "hishi_akebono": "s3_fang",
+        "ks_miracle": "s3_stone",
+        "shinko_windy": "s3_trail",
+        "katsuragi_ace": "s3_spring",
+        "loves_only_you": "s3_fang",
+        "red_desire": "s3_stone",
+        "agnes_digital": "s3_trail",
+        "dream_journey": "s3_spring",
+        "durandal": "s3_fang",
+        "sweep_tosho": "s3_stone",
+        "believe": "s3_trail",
+        "curren_chan": "s3_spring",
+        "silence_suzuka": "s3_fang",
+        "duramente": "s3_trail",
+        "gold_ship": "s3_spring",
+        "sakura_chiyono_o": "s3_stone",
+        "wonder_acute": "s3_fang",
+        "furioso": "s3_trail",
+        "narita_top_road": "s3_stone",
+        "seiun_sky": "s3_spring",
+        "copano_rickey": "s3_trail",
+        "grass_wonder": "s3_spring",
+        "mejiro_dober": "s3_fang",
+        "narita_brian": "s3_stone",
+        "forever_young": "s3_stone",
+        "hokko_tarumae": "s3_fang",
+        "daring_tact": "s3_trail",
+        "efforia": "s3_spring",
+        "tamamo_cross": "s3_fang",
+        "espoir_city": "s3_stone",
+        "rhein_kraft": "s3_spring",
+        "super_creek": "s3_trail",
+        "titleholder": "s3_fang",
+        "gran_alegria": "s3_trail",
+        "orfevre": "s3_spring",
+        "tokai_teio": "s3_stone",
+        "biwa_hayahide": "s3_stone",
+        "fuji_kiseki": "s3_fang",
+        "oguri_cap": "s3_trail",
+        "smart_falcon": "s3_spring",
+        "chrono_genesis": "s3_fang",
+        "symboli_kris_s": "s3_stone",
+        "mayano_top_gun": "s3_trail",
+        "symboli_rudolf": "s3_spring",
+        "almond_eye": "s3_fang",
+        "special_week": "s3_trail",
+        "daiwa_scarlet": "s3_stone",
+        "mihono_bourbon": "s3_spring",
+        "taiki_shuttle": "s3_fang",
+        "maruzensky": "s3_stone",
+        "kitasan_black": "s3_trail",
+        "tm_opera_o": "s3_spring"
+      }
+    },
+    {
+      "id": "s4",
+      "name": "네온 스프린트",
+      "subtitle": "치명타와 추격으로 승부를 가르는 질주",
+      "color": "#68d7ff",
+      "focus": [
+        "sashi",
+        "miler"
+      ],
+      "unitIds": [
+        "no_reason",
+        "narita_taishin",
+        "win_variation",
+        "dantsu_flame",
+        "tosen_jordan",
+        "sirius_symboli",
+        "sounds_of_earth",
+        "ikuno_dictus",
+        "mejiro_palmer",
+        "daring_heart",
+        "daiichi_ruby",
+        "genuine",
+        "still_in_love",
+        "kawakami_princess",
+        "ines_fujin",
+        "fenomeno",
+        "tap_dance_city",
+        "eishin_flash",
+        "sakura_chitose_o",
+        "fine_motion",
+        "agnes_digital",
+        "curren_chan",
+        "furioso",
+        "gold_ship",
+        "phalaenopsis",
+        "lucky_lilac",
+        "admire_groove",
+        "mejiro_ramonu",
+        "victoire_pisa",
+        "air_groove",
+        "yamanin_zephyr",
+        "cesario",
+        "hokko_tarumae",
+        "forever_young",
+        "grass_wonder",
+        "narita_brian",
+        "transcend",
+        "tamamo_cross",
+        "copano_rickey",
+        "super_creek",
+        "rhein_kraft",
+        "zenno_rob_roy",
+        "fuji_kiseki",
+        "oguri_cap",
+        "smart_falcon",
+        "gran_alegria",
+        "symboli_kris_s",
+        "symboli_rudolf",
+        "biwa_hayahide",
+        "chrono_genesis",
+        "orfevre",
+        "mayano_top_gun",
+        "taiki_shuttle",
+        "maruzensky",
+        "kitasan_black",
+        "special_week",
+        "tm_opera_o",
+        "almond_eye",
+        "mihono_bourbon",
+        "daiwa_scarlet"
+      ],
+      "traits": [
+        {
+          "id": "s4_pulse",
+          "name": "네온 펄스",
+          "category": "SEASON",
+          "thresholds": [
+            3,
+            5,
+            7
+          ],
+          "emblemItemId": null,
+          "description": "네온 스프린트 전용 · 해당 특성 기물에게 적용 · 서로 다른 기물 3/5/7명",
+          "tiers": [
+            {
+              "count": 3,
+              "effects": [
+                {
+                  "kind": "ON_HIT_DAMAGE",
+                  "value": 10,
+                  "damageType": "MAGIC",
+                  "trigger": {
+                    "when": "ON_ATTACK"
+                  },
+                  "target": "CURRENT_TARGET"
+                }
+              ],
+              "description": "기본 공격에 마법 피해 10 추가"
+            },
+            {
+              "count": 5,
+              "effects": [
+                {
+                  "kind": "ON_HIT_DAMAGE",
+                  "value": 20,
+                  "damageType": "MAGIC",
+                  "trigger": {
+                    "when": "ON_ATTACK"
+                  },
+                  "target": "CURRENT_TARGET"
+                }
+              ],
+              "description": "기본 공격에 마법 피해 20 추가"
+            },
+            {
+              "count": 7,
+              "effects": [
+                {
+                  "kind": "ON_HIT_DAMAGE",
+                  "value": 30,
+                  "damageType": "MAGIC",
+                  "trigger": {
+                    "when": "ON_ATTACK"
+                  },
+                  "target": "CURRENT_TARGET"
+                }
+              ],
+              "description": "기본 공격에 마법 피해 30 추가"
+            }
+          ]
+        },
+        {
+          "id": "s4_chrome",
+          "name": "크롬 에이스",
+          "category": "SEASON",
+          "thresholds": [
+            3,
+            5,
+            7
+          ],
+          "emblemItemId": null,
+          "description": "네온 스프린트 전용 · 해당 특성 기물에게 적용 · 서로 다른 기물 3/5/7명",
+          "tiers": [
+            {
+              "count": 3,
+              "effects": [
+                {
+                  "kind": "CRIT_CHANCE_ADD",
+                  "value": 0.05,
+                  "target": "SELF"
+                },
+                {
+                  "kind": "CRIT_DAMAGE_ADD",
+                  "value": 0.08,
+                  "target": "SELF"
+                }
+              ],
+              "description": "치명타 확률 +5%, 치명타 피해 +8%"
+            },
+            {
+              "count": 5,
+              "effects": [
+                {
+                  "kind": "CRIT_CHANCE_ADD",
+                  "value": 0.1,
+                  "target": "SELF"
+                },
+                {
+                  "kind": "CRIT_DAMAGE_ADD",
+                  "value": 0.16,
+                  "target": "SELF"
+                }
+              ],
+              "description": "치명타 확률 +10%, 치명타 피해 +16%"
+            },
+            {
+              "count": 7,
+              "effects": [
+                {
+                  "kind": "CRIT_CHANCE_ADD",
+                  "value": 0.15000000000000002,
+                  "target": "SELF"
+                },
+                {
+                  "kind": "CRIT_DAMAGE_ADD",
+                  "value": 0.24,
+                  "target": "SELF"
+                }
+              ],
+              "description": "치명타 확률 +15%, 치명타 피해 +24%"
+            }
+          ]
+        },
+        {
+          "id": "s4_nitro",
+          "name": "니트로",
+          "category": "SEASON",
+          "thresholds": [
+            3,
+            5,
+            7
+          ],
+          "emblemItemId": null,
+          "description": "네온 스프린트 전용 · 해당 특성 기물에게 적용 · 서로 다른 기물 3/5/7명",
+          "tiers": [
+            {
+              "count": 3,
+              "effects": [
+                {
+                  "kind": "STAT_MUL",
+                  "stat": "attackSpeed",
+                  "value": 0.12,
+                  "duration": 6,
+                  "trigger": {
+                    "when": "COMBAT_START"
+                  },
+                  "target": "SELF"
+                }
+              ],
+              "description": "전투 시작 6초 동안 공격속도 +12%"
+            },
+            {
+              "count": 5,
+              "effects": [
+                {
+                  "kind": "STAT_MUL",
+                  "stat": "attackSpeed",
+                  "value": 0.24,
+                  "duration": 6,
+                  "trigger": {
+                    "when": "COMBAT_START"
+                  },
+                  "target": "SELF"
+                }
+              ],
+              "description": "전투 시작 6초 동안 공격속도 +24%"
+            },
+            {
+              "count": 7,
+              "effects": [
+                {
+                  "kind": "STAT_MUL",
+                  "stat": "attackSpeed",
+                  "value": 0.36,
+                  "duration": 6,
+                  "trigger": {
+                    "when": "COMBAT_START"
+                  },
+                  "target": "SELF"
+                }
+              ],
+              "description": "전투 시작 6초 동안 공격속도 +36%"
+            }
+          ]
+        },
+        {
+          "id": "s4_chase",
+          "name": "추격자",
+          "category": "SEASON",
+          "thresholds": [
+            3,
+            5,
+            7
+          ],
+          "emblemItemId": null,
+          "description": "네온 스프린트 전용 · 해당 특성 기물에게 적용 · 서로 다른 기물 3/5/7명",
+          "tiers": [
+            {
+              "count": 3,
+              "effects": [
+                {
+                  "kind": "DAMAGE_AMP",
+                  "value": 0.08,
+                  "trigger": {
+                    "when": "TARGET_HP_BELOW",
+                    "threshold": 0.5
+                  },
+                  "target": "SELF"
+                }
+              ],
+              "description": "체력이 절반 미만인 대상에게 피해 +8%"
+            },
+            {
+              "count": 5,
+              "effects": [
+                {
+                  "kind": "DAMAGE_AMP",
+                  "value": 0.16,
+                  "trigger": {
+                    "when": "TARGET_HP_BELOW",
+                    "threshold": 0.5
+                  },
+                  "target": "SELF"
+                }
+              ],
+              "description": "체력이 절반 미만인 대상에게 피해 +16%"
+            },
+            {
+              "count": 7,
+              "effects": [
+                {
+                  "kind": "DAMAGE_AMP",
+                  "value": 0.24,
+                  "trigger": {
+                    "when": "TARGET_HP_BELOW",
+                    "threshold": 0.5
+                  },
+                  "target": "SELF"
+                }
+              ],
+              "description": "체력이 절반 미만인 대상에게 피해 +24%"
+            }
+          ]
+        }
+      ],
+      "unitTraits": {
+        "daiichi_ruby": "s4_chrome",
+        "genuine": "s4_nitro",
+        "kawakami_princess": "s4_chase",
+        "narita_taishin": "s4_pulse",
+        "still_in_love": "s4_chrome",
+        "dantsu_flame": "s4_nitro",
+        "daring_heart": "s4_chase",
+        "ikuno_dictus": "s4_pulse",
+        "mejiro_palmer": "s4_chrome",
+        "no_reason": "s4_nitro",
+        "sirius_symboli": "s4_chase",
+        "sounds_of_earth": "s4_pulse",
+        "tosen_jordan": "s4_chrome",
+        "win_variation": "s4_nitro",
+        "admire_groove": "s4_chase",
+        "agnes_digital": "s4_pulse",
+        "fine_motion": "s4_chrome",
+        "phalaenopsis": "s4_nitro",
+        "curren_chan": "s4_pulse",
+        "lucky_lilac": "s4_chase",
+        "fenomeno": "s4_nitro",
+        "gold_ship": "s4_chase",
+        "mejiro_ramonu": "s4_chrome",
+        "sakura_chitose_o": "s4_pulse",
+        "eishin_flash": "s4_chase",
+        "furioso": "s4_pulse",
+        "ines_fujin": "s4_chrome",
+        "tap_dance_city": "s4_nitro",
+        "copano_rickey": "s4_chase",
+        "grass_wonder": "s4_pulse",
+        "narita_brian": "s4_chrome",
+        "forever_young": "s4_nitro",
+        "hokko_tarumae": "s4_chrome",
+        "transcend": "s4_nitro",
+        "tamamo_cross": "s4_chase",
+        "victoire_pisa": "s4_pulse",
+        "rhein_kraft": "s4_chrome",
+        "yamanin_zephyr": "s4_nitro",
+        "air_groove": "s4_chase",
+        "cesario": "s4_pulse",
+        "super_creek": "s4_chrome",
+        "gran_alegria": "s4_nitro",
+        "orfevre": "s4_chase",
+        "biwa_hayahide": "s4_pulse",
+        "fuji_kiseki": "s4_chrome",
+        "oguri_cap": "s4_nitro",
+        "smart_falcon": "s4_chase",
+        "chrono_genesis": "s4_pulse",
+        "symboli_kris_s": "s4_nitro",
+        "mayano_top_gun": "s4_chase",
+        "symboli_rudolf": "s4_pulse",
+        "zenno_rob_roy": "s4_chrome",
+        "almond_eye": "s4_pulse",
+        "special_week": "s4_chrome",
+        "daiwa_scarlet": "s4_nitro",
+        "mihono_bourbon": "s4_chase",
+        "taiki_shuttle": "s4_chrome",
+        "maruzensky": "s4_chase",
+        "kitasan_black": "s4_nitro",
+        "tm_opera_o": "s4_pulse"
+      }
+    },
+    {
+      "id": "s5",
+      "name": "크라운 피날레",
+      "subtitle": "성장과 역전, 왕관을 향한 마지막 승부",
+      "color": "#ff9daf",
+      "focus": [
+        "comeback",
+        "oikomi"
+      ],
+      "unitIds": [
+        "matikanetannhauser",
+        "royce_and_royce",
+        "nakayama_festa",
+        "yukino_bijin",
+        "matikanefukukitaru",
+        "kiseki",
+        "twin_turbo",
+        "fusaichi_pandora",
+        "curren_bouquetdor",
+        "mejiro_ardan",
+        "red_desire",
+        "seeking_the_pearl",
+        "manhattan_cafe",
+        "verxina",
+        "jungle_pocket",
+        "neo_universe",
+        "daitaku_helios",
+        "logotype",
+        "air_messiah",
+        "yaeno_muteki",
+        "durandal",
+        "furioso",
+        "agnes_digital",
+        "mejiro_bright",
+        "believe",
+        "gold_ship",
+        "nishino_flower",
+        "dream_journey",
+        "marvelous_sunday",
+        "meisho_doto",
+        "hishi_amazon",
+        "tanino_gimlet",
+        "forever_young",
+        "hokko_tarumae",
+        "grass_wonder",
+        "tamamo_cross",
+        "copano_rickey",
+        "transcend",
+        "epiphaneia",
+        "narita_brian",
+        "super_creek",
+        "fuji_kiseki",
+        "oguri_cap",
+        "smart_falcon",
+        "gran_alegria",
+        "symboli_kris_s",
+        "symboli_rudolf",
+        "chrono_genesis",
+        "biwa_hayahide",
+        "tokai_teio",
+        "mayano_top_gun",
+        "orfevre",
+        "taiki_shuttle",
+        "tm_opera_o",
+        "kitasan_black",
+        "special_week",
+        "maruzensky",
+        "almond_eye",
+        "mihono_bourbon",
+        "daiwa_scarlet"
+      ],
+      "traits": [
+        {
+          "id": "s5_crown",
+          "name": "왕관의 계승자",
+          "category": "SEASON",
+          "thresholds": [
+            3,
+            5,
+            7
+          ],
+          "emblemItemId": null,
+          "description": "크라운 피날레 전용 · 해당 특성 기물에게 적용 · 서로 다른 기물 3/5/7명",
+          "tiers": [
+            {
+              "count": 3,
+              "effects": [
+                {
+                  "kind": "STAT_MUL",
+                  "stat": "attackDamage",
+                  "value": 0.05,
+                  "target": "SELF"
+                },
+                {
+                  "kind": "STAT_ADD",
+                  "stat": "abilityPower",
+                  "value": 7,
+                  "target": "SELF"
+                }
+              ],
+              "description": "공격력 +5%, 주문력 +7"
+            },
+            {
+              "count": 5,
+              "effects": [
+                {
+                  "kind": "STAT_MUL",
+                  "stat": "attackDamage",
+                  "value": 0.1,
+                  "target": "SELF"
+                },
+                {
+                  "kind": "STAT_ADD",
+                  "stat": "abilityPower",
+                  "value": 14,
+                  "target": "SELF"
+                }
+              ],
+              "description": "공격력 +10%, 주문력 +14"
+            },
+            {
+              "count": 7,
+              "effects": [
+                {
+                  "kind": "STAT_MUL",
+                  "stat": "attackDamage",
+                  "value": 0.15000000000000002,
+                  "target": "SELF"
+                },
+                {
+                  "kind": "STAT_ADD",
+                  "stat": "abilityPower",
+                  "value": 21,
+                  "target": "SELF"
+                }
+              ],
+              "description": "공격력 +15%, 주문력 +21"
+            }
+          ]
+        },
+        {
+          "id": "s5_vow",
+          "name": "불굴의 맹세",
+          "category": "SEASON",
+          "thresholds": [
+            3,
+            5,
+            7
+          ],
+          "emblemItemId": null,
+          "description": "크라운 피날레 전용 · 해당 특성 기물에게 적용 · 서로 다른 기물 3/5/7명",
+          "tiers": [
+            {
+              "count": 3,
+              "effects": [
+                {
+                  "kind": "SHIELD_MAXHP_PCT",
+                  "value": 0.1,
+                  "duration": 5,
+                  "oncePerCombat": true,
+                  "trigger": {
+                    "when": "HP_BELOW",
+                    "threshold": 0.4
+                  },
+                  "target": "SELF"
+                }
+              ],
+              "description": "체력 40% 미만일 때 한 번, 5초 동안 최대 체력 10% 보호막"
+            },
+            {
+              "count": 5,
+              "effects": [
+                {
+                  "kind": "SHIELD_MAXHP_PCT",
+                  "value": 0.2,
+                  "duration": 5,
+                  "oncePerCombat": true,
+                  "trigger": {
+                    "when": "HP_BELOW",
+                    "threshold": 0.4
+                  },
+                  "target": "SELF"
+                }
+              ],
+              "description": "체력 40% 미만일 때 한 번, 5초 동안 최대 체력 20% 보호막"
+            },
+            {
+              "count": 7,
+              "effects": [
+                {
+                  "kind": "SHIELD_MAXHP_PCT",
+                  "value": 0.30000000000000004,
+                  "duration": 5,
+                  "oncePerCombat": true,
+                  "trigger": {
+                    "when": "HP_BELOW",
+                    "threshold": 0.4
+                  },
+                  "target": "SELF"
+                }
+              ],
+              "description": "체력 40% 미만일 때 한 번, 5초 동안 최대 체력 30% 보호막"
+            }
+          ]
+        },
+        {
+          "id": "s5_legacy",
+          "name": "영광의 유산",
+          "category": "SEASON",
+          "thresholds": [
+            3,
+            5,
+            7
+          ],
+          "emblemItemId": null,
+          "description": "크라운 피날레 전용 · 해당 특성 기물에게 적용 · 서로 다른 기물 3/5/7명",
+          "tiers": [
+            {
+              "count": 3,
+              "effects": [
+                {
+                  "kind": "HEAL_MAXHP_PCT",
+                  "value": 0.06,
+                  "trigger": {
+                    "when": "ON_TAKEDOWN_ASSIST"
+                  },
+                  "target": "SELF"
+                }
+              ],
+              "description": "처치 관여 시 자신의 최대 체력 6% 회복"
+            },
+            {
+              "count": 5,
+              "effects": [
+                {
+                  "kind": "HEAL_MAXHP_PCT",
+                  "value": 0.12,
+                  "trigger": {
+                    "when": "ON_TAKEDOWN_ASSIST"
+                  },
+                  "target": "SELF"
+                }
+              ],
+              "description": "처치 관여 시 자신의 최대 체력 12% 회복"
+            },
+            {
+              "count": 7,
+              "effects": [
+                {
+                  "kind": "HEAL_MAXHP_PCT",
+                  "value": 0.18,
+                  "trigger": {
+                    "when": "ON_TAKEDOWN_ASSIST"
+                  },
+                  "target": "SELF"
+                }
+              ],
+              "description": "처치 관여 시 자신의 최대 체력 18% 회복"
+            }
+          ]
+        },
+        {
+          "id": "s5_finale",
+          "name": "피날레",
+          "category": "SEASON",
+          "thresholds": [
+            3,
+            5,
+            7
+          ],
+          "emblemItemId": null,
+          "description": "크라운 피날레 전용 · 해당 특성 기물에게 적용 · 서로 다른 기물 3/5/7명",
+          "tiers": [
+            {
+              "count": 3,
+              "effects": [
+                {
+                  "kind": "STAT_MUL",
+                  "stat": "attackSpeed",
+                  "value": 0.08,
+                  "oncePerCombat": true,
+                  "trigger": {
+                    "when": "EVERY_SECONDS",
+                    "threshold": 10
+                  },
+                  "target": "SELF"
+                },
+                {
+                  "kind": "DAMAGE_AMP",
+                  "value": 0.04,
+                  "trigger": {
+                    "when": "AFTER_SECONDS",
+                    "threshold": 10
+                  },
+                  "target": "SELF"
+                }
+              ],
+              "description": "전투 10초 후 공격속도 +8%, 피해 +4%"
+            },
+            {
+              "count": 5,
+              "effects": [
+                {
+                  "kind": "STAT_MUL",
+                  "stat": "attackSpeed",
+                  "value": 0.16,
+                  "oncePerCombat": true,
+                  "trigger": {
+                    "when": "EVERY_SECONDS",
+                    "threshold": 10
+                  },
+                  "target": "SELF"
+                },
+                {
+                  "kind": "DAMAGE_AMP",
+                  "value": 0.08,
+                  "trigger": {
+                    "when": "AFTER_SECONDS",
+                    "threshold": 10
+                  },
+                  "target": "SELF"
+                }
+              ],
+              "description": "전투 10초 후 공격속도 +16%, 피해 +8%"
+            },
+            {
+              "count": 7,
+              "effects": [
+                {
+                  "kind": "STAT_MUL",
+                  "stat": "attackSpeed",
+                  "value": 0.24,
+                  "oncePerCombat": true,
+                  "trigger": {
+                    "when": "EVERY_SECONDS",
+                    "threshold": 10
+                  },
+                  "target": "SELF"
+                },
+                {
+                  "kind": "DAMAGE_AMP",
+                  "value": 0.12,
+                  "trigger": {
+                    "when": "AFTER_SECONDS",
+                    "threshold": 10
+                  },
+                  "target": "SELF"
+                }
+              ],
+              "description": "전투 10초 후 공격속도 +24%, 피해 +12%"
+            }
+          ]
+        }
+      ],
+      "unitTraits": {
+        "seeking_the_pearl": "s5_crown",
+        "verxina": "s5_vow",
+        "manhattan_cafe": "s5_legacy",
+        "curren_bouquetdor": "s5_finale",
+        "fusaichi_pandora": "s5_crown",
+        "kiseki": "s5_vow",
+        "matikanefukukitaru": "s5_legacy",
+        "matikanetannhauser": "s5_finale",
+        "mejiro_ardan": "s5_crown",
+        "nakayama_festa": "s5_vow",
+        "royce_and_royce": "s5_legacy",
+        "twin_turbo": "s5_finale",
+        "yukino_bijin": "s5_crown",
+        "red_desire": "s5_vow",
+        "agnes_digital": "s5_legacy",
+        "dream_journey": "s5_finale",
+        "durandal": "s5_vow",
+        "nishino_flower": "s5_crown",
+        "believe": "s5_legacy",
+        "gold_ship": "s5_finale",
+        "neo_universe": "s5_crown",
+        "air_messiah": "s5_vow",
+        "daitaku_helios": "s5_legacy",
+        "logotype": "s5_finale",
+        "yaeno_muteki": "s5_crown",
+        "furioso": "s5_legacy",
+        "jungle_pocket": "s5_finale",
+        "mejiro_bright": "s5_vow",
+        "copano_rickey": "s5_vow",
+        "grass_wonder": "s5_legacy",
+        "narita_brian": "s5_finale",
+        "forever_young": "s5_crown",
+        "hokko_tarumae": "s5_finale",
+        "transcend": "s5_crown",
+        "tamamo_cross": "s5_vow",
+        "hishi_amazon": "s5_legacy",
+        "tanino_gimlet": "s5_vow",
+        "epiphaneia": "s5_crown",
+        "marvelous_sunday": "s5_legacy",
+        "meisho_doto": "s5_finale",
+        "super_creek": "s5_crown",
+        "gran_alegria": "s5_vow",
+        "orfevre": "s5_legacy",
+        "tokai_teio": "s5_finale",
+        "biwa_hayahide": "s5_vow",
+        "fuji_kiseki": "s5_legacy",
+        "oguri_cap": "s5_finale",
+        "smart_falcon": "s5_crown",
+        "chrono_genesis": "s5_crown",
+        "symboli_kris_s": "s5_vow",
+        "mayano_top_gun": "s5_legacy",
+        "symboli_rudolf": "s5_finale",
+        "almond_eye": "s5_crown",
+        "special_week": "s5_vow",
+        "daiwa_scarlet": "s5_legacy",
+        "mihono_bourbon": "s5_finale",
+        "taiki_shuttle": "s5_vow",
+        "maruzensky": "s5_crown",
+        "kitasan_black": "s5_legacy",
+        "tm_opera_o": "s5_finale"
+      }
+    }
+  ]
+}

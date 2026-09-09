@@ -1,0 +1,106 @@
+{
+  "batchSize": 5,
+  "validation": "new portraits only; full app test/build not rerun",
+  "files": [
+    {
+      "id": "gold_city",
+      "size": [
+        256,
+        256
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "bounds": [
+        24,
+        6,
+        239,
+        250
+      ],
+      "sourceSha256": "f8936a2f17e837f752f0b07bb2cebeba533fedf647a3e87d5bbde9e2f49d0a9a",
+      "runtimeSha256": "6b7df06e412278dfd8fb7cd82a5a811ba7073daeeb016c9f12ce43443969bdeb",
+      "reference": "public/assets/characters/race/GoldCity-Race.png"
+    },
+    {
+      "id": "sakura_bakushin_o",
+      "size": [
+        256,
+        256
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "bounds": [
+        29,
+        6,
+        229,
+        250
+      ],
+      "sourceSha256": "54a7b4df1365aa4dd79ab76a4fd129eb6ab2ac9e0ead7ee41c8208a865498975",
+      "runtimeSha256": "23bb2c9ff3c3c614490d0211dcf615b9d3ddfbd447f46649ff629764dad19937",
+      "reference": "public/assets/characters/race/SakuraBakushinO-Race.png"
+    },
+    {
+      "id": "seeking_the_pearl",
+      "size": [
+        256,
+        256
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "bounds": [
+        7,
+        6,
+        248,
+        250
+      ],
+      "sourceSha256": "13485c0eaad40a6cbb91c3d8c9c649b8d802de50e134f203a69e0fb4fab40780",
+      "runtimeSha256": "703b67467d79cb4eeae8b478624bac45e9cf77d7b8005f51c71a190b56a6bca6",
+      "reference": "public/assets/characters/race/SeekingthePearl-Race.png"
+    },
+    {
+      "id": "shinko_windy",
+      "size": [
+        256,
+        256
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "bounds": [
+        38,
+        6,
+        227,
+        250
+      ],
+      "sourceSha256": "8208291de8b3198da10ead38932299e52cf3878a04c67cec129c97697c5b7098",
+      "runtimeSha256": "696f82ab99215fd5d19fee90bf75718a968a73ee3b7664aa66d26646cc2be72f",
+      "reference": "public/assets/characters/race/ShinkoWindy-Race.png"
+    },
+    {
+      "id": "sweep_tosho",
+      "size": [
+        256,
+        256
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "bounds": [
+        14,
+        6,
+        242,
+        250
+      ],
+      "sourceSha256": "908fa5c67d8a8e7d32739084f09782b1464b8652cbb5c80a33704558ac19c46b",
+      "runtimeSha256": "4c697f32f5af39666551a6195ceee9695d2fd387443891abd0df1e95523a6112",
+      "reference": "public/assets/characters/race/SweepTosho-Race.png"
+    }
+  ]
+}

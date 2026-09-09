@@ -1,0 +1,13 @@
+{
+  "approved": true,
+  "source": "clean-alpha.png",
+  "skillReview": "주도권 장악: 가슴에 힘 모으기 → 팔 벌리기 → 아군 전체 강화 신호 → 지휘 자세 회복. 직접 피해를 주는 폭발 동작으로 바꾸지 않음.",
+  "reviewedAt": "2026-09-09",
+  "checks": [
+    "Race costume and identity",
+    "24 poses with correct action rows",
+    "actual skill target and effect",
+    "transparent RGBA",
+    "Removed overflow effects; body poses preserved"
+  ]
+}

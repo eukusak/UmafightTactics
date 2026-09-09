@@ -1,0 +1,443 @@
+{
+  "format": "uft-baked-frames-v1",
+  "scale": 0.4094488188976378,
+  "anchor": [
+    64,
+    110
+  ],
+  "runtimeSha256": "6e96b1a49e319be5747e1de1b8f2500361983582fb794b8e12e1346dda65ae99",
+  "frames": [
+    {
+      "frame": 0,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/alternatives-20260909-desktop/mayano_top_gun/alpha.png",
+      "sourceSha256": "eac9c0c184941af6b26db278849e955f479bd2dcae51981bd121675a3a0e980d",
+      "crop": [
+        39,
+        19,
+        220,
+        259
+      ],
+      "destination": [
+        27,
+        12,
+        74,
+        98
+      ]
+    },
+    {
+      "frame": 1,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/alternatives-20260909-desktop/mayano_top_gun/alpha.png",
+      "sourceSha256": "eac9c0c184941af6b26db278849e955f479bd2dcae51981bd121675a3a0e980d",
+      "crop": [
+        287,
+        19,
+        467,
+        259
+      ],
+      "destination": [
+        155,
+        12,
+        74,
+        98
+      ]
+    },
+    {
+      "frame": 2,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/alternatives-20260909-desktop/mayano_top_gun/alpha.png",
+      "sourceSha256": "eac9c0c184941af6b26db278849e955f479bd2dcae51981bd121675a3a0e980d",
+      "crop": [
+        534,
+        19,
+        717,
+        259
+      ],
+      "destination": [
+        282,
+        12,
+        75,
+        98
+      ]
+    },
+    {
+      "frame": 3,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/alternatives-20260909-desktop/mayano_top_gun/alpha.png",
+      "sourceSha256": "eac9c0c184941af6b26db278849e955f479bd2dcae51981bd121675a3a0e980d",
+      "crop": [
+        786,
+        19,
+        967,
+        259
+      ],
+      "destination": [
+        411,
+        12,
+        74,
+        98
+      ]
+    },
+    {
+      "frame": 4,
+      "sourceFrame": 4,
+      "source": "docs/art-source/motions/alternatives-20260909-desktop/mayano_top_gun/alpha.png",
+      "sourceSha256": "eac9c0c184941af6b26db278849e955f479bd2dcae51981bd121675a3a0e980d",
+      "crop": [
+        36,
+        268,
+        233,
+        517
+      ],
+      "destination": [
+        23,
+        136,
+        81,
+        102
+      ]
+    },
+    {
+      "frame": 5,
+      "sourceFrame": 5,
+      "source": "docs/art-source/motions/alternatives-20260909-desktop/mayano_top_gun/alpha.png",
+      "sourceSha256": "eac9c0c184941af6b26db278849e955f479bd2dcae51981bd121675a3a0e980d",
+      "crop": [
+        286,
+        269,
+        491,
+        517
+      ],
+      "destination": [
+        150,
+        136,
+        84,
+        102
+      ]
+    },
+    {
+      "frame": 6,
+      "sourceFrame": 6,
+      "source": "docs/art-source/motions/alternatives-20260909-desktop/mayano_top_gun/alpha.png",
+      "sourceSha256": "eac9c0c184941af6b26db278849e955f479bd2dcae51981bd121675a3a0e980d",
+      "crop": [
+        528,
+        269,
+        742,
+        517
+      ],
+      "destination": [
+        276,
+        136,
+        88,
+        102
+      ]
+    },
+    {
+      "frame": 7,
+      "sourceFrame": 7,
+      "source": "docs/art-source/motions/alternatives-20260909-desktop/mayano_top_gun/alpha.png",
+      "sourceSha256": "eac9c0c184941af6b26db278849e955f479bd2dcae51981bd121675a3a0e980d",
+      "crop": [
+        788,
+        272,
+        992,
+        517
+      ],
+      "destination": [
+        406,
+        138,
+        84,
+        100
+      ]
+    },
+    {
+      "frame": 8,
+      "sourceFrame": 8,
+      "source": "docs/art-source/motions/alternatives-20260909-desktop/mayano_top_gun/alpha.png",
+      "sourceSha256": "eac9c0c184941af6b26db278849e955f479bd2dcae51981bd121675a3a0e980d",
+      "crop": [
+        35,
+        526,
+        222,
+        775
+      ],
+      "destination": [
+        25,
+        264,
+        77,
+        102
+      ]
+    },
+    {
+      "frame": 9,
+      "sourceFrame": 9,
+      "source": "docs/art-source/motions/alternatives-20260909-desktop/mayano_top_gun/alpha.png",
+      "sourceSha256": "eac9c0c184941af6b26db278849e955f479bd2dcae51981bd121675a3a0e980d",
+      "crop": [
+        281,
+        524,
+        482,
+        775
+      ],
+      "destination": [
+        151,
+        263,
+        82,
+        103
+      ]
+    },
+    {
+      "frame": 10,
+      "sourceFrame": 10,
+      "source": "docs/art-source/motions/alternatives-20260909-desktop/mayano_top_gun/alpha.png",
+      "sourceSha256": "eac9c0c184941af6b26db278849e955f479bd2dcae51981bd121675a3a0e980d",
+      "crop": [
+        527,
+        529,
+        755,
+        775
+      ],
+      "destination": [
+        273,
+        265,
+        93,
+        101
+      ]
+    },
+    {
+      "frame": 11,
+      "sourceFrame": 11,
+      "source": "docs/art-source/motions/alternatives-20260909-desktop/mayano_top_gun/alpha.png",
+      "sourceSha256": "eac9c0c184941af6b26db278849e955f479bd2dcae51981bd121675a3a0e980d",
+      "crop": [
+        795,
+        526,
+        984,
+        775
+      ],
+      "destination": [
+        409,
+        264,
+        77,
+        102
+      ]
+    },
+    {
+      "frame": 12,
+      "sourceFrame": 12,
+      "source": "docs/art-source/motions/alternatives-20260909-desktop/mayano_top_gun/alpha.png",
+      "sourceSha256": "eac9c0c184941af6b26db278849e955f479bd2dcae51981bd121675a3a0e980d",
+      "crop": [
+        35,
+        788,
+        221,
+        1038
+      ],
+      "destination": [
+        26,
+        392,
+        76,
+        102
+      ]
+    },
+    {
+      "frame": 13,
+      "sourceFrame": 13,
+      "source": "docs/art-source/motions/alternatives-20260909-desktop/mayano_top_gun/alpha.png",
+      "sourceSha256": "eac9c0c184941af6b26db278849e955f479bd2dcae51981bd121675a3a0e980d",
+      "crop": [
+        274,
+        784,
+        498,
+        1038
+      ],
+      "destination": [
+        146,
+        390,
+        92,
+        104
+      ]
+    },
+    {
+      "frame": 14,
+      "sourceFrame": 14,
+      "source": "docs/art-source/motions/alternatives-20260909-desktop/mayano_top_gun/alpha.png",
+      "sourceSha256": "eac9c0c184941af6b26db278849e955f479bd2dcae51981bd121675a3a0e980d",
+      "crop": [
+        525,
+        789,
+        765,
+        1038
+      ],
+      "destination": [
+        271,
+        392,
+        98,
+        102
+      ]
+    },
+    {
+      "frame": 15,
+      "sourceFrame": 15,
+      "source": "docs/art-source/motions/alternatives-20260909-desktop/mayano_top_gun/alpha.png",
+      "sourceSha256": "eac9c0c184941af6b26db278849e955f479bd2dcae51981bd121675a3a0e980d",
+      "crop": [
+        797,
+        792,
+        991,
+        1038
+      ],
+      "destination": [
+        408,
+        393,
+        79,
+        101
+      ]
+    },
+    {
+      "frame": 16,
+      "sourceFrame": 16,
+      "source": "docs/art-source/motions/alternatives-20260909-desktop/mayano_top_gun/alpha.png",
+      "sourceSha256": "eac9c0c184941af6b26db278849e955f479bd2dcae51981bd121675a3a0e980d",
+      "crop": [
+        41,
+        1043,
+        230,
+        1275
+      ],
+      "destination": [
+        25,
+        527,
+        77,
+        95
+      ]
+    },
+    {
+      "frame": 17,
+      "sourceFrame": 17,
+      "source": "docs/art-source/motions/alternatives-20260909-desktop/mayano_top_gun/alpha.png",
+      "sourceSha256": "eac9c0c184941af6b26db278849e955f479bd2dcae51981bd121675a3a0e980d",
+      "crop": [
+        289,
+        1064,
+        482,
+        1271
+      ],
+      "destination": [
+        152,
+        537,
+        79,
+        85
+      ]
+    },
+    {
+      "frame": 18,
+      "sourceFrame": 18,
+      "source": "docs/art-source/motions/alternatives-20260909-desktop/mayano_top_gun/alpha.png",
+      "sourceSha256": "eac9c0c184941af6b26db278849e955f479bd2dcae51981bd121675a3a0e980d",
+      "crop": [
+        534,
+        1106,
+        727,
+        1268
+      ],
+      "destination": [
+        280,
+        556,
+        79,
+        66
+      ]
+    },
+    {
+      "frame": 19,
+      "sourceFrame": 19,
+      "source": "docs/art-source/motions/alternatives-20260909-desktop/mayano_top_gun/alpha.png",
+      "sourceSha256": "eac9c0c184941af6b26db278849e955f479bd2dcae51981bd121675a3a0e980d",
+      "crop": [
+        768,
+        1157,
+        1005,
+        1266
+      ],
+      "destination": [
+        399,
+        577,
+        97,
+        45
+      ]
+    },
+    {
+      "frame": 20,
+      "sourceFrame": 20,
+      "source": "docs/art-source/motions/alternatives-20260909-desktop/mayano_top_gun/alpha.png",
+      "sourceSha256": "eac9c0c184941af6b26db278849e955f479bd2dcae51981bd121675a3a0e980d",
+      "crop": [
+        36,
+        1283,
+        218,
+        1526
+      ],
+      "destination": [
+        26,
+        651,
+        75,
+        99
+      ]
+    },
+    {
+      "frame": 21,
+      "sourceFrame": 21,
+      "source": "docs/art-source/motions/alternatives-20260909-desktop/mayano_top_gun/alpha.png",
+      "sourceSha256": "eac9c0c184941af6b26db278849e955f479bd2dcae51981bd121675a3a0e980d",
+      "crop": [
+        294,
+        1275,
+        481,
+        1526
+      ],
+      "destination": [
+        153,
+        647,
+        77,
+        103
+      ]
+    },
+    {
+      "frame": 22,
+      "sourceFrame": 22,
+      "source": "docs/art-source/motions/alternatives-20260909-desktop/mayano_top_gun/alpha.png",
+      "sourceSha256": "eac9c0c184941af6b26db278849e955f479bd2dcae51981bd121675a3a0e980d",
+      "crop": [
+        532,
+        1275,
+        728,
+        1519
+      ],
+      "destination": [
+        280,
+        650,
+        80,
+        100
+      ]
+    },
+    {
+      "frame": 23,
+      "sourceFrame": 23,
+      "source": "docs/art-source/motions/alternatives-20260909-desktop/mayano_top_gun/alpha.png",
+      "sourceSha256": "eac9c0c184941af6b26db278849e955f479bd2dcae51981bd121675a3a0e980d",
+      "crop": [
+        791,
+        1283,
+        974,
+        1526
+      ],
+      "destination": [
+        410,
+        651,
+        75,
+        99
+      ]
+    }
+  ]
+}

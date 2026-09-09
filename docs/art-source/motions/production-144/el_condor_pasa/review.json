@@ -1,0 +1,12 @@
+{
+  "approved": true,
+  "source": "alpha.png",
+  "skillReview": "낮은 체력 아군 회복: 몸을 낮춰 대상 확인 → 가슴 앞에 회복 기운 모음 → 양손으로 아군에게 전달 → 자기 방어 자세. 실제 회복과 아군 공격 강화.",
+  "reviewedAt": "2026-09-09",
+  "checks": [
+    "Race costume and identity",
+    "24 poses with correct action rows",
+    "actual skill target and effect",
+    "transparent RGBA"
+  ]
+}

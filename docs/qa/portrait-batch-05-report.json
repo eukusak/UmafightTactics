@@ -1,0 +1,106 @@
+{
+  "batchSize": 5,
+  "validation": "new portraits only; full app test/build not rerun",
+  "files": [
+    {
+      "id": "biwa_hayahide",
+      "size": [
+        256,
+        256
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "bounds": [
+        25,
+        6,
+        230,
+        250
+      ],
+      "sourceSha256": "2816164d2920d611a4059baa3a61e541413ce0501caf0505327222b945d28016",
+      "runtimeSha256": "f80beb38a42679fa598044f533f710eb7852529c32cfaa933674af4e12241bb4",
+      "reference": "public/assets/characters/race/BiwaHayahide-Race.png"
+    },
+    {
+      "id": "mayano_top_gun",
+      "size": [
+        256,
+        256
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "bounds": [
+        14,
+        6,
+        244,
+        250
+      ],
+      "sourceSha256": "d4c8240c2aae261ee7ec2a98f5efc05fd6ec2d74052a15619d2b7a611952cf26",
+      "runtimeSha256": "11339902fe0be56205e8a845598e12e9dbac418aff15ff8596a754b5fd96221b",
+      "reference": "public/assets/characters/race/MayanoTopGun-Race.png"
+    },
+    {
+      "id": "mejiro_ryan",
+      "size": [
+        256,
+        256
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "bounds": [
+        33,
+        6,
+        222,
+        250
+      ],
+      "sourceSha256": "47a53259c03ee7258f3a2bb25e59b0f95b6d0a4ad653a01bb90619daefe33176",
+      "runtimeSha256": "37eb417a90b956ee58b355869b2bb1b0002ccc3b87c9242cca9c0e72c9e52438",
+      "reference": "public/assets/characters/race/MejiroRyan-Race.png"
+    },
+    {
+      "id": "hishi_akebono",
+      "size": [
+        256,
+        256
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "bounds": [
+        10,
+        6,
+        246,
+        250
+      ],
+      "sourceSha256": "c0d3c26de25976ad2dfb140aecf46988b6d20fb1ed75a6da2e02bbd1e0cc6c83",
+      "runtimeSha256": "e98d72a6b0afedf3c6e5db4767ddd680e338b98967af6023f79390175016341e",
+      "reference": "public/assets/characters/race/HishiAkebono-Race.png"
+    },
+    {
+      "id": "yukino_bijin",
+      "size": [
+        256,
+        256
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "bounds": [
+        49,
+        6,
+        228,
+        250
+      ],
+      "sourceSha256": "1e8addb59992c64f612b3daa64554851110c66135761a58301074cc4f206466f",
+      "runtimeSha256": "90e55ff00e3c27910632fb1f7fdab81c2200c47ad3c3369417cd5115cba8cbe0",
+      "reference": "public/assets/characters/race/YukinoBijin-Race.png"
+    }
+  ]
+}

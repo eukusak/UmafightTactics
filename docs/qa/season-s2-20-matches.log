@@ -1,0 +1,56 @@
+
+> umafight-tactics@1.0.0 simulate
+> tsx scripts/simulate.ts --season s2 --matches 20 --seed 20260909
+
+Season s2: 별빛 오케스트라, 60 units
+  2/20 matches
+  4/20 matches
+  6/20 matches
+  8/20 matches
+  10/20 matches
+  12/20 matches
+  14/20 matches
+  16/20 matches
+  18/20 matches
+  20/20 matches
+simulate — 20 matches in 34.1s (seed base 20260909)
+
+  average end stage      5.90
+  average rounds/match   32.8
+  average gold held      6.7
+  average player damage  9.3
+  battles                2680 (draws 2, overtime 540)
+  pool conservation      OK
+
+  3-star completions per match:
+    1-cost  1.50
+    2-cost  0.80
+    3-cost  0.15
+    4-cost  0.00
+    5-cost  0.00
+
+  average placement by AI profile:
+    FAST_LEVEL   3.20
+    BALANCED     4.28
+    AD_FOCUS     4.48
+    REROLL       4.64
+    AP_FOCUS     4.80
+    ECONOMY      5.05
+    TRAIT_FOCUS  5.26
+
+  trait presence (top4 / top1 share):
+    중거리          7.5% / 30.0%  <-- over 25% top1 share
+    하모니          3.8% / 15.0%
+    선행           3.8% / 15.0%
+    별빛 아리아       2.5% / 10.0%
+    리듬 메이커       1.3% / 5.0%
+    도주           1.3% / 5.0%
+    선입           1.3% / 5.0%
+    마일러          1.3% / 5.0%
+    스테이어         1.3% / 5.0%
+    명가           1.3% / 5.0%
+
+  warnings:
+    ! trait 중거리 top1 share 30.0% exceeds 25%
+
+simulate — OK

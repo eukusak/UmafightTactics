@@ -34,7 +34,7 @@ jobs:
           npm run sync:data
           npm run data:build
           npm run data:validate
-          git diff --exit-code -- src/data/generated src/data/source
+          git diff --exit-code -- src/data/generated src/data/source public/assets/traits
 
       - name: Typecheck
         run: npm run typecheck
@@ -46,10 +46,21 @@ jobs:
         run: npm test
 
       - name: Balance simulation
-        run: npm run simulate -- --matches 200
+        run: |
+          for season in s1 s2 s3 s4 s5; do
+            npm run simulate -- --season "$season" --matches 40
+          done
 
       - name: Art manifest report
-        run: npm run check:art
+        run: STRICT_ART=1 npm run check:art
+
+      - name: Motion briefs stay aligned with skills
+        run: |
+          npm run art:briefs
+          git diff --exit-code -- docs/art-source/motions/briefs.json
+
+      - name: TFT comparison report (not a parity pass gate)
+        run: npm run audit:tft
 
       - name: Build
         run: npm run build
@@ -67,3 +78,30 @@ jobs:
           done
           echo "server did not respond in time" >&2
           exit 1
+
+  browser:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: ".node-version"
+          cache: "npm"
+      - name: Install
+        run: npm ci
+      - name: Build
+        run: npm run build
+      - name: Install browser for season UI checks
+        run: npx playwright install --with-deps chromium
+      - name: Season UI, artwork and online smoke checks
+        run: npm run test:ui
+      - name: Save browser report and screenshots
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: season-ui-report
+          path: |
+            playwright-report/
+            test-results/
+          retention-days: 14

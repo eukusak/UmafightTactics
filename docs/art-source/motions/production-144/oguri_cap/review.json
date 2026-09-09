@@ -1,0 +1,12 @@
+{
+  "approved": true,
+  "source": "alpha.png",
+  "skillReview": "범위 마법 공격: 허리에서 기운 모으기 → 가슴 앞 응축 → 양손으로 적 무리에 방출 → 방어 자세 회복. 실제 범위 피해와 자기 강화에 맞춤.",
+  "reviewedAt": "2026-09-09",
+  "checks": [
+    "Race costume and identity",
+    "24 poses with correct action rows",
+    "actual skill target and effect",
+    "transparent RGBA"
+  ]
+}

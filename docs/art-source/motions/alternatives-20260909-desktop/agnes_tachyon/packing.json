@@ -1,0 +1,443 @@
+{
+  "format": "uft-baked-frames-v1",
+  "scale": 0.41434262948207173,
+  "anchor": [
+    64,
+    110
+  ],
+  "runtimeSha256": "0f3dad3aae379cbc2307a775f47fca2d23a1c4c66005ab2f589d7b88d6f2224f",
+  "frames": [
+    {
+      "frame": 0,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/alternatives-20260909-desktop/agnes_tachyon/alpha.png",
+      "sourceSha256": "844c36c3f572fb579f636cd37d762d93988ff2b22eb5e8c505a0889fe3068723",
+      "crop": [
+        53,
+        13,
+        232,
+        251
+      ],
+      "destination": [
+        27,
+        11,
+        74,
+        99
+      ]
+    },
+    {
+      "frame": 1,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/alternatives-20260909-desktop/agnes_tachyon/alpha.png",
+      "sourceSha256": "844c36c3f572fb579f636cd37d762d93988ff2b22eb5e8c505a0889fe3068723",
+      "crop": [
+        301,
+        14,
+        473,
+        251
+      ],
+      "destination": [
+        156,
+        12,
+        71,
+        98
+      ]
+    },
+    {
+      "frame": 2,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/alternatives-20260909-desktop/agnes_tachyon/alpha.png",
+      "sourceSha256": "844c36c3f572fb579f636cd37d762d93988ff2b22eb5e8c505a0889fe3068723",
+      "crop": [
+        557,
+        13,
+        723,
+        251
+      ],
+      "destination": [
+        285,
+        11,
+        69,
+        99
+      ]
+    },
+    {
+      "frame": 3,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/alternatives-20260909-desktop/agnes_tachyon/alpha.png",
+      "sourceSha256": "844c36c3f572fb579f636cd37d762d93988ff2b22eb5e8c505a0889fe3068723",
+      "crop": [
+        811,
+        14,
+        977,
+        251
+      ],
+      "destination": [
+        413,
+        12,
+        69,
+        98
+      ]
+    },
+    {
+      "frame": 4,
+      "sourceFrame": 4,
+      "source": "docs/art-source/motions/alternatives-20260909-desktop/agnes_tachyon/alpha.png",
+      "sourceSha256": "844c36c3f572fb579f636cd37d762d93988ff2b22eb5e8c505a0889fe3068723",
+      "crop": [
+        45,
+        261,
+        256,
+        501
+      ],
+      "destination": [
+        20,
+        139,
+        87,
+        99
+      ]
+    },
+    {
+      "frame": 5,
+      "sourceFrame": 5,
+      "source": "docs/art-source/motions/alternatives-20260909-desktop/agnes_tachyon/alpha.png",
+      "sourceSha256": "844c36c3f572fb579f636cd37d762d93988ff2b22eb5e8c505a0889fe3068723",
+      "crop": [
+        292,
+        262,
+        495,
+        503
+      ],
+      "destination": [
+        150,
+        138,
+        84,
+        100
+      ]
+    },
+    {
+      "frame": 6,
+      "sourceFrame": 6,
+      "source": "docs/art-source/motions/alternatives-20260909-desktop/agnes_tachyon/alpha.png",
+      "sourceSha256": "844c36c3f572fb579f636cd37d762d93988ff2b22eb5e8c505a0889fe3068723",
+      "crop": [
+        541,
+        258,
+        753,
+        495
+      ],
+      "destination": [
+        276,
+        140,
+        88,
+        98
+      ]
+    },
+    {
+      "frame": 7,
+      "sourceFrame": 7,
+      "source": "docs/art-source/motions/alternatives-20260909-desktop/agnes_tachyon/alpha.png",
+      "sourceSha256": "844c36c3f572fb579f636cd37d762d93988ff2b22eb5e8c505a0889fe3068723",
+      "crop": [
+        797,
+        261,
+        1002,
+        502
+      ],
+      "destination": [
+        405,
+        138,
+        85,
+        100
+      ]
+    },
+    {
+      "frame": 8,
+      "sourceFrame": 8,
+      "source": "docs/art-source/motions/alternatives-20260909-desktop/agnes_tachyon/alpha.png",
+      "sourceSha256": "844c36c3f572fb579f636cd37d762d93988ff2b22eb5e8c505a0889fe3068723",
+      "crop": [
+        43,
+        509,
+        256,
+        756
+      ],
+      "destination": [
+        20,
+        264,
+        88,
+        102
+      ]
+    },
+    {
+      "frame": 9,
+      "sourceFrame": 9,
+      "source": "docs/art-source/motions/alternatives-20260909-desktop/agnes_tachyon/alpha.png",
+      "sourceSha256": "844c36c3f572fb579f636cd37d762d93988ff2b22eb5e8c505a0889fe3068723",
+      "crop": [
+        304,
+        509,
+        473,
+        757
+      ],
+      "destination": [
+        157,
+        263,
+        70,
+        103
+      ]
+    },
+    {
+      "frame": 10,
+      "sourceFrame": 10,
+      "source": "docs/art-source/motions/alternatives-20260909-desktop/agnes_tachyon/alpha.png",
+      "sourceSha256": "844c36c3f572fb579f636cd37d762d93988ff2b22eb5e8c505a0889fe3068723",
+      "crop": [
+        558,
+        510,
+        764,
+        756
+      ],
+      "destination": [
+        277,
+        264,
+        85,
+        102
+      ]
+    },
+    {
+      "frame": 11,
+      "sourceFrame": 11,
+      "source": "docs/art-source/motions/alternatives-20260909-desktop/agnes_tachyon/alpha.png",
+      "sourceSha256": "844c36c3f572fb579f636cd37d762d93988ff2b22eb5e8c505a0889fe3068723",
+      "crop": [
+        813,
+        509,
+        980,
+        754
+      ],
+      "destination": [
+        413,
+        264,
+        69,
+        102
+      ]
+    },
+    {
+      "frame": 12,
+      "sourceFrame": 12,
+      "source": "docs/art-source/motions/alternatives-20260909-desktop/agnes_tachyon/alpha.png",
+      "sourceSha256": "844c36c3f572fb579f636cd37d762d93988ff2b22eb5e8c505a0889fe3068723",
+      "crop": [
+        45,
+        765,
+        262,
+        1013
+      ],
+      "destination": [
+        19,
+        391,
+        90,
+        103
+      ]
+    },
+    {
+      "frame": 13,
+      "sourceFrame": 13,
+      "source": "docs/art-source/motions/alternatives-20260909-desktop/agnes_tachyon/alpha.png",
+      "sourceSha256": "844c36c3f572fb579f636cd37d762d93988ff2b22eb5e8c505a0889fe3068723",
+      "crop": [
+        286,
+        775,
+        508,
+        1013
+      ],
+      "destination": [
+        146,
+        395,
+        92,
+        99
+      ]
+    },
+    {
+      "frame": 14,
+      "sourceFrame": 14,
+      "source": "docs/art-source/motions/alternatives-20260909-desktop/agnes_tachyon/alpha.png",
+      "sourceSha256": "844c36c3f572fb579f636cd37d762d93988ff2b22eb5e8c505a0889fe3068723",
+      "crop": [
+        541,
+        789,
+        775,
+        1013
+      ],
+      "destination": [
+        271,
+        401,
+        97,
+        93
+      ]
+    },
+    {
+      "frame": 15,
+      "sourceFrame": 15,
+      "source": "docs/art-source/motions/alternatives-20260909-desktop/agnes_tachyon/alpha.png",
+      "sourceSha256": "844c36c3f572fb579f636cd37d762d93988ff2b22eb5e8c505a0889fe3068723",
+      "crop": [
+        808,
+        773,
+        993,
+        1014
+      ],
+      "destination": [
+        409,
+        394,
+        77,
+        100
+      ]
+    },
+    {
+      "frame": 16,
+      "sourceFrame": 16,
+      "source": "docs/art-source/motions/alternatives-20260909-desktop/agnes_tachyon/alpha.png",
+      "sourceSha256": "844c36c3f572fb579f636cd37d762d93988ff2b22eb5e8c505a0889fe3068723",
+      "crop": [
+        56,
+        1023,
+        230,
+        1272
+      ],
+      "destination": [
+        28,
+        519,
+        72,
+        103
+      ]
+    },
+    {
+      "frame": 17,
+      "sourceFrame": 17,
+      "source": "docs/art-source/motions/alternatives-20260909-desktop/agnes_tachyon/alpha.png",
+      "sourceSha256": "844c36c3f572fb579f636cd37d762d93988ff2b22eb5e8c505a0889fe3068723",
+      "crop": [
+        301,
+        1040,
+        493,
+        1263
+      ],
+      "destination": [
+        152,
+        530,
+        80,
+        92
+      ]
+    },
+    {
+      "frame": 18,
+      "sourceFrame": 18,
+      "source": "docs/art-source/motions/alternatives-20260909-desktop/agnes_tachyon/alpha.png",
+      "sourceSha256": "844c36c3f572fb579f636cd37d762d93988ff2b22eb5e8c505a0889fe3068723",
+      "crop": [
+        527,
+        1083,
+        736,
+        1261
+      ],
+      "destination": [
+        276,
+        548,
+        87,
+        74
+      ]
+    },
+    {
+      "frame": 19,
+      "sourceFrame": 19,
+      "source": "docs/art-source/motions/alternatives-20260909-desktop/agnes_tachyon/alpha.png",
+      "sourceSha256": "844c36c3f572fb579f636cd37d762d93988ff2b22eb5e8c505a0889fe3068723",
+      "crop": [
+        759,
+        1130,
+        1017,
+        1256
+      ],
+      "destination": [
+        394,
+        570,
+        107,
+        52
+      ]
+    },
+    {
+      "frame": 20,
+      "sourceFrame": 20,
+      "source": "docs/art-source/motions/alternatives-20260909-desktop/agnes_tachyon/alpha.png",
+      "sourceSha256": "844c36c3f572fb579f636cd37d762d93988ff2b22eb5e8c505a0889fe3068723",
+      "crop": [
+        76,
+        1275,
+        230,
+        1523
+      ],
+      "destination": [
+        32,
+        647,
+        64,
+        103
+      ]
+    },
+    {
+      "frame": 21,
+      "sourceFrame": 21,
+      "source": "docs/art-source/motions/alternatives-20260909-desktop/agnes_tachyon/alpha.png",
+      "sourceSha256": "844c36c3f572fb579f636cd37d762d93988ff2b22eb5e8c505a0889fe3068723",
+      "crop": [
+        308,
+        1272,
+        476,
+        1523
+      ],
+      "destination": [
+        157,
+        646,
+        70,
+        104
+      ]
+    },
+    {
+      "frame": 22,
+      "sourceFrame": 22,
+      "source": "docs/art-source/motions/alternatives-20260909-desktop/agnes_tachyon/alpha.png",
+      "sourceSha256": "844c36c3f572fb579f636cd37d762d93988ff2b22eb5e8c505a0889fe3068723",
+      "crop": [
+        547,
+        1272,
+        735,
+        1523
+      ],
+      "destination": [
+        281,
+        646,
+        78,
+        104
+      ]
+    },
+    {
+      "frame": 23,
+      "sourceFrame": 23,
+      "source": "docs/art-source/motions/alternatives-20260909-desktop/agnes_tachyon/alpha.png",
+      "sourceSha256": "844c36c3f572fb579f636cd37d762d93988ff2b22eb5e8c505a0889fe3068723",
+      "crop": [
+        812,
+        1272,
+        977,
+        1523
+      ],
+      "destination": [
+        414,
+        646,
+        68,
+        104
+      ]
+    }
+  ]
+}

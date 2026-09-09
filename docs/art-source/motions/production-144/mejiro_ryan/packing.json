@@ -1,0 +1,443 @@
+{
+  "format": "uft-baked-frames-v1",
+  "scale": 0.42105263157894735,
+  "anchor": [
+    64,
+    110
+  ],
+  "runtimeSha256": "7af4d35462620a3f47f7c0238e1616f47178281e025ea32ef503048ffcb10458",
+  "frames": [
+    {
+      "frame": 0,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/production-144/mejiro_ryan/alpha.png",
+      "sourceSha256": "8c1e2f6575e3a0b51383d3dc9e0ffe9b0962f7c8b757319dda714307920839e2",
+      "crop": [
+        73,
+        25,
+        204,
+        267
+      ],
+      "destination": [
+        36,
+        8,
+        55,
+        102
+      ]
+    },
+    {
+      "frame": 1,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/production-144/mejiro_ryan/alpha.png",
+      "sourceSha256": "8c1e2f6575e3a0b51383d3dc9e0ffe9b0962f7c8b757319dda714307920839e2",
+      "crop": [
+        326,
+        24,
+        462,
+        267
+      ],
+      "destination": [
+        163,
+        8,
+        57,
+        102
+      ]
+    },
+    {
+      "frame": 2,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/production-144/mejiro_ryan/alpha.png",
+      "sourceSha256": "8c1e2f6575e3a0b51383d3dc9e0ffe9b0962f7c8b757319dda714307920839e2",
+      "crop": [
+        586,
+        26,
+        717,
+        267
+      ],
+      "destination": [
+        292,
+        9,
+        55,
+        101
+      ]
+    },
+    {
+      "frame": 3,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/production-144/mejiro_ryan/alpha.png",
+      "sourceSha256": "8c1e2f6575e3a0b51383d3dc9e0ffe9b0962f7c8b757319dda714307920839e2",
+      "crop": [
+        841,
+        26,
+        972,
+        267
+      ],
+      "destination": [
+        420,
+        9,
+        55,
+        101
+      ]
+    },
+    {
+      "frame": 4,
+      "sourceFrame": 4,
+      "source": "docs/art-source/motions/production-144/mejiro_ryan/alpha.png",
+      "sourceSha256": "8c1e2f6575e3a0b51383d3dc9e0ffe9b0962f7c8b757319dda714307920839e2",
+      "crop": [
+        53,
+        295,
+        212,
+        528
+      ],
+      "destination": [
+        30,
+        140,
+        67,
+        98
+      ]
+    },
+    {
+      "frame": 5,
+      "sourceFrame": 5,
+      "source": "docs/art-source/motions/production-144/mejiro_ryan/alpha.png",
+      "sourceSha256": "8c1e2f6575e3a0b51383d3dc9e0ffe9b0962f7c8b757319dda714307920839e2",
+      "crop": [
+        294,
+        304,
+        476,
+        528
+      ],
+      "destination": [
+        153,
+        144,
+        77,
+        94
+      ]
+    },
+    {
+      "frame": 6,
+      "sourceFrame": 6,
+      "source": "docs/art-source/motions/production-144/mejiro_ryan/alpha.png",
+      "sourceSha256": "8c1e2f6575e3a0b51383d3dc9e0ffe9b0962f7c8b757319dda714307920839e2",
+      "crop": [
+        563,
+        295,
+        737,
+        528
+      ],
+      "destination": [
+        283,
+        140,
+        73,
+        98
+      ]
+    },
+    {
+      "frame": 7,
+      "sourceFrame": 7,
+      "source": "docs/art-source/motions/production-144/mejiro_ryan/alpha.png",
+      "sourceSha256": "8c1e2f6575e3a0b51383d3dc9e0ffe9b0962f7c8b757319dda714307920839e2",
+      "crop": [
+        816,
+        302,
+        997,
+        528
+      ],
+      "destination": [
+        410,
+        143,
+        76,
+        95
+      ]
+    },
+    {
+      "frame": 8,
+      "sourceFrame": 8,
+      "source": "docs/art-source/motions/production-144/mejiro_ryan/alpha.png",
+      "sourceSha256": "8c1e2f6575e3a0b51383d3dc9e0ffe9b0962f7c8b757319dda714307920839e2",
+      "crop": [
+        47,
+        542,
+        202,
+        777
+      ],
+      "destination": [
+        31,
+        267,
+        65,
+        99
+      ]
+    },
+    {
+      "frame": 9,
+      "sourceFrame": 9,
+      "source": "docs/art-source/motions/production-144/mejiro_ryan/alpha.png",
+      "sourceSha256": "8c1e2f6575e3a0b51383d3dc9e0ffe9b0962f7c8b757319dda714307920839e2",
+      "crop": [
+        302,
+        542,
+        475,
+        777
+      ],
+      "destination": [
+        155,
+        267,
+        73,
+        99
+      ]
+    },
+    {
+      "frame": 10,
+      "sourceFrame": 10,
+      "source": "docs/art-source/motions/production-144/mejiro_ryan/alpha.png",
+      "sourceSha256": "8c1e2f6575e3a0b51383d3dc9e0ffe9b0962f7c8b757319dda714307920839e2",
+      "crop": [
+        556,
+        541,
+        743,
+        777
+      ],
+      "destination": [
+        280,
+        267,
+        79,
+        99
+      ]
+    },
+    {
+      "frame": 11,
+      "sourceFrame": 11,
+      "source": "docs/art-source/motions/production-144/mejiro_ryan/alpha.png",
+      "sourceSha256": "8c1e2f6575e3a0b51383d3dc9e0ffe9b0962f7c8b757319dda714307920839e2",
+      "crop": [
+        830,
+        542,
+        973,
+        777
+      ],
+      "destination": [
+        418,
+        267,
+        60,
+        99
+      ]
+    },
+    {
+      "frame": 12,
+      "sourceFrame": 12,
+      "source": "docs/art-source/motions/production-144/mejiro_ryan/alpha.png",
+      "sourceSha256": "8c1e2f6575e3a0b51383d3dc9e0ffe9b0962f7c8b757319dda714307920839e2",
+      "crop": [
+        29,
+        839,
+        231,
+        1012
+      ],
+      "destination": [
+        21,
+        421,
+        85,
+        73
+      ]
+    },
+    {
+      "frame": 13,
+      "sourceFrame": 13,
+      "source": "docs/art-source/motions/production-144/mejiro_ryan/alpha.png",
+      "sourceSha256": "8c1e2f6575e3a0b51383d3dc9e0ffe9b0962f7c8b757319dda714307920839e2",
+      "crop": [
+        281,
+        821,
+        508,
+        1012
+      ],
+      "destination": [
+        144,
+        414,
+        96,
+        80
+      ]
+    },
+    {
+      "frame": 14,
+      "sourceFrame": 14,
+      "source": "docs/art-source/motions/production-144/mejiro_ryan/alpha.png",
+      "sourceSha256": "8c1e2f6575e3a0b51383d3dc9e0ffe9b0962f7c8b757319dda714307920839e2",
+      "crop": [
+        541,
+        851,
+        773,
+        1008
+      ],
+      "destination": [
+        271,
+        428,
+        98,
+        66
+      ]
+    },
+    {
+      "frame": 15,
+      "sourceFrame": 15,
+      "source": "docs/art-source/motions/production-144/mejiro_ryan/alpha.png",
+      "sourceSha256": "8c1e2f6575e3a0b51383d3dc9e0ffe9b0962f7c8b757319dda714307920839e2",
+      "crop": [
+        806,
+        811,
+        992,
+        1013
+      ],
+      "destination": [
+        409,
+        409,
+        78,
+        85
+      ]
+    },
+    {
+      "frame": 16,
+      "sourceFrame": 16,
+      "source": "docs/art-source/motions/production-144/mejiro_ryan/alpha.png",
+      "sourceSha256": "8c1e2f6575e3a0b51383d3dc9e0ffe9b0962f7c8b757319dda714307920839e2",
+      "crop": [
+        49,
+        1044,
+        233,
+        1263
+      ],
+      "destination": [
+        25,
+        530,
+        77,
+        92
+      ]
+    },
+    {
+      "frame": 17,
+      "sourceFrame": 17,
+      "source": "docs/art-source/motions/production-144/mejiro_ryan/alpha.png",
+      "sourceSha256": "8c1e2f6575e3a0b51383d3dc9e0ffe9b0962f7c8b757319dda714307920839e2",
+      "crop": [
+        298,
+        1081,
+        490,
+        1263
+      ],
+      "destination": [
+        151,
+        545,
+        81,
+        77
+      ]
+    },
+    {
+      "frame": 18,
+      "sourceFrame": 18,
+      "source": "docs/art-source/motions/production-144/mejiro_ryan/alpha.png",
+      "sourceSha256": "8c1e2f6575e3a0b51383d3dc9e0ffe9b0962f7c8b757319dda714307920839e2",
+      "crop": [
+        571,
+        1080,
+        731,
+        1263
+      ],
+      "destination": [
+        286,
+        545,
+        67,
+        77
+      ]
+    },
+    {
+      "frame": 19,
+      "sourceFrame": 19,
+      "source": "docs/art-source/motions/production-144/mejiro_ryan/alpha.png",
+      "sourceSha256": "8c1e2f6575e3a0b51383d3dc9e0ffe9b0962f7c8b757319dda714307920839e2",
+      "crop": [
+        792,
+        1149,
+        1011,
+        1262
+      ],
+      "destination": [
+        402,
+        574,
+        92,
+        48
+      ]
+    },
+    {
+      "frame": 20,
+      "sourceFrame": 20,
+      "source": "docs/art-source/motions/production-144/mejiro_ryan/alpha.png",
+      "sourceSha256": "8c1e2f6575e3a0b51383d3dc9e0ffe9b0962f7c8b757319dda714307920839e2",
+      "crop": [
+        71,
+        1282,
+        204,
+        1526
+      ],
+      "destination": [
+        36,
+        647,
+        56,
+        103
+      ]
+    },
+    {
+      "frame": 21,
+      "sourceFrame": 21,
+      "source": "docs/art-source/motions/production-144/mejiro_ryan/alpha.png",
+      "sourceSha256": "8c1e2f6575e3a0b51383d3dc9e0ffe9b0962f7c8b757319dda714307920839e2",
+      "crop": [
+        319,
+        1280,
+        459,
+        1527
+      ],
+      "destination": [
+        162,
+        646,
+        59,
+        104
+      ]
+    },
+    {
+      "frame": 22,
+      "sourceFrame": 22,
+      "source": "docs/art-source/motions/production-144/mejiro_ryan/alpha.png",
+      "sourceSha256": "8c1e2f6575e3a0b51383d3dc9e0ffe9b0962f7c8b757319dda714307920839e2",
+      "crop": [
+        577,
+        1283,
+        713,
+        1524
+      ],
+      "destination": [
+        291,
+        649,
+        57,
+        101
+      ]
+    },
+    {
+      "frame": 23,
+      "sourceFrame": 23,
+      "source": "docs/art-source/motions/production-144/mejiro_ryan/alpha.png",
+      "sourceSha256": "8c1e2f6575e3a0b51383d3dc9e0ffe9b0962f7c8b757319dda714307920839e2",
+      "crop": [
+        833,
+        1286,
+        970,
+        1527
+      ],
+      "destination": [
+        419,
+        649,
+        58,
+        101
+      ]
+    }
+  ]
+}

@@ -24,7 +24,7 @@ export type HistoryTrait =
   | 'emperor'
   | 'record_breaker'
   | 'iron_horse';
-export type TraitId = RunStyle | DistanceTrait | SurfaceTrait | HistoryTrait;
+export type TraitId = RunStyle | DistanceTrait | SurfaceTrait | HistoryTrait | `${import('./seasons/catalog').SeasonId}_${string}`;
 
 /** Mutable combat stats. Everything the EffectSystem is allowed to touch. */
 export type BattleStats = {
@@ -85,6 +85,8 @@ export type EffectDef = {
   duration?: number;
   /** Seconds between ticks for periodic effects. */
   interval?: number;
+  /** Delay after the skill's first release, in seconds (skills only). */
+  delay?: number;
   /** Stack ceiling for stacking effects. */
   maxStacks?: number;
   /** Radius in hexes for area effects. */
@@ -190,6 +192,8 @@ export type SkillDef = {
   effects: EffectDef[];
   vfxKey: string;
   description: string;
+  /** Shared by simulation, motion playback and the preview. */
+  choreography?: { windup: number; recovery: number; pulseInterval: number; color: string; variant: string };
 };
 
 export type UnitDef = {
@@ -243,7 +247,7 @@ export type TraitTier = {
 export type TraitDef = {
   id: TraitId;
   name: string;
-  category: 'STYLE' | 'DISTANCE' | 'SURFACE' | 'HISTORY';
+  category: 'STYLE' | 'DISTANCE' | 'SURFACE' | 'HISTORY' | 'SEASON';
   /** Breakpoint unit counts, ascending. */
   thresholds: number[];
   tiers: TraitTier[];

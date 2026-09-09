@@ -1,0 +1,443 @@
+{
+  "format": "uft-baked-frames-v1",
+  "scale": 0.4279835390946502,
+  "anchor": [
+    64,
+    110
+  ],
+  "runtimeSha256": "072d1436cb17d868442b4d4def0cc97b7642ddd66dddc3eaa31936facd596f58",
+  "frames": [
+    {
+      "frame": 0,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/production-144/fuji_kiseki/alpha.png",
+      "sourceSha256": "75414088a4c006b57b76a72c951f893e463ca1dcb206691c3b23af349084597e",
+      "crop": [
+        74,
+        23,
+        222,
+        263
+      ],
+      "destination": [
+        32,
+        7,
+        63,
+        103
+      ]
+    },
+    {
+      "frame": 1,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/production-144/fuji_kiseki/alpha.png",
+      "sourceSha256": "75414088a4c006b57b76a72c951f893e463ca1dcb206691c3b23af349084597e",
+      "crop": [
+        336,
+        25,
+        476,
+        263
+      ],
+      "destination": [
+        162,
+        8,
+        60,
+        102
+      ]
+    },
+    {
+      "frame": 2,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/production-144/fuji_kiseki/alpha.png",
+      "sourceSha256": "75414088a4c006b57b76a72c951f893e463ca1dcb206691c3b23af349084597e",
+      "crop": [
+        566,
+        26,
+        711,
+        263
+      ],
+      "destination": [
+        289,
+        9,
+        62,
+        101
+      ]
+    },
+    {
+      "frame": 3,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/production-144/fuji_kiseki/alpha.png",
+      "sourceSha256": "75414088a4c006b57b76a72c951f893e463ca1dcb206691c3b23af349084597e",
+      "crop": [
+        823,
+        24,
+        956,
+        263
+      ],
+      "destination": [
+        419,
+        8,
+        57,
+        102
+      ]
+    },
+    {
+      "frame": 4,
+      "sourceFrame": 4,
+      "source": "docs/art-source/motions/production-144/fuji_kiseki/alpha.png",
+      "sourceSha256": "75414088a4c006b57b76a72c951f893e463ca1dcb206691c3b23af349084597e",
+      "crop": [
+        49,
+        292,
+        225,
+        510
+      ],
+      "destination": [
+        26,
+        145,
+        75,
+        93
+      ]
+    },
+    {
+      "frame": 5,
+      "sourceFrame": 5,
+      "source": "docs/art-source/motions/production-144/fuji_kiseki/alpha.png",
+      "sourceSha256": "75414088a4c006b57b76a72c951f893e463ca1dcb206691c3b23af349084597e",
+      "crop": [
+        297,
+        292,
+        482,
+        515
+      ],
+      "destination": [
+        152,
+        143,
+        79,
+        95
+      ]
+    },
+    {
+      "frame": 6,
+      "sourceFrame": 6,
+      "source": "docs/art-source/motions/production-144/fuji_kiseki/alpha.png",
+      "sourceSha256": "75414088a4c006b57b76a72c951f893e463ca1dcb206691c3b23af349084597e",
+      "crop": [
+        543,
+        292,
+        727,
+        515
+      ],
+      "destination": [
+        280,
+        143,
+        79,
+        95
+      ]
+    },
+    {
+      "frame": 7,
+      "sourceFrame": 7,
+      "source": "docs/art-source/motions/production-144/fuji_kiseki/alpha.png",
+      "sourceSha256": "75414088a4c006b57b76a72c951f893e463ca1dcb206691c3b23af349084597e",
+      "crop": [
+        788,
+        293,
+        968,
+        515
+      ],
+      "destination": [
+        409,
+        143,
+        77,
+        95
+      ]
+    },
+    {
+      "frame": 8,
+      "sourceFrame": 8,
+      "source": "docs/art-source/motions/production-144/fuji_kiseki/alpha.png",
+      "sourceSha256": "75414088a4c006b57b76a72c951f893e463ca1dcb206691c3b23af349084597e",
+      "crop": [
+        45,
+        531,
+        233,
+        771
+      ],
+      "destination": [
+        24,
+        263,
+        80,
+        103
+      ]
+    },
+    {
+      "frame": 9,
+      "sourceFrame": 9,
+      "source": "docs/art-source/motions/production-144/fuji_kiseki/alpha.png",
+      "sourceSha256": "75414088a4c006b57b76a72c951f893e463ca1dcb206691c3b23af349084597e",
+      "crop": [
+        302,
+        530,
+        495,
+        771
+      ],
+      "destination": [
+        150,
+        263,
+        83,
+        103
+      ]
+    },
+    {
+      "frame": 10,
+      "sourceFrame": 10,
+      "source": "docs/art-source/motions/production-144/fuji_kiseki/alpha.png",
+      "sourceSha256": "75414088a4c006b57b76a72c951f893e463ca1dcb206691c3b23af349084597e",
+      "crop": [
+        541,
+        538,
+        747,
+        771
+      ],
+      "destination": [
+        276,
+        266,
+        88,
+        100
+      ]
+    },
+    {
+      "frame": 11,
+      "sourceFrame": 11,
+      "source": "docs/art-source/motions/production-144/fuji_kiseki/alpha.png",
+      "sourceSha256": "75414088a4c006b57b76a72c951f893e463ca1dcb206691c3b23af349084597e",
+      "crop": [
+        818,
+        535,
+        974,
+        771
+      ],
+      "destination": [
+        414,
+        265,
+        67,
+        101
+      ]
+    },
+    {
+      "frame": 12,
+      "sourceFrame": 12,
+      "source": "docs/art-source/motions/production-144/fuji_kiseki/alpha.png",
+      "sourceSha256": "75414088a4c006b57b76a72c951f893e463ca1dcb206691c3b23af349084597e",
+      "crop": [
+        64,
+        790,
+        208,
+        1032
+      ],
+      "destination": [
+        33,
+        390,
+        62,
+        104
+      ]
+    },
+    {
+      "frame": 13,
+      "sourceFrame": 13,
+      "source": "docs/art-source/motions/production-144/fuji_kiseki/alpha.png",
+      "sourceSha256": "75414088a4c006b57b76a72c951f893e463ca1dcb206691c3b23af349084597e",
+      "crop": [
+        303,
+        798,
+        476,
+        1032
+      ],
+      "destination": [
+        155,
+        394,
+        74,
+        100
+      ]
+    },
+    {
+      "frame": 14,
+      "sourceFrame": 14,
+      "source": "docs/art-source/motions/production-144/fuji_kiseki/alpha.png",
+      "sourceSha256": "75414088a4c006b57b76a72c951f893e463ca1dcb206691c3b23af349084597e",
+      "crop": [
+        550,
+        813,
+        750,
+        1032
+      ],
+      "destination": [
+        277,
+        400,
+        86,
+        94
+      ]
+    },
+    {
+      "frame": 15,
+      "sourceFrame": 15,
+      "source": "docs/art-source/motions/production-144/fuji_kiseki/alpha.png",
+      "sourceSha256": "75414088a4c006b57b76a72c951f893e463ca1dcb206691c3b23af349084597e",
+      "crop": [
+        824,
+        792,
+        956,
+        1032
+      ],
+      "destination": [
+        420,
+        391,
+        56,
+        103
+      ]
+    },
+    {
+      "frame": 16,
+      "sourceFrame": 16,
+      "source": "docs/art-source/motions/production-144/fuji_kiseki/alpha.png",
+      "sourceSha256": "75414088a4c006b57b76a72c951f893e463ca1dcb206691c3b23af349084597e",
+      "crop": [
+        45,
+        1068,
+        242,
+        1260
+      ],
+      "destination": [
+        22,
+        540,
+        84,
+        82
+      ]
+    },
+    {
+      "frame": 17,
+      "sourceFrame": 17,
+      "source": "docs/art-source/motions/production-144/fuji_kiseki/alpha.png",
+      "sourceSha256": "75414088a4c006b57b76a72c951f893e463ca1dcb206691c3b23af349084597e",
+      "crop": [
+        308,
+        1079,
+        474,
+        1255
+      ],
+      "destination": [
+        156,
+        547,
+        71,
+        75
+      ]
+    },
+    {
+      "frame": 18,
+      "sourceFrame": 18,
+      "source": "docs/art-source/motions/production-144/fuji_kiseki/alpha.png",
+      "sourceSha256": "75414088a4c006b57b76a72c951f893e463ca1dcb206691c3b23af349084597e",
+      "crop": [
+        544,
+        1102,
+        713,
+        1257
+      ],
+      "destination": [
+        284,
+        556,
+        72,
+        66
+      ]
+    },
+    {
+      "frame": 19,
+      "sourceFrame": 19,
+      "source": "docs/art-source/motions/production-144/fuji_kiseki/alpha.png",
+      "sourceSha256": "75414088a4c006b57b76a72c951f893e463ca1dcb206691c3b23af349084597e",
+      "crop": [
+        773,
+        1155,
+        1007,
+        1259
+      ],
+      "destination": [
+        398,
+        577,
+        100,
+        45
+      ]
+    },
+    {
+      "frame": 20,
+      "sourceFrame": 20,
+      "source": "docs/art-source/motions/production-144/fuji_kiseki/alpha.png",
+      "sourceSha256": "75414088a4c006b57b76a72c951f893e463ca1dcb206691c3b23af349084597e",
+      "crop": [
+        70,
+        1278,
+        215,
+        1520
+      ],
+      "destination": [
+        33,
+        646,
+        62,
+        104
+      ]
+    },
+    {
+      "frame": 21,
+      "sourceFrame": 21,
+      "source": "docs/art-source/motions/production-144/fuji_kiseki/alpha.png",
+      "sourceSha256": "75414088a4c006b57b76a72c951f893e463ca1dcb206691c3b23af349084597e",
+      "crop": [
+        309,
+        1278,
+        464,
+        1520
+      ],
+      "destination": [
+        159,
+        646,
+        66,
+        104
+      ]
+    },
+    {
+      "frame": 22,
+      "sourceFrame": 22,
+      "source": "docs/art-source/motions/production-144/fuji_kiseki/alpha.png",
+      "sourceSha256": "75414088a4c006b57b76a72c951f893e463ca1dcb206691c3b23af349084597e",
+      "crop": [
+        561,
+        1279,
+        700,
+        1518
+      ],
+      "destination": [
+        290,
+        648,
+        59,
+        102
+      ]
+    },
+    {
+      "frame": 23,
+      "sourceFrame": 23,
+      "source": "docs/art-source/motions/production-144/fuji_kiseki/alpha.png",
+      "sourceSha256": "75414088a4c006b57b76a72c951f893e463ca1dcb206691c3b23af349084597e",
+      "crop": [
+        826,
+        1278,
+        954,
+        1521
+      ],
+      "destination": [
+        420,
+        646,
+        55,
+        104
+      ]
+    }
+  ]
+}

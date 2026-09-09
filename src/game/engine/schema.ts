@@ -38,6 +38,7 @@ export const EffectSchema = z.object({
   perStar: z.array(z.number()).optional(),
   duration: z.number().optional(),
   interval: z.number().optional(),
+  delay: z.number().min(0).max(10).optional(),
   maxStacks: z.number().optional(),
   radius: z.number().optional(),
   target: z.string().optional(),
@@ -63,6 +64,10 @@ export const SkillDefSchema = z.object({
   effects: z.array(EffectSchema).min(1),
   vfxKey: z.string().min(1),
   description: z.string().min(1),
+  choreography: z.object({
+    windup: z.number().min(0).max(2), recovery: z.number().min(0).max(2),
+    pulseInterval: z.number().positive().max(2), color: z.string().regex(/^#[0-9a-fA-F]{6}$/), variant: z.string().min(1),
+  }).optional(),
 });
 
 export const UnitDefSchema = z.object({

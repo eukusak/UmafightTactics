@@ -1,10 +1,11 @@
 /** Collection: all 145 characters with the spec §29 filters. */
 import { useMemo, useState } from 'react';
 import { useGameStore } from '../../store/gameStore';
-import { ALL_UNITS } from '../../game/engine/roster';
+import type { SeasonId } from '../../game/engine/seasons/catalog';
+import { ALL_UNITS, SEASONS, getSeason, getUnitTraits } from '../../game/engine/roster';
 import { getTrait } from '../../game/engine/traits/trait-defs';
 import { ROLE_LABELS } from '../../game/ui/palette';
-import { costVar, RoleChip, TraitChip } from '../common';
+import { Portrait, costVar, RoleChip, TraitChip } from '../common';
 import type { UnitDef } from '../../game/engine/types';
 
 const DECADES = ['~1989', '1990s', '2000s', '2010s+'];
@@ -22,6 +23,10 @@ export function CollectionScreen(): JSX.Element {
   const match = useGameStore((s) => s.match);
 
   const [query, setQuery] = useState('');
+  const [seasonId, setSeasonId] = useState<SeasonId>(match?.seasonId ?? 's1');
+  const [faction, setFaction] = useState('all');
+  const season = getSeason(seasonId);
+  const available = new Set(season.unitIds);
   const [activeOnly, setActiveOnly] = useState<'all' | 'active' | 'inactive'>('all');
   const [cost, setCost] = useState('all');
   const [role, setRole] = useState('all');
@@ -32,15 +37,16 @@ export function CollectionScreen(): JSX.Element {
 
   const filtered = useMemo(() => ALL_UNITS.filter((u) => {
     if (query && !u.nameKo.includes(query) && !u.nameEn.toLowerCase().includes(query.toLowerCase())) return false;
-    if (activeOnly === 'active' && !u.activeS1) return false;
-    if (activeOnly === 'inactive' && u.activeS1) return false;
+    if (activeOnly === 'active' && !season.unitIds.includes(u.id)) return false;
+    if (activeOnly === 'inactive' && season.unitIds.includes(u.id)) return false;
+    if (faction !== 'all' && season.unitTraits[u.id] !== faction) return false;
     if (cost !== 'all' && u.cost !== Number(cost)) return false;
     if (role !== 'all' && u.role !== role) return false;
     if (style !== 'all' && !u.traits.includes(style as never)) return false;
     if (distance !== 'all' && !u.traits.includes(distance as never)) return false;
     if (decade !== 'all' && decadeOf(u) !== decade) return false;
     return true;
-  }), [query, activeOnly, cost, role, style, distance, decade]);
+  }), [query, activeOnly, cost, role, style, distance, decade, season, faction]);
 
   return (
     <div style={{ position: 'absolute', inset: 0, display: 'flex', flexDirection: 'column' }}>
@@ -53,12 +59,14 @@ export function CollectionScreen(): JSX.Element {
         </button>
       </div>
 
-      <div className="filters">
+      <div className="filters" style={{ marginTop: 84 }}>
+        <select aria-label="도감 시즌" value={seasonId} onChange={e => { setSeasonId(e.target.value as SeasonId); setFaction("all"); }}>{SEASONS.map(s => <option key={s.id} value={s.id}>{s.id.toUpperCase()} · {s.name}</option>)}</select>
+        <select aria-label="시즌 시너지" value={faction} onChange={e => setFaction(e.target.value)}><option value="all">시즌 시너지 전체</option>{season.traits.map(t => <option key={t.id} value={t.id}>{t.name}</option>)}</select>
         <input placeholder="이름 검색" value={query} onChange={(e) => setQuery(e.target.value)} />
         <select value={activeOnly} onChange={(e) => setActiveOnly(e.target.value as never)}>
           <option value="all">전체</option>
-          <option value="active">S1 활성</option>
-          <option value="inactive">비활성</option>
+          <option value="active">{seasonId.toUpperCase()} 출전</option>
+          <option value="inactive">다른 시즌 출전</option>
         </select>
         <select value={cost} onChange={(e) => setCost(e.target.value)}>
           <option value="all">코스트 전체</option>
@@ -88,25 +96,25 @@ export function CollectionScreen(): JSX.Element {
         {filtered.map((u) => (
           <div
             key={u.id}
-            className={`collection-card${u.activeS1 ? '' : ' inactive'}`}
+            className={`collection-card${available.has(u.id) ? '' : ' inactive'}`}
             style={{ borderColor: costVar(u.cost) }}
             onClick={() => setSelected(u)}
           >
             <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
               <div className="token" style={{ width: 42, height: 42, fontSize: 18, border: `3px solid ${costVar(u.cost)}` }}>
-                {Array.from(u.nameKo)[0]}
+                <Portrait id={u.id} name={u.nameKo} size={74} />
               </div>
               <div style={{ minWidth: 0 }}>
                 <div style={{ fontWeight: 700, fontSize: 14, whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
                   {u.nameKo}
                 </div>
                 <div className="muted" style={{ fontSize: 11 }}>
-                  {u.cost}코 · {u.source.birthYear} {u.activeS1 ? '' : '· 비활성'}
+                  {u.cost}코 · {SEASONS.filter(s => s.unitIds.includes(u.id)).map(s => s.id.toUpperCase()).join(' / ')}
                 </div>
               </div>
             </div>
             <div style={{ display: 'flex', gap: 4, flexWrap: 'wrap', marginTop: 8 }}>
-              {u.traits.map((t) => (
+              {getUnitTraits(u.id, seasonId).map((t) => (
                 <span key={t} className="pill" style={{ fontSize: 10, padding: '1px 6px' }}>
                   {getTrait(t).name}
                 </span>
@@ -124,11 +132,12 @@ export function CollectionScreen(): JSX.Element {
             </h2>
             <div className="muted" style={{ marginBottom: 10 }}>
               {selected.nameJa} · {selected.nameEn} · {selected.source.birthYear}년생
-              {selected.activeS1 ? '' : ' · Season 1 비활성 (표준 상점 미등장)'}
+              <br />출전 시즌: {SEASONS.filter(s => s.unitIds.includes(selected.id)).map(s => `${s.id.toUpperCase()} ${s.name}`).join(' · ')}
+              {!available.has(selected.id) && <div>현재 선택한 시즌에는 출전하지 않습니다.</div>}
             </div>
             <div style={{ display: 'flex', gap: 6, flexWrap: 'wrap', marginBottom: 14 }}>
               <RoleChip role={selected.role} />
-              {selected.traits.map((t) => <TraitChip key={t} id={t} />)}
+              {getUnitTraits(selected.id, seasonId).map((t) => <TraitChip key={t} id={t} />)}
             </div>
             <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '4px 20px', fontSize: 14 }}>
               <span className="muted">체력</span><span>{selected.hp}</span>

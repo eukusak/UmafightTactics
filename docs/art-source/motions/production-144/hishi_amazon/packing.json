@@ -1,0 +1,443 @@
+{
+  "format": "uft-baked-frames-v1",
+  "scale": 0.4247104247104247,
+  "anchor": [
+    64,
+    110
+  ],
+  "runtimeSha256": "0c5ac3767cb68ddaeaabcb898160f4ebbb3b8262e750d7124e0da5b9399488be",
+  "frames": [
+    {
+      "frame": 0,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/production-144/hishi_amazon/alpha.png",
+      "sourceSha256": "fdec062c9362633ad22a665057667389ad2a92e76f19da97657b23f7a5f4409c",
+      "crop": [
+        44,
+        23,
+        222,
+        267
+      ],
+      "destination": [
+        26,
+        6,
+        76,
+        104
+      ]
+    },
+    {
+      "frame": 1,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/production-144/hishi_amazon/alpha.png",
+      "sourceSha256": "fdec062c9362633ad22a665057667389ad2a92e76f19da97657b23f7a5f4409c",
+      "crop": [
+        302,
+        23,
+        481,
+        267
+      ],
+      "destination": [
+        154,
+        6,
+        76,
+        104
+      ]
+    },
+    {
+      "frame": 2,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/production-144/hishi_amazon/alpha.png",
+      "sourceSha256": "fdec062c9362633ad22a665057667389ad2a92e76f19da97657b23f7a5f4409c",
+      "crop": [
+        562,
+        24,
+        746,
+        267
+      ],
+      "destination": [
+        281,
+        7,
+        78,
+        103
+      ]
+    },
+    {
+      "frame": 3,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/production-144/hishi_amazon/alpha.png",
+      "sourceSha256": "fdec062c9362633ad22a665057667389ad2a92e76f19da97657b23f7a5f4409c",
+      "crop": [
+        823,
+        24,
+        1002,
+        267
+      ],
+      "destination": [
+        410,
+        7,
+        76,
+        103
+      ]
+    },
+    {
+      "frame": 4,
+      "sourceFrame": 4,
+      "source": "docs/art-source/motions/production-144/hishi_amazon/alpha.png",
+      "sourceSha256": "fdec062c9362633ad22a665057667389ad2a92e76f19da97657b23f7a5f4409c",
+      "crop": [
+        37,
+        290,
+        243,
+        526
+      ],
+      "destination": [
+        20,
+        138,
+        87,
+        100
+      ]
+    },
+    {
+      "frame": 5,
+      "sourceFrame": 5,
+      "source": "docs/art-source/motions/production-144/hishi_amazon/alpha.png",
+      "sourceSha256": "fdec062c9362633ad22a665057667389ad2a92e76f19da97657b23f7a5f4409c",
+      "crop": [
+        294,
+        290,
+        501,
+        526
+      ],
+      "destination": [
+        148,
+        138,
+        88,
+        100
+      ]
+    },
+    {
+      "frame": 6,
+      "sourceFrame": 6,
+      "source": "docs/art-source/motions/production-144/hishi_amazon/alpha.png",
+      "sourceSha256": "fdec062c9362633ad22a665057667389ad2a92e76f19da97657b23f7a5f4409c",
+      "crop": [
+        545,
+        293,
+        756,
+        526
+      ],
+      "destination": [
+        275,
+        139,
+        90,
+        99
+      ]
+    },
+    {
+      "frame": 7,
+      "sourceFrame": 7,
+      "source": "docs/art-source/motions/production-144/hishi_amazon/alpha.png",
+      "sourceSha256": "fdec062c9362633ad22a665057667389ad2a92e76f19da97657b23f7a5f4409c",
+      "crop": [
+        797,
+        293,
+        1012,
+        526
+      ],
+      "destination": [
+        402,
+        139,
+        91,
+        99
+      ]
+    },
+    {
+      "frame": 8,
+      "sourceFrame": 8,
+      "source": "docs/art-source/motions/production-144/hishi_amazon/alpha.png",
+      "sourceSha256": "fdec062c9362633ad22a665057667389ad2a92e76f19da97657b23f7a5f4409c",
+      "crop": [
+        28,
+        547,
+        229,
+        773
+      ],
+      "destination": [
+        21,
+        270,
+        85,
+        96
+      ]
+    },
+    {
+      "frame": 9,
+      "sourceFrame": 9,
+      "source": "docs/art-source/motions/production-144/hishi_amazon/alpha.png",
+      "sourceSha256": "fdec062c9362633ad22a665057667389ad2a92e76f19da97657b23f7a5f4409c",
+      "crop": [
+        280,
+        548,
+        494,
+        773
+      ],
+      "destination": [
+        146,
+        270,
+        91,
+        96
+      ]
+    },
+    {
+      "frame": 10,
+      "sourceFrame": 10,
+      "source": "docs/art-source/motions/production-144/hishi_amazon/alpha.png",
+      "sourceSha256": "fdec062c9362633ad22a665057667389ad2a92e76f19da97657b23f7a5f4409c",
+      "crop": [
+        522,
+        554,
+        772,
+        773
+      ],
+      "destination": [
+        267,
+        273,
+        106,
+        93
+      ]
+    },
+    {
+      "frame": 11,
+      "sourceFrame": 11,
+      "source": "docs/art-source/motions/production-144/hishi_amazon/alpha.png",
+      "sourceSha256": "fdec062c9362633ad22a665057667389ad2a92e76f19da97657b23f7a5f4409c",
+      "crop": [
+        804,
+        547,
+        992,
+        773
+      ],
+      "destination": [
+        408,
+        270,
+        80,
+        96
+      ]
+    },
+    {
+      "frame": 12,
+      "sourceFrame": 12,
+      "source": "docs/art-source/motions/production-144/hishi_amazon/alpha.png",
+      "sourceSha256": "fdec062c9362633ad22a665057667389ad2a92e76f19da97657b23f7a5f4409c",
+      "crop": [
+        24,
+        796,
+        232,
+        1034
+      ],
+      "destination": [
+        20,
+        393,
+        88,
+        101
+      ]
+    },
+    {
+      "frame": 13,
+      "sourceFrame": 13,
+      "source": "docs/art-source/motions/production-144/hishi_amazon/alpha.png",
+      "sourceSha256": "fdec062c9362633ad22a665057667389ad2a92e76f19da97657b23f7a5f4409c",
+      "crop": [
+        286,
+        800,
+        487,
+        1034
+      ],
+      "destination": [
+        149,
+        395,
+        85,
+        99
+      ]
+    },
+    {
+      "frame": 14,
+      "sourceFrame": 14,
+      "source": "docs/art-source/motions/production-144/hishi_amazon/alpha.png",
+      "sourceSha256": "fdec062c9362633ad22a665057667389ad2a92e76f19da97657b23f7a5f4409c",
+      "crop": [
+        517,
+        809,
+        776,
+        1034
+      ],
+      "destination": [
+        265,
+        398,
+        110,
+        96
+      ]
+    },
+    {
+      "frame": 15,
+      "sourceFrame": 15,
+      "source": "docs/art-source/motions/production-144/hishi_amazon/alpha.png",
+      "sourceSha256": "fdec062c9362633ad22a665057667389ad2a92e76f19da97657b23f7a5f4409c",
+      "crop": [
+        806,
+        802,
+        1002,
+        1034
+      ],
+      "destination": [
+        406,
+        395,
+        83,
+        99
+      ]
+    },
+    {
+      "frame": 16,
+      "sourceFrame": 16,
+      "source": "docs/art-source/motions/production-144/hishi_amazon/alpha.png",
+      "sourceSha256": "fdec062c9362633ad22a665057667389ad2a92e76f19da97657b23f7a5f4409c",
+      "crop": [
+        45,
+        1065,
+        230,
+        1280
+      ],
+      "destination": [
+        24,
+        531,
+        79,
+        91
+      ]
+    },
+    {
+      "frame": 17,
+      "sourceFrame": 17,
+      "source": "docs/art-source/motions/production-144/hishi_amazon/alpha.png",
+      "sourceSha256": "fdec062c9362633ad22a665057667389ad2a92e76f19da97657b23f7a5f4409c",
+      "crop": [
+        317,
+        1093,
+        489,
+        1276
+      ],
+      "destination": [
+        155,
+        544,
+        73,
+        78
+      ]
+    },
+    {
+      "frame": 18,
+      "sourceFrame": 18,
+      "source": "docs/art-source/motions/production-144/hishi_amazon/alpha.png",
+      "sourceSha256": "fdec062c9362633ad22a665057667389ad2a92e76f19da97657b23f7a5f4409c",
+      "crop": [
+        540,
+        1116,
+        725,
+        1280
+      ],
+      "destination": [
+        280,
+        552,
+        79,
+        70
+      ]
+    },
+    {
+      "frame": 19,
+      "sourceFrame": 19,
+      "source": "docs/art-source/motions/production-144/hishi_amazon/alpha.png",
+      "sourceSha256": "fdec062c9362633ad22a665057667389ad2a92e76f19da97657b23f7a5f4409c",
+      "crop": [
+        789,
+        1165,
+        1010,
+        1265
+      ],
+      "destination": [
+        401,
+        580,
+        94,
+        42
+      ]
+    },
+    {
+      "frame": 20,
+      "sourceFrame": 20,
+      "source": "docs/art-source/motions/production-144/hishi_amazon/alpha.png",
+      "sourceSha256": "fdec062c9362633ad22a665057667389ad2a92e76f19da97657b23f7a5f4409c",
+      "crop": [
+        47,
+        1296,
+        205,
+        1524
+      ],
+      "destination": [
+        30,
+        653,
+        67,
+        97
+      ]
+    },
+    {
+      "frame": 21,
+      "sourceFrame": 21,
+      "source": "docs/art-source/motions/production-144/hishi_amazon/alpha.png",
+      "sourceSha256": "fdec062c9362633ad22a665057667389ad2a92e76f19da97657b23f7a5f4409c",
+      "crop": [
+        313,
+        1298,
+        480,
+        1523
+      ],
+      "destination": [
+        156,
+        654,
+        71,
+        96
+      ]
+    },
+    {
+      "frame": 22,
+      "sourceFrame": 22,
+      "source": "docs/art-source/motions/production-144/hishi_amazon/alpha.png",
+      "sourceSha256": "fdec062c9362633ad22a665057667389ad2a92e76f19da97657b23f7a5f4409c",
+      "crop": [
+        566,
+        1294,
+        731,
+        1517
+      ],
+      "destination": [
+        285,
+        655,
+        70,
+        95
+      ]
+    },
+    {
+      "frame": 23,
+      "sourceFrame": 23,
+      "source": "docs/art-source/motions/production-144/hishi_amazon/alpha.png",
+      "sourceSha256": "fdec062c9362633ad22a665057667389ad2a92e76f19da97657b23f7a5f4409c",
+      "crop": [
+        825,
+        1299,
+        991,
+        1524
+      ],
+      "destination": [
+        412,
+        654,
+        71,
+        96
+      ]
+    }
+  ]
+}

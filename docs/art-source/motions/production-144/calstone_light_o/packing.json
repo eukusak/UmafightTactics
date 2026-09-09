@@ -1,0 +1,443 @@
+{
+  "format": "uft-baked-frames-v1",
+  "scale": 0.40784313725490196,
+  "anchor": [
+    64,
+    110
+  ],
+  "runtimeSha256": "f76cca94a66ae2e3be008dcf885cf11089bb4b7aedef4b088de4371bc3b8481b",
+  "frames": [
+    {
+      "frame": 0,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/production-144/calstone_light_o/alpha.png",
+      "sourceSha256": "ec11c3c3f014060f82dda7ea05c1f63b8f9083e0c700e05868f248259003d367",
+      "crop": [
+        26,
+        4,
+        210,
+        249
+      ],
+      "destination": [
+        26,
+        10,
+        75,
+        100
+      ]
+    },
+    {
+      "frame": 1,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/production-144/calstone_light_o/alpha.png",
+      "sourceSha256": "ec11c3c3f014060f82dda7ea05c1f63b8f9083e0c700e05868f248259003d367",
+      "crop": [
+        278,
+        4,
+        467,
+        249
+      ],
+      "destination": [
+        153,
+        10,
+        77,
+        100
+      ]
+    },
+    {
+      "frame": 2,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/production-144/calstone_light_o/alpha.png",
+      "sourceSha256": "ec11c3c3f014060f82dda7ea05c1f63b8f9083e0c700e05868f248259003d367",
+      "crop": [
+        541,
+        4,
+        722,
+        249
+      ],
+      "destination": [
+        283,
+        10,
+        74,
+        100
+      ]
+    },
+    {
+      "frame": 3,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/production-144/calstone_light_o/alpha.png",
+      "sourceSha256": "ec11c3c3f014060f82dda7ea05c1f63b8f9083e0c700e05868f248259003d367",
+      "crop": [
+        794,
+        4,
+        978,
+        249
+      ],
+      "destination": [
+        410,
+        10,
+        75,
+        100
+      ]
+    },
+    {
+      "frame": 4,
+      "sourceFrame": 4,
+      "source": "docs/art-source/motions/production-144/calstone_light_o/alpha.png",
+      "sourceSha256": "ec11c3c3f014060f82dda7ea05c1f63b8f9083e0c700e05868f248259003d367",
+      "crop": [
+        23,
+        260,
+        229,
+        498
+      ],
+      "destination": [
+        22,
+        141,
+        84,
+        97
+      ]
+    },
+    {
+      "frame": 5,
+      "sourceFrame": 5,
+      "source": "docs/art-source/motions/production-144/calstone_light_o/alpha.png",
+      "sourceSha256": "ec11c3c3f014060f82dda7ea05c1f63b8f9083e0c700e05868f248259003d367",
+      "crop": [
+        273,
+        260,
+        473,
+        500
+      ],
+      "destination": [
+        151,
+        140,
+        82,
+        98
+      ]
+    },
+    {
+      "frame": 6,
+      "sourceFrame": 6,
+      "source": "docs/art-source/motions/production-144/calstone_light_o/alpha.png",
+      "sourceSha256": "ec11c3c3f014060f82dda7ea05c1f63b8f9083e0c700e05868f248259003d367",
+      "crop": [
+        531,
+        263,
+        741,
+        501
+      ],
+      "destination": [
+        277,
+        141,
+        86,
+        97
+      ]
+    },
+    {
+      "frame": 7,
+      "sourceFrame": 7,
+      "source": "docs/art-source/motions/production-144/calstone_light_o/alpha.png",
+      "sourceSha256": "ec11c3c3f014060f82dda7ea05c1f63b8f9083e0c700e05868f248259003d367",
+      "crop": [
+        785,
+        260,
+        990,
+        501
+      ],
+      "destination": [
+        406,
+        140,
+        84,
+        98
+      ]
+    },
+    {
+      "frame": 8,
+      "sourceFrame": 8,
+      "source": "docs/art-source/motions/production-144/calstone_light_o/alpha.png",
+      "sourceSha256": "ec11c3c3f014060f82dda7ea05c1f63b8f9083e0c700e05868f248259003d367",
+      "crop": [
+        17,
+        512,
+        238,
+        756
+      ],
+      "destination": [
+        19,
+        266,
+        90,
+        100
+      ]
+    },
+    {
+      "frame": 9,
+      "sourceFrame": 9,
+      "source": "docs/art-source/motions/production-144/calstone_light_o/alpha.png",
+      "sourceSha256": "ec11c3c3f014060f82dda7ea05c1f63b8f9083e0c700e05868f248259003d367",
+      "crop": [
+        272,
+        512,
+        465,
+        760
+      ],
+      "destination": [
+        152,
+        265,
+        79,
+        101
+      ]
+    },
+    {
+      "frame": 10,
+      "sourceFrame": 10,
+      "source": "docs/art-source/motions/production-144/calstone_light_o/alpha.png",
+      "sourceSha256": "ec11c3c3f014060f82dda7ea05c1f63b8f9083e0c700e05868f248259003d367",
+      "crop": [
+        520,
+        516,
+        765,
+        754
+      ],
+      "destination": [
+        270,
+        269,
+        100,
+        97
+      ]
+    },
+    {
+      "frame": 11,
+      "sourceFrame": 11,
+      "source": "docs/art-source/motions/production-144/calstone_light_o/alpha.png",
+      "sourceSha256": "ec11c3c3f014060f82dda7ea05c1f63b8f9083e0c700e05868f248259003d367",
+      "crop": [
+        796,
+        513,
+        1001,
+        758
+      ],
+      "destination": [
+        406,
+        266,
+        84,
+        100
+      ]
+    },
+    {
+      "frame": 12,
+      "sourceFrame": 12,
+      "source": "docs/art-source/motions/production-144/calstone_light_o/alpha.png",
+      "sourceSha256": "ec11c3c3f014060f82dda7ea05c1f63b8f9083e0c700e05868f248259003d367",
+      "crop": [
+        24,
+        772,
+        210,
+        1026
+      ],
+      "destination": [
+        26,
+        390,
+        76,
+        104
+      ]
+    },
+    {
+      "frame": 13,
+      "sourceFrame": 13,
+      "source": "docs/art-source/motions/production-144/calstone_light_o/alpha.png",
+      "sourceSha256": "ec11c3c3f014060f82dda7ea05c1f63b8f9083e0c700e05868f248259003d367",
+      "crop": [
+        264,
+        773,
+        497,
+        1026
+      ],
+      "destination": [
+        144,
+        391,
+        95,
+        103
+      ]
+    },
+    {
+      "frame": 14,
+      "sourceFrame": 14,
+      "source": "docs/art-source/motions/production-144/calstone_light_o/alpha.png",
+      "sourceSha256": "ec11c3c3f014060f82dda7ea05c1f63b8f9083e0c700e05868f248259003d367",
+      "crop": [
+        525,
+        771,
+        768,
+        1026
+      ],
+      "destination": [
+        270,
+        390,
+        99,
+        104
+      ]
+    },
+    {
+      "frame": 15,
+      "sourceFrame": 15,
+      "source": "docs/art-source/motions/production-144/calstone_light_o/alpha.png",
+      "sourceSha256": "ec11c3c3f014060f82dda7ea05c1f63b8f9083e0c700e05868f248259003d367",
+      "crop": [
+        793,
+        775,
+        1008,
+        1026
+      ],
+      "destination": [
+        404,
+        392,
+        88,
+        102
+      ]
+    },
+    {
+      "frame": 16,
+      "sourceFrame": 16,
+      "source": "docs/art-source/motions/production-144/calstone_light_o/alpha.png",
+      "sourceSha256": "ec11c3c3f014060f82dda7ea05c1f63b8f9083e0c700e05868f248259003d367",
+      "crop": [
+        19,
+        1037,
+        209,
+        1266
+      ],
+      "destination": [
+        25,
+        529,
+        77,
+        93
+      ]
+    },
+    {
+      "frame": 17,
+      "sourceFrame": 17,
+      "source": "docs/art-source/motions/production-144/calstone_light_o/alpha.png",
+      "sourceSha256": "ec11c3c3f014060f82dda7ea05c1f63b8f9083e0c700e05868f248259003d367",
+      "crop": [
+        273,
+        1053,
+        485,
+        1252
+      ],
+      "destination": [
+        149,
+        541,
+        86,
+        81
+      ]
+    },
+    {
+      "frame": 18,
+      "sourceFrame": 18,
+      "source": "docs/art-source/motions/production-144/calstone_light_o/alpha.png",
+      "sourceSha256": "ec11c3c3f014060f82dda7ea05c1f63b8f9083e0c700e05868f248259003d367",
+      "crop": [
+        527,
+        1082,
+        729,
+        1261
+      ],
+      "destination": [
+        279,
+        549,
+        82,
+        73
+      ]
+    },
+    {
+      "frame": 19,
+      "sourceFrame": 19,
+      "source": "docs/art-source/motions/production-144/calstone_light_o/alpha.png",
+      "sourceSha256": "ec11c3c3f014060f82dda7ea05c1f63b8f9083e0c700e05868f248259003d367",
+      "crop": [
+        764,
+        1142,
+        1022,
+        1263
+      ],
+      "destination": [
+        395,
+        573,
+        105,
+        49
+      ]
+    },
+    {
+      "frame": 20,
+      "sourceFrame": 20,
+      "source": "docs/art-source/motions/production-144/calstone_light_o/alpha.png",
+      "sourceSha256": "ec11c3c3f014060f82dda7ea05c1f63b8f9083e0c700e05868f248259003d367",
+      "crop": [
+        16,
+        1280,
+        214,
+        1527
+      ],
+      "destination": [
+        23,
+        649,
+        81,
+        101
+      ]
+    },
+    {
+      "frame": 21,
+      "sourceFrame": 21,
+      "source": "docs/art-source/motions/production-144/calstone_light_o/alpha.png",
+      "sourceSha256": "ec11c3c3f014060f82dda7ea05c1f63b8f9083e0c700e05868f248259003d367",
+      "crop": [
+        277,
+        1280,
+        469,
+        1527
+      ],
+      "destination": [
+        153,
+        649,
+        78,
+        101
+      ]
+    },
+    {
+      "frame": 22,
+      "sourceFrame": 22,
+      "source": "docs/art-source/motions/production-144/calstone_light_o/alpha.png",
+      "sourceSha256": "ec11c3c3f014060f82dda7ea05c1f63b8f9083e0c700e05868f248259003d367",
+      "crop": [
+        520,
+        1280,
+        724,
+        1525
+      ],
+      "destination": [
+        278,
+        650,
+        83,
+        100
+      ]
+    },
+    {
+      "frame": 23,
+      "sourceFrame": 23,
+      "source": "docs/art-source/motions/production-144/calstone_light_o/alpha.png",
+      "sourceSha256": "ec11c3c3f014060f82dda7ea05c1f63b8f9083e0c700e05868f248259003d367",
+      "crop": [
+        785,
+        1281,
+        978,
+        1527
+      ],
+      "destination": [
+        408,
+        650,
+        79,
+        100
+      ]
+    }
+  ]
+}

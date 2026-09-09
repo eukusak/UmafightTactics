@@ -1,0 +1,106 @@
+{
+  "batchSize": 5,
+  "validation": "new portraits only; full app test/build not rerun",
+  "files": [
+    {
+      "id": "hishi_amazon",
+      "size": [
+        256,
+        256
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "bounds": [
+        17,
+        6,
+        243,
+        249
+      ],
+      "sourceSha256": "a910cbb7cdf986cc018ca85b4828a7feafb7f14ae01bc9274a90e6fe33653085",
+      "runtimeSha256": "f7a7909d32733da01789bf97ea7d135f4c17959c8359c5b39f581df4a6b4ccef",
+      "reference": "public/assets/characters/race/HishiAmazon-Race.png"
+    },
+    {
+      "id": "mejiro_mcqueen",
+      "size": [
+        256,
+        256
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "bounds": [
+        31,
+        6,
+        225,
+        250
+      ],
+      "sourceSha256": "1e4e9af548fd83869299956e372d1a7d7c0c9f6b3cd4f2f378461be31e721d34",
+      "runtimeSha256": "45fe7d21378d27b3d40c6213ac0a2284c8988aca176c358867d86323cbd80c9d",
+      "reference": "public/assets/characters/race/MejiroMcQueen-Race.png"
+    },
+    {
+      "id": "el_condor_pasa",
+      "size": [
+        256,
+        256
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "bounds": [
+        31,
+        6,
+        227,
+        250
+      ],
+      "sourceSha256": "fcfcbcb0bbe40990368186fa411f1f2d5e9dc275a03597a1af2f11393e762d48",
+      "runtimeSha256": "57aafeaead9938c27aa2dda08a152e9cfe5a7edf1cbc1c0ad80ba18ffcd34b07",
+      "reference": "public/assets/characters/race/ElCondorPasa-Race.png"
+    },
+    {
+      "id": "narita_brian",
+      "size": [
+        256,
+        256
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "bounds": [
+        28,
+        6,
+        228,
+        250
+      ],
+      "sourceSha256": "d9ef37ae6941ce39aa8c33c713504dbd7f272bbf868328c2ec9cc19c41f524c9",
+      "runtimeSha256": "b95ce3e4050b62b9a370e7b0e54ce05d5ac54f1e9d1168a68ebb82800dde7092",
+      "reference": "public/assets/characters/race/NaritaBrian-Race.png"
+    },
+    {
+      "id": "symboli_rudolf",
+      "size": [
+        256,
+        256
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "bounds": [
+        16,
+        6,
+        239,
+        250
+      ],
+      "sourceSha256": "8b0a150b7b67b35cc738bba66f74c08e70c67ad89d0f2f3e646615ddc126ea2b",
+      "runtimeSha256": "971dee45efe55a6c2abefde82e3b9e345e0cb41329df93e554895f303ae6d8a3",
+      "reference": "public/assets/characters/race/SymboliRudolf-Race.png"
+    }
+  ]
+}

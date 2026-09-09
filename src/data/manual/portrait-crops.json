@@ -1,0 +1,77 @@
+{
+  "maruzensky": {
+    "source": "docs/art-source/cutins/maruzensky.png",
+    "sourceSha256": "684b8c2d8e0fa3fd3fcdc9f48e0a61c340bdc73dc12caf5b4243f01670248f0d",
+    "crop": [
+      865,
+      0,
+      1450,
+      615
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "method": "reviewed face crop from generated cut-in; alpha preserved"
+  },
+  "daiwa_scarlet": {
+    "source": "docs/art-source/cutins/daiwa_scarlet.png",
+    "sourceSha256": "0cba3d483e7f540e9896052287bd5648bcbeaa2160dfb329efdc935e4b00bc9e",
+    "crop": [
+      830,
+      0,
+      1510,
+      710
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "method": "reviewed face crop from generated cut-in; alpha preserved"
+  },
+  "taiki_shuttle": {
+    "source": "docs/art-source/cutins/taiki_shuttle.png",
+    "sourceSha256": "b03a998ee940e5033416ed54f7e6e5eee1c8565dd218252ade3635068b3f176f",
+    "crop": [
+      665,
+      0,
+      1325,
+      700
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "method": "reviewed face crop from generated cut-in; alpha preserved"
+  },
+  "tm_opera_o": {
+    "source": "docs/art-source/cutins/tm_opera_o.png",
+    "sourceSha256": "407d5a2725aaad2b456df68ea5982c1ac376af5f6ea899b40ca3e984944c3895",
+    "crop": [
+      770,
+      0,
+      1450,
+      705
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "method": "reviewed face crop from generated cut-in; alpha preserved"
+  },
+  "mihono_bourbon": {
+    "source": "docs/art-source/cutins/mihono_bourbon.png",
+    "sourceSha256": "22579239ff22977a932fb6d57971903f9efb80c8bbb78b10e6b0a85e74294d0f",
+    "crop": [
+      720,
+      0,
+      1440,
+      720
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "method": "reviewed face crop from generated cut-in; alpha preserved"
+  }
+}

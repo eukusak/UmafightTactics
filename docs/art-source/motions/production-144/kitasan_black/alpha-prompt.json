@@ -1,0 +1,4 @@
+{
+  "tool": "builtin-imagegen",
+  "prompt": "Remove the gray checkerboard background from this sprite sheet. Return the SAME 24 characters and poses in exactly the same 4-column, 6-row positions, retaining all drawing details including white costume areas. Only the checkerboard surrounding every character and between limbs becomes genuinely transparent alpha zero. No checkerboard visualization in the delivered PNG. Do not repaint, redesign, shift or resize the characters. Transparent background."
+}

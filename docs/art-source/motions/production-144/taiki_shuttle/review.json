@@ -1,0 +1,13 @@
+{
+  "approved": true,
+  "source": "clean-alpha.png",
+  "skillReview": "범위 마법 공격: 허리 앞 응축 → 양팔 들어올림 → 넓은 손바닥 마법 방출 → 경쾌한 회복. 총기 연사나 다른 스킬로 변경하지 않음.",
+  "reviewedAt": "2026-09-09",
+  "checks": [
+    "Race costume and identity",
+    "24 poses with correct action rows",
+    "actual skill target and effect",
+    "transparent RGBA",
+    "Removed overflow effects; body poses preserved"
+  ]
+}

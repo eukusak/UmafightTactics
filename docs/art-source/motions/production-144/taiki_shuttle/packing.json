@@ -1,0 +1,443 @@
+{
+  "format": "uft-baked-frames-v1",
+  "scale": 0.4279835390946502,
+  "anchor": [
+    64,
+    110
+  ],
+  "runtimeSha256": "b62d6da4bddc8e74462f06a04a7c2578bf8e5df27913fa1fa61c3423368c2fc1",
+  "frames": [
+    {
+      "frame": 0,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/production-144/taiki_shuttle/clean-alpha.png",
+      "sourceSha256": "89f30ea4b22142e92423c9ddb960b1f60644b3c6f1560037e10d1a2084c347e4",
+      "crop": [
+        65,
+        12,
+        210,
+        251
+      ],
+      "destination": [
+        33,
+        8,
+        62,
+        102
+      ]
+    },
+    {
+      "frame": 1,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/production-144/taiki_shuttle/clean-alpha.png",
+      "sourceSha256": "89f30ea4b22142e92423c9ddb960b1f60644b3c6f1560037e10d1a2084c347e4",
+      "crop": [
+        310,
+        14,
+        456,
+        252
+      ],
+      "destination": [
+        161,
+        8,
+        62,
+        102
+      ]
+    },
+    {
+      "frame": 2,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/production-144/taiki_shuttle/clean-alpha.png",
+      "sourceSha256": "89f30ea4b22142e92423c9ddb960b1f60644b3c6f1560037e10d1a2084c347e4",
+      "crop": [
+        562,
+        15,
+        708,
+        251
+      ],
+      "destination": [
+        289,
+        9,
+        62,
+        101
+      ]
+    },
+    {
+      "frame": 3,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/production-144/taiki_shuttle/clean-alpha.png",
+      "sourceSha256": "89f30ea4b22142e92423c9ddb960b1f60644b3c6f1560037e10d1a2084c347e4",
+      "crop": [
+        820,
+        15,
+        965,
+        253
+      ],
+      "destination": [
+        417,
+        8,
+        62,
+        102
+      ]
+    },
+    {
+      "frame": 4,
+      "sourceFrame": 4,
+      "source": "docs/art-source/motions/production-144/taiki_shuttle/clean-alpha.png",
+      "sourceSha256": "89f30ea4b22142e92423c9ddb960b1f60644b3c6f1560037e10d1a2084c347e4",
+      "crop": [
+        42,
+        271,
+        219,
+        510
+      ],
+      "destination": [
+        26,
+        136,
+        76,
+        102
+      ]
+    },
+    {
+      "frame": 5,
+      "sourceFrame": 5,
+      "source": "docs/art-source/motions/production-144/taiki_shuttle/clean-alpha.png",
+      "sourceSha256": "89f30ea4b22142e92423c9ddb960b1f60644b3c6f1560037e10d1a2084c347e4",
+      "crop": [
+        273,
+        271,
+        480,
+        509
+      ],
+      "destination": [
+        147,
+        136,
+        89,
+        102
+      ]
+    },
+    {
+      "frame": 6,
+      "sourceFrame": 6,
+      "source": "docs/art-source/motions/production-144/taiki_shuttle/clean-alpha.png",
+      "sourceSha256": "89f30ea4b22142e92423c9ddb960b1f60644b3c6f1560037e10d1a2084c347e4",
+      "crop": [
+        546,
+        271,
+        728,
+        512
+      ],
+      "destination": [
+        281,
+        135,
+        78,
+        103
+      ]
+    },
+    {
+      "frame": 7,
+      "sourceFrame": 7,
+      "source": "docs/art-source/motions/production-144/taiki_shuttle/clean-alpha.png",
+      "sourceSha256": "89f30ea4b22142e92423c9ddb960b1f60644b3c6f1560037e10d1a2084c347e4",
+      "crop": [
+        785,
+        279,
+        987,
+        509
+      ],
+      "destination": [
+        405,
+        140,
+        86,
+        98
+      ]
+    },
+    {
+      "frame": 8,
+      "sourceFrame": 8,
+      "source": "docs/art-source/motions/production-144/taiki_shuttle/clean-alpha.png",
+      "sourceSha256": "89f30ea4b22142e92423c9ddb960b1f60644b3c6f1560037e10d1a2084c347e4",
+      "crop": [
+        41,
+        531,
+        214,
+        768
+      ],
+      "destination": [
+        27,
+        265,
+        74,
+        101
+      ]
+    },
+    {
+      "frame": 9,
+      "sourceFrame": 9,
+      "source": "docs/art-source/motions/production-144/taiki_shuttle/clean-alpha.png",
+      "sourceSha256": "89f30ea4b22142e92423c9ddb960b1f60644b3c6f1560037e10d1a2084c347e4",
+      "crop": [
+        296,
+        532,
+        468,
+        767
+      ],
+      "destination": [
+        155,
+        265,
+        74,
+        101
+      ]
+    },
+    {
+      "frame": 10,
+      "sourceFrame": 10,
+      "source": "docs/art-source/motions/production-144/taiki_shuttle/clean-alpha.png",
+      "sourceSha256": "89f30ea4b22142e92423c9ddb960b1f60644b3c6f1560037e10d1a2084c347e4",
+      "crop": [
+        543,
+        531,
+        727,
+        768
+      ],
+      "destination": [
+        280,
+        265,
+        79,
+        101
+      ]
+    },
+    {
+      "frame": 11,
+      "sourceFrame": 11,
+      "source": "docs/art-source/motions/production-144/taiki_shuttle/clean-alpha.png",
+      "sourceSha256": "89f30ea4b22142e92423c9ddb960b1f60644b3c6f1560037e10d1a2084c347e4",
+      "crop": [
+        813,
+        526,
+        981,
+        768
+      ],
+      "destination": [
+        412,
+        262,
+        72,
+        104
+      ]
+    },
+    {
+      "frame": 12,
+      "sourceFrame": 12,
+      "source": "docs/art-source/motions/production-144/taiki_shuttle/clean-alpha.png",
+      "sourceSha256": "89f30ea4b22142e92423c9ddb960b1f60644b3c6f1560037e10d1a2084c347e4",
+      "crop": [
+        43,
+        795,
+        199,
+        1026
+      ],
+      "destination": [
+        30,
+        395,
+        67,
+        99
+      ]
+    },
+    {
+      "frame": 13,
+      "sourceFrame": 13,
+      "source": "docs/art-source/motions/production-144/taiki_shuttle/clean-alpha.png",
+      "sourceSha256": "89f30ea4b22142e92423c9ddb960b1f60644b3c6f1560037e10d1a2084c347e4",
+      "crop": [
+        289,
+        787,
+        460,
+        1030
+      ],
+      "destination": [
+        155,
+        390,
+        73,
+        104
+      ]
+    },
+    {
+      "frame": 14,
+      "sourceFrame": 14,
+      "source": "docs/art-source/motions/production-144/taiki_shuttle/clean-alpha.png",
+      "sourceSha256": "89f30ea4b22142e92423c9ddb960b1f60644b3c6f1560037e10d1a2084c347e4",
+      "crop": [
+        536,
+        796,
+        722,
+        1030
+      ],
+      "destination": [
+        280,
+        394,
+        80,
+        100
+      ]
+    },
+    {
+      "frame": 15,
+      "sourceFrame": 15,
+      "source": "docs/art-source/motions/production-144/taiki_shuttle/clean-alpha.png",
+      "sourceSha256": "89f30ea4b22142e92423c9ddb960b1f60644b3c6f1560037e10d1a2084c347e4",
+      "crop": [
+        809,
+        791,
+        985,
+        1030
+      ],
+      "destination": [
+        410,
+        392,
+        75,
+        102
+      ]
+    },
+    {
+      "frame": 16,
+      "sourceFrame": 16,
+      "source": "docs/art-source/motions/production-144/taiki_shuttle/clean-alpha.png",
+      "sourceSha256": "89f30ea4b22142e92423c9ddb960b1f60644b3c6f1560037e10d1a2084c347e4",
+      "crop": [
+        47,
+        1054,
+        211,
+        1265
+      ],
+      "destination": [
+        29,
+        532,
+        70,
+        90
+      ]
+    },
+    {
+      "frame": 17,
+      "sourceFrame": 17,
+      "source": "docs/art-source/motions/production-144/taiki_shuttle/clean-alpha.png",
+      "sourceSha256": "89f30ea4b22142e92423c9ddb960b1f60644b3c6f1560037e10d1a2084c347e4",
+      "crop": [
+        298,
+        1074,
+        480,
+        1258
+      ],
+      "destination": [
+        153,
+        543,
+        78,
+        79
+      ]
+    },
+    {
+      "frame": 18,
+      "sourceFrame": 18,
+      "source": "docs/art-source/motions/production-144/taiki_shuttle/clean-alpha.png",
+      "sourceSha256": "89f30ea4b22142e92423c9ddb960b1f60644b3c6f1560037e10d1a2084c347e4",
+      "crop": [
+        541,
+        1088,
+        718,
+        1264
+      ],
+      "destination": [
+        282,
+        547,
+        76,
+        75
+      ]
+    },
+    {
+      "frame": 19,
+      "sourceFrame": 19,
+      "source": "docs/art-source/motions/production-144/taiki_shuttle/clean-alpha.png",
+      "sourceSha256": "89f30ea4b22142e92423c9ddb960b1f60644b3c6f1560037e10d1a2084c347e4",
+      "crop": [
+        776,
+        1146,
+        1008,
+        1254
+      ],
+      "destination": [
+        398,
+        576,
+        99,
+        46
+      ]
+    },
+    {
+      "frame": 20,
+      "sourceFrame": 20,
+      "source": "docs/art-source/motions/production-144/taiki_shuttle/clean-alpha.png",
+      "sourceSha256": "89f30ea4b22142e92423c9ddb960b1f60644b3c6f1560037e10d1a2084c347e4",
+      "crop": [
+        56,
+        1284,
+        203,
+        1525
+      ],
+      "destination": [
+        32,
+        647,
+        63,
+        103
+      ]
+    },
+    {
+      "frame": 21,
+      "sourceFrame": 21,
+      "source": "docs/art-source/motions/production-144/taiki_shuttle/clean-alpha.png",
+      "sourceSha256": "89f30ea4b22142e92423c9ddb960b1f60644b3c6f1560037e10d1a2084c347e4",
+      "crop": [
+        296,
+        1290,
+        459,
+        1526
+      ],
+      "destination": [
+        157,
+        649,
+        70,
+        101
+      ]
+    },
+    {
+      "frame": 22,
+      "sourceFrame": 22,
+      "source": "docs/art-source/motions/production-144/taiki_shuttle/clean-alpha.png",
+      "sourceSha256": "89f30ea4b22142e92423c9ddb960b1f60644b3c6f1560037e10d1a2084c347e4",
+      "crop": [
+        563,
+        1288,
+        708,
+        1525
+      ],
+      "destination": [
+        289,
+        649,
+        62,
+        101
+      ]
+    },
+    {
+      "frame": 23,
+      "sourceFrame": 23,
+      "source": "docs/art-source/motions/production-144/taiki_shuttle/clean-alpha.png",
+      "sourceSha256": "89f30ea4b22142e92423c9ddb960b1f60644b3c6f1560037e10d1a2084c347e4",
+      "crop": [
+        811,
+        1284,
+        961,
+        1526
+      ],
+      "destination": [
+        416,
+        646,
+        64,
+        104
+      ]
+    }
+  ]
+}

@@ -1,0 +1,419 @@
+{
+  "format": "uft-baked-frames-v1",
+  "scale": 0.4642857142857143,
+  "anchor": [
+    64,
+    110
+  ],
+  "runtimeSha256": "f1c215c5c86e29d9661498252b6d9cd5af3f787f9a8138ded0463a91538698eb",
+  "frames": [
+    {
+      "source": "docs/art-source/motions/batch-01/trophy_guardian/spaced-transparent.png",
+      "sourceSha256": "f7d4eba959b2f542bcda303f7675fb306fdc499df819b3345b2bdf055243cd98",
+      "crop": [
+        63,
+        43,
+        224,
+        251
+      ],
+      "frame": 0,
+      "destination": [
+        26,
+        13,
+        75,
+        97
+      ]
+    },
+    {
+      "source": "docs/art-source/motions/batch-01/trophy_guardian/spaced-transparent.png",
+      "sourceSha256": "f7d4eba959b2f542bcda303f7675fb306fdc499df819b3345b2bdf055243cd98",
+      "crop": [
+        316,
+        43,
+        478,
+        252
+      ],
+      "frame": 1,
+      "destination": [
+        154,
+        13,
+        75,
+        97
+      ]
+    },
+    {
+      "source": "docs/art-source/motions/batch-01/trophy_guardian/spaced-transparent.png",
+      "sourceSha256": "f7d4eba959b2f542bcda303f7675fb306fdc499df819b3345b2bdf055243cd98",
+      "crop": [
+        569,
+        42,
+        732,
+        251
+      ],
+      "frame": 2,
+      "destination": [
+        282,
+        13,
+        76,
+        97
+      ]
+    },
+    {
+      "source": "docs/art-source/motions/batch-01/trophy_guardian/spaced-transparent.png",
+      "sourceSha256": "f7d4eba959b2f542bcda303f7675fb306fdc499df819b3345b2bdf055243cd98",
+      "crop": [
+        815,
+        42,
+        978,
+        251
+      ],
+      "frame": 3,
+      "destination": [
+        410,
+        13,
+        76,
+        97
+      ]
+    },
+    {
+      "source": "docs/art-source/motions/batch-01/trophy_guardian/spaced-transparent.png",
+      "sourceSha256": "f7d4eba959b2f542bcda303f7675fb306fdc499df819b3345b2bdf055243cd98",
+      "crop": [
+        46,
+        290,
+        220,
+        496
+      ],
+      "frame": 4,
+      "destination": [
+        23,
+        142,
+        81,
+        96
+      ]
+    },
+    {
+      "source": "docs/art-source/motions/batch-01/trophy_guardian/spaced-transparent.png",
+      "sourceSha256": "f7d4eba959b2f542bcda303f7675fb306fdc499df819b3345b2bdf055243cd98",
+      "crop": [
+        293,
+        295,
+        478,
+        496
+      ],
+      "frame": 5,
+      "destination": [
+        149,
+        145,
+        86,
+        93
+      ]
+    },
+    {
+      "source": "docs/art-source/motions/batch-01/trophy_guardian/spaced-transparent.png",
+      "sourceSha256": "f7d4eba959b2f542bcda303f7675fb306fdc499df819b3345b2bdf055243cd98",
+      "crop": [
+        552,
+        296,
+        729,
+        497
+      ],
+      "frame": 6,
+      "destination": [
+        279,
+        145,
+        82,
+        93
+      ]
+    },
+    {
+      "source": "docs/art-source/motions/batch-01/trophy_guardian/spaced-transparent.png",
+      "sourceSha256": "f7d4eba959b2f542bcda303f7675fb306fdc499df819b3345b2bdf055243cd98",
+      "crop": [
+        810,
+        296,
+        985,
+        497
+      ],
+      "frame": 7,
+      "destination": [
+        407,
+        145,
+        81,
+        93
+      ]
+    },
+    {
+      "source": "docs/art-source/motions/batch-01/trophy_guardian/spaced-transparent.png",
+      "sourceSha256": "f7d4eba959b2f542bcda303f7675fb306fdc499df819b3345b2bdf055243cd98",
+      "crop": [
+        39,
+        539,
+        230,
+        750
+      ],
+      "frame": 8,
+      "destination": [
+        19,
+        268,
+        89,
+        98
+      ]
+    },
+    {
+      "source": "docs/art-source/motions/batch-01/trophy_guardian/spaced-transparent.png",
+      "sourceSha256": "f7d4eba959b2f542bcda303f7675fb306fdc499df819b3345b2bdf055243cd98",
+      "crop": [
+        283,
+        548,
+        472,
+        750
+      ],
+      "frame": 9,
+      "destination": [
+        148,
+        272,
+        88,
+        94
+      ]
+    },
+    {
+      "source": "docs/art-source/motions/batch-01/trophy_guardian/spaced-transparent.png",
+      "sourceSha256": "f7d4eba959b2f542bcda303f7675fb306fdc499df819b3345b2bdf055243cd98",
+      "crop": [
+        534,
+        546,
+        742,
+        749
+      ],
+      "frame": 10,
+      "destination": [
+        271,
+        272,
+        97,
+        94
+      ]
+    },
+    {
+      "source": "docs/art-source/motions/batch-01/trophy_guardian/spaced-transparent.png",
+      "sourceSha256": "f7d4eba959b2f542bcda303f7675fb306fdc499df819b3345b2bdf055243cd98",
+      "crop": [
+        794,
+        543,
+        984,
+        750
+      ],
+      "frame": 11,
+      "destination": [
+        404,
+        270,
+        88,
+        96
+      ]
+    },
+    {
+      "source": "docs/art-source/motions/batch-01/trophy_guardian/spaced-transparent.png",
+      "sourceSha256": "f7d4eba959b2f542bcda303f7675fb306fdc499df819b3345b2bdf055243cd98",
+      "crop": [
+        40,
+        826,
+        232,
+        1003
+      ],
+      "frame": 12,
+      "destination": [
+        19,
+        412,
+        89,
+        82
+      ]
+    },
+    {
+      "source": "docs/art-source/motions/batch-01/trophy_guardian/spaced-transparent.png",
+      "sourceSha256": "f7d4eba959b2f542bcda303f7675fb306fdc499df819b3345b2bdf055243cd98",
+      "crop": [
+        302,
+        783,
+        473,
+        1003
+      ],
+      "frame": 13,
+      "destination": [
+        152,
+        392,
+        79,
+        102
+      ]
+    },
+    {
+      "source": "docs/art-source/motions/batch-01/trophy_guardian/spaced-transparent.png",
+      "sourceSha256": "f7d4eba959b2f542bcda303f7675fb306fdc499df819b3345b2bdf055243cd98",
+      "crop": [
+        538,
+        800,
+        761,
+        1003
+      ],
+      "frame": 14,
+      "destination": [
+        268,
+        400,
+        104,
+        94
+      ]
+    },
+    {
+      "source": "docs/art-source/motions/batch-01/trophy_guardian/spaced-transparent.png",
+      "sourceSha256": "f7d4eba959b2f542bcda303f7675fb306fdc499df819b3345b2bdf055243cd98",
+      "crop": [
+        810,
+        793,
+        985,
+        1003
+      ],
+      "frame": 15,
+      "destination": [
+        407,
+        396,
+        81,
+        98
+      ]
+    },
+    {
+      "source": "docs/art-source/motions/batch-01/trophy_guardian/spaced-transparent.png",
+      "sourceSha256": "f7d4eba959b2f542bcda303f7675fb306fdc499df819b3345b2bdf055243cd98",
+      "crop": [
+        43,
+        1052,
+        217,
+        1229
+      ],
+      "frame": 16,
+      "destination": [
+        23,
+        540,
+        81,
+        82
+      ]
+    },
+    {
+      "source": "docs/art-source/motions/batch-01/trophy_guardian/spaced-transparent.png",
+      "sourceSha256": "f7d4eba959b2f542bcda303f7675fb306fdc499df819b3345b2bdf055243cd98",
+      "crop": [
+        294,
+        1067,
+        476,
+        1213
+      ],
+      "frame": 17,
+      "destination": [
+        150,
+        554,
+        84,
+        68
+      ]
+    },
+    {
+      "source": "docs/art-source/motions/batch-01/trophy_guardian/spaced-transparent.png",
+      "sourceSha256": "f7d4eba959b2f542bcda303f7675fb306fdc499df819b3345b2bdf055243cd98",
+      "crop": [
+        547,
+        1080,
+        722,
+        1208
+      ],
+      "frame": 18,
+      "destination": [
+        279,
+        563,
+        81,
+        59
+      ]
+    },
+    {
+      "source": "docs/art-source/motions/batch-01/trophy_guardian/spaced-transparent.png",
+      "sourceSha256": "f7d4eba959b2f542bcda303f7675fb306fdc499df819b3345b2bdf055243cd98",
+      "crop": [
+        776,
+        1121,
+        994,
+        1212
+      ],
+      "frame": 19,
+      "destination": [
+        397,
+        580,
+        101,
+        42
+      ]
+    },
+    {
+      "source": "docs/art-source/motions/batch-01/trophy_guardian/spaced-transparent.png",
+      "sourceSha256": "f7d4eba959b2f542bcda303f7675fb306fdc499df819b3345b2bdf055243cd98",
+      "crop": [
+        51,
+        1274,
+        229,
+        1479
+      ],
+      "frame": 20,
+      "destination": [
+        22,
+        655,
+        83,
+        95
+      ]
+    },
+    {
+      "source": "docs/art-source/motions/batch-01/trophy_guardian/spaced-transparent.png",
+      "sourceSha256": "f7d4eba959b2f542bcda303f7675fb306fdc499df819b3345b2bdf055243cd98",
+      "crop": [
+        308,
+        1259,
+        484,
+        1479
+      ],
+      "frame": 21,
+      "destination": [
+        151,
+        648,
+        82,
+        102
+      ]
+    },
+    {
+      "source": "docs/art-source/motions/batch-01/trophy_guardian/spaced-transparent.png",
+      "sourceSha256": "f7d4eba959b2f542bcda303f7675fb306fdc499df819b3345b2bdf055243cd98",
+      "crop": [
+        564,
+        1255,
+        730,
+        1479
+      ],
+      "frame": 22,
+      "destination": [
+        281,
+        646,
+        77,
+        104
+      ]
+    },
+    {
+      "source": "docs/art-source/motions/batch-01/trophy_guardian/spaced-transparent.png",
+      "sourceSha256": "f7d4eba959b2f542bcda303f7675fb306fdc499df819b3345b2bdf055243cd98",
+      "crop": [
+        812,
+        1259,
+        978,
+        1479
+      ],
+      "frame": 23,
+      "destination": [
+        409,
+        648,
+        77,
+        102
+      ]
+    }
+  ]
+}

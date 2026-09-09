@@ -8,7 +8,7 @@
     "ratingFormulaVersion": "horse-rating-v2",
     "skillFormulaVersion": "horse-skill-v2"
   },
-  "rosterHash": "15f19f20f7e4234d",
+  "rosterHash": "e4ea4debfadc7400",
   "units": [
     {
       "id": "special_week",
@@ -62,6 +62,13 @@
             "target": "CURRENT_TARGET"
           },
           {
+            "kind": "SUNDER_ARMOR_PCT",
+            "value": 0.2,
+            "duration": 4,
+            "target": "CURRENT_TARGET",
+            "radius": 1
+          },
+          {
             "kind": "DAMAGE",
             "value": 274,
             "damageType": "PHYSICAL",
@@ -81,7 +88,14 @@
           }
         ],
         "vfxKey": "vfx_dash_sashi",
-        "description": "[직선 돌파] 대상 방향으로 돌진해 주변 적에게 274 물리피해를 입히고 4초간 공격속도 +35%."
+        "description": "[직선 돌파] 대상 방향으로 돌진해 주변 적에게 274 물리피해를 입히고 4초간 공격속도 +35%. 돌파 직전에 범위 내 적의 방어력을 4초간 20% 감소.",
+        "choreography": {
+          "windup": 0.3333333333333333,
+          "recovery": 0.3333333333333333,
+          "pulseInterval": 0.16666666666666666,
+          "color": "#ffcc74",
+          "variant": "dash_break"
+        }
       },
       "source": {
         "powerIndex": 0.9552,
@@ -162,7 +176,7 @@
         "effects": [
           {
             "kind": "DAMAGE",
-            "value": 166,
+            "value": 83,
             "damageType": "MAGIC",
             "target": "LARGEST_ENEMY_CLUSTER",
             "radius": 2
@@ -172,10 +186,25 @@
             "stat": "moveSpeedHexPerSec",
             "value": 0.3,
             "duration": 3
+          },
+          {
+            "kind": "DAMAGE",
+            "value": 83,
+            "damageType": "MAGIC",
+            "target": "LARGEST_ENEMY_CLUSTER",
+            "radius": 2,
+            "delay": 0.4
           }
         ],
         "vfxKey": "vfx_aoe_burst",
-        "description": "[광역 폭발] 가장 밀집한 적 무리에 166 마법피해를 입힌다."
+        "description": "[광역 폭발] 가장 밀집한 적 무리에 166 마법피해를 입힌다. 기본 폭발 피해를 절반씩 나누어 최초 방출과 0.4초 뒤 두 번 발생.",
+        "choreography": {
+          "windup": 0.3333333333333333,
+          "recovery": 0.3333333333333333,
+          "pulseInterval": 0.16666666666666666,
+          "color": "#d2b5ff",
+          "variant": "burst_echo"
+        }
       },
       "source": {
         "powerIndex": 0.6264,
@@ -271,10 +300,25 @@
             "value": 0.1,
             "duration": 4,
             "target": "SELF"
+          },
+          {
+            "kind": "STAT_MUL",
+            "stat": "attackSpeed",
+            "value": 0.2,
+            "duration": 3,
+            "target": "SELF",
+            "delay": 0.3333333333333333
           }
         ],
         "vfxKey": "vfx_projectile",
-        "description": "[연속 스퍼트] 대상에게 101 물리피해를 3회 연속으로 가한다."
+        "description": "[연속 스퍼트] 대상에게 101 물리피해를 3회 연속으로 가한다. 세 번째 발사 후 3초간 공격속도 +20%.",
+        "choreography": {
+          "windup": 0,
+          "recovery": 0.3333333333333333,
+          "pulseInterval": 0.16666666666666666,
+          "color": "#ffcf8c",
+          "variant": "volley_focus"
+        }
       },
       "source": {
         "powerIndex": 0.8628,
@@ -380,10 +424,24 @@
             "stat": "moveSpeedHexPerSec",
             "value": 0.3,
             "duration": 3
+          },
+          {
+            "kind": "STAT_MUL",
+            "stat": "moveSpeedHexPerSec",
+            "value": 0.25,
+            "duration": 4,
+            "target": "ALL_ALLIES"
           }
         ],
         "vfxKey": "vfx_buff",
-        "description": "[주도권 장악] 6초간 아군 전체의 공격속도 +25%, 방어력/마저 +20."
+        "description": "[주도권 장악] 6초간 아군 전체의 공격속도 +25%, 방어력/마저 +20. 아군 전체가 4초간 이동속도 +25%.",
+        "choreography": {
+          "windup": 0.3333333333333333,
+          "recovery": 0.3333333333333333,
+          "pulseInterval": 0.16666666666666666,
+          "color": "#ffe69d",
+          "variant": "aura_rally"
+        }
       },
       "source": {
         "powerIndex": 0.9932,
@@ -461,6 +519,13 @@
         "manaCost": 80,
         "effects": [
           {
+            "kind": "SHRED_MR_PCT",
+            "value": 0.2,
+            "duration": 4,
+            "target": "LARGEST_ENEMY_CLUSTER",
+            "radius": 2
+          },
+          {
             "kind": "DAMAGE",
             "value": 211,
             "damageType": "MAGIC",
@@ -475,7 +540,14 @@
           }
         ],
         "vfxKey": "vfx_aoe_burst",
-        "description": "[광역 폭발] 가장 밀집한 적 무리에 211 마법피해를 입힌다."
+        "description": "[광역 폭발] 가장 밀집한 적 무리에 211 마법피해를 입힌다. 폭발 직전에 범위 내 적의 마법 저항력을 4초간 20% 감소.",
+        "choreography": {
+          "windup": 0.3333333333333333,
+          "recovery": 0.3333333333333333,
+          "pulseInterval": 0.16666666666666666,
+          "color": "#bba2ff",
+          "variant": "burst_shred"
+        }
       },
       "source": {
         "powerIndex": 0.9719,
@@ -555,6 +627,13 @@
         "manaCost": 80,
         "effects": [
           {
+            "kind": "SHRED_MR_PCT",
+            "value": 0.2,
+            "duration": 4,
+            "target": "LARGEST_ENEMY_CLUSTER",
+            "radius": 2
+          },
+          {
             "kind": "DAMAGE",
             "value": 209,
             "damageType": "MAGIC",
@@ -569,7 +648,14 @@
           }
         ],
         "vfxKey": "vfx_aoe_burst",
-        "description": "[광역 폭발] 가장 밀집한 적 무리에 209 마법피해를 입힌다."
+        "description": "[광역 폭발] 가장 밀집한 적 무리에 209 마법피해를 입힌다. 폭발 직전에 범위 내 적의 마법 저항력을 4초간 20% 감소.",
+        "choreography": {
+          "windup": 0.3333333333333333,
+          "recovery": 0.3333333333333333,
+          "pulseInterval": 0.16666666666666666,
+          "color": "#bba2ff",
+          "variant": "burst_shred"
+        }
       },
       "source": {
         "powerIndex": 0.9548,
@@ -670,10 +756,24 @@
             "kind": "CRIT_CHANCE_ADD",
             "value": 0.15,
             "duration": 5
+          },
+          {
+            "kind": "BURN",
+            "value": 0.01,
+            "duration": 3,
+            "target": "CURRENT_TARGET",
+            "radius": 1
           }
         ],
         "vfxKey": "vfx_dash_sashi",
-        "description": "[직선 돌파] 대상 방향으로 돌진해 주변 적에게 203 물리피해를 입히고 4초간 공격속도 +35%."
+        "description": "[직선 돌파] 대상 방향으로 돌진해 주변 적에게 203 물리피해를 입히고 4초간 공격속도 +35%. 돌파한 적을 3초간 불태워 초당 최대 체력 1%의 고정피해.",
+        "choreography": {
+          "windup": 0.3333333333333333,
+          "recovery": 0.3333333333333333,
+          "pulseInterval": 0.16666666666666666,
+          "color": "#ff9b76",
+          "variant": "dash_scorch"
+        }
       },
       "source": {
         "powerIndex": 0.8159,
@@ -769,10 +869,25 @@
             "value": 0.1,
             "duration": 4,
             "target": "SELF"
+          },
+          {
+            "kind": "STAT_MUL",
+            "stat": "attackSpeed",
+            "value": 0.2,
+            "duration": 3,
+            "target": "SELF",
+            "delay": 0.3333333333333333
           }
         ],
         "vfxKey": "vfx_projectile",
-        "description": "[연속 스퍼트] 대상에게 93 물리피해를 3회 연속으로 가한다."
+        "description": "[연속 스퍼트] 대상에게 93 물리피해를 3회 연속으로 가한다. 세 번째 발사 후 3초간 공격속도 +20%.",
+        "choreography": {
+          "windup": 0,
+          "recovery": 0.3333333333333333,
+          "pulseInterval": 0.16666666666666666,
+          "color": "#ffcf8c",
+          "variant": "volley_focus"
+        }
       },
       "source": {
         "powerIndex": 0.8886,
@@ -863,10 +978,30 @@
             "stat": "moveSpeedHexPerSec",
             "value": 0.3,
             "duration": 3
+          },
+          {
+            "kind": "BURN",
+            "value": 0.01,
+            "duration": 3,
+            "target": "LARGEST_ENEMY_CLUSTER",
+            "radius": 2
+          },
+          {
+            "kind": "WOUND",
+            "duration": 3,
+            "target": "LARGEST_ENEMY_CLUSTER",
+            "radius": 2
           }
         ],
         "vfxKey": "vfx_aoe_burst",
-        "description": "[광역 폭발] 가장 밀집한 적 무리에 235 마법피해를 입힌다."
+        "description": "[광역 폭발] 가장 밀집한 적 무리에 235 마법피해를 입힌다. 폭발 후 3초간 초당 최대 체력 1%의 고정피해와 회복 감소 33%.",
+        "choreography": {
+          "windup": 0.3333333333333333,
+          "recovery": 0.3333333333333333,
+          "pulseInterval": 0.16666666666666666,
+          "color": "#ffa17e",
+          "variant": "burst_flame"
+        }
       },
       "source": {
         "powerIndex": 0.9758,
@@ -948,7 +1083,7 @@
         "effects": [
           {
             "kind": "DAMAGE",
-            "value": 235,
+            "value": 118,
             "damageType": "MAGIC",
             "target": "LARGEST_ENEMY_CLUSTER",
             "radius": 2
@@ -958,10 +1093,25 @@
             "stat": "moveSpeedHexPerSec",
             "value": 0.3,
             "duration": 3
+          },
+          {
+            "kind": "DAMAGE",
+            "value": 118,
+            "damageType": "MAGIC",
+            "target": "LARGEST_ENEMY_CLUSTER",
+            "radius": 2,
+            "delay": 0.4
           }
         ],
         "vfxKey": "vfx_aoe_burst",
-        "description": "[광역 폭발] 가장 밀집한 적 무리에 235 마법피해를 입힌다."
+        "description": "[광역 폭발] 가장 밀집한 적 무리에 235 마법피해를 입힌다. 기본 폭발 피해를 절반씩 나누어 최초 방출과 0.4초 뒤 두 번 발생.",
+        "choreography": {
+          "windup": 0.3333333333333333,
+          "recovery": 0.3333333333333333,
+          "pulseInterval": 0.16666666666666666,
+          "color": "#d2b5ff",
+          "variant": "burst_echo"
+        }
       },
       "source": {
         "powerIndex": 0.9886,
@@ -1047,6 +1197,13 @@
             "target": "CURRENT_TARGET"
           },
           {
+            "kind": "SUNDER_ARMOR_PCT",
+            "value": 0.2,
+            "duration": 4,
+            "target": "CURRENT_TARGET",
+            "radius": 1
+          },
+          {
             "kind": "DAMAGE",
             "value": 220,
             "damageType": "PHYSICAL",
@@ -1066,7 +1223,14 @@
           }
         ],
         "vfxKey": "vfx_dash_sashi",
-        "description": "[직선 돌파] 대상 방향으로 돌진해 주변 적에게 220 물리피해를 입히고 4초간 공격속도 +35%."
+        "description": "[직선 돌파] 대상 방향으로 돌진해 주변 적에게 220 물리피해를 입히고 4초간 공격속도 +35%. 돌파 직전에 범위 내 적의 방어력을 4초간 20% 감소.",
+        "choreography": {
+          "windup": 0.3333333333333333,
+          "recovery": 0.3333333333333333,
+          "pulseInterval": 0.16666666666666666,
+          "color": "#ffcc74",
+          "variant": "dash_break"
+        }
       },
       "source": {
         "powerIndex": 0.8541,
@@ -1163,10 +1327,25 @@
             "kind": "CRIT_CHANCE_ADD",
             "value": 0.15,
             "duration": 5
+          },
+          {
+            "kind": "STAT_MUL",
+            "stat": "moveSpeedHexPerSec",
+            "value": -0.25,
+            "duration": 3,
+            "target": "LARGEST_ENEMY_CLUSTER",
+            "radius": 1
           }
         ],
         "vfxKey": "vfx_stun",
-        "description": "[진로 봉쇄] 대상 주변 적에게 129 마법피해를 입히고 1.5초간 기절시킨다."
+        "description": "[진로 봉쇄] 대상 주변 적에게 129 마법피해를 입히고 1.5초간 기절시킨다. 기절과 함께 적의 이동속도를 3초간 25% 감소.",
+        "choreography": {
+          "windup": 0.3333333333333333,
+          "recovery": 0.3333333333333333,
+          "pulseInterval": 0.16666666666666666,
+          "color": "#cab4ff",
+          "variant": "control_bind"
+        }
       },
       "source": {
         "powerIndex": 0.7654,
@@ -1271,10 +1450,35 @@
             "stat": "moveSpeedHexPerSec",
             "value": 0.3,
             "duration": 3
+          },
+          {
+            "kind": "HEAL_MAXHP_PCT",
+            "value": 0.02,
+            "target": "ALL_ALLIES",
+            "delay": 0
+          },
+          {
+            "kind": "HEAL_MAXHP_PCT",
+            "value": 0.02,
+            "target": "ALL_ALLIES",
+            "delay": 0.3
+          },
+          {
+            "kind": "HEAL_MAXHP_PCT",
+            "value": 0.02,
+            "target": "ALL_ALLIES",
+            "delay": 0.6
           }
         ],
         "vfxKey": "vfx_buff",
-        "description": "[주도권 장악] 6초간 아군 전체의 공격속도 +25%, 방어력/마저 +20."
+        "description": "[주도권 장악] 6초간 아군 전체의 공격속도 +25%, 방어력/마저 +20. 오라 방출 후 0.3초 간격으로 아군 전체의 최대 체력 2%씩 세 번 회복.",
+        "choreography": {
+          "windup": 0.3333333333333333,
+          "recovery": 0.3333333333333333,
+          "pulseInterval": 0.16666666666666666,
+          "color": "#97efd0",
+          "variant": "aura_sustain"
+        }
       },
       "source": {
         "powerIndex": 0.9368,
@@ -1376,10 +1580,22 @@
             "value": 0.1,
             "duration": 4,
             "target": "SELF"
+          },
+          {
+            "kind": "HEAL_MISSING_PCT",
+            "value": 0.12,
+            "target": "LOWEST_HP_ALLY"
           }
         ],
         "vfxKey": "vfx_heal",
-        "description": "[팀 페이스 업] 체력이 가장 낮은 아군을 246 회복시키고 아군 전체 공격력/주문력을 5초간 +20%."
+        "description": "[팀 페이스 업] 체력이 가장 낮은 아군을 246 회복시키고 아군 전체 공격력/주문력을 5초간 +20%. 선택한 아군의 잃은 체력 12%를 추가 회복.",
+        "choreography": {
+          "windup": 0.3333333333333333,
+          "recovery": 0.3333333333333333,
+          "pulseInterval": 0.16666666666666666,
+          "color": "#baffbc",
+          "variant": "heal_rescue"
+        }
       },
       "source": {
         "powerIndex": 0.8731,
@@ -1471,20 +1687,28 @@
             "target": "ALL_ENEMIES"
           },
           {
-            "kind": "APPLY_STATUS",
-            "status": "TAUNT",
-            "duration": 2.5,
-            "radius": 2
-          },
-          {
             "kind": "SHIELD_MAXHP_PCT",
             "value": 0.1,
             "duration": 4,
             "target": "SELF"
+          },
+          {
+            "kind": "DAMAGE_MAXHP_PCT",
+            "value": 0.04,
+            "damageType": "MAGIC",
+            "target": "ALL_ENEMIES",
+            "radius": 2
           }
         ],
         "vfxKey": "vfx_shield",
-        "description": "[선두 방벽] 최대 체력 32% 보호막(5초)을 얻고 2칸 내 적을 2.5초간 도발한다."
+        "description": "[선두 방벽] 최대 체력 32% 보호막(5초)을 얻고 2칸 내 적을 2.5초간 도발한다. 방벽을 펼치며 2칸 내 적에게 대상 최대 체력 4%의 마법피해.",
+        "choreography": {
+          "windup": 0.3333333333333333,
+          "recovery": 0.3333333333333333,
+          "pulseInterval": 0.16666666666666666,
+          "color": "#ffcc96",
+          "variant": "shield_rebound"
+        }
       },
       "source": {
         "powerIndex": 0.9601,
@@ -1564,6 +1788,12 @@
         "manaCost": 70,
         "effects": [
           {
+            "kind": "SUNDER_ARMOR_PCT",
+            "value": 0.2,
+            "duration": 4,
+            "target": "CURRENT_TARGET"
+          },
+          {
             "kind": "DAMAGE",
             "value": 94,
             "damageType": "PHYSICAL",
@@ -1582,7 +1812,14 @@
           }
         ],
         "vfxKey": "vfx_projectile",
-        "description": "[연속 스퍼트] 대상에게 94 물리피해를 3회 연속으로 가한다."
+        "description": "[연속 스퍼트] 대상에게 94 물리피해를 3회 연속으로 가한다. 첫 발 직전에 대상의 방어력을 4초간 20% 감소.",
+        "choreography": {
+          "windup": 0,
+          "recovery": 0.3333333333333333,
+          "pulseInterval": 0.16666666666666666,
+          "color": "#ffe09c",
+          "variant": "volley_pierce"
+        }
       },
       "source": {
         "powerIndex": 0.8917,
@@ -1684,10 +1921,25 @@
               "when": "TARGET_HP_BELOW",
               "threshold": 0.5
             }
+          },
+          {
+            "kind": "STAT_MUL",
+            "stat": "moveSpeedHexPerSec",
+            "value": -0.25,
+            "duration": 3,
+            "target": "LARGEST_ENEMY_CLUSTER",
+            "radius": 1
           }
         ],
         "vfxKey": "vfx_stun",
-        "description": "[진로 봉쇄] 대상 주변 적에게 146 마법피해를 입히고 1.5초간 기절시킨다."
+        "description": "[진로 봉쇄] 대상 주변 적에게 146 마법피해를 입히고 1.5초간 기절시킨다. 기절과 함께 적의 이동속도를 3초간 25% 감소.",
+        "choreography": {
+          "windup": 0.3333333333333333,
+          "recovery": 0.3333333333333333,
+          "pulseInterval": 0.16666666666666666,
+          "color": "#cab4ff",
+          "variant": "control_bind"
+        }
       },
       "source": {
         "powerIndex": 0.9212,
@@ -1776,20 +2028,28 @@
             "target": "ALL_ENEMIES"
           },
           {
-            "kind": "APPLY_STATUS",
-            "status": "TAUNT",
-            "duration": 2.5,
-            "radius": 2
-          },
-          {
             "kind": "SHIELD_MAXHP_PCT",
             "value": 0.1,
             "duration": 4,
             "target": "SELF"
+          },
+          {
+            "kind": "DAMAGE_MAXHP_PCT",
+            "value": 0.04,
+            "damageType": "MAGIC",
+            "target": "ALL_ENEMIES",
+            "radius": 2
           }
         ],
         "vfxKey": "vfx_shield",
-        "description": "[선두 방벽] 최대 체력 31% 보호막(5초)을 얻고 2칸 내 적을 2.5초간 도발한다."
+        "description": "[선두 방벽] 최대 체력 31% 보호막(5초)을 얻고 2칸 내 적을 2.5초간 도발한다. 방벽을 펼치며 2칸 내 적에게 대상 최대 체력 4%의 마법피해.",
+        "choreography": {
+          "windup": 0.3333333333333333,
+          "recovery": 0.3333333333333333,
+          "pulseInterval": 0.16666666666666666,
+          "color": "#ffcc96",
+          "variant": "shield_rebound"
+        }
       },
       "source": {
         "powerIndex": 0.8355,
@@ -1885,10 +2145,23 @@
             "value": 0.1,
             "duration": 4,
             "target": "SELF"
+          },
+          {
+            "kind": "HEAL_MAXHP_PCT",
+            "value": 0.08,
+            "target": "SELF",
+            "delay": 0.3333333333333333
           }
         ],
         "vfxKey": "vfx_projectile",
-        "description": "[연속 스퍼트] 대상에게 84 물리피해를 3회 연속으로 가한다."
+        "description": "[연속 스퍼트] 대상에게 84 물리피해를 3회 연속으로 가한다. 세 번째 발사 때 자신의 최대 체력 8% 회복.",
+        "choreography": {
+          "windup": 0,
+          "recovery": 0.3333333333333333,
+          "pulseInterval": 0.16666666666666666,
+          "color": "#96eacb",
+          "variant": "volley_siphon"
+        }
       },
       "source": {
         "powerIndex": 0.7491,
@@ -1995,10 +2268,23 @@
             "stat": "moveSpeedHexPerSec",
             "value": 0.3,
             "duration": 3
+          },
+          {
+            "kind": "SHIELD_MAXHP_PCT",
+            "value": 0.08,
+            "duration": 4,
+            "target": "ALL_ALLIES"
           }
         ],
         "vfxKey": "vfx_buff",
-        "description": "[주도권 장악] 6초간 아군 전체의 공격속도 +25%, 방어력/마저 +20."
+        "description": "[주도권 장악] 6초간 아군 전체의 공격속도 +25%, 방어력/마저 +20. 아군 전체가 최대 체력 8% 보호막을 4초간 획득.",
+        "choreography": {
+          "windup": 0.3333333333333333,
+          "recovery": 0.3333333333333333,
+          "pulseInterval": 0.16666666666666666,
+          "color": "#a9dfff",
+          "variant": "aura_guard"
+        }
       },
       "source": {
         "powerIndex": 0.6826,
@@ -2100,10 +2386,23 @@
             "value": 0.1,
             "duration": 4,
             "target": "SELF"
+          },
+          {
+            "kind": "SHIELD_MAXHP_PCT",
+            "value": 0.12,
+            "duration": 3,
+            "target": "SELF"
           }
         ],
         "vfxKey": "vfx_dash_senko",
-        "description": "[직선 돌파] 대상 방향으로 돌진해 주변 적에게 224 물리피해를 입히고 4초간 공격속도 +35%."
+        "description": "[직선 돌파] 대상 방향으로 돌진해 주변 적에게 224 물리피해를 입히고 4초간 공격속도 +35%. 돌파 직후 최대 체력 12% 보호막을 3초간 획득.",
+        "choreography": {
+          "windup": 0.3333333333333333,
+          "recovery": 0.3333333333333333,
+          "pulseInterval": 0.16666666666666666,
+          "color": "#8ed9ff",
+          "variant": "dash_guard"
+        }
       },
       "source": {
         "powerIndex": 0.91,
@@ -2188,6 +2487,13 @@
             "target": "CURRENT_TARGET"
           },
           {
+            "kind": "SUNDER_ARMOR_PCT",
+            "value": 0.2,
+            "duration": 4,
+            "target": "CURRENT_TARGET",
+            "radius": 1
+          },
+          {
             "kind": "DAMAGE",
             "value": 198,
             "damageType": "PHYSICAL",
@@ -2208,7 +2514,14 @@
           }
         ],
         "vfxKey": "vfx_dash_nige",
-        "description": "[직선 돌파] 대상 방향으로 돌진해 주변 적에게 198 물리피해를 입히고 4초간 공격속도 +35%."
+        "description": "[직선 돌파] 대상 방향으로 돌진해 주변 적에게 198 물리피해를 입히고 4초간 공격속도 +35%. 돌파 직전에 범위 내 적의 방어력을 4초간 20% 감소.",
+        "choreography": {
+          "windup": 0.3333333333333333,
+          "recovery": 0.3333333333333333,
+          "pulseInterval": 0.16666666666666666,
+          "color": "#ffcc74",
+          "variant": "dash_break"
+        }
       },
       "source": {
         "powerIndex": 0.7115,
@@ -2287,6 +2600,13 @@
         "manaCost": 80,
         "effects": [
           {
+            "kind": "SHRED_MR_PCT",
+            "value": 0.2,
+            "duration": 4,
+            "target": "LARGEST_ENEMY_CLUSTER",
+            "radius": 2
+          },
+          {
             "kind": "DAMAGE",
             "value": 208,
             "damageType": "MAGIC",
@@ -2301,7 +2621,14 @@
           }
         ],
         "vfxKey": "vfx_aoe_burst",
-        "description": "[광역 폭발] 가장 밀집한 적 무리에 208 마법피해를 입힌다."
+        "description": "[광역 폭발] 가장 밀집한 적 무리에 208 마법피해를 입힌다. 폭발 직전에 범위 내 적의 마법 저항력을 4초간 20% 감소.",
+        "choreography": {
+          "windup": 0.3333333333333333,
+          "recovery": 0.3333333333333333,
+          "pulseInterval": 0.16666666666666666,
+          "color": "#bba2ff",
+          "variant": "burst_shred"
+        }
       },
       "source": {
         "powerIndex": 0.9339,
@@ -2407,10 +2734,23 @@
             "stat": "moveSpeedHexPerSec",
             "value": 0.3,
             "duration": 3
+          },
+          {
+            "kind": "SHIELD_MAXHP_PCT",
+            "value": 0.08,
+            "duration": 4,
+            "target": "ALL_ALLIES"
           }
         ],
         "vfxKey": "vfx_buff",
-        "description": "[주도권 장악] 6초간 아군 전체의 공격속도 +25%, 방어력/마저 +20."
+        "description": "[주도권 장악] 6초간 아군 전체의 공격속도 +25%, 방어력/마저 +20. 아군 전체가 최대 체력 8% 보호막을 4초간 획득.",
+        "choreography": {
+          "windup": 0.3333333333333333,
+          "recovery": 0.3333333333333333,
+          "pulseInterval": 0.16666666666666666,
+          "color": "#a9dfff",
+          "variant": "aura_guard"
+        }
       },
       "source": {
         "powerIndex": 0.8305,
@@ -2490,7 +2830,7 @@
         "effects": [
           {
             "kind": "DAMAGE",
-            "value": 234,
+            "value": 117,
             "damageType": "MAGIC",
             "target": "LARGEST_ENEMY_CLUSTER",
             "radius": 2
@@ -2500,10 +2840,25 @@
             "stat": "moveSpeedHexPerSec",
             "value": 0.3,
             "duration": 3
+          },
+          {
+            "kind": "DAMAGE",
+            "value": 117,
+            "damageType": "MAGIC",
+            "target": "LARGEST_ENEMY_CLUSTER",
+            "radius": 2,
+            "delay": 0.4
           }
         ],
         "vfxKey": "vfx_aoe_burst",
-        "description": "[광역 폭발] 가장 밀집한 적 무리에 234 마법피해를 입힌다."
+        "description": "[광역 폭발] 가장 밀집한 적 무리에 234 마법피해를 입힌다. 기본 폭발 피해를 절반씩 나누어 최초 방출과 0.4초 뒤 두 번 발생.",
+        "choreography": {
+          "windup": 0.3333333333333333,
+          "recovery": 0.3333333333333333,
+          "pulseInterval": 0.16666666666666666,
+          "color": "#d2b5ff",
+          "variant": "burst_echo"
+        }
       },
       "source": {
         "powerIndex": 0.975,
@@ -2587,6 +2942,13 @@
             "target": "CURRENT_TARGET"
           },
           {
+            "kind": "SUNDER_ARMOR_PCT",
+            "value": 0.2,
+            "duration": 4,
+            "target": "CURRENT_TARGET",
+            "radius": 1
+          },
+          {
             "kind": "DAMAGE",
             "value": 196,
             "damageType": "PHYSICAL",
@@ -2606,7 +2968,14 @@
           }
         ],
         "vfxKey": "vfx_dash_sashi",
-        "description": "[직선 돌파] 대상 방향으로 돌진해 주변 적에게 196 물리피해를 입히고 4초간 공격속도 +35%."
+        "description": "[직선 돌파] 대상 방향으로 돌진해 주변 적에게 196 물리피해를 입히고 4초간 공격속도 +35%. 돌파 직전에 범위 내 적의 방어력을 4초간 20% 감소.",
+        "choreography": {
+          "windup": 0.3333333333333333,
+          "recovery": 0.3333333333333333,
+          "pulseInterval": 0.16666666666666666,
+          "color": "#ffcc74",
+          "variant": "dash_break"
+        }
       },
       "source": {
         "powerIndex": 0.6647,
@@ -2711,10 +3080,35 @@
             "stat": "moveSpeedHexPerSec",
             "value": 0.3,
             "duration": 3
+          },
+          {
+            "kind": "HEAL_MAXHP_PCT",
+            "value": 0.02,
+            "target": "ALL_ALLIES",
+            "delay": 0
+          },
+          {
+            "kind": "HEAL_MAXHP_PCT",
+            "value": 0.02,
+            "target": "ALL_ALLIES",
+            "delay": 0.3
+          },
+          {
+            "kind": "HEAL_MAXHP_PCT",
+            "value": 0.02,
+            "target": "ALL_ALLIES",
+            "delay": 0.6
           }
         ],
         "vfxKey": "vfx_buff",
-        "description": "[주도권 장악] 6초간 아군 전체의 공격속도 +25%, 방어력/마저 +20."
+        "description": "[주도권 장악] 6초간 아군 전체의 공격속도 +25%, 방어력/마저 +20. 오라 방출 후 0.3초 간격으로 아군 전체의 최대 체력 2%씩 세 번 회복.",
+        "choreography": {
+          "windup": 0.3333333333333333,
+          "recovery": 0.3333333333333333,
+          "pulseInterval": 0.16666666666666666,
+          "color": "#97efd0",
+          "variant": "aura_sustain"
+        }
       },
       "source": {
         "powerIndex": 0.1974,
@@ -2818,10 +3212,35 @@
             "stat": "moveSpeedHexPerSec",
             "value": 0.3,
             "duration": 3
+          },
+          {
+            "kind": "HEAL_MAXHP_PCT",
+            "value": 0.02,
+            "target": "ALL_ALLIES",
+            "delay": 0
+          },
+          {
+            "kind": "HEAL_MAXHP_PCT",
+            "value": 0.02,
+            "target": "ALL_ALLIES",
+            "delay": 0.3
+          },
+          {
+            "kind": "HEAL_MAXHP_PCT",
+            "value": 0.02,
+            "target": "ALL_ALLIES",
+            "delay": 0.6
           }
         ],
         "vfxKey": "vfx_buff",
-        "description": "[주도권 장악] 6초간 아군 전체의 공격속도 +25%, 방어력/마저 +20."
+        "description": "[주도권 장악] 6초간 아군 전체의 공격속도 +25%, 방어력/마저 +20. 오라 방출 후 0.3초 간격으로 아군 전체의 최대 체력 2%씩 세 번 회복.",
+        "choreography": {
+          "windup": 0.3333333333333333,
+          "recovery": 0.3333333333333333,
+          "pulseInterval": 0.16666666666666666,
+          "color": "#97efd0",
+          "variant": "aura_sustain"
+        }
       },
       "source": {
         "powerIndex": 0.2775,
@@ -2912,20 +3331,26 @@
             "target": "ALL_ENEMIES"
           },
           {
-            "kind": "APPLY_STATUS",
-            "status": "TAUNT",
-            "duration": 2.5,
-            "radius": 2
-          },
-          {
             "kind": "SHIELD_MAXHP_PCT",
             "value": 0.1,
             "duration": 4,
             "target": "SELF"
+          },
+          {
+            "kind": "HEAL_MISSING_PCT",
+            "value": 0.18,
+            "target": "SELF"
           }
         ],
         "vfxKey": "vfx_shield",
-        "description": "[선두 방벽] 최대 체력 30% 보호막(5초)을 얻고 2칸 내 적을 2.5초간 도발한다."
+        "description": "[선두 방벽] 최대 체력 30% 보호막(5초)을 얻고 2칸 내 적을 2.5초간 도발한다. 방벽을 펼치며 자신의 잃은 체력 18% 회복.",
+        "choreography": {
+          "windup": 0.3333333333333333,
+          "recovery": 0.3333333333333333,
+          "pulseInterval": 0.16666666666666666,
+          "color": "#b5efd1",
+          "variant": "shield_resolve"
+        }
       },
       "source": {
         "powerIndex": 0.584,
@@ -3030,10 +3455,23 @@
             "stat": "moveSpeedHexPerSec",
             "value": 0.3,
             "duration": 3
+          },
+          {
+            "kind": "SHIELD_MAXHP_PCT",
+            "value": 0.08,
+            "duration": 4,
+            "target": "ALL_ALLIES"
           }
         ],
         "vfxKey": "vfx_buff",
-        "description": "[주도권 장악] 6초간 아군 전체의 공격속도 +25%, 방어력/마저 +20."
+        "description": "[주도권 장악] 6초간 아군 전체의 공격속도 +25%, 방어력/마저 +20. 아군 전체가 최대 체력 8% 보호막을 4초간 획득.",
+        "choreography": {
+          "windup": 0.3333333333333333,
+          "recovery": 0.3333333333333333,
+          "pulseInterval": 0.16666666666666666,
+          "color": "#a9dfff",
+          "variant": "aura_guard"
+        }
       },
       "source": {
         "powerIndex": 0.7005,
@@ -3127,10 +3565,23 @@
             "value": 0.1,
             "duration": 4,
             "target": "SELF"
+          },
+          {
+            "kind": "HEAL_MAXHP_PCT",
+            "value": 0.08,
+            "target": "SELF",
+            "delay": 0.3333333333333333
           }
         ],
         "vfxKey": "vfx_projectile",
-        "description": "[연속 스퍼트] 대상에게 105 물리피해를 3회 연속으로 가한다."
+        "description": "[연속 스퍼트] 대상에게 105 물리피해를 3회 연속으로 가한다. 세 번째 발사 때 자신의 최대 체력 8% 회복.",
+        "choreography": {
+          "windup": 0,
+          "recovery": 0.3333333333333333,
+          "pulseInterval": 0.16666666666666666,
+          "color": "#96eacb",
+          "variant": "volley_siphon"
+        }
       },
       "source": {
         "powerIndex": 0.9791,
@@ -3215,6 +3666,13 @@
             "target": "CURRENT_TARGET"
           },
           {
+            "kind": "SUNDER_ARMOR_PCT",
+            "value": 0.2,
+            "duration": 4,
+            "target": "CURRENT_TARGET",
+            "radius": 1
+          },
+          {
             "kind": "DAMAGE",
             "value": 170,
             "damageType": "PHYSICAL",
@@ -3234,7 +3692,14 @@
           }
         ],
         "vfxKey": "vfx_dash_sashi",
-        "description": "[직선 돌파] 대상 방향으로 돌진해 주변 적에게 170 물리피해를 입히고 4초간 공격속도 +35%."
+        "description": "[직선 돌파] 대상 방향으로 돌진해 주변 적에게 170 물리피해를 입히고 4초간 공격속도 +35%. 돌파 직전에 범위 내 적의 방어력을 4초간 20% 감소.",
+        "choreography": {
+          "windup": 0.3333333333333333,
+          "recovery": 0.3333333333333333,
+          "pulseInterval": 0.16666666666666666,
+          "color": "#ffcc74",
+          "variant": "dash_break"
+        }
       },
       "source": {
         "powerIndex": 0.3364,
@@ -3339,10 +3804,24 @@
               "when": "TARGET_HP_BELOW",
               "threshold": 0.5
             }
+          },
+          {
+            "kind": "BURN",
+            "value": 0.01,
+            "duration": 3,
+            "target": "CURRENT_TARGET",
+            "radius": 1
           }
         ],
         "vfxKey": "vfx_dash_oikomi",
-        "description": "[직선 돌파] 대상 방향으로 돌진해 주변 적에게 172 물리피해를 입히고 4초간 공격속도 +35%."
+        "description": "[직선 돌파] 대상 방향으로 돌진해 주변 적에게 172 물리피해를 입히고 4초간 공격속도 +35%. 돌파한 적을 3초간 불태워 초당 최대 체력 1%의 고정피해.",
+        "choreography": {
+          "windup": 0.3333333333333333,
+          "recovery": 0.3333333333333333,
+          "pulseInterval": 0.16666666666666666,
+          "color": "#ff9b76",
+          "variant": "dash_scorch"
+        }
       },
       "source": {
         "powerIndex": 0.3864,
@@ -3441,10 +3920,23 @@
             "value": 0.1,
             "duration": 4,
             "target": "SELF"
+          },
+          {
+            "kind": "SHIELD_MAXHP_PCT",
+            "value": 0.12,
+            "duration": 3,
+            "target": "SELF"
           }
         ],
         "vfxKey": "vfx_dash_senko",
-        "description": "[직선 돌파] 대상 방향으로 돌진해 주변 적에게 174 물리피해를 입히고 4초간 공격속도 +35%."
+        "description": "[직선 돌파] 대상 방향으로 돌진해 주변 적에게 174 물리피해를 입히고 4초간 공격속도 +35%. 돌파 직후 최대 체력 12% 보호막을 3초간 획득.",
+        "choreography": {
+          "windup": 0.3333333333333333,
+          "recovery": 0.3333333333333333,
+          "pulseInterval": 0.16666666666666666,
+          "color": "#8ed9ff",
+          "variant": "dash_guard"
+        }
       },
       "source": {
         "powerIndex": 0.4561,
@@ -3532,8 +4024,8 @@
           },
           {
             "kind": "APPLY_STATUS",
-            "status": "STUN",
-            "duration": 1.5,
+            "status": "SILENCE",
+            "duration": 2.5,
             "target": "LARGEST_ENEMY_CLUSTER",
             "radius": 1
           },
@@ -3548,7 +4040,14 @@
           }
         ],
         "vfxKey": "vfx_stun",
-        "description": "[진로 봉쇄] 대상 주변 적에게 104 마법피해를 입히고 1.5초간 기절시킨다."
+        "description": "[진로 봉쇄] 대상 주변 적에게 104 마법피해를 입히고 2.5초간 침묵시킨다. 기절 대신 2.5초 침묵: 이동과 기본 공격은 가능하지만 스킬 시전을 차단.",
+        "choreography": {
+          "windup": 0.3333333333333333,
+          "recovery": 0.3333333333333333,
+          "pulseInterval": 0.16666666666666666,
+          "color": "#d4adff",
+          "variant": "control_silence"
+        }
       },
       "source": {
         "powerIndex": 0.4112,
@@ -3636,7 +4135,7 @@
           {
             "kind": "APPLY_STATUS",
             "status": "STUN",
-            "duration": 1.5,
+            "duration": 0.75,
             "target": "LARGEST_ENEMY_CLUSTER",
             "radius": 1
           },
@@ -3644,10 +4143,25 @@
             "kind": "CRIT_CHANCE_ADD",
             "value": 0.15,
             "duration": 5
+          },
+          {
+            "kind": "STAT_MUL",
+            "stat": "attackSpeed",
+            "value": -0.2,
+            "duration": 3,
+            "target": "LARGEST_ENEMY_CLUSTER",
+            "radius": 1
           }
         ],
         "vfxKey": "vfx_stun",
-        "description": "[진로 봉쇄] 대상 주변 적에게 114 마법피해를 입히고 1.5초간 기절시킨다."
+        "description": "[진로 봉쇄] 대상 주변 적에게 114 마법피해를 입히고 0.75초간 기절시킨다. 기절 시간을 0.75초로 줄이고 적의 공격속도를 3초간 20% 감소.",
+        "choreography": {
+          "windup": 0.3333333333333333,
+          "recovery": 0.3333333333333333,
+          "pulseInterval": 0.16666666666666666,
+          "color": "#a1e7ff",
+          "variant": "control_frost"
+        }
       },
       "source": {
         "powerIndex": 0.5083,
@@ -3728,7 +4242,7 @@
         "effects": [
           {
             "kind": "DAMAGE",
-            "value": 169,
+            "value": 85,
             "damageType": "MAGIC",
             "target": "LARGEST_ENEMY_CLUSTER",
             "radius": 2
@@ -3738,10 +4252,25 @@
             "stat": "moveSpeedHexPerSec",
             "value": 0.3,
             "duration": 3
+          },
+          {
+            "kind": "DAMAGE",
+            "value": 85,
+            "damageType": "MAGIC",
+            "target": "LARGEST_ENEMY_CLUSTER",
+            "radius": 2,
+            "delay": 0.4
           }
         ],
         "vfxKey": "vfx_aoe_burst",
-        "description": "[광역 폭발] 가장 밀집한 적 무리에 169 마법피해를 입힌다."
+        "description": "[광역 폭발] 가장 밀집한 적 무리에 169 마법피해를 입힌다. 기본 폭발 피해를 절반씩 나누어 최초 방출과 0.4초 뒤 두 번 발생.",
+        "choreography": {
+          "windup": 0.3333333333333333,
+          "recovery": 0.3333333333333333,
+          "pulseInterval": 0.16666666666666666,
+          "color": "#d2b5ff",
+          "variant": "burst_echo"
+        }
       },
       "source": {
         "powerIndex": 0.7242,
@@ -3821,6 +4350,13 @@
         "manaCost": 80,
         "effects": [
           {
+            "kind": "SHRED_MR_PCT",
+            "value": 0.2,
+            "duration": 4,
+            "target": "LARGEST_ENEMY_CLUSTER",
+            "radius": 2
+          },
+          {
             "kind": "DAMAGE",
             "value": 144,
             "damageType": "MAGIC",
@@ -3835,7 +4371,14 @@
           }
         ],
         "vfxKey": "vfx_aoe_burst",
-        "description": "[광역 폭발] 가장 밀집한 적 무리에 144 마법피해를 입힌다."
+        "description": "[광역 폭발] 가장 밀집한 적 무리에 144 마법피해를 입힌다. 폭발 직전에 범위 내 적의 마법 저항력을 4초간 20% 감소.",
+        "choreography": {
+          "windup": 0.3333333333333333,
+          "recovery": 0.3333333333333333,
+          "pulseInterval": 0.16666666666666666,
+          "color": "#bba2ff",
+          "variant": "burst_shred"
+        }
       },
       "source": {
         "powerIndex": 0.3333,
@@ -3923,7 +4466,7 @@
           {
             "kind": "APPLY_STATUS",
             "status": "STUN",
-            "duration": 1.5,
+            "duration": 0.75,
             "target": "LARGEST_ENEMY_CLUSTER",
             "radius": 1
           },
@@ -3931,10 +4474,25 @@
             "kind": "CRIT_CHANCE_ADD",
             "value": 0.15,
             "duration": 5
+          },
+          {
+            "kind": "STAT_MUL",
+            "stat": "attackSpeed",
+            "value": -0.2,
+            "duration": 3,
+            "target": "LARGEST_ENEMY_CLUSTER",
+            "radius": 1
           }
         ],
         "vfxKey": "vfx_stun",
-        "description": "[진로 봉쇄] 대상 주변 적에게 100 마법피해를 입히고 1.5초간 기절시킨다."
+        "description": "[진로 봉쇄] 대상 주변 적에게 100 마법피해를 입히고 0.75초간 기절시킨다. 기절 시간을 0.75초로 줄이고 적의 공격속도를 3초간 20% 감소.",
+        "choreography": {
+          "windup": 0.3333333333333333,
+          "recovery": 0.3333333333333333,
+          "pulseInterval": 0.16666666666666666,
+          "color": "#a1e7ff",
+          "variant": "control_frost"
+        }
       },
       "source": {
         "powerIndex": 0.2526,
@@ -4038,10 +4596,24 @@
             "stat": "moveSpeedHexPerSec",
             "value": 0.3,
             "duration": 3
+          },
+          {
+            "kind": "STAT_MUL",
+            "stat": "moveSpeedHexPerSec",
+            "value": 0.25,
+            "duration": 4,
+            "target": "ALL_ALLIES"
           }
         ],
         "vfxKey": "vfx_buff",
-        "description": "[주도권 장악] 6초간 아군 전체의 공격속도 +25%, 방어력/마저 +20."
+        "description": "[주도권 장악] 6초간 아군 전체의 공격속도 +25%, 방어력/마저 +20. 아군 전체가 4초간 이동속도 +25%.",
+        "choreography": {
+          "windup": 0.3333333333333333,
+          "recovery": 0.3333333333333333,
+          "pulseInterval": 0.16666666666666666,
+          "color": "#ffe69d",
+          "variant": "aura_rally"
+        }
       },
       "source": {
         "powerIndex": 0.6803,
@@ -4137,10 +4709,23 @@
             "value": 0.1,
             "duration": 4,
             "target": "SELF"
+          },
+          {
+            "kind": "HEAL_MAXHP_PCT",
+            "value": 0.08,
+            "target": "SELF",
+            "delay": 0.3333333333333333
           }
         ],
         "vfxKey": "vfx_projectile",
-        "description": "[연속 스퍼트] 대상에게 76 물리피해를 3회 연속으로 가한다."
+        "description": "[연속 스퍼트] 대상에게 76 물리피해를 3회 연속으로 가한다. 세 번째 발사 때 자신의 최대 체력 8% 회복.",
+        "choreography": {
+          "windup": 0,
+          "recovery": 0.3333333333333333,
+          "pulseInterval": 0.16666666666666666,
+          "color": "#96eacb",
+          "variant": "volley_siphon"
+        }
       },
       "source": {
         "powerIndex": 0.6119,
@@ -4243,10 +4828,23 @@
             "value": 0.1,
             "duration": 4,
             "target": "SELF"
+          },
+          {
+            "kind": "SHIELD_MAXHP_PCT",
+            "value": 0.12,
+            "duration": 4,
+            "target": "LOWEST_HP_ALLY"
           }
         ],
         "vfxKey": "vfx_heal",
-        "description": "[팀 페이스 업] 체력이 가장 낮은 아군을 183 회복시키고 아군 전체 공격력/주문력을 5초간 +20%."
+        "description": "[팀 페이스 업] 체력이 가장 낮은 아군을 183 회복시키고 아군 전체 공격력/주문력을 5초간 +20%. 회복받은 아군에게 최대 체력 12% 보호막을 4초간 부여.",
+        "choreography": {
+          "windup": 0.3333333333333333,
+          "recovery": 0.3333333333333333,
+          "pulseInterval": 0.16666666666666666,
+          "color": "#a9e8f5",
+          "variant": "heal_barrier"
+        }
       },
       "source": {
         "powerIndex": 0.149,
@@ -4346,10 +4944,24 @@
             "kind": "CRIT_CHANCE_ADD",
             "value": 0.15,
             "duration": 5
+          },
+          {
+            "kind": "BURN",
+            "value": 0.01,
+            "duration": 3,
+            "target": "CURRENT_TARGET",
+            "radius": 1
           }
         ],
         "vfxKey": "vfx_dash_sashi",
-        "description": "[직선 돌파] 대상 방향으로 돌진해 주변 적에게 195 물리피해를 입히고 4초간 공격속도 +35%."
+        "description": "[직선 돌파] 대상 방향으로 돌진해 주변 적에게 195 물리피해를 입히고 4초간 공격속도 +35%. 돌파한 적을 3초간 불태워 초당 최대 체력 1%의 고정피해.",
+        "choreography": {
+          "windup": 0.3333333333333333,
+          "recovery": 0.3333333333333333,
+          "pulseInterval": 0.16666666666666666,
+          "color": "#ff9b76",
+          "variant": "dash_scorch"
+        }
       },
       "source": {
         "powerIndex": 0.6417,
@@ -4439,7 +5051,7 @@
           {
             "kind": "APPLY_STATUS",
             "status": "STUN",
-            "duration": 1.5,
+            "duration": 0.75,
             "target": "LARGEST_ENEMY_CLUSTER",
             "radius": 1
           },
@@ -4447,10 +5059,25 @@
             "kind": "CRIT_CHANCE_ADD",
             "value": 0.15,
             "duration": 5
+          },
+          {
+            "kind": "STAT_MUL",
+            "stat": "attackSpeed",
+            "value": -0.2,
+            "duration": 3,
+            "target": "LARGEST_ENEMY_CLUSTER",
+            "radius": 1
           }
         ],
         "vfxKey": "vfx_stun",
-        "description": "[진로 봉쇄] 대상 주변 적에게 133 마법피해를 입히고 1.5초간 기절시킨다."
+        "description": "[진로 봉쇄] 대상 주변 적에게 133 마법피해를 입히고 0.75초간 기절시킨다. 기절 시간을 0.75초로 줄이고 적의 공격속도를 3초간 20% 감소.",
+        "choreography": {
+          "windup": 0.3333333333333333,
+          "recovery": 0.3333333333333333,
+          "pulseInterval": 0.16666666666666666,
+          "color": "#a1e7ff",
+          "variant": "control_frost"
+        }
       },
       "source": {
         "powerIndex": 0.8807,
@@ -4541,10 +5168,30 @@
             "stat": "moveSpeedHexPerSec",
             "value": 0.3,
             "duration": 3
+          },
+          {
+            "kind": "BURN",
+            "value": 0.01,
+            "duration": 3,
+            "target": "LARGEST_ENEMY_CLUSTER",
+            "radius": 2
+          },
+          {
+            "kind": "WOUND",
+            "duration": 3,
+            "target": "LARGEST_ENEMY_CLUSTER",
+            "radius": 2
           }
         ],
         "vfxKey": "vfx_aoe_burst",
-        "description": "[광역 폭발] 가장 밀집한 적 무리에 209 마법피해를 입힌다."
+        "description": "[광역 폭발] 가장 밀집한 적 무리에 209 마법피해를 입힌다. 폭발 후 3초간 초당 최대 체력 1%의 고정피해와 회복 감소 33%.",
+        "choreography": {
+          "windup": 0.3333333333333333,
+          "recovery": 0.3333333333333333,
+          "pulseInterval": 0.16666666666666666,
+          "color": "#ffa17e",
+          "variant": "burst_flame"
+        }
       },
       "source": {
         "powerIndex": 0.9455,
@@ -4638,20 +5285,26 @@
             "target": "ALL_ENEMIES"
           },
           {
-            "kind": "APPLY_STATUS",
-            "status": "TAUNT",
-            "duration": 2.5,
-            "radius": 2
-          },
-          {
             "kind": "SHIELD_MAXHP_PCT",
             "value": 0.1,
             "duration": 4,
             "target": "SELF"
+          },
+          {
+            "kind": "CC_IMMUNE",
+            "duration": 2,
+            "target": "SELF"
           }
         ],
         "vfxKey": "vfx_shield",
-        "description": "[선두 방벽] 최대 체력 31% 보호막(5초)을 얻고 2칸 내 적을 2.5초간 도발한다."
+        "description": "[선두 방벽] 최대 체력 31% 보호막(5초)을 얻고 2칸 내 적을 2.5초간 도발한다. 방벽 방출 후 2초간 군중 제어 면역.",
+        "choreography": {
+          "windup": 0.3333333333333333,
+          "recovery": 0.3333333333333333,
+          "pulseInterval": 0.16666666666666666,
+          "color": "#a2d9ff",
+          "variant": "shield_fortress"
+        }
       },
       "source": {
         "powerIndex": 0.822,
@@ -4755,10 +5408,23 @@
             "stat": "moveSpeedHexPerSec",
             "value": 0.3,
             "duration": 3
+          },
+          {
+            "kind": "SHIELD_MAXHP_PCT",
+            "value": 0.08,
+            "duration": 4,
+            "target": "ALL_ALLIES"
           }
         ],
         "vfxKey": "vfx_buff",
-        "description": "[주도권 장악] 6초간 아군 전체의 공격속도 +25%, 방어력/마저 +20."
+        "description": "[주도권 장악] 6초간 아군 전체의 공격속도 +25%, 방어력/마저 +20. 아군 전체가 최대 체력 8% 보호막을 4초간 획득.",
+        "choreography": {
+          "windup": 0.3333333333333333,
+          "recovery": 0.3333333333333333,
+          "pulseInterval": 0.16666666666666666,
+          "color": "#a9dfff",
+          "variant": "aura_guard"
+        }
       },
       "source": {
         "powerIndex": 0.3545,
@@ -4861,10 +5527,23 @@
             "value": 0.1,
             "duration": 4,
             "target": "SELF"
+          },
+          {
+            "kind": "SHIELD_MAXHP_PCT",
+            "value": 0.12,
+            "duration": 4,
+            "target": "LOWEST_HP_ALLY"
           }
         ],
         "vfxKey": "vfx_heal",
-        "description": "[팀 페이스 업] 체력이 가장 낮은 아군을 184 회복시키고 아군 전체 공격력/주문력을 5초간 +20%."
+        "description": "[팀 페이스 업] 체력이 가장 낮은 아군을 184 회복시키고 아군 전체 공격력/주문력을 5초간 +20%. 회복받은 아군에게 최대 체력 12% 보호막을 4초간 부여.",
+        "choreography": {
+          "windup": 0.3333333333333333,
+          "recovery": 0.3333333333333333,
+          "pulseInterval": 0.16666666666666666,
+          "color": "#a9e8f5",
+          "variant": "heal_barrier"
+        }
       },
       "source": {
         "powerIndex": 0.2076,
@@ -4950,6 +5629,13 @@
             "target": "CURRENT_TARGET"
           },
           {
+            "kind": "SUNDER_ARMOR_PCT",
+            "value": 0.2,
+            "duration": 4,
+            "target": "CURRENT_TARGET",
+            "radius": 1
+          },
+          {
             "kind": "DAMAGE",
             "value": 175,
             "damageType": "PHYSICAL",
@@ -4973,7 +5659,14 @@
           }
         ],
         "vfxKey": "vfx_dash_oikomi",
-        "description": "[직선 돌파] 대상 방향으로 돌진해 주변 적에게 175 물리피해를 입히고 4초간 공격속도 +35%."
+        "description": "[직선 돌파] 대상 방향으로 돌진해 주변 적에게 175 물리피해를 입히고 4초간 공격속도 +35%. 돌파 직전에 범위 내 적의 방어력을 4초간 20% 감소.",
+        "choreography": {
+          "windup": 0.3333333333333333,
+          "recovery": 0.3333333333333333,
+          "pulseInterval": 0.16666666666666666,
+          "color": "#ffcc74",
+          "variant": "dash_break"
+        }
       },
       "source": {
         "powerIndex": 0.4796,
@@ -5058,6 +5751,13 @@
             "target": "CURRENT_TARGET"
           },
           {
+            "kind": "SUNDER_ARMOR_PCT",
+            "value": 0.2,
+            "duration": 4,
+            "target": "CURRENT_TARGET",
+            "radius": 1
+          },
+          {
             "kind": "DAMAGE",
             "value": 201,
             "damageType": "PHYSICAL",
@@ -5078,7 +5778,14 @@
           }
         ],
         "vfxKey": "vfx_dash_nige",
-        "description": "[직선 돌파] 대상 방향으로 돌진해 주변 적에게 201 물리피해를 입히고 4초간 공격속도 +35%."
+        "description": "[직선 돌파] 대상 방향으로 돌진해 주변 적에게 201 물리피해를 입히고 4초간 공격속도 +35%. 돌파 직전에 범위 내 적의 방어력을 4초간 20% 감소.",
+        "choreography": {
+          "windup": 0.3333333333333333,
+          "recovery": 0.3333333333333333,
+          "pulseInterval": 0.16666666666666666,
+          "color": "#ffcc74",
+          "variant": "dash_break"
+        }
       },
       "source": {
         "powerIndex": 0.7839,
@@ -5179,10 +5886,25 @@
               "when": "TARGET_HP_BELOW",
               "threshold": 0.5
             }
+          },
+          {
+            "kind": "STAT_MUL",
+            "stat": "moveSpeedHexPerSec",
+            "value": -0.25,
+            "duration": 3,
+            "target": "LARGEST_ENEMY_CLUSTER",
+            "radius": 1
           }
         ],
         "vfxKey": "vfx_stun",
-        "description": "[진로 봉쇄] 대상 주변 적에게 97 마법피해를 입히고 1.5초간 기절시킨다."
+        "description": "[진로 봉쇄] 대상 주변 적에게 97 마법피해를 입히고 1.5초간 기절시킨다. 기절과 함께 적의 이동속도를 3초간 25% 감소.",
+        "choreography": {
+          "windup": 0.3333333333333333,
+          "recovery": 0.3333333333333333,
+          "pulseInterval": 0.16666666666666666,
+          "color": "#cab4ff",
+          "variant": "control_bind"
+        }
       },
       "source": {
         "powerIndex": 0.0023,
@@ -5274,10 +5996,25 @@
             "kind": "CRIT_CHANCE_ADD",
             "value": 0.15,
             "duration": 5
+          },
+          {
+            "kind": "STAT_MUL",
+            "stat": "moveSpeedHexPerSec",
+            "value": -0.25,
+            "duration": 3,
+            "target": "LARGEST_ENEMY_CLUSTER",
+            "radius": 1
           }
         ],
         "vfxKey": "vfx_stun",
-        "description": "[진로 봉쇄] 대상 주변 적에게 114 마법피해를 입히고 1.5초간 기절시킨다."
+        "description": "[진로 봉쇄] 대상 주변 적에게 114 마법피해를 입히고 1.5초간 기절시킨다. 기절과 함께 적의 이동속도를 3초간 25% 감소.",
+        "choreography": {
+          "windup": 0.3333333333333333,
+          "recovery": 0.3333333333333333,
+          "pulseInterval": 0.16666666666666666,
+          "color": "#cab4ff",
+          "variant": "control_bind"
+        }
       },
       "source": {
         "powerIndex": 0.5009,
@@ -5365,7 +6102,7 @@
           {
             "kind": "APPLY_STATUS",
             "status": "STUN",
-            "duration": 1.5,
+            "duration": 0.75,
             "target": "LARGEST_ENEMY_CLUSTER",
             "radius": 1
           },
@@ -5373,10 +6110,25 @@
             "kind": "CRIT_CHANCE_ADD",
             "value": 0.15,
             "duration": 5
+          },
+          {
+            "kind": "STAT_MUL",
+            "stat": "attackSpeed",
+            "value": -0.2,
+            "duration": 3,
+            "target": "LARGEST_ENEMY_CLUSTER",
+            "radius": 1
           }
         ],
         "vfxKey": "vfx_stun",
-        "description": "[진로 봉쇄] 대상 주변 적에게 99 마법피해를 입히고 1.5초간 기절시킨다."
+        "description": "[진로 봉쇄] 대상 주변 적에게 99 마법피해를 입히고 0.75초간 기절시킨다. 기절 시간을 0.75초로 줄이고 적의 공격속도를 3초간 20% 감소.",
+        "choreography": {
+          "windup": 0.3333333333333333,
+          "recovery": 0.3333333333333333,
+          "pulseInterval": 0.16666666666666666,
+          "color": "#a1e7ff",
+          "variant": "control_frost"
+        }
       },
       "source": {
         "powerIndex": 0.1395,
@@ -5466,20 +6218,28 @@
             "target": "ALL_ENEMIES"
           },
           {
-            "kind": "APPLY_STATUS",
-            "status": "TAUNT",
-            "duration": 2.5,
-            "radius": 2
-          },
-          {
             "kind": "SHIELD_MAXHP_PCT",
             "value": 0.1,
             "duration": 4,
             "target": "SELF"
+          },
+          {
+            "kind": "DAMAGE_MAXHP_PCT",
+            "value": 0.04,
+            "damageType": "MAGIC",
+            "target": "ALL_ENEMIES",
+            "radius": 2
           }
         ],
         "vfxKey": "vfx_shield",
-        "description": "[선두 방벽] 최대 체력 31% 보호막(5초)을 얻고 2칸 내 적을 2.5초간 도발한다."
+        "description": "[선두 방벽] 최대 체력 31% 보호막(5초)을 얻고 2칸 내 적을 2.5초간 도발한다. 방벽을 펼치며 2칸 내 적에게 대상 최대 체력 4%의 마법피해.",
+        "choreography": {
+          "windup": 0.3333333333333333,
+          "recovery": 0.3333333333333333,
+          "pulseInterval": 0.16666666666666666,
+          "color": "#ffcc96",
+          "variant": "shield_rebound"
+        }
       },
       "source": {
         "powerIndex": 0.8161,
@@ -5560,7 +6320,7 @@
         "effects": [
           {
             "kind": "HEAL",
-            "value": 185,
+            "value": 62,
             "target": "LOWEST_HP_ALLY"
           },
           {
@@ -5582,10 +6342,29 @@
             "value": 0.1,
             "duration": 4,
             "target": "SELF"
+          },
+          {
+            "kind": "HEAL",
+            "value": 62,
+            "target": "LOWEST_HP_ALLY",
+            "delay": 0.3
+          },
+          {
+            "kind": "HEAL",
+            "value": 62,
+            "target": "LOWEST_HP_ALLY",
+            "delay": 0.6
           }
         ],
         "vfxKey": "vfx_heal",
-        "description": "[팀 페이스 업] 체력이 가장 낮은 아군을 185 회복시키고 아군 전체 공격력/주문력을 5초간 +20%."
+        "description": "[팀 페이스 업] 체력이 가장 낮은 아군을 185 회복시키고 아군 전체 공격력/주문력을 5초간 +20%. 기본 회복을 3등분해 0.3초 간격으로 전달. 최초로 선택한 아군을 계속 지원.",
+        "choreography": {
+          "windup": 0.3333333333333333,
+          "recovery": 0.3333333333333333,
+          "pulseInterval": 0.16666666666666666,
+          "color": "#97efd0",
+          "variant": "heal_regen"
+        }
       },
       "source": {
         "powerIndex": 0.254,
@@ -5672,8 +6451,8 @@
           },
           {
             "kind": "APPLY_STATUS",
-            "status": "STUN",
-            "duration": 1.5,
+            "status": "SILENCE",
+            "duration": 2.5,
             "target": "LARGEST_ENEMY_CLUSTER",
             "radius": 1
           },
@@ -5688,7 +6467,14 @@
           }
         ],
         "vfxKey": "vfx_stun",
-        "description": "[진로 봉쇄] 대상 주변 적에게 104 마법피해를 입히고 1.5초간 기절시킨다."
+        "description": "[진로 봉쇄] 대상 주변 적에게 104 마법피해를 입히고 2.5초간 침묵시킨다. 기절 대신 2.5초 침묵: 이동과 기본 공격은 가능하지만 스킬 시전을 차단.",
+        "choreography": {
+          "windup": 0.3333333333333333,
+          "recovery": 0.3333333333333333,
+          "pulseInterval": 0.16666666666666666,
+          "color": "#d4adff",
+          "variant": "control_silence"
+        }
       },
       "source": {
         "powerIndex": 0.3998,
@@ -5788,10 +6574,35 @@
             "stat": "moveSpeedHexPerSec",
             "value": 0.3,
             "duration": 3
+          },
+          {
+            "kind": "HEAL_MAXHP_PCT",
+            "value": 0.02,
+            "target": "ALL_ALLIES",
+            "delay": 0
+          },
+          {
+            "kind": "HEAL_MAXHP_PCT",
+            "value": 0.02,
+            "target": "ALL_ALLIES",
+            "delay": 0.3
+          },
+          {
+            "kind": "HEAL_MAXHP_PCT",
+            "value": 0.02,
+            "target": "ALL_ALLIES",
+            "delay": 0.6
           }
         ],
         "vfxKey": "vfx_buff",
-        "description": "[주도권 장악] 6초간 아군 전체의 공격속도 +25%, 방어력/마저 +20."
+        "description": "[주도권 장악] 6초간 아군 전체의 공격속도 +25%, 방어력/마저 +20. 오라 방출 후 0.3초 간격으로 아군 전체의 최대 체력 2%씩 세 번 회복.",
+        "choreography": {
+          "windup": 0.3333333333333333,
+          "recovery": 0.3333333333333333,
+          "pulseInterval": 0.16666666666666666,
+          "color": "#97efd0",
+          "variant": "aura_sustain"
+        }
       },
       "source": {
         "powerIndex": 0.6545,
@@ -5877,6 +6688,13 @@
             "target": "CURRENT_TARGET"
           },
           {
+            "kind": "SUNDER_ARMOR_PCT",
+            "value": 0.2,
+            "duration": 4,
+            "target": "CURRENT_TARGET",
+            "radius": 1
+          },
+          {
             "kind": "DAMAGE",
             "value": 218,
             "damageType": "PHYSICAL",
@@ -5896,7 +6714,14 @@
           }
         ],
         "vfxKey": "vfx_dash_sashi",
-        "description": "[직선 돌파] 대상 방향으로 돌진해 주변 적에게 218 물리피해를 입히고 4초간 공격속도 +35%."
+        "description": "[직선 돌파] 대상 방향으로 돌진해 주변 적에게 218 물리피해를 입히고 4초간 공격속도 +35%. 돌파 직전에 범위 내 적의 방어력을 4초간 20% 감소.",
+        "choreography": {
+          "windup": 0.3333333333333333,
+          "recovery": 0.3333333333333333,
+          "pulseInterval": 0.16666666666666666,
+          "color": "#ffcc74",
+          "variant": "dash_break"
+        }
       },
       "source": {
         "powerIndex": 0.821,
@@ -5985,8 +6810,8 @@
           },
           {
             "kind": "APPLY_STATUS",
-            "status": "STUN",
-            "duration": 1.5,
+            "status": "SILENCE",
+            "duration": 2.5,
             "target": "LARGEST_ENEMY_CLUSTER",
             "radius": 1
           },
@@ -6001,7 +6826,14 @@
           }
         ],
         "vfxKey": "vfx_stun",
-        "description": "[진로 봉쇄] 대상 주변 적에게 101 마법피해를 입히고 1.5초간 기절시킨다."
+        "description": "[진로 봉쇄] 대상 주변 적에게 101 마법피해를 입히고 2.5초간 침묵시킨다. 기절 대신 2.5초 침묵: 이동과 기본 공격은 가능하지만 스킬 시전을 차단.",
+        "choreography": {
+          "windup": 0.3333333333333333,
+          "recovery": 0.3333333333333333,
+          "pulseInterval": 0.16666666666666666,
+          "color": "#d4adff",
+          "variant": "control_silence"
+        }
       },
       "source": {
         "powerIndex": 0.2882,
@@ -6103,10 +6935,22 @@
             "value": 0.1,
             "duration": 4,
             "target": "SELF"
+          },
+          {
+            "kind": "HEAL_MISSING_PCT",
+            "value": 0.12,
+            "target": "LOWEST_HP_ALLY"
           }
         ],
         "vfxKey": "vfx_heal",
-        "description": "[팀 페이스 업] 체력이 가장 낮은 아군을 190 회복시키고 아군 전체 공격력/주문력을 5초간 +20%."
+        "description": "[팀 페이스 업] 체력이 가장 낮은 아군을 190 회복시키고 아군 전체 공격력/주문력을 5초간 +20%. 선택한 아군의 잃은 체력 12%를 추가 회복.",
+        "choreography": {
+          "windup": 0.3333333333333333,
+          "recovery": 0.3333333333333333,
+          "pulseInterval": 0.16666666666666666,
+          "color": "#baffbc",
+          "variant": "heal_rescue"
+        }
       },
       "source": {
         "powerIndex": 0.3573,
@@ -6194,8 +7038,8 @@
           },
           {
             "kind": "APPLY_STATUS",
-            "status": "STUN",
-            "duration": 1.5,
+            "status": "SILENCE",
+            "duration": 2.5,
             "target": "LARGEST_ENEMY_CLUSTER",
             "radius": 1
           },
@@ -6210,7 +7054,14 @@
           }
         ],
         "vfxKey": "vfx_stun",
-        "description": "[진로 봉쇄] 대상 주변 적에게 99 마법피해를 입히고 1.5초간 기절시킨다."
+        "description": "[진로 봉쇄] 대상 주변 적에게 99 마법피해를 입히고 2.5초간 침묵시킨다. 기절 대신 2.5초 침묵: 이동과 기본 공격은 가능하지만 스킬 시전을 차단.",
+        "choreography": {
+          "windup": 0.3333333333333333,
+          "recovery": 0.3333333333333333,
+          "pulseInterval": 0.16666666666666666,
+          "color": "#d4adff",
+          "variant": "control_silence"
+        }
       },
       "source": {
         "powerIndex": 0.1919,
@@ -6291,7 +7142,7 @@
         "effects": [
           {
             "kind": "HEAL",
-            "value": 183,
+            "value": 61,
             "target": "LOWEST_HP_ALLY"
           },
           {
@@ -6313,10 +7164,29 @@
             "value": 0.1,
             "duration": 4,
             "target": "SELF"
+          },
+          {
+            "kind": "HEAL",
+            "value": 61,
+            "target": "LOWEST_HP_ALLY",
+            "delay": 0.3
+          },
+          {
+            "kind": "HEAL",
+            "value": 61,
+            "target": "LOWEST_HP_ALLY",
+            "delay": 0.6
           }
         ],
         "vfxKey": "vfx_heal",
-        "description": "[팀 페이스 업] 체력이 가장 낮은 아군을 183 회복시키고 아군 전체 공격력/주문력을 5초간 +20%."
+        "description": "[팀 페이스 업] 체력이 가장 낮은 아군을 183 회복시키고 아군 전체 공격력/주문력을 5초간 +20%. 기본 회복을 3등분해 0.3초 간격으로 전달. 최초로 선택한 아군을 계속 지원.",
+        "choreography": {
+          "windup": 0.3333333333333333,
+          "recovery": 0.3333333333333333,
+          "pulseInterval": 0.16666666666666666,
+          "color": "#97efd0",
+          "variant": "heal_regen"
+        }
       },
       "source": {
         "powerIndex": 0.1451,
@@ -6420,10 +7290,23 @@
             "stat": "moveSpeedHexPerSec",
             "value": 0.3,
             "duration": 3
+          },
+          {
+            "kind": "SHIELD_MAXHP_PCT",
+            "value": 0.08,
+            "duration": 4,
+            "target": "ALL_ALLIES"
           }
         ],
         "vfxKey": "vfx_buff",
-        "description": "[주도권 장악] 6초간 아군 전체의 공격속도 +25%, 방어력/마저 +20."
+        "description": "[주도권 장악] 6초간 아군 전체의 공격속도 +25%, 방어력/마저 +20. 아군 전체가 최대 체력 8% 보호막을 4초간 획득.",
+        "choreography": {
+          "windup": 0.3333333333333333,
+          "recovery": 0.3333333333333333,
+          "pulseInterval": 0.16666666666666666,
+          "color": "#a9dfff",
+          "variant": "aura_guard"
+        }
       },
       "source": {
         "powerIndex": 0.3798,
@@ -6529,10 +7412,24 @@
             "stat": "moveSpeedHexPerSec",
             "value": 0.3,
             "duration": 3
+          },
+          {
+            "kind": "STAT_MUL",
+            "stat": "moveSpeedHexPerSec",
+            "value": 0.25,
+            "duration": 4,
+            "target": "ALL_ALLIES"
           }
         ],
         "vfxKey": "vfx_buff",
-        "description": "[주도권 장악] 6초간 아군 전체의 공격속도 +25%, 방어력/마저 +20."
+        "description": "[주도권 장악] 6초간 아군 전체의 공격속도 +25%, 방어력/마저 +20. 아군 전체가 4초간 이동속도 +25%.",
+        "choreography": {
+          "windup": 0.3333333333333333,
+          "recovery": 0.3333333333333333,
+          "pulseInterval": 0.16666666666666666,
+          "color": "#ffe69d",
+          "variant": "aura_rally"
+        }
       },
       "source": {
         "powerIndex": 0.5279,
@@ -6638,10 +7535,24 @@
             "stat": "moveSpeedHexPerSec",
             "value": 0.3,
             "duration": 3
+          },
+          {
+            "kind": "STAT_MUL",
+            "stat": "moveSpeedHexPerSec",
+            "value": 0.25,
+            "duration": 4,
+            "target": "ALL_ALLIES"
           }
         ],
         "vfxKey": "vfx_buff",
-        "description": "[주도권 장악] 6초간 아군 전체의 공격속도 +25%, 방어력/마저 +20."
+        "description": "[주도권 장악] 6초간 아군 전체의 공격속도 +25%, 방어력/마저 +20. 아군 전체가 4초간 이동속도 +25%.",
+        "choreography": {
+          "windup": 0.3333333333333333,
+          "recovery": 0.3333333333333333,
+          "pulseInterval": 0.16666666666666666,
+          "color": "#ffe69d",
+          "variant": "aura_rally"
+        }
       },
       "source": {
         "powerIndex": 0.0334,
@@ -6736,10 +7647,25 @@
             "kind": "CRIT_CHANCE_ADD",
             "value": 0.15,
             "duration": 5
+          },
+          {
+            "kind": "STAT_MUL",
+            "stat": "moveSpeedHexPerSec",
+            "value": -0.25,
+            "duration": 3,
+            "target": "LARGEST_ENEMY_CLUSTER",
+            "radius": 1
           }
         ],
         "vfxKey": "vfx_stun",
-        "description": "[진로 봉쇄] 대상 주변 적에게 120 마법피해를 입히고 1.5초간 기절시킨다."
+        "description": "[진로 봉쇄] 대상 주변 적에게 120 마법피해를 입히고 1.5초간 기절시킨다. 기절과 함께 적의 이동속도를 3초간 25% 감소.",
+        "choreography": {
+          "windup": 0.3333333333333333,
+          "recovery": 0.3333333333333333,
+          "pulseInterval": 0.16666666666666666,
+          "color": "#cab4ff",
+          "variant": "control_bind"
+        }
       },
       "source": {
         "powerIndex": 0.7566,
@@ -6844,10 +7770,24 @@
             "stat": "moveSpeedHexPerSec",
             "value": 0.3,
             "duration": 3
+          },
+          {
+            "kind": "STAT_MUL",
+            "stat": "moveSpeedHexPerSec",
+            "value": 0.25,
+            "duration": 4,
+            "target": "ALL_ALLIES"
           }
         ],
         "vfxKey": "vfx_buff",
-        "description": "[주도권 장악] 6초간 아군 전체의 공격속도 +25%, 방어력/마저 +20."
+        "description": "[주도권 장악] 6초간 아군 전체의 공격속도 +25%, 방어력/마저 +20. 아군 전체가 4초간 이동속도 +25%.",
+        "choreography": {
+          "windup": 0.3333333333333333,
+          "recovery": 0.3333333333333333,
+          "pulseInterval": 0.16666666666666666,
+          "color": "#ffe69d",
+          "variant": "aura_rally"
+        }
       },
       "source": {
         "powerIndex": 0.9581,
@@ -6931,6 +7871,13 @@
             "target": "CURRENT_TARGET"
           },
           {
+            "kind": "SUNDER_ARMOR_PCT",
+            "value": 0.2,
+            "duration": 4,
+            "target": "CURRENT_TARGET",
+            "radius": 1
+          },
+          {
             "kind": "DAMAGE",
             "value": 192,
             "damageType": "PHYSICAL",
@@ -6951,7 +7898,14 @@
           }
         ],
         "vfxKey": "vfx_dash_nige",
-        "description": "[직선 돌파] 대상 방향으로 돌진해 주변 적에게 192 물리피해를 입히고 4초간 공격속도 +35%."
+        "description": "[직선 돌파] 대상 방향으로 돌진해 주변 적에게 192 물리피해를 입히고 4초간 공격속도 +35%. 돌파 직전에 범위 내 적의 방어력을 4초간 20% 감소.",
+        "choreography": {
+          "windup": 0.3333333333333333,
+          "recovery": 0.3333333333333333,
+          "pulseInterval": 0.16666666666666666,
+          "color": "#ffcc74",
+          "variant": "dash_break"
+        }
       },
       "source": {
         "powerIndex": 0.5729,
@@ -7039,8 +7993,8 @@
           },
           {
             "kind": "APPLY_STATUS",
-            "status": "STUN",
-            "duration": 1.5,
+            "status": "SILENCE",
+            "duration": 2.5,
             "target": "LARGEST_ENEMY_CLUSTER",
             "radius": 1
           },
@@ -7055,7 +8009,14 @@
           }
         ],
         "vfxKey": "vfx_stun",
-        "description": "[진로 봉쇄] 대상 주변 적에게 98 마법피해를 입히고 1.5초간 기절시킨다."
+        "description": "[진로 봉쇄] 대상 주변 적에게 98 마법피해를 입히고 2.5초간 침묵시킨다. 기절 대신 2.5초 침묵: 이동과 기본 공격은 가능하지만 스킬 시전을 차단.",
+        "choreography": {
+          "windup": 0.3333333333333333,
+          "recovery": 0.3333333333333333,
+          "pulseInterval": 0.16666666666666666,
+          "color": "#d4adff",
+          "variant": "control_silence"
+        }
       },
       "source": {
         "powerIndex": 0.0114,
@@ -7155,10 +8116,35 @@
             "stat": "moveSpeedHexPerSec",
             "value": 0.3,
             "duration": 3
+          },
+          {
+            "kind": "HEAL_MAXHP_PCT",
+            "value": 0.02,
+            "target": "ALL_ALLIES",
+            "delay": 0
+          },
+          {
+            "kind": "HEAL_MAXHP_PCT",
+            "value": 0.02,
+            "target": "ALL_ALLIES",
+            "delay": 0.3
+          },
+          {
+            "kind": "HEAL_MAXHP_PCT",
+            "value": 0.02,
+            "target": "ALL_ALLIES",
+            "delay": 0.6
           }
         ],
         "vfxKey": "vfx_buff",
-        "description": "[주도권 장악] 6초간 아군 전체의 공격속도 +25%, 방어력/마저 +20."
+        "description": "[주도권 장악] 6초간 아군 전체의 공격속도 +25%, 방어력/마저 +20. 오라 방출 후 0.3초 간격으로 아군 전체의 최대 체력 2%씩 세 번 회복.",
+        "choreography": {
+          "windup": 0.3333333333333333,
+          "recovery": 0.3333333333333333,
+          "pulseInterval": 0.16666666666666666,
+          "color": "#97efd0",
+          "variant": "aura_sustain"
+        }
       },
       "source": {
         "powerIndex": 0.3462,
@@ -7260,10 +8246,23 @@
             "value": 0.1,
             "duration": 4,
             "target": "SELF"
+          },
+          {
+            "kind": "SHIELD_MAXHP_PCT",
+            "value": 0.12,
+            "duration": 4,
+            "target": "LOWEST_HP_ALLY"
           }
         ],
         "vfxKey": "vfx_heal",
-        "description": "[팀 페이스 업] 체력이 가장 낮은 아군을 215 회복시키고 아군 전체 공격력/주문력을 5초간 +20%."
+        "description": "[팀 페이스 업] 체력이 가장 낮은 아군을 215 회복시키고 아군 전체 공격력/주문력을 5초간 +20%. 회복받은 아군에게 최대 체력 12% 보호막을 4초간 부여.",
+        "choreography": {
+          "windup": 0.3333333333333333,
+          "recovery": 0.3333333333333333,
+          "pulseInterval": 0.16666666666666666,
+          "color": "#a9e8f5",
+          "variant": "heal_barrier"
+        }
       },
       "source": {
         "powerIndex": 0.6108,
@@ -7360,10 +8359,25 @@
             "kind": "CRIT_CHANCE_ADD",
             "value": 0.15,
             "duration": 5
+          },
+          {
+            "kind": "STAT_MUL",
+            "stat": "moveSpeedHexPerSec",
+            "value": -0.25,
+            "duration": 3,
+            "target": "LARGEST_ENEMY_CLUSTER",
+            "radius": 1
           }
         ],
         "vfxKey": "vfx_stun",
-        "description": "[진로 봉쇄] 대상 주변 적에게 98 마법피해를 입히고 1.5초간 기절시킨다."
+        "description": "[진로 봉쇄] 대상 주변 적에게 98 마법피해를 입히고 1.5초간 기절시킨다. 기절과 함께 적의 이동속도를 3초간 25% 감소.",
+        "choreography": {
+          "windup": 0.3333333333333333,
+          "recovery": 0.3333333333333333,
+          "pulseInterval": 0.16666666666666666,
+          "color": "#cab4ff",
+          "variant": "control_bind"
+        }
       },
       "source": {
         "powerIndex": 0.1011,
@@ -7451,7 +8465,7 @@
           {
             "kind": "APPLY_STATUS",
             "status": "STUN",
-            "duration": 1.5,
+            "duration": 0.75,
             "target": "LARGEST_ENEMY_CLUSTER",
             "radius": 1
           },
@@ -7463,10 +8477,25 @@
               "when": "TARGET_HP_BELOW",
               "threshold": 0.5
             }
+          },
+          {
+            "kind": "STAT_MUL",
+            "stat": "attackSpeed",
+            "value": -0.2,
+            "duration": 3,
+            "target": "LARGEST_ENEMY_CLUSTER",
+            "radius": 1
           }
         ],
         "vfxKey": "vfx_stun",
-        "description": "[진로 봉쇄] 대상 주변 적에게 116 마법피해를 입히고 1.5초간 기절시킨다."
+        "description": "[진로 봉쇄] 대상 주변 적에게 116 마법피해를 입히고 0.75초간 기절시킨다. 기절 시간을 0.75초로 줄이고 적의 공격속도를 3초간 20% 감소.",
+        "choreography": {
+          "windup": 0.3333333333333333,
+          "recovery": 0.3333333333333333,
+          "pulseInterval": 0.16666666666666666,
+          "color": "#a1e7ff",
+          "variant": "control_frost"
+        }
       },
       "source": {
         "powerIndex": 0.6024,
@@ -7551,6 +8580,13 @@
             "target": "CURRENT_TARGET"
           },
           {
+            "kind": "SUNDER_ARMOR_PCT",
+            "value": 0.2,
+            "duration": 4,
+            "target": "CURRENT_TARGET",
+            "radius": 1
+          },
+          {
             "kind": "DAMAGE",
             "value": 211,
             "damageType": "PHYSICAL",
@@ -7570,7 +8606,14 @@
           }
         ],
         "vfxKey": "vfx_dash_sashi",
-        "description": "[직선 돌파] 대상 방향으로 돌진해 주변 적에게 211 물리피해를 입히고 4초간 공격속도 +35%."
+        "description": "[직선 돌파] 대상 방향으로 돌진해 주변 적에게 211 물리피해를 입히고 4초간 공격속도 +35%. 돌파 직전에 범위 내 적의 방어력을 4초간 20% 감소.",
+        "choreography": {
+          "windup": 0.3333333333333333,
+          "recovery": 0.3333333333333333,
+          "pulseInterval": 0.16666666666666666,
+          "color": "#ffcc74",
+          "variant": "dash_break"
+        }
       },
       "source": {
         "powerIndex": 0.6873,
@@ -7658,7 +8701,7 @@
           {
             "kind": "APPLY_STATUS",
             "status": "STUN",
-            "duration": 1.5,
+            "duration": 0.75,
             "target": "LARGEST_ENEMY_CLUSTER",
             "radius": 1
           },
@@ -7666,10 +8709,25 @@
             "kind": "CRIT_CHANCE_ADD",
             "value": 0.15,
             "duration": 5
+          },
+          {
+            "kind": "STAT_MUL",
+            "stat": "attackSpeed",
+            "value": -0.2,
+            "duration": 3,
+            "target": "LARGEST_ENEMY_CLUSTER",
+            "radius": 1
           }
         ],
         "vfxKey": "vfx_stun",
-        "description": "[진로 봉쇄] 대상 주변 적에게 122 마법피해를 입히고 1.5초간 기절시킨다."
+        "description": "[진로 봉쇄] 대상 주변 적에게 122 마법피해를 입히고 0.75초간 기절시킨다. 기절 시간을 0.75초로 줄이고 적의 공격속도를 3초간 20% 감소.",
+        "choreography": {
+          "windup": 0.3333333333333333,
+          "recovery": 0.3333333333333333,
+          "pulseInterval": 0.16666666666666666,
+          "color": "#a1e7ff",
+          "variant": "control_frost"
+        }
       },
       "source": {
         "powerIndex": 0.8111,
@@ -7761,20 +8819,26 @@
             "target": "ALL_ENEMIES"
           },
           {
-            "kind": "APPLY_STATUS",
-            "status": "TAUNT",
-            "duration": 2.5,
-            "radius": 2
-          },
-          {
             "kind": "SHIELD_MAXHP_PCT",
             "value": 0.1,
             "duration": 4,
             "target": "SELF"
+          },
+          {
+            "kind": "CC_IMMUNE",
+            "duration": 2,
+            "target": "SELF"
           }
         ],
         "vfxKey": "vfx_shield",
-        "description": "[선두 방벽] 최대 체력 30% 보호막(5초)을 얻고 2칸 내 적을 2.5초간 도발한다."
+        "description": "[선두 방벽] 최대 체력 30% 보호막(5초)을 얻고 2칸 내 적을 2.5초간 도발한다. 방벽 방출 후 2초간 군중 제어 면역.",
+        "choreography": {
+          "windup": 0.3333333333333333,
+          "recovery": 0.3333333333333333,
+          "pulseInterval": 0.16666666666666666,
+          "color": "#a2d9ff",
+          "variant": "shield_fortress"
+        }
       },
       "source": {
         "powerIndex": 0.5879,
@@ -7855,7 +8919,7 @@
         "effects": [
           {
             "kind": "HEAL",
-            "value": 240,
+            "value": 80,
             "target": "LOWEST_HP_ALLY"
           },
           {
@@ -7877,10 +8941,29 @@
             "value": 0.1,
             "duration": 4,
             "target": "SELF"
+          },
+          {
+            "kind": "HEAL",
+            "value": 80,
+            "target": "LOWEST_HP_ALLY",
+            "delay": 0.3
+          },
+          {
+            "kind": "HEAL",
+            "value": 80,
+            "target": "LOWEST_HP_ALLY",
+            "delay": 0.6
           }
         ],
         "vfxKey": "vfx_heal",
-        "description": "[팀 페이스 업] 체력이 가장 낮은 아군을 240 회복시키고 아군 전체 공격력/주문력을 5초간 +20%."
+        "description": "[팀 페이스 업] 체력이 가장 낮은 아군을 240 회복시키고 아군 전체 공격력/주문력을 5초간 +20%. 기본 회복을 3등분해 0.3초 간격으로 전달. 최초로 선택한 아군을 계속 지원.",
+        "choreography": {
+          "windup": 0.3333333333333333,
+          "recovery": 0.3333333333333333,
+          "pulseInterval": 0.16666666666666666,
+          "color": "#97efd0",
+          "variant": "heal_regen"
+        }
       },
       "source": {
         "powerIndex": 0.7905,
@@ -7984,10 +9067,23 @@
             "stat": "moveSpeedHexPerSec",
             "value": 0.3,
             "duration": 3
+          },
+          {
+            "kind": "SHIELD_MAXHP_PCT",
+            "value": 0.08,
+            "duration": 4,
+            "target": "ALL_ALLIES"
           }
         ],
         "vfxKey": "vfx_buff",
-        "description": "[주도권 장악] 6초간 아군 전체의 공격속도 +25%, 방어력/마저 +20."
+        "description": "[주도권 장악] 6초간 아군 전체의 공격속도 +25%, 방어력/마저 +20. 아군 전체가 최대 체력 8% 보호막을 4초간 획득.",
+        "choreography": {
+          "windup": 0.3333333333333333,
+          "recovery": 0.3333333333333333,
+          "pulseInterval": 0.16666666666666666,
+          "color": "#a9dfff",
+          "variant": "aura_guard"
+        }
       },
       "source": {
         "powerIndex": 0.7091,
@@ -8067,7 +9163,7 @@
         "effects": [
           {
             "kind": "DAMAGE",
-            "value": 182,
+            "value": 91,
             "damageType": "MAGIC",
             "target": "LARGEST_ENEMY_CLUSTER",
             "radius": 2
@@ -8077,10 +9173,25 @@
             "stat": "moveSpeedHexPerSec",
             "value": 0.3,
             "duration": 3
+          },
+          {
+            "kind": "DAMAGE",
+            "value": 91,
+            "damageType": "MAGIC",
+            "target": "LARGEST_ENEMY_CLUSTER",
+            "radius": 2,
+            "delay": 0.4
           }
         ],
         "vfxKey": "vfx_aoe_burst",
-        "description": "[광역 폭발] 가장 밀집한 적 무리에 182 마법피해를 입힌다."
+        "description": "[광역 폭발] 가장 밀집한 적 무리에 182 마법피해를 입힌다. 기본 폭발 피해를 절반씩 나누어 최초 방출과 0.4초 뒤 두 번 발생.",
+        "choreography": {
+          "windup": 0.3333333333333333,
+          "recovery": 0.3333333333333333,
+          "pulseInterval": 0.16666666666666666,
+          "color": "#d2b5ff",
+          "variant": "burst_echo"
+        }
       },
       "source": {
         "powerIndex": 0.7326,
@@ -8165,6 +9276,13 @@
             "target": "CURRENT_TARGET"
           },
           {
+            "kind": "SUNDER_ARMOR_PCT",
+            "value": 0.2,
+            "duration": 4,
+            "target": "CURRENT_TARGET",
+            "radius": 1
+          },
+          {
             "kind": "DAMAGE",
             "value": 223,
             "damageType": "PHYSICAL",
@@ -8185,7 +9303,14 @@
           }
         ],
         "vfxKey": "vfx_dash_nige",
-        "description": "[직선 돌파] 대상 방향으로 돌진해 주변 적에게 223 물리피해를 입히고 4초간 공격속도 +35%."
+        "description": "[직선 돌파] 대상 방향으로 돌진해 주변 적에게 223 물리피해를 입히고 4초간 공격속도 +35%. 돌파 직전에 범위 내 적의 방어력을 4초간 20% 감소.",
+        "choreography": {
+          "windup": 0.3333333333333333,
+          "recovery": 0.3333333333333333,
+          "pulseInterval": 0.16666666666666666,
+          "color": "#ffcc74",
+          "variant": "dash_break"
+        }
       },
       "source": {
         "powerIndex": 0.9035,
@@ -8270,6 +9395,13 @@
             "target": "CURRENT_TARGET"
           },
           {
+            "kind": "SUNDER_ARMOR_PCT",
+            "value": 0.2,
+            "duration": 4,
+            "target": "CURRENT_TARGET",
+            "radius": 1
+          },
+          {
             "kind": "DAMAGE",
             "value": 244,
             "damageType": "PHYSICAL",
@@ -8289,7 +9421,14 @@
           }
         ],
         "vfxKey": "vfx_dash_sashi",
-        "description": "[직선 돌파] 대상 방향으로 돌진해 주변 적에게 244 물리피해를 입히고 4초간 공격속도 +35%."
+        "description": "[직선 돌파] 대상 방향으로 돌진해 주변 적에게 244 물리피해를 입히고 4초간 공격속도 +35%. 돌파 직전에 범위 내 적의 방어력을 4초간 20% 감소.",
+        "choreography": {
+          "windup": 0.3333333333333333,
+          "recovery": 0.3333333333333333,
+          "pulseInterval": 0.16666666666666666,
+          "color": "#ffcc74",
+          "variant": "dash_break"
+        }
       },
       "source": {
         "powerIndex": 0.9244,
@@ -8376,8 +9515,8 @@
           },
           {
             "kind": "APPLY_STATUS",
-            "status": "STUN",
-            "duration": 1.5,
+            "status": "SILENCE",
+            "duration": 2.5,
             "target": "LARGEST_ENEMY_CLUSTER",
             "radius": 1
           },
@@ -8392,7 +9531,14 @@
           }
         ],
         "vfxKey": "vfx_stun",
-        "description": "[진로 봉쇄] 대상 주변 적에게 129 마법피해를 입히고 1.5초간 기절시킨다."
+        "description": "[진로 봉쇄] 대상 주변 적에게 129 마법피해를 입히고 2.5초간 침묵시킨다. 기절 대신 2.5초 침묵: 이동과 기본 공격은 가능하지만 스킬 시전을 차단.",
+        "choreography": {
+          "windup": 0.3333333333333333,
+          "recovery": 0.3333333333333333,
+          "pulseInterval": 0.16666666666666666,
+          "color": "#d4adff",
+          "variant": "control_silence"
+        }
       },
       "source": {
         "powerIndex": 0.7727,
@@ -8472,6 +9618,12 @@
         "manaCost": 70,
         "effects": [
           {
+            "kind": "SUNDER_ARMOR_PCT",
+            "value": 0.2,
+            "duration": 4,
+            "target": "CURRENT_TARGET"
+          },
+          {
             "kind": "DAMAGE",
             "value": 76,
             "damageType": "PHYSICAL",
@@ -8490,7 +9642,14 @@
           }
         ],
         "vfxKey": "vfx_projectile",
-        "description": "[연속 스퍼트] 대상에게 76 물리피해를 3회 연속으로 가한다."
+        "description": "[연속 스퍼트] 대상에게 76 물리피해를 3회 연속으로 가한다. 첫 발 직전에 대상의 방어력을 4초간 20% 감소.",
+        "choreography": {
+          "windup": 0,
+          "recovery": 0.3333333333333333,
+          "pulseInterval": 0.16666666666666666,
+          "color": "#ffe09c",
+          "variant": "volley_pierce"
+        }
       },
       "source": {
         "powerIndex": 0.6422,
@@ -8575,6 +9734,13 @@
             "target": "CURRENT_TARGET"
           },
           {
+            "kind": "SUNDER_ARMOR_PCT",
+            "value": 0.2,
+            "duration": 4,
+            "target": "CURRENT_TARGET",
+            "radius": 1
+          },
+          {
             "kind": "DAMAGE",
             "value": 202,
             "damageType": "PHYSICAL",
@@ -8598,7 +9764,14 @@
           }
         ],
         "vfxKey": "vfx_dash_oikomi",
-        "description": "[직선 돌파] 대상 방향으로 돌진해 주변 적에게 202 물리피해를 입히고 4초간 공격속도 +35%."
+        "description": "[직선 돌파] 대상 방향으로 돌진해 주변 적에게 202 물리피해를 입히고 4초간 공격속도 +35%. 돌파 직전에 범위 내 적의 방어력을 4초간 20% 감소.",
+        "choreography": {
+          "windup": 0.3333333333333333,
+          "recovery": 0.3333333333333333,
+          "pulseInterval": 0.16666666666666666,
+          "color": "#ffcc74",
+          "variant": "dash_break"
+        }
       },
       "source": {
         "powerIndex": 0.8039,
@@ -8677,7 +9850,7 @@
         "effects": [
           {
             "kind": "DAMAGE",
-            "value": 147,
+            "value": 74,
             "damageType": "MAGIC",
             "target": "LARGEST_ENEMY_CLUSTER",
             "radius": 2
@@ -8687,10 +9860,25 @@
             "stat": "moveSpeedHexPerSec",
             "value": 0.3,
             "duration": 3
+          },
+          {
+            "kind": "DAMAGE",
+            "value": 74,
+            "damageType": "MAGIC",
+            "target": "LARGEST_ENEMY_CLUSTER",
+            "radius": 2,
+            "delay": 0.4
           }
         ],
         "vfxKey": "vfx_aoe_burst",
-        "description": "[광역 폭발] 가장 밀집한 적 무리에 147 마법피해를 입힌다."
+        "description": "[광역 폭발] 가장 밀집한 적 무리에 147 마법피해를 입힌다. 기본 폭발 피해를 절반씩 나누어 최초 방출과 0.4초 뒤 두 번 발생.",
+        "choreography": {
+          "windup": 0.3333333333333333,
+          "recovery": 0.3333333333333333,
+          "pulseInterval": 0.16666666666666666,
+          "color": "#d2b5ff",
+          "variant": "burst_echo"
+        }
       },
       "source": {
         "powerIndex": 0.3947,
@@ -8770,6 +9958,12 @@
         "manaCost": 70,
         "effects": [
           {
+            "kind": "SUNDER_ARMOR_PCT",
+            "value": 0.2,
+            "duration": 4,
+            "target": "CURRENT_TARGET"
+          },
+          {
             "kind": "DAMAGE",
             "value": 71,
             "damageType": "PHYSICAL",
@@ -8788,7 +9982,14 @@
           }
         ],
         "vfxKey": "vfx_projectile",
-        "description": "[연속 스퍼트] 대상에게 71 물리피해를 3회 연속으로 가한다."
+        "description": "[연속 스퍼트] 대상에게 71 물리피해를 3회 연속으로 가한다. 첫 발 직전에 대상의 방어력을 4초간 20% 감소.",
+        "choreography": {
+          "windup": 0,
+          "recovery": 0.3333333333333333,
+          "pulseInterval": 0.16666666666666666,
+          "color": "#ffe09c",
+          "variant": "volley_pierce"
+        }
       },
       "source": {
         "powerIndex": 0.3544,
@@ -8877,7 +10078,7 @@
           {
             "kind": "APPLY_STATUS",
             "status": "STUN",
-            "duration": 1.5,
+            "duration": 0.75,
             "target": "LARGEST_ENEMY_CLUSTER",
             "radius": 1
           },
@@ -8885,10 +10086,25 @@
             "kind": "CRIT_CHANCE_ADD",
             "value": 0.15,
             "duration": 5
+          },
+          {
+            "kind": "STAT_MUL",
+            "stat": "attackSpeed",
+            "value": -0.2,
+            "duration": 3,
+            "target": "LARGEST_ENEMY_CLUSTER",
+            "radius": 1
           }
         ],
         "vfxKey": "vfx_stun",
-        "description": "[진로 봉쇄] 대상 주변 적에게 104 마법피해를 입히고 1.5초간 기절시킨다."
+        "description": "[진로 봉쇄] 대상 주변 적에게 104 마법피해를 입히고 0.75초간 기절시킨다. 기절 시간을 0.75초로 줄이고 적의 공격속도를 3초간 20% 감소.",
+        "choreography": {
+          "windup": 0.3333333333333333,
+          "recovery": 0.3333333333333333,
+          "pulseInterval": 0.16666666666666666,
+          "color": "#a1e7ff",
+          "variant": "control_frost"
+        }
       },
       "source": {
         "powerIndex": 0.4588,
@@ -8972,6 +10188,13 @@
             "target": "CURRENT_TARGET"
           },
           {
+            "kind": "SUNDER_ARMOR_PCT",
+            "value": 0.2,
+            "duration": 4,
+            "target": "CURRENT_TARGET",
+            "radius": 1
+          },
+          {
             "kind": "DAMAGE",
             "value": 163,
             "damageType": "PHYSICAL",
@@ -8991,7 +10214,14 @@
           }
         ],
         "vfxKey": "vfx_dash_sashi",
-        "description": "[직선 돌파] 대상 방향으로 돌진해 주변 적에게 163 물리피해를 입히고 4초간 공격속도 +35%."
+        "description": "[직선 돌파] 대상 방향으로 돌진해 주변 적에게 163 물리피해를 입히고 4초간 공격속도 +35%. 돌파 직전에 범위 내 적의 방어력을 4초간 20% 감소.",
+        "choreography": {
+          "windup": 0.3333333333333333,
+          "recovery": 0.3333333333333333,
+          "pulseInterval": 0.16666666666666666,
+          "color": "#ffcc74",
+          "variant": "dash_break"
+        }
       },
       "source": {
         "powerIndex": 0.057,
@@ -9092,10 +10322,22 @@
             "value": 0.1,
             "duration": 4,
             "target": "SELF"
+          },
+          {
+            "kind": "HEAL_MISSING_PCT",
+            "value": 0.12,
+            "target": "LOWEST_HP_ALLY"
           }
         ],
         "vfxKey": "vfx_heal",
-        "description": "[팀 페이스 업] 체력이 가장 낮은 아군을 187 회복시키고 아군 전체 공격력/주문력을 5초간 +20%."
+        "description": "[팀 페이스 업] 체력이 가장 낮은 아군을 187 회복시키고 아군 전체 공격력/주문력을 5초간 +20%. 선택한 아군의 잃은 체력 12%를 추가 회복.",
+        "choreography": {
+          "windup": 0.3333333333333333,
+          "recovery": 0.3333333333333333,
+          "pulseInterval": 0.16666666666666666,
+          "color": "#baffbc",
+          "variant": "heal_rescue"
+        }
       },
       "source": {
         "powerIndex": 0.2893,
@@ -9200,10 +10442,23 @@
             "stat": "moveSpeedHexPerSec",
             "value": 0.3,
             "duration": 3
+          },
+          {
+            "kind": "SHIELD_MAXHP_PCT",
+            "value": 0.08,
+            "duration": 4,
+            "target": "ALL_ALLIES"
           }
         ],
         "vfxKey": "vfx_buff",
-        "description": "[주도권 장악] 6초간 아군 전체의 공격속도 +25%, 방어력/마저 +20."
+        "description": "[주도권 장악] 6초간 아군 전체의 공격속도 +25%, 방어력/마저 +20. 아군 전체가 최대 체력 8% 보호막을 4초간 획득.",
+        "choreography": {
+          "windup": 0.3333333333333333,
+          "recovery": 0.3333333333333333,
+          "pulseInterval": 0.16666666666666666,
+          "color": "#a9dfff",
+          "variant": "aura_guard"
+        }
       },
       "source": {
         "powerIndex": 0.3687,
@@ -9299,10 +10554,25 @@
             "kind": "CRIT_CHANCE_ADD",
             "value": 0.15,
             "duration": 5
+          },
+          {
+            "kind": "STAT_MUL",
+            "stat": "moveSpeedHexPerSec",
+            "value": -0.25,
+            "duration": 3,
+            "target": "LARGEST_ENEMY_CLUSTER",
+            "radius": 1
           }
         ],
         "vfxKey": "vfx_stun",
-        "description": "[진로 봉쇄] 대상 주변 적에게 117 마법피해를 입히고 1.5초간 기절시킨다."
+        "description": "[진로 봉쇄] 대상 주변 적에게 117 마법피해를 입히고 1.5초간 기절시킨다. 기절과 함께 적의 이동속도를 3초간 25% 감소.",
+        "choreography": {
+          "windup": 0.3333333333333333,
+          "recovery": 0.3333333333333333,
+          "pulseInterval": 0.16666666666666666,
+          "color": "#cab4ff",
+          "variant": "control_bind"
+        }
       },
       "source": {
         "powerIndex": 0.6313,
@@ -9392,10 +10662,30 @@
             "stat": "moveSpeedHexPerSec",
             "value": 0.3,
             "duration": 3
+          },
+          {
+            "kind": "BURN",
+            "value": 0.01,
+            "duration": 3,
+            "target": "LARGEST_ENEMY_CLUSTER",
+            "radius": 2
+          },
+          {
+            "kind": "WOUND",
+            "duration": 3,
+            "target": "LARGEST_ENEMY_CLUSTER",
+            "radius": 2
           }
         ],
         "vfxKey": "vfx_aoe_burst",
-        "description": "[광역 폭발] 가장 밀집한 적 무리에 162 마법피해를 입힌다."
+        "description": "[광역 폭발] 가장 밀집한 적 무리에 162 마법피해를 입힌다. 폭발 후 3초간 초당 최대 체력 1%의 고정피해와 회복 감소 33%.",
+        "choreography": {
+          "windup": 0.3333333333333333,
+          "recovery": 0.3333333333333333,
+          "pulseInterval": 0.16666666666666666,
+          "color": "#ffa17e",
+          "variant": "burst_flame"
+        }
       },
       "source": {
         "powerIndex": 0.539,
@@ -9491,10 +10781,25 @@
             "kind": "CRIT_CHANCE_ADD",
             "value": 0.15,
             "duration": 5
+          },
+          {
+            "kind": "STAT_MUL",
+            "stat": "moveSpeedHexPerSec",
+            "value": -0.25,
+            "duration": 3,
+            "target": "LARGEST_ENEMY_CLUSTER",
+            "radius": 1
           }
         ],
         "vfxKey": "vfx_stun",
-        "description": "[진로 봉쇄] 대상 주변 적에게 98 마법피해를 입히고 1.5초간 기절시킨다."
+        "description": "[진로 봉쇄] 대상 주변 적에게 98 마법피해를 입히고 1.5초간 기절시킨다. 기절과 함께 적의 이동속도를 3초간 25% 감소.",
+        "choreography": {
+          "windup": 0.3333333333333333,
+          "recovery": 0.3333333333333333,
+          "pulseInterval": 0.16666666666666666,
+          "color": "#cab4ff",
+          "variant": "control_bind"
+        }
       },
       "source": {
         "powerIndex": 0.0331,
@@ -9594,10 +10899,23 @@
             "value": 0.1,
             "duration": 4,
             "target": "SELF"
+          },
+          {
+            "kind": "SHIELD_MAXHP_PCT",
+            "value": 0.12,
+            "duration": 3,
+            "target": "SELF"
           }
         ],
         "vfxKey": "vfx_dash_senko",
-        "description": "[직선 돌파] 대상 방향으로 돌진해 주변 적에게 173 물리피해를 입히고 4초간 공격속도 +35%."
+        "description": "[직선 돌파] 대상 방향으로 돌진해 주변 적에게 173 물리피해를 입히고 4초간 공격속도 +35%. 돌파 직후 최대 체력 12% 보호막을 3초간 획득.",
+        "choreography": {
+          "windup": 0.3333333333333333,
+          "recovery": 0.3333333333333333,
+          "pulseInterval": 0.16666666666666666,
+          "color": "#8ed9ff",
+          "variant": "dash_guard"
+        }
       },
       "source": {
         "powerIndex": 0.4492,
@@ -9698,10 +11016,24 @@
             "stat": "moveSpeedHexPerSec",
             "value": 0.3,
             "duration": 3
+          },
+          {
+            "kind": "BURN",
+            "value": 0.01,
+            "duration": 3,
+            "target": "CURRENT_TARGET",
+            "radius": 1
           }
         ],
         "vfxKey": "vfx_dash_nige",
-        "description": "[직선 돌파] 대상 방향으로 돌진해 주변 적에게 220 물리피해를 입히고 4초간 공격속도 +35%."
+        "description": "[직선 돌파] 대상 방향으로 돌진해 주변 적에게 220 물리피해를 입히고 4초간 공격속도 +35%. 돌파한 적을 3초간 불태워 초당 최대 체력 1%의 고정피해.",
+        "choreography": {
+          "windup": 0.3333333333333333,
+          "recovery": 0.3333333333333333,
+          "pulseInterval": 0.16666666666666666,
+          "color": "#ff9b76",
+          "variant": "dash_scorch"
+        }
       },
       "source": {
         "powerIndex": 0.8592,
@@ -9783,6 +11115,13 @@
         "manaCost": 80,
         "effects": [
           {
+            "kind": "SHRED_MR_PCT",
+            "value": 0.2,
+            "duration": 4,
+            "target": "LARGEST_ENEMY_CLUSTER",
+            "radius": 2
+          },
+          {
             "kind": "DAMAGE",
             "value": 190,
             "damageType": "MAGIC",
@@ -9797,7 +11136,14 @@
           }
         ],
         "vfxKey": "vfx_aoe_burst",
-        "description": "[광역 폭발] 가장 밀집한 적 무리에 190 마법피해를 입힌다."
+        "description": "[광역 폭발] 가장 밀집한 적 무리에 190 마법피해를 입힌다. 폭발 직전에 범위 내 적의 마법 저항력을 4초간 20% 감소.",
+        "choreography": {
+          "windup": 0.3333333333333333,
+          "recovery": 0.3333333333333333,
+          "pulseInterval": 0.16666666666666666,
+          "color": "#bba2ff",
+          "variant": "burst_shred"
+        }
       },
       "source": {
         "powerIndex": 0.9053,
@@ -9879,7 +11225,7 @@
         "effects": [
           {
             "kind": "HEAL",
-            "value": 216,
+            "value": 72,
             "target": "LOWEST_HP_ALLY"
           },
           {
@@ -9901,10 +11247,29 @@
             "value": 0.1,
             "duration": 4,
             "target": "SELF"
+          },
+          {
+            "kind": "HEAL",
+            "value": 72,
+            "target": "LOWEST_HP_ALLY",
+            "delay": 0.3
+          },
+          {
+            "kind": "HEAL",
+            "value": 72,
+            "target": "LOWEST_HP_ALLY",
+            "delay": 0.6
           }
         ],
         "vfxKey": "vfx_heal",
-        "description": "[팀 페이스 업] 체력이 가장 낮은 아군을 216 회복시키고 아군 전체 공격력/주문력을 5초간 +20%."
+        "description": "[팀 페이스 업] 체력이 가장 낮은 아군을 216 회복시키고 아군 전체 공격력/주문력을 5초간 +20%. 기본 회복을 3등분해 0.3초 간격으로 전달. 최초로 선택한 아군을 계속 지원.",
+        "choreography": {
+          "windup": 0.3333333333333333,
+          "recovery": 0.3333333333333333,
+          "pulseInterval": 0.16666666666666666,
+          "color": "#97efd0",
+          "variant": "heal_regen"
+        }
       },
       "source": {
         "powerIndex": 0.6205,
@@ -10007,10 +11372,25 @@
               "when": "TARGET_HP_BELOW",
               "threshold": 0.5
             }
+          },
+          {
+            "kind": "STAT_MUL",
+            "stat": "moveSpeedHexPerSec",
+            "value": -0.25,
+            "duration": 3,
+            "target": "LARGEST_ENEMY_CLUSTER",
+            "radius": 1
           }
         ],
         "vfxKey": "vfx_stun",
-        "description": "[진로 봉쇄] 대상 주변 적에게 97 마법피해를 입히고 1.5초간 기절시킨다."
+        "description": "[진로 봉쇄] 대상 주변 적에게 97 마법피해를 입히고 1.5초간 기절시킨다. 기절과 함께 적의 이동속도를 3초간 25% 감소.",
+        "choreography": {
+          "windup": 0.3333333333333333,
+          "recovery": 0.3333333333333333,
+          "pulseInterval": 0.16666666666666666,
+          "color": "#cab4ff",
+          "variant": "control_bind"
+        }
       },
       "source": {
         "powerIndex": 0.0095,
@@ -10096,8 +11476,8 @@
           },
           {
             "kind": "APPLY_STATUS",
-            "status": "STUN",
-            "duration": 1.5,
+            "status": "SILENCE",
+            "duration": 2.5,
             "target": "LARGEST_ENEMY_CLUSTER",
             "radius": 1
           },
@@ -10108,7 +11488,14 @@
           }
         ],
         "vfxKey": "vfx_stun",
-        "description": "[진로 봉쇄] 대상 주변 적에게 98 마법피해를 입히고 1.5초간 기절시킨다."
+        "description": "[진로 봉쇄] 대상 주변 적에게 98 마법피해를 입히고 2.5초간 침묵시킨다. 기절 대신 2.5초 침묵: 이동과 기본 공격은 가능하지만 스킬 시전을 차단.",
+        "choreography": {
+          "windup": 0.3333333333333333,
+          "recovery": 0.3333333333333333,
+          "pulseInterval": 0.16666666666666666,
+          "color": "#d4adff",
+          "variant": "control_silence"
+        }
       },
       "source": {
         "powerIndex": 0.0989,
@@ -10208,10 +11595,23 @@
             "value": 0.1,
             "duration": 4,
             "target": "SELF"
+          },
+          {
+            "kind": "SHIELD_MAXHP_PCT",
+            "value": 0.12,
+            "duration": 4,
+            "target": "LOWEST_HP_ALLY"
           }
         ],
         "vfxKey": "vfx_heal",
-        "description": "[팀 페이스 업] 체력이 가장 낮은 아군을 182 회복시키고 아군 전체 공격력/주문력을 5초간 +20%."
+        "description": "[팀 페이스 업] 체력이 가장 낮은 아군을 182 회복시키고 아군 전체 공격력/주문력을 5초간 +20%. 회복받은 아군에게 최대 체력 12% 보호막을 4초간 부여.",
+        "choreography": {
+          "windup": 0.3333333333333333,
+          "recovery": 0.3333333333333333,
+          "pulseInterval": 0.16666666666666666,
+          "color": "#a9e8f5",
+          "variant": "heal_barrier"
+        }
       },
       "source": {
         "powerIndex": 0.0779,
@@ -10309,10 +11709,25 @@
               "when": "TARGET_HP_BELOW",
               "threshold": 0.5
             }
+          },
+          {
+            "kind": "STAT_MUL",
+            "stat": "moveSpeedHexPerSec",
+            "value": -0.25,
+            "duration": 3,
+            "target": "LARGEST_ENEMY_CLUSTER",
+            "radius": 1
           }
         ],
         "vfxKey": "vfx_stun",
-        "description": "[진로 봉쇄] 대상 주변 적에게 101 마법피해를 입히고 1.5초간 기절시킨다."
+        "description": "[진로 봉쇄] 대상 주변 적에게 101 마법피해를 입히고 1.5초간 기절시킨다. 기절과 함께 적의 이동속도를 3초간 25% 감소.",
+        "choreography": {
+          "windup": 0.3333333333333333,
+          "recovery": 0.3333333333333333,
+          "pulseInterval": 0.16666666666666666,
+          "color": "#cab4ff",
+          "variant": "control_bind"
+        }
       },
       "source": {
         "powerIndex": 0.2771,
@@ -10411,10 +11826,23 @@
             "value": 0.1,
             "duration": 4,
             "target": "SELF"
+          },
+          {
+            "kind": "SHIELD_MAXHP_PCT",
+            "value": 0.12,
+            "duration": 3,
+            "target": "SELF"
           }
         ],
         "vfxKey": "vfx_dash_senko",
-        "description": "[직선 돌파] 대상 방향으로 돌진해 주변 적에게 197 물리피해를 입히고 4초간 공격속도 +35%."
+        "description": "[직선 돌파] 대상 방향으로 돌진해 주변 적에게 197 물리피해를 입히고 4초간 공격속도 +35%. 돌파 직후 최대 체력 12% 보호막을 3초간 획득.",
+        "choreography": {
+          "windup": 0.3333333333333333,
+          "recovery": 0.3333333333333333,
+          "pulseInterval": 0.16666666666666666,
+          "color": "#8ed9ff",
+          "variant": "dash_guard"
+        }
       },
       "source": {
         "powerIndex": 0.6902,
@@ -10512,10 +11940,22 @@
               "when": "TARGET_HP_BELOW",
               "threshold": 0.5
             }
+          },
+          {
+            "kind": "HEAL_MAXHP_PCT",
+            "value": 0.1,
+            "target": "SELF"
           }
         ],
         "vfxKey": "vfx_execute",
-        "description": "[결정타] 체력 비율이 가장 낮은 적에게 232 물리피해. 체력 10% 미만이면 즉시 처치."
+        "description": "[결정타] 체력 비율이 가장 낮은 적에게 232 물리피해. 체력 10% 미만이면 즉시 처치. 결정타 방출 때 자신의 최대 체력 10% 회복.",
+        "choreography": {
+          "windup": 0.3333333333333333,
+          "recovery": 0.3333333333333333,
+          "pulseInterval": 0.16666666666666666,
+          "color": "#f4aaca",
+          "variant": "execute_siphon"
+        }
       },
       "source": {
         "powerIndex": 0.3786,
@@ -10618,10 +12058,24 @@
             "stat": "moveSpeedHexPerSec",
             "value": 0.3,
             "duration": 3
+          },
+          {
+            "kind": "STAT_MUL",
+            "stat": "moveSpeedHexPerSec",
+            "value": 0.25,
+            "duration": 4,
+            "target": "ALL_ALLIES"
           }
         ],
         "vfxKey": "vfx_buff",
-        "description": "[주도권 장악] 6초간 아군 전체의 공격속도 +25%, 방어력/마저 +20."
+        "description": "[주도권 장악] 6초간 아군 전체의 공격속도 +25%, 방어력/마저 +20. 아군 전체가 4초간 이동속도 +25%.",
+        "choreography": {
+          "windup": 0.3333333333333333,
+          "recovery": 0.3333333333333333,
+          "pulseInterval": 0.16666666666666666,
+          "color": "#ffe69d",
+          "variant": "aura_rally"
+        }
       },
       "source": {
         "powerIndex": 0.6169,
@@ -10707,6 +12161,13 @@
             "target": "CURRENT_TARGET"
           },
           {
+            "kind": "SUNDER_ARMOR_PCT",
+            "value": 0.2,
+            "duration": 4,
+            "target": "CURRENT_TARGET",
+            "radius": 1
+          },
+          {
             "kind": "DAMAGE",
             "value": 204,
             "damageType": "PHYSICAL",
@@ -10726,7 +12187,14 @@
           }
         ],
         "vfxKey": "vfx_dash_sashi",
-        "description": "[직선 돌파] 대상 방향으로 돌진해 주변 적에게 204 물리피해를 입히고 4초간 공격속도 +35%."
+        "description": "[직선 돌파] 대상 방향으로 돌진해 주변 적에게 204 물리피해를 입히고 4초간 공격속도 +35%. 돌파 직전에 범위 내 적의 방어력을 4초간 20% 감소.",
+        "choreography": {
+          "windup": 0.3333333333333333,
+          "recovery": 0.3333333333333333,
+          "pulseInterval": 0.16666666666666666,
+          "color": "#ffcc74",
+          "variant": "dash_break"
+        }
       },
       "source": {
         "powerIndex": 0.8371,
@@ -10830,10 +12298,24 @@
             "stat": "moveSpeedHexPerSec",
             "value": 0.3,
             "duration": 3
+          },
+          {
+            "kind": "STAT_MUL",
+            "stat": "moveSpeedHexPerSec",
+            "value": 0.25,
+            "duration": 4,
+            "target": "ALL_ALLIES"
           }
         ],
         "vfxKey": "vfx_buff",
-        "description": "[주도권 장악] 6초간 아군 전체의 공격속도 +25%, 방어력/마저 +20."
+        "description": "[주도권 장악] 6초간 아군 전체의 공격속도 +25%, 방어력/마저 +20. 아군 전체가 4초간 이동속도 +25%.",
+        "choreography": {
+          "windup": 0.3333333333333333,
+          "recovery": 0.3333333333333333,
+          "pulseInterval": 0.16666666666666666,
+          "color": "#ffe69d",
+          "variant": "aura_rally"
+        }
       },
       "source": {
         "powerIndex": 0.7939,
@@ -10938,10 +12420,35 @@
             "stat": "moveSpeedHexPerSec",
             "value": 0.3,
             "duration": 3
+          },
+          {
+            "kind": "HEAL_MAXHP_PCT",
+            "value": 0.02,
+            "target": "ALL_ALLIES",
+            "delay": 0
+          },
+          {
+            "kind": "HEAL_MAXHP_PCT",
+            "value": 0.02,
+            "target": "ALL_ALLIES",
+            "delay": 0.3
+          },
+          {
+            "kind": "HEAL_MAXHP_PCT",
+            "value": 0.02,
+            "target": "ALL_ALLIES",
+            "delay": 0.6
           }
         ],
         "vfxKey": "vfx_buff",
-        "description": "[주도권 장악] 6초간 아군 전체의 공격속도 +25%, 방어력/마저 +20."
+        "description": "[주도권 장악] 6초간 아군 전체의 공격속도 +25%, 방어력/마저 +20. 오라 방출 후 0.3초 간격으로 아군 전체의 최대 체력 2%씩 세 번 회복.",
+        "choreography": {
+          "windup": 0.3333333333333333,
+          "recovery": 0.3333333333333333,
+          "pulseInterval": 0.16666666666666666,
+          "color": "#97efd0",
+          "variant": "aura_sustain"
+        }
       },
       "source": {
         "powerIndex": 0.8455,
@@ -11028,8 +12535,8 @@
           },
           {
             "kind": "APPLY_STATUS",
-            "status": "STUN",
-            "duration": 1.5,
+            "status": "SILENCE",
+            "duration": 2.5,
             "target": "LARGEST_ENEMY_CLUSTER",
             "radius": 1
           },
@@ -11040,7 +12547,14 @@
           }
         ],
         "vfxKey": "vfx_stun",
-        "description": "[진로 봉쇄] 대상 주변 적에게 115 마법피해를 입히고 1.5초간 기절시킨다."
+        "description": "[진로 봉쇄] 대상 주변 적에게 115 마법피해를 입히고 2.5초간 침묵시킨다. 기절 대신 2.5초 침묵: 이동과 기본 공격은 가능하지만 스킬 시전을 차단.",
+        "choreography": {
+          "windup": 0.3333333333333333,
+          "recovery": 0.3333333333333333,
+          "pulseInterval": 0.16666666666666666,
+          "color": "#d4adff",
+          "variant": "control_silence"
+        }
       },
       "source": {
         "powerIndex": 0.5348,
@@ -11145,10 +12659,23 @@
             "stat": "moveSpeedHexPerSec",
             "value": 0.3,
             "duration": 3
+          },
+          {
+            "kind": "SHIELD_MAXHP_PCT",
+            "value": 0.08,
+            "duration": 4,
+            "target": "ALL_ALLIES"
           }
         ],
         "vfxKey": "vfx_buff",
-        "description": "[주도권 장악] 6초간 아군 전체의 공격속도 +25%, 방어력/마저 +20."
+        "description": "[주도권 장악] 6초간 아군 전체의 공격속도 +25%, 방어력/마저 +20. 아군 전체가 최대 체력 8% 보호막을 4초간 획득.",
+        "choreography": {
+          "windup": 0.3333333333333333,
+          "recovery": 0.3333333333333333,
+          "pulseInterval": 0.16666666666666666,
+          "color": "#a9dfff",
+          "variant": "aura_guard"
+        }
       },
       "source": {
         "powerIndex": 0.1333,
@@ -11251,10 +12778,35 @@
             "stat": "moveSpeedHexPerSec",
             "value": 0.3,
             "duration": 3
+          },
+          {
+            "kind": "HEAL_MAXHP_PCT",
+            "value": 0.02,
+            "target": "ALL_ALLIES",
+            "delay": 0
+          },
+          {
+            "kind": "HEAL_MAXHP_PCT",
+            "value": 0.02,
+            "target": "ALL_ALLIES",
+            "delay": 0.3
+          },
+          {
+            "kind": "HEAL_MAXHP_PCT",
+            "value": 0.02,
+            "target": "ALL_ALLIES",
+            "delay": 0.6
           }
         ],
         "vfxKey": "vfx_buff",
-        "description": "[주도권 장악] 6초간 아군 전체의 공격속도 +25%, 방어력/마저 +20."
+        "description": "[주도권 장악] 6초간 아군 전체의 공격속도 +25%, 방어력/마저 +20. 오라 방출 후 0.3초 간격으로 아군 전체의 최대 체력 2%씩 세 번 회복.",
+        "choreography": {
+          "windup": 0.3333333333333333,
+          "recovery": 0.3333333333333333,
+          "pulseInterval": 0.16666666666666666,
+          "color": "#97efd0",
+          "variant": "aura_sustain"
+        }
       },
       "source": {
         "powerIndex": 0.3439,
@@ -11351,10 +12903,22 @@
               "when": "TARGET_HP_BELOW",
               "threshold": 0.5
             }
+          },
+          {
+            "kind": "HEAL_MAXHP_PCT",
+            "value": 0.1,
+            "target": "SELF"
           }
         ],
         "vfxKey": "vfx_execute",
-        "description": "[결정타] 체력 비율이 가장 낮은 적에게 328 물리피해. 체력 10% 미만이면 즉시 처치."
+        "description": "[결정타] 체력 비율이 가장 낮은 적에게 328 물리피해. 체력 10% 미만이면 즉시 처치. 결정타 방출 때 자신의 최대 체력 10% 회복.",
+        "choreography": {
+          "windup": 0.3333333333333333,
+          "recovery": 0.3333333333333333,
+          "pulseInterval": 0.16666666666666666,
+          "color": "#f4aaca",
+          "variant": "execute_siphon"
+        }
       },
       "source": {
         "powerIndex": 0.9159,
@@ -11455,10 +13019,24 @@
             "kind": "CRIT_CHANCE_ADD",
             "value": 0.15,
             "duration": 5
+          },
+          {
+            "kind": "BURN",
+            "value": 0.01,
+            "duration": 3,
+            "target": "CURRENT_TARGET",
+            "radius": 1
           }
         ],
         "vfxKey": "vfx_dash_sashi",
-        "description": "[직선 돌파] 대상 방향으로 돌진해 주변 적에게 245 물리피해를 입히고 4초간 공격속도 +35%."
+        "description": "[직선 돌파] 대상 방향으로 돌진해 주변 적에게 245 물리피해를 입히고 4초간 공격속도 +35%. 돌파한 적을 3초간 불태워 초당 최대 체력 1%의 고정피해.",
+        "choreography": {
+          "windup": 0.3333333333333333,
+          "recovery": 0.3333333333333333,
+          "pulseInterval": 0.16666666666666666,
+          "color": "#ff9b76",
+          "variant": "dash_scorch"
+        }
       },
       "source": {
         "powerIndex": 0.9371,
@@ -11562,10 +13140,23 @@
             "stat": "moveSpeedHexPerSec",
             "value": 0.3,
             "duration": 3
+          },
+          {
+            "kind": "SHIELD_MAXHP_PCT",
+            "value": 0.08,
+            "duration": 4,
+            "target": "ALL_ALLIES"
           }
         ],
         "vfxKey": "vfx_buff",
-        "description": "[주도권 장악] 6초간 아군 전체의 공격속도 +25%, 방어력/마저 +20."
+        "description": "[주도권 장악] 6초간 아군 전체의 공격속도 +25%, 방어력/마저 +20. 아군 전체가 최대 체력 8% 보호막을 4초간 획득.",
+        "choreography": {
+          "windup": 0.3333333333333333,
+          "recovery": 0.3333333333333333,
+          "pulseInterval": 0.16666666666666666,
+          "color": "#a9dfff",
+          "variant": "aura_guard"
+        }
       },
       "source": {
         "powerIndex": 0.8826,
@@ -11654,7 +13245,7 @@
           {
             "kind": "APPLY_STATUS",
             "status": "STUN",
-            "duration": 1.5,
+            "duration": 0.75,
             "target": "LARGEST_ENEMY_CLUSTER",
             "radius": 1
           },
@@ -11662,10 +13253,25 @@
             "kind": "CRIT_CHANCE_ADD",
             "value": 0.15,
             "duration": 5
+          },
+          {
+            "kind": "STAT_MUL",
+            "stat": "attackSpeed",
+            "value": -0.2,
+            "duration": 3,
+            "target": "LARGEST_ENEMY_CLUSTER",
+            "radius": 1
           }
         ],
         "vfxKey": "vfx_stun",
-        "description": "[진로 봉쇄] 대상 주변 적에게 101 마법피해를 입히고 1.5초간 기절시킨다."
+        "description": "[진로 봉쇄] 대상 주변 적에게 101 마법피해를 입히고 0.75초간 기절시킨다. 기절 시간을 0.75초로 줄이고 적의 공격속도를 3초간 20% 감소.",
+        "choreography": {
+          "windup": 0.3333333333333333,
+          "recovery": 0.3333333333333333,
+          "pulseInterval": 0.16666666666666666,
+          "color": "#a1e7ff",
+          "variant": "control_frost"
+        }
       },
       "source": {
         "powerIndex": 0.2939,
@@ -11749,6 +13355,13 @@
             "target": "CURRENT_TARGET"
           },
           {
+            "kind": "SUNDER_ARMOR_PCT",
+            "value": 0.2,
+            "duration": 4,
+            "target": "CURRENT_TARGET",
+            "radius": 1
+          },
+          {
             "kind": "DAMAGE",
             "value": 191,
             "damageType": "PHYSICAL",
@@ -11768,7 +13381,14 @@
           }
         ],
         "vfxKey": "vfx_dash_sashi",
-        "description": "[직선 돌파] 대상 방향으로 돌진해 주변 적에게 191 물리피해를 입히고 4초간 공격속도 +35%."
+        "description": "[직선 돌파] 대상 방향으로 돌진해 주변 적에게 191 물리피해를 입히고 4초간 공격속도 +35%. 돌파 직전에 범위 내 적의 방어력을 4초간 20% 감소.",
+        "choreography": {
+          "windup": 0.3333333333333333,
+          "recovery": 0.3333333333333333,
+          "pulseInterval": 0.16666666666666666,
+          "color": "#ffcc74",
+          "variant": "dash_break"
+        }
       },
       "source": {
         "powerIndex": 0.5477,
@@ -11849,6 +13469,12 @@
         "manaCost": 70,
         "effects": [
           {
+            "kind": "SUNDER_ARMOR_PCT",
+            "value": 0.25,
+            "duration": 4,
+            "target": "LOWEST_HP_PCT_ENEMY"
+          },
+          {
             "kind": "DAMAGE",
             "value": 259,
             "damageType": "PHYSICAL",
@@ -11870,7 +13496,14 @@
           }
         ],
         "vfxKey": "vfx_execute",
-        "description": "[결정타] 체력 비율이 가장 낮은 적에게 259 물리피해. 체력 10% 미만이면 즉시 처치."
+        "description": "[결정타] 체력 비율이 가장 낮은 적에게 259 물리피해. 체력 10% 미만이면 즉시 처치. 결정타 전에 대상의 방어력을 4초간 25% 감소.",
+        "choreography": {
+          "windup": 0.3333333333333333,
+          "recovery": 0.3333333333333333,
+          "pulseInterval": 0.16666666666666666,
+          "color": "#f3d697",
+          "variant": "execute_break"
+        }
       },
       "source": {
         "powerIndex": 0.572,
@@ -11976,10 +13609,24 @@
             "stat": "moveSpeedHexPerSec",
             "value": 0.3,
             "duration": 3
+          },
+          {
+            "kind": "STAT_MUL",
+            "stat": "moveSpeedHexPerSec",
+            "value": 0.25,
+            "duration": 4,
+            "target": "ALL_ALLIES"
           }
         ],
         "vfxKey": "vfx_buff",
-        "description": "[주도권 장악] 6초간 아군 전체의 공격속도 +25%, 방어력/마저 +20."
+        "description": "[주도권 장악] 6초간 아군 전체의 공격속도 +25%, 방어력/마저 +20. 아군 전체가 4초간 이동속도 +25%.",
+        "choreography": {
+          "windup": 0.3333333333333333,
+          "recovery": 0.3333333333333333,
+          "pulseInterval": 0.16666666666666666,
+          "color": "#ffe69d",
+          "variant": "aura_rally"
+        }
       },
       "source": {
         "powerIndex": 0.2308,
@@ -12059,6 +13706,12 @@
         "manaCost": 70,
         "effects": [
           {
+            "kind": "DAMAGE_MAXHP_PCT",
+            "value": 0.04,
+            "damageType": "PHYSICAL",
+            "target": "LOWEST_HP_PCT_ENEMY"
+          },
+          {
             "kind": "DAMAGE",
             "value": 271,
             "damageType": "PHYSICAL",
@@ -12080,7 +13733,14 @@
           }
         ],
         "vfxKey": "vfx_execute",
-        "description": "[결정타] 체력 비율이 가장 낮은 적에게 271 물리피해. 체력 10% 미만이면 즉시 처치."
+        "description": "[결정타] 체력 비율이 가장 낮은 적에게 271 물리피해. 체력 10% 미만이면 즉시 처치. 결정타 전에 대상 최대 체력 4%의 물리피해 추가.",
+        "choreography": {
+          "windup": 0.3333333333333333,
+          "recovery": 0.3333333333333333,
+          "pulseInterval": 0.16666666666666666,
+          "color": "#ffbf92",
+          "variant": "execute_giant"
+        }
       },
       "source": {
         "powerIndex": 0.7799,
@@ -12164,6 +13824,13 @@
             "target": "CURRENT_TARGET"
           },
           {
+            "kind": "SUNDER_ARMOR_PCT",
+            "value": 0.2,
+            "duration": 4,
+            "target": "CURRENT_TARGET",
+            "radius": 1
+          },
+          {
             "kind": "DAMAGE",
             "value": 175,
             "damageType": "PHYSICAL",
@@ -12183,7 +13850,14 @@
           }
         ],
         "vfxKey": "vfx_dash_sashi",
-        "description": "[직선 돌파] 대상 방향으로 돌진해 주변 적에게 175 물리피해를 입히고 4초간 공격속도 +35%."
+        "description": "[직선 돌파] 대상 방향으로 돌진해 주변 적에게 175 물리피해를 입히고 4초간 공격속도 +35%. 돌파 직전에 범위 내 적의 방어력을 4초간 20% 감소.",
+        "choreography": {
+          "windup": 0.3333333333333333,
+          "recovery": 0.3333333333333333,
+          "pulseInterval": 0.16666666666666666,
+          "color": "#ffcc74",
+          "variant": "dash_break"
+        }
       },
       "source": {
         "powerIndex": 0.4724,
@@ -12277,10 +13951,23 @@
             "value": 0.1,
             "duration": 4,
             "target": "SELF"
+          },
+          {
+            "kind": "HEAL_MAXHP_PCT",
+            "value": 0.08,
+            "target": "SELF",
+            "delay": 0.3333333333333333
           }
         ],
         "vfxKey": "vfx_projectile",
-        "description": "[연속 스퍼트] 대상에게 93 물리피해를 3회 연속으로 가한다."
+        "description": "[연속 스퍼트] 대상에게 93 물리피해를 3회 연속으로 가한다. 세 번째 발사 때 자신의 최대 체력 8% 회복.",
+        "choreography": {
+          "windup": 0,
+          "recovery": 0.3333333333333333,
+          "pulseInterval": 0.16666666666666666,
+          "color": "#96eacb",
+          "variant": "volley_siphon"
+        }
       },
       "source": {
         "powerIndex": 0.8659,
@@ -12381,10 +14068,25 @@
               "when": "TARGET_HP_BELOW",
               "threshold": 0.5
             }
+          },
+          {
+            "kind": "STAT_MUL",
+            "stat": "moveSpeedHexPerSec",
+            "value": -0.25,
+            "duration": 3,
+            "target": "LARGEST_ENEMY_CLUSTER",
+            "radius": 1
           }
         ],
         "vfxKey": "vfx_stun",
-        "description": "[진로 봉쇄] 대상 주변 적에게 115 마법피해를 입히고 1.5초간 기절시킨다."
+        "description": "[진로 봉쇄] 대상 주변 적에게 115 마법피해를 입히고 1.5초간 기절시킨다. 기절과 함께 적의 이동속도를 3초간 25% 감소.",
+        "choreography": {
+          "windup": 0.3333333333333333,
+          "recovery": 0.3333333333333333,
+          "pulseInterval": 0.16666666666666666,
+          "color": "#cab4ff",
+          "variant": "control_bind"
+        }
       },
       "source": {
         "powerIndex": 0.5294,
@@ -12470,6 +14172,13 @@
             "target": "CURRENT_TARGET"
           },
           {
+            "kind": "SUNDER_ARMOR_PCT",
+            "value": 0.2,
+            "duration": 4,
+            "target": "CURRENT_TARGET",
+            "radius": 1
+          },
+          {
             "kind": "DAMAGE",
             "value": 190,
             "damageType": "PHYSICAL",
@@ -12490,7 +14199,14 @@
           }
         ],
         "vfxKey": "vfx_dash_nige",
-        "description": "[직선 돌파] 대상 방향으로 돌진해 주변 적에게 190 물리피해를 입히고 4초간 공격속도 +35%."
+        "description": "[직선 돌파] 대상 방향으로 돌진해 주변 적에게 190 물리피해를 입히고 4초간 공격속도 +35%. 돌파 직전에 범위 내 적의 방어력을 4초간 20% 감소.",
+        "choreography": {
+          "windup": 0.3333333333333333,
+          "recovery": 0.3333333333333333,
+          "pulseInterval": 0.16666666666666666,
+          "color": "#ffcc74",
+          "variant": "dash_break"
+        }
       },
       "source": {
         "powerIndex": 0.4955,
@@ -12584,10 +14300,25 @@
             "value": 0.1,
             "duration": 4,
             "target": "SELF"
+          },
+          {
+            "kind": "STAT_MUL",
+            "stat": "attackSpeed",
+            "value": 0.2,
+            "duration": 3,
+            "target": "SELF",
+            "delay": 0.3333333333333333
           }
         ],
         "vfxKey": "vfx_projectile",
-        "description": "[연속 스퍼트] 대상에게 71 물리피해를 3회 연속으로 가한다."
+        "description": "[연속 스퍼트] 대상에게 71 물리피해를 3회 연속으로 가한다. 세 번째 발사 후 3초간 공격속도 +20%.",
+        "choreography": {
+          "windup": 0,
+          "recovery": 0.3333333333333333,
+          "pulseInterval": 0.16666666666666666,
+          "color": "#ffcf8c",
+          "variant": "volley_focus"
+        }
       },
       "source": {
         "powerIndex": 0.3278,
@@ -12667,6 +14398,12 @@
         "manaCost": 70,
         "effects": [
           {
+            "kind": "SUNDER_ARMOR_PCT",
+            "value": 0.2,
+            "duration": 4,
+            "target": "CURRENT_TARGET"
+          },
+          {
             "kind": "DAMAGE",
             "value": 116,
             "damageType": "PHYSICAL",
@@ -12685,7 +14422,14 @@
           }
         ],
         "vfxKey": "vfx_projectile",
-        "description": "[연속 스퍼트] 대상에게 116 물리피해를 3회 연속으로 가한다."
+        "description": "[연속 스퍼트] 대상에게 116 물리피해를 3회 연속으로 가한다. 첫 발 직전에 대상의 방어력을 4초간 20% 감소.",
+        "choreography": {
+          "windup": 0,
+          "recovery": 0.3333333333333333,
+          "pulseInterval": 0.16666666666666666,
+          "color": "#ffe09c",
+          "variant": "volley_pierce"
+        }
       },
       "source": {
         "powerIndex": 0.9802,
@@ -12764,6 +14508,13 @@
         "manaCost": 80,
         "effects": [
           {
+            "kind": "SHRED_MR_PCT",
+            "value": 0.2,
+            "duration": 4,
+            "target": "LARGEST_ENEMY_CLUSTER",
+            "radius": 2
+          },
+          {
             "kind": "DAMAGE",
             "value": 172,
             "damageType": "MAGIC",
@@ -12778,7 +14529,14 @@
           }
         ],
         "vfxKey": "vfx_aoe_burst",
-        "description": "[광역 폭발] 가장 밀집한 적 무리에 172 마법피해를 입힌다."
+        "description": "[광역 폭발] 가장 밀집한 적 무리에 172 마법피해를 입힌다. 폭발 직전에 범위 내 적의 마법 저항력을 4초간 20% 감소.",
+        "choreography": {
+          "windup": 0.3333333333333333,
+          "recovery": 0.3333333333333333,
+          "pulseInterval": 0.16666666666666666,
+          "color": "#bba2ff",
+          "variant": "burst_shred"
+        }
       },
       "source": {
         "powerIndex": 0.7992,
@@ -12880,10 +14638,24 @@
             "stat": "moveSpeedHexPerSec",
             "value": 0.3,
             "duration": 3
+          },
+          {
+            "kind": "BURN",
+            "value": 0.01,
+            "duration": 3,
+            "target": "CURRENT_TARGET",
+            "radius": 1
           }
         ],
         "vfxKey": "vfx_dash_nige",
-        "description": "[직선 돌파] 대상 방향으로 돌진해 주변 적에게 246 물리피해를 입히고 4초간 공격속도 +35%."
+        "description": "[직선 돌파] 대상 방향으로 돌진해 주변 적에게 246 물리피해를 입히고 4초간 공격속도 +35%. 돌파한 적을 3초간 불태워 초당 최대 체력 1%의 고정피해.",
+        "choreography": {
+          "windup": 0.3333333333333333,
+          "recovery": 0.3333333333333333,
+          "pulseInterval": 0.16666666666666666,
+          "color": "#ff9b76",
+          "variant": "dash_scorch"
+        }
       },
       "source": {
         "powerIndex": 0.9391,
@@ -12971,8 +14743,8 @@
           },
           {
             "kind": "APPLY_STATUS",
-            "status": "STUN",
-            "duration": 1.5,
+            "status": "SILENCE",
+            "duration": 2.5,
             "target": "LARGEST_ENEMY_CLUSTER",
             "radius": 1
           },
@@ -12983,7 +14755,14 @@
           }
         ],
         "vfxKey": "vfx_stun",
-        "description": "[진로 봉쇄] 대상 주변 적에게 104 마법피해를 입히고 1.5초간 기절시킨다."
+        "description": "[진로 봉쇄] 대상 주변 적에게 104 마법피해를 입히고 2.5초간 침묵시킨다. 기절 대신 2.5초 침묵: 이동과 기본 공격은 가능하지만 스킬 시전을 차단.",
+        "choreography": {
+          "windup": 0.3333333333333333,
+          "recovery": 0.3333333333333333,
+          "pulseInterval": 0.16666666666666666,
+          "color": "#d4adff",
+          "variant": "control_silence"
+        }
       },
       "source": {
         "powerIndex": 0.4535,
@@ -13085,10 +14864,23 @@
             "value": 0.1,
             "duration": 4,
             "target": "SELF"
+          },
+          {
+            "kind": "SHIELD_MAXHP_PCT",
+            "value": 0.12,
+            "duration": 3,
+            "target": "SELF"
           }
         ],
         "vfxKey": "vfx_dash_senko",
-        "description": "[직선 돌파] 대상 방향으로 돌진해 주변 적에게 244 물리피해를 입히고 4초간 공격속도 +35%."
+        "description": "[직선 돌파] 대상 방향으로 돌진해 주변 적에게 244 물리피해를 입히고 4초간 공격속도 +35%. 돌파 직후 최대 체력 12% 보호막을 3초간 획득.",
+        "choreography": {
+          "windup": 0.3333333333333333,
+          "recovery": 0.3333333333333333,
+          "pulseInterval": 0.16666666666666666,
+          "color": "#8ed9ff",
+          "variant": "dash_guard"
+        }
       },
       "source": {
         "powerIndex": 0.9224,
@@ -13192,10 +14984,22 @@
             "value": 0.1,
             "duration": 4,
             "target": "SELF"
+          },
+          {
+            "kind": "HEAL_MISSING_PCT",
+            "value": 0.12,
+            "target": "LOWEST_HP_ALLY"
           }
         ],
         "vfxKey": "vfx_heal",
-        "description": "[팀 페이스 업] 체력이 가장 낮은 아군을 186 회복시키고 아군 전체 공격력/주문력을 5초간 +20%."
+        "description": "[팀 페이스 업] 체력이 가장 낮은 아군을 186 회복시키고 아군 전체 공격력/주문력을 5초간 +20%. 선택한 아군의 잃은 체력 12%를 추가 회복.",
+        "choreography": {
+          "windup": 0.3333333333333333,
+          "recovery": 0.3333333333333333,
+          "pulseInterval": 0.16666666666666666,
+          "color": "#baffbc",
+          "variant": "heal_rescue"
+        }
       },
       "source": {
         "powerIndex": 0.2698,
@@ -13285,20 +15089,26 @@
             "target": "ALL_ENEMIES"
           },
           {
-            "kind": "APPLY_STATUS",
-            "status": "TAUNT",
-            "duration": 2.5,
-            "radius": 2
-          },
-          {
             "kind": "SHIELD_MAXHP_PCT",
             "value": 0.1,
             "duration": 4,
             "target": "SELF"
+          },
+          {
+            "kind": "HEAL_MISSING_PCT",
+            "value": 0.18,
+            "target": "SELF"
           }
         ],
         "vfxKey": "vfx_shield",
-        "description": "[선두 방벽] 최대 체력 29% 보호막(5초)을 얻고 2칸 내 적을 2.5초간 도발한다."
+        "description": "[선두 방벽] 최대 체력 29% 보호막(5초)을 얻고 2칸 내 적을 2.5초간 도발한다. 방벽을 펼치며 자신의 잃은 체력 18% 회복.",
+        "choreography": {
+          "windup": 0.3333333333333333,
+          "recovery": 0.3333333333333333,
+          "pulseInterval": 0.16666666666666666,
+          "color": "#b5efd1",
+          "variant": "shield_resolve"
+        }
       },
       "source": {
         "powerIndex": 0.2589,
@@ -13385,7 +15195,7 @@
           {
             "kind": "APPLY_STATUS",
             "status": "STUN",
-            "duration": 1.5,
+            "duration": 0.75,
             "target": "LARGEST_ENEMY_CLUSTER",
             "radius": 1
           },
@@ -13393,10 +15203,25 @@
             "kind": "CRIT_CHANCE_ADD",
             "value": 0.15,
             "duration": 5
+          },
+          {
+            "kind": "STAT_MUL",
+            "stat": "attackSpeed",
+            "value": -0.2,
+            "duration": 3,
+            "target": "LARGEST_ENEMY_CLUSTER",
+            "radius": 1
           }
         ],
         "vfxKey": "vfx_stun",
-        "description": "[진로 봉쇄] 대상 주변 적에게 103 마법피해를 입히고 1.5초간 기절시킨다."
+        "description": "[진로 봉쇄] 대상 주변 적에게 103 마법피해를 입히고 0.75초간 기절시킨다. 기절 시간을 0.75초로 줄이고 적의 공격속도를 3초간 20% 감소.",
+        "choreography": {
+          "windup": 0.3333333333333333,
+          "recovery": 0.3333333333333333,
+          "pulseInterval": 0.16666666666666666,
+          "color": "#a1e7ff",
+          "variant": "control_frost"
+        }
       },
       "source": {
         "powerIndex": 0.3674,
@@ -13500,10 +15325,23 @@
             "stat": "moveSpeedHexPerSec",
             "value": 0.3,
             "duration": 3
+          },
+          {
+            "kind": "SHIELD_MAXHP_PCT",
+            "value": 0.08,
+            "duration": 4,
+            "target": "ALL_ALLIES"
           }
         ],
         "vfxKey": "vfx_buff",
-        "description": "[주도권 장악] 6초간 아군 전체의 공격속도 +25%, 방어력/마저 +20."
+        "description": "[주도권 장악] 6초간 아군 전체의 공격속도 +25%, 방어력/마저 +20. 아군 전체가 최대 체력 8% 보호막을 4초간 획득.",
+        "choreography": {
+          "windup": 0.3333333333333333,
+          "recovery": 0.3333333333333333,
+          "pulseInterval": 0.16666666666666666,
+          "color": "#a9dfff",
+          "variant": "aura_guard"
+        }
       },
       "source": {
         "powerIndex": 0.2806,
@@ -13592,10 +15430,30 @@
             "stat": "moveSpeedHexPerSec",
             "value": 0.3,
             "duration": 3
+          },
+          {
+            "kind": "BURN",
+            "value": 0.01,
+            "duration": 3,
+            "target": "LARGEST_ENEMY_CLUSTER",
+            "radius": 2
+          },
+          {
+            "kind": "WOUND",
+            "duration": 3,
+            "target": "LARGEST_ENEMY_CLUSTER",
+            "radius": 2
           }
         ],
         "vfxKey": "vfx_aoe_burst",
-        "description": "[광역 폭발] 가장 밀집한 적 무리에 190 마법피해를 입힌다."
+        "description": "[광역 폭발] 가장 밀집한 적 무리에 190 마법피해를 입힌다. 폭발 후 3초간 초당 최대 체력 1%의 고정피해와 회복 감소 33%.",
+        "choreography": {
+          "windup": 0.3333333333333333,
+          "recovery": 0.3333333333333333,
+          "pulseInterval": 0.16666666666666666,
+          "color": "#ffa17e",
+          "variant": "burst_flame"
+        }
       },
       "source": {
         "powerIndex": 0.8904,
@@ -13685,7 +15543,7 @@
           {
             "kind": "APPLY_STATUS",
             "status": "STUN",
-            "duration": 1.5,
+            "duration": 0.75,
             "target": "LARGEST_ENEMY_CLUSTER",
             "radius": 1
           },
@@ -13693,10 +15551,25 @@
             "kind": "CRIT_CHANCE_ADD",
             "value": 0.15,
             "duration": 5
+          },
+          {
+            "kind": "STAT_MUL",
+            "stat": "attackSpeed",
+            "value": -0.2,
+            "duration": 3,
+            "target": "LARGEST_ENEMY_CLUSTER",
+            "radius": 1
           }
         ],
         "vfxKey": "vfx_stun",
-        "description": "[진로 봉쇄] 대상 주변 적에게 100 마법피해를 입히고 1.5초간 기절시킨다."
+        "description": "[진로 봉쇄] 대상 주변 적에게 100 마법피해를 입히고 0.75초간 기절시킨다. 기절 시간을 0.75초로 줄이고 적의 공격속도를 3초간 20% 감소.",
+        "choreography": {
+          "windup": 0.3333333333333333,
+          "recovery": 0.3333333333333333,
+          "pulseInterval": 0.16666666666666666,
+          "color": "#a1e7ff",
+          "variant": "control_frost"
+        }
       },
       "source": {
         "powerIndex": 0.2752,
@@ -13800,10 +15673,23 @@
             "stat": "moveSpeedHexPerSec",
             "value": 0.3,
             "duration": 3
+          },
+          {
+            "kind": "SHIELD_MAXHP_PCT",
+            "value": 0.08,
+            "duration": 4,
+            "target": "ALL_ALLIES"
           }
         ],
         "vfxKey": "vfx_buff",
-        "description": "[주도권 장악] 6초간 아군 전체의 공격속도 +25%, 방어력/마저 +20."
+        "description": "[주도권 장악] 6초간 아군 전체의 공격속도 +25%, 방어력/마저 +20. 아군 전체가 최대 체력 8% 보호막을 4초간 획득.",
+        "choreography": {
+          "windup": 0.3333333333333333,
+          "recovery": 0.3333333333333333,
+          "pulseInterval": 0.16666666666666666,
+          "color": "#a9dfff",
+          "variant": "aura_guard"
+        }
       },
       "source": {
         "powerIndex": 0.7017,
@@ -13909,10 +15795,23 @@
             "stat": "moveSpeedHexPerSec",
             "value": 0.3,
             "duration": 3
+          },
+          {
+            "kind": "SHIELD_MAXHP_PCT",
+            "value": 0.08,
+            "duration": 4,
+            "target": "ALL_ALLIES"
           }
         ],
         "vfxKey": "vfx_buff",
-        "description": "[주도권 장악] 6초간 아군 전체의 공격속도 +25%, 방어력/마저 +20."
+        "description": "[주도권 장악] 6초간 아군 전체의 공격속도 +25%, 방어력/마저 +20. 아군 전체가 최대 체력 8% 보호막을 4초간 획득.",
+        "choreography": {
+          "windup": 0.3333333333333333,
+          "recovery": 0.3333333333333333,
+          "pulseInterval": 0.16666666666666666,
+          "color": "#a9dfff",
+          "variant": "aura_guard"
+        }
       },
       "source": {
         "powerIndex": 0.4877,
@@ -13996,6 +15895,13 @@
             "target": "CURRENT_TARGET"
           },
           {
+            "kind": "SUNDER_ARMOR_PCT",
+            "value": 0.2,
+            "duration": 4,
+            "target": "CURRENT_TARGET",
+            "radius": 1
+          },
+          {
             "kind": "DAMAGE",
             "value": 215,
             "damageType": "PHYSICAL",
@@ -14016,7 +15922,14 @@
           }
         ],
         "vfxKey": "vfx_dash_nige",
-        "description": "[직선 돌파] 대상 방향으로 돌진해 주변 적에게 215 물리피해를 입히고 4초간 공격속도 +35%."
+        "description": "[직선 돌파] 대상 방향으로 돌진해 주변 적에게 215 물리피해를 입히고 4초간 공격속도 +35%. 돌파 직전에 범위 내 적의 방어력을 4초간 20% 감소.",
+        "choreography": {
+          "windup": 0.3333333333333333,
+          "recovery": 0.3333333333333333,
+          "pulseInterval": 0.16666666666666666,
+          "color": "#ffcc74",
+          "variant": "dash_break"
+        }
       },
       "source": {
         "powerIndex": 0.7689,
@@ -14119,10 +16032,23 @@
             "value": 0.1,
             "duration": 4,
             "target": "SELF"
+          },
+          {
+            "kind": "SHIELD_MAXHP_PCT",
+            "value": 0.12,
+            "duration": 3,
+            "target": "SELF"
           }
         ],
         "vfxKey": "vfx_dash_senko",
-        "description": "[직선 돌파] 대상 방향으로 돌진해 주변 적에게 172 물리피해를 입히고 4초간 공격속도 +35%."
+        "description": "[직선 돌파] 대상 방향으로 돌진해 주변 적에게 172 물리피해를 입히고 4초간 공격속도 +35%. 돌파 직후 최대 체력 12% 보호막을 3초간 획득.",
+        "choreography": {
+          "windup": 0.3333333333333333,
+          "recovery": 0.3333333333333333,
+          "pulseInterval": 0.16666666666666666,
+          "color": "#8ed9ff",
+          "variant": "dash_guard"
+        }
       },
       "source": {
         "powerIndex": 0.3841,
@@ -14214,20 +16140,26 @@
             "target": "ALL_ENEMIES"
           },
           {
-            "kind": "APPLY_STATUS",
-            "status": "TAUNT",
-            "duration": 2.5,
-            "radius": 2
-          },
-          {
             "kind": "SHIELD_MAXHP_PCT",
             "value": 0.1,
             "duration": 4,
             "target": "SELF"
+          },
+          {
+            "kind": "HEAL_MISSING_PCT",
+            "value": 0.18,
+            "target": "SELF"
           }
         ],
         "vfxKey": "vfx_shield",
-        "description": "[선두 방벽] 최대 체력 29% 보호막(5초)을 얻고 2칸 내 적을 2.5초간 도발한다."
+        "description": "[선두 방벽] 최대 체력 29% 보호막(5초)을 얻고 2칸 내 적을 2.5초간 도발한다. 방벽을 펼치며 자신의 잃은 체력 18% 회복.",
+        "choreography": {
+          "windup": 0.3333333333333333,
+          "recovery": 0.3333333333333333,
+          "pulseInterval": 0.16666666666666666,
+          "color": "#b5efd1",
+          "variant": "shield_resolve"
+        }
       },
       "source": {
         "powerIndex": 0.4576,
@@ -14329,10 +16261,23 @@
             "value": 0.1,
             "duration": 4,
             "target": "SELF"
+          },
+          {
+            "kind": "SHIELD_MAXHP_PCT",
+            "value": 0.12,
+            "duration": 3,
+            "target": "SELF"
           }
         ],
         "vfxKey": "vfx_dash_senko",
-        "description": "[직선 돌파] 대상 방향으로 돌진해 주변 적에게 213 물리피해를 입히고 4초간 공격속도 +35%."
+        "description": "[직선 돌파] 대상 방향으로 돌진해 주변 적에게 213 물리피해를 입히고 4초간 공격속도 +35%. 돌파 직후 최대 체력 12% 보호막을 3초간 획득.",
+        "choreography": {
+          "windup": 0.3333333333333333,
+          "recovery": 0.3333333333333333,
+          "pulseInterval": 0.16666666666666666,
+          "color": "#8ed9ff",
+          "variant": "dash_guard"
+        }
       },
       "source": {
         "powerIndex": 0.7215,
@@ -14436,10 +16381,24 @@
             "stat": "moveSpeedHexPerSec",
             "value": 0.3,
             "duration": 3
+          },
+          {
+            "kind": "STAT_MUL",
+            "stat": "moveSpeedHexPerSec",
+            "value": 0.25,
+            "duration": 4,
+            "target": "ALL_ALLIES"
           }
         ],
         "vfxKey": "vfx_buff",
-        "description": "[주도권 장악] 6초간 아군 전체의 공격속도 +25%, 방어력/마저 +20."
+        "description": "[주도권 장악] 6초간 아군 전체의 공격속도 +25%, 방어력/마저 +20. 아군 전체가 4초간 이동속도 +25%.",
+        "choreography": {
+          "windup": 0.3333333333333333,
+          "recovery": 0.3333333333333333,
+          "pulseInterval": 0.16666666666666666,
+          "color": "#ffe69d",
+          "variant": "aura_rally"
+        }
       },
       "source": {
         "powerIndex": 0.7459,
@@ -14523,6 +16482,13 @@
             "target": "CURRENT_TARGET"
           },
           {
+            "kind": "SUNDER_ARMOR_PCT",
+            "value": 0.2,
+            "duration": 4,
+            "target": "CURRENT_TARGET",
+            "radius": 1
+          },
+          {
             "kind": "DAMAGE",
             "value": 193,
             "damageType": "PHYSICAL",
@@ -14543,7 +16509,14 @@
           }
         ],
         "vfxKey": "vfx_dash_nige",
-        "description": "[직선 돌파] 대상 방향으로 돌진해 주변 적에게 193 물리피해를 입히고 4초간 공격속도 +35%."
+        "description": "[직선 돌파] 대상 방향으로 돌진해 주변 적에게 193 물리피해를 입히고 4초간 공격속도 +35%. 돌파 직전에 범위 내 적의 방어력을 4초간 20% 감소.",
+        "choreography": {
+          "windup": 0.3333333333333333,
+          "recovery": 0.3333333333333333,
+          "pulseInterval": 0.16666666666666666,
+          "color": "#ffcc74",
+          "variant": "dash_break"
+        }
       },
       "source": {
         "powerIndex": 0.5974,
@@ -14634,10 +16607,30 @@
             "stat": "moveSpeedHexPerSec",
             "value": 0.3,
             "duration": 3
+          },
+          {
+            "kind": "BURN",
+            "value": 0.01,
+            "duration": 3,
+            "target": "LARGEST_ENEMY_CLUSTER",
+            "radius": 2
+          },
+          {
+            "kind": "WOUND",
+            "duration": 3,
+            "target": "LARGEST_ENEMY_CLUSTER",
+            "radius": 2
           }
         ],
         "vfxKey": "vfx_aoe_burst",
-        "description": "[광역 폭발] 가장 밀집한 적 무리에 149 마법피해를 입힌다."
+        "description": "[광역 폭발] 가장 밀집한 적 무리에 149 마법피해를 입힌다. 폭발 후 3초간 초당 최대 체력 1%의 고정피해와 회복 감소 33%.",
+        "choreography": {
+          "windup": 0.3333333333333333,
+          "recovery": 0.3333333333333333,
+          "pulseInterval": 0.16666666666666666,
+          "color": "#ffa17e",
+          "variant": "burst_flame"
+        }
       },
       "source": {
         "powerIndex": 0.4742,
@@ -14721,6 +16714,13 @@
             "target": "CURRENT_TARGET"
           },
           {
+            "kind": "SUNDER_ARMOR_PCT",
+            "value": 0.2,
+            "duration": 4,
+            "target": "CURRENT_TARGET",
+            "radius": 1
+          },
+          {
             "kind": "DAMAGE",
             "value": 178,
             "damageType": "PHYSICAL",
@@ -14740,7 +16740,14 @@
           }
         ],
         "vfxKey": "vfx_dash_sashi",
-        "description": "[직선 돌파] 대상 방향으로 돌진해 주변 적에게 178 물리피해를 입히고 4초간 공격속도 +35%."
+        "description": "[직선 돌파] 대상 방향으로 돌진해 주변 적에게 178 물리피해를 입히고 4초간 공격속도 +35%. 돌파 직전에 범위 내 적의 방어력을 4초간 20% 감소.",
+        "choreography": {
+          "windup": 0.3333333333333333,
+          "recovery": 0.3333333333333333,
+          "pulseInterval": 0.16666666666666666,
+          "color": "#ffcc74",
+          "variant": "dash_break"
+        }
       },
       "source": {
         "powerIndex": 0.5761,
@@ -14843,10 +16850,35 @@
             "stat": "moveSpeedHexPerSec",
             "value": 0.3,
             "duration": 3
+          },
+          {
+            "kind": "HEAL_MAXHP_PCT",
+            "value": 0.02,
+            "target": "ALL_ALLIES",
+            "delay": 0
+          },
+          {
+            "kind": "HEAL_MAXHP_PCT",
+            "value": 0.02,
+            "target": "ALL_ALLIES",
+            "delay": 0.3
+          },
+          {
+            "kind": "HEAL_MAXHP_PCT",
+            "value": 0.02,
+            "target": "ALL_ALLIES",
+            "delay": 0.6
           }
         ],
         "vfxKey": "vfx_buff",
-        "description": "[주도권 장악] 6초간 아군 전체의 공격속도 +25%, 방어력/마저 +20."
+        "description": "[주도권 장악] 6초간 아군 전체의 공격속도 +25%, 방어력/마저 +20. 오라 방출 후 0.3초 간격으로 아군 전체의 최대 체력 2%씩 세 번 회복.",
+        "choreography": {
+          "windup": 0.3333333333333333,
+          "recovery": 0.3333333333333333,
+          "pulseInterval": 0.16666666666666666,
+          "color": "#97efd0",
+          "variant": "aura_sustain"
+        }
       },
       "source": {
         "powerIndex": 0.8652,

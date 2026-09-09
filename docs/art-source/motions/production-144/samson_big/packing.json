@@ -1,0 +1,443 @@
+{
+  "format": "uft-baked-frames-v1",
+  "scale": 0.41935483870967744,
+  "anchor": [
+    64,
+    110
+  ],
+  "runtimeSha256": "553726d62ff77bdb7ec81d3893e208376bd30f8fa45a23175049736655ae35fd",
+  "frames": [
+    {
+      "frame": 0,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/production-144/samson_big/run-alpha.png",
+      "sourceSha256": "c0b4359fa06a1703bef70a0c924a446e6623eb0215b56a0a2a92a1db81019628",
+      "crop": [
+        48,
+        23,
+        209,
+        256
+      ],
+      "destination": [
+        30,
+        12,
+        68,
+        98
+      ]
+    },
+    {
+      "frame": 1,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/production-144/samson_big/run-alpha.png",
+      "sourceSha256": "c0b4359fa06a1703bef70a0c924a446e6623eb0215b56a0a2a92a1db81019628",
+      "crop": [
+        304,
+        23,
+        463,
+        255
+      ],
+      "destination": [
+        158,
+        13,
+        67,
+        97
+      ]
+    },
+    {
+      "frame": 2,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/production-144/samson_big/run-alpha.png",
+      "sourceSha256": "c0b4359fa06a1703bef70a0c924a446e6623eb0215b56a0a2a92a1db81019628",
+      "crop": [
+        560,
+        24,
+        718,
+        255
+      ],
+      "destination": [
+        287,
+        13,
+        66,
+        97
+      ]
+    },
+    {
+      "frame": 3,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/production-144/samson_big/run-alpha.png",
+      "sourceSha256": "c0b4359fa06a1703bef70a0c924a446e6623eb0215b56a0a2a92a1db81019628",
+      "crop": [
+        815,
+        23,
+        973,
+        255
+      ],
+      "destination": [
+        415,
+        13,
+        66,
+        97
+      ]
+    },
+    {
+      "frame": 4,
+      "sourceFrame": 4,
+      "source": "docs/art-source/motions/production-144/samson_big/run-alpha.png",
+      "sourceSha256": "c0b4359fa06a1703bef70a0c924a446e6623eb0215b56a0a2a92a1db81019628",
+      "crop": [
+        30,
+        265,
+        227,
+        512
+      ],
+      "destination": [
+        22,
+        134,
+        83,
+        104
+      ]
+    },
+    {
+      "frame": 5,
+      "sourceFrame": 5,
+      "source": "docs/art-source/motions/production-144/samson_big/run-alpha.png",
+      "sourceSha256": "c0b4359fa06a1703bef70a0c924a446e6623eb0215b56a0a2a92a1db81019628",
+      "crop": [
+        296,
+        264,
+        480,
+        512
+      ],
+      "destination": [
+        153,
+        134,
+        77,
+        104
+      ]
+    },
+    {
+      "frame": 6,
+      "sourceFrame": 6,
+      "source": "docs/art-source/motions/production-144/samson_big/run-alpha.png",
+      "sourceSha256": "c0b4359fa06a1703bef70a0c924a446e6623eb0215b56a0a2a92a1db81019628",
+      "crop": [
+        536,
+        264,
+        741,
+        512
+      ],
+      "destination": [
+        277,
+        134,
+        86,
+        104
+      ]
+    },
+    {
+      "frame": 7,
+      "sourceFrame": 7,
+      "source": "docs/art-source/motions/production-144/samson_big/run-alpha.png",
+      "sourceSha256": "c0b4359fa06a1703bef70a0c924a446e6623eb0215b56a0a2a92a1db81019628",
+      "crop": [
+        796,
+        265,
+        993,
+        512
+      ],
+      "destination": [
+        406,
+        134,
+        83,
+        104
+      ]
+    },
+    {
+      "frame": 8,
+      "sourceFrame": 8,
+      "source": "docs/art-source/motions/production-144/samson_big/run-alpha.png",
+      "sourceSha256": "c0b4359fa06a1703bef70a0c924a446e6623eb0215b56a0a2a92a1db81019628",
+      "crop": [
+        40,
+        527,
+        241,
+        767
+      ],
+      "destination": [
+        22,
+        265,
+        84,
+        101
+      ]
+    },
+    {
+      "frame": 9,
+      "sourceFrame": 9,
+      "source": "docs/art-source/motions/production-144/samson_big/run-alpha.png",
+      "sourceSha256": "c0b4359fa06a1703bef70a0c924a446e6623eb0215b56a0a2a92a1db81019628",
+      "crop": [
+        299,
+        525,
+        465,
+        768
+      ],
+      "destination": [
+        157,
+        264,
+        70,
+        102
+      ]
+    },
+    {
+      "frame": 10,
+      "sourceFrame": 10,
+      "source": "docs/art-source/motions/production-144/samson_big/run-alpha.png",
+      "sourceSha256": "c0b4359fa06a1703bef70a0c924a446e6623eb0215b56a0a2a92a1db81019628",
+      "crop": [
+        533,
+        529,
+        768,
+        768
+      ],
+      "destination": [
+        270,
+        266,
+        99,
+        100
+      ]
+    },
+    {
+      "frame": 11,
+      "sourceFrame": 11,
+      "source": "docs/art-source/motions/production-144/samson_big/run-alpha.png",
+      "sourceSha256": "c0b4359fa06a1703bef70a0c924a446e6623eb0215b56a0a2a92a1db81019628",
+      "crop": [
+        807,
+        530,
+        984,
+        768
+      ],
+      "destination": [
+        411,
+        266,
+        74,
+        100
+      ]
+    },
+    {
+      "frame": 12,
+      "sourceFrame": 12,
+      "source": "docs/art-source/motions/production-144/samson_big/run-alpha.png",
+      "sourceSha256": "c0b4359fa06a1703bef70a0c924a446e6623eb0215b56a0a2a92a1db81019628",
+      "crop": [
+        35,
+        784,
+        260,
+        1024
+      ],
+      "destination": [
+        17,
+        393,
+        94,
+        101
+      ]
+    },
+    {
+      "frame": 13,
+      "sourceFrame": 13,
+      "source": "docs/art-source/motions/production-144/samson_big/run-alpha.png",
+      "sourceSha256": "c0b4359fa06a1703bef70a0c924a446e6623eb0215b56a0a2a92a1db81019628",
+      "crop": [
+        300,
+        783,
+        465,
+        1023
+      ],
+      "destination": [
+        157,
+        393,
+        69,
+        101
+      ]
+    },
+    {
+      "frame": 14,
+      "sourceFrame": 14,
+      "source": "docs/art-source/motions/production-144/samson_big/run-alpha.png",
+      "sourceSha256": "c0b4359fa06a1703bef70a0c924a446e6623eb0215b56a0a2a92a1db81019628",
+      "crop": [
+        553,
+        782,
+        739,
+        1024
+      ],
+      "destination": [
+        281,
+        393,
+        78,
+        101
+      ]
+    },
+    {
+      "frame": 15,
+      "sourceFrame": 15,
+      "source": "docs/art-source/motions/production-144/samson_big/run-alpha.png",
+      "sourceSha256": "c0b4359fa06a1703bef70a0c924a446e6623eb0215b56a0a2a92a1db81019628",
+      "crop": [
+        815,
+        784,
+        977,
+        1024
+      ],
+      "destination": [
+        414,
+        393,
+        68,
+        101
+      ]
+    },
+    {
+      "frame": 16,
+      "sourceFrame": 16,
+      "source": "docs/art-source/motions/production-144/samson_big/run-alpha.png",
+      "sourceSha256": "c0b4359fa06a1703bef70a0c924a446e6623eb0215b56a0a2a92a1db81019628",
+      "crop": [
+        40,
+        1048,
+        227,
+        1269
+      ],
+      "destination": [
+        25,
+        529,
+        78,
+        93
+      ]
+    },
+    {
+      "frame": 17,
+      "sourceFrame": 17,
+      "source": "docs/art-source/motions/production-144/samson_big/run-alpha.png",
+      "sourceSha256": "c0b4359fa06a1703bef70a0c924a446e6623eb0215b56a0a2a92a1db81019628",
+      "crop": [
+        291,
+        1071,
+        489,
+        1261
+      ],
+      "destination": [
+        150,
+        542,
+        83,
+        80
+      ]
+    },
+    {
+      "frame": 18,
+      "sourceFrame": 18,
+      "source": "docs/art-source/motions/production-144/samson_big/run-alpha.png",
+      "sourceSha256": "c0b4359fa06a1703bef70a0c924a446e6623eb0215b56a0a2a92a1db81019628",
+      "crop": [
+        531,
+        1099,
+        730,
+        1265
+      ],
+      "destination": [
+        278,
+        552,
+        83,
+        70
+      ]
+    },
+    {
+      "frame": 19,
+      "sourceFrame": 19,
+      "source": "docs/art-source/motions/production-144/samson_big/run-alpha.png",
+      "sourceSha256": "c0b4359fa06a1703bef70a0c924a446e6623eb0215b56a0a2a92a1db81019628",
+      "crop": [
+        767,
+        1151,
+        1015,
+        1264
+      ],
+      "destination": [
+        396,
+        575,
+        104,
+        47
+      ]
+    },
+    {
+      "frame": 20,
+      "sourceFrame": 20,
+      "source": "docs/art-source/motions/production-144/samson_big/run-alpha.png",
+      "sourceSha256": "c0b4359fa06a1703bef70a0c924a446e6623eb0215b56a0a2a92a1db81019628",
+      "crop": [
+        41,
+        1284,
+        215,
+        1531
+      ],
+      "destination": [
+        27,
+        646,
+        73,
+        104
+      ]
+    },
+    {
+      "frame": 21,
+      "sourceFrame": 21,
+      "source": "docs/art-source/motions/production-144/samson_big/run-alpha.png",
+      "sourceSha256": "c0b4359fa06a1703bef70a0c924a446e6623eb0215b56a0a2a92a1db81019628",
+      "crop": [
+        300,
+        1286,
+        487,
+        1527
+      ],
+      "destination": [
+        153,
+        649,
+        78,
+        101
+      ]
+    },
+    {
+      "frame": 22,
+      "sourceFrame": 22,
+      "source": "docs/art-source/motions/production-144/samson_big/run-alpha.png",
+      "sourceSha256": "c0b4359fa06a1703bef70a0c924a446e6623eb0215b56a0a2a92a1db81019628",
+      "crop": [
+        552,
+        1287,
+        705,
+        1530
+      ],
+      "destination": [
+        288,
+        648,
+        64,
+        102
+      ]
+    },
+    {
+      "frame": 23,
+      "sourceFrame": 23,
+      "source": "docs/art-source/motions/production-144/samson_big/run-alpha.png",
+      "sourceSha256": "c0b4359fa06a1703bef70a0c924a446e6623eb0215b56a0a2a92a1db81019628",
+      "crop": [
+        805,
+        1287,
+        967,
+        1530
+      ],
+      "destination": [
+        414,
+        648,
+        68,
+        102
+      ]
+    }
+  ]
+}

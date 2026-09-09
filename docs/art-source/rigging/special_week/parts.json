@@ -1,0 +1,117 @@
+{
+  "status": "partial-source-art; unassembled; not-rigged; not-Cubism-import-ready",
+  "components": [
+    {
+      "id": "head",
+      "source": "docs/art-source/rigging/special_week/originals/head.png",
+      "file": "parts/head.png",
+      "sourceSha256": "9c47b8c622f40207c87e2d0dd4dd831ec2d467f023db7ccdef4814b6892b8ab3",
+      "sourceCrop": [
+        89,
+        21,
+        1170,
+        1166
+      ],
+      "size": [
+        434,
+        460
+      ],
+      "boardOffset": [
+        39,
+        26
+      ]
+    },
+    {
+      "id": "torso",
+      "source": "docs/art-source/rigging/special_week/originals/torso.png",
+      "file": "parts/torso.png",
+      "sourceSha256": "fb8215bd01712ea021af64d3b072b9fcdf438810502c34d920412fe2d1586e4d",
+      "sourceCrop": [
+        97,
+        57,
+        1210,
+        1254
+      ],
+      "size": [
+        428,
+        460
+      ],
+      "boardOffset": [
+        554,
+        26
+      ]
+    },
+    {
+      "id": "skirt",
+      "source": "docs/art-source/rigging/special_week/originals/skirt.png",
+      "file": "parts/skirt.png",
+      "sourceSha256": "3c0532e3014cc1f8dc08b61a268e5ef452b298523bc096a0bdfbeece1058d2b7",
+      "sourceCrop": [
+        71,
+        51,
+        1206,
+        1214
+      ],
+      "size": [
+        449,
+        460
+      ],
+      "boardOffset": [
+        1055,
+        26
+      ]
+    },
+    {
+      "id": "tail",
+      "source": "docs/art-source/rigging/special_week/originals/tail.png",
+      "file": "parts/tail.png",
+      "sourceSha256": "f6df03d90fbf7df78b40cc855f5b7dda3ce451b866f35974612e1e0749d2a21a",
+      "sourceCrop": [
+        105,
+        21,
+        1079,
+        1179
+      ],
+      "size": [
+        387,
+        460
+      ],
+      "boardOffset": [
+        62,
+        538
+      ]
+    },
+    {
+      "id": "hand",
+      "source": "docs/art-source/rigging/special_week/originals/hand.png",
+      "file": "parts/hand.png",
+      "sourceSha256": "cb4e0b55c301efbd7186385c99ff142045df36b09e4e876e2726f6fcfa922871",
+      "sourceCrop": [
+        97,
+        21,
+        1210,
+        1212
+      ],
+      "size": [
+        430,
+        460
+      ],
+      "boardOffset": [
+        553,
+        538
+      ]
+    }
+  ],
+  "missing": [
+    "upper arms",
+    "forearms",
+    "legs",
+    "shoes",
+    "separate face/eyes/mouth",
+    "separate ears/hair",
+    "joint overlap alignment",
+    "assembled PSD",
+    "Cubism ArtMesh/deformers/parameters/physics/motions",
+    "cmo3/moc3/model3 export"
+  ]
+}

@@ -1,5 +1,5 @@
 /** Twinkle Draft (spec §20): 9 unit+component pedestals picked in HP order. */
-import { ACTIVE_BY_COST } from '../roster';
+import { getSeasonByCost } from '../roster';
 import { COMPONENT_IDS } from '../items/item-defs';
 import { remainingOf, take } from '../pool';
 import type { Rng } from '../rng';
@@ -33,7 +33,7 @@ export function buildDraftOptions(
     for (let attempt = 0; attempt < 12 && !unitDefId; attempt += 1) {
       const idx = rng.weightedIndex(costs.map((c) => weights[c]));
       if (idx < 0) break;
-      const pool = ACTIVE_BY_COST[costs[idx]].filter(
+      const pool = getSeasonByCost(state.seasonId)[costs[idx]].filter(
         (u) => !used.has(u.id) && remainingOf(state.pool, u.id) > 0,
       );
       if (pool.length) unitDefId = rng.pick(pool).id;

@@ -1,0 +1,52 @@
+
+> umafight-tactics@1.0.0 simulate
+> tsx scripts/simulate.ts --matches 200
+
+  20/200 matches
+  40/200 matches
+  60/200 matches
+  80/200 matches
+  100/200 matches
+  120/200 matches
+  140/200 matches
+  160/200 matches
+  180/200 matches
+  200/200 matches
+simulate — 200 matches in 306.0s (seed base 20260907)
+
+  average end stage      5.87
+  average rounds/match   33.2
+  average gold held      5.7
+  average player damage  9.3
+  battles                26961 (draws 38, overtime 4626)
+  pool conservation      OK
+
+  3-star completions per match:
+    1-cost  1.69
+    2-cost  1.04
+    3-cost  0.13
+    4-cost  0.00
+    5-cost  0.00
+
+  average placement by AI profile:
+    FAST_LEVEL   3.63
+    AP_FOCUS     4.25
+    ECONOMY      4.26
+    BALANCED     4.27
+    AD_FOCUS     4.91
+    REROLL       5.05
+    TRAIT_FOCUS  5.15
+
+  trait presence (top4 / top1 share):
+    도주           6.0% / 24.0%
+    선입           4.3% / 17.0%
+    더트 챔피언       3.0% / 12.0%
+    스테이어         2.8% / 11.0%
+    선행           2.5% / 10.0%
+    중거리          2.4% / 9.5%
+    명가           2.1% / 8.5%
+    스프린터         0.5% / 2.0%
+    클래식 레전드      0.5% / 2.0%
+    레이와 엘리트      0.4% / 1.5%
+
+simulate — OK

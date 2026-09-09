@@ -5,6 +5,7 @@ import type { Cost, TraitDef, UnitDef, ItemDef, AugmentDef, TraitId } from '../t
 import { TRAIT_DEFS, TRAIT_BY_ID } from '../traits/trait-defs';
 import { ALL_ITEM_DEFS, ITEM_BY_ID } from '../items/item-defs';
 import { AUGMENT_DEFS, AUGMENT_BY_ID } from '../augments/augment-defs';
+import { buildSeasons, DEFAULT_SEASON, type SeasonId } from '../seasons/catalog';
 
 const allUnits = allUnitsRaw as unknown as { rosterHash: string; units: UnitDef[] };
 const activeSet = activeSetRaw as unknown as {
@@ -22,6 +23,35 @@ export const ACTIVE_UNITS: UnitDef[] = activeSet.unitIds.map((id) => {
   return u;
 });
 export const ACTIVE_UNIT_IDS: string[] = activeSet.unitIds;
+export const SEASONS = buildSeasons(ALL_UNITS, ACTIVE_UNIT_IDS);
+export function getSeason(id: SeasonId = DEFAULT_SEASON) {
+  const season = SEASONS.find(s => s.id === id);
+  if (!season) throw new Error(`Unknown season: ${id}`);
+  return season;
+}
+const seasonUnits = new Map(SEASONS.map(s => [s.id, s.unitIds.map(id => UNIT_BY_ID.get(id)!)]));
+export function getSeasonUnits(id: SeasonId = DEFAULT_SEASON): UnitDef[] {
+  getSeason(id);
+  return seasonUnits.get(id)!;
+}
+const seasonCosts = new Map(SEASONS.map(s => [s.id, Object.fromEntries(
+  [1, 2, 3, 4, 5].map(cost => [cost, getSeasonUnits(s.id).filter(u => u.cost === cost)]),
+) as Record<Cost, UnitDef[]>]));
+export function getSeasonByCost(id: SeasonId = DEFAULT_SEASON): Record<Cost, UnitDef[]> {
+  getSeason(id);
+  return seasonCosts.get(id)!;
+}
+export function getSeasonUnitTraits(unitId: string, seasonId: SeasonId = DEFAULT_SEASON): TraitId[] {
+  const trait = getSeason(seasonId).unitTraits[unitId];
+  return trait ? [trait] : [];
+}
+export function getUnitTraits(unitId: string, seasonId: SeasonId = DEFAULT_SEASON): TraitId[] {
+  return [...getUnitDef(unitId).traits, ...getSeasonUnitTraits(unitId, seasonId)];
+}
+export function getSeasonTraits(id: SeasonId = DEFAULT_SEASON): TraitDef[] {
+  const present = new Set(getSeasonUnits(id).flatMap(u => u.traits));
+  return [...getSeason(id).traits, ...TRAIT_DEFS.filter(t => present.has(t.id))];
+}
 export const ACTIVE_BY_COST: Record<Cost, UnitDef[]> = {
   1: (activeSet.byCost['1'] ?? []).map((id) => UNIT_BY_ID.get(id)!),
   2: (activeSet.byCost['2'] ?? []).map((id) => UNIT_BY_ID.get(id)!),

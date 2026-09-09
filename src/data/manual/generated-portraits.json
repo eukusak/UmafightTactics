@@ -1,0 +1,2858 @@
+{
+  "silence_suzuka": {
+    "file": "portraits/silence_suzuka.png",
+    "source": "docs/art-source/portraits/batch-02/silence_suzuka.png",
+    "sourceSha256": "38df78e047673e7a54400cd95ec7131b2e94d9cef9289dbe2b29c68b9f127f01",
+    "reference": "public/assets/characters/reference_previews/silence_suzuka.png",
+    "sourceSize": [
+      1254,
+      1254
+    ],
+    "crop": [
+      91,
+      25,
+      1190,
+      1254
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "fuji_kiseki": {
+    "file": "portraits/fuji_kiseki.png",
+    "source": "docs/art-source/portraits/batch-02/fuji_kiseki.png",
+    "sourceSha256": "fb3aec34fac250e6febfab0feb3950072de4fc062dbe482dff2b0ea789ee744b",
+    "reference": "public/assets/characters/reference_previews/fuji_kiseki.png",
+    "sourceSize": [
+      1254,
+      1254
+    ],
+    "crop": [
+      19,
+      1,
+      1200,
+      1254
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "oguri_cap": {
+    "file": "portraits/oguri_cap.png",
+    "source": "docs/art-source/portraits/batch-02/oguri_cap.png",
+    "sourceSha256": "f11ab80e3dfe8015e0c9cbb55c9210baacd89a38a85bc52cbdb906266fff2082",
+    "reference": "public/assets/characters/reference_previews/oguri_cap.png",
+    "sourceSize": [
+      1254,
+      1254
+    ],
+    "crop": [
+      49,
+      23,
+      1217,
+      1254
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "gold_ship": {
+    "file": "portraits/gold_ship.png",
+    "source": "docs/art-source/portraits/batch-02/gold_ship.png",
+    "sourceSha256": "27b60eafb830d6b3a17f728626f8180ba293ce953d196b11dd4d1d273ed9a79e",
+    "reference": "public/assets/characters/reference_previews/gold_ship.png",
+    "sourceSize": [
+      1254,
+      1254
+    ],
+    "crop": [
+      61,
+      30,
+      1210,
+      1254
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "vodka": {
+    "file": "portraits/vodka.png",
+    "source": "docs/art-source/portraits/batch-02/vodka.png",
+    "sourceSha256": "0cc58f80942b1de36510a4a39fb5a901bcf64e75af89e42c761c08ea476b8066",
+    "reference": "public/assets/characters/reference_previews/vodka.png",
+    "sourceSize": [
+      1254,
+      1254
+    ],
+    "crop": [
+      0,
+      17,
+      1196,
+      1254
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "grass_wonder": {
+    "file": "portraits/grass_wonder.png",
+    "source": "docs/art-source/portraits/batch-02/grass_wonder.png",
+    "sourceSha256": "50f7b4aade6341bcc9bb6c87b974b38c86cc8901121b4267463842988b5be918",
+    "reference": "public/assets/characters/reference_previews/grass_wonder.png",
+    "sourceSize": [
+      1254,
+      1254
+    ],
+    "crop": [
+      41,
+      10,
+      1218,
+      1254
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "hishi_amazon": {
+    "file": "portraits/hishi_amazon.png",
+    "source": "docs/art-source/portraits/batch-03/hishi_amazon.png",
+    "sourceSha256": "a910cbb7cdf986cc018ca85b4828a7feafb7f14ae01bc9274a90e6fe33653085",
+    "reference": "public/assets/characters/race/HishiAmazon-Race.png",
+    "sourceSize": [
+      1223,
+      1286
+    ],
+    "crop": [
+      0,
+      10,
+      1201,
+      1286
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "mejiro_mcqueen": {
+    "file": "portraits/mejiro_mcqueen.png",
+    "source": "docs/art-source/portraits/batch-03/mejiro_mcqueen.png",
+    "sourceSha256": "1e4e9af548fd83869299956e372d1a7d7c0c9f6b3cd4f2f378461be31e721d34",
+    "reference": "public/assets/characters/race/MejiroMcQueen-Race.png",
+    "sourceSize": [
+      1141,
+      1379
+    ],
+    "crop": [
+      27,
+      0,
+      1126,
+      1379
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "el_condor_pasa": {
+    "file": "portraits/el_condor_pasa.png",
+    "source": "docs/art-source/portraits/batch-03/el_condor_pasa.png",
+    "sourceSha256": "fcfcbcb0bbe40990368186fa411f1f2d5e9dc275a03597a1af2f11393e762d48",
+    "reference": "public/assets/characters/race/ElCondorPasa-Race.png",
+    "sourceSize": [
+      1145,
+      1374
+    ],
+    "crop": [
+      43,
+      11,
+      1145,
+      1360
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "narita_brian": {
+    "file": "portraits/narita_brian.png",
+    "source": "docs/art-source/portraits/batch-03/narita_brian.png",
+    "sourceSha256": "d9ef37ae6941ce39aa8c33c713504dbd7f272bbf868328c2ec9cc19c41f524c9",
+    "reference": "public/assets/characters/race/NaritaBrian-Race.png",
+    "sourceSize": [
+      1145,
+      1374
+    ],
+    "crop": [
+      17,
+      0,
+      1145,
+      1374
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "symboli_rudolf": {
+    "file": "portraits/symboli_rudolf.png",
+    "source": "docs/art-source/portraits/batch-03/symboli_rudolf.png",
+    "sourceSha256": "8b0a150b7b67b35cc738bba66f74c08e70c67ad89d0f2f3e646615ddc126ea2b",
+    "reference": "public/assets/characters/race/SymboliRudolf-Race.png",
+    "sourceSize": [
+      1199,
+      1312
+    ],
+    "crop": [
+      0,
+      0,
+      1199,
+      1312
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "air_groove": {
+    "file": "portraits/air_groove.png",
+    "source": "docs/art-source/portraits/batch-04/air_groove.png",
+    "sourceSha256": "a68b5789f3ac8d765a17455692ee2611b3b2da12ac8d0383dddd8ac7f46dcb1c",
+    "reference": "public/assets/characters/race/AirGroove-Race.png",
+    "sourceSize": [
+      1192,
+      1319
+    ],
+    "crop": [
+      33,
+      0,
+      1165,
+      1319
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "agnes_digital": {
+    "file": "portraits/agnes_digital.png",
+    "source": "docs/art-source/portraits/batch-04/agnes_digital.png",
+    "sourceSha256": "f0210539724c7496650c8fd594cdbae492e43791aab06fbfaf775e4242081dc4",
+    "reference": "public/assets/characters/race/AgnesDigital-Race.png",
+    "sourceSize": [
+      1214,
+      1295
+    ],
+    "crop": [
+      0,
+      7,
+      1199,
+      1295
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "seiun_sky": {
+    "file": "portraits/seiun_sky.png",
+    "source": "docs/art-source/portraits/batch-04/seiun_sky.png",
+    "sourceSha256": "975fbc3b0649e5ede4155d61b4d613eb66f7e7bbfbda160a174b3232f18f2839",
+    "reference": "public/assets/characters/race/SeiunSky-Race.png",
+    "sourceSize": [
+      1152,
+      1365
+    ],
+    "crop": [
+      0,
+      0,
+      1140,
+      1365
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "tamamo_cross": {
+    "file": "portraits/tamamo_cross.png",
+    "source": "docs/art-source/portraits/batch-04/tamamo_cross.png",
+    "sourceSha256": "323d3172734051f0be1a284f0d4641fa422dcf3e6b4f4f9af714de0be15af8d4",
+    "reference": "public/assets/characters/race/TamamoCross-Race.png",
+    "sourceSize": [
+      1190,
+      1322
+    ],
+    "crop": [
+      14,
+      0,
+      1189,
+      1322
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "fine_motion": {
+    "file": "portraits/fine_motion.png",
+    "source": "docs/art-source/portraits/batch-04/fine_motion.png",
+    "sourceSha256": "ba26c7a822f4724e3284031f35edce26aac718a1d8db34c32254f308f1025377",
+    "reference": "public/assets/characters/race/FineMotion-Race.png",
+    "sourceSize": [
+      1151,
+      1367
+    ],
+    "crop": [
+      82,
+      0,
+      1084,
+      1367
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "biwa_hayahide": {
+    "file": "portraits/biwa_hayahide.png",
+    "source": "docs/art-source/portraits/batch-05/biwa_hayahide.png",
+    "sourceSha256": "2816164d2920d611a4059baa3a61e541413ce0501caf0505327222b945d28016",
+    "reference": "public/assets/characters/race/BiwaHayahide-Race.png",
+    "sourceSize": [
+      1145,
+      1374
+    ],
+    "crop": [
+      0,
+      8,
+      1145,
+      1374
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "mayano_top_gun": {
+    "file": "portraits/mayano_top_gun.png",
+    "source": "docs/art-source/portraits/batch-05/mayano_top_gun.png",
+    "sourceSha256": "d4c8240c2aae261ee7ec2a98f5efc05fd6ec2d74052a15619d2b7a611952cf26",
+    "reference": "public/assets/characters/race/MayanoTopGun-Race.png",
+    "sourceSize": [
+      1223,
+      1286
+    ],
+    "crop": [
+      0,
+      0,
+      1223,
+      1286
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "mejiro_ryan": {
+    "file": "portraits/mejiro_ryan.png",
+    "source": "docs/art-source/portraits/batch-05/mejiro_ryan.png",
+    "sourceSha256": "47a53259c03ee7258f3a2bb25e59b0f95b6d0a4ad653a01bb90619daefe33176",
+    "reference": "public/assets/characters/race/MejiroRyan-Race.png",
+    "sourceSize": [
+      1145,
+      1374
+    ],
+    "crop": [
+      53,
+      0,
+      1119,
+      1374
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "hishi_akebono": {
+    "file": "portraits/hishi_akebono.png",
+    "source": "docs/art-source/portraits/batch-05/hishi_akebono.png",
+    "sourceSha256": "c0d3c26de25976ad2dfb140aecf46988b6d20fb1ed75a6da2e02bbd1e0cc6c83",
+    "reference": "public/assets/characters/race/HishiAkebono-Race.png",
+    "sourceSize": [
+      1233,
+      1276
+    ],
+    "crop": [
+      0,
+      1,
+      1233,
+      1276
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "yukino_bijin": {
+    "file": "portraits/yukino_bijin.png",
+    "source": "docs/art-source/portraits/batch-05/yukino_bijin.png",
+    "sourceSha256": "1e8addb59992c64f612b3daa64554851110c66135761a58301074cc4f206466f",
+    "reference": "public/assets/characters/race/YukinoBijin-Race.png",
+    "sourceSize": [
+      1145,
+      1374
+    ],
+    "crop": [
+      0,
+      0,
+      1131,
+      1374
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "rice_shower": {
+    "file": "portraits/rice_shower.png",
+    "source": "docs/art-source/portraits/batch-06/rice_shower.png",
+    "sourceSha256": "6d2b886bf8187aa722b30843e58458c50c09ced7394332ea7c33f9a7f68fc32b",
+    "reference": "public/assets/characters/race/RiceShower-Race.png",
+    "sourceSize": [
+      1178,
+      1335
+    ],
+    "crop": [
+      0,
+      0,
+      1178,
+      1335
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "ines_fujin": {
+    "file": "portraits/ines_fujin.png",
+    "source": "docs/art-source/portraits/batch-06/ines_fujin.png",
+    "sourceSha256": "1372a17cc4f7aec34b7c6cb8025d9f76a8fc050b946345b1e60ef8691efab6f6",
+    "reference": "public/assets/characters/race/InesFujin-Race.png",
+    "sourceSize": [
+      1219,
+      1290
+    ],
+    "crop": [
+      0,
+      0,
+      1189,
+      1290
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "agnes_tachyon": {
+    "file": "portraits/agnes_tachyon.png",
+    "source": "docs/art-source/portraits/batch-06/agnes_tachyon.png",
+    "sourceSha256": "7cb9c6fc989fcad3a433bf19d509a5d90f7be622e82a57f8c7225788fc5f992a",
+    "reference": "public/assets/characters/race/AgnesTachyon-Race.png",
+    "sourceSize": [
+      1133,
+      1388
+    ],
+    "crop": [
+      0,
+      0,
+      1133,
+      1388
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "admire_vega": {
+    "file": "portraits/admire_vega.png",
+    "source": "docs/art-source/portraits/batch-06/admire_vega.png",
+    "sourceSha256": "5bdbd97ef457bae476bc8249a4c7df536d2706d91da76d54a1c5450f241ec422",
+    "reference": "public/assets/characters/race/AdmireVega-Race.png",
+    "sourceSize": [
+      1145,
+      1374
+    ],
+    "crop": [
+      51,
+      0,
+      1145,
+      1374
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "inari_one": {
+    "file": "portraits/inari_one.png",
+    "source": "docs/art-source/portraits/batch-06/inari_one.png",
+    "sourceSha256": "4cf22c425b24a57bdb7ee50a1e3f8ba2f1a77679bddc0fc325e8d1bde150b092",
+    "reference": "public/assets/characters/race/InariOne-Race.png",
+    "sourceSize": [
+      1230,
+      1278
+    ],
+    "crop": [
+      27,
+      0,
+      1208,
+      1278
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "winning_ticket": {
+    "file": "portraits/winning_ticket.png",
+    "source": "docs/art-source/portraits/batch-07/winning_ticket.png",
+    "sourceSha256": "2bf24271e2665c07ca8fe232559347a56301744950a02e928aabfdb9498978c3",
+    "reference": "public/assets/characters/race/WinningTicket-Race.png",
+    "sourceSize": [
+      1223,
+      1286
+    ],
+    "crop": [
+      0,
+      0,
+      1209,
+      1286
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "air_shakur": {
+    "file": "portraits/air_shakur.png",
+    "source": "docs/art-source/portraits/batch-07/air_shakur.png",
+    "sourceSha256": "89484fd131fb969662612283dc2e5bdb448a4dec53d6ca49fc55d6e9302ca417",
+    "reference": "public/assets/characters/race/AirShakur-Race.png",
+    "sourceSize": [
+      1151,
+      1367
+    ],
+    "crop": [
+      10,
+      0,
+      1143,
+      1367
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "eishin_flash": {
+    "file": "portraits/eishin_flash.png",
+    "source": "docs/art-source/portraits/batch-07/eishin_flash.png",
+    "sourceSha256": "1345a0ff77ab9a15bd1bbdc508067fe9cfeb08a65ae88f5612ace9d50fe3a965",
+    "reference": "public/assets/characters/race/EishinFlash-Race.png",
+    "sourceSize": [
+      1230,
+      1278
+    ],
+    "crop": [
+      0,
+      0,
+      1169,
+      1278
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "curren_chan": {
+    "file": "portraits/curren_chan.png",
+    "source": "docs/art-source/portraits/batch-07/curren_chan.png",
+    "sourceSha256": "77c332fcb74a3031ab6621cfcce346798b3bc15e638f6abd79e802bd9360dc61",
+    "reference": "public/assets/characters/race/CurrenChan-Race.png",
+    "sourceSize": [
+      1190,
+      1322
+    ],
+    "crop": [
+      0,
+      6,
+      1122,
+      1322
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "kawakami_princess": {
+    "file": "portraits/kawakami_princess.png",
+    "source": "docs/art-source/portraits/batch-07/kawakami_princess.png",
+    "sourceSha256": "48184a1dec1d5da16e776f1f6c0a1e8a3c17e019699c71f28bfd637043288921",
+    "reference": "public/assets/characters/race/KawakamiPrincess-Race.png",
+    "sourceSize": [
+      1199,
+      1312
+    ],
+    "crop": [
+      0,
+      0,
+      1199,
+      1312
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "gold_city": {
+    "file": "portraits/gold_city.png",
+    "source": "docs/art-source/portraits/batch-08/gold_city.png",
+    "sourceSha256": "f8936a2f17e837f752f0b07bb2cebeba533fedf647a3e87d5bbde9e2f49d0a9a",
+    "reference": "public/assets/characters/race/GoldCity-Race.png",
+    "sourceSize": [
+      1199,
+      1312
+    ],
+    "crop": [
+      0,
+      0,
+      1199,
+      1312
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "sakura_bakushin_o": {
+    "file": "portraits/sakura_bakushin_o.png",
+    "source": "docs/art-source/portraits/batch-08/sakura_bakushin_o.png",
+    "sourceSha256": "54a7b4df1365aa4dd79ab76a4fd129eb6ab2ac9e0ead7ee41c8208a865498975",
+    "reference": "public/assets/characters/race/SakuraBakushinO-Race.png",
+    "sourceSize": [
+      1145,
+      1374
+    ],
+    "crop": [
+      0,
+      0,
+      1145,
+      1374
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "seeking_the_pearl": {
+    "file": "portraits/seeking_the_pearl.png",
+    "source": "docs/art-source/portraits/batch-08/seeking_the_pearl.png",
+    "sourceSha256": "13485c0eaad40a6cbb91c3d8c9c649b8d802de50e134f203a69e0fb4fab40780",
+    "reference": "public/assets/characters/race/SeekingthePearl-Race.png",
+    "sourceSize": [
+      1247,
+      1261
+    ],
+    "crop": [
+      0,
+      0,
+      1247,
+      1261
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "shinko_windy": {
+    "file": "portraits/shinko_windy.png",
+    "source": "docs/art-source/portraits/batch-08/shinko_windy.png",
+    "sourceSha256": "8208291de8b3198da10ead38932299e52cf3878a04c67cec129c97697c5b7098",
+    "reference": "public/assets/characters/race/ShinkoWindy-Race.png",
+    "sourceSize": [
+      1145,
+      1374
+    ],
+    "crop": [
+      0,
+      0,
+      1115,
+      1374
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "sweep_tosho": {
+    "file": "portraits/sweep_tosho.png",
+    "source": "docs/art-source/portraits/batch-08/sweep_tosho.png",
+    "sourceSha256": "908fa5c67d8a8e7d32739084f09782b1464b8652cbb5c80a33704558ac19c46b",
+    "reference": "public/assets/characters/race/SweepTosho-Race.png",
+    "sourceSize": [
+      1213,
+      1296
+    ],
+    "crop": [
+      0,
+      0,
+      1213,
+      1296
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "super_creek": {
+    "file": "portraits/super_creek.png",
+    "source": "docs/art-source/portraits/batch-09/super_creek.png",
+    "sourceSha256": "7f8a1feacea8d2c0d4bb31270e517857cd6837afb9d483590d6ffe075e431e25",
+    "reference": "public/assets/characters/race/SuperCreek-Race.png",
+    "sourceSize": [
+      1145,
+      1374
+    ],
+    "crop": [
+      49,
+      0,
+      1145,
+      1374
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "smart_falcon": {
+    "file": "portraits/smart_falcon.png",
+    "source": "docs/art-source/portraits/batch-09/smart_falcon.png",
+    "sourceSha256": "c5aa60703832aced0267453d704a5f2f5ad97f1f802fabff6cad22ef783ecff6",
+    "reference": "public/assets/characters/race/SmartFalcon-Race.png",
+    "sourceSize": [
+      1131,
+      1391
+    ],
+    "crop": [
+      0,
+      0,
+      1113,
+      1391
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "zenno_rob_roy": {
+    "file": "portraits/zenno_rob_roy.png",
+    "source": "docs/art-source/portraits/batch-09/zenno_rob_roy.png",
+    "sourceSha256": "24cfa24a39ac1bc5a8ce3a99ce6db20a283cd2e5a92f67b7a35156974170b0de",
+    "reference": "public/assets/characters/race/ZennoRobRoy-Race.png",
+    "sourceSize": [
+      1145,
+      1374
+    ],
+    "crop": [
+      49,
+      0,
+      1095,
+      1374
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "tosen_jordan": {
+    "file": "portraits/tosen_jordan.png",
+    "source": "docs/art-source/portraits/batch-09/tosen_jordan.png",
+    "sourceSha256": "0eb1555c4b851ede439eb1a51a8c15cb5c49ecb9928af648d78e637980b15d43",
+    "reference": "public/assets/characters/race/TosenJordan-Race.png",
+    "sourceSize": [
+      1141,
+      1379
+    ],
+    "crop": [
+      0,
+      0,
+      1141,
+      1379
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "nakayama_festa": {
+    "file": "portraits/nakayama_festa.png",
+    "source": "docs/art-source/portraits/batch-09/nakayama_festa.png",
+    "sourceSha256": "d6ec78b3d57011e3dbf4c0d011bddbcbdf623650e633c4ea01e920429db3f7e5",
+    "reference": "public/assets/characters/race/NakayamaFesta-Race.png",
+    "sourceSize": [
+      1188,
+      1324
+    ],
+    "crop": [
+      0,
+      0,
+      1188,
+      1324
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "logotype": {
+    "file": "portraits/logotype.png",
+    "source": "docs/art-source/portraits/batch-1001/logotype.png",
+    "sourceSha256": "1f182081e7b4b149c3eb801e30b9dcf4733ff55305d0ead8e4c21f6dda204770",
+    "reference": "public/assets/characters/race/Logotype-Race.png",
+    "sourceSize": [
+      1175,
+      1338
+    ],
+    "crop": [
+      10,
+      0,
+      1175,
+      1338
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "victoire_pisa": {
+    "file": "portraits/victoire_pisa.png",
+    "source": "docs/art-source/portraits/batch-1001/victoire_pisa.png",
+    "sourceSha256": "9a6d7c6be29a8c4f5579b31334861c70fa5e58817b7249fdbf57f380c182b395",
+    "reference": "public/assets/characters/race/VictoirePisa-Race.png",
+    "sourceSize": [
+      1230,
+      1278
+    ],
+    "crop": [
+      0,
+      0,
+      1216,
+      1278
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "rose_kingdom": {
+    "file": "portraits/rose_kingdom.png",
+    "source": "docs/art-source/portraits/batch-1001/rose_kingdom.png",
+    "sourceSha256": "2b3e3a107dff8917062c949803cb765b2b08f24f6004c4c33782472f0839e800",
+    "reference": "public/assets/characters/race/RoseKingdom-Race.png",
+    "sourceSize": [
+      1151,
+      1367
+    ],
+    "crop": [
+      0,
+      1,
+      1143,
+      1367
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "rulership": {
+    "file": "portraits/rulership.png",
+    "source": "docs/art-source/portraits/batch-1001/rulership.png",
+    "sourceSha256": "27b7a7054a0637aff55f32c7b00b118211a47094bdbe63447e392d3b28fee0ff",
+    "reference": "public/assets/characters/race/Rulership-Race.png",
+    "sourceSize": [
+      1295,
+      1214
+    ],
+    "crop": [
+      54,
+      0,
+      1271,
+      1214
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "efforia": {
+    "file": "portraits/efforia.png",
+    "source": "docs/art-source/portraits/batch-1001/efforia.png",
+    "sourceSha256": "5dd37a49baedf2c118fabdd0d4fad6cd52705fa5b31b8928171853fb27d22f5d",
+    "reference": "public/assets/characters/race/Efforia-Race.png",
+    "sourceSize": [
+      1192,
+      1320
+    ],
+    "crop": [
+      0,
+      0,
+      1192,
+      1320
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "titleholder": {
+    "file": "portraits/titleholder.png",
+    "source": "docs/art-source/portraits/batch-1001/titleholder.png",
+    "sourceSha256": "2b311a6e6b009de1200641b81565e95c6fa9d9636b2254c7780129f32ac8c511",
+    "reference": "public/assets/characters/race/Titleholder-Race.png",
+    "sourceSize": [
+      1145,
+      1374
+    ],
+    "crop": [
+      45,
+      30,
+      1134,
+      1374
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "phalaenopsis": {
+    "file": "portraits/phalaenopsis.png",
+    "source": "docs/art-source/portraits/batch-1001/phalaenopsis.png",
+    "sourceSha256": "ed5cb4ff5f911b63e33d0040b5cec4284e3c6182a6e580516e7c30bbe55cf866",
+    "reference": "public/assets/characters/race/Phalaenopsis-Race.png",
+    "sourceSize": [
+      1199,
+      1312
+    ],
+    "crop": [
+      0,
+      25,
+      1169,
+      1312
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "verxina": {
+    "file": "portraits/verxina.png",
+    "source": "docs/art-source/portraits/batch-1001/verxina.png",
+    "sourceSha256": "a4e6c5d07c662fda308f4dde8d2428a948340199ef0d953adb21f566620a07e8",
+    "reference": "public/assets/characters/race/Verxina-Race.png",
+    "sourceSize": [
+      1230,
+      1278
+    ],
+    "crop": [
+      0,
+      0,
+      1230,
+      1278
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "manhattan_cafe": {
+    "file": "portraits/manhattan_cafe.png",
+    "source": "docs/art-source/portraits/batch-1001/manhattan_cafe.png",
+    "sourceSha256": "c652e20aa6811309e4c899f0812e7db3588e740d7399c617c1721fa8e7c9b342",
+    "reference": "public/assets/characters/race/ManhattanCafe-Race.png",
+    "sourceSize": [
+      1145,
+      1374
+    ],
+    "crop": [
+      0,
+      4,
+      1145,
+      1374
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "espoir_city": {
+    "file": "portraits/espoir_city.png",
+    "source": "docs/art-source/portraits/batch-1001/espoir_city.png",
+    "sourceSha256": "719ef542108c46a10987e5d26974e9b60ffd5f3d9a27b62d5fff68ab1b045b85",
+    "reference": "public/assets/characters/race/EspoirCity-Race.png",
+    "sourceSize": [
+      1205,
+      1306
+    ],
+    "crop": [
+      0,
+      0,
+      1205,
+      1306
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "narita_taishin": {
+    "file": "portraits/narita_taishin.png",
+    "source": "docs/art-source/portraits/batch-10/narita_taishin.png",
+    "sourceSha256": "95eeae144afd37a8246462b7bb7634bfaf791173dce71298df5eeaa66fef471e",
+    "reference": "public/assets/characters/race/NaritaTaishin-Race.png",
+    "sourceSize": [
+      1199,
+      1312
+    ],
+    "crop": [
+      0,
+      6,
+      1185,
+      1312
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "nishino_flower": {
+    "file": "portraits/nishino_flower.png",
+    "source": "docs/art-source/portraits/batch-10/nishino_flower.png",
+    "sourceSha256": "8bc7597f22b7e40c6b97d605bbee2fa804d00b7ddc7c11a5917e8d6368a64ca0",
+    "reference": "public/assets/characters/race/NishinoFlower-Race.png",
+    "sourceSize": [
+      1206,
+      1304
+    ],
+    "crop": [
+      0,
+      0,
+      1098,
+      1304
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "haru_urara": {
+    "file": "portraits/haru_urara.png",
+    "source": "docs/art-source/portraits/batch-10/haru_urara.png",
+    "sourceSha256": "acb66f352b9fa4291bedb275919d84631eb861b01f0d591eee99052c2453f231",
+    "reference": "public/assets/characters/race/HaruUrara-Race.png",
+    "sourceSize": [
+      1159,
+      1358
+    ],
+    "crop": [
+      0,
+      10,
+      1159,
+      1358
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "bamboo_memory": {
+    "file": "portraits/bamboo_memory.png",
+    "source": "docs/art-source/portraits/batch-10/bamboo_memory.png",
+    "sourceSha256": "e8f72115ced03dd29bac2bb0a3c940e486a29b6094db5dcad25d3a2de852f0f6",
+    "reference": "public/assets/characters/race/BambooMemory-Race.png",
+    "sourceSize": [
+      1145,
+      1374
+    ],
+    "crop": [
+      49,
+      0,
+      1129,
+      1374
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "biko_pegasus": {
+    "file": "portraits/biko_pegasus.png",
+    "source": "docs/art-source/portraits/batch-10/biko_pegasus.png",
+    "sourceSha256": "ad595b5e152f62a822d8e801915a7396ee33c526a10698eba3356d75e753b10a",
+    "reference": "public/assets/characters/race/BikoPegasus-Race.png",
+    "sourceSize": [
+      1225,
+      1284
+    ],
+    "crop": [
+      0,
+      16,
+      1207,
+      1284
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "marvelous_sunday": {
+    "file": "portraits/marvelous_sunday.png",
+    "source": "docs/art-source/portraits/batch-11/marvelous_sunday.png",
+    "sourceSha256": "9d059ae09f80a2c5b3d63172cb128bb26920a1a358a1cb596a98002f740e83c0",
+    "reference": "public/assets/characters/race/MarvelousSunday-Race.png",
+    "sourceSize": [
+      1212,
+      1297
+    ],
+    "crop": [
+      0,
+      0,
+      1212,
+      1297
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "matikanefukukitaru": {
+    "file": "portraits/matikanefukukitaru.png",
+    "source": "docs/art-source/portraits/batch-11/matikanefukukitaru.png",
+    "sourceSha256": "10de560d94ee914f039884c9541925c10520b151e21ec27281839659406a8f6d",
+    "reference": "public/assets/characters/race/Matikanefukukitaru-Race.png",
+    "sourceSize": [
+      1183,
+      1329
+    ],
+    "crop": [
+      0,
+      0,
+      1110,
+      1329
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "mr_cb": {
+    "file": "portraits/mr_cb.png",
+    "source": "docs/art-source/portraits/batch-11/mr_cb.png",
+    "sourceSha256": "9cf20d65f6c78f4ac7fcf6b8c40867e33c23fac7ffa186544343ea0078753688",
+    "reference": "public/assets/characters/race/MrCB-Race.png",
+    "sourceSize": [
+      1145,
+      1374
+    ],
+    "crop": [
+      0,
+      0,
+      1145,
+      1374
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "meisho_doto": {
+    "file": "portraits/meisho_doto.png",
+    "source": "docs/art-source/portraits/batch-11/meisho_doto.png",
+    "sourceSha256": "441270c5c8d38c750013742ffb3b55fe2797cfcee66445fa60e197268346eeb9",
+    "reference": "public/assets/characters/race/MeishoDoto-Race.png",
+    "sourceSize": [
+      1150,
+      1368
+    ],
+    "crop": [
+      65,
+      0,
+      1112,
+      1368
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "mejiro_dober": {
+    "file": "portraits/mejiro_dober.png",
+    "source": "docs/art-source/portraits/batch-11/mejiro_dober.png",
+    "sourceSha256": "d87966402528f5470042b3b731910f166313da6c63e4a70647c975037607936a",
+    "reference": "public/assets/characters/race/MejiroDober-Race.png",
+    "sourceSize": [
+      1213,
+      1296
+    ],
+    "crop": [
+      0,
+      0,
+      1186,
+      1296
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "nice_nature": {
+    "file": "portraits/nice_nature.png",
+    "source": "docs/art-source/portraits/batch-12/nice_nature.png",
+    "sourceSha256": "2d3a41e615f25c555a43f3a47e5022455d54fb1924f04630e6550a7e7eefbdc9",
+    "reference": "public/assets/characters/race/NiceNature-Race.png",
+    "sourceSize": [
+      1086,
+      1448
+    ],
+    "crop": [
+      74,
+      33,
+      1022,
+      1404
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "king_halo": {
+    "file": "portraits/king_halo.png",
+    "source": "docs/art-source/portraits/batch-12/king_halo.png",
+    "sourceSha256": "9d679e2e68b200d8f4984b672fc154ce4575f7d287e589be245bbeb5a730b048",
+    "reference": "public/assets/characters/race/KingHalo-Race.png",
+    "sourceSize": [
+      1145,
+      1374
+    ],
+    "crop": [
+      32,
+      0,
+      1113,
+      1374
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "matikanetannhauser": {
+    "file": "portraits/matikanetannhauser.png",
+    "source": "docs/art-source/portraits/batch-12/matikanetannhauser.png",
+    "sourceSha256": "96db7659ab53d18be9120aaa615df312e9894d8fead1a975fba8ea49f940a74d",
+    "reference": "public/assets/characters/race/Matikanetannhauser-Race.png",
+    "sourceSize": [
+      1234,
+      1275
+    ],
+    "crop": [
+      57,
+      0,
+      1216,
+      1275
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "ikuno_dictus": {
+    "file": "portraits/ikuno_dictus.png",
+    "source": "docs/art-source/portraits/batch-12/ikuno_dictus.png",
+    "sourceSha256": "5b083cd24be3d4b419d5b8633c807c74d3b900f711ee7b6690c3ebc3d8aef2c5",
+    "reference": "public/assets/characters/race/IkunoDictus-Race.png",
+    "sourceSize": [
+      1208,
+      1302
+    ],
+    "crop": [
+      0,
+      0,
+      1188,
+      1302
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "mejiro_palmer": {
+    "file": "portraits/mejiro_palmer.png",
+    "source": "docs/art-source/portraits/batch-12/mejiro_palmer.png",
+    "sourceSha256": "c115415b7c2adb972f5911880e7b458878356892d20da12657b0188acaa8a73d",
+    "reference": "public/assets/characters/race/MejiroPalmer-Race.png",
+    "sourceSize": [
+      1214,
+      1295
+    ],
+    "crop": [
+      0,
+      0,
+      1176,
+      1295
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "daitaku_helios": {
+    "file": "portraits/daitaku_helios.png",
+    "source": "docs/art-source/portraits/batch-13/daitaku_helios.png",
+    "sourceSha256": "bb5938add9707adccd9456d59ba8e3b78693775f34cd0e6e5910c82b43d72470",
+    "reference": "public/assets/characters/race/DaitakuHelios-Race.png",
+    "sourceSize": [
+      1230,
+      1278
+    ],
+    "crop": [
+      0,
+      0,
+      1230,
+      1278
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "twin_turbo": {
+    "file": "portraits/twin_turbo.png",
+    "source": "docs/art-source/portraits/batch-13/twin_turbo.png",
+    "sourceSha256": "88958419d5a36e5cd7869618e77649bc275362bb3d0c2bd55b453ca7dd095ded",
+    "reference": "public/assets/characters/race/TwinTurbo-Race.png",
+    "sourceSize": [
+      1306,
+      1205
+    ],
+    "crop": [
+      0,
+      0,
+      1306,
+      1205
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "satono_diamond": {
+    "file": "portraits/satono_diamond.png",
+    "source": "docs/art-source/portraits/batch-13/satono_diamond.png",
+    "sourceSha256": "a1730d87eb0aab0d6b0acb0ea31084c9da7eecdda913c4096f76671ba92f58ef",
+    "reference": "public/assets/characters/race/SatonoDiamond-Race.png",
+    "sourceSize": [
+      1149,
+      1369
+    ],
+    "crop": [
+      0,
+      0,
+      1149,
+      1369
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "kitasan_black": {
+    "file": "portraits/kitasan_black.png",
+    "source": "docs/art-source/portraits/batch-13/kitasan_black.png",
+    "sourceSha256": "19d79c7a3888a728ad4444c1f7da207394c39d75b972132949f89cab8f70bb2e",
+    "reference": "public/assets/characters/race/KitasanBlack-Race.png",
+    "sourceSize": [
+      1159,
+      1357
+    ],
+    "crop": [
+      15,
+      0,
+      1159,
+      1357
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "sakura_chiyono_o": {
+    "file": "portraits/sakura_chiyono_o.png",
+    "source": "docs/art-source/portraits/batch-13/sakura_chiyono_o.png",
+    "sourceSha256": "45c8d20c8ae26965174edcffea43c6a5b029a19ea8258ea248ee5ea13dbefa5b",
+    "reference": "public/assets/characters/race/SakuraChiyonoO-Race.png",
+    "sourceSize": [
+      1157,
+      1360
+    ],
+    "crop": [
+      34,
+      0,
+      1121,
+      1360
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "sirius_symboli": {
+    "file": "portraits/sirius_symboli.png",
+    "source": "docs/art-source/portraits/batch-14/sirius_symboli.png",
+    "sourceSha256": "87c3aa0e9ae355d217240a6e313f0090014069a202ad580520a201dd22eb1c34",
+    "reference": "public/assets/characters/race/SiriusSymboli-Race.png",
+    "sourceSize": [
+      1207,
+      1303
+    ],
+    "crop": [
+      0,
+      0,
+      1207,
+      1303
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "mejiro_ardan": {
+    "file": "portraits/mejiro_ardan.png",
+    "source": "docs/art-source/portraits/batch-14/mejiro_ardan.png",
+    "sourceSha256": "3519dc7179a4572c2fafb8ec904e886928bb938997eb92c2dd7d7a66495b7802",
+    "reference": "public/assets/characters/race/MejiroArdan-Race.png",
+    "sourceSize": [
+      1185,
+      1327
+    ],
+    "crop": [
+      0,
+      0,
+      1185,
+      1327
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "yaeno_muteki": {
+    "file": "portraits/yaeno_muteki.png",
+    "source": "docs/art-source/portraits/batch-14/yaeno_muteki.png",
+    "sourceSha256": "35bdd42723fb94cefe4e68f5205794d561481d30b30370f74681c56434f1ea53",
+    "reference": "public/assets/characters/race/YaenoMuteki-Race.png",
+    "sourceSize": [
+      1206,
+      1305
+    ],
+    "crop": [
+      81,
+      0,
+      1145,
+      1305
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "tsurumaru_tsuyoshi": {
+    "file": "portraits/tsurumaru_tsuyoshi.png",
+    "source": "docs/art-source/portraits/batch-14/tsurumaru_tsuyoshi.png",
+    "sourceSha256": "4f8d8f5deb343ee9b2e4081275a5bcb5371cb0789f3573e0a6ccf480a5be9cfa",
+    "reference": "public/assets/characters/race/TsurumaruTsuyoshi-Race.png",
+    "sourceSize": [
+      1205,
+      1305
+    ],
+    "crop": [
+      0,
+      0,
+      1205,
+      1305
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "mejiro_bright": {
+    "file": "portraits/mejiro_bright.png",
+    "source": "docs/art-source/portraits/batch-14/mejiro_bright.png",
+    "sourceSha256": "f37ed72be541b76d84b6b6b3e4cf3e04f1325f03e1ee333ce9598d597a36c064",
+    "reference": "public/assets/characters/race/MejiroBright-Race.png",
+    "sourceSize": [
+      1145,
+      1374
+    ],
+    "crop": [
+      0,
+      0,
+      1145,
+      1374
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "daring_tact": {
+    "file": "portraits/daring_tact.png",
+    "source": "docs/art-source/portraits/batch-15/daring_tact.png",
+    "sourceSha256": "13c76616f54ab5564bc0d8a8d3ad6e127a587e7af1d9e6a4754364dc1874657d",
+    "reference": "public/assets/characters/race/DaringTact-Race.png",
+    "sourceSize": [
+      1239,
+      1270
+    ],
+    "crop": [
+      18,
+      7,
+      1227,
+      1270
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "sakura_laurel": {
+    "file": "portraits/sakura_laurel.png",
+    "source": "docs/art-source/portraits/batch-15/sakura_laurel.png",
+    "sourceSha256": "34ebf7733589b7fc96d316054bf9fc8cb5d7d872809eaab7920a8d358efa55c5",
+    "reference": "public/assets/characters/race/SakuraLaurel-Race.png",
+    "sourceSize": [
+      1145,
+      1374
+    ],
+    "crop": [
+      0,
+      0,
+      1129,
+      1374
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "narita_top_road": {
+    "file": "portraits/narita_top_road.png",
+    "source": "docs/art-source/portraits/batch-15/narita_top_road.png",
+    "sourceSha256": "90d45ec4ee1de9c0a8a7cf047d4ebcd62661bb5f7a16ed8b0c45a83f2ea37f53",
+    "reference": "public/assets/characters/race/NaritaTopRoad-Race.png",
+    "sourceSize": [
+      1208,
+      1302
+    ],
+    "crop": [
+      0,
+      0,
+      1208,
+      1302
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "yamanin_zephyr": {
+    "file": "portraits/yamanin_zephyr.png",
+    "source": "docs/art-source/portraits/batch-15/yamanin_zephyr.png",
+    "sourceSha256": "1ef19788dea0e6ca7ff4c9d8d38b7121a8c8decae160985a76b116690300524e",
+    "reference": "public/assets/characters/race/YamaninZephyr-Race.png",
+    "sourceSize": [
+      1217,
+      1292
+    ],
+    "crop": [
+      0,
+      0,
+      1217,
+      1292
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "furioso": {
+    "file": "portraits/furioso.png",
+    "source": "docs/art-source/portraits/batch-15/furioso.png",
+    "sourceSha256": "5a5d431513aa408434465ef9e1d5f7147379c8c8693ffa24809f590f7ccc2a59",
+    "reference": "public/assets/characters/race/Furioso-Race.png",
+    "sourceSize": [
+      1199,
+      1312
+    ],
+    "crop": [
+      0,
+      0,
+      1185,
+      1312
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "curren_bouquetdor": {
+    "file": "portraits/curren_bouquetdor.png",
+    "source": "docs/art-source/portraits/batch-1002/curren_bouquetdor.png",
+    "sourceSha256": "16d39d142368fef6f6c43a9a358d533ca6e21c35623d905abf9c8881288670a1",
+    "reference": "public/assets/characters/race/CurrenBouquetdor-Race.png",
+    "sourceSize": [
+      1254,
+      1254
+    ],
+    "crop": [
+      0,
+      0,
+      1236,
+      1254
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "kiseki": {
+    "file": "portraits/kiseki.png",
+    "source": "docs/art-source/portraits/batch-1002/kiseki.png",
+    "sourceSha256": "b5a6afc062ac022c345230271dff8295d23adba65a6b81212e46f7c281e4019e",
+    "reference": "public/assets/characters/race/Kiseki-Race.png",
+    "sourceSize": [
+      1254,
+      1254
+    ],
+    "crop": [
+      51,
+      7,
+      1176,
+      1254
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "marche_lorraine": {
+    "file": "portraits/marche_lorraine.png",
+    "source": "docs/art-source/portraits/batch-1002/marche_lorraine.png",
+    "sourceSha256": "9223e1bd8d75433b5156bd94c70a6e6fed150c760e50d62eb5e70d11846c93df",
+    "reference": "public/assets/characters/race/MarcheLorraine-Race.png",
+    "sourceSize": [
+      1254,
+      1254
+    ],
+    "crop": [
+      0,
+      19,
+      1200,
+      1254
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "epiphaneia": {
+    "file": "portraits/epiphaneia.png",
+    "source": "docs/art-source/portraits/batch-1002/epiphaneia.png",
+    "sourceSha256": "08da0c135b35dd3c75a0bd9ea8d8f1b1f568160665f94c50a22bce50f6f114e0",
+    "reference": "public/assets/characters/race/Epiphaneia-Race.png",
+    "sourceSize": [
+      1254,
+      1254
+    ],
+    "crop": [
+      19,
+      7,
+      1216,
+      1254
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "chrono_genesis": {
+    "file": "portraits/chrono_genesis.png",
+    "source": "docs/art-source/portraits/batch-1002/chrono_genesis.png",
+    "sourceSha256": "8da22e7944282c75e5cdfe1abb256209642f1d263652786b67ed548c0bfe8fd2",
+    "reference": "public/assets/characters/race/ChronoGenesis-Race.png",
+    "sourceSize": [
+      1254,
+      1254
+    ],
+    "crop": [
+      96,
+      16,
+      1236,
+      1254
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "stay_gold": {
+    "file": "portraits/stay_gold.png",
+    "source": "docs/art-source/portraits/batch-1002/stay_gold.png",
+    "sourceSha256": "678e50c577ece2c8872a48feb9f7b26480275c6e786b00d5797cebe2181209dc",
+    "reference": "public/assets/characters/race/StayGold-Race.png",
+    "sourceSize": [
+      1254,
+      1254
+    ],
+    "crop": [
+      0,
+      14,
+      1168,
+      1254
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "loves_only_you": {
+    "file": "portraits/loves_only_you.png",
+    "source": "docs/art-source/portraits/batch-1002/loves_only_you.png",
+    "sourceSha256": "b086c2a7e8839b38e2237f986052fc92f354d2649fd89b8fcaf2edde844f9f65",
+    "reference": "public/assets/characters/race/LovesOnlyYou-Race.png",
+    "sourceSize": [
+      1254,
+      1254
+    ],
+    "crop": [
+      37,
+      10,
+      1222,
+      1254
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "forever_young": {
+    "file": "portraits/forever_young.png",
+    "source": "docs/art-source/portraits/batch-1002/forever_young.png",
+    "sourceSha256": "2cb4f482555b77d5f5c04417fa23b7fb0d5163a696375e15e8fec7ea58b6ce7d",
+    "reference": "public/assets/characters/race/ForeverYoung-Race.png",
+    "sourceSize": [
+      1254,
+      1254
+    ],
+    "crop": [
+      37,
+      12,
+      1186,
+      1254
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "red_desire": {
+    "file": "portraits/red_desire.png",
+    "source": "docs/art-source/portraits/batch-1002/red_desire.png",
+    "sourceSha256": "0f3b415dd3c7e9f1d53a0730ea6658192e70ea9859b95500172e665bc82765d8",
+    "reference": "public/assets/characters/race/RedDesire-Race.png",
+    "sourceSize": [
+      1254,
+      1254
+    ],
+    "crop": [
+      0,
+      21,
+      1196,
+      1254
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "gran_alegria": {
+    "file": "portraits/gran_alegria.png",
+    "source": "docs/art-source/portraits/batch-1002/gran_alegria.png",
+    "sourceSha256": "6902af4c02cd7cc2d651d2633866a2a8a6b031f56ca0014fb0176596be38f5b8",
+    "reference": "public/assets/characters/race/GranAlegria-Race.png",
+    "sourceSize": [
+      1254,
+      1254
+    ],
+    "crop": [
+      105,
+      33,
+      1138,
+      1254
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "transcend": {
+    "file": "portraits/transcend.png",
+    "source": "docs/art-source/portraits/batch-16/transcend.png",
+    "sourceSha256": "357ebdde938c95915bee3ff416e32ddc421c16a3fdb19de91490ea7ce8f6874b",
+    "reference": "public/assets/characters/race/Transcend-Race.png",
+    "sourceSize": [
+      1165,
+      1350
+    ],
+    "crop": [
+      13,
+      0,
+      1149,
+      1350
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "north_flight": {
+    "file": "portraits/north_flight.png",
+    "source": "docs/art-source/portraits/batch-16/north_flight.png",
+    "sourceSha256": "57b7c9bff767f9472e904c7c9464344e90fbb4282d6af61b114484ad84e39f7e",
+    "reference": "public/assets/characters/race/NorthFlight-Race.png",
+    "sourceSize": [
+      1199,
+      1312
+    ],
+    "crop": [
+      45,
+      0,
+      1198,
+      1312
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "symboli_kris_s": {
+    "file": "portraits/symboli_kris_s.png",
+    "source": "docs/art-source/portraits/batch-16/symboli_kris_s.png",
+    "sourceSha256": "a0445f803409902c118f814e16dcedfe23ffbcf39da4079bbba7747a1edaad2b",
+    "reference": "public/assets/characters/race/SymboliKrisS-Race.png",
+    "sourceSize": [
+      1199,
+      1312
+    ],
+    "crop": [
+      0,
+      0,
+      1199,
+      1312
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "tanino_gimlet": {
+    "file": "portraits/tanino_gimlet.png",
+    "source": "docs/art-source/portraits/batch-16/tanino_gimlet.png",
+    "sourceSha256": "1f9f8a4bb7d5313fedb3ffd569284bdd470613fe04955eaa200cfb146e0adfea",
+    "reference": "public/assets/characters/race/TaninoGimlet-Race.png",
+    "sourceSize": [
+      1145,
+      1374
+    ],
+    "crop": [
+      0,
+      0,
+      1131,
+      1374
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "daiichi_ruby": {
+    "file": "portraits/daiichi_ruby.png",
+    "source": "docs/art-source/portraits/batch-16/daiichi_ruby.png",
+    "sourceSha256": "9dee4e4e1f47319ca026459d1331fbd56d017a54d6d62b29ccff3b9d85486e24",
+    "reference": "public/assets/characters/race/DaiichiRuby-Race.png",
+    "sourceSize": [
+      1145,
+      1374
+    ],
+    "crop": [
+      0,
+      0,
+      1145,
+      1374
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "mejiro_ramonu": {
+    "file": "portraits/mejiro_ramonu.png",
+    "source": "docs/art-source/portraits/batch-17/mejiro_ramonu.png",
+    "sourceSha256": "881c3fbf869518eae934c13f4088a5376d95ef76d26115b63c2fd903d1d5f53a",
+    "reference": "public/assets/characters/race/MejiroRamonu-Race.png",
+    "sourceSize": [
+      1298,
+      1212
+    ],
+    "crop": [
+      0,
+      0,
+      1274,
+      1212
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "aston_machan": {
+    "file": "portraits/aston_machan.png",
+    "source": "docs/art-source/portraits/batch-17/aston_machan.png",
+    "sourceSha256": "5b72fff9ce964d4cb309f4c0ab7d5ab5e21a6a407f564f240c7f236e1639ba12",
+    "reference": "public/assets/characters/race/AstonMachan-Race.png",
+    "sourceSize": [
+      1224,
+      1285
+    ],
+    "crop": [
+      0,
+      0,
+      1196,
+      1285
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "satono_crown": {
+    "file": "portraits/satono_crown.png",
+    "source": "docs/art-source/portraits/batch-17/satono_crown.png",
+    "sourceSha256": "6bac23bb5edc7cec4285d1f24cf5c75f2c52b50346f7b1f4c2463541b127b61c",
+    "reference": "public/assets/characters/race/SatonoCrown-Race.png",
+    "sourceSize": [
+      1193,
+      1318
+    ],
+    "crop": [
+      25,
+      0,
+      1110,
+      1318
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "cheval_grand": {
+    "file": "portraits/cheval_grand.png",
+    "source": "docs/art-source/portraits/batch-17/cheval_grand.png",
+    "sourceSha256": "f3e0200116b99419889f33213e65b6f20c3d8beec43608cd4b8196b8517e9983",
+    "reference": "public/assets/characters/race/ChevalGrand-Race.png",
+    "sourceSize": [
+      1239,
+      1269
+    ],
+    "crop": [
+      0,
+      0,
+      1239,
+      1269
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "vivlos": {
+    "file": "portraits/vivlos.png",
+    "source": "docs/art-source/portraits/batch-17/vivlos.png",
+    "sourceSha256": "fe903fb5621fcc8d1fbf0fa16e7a4abce9ec8890183eb0a9e5b93b61c9518b31",
+    "reference": "public/assets/characters/race/Vivlos-Race.png",
+    "sourceSize": [
+      1214,
+      1295
+    ],
+    "crop": [
+      0,
+      0,
+      1214,
+      1295
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "admire_groove": {
+    "file": "portraits/admire_groove.png",
+    "source": "docs/art-source/portraits/batch-1003/admire_groove.png",
+    "sourceSha256": "700ceceb830432a50e5686ab61a3f721b9762ba242a0b184c084a6d12e6f779b",
+    "reference": "public/assets/characters/race/AdmireGroove-Race.png",
+    "sourceSize": [
+      1254,
+      1254
+    ],
+    "crop": [
+      23,
+      17,
+      1218,
+      1224
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "dream_journey": {
+    "file": "portraits/dream_journey.png",
+    "source": "docs/art-source/portraits/batch-1003/dream_journey.png",
+    "sourceSha256": "df3d9f65c496165b8eff52eabf14c4138905dd79c77d9584cce4fee1775cedbf",
+    "reference": "public/assets/characters/race/DreamJourney-Race.png",
+    "sourceSize": [
+      1254,
+      1254
+    ],
+    "crop": [
+      91,
+      27,
+      1170,
+      1254
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "calstone_light_o": {
+    "file": "portraits/calstone_light_o.png",
+    "source": "docs/art-source/portraits/batch-1003/calstone_light_o.png",
+    "sourceSha256": "ce4049e62474123212a79ba160c3281642465cfd079c7683eb22f42518c08d9e",
+    "reference": "public/assets/characters/race/CalstoneLightO-Race.png",
+    "sourceSize": [
+      1254,
+      1254
+    ],
+    "crop": [
+      33,
+      36,
+      1199,
+      1230
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "durandal": {
+    "file": "portraits/durandal.png",
+    "source": "docs/art-source/portraits/batch-1003/durandal.png",
+    "sourceSha256": "7b8553a362587c505d6c6d1793feb9dd7c41296c6c48d3fd9bdb7b161912fce7",
+    "reference": "public/assets/characters/race/Durandal-Race.png",
+    "sourceSize": [
+      1254,
+      1254
+    ],
+    "crop": [
+      69,
+      20,
+      1083,
+      1242
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "bubble_gum_fellow": {
+    "file": "portraits/bubble_gum_fellow.png",
+    "source": "docs/art-source/portraits/batch-1003/bubble_gum_fellow.png",
+    "sourceSha256": "e598bc10c4ed18f4d31b119a2b6cb6d1b2357d5e1af9f1e4e1d0f786dadffbe3",
+    "reference": "public/assets/characters/race/BubbleGumFellow-Race.png",
+    "sourceSize": [
+      1254,
+      1254
+    ],
+    "crop": [
+      105,
+      21,
+      1230,
+      1254
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "sakura_chitose_o": {
+    "file": "portraits/sakura_chitose_o.png",
+    "source": "docs/art-source/portraits/batch-1003/sakura_chitose_o.png",
+    "sourceSha256": "043328ff79700b331cf1339196b13660c8f60595bc914f228a5500e4c9127063",
+    "reference": "public/assets/characters/race/SakuraChitoseO-Race.png",
+    "sourceSize": [
+      1254,
+      1254
+    ],
+    "crop": [
+      0,
+      23,
+      1214,
+      1254
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "fenomeno": {
+    "file": "portraits/fenomeno.png",
+    "source": "docs/art-source/portraits/batch-1003/fenomeno.png",
+    "sourceSha256": "7e54dbf22c184c038bba1aaac1988dece1d27dc0d59a05e25e5327c184cda21d",
+    "reference": "public/assets/characters/race/Fenomeno-Race.png",
+    "sourceSize": [
+      1254,
+      1254
+    ],
+    "crop": [
+      59,
+      21,
+      1134,
+      1225
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "blast_onepiece": {
+    "file": "portraits/blast_onepiece.png",
+    "source": "docs/art-source/portraits/batch-1003/blast_onepiece.png",
+    "sourceSha256": "769617f728ec47453d39313b2f086e325264c470a34023a9d3d404febc61b906",
+    "reference": "public/assets/characters/race/BlastOnepiece-Race.png",
+    "sourceSize": [
+      1254,
+      1254
+    ],
+    "crop": [
+      19,
+      40,
+      1224,
+      1254
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "almond_eye": {
+    "file": "portraits/almond_eye.png",
+    "source": "docs/art-source/portraits/batch-1003/almond_eye.png",
+    "sourceSha256": "99bb408a4e436c2328dbe2d36e688bd876c11ddc9eb3c48cefe32d3327299d8f",
+    "reference": "public/assets/characters/race/AlmondEye-Race.png",
+    "sourceSize": [
+      1254,
+      1254
+    ],
+    "crop": [
+      0,
+      21,
+      1190,
+      1254
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "lucky_lilac": {
+    "file": "portraits/lucky_lilac.png",
+    "source": "docs/art-source/portraits/batch-1003/lucky_lilac.png",
+    "sourceSha256": "8977e8de8e0e616a71923db9ea2c0b3cf1fd17e91c28c74ebc90a92e2141a05f",
+    "reference": "public/assets/characters/race/LuckyLilac-Race.png",
+    "sourceSize": [
+      1254,
+      1254
+    ],
+    "crop": [
+      19,
+      47,
+      1192,
+      1254
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "dantsu_flame": {
+    "file": "portraits/dantsu_flame.png",
+    "source": "docs/art-source/portraits/batch-18/dantsu_flame.png",
+    "sourceSha256": "1d296894de377ebe8ade31d14bccb8339796ea4964d434b22711b1b24e0a345c",
+    "reference": "public/assets/characters/race/DantsuFlame-Race.png",
+    "sourceSize": [
+      1199,
+      1312
+    ],
+    "crop": [
+      33,
+      1,
+      1189,
+      1312
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "ks_miracle": {
+    "file": "portraits/ks_miracle.png",
+    "source": "docs/art-source/portraits/batch-18/ks_miracle.png",
+    "sourceSha256": "8d9a0706f60d8a17cd72a2350e0c852c839a5354b483ba6deca080b64310e548",
+    "reference": "public/assets/characters/race/KSMiracle-Race.png",
+    "sourceSize": [
+      1230,
+      1278
+    ],
+    "crop": [
+      0,
+      7,
+      1210,
+      1278
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "jungle_pocket": {
+    "file": "portraits/jungle_pocket.png",
+    "source": "docs/art-source/portraits/batch-18/jungle_pocket.png",
+    "sourceSha256": "2dab0c07487acebcbfbb1728eaf6ce6aee7f5cd4f4326cf05622795410fd6a52",
+    "reference": "public/assets/characters/race/JunglePocket-Race.png",
+    "sourceSize": [
+      1161,
+      1354
+    ],
+    "crop": [
+      43,
+      0,
+      1133,
+      1354
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "believe": {
+    "file": "portraits/believe.png",
+    "source": "docs/art-source/portraits/batch-18/believe.png",
+    "sourceSha256": "1594aaf201f935b3a2ff52de866572bc25df2db842266789df5fe51157f3bda4",
+    "reference": "public/assets/characters/race/Believe-Race.png",
+    "sourceSize": [
+      1262,
+      1246
+    ],
+    "crop": [
+      92,
+      12,
+      1207,
+      1246
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "no_reason": {
+    "file": "portraits/no_reason.png",
+    "source": "docs/art-source/portraits/batch-18/no_reason.png",
+    "sourceSha256": "ae4ee5f7ff0ac5b8f7105635665e7e47df54d4f04f5abff8a5bf227774a1413d",
+    "reference": "public/assets/characters/race/NoReason-Race.png",
+    "sourceSize": [
+      1145,
+      1374
+    ],
+    "crop": [
+      0,
+      0,
+      1145,
+      1374
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "still_in_love": {
+    "file": "portraits/still_in_love.png",
+    "source": "docs/art-source/portraits/batch-19/still_in_love.png",
+    "sourceSha256": "d2cb70cf8b66dde0a52c4880a96641bbe891342a5c6a03ec7666ea26ecb429d3",
+    "reference": "public/assets/characters/race/StillInLove-Race.png",
+    "sourceSize": [
+      1145,
+      1374
+    ],
+    "crop": [
+      0,
+      0,
+      1135,
+      1374
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "copano_rickey": {
+    "file": "portraits/copano_rickey.png",
+    "source": "docs/art-source/portraits/batch-19/copano_rickey.png",
+    "sourceSha256": "dece5a7767bf5fd9807ea3814b6f8b94ae3d79d0cb6e118e688a225012a59416",
+    "reference": "public/assets/characters/race/CopanoRickey-Race.png",
+    "sourceSize": [
+      1211,
+      1299
+    ],
+    "crop": [
+      0,
+      0,
+      1197,
+      1299
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "hokko_tarumae": {
+    "file": "portraits/hokko_tarumae.png",
+    "source": "docs/art-source/portraits/batch-19/hokko_tarumae.png",
+    "sourceSha256": "09563600f0acffeba70250552652c40cbb780ca618032bb4594e84d6f10b9850",
+    "reference": "public/assets/characters/race/HokkoTarumae-Race.png",
+    "sourceSize": [
+      1209,
+      1301
+    ],
+    "crop": [
+      0,
+      0,
+      1209,
+      1301
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "wonder_acute": {
+    "file": "portraits/wonder_acute.png",
+    "source": "docs/art-source/portraits/batch-19/wonder_acute.png",
+    "sourceSha256": "6aa8c701d3abc27ef4c7f55af2da8505036f123347bf4d45757c41ca40cb12eb",
+    "reference": "public/assets/characters/race/WonderAcute-Race.png",
+    "sourceSize": [
+      1193,
+      1319
+    ],
+    "crop": [
+      0,
+      0,
+      1193,
+      1319
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "sounds_of_earth": {
+    "file": "portraits/sounds_of_earth.png",
+    "source": "docs/art-source/portraits/batch-19/sounds_of_earth.png",
+    "sourceSha256": "51fc19d6c7ac577fae053e84cd17f65a54bc80221fb45f8473a374b4f424241d",
+    "reference": "public/assets/characters/race/SoundsOfEarth-Race.png",
+    "sourceSize": [
+      1159,
+      1358
+    ],
+    "crop": [
+      39,
+      0,
+      1145,
+      1358
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "royce_and_royce": {
+    "file": "portraits/royce_and_royce.png",
+    "source": "docs/art-source/portraits/batch-20/royce_and_royce.png",
+    "sourceSha256": "93cfbf03ffb17daaee60045ad1998adf646483c648dfb7c497f88ada2d16a56a",
+    "reference": "public/assets/characters/race/RoyceAndRoyce-Race.png",
+    "sourceSize": [
+      1223,
+      1286
+    ],
+    "crop": [
+      0,
+      0,
+      1222,
+      1286
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "katsuragi_ace": {
+    "file": "portraits/katsuragi_ace.png",
+    "source": "docs/art-source/portraits/batch-20/katsuragi_ace.png",
+    "sourceSha256": "1fbe56929db69c0205fe97286bc2cee8ee28d9bd3927fcb2c7351abdea3ab77f",
+    "reference": "public/assets/characters/race/KatsuragiAce-Race.png",
+    "sourceSize": [
+      1227,
+      1282
+    ],
+    "crop": [
+      0,
+      0,
+      1227,
+      1282
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "neo_universe": {
+    "file": "portraits/neo_universe.png",
+    "source": "docs/art-source/portraits/batch-20/neo_universe.png",
+    "sourceSha256": "59ce03a39ccd52a0938a5b9df5e88f84d6246fa11aebcf303aeea0af6b47a673",
+    "reference": "public/assets/characters/race/NeoUniverse-Race.png",
+    "sourceSize": [
+      1204,
+      1306
+    ],
+    "crop": [
+      0,
+      0,
+      1204,
+      1306
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "hishi_miracle": {
+    "file": "portraits/hishi_miracle.png",
+    "source": "docs/art-source/portraits/batch-20/hishi_miracle.png",
+    "sourceSha256": "e318f4f21443abe78faea2bcc7275d7181e5cbfd0e92ec6d1735fdd7d41c162f",
+    "reference": "public/assets/characters/race/HishiMiracle-Race.png",
+    "sourceSize": [
+      1214,
+      1295
+    ],
+    "crop": [
+      0,
+      0,
+      1190,
+      1295
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "tap_dance_city": {
+    "file": "portraits/tap_dance_city.png",
+    "source": "docs/art-source/portraits/batch-20/tap_dance_city.png",
+    "sourceSha256": "c9495bff29e0b0a9e74857fcfb8300ce463121bbdbc158aaa977e7fc9dfb0dbb",
+    "reference": "public/assets/characters/race/TapDanceCity-Race.png",
+    "sourceSize": [
+      1230,
+      1278
+    ],
+    "crop": [
+      0,
+      0,
+      1212,
+      1278
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "duramente": {
+    "file": "portraits/duramente.png",
+    "source": "docs/art-source/portraits/batch-2001/duramente.png",
+    "sourceSha256": "5df5526c1504b5bae21868d004b2f5ebbab7655242499aac996a08225bd0a148",
+    "reference": "public/assets/characters/race/Duramente-Race.png",
+    "sourceSize": [
+      1254,
+      1254
+    ],
+    "crop": [
+      51,
+      17,
+      1176,
+      1240
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "rhein_kraft": {
+    "file": "portraits/rhein_kraft.png",
+    "source": "docs/art-source/portraits/batch-2001/rhein_kraft.png",
+    "sourceSha256": "bad70e4853edd2f8064c0ed5538ced6ee52dd3acb9a08b5fd6ed84e5d053bfa2",
+    "reference": "public/assets/characters/race/RheinKraft-Race.png",
+    "sourceSize": [
+      1246,
+      1263
+    ],
+    "crop": [
+      33,
+      21,
+      1189,
+      1240
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "cesario": {
+    "file": "portraits/cesario.png",
+    "source": "docs/art-source/portraits/batch-2001/cesario.png",
+    "sourceSha256": "2ca20c2cfc62ce059cd127a613552aa01a10a234be3525c19c91c6c87a7e28f9",
+    "reference": "public/assets/characters/race/Cesario-Race.png",
+    "sourceSize": [
+      1230,
+      1278
+    ],
+    "crop": [
+      0,
+      23,
+      1202,
+      1262
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "air_messiah": {
+    "file": "portraits/air_messiah.png",
+    "source": "docs/art-source/portraits/batch-2001/air_messiah.png",
+    "sourceSha256": "90e6b39d6a384e28e87ad5a82ad521c5a8d4ebd0e2102c3532c9c8993d373a32",
+    "reference": "public/assets/characters/race/AirMessiah-Race.png",
+    "sourceSize": [
+      1199,
+      1312
+    ],
+    "crop": [
+      0,
+      21,
+      1152,
+      1312
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "daring_heart": {
+    "file": "portraits/daring_heart.png",
+    "source": "docs/art-source/portraits/batch-2001/daring_heart.png",
+    "sourceSha256": "355d4d8d07540e7312f464c55045599ab6e308345a7b9966f805d845cfcf0c74",
+    "reference": "public/assets/characters/race/DaringHeart-Race.png",
+    "sourceSize": [
+      1254,
+      1254
+    ],
+    "crop": [
+      59,
+      51,
+      1236,
+      1238
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "fusaichi_pandora": {
+    "file": "portraits/fusaichi_pandora.png",
+    "source": "docs/art-source/portraits/batch-2001/fusaichi_pandora.png",
+    "sourceSha256": "362f149fde34ed4e3c042d5c36360020cae4ab1144c760deb7f19e83ea1f4924",
+    "reference": "public/assets/characters/race/FusaichiPandora-Race.png",
+    "sourceSize": [
+      1247,
+      1261
+    ],
+    "crop": [
+      0,
+      21,
+      1207,
+      1261
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "buena_vista": {
+    "file": "portraits/buena_vista.png",
+    "source": "docs/art-source/portraits/batch-2001/buena_vista.png",
+    "sourceSha256": "c2280efee8299a57a0c015346a0c27e2e087838e789e89848824ee52faf937af",
+    "reference": "public/assets/characters/race/BuenaVista-Race.png",
+    "sourceSize": [
+      1241,
+      1268
+    ],
+    "crop": [
+      27,
+      29,
+      1092,
+      1254
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "orfevre": {
+    "file": "portraits/orfevre.png",
+    "source": "docs/art-source/portraits/batch-2001/orfevre.png",
+    "sourceSha256": "80e2f80bfd2634257bd85e4a5af9a5d2b1dc74e3e2d69439ddeb11f7afff11d7",
+    "reference": "public/assets/characters/race/Orfevre-Race.png",
+    "sourceSize": [
+      1312,
+      1199
+    ],
+    "crop": [
+      0,
+      20,
+      1288,
+      1199
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "gentildonna": {
+    "file": "portraits/gentildonna.png",
+    "source": "docs/art-source/portraits/batch-2001/gentildonna.png",
+    "sourceSha256": "e117347c4d3a543fa419c17e3ada40e0c86a60340da8c2d479e4537ebb41fe0b",
+    "reference": "public/assets/characters/race/Gentildonna-Race.png",
+    "sourceSize": [
+      1213,
+      1296
+    ],
+    "crop": [
+      0,
+      21,
+      1167,
+      1296
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  },
+  "win_variation": {
+    "file": "portraits/win_variation.png",
+    "source": "docs/art-source/portraits/batch-2001/win_variation.png",
+    "sourceSha256": "800fb9749d2daa296871d7f184b2f535a08ab6689a295d40a18457de2ee9e336",
+    "reference": "public/assets/characters/race/WinVariation-Race.png",
+    "sourceSize": [
+      1254,
+      1254
+    ],
+    "crop": [
+      0,
+      25,
+      1236,
+      1254
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "status": "independent-generated-static-portrait; not-rigged-model"
+  }
+}

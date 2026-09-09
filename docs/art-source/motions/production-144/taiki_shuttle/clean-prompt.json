@@ -1,0 +1,4 @@
+{
+  "prompt": "Edit this game sprite atlas with one targeted correction: REMOVE ALL floating sparks, magic arcs, glows, projectile streaks, speed lines, shield graphics, aura rings and decorative particles around the character. Keep all 24 CHARACTER BODY POSES, hands, fingers, hair, costume colors and details exactly unchanged. The game engine renders the effects separately, so the sheet should contain only the character drawings. Preserve 4 columns x 6 rows and make each character fit entirely inside its 256x256 cell with empty space between characters. Genuinely transparent alpha zero background, preserve the source transparency. No backdrop, checkerboard, text or frame borders. 1024x1536 PNG.",
+  "tool": "builtin-imagegen"
+}

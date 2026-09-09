@@ -1,8 +1,10 @@
 /** Root shell: screen routing plus the 1920x1080 scale-to-fit wrapper. */
 import { useEffect, useLayoutEffect, useRef, useState } from 'react';
 import { useGameStore } from '../store/gameStore';
+import { OnlineScreen } from '../components/screens/OnlineScreen';
 import { BattleScreen } from '../components/screens/BattleScreen';
 import { CollectionScreen } from '../components/screens/CollectionScreen';
+import { MotionScreen } from '../components/screens/MotionScreen';
 import {
   MainMenu, MatchSetup, ResultScreen, SettingsScreen, TitleScreen,
 } from '../components/screens/MenuScreens';
@@ -48,8 +50,10 @@ export function App(): JSX.Element {
     case 'TITLE': content = <TitleScreen />; break;
     case 'MAIN_MENU': content = <MainMenu />; break;
     case 'MATCH_SETUP': content = <MatchSetup />; break;
+    case 'ONLINE': content = <OnlineScreen />; break;
     case 'BATTLE': content = <BattleScreen />; break;
     case 'COLLECTION': content = <CollectionScreen />; break;
+    case 'MOTION': content = <MotionScreen />; break;
     case 'SETTINGS': content = <SettingsScreen />; break;
     case 'RESULT': content = <ResultScreen />; break;
     default: content = <TitleScreen />;

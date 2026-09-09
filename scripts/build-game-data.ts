@@ -1,3 +1,5 @@
+import { buildSeasons } from '../src/game/engine/seasons/catalog';
+import { writeSeasonIcons } from './season-icons';
 /**
  * Generates every JSON file under src/data/generated/ from the vendored
  * UmaRogue source plus the auditable manual overrides.
@@ -13,7 +15,7 @@ import { fileURLToPath } from 'node:url';
 import {
   ACTIVE_S1_SIZE, BASE_AD, BASE_AS, BASE_HP, BASE_RESIST, CANONICAL_ROSTER_SIZE,
   COST_UNIT_COUNTS, DEFAULT_ABILITY_POWER, DEFAULT_CRIT_CHANCE, DEFAULT_CRIT_MULTIPLIER,
-  POOL_COPIES, ROLE_MANA, RUN_STYLE_START_MANA, SHOP_ODDS,
+  POOL_COPIES, ROLE_MANA, RUN_STYLE_START_MANA, SHOP_ODDS, XP_TO_LEVEL,
 } from '../src/game/engine/constants';
 import { buildSkill } from '../src/game/engine/battle/skill-templates';
 import { TRAIT_DEFS } from '../src/game/engine/traits/trait-defs';
@@ -777,8 +779,11 @@ const units: UnitDef[] = names.map((name) => {
 mkdirSync(OUT, { recursive: true });
 
 const activeUnits = units.filter((u) => u.activeS1);
+const seasons = buildSeasons(units, activeUnits.map(u => u.id));
 const rosterHash = createHash('sha256')
-  .update(JSON.stringify(activeUnits.map((u) => [u.id, u.cost, u.role, u.traits]).sort()))
+  // Pool changes cannot safely resume an old match; skills/stats also affect replays.
+  .update(JSON.stringify({ rulesRevision: 3, seasons, pool: POOL_COPIES, odds: SHOP_ODDS, xp: XP_TO_LEVEL,
+    units: units.map(({ source: _source, ...gameplay }) => gameplay).sort((a, b) => a.id.localeCompare(b.id)) }))
   .digest('hex')
   .slice(0, 16);
 
@@ -805,6 +810,9 @@ write('active-set-s1.json', {
     ([1, 2, 3, 4, 5] as Cost[]).map((c) => [c, activeUnits.filter((u) => u.cost === c).map((u) => u.id)]),
   ),
 });
+
+write('seasons.json', { version: 1, rosterHash, seasons });
+writeSeasonIcons(ROOT);
 
 write('shop-config.json', {
   version: 1,

@@ -1,10 +1,10 @@
 /** Augment select, twinkle draft, battle result banner and the dev panel. */
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useGameStore } from '../store/gameStore';
-import { AUGMENT_BY_ID, ACTIVE_UNITS, getUnitDef } from '../game/engine/roster';
+import { AUGMENT_BY_ID, getSeasonUnits, getUnitDef } from '../game/engine/roster';
 import { getItem } from '../game/engine/items/item-defs';
 import { currentPickers } from '../game/engine/rounds/draft';
-import { ItemIcon, costVar } from './common';
+import { Portrait, ItemIcon, costVar } from './common';
 
 const GRADE_LABEL: Record<string, string> = { S: 'Silver', G: 'Gold', P: 'Prism' };
 const GRADE_COLOR: Record<string, string> = { S: '#c9d6e0', G: '#ffcc33', P: '#b98ae0' };
@@ -34,7 +34,7 @@ export function AugmentOverlay(): JSX.Element | null {
             return (
               <button key={id} className="choice-card" onClick={() => choose(id)}
                 style={{ borderColor: GRADE_COLOR[offer.grade] }}>
-                <h4>{aug?.name ?? id}</h4>
+                <img src={`/assets/augments/${id}.png`} alt="" width={82} height={82} /><h4>{aug?.name ?? id}</h4>
                 <p>{aug?.description ?? ''}</p>
               </button>
             );
@@ -56,7 +56,7 @@ export function DraftOverlay(): JSX.Element | null {
   const myTurn = pickers.includes(human.id);
 
   return (
-    <div className="overlay">
+    <div className="overlay draft-overlay">
       <div className="overlay-card" style={{ maxWidth: 1180 }}>
         <h2 style={{ margin: 0 }}>트윙클 드래프트</h2>
         <p className="muted" style={{ margin: '6px 0 0' }}>
@@ -78,7 +78,7 @@ export function DraftOverlay(): JSX.Element | null {
               >
                 <div style={{ display: 'flex', alignItems: 'center', gap: 10, justifyContent: 'center' }}>
                   <div className="token" style={{ width: 46, height: 46, fontSize: 18, border: `3px solid ${costVar(def.cost)}` }}>
-                    {Array.from(def.nameKo)[0]}
+                    <Portrait id={def.id} name={def.nameKo} size={74} />
                   </div>
                   <ItemIcon itemId={o.itemId} size={30} />
                 </div>
@@ -99,13 +99,23 @@ export function DraftOverlay(): JSX.Element | null {
 }
 
 export function BattleResultOverlay({ onContinue }: { onContinue: () => void }): JSX.Element | null {
+  const online = useGameStore((s) => s.onlinePlayerId !== null);
+  const autoContinue = useGameStore((s) => !s.onlinePlayerId && s.settings.autoContinue);
+  const [held, setHeld] = useState(false);
+  const [remaining, setRemaining] = useState(5);
+  useEffect(() => {
+    if (!autoContinue || held) return;
+    const timer = window.setInterval(() => setRemaining((n) => Math.max(0, n - 1)), 1000);
+    return () => window.clearInterval(timer);
+  }, [autoContinue, held]);
+  useEffect(() => { if (autoContinue && !held && remaining === 0) onContinue(); }, [autoContinue, held, remaining, onContinue]);
   const match = useGameStore((s) => s.match);
   const human = useGameStore((s) => s.human());
   useGameStore((s) => s.revision);
   const res = match?.lastResolution;
   if (!res || !human) return null;
 
-  const mine = res.outcomes.find((o) => o.attackerId === human.id || o.defenderId === human.id);
+  const mine = res.outcomes.find((o) => o.attackerId === human.id || (!o.isGhost && o.defenderId === human.id));
   const damage = res.damage[human.id] ?? 0;
   const won = mine ? mine.winnerId === human.id : false;
   const draw = mine ? mine.winnerId === null : false;
@@ -116,7 +126,7 @@ export function BattleResultOverlay({ onContinue }: { onContinue: () => void }):
   return (
     <div className="overlay">
       <div className="overlay-card" style={{ textAlign: 'center', borderColor: color }}>
-        <h2 style={{ margin: 0, fontSize: 42, color }}>{label}</h2>
+        <h2 style={{ margin: 0, fontSize: 42, color, width: 600, padding: '28px 80px', background: `url(/assets/ui/banner_${draw ? 'draw' : won ? 'victory' : 'defeat'}.png) center / 100% 100%` }}>{label}</h2>
         {damage > 0 && (
           <p style={{ margin: '10px 0 0', fontSize: 18 }} className="danger-text">
             체력 -{damage}
@@ -135,9 +145,10 @@ export function BattleResultOverlay({ onContinue }: { onContinue: () => void }):
             탈락: {res.eliminated.map((id) => match?.players.find((p) => p.id === id)?.name).join(', ')}
           </p>
         )}
-        <button className="btn-primary" style={{ marginTop: 20 }} onClick={onContinue}>
-          다음 라운드로
+        <button className="btn-primary" style={{ marginTop: 20 }} disabled={online} onClick={onContinue}>
+          {online ? '다음 라운드 대기 중' : '다음 라운드로'}{autoContinue && !held ? ` · ${remaining}초` : ''}
         </button>
+        {autoContinue && <button className="btn-ghost" style={{ marginLeft: 10 }} onClick={() => setHeld((value) => !value)}>{held ? '자동 진행 재개' : '결과 계속 보기'}</button>}
       </div>
     </div>
   );
@@ -154,7 +165,7 @@ export function DevPanel(): JSX.Element | null {
   useGameStore((s) => s.revision);
   if (!devMode || !match) return null;
 
-  const matches = ACTIVE_UNITS.filter((u) => u.nameKo.includes(unitQuery)).slice(0, 5);
+  const matches = getSeasonUnits(match.seasonId).filter((u) => u.nameKo.includes(unitQuery)).slice(0, 5);
 
   return (
     <div className={`panel dev-panel scroll${collapsed ? ' collapsed' : ''}`}>

@@ -1,0 +1,443 @@
+{
+  "format": "uft-baked-frames-v1",
+  "scale": 0.40625,
+  "anchor": [
+    64,
+    110
+  ],
+  "runtimeSha256": "0795c0572820a8476eb80207e8a5ea130c7533b391f5cc7660554861b3d12a1e",
+  "frames": [
+    {
+      "frame": 0,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/production-144/rose_kingdom/alpha.png",
+      "sourceSha256": "8f8836cf4cc718c0e0dcf3a9b0e6a7cd9b45e7223f3d5be929f356e2b1c0587a",
+      "crop": [
+        59,
+        19,
+        218,
+        256
+      ],
+      "destination": [
+        31,
+        14,
+        65,
+        96
+      ]
+    },
+    {
+      "frame": 1,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/production-144/rose_kingdom/alpha.png",
+      "sourceSha256": "8f8836cf4cc718c0e0dcf3a9b0e6a7cd9b45e7223f3d5be929f356e2b1c0587a",
+      "crop": [
+        307,
+        16,
+        468,
+        256
+      ],
+      "destination": [
+        159,
+        12,
+        65,
+        98
+      ]
+    },
+    {
+      "frame": 2,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/production-144/rose_kingdom/alpha.png",
+      "sourceSha256": "8f8836cf4cc718c0e0dcf3a9b0e6a7cd9b45e7223f3d5be929f356e2b1c0587a",
+      "crop": [
+        551,
+        16,
+        712,
+        256
+      ],
+      "destination": [
+        287,
+        12,
+        65,
+        98
+      ]
+    },
+    {
+      "frame": 3,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/production-144/rose_kingdom/alpha.png",
+      "sourceSha256": "8f8836cf4cc718c0e0dcf3a9b0e6a7cd9b45e7223f3d5be929f356e2b1c0587a",
+      "crop": [
+        804,
+        17,
+        957,
+        256
+      ],
+      "destination": [
+        417,
+        13,
+        62,
+        97
+      ]
+    },
+    {
+      "frame": 4,
+      "sourceFrame": 4,
+      "source": "docs/art-source/motions/production-144/rose_kingdom/alpha.png",
+      "sourceSha256": "8f8836cf4cc718c0e0dcf3a9b0e6a7cd9b45e7223f3d5be929f356e2b1c0587a",
+      "crop": [
+        17,
+        280,
+        223,
+        508
+      ],
+      "destination": [
+        22,
+        145,
+        84,
+        93
+      ]
+    },
+    {
+      "frame": 5,
+      "sourceFrame": 5,
+      "source": "docs/art-source/motions/production-144/rose_kingdom/alpha.png",
+      "sourceSha256": "8f8836cf4cc718c0e0dcf3a9b0e6a7cd9b45e7223f3d5be929f356e2b1c0587a",
+      "crop": [
+        277,
+        281,
+        478,
+        505
+      ],
+      "destination": [
+        151,
+        147,
+        82,
+        91
+      ]
+    },
+    {
+      "frame": 6,
+      "sourceFrame": 6,
+      "source": "docs/art-source/motions/production-144/rose_kingdom/alpha.png",
+      "sourceSha256": "8f8836cf4cc718c0e0dcf3a9b0e6a7cd9b45e7223f3d5be929f356e2b1c0587a",
+      "crop": [
+        519,
+        282,
+        733,
+        504
+      ],
+      "destination": [
+        276,
+        148,
+        87,
+        90
+      ]
+    },
+    {
+      "frame": 7,
+      "sourceFrame": 7,
+      "source": "docs/art-source/motions/production-144/rose_kingdom/alpha.png",
+      "sourceSha256": "8f8836cf4cc718c0e0dcf3a9b0e6a7cd9b45e7223f3d5be929f356e2b1c0587a",
+      "crop": [
+        776,
+        284,
+        982,
+        505
+      ],
+      "destination": [
+        406,
+        148,
+        84,
+        90
+      ]
+    },
+    {
+      "frame": 8,
+      "sourceFrame": 8,
+      "source": "docs/art-source/motions/production-144/rose_kingdom/alpha.png",
+      "sourceSha256": "8f8836cf4cc718c0e0dcf3a9b0e6a7cd9b45e7223f3d5be929f356e2b1c0587a",
+      "crop": [
+        33,
+        526,
+        218,
+        758
+      ],
+      "destination": [
+        26,
+        272,
+        75,
+        94
+      ]
+    },
+    {
+      "frame": 9,
+      "sourceFrame": 9,
+      "source": "docs/art-source/motions/production-144/rose_kingdom/alpha.png",
+      "sourceSha256": "8f8836cf4cc718c0e0dcf3a9b0e6a7cd9b45e7223f3d5be929f356e2b1c0587a",
+      "crop": [
+        271,
+        525,
+        456,
+        758
+      ],
+      "destination": [
+        154,
+        271,
+        75,
+        95
+      ]
+    },
+    {
+      "frame": 10,
+      "sourceFrame": 10,
+      "source": "docs/art-source/motions/production-144/rose_kingdom/alpha.png",
+      "sourceSha256": "8f8836cf4cc718c0e0dcf3a9b0e6a7cd9b45e7223f3d5be929f356e2b1c0587a",
+      "crop": [
+        500,
+        530,
+        766,
+        759
+      ],
+      "destination": [
+        266,
+        273,
+        108,
+        93
+      ]
+    },
+    {
+      "frame": 11,
+      "sourceFrame": 11,
+      "source": "docs/art-source/motions/production-144/rose_kingdom/alpha.png",
+      "sourceSha256": "8f8836cf4cc718c0e0dcf3a9b0e6a7cd9b45e7223f3d5be929f356e2b1c0587a",
+      "crop": [
+        804,
+        528,
+        967,
+        759
+      ],
+      "destination": [
+        415,
+        272,
+        66,
+        94
+      ]
+    },
+    {
+      "frame": 12,
+      "sourceFrame": 12,
+      "source": "docs/art-source/motions/production-144/rose_kingdom/alpha.png",
+      "sourceSha256": "8f8836cf4cc718c0e0dcf3a9b0e6a7cd9b45e7223f3d5be929f356e2b1c0587a",
+      "crop": [
+        29,
+        809,
+        238,
+        969
+      ],
+      "destination": [
+        21,
+        429,
+        85,
+        65
+      ]
+    },
+    {
+      "frame": 13,
+      "sourceFrame": 13,
+      "source": "docs/art-source/motions/production-144/rose_kingdom/alpha.png",
+      "sourceSha256": "8f8836cf4cc718c0e0dcf3a9b0e6a7cd9b45e7223f3d5be929f356e2b1c0587a",
+      "crop": [
+        268,
+        802,
+        493,
+        969
+      ],
+      "destination": [
+        146,
+        426,
+        91,
+        68
+      ]
+    },
+    {
+      "frame": 14,
+      "sourceFrame": 14,
+      "source": "docs/art-source/motions/production-144/rose_kingdom/alpha.png",
+      "sourceSha256": "8f8836cf4cc718c0e0dcf3a9b0e6a7cd9b45e7223f3d5be929f356e2b1c0587a",
+      "crop": [
+        517,
+        823,
+        767,
+        957
+      ],
+      "destination": [
+        269,
+        440,
+        102,
+        54
+      ]
+    },
+    {
+      "frame": 15,
+      "sourceFrame": 15,
+      "source": "docs/art-source/motions/production-144/rose_kingdom/alpha.png",
+      "sourceSha256": "8f8836cf4cc718c0e0dcf3a9b0e6a7cd9b45e7223f3d5be929f356e2b1c0587a",
+      "crop": [
+        783,
+        780,
+        994,
+        969
+      ],
+      "destination": [
+        405,
+        417,
+        86,
+        77
+      ]
+    },
+    {
+      "frame": 16,
+      "sourceFrame": 16,
+      "source": "docs/art-source/motions/production-144/rose_kingdom/alpha.png",
+      "sourceSha256": "8f8836cf4cc718c0e0dcf3a9b0e6a7cd9b45e7223f3d5be929f356e2b1c0587a",
+      "crop": [
+        44,
+        1003,
+        214,
+        1219
+      ],
+      "destination": [
+        29,
+        534,
+        69,
+        88
+      ]
+    },
+    {
+      "frame": 17,
+      "sourceFrame": 17,
+      "source": "docs/art-source/motions/production-144/rose_kingdom/alpha.png",
+      "sourceSha256": "8f8836cf4cc718c0e0dcf3a9b0e6a7cd9b45e7223f3d5be929f356e2b1c0587a",
+      "crop": [
+        278,
+        1038,
+        475,
+        1218
+      ],
+      "destination": [
+        152,
+        549,
+        80,
+        73
+      ]
+    },
+    {
+      "frame": 18,
+      "sourceFrame": 18,
+      "source": "docs/art-source/motions/production-144/rose_kingdom/alpha.png",
+      "sourceSha256": "8f8836cf4cc718c0e0dcf3a9b0e6a7cd9b45e7223f3d5be929f356e2b1c0587a",
+      "crop": [
+        529,
+        1044,
+        750,
+        1219
+      ],
+      "destination": [
+        275,
+        551,
+        90,
+        71
+      ]
+    },
+    {
+      "frame": 19,
+      "sourceFrame": 19,
+      "source": "docs/art-source/motions/production-144/rose_kingdom/alpha.png",
+      "sourceSha256": "8f8836cf4cc718c0e0dcf3a9b0e6a7cd9b45e7223f3d5be929f356e2b1c0587a",
+      "crop": [
+        780,
+        1097,
+        1023,
+        1212
+      ],
+      "destination": [
+        398,
+        575,
+        99,
+        47
+      ]
+    },
+    {
+      "frame": 20,
+      "sourceFrame": 20,
+      "source": "docs/art-source/motions/production-144/rose_kingdom/alpha.png",
+      "sourceSha256": "8f8836cf4cc718c0e0dcf3a9b0e6a7cd9b45e7223f3d5be929f356e2b1c0587a",
+      "crop": [
+        58,
+        1244,
+        208,
+        1498
+      ],
+      "destination": [
+        33,
+        647,
+        61,
+        103
+      ]
+    },
+    {
+      "frame": 21,
+      "sourceFrame": 21,
+      "source": "docs/art-source/motions/production-144/rose_kingdom/alpha.png",
+      "sourceSha256": "8f8836cf4cc718c0e0dcf3a9b0e6a7cd9b45e7223f3d5be929f356e2b1c0587a",
+      "crop": [
+        306,
+        1247,
+        467,
+        1499
+      ],
+      "destination": [
+        159,
+        648,
+        65,
+        102
+      ]
+    },
+    {
+      "frame": 22,
+      "sourceFrame": 22,
+      "source": "docs/art-source/motions/production-144/rose_kingdom/alpha.png",
+      "sourceSha256": "8f8836cf4cc718c0e0dcf3a9b0e6a7cd9b45e7223f3d5be929f356e2b1c0587a",
+      "crop": [
+        561,
+        1244,
+        724,
+        1499
+      ],
+      "destination": [
+        287,
+        646,
+        66,
+        104
+      ]
+    },
+    {
+      "frame": 23,
+      "sourceFrame": 23,
+      "source": "docs/art-source/motions/production-144/rose_kingdom/alpha.png",
+      "sourceSha256": "8f8836cf4cc718c0e0dcf3a9b0e6a7cd9b45e7223f3d5be929f356e2b1c0587a",
+      "crop": [
+        810,
+        1244,
+        964,
+        1500
+      ],
+      "destination": [
+        416,
+        646,
+        63,
+        104
+      ]
+    }
+  ]
+}

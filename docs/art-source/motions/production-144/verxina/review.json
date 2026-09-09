@@ -1,0 +1,12 @@
+{
+  "approved": true,
+  "source": "alpha.png",
+  "skillReview": "원거리 손짓 발사. 광역 폭발: 적 무리 조준 → 팔을 모아 응축 → 양팔 방출 → 회복. 남색 긴 머리, 흰 앞머리, 민트 장식과 비대칭 재킷 유지. 치유/돌진 없음.",
+  "reviewedAt": "2026-09-09",
+  "checks": [
+    "Race costume and identity",
+    "24 poses with correct action rows",
+    "actual skill target and effect",
+    "transparent RGBA"
+  ]
+}

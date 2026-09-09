@@ -1,0 +1,443 @@
+{
+  "format": "uft-baked-frames-v1",
+  "scale": 0.4663677130044843,
+  "anchor": [
+    64,
+    110
+  ],
+  "runtimeSha256": "18e0d6fc52a3ba77f2bd77d679e23a5f31da9efa31ef8d39c2816806e38178c8",
+  "frames": [
+    {
+      "frame": 0,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/production-144/haru_urara/alpha.png",
+      "sourceSha256": "65e088e28baec908662ef9f6c5f19e7c7a5ea666c73f747898df57de3c8c144b",
+      "crop": [
+        66,
+        45,
+        196,
+        256
+      ],
+      "destination": [
+        33,
+        12,
+        61,
+        98
+      ]
+    },
+    {
+      "frame": 1,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/production-144/haru_urara/alpha.png",
+      "sourceSha256": "65e088e28baec908662ef9f6c5f19e7c7a5ea666c73f747898df57de3c8c144b",
+      "crop": [
+        320,
+        44,
+        453,
+        256
+      ],
+      "destination": [
+        161,
+        11,
+        62,
+        99
+      ]
+    },
+    {
+      "frame": 2,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/production-144/haru_urara/alpha.png",
+      "sourceSha256": "65e088e28baec908662ef9f6c5f19e7c7a5ea666c73f747898df57de3c8c144b",
+      "crop": [
+        571,
+        43,
+        698,
+        256
+      ],
+      "destination": [
+        290,
+        11,
+        59,
+        99
+      ]
+    },
+    {
+      "frame": 3,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/production-144/haru_urara/alpha.png",
+      "sourceSha256": "65e088e28baec908662ef9f6c5f19e7c7a5ea666c73f747898df57de3c8c144b",
+      "crop": [
+        813,
+        45,
+        940,
+        256
+      ],
+      "destination": [
+        418,
+        12,
+        59,
+        98
+      ]
+    },
+    {
+      "frame": 4,
+      "sourceFrame": 4,
+      "source": "docs/art-source/motions/production-144/haru_urara/alpha.png",
+      "sourceSha256": "65e088e28baec908662ef9f6c5f19e7c7a5ea666c73f747898df57de3c8c144b",
+      "crop": [
+        46,
+        287,
+        210,
+        498
+      ],
+      "destination": [
+        26,
+        140,
+        76,
+        98
+      ]
+    },
+    {
+      "frame": 5,
+      "sourceFrame": 5,
+      "source": "docs/art-source/motions/production-144/haru_urara/alpha.png",
+      "sourceSha256": "65e088e28baec908662ef9f6c5f19e7c7a5ea666c73f747898df57de3c8c144b",
+      "crop": [
+        305,
+        286,
+        467,
+        491
+      ],
+      "destination": [
+        154,
+        142,
+        76,
+        96
+      ]
+    },
+    {
+      "frame": 6,
+      "sourceFrame": 6,
+      "source": "docs/art-source/motions/production-144/haru_urara/alpha.png",
+      "sourceSha256": "65e088e28baec908662ef9f6c5f19e7c7a5ea666c73f747898df57de3c8c144b",
+      "crop": [
+        547,
+        291,
+        710,
+        499
+      ],
+      "destination": [
+        282,
+        141,
+        76,
+        97
+      ]
+    },
+    {
+      "frame": 7,
+      "sourceFrame": 7,
+      "source": "docs/art-source/motions/production-144/haru_urara/alpha.png",
+      "sourceSha256": "65e088e28baec908662ef9f6c5f19e7c7a5ea666c73f747898df57de3c8c144b",
+      "crop": [
+        810,
+        289,
+        970,
+        495
+      ],
+      "destination": [
+        410,
+        142,
+        75,
+        96
+      ]
+    },
+    {
+      "frame": 8,
+      "sourceFrame": 8,
+      "source": "docs/art-source/motions/production-144/haru_urara/alpha.png",
+      "sourceSha256": "65e088e28baec908662ef9f6c5f19e7c7a5ea666c73f747898df57de3c8c144b",
+      "crop": [
+        52,
+        530,
+        222,
+        743
+      ],
+      "destination": [
+        24,
+        267,
+        79,
+        99
+      ]
+    },
+    {
+      "frame": 9,
+      "sourceFrame": 9,
+      "source": "docs/art-source/motions/production-144/haru_urara/alpha.png",
+      "sourceSha256": "65e088e28baec908662ef9f6c5f19e7c7a5ea666c73f747898df57de3c8c144b",
+      "crop": [
+        307,
+        525,
+        444,
+        744
+      ],
+      "destination": [
+        160,
+        264,
+        64,
+        102
+      ]
+    },
+    {
+      "frame": 10,
+      "sourceFrame": 10,
+      "source": "docs/art-source/motions/production-144/haru_urara/alpha.png",
+      "sourceSha256": "65e088e28baec908662ef9f6c5f19e7c7a5ea666c73f747898df57de3c8c144b",
+      "crop": [
+        552,
+        530,
+        720,
+        744
+      ],
+      "destination": [
+        281,
+        266,
+        78,
+        100
+      ]
+    },
+    {
+      "frame": 11,
+      "sourceFrame": 11,
+      "source": "docs/art-source/motions/production-144/haru_urara/alpha.png",
+      "sourceSha256": "65e088e28baec908662ef9f6c5f19e7c7a5ea666c73f747898df57de3c8c144b",
+      "crop": [
+        813,
+        528,
+        954,
+        744
+      ],
+      "destination": [
+        415,
+        265,
+        66,
+        101
+      ]
+    },
+    {
+      "frame": 12,
+      "sourceFrame": 12,
+      "source": "docs/art-source/motions/production-144/haru_urara/alpha.png",
+      "sourceSha256": "65e088e28baec908662ef9f6c5f19e7c7a5ea666c73f747898df57de3c8c144b",
+      "crop": [
+        46,
+        782,
+        223,
+        999
+      ],
+      "destination": [
+        22,
+        393,
+        83,
+        101
+      ]
+    },
+    {
+      "frame": 13,
+      "sourceFrame": 13,
+      "source": "docs/art-source/motions/production-144/haru_urara/alpha.png",
+      "sourceSha256": "65e088e28baec908662ef9f6c5f19e7c7a5ea666c73f747898df57de3c8c144b",
+      "crop": [
+        310,
+        784,
+        452,
+        1000
+      ],
+      "destination": [
+        159,
+        393,
+        66,
+        101
+      ]
+    },
+    {
+      "frame": 14,
+      "sourceFrame": 14,
+      "source": "docs/art-source/motions/production-144/haru_urara/alpha.png",
+      "sourceSha256": "65e088e28baec908662ef9f6c5f19e7c7a5ea666c73f747898df57de3c8c144b",
+      "crop": [
+        558,
+        782,
+        723,
+        1000
+      ],
+      "destination": [
+        281,
+        392,
+        77,
+        102
+      ]
+    },
+    {
+      "frame": 15,
+      "sourceFrame": 15,
+      "source": "docs/art-source/motions/production-144/haru_urara/alpha.png",
+      "sourceSha256": "65e088e28baec908662ef9f6c5f19e7c7a5ea666c73f747898df57de3c8c144b",
+      "crop": [
+        812,
+        785,
+        952,
+        1000
+      ],
+      "destination": [
+        415,
+        394,
+        65,
+        100
+      ]
+    },
+    {
+      "frame": 16,
+      "sourceFrame": 16,
+      "source": "docs/art-source/motions/production-144/haru_urara/alpha.png",
+      "sourceSha256": "65e088e28baec908662ef9f6c5f19e7c7a5ea666c73f747898df57de3c8c144b",
+      "crop": [
+        51,
+        1043,
+        206,
+        1240
+      ],
+      "destination": [
+        28,
+        530,
+        72,
+        92
+      ]
+    },
+    {
+      "frame": 17,
+      "sourceFrame": 17,
+      "source": "docs/art-source/motions/production-144/haru_urara/alpha.png",
+      "sourceSha256": "65e088e28baec908662ef9f6c5f19e7c7a5ea666c73f747898df57de3c8c144b",
+      "crop": [
+        301,
+        1070,
+        468,
+        1234
+      ],
+      "destination": [
+        153,
+        546,
+        78,
+        76
+      ]
+    },
+    {
+      "frame": 18,
+      "sourceFrame": 18,
+      "source": "docs/art-source/motions/production-144/haru_urara/alpha.png",
+      "sourceSha256": "65e088e28baec908662ef9f6c5f19e7c7a5ea666c73f747898df57de3c8c144b",
+      "crop": [
+        551,
+        1079,
+        723,
+        1231
+      ],
+      "destination": [
+        280,
+        551,
+        80,
+        71
+      ]
+    },
+    {
+      "frame": 19,
+      "sourceFrame": 19,
+      "source": "docs/art-source/motions/production-144/haru_urara/alpha.png",
+      "sourceSha256": "65e088e28baec908662ef9f6c5f19e7c7a5ea666c73f747898df57de3c8c144b",
+      "crop": [
+        801,
+        1136,
+        994,
+        1230
+      ],
+      "destination": [
+        403,
+        578,
+        90,
+        44
+      ]
+    },
+    {
+      "frame": 20,
+      "sourceFrame": 20,
+      "source": "docs/art-source/motions/production-144/haru_urara/alpha.png",
+      "sourceSha256": "65e088e28baec908662ef9f6c5f19e7c7a5ea666c73f747898df57de3c8c144b",
+      "crop": [
+        55,
+        1269,
+        191,
+        1492
+      ],
+      "destination": [
+        32,
+        646,
+        63,
+        104
+      ]
+    },
+    {
+      "frame": 21,
+      "sourceFrame": 21,
+      "source": "docs/art-source/motions/production-144/haru_urara/alpha.png",
+      "sourceSha256": "65e088e28baec908662ef9f6c5f19e7c7a5ea666c73f747898df57de3c8c144b",
+      "crop": [
+        316,
+        1268,
+        457,
+        1481
+      ],
+      "destination": [
+        159,
+        651,
+        66,
+        99
+      ]
+    },
+    {
+      "frame": 22,
+      "sourceFrame": 22,
+      "source": "docs/art-source/motions/production-144/haru_urara/alpha.png",
+      "sourceSha256": "65e088e28baec908662ef9f6c5f19e7c7a5ea666c73f747898df57de3c8c144b",
+      "crop": [
+        562,
+        1269,
+        698,
+        1489
+      ],
+      "destination": [
+        288,
+        647,
+        63,
+        103
+      ]
+    },
+    {
+      "frame": 23,
+      "sourceFrame": 23,
+      "source": "docs/art-source/motions/production-144/haru_urara/alpha.png",
+      "sourceSha256": "65e088e28baec908662ef9f6c5f19e7c7a5ea666c73f747898df57de3c8c144b",
+      "crop": [
+        810,
+        1268,
+        942,
+        1489
+      ],
+      "destination": [
+        417,
+        647,
+        62,
+        103
+      ]
+    }
+  ]
+}

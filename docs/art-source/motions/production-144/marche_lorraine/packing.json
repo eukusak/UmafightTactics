@@ -1,0 +1,443 @@
+{
+  "format": "uft-baked-frames-v1",
+  "scale": 0.3939393939393939,
+  "anchor": [
+    64,
+    110
+  ],
+  "runtimeSha256": "0dd8bd06ffa484136f04113d1462d1a872ccac1c7917833fea63577c9148f689",
+  "frames": [
+    {
+      "frame": 0,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/production-144/marche_lorraine/alpha.png",
+      "sourceSha256": "923a259ca60ee5d8d5c6f91c2a133790d79e76c3bd55a59e8f075834e95444df",
+      "crop": [
+        51,
+        7,
+        241,
+        257
+      ],
+      "destination": [
+        26,
+        12,
+        75,
+        98
+      ]
+    },
+    {
+      "frame": 1,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/production-144/marche_lorraine/alpha.png",
+      "sourceSha256": "923a259ca60ee5d8d5c6f91c2a133790d79e76c3bd55a59e8f075834e95444df",
+      "crop": [
+        302,
+        10,
+        492,
+        257
+      ],
+      "destination": [
+        154,
+        13,
+        75,
+        97
+      ]
+    },
+    {
+      "frame": 2,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/production-144/marche_lorraine/alpha.png",
+      "sourceSha256": "923a259ca60ee5d8d5c6f91c2a133790d79e76c3bd55a59e8f075834e95444df",
+      "crop": [
+        552,
+        4,
+        741,
+        257
+      ],
+      "destination": [
+        283,
+        10,
+        74,
+        100
+      ]
+    },
+    {
+      "frame": 3,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/production-144/marche_lorraine/alpha.png",
+      "sourceSha256": "923a259ca60ee5d8d5c6f91c2a133790d79e76c3bd55a59e8f075834e95444df",
+      "crop": [
+        808,
+        9,
+        992,
+        257
+      ],
+      "destination": [
+        412,
+        12,
+        72,
+        98
+      ]
+    },
+    {
+      "frame": 4,
+      "sourceFrame": 4,
+      "source": "docs/art-source/motions/production-144/marche_lorraine/alpha.png",
+      "sourceSha256": "923a259ca60ee5d8d5c6f91c2a133790d79e76c3bd55a59e8f075834e95444df",
+      "crop": [
+        28,
+        259,
+        253,
+        509
+      ],
+      "destination": [
+        19,
+        140,
+        89,
+        98
+      ]
+    },
+    {
+      "frame": 5,
+      "sourceFrame": 5,
+      "source": "docs/art-source/motions/production-144/marche_lorraine/alpha.png",
+      "sourceSha256": "923a259ca60ee5d8d5c6f91c2a133790d79e76c3bd55a59e8f075834e95444df",
+      "crop": [
+        278,
+        262,
+        506,
+        509
+      ],
+      "destination": [
+        147,
+        141,
+        90,
+        97
+      ]
+    },
+    {
+      "frame": 6,
+      "sourceFrame": 6,
+      "source": "docs/art-source/motions/production-144/marche_lorraine/alpha.png",
+      "sourceSha256": "923a259ca60ee5d8d5c6f91c2a133790d79e76c3bd55a59e8f075834e95444df",
+      "crop": [
+        536,
+        260,
+        751,
+        508
+      ],
+      "destination": [
+        277,
+        140,
+        85,
+        98
+      ]
+    },
+    {
+      "frame": 7,
+      "sourceFrame": 7,
+      "source": "docs/art-source/motions/production-144/marche_lorraine/alpha.png",
+      "sourceSha256": "923a259ca60ee5d8d5c6f91c2a133790d79e76c3bd55a59e8f075834e95444df",
+      "crop": [
+        789,
+        261,
+        1012,
+        510
+      ],
+      "destination": [
+        404,
+        140,
+        88,
+        98
+      ]
+    },
+    {
+      "frame": 8,
+      "sourceFrame": 8,
+      "source": "docs/art-source/motions/production-144/marche_lorraine/alpha.png",
+      "sourceSha256": "923a259ca60ee5d8d5c6f91c2a133790d79e76c3bd55a59e8f075834e95444df",
+      "crop": [
+        42,
+        512,
+        252,
+        768
+      ],
+      "destination": [
+        22,
+        265,
+        83,
+        101
+      ]
+    },
+    {
+      "frame": 9,
+      "sourceFrame": 9,
+      "source": "docs/art-source/motions/production-144/marche_lorraine/alpha.png",
+      "sourceSha256": "923a259ca60ee5d8d5c6f91c2a133790d79e76c3bd55a59e8f075834e95444df",
+      "crop": [
+        287,
+        512,
+        480,
+        768
+      ],
+      "destination": [
+        154,
+        265,
+        76,
+        101
+      ]
+    },
+    {
+      "frame": 10,
+      "sourceFrame": 10,
+      "source": "docs/art-source/motions/production-144/marche_lorraine/alpha.png",
+      "sourceSha256": "923a259ca60ee5d8d5c6f91c2a133790d79e76c3bd55a59e8f075834e95444df",
+      "crop": [
+        532,
+        513,
+        752,
+        768
+      ],
+      "destination": [
+        276,
+        266,
+        87,
+        100
+      ]
+    },
+    {
+      "frame": 11,
+      "sourceFrame": 11,
+      "source": "docs/art-source/motions/production-144/marche_lorraine/alpha.png",
+      "sourceSha256": "923a259ca60ee5d8d5c6f91c2a133790d79e76c3bd55a59e8f075834e95444df",
+      "crop": [
+        804,
+        514,
+        984,
+        768
+      ],
+      "destination": [
+        412,
+        266,
+        71,
+        100
+      ]
+    },
+    {
+      "frame": 12,
+      "sourceFrame": 12,
+      "source": "docs/art-source/motions/production-144/marche_lorraine/alpha.png",
+      "sourceSha256": "923a259ca60ee5d8d5c6f91c2a133790d79e76c3bd55a59e8f075834e95444df",
+      "crop": [
+        38,
+        768,
+        256,
+        1032
+      ],
+      "destination": [
+        21,
+        390,
+        86,
+        104
+      ]
+    },
+    {
+      "frame": 13,
+      "sourceFrame": 13,
+      "source": "docs/art-source/motions/production-144/marche_lorraine/alpha.png",
+      "sourceSha256": "923a259ca60ee5d8d5c6f91c2a133790d79e76c3bd55a59e8f075834e95444df",
+      "crop": [
+        301,
+        774,
+        493,
+        1032
+      ],
+      "destination": [
+        154,
+        392,
+        76,
+        102
+      ]
+    },
+    {
+      "frame": 14,
+      "sourceFrame": 14,
+      "source": "docs/art-source/motions/production-144/marche_lorraine/alpha.png",
+      "sourceSha256": "923a259ca60ee5d8d5c6f91c2a133790d79e76c3bd55a59e8f075834e95444df",
+      "crop": [
+        532,
+        777,
+        740,
+        1032
+      ],
+      "destination": [
+        279,
+        394,
+        82,
+        100
+      ]
+    },
+    {
+      "frame": 15,
+      "sourceFrame": 15,
+      "source": "docs/art-source/motions/production-144/marche_lorraine/alpha.png",
+      "sourceSha256": "923a259ca60ee5d8d5c6f91c2a133790d79e76c3bd55a59e8f075834e95444df",
+      "crop": [
+        813,
+        786,
+        990,
+        1032
+      ],
+      "destination": [
+        413,
+        397,
+        70,
+        97
+      ]
+    },
+    {
+      "frame": 16,
+      "sourceFrame": 16,
+      "source": "docs/art-source/motions/production-144/marche_lorraine/alpha.png",
+      "sourceSha256": "923a259ca60ee5d8d5c6f91c2a133790d79e76c3bd55a59e8f075834e95444df",
+      "crop": [
+        51,
+        1041,
+        246,
+        1270
+      ],
+      "destination": [
+        25,
+        532,
+        77,
+        90
+      ]
+    },
+    {
+      "frame": 17,
+      "sourceFrame": 17,
+      "source": "docs/art-source/motions/production-144/marche_lorraine/alpha.png",
+      "sourceSha256": "923a259ca60ee5d8d5c6f91c2a133790d79e76c3bd55a59e8f075834e95444df",
+      "crop": [
+        288,
+        1067,
+        503,
+        1268
+      ],
+      "destination": [
+        149,
+        543,
+        85,
+        79
+      ]
+    },
+    {
+      "frame": 18,
+      "sourceFrame": 18,
+      "source": "docs/art-source/motions/production-144/marche_lorraine/alpha.png",
+      "sourceSha256": "923a259ca60ee5d8d5c6f91c2a133790d79e76c3bd55a59e8f075834e95444df",
+      "crop": [
+        525,
+        1085,
+        742,
+        1267
+      ],
+      "destination": [
+        277,
+        550,
+        85,
+        72
+      ]
+    },
+    {
+      "frame": 19,
+      "sourceFrame": 19,
+      "source": "docs/art-source/motions/production-144/marche_lorraine/alpha.png",
+      "sourceSha256": "923a259ca60ee5d8d5c6f91c2a133790d79e76c3bd55a59e8f075834e95444df",
+      "crop": [
+        769,
+        1148,
+        1022,
+        1263
+      ],
+      "destination": [
+        398,
+        577,
+        100,
+        45
+      ]
+    },
+    {
+      "frame": 20,
+      "sourceFrame": 20,
+      "source": "docs/art-source/motions/production-144/marche_lorraine/alpha.png",
+      "sourceSha256": "923a259ca60ee5d8d5c6f91c2a133790d79e76c3bd55a59e8f075834e95444df",
+      "crop": [
+        46,
+        1276,
+        219,
+        1526
+      ],
+      "destination": [
+        30,
+        652,
+        68,
+        98
+      ]
+    },
+    {
+      "frame": 21,
+      "sourceFrame": 21,
+      "source": "docs/art-source/motions/production-144/marche_lorraine/alpha.png",
+      "sourceSha256": "923a259ca60ee5d8d5c6f91c2a133790d79e76c3bd55a59e8f075834e95444df",
+      "crop": [
+        304,
+        1270,
+        479,
+        1527
+      ],
+      "destination": [
+        157,
+        649,
+        69,
+        101
+      ]
+    },
+    {
+      "frame": 22,
+      "sourceFrame": 22,
+      "source": "docs/art-source/motions/production-144/marche_lorraine/alpha.png",
+      "sourceSha256": "923a259ca60ee5d8d5c6f91c2a133790d79e76c3bd55a59e8f075834e95444df",
+      "crop": [
+        559,
+        1270,
+        729,
+        1527
+      ],
+      "destination": [
+        286,
+        649,
+        67,
+        101
+      ]
+    },
+    {
+      "frame": 23,
+      "sourceFrame": 23,
+      "source": "docs/art-source/motions/production-144/marche_lorraine/alpha.png",
+      "sourceSha256": "923a259ca60ee5d8d5c6f91c2a133790d79e76c3bd55a59e8f075834e95444df",
+      "crop": [
+        808,
+        1276,
+        977,
+        1527
+      ],
+      "destination": [
+        414,
+        651,
+        67,
+        99
+      ]
+    }
+  ]
+}

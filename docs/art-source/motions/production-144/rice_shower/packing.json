@@ -1,0 +1,443 @@
+{
+  "format": "uft-baked-frames-v1",
+  "scale": 0.41434262948207173,
+  "anchor": [
+    64,
+    110
+  ],
+  "runtimeSha256": "490a90475ba1c0effc69338a3f2df7d1906672c56bc9ccb2a7c05c295f34965a",
+  "frames": [
+    {
+      "frame": 0,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/production-144/rice_shower/alpha.png",
+      "sourceSha256": "a2d395e24faae6ae1ec6bdb507420da55d3eca629b1cbf582ccbdce173185f7b",
+      "crop": [
+        57,
+        27,
+        208,
+        278
+      ],
+      "destination": [
+        32,
+        6,
+        63,
+        104
+      ]
+    },
+    {
+      "frame": 1,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/production-144/rice_shower/alpha.png",
+      "sourceSha256": "a2d395e24faae6ae1ec6bdb507420da55d3eca629b1cbf582ccbdce173185f7b",
+      "crop": [
+        319,
+        27,
+        465,
+        278
+      ],
+      "destination": [
+        162,
+        6,
+        60,
+        104
+      ]
+    },
+    {
+      "frame": 2,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/production-144/rice_shower/alpha.png",
+      "sourceSha256": "a2d395e24faae6ae1ec6bdb507420da55d3eca629b1cbf582ccbdce173185f7b",
+      "crop": [
+        570,
+        27,
+        719,
+        278
+      ],
+      "destination": [
+        289,
+        6,
+        62,
+        104
+      ]
+    },
+    {
+      "frame": 3,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/production-144/rice_shower/alpha.png",
+      "sourceSha256": "a2d395e24faae6ae1ec6bdb507420da55d3eca629b1cbf582ccbdce173185f7b",
+      "crop": [
+        830,
+        27,
+        972,
+        278
+      ],
+      "destination": [
+        418,
+        6,
+        59,
+        104
+      ]
+    },
+    {
+      "frame": 4,
+      "sourceFrame": 4,
+      "source": "docs/art-source/motions/production-144/rice_shower/alpha.png",
+      "sourceSha256": "a2d395e24faae6ae1ec6bdb507420da55d3eca629b1cbf582ccbdce173185f7b",
+      "crop": [
+        45,
+        296,
+        223,
+        528
+      ],
+      "destination": [
+        27,
+        142,
+        74,
+        96
+      ]
+    },
+    {
+      "frame": 5,
+      "sourceFrame": 5,
+      "source": "docs/art-source/motions/production-144/rice_shower/alpha.png",
+      "sourceSha256": "a2d395e24faae6ae1ec6bdb507420da55d3eca629b1cbf582ccbdce173185f7b",
+      "crop": [
+        304,
+        298,
+        486,
+        529
+      ],
+      "destination": [
+        154,
+        142,
+        75,
+        96
+      ]
+    },
+    {
+      "frame": 6,
+      "sourceFrame": 6,
+      "source": "docs/art-source/motions/production-144/rice_shower/alpha.png",
+      "sourceSha256": "a2d395e24faae6ae1ec6bdb507420da55d3eca629b1cbf582ccbdce173185f7b",
+      "crop": [
+        562,
+        299,
+        743,
+        529
+      ],
+      "destination": [
+        282,
+        143,
+        75,
+        95
+      ]
+    },
+    {
+      "frame": 7,
+      "sourceFrame": 7,
+      "source": "docs/art-source/motions/production-144/rice_shower/alpha.png",
+      "sourceSha256": "a2d395e24faae6ae1ec6bdb507420da55d3eca629b1cbf582ccbdce173185f7b",
+      "crop": [
+        816,
+        299,
+        991,
+        529
+      ],
+      "destination": [
+        411,
+        143,
+        73,
+        95
+      ]
+    },
+    {
+      "frame": 8,
+      "sourceFrame": 8,
+      "source": "docs/art-source/motions/production-144/rice_shower/alpha.png",
+      "sourceSha256": "a2d395e24faae6ae1ec6bdb507420da55d3eca629b1cbf582ccbdce173185f7b",
+      "crop": [
+        50,
+        538,
+        207,
+        776
+      ],
+      "destination": [
+        31,
+        267,
+        65,
+        99
+      ]
+    },
+    {
+      "frame": 9,
+      "sourceFrame": 9,
+      "source": "docs/art-source/motions/production-144/rice_shower/alpha.png",
+      "sourceSha256": "a2d395e24faae6ae1ec6bdb507420da55d3eca629b1cbf582ccbdce173185f7b",
+      "crop": [
+        314,
+        534,
+        473,
+        776
+      ],
+      "destination": [
+        159,
+        266,
+        66,
+        100
+      ]
+    },
+    {
+      "frame": 10,
+      "sourceFrame": 10,
+      "source": "docs/art-source/motions/production-144/rice_shower/alpha.png",
+      "sourceSha256": "a2d395e24faae6ae1ec6bdb507420da55d3eca629b1cbf582ccbdce173185f7b",
+      "crop": [
+        559,
+        535,
+        768,
+        776
+      ],
+      "destination": [
+        276,
+        266,
+        87,
+        100
+      ]
+    },
+    {
+      "frame": 11,
+      "sourceFrame": 11,
+      "source": "docs/art-source/motions/production-144/rice_shower/alpha.png",
+      "sourceSha256": "a2d395e24faae6ae1ec6bdb507420da55d3eca629b1cbf582ccbdce173185f7b",
+      "crop": [
+        824,
+        543,
+        981,
+        776
+      ],
+      "destination": [
+        415,
+        269,
+        65,
+        97
+      ]
+    },
+    {
+      "frame": 12,
+      "sourceFrame": 12,
+      "source": "docs/art-source/motions/production-144/rice_shower/alpha.png",
+      "sourceSha256": "a2d395e24faae6ae1ec6bdb507420da55d3eca629b1cbf582ccbdce173185f7b",
+      "crop": [
+        51,
+        795,
+        213,
+        1039
+      ],
+      "destination": [
+        30,
+        393,
+        67,
+        101
+      ]
+    },
+    {
+      "frame": 13,
+      "sourceFrame": 13,
+      "source": "docs/art-source/motions/production-144/rice_shower/alpha.png",
+      "sourceSha256": "a2d395e24faae6ae1ec6bdb507420da55d3eca629b1cbf582ccbdce173185f7b",
+      "crop": [
+        311,
+        792,
+        478,
+        1039
+      ],
+      "destination": [
+        157,
+        392,
+        69,
+        102
+      ]
+    },
+    {
+      "frame": 14,
+      "sourceFrame": 14,
+      "source": "docs/art-source/motions/production-144/rice_shower/alpha.png",
+      "sourceSha256": "a2d395e24faae6ae1ec6bdb507420da55d3eca629b1cbf582ccbdce173185f7b",
+      "crop": [
+        555,
+        790,
+        768,
+        1039
+      ],
+      "destination": [
+        276,
+        391,
+        88,
+        103
+      ]
+    },
+    {
+      "frame": 15,
+      "sourceFrame": 15,
+      "source": "docs/art-source/motions/production-144/rice_shower/alpha.png",
+      "sourceSha256": "a2d395e24faae6ae1ec6bdb507420da55d3eca629b1cbf582ccbdce173185f7b",
+      "crop": [
+        819,
+        798,
+        984,
+        1039
+      ],
+      "destination": [
+        414,
+        394,
+        68,
+        100
+      ]
+    },
+    {
+      "frame": 16,
+      "sourceFrame": 16,
+      "source": "docs/art-source/motions/production-144/rice_shower/alpha.png",
+      "sourceSha256": "a2d395e24faae6ae1ec6bdb507420da55d3eca629b1cbf582ccbdce173185f7b",
+      "crop": [
+        49,
+        1057,
+        207,
+        1271
+      ],
+      "destination": [
+        31,
+        533,
+        65,
+        89
+      ]
+    },
+    {
+      "frame": 17,
+      "sourceFrame": 17,
+      "source": "docs/art-source/motions/production-144/rice_shower/alpha.png",
+      "sourceSha256": "a2d395e24faae6ae1ec6bdb507420da55d3eca629b1cbf582ccbdce173185f7b",
+      "crop": [
+        307,
+        1074,
+        498,
+        1268
+      ],
+      "destination": [
+        152,
+        542,
+        79,
+        80
+      ]
+    },
+    {
+      "frame": 18,
+      "sourceFrame": 18,
+      "source": "docs/art-source/motions/production-144/rice_shower/alpha.png",
+      "sourceSha256": "a2d395e24faae6ae1ec6bdb507420da55d3eca629b1cbf582ccbdce173185f7b",
+      "crop": [
+        543,
+        1105,
+        730,
+        1265
+      ],
+      "destination": [
+        281,
+        556,
+        77,
+        66
+      ]
+    },
+    {
+      "frame": 19,
+      "sourceFrame": 19,
+      "source": "docs/art-source/motions/production-144/rice_shower/alpha.png",
+      "sourceSha256": "a2d395e24faae6ae1ec6bdb507420da55d3eca629b1cbf582ccbdce173185f7b",
+      "crop": [
+        791,
+        1166,
+        1000,
+        1267
+      ],
+      "destination": [
+        404,
+        580,
+        87,
+        42
+      ]
+    },
+    {
+      "frame": 20,
+      "sourceFrame": 20,
+      "source": "docs/art-source/motions/production-144/rice_shower/alpha.png",
+      "sourceSha256": "a2d395e24faae6ae1ec6bdb507420da55d3eca629b1cbf582ccbdce173185f7b",
+      "crop": [
+        66,
+        1289,
+        206,
+        1525
+      ],
+      "destination": [
+        35,
+        652,
+        58,
+        98
+      ]
+    },
+    {
+      "frame": 21,
+      "sourceFrame": 21,
+      "source": "docs/art-source/motions/production-144/rice_shower/alpha.png",
+      "sourceSha256": "a2d395e24faae6ae1ec6bdb507420da55d3eca629b1cbf582ccbdce173185f7b",
+      "crop": [
+        327,
+        1284,
+        470,
+        1526
+      ],
+      "destination": [
+        162,
+        650,
+        59,
+        100
+      ]
+    },
+    {
+      "frame": 22,
+      "sourceFrame": 22,
+      "source": "docs/art-source/motions/production-144/rice_shower/alpha.png",
+      "sourceSha256": "a2d395e24faae6ae1ec6bdb507420da55d3eca629b1cbf582ccbdce173185f7b",
+      "crop": [
+        565,
+        1296,
+        741,
+        1525
+      ],
+      "destination": [
+        283,
+        655,
+        73,
+        95
+      ]
+    },
+    {
+      "frame": 23,
+      "sourceFrame": 23,
+      "source": "docs/art-source/motions/production-144/rice_shower/alpha.png",
+      "sourceSha256": "a2d395e24faae6ae1ec6bdb507420da55d3eca629b1cbf582ccbdce173185f7b",
+      "crop": [
+        830,
+        1285,
+        977,
+        1527
+      ],
+      "destination": [
+        417,
+        650,
+        61,
+        100
+      ]
+    }
+  ]
+}

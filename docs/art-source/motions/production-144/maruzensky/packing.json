@@ -1,0 +1,443 @@
+{
+  "format": "uft-baked-frames-v1",
+  "scale": 0.43333333333333335,
+  "anchor": [
+    64,
+    110
+  ],
+  "runtimeSha256": "8fc149b1a411a66a5e09b8cf70456c00a8b352e3e1ddd9d62fc98a36dac8888d",
+  "frames": [
+    {
+      "frame": 0,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/production-144/maruzensky/clean-alpha.png",
+      "sourceSha256": "08811c7c894c2bd28313a534d2d56adc45b04eef809cfe7618e381128b897cde",
+      "crop": [
+        48,
+        24,
+        204,
+        256
+      ],
+      "destination": [
+        30,
+        9,
+        68,
+        101
+      ]
+    },
+    {
+      "frame": 1,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/production-144/maruzensky/clean-alpha.png",
+      "sourceSha256": "08811c7c894c2bd28313a534d2d56adc45b04eef809cfe7618e381128b897cde",
+      "crop": [
+        298,
+        24,
+        452,
+        256
+      ],
+      "destination": [
+        158,
+        9,
+        67,
+        101
+      ]
+    },
+    {
+      "frame": 2,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/production-144/maruzensky/clean-alpha.png",
+      "sourceSha256": "08811c7c894c2bd28313a534d2d56adc45b04eef809cfe7618e381128b897cde",
+      "crop": [
+        546,
+        24,
+        707,
+        256
+      ],
+      "destination": [
+        285,
+        9,
+        70,
+        101
+      ]
+    },
+    {
+      "frame": 3,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/production-144/maruzensky/clean-alpha.png",
+      "sourceSha256": "08811c7c894c2bd28313a534d2d56adc45b04eef809cfe7618e381128b897cde",
+      "crop": [
+        815,
+        24,
+        971,
+        256
+      ],
+      "destination": [
+        414,
+        9,
+        68,
+        101
+      ]
+    },
+    {
+      "frame": 4,
+      "sourceFrame": 4,
+      "source": "docs/art-source/motions/production-144/maruzensky/clean-alpha.png",
+      "sourceSha256": "08811c7c894c2bd28313a534d2d56adc45b04eef809cfe7618e381128b897cde",
+      "crop": [
+        31,
+        285,
+        224,
+        519
+      ],
+      "destination": [
+        22,
+        137,
+        84,
+        101
+      ]
+    },
+    {
+      "frame": 5,
+      "sourceFrame": 5,
+      "source": "docs/art-source/motions/production-144/maruzensky/clean-alpha.png",
+      "sourceSha256": "08811c7c894c2bd28313a534d2d56adc45b04eef809cfe7618e381128b897cde",
+      "crop": [
+        279,
+        286,
+        482,
+        519
+      ],
+      "destination": [
+        148,
+        137,
+        88,
+        101
+      ]
+    },
+    {
+      "frame": 6,
+      "sourceFrame": 6,
+      "source": "docs/art-source/motions/production-144/maruzensky/clean-alpha.png",
+      "sourceSha256": "08811c7c894c2bd28313a534d2d56adc45b04eef809cfe7618e381128b897cde",
+      "crop": [
+        532,
+        286,
+        736,
+        519
+      ],
+      "destination": [
+        276,
+        137,
+        88,
+        101
+      ]
+    },
+    {
+      "frame": 7,
+      "sourceFrame": 7,
+      "source": "docs/art-source/motions/production-144/maruzensky/clean-alpha.png",
+      "sourceSha256": "08811c7c894c2bd28313a534d2d56adc45b04eef809cfe7618e381128b897cde",
+      "crop": [
+        799,
+        288,
+        998,
+        519
+      ],
+      "destination": [
+        405,
+        138,
+        86,
+        100
+      ]
+    },
+    {
+      "frame": 8,
+      "sourceFrame": 8,
+      "source": "docs/art-source/motions/production-144/maruzensky/clean-alpha.png",
+      "sourceSha256": "08811c7c894c2bd28313a534d2d56adc45b04eef809cfe7618e381128b897cde",
+      "crop": [
+        32,
+        546,
+        240,
+        779
+      ],
+      "destination": [
+        19,
+        265,
+        90,
+        101
+      ]
+    },
+    {
+      "frame": 9,
+      "sourceFrame": 9,
+      "source": "docs/art-source/motions/production-144/maruzensky/clean-alpha.png",
+      "sourceSha256": "08811c7c894c2bd28313a534d2d56adc45b04eef809cfe7618e381128b897cde",
+      "crop": [
+        295,
+        545,
+        476,
+        779
+      ],
+      "destination": [
+        153,
+        265,
+        78,
+        101
+      ]
+    },
+    {
+      "frame": 10,
+      "sourceFrame": 10,
+      "source": "docs/art-source/motions/production-144/maruzensky/clean-alpha.png",
+      "sourceSha256": "08811c7c894c2bd28313a534d2d56adc45b04eef809cfe7618e381128b897cde",
+      "crop": [
+        549,
+        545,
+        759,
+        779
+      ],
+      "destination": [
+        274,
+        265,
+        91,
+        101
+      ]
+    },
+    {
+      "frame": 11,
+      "sourceFrame": 11,
+      "source": "docs/art-source/motions/production-144/maruzensky/clean-alpha.png",
+      "sourceSha256": "08811c7c894c2bd28313a534d2d56adc45b04eef809cfe7618e381128b897cde",
+      "crop": [
+        815,
+        546,
+        985,
+        781
+      ],
+      "destination": [
+        411,
+        264,
+        74,
+        102
+      ]
+    },
+    {
+      "frame": 12,
+      "sourceFrame": 12,
+      "source": "docs/art-source/motions/production-144/maruzensky/clean-alpha.png",
+      "sourceSha256": "08811c7c894c2bd28313a534d2d56adc45b04eef809cfe7618e381128b897cde",
+      "crop": [
+        38,
+        801,
+        213,
+        1041
+      ],
+      "destination": [
+        26,
+        390,
+        76,
+        104
+      ]
+    },
+    {
+      "frame": 13,
+      "sourceFrame": 13,
+      "source": "docs/art-source/motions/production-144/maruzensky/clean-alpha.png",
+      "sourceSha256": "08811c7c894c2bd28313a534d2d56adc45b04eef809cfe7618e381128b897cde",
+      "crop": [
+        281,
+        801,
+        482,
+        1041
+      ],
+      "destination": [
+        148,
+        390,
+        87,
+        104
+      ]
+    },
+    {
+      "frame": 14,
+      "sourceFrame": 14,
+      "source": "docs/art-source/motions/production-144/maruzensky/clean-alpha.png",
+      "sourceSha256": "08811c7c894c2bd28313a534d2d56adc45b04eef809cfe7618e381128b897cde",
+      "crop": [
+        536,
+        801,
+        759,
+        1041
+      ],
+      "destination": [
+        271,
+        390,
+        97,
+        104
+      ]
+    },
+    {
+      "frame": 15,
+      "sourceFrame": 15,
+      "source": "docs/art-source/motions/production-144/maruzensky/clean-alpha.png",
+      "sourceSha256": "08811c7c894c2bd28313a534d2d56adc45b04eef809cfe7618e381128b897cde",
+      "crop": [
+        806,
+        802,
+        975,
+        1041
+      ],
+      "destination": [
+        411,
+        390,
+        73,
+        104
+      ]
+    },
+    {
+      "frame": 16,
+      "sourceFrame": 16,
+      "source": "docs/art-source/motions/production-144/maruzensky/clean-alpha.png",
+      "sourceSha256": "08811c7c894c2bd28313a534d2d56adc45b04eef809cfe7618e381128b897cde",
+      "crop": [
+        41,
+        1071,
+        213,
+        1273
+      ],
+      "destination": [
+        26,
+        534,
+        75,
+        88
+      ]
+    },
+    {
+      "frame": 17,
+      "sourceFrame": 17,
+      "source": "docs/art-source/motions/production-144/maruzensky/clean-alpha.png",
+      "sourceSha256": "08811c7c894c2bd28313a534d2d56adc45b04eef809cfe7618e381128b897cde",
+      "crop": [
+        296,
+        1102,
+        479,
+        1264
+      ],
+      "destination": [
+        152,
+        552,
+        79,
+        70
+      ]
+    },
+    {
+      "frame": 18,
+      "sourceFrame": 18,
+      "source": "docs/art-source/motions/production-144/maruzensky/clean-alpha.png",
+      "sourceSha256": "08811c7c894c2bd28313a534d2d56adc45b04eef809cfe7618e381128b897cde",
+      "crop": [
+        534,
+        1106,
+        733,
+        1263
+      ],
+      "destination": [
+        277,
+        554,
+        86,
+        68
+      ]
+    },
+    {
+      "frame": 19,
+      "sourceFrame": 19,
+      "source": "docs/art-source/motions/production-144/maruzensky/clean-alpha.png",
+      "sourceSha256": "08811c7c894c2bd28313a534d2d56adc45b04eef809cfe7618e381128b897cde",
+      "crop": [
+        784,
+        1158,
+        1007,
+        1259
+      ],
+      "destination": [
+        399,
+        578,
+        97,
+        44
+      ]
+    },
+    {
+      "frame": 20,
+      "sourceFrame": 20,
+      "source": "docs/art-source/motions/production-144/maruzensky/clean-alpha.png",
+      "sourceSha256": "08811c7c894c2bd28313a534d2d56adc45b04eef809cfe7618e381128b897cde",
+      "crop": [
+        42,
+        1286,
+        205,
+        1522
+      ],
+      "destination": [
+        28,
+        648,
+        71,
+        102
+      ]
+    },
+    {
+      "frame": 21,
+      "sourceFrame": 21,
+      "source": "docs/art-source/motions/production-144/maruzensky/clean-alpha.png",
+      "sourceSha256": "08811c7c894c2bd28313a534d2d56adc45b04eef809cfe7618e381128b897cde",
+      "crop": [
+        294,
+        1286,
+        466,
+        1522
+      ],
+      "destination": [
+        154,
+        648,
+        75,
+        102
+      ]
+    },
+    {
+      "frame": 22,
+      "sourceFrame": 22,
+      "source": "docs/art-source/motions/production-144/maruzensky/clean-alpha.png",
+      "sourceSha256": "08811c7c894c2bd28313a534d2d56adc45b04eef809cfe7618e381128b897cde",
+      "crop": [
+        548,
+        1280,
+        714,
+        1516
+      ],
+      "destination": [
+        284,
+        648,
+        72,
+        102
+      ]
+    },
+    {
+      "frame": 23,
+      "sourceFrame": 23,
+      "source": "docs/art-source/motions/production-144/maruzensky/clean-alpha.png",
+      "sourceSha256": "08811c7c894c2bd28313a534d2d56adc45b04eef809cfe7618e381128b897cde",
+      "crop": [
+        805,
+        1288,
+        966,
+        1522
+      ],
+      "destination": [
+        413,
+        649,
+        70,
+        101
+      ]
+    }
+  ]
+}

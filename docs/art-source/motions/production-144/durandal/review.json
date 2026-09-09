@@ -1,0 +1,12 @@
+{
+  "approved": true,
+  "source": "alpha.png",
+  "skillReview": "최저 체력 비율 적을 겨냥하는 단일 결정타. 제자리 집중 후 손을 뻗어 방출하며 스킬에 없는 돌진이나 무기 없음. 금색 머리와 비대칭 군복, 흰 바지 유지. 24포즈 확인.",
+  "reviewedAt": "2026-09-09",
+  "checks": [
+    "Race costume and identity",
+    "24 poses with correct action rows",
+    "actual skill target and effect",
+    "transparent RGBA"
+  ]
+}

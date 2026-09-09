@@ -1,0 +1,12 @@
+{
+  "approved": true,
+  "source": "alpha.png",
+  "skillReview": "원거리 손바닥 발사. 광역 폭발: 정밀 조준 → 팔을 모아 충전 → 양팔 방출 → 자세 회복. 붉은 머리, 흰 슈트, 자홍색 원형 장비 유지. 총기/소환/치유 없음.",
+  "reviewedAt": "2026-09-09",
+  "checks": [
+    "Race costume and identity",
+    "24 poses with correct action rows",
+    "actual skill target and effect",
+    "transparent RGBA"
+  ]
+}

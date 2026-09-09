@@ -1,0 +1,443 @@
+{
+  "format": "uft-baked-frames-v1",
+  "scale": 0.4,
+  "anchor": [
+    64,
+    110
+  ],
+  "runtimeSha256": "4bf8b078d777fe61bd935cf356719c7ea5cc26fec3dd7ca60ce7a62d51ae6d38",
+  "frames": [
+    {
+      "frame": 0,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/production-144/symboli_rudolf/alpha.png",
+      "sourceSha256": "548019c9ea8b1d6e5c0af66294b0f6562aaa75a4779e9de07de5baa50d52ffef",
+      "crop": [
+        55,
+        18,
+        205,
+        256
+      ],
+      "destination": [
+        34,
+        15,
+        60,
+        95
+      ]
+    },
+    {
+      "frame": 1,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/production-144/symboli_rudolf/alpha.png",
+      "sourceSha256": "548019c9ea8b1d6e5c0af66294b0f6562aaa75a4779e9de07de5baa50d52ffef",
+      "crop": [
+        305,
+        22,
+        459,
+        256
+      ],
+      "destination": [
+        161,
+        16,
+        62,
+        94
+      ]
+    },
+    {
+      "frame": 2,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/production-144/symboli_rudolf/alpha.png",
+      "sourceSha256": "548019c9ea8b1d6e5c0af66294b0f6562aaa75a4779e9de07de5baa50d52ffef",
+      "crop": [
+        548,
+        23,
+        701,
+        256
+      ],
+      "destination": [
+        289,
+        17,
+        61,
+        93
+      ]
+    },
+    {
+      "frame": 3,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/production-144/symboli_rudolf/alpha.png",
+      "sourceSha256": "548019c9ea8b1d6e5c0af66294b0f6562aaa75a4779e9de07de5baa50d52ffef",
+      "crop": [
+        804,
+        23,
+        952,
+        256
+      ],
+      "destination": [
+        418,
+        17,
+        59,
+        93
+      ]
+    },
+    {
+      "frame": 4,
+      "sourceFrame": 4,
+      "source": "docs/art-source/motions/production-144/symboli_rudolf/alpha.png",
+      "sourceSha256": "548019c9ea8b1d6e5c0af66294b0f6562aaa75a4779e9de07de5baa50d52ffef",
+      "crop": [
+        30,
+        272,
+        222,
+        511
+      ],
+      "destination": [
+        25,
+        142,
+        77,
+        96
+      ]
+    },
+    {
+      "frame": 5,
+      "sourceFrame": 5,
+      "source": "docs/art-source/motions/production-144/symboli_rudolf/alpha.png",
+      "sourceSha256": "548019c9ea8b1d6e5c0af66294b0f6562aaa75a4779e9de07de5baa50d52ffef",
+      "crop": [
+        296,
+        273,
+        489,
+        504
+      ],
+      "destination": [
+        153,
+        146,
+        77,
+        92
+      ]
+    },
+    {
+      "frame": 6,
+      "sourceFrame": 6,
+      "source": "docs/art-source/motions/production-144/symboli_rudolf/alpha.png",
+      "sourceSha256": "548019c9ea8b1d6e5c0af66294b0f6562aaa75a4779e9de07de5baa50d52ffef",
+      "crop": [
+        550,
+        273,
+        737,
+        508
+      ],
+      "destination": [
+        282,
+        144,
+        75,
+        94
+      ]
+    },
+    {
+      "frame": 7,
+      "sourceFrame": 7,
+      "source": "docs/art-source/motions/production-144/symboli_rudolf/alpha.png",
+      "sourceSha256": "548019c9ea8b1d6e5c0af66294b0f6562aaa75a4779e9de07de5baa50d52ffef",
+      "crop": [
+        807,
+        274,
+        993,
+        511
+      ],
+      "destination": [
+        411,
+        143,
+        74,
+        95
+      ]
+    },
+    {
+      "frame": 8,
+      "sourceFrame": 8,
+      "source": "docs/art-source/motions/production-144/symboli_rudolf/alpha.png",
+      "sourceSha256": "548019c9ea8b1d6e5c0af66294b0f6562aaa75a4779e9de07de5baa50d52ffef",
+      "crop": [
+        46,
+        529,
+        255,
+        764
+      ],
+      "destination": [
+        22,
+        272,
+        84,
+        94
+      ]
+    },
+    {
+      "frame": 9,
+      "sourceFrame": 9,
+      "source": "docs/art-source/motions/production-144/symboli_rudolf/alpha.png",
+      "sourceSha256": "548019c9ea8b1d6e5c0af66294b0f6562aaa75a4779e9de07de5baa50d52ffef",
+      "crop": [
+        286,
+        536,
+        474,
+        764
+      ],
+      "destination": [
+        154,
+        275,
+        75,
+        91
+      ]
+    },
+    {
+      "frame": 10,
+      "sourceFrame": 10,
+      "source": "docs/art-source/motions/production-144/symboli_rudolf/alpha.png",
+      "sourceSha256": "548019c9ea8b1d6e5c0af66294b0f6562aaa75a4779e9de07de5baa50d52ffef",
+      "crop": [
+        536,
+        534,
+        755,
+        764
+      ],
+      "destination": [
+        276,
+        274,
+        88,
+        92
+      ]
+    },
+    {
+      "frame": 11,
+      "sourceFrame": 11,
+      "source": "docs/art-source/motions/production-144/symboli_rudolf/alpha.png",
+      "sourceSha256": "548019c9ea8b1d6e5c0af66294b0f6562aaa75a4779e9de07de5baa50d52ffef",
+      "crop": [
+        812,
+        529,
+        969,
+        764
+      ],
+      "destination": [
+        416,
+        272,
+        63,
+        94
+      ]
+    },
+    {
+      "frame": 12,
+      "sourceFrame": 12,
+      "source": "docs/art-source/motions/production-144/symboli_rudolf/alpha.png",
+      "sourceSha256": "548019c9ea8b1d6e5c0af66294b0f6562aaa75a4779e9de07de5baa50d52ffef",
+      "crop": [
+        42,
+        784,
+        286,
+        1028
+      ],
+      "destination": [
+        15,
+        396,
+        98,
+        98
+      ]
+    },
+    {
+      "frame": 13,
+      "sourceFrame": 13,
+      "source": "docs/art-source/motions/production-144/symboli_rudolf/alpha.png",
+      "sourceSha256": "548019c9ea8b1d6e5c0af66294b0f6562aaa75a4779e9de07de5baa50d52ffef",
+      "crop": [
+        296,
+        784,
+        469,
+        1028
+      ],
+      "destination": [
+        157,
+        396,
+        69,
+        98
+      ]
+    },
+    {
+      "frame": 14,
+      "sourceFrame": 14,
+      "source": "docs/art-source/motions/production-144/symboli_rudolf/alpha.png",
+      "sourceSha256": "548019c9ea8b1d6e5c0af66294b0f6562aaa75a4779e9de07de5baa50d52ffef",
+      "crop": [
+        526,
+        782,
+        801,
+        1028
+      ],
+      "destination": [
+        265,
+        396,
+        110,
+        98
+      ]
+    },
+    {
+      "frame": 15,
+      "sourceFrame": 15,
+      "source": "docs/art-source/motions/production-144/symboli_rudolf/alpha.png",
+      "sourceSha256": "548019c9ea8b1d6e5c0af66294b0f6562aaa75a4779e9de07de5baa50d52ffef",
+      "crop": [
+        816,
+        783,
+        973,
+        1028
+      ],
+      "destination": [
+        416,
+        396,
+        63,
+        98
+      ]
+    },
+    {
+      "frame": 16,
+      "sourceFrame": 16,
+      "source": "docs/art-source/motions/production-144/symboli_rudolf/alpha.png",
+      "sourceSha256": "548019c9ea8b1d6e5c0af66294b0f6562aaa75a4779e9de07de5baa50d52ffef",
+      "crop": [
+        52,
+        1047,
+        226,
+        1262
+      ],
+      "destination": [
+        29,
+        536,
+        70,
+        86
+      ]
+    },
+    {
+      "frame": 17,
+      "sourceFrame": 17,
+      "source": "docs/art-source/motions/production-144/symboli_rudolf/alpha.png",
+      "sourceSha256": "548019c9ea8b1d6e5c0af66294b0f6562aaa75a4779e9de07de5baa50d52ffef",
+      "crop": [
+        294,
+        1066,
+        461,
+        1249
+      ],
+      "destination": [
+        158,
+        549,
+        67,
+        73
+      ]
+    },
+    {
+      "frame": 18,
+      "sourceFrame": 18,
+      "source": "docs/art-source/motions/production-144/symboli_rudolf/alpha.png",
+      "sourceSha256": "548019c9ea8b1d6e5c0af66294b0f6562aaa75a4779e9de07de5baa50d52ffef",
+      "crop": [
+        541,
+        1089,
+        717,
+        1250
+      ],
+      "destination": [
+        285,
+        558,
+        70,
+        64
+      ]
+    },
+    {
+      "frame": 19,
+      "sourceFrame": 19,
+      "source": "docs/art-source/motions/production-144/symboli_rudolf/alpha.png",
+      "sourceSha256": "548019c9ea8b1d6e5c0af66294b0f6562aaa75a4779e9de07de5baa50d52ffef",
+      "crop": [
+        774,
+        1135,
+        1001,
+        1240
+      ],
+      "destination": [
+        402,
+        580,
+        91,
+        42
+      ]
+    },
+    {
+      "frame": 20,
+      "sourceFrame": 20,
+      "source": "docs/art-source/motions/production-144/symboli_rudolf/alpha.png",
+      "sourceSha256": "548019c9ea8b1d6e5c0af66294b0f6562aaa75a4779e9de07de5baa50d52ffef",
+      "crop": [
+        50,
+        1279,
+        211,
+        1523
+      ],
+      "destination": [
+        32,
+        652,
+        64,
+        98
+      ]
+    },
+    {
+      "frame": 21,
+      "sourceFrame": 21,
+      "source": "docs/art-source/motions/production-144/symboli_rudolf/alpha.png",
+      "sourceSha256": "548019c9ea8b1d6e5c0af66294b0f6562aaa75a4779e9de07de5baa50d52ffef",
+      "crop": [
+        300,
+        1279,
+        464,
+        1522
+      ],
+      "destination": [
+        159,
+        653,
+        66,
+        97
+      ]
+    },
+    {
+      "frame": 22,
+      "sourceFrame": 22,
+      "source": "docs/art-source/motions/production-144/symboli_rudolf/alpha.png",
+      "sourceSha256": "548019c9ea8b1d6e5c0af66294b0f6562aaa75a4779e9de07de5baa50d52ffef",
+      "crop": [
+        543,
+        1279,
+        709,
+        1520
+      ],
+      "destination": [
+        287,
+        654,
+        66,
+        96
+      ]
+    },
+    {
+      "frame": 23,
+      "sourceFrame": 23,
+      "source": "docs/art-source/motions/production-144/symboli_rudolf/alpha.png",
+      "sourceSha256": "548019c9ea8b1d6e5c0af66294b0f6562aaa75a4779e9de07de5baa50d52ffef",
+      "crop": [
+        809,
+        1280,
+        967,
+        1525
+      ],
+      "destination": [
+        416,
+        652,
+        63,
+        98
+      ]
+    }
+  ]
+}

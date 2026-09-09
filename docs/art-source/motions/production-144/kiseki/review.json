@@ -1,0 +1,12 @@
+{
+  "approved": true,
+  "source": "alpha.png",
+  "skillReview": "원거리 손짓 발사. 아군 전체 강화: 가슴 앞 집중 → 양팔 격려 → 팔을 펼친 지휘 → 강화 유지. 청록색 땋은 머리, 초록·흰 의상과 옆 장식천 유지. 피해·치유 없음.",
+  "reviewedAt": "2026-09-09",
+  "checks": [
+    "Race costume and identity",
+    "24 poses with correct action rows",
+    "actual skill target and effect",
+    "transparent RGBA"
+  ]
+}

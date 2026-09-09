@@ -1,0 +1,443 @@
+{
+  "format": "uft-baked-frames-v1",
+  "scale": 0.38661710037174724,
+  "anchor": [
+    64,
+    110
+  ],
+  "runtimeSha256": "8104ce0527cab1009039d7f9be386b1626e1cd67855aeb38aa37bf463b8a3539",
+  "frames": [
+    {
+      "frame": 0,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/production-144/fusaichi_pandora/alpha.png",
+      "sourceSha256": "ce349349986af6fd98d5f657148447d32cb3793071deb529791d4d9995851347",
+      "crop": [
+        58,
+        4,
+        227,
+        255
+      ],
+      "destination": [
+        31,
+        13,
+        65,
+        97
+      ]
+    },
+    {
+      "frame": 1,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/production-144/fusaichi_pandora/alpha.png",
+      "sourceSha256": "ce349349986af6fd98d5f657148447d32cb3793071deb529791d4d9995851347",
+      "crop": [
+        311,
+        4,
+        486,
+        256
+      ],
+      "destination": [
+        158,
+        13,
+        68,
+        97
+      ]
+    },
+    {
+      "frame": 2,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/production-144/fusaichi_pandora/alpha.png",
+      "sourceSha256": "ce349349986af6fd98d5f657148447d32cb3793071deb529791d4d9995851347",
+      "crop": [
+        558,
+        5,
+        734,
+        256
+      ],
+      "destination": [
+        286,
+        13,
+        68,
+        97
+      ]
+    },
+    {
+      "frame": 3,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/production-144/fusaichi_pandora/alpha.png",
+      "sourceSha256": "ce349349986af6fd98d5f657148447d32cb3793071deb529791d4d9995851347",
+      "crop": [
+        814,
+        5,
+        987,
+        256
+      ],
+      "destination": [
+        414,
+        13,
+        67,
+        97
+      ]
+    },
+    {
+      "frame": 4,
+      "sourceFrame": 4,
+      "source": "docs/art-source/motions/production-144/fusaichi_pandora/alpha.png",
+      "sourceSha256": "ce349349986af6fd98d5f657148447d32cb3793071deb529791d4d9995851347",
+      "crop": [
+        32,
+        258,
+        256,
+        512
+      ],
+      "destination": [
+        20,
+        140,
+        87,
+        98
+      ]
+    },
+    {
+      "frame": 5,
+      "sourceFrame": 5,
+      "source": "docs/art-source/motions/production-144/fusaichi_pandora/alpha.png",
+      "sourceSha256": "ce349349986af6fd98d5f657148447d32cb3793071deb529791d4d9995851347",
+      "crop": [
+        290,
+        260,
+        502,
+        510
+      ],
+      "destination": [
+        151,
+        141,
+        82,
+        97
+      ]
+    },
+    {
+      "frame": 6,
+      "sourceFrame": 6,
+      "source": "docs/art-source/motions/production-144/fusaichi_pandora/alpha.png",
+      "sourceSha256": "ce349349986af6fd98d5f657148447d32cb3793071deb529791d4d9995851347",
+      "crop": [
+        526,
+        263,
+        755,
+        512
+      ],
+      "destination": [
+        275,
+        142,
+        89,
+        96
+      ]
+    },
+    {
+      "frame": 7,
+      "sourceFrame": 7,
+      "source": "docs/art-source/motions/production-144/fusaichi_pandora/alpha.png",
+      "sourceSha256": "ce349349986af6fd98d5f657148447d32cb3793071deb529791d4d9995851347",
+      "crop": [
+        782,
+        267,
+        1004,
+        512
+      ],
+      "destination": [
+        405,
+        143,
+        86,
+        95
+      ]
+    },
+    {
+      "frame": 8,
+      "sourceFrame": 8,
+      "source": "docs/art-source/motions/production-144/fusaichi_pandora/alpha.png",
+      "sourceSha256": "ce349349986af6fd98d5f657148447d32cb3793071deb529791d4d9995851347",
+      "crop": [
+        47,
+        515,
+        247,
+        768
+      ],
+      "destination": [
+        25,
+        268,
+        77,
+        98
+      ]
+    },
+    {
+      "frame": 9,
+      "sourceFrame": 9,
+      "source": "docs/art-source/motions/production-144/fusaichi_pandora/alpha.png",
+      "sourceSha256": "ce349349986af6fd98d5f657148447d32cb3793071deb529791d4d9995851347",
+      "crop": [
+        301,
+        515,
+        491,
+        768
+      ],
+      "destination": [
+        155,
+        268,
+        73,
+        98
+      ]
+    },
+    {
+      "frame": 10,
+      "sourceFrame": 10,
+      "source": "docs/art-source/motions/production-144/fusaichi_pandora/alpha.png",
+      "sourceSha256": "ce349349986af6fd98d5f657148447d32cb3793071deb529791d4d9995851347",
+      "crop": [
+        549,
+        515,
+        762,
+        767
+      ],
+      "destination": [
+        279,
+        269,
+        82,
+        97
+      ]
+    },
+    {
+      "frame": 11,
+      "sourceFrame": 11,
+      "source": "docs/art-source/motions/production-144/fusaichi_pandora/alpha.png",
+      "sourceSha256": "ce349349986af6fd98d5f657148447d32cb3793071deb529791d4d9995851347",
+      "crop": [
+        807,
+        518,
+        986,
+        767
+      ],
+      "destination": [
+        413,
+        270,
+        69,
+        96
+      ]
+    },
+    {
+      "frame": 12,
+      "sourceFrame": 12,
+      "source": "docs/art-source/motions/production-144/fusaichi_pandora/alpha.png",
+      "sourceSha256": "ce349349986af6fd98d5f657148447d32cb3793071deb529791d4d9995851347",
+      "crop": [
+        53,
+        768,
+        233,
+        1032
+      ],
+      "destination": [
+        29,
+        392,
+        70,
+        102
+      ]
+    },
+    {
+      "frame": 13,
+      "sourceFrame": 13,
+      "source": "docs/art-source/motions/production-144/fusaichi_pandora/alpha.png",
+      "sourceSha256": "ce349349986af6fd98d5f657148447d32cb3793071deb529791d4d9995851347",
+      "crop": [
+        299,
+        768,
+        500,
+        1034
+      ],
+      "destination": [
+        153,
+        391,
+        78,
+        103
+      ]
+    },
+    {
+      "frame": 14,
+      "sourceFrame": 14,
+      "source": "docs/art-source/motions/production-144/fusaichi_pandora/alpha.png",
+      "sourceSha256": "ce349349986af6fd98d5f657148447d32cb3793071deb529791d4d9995851347",
+      "crop": [
+        554,
+        773,
+        764,
+        1034
+      ],
+      "destination": [
+        279,
+        393,
+        81,
+        101
+      ]
+    },
+    {
+      "frame": 15,
+      "sourceFrame": 15,
+      "source": "docs/art-source/motions/production-144/fusaichi_pandora/alpha.png",
+      "sourceSha256": "ce349349986af6fd98d5f657148447d32cb3793071deb529791d4d9995851347",
+      "crop": [
+        815,
+        768,
+        1009,
+        1034
+      ],
+      "destination": [
+        410,
+        391,
+        75,
+        103
+      ]
+    },
+    {
+      "frame": 16,
+      "sourceFrame": 16,
+      "source": "docs/art-source/motions/production-144/fusaichi_pandora/alpha.png",
+      "sourceSha256": "ce349349986af6fd98d5f657148447d32cb3793071deb529791d4d9995851347",
+      "crop": [
+        50,
+        1034,
+        238,
+        1260
+      ],
+      "destination": [
+        27,
+        535,
+        73,
+        87
+      ]
+    },
+    {
+      "frame": 17,
+      "sourceFrame": 17,
+      "source": "docs/art-source/motions/production-144/fusaichi_pandora/alpha.png",
+      "sourceSha256": "ce349349986af6fd98d5f657148447d32cb3793071deb529791d4d9995851347",
+      "crop": [
+        297,
+        1049,
+        495,
+        1250
+      ],
+      "destination": [
+        153,
+        544,
+        77,
+        78
+      ]
+    },
+    {
+      "frame": 18,
+      "sourceFrame": 18,
+      "source": "docs/art-source/motions/production-144/fusaichi_pandora/alpha.png",
+      "sourceSha256": "ce349349986af6fd98d5f657148447d32cb3793071deb529791d4d9995851347",
+      "crop": [
+        535,
+        1065,
+        723,
+        1251
+      ],
+      "destination": [
+        283,
+        550,
+        73,
+        72
+      ]
+    },
+    {
+      "frame": 19,
+      "sourceFrame": 19,
+      "source": "docs/art-source/motions/production-144/fusaichi_pandora/alpha.png",
+      "sourceSha256": "ce349349986af6fd98d5f657148447d32cb3793071deb529791d4d9995851347",
+      "crop": [
+        770,
+        1138,
+        1012,
+        1248
+      ],
+      "destination": [
+        401,
+        579,
+        94,
+        43
+      ]
+    },
+    {
+      "frame": 20,
+      "sourceFrame": 20,
+      "source": "docs/art-source/motions/production-144/fusaichi_pandora/alpha.png",
+      "sourceSha256": "ce349349986af6fd98d5f657148447d32cb3793071deb529791d4d9995851347",
+      "crop": [
+        52,
+        1261,
+        224,
+        1529
+      ],
+      "destination": [
+        31,
+        646,
+        66,
+        104
+      ]
+    },
+    {
+      "frame": 21,
+      "sourceFrame": 21,
+      "source": "docs/art-source/motions/production-144/fusaichi_pandora/alpha.png",
+      "sourceSha256": "ce349349986af6fd98d5f657148447d32cb3793071deb529791d4d9995851347",
+      "crop": [
+        313,
+        1262,
+        491,
+        1530
+      ],
+      "destination": [
+        157,
+        646,
+        69,
+        104
+      ]
+    },
+    {
+      "frame": 22,
+      "sourceFrame": 22,
+      "source": "docs/art-source/motions/production-144/fusaichi_pandora/alpha.png",
+      "sourceSha256": "ce349349986af6fd98d5f657148447d32cb3793071deb529791d4d9995851347",
+      "crop": [
+        546,
+        1260,
+        740,
+        1529
+      ],
+      "destination": [
+        282,
+        646,
+        75,
+        104
+      ]
+    },
+    {
+      "frame": 23,
+      "sourceFrame": 23,
+      "source": "docs/art-source/motions/production-144/fusaichi_pandora/alpha.png",
+      "sourceSha256": "ce349349986af6fd98d5f657148447d32cb3793071deb529791d4d9995851347",
+      "crop": [
+        815,
+        1262,
+        986,
+        1530
+      ],
+      "destination": [
+        415,
+        646,
+        66,
+        104
+      ]
+    }
+  ]
+}

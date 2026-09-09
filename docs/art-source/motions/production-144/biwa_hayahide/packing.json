@@ -1,0 +1,443 @@
+{
+  "format": "uft-baked-frames-v1",
+  "scale": 0.41767068273092367,
+  "anchor": [
+    64,
+    110
+  ],
+  "runtimeSha256": "09179a590206f4442731e632a9a0849e411c89e2c678b5d89d63624c13336d97",
+  "frames": [
+    {
+      "frame": 0,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/production-144/biwa_hayahide/alpha.png",
+      "sourceSha256": "b2c3440bd649e4b0ad59c0f1f50ccbade937a8508a852839cbabb04a6be1e07a",
+      "crop": [
+        44,
+        11,
+        190,
+        256
+      ],
+      "destination": [
+        33,
+        8,
+        61,
+        102
+      ]
+    },
+    {
+      "frame": 1,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/production-144/biwa_hayahide/alpha.png",
+      "sourceSha256": "b2c3440bd649e4b0ad59c0f1f50ccbade937a8508a852839cbabb04a6be1e07a",
+      "crop": [
+        299,
+        18,
+        444,
+        256
+      ],
+      "destination": [
+        161,
+        11,
+        61,
+        99
+      ]
+    },
+    {
+      "frame": 2,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/production-144/biwa_hayahide/alpha.png",
+      "sourceSha256": "b2c3440bd649e4b0ad59c0f1f50ccbade937a8508a852839cbabb04a6be1e07a",
+      "crop": [
+        562,
+        13,
+        708,
+        256
+      ],
+      "destination": [
+        289,
+        9,
+        61,
+        101
+      ]
+    },
+    {
+      "frame": 3,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/production-144/biwa_hayahide/alpha.png",
+      "sourceSha256": "b2c3440bd649e4b0ad59c0f1f50ccbade937a8508a852839cbabb04a6be1e07a",
+      "crop": [
+        819,
+        13,
+        962,
+        256
+      ],
+      "destination": [
+        418,
+        9,
+        60,
+        101
+      ]
+    },
+    {
+      "frame": 4,
+      "sourceFrame": 4,
+      "source": "docs/art-source/motions/production-144/biwa_hayahide/alpha.png",
+      "sourceSha256": "b2c3440bd649e4b0ad59c0f1f50ccbade937a8508a852839cbabb04a6be1e07a",
+      "crop": [
+        38,
+        270,
+        213,
+        512
+      ],
+      "destination": [
+        27,
+        137,
+        73,
+        101
+      ]
+    },
+    {
+      "frame": 5,
+      "sourceFrame": 5,
+      "source": "docs/art-source/motions/production-144/biwa_hayahide/alpha.png",
+      "sourceSha256": "b2c3440bd649e4b0ad59c0f1f50ccbade937a8508a852839cbabb04a6be1e07a",
+      "crop": [
+        290,
+        272,
+        472,
+        512
+      ],
+      "destination": [
+        154,
+        138,
+        76,
+        100
+      ]
+    },
+    {
+      "frame": 6,
+      "sourceFrame": 6,
+      "source": "docs/art-source/motions/production-144/biwa_hayahide/alpha.png",
+      "sourceSha256": "b2c3440bd649e4b0ad59c0f1f50ccbade937a8508a852839cbabb04a6be1e07a",
+      "crop": [
+        551,
+        274,
+        726,
+        511
+      ],
+      "destination": [
+        283,
+        139,
+        73,
+        99
+      ]
+    },
+    {
+      "frame": 7,
+      "sourceFrame": 7,
+      "source": "docs/art-source/motions/production-144/biwa_hayahide/alpha.png",
+      "sourceSha256": "b2c3440bd649e4b0ad59c0f1f50ccbade937a8508a852839cbabb04a6be1e07a",
+      "crop": [
+        808,
+        275,
+        992,
+        512
+      ],
+      "destination": [
+        409,
+        139,
+        77,
+        99
+      ]
+    },
+    {
+      "frame": 8,
+      "sourceFrame": 8,
+      "source": "docs/art-source/motions/production-144/biwa_hayahide/alpha.png",
+      "sourceSha256": "b2c3440bd649e4b0ad59c0f1f50ccbade937a8508a852839cbabb04a6be1e07a",
+      "crop": [
+        43,
+        520,
+        227,
+        768
+      ],
+      "destination": [
+        25,
+        262,
+        77,
+        104
+      ]
+    },
+    {
+      "frame": 9,
+      "sourceFrame": 9,
+      "source": "docs/art-source/motions/production-144/biwa_hayahide/alpha.png",
+      "sourceSha256": "b2c3440bd649e4b0ad59c0f1f50ccbade937a8508a852839cbabb04a6be1e07a",
+      "crop": [
+        293,
+        519,
+        456,
+        768
+      ],
+      "destination": [
+        158,
+        262,
+        68,
+        104
+      ]
+    },
+    {
+      "frame": 10,
+      "sourceFrame": 10,
+      "source": "docs/art-source/motions/production-144/biwa_hayahide/alpha.png",
+      "sourceSha256": "b2c3440bd649e4b0ad59c0f1f50ccbade937a8508a852839cbabb04a6be1e07a",
+      "crop": [
+        547,
+        520,
+        739,
+        767
+      ],
+      "destination": [
+        280,
+        263,
+        80,
+        103
+      ]
+    },
+    {
+      "frame": 11,
+      "sourceFrame": 11,
+      "source": "docs/art-source/motions/production-144/biwa_hayahide/alpha.png",
+      "sourceSha256": "b2c3440bd649e4b0ad59c0f1f50ccbade937a8508a852839cbabb04a6be1e07a",
+      "crop": [
+        804,
+        520,
+        968,
+        768
+      ],
+      "destination": [
+        414,
+        262,
+        68,
+        104
+      ]
+    },
+    {
+      "frame": 12,
+      "sourceFrame": 12,
+      "source": "docs/art-source/motions/production-144/biwa_hayahide/alpha.png",
+      "sourceSha256": "b2c3440bd649e4b0ad59c0f1f50ccbade937a8508a852839cbabb04a6be1e07a",
+      "crop": [
+        56,
+        777,
+        201,
+        1024
+      ],
+      "destination": [
+        33,
+        391,
+        61,
+        103
+      ]
+    },
+    {
+      "frame": 13,
+      "sourceFrame": 13,
+      "source": "docs/art-source/motions/production-144/biwa_hayahide/alpha.png",
+      "sourceSha256": "b2c3440bd649e4b0ad59c0f1f50ccbade937a8508a852839cbabb04a6be1e07a",
+      "crop": [
+        303,
+        778,
+        457,
+        1024
+      ],
+      "destination": [
+        160,
+        391,
+        64,
+        103
+      ]
+    },
+    {
+      "frame": 14,
+      "sourceFrame": 14,
+      "source": "docs/art-source/motions/production-144/biwa_hayahide/alpha.png",
+      "sourceSha256": "b2c3440bd649e4b0ad59c0f1f50ccbade937a8508a852839cbabb04a6be1e07a",
+      "crop": [
+        542,
+        778,
+        742,
+        1024
+      ],
+      "destination": [
+        278,
+        391,
+        84,
+        103
+      ]
+    },
+    {
+      "frame": 15,
+      "sourceFrame": 15,
+      "source": "docs/art-source/motions/production-144/biwa_hayahide/alpha.png",
+      "sourceSha256": "b2c3440bd649e4b0ad59c0f1f50ccbade937a8508a852839cbabb04a6be1e07a",
+      "crop": [
+        814,
+        780,
+        970,
+        1024
+      ],
+      "destination": [
+        415,
+        392,
+        65,
+        102
+      ]
+    },
+    {
+      "frame": 16,
+      "sourceFrame": 16,
+      "source": "docs/art-source/motions/production-144/biwa_hayahide/alpha.png",
+      "sourceSha256": "b2c3440bd649e4b0ad59c0f1f50ccbade937a8508a852839cbabb04a6be1e07a",
+      "crop": [
+        48,
+        1043,
+        216,
+        1268
+      ],
+      "destination": [
+        29,
+        528,
+        70,
+        94
+      ]
+    },
+    {
+      "frame": 17,
+      "sourceFrame": 17,
+      "source": "docs/art-source/motions/production-144/biwa_hayahide/alpha.png",
+      "sourceSha256": "b2c3440bd649e4b0ad59c0f1f50ccbade937a8508a852839cbabb04a6be1e07a",
+      "crop": [
+        302,
+        1076,
+        469,
+        1265
+      ],
+      "destination": [
+        157,
+        543,
+        70,
+        79
+      ]
+    },
+    {
+      "frame": 18,
+      "sourceFrame": 18,
+      "source": "docs/art-source/motions/production-144/biwa_hayahide/alpha.png",
+      "sourceSha256": "b2c3440bd649e4b0ad59c0f1f50ccbade937a8508a852839cbabb04a6be1e07a",
+      "crop": [
+        565,
+        1071,
+        731,
+        1263
+      ],
+      "destination": [
+        285,
+        542,
+        69,
+        80
+      ]
+    },
+    {
+      "frame": 19,
+      "sourceFrame": 19,
+      "source": "docs/art-source/motions/production-144/biwa_hayahide/alpha.png",
+      "sourceSha256": "b2c3440bd649e4b0ad59c0f1f50ccbade937a8508a852839cbabb04a6be1e07a",
+      "crop": [
+        779,
+        1137,
+        1013,
+        1261
+      ],
+      "destination": [
+        399,
+        570,
+        98,
+        52
+      ]
+    },
+    {
+      "frame": 20,
+      "sourceFrame": 20,
+      "source": "docs/art-source/motions/production-144/biwa_hayahide/alpha.png",
+      "sourceSha256": "b2c3440bd649e4b0ad59c0f1f50ccbade937a8508a852839cbabb04a6be1e07a",
+      "crop": [
+        51,
+        1279,
+        194,
+        1526
+      ],
+      "destination": [
+        34,
+        647,
+        60,
+        103
+      ]
+    },
+    {
+      "frame": 21,
+      "sourceFrame": 21,
+      "source": "docs/art-source/motions/production-144/biwa_hayahide/alpha.png",
+      "sourceSha256": "b2c3440bd649e4b0ad59c0f1f50ccbade937a8508a852839cbabb04a6be1e07a",
+      "crop": [
+        309,
+        1273,
+        458,
+        1517
+      ],
+      "destination": [
+        161,
+        648,
+        62,
+        102
+      ]
+    },
+    {
+      "frame": 22,
+      "sourceFrame": 22,
+      "source": "docs/art-source/motions/production-144/biwa_hayahide/alpha.png",
+      "sourceSha256": "b2c3440bd649e4b0ad59c0f1f50ccbade937a8508a852839cbabb04a6be1e07a",
+      "crop": [
+        555,
+        1280,
+        708,
+        1526
+      ],
+      "destination": [
+        288,
+        647,
+        64,
+        103
+      ]
+    },
+    {
+      "frame": 23,
+      "sourceFrame": 23,
+      "source": "docs/art-source/motions/production-144/biwa_hayahide/alpha.png",
+      "sourceSha256": "b2c3440bd649e4b0ad59c0f1f50ccbade937a8508a852839cbabb04a6be1e07a",
+      "crop": [
+        819,
+        1283,
+        969,
+        1526
+      ],
+      "destination": [
+        416,
+        649,
+        63,
+        101
+      ]
+    }
+  ]
+}

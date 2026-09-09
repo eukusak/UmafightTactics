@@ -1,0 +1,106 @@
+{
+  "batchSize": 5,
+  "validation": "new portraits only; full app test/build not rerun",
+  "files": [
+    {
+      "id": "narita_taishin",
+      "size": [
+        256,
+        256
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "bounds": [
+        27,
+        6,
+        232,
+        250
+      ],
+      "sourceSha256": "95eeae144afd37a8246462b7bb7634bfaf791173dce71298df5eeaa66fef471e",
+      "runtimeSha256": "50ba9a7c9540b80100586c1da909713f7002cc0859bca5d7c5f5cf539d4d37e5",
+      "reference": "public/assets/characters/race/NaritaTaishin-Race.png"
+    },
+    {
+      "id": "nishino_flower",
+      "size": [
+        256,
+        256
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "bounds": [
+        25,
+        6,
+        230,
+        250
+      ],
+      "sourceSha256": "8bc7597f22b7e40c6b97d605bbee2fa804d00b7ddc7c11a5917e8d6368a64ca0",
+      "runtimeSha256": "d156edee103b10d6ebf2078da680f0926fe361e85dc48a25c3e6703d18e984ea",
+      "reference": "public/assets/characters/race/NishinoFlower-Race.png"
+    },
+    {
+      "id": "haru_urara",
+      "size": [
+        256,
+        256
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "bounds": [
+        23,
+        6,
+        233,
+        250
+      ],
+      "sourceSha256": "acb66f352b9fa4291bedb275919d84631eb861b01f0d591eee99052c2453f231",
+      "runtimeSha256": "302fdde8d448587f5c479f4efdcf8c02a74c2a671bfe6ef13451014ea3d2928c",
+      "reference": "public/assets/characters/race/HaruUrara-Race.png"
+    },
+    {
+      "id": "bamboo_memory",
+      "size": [
+        256,
+        256
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "bounds": [
+        37,
+        6,
+        224,
+        250
+      ],
+      "sourceSha256": "e8f72115ced03dd29bac2bb0a3c940e486a29b6094db5dcad25d3a2de852f0f6",
+      "runtimeSha256": "12b60fe7688427bc175ac53a7dfd367e97a1906daf7fa42afd28c54530dbcd36",
+      "reference": "public/assets/characters/race/BambooMemory-Race.png"
+    },
+    {
+      "id": "biko_pegasus",
+      "size": [
+        256,
+        256
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "bounds": [
+        23,
+        6,
+        242,
+        249
+      ],
+      "sourceSha256": "ad595b5e152f62a822d8e801915a7396ee33c526a10698eba3356d75e753b10a",
+      "runtimeSha256": "6632f0118f4cd96faebdfd5ba989ce4510a090fcb7b69751e05577b3a066ae22",
+      "reference": "public/assets/characters/race/BikoPegasus-Race.png"
+    }
+  ]
+}

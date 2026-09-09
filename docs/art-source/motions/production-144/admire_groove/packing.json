@@ -1,0 +1,443 @@
+{
+  "format": "uft-baked-frames-v1",
+  "scale": 0.40310077519379844,
+  "anchor": [
+    64,
+    110
+  ],
+  "runtimeSha256": "ac194c09a3576e98d925ae607ea149727f2b04e5857233c284b144e4dd61b4c4",
+  "frames": [
+    {
+      "frame": 0,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/production-144/admire_groove/alpha.png",
+      "sourceSha256": "e1e5fa72e24f18d3afb27715ffbcf63bba3435a77bd4605f3d72df658c74fce1",
+      "crop": [
+        46,
+        7,
+        230,
+        265
+      ],
+      "destination": [
+        27,
+        6,
+        74,
+        104
+      ]
+    },
+    {
+      "frame": 1,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/production-144/admire_groove/alpha.png",
+      "sourceSha256": "e1e5fa72e24f18d3afb27715ffbcf63bba3435a77bd4605f3d72df658c74fce1",
+      "crop": [
+        298,
+        8,
+        477,
+        265
+      ],
+      "destination": [
+        156,
+        6,
+        72,
+        104
+      ]
+    },
+    {
+      "frame": 2,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/production-144/admire_groove/alpha.png",
+      "sourceSha256": "e1e5fa72e24f18d3afb27715ffbcf63bba3435a77bd4605f3d72df658c74fce1",
+      "crop": [
+        546,
+        9,
+        729,
+        265
+      ],
+      "destination": [
+        283,
+        7,
+        74,
+        103
+      ]
+    },
+    {
+      "frame": 3,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/production-144/admire_groove/alpha.png",
+      "sourceSha256": "e1e5fa72e24f18d3afb27715ffbcf63bba3435a77bd4605f3d72df658c74fce1",
+      "crop": [
+        794,
+        7,
+        978,
+        265
+      ],
+      "destination": [
+        411,
+        6,
+        74,
+        104
+      ]
+    },
+    {
+      "frame": 4,
+      "sourceFrame": 4,
+      "source": "docs/art-source/motions/production-144/admire_groove/alpha.png",
+      "sourceSha256": "e1e5fa72e24f18d3afb27715ffbcf63bba3435a77bd4605f3d72df658c74fce1",
+      "crop": [
+        34,
+        274,
+        245,
+        530
+      ],
+      "destination": [
+        21,
+        135,
+        85,
+        103
+      ]
+    },
+    {
+      "frame": 5,
+      "sourceFrame": 5,
+      "source": "docs/art-source/motions/production-144/admire_groove/alpha.png",
+      "sourceSha256": "e1e5fa72e24f18d3afb27715ffbcf63bba3435a77bd4605f3d72df658c74fce1",
+      "crop": [
+        295,
+        274,
+        487,
+        530
+      ],
+      "destination": [
+        153,
+        135,
+        77,
+        103
+      ]
+    },
+    {
+      "frame": 6,
+      "sourceFrame": 6,
+      "source": "docs/art-source/motions/production-144/admire_groove/alpha.png",
+      "sourceSha256": "e1e5fa72e24f18d3afb27715ffbcf63bba3435a77bd4605f3d72df658c74fce1",
+      "crop": [
+        539,
+        275,
+        743,
+        530
+      ],
+      "destination": [
+        279,
+        135,
+        82,
+        103
+      ]
+    },
+    {
+      "frame": 7,
+      "sourceFrame": 7,
+      "source": "docs/art-source/motions/production-144/admire_groove/alpha.png",
+      "sourceSha256": "e1e5fa72e24f18d3afb27715ffbcf63bba3435a77bd4605f3d72df658c74fce1",
+      "crop": [
+        794,
+        274,
+        993,
+        530
+      ],
+      "destination": [
+        408,
+        135,
+        80,
+        103
+      ]
+    },
+    {
+      "frame": 8,
+      "sourceFrame": 8,
+      "source": "docs/art-source/motions/production-144/admire_groove/alpha.png",
+      "sourceSha256": "e1e5fa72e24f18d3afb27715ffbcf63bba3435a77bd4605f3d72df658c74fce1",
+      "crop": [
+        31,
+        536,
+        253,
+        793
+      ],
+      "destination": [
+        19,
+        262,
+        89,
+        104
+      ]
+    },
+    {
+      "frame": 9,
+      "sourceFrame": 9,
+      "source": "docs/art-source/motions/production-144/admire_groove/alpha.png",
+      "sourceSha256": "e1e5fa72e24f18d3afb27715ffbcf63bba3435a77bd4605f3d72df658c74fce1",
+      "crop": [
+        284,
+        536,
+        486,
+        793
+      ],
+      "destination": [
+        151,
+        262,
+        81,
+        104
+      ]
+    },
+    {
+      "frame": 10,
+      "sourceFrame": 10,
+      "source": "docs/art-source/motions/production-144/admire_groove/alpha.png",
+      "sourceSha256": "e1e5fa72e24f18d3afb27715ffbcf63bba3435a77bd4605f3d72df658c74fce1",
+      "crop": [
+        533,
+        541,
+        767,
+        793
+      ],
+      "destination": [
+        273,
+        264,
+        94,
+        102
+      ]
+    },
+    {
+      "frame": 11,
+      "sourceFrame": 11,
+      "source": "docs/art-source/motions/production-144/admire_groove/alpha.png",
+      "sourceSha256": "e1e5fa72e24f18d3afb27715ffbcf63bba3435a77bd4605f3d72df658c74fce1",
+      "crop": [
+        802,
+        536,
+        984,
+        793
+      ],
+      "destination": [
+        411,
+        262,
+        73,
+        104
+      ]
+    },
+    {
+      "frame": 12,
+      "sourceFrame": 12,
+      "source": "docs/art-source/motions/production-144/admire_groove/alpha.png",
+      "sourceSha256": "e1e5fa72e24f18d3afb27715ffbcf63bba3435a77bd4605f3d72df658c74fce1",
+      "crop": [
+        27,
+        827,
+        226,
+        1023
+      ],
+      "destination": [
+        24,
+        415,
+        80,
+        79
+      ]
+    },
+    {
+      "frame": 13,
+      "sourceFrame": 13,
+      "source": "docs/art-source/motions/production-144/admire_groove/alpha.png",
+      "sourceSha256": "e1e5fa72e24f18d3afb27715ffbcf63bba3435a77bd4605f3d72df658c74fce1",
+      "crop": [
+        281,
+        818,
+        507,
+        1030
+      ],
+      "destination": [
+        146,
+        409,
+        91,
+        85
+      ]
+    },
+    {
+      "frame": 14,
+      "sourceFrame": 14,
+      "source": "docs/art-source/motions/production-144/admire_groove/alpha.png",
+      "sourceSha256": "e1e5fa72e24f18d3afb27715ffbcf63bba3435a77bd4605f3d72df658c74fce1",
+      "crop": [
+        531,
+        852,
+        760,
+        1017
+      ],
+      "destination": [
+        274,
+        427,
+        92,
+        67
+      ]
+    },
+    {
+      "frame": 15,
+      "sourceFrame": 15,
+      "source": "docs/art-source/motions/production-144/admire_groove/alpha.png",
+      "sourceSha256": "e1e5fa72e24f18d3afb27715ffbcf63bba3435a77bd4605f3d72df658c74fce1",
+      "crop": [
+        798,
+        839,
+        1001,
+        1030
+      ],
+      "destination": [
+        407,
+        417,
+        82,
+        77
+      ]
+    },
+    {
+      "frame": 16,
+      "sourceFrame": 16,
+      "source": "docs/art-source/motions/production-144/admire_groove/alpha.png",
+      "sourceSha256": "e1e5fa72e24f18d3afb27715ffbcf63bba3435a77bd4605f3d72df658c74fce1",
+      "crop": [
+        30,
+        1037,
+        228,
+        1272
+      ],
+      "destination": [
+        24,
+        527,
+        80,
+        95
+      ]
+    },
+    {
+      "frame": 17,
+      "sourceFrame": 17,
+      "source": "docs/art-source/motions/production-144/admire_groove/alpha.png",
+      "sourceSha256": "e1e5fa72e24f18d3afb27715ffbcf63bba3435a77bd4605f3d72df658c74fce1",
+      "crop": [
+        295,
+        1061,
+        479,
+        1269
+      ],
+      "destination": [
+        155,
+        538,
+        74,
+        84
+      ]
+    },
+    {
+      "frame": 18,
+      "sourceFrame": 18,
+      "source": "docs/art-source/motions/production-144/admire_groove/alpha.png",
+      "sourceSha256": "e1e5fa72e24f18d3afb27715ffbcf63bba3435a77bd4605f3d72df658c74fce1",
+      "crop": [
+        533,
+        1077,
+        746,
+        1273
+      ],
+      "destination": [
+        277,
+        543,
+        86,
+        79
+      ]
+    },
+    {
+      "frame": 19,
+      "sourceFrame": 19,
+      "source": "docs/art-source/motions/production-144/admire_groove/alpha.png",
+      "sourceSha256": "e1e5fa72e24f18d3afb27715ffbcf63bba3435a77bd4605f3d72df658c74fce1",
+      "crop": [
+        778,
+        1164,
+        1020,
+        1269
+      ],
+      "destination": [
+        399,
+        580,
+        98,
+        42
+      ]
+    },
+    {
+      "frame": 20,
+      "sourceFrame": 20,
+      "source": "docs/art-source/motions/production-144/admire_groove/alpha.png",
+      "sourceSha256": "e1e5fa72e24f18d3afb27715ffbcf63bba3435a77bd4605f3d72df658c74fce1",
+      "crop": [
+        30,
+        1278,
+        212,
+        1534
+      ],
+      "destination": [
+        27,
+        647,
+        73,
+        103
+      ]
+    },
+    {
+      "frame": 21,
+      "sourceFrame": 21,
+      "source": "docs/art-source/motions/production-144/admire_groove/alpha.png",
+      "sourceSha256": "e1e5fa72e24f18d3afb27715ffbcf63bba3435a77bd4605f3d72df658c74fce1",
+      "crop": [
+        283,
+        1280,
+        463,
+        1535
+      ],
+      "destination": [
+        155,
+        647,
+        73,
+        103
+      ]
+    },
+    {
+      "frame": 22,
+      "sourceFrame": 22,
+      "source": "docs/art-source/motions/production-144/admire_groove/alpha.png",
+      "sourceSha256": "e1e5fa72e24f18d3afb27715ffbcf63bba3435a77bd4605f3d72df658c74fce1",
+      "crop": [
+        534,
+        1282,
+        722,
+        1529
+      ],
+      "destination": [
+        282,
+        650,
+        76,
+        100
+      ]
+    },
+    {
+      "frame": 23,
+      "sourceFrame": 23,
+      "source": "docs/art-source/motions/production-144/admire_groove/alpha.png",
+      "sourceSha256": "e1e5fa72e24f18d3afb27715ffbcf63bba3435a77bd4605f3d72df658c74fce1",
+      "crop": [
+        792,
+        1282,
+        970,
+        1534
+      ],
+      "destination": [
+        412,
+        648,
+        72,
+        102
+      ]
+    }
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "acceptedArt": 514,
+  "baseCommit": "c662b5caae3a42a956796ccd6d974f5ec14f85fc",
+  "batchSize": 10,
+  "completedBatch": [
+    "duramente",
+    "rhein_kraft",
+    "cesario",
+    "air_messiah",
+    "daring_heart",
+    "fusaichi_pandora",
+    "buena_vista",
+    "orfevre",
+    "gentildonna",
+    "win_variation"
+  ],
+  "completedPortraits": 145,
+  "nextPortraitIds": [],
+  "portraitTarget": 145,
+  "remaining": {
+    "portraits": 0,
+    "battleSheets": 0,
+    "cutins": 0
+  },
+  "requiredArt": 514,
+  "resumeInstructions": [
+    "All 145 character and 5 PvE basic motion atlases are registered. Read docs/SKILL_CHOREOGRAPHY.md before editing skills; preserve generation provenance and validate the separate compatibility review.",
+    "All 145 character and five PvE frame sheets are registered and reviewed. Do not regenerate completed assets without a new request.",
+    "Read docs/qa/PR6_MOTIONS_144_2026-09-09.md for final checks and docs/TFT_PARITY_AUDIT.md for unresolved gameplay differences."
+  ],
+  "rigging": {
+    "character": "special_week",
+    "availableComponents": [
+      "head",
+      "torso",
+      "skirt",
+      "tail",
+      "hand"
+    ],
+    "status": "historical-source-only; superseded by PNG frame animation at user request on 2026-09-08",
+    "riggedModels": 0,
+    "requires": [
+      "complete separated artwork",
+      "Cubism Editor mesh/deformers/parameters/physics",
+      "compiled model and runtime verification"
+    ],
+    "environmentStatus": "Cubism Editor/compiler not found in standard install locations; user asked for available environment"
+  },
+  "workflow": "Generate individual 24-pose PNG atlases from Race references and actual skill effects; inspect transparent alpha and all six action rows, import reviewed sources, test, and push to PR 6. Read remote HEAD and desktop-reservation.json first to avoid concurrent duplicate production.",
+  "latestTenCharacterBatch": "batch-2001",
+  "latestFiveCharacterBatch": "batch-20",
+  "previousReservation": {
+    "session": "8bd244030e73",
+    "batch": "batch-1004",
+    "ids": [
+      "duramente",
+      "rhein_kraft",
+      "cesario",
+      "air_messiah",
+      "daring_heart",
+      "fusaichi_pandora",
+      "buena_vista",
+      "orfevre",
+      "gentildonna",
+      "win_variation"
+    ],
+    "status": "resumed-after-user-reported-stalled-session",
+    "note": "Other concurrent sessions should skip these ten IDs. Start after batch-1003 is saved and verified."
+  },
+  "concurrentMerge": "Preserved five portraits from c662b5c; local duplicate sources kept as alternatives and not double counted.",
+  "portraitStatus": "complete; all 145 runtime portraits present",
+  "portraitCompletionCommit": "ab557e769c406fa9555b5e01ccbf65f6254bbd6e",
+  "extraPveStandees": {
+    "count": 5,
+    "actualCubismModels": 0,
+    "status": "generated full-body images and reviewed PNG frame animations"
+  },
+  "latestValidation": "docs/qa/SKILL_SYSTEMS_2026-09-09.md",
+  "motionStatus": {
+    "format": "24 poses; 4 columns x 6 rows; 512x768 RGBA runtime",
+    "characters": 145,
+    "characterTarget": 145,
+    "pve": 5,
+    "pveTarget": 5,
+    "remainingCharacters": 0,
+    "registry": "src/data/manual/frame-sheets.json",
+    "reservation": "docs/art-source/motions/desktop-reservation.json",
+    "status": "COMPLETE"
+  },
+  "skillSystems": {
+    "reviewedAt": "2026-09-09",
+    "characters": 145,
+    "tacticalVariants": 24,
+    "timeline": "Shared 50ms simulation/preview release schedule",
+    "tests": 170,
+    "simulationMatches": 200,
+    "simulationBattles": 26961,
+    "tftPublicRuleChecks": {
+      "match": 17,
+      "different": 0,
+      "unverified": 4
+    },
+    "documentation": "docs/SKILL_CHOREOGRAPHY.md",
+    "qa": "docs/qa/SKILL_SYSTEMS_2026-09-09.md"
+  }
+}

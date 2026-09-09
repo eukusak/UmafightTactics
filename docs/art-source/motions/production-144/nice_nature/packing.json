@@ -1,0 +1,443 @@
+{
+  "format": "uft-baked-frames-v1",
+  "scale": 0.416,
+  "anchor": [
+    64,
+    110
+  ],
+  "runtimeSha256": "8d3c7ee9a831996d0aa61fccdc517993f3871149a18c8383784b5d0de128e65c",
+  "frames": [
+    {
+      "frame": 0,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/production-144/nice_nature/alpha.png",
+      "sourceSha256": "63e11d27e1b2e1472da9d42d27c95e5ab43d676efcc7d2cc3d4adfac0b04ea86",
+      "crop": [
+        82,
+        16,
+        244,
+        264
+      ],
+      "destination": [
+        30,
+        7,
+        67,
+        103
+      ]
+    },
+    {
+      "frame": 1,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/production-144/nice_nature/alpha.png",
+      "sourceSha256": "63e11d27e1b2e1472da9d42d27c95e5ab43d676efcc7d2cc3d4adfac0b04ea86",
+      "crop": [
+        329,
+        16,
+        489,
+        264
+      ],
+      "destination": [
+        158,
+        7,
+        67,
+        103
+      ]
+    },
+    {
+      "frame": 2,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/production-144/nice_nature/alpha.png",
+      "sourceSha256": "63e11d27e1b2e1472da9d42d27c95e5ab43d676efcc7d2cc3d4adfac0b04ea86",
+      "crop": [
+        579,
+        14,
+        736,
+        264
+      ],
+      "destination": [
+        287,
+        6,
+        65,
+        104
+      ]
+    },
+    {
+      "frame": 3,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/production-144/nice_nature/alpha.png",
+      "sourceSha256": "63e11d27e1b2e1472da9d42d27c95e5ab43d676efcc7d2cc3d4adfac0b04ea86",
+      "crop": [
+        827,
+        16,
+        983,
+        264
+      ],
+      "destination": [
+        415,
+        7,
+        65,
+        103
+      ]
+    },
+    {
+      "frame": 4,
+      "sourceFrame": 4,
+      "source": "docs/art-source/motions/production-144/nice_nature/alpha.png",
+      "sourceSha256": "63e11d27e1b2e1472da9d42d27c95e5ab43d676efcc7d2cc3d4adfac0b04ea86",
+      "crop": [
+        48,
+        282,
+        236,
+        519
+      ],
+      "destination": [
+        25,
+        139,
+        78,
+        99
+      ]
+    },
+    {
+      "frame": 5,
+      "sourceFrame": 5,
+      "source": "docs/art-source/motions/production-144/nice_nature/alpha.png",
+      "sourceSha256": "63e11d27e1b2e1472da9d42d27c95e5ab43d676efcc7d2cc3d4adfac0b04ea86",
+      "crop": [
+        293,
+        285,
+        494,
+        515
+      ],
+      "destination": [
+        150,
+        142,
+        84,
+        96
+      ]
+    },
+    {
+      "frame": 6,
+      "sourceFrame": 6,
+      "source": "docs/art-source/motions/production-144/nice_nature/alpha.png",
+      "sourceSha256": "63e11d27e1b2e1472da9d42d27c95e5ab43d676efcc7d2cc3d4adfac0b04ea86",
+      "crop": [
+        556,
+        285,
+        742,
+        523
+      ],
+      "destination": [
+        281,
+        139,
+        77,
+        99
+      ]
+    },
+    {
+      "frame": 7,
+      "sourceFrame": 7,
+      "source": "docs/art-source/motions/production-144/nice_nature/alpha.png",
+      "sourceSha256": "63e11d27e1b2e1472da9d42d27c95e5ab43d676efcc7d2cc3d4adfac0b04ea86",
+      "crop": [
+        805,
+        285,
+        993,
+        521
+      ],
+      "destination": [
+        409,
+        140,
+        78,
+        98
+      ]
+    },
+    {
+      "frame": 8,
+      "sourceFrame": 8,
+      "source": "docs/art-source/motions/production-144/nice_nature/alpha.png",
+      "sourceSha256": "63e11d27e1b2e1472da9d42d27c95e5ab43d676efcc7d2cc3d4adfac0b04ea86",
+      "crop": [
+        59,
+        531,
+        248,
+        773
+      ],
+      "destination": [
+        24,
+        265,
+        79,
+        101
+      ]
+    },
+    {
+      "frame": 9,
+      "sourceFrame": 9,
+      "source": "docs/art-source/motions/production-144/nice_nature/alpha.png",
+      "sourceSha256": "63e11d27e1b2e1472da9d42d27c95e5ab43d676efcc7d2cc3d4adfac0b04ea86",
+      "crop": [
+        316,
+        530,
+        476,
+        773
+      ],
+      "destination": [
+        158,
+        265,
+        67,
+        101
+      ]
+    },
+    {
+      "frame": 10,
+      "sourceFrame": 10,
+      "source": "docs/art-source/motions/production-144/nice_nature/alpha.png",
+      "sourceSha256": "63e11d27e1b2e1472da9d42d27c95e5ab43d676efcc7d2cc3d4adfac0b04ea86",
+      "crop": [
+        549,
+        530,
+        747,
+        773
+      ],
+      "destination": [
+        279,
+        265,
+        82,
+        101
+      ]
+    },
+    {
+      "frame": 11,
+      "sourceFrame": 11,
+      "source": "docs/art-source/motions/production-144/nice_nature/alpha.png",
+      "sourceSha256": "63e11d27e1b2e1472da9d42d27c95e5ab43d676efcc7d2cc3d4adfac0b04ea86",
+      "crop": [
+        821,
+        530,
+        980,
+        773
+      ],
+      "destination": [
+        415,
+        265,
+        66,
+        101
+      ]
+    },
+    {
+      "frame": 12,
+      "sourceFrame": 12,
+      "source": "docs/art-source/motions/production-144/nice_nature/alpha.png",
+      "sourceSha256": "63e11d27e1b2e1472da9d42d27c95e5ab43d676efcc7d2cc3d4adfac0b04ea86",
+      "crop": [
+        52,
+        792,
+        213,
+        1040
+      ],
+      "destination": [
+        30,
+        391,
+        67,
+        103
+      ]
+    },
+    {
+      "frame": 13,
+      "sourceFrame": 13,
+      "source": "docs/art-source/motions/production-144/nice_nature/alpha.png",
+      "sourceSha256": "63e11d27e1b2e1472da9d42d27c95e5ab43d676efcc7d2cc3d4adfac0b04ea86",
+      "crop": [
+        302,
+        806,
+        472,
+        1040
+      ],
+      "destination": [
+        156,
+        397,
+        71,
+        97
+      ]
+    },
+    {
+      "frame": 14,
+      "sourceFrame": 14,
+      "source": "docs/art-source/motions/production-144/nice_nature/alpha.png",
+      "sourceSha256": "63e11d27e1b2e1472da9d42d27c95e5ab43d676efcc7d2cc3d4adfac0b04ea86",
+      "crop": [
+        555,
+        801,
+        739,
+        1040
+      ],
+      "destination": [
+        281,
+        395,
+        77,
+        99
+      ]
+    },
+    {
+      "frame": 15,
+      "sourceFrame": 15,
+      "source": "docs/art-source/motions/production-144/nice_nature/alpha.png",
+      "sourceSha256": "63e11d27e1b2e1472da9d42d27c95e5ab43d676efcc7d2cc3d4adfac0b04ea86",
+      "crop": [
+        821,
+        795,
+        981,
+        1040
+      ],
+      "destination": [
+        414,
+        392,
+        67,
+        102
+      ]
+    },
+    {
+      "frame": 16,
+      "sourceFrame": 16,
+      "source": "docs/art-source/motions/production-144/nice_nature/alpha.png",
+      "sourceSha256": "63e11d27e1b2e1472da9d42d27c95e5ab43d676efcc7d2cc3d4adfac0b04ea86",
+      "crop": [
+        44,
+        1055,
+        232,
+        1276
+      ],
+      "destination": [
+        25,
+        530,
+        78,
+        92
+      ]
+    },
+    {
+      "frame": 17,
+      "sourceFrame": 17,
+      "source": "docs/art-source/motions/production-144/nice_nature/alpha.png",
+      "sourceSha256": "63e11d27e1b2e1472da9d42d27c95e5ab43d676efcc7d2cc3d4adfac0b04ea86",
+      "crop": [
+        294,
+        1081,
+        494,
+        1269
+      ],
+      "destination": [
+        150,
+        544,
+        83,
+        78
+      ]
+    },
+    {
+      "frame": 18,
+      "sourceFrame": 18,
+      "source": "docs/art-source/motions/production-144/nice_nature/alpha.png",
+      "sourceSha256": "63e11d27e1b2e1472da9d42d27c95e5ab43d676efcc7d2cc3d4adfac0b04ea86",
+      "crop": [
+        555,
+        1083,
+        740,
+        1268
+      ],
+      "destination": [
+        281,
+        545,
+        77,
+        77
+      ]
+    },
+    {
+      "frame": 19,
+      "sourceFrame": 19,
+      "source": "docs/art-source/motions/production-144/nice_nature/alpha.png",
+      "sourceSha256": "63e11d27e1b2e1472da9d42d27c95e5ab43d676efcc7d2cc3d4adfac0b04ea86",
+      "crop": [
+        790,
+        1162,
+        1018,
+        1273
+      ],
+      "destination": [
+        400,
+        576,
+        95,
+        46
+      ]
+    },
+    {
+      "frame": 20,
+      "sourceFrame": 20,
+      "source": "docs/art-source/motions/production-144/nice_nature/alpha.png",
+      "sourceSha256": "63e11d27e1b2e1472da9d42d27c95e5ab43d676efcc7d2cc3d4adfac0b04ea86",
+      "crop": [
+        64,
+        1284,
+        215,
+        1527
+      ],
+      "destination": [
+        32,
+        649,
+        63,
+        101
+      ]
+    },
+    {
+      "frame": 21,
+      "sourceFrame": 21,
+      "source": "docs/art-source/motions/production-144/nice_nature/alpha.png",
+      "sourceSha256": "63e11d27e1b2e1472da9d42d27c95e5ab43d676efcc7d2cc3d4adfac0b04ea86",
+      "crop": [
+        316,
+        1284,
+        472,
+        1527
+      ],
+      "destination": [
+        159,
+        649,
+        65,
+        101
+      ]
+    },
+    {
+      "frame": 22,
+      "sourceFrame": 22,
+      "source": "docs/art-source/motions/production-144/nice_nature/alpha.png",
+      "sourceSha256": "63e11d27e1b2e1472da9d42d27c95e5ab43d676efcc7d2cc3d4adfac0b04ea86",
+      "crop": [
+        556,
+        1281,
+        722,
+        1527
+      ],
+      "destination": [
+        285,
+        648,
+        69,
+        102
+      ]
+    },
+    {
+      "frame": 23,
+      "sourceFrame": 23,
+      "source": "docs/art-source/motions/production-144/nice_nature/alpha.png",
+      "sourceSha256": "63e11d27e1b2e1472da9d42d27c95e5ab43d676efcc7d2cc3d4adfac0b04ea86",
+      "crop": [
+        830,
+        1280,
+        978,
+        1527
+      ],
+      "destination": [
+        417,
+        647,
+        62,
+        103
+      ]
+    }
+  ]
+}

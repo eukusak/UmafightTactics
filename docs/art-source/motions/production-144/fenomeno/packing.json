@@ -1,0 +1,443 @@
+{
+  "format": "uft-baked-frames-v1",
+  "scale": 0.37410071942446044,
+  "anchor": [
+    64,
+    110
+  ],
+  "runtimeSha256": "8cbb7e5014208eefc59e3f1d0a2bf330310e0b5f9dc8ace31d63bfcd2fbadfc0",
+  "frames": [
+    {
+      "frame": 0,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/production-144/fenomeno/alpha.png",
+      "sourceSha256": "770edd6ebb172ed4cba1e44b93cf828be1725bc073338b7282c9d3ebd0b509db",
+      "crop": [
+        40,
+        8,
+        213,
+        254
+      ],
+      "destination": [
+        31,
+        18,
+        65,
+        92
+      ]
+    },
+    {
+      "frame": 1,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/production-144/fenomeno/alpha.png",
+      "sourceSha256": "770edd6ebb172ed4cba1e44b93cf828be1725bc073338b7282c9d3ebd0b509db",
+      "crop": [
+        297,
+        10,
+        469,
+        254
+      ],
+      "destination": [
+        160,
+        19,
+        64,
+        91
+      ]
+    },
+    {
+      "frame": 2,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/production-144/fenomeno/alpha.png",
+      "sourceSha256": "770edd6ebb172ed4cba1e44b93cf828be1725bc073338b7282c9d3ebd0b509db",
+      "crop": [
+        554,
+        8,
+        723,
+        253
+      ],
+      "destination": [
+        288,
+        18,
+        63,
+        92
+      ]
+    },
+    {
+      "frame": 3,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/production-144/fenomeno/alpha.png",
+      "sourceSha256": "770edd6ebb172ed4cba1e44b93cf828be1725bc073338b7282c9d3ebd0b509db",
+      "crop": [
+        806,
+        8,
+        977,
+        253
+      ],
+      "destination": [
+        416,
+        18,
+        64,
+        92
+      ]
+    },
+    {
+      "frame": 4,
+      "sourceFrame": 4,
+      "source": "docs/art-source/motions/production-144/fenomeno/alpha.png",
+      "sourceSha256": "770edd6ebb172ed4cba1e44b93cf828be1725bc073338b7282c9d3ebd0b509db",
+      "crop": [
+        34,
+        264,
+        234,
+        512
+      ],
+      "destination": [
+        26,
+        145,
+        75,
+        93
+      ]
+    },
+    {
+      "frame": 5,
+      "sourceFrame": 5,
+      "source": "docs/art-source/motions/production-144/fenomeno/alpha.png",
+      "sourceSha256": "770edd6ebb172ed4cba1e44b93cf828be1725bc073338b7282c9d3ebd0b509db",
+      "crop": [
+        283,
+        263,
+        486,
+        506
+      ],
+      "destination": [
+        154,
+        147,
+        76,
+        91
+      ]
+    },
+    {
+      "frame": 6,
+      "sourceFrame": 6,
+      "source": "docs/art-source/motions/production-144/fenomeno/alpha.png",
+      "sourceSha256": "770edd6ebb172ed4cba1e44b93cf828be1725bc073338b7282c9d3ebd0b509db",
+      "crop": [
+        550,
+        263,
+        752,
+        507
+      ],
+      "destination": [
+        282,
+        147,
+        76,
+        91
+      ]
+    },
+    {
+      "frame": 7,
+      "sourceFrame": 7,
+      "source": "docs/art-source/motions/production-144/fenomeno/alpha.png",
+      "sourceSha256": "770edd6ebb172ed4cba1e44b93cf828be1725bc073338b7282c9d3ebd0b509db",
+      "crop": [
+        795,
+        273,
+        1000,
+        507
+      ],
+      "destination": [
+        409,
+        150,
+        77,
+        88
+      ]
+    },
+    {
+      "frame": 8,
+      "sourceFrame": 8,
+      "source": "docs/art-source/motions/production-144/fenomeno/alpha.png",
+      "sourceSha256": "770edd6ebb172ed4cba1e44b93cf828be1725bc073338b7282c9d3ebd0b509db",
+      "crop": [
+        42,
+        516,
+        215,
+        755
+      ],
+      "destination": [
+        31,
+        277,
+        65,
+        89
+      ]
+    },
+    {
+      "frame": 9,
+      "sourceFrame": 9,
+      "source": "docs/art-source/motions/production-144/fenomeno/alpha.png",
+      "sourceSha256": "770edd6ebb172ed4cba1e44b93cf828be1725bc073338b7282c9d3ebd0b509db",
+      "crop": [
+        282,
+        515,
+        470,
+        756
+      ],
+      "destination": [
+        157,
+        276,
+        70,
+        90
+      ]
+    },
+    {
+      "frame": 10,
+      "sourceFrame": 10,
+      "source": "docs/art-source/motions/production-144/fenomeno/alpha.png",
+      "sourceSha256": "770edd6ebb172ed4cba1e44b93cf828be1725bc073338b7282c9d3ebd0b509db",
+      "crop": [
+        532,
+        516,
+        756,
+        758
+      ],
+      "destination": [
+        278,
+        275,
+        84,
+        91
+      ]
+    },
+    {
+      "frame": 11,
+      "sourceFrame": 11,
+      "source": "docs/art-source/motions/production-144/fenomeno/alpha.png",
+      "sourceSha256": "770edd6ebb172ed4cba1e44b93cf828be1725bc073338b7282c9d3ebd0b509db",
+      "crop": [
+        800,
+        516,
+        983,
+        757
+      ],
+      "destination": [
+        414,
+        276,
+        68,
+        90
+      ]
+    },
+    {
+      "frame": 12,
+      "sourceFrame": 12,
+      "source": "docs/art-source/motions/production-144/fenomeno/alpha.png",
+      "sourceSha256": "770edd6ebb172ed4cba1e44b93cf828be1725bc073338b7282c9d3ebd0b509db",
+      "crop": [
+        29,
+        797,
+        226,
+        977
+      ],
+      "destination": [
+        27,
+        427,
+        74,
+        67
+      ]
+    },
+    {
+      "frame": 13,
+      "sourceFrame": 13,
+      "source": "docs/art-source/motions/production-144/fenomeno/alpha.png",
+      "sourceSha256": "770edd6ebb172ed4cba1e44b93cf828be1725bc073338b7282c9d3ebd0b509db",
+      "crop": [
+        292,
+        780,
+        495,
+        969
+      ],
+      "destination": [
+        154,
+        423,
+        76,
+        71
+      ]
+    },
+    {
+      "frame": 14,
+      "sourceFrame": 14,
+      "source": "docs/art-source/motions/production-144/fenomeno/alpha.png",
+      "sourceSha256": "770edd6ebb172ed4cba1e44b93cf828be1725bc073338b7282c9d3ebd0b509db",
+      "crop": [
+        527,
+        802,
+        759,
+        961
+      ],
+      "destination": [
+        276,
+        435,
+        87,
+        59
+      ]
+    },
+    {
+      "frame": 15,
+      "sourceFrame": 15,
+      "source": "docs/art-source/motions/production-144/fenomeno/alpha.png",
+      "sourceSha256": "770edd6ebb172ed4cba1e44b93cf828be1725bc073338b7282c9d3ebd0b509db",
+      "crop": [
+        802,
+        799,
+        1002,
+        974
+      ],
+      "destination": [
+        410,
+        429,
+        75,
+        65
+      ]
+    },
+    {
+      "frame": 16,
+      "sourceFrame": 16,
+      "source": "docs/art-source/motions/production-144/fenomeno/alpha.png",
+      "sourceSha256": "770edd6ebb172ed4cba1e44b93cf828be1725bc073338b7282c9d3ebd0b509db",
+      "crop": [
+        33,
+        985,
+        224,
+        1219
+      ],
+      "destination": [
+        28,
+        534,
+        71,
+        88
+      ]
+    },
+    {
+      "frame": 17,
+      "sourceFrame": 17,
+      "source": "docs/art-source/motions/production-144/fenomeno/alpha.png",
+      "sourceSha256": "770edd6ebb172ed4cba1e44b93cf828be1725bc073338b7282c9d3ebd0b509db",
+      "crop": [
+        286,
+        1018,
+        473,
+        1211
+      ],
+      "destination": [
+        157,
+        550,
+        70,
+        72
+      ]
+    },
+    {
+      "frame": 18,
+      "sourceFrame": 18,
+      "source": "docs/art-source/motions/production-144/fenomeno/alpha.png",
+      "sourceSha256": "770edd6ebb172ed4cba1e44b93cf828be1725bc073338b7282c9d3ebd0b509db",
+      "crop": [
+        532,
+        1028,
+        723,
+        1219
+      ],
+      "destination": [
+        284,
+        551,
+        71,
+        71
+      ]
+    },
+    {
+      "frame": 19,
+      "sourceFrame": 19,
+      "source": "docs/art-source/motions/production-144/fenomeno/alpha.png",
+      "sourceSha256": "770edd6ebb172ed4cba1e44b93cf828be1725bc073338b7282c9d3ebd0b509db",
+      "crop": [
+        768,
+        1100,
+        1017,
+        1216
+      ],
+      "destination": [
+        401,
+        579,
+        93,
+        43
+      ]
+    },
+    {
+      "frame": 20,
+      "sourceFrame": 20,
+      "source": "docs/art-source/motions/production-144/fenomeno/alpha.png",
+      "sourceSha256": "770edd6ebb172ed4cba1e44b93cf828be1725bc073338b7282c9d3ebd0b509db",
+      "crop": [
+        32,
+        1239,
+        213,
+        1514
+      ],
+      "destination": [
+        30,
+        647,
+        68,
+        103
+      ]
+    },
+    {
+      "frame": 21,
+      "sourceFrame": 21,
+      "source": "docs/art-source/motions/production-144/fenomeno/alpha.png",
+      "sourceSha256": "770edd6ebb172ed4cba1e44b93cf828be1725bc073338b7282c9d3ebd0b509db",
+      "crop": [
+        278,
+        1236,
+        466,
+        1514
+      ],
+      "destination": [
+        157,
+        646,
+        70,
+        104
+      ]
+    },
+    {
+      "frame": 22,
+      "sourceFrame": 22,
+      "source": "docs/art-source/motions/production-144/fenomeno/alpha.png",
+      "sourceSha256": "770edd6ebb172ed4cba1e44b93cf828be1725bc073338b7282c9d3ebd0b509db",
+      "crop": [
+        533,
+        1232,
+        730,
+        1491
+      ],
+      "destination": [
+        283,
+        653,
+        74,
+        97
+      ]
+    },
+    {
+      "frame": 23,
+      "sourceFrame": 23,
+      "source": "docs/art-source/motions/production-144/fenomeno/alpha.png",
+      "sourceSha256": "770edd6ebb172ed4cba1e44b93cf828be1725bc073338b7282c9d3ebd0b509db",
+      "crop": [
+        788,
+        1242,
+        969,
+        1518
+      ],
+      "destination": [
+        414,
+        647,
+        68,
+        103
+      ]
+    }
+  ]
+}

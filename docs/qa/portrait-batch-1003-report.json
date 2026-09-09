@@ -1,0 +1,166 @@
+{
+  "batchSize": 10,
+  "validation": "PNG alpha, margins, hashes and visual identity; full application tests not rerun for image-only batch",
+  "files": [
+    {
+      "id": "admire_groove",
+      "sourceSha256": "700ceceb830432a50e5686ab61a3f721b9762ba242a0b184c084a6d12e6f779b",
+      "runtimeSha256": "adb52c7aaa49c0f01151ca6f7d97683a574d25f6aba5319ba8796fed5c685020",
+      "alpha": [
+        0,
+        255
+      ],
+      "bounds": [
+        47,
+        16,
+        214,
+        250
+      ],
+      "reference": "public/assets/characters/race/AdmireGroove-Race.png"
+    },
+    {
+      "id": "dream_journey",
+      "sourceSha256": "df3d9f65c496165b8eff52eabf14c4138905dd79c77d9584cce4fee1775cedbf",
+      "runtimeSha256": "54d684393b2a067b982f13d6d18cafd4064c8288f002b8bdfdec7f9216220672",
+      "alpha": [
+        0,
+        255
+      ],
+      "bounds": [
+        38,
+        15,
+        216,
+        239
+      ],
+      "reference": "public/assets/characters/race/DreamJourney-Race.png"
+    },
+    {
+      "id": "calstone_light_o",
+      "sourceSha256": "ce4049e62474123212a79ba160c3281642465cfd079c7683eb22f42518c08d9e",
+      "runtimeSha256": "1395932dbbefecc273185e6a10cf44b92b445c130fac25d108b1affb7b99ee78",
+      "alpha": [
+        0,
+        255
+      ],
+      "bounds": [
+        40,
+        16,
+        227,
+        244
+      ],
+      "reference": "public/assets/characters/race/CalstoneLightO-Race.png"
+    },
+    {
+      "id": "durandal",
+      "sourceSha256": "7b8553a362587c505d6c6d1793feb9dd7c41296c6c48d3fd9bdb7b161912fce7",
+      "runtimeSha256": "aa4e5d8ab8d896939154f8026bf81b2ed5a400da21bbacc4493484b1a771d171",
+      "alpha": [
+        0,
+        255
+      ],
+      "bounds": [
+        43,
+        6,
+        229,
+        250
+      ],
+      "reference": "public/assets/characters/race/Durandal-Race.png"
+    },
+    {
+      "id": "bubble_gum_fellow",
+      "sourceSha256": "e598bc10c4ed18f4d31b119a2b6cb6d1b2357d5e1af9f1e4e1d0f786dadffbe3",
+      "runtimeSha256": "25ee3a63d6f07a4c119c7aad544789a3959df2924cd1943660612c01cdfc8395",
+      "alpha": [
+        0,
+        255
+      ],
+      "bounds": [
+        16,
+        18,
+        225,
+        242
+      ],
+      "reference": "public/assets/characters/race/BubbleGumFellow-Race.png"
+    },
+    {
+      "id": "sakura_chitose_o",
+      "sourceSha256": "043328ff79700b331cf1339196b13660c8f60595bc914f228a5500e4c9127063",
+      "runtimeSha256": "67ffd8c8a20e811f2f180b50b871b1d412f12fd9c811d64f416f0b060fb42dfa",
+      "alpha": [
+        0,
+        255
+      ],
+      "bounds": [
+        43,
+        7,
+        243,
+        250
+      ],
+      "reference": "public/assets/characters/race/SakuraChitoseO-Race.png"
+    },
+    {
+      "id": "fenomeno",
+      "sourceSha256": "7e54dbf22c184c038bba1aaac1988dece1d27dc0d59a05e25e5327c184cda21d",
+      "runtimeSha256": "cc72c1a889a8a4b749af80365c62e76bcf0897d568412a91e12ca7d8f6e73de7",
+      "alpha": [
+        0,
+        255
+      ],
+      "bounds": [
+        37,
+        11,
+        233,
+        250
+      ],
+      "reference": "public/assets/characters/race/Fenomeno-Race.png"
+    },
+    {
+      "id": "blast_onepiece",
+      "sourceSha256": "769617f728ec47453d39313b2f086e325264c470a34023a9d3d404febc61b906",
+      "runtimeSha256": "abf663aa8c1747f228263ed3a15ee027ee944c077e797b0aee9a3257af59ce95",
+      "alpha": [
+        0,
+        255
+      ],
+      "bounds": [
+        25,
+        21,
+        234,
+        239
+      ],
+      "reference": "public/assets/characters/race/BlastOnepiece-Race.png"
+    },
+    {
+      "id": "almond_eye",
+      "sourceSha256": "99bb408a4e436c2328dbe2d36e688bd876c11ddc9eb3c48cefe32d3327299d8f",
+      "runtimeSha256": "dc4f1d501a79a17802957d7c4512859e87adb69b037fa39a9445d1b392a20082",
+      "alpha": [
+        0,
+        255
+      ],
+      "bounds": [
+        48,
+        11,
+        228,
+        248
+      ],
+      "reference": "public/assets/characters/race/AlmondEye-Race.png"
+    },
+    {
+      "id": "lucky_lilac",
+      "sourceSha256": "8977e8de8e0e616a71923db9ea2c0b3cf1fd17e91c28c74ebc90a92e2141a05f",
+      "runtimeSha256": "d17296dc26a32ee2a5e84d7847be4c6f334b24219ff72d407ec2b3dd2d88b652",
+      "alpha": [
+        0,
+        255
+      ],
+      "bounds": [
+        57,
+        6,
+        246,
+        241
+      ],
+      "reference": "public/assets/characters/race/LuckyLilac-Race.png"
+    }
+  ]
+}

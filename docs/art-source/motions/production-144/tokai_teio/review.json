@@ -1,0 +1,12 @@
+{
+  "approved": true,
+  "source": "alpha.png",
+  "skillReview": "연속 스퍼트: 같은 대상 방향으로 1차 → 2차 → 3차 손짓 발사 → 반동 회복. 세 발사 포즈를 모두 재생하며 다중 대상 부채꼴 공격으로 바꾸지 않음.",
+  "reviewedAt": "2026-09-09",
+  "checks": [
+    "Race costume and identity",
+    "24 poses with correct action rows",
+    "actual skill target and effect",
+    "transparent RGBA"
+  ]
+}

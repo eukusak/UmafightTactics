@@ -1,0 +1,443 @@
+{
+  "format": "uft-baked-frames-v1",
+  "scale": 0.4094488188976378,
+  "anchor": [
+    64,
+    110
+  ],
+  "runtimeSha256": "9020836a3ce86bb2153d19484b9aa2803e4c8bee9d7032b574193611a5b36399",
+  "frames": [
+    {
+      "frame": 0,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/production-144/almond_eye/alpha.png",
+      "sourceSha256": "8041c16e6907408b3e956d58b1e2defebf193a6eb7c33040fb71e94b24e5cc71",
+      "crop": [
+        48,
+        10,
+        209,
+        254
+      ],
+      "destination": [
+        31,
+        10,
+        66,
+        100
+      ]
+    },
+    {
+      "frame": 1,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/production-144/almond_eye/alpha.png",
+      "sourceSha256": "8041c16e6907408b3e956d58b1e2defebf193a6eb7c33040fb71e94b24e5cc71",
+      "crop": [
+        301,
+        13,
+        461,
+        255
+      ],
+      "destination": [
+        159,
+        11,
+        66,
+        99
+      ]
+    },
+    {
+      "frame": 2,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/production-144/almond_eye/alpha.png",
+      "sourceSha256": "8041c16e6907408b3e956d58b1e2defebf193a6eb7c33040fb71e94b24e5cc71",
+      "crop": [
+        557,
+        11,
+        714,
+        254
+      ],
+      "destination": [
+        288,
+        11,
+        64,
+        99
+      ]
+    },
+    {
+      "frame": 3,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/production-144/almond_eye/alpha.png",
+      "sourceSha256": "8041c16e6907408b3e956d58b1e2defebf193a6eb7c33040fb71e94b24e5cc71",
+      "crop": [
+        814,
+        11,
+        970,
+        255
+      ],
+      "destination": [
+        416,
+        10,
+        64,
+        100
+      ]
+    },
+    {
+      "frame": 4,
+      "sourceFrame": 4,
+      "source": "docs/art-source/motions/production-144/almond_eye/alpha.png",
+      "sourceSha256": "8041c16e6907408b3e956d58b1e2defebf193a6eb7c33040fb71e94b24e5cc71",
+      "crop": [
+        12,
+        264,
+        233,
+        506
+      ],
+      "destination": [
+        19,
+        139,
+        90,
+        99
+      ]
+    },
+    {
+      "frame": 5,
+      "sourceFrame": 5,
+      "source": "docs/art-source/motions/production-144/almond_eye/alpha.png",
+      "sourceSha256": "8041c16e6907408b3e956d58b1e2defebf193a6eb7c33040fb71e94b24e5cc71",
+      "crop": [
+        275,
+        264,
+        493,
+        505
+      ],
+      "destination": [
+        147,
+        139,
+        89,
+        99
+      ]
+    },
+    {
+      "frame": 6,
+      "sourceFrame": 6,
+      "source": "docs/art-source/motions/production-144/almond_eye/alpha.png",
+      "sourceSha256": "8041c16e6907408b3e956d58b1e2defebf193a6eb7c33040fb71e94b24e5cc71",
+      "crop": [
+        527,
+        265,
+        745,
+        506
+      ],
+      "destination": [
+        275,
+        139,
+        89,
+        99
+      ]
+    },
+    {
+      "frame": 7,
+      "sourceFrame": 7,
+      "source": "docs/art-source/motions/production-144/almond_eye/alpha.png",
+      "sourceSha256": "8041c16e6907408b3e956d58b1e2defebf193a6eb7c33040fb71e94b24e5cc71",
+      "crop": [
+        779,
+        265,
+        1003,
+        505
+      ],
+      "destination": [
+        402,
+        140,
+        92,
+        98
+      ]
+    },
+    {
+      "frame": 8,
+      "sourceFrame": 8,
+      "source": "docs/art-source/motions/production-144/almond_eye/alpha.png",
+      "sourceSha256": "8041c16e6907408b3e956d58b1e2defebf193a6eb7c33040fb71e94b24e5cc71",
+      "crop": [
+        37,
+        516,
+        236,
+        770
+      ],
+      "destination": [
+        23,
+        262,
+        81,
+        104
+      ]
+    },
+    {
+      "frame": 9,
+      "sourceFrame": 9,
+      "source": "docs/art-source/motions/production-144/almond_eye/alpha.png",
+      "sourceSha256": "8041c16e6907408b3e956d58b1e2defebf193a6eb7c33040fb71e94b24e5cc71",
+      "crop": [
+        282,
+        516,
+        457,
+        770
+      ],
+      "destination": [
+        156,
+        262,
+        72,
+        104
+      ]
+    },
+    {
+      "frame": 10,
+      "sourceFrame": 10,
+      "source": "docs/art-source/motions/production-144/almond_eye/alpha.png",
+      "sourceSha256": "8041c16e6907408b3e956d58b1e2defebf193a6eb7c33040fb71e94b24e5cc71",
+      "crop": [
+        539,
+        518,
+        737,
+        770
+      ],
+      "destination": [
+        279,
+        263,
+        81,
+        103
+      ]
+    },
+    {
+      "frame": 11,
+      "sourceFrame": 11,
+      "source": "docs/art-source/motions/production-144/almond_eye/alpha.png",
+      "sourceSha256": "8041c16e6907408b3e956d58b1e2defebf193a6eb7c33040fb71e94b24e5cc71",
+      "crop": [
+        807,
+        519,
+        979,
+        770
+      ],
+      "destination": [
+        413,
+        263,
+        70,
+        103
+      ]
+    },
+    {
+      "frame": 12,
+      "sourceFrame": 12,
+      "source": "docs/art-source/motions/production-144/almond_eye/alpha.png",
+      "sourceSha256": "8041c16e6907408b3e956d58b1e2defebf193a6eb7c33040fb71e94b24e5cc71",
+      "crop": [
+        38,
+        787,
+        256,
+        1033
+      ],
+      "destination": [
+        19,
+        393,
+        89,
+        101
+      ]
+    },
+    {
+      "frame": 13,
+      "sourceFrame": 13,
+      "source": "docs/art-source/motions/production-144/almond_eye/alpha.png",
+      "sourceSha256": "8041c16e6907408b3e956d58b1e2defebf193a6eb7c33040fb71e94b24e5cc71",
+      "crop": [
+        272,
+        785,
+        497,
+        1033
+      ],
+      "destination": [
+        146,
+        392,
+        92,
+        102
+      ]
+    },
+    {
+      "frame": 14,
+      "sourceFrame": 14,
+      "source": "docs/art-source/motions/production-144/almond_eye/alpha.png",
+      "sourceSha256": "8041c16e6907408b3e956d58b1e2defebf193a6eb7c33040fb71e94b24e5cc71",
+      "crop": [
+        523,
+        789,
+        745,
+        1033
+      ],
+      "destination": [
+        274,
+        394,
+        91,
+        100
+      ]
+    },
+    {
+      "frame": 15,
+      "sourceFrame": 15,
+      "source": "docs/art-source/motions/production-144/almond_eye/alpha.png",
+      "sourceSha256": "8041c16e6907408b3e956d58b1e2defebf193a6eb7c33040fb71e94b24e5cc71",
+      "crop": [
+        817,
+        787,
+        1000,
+        1033
+      ],
+      "destination": [
+        410,
+        393,
+        75,
+        101
+      ]
+    },
+    {
+      "frame": 16,
+      "sourceFrame": 16,
+      "source": "docs/art-source/motions/production-144/almond_eye/alpha.png",
+      "sourceSha256": "8041c16e6907408b3e956d58b1e2defebf193a6eb7c33040fb71e94b24e5cc71",
+      "crop": [
+        32,
+        1038,
+        236,
+        1273
+      ],
+      "destination": [
+        22,
+        526,
+        84,
+        96
+      ]
+    },
+    {
+      "frame": 17,
+      "sourceFrame": 17,
+      "source": "docs/art-source/motions/production-144/almond_eye/alpha.png",
+      "sourceSha256": "8041c16e6907408b3e956d58b1e2defebf193a6eb7c33040fb71e94b24e5cc71",
+      "crop": [
+        298,
+        1065,
+        482,
+        1265
+      ],
+      "destination": [
+        154,
+        540,
+        75,
+        82
+      ]
+    },
+    {
+      "frame": 18,
+      "sourceFrame": 18,
+      "source": "docs/art-source/motions/production-144/almond_eye/alpha.png",
+      "sourceSha256": "8041c16e6907408b3e956d58b1e2defebf193a6eb7c33040fb71e94b24e5cc71",
+      "crop": [
+        537,
+        1095,
+        738,
+        1264
+      ],
+      "destination": [
+        279,
+        553,
+        82,
+        69
+      ]
+    },
+    {
+      "frame": 19,
+      "sourceFrame": 19,
+      "source": "docs/art-source/motions/production-144/almond_eye/alpha.png",
+      "sourceSha256": "8041c16e6907408b3e956d58b1e2defebf193a6eb7c33040fb71e94b24e5cc71",
+      "crop": [
+        778,
+        1138,
+        1004,
+        1263
+      ],
+      "destination": [
+        401,
+        571,
+        93,
+        51
+      ]
+    },
+    {
+      "frame": 20,
+      "sourceFrame": 20,
+      "source": "docs/art-source/motions/production-144/almond_eye/alpha.png",
+      "sourceSha256": "8041c16e6907408b3e956d58b1e2defebf193a6eb7c33040fb71e94b24e5cc71",
+      "crop": [
+        41,
+        1284,
+        209,
+        1533
+      ],
+      "destination": [
+        29,
+        648,
+        69,
+        102
+      ]
+    },
+    {
+      "frame": 21,
+      "sourceFrame": 21,
+      "source": "docs/art-source/motions/production-144/almond_eye/alpha.png",
+      "sourceSha256": "8041c16e6907408b3e956d58b1e2defebf193a6eb7c33040fb71e94b24e5cc71",
+      "crop": [
+        288,
+        1288,
+        461,
+        1533
+      ],
+      "destination": [
+        156,
+        650,
+        71,
+        100
+      ]
+    },
+    {
+      "frame": 22,
+      "sourceFrame": 22,
+      "source": "docs/art-source/motions/production-144/almond_eye/alpha.png",
+      "sourceSha256": "8041c16e6907408b3e956d58b1e2defebf193a6eb7c33040fb71e94b24e5cc71",
+      "crop": [
+        534,
+        1276,
+        725,
+        1507
+      ],
+      "destination": [
+        281,
+        655,
+        78,
+        95
+      ]
+    },
+    {
+      "frame": 23,
+      "sourceFrame": 23,
+      "source": "docs/art-source/motions/production-144/almond_eye/alpha.png",
+      "sourceSha256": "8041c16e6907408b3e956d58b1e2defebf193a6eb7c33040fb71e94b24e5cc71",
+      "crop": [
+        812,
+        1283,
+        979,
+        1533
+      ],
+      "destination": [
+        414,
+        648,
+        68,
+        102
+      ]
+    }
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "batchSize": 5,
+  "validation": "new portraits only; full app test/build not rerun",
+  "files": [
+    {
+      "id": "daitaku_helios",
+      "size": [
+        256,
+        256
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "bounds": [
+        16,
+        6,
+        245,
+        250
+      ],
+      "sourceSha256": "bb5938add9707adccd9456d59ba8e3b78693775f34cd0e6e5910c82b43d72470",
+      "runtimeSha256": "66f85096fdff9d5497dc398ade0570fceacf415782993466d272c3c73ff6e7cb",
+      "reference": "public/assets/characters/race/DaitakuHelios-Race.png"
+    },
+    {
+      "id": "twin_turbo",
+      "size": [
+        256,
+        256
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "bounds": [
+        6,
+        15,
+        250,
+        240
+      ],
+      "sourceSha256": "88958419d5a36e5cd7869618e77649bc275362bb3d0c2bd55b453ca7dd095ded",
+      "runtimeSha256": "f0d845310b3328c63a1a5ffb9e31bb5b24dfdd89c528872d66fe81ae9a5622aa",
+      "reference": "public/assets/characters/race/TwinTurbo-Race.png"
+    },
+    {
+      "id": "satono_diamond",
+      "size": [
+        256,
+        256
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "bounds": [
+        25,
+        6,
+        230,
+        250
+      ],
+      "sourceSha256": "a1730d87eb0aab0d6b0acb0ea31084c9da7eecdda913c4096f76671ba92f58ef",
+      "runtimeSha256": "adce689959dd741fa9465b71bd11f1213ebdc44b86520f523a73d2e638681a54",
+      "reference": "public/assets/characters/race/SatonoDiamond-Race.png"
+    },
+    {
+      "id": "kitasan_black",
+      "size": [
+        256,
+        256
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "bounds": [
+        25,
+        6,
+        231,
+        250
+      ],
+      "sourceSha256": "19d79c7a3888a728ad4444c1f7da207394c39d75b972132949f89cab8f70bb2e",
+      "runtimeSha256": "b9d39bcfa9130c2613b2ba8c9f571a01ccbc12953ec188eb899adf68a77acd42",
+      "reference": "public/assets/characters/race/KitasanBlack-Race.png"
+    },
+    {
+      "id": "sakura_chiyono_o",
+      "size": [
+        256,
+        256
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "bounds": [
+        30,
+        6,
+        225,
+        250
+      ],
+      "sourceSha256": "45c8d20c8ae26965174edcffea43c6a5b029a19ea8258ea248ee5ea13dbefa5b",
+      "runtimeSha256": "1b5d48cec7d1a4737da989e238847abf1b7eeb8f7f92df54b0f09f68ad84f66f",
+      "reference": "public/assets/characters/race/SakuraChiyonoO-Race.png"
+    }
+  ]
+}

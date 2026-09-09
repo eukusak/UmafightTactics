@@ -1,0 +1,12 @@
+{
+  "approved": true,
+  "source": "alpha.png",
+  "skillReview": "노란 재킷, 붉은 머리, 흰 반바지 유지. 동일 적에게 첫 세 프레임 연속 방출 후 반동 회복. 기본 원거리 공격과 자기 보호막의 준비 자세 구별. 24포즈 확인.",
+  "reviewedAt": "2026-09-09",
+  "checks": [
+    "Race costume and identity",
+    "24 poses with correct action rows",
+    "actual skill target and effect",
+    "transparent RGBA"
+  ]
+}

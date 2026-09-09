@@ -1,0 +1,443 @@
+{
+  "format": "uft-baked-frames-v1",
+  "scale": 0.3795620437956204,
+  "anchor": [
+    64,
+    110
+  ],
+  "runtimeSha256": "4ca7dff800c01ae162e43fcf6a67ebb6cc29154887f364d11c605fff3e93a7ac",
+  "frames": [
+    {
+      "frame": 0,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/production-144/gentildonna/alpha.png",
+      "sourceSha256": "b530f8f3201aa3ce749dda1d1da2c0fc1d90324e76798225b6ab61f2b0c50e3e",
+      "crop": [
+        47,
+        4,
+        233,
+        257
+      ],
+      "destination": [
+        28,
+        14,
+        71,
+        96
+      ]
+    },
+    {
+      "frame": 1,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/production-144/gentildonna/alpha.png",
+      "sourceSha256": "b530f8f3201aa3ce749dda1d1da2c0fc1d90324e76798225b6ab61f2b0c50e3e",
+      "crop": [
+        305,
+        5,
+        481,
+        256
+      ],
+      "destination": [
+        158,
+        15,
+        67,
+        95
+      ]
+    },
+    {
+      "frame": 2,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/production-144/gentildonna/alpha.png",
+      "sourceSha256": "b530f8f3201aa3ce749dda1d1da2c0fc1d90324e76798225b6ab61f2b0c50e3e",
+      "crop": [
+        571,
+        4,
+        738,
+        257
+      ],
+      "destination": [
+        288,
+        14,
+        63,
+        96
+      ]
+    },
+    {
+      "frame": 3,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/production-144/gentildonna/alpha.png",
+      "sourceSha256": "b530f8f3201aa3ce749dda1d1da2c0fc1d90324e76798225b6ab61f2b0c50e3e",
+      "crop": [
+        813,
+        4,
+        1002,
+        257
+      ],
+      "destination": [
+        412,
+        14,
+        72,
+        96
+      ]
+    },
+    {
+      "frame": 4,
+      "sourceFrame": 4,
+      "source": "docs/art-source/motions/production-144/gentildonna/alpha.png",
+      "sourceSha256": "b530f8f3201aa3ce749dda1d1da2c0fc1d90324e76798225b6ab61f2b0c50e3e",
+      "crop": [
+        17,
+        267,
+        240,
+        507
+      ],
+      "destination": [
+        21,
+        147,
+        85,
+        91
+      ]
+    },
+    {
+      "frame": 5,
+      "sourceFrame": 5,
+      "source": "docs/art-source/motions/production-144/gentildonna/alpha.png",
+      "sourceSha256": "b530f8f3201aa3ce749dda1d1da2c0fc1d90324e76798225b6ab61f2b0c50e3e",
+      "crop": [
+        300,
+        271,
+        505,
+        507
+      ],
+      "destination": [
+        153,
+        148,
+        78,
+        90
+      ]
+    },
+    {
+      "frame": 6,
+      "sourceFrame": 6,
+      "source": "docs/art-source/motions/production-144/gentildonna/alpha.png",
+      "sourceSha256": "b530f8f3201aa3ce749dda1d1da2c0fc1d90324e76798225b6ab61f2b0c50e3e",
+      "crop": [
+        545,
+        268,
+        764,
+        508
+      ],
+      "destination": [
+        278,
+        147,
+        83,
+        91
+      ]
+    },
+    {
+      "frame": 7,
+      "sourceFrame": 7,
+      "source": "docs/art-source/motions/production-144/gentildonna/alpha.png",
+      "sourceSha256": "b530f8f3201aa3ce749dda1d1da2c0fc1d90324e76798225b6ab61f2b0c50e3e",
+      "crop": [
+        804,
+        274,
+        1023,
+        507
+      ],
+      "destination": [
+        406,
+        150,
+        83,
+        88
+      ]
+    },
+    {
+      "frame": 8,
+      "sourceFrame": 8,
+      "source": "docs/art-source/motions/production-144/gentildonna/alpha.png",
+      "sourceSha256": "b530f8f3201aa3ce749dda1d1da2c0fc1d90324e76798225b6ab61f2b0c50e3e",
+      "crop": [
+        20,
+        511,
+        225,
+        768
+      ],
+      "destination": [
+        25,
+        268,
+        78,
+        98
+      ]
+    },
+    {
+      "frame": 9,
+      "sourceFrame": 9,
+      "source": "docs/art-source/motions/production-144/gentildonna/alpha.png",
+      "sourceSha256": "b530f8f3201aa3ce749dda1d1da2c0fc1d90324e76798225b6ab61f2b0c50e3e",
+      "crop": [
+        278,
+        511,
+        492,
+        768
+      ],
+      "destination": [
+        151,
+        268,
+        81,
+        98
+      ]
+    },
+    {
+      "frame": 10,
+      "sourceFrame": 10,
+      "source": "docs/art-source/motions/production-144/gentildonna/alpha.png",
+      "sourceSha256": "b530f8f3201aa3ce749dda1d1da2c0fc1d90324e76798225b6ab61f2b0c50e3e",
+      "crop": [
+        525,
+        509,
+        768,
+        768
+      ],
+      "destination": [
+        274,
+        268,
+        92,
+        98
+      ]
+    },
+    {
+      "frame": 11,
+      "sourceFrame": 11,
+      "source": "docs/art-source/motions/production-144/gentildonna/alpha.png",
+      "sourceSha256": "b530f8f3201aa3ce749dda1d1da2c0fc1d90324e76798225b6ab61f2b0c50e3e",
+      "crop": [
+        804,
+        511,
+        993,
+        768
+      ],
+      "destination": [
+        412,
+        268,
+        72,
+        98
+      ]
+    },
+    {
+      "frame": 12,
+      "sourceFrame": 12,
+      "source": "docs/art-source/motions/production-144/gentildonna/alpha.png",
+      "sourceSha256": "b530f8f3201aa3ce749dda1d1da2c0fc1d90324e76798225b6ab61f2b0c50e3e",
+      "crop": [
+        41,
+        768,
+        224,
+        1033
+      ],
+      "destination": [
+        29,
+        393,
+        69,
+        101
+      ]
+    },
+    {
+      "frame": 13,
+      "sourceFrame": 13,
+      "source": "docs/art-source/motions/production-144/gentildonna/alpha.png",
+      "sourceSha256": "b530f8f3201aa3ce749dda1d1da2c0fc1d90324e76798225b6ab61f2b0c50e3e",
+      "crop": [
+        289,
+        768,
+        493,
+        1033
+      ],
+      "destination": [
+        153,
+        393,
+        77,
+        101
+      ]
+    },
+    {
+      "frame": 14,
+      "sourceFrame": 14,
+      "source": "docs/art-source/motions/production-144/gentildonna/alpha.png",
+      "sourceSha256": "b530f8f3201aa3ce749dda1d1da2c0fc1d90324e76798225b6ab61f2b0c50e3e",
+      "crop": [
+        526,
+        768,
+        771,
+        1033
+      ],
+      "destination": [
+        273,
+        393,
+        93,
+        101
+      ]
+    },
+    {
+      "frame": 15,
+      "sourceFrame": 15,
+      "source": "docs/art-source/motions/production-144/gentildonna/alpha.png",
+      "sourceSha256": "b530f8f3201aa3ce749dda1d1da2c0fc1d90324e76798225b6ab61f2b0c50e3e",
+      "crop": [
+        810,
+        773,
+        1011,
+        1032
+      ],
+      "destination": [
+        410,
+        396,
+        76,
+        98
+      ]
+    },
+    {
+      "frame": 16,
+      "sourceFrame": 16,
+      "source": "docs/art-source/motions/production-144/gentildonna/alpha.png",
+      "sourceSha256": "b530f8f3201aa3ce749dda1d1da2c0fc1d90324e76798225b6ab61f2b0c50e3e",
+      "crop": [
+        43,
+        1035,
+        236,
+        1258
+      ],
+      "destination": [
+        27,
+        537,
+        73,
+        85
+      ]
+    },
+    {
+      "frame": 17,
+      "sourceFrame": 17,
+      "source": "docs/art-source/motions/production-144/gentildonna/alpha.png",
+      "sourceSha256": "b530f8f3201aa3ce749dda1d1da2c0fc1d90324e76798225b6ab61f2b0c50e3e",
+      "crop": [
+        288,
+        1044,
+        478,
+        1241
+      ],
+      "destination": [
+        156,
+        547,
+        72,
+        75
+      ]
+    },
+    {
+      "frame": 18,
+      "sourceFrame": 18,
+      "source": "docs/art-source/motions/production-144/gentildonna/alpha.png",
+      "sourceSha256": "b530f8f3201aa3ce749dda1d1da2c0fc1d90324e76798225b6ab61f2b0c50e3e",
+      "crop": [
+        520,
+        1070,
+        757,
+        1243
+      ],
+      "destination": [
+        275,
+        556,
+        90,
+        66
+      ]
+    },
+    {
+      "frame": 19,
+      "sourceFrame": 19,
+      "source": "docs/art-source/motions/production-144/gentildonna/alpha.png",
+      "sourceSha256": "b530f8f3201aa3ce749dda1d1da2c0fc1d90324e76798225b6ab61f2b0c50e3e",
+      "crop": [
+        764,
+        1133,
+        1019,
+        1242
+      ],
+      "destination": [
+        399,
+        581,
+        97,
+        41
+      ]
+    },
+    {
+      "frame": 20,
+      "sourceFrame": 20,
+      "source": "docs/art-source/motions/production-144/gentildonna/alpha.png",
+      "sourceSha256": "b530f8f3201aa3ce749dda1d1da2c0fc1d90324e76798225b6ab61f2b0c50e3e",
+      "crop": [
+        36,
+        1259,
+        224,
+        1532
+      ],
+      "destination": [
+        28,
+        646,
+        71,
+        104
+      ]
+    },
+    {
+      "frame": 21,
+      "sourceFrame": 21,
+      "source": "docs/art-source/motions/production-144/gentildonna/alpha.png",
+      "sourceSha256": "b530f8f3201aa3ce749dda1d1da2c0fc1d90324e76798225b6ab61f2b0c50e3e",
+      "crop": [
+        282,
+        1260,
+        468,
+        1532
+      ],
+      "destination": [
+        156,
+        647,
+        71,
+        103
+      ]
+    },
+    {
+      "frame": 22,
+      "sourceFrame": 22,
+      "source": "docs/art-source/motions/production-144/gentildonna/alpha.png",
+      "sourceSha256": "b530f8f3201aa3ce749dda1d1da2c0fc1d90324e76798225b6ab61f2b0c50e3e",
+      "crop": [
+        544,
+        1258,
+        731,
+        1529
+      ],
+      "destination": [
+        284,
+        647,
+        71,
+        103
+      ]
+    },
+    {
+      "frame": 23,
+      "sourceFrame": 23,
+      "source": "docs/art-source/motions/production-144/gentildonna/alpha.png",
+      "sourceSha256": "b530f8f3201aa3ce749dda1d1da2c0fc1d90324e76798225b6ab61f2b0c50e3e",
+      "crop": [
+        802,
+        1258,
+        980,
+        1532
+      ],
+      "destination": [
+        414,
+        646,
+        68,
+        104
+      ]
+    }
+  ]
+}

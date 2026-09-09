@@ -1,0 +1,443 @@
+{
+  "format": "uft-baked-frames-v1",
+  "scale": 0.4094488188976378,
+  "anchor": [
+    64,
+    110
+  ],
+  "runtimeSha256": "c140788434f98d2abe24be856322238cac9f44bdcb85a83e812bd450e8808023",
+  "frames": [
+    {
+      "frame": 0,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/production-144/seiun_sky/clean-alpha.png",
+      "sourceSha256": "19425508aae31f4af7ceeef2e50605ac5861b3273f0cd08441ae39ae91da3bad",
+      "crop": [
+        58,
+        22,
+        183,
+        259
+      ],
+      "destination": [
+        38,
+        13,
+        51,
+        97
+      ]
+    },
+    {
+      "frame": 1,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/production-144/seiun_sky/clean-alpha.png",
+      "sourceSha256": "19425508aae31f4af7ceeef2e50605ac5861b3273f0cd08441ae39ae91da3bad",
+      "crop": [
+        322,
+        22,
+        439,
+        259
+      ],
+      "destination": [
+        168,
+        13,
+        48,
+        97
+      ]
+    },
+    {
+      "frame": 2,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/production-144/seiun_sky/clean-alpha.png",
+      "sourceSha256": "19425508aae31f4af7ceeef2e50605ac5861b3273f0cd08441ae39ae91da3bad",
+      "crop": [
+        582,
+        22,
+        692,
+        259
+      ],
+      "destination": [
+        297,
+        13,
+        45,
+        97
+      ]
+    },
+    {
+      "frame": 3,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/production-144/seiun_sky/clean-alpha.png",
+      "sourceSha256": "19425508aae31f4af7ceeef2e50605ac5861b3273f0cd08441ae39ae91da3bad",
+      "crop": [
+        838,
+        21,
+        959,
+        259
+      ],
+      "destination": [
+        423,
+        13,
+        50,
+        97
+      ]
+    },
+    {
+      "frame": 4,
+      "sourceFrame": 4,
+      "source": "docs/art-source/motions/production-144/seiun_sky/clean-alpha.png",
+      "sourceSha256": "19425508aae31f4af7ceeef2e50605ac5861b3273f0cd08441ae39ae91da3bad",
+      "crop": [
+        40,
+        291,
+        208,
+        522
+      ],
+      "destination": [
+        29,
+        143,
+        69,
+        95
+      ]
+    },
+    {
+      "frame": 5,
+      "sourceFrame": 5,
+      "source": "docs/art-source/motions/production-144/seiun_sky/clean-alpha.png",
+      "sourceSha256": "19425508aae31f4af7ceeef2e50605ac5861b3273f0cd08441ae39ae91da3bad",
+      "crop": [
+        291,
+        292,
+        468,
+        521
+      ],
+      "destination": [
+        156,
+        144,
+        72,
+        94
+      ]
+    },
+    {
+      "frame": 6,
+      "sourceFrame": 6,
+      "source": "docs/art-source/motions/production-144/seiun_sky/clean-alpha.png",
+      "sourceSha256": "19425508aae31f4af7ceeef2e50605ac5861b3273f0cd08441ae39ae91da3bad",
+      "crop": [
+        550,
+        289,
+        718,
+        522
+      ],
+      "destination": [
+        285,
+        143,
+        69,
+        95
+      ]
+    },
+    {
+      "frame": 7,
+      "sourceFrame": 7,
+      "source": "docs/art-source/motions/production-144/seiun_sky/clean-alpha.png",
+      "sourceSha256": "19425508aae31f4af7ceeef2e50605ac5861b3273f0cd08441ae39ae91da3bad",
+      "crop": [
+        814,
+        290,
+        992,
+        521
+      ],
+      "destination": [
+        411,
+        143,
+        73,
+        95
+      ]
+    },
+    {
+      "frame": 8,
+      "sourceFrame": 8,
+      "source": "docs/art-source/motions/production-144/seiun_sky/clean-alpha.png",
+      "sourceSha256": "19425508aae31f4af7ceeef2e50605ac5861b3273f0cd08441ae39ae91da3bad",
+      "crop": [
+        61,
+        544,
+        195,
+        783
+      ],
+      "destination": [
+        36,
+        268,
+        55,
+        98
+      ]
+    },
+    {
+      "frame": 9,
+      "sourceFrame": 9,
+      "source": "docs/art-source/motions/production-144/seiun_sky/clean-alpha.png",
+      "sourceSha256": "19425508aae31f4af7ceeef2e50605ac5861b3273f0cd08441ae39ae91da3bad",
+      "crop": [
+        298,
+        547,
+        458,
+        781
+      ],
+      "destination": [
+        159,
+        270,
+        66,
+        96
+      ]
+    },
+    {
+      "frame": 10,
+      "sourceFrame": 10,
+      "source": "docs/art-source/motions/production-144/seiun_sky/clean-alpha.png",
+      "sourceSha256": "19425508aae31f4af7ceeef2e50605ac5861b3273f0cd08441ae39ae91da3bad",
+      "crop": [
+        556,
+        544,
+        743,
+        783
+      ],
+      "destination": [
+        281,
+        268,
+        77,
+        98
+      ]
+    },
+    {
+      "frame": 11,
+      "sourceFrame": 11,
+      "source": "docs/art-source/motions/production-144/seiun_sky/clean-alpha.png",
+      "sourceSha256": "19425508aae31f4af7ceeef2e50605ac5861b3273f0cd08441ae39ae91da3bad",
+      "crop": [
+        844,
+        540,
+        968,
+        783
+      ],
+      "destination": [
+        422,
+        267,
+        51,
+        99
+      ]
+    },
+    {
+      "frame": 12,
+      "sourceFrame": 12,
+      "source": "docs/art-source/motions/production-144/seiun_sky/clean-alpha.png",
+      "sourceSha256": "19425508aae31f4af7ceeef2e50605ac5861b3273f0cd08441ae39ae91da3bad",
+      "crop": [
+        75,
+        811,
+        213,
+        1052
+      ],
+      "destination": [
+        35,
+        395,
+        57,
+        99
+      ]
+    },
+    {
+      "frame": 13,
+      "sourceFrame": 13,
+      "source": "docs/art-source/motions/production-144/seiun_sky/clean-alpha.png",
+      "sourceSha256": "19425508aae31f4af7ceeef2e50605ac5861b3273f0cd08441ae39ae91da3bad",
+      "crop": [
+        319,
+        802,
+        451,
+        1056
+      ],
+      "destination": [
+        165,
+        390,
+        54,
+        104
+      ]
+    },
+    {
+      "frame": 14,
+      "sourceFrame": 14,
+      "source": "docs/art-source/motions/production-144/seiun_sky/clean-alpha.png",
+      "sourceSha256": "19425508aae31f4af7ceeef2e50605ac5861b3273f0cd08441ae39ae91da3bad",
+      "crop": [
+        563,
+        810,
+        739,
+        1056
+      ],
+      "destination": [
+        284,
+        393,
+        72,
+        101
+      ]
+    },
+    {
+      "frame": 15,
+      "sourceFrame": 15,
+      "source": "docs/art-source/motions/production-144/seiun_sky/clean-alpha.png",
+      "sourceSha256": "19425508aae31f4af7ceeef2e50605ac5861b3273f0cd08441ae39ae91da3bad",
+      "crop": [
+        850,
+        809,
+        972,
+        1056
+      ],
+      "destination": [
+        423,
+        393,
+        50,
+        101
+      ]
+    },
+    {
+      "frame": 16,
+      "sourceFrame": 16,
+      "source": "docs/art-source/motions/production-144/seiun_sky/clean-alpha.png",
+      "sourceSha256": "19425508aae31f4af7ceeef2e50605ac5861b3273f0cd08441ae39ae91da3bad",
+      "crop": [
+        49,
+        1067,
+        192,
+        1283
+      ],
+      "destination": [
+        34,
+        534,
+        59,
+        88
+      ]
+    },
+    {
+      "frame": 17,
+      "sourceFrame": 17,
+      "source": "docs/art-source/motions/production-144/seiun_sky/clean-alpha.png",
+      "sourceSha256": "19425508aae31f4af7ceeef2e50605ac5861b3273f0cd08441ae39ae91da3bad",
+      "crop": [
+        300,
+        1086,
+        462,
+        1281
+      ],
+      "destination": [
+        159,
+        542,
+        66,
+        80
+      ]
+    },
+    {
+      "frame": 18,
+      "sourceFrame": 18,
+      "source": "docs/art-source/motions/production-144/seiun_sky/clean-alpha.png",
+      "sourceSha256": "19425508aae31f4af7ceeef2e50605ac5861b3273f0cd08441ae39ae91da3bad",
+      "crop": [
+        554,
+        1094,
+        718,
+        1283
+      ],
+      "destination": [
+        286,
+        545,
+        67,
+        77
+      ]
+    },
+    {
+      "frame": 19,
+      "sourceFrame": 19,
+      "source": "docs/art-source/motions/production-144/seiun_sky/clean-alpha.png",
+      "sourceSha256": "19425508aae31f4af7ceeef2e50605ac5861b3273f0cd08441ae39ae91da3bad",
+      "crop": [
+        788,
+        1170,
+        1017,
+        1279
+      ],
+      "destination": [
+        401,
+        577,
+        94,
+        45
+      ]
+    },
+    {
+      "frame": 20,
+      "sourceFrame": 20,
+      "source": "docs/art-source/motions/production-144/seiun_sky/clean-alpha.png",
+      "sourceSha256": "19425508aae31f4af7ceeef2e50605ac5861b3273f0cd08441ae39ae91da3bad",
+      "crop": [
+        70,
+        1293,
+        192,
+        1531
+      ],
+      "destination": [
+        39,
+        653,
+        50,
+        97
+      ]
+    },
+    {
+      "frame": 21,
+      "sourceFrame": 21,
+      "source": "docs/art-source/motions/production-144/seiun_sky/clean-alpha.png",
+      "sourceSha256": "19425508aae31f4af7ceeef2e50605ac5861b3273f0cd08441ae39ae91da3bad",
+      "crop": [
+        312,
+        1289,
+        440,
+        1530
+      ],
+      "destination": [
+        166,
+        651,
+        52,
+        99
+      ]
+    },
+    {
+      "frame": 22,
+      "sourceFrame": 22,
+      "source": "docs/art-source/motions/production-144/seiun_sky/clean-alpha.png",
+      "sourceSha256": "19425508aae31f4af7ceeef2e50605ac5861b3273f0cd08441ae39ae91da3bad",
+      "crop": [
+        574,
+        1285,
+        727,
+        1530
+      ],
+      "destination": [
+        288,
+        650,
+        63,
+        100
+      ]
+    },
+    {
+      "frame": 23,
+      "sourceFrame": 23,
+      "source": "docs/art-source/motions/production-144/seiun_sky/clean-alpha.png",
+      "sourceSha256": "19425508aae31f4af7ceeef2e50605ac5861b3273f0cd08441ae39ae91da3bad",
+      "crop": [
+        839,
+        1294,
+        959,
+        1532
+      ],
+      "destination": [
+        423,
+        653,
+        49,
+        97
+      ]
+    }
+  ]
+}

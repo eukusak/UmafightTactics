@@ -1,0 +1,443 @@
+{
+  "format": "uft-baked-frames-v1",
+  "scale": 0.4094488188976378,
+  "anchor": [
+    64,
+    110
+  ],
+  "runtimeSha256": "39b9ce263b67f40a58c1bd92fddc4aa189fb5e5538ca9be64bd55353100c2377",
+  "frames": [
+    {
+      "frame": 0,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/production-144/stay_gold/alpha.png",
+      "sourceSha256": "92801672fb056281be9fbfff1eff8d8387966e73201f2b8bbd29255ec06bd590",
+      "crop": [
+        74,
+        17,
+        218,
+        256
+      ],
+      "destination": [
+        34,
+        12,
+        59,
+        98
+      ]
+    },
+    {
+      "frame": 1,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/production-144/stay_gold/alpha.png",
+      "sourceSha256": "92801672fb056281be9fbfff1eff8d8387966e73201f2b8bbd29255ec06bd590",
+      "crop": [
+        318,
+        19,
+        463,
+        256
+      ],
+      "destination": [
+        162,
+        13,
+        59,
+        97
+      ]
+    },
+    {
+      "frame": 2,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/production-144/stay_gold/alpha.png",
+      "sourceSha256": "92801672fb056281be9fbfff1eff8d8387966e73201f2b8bbd29255ec06bd590",
+      "crop": [
+        571,
+        20,
+        717,
+        256
+      ],
+      "destination": [
+        290,
+        13,
+        60,
+        97
+      ]
+    },
+    {
+      "frame": 3,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/production-144/stay_gold/alpha.png",
+      "sourceSha256": "92801672fb056281be9fbfff1eff8d8387966e73201f2b8bbd29255ec06bd590",
+      "crop": [
+        819,
+        20,
+        956,
+        256
+      ],
+      "destination": [
+        420,
+        13,
+        56,
+        97
+      ]
+    },
+    {
+      "frame": 4,
+      "sourceFrame": 4,
+      "source": "docs/art-source/motions/production-144/stay_gold/alpha.png",
+      "sourceSha256": "92801672fb056281be9fbfff1eff8d8387966e73201f2b8bbd29255ec06bd590",
+      "crop": [
+        33,
+        267,
+        231,
+        501
+      ],
+      "destination": [
+        23,
+        142,
+        81,
+        96
+      ]
+    },
+    {
+      "frame": 5,
+      "sourceFrame": 5,
+      "source": "docs/art-source/motions/production-144/stay_gold/alpha.png",
+      "sourceSha256": "92801672fb056281be9fbfff1eff8d8387966e73201f2b8bbd29255ec06bd590",
+      "crop": [
+        287,
+        269,
+        483,
+        497
+      ],
+      "destination": [
+        152,
+        145,
+        80,
+        93
+      ]
+    },
+    {
+      "frame": 6,
+      "sourceFrame": 6,
+      "source": "docs/art-source/motions/production-144/stay_gold/alpha.png",
+      "sourceSha256": "92801672fb056281be9fbfff1eff8d8387966e73201f2b8bbd29255ec06bd590",
+      "crop": [
+        547,
+        272,
+        738,
+        500
+      ],
+      "destination": [
+        281,
+        145,
+        78,
+        93
+      ]
+    },
+    {
+      "frame": 7,
+      "sourceFrame": 7,
+      "source": "docs/art-source/motions/production-144/stay_gold/alpha.png",
+      "sourceSha256": "92801672fb056281be9fbfff1eff8d8387966e73201f2b8bbd29255ec06bd590",
+      "crop": [
+        788,
+        271,
+        991,
+        506
+      ],
+      "destination": [
+        406,
+        142,
+        83,
+        96
+      ]
+    },
+    {
+      "frame": 8,
+      "sourceFrame": 8,
+      "source": "docs/art-source/motions/production-144/stay_gold/alpha.png",
+      "sourceSha256": "92801672fb056281be9fbfff1eff8d8387966e73201f2b8bbd29255ec06bd590",
+      "crop": [
+        44,
+        515,
+        206,
+        759
+      ],
+      "destination": [
+        31,
+        266,
+        66,
+        100
+      ]
+    },
+    {
+      "frame": 9,
+      "sourceFrame": 9,
+      "source": "docs/art-source/motions/production-144/stay_gold/alpha.png",
+      "sourceSha256": "92801672fb056281be9fbfff1eff8d8387966e73201f2b8bbd29255ec06bd590",
+      "crop": [
+        307,
+        512,
+        472,
+        759
+      ],
+      "destination": [
+        158,
+        265,
+        68,
+        101
+      ]
+    },
+    {
+      "frame": 10,
+      "sourceFrame": 10,
+      "source": "docs/art-source/motions/production-144/stay_gold/alpha.png",
+      "sourceSha256": "92801672fb056281be9fbfff1eff8d8387966e73201f2b8bbd29255ec06bd590",
+      "crop": [
+        544,
+        518,
+        749,
+        759
+      ],
+      "destination": [
+        278,
+        267,
+        84,
+        99
+      ]
+    },
+    {
+      "frame": 11,
+      "sourceFrame": 11,
+      "source": "docs/art-source/motions/production-144/stay_gold/alpha.png",
+      "sourceSha256": "92801672fb056281be9fbfff1eff8d8387966e73201f2b8bbd29255ec06bd590",
+      "crop": [
+        828,
+        514,
+        977,
+        759
+      ],
+      "destination": [
+        417,
+        266,
+        61,
+        100
+      ]
+    },
+    {
+      "frame": 12,
+      "sourceFrame": 12,
+      "source": "docs/art-source/motions/production-144/stay_gold/alpha.png",
+      "sourceSha256": "92801672fb056281be9fbfff1eff8d8387966e73201f2b8bbd29255ec06bd590",
+      "crop": [
+        44,
+        777,
+        207,
+        1021
+      ],
+      "destination": [
+        30,
+        394,
+        67,
+        100
+      ]
+    },
+    {
+      "frame": 13,
+      "sourceFrame": 13,
+      "source": "docs/art-source/motions/production-144/stay_gold/alpha.png",
+      "sourceSha256": "92801672fb056281be9fbfff1eff8d8387966e73201f2b8bbd29255ec06bd590",
+      "crop": [
+        309,
+        770,
+        469,
+        1019
+      ],
+      "destination": [
+        159,
+        392,
+        66,
+        102
+      ]
+    },
+    {
+      "frame": 14,
+      "sourceFrame": 14,
+      "source": "docs/art-source/motions/production-144/stay_gold/alpha.png",
+      "sourceSha256": "92801672fb056281be9fbfff1eff8d8387966e73201f2b8bbd29255ec06bd590",
+      "crop": [
+        564,
+        768,
+        767,
+        1021
+      ],
+      "destination": [
+        278,
+        390,
+        83,
+        104
+      ]
+    },
+    {
+      "frame": 15,
+      "sourceFrame": 15,
+      "source": "docs/art-source/motions/production-144/stay_gold/alpha.png",
+      "sourceSha256": "92801672fb056281be9fbfff1eff8d8387966e73201f2b8bbd29255ec06bd590",
+      "crop": [
+        828,
+        776,
+        985,
+        1019
+      ],
+      "destination": [
+        416,
+        395,
+        64,
+        99
+      ]
+    },
+    {
+      "frame": 16,
+      "sourceFrame": 16,
+      "source": "docs/art-source/motions/production-144/stay_gold/alpha.png",
+      "sourceSha256": "92801672fb056281be9fbfff1eff8d8387966e73201f2b8bbd29255ec06bd590",
+      "crop": [
+        51,
+        1027,
+        228,
+        1255
+      ],
+      "destination": [
+        28,
+        529,
+        72,
+        93
+      ]
+    },
+    {
+      "frame": 17,
+      "sourceFrame": 17,
+      "source": "docs/art-source/motions/production-144/stay_gold/alpha.png",
+      "sourceSha256": "92801672fb056281be9fbfff1eff8d8387966e73201f2b8bbd29255ec06bd590",
+      "crop": [
+        284,
+        1064,
+        474,
+        1255
+      ],
+      "destination": [
+        153,
+        544,
+        78,
+        78
+      ]
+    },
+    {
+      "frame": 18,
+      "sourceFrame": 18,
+      "source": "docs/art-source/motions/production-144/stay_gold/alpha.png",
+      "sourceSha256": "92801672fb056281be9fbfff1eff8d8387966e73201f2b8bbd29255ec06bd590",
+      "crop": [
+        528,
+        1064,
+        746,
+        1253
+      ],
+      "destination": [
+        275,
+        545,
+        89,
+        77
+      ]
+    },
+    {
+      "frame": 19,
+      "sourceFrame": 19,
+      "source": "docs/art-source/motions/production-144/stay_gold/alpha.png",
+      "sourceSha256": "92801672fb056281be9fbfff1eff8d8387966e73201f2b8bbd29255ec06bd590",
+      "crop": [
+        765,
+        1133,
+        1020,
+        1251
+      ],
+      "destination": [
+        396,
+        574,
+        104,
+        48
+      ]
+    },
+    {
+      "frame": 20,
+      "sourceFrame": 20,
+      "source": "docs/art-source/motions/production-144/stay_gold/alpha.png",
+      "sourceSha256": "92801672fb056281be9fbfff1eff8d8387966e73201f2b8bbd29255ec06bd590",
+      "crop": [
+        57,
+        1276,
+        201,
+        1522
+      ],
+      "destination": [
+        34,
+        649,
+        59,
+        101
+      ]
+    },
+    {
+      "frame": 21,
+      "sourceFrame": 21,
+      "source": "docs/art-source/motions/production-144/stay_gold/alpha.png",
+      "sourceSha256": "92801672fb056281be9fbfff1eff8d8387966e73201f2b8bbd29255ec06bd590",
+      "crop": [
+        319,
+        1270,
+        466,
+        1519
+      ],
+      "destination": [
+        162,
+        648,
+        60,
+        102
+      ]
+    },
+    {
+      "frame": 22,
+      "sourceFrame": 22,
+      "source": "docs/art-source/motions/production-144/stay_gold/alpha.png",
+      "sourceSha256": "92801672fb056281be9fbfff1eff8d8387966e73201f2b8bbd29255ec06bd590",
+      "crop": [
+        552,
+        1267,
+        732,
+        1521
+      ],
+      "destination": [
+        283,
+        646,
+        74,
+        104
+      ]
+    },
+    {
+      "frame": 23,
+      "sourceFrame": 23,
+      "source": "docs/art-source/motions/production-144/stay_gold/alpha.png",
+      "sourceSha256": "92801672fb056281be9fbfff1eff8d8387966e73201f2b8bbd29255ec06bd590",
+      "crop": [
+        812,
+        1273,
+        966,
+        1522
+      ],
+      "destination": [
+        416,
+        648,
+        63,
+        102
+      ]
+    }
+  ]
+}

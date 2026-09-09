@@ -1,0 +1,12 @@
+{
+  "approved": true,
+  "source": "alpha.png",
+  "skillReview": "연속 스퍼트: 같은 대상 방향 첫 손짓 → 두 번째 손바닥 → 세 번째 양손 방출 → 반동 회복. 총기나 다른 대상 공격 추가 없음.",
+  "reviewedAt": "2026-09-09",
+  "checks": [
+    "Race costume and identity",
+    "24 poses with correct action rows",
+    "actual skill target and effect",
+    "transparent RGBA"
+  ]
+}

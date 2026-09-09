@@ -1,5 +1,6 @@
 /** localStorage save/load (spec §30). Saves are deterministic replay points. */
 import { SAVE_KEY } from '../constants';
+import { isSeasonId } from '../seasons/catalog';
 import { ROSTER_HASH } from '../roster';
 import type { MatchState } from '../state';
 import { RoundDirector } from '../rounds/director';
@@ -12,6 +13,7 @@ export type SaveGame = {
 };
 
 export function serializeMatch(director: RoundDirector): SaveGame {
+  if (director.hasPendingSettlement) throw new Error('An unsettled battle is not a save checkpoint');
   director.syncRng();
   return {
     version: 1,
@@ -36,6 +38,10 @@ export function parseSave(raw: string): LoadResult {
   if (!parsed || parsed.version !== 1 || !parsed.match) return { ok: false, reason: 'CORRUPT' };
   // A data rebuild changes unit ids and costs, so old saves cannot be resumed.
   if (parsed.activeRosterHash !== ROSTER_HASH) return { ok: false, reason: 'ROSTER_MISMATCH' };
+  if (!isSeasonId(parsed.match.seasonId) || parsed.match.pool?.seasonId !== parsed.match.seasonId
+    || !Array.isArray(parsed.match.players) || parsed.match.players.some(p => p.seasonId !== parsed.match.seasonId)) {
+    return { ok: false, reason: 'CORRUPT' };
+  }
   return { ok: true, save: parsed };
 }
 

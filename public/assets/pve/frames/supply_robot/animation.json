@@ -1,0 +1,61 @@
+{
+  "sheet": "pve/supply_robot.png",
+  "cell": [
+    128,
+    128
+  ],
+  "anchor": [
+    64,
+    110
+  ],
+  "clips": {
+    "idle": {
+      "fps": 8,
+      "loop": true,
+      "files": [
+        "pve/frames/supply_robot/idle/00.png",
+        "pve/frames/supply_robot/idle/01.png",
+        "pve/frames/supply_robot/idle/02.png",
+        "pve/frames/supply_robot/idle/03.png",
+        "pve/frames/supply_robot/idle/04.png",
+        "pve/frames/supply_robot/idle/05.png"
+      ]
+    },
+    "basic_attack": {
+      "fps": 14,
+      "loop": false,
+      "files": [
+        "pve/frames/supply_robot/basic_attack/00.png",
+        "pve/frames/supply_robot/basic_attack/01.png",
+        "pve/frames/supply_robot/basic_attack/02.png",
+        "pve/frames/supply_robot/basic_attack/03.png",
+        "pve/frames/supply_robot/basic_attack/04.png",
+        "pve/frames/supply_robot/basic_attack/05.png",
+        "pve/frames/supply_robot/basic_attack/06.png",
+        "pve/frames/supply_robot/basic_attack/07.png"
+      ]
+    },
+    "hit": {
+      "fps": 12,
+      "loop": false,
+      "files": [
+        "pve/frames/supply_robot/hit/00.png",
+        "pve/frames/supply_robot/hit/01.png",
+        "pve/frames/supply_robot/hit/02.png",
+        "pve/frames/supply_robot/hit/03.png"
+      ]
+    },
+    "ko": {
+      "fps": 10,
+      "loop": false,
+      "files": [
+        "pve/frames/supply_robot/ko/00.png",
+        "pve/frames/supply_robot/ko/01.png",
+        "pve/frames/supply_robot/ko/02.png",
+        "pve/frames/supply_robot/ko/03.png",
+        "pve/frames/supply_robot/ko/04.png",
+        "pve/frames/supply_robot/ko/05.png"
+      ]
+    }
+  }
+}

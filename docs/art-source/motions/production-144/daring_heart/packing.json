@@ -1,0 +1,443 @@
+{
+  "format": "uft-baked-frames-v1",
+  "scale": 0.39097744360902253,
+  "anchor": [
+    64,
+    110
+  ],
+  "runtimeSha256": "e56fbc145643453e934fe4b79cf0ea8f0f8d1a6cd856cbcdeb304c91093ae7dc",
+  "frames": [
+    {
+      "frame": 0,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/production-144/daring_heart/alpha.png",
+      "sourceSha256": "9d7ae955dcbe214893ea870350e9f37fe6a364e4cc82265e6090e3862f09e474",
+      "crop": [
+        53,
+        6,
+        220,
+        249
+      ],
+      "destination": [
+        31,
+        15,
+        65,
+        95
+      ]
+    },
+    {
+      "frame": 1,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/production-144/daring_heart/alpha.png",
+      "sourceSha256": "9d7ae955dcbe214893ea870350e9f37fe6a364e4cc82265e6090e3862f09e474",
+      "crop": [
+        299,
+        7,
+        464,
+        249
+      ],
+      "destination": [
+        159,
+        15,
+        65,
+        95
+      ]
+    },
+    {
+      "frame": 2,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/production-144/daring_heart/alpha.png",
+      "sourceSha256": "9d7ae955dcbe214893ea870350e9f37fe6a364e4cc82265e6090e3862f09e474",
+      "crop": [
+        542,
+        7,
+        706,
+        249
+      ],
+      "destination": [
+        288,
+        15,
+        64,
+        95
+      ]
+    },
+    {
+      "frame": 3,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/production-144/daring_heart/alpha.png",
+      "sourceSha256": "9d7ae955dcbe214893ea870350e9f37fe6a364e4cc82265e6090e3862f09e474",
+      "crop": [
+        790,
+        6,
+        956,
+        249
+      ],
+      "destination": [
+        415,
+        15,
+        65,
+        95
+      ]
+    },
+    {
+      "frame": 4,
+      "sourceFrame": 4,
+      "source": "docs/art-source/motions/production-144/daring_heart/alpha.png",
+      "sourceSha256": "9d7ae955dcbe214893ea870350e9f37fe6a364e4cc82265e6090e3862f09e474",
+      "crop": [
+        30,
+        250,
+        236,
+        497
+      ],
+      "destination": [
+        23,
+        141,
+        81,
+        97
+      ]
+    },
+    {
+      "frame": 5,
+      "sourceFrame": 5,
+      "source": "docs/art-source/motions/production-144/daring_heart/alpha.png",
+      "sourceSha256": "9d7ae955dcbe214893ea870350e9f37fe6a364e4cc82265e6090e3862f09e474",
+      "crop": [
+        283,
+        250,
+        482,
+        497
+      ],
+      "destination": [
+        153,
+        141,
+        78,
+        97
+      ]
+    },
+    {
+      "frame": 6,
+      "sourceFrame": 6,
+      "source": "docs/art-source/motions/production-144/daring_heart/alpha.png",
+      "sourceSha256": "9d7ae955dcbe214893ea870350e9f37fe6a364e4cc82265e6090e3862f09e474",
+      "crop": [
+        529,
+        252,
+        732,
+        497
+      ],
+      "destination": [
+        280,
+        142,
+        79,
+        96
+      ]
+    },
+    {
+      "frame": 7,
+      "sourceFrame": 7,
+      "source": "docs/art-source/motions/production-144/daring_heart/alpha.png",
+      "sourceSha256": "9d7ae955dcbe214893ea870350e9f37fe6a364e4cc82265e6090e3862f09e474",
+      "crop": [
+        782,
+        251,
+        986,
+        498
+      ],
+      "destination": [
+        408,
+        141,
+        80,
+        97
+      ]
+    },
+    {
+      "frame": 8,
+      "sourceFrame": 8,
+      "source": "docs/art-source/motions/production-144/daring_heart/alpha.png",
+      "sourceSha256": "9d7ae955dcbe214893ea870350e9f37fe6a364e4cc82265e6090e3862f09e474",
+      "crop": [
+        41,
+        500,
+        242,
+        754
+      ],
+      "destination": [
+        24,
+        267,
+        79,
+        99
+      ]
+    },
+    {
+      "frame": 9,
+      "sourceFrame": 9,
+      "source": "docs/art-source/motions/production-144/daring_heart/alpha.png",
+      "sourceSha256": "9d7ae955dcbe214893ea870350e9f37fe6a364e4cc82265e6090e3862f09e474",
+      "crop": [
+        282,
+        500,
+        466,
+        754
+      ],
+      "destination": [
+        156,
+        267,
+        72,
+        99
+      ]
+    },
+    {
+      "frame": 10,
+      "sourceFrame": 10,
+      "source": "docs/art-source/motions/production-144/daring_heart/alpha.png",
+      "sourceSha256": "9d7ae955dcbe214893ea870350e9f37fe6a364e4cc82265e6090e3862f09e474",
+      "crop": [
+        520,
+        500,
+        749,
+        754
+      ],
+      "destination": [
+        275,
+        267,
+        90,
+        99
+      ]
+    },
+    {
+      "frame": 11,
+      "sourceFrame": 11,
+      "source": "docs/art-source/motions/production-144/daring_heart/alpha.png",
+      "sourceSha256": "9d7ae955dcbe214893ea870350e9f37fe6a364e4cc82265e6090e3862f09e474",
+      "crop": [
+        790,
+        500,
+        965,
+        754
+      ],
+      "destination": [
+        414,
+        267,
+        68,
+        99
+      ]
+    },
+    {
+      "frame": 12,
+      "sourceFrame": 12,
+      "source": "docs/art-source/motions/production-144/daring_heart/alpha.png",
+      "sourceSha256": "9d7ae955dcbe214893ea870350e9f37fe6a364e4cc82265e6090e3862f09e474",
+      "crop": [
+        39,
+        756,
+        211,
+        1020
+      ],
+      "destination": [
+        30,
+        391,
+        67,
+        103
+      ]
+    },
+    {
+      "frame": 13,
+      "sourceFrame": 13,
+      "source": "docs/art-source/motions/production-144/daring_heart/alpha.png",
+      "sourceSha256": "9d7ae955dcbe214893ea870350e9f37fe6a364e4cc82265e6090e3862f09e474",
+      "crop": [
+        279,
+        756,
+        484,
+        1020
+      ],
+      "destination": [
+        152,
+        391,
+        80,
+        103
+      ]
+    },
+    {
+      "frame": 14,
+      "sourceFrame": 14,
+      "source": "docs/art-source/motions/production-144/daring_heart/alpha.png",
+      "sourceSha256": "9d7ae955dcbe214893ea870350e9f37fe6a364e4cc82265e6090e3862f09e474",
+      "crop": [
+        526,
+        757,
+        755,
+        1020
+      ],
+      "destination": [
+        275,
+        391,
+        90,
+        103
+      ]
+    },
+    {
+      "frame": 15,
+      "sourceFrame": 15,
+      "source": "docs/art-source/motions/production-144/daring_heart/alpha.png",
+      "sourceSha256": "9d7ae955dcbe214893ea870350e9f37fe6a364e4cc82265e6090e3862f09e474",
+      "crop": [
+        791,
+        756,
+        997,
+        1020
+      ],
+      "destination": [
+        407,
+        391,
+        81,
+        103
+      ]
+    },
+    {
+      "frame": 16,
+      "sourceFrame": 16,
+      "source": "docs/art-source/motions/production-144/daring_heart/alpha.png",
+      "sourceSha256": "9d7ae955dcbe214893ea870350e9f37fe6a364e4cc82265e6090e3862f09e474",
+      "crop": [
+        39,
+        1020,
+        228,
+        1249
+      ],
+      "destination": [
+        27,
+        532,
+        74,
+        90
+      ]
+    },
+    {
+      "frame": 17,
+      "sourceFrame": 17,
+      "source": "docs/art-source/motions/production-144/daring_heart/alpha.png",
+      "sourceSha256": "9d7ae955dcbe214893ea870350e9f37fe6a364e4cc82265e6090e3862f09e474",
+      "crop": [
+        273,
+        1043,
+        476,
+        1240
+      ],
+      "destination": [
+        152,
+        545,
+        79,
+        77
+      ]
+    },
+    {
+      "frame": 18,
+      "sourceFrame": 18,
+      "source": "docs/art-source/motions/production-144/daring_heart/alpha.png",
+      "sourceSha256": "9d7ae955dcbe214893ea870350e9f37fe6a364e4cc82265e6090e3862f09e474",
+      "crop": [
+        527,
+        1069,
+        707,
+        1240
+      ],
+      "destination": [
+        285,
+        555,
+        70,
+        67
+      ]
+    },
+    {
+      "frame": 19,
+      "sourceFrame": 19,
+      "source": "docs/art-source/motions/production-144/daring_heart/alpha.png",
+      "sourceSha256": "9d7ae955dcbe214893ea870350e9f37fe6a364e4cc82265e6090e3862f09e474",
+      "crop": [
+        751,
+        1106,
+        1009,
+        1240
+      ],
+      "destination": [
+        397,
+        570,
+        101,
+        52
+      ]
+    },
+    {
+      "frame": 20,
+      "sourceFrame": 20,
+      "source": "docs/art-source/motions/production-144/daring_heart/alpha.png",
+      "sourceSha256": "9d7ae955dcbe214893ea870350e9f37fe6a364e4cc82265e6090e3862f09e474",
+      "crop": [
+        38,
+        1254,
+        214,
+        1520
+      ],
+      "destination": [
+        29,
+        646,
+        69,
+        104
+      ]
+    },
+    {
+      "frame": 21,
+      "sourceFrame": 21,
+      "source": "docs/art-source/motions/production-144/daring_heart/alpha.png",
+      "sourceSha256": "9d7ae955dcbe214893ea870350e9f37fe6a364e4cc82265e6090e3862f09e474",
+      "crop": [
+        282,
+        1252,
+        466,
+        1518
+      ],
+      "destination": [
+        156,
+        646,
+        72,
+        104
+      ]
+    },
+    {
+      "frame": 22,
+      "sourceFrame": 22,
+      "source": "docs/art-source/motions/production-144/daring_heart/alpha.png",
+      "sourceSha256": "9d7ae955dcbe214893ea870350e9f37fe6a364e4cc82265e6090e3862f09e474",
+      "crop": [
+        531,
+        1252,
+        714,
+        1517
+      ],
+      "destination": [
+        284,
+        646,
+        72,
+        104
+      ]
+    },
+    {
+      "frame": 23,
+      "sourceFrame": 23,
+      "source": "docs/art-source/motions/production-144/daring_heart/alpha.png",
+      "sourceSha256": "9d7ae955dcbe214893ea870350e9f37fe6a364e4cc82265e6090e3862f09e474",
+      "crop": [
+        792,
+        1255,
+        963,
+        1517
+      ],
+      "destination": [
+        414,
+        648,
+        67,
+        102
+      ]
+    }
+  ]
+}

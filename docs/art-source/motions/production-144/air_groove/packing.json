@@ -1,0 +1,443 @@
+{
+  "format": "uft-baked-frames-v1",
+  "scale": 0.4297520661157025,
+  "anchor": [
+    64,
+    110
+  ],
+  "runtimeSha256": "cd9b986b9b2456738843d715900f6bbb3ee1c5751b57d5fb7f2be928b9b4bfc1",
+  "frames": [
+    {
+      "frame": 0,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/production-144/air_groove/alpha.png",
+      "sourceSha256": "d0d1d28703e51d365d29b5edc642d98f4e593105f3a6b8c03452ebb64b1a830b",
+      "crop": [
+        48,
+        22,
+        201,
+        260
+      ],
+      "destination": [
+        31,
+        8,
+        66,
+        102
+      ]
+    },
+    {
+      "frame": 1,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/production-144/air_groove/alpha.png",
+      "sourceSha256": "d0d1d28703e51d365d29b5edc642d98f4e593105f3a6b8c03452ebb64b1a830b",
+      "crop": [
+        321,
+        22,
+        473,
+        260
+      ],
+      "destination": [
+        159,
+        8,
+        65,
+        102
+      ]
+    },
+    {
+      "frame": 2,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/production-144/air_groove/alpha.png",
+      "sourceSha256": "d0d1d28703e51d365d29b5edc642d98f4e593105f3a6b8c03452ebb64b1a830b",
+      "crop": [
+        558,
+        22,
+        712,
+        260
+      ],
+      "destination": [
+        287,
+        8,
+        66,
+        102
+      ]
+    },
+    {
+      "frame": 3,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/production-144/air_groove/alpha.png",
+      "sourceSha256": "d0d1d28703e51d365d29b5edc642d98f4e593105f3a6b8c03452ebb64b1a830b",
+      "crop": [
+        805,
+        22,
+        958,
+        260
+      ],
+      "destination": [
+        415,
+        8,
+        66,
+        102
+      ]
+    },
+    {
+      "frame": 4,
+      "sourceFrame": 4,
+      "source": "docs/art-source/motions/production-144/air_groove/alpha.png",
+      "sourceSha256": "d0d1d28703e51d365d29b5edc642d98f4e593105f3a6b8c03452ebb64b1a830b",
+      "crop": [
+        42,
+        293,
+        244,
+        526
+      ],
+      "destination": [
+        20,
+        138,
+        87,
+        100
+      ]
+    },
+    {
+      "frame": 5,
+      "sourceFrame": 5,
+      "source": "docs/art-source/motions/production-144/air_groove/alpha.png",
+      "sourceSha256": "d0d1d28703e51d365d29b5edc642d98f4e593105f3a6b8c03452ebb64b1a830b",
+      "crop": [
+        296,
+        294,
+        486,
+        526
+      ],
+      "destination": [
+        151,
+        138,
+        82,
+        100
+      ]
+    },
+    {
+      "frame": 6,
+      "sourceFrame": 6,
+      "source": "docs/art-source/motions/production-144/air_groove/alpha.png",
+      "sourceSha256": "d0d1d28703e51d365d29b5edc642d98f4e593105f3a6b8c03452ebb64b1a830b",
+      "crop": [
+        547,
+        292,
+        742,
+        526
+      ],
+      "destination": [
+        278,
+        137,
+        84,
+        101
+      ]
+    },
+    {
+      "frame": 7,
+      "sourceFrame": 7,
+      "source": "docs/art-source/motions/production-144/air_groove/alpha.png",
+      "sourceSha256": "d0d1d28703e51d365d29b5edc642d98f4e593105f3a6b8c03452ebb64b1a830b",
+      "crop": [
+        798,
+        294,
+        990,
+        526
+      ],
+      "destination": [
+        406,
+        138,
+        83,
+        100
+      ]
+    },
+    {
+      "frame": 8,
+      "sourceFrame": 8,
+      "source": "docs/art-source/motions/production-144/air_groove/alpha.png",
+      "sourceSha256": "d0d1d28703e51d365d29b5edc642d98f4e593105f3a6b8c03452ebb64b1a830b",
+      "crop": [
+        42,
+        543,
+        214,
+        773
+      ],
+      "destination": [
+        27,
+        267,
+        74,
+        99
+      ]
+    },
+    {
+      "frame": 9,
+      "sourceFrame": 9,
+      "source": "docs/art-source/motions/production-144/air_groove/alpha.png",
+      "sourceSha256": "d0d1d28703e51d365d29b5edc642d98f4e593105f3a6b8c03452ebb64b1a830b",
+      "crop": [
+        300,
+        543,
+        470,
+        773
+      ],
+      "destination": [
+        155,
+        267,
+        73,
+        99
+      ]
+    },
+    {
+      "frame": 10,
+      "sourceFrame": 10,
+      "source": "docs/art-source/motions/production-144/air_groove/alpha.png",
+      "sourceSha256": "d0d1d28703e51d365d29b5edc642d98f4e593105f3a6b8c03452ebb64b1a830b",
+      "crop": [
+        542,
+        544,
+        756,
+        773
+      ],
+      "destination": [
+        274,
+        268,
+        92,
+        98
+      ]
+    },
+    {
+      "frame": 11,
+      "sourceFrame": 11,
+      "source": "docs/art-source/motions/production-144/air_groove/alpha.png",
+      "sourceSha256": "d0d1d28703e51d365d29b5edc642d98f4e593105f3a6b8c03452ebb64b1a830b",
+      "crop": [
+        809,
+        544,
+        964,
+        773
+      ],
+      "destination": [
+        414,
+        268,
+        67,
+        98
+      ]
+    },
+    {
+      "frame": 12,
+      "sourceFrame": 12,
+      "source": "docs/art-source/motions/production-144/air_groove/alpha.png",
+      "sourceSha256": "d0d1d28703e51d365d29b5edc642d98f4e593105f3a6b8c03452ebb64b1a830b",
+      "crop": [
+        43,
+        798,
+        206,
+        1034
+      ],
+      "destination": [
+        29,
+        393,
+        70,
+        101
+      ]
+    },
+    {
+      "frame": 13,
+      "sourceFrame": 13,
+      "source": "docs/art-source/motions/production-144/air_groove/alpha.png",
+      "sourceSha256": "d0d1d28703e51d365d29b5edc642d98f4e593105f3a6b8c03452ebb64b1a830b",
+      "crop": [
+        303,
+        797,
+        486,
+        1034
+      ],
+      "destination": [
+        152,
+        392,
+        79,
+        102
+      ]
+    },
+    {
+      "frame": 14,
+      "sourceFrame": 14,
+      "source": "docs/art-source/motions/production-144/air_groove/alpha.png",
+      "sourceSha256": "d0d1d28703e51d365d29b5edc642d98f4e593105f3a6b8c03452ebb64b1a830b",
+      "crop": [
+        529,
+        797,
+        746,
+        1034
+      ],
+      "destination": [
+        273,
+        392,
+        93,
+        102
+      ]
+    },
+    {
+      "frame": 15,
+      "sourceFrame": 15,
+      "source": "docs/art-source/motions/production-144/air_groove/alpha.png",
+      "sourceSha256": "d0d1d28703e51d365d29b5edc642d98f4e593105f3a6b8c03452ebb64b1a830b",
+      "crop": [
+        813,
+        800,
+        972,
+        1034
+      ],
+      "destination": [
+        414,
+        393,
+        68,
+        101
+      ]
+    },
+    {
+      "frame": 16,
+      "sourceFrame": 16,
+      "source": "docs/art-source/motions/production-144/air_groove/alpha.png",
+      "sourceSha256": "d0d1d28703e51d365d29b5edc642d98f4e593105f3a6b8c03452ebb64b1a830b",
+      "crop": [
+        36,
+        1063,
+        218,
+        1273
+      ],
+      "destination": [
+        25,
+        532,
+        78,
+        90
+      ]
+    },
+    {
+      "frame": 17,
+      "sourceFrame": 17,
+      "source": "docs/art-source/motions/production-144/air_groove/alpha.png",
+      "sourceSha256": "d0d1d28703e51d365d29b5edc642d98f4e593105f3a6b8c03452ebb64b1a830b",
+      "crop": [
+        296,
+        1076,
+        475,
+        1269
+      ],
+      "destination": [
+        153,
+        539,
+        77,
+        83
+      ]
+    },
+    {
+      "frame": 18,
+      "sourceFrame": 18,
+      "source": "docs/art-source/motions/production-144/air_groove/alpha.png",
+      "sourceSha256": "d0d1d28703e51d365d29b5edc642d98f4e593105f3a6b8c03452ebb64b1a830b",
+      "crop": [
+        537,
+        1096,
+        714,
+        1271
+      ],
+      "destination": [
+        282,
+        547,
+        76,
+        75
+      ]
+    },
+    {
+      "frame": 19,
+      "sourceFrame": 19,
+      "source": "docs/art-source/motions/production-144/air_groove/alpha.png",
+      "sourceSha256": "d0d1d28703e51d365d29b5edc642d98f4e593105f3a6b8c03452ebb64b1a830b",
+      "crop": [
+        785,
+        1163,
+        1010,
+        1265
+      ],
+      "destination": [
+        399,
+        578,
+        97,
+        44
+      ]
+    },
+    {
+      "frame": 20,
+      "sourceFrame": 20,
+      "source": "docs/art-source/motions/production-144/air_groove/alpha.png",
+      "sourceSha256": "d0d1d28703e51d365d29b5edc642d98f4e593105f3a6b8c03452ebb64b1a830b",
+      "crop": [
+        47,
+        1287,
+        212,
+        1524
+      ],
+      "destination": [
+        28,
+        648,
+        71,
+        102
+      ]
+    },
+    {
+      "frame": 21,
+      "sourceFrame": 21,
+      "source": "docs/art-source/motions/production-144/air_groove/alpha.png",
+      "sourceSha256": "d0d1d28703e51d365d29b5edc642d98f4e593105f3a6b8c03452ebb64b1a830b",
+      "crop": [
+        306,
+        1282,
+        469,
+        1524
+      ],
+      "destination": [
+        157,
+        646,
+        70,
+        104
+      ]
+    },
+    {
+      "frame": 22,
+      "sourceFrame": 22,
+      "source": "docs/art-source/motions/production-144/air_groove/alpha.png",
+      "sourceSha256": "d0d1d28703e51d365d29b5edc642d98f4e593105f3a6b8c03452ebb64b1a830b",
+      "crop": [
+        558,
+        1286,
+        705,
+        1524
+      ],
+      "destination": [
+        288,
+        648,
+        63,
+        102
+      ]
+    },
+    {
+      "frame": 23,
+      "sourceFrame": 23,
+      "source": "docs/art-source/motions/production-144/air_groove/alpha.png",
+      "sourceSha256": "d0d1d28703e51d365d29b5edc642d98f4e593105f3a6b8c03452ebb64b1a830b",
+      "crop": [
+        829,
+        1288,
+        978,
+        1524
+      ],
+      "destination": [
+        416,
+        649,
+        64,
+        101
+      ]
+    }
+  ]
+}

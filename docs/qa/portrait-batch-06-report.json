@@ -1,0 +1,106 @@
+{
+  "batchSize": 5,
+  "validation": "new portraits only; full app test/build not rerun",
+  "files": [
+    {
+      "id": "rice_shower",
+      "size": [
+        256,
+        256
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "bounds": [
+        20,
+        6,
+        235,
+        250
+      ],
+      "sourceSha256": "6d2b886bf8187aa722b30843e58458c50c09ced7394332ea7c33f9a7f68fc32b",
+      "runtimeSha256": "b92f0ffbbaa5582151dcc71d1f4f37df75937296b933ec745150a0ae5d770792",
+      "reference": "public/assets/characters/race/RiceShower-Race.png"
+    },
+    {
+      "id": "ines_fujin",
+      "size": [
+        256,
+        256
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "bounds": [
+        29,
+        6,
+        240,
+        250
+      ],
+      "sourceSha256": "1372a17cc4f7aec34b7c6cb8025d9f76a8fc050b946345b1e60ef8691efab6f6",
+      "runtimeSha256": "091319c3fe50de924aec02585e9f3ae0e59d161d6721713ae417fa480a08ed5f",
+      "reference": "public/assets/characters/race/InesFujin-Race.png"
+    },
+    {
+      "id": "agnes_tachyon",
+      "size": [
+        256,
+        256
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "bounds": [
+        28,
+        6,
+        227,
+        250
+      ],
+      "sourceSha256": "7cb9c6fc989fcad3a433bf19d509a5d90f7be622e82a57f8c7225788fc5f992a",
+      "runtimeSha256": "f240fb3bd647f0d61ec5080910dbec8fb9f4019def1720c7dc68592e0fd7cefb",
+      "reference": "public/assets/characters/race/AgnesTachyon-Race.png"
+    },
+    {
+      "id": "admire_vega",
+      "size": [
+        256,
+        256
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "bounds": [
+        31,
+        6,
+        225,
+        250
+      ],
+      "sourceSha256": "5bdbd97ef457bae476bc8249a4c7df536d2706d91da76d54a1c5450f241ec422",
+      "runtimeSha256": "bf9057a9ba2b0f36d0b74b00f66bc38390a06ee0891e6313a95cd59f9afb7d64",
+      "reference": "public/assets/characters/race/AdmireVega-Race.png"
+    },
+    {
+      "id": "inari_one",
+      "size": [
+        256,
+        256
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "bounds": [
+        15,
+        6,
+        240,
+        250
+      ],
+      "sourceSha256": "4cf22c425b24a57bdb7ee50a1e3f8ba2f1a77679bddc0fc325e8d1bde150b092",
+      "runtimeSha256": "704481b4d8a48a11e6c059c6cec328e3c52a90f602fd0cb73ca2c2699c7c8458",
+      "reference": "public/assets/characters/race/InariOne-Race.png"
+    }
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "batchSize": 5,
+  "validation": "new portraits only; full app test/build not rerun",
+  "files": [
+    {
+      "id": "nice_nature",
+      "size": [
+        256,
+        256
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "bounds": [
+        46,
+        22,
+        212,
+        250
+      ],
+      "sourceSha256": "2d3a41e615f25c555a43f3a47e5022455d54fb1924f04630e6550a7e7eefbdc9",
+      "runtimeSha256": "b6766002b3d5b0ee35f4260585e37e69d86d4813f926ff3170caf1f66cc50f57",
+      "reference": "public/assets/characters/race/NiceNature-Race.png"
+    },
+    {
+      "id": "king_halo",
+      "size": [
+        256,
+        256
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "bounds": [
+        32,
+        6,
+        224,
+        250
+      ],
+      "sourceSha256": "9d679e2e68b200d8f4984b672fc154ce4575f7d287e589be245bbeb5a730b048",
+      "runtimeSha256": "b4bdc646c023cd55547c30e82c1e445bf223f45f6ff8eab30be6c1228410f9e2",
+      "reference": "public/assets/characters/race/KingHalo-Race.png"
+    },
+    {
+      "id": "matikanetannhauser",
+      "size": [
+        256,
+        256
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "bounds": [
+        17,
+        6,
+        239,
+        250
+      ],
+      "sourceSha256": "96db7659ab53d18be9120aaa615df312e9894d8fead1a975fba8ea49f940a74d",
+      "runtimeSha256": "d2f65042f76687277f12133816b4d73c421b693245dbb86faaa4843599c8bc00",
+      "reference": "public/assets/characters/race/Matikanetannhauser-Race.png"
+    },
+    {
+      "id": "ikuno_dictus",
+      "size": [
+        256,
+        256
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "bounds": [
+        38,
+        6,
+        237,
+        250
+      ],
+      "sourceSha256": "5b083cd24be3d4b419d5b8633c807c74d3b900f711ee7b6690c3ebc3d8aef2c5",
+      "runtimeSha256": "96e1eafb88fe397012f4d463094217e42e344b6d5f489e9d0d64bce38e5c588d",
+      "reference": "public/assets/characters/race/IkunoDictus-Race.png"
+    },
+    {
+      "id": "mejiro_palmer",
+      "size": [
+        256,
+        256
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "bounds": [
+        17,
+        6,
+        239,
+        250
+      ],
+      "sourceSha256": "c115415b7c2adb972f5911880e7b458878356892d20da12657b0188acaa8a73d",
+      "runtimeSha256": "6b7b40d7e7a861275ae77452624dbbe3422c18f99fada3893c28371838f39669",
+      "reference": "public/assets/characters/race/MejiroPalmer-Race.png"
+    }
+  ]
+}

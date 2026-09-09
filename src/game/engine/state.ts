@@ -26,6 +26,7 @@ export type AiProfileId =
   | 'BALANCED' | 'REROLL' | 'FAST_LEVEL' | 'ECONOMY' | 'AD_FOCUS' | 'AP_FOCUS' | 'TRAIT_FOCUS';
 
 export type PlayerState = {
+  seasonId?: import('./seasons/catalog').SeasonId;
   id: string;
   name: string;
   isHuman: boolean;
@@ -70,6 +71,7 @@ export type PendingGrant =
   | { kind: 'SECONDARY_TRAIT'; count: number };
 
 export type PoolState = {
+  seasonId?: import('./seasons/catalog').SeasonId;
   /** Remaining copies keyed by unit def id. */
   remaining: Record<string, number>;
 };
@@ -117,6 +119,7 @@ export type RoundResolution = {
 };
 
 export type MatchState = {
+  seasonId: import('./seasons/catalog').SeasonId;
   version: 1;
   seed: number;
   rngStates: Record<string, number>;

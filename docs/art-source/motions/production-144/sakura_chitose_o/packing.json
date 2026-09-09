@@ -1,0 +1,443 @@
+{
+  "format": "uft-baked-frames-v1",
+  "scale": 0.40310077519379844,
+  "anchor": [
+    64,
+    110
+  ],
+  "runtimeSha256": "15197c34b8e51efc9b09f0a2a194daefeeb999719db94cf0665e60937f22b6e5",
+  "frames": [
+    {
+      "frame": 0,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/production-144/sakura_chitose_o/alpha.png",
+      "sourceSha256": "e929bfc682e3f7914523b34892a5f1ddf9f4e29286ec5ee74fca32349c6aa707",
+      "crop": [
+        45,
+        4,
+        219,
+        256
+      ],
+      "destination": [
+        29,
+        8,
+        70,
+        102
+      ]
+    },
+    {
+      "frame": 1,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/production-144/sakura_chitose_o/alpha.png",
+      "sourceSha256": "e929bfc682e3f7914523b34892a5f1ddf9f4e29286ec5ee74fca32349c6aa707",
+      "crop": [
+        307,
+        7,
+        471,
+        256
+      ],
+      "destination": [
+        159,
+        10,
+        66,
+        100
+      ]
+    },
+    {
+      "frame": 2,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/production-144/sakura_chitose_o/alpha.png",
+      "sourceSha256": "e929bfc682e3f7914523b34892a5f1ddf9f4e29286ec5ee74fca32349c6aa707",
+      "crop": [
+        560,
+        7,
+        718,
+        256
+      ],
+      "destination": [
+        288,
+        10,
+        64,
+        100
+      ]
+    },
+    {
+      "frame": 3,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/production-144/sakura_chitose_o/alpha.png",
+      "sourceSha256": "e929bfc682e3f7914523b34892a5f1ddf9f4e29286ec5ee74fca32349c6aa707",
+      "crop": [
+        813,
+        8,
+        967,
+        256
+      ],
+      "destination": [
+        417,
+        10,
+        62,
+        100
+      ]
+    },
+    {
+      "frame": 4,
+      "sourceFrame": 4,
+      "source": "docs/art-source/motions/production-144/sakura_chitose_o/alpha.png",
+      "sourceSha256": "e929bfc682e3f7914523b34892a5f1ddf9f4e29286ec5ee74fca32349c6aa707",
+      "crop": [
+        29,
+        267,
+        228,
+        513
+      ],
+      "destination": [
+        24,
+        139,
+        80,
+        99
+      ]
+    },
+    {
+      "frame": 5,
+      "sourceFrame": 5,
+      "source": "docs/art-source/motions/production-144/sakura_chitose_o/alpha.png",
+      "sourceSha256": "e929bfc682e3f7914523b34892a5f1ddf9f4e29286ec5ee74fca32349c6aa707",
+      "crop": [
+        304,
+        268,
+        473,
+        513
+      ],
+      "destination": [
+        158,
+        139,
+        68,
+        99
+      ]
+    },
+    {
+      "frame": 6,
+      "sourceFrame": 6,
+      "source": "docs/art-source/motions/production-144/sakura_chitose_o/alpha.png",
+      "sourceSha256": "e929bfc682e3f7914523b34892a5f1ddf9f4e29286ec5ee74fca32349c6aa707",
+      "crop": [
+        537,
+        270,
+        737,
+        513
+      ],
+      "destination": [
+        279,
+        140,
+        81,
+        98
+      ]
+    },
+    {
+      "frame": 7,
+      "sourceFrame": 7,
+      "source": "docs/art-source/motions/production-144/sakura_chitose_o/alpha.png",
+      "sourceSha256": "e929bfc682e3f7914523b34892a5f1ddf9f4e29286ec5ee74fca32349c6aa707",
+      "crop": [
+        819,
+        268,
+        987,
+        513
+      ],
+      "destination": [
+        414,
+        139,
+        68,
+        99
+      ]
+    },
+    {
+      "frame": 8,
+      "sourceFrame": 8,
+      "source": "docs/art-source/motions/production-144/sakura_chitose_o/alpha.png",
+      "sourceSha256": "e929bfc682e3f7914523b34892a5f1ddf9f4e29286ec5ee74fca32349c6aa707",
+      "crop": [
+        43,
+        513,
+        244,
+        768
+      ],
+      "destination": [
+        23,
+        263,
+        81,
+        103
+      ]
+    },
+    {
+      "frame": 9,
+      "sourceFrame": 9,
+      "source": "docs/art-source/motions/production-144/sakura_chitose_o/alpha.png",
+      "sourceSha256": "e929bfc682e3f7914523b34892a5f1ddf9f4e29286ec5ee74fca32349c6aa707",
+      "crop": [
+        303,
+        515,
+        469,
+        768
+      ],
+      "destination": [
+        158,
+        264,
+        67,
+        102
+      ]
+    },
+    {
+      "frame": 10,
+      "sourceFrame": 10,
+      "source": "docs/art-source/motions/production-144/sakura_chitose_o/alpha.png",
+      "sourceSha256": "e929bfc682e3f7914523b34892a5f1ddf9f4e29286ec5ee74fca32349c6aa707",
+      "crop": [
+        550,
+        516,
+        766,
+        768
+      ],
+      "destination": [
+        276,
+        264,
+        87,
+        102
+      ]
+    },
+    {
+      "frame": 11,
+      "sourceFrame": 11,
+      "source": "docs/art-source/motions/production-144/sakura_chitose_o/alpha.png",
+      "sourceSha256": "e929bfc682e3f7914523b34892a5f1ddf9f4e29286ec5ee74fca32349c6aa707",
+      "crop": [
+        812,
+        514,
+        974,
+        768
+      ],
+      "destination": [
+        415,
+        264,
+        65,
+        102
+      ]
+    },
+    {
+      "frame": 12,
+      "sourceFrame": 12,
+      "source": "docs/art-source/motions/production-144/sakura_chitose_o/alpha.png",
+      "sourceSha256": "e929bfc682e3f7914523b34892a5f1ddf9f4e29286ec5ee74fca32349c6aa707",
+      "crop": [
+        40,
+        778,
+        252,
+        1036
+      ],
+      "destination": [
+        21,
+        390,
+        85,
+        104
+      ]
+    },
+    {
+      "frame": 13,
+      "sourceFrame": 13,
+      "source": "docs/art-source/motions/production-144/sakura_chitose_o/alpha.png",
+      "sourceSha256": "e929bfc682e3f7914523b34892a5f1ddf9f4e29286ec5ee74fca32349c6aa707",
+      "crop": [
+        308,
+        779,
+        476,
+        1036
+      ],
+      "destination": [
+        158,
+        390,
+        68,
+        104
+      ]
+    },
+    {
+      "frame": 14,
+      "sourceFrame": 14,
+      "source": "docs/art-source/motions/production-144/sakura_chitose_o/alpha.png",
+      "sourceSha256": "e929bfc682e3f7914523b34892a5f1ddf9f4e29286ec5ee74fca32349c6aa707",
+      "crop": [
+        544,
+        785,
+        754,
+        1036
+      ],
+      "destination": [
+        277,
+        393,
+        85,
+        101
+      ]
+    },
+    {
+      "frame": 15,
+      "sourceFrame": 15,
+      "source": "docs/art-source/motions/production-144/sakura_chitose_o/alpha.png",
+      "sourceSha256": "e929bfc682e3f7914523b34892a5f1ddf9f4e29286ec5ee74fca32349c6aa707",
+      "crop": [
+        818,
+        778,
+        977,
+        1036
+      ],
+      "destination": [
+        416,
+        390,
+        64,
+        104
+      ]
+    },
+    {
+      "frame": 16,
+      "sourceFrame": 16,
+      "source": "docs/art-source/motions/production-144/sakura_chitose_o/alpha.png",
+      "sourceSha256": "e929bfc682e3f7914523b34892a5f1ddf9f4e29286ec5ee74fca32349c6aa707",
+      "crop": [
+        38,
+        1036,
+        220,
+        1282
+      ],
+      "destination": [
+        27,
+        523,
+        73,
+        99
+      ]
+    },
+    {
+      "frame": 17,
+      "sourceFrame": 17,
+      "source": "docs/art-source/motions/production-144/sakura_chitose_o/alpha.png",
+      "sourceSha256": "e929bfc682e3f7914523b34892a5f1ddf9f4e29286ec5ee74fca32349c6aa707",
+      "crop": [
+        286,
+        1036,
+        473,
+        1282
+      ],
+      "destination": [
+        154,
+        523,
+        75,
+        99
+      ]
+    },
+    {
+      "frame": 18,
+      "sourceFrame": 18,
+      "source": "docs/art-source/motions/production-144/sakura_chitose_o/alpha.png",
+      "sourceSha256": "e929bfc682e3f7914523b34892a5f1ddf9f4e29286ec5ee74fca32349c6aa707",
+      "crop": [
+        525,
+        1071,
+        736,
+        1282
+      ],
+      "destination": [
+        277,
+        537,
+        85,
+        85
+      ]
+    },
+    {
+      "frame": 19,
+      "sourceFrame": 19,
+      "source": "docs/art-source/motions/production-144/sakura_chitose_o/alpha.png",
+      "sourceSha256": "e929bfc682e3f7914523b34892a5f1ddf9f4e29286ec5ee74fca32349c6aa707",
+      "crop": [
+        768,
+        1140,
+        1013,
+        1282
+      ],
+      "destination": [
+        398,
+        565,
+        99,
+        57
+      ]
+    },
+    {
+      "frame": 20,
+      "sourceFrame": 20,
+      "source": "docs/art-source/motions/production-144/sakura_chitose_o/alpha.png",
+      "sourceSha256": "e929bfc682e3f7914523b34892a5f1ddf9f4e29286ec5ee74fca32349c6aa707",
+      "crop": [
+        44,
+        1282,
+        214,
+        1536
+      ],
+      "destination": [
+        29,
+        648,
+        69,
+        102
+      ]
+    },
+    {
+      "frame": 21,
+      "sourceFrame": 21,
+      "source": "docs/art-source/motions/production-144/sakura_chitose_o/alpha.png",
+      "sourceSha256": "e929bfc682e3f7914523b34892a5f1ddf9f4e29286ec5ee74fca32349c6aa707",
+      "crop": [
+        297,
+        1282,
+        462,
+        1536
+      ],
+      "destination": [
+        158,
+        648,
+        67,
+        102
+      ]
+    },
+    {
+      "frame": 22,
+      "sourceFrame": 22,
+      "source": "docs/art-source/motions/production-144/sakura_chitose_o/alpha.png",
+      "sourceSha256": "e929bfc682e3f7914523b34892a5f1ddf9f4e29286ec5ee74fca32349c6aa707",
+      "crop": [
+        549,
+        1282,
+        724,
+        1536
+      ],
+      "destination": [
+        284,
+        648,
+        71,
+        102
+      ]
+    },
+    {
+      "frame": 23,
+      "sourceFrame": 23,
+      "source": "docs/art-source/motions/production-144/sakura_chitose_o/alpha.png",
+      "sourceSha256": "e929bfc682e3f7914523b34892a5f1ddf9f4e29286ec5ee74fca32349c6aa707",
+      "crop": [
+        799,
+        1282,
+        979,
+        1536
+      ],
+      "destination": [
+        411,
+        648,
+        73,
+        102
+      ]
+    }
+  ]
+}

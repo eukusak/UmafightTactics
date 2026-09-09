@@ -1,0 +1,4 @@
+{
+  "tool": "builtin-imagegen",
+  "prompt": "Correct this animation atlas: it accidentally has ONLY FIVE rows (20 drawings), missing its SKILL ROW. Produce exactly SIX rows of FOUR full-body poses =24 drawings on 1024x1536 transparent PNG, each cell256x256,28px empty margins. Preserve this exact long purple-haired horse girl, teal-white dress, white socks and blue shoes. Row1 idle4, row2 run4 alternating legs, row3 ranged hand gesture basic attack4 (aim, windup, release, recover), INSERT ROW4 PHYSICAL DASH SKILL4 (low crouching start, forward launching leap, low horizontal forward body thrust, braking landing), row5 defeated4 (stagger,knees buckle,sit,lie on side), row6 victory4. Each of the six rows must contain exactly4 drawings. Do not draw floating VFX or background. No checkerboard visualization. Maintain all costume details from second Race reference."
+}

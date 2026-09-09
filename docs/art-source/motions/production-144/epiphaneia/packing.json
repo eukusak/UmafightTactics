@@ -1,0 +1,443 @@
+{
+  "format": "uft-baked-frames-v1",
+  "scale": 0.416,
+  "anchor": [
+    64,
+    110
+  ],
+  "runtimeSha256": "917d4db9050bba71d0fc48c70216105210f91997d1966b51e74e542348e15265",
+  "frames": [
+    {
+      "frame": 0,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/production-144/epiphaneia/alpha.png",
+      "sourceSha256": "2e8797cc34cdb48c34530f6f16996b685dbf9291940a856b499280e4651fd55b",
+      "crop": [
+        58,
+        6,
+        227,
+        256
+      ],
+      "destination": [
+        29,
+        6,
+        70,
+        104
+      ]
+    },
+    {
+      "frame": 1,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/production-144/epiphaneia/alpha.png",
+      "sourceSha256": "2e8797cc34cdb48c34530f6f16996b685dbf9291940a856b499280e4651fd55b",
+      "crop": [
+        302,
+        6,
+        475,
+        256
+      ],
+      "destination": [
+        156,
+        6,
+        72,
+        104
+      ]
+    },
+    {
+      "frame": 2,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/production-144/epiphaneia/alpha.png",
+      "sourceSha256": "2e8797cc34cdb48c34530f6f16996b685dbf9291940a856b499280e4651fd55b",
+      "crop": [
+        557,
+        7,
+        729,
+        256
+      ],
+      "destination": [
+        284,
+        6,
+        72,
+        104
+      ]
+    },
+    {
+      "frame": 3,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/production-144/epiphaneia/alpha.png",
+      "sourceSha256": "2e8797cc34cdb48c34530f6f16996b685dbf9291940a856b499280e4651fd55b",
+      "crop": [
+        816,
+        7,
+        985,
+        256
+      ],
+      "destination": [
+        413,
+        6,
+        70,
+        104
+      ]
+    },
+    {
+      "frame": 4,
+      "sourceFrame": 4,
+      "source": "docs/art-source/motions/production-144/epiphaneia/alpha.png",
+      "sourceSha256": "2e8797cc34cdb48c34530f6f16996b685dbf9291940a856b499280e4651fd55b",
+      "crop": [
+        25,
+        267,
+        242,
+        511
+      ],
+      "destination": [
+        19,
+        136,
+        90,
+        102
+      ]
+    },
+    {
+      "frame": 5,
+      "sourceFrame": 5,
+      "source": "docs/art-source/motions/production-144/epiphaneia/alpha.png",
+      "sourceSha256": "2e8797cc34cdb48c34530f6f16996b685dbf9291940a856b499280e4651fd55b",
+      "crop": [
+        271,
+        268,
+        490,
+        511
+      ],
+      "destination": [
+        146,
+        137,
+        91,
+        101
+      ]
+    },
+    {
+      "frame": 6,
+      "sourceFrame": 6,
+      "source": "docs/art-source/motions/production-144/epiphaneia/alpha.png",
+      "sourceSha256": "2e8797cc34cdb48c34530f6f16996b685dbf9291940a856b499280e4651fd55b",
+      "crop": [
+        521,
+        268,
+        744,
+        511
+      ],
+      "destination": [
+        273,
+        137,
+        93,
+        101
+      ]
+    },
+    {
+      "frame": 7,
+      "sourceFrame": 7,
+      "source": "docs/art-source/motions/production-144/epiphaneia/alpha.png",
+      "sourceSha256": "2e8797cc34cdb48c34530f6f16996b685dbf9291940a856b499280e4651fd55b",
+      "crop": [
+        795,
+        268,
+        1002,
+        510
+      ],
+      "destination": [
+        405,
+        137,
+        86,
+        101
+      ]
+    },
+    {
+      "frame": 8,
+      "sourceFrame": 8,
+      "source": "docs/art-source/motions/production-144/epiphaneia/alpha.png",
+      "sourceSha256": "2e8797cc34cdb48c34530f6f16996b685dbf9291940a856b499280e4651fd55b",
+      "crop": [
+        36,
+        520,
+        223,
+        767
+      ],
+      "destination": [
+        25,
+        263,
+        78,
+        103
+      ]
+    },
+    {
+      "frame": 9,
+      "sourceFrame": 9,
+      "source": "docs/art-source/motions/production-144/epiphaneia/alpha.png",
+      "sourceSha256": "2e8797cc34cdb48c34530f6f16996b685dbf9291940a856b499280e4651fd55b",
+      "crop": [
+        274,
+        526,
+        481,
+        764
+      ],
+      "destination": [
+        149,
+        267,
+        86,
+        99
+      ]
+    },
+    {
+      "frame": 10,
+      "sourceFrame": 10,
+      "source": "docs/art-source/motions/production-144/epiphaneia/alpha.png",
+      "sourceSha256": "2e8797cc34cdb48c34530f6f16996b685dbf9291940a856b499280e4651fd55b",
+      "crop": [
+        524,
+        527,
+        745,
+        766
+      ],
+      "destination": [
+        274,
+        267,
+        92,
+        99
+      ]
+    },
+    {
+      "frame": 11,
+      "sourceFrame": 11,
+      "source": "docs/art-source/motions/production-144/epiphaneia/alpha.png",
+      "sourceSha256": "2e8797cc34cdb48c34530f6f16996b685dbf9291940a856b499280e4651fd55b",
+      "crop": [
+        799,
+        527,
+        985,
+        767
+      ],
+      "destination": [
+        409,
+        266,
+        77,
+        100
+      ]
+    },
+    {
+      "frame": 12,
+      "sourceFrame": 12,
+      "source": "docs/art-source/motions/production-144/epiphaneia/alpha.png",
+      "sourceSha256": "2e8797cc34cdb48c34530f6f16996b685dbf9291940a856b499280e4651fd55b",
+      "crop": [
+        51,
+        780,
+        225,
+        1030
+      ],
+      "destination": [
+        28,
+        390,
+        72,
+        104
+      ]
+    },
+    {
+      "frame": 13,
+      "sourceFrame": 13,
+      "source": "docs/art-source/motions/production-144/epiphaneia/alpha.png",
+      "sourceSha256": "2e8797cc34cdb48c34530f6f16996b685dbf9291940a856b499280e4651fd55b",
+      "crop": [
+        293,
+        781,
+        488,
+        1029
+      ],
+      "destination": [
+        151,
+        391,
+        81,
+        103
+      ]
+    },
+    {
+      "frame": 14,
+      "sourceFrame": 14,
+      "source": "docs/art-source/motions/production-144/epiphaneia/alpha.png",
+      "sourceSha256": "2e8797cc34cdb48c34530f6f16996b685dbf9291940a856b499280e4651fd55b",
+      "crop": [
+        536,
+        780,
+        742,
+        1030
+      ],
+      "destination": [
+        277,
+        390,
+        86,
+        104
+      ]
+    },
+    {
+      "frame": 15,
+      "sourceFrame": 15,
+      "source": "docs/art-source/motions/production-144/epiphaneia/alpha.png",
+      "sourceSha256": "2e8797cc34cdb48c34530f6f16996b685dbf9291940a856b499280e4651fd55b",
+      "crop": [
+        804,
+        781,
+        1001,
+        1030
+      ],
+      "destination": [
+        407,
+        390,
+        82,
+        104
+      ]
+    },
+    {
+      "frame": 16,
+      "sourceFrame": 16,
+      "source": "docs/art-source/motions/production-144/epiphaneia/alpha.png",
+      "sourceSha256": "2e8797cc34cdb48c34530f6f16996b685dbf9291940a856b499280e4651fd55b",
+      "crop": [
+        31,
+        1040,
+        226,
+        1270
+      ],
+      "destination": [
+        23,
+        526,
+        81,
+        96
+      ]
+    },
+    {
+      "frame": 17,
+      "sourceFrame": 17,
+      "source": "docs/art-source/motions/production-144/epiphaneia/alpha.png",
+      "sourceSha256": "2e8797cc34cdb48c34530f6f16996b685dbf9291940a856b499280e4651fd55b",
+      "crop": [
+        291,
+        1049,
+        490,
+        1268
+      ],
+      "destination": [
+        150,
+        531,
+        83,
+        91
+      ]
+    },
+    {
+      "frame": 18,
+      "sourceFrame": 18,
+      "source": "docs/art-source/motions/production-144/epiphaneia/alpha.png",
+      "sourceSha256": "2e8797cc34cdb48c34530f6f16996b685dbf9291940a856b499280e4651fd55b",
+      "crop": [
+        530,
+        1075,
+        718,
+        1264
+      ],
+      "destination": [
+        281,
+        543,
+        78,
+        79
+      ]
+    },
+    {
+      "frame": 19,
+      "sourceFrame": 19,
+      "source": "docs/art-source/motions/production-144/epiphaneia/alpha.png",
+      "sourceSha256": "2e8797cc34cdb48c34530f6f16996b685dbf9291940a856b499280e4651fd55b",
+      "crop": [
+        773,
+        1158,
+        1015,
+        1268
+      ],
+      "destination": [
+        397,
+        576,
+        101,
+        46
+      ]
+    },
+    {
+      "frame": 20,
+      "sourceFrame": 20,
+      "source": "docs/art-source/motions/production-144/epiphaneia/alpha.png",
+      "sourceSha256": "2e8797cc34cdb48c34530f6f16996b685dbf9291940a856b499280e4651fd55b",
+      "crop": [
+        47,
+        1288,
+        208,
+        1531
+      ],
+      "destination": [
+        30,
+        649,
+        67,
+        101
+      ]
+    },
+    {
+      "frame": 21,
+      "sourceFrame": 21,
+      "source": "docs/art-source/motions/production-144/epiphaneia/alpha.png",
+      "sourceSha256": "2e8797cc34cdb48c34530f6f16996b685dbf9291940a856b499280e4651fd55b",
+      "crop": [
+        302,
+        1280,
+        470,
+        1528
+      ],
+      "destination": [
+        157,
+        647,
+        70,
+        103
+      ]
+    },
+    {
+      "frame": 22,
+      "sourceFrame": 22,
+      "source": "docs/art-source/motions/production-144/epiphaneia/alpha.png",
+      "sourceSha256": "2e8797cc34cdb48c34530f6f16996b685dbf9291940a856b499280e4651fd55b",
+      "crop": [
+        541,
+        1283,
+        713,
+        1527
+      ],
+      "destination": [
+        284,
+        648,
+        72,
+        102
+      ]
+    },
+    {
+      "frame": 23,
+      "sourceFrame": 23,
+      "source": "docs/art-source/motions/production-144/epiphaneia/alpha.png",
+      "sourceSha256": "2e8797cc34cdb48c34530f6f16996b685dbf9291940a856b499280e4651fd55b",
+      "crop": [
+        798,
+        1288,
+        981,
+        1532
+      ],
+      "destination": [
+        410,
+        648,
+        76,
+        102
+      ]
+    }
+  ]
+}

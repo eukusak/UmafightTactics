@@ -1,0 +1,443 @@
+{
+  "format": "uft-baked-frames-v1",
+  "scale": 0.4279835390946502,
+  "anchor": [
+    64,
+    110
+  ],
+  "runtimeSha256": "1f794b3404f1756c542e307a1c567a1f55d79ef5284a67155dfd9415da609209",
+  "frames": [
+    {
+      "frame": 0,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/production-144/air_shakur/alpha.png",
+      "sourceSha256": "06ae5400b34c4c46ff941f40db53986dcaf1e5d25f094cd13b96e54813c03201",
+      "crop": [
+        61,
+        22,
+        221,
+        264
+      ],
+      "destination": [
+        30,
+        6,
+        68,
+        104
+      ]
+    },
+    {
+      "frame": 1,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/production-144/air_shakur/alpha.png",
+      "sourceSha256": "06ae5400b34c4c46ff941f40db53986dcaf1e5d25f094cd13b96e54813c03201",
+      "crop": [
+        309,
+        22,
+        465,
+        264
+      ],
+      "destination": [
+        158,
+        6,
+        67,
+        104
+      ]
+    },
+    {
+      "frame": 2,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/production-144/air_shakur/alpha.png",
+      "sourceSha256": "06ae5400b34c4c46ff941f40db53986dcaf1e5d25f094cd13b96e54813c03201",
+      "crop": [
+        550,
+        22,
+        702,
+        264
+      ],
+      "destination": [
+        287,
+        6,
+        65,
+        104
+      ]
+    },
+    {
+      "frame": 3,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/production-144/air_shakur/alpha.png",
+      "sourceSha256": "06ae5400b34c4c46ff941f40db53986dcaf1e5d25f094cd13b96e54813c03201",
+      "crop": [
+        800,
+        22,
+        954,
+        264
+      ],
+      "destination": [
+        415,
+        6,
+        66,
+        104
+      ]
+    },
+    {
+      "frame": 4,
+      "sourceFrame": 4,
+      "source": "docs/art-source/motions/production-144/air_shakur/alpha.png",
+      "sourceSha256": "06ae5400b34c4c46ff941f40db53986dcaf1e5d25f094cd13b96e54813c03201",
+      "crop": [
+        47,
+        285,
+        232,
+        520
+      ],
+      "destination": [
+        24,
+        137,
+        79,
+        101
+      ]
+    },
+    {
+      "frame": 5,
+      "sourceFrame": 5,
+      "source": "docs/art-source/motions/production-144/air_shakur/alpha.png",
+      "sourceSha256": "06ae5400b34c4c46ff941f40db53986dcaf1e5d25f094cd13b96e54813c03201",
+      "crop": [
+        287,
+        285,
+        475,
+        515
+      ],
+      "destination": [
+        152,
+        140,
+        80,
+        98
+      ]
+    },
+    {
+      "frame": 6,
+      "sourceFrame": 6,
+      "source": "docs/art-source/motions/production-144/air_shakur/alpha.png",
+      "sourceSha256": "06ae5400b34c4c46ff941f40db53986dcaf1e5d25f094cd13b96e54813c03201",
+      "crop": [
+        550,
+        285,
+        733,
+        520
+      ],
+      "destination": [
+        281,
+        137,
+        78,
+        101
+      ]
+    },
+    {
+      "frame": 7,
+      "sourceFrame": 7,
+      "source": "docs/art-source/motions/production-144/air_shakur/alpha.png",
+      "sourceSha256": "06ae5400b34c4c46ff941f40db53986dcaf1e5d25f094cd13b96e54813c03201",
+      "crop": [
+        810,
+        287,
+        995,
+        517
+      ],
+      "destination": [
+        408,
+        140,
+        79,
+        98
+      ]
+    },
+    {
+      "frame": 8,
+      "sourceFrame": 8,
+      "source": "docs/art-source/motions/production-144/air_shakur/alpha.png",
+      "sourceSha256": "06ae5400b34c4c46ff941f40db53986dcaf1e5d25f094cd13b96e54813c03201",
+      "crop": [
+        59,
+        539,
+        231,
+        773
+      ],
+      "destination": [
+        27,
+        266,
+        74,
+        100
+      ]
+    },
+    {
+      "frame": 9,
+      "sourceFrame": 9,
+      "source": "docs/art-source/motions/production-144/air_shakur/alpha.png",
+      "sourceSha256": "06ae5400b34c4c46ff941f40db53986dcaf1e5d25f094cd13b96e54813c03201",
+      "crop": [
+        311,
+        536,
+        458,
+        773
+      ],
+      "destination": [
+        160,
+        265,
+        63,
+        101
+      ]
+    },
+    {
+      "frame": 10,
+      "sourceFrame": 10,
+      "source": "docs/art-source/motions/production-144/air_shakur/alpha.png",
+      "sourceSha256": "06ae5400b34c4c46ff941f40db53986dcaf1e5d25f094cd13b96e54813c03201",
+      "crop": [
+        548,
+        545,
+        743,
+        773
+      ],
+      "destination": [
+        278,
+        268,
+        83,
+        98
+      ]
+    },
+    {
+      "frame": 11,
+      "sourceFrame": 11,
+      "source": "docs/art-source/motions/production-144/air_shakur/alpha.png",
+      "sourceSha256": "06ae5400b34c4c46ff941f40db53986dcaf1e5d25f094cd13b96e54813c03201",
+      "crop": [
+        818,
+        538,
+        958,
+        773
+      ],
+      "destination": [
+        418,
+        265,
+        60,
+        101
+      ]
+    },
+    {
+      "frame": 12,
+      "sourceFrame": 12,
+      "source": "docs/art-source/motions/production-144/air_shakur/alpha.png",
+      "sourceSha256": "06ae5400b34c4c46ff941f40db53986dcaf1e5d25f094cd13b96e54813c03201",
+      "crop": [
+        51,
+        799,
+        250,
+        1038
+      ],
+      "destination": [
+        21,
+        392,
+        85,
+        102
+      ]
+    },
+    {
+      "frame": 13,
+      "sourceFrame": 13,
+      "source": "docs/art-source/motions/production-144/air_shakur/alpha.png",
+      "sourceSha256": "06ae5400b34c4c46ff941f40db53986dcaf1e5d25f094cd13b96e54813c03201",
+      "crop": [
+        312,
+        801,
+        457,
+        1041
+      ],
+      "destination": [
+        161,
+        391,
+        62,
+        103
+      ]
+    },
+    {
+      "frame": 14,
+      "sourceFrame": 14,
+      "source": "docs/art-source/motions/production-144/air_shakur/alpha.png",
+      "sourceSha256": "06ae5400b34c4c46ff941f40db53986dcaf1e5d25f094cd13b96e54813c03201",
+      "crop": [
+        563,
+        799,
+        744,
+        1040
+      ],
+      "destination": [
+        281,
+        391,
+        77,
+        103
+      ]
+    },
+    {
+      "frame": 15,
+      "sourceFrame": 15,
+      "source": "docs/art-source/motions/production-144/air_shakur/alpha.png",
+      "sourceSha256": "06ae5400b34c4c46ff941f40db53986dcaf1e5d25f094cd13b96e54813c03201",
+      "crop": [
+        826,
+        798,
+        968,
+        1041
+      ],
+      "destination": [
+        417,
+        390,
+        61,
+        104
+      ]
+    },
+    {
+      "frame": 16,
+      "sourceFrame": 16,
+      "source": "docs/art-source/motions/production-144/air_shakur/alpha.png",
+      "sourceSha256": "06ae5400b34c4c46ff941f40db53986dcaf1e5d25f094cd13b96e54813c03201",
+      "crop": [
+        62,
+        1054,
+        232,
+        1276
+      ],
+      "destination": [
+        27,
+        527,
+        73,
+        95
+      ]
+    },
+    {
+      "frame": 17,
+      "sourceFrame": 17,
+      "source": "docs/art-source/motions/production-144/air_shakur/alpha.png",
+      "sourceSha256": "06ae5400b34c4c46ff941f40db53986dcaf1e5d25f094cd13b96e54813c03201",
+      "crop": [
+        308,
+        1076,
+        489,
+        1267
+      ],
+      "destination": [
+        153,
+        540,
+        77,
+        82
+      ]
+    },
+    {
+      "frame": 18,
+      "sourceFrame": 18,
+      "source": "docs/art-source/motions/production-144/air_shakur/alpha.png",
+      "sourceSha256": "06ae5400b34c4c46ff941f40db53986dcaf1e5d25f094cd13b96e54813c03201",
+      "crop": [
+        544,
+        1084,
+        731,
+        1271
+      ],
+      "destination": [
+        280,
+        542,
+        80,
+        80
+      ]
+    },
+    {
+      "frame": 19,
+      "sourceFrame": 19,
+      "source": "docs/art-source/motions/production-144/air_shakur/alpha.png",
+      "sourceSha256": "06ae5400b34c4c46ff941f40db53986dcaf1e5d25f094cd13b96e54813c03201",
+      "crop": [
+        771,
+        1154,
+        1012,
+        1269
+      ],
+      "destination": [
+        396,
+        573,
+        103,
+        49
+      ]
+    },
+    {
+      "frame": 20,
+      "sourceFrame": 20,
+      "source": "docs/art-source/motions/production-144/air_shakur/alpha.png",
+      "sourceSha256": "06ae5400b34c4c46ff941f40db53986dcaf1e5d25f094cd13b96e54813c03201",
+      "crop": [
+        68,
+        1290,
+        210,
+        1526
+      ],
+      "destination": [
+        33,
+        649,
+        61,
+        101
+      ]
+    },
+    {
+      "frame": 21,
+      "sourceFrame": 21,
+      "source": "docs/art-source/motions/production-144/air_shakur/alpha.png",
+      "sourceSha256": "06ae5400b34c4c46ff941f40db53986dcaf1e5d25f094cd13b96e54813c03201",
+      "crop": [
+        312,
+        1286,
+        465,
+        1527
+      ],
+      "destination": [
+        159,
+        647,
+        65,
+        103
+      ]
+    },
+    {
+      "frame": 22,
+      "sourceFrame": 22,
+      "source": "docs/art-source/motions/production-144/air_shakur/alpha.png",
+      "sourceSha256": "06ae5400b34c4c46ff941f40db53986dcaf1e5d25f094cd13b96e54813c03201",
+      "crop": [
+        562,
+        1290,
+        720,
+        1509
+      ],
+      "destination": [
+        286,
+        656,
+        68,
+        94
+      ]
+    },
+    {
+      "frame": 23,
+      "sourceFrame": 23,
+      "source": "docs/art-source/motions/production-144/air_shakur/alpha.png",
+      "sourceSha256": "06ae5400b34c4c46ff941f40db53986dcaf1e5d25f094cd13b96e54813c03201",
+      "crop": [
+        824,
+        1294,
+        966,
+        1527
+      ],
+      "destination": [
+        417,
+        650,
+        61,
+        100
+      ]
+    }
+  ]
+}

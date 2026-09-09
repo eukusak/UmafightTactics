@@ -1,0 +1,128 @@
+{
+  "resumedFrom": "7752f389fdcfeceb739b44f6879949a8c742509f",
+  "newIndependentPortraits": 6,
+  "priorAcceptedCount": 233,
+  "inventoryAfterAddition": 239,
+  "required": 514,
+  "remaining": 275,
+  "remainingPortraits": 130,
+  "remainingBattleSheets": 145,
+  "remainingCutins": 0,
+  "riggedModels": 0,
+  "checks": [
+    {
+      "id": "silence_suzuka",
+      "size": [
+        256,
+        256
+      ],
+      "alpha": [
+        0,
+        255
+      ],
+      "contentBounds": [
+        23,
+        6,
+        222,
+        250
+      ],
+      "sourceSha256": "38df78e047673e7a54400cd95ec7131b2e94d9cef9289dbe2b29c68b9f127f01"
+    },
+    {
+      "id": "fuji_kiseki",
+      "size": [
+        256,
+        256
+      ],
+      "alpha": [
+        0,
+        255
+      ],
+      "contentBounds": [
+        41,
+        6,
+        225,
+        250
+      ],
+      "sourceSha256": "fb3aec34fac250e6febfab0feb3950072de4fc062dbe482dff2b0ea789ee744b"
+    },
+    {
+      "id": "oguri_cap",
+      "size": [
+        256,
+        256
+      ],
+      "alpha": [
+        0,
+        255
+      ],
+      "contentBounds": [
+        12,
+        6,
+        244,
+        250
+      ],
+      "sourceSha256": "f11ab80e3dfe8015e0c9cbb55c9210baacd89a38a85bc52cbdb906266fff2082"
+    },
+    {
+      "id": "gold_ship",
+      "size": [
+        256,
+        256
+      ],
+      "alpha": [
+        0,
+        255
+      ],
+      "contentBounds": [
+        13,
+        6,
+        239,
+        250
+      ],
+      "sourceSha256": "27b60eafb830d6b3a17f728626f8180ba293ce953d196b11dd4d1d273ed9a79e"
+    },
+    {
+      "id": "vodka",
+      "size": [
+        256,
+        256
+      ],
+      "alpha": [
+        0,
+        255
+      ],
+      "contentBounds": [
+        42,
+        6,
+        226,
+        249
+      ],
+      "sourceSha256": "0cc58f80942b1de36510a4a39fb5a901bcf64e75af89e42c761c08ea476b8066"
+    },
+    {
+      "id": "grass_wonder",
+      "size": [
+        256,
+        256
+      ],
+      "alpha": [
+        0,
+        255
+      ],
+      "contentBounds": [
+        22,
+        6,
+        232,
+        250
+      ],
+      "sourceSha256": "50f7b4aade6341bcc9bb6c87b974b38c86cc8901121b4267463842988b5be918"
+    }
+  ],
+  "limitations": [
+    "239 is the prior accepted 233 plus six inspected additions; old remote binaries not revalidated.",
+    "Full npm tests/build not rerun: offline dependency cache unavailable.",
+    "No new browser scene verification.",
+    "Rigging remains five source components; no assembled full model or Cubism export."
+  ]
+}

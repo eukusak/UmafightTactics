@@ -1,0 +1,12 @@
+{
+  "approved": true,
+  "source": "alpha.png",
+  "skillReview": "직선 돌파: 손을 낮춘 출발 → 앞쪽 발진 → 몸을 수평으로 낮춘 어깨 돌파 → 착지. 기본 주먹 공격과 돌진 스킬을 구분.",
+  "reviewedAt": "2026-09-09",
+  "checks": [
+    "Race costume and identity",
+    "24 poses with correct action rows",
+    "actual skill target and effect",
+    "transparent RGBA"
+  ]
+}

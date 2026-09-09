@@ -1,0 +1,419 @@
+{
+  "format": "uft-baked-frames-v1",
+  "scale": 0.47058823529411764,
+  "anchor": [
+    64,
+    110
+  ],
+  "runtimeSha256": "3b096aad89e5f33f98bf9a1062de78555f72a83c87a0b54bed9afc62045f59a4",
+  "frames": [
+    {
+      "source": "docs/art-source/motions/batch-01/training_dummy/spaced-transparent.png",
+      "sourceSha256": "ee70c23f424fd73189ef3fe5405192f009a0384472b1e184274ac93a83a6230d",
+      "crop": [
+        60,
+        47,
+        217,
+        256
+      ],
+      "frame": 0,
+      "destination": [
+        27,
+        12,
+        74,
+        98
+      ]
+    },
+    {
+      "source": "docs/art-source/motions/batch-01/training_dummy/spaced-transparent.png",
+      "sourceSha256": "ee70c23f424fd73189ef3fe5405192f009a0384472b1e184274ac93a83a6230d",
+      "crop": [
+        314,
+        47,
+        466,
+        256
+      ],
+      "frame": 1,
+      "destination": [
+        156,
+        12,
+        72,
+        98
+      ]
+    },
+    {
+      "source": "docs/art-source/motions/batch-01/training_dummy/spaced-transparent.png",
+      "sourceSha256": "ee70c23f424fd73189ef3fe5405192f009a0384472b1e184274ac93a83a6230d",
+      "crop": [
+        558,
+        47,
+        718,
+        256
+      ],
+      "frame": 2,
+      "destination": [
+        282,
+        12,
+        75,
+        98
+      ]
+    },
+    {
+      "source": "docs/art-source/motions/batch-01/training_dummy/spaced-transparent.png",
+      "sourceSha256": "ee70c23f424fd73189ef3fe5405192f009a0384472b1e184274ac93a83a6230d",
+      "crop": [
+        814,
+        47,
+        963,
+        256
+      ],
+      "frame": 3,
+      "destination": [
+        413,
+        12,
+        70,
+        98
+      ]
+    },
+    {
+      "source": "docs/art-source/motions/batch-01/training_dummy/spaced-transparent.png",
+      "sourceSha256": "ee70c23f424fd73189ef3fe5405192f009a0384472b1e184274ac93a83a6230d",
+      "crop": [
+        45,
+        294,
+        233,
+        515
+      ],
+      "frame": 4,
+      "destination": [
+        20,
+        134,
+        88,
+        104
+      ]
+    },
+    {
+      "source": "docs/art-source/motions/batch-01/training_dummy/spaced-transparent.png",
+      "sourceSha256": "ee70c23f424fd73189ef3fe5405192f009a0384472b1e184274ac93a83a6230d",
+      "crop": [
+        318,
+        296,
+        485,
+        515
+      ],
+      "frame": 5,
+      "destination": [
+        152,
+        135,
+        79,
+        103
+      ]
+    },
+    {
+      "source": "docs/art-source/motions/batch-01/training_dummy/spaced-transparent.png",
+      "sourceSha256": "ee70c23f424fd73189ef3fe5405192f009a0384472b1e184274ac93a83a6230d",
+      "crop": [
+        551,
+        298,
+        727,
+        515
+      ],
+      "frame": 6,
+      "destination": [
+        278,
+        136,
+        83,
+        102
+      ]
+    },
+    {
+      "source": "docs/art-source/motions/batch-01/training_dummy/spaced-transparent.png",
+      "sourceSha256": "ee70c23f424fd73189ef3fe5405192f009a0384472b1e184274ac93a83a6230d",
+      "crop": [
+        803,
+        294,
+        988,
+        515
+      ],
+      "frame": 7,
+      "destination": [
+        404,
+        134,
+        87,
+        104
+      ]
+    },
+    {
+      "source": "docs/art-source/motions/batch-01/training_dummy/spaced-transparent.png",
+      "sourceSha256": "ee70c23f424fd73189ef3fe5405192f009a0384472b1e184274ac93a83a6230d",
+      "crop": [
+        57,
+        554,
+        212,
+        769
+      ],
+      "frame": 8,
+      "destination": [
+        27,
+        265,
+        73,
+        101
+      ]
+    },
+    {
+      "source": "docs/art-source/motions/batch-01/training_dummy/spaced-transparent.png",
+      "sourceSha256": "ee70c23f424fd73189ef3fe5405192f009a0384472b1e184274ac93a83a6230d",
+      "crop": [
+        307,
+        552,
+        500,
+        769
+      ],
+      "frame": 9,
+      "destination": [
+        146,
+        264,
+        91,
+        102
+      ]
+    },
+    {
+      "source": "docs/art-source/motions/batch-01/training_dummy/spaced-transparent.png",
+      "sourceSha256": "ee70c23f424fd73189ef3fe5405192f009a0384472b1e184274ac93a83a6230d",
+      "crop": [
+        557,
+        555,
+        763,
+        769
+      ],
+      "frame": 10,
+      "destination": [
+        271,
+        265,
+        97,
+        101
+      ]
+    },
+    {
+      "source": "docs/art-source/motions/batch-01/training_dummy/spaced-transparent.png",
+      "sourceSha256": "ee70c23f424fd73189ef3fe5405192f009a0384472b1e184274ac93a83a6230d",
+      "crop": [
+        820,
+        553,
+        967,
+        769
+      ],
+      "frame": 11,
+      "destination": [
+        413,
+        264,
+        69,
+        102
+      ]
+    },
+    {
+      "source": "docs/art-source/motions/batch-01/training_dummy/spaced-transparent.png",
+      "sourceSha256": "ee70c23f424fd73189ef3fe5405192f009a0384472b1e184274ac93a83a6230d",
+      "crop": [
+        48,
+        818,
+        231,
+        1006
+      ],
+      "frame": 12,
+      "destination": [
+        21,
+        406,
+        86,
+        88
+      ]
+    },
+    {
+      "source": "docs/art-source/motions/batch-01/training_dummy/spaced-transparent.png",
+      "sourceSha256": "ee70c23f424fd73189ef3fe5405192f009a0384472b1e184274ac93a83a6230d",
+      "crop": [
+        313,
+        793,
+        456,
+        1010
+      ],
+      "frame": 13,
+      "destination": [
+        158,
+        392,
+        67,
+        102
+      ]
+    },
+    {
+      "source": "docs/art-source/motions/batch-01/training_dummy/spaced-transparent.png",
+      "sourceSha256": "ee70c23f424fd73189ef3fe5405192f009a0384472b1e184274ac93a83a6230d",
+      "crop": [
+        546,
+        798,
+        751,
+        1010
+      ],
+      "frame": 14,
+      "destination": [
+        272,
+        394,
+        96,
+        100
+      ]
+    },
+    {
+      "source": "docs/art-source/motions/batch-01/training_dummy/spaced-transparent.png",
+      "sourceSha256": "ee70c23f424fd73189ef3fe5405192f009a0384472b1e184274ac93a83a6230d",
+      "crop": [
+        814,
+        796,
+        965,
+        1011
+      ],
+      "frame": 15,
+      "destination": [
+        412,
+        393,
+        71,
+        101
+      ]
+    },
+    {
+      "source": "docs/art-source/motions/batch-01/training_dummy/spaced-transparent.png",
+      "sourceSha256": "ee70c23f424fd73189ef3fe5405192f009a0384472b1e184274ac93a83a6230d",
+      "crop": [
+        45,
+        1043,
+        214,
+        1227
+      ],
+      "frame": 16,
+      "destination": [
+        24,
+        535,
+        80,
+        87
+      ]
+    },
+    {
+      "source": "docs/art-source/motions/batch-01/training_dummy/spaced-transparent.png",
+      "sourceSha256": "ee70c23f424fd73189ef3fe5405192f009a0384472b1e184274ac93a83a6230d",
+      "crop": [
+        301,
+        1071,
+        472,
+        1223
+      ],
+      "frame": 17,
+      "destination": [
+        152,
+        550,
+        80,
+        72
+      ]
+    },
+    {
+      "source": "docs/art-source/motions/batch-01/training_dummy/spaced-transparent.png",
+      "sourceSha256": "ee70c23f424fd73189ef3fe5405192f009a0384472b1e184274ac93a83a6230d",
+      "crop": [
+        551,
+        1086,
+        733,
+        1223
+      ],
+      "frame": 18,
+      "destination": [
+        277,
+        558,
+        86,
+        64
+      ]
+    },
+    {
+      "source": "docs/art-source/motions/batch-01/training_dummy/spaced-transparent.png",
+      "sourceSha256": "ee70c23f424fd73189ef3fe5405192f009a0384472b1e184274ac93a83a6230d",
+      "crop": [
+        781,
+        1127,
+        1005,
+        1225
+      ],
+      "frame": 19,
+      "destination": [
+        395,
+        576,
+        105,
+        46
+      ]
+    },
+    {
+      "source": "docs/art-source/motions/batch-01/training_dummy/spaced-transparent.png",
+      "sourceSha256": "ee70c23f424fd73189ef3fe5405192f009a0384472b1e184274ac93a83a6230d",
+      "crop": [
+        41,
+        1271,
+        223,
+        1475
+      ],
+      "frame": 20,
+      "destination": [
+        21,
+        654,
+        86,
+        96
+      ]
+    },
+    {
+      "source": "docs/art-source/motions/batch-01/training_dummy/spaced-transparent.png",
+      "sourceSha256": "ee70c23f424fd73189ef3fe5405192f009a0384472b1e184274ac93a83a6230d",
+      "crop": [
+        306,
+        1262,
+        468,
+        1477
+      ],
+      "frame": 21,
+      "destination": [
+        154,
+        649,
+        76,
+        101
+      ]
+    },
+    {
+      "source": "docs/art-source/motions/batch-01/training_dummy/spaced-transparent.png",
+      "sourceSha256": "ee70c23f424fd73189ef3fe5405192f009a0384472b1e184274ac93a83a6230d",
+      "crop": [
+        568,
+        1258,
+        733,
+        1476
+      ],
+      "frame": 22,
+      "destination": [
+        281,
+        647,
+        78,
+        103
+      ]
+    },
+    {
+      "source": "docs/art-source/motions/batch-01/training_dummy/spaced-transparent.png",
+      "sourceSha256": "ee70c23f424fd73189ef3fe5405192f009a0384472b1e184274ac93a83a6230d",
+      "crop": [
+        812,
+        1259,
+        975,
+        1475
+      ],
+      "frame": 23,
+      "destination": [
+        409,
+        648,
+        77,
+        102
+      ]
+    }
+  ]
+}

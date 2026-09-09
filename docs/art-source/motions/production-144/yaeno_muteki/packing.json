@@ -1,0 +1,443 @@
+{
+  "format": "uft-baked-frames-v1",
+  "scale": 0.4369747899159664,
+  "anchor": [
+    64,
+    110
+  ],
+  "runtimeSha256": "89a40b422075b6b7e3ebd7c24321e1ad33d0906f2df2300630651e2639993d01",
+  "frames": [
+    {
+      "frame": 0,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/production-144/yaeno_muteki/alpha.png",
+      "sourceSha256": "843bd0bb76dbe552defc35a0ec92c76f31558176456cf9f44f14b666c8750cbd",
+      "crop": [
+        49,
+        29,
+        185,
+        256
+      ],
+      "destination": [
+        34,
+        11,
+        59,
+        99
+      ]
+    },
+    {
+      "frame": 1,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/production-144/yaeno_muteki/alpha.png",
+      "sourceSha256": "843bd0bb76dbe552defc35a0ec92c76f31558176456cf9f44f14b666c8750cbd",
+      "crop": [
+        320,
+        29,
+        457,
+        256
+      ],
+      "destination": [
+        162,
+        11,
+        60,
+        99
+      ]
+    },
+    {
+      "frame": 2,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/production-144/yaeno_muteki/alpha.png",
+      "sourceSha256": "843bd0bb76dbe552defc35a0ec92c76f31558176456cf9f44f14b666c8750cbd",
+      "crop": [
+        575,
+        29,
+        716,
+        256
+      ],
+      "destination": [
+        289,
+        11,
+        62,
+        99
+      ]
+    },
+    {
+      "frame": 3,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/production-144/yaeno_muteki/alpha.png",
+      "sourceSha256": "843bd0bb76dbe552defc35a0ec92c76f31558176456cf9f44f14b666c8750cbd",
+      "crop": [
+        829,
+        29,
+        964,
+        256
+      ],
+      "destination": [
+        418,
+        11,
+        59,
+        99
+      ]
+    },
+    {
+      "frame": 4,
+      "sourceFrame": 4,
+      "source": "docs/art-source/motions/production-144/yaeno_muteki/alpha.png",
+      "sourceSha256": "843bd0bb76dbe552defc35a0ec92c76f31558176456cf9f44f14b666c8750cbd",
+      "crop": [
+        28,
+        285,
+        198,
+        502
+      ],
+      "destination": [
+        27,
+        143,
+        74,
+        95
+      ]
+    },
+    {
+      "frame": 5,
+      "sourceFrame": 5,
+      "source": "docs/art-source/motions/production-144/yaeno_muteki/alpha.png",
+      "sourceSha256": "843bd0bb76dbe552defc35a0ec92c76f31558176456cf9f44f14b666c8750cbd",
+      "crop": [
+        287,
+        285,
+        466,
+        499
+      ],
+      "destination": [
+        153,
+        144,
+        78,
+        94
+      ]
+    },
+    {
+      "frame": 6,
+      "sourceFrame": 6,
+      "source": "docs/art-source/motions/production-144/yaeno_muteki/alpha.png",
+      "sourceSha256": "843bd0bb76dbe552defc35a0ec92c76f31558176456cf9f44f14b666c8750cbd",
+      "crop": [
+        575,
+        284,
+        732,
+        503
+      ],
+      "destination": [
+        285,
+        142,
+        69,
+        96
+      ]
+    },
+    {
+      "frame": 7,
+      "sourceFrame": 7,
+      "source": "docs/art-source/motions/production-144/yaeno_muteki/alpha.png",
+      "sourceSha256": "843bd0bb76dbe552defc35a0ec92c76f31558176456cf9f44f14b666c8750cbd",
+      "crop": [
+        815,
+        283,
+        986,
+        507
+      ],
+      "destination": [
+        410,
+        140,
+        75,
+        98
+      ]
+    },
+    {
+      "frame": 8,
+      "sourceFrame": 8,
+      "source": "docs/art-source/motions/production-144/yaeno_muteki/alpha.png",
+      "sourceSha256": "843bd0bb76dbe552defc35a0ec92c76f31558176456cf9f44f14b666c8750cbd",
+      "crop": [
+        44,
+        526,
+        228,
+        759
+      ],
+      "destination": [
+        24,
+        264,
+        80,
+        102
+      ]
+    },
+    {
+      "frame": 9,
+      "sourceFrame": 9,
+      "source": "docs/art-source/motions/production-144/yaeno_muteki/alpha.png",
+      "sourceSha256": "843bd0bb76dbe552defc35a0ec92c76f31558176456cf9f44f14b666c8750cbd",
+      "crop": [
+        309,
+        529,
+        465,
+        760
+      ],
+      "destination": [
+        158,
+        265,
+        68,
+        101
+      ]
+    },
+    {
+      "frame": 10,
+      "sourceFrame": 10,
+      "source": "docs/art-source/motions/production-144/yaeno_muteki/alpha.png",
+      "sourceSha256": "843bd0bb76dbe552defc35a0ec92c76f31558176456cf9f44f14b666c8750cbd",
+      "crop": [
+        554,
+        529,
+        763,
+        759
+      ],
+      "destination": [
+        274,
+        265,
+        91,
+        101
+      ]
+    },
+    {
+      "frame": 11,
+      "sourceFrame": 11,
+      "source": "docs/art-source/motions/production-144/yaeno_muteki/alpha.png",
+      "sourceSha256": "843bd0bb76dbe552defc35a0ec92c76f31558176456cf9f44f14b666c8750cbd",
+      "crop": [
+        822,
+        527,
+        977,
+        762
+      ],
+      "destination": [
+        414,
+        263,
+        68,
+        103
+      ]
+    },
+    {
+      "frame": 12,
+      "sourceFrame": 12,
+      "source": "docs/art-source/motions/production-144/yaeno_muteki/alpha.png",
+      "sourceSha256": "843bd0bb76dbe552defc35a0ec92c76f31558176456cf9f44f14b666c8750cbd",
+      "crop": [
+        48,
+        786,
+        186,
+        1023
+      ],
+      "destination": [
+        34,
+        390,
+        60,
+        104
+      ]
+    },
+    {
+      "frame": 13,
+      "sourceFrame": 13,
+      "source": "docs/art-source/motions/production-144/yaeno_muteki/alpha.png",
+      "sourceSha256": "843bd0bb76dbe552defc35a0ec92c76f31558176456cf9f44f14b666c8750cbd",
+      "crop": [
+        310,
+        792,
+        454,
+        1024
+      ],
+      "destination": [
+        160,
+        393,
+        63,
+        101
+      ]
+    },
+    {
+      "frame": 14,
+      "sourceFrame": 14,
+      "source": "docs/art-source/motions/production-144/yaeno_muteki/alpha.png",
+      "sourceSha256": "843bd0bb76dbe552defc35a0ec92c76f31558176456cf9f44f14b666c8750cbd",
+      "crop": [
+        557,
+        790,
+        745,
+        1023
+      ],
+      "destination": [
+        279,
+        392,
+        82,
+        102
+      ]
+    },
+    {
+      "frame": 15,
+      "sourceFrame": 15,
+      "source": "docs/art-source/motions/production-144/yaeno_muteki/alpha.png",
+      "sourceSha256": "843bd0bb76dbe552defc35a0ec92c76f31558176456cf9f44f14b666c8750cbd",
+      "crop": [
+        815,
+        790,
+        998,
+        1024
+      ],
+      "destination": [
+        408,
+        392,
+        80,
+        102
+      ]
+    },
+    {
+      "frame": 16,
+      "sourceFrame": 16,
+      "source": "docs/art-source/motions/production-144/yaeno_muteki/alpha.png",
+      "sourceSha256": "843bd0bb76dbe552defc35a0ec92c76f31558176456cf9f44f14b666c8750cbd",
+      "crop": [
+        40,
+        1059,
+        205,
+        1266
+      ],
+      "destination": [
+        28,
+        532,
+        72,
+        90
+      ]
+    },
+    {
+      "frame": 17,
+      "sourceFrame": 17,
+      "source": "docs/art-source/motions/production-144/yaeno_muteki/alpha.png",
+      "sourceSha256": "843bd0bb76dbe552defc35a0ec92c76f31558176456cf9f44f14b666c8750cbd",
+      "crop": [
+        317,
+        1086,
+        475,
+        1265
+      ],
+      "destination": [
+        157,
+        544,
+        69,
+        78
+      ]
+    },
+    {
+      "frame": 18,
+      "sourceFrame": 18,
+      "source": "docs/art-source/motions/production-144/yaeno_muteki/alpha.png",
+      "sourceSha256": "843bd0bb76dbe552defc35a0ec92c76f31558176456cf9f44f14b666c8750cbd",
+      "crop": [
+        549,
+        1103,
+        706,
+        1266
+      ],
+      "destination": [
+        285,
+        551,
+        69,
+        71
+      ]
+    },
+    {
+      "frame": 19,
+      "sourceFrame": 19,
+      "source": "docs/art-source/motions/production-144/yaeno_muteki/alpha.png",
+      "sourceSha256": "843bd0bb76dbe552defc35a0ec92c76f31558176456cf9f44f14b666c8750cbd",
+      "crop": [
+        781,
+        1151,
+        1001,
+        1259
+      ],
+      "destination": [
+        400,
+        575,
+        96,
+        47
+      ]
+    },
+    {
+      "frame": 20,
+      "sourceFrame": 20,
+      "source": "docs/art-source/motions/production-144/yaeno_muteki/alpha.png",
+      "sourceSha256": "843bd0bb76dbe552defc35a0ec92c76f31558176456cf9f44f14b666c8750cbd",
+      "crop": [
+        46,
+        1292,
+        194,
+        1524
+      ],
+      "destination": [
+        31,
+        649,
+        65,
+        101
+      ]
+    },
+    {
+      "frame": 21,
+      "sourceFrame": 21,
+      "source": "docs/art-source/motions/production-144/yaeno_muteki/alpha.png",
+      "sourceSha256": "843bd0bb76dbe552defc35a0ec92c76f31558176456cf9f44f14b666c8750cbd",
+      "crop": [
+        317,
+        1292,
+        465,
+        1525
+      ],
+      "destination": [
+        159,
+        648,
+        65,
+        102
+      ]
+    },
+    {
+      "frame": 22,
+      "sourceFrame": 22,
+      "source": "docs/art-source/motions/production-144/yaeno_muteki/alpha.png",
+      "sourceSha256": "843bd0bb76dbe552defc35a0ec92c76f31558176456cf9f44f14b666c8750cbd",
+      "crop": [
+        572,
+        1288,
+        709,
+        1526
+      ],
+      "destination": [
+        290,
+        646,
+        60,
+        104
+      ]
+    },
+    {
+      "frame": 23,
+      "sourceFrame": 23,
+      "source": "docs/art-source/motions/production-144/yaeno_muteki/alpha.png",
+      "sourceSha256": "843bd0bb76dbe552defc35a0ec92c76f31558176456cf9f44f14b666c8750cbd",
+      "crop": [
+        813,
+        1289,
+        969,
+        1525
+      ],
+      "destination": [
+        414,
+        647,
+        68,
+        103
+      ]
+    }
+  ]
+}

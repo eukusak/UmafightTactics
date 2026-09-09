@@ -1,0 +1,61 @@
+{
+  "sheet": "pve/training_dummy.png",
+  "cell": [
+    128,
+    128
+  ],
+  "anchor": [
+    64,
+    110
+  ],
+  "clips": {
+    "idle": {
+      "fps": 8,
+      "loop": true,
+      "files": [
+        "pve/frames/training_dummy/idle/00.png",
+        "pve/frames/training_dummy/idle/01.png",
+        "pve/frames/training_dummy/idle/02.png",
+        "pve/frames/training_dummy/idle/03.png",
+        "pve/frames/training_dummy/idle/04.png",
+        "pve/frames/training_dummy/idle/05.png"
+      ]
+    },
+    "basic_attack": {
+      "fps": 14,
+      "loop": false,
+      "files": [
+        "pve/frames/training_dummy/basic_attack/00.png",
+        "pve/frames/training_dummy/basic_attack/01.png",
+        "pve/frames/training_dummy/basic_attack/02.png",
+        "pve/frames/training_dummy/basic_attack/03.png",
+        "pve/frames/training_dummy/basic_attack/04.png",
+        "pve/frames/training_dummy/basic_attack/05.png",
+        "pve/frames/training_dummy/basic_attack/06.png",
+        "pve/frames/training_dummy/basic_attack/07.png"
+      ]
+    },
+    "hit": {
+      "fps": 12,
+      "loop": false,
+      "files": [
+        "pve/frames/training_dummy/hit/00.png",
+        "pve/frames/training_dummy/hit/01.png",
+        "pve/frames/training_dummy/hit/02.png",
+        "pve/frames/training_dummy/hit/03.png"
+      ]
+    },
+    "ko": {
+      "fps": 10,
+      "loop": false,
+      "files": [
+        "pve/frames/training_dummy/ko/00.png",
+        "pve/frames/training_dummy/ko/01.png",
+        "pve/frames/training_dummy/ko/02.png",
+        "pve/frames/training_dummy/ko/03.png",
+        "pve/frames/training_dummy/ko/04.png",
+        "pve/frames/training_dummy/ko/05.png"
+      ]
+    }
+  }
+}

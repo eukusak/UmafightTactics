@@ -1,0 +1,419 @@
+{
+  "format": "uft-baked-frames-v1",
+  "scale": 0.43824701195219123,
+  "anchor": [
+    64,
+    110
+  ],
+  "runtimeSha256": "8007def5c1096f7fa6d607b07776ddf7913005f148fda755ca60c4aeea521338",
+  "frames": [
+    {
+      "source": "docs/art-source/motions/batch-01/grand_trophy_guardian/spaced-transparent.png",
+      "sourceSha256": "221fa80bbfa61e4a14520cb44843bd0d0989634ae9e17b76400f509340b0ff56",
+      "crop": [
+        33,
+        52,
+        219,
+        251
+      ],
+      "frame": 0,
+      "destination": [
+        23,
+        23,
+        82,
+        87
+      ]
+    },
+    {
+      "source": "docs/art-source/motions/batch-01/grand_trophy_guardian/spaced-transparent.png",
+      "sourceSha256": "221fa80bbfa61e4a14520cb44843bd0d0989634ae9e17b76400f509340b0ff56",
+      "crop": [
+        290,
+        53,
+        474,
+        251
+      ],
+      "frame": 1,
+      "destination": [
+        151,
+        23,
+        81,
+        87
+      ]
+    },
+    {
+      "source": "docs/art-source/motions/batch-01/grand_trophy_guardian/spaced-transparent.png",
+      "sourceSha256": "221fa80bbfa61e4a14520cb44843bd0d0989634ae9e17b76400f509340b0ff56",
+      "crop": [
+        544,
+        53,
+        729,
+        251
+      ],
+      "frame": 2,
+      "destination": [
+        279,
+        23,
+        81,
+        87
+      ]
+    },
+    {
+      "source": "docs/art-source/motions/batch-01/grand_trophy_guardian/spaced-transparent.png",
+      "sourceSha256": "221fa80bbfa61e4a14520cb44843bd0d0989634ae9e17b76400f509340b0ff56",
+      "crop": [
+        796,
+        53,
+        988,
+        253
+      ],
+      "frame": 3,
+      "destination": [
+        406,
+        22,
+        84,
+        88
+      ]
+    },
+    {
+      "source": "docs/art-source/motions/batch-01/grand_trophy_guardian/spaced-transparent.png",
+      "sourceSha256": "221fa80bbfa61e4a14520cb44843bd0d0989634ae9e17b76400f509340b0ff56",
+      "crop": [
+        28,
+        304,
+        227,
+        508
+      ],
+      "frame": 4,
+      "destination": [
+        20,
+        149,
+        87,
+        89
+      ]
+    },
+    {
+      "source": "docs/art-source/motions/batch-01/grand_trophy_guardian/spaced-transparent.png",
+      "sourceSha256": "221fa80bbfa61e4a14520cb44843bd0d0989634ae9e17b76400f509340b0ff56",
+      "crop": [
+        280,
+        299,
+        477,
+        504
+      ],
+      "frame": 5,
+      "destination": [
+        149,
+        148,
+        86,
+        90
+      ]
+    },
+    {
+      "source": "docs/art-source/motions/batch-01/grand_trophy_guardian/spaced-transparent.png",
+      "sourceSha256": "221fa80bbfa61e4a14520cb44843bd0d0989634ae9e17b76400f509340b0ff56",
+      "crop": [
+        541,
+        300,
+        739,
+        504
+      ],
+      "frame": 6,
+      "destination": [
+        276,
+        149,
+        87,
+        89
+      ]
+    },
+    {
+      "source": "docs/art-source/motions/batch-01/grand_trophy_guardian/spaced-transparent.png",
+      "sourceSha256": "221fa80bbfa61e4a14520cb44843bd0d0989634ae9e17b76400f509340b0ff56",
+      "crop": [
+        784,
+        303,
+        997,
+        504
+      ],
+      "frame": 7,
+      "destination": [
+        401,
+        150,
+        93,
+        88
+      ]
+    },
+    {
+      "source": "docs/art-source/motions/batch-01/grand_trophy_guardian/spaced-transparent.png",
+      "sourceSha256": "221fa80bbfa61e4a14520cb44843bd0d0989634ae9e17b76400f509340b0ff56",
+      "crop": [
+        28,
+        549,
+        224,
+        753
+      ],
+      "frame": 8,
+      "destination": [
+        21,
+        277,
+        86,
+        89
+      ]
+    },
+    {
+      "source": "docs/art-source/motions/batch-01/grand_trophy_guardian/spaced-transparent.png",
+      "sourceSha256": "221fa80bbfa61e4a14520cb44843bd0d0989634ae9e17b76400f509340b0ff56",
+      "crop": [
+        280,
+        544,
+        490,
+        754
+      ],
+      "frame": 9,
+      "destination": [
+        146,
+        274,
+        92,
+        92
+      ]
+    },
+    {
+      "source": "docs/art-source/motions/batch-01/grand_trophy_guardian/spaced-transparent.png",
+      "sourceSha256": "221fa80bbfa61e4a14520cb44843bd0d0989634ae9e17b76400f509340b0ff56",
+      "crop": [
+        525,
+        549,
+        770,
+        752
+      ],
+      "frame": 10,
+      "destination": [
+        266,
+        277,
+        107,
+        89
+      ]
+    },
+    {
+      "source": "docs/art-source/motions/batch-01/grand_trophy_guardian/spaced-transparent.png",
+      "sourceSha256": "221fa80bbfa61e4a14520cb44843bd0d0989634ae9e17b76400f509340b0ff56",
+      "crop": [
+        795,
+        550,
+        985,
+        752
+      ],
+      "frame": 11,
+      "destination": [
+        406,
+        277,
+        83,
+        89
+      ]
+    },
+    {
+      "source": "docs/art-source/motions/batch-01/grand_trophy_guardian/spaced-transparent.png",
+      "sourceSha256": "221fa80bbfa61e4a14520cb44843bd0d0989634ae9e17b76400f509340b0ff56",
+      "crop": [
+        30,
+        810,
+        231,
+        999
+      ],
+      "frame": 12,
+      "destination": [
+        20,
+        411,
+        88,
+        83
+      ]
+    },
+    {
+      "source": "docs/art-source/motions/batch-01/grand_trophy_guardian/spaced-transparent.png",
+      "sourceSha256": "221fa80bbfa61e4a14520cb44843bd0d0989634ae9e17b76400f509340b0ff56",
+      "crop": [
+        289,
+        779,
+        485,
+        1001
+      ],
+      "frame": 13,
+      "destination": [
+        149,
+        397,
+        86,
+        97
+      ]
+    },
+    {
+      "source": "docs/art-source/motions/batch-01/grand_trophy_guardian/spaced-transparent.png",
+      "sourceSha256": "221fa80bbfa61e4a14520cb44843bd0d0989634ae9e17b76400f509340b0ff56",
+      "crop": [
+        524,
+        776,
+        742,
+        1004
+      ],
+      "frame": 14,
+      "destination": [
+        272,
+        394,
+        96,
+        100
+      ]
+    },
+    {
+      "source": "docs/art-source/motions/batch-01/grand_trophy_guardian/spaced-transparent.png",
+      "sourceSha256": "221fa80bbfa61e4a14520cb44843bd0d0989634ae9e17b76400f509340b0ff56",
+      "crop": [
+        794,
+        805,
+        987,
+        1003
+      ],
+      "frame": 15,
+      "destination": [
+        405,
+        407,
+        85,
+        87
+      ]
+    },
+    {
+      "source": "docs/art-source/motions/batch-01/grand_trophy_guardian/spaced-transparent.png",
+      "sourceSha256": "221fa80bbfa61e4a14520cb44843bd0d0989634ae9e17b76400f509340b0ff56",
+      "crop": [
+        27,
+        1052,
+        219,
+        1234
+      ],
+      "frame": 16,
+      "destination": [
+        22,
+        542,
+        84,
+        80
+      ]
+    },
+    {
+      "source": "docs/art-source/motions/batch-01/grand_trophy_guardian/spaced-transparent.png",
+      "sourceSha256": "221fa80bbfa61e4a14520cb44843bd0d0989634ae9e17b76400f509340b0ff56",
+      "crop": [
+        276,
+        1072,
+        468,
+        1232
+      ],
+      "frame": 17,
+      "destination": [
+        150,
+        552,
+        84,
+        70
+      ]
+    },
+    {
+      "source": "docs/art-source/motions/batch-01/grand_trophy_guardian/spaced-transparent.png",
+      "sourceSha256": "221fa80bbfa61e4a14520cb44843bd0d0989634ae9e17b76400f509340b0ff56",
+      "crop": [
+        512,
+        1086,
+        717,
+        1234
+      ],
+      "frame": 18,
+      "destination": [
+        275,
+        557,
+        90,
+        65
+      ]
+    },
+    {
+      "source": "docs/art-source/motions/batch-01/grand_trophy_guardian/spaced-transparent.png",
+      "sourceSha256": "221fa80bbfa61e4a14520cb44843bd0d0989634ae9e17b76400f509340b0ff56",
+      "crop": [
+        755,
+        1139,
+        1006,
+        1232
+      ],
+      "frame": 19,
+      "destination": [
+        393,
+        581,
+        110,
+        41
+      ]
+    },
+    {
+      "source": "docs/art-source/motions/batch-01/grand_trophy_guardian/spaced-transparent.png",
+      "sourceSha256": "221fa80bbfa61e4a14520cb44843bd0d0989634ae9e17b76400f509340b0ff56",
+      "crop": [
+        30,
+        1285,
+        221,
+        1481
+      ],
+      "frame": 20,
+      "destination": [
+        22,
+        664,
+        84,
+        86
+      ]
+    },
+    {
+      "source": "docs/art-source/motions/batch-01/grand_trophy_guardian/spaced-transparent.png",
+      "sourceSha256": "221fa80bbfa61e4a14520cb44843bd0d0989634ae9e17b76400f509340b0ff56",
+      "crop": [
+        291,
+        1260,
+        495,
+        1487
+      ],
+      "frame": 21,
+      "destination": [
+        147,
+        651,
+        89,
+        99
+      ]
+    },
+    {
+      "source": "docs/art-source/motions/batch-01/grand_trophy_guardian/spaced-transparent.png",
+      "sourceSha256": "221fa80bbfa61e4a14520cb44843bd0d0989634ae9e17b76400f509340b0ff56",
+      "crop": [
+        540,
+        1260,
+        733,
+        1485
+      ],
+      "frame": 22,
+      "destination": [
+        277,
+        651,
+        85,
+        99
+      ]
+    },
+    {
+      "source": "docs/art-source/motions/batch-01/grand_trophy_guardian/spaced-transparent.png",
+      "sourceSha256": "221fa80bbfa61e4a14520cb44843bd0d0989634ae9e17b76400f509340b0ff56",
+      "crop": [
+        795,
+        1262,
+        992,
+        1486
+      ],
+      "frame": 23,
+      "destination": [
+        405,
+        652,
+        86,
+        98
+      ]
+    }
+  ]
+}

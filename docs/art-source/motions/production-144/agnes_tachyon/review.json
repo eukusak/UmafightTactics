@@ -1,0 +1,12 @@
+{
+  "approved": true,
+  "source": "alpha.png",
+  "skillReview": "연속 스퍼트: 긴 소매를 뻗은 첫 발사 → 같은 대상 두 번째 발사 → 손바닥을 드러낸 세 번째 발사 → 소매를 모은 방어 회복. 실제 3회 동일 대상 공격.",
+  "reviewedAt": "2026-09-09",
+  "checks": [
+    "Race costume and identity",
+    "24 poses with correct action rows",
+    "actual skill target and effect",
+    "transparent RGBA"
+  ]
+}

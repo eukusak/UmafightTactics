@@ -1,0 +1,443 @@
+{
+  "format": "uft-baked-frames-v1",
+  "scale": 0.41434262948207173,
+  "anchor": [
+    64,
+    110
+  ],
+  "runtimeSha256": "a4536321e7ebba9377cc05f48678faf87188a6bb99540d364dfa862ea625c44c",
+  "frames": [
+    {
+      "frame": 0,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/production-144/king_halo/alpha.png",
+      "sourceSha256": "e3bc7fc53fb179d4c425bc5e67c5e7018b5fa2f32b5ab4ddf0417249b42798c1",
+      "crop": [
+        57,
+        32,
+        218,
+        274
+      ],
+      "destination": [
+        30,
+        10,
+        67,
+        100
+      ]
+    },
+    {
+      "frame": 1,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/production-144/king_halo/alpha.png",
+      "sourceSha256": "e3bc7fc53fb179d4c425bc5e67c5e7018b5fa2f32b5ab4ddf0417249b42798c1",
+      "crop": [
+        311,
+        32,
+        464,
+        274
+      ],
+      "destination": [
+        160,
+        10,
+        63,
+        100
+      ]
+    },
+    {
+      "frame": 2,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/production-144/king_halo/alpha.png",
+      "sourceSha256": "e3bc7fc53fb179d4c425bc5e67c5e7018b5fa2f32b5ab4ddf0417249b42798c1",
+      "crop": [
+        550,
+        31,
+        706,
+        274
+      ],
+      "destination": [
+        287,
+        9,
+        65,
+        101
+      ]
+    },
+    {
+      "frame": 3,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/production-144/king_halo/alpha.png",
+      "sourceSha256": "e3bc7fc53fb179d4c425bc5e67c5e7018b5fa2f32b5ab4ddf0417249b42798c1",
+      "crop": [
+        820,
+        33,
+        975,
+        274
+      ],
+      "destination": [
+        416,
+        10,
+        64,
+        100
+      ]
+    },
+    {
+      "frame": 4,
+      "sourceFrame": 4,
+      "source": "docs/art-source/motions/production-144/king_halo/alpha.png",
+      "sourceSha256": "e3bc7fc53fb179d4c425bc5e67c5e7018b5fa2f32b5ab4ddf0417249b42798c1",
+      "crop": [
+        31,
+        290,
+        225,
+        522
+      ],
+      "destination": [
+        24,
+        142,
+        80,
+        96
+      ]
+    },
+    {
+      "frame": 5,
+      "sourceFrame": 5,
+      "source": "docs/art-source/motions/production-144/king_halo/alpha.png",
+      "sourceSha256": "e3bc7fc53fb179d4c425bc5e67c5e7018b5fa2f32b5ab4ddf0417249b42798c1",
+      "crop": [
+        290,
+        291,
+        479,
+        523
+      ],
+      "destination": [
+        153,
+        142,
+        78,
+        96
+      ]
+    },
+    {
+      "frame": 6,
+      "sourceFrame": 6,
+      "source": "docs/art-source/motions/production-144/king_halo/alpha.png",
+      "sourceSha256": "e3bc7fc53fb179d4c425bc5e67c5e7018b5fa2f32b5ab4ddf0417249b42798c1",
+      "crop": [
+        532,
+        294,
+        729,
+        523
+      ],
+      "destination": [
+        279,
+        143,
+        82,
+        95
+      ]
+    },
+    {
+      "frame": 7,
+      "sourceFrame": 7,
+      "source": "docs/art-source/motions/production-144/king_halo/alpha.png",
+      "sourceSha256": "e3bc7fc53fb179d4c425bc5e67c5e7018b5fa2f32b5ab4ddf0417249b42798c1",
+      "crop": [
+        801,
+        294,
+        999,
+        523
+      ],
+      "destination": [
+        407,
+        143,
+        82,
+        95
+      ]
+    },
+    {
+      "frame": 8,
+      "sourceFrame": 8,
+      "source": "docs/art-source/motions/production-144/king_halo/alpha.png",
+      "sourceSha256": "e3bc7fc53fb179d4c425bc5e67c5e7018b5fa2f32b5ab4ddf0417249b42798c1",
+      "crop": [
+        52,
+        539,
+        256,
+        776
+      ],
+      "destination": [
+        21,
+        268,
+        85,
+        98
+      ]
+    },
+    {
+      "frame": 9,
+      "sourceFrame": 9,
+      "source": "docs/art-source/motions/production-144/king_halo/alpha.png",
+      "sourceSha256": "e3bc7fc53fb179d4c425bc5e67c5e7018b5fa2f32b5ab4ddf0417249b42798c1",
+      "crop": [
+        316,
+        540,
+        468,
+        776
+      ],
+      "destination": [
+        160,
+        268,
+        63,
+        98
+      ]
+    },
+    {
+      "frame": 10,
+      "sourceFrame": 10,
+      "source": "docs/art-source/motions/production-144/king_halo/alpha.png",
+      "sourceSha256": "e3bc7fc53fb179d4c425bc5e67c5e7018b5fa2f32b5ab4ddf0417249b42798c1",
+      "crop": [
+        559,
+        543,
+        766,
+        776
+      ],
+      "destination": [
+        277,
+        269,
+        86,
+        97
+      ]
+    },
+    {
+      "frame": 11,
+      "sourceFrame": 11,
+      "source": "docs/art-source/motions/production-144/king_halo/alpha.png",
+      "sourceSha256": "e3bc7fc53fb179d4c425bc5e67c5e7018b5fa2f32b5ab4ddf0417249b42798c1",
+      "crop": [
+        824,
+        547,
+        970,
+        776
+      ],
+      "destination": [
+        418,
+        271,
+        60,
+        95
+      ]
+    },
+    {
+      "frame": 12,
+      "sourceFrame": 12,
+      "source": "docs/art-source/motions/production-144/king_halo/alpha.png",
+      "sourceSha256": "e3bc7fc53fb179d4c425bc5e67c5e7018b5fa2f32b5ab4ddf0417249b42798c1",
+      "crop": [
+        56,
+        793,
+        212,
+        1044
+      ],
+      "destination": [
+        31,
+        390,
+        65,
+        104
+      ]
+    },
+    {
+      "frame": 13,
+      "sourceFrame": 13,
+      "source": "docs/art-source/motions/production-144/king_halo/alpha.png",
+      "sourceSha256": "e3bc7fc53fb179d4c425bc5e67c5e7018b5fa2f32b5ab4ddf0417249b42798c1",
+      "crop": [
+        316,
+        792,
+        467,
+        1042
+      ],
+      "destination": [
+        160,
+        390,
+        63,
+        104
+      ]
+    },
+    {
+      "frame": 14,
+      "sourceFrame": 14,
+      "source": "docs/art-source/motions/production-144/king_halo/alpha.png",
+      "sourceSha256": "e3bc7fc53fb179d4c425bc5e67c5e7018b5fa2f32b5ab4ddf0417249b42798c1",
+      "crop": [
+        553,
+        797,
+        756,
+        1042
+      ],
+      "destination": [
+        278,
+        392,
+        84,
+        102
+      ]
+    },
+    {
+      "frame": 15,
+      "sourceFrame": 15,
+      "source": "docs/art-source/motions/production-144/king_halo/alpha.png",
+      "sourceSha256": "e3bc7fc53fb179d4c425bc5e67c5e7018b5fa2f32b5ab4ddf0417249b42798c1",
+      "crop": [
+        818,
+        794,
+        969,
+        1043
+      ],
+      "destination": [
+        416,
+        391,
+        63,
+        103
+      ]
+    },
+    {
+      "frame": 16,
+      "sourceFrame": 16,
+      "source": "docs/art-source/motions/production-144/king_halo/alpha.png",
+      "sourceSha256": "e3bc7fc53fb179d4c425bc5e67c5e7018b5fa2f32b5ab4ddf0417249b42798c1",
+      "crop": [
+        54,
+        1069,
+        233,
+        1267
+      ],
+      "destination": [
+        27,
+        540,
+        74,
+        82
+      ]
+    },
+    {
+      "frame": 17,
+      "sourceFrame": 17,
+      "source": "docs/art-source/motions/production-144/king_halo/alpha.png",
+      "sourceSha256": "e3bc7fc53fb179d4c425bc5e67c5e7018b5fa2f32b5ab4ddf0417249b42798c1",
+      "crop": [
+        297,
+        1084,
+        504,
+        1264
+      ],
+      "destination": [
+        149,
+        547,
+        86,
+        75
+      ]
+    },
+    {
+      "frame": 18,
+      "sourceFrame": 18,
+      "source": "docs/art-source/motions/production-144/king_halo/alpha.png",
+      "sourceSha256": "e3bc7fc53fb179d4c425bc5e67c5e7018b5fa2f32b5ab4ddf0417249b42798c1",
+      "crop": [
+        550,
+        1096,
+        715,
+        1264
+      ],
+      "destination": [
+        286,
+        552,
+        68,
+        70
+      ]
+    },
+    {
+      "frame": 19,
+      "sourceFrame": 19,
+      "source": "docs/art-source/motions/production-144/king_halo/alpha.png",
+      "sourceSha256": "e3bc7fc53fb179d4c425bc5e67c5e7018b5fa2f32b5ab4ddf0417249b42798c1",
+      "crop": [
+        777,
+        1166,
+        1001,
+        1267
+      ],
+      "destination": [
+        401,
+        580,
+        93,
+        42
+      ]
+    },
+    {
+      "frame": 20,
+      "sourceFrame": 20,
+      "source": "docs/art-source/motions/production-144/king_halo/alpha.png",
+      "sourceSha256": "e3bc7fc53fb179d4c425bc5e67c5e7018b5fa2f32b5ab4ddf0417249b42798c1",
+      "crop": [
+        39,
+        1282,
+        195,
+        1526
+      ],
+      "destination": [
+        31,
+        649,
+        65,
+        101
+      ]
+    },
+    {
+      "frame": 21,
+      "sourceFrame": 21,
+      "source": "docs/art-source/motions/production-144/king_halo/alpha.png",
+      "sourceSha256": "e3bc7fc53fb179d4c425bc5e67c5e7018b5fa2f32b5ab4ddf0417249b42798c1",
+      "crop": [
+        302,
+        1283,
+        481,
+        1525
+      ],
+      "destination": [
+        155,
+        650,
+        74,
+        100
+      ]
+    },
+    {
+      "frame": 22,
+      "sourceFrame": 22,
+      "source": "docs/art-source/motions/production-144/king_halo/alpha.png",
+      "sourceSha256": "e3bc7fc53fb179d4c425bc5e67c5e7018b5fa2f32b5ab4ddf0417249b42798c1",
+      "crop": [
+        564,
+        1281,
+        709,
+        1531
+      ],
+      "destination": [
+        290,
+        646,
+        60,
+        104
+      ]
+    },
+    {
+      "frame": 23,
+      "sourceFrame": 23,
+      "source": "docs/art-source/motions/production-144/king_halo/alpha.png",
+      "sourceSha256": "e3bc7fc53fb179d4c425bc5e67c5e7018b5fa2f32b5ab4ddf0417249b42798c1",
+      "crop": [
+        805,
+        1285,
+        993,
+        1527
+      ],
+      "destination": [
+        409,
+        650,
+        78,
+        100
+      ]
+    }
+  ]
+}

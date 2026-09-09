@@ -6,12 +6,22 @@ import { getTrait } from '../game/engine/traits/trait-defs';
 import { ART_COLORS, ITEM_TAG_COLORS, ROLE_COLORS, ROLE_LABELS, STYLE_COLORS } from '../game/ui/palette';
 import { initialOf } from '../game/phaser/fallback-art';
 import type { UnitInstance } from '../game/engine/state';
+import { portraitUrl, itemUrl } from '../game/ui/art';
 import type { TraitId } from '../game/engine/types';
 
 export const costVar = (cost: number): string => `var(--cost-${cost})`;
 
 export function traitColor(id: TraitId): string {
   return STYLE_COLORS[id] ?? ART_COLORS.edgeLight;
+}
+
+export function Portrait({ id, name, size = 64 }: { id: string; name: string; size?: number }): JSX.Element {
+  const [failed, setFailed] = useState(false);
+  const url = portraitUrl(id);
+  useEffect(() => setFailed(false), [id]);
+  return url && !failed
+    ? <img className="portrait-art" src={url} alt={name} width={size} height={size} draggable={false} onError={() => setFailed(true)} />
+    : <span className="portrait-fallback" style={{ width: size, height: size }}>{initialOf(name)}</span>;
 }
 
 /** Circular unit token used on the bench, board and shop. */
@@ -33,7 +43,7 @@ export function UnitToken({
       }}
     >
       {unit.star > 1 && <div className="stars">{'★'.repeat(unit.star)}</div>}
-      {initialOf(def.nameKo)}
+      <Portrait id={def.id} name={def.nameKo} size={size - 6} />
       {unit.items.length > 0 && (
         <div className="items">
           {unit.items.map((id, i) => (
@@ -48,7 +58,7 @@ export function UnitToken({
 export function TraitChip({ id }: { id: TraitId }): JSX.Element {
   const trait = getTrait(id);
   return (
-    <span className="pill" style={{ borderColor: traitColor(id) }}>
+    <span className="pill" title={`${trait.description}\n${trait.tiers.map(t => `${t.count}: ${t.description}`).join("\n")}`} style={{ borderColor: traitColor(id) }}>
       {trait.name}
     </span>
   );
@@ -81,7 +91,9 @@ export function ItemIcon({
         cursor: onClick ? 'pointer' : 'default', flex: '0 0 auto',
       }}
     >
-      {item.name.slice(0, 2)}
+      {itemUrl(itemId)
+        ? <img src={itemUrl(itemId)!} alt={item.name} width={size - 4} height={size - 4} draggable={false} />
+        : item.name.slice(0, 2)}
     </div>
   );
 }

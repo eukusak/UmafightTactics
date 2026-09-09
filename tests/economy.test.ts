@@ -67,7 +67,8 @@ describe('interest and streaks', () => {
   it('follows the streak table', () => {
     expect(streakGold(0)).toBe(0);
     expect(streakGold(1)).toBe(0);
-    expect(streakGold(2)).toBe(1);
+    expect(streakGold(2)).toBe(0);
+    expect(streakGold(3)).toBe(1);
     expect(streakGold(4)).toBe(1);
     expect(streakGold(5)).toBe(2);
     expect(streakGold(7)).toBe(3);

@@ -1,0 +1,149 @@
+{
+  "newGameAssets": 11,
+  "newCutins": 6,
+  "newDerivedPortraits": 5,
+  "sourceComponents": 5,
+  "riggedModels": 0,
+  "priorAcceptedCount": 222,
+  "inventoryAfterAddition": 233,
+  "required": 514,
+  "remaining": 281,
+  "remainingPortraits": 136,
+  "remainingBattleSheets": 145,
+  "remainingCutins": 0,
+  "checks": [
+    {
+      "file": "characters/cutin/special_week.png",
+      "size": [
+        960,
+        540
+      ],
+      "alpha": [
+        0,
+        255
+      ],
+      "leftClearPixels": 384
+    },
+    {
+      "file": "characters/cutin/maruzensky.png",
+      "size": [
+        960,
+        540
+      ],
+      "alpha": [
+        0,
+        255
+      ],
+      "leftClearPixels": 384
+    },
+    {
+      "file": "characters/cutin/daiwa_scarlet.png",
+      "size": [
+        960,
+        540
+      ],
+      "alpha": [
+        0,
+        255
+      ],
+      "leftClearPixels": 384
+    },
+    {
+      "file": "characters/cutin/taiki_shuttle.png",
+      "size": [
+        960,
+        540
+      ],
+      "alpha": [
+        0,
+        255
+      ],
+      "leftClearPixels": 384
+    },
+    {
+      "file": "characters/cutin/tm_opera_o.png",
+      "size": [
+        960,
+        540
+      ],
+      "alpha": [
+        0,
+        255
+      ],
+      "leftClearPixels": 384
+    },
+    {
+      "file": "characters/cutin/mihono_bourbon.png",
+      "size": [
+        960,
+        540
+      ],
+      "alpha": [
+        0,
+        255
+      ],
+      "leftClearPixels": 384
+    },
+    {
+      "file": "portraits/maruzensky.png",
+      "size": [
+        256,
+        256
+      ],
+      "alpha": [
+        0,
+        255
+      ]
+    },
+    {
+      "file": "portraits/daiwa_scarlet.png",
+      "size": [
+        256,
+        256
+      ],
+      "alpha": [
+        0,
+        255
+      ]
+    },
+    {
+      "file": "portraits/taiki_shuttle.png",
+      "size": [
+        256,
+        256
+      ],
+      "alpha": [
+        0,
+        255
+      ]
+    },
+    {
+      "file": "portraits/tm_opera_o.png",
+      "size": [
+        256,
+        256
+      ],
+      "alpha": [
+        0,
+        255
+      ]
+    },
+    {
+      "file": "portraits/mihono_bourbon.png",
+      "size": [
+        256,
+        256
+      ],
+      "alpha": [
+        0,
+        255
+      ]
+    }
+  ],
+  "limitations": [
+    "Existing remote binary assets were not redownloaded, so 233 is prior accepted 222 plus 11 locally validated additions.",
+    "Full npm tests/build not rerun: offline dependency install failed with ENOTCACHED.",
+    "No new in-browser scene verification.",
+    "Partial source components only, no assembled PSD or Cubism model."
+  ]
+}

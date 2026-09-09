@@ -1,0 +1,443 @@
+{
+  "format": "uft-baked-frames-v1",
+  "scale": 0.45021645021645024,
+  "anchor": [
+    64,
+    110
+  ],
+  "runtimeSha256": "168853ad85ddb027f422aeeb6f8793ae746df586d222fc3e704507f4d29135e2",
+  "frames": [
+    {
+      "frame": 0,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/production-144/vivlos/alpha.png",
+      "sourceSha256": "de7fdef2a00a7c8c580860ed4cadf1e99bdbde691dfe0f0031e3596c64812e93",
+      "crop": [
+        24,
+        32,
+        186,
+        256
+      ],
+      "destination": [
+        27,
+        9,
+        73,
+        101
+      ]
+    },
+    {
+      "frame": 1,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/production-144/vivlos/alpha.png",
+      "sourceSha256": "de7fdef2a00a7c8c580860ed4cadf1e99bdbde691dfe0f0031e3596c64812e93",
+      "crop": [
+        280,
+        32,
+        447,
+        256
+      ],
+      "destination": [
+        154,
+        9,
+        75,
+        101
+      ]
+    },
+    {
+      "frame": 2,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/production-144/vivlos/alpha.png",
+      "sourceSha256": "de7fdef2a00a7c8c580860ed4cadf1e99bdbde691dfe0f0031e3596c64812e93",
+      "crop": [
+        544,
+        32,
+        714,
+        256
+      ],
+      "destination": [
+        281,
+        9,
+        77,
+        101
+      ]
+    },
+    {
+      "frame": 3,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/production-144/vivlos/alpha.png",
+      "sourceSha256": "de7fdef2a00a7c8c580860ed4cadf1e99bdbde691dfe0f0031e3596c64812e93",
+      "crop": [
+        797,
+        34,
+        956,
+        256
+      ],
+      "destination": [
+        412,
+        10,
+        72,
+        100
+      ]
+    },
+    {
+      "frame": 4,
+      "sourceFrame": 4,
+      "source": "docs/art-source/motions/production-144/vivlos/alpha.png",
+      "sourceSha256": "de7fdef2a00a7c8c580860ed4cadf1e99bdbde691dfe0f0031e3596c64812e93",
+      "crop": [
+        17,
+        290,
+        203,
+        512
+      ],
+      "destination": [
+        22,
+        138,
+        84,
+        100
+      ]
+    },
+    {
+      "frame": 5,
+      "sourceFrame": 5,
+      "source": "docs/art-source/motions/production-144/vivlos/alpha.png",
+      "sourceSha256": "de7fdef2a00a7c8c580860ed4cadf1e99bdbde691dfe0f0031e3596c64812e93",
+      "crop": [
+        278,
+        289,
+        465,
+        505
+      ],
+      "destination": [
+        150,
+        141,
+        84,
+        97
+      ]
+    },
+    {
+      "frame": 6,
+      "sourceFrame": 6,
+      "source": "docs/art-source/motions/production-144/vivlos/alpha.png",
+      "sourceSha256": "de7fdef2a00a7c8c580860ed4cadf1e99bdbde691dfe0f0031e3596c64812e93",
+      "crop": [
+        539,
+        295,
+        723,
+        512
+      ],
+      "destination": [
+        278,
+        140,
+        83,
+        98
+      ]
+    },
+    {
+      "frame": 7,
+      "sourceFrame": 7,
+      "source": "docs/art-source/motions/production-144/vivlos/alpha.png",
+      "sourceSha256": "de7fdef2a00a7c8c580860ed4cadf1e99bdbde691dfe0f0031e3596c64812e93",
+      "crop": [
+        795,
+        288,
+        987,
+        512
+      ],
+      "destination": [
+        405,
+        137,
+        86,
+        101
+      ]
+    },
+    {
+      "frame": 8,
+      "sourceFrame": 8,
+      "source": "docs/art-source/motions/production-144/vivlos/alpha.png",
+      "sourceSha256": "de7fdef2a00a7c8c580860ed4cadf1e99bdbde691dfe0f0031e3596c64812e93",
+      "crop": [
+        26,
+        536,
+        223,
+        764
+      ],
+      "destination": [
+        19,
+        263,
+        89,
+        103
+      ]
+    },
+    {
+      "frame": 9,
+      "sourceFrame": 9,
+      "source": "docs/art-source/motions/production-144/vivlos/alpha.png",
+      "sourceSha256": "de7fdef2a00a7c8c580860ed4cadf1e99bdbde691dfe0f0031e3596c64812e93",
+      "crop": [
+        280,
+        540,
+        462,
+        764
+      ],
+      "destination": [
+        151,
+        265,
+        82,
+        101
+      ]
+    },
+    {
+      "frame": 10,
+      "sourceFrame": 10,
+      "source": "docs/art-source/motions/production-144/vivlos/alpha.png",
+      "sourceSha256": "de7fdef2a00a7c8c580860ed4cadf1e99bdbde691dfe0f0031e3596c64812e93",
+      "crop": [
+        544,
+        540,
+        744,
+        764
+      ],
+      "destination": [
+        275,
+        265,
+        90,
+        101
+      ]
+    },
+    {
+      "frame": 11,
+      "sourceFrame": 11,
+      "source": "docs/art-source/motions/production-144/vivlos/alpha.png",
+      "sourceSha256": "de7fdef2a00a7c8c580860ed4cadf1e99bdbde691dfe0f0031e3596c64812e93",
+      "crop": [
+        790,
+        537,
+        970,
+        768
+      ],
+      "destination": [
+        407,
+        262,
+        81,
+        104
+      ]
+    },
+    {
+      "frame": 12,
+      "sourceFrame": 12,
+      "source": "docs/art-source/motions/production-144/vivlos/alpha.png",
+      "sourceSha256": "de7fdef2a00a7c8c580860ed4cadf1e99bdbde691dfe0f0031e3596c64812e93",
+      "crop": [
+        41,
+        836,
+        212,
+        1007
+      ],
+      "destination": [
+        25,
+        417,
+        77,
+        77
+      ]
+    },
+    {
+      "frame": 13,
+      "sourceFrame": 13,
+      "source": "docs/art-source/motions/production-144/vivlos/alpha.png",
+      "sourceSha256": "de7fdef2a00a7c8c580860ed4cadf1e99bdbde691dfe0f0031e3596c64812e93",
+      "crop": [
+        280,
+        806,
+        481,
+        995
+      ],
+      "destination": [
+        147,
+        409,
+        90,
+        85
+      ]
+    },
+    {
+      "frame": 14,
+      "sourceFrame": 14,
+      "source": "docs/art-source/motions/production-144/vivlos/alpha.png",
+      "sourceSha256": "de7fdef2a00a7c8c580860ed4cadf1e99bdbde691dfe0f0031e3596c64812e93",
+      "crop": [
+        537,
+        857,
+        763,
+        997
+      ],
+      "destination": [
+        269,
+        431,
+        102,
+        63
+      ]
+    },
+    {
+      "frame": 15,
+      "sourceFrame": 15,
+      "source": "docs/art-source/motions/production-144/vivlos/alpha.png",
+      "sourceSha256": "de7fdef2a00a7c8c580860ed4cadf1e99bdbde691dfe0f0031e3596c64812e93",
+      "crop": [
+        801,
+        821,
+        991,
+        1001
+      ],
+      "destination": [
+        405,
+        413,
+        86,
+        81
+      ]
+    },
+    {
+      "frame": 16,
+      "sourceFrame": 16,
+      "source": "docs/art-source/motions/production-144/vivlos/alpha.png",
+      "sourceSha256": "de7fdef2a00a7c8c580860ed4cadf1e99bdbde691dfe0f0031e3596c64812e93",
+      "crop": [
+        28,
+        1049,
+        203,
+        1259
+      ],
+      "destination": [
+        24,
+        527,
+        79,
+        95
+      ]
+    },
+    {
+      "frame": 17,
+      "sourceFrame": 17,
+      "source": "docs/art-source/motions/production-144/vivlos/alpha.png",
+      "sourceSha256": "de7fdef2a00a7c8c580860ed4cadf1e99bdbde691dfe0f0031e3596c64812e93",
+      "crop": [
+        296,
+        1074,
+        473,
+        1254
+      ],
+      "destination": [
+        152,
+        541,
+        80,
+        81
+      ]
+    },
+    {
+      "frame": 18,
+      "sourceFrame": 18,
+      "source": "docs/art-source/motions/production-144/vivlos/alpha.png",
+      "sourceSha256": "de7fdef2a00a7c8c580860ed4cadf1e99bdbde691dfe0f0031e3596c64812e93",
+      "crop": [
+        550,
+        1096,
+        723,
+        1252
+      ],
+      "destination": [
+        281,
+        552,
+        78,
+        70
+      ]
+    },
+    {
+      "frame": 19,
+      "sourceFrame": 19,
+      "source": "docs/art-source/motions/production-144/vivlos/alpha.png",
+      "sourceSha256": "de7fdef2a00a7c8c580860ed4cadf1e99bdbde691dfe0f0031e3596c64812e93",
+      "crop": [
+        798,
+        1152,
+        1007,
+        1249
+      ],
+      "destination": [
+        401,
+        578,
+        94,
+        44
+      ]
+    },
+    {
+      "frame": 20,
+      "sourceFrame": 20,
+      "source": "docs/art-source/motions/production-144/vivlos/alpha.png",
+      "sourceSha256": "de7fdef2a00a7c8c580860ed4cadf1e99bdbde691dfe0f0031e3596c64812e93",
+      "crop": [
+        33,
+        1279,
+        198,
+        1510
+      ],
+      "destination": [
+        27,
+        646,
+        74,
+        104
+      ]
+    },
+    {
+      "frame": 21,
+      "sourceFrame": 21,
+      "source": "docs/art-source/motions/production-144/vivlos/alpha.png",
+      "sourceSha256": "de7fdef2a00a7c8c580860ed4cadf1e99bdbde691dfe0f0031e3596c64812e93",
+      "crop": [
+        297,
+        1283,
+        464,
+        1511
+      ],
+      "destination": [
+        154,
+        647,
+        75,
+        103
+      ]
+    },
+    {
+      "frame": 22,
+      "sourceFrame": 22,
+      "source": "docs/art-source/motions/production-144/vivlos/alpha.png",
+      "sourceSha256": "de7fdef2a00a7c8c580860ed4cadf1e99bdbde691dfe0f0031e3596c64812e93",
+      "crop": [
+        543,
+        1284,
+        724,
+        1510
+      ],
+      "destination": [
+        279,
+        648,
+        81,
+        102
+      ]
+    },
+    {
+      "frame": 23,
+      "sourceFrame": 23,
+      "source": "docs/art-source/motions/production-144/vivlos/alpha.png",
+      "sourceSha256": "de7fdef2a00a7c8c580860ed4cadf1e99bdbde691dfe0f0031e3596c64812e93",
+      "crop": [
+        803,
+        1287,
+        990,
+        1513
+      ],
+      "destination": [
+        406,
+        648,
+        84,
+        102
+      ]
+    }
+  ]
+}

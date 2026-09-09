@@ -1,0 +1,106 @@
+{
+  "batchSize": 5,
+  "validation": "new portraits only; full app test/build not rerun",
+  "files": [
+    {
+      "id": "mejiro_ramonu",
+      "size": [
+        256,
+        256
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "bounds": [
+        17,
+        12,
+        245,
+        244
+      ],
+      "sourceSha256": "881c3fbf869518eae934c13f4088a5376d95ef76d26115b63c2fd903d1d5f53a",
+      "runtimeSha256": "9bcad1bf76159df6bfac6c8b0eb8ba9eaac266eb13322b51c3b69f9cf259a1a0",
+      "reference": "public/assets/characters/race/MejiroRamonu-Race.png"
+    },
+    {
+      "id": "aston_machan",
+      "size": [
+        256,
+        256
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "bounds": [
+        14,
+        6,
+        234,
+        250
+      ],
+      "sourceSha256": "5b72fff9ce964d4cb309f4c0ab7d5ab5e21a6a407f564f240c7f236e1639ba12",
+      "runtimeSha256": "6bb530bafc3607dc5d0f56283e1872ca968f0aad70dfca93ca754b3126e44afc",
+      "reference": "public/assets/characters/race/AstonMachan-Race.png"
+    },
+    {
+      "id": "satono_crown",
+      "size": [
+        256,
+        256
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "bounds": [
+        27,
+        6,
+        228,
+        250
+      ],
+      "sourceSha256": "6bac23bb5edc7cec4285d1f24cf5c75f2c52b50346f7b1f4c2463541b127b61c",
+      "runtimeSha256": "5b502e1931e7fd188aa50a31c101c4f15aecdb635e0d9f46d382e3e4ace7fe29",
+      "reference": "public/assets/characters/race/SatonoCrown-Race.png"
+    },
+    {
+      "id": "cheval_grand",
+      "size": [
+        256,
+        256
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "bounds": [
+        9,
+        6,
+        247,
+        250
+      ],
+      "sourceSha256": "f3e0200116b99419889f33213e65b6f20c3d8beec43608cd4b8196b8517e9983",
+      "runtimeSha256": "e5d2ca8419a61ab41270cb279f483f6076a076ea88394e6987acfd859c6f04d0",
+      "reference": "public/assets/characters/race/ChevalGrand-Race.png"
+    },
+    {
+      "id": "vivlos",
+      "size": [
+        256,
+        256
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "bounds": [
+        13,
+        6,
+        242,
+        250
+      ],
+      "sourceSha256": "fe903fb5621fcc8d1fbf0fa16e7a4abce9ec8890183eb0a9e5b93b61c9518b31",
+      "runtimeSha256": "7f1913bd88458b41b196a4590d3268a51eb0f8eb35b572925c0232f8f73811cd",
+      "reference": "public/assets/characters/race/Vivlos-Race.png"
+    }
+  ]
+}

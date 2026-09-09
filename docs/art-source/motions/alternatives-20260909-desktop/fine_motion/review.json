@@ -1,0 +1,12 @@
+{
+  "skillReview": "원거리 손짓 발사. 직선 돌파: 낮은 출발 → 전방 발진 → 수평 돌진 → 착지. 흰 코트, 녹색 조끼, 검은 리본, 갈색 번 헤어 유지. 이동/공격 속도 강화이며 치유나 마법 시전 없음.",
+  "source": "alpha.png",
+  "approved": true,
+  "reviewedAt": "2026-09-09",
+  "checks": [
+    "Race costume and identity",
+    "24 poses with correct action rows",
+    "actual skill target and effect",
+    "transparent RGBA"
+  ]
+}
