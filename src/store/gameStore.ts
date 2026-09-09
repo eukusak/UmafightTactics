@@ -1,3 +1,6 @@
+import { setCarouselTarget } from '../game/engine/rounds/carousel';
+import type { CarouselPoint } from '../game/engine/state';
+import { playSound } from '../game/ui/audio';
 /**
  * Zustand store: the only bridge between the pure engine and React.
  *
@@ -88,6 +91,8 @@ type GameStore = {
 
   chooseAugment: (augmentId: string) => void;
   pickDraft: (optionIndex: number) => void;
+  moveCarousel: (target: CarouselPoint, option?: number | null) => void;
+  tickCarousel: (delta: number) => void;
 
   startBattle: () => void;
   finishBattle: () => void;
@@ -130,7 +135,7 @@ export const useGameStore = create<GameStore>((set, get) => ({
   newMatch: (seed = DEFAULT_SEED, name = '트레이너', seasonId = 's1') => {
     if (get().onlinePlayerId) onlineBridge.leave?.();
     const match = createMatch({ seed, humanName: name, seasonId });
-    const director = new RoundDirector(match);
+    const director = new RoundDirector(match, true);
     director.beginPrep();
     saveToStorage(director);
     set({ director, match, screen: 'BATTLE', battleFrames: null, battleRunning: false, battleComplete: false, battleTime: 0, prepRemaining: null, prepPaused: false, selectedUnitId: null, lastError: null, spectating: null, revision: 0 });
@@ -145,7 +150,7 @@ export const useGameStore = create<GameStore>((set, get) => ({
         : '저장된 게임이 없습니다.' });
       return false;
     }
-    const director = restoreDirector(result.save);
+    const director = restoreDirector(result.save, true);
     if (director.state.phase === 'ROUND_RESOLVE') director.advance();
     if (director.state.players.some((p) => p.isHuman && p.eliminatedAtRound !== null) && !director.isOver) director.runToCompletion(120, false);
     set({
@@ -223,6 +228,7 @@ export const useGameStore = create<GameStore>((set, get) => ({
     const player = get().human();
     if (!player) return;
     if (!buyXp(player).ok) set({ lastError: '골드가 부족하거나 이미 최대 레벨입니다.' });
+    else { set({ lastError: null }); playSound('level-up'); }
     bump(set);
   },
 
@@ -343,6 +349,21 @@ export const useGameStore = create<GameStore>((set, get) => ({
       set({ lastError: '지금은 선택할 수 없습니다.' });
     }
     saveToStorage(director);
+    bump(set);
+  },
+
+  moveCarousel: (target, option = null) => {
+    if (get().onlinePlayerId) { onlineBridge.send?.({ action: 'carouselMove', target, option }); return; }
+    const state = get().match, player = get().human();
+    if (state && player) { setCarouselTarget(state, player.id, target, option); bump(set); }
+  },
+  tickCarousel: delta => {
+    if (get().onlinePlayerId) return;
+    const director = get().director;
+    if (!director?.state.draft?.carousel) return;
+    const beforeSecond = Math.floor(director.state.draft.carousel.elapsed / 1000);
+    director.advanceCarousel(delta);
+    if (!director.state.draft || Math.floor(director.state.draft.carousel!.elapsed / 1000) !== beforeSecond) saveToStorage(director);
     bump(set);
   },
 

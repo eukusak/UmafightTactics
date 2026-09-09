@@ -105,7 +105,9 @@ describe('store battle lifecycle and scouting', () => {
   it('fields every AI starter after the human completes the opening draft', () => {
     useGameStore.getState().newMatch(901);
     const store = useGameStore.getState();
-    store.pickDraft(store.match!.draft!.options.find((o) => !o.takenBy)!.index);
+    store.moveCarousel({ x: 550, y: 325 }, store.match!.draft!.options[0].index);
+    expect(store.match!.draft).not.toBeNull();
+    store.tickCarousel(45000);
     expect(store.match!.draft).toBeNull();
     expect(store.match!.players.filter((p) => !p.isHuman).every((p) => p.board.length > 0)).toBe(true);
   });

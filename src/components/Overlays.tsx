@@ -1,10 +1,7 @@
 /** Augment select, twinkle draft, battle result banner and the dev panel. */
 import { useEffect, useState } from 'react';
 import { useGameStore } from '../store/gameStore';
-import { AUGMENT_BY_ID, getSeasonUnits, getUnitDef } from '../game/engine/roster';
-import { getItem } from '../game/engine/items/item-defs';
-import { currentPickers } from '../game/engine/rounds/draft';
-import { Portrait, ItemIcon, costVar } from './common';
+import { AUGMENT_BY_ID, getSeasonUnits } from '../game/engine/roster';
 
 const GRADE_LABEL: Record<string, string> = { S: 'Silver', G: 'Gold', P: 'Prism' };
 const GRADE_COLOR: Record<string, string> = { S: '#c9d6e0', G: '#ffcc33', P: '#b98ae0' };
@@ -45,58 +42,7 @@ export function AugmentOverlay(): JSX.Element | null {
   );
 }
 
-export function DraftOverlay(): JSX.Element | null {
-  const match = useGameStore((s) => s.match);
-  const human = useGameStore((s) => s.human());
-  const pick = useGameStore((s) => s.pickDraft);
-  useGameStore((s) => s.revision);
-  if (!match?.draft || !human) return null;
-
-  const pickers = currentPickers(match.draft);
-  const myTurn = pickers.includes(human.id);
-
-  return (
-    <div className="overlay draft-overlay">
-      <div className="overlay-card" style={{ maxWidth: 1180 }}>
-        <h2 style={{ margin: 0 }}>트윙클 드래프트</h2>
-        <p className="muted" style={{ margin: '6px 0 0' }}>
-          {myTurn
-            ? '페데스털을 클릭해 유닛과 재료 아이템을 가져가세요.'
-            : '다른 트레이너가 선택하는 중입니다…'}
-        </p>
-        <div className="draft-grid">
-          {match.draft.options.map((o) => {
-            const def = getUnitDef(o.unitDefId);
-            const item = getItem(o.itemId);
-            return (
-              <button
-                key={o.index}
-                className={`draft-card${o.takenBy ? ' taken' : ''}`}
-                disabled={!!o.takenBy || !myTurn}
-                onClick={() => pick(o.index)}
-                style={{ borderColor: o.takenBy ? '#2b3d4f' : costVar(def.cost) }}
-              >
-                <div style={{ display: 'flex', alignItems: 'center', gap: 10, justifyContent: 'center' }}>
-                  <div className="token" style={{ width: 46, height: 46, fontSize: 18, border: `3px solid ${costVar(def.cost)}` }}>
-                    <Portrait id={def.id} name={def.nameKo} size={74} />
-                  </div>
-                  <ItemIcon itemId={o.itemId} size={30} />
-                </div>
-                <div style={{ marginTop: 8, fontWeight: 700 }}>{def.nameKo}</div>
-                <div className="muted" style={{ fontSize: 12 }}>{def.cost}코 · {item.name}</div>
-                {o.takenBy && (
-                  <div className="muted" style={{ fontSize: 11, marginTop: 4 }}>
-                    {match.players.find((p) => p.id === o.takenBy)?.name} 선택
-                  </div>
-                )}
-              </button>
-            );
-          })}
-        </div>
-      </div>
-    </div>
-  );
-}
+export { DraftOverlay } from './CarouselOverlay';
 
 export function BattleResultOverlay({ onContinue }: { onContinue: () => void }): JSX.Element | null {
   const online = useGameStore((s) => s.onlinePlayerId !== null);

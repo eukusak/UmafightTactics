@@ -168,3 +168,33 @@ describe('server restart checkpoints', () => {
     expect(() => empty.restore(broken)).toThrow(); expect(empty.rooms.size).toBe(0);
   });
 });
+
+it('synchronizes carousel targets, preserves progress across restart, and awards XP sound only once', () => {
+  const f = fixture(); f.start();
+  const d = f.room.director!, a = d.state.draft!.carousel!.avatars.find(a => a.playerId === 'p1')!;
+  const home = { x: a.x, y: a.y };
+  f.send(0, { type: 'command', seq: 1, round: '1-1', command: { action: 'carouselMove', target: { x: 550, y: 325 }, option: 0 } });
+  expect({ x: a.x, y: a.y }).toEqual(home); expect(a.targetOption).toBe(0);
+  f.send(0, { type: 'command', seq: 2, round: '1-1', command: { action: 'draft', index: 0 } });
+  expect(f.peers[0].messages.at(-1)?.type).toBe('error');
+  f.tick(4200);
+  for (const peer of f.peers) {
+    const view = peer.messages.filter(m => m.type === 'state').at(-1)!;
+    expect(view.match.draft!.carousel).toEqual(d.state.draft!.carousel);
+  }
+  const snapshot = f.service.snapshot();
+  let time = 100000;
+  const restored = new RoomService(() => time); restored.restore(snapshot);
+  const restoredRoom = [...restored.rooms.values()][0];
+  expect(restoredRoom.director!.state.draft).toEqual(d.state.draft);
+  time += 100; restored.tick(); f.tick(4300);
+  expect(restoredRoom.director!.state.draft).toEqual(d.state.draft);
+  f.prep();
+  const p = d.state.players[0]; p.gold = 20;
+  const xp = { type: 'command', seq: 3, round: '1-1', command: { action: 'xp' } } as const;
+  f.send(0, xp); f.send(0, xp);
+  expect(p.gold).toBe(16);
+  expect(f.peers[0].messages.filter(m => m.type === 'ack' && m.sound === 'level-up')).toHaveLength(1);
+  p.gold = 0; f.send(0, { ...xp, seq: 4 });
+  expect(f.peers[0].messages.filter(m => m.type === 'ack' && m.sound === 'level-up')).toHaveLength(1);
+});

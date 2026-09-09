@@ -6,8 +6,8 @@ async function setup(page: Page) {
   await page.getByRole('button', { name: '새 게임' }).click();
   await page.getByLabel('무작위 시드 사용').uncheck();
   await page.getByRole('button', { name: '게임 시작' }).click();
-  await page.locator('.draft-card:not(:disabled)').first().click();
-  await expect(page.locator('.draft-overlay')).toHaveCount(0);
+  await page.locator('.carousel-option').first().dispatchEvent('click');
+  await expect(page.locator('.draft-overlay')).toHaveCount(0, { timeout: 35000 });
   await page.getByRole('button', { name: '준비 타이머 일시정지' }).click();
   await page.getByRole('button', { name: '+50G', exact: true }).click();
 }

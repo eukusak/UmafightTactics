@@ -1,0 +1,38 @@
+.carousel-panel { width:1180px; padding:28px 40px 22px; border:1px solid #799d9d; border-radius:24px; color:#edf9f1; background:linear-gradient(140deg,#152e3a,#0a182b); box-shadow:0 30px 100px #000b; }
+.carousel-header { display:flex; align-items:center; justify-content:space-between; margin-bottom:22px; }
+.carousel-eyebrow { color:#6fe0c5; letter-spacing:4px; font-size:12px; }
+.carousel-header h2 { font-family:'Jua',sans-serif; font-size:30px; margin:8px 0 0; }
+.carousel-status { text-align:right; font-size:24px; color:#ffe3a3; }
+.carousel-status small { display:block; font-size:13px; color:#a3b9c3; margin-top:7px; }
+.carousel-status.complete { color:#85f6c9; }
+.carousel-arena { position:relative; width:1100px; height:650px; border-radius:22px; overflow:hidden; background:linear-gradient(#112a3877,#0d253488),url('/assets/boards/bg_twinkle_draft.png') center/cover; outline:none; cursor:crosshair; isolation:isolate; }
+.carousel-arena:focus-visible { box-shadow:inset 0 0 0 2px #87dcc9; }
+.carousel-track { position:absolute; width:650px; height:455px; left:225px; top:97px; border:55px solid #d6e8b61b; border-radius:50%; box-shadow:0 0 0 2px #d3eed048,inset 0 0 0 2px #d3eed048,0 18px 40px #03162599; }
+.carousel-center { position:absolute; left:420px; top:267px; width:260px; text-align:center; color:#daeacd; pointer-events:none; text-shadow:0 2px 5px #071c2c; }
+.carousel-center span { font-size:12px; letter-spacing:6px; }.carousel-center b { display:block; font-family:'Jua',sans-serif; font-size:34px; margin:5px; }.carousel-center small { color:#aec8bd; }
+.carousel-option { position:absolute; width:72px; height:34px; border:2px solid; border-radius:50%; padding:0; transform:translate(-50%,-50%); background:#102e3699; transition:left .1s linear,top .1s linear; box-shadow:0 5px 10px #071c2c; }
+.carousel-option:hover,.carousel-option.targeted { background:#ffe6a544; box-shadow:0 0 0 3px #ffde99,0 0 25px #ffd180; transform:translate(-50%,-50%); }
+.carousel-option:disabled { opacity:.65; }
+.carousel-option .animated-unit { position:absolute; left:-21px; bottom:-14px; }
+.carousel-item { position:absolute; left:52px; top:-46px; pointer-events:none; }
+.carousel-unit-name { position:absolute; top:28px; left:-54px; width:176px; font-size:13px; color:#fff5dc; text-shadow:0 1px 4px #000,0 -1px 4px #000; pointer-events:none; }
+.carousel-unit-name small { display:block; font-size:10px; color:#d6dcd0; }
+.carousel-trainer { position:absolute; width:0; height:0; transition:left .1s linear,top .1s linear; pointer-events:none; }
+.carousel-trainer .animated-unit { position:absolute; left:-50px; top:-86px; filter:drop-shadow(0 3px 3px #081921); }
+.trainer-ring { position:absolute; width:48px; height:20px; left:-24px; top:-10px; border:2px solid currentColor; border-radius:50%; background:#091e3988; }
+.carousel-trainer.mine .trainer-ring { box-shadow:0 0 0 3px #fff8,0 0 20px currentColor; }
+.carousel-trainer.waiting .trainer-ring { width:110px; height:66px; left:-55px; top:-43px; border:2px dashed; background:#96eff522; }
+.trainer-label { position:absolute; top:-100px; left:-80px; width:160px; text-align:center; font-size:12px; font-weight:800; text-shadow:0 2px 4px #000; }
+.carousel-trainer.mine .trainer-label { color:#fff3be; font-size:18px; }
+.trainer-loot { position:absolute; display:flex; align-items:center; justify-content:center; gap:5px; top:16px; left:-100px; width:200px; font-size:12px; text-shadow:0 2px 3px #000; }
+.carousel-destination { position:absolute; width:22px; height:14px; border:2px solid #8effce; border-radius:50%; transform:translate(-50%,-50%); box-shadow:0 0 12px #76ffe7; pointer-events:none; }
+.carousel-footer { display:flex; justify-content:space-between; gap:12px; margin-top:18px; color:#adc6ce; font-size:12px; }
+.carousel-footer kbd { color:#e5f6ed; border:1px solid #526b75; border-radius:4px; padding:2px 5px; }
+/* The whole character is a moving hit target; the ellipse marks its feet. */
+.carousel-option { width:90px; height:100px; border:0 solid; border-radius:0; background:transparent; box-shadow:none; transform:translate(-50%,-86%); }
+.carousel-option::before { content:''; position:absolute; left:9px; bottom:3px; width:72px; height:30px; border:2px solid; border-color:inherit; border-radius:50%; background:#102e3699; box-shadow:0 5px 10px #071c2c; }
+.carousel-option:hover,.carousel-option.targeted { background:transparent; box-shadow:none; transform:translate(-50%,-86%); }
+.carousel-option:hover::before,.carousel-option.targeted::before { box-shadow:0 0 0 3px #ffde99,0 0 25px #ffd180; }
+.carousel-option .animated-unit { left:-10px; bottom:0; }
+.carousel-item { left:72px; top:14px; }
+.carousel-unit-name { top:101px; left:-43px; }

@@ -90,15 +90,18 @@ export function createDraft(
 
 /** Players whose pick window is currently open — two at a time (spec §20). */
 export function currentPickers(draft: DraftState): string[] {
+  if (draft.carousel) return draft.carousel.avatars.filter(a => a.picked === null && draft.carousel!.elapsed >= a.releaseAt).map(a => a.playerId);
   return draft.order.slice(draft.cursor, draft.cursor + 2);
 }
 
 export type DraftPickResult = { ok: true } | { ok: false; reason: string };
 
 export function pickDraftOption(
-  state: MatchState, player: PlayerState, optionIndex: number,
+  state: MatchState, player: PlayerState, optionIndex: number, contact = false,
 ): DraftPickResult {
   if (!state.draft) return { ok: false, reason: 'NO_DRAFT' };
+  if (state.draft.carousel && !contact) return { ok: false, reason: 'CONTACT_REQUIRED' };
+  if (state.draft.options.some(o => o.takenBy === player.id)) return { ok: false, reason: 'ALREADY_PICKED' };
   if (!currentPickers(state.draft).includes(player.id)) return { ok: false, reason: 'NOT_YOUR_TURN' };
   const option = state.draft.options.find((o) => o.index === optionIndex);
   if (!option) return { ok: false, reason: 'NO_OPTION' };
@@ -109,11 +112,13 @@ export function pickDraftOption(
 
   // Spec §20: the item splits off into storage, the unit lands on the bench.
   // A full bench is allowed one temporary slot, cleared before the next battle.
-  player.bench.push(newInstance(state, option.unitDefId, 1));
+  const unit = newInstance(state, option.unitDefId, 1);
+  player.bench.push(unit);
   if (player.items.length < itemStorageCapacity(player)) {
     state.instanceCounter += 1;
     player.items.push({ instanceId: `i${state.instanceCounter}`, itemId: option.itemId });
   }
+  else unit.items.push(option.itemId); // A full item bench must never destroy carousel loot.
   applyCombines(state, player);
 
   state.draft.cursor += 1;
