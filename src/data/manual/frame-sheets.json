@@ -1732,5 +1732,65 @@
     "skillSignature": "a5fb0cba9ac434372e683bc01b1cc9071bfcbe58f4cf35e78396fd0d3d24affc",
     "skillReview": "초안의 잘못된 스킬 및 쓰러짐 행을 다시 생성. 낮은 체력 비율 적 조준, 집중, 제자리 결정타, 회복. 체크 치마와 금색 머리띠, 좌우 다른 양말 및 신발 유지. 최종 6행 24포즈 확인.",
     "skillReleaseFrame": 2
+  },
+  "rhein_kraft": {
+    "file": "motions/rhein_kraft.png",
+    "frameWidth": 128,
+    "frameHeight": 128,
+    "columns": 4,
+    "rows": 6,
+    "source": "docs/art-source/motions/production-144/rhein_kraft/packing.json",
+    "skillId": "skill_rhein_kraft",
+    "skillSignature": "000edce15c51e41ba2f942a415b7e9f2d5601bb8f7c7f64bed37537f6ec92b3b",
+    "skillReview": "아군 전체 공격속도·방어력·마법저항 강화와 자신의 이동속도 증가에 맞춘 준비·응원·팔 펼치기·달리기 준비 복귀. 공격은 별도 행에서 방출한다.",
+    "skillReleaseFrame": 2
+  },
+  "cesario": {
+    "file": "motions/cesario.png",
+    "frameWidth": 128,
+    "frameHeight": 128,
+    "columns": 4,
+    "rows": 6,
+    "source": "docs/art-source/motions/production-144/cesario/packing.json",
+    "skillId": "skill_cesario",
+    "skillSignature": "6673b1c813c15c6c26c40e887a3798e118c9a074804ef03aa047e11d29354cbb",
+    "skillReview": "아군 전체 공격속도·방어력·마법저항 강화와 자신의 이동속도 증가에 맞춘 준비·응원·팔 펼치기·달리기 준비 복귀. 공격은 별도 행에서 방출한다.",
+    "skillReleaseFrame": 2
+  },
+  "air_messiah": {
+    "file": "motions/air_messiah.png",
+    "frameWidth": 128,
+    "frameHeight": 128,
+    "columns": 4,
+    "rows": 6,
+    "source": "docs/art-source/motions/production-144/air_messiah/packing.json",
+    "skillId": "skill_air_messiah",
+    "skillSignature": "ee561ea8fd8080de772542357b0774a507c5e4b57493cf0a560b1372cbd9c244",
+    "skillReview": "적 밀집 지점을 향한 집중·손바닥 방출·회수 동작. 광역 마법 피해와 기절은 엔진 효과와 연결한다.",
+    "skillReleaseFrame": 2
+  },
+  "daring_heart": {
+    "file": "motions/daring_heart.png",
+    "frameWidth": 128,
+    "frameHeight": 128,
+    "columns": 4,
+    "rows": 6,
+    "source": "docs/art-source/motions/production-144/daring_heart/packing.json",
+    "skillId": "skill_daring_heart",
+    "skillSignature": "03c9cf51e394d06a3f0f102b27d9aec11f039bad25000c0c791aec831f5a00e7",
+    "skillReview": "아군 전체 공격속도·방어력·마법저항 강화와 자신의 이동속도 증가에 맞춘 준비·응원·팔 펼치기·달리기 준비 복귀. 공격은 별도 행에서 방출한다.",
+    "skillReleaseFrame": 2
+  },
+  "fusaichi_pandora": {
+    "file": "motions/fusaichi_pandora.png",
+    "frameWidth": 128,
+    "frameHeight": 128,
+    "columns": 4,
+    "rows": 6,
+    "source": "docs/art-source/motions/production-144/fusaichi_pandora/packing.json",
+    "skillId": "skill_fusaichi_pandora",
+    "skillSignature": "afdc9a4f89c471b9b6563963fe8ab45c80da1a14dbaf537a571bf0f7540bc9f2",
+    "skillReview": "아군 전체 공격속도·방어력·마법저항 강화와 자신의 이동속도 증가에 맞춘 준비·응원·팔 펼치기·달리기 준비 복귀. 공격은 별도 행에서 방출한다.",
+    "skillReleaseFrame": 2
   }
 }

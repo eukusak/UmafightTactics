@@ -36,7 +36,12 @@
     "phalaenopsis",
     "verxina",
     "manhattan_cafe",
-    "espoir_city"
+    "espoir_city",
+    "rhein_kraft",
+    "cesario",
+    "air_messiah",
+    "daring_heart",
+    "fusaichi_pandora"
   ],
   "note": "Desktop continuation works backward through the roster. First Espoir City through Gran Alegria (20) complete; now Lucky Lilac through Rhein Kraft (20). Other sessions should skip these reserved IDs. Only registered verified runtime sheets count as complete.",
   "baseCommit": "1b45c8c3c7762cc9eefb61a8a8b04f1f9a562bbf",
@@ -82,5 +87,7 @@
     "manhattan_cafe",
     "espoir_city"
   ],
-  "status": "IN_PROGRESS"
+  "status": "COMPLETE",
+  "remainingIds": [],
+  "completedAt": "2026-09-09"
 }
