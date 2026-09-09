@@ -1,0 +1,12 @@
+{
+  "approved": true,
+  "source": "alpha.png",
+  "skillReview": "누락되었던 스킬 행을 재생성하여 6행 24포즈 확인. 적 밀집 지점을 겨냥하고 힘을 모아 양손으로 광역 기절을 방출한다. 원거리 기본 공격과 꽃무늬 치마, 땋은 머리 유지.",
+  "reviewedAt": "2026-09-09",
+  "checks": [
+    "Race costume and identity",
+    "24 poses with correct action rows",
+    "actual skill target and effect",
+    "transparent RGBA"
+  ]
+}

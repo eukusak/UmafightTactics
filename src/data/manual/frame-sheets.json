@@ -784,5 +784,65 @@
     "skillSignature": "5dc4173a1d39483570dab1d50f824319d39a6d386b68e4db978f4ffcf6f93702",
     "skillReview": "원거리 손짓 발사. 직선 돌파: 낮은 출발 → 발진 → 수평 돌파 → 착지. 자기 공격속도·이동속도 강화. 흰 앞머리와 붉은 별, 허리천·금색 장식·흰 운동화 유지.",
     "skillReleaseFrame": 2
+  },
+  "lucky_lilac": {
+    "file": "motions/lucky_lilac.png",
+    "frameWidth": 128,
+    "frameHeight": 128,
+    "columns": 4,
+    "rows": 6,
+    "source": "docs/art-source/motions/production-144/lucky_lilac/packing.json",
+    "skillId": "skill_lucky_lilac",
+    "skillSignature": "f8d763979215f81462fa46380fa8388ccd3c2ecc5277bb190e1b8a2122a3fb10",
+    "skillReview": "원거리 손짓 발사. 광역 폭발: 적 밀집 지점 조준 → 응축 → 양팔 방출 → 회복. 자기 보호막 강화. 자주색 포니테일, 흰 소매와 구리색 비대칭 치맛단 유지.",
+    "skillReleaseFrame": 2
+  },
+  "almond_eye": {
+    "file": "motions/almond_eye.png",
+    "frameWidth": 128,
+    "frameHeight": 128,
+    "columns": 4,
+    "rows": 6,
+    "source": "docs/art-source/motions/production-144/almond_eye/packing.json",
+    "skillId": "skill_almond_eye",
+    "skillSignature": "727a98397ccfe83715fea3edb20e26cfeaee3905529f1beba7a9bc277700ae41",
+    "skillReview": "원거리 손짓 발사. 연속 스퍼트: 동일 대상 첫 발사 → 두 번째 발사 → 세 번째 양손 발사 → 회복. 첫 프레임을 준비에서 발사로 보정. 하늘색 드레스와 붉은 허리 리본 유지. 적중 마나와 자기 보호막 강화.",
+    "skillReleaseFrame": 0
+  },
+  "blast_onepiece": {
+    "file": "motions/blast_onepiece.png",
+    "frameWidth": 128,
+    "frameHeight": 128,
+    "columns": 4,
+    "rows": 6,
+    "source": "docs/art-source/motions/production-144/blast_onepiece/packing.json",
+    "skillId": "skill_blast_onepiece",
+    "skillSignature": "70d341029aaed1f831b1e0e8bf0e29fbc83d731d4a681aaf6e44dc2ab49789ce",
+    "skillReview": "원거리 손짓 발사. 연속 스퍼트: 동일 대상 첫 발사 → 두 번째 발사 → 세 번째 양손 발사 → 회복. 적중 마나와 자기 보호막 강화. 큰 양갈래 머리, 허리 파란 재킷과 줄무늬 다리 유지.",
+    "skillReleaseFrame": 0
+  },
+  "fenomeno": {
+    "file": "motions/fenomeno.png",
+    "frameWidth": 128,
+    "frameHeight": 128,
+    "columns": 4,
+    "rows": 6,
+    "source": "docs/art-source/motions/production-144/fenomeno/packing.json",
+    "skillId": "skill_fenomeno",
+    "skillSignature": "85c432391cb3928ab879110874b4f3b316521b4b705041e17e8efe622709d06b",
+    "skillReview": "근접 손바닥 타격. 직선 돌파: 낮은 출발 → 발진 → 수평 돌파 → 착지. 자기 공격속도·이동속도 강화. 제복·모자·붉은 벨트와 보라색 머리 유지.",
+    "skillReleaseFrame": 2
+  },
+  "sakura_chitose_o": {
+    "file": "motions/sakura_chitose_o.png",
+    "frameWidth": 128,
+    "frameHeight": 128,
+    "columns": 4,
+    "rows": 6,
+    "source": "docs/art-source/motions/production-144/sakura_chitose_o/packing.json",
+    "skillId": "skill_sakura_chitose_o",
+    "skillSignature": "54842ac59b249f0fbb46093277a9b0dc5a9db7c61c6bca3304931fd26a685a4d",
+    "skillReview": "누락되었던 스킬 행을 재생성하여 6행 24포즈 확인. 적 밀집 지점을 겨냥하고 힘을 모아 양손으로 광역 기절을 방출한다. 원거리 기본 공격과 꽃무늬 치마, 땋은 머리 유지.",
+    "skillReleaseFrame": 2
   }
 }

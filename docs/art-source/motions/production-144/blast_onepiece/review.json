@@ -1,0 +1,12 @@
+{
+  "approved": true,
+  "source": "alpha.png",
+  "skillReview": "원거리 손짓 발사. 연속 스퍼트: 동일 대상 첫 발사 → 두 번째 발사 → 세 번째 양손 발사 → 회복. 적중 마나와 자기 보호막 강화. 큰 양갈래 머리, 허리 파란 재킷과 줄무늬 다리 유지.",
+  "reviewedAt": "2026-09-09",
+  "checks": [
+    "Race costume and identity",
+    "24 poses with correct action rows",
+    "actual skill target and effect",
+    "transparent RGBA"
+  ]
+}
