@@ -2,7 +2,7 @@
  * Hard gate over src/data/generated/. Everything spec §37.2 lists is checked
  * here so a bad data build can never reach the game or the test suite.
  */
-import { readFileSync } from 'node:fs';
+import { existsSync, readFileSync } from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { z } from 'zod';
@@ -14,6 +14,8 @@ import { TRAIT_DEFS } from '../src/game/engine/traits/trait-defs';
 import { ALL_ITEM_DEFS, COMPLETED_ITEM_DEFS, COMPONENT_DEFS, RECIPE_KEY } from '../src/game/engine/items/item-defs';
 import { AUGMENT_DEFS } from '../src/game/engine/augments/augment-defs';
 import { UnitDefSchema, ArtManifestSchema } from '../src/game/engine/schema';
+import { buildSeasons, SEASON_COST_COUNTS, type SeasonDef } from '../src/game/engine/seasons/catalog';
+import type { UnitDef } from '../src/game/engine/types';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const GEN = path.join(ROOT, 'src', 'data', 'generated');
@@ -83,7 +85,7 @@ check(emperorCount <= 1, `emperor is unique but ${emperorCount} units carry it`)
 
 // Every trait must be reachable inside the active roster.
 for (const t of TRAIT_DEFS) {
-  const n = active.filter((u) => u.traits.includes(t.id)).length;
+  const n = active.filter((u) => u.traits.some(id => id === t.id)).length;
   check(n >= t.thresholds[0], `trait ${t.id} needs ${t.thresholds[0]} active units to activate but only ${n} exist`);
 }
 
@@ -198,6 +200,24 @@ if (!manifestParsed.success) {
   }
 }
 
+// Seasonal rosters are a separate overlay; canonical identity and skill data remain shared.
+const seasonal = readJson<{ seasons: SeasonDef[] }>(path.join(GEN, 'seasons.json'));
+const expectedSeasons = buildSeasons(units as UnitDef[], active.map(u => u.id));
+check(JSON.stringify(seasonal.seasons) === JSON.stringify(expectedSeasons), 'season manifest differs from its deterministic allocation');
+check(new Set(seasonal.seasons.flatMap(s => s.unitIds)).size === CANONICAL_ROSTER_SIZE, 'seasons do not cover all 145 characters');
+for (const season of seasonal.seasons) {
+  check(new Set(season.unitIds).size === 60, `${season.id} must have 60 distinct units`);
+  const members = units.filter(u => season.unitIds.includes(u.id));
+  for (const [cost, count] of Object.entries(SEASON_COST_COUNTS)) {
+    check(members.filter(u => u.cost === Number(cost)).length === count, `${season.id} cost ${cost} budget differs`);
+  }
+  check(season.traits.length === 4, `${season.id} must have four exclusive traits`);
+  for (const trait of season.traits) {
+    check(members.filter(u => season.unitTraits[u.id] === trait.id).length === 15, `${trait.id} needs 15 available members`);
+    check(existsSync(path.join(ROOT, 'public', 'assets', 'traits', `${trait.id}.svg`)), `${trait.id} is missing its emblem`);
+  }
+}
+
 // ---------------------------------------------------------------------- done
 if (failures.length) {
   console.error(`\ndata:validate FAILED — ${failures.length} problem(s):`);
@@ -205,5 +225,5 @@ if (failures.length) {
   process.exit(1);
 }
 console.log(
-  `data:validate — OK (145 units / 60 active / ${COST_UNIT_COUNTS[1]}-${COST_UNIT_COUNTS[2]}-${COST_UNIT_COUNTS[3]}-${COST_UNIT_COUNTS[4]}-${COST_UNIT_COUNTS[5]} costs / 65 items / 24 traits / 48 augments)`,
+  `data:validate — OK (145 units / 5 seasons × 60 / ${COST_UNIT_COUNTS[1]}-${COST_UNIT_COUNTS[2]}-${COST_UNIT_COUNTS[3]}-${COST_UNIT_COUNTS[4]}-${COST_UNIT_COUNTS[5]} costs / 65 items / 24 shared + 20 seasonal traits / 48 augments)`,
 );

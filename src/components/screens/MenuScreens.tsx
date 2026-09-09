@@ -2,20 +2,22 @@
 import { useState } from 'react';
 import { useGameStore, DEFAULT_KEYBINDS } from '../../store/gameStore';
 import { DEFAULT_SEED } from '../../game/engine/constants';
+import { SeasonPicker } from '../SeasonPicker';
+import type { SeasonId } from '../../game/engine/seasons/catalog';
 import { ROSTER_HASH } from '../../game/engine/roster';
 
 export function TitleScreen(): JSX.Element {
   const setScreen = useGameStore((s) => s.setScreen);
   return (
     <div className="menu-screen title-hero">
-      <div className="eyebrow">SEASON 01 / TWINKLE ARENA</div>
+      <div className="eyebrow">FIVE SEASONS / TWINKLE ARENA</div>
       <h1 className="menu-title">Umafight<br />Tactics</h1>
       <div className="title-korean">말토체스</div>
       <p className="hero-description">최고의 레이스는, 최고의 팀에서.<br />나만의 조합으로 아레나의 정상을 향해.</p>
       <div className="menu-buttons">
         <button className="btn-primary" onClick={() => setScreen('MAIN_MENU')}>시작하기</button>
       </div>
-      <div className="hero-meta"><div><strong>60</strong><span>시즌 출전 캐릭터</span></div><div><strong>8</strong><span>트레이너의 대결</span></div><div><strong>24</strong><span>특성의 조합</span></div></div>
+      <div className="hero-meta"><div><strong>145</strong><span>전체 출전 캐릭터</span></div><div><strong>5</strong><span>서로 다른 시즌</span></div><div><strong>20</strong><span>새 시즌 시너지</span></div></div>
       <p className="muted" style={{ position: 'absolute', bottom: 26, fontSize: 12 }}>
         본 게임은 팬 제작 비공식 작품이며 Cygames와 무관합니다.
       </p>
@@ -53,6 +55,7 @@ export function MatchSetup(): JSX.Element {
   const newMatch = useGameStore((s) => s.newMatch);
   const setScreen = useGameStore((s) => s.setScreen);
   const [name, setName] = useState('트레이너');
+  const [seasonId, setSeasonId] = useState<SeasonId>('s1');
   const [seed, setSeed] = useState(String(DEFAULT_SEED));
   const [randomSeed, setRandomSeed] = useState(true);
 
@@ -60,7 +63,7 @@ export function MatchSetup(): JSX.Element {
     // A player-facing "random" seed still resolves to a concrete number so the
     // match stays reproducible and shareable.
     const value = randomSeed ? (Date.now() % 2_147_483_647) : Number(seed) || DEFAULT_SEED;
-    newMatch(value, name.trim() || '트레이너');
+    newMatch(value, name.trim() || '트레이너', seasonId);
   };
 
   const inputStyle = {
@@ -70,8 +73,9 @@ export function MatchSetup(): JSX.Element {
 
   return (
     <div className="menu-screen">
-      <h1 className="menu-title" style={{ fontSize: 48 }}>매치 설정</h1>
-      <div className="panel" style={{ padding: 24, width: 420 }}>
+      <h1 className="menu-title" style={{ fontSize: 40, marginBottom: 12 }}>매치 설정</h1>
+      <SeasonPicker value={seasonId} onChange={setSeasonId} />
+      <div className="panel" style={{ padding: 16, width: 620, marginTop: 14 }}>
         <label style={{ display: 'block', marginBottom: 14 }}>
           <div className="muted" style={{ fontSize: 13, marginBottom: 5 }}>트레이너 이름</div>
           <input value={name} onChange={(e) => setName(e.target.value)} style={inputStyle} />
@@ -87,7 +91,7 @@ export function MatchSetup(): JSX.Element {
           </label>
         )}
         <div className="muted" style={{ fontSize: 12, marginTop: 14, lineHeight: 1.6 }}>
-          플레이어 1명 + AI 7명 · 시작 체력 100 · Season 1 활성 60명
+          플레이어 1명 + AI 7명 · 시작 체력 100 · {seasonId.toUpperCase()} 출전 60명
         </div>
       </div>
       <div className="menu-buttons" style={{ marginTop: 18 }}>

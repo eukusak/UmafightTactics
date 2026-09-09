@@ -1,0 +1,53 @@
+
+> umafight-tactics@1.0.0 simulate
+> tsx scripts/simulate.ts --season s3 --matches 20 --seed 20260909
+
+Season s3: 와일드 프런티어, 60 units
+  2/20 matches
+  4/20 matches
+  6/20 matches
+  8/20 matches
+  10/20 matches
+  12/20 matches
+  14/20 matches
+  16/20 matches
+  18/20 matches
+  20/20 matches
+simulate — 20 matches in 34.3s (seed base 20260909)
+
+  average end stage      5.75
+  average rounds/match   33.3
+  average gold held      5.4
+  average player damage  9.3
+  battles                2693 (draws 2, overtime 557)
+  pool conservation      OK
+
+  3-star completions per match:
+    1-cost  1.80
+    2-cost  1.00
+    3-cost  0.50
+    4-cost  0.00
+    5-cost  0.00
+
+  average placement by AI profile:
+    FAST_LEVEL   2.56
+    BALANCED     4.24
+    AD_FOCUS     4.39
+    ECONOMY      4.45
+    REROLL       5.23
+    AP_FOCUS     5.40
+    TRAIT_FOCUS  5.57
+
+  trait presence (top4 / top1 share):
+    도주           6.3% / 25.0%
+    야생의 송곳니      3.8% / 15.0%
+    중거리          3.8% / 15.0%
+    명가           3.8% / 15.0%
+    클래식 레전드      2.5% / 10.0%
+    오아시스         1.3% / 5.0%
+    바위 수호자       1.3% / 5.0%
+    선행           1.3% / 5.0%
+    더트 챔피언       1.3% / 5.0%
+    개척단          0.0% / 0.0%
+
+simulate — OK

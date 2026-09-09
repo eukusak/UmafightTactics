@@ -1,6 +1,6 @@
 /** Left (traits + items), right (leaderboard), top HUD and footer panels. */
 import { useGameStore } from '../store/gameStore';
-import { AUGMENT_BY_ID, TRAIT_DEFS, getUnitDef } from '../game/engine/roster';
+import { AUGMENT_BY_ID, getSeasonTraits, getSeason, getUnitDef } from '../game/engine/roster';
 import { activeTierIndex } from '../game/engine/traits/trait-defs';
 import { interestGold, streakBonus, xpToNextLevel } from '../game/engine/economy';
 import { itemStorageCapacity, teamSizeLimit } from '../game/engine/shop';
@@ -24,6 +24,7 @@ export function TopHud(): JSX.Element | null {
       <div style={{ fontSize: 26, fontWeight: 900, letterSpacing: 1 }}>
         {info.label} <span className="muted" style={{ fontSize: 15 }}>{kindLabel}</span>
       </div>
+      <span className="pill" title={getSeason(match.seasonId).name}>{match.seasonId.toUpperCase()} · {getSeason(match.seasonId).name}</span>
       <Stat label="체력" value={player.hp} color={player.hp <= 25 ? 'var(--danger)' : 'var(--success)'} />
       <Stat label="골드" value={player.gold} color="var(--gold)" />
       <Stat label="레벨" value={`${player.level}`} />
@@ -54,7 +55,7 @@ export function TraitPanel(): JSX.Element | null {
   const viewed = useGameStore((s) => s.viewedPlayer());
   useGameStore((s) => s.revision);
 
-  const rows = TRAIT_DEFS
+  const rows = getSeasonTraits(viewed?.seasonId)
     .map((t) => ({ trait: t, count: counts.get(t.id) ?? 0 }))
     .filter((r) => r.count > 0)
     .sort((a, b) => {
@@ -71,9 +72,9 @@ export function TraitPanel(): JSX.Element | null {
         const tier = activeTierIndex(trait, count);
         return (
           <div key={trait.id} className={`trait-row${tier >= 0 ? ' active' : ''}`} title={
-            tier >= 0 ? trait.tiers[tier].description : trait.description
+            `${trait.description}\n${trait.tiers.map(t => `${t.count}: ${t.description}`).join("\n")}`
           }>
-            <img className="trait-icon" src={`/assets/traits/${trait.id}.png`} alt="" />
+            <img className="trait-icon" src={`/assets/traits/${trait.id}.${trait.category === "SEASON" ? "svg" : "png"}`} alt="" />
             <span>{trait.name}</span>
             <span className="count">{traitTierLabel(trait.id, count)}</span>
           </div>

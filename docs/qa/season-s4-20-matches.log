@@ -1,0 +1,53 @@
+
+> umafight-tactics@1.0.0 simulate
+> tsx scripts/simulate.ts --season s4 --matches 20 --seed 20260909
+
+Season s4: 네온 스프린트, 60 units
+  2/20 matches
+  4/20 matches
+  6/20 matches
+  8/20 matches
+  10/20 matches
+  12/20 matches
+  14/20 matches
+  16/20 matches
+  18/20 matches
+  20/20 matches
+simulate — 20 matches in 34.0s (seed base 20260909)
+
+  average end stage      5.80
+  average rounds/match   33.0
+  average gold held      5.7
+  average player damage  9.3
+  battles                2720 (draws 3, overtime 501)
+  pool conservation      OK
+
+  3-star completions per match:
+    1-cost  1.40
+    2-cost  0.70
+    3-cost  0.10
+    4-cost  0.00
+    5-cost  0.00
+
+  average placement by AI profile:
+    FAST_LEVEL   3.16
+    ECONOMY      4.18
+    BALANCED     4.32
+    REROLL       4.45
+    AD_FOCUS     4.87
+    TRAIT_FOCUS  5.17
+    AP_FOCUS     5.60
+
+  trait presence (top4 / top1 share):
+    크롬 에이스       6.3% / 25.0%
+    도주           6.3% / 25.0%
+    중거리          6.3% / 25.0%
+    더트 챔피언       2.5% / 10.0%
+    명가           2.5% / 10.0%
+    니트로          1.3% / 5.0%
+    네온 펄스        0.0% / 0.0%
+    추격자          0.0% / 0.0%
+    선행           0.0% / 0.0%
+    선입           0.0% / 0.0%
+
+simulate — OK

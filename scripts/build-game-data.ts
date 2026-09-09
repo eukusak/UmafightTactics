@@ -1,3 +1,5 @@
+import { buildSeasons } from '../src/game/engine/seasons/catalog';
+import { writeSeasonIcons } from './season-icons';
 /**
  * Generates every JSON file under src/data/generated/ from the vendored
  * UmaRogue source plus the auditable manual overrides.
@@ -777,9 +779,10 @@ const units: UnitDef[] = names.map((name) => {
 mkdirSync(OUT, { recursive: true });
 
 const activeUnits = units.filter((u) => u.activeS1);
+const seasons = buildSeasons(units, activeUnits.map(u => u.id));
 const rosterHash = createHash('sha256')
   // Pool changes cannot safely resume an old match; skills/stats also affect replays.
-  .update(JSON.stringify({ rulesRevision: 2, pool: POOL_COPIES, odds: SHOP_ODDS, xp: XP_TO_LEVEL,
+  .update(JSON.stringify({ rulesRevision: 3, seasons, pool: POOL_COPIES, odds: SHOP_ODDS, xp: XP_TO_LEVEL,
     units: units.map(({ source: _source, ...gameplay }) => gameplay).sort((a, b) => a.id.localeCompare(b.id)) }))
   .digest('hex')
   .slice(0, 16);
@@ -807,6 +810,9 @@ write('active-set-s1.json', {
     ([1, 2, 3, 4, 5] as Cost[]).map((c) => [c, activeUnits.filter((u) => u.cost === c).map((u) => u.id)]),
   ),
 });
+
+write('seasons.json', { version: 1, rosterHash, seasons });
+writeSeasonIcons(ROOT);
 
 write('shop-config.json', {
   version: 1,

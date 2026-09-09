@@ -1,3 +1,5 @@
+import { SEASONS, getSeason } from '../../game/engine/roster';
+import type { SeasonId } from '../../game/engine/seasons/catalog';
 import { useEffect, useState } from 'react';
 import { useOnlineStore } from '../../store/onlineStore';
 import { useGameStore } from '../../store/gameStore';
@@ -6,6 +8,7 @@ export function OnlineScreen(): JSX.Element {
   const online = useOnlineStore();
   const [name, setName] = useState('트레이너');
   const [code, setCode] = useState('');
+  const [seasonId, setSeasonId] = useState<SeasonId>('s1');
   const [fillAi, setFillAi] = useState(false);
   const self = online.room?.seats.find((s) => s.id === online.session?.playerId);
   const host = online.room?.hostId === self?.id;
@@ -13,13 +16,16 @@ export function OnlineScreen(): JSX.Element {
     <div className="online-heading"><span>TWINKLE ARENA · MULTIPLAYER</span><h1>함께 아레나로</h1><p>방 코드를 공유하고, 최대 8명이 같은 아레나에서 경쟁하세요.</p></div>
     {!online.room ? <div className="online-connect panel">
       <label>트레이너 이름<input value={name} maxLength={20} onChange={(e) => setName(e.target.value)} /></label>
-      <button className="btn-primary" disabled={online.connecting || !name.trim()} onClick={() => online.connect({ type: 'create', name: name.trim() })}>새 방 만들기</button>
+      <label>새 방 시즌<select value={seasonId} onChange={e => setSeasonId(e.target.value as SeasonId)}>{SEASONS.map(s => <option key={s.id} value={s.id}>{s.id.toUpperCase()} · {s.name} · 60명</option>)}</select></label>
+      <p className="muted">참가자는 방장이 선택한 시즌으로 함께 플레이합니다.</p>
+      <button className="btn-primary" disabled={online.connecting || !name.trim()} onClick={() => online.connect({ type: 'create', name: name.trim(), seasonId })}>새 방 만들기</button>
       <div className="online-divider">또는 방 코드로 참가</div>
       <label>방 코드<input value={code} maxLength={6} placeholder="ABC234" onChange={(e) => setCode(e.target.value.toUpperCase().replace(/[^A-Z2-9]/g, ''))} /></label>
       <button disabled={online.connecting || code.length !== 6 || !name.trim()} onClick={() => online.connect({ type: 'join', code, name: name.trim() })}>방 참가</button>
       <button className="btn-ghost" onClick={online.resume}>이전 방에 재접속</button>
     </div> : <div className="online-lobby panel">
       <div className="room-code"><span>초대 코드</span><strong>{online.room.code}</strong><b>{online.room.seats.length}/8</b></div>
+      <p className="gold-text">{online.room.seasonId.toUpperCase()} · {getSeason(online.room.seasonId).name} · 출전 60명</p>
       <div className="online-seats">{Array.from({ length: 8 }, (_, i) => {
         const seat = online.room!.seats[i];
         return <div key={seat?.id ?? i} className={`online-seat ${seat ? 'occupied' : ''} ${seat?.ready ? 'ready' : ''}`}>

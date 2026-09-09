@@ -8,7 +8,7 @@ import {
   PLAYER_COUNT, STARTING_GOLD, STARTING_HP, baseStageDamage, survivorDamage,
 } from '../constants';
 import { Rng, RngRegistry } from '../rng';
-import { ROSTER_HASH, getUnitDef } from '../roster';
+import { ROSTER_HASH, getUnitDef, getSeason, getSeasonUnitTraits } from '../roster';
 import { createPool, returnInstance } from '../pool';
 import { emptyShop, rollShop, applyCombines, teamSizeLimit } from '../shop';
 import { grantRoundXp, resetRoundEconomy, roundIncome, reducePlayerDamage } from '../economy';
@@ -30,6 +30,7 @@ import {
 } from './schedule';
 
 export type CreateMatchOptions = {
+  seasonId?: import('../seasons/catalog').SeasonId;
   seed: number;
   humanName?: string;
   /** Skips the human seat; used by the headless balance simulator. */
@@ -37,6 +38,7 @@ export type CreateMatchOptions = {
 };
 
 export function createMatch(options: CreateMatchOptions): MatchState {
+  const seasonId = getSeason(options.seasonId).id;
   const rng = Rng.forStream(options.seed, 'match');
   const profiles = rng.shuffle(AI_PROFILE_IDS);
 
@@ -44,6 +46,7 @@ export function createMatch(options: CreateMatchOptions): MatchState {
   for (let i = 0; i < PLAYER_COUNT; i += 1) {
     const isHuman = !options.allAi && i === 0;
     players.push({
+      seasonId,
       id: `p${i + 1}`,
       name: isHuman ? (options.humanName ?? '트레이너') : `AI ${i}`,
       isHuman,
@@ -75,13 +78,14 @@ export function createMatch(options: CreateMatchOptions): MatchState {
 
   return {
     version: 1,
+    seasonId,
     seed: options.seed,
     rngStates: {},
     phase: 'ROUND_PREP',
     stage: 1,
     round: 1,
     players,
-    pool: createPool(),
+    pool: createPool(seasonId),
     activeRosterHash: ROSTER_HASH,
     instanceCounter: 0,
     augmentOffers: [],
@@ -393,9 +397,9 @@ export class RoundDirector {
           star: u.star,
           items: u.items,
           position: u.position!,
-          extraTraits: player.bonusTraits
+          extraTraits: [...getSeasonUnitTraits(u.unitDefId, this.state.seasonId), ...player.bonusTraits
             .filter((b) => b.instanceId === u.instanceId)
-            .map((b) => b.trait),
+            .map((b) => b.trait)],
         })),
     };
   }

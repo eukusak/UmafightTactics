@@ -186,3 +186,35 @@ html, body, #root { font-family: "Noto Sans KR Variable", "Malgun Gothic", syste
 .online-actions button:last-child { margin-left:auto; }
 .online-error,.network-banner { color:#ffe4d5; padding:12px 22px; border:1px solid #ffae8188; border-radius:10px; background:#663b35; }
 .network-banner { position:absolute; top:82px; left:50%; transform:translateX(-50%); z-index:2000; }
+
+/* Five selectable seasons share the existing arena palette and character art. */
+.season-picker { width: min(1280px, 94%); text-align: left; }
+.season-picker-heading, .season-detail-heading { display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+.season-picker-heading { margin-bottom: 12px; }
+.season-picker-heading span { color: var(--muted); font-size: 13px; }
+.season-cards { display: grid; grid-template-columns: repeat(5, 1fr); gap: 10px; }
+.season-card { display: flex; flex-direction: column; align-items: flex-start; gap: 10px; min-height: 138px; padding: 18px; text-align: left; border: 1px solid #496071; background: #132b3e; border-radius: 12px; }
+.season-card small { color: var(--season-color); font-size: 12px; letter-spacing: 2px; }
+.season-card strong { font-size: 19px; }
+.season-card span { color: var(--muted); font-size: 12px; line-height: 1.7; }
+.season-card.selected { border-color: var(--season-color); box-shadow: inset 0 0 0 1px var(--season-color); background: #274257; }
+.season-card:focus-visible { outline: 3px solid white; outline-offset: 3px; }
+.season-details { margin-top: 12px; padding: 16px 20px; border: 1px solid #496071; border-radius: 12px; background: #102536ed; }
+.season-detail-heading > strong { color: var(--season-color); }
+.season-details p { margin: 7px 0 13px; font-size: 12px; }
+.season-detail-heading button { padding: 7px 12px; font-size: 12px; }
+.season-traits { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+.season-traits b { display: block; margin-bottom: 7px; font-size: 14px; }
+.season-traits span { display: flex; align-items: baseline; gap: 6px; font-size: 11px; color: #c7d7e4; line-height: 1.6; margin-bottom: 4px; }
+.season-traits em { color: var(--season-color); font-style: normal; font-weight: bold; }
+.season-roster { width: 1080px; max-width: 90%; max-height: 86%; }
+.season-roster h2 { font-size: 24px; }
+.season-roster h3 { margin: 18px 0 10px; }
+.season-roster-units { display: grid; grid-template-columns: repeat(5, 1fr); gap: 7px; }
+.season-roster-units > div { display: flex; align-items: center; gap: 6px; padding: 5px; border: 1px solid #385365; border-radius: 6px; }
+.season-roster-units img { object-fit: cover; border-radius: 5px; }
+.season-roster-units span { font-size: 12px; flex: 1; }
+.season-roster-units b { font-size: 12px; }
+.shop-card .traits { max-width: 100%; gap: 3px; }
+.collection-grid { min-height: 0; }
+.online-connect select { padding: 10px; color: var(--text); background: var(--panel-bright); border: 1px solid var(--edge-light); border-radius: 6px; }

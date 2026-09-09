@@ -3,7 +3,8 @@ import { createMatch, RoundDirector } from '../src/game/engine/rounds/director';
 import { isAlive, type MatchState } from '../src/game/engine/state';
 import { currentPickers } from '../src/game/engine/rounds/draft';
 import { roundInfo } from '../src/game/engine/rounds/schedule';
-import { ROSTER_HASH } from '../src/game/engine/roster';
+import { ROSTER_HASH, getSeason } from '../src/game/engine/roster';
+import { isSeasonId } from '../src/game/engine/seasons/catalog';
 import type { PendingSettlement } from '../src/game/engine/rounds/director';
 import type { BattleFrame } from '../src/game/engine/battle/engine';
 import { applyOnlineCommand, autoField } from '../src/game/network/commands';
@@ -11,7 +12,7 @@ import type { ClientMessage, RoomView, ServerMessage } from '../src/game/network
 
 export type Peer = { send: (message: ServerMessage) => void; close: () => void };
 type Seat = { id: string; name: string; token: string; ready: boolean; peer: Peer | null; disconnectedAt: number; lastSeq: number; sentFrames: number };
-export type Room = { code: string; hostId: string; seats: Seat[]; director: RoundDirector | null; deadline: number; changedAt: number; phaseKey: string; battleStarted: number; battleDuration: number; battleId: string | null; settled: boolean };
+export type Room = { seasonId: import('../src/game/engine/seasons/catalog').SeasonId; code: string; hostId: string; seats: Seat[]; director: RoundDirector | null; deadline: number; changedAt: number; phaseKey: string; battleStarted: number; battleDuration: number; battleId: string | null; settled: boolean };
 type SavedRoom = Omit<Room, 'director' | 'seats'> & {
   seats: Omit<Seat, 'peer'>[];
   match: MatchState | null;
@@ -23,7 +24,7 @@ export type RoomSnapshot = { version: 1; rosterHash: string; savedAt: number; ro
 /** Only public scouting data and the recipient's private economy leave the server. */
 export function privateMatch(state: MatchState, playerId: string): MatchState {
   return {
-    ...state, seed: 0, rngStates: {}, pool: { remaining: {} },
+    ...state, seed: 0, rngStates: {}, pool: { seasonId: state.seasonId, remaining: {} },
     players: state.players.map((p) => p.id === playerId ? { ...p, isHuman: true } : {
       ...p, isHuman: false, shop: [], bench: [], items: [], pendingGrants: [], freeRerolls: 0, cheapRerollsUsed: 0, aiProfile: null,
     }),
@@ -60,6 +61,8 @@ export class RoomService {
       const { match, pending, frames, seats, ...rest } = entry;
       if (!/^[A-Z2-9]{6}$/.test(rest.code) || restored.has(rest.code) || !seats.length || seats.length > 8
         || !Number.isFinite(rest.deadline) || !Number.isFinite(rest.battleStarted)) throw new Error('Invalid saved room');
+      if (!isSeasonId(rest.seasonId)) throw new Error('Invalid saved season');
+      if (match && match.seasonId !== rest.seasonId) throw new Error('Saved room season mismatch');
       const director = match ? new RoundDirector(match) : null;
       director?.restorePendingSettlement(pending);
       for (const [id, record] of frames) director?.playerFrames.set(id, record);
@@ -86,7 +89,7 @@ export class RoomService {
         const chars = 'ABCDEFGHJKLMNPQRSTUVWXYZ23456789';
         let code: string;
         do { code = [...randomBytes(6)].map((v) => chars[v % chars.length]).join(''); } while (this.rooms.has(code));
-        room = { code, hostId: 'p1', seats: [], director: null, deadline: 0, changedAt: this.now(), phaseKey: '', battleStarted: 0, battleDuration: 0, battleId: null, settled: false };
+        room = { seasonId: getSeason(message.seasonId).id, code, hostId: 'p1', seats: [], director: null, deadline: 0, changedAt: this.now(), phaseKey: '', battleStarted: 0, battleDuration: 0, battleId: null, settled: false };
         this.rooms.set(code, room);
       } else {
         const found = this.rooms.get(message.code);
@@ -126,7 +129,7 @@ export class RoomService {
       if (room.director) throw new Error('이미 게임이 시작되었습니다.');
       if (room.seats.length < 2 || (!message.fillAi && room.seats.length !== 8)) throw new Error(message.fillAi ? '사람 2명 이상이 필요합니다.' : '8명이 모여야 시작할 수 있습니다.');
       if (room.seats.some((s) => !s.peer || !s.ready)) throw new Error('모두 연결된 상태에서 준비를 눌러 주세요.');
-      const state = createMatch({ seed: randomBytes(4).readUInt32LE(), allAi: true });
+      const state = createMatch({ seed: randomBytes(4).readUInt32LE(), allAi: true, seasonId: room.seasonId });
       for (const p of state.players) {
         const human = room.seats.find((s) => s.id === p.id);
         if (human) { p.isHuman = true; p.aiProfile = null; p.name = human.name; }
@@ -211,7 +214,7 @@ export class RoomService {
   }
 
   private broadcastRoom(room: Room): void {
-    const view: RoomView = { code: room.code, hostId: room.hostId, started: !!room.director, seats: room.seats.map((s) => ({ id: s.id, name: s.name, ready: s.ready, connected: !!s.peer })), deadline: room.deadline, serverNow: this.now() };
+    const view: RoomView = { seasonId: room.seasonId, code: room.code, hostId: room.hostId, started: !!room.director, seats: room.seats.map((s) => ({ id: s.id, name: s.name, ready: s.ready, connected: !!s.peer })), deadline: room.deadline, serverNow: this.now() };
     for (const s of room.seats) s.peer?.send({ type: 'room', room: view });
   }
   private broadcastState(room: Room): void { for (const s of room.seats) if (s.peer) this.sendState(room, s); }

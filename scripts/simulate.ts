@@ -11,7 +11,7 @@ import { fileURLToPath } from 'node:url';
 
 import { createMatch, RoundDirector, heldUnits } from '../src/game/engine/rounds/director';
 import { countInPlay, totalCopies } from '../src/game/engine/pool';
-import { getUnitDef, ACTIVE_UNITS, TRAIT_DEFS } from '../src/game/engine/roster';
+import { getUnitDef, getUnitTraits, getSeason, getSeasonUnits, getSeasonTraits } from '../src/game/engine/roster';
 import { activeTierIndex, getTrait } from '../src/game/engine/traits/trait-defs';
 import { AI_PROFILE_IDS } from '../src/game/engine/ai/profiles';
 import type { AiProfileId, MatchState } from '../src/game/engine/state';
@@ -27,6 +27,11 @@ function arg(name: string, fallback: number): number {
 }
 const MATCHES = arg('matches', 250);
 const BASE_SEED = arg('seed', 20260907);
+const seasonArg = process.argv.indexOf('--season');
+const SEASON = getSeason((seasonArg >= 0 ? process.argv[seasonArg + 1] : 's1') as import('../src/game/engine/seasons/catalog').SeasonId);
+const ACTIVE_UNITS = getSeasonUnits(SEASON.id);
+const TRAIT_DEFS = getSeasonTraits(SEASON.id);
+console.log(`Season ${SEASON.id}: ${SEASON.name}, ${ACTIVE_UNITS.length} units`);
 const WRITE_REPORT = process.argv.includes('--report');
 
 type Totals = {
@@ -72,7 +77,7 @@ function boardTraitCounts(state: MatchState, playerId: string): Map<TraitId, num
   const counts = new Map<TraitId, number>();
   const seen = new Map<TraitId, Set<string>>();
   for (const u of player.board) {
-    for (const t of getUnitDef(u.unitDefId).traits) {
+    for (const t of getUnitTraits(u.unitDefId, state.seasonId)) {
       const s = seen.get(t) ?? new Set<string>();
       if (s.has(u.unitDefId)) continue;
       s.add(u.unitDefId);
@@ -85,7 +90,7 @@ function boardTraitCounts(state: MatchState, playerId: string): Map<TraitId, num
 
 const startedAt = Date.now();
 for (let m = 0; m < MATCHES; m += 1) {
-  const state = createMatch({ seed: BASE_SEED + m * 7919, allAi: true });
+  const state = createMatch({ seed: BASE_SEED + m * 7919, allAi: true, seasonId: SEASON.id });
   const director = new RoundDirector(state);
 
   // Sample every prep phase. Sampling only at the end would miss every board
@@ -117,7 +122,7 @@ for (let m = 0; m < MATCHES; m += 1) {
   totals.endStage.push(state.stage);
   totals.rounds.push(state.history.length);
 
-  if (countInPlay(state.pool, heldUnits(state)) !== totalCopies()) totals.poolViolations += 1;
+  if (countInPlay(state.pool, heldUnits(state)) !== totalCopies(SEASON.id)) totals.poolViolations += 1;
 
   for (const res of state.history) {
     for (const o of res.outcomes) {
@@ -222,7 +227,8 @@ if (WRITE_REPORT) {
 
   const md = `# BALANCE — 시뮬레이션 리포트
 
-> 자동 생성 문서. \`npm run simulate -- --matches ${MATCHES} --report\`로 갱신한다.
+> 자동 생성 문서. \`npm run simulate -- --season ${SEASON.id} --matches ${MATCHES} --report\`로 갱신한다.
+> 시즌: ${SEASON.id.toUpperCase()} · ${SEASON.name}
 > 생성 시각: ${new Date().toISOString()}
 > 매치 수: **${MATCHES}** · 기준 시드: \`${BASE_SEED}\` · 소요: ${elapsed}s
 

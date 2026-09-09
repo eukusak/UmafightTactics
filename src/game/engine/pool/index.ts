@@ -1,17 +1,17 @@
 /** Shared unit pool (spec §17.3). Copies are only removed on purchase. */
 import { POOL_COPIES } from '../constants';
-import { ACTIVE_UNITS, getUnitDef } from '../roster';
+import { getSeasonUnits, getUnitDef } from '../roster';
 import type { Cost } from '../types';
 import type { PoolState, UnitInstance } from '../state';
 
-export function createPool(): PoolState {
+export function createPool(seasonId: import('../seasons/catalog').SeasonId = 's1'): PoolState {
   const remaining: Record<string, number> = {};
-  for (const u of ACTIVE_UNITS) remaining[u.id] = POOL_COPIES[u.cost];
-  return { remaining };
+  for (const u of getSeasonUnits(seasonId)) remaining[u.id] = POOL_COPIES[u.cost];
+  return { seasonId, remaining };
 }
 
-export function totalCopies(): number {
-  return ACTIVE_UNITS.reduce((acc, u) => acc + POOL_COPIES[u.cost], 0);
+export function totalCopies(seasonId: import('../seasons/catalog').SeasonId = 's1'): number {
+  return getSeasonUnits(seasonId).reduce((acc, u) => acc + POOL_COPIES[u.cost], 0);
 }
 
 export function remainingOf(pool: PoolState, unitDefId: string): number {

@@ -1,6 +1,6 @@
 /** Shop row, bench row and the footer controls. */
 import { useGameStore } from '../store/gameStore';
-import { getUnitDef } from '../game/engine/roster';
+import { getUnitDef, getUnitTraits } from '../game/engine/roster';
 import { getTrait } from '../game/engine/traits/trait-defs';
 import { rerollCost } from '../game/engine/economy';
 import { benchCapacity } from '../game/engine/shop';
@@ -40,7 +40,7 @@ export function ShopRow(): JSX.Element | null {
             </div>
             <span className="name">{def.nameKo}</span>
             <div className="traits">
-              {def.traits.slice(0, 3).map((t) => (
+              {getUnitTraits(def.id, player.seasonId).map((t) => (
                 <span key={t} className="pill" style={{ fontSize: 10, padding: '1px 6px' }}>
                   {getTrait(t).name}
                 </span>

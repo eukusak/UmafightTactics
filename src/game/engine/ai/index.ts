@@ -9,7 +9,7 @@ import { MAX_LEVEL } from '../constants';
 import { addXp, buyXp, payReroll, rerollCost } from '../economy';
 import { getItem, COMPONENT_IDS } from '../items/item-defs';
 import { canEquip, equipItem, equipTactician } from '../items/inventory';
-import { getUnitDef } from '../roster';
+import { getUnitDef, getUnitTraits } from '../roster';
 import { activeTierIndex, getTrait } from '../traits/trait-defs';
 import { benchCapacity, buyUnit, rollShop, sellUnit, teamSizeLimit } from '../shop';
 import type { Rng } from '../rng';
@@ -19,13 +19,15 @@ import { AI_PROFILES } from './profiles';
 import { applyPlacement, chooseFieldedUnits, planPlacement } from './placement';
 
 /** Distinct-unit trait counts for the units the player would actually field. */
-export function activeTraitCounts(player: PlayerState): Map<TraitId, number> {
+export function activeTraitCounts(player: PlayerState, fielded = chooseFieldedUnits(player)): Map<TraitId, number> {
   const counts = new Map<TraitId, number>();
   const seenByTrait = new Map<TraitId, Set<string>>();
-  const fielded = chooseFieldedUnits(player);
   for (const u of fielded) {
     const def = getUnitDef(u.unitDefId);
-    const traits = [...def.traits];
+    const traits = getUnitTraits(def.id, player.seasonId);
+    for (const bonus of player.bonusTraits) {
+      if (bonus.instanceId === u.instanceId && !traits.includes(bonus.trait)) traits.push(bonus.trait);
+    }
     for (const itemId of u.items) {
       const granted = getItem(itemId).grantsTrait;
       if (granted && !traits.includes(granted)) traits.push(granted);
@@ -82,7 +84,7 @@ export function buyScore(player: PlayerState, unitDefId: string): number {
 
   const counts = activeTraitCounts(player);
   let traitFit = 0;
-  for (const t of def.traits) {
+  for (const t of getUnitTraits(def.id, player.seasonId)) {
     const trait = getTrait(t);
     const have = counts.get(t) ?? 0;
     const currentTier = activeTierIndex(trait, have);

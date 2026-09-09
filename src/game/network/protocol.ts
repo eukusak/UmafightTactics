@@ -1,3 +1,4 @@
+import { SEASON_IDS, type SeasonId } from '../engine/seasons/catalog';
 import { z } from 'zod';
 import type { MatchState } from '../engine/state';
 import type { BattleFrame } from '../engine/battle/engine';
@@ -19,7 +20,7 @@ export type OnlineCommand = z.infer<typeof commandSchema>;
 const name = z.string().trim().min(1).max(20);
 const code = z.string().regex(/^[A-Z2-9]{6}$/);
 export const clientMessageSchema = z.discriminatedUnion('type', [
-  z.object({ type: z.literal('create'), name }).strict(),
+  z.object({ type: z.literal('create'), name, seasonId: z.enum(SEASON_IDS).optional() }).strict(),
   z.object({ type: z.literal('join'), name, code }).strict(),
   z.object({ type: z.literal('resume'), code, token: z.string().min(32).max(80) }).strict(),
   z.object({ type: z.literal('ready'), ready: z.boolean() }).strict(),
@@ -28,7 +29,7 @@ export const clientMessageSchema = z.discriminatedUnion('type', [
   z.object({ type: z.literal('command'), seq: z.number().int().positive().max(Number.MAX_SAFE_INTEGER), round: z.string().max(16), command: commandSchema }).strict(),
 ]);
 export type ClientMessage = z.infer<typeof clientMessageSchema>;
-export type RoomView = { code: string; hostId: string; started: boolean; seats: Array<{ id: string; name: string; ready: boolean; connected: boolean }>; deadline: number; serverNow: number };
+export type RoomView = { seasonId: SeasonId; code: string; hostId: string; started: boolean; seats: Array<{ id: string; name: string; ready: boolean; connected: boolean }>; deadline: number; serverNow: number };
 export type ServerMessage =
   | { type: 'welcome'; code: string; token: string; playerId: string; lastSeq: number }
   | { type: 'room'; room: RoomView }

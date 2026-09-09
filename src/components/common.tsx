@@ -58,7 +58,7 @@ export function UnitToken({
 export function TraitChip({ id }: { id: TraitId }): JSX.Element {
   const trait = getTrait(id);
   return (
-    <span className="pill" style={{ borderColor: traitColor(id) }}>
+    <span className="pill" title={`${trait.description}\n${trait.tiers.map(t => `${t.count}: ${t.description}`).join("\n")}`} style={{ borderColor: traitColor(id) }}>
       {trait.name}
     </span>
   );

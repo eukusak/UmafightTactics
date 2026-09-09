@@ -24,7 +24,7 @@ export type HistoryTrait =
   | 'emperor'
   | 'record_breaker'
   | 'iron_horse';
-export type TraitId = RunStyle | DistanceTrait | SurfaceTrait | HistoryTrait;
+export type TraitId = RunStyle | DistanceTrait | SurfaceTrait | HistoryTrait | `${import('./seasons/catalog').SeasonId}_${string}`;
 
 /** Mutable combat stats. Everything the EffectSystem is allowed to touch. */
 export type BattleStats = {
@@ -247,7 +247,7 @@ export type TraitTier = {
 export type TraitDef = {
   id: TraitId;
   name: string;
-  category: 'STYLE' | 'DISTANCE' | 'SURFACE' | 'HISTORY';
+  category: 'STYLE' | 'DISTANCE' | 'SURFACE' | 'HISTORY' | 'SEASON';
   /** Breakpoint unit counts, ascending. */
   thresholds: number[];
   tiers: TraitTier[];

@@ -7,6 +7,7 @@
 import { create } from 'zustand';
 import { onlineBridge } from '../game/network/bridge';
 import { DEFAULT_SEED } from '../game/engine/constants';
+import type { SeasonId } from '../game/engine/seasons/catalog';
 import { createMatch, RoundDirector } from '../game/engine/rounds/director';
 import type { BattleFrame, BattleSideInput } from '../game/engine/battle/engine';
 import { buyUnit, sellUnit, rollShop, teamSizeLimit, benchCapacity, applyCombines } from '../game/engine/shop';
@@ -67,7 +68,7 @@ type GameStore = {
   lastError: string | null;
 
   setScreen: (screen: Screen) => void;
-  newMatch: (seed?: number, name?: string) => void;
+  newMatch: (seed?: number, name?: string, seasonId?: SeasonId) => void;
   continueMatch: () => boolean;
   hasSavedMatch: () => boolean;
   abandonMatch: () => void;
@@ -126,9 +127,9 @@ export const useGameStore = create<GameStore>((set, get) => ({
 
   setScreen: (screen) => set({ screen }),
 
-  newMatch: (seed = DEFAULT_SEED, name = '트레이너') => {
+  newMatch: (seed = DEFAULT_SEED, name = '트레이너', seasonId = 's1') => {
     if (get().onlinePlayerId) onlineBridge.leave?.();
-    const match = createMatch({ seed, humanName: name });
+    const match = createMatch({ seed, humanName: name, seasonId });
     const director = new RoundDirector(match);
     director.beginPrep();
     saveToStorage(director);
@@ -180,7 +181,7 @@ export const useGameStore = create<GameStore>((set, get) => ({
   traitCounts: () => {
     const player = get().viewedPlayer();
     if (!player) return new Map();
-    return activeTraitCounts(player);
+    return activeTraitCounts(player, player.board.filter(u => u.position !== null));
   },
 
   buy: (slotIndex) => {

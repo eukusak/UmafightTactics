@@ -1,7 +1,7 @@
 /** Augment select, twinkle draft, battle result banner and the dev panel. */
 import { useEffect, useState } from 'react';
 import { useGameStore } from '../store/gameStore';
-import { AUGMENT_BY_ID, ACTIVE_UNITS, getUnitDef } from '../game/engine/roster';
+import { AUGMENT_BY_ID, getSeasonUnits, getUnitDef } from '../game/engine/roster';
 import { getItem } from '../game/engine/items/item-defs';
 import { currentPickers } from '../game/engine/rounds/draft';
 import { Portrait, ItemIcon, costVar } from './common';
@@ -165,7 +165,7 @@ export function DevPanel(): JSX.Element | null {
   useGameStore((s) => s.revision);
   if (!devMode || !match) return null;
 
-  const matches = ACTIVE_UNITS.filter((u) => u.nameKo.includes(unitQuery)).slice(0, 5);
+  const matches = getSeasonUnits(match.seasonId).filter((u) => u.nameKo.includes(unitQuery)).slice(0, 5);
 
   return (
     <div className={`panel dev-panel scroll${collapsed ? ' collapsed' : ''}`}>

@@ -1,4 +1,5 @@
 /** The 24 traits from spec §11, expressed purely as data for the EffectSystem. */
+import { SEASON_TRAIT_DEFS } from '../seasons/catalog';
 import type { EffectDef, TraitDef, TraitId } from '../types';
 
 const add = (stat: EffectDef['stat'], value: number, extra: Partial<EffectDef> = {}): EffectDef => ({
@@ -313,7 +314,7 @@ export const TRAIT_DEFS: TraitDef[] = [
   },
 ];
 
-export const TRAIT_BY_ID = new Map<TraitId, TraitDef>(TRAIT_DEFS.map((t) => [t.id, t]));
+export const TRAIT_BY_ID = new Map<TraitId, TraitDef>([...TRAIT_DEFS, ...SEASON_TRAIT_DEFS].map((t) => [t.id, t]));
 
 export function getTrait(id: TraitId): TraitDef {
   const t = TRAIT_BY_ID.get(id);

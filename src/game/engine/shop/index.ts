@@ -1,6 +1,6 @@
 /** Shop rolls, purchases, sales and star combination (spec §17, §10, §18). */
 import { MAX_ITEMS_PER_UNIT, SHOP_ODDS, SHOP_SLOTS } from '../constants';
-import { ACTIVE_BY_COST, getUnitDef } from '../roster';
+import { getSeasonByCost, getUnitDef } from '../roster';
 import type { Rng } from '../rng';
 import type { Cost, Star } from '../types';
 import type { MatchState, PlayerState, PoolState, ShopSlot, UnitInstance } from '../state';
@@ -90,7 +90,7 @@ export function rollShop(player: PlayerState, pool: PoolState, rng: Rng): ShopSl
     const costs: Cost[] = [1, 2, 3, 4, 5];
     // Only offer costs that still have at least one purchasable copy.
     const costWeights = costs.map((c) => {
-      const available = ACTIVE_BY_COST[c].some(
+      const available = getSeasonByCost(pool.seasonId)[c].some(
         (u) => remainingOf(pool, u.id) - (reserved[u.id] ?? 0) > 0,
       );
       return available ? odds[c] : 0;
@@ -100,7 +100,7 @@ export function rollShop(player: PlayerState, pool: PoolState, rng: Rng): ShopSl
     if (costIdx < 0) { out.push({ unitDefId: null, sold: false }); continue; }
     const cost = costs[costIdx];
 
-    const candidates = ACTIVE_BY_COST[cost];
+    const candidates = getSeasonByCost(pool.seasonId)[cost];
     const weights = candidates.map((u) => {
       const avail = remainingOf(pool, u.id) - (reserved[u.id] ?? 0);
       if (avail <= 0) return 0;

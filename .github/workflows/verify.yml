@@ -34,7 +34,7 @@ jobs:
           npm run sync:data
           npm run data:build
           npm run data:validate
-          git diff --exit-code -- src/data/generated src/data/source
+          git diff --exit-code -- src/data/generated src/data/source public/assets/traits
 
       - name: Typecheck
         run: npm run typecheck
@@ -46,7 +46,10 @@ jobs:
         run: npm test
 
       - name: Balance simulation
-        run: npm run simulate -- --matches 200
+        run: |
+          for season in s1 s2 s3 s4 s5; do
+            npm run simulate -- --season "$season" --matches 40
+          done
 
       - name: Art manifest report
         run: npm run check:art

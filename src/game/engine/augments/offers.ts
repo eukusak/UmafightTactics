@@ -1,6 +1,6 @@
 /** Augment offers and the non-combat half of augment effects (spec §25). */
 import { AUGMENTS_BY_GRADE, getAugment } from './augment-defs';
-import { ACTIVE_UNITS, getUnitDef } from '../roster';
+import { getSeasonUnits, getUnitDef } from '../roster';
 import { addXp } from '../economy';
 import { newInstance, applyCombines, benchCapacity, itemStorageCapacity } from '../shop';
 import { take } from '../pool';
@@ -118,7 +118,7 @@ function bestTraitEmblem(player: PlayerState, mode: 'DISTANCE_BEST' | 'SURFACE_B
 }
 
 function grantUnitWithTrait(state: MatchState, player: PlayerState, trait: TraitId, rng: Rng): void {
-  const candidates = ACTIVE_UNITS.filter(
+  const candidates = getSeasonUnits(state.seasonId).filter(
     (u) => u.traits.includes(trait) && u.cost <= 2 && (state.pool.remaining[u.id] ?? 0) > 0,
   );
   if (!candidates.length) return;
