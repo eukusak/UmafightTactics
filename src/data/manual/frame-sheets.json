@@ -844,5 +844,65 @@
     "skillSignature": "54842ac59b249f0fbb46093277a9b0dc5a9db7c61c6bca3304931fd26a685a4d",
     "skillReview": "누락되었던 스킬 행을 재생성하여 6행 24포즈 확인. 적 밀집 지점을 겨냥하고 힘을 모아 양손으로 광역 기절을 방출한다. 원거리 기본 공격과 꽃무늬 치마, 땋은 머리 유지.",
     "skillReleaseFrame": 2
+  },
+  "bubble_gum_fellow": {
+    "file": "motions/bubble_gum_fellow.png",
+    "frameWidth": 128,
+    "frameHeight": 128,
+    "columns": 4,
+    "rows": 6,
+    "source": "docs/art-source/motions/production-144/bubble_gum_fellow/packing.json",
+    "skillId": "skill_bubble_gum_fellow",
+    "skillSignature": "1c0f102ab64686d4673ea0c04ddff4bd40ef8b3661c7561ae72d3059dfc55b7e",
+    "skillReview": "노란 재킷, 붉은 머리, 흰 반바지 유지. 동일 적에게 첫 세 프레임 연속 방출 후 반동 회복. 기본 원거리 공격과 자기 보호막의 준비 자세 구별. 24포즈 확인.",
+    "skillReleaseFrame": 0
+  },
+  "genuine": {
+    "file": "motions/genuine.png",
+    "frameWidth": 128,
+    "frameHeight": 128,
+    "columns": 4,
+    "rows": 6,
+    "source": "docs/art-source/motions/production-144/genuine/packing.json",
+    "skillId": "skill_genuine",
+    "skillSignature": "15e4116c6e79b860452e9a916d8926f17c2c6ab23fa3c4dcba79f3bc35c67cf3",
+    "skillReview": "직선 돌파의 낮은 출발, 발진, 수평 돌파, 착지. 공격속도 및 치명타 확률 증가 효과에 맞춤. 검정과 보라색 드레스, 흰 꽃과 땋은 머리 유지. 24포즈와 투명 배경 확인.",
+    "skillReleaseFrame": 2
+  },
+  "durandal": {
+    "file": "motions/durandal.png",
+    "frameWidth": 128,
+    "frameHeight": 128,
+    "columns": 4,
+    "rows": 6,
+    "source": "docs/art-source/motions/production-144/durandal/packing.json",
+    "skillId": "skill_durandal",
+    "skillSignature": "86e8e4ebf358d5bd724e5c67fb23f4f1229acd4c64d4d238c8abb864574482c0",
+    "skillReview": "최저 체력 비율 적을 겨냥하는 단일 결정타. 제자리 집중 후 손을 뻗어 방출하며 스킬에 없는 돌진이나 무기 없음. 금색 머리와 비대칭 군복, 흰 바지 유지. 24포즈 확인.",
+    "skillReleaseFrame": 2
+  },
+  "calstone_light_o": {
+    "file": "motions/calstone_light_o.png",
+    "frameWidth": 128,
+    "frameHeight": 128,
+    "columns": 4,
+    "rows": 6,
+    "source": "docs/art-source/motions/production-144/calstone_light_o/packing.json",
+    "skillId": "skill_calstone_light_o",
+    "skillSignature": "32f51161f7c4b6fe11044b40fbff71b9cdf96a48063d439465ec5105423f7b3b",
+    "skillReview": "아군 전체 공속 및 방어 강화에 맞춰 양팔을 펼치는 오라 유지. 달리기 중간 자세를 재생성하여 다리 접힘과 보폭을 구분. 남색 군복, 흰 앞머리와 좌우 다른 부츠 유지. 24포즈 확인.",
+    "skillReleaseFrame": 2
+  },
+  "dream_journey": {
+    "file": "motions/dream_journey.png",
+    "frameWidth": 128,
+    "frameHeight": 128,
+    "columns": 4,
+    "rows": 6,
+    "source": "docs/art-source/motions/production-144/dream_journey/packing.json",
+    "skillId": "skill_dream_journey",
+    "skillSignature": "fa37e0a4753f10620e8a0caad867a8fa8d8a08f70c6cd5b1304abc80a16a39ed",
+    "skillReview": "흰 앞머리와 안경, 붉은 끈 장식의 긴 코트 유지. 단일 약화된 적을 조준하고 힘을 모아 제자리 결정타 방출. 원거리 기본 공격과 구별된 스킬 준비와 주먹 방출. 24포즈 확인.",
+    "skillReleaseFrame": 2
   }
 }

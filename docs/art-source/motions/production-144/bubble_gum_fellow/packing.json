@@ -1,0 +1,443 @@
+{
+  "format": "uft-baked-frames-v1",
+  "scale": 0.4315352697095436,
+  "anchor": [
+    64,
+    110
+  ],
+  "runtimeSha256": "1147a956978388470005554952d22a2c0f147cbec71b87af171ccd93a15cdf7d",
+  "frames": [
+    {
+      "frame": 0,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/production-144/bubble_gum_fellow/alpha.png",
+      "sourceSha256": "0e3c4e48276a6b3ab158753254da2ac4b931d646b56651ff66ea19fc21636982",
+      "crop": [
+        42,
+        24,
+        208,
+        258
+      ],
+      "destination": [
+        28,
+        9,
+        72,
+        101
+      ]
+    },
+    {
+      "frame": 1,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/production-144/bubble_gum_fellow/alpha.png",
+      "sourceSha256": "0e3c4e48276a6b3ab158753254da2ac4b931d646b56651ff66ea19fc21636982",
+      "crop": [
+        297,
+        27,
+        462,
+        258
+      ],
+      "destination": [
+        156,
+        10,
+        71,
+        100
+      ]
+    },
+    {
+      "frame": 2,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/production-144/bubble_gum_fellow/alpha.png",
+      "sourceSha256": "0e3c4e48276a6b3ab158753254da2ac4b931d646b56651ff66ea19fc21636982",
+      "crop": [
+        539,
+        21,
+        718,
+        258
+      ],
+      "destination": [
+        281,
+        8,
+        77,
+        102
+      ]
+    },
+    {
+      "frame": 3,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/production-144/bubble_gum_fellow/alpha.png",
+      "sourceSha256": "0e3c4e48276a6b3ab158753254da2ac4b931d646b56651ff66ea19fc21636982",
+      "crop": [
+        808,
+        25,
+        975,
+        258
+      ],
+      "destination": [
+        412,
+        9,
+        72,
+        101
+      ]
+    },
+    {
+      "frame": 4,
+      "sourceFrame": 4,
+      "source": "docs/art-source/motions/production-144/bubble_gum_fellow/alpha.png",
+      "sourceSha256": "0e3c4e48276a6b3ab158753254da2ac4b931d646b56651ff66ea19fc21636982",
+      "crop": [
+        35,
+        275,
+        216,
+        502
+      ],
+      "destination": [
+        25,
+        140,
+        78,
+        98
+      ]
+    },
+    {
+      "frame": 5,
+      "sourceFrame": 5,
+      "source": "docs/art-source/motions/production-144/bubble_gum_fellow/alpha.png",
+      "sourceSha256": "0e3c4e48276a6b3ab158753254da2ac4b931d646b56651ff66ea19fc21636982",
+      "crop": [
+        290,
+        278,
+        473,
+        504
+      ],
+      "destination": [
+        152,
+        140,
+        79,
+        98
+      ]
+    },
+    {
+      "frame": 6,
+      "sourceFrame": 6,
+      "source": "docs/art-source/motions/production-144/bubble_gum_fellow/alpha.png",
+      "sourceSha256": "0e3c4e48276a6b3ab158753254da2ac4b931d646b56651ff66ea19fc21636982",
+      "crop": [
+        536,
+        275,
+        723,
+        503
+      ],
+      "destination": [
+        279,
+        140,
+        81,
+        98
+      ]
+    },
+    {
+      "frame": 7,
+      "sourceFrame": 7,
+      "source": "docs/art-source/motions/production-144/bubble_gum_fellow/alpha.png",
+      "sourceSha256": "0e3c4e48276a6b3ab158753254da2ac4b931d646b56651ff66ea19fc21636982",
+      "crop": [
+        797,
+        278,
+        985,
+        504
+      ],
+      "destination": [
+        407,
+        140,
+        81,
+        98
+      ]
+    },
+    {
+      "frame": 8,
+      "sourceFrame": 8,
+      "source": "docs/art-source/motions/production-144/bubble_gum_fellow/alpha.png",
+      "sourceSha256": "0e3c4e48276a6b3ab158753254da2ac4b931d646b56651ff66ea19fc21636982",
+      "crop": [
+        40,
+        528,
+        230,
+        766
+      ],
+      "destination": [
+        23,
+        263,
+        82,
+        103
+      ]
+    },
+    {
+      "frame": 9,
+      "sourceFrame": 9,
+      "source": "docs/art-source/motions/production-144/bubble_gum_fellow/alpha.png",
+      "sourceSha256": "0e3c4e48276a6b3ab158753254da2ac4b931d646b56651ff66ea19fc21636982",
+      "crop": [
+        293,
+        525,
+        463,
+        766
+      ],
+      "destination": [
+        155,
+        262,
+        73,
+        104
+      ]
+    },
+    {
+      "frame": 10,
+      "sourceFrame": 10,
+      "source": "docs/art-source/motions/production-144/bubble_gum_fellow/alpha.png",
+      "sourceSha256": "0e3c4e48276a6b3ab158753254da2ac4b931d646b56651ff66ea19fc21636982",
+      "crop": [
+        532,
+        530,
+        740,
+        766
+      ],
+      "destination": [
+        275,
+        264,
+        90,
+        102
+      ]
+    },
+    {
+      "frame": 11,
+      "sourceFrame": 11,
+      "source": "docs/art-source/motions/production-144/bubble_gum_fellow/alpha.png",
+      "sourceSha256": "0e3c4e48276a6b3ab158753254da2ac4b931d646b56651ff66ea19fc21636982",
+      "crop": [
+        804,
+        527,
+        974,
+        766
+      ],
+      "destination": [
+        411,
+        263,
+        73,
+        103
+      ]
+    },
+    {
+      "frame": 12,
+      "sourceFrame": 12,
+      "source": "docs/art-source/motions/production-144/bubble_gum_fellow/alpha.png",
+      "sourceSha256": "0e3c4e48276a6b3ab158753254da2ac4b931d646b56651ff66ea19fc21636982",
+      "crop": [
+        26,
+        793,
+        234,
+        1021
+      ],
+      "destination": [
+        19,
+        396,
+        90,
+        98
+      ]
+    },
+    {
+      "frame": 13,
+      "sourceFrame": 13,
+      "source": "docs/art-source/motions/production-144/bubble_gum_fellow/alpha.png",
+      "sourceSha256": "0e3c4e48276a6b3ab158753254da2ac4b931d646b56651ff66ea19fc21636982",
+      "crop": [
+        288,
+        785,
+        498,
+        1022
+      ],
+      "destination": [
+        146,
+        392,
+        91,
+        102
+      ]
+    },
+    {
+      "frame": 14,
+      "sourceFrame": 14,
+      "source": "docs/art-source/motions/production-144/bubble_gum_fellow/alpha.png",
+      "sourceSha256": "0e3c4e48276a6b3ab158753254da2ac4b931d646b56651ff66ea19fc21636982",
+      "crop": [
+        546,
+        796,
+        749,
+        1023
+      ],
+      "destination": [
+        276,
+        396,
+        88,
+        98
+      ]
+    },
+    {
+      "frame": 15,
+      "sourceFrame": 15,
+      "source": "docs/art-source/motions/production-144/bubble_gum_fellow/alpha.png",
+      "sourceSha256": "0e3c4e48276a6b3ab158753254da2ac4b931d646b56651ff66ea19fc21636982",
+      "crop": [
+        802,
+        795,
+        980,
+        1024
+      ],
+      "destination": [
+        409,
+        395,
+        77,
+        99
+      ]
+    },
+    {
+      "frame": 16,
+      "sourceFrame": 16,
+      "source": "docs/art-source/motions/production-144/bubble_gum_fellow/alpha.png",
+      "sourceSha256": "0e3c4e48276a6b3ab158753254da2ac4b931d646b56651ff66ea19fc21636982",
+      "crop": [
+        37,
+        1049,
+        218,
+        1273
+      ],
+      "destination": [
+        25,
+        525,
+        78,
+        97
+      ]
+    },
+    {
+      "frame": 17,
+      "sourceFrame": 17,
+      "source": "docs/art-source/motions/production-144/bubble_gum_fellow/alpha.png",
+      "sourceSha256": "0e3c4e48276a6b3ab158753254da2ac4b931d646b56651ff66ea19fc21636982",
+      "crop": [
+        282,
+        1065,
+        470,
+        1265
+      ],
+      "destination": [
+        151,
+        536,
+        81,
+        86
+      ]
+    },
+    {
+      "frame": 18,
+      "sourceFrame": 18,
+      "source": "docs/art-source/motions/production-144/bubble_gum_fellow/alpha.png",
+      "sourceSha256": "0e3c4e48276a6b3ab158753254da2ac4b931d646b56651ff66ea19fc21636982",
+      "crop": [
+        532,
+        1095,
+        716,
+        1267
+      ],
+      "destination": [
+        280,
+        548,
+        79,
+        74
+      ]
+    },
+    {
+      "frame": 19,
+      "sourceFrame": 19,
+      "source": "docs/art-source/motions/production-144/bubble_gum_fellow/alpha.png",
+      "sourceSha256": "0e3c4e48276a6b3ab158753254da2ac4b931d646b56651ff66ea19fc21636982",
+      "crop": [
+        781,
+        1137,
+        1015,
+        1262
+      ],
+      "destination": [
+        397,
+        568,
+        101,
+        54
+      ]
+    },
+    {
+      "frame": 20,
+      "sourceFrame": 20,
+      "source": "docs/art-source/motions/production-144/bubble_gum_fellow/alpha.png",
+      "sourceSha256": "0e3c4e48276a6b3ab158753254da2ac4b931d646b56651ff66ea19fc21636982",
+      "crop": [
+        30,
+        1285,
+        197,
+        1521
+      ],
+      "destination": [
+        28,
+        648,
+        72,
+        102
+      ]
+    },
+    {
+      "frame": 21,
+      "sourceFrame": 21,
+      "source": "docs/art-source/motions/production-144/bubble_gum_fellow/alpha.png",
+      "sourceSha256": "0e3c4e48276a6b3ab158753254da2ac4b931d646b56651ff66ea19fc21636982",
+      "crop": [
+        289,
+        1280,
+        454,
+        1521
+      ],
+      "destination": [
+        156,
+        646,
+        71,
+        104
+      ]
+    },
+    {
+      "frame": 22,
+      "sourceFrame": 22,
+      "source": "docs/art-source/motions/production-144/bubble_gum_fellow/alpha.png",
+      "sourceSha256": "0e3c4e48276a6b3ab158753254da2ac4b931d646b56651ff66ea19fc21636982",
+      "crop": [
+        541,
+        1283,
+        723,
+        1523
+      ],
+      "destination": [
+        280,
+        646,
+        79,
+        104
+      ]
+    },
+    {
+      "frame": 23,
+      "sourceFrame": 23,
+      "source": "docs/art-source/motions/production-144/bubble_gum_fellow/alpha.png",
+      "sourceSha256": "0e3c4e48276a6b3ab158753254da2ac4b931d646b56651ff66ea19fc21636982",
+      "crop": [
+        809,
+        1287,
+        965,
+        1521
+      ],
+      "destination": [
+        414,
+        649,
+        67,
+        101
+      ]
+    }
+  ]
+}

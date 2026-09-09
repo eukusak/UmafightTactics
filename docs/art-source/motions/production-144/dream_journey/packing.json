@@ -1,0 +1,443 @@
+{
+  "format": "uft-baked-frames-v1",
+  "scale": 0.41106719367588934,
+  "anchor": [
+    64,
+    110
+  ],
+  "runtimeSha256": "62b6dac8992b5fd9f49f624bb844d118c7c94f8785ee7ee92a0c8144d93698a7",
+  "frames": [
+    {
+      "frame": 0,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/production-144/dream_journey/alpha.png",
+      "sourceSha256": "03eb225d0d7c2c1691e640612ac1346b2f8c0d1987b224101e1ca19fb6858f2d",
+      "crop": [
+        31,
+        10,
+        211,
+        256
+      ],
+      "destination": [
+        27,
+        9,
+        74,
+        101
+      ]
+    },
+    {
+      "frame": 1,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/production-144/dream_journey/alpha.png",
+      "sourceSha256": "03eb225d0d7c2c1691e640612ac1346b2f8c0d1987b224101e1ca19fb6858f2d",
+      "crop": [
+        282,
+        10,
+        465,
+        256
+      ],
+      "destination": [
+        154,
+        9,
+        75,
+        101
+      ]
+    },
+    {
+      "frame": 2,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/production-144/dream_journey/alpha.png",
+      "sourceSha256": "03eb225d0d7c2c1691e640612ac1346b2f8c0d1987b224101e1ca19fb6858f2d",
+      "crop": [
+        540,
+        10,
+        724,
+        256
+      ],
+      "destination": [
+        282,
+        9,
+        76,
+        101
+      ]
+    },
+    {
+      "frame": 3,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/production-144/dream_journey/alpha.png",
+      "sourceSha256": "03eb225d0d7c2c1691e640612ac1346b2f8c0d1987b224101e1ca19fb6858f2d",
+      "crop": [
+        799,
+        10,
+        974,
+        256
+      ],
+      "destination": [
+        412,
+        9,
+        72,
+        101
+      ]
+    },
+    {
+      "frame": 4,
+      "sourceFrame": 4,
+      "source": "docs/art-source/motions/production-144/dream_journey/alpha.png",
+      "sourceSha256": "03eb225d0d7c2c1691e640612ac1346b2f8c0d1987b224101e1ca19fb6858f2d",
+      "crop": [
+        17,
+        270,
+        217,
+        512
+      ],
+      "destination": [
+        23,
+        139,
+        82,
+        99
+      ]
+    },
+    {
+      "frame": 5,
+      "sourceFrame": 5,
+      "source": "docs/art-source/motions/production-144/dream_journey/alpha.png",
+      "sourceSha256": "03eb225d0d7c2c1691e640612ac1346b2f8c0d1987b224101e1ca19fb6858f2d",
+      "crop": [
+        277,
+        272,
+        485,
+        512
+      ],
+      "destination": [
+        149,
+        139,
+        86,
+        99
+      ]
+    },
+    {
+      "frame": 6,
+      "sourceFrame": 6,
+      "source": "docs/art-source/motions/production-144/dream_journey/alpha.png",
+      "sourceSha256": "03eb225d0d7c2c1691e640612ac1346b2f8c0d1987b224101e1ca19fb6858f2d",
+      "crop": [
+        523,
+        269,
+        727,
+        509
+      ],
+      "destination": [
+        278,
+        139,
+        84,
+        99
+      ]
+    },
+    {
+      "frame": 7,
+      "sourceFrame": 7,
+      "source": "docs/art-source/motions/production-144/dream_journey/alpha.png",
+      "sourceSha256": "03eb225d0d7c2c1691e640612ac1346b2f8c0d1987b224101e1ca19fb6858f2d",
+      "crop": [
+        795,
+        276,
+        996,
+        512
+      ],
+      "destination": [
+        406,
+        141,
+        83,
+        97
+      ]
+    },
+    {
+      "frame": 8,
+      "sourceFrame": 8,
+      "source": "docs/art-source/motions/production-144/dream_journey/alpha.png",
+      "sourceSha256": "03eb225d0d7c2c1691e640612ac1346b2f8c0d1987b224101e1ca19fb6858f2d",
+      "crop": [
+        30,
+        516,
+        256,
+        768
+      ],
+      "destination": [
+        17,
+        262,
+        93,
+        104
+      ]
+    },
+    {
+      "frame": 9,
+      "sourceFrame": 9,
+      "source": "docs/art-source/motions/production-144/dream_journey/alpha.png",
+      "sourceSha256": "03eb225d0d7c2c1691e640612ac1346b2f8c0d1987b224101e1ca19fb6858f2d",
+      "crop": [
+        281,
+        516,
+        480,
+        768
+      ],
+      "destination": [
+        151,
+        262,
+        82,
+        104
+      ]
+    },
+    {
+      "frame": 10,
+      "sourceFrame": 10,
+      "source": "docs/art-source/motions/production-144/dream_journey/alpha.png",
+      "sourceSha256": "03eb225d0d7c2c1691e640612ac1346b2f8c0d1987b224101e1ca19fb6858f2d",
+      "crop": [
+        521,
+        523,
+        752,
+        768
+      ],
+      "destination": [
+        272,
+        265,
+        95,
+        101
+      ]
+    },
+    {
+      "frame": 11,
+      "sourceFrame": 11,
+      "source": "docs/art-source/motions/production-144/dream_journey/alpha.png",
+      "sourceSha256": "03eb225d0d7c2c1691e640612ac1346b2f8c0d1987b224101e1ca19fb6858f2d",
+      "crop": [
+        792,
+        516,
+        974,
+        768
+      ],
+      "destination": [
+        410,
+        262,
+        75,
+        104
+      ]
+    },
+    {
+      "frame": 12,
+      "sourceFrame": 12,
+      "source": "docs/art-source/motions/production-144/dream_journey/alpha.png",
+      "sourceSha256": "03eb225d0d7c2c1691e640612ac1346b2f8c0d1987b224101e1ca19fb6858f2d",
+      "crop": [
+        27,
+        777,
+        256,
+        1026
+      ],
+      "destination": [
+        17,
+        392,
+        94,
+        102
+      ]
+    },
+    {
+      "frame": 13,
+      "sourceFrame": 13,
+      "source": "docs/art-source/motions/production-144/dream_journey/alpha.png",
+      "sourceSha256": "03eb225d0d7c2c1691e640612ac1346b2f8c0d1987b224101e1ca19fb6858f2d",
+      "crop": [
+        281,
+        779,
+        488,
+        1026
+      ],
+      "destination": [
+        149,
+        392,
+        85,
+        102
+      ]
+    },
+    {
+      "frame": 14,
+      "sourceFrame": 14,
+      "source": "docs/art-source/motions/production-144/dream_journey/alpha.png",
+      "sourceSha256": "03eb225d0d7c2c1691e640612ac1346b2f8c0d1987b224101e1ca19fb6858f2d",
+      "crop": [
+        526,
+        784,
+        768,
+        1026
+      ],
+      "destination": [
+        270,
+        395,
+        99,
+        99
+      ]
+    },
+    {
+      "frame": 15,
+      "sourceFrame": 15,
+      "source": "docs/art-source/motions/production-144/dream_journey/alpha.png",
+      "sourceSha256": "03eb225d0d7c2c1691e640612ac1346b2f8c0d1987b224101e1ca19fb6858f2d",
+      "crop": [
+        795,
+        780,
+        988,
+        1027
+      ],
+      "destination": [
+        408,
+        392,
+        79,
+        102
+      ]
+    },
+    {
+      "frame": 16,
+      "sourceFrame": 16,
+      "source": "docs/art-source/motions/production-144/dream_journey/alpha.png",
+      "sourceSha256": "03eb225d0d7c2c1691e640612ac1346b2f8c0d1987b224101e1ca19fb6858f2d",
+      "crop": [
+        22,
+        1035,
+        207,
+        1259
+      ],
+      "destination": [
+        26,
+        530,
+        76,
+        92
+      ]
+    },
+    {
+      "frame": 17,
+      "sourceFrame": 17,
+      "source": "docs/art-source/motions/production-144/dream_journey/alpha.png",
+      "sourceSha256": "03eb225d0d7c2c1691e640612ac1346b2f8c0d1987b224101e1ca19fb6858f2d",
+      "crop": [
+        281,
+        1048,
+        483,
+        1259
+      ],
+      "destination": [
+        150,
+        535,
+        83,
+        87
+      ]
+    },
+    {
+      "frame": 18,
+      "sourceFrame": 18,
+      "source": "docs/art-source/motions/production-144/dream_journey/alpha.png",
+      "sourceSha256": "03eb225d0d7c2c1691e640612ac1346b2f8c0d1987b224101e1ca19fb6858f2d",
+      "crop": [
+        511,
+        1071,
+        732,
+        1257
+      ],
+      "destination": [
+        274,
+        546,
+        91,
+        76
+      ]
+    },
+    {
+      "frame": 19,
+      "sourceFrame": 19,
+      "source": "docs/art-source/motions/production-144/dream_journey/alpha.png",
+      "sourceSha256": "03eb225d0d7c2c1691e640612ac1346b2f8c0d1987b224101e1ca19fb6858f2d",
+      "crop": [
+        765,
+        1142,
+        1017,
+        1256
+      ],
+      "destination": [
+        396,
+        575,
+        104,
+        47
+      ]
+    },
+    {
+      "frame": 20,
+      "sourceFrame": 20,
+      "source": "docs/art-source/motions/production-144/dream_journey/alpha.png",
+      "sourceSha256": "03eb225d0d7c2c1691e640612ac1346b2f8c0d1987b224101e1ca19fb6858f2d",
+      "crop": [
+        24,
+        1274,
+        208,
+        1525
+      ],
+      "destination": [
+        26,
+        647,
+        76,
+        103
+      ]
+    },
+    {
+      "frame": 21,
+      "sourceFrame": 21,
+      "source": "docs/art-source/motions/production-144/dream_journey/alpha.png",
+      "sourceSha256": "03eb225d0d7c2c1691e640612ac1346b2f8c0d1987b224101e1ca19fb6858f2d",
+      "crop": [
+        277,
+        1272,
+        466,
+        1525
+      ],
+      "destination": [
+        153,
+        646,
+        78,
+        104
+      ]
+    },
+    {
+      "frame": 22,
+      "sourceFrame": 22,
+      "source": "docs/art-source/motions/production-144/dream_journey/alpha.png",
+      "sourceSha256": "03eb225d0d7c2c1691e640612ac1346b2f8c0d1987b224101e1ca19fb6858f2d",
+      "crop": [
+        528,
+        1275,
+        719,
+        1525
+      ],
+      "destination": [
+        280,
+        647,
+        79,
+        103
+      ]
+    },
+    {
+      "frame": 23,
+      "sourceFrame": 23,
+      "source": "docs/art-source/motions/production-144/dream_journey/alpha.png",
+      "sourceSha256": "03eb225d0d7c2c1691e640612ac1346b2f8c0d1987b224101e1ca19fb6858f2d",
+      "crop": [
+        803,
+        1274,
+        980,
+        1526
+      ],
+      "destination": [
+        411,
+        646,
+        73,
+        104
+      ]
+    }
+  ]
+}

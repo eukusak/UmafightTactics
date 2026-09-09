@@ -1,0 +1,443 @@
+{
+  "format": "uft-baked-frames-v1",
+  "scale": 0.41767068273092367,
+  "anchor": [
+    64,
+    110
+  ],
+  "runtimeSha256": "6e67973115d2cb01e2b0d1947e9432b3b1f66b7a888c02b3aeedc4c34d693cd4",
+  "frames": [
+    {
+      "frame": 0,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/production-144/durandal/alpha.png",
+      "sourceSha256": "765f89a8b20563882681850f64dd6722a94cbf4810a1a175fd851ecc9bbf1658",
+      "crop": [
+        51,
+        13,
+        205,
+        242
+      ],
+      "destination": [
+        32,
+        14,
+        64,
+        96
+      ]
+    },
+    {
+      "frame": 1,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/production-144/durandal/alpha.png",
+      "sourceSha256": "765f89a8b20563882681850f64dd6722a94cbf4810a1a175fd851ecc9bbf1658",
+      "crop": [
+        304,
+        15,
+        459,
+        242
+      ],
+      "destination": [
+        159,
+        15,
+        65,
+        95
+      ]
+    },
+    {
+      "frame": 2,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/production-144/durandal/alpha.png",
+      "sourceSha256": "765f89a8b20563882681850f64dd6722a94cbf4810a1a175fd851ecc9bbf1658",
+      "crop": [
+        560,
+        9,
+        711,
+        242
+      ],
+      "destination": [
+        288,
+        13,
+        63,
+        97
+      ]
+    },
+    {
+      "frame": 3,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/production-144/durandal/alpha.png",
+      "sourceSha256": "765f89a8b20563882681850f64dd6722a94cbf4810a1a175fd851ecc9bbf1658",
+      "crop": [
+        814,
+        13,
+        965,
+        242
+      ],
+      "destination": [
+        416,
+        14,
+        63,
+        96
+      ]
+    },
+    {
+      "frame": 4,
+      "sourceFrame": 4,
+      "source": "docs/art-source/motions/production-144/durandal/alpha.png",
+      "sourceSha256": "765f89a8b20563882681850f64dd6722a94cbf4810a1a175fd851ecc9bbf1658",
+      "crop": [
+        44,
+        260,
+        223,
+        497
+      ],
+      "destination": [
+        26,
+        139,
+        75,
+        99
+      ]
+    },
+    {
+      "frame": 5,
+      "sourceFrame": 5,
+      "source": "docs/art-source/motions/production-144/durandal/alpha.png",
+      "sourceSha256": "765f89a8b20563882681850f64dd6722a94cbf4810a1a175fd851ecc9bbf1658",
+      "crop": [
+        300,
+        260,
+        484,
+        497
+      ],
+      "destination": [
+        153,
+        139,
+        77,
+        99
+      ]
+    },
+    {
+      "frame": 6,
+      "sourceFrame": 6,
+      "source": "docs/art-source/motions/production-144/durandal/alpha.png",
+      "sourceSha256": "765f89a8b20563882681850f64dd6722a94cbf4810a1a175fd851ecc9bbf1658",
+      "crop": [
+        552,
+        260,
+        731,
+        496
+      ],
+      "destination": [
+        282,
+        139,
+        75,
+        99
+      ]
+    },
+    {
+      "frame": 7,
+      "sourceFrame": 7,
+      "source": "docs/art-source/motions/production-144/durandal/alpha.png",
+      "sourceSha256": "765f89a8b20563882681850f64dd6722a94cbf4810a1a175fd851ecc9bbf1658",
+      "crop": [
+        809,
+        261,
+        989,
+        497
+      ],
+      "destination": [
+        410,
+        139,
+        75,
+        99
+      ]
+    },
+    {
+      "frame": 8,
+      "sourceFrame": 8,
+      "source": "docs/art-source/motions/production-144/durandal/alpha.png",
+      "sourceSha256": "765f89a8b20563882681850f64dd6722a94cbf4810a1a175fd851ecc9bbf1658",
+      "crop": [
+        40,
+        515,
+        235,
+        764
+      ],
+      "destination": [
+        23,
+        262,
+        81,
+        104
+      ]
+    },
+    {
+      "frame": 9,
+      "sourceFrame": 9,
+      "source": "docs/art-source/motions/production-144/durandal/alpha.png",
+      "sourceSha256": "765f89a8b20563882681850f64dd6722a94cbf4810a1a175fd851ecc9bbf1658",
+      "crop": [
+        301,
+        516,
+        470,
+        765
+      ],
+      "destination": [
+        156,
+        262,
+        71,
+        104
+      ]
+    },
+    {
+      "frame": 10,
+      "sourceFrame": 10,
+      "source": "docs/art-source/motions/production-144/durandal/alpha.png",
+      "sourceSha256": "765f89a8b20563882681850f64dd6722a94cbf4810a1a175fd851ecc9bbf1658",
+      "crop": [
+        554,
+        519,
+        754,
+        765
+      ],
+      "destination": [
+        278,
+        263,
+        84,
+        103
+      ]
+    },
+    {
+      "frame": 11,
+      "sourceFrame": 11,
+      "source": "docs/art-source/motions/production-144/durandal/alpha.png",
+      "sourceSha256": "765f89a8b20563882681850f64dd6722a94cbf4810a1a175fd851ecc9bbf1658",
+      "crop": [
+        806,
+        515,
+        972,
+        764
+      ],
+      "destination": [
+        413,
+        262,
+        69,
+        104
+      ]
+    },
+    {
+      "frame": 12,
+      "sourceFrame": 12,
+      "source": "docs/art-source/motions/production-144/durandal/alpha.png",
+      "sourceSha256": "765f89a8b20563882681850f64dd6722a94cbf4810a1a175fd851ecc9bbf1658",
+      "crop": [
+        39,
+        783,
+        215,
+        1028
+      ],
+      "destination": [
+        27,
+        392,
+        74,
+        102
+      ]
+    },
+    {
+      "frame": 13,
+      "sourceFrame": 13,
+      "source": "docs/art-source/motions/production-144/durandal/alpha.png",
+      "sourceSha256": "765f89a8b20563882681850f64dd6722a94cbf4810a1a175fd851ecc9bbf1658",
+      "crop": [
+        305,
+        785,
+        486,
+        1028
+      ],
+      "destination": [
+        154,
+        393,
+        76,
+        101
+      ]
+    },
+    {
+      "frame": 14,
+      "sourceFrame": 14,
+      "source": "docs/art-source/motions/production-144/durandal/alpha.png",
+      "sourceSha256": "765f89a8b20563882681850f64dd6722a94cbf4810a1a175fd851ecc9bbf1658",
+      "crop": [
+        552,
+        785,
+        756,
+        1028
+      ],
+      "destination": [
+        277,
+        393,
+        85,
+        101
+      ]
+    },
+    {
+      "frame": 15,
+      "sourceFrame": 15,
+      "source": "docs/art-source/motions/production-144/durandal/alpha.png",
+      "sourceSha256": "765f89a8b20563882681850f64dd6722a94cbf4810a1a175fd851ecc9bbf1658",
+      "crop": [
+        809,
+        784,
+        984,
+        1028
+      ],
+      "destination": [
+        411,
+        392,
+        73,
+        102
+      ]
+    },
+    {
+      "frame": 16,
+      "sourceFrame": 16,
+      "source": "docs/art-source/motions/production-144/durandal/alpha.png",
+      "sourceSha256": "765f89a8b20563882681850f64dd6722a94cbf4810a1a175fd851ecc9bbf1658",
+      "crop": [
+        47,
+        1042,
+        211,
+        1277
+      ],
+      "destination": [
+        30,
+        524,
+        68,
+        98
+      ]
+    },
+    {
+      "frame": 17,
+      "sourceFrame": 17,
+      "source": "docs/art-source/motions/production-144/durandal/alpha.png",
+      "sourceSha256": "765f89a8b20563882681850f64dd6722a94cbf4810a1a175fd851ecc9bbf1658",
+      "crop": [
+        295,
+        1071,
+        465,
+        1268
+      ],
+      "destination": [
+        156,
+        540,
+        71,
+        82
+      ]
+    },
+    {
+      "frame": 18,
+      "sourceFrame": 18,
+      "source": "docs/art-source/motions/production-144/durandal/alpha.png",
+      "sourceSha256": "765f89a8b20563882681850f64dd6722a94cbf4810a1a175fd851ecc9bbf1658",
+      "crop": [
+        538,
+        1115,
+        723,
+        1269
+      ],
+      "destination": [
+        281,
+        558,
+        77,
+        64
+      ]
+    },
+    {
+      "frame": 19,
+      "sourceFrame": 19,
+      "source": "docs/art-source/motions/production-144/durandal/alpha.png",
+      "sourceSha256": "765f89a8b20563882681850f64dd6722a94cbf4810a1a175fd851ecc9bbf1658",
+      "crop": [
+        778,
+        1160,
+        1009,
+        1268
+      ],
+      "destination": [
+        400,
+        577,
+        96,
+        45
+      ]
+    },
+    {
+      "frame": 20,
+      "sourceFrame": 20,
+      "source": "docs/art-source/motions/production-144/durandal/alpha.png",
+      "sourceSha256": "765f89a8b20563882681850f64dd6722a94cbf4810a1a175fd851ecc9bbf1658",
+      "crop": [
+        46,
+        1283,
+        198,
+        1527
+      ],
+      "destination": [
+        32,
+        648,
+        63,
+        102
+      ]
+    },
+    {
+      "frame": 21,
+      "sourceFrame": 21,
+      "source": "docs/art-source/motions/production-144/durandal/alpha.png",
+      "sourceSha256": "765f89a8b20563882681850f64dd6722a94cbf4810a1a175fd851ecc9bbf1658",
+      "crop": [
+        297,
+        1293,
+        462,
+        1527
+      ],
+      "destination": [
+        157,
+        652,
+        69,
+        98
+      ]
+    },
+    {
+      "frame": 22,
+      "sourceFrame": 22,
+      "source": "docs/art-source/motions/production-144/durandal/alpha.png",
+      "sourceSha256": "765f89a8b20563882681850f64dd6722a94cbf4810a1a175fd851ecc9bbf1658",
+      "crop": [
+        539,
+        1282,
+        718,
+        1520
+      ],
+      "destination": [
+        282,
+        651,
+        75,
+        99
+      ]
+    },
+    {
+      "frame": 23,
+      "sourceFrame": 23,
+      "source": "docs/art-source/motions/production-144/durandal/alpha.png",
+      "sourceSha256": "765f89a8b20563882681850f64dd6722a94cbf4810a1a175fd851ecc9bbf1658",
+      "crop": [
+        802,
+        1284,
+        963,
+        1527
+      ],
+      "destination": [
+        414,
+        649,
+        67,
+        101
+      ]
+    }
+  ]
+}
