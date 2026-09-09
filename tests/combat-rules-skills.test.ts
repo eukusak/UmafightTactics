@@ -64,6 +64,13 @@ describe('public combat role rules', () => {
 });
 
 describe('skill timing and effect lifecycle', () => {
+  it('advances a skill dash during recovery without allowing basic attacks', () => {
+    const e = fixture(.5, [{ kind: 'DASH', value: 3, target: 'CURRENT_TARGET' }, damage]);
+    e.units[1].cell = { q: 3, r: 1 };
+    const result = e.run();
+    expect(e.frames.some(f => f.units[0].casting && f.units[0].fromQ !== null && f.units[0].progress > 0)).toBe(true);
+    expect(result.events.some(ev => ev.type === 'ATTACK_START')).toBe(false);
+  });
   it('does no damage during preparation and emits VFX on the damage tick', () => {
     const early = fixture(.25, [damage]); expect(early.run().events.some(e => e.type === 'DAMAGE')).toBe(false);
     const e = fixture(.5, [damage]), result = e.run();

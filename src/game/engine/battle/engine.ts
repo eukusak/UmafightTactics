@@ -349,12 +349,12 @@ export class BattleEngine {
   private act(unit: CombatUnit, dt: number): void {
     unit.attackCooldown -= dt;
     if (isStunned(unit, this.time)) return;
-    if (this.casts.some((cast) => cast.source === unit.id)) return;
     // A reserved destination remains occupied while the body travels to it.
     if (unit.moveFrom) {
       this.advanceMove(unit, dt);
       return;
     }
+    if (this.casts.some((cast) => cast.source === unit.id)) return;
     if (this.attacks.some((a) => a.source === unit.id && !a.released)) return;
 
     // Cast as soon as mana fills, unless silenced or mana-locked.
