@@ -83,6 +83,9 @@ export function ItemIcon({
   return (
     <div
       onClick={onClick}
+      role={onClick ? 'button' : undefined} tabIndex={onClick ? 0 : undefined}
+      aria-label={onClick ? `${item.name} 설명과 조합식` : undefined}
+      onKeyDown={e => { if (onClick && (e.key === 'Enter' || e.key === ' ')) { e.preventDefault(); onClick(); } }}
       title={title ?? `${item.name} — ${item.description}`}
       style={{
         width: size, height: size, borderRadius: 5,

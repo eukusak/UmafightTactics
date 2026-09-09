@@ -3,10 +3,11 @@ import { useCallback, useEffect, useState } from 'react';
 import { useGameStore } from '../../store/gameStore';
 import { TopHud, TraitPanel, ItemPanel, Leaderboard, OpponentBoardPeek } from '../Panels';
 import { ShopRow, BenchRow, ShopControls } from '../Shop';
-import { ArenaBackdrop, PrepBoard, BattleBoard } from '../BoardView';
+import { ArenaBackdrop, PrepBoard, BattleBoard, BattleInspectTargets } from '../BoardView';
 import { AugmentOverlay, DraftOverlay, BattleResultOverlay, DevPanel } from '../Overlays';
-import { Tooltip } from '../common';
-import { UnitTooltip } from '../UnitTooltip';
+import { DetailPanel } from '../DetailPanel';
+import { useInteractionStore } from '../../store/interactionStore';
+import { handleBattleKey } from '../../game/ui/controls';
 import { roundInfo } from '../../game/engine/rounds/schedule';
 import type { UnitInstance } from '../../game/engine/state';
 import { PromotionFeedback } from '../PromotionFeedback';
@@ -31,14 +32,16 @@ export function BattleScreen(): JSX.Element | null {
   const setSettings = useGameStore((s) => s.setSettings);
   useGameStore((s) => s.revision);
 
-  const [tooltip, setTooltip] = useState<{ x: number; y: number; unit: UnitInstance } | null>(null);
+  const inspection = useInteractionStore(s => s.inspection);
   const showResult = useGameStore((s) => s.battleComplete);
   const [arenaReady, setArenaReady] = useState(false);
   const onArenaReady = useCallback(() => setArenaReady(true), []);
   useEffect(() => { if (!battleRunning) setArenaReady(false); }, [battleRunning]);
 
   const onUnitContext = useCallback((e: React.MouseEvent, unit: UnitInstance) => {
-    setTooltip({ x: e.clientX, y: e.clientY, unit });
+    e.preventDefault();
+    const player = useGameStore.getState().human();
+    if (player) useInteractionStore.getState().inspect({ kind: 'unit', id: unit.instanceId, playerId: player.id });
   }, []);
 
   const onPlaybackFinished = useCallback(() => useGameStore.getState().completeBattle(), []);
@@ -49,20 +52,20 @@ export function BattleScreen(): JSX.Element | null {
 
   // Keyboard shortcuts (spec §27.3).
   useEffect(() => {
-    const onKey = (e: KeyboardEvent): void => {
-      if (e.target instanceof HTMLInputElement || e.target instanceof HTMLSelectElement) return;
-      const store = useGameStore.getState();
-      const binds = store.settings.keybinds;
-      const key = e.key;
-      if (key === binds.reroll) { store.reroll(); e.preventDefault(); }
-      else if (key === binds.buyXp) { store.buyExperience(); e.preventDefault(); }
-      else if (key === binds.prevPlayer) store.spectate(-1);
-      else if (key === binds.nextPlayer) store.spectate(1);
-      else if (key === binds.ownBoard) { store.inspectPlayer(null); e.preventDefault(); }
-      else if (key === binds.settings) store.setScreen('SETTINGS');
+    useInteractionStore.getState().reset();
+    const cancelDrag = () => useInteractionStore.getState().drag(null);
+    const blur = () => { cancelDrag(); useInteractionStore.getState().hover(null); };
+    window.addEventListener('keydown', handleBattleKey);
+    window.addEventListener('dragend', cancelDrag);
+    window.addEventListener('drop', cancelDrag);
+    window.addEventListener('blur', blur);
+    return () => {
+      window.removeEventListener('keydown', handleBattleKey);
+      window.removeEventListener('dragend', cancelDrag);
+      window.removeEventListener('drop', cancelDrag);
+      window.removeEventListener('blur', blur);
+      useInteractionStore.getState().reset();
     };
-    window.addEventListener('keydown', onKey);
-    return () => window.removeEventListener('keydown', onKey);
   }, []);
 
   if (!match || !human) return null;
@@ -84,14 +87,17 @@ export function BattleScreen(): JSX.Element | null {
         <ArenaBackdrop />
         {(!battleRunning || !arenaReady) && <PrepBoard onUnitContext={onUnitContext} />}
         {battleRunning && (!online || !!frames?.length) && <BattleBoard key={battleId ?? 'solo'} onFinished={onPlaybackFinished} onReady={onArenaReady} />}
-        {battleRunning && arenaReady && <BattleTelemetry />}
+        {battleRunning && arenaReady && <><BattleInspectTargets /><BattleTelemetry /></>}
         {online && !battleRunning && <OnlineClock />}
         {!online && !battleRunning && <PrepCountdown key={info.label} active={!awaitingAugment && !awaitingDraft} seconds={info.prepSeconds} />}
       </div>
 
       <div className="hud-right scroll">
-        <Leaderboard />
-        <OpponentBoardPeek />
+        {inspection ? <DetailPanel /> : <><Leaderboard /><OpponentBoardPeek /><div className="panel controls-help">
+          <strong>조작 안내</strong><p>기물·특성·아이템 클릭: 상세 정보</p>
+          <p>기물을 상점으로 드래그: 판매</p><p>{settings.keybinds.sellHovered.toUpperCase()}: 가리킨 기물 판매 · {settings.keybinds.toggleBench.toUpperCase()}: 필드/대기석</p>
+          <p>{settings.keybinds.battleInfo}: 전투 통계 · Esc: 선택 취소/닫기</p>
+        </div></>}
       </div>
 
       <div className="hud-bench">
@@ -135,11 +141,6 @@ export function BattleScreen(): JSX.Element | null {
       {awaitingAugment && <AugmentOverlay />}
       {awaitingDraft && !awaitingAugment && <DraftOverlay />}
       {showResult && <BattleResultOverlay onContinue={handleContinue} />}
-      {tooltip && (
-        <Tooltip x={tooltip.x} y={tooltip.y} onClose={() => setTooltip(null)}>
-          <UnitTooltip unit={tooltip.unit} />
-        </Tooltip>
-      )}
       <DevPanel />
     </>
   );

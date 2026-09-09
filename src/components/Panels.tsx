@@ -1,4 +1,5 @@
 /** Left (traits + items), right (leaderboard), top HUD and footer panels. */
+import { useInteractionStore } from '../store/interactionStore';
 import { useGameStore } from '../store/gameStore';
 import { AUGMENT_BY_ID, getSeasonTraits, getSeason, getUnitDef } from '../game/engine/roster';
 import { activeTierIndex } from '../game/engine/traits/trait-defs';
@@ -71,13 +72,13 @@ export function TraitPanel(): JSX.Element | null {
       {rows.map(({ trait, count }) => {
         const tier = activeTierIndex(trait, count);
         return (
-          <div key={trait.id} className={`trait-row${tier >= 0 ? ' active' : ''}`} title={
+          <button type="button" onClick={() => viewed && useInteractionStore.getState().inspect({ kind: 'trait', id: trait.id, playerId: viewed.id })} key={trait.id} className={`trait-row${tier >= 0 ? ' active' : ''}`} title={
             `${trait.description}\n${trait.tiers.map(t => `${t.count}: ${t.description}`).join("\n")}`
           }>
             <img className="trait-icon" src={`/assets/traits/${trait.id}.${trait.category === "SEASON" ? "svg" : "png"}`} alt="" />
             <span>{trait.name}</span>
             <span className="count">{traitTierLabel(trait.id, count)}</span>
-          </div>
+          </button>
         );
       })}
     </div>
@@ -105,7 +106,7 @@ export function ItemPanel(): JSX.Element | null {
               e.dataTransfer.effectAllowed = 'move';
             }}
           >
-            <ItemIcon itemId={i.itemId} />
+            <ItemIcon itemId={i.itemId} onClick={() => useInteractionStore.getState().inspect({ kind: 'item', id: i.itemId })} />
           </div>
         ))}
         {player.items.length === 0 && <div className="muted" style={{ fontSize: 13 }}>보유 아이템 없음</div>}
@@ -116,7 +117,7 @@ export function ItemPanel(): JSX.Element | null {
           <h4 style={{ margin: '12px 0 6px', fontSize: 14 }}>전략가 장비</h4>
           <div style={{ display: 'flex', gap: 6 }}>
             {player.tacticianItems.map((id, idx) => (
-              <ItemIcon key={`${id}-${idx}`} itemId={id} />
+              <ItemIcon key={`${id}-${idx}`} itemId={id} onClick={() => useInteractionStore.getState().inspect({ kind: 'item', id })} />
             ))}
           </div>
         </>
@@ -184,7 +185,9 @@ export function OpponentBoardPeek(): JSX.Element | null {
         {Array.from({ length: 28 }, (_, i) => {
           const unit = viewed.board.find((u) => u.position?.q === i % 7 && u.position.r === Math.floor(i / 7));
           const def = unit ? getUnitDef(unit.unitDefId) : null;
-          return <div key={i} className="scout-cell" title={def && unit ? `${def.nameKo} ${'★'.repeat(unit.star)}` : '빈 칸'}>
+          return <div key={i} role={unit ? 'button' : undefined} tabIndex={unit ? 0 : undefined}
+            onClick={() => unit && useInteractionStore.getState().inspect({ kind: 'unit', id: unit.instanceId, playerId: viewed.id })}
+            onKeyDown={e => { if (unit && (e.key === 'Enter' || e.key === ' ')) { e.preventDefault(); useInteractionStore.getState().inspect({ kind: 'unit', id: unit.instanceId, playerId: viewed.id }); } }} className="scout-cell" title={def && unit ? `${def.nameKo} ${'★'.repeat(unit.star)}` : '빈 칸'}>
             {def && <Portrait id={def.id} name={def.nameKo} size={27} />}
           </div>;
         })}

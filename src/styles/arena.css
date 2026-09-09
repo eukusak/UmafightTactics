@@ -225,3 +225,47 @@ html, body, #root { font-family: "Noto Sans KR Variable", "Malgun Gothic", syste
 .shop-card .traits { max-width: 100%; gap: 3px; }
 .collection-grid { min-height: 0; }
 .online-connect select { padding: 10px; color: var(--text); background: var(--panel-bright); border: 1px solid var(--edge-light); border-radius: 6px; }
+
+/* Interactive inspection and shop selling use the same scaled HUD coordinates. */
+button.trait-row { display:flex; align-items:center; width:100%; text-align:left; }
+.sell-drop-zone { position:relative; }
+.sell-overlay { position:absolute; inset:0; z-index:20; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:12px; border:2px dashed #e4c582; border-radius:12px; background:#30251aee; color:#ffe0a0; pointer-events:none; }
+.sell-overlay strong { font-size:27px; }
+.sell-drop-zone.selling .shop-card { pointer-events:none; }
+.sell-drop-zone.over .sell-overlay { background:#614b21f5; border-style:solid; box-shadow:0 0 25px #e2bc7d66; }
+.detail-panel { padding:14px; font-size:14px; overflow-wrap:anywhere; }
+.detail-toolbar,.detail-heading { display:flex; align-items:center; justify-content:space-between; gap:10px; }
+.detail-toolbar { border-bottom:1px solid #a7c7cb33; margin-bottom:14px; padding-bottom:8px; }
+.detail-toolbar button { padding:5px 9px; }
+.detail-heading { justify-content:flex-start; margin-bottom:12px; }
+.detail-panel h3 { font-size:20px; margin:0 0 5px; }
+.detail-panel h4 { margin:18px 0 8px; font-size:16px; color:#e8cf97; }
+.detail-panel p { margin:8px 0; line-height:1.6; }
+.detail-panel .muted { font-size:12px; }
+.detail-traits { display:flex; flex-wrap:wrap; gap:5px; margin:10px 0; }
+.detail-traits button { padding:4px 8px; }
+.detail-vital { position:relative; height:26px; background:#06121e; border-radius:4px; overflow:hidden; margin:6px 0; }
+.detail-vital > span { position:absolute; inset:0 auto 0 0; background:#227754; }
+.detail-vital.mana > span { background:#255ea3; }
+.detail-vital b { position:relative; display:block; text-align:center; line-height:26px; font-size:13px; text-shadow:0 1px 3px #000; }
+.detail-stats { display:grid; grid-template-columns:1fr 1fr; gap:8px; margin:12px 0; }
+.detail-stats > div { background:#07172388; padding:8px; border-radius:5px; }
+.detail-stats dt { font-size:12px; color:#aac3d5; }
+.detail-stats dd { margin:4px 0 0; font-size:17px; font-weight:700; }
+.detail-item-link { display:flex; align-items:center; gap:8px; padding:6px; margin:4px 0; width:100%; text-align:left; font-size:13px; }
+.detail-item-link > span { flex:1; }
+.detail-recipe { display:flex; align-items:center; gap:7px; }
+.detail-recipe > div { flex:1; min-width:0; }
+.detail-recipe-card,.detail-tier { margin:10px 0; border:1px solid #839da644; border-radius:7px; padding:9px; }
+.detail-recipe-card p { font-size:12px; }
+.detail-tier.active { border-color:#e4c582; background:#d6b35122; }
+.detail-tier b { color:#e7ce95; }
+.detail-trait-roster > div,.detail-stat { display:flex; gap:7px; align-items:center; margin:7px 0; font-size:13px; }
+.detail-trait-roster b,.detail-stat b { margin-left:auto; }
+.detail-sell { width:100%; margin-top:16px; color:#ffe0a0; border-color:#d0a361; }
+.battle-inspect-layer { position:absolute; inset:0; z-index:4; pointer-events:none; }
+.battle-inspect-target { position:absolute; pointer-events:auto; border:0; padding:0; background:transparent; box-shadow:none; border-radius:35%; }
+.battle-inspect-target:hover,.battle-inspect-target:focus-visible { background:#e3cc8822; outline:2px solid #e5cc8b88; transform:none; }
+
+.controls-help { margin-top:12px; padding:12px; font-size:13px; line-height:1.7; }
+.controls-help p { margin:6px 0; color:#aac3d5; }
