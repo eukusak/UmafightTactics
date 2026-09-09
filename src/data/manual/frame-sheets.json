@@ -724,5 +724,65 @@
     "skillSignature": "a5801ca3c7b617c805d8d286b026df896dbd4b994ccbcc05b29afac289ad66b6",
     "skillReview": "근접 손바닥 타격. 진로 봉쇄: 적 무리 지정 → 집중 → 양손 제압 방출 → 회복. 범위 마법피해·기절이며 자기 치명타 강화. 붉은 드레스, 흰 리본과 별 머리장식 유지.",
     "skillReleaseFrame": 2
+  },
+  "stay_gold": {
+    "file": "motions/stay_gold.png",
+    "frameWidth": 128,
+    "frameHeight": 128,
+    "columns": 4,
+    "rows": 6,
+    "source": "docs/art-source/motions/production-144/stay_gold/packing.json",
+    "skillId": "skill_stay_gold",
+    "skillSignature": "c8fe82acaf0e77d89431a57d033094f95985f5da472136855af6fb6e52956592",
+    "skillReview": "근접 손바닥 타격. 자기 보호막·도발: 팔 교차 방어 → 양팔 방벽 → 적을 부르는 손짓 → 방어 유지. 낡은 긴 코트, 고글과 금색 부츠 앞코 유지. 피해·치유·돌진 없음.",
+    "skillReleaseFrame": 2
+  },
+  "curren_bouquetdor": {
+    "file": "motions/curren_bouquetdor.png",
+    "frameWidth": 128,
+    "frameHeight": 128,
+    "columns": 4,
+    "rows": 6,
+    "source": "docs/art-source/motions/production-144/curren_bouquetdor/packing.json",
+    "skillId": "skill_curren_bouquetdor",
+    "skillSignature": "03b7183511fd8dd47ecbd6eeef42dde67e73fd57c3dda21667333d1a46310b74",
+    "skillReview": "원거리 손짓 발사. 체력 최저 아군 회복: 손 모아 집중 → 도움 준비 → 아군 방향 회복 손짓 → 팀 격려. 아군 전체 공격력·주문력과 자기 보호막 강화. 꽃무늬 안감과 비대칭 장갑·신발 유지.",
+    "skillReleaseFrame": 2
+  },
+  "chrono_genesis": {
+    "file": "motions/chrono_genesis.png",
+    "frameWidth": 128,
+    "frameHeight": 128,
+    "columns": 4,
+    "rows": 6,
+    "source": "docs/art-source/motions/production-144/chrono_genesis/packing.json",
+    "skillId": "skill_chrono_genesis",
+    "skillSignature": "2d8e96210aec5a4154e601992b45505112cea59d3249b86063612825c16bd7a1",
+    "skillReview": "근접 손바닥 타격. 직선 돌파: 낮은 출발 → 발진 → 수평 돌파 → 착지. 공격속도와 자기 보호막 강화. 은색·남색 긴 머리와 금색 장식 유지, 달리기 중간 자세 보정.",
+    "skillReleaseFrame": 2
+  },
+  "loves_only_you": {
+    "file": "motions/loves_only_you.png",
+    "frameWidth": 128,
+    "frameHeight": 128,
+    "columns": 4,
+    "rows": 6,
+    "source": "docs/art-source/motions/production-144/loves_only_you/packing.json",
+    "skillId": "skill_loves_only_you",
+    "skillSignature": "70d851c915fb80fb6f37730e31274eb888227a0d9df9c2e403da1612648bc1a4",
+    "skillReview": "근접 손바닥 타격. 진로 봉쇄: 적 무리 지정 → 집중 → 양손 제압 방출 → 회복. 범위 마법피해·기절과 자기 치명타 강화. 붉은 머리, 작은 모자, 비대칭 장갑·스타킹 유지.",
+    "skillReleaseFrame": 2
+  },
+  "gran_alegria": {
+    "file": "motions/gran_alegria.png",
+    "frameWidth": 128,
+    "frameHeight": 128,
+    "columns": 4,
+    "rows": 6,
+    "source": "docs/art-source/motions/production-144/gran_alegria/packing.json",
+    "skillId": "skill_gran_alegria",
+    "skillSignature": "5dc4173a1d39483570dab1d50f824319d39a6d386b68e4db978f4ffcf6f93702",
+    "skillReview": "원거리 손짓 발사. 직선 돌파: 낮은 출발 → 발진 → 수평 돌파 → 착지. 자기 공격속도·이동속도 강화. 흰 앞머리와 붉은 별, 허리천·금색 장식·흰 운동화 유지.",
+    "skillReleaseFrame": 2
   }
 }

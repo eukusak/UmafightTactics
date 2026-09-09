@@ -1,0 +1,443 @@
+{
+  "format": "uft-baked-frames-v1",
+  "scale": 0.4046692607003891,
+  "anchor": [
+    64,
+    110
+  ],
+  "runtimeSha256": "43b6759d19d373334eff8e5e6a199166691f18845437bfc3acee22076b45cbbb",
+  "frames": [
+    {
+      "frame": 0,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/production-144/loves_only_you/alpha.png",
+      "sourceSha256": "3f73be91233b72269d30c932361476016a3eee43524e0731e86e634f3156adfb",
+      "crop": [
+        42,
+        16,
+        219,
+        262
+      ],
+      "destination": [
+        28,
+        10,
+        72,
+        100
+      ]
+    },
+    {
+      "frame": 1,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/production-144/loves_only_you/alpha.png",
+      "sourceSha256": "3f73be91233b72269d30c932361476016a3eee43524e0731e86e634f3156adfb",
+      "crop": [
+        298,
+        16,
+        471,
+        262
+      ],
+      "destination": [
+        157,
+        10,
+        70,
+        100
+      ]
+    },
+    {
+      "frame": 2,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/production-144/loves_only_you/alpha.png",
+      "sourceSha256": "3f73be91233b72269d30c932361476016a3eee43524e0731e86e634f3156adfb",
+      "crop": [
+        551,
+        14,
+        727,
+        262
+      ],
+      "destination": [
+        284,
+        10,
+        71,
+        100
+      ]
+    },
+    {
+      "frame": 3,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/production-144/loves_only_you/alpha.png",
+      "sourceSha256": "3f73be91233b72269d30c932361476016a3eee43524e0731e86e634f3156adfb",
+      "crop": [
+        802,
+        16,
+        974,
+        262
+      ],
+      "destination": [
+        413,
+        10,
+        70,
+        100
+      ]
+    },
+    {
+      "frame": 4,
+      "sourceFrame": 4,
+      "source": "docs/art-source/motions/production-144/loves_only_you/alpha.png",
+      "sourceSha256": "3f73be91233b72269d30c932361476016a3eee43524e0731e86e634f3156adfb",
+      "crop": [
+        25,
+        271,
+        226,
+        512
+      ],
+      "destination": [
+        23,
+        140,
+        81,
+        98
+      ]
+    },
+    {
+      "frame": 5,
+      "sourceFrame": 5,
+      "source": "docs/art-source/motions/production-144/loves_only_you/alpha.png",
+      "sourceSha256": "3f73be91233b72269d30c932361476016a3eee43524e0731e86e634f3156adfb",
+      "crop": [
+        291,
+        273,
+        481,
+        512
+      ],
+      "destination": [
+        153,
+        141,
+        77,
+        97
+      ]
+    },
+    {
+      "frame": 6,
+      "sourceFrame": 6,
+      "source": "docs/art-source/motions/production-144/loves_only_you/alpha.png",
+      "sourceSha256": "3f73be91233b72269d30c932361476016a3eee43524e0731e86e634f3156adfb",
+      "crop": [
+        533,
+        272,
+        731,
+        512
+      ],
+      "destination": [
+        280,
+        141,
+        80,
+        97
+      ]
+    },
+    {
+      "frame": 7,
+      "sourceFrame": 7,
+      "source": "docs/art-source/motions/production-144/loves_only_you/alpha.png",
+      "sourceSha256": "3f73be91233b72269d30c932361476016a3eee43524e0731e86e634f3156adfb",
+      "crop": [
+        789,
+        278,
+        988,
+        512
+      ],
+      "destination": [
+        407,
+        143,
+        81,
+        95
+      ]
+    },
+    {
+      "frame": 8,
+      "sourceFrame": 8,
+      "source": "docs/art-source/motions/production-144/loves_only_you/alpha.png",
+      "sourceSha256": "3f73be91233b72269d30c932361476016a3eee43524e0731e86e634f3156adfb",
+      "crop": [
+        23,
+        522,
+        216,
+        767
+      ],
+      "destination": [
+        25,
+        267,
+        78,
+        99
+      ]
+    },
+    {
+      "frame": 9,
+      "sourceFrame": 9,
+      "source": "docs/art-source/motions/production-144/loves_only_you/alpha.png",
+      "sourceSha256": "3f73be91233b72269d30c932361476016a3eee43524e0731e86e634f3156adfb",
+      "crop": [
+        283,
+        519,
+        477,
+        768
+      ],
+      "destination": [
+        152,
+        265,
+        79,
+        101
+      ]
+    },
+    {
+      "frame": 10,
+      "sourceFrame": 10,
+      "source": "docs/art-source/motions/production-144/loves_only_you/alpha.png",
+      "sourceSha256": "3f73be91233b72269d30c932361476016a3eee43524e0731e86e634f3156adfb",
+      "crop": [
+        518,
+        526,
+        752,
+        768
+      ],
+      "destination": [
+        272,
+        268,
+        95,
+        98
+      ]
+    },
+    {
+      "frame": 11,
+      "sourceFrame": 11,
+      "source": "docs/art-source/motions/production-144/loves_only_you/alpha.png",
+      "sourceSha256": "3f73be91233b72269d30c932361476016a3eee43524e0731e86e634f3156adfb",
+      "crop": [
+        787,
+        521,
+        978,
+        768
+      ],
+      "destination": [
+        409,
+        266,
+        77,
+        100
+      ]
+    },
+    {
+      "frame": 12,
+      "sourceFrame": 12,
+      "source": "docs/art-source/motions/production-144/loves_only_you/alpha.png",
+      "sourceSha256": "3f73be91233b72269d30c932361476016a3eee43524e0731e86e634f3156adfb",
+      "crop": [
+        35,
+        778,
+        265,
+        1024
+      ],
+      "destination": [
+        17,
+        394,
+        93,
+        100
+      ]
+    },
+    {
+      "frame": 13,
+      "sourceFrame": 13,
+      "source": "docs/art-source/motions/production-144/loves_only_you/alpha.png",
+      "sourceSha256": "3f73be91233b72269d30c932361476016a3eee43524e0731e86e634f3156adfb",
+      "crop": [
+        293,
+        781,
+        477,
+        1024
+      ],
+      "destination": [
+        155,
+        396,
+        74,
+        98
+      ]
+    },
+    {
+      "frame": 14,
+      "sourceFrame": 14,
+      "source": "docs/art-source/motions/production-144/loves_only_you/alpha.png",
+      "sourceSha256": "3f73be91233b72269d30c932361476016a3eee43524e0731e86e634f3156adfb",
+      "crop": [
+        542,
+        781,
+        765,
+        1024
+      ],
+      "destination": [
+        275,
+        396,
+        90,
+        98
+      ]
+    },
+    {
+      "frame": 15,
+      "sourceFrame": 15,
+      "source": "docs/art-source/motions/production-144/loves_only_you/alpha.png",
+      "sourceSha256": "3f73be91233b72269d30c932361476016a3eee43524e0731e86e634f3156adfb",
+      "crop": [
+        800,
+        781,
+        979,
+        1024
+      ],
+      "destination": [
+        412,
+        396,
+        72,
+        98
+      ]
+    },
+    {
+      "frame": 16,
+      "sourceFrame": 16,
+      "source": "docs/art-source/motions/production-144/loves_only_you/alpha.png",
+      "sourceSha256": "3f73be91233b72269d30c932361476016a3eee43524e0731e86e634f3156adfb",
+      "crop": [
+        26,
+        1033,
+        221,
+        1264
+      ],
+      "destination": [
+        24,
+        529,
+        79,
+        93
+      ]
+    },
+    {
+      "frame": 17,
+      "sourceFrame": 17,
+      "source": "docs/art-source/motions/production-144/loves_only_you/alpha.png",
+      "sourceSha256": "3f73be91233b72269d30c932361476016a3eee43524e0731e86e634f3156adfb",
+      "crop": [
+        271,
+        1051,
+        485,
+        1258
+      ],
+      "destination": [
+        148,
+        538,
+        87,
+        84
+      ]
+    },
+    {
+      "frame": 18,
+      "sourceFrame": 18,
+      "source": "docs/art-source/motions/production-144/loves_only_you/alpha.png",
+      "sourceSha256": "3f73be91233b72269d30c932361476016a3eee43524e0731e86e634f3156adfb",
+      "crop": [
+        514,
+        1076,
+        734,
+        1259
+      ],
+      "destination": [
+        275,
+        548,
+        89,
+        74
+      ]
+    },
+    {
+      "frame": 19,
+      "sourceFrame": 19,
+      "source": "docs/art-source/motions/production-144/loves_only_you/alpha.png",
+      "sourceSha256": "3f73be91233b72269d30c932361476016a3eee43524e0731e86e634f3156adfb",
+      "crop": [
+        752,
+        1121,
+        1012,
+        1256
+      ],
+      "destination": [
+        395,
+        567,
+        105,
+        55
+      ]
+    },
+    {
+      "frame": 20,
+      "sourceFrame": 20,
+      "source": "docs/art-source/motions/production-144/loves_only_you/alpha.png",
+      "sourceSha256": "3f73be91233b72269d30c932361476016a3eee43524e0731e86e634f3156adfb",
+      "crop": [
+        42,
+        1271,
+        221,
+        1524
+      ],
+      "destination": [
+        28,
+        648,
+        72,
+        102
+      ]
+    },
+    {
+      "frame": 21,
+      "sourceFrame": 21,
+      "source": "docs/art-source/motions/production-144/loves_only_you/alpha.png",
+      "sourceSha256": "3f73be91233b72269d30c932361476016a3eee43524e0731e86e634f3156adfb",
+      "crop": [
+        287,
+        1268,
+        475,
+        1524
+      ],
+      "destination": [
+        154,
+        646,
+        76,
+        104
+      ]
+    },
+    {
+      "frame": 22,
+      "sourceFrame": 22,
+      "source": "docs/art-source/motions/production-144/loves_only_you/alpha.png",
+      "sourceSha256": "3f73be91233b72269d30c932361476016a3eee43524e0731e86e634f3156adfb",
+      "crop": [
+        523,
+        1268,
+        741,
+        1525
+      ],
+      "destination": [
+        276,
+        646,
+        88,
+        104
+      ]
+    },
+    {
+      "frame": 23,
+      "sourceFrame": 23,
+      "source": "docs/art-source/motions/production-144/loves_only_you/alpha.png",
+      "sourceSha256": "3f73be91233b72269d30c932361476016a3eee43524e0731e86e634f3156adfb",
+      "crop": [
+        782,
+        1272,
+        971,
+        1524
+      ],
+      "destination": [
+        410,
+        648,
+        76,
+        102
+      ]
+    }
+  ]
+}
