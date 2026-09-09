@@ -1,0 +1,443 @@
+{
+  "format": "uft-baked-frames-v1",
+  "scale": 0.42276422764227645,
+  "anchor": [
+    64,
+    110
+  ],
+  "runtimeSha256": "24b5e5e2bea0a4128d9316e9ddcda96538b9f47b3b940ad80f0cf093839450b9",
+  "frames": [
+    {
+      "frame": 0,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/production-144/satono_crown/alpha.png",
+      "sourceSha256": "22b5964c729a97197c6842a8ccb0b1c5b26e9c4d887df0df0c0d84504ea33f33",
+      "crop": [
+        68,
+        15,
+        218,
+        255
+      ],
+      "destination": [
+        32,
+        9,
+        63,
+        101
+      ]
+    },
+    {
+      "frame": 1,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/production-144/satono_crown/alpha.png",
+      "sourceSha256": "22b5964c729a97197c6842a8ccb0b1c5b26e9c4d887df0df0c0d84504ea33f33",
+      "crop": [
+        314,
+        19,
+        465,
+        256
+      ],
+      "destination": [
+        160,
+        10,
+        64,
+        100
+      ]
+    },
+    {
+      "frame": 2,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/production-144/satono_crown/alpha.png",
+      "sourceSha256": "22b5964c729a97197c6842a8ccb0b1c5b26e9c4d887df0df0c0d84504ea33f33",
+      "crop": [
+        551,
+        16,
+        699,
+        256
+      ],
+      "destination": [
+        288,
+        9,
+        63,
+        101
+      ]
+    },
+    {
+      "frame": 3,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/production-144/satono_crown/alpha.png",
+      "sourceSha256": "22b5964c729a97197c6842a8ccb0b1c5b26e9c4d887df0df0c0d84504ea33f33",
+      "crop": [
+        808,
+        16,
+        958,
+        256
+      ],
+      "destination": [
+        416,
+        9,
+        63,
+        101
+      ]
+    },
+    {
+      "frame": 4,
+      "sourceFrame": 4,
+      "source": "docs/art-source/motions/production-144/satono_crown/alpha.png",
+      "sourceSha256": "22b5964c729a97197c6842a8ccb0b1c5b26e9c4d887df0df0c0d84504ea33f33",
+      "crop": [
+        41,
+        275,
+        248,
+        512
+      ],
+      "destination": [
+        20,
+        138,
+        88,
+        100
+      ]
+    },
+    {
+      "frame": 5,
+      "sourceFrame": 5,
+      "source": "docs/art-source/motions/production-144/satono_crown/alpha.png",
+      "sourceSha256": "22b5964c729a97197c6842a8ccb0b1c5b26e9c4d887df0df0c0d84504ea33f33",
+      "crop": [
+        303,
+        275,
+        499,
+        512
+      ],
+      "destination": [
+        150,
+        138,
+        83,
+        100
+      ]
+    },
+    {
+      "frame": 6,
+      "sourceFrame": 6,
+      "source": "docs/art-source/motions/production-144/satono_crown/alpha.png",
+      "sourceSha256": "22b5964c729a97197c6842a8ccb0b1c5b26e9c4d887df0df0c0d84504ea33f33",
+      "crop": [
+        530,
+        277,
+        740,
+        512
+      ],
+      "destination": [
+        275,
+        139,
+        89,
+        99
+      ]
+    },
+    {
+      "frame": 7,
+      "sourceFrame": 7,
+      "source": "docs/art-source/motions/production-144/satono_crown/alpha.png",
+      "sourceSha256": "22b5964c729a97197c6842a8ccb0b1c5b26e9c4d887df0df0c0d84504ea33f33",
+      "crop": [
+        788,
+        277,
+        989,
+        511
+      ],
+      "destination": [
+        405,
+        139,
+        85,
+        99
+      ]
+    },
+    {
+      "frame": 8,
+      "sourceFrame": 8,
+      "source": "docs/art-source/motions/production-144/satono_crown/alpha.png",
+      "sourceSha256": "22b5964c729a97197c6842a8ccb0b1c5b26e9c4d887df0df0c0d84504ea33f33",
+      "crop": [
+        39,
+        527,
+        235,
+        765
+      ],
+      "destination": [
+        22,
+        265,
+        83,
+        101
+      ]
+    },
+    {
+      "frame": 9,
+      "sourceFrame": 9,
+      "source": "docs/art-source/motions/production-144/satono_crown/alpha.png",
+      "sourceSha256": "22b5964c729a97197c6842a8ccb0b1c5b26e9c4d887df0df0c0d84504ea33f33",
+      "crop": [
+        298,
+        523,
+        468,
+        765
+      ],
+      "destination": [
+        156,
+        264,
+        72,
+        102
+      ]
+    },
+    {
+      "frame": 10,
+      "sourceFrame": 10,
+      "source": "docs/art-source/motions/production-144/satono_crown/alpha.png",
+      "sourceSha256": "22b5964c729a97197c6842a8ccb0b1c5b26e9c4d887df0df0c0d84504ea33f33",
+      "crop": [
+        526,
+        525,
+        744,
+        766
+      ],
+      "destination": [
+        274,
+        264,
+        92,
+        102
+      ]
+    },
+    {
+      "frame": 11,
+      "sourceFrame": 11,
+      "source": "docs/art-source/motions/production-144/satono_crown/alpha.png",
+      "sourceSha256": "22b5964c729a97197c6842a8ccb0b1c5b26e9c4d887df0df0c0d84504ea33f33",
+      "crop": [
+        797,
+        522,
+        949,
+        766
+      ],
+      "destination": [
+        416,
+        263,
+        64,
+        103
+      ]
+    },
+    {
+      "frame": 12,
+      "sourceFrame": 12,
+      "source": "docs/art-source/motions/production-144/satono_crown/alpha.png",
+      "sourceSha256": "22b5964c729a97197c6842a8ccb0b1c5b26e9c4d887df0df0c0d84504ea33f33",
+      "crop": [
+        42,
+        777,
+        235,
+        1020
+      ],
+      "destination": [
+        23,
+        391,
+        82,
+        103
+      ]
+    },
+    {
+      "frame": 13,
+      "sourceFrame": 13,
+      "source": "docs/art-source/motions/production-144/satono_crown/alpha.png",
+      "sourceSha256": "22b5964c729a97197c6842a8ccb0b1c5b26e9c4d887df0df0c0d84504ea33f33",
+      "crop": [
+        299,
+        784,
+        496,
+        1020
+      ],
+      "destination": [
+        150,
+        394,
+        83,
+        100
+      ]
+    },
+    {
+      "frame": 14,
+      "sourceFrame": 14,
+      "source": "docs/art-source/motions/production-144/satono_crown/alpha.png",
+      "sourceSha256": "22b5964c729a97197c6842a8ccb0b1c5b26e9c4d887df0df0c0d84504ea33f33",
+      "crop": [
+        537,
+        781,
+        740,
+        1020
+      ],
+      "destination": [
+        277,
+        393,
+        86,
+        101
+      ]
+    },
+    {
+      "frame": 15,
+      "sourceFrame": 15,
+      "source": "docs/art-source/motions/production-144/satono_crown/alpha.png",
+      "sourceSha256": "22b5964c729a97197c6842a8ccb0b1c5b26e9c4d887df0df0c0d84504ea33f33",
+      "crop": [
+        801,
+        780,
+        953,
+        1020
+      ],
+      "destination": [
+        416,
+        393,
+        64,
+        101
+      ]
+    },
+    {
+      "frame": 16,
+      "sourceFrame": 16,
+      "source": "docs/art-source/motions/production-144/satono_crown/alpha.png",
+      "sourceSha256": "22b5964c729a97197c6842a8ccb0b1c5b26e9c4d887df0df0c0d84504ea33f33",
+      "crop": [
+        64,
+        1045,
+        230,
+        1267
+      ],
+      "destination": [
+        29,
+        528,
+        70,
+        94
+      ]
+    },
+    {
+      "frame": 17,
+      "sourceFrame": 17,
+      "source": "docs/art-source/motions/production-144/satono_crown/alpha.png",
+      "sourceSha256": "22b5964c729a97197c6842a8ccb0b1c5b26e9c4d887df0df0c0d84504ea33f33",
+      "crop": [
+        317,
+        1064,
+        486,
+        1261
+      ],
+      "destination": [
+        156,
+        539,
+        71,
+        83
+      ]
+    },
+    {
+      "frame": 18,
+      "sourceFrame": 18,
+      "source": "docs/art-source/motions/production-144/satono_crown/alpha.png",
+      "sourceSha256": "22b5964c729a97197c6842a8ccb0b1c5b26e9c4d887df0df0c0d84504ea33f33",
+      "crop": [
+        552,
+        1082,
+        732,
+        1261
+      ],
+      "destination": [
+        282,
+        546,
+        76,
+        76
+      ]
+    },
+    {
+      "frame": 19,
+      "sourceFrame": 19,
+      "source": "docs/art-source/motions/production-144/satono_crown/alpha.png",
+      "sourceSha256": "22b5964c729a97197c6842a8ccb0b1c5b26e9c4d887df0df0c0d84504ea33f33",
+      "crop": [
+        773,
+        1147,
+        1006,
+        1261
+      ],
+      "destination": [
+        398,
+        574,
+        99,
+        48
+      ]
+    },
+    {
+      "frame": 20,
+      "sourceFrame": 20,
+      "source": "docs/art-source/motions/production-144/satono_crown/alpha.png",
+      "sourceSha256": "22b5964c729a97197c6842a8ccb0b1c5b26e9c4d887df0df0c0d84504ea33f33",
+      "crop": [
+        56,
+        1283,
+        226,
+        1525
+      ],
+      "destination": [
+        28,
+        648,
+        72,
+        102
+      ]
+    },
+    {
+      "frame": 21,
+      "sourceFrame": 21,
+      "source": "docs/art-source/motions/production-144/satono_crown/alpha.png",
+      "sourceSha256": "22b5964c729a97197c6842a8ccb0b1c5b26e9c4d887df0df0c0d84504ea33f33",
+      "crop": [
+        308,
+        1282,
+        471,
+        1524
+      ],
+      "destination": [
+        157,
+        648,
+        69,
+        102
+      ]
+    },
+    {
+      "frame": 22,
+      "sourceFrame": 22,
+      "source": "docs/art-source/motions/production-144/satono_crown/alpha.png",
+      "sourceSha256": "22b5964c729a97197c6842a8ccb0b1c5b26e9c4d887df0df0c0d84504ea33f33",
+      "crop": [
+        555,
+        1283,
+        704,
+        1525
+      ],
+      "destination": [
+        288,
+        648,
+        63,
+        102
+      ]
+    },
+    {
+      "frame": 23,
+      "sourceFrame": 23,
+      "source": "docs/art-source/motions/production-144/satono_crown/alpha.png",
+      "sourceSha256": "22b5964c729a97197c6842a8ccb0b1c5b26e9c4d887df0df0c0d84504ea33f33",
+      "crop": [
+        804,
+        1279,
+        950,
+        1525
+      ],
+      "destination": [
+        417,
+        646,
+        62,
+        104
+      ]
+    }
+  ]
+}

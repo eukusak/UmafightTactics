@@ -1,0 +1,443 @@
+{
+  "format": "uft-baked-frames-v1",
+  "scale": 0.4315352697095436,
+  "anchor": [
+    64,
+    110
+  ],
+  "runtimeSha256": "eb5e9a5e0fbb82f10f281c598dc3aaf9a9be8a86f7c96574e94141b94a6cbdca",
+  "frames": [
+    {
+      "frame": 0,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/production-144/narita_top_road/alpha.png",
+      "sourceSha256": "0be009f9135d7dbca8e42b7d566651f43bca53398989933c4123bd347bd488b3",
+      "crop": [
+        56,
+        20,
+        205,
+        260
+      ],
+      "destination": [
+        32,
+        6,
+        64,
+        104
+      ]
+    },
+    {
+      "frame": 1,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/production-144/narita_top_road/alpha.png",
+      "sourceSha256": "0be009f9135d7dbca8e42b7d566651f43bca53398989933c4123bd347bd488b3",
+      "crop": [
+        306,
+        22,
+        458,
+        260
+      ],
+      "destination": [
+        159,
+        7,
+        66,
+        103
+      ]
+    },
+    {
+      "frame": 2,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/production-144/narita_top_road/alpha.png",
+      "sourceSha256": "0be009f9135d7dbca8e42b7d566651f43bca53398989933c4123bd347bd488b3",
+      "crop": [
+        563,
+        20,
+        714,
+        260
+      ],
+      "destination": [
+        287,
+        6,
+        65,
+        104
+      ]
+    },
+    {
+      "frame": 3,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/production-144/narita_top_road/alpha.png",
+      "sourceSha256": "0be009f9135d7dbca8e42b7d566651f43bca53398989933c4123bd347bd488b3",
+      "crop": [
+        808,
+        20,
+        959,
+        260
+      ],
+      "destination": [
+        415,
+        6,
+        65,
+        104
+      ]
+    },
+    {
+      "frame": 4,
+      "sourceFrame": 4,
+      "source": "docs/art-source/motions/production-144/narita_top_road/alpha.png",
+      "sourceSha256": "0be009f9135d7dbca8e42b7d566651f43bca53398989933c4123bd347bd488b3",
+      "crop": [
+        39,
+        282,
+        223,
+        517
+      ],
+      "destination": [
+        24,
+        137,
+        79,
+        101
+      ]
+    },
+    {
+      "frame": 5,
+      "sourceFrame": 5,
+      "source": "docs/art-source/motions/production-144/narita_top_road/alpha.png",
+      "sourceSha256": "0be009f9135d7dbca8e42b7d566651f43bca53398989933c4123bd347bd488b3",
+      "crop": [
+        293,
+        282,
+        478,
+        517
+      ],
+      "destination": [
+        152,
+        137,
+        80,
+        101
+      ]
+    },
+    {
+      "frame": 6,
+      "sourceFrame": 6,
+      "source": "docs/art-source/motions/production-144/narita_top_road/alpha.png",
+      "sourceSha256": "0be009f9135d7dbca8e42b7d566651f43bca53398989933c4123bd347bd488b3",
+      "crop": [
+        556,
+        283,
+        736,
+        517
+      ],
+      "destination": [
+        281,
+        137,
+        78,
+        101
+      ]
+    },
+    {
+      "frame": 7,
+      "sourceFrame": 7,
+      "source": "docs/art-source/motions/production-144/narita_top_road/alpha.png",
+      "sourceSha256": "0be009f9135d7dbca8e42b7d566651f43bca53398989933c4123bd347bd488b3",
+      "crop": [
+        805,
+        285,
+        984,
+        517
+      ],
+      "destination": [
+        409,
+        138,
+        77,
+        100
+      ]
+    },
+    {
+      "frame": 8,
+      "sourceFrame": 8,
+      "source": "docs/art-source/motions/production-144/narita_top_road/alpha.png",
+      "sourceSha256": "0be009f9135d7dbca8e42b7d566651f43bca53398989933c4123bd347bd488b3",
+      "crop": [
+        51,
+        535,
+        209,
+        769
+      ],
+      "destination": [
+        30,
+        265,
+        68,
+        101
+      ]
+    },
+    {
+      "frame": 9,
+      "sourceFrame": 9,
+      "source": "docs/art-source/motions/production-144/narita_top_road/alpha.png",
+      "sourceSha256": "0be009f9135d7dbca8e42b7d566651f43bca53398989933c4123bd347bd488b3",
+      "crop": [
+        294,
+        535,
+        468,
+        769
+      ],
+      "destination": [
+        154,
+        265,
+        75,
+        101
+      ]
+    },
+    {
+      "frame": 10,
+      "sourceFrame": 10,
+      "source": "docs/art-source/motions/production-144/narita_top_road/alpha.png",
+      "sourceSha256": "0be009f9135d7dbca8e42b7d566651f43bca53398989933c4123bd347bd488b3",
+      "crop": [
+        545,
+        535,
+        742,
+        769
+      ],
+      "destination": [
+        277,
+        265,
+        85,
+        101
+      ]
+    },
+    {
+      "frame": 11,
+      "sourceFrame": 11,
+      "source": "docs/art-source/motions/production-144/narita_top_road/alpha.png",
+      "sourceSha256": "0be009f9135d7dbca8e42b7d566651f43bca53398989933c4123bd347bd488b3",
+      "crop": [
+        808,
+        535,
+        959,
+        769
+      ],
+      "destination": [
+        415,
+        265,
+        65,
+        101
+      ]
+    },
+    {
+      "frame": 12,
+      "sourceFrame": 12,
+      "source": "docs/art-source/motions/production-144/narita_top_road/alpha.png",
+      "sourceSha256": "0be009f9135d7dbca8e42b7d566651f43bca53398989933c4123bd347bd488b3",
+      "crop": [
+        52,
+        790,
+        208,
+        1025
+      ],
+      "destination": [
+        30,
+        393,
+        67,
+        101
+      ]
+    },
+    {
+      "frame": 13,
+      "sourceFrame": 13,
+      "source": "docs/art-source/motions/production-144/narita_top_road/alpha.png",
+      "sourceSha256": "0be009f9135d7dbca8e42b7d566651f43bca53398989933c4123bd347bd488b3",
+      "crop": [
+        307,
+        791,
+        495,
+        1025
+      ],
+      "destination": [
+        151,
+        393,
+        81,
+        101
+      ]
+    },
+    {
+      "frame": 14,
+      "sourceFrame": 14,
+      "source": "docs/art-source/motions/production-144/narita_top_road/alpha.png",
+      "sourceSha256": "0be009f9135d7dbca8e42b7d566651f43bca53398989933c4123bd347bd488b3",
+      "crop": [
+        557,
+        790,
+        736,
+        1025
+      ],
+      "destination": [
+        281,
+        393,
+        77,
+        101
+      ]
+    },
+    {
+      "frame": 15,
+      "sourceFrame": 15,
+      "source": "docs/art-source/motions/production-144/narita_top_road/alpha.png",
+      "sourceSha256": "0be009f9135d7dbca8e42b7d566651f43bca53398989933c4123bd347bd488b3",
+      "crop": [
+        806,
+        791,
+        959,
+        1025
+      ],
+      "destination": [
+        415,
+        393,
+        66,
+        101
+      ]
+    },
+    {
+      "frame": 16,
+      "sourceFrame": 16,
+      "source": "docs/art-source/motions/production-144/narita_top_road/alpha.png",
+      "sourceSha256": "0be009f9135d7dbca8e42b7d566651f43bca53398989933c4123bd347bd488b3",
+      "crop": [
+        50,
+        1049,
+        232,
+        1264
+      ],
+      "destination": [
+        24,
+        529,
+        79,
+        93
+      ]
+    },
+    {
+      "frame": 17,
+      "sourceFrame": 17,
+      "source": "docs/art-source/motions/production-144/narita_top_road/alpha.png",
+      "sourceSha256": "0be009f9135d7dbca8e42b7d566651f43bca53398989933c4123bd347bd488b3",
+      "crop": [
+        290,
+        1083,
+        485,
+        1259
+      ],
+      "destination": [
+        150,
+        546,
+        84,
+        76
+      ]
+    },
+    {
+      "frame": 18,
+      "sourceFrame": 18,
+      "source": "docs/art-source/motions/production-144/narita_top_road/alpha.png",
+      "sourceSha256": "0be009f9135d7dbca8e42b7d566651f43bca53398989933c4123bd347bd488b3",
+      "crop": [
+        548,
+        1084,
+        731,
+        1258
+      ],
+      "destination": [
+        280,
+        547,
+        79,
+        75
+      ]
+    },
+    {
+      "frame": 19,
+      "sourceFrame": 19,
+      "source": "docs/art-source/motions/production-144/narita_top_road/alpha.png",
+      "sourceSha256": "0be009f9135d7dbca8e42b7d566651f43bca53398989933c4123bd347bd488b3",
+      "crop": [
+        789,
+        1142,
+        1004,
+        1257
+      ],
+      "destination": [
+        401,
+        572,
+        93,
+        50
+      ]
+    },
+    {
+      "frame": 20,
+      "sourceFrame": 20,
+      "source": "docs/art-source/motions/production-144/narita_top_road/alpha.png",
+      "sourceSha256": "0be009f9135d7dbca8e42b7d566651f43bca53398989933c4123bd347bd488b3",
+      "crop": [
+        51,
+        1282,
+        214,
+        1522
+      ],
+      "destination": [
+        29,
+        646,
+        70,
+        104
+      ]
+    },
+    {
+      "frame": 21,
+      "sourceFrame": 21,
+      "source": "docs/art-source/motions/production-144/narita_top_road/alpha.png",
+      "sourceSha256": "0be009f9135d7dbca8e42b7d566651f43bca53398989933c4123bd347bd488b3",
+      "crop": [
+        312,
+        1277,
+        480,
+        1510
+      ],
+      "destination": [
+        156,
+        649,
+        72,
+        101
+      ]
+    },
+    {
+      "frame": 22,
+      "sourceFrame": 22,
+      "source": "docs/art-source/motions/production-144/narita_top_road/alpha.png",
+      "sourceSha256": "0be009f9135d7dbca8e42b7d566651f43bca53398989933c4123bd347bd488b3",
+      "crop": [
+        562,
+        1281,
+        715,
+        1522
+      ],
+      "destination": [
+        287,
+        646,
+        66,
+        104
+      ]
+    },
+    {
+      "frame": 23,
+      "sourceFrame": 23,
+      "source": "docs/art-source/motions/production-144/narita_top_road/alpha.png",
+      "sourceSha256": "0be009f9135d7dbca8e42b7d566651f43bca53398989933c4123bd347bd488b3",
+      "crop": [
+        812,
+        1282,
+        986,
+        1523
+      ],
+      "destination": [
+        410,
+        646,
+        75,
+        104
+      ]
+    }
+  ]
+}

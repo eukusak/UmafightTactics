@@ -1,0 +1,443 @@
+{
+  "format": "uft-baked-frames-v1",
+  "scale": 0.40310077519379844,
+  "anchor": [
+    64,
+    110
+  ],
+  "runtimeSha256": "75cfb15c2ac6cd05f7a47b1fcf2999e9d1efef5ab2f579bd92374371887d4d62",
+  "frames": [
+    {
+      "frame": 0,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/production-144/mejiro_dober/alpha.png",
+      "sourceSha256": "670c2627f8a97d98c9cf981dbb78fb880353d0cd22e46f6d370104e56b31eb9d",
+      "crop": [
+        52,
+        20,
+        208,
+        270
+      ],
+      "destination": [
+        32,
+        9,
+        63,
+        101
+      ]
+    },
+    {
+      "frame": 1,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/production-144/mejiro_dober/alpha.png",
+      "sourceSha256": "670c2627f8a97d98c9cf981dbb78fb880353d0cd22e46f6d370104e56b31eb9d",
+      "crop": [
+        305,
+        23,
+        461,
+        270
+      ],
+      "destination": [
+        160,
+        10,
+        63,
+        100
+      ]
+    },
+    {
+      "frame": 2,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/production-144/mejiro_dober/alpha.png",
+      "sourceSha256": "670c2627f8a97d98c9cf981dbb78fb880353d0cd22e46f6d370104e56b31eb9d",
+      "crop": [
+        546,
+        20,
+        705,
+        270
+      ],
+      "destination": [
+        288,
+        9,
+        64,
+        101
+      ]
+    },
+    {
+      "frame": 3,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/production-144/mejiro_dober/alpha.png",
+      "sourceSha256": "670c2627f8a97d98c9cf981dbb78fb880353d0cd22e46f6d370104e56b31eb9d",
+      "crop": [
+        796,
+        21,
+        954,
+        270
+      ],
+      "destination": [
+        416,
+        10,
+        64,
+        100
+      ]
+    },
+    {
+      "frame": 4,
+      "sourceFrame": 4,
+      "source": "docs/art-source/motions/production-144/mejiro_dober/alpha.png",
+      "sourceSha256": "670c2627f8a97d98c9cf981dbb78fb880353d0cd22e46f6d370104e56b31eb9d",
+      "crop": [
+        47,
+        290,
+        241,
+        530
+      ],
+      "destination": [
+        25,
+        141,
+        78,
+        97
+      ]
+    },
+    {
+      "frame": 5,
+      "sourceFrame": 5,
+      "source": "docs/art-source/motions/production-144/mejiro_dober/alpha.png",
+      "sourceSha256": "670c2627f8a97d98c9cf981dbb78fb880353d0cd22e46f6d370104e56b31eb9d",
+      "crop": [
+        300,
+        291,
+        490,
+        530
+      ],
+      "destination": [
+        153,
+        142,
+        77,
+        96
+      ]
+    },
+    {
+      "frame": 6,
+      "sourceFrame": 6,
+      "source": "docs/art-source/motions/production-144/mejiro_dober/alpha.png",
+      "sourceSha256": "670c2627f8a97d98c9cf981dbb78fb880353d0cd22e46f6d370104e56b31eb9d",
+      "crop": [
+        538,
+        290,
+        735,
+        530
+      ],
+      "destination": [
+        280,
+        141,
+        79,
+        97
+      ]
+    },
+    {
+      "frame": 7,
+      "sourceFrame": 7,
+      "source": "docs/art-source/motions/production-144/mejiro_dober/alpha.png",
+      "sourceSha256": "670c2627f8a97d98c9cf981dbb78fb880353d0cd22e46f6d370104e56b31eb9d",
+      "crop": [
+        785,
+        292,
+        985,
+        530
+      ],
+      "destination": [
+        407,
+        142,
+        81,
+        96
+      ]
+    },
+    {
+      "frame": 8,
+      "sourceFrame": 8,
+      "source": "docs/art-source/motions/production-144/mejiro_dober/alpha.png",
+      "sourceSha256": "670c2627f8a97d98c9cf981dbb78fb880353d0cd22e46f6d370104e56b31eb9d",
+      "crop": [
+        49,
+        536,
+        243,
+        784
+      ],
+      "destination": [
+        25,
+        266,
+        78,
+        100
+      ]
+    },
+    {
+      "frame": 9,
+      "sourceFrame": 9,
+      "source": "docs/art-source/motions/production-144/mejiro_dober/alpha.png",
+      "sourceSha256": "670c2627f8a97d98c9cf981dbb78fb880353d0cd22e46f6d370104e56b31eb9d",
+      "crop": [
+        299,
+        540,
+        482,
+        784
+      ],
+      "destination": [
+        155,
+        268,
+        74,
+        98
+      ]
+    },
+    {
+      "frame": 10,
+      "sourceFrame": 10,
+      "source": "docs/art-source/motions/production-144/mejiro_dober/alpha.png",
+      "sourceSha256": "670c2627f8a97d98c9cf981dbb78fb880353d0cd22e46f6d370104e56b31eb9d",
+      "crop": [
+        538,
+        536,
+        740,
+        784
+      ],
+      "destination": [
+        279,
+        266,
+        81,
+        100
+      ]
+    },
+    {
+      "frame": 11,
+      "sourceFrame": 11,
+      "source": "docs/art-source/motions/production-144/mejiro_dober/alpha.png",
+      "sourceSha256": "670c2627f8a97d98c9cf981dbb78fb880353d0cd22e46f6d370104e56b31eb9d",
+      "crop": [
+        795,
+        539,
+        954,
+        784
+      ],
+      "destination": [
+        416,
+        267,
+        64,
+        99
+      ]
+    },
+    {
+      "frame": 12,
+      "sourceFrame": 12,
+      "source": "docs/art-source/motions/production-144/mejiro_dober/alpha.png",
+      "sourceSha256": "670c2627f8a97d98c9cf981dbb78fb880353d0cd22e46f6d370104e56b31eb9d",
+      "crop": [
+        61,
+        814,
+        228,
+        998
+      ],
+      "destination": [
+        30,
+        420,
+        67,
+        74
+      ]
+    },
+    {
+      "frame": 13,
+      "sourceFrame": 13,
+      "source": "docs/art-source/motions/production-144/mejiro_dober/alpha.png",
+      "sourceSha256": "670c2627f8a97d98c9cf981dbb78fb880353d0cd22e46f6d370104e56b31eb9d",
+      "crop": [
+        298,
+        790,
+        514,
+        984
+      ],
+      "destination": [
+        148,
+        416,
+        87,
+        78
+      ]
+    },
+    {
+      "frame": 14,
+      "sourceFrame": 14,
+      "source": "docs/art-source/motions/production-144/mejiro_dober/alpha.png",
+      "sourceSha256": "670c2627f8a97d98c9cf981dbb78fb880353d0cd22e46f6d370104e56b31eb9d",
+      "crop": [
+        536,
+        836,
+        768,
+        979
+      ],
+      "destination": [
+        273,
+        436,
+        94,
+        58
+      ]
+    },
+    {
+      "frame": 15,
+      "sourceFrame": 15,
+      "source": "docs/art-source/motions/production-144/mejiro_dober/alpha.png",
+      "sourceSha256": "670c2627f8a97d98c9cf981dbb78fb880353d0cd22e46f6d370104e56b31eb9d",
+      "crop": [
+        802,
+        807,
+        979,
+        989
+      ],
+      "destination": [
+        412,
+        421,
+        71,
+        73
+      ]
+    },
+    {
+      "frame": 16,
+      "sourceFrame": 16,
+      "source": "docs/art-source/motions/production-144/mejiro_dober/alpha.png",
+      "sourceSha256": "670c2627f8a97d98c9cf981dbb78fb880353d0cd22e46f6d370104e56b31eb9d",
+      "crop": [
+        57,
+        1007,
+        217,
+        1227
+      ],
+      "destination": [
+        32,
+        533,
+        64,
+        89
+      ]
+    },
+    {
+      "frame": 17,
+      "sourceFrame": 17,
+      "source": "docs/art-source/motions/production-144/mejiro_dober/alpha.png",
+      "sourceSha256": "670c2627f8a97d98c9cf981dbb78fb880353d0cd22e46f6d370104e56b31eb9d",
+      "crop": [
+        308,
+        1031,
+        466,
+        1225
+      ],
+      "destination": [
+        160,
+        544,
+        64,
+        78
+      ]
+    },
+    {
+      "frame": 18,
+      "sourceFrame": 18,
+      "source": "docs/art-source/motions/production-144/mejiro_dober/alpha.png",
+      "sourceSha256": "670c2627f8a97d98c9cf981dbb78fb880353d0cd22e46f6d370104e56b31eb9d",
+      "crop": [
+        554,
+        1051,
+        732,
+        1225
+      ],
+      "destination": [
+        284,
+        552,
+        72,
+        70
+      ]
+    },
+    {
+      "frame": 19,
+      "sourceFrame": 19,
+      "source": "docs/art-source/motions/production-144/mejiro_dober/alpha.png",
+      "sourceSha256": "670c2627f8a97d98c9cf981dbb78fb880353d0cd22e46f6d370104e56b31eb9d",
+      "crop": [
+        772,
+        1113,
+        1019,
+        1223
+      ],
+      "destination": [
+        398,
+        578,
+        100,
+        44
+      ]
+    },
+    {
+      "frame": 20,
+      "sourceFrame": 20,
+      "source": "docs/art-source/motions/production-144/mejiro_dober/alpha.png",
+      "sourceSha256": "670c2627f8a97d98c9cf981dbb78fb880353d0cd22e46f6d370104e56b31eb9d",
+      "crop": [
+        55,
+        1243,
+        223,
+        1498
+      ],
+      "destination": [
+        30,
+        647,
+        68,
+        103
+      ]
+    },
+    {
+      "frame": 21,
+      "sourceFrame": 21,
+      "source": "docs/art-source/motions/production-144/mejiro_dober/alpha.png",
+      "sourceSha256": "670c2627f8a97d98c9cf981dbb78fb880353d0cd22e46f6d370104e56b31eb9d",
+      "crop": [
+        305,
+        1248,
+        458,
+        1497
+      ],
+      "destination": [
+        161,
+        650,
+        62,
+        100
+      ]
+    },
+    {
+      "frame": 22,
+      "sourceFrame": 22,
+      "source": "docs/art-source/motions/production-144/mejiro_dober/alpha.png",
+      "sourceSha256": "670c2627f8a97d98c9cf981dbb78fb880353d0cd22e46f6d370104e56b31eb9d",
+      "crop": [
+        545,
+        1243,
+        705,
+        1501
+      ],
+      "destination": [
+        288,
+        646,
+        64,
+        104
+      ]
+    },
+    {
+      "frame": 23,
+      "sourceFrame": 23,
+      "source": "docs/art-source/motions/production-144/mejiro_dober/alpha.png",
+      "sourceSha256": "670c2627f8a97d98c9cf981dbb78fb880353d0cd22e46f6d370104e56b31eb9d",
+      "crop": [
+        801,
+        1250,
+        961,
+        1499
+      ],
+      "destination": [
+        416,
+        650,
+        64,
+        100
+      ]
+    }
+  ]
+}

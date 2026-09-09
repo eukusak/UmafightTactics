@@ -1,0 +1,443 @@
+{
+  "format": "uft-baked-frames-v1",
+  "scale": 0.44635193133047213,
+  "anchor": [
+    64,
+    110
+  ],
+  "runtimeSha256": "974acc4ff5c0488b74702eb805bba361f54bbbeedfd7caf6790a3503b43621f1",
+  "frames": [
+    {
+      "frame": 0,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/production-144/sakura_chiyono_o/alpha.png",
+      "sourceSha256": "26c3593b51c71d7edfa9bcf621a8123780749fa72ad743051bf11de60b3b15b2",
+      "crop": [
+        66,
+        34,
+        203,
+        260
+      ],
+      "destination": [
+        33,
+        9,
+        61,
+        101
+      ]
+    },
+    {
+      "frame": 1,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/production-144/sakura_chiyono_o/alpha.png",
+      "sourceSha256": "26c3593b51c71d7edfa9bcf621a8123780749fa72ad743051bf11de60b3b15b2",
+      "crop": [
+        314,
+        32,
+        463,
+        260
+      ],
+      "destination": [
+        158,
+        8,
+        67,
+        102
+      ]
+    },
+    {
+      "frame": 2,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/production-144/sakura_chiyono_o/alpha.png",
+      "sourceSha256": "26c3593b51c71d7edfa9bcf621a8123780749fa72ad743051bf11de60b3b15b2",
+      "crop": [
+        568,
+        33,
+        717,
+        260
+      ],
+      "destination": [
+        286,
+        9,
+        67,
+        101
+      ]
+    },
+    {
+      "frame": 3,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/production-144/sakura_chiyono_o/alpha.png",
+      "sourceSha256": "26c3593b51c71d7edfa9bcf621a8123780749fa72ad743051bf11de60b3b15b2",
+      "crop": [
+        817,
+        33,
+        961,
+        260
+      ],
+      "destination": [
+        416,
+        9,
+        64,
+        101
+      ]
+    },
+    {
+      "frame": 4,
+      "sourceFrame": 4,
+      "source": "docs/art-source/motions/production-144/sakura_chiyono_o/alpha.png",
+      "sourceSha256": "26c3593b51c71d7edfa9bcf621a8123780749fa72ad743051bf11de60b3b15b2",
+      "crop": [
+        38,
+        284,
+        222,
+        515
+      ],
+      "destination": [
+        23,
+        135,
+        82,
+        103
+      ]
+    },
+    {
+      "frame": 5,
+      "sourceFrame": 5,
+      "source": "docs/art-source/motions/production-144/sakura_chiyono_o/alpha.png",
+      "sourceSha256": "26c3593b51c71d7edfa9bcf621a8123780749fa72ad743051bf11de60b3b15b2",
+      "crop": [
+        292,
+        282,
+        475,
+        515
+      ],
+      "destination": [
+        151,
+        134,
+        82,
+        104
+      ]
+    },
+    {
+      "frame": 6,
+      "sourceFrame": 6,
+      "source": "docs/art-source/motions/production-144/sakura_chiyono_o/alpha.png",
+      "sourceSha256": "26c3593b51c71d7edfa9bcf621a8123780749fa72ad743051bf11de60b3b15b2",
+      "crop": [
+        538,
+        284,
+        728,
+        515
+      ],
+      "destination": [
+        277,
+        135,
+        85,
+        103
+      ]
+    },
+    {
+      "frame": 7,
+      "sourceFrame": 7,
+      "source": "docs/art-source/motions/production-144/sakura_chiyono_o/alpha.png",
+      "sourceSha256": "26c3593b51c71d7edfa9bcf621a8123780749fa72ad743051bf11de60b3b15b2",
+      "crop": [
+        800,
+        286,
+        979,
+        515
+      ],
+      "destination": [
+        408,
+        136,
+        80,
+        102
+      ]
+    },
+    {
+      "frame": 8,
+      "sourceFrame": 8,
+      "source": "docs/art-source/motions/production-144/sakura_chiyono_o/alpha.png",
+      "sourceSha256": "26c3593b51c71d7edfa9bcf621a8123780749fa72ad743051bf11de60b3b15b2",
+      "crop": [
+        51,
+        543,
+        208,
+        775
+      ],
+      "destination": [
+        29,
+        262,
+        70,
+        104
+      ]
+    },
+    {
+      "frame": 9,
+      "sourceFrame": 9,
+      "source": "docs/art-source/motions/production-144/sakura_chiyono_o/alpha.png",
+      "sourceSha256": "26c3593b51c71d7edfa9bcf621a8123780749fa72ad743051bf11de60b3b15b2",
+      "crop": [
+        296,
+        546,
+        472,
+        775
+      ],
+      "destination": [
+        152,
+        264,
+        79,
+        102
+      ]
+    },
+    {
+      "frame": 10,
+      "sourceFrame": 10,
+      "source": "docs/art-source/motions/production-144/sakura_chiyono_o/alpha.png",
+      "sourceSha256": "26c3593b51c71d7edfa9bcf621a8123780749fa72ad743051bf11de60b3b15b2",
+      "crop": [
+        543,
+        545,
+        745,
+        775
+      ],
+      "destination": [
+        275,
+        263,
+        90,
+        103
+      ]
+    },
+    {
+      "frame": 11,
+      "sourceFrame": 11,
+      "source": "docs/art-source/motions/production-144/sakura_chiyono_o/alpha.png",
+      "sourceSha256": "26c3593b51c71d7edfa9bcf621a8123780749fa72ad743051bf11de60b3b15b2",
+      "crop": [
+        812,
+        543,
+        972,
+        775
+      ],
+      "destination": [
+        412,
+        262,
+        71,
+        104
+      ]
+    },
+    {
+      "frame": 12,
+      "sourceFrame": 12,
+      "source": "docs/art-source/motions/production-144/sakura_chiyono_o/alpha.png",
+      "sourceSha256": "26c3593b51c71d7edfa9bcf621a8123780749fa72ad743051bf11de60b3b15b2",
+      "crop": [
+        37,
+        819,
+        241,
+        994
+      ],
+      "destination": [
+        18,
+        416,
+        91,
+        78
+      ]
+    },
+    {
+      "frame": 13,
+      "sourceFrame": 13,
+      "source": "docs/art-source/motions/production-144/sakura_chiyono_o/alpha.png",
+      "sourceSha256": "26c3593b51c71d7edfa9bcf621a8123780749fa72ad743051bf11de60b3b15b2",
+      "crop": [
+        293,
+        813,
+        491,
+        1001
+      ],
+      "destination": [
+        148,
+        410,
+        88,
+        84
+      ]
+    },
+    {
+      "frame": 14,
+      "sourceFrame": 14,
+      "source": "docs/art-source/motions/production-144/sakura_chiyono_o/alpha.png",
+      "sourceSha256": "26c3593b51c71d7edfa9bcf621a8123780749fa72ad743051bf11de60b3b15b2",
+      "crop": [
+        530,
+        849,
+        756,
+        994
+      ],
+      "destination": [
+        269,
+        429,
+        101,
+        65
+      ]
+    },
+    {
+      "frame": 15,
+      "sourceFrame": 15,
+      "source": "docs/art-source/motions/production-144/sakura_chiyono_o/alpha.png",
+      "sourceSha256": "26c3593b51c71d7edfa9bcf621a8123780749fa72ad743051bf11de60b3b15b2",
+      "crop": [
+        803,
+        813,
+        989,
+        1001
+      ],
+      "destination": [
+        406,
+        410,
+        83,
+        84
+      ]
+    },
+    {
+      "frame": 16,
+      "sourceFrame": 16,
+      "source": "docs/art-source/motions/production-144/sakura_chiyono_o/alpha.png",
+      "sourceSha256": "26c3593b51c71d7edfa9bcf621a8123780749fa72ad743051bf11de60b3b15b2",
+      "crop": [
+        45,
+        1036,
+        208,
+        1254
+      ],
+      "destination": [
+        27,
+        525,
+        73,
+        97
+      ]
+    },
+    {
+      "frame": 17,
+      "sourceFrame": 17,
+      "source": "docs/art-source/motions/production-144/sakura_chiyono_o/alpha.png",
+      "sourceSha256": "26c3593b51c71d7edfa9bcf621a8123780749fa72ad743051bf11de60b3b15b2",
+      "crop": [
+        288,
+        1062,
+        466,
+        1246
+      ],
+      "destination": [
+        152,
+        540,
+        79,
+        82
+      ]
+    },
+    {
+      "frame": 18,
+      "sourceFrame": 18,
+      "source": "docs/art-source/motions/production-144/sakura_chiyono_o/alpha.png",
+      "sourceSha256": "26c3593b51c71d7edfa9bcf621a8123780749fa72ad743051bf11de60b3b15b2",
+      "crop": [
+        537,
+        1069,
+        713,
+        1245
+      ],
+      "destination": [
+        280,
+        543,
+        79,
+        79
+      ]
+    },
+    {
+      "frame": 19,
+      "sourceFrame": 19,
+      "source": "docs/art-source/motions/production-144/sakura_chiyono_o/alpha.png",
+      "sourceSha256": "26c3593b51c71d7edfa9bcf621a8123780749fa72ad743051bf11de60b3b15b2",
+      "crop": [
+        776,
+        1134,
+        1007,
+        1236
+      ],
+      "destination": [
+        396,
+        576,
+        103,
+        46
+      ]
+    },
+    {
+      "frame": 20,
+      "sourceFrame": 20,
+      "source": "docs/art-source/motions/production-144/sakura_chiyono_o/alpha.png",
+      "sourceSha256": "26c3593b51c71d7edfa9bcf621a8123780749fa72ad743051bf11de60b3b15b2",
+      "crop": [
+        54,
+        1284,
+        200,
+        1514
+      ],
+      "destination": [
+        31,
+        647,
+        65,
+        103
+      ]
+    },
+    {
+      "frame": 21,
+      "sourceFrame": 21,
+      "source": "docs/art-source/motions/production-144/sakura_chiyono_o/alpha.png",
+      "sourceSha256": "26c3593b51c71d7edfa9bcf621a8123780749fa72ad743051bf11de60b3b15b2",
+      "crop": [
+        311,
+        1281,
+        470,
+        1513
+      ],
+      "destination": [
+        156,
+        646,
+        71,
+        104
+      ]
+    },
+    {
+      "frame": 22,
+      "sourceFrame": 22,
+      "source": "docs/art-source/motions/production-144/sakura_chiyono_o/alpha.png",
+      "sourceSha256": "26c3593b51c71d7edfa9bcf621a8123780749fa72ad743051bf11de60b3b15b2",
+      "crop": [
+        543,
+        1282,
+        717,
+        1514
+      ],
+      "destination": [
+        281,
+        646,
+        78,
+        104
+      ]
+    },
+    {
+      "frame": 23,
+      "sourceFrame": 23,
+      "source": "docs/art-source/motions/production-144/sakura_chiyono_o/alpha.png",
+      "sourceSha256": "26c3593b51c71d7edfa9bcf621a8123780749fa72ad743051bf11de60b3b15b2",
+      "crop": [
+        815,
+        1282,
+        966,
+        1513
+      ],
+      "destination": [
+        414,
+        647,
+        67,
+        103
+      ]
+    }
+  ]
+}

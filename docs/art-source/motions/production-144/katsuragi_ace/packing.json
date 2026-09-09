@@ -1,0 +1,443 @@
+{
+  "format": "uft-baked-frames-v1",
+  "scale": 0.40784313725490196,
+  "anchor": [
+    64,
+    110
+  ],
+  "runtimeSha256": "156db7453a66a096605afcd9918d09cac468229f3405de7e25fc6e4960271adc",
+  "frames": [
+    {
+      "frame": 0,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/production-144/katsuragi_ace/alpha.png",
+      "sourceSha256": "415d92f55f067dd191f1f67c2a7e81126a5fca8a8b387f43e24bcfd3dfcbc60d",
+      "crop": [
+        45,
+        16,
+        211,
+        260
+      ],
+      "destination": [
+        30,
+        10,
+        68,
+        100
+      ]
+    },
+    {
+      "frame": 1,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/production-144/katsuragi_ace/alpha.png",
+      "sourceSha256": "415d92f55f067dd191f1f67c2a7e81126a5fca8a8b387f43e24bcfd3dfcbc60d",
+      "crop": [
+        308,
+        15,
+        474,
+        260
+      ],
+      "destination": [
+        158,
+        10,
+        68,
+        100
+      ]
+    },
+    {
+      "frame": 2,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/production-144/katsuragi_ace/alpha.png",
+      "sourceSha256": "415d92f55f067dd191f1f67c2a7e81126a5fca8a8b387f43e24bcfd3dfcbc60d",
+      "crop": [
+        559,
+        16,
+        719,
+        260
+      ],
+      "destination": [
+        287,
+        10,
+        65,
+        100
+      ]
+    },
+    {
+      "frame": 3,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/production-144/katsuragi_ace/alpha.png",
+      "sourceSha256": "415d92f55f067dd191f1f67c2a7e81126a5fca8a8b387f43e24bcfd3dfcbc60d",
+      "crop": [
+        813,
+        15,
+        977,
+        260
+      ],
+      "destination": [
+        414,
+        10,
+        67,
+        100
+      ]
+    },
+    {
+      "frame": 4,
+      "sourceFrame": 4,
+      "source": "docs/art-source/motions/production-144/katsuragi_ace/alpha.png",
+      "sourceSha256": "415d92f55f067dd191f1f67c2a7e81126a5fca8a8b387f43e24bcfd3dfcbc60d",
+      "crop": [
+        39,
+        282,
+        225,
+        518
+      ],
+      "destination": [
+        26,
+        142,
+        76,
+        96
+      ]
+    },
+    {
+      "frame": 5,
+      "sourceFrame": 5,
+      "source": "docs/art-source/motions/production-144/katsuragi_ace/alpha.png",
+      "sourceSha256": "415d92f55f067dd191f1f67c2a7e81126a5fca8a8b387f43e24bcfd3dfcbc60d",
+      "crop": [
+        288,
+        287,
+        489,
+        518
+      ],
+      "destination": [
+        151,
+        144,
+        82,
+        94
+      ]
+    },
+    {
+      "frame": 6,
+      "sourceFrame": 6,
+      "source": "docs/art-source/motions/production-144/katsuragi_ace/alpha.png",
+      "sourceSha256": "415d92f55f067dd191f1f67c2a7e81126a5fca8a8b387f43e24bcfd3dfcbc60d",
+      "crop": [
+        558,
+        286,
+        746,
+        518
+      ],
+      "destination": [
+        281,
+        143,
+        77,
+        95
+      ]
+    },
+    {
+      "frame": 7,
+      "sourceFrame": 7,
+      "source": "docs/art-source/motions/production-144/katsuragi_ace/alpha.png",
+      "sourceSha256": "415d92f55f067dd191f1f67c2a7e81126a5fca8a8b387f43e24bcfd3dfcbc60d",
+      "crop": [
+        811,
+        287,
+        995,
+        518
+      ],
+      "destination": [
+        410,
+        144,
+        75,
+        94
+      ]
+    },
+    {
+      "frame": 8,
+      "sourceFrame": 8,
+      "source": "docs/art-source/motions/production-144/katsuragi_ace/alpha.png",
+      "sourceSha256": "415d92f55f067dd191f1f67c2a7e81126a5fca8a8b387f43e24bcfd3dfcbc60d",
+      "crop": [
+        30,
+        527,
+        198,
+        770
+      ],
+      "destination": [
+        29,
+        267,
+        69,
+        99
+      ]
+    },
+    {
+      "frame": 9,
+      "sourceFrame": 9,
+      "source": "docs/art-source/motions/production-144/katsuragi_ace/alpha.png",
+      "sourceSha256": "415d92f55f067dd191f1f67c2a7e81126a5fca8a8b387f43e24bcfd3dfcbc60d",
+      "crop": [
+        304,
+        527,
+        483,
+        770
+      ],
+      "destination": [
+        155,
+        267,
+        73,
+        99
+      ]
+    },
+    {
+      "frame": 10,
+      "sourceFrame": 10,
+      "source": "docs/art-source/motions/production-144/katsuragi_ace/alpha.png",
+      "sourceSha256": "415d92f55f067dd191f1f67c2a7e81126a5fca8a8b387f43e24bcfd3dfcbc60d",
+      "crop": [
+        547,
+        530,
+        754,
+        770
+      ],
+      "destination": [
+        278,
+        268,
+        84,
+        98
+      ]
+    },
+    {
+      "frame": 11,
+      "sourceFrame": 11,
+      "source": "docs/art-source/motions/production-144/katsuragi_ace/alpha.png",
+      "sourceSha256": "415d92f55f067dd191f1f67c2a7e81126a5fca8a8b387f43e24bcfd3dfcbc60d",
+      "crop": [
+        806,
+        533,
+        983,
+        770
+      ],
+      "destination": [
+        412,
+        269,
+        72,
+        97
+      ]
+    },
+    {
+      "frame": 12,
+      "sourceFrame": 12,
+      "source": "docs/art-source/motions/production-144/katsuragi_ace/alpha.png",
+      "sourceSha256": "415d92f55f067dd191f1f67c2a7e81126a5fca8a8b387f43e24bcfd3dfcbc60d",
+      "crop": [
+        34,
+        786,
+        234,
+        1041
+      ],
+      "destination": [
+        23,
+        390,
+        82,
+        104
+      ]
+    },
+    {
+      "frame": 13,
+      "sourceFrame": 13,
+      "source": "docs/art-source/motions/production-144/katsuragi_ace/alpha.png",
+      "sourceSha256": "415d92f55f067dd191f1f67c2a7e81126a5fca8a8b387f43e24bcfd3dfcbc60d",
+      "crop": [
+        293,
+        786,
+        466,
+        1041
+      ],
+      "destination": [
+        156,
+        390,
+        71,
+        104
+      ]
+    },
+    {
+      "frame": 14,
+      "sourceFrame": 14,
+      "source": "docs/art-source/motions/production-144/katsuragi_ace/alpha.png",
+      "sourceSha256": "415d92f55f067dd191f1f67c2a7e81126a5fca8a8b387f43e24bcfd3dfcbc60d",
+      "crop": [
+        541,
+        794,
+        741,
+        1041
+      ],
+      "destination": [
+        279,
+        393,
+        82,
+        101
+      ]
+    },
+    {
+      "frame": 15,
+      "sourceFrame": 15,
+      "source": "docs/art-source/motions/production-144/katsuragi_ace/alpha.png",
+      "sourceSha256": "415d92f55f067dd191f1f67c2a7e81126a5fca8a8b387f43e24bcfd3dfcbc60d",
+      "crop": [
+        809,
+        791,
+        985,
+        1041
+      ],
+      "destination": [
+        412,
+        392,
+        72,
+        102
+      ]
+    },
+    {
+      "frame": 16,
+      "sourceFrame": 16,
+      "source": "docs/art-source/motions/production-144/katsuragi_ace/alpha.png",
+      "sourceSha256": "415d92f55f067dd191f1f67c2a7e81126a5fca8a8b387f43e24bcfd3dfcbc60d",
+      "crop": [
+        35,
+        1070,
+        225,
+        1280
+      ],
+      "destination": [
+        25,
+        536,
+        77,
+        86
+      ]
+    },
+    {
+      "frame": 17,
+      "sourceFrame": 17,
+      "source": "docs/art-source/motions/production-144/katsuragi_ace/alpha.png",
+      "sourceSha256": "415d92f55f067dd191f1f67c2a7e81126a5fca8a8b387f43e24bcfd3dfcbc60d",
+      "crop": [
+        291,
+        1094,
+        480,
+        1277
+      ],
+      "destination": [
+        153,
+        547,
+        77,
+        75
+      ]
+    },
+    {
+      "frame": 18,
+      "sourceFrame": 18,
+      "source": "docs/art-source/motions/production-144/katsuragi_ace/alpha.png",
+      "sourceSha256": "415d92f55f067dd191f1f67c2a7e81126a5fca8a8b387f43e24bcfd3dfcbc60d",
+      "crop": [
+        540,
+        1107,
+        728,
+        1280
+      ],
+      "destination": [
+        281,
+        551,
+        77,
+        71
+      ]
+    },
+    {
+      "frame": 19,
+      "sourceFrame": 19,
+      "source": "docs/art-source/motions/production-144/katsuragi_ace/alpha.png",
+      "sourceSha256": "415d92f55f067dd191f1f67c2a7e81126a5fca8a8b387f43e24bcfd3dfcbc60d",
+      "crop": [
+        775,
+        1173,
+        1002,
+        1277
+      ],
+      "destination": [
+        401,
+        580,
+        93,
+        42
+      ]
+    },
+    {
+      "frame": 20,
+      "sourceFrame": 20,
+      "source": "docs/art-source/motions/production-144/katsuragi_ace/alpha.png",
+      "sourceSha256": "415d92f55f067dd191f1f67c2a7e81126a5fca8a8b387f43e24bcfd3dfcbc60d",
+      "crop": [
+        34,
+        1291,
+        203,
+        1531
+      ],
+      "destination": [
+        29,
+        652,
+        69,
+        98
+      ]
+    },
+    {
+      "frame": 21,
+      "sourceFrame": 21,
+      "source": "docs/art-source/motions/production-144/katsuragi_ace/alpha.png",
+      "sourceSha256": "415d92f55f067dd191f1f67c2a7e81126a5fca8a8b387f43e24bcfd3dfcbc60d",
+      "crop": [
+        302,
+        1287,
+        464,
+        1529
+      ],
+      "destination": [
+        159,
+        651,
+        66,
+        99
+      ]
+    },
+    {
+      "frame": 22,
+      "sourceFrame": 22,
+      "source": "docs/art-source/motions/production-144/katsuragi_ace/alpha.png",
+      "sourceSha256": "415d92f55f067dd191f1f67c2a7e81126a5fca8a8b387f43e24bcfd3dfcbc60d",
+      "crop": [
+        545,
+        1291,
+        722,
+        1521
+      ],
+      "destination": [
+        284,
+        656,
+        72,
+        94
+      ]
+    },
+    {
+      "frame": 23,
+      "sourceFrame": 23,
+      "source": "docs/art-source/motions/production-144/katsuragi_ace/alpha.png",
+      "sourceSha256": "415d92f55f067dd191f1f67c2a7e81126a5fca8a8b387f43e24bcfd3dfcbc60d",
+      "crop": [
+        800,
+        1295,
+        972,
+        1533
+      ],
+      "destination": [
+        413,
+        653,
+        70,
+        97
+      ]
+    }
+  ]
+}

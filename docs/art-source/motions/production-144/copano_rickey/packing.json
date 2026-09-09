@@ -1,0 +1,443 @@
+{
+  "format": "uft-baked-frames-v1",
+  "scale": 0.4406779661016949,
+  "anchor": [
+    64,
+    110
+  ],
+  "runtimeSha256": "3c7942f8f8bae119e937a76a5d655322f19e9c8bbd5fa1abaeed378509b733f0",
+  "frames": [
+    {
+      "frame": 0,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/production-144/copano_rickey/alpha.png",
+      "sourceSha256": "b4f8a9b2f8da6d5320826104557abb4d8685822440bbda4ddd5866a96cae0f50",
+      "crop": [
+        47,
+        25,
+        201,
+        261
+      ],
+      "destination": [
+        30,
+        6,
+        68,
+        104
+      ]
+    },
+    {
+      "frame": 1,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/production-144/copano_rickey/alpha.png",
+      "sourceSha256": "b4f8a9b2f8da6d5320826104557abb4d8685822440bbda4ddd5866a96cae0f50",
+      "crop": [
+        292,
+        28,
+        450,
+        261
+      ],
+      "destination": [
+        157,
+        7,
+        70,
+        103
+      ]
+    },
+    {
+      "frame": 2,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/production-144/copano_rickey/alpha.png",
+      "sourceSha256": "b4f8a9b2f8da6d5320826104557abb4d8685822440bbda4ddd5866a96cae0f50",
+      "crop": [
+        547,
+        25,
+        708,
+        261
+      ],
+      "destination": [
+        284,
+        6,
+        71,
+        104
+      ]
+    },
+    {
+      "frame": 3,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/production-144/copano_rickey/alpha.png",
+      "sourceSha256": "b4f8a9b2f8da6d5320826104557abb4d8685822440bbda4ddd5866a96cae0f50",
+      "crop": [
+        813,
+        28,
+        965,
+        261
+      ],
+      "destination": [
+        414,
+        7,
+        67,
+        103
+      ]
+    },
+    {
+      "frame": 4,
+      "sourceFrame": 4,
+      "source": "docs/art-source/motions/production-144/copano_rickey/alpha.png",
+      "sourceSha256": "b4f8a9b2f8da6d5320826104557abb4d8685822440bbda4ddd5866a96cae0f50",
+      "crop": [
+        18,
+        285,
+        216,
+        519
+      ],
+      "destination": [
+        20,
+        135,
+        87,
+        103
+      ]
+    },
+    {
+      "frame": 5,
+      "sourceFrame": 5,
+      "source": "docs/art-source/motions/production-144/copano_rickey/alpha.png",
+      "sourceSha256": "b4f8a9b2f8da6d5320826104557abb4d8685822440bbda4ddd5866a96cae0f50",
+      "crop": [
+        281,
+        282,
+        486,
+        517
+      ],
+      "destination": [
+        147,
+        134,
+        90,
+        104
+      ]
+    },
+    {
+      "frame": 6,
+      "sourceFrame": 6,
+      "source": "docs/art-source/motions/production-144/copano_rickey/alpha.png",
+      "sourceSha256": "b4f8a9b2f8da6d5320826104557abb4d8685822440bbda4ddd5866a96cae0f50",
+      "crop": [
+        534,
+        286,
+        732,
+        519
+      ],
+      "destination": [
+        276,
+        135,
+        87,
+        103
+      ]
+    },
+    {
+      "frame": 7,
+      "sourceFrame": 7,
+      "source": "docs/art-source/motions/production-144/copano_rickey/alpha.png",
+      "sourceSha256": "b4f8a9b2f8da6d5320826104557abb4d8685822440bbda4ddd5866a96cae0f50",
+      "crop": [
+        803,
+        289,
+        990,
+        519
+      ],
+      "destination": [
+        407,
+        137,
+        82,
+        101
+      ]
+    },
+    {
+      "frame": 8,
+      "sourceFrame": 8,
+      "source": "docs/art-source/motions/production-144/copano_rickey/alpha.png",
+      "sourceSha256": "b4f8a9b2f8da6d5320826104557abb4d8685822440bbda4ddd5866a96cae0f50",
+      "crop": [
+        34,
+        534,
+        248,
+        770
+      ],
+      "destination": [
+        17,
+        262,
+        94,
+        104
+      ]
+    },
+    {
+      "frame": 9,
+      "sourceFrame": 9,
+      "source": "docs/art-source/motions/production-144/copano_rickey/alpha.png",
+      "sourceSha256": "b4f8a9b2f8da6d5320826104557abb4d8685822440bbda4ddd5866a96cae0f50",
+      "crop": [
+        298,
+        534,
+        467,
+        770
+      ],
+      "destination": [
+        155,
+        262,
+        74,
+        104
+      ]
+    },
+    {
+      "frame": 10,
+      "sourceFrame": 10,
+      "source": "docs/art-source/motions/production-144/copano_rickey/alpha.png",
+      "sourceSha256": "b4f8a9b2f8da6d5320826104557abb4d8685822440bbda4ddd5866a96cae0f50",
+      "crop": [
+        535,
+        535,
+        756,
+        770
+      ],
+      "destination": [
+        271,
+        262,
+        97,
+        104
+      ]
+    },
+    {
+      "frame": 11,
+      "sourceFrame": 11,
+      "source": "docs/art-source/motions/production-144/copano_rickey/alpha.png",
+      "sourceSha256": "b4f8a9b2f8da6d5320826104557abb4d8685822440bbda4ddd5866a96cae0f50",
+      "crop": [
+        811,
+        538,
+        967,
+        770
+      ],
+      "destination": [
+        413,
+        264,
+        69,
+        102
+      ]
+    },
+    {
+      "frame": 12,
+      "sourceFrame": 12,
+      "source": "docs/art-source/motions/production-144/copano_rickey/alpha.png",
+      "sourceSha256": "b4f8a9b2f8da6d5320826104557abb4d8685822440bbda4ddd5866a96cae0f50",
+      "crop": [
+        39,
+        813,
+        235,
+        1003
+      ],
+      "destination": [
+        21,
+        410,
+        86,
+        84
+      ]
+    },
+    {
+      "frame": 13,
+      "sourceFrame": 13,
+      "source": "docs/art-source/motions/production-144/copano_rickey/alpha.png",
+      "sourceSha256": "b4f8a9b2f8da6d5320826104557abb4d8685822440bbda4ddd5866a96cae0f50",
+      "crop": [
+        277,
+        798,
+        498,
+        988
+      ],
+      "destination": [
+        143,
+        410,
+        97,
+        84
+      ]
+    },
+    {
+      "frame": 14,
+      "sourceFrame": 14,
+      "source": "docs/art-source/motions/production-144/copano_rickey/alpha.png",
+      "sourceSha256": "b4f8a9b2f8da6d5320826104557abb4d8685822440bbda4ddd5866a96cae0f50",
+      "crop": [
+        525,
+        837,
+        769,
+        994
+      ],
+      "destination": [
+        266,
+        425,
+        108,
+        69
+      ]
+    },
+    {
+      "frame": 15,
+      "sourceFrame": 15,
+      "source": "docs/art-source/motions/production-144/copano_rickey/alpha.png",
+      "sourceSha256": "b4f8a9b2f8da6d5320826104557abb4d8685822440bbda4ddd5866a96cae0f50",
+      "crop": [
+        810,
+        811,
+        995,
+        1004
+      ],
+      "destination": [
+        407,
+        409,
+        82,
+        85
+      ]
+    },
+    {
+      "frame": 16,
+      "sourceFrame": 16,
+      "source": "docs/art-source/motions/production-144/copano_rickey/alpha.png",
+      "sourceSha256": "b4f8a9b2f8da6d5320826104557abb4d8685822440bbda4ddd5866a96cae0f50",
+      "crop": [
+        46,
+        1033,
+        223,
+        1257
+      ],
+      "destination": [
+        25,
+        523,
+        78,
+        99
+      ]
+    },
+    {
+      "frame": 17,
+      "sourceFrame": 17,
+      "source": "docs/art-source/motions/production-144/copano_rickey/alpha.png",
+      "sourceSha256": "b4f8a9b2f8da6d5320826104557abb4d8685822440bbda4ddd5866a96cae0f50",
+      "crop": [
+        301,
+        1051,
+        482,
+        1251
+      ],
+      "destination": [
+        152,
+        534,
+        80,
+        88
+      ]
+    },
+    {
+      "frame": 18,
+      "sourceFrame": 18,
+      "source": "docs/art-source/motions/production-144/copano_rickey/alpha.png",
+      "sourceSha256": "b4f8a9b2f8da6d5320826104557abb4d8685822440bbda4ddd5866a96cae0f50",
+      "crop": [
+        546,
+        1076,
+        721,
+        1254
+      ],
+      "destination": [
+        281,
+        544,
+        77,
+        78
+      ]
+    },
+    {
+      "frame": 19,
+      "sourceFrame": 19,
+      "source": "docs/art-source/motions/production-144/copano_rickey/alpha.png",
+      "sourceSha256": "b4f8a9b2f8da6d5320826104557abb4d8685822440bbda4ddd5866a96cae0f50",
+      "crop": [
+        799,
+        1152,
+        1014,
+        1261
+      ],
+      "destination": [
+        400,
+        574,
+        95,
+        48
+      ]
+    },
+    {
+      "frame": 20,
+      "sourceFrame": 20,
+      "source": "docs/art-source/motions/production-144/copano_rickey/alpha.png",
+      "sourceSha256": "b4f8a9b2f8da6d5320826104557abb4d8685822440bbda4ddd5866a96cae0f50",
+      "crop": [
+        57,
+        1278,
+        197,
+        1510
+      ],
+      "destination": [
+        33,
+        648,
+        62,
+        102
+      ]
+    },
+    {
+      "frame": 21,
+      "sourceFrame": 21,
+      "source": "docs/art-source/motions/production-144/copano_rickey/alpha.png",
+      "sourceSha256": "b4f8a9b2f8da6d5320826104557abb4d8685822440bbda4ddd5866a96cae0f50",
+      "crop": [
+        306,
+        1276,
+        460,
+        1510
+      ],
+      "destination": [
+        158,
+        647,
+        68,
+        103
+      ]
+    },
+    {
+      "frame": 22,
+      "sourceFrame": 22,
+      "source": "docs/art-source/motions/production-144/copano_rickey/alpha.png",
+      "sourceSha256": "b4f8a9b2f8da6d5320826104557abb4d8685822440bbda4ddd5866a96cae0f50",
+      "crop": [
+        563,
+        1276,
+        727,
+        1510
+      ],
+      "destination": [
+        284,
+        647,
+        72,
+        103
+      ]
+    },
+    {
+      "frame": 23,
+      "sourceFrame": 23,
+      "source": "docs/art-source/motions/production-144/copano_rickey/alpha.png",
+      "sourceSha256": "b4f8a9b2f8da6d5320826104557abb4d8685822440bbda4ddd5866a96cae0f50",
+      "crop": [
+        821,
+        1277,
+        964,
+        1511
+      ],
+      "destination": [
+        416,
+        647,
+        63,
+        103
+      ]
+    }
+  ]
+}

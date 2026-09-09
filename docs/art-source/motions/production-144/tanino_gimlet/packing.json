@@ -1,0 +1,443 @@
+{
+  "format": "uft-baked-frames-v1",
+  "scale": 0.43333333333333335,
+  "anchor": [
+    64,
+    110
+  ],
+  "runtimeSha256": "d624b6fa3936e4e3619798a111c1bb6c70862045464c3ef4e9fb8d7f6ef5be9c",
+  "frames": [
+    {
+      "frame": 0,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/production-144/tanino_gimlet/alpha.png",
+      "sourceSha256": "0ab034fbf24e19a8341e349ea7c6a358027010cd6b73950c14639a6c7e5a15c9",
+      "crop": [
+        62,
+        29,
+        217,
+        264
+      ],
+      "destination": [
+        30,
+        8,
+        67,
+        102
+      ]
+    },
+    {
+      "frame": 1,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/production-144/tanino_gimlet/alpha.png",
+      "sourceSha256": "0ab034fbf24e19a8341e349ea7c6a358027010cd6b73950c14639a6c7e5a15c9",
+      "crop": [
+        307,
+        31,
+        459,
+        264
+      ],
+      "destination": [
+        159,
+        9,
+        66,
+        101
+      ]
+    },
+    {
+      "frame": 2,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/production-144/tanino_gimlet/alpha.png",
+      "sourceSha256": "0ab034fbf24e19a8341e349ea7c6a358027010cd6b73950c14639a6c7e5a15c9",
+      "crop": [
+        557,
+        28,
+        706,
+        264
+      ],
+      "destination": [
+        287,
+        8,
+        65,
+        102
+      ]
+    },
+    {
+      "frame": 3,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/production-144/tanino_gimlet/alpha.png",
+      "sourceSha256": "0ab034fbf24e19a8341e349ea7c6a358027010cd6b73950c14639a6c7e5a15c9",
+      "crop": [
+        810,
+        24,
+        962,
+        264
+      ],
+      "destination": [
+        415,
+        6,
+        66,
+        104
+      ]
+    },
+    {
+      "frame": 4,
+      "sourceFrame": 4,
+      "source": "docs/art-source/motions/production-144/tanino_gimlet/alpha.png",
+      "sourceSha256": "0ab034fbf24e19a8341e349ea7c6a358027010cd6b73950c14639a6c7e5a15c9",
+      "crop": [
+        48,
+        292,
+        235,
+        511
+      ],
+      "destination": [
+        23,
+        143,
+        81,
+        95
+      ]
+    },
+    {
+      "frame": 5,
+      "sourceFrame": 5,
+      "source": "docs/art-source/motions/production-144/tanino_gimlet/alpha.png",
+      "sourceSha256": "0ab034fbf24e19a8341e349ea7c6a358027010cd6b73950c14639a6c7e5a15c9",
+      "crop": [
+        299,
+        292,
+        473,
+        509
+      ],
+      "destination": [
+        154,
+        144,
+        75,
+        94
+      ]
+    },
+    {
+      "frame": 6,
+      "sourceFrame": 6,
+      "source": "docs/art-source/motions/production-144/tanino_gimlet/alpha.png",
+      "sourceSha256": "0ab034fbf24e19a8341e349ea7c6a358027010cd6b73950c14639a6c7e5a15c9",
+      "crop": [
+        540,
+        292,
+        715,
+        514
+      ],
+      "destination": [
+        282,
+        142,
+        76,
+        96
+      ]
+    },
+    {
+      "frame": 7,
+      "sourceFrame": 7,
+      "source": "docs/art-source/motions/production-144/tanino_gimlet/alpha.png",
+      "sourceSha256": "0ab034fbf24e19a8341e349ea7c6a358027010cd6b73950c14639a6c7e5a15c9",
+      "crop": [
+        797,
+        292,
+        992,
+        513
+      ],
+      "destination": [
+        406,
+        142,
+        84,
+        96
+      ]
+    },
+    {
+      "frame": 8,
+      "sourceFrame": 8,
+      "source": "docs/art-source/motions/production-144/tanino_gimlet/alpha.png",
+      "sourceSha256": "0ab034fbf24e19a8341e349ea7c6a358027010cd6b73950c14639a6c7e5a15c9",
+      "crop": [
+        66,
+        530,
+        234,
+        768
+      ],
+      "destination": [
+        27,
+        263,
+        73,
+        103
+      ]
+    },
+    {
+      "frame": 9,
+      "sourceFrame": 9,
+      "source": "docs/art-source/motions/production-144/tanino_gimlet/alpha.png",
+      "sourceSha256": "0ab034fbf24e19a8341e349ea7c6a358027010cd6b73950c14639a6c7e5a15c9",
+      "crop": [
+        309,
+        532,
+        472,
+        768
+      ],
+      "destination": [
+        156,
+        264,
+        71,
+        102
+      ]
+    },
+    {
+      "frame": 10,
+      "sourceFrame": 10,
+      "source": "docs/art-source/motions/production-144/tanino_gimlet/alpha.png",
+      "sourceSha256": "0ab034fbf24e19a8341e349ea7c6a358027010cd6b73950c14639a6c7e5a15c9",
+      "crop": [
+        566,
+        528,
+        738,
+        768
+      ],
+      "destination": [
+        282,
+        262,
+        75,
+        104
+      ]
+    },
+    {
+      "frame": 11,
+      "sourceFrame": 11,
+      "source": "docs/art-source/motions/production-144/tanino_gimlet/alpha.png",
+      "sourceSha256": "0ab034fbf24e19a8341e349ea7c6a358027010cd6b73950c14639a6c7e5a15c9",
+      "crop": [
+        820,
+        536,
+        963,
+        768
+      ],
+      "destination": [
+        417,
+        265,
+        62,
+        101
+      ]
+    },
+    {
+      "frame": 12,
+      "sourceFrame": 12,
+      "source": "docs/art-source/motions/production-144/tanino_gimlet/alpha.png",
+      "sourceSha256": "0ab034fbf24e19a8341e349ea7c6a358027010cd6b73950c14639a6c7e5a15c9",
+      "crop": [
+        50,
+        789,
+        247,
+        1029
+      ],
+      "destination": [
+        21,
+        390,
+        85,
+        104
+      ]
+    },
+    {
+      "frame": 13,
+      "sourceFrame": 13,
+      "source": "docs/art-source/motions/production-144/tanino_gimlet/alpha.png",
+      "sourceSha256": "0ab034fbf24e19a8341e349ea7c6a358027010cd6b73950c14639a6c7e5a15c9",
+      "crop": [
+        308,
+        791,
+        474,
+        1029
+      ],
+      "destination": [
+        156,
+        391,
+        72,
+        103
+      ]
+    },
+    {
+      "frame": 14,
+      "sourceFrame": 14,
+      "source": "docs/art-source/motions/production-144/tanino_gimlet/alpha.png",
+      "sourceSha256": "0ab034fbf24e19a8341e349ea7c6a358027010cd6b73950c14639a6c7e5a15c9",
+      "crop": [
+        553,
+        791,
+        729,
+        1029
+      ],
+      "destination": [
+        282,
+        391,
+        76,
+        103
+      ]
+    },
+    {
+      "frame": 15,
+      "sourceFrame": 15,
+      "source": "docs/art-source/motions/production-144/tanino_gimlet/alpha.png",
+      "sourceSha256": "0ab034fbf24e19a8341e349ea7c6a358027010cd6b73950c14639a6c7e5a15c9",
+      "crop": [
+        817,
+        790,
+        964,
+        1029
+      ],
+      "destination": [
+        416,
+        390,
+        64,
+        104
+      ]
+    },
+    {
+      "frame": 16,
+      "sourceFrame": 16,
+      "source": "docs/art-source/motions/production-144/tanino_gimlet/alpha.png",
+      "sourceSha256": "0ab034fbf24e19a8341e349ea7c6a358027010cd6b73950c14639a6c7e5a15c9",
+      "crop": [
+        51,
+        1061,
+        228,
+        1280
+      ],
+      "destination": [
+        25,
+        527,
+        77,
+        95
+      ]
+    },
+    {
+      "frame": 17,
+      "sourceFrame": 17,
+      "source": "docs/art-source/motions/production-144/tanino_gimlet/alpha.png",
+      "sourceSha256": "0ab034fbf24e19a8341e349ea7c6a358027010cd6b73950c14639a6c7e5a15c9",
+      "crop": [
+        293,
+        1085,
+        475,
+        1280
+      ],
+      "destination": [
+        152,
+        538,
+        79,
+        84
+      ]
+    },
+    {
+      "frame": 18,
+      "sourceFrame": 18,
+      "source": "docs/art-source/motions/production-144/tanino_gimlet/alpha.png",
+      "sourceSha256": "0ab034fbf24e19a8341e349ea7c6a358027010cd6b73950c14639a6c7e5a15c9",
+      "crop": [
+        534,
+        1111,
+        699,
+        1280
+      ],
+      "destination": [
+        284,
+        549,
+        72,
+        73
+      ]
+    },
+    {
+      "frame": 19,
+      "sourceFrame": 19,
+      "source": "docs/art-source/motions/production-144/tanino_gimlet/alpha.png",
+      "sourceSha256": "0ab034fbf24e19a8341e349ea7c6a358027010cd6b73950c14639a6c7e5a15c9",
+      "crop": [
+        778,
+        1168,
+        1006,
+        1278
+      ],
+      "destination": [
+        398,
+        574,
+        99,
+        48
+      ]
+    },
+    {
+      "frame": 20,
+      "sourceFrame": 20,
+      "source": "docs/art-source/motions/production-144/tanino_gimlet/alpha.png",
+      "sourceSha256": "0ab034fbf24e19a8341e349ea7c6a358027010cd6b73950c14639a6c7e5a15c9",
+      "crop": [
+        68,
+        1298,
+        214,
+        1530
+      ],
+      "destination": [
+        32,
+        649,
+        63,
+        101
+      ]
+    },
+    {
+      "frame": 21,
+      "sourceFrame": 21,
+      "source": "docs/art-source/motions/production-144/tanino_gimlet/alpha.png",
+      "sourceSha256": "0ab034fbf24e19a8341e349ea7c6a358027010cd6b73950c14639a6c7e5a15c9",
+      "crop": [
+        304,
+        1299,
+        460,
+        1530
+      ],
+      "destination": [
+        158,
+        650,
+        68,
+        100
+      ]
+    },
+    {
+      "frame": 22,
+      "sourceFrame": 22,
+      "source": "docs/art-source/motions/production-144/tanino_gimlet/alpha.png",
+      "sourceSha256": "0ab034fbf24e19a8341e349ea7c6a358027010cd6b73950c14639a6c7e5a15c9",
+      "crop": [
+        561,
+        1294,
+        721,
+        1528
+      ],
+      "destination": [
+        285,
+        649,
+        69,
+        101
+      ]
+    },
+    {
+      "frame": 23,
+      "sourceFrame": 23,
+      "source": "docs/art-source/motions/production-144/tanino_gimlet/alpha.png",
+      "sourceSha256": "0ab034fbf24e19a8341e349ea7c6a358027010cd6b73950c14639a6c7e5a15c9",
+      "crop": [
+        815,
+        1303,
+        967,
+        1528
+      ],
+      "destination": [
+        415,
+        652,
+        66,
+        98
+      ]
+    }
+  ]
+}

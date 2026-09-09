@@ -1,0 +1,443 @@
+{
+  "format": "uft-baked-frames-v1",
+  "scale": 0.4315352697095436,
+  "anchor": [
+    64,
+    110
+  ],
+  "runtimeSha256": "f18a233a1f11034d2d331beb35b26ba855147e593f43b1df0345354b59f43cdb",
+  "frames": [
+    {
+      "frame": 0,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/production-144/sounds_of_earth/alpha.png",
+      "sourceSha256": "31df7171335c823f8eec5756105414a127642c7cea69369a37b736077c891192",
+      "crop": [
+        70,
+        26,
+        193,
+        246
+      ],
+      "destination": [
+        37,
+        15,
+        53,
+        95
+      ]
+    },
+    {
+      "frame": 1,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/production-144/sounds_of_earth/alpha.png",
+      "sourceSha256": "31df7171335c823f8eec5756105414a127642c7cea69369a37b736077c891192",
+      "crop": [
+        325,
+        27,
+        446,
+        246
+      ],
+      "destination": [
+        166,
+        15,
+        52,
+        95
+      ]
+    },
+    {
+      "frame": 2,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/production-144/sounds_of_earth/alpha.png",
+      "sourceSha256": "31df7171335c823f8eec5756105414a127642c7cea69369a37b736077c891192",
+      "crop": [
+        580,
+        27,
+        700,
+        247
+      ],
+      "destination": [
+        294,
+        15,
+        52,
+        95
+      ]
+    },
+    {
+      "frame": 3,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/production-144/sounds_of_earth/alpha.png",
+      "sourceSha256": "31df7171335c823f8eec5756105414a127642c7cea69369a37b736077c891192",
+      "crop": [
+        832,
+        27,
+        952,
+        246
+      ],
+      "destination": [
+        422,
+        15,
+        52,
+        95
+      ]
+    },
+    {
+      "frame": 4,
+      "sourceFrame": 4,
+      "source": "docs/art-source/motions/production-144/sounds_of_earth/alpha.png",
+      "sourceSha256": "31df7171335c823f8eec5756105414a127642c7cea69369a37b736077c891192",
+      "crop": [
+        45,
+        277,
+        204,
+        494
+      ],
+      "destination": [
+        29,
+        144,
+        69,
+        94
+      ]
+    },
+    {
+      "frame": 5,
+      "sourceFrame": 5,
+      "source": "docs/art-source/motions/production-144/sounds_of_earth/alpha.png",
+      "sourceSha256": "31df7171335c823f8eec5756105414a127642c7cea69369a37b736077c891192",
+      "crop": [
+        302,
+        276,
+        465,
+        492
+      ],
+      "destination": [
+        157,
+        145,
+        70,
+        93
+      ]
+    },
+    {
+      "frame": 6,
+      "sourceFrame": 6,
+      "source": "docs/art-source/motions/production-144/sounds_of_earth/alpha.png",
+      "sourceSha256": "31df7171335c823f8eec5756105414a127642c7cea69369a37b736077c891192",
+      "crop": [
+        556,
+        279,
+        723,
+        493
+      ],
+      "destination": [
+        284,
+        146,
+        72,
+        92
+      ]
+    },
+    {
+      "frame": 7,
+      "sourceFrame": 7,
+      "source": "docs/art-source/motions/production-144/sounds_of_earth/alpha.png",
+      "sourceSha256": "31df7171335c823f8eec5756105414a127642c7cea69369a37b736077c891192",
+      "crop": [
+        808,
+        278,
+        972,
+        499
+      ],
+      "destination": [
+        412,
+        143,
+        71,
+        95
+      ]
+    },
+    {
+      "frame": 8,
+      "sourceFrame": 8,
+      "source": "docs/art-source/motions/production-144/sounds_of_earth/alpha.png",
+      "sourceSha256": "31df7171335c823f8eec5756105414a127642c7cea69369a37b736077c891192",
+      "crop": [
+        58,
+        521,
+        221,
+        756
+      ],
+      "destination": [
+        29,
+        265,
+        70,
+        101
+      ]
+    },
+    {
+      "frame": 9,
+      "sourceFrame": 9,
+      "source": "docs/art-source/motions/production-144/sounds_of_earth/alpha.png",
+      "sourceSha256": "31df7171335c823f8eec5756105414a127642c7cea69369a37b736077c891192",
+      "crop": [
+        321,
+        524,
+        453,
+        756
+      ],
+      "destination": [
+        163,
+        266,
+        57,
+        100
+      ]
+    },
+    {
+      "frame": 10,
+      "sourceFrame": 10,
+      "source": "docs/art-source/motions/production-144/sounds_of_earth/alpha.png",
+      "sourceSha256": "31df7171335c823f8eec5756105414a127642c7cea69369a37b736077c891192",
+      "crop": [
+        550,
+        525,
+        745,
+        757
+      ],
+      "destination": [
+        278,
+        266,
+        84,
+        100
+      ]
+    },
+    {
+      "frame": 11,
+      "sourceFrame": 11,
+      "source": "docs/art-source/motions/production-144/sounds_of_earth/alpha.png",
+      "sourceSha256": "31df7171335c823f8eec5756105414a127642c7cea69369a37b736077c891192",
+      "crop": [
+        823,
+        525,
+        959,
+        756
+      ],
+      "destination": [
+        418,
+        266,
+        59,
+        100
+      ]
+    },
+    {
+      "frame": 12,
+      "sourceFrame": 12,
+      "source": "docs/art-source/motions/production-144/sounds_of_earth/alpha.png",
+      "sourceSha256": "31df7171335c823f8eec5756105414a127642c7cea69369a37b736077c891192",
+      "crop": [
+        57,
+        783,
+        197,
+        1021
+      ],
+      "destination": [
+        34,
+        391,
+        60,
+        103
+      ]
+    },
+    {
+      "frame": 13,
+      "sourceFrame": 13,
+      "source": "docs/art-source/motions/production-144/sounds_of_earth/alpha.png",
+      "sourceSha256": "31df7171335c823f8eec5756105414a127642c7cea69369a37b736077c891192",
+      "crop": [
+        320,
+        786,
+        451,
+        1022
+      ],
+      "destination": [
+        163,
+        392,
+        57,
+        102
+      ]
+    },
+    {
+      "frame": 14,
+      "sourceFrame": 14,
+      "source": "docs/art-source/motions/production-144/sounds_of_earth/alpha.png",
+      "sourceSha256": "31df7171335c823f8eec5756105414a127642c7cea69369a37b736077c891192",
+      "crop": [
+        555,
+        788,
+        746,
+        1024
+      ],
+      "destination": [
+        279,
+        392,
+        82,
+        102
+      ]
+    },
+    {
+      "frame": 15,
+      "sourceFrame": 15,
+      "source": "docs/art-source/motions/production-144/sounds_of_earth/alpha.png",
+      "sourceSha256": "31df7171335c823f8eec5756105414a127642c7cea69369a37b736077c891192",
+      "crop": [
+        821,
+        783,
+        955,
+        1024
+      ],
+      "destination": [
+        419,
+        390,
+        58,
+        104
+      ]
+    },
+    {
+      "frame": 16,
+      "sourceFrame": 16,
+      "source": "docs/art-source/motions/production-144/sounds_of_earth/alpha.png",
+      "sourceSha256": "31df7171335c823f8eec5756105414a127642c7cea69369a37b736077c891192",
+      "crop": [
+        43,
+        1052,
+        195,
+        1265
+      ],
+      "destination": [
+        31,
+        530,
+        66,
+        92
+      ]
+    },
+    {
+      "frame": 17,
+      "sourceFrame": 17,
+      "source": "docs/art-source/motions/production-144/sounds_of_earth/alpha.png",
+      "sourceSha256": "31df7171335c823f8eec5756105414a127642c7cea69369a37b736077c891192",
+      "crop": [
+        310,
+        1071,
+        468,
+        1255
+      ],
+      "destination": [
+        158,
+        543,
+        68,
+        79
+      ]
+    },
+    {
+      "frame": 18,
+      "sourceFrame": 18,
+      "source": "docs/art-source/motions/production-144/sounds_of_earth/alpha.png",
+      "sourceSha256": "31df7171335c823f8eec5756105414a127642c7cea69369a37b736077c891192",
+      "crop": [
+        557,
+        1097,
+        719,
+        1258
+      ],
+      "destination": [
+        285,
+        553,
+        70,
+        69
+      ]
+    },
+    {
+      "frame": 19,
+      "sourceFrame": 19,
+      "source": "docs/art-source/motions/production-144/sounds_of_earth/alpha.png",
+      "sourceSha256": "31df7171335c823f8eec5756105414a127642c7cea69369a37b736077c891192",
+      "crop": [
+        779,
+        1164,
+        995,
+        1264
+      ],
+      "destination": [
+        401,
+        579,
+        93,
+        43
+      ]
+    },
+    {
+      "frame": 20,
+      "sourceFrame": 20,
+      "source": "docs/art-source/motions/production-144/sounds_of_earth/alpha.png",
+      "sourceSha256": "31df7171335c823f8eec5756105414a127642c7cea69369a37b736077c891192",
+      "crop": [
+        67,
+        1289,
+        193,
+        1524
+      ],
+      "destination": [
+        37,
+        649,
+        54,
+        101
+      ]
+    },
+    {
+      "frame": 21,
+      "sourceFrame": 21,
+      "source": "docs/art-source/motions/production-144/sounds_of_earth/alpha.png",
+      "sourceSha256": "31df7171335c823f8eec5756105414a127642c7cea69369a37b736077c891192",
+      "crop": [
+        327,
+        1284,
+        457,
+        1524
+      ],
+      "destination": [
+        164,
+        646,
+        56,
+        104
+      ]
+    },
+    {
+      "frame": 22,
+      "sourceFrame": 22,
+      "source": "docs/art-source/motions/production-144/sounds_of_earth/alpha.png",
+      "sourceSha256": "31df7171335c823f8eec5756105414a127642c7cea69369a37b736077c891192",
+      "crop": [
+        570,
+        1289,
+        706,
+        1524
+      ],
+      "destination": [
+        290,
+        649,
+        59,
+        101
+      ]
+    },
+    {
+      "frame": 23,
+      "sourceFrame": 23,
+      "source": "docs/art-source/motions/production-144/sounds_of_earth/alpha.png",
+      "sourceSha256": "31df7171335c823f8eec5756105414a127642c7cea69369a37b736077c891192",
+      "crop": [
+        832,
+        1291,
+        961,
+        1525
+      ],
+      "destination": [
+        420,
+        649,
+        56,
+        101
+      ]
+    }
+  ]
+}

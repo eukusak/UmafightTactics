@@ -1,0 +1,443 @@
+{
+  "format": "uft-baked-frames-v1",
+  "scale": 0.41106719367588934,
+  "anchor": [
+    64,
+    110
+  ],
+  "runtimeSha256": "b30197ae5b831c7dbdad6d83da9dba9e3a3e258ba12e370f895bf88adaa4946c",
+  "frames": [
+    {
+      "frame": 0,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/production-144/smart_falcon/alpha.png",
+      "sourceSha256": "3762b2d7a3a280b8047f3a5a1f2d983afa7bdb9aa355b7407dec35622e50fa4f",
+      "crop": [
+        88,
+        26,
+        234,
+        266
+      ],
+      "destination": [
+        34,
+        11,
+        60,
+        99
+      ]
+    },
+    {
+      "frame": 1,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/production-144/smart_falcon/alpha.png",
+      "sourceSha256": "3762b2d7a3a280b8047f3a5a1f2d983afa7bdb9aa355b7407dec35622e50fa4f",
+      "crop": [
+        324,
+        24,
+        474,
+        266
+      ],
+      "destination": [
+        161,
+        11,
+        62,
+        99
+      ]
+    },
+    {
+      "frame": 2,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/production-144/smart_falcon/alpha.png",
+      "sourceSha256": "3762b2d7a3a280b8047f3a5a1f2d983afa7bdb9aa355b7407dec35622e50fa4f",
+      "crop": [
+        568,
+        24,
+        717,
+        266
+      ],
+      "destination": [
+        289,
+        11,
+        61,
+        99
+      ]
+    },
+    {
+      "frame": 3,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/production-144/smart_falcon/alpha.png",
+      "sourceSha256": "3762b2d7a3a280b8047f3a5a1f2d983afa7bdb9aa355b7407dec35622e50fa4f",
+      "crop": [
+        813,
+        23,
+        954,
+        266
+      ],
+      "destination": [
+        419,
+        10,
+        58,
+        100
+      ]
+    },
+    {
+      "frame": 4,
+      "sourceFrame": 4,
+      "source": "docs/art-source/motions/production-144/smart_falcon/alpha.png",
+      "sourceSha256": "3762b2d7a3a280b8047f3a5a1f2d983afa7bdb9aa355b7407dec35622e50fa4f",
+      "crop": [
+        48,
+        288,
+        250,
+        520
+      ],
+      "destination": [
+        22,
+        143,
+        83,
+        95
+      ]
+    },
+    {
+      "frame": 5,
+      "sourceFrame": 5,
+      "source": "docs/art-source/motions/production-144/smart_falcon/alpha.png",
+      "sourceSha256": "3762b2d7a3a280b8047f3a5a1f2d983afa7bdb9aa355b7407dec35622e50fa4f",
+      "crop": [
+        310,
+        287,
+        501,
+        521
+      ],
+      "destination": [
+        152,
+        142,
+        79,
+        96
+      ]
+    },
+    {
+      "frame": 6,
+      "sourceFrame": 6,
+      "source": "docs/art-source/motions/production-144/smart_falcon/alpha.png",
+      "sourceSha256": "3762b2d7a3a280b8047f3a5a1f2d983afa7bdb9aa355b7407dec35622e50fa4f",
+      "crop": [
+        551,
+        286,
+        748,
+        521
+      ],
+      "destination": [
+        279,
+        141,
+        81,
+        97
+      ]
+    },
+    {
+      "frame": 7,
+      "sourceFrame": 7,
+      "source": "docs/art-source/motions/production-144/smart_falcon/alpha.png",
+      "sourceSha256": "3762b2d7a3a280b8047f3a5a1f2d983afa7bdb9aa355b7407dec35622e50fa4f",
+      "crop": [
+        807,
+        286,
+        985,
+        521
+      ],
+      "destination": [
+        411,
+        141,
+        73,
+        97
+      ]
+    },
+    {
+      "frame": 8,
+      "sourceFrame": 8,
+      "source": "docs/art-source/motions/production-144/smart_falcon/alpha.png",
+      "sourceSha256": "3762b2d7a3a280b8047f3a5a1f2d983afa7bdb9aa355b7407dec35622e50fa4f",
+      "crop": [
+        59,
+        529,
+        269,
+        776
+      ],
+      "destination": [
+        21,
+        264,
+        86,
+        102
+      ]
+    },
+    {
+      "frame": 9,
+      "sourceFrame": 9,
+      "source": "docs/art-source/motions/production-144/smart_falcon/alpha.png",
+      "sourceSha256": "3762b2d7a3a280b8047f3a5a1f2d983afa7bdb9aa355b7407dec35622e50fa4f",
+      "crop": [
+        312,
+        529,
+        474,
+        775
+      ],
+      "destination": [
+        158,
+        265,
+        67,
+        101
+      ]
+    },
+    {
+      "frame": 10,
+      "sourceFrame": 10,
+      "source": "docs/art-source/motions/production-144/smart_falcon/alpha.png",
+      "sourceSha256": "3762b2d7a3a280b8047f3a5a1f2d983afa7bdb9aa355b7407dec35622e50fa4f",
+      "crop": [
+        549,
+        528,
+        771,
+        776
+      ],
+      "destination": [
+        274,
+        264,
+        91,
+        102
+      ]
+    },
+    {
+      "frame": 11,
+      "sourceFrame": 11,
+      "source": "docs/art-source/motions/production-144/smart_falcon/alpha.png",
+      "sourceSha256": "3762b2d7a3a280b8047f3a5a1f2d983afa7bdb9aa355b7407dec35622e50fa4f",
+      "crop": [
+        813,
+        529,
+        966,
+        777
+      ],
+      "destination": [
+        416,
+        264,
+        63,
+        102
+      ]
+    },
+    {
+      "frame": 12,
+      "sourceFrame": 12,
+      "source": "docs/art-source/motions/production-144/smart_falcon/alpha.png",
+      "sourceSha256": "3762b2d7a3a280b8047f3a5a1f2d983afa7bdb9aa355b7407dec35622e50fa4f",
+      "crop": [
+        71,
+        793,
+        225,
+        1044
+      ],
+      "destination": [
+        32,
+        391,
+        63,
+        103
+      ]
+    },
+    {
+      "frame": 13,
+      "sourceFrame": 13,
+      "source": "docs/art-source/motions/production-144/smart_falcon/alpha.png",
+      "sourceSha256": "3762b2d7a3a280b8047f3a5a1f2d983afa7bdb9aa355b7407dec35622e50fa4f",
+      "crop": [
+        321,
+        796,
+        491,
+        1044
+      ],
+      "destination": [
+        157,
+        392,
+        70,
+        102
+      ]
+    },
+    {
+      "frame": 14,
+      "sourceFrame": 14,
+      "source": "docs/art-source/motions/production-144/smart_falcon/alpha.png",
+      "sourceSha256": "3762b2d7a3a280b8047f3a5a1f2d983afa7bdb9aa355b7407dec35622e50fa4f",
+      "crop": [
+        549,
+        799,
+        758,
+        1045
+      ],
+      "destination": [
+        277,
+        393,
+        86,
+        101
+      ]
+    },
+    {
+      "frame": 15,
+      "sourceFrame": 15,
+      "source": "docs/art-source/motions/production-144/smart_falcon/alpha.png",
+      "sourceSha256": "3762b2d7a3a280b8047f3a5a1f2d983afa7bdb9aa355b7407dec35622e50fa4f",
+      "crop": [
+        807,
+        793,
+        967,
+        1046
+      ],
+      "destination": [
+        415,
+        390,
+        66,
+        104
+      ]
+    },
+    {
+      "frame": 16,
+      "sourceFrame": 16,
+      "source": "docs/art-source/motions/production-144/smart_falcon/alpha.png",
+      "sourceSha256": "3762b2d7a3a280b8047f3a5a1f2d983afa7bdb9aa355b7407dec35622e50fa4f",
+      "crop": [
+        61,
+        1058,
+        241,
+        1280
+      ],
+      "destination": [
+        27,
+        531,
+        74,
+        91
+      ]
+    },
+    {
+      "frame": 17,
+      "sourceFrame": 17,
+      "source": "docs/art-source/motions/production-144/smart_falcon/alpha.png",
+      "sourceSha256": "3762b2d7a3a280b8047f3a5a1f2d983afa7bdb9aa355b7407dec35622e50fa4f",
+      "crop": [
+        307,
+        1079,
+        498,
+        1280
+      ],
+      "destination": [
+        152,
+        539,
+        79,
+        83
+      ]
+    },
+    {
+      "frame": 18,
+      "sourceFrame": 18,
+      "source": "docs/art-source/motions/production-144/smart_falcon/alpha.png",
+      "sourceSha256": "3762b2d7a3a280b8047f3a5a1f2d983afa7bdb9aa355b7407dec35622e50fa4f",
+      "crop": [
+        551,
+        1101,
+        751,
+        1273
+      ],
+      "destination": [
+        279,
+        551,
+        82,
+        71
+      ]
+    },
+    {
+      "frame": 19,
+      "sourceFrame": 19,
+      "source": "docs/art-source/motions/production-144/smart_falcon/alpha.png",
+      "sourceSha256": "3762b2d7a3a280b8047f3a5a1f2d983afa7bdb9aa355b7407dec35622e50fa4f",
+      "crop": [
+        776,
+        1176,
+        1003,
+        1274
+      ],
+      "destination": [
+        401,
+        582,
+        93,
+        40
+      ]
+    },
+    {
+      "frame": 20,
+      "sourceFrame": 20,
+      "source": "docs/art-source/motions/production-144/smart_falcon/alpha.png",
+      "sourceSha256": "3762b2d7a3a280b8047f3a5a1f2d983afa7bdb9aa355b7407dec35622e50fa4f",
+      "crop": [
+        60,
+        1292,
+        213,
+        1531
+      ],
+      "destination": [
+        32,
+        652,
+        63,
+        98
+      ]
+    },
+    {
+      "frame": 21,
+      "sourceFrame": 21,
+      "source": "docs/art-source/motions/production-144/smart_falcon/alpha.png",
+      "sourceSha256": "3762b2d7a3a280b8047f3a5a1f2d983afa7bdb9aa355b7407dec35622e50fa4f",
+      "crop": [
+        320,
+        1296,
+        474,
+        1530
+      ],
+      "destination": [
+        160,
+        654,
+        63,
+        96
+      ]
+    },
+    {
+      "frame": 22,
+      "sourceFrame": 22,
+      "source": "docs/art-source/motions/production-144/smart_falcon/alpha.png",
+      "sourceSha256": "3762b2d7a3a280b8047f3a5a1f2d983afa7bdb9aa355b7407dec35622e50fa4f",
+      "crop": [
+        565,
+        1293,
+        724,
+        1535
+      ],
+      "destination": [
+        287,
+        651,
+        65,
+        99
+      ]
+    },
+    {
+      "frame": 23,
+      "sourceFrame": 23,
+      "source": "docs/art-source/motions/production-144/smart_falcon/alpha.png",
+      "sourceSha256": "3762b2d7a3a280b8047f3a5a1f2d983afa7bdb9aa355b7407dec35622e50fa4f",
+      "crop": [
+        818,
+        1292,
+        971,
+        1532
+      ],
+      "destination": [
+        416,
+        651,
+        63,
+        99
+      ]
+    }
+  ]
+}

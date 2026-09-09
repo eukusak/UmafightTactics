@@ -1,0 +1,443 @@
+{
+  "format": "uft-baked-frames-v1",
+  "scale": 0.4126984126984127,
+  "anchor": [
+    64,
+    110
+  ],
+  "runtimeSha256": "ae6870b757b14ee1d751c73dd6e5aea2211f7eb590746c89f753443bc324bdac",
+  "frames": [
+    {
+      "frame": 0,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/production-144/shinko_windy/alpha.png",
+      "sourceSha256": "3cd9c5c7fe817fe8c9fc73b44ed0f35c2fee2a87734dc9f21673e25c3836c047",
+      "crop": [
+        53,
+        18,
+        217,
+        270
+      ],
+      "destination": [
+        30,
+        6,
+        68,
+        104
+      ]
+    },
+    {
+      "frame": 1,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/production-144/shinko_windy/alpha.png",
+      "sourceSha256": "3cd9c5c7fe817fe8c9fc73b44ed0f35c2fee2a87734dc9f21673e25c3836c047",
+      "crop": [
+        304,
+        20,
+        465,
+        270
+      ],
+      "destination": [
+        159,
+        7,
+        66,
+        103
+      ]
+    },
+    {
+      "frame": 2,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/production-144/shinko_windy/alpha.png",
+      "sourceSha256": "3cd9c5c7fe817fe8c9fc73b44ed0f35c2fee2a87734dc9f21673e25c3836c047",
+      "crop": [
+        565,
+        19,
+        724,
+        270
+      ],
+      "destination": [
+        287,
+        6,
+        66,
+        104
+      ]
+    },
+    {
+      "frame": 3,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/production-144/shinko_windy/alpha.png",
+      "sourceSha256": "3cd9c5c7fe817fe8c9fc73b44ed0f35c2fee2a87734dc9f21673e25c3836c047",
+      "crop": [
+        818,
+        20,
+        975,
+        270
+      ],
+      "destination": [
+        415,
+        7,
+        65,
+        103
+      ]
+    },
+    {
+      "frame": 4,
+      "sourceFrame": 4,
+      "source": "docs/art-source/motions/production-144/shinko_windy/alpha.png",
+      "sourceSha256": "3cd9c5c7fe817fe8c9fc73b44ed0f35c2fee2a87734dc9f21673e25c3836c047",
+      "crop": [
+        30,
+        288,
+        212,
+        535
+      ],
+      "destination": [
+        26,
+        136,
+        75,
+        102
+      ]
+    },
+    {
+      "frame": 5,
+      "sourceFrame": 5,
+      "source": "docs/art-source/motions/production-144/shinko_windy/alpha.png",
+      "sourceSha256": "3cd9c5c7fe817fe8c9fc73b44ed0f35c2fee2a87734dc9f21673e25c3836c047",
+      "crop": [
+        268,
+        294,
+        473,
+        535
+      ],
+      "destination": [
+        149,
+        139,
+        85,
+        99
+      ]
+    },
+    {
+      "frame": 6,
+      "sourceFrame": 6,
+      "source": "docs/art-source/motions/production-144/shinko_windy/alpha.png",
+      "sourceSha256": "3cd9c5c7fe817fe8c9fc73b44ed0f35c2fee2a87734dc9f21673e25c3836c047",
+      "crop": [
+        528,
+        293,
+        724,
+        535
+      ],
+      "destination": [
+        279,
+        138,
+        81,
+        100
+      ]
+    },
+    {
+      "frame": 7,
+      "sourceFrame": 7,
+      "source": "docs/art-source/motions/production-144/shinko_windy/alpha.png",
+      "sourceSha256": "3cd9c5c7fe817fe8c9fc73b44ed0f35c2fee2a87734dc9f21673e25c3836c047",
+      "crop": [
+        784,
+        291,
+        992,
+        535
+      ],
+      "destination": [
+        405,
+        137,
+        86,
+        101
+      ]
+    },
+    {
+      "frame": 8,
+      "sourceFrame": 8,
+      "source": "docs/art-source/motions/production-144/shinko_windy/alpha.png",
+      "sourceSha256": "3cd9c5c7fe817fe8c9fc73b44ed0f35c2fee2a87734dc9f21673e25c3836c047",
+      "crop": [
+        50,
+        549,
+        222,
+        796
+      ],
+      "destination": [
+        28,
+        264,
+        71,
+        102
+      ]
+    },
+    {
+      "frame": 9,
+      "sourceFrame": 9,
+      "source": "docs/art-source/motions/production-144/shinko_windy/alpha.png",
+      "sourceSha256": "3cd9c5c7fe817fe8c9fc73b44ed0f35c2fee2a87734dc9f21673e25c3836c047",
+      "crop": [
+        301,
+        548,
+        464,
+        796
+      ],
+      "destination": [
+        158,
+        264,
+        67,
+        102
+      ]
+    },
+    {
+      "frame": 10,
+      "sourceFrame": 10,
+      "source": "docs/art-source/motions/production-144/shinko_windy/alpha.png",
+      "sourceSha256": "3cd9c5c7fe817fe8c9fc73b44ed0f35c2fee2a87734dc9f21673e25c3836c047",
+      "crop": [
+        533,
+        555,
+        727,
+        796
+      ],
+      "destination": [
+        280,
+        267,
+        80,
+        99
+      ]
+    },
+    {
+      "frame": 11,
+      "sourceFrame": 11,
+      "source": "docs/art-source/motions/production-144/shinko_windy/alpha.png",
+      "sourceSha256": "3cd9c5c7fe817fe8c9fc73b44ed0f35c2fee2a87734dc9f21673e25c3836c047",
+      "crop": [
+        811,
+        552,
+        969,
+        796
+      ],
+      "destination": [
+        415,
+        265,
+        65,
+        101
+      ]
+    },
+    {
+      "frame": 12,
+      "sourceFrame": 12,
+      "source": "docs/art-source/motions/production-144/shinko_windy/alpha.png",
+      "sourceSha256": "3cd9c5c7fe817fe8c9fc73b44ed0f35c2fee2a87734dc9f21673e25c3836c047",
+      "crop": [
+        48,
+        814,
+        211,
+        1060
+      ],
+      "destination": [
+        30,
+        392,
+        67,
+        102
+      ]
+    },
+    {
+      "frame": 13,
+      "sourceFrame": 13,
+      "source": "docs/art-source/motions/production-144/shinko_windy/alpha.png",
+      "sourceSha256": "3cd9c5c7fe817fe8c9fc73b44ed0f35c2fee2a87734dc9f21673e25c3836c047",
+      "crop": [
+        293,
+        813,
+        474,
+        1062
+      ],
+      "destination": [
+        154,
+        391,
+        75,
+        103
+      ]
+    },
+    {
+      "frame": 14,
+      "sourceFrame": 14,
+      "source": "docs/art-source/motions/production-144/shinko_windy/alpha.png",
+      "sourceSha256": "3cd9c5c7fe817fe8c9fc73b44ed0f35c2fee2a87734dc9f21673e25c3836c047",
+      "crop": [
+        545,
+        818,
+        737,
+        1062
+      ],
+      "destination": [
+        280,
+        393,
+        79,
+        101
+      ]
+    },
+    {
+      "frame": 15,
+      "sourceFrame": 15,
+      "source": "docs/art-source/motions/production-144/shinko_windy/alpha.png",
+      "sourceSha256": "3cd9c5c7fe817fe8c9fc73b44ed0f35c2fee2a87734dc9f21673e25c3836c047",
+      "crop": [
+        817,
+        816,
+        990,
+        1062
+      ],
+      "destination": [
+        412,
+        392,
+        71,
+        102
+      ]
+    },
+    {
+      "frame": 16,
+      "sourceFrame": 16,
+      "source": "docs/art-source/motions/production-144/shinko_windy/alpha.png",
+      "sourceSha256": "3cd9c5c7fe817fe8c9fc73b44ed0f35c2fee2a87734dc9f21673e25c3836c047",
+      "crop": [
+        45,
+        1082,
+        236,
+        1290
+      ],
+      "destination": [
+        24,
+        536,
+        79,
+        86
+      ]
+    },
+    {
+      "frame": 17,
+      "sourceFrame": 17,
+      "source": "docs/art-source/motions/production-144/shinko_windy/alpha.png",
+      "sourceSha256": "3cd9c5c7fe817fe8c9fc73b44ed0f35c2fee2a87734dc9f21673e25c3836c047",
+      "crop": [
+        287,
+        1109,
+        485,
+        1290
+      ],
+      "destination": [
+        151,
+        547,
+        82,
+        75
+      ]
+    },
+    {
+      "frame": 18,
+      "sourceFrame": 18,
+      "source": "docs/art-source/motions/production-144/shinko_windy/alpha.png",
+      "sourceSha256": "3cd9c5c7fe817fe8c9fc73b44ed0f35c2fee2a87734dc9f21673e25c3836c047",
+      "crop": [
+        532,
+        1141,
+        746,
+        1284
+      ],
+      "destination": [
+        276,
+        563,
+        88,
+        59
+      ]
+    },
+    {
+      "frame": 19,
+      "sourceFrame": 19,
+      "source": "docs/art-source/motions/production-144/shinko_windy/alpha.png",
+      "sourceSha256": "3cd9c5c7fe817fe8c9fc73b44ed0f35c2fee2a87734dc9f21673e25c3836c047",
+      "crop": [
+        783,
+        1159,
+        1021,
+        1283
+      ],
+      "destination": [
+        399,
+        571,
+        98,
+        51
+      ]
+    },
+    {
+      "frame": 20,
+      "sourceFrame": 20,
+      "source": "docs/art-source/motions/production-144/shinko_windy/alpha.png",
+      "sourceSha256": "3cd9c5c7fe817fe8c9fc73b44ed0f35c2fee2a87734dc9f21673e25c3836c047",
+      "crop": [
+        55,
+        1299,
+        200,
+        1536
+      ],
+      "destination": [
+        34,
+        652,
+        60,
+        98
+      ]
+    },
+    {
+      "frame": 21,
+      "sourceFrame": 21,
+      "source": "docs/art-source/motions/production-144/shinko_windy/alpha.png",
+      "sourceSha256": "3cd9c5c7fe817fe8c9fc73b44ed0f35c2fee2a87734dc9f21673e25c3836c047",
+      "crop": [
+        307,
+        1298,
+        467,
+        1536
+      ],
+      "destination": [
+        159,
+        652,
+        66,
+        98
+      ]
+    },
+    {
+      "frame": 22,
+      "sourceFrame": 22,
+      "source": "docs/art-source/motions/production-144/shinko_windy/alpha.png",
+      "sourceSha256": "3cd9c5c7fe817fe8c9fc73b44ed0f35c2fee2a87734dc9f21673e25c3836c047",
+      "crop": [
+        546,
+        1295,
+        714,
+        1514
+      ],
+      "destination": [
+        285,
+        660,
+        69,
+        90
+      ]
+    },
+    {
+      "frame": 23,
+      "sourceFrame": 23,
+      "source": "docs/art-source/motions/production-144/shinko_windy/alpha.png",
+      "sourceSha256": "3cd9c5c7fe817fe8c9fc73b44ed0f35c2fee2a87734dc9f21673e25c3836c047",
+      "crop": [
+        815,
+        1295,
+        958,
+        1536
+      ],
+      "destination": [
+        418,
+        651,
+        59,
+        99
+      ]
+    }
+  ]
+}

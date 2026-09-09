@@ -1,5 +1,5 @@
 {
-  "acceptedArt": 445,
+  "acceptedArt": 509,
   "baseCommit": "c662b5caae3a42a956796ccd6d974f5ec14f85fc",
   "batchSize": 10,
   "completedBatch": [
@@ -19,7 +19,7 @@
   "portraitTarget": 145,
   "remaining": {
     "portraits": 0,
-    "battleSheets": 69,
+    "battleSheets": 5,
     "cutins": 0
   },
   "requiredArt": 514,
@@ -78,14 +78,14 @@
     "actualCubismModels": 0,
     "status": "generated full-body images with procedural runtime animation"
   },
-  "latestValidation": "docs/qa/PR6_DESKTOP_MOTIONS_2026-09-09.md",
+  "latestValidation": "docs/qa/PR6_MOTIONS_144_2026-09-09.md",
   "motionStatus": {
     "format": "24 poses; 4 columns x 6 rows; 512x768 RGBA runtime",
-    "characters": 76,
+    "characters": 140,
     "characterTarget": 145,
     "pve": 5,
     "pveTarget": 5,
-    "remainingCharacters": 69,
+    "remainingCharacters": 5,
     "registry": "src/data/manual/frame-sheets.json",
     "reservation": "docs/art-source/motions/desktop-reservation.json"
   }

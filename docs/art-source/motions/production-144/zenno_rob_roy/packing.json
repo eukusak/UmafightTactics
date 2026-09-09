@@ -1,0 +1,443 @@
+{
+  "format": "uft-baked-frames-v1",
+  "scale": 0.40784313725490196,
+  "anchor": [
+    64,
+    110
+  ],
+  "runtimeSha256": "9178e44ce7106e0f260084a1715b036470ac87dce88465872f10a8a881a01392",
+  "frames": [
+    {
+      "frame": 0,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/production-144/zenno_rob_roy/alpha.png",
+      "sourceSha256": "2d05979ebdd7af7cb3d6e3523277a03fb8677daf4f2ca267627a632c176d06f8",
+      "crop": [
+        57,
+        9,
+        189,
+        255
+      ],
+      "destination": [
+        37,
+        10,
+        54,
+        100
+      ]
+    },
+    {
+      "frame": 1,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/production-144/zenno_rob_roy/alpha.png",
+      "sourceSha256": "2d05979ebdd7af7cb3d6e3523277a03fb8677daf4f2ca267627a632c176d06f8",
+      "crop": [
+        313,
+        11,
+        446,
+        255
+      ],
+      "destination": [
+        165,
+        10,
+        54,
+        100
+      ]
+    },
+    {
+      "frame": 2,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/production-144/zenno_rob_roy/alpha.png",
+      "sourceSha256": "2d05979ebdd7af7cb3d6e3523277a03fb8677daf4f2ca267627a632c176d06f8",
+      "crop": [
+        570,
+        9,
+        699,
+        255
+      ],
+      "destination": [
+        293,
+        10,
+        53,
+        100
+      ]
+    },
+    {
+      "frame": 3,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/production-144/zenno_rob_roy/alpha.png",
+      "sourceSha256": "2d05979ebdd7af7cb3d6e3523277a03fb8677daf4f2ca267627a632c176d06f8",
+      "crop": [
+        826,
+        9,
+        958,
+        255
+      ],
+      "destination": [
+        421,
+        10,
+        54,
+        100
+      ]
+    },
+    {
+      "frame": 4,
+      "sourceFrame": 4,
+      "source": "docs/art-source/motions/production-144/zenno_rob_roy/alpha.png",
+      "sourceSha256": "2d05979ebdd7af7cb3d6e3523277a03fb8677daf4f2ca267627a632c176d06f8",
+      "crop": [
+        40,
+        259,
+        222,
+        503
+      ],
+      "destination": [
+        27,
+        138,
+        74,
+        100
+      ]
+    },
+    {
+      "frame": 5,
+      "sourceFrame": 5,
+      "source": "docs/art-source/motions/production-144/zenno_rob_roy/alpha.png",
+      "sourceSha256": "2d05979ebdd7af7cb3d6e3523277a03fb8677daf4f2ca267627a632c176d06f8",
+      "crop": [
+        297,
+        263,
+        484,
+        506
+      ],
+      "destination": [
+        154,
+        139,
+        76,
+        99
+      ]
+    },
+    {
+      "frame": 6,
+      "sourceFrame": 6,
+      "source": "docs/art-source/motions/production-144/zenno_rob_roy/alpha.png",
+      "sourceSha256": "2d05979ebdd7af7cb3d6e3523277a03fb8677daf4f2ca267627a632c176d06f8",
+      "crop": [
+        556,
+        263,
+        734,
+        507
+      ],
+      "destination": [
+        283,
+        138,
+        73,
+        100
+      ]
+    },
+    {
+      "frame": 7,
+      "sourceFrame": 7,
+      "source": "docs/art-source/motions/production-144/zenno_rob_roy/alpha.png",
+      "sourceSha256": "2d05979ebdd7af7cb3d6e3523277a03fb8677daf4f2ca267627a632c176d06f8",
+      "crop": [
+        806,
+        262,
+        994,
+        504
+      ],
+      "destination": [
+        409,
+        139,
+        77,
+        99
+      ]
+    },
+    {
+      "frame": 8,
+      "sourceFrame": 8,
+      "source": "docs/art-source/motions/production-144/zenno_rob_roy/alpha.png",
+      "sourceSha256": "2d05979ebdd7af7cb3d6e3523277a03fb8677daf4f2ca267627a632c176d06f8",
+      "crop": [
+        47,
+        512,
+        199,
+        758
+      ],
+      "destination": [
+        33,
+        266,
+        62,
+        100
+      ]
+    },
+    {
+      "frame": 9,
+      "sourceFrame": 9,
+      "source": "docs/art-source/motions/production-144/zenno_rob_roy/alpha.png",
+      "sourceSha256": "2d05979ebdd7af7cb3d6e3523277a03fb8677daf4f2ca267627a632c176d06f8",
+      "crop": [
+        293,
+        512,
+        462,
+        758
+      ],
+      "destination": [
+        157,
+        266,
+        69,
+        100
+      ]
+    },
+    {
+      "frame": 10,
+      "sourceFrame": 10,
+      "source": "docs/art-source/motions/production-144/zenno_rob_roy/alpha.png",
+      "sourceSha256": "2d05979ebdd7af7cb3d6e3523277a03fb8677daf4f2ca267627a632c176d06f8",
+      "crop": [
+        539,
+        519,
+        733,
+        760
+      ],
+      "destination": [
+        280,
+        268,
+        79,
+        98
+      ]
+    },
+    {
+      "frame": 11,
+      "sourceFrame": 11,
+      "source": "docs/art-source/motions/production-144/zenno_rob_roy/alpha.png",
+      "sourceSha256": "2d05979ebdd7af7cb3d6e3523277a03fb8677daf4f2ca267627a632c176d06f8",
+      "crop": [
+        825,
+        512,
+        965,
+        759
+      ],
+      "destination": [
+        419,
+        265,
+        57,
+        101
+      ]
+    },
+    {
+      "frame": 12,
+      "sourceFrame": 12,
+      "source": "docs/art-source/motions/production-144/zenno_rob_roy/alpha.png",
+      "sourceSha256": "2d05979ebdd7af7cb3d6e3523277a03fb8677daf4f2ca267627a632c176d06f8",
+      "crop": [
+        49,
+        772,
+        209,
+        1016
+      ],
+      "destination": [
+        31,
+        394,
+        65,
+        100
+      ]
+    },
+    {
+      "frame": 13,
+      "sourceFrame": 13,
+      "source": "docs/art-source/motions/production-144/zenno_rob_roy/alpha.png",
+      "sourceSha256": "2d05979ebdd7af7cb3d6e3523277a03fb8677daf4f2ca267627a632c176d06f8",
+      "crop": [
+        295,
+        772,
+        488,
+        1019
+      ],
+      "destination": [
+        152,
+        393,
+        79,
+        101
+      ]
+    },
+    {
+      "frame": 14,
+      "sourceFrame": 14,
+      "source": "docs/art-source/motions/production-144/zenno_rob_roy/alpha.png",
+      "sourceSha256": "2d05979ebdd7af7cb3d6e3523277a03fb8677daf4f2ca267627a632c176d06f8",
+      "crop": [
+        549,
+        770,
+        727,
+        1023
+      ],
+      "destination": [
+        283,
+        391,
+        73,
+        103
+      ]
+    },
+    {
+      "frame": 15,
+      "sourceFrame": 15,
+      "source": "docs/art-source/motions/production-144/zenno_rob_roy/alpha.png",
+      "sourceSha256": "2d05979ebdd7af7cb3d6e3523277a03fb8677daf4f2ca267627a632c176d06f8",
+      "crop": [
+        817,
+        772,
+        972,
+        1024
+      ],
+      "destination": [
+        416,
+        391,
+        63,
+        103
+      ]
+    },
+    {
+      "frame": 16,
+      "sourceFrame": 16,
+      "source": "docs/art-source/motions/production-144/zenno_rob_roy/alpha.png",
+      "sourceSha256": "2d05979ebdd7af7cb3d6e3523277a03fb8677daf4f2ca267627a632c176d06f8",
+      "crop": [
+        41,
+        1035,
+        218,
+        1261
+      ],
+      "destination": [
+        28,
+        530,
+        72,
+        92
+      ]
+    },
+    {
+      "frame": 17,
+      "sourceFrame": 17,
+      "source": "docs/art-source/motions/production-144/zenno_rob_roy/alpha.png",
+      "sourceSha256": "2d05979ebdd7af7cb3d6e3523277a03fb8677daf4f2ca267627a632c176d06f8",
+      "crop": [
+        300,
+        1067,
+        492,
+        1257
+      ],
+      "destination": [
+        153,
+        545,
+        78,
+        77
+      ]
+    },
+    {
+      "frame": 18,
+      "sourceFrame": 18,
+      "source": "docs/art-source/motions/production-144/zenno_rob_roy/alpha.png",
+      "sourceSha256": "2d05979ebdd7af7cb3d6e3523277a03fb8677daf4f2ca267627a632c176d06f8",
+      "crop": [
+        540,
+        1089,
+        719,
+        1264
+      ],
+      "destination": [
+        283,
+        551,
+        73,
+        71
+      ]
+    },
+    {
+      "frame": 19,
+      "sourceFrame": 19,
+      "source": "docs/art-source/motions/production-144/zenno_rob_roy/alpha.png",
+      "sourceSha256": "2d05979ebdd7af7cb3d6e3523277a03fb8677daf4f2ca267627a632c176d06f8",
+      "crop": [
+        778,
+        1149,
+        1013,
+        1255
+      ],
+      "destination": [
+        400,
+        579,
+        96,
+        43
+      ]
+    },
+    {
+      "frame": 20,
+      "sourceFrame": 20,
+      "source": "docs/art-source/motions/production-144/zenno_rob_roy/alpha.png",
+      "sourceSha256": "2d05979ebdd7af7cb3d6e3523277a03fb8677daf4f2ca267627a632c176d06f8",
+      "crop": [
+        51,
+        1273,
+        201,
+        1528
+      ],
+      "destination": [
+        33,
+        646,
+        61,
+        104
+      ]
+    },
+    {
+      "frame": 21,
+      "sourceFrame": 21,
+      "source": "docs/art-source/motions/production-144/zenno_rob_roy/alpha.png",
+      "sourceSha256": "2d05979ebdd7af7cb3d6e3523277a03fb8677daf4f2ca267627a632c176d06f8",
+      "crop": [
+        306,
+        1273,
+        471,
+        1528
+      ],
+      "destination": [
+        158,
+        646,
+        67,
+        104
+      ]
+    },
+    {
+      "frame": 22,
+      "sourceFrame": 22,
+      "source": "docs/art-source/motions/production-144/zenno_rob_roy/alpha.png",
+      "sourceSha256": "2d05979ebdd7af7cb3d6e3523277a03fb8677daf4f2ca267627a632c176d06f8",
+      "crop": [
+        564,
+        1275,
+        702,
+        1528
+      ],
+      "destination": [
+        292,
+        647,
+        56,
+        103
+      ]
+    },
+    {
+      "frame": 23,
+      "sourceFrame": 23,
+      "source": "docs/art-source/motions/production-144/zenno_rob_roy/alpha.png",
+      "sourceSha256": "2d05979ebdd7af7cb3d6e3523277a03fb8677daf4f2ca267627a632c176d06f8",
+      "crop": [
+        825,
+        1274,
+        961,
+        1528
+      ],
+      "destination": [
+        420,
+        646,
+        55,
+        104
+      ]
+    }
+  ]
+}

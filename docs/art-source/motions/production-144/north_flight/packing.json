@@ -1,0 +1,443 @@
+{
+  "format": "uft-baked-frames-v1",
+  "scale": 0.4126984126984127,
+  "anchor": [
+    64,
+    110
+  ],
+  "runtimeSha256": "b5c33e87f962327f0403ee664ba67ea0038dc047b94389cac5a0144369342b00",
+  "frames": [
+    {
+      "frame": 0,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/production-144/north_flight/alpha.png",
+      "sourceSha256": "5585a67eed4cac66b9ea56a44f3236acbf863d9ca2bf39777eb7a158e0864975",
+      "crop": [
+        45,
+        21,
+        216,
+        263
+      ],
+      "destination": [
+        28,
+        10,
+        71,
+        100
+      ]
+    },
+    {
+      "frame": 1,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/production-144/north_flight/alpha.png",
+      "sourceSha256": "5585a67eed4cac66b9ea56a44f3236acbf863d9ca2bf39777eb7a158e0864975",
+      "crop": [
+        300,
+        21,
+        469,
+        263
+      ],
+      "destination": [
+        157,
+        10,
+        70,
+        100
+      ]
+    },
+    {
+      "frame": 2,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/production-144/north_flight/alpha.png",
+      "sourceSha256": "5585a67eed4cac66b9ea56a44f3236acbf863d9ca2bf39777eb7a158e0864975",
+      "crop": [
+        556,
+        20,
+        724,
+        263
+      ],
+      "destination": [
+        285,
+        10,
+        69,
+        100
+      ]
+    },
+    {
+      "frame": 3,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/production-144/north_flight/alpha.png",
+      "sourceSha256": "5585a67eed4cac66b9ea56a44f3236acbf863d9ca2bf39777eb7a158e0864975",
+      "crop": [
+        812,
+        21,
+        979,
+        263
+      ],
+      "destination": [
+        413,
+        10,
+        69,
+        100
+      ]
+    },
+    {
+      "frame": 4,
+      "sourceFrame": 4,
+      "source": "docs/art-source/motions/production-144/north_flight/alpha.png",
+      "sourceSha256": "5585a67eed4cac66b9ea56a44f3236acbf863d9ca2bf39777eb7a158e0864975",
+      "crop": [
+        24,
+        289,
+        241,
+        514
+      ],
+      "destination": [
+        19,
+        145,
+        90,
+        93
+      ]
+    },
+    {
+      "frame": 5,
+      "sourceFrame": 5,
+      "source": "docs/art-source/motions/production-144/north_flight/alpha.png",
+      "sourceSha256": "5585a67eed4cac66b9ea56a44f3236acbf863d9ca2bf39777eb7a158e0864975",
+      "crop": [
+        291,
+        289,
+        499,
+        514
+      ],
+      "destination": [
+        149,
+        145,
+        86,
+        93
+      ]
+    },
+    {
+      "frame": 6,
+      "sourceFrame": 6,
+      "source": "docs/art-source/motions/production-144/north_flight/alpha.png",
+      "sourceSha256": "5585a67eed4cac66b9ea56a44f3236acbf863d9ca2bf39777eb7a158e0864975",
+      "crop": [
+        549,
+        288,
+        754,
+        514
+      ],
+      "destination": [
+        277,
+        145,
+        85,
+        93
+      ]
+    },
+    {
+      "frame": 7,
+      "sourceFrame": 7,
+      "source": "docs/art-source/motions/production-144/north_flight/alpha.png",
+      "sourceSha256": "5585a67eed4cac66b9ea56a44f3236acbf863d9ca2bf39777eb7a158e0864975",
+      "crop": [
+        814,
+        290,
+        1009,
+        514
+      ],
+      "destination": [
+        408,
+        146,
+        80,
+        92
+      ]
+    },
+    {
+      "frame": 8,
+      "sourceFrame": 8,
+      "source": "docs/art-source/motions/production-144/north_flight/alpha.png",
+      "sourceSha256": "5585a67eed4cac66b9ea56a44f3236acbf863d9ca2bf39777eb7a158e0864975",
+      "crop": [
+        35,
+        536,
+        225,
+        775
+      ],
+      "destination": [
+        25,
+        267,
+        78,
+        99
+      ]
+    },
+    {
+      "frame": 9,
+      "sourceFrame": 9,
+      "source": "docs/art-source/motions/production-144/north_flight/alpha.png",
+      "sourceSha256": "5585a67eed4cac66b9ea56a44f3236acbf863d9ca2bf39777eb7a158e0864975",
+      "crop": [
+        297,
+        536,
+        477,
+        775
+      ],
+      "destination": [
+        155,
+        267,
+        74,
+        99
+      ]
+    },
+    {
+      "frame": 10,
+      "sourceFrame": 10,
+      "source": "docs/art-source/motions/production-144/north_flight/alpha.png",
+      "sourceSha256": "5585a67eed4cac66b9ea56a44f3236acbf863d9ca2bf39777eb7a158e0864975",
+      "crop": [
+        535,
+        544,
+        759,
+        775
+      ],
+      "destination": [
+        274,
+        271,
+        92,
+        95
+      ]
+    },
+    {
+      "frame": 11,
+      "sourceFrame": 11,
+      "source": "docs/art-source/motions/production-144/north_flight/alpha.png",
+      "sourceSha256": "5585a67eed4cac66b9ea56a44f3236acbf863d9ca2bf39777eb7a158e0864975",
+      "crop": [
+        807,
+        548,
+        988,
+        775
+      ],
+      "destination": [
+        410,
+        272,
+        75,
+        94
+      ]
+    },
+    {
+      "frame": 12,
+      "sourceFrame": 12,
+      "source": "docs/art-source/motions/production-144/north_flight/alpha.png",
+      "sourceSha256": "5585a67eed4cac66b9ea56a44f3236acbf863d9ca2bf39777eb7a158e0864975",
+      "crop": [
+        24,
+        833,
+        229,
+        1015
+      ],
+      "destination": [
+        21,
+        419,
+        85,
+        75
+      ]
+    },
+    {
+      "frame": 13,
+      "sourceFrame": 13,
+      "source": "docs/art-source/motions/production-144/north_flight/alpha.png",
+      "sourceSha256": "5585a67eed4cac66b9ea56a44f3236acbf863d9ca2bf39777eb7a158e0864975",
+      "crop": [
+        294,
+        820,
+        499,
+        1018
+      ],
+      "destination": [
+        149,
+        412,
+        85,
+        82
+      ]
+    },
+    {
+      "frame": 14,
+      "sourceFrame": 14,
+      "source": "docs/art-source/motions/production-144/north_flight/alpha.png",
+      "sourceSha256": "5585a67eed4cac66b9ea56a44f3236acbf863d9ca2bf39777eb7a158e0864975",
+      "crop": [
+        541,
+        838,
+        768,
+        997
+      ],
+      "destination": [
+        273,
+        428,
+        94,
+        66
+      ]
+    },
+    {
+      "frame": 15,
+      "sourceFrame": 15,
+      "source": "docs/art-source/motions/production-144/north_flight/alpha.png",
+      "sourceSha256": "5585a67eed4cac66b9ea56a44f3236acbf863d9ca2bf39777eb7a158e0864975",
+      "crop": [
+        803,
+        842,
+        1003,
+        1015
+      ],
+      "destination": [
+        406,
+        423,
+        83,
+        71
+      ]
+    },
+    {
+      "frame": 16,
+      "sourceFrame": 16,
+      "source": "docs/art-source/motions/production-144/north_flight/alpha.png",
+      "sourceSha256": "5585a67eed4cac66b9ea56a44f3236acbf863d9ca2bf39777eb7a158e0864975",
+      "crop": [
+        31,
+        1035,
+        205,
+        1255
+      ],
+      "destination": [
+        28,
+        531,
+        72,
+        91
+      ]
+    },
+    {
+      "frame": 17,
+      "sourceFrame": 17,
+      "source": "docs/art-source/motions/production-144/north_flight/alpha.png",
+      "sourceSha256": "5585a67eed4cac66b9ea56a44f3236acbf863d9ca2bf39777eb7a158e0864975",
+      "crop": [
+        289,
+        1066,
+        468,
+        1252
+      ],
+      "destination": [
+        155,
+        545,
+        74,
+        77
+      ]
+    },
+    {
+      "frame": 18,
+      "sourceFrame": 18,
+      "source": "docs/art-source/motions/production-144/north_flight/alpha.png",
+      "sourceSha256": "5585a67eed4cac66b9ea56a44f3236acbf863d9ca2bf39777eb7a158e0864975",
+      "crop": [
+        553,
+        1072,
+        722,
+        1259
+      ],
+      "destination": [
+        285,
+        545,
+        70,
+        77
+      ]
+    },
+    {
+      "frame": 19,
+      "sourceFrame": 19,
+      "source": "docs/art-source/motions/production-144/north_flight/alpha.png",
+      "sourceSha256": "5585a67eed4cac66b9ea56a44f3236acbf863d9ca2bf39777eb7a158e0864975",
+      "crop": [
+        783,
+        1127,
+        1024,
+        1243
+      ],
+      "destination": [
+        398,
+        574,
+        99,
+        48
+      ]
+    },
+    {
+      "frame": 20,
+      "sourceFrame": 20,
+      "source": "docs/art-source/motions/production-144/north_flight/alpha.png",
+      "sourceSha256": "5585a67eed4cac66b9ea56a44f3236acbf863d9ca2bf39777eb7a158e0864975",
+      "crop": [
+        52,
+        1271,
+        208,
+        1523
+      ],
+      "destination": [
+        32,
+        646,
+        64,
+        104
+      ]
+    },
+    {
+      "frame": 21,
+      "sourceFrame": 21,
+      "source": "docs/art-source/motions/production-144/north_flight/alpha.png",
+      "sourceSha256": "5585a67eed4cac66b9ea56a44f3236acbf863d9ca2bf39777eb7a158e0864975",
+      "crop": [
+        305,
+        1268,
+        461,
+        1519
+      ],
+      "destination": [
+        160,
+        646,
+        64,
+        104
+      ]
+    },
+    {
+      "frame": 22,
+      "sourceFrame": 22,
+      "source": "docs/art-source/motions/production-144/north_flight/alpha.png",
+      "sourceSha256": "5585a67eed4cac66b9ea56a44f3236acbf863d9ca2bf39777eb7a158e0864975",
+      "crop": [
+        556,
+        1277,
+        714,
+        1523
+      ],
+      "destination": [
+        287,
+        648,
+        65,
+        102
+      ]
+    },
+    {
+      "frame": 23,
+      "sourceFrame": 23,
+      "source": "docs/art-source/motions/production-144/north_flight/alpha.png",
+      "sourceSha256": "5585a67eed4cac66b9ea56a44f3236acbf863d9ca2bf39777eb7a158e0864975",
+      "crop": [
+        823,
+        1274,
+        975,
+        1523
+      ],
+      "destination": [
+        416,
+        647,
+        63,
+        103
+      ]
+    }
+  ]
+}

@@ -1,0 +1,443 @@
+{
+  "format": "uft-baked-frames-v1",
+  "scale": 0.4406779661016949,
+  "anchor": [
+    64,
+    110
+  ],
+  "runtimeSha256": "78dbe074d0178cb8d72d4627d47aabdf4a970088d05b57d6a2ecb7b0727cf97f",
+  "frames": [
+    {
+      "frame": 0,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/production-144/daiichi_ruby/clean-alpha.png",
+      "sourceSha256": "7ae206a42215764f84491ba6120124196a9e41187c8e6572bf9eb4363c67b393",
+      "crop": [
+        51,
+        39,
+        198,
+        273
+      ],
+      "destination": [
+        31,
+        7,
+        65,
+        103
+      ]
+    },
+    {
+      "frame": 1,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/production-144/daiichi_ruby/clean-alpha.png",
+      "sourceSha256": "7ae206a42215764f84491ba6120124196a9e41187c8e6572bf9eb4363c67b393",
+      "crop": [
+        305,
+        40,
+        458,
+        273
+      ],
+      "destination": [
+        158,
+        7,
+        67,
+        103
+      ]
+    },
+    {
+      "frame": 2,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/production-144/daiichi_ruby/clean-alpha.png",
+      "sourceSha256": "7ae206a42215764f84491ba6120124196a9e41187c8e6572bf9eb4363c67b393",
+      "crop": [
+        559,
+        40,
+        707,
+        273
+      ],
+      "destination": [
+        287,
+        7,
+        65,
+        103
+      ]
+    },
+    {
+      "frame": 3,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/production-144/daiichi_ruby/clean-alpha.png",
+      "sourceSha256": "7ae206a42215764f84491ba6120124196a9e41187c8e6572bf9eb4363c67b393",
+      "crop": [
+        810,
+        40,
+        958,
+        273
+      ],
+      "destination": [
+        415,
+        7,
+        65,
+        103
+      ]
+    },
+    {
+      "frame": 4,
+      "sourceFrame": 4,
+      "source": "docs/art-source/motions/production-144/daiichi_ruby/clean-alpha.png",
+      "sourceSha256": "7ae206a42215764f84491ba6120124196a9e41187c8e6572bf9eb4363c67b393",
+      "crop": [
+        24,
+        306,
+        219,
+        534
+      ],
+      "destination": [
+        21,
+        138,
+        86,
+        100
+      ]
+    },
+    {
+      "frame": 5,
+      "sourceFrame": 5,
+      "source": "docs/art-source/motions/production-144/daiichi_ruby/clean-alpha.png",
+      "sourceSha256": "7ae206a42215764f84491ba6120124196a9e41187c8e6572bf9eb4363c67b393",
+      "crop": [
+        282,
+        306,
+        478,
+        534
+      ],
+      "destination": [
+        149,
+        138,
+        86,
+        100
+      ]
+    },
+    {
+      "frame": 6,
+      "sourceFrame": 6,
+      "source": "docs/art-source/motions/production-144/daiichi_ruby/clean-alpha.png",
+      "sourceSha256": "7ae206a42215764f84491ba6120124196a9e41187c8e6572bf9eb4363c67b393",
+      "crop": [
+        532,
+        308,
+        732,
+        534
+      ],
+      "destination": [
+        276,
+        138,
+        88,
+        100
+      ]
+    },
+    {
+      "frame": 7,
+      "sourceFrame": 7,
+      "source": "docs/art-source/motions/production-144/daiichi_ruby/clean-alpha.png",
+      "sourceSha256": "7ae206a42215764f84491ba6120124196a9e41187c8e6572bf9eb4363c67b393",
+      "crop": [
+        791,
+        307,
+        990,
+        534
+      ],
+      "destination": [
+        404,
+        138,
+        88,
+        100
+      ]
+    },
+    {
+      "frame": 8,
+      "sourceFrame": 8,
+      "source": "docs/art-source/motions/production-144/daiichi_ruby/clean-alpha.png",
+      "sourceSha256": "7ae206a42215764f84491ba6120124196a9e41187c8e6572bf9eb4363c67b393",
+      "crop": [
+        45,
+        559,
+        237,
+        788
+      ],
+      "destination": [
+        21,
+        265,
+        85,
+        101
+      ]
+    },
+    {
+      "frame": 9,
+      "sourceFrame": 9,
+      "source": "docs/art-source/motions/production-144/daiichi_ruby/clean-alpha.png",
+      "sourceSha256": "7ae206a42215764f84491ba6120124196a9e41187c8e6572bf9eb4363c67b393",
+      "crop": [
+        283,
+        561,
+        458,
+        788
+      ],
+      "destination": [
+        153,
+        266,
+        77,
+        100
+      ]
+    },
+    {
+      "frame": 10,
+      "sourceFrame": 10,
+      "source": "docs/art-source/motions/production-144/daiichi_ruby/clean-alpha.png",
+      "sourceSha256": "7ae206a42215764f84491ba6120124196a9e41187c8e6572bf9eb4363c67b393",
+      "crop": [
+        546,
+        557,
+        751,
+        788
+      ],
+      "destination": [
+        275,
+        264,
+        90,
+        102
+      ]
+    },
+    {
+      "frame": 11,
+      "sourceFrame": 11,
+      "source": "docs/art-source/motions/production-144/daiichi_ruby/clean-alpha.png",
+      "sourceSha256": "7ae206a42215764f84491ba6120124196a9e41187c8e6572bf9eb4363c67b393",
+      "crop": [
+        809,
+        561,
+        963,
+        788
+      ],
+      "destination": [
+        414,
+        266,
+        68,
+        100
+      ]
+    },
+    {
+      "frame": 12,
+      "sourceFrame": 12,
+      "source": "docs/art-source/motions/production-144/daiichi_ruby/clean-alpha.png",
+      "sourceSha256": "7ae206a42215764f84491ba6120124196a9e41187c8e6572bf9eb4363c67b393",
+      "crop": [
+        38,
+        810,
+        235,
+        1039
+      ],
+      "destination": [
+        20,
+        393,
+        87,
+        101
+      ]
+    },
+    {
+      "frame": 13,
+      "sourceFrame": 13,
+      "source": "docs/art-source/motions/production-144/daiichi_ruby/clean-alpha.png",
+      "sourceSha256": "7ae206a42215764f84491ba6120124196a9e41187c8e6572bf9eb4363c67b393",
+      "crop": [
+        286,
+        816,
+        494,
+        1039
+      ],
+      "destination": [
+        146,
+        396,
+        92,
+        98
+      ]
+    },
+    {
+      "frame": 14,
+      "sourceFrame": 14,
+      "source": "docs/art-source/motions/production-144/daiichi_ruby/clean-alpha.png",
+      "sourceSha256": "7ae206a42215764f84491ba6120124196a9e41187c8e6572bf9eb4363c67b393",
+      "crop": [
+        540,
+        814,
+        755,
+        1039
+      ],
+      "destination": [
+        272,
+        395,
+        95,
+        99
+      ]
+    },
+    {
+      "frame": 15,
+      "sourceFrame": 15,
+      "source": "docs/art-source/motions/production-144/daiichi_ruby/clean-alpha.png",
+      "sourceSha256": "7ae206a42215764f84491ba6120124196a9e41187c8e6572bf9eb4363c67b393",
+      "crop": [
+        816,
+        809,
+        963,
+        1039
+      ],
+      "destination": [
+        415,
+        393,
+        65,
+        101
+      ]
+    },
+    {
+      "frame": 16,
+      "sourceFrame": 16,
+      "source": "docs/art-source/motions/production-144/daiichi_ruby/clean-alpha.png",
+      "sourceSha256": "7ae206a42215764f84491ba6120124196a9e41187c8e6572bf9eb4363c67b393",
+      "crop": [
+        47,
+        1076,
+        221,
+        1275
+      ],
+      "destination": [
+        25,
+        534,
+        77,
+        88
+      ]
+    },
+    {
+      "frame": 17,
+      "sourceFrame": 17,
+      "source": "docs/art-source/motions/production-144/daiichi_ruby/clean-alpha.png",
+      "sourceSha256": "7ae206a42215764f84491ba6120124196a9e41187c8e6572bf9eb4363c67b393",
+      "crop": [
+        293,
+        1105,
+        483,
+        1273
+      ],
+      "destination": [
+        150,
+        548,
+        84,
+        74
+      ]
+    },
+    {
+      "frame": 18,
+      "sourceFrame": 18,
+      "source": "docs/art-source/motions/production-144/daiichi_ruby/clean-alpha.png",
+      "sourceSha256": "7ae206a42215764f84491ba6120124196a9e41187c8e6572bf9eb4363c67b393",
+      "crop": [
+        544,
+        1104,
+        707,
+        1273
+      ],
+      "destination": [
+        284,
+        548,
+        72,
+        74
+      ]
+    },
+    {
+      "frame": 19,
+      "sourceFrame": 19,
+      "source": "docs/art-source/motions/production-144/daiichi_ruby/clean-alpha.png",
+      "sourceSha256": "7ae206a42215764f84491ba6120124196a9e41187c8e6572bf9eb4363c67b393",
+      "crop": [
+        770,
+        1170,
+        998,
+        1269
+      ],
+      "destination": [
+        398,
+        578,
+        100,
+        44
+      ]
+    },
+    {
+      "frame": 20,
+      "sourceFrame": 20,
+      "source": "docs/art-source/motions/production-144/daiichi_ruby/clean-alpha.png",
+      "sourceSha256": "7ae206a42215764f84491ba6120124196a9e41187c8e6572bf9eb4363c67b393",
+      "crop": [
+        52,
+        1292,
+        201,
+        1525
+      ],
+      "destination": [
+        31,
+        647,
+        66,
+        103
+      ]
+    },
+    {
+      "frame": 21,
+      "sourceFrame": 21,
+      "source": "docs/art-source/motions/production-144/daiichi_ruby/clean-alpha.png",
+      "sourceSha256": "7ae206a42215764f84491ba6120124196a9e41187c8e6572bf9eb4363c67b393",
+      "crop": [
+        312,
+        1293,
+        468,
+        1524
+      ],
+      "destination": [
+        157,
+        648,
+        69,
+        102
+      ]
+    },
+    {
+      "frame": 22,
+      "sourceFrame": 22,
+      "source": "docs/art-source/motions/production-144/daiichi_ruby/clean-alpha.png",
+      "sourceSha256": "7ae206a42215764f84491ba6120124196a9e41187c8e6572bf9eb4363c67b393",
+      "crop": [
+        562,
+        1289,
+        735,
+        1525
+      ],
+      "destination": [
+        282,
+        646,
+        76,
+        104
+      ]
+    },
+    {
+      "frame": 23,
+      "sourceFrame": 23,
+      "source": "docs/art-source/motions/production-144/daiichi_ruby/clean-alpha.png",
+      "sourceSha256": "7ae206a42215764f84491ba6120124196a9e41187c8e6572bf9eb4363c67b393",
+      "crop": [
+        808,
+        1291,
+        960,
+        1524
+      ],
+      "destination": [
+        414,
+        647,
+        67,
+        103
+      ]
+    }
+  ]
+}

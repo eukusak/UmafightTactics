@@ -1,0 +1,443 @@
+{
+  "format": "uft-baked-frames-v1",
+  "scale": 0.41767068273092367,
+  "anchor": [
+    64,
+    110
+  ],
+  "runtimeSha256": "4d8be99bb61626cd2f5a53b4c2bdaf14416f8509c96bf2a796f5830a02636586",
+  "frames": [
+    {
+      "frame": 0,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/production-144/tap_dance_city/alpha.png",
+      "sourceSha256": "20fc0b8e3e77a7a5b84e26c19bf24f1e9d7fe5330d162ea3e592e9e10717559e",
+      "crop": [
+        64,
+        18,
+        205,
+        266
+      ],
+      "destination": [
+        34,
+        6,
+        59,
+        104
+      ]
+    },
+    {
+      "frame": 1,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/production-144/tap_dance_city/alpha.png",
+      "sourceSha256": "20fc0b8e3e77a7a5b84e26c19bf24f1e9d7fe5330d162ea3e592e9e10717559e",
+      "crop": [
+        315,
+        17,
+        451,
+        266
+      ],
+      "destination": [
+        163,
+        6,
+        57,
+        104
+      ]
+    },
+    {
+      "frame": 2,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/production-144/tap_dance_city/alpha.png",
+      "sourceSha256": "20fc0b8e3e77a7a5b84e26c19bf24f1e9d7fe5330d162ea3e592e9e10717559e",
+      "crop": [
+        565,
+        17,
+        698,
+        266
+      ],
+      "destination": [
+        292,
+        6,
+        56,
+        104
+      ]
+    },
+    {
+      "frame": 3,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/production-144/tap_dance_city/alpha.png",
+      "sourceSha256": "20fc0b8e3e77a7a5b84e26c19bf24f1e9d7fe5330d162ea3e592e9e10717559e",
+      "crop": [
+        824,
+        17,
+        958,
+        266
+      ],
+      "destination": [
+        420,
+        6,
+        56,
+        104
+      ]
+    },
+    {
+      "frame": 4,
+      "sourceFrame": 4,
+      "source": "docs/art-source/motions/production-144/tap_dance_city/alpha.png",
+      "sourceSha256": "20fc0b8e3e77a7a5b84e26c19bf24f1e9d7fe5330d162ea3e592e9e10717559e",
+      "crop": [
+        42,
+        278,
+        216,
+        513
+      ],
+      "destination": [
+        27,
+        140,
+        73,
+        98
+      ]
+    },
+    {
+      "frame": 5,
+      "sourceFrame": 5,
+      "source": "docs/art-source/motions/production-144/tap_dance_city/alpha.png",
+      "sourceSha256": "20fc0b8e3e77a7a5b84e26c19bf24f1e9d7fe5330d162ea3e592e9e10717559e",
+      "crop": [
+        288,
+        281,
+        477,
+        513
+      ],
+      "destination": [
+        152,
+        141,
+        79,
+        97
+      ]
+    },
+    {
+      "frame": 6,
+      "sourceFrame": 6,
+      "source": "docs/art-source/motions/production-144/tap_dance_city/alpha.png",
+      "sourceSha256": "20fc0b8e3e77a7a5b84e26c19bf24f1e9d7fe5330d162ea3e592e9e10717559e",
+      "crop": [
+        542,
+        278,
+        724,
+        508
+      ],
+      "destination": [
+        282,
+        142,
+        76,
+        96
+      ]
+    },
+    {
+      "frame": 7,
+      "sourceFrame": 7,
+      "source": "docs/art-source/motions/production-144/tap_dance_city/alpha.png",
+      "sourceSha256": "20fc0b8e3e77a7a5b84e26c19bf24f1e9d7fe5330d162ea3e592e9e10717559e",
+      "crop": [
+        798,
+        278,
+        985,
+        513
+      ],
+      "destination": [
+        409,
+        140,
+        78,
+        98
+      ]
+    },
+    {
+      "frame": 8,
+      "sourceFrame": 8,
+      "source": "docs/art-source/motions/production-144/tap_dance_city/alpha.png",
+      "sourceSha256": "20fc0b8e3e77a7a5b84e26c19bf24f1e9d7fe5330d162ea3e592e9e10717559e",
+      "crop": [
+        51,
+        533,
+        213,
+        769
+      ],
+      "destination": [
+        30,
+        267,
+        68,
+        99
+      ]
+    },
+    {
+      "frame": 9,
+      "sourceFrame": 9,
+      "source": "docs/art-source/motions/production-144/tap_dance_city/alpha.png",
+      "sourceSha256": "20fc0b8e3e77a7a5b84e26c19bf24f1e9d7fe5330d162ea3e592e9e10717559e",
+      "crop": [
+        304,
+        533,
+        482,
+        769
+      ],
+      "destination": [
+        155,
+        267,
+        74,
+        99
+      ]
+    },
+    {
+      "frame": 10,
+      "sourceFrame": 10,
+      "source": "docs/art-source/motions/production-144/tap_dance_city/alpha.png",
+      "sourceSha256": "20fc0b8e3e77a7a5b84e26c19bf24f1e9d7fe5330d162ea3e592e9e10717559e",
+      "crop": [
+        552,
+        535,
+        768,
+        769
+      ],
+      "destination": [
+        275,
+        268,
+        90,
+        98
+      ]
+    },
+    {
+      "frame": 11,
+      "sourceFrame": 11,
+      "source": "docs/art-source/motions/production-144/tap_dance_city/alpha.png",
+      "sourceSha256": "20fc0b8e3e77a7a5b84e26c19bf24f1e9d7fe5330d162ea3e592e9e10717559e",
+      "crop": [
+        816,
+        533,
+        971,
+        769
+      ],
+      "destination": [
+        415,
+        267,
+        65,
+        99
+      ]
+    },
+    {
+      "frame": 12,
+      "sourceFrame": 12,
+      "source": "docs/art-source/motions/production-144/tap_dance_city/alpha.png",
+      "sourceSha256": "20fc0b8e3e77a7a5b84e26c19bf24f1e9d7fe5330d162ea3e592e9e10717559e",
+      "crop": [
+        65,
+        791,
+        211,
+        1040
+      ],
+      "destination": [
+        33,
+        390,
+        61,
+        104
+      ]
+    },
+    {
+      "frame": 13,
+      "sourceFrame": 13,
+      "source": "docs/art-source/motions/production-144/tap_dance_city/alpha.png",
+      "sourceSha256": "20fc0b8e3e77a7a5b84e26c19bf24f1e9d7fe5330d162ea3e592e9e10717559e",
+      "crop": [
+        323,
+        791,
+        470,
+        1040
+      ],
+      "destination": [
+        161,
+        390,
+        61,
+        104
+      ]
+    },
+    {
+      "frame": 14,
+      "sourceFrame": 14,
+      "source": "docs/art-source/motions/production-144/tap_dance_city/alpha.png",
+      "sourceSha256": "20fc0b8e3e77a7a5b84e26c19bf24f1e9d7fe5330d162ea3e592e9e10717559e",
+      "crop": [
+        553,
+        794,
+        768,
+        1040
+      ],
+      "destination": [
+        275,
+        391,
+        90,
+        103
+      ]
+    },
+    {
+      "frame": 15,
+      "sourceFrame": 15,
+      "source": "docs/art-source/motions/production-144/tap_dance_city/alpha.png",
+      "sourceSha256": "20fc0b8e3e77a7a5b84e26c19bf24f1e9d7fe5330d162ea3e592e9e10717559e",
+      "crop": [
+        821,
+        793,
+        977,
+        1040
+      ],
+      "destination": [
+        415,
+        391,
+        65,
+        103
+      ]
+    },
+    {
+      "frame": 16,
+      "sourceFrame": 16,
+      "source": "docs/art-source/motions/production-144/tap_dance_city/alpha.png",
+      "sourceSha256": "20fc0b8e3e77a7a5b84e26c19bf24f1e9d7fe5330d162ea3e592e9e10717559e",
+      "crop": [
+        59,
+        1061,
+        209,
+        1264
+      ],
+      "destination": [
+        32,
+        537,
+        63,
+        85
+      ]
+    },
+    {
+      "frame": 17,
+      "sourceFrame": 17,
+      "source": "docs/art-source/motions/production-144/tap_dance_city/alpha.png",
+      "sourceSha256": "20fc0b8e3e77a7a5b84e26c19bf24f1e9d7fe5330d162ea3e592e9e10717559e",
+      "crop": [
+        307,
+        1071,
+        466,
+        1263
+      ],
+      "destination": [
+        159,
+        542,
+        66,
+        80
+      ]
+    },
+    {
+      "frame": 18,
+      "sourceFrame": 18,
+      "source": "docs/art-source/motions/production-144/tap_dance_city/alpha.png",
+      "sourceSha256": "20fc0b8e3e77a7a5b84e26c19bf24f1e9d7fe5330d162ea3e592e9e10717559e",
+      "crop": [
+        544,
+        1102,
+        714,
+        1259
+      ],
+      "destination": [
+        284,
+        556,
+        71,
+        66
+      ]
+    },
+    {
+      "frame": 19,
+      "sourceFrame": 19,
+      "source": "docs/art-source/motions/production-144/tap_dance_city/alpha.png",
+      "sourceSha256": "20fc0b8e3e77a7a5b84e26c19bf24f1e9d7fe5330d162ea3e592e9e10717559e",
+      "crop": [
+        785,
+        1157,
+        1000,
+        1256
+      ],
+      "destination": [
+        403,
+        581,
+        90,
+        41
+      ]
+    },
+    {
+      "frame": 20,
+      "sourceFrame": 20,
+      "source": "docs/art-source/motions/production-144/tap_dance_city/alpha.png",
+      "sourceSha256": "20fc0b8e3e77a7a5b84e26c19bf24f1e9d7fe5330d162ea3e592e9e10717559e",
+      "crop": [
+        60,
+        1279,
+        204,
+        1523
+      ],
+      "destination": [
+        34,
+        648,
+        60,
+        102
+      ]
+    },
+    {
+      "frame": 21,
+      "sourceFrame": 21,
+      "source": "docs/art-source/motions/production-144/tap_dance_city/alpha.png",
+      "sourceSha256": "20fc0b8e3e77a7a5b84e26c19bf24f1e9d7fe5330d162ea3e592e9e10717559e",
+      "crop": [
+        310,
+        1279,
+        479,
+        1521
+      ],
+      "destination": [
+        156,
+        649,
+        71,
+        101
+      ]
+    },
+    {
+      "frame": 22,
+      "sourceFrame": 22,
+      "source": "docs/art-source/motions/production-144/tap_dance_city/alpha.png",
+      "sourceSha256": "20fc0b8e3e77a7a5b84e26c19bf24f1e9d7fe5330d162ea3e592e9e10717559e",
+      "crop": [
+        562,
+        1279,
+        706,
+        1523
+      ],
+      "destination": [
+        290,
+        648,
+        60,
+        102
+      ]
+    },
+    {
+      "frame": 23,
+      "sourceFrame": 23,
+      "source": "docs/art-source/motions/production-144/tap_dance_city/alpha.png",
+      "sourceSha256": "20fc0b8e3e77a7a5b84e26c19bf24f1e9d7fe5330d162ea3e592e9e10717559e",
+      "crop": [
+        829,
+        1279,
+        965,
+        1524
+      ],
+      "destination": [
+        419,
+        648,
+        57,
+        102
+      ]
+    }
+  ]
+}

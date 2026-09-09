@@ -1,0 +1,443 @@
+{
+  "format": "uft-baked-frames-v1",
+  "scale": 0.43333333333333335,
+  "anchor": [
+    64,
+    110
+  ],
+  "runtimeSha256": "124ba850690702b15a09f56b975e30f971329f9ce8fb370b82136f8c858e2159",
+  "frames": [
+    {
+      "frame": 0,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/production-144/nishino_flower/alpha.png",
+      "sourceSha256": "0709fe771c7f15cad40215aaafd2fae99d8cc87558183f00261f94efc2f653b9",
+      "crop": [
+        45,
+        19,
+        185,
+        256
+      ],
+      "destination": [
+        33,
+        7,
+        61,
+        103
+      ]
+    },
+    {
+      "frame": 1,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/production-144/nishino_flower/alpha.png",
+      "sourceSha256": "0709fe771c7f15cad40215aaafd2fae99d8cc87558183f00261f94efc2f653b9",
+      "crop": [
+        318,
+        21,
+        458,
+        256
+      ],
+      "destination": [
+        161,
+        8,
+        61,
+        102
+      ]
+    },
+    {
+      "frame": 2,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/production-144/nishino_flower/alpha.png",
+      "sourceSha256": "0709fe771c7f15cad40215aaafd2fae99d8cc87558183f00261f94efc2f653b9",
+      "crop": [
+        563,
+        23,
+        698,
+        256
+      ],
+      "destination": [
+        291,
+        9,
+        58,
+        101
+      ]
+    },
+    {
+      "frame": 3,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/production-144/nishino_flower/alpha.png",
+      "sourceSha256": "0709fe771c7f15cad40215aaafd2fae99d8cc87558183f00261f94efc2f653b9",
+      "crop": [
+        825,
+        21,
+        962,
+        256
+      ],
+      "destination": [
+        418,
+        8,
+        59,
+        102
+      ]
+    },
+    {
+      "frame": 4,
+      "sourceFrame": 4,
+      "source": "docs/art-source/motions/production-144/nishino_flower/alpha.png",
+      "sourceSha256": "0709fe771c7f15cad40215aaafd2fae99d8cc87558183f00261f94efc2f653b9",
+      "crop": [
+        30,
+        279,
+        214,
+        504
+      ],
+      "destination": [
+        24,
+        140,
+        80,
+        98
+      ]
+    },
+    {
+      "frame": 5,
+      "sourceFrame": 5,
+      "source": "docs/art-source/motions/production-144/nishino_flower/alpha.png",
+      "sourceSha256": "0709fe771c7f15cad40215aaafd2fae99d8cc87558183f00261f94efc2f653b9",
+      "crop": [
+        301,
+        280,
+        474,
+        505
+      ],
+      "destination": [
+        154,
+        140,
+        75,
+        98
+      ]
+    },
+    {
+      "frame": 6,
+      "sourceFrame": 6,
+      "source": "docs/art-source/motions/production-144/nishino_flower/alpha.png",
+      "sourceSha256": "0709fe771c7f15cad40215aaafd2fae99d8cc87558183f00261f94efc2f653b9",
+      "crop": [
+        551,
+        279,
+        738,
+        510
+      ],
+      "destination": [
+        279,
+        138,
+        81,
+        100
+      ]
+    },
+    {
+      "frame": 7,
+      "sourceFrame": 7,
+      "source": "docs/art-source/motions/production-144/nishino_flower/alpha.png",
+      "sourceSha256": "0709fe771c7f15cad40215aaafd2fae99d8cc87558183f00261f94efc2f653b9",
+      "crop": [
+        808,
+        283,
+        986,
+        509
+      ],
+      "destination": [
+        409,
+        140,
+        77,
+        98
+      ]
+    },
+    {
+      "frame": 8,
+      "sourceFrame": 8,
+      "source": "docs/art-source/motions/production-144/nishino_flower/alpha.png",
+      "sourceSha256": "0709fe771c7f15cad40215aaafd2fae99d8cc87558183f00261f94efc2f653b9",
+      "crop": [
+        33,
+        533,
+        224,
+        756
+      ],
+      "destination": [
+        22,
+        269,
+        83,
+        97
+      ]
+    },
+    {
+      "frame": 9,
+      "sourceFrame": 9,
+      "source": "docs/art-source/motions/production-144/nishino_flower/alpha.png",
+      "sourceSha256": "0709fe771c7f15cad40215aaafd2fae99d8cc87558183f00261f94efc2f653b9",
+      "crop": [
+        291,
+        537,
+        465,
+        758
+      ],
+      "destination": [
+        154,
+        270,
+        75,
+        96
+      ]
+    },
+    {
+      "frame": 10,
+      "sourceFrame": 10,
+      "source": "docs/art-source/motions/production-144/nishino_flower/alpha.png",
+      "sourceSha256": "0709fe771c7f15cad40215aaafd2fae99d8cc87558183f00261f94efc2f653b9",
+      "crop": [
+        535,
+        540,
+        757,
+        754
+      ],
+      "destination": [
+        272,
+        273,
+        96,
+        93
+      ]
+    },
+    {
+      "frame": 11,
+      "sourceFrame": 11,
+      "source": "docs/art-source/motions/production-144/nishino_flower/alpha.png",
+      "sourceSha256": "0709fe771c7f15cad40215aaafd2fae99d8cc87558183f00261f94efc2f653b9",
+      "crop": [
+        817,
+        532,
+        975,
+        761
+      ],
+      "destination": [
+        414,
+        267,
+        68,
+        99
+      ]
+    },
+    {
+      "frame": 12,
+      "sourceFrame": 12,
+      "source": "docs/art-source/motions/production-144/nishino_flower/alpha.png",
+      "sourceSha256": "0709fe771c7f15cad40215aaafd2fae99d8cc87558183f00261f94efc2f653b9",
+      "crop": [
+        32,
+        816,
+        208,
+        1011
+      ],
+      "destination": [
+        26,
+        410,
+        76,
+        84
+      ]
+    },
+    {
+      "frame": 13,
+      "sourceFrame": 13,
+      "source": "docs/art-source/motions/production-144/nishino_flower/alpha.png",
+      "sourceSha256": "0709fe771c7f15cad40215aaafd2fae99d8cc87558183f00261f94efc2f653b9",
+      "crop": [
+        277,
+        812,
+        475,
+        1002
+      ],
+      "destination": [
+        149,
+        412,
+        86,
+        82
+      ]
+    },
+    {
+      "frame": 14,
+      "sourceFrame": 14,
+      "source": "docs/art-source/motions/production-144/nishino_flower/alpha.png",
+      "sourceSha256": "0709fe771c7f15cad40215aaafd2fae99d8cc87558183f00261f94efc2f653b9",
+      "crop": [
+        530,
+        842,
+        745,
+        1006
+      ],
+      "destination": [
+        273,
+        423,
+        93,
+        71
+      ]
+    },
+    {
+      "frame": 15,
+      "sourceFrame": 15,
+      "source": "docs/art-source/motions/production-144/nishino_flower/alpha.png",
+      "sourceSha256": "0709fe771c7f15cad40215aaafd2fae99d8cc87558183f00261f94efc2f653b9",
+      "crop": [
+        814,
+        835,
+        1000,
+        1006
+      ],
+      "destination": [
+        407,
+        420,
+        81,
+        74
+      ]
+    },
+    {
+      "frame": 16,
+      "sourceFrame": 16,
+      "source": "docs/art-source/motions/production-144/nishino_flower/alpha.png",
+      "sourceSha256": "0709fe771c7f15cad40215aaafd2fae99d8cc87558183f00261f94efc2f653b9",
+      "crop": [
+        44,
+        1041,
+        209,
+        1264
+      ],
+      "destination": [
+        28,
+        525,
+        72,
+        97
+      ]
+    },
+    {
+      "frame": 17,
+      "sourceFrame": 17,
+      "source": "docs/art-source/motions/production-144/nishino_flower/alpha.png",
+      "sourceSha256": "0709fe771c7f15cad40215aaafd2fae99d8cc87558183f00261f94efc2f653b9",
+      "crop": [
+        295,
+        1070,
+        479,
+        1253
+      ],
+      "destination": [
+        152,
+        543,
+        80,
+        79
+      ]
+    },
+    {
+      "frame": 18,
+      "sourceFrame": 18,
+      "source": "docs/art-source/motions/production-144/nishino_flower/alpha.png",
+      "sourceSha256": "0709fe771c7f15cad40215aaafd2fae99d8cc87558183f00261f94efc2f653b9",
+      "crop": [
+        553,
+        1081,
+        714,
+        1251
+      ],
+      "destination": [
+        285,
+        548,
+        70,
+        74
+      ]
+    },
+    {
+      "frame": 19,
+      "sourceFrame": 19,
+      "source": "docs/art-source/motions/production-144/nishino_flower/alpha.png",
+      "sourceSha256": "0709fe771c7f15cad40215aaafd2fae99d8cc87558183f00261f94efc2f653b9",
+      "crop": [
+        789,
+        1149,
+        1002,
+        1250
+      ],
+      "destination": [
+        402,
+        578,
+        92,
+        44
+      ]
+    },
+    {
+      "frame": 20,
+      "sourceFrame": 20,
+      "source": "docs/art-source/motions/production-144/nishino_flower/alpha.png",
+      "sourceSha256": "0709fe771c7f15cad40215aaafd2fae99d8cc87558183f00261f94efc2f653b9",
+      "crop": [
+        43,
+        1286,
+        194,
+        1517
+      ],
+      "destination": [
+        31,
+        650,
+        65,
+        100
+      ]
+    },
+    {
+      "frame": 21,
+      "sourceFrame": 21,
+      "source": "docs/art-source/motions/production-144/nishino_flower/alpha.png",
+      "sourceSha256": "0709fe771c7f15cad40215aaafd2fae99d8cc87558183f00261f94efc2f653b9",
+      "crop": [
+        306,
+        1280,
+        457,
+        1520
+      ],
+      "destination": [
+        159,
+        646,
+        65,
+        104
+      ]
+    },
+    {
+      "frame": 22,
+      "sourceFrame": 22,
+      "source": "docs/art-source/motions/production-144/nishino_flower/alpha.png",
+      "sourceSha256": "0709fe771c7f15cad40215aaafd2fae99d8cc87558183f00261f94efc2f653b9",
+      "crop": [
+        568,
+        1283,
+        704,
+        1519
+      ],
+      "destination": [
+        290,
+        648,
+        59,
+        102
+      ]
+    },
+    {
+      "frame": 23,
+      "sourceFrame": 23,
+      "source": "docs/art-source/motions/production-144/nishino_flower/alpha.png",
+      "sourceSha256": "0709fe771c7f15cad40215aaafd2fae99d8cc87558183f00261f94efc2f653b9",
+      "crop": [
+        813,
+        1286,
+        967,
+        1518
+      ],
+      "destination": [
+        414,
+        649,
+        67,
+        101
+      ]
+    }
+  ]
+}

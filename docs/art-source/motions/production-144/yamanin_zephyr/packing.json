@@ -1,0 +1,443 @@
+{
+  "format": "uft-baked-frames-v1",
+  "scale": 0.4369747899159664,
+  "anchor": [
+    64,
+    110
+  ],
+  "runtimeSha256": "b9d6d1d0684e02bd22905c57813cd857f9c3a65dd4d56df0069a918a19f1a617",
+  "frames": [
+    {
+      "frame": 0,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/production-144/yamanin_zephyr/alpha.png",
+      "sourceSha256": "c7d23ce1d14b6cca74cff066b8895548421534f629b858cede2c108f20a35d9f",
+      "crop": [
+        43,
+        36,
+        198,
+        262
+      ],
+      "destination": [
+        30,
+        11,
+        68,
+        99
+      ]
+    },
+    {
+      "frame": 1,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/production-144/yamanin_zephyr/alpha.png",
+      "sourceSha256": "c7d23ce1d14b6cca74cff066b8895548421534f629b858cede2c108f20a35d9f",
+      "crop": [
+        299,
+        36,
+        457,
+        262
+      ],
+      "destination": [
+        157,
+        11,
+        69,
+        99
+      ]
+    },
+    {
+      "frame": 2,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/production-144/yamanin_zephyr/alpha.png",
+      "sourceSha256": "c7d23ce1d14b6cca74cff066b8895548421534f629b858cede2c108f20a35d9f",
+      "crop": [
+        552,
+        33,
+        710,
+        262
+      ],
+      "destination": [
+        285,
+        10,
+        69,
+        100
+      ]
+    },
+    {
+      "frame": 3,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/production-144/yamanin_zephyr/alpha.png",
+      "sourceSha256": "c7d23ce1d14b6cca74cff066b8895548421534f629b858cede2c108f20a35d9f",
+      "crop": [
+        810,
+        36,
+        966,
+        262
+      ],
+      "destination": [
+        414,
+        11,
+        68,
+        99
+      ]
+    },
+    {
+      "frame": 4,
+      "sourceFrame": 4,
+      "source": "docs/art-source/motions/production-144/yamanin_zephyr/alpha.png",
+      "sourceSha256": "c7d23ce1d14b6cca74cff066b8895548421534f629b858cede2c108f20a35d9f",
+      "crop": [
+        32,
+        290,
+        221,
+        519
+      ],
+      "destination": [
+        22,
+        138,
+        83,
+        100
+      ]
+    },
+    {
+      "frame": 5,
+      "sourceFrame": 5,
+      "source": "docs/art-source/motions/production-144/yamanin_zephyr/alpha.png",
+      "sourceSha256": "c7d23ce1d14b6cca74cff066b8895548421534f629b858cede2c108f20a35d9f",
+      "crop": [
+        281,
+        287,
+        476,
+        519
+      ],
+      "destination": [
+        149,
+        137,
+        85,
+        101
+      ]
+    },
+    {
+      "frame": 6,
+      "sourceFrame": 6,
+      "source": "docs/art-source/motions/production-144/yamanin_zephyr/alpha.png",
+      "sourceSha256": "c7d23ce1d14b6cca74cff066b8895548421534f629b858cede2c108f20a35d9f",
+      "crop": [
+        542,
+        288,
+        737,
+        519
+      ],
+      "destination": [
+        277,
+        137,
+        85,
+        101
+      ]
+    },
+    {
+      "frame": 7,
+      "sourceFrame": 7,
+      "source": "docs/art-source/motions/production-144/yamanin_zephyr/alpha.png",
+      "sourceSha256": "c7d23ce1d14b6cca74cff066b8895548421534f629b858cede2c108f20a35d9f",
+      "crop": [
+        800,
+        289,
+        985,
+        519
+      ],
+      "destination": [
+        407,
+        137,
+        81,
+        101
+      ]
+    },
+    {
+      "frame": 8,
+      "sourceFrame": 8,
+      "source": "docs/art-source/motions/production-144/yamanin_zephyr/alpha.png",
+      "sourceSha256": "c7d23ce1d14b6cca74cff066b8895548421534f629b858cede2c108f20a35d9f",
+      "crop": [
+        28,
+        544,
+        246,
+        768
+      ],
+      "destination": [
+        16,
+        268,
+        95,
+        98
+      ]
+    },
+    {
+      "frame": 9,
+      "sourceFrame": 9,
+      "source": "docs/art-source/motions/production-144/yamanin_zephyr/alpha.png",
+      "sourceSha256": "c7d23ce1d14b6cca74cff066b8895548421534f629b858cede2c108f20a35d9f",
+      "crop": [
+        293,
+        543,
+        483,
+        768
+      ],
+      "destination": [
+        150,
+        268,
+        83,
+        98
+      ]
+    },
+    {
+      "frame": 10,
+      "sourceFrame": 10,
+      "source": "docs/art-source/motions/production-144/yamanin_zephyr/alpha.png",
+      "sourceSha256": "c7d23ce1d14b6cca74cff066b8895548421534f629b858cede2c108f20a35d9f",
+      "crop": [
+        531,
+        544,
+        746,
+        768
+      ],
+      "destination": [
+        273,
+        268,
+        94,
+        98
+      ]
+    },
+    {
+      "frame": 11,
+      "sourceFrame": 11,
+      "source": "docs/art-source/motions/production-144/yamanin_zephyr/alpha.png",
+      "sourceSha256": "c7d23ce1d14b6cca74cff066b8895548421534f629b858cede2c108f20a35d9f",
+      "crop": [
+        804,
+        547,
+        981,
+        768
+      ],
+      "destination": [
+        409,
+        269,
+        77,
+        97
+      ]
+    },
+    {
+      "frame": 12,
+      "sourceFrame": 12,
+      "source": "docs/art-source/motions/production-144/yamanin_zephyr/alpha.png",
+      "sourceSha256": "c7d23ce1d14b6cca74cff066b8895548421534f629b858cede2c108f20a35d9f",
+      "crop": [
+        45,
+        785,
+        210,
+        1019
+      ],
+      "destination": [
+        28,
+        392,
+        72,
+        102
+      ]
+    },
+    {
+      "frame": 13,
+      "sourceFrame": 13,
+      "source": "docs/art-source/motions/production-144/yamanin_zephyr/alpha.png",
+      "sourceSha256": "c7d23ce1d14b6cca74cff066b8895548421534f629b858cede2c108f20a35d9f",
+      "crop": [
+        297,
+        786,
+        490,
+        1021
+      ],
+      "destination": [
+        150,
+        391,
+        84,
+        103
+      ]
+    },
+    {
+      "frame": 14,
+      "sourceFrame": 14,
+      "source": "docs/art-source/motions/production-144/yamanin_zephyr/alpha.png",
+      "sourceSha256": "c7d23ce1d14b6cca74cff066b8895548421534f629b858cede2c108f20a35d9f",
+      "crop": [
+        548,
+        787,
+        743,
+        1021
+      ],
+      "destination": [
+        277,
+        392,
+        85,
+        102
+      ]
+    },
+    {
+      "frame": 15,
+      "sourceFrame": 15,
+      "source": "docs/art-source/motions/production-144/yamanin_zephyr/alpha.png",
+      "sourceSha256": "c7d23ce1d14b6cca74cff066b8895548421534f629b858cede2c108f20a35d9f",
+      "crop": [
+        820,
+        784,
+        974,
+        1020
+      ],
+      "destination": [
+        414,
+        391,
+        67,
+        103
+      ]
+    },
+    {
+      "frame": 16,
+      "sourceFrame": 16,
+      "source": "docs/art-source/motions/production-144/yamanin_zephyr/alpha.png",
+      "sourceSha256": "c7d23ce1d14b6cca74cff066b8895548421534f629b858cede2c108f20a35d9f",
+      "crop": [
+        38,
+        1046,
+        222,
+        1261
+      ],
+      "destination": [
+        24,
+        528,
+        80,
+        94
+      ]
+    },
+    {
+      "frame": 17,
+      "sourceFrame": 17,
+      "source": "docs/art-source/motions/production-144/yamanin_zephyr/alpha.png",
+      "sourceSha256": "c7d23ce1d14b6cca74cff066b8895548421534f629b858cede2c108f20a35d9f",
+      "crop": [
+        292,
+        1067,
+        472,
+        1255
+      ],
+      "destination": [
+        152,
+        540,
+        79,
+        82
+      ]
+    },
+    {
+      "frame": 18,
+      "sourceFrame": 18,
+      "source": "docs/art-source/motions/production-144/yamanin_zephyr/alpha.png",
+      "sourceSha256": "c7d23ce1d14b6cca74cff066b8895548421534f629b858cede2c108f20a35d9f",
+      "crop": [
+        551,
+        1080,
+        728,
+        1256
+      ],
+      "destination": [
+        281,
+        545,
+        77,
+        77
+      ]
+    },
+    {
+      "frame": 19,
+      "sourceFrame": 19,
+      "source": "docs/art-source/motions/production-144/yamanin_zephyr/alpha.png",
+      "sourceSha256": "c7d23ce1d14b6cca74cff066b8895548421534f629b858cede2c108f20a35d9f",
+      "crop": [
+        780,
+        1154,
+        1004,
+        1252
+      ],
+      "destination": [
+        399,
+        579,
+        98,
+        43
+      ]
+    },
+    {
+      "frame": 20,
+      "sourceFrame": 20,
+      "source": "docs/art-source/motions/production-144/yamanin_zephyr/alpha.png",
+      "sourceSha256": "c7d23ce1d14b6cca74cff066b8895548421534f629b858cede2c108f20a35d9f",
+      "crop": [
+        47,
+        1279,
+        208,
+        1516
+      ],
+      "destination": [
+        29,
+        646,
+        70,
+        104
+      ]
+    },
+    {
+      "frame": 21,
+      "sourceFrame": 21,
+      "source": "docs/art-source/motions/production-144/yamanin_zephyr/alpha.png",
+      "sourceSha256": "c7d23ce1d14b6cca74cff066b8895548421534f629b858cede2c108f20a35d9f",
+      "crop": [
+        304,
+        1273,
+        474,
+        1511
+      ],
+      "destination": [
+        155,
+        646,
+        74,
+        104
+      ]
+    },
+    {
+      "frame": 22,
+      "sourceFrame": 22,
+      "source": "docs/art-source/motions/production-144/yamanin_zephyr/alpha.png",
+      "sourceSha256": "c7d23ce1d14b6cca74cff066b8895548421534f629b858cede2c108f20a35d9f",
+      "crop": [
+        555,
+        1280,
+        716,
+        1516
+      ],
+      "destination": [
+        285,
+        647,
+        70,
+        103
+      ]
+    },
+    {
+      "frame": 23,
+      "sourceFrame": 23,
+      "source": "docs/art-source/motions/production-144/yamanin_zephyr/alpha.png",
+      "sourceSha256": "c7d23ce1d14b6cca74cff066b8895548421534f629b858cede2c108f20a35d9f",
+      "crop": [
+        811,
+        1281,
+        969,
+        1517
+      ],
+      "destination": [
+        413,
+        647,
+        69,
+        103
+      ]
+    }
+  ]
+}
