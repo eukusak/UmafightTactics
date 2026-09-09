@@ -1,5 +1,5 @@
 {
-  "acceptedArt": 420,
+  "acceptedArt": 425,
   "baseCommit": "c662b5caae3a42a956796ccd6d974f5ec14f85fc",
   "batchSize": 10,
   "completedBatch": [
@@ -19,7 +19,7 @@
   "portraitTarget": 145,
   "remaining": {
     "portraits": 0,
-    "battleSheets": 94,
+    "battleSheets": 89,
     "cutins": 0
   },
   "requiredArt": 514,
@@ -81,11 +81,11 @@
   "latestValidation": "docs/qa/PR6_DESKTOP_MOTIONS_2026-09-09.md",
   "motionStatus": {
     "format": "24 poses; 4 columns x 6 rows; 512x768 RGBA runtime",
-    "characters": 51,
+    "characters": 56,
     "characterTarget": 145,
     "pve": 5,
     "pveTarget": 5,
-    "remainingCharacters": 94,
+    "remainingCharacters": 89,
     "registry": "src/data/manual/frame-sheets.json",
     "reservation": "docs/art-source/motions/desktop-reservation.json"
   }

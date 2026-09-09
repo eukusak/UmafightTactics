@@ -664,5 +664,65 @@
     "skillSignature": "dd47040d5dd6d7aa999745514a98401b338247667b11190d594a2f9d8a33fca6",
     "skillReview": "원거리 손짓 발사. 아군 전체 강화: 가슴 앞 집중 → 양팔 격려 → 팔을 펼친 지휘 → 강화 유지. 달리기 중간 자세와 방향 보정, 부유 장식 제거. 버건디 카디건, 줄무늬 조끼와 옆가리개 유지.",
     "skillReleaseFrame": 2
+  },
+  "epiphaneia": {
+    "file": "motions/epiphaneia.png",
+    "frameWidth": 128,
+    "frameHeight": 128,
+    "columns": 4,
+    "rows": 6,
+    "source": "docs/art-source/motions/production-144/epiphaneia/packing.json",
+    "skillId": "skill_epiphaneia",
+    "skillSignature": "83b205dcd1d173f0efcd015e0864202ab7c34b86895df45930ea8431e3dbf493",
+    "skillReview": "근접 손바닥 타격. 아군 전체 강화: 가슴 앞 집중 → 양팔 격려 → 팔을 펼친 지휘 → 강화 유지. 짧은 땋은 머리, 흰 망토, 짝이 다른 부츠 유지. 피해·치유 없음.",
+    "skillReleaseFrame": 2
+  },
+  "marche_lorraine": {
+    "file": "motions/marche_lorraine.png",
+    "frameWidth": 128,
+    "frameHeight": 128,
+    "columns": 4,
+    "rows": 6,
+    "source": "docs/art-source/motions/production-144/marche_lorraine/packing.json",
+    "skillId": "skill_marche_lorraine",
+    "skillSignature": "48dd047f762025aa264298a2d1f03e3ac199f10cc3ae8ac0dacaae68c97b6805",
+    "skillReview": "원거리 손짓 발사. 진로 봉쇄: 적 무리 지정 → 집중 → 양손 제압 방출 → 회복. 범위 마법피해·기절이며 자기 치명타 강화. 체크 모자·망토와 깃털 유지.",
+    "skillReleaseFrame": 2
+  },
+  "forever_young": {
+    "file": "motions/forever_young.png",
+    "frameWidth": 128,
+    "frameHeight": 128,
+    "columns": 4,
+    "rows": 6,
+    "source": "docs/art-source/motions/production-144/forever_young/packing.json",
+    "skillId": "skill_forever_young",
+    "skillSignature": "2c632da66946b45c992f1638fc736ca5f09ab233b30b332233d9a0bd55ce2c31",
+    "skillReview": "원거리 손짓 발사. 광역 폭발: 적 밀집 지점 조준 → 양팔 응축 → 전방 방출 → 반동 회복. 자기 이동속도 강화. 선글라스, 작은 모자, 붉은 긴 코트 유지.",
+    "skillReleaseFrame": 2
+  },
+  "kiseki": {
+    "file": "motions/kiseki.png",
+    "frameWidth": 128,
+    "frameHeight": 128,
+    "columns": 4,
+    "rows": 6,
+    "source": "docs/art-source/motions/production-144/kiseki/packing.json",
+    "skillId": "skill_kiseki",
+    "skillSignature": "998a7069b6643616e9c408bd21e6326b7215ba19f1a598523412a13aa08a8fe3",
+    "skillReview": "원거리 손짓 발사. 아군 전체 강화: 가슴 앞 집중 → 양팔 격려 → 팔을 펼친 지휘 → 강화 유지. 청록색 땋은 머리, 초록·흰 의상과 옆 장식천 유지. 피해·치유 없음.",
+    "skillReleaseFrame": 2
+  },
+  "red_desire": {
+    "file": "motions/red_desire.png",
+    "frameWidth": 128,
+    "frameHeight": 128,
+    "columns": 4,
+    "rows": 6,
+    "source": "docs/art-source/motions/production-144/red_desire/packing.json",
+    "skillId": "skill_red_desire",
+    "skillSignature": "a5801ca3c7b617c805d8d286b026df896dbd4b994ccbcc05b29afac289ad66b6",
+    "skillReview": "근접 손바닥 타격. 진로 봉쇄: 적 무리 지정 → 집중 → 양손 제압 방출 → 회복. 범위 마법피해·기절이며 자기 치명타 강화. 붉은 드레스, 흰 리본과 별 머리장식 유지.",
+    "skillReleaseFrame": 2
   }
 }

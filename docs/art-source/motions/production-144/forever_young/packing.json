@@ -1,0 +1,443 @@
+{
+  "format": "uft-baked-frames-v1",
+  "scale": 0.4015444015444015,
+  "anchor": [
+    64,
+    110
+  ],
+  "runtimeSha256": "9032b6de463b49eebbaaf4af94458312224edca3aad009822c633c229407177a",
+  "frames": [
+    {
+      "frame": 0,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/production-144/forever_young/alpha.png",
+      "sourceSha256": "dabccfdacae4bc8def7a13aabc033d3b241d07e181cf8fffa59c157c618ac48d",
+      "crop": [
+        28,
+        9,
+        202,
+        256
+      ],
+      "destination": [
+        29,
+        11,
+        70,
+        99
+      ]
+    },
+    {
+      "frame": 1,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/production-144/forever_young/alpha.png",
+      "sourceSha256": "dabccfdacae4bc8def7a13aabc033d3b241d07e181cf8fffa59c157c618ac48d",
+      "crop": [
+        284,
+        10,
+        458,
+        256
+      ],
+      "destination": [
+        157,
+        11,
+        70,
+        99
+      ]
+    },
+    {
+      "frame": 2,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/production-144/forever_young/alpha.png",
+      "sourceSha256": "dabccfdacae4bc8def7a13aabc033d3b241d07e181cf8fffa59c157c618ac48d",
+      "crop": [
+        532,
+        16,
+        714,
+        256
+      ],
+      "destination": [
+        283,
+        14,
+        73,
+        96
+      ]
+    },
+    {
+      "frame": 3,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/production-144/forever_young/alpha.png",
+      "sourceSha256": "dabccfdacae4bc8def7a13aabc033d3b241d07e181cf8fffa59c157c618ac48d",
+      "crop": [
+        796,
+        10,
+        970,
+        256
+      ],
+      "destination": [
+        413,
+        11,
+        70,
+        99
+      ]
+    },
+    {
+      "frame": 4,
+      "sourceFrame": 4,
+      "source": "docs/art-source/motions/production-144/forever_young/alpha.png",
+      "sourceSha256": "dabccfdacae4bc8def7a13aabc033d3b241d07e181cf8fffa59c157c618ac48d",
+      "crop": [
+        28,
+        266,
+        230,
+        506
+      ],
+      "destination": [
+        23,
+        142,
+        81,
+        96
+      ]
+    },
+    {
+      "frame": 5,
+      "sourceFrame": 5,
+      "source": "docs/art-source/motions/production-144/forever_young/alpha.png",
+      "sourceSha256": "dabccfdacae4bc8def7a13aabc033d3b241d07e181cf8fffa59c157c618ac48d",
+      "crop": [
+        276,
+        266,
+        479,
+        510
+      ],
+      "destination": [
+        151,
+        140,
+        82,
+        98
+      ]
+    },
+    {
+      "frame": 6,
+      "sourceFrame": 6,
+      "source": "docs/art-source/motions/production-144/forever_young/alpha.png",
+      "sourceSha256": "dabccfdacae4bc8def7a13aabc033d3b241d07e181cf8fffa59c157c618ac48d",
+      "crop": [
+        533,
+        266,
+        736,
+        510
+      ],
+      "destination": [
+        279,
+        140,
+        82,
+        98
+      ]
+    },
+    {
+      "frame": 7,
+      "sourceFrame": 7,
+      "source": "docs/art-source/motions/production-144/forever_young/alpha.png",
+      "sourceSha256": "dabccfdacae4bc8def7a13aabc033d3b241d07e181cf8fffa59c157c618ac48d",
+      "crop": [
+        788,
+        270,
+        991,
+        510
+      ],
+      "destination": [
+        407,
+        142,
+        82,
+        96
+      ]
+    },
+    {
+      "frame": 8,
+      "sourceFrame": 8,
+      "source": "docs/art-source/motions/production-144/forever_young/alpha.png",
+      "sourceSha256": "dabccfdacae4bc8def7a13aabc033d3b241d07e181cf8fffa59c157c618ac48d",
+      "crop": [
+        22,
+        520,
+        238,
+        766
+      ],
+      "destination": [
+        20,
+        267,
+        87,
+        99
+      ]
+    },
+    {
+      "frame": 9,
+      "sourceFrame": 9,
+      "source": "docs/art-source/motions/production-144/forever_young/alpha.png",
+      "sourceSha256": "dabccfdacae4bc8def7a13aabc033d3b241d07e181cf8fffa59c157c618ac48d",
+      "crop": [
+        277,
+        520,
+        476,
+        766
+      ],
+      "destination": [
+        152,
+        267,
+        80,
+        99
+      ]
+    },
+    {
+      "frame": 10,
+      "sourceFrame": 10,
+      "source": "docs/art-source/motions/production-144/forever_young/alpha.png",
+      "sourceSha256": "dabccfdacae4bc8def7a13aabc033d3b241d07e181cf8fffa59c157c618ac48d",
+      "crop": [
+        531,
+        523,
+        758,
+        768
+      ],
+      "destination": [
+        274,
+        268,
+        91,
+        98
+      ]
+    },
+    {
+      "frame": 11,
+      "sourceFrame": 11,
+      "source": "docs/art-source/motions/production-144/forever_young/alpha.png",
+      "sourceSha256": "dabccfdacae4bc8def7a13aabc033d3b241d07e181cf8fffa59c157c618ac48d",
+      "crop": [
+        791,
+        520,
+        985,
+        768
+      ],
+      "destination": [
+        409,
+        266,
+        78,
+        100
+      ]
+    },
+    {
+      "frame": 12,
+      "sourceFrame": 12,
+      "source": "docs/art-source/motions/production-144/forever_young/alpha.png",
+      "sourceSha256": "dabccfdacae4bc8def7a13aabc033d3b241d07e181cf8fffa59c157c618ac48d",
+      "crop": [
+        14,
+        781,
+        228,
+        1021
+      ],
+      "destination": [
+        21,
+        398,
+        86,
+        96
+      ]
+    },
+    {
+      "frame": 13,
+      "sourceFrame": 13,
+      "source": "docs/art-source/motions/production-144/forever_young/alpha.png",
+      "sourceSha256": "dabccfdacae4bc8def7a13aabc033d3b241d07e181cf8fffa59c157c618ac48d",
+      "crop": [
+        281,
+        782,
+        479,
+        1021
+      ],
+      "destination": [
+        152,
+        398,
+        80,
+        96
+      ]
+    },
+    {
+      "frame": 14,
+      "sourceFrame": 14,
+      "source": "docs/art-source/motions/production-144/forever_young/alpha.png",
+      "sourceSha256": "dabccfdacae4bc8def7a13aabc033d3b241d07e181cf8fffa59c157c618ac48d",
+      "crop": [
+        534,
+        782,
+        751,
+        1021
+      ],
+      "destination": [
+        276,
+        398,
+        87,
+        96
+      ]
+    },
+    {
+      "frame": 15,
+      "sourceFrame": 15,
+      "source": "docs/art-source/motions/production-144/forever_young/alpha.png",
+      "sourceSha256": "dabccfdacae4bc8def7a13aabc033d3b241d07e181cf8fffa59c157c618ac48d",
+      "crop": [
+        784,
+        820,
+        1006,
+        1013
+      ],
+      "destination": [
+        403,
+        417,
+        89,
+        77
+      ]
+    },
+    {
+      "frame": 16,
+      "sourceFrame": 16,
+      "source": "docs/art-source/motions/production-144/forever_young/alpha.png",
+      "sourceSha256": "dabccfdacae4bc8def7a13aabc033d3b241d07e181cf8fffa59c157c618ac48d",
+      "crop": [
+        33,
+        1044,
+        229,
+        1259
+      ],
+      "destination": [
+        24,
+        536,
+        79,
+        86
+      ]
+    },
+    {
+      "frame": 17,
+      "sourceFrame": 17,
+      "source": "docs/art-source/motions/production-144/forever_young/alpha.png",
+      "sourceSha256": "dabccfdacae4bc8def7a13aabc033d3b241d07e181cf8fffa59c157c618ac48d",
+      "crop": [
+        282,
+        1080,
+        497,
+        1258
+      ],
+      "destination": [
+        149,
+        551,
+        86,
+        71
+      ]
+    },
+    {
+      "frame": 18,
+      "sourceFrame": 18,
+      "source": "docs/art-source/motions/production-144/forever_young/alpha.png",
+      "sourceSha256": "dabccfdacae4bc8def7a13aabc033d3b241d07e181cf8fffa59c157c618ac48d",
+      "crop": [
+        520,
+        1088,
+        742,
+        1258
+      ],
+      "destination": [
+        275,
+        554,
+        89,
+        68
+      ]
+    },
+    {
+      "frame": 19,
+      "sourceFrame": 19,
+      "source": "docs/art-source/motions/production-144/forever_young/alpha.png",
+      "sourceSha256": "dabccfdacae4bc8def7a13aabc033d3b241d07e181cf8fffa59c157c618ac48d",
+      "crop": [
+        768,
+        1129,
+        1017,
+        1255
+      ],
+      "destination": [
+        398,
+        571,
+        100,
+        51
+      ]
+    },
+    {
+      "frame": 20,
+      "sourceFrame": 20,
+      "source": "docs/art-source/motions/production-144/forever_young/alpha.png",
+      "sourceSha256": "dabccfdacae4bc8def7a13aabc033d3b241d07e181cf8fffa59c157c618ac48d",
+      "crop": [
+        31,
+        1273,
+        215,
+        1529
+      ],
+      "destination": [
+        27,
+        647,
+        74,
+        103
+      ]
+    },
+    {
+      "frame": 21,
+      "sourceFrame": 21,
+      "source": "docs/art-source/motions/production-144/forever_young/alpha.png",
+      "sourceSha256": "dabccfdacae4bc8def7a13aabc033d3b241d07e181cf8fffa59c157c618ac48d",
+      "crop": [
+        286,
+        1281,
+        470,
+        1531
+      ],
+      "destination": [
+        155,
+        650,
+        74,
+        100
+      ]
+    },
+    {
+      "frame": 22,
+      "sourceFrame": 22,
+      "source": "docs/art-source/motions/production-144/forever_young/alpha.png",
+      "sourceSha256": "dabccfdacae4bc8def7a13aabc033d3b241d07e181cf8fffa59c157c618ac48d",
+      "crop": [
+        531,
+        1273,
+        736,
+        1532
+      ],
+      "destination": [
+        279,
+        646,
+        82,
+        104
+      ]
+    },
+    {
+      "frame": 23,
+      "sourceFrame": 23,
+      "source": "docs/art-source/motions/production-144/forever_young/alpha.png",
+      "sourceSha256": "dabccfdacae4bc8def7a13aabc033d3b241d07e181cf8fffa59c157c618ac48d",
+      "crop": [
+        781,
+        1273,
+        957,
+        1530
+      ],
+      "destination": [
+        412,
+        647,
+        71,
+        103
+      ]
+    }
+  ]
+}

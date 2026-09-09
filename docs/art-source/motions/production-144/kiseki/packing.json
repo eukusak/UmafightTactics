@@ -1,0 +1,443 @@
+{
+  "format": "uft-baked-frames-v1",
+  "scale": 0.4,
+  "anchor": [
+    64,
+    110
+  ],
+  "runtimeSha256": "dfca94f6af69f2439b174c549392c8da34f66b8cbd5efe07505371e0150ebc10",
+  "frames": [
+    {
+      "frame": 0,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/production-144/kiseki/alpha.png",
+      "sourceSha256": "6fe4da0f2dae9a762149d627768d2bcd99d239e15056f1b227a0dafa1eef20e1",
+      "crop": [
+        74,
+        6,
+        204,
+        242
+      ],
+      "destination": [
+        38,
+        16,
+        52,
+        94
+      ]
+    },
+    {
+      "frame": 1,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/production-144/kiseki/alpha.png",
+      "sourceSha256": "6fe4da0f2dae9a762149d627768d2bcd99d239e15056f1b227a0dafa1eef20e1",
+      "crop": [
+        336,
+        7,
+        460,
+        242
+      ],
+      "destination": [
+        167,
+        16,
+        50,
+        94
+      ]
+    },
+    {
+      "frame": 2,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/production-144/kiseki/alpha.png",
+      "sourceSha256": "6fe4da0f2dae9a762149d627768d2bcd99d239e15056f1b227a0dafa1eef20e1",
+      "crop": [
+        592,
+        7,
+        716,
+        242
+      ],
+      "destination": [
+        295,
+        16,
+        50,
+        94
+      ]
+    },
+    {
+      "frame": 3,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/production-144/kiseki/alpha.png",
+      "sourceSha256": "6fe4da0f2dae9a762149d627768d2bcd99d239e15056f1b227a0dafa1eef20e1",
+      "crop": [
+        848,
+        6,
+        972,
+        242
+      ],
+      "destination": [
+        423,
+        16,
+        50,
+        94
+      ]
+    },
+    {
+      "frame": 4,
+      "sourceFrame": 4,
+      "source": "docs/art-source/motions/production-144/kiseki/alpha.png",
+      "sourceSha256": "6fe4da0f2dae9a762149d627768d2bcd99d239e15056f1b227a0dafa1eef20e1",
+      "crop": [
+        26,
+        255,
+        223,
+        500
+      ],
+      "destination": [
+        24,
+        140,
+        79,
+        98
+      ]
+    },
+    {
+      "frame": 5,
+      "sourceFrame": 5,
+      "source": "docs/art-source/motions/production-144/kiseki/alpha.png",
+      "sourceSha256": "6fe4da0f2dae9a762149d627768d2bcd99d239e15056f1b227a0dafa1eef20e1",
+      "crop": [
+        288,
+        252,
+        478,
+        500
+      ],
+      "destination": [
+        154,
+        139,
+        76,
+        99
+      ]
+    },
+    {
+      "frame": 6,
+      "sourceFrame": 6,
+      "source": "docs/art-source/motions/production-144/kiseki/alpha.png",
+      "sourceSha256": "6fe4da0f2dae9a762149d627768d2bcd99d239e15056f1b227a0dafa1eef20e1",
+      "crop": [
+        540,
+        252,
+        736,
+        500
+      ],
+      "destination": [
+        281,
+        139,
+        78,
+        99
+      ]
+    },
+    {
+      "frame": 7,
+      "sourceFrame": 7,
+      "source": "docs/art-source/motions/production-144/kiseki/alpha.png",
+      "sourceSha256": "6fe4da0f2dae9a762149d627768d2bcd99d239e15056f1b227a0dafa1eef20e1",
+      "crop": [
+        802,
+        252,
+        990,
+        500
+      ],
+      "destination": [
+        410,
+        139,
+        75,
+        99
+      ]
+    },
+    {
+      "frame": 8,
+      "sourceFrame": 8,
+      "source": "docs/art-source/motions/production-144/kiseki/alpha.png",
+      "sourceSha256": "6fe4da0f2dae9a762149d627768d2bcd99d239e15056f1b227a0dafa1eef20e1",
+      "crop": [
+        54,
+        514,
+        239,
+        763
+      ],
+      "destination": [
+        27,
+        266,
+        74,
+        100
+      ]
+    },
+    {
+      "frame": 9,
+      "sourceFrame": 9,
+      "source": "docs/art-source/motions/production-144/kiseki/alpha.png",
+      "sourceSha256": "6fe4da0f2dae9a762149d627768d2bcd99d239e15056f1b227a0dafa1eef20e1",
+      "crop": [
+        317,
+        513,
+        457,
+        763
+      ],
+      "destination": [
+        164,
+        266,
+        56,
+        100
+      ]
+    },
+    {
+      "frame": 10,
+      "sourceFrame": 10,
+      "source": "docs/art-source/motions/production-144/kiseki/alpha.png",
+      "sourceSha256": "6fe4da0f2dae9a762149d627768d2bcd99d239e15056f1b227a0dafa1eef20e1",
+      "crop": [
+        565,
+        514,
+        754,
+        763
+      ],
+      "destination": [
+        282,
+        266,
+        76,
+        100
+      ]
+    },
+    {
+      "frame": 11,
+      "sourceFrame": 11,
+      "source": "docs/art-source/motions/production-144/kiseki/alpha.png",
+      "sourceSha256": "6fe4da0f2dae9a762149d627768d2bcd99d239e15056f1b227a0dafa1eef20e1",
+      "crop": [
+        833,
+        514,
+        985,
+        763
+      ],
+      "destination": [
+        417,
+        266,
+        61,
+        100
+      ]
+    },
+    {
+      "frame": 12,
+      "sourceFrame": 12,
+      "source": "docs/art-source/motions/production-144/kiseki/alpha.png",
+      "sourceSha256": "6fe4da0f2dae9a762149d627768d2bcd99d239e15056f1b227a0dafa1eef20e1",
+      "crop": [
+        54,
+        772,
+        204,
+        1025
+      ],
+      "destination": [
+        34,
+        393,
+        60,
+        101
+      ]
+    },
+    {
+      "frame": 13,
+      "sourceFrame": 13,
+      "source": "docs/art-source/motions/production-144/kiseki/alpha.png",
+      "sourceSha256": "6fe4da0f2dae9a762149d627768d2bcd99d239e15056f1b227a0dafa1eef20e1",
+      "crop": [
+        298,
+        775,
+        496,
+        1026
+      ],
+      "destination": [
+        152,
+        394,
+        79,
+        100
+      ]
+    },
+    {
+      "frame": 14,
+      "sourceFrame": 14,
+      "source": "docs/art-source/motions/production-144/kiseki/alpha.png",
+      "sourceSha256": "6fe4da0f2dae9a762149d627768d2bcd99d239e15056f1b227a0dafa1eef20e1",
+      "crop": [
+        546,
+        777,
+        753,
+        1026
+      ],
+      "destination": [
+        278,
+        394,
+        83,
+        100
+      ]
+    },
+    {
+      "frame": 15,
+      "sourceFrame": 15,
+      "source": "docs/art-source/motions/production-144/kiseki/alpha.png",
+      "sourceSha256": "6fe4da0f2dae9a762149d627768d2bcd99d239e15056f1b227a0dafa1eef20e1",
+      "crop": [
+        821,
+        777,
+        967,
+        1026
+      ],
+      "destination": [
+        419,
+        394,
+        58,
+        100
+      ]
+    },
+    {
+      "frame": 16,
+      "sourceFrame": 16,
+      "source": "docs/art-source/motions/production-144/kiseki/alpha.png",
+      "sourceSha256": "6fe4da0f2dae9a762149d627768d2bcd99d239e15056f1b227a0dafa1eef20e1",
+      "crop": [
+        41,
+        1040,
+        217,
+        1257
+      ],
+      "destination": [
+        29,
+        535,
+        70,
+        87
+      ]
+    },
+    {
+      "frame": 17,
+      "sourceFrame": 17,
+      "source": "docs/art-source/motions/production-144/kiseki/alpha.png",
+      "sourceSha256": "6fe4da0f2dae9a762149d627768d2bcd99d239e15056f1b227a0dafa1eef20e1",
+      "crop": [
+        311,
+        1068,
+        478,
+        1253
+      ],
+      "destination": [
+        158,
+        548,
+        67,
+        74
+      ]
+    },
+    {
+      "frame": 18,
+      "sourceFrame": 18,
+      "source": "docs/art-source/motions/production-144/kiseki/alpha.png",
+      "sourceSha256": "6fe4da0f2dae9a762149d627768d2bcd99d239e15056f1b227a0dafa1eef20e1",
+      "crop": [
+        556,
+        1071,
+        714,
+        1253
+      ],
+      "destination": [
+        288,
+        549,
+        63,
+        73
+      ]
+    },
+    {
+      "frame": 19,
+      "sourceFrame": 19,
+      "source": "docs/art-source/motions/production-144/kiseki/alpha.png",
+      "sourceSha256": "6fe4da0f2dae9a762149d627768d2bcd99d239e15056f1b227a0dafa1eef20e1",
+      "crop": [
+        778,
+        1141,
+        1009,
+        1260
+      ],
+      "destination": [
+        402,
+        574,
+        92,
+        48
+      ]
+    },
+    {
+      "frame": 20,
+      "sourceFrame": 20,
+      "source": "docs/art-source/motions/production-144/kiseki/alpha.png",
+      "sourceSha256": "6fe4da0f2dae9a762149d627768d2bcd99d239e15056f1b227a0dafa1eef20e1",
+      "crop": [
+        59,
+        1283,
+        202,
+        1529
+      ],
+      "destination": [
+        35,
+        652,
+        57,
+        98
+      ]
+    },
+    {
+      "frame": 21,
+      "sourceFrame": 21,
+      "source": "docs/art-source/motions/production-144/kiseki/alpha.png",
+      "sourceSha256": "6fe4da0f2dae9a762149d627768d2bcd99d239e15056f1b227a0dafa1eef20e1",
+      "crop": [
+        311,
+        1272,
+        459,
+        1532
+      ],
+      "destination": [
+        162,
+        646,
+        59,
+        104
+      ]
+    },
+    {
+      "frame": 22,
+      "sourceFrame": 22,
+      "source": "docs/art-source/motions/production-144/kiseki/alpha.png",
+      "sourceSha256": "6fe4da0f2dae9a762149d627768d2bcd99d239e15056f1b227a0dafa1eef20e1",
+      "crop": [
+        553,
+        1272,
+        721,
+        1530
+      ],
+      "destination": [
+        286,
+        647,
+        67,
+        103
+      ]
+    },
+    {
+      "frame": 23,
+      "sourceFrame": 23,
+      "source": "docs/art-source/motions/production-144/kiseki/alpha.png",
+      "sourceSha256": "6fe4da0f2dae9a762149d627768d2bcd99d239e15056f1b227a0dafa1eef20e1",
+      "crop": [
+        818,
+        1286,
+        968,
+        1530
+      ],
+      "destination": [
+        418,
+        652,
+        60,
+        98
+      ]
+    }
+  ]
+}
