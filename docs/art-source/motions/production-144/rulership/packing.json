@@ -1,0 +1,443 @@
+{
+  "format": "uft-baked-frames-v1",
+  "scale": 0.40310077519379844,
+  "anchor": [
+    64,
+    110
+  ],
+  "runtimeSha256": "0d4f09df0f1b1f22a4c0e40a4712b4b42a908529812d59dc078d8d1948400eb0",
+  "frames": [
+    {
+      "frame": 0,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/production-144/rulership/alpha.png",
+      "sourceSha256": "517f755a10c0c1c77240621b9e1cd40bb0fa4e995e1708fc1bd9289cc46064ba",
+      "crop": [
+        69,
+        5,
+        224,
+        256
+      ],
+      "destination": [
+        33,
+        9,
+        62,
+        101
+      ]
+    },
+    {
+      "frame": 1,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/production-144/rulership/alpha.png",
+      "sourceSha256": "517f755a10c0c1c77240621b9e1cd40bb0fa4e995e1708fc1bd9289cc46064ba",
+      "crop": [
+        322,
+        6,
+        474,
+        256
+      ],
+      "destination": [
+        161,
+        9,
+        61,
+        101
+      ]
+    },
+    {
+      "frame": 2,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/production-144/rulership/alpha.png",
+      "sourceSha256": "517f755a10c0c1c77240621b9e1cd40bb0fa4e995e1708fc1bd9289cc46064ba",
+      "crop": [
+        569,
+        6,
+        722,
+        256
+      ],
+      "destination": [
+        289,
+        9,
+        62,
+        101
+      ]
+    },
+    {
+      "frame": 3,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/production-144/rulership/alpha.png",
+      "sourceSha256": "517f755a10c0c1c77240621b9e1cd40bb0fa4e995e1708fc1bd9289cc46064ba",
+      "crop": [
+        818,
+        7,
+        967,
+        256
+      ],
+      "destination": [
+        418,
+        10,
+        60,
+        100
+      ]
+    },
+    {
+      "frame": 4,
+      "sourceFrame": 4,
+      "source": "docs/art-source/motions/production-144/rulership/alpha.png",
+      "sourceSha256": "517f755a10c0c1c77240621b9e1cd40bb0fa4e995e1708fc1bd9289cc46064ba",
+      "crop": [
+        40,
+        264,
+        224,
+        513
+      ],
+      "destination": [
+        27,
+        138,
+        74,
+        100
+      ]
+    },
+    {
+      "frame": 5,
+      "sourceFrame": 5,
+      "source": "docs/art-source/motions/production-144/rulership/alpha.png",
+      "sourceSha256": "517f755a10c0c1c77240621b9e1cd40bb0fa4e995e1708fc1bd9289cc46064ba",
+      "crop": [
+        288,
+        262,
+        477,
+        513
+      ],
+      "destination": [
+        154,
+        137,
+        76,
+        101
+      ]
+    },
+    {
+      "frame": 6,
+      "sourceFrame": 6,
+      "source": "docs/art-source/motions/production-144/rulership/alpha.png",
+      "sourceSha256": "517f755a10c0c1c77240621b9e1cd40bb0fa4e995e1708fc1bd9289cc46064ba",
+      "crop": [
+        549,
+        262,
+        734,
+        513
+      ],
+      "destination": [
+        282,
+        137,
+        75,
+        101
+      ]
+    },
+    {
+      "frame": 7,
+      "sourceFrame": 7,
+      "source": "docs/art-source/motions/production-144/rulership/alpha.png",
+      "sourceSha256": "517f755a10c0c1c77240621b9e1cd40bb0fa4e995e1708fc1bd9289cc46064ba",
+      "crop": [
+        776,
+        269,
+        982,
+        513
+      ],
+      "destination": [
+        406,
+        140,
+        83,
+        98
+      ]
+    },
+    {
+      "frame": 8,
+      "sourceFrame": 8,
+      "source": "docs/art-source/motions/production-144/rulership/alpha.png",
+      "sourceSha256": "517f755a10c0c1c77240621b9e1cd40bb0fa4e995e1708fc1bd9289cc46064ba",
+      "crop": [
+        56,
+        520,
+        225,
+        768
+      ],
+      "destination": [
+        30,
+        266,
+        68,
+        100
+      ]
+    },
+    {
+      "frame": 9,
+      "sourceFrame": 9,
+      "source": "docs/art-source/motions/production-144/rulership/alpha.png",
+      "sourceSha256": "517f755a10c0c1c77240621b9e1cd40bb0fa4e995e1708fc1bd9289cc46064ba",
+      "crop": [
+        287,
+        521,
+        474,
+        768
+      ],
+      "destination": [
+        154,
+        266,
+        75,
+        100
+      ]
+    },
+    {
+      "frame": 10,
+      "sourceFrame": 10,
+      "source": "docs/art-source/motions/production-144/rulership/alpha.png",
+      "sourceSha256": "517f755a10c0c1c77240621b9e1cd40bb0fa4e995e1708fc1bd9289cc46064ba",
+      "crop": [
+        538,
+        521,
+        753,
+        768
+      ],
+      "destination": [
+        276,
+        266,
+        87,
+        100
+      ]
+    },
+    {
+      "frame": 11,
+      "sourceFrame": 11,
+      "source": "docs/art-source/motions/production-144/rulership/alpha.png",
+      "sourceSha256": "517f755a10c0c1c77240621b9e1cd40bb0fa4e995e1708fc1bd9289cc46064ba",
+      "crop": [
+        812,
+        518,
+        979,
+        768
+      ],
+      "destination": [
+        414,
+        265,
+        67,
+        101
+      ]
+    },
+    {
+      "frame": 12,
+      "sourceFrame": 12,
+      "source": "docs/art-source/motions/production-144/rulership/alpha.png",
+      "sourceSha256": "517f755a10c0c1c77240621b9e1cd40bb0fa4e995e1708fc1bd9289cc46064ba",
+      "crop": [
+        47,
+        773,
+        210,
+        1027
+      ],
+      "destination": [
+        31,
+        392,
+        66,
+        102
+      ]
+    },
+    {
+      "frame": 13,
+      "sourceFrame": 13,
+      "source": "docs/art-source/motions/production-144/rulership/alpha.png",
+      "sourceSha256": "517f755a10c0c1c77240621b9e1cd40bb0fa4e995e1708fc1bd9289cc46064ba",
+      "crop": [
+        312,
+        773,
+        482,
+        1027
+      ],
+      "destination": [
+        157,
+        392,
+        69,
+        102
+      ]
+    },
+    {
+      "frame": 14,
+      "sourceFrame": 14,
+      "source": "docs/art-source/motions/production-144/rulership/alpha.png",
+      "sourceSha256": "517f755a10c0c1c77240621b9e1cd40bb0fa4e995e1708fc1bd9289cc46064ba",
+      "crop": [
+        549,
+        772,
+        764,
+        1027
+      ],
+      "destination": [
+        276,
+        391,
+        87,
+        103
+      ]
+    },
+    {
+      "frame": 15,
+      "sourceFrame": 15,
+      "source": "docs/art-source/motions/production-144/rulership/alpha.png",
+      "sourceSha256": "517f755a10c0c1c77240621b9e1cd40bb0fa4e995e1708fc1bd9289cc46064ba",
+      "crop": [
+        814,
+        772,
+        972,
+        1027
+      ],
+      "destination": [
+        416,
+        391,
+        64,
+        103
+      ]
+    },
+    {
+      "frame": 16,
+      "sourceFrame": 16,
+      "source": "docs/art-source/motions/production-144/rulership/alpha.png",
+      "sourceSha256": "517f755a10c0c1c77240621b9e1cd40bb0fa4e995e1708fc1bd9289cc46064ba",
+      "crop": [
+        50,
+        1028,
+        231,
+        1273
+      ],
+      "destination": [
+        27,
+        523,
+        73,
+        99
+      ]
+    },
+    {
+      "frame": 17,
+      "sourceFrame": 17,
+      "source": "docs/art-source/motions/production-144/rulership/alpha.png",
+      "sourceSha256": "517f755a10c0c1c77240621b9e1cd40bb0fa4e995e1708fc1bd9289cc46064ba",
+      "crop": [
+        291,
+        1055,
+        487,
+        1266
+      ],
+      "destination": [
+        152,
+        537,
+        79,
+        85
+      ]
+    },
+    {
+      "frame": 18,
+      "sourceFrame": 18,
+      "source": "docs/art-source/motions/production-144/rulership/alpha.png",
+      "sourceSha256": "517f755a10c0c1c77240621b9e1cd40bb0fa4e995e1708fc1bd9289cc46064ba",
+      "crop": [
+        538,
+        1063,
+        723,
+        1265
+      ],
+      "destination": [
+        282,
+        541,
+        75,
+        81
+      ]
+    },
+    {
+      "frame": 19,
+      "sourceFrame": 19,
+      "source": "docs/art-source/motions/production-144/rulership/alpha.png",
+      "sourceSha256": "517f755a10c0c1c77240621b9e1cd40bb0fa4e995e1708fc1bd9289cc46064ba",
+      "crop": [
+        771,
+        1141,
+        1002,
+        1266
+      ],
+      "destination": [
+        401,
+        572,
+        93,
+        50
+      ]
+    },
+    {
+      "frame": 20,
+      "sourceFrame": 20,
+      "source": "docs/art-source/motions/production-144/rulership/alpha.png",
+      "sourceSha256": "517f755a10c0c1c77240621b9e1cd40bb0fa4e995e1708fc1bd9289cc46064ba",
+      "crop": [
+        63,
+        1278,
+        223,
+        1529
+      ],
+      "destination": [
+        32,
+        649,
+        64,
+        101
+      ]
+    },
+    {
+      "frame": 21,
+      "sourceFrame": 21,
+      "source": "docs/art-source/motions/production-144/rulership/alpha.png",
+      "sourceSha256": "517f755a10c0c1c77240621b9e1cd40bb0fa4e995e1708fc1bd9289cc46064ba",
+      "crop": [
+        308,
+        1273,
+        475,
+        1531
+      ],
+      "destination": [
+        158,
+        646,
+        67,
+        104
+      ]
+    },
+    {
+      "frame": 22,
+      "sourceFrame": 22,
+      "source": "docs/art-source/motions/production-144/rulership/alpha.png",
+      "sourceSha256": "517f755a10c0c1c77240621b9e1cd40bb0fa4e995e1708fc1bd9289cc46064ba",
+      "crop": [
+        548,
+        1274,
+        720,
+        1517
+      ],
+      "destination": [
+        285,
+        652,
+        69,
+        98
+      ]
+    },
+    {
+      "frame": 23,
+      "sourceFrame": 23,
+      "source": "docs/art-source/motions/production-144/rulership/alpha.png",
+      "sourceSha256": "517f755a10c0c1c77240621b9e1cd40bb0fa4e995e1708fc1bd9289cc46064ba",
+      "crop": [
+        809,
+        1273,
+        969,
+        1531
+      ],
+      "destination": [
+        416,
+        646,
+        64,
+        104
+      ]
+    }
+  ]
+}

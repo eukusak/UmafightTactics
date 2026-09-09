@@ -616,5 +616,53 @@
     "skillSignature": "344c1f73519dfdfdaa621de5414e6ca4111d2b3dc95beb09491d71bc19be9405",
     "skillReview": "근접 손바닥 타격. 직선 돌파: 낮은 출발 → 발진 → 수평 돌파 → 착지. 청록·흰 비대칭 소매와 장식천 유지. 공격속도 및 자기 보호막 강화.",
     "skillReleaseFrame": 2
+  },
+  "rulership": {
+    "file": "motions/rulership.png",
+    "frameWidth": 128,
+    "frameHeight": 128,
+    "columns": 4,
+    "rows": 6,
+    "source": "docs/art-source/motions/production-144/rulership/packing.json",
+    "skillId": "skill_rulership",
+    "skillSignature": "319b5a0db0108fe0248380f4d1692206d21ecbbe8a7b5fafad3dcf8b4ca3c4e3",
+    "skillReview": "근접 손바닥 타격. 자기 보호막·도발: 팔 교차 방어 → 양팔로 방벽 전개 → 정면 도발 손짓 → 방어 유지. 흰 앞머리, 깃털 어깨와 노란 리본 유지. 피해/치유/돌진 없음.",
+    "skillReleaseFrame": 2
+  },
+  "rose_kingdom": {
+    "file": "motions/rose_kingdom.png",
+    "frameWidth": 128,
+    "frameHeight": 128,
+    "columns": 4,
+    "rows": 6,
+    "source": "docs/art-source/motions/production-144/rose_kingdom/packing.json",
+    "skillId": "skill_rose_kingdom",
+    "skillSignature": "3616b8ed705dc0b7aa261863458af85b18684143d56ec350458157378f315da2",
+    "skillReview": "근접 손바닥 타격. 직선 돌파: 낮은 출발 → 발진 → 수평 돌파 → 착지. 달리기 두 번째·네 번째 자세를 무릎 통과 자세로 보정. 붉은 장미와 양색 망토 유지. 공격속도와 자기 보호막 강화.",
+    "skillReleaseFrame": 2
+  },
+  "victoire_pisa": {
+    "file": "motions/victoire_pisa.png",
+    "frameWidth": 128,
+    "frameHeight": 128,
+    "columns": 4,
+    "rows": 6,
+    "source": "docs/art-source/motions/production-144/victoire_pisa/packing.json",
+    "skillId": "skill_victoire_pisa",
+    "skillSignature": "ec19a867c32a0ddafadae901133e579931b98690900ac5f005d92f53cd0b91a4",
+    "skillReview": "근접 손바닥 타격. 직선 돌파: 드레스 아래 낮은 출발 → 발진 → 수평 돌파 → 착지. 긴 흰 드레스, 베레모와 남색 리본 유지. 공격속도·이동속도 강화.",
+    "skillReleaseFrame": 2
+  },
+  "logotype": {
+    "file": "motions/logotype.png",
+    "frameWidth": 128,
+    "frameHeight": 128,
+    "columns": 4,
+    "rows": 6,
+    "source": "docs/art-source/motions/production-144/logotype/packing.json",
+    "skillId": "skill_logotype",
+    "skillSignature": "dd47040d5dd6d7aa999745514a98401b338247667b11190d594a2f9d8a33fca6",
+    "skillReview": "원거리 손짓 발사. 아군 전체 강화: 가슴 앞 집중 → 양팔 격려 → 팔을 펼친 지휘 → 강화 유지. 달리기 중간 자세와 방향 보정, 부유 장식 제거. 버건디 카디건, 줄무늬 조끼와 옆가리개 유지.",
+    "skillReleaseFrame": 2
   }
 }

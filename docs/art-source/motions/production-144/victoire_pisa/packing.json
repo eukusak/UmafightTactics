@@ -1,0 +1,443 @@
+{
+  "format": "uft-baked-frames-v1",
+  "scale": 0.38235294117647056,
+  "anchor": [
+    64,
+    110
+  ],
+  "runtimeSha256": "57a973d67d96668387a47cf3ea31f05fc01024260f08000a1845062e42b34113",
+  "frames": [
+    {
+      "frame": 0,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/production-144/victoire_pisa/alpha.png",
+      "sourceSha256": "e854c1a5eba0d9ca8c6b1c3ae566585aaa185705c9908b7e70ff03c268699f1a",
+      "crop": [
+        59,
+        12,
+        207,
+        259
+      ],
+      "destination": [
+        35,
+        16,
+        57,
+        94
+      ]
+    },
+    {
+      "frame": 1,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/production-144/victoire_pisa/alpha.png",
+      "sourceSha256": "e854c1a5eba0d9ca8c6b1c3ae566585aaa185705c9908b7e70ff03c268699f1a",
+      "crop": [
+        302,
+        14,
+        457,
+        259
+      ],
+      "destination": [
+        162,
+        16,
+        59,
+        94
+      ]
+    },
+    {
+      "frame": 2,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/production-144/victoire_pisa/alpha.png",
+      "sourceSha256": "e854c1a5eba0d9ca8c6b1c3ae566585aaa185705c9908b7e70ff03c268699f1a",
+      "crop": [
+        538,
+        13,
+        710,
+        259
+      ],
+      "destination": [
+        287,
+        16,
+        66,
+        94
+      ]
+    },
+    {
+      "frame": 3,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/production-144/victoire_pisa/alpha.png",
+      "sourceSha256": "e854c1a5eba0d9ca8c6b1c3ae566585aaa185705c9908b7e70ff03c268699f1a",
+      "crop": [
+        796,
+        14,
+        954,
+        259
+      ],
+      "destination": [
+        418,
+        16,
+        60,
+        94
+      ]
+    },
+    {
+      "frame": 4,
+      "sourceFrame": 4,
+      "source": "docs/art-source/motions/production-144/victoire_pisa/alpha.png",
+      "sourceSha256": "e854c1a5eba0d9ca8c6b1c3ae566585aaa185705c9908b7e70ff03c268699f1a",
+      "crop": [
+        31,
+        283,
+        222,
+        512
+      ],
+      "destination": [
+        27,
+        150,
+        73,
+        88
+      ]
+    },
+    {
+      "frame": 5,
+      "sourceFrame": 5,
+      "source": "docs/art-source/motions/production-144/victoire_pisa/alpha.png",
+      "sourceSha256": "e854c1a5eba0d9ca8c6b1c3ae566585aaa185705c9908b7e70ff03c268699f1a",
+      "crop": [
+        279,
+        286,
+        478,
+        512
+      ],
+      "destination": [
+        154,
+        152,
+        76,
+        86
+      ]
+    },
+    {
+      "frame": 6,
+      "sourceFrame": 6,
+      "source": "docs/art-source/motions/production-144/victoire_pisa/alpha.png",
+      "sourceSha256": "e854c1a5eba0d9ca8c6b1c3ae566585aaa185705c9908b7e70ff03c268699f1a",
+      "crop": [
+        530,
+        288,
+        724,
+        512
+      ],
+      "destination": [
+        283,
+        152,
+        74,
+        86
+      ]
+    },
+    {
+      "frame": 7,
+      "sourceFrame": 7,
+      "source": "docs/art-source/motions/production-144/victoire_pisa/alpha.png",
+      "sourceSha256": "e854c1a5eba0d9ca8c6b1c3ae566585aaa185705c9908b7e70ff03c268699f1a",
+      "crop": [
+        786,
+        287,
+        978,
+        512
+      ],
+      "destination": [
+        411,
+        152,
+        73,
+        86
+      ]
+    },
+    {
+      "frame": 8,
+      "sourceFrame": 8,
+      "source": "docs/art-source/motions/production-144/victoire_pisa/alpha.png",
+      "sourceSha256": "e854c1a5eba0d9ca8c6b1c3ae566585aaa185705c9908b7e70ff03c268699f1a",
+      "crop": [
+        37,
+        525,
+        215,
+        772
+      ],
+      "destination": [
+        30,
+        272,
+        68,
+        94
+      ]
+    },
+    {
+      "frame": 9,
+      "sourceFrame": 9,
+      "source": "docs/art-source/motions/production-144/victoire_pisa/alpha.png",
+      "sourceSha256": "e854c1a5eba0d9ca8c6b1c3ae566585aaa185705c9908b7e70ff03c268699f1a",
+      "crop": [
+        289,
+        533,
+        484,
+        772
+      ],
+      "destination": [
+        154,
+        275,
+        75,
+        91
+      ]
+    },
+    {
+      "frame": 10,
+      "sourceFrame": 10,
+      "source": "docs/art-source/motions/production-144/victoire_pisa/alpha.png",
+      "sourceSha256": "e854c1a5eba0d9ca8c6b1c3ae566585aaa185705c9908b7e70ff03c268699f1a",
+      "crop": [
+        540,
+        537,
+        754,
+        771
+      ],
+      "destination": [
+        279,
+        277,
+        82,
+        89
+      ]
+    },
+    {
+      "frame": 11,
+      "sourceFrame": 11,
+      "source": "docs/art-source/motions/production-144/victoire_pisa/alpha.png",
+      "sourceSha256": "e854c1a5eba0d9ca8c6b1c3ae566585aaa185705c9908b7e70ff03c268699f1a",
+      "crop": [
+        804,
+        535,
+        981,
+        772
+      ],
+      "destination": [
+        414,
+        275,
+        68,
+        91
+      ]
+    },
+    {
+      "frame": 12,
+      "sourceFrame": 12,
+      "source": "docs/art-source/motions/production-144/victoire_pisa/alpha.png",
+      "sourceSha256": "e854c1a5eba0d9ca8c6b1c3ae566585aaa185705c9908b7e70ff03c268699f1a",
+      "crop": [
+        27,
+        812,
+        242,
+        984
+      ],
+      "destination": [
+        23,
+        428,
+        82,
+        66
+      ]
+    },
+    {
+      "frame": 13,
+      "sourceFrame": 13,
+      "source": "docs/art-source/motions/production-144/victoire_pisa/alpha.png",
+      "sourceSha256": "e854c1a5eba0d9ca8c6b1c3ae566585aaa185705c9908b7e70ff03c268699f1a",
+      "crop": [
+        265,
+        805,
+        493,
+        986
+      ],
+      "destination": [
+        148,
+        425,
+        87,
+        69
+      ]
+    },
+    {
+      "frame": 14,
+      "sourceFrame": 14,
+      "source": "docs/art-source/motions/production-144/victoire_pisa/alpha.png",
+      "sourceSha256": "e854c1a5eba0d9ca8c6b1c3ae566585aaa185705c9908b7e70ff03c268699f1a",
+      "crop": [
+        521,
+        826,
+        766,
+        972
+      ],
+      "destination": [
+        273,
+        438,
+        94,
+        56
+      ]
+    },
+    {
+      "frame": 15,
+      "sourceFrame": 15,
+      "source": "docs/art-source/motions/production-144/victoire_pisa/alpha.png",
+      "sourceSha256": "e854c1a5eba0d9ca8c6b1c3ae566585aaa185705c9908b7e70ff03c268699f1a",
+      "crop": [
+        788,
+        813,
+        1013,
+        985
+      ],
+      "destination": [
+        405,
+        428,
+        86,
+        66
+      ]
+    },
+    {
+      "frame": 16,
+      "sourceFrame": 16,
+      "source": "docs/art-source/motions/production-144/victoire_pisa/alpha.png",
+      "sourceSha256": "e854c1a5eba0d9ca8c6b1c3ae566585aaa185705c9908b7e70ff03c268699f1a",
+      "crop": [
+        43,
+        1016,
+        235,
+        1238
+      ],
+      "destination": [
+        27,
+        537,
+        73,
+        85
+      ]
+    },
+    {
+      "frame": 17,
+      "sourceFrame": 17,
+      "source": "docs/art-source/motions/production-144/victoire_pisa/alpha.png",
+      "sourceSha256": "e854c1a5eba0d9ca8c6b1c3ae566585aaa185705c9908b7e70ff03c268699f1a",
+      "crop": [
+        304,
+        1030,
+        477,
+        1237
+      ],
+      "destination": [
+        159,
+        543,
+        66,
+        79
+      ]
+    },
+    {
+      "frame": 18,
+      "sourceFrame": 18,
+      "source": "docs/art-source/motions/production-144/victoire_pisa/alpha.png",
+      "sourceSha256": "e854c1a5eba0d9ca8c6b1c3ae566585aaa185705c9908b7e70ff03c268699f1a",
+      "crop": [
+        545,
+        1061,
+        718,
+        1236
+      ],
+      "destination": [
+        287,
+        555,
+        66,
+        67
+      ]
+    },
+    {
+      "frame": 19,
+      "sourceFrame": 19,
+      "source": "docs/art-source/motions/production-144/victoire_pisa/alpha.png",
+      "sourceSha256": "e854c1a5eba0d9ca8c6b1c3ae566585aaa185705c9908b7e70ff03c268699f1a",
+      "crop": [
+        772,
+        1116,
+        1010,
+        1232
+      ],
+      "destination": [
+        402,
+        578,
+        91,
+        44
+      ]
+    },
+    {
+      "frame": 20,
+      "sourceFrame": 20,
+      "source": "docs/art-source/motions/production-144/victoire_pisa/alpha.png",
+      "sourceSha256": "e854c1a5eba0d9ca8c6b1c3ae566585aaa185705c9908b7e70ff03c268699f1a",
+      "crop": [
+        39,
+        1252,
+        207,
+        1524
+      ],
+      "destination": [
+        32,
+        646,
+        64,
+        104
+      ]
+    },
+    {
+      "frame": 21,
+      "sourceFrame": 21,
+      "source": "docs/art-source/motions/production-144/victoire_pisa/alpha.png",
+      "sourceSha256": "e854c1a5eba0d9ca8c6b1c3ae566585aaa185705c9908b7e70ff03c268699f1a",
+      "crop": [
+        296,
+        1252,
+        470,
+        1524
+      ],
+      "destination": [
+        158,
+        646,
+        67,
+        104
+      ]
+    },
+    {
+      "frame": 22,
+      "sourceFrame": 22,
+      "source": "docs/art-source/motions/production-144/victoire_pisa/alpha.png",
+      "sourceSha256": "e854c1a5eba0d9ca8c6b1c3ae566585aaa185705c9908b7e70ff03c268699f1a",
+      "crop": [
+        549,
+        1252,
+        716,
+        1508
+      ],
+      "destination": [
+        288,
+        652,
+        64,
+        98
+      ]
+    },
+    {
+      "frame": 23,
+      "sourceFrame": 23,
+      "source": "docs/art-source/motions/production-144/victoire_pisa/alpha.png",
+      "sourceSha256": "e854c1a5eba0d9ca8c6b1c3ae566585aaa185705c9908b7e70ff03c268699f1a",
+      "crop": [
+        787,
+        1252,
+        980,
+        1524
+      ],
+      "destination": [
+        411,
+        646,
+        74,
+        104
+      ]
+    }
+  ]
+}
