@@ -5,6 +5,7 @@ import { DEFAULT_SEED } from '../../game/engine/constants';
 import { SeasonPicker } from '../SeasonPicker';
 import type { SeasonId } from '../../game/engine/seasons/catalog';
 import { ROSTER_HASH } from '../../game/engine/roster';
+import { seasonBackdrop } from '../../game/ui/season-art';
 
 export function TitleScreen(): JSX.Element {
   const setScreen = useGameStore((s) => s.setScreen);
@@ -72,7 +73,7 @@ export function MatchSetup(): JSX.Element {
   } as const;
 
   return (
-    <div className="menu-screen">
+    <div className="menu-screen season-screen" style={seasonBackdrop(seasonId)}>
       <h1 className="menu-title" style={{ fontSize: 40, marginBottom: 12 }}>매치 설정</h1>
       <SeasonPicker value={seasonId} onChange={setSeasonId} />
       <div className="panel" style={{ padding: 16, width: 620, marginTop: 14 }}>

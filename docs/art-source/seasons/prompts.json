@@ -1,0 +1,52 @@
+{
+  "generator": "built-in image_gen",
+  "date": "2026-09-09",
+  "processing": "Original composition and resolution preserved; WebP quality 88 for runtime delivery.",
+  "seasons": [
+    {
+      "id": "s1",
+      "prompt": "Use case: stylized-concept. Asset type: finished widescreen landscape background for season selection and multiplayer lobby in UmafightTactics, an anime horse-girl tactical auto-battler. Scene: Twinkle Opening: sunlit racing academy stadium on a hill, lush turf, white gold grandstands, pennants and small star shaped architecture, celebratory warm golden morning, pale sky and green fields. Palette warm gold #f5c76a and blue teal. Style: polished Japanese monster-collecting RPG environment artwork, clean cel shading, controlled fine outlines, dimensional painted scenery, richly colored but readable and cohesive. Composition: 16:9 wide landscape, 1536x864 preferred, environment only. Recognizable silhouette in upper-middle half, calm open foreground for overlay UI. No characters, no horses, no text, no letters, no logos, no watermarks, no interface, no montage, no grid. Produce one complete edge-to-edge landscape image.",
+      "source": "docs/art-source/seasons/s1.png",
+      "file": "public/assets/seasons/s1.webp",
+      "width": 1672,
+      "height": 941,
+      "bytes": 362912
+    },
+    {
+      "id": "s2",
+      "prompt": "Use case: stylized-concept. Asset type: finished widescreen landscape background for season selection and multiplayer lobby in UmafightTactics, an anime horse-girl tactical auto-battler. Scene: Starlight Orchestra: an elegant open air racing arena combined with a concert amphitheater, curved luminous arches like a musical staff, distant orchestral stage, sparkling midnight sky and constellations. Palette lavender #ad9bff, indigo and silver. Style: polished Japanese monster-collecting RPG environment artwork, clean cel shading, controlled fine outlines, dimensional painted scenery, richly colored but readable and cohesive. Composition: 16:9 wide landscape, 1536x864 preferred, environment only. Recognizable silhouette in upper-middle half, calm open foreground for overlay UI. No characters, no horses, no text, no letters, no logos, no watermarks, no interface, no montage, no grid. Produce one complete edge-to-edge landscape image.",
+      "source": "docs/art-source/seasons/s2.png",
+      "file": "public/assets/seasons/s2.webp",
+      "width": 1672,
+      "height": 941,
+      "bytes": 445406
+    },
+    {
+      "id": "s3",
+      "prompt": "Use case: stylized-concept. Asset type: finished widescreen landscape background for season selection and multiplayer lobby in UmafightTactics, an anime horse-girl tactical auto-battler. Scene: Wild Frontier: rugged racing trail winding through emerald grassland and red sandstone cliffs, spring-fed turquoise oasis, stone trackside markers, wide adventurous wilderness. Palette emerald #72d6ad, warm sandstone and deep forest green. Style: polished Japanese monster-collecting RPG environment artwork, clean cel shading, controlled fine outlines, dimensional painted scenery, richly colored but readable and cohesive. Composition: 16:9 wide landscape, 1536x864 preferred, environment only. Recognizable silhouette in upper-middle half, calm open foreground for overlay UI. No characters, no horses, no text, no letters, no logos, no watermarks, no interface, no montage, no grid. Produce one complete edge-to-edge landscape image.",
+      "source": "docs/art-source/seasons/s3.png",
+      "file": "public/assets/seasons/s3.webp",
+      "width": 1672,
+      "height": 941,
+      "bytes": 466722
+    },
+    {
+      "id": "s4",
+      "prompt": "Use case: stylized-concept. Asset type: finished widescreen landscape background for season selection and multiplayer lobby in UmafightTactics, an anime horse-girl tactical auto-battler. Scene: Neon Sprint: futuristic racing stadium in an anime city at blue hour, sweeping cyan illuminated track rails and sleek grandstands, speed inspired architecture with neon magenta accents. Palette electric cyan #68d7ff and midnight navy. Style: polished Japanese monster-collecting RPG environment artwork, clean cel shading, controlled fine outlines, dimensional painted scenery, richly colored but readable and cohesive. Composition: 16:9 wide landscape, 1536x864 preferred, environment only. Recognizable silhouette in upper-middle half, calm open foreground for overlay UI. No characters, no horses, no text, no letters, no logos, no watermarks, no interface, no montage, no grid. Produce one complete edge-to-edge landscape image.",
+      "source": "docs/art-source/seasons/s4.png",
+      "file": "public/assets/seasons/s4.webp",
+      "width": 1672,
+      "height": 941,
+      "bytes": 310164
+    },
+    {
+      "id": "s5",
+      "prompt": "Use case: stylized-concept. Asset type: finished widescreen landscape background for season selection and multiplayer lobby in UmafightTactics, an anime horse-girl tactical auto-battler. Scene: Crown Finale: grand championship racing stadium with a crown shaped central architectural arch, regal gold rails, rose flowering trees and distant castle-like stands beneath a radiant pink sunset. Palette rose pink #ff9daf, gold and plum. Style: polished Japanese monster-collecting RPG environment artwork, clean cel shading, controlled fine outlines, dimensional painted scenery, richly colored but readable and cohesive. Composition: 16:9 wide landscape, 1536x864 preferred, environment only. Recognizable silhouette in upper-middle half, calm open foreground for overlay UI. No characters, no horses, no text, no letters, no logos, no watermarks, no interface, no montage, no grid. Produce one complete edge-to-edge landscape image.",
+      "source": "docs/art-source/seasons/s5.png",
+      "file": "public/assets/seasons/s5.webp",
+      "width": 1672,
+      "height": 941,
+      "bytes": 316478
+    }
+  ]
+}

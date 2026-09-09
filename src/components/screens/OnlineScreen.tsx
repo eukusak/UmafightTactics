@@ -3,6 +3,7 @@ import type { SeasonId } from '../../game/engine/seasons/catalog';
 import { useEffect, useState } from 'react';
 import { useOnlineStore } from '../../store/onlineStore';
 import { useGameStore } from '../../store/gameStore';
+import { seasonBackdrop } from '../../game/ui/season-art';
 
 export function OnlineScreen(): JSX.Element {
   const online = useOnlineStore();
@@ -12,7 +13,7 @@ export function OnlineScreen(): JSX.Element {
   const [fillAi, setFillAi] = useState(false);
   const self = online.room?.seats.find((s) => s.id === online.session?.playerId);
   const host = online.room?.hostId === self?.id;
-  return <div className="menu-screen online-screen">
+  return <div className="menu-screen online-screen season-screen" style={seasonBackdrop(online.room?.seasonId ?? seasonId)}>
     <div className="online-heading"><span>TWINKLE ARENA · MULTIPLAYER</span><h1>함께 아레나로</h1><p>방 코드를 공유하고, 최대 8명이 같은 아레나에서 경쟁하세요.</p></div>
     {!online.room ? <div className="online-connect panel">
       <label>트레이너 이름<input value={name} maxLength={20} onChange={(e) => setName(e.target.value)} /></label>

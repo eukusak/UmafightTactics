@@ -193,12 +193,19 @@ html, body, #root { font-family: "Noto Sans KR Variable", "Malgun Gothic", syste
 .season-picker-heading { margin-bottom: 12px; }
 .season-picker-heading span { color: var(--muted); font-size: 13px; }
 .season-cards { display: grid; grid-template-columns: repeat(5, 1fr); gap: 10px; }
-.season-card { display: flex; flex-direction: column; align-items: flex-start; gap: 10px; min-height: 138px; padding: 18px; text-align: left; border: 1px solid #496071; background: #132b3e; border-radius: 12px; }
+.season-card { position: relative; isolation: isolate; overflow: hidden; display: flex; flex-direction: column; align-items: flex-start; justify-content: flex-end; gap: 8px; min-height: 204px; padding: 18px; text-align: left; border: 1px solid #496071; background: #132b3e; border-radius: 12px; }
+.season-card-art { position: absolute; z-index: -2; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center; pointer-events: none; }
+.season-card::before { content: ''; position: absolute; z-index: -1; inset: 0; background: linear-gradient(180deg, #07132205, #071322c9 43%, #071322f5); pointer-events: none; }
+.season-card > small, .season-card > strong, .season-card > span { text-shadow: 0 2px 5px #000; }
 .season-card small { color: var(--season-color); font-size: 12px; letter-spacing: 2px; }
 .season-card strong { font-size: 19px; }
-.season-card span { color: var(--muted); font-size: 12px; line-height: 1.7; }
+.season-card span { color: #e1ebf4; font-size: 12px; line-height: 1.7; }
 .season-card.selected { border-color: var(--season-color); box-shadow: inset 0 0 0 1px var(--season-color); background: #274257; }
 .season-card:focus-visible { outline: 3px solid white; outline-offset: 3px; }
+.menu-screen.season-screen { background: linear-gradient(180deg, #07132265, #071322a8 45%, #071322e0), var(--season-background) center / cover, #091928; }
+.season-screen > .menu-title, .season-screen .online-heading { text-shadow: 0 3px 12px #000; }
+.season-picker-heading { padding: 9px 14px; border-radius: 10px; background: #071322cf; }
+.season-screen .online-connect, .season-screen .online-lobby { background: #102536f2; }
 .season-details { margin-top: 12px; padding: 16px 20px; border: 1px solid #496071; border-radius: 12px; background: #102536ed; }
 .season-detail-heading > strong { color: var(--season-color); }
 .season-details p { margin: 7px 0 13px; font-size: 12px; }

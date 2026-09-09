@@ -52,7 +52,7 @@ jobs:
           done
 
       - name: Art manifest report
-        run: npm run check:art
+        run: STRICT_ART=1 npm run check:art
 
       - name: Motion briefs stay aligned with skills
         run: |
@@ -64,6 +64,22 @@ jobs:
 
       - name: Build
         run: npm run build
+
+      - name: Install browser for season UI checks
+        run: npx playwright install --with-deps chromium
+
+      - name: Season UI, artwork and online smoke checks
+        run: npm run test:ui
+
+      - name: Save browser report and screenshots
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: season-ui-report
+          path: |
+            playwright-report/
+            test-results/
+          retention-days: 14
 
       - name: Serve the build and check it responds
         run: |

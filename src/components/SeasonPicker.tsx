@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { getSeason, getSeasonUnits, SEASONS } from '../game/engine/roster';
 import type { SeasonId } from '../game/engine/seasons/catalog';
 import { Portrait, costVar } from './common';
+import { SEASON_ART } from '../game/ui/season-art';
 
 export function SeasonPicker({ value, onChange }: { value: SeasonId; onChange: (id: SeasonId) => void }): JSX.Element {
   const [rosterOpen, setRosterOpen] = useState(false);
@@ -10,6 +11,7 @@ export function SeasonPicker({ value, onChange }: { value: SeasonId; onChange: (
     <div className="season-picker-heading"><strong>이번에는 어떤 무대로?</strong><span>5개 시즌 · 시즌당 60명 · 전체 145명 출전</span></div>
     <div className="season-cards">{SEASONS.map((s, i) => <button key={s.id} type="button" aria-pressed={s.id === value}
       className={`season-card${s.id === value ? ' selected' : ''}`} style={{ '--season-color': s.color } as React.CSSProperties} onClick={() => onChange(s.id)}>
+      <img className="season-card-art" src={SEASON_ART[s.id]} alt="" draggable={false} />
       <small>SEASON 0{i + 1}</small><strong>{s.name}</strong><span>{s.subtitle}</span>
     </button>)}</div>
     <div className="season-details" style={{ '--season-color': season.color } as React.CSSProperties}>
