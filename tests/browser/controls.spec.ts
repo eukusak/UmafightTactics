@@ -5,7 +5,7 @@ async function setup(page: Page) {
   await page.getByRole('button', { name: '시작하기' }).click();
   await page.getByRole('button', { name: '새 게임' }).click();
   await page.getByLabel('무작위 시드 사용').uncheck();
-  await page.getByRole('button', { name: '게임 시작', exact: true }).click();
+  await page.getByRole('button', { name: '게임 시작' }).click();
   await page.locator('.draft-card:not(:disabled)').first().click();
   await expect(page.locator('.draft-overlay')).toHaveCount(0);
   await page.getByRole('button', { name: '준비 타이머 일시정지' }).click();
@@ -85,7 +85,7 @@ test('keyboard supports Korean physical keys, uppercase, E/W, custom bindings an
   await page.getByRole('button', { name: '설정', exact: true }).click();
   await page.getByRole('button', { name: 'd', exact: true }).click();
   await page.keyboard.press('z');
-  await page.getByRole('button', { name: '돌아가기', exact: true }).click();
+  await page.getByRole('button', { name: '돌아가기' }).click();
   const beforeRebind = await gold(page);
   await page.keyboard.press('z');
   expect(await gold(page)).toBe(beforeRebind - 2);
