@@ -22,6 +22,15 @@ describe('generated frame animation playback', () => {
       const png = readFileSync(`public/assets/${sheet.file}`);
       expect([png.readUInt32BE(16), png.readUInt32BE(20), png[25]]).toEqual([512, 768, 6]);
       const packing = JSON.parse(readFileSync(sheet.source, 'utf8'));
+      if (skill.choreography) {
+        expect(sheet.skillCompatibilityReview).toBeDefined();
+        const review = JSON.parse(readFileSync(sheet.skillCompatibilityReview!, 'utf8')).units[id];
+        expect(review.skillSignature).toBe(sheet.skillSignature);
+        expect(review.runtimeSha256).toBe(packing.runtimeSha256);
+        expect(review.originalSkill.template).toBe(skill.template);
+        expect(review.originalSkill.targetRule).toBe(skill.targetRule);
+        expect(createHash('sha256').update(JSON.stringify(review.originalSkill)).digest('hex')).toBe(review.originalSkillSignature);
+      }
       expect(createHash('sha256').update(png).digest('hex')).toBe(packing.runtimeSha256);
       expect(packing.frames).toHaveLength(24);
       for (const frame of packing.frames) {

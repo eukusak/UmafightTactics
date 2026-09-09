@@ -6,8 +6,9 @@
  */
 import {
   BATTLE_MAX_SECONDS, BATTLE_NORMAL_SECONDS, BATTLE_TICK_MS, MANA_FROM_DAMAGE_CAP,
-  MANA_LOCK_AFTER_CAST_SECONDS, MANA_PER_ATTACK, OVERTIME_ATTACK_SPEED_MULT,
+  MANA_LOCK_AFTER_CAST_SECONDS, ROLE_ATTACK_MANA, ROLE_MANA_REGEN, OVERTIME_ATTACK_SPEED_MULT,
   OVERTIME_CC_MULT, OVERTIME_DAMAGE_MULT,
+  fighterAttackSpeed,
 } from '../constants';
 import { getItem } from '../items/item-defs';
 import { activeTierIndex, getTrait } from '../traits/trait-defs';
@@ -28,6 +29,7 @@ import {
   type Hex, type KeyFn,
 } from './hex';
 import { emptyAura } from './combat-unit';
+import { skillDuration, skillTimeline, skillWindup } from './skill-timeline';
 
 export type BattleSideInput = {
   playerId: string;
@@ -60,7 +62,9 @@ export type BattleEvent =
   | { t: number; type: 'PROJECTILE'; source: string; target: string; impactAt: number }
   | { t: number; type: 'DAMAGE'; source: string; target: string; damage: number; absorbed: number; isSkill: boolean }
   | { t: number; type: 'ATTACK'; source: string; target: string; damage: number; crit: boolean }
-  | { t: number; type: 'CAST'; source: string; skill: string; target?: string }
+  | { t: number; type: 'CAST'; source: string; skill: string; target?: string; releaseAt?: number; endAt?: number }
+  | { t: number; type: 'SKILL_EFFECT'; source: string; targets: string[]; kind: EffectDef['kind']; radius: number }
+  | { t: number; type: 'CAST_CANCEL'; source: string }
   | { t: number; type: 'DEATH'; unit: string }
   | { t: number; type: 'REVIVE'; unit: string }
   | { t: number; type: 'OVERTIME' }
@@ -83,6 +87,7 @@ export type BattleOptions = {
   /** Record a frame per tick for playback. Headless AI battles leave this off. */
   recordFrames?: boolean;
   maxSeconds?: number;
+  stage?: number;
 };
 
 /** Maximum nesting for damage that itself causes damage. */
@@ -105,6 +110,7 @@ export class BattleEngine {
   /** Which team resolves first each tick. Seeded once so mirror matches are fair. */
   private readonly firstTeam: Team;
   private finished = false;
+  private recordedEventCount = 0;
   private winner: 'A' | 'B' | null = null;
 
   /** Passive effect bindings per unit id, rebuilt once at combat start. */
@@ -116,6 +122,7 @@ export class BattleEngine {
   private damageDepth = 0;
   private attacks: Array<{ source: string; target: string; releaseAt: number; impactAt: number; ranged: boolean; released: boolean }> = [];
   private readonly ctx: EffectContext;
+  private casts: Array<{ source: string; target: string | null; start: number; end: number; timeline: ReturnType<typeof skillTimeline> }> = [];
 
   constructor(
     sideA: BattleSideInput,
@@ -160,6 +167,7 @@ export class BattleEngine {
         unit.hp = unit.maxHp;
       }
       this.units.push(unit);
+      if (unit.role === 'BRUISER') addModifier(unit, 'attackSpeed', fighterAttackSpeed(this.options.stage ?? 2), true, 0, 0);
     }
   }
 
@@ -247,7 +255,13 @@ export class BattleEngine {
     while (!this.finished && this.time < maxSeconds) {
       this.step(dt);
     }
-    if (!this.finished) this.finish(null);
+    if (!this.finished) {
+      this.finish(null);
+      if (this.options.recordFrames) {
+        this.frames.at(-1)?.events.push(...this.events.slice(this.recordedEventCount));
+        this.recordedEventCount = this.events.length;
+      }
+    }
 
     const survivorsA = this.units.filter((u) => u.team === 'A' && u.alive).length;
     const survivorsB = this.units.filter((u) => u.team === 'B' && u.alive).length;
@@ -272,10 +286,14 @@ export class BattleEngine {
       if (!unit.alive) continue;
       cleanupExpired(unit, this.time);
       this.recomputeAura(unit);
+      if (this.time >= unit.manaLockUntil) {
+        unit.mana = Math.min(stat(unit, 'maxMana', this.time), unit.mana + ROLE_MANA_REGEN[unit.role] * dt);
+      }
     }
 
     this.tickStatuses();
     this.tickPeriodics();
+    this.resolveCasts();
     this.resolveAttacks();
 
     // Deterministic act order: team then id.
@@ -288,8 +306,8 @@ export class BattleEngine {
       else this.tryRevive(unit);
     }
 
-    if (this.options.recordFrames) this.recordFrame();
     this.checkEnd();
+    if (this.options.recordFrames) this.recordFrame();
   }
 
   private recomputeAura(unit: CombatUnit): void {
@@ -300,6 +318,9 @@ export class BattleEngine {
     unit.aura.untargetableUntil = keepUntargetable;
 
     const target = unit.targetId ? this.byId(unit.targetId) : null;
+    for (const entry of unit.timedEffects) {
+      if (entry.expiresAt > this.time && triggerHolds(unit, entry.effect.trigger, this.ctx, 'RECOMPUTE', target)) accumulateAura(unit, entry.effect);
+    }
     for (const b of this.bindings.get(unit.id) ?? []) {
       if (!isAuraKind(b.effect.kind)) continue;
       const gate = b.effect.trigger;
@@ -328,6 +349,7 @@ export class BattleEngine {
   private act(unit: CombatUnit, dt: number): void {
     unit.attackCooldown -= dt;
     if (isStunned(unit, this.time)) return;
+    if (this.casts.some((cast) => cast.source === unit.id)) return;
     // A reserved destination remains occupied while the body travels to it.
     if (unit.moveFrom) {
       this.advanceMove(unit, dt);
@@ -374,17 +396,23 @@ export class BattleEngine {
     }
 
     const current = unit.targetId ? this.byId(unit.targetId) : null;
-    if (current && current.alive && isTargetable(current, this.time)) return current;
+    const validCurrent = current?.alive && isTargetable(current, this.time) ? current : null;
+    const range = stat(unit, 'attackRange', this.time);
+    if (validCurrent && hexDistance(unit.cell, validCurrent.cell) <= range) return validCurrent;
 
     const foes = this.units.filter(
       (u) => u.team !== unit.team && u.alive && isTargetable(u, this.time),
     );
     if (!foes.length) return null;
+    // Keep chasing only when there is no immediately attackable replacement.
+    if (validCurrent && !foes.some((foe) => hexDistance(unit.cell, foe.cell) <= range)) return validCurrent;
 
     foes.sort((a, b) => {
       const da = hexDistance(unit.cell, a.cell);
       const db = hexDistance(unit.cell, b.cell);
       if (da !== db) return da - db;
+      const rolePriority = Number(b.role === 'TANK') - Number(a.role === 'TANK');
+      if (rolePriority) return rolePriority;
       const ra = a.hp / a.maxHp;
       const rb = b.hp / b.maxHp;
       if (ra !== rb) return ra - rb;
@@ -545,7 +573,7 @@ export class BattleEngine {
     this.events.push({ t: this.time, type: 'ATTACK', source: unit.id, target: target.id, damage: dealt, crit: isCrit });
 
     if (this.time >= unit.manaLockUntil) {
-      unit.mana = Math.min(stat(unit, 'maxMana', this.time), unit.mana + MANA_PER_ATTACK);
+      unit.mana = Math.min(stat(unit, 'maxMana', this.time), unit.mana + ROLE_ATTACK_MANA[unit.role]);
     }
     this.fireFor(unit, 'ON_ATTACK', target);
   }
@@ -617,7 +645,7 @@ export class BattleEngine {
     this.events.push({ t: this.time, type: 'DAMAGE', source: source.id, target: target.id, damage: Math.max(0, visibleDamage), absorbed: Math.max(0, amount - remaining), isSkill });
 
     // Spec §14.6 — mana from taking damage.
-    if (this.time >= target.manaLockUntil) {
+    if (target.role === 'TANK' && this.time >= target.manaLockUntil) {
       const gained = Math.min(MANA_FROM_DAMAGE_CAP, preMitigation * 0.01 + postMitigation * 0.07);
       target.mana = Math.min(stat(target, 'maxMana', this.time), target.mana + gained);
     }
@@ -649,6 +677,7 @@ export class BattleEngine {
     }
 
     target.alive = false;
+    this.casts = this.casts.filter((cast) => cast.source !== target.id);
     target.hp = 0;
     target.diedAt = this.time;
     target.shields = [];
@@ -690,22 +719,47 @@ export class BattleEngine {
   private cast(unit: CombatUnit): void {
     const target = this.acquireTarget(unit);
     unit.mana = 0;
-    unit.manaLockUntil = this.time + MANA_LOCK_AFTER_CAST_SECONDS;
+    const end = this.time + skillDuration(unit.skill);
+    unit.manaLockUntil = Math.max(end, this.time + MANA_LOCK_AFTER_CAST_SECONDS);
 
-    const skillTargets = resolveTargets(this.ctx, unit, unit.skill.targetRule as never, undefined, target);
+    const selectionRadius = unit.skill.effects.find(e => e.target === unit.skill.targetRule && e.radius)?.radius;
+    const skillTargets = resolveTargets(this.ctx, unit, unit.skill.targetRule, selectionRadius, target);
     const primary = skillTargets[0] ?? target;
-    this.events.push({ t: this.time, type: 'CAST', source: unit.id, skill: unit.skill.id, target: primary?.id });
-
-    unit.skill.effects.forEach((effect, i) => {
-      applyEffect(this.ctx, unit, effect, i, {
-        power: unit.skill.template === 'SUMMON' ? 1 : 1,
-        sourceKey: `skill:${unit.skill.id}`,
-        currentTarget: primary,
-        event: 'ON_CAST',
-      });
-    });
-
+    this.events.push({ t: this.time, type: 'CAST', source: unit.id, skill: unit.skill.id, target: primary?.id,
+      releaseAt: this.time + skillWindup(unit.skill), endAt: end });
+    this.casts.push({ source: unit.id, target: primary?.id ?? null, start: this.time, end, timeline: skillTimeline(unit.skill) });
     this.fireFor(unit, 'ON_CAST', primary);
+    this.resolveCasts();
+  }
+
+  private resolveCasts(): void {
+    const pending = this.casts;
+    this.casts = [];
+    for (const cast of pending) {
+      const unit = this.byId(cast.source);
+      if (!unit?.alive) continue;
+      if (isStunned(unit, this.time)) {
+        this.events.push({ t: this.time, type: 'CAST_CANCEL', source: unit.id });
+        continue;
+      }
+      let primary = cast.target ? this.byId(cast.target) : null;
+      if (!primary?.alive || (primary.team !== unit.team && !isTargetable(primary, this.time))) {
+        primary = resolveTargets(this.ctx, unit, unit.skill.targetRule, undefined, this.acquireTarget(unit))[0] ?? null;
+        cast.target = primary?.id ?? null;
+      }
+      while (unit.alive && cast.timeline.length && cast.start + cast.timeline[0].at <= this.time + 1e-8) {
+        const { effect, index } = cast.timeline.shift()!;
+        const lockPrimary = effect.target === unit.skill.targetRule && !['SELF', 'ALL_ALLIES', 'ALL_ENEMIES'].includes(effect.target ?? '');
+        const targets = resolveTargets(this.ctx, unit, lockPrimary ? 'CURRENT_TARGET' : effect.target ?? 'SELF', effect.radius, primary);
+        const touched = applyEffect(this.ctx, unit, effect, index, {
+          power: ['HEAL', 'SHIELD_FLAT'].includes(effect.kind) ? unit.skillMultiplier : 1,
+          sourceKey: `skill:${unit.id}:${unit.skill.id}`, currentTarget: primary, event: 'ON_CAST', targets,
+        });
+        if (touched && targets.length) this.events.push({ t: this.time, type: 'SKILL_EFFECT', source: unit.id,
+          targets: targets.map((u) => u.id), kind: effect.kind, radius: effect.radius ?? 0 });
+      }
+      if (unit.alive && cast.end > this.time + 1e-8) this.casts.push(cast);
+    }
   }
 
   private summon(owner: CombatUnit, power: number, duration: number): void {
@@ -881,7 +935,6 @@ export class BattleEngine {
   }
 
   private recordFrame(): void {
-    const sliceStart = this.frames.length ? (this.frames[this.frames.length - 1].t) : -1;
     this.frames.push({
       t: Math.round(this.time * 1000) / 1000,
       overtime: this.overtimeApplied,
@@ -894,11 +947,12 @@ export class BattleEngine {
         shield: Math.round(totalShield(u, this.time)),
         mana: Math.round(u.mana), maxMana: Math.round(stat(u, 'maxMana', this.time)),
         alive: u.alive,
-        casting: this.time < u.manaLockUntil,
+        casting: this.casts.some(c => c.source === u.id),
         statuses: u.statuses.filter((s) => s.expiresAt > this.time).map((s) => s.kind),
       })),
-      events: this.events.filter((e) => e.t > sliceStart && e.t <= this.time),
+      events: this.events.slice(this.recordedEventCount),
     });
+    this.recordedEventCount = this.events.length;
   }
 }
 

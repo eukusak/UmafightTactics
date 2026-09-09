@@ -8,8 +8,8 @@ export const ACTIVE_S1_SIZE = 60;
 
 /** Spec §7.5 — active unit *kinds* per cost. */
 export const COST_UNIT_COUNTS: Record<Cost, number> = { 1: 14, 2: 14, 3: 13, 4: 11, 5: 8 };
-/** Spec §17.3 — shared pool copies per unit kind. */
-export const POOL_COPIES: Record<Cost, number> = { 1: 22, 2: 20, 3: 17, 4: 10, 5: 9 };
+/** Adopted 14.15 standard pool; see docs/TFT_PARITY_AUDIT.md for version boundaries. */
+export const POOL_COPIES: Record<Cost, number> = { 1: 30, 2: 25, 3: 18, 4: 10, 5: 9 };
 
 /** Spec §9.2 — per-cost baselines before percentile shaping. */
 export const BASE_HP: Record<Cost, number> = { 1: 650, 2: 720, 3: 820, 4: 930, 5: 1050 };
@@ -46,13 +46,13 @@ export const DEFAULT_CRIT_CHANCE = 0.25;
 export const DEFAULT_CRIT_MULTIPLIER = 1.3;
 export const DEFAULT_ABILITY_POWER = 100;
 
-/** Spec §17.2 — shop odds. Columns are player levels 1..10, and each sums to 100. */
+/** Levels 7/8/9 follow published 17.1/16.1 values. Other columns retain the project baseline. */
 export const SHOP_ODDS: Record<Cost, number[]> = {
-  1: [100, 100, 75, 55, 45, 30, 19, 18, 10, 5],
-  2: [0, 0, 25, 30, 33, 40, 35, 25, 20, 10],
-  3: [0, 0, 0, 15, 20, 25, 35, 36, 25, 20],
-  4: [0, 0, 0, 0, 2, 5, 10, 18, 35, 40],
-  5: [0, 0, 0, 0, 0, 0, 1, 3, 10, 25],
+  1: [100, 100, 75, 55, 45, 30, 19, 15, 10, 5],
+  2: [0, 0, 25, 30, 33, 40, 30, 20, 17, 10],
+  3: [0, 0, 0, 15, 20, 25, 40, 32, 25, 20],
+  4: [0, 0, 0, 0, 2, 5, 10, 30, 33, 40],
+  5: [0, 0, 0, 0, 0, 0, 1, 3, 15, 25],
 };
 
 export const SHOP_SLOTS = 5;
@@ -76,30 +76,29 @@ export const XP_TO_LEVEL: Record<number, number> = {
 export const MAX_INTEREST = 5;
 export const GOLD_PER_INTEREST = 10;
 
-/** Spec §16.2 — streak gold. */
+/** Published 14.1 streak thresholds. */
 export function streakGold(streakAbs: number): number {
   if (streakAbs >= 6) return 3;
   if (streakAbs === 5) return 2;
-  if (streakAbs >= 2) return 1;
+  if (streakAbs >= 3) return 1;
   return 0;
 }
 
-/** Spec §15 — player damage by stage. */
+/** Published 14.9 full table plus 16.1 stage 3/4 changes. */
 export function baseStageDamage(stage: number): number {
-  if (stage <= 2) return 0;
-  if (stage === 3) return 2;
-  if (stage === 4) return 3;
-  if (stage === 5) return 5;
-  if (stage === 6) return 8;
-  if (stage === 7) return 15;
+  if (stage <= 1) return 0;
+  if (stage === 2) return 2;
+  if (stage === 3) return 6;
+  if (stage === 4) return 7;
+  if (stage === 5) return 10;
+  if (stage === 6) return 12;
+  if (stage === 7) return 17;
   return 150;
 }
 
 /** Spec §15 — extra damage from surviving enemy units. */
 export function survivorDamage(count: number): number {
-  const table = [0, 2, 4, 6, 8, 10, 11, 12, 13, 14];
-  if (count < table.length) return table[count];
-  return 5 + count;
+  return Math.max(0, Math.floor(count));
 }
 
 /** Spec §14.7 — combat clock. */
@@ -113,7 +112,17 @@ export const OVERTIME_CC_MULT = 0.34;
 export const OVERTIME_HEAL_MULT = 0.34;
 export const ATTACK_SPEED_CAP = 5.0;
 
-export const MANA_PER_ATTACK = 10;
+/** Public 15.1 role rules. Our SUPPORT uses the Caster resource model. */
+export const ROLE_ATTACK_MANA: Record<Role, number> = {
+  TANK: 5, BRUISER: 10, AD_CARRY: 10, AP_CARRY: 7, SUPPORT: 7,
+};
+export const ROLE_MANA_REGEN: Record<Role, number> = {
+  TANK: 0, BRUISER: 0, AD_CARRY: 0, AP_CARRY: 2, SUPPORT: 2,
+};
+/** 15.4 replaced Fighter omnivamp with stage-based attack speed. */
+export function fighterAttackSpeed(stage: number): number {
+  return stage <= 1 ? 0 : stage === 2 ? .05 : stage === 3 ? .1 : stage === 4 ? .2 : .3;
+}
 export const MANA_FROM_DAMAGE_CAP = 50;
 export const MANA_LOCK_AFTER_CAST_SECONDS = 1;
 

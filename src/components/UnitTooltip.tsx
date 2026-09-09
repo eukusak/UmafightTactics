@@ -3,7 +3,7 @@ import { getUnitDef } from '../game/engine/roster';
 import { getItem } from '../game/engine/items/item-defs';
 import { getTrait } from '../game/engine/traits/trait-defs';
 import { RoleChip, TraitChip } from './common';
-import { STAR_STAT_MULT, starSkillMultiplier } from '../game/engine/constants';
+import { STAR_STAT_MULT, starSkillMultiplier, ROLE_ATTACK_MANA, ROLE_MANA_REGEN } from '../game/engine/constants';
 import type { UnitInstance } from '../game/engine/state';
 
 const DISTANCE_LABEL: Record<string, string> = {
@@ -26,6 +26,11 @@ export function UnitTooltip({ unit }: { unit: UnitInstance }): JSX.Element {
         <RoleChip role={def.role} />
         {def.traits.map((t) => <TraitChip key={t} id={t} />)}
       </div>
+      <p className="muted">공격당 마나 {ROLE_ATTACK_MANA[def.role]}
+        {ROLE_MANA_REGEN[def.role] > 0 ? ` · 초당 마나 +${ROLE_MANA_REGEN[def.role]}` : ''}
+        {def.role === 'TANK' ? ' · 피격 시 마나 획득 · 같은 거리에서 우선 공격받음' : ''}
+        {def.role === 'BRUISER' ? ' · 스테이지 2/3/4/5+ 공격속도 +5/10/20/30%' : ''}
+      </p>
 
       <dl>
         <dt>체력</dt><dd>{Math.round(def.hp * mult)}</dd>

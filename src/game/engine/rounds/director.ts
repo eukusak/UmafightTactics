@@ -371,8 +371,8 @@ export class RoundDirector {
    * what the player watches is the very run that produced the result.
    */
   private runBattle(a: BattleSideInput, b: BattleSideInput, rng: Rng, record: boolean, isGhost = false) {
-    if (!record) return simulateBattle(a, b, rng);
-    const engine = new BattleEngine(a, b, rng, { recordFrames: true });
+    if (!record) return simulateBattle(a, b, rng, { stage: this.state.stage });
+    const engine = new BattleEngine(a, b, rng, { recordFrames: true, stage: this.state.stage });
     const result = engine.run();
     this.lastHumanFrames = engine.frames;
     if (this.state.players.some((p) => p.id === a.playerId && p.isHuman)) this.playerFrames.set(a.playerId, engine.frames);

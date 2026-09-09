@@ -7,8 +7,9 @@
     "rows": 6,
     "source": "docs/art-source/motions/batch-01/special_week/packing.json",
     "skillId": "skill_special_week",
-    "skillSignature": "8ac194cdae59ec9105bc27211fa715ff2d9f3538ac1b6bcda89f36a89d16bbab",
-    "skillReview": "사거리 3의 손짓 발사. 직선 돌파: 웅크린 출발 → 전방 발진 → 낮은 돌진 → 착지. 마법 구체 시전 포즈를 사용하지 않음."
+    "skillSignature": "b43d2fb8af497020dd3d8c5c1cf9181806cd84ca50559e0babe51dd00d46dc43",
+    "skillReview": "사거리 3의 손짓 발사. 직선 돌파: 웅크린 출발 → 전방 발진 → 낮은 돌진 → 착지. 마법 구체 시전 포즈를 사용하지 않음. 2026-09-09 시간표 재검토: 기존 출발·발진·돌파·착지 유지. 돌파 위치에 방어 약화/화상, 또는 착지 보호막을 별도 효과로 표시.",
+    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
   },
   "pve_training_dummy": {
     "file": "motions/pve_training_dummy.png",
@@ -73,9 +74,10 @@
     "rows": 6,
     "source": "docs/art-source/motions/production-144/silence_suzuka/packing.json",
     "skillId": "skill_silence_suzuka",
-    "skillSignature": "f8f6a811b6062e4f4aaa0de6b8e4747e97bad6179c66f9339266dad2f54228d4",
-    "skillReview": "광역 폭발: 손을 모아 준비 → 양손을 들어 조준 → 밀집 적 방향으로 손바닥 방출 → 회복. 초록·흰색 승부복과 긴 주황 머리, 보라 타이츠 유지.",
-    "skillReleaseFrame": 2
+    "skillSignature": "06288e50a5b5ded9ce308b557e5a1d721b896088b7641ed3788f0427652bc5a7",
+    "skillReview": "광역 폭발: 손을 모아 준비 → 양손을 들어 조준 → 밀집 적 방향으로 손바닥 방출 → 회복. 초록·흰색 승부복과 긴 주황 머리, 보라 타이츠 유지. 2026-09-09 시간표 재검토: 기존 충전·방출 동작 유지. 두 번째 폭발은 잔류 에너지 효과이며 새 팔 동작을 요구하지 않음.",
+    "skillReleaseFrame": 2,
+    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
   },
   "tokai_teio": {
     "file": "motions/tokai_teio.png",
@@ -85,9 +87,10 @@
     "rows": 6,
     "source": "docs/art-source/motions/production-144/tokai_teio/packing.json",
     "skillId": "skill_tokai_teio",
-    "skillSignature": "53f8b70ef58a0626eee71de330677ce40a7738849ad283dbb0f2fbc77254adf4",
-    "skillReview": "연속 스퍼트: 같은 대상 방향으로 1차 → 2차 → 3차 손짓 발사 → 반동 회복. 세 발사 포즈를 모두 재생하며 다중 대상 부채꼴 공격으로 바꾸지 않음.",
-    "skillReleaseFrame": 0
+    "skillSignature": "0a1d6d18ab160d675f9d02d37166ed1746ba258e3d2876425eae4df6c49cab22",
+    "skillReview": "연속 스퍼트: 같은 대상 방향으로 1차 → 2차 → 3차 손짓 발사 → 반동 회복. 세 발사 포즈를 모두 재생하며 다중 대상 부채꼴 공격으로 바꾸지 않음. 2026-09-09 시간표 재검토: 검수된 1·2·3차 발사 포즈에 실제 0/0.167/0.333초 연타를 각각 연결. 이전에는 3회 피해가 동시 발생.",
+    "skillReleaseFrame": 0,
+    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
   },
   "maruzensky": {
     "file": "motions/maruzensky.png",
@@ -97,9 +100,10 @@
     "rows": 6,
     "source": "docs/art-source/motions/production-144/maruzensky/packing.json",
     "skillId": "skill_maruzensky",
-    "skillSignature": "2e7ca5a6ddbdd3382c342099f7daf046ae4b498f3eee31c4600756bd8e727494",
-    "skillReview": "주도권 장악: 가슴에 힘 모으기 → 팔 벌리기 → 아군 전체 강화 신호 → 지휘 자세 회복. 직접 피해를 주는 폭발 동작으로 바꾸지 않음.",
-    "skillReleaseFrame": 2
+    "skillSignature": "9d47330c39004c7cb14ddec8bef81c959d70c262edd6f1c73a7515fabcf87721",
+    "skillReview": "주도권 장악: 가슴에 힘 모으기 → 팔 벌리기 → 아군 전체 강화 신호 → 지휘 자세 회복. 직접 피해를 주는 폭발 동작으로 바꾸지 않음. 2026-09-09 시간표 재검토: 기존 양팔 확장·오라 유지 동작 유지. 회복 파동/보호막/이동 강화는 펼친 오라에 의해 발생.",
+    "skillReleaseFrame": 2,
+    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
   },
   "fuji_kiseki": {
     "file": "motions/fuji_kiseki.png",
@@ -109,9 +113,10 @@
     "rows": 6,
     "source": "docs/art-source/motions/production-144/fuji_kiseki/packing.json",
     "skillId": "skill_fuji_kiseki",
-    "skillSignature": "8eafe2d3c38f86cb6ec16f1e11a1d526530ebcaf3a814dbbb36c9333e71510a4",
-    "skillReview": "광역 폭발: 한손에 힘 모으기 → 팔 들어 준비 → 적 무리로 손바닥 방출 → 가슴을 지키며 회복. 검은 바지 정장·연두 장식을 유지.",
-    "skillReleaseFrame": 2
+    "skillSignature": "18e4c172bd96b71f2bb621881fe765ee3d29ae32cb7e5251c6f028e52c03588a",
+    "skillReview": "광역 폭발: 한손에 힘 모으기 → 팔 들어 준비 → 적 무리로 손바닥 방출 → 가슴을 지키며 회복. 검은 바지 정장·연두 장식을 유지. 2026-09-09 시간표 재검토: 기존 충전·방출 동작 유지. 두 번째 폭발은 잔류 에너지 효과이며 새 팔 동작을 요구하지 않음.",
+    "skillReleaseFrame": 2,
+    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
   },
   "oguri_cap": {
     "file": "motions/oguri_cap.png",
@@ -121,9 +126,10 @@
     "rows": 6,
     "source": "docs/art-source/motions/production-144/oguri_cap/packing.json",
     "skillId": "skill_oguri_cap",
-    "skillSignature": "84fc026079c3fe011c67e10c6cfa3a4fc7ffd6a8be0ce8910281f42734fa812d",
-    "skillReview": "범위 마법 공격: 허리에서 기운 모으기 → 가슴 앞 응축 → 양손으로 적 무리에 방출 → 방어 자세 회복. 실제 범위 피해와 자기 강화에 맞춤.",
-    "skillReleaseFrame": 2
+    "skillSignature": "18cbb8418bab6316d9fbc2f0f428bec0286d6b53feaa4f52dfea2df0e456641a",
+    "skillReview": "범위 마법 공격: 허리에서 기운 모으기 → 가슴 앞 응축 → 양손으로 적 무리에 방출 → 방어 자세 회복. 실제 범위 피해와 자기 강화에 맞춤. 2026-09-09 시간표 재검토: 기존 충전·방출 동작 유지. 두 번째 폭발은 잔류 에너지 효과이며 새 팔 동작을 요구하지 않음.",
+    "skillReleaseFrame": 2,
+    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
   },
   "gold_ship": {
     "file": "motions/gold_ship.png",
@@ -133,9 +139,10 @@
     "rows": 6,
     "source": "docs/art-source/motions/production-144/gold_ship/packing.json",
     "skillId": "skill_gold_ship",
-    "skillSignature": "823f0b5a45a9db1ccd687f513b7ed17e82a8e95269a0f99b699a436abad62603",
-    "skillReview": "직선 돌파: 손을 낮춘 출발 → 앞쪽 발진 → 몸을 수평으로 낮춘 어깨 돌파 → 착지. 기본 주먹 공격과 돌진 스킬을 구분.",
-    "skillReleaseFrame": 2
+    "skillSignature": "aec3ddd92e3adc17dc2929e611f817511b06c036f74557f8f3bb1aa81fe69a50",
+    "skillReview": "직선 돌파: 손을 낮춘 출발 → 앞쪽 발진 → 몸을 수평으로 낮춘 어깨 돌파 → 착지. 기본 주먹 공격과 돌진 스킬을 구분. 2026-09-09 시간표 재검토: 기존 출발·발진·돌파·착지 유지. 돌파 위치에 방어 약화/화상, 또는 착지 보호막을 별도 효과로 표시.",
+    "skillReleaseFrame": 2,
+    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
   },
   "vodka": {
     "file": "motions/vodka.png",
@@ -145,9 +152,10 @@
     "rows": 6,
     "source": "docs/art-source/motions/production-144/vodka/packing.json",
     "skillId": "skill_vodka",
-    "skillSignature": "940a279905c029488e06b489ebf9dd34d787c59e509872d29c94f15a534aae2f",
-    "skillReview": "연속 스퍼트: 동일 대상 방향으로 첫 발사 → 두 번째 발사 → 세 번째 발사 → 반동 회복. 첫 세 스킬 프레임을 모두 재생.",
-    "skillReleaseFrame": 0
+    "skillSignature": "e576044e4198c018b5bc4b417bde16dbf4863d4083ef37ce18e79660b860fb7b",
+    "skillReview": "연속 스퍼트: 동일 대상 방향으로 첫 발사 → 두 번째 발사 → 세 번째 발사 → 반동 회복. 첫 세 스킬 프레임을 모두 재생. 2026-09-09 시간표 재검토: 검수된 1·2·3차 발사 포즈에 실제 0/0.167/0.333초 연타를 각각 연결. 이전에는 3회 피해가 동시 발생.",
+    "skillReleaseFrame": 0,
+    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
   },
   "daiwa_scarlet": {
     "file": "motions/daiwa_scarlet.png",
@@ -157,9 +165,10 @@
     "rows": 6,
     "source": "docs/art-source/motions/production-144/daiwa_scarlet/packing.json",
     "skillId": "skill_daiwa_scarlet",
-    "skillSignature": "0598288470252e8707662dba7d557ef19b1bc114335d1237df220506c9a52182",
-    "skillReview": "범위 마법 공격: 가슴에 손을 모음 → 손을 높여 응축 → 적 무리에 손바닥 방출 → 허리에 손을 둔 회복.",
-    "skillReleaseFrame": 2
+    "skillSignature": "03712d0cc686e706495dd5b2dba5da8d3bb421c03c9c0ddbd81b4374c8ae60ef",
+    "skillReview": "범위 마법 공격: 가슴에 손을 모음 → 손을 높여 응축 → 적 무리에 손바닥 방출 → 허리에 손을 둔 회복. 2026-09-09 시간표 재검토: 기존 충전·방출 동작 유지. 두 번째 폭발은 잔류 에너지 효과이며 새 팔 동작을 요구하지 않음.",
+    "skillReleaseFrame": 2,
+    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
   },
   "taiki_shuttle": {
     "file": "motions/taiki_shuttle.png",
@@ -169,9 +178,10 @@
     "rows": 6,
     "source": "docs/art-source/motions/production-144/taiki_shuttle/packing.json",
     "skillId": "skill_taiki_shuttle",
-    "skillSignature": "c8e4a83769f92ccbb8e5d6ed6e88ca22e56bcf0473c564c874578abd547b838e",
-    "skillReview": "범위 마법 공격: 허리 앞 응축 → 양팔 들어올림 → 넓은 손바닥 마법 방출 → 경쾌한 회복. 총기 연사나 다른 스킬로 변경하지 않음.",
-    "skillReleaseFrame": 2
+    "skillSignature": "11eaa9faac71f09c522bc33fb761814949d4ad0b55618c3358d408e58ced4616",
+    "skillReview": "범위 마법 공격: 허리 앞 응축 → 양팔 들어올림 → 넓은 손바닥 마법 방출 → 경쾌한 회복. 총기 연사나 다른 스킬로 변경하지 않음. 2026-09-09 시간표 재검토: 기존 충전·방출 동작 유지. 두 번째 폭발은 잔류 에너지 효과이며 새 팔 동작을 요구하지 않음.",
+    "skillReleaseFrame": 2,
+    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
   },
   "grass_wonder": {
     "file": "motions/grass_wonder.png",
@@ -181,9 +191,10 @@
     "rows": 6,
     "source": "docs/art-source/motions/production-144/grass_wonder/packing.json",
     "skillId": "skill_grass_wonder",
-    "skillSignature": "b9810a358310953135b6cdba4ee61d8a6cf03a3d95fef818fb71d6421f3d0c7c",
-    "skillReview": "직선 돌파: 낮은 출발 자세 → 앞쪽 발진 → 몸을 낮춘 전방 돌파 → 착지. 원본 청백색 의상과 장발 유지; 치유나 검 공격 추가 없음.",
-    "skillReleaseFrame": 2
+    "skillSignature": "a0fd052524a117b9e1a8490d8be7c7da0bc00f9e5c6cb2dd7a43e8fd710106a8",
+    "skillReview": "직선 돌파: 낮은 출발 자세 → 앞쪽 발진 → 몸을 낮춘 전방 돌파 → 착지. 원본 청백색 의상과 장발 유지; 치유나 검 공격 추가 없음. 2026-09-09 시간표 재검토: 기존 출발·발진·돌파·착지 유지. 돌파 위치에 방어 약화/화상, 또는 착지 보호막을 별도 효과로 표시.",
+    "skillReleaseFrame": 2,
+    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
   },
   "hishi_amazon": {
     "file": "motions/hishi_amazon.png",
@@ -193,9 +204,10 @@
     "rows": 6,
     "source": "docs/art-source/motions/production-144/hishi_amazon/packing.json",
     "skillId": "skill_hishi_amazon",
-    "skillSignature": "2b2965e47352f1a0671112cafd000756c2db69f3c859e31de4478aee09b4ba79",
-    "skillReview": "진로 봉쇄: 적 무리 조준 → 어깨 옆에 힘을 모음 → 정지 손바닥 명령 → 회수. 범위 마법 피해·기절에 맞는 제어 자세.",
-    "skillReleaseFrame": 2
+    "skillSignature": "335e3b1241d73cff38b3a72cd9493f35905677430107ba35b2a77fc1237e0294",
+    "skillReview": "진로 봉쇄: 적 무리 조준 → 어깨 옆에 힘을 모음 → 정지 손바닥 명령 → 회수. 범위 마법 피해·기절에 맞는 제어 자세. 2026-09-09 시간표 재검토: 기존 조준·응축·구속 명령 유지. 침묵·기절·감속의 차이는 대상 상태 아이콘과 효과로 표시.",
+    "skillReleaseFrame": 2,
+    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
   },
   "mejiro_mcqueen": {
     "file": "motions/mejiro_mcqueen.png",
@@ -205,9 +217,10 @@
     "rows": 6,
     "source": "docs/art-source/motions/production-144/mejiro_mcqueen/packing.json",
     "skillId": "skill_mejiro_mcqueen",
-    "skillSignature": "1083ccd060200c3adeca3eca3fdff4f04ebd5d172ee900d108aec2edbf71172b",
-    "skillReview": "아군 강화: 가슴에 손 → 우아하게 손 들어올림 → 양팔을 벌려 전체 아군 격려 → 기본 자세. 공격속도·방어력·마저 강화.",
-    "skillReleaseFrame": 2
+    "skillSignature": "38ff8dbeae3f38f62774fc190c56128571364e0e01b74ac520dc1ce299f53d33",
+    "skillReview": "아군 강화: 가슴에 손 → 우아하게 손 들어올림 → 양팔을 벌려 전체 아군 격려 → 기본 자세. 공격속도·방어력·마저 강화. 2026-09-09 시간표 재검토: 기존 양팔 확장·오라 유지 동작 유지. 회복 파동/보호막/이동 강화는 펼친 오라에 의해 발생.",
+    "skillReleaseFrame": 2,
+    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
   },
   "el_condor_pasa": {
     "file": "motions/el_condor_pasa.png",
@@ -217,9 +230,10 @@
     "rows": 6,
     "source": "docs/art-source/motions/production-144/el_condor_pasa/packing.json",
     "skillId": "skill_el_condor_pasa",
-    "skillSignature": "9734d31a74952ab4f8f74b0ab6e50fee8600f697f6eb4de3b4a3a9bd627959ed",
-    "skillReview": "낮은 체력 아군 회복: 몸을 낮춰 대상 확인 → 가슴 앞에 회복 기운 모음 → 양손으로 아군에게 전달 → 자기 방어 자세. 실제 회복과 아군 공격 강화.",
-    "skillReleaseFrame": 2
+    "skillSignature": "db5eeafbe22c92e220edcee570fd49c155da6bcb2081242af4cda8a42f23a7f1",
+    "skillReview": "낮은 체력 아군 회복: 몸을 낮춰 대상 확인 → 가슴 앞에 회복 기운 모음 → 양손으로 아군에게 전달 → 자기 방어 자세. 실제 회복과 아군 공격 강화. 2026-09-09 시간표 재검토: 기존 손 모음·아군을 향한 회복 전달 유지. 같은 아군에게 후속 회복/보호막을 전달.",
+    "skillReleaseFrame": 2,
+    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
   },
   "tm_opera_o": {
     "file": "motions/tm_opera_o.png",
@@ -229,9 +243,10 @@
     "rows": 6,
     "source": "docs/art-source/motions/production-144/tm_opera_o/packing.json",
     "skillId": "skill_tm_opera_o",
-    "skillSignature": "65e1472307f584280247a34de7f41a3368b96a8dd00eeb7aeaad7285e37b7748",
-    "skillReview": "자기 보호막과 주변 도발: 가슴에 손 → 망토 펼치기 → 양팔을 벌린 당당한 도전 → 가슴 앞 회복. 피해 공격으로 바꾸지 않음.",
-    "skillReleaseFrame": 2
+    "skillSignature": "b8ad09311bdea2fbc5e14acb51239b13c18cde8aeab98fec68b9144fb9330bad",
+    "skillReview": "자기 보호막과 주변 도발: 가슴에 손 → 망토 펼치기 → 양팔을 벌린 당당한 도전 → 가슴 앞 회복. 피해 공격으로 바꾸지 않음. 2026-09-09 시간표 재검토: 기존 방벽 전개·도발·방어 유지. 반격 피해는 방벽 파동으로 표시하며 추가 타격 포즈 불필요.",
+    "skillReleaseFrame": 2,
+    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
   },
   "narita_brian": {
     "file": "motions/narita_brian.png",
@@ -241,9 +256,10 @@
     "rows": 6,
     "source": "docs/art-source/motions/production-144/narita_brian/packing.json",
     "skillId": "skill_narita_brian",
-    "skillSignature": "3d222d557400b71e14bebde543f2e78f859816d7d25d002e2050f66db2e5d3cd",
-    "skillReview": "연속 스퍼트: 동일 대상 첫 손짓 발사 → 자세를 바꾼 두 번째 발사 → 세 번째 강한 손바닥 발사 → 자기 보호 자세.",
-    "skillReleaseFrame": 0
+    "skillSignature": "93314048ba2928f6c62dd6ae165fb3a348a671fd503c7bf937a24e483003e069",
+    "skillReview": "연속 스퍼트: 동일 대상 첫 손짓 발사 → 자세를 바꾼 두 번째 발사 → 세 번째 강한 손바닥 발사 → 자기 보호 자세. 2026-09-09 시간표 재검토: 검수된 1·2·3차 발사 포즈에 실제 0/0.167/0.333초 연타를 각각 연결. 이전에는 3회 피해가 동시 발생.",
+    "skillReleaseFrame": 0,
+    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
   },
   "symboli_rudolf": {
     "file": "motions/symboli_rudolf.png",
@@ -253,9 +269,10 @@
     "rows": 6,
     "source": "docs/art-source/motions/production-144/symboli_rudolf/packing.json",
     "skillId": "skill_symboli_rudolf",
-    "skillSignature": "27d41e22d4d772a525593c7447fd1db8074303350d4b4cc17113f7bc4ce2a739",
-    "skillReview": "진로 봉쇄: 적 무리 지목 → 가슴에 손을 모음 → 정면 정지 손바닥 명령 → 침착한 회복. 마법 피해와 범위 기절.",
-    "skillReleaseFrame": 2
+    "skillSignature": "7f13535c391cc95e5b435bbf31f71a9829902706a17582074c22521241d0749a",
+    "skillReview": "진로 봉쇄: 적 무리 지목 → 가슴에 손을 모음 → 정면 정지 손바닥 명령 → 침착한 회복. 마법 피해와 범위 기절. 2026-09-09 시간표 재검토: 기존 조준·응축·구속 명령 유지. 침묵·기절·감속의 차이는 대상 상태 아이콘과 효과로 표시.",
+    "skillReleaseFrame": 2,
+    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
   },
   "air_groove": {
     "file": "motions/air_groove.png",
@@ -265,9 +282,10 @@
     "rows": 6,
     "source": "docs/art-source/motions/production-144/air_groove/packing.json",
     "skillId": "skill_air_groove",
-    "skillSignature": "138285ad131ff3af814412ffe6de23e2a061223b2346602e9d2a26f6d9604ad9",
-    "skillReview": "보호막·도발: 팔을 가슴 앞에 → 정면 방어 손바닥 → 도전하는 팔 펼침 → 방어 회복. 망토와 청색 의상 유지.",
-    "skillReleaseFrame": 2
+    "skillSignature": "903772a2830800e3d94403e26fb7806c201573d8106d6af2d6978eecd94cd572",
+    "skillReview": "보호막·도발: 팔을 가슴 앞에 → 정면 방어 손바닥 → 도전하는 팔 펼침 → 방어 회복. 망토와 청색 의상 유지. 2026-09-09 시간표 재검토: 기존 방벽 전개·도발·방어 유지. 반격 피해는 방벽 파동으로 표시하며 추가 타격 포즈 불필요.",
+    "skillReleaseFrame": 2,
+    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
   },
   "agnes_digital": {
     "file": "motions/agnes_digital.png",
@@ -277,9 +295,10 @@
     "rows": 6,
     "source": "docs/art-source/motions/production-144/agnes_digital/packing.json",
     "skillId": "skill_agnes_digital",
-    "skillSignature": "92fca10bf9c97838240bed8fdd18b714a9faa3d10ec9048088519661c20fee97",
-    "skillReview": "연속 스퍼트: 같은 대상 방향 첫 손짓 → 두 번째 손바닥 → 세 번째 양손 방출 → 반동 회복. 총기나 다른 대상 공격 추가 없음.",
-    "skillReleaseFrame": 0
+    "skillSignature": "87ab84c97ae07c1e341d19e3d2d63f8200176782242c51fd899cc7d20bd4ccb1",
+    "skillReview": "연속 스퍼트: 같은 대상 방향 첫 손짓 → 두 번째 손바닥 → 세 번째 양손 방출 → 반동 회복. 총기나 다른 대상 공격 추가 없음. 2026-09-09 시간표 재검토: 검수된 1·2·3차 발사 포즈에 실제 0/0.167/0.333초 연타를 각각 연결. 이전에는 3회 피해가 동시 발생.",
+    "skillReleaseFrame": 0,
+    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
   },
   "seiun_sky": {
     "file": "motions/seiun_sky.png",
@@ -289,9 +308,10 @@
     "rows": 6,
     "source": "docs/art-source/motions/production-144/seiun_sky/packing.json",
     "skillId": "skill_seiun_sky",
-    "skillSignature": "b072867db98ec5b86119b559526b120c3b0fa8ec819c8cef3c9c9c312c503367",
-    "skillReview": "아군 강화: 가슴 앞 손 모음 → 느긋하게 한 팔 들어올림 → 양팔을 벌린 전체 아군 격려 → 머리에 손을 둔 회복.",
-    "skillReleaseFrame": 2
+    "skillSignature": "2c806d11e4f598d13dd0ede6e2aeb8802344e82ab9c83115fc203edaa8cd0707",
+    "skillReview": "아군 강화: 가슴 앞 손 모음 → 느긋하게 한 팔 들어올림 → 양팔을 벌린 전체 아군 격려 → 머리에 손을 둔 회복. 2026-09-09 시간표 재검토: 기존 양팔 확장·오라 유지 동작 유지. 회복 파동/보호막/이동 강화는 펼친 오라에 의해 발생.",
+    "skillReleaseFrame": 2,
+    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
   },
   "tamamo_cross": {
     "file": "motions/tamamo_cross.png",
@@ -301,9 +321,10 @@
     "rows": 6,
     "source": "docs/art-source/motions/production-144/tamamo_cross/packing.json",
     "skillId": "skill_tamamo_cross",
-    "skillSignature": "715aad28b72845b35a87e89b65bedd9a9951046047585da1527a498d4f876d71",
-    "skillReview": "직선 돌파: 낮은 출발 자세 → 전방 발진 → 몸을 수평으로 낮춘 돌파 → 넓게 발을 딛은 착지. 운동복과 긴 리본 유지.",
-    "skillReleaseFrame": 2
+    "skillSignature": "a21bf91da8a78394bb722d11939d810235622e8e3eb733bd3e50bd21a9b9f7d0",
+    "skillReview": "직선 돌파: 낮은 출발 자세 → 전방 발진 → 몸을 수평으로 낮춘 돌파 → 넓게 발을 딛은 착지. 운동복과 긴 리본 유지. 2026-09-09 시간표 재검토: 기존 출발·발진·돌파·착지 유지. 돌파 위치에 방어 약화/화상, 또는 착지 보호막을 별도 효과로 표시.",
+    "skillReleaseFrame": 2,
+    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
   },
   "fine_motion": {
     "file": "motions/fine_motion.png",
@@ -313,9 +334,10 @@
     "rows": 6,
     "source": "docs/art-source/motions/production-144/fine_motion/packing.json",
     "skillId": "skill_fine_motion",
-    "skillSignature": "e77219649dabf17e9727c032ba0781051bb55609ae18422736bd5a699f5c98d9",
-    "skillReview": "직선 돌파: 자세를 낮춘 출발 → 전방 발진 → 수평으로 몸을 뻗은 돌파 → 낮은 착지. 실제 물리 범위 피해와 자기 속도 강화.",
-    "skillReleaseFrame": 2
+    "skillSignature": "fb13b0e9c90e1bbcd019342f8f0aee4ed92aaaba2a155c6da9c1ba81b2fed301",
+    "skillReview": "직선 돌파: 자세를 낮춘 출발 → 전방 발진 → 수평으로 몸을 뻗은 돌파 → 낮은 착지. 실제 물리 범위 피해와 자기 속도 강화. 2026-09-09 시간표 재검토: 기존 출발·발진·돌파·착지 유지. 돌파 위치에 방어 약화/화상, 또는 착지 보호막을 별도 효과로 표시.",
+    "skillReleaseFrame": 2,
+    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
   },
   "biwa_hayahide": {
     "file": "motions/biwa_hayahide.png",
@@ -325,9 +347,10 @@
     "rows": 6,
     "source": "docs/art-source/motions/production-144/biwa_hayahide/packing.json",
     "skillId": "skill_biwa_hayahide",
-    "skillSignature": "31fd01c2bbda71aad65dd0cf18211517a9178bd62c0c7674fb29817c8f337550",
-    "skillReview": "광역 폭발: 안경에 손을 대며 조준 → 가슴 앞 응축 → 양손으로 적 무리 방향 방출 → 팔을 내린 회복. 안경과 풍성한 백발 유지.",
-    "skillReleaseFrame": 2
+    "skillSignature": "e43fb0024318c04840052cf822d4ceddb5292516d15bd51e54b8f3eaaaab7f7c",
+    "skillReview": "광역 폭발: 안경에 손을 대며 조준 → 가슴 앞 응축 → 양손으로 적 무리 방향 방출 → 팔을 내린 회복. 안경과 풍성한 백발 유지. 2026-09-09 시간표 재검토: 기존 충전·방출 동작 유지. 두 번째 폭발은 잔류 에너지 효과이며 새 팔 동작을 요구하지 않음.",
+    "skillReleaseFrame": 2,
+    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
   },
   "mayano_top_gun": {
     "file": "motions/mayano_top_gun.png",
@@ -337,9 +360,10 @@
     "rows": 6,
     "source": "docs/art-source/motions/production-144/mayano_top_gun/packing.json",
     "skillId": "skill_mayano_top_gun",
-    "skillSignature": "509003a42be16514b6e7f4dced9d5a1a4b7f1c04d34a1182a2308260769211f3",
-    "skillReview": "아군 강화: 가슴에 손 → 비행사식 경례 → 양팔을 벌려 전체 아군 격려 → 허리에 손. 근접 주먹 공격과 강화 스킬을 구분.",
-    "skillReleaseFrame": 2
+    "skillSignature": "71a3013006be1d1d7932fe74043ee5b534059fb6b667a8b4facffc29355b15d5",
+    "skillReview": "아군 강화: 가슴에 손 → 비행사식 경례 → 양팔을 벌려 전체 아군 격려 → 허리에 손. 근접 주먹 공격과 강화 스킬을 구분. 2026-09-09 시간표 재검토: 기존 양팔 확장·오라 유지 동작 유지. 회복 파동/보호막/이동 강화는 펼친 오라에 의해 발생.",
+    "skillReleaseFrame": 2,
+    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
   },
   "mihono_bourbon": {
     "file": "motions/mihono_bourbon.png",
@@ -349,9 +373,10 @@
     "rows": 6,
     "source": "docs/art-source/motions/production-144/mihono_bourbon/packing.json",
     "skillId": "skill_mihono_bourbon",
-    "skillSignature": "48d93fde4552365199075375dafbea917007372051b5759e4c829d58fc1df3a9",
-    "skillReview": "광역 폭발: 허리 앞 대기 → 양팔 교차 충전 → 정밀한 양손 방출 → 대기 자세. 원본의 보라색 허리 장비를 유지하고 무기를 추가하지 않음.",
-    "skillReleaseFrame": 2
+    "skillSignature": "7549f325b82d7dc1afefa91ddd1ce9f198d9f72559dd2a5f99a7f6ab1dfded72",
+    "skillReview": "광역 폭발: 허리 앞 대기 → 양팔 교차 충전 → 정밀한 양손 방출 → 대기 자세. 원본의 보라색 허리 장비를 유지하고 무기를 추가하지 않음. 2026-09-09 시간표 재검토: 기존 충전·방출 동작 유지. 두 번째 폭발은 잔류 에너지 효과이며 새 팔 동작을 요구하지 않음.",
+    "skillReleaseFrame": 2,
+    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
   },
   "mejiro_ryan": {
     "file": "motions/mejiro_ryan.png",
@@ -361,9 +386,10 @@
     "rows": 6,
     "source": "docs/art-source/motions/production-144/mejiro_ryan/packing.json",
     "skillId": "skill_mejiro_ryan",
-    "skillSignature": "f70f9d33816ef77e12df5e410a6e460f4867f560d220b2f310bd0ae979d07498",
-    "skillReview": "직선 돌파: 낮은 운동선수 출발 → 강한 발진 → 어깨를 앞세운 수평 돌파 → 넓게 착지. 기본 주먹 공격과 물리 돌진 구분.",
-    "skillReleaseFrame": 2
+    "skillSignature": "e3d9f18827275fb86b01ea9c060470468205fa12eb4b5916d8381587063a5e14",
+    "skillReview": "직선 돌파: 낮은 운동선수 출발 → 강한 발진 → 어깨를 앞세운 수평 돌파 → 넓게 착지. 기본 주먹 공격과 물리 돌진 구분. 2026-09-09 시간표 재검토: 기존 출발·발진·돌파·착지 유지. 돌파 위치에 방어 약화/화상, 또는 착지 보호막을 별도 효과로 표시.",
+    "skillReleaseFrame": 2,
+    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
   },
   "hishi_akebono": {
     "file": "motions/hishi_akebono.png",
@@ -373,9 +399,10 @@
     "rows": 6,
     "source": "docs/art-source/motions/production-144/hishi_akebono/packing.json",
     "skillId": "skill_hishi_akebono",
-    "skillSignature": "0ea78ea860f2747ff0b57c5b237300085d42a2f5967371f9a954f276000791c0",
-    "skillReview": "아군 강화: 가슴 앞 손 모음 → 양팔 들어올림 → 넓게 팔을 벌려 전체 아군 격려 → 편안한 회복. 회복 스킬로 변경하지 않음.",
-    "skillReleaseFrame": 2
+    "skillSignature": "07a73543dda7a419e5836f5f526cd978a2362855c80dfc24953b3a080d7f8dd8",
+    "skillReview": "아군 강화: 가슴 앞 손 모음 → 양팔 들어올림 → 넓게 팔을 벌려 전체 아군 격려 → 편안한 회복. 회복 스킬로 변경하지 않음. 2026-09-09 시간표 재검토: 기존 양팔 확장·오라 유지 동작 유지. 회복 파동/보호막/이동 강화는 펼친 오라에 의해 발생.",
+    "skillReleaseFrame": 2,
+    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
   },
   "yukino_bijin": {
     "file": "motions/yukino_bijin.png",
@@ -385,9 +412,10 @@
     "rows": 6,
     "source": "docs/art-source/motions/production-144/yukino_bijin/packing.json",
     "skillId": "skill_yukino_bijin",
-    "skillSignature": "e22ec6c8402696a511583ec91ea174e492a9db645a8cc883eb2b5a7af6710fa7",
-    "skillReview": "아군 강화: 가슴 앞 손 모음 → 양팔 올리기 → 자신 있게 팔을 펼침 → 인사하며 회복. 겨울 장식 의상과 털 부츠 유지.",
-    "skillReleaseFrame": 2
+    "skillSignature": "fe6c88ffb489f52b1b58a920848def817f0f7038459ad2218cdbac4fc4f8216b",
+    "skillReview": "아군 강화: 가슴 앞 손 모음 → 양팔 올리기 → 자신 있게 팔을 펼침 → 인사하며 회복. 겨울 장식 의상과 털 부츠 유지. 2026-09-09 시간표 재검토: 기존 양팔 확장·오라 유지 동작 유지. 회복 파동/보호막/이동 강화는 펼친 오라에 의해 발생.",
+    "skillReleaseFrame": 2,
+    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
   },
   "rice_shower": {
     "file": "motions/rice_shower.png",
@@ -397,9 +425,10 @@
     "rows": 6,
     "source": "docs/art-source/motions/production-144/rice_shower/packing.json",
     "skillId": "skill_rice_shower",
-    "skillSignature": "f0a5f391c97793f70bfe2d93525e379c9f807749badef0e09943694f646172a2",
-    "skillReview": "보호막·도발: 소극적인 가슴 앞 방어 → 팔을 들어 준비 → 용기를 내어 정면에 도전 손바닥 → 방어 유지. 단검 스킬로 변경하지 않음.",
-    "skillReleaseFrame": 2
+    "skillSignature": "00d1c1192dbc4dd18e58d6d36d2c08bcf8d9ba0e73313395df2b4a9ed4a4eead",
+    "skillReview": "보호막·도발: 소극적인 가슴 앞 방어 → 팔을 들어 준비 → 용기를 내어 정면에 도전 손바닥 → 방어 유지. 단검 스킬로 변경하지 않음. 2026-09-09 시간표 재검토: 기존 방벽 전개·도발·방어 유지. 반격 피해는 방벽 파동으로 표시하며 추가 타격 포즈 불필요.",
+    "skillReleaseFrame": 2,
+    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
   },
   "ines_fujin": {
     "file": "motions/ines_fujin.png",
@@ -409,9 +438,10 @@
     "rows": 6,
     "source": "docs/art-source/motions/production-144/ines_fujin/packing.json",
     "skillId": "skill_ines_fujin",
-    "skillSignature": "5f59f99d29e917d95cb66d96ef17271ad7f23747af107a149e4b735ce9e405b7",
-    "skillReview": "아군 강화: 가슴에 손 → 경쾌한 팔 올리기 → 양팔을 벌린 전체 아군 격려 → 경례 회복. 기본 주먹 공격과 구분.",
-    "skillReleaseFrame": 2
+    "skillSignature": "07c1ef95e6bd023b3d18fc785557f2f48c6bd8bc58af83d7b7a7aae4b3e99236",
+    "skillReview": "아군 강화: 가슴에 손 → 경쾌한 팔 올리기 → 양팔을 벌린 전체 아군 격려 → 경례 회복. 기본 주먹 공격과 구분. 2026-09-09 시간표 재검토: 기존 양팔 확장·오라 유지 동작 유지. 회복 파동/보호막/이동 강화는 펼친 오라에 의해 발생.",
+    "skillReleaseFrame": 2,
+    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
   },
   "agnes_tachyon": {
     "file": "motions/agnes_tachyon.png",
@@ -421,9 +451,10 @@
     "rows": 6,
     "source": "docs/art-source/motions/production-144/agnes_tachyon/packing.json",
     "skillId": "skill_agnes_tachyon",
-    "skillSignature": "ae87e8922ffd068dde121571a31a710960ef79d699895db6eeb238e580e94d90",
-    "skillReview": "연속 스퍼트: 긴 소매를 뻗은 첫 발사 → 같은 대상 두 번째 발사 → 손바닥을 드러낸 세 번째 발사 → 소매를 모은 방어 회복. 실제 3회 동일 대상 공격.",
-    "skillReleaseFrame": 0
+    "skillSignature": "862c6c958bef095470f47e0bf73b56230a7bab178f45cefde3f088e4742ec422",
+    "skillReview": "연속 스퍼트: 긴 소매를 뻗은 첫 발사 → 같은 대상 두 번째 발사 → 손바닥을 드러낸 세 번째 발사 → 소매를 모은 방어 회복. 실제 3회 동일 대상 공격. 2026-09-09 시간표 재검토: 검수된 1·2·3차 발사 포즈에 실제 0/0.167/0.333초 연타를 각각 연결. 이전에는 3회 피해가 동시 발생.",
+    "skillReleaseFrame": 0,
+    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
   },
   "admire_vega": {
     "file": "motions/admire_vega.png",
@@ -433,9 +464,10 @@
     "rows": 6,
     "source": "docs/art-source/motions/production-144/admire_vega/packing.json",
     "skillId": "skill_admire_vega",
-    "skillSignature": "53e5946cac1dbe04adac934cb081384d0b60845f7bb84c67ff4336eff5df9d57",
-    "skillReview": "낮은 출발·직선 돌파·착지로 대상 주변 물리 피해와 공격속도/치명타 강화를 표현.",
-    "skillReleaseFrame": 2
+    "skillSignature": "932e2bd9e696847f282721ed59a99e0a63932bda4debd9980c012b9807f385a7",
+    "skillReview": "낮은 출발·직선 돌파·착지로 대상 주변 물리 피해와 공격속도/치명타 강화를 표현. 2026-09-09 시간표 재검토: 기존 출발·발진·돌파·착지 유지. 돌파 위치에 방어 약화/화상, 또는 착지 보호막을 별도 효과로 표시.",
+    "skillReleaseFrame": 2,
+    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
   },
   "inari_one": {
     "file": "motions/inari_one.png",
@@ -445,9 +477,10 @@
     "rows": 6,
     "source": "docs/art-source/motions/production-144/inari_one/packing.json",
     "skillId": "skill_inari_one",
-    "skillSignature": "b23a4454e72007f15b9bee695651832de40c49c761d29a90f9613860be41ac9d",
-    "skillReview": "웅크림에서 낮은 전방 돌파와 착지로 대상 주변 물리 피해·공격속도 및 낮은 체력 대상 추가 피해를 표현.",
-    "skillReleaseFrame": 2
+    "skillSignature": "48571fe823187e76d91ed32facfabb257ffeb86b3c7d6ec0b8cf87a9019e7a6c",
+    "skillReview": "웅크림에서 낮은 전방 돌파와 착지로 대상 주변 물리 피해·공격속도 및 낮은 체력 대상 추가 피해를 표현. 2026-09-09 시간표 재검토: 기존 출발·발진·돌파·착지 유지. 돌파 위치에 방어 약화/화상, 또는 착지 보호막을 별도 효과로 표시.",
+    "skillReleaseFrame": 2,
+    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
   },
   "winning_ticket": {
     "file": "motions/winning_ticket.png",
@@ -457,9 +490,10 @@
     "rows": 6,
     "source": "docs/art-source/motions/production-144/winning_ticket/packing.json",
     "skillId": "skill_winning_ticket",
-    "skillSignature": "bd60695a70aabf66e1a5f2a18f07e7f9b3346d4aa64fb02ee8bfe6689d4348df",
-    "skillReview": "출발·전방 발진·낮은 돌파·방어 회복으로 물리 돌진과 자기 보호막을 표현.",
-    "skillReleaseFrame": 2
+    "skillSignature": "a7fc658048eb8c48d896be8cb623752cdc1608f667361f5f512f9ca4645193c7",
+    "skillReview": "출발·전방 발진·낮은 돌파·방어 회복으로 물리 돌진과 자기 보호막을 표현. 2026-09-09 시간표 재검토: 기존 출발·발진·돌파·착지 유지. 돌파 위치에 방어 약화/화상, 또는 착지 보호막을 별도 효과로 표시.",
+    "skillReleaseFrame": 2,
+    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
   },
   "air_shakur": {
     "file": "motions/air_shakur.png",
@@ -469,9 +503,10 @@
     "rows": 6,
     "source": "docs/art-source/motions/production-144/air_shakur/packing.json",
     "skillId": "skill_air_shakur",
-    "skillSignature": "c48ec7e4948b8fadf23d19c3cb42fd045146a67fad5828f12c29996e9d5b94de",
-    "skillReview": "적 무리 지목·집중·정지 손바닥·회수로 범위 마법 피해와 기절을 표현.",
-    "skillReleaseFrame": 2
+    "skillSignature": "075ab298a06d7780f5fef959a20ee2843cc7a4ddb376cc0510f3f63142b8a5c5",
+    "skillReview": "적 무리 지목·집중·정지 손바닥·회수로 범위 마법 피해와 기절을 표현. 2026-09-09 시간표 재검토: 기존 조준·응축·구속 명령 유지. 침묵·기절·감속의 차이는 대상 상태 아이콘과 효과로 표시.",
+    "skillReleaseFrame": 2,
+    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
   },
   "eishin_flash": {
     "file": "motions/eishin_flash.png",
@@ -481,9 +516,10 @@
     "rows": 6,
     "source": "docs/art-source/motions/production-144/eishin_flash/packing.json",
     "skillId": "skill_eishin_flash",
-    "skillSignature": "5eb530dc54c5524bd6b133481e4408d49f332b5d78c224e3a7381c9de3e2c187",
-    "skillReview": "지점 지정·집중·전방 제어 명령·회수로 범위 기절과 마법 피해를 표현.",
-    "skillReleaseFrame": 2
+    "skillSignature": "81d0a2545b2048a6cf03b7862b8e4d29c2fb7ad454f865861f4e8a5b9dade774",
+    "skillReview": "지점 지정·집중·전방 제어 명령·회수로 범위 기절과 마법 피해를 표현. 2026-09-09 시간표 재검토: 기존 조준·응축·구속 명령 유지. 침묵·기절·감속의 차이는 대상 상태 아이콘과 효과로 표시.",
+    "skillReleaseFrame": 2,
+    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
   },
   "curren_chan": {
     "file": "motions/curren_chan.png",
@@ -493,9 +529,10 @@
     "rows": 6,
     "source": "docs/art-source/motions/production-144/curren_chan/packing.json",
     "skillId": "skill_curren_chan",
-    "skillSignature": "9f41eaffd5ff5d82cc4b0e49e6334010f5eb8a2a45c520ba43f3197a83342546",
-    "skillReview": "가슴 앞 준비·충전·양팔 방출·가벼운 회복으로 광역 폭발과 이동속도 강화를 표현.",
-    "skillReleaseFrame": 2
+    "skillSignature": "acadc54892c3420446fb0c2b790f61dd48205ee3e8edc0a2d503916873596ec4",
+    "skillReview": "가슴 앞 준비·충전·양팔 방출·가벼운 회복으로 광역 폭발과 이동속도 강화를 표현. 2026-09-09 시간표 재검토: 기존 충전·방출 동작 유지. 두 번째 폭발은 잔류 에너지 효과이며 새 팔 동작을 요구하지 않음.",
+    "skillReleaseFrame": 2,
+    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
   },
   "kawakami_princess": {
     "file": "motions/kawakami_princess.png",
@@ -505,9 +542,10 @@
     "rows": 6,
     "source": "docs/art-source/motions/production-144/kawakami_princess/packing.json",
     "skillId": "skill_kawakami_princess",
-    "skillSignature": "fb107e5812647b0dbaa0c9e5ac7d32a14d70bd30a50cf24c62d74f60fdec1fe2",
-    "skillReview": "주먹 준비·팔 들어 충전·양손 광역 방출·방어 복귀로 광역 피해와 자기 보호막을 표현.",
-    "skillReleaseFrame": 2
+    "skillSignature": "ee4868553dc36a1cf9d2268888ef903852eb1201efcbc2cf2ad80ce2375b9628",
+    "skillReview": "주먹 준비·팔 들어 충전·양손 광역 방출·방어 복귀로 광역 피해와 자기 보호막을 표현. 2026-09-09 시간표 재검토: 기존 충전·방출 동작 유지. 두 번째 폭발은 잔류 에너지 효과이며 새 팔 동작을 요구하지 않음.",
+    "skillReleaseFrame": 2,
+    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
   },
   "gold_city": {
     "file": "motions/gold_city.png",
@@ -517,9 +555,10 @@
     "rows": 6,
     "source": "docs/art-source/motions/production-144/gold_city/packing.json",
     "skillId": "skill_gold_city",
-    "skillSignature": "23496869f2b02990d359805ce3e81a4b3993a1550f4ddd03af814b55e40bdbca",
-    "skillReview": "지점 조준·중심 집중·정지 명령·회수로 적 밀집 지점 기절과 마법 피해를 표현.",
-    "skillReleaseFrame": 2
+    "skillSignature": "f990a90116db3a187bf21a2cd90acd31ab2e893b229fb4551ecc9dd4d8b8fa30",
+    "skillReview": "지점 조준·중심 집중·정지 명령·회수로 적 밀집 지점 기절과 마법 피해를 표현. 2026-09-09 시간표 재검토: 기존 조준·응축·구속 명령 유지. 침묵·기절·감속의 차이는 대상 상태 아이콘과 효과로 표시.",
+    "skillReleaseFrame": 2,
+    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
   },
   "sakura_bakushin_o": {
     "file": "motions/sakura_bakushin_o.png",
@@ -529,9 +568,10 @@
     "rows": 6,
     "source": "docs/art-source/motions/production-144/sakura_bakushin_o/packing.json",
     "skillId": "skill_sakura_bakushin_o",
-    "skillSignature": "21e57aaa8018e79519921076f61b480c5824a47a5c5a419b7a7e7b73a9f1720b",
-    "skillReview": "중심 준비·팔 들기·양팔 격려·유지로 아군 전체 공격속도/방어/마저 강화를 표현.",
-    "skillReleaseFrame": 2
+    "skillSignature": "7151501d5485c7d309fb63a2695fa02d54447788cf8e272c503eddfb997c1c46",
+    "skillReview": "중심 준비·팔 들기·양팔 격려·유지로 아군 전체 공격속도/방어/마저 강화를 표현. 2026-09-09 시간표 재검토: 기존 양팔 확장·오라 유지 동작 유지. 회복 파동/보호막/이동 강화는 펼친 오라에 의해 발생.",
+    "skillReleaseFrame": 2,
+    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
   },
   "seeking_the_pearl": {
     "file": "motions/seeking_the_pearl.png",
@@ -541,9 +581,10 @@
     "rows": 6,
     "source": "docs/art-source/motions/production-144/seeking_the_pearl/packing.json",
     "skillId": "skill_seeking_the_pearl",
-    "skillSignature": "3c967f1a6b45f3032c5c2320e7a34660808f2b4c5acdb90713355bec45d9cb56",
-    "skillReview": "같은 전방 대상에 첫 방출·두 번째 방출·세 번째 방출·방어 회복으로 3연타와 자기 보호막을 표현.",
-    "skillReleaseFrame": 0
+    "skillSignature": "842380d9bef35fdd1c619356009766b60d80687d272d8aa39c31c97e940b7331",
+    "skillReview": "같은 전방 대상에 첫 방출·두 번째 방출·세 번째 방출·방어 회복으로 3연타와 자기 보호막을 표현. 2026-09-09 시간표 재검토: 검수된 1·2·3차 발사 포즈에 실제 0/0.167/0.333초 연타를 각각 연결. 이전에는 3회 피해가 동시 발생.",
+    "skillReleaseFrame": 0,
+    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
   },
   "shinko_windy": {
     "file": "motions/shinko_windy.png",
@@ -553,9 +594,10 @@
     "rows": 6,
     "source": "docs/art-source/motions/production-144/shinko_windy/packing.json",
     "skillId": "skill_shinko_windy",
-    "skillSignature": "e2fa3c07cb985e265e393a21bead50724707063f381e5cdca622b6d8ac2be31c",
-    "skillReview": "손 모음·손바닥 열기·아군 회복 전달·팀 격려로 최저 체력 아군 회복과 전체 공격력/주문력 강화 및 자기 보호막을 표현.",
-    "skillReleaseFrame": 2
+    "skillSignature": "2e4120261475f261a2519467aa2e18d9db81071e5d0db457846533f35870e860",
+    "skillReview": "손 모음·손바닥 열기·아군 회복 전달·팀 격려로 최저 체력 아군 회복과 전체 공격력/주문력 강화 및 자기 보호막을 표현. 2026-09-09 시간표 재검토: 기존 손 모음·아군을 향한 회복 전달 유지. 같은 아군에게 후속 회복/보호막을 전달.",
+    "skillReleaseFrame": 2,
+    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
   },
   "sweep_tosho": {
     "file": "motions/sweep_tosho.png",
@@ -565,9 +607,10 @@
     "rows": 6,
     "source": "docs/art-source/motions/production-144/sweep_tosho/packing.json",
     "skillId": "skill_sweep_tosho",
-    "skillSignature": "97392632a383cf6152339fe3f3f44eedd5a1eabc22d71422f051a2d342c10dc1",
-    "skillReview": "낮은 출발·전방 발진·직선 돌파·착지로 물리 돌진과 공격속도/치명타 강화를 표현. 모자·코트를 유지.",
-    "skillReleaseFrame": 2
+    "skillSignature": "2223342142272329cdb71e544ffc0389ad93dfb9e90cfce94392b5f450979593",
+    "skillReview": "낮은 출발·전방 발진·직선 돌파·착지로 물리 돌진과 공격속도/치명타 강화를 표현. 모자·코트를 유지. 2026-09-09 시간표 재검토: 기존 출발·발진·돌파·착지 유지. 돌파 위치에 방어 약화/화상, 또는 착지 보호막을 별도 효과로 표시.",
+    "skillReleaseFrame": 2,
+    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
   },
   "super_creek": {
     "file": "motions/super_creek.png",
@@ -577,9 +620,10 @@
     "rows": 6,
     "source": "docs/art-source/motions/production-144/super_creek/packing.json",
     "skillId": "skill_super_creek",
-    "skillSignature": "7e31004898362167b2e88a54e982b478244f1d5ce26c17c24307c4764dc12398",
-    "skillReview": "적 무리 지목·집중·정지 손바닥·회수로 범위 마법 피해와 기절을 표현. 근접 기본 타격과 구분.",
-    "skillReleaseFrame": 2
+    "skillSignature": "5d90ecb8bbb3eeef2f83632163ec890db6300214aa10a4808171fd1222b72cd8",
+    "skillReview": "적 무리 지목·집중·정지 손바닥·회수로 범위 마법 피해와 기절을 표현. 근접 기본 타격과 구분. 2026-09-09 시간표 재검토: 기존 조준·응축·구속 명령 유지. 침묵·기절·감속의 차이는 대상 상태 아이콘과 효과로 표시.",
+    "skillReleaseFrame": 2,
+    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
   },
   "smart_falcon": {
     "file": "motions/smart_falcon.png",
@@ -589,9 +633,10 @@
     "rows": 6,
     "source": "docs/art-source/motions/production-144/smart_falcon/packing.json",
     "skillId": "skill_smart_falcon",
-    "skillSignature": "8b3c919532f33934074acf2e2046a7c1c15fee1da208bcc6b085ecdc1f35e07a",
-    "skillReview": "중심 충전·팔 들기·양손 광역 방출·민첩 회복으로 적 밀집 지점 광역 피해와 자기 이동속도 강화를 표현.",
-    "skillReleaseFrame": 2
+    "skillSignature": "dbc043ef56eb44a37fd955cec56594a2b9f6f0fffffd1de2fd8e1c925c585803",
+    "skillReview": "중심 충전·팔 들기·양손 광역 방출·민첩 회복으로 적 밀집 지점 광역 피해와 자기 이동속도 강화를 표현. 2026-09-09 시간표 재검토: 기존 충전·방출 동작 유지. 두 번째 폭발은 잔류 에너지 효과이며 새 팔 동작을 요구하지 않음.",
+    "skillReleaseFrame": 2,
+    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
   },
   "zenno_rob_roy": {
     "file": "motions/zenno_rob_roy.png",
@@ -601,9 +646,10 @@
     "rows": 6,
     "source": "docs/art-source/motions/production-144/zenno_rob_roy/packing.json",
     "skillId": "skill_zenno_rob_roy",
-    "skillSignature": "b0d7d3f818568973772769cf7faefac005e67cba0c0b2226403b660911ed4f62",
-    "skillReview": "방어 준비·손 들기·주변 적 유인·방어 유지로 자기 보호막과 2칸 내 도발을 표현.",
-    "skillReleaseFrame": 2
+    "skillSignature": "cedddac71fdec65f94c60c6610dc5d9f14c910beb7f7499e992c1a79ccab96e0",
+    "skillReview": "방어 준비·손 들기·주변 적 유인·방어 유지로 자기 보호막과 2칸 내 도발을 표현. 2026-09-09 시간표 재검토: 기존 방벽 전개·도발·방어 유지. 반격 피해는 방벽 파동으로 표시하며 추가 타격 포즈 불필요.",
+    "skillReleaseFrame": 2,
+    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
   },
   "tosen_jordan": {
     "file": "motions/tosen_jordan.png",
@@ -613,9 +659,10 @@
     "rows": 6,
     "source": "docs/art-source/motions/production-144/tosen_jordan/packing.json",
     "skillId": "skill_tosen_jordan",
-    "skillSignature": "5a24af10579990d05d30f90819d78dffe9e1845a8c99229ff0c7da145353278a",
-    "skillReview": "중심 준비·팔 들기·양팔 팀 격려·유지로 아군 전체 공격속도/방어/마저 강화를 표현.",
-    "skillReleaseFrame": 2
+    "skillSignature": "948f52020fdb9a08fef272a66b867bbc779d25bc58f7c26552cdc4273ae6c569",
+    "skillReview": "중심 준비·팔 들기·양팔 팀 격려·유지로 아군 전체 공격속도/방어/마저 강화를 표현. 2026-09-09 시간표 재검토: 기존 양팔 확장·오라 유지 동작 유지. 회복 파동/보호막/이동 강화는 펼친 오라에 의해 발생.",
+    "skillReleaseFrame": 2,
+    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
   },
   "nakayama_festa": {
     "file": "motions/nakayama_festa.png",
@@ -625,9 +672,10 @@
     "rows": 6,
     "source": "docs/art-source/motions/production-144/nakayama_festa/packing.json",
     "skillId": "skill_nakayama_festa",
-    "skillSignature": "070d2fbb3ecc800d7b2f92682e5caf1f3ea1bbb63df0b15f1d6d98da8c9208e6",
-    "skillReview": "손 모음·양팔 열기·아군 회복 전달·보호 자세로 최저 체력 아군 회복과 전체 강화 및 자기 보호막을 표현.",
-    "skillReleaseFrame": 2
+    "skillSignature": "71734a4063271c78edf1c84d1a33fdb76a074641a0251aabcdaf48ebfc30ddd2",
+    "skillReview": "손 모음·양팔 열기·아군 회복 전달·보호 자세로 최저 체력 아군 회복과 전체 강화 및 자기 보호막을 표현. 2026-09-09 시간표 재검토: 기존 손 모음·아군을 향한 회복 전달 유지. 같은 아군에게 후속 회복/보호막을 전달.",
+    "skillReleaseFrame": 2,
+    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
   },
   "narita_taishin": {
     "file": "motions/narita_taishin.png",
@@ -637,9 +685,10 @@
     "rows": 6,
     "source": "docs/art-source/motions/production-144/narita_taishin/packing.json",
     "skillId": "skill_narita_taishin",
-    "skillSignature": "3a272ebaf69618b633976ecebdb63b684d73a1456916af7845b999a0919beeb4",
-    "skillReview": "웅크린 출발·발진·전방 돌파·착지로 물리 피해와 공격속도 및 낮은 체력 대상 피해 강화를 표현.",
-    "skillReleaseFrame": 2
+    "skillSignature": "c2bd4479d581782dc5cba402dcc73b28bee1612853b03fb2816c1b8cd0367f5b",
+    "skillReview": "웅크린 출발·발진·전방 돌파·착지로 물리 피해와 공격속도 및 낮은 체력 대상 피해 강화를 표현. 2026-09-09 시간표 재검토: 기존 출발·발진·돌파·착지 유지. 돌파 위치에 방어 약화/화상, 또는 착지 보호막을 별도 효과로 표시.",
+    "skillReleaseFrame": 2,
+    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
   },
   "nishino_flower": {
     "file": "motions/nishino_flower.png",
@@ -649,9 +698,10 @@
     "rows": 6,
     "source": "docs/art-source/motions/production-144/nishino_flower/packing.json",
     "skillId": "skill_nishino_flower",
-    "skillSignature": "ed9b28d5bf0bd8fe3a102499486fbff198cf4ba2d04b42f95ea957bf05c22920",
-    "skillReview": "낮은 출발·직선 도약·낮은 돌파·착지로 물리 돌진 및 공격/이동속도 강화를 표현.",
-    "skillReleaseFrame": 2
+    "skillSignature": "a86afe431d2ffbbb793f34be05217e40c9584641e6cfd3b05a8d8d4bf93a426b",
+    "skillReview": "낮은 출발·직선 도약·낮은 돌파·착지로 물리 돌진 및 공격/이동속도 강화를 표현. 2026-09-09 시간표 재검토: 기존 출발·발진·돌파·착지 유지. 돌파 위치에 방어 약화/화상, 또는 착지 보호막을 별도 효과로 표시.",
+    "skillReleaseFrame": 2,
+    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
   },
   "haru_urara": {
     "file": "motions/haru_urara.png",
@@ -661,9 +711,10 @@
     "rows": 6,
     "source": "docs/art-source/motions/production-144/haru_urara/packing.json",
     "skillId": "skill_haru_urara",
-    "skillSignature": "d6e37ebbc1ce06432c6468a8d60130e6809b4bef9181a06d1d895504d1ed7f38",
-    "skillReview": "적 무리 지목·집중·양손 정지 명령·회수로 범위 마법 피해와 기절을 표현.",
-    "skillReleaseFrame": 2
+    "skillSignature": "118f1d7bcc783b88d1a42f93c02929f5054c6d492c4973269772732c79d3a5fd",
+    "skillReview": "적 무리 지목·집중·양손 정지 명령·회수로 범위 마법 피해와 기절을 표현. 2026-09-09 시간표 재검토: 기존 조준·응축·구속 명령 유지. 침묵·기절·감속의 차이는 대상 상태 아이콘과 효과로 표시.",
+    "skillReleaseFrame": 2,
+    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
   },
   "bamboo_memory": {
     "file": "motions/bamboo_memory.png",
@@ -673,9 +724,10 @@
     "rows": 6,
     "source": "docs/art-source/motions/production-144/bamboo_memory/packing.json",
     "skillId": "skill_bamboo_memory",
-    "skillSignature": "af9eb90e6cf51f0039e525e5f1c8caa1b7dc70211753b84a7c6ad3b198aa26f8",
-    "skillReview": "적 무리 지정·집중·정지 손바닥·회수로 범위 마법 피해와 기절을 표현.",
-    "skillReleaseFrame": 2
+    "skillSignature": "c43e51f9af3fd4d376f1eec553d81becf505dab2bddc61312664c0bba3be3dc6",
+    "skillReview": "적 무리 지정·집중·정지 손바닥·회수로 범위 마법 피해와 기절을 표현. 2026-09-09 시간표 재검토: 기존 조준·응축·구속 명령 유지. 침묵·기절·감속의 차이는 대상 상태 아이콘과 효과로 표시.",
+    "skillReleaseFrame": 2,
+    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
   },
   "biko_pegasus": {
     "file": "motions/biko_pegasus.png",
@@ -685,9 +737,10 @@
     "rows": 6,
     "source": "docs/art-source/motions/production-144/biko_pegasus/packing.json",
     "skillId": "skill_biko_pegasus",
-    "skillSignature": "2e880f5dc9d7ea99f77b6bd3f6b2c7f409490b406ab3ba830faabef56e831508",
-    "skillReview": "지점 조준·팔 교차 집중·전방 정지 명령·회수로 범위 기절을 표현.",
-    "skillReleaseFrame": 2
+    "skillSignature": "5fcb7338c4fbb6bef0028ef9292f2de640ef0f9985c58bcb8f38a334f65a65e9",
+    "skillReview": "지점 조준·팔 교차 집중·전방 정지 명령·회수로 범위 기절을 표현. 2026-09-09 시간표 재검토: 기존 조준·응축·구속 명령 유지. 침묵·기절·감속의 차이는 대상 상태 아이콘과 효과로 표시.",
+    "skillReleaseFrame": 2,
+    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
   },
   "marvelous_sunday": {
     "file": "motions/marvelous_sunday.png",
@@ -697,9 +750,10 @@
     "rows": 6,
     "source": "docs/art-source/motions/production-144/marvelous_sunday/packing.json",
     "skillId": "skill_marvelous_sunday",
-    "skillSignature": "a42be7eee7fc16523dff0669a223b0fa4b98c336bd78ea5618f037aae5d6916a",
-    "skillReview": "가슴 앞 방어·팔 들기·주변 적 유인·방어 유지로 자기 보호막과 도발을 표현.",
-    "skillReleaseFrame": 2
+    "skillSignature": "4a310df22a2a3837cb2467c439b3ee921ee69d1513cc86111b6ac0563f47251e",
+    "skillReview": "가슴 앞 방어·팔 들기·주변 적 유인·방어 유지로 자기 보호막과 도발을 표현. 2026-09-09 시간표 재검토: 기존 방벽 전개·도발·방어 유지. 반격 피해는 방벽 파동으로 표시하며 추가 타격 포즈 불필요.",
+    "skillReleaseFrame": 2,
+    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
   },
   "matikanefukukitaru": {
     "file": "motions/matikanefukukitaru.png",
@@ -709,9 +763,10 @@
     "rows": 6,
     "source": "docs/art-source/motions/production-144/matikanefukukitaru/packing.json",
     "skillId": "skill_matikanefukukitaru",
-    "skillSignature": "794d2d387003e0716f3cefb07e6453698691e14ceba591317ede49da2c3db514",
-    "skillReview": "합장·손바닥 열기·아군 회복 전달·격려로 최저 체력 아군 회복과 팀 강화/자기 보호막을 표현. 고양이 가방 유지.",
-    "skillReleaseFrame": 2
+    "skillSignature": "00aa107585c0aad716147da462febd4ffb1df38f5352f072e9998c3b5e3c5eec",
+    "skillReview": "합장·손바닥 열기·아군 회복 전달·격려로 최저 체력 아군 회복과 팀 강화/자기 보호막을 표현. 고양이 가방 유지. 2026-09-09 시간표 재검토: 기존 손 모음·아군을 향한 회복 전달 유지. 같은 아군에게 후속 회복/보호막을 전달.",
+    "skillReleaseFrame": 2,
+    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
   },
   "mr_cb": {
     "file": "motions/mr_cb.png",
@@ -721,9 +776,10 @@
     "rows": 6,
     "source": "docs/art-source/motions/production-144/mr_cb/packing.json",
     "skillId": "skill_mr_cb",
-    "skillSignature": "1165bb877d44a1c5fcff6ef0f0611234bc229efc52857bed2466ea991c876411",
-    "skillReview": "중심 집중·양손 모음·정지 명령·회수로 범위 피해/기절을 표현. 근접 기본 타격과 구분.",
-    "skillReleaseFrame": 2
+    "skillSignature": "8164ca6cd101fb07129f00217575f37819ae0257b8ae35fea1979b77d51369b9",
+    "skillReview": "중심 집중·양손 모음·정지 명령·회수로 범위 피해/기절을 표현. 근접 기본 타격과 구분. 2026-09-09 시간표 재검토: 기존 조준·응축·구속 명령 유지. 침묵·기절·감속의 차이는 대상 상태 아이콘과 효과로 표시.",
+    "skillReleaseFrame": 2,
+    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
   },
   "meisho_doto": {
     "file": "motions/meisho_doto.png",
@@ -733,9 +789,10 @@
     "rows": 6,
     "source": "docs/art-source/motions/production-144/meisho_doto/packing.json",
     "skillId": "skill_meisho_doto",
-    "skillSignature": "c794eddc2474c6e12cf2ad1d670b49ababb387088e1ac038a395d0816e02260a",
-    "skillReview": "손 모음·양팔 열기·팀 격려·유지로 아군 전체 공격속도와 방어/마저 강화를 표현.",
-    "skillReleaseFrame": 2
+    "skillSignature": "4bd86bb2e7646daee5206412cbca9d0fc520875a473914bb2af8672797b10700",
+    "skillReview": "손 모음·양팔 열기·팀 격려·유지로 아군 전체 공격속도와 방어/마저 강화를 표현. 2026-09-09 시간표 재검토: 기존 양팔 확장·오라 유지 동작 유지. 회복 파동/보호막/이동 강화는 펼친 오라에 의해 발생.",
+    "skillReleaseFrame": 2,
+    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
   },
   "mejiro_dober": {
     "file": "motions/mejiro_dober.png",
@@ -745,9 +802,10 @@
     "rows": 6,
     "source": "docs/art-source/motions/production-144/mejiro_dober/packing.json",
     "skillId": "skill_mejiro_dober",
-    "skillSignature": "a952a7e52f8ac9c21f63bb02d009ba1c0a83a34af142335d383f69b7c63d46ae",
-    "skillReview": "최초 생성본 누락 스킬 행을 보정. 웅크림·발진·낮은 직선 돌파·착지 4포즈로 물리 돌진을 표현.",
-    "skillReleaseFrame": 2
+    "skillSignature": "862194e201d22ca14e28d3330bee7150d88aca06d23f820dbeee872b4d9da374",
+    "skillReview": "최초 생성본 누락 스킬 행을 보정. 웅크림·발진·낮은 직선 돌파·착지 4포즈로 물리 돌진을 표현. 2026-09-09 시간표 재검토: 기존 출발·발진·돌파·착지 유지. 돌파 위치에 방어 약화/화상, 또는 착지 보호막을 별도 효과로 표시.",
+    "skillReleaseFrame": 2,
+    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
   },
   "nice_nature": {
     "file": "motions/nice_nature.png",
@@ -757,9 +815,10 @@
     "rows": 6,
     "source": "docs/art-source/motions/production-144/nice_nature/packing.json",
     "skillId": "skill_nice_nature",
-    "skillSignature": "66cc30025e56d56362b38192daa30c158af0613236c004a06db424df3c3fc70a",
-    "skillReview": "집중·중심 낮추기·정지 손바닥·회수로 적 무리 마법 피해와 기절을 표현.",
-    "skillReleaseFrame": 2
+    "skillSignature": "7dc6a116fbb4645a9be8edaf58c0eb47c71c8769016f82cc0c53c85f892523ce",
+    "skillReview": "집중·중심 낮추기·정지 손바닥·회수로 적 무리 마법 피해와 기절을 표현. 2026-09-09 시간표 재검토: 기존 조준·응축·구속 명령 유지. 침묵·기절·감속의 차이는 대상 상태 아이콘과 효과로 표시.",
+    "skillReleaseFrame": 2,
+    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
   },
   "king_halo": {
     "file": "motions/king_halo.png",
@@ -769,9 +828,10 @@
     "rows": 6,
     "source": "docs/art-source/motions/production-144/king_halo/packing.json",
     "skillId": "skill_king_halo",
-    "skillSignature": "adc9a60f0fb21a2dc1a3c8d66c7ab92da066d5208b7c99086d1f6c966cf06179",
-    "skillReview": "손 모음·손바닥 열기·아군 회복 전달·격려로 회복과 팀 공격력/주문력 강화 및 자기 보호막을 표현.",
-    "skillReleaseFrame": 2
+    "skillSignature": "b7f5cf80ed98d8e6f025a6dd27e95e4b8dab4a4019baba8013498a5033b6f696",
+    "skillReview": "손 모음·손바닥 열기·아군 회복 전달·격려로 회복과 팀 공격력/주문력 강화 및 자기 보호막을 표현. 2026-09-09 시간표 재검토: 기존 손 모음·아군을 향한 회복 전달 유지. 같은 아군에게 후속 회복/보호막을 전달.",
+    "skillReleaseFrame": 2,
+    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
   },
   "matikanetannhauser": {
     "file": "motions/matikanetannhauser.png",
@@ -781,9 +841,10 @@
     "rows": 6,
     "source": "docs/art-source/motions/production-144/matikanetannhauser/packing.json",
     "skillId": "skill_matikanetannhauser",
-    "skillSignature": "25ca75219868051f5370a7540618e61de8035e83f3f811f56c023bc46c34a837",
-    "skillReview": "적 지점 지정·집중·정지 명령·회수로 범위 마법 피해와 기절을 표현. 모자와 망토 유지.",
-    "skillReleaseFrame": 2
+    "skillSignature": "ce64024772109f89ec77a0d8699ac978cfca7073183d72c538c56f7db4a0abbf",
+    "skillReview": "적 지점 지정·집중·정지 명령·회수로 범위 마법 피해와 기절을 표현. 모자와 망토 유지. 2026-09-09 시간표 재검토: 기존 조준·응축·구속 명령 유지. 침묵·기절·감속의 차이는 대상 상태 아이콘과 효과로 표시.",
+    "skillReleaseFrame": 2,
+    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
   },
   "espoir_city": {
     "file": "motions/espoir_city.png",
@@ -793,9 +854,10 @@
     "rows": 6,
     "source": "docs/art-source/motions/production-144/espoir_city/packing.json",
     "skillId": "skill_espoir_city",
-    "skillSignature": "158da0d8208908aa1adae1d39eaccf440099544cd88db4e9b1f108c9b9044300",
-    "skillReview": "원거리 손짓 공격. 아군 전체 강화: 가슴 앞 집중 → 양팔 격려 → 팔을 펼친 지휘 → 준비 자세 유지. 붉은 재킷, 금발 그라데이션과 교차 머리핀 유지. 치유/공격 스킬 없음.",
-    "skillReleaseFrame": 2
+    "skillSignature": "dac684af048365412d9dc3750ffffe464fa55f04e5941e6cc4b88598ccf2c223",
+    "skillReview": "원거리 손짓 공격. 아군 전체 강화: 가슴 앞 집중 → 양팔 격려 → 팔을 펼친 지휘 → 준비 자세 유지. 붉은 재킷, 금발 그라데이션과 교차 머리핀 유지. 치유/공격 스킬 없음. 2026-09-09 시간표 재검토: 기존 양팔 확장·오라 유지 동작 유지. 회복 파동/보호막/이동 강화는 펼친 오라에 의해 발생.",
+    "skillReleaseFrame": 2,
+    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
   },
   "manhattan_cafe": {
     "file": "motions/manhattan_cafe.png",
@@ -805,9 +867,10 @@
     "rows": 6,
     "source": "docs/art-source/motions/production-144/manhattan_cafe/packing.json",
     "skillId": "skill_manhattan_cafe",
-    "skillSignature": "a9c2fb2133342d46161e9711e2a54cb07c392db4a0e586664aeedb20755f5ef6",
-    "skillReview": "근접 손바닥 타격. 직선 돌파: 낮게 웅크림 → 발진 → 수평 돌파 → 착지. 검은 긴 머리, 금색 장식 긴 코트 유지. 치명타/공격속도 강화이며 유령 소환이나 마법 발사 없음.",
-    "skillReleaseFrame": 2
+    "skillSignature": "5fc63c236c73672bc7c3452fe8085d0c92ed7765e3e8508d86ac30aa6d3d046c",
+    "skillReview": "근접 손바닥 타격. 직선 돌파: 낮게 웅크림 → 발진 → 수평 돌파 → 착지. 검은 긴 머리, 금색 장식 긴 코트 유지. 치명타/공격속도 강화이며 유령 소환이나 마법 발사 없음. 2026-09-09 시간표 재검토: 기존 출발·발진·돌파·착지 유지. 돌파 위치에 방어 약화/화상, 또는 착지 보호막을 별도 효과로 표시.",
+    "skillReleaseFrame": 2,
+    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
   },
   "verxina": {
     "file": "motions/verxina.png",
@@ -817,9 +880,10 @@
     "rows": 6,
     "source": "docs/art-source/motions/production-144/verxina/packing.json",
     "skillId": "skill_verxina",
-    "skillSignature": "3e01c8d25dde354c4912cc9788c73424699293ded8d787656a3c726d7a67dd07",
-    "skillReview": "원거리 손짓 발사. 광역 폭발: 적 무리 조준 → 팔을 모아 응축 → 양팔 방출 → 회복. 남색 긴 머리, 흰 앞머리, 민트 장식과 비대칭 재킷 유지. 치유/돌진 없음.",
-    "skillReleaseFrame": 2
+    "skillSignature": "b28cb3c2c2998353b13117b22aa5d16768f5a825b277bbfd5982a86660914e30",
+    "skillReview": "원거리 손짓 발사. 광역 폭발: 적 무리 조준 → 팔을 모아 응축 → 양팔 방출 → 회복. 남색 긴 머리, 흰 앞머리, 민트 장식과 비대칭 재킷 유지. 치유/돌진 없음. 2026-09-09 시간표 재검토: 기존 충전·방출 동작 유지. 두 번째 폭발은 잔류 에너지 효과이며 새 팔 동작을 요구하지 않음.",
+    "skillReleaseFrame": 2,
+    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
   },
   "phalaenopsis": {
     "file": "motions/phalaenopsis.png",
@@ -829,9 +893,10 @@
     "rows": 6,
     "source": "docs/art-source/motions/production-144/phalaenopsis/packing.json",
     "skillId": "skill_phalaenopsis",
-    "skillSignature": "71a70da8dbe80553e10ed9f2e050178a452c2f1592710330c0bdddc1cf89e1c6",
-    "skillReview": "원거리 소매/손짓 발사. 직선 돌파: 출발 crouch → 발진 → 낮은 수평 돌파 → 착지. 난초 장식, 붉은 넓은 소매, 매듭 허리띠 유지. 공격속도/이동속도 강화이며 치유 없음.",
-    "skillReleaseFrame": 2
+    "skillSignature": "fe7e192e1de784231d736e0eb68b969eed305d234046dbc7fdcf014cacdbb79a",
+    "skillReview": "원거리 소매/손짓 발사. 직선 돌파: 출발 crouch → 발진 → 낮은 수평 돌파 → 착지. 난초 장식, 붉은 넓은 소매, 매듭 허리띠 유지. 공격속도/이동속도 강화이며 치유 없음. 2026-09-09 시간표 재검토: 기존 출발·발진·돌파·착지 유지. 돌파 위치에 방어 약화/화상, 또는 착지 보호막을 별도 효과로 표시.",
+    "skillReleaseFrame": 2,
+    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
   },
   "titleholder": {
     "file": "motions/titleholder.png",
@@ -841,9 +906,10 @@
     "rows": 6,
     "source": "docs/art-source/motions/production-144/titleholder/packing.json",
     "skillId": "skill_titleholder",
-    "skillSignature": "e478885685cdb5ddb2ecbbdb95590a1965b0deb7d40a7c4d6485818362ad58e6",
-    "skillReview": "근접 손바닥 타격. 아군 강화: 가슴 앞 집중 → 두 팔 격려 → 양팔 펼친 지휘 → 강화 유지. 흰 옆머리, 초록 허리천과 보석 단추 유지. 치유/공격 스킬 없음.",
-    "skillReleaseFrame": 2
+    "skillSignature": "8d1488addaa2a345035ed14215ad8020001f42e02cea25d17f274810907b9f71",
+    "skillReview": "근접 손바닥 타격. 아군 강화: 가슴 앞 집중 → 두 팔 격려 → 양팔 펼친 지휘 → 강화 유지. 흰 옆머리, 초록 허리천과 보석 단추 유지. 치유/공격 스킬 없음. 2026-09-09 시간표 재검토: 기존 양팔 확장·오라 유지 동작 유지. 회복 파동/보호막/이동 강화는 펼친 오라에 의해 발생.",
+    "skillReleaseFrame": 2,
+    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
   },
   "efforia": {
     "file": "motions/efforia.png",
@@ -853,9 +919,10 @@
     "rows": 6,
     "source": "docs/art-source/motions/production-144/efforia/packing.json",
     "skillId": "skill_efforia",
-    "skillSignature": "344c1f73519dfdfdaa621de5414e6ca4111d2b3dc95beb09491d71bc19be9405",
-    "skillReview": "근접 손바닥 타격. 직선 돌파: 낮은 출발 → 발진 → 수평 돌파 → 착지. 청록·흰 비대칭 소매와 장식천 유지. 공격속도 및 자기 보호막 강화.",
-    "skillReleaseFrame": 2
+    "skillSignature": "8fcf592ee53ea2f25da0115c940284002ab297edb7ed34d29933f1e01273344e",
+    "skillReview": "근접 손바닥 타격. 직선 돌파: 낮은 출발 → 발진 → 수평 돌파 → 착지. 청록·흰 비대칭 소매와 장식천 유지. 공격속도 및 자기 보호막 강화. 2026-09-09 시간표 재검토: 기존 출발·발진·돌파·착지 유지. 돌파 위치에 방어 약화/화상, 또는 착지 보호막을 별도 효과로 표시.",
+    "skillReleaseFrame": 2,
+    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
   },
   "ikuno_dictus": {
     "file": "motions/ikuno_dictus.png",
@@ -865,9 +932,10 @@
     "rows": 6,
     "source": "docs/art-source/motions/production-144/ikuno_dictus/packing.json",
     "skillId": "skill_ikuno_dictus",
-    "skillSignature": "49495f8e009e2eff33cce6afbd7917658e3e5b8bfd4c894863889f1e76206ea8",
-    "skillReview": "안경·땋은 머리·녹색 코트 유지. 손 모음·아군에게 손 내밈·양손 회복 전달·격려로 최저 체력 아군 회복과 팀 강화 표현.",
-    "skillReleaseFrame": 2
+    "skillSignature": "8c890ae540fbe50155446021292e66aa57fc0bc308ff7de24d1dd251409405ba",
+    "skillReview": "안경·땋은 머리·녹색 코트 유지. 손 모음·아군에게 손 내밈·양손 회복 전달·격려로 최저 체력 아군 회복과 팀 강화 표현. 2026-09-09 시간표 재검토: 기존 손 모음·아군을 향한 회복 전달 유지. 같은 아군에게 후속 회복/보호막을 전달.",
+    "skillReleaseFrame": 2,
+    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
   },
   "mejiro_palmer": {
     "file": "motions/mejiro_palmer.png",
@@ -877,9 +945,10 @@
     "rows": 6,
     "source": "docs/art-source/motions/production-144/mejiro_palmer/packing.json",
     "skillId": "skill_mejiro_palmer",
-    "skillSignature": "ef2a7e58627e9998fdac92084003a979699ed3fe0fb891bc78ab16773b205c15",
-    "skillReview": "갈색 묶은 머리와 흰 노랑 재킷 유지. 가슴 집중·팔 들어 응원·양팔 확장·지원 자세로 팀 공속 방어력 마저 강화 표현.",
-    "skillReleaseFrame": 2
+    "skillSignature": "56f30efb4873a184c9dc8c28d1e7e55b40cafd64e3420658370c777b84564953",
+    "skillReview": "갈색 묶은 머리와 흰 노랑 재킷 유지. 가슴 집중·팔 들어 응원·양팔 확장·지원 자세로 팀 공속 방어력 마저 강화 표현. 2026-09-09 시간표 재검토: 기존 양팔 확장·오라 유지 동작 유지. 회복 파동/보호막/이동 강화는 펼친 오라에 의해 발생.",
+    "skillReleaseFrame": 2,
+    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
   },
   "daitaku_helios": {
     "file": "motions/daitaku_helios.png",
@@ -889,9 +958,10 @@
     "rows": 6,
     "source": "docs/art-source/motions/production-144/daitaku_helios/packing.json",
     "skillId": "skill_daitaku_helios",
-    "skillSignature": "30155170ca140da48e04b5e486317147535359f63c4b9a0ba5a2c899628201e4",
-    "skillReview": "청금 의상과 귀 장식 유지. 가슴 집중·주먹 상승·활짝 편 양팔·응원 회복으로 팀 강화 표현.",
-    "skillReleaseFrame": 2
+    "skillSignature": "3b3d46398eda4d2c522d1b736b12d23432d4a1f231ad0eca5d824609ed40c9a5",
+    "skillReview": "청금 의상과 귀 장식 유지. 가슴 집중·주먹 상승·활짝 편 양팔·응원 회복으로 팀 강화 표현. 2026-09-09 시간표 재검토: 기존 양팔 확장·오라 유지 동작 유지. 회복 파동/보호막/이동 강화는 펼친 오라에 의해 발생.",
+    "skillReleaseFrame": 2,
+    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
   },
   "twin_turbo": {
     "file": "motions/twin_turbo.png",
@@ -901,9 +971,10 @@
     "rows": 6,
     "source": "docs/art-source/motions/production-144/twin_turbo/packing.json",
     "skillId": "skill_twin_turbo",
-    "skillSignature": "a35bce9f2ca566522321a5bff630d98274e437ba412d2091e6eb7481df1a422e",
-    "skillReview": "청록 긴 트윈테일과 좌우 색 다른 재킷 유지. 양손 모음·팔 들기·양팔 펼친 격려·자세 회복. 실제 AURA 지원이며 스킬 돌진 없음.",
-    "skillReleaseFrame": 2
+    "skillSignature": "bca13c055df4ec34640b0df7953e773b68cf0c1c105da3d211dc688a84600e8b",
+    "skillReview": "청록 긴 트윈테일과 좌우 색 다른 재킷 유지. 양손 모음·팔 들기·양팔 펼친 격려·자세 회복. 실제 AURA 지원이며 스킬 돌진 없음. 2026-09-09 시간표 재검토: 기존 양팔 확장·오라 유지 동작 유지. 회복 파동/보호막/이동 강화는 펼친 오라에 의해 발생.",
+    "skillReleaseFrame": 2,
+    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
   },
   "satono_diamond": {
     "file": "motions/satono_diamond.png",
@@ -913,9 +984,10 @@
     "rows": 6,
     "source": "docs/art-source/motions/production-144/satono_diamond/packing.json",
     "skillId": "skill_satono_diamond",
-    "skillSignature": "807a8eac543703ea1fd2e6f5b4909a6ae7897260b4ca3107c4af4c881ef6d7a3",
-    "skillReview": "녹금 드레스와 미니 모자 유지. 적 지정·손 모아 집중·정지 손바닥·회수로 군중 마법 피해와 기절 표현. 기본 공격은 근접 손바닥 타격.",
-    "skillReleaseFrame": 2
+    "skillSignature": "887103cb24f9885be0a87d147dd26a97603797da17219bd7bb21289ce255c251",
+    "skillReview": "녹금 드레스와 미니 모자 유지. 적 지정·손 모아 집중·정지 손바닥·회수로 군중 마법 피해와 기절 표현. 기본 공격은 근접 손바닥 타격. 2026-09-09 시간표 재검토: 기존 조준·응축·구속 명령 유지. 침묵·기절·감속의 차이는 대상 상태 아이콘과 효과로 표시.",
+    "skillReleaseFrame": 2,
+    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
   },
   "kitasan_black": {
     "file": "motions/kitasan_black.png",
@@ -925,9 +997,10 @@
     "rows": 6,
     "source": "docs/art-source/motions/production-144/kitasan_black/packing.json",
     "skillId": "skill_kitasan_black",
-    "skillSignature": "9bbbe5cda338768ff83a5631ecc2c12bd3e6c05b7da3f7215012a72ac0436eb6",
-    "skillReview": "검정 빨강 축제 의상 유지. 집중·팔 들어 지휘·양팔 팀 격려·자세 회복으로 팀 지원. 기본 공격은 근접 주먹 타격.",
-    "skillReleaseFrame": 2
+    "skillSignature": "3a7c50d2f7332dc19fe2425ecd686683714bb09b96d0599b6bf2d34430954f1a",
+    "skillReview": "검정 빨강 축제 의상 유지. 집중·팔 들어 지휘·양팔 팀 격려·자세 회복으로 팀 지원. 기본 공격은 근접 주먹 타격. 2026-09-09 시간표 재검토: 기존 양팔 확장·오라 유지 동작 유지. 회복 파동/보호막/이동 강화는 펼친 오라에 의해 발생.",
+    "skillReleaseFrame": 2,
+    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
   },
   "sakura_chiyono_o": {
     "file": "motions/sakura_chiyono_o.png",
@@ -937,9 +1010,10 @@
     "rows": 6,
     "source": "docs/art-source/motions/production-144/sakura_chiyono_o/packing.json",
     "skillId": "skill_sakura_chiyono_o",
-    "skillSignature": "bfc882643e29734401e8efc972fb34e2125d2f5236ed1e02f00509fcfdc813da",
-    "skillReview": "분홍 소매와 꽃 장식 유지. 웅크린 출발·발진·수평 돌파·착지로 현재 대상 직선 돌진과 물리 범위 피해 표현.",
-    "skillReleaseFrame": 2
+    "skillSignature": "ca59caa3c3d232a56a92267218a76f6c0ce96e326bac0093886ef1354dea509f",
+    "skillReview": "분홍 소매와 꽃 장식 유지. 웅크린 출발·발진·수평 돌파·착지로 현재 대상 직선 돌진과 물리 범위 피해 표현. 2026-09-09 시간표 재검토: 기존 출발·발진·돌파·착지 유지. 돌파 위치에 방어 약화/화상, 또는 착지 보호막을 별도 효과로 표시.",
+    "skillReleaseFrame": 2,
+    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
   },
   "sirius_symboli": {
     "file": "motions/sirius_symboli.png",
@@ -949,9 +1023,10 @@
     "rows": 6,
     "source": "docs/art-source/motions/production-144/sirius_symboli/packing.json",
     "skillId": "skill_sirius_symboli",
-    "skillSignature": "7d56a52798bb5872a2f5f3d7396ed90dea33f3cab2a80ee32f304a7decae604d",
-    "skillReview": "녹색 바지 의상 유지. 적 무리 지정·가슴 집중·정지 손바닥·회수로 기절 명령 표현.",
-    "skillReleaseFrame": 2
+    "skillSignature": "3be8ab1959fb82fdb20508b7c89a0f0d6ef7d522206360dccb12224c0ebbd1b1",
+    "skillReview": "녹색 바지 의상 유지. 적 무리 지정·가슴 집중·정지 손바닥·회수로 기절 명령 표현. 2026-09-09 시간표 재검토: 기존 조준·응축·구속 명령 유지. 침묵·기절·감속의 차이는 대상 상태 아이콘과 효과로 표시.",
+    "skillReleaseFrame": 2,
+    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
   },
   "mejiro_ardan": {
     "file": "motions/mejiro_ardan.png",
@@ -961,9 +1036,10 @@
     "rows": 6,
     "source": "docs/art-source/motions/production-144/mejiro_ardan/packing.json",
     "skillId": "skill_mejiro_ardan",
-    "skillSignature": "2fea09c08c122081b0b4f60eb82648945477466be681ad7bd906a9570e90e56b",
-    "skillReview": "긴 하늘색 머리와 검청 의상 유지. 모은 손·든 팔·양팔 확장·가슴 회수로 팀 강화 표현.",
-    "skillReleaseFrame": 2
+    "skillSignature": "5815f4460af9487c76ef1297665fd07849882f177e9c8efed0c757bd73f5954a",
+    "skillReview": "긴 하늘색 머리와 검청 의상 유지. 모은 손·든 팔·양팔 확장·가슴 회수로 팀 강화 표현. 2026-09-09 시간표 재검토: 기존 양팔 확장·오라 유지 동작 유지. 회복 파동/보호막/이동 강화는 펼친 오라에 의해 발생.",
+    "skillReleaseFrame": 2,
+    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
   },
   "yaeno_muteki": {
     "file": "motions/yaeno_muteki.png",
@@ -973,9 +1049,10 @@
     "rows": 6,
     "source": "docs/art-source/motions/production-144/yaeno_muteki/packing.json",
     "skillId": "skill_yaeno_muteki",
-    "skillSignature": "38db4fa8f1ec56e191d917488a46e88ab9d65d2b5e4ad009167ee0b5984487df",
-    "skillReview": "빨강 검정 의상과 노란 허리 리본 유지. 합장·손 내밈·양손 회복 전달·아군 격려로 실제 회복 스킬 표현.",
-    "skillReleaseFrame": 2
+    "skillSignature": "60cf5c9fa148df2e3d8f93bf81df78bf648c604c9106dbc0949d31322a735034",
+    "skillReview": "빨강 검정 의상과 노란 허리 리본 유지. 합장·손 내밈·양손 회복 전달·아군 격려로 실제 회복 스킬 표현. 2026-09-09 시간표 재검토: 기존 손 모음·아군을 향한 회복 전달 유지. 같은 아군에게 후속 회복/보호막을 전달.",
+    "skillReleaseFrame": 2,
+    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
   },
   "tsurumaru_tsuyoshi": {
     "file": "motions/tsurumaru_tsuyoshi.png",
@@ -985,9 +1062,10 @@
     "rows": 6,
     "source": "docs/art-source/motions/production-144/tsurumaru_tsuyoshi/packing.json",
     "skillId": "skill_tsurumaru_tsuyoshi",
-    "skillSignature": "be46db030298735c66a08e738fdeeeed41f54fe2e66899eabc22056836610535",
-    "skillReview": "보라 망토와 흰 의상 유지. 적 무리 지목·집중·정지 손바닥·회수로 마법 피해와 범위 기절 표현.",
-    "skillReleaseFrame": 2
+    "skillSignature": "ab05714cbc989669c9690f9fc0353cf713882679a0d7ffcb0a11e80e8ac2f22e",
+    "skillReview": "보라 망토와 흰 의상 유지. 적 무리 지목·집중·정지 손바닥·회수로 마법 피해와 범위 기절 표현. 2026-09-09 시간표 재검토: 기존 조준·응축·구속 명령 유지. 침묵·기절·감속의 차이는 대상 상태 아이콘과 효과로 표시.",
+    "skillReleaseFrame": 2,
+    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
   },
   "mejiro_bright": {
     "file": "motions/mejiro_bright.png",
@@ -997,9 +1075,10 @@
     "rows": 6,
     "source": "docs/art-source/motions/production-144/mejiro_bright/packing.json",
     "skillId": "skill_mejiro_bright",
-    "skillSignature": "7ff3dca82f24264f126095358ea5c360fd85c0f9cc4bb5e577bb8b62d9b85fd4",
-    "skillReview": "긴 적갈 머리와 청록 드레스·짝색 부츠 유지. 적 지정·가슴 집중·정지 손바닥·회수로 범위 제어. 근접 손바닥 타격.",
-    "skillReleaseFrame": 2
+    "skillSignature": "f4a3f1e74f55c2018291b03f648f85e303b4e11e512ae7726d774aef426eb275",
+    "skillReview": "긴 적갈 머리와 청록 드레스·짝색 부츠 유지. 적 지정·가슴 집중·정지 손바닥·회수로 범위 제어. 근접 손바닥 타격. 2026-09-09 시간표 재검토: 기존 조준·응축·구속 명령 유지. 침묵·기절·감속의 차이는 대상 상태 아이콘과 효과로 표시.",
+    "skillReleaseFrame": 2,
+    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
   },
   "daring_tact": {
     "file": "motions/daring_tact.png",
@@ -1009,9 +1088,10 @@
     "rows": 6,
     "source": "docs/art-source/motions/production-144/daring_tact/packing.json",
     "skillId": "skill_daring_tact",
-    "skillSignature": "67f4f0bcdfec0b239d10904f734e148690c32c9940039faeeea2f6533b9c6415",
-    "skillReview": "청백 의상·푸른 꽃 유지. 낮은 출발·발진·수평 직선 돌파·착지로 현재 대상 돌진 표현.",
-    "skillReleaseFrame": 2
+    "skillSignature": "4951f748c9a3cc83250e96d8c9ccfea2cc00f12dbe1d7a0107d8318ab1cfc1a2",
+    "skillReview": "청백 의상·푸른 꽃 유지. 낮은 출발·발진·수평 직선 돌파·착지로 현재 대상 돌진 표현. 2026-09-09 시간표 재검토: 기존 출발·발진·돌파·착지 유지. 돌파 위치에 방어 약화/화상, 또는 착지 보호막을 별도 효과로 표시.",
+    "skillReleaseFrame": 2,
+    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
   },
   "sakura_laurel": {
     "file": "motions/sakura_laurel.png",
@@ -1021,9 +1101,10 @@
     "rows": 6,
     "source": "docs/art-source/motions/production-144/sakura_laurel/packing.json",
     "skillId": "skill_sakura_laurel",
-    "skillSignature": "92e385a8fc4ebceaf2407884832cbb8e02ef52fb9e7ec6ce16efe08b918751aa",
-    "skillReview": "분홍 의상·흰 부츠 유지. 지정·집중·손바닥 정지 명령·회수로 적 무리 마법 피해와 기절.",
-    "skillReleaseFrame": 2
+    "skillSignature": "08807e8f20e0a4eb43452fe2c2d89f35a2875cbde03dd50d0c5a9f6bee5c1978",
+    "skillReview": "분홍 의상·흰 부츠 유지. 지정·집중·손바닥 정지 명령·회수로 적 무리 마법 피해와 기절. 2026-09-09 시간표 재검토: 기존 조준·응축·구속 명령 유지. 침묵·기절·감속의 차이는 대상 상태 아이콘과 효과로 표시.",
+    "skillReleaseFrame": 2,
+    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
   },
   "narita_top_road": {
     "file": "motions/narita_top_road.png",
@@ -1033,9 +1114,10 @@
     "rows": 6,
     "source": "docs/art-source/motions/production-144/narita_top_road/packing.json",
     "skillId": "skill_narita_top_road",
-    "skillSignature": "91fcd698cb18bfcb333302b155b87b08ff23ca23d92ff5644565d993816a17dc",
-    "skillReview": "금발·보라 의상 유지. 경계·팔 벌린 도발·정면 방어·유지로 자기 보호막과 주변 적 도발. 실물 방패 추가 없음.",
-    "skillReleaseFrame": 2
+    "skillSignature": "c74068eb25a39a084f125959b778173739ca26f42af87dae41747f85e7f78b2c",
+    "skillReview": "금발·보라 의상 유지. 경계·팔 벌린 도발·정면 방어·유지로 자기 보호막과 주변 적 도발. 실물 방패 추가 없음. 2026-09-09 시간표 재검토: 기존 방벽 전개·도발·방어 유지. 반격 피해는 방벽 파동으로 표시하며 추가 타격 포즈 불필요.",
+    "skillReleaseFrame": 2,
+    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
   },
   "yamanin_zephyr": {
     "file": "motions/yamanin_zephyr.png",
@@ -1045,9 +1127,10 @@
     "rows": 6,
     "source": "docs/art-source/motions/production-144/yamanin_zephyr/packing.json",
     "skillId": "skill_yamanin_zephyr",
-    "skillSignature": "5d85978fa760a404b1c4bd3a5a6952f92bb0a767d221c33dca7c408c345a9f4c",
-    "skillReview": "청분홍 드레스와 긴 머리 유지. 손 모음·아군에게 전달·양손 회복 방출·격려로 최저 체력 아군 회복과 팀 강화.",
-    "skillReleaseFrame": 2
+    "skillSignature": "d1eaf2f9763b1b9cc8b414d0569dc6236147c0cc29a62d9c4c749607275011eb",
+    "skillReview": "청분홍 드레스와 긴 머리 유지. 손 모음·아군에게 전달·양손 회복 방출·격려로 최저 체력 아군 회복과 팀 강화. 2026-09-09 시간표 재검토: 기존 손 모음·아군을 향한 회복 전달 유지. 같은 아군에게 후속 회복/보호막을 전달.",
+    "skillReleaseFrame": 2,
+    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
   },
   "furioso": {
     "file": "motions/furioso.png",
@@ -1057,9 +1140,10 @@
     "rows": 6,
     "source": "docs/art-source/motions/production-144/furioso/packing.json",
     "skillId": "skill_furioso",
-    "skillSignature": "76350d555ceab840ae94951d188b2844e66e3843a420d7957e3eda311b34ef19",
-    "skillReview": "주황 머리와 청백 의상 유지. 가슴 집중·팔 들기·양팔 격려·지원 회수로 팀 강화. 근접 주먹 타격.",
-    "skillReleaseFrame": 2
+    "skillSignature": "93662ff64ece41672a3b1c77fa45fe64c6504e197b9d0a97660369661c4752c8",
+    "skillReview": "주황 머리와 청백 의상 유지. 가슴 집중·팔 들기·양팔 격려·지원 회수로 팀 강화. 근접 주먹 타격. 2026-09-09 시간표 재검토: 기존 양팔 확장·오라 유지 동작 유지. 회복 파동/보호막/이동 강화는 펼친 오라에 의해 발생.",
+    "skillReleaseFrame": 2,
+    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
   },
   "transcend": {
     "file": "motions/transcend.png",
@@ -1069,9 +1153,10 @@
     "rows": 6,
     "source": "docs/art-source/motions/production-144/transcend/packing.json",
     "skillId": "skill_transcend",
-    "skillSignature": "ab102082eacbdf128bf4ac8c119c9afea9d66b35282386102121a2109b5292d0",
-    "skillReview": "청록 큰 재킷과 줄무늬 소매 유지. 웅크린 집중·팔 올리기·양손 방출·회수로 적 밀집 지역 광역 폭발.",
-    "skillReleaseFrame": 2
+    "skillSignature": "1fd1419c2383c4711e0df90a829ec36bf942253ed1f4340cce5b904d9a32e976",
+    "skillReview": "청록 큰 재킷과 줄무늬 소매 유지. 웅크린 집중·팔 올리기·양손 방출·회수로 적 밀집 지역 광역 폭발. 2026-09-09 시간표 재검토: 기존 충전·방출 동작 유지. 두 번째 폭발은 잔류 에너지 효과이며 새 팔 동작을 요구하지 않음.",
+    "skillReleaseFrame": 2,
+    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
   },
   "north_flight": {
     "file": "motions/north_flight.png",
@@ -1081,9 +1166,10 @@
     "rows": 6,
     "source": "docs/art-source/motions/production-144/north_flight/packing.json",
     "skillId": "skill_north_flight",
-    "skillSignature": "3eaf3a7b87b1135eeab8cc9669fb6bdce76102dcc8a3a4f968c58bd88c7b631c",
-    "skillReview": "작은 모자·붉은 검정 드레스·흰 장식 꼬리 유지. 낮은 출발·발진·돌파·착지로 현재 대상 돌진.",
-    "skillReleaseFrame": 2
+    "skillSignature": "0b9e8e869eedf19648160c7123147e728dbafc3b585a46c1a352f258b03d6edf",
+    "skillReview": "작은 모자·붉은 검정 드레스·흰 장식 꼬리 유지. 낮은 출발·발진·돌파·착지로 현재 대상 돌진. 2026-09-09 시간표 재검토: 기존 출발·발진·돌파·착지 유지. 돌파 위치에 방어 약화/화상, 또는 착지 보호막을 별도 효과로 표시.",
+    "skillReleaseFrame": 2,
+    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
   },
   "symboli_kris_s": {
     "file": "motions/symboli_kris_s.png",
@@ -1093,9 +1179,10 @@
     "rows": 6,
     "source": "docs/art-source/motions/production-144/symboli_kris_s/packing.json",
     "skillId": "skill_symboli_kris_s",
-    "skillSignature": "24fff8d2b2f4afce1f28e5f84c01de1ab195cf4d097a64cf3e2302e014998944",
-    "skillReview": "긴 검은 머리·녹색 코트·피부색 유지. 강한 낮은 출발·전방 발진·수평 돌파·착지. 기본 공격은 근접 주먹.",
-    "skillReleaseFrame": 2
+    "skillSignature": "bee485d2cecc077e55cd709d94bcfa5438900e65e052195fac5be8ee5ea830e0",
+    "skillReview": "긴 검은 머리·녹색 코트·피부색 유지. 강한 낮은 출발·전방 발진·수평 돌파·착지. 기본 공격은 근접 주먹. 2026-09-09 시간표 재검토: 기존 출발·발진·돌파·착지 유지. 돌파 위치에 방어 약화/화상, 또는 착지 보호막을 별도 효과로 표시.",
+    "skillReleaseFrame": 2,
+    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
   },
   "rulership": {
     "file": "motions/rulership.png",
@@ -1105,9 +1192,10 @@
     "rows": 6,
     "source": "docs/art-source/motions/production-144/rulership/packing.json",
     "skillId": "skill_rulership",
-    "skillSignature": "319b5a0db0108fe0248380f4d1692206d21ecbbe8a7b5fafad3dcf8b4ca3c4e3",
-    "skillReview": "근접 손바닥 타격. 자기 보호막·도발: 팔 교차 방어 → 양팔로 방벽 전개 → 정면 도발 손짓 → 방어 유지. 흰 앞머리, 깃털 어깨와 노란 리본 유지. 피해/치유/돌진 없음.",
-    "skillReleaseFrame": 2
+    "skillSignature": "2bf37729e3e3a963b3f9143af9e61ed88cffeb36f8516d7761df22446463ee14",
+    "skillReview": "근접 손바닥 타격. 자기 보호막·도발: 팔 교차 방어 → 양팔로 방벽 전개 → 정면 도발 손짓 → 방어 유지. 흰 앞머리, 깃털 어깨와 노란 리본 유지. 피해/치유/돌진 없음. 2026-09-09 시간표 재검토: 기존 방벽 전개·도발·방어 유지. 반격 피해는 방벽 파동으로 표시하며 추가 타격 포즈 불필요.",
+    "skillReleaseFrame": 2,
+    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
   },
   "rose_kingdom": {
     "file": "motions/rose_kingdom.png",
@@ -1117,9 +1205,10 @@
     "rows": 6,
     "source": "docs/art-source/motions/production-144/rose_kingdom/packing.json",
     "skillId": "skill_rose_kingdom",
-    "skillSignature": "3616b8ed705dc0b7aa261863458af85b18684143d56ec350458157378f315da2",
-    "skillReview": "근접 손바닥 타격. 직선 돌파: 낮은 출발 → 발진 → 수평 돌파 → 착지. 달리기 두 번째·네 번째 자세를 무릎 통과 자세로 보정. 붉은 장미와 양색 망토 유지. 공격속도와 자기 보호막 강화.",
-    "skillReleaseFrame": 2
+    "skillSignature": "38adc0d254132f630b4d20a92e6884f378befb7b47925f80ab1fe02cf45e4828",
+    "skillReview": "근접 손바닥 타격. 직선 돌파: 낮은 출발 → 발진 → 수평 돌파 → 착지. 달리기 두 번째·네 번째 자세를 무릎 통과 자세로 보정. 붉은 장미와 양색 망토 유지. 공격속도와 자기 보호막 강화. 2026-09-09 시간표 재검토: 기존 출발·발진·돌파·착지 유지. 돌파 위치에 방어 약화/화상, 또는 착지 보호막을 별도 효과로 표시.",
+    "skillReleaseFrame": 2,
+    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
   },
   "victoire_pisa": {
     "file": "motions/victoire_pisa.png",
@@ -1129,9 +1218,10 @@
     "rows": 6,
     "source": "docs/art-source/motions/production-144/victoire_pisa/packing.json",
     "skillId": "skill_victoire_pisa",
-    "skillSignature": "ec19a867c32a0ddafadae901133e579931b98690900ac5f005d92f53cd0b91a4",
-    "skillReview": "근접 손바닥 타격. 직선 돌파: 드레스 아래 낮은 출발 → 발진 → 수평 돌파 → 착지. 긴 흰 드레스, 베레모와 남색 리본 유지. 공격속도·이동속도 강화.",
-    "skillReleaseFrame": 2
+    "skillSignature": "a39435348b72d23d30e8272e7330414380ba8bf2a4fe2d53460dd4166fd7d593",
+    "skillReview": "근접 손바닥 타격. 직선 돌파: 드레스 아래 낮은 출발 → 발진 → 수평 돌파 → 착지. 긴 흰 드레스, 베레모와 남색 리본 유지. 공격속도·이동속도 강화. 2026-09-09 시간표 재검토: 기존 출발·발진·돌파·착지 유지. 돌파 위치에 방어 약화/화상, 또는 착지 보호막을 별도 효과로 표시.",
+    "skillReleaseFrame": 2,
+    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
   },
   "logotype": {
     "file": "motions/logotype.png",
@@ -1141,9 +1231,10 @@
     "rows": 6,
     "source": "docs/art-source/motions/production-144/logotype/packing.json",
     "skillId": "skill_logotype",
-    "skillSignature": "dd47040d5dd6d7aa999745514a98401b338247667b11190d594a2f9d8a33fca6",
-    "skillReview": "원거리 손짓 발사. 아군 전체 강화: 가슴 앞 집중 → 양팔 격려 → 팔을 펼친 지휘 → 강화 유지. 달리기 중간 자세와 방향 보정, 부유 장식 제거. 버건디 카디건, 줄무늬 조끼와 옆가리개 유지.",
-    "skillReleaseFrame": 2
+    "skillSignature": "92ac5d7c7a4da36734af4e8d8851b9d856539bea6f5447a50c909f1f859f0286",
+    "skillReview": "원거리 손짓 발사. 아군 전체 강화: 가슴 앞 집중 → 양팔 격려 → 팔을 펼친 지휘 → 강화 유지. 달리기 중간 자세와 방향 보정, 부유 장식 제거. 버건디 카디건, 줄무늬 조끼와 옆가리개 유지. 2026-09-09 시간표 재검토: 기존 양팔 확장·오라 유지 동작 유지. 회복 파동/보호막/이동 강화는 펼친 오라에 의해 발생.",
+    "skillReleaseFrame": 2,
+    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
   },
   "epiphaneia": {
     "file": "motions/epiphaneia.png",
@@ -1153,9 +1244,10 @@
     "rows": 6,
     "source": "docs/art-source/motions/production-144/epiphaneia/packing.json",
     "skillId": "skill_epiphaneia",
-    "skillSignature": "83b205dcd1d173f0efcd015e0864202ab7c34b86895df45930ea8431e3dbf493",
-    "skillReview": "근접 손바닥 타격. 아군 전체 강화: 가슴 앞 집중 → 양팔 격려 → 팔을 펼친 지휘 → 강화 유지. 짧은 땋은 머리, 흰 망토, 짝이 다른 부츠 유지. 피해·치유 없음.",
-    "skillReleaseFrame": 2
+    "skillSignature": "b1a4dcdfa1b5e4bf8a71780ac55497147875c1f098bb1af277c4e7ddabca5700",
+    "skillReview": "근접 손바닥 타격. 아군 전체 강화: 가슴 앞 집중 → 양팔 격려 → 팔을 펼친 지휘 → 강화 유지. 짧은 땋은 머리, 흰 망토, 짝이 다른 부츠 유지. 피해·치유 없음. 2026-09-09 시간표 재검토: 기존 양팔 확장·오라 유지 동작 유지. 회복 파동/보호막/이동 강화는 펼친 오라에 의해 발생.",
+    "skillReleaseFrame": 2,
+    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
   },
   "marche_lorraine": {
     "file": "motions/marche_lorraine.png",
@@ -1165,9 +1257,10 @@
     "rows": 6,
     "source": "docs/art-source/motions/production-144/marche_lorraine/packing.json",
     "skillId": "skill_marche_lorraine",
-    "skillSignature": "48dd047f762025aa264298a2d1f03e3ac199f10cc3ae8ac0dacaae68c97b6805",
-    "skillReview": "원거리 손짓 발사. 진로 봉쇄: 적 무리 지정 → 집중 → 양손 제압 방출 → 회복. 범위 마법피해·기절이며 자기 치명타 강화. 체크 모자·망토와 깃털 유지.",
-    "skillReleaseFrame": 2
+    "skillSignature": "23c448a3d93456ba0f4013f169cc6b6fba88a948d0717dbaf460a17f9ed5a13e",
+    "skillReview": "원거리 손짓 발사. 진로 봉쇄: 적 무리 지정 → 집중 → 양손 제압 방출 → 회복. 범위 마법피해·기절이며 자기 치명타 강화. 체크 모자·망토와 깃털 유지. 2026-09-09 시간표 재검토: 기존 조준·응축·구속 명령 유지. 침묵·기절·감속의 차이는 대상 상태 아이콘과 효과로 표시.",
+    "skillReleaseFrame": 2,
+    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
   },
   "forever_young": {
     "file": "motions/forever_young.png",
@@ -1177,9 +1270,10 @@
     "rows": 6,
     "source": "docs/art-source/motions/production-144/forever_young/packing.json",
     "skillId": "skill_forever_young",
-    "skillSignature": "2c632da66946b45c992f1638fc736ca5f09ab233b30b332233d9a0bd55ce2c31",
-    "skillReview": "원거리 손짓 발사. 광역 폭발: 적 밀집 지점 조준 → 양팔 응축 → 전방 방출 → 반동 회복. 자기 이동속도 강화. 선글라스, 작은 모자, 붉은 긴 코트 유지.",
-    "skillReleaseFrame": 2
+    "skillSignature": "1735d3cfc126bbc9d5db851f7f3a2eefe5f82f950a6d9917401e04c90e0344b7",
+    "skillReview": "원거리 손짓 발사. 광역 폭발: 적 밀집 지점 조준 → 양팔 응축 → 전방 방출 → 반동 회복. 자기 이동속도 강화. 선글라스, 작은 모자, 붉은 긴 코트 유지. 2026-09-09 시간표 재검토: 기존 충전·방출 동작 유지. 두 번째 폭발은 잔류 에너지 효과이며 새 팔 동작을 요구하지 않음.",
+    "skillReleaseFrame": 2,
+    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
   },
   "kiseki": {
     "file": "motions/kiseki.png",
@@ -1189,9 +1283,10 @@
     "rows": 6,
     "source": "docs/art-source/motions/production-144/kiseki/packing.json",
     "skillId": "skill_kiseki",
-    "skillSignature": "998a7069b6643616e9c408bd21e6326b7215ba19f1a598523412a13aa08a8fe3",
-    "skillReview": "원거리 손짓 발사. 아군 전체 강화: 가슴 앞 집중 → 양팔 격려 → 팔을 펼친 지휘 → 강화 유지. 청록색 땋은 머리, 초록·흰 의상과 옆 장식천 유지. 피해·치유 없음.",
-    "skillReleaseFrame": 2
+    "skillSignature": "06cd436f94487e75f1faf095f1bb579b89c00c70d0a528543865348385068799",
+    "skillReview": "원거리 손짓 발사. 아군 전체 강화: 가슴 앞 집중 → 양팔 격려 → 팔을 펼친 지휘 → 강화 유지. 청록색 땋은 머리, 초록·흰 의상과 옆 장식천 유지. 피해·치유 없음. 2026-09-09 시간표 재검토: 기존 양팔 확장·오라 유지 동작 유지. 회복 파동/보호막/이동 강화는 펼친 오라에 의해 발생.",
+    "skillReleaseFrame": 2,
+    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
   },
   "red_desire": {
     "file": "motions/red_desire.png",
@@ -1201,9 +1296,10 @@
     "rows": 6,
     "source": "docs/art-source/motions/production-144/red_desire/packing.json",
     "skillId": "skill_red_desire",
-    "skillSignature": "a5801ca3c7b617c805d8d286b026df896dbd4b994ccbcc05b29afac289ad66b6",
-    "skillReview": "근접 손바닥 타격. 진로 봉쇄: 적 무리 지정 → 집중 → 양손 제압 방출 → 회복. 범위 마법피해·기절이며 자기 치명타 강화. 붉은 드레스, 흰 리본과 별 머리장식 유지.",
-    "skillReleaseFrame": 2
+    "skillSignature": "f21b639d29c79fce196fc8b660e5bc441c6b5fd71a5fb1235f466c784d584c3d",
+    "skillReview": "근접 손바닥 타격. 진로 봉쇄: 적 무리 지정 → 집중 → 양손 제압 방출 → 회복. 범위 마법피해·기절이며 자기 치명타 강화. 붉은 드레스, 흰 리본과 별 머리장식 유지. 2026-09-09 시간표 재검토: 기존 조준·응축·구속 명령 유지. 침묵·기절·감속의 차이는 대상 상태 아이콘과 효과로 표시.",
+    "skillReleaseFrame": 2,
+    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
   },
   "tanino_gimlet": {
     "file": "motions/tanino_gimlet.png",
@@ -1213,9 +1309,10 @@
     "rows": 6,
     "source": "docs/art-source/motions/production-144/tanino_gimlet/packing.json",
     "skillId": "skill_tanino_gimlet",
-    "skillSignature": "1bef0fa0b6c62d9eb6885972ca5ac7871efb953b10647bc23852381033778959",
-    "skillReview": "안대·짙은 청색 의상 유지. 적 지목·집중·정지 손바닥·회수로 무리 마법 피해와 기절 표현.",
-    "skillReleaseFrame": 2
+    "skillSignature": "870e95426686a815f034081922c6922d0a48dcb0b45d4dec921e572102aee21f",
+    "skillReview": "안대·짙은 청색 의상 유지. 적 지목·집중·정지 손바닥·회수로 무리 마법 피해와 기절 표현. 2026-09-09 시간표 재검토: 기존 조준·응축·구속 명령 유지. 침묵·기절·감속의 차이는 대상 상태 아이콘과 효과로 표시.",
+    "skillReleaseFrame": 2,
+    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
   },
   "daiichi_ruby": {
     "file": "motions/daiichi_ruby.png",
@@ -1225,9 +1322,10 @@
     "rows": 6,
     "source": "docs/art-source/motions/production-144/daiichi_ruby/packing.json",
     "skillId": "skill_daiichi_ruby",
-    "skillSignature": "0c54cef6d504e935cf3ed8984f850a6e204eaa0dab127d3f1290bfe743107081",
-    "skillReview": "붉은 리본·보라 드레스 유지. 같은 대상에 대한 세 손바닥 발사와 회수. 두 번째 발사 자세를 보정하고 진짜 알파를 재생성했다.",
-    "skillReleaseFrame": 0
+    "skillSignature": "eff24298f693f4538b8f75c1eaa7a9659080d8c4a335f50c7c186d569a844118",
+    "skillReview": "붉은 리본·보라 드레스 유지. 같은 대상에 대한 세 손바닥 발사와 회수. 두 번째 발사 자세를 보정하고 진짜 알파를 재생성했다. 2026-09-09 시간표 재검토: 검수된 1·2·3차 발사 포즈에 실제 0/0.167/0.333초 연타를 각각 연결. 이전에는 3회 피해가 동시 발생.",
+    "skillReleaseFrame": 0,
+    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
   },
   "mejiro_ramonu": {
     "file": "motions/mejiro_ramonu.png",
@@ -1237,9 +1335,10 @@
     "rows": 6,
     "source": "docs/art-source/motions/production-144/mejiro_ramonu/packing.json",
     "skillId": "skill_mejiro_ramonu",
-    "skillSignature": "1cdedaa6ae773c5a0b27a76b78a8a38ddb3314a7cba391eef7bd59e8f28ef28b",
-    "skillReview": "검은 비대칭 드레스·묶은 머리 유지. 낮은 출발·발진·수평 돌파·착지로 현재 대상 돌진. 근접 주먹 공격.",
-    "skillReleaseFrame": 2
+    "skillSignature": "1774f526fa1355c55b82f223cabd0b609596399e5159ab9638f78f207969d6ac",
+    "skillReview": "검은 비대칭 드레스·묶은 머리 유지. 낮은 출발·발진·수평 돌파·착지로 현재 대상 돌진. 근접 주먹 공격. 2026-09-09 시간표 재검토: 기존 출발·발진·돌파·착지 유지. 돌파 위치에 방어 약화/화상, 또는 착지 보호막을 별도 효과로 표시.",
+    "skillReleaseFrame": 2,
+    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
   },
   "aston_machan": {
     "file": "motions/aston_machan.png",
@@ -1249,9 +1348,10 @@
     "rows": 6,
     "source": "docs/art-source/motions/production-144/aston_machan/packing.json",
     "skillId": "skill_aston_machan",
-    "skillSignature": "e1b9d45dc34c96429597ac0bf73f5beb136d089ea5c82964a0327af6a606dad2",
-    "skillReview": "왕관·크림 빨강 드레스 유지. 가슴 집중·팔 들기·양손 광역 방출·회수로 밀집 적 광역 마법 피해.",
-    "skillReleaseFrame": 2
+    "skillSignature": "cd42f717fcdbd22d9fe5aa461fa260e9857e48a15e884832421389bd31e37559",
+    "skillReview": "왕관·크림 빨강 드레스 유지. 가슴 집중·팔 들기·양손 광역 방출·회수로 밀집 적 광역 마법 피해. 2026-09-09 시간표 재검토: 기존 충전·방출 동작 유지. 두 번째 폭발은 잔류 에너지 효과이며 새 팔 동작을 요구하지 않음.",
+    "skillReleaseFrame": 2,
+    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
   },
   "satono_crown": {
     "file": "motions/satono_crown.png",
@@ -1261,9 +1361,10 @@
     "rows": 6,
     "source": "docs/art-source/motions/production-144/satono_crown/packing.json",
     "skillId": "skill_satono_crown",
-    "skillSignature": "8f6b78b930e75dcb58f84461c739f567213c69cf2327294576e5cf0a2cb10802",
-    "skillReview": "녹금 드레스·긴 머리 유지. 동일 대상 방향 세 발사 자세와 회수로 3연타 표현. 투사체는 엔진이 표시.",
-    "skillReleaseFrame": 0
+    "skillSignature": "e1fb2b70ebc81fd38466611f155cbbf166d36fc36e73ea2feadab156607a8424",
+    "skillReview": "녹금 드레스·긴 머리 유지. 동일 대상 방향 세 발사 자세와 회수로 3연타 표현. 투사체는 엔진이 표시. 2026-09-09 시간표 재검토: 검수된 1·2·3차 발사 포즈에 실제 0/0.167/0.333초 연타를 각각 연결. 이전에는 3회 피해가 동시 발생.",
+    "skillReleaseFrame": 0,
+    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
   },
   "cheval_grand": {
     "file": "motions/cheval_grand.png",
@@ -1273,9 +1374,10 @@
     "rows": 6,
     "source": "docs/art-source/motions/production-144/cheval_grand/packing.json",
     "skillId": "skill_cheval_grand",
-    "skillSignature": "3eb901da48f32a8768ac3f160926efb5366a093ef9412f88eeddcc284cd632cf",
-    "skillReview": "흰 모자·청백 망토 유지. 지목·가슴 집중·손바닥 정지 명령·회수로 범위 기절. 기본 공격은 근접 주먹.",
-    "skillReleaseFrame": 2
+    "skillSignature": "84d1696b125a61fb52031b6fa25866b2e4fb0087b185b4f9cb8f48f79ff05742",
+    "skillReview": "흰 모자·청백 망토 유지. 지목·가슴 집중·손바닥 정지 명령·회수로 범위 기절. 기본 공격은 근접 주먹. 2026-09-09 시간표 재검토: 기존 조준·응축·구속 명령 유지. 침묵·기절·감속의 차이는 대상 상태 아이콘과 효과로 표시.",
+    "skillReleaseFrame": 2,
+    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
   },
   "vivlos": {
     "file": "motions/vivlos.png",
@@ -1285,9 +1387,10 @@
     "rows": 6,
     "source": "docs/art-source/motions/production-144/vivlos/packing.json",
     "skillId": "skill_vivlos",
-    "skillSignature": "53ce53966fc7676682c8b9a2fde67205951ad44dac38e75db23ca0100f70a96d",
-    "skillReview": "청백 모자·긴 리본 유지. 웅크림·발진·수평 돌파·착지로 직선 돌진.",
-    "skillReleaseFrame": 2
+    "skillSignature": "2dd7360c5488e1ef132e63e1b0b882da530501e52cb3497998d9dd6fe258270c",
+    "skillReview": "청백 모자·긴 리본 유지. 웅크림·발진·수평 돌파·착지로 직선 돌진. 2026-09-09 시간표 재검토: 기존 출발·발진·돌파·착지 유지. 돌파 위치에 방어 약화/화상, 또는 착지 보호막을 별도 효과로 표시.",
+    "skillReleaseFrame": 2,
+    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
   },
   "dantsu_flame": {
     "file": "motions/dantsu_flame.png",
@@ -1297,9 +1400,10 @@
     "rows": 6,
     "source": "docs/art-source/motions/production-144/dantsu_flame/packing.json",
     "skillId": "skill_dantsu_flame",
-    "skillSignature": "6d399d88b59b907da12b67746600eab4923a6c6d290744050b6b5b53a4a72840",
-    "skillReview": "분홍 녹색 운동복 유지. 합장·아군에게 손 내밈·양손 회복 전달·격려로 낮은 체력 아군 회복과 팀 강화.",
-    "skillReleaseFrame": 2
+    "skillSignature": "f51d99f7a2aaf6b5cd6b0925f4ef0ce2bcf09b846761cef4086ba39210c5e7fa",
+    "skillReview": "분홍 녹색 운동복 유지. 합장·아군에게 손 내밈·양손 회복 전달·격려로 낮은 체력 아군 회복과 팀 강화. 2026-09-09 시간표 재검토: 기존 손 모음·아군을 향한 회복 전달 유지. 같은 아군에게 후속 회복/보호막을 전달.",
+    "skillReleaseFrame": 2,
+    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
   },
   "ks_miracle": {
     "file": "motions/ks_miracle.png",
@@ -1309,9 +1413,10 @@
     "rows": 6,
     "source": "docs/art-source/motions/production-144/ks_miracle/packing.json",
     "skillId": "skill_ks_miracle",
-    "skillSignature": "1a408a384e48e584b93b2d6067663b452df5139fba9fa1179bb331b10656972c",
-    "skillReview": "하늘색 머리·청금 긴 코트 유지. 가슴 집중·든 손·양팔 확장·지휘 회복으로 팀 강화.",
-    "skillReleaseFrame": 2
+    "skillSignature": "cbab6786e7653d1fa133a279ee40f1f02b05e9baed42e789fb89b84da2a2498d",
+    "skillReview": "하늘색 머리·청금 긴 코트 유지. 가슴 집중·든 손·양팔 확장·지휘 회복으로 팀 강화. 2026-09-09 시간표 재검토: 기존 양팔 확장·오라 유지 동작 유지. 회복 파동/보호막/이동 강화는 펼친 오라에 의해 발생.",
+    "skillReleaseFrame": 2,
+    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
   },
   "jungle_pocket": {
     "file": "motions/jungle_pocket.png",
@@ -1321,9 +1426,10 @@
     "rows": 6,
     "source": "docs/art-source/motions/production-144/jungle_pocket/packing.json",
     "skillId": "skill_jungle_pocket",
-    "skillSignature": "0c4626dc98dd300d999462a3882cabf2000ca7cce46fb82302ed49d096b646d3",
-    "skillReview": "노랑 재킷·검정 반바지·녹색 양말 유지. 집중·팔 당김·강한 정지 손바닥·회수로 범위 기절. 기본 공격은 근접 주먹.",
-    "skillReleaseFrame": 2
+    "skillSignature": "15905c7e3fe63b2437fcd1e146f4a33f856113b1a53744fccabfa52712cfd671",
+    "skillReview": "노랑 재킷·검정 반바지·녹색 양말 유지. 집중·팔 당김·강한 정지 손바닥·회수로 범위 기절. 기본 공격은 근접 주먹. 2026-09-09 시간표 재검토: 기존 조준·응축·구속 명령 유지. 침묵·기절·감속의 차이는 대상 상태 아이콘과 효과로 표시.",
+    "skillReleaseFrame": 2,
+    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
   },
   "stay_gold": {
     "file": "motions/stay_gold.png",
@@ -1333,9 +1439,10 @@
     "rows": 6,
     "source": "docs/art-source/motions/production-144/stay_gold/packing.json",
     "skillId": "skill_stay_gold",
-    "skillSignature": "c8fe82acaf0e77d89431a57d033094f95985f5da472136855af6fb6e52956592",
-    "skillReview": "근접 손바닥 타격. 자기 보호막·도발: 팔 교차 방어 → 양팔 방벽 → 적을 부르는 손짓 → 방어 유지. 낡은 긴 코트, 고글과 금색 부츠 앞코 유지. 피해·치유·돌진 없음.",
-    "skillReleaseFrame": 2
+    "skillSignature": "313a8d4bb5df26d19fa81084faf505a2149c00cf99b8faebdaa8ff8d8aa1de55",
+    "skillReview": "근접 손바닥 타격. 자기 보호막·도발: 팔 교차 방어 → 양팔 방벽 → 적을 부르는 손짓 → 방어 유지. 낡은 긴 코트, 고글과 금색 부츠 앞코 유지. 피해·치유·돌진 없음. 2026-09-09 시간표 재검토: 기존 방벽 전개·도발·방어 유지. 반격 피해는 방벽 파동으로 표시하며 추가 타격 포즈 불필요.",
+    "skillReleaseFrame": 2,
+    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
   },
   "curren_bouquetdor": {
     "file": "motions/curren_bouquetdor.png",
@@ -1345,9 +1452,10 @@
     "rows": 6,
     "source": "docs/art-source/motions/production-144/curren_bouquetdor/packing.json",
     "skillId": "skill_curren_bouquetdor",
-    "skillSignature": "03b7183511fd8dd47ecbd6eeef42dde67e73fd57c3dda21667333d1a46310b74",
-    "skillReview": "원거리 손짓 발사. 체력 최저 아군 회복: 손 모아 집중 → 도움 준비 → 아군 방향 회복 손짓 → 팀 격려. 아군 전체 공격력·주문력과 자기 보호막 강화. 꽃무늬 안감과 비대칭 장갑·신발 유지.",
-    "skillReleaseFrame": 2
+    "skillSignature": "4948d3db6ad1a458af55c42afb728efa2249928c976d0593fd7797fa29f5f708",
+    "skillReview": "원거리 손짓 발사. 체력 최저 아군 회복: 손 모아 집중 → 도움 준비 → 아군 방향 회복 손짓 → 팀 격려. 아군 전체 공격력·주문력과 자기 보호막 강화. 꽃무늬 안감과 비대칭 장갑·신발 유지. 2026-09-09 시간표 재검토: 기존 손 모음·아군을 향한 회복 전달 유지. 같은 아군에게 후속 회복/보호막을 전달.",
+    "skillReleaseFrame": 2,
+    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
   },
   "chrono_genesis": {
     "file": "motions/chrono_genesis.png",
@@ -1357,9 +1465,10 @@
     "rows": 6,
     "source": "docs/art-source/motions/production-144/chrono_genesis/packing.json",
     "skillId": "skill_chrono_genesis",
-    "skillSignature": "2d8e96210aec5a4154e601992b45505112cea59d3249b86063612825c16bd7a1",
-    "skillReview": "근접 손바닥 타격. 직선 돌파: 낮은 출발 → 발진 → 수평 돌파 → 착지. 공격속도와 자기 보호막 강화. 은색·남색 긴 머리와 금색 장식 유지, 달리기 중간 자세 보정.",
-    "skillReleaseFrame": 2
+    "skillSignature": "465b666969f262c8e119ce1a0c0eb32f1dbd628dd1b3baf02ed453b85022be42",
+    "skillReview": "근접 손바닥 타격. 직선 돌파: 낮은 출발 → 발진 → 수평 돌파 → 착지. 공격속도와 자기 보호막 강화. 은색·남색 긴 머리와 금색 장식 유지, 달리기 중간 자세 보정. 2026-09-09 시간표 재검토: 기존 출발·발진·돌파·착지 유지. 돌파 위치에 방어 약화/화상, 또는 착지 보호막을 별도 효과로 표시.",
+    "skillReleaseFrame": 2,
+    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
   },
   "loves_only_you": {
     "file": "motions/loves_only_you.png",
@@ -1369,9 +1478,10 @@
     "rows": 6,
     "source": "docs/art-source/motions/production-144/loves_only_you/packing.json",
     "skillId": "skill_loves_only_you",
-    "skillSignature": "70d851c915fb80fb6f37730e31274eb888227a0d9df9c2e403da1612648bc1a4",
-    "skillReview": "근접 손바닥 타격. 진로 봉쇄: 적 무리 지정 → 집중 → 양손 제압 방출 → 회복. 범위 마법피해·기절과 자기 치명타 강화. 붉은 머리, 작은 모자, 비대칭 장갑·스타킹 유지.",
-    "skillReleaseFrame": 2
+    "skillSignature": "de091d644db28a7ef3ca5427078c43e0689ee2bf9d0c7f159c941ab6c170279d",
+    "skillReview": "근접 손바닥 타격. 진로 봉쇄: 적 무리 지정 → 집중 → 양손 제압 방출 → 회복. 범위 마법피해·기절과 자기 치명타 강화. 붉은 머리, 작은 모자, 비대칭 장갑·스타킹 유지. 2026-09-09 시간표 재검토: 기존 조준·응축·구속 명령 유지. 침묵·기절·감속의 차이는 대상 상태 아이콘과 효과로 표시.",
+    "skillReleaseFrame": 2,
+    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
   },
   "gran_alegria": {
     "file": "motions/gran_alegria.png",
@@ -1381,9 +1491,10 @@
     "rows": 6,
     "source": "docs/art-source/motions/production-144/gran_alegria/packing.json",
     "skillId": "skill_gran_alegria",
-    "skillSignature": "5dc4173a1d39483570dab1d50f824319d39a6d386b68e4db978f4ffcf6f93702",
-    "skillReview": "원거리 손짓 발사. 직선 돌파: 낮은 출발 → 발진 → 수평 돌파 → 착지. 자기 공격속도·이동속도 강화. 흰 앞머리와 붉은 별, 허리천·금색 장식·흰 운동화 유지.",
-    "skillReleaseFrame": 2
+    "skillSignature": "672dffe12491bbf1e684a1eac6b4ea46d2e6461b716b71af247f92b8f76f2e8b",
+    "skillReview": "원거리 손짓 발사. 직선 돌파: 낮은 출발 → 발진 → 수평 돌파 → 착지. 자기 공격속도·이동속도 강화. 흰 앞머리와 붉은 별, 허리천·금색 장식·흰 운동화 유지. 2026-09-09 시간표 재검토: 기존 출발·발진·돌파·착지 유지. 돌파 위치에 방어 약화/화상, 또는 착지 보호막을 별도 효과로 표시.",
+    "skillReleaseFrame": 2,
+    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
   },
   "believe": {
     "file": "motions/believe.png",
@@ -1393,9 +1504,10 @@
     "rows": 6,
     "source": "docs/art-source/motions/production-144/believe/packing.json",
     "skillId": "skill_believe",
-    "skillSignature": "ecd33756fcd34e2b89983e43790ee95aa2fffb3ea8ddcd6b418f6510d0d70d8d",
-    "skillReview": "밀집 적 대상 양손 광역 방출과 이동 복귀.",
-    "skillReleaseFrame": 2
+    "skillSignature": "39a7119b327c8d7ba8fce1b863b4c104d76d2a88e45681d0237cf16358355e7c",
+    "skillReview": "밀집 적 대상 양손 광역 방출과 이동 복귀. 2026-09-09 시간표 재검토: 기존 충전·방출 동작 유지. 두 번째 폭발은 잔류 에너지 효과이며 새 팔 동작을 요구하지 않음.",
+    "skillReleaseFrame": 2,
+    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
   },
   "no_reason": {
     "file": "motions/no_reason.png",
@@ -1405,9 +1517,10 @@
     "rows": 6,
     "source": "docs/art-source/motions/production-144/no_reason/packing.json",
     "skillId": "skill_no_reason",
-    "skillSignature": "a6ef88388c2b5aee86e7211fde4bdb521929bf0df840bd03cd5cd4924ac728c0",
-    "skillReview": "적 무리 지목, 집중, 멈춤 손바닥으로 기절 발동.",
-    "skillReleaseFrame": 2
+    "skillSignature": "9e31a49266144242c8eba82a2b689fda89e1c6bfd93f3e3de31381cc9fcdd763",
+    "skillReview": "적 무리 지목, 집중, 멈춤 손바닥으로 기절 발동. 2026-09-09 시간표 재검토: 기존 조준·응축·구속 명령 유지. 침묵·기절·감속의 차이는 대상 상태 아이콘과 효과로 표시.",
+    "skillReleaseFrame": 2,
+    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
   },
   "still_in_love": {
     "file": "motions/still_in_love.png",
@@ -1417,9 +1530,10 @@
     "rows": 6,
     "source": "docs/art-source/motions/production-144/still_in_love/packing.json",
     "skillId": "skill_still_in_love",
-    "skillSignature": "9b3cd71dc259678f78f4dca9682bf4bdf863c1417780bfe0ae9b0cc60f2b6d12",
-    "skillReview": "낮은 준비, 발진, 전방 돌파, 착지로 근접 돌진.",
-    "skillReleaseFrame": 2
+    "skillSignature": "e51f38c0791fd8ca14465e0cb0b395bb79af59a1d77102a2aa29b7e4de15b1bc",
+    "skillReview": "낮은 준비, 발진, 전방 돌파, 착지로 근접 돌진. 2026-09-09 시간표 재검토: 기존 출발·발진·돌파·착지 유지. 돌파 위치에 방어 약화/화상, 또는 착지 보호막을 별도 효과로 표시.",
+    "skillReleaseFrame": 2,
+    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
   },
   "copano_rickey": {
     "file": "motions/copano_rickey.png",
@@ -1429,9 +1543,10 @@
     "rows": 6,
     "source": "docs/art-source/motions/production-144/copano_rickey/packing.json",
     "skillId": "skill_copano_rickey",
-    "skillSignature": "cd16d74ffb26fc1abc664b7a49799fdf7186a670685ce361b95a0ae50de4b8e5",
-    "skillReview": "대상을 향한 낮은 발진과 주먹 전방 돌파.",
-    "skillReleaseFrame": 2
+    "skillSignature": "11c385b923ede379e29cef0fddbc5f72f47920adcde4593e38ec38b26181325d",
+    "skillReview": "대상을 향한 낮은 발진과 주먹 전방 돌파. 2026-09-09 시간표 재검토: 기존 출발·발진·돌파·착지 유지. 돌파 위치에 방어 약화/화상, 또는 착지 보호막을 별도 효과로 표시.",
+    "skillReleaseFrame": 2,
+    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
   },
   "hokko_tarumae": {
     "file": "motions/hokko_tarumae.png",
@@ -1441,9 +1556,10 @@
     "rows": 6,
     "source": "docs/art-source/motions/production-144/hokko_tarumae/packing.json",
     "skillId": "skill_hokko_tarumae",
-    "skillSignature": "fb4544a118e5c2a0050ebd09184cb52845c717c9c9e259eab816d6df092de1a8",
-    "skillReview": "집중 후 양팔을 들어 밀집 적에게 광역 방출.",
-    "skillReleaseFrame": 2
+    "skillSignature": "db415780ef19daffeac88428b058763d8f729fcdc91a9c0cfa4e89a29770a287",
+    "skillReview": "집중 후 양팔을 들어 밀집 적에게 광역 방출. 2026-09-09 시간표 재검토: 기존 충전·방출 동작 유지. 두 번째 폭발은 잔류 에너지 효과이며 새 팔 동작을 요구하지 않음.",
+    "skillReleaseFrame": 2,
+    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
   },
   "wonder_acute": {
     "file": "motions/wonder_acute.png",
@@ -1453,9 +1569,10 @@
     "rows": 6,
     "source": "docs/art-source/motions/production-144/wonder_acute/packing.json",
     "skillId": "skill_wonder_acute",
-    "skillSignature": "931db2ab9e12af76058d22e3e66a0ef1747a325e7a64422afd2d0a8d2220c24b",
-    "skillReview": "낮은 체력 아군에 손을 내밀고 팀 전체에 열린 손 강화.",
-    "skillReleaseFrame": 2
+    "skillSignature": "cbcc43bc190c1e8accaa8cfa0ec61e6c72cbc7f89bf1694fdf2d95c682a5c8f8",
+    "skillReview": "낮은 체력 아군에 손을 내밀고 팀 전체에 열린 손 강화. 2026-09-09 시간표 재검토: 기존 손 모음·아군을 향한 회복 전달 유지. 같은 아군에게 후속 회복/보호막을 전달.",
+    "skillReleaseFrame": 2,
+    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
   },
   "samson_big": {
     "file": "motions/samson_big.png",
@@ -1465,9 +1582,10 @@
     "rows": 6,
     "source": "docs/art-source/motions/production-144/samson_big/packing.json",
     "skillId": "skill_samson_big",
-    "skillSignature": "880e6142ed160170bae960c6062e4e3a728eb0e8e86bee124af1a69246f1d021",
-    "skillReview": "적 무리 지목 후 정지 손바닥을 내밀어 기절. 달리기 중간 두 포즈의 무릎/팔 전환을 보정 후 재검수.",
-    "skillReleaseFrame": 2
+    "skillSignature": "077329ea37b1a4e60eac1782874bf1dac17108710706a050477e93f98f1bcead",
+    "skillReview": "적 무리 지목 후 정지 손바닥을 내밀어 기절. 달리기 중간 두 포즈의 무릎/팔 전환을 보정 후 재검수. 2026-09-09 시간표 재검토: 기존 조준·응축·구속 명령 유지. 침묵·기절·감속의 차이는 대상 상태 아이콘과 효과로 표시.",
+    "skillReleaseFrame": 2,
+    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
   },
   "sounds_of_earth": {
     "file": "motions/sounds_of_earth.png",
@@ -1477,9 +1595,10 @@
     "rows": 6,
     "source": "docs/art-source/motions/production-144/sounds_of_earth/packing.json",
     "skillId": "skill_sounds_of_earth",
-    "skillSignature": "d91c19f72f28372f42500685fe374fd6a9d42c6f6fc7ac5b48fa7311892ca348",
-    "skillReview": "적 무리 집중 후 지휘하듯 손바닥을 들어 봉쇄.",
-    "skillReleaseFrame": 2
+    "skillSignature": "178483119bf7dbf6a1ae2c4524d005c31cabe4224b2a10cf2981f1c5749c4b55",
+    "skillReview": "적 무리 집중 후 지휘하듯 손바닥을 들어 봉쇄. 2026-09-09 시간표 재검토: 기존 조준·응축·구속 명령 유지. 침묵·기절·감속의 차이는 대상 상태 아이콘과 효과로 표시.",
+    "skillReleaseFrame": 2,
+    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
   },
   "royce_and_royce": {
     "file": "motions/royce_and_royce.png",
@@ -1489,9 +1608,10 @@
     "rows": 6,
     "source": "docs/art-source/motions/production-144/royce_and_royce/packing.json",
     "skillId": "skill_royce_and_royce",
-    "skillSignature": "d4126780e1beb3d5ab1f3ed6668f030a30de7a807ac6a4b4fed2d5ab5a6a2bf3",
-    "skillReview": "회복 대상에 손을 내밀고 양팔을 펼쳐 팀 강화.",
-    "skillReleaseFrame": 2
+    "skillSignature": "8d3dfe7e2d5a1834047b33430933fb5cefa55ce45b106e155d481901b5a8fdba",
+    "skillReview": "회복 대상에 손을 내밀고 양팔을 펼쳐 팀 강화. 2026-09-09 시간표 재검토: 기존 손 모음·아군을 향한 회복 전달 유지. 같은 아군에게 후속 회복/보호막을 전달.",
+    "skillReleaseFrame": 2,
+    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
   },
   "katsuragi_ace": {
     "file": "motions/katsuragi_ace.png",
@@ -1501,9 +1621,10 @@
     "rows": 6,
     "source": "docs/art-source/motions/production-144/katsuragi_ace/packing.json",
     "skillId": "skill_katsuragi_ace",
-    "skillSignature": "0881fff8f44bd8d1c8d099f7da4f87d71ab5e5307579c7171bf13d0e94dbd822",
-    "skillReview": "적 무리 지목과 힘을 모은 정지 손바닥 기절.",
-    "skillReleaseFrame": 2
+    "skillSignature": "07cffa50c1f66e582bca27069e7c8ebb137b51f803d8613b41f9847a68b2a80a",
+    "skillReview": "적 무리 지목과 힘을 모은 정지 손바닥 기절. 2026-09-09 시간표 재검토: 기존 조준·응축·구속 명령 유지. 침묵·기절·감속의 차이는 대상 상태 아이콘과 효과로 표시.",
+    "skillReleaseFrame": 2,
+    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
   },
   "neo_universe": {
     "file": "motions/neo_universe.png",
@@ -1513,9 +1634,10 @@
     "rows": 6,
     "source": "docs/art-source/motions/production-144/neo_universe/packing.json",
     "skillId": "skill_neo_universe",
-    "skillSignature": "6197e868123c5cea9addff383dae86886b0835e7dac9960554b66371ead9e1d0",
-    "skillReview": "현재 대상 방향 낮은 준비, 발진, 수평 돌파, 착지. 물리 돌진과 공격 속도 강화 자세.",
-    "skillReleaseFrame": 2
+    "skillSignature": "55bd833d84d15f74626af041f36e24714a0858c9ecbd6d47b053ac20dede7fdc",
+    "skillReview": "현재 대상 방향 낮은 준비, 발진, 수평 돌파, 착지. 물리 돌진과 공격 속도 강화 자세. 2026-09-09 시간표 재검토: 기존 출발·발진·돌파·착지 유지. 돌파 위치에 방어 약화/화상, 또는 착지 보호막을 별도 효과로 표시.",
+    "skillReleaseFrame": 2,
+    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
   },
   "hishi_miracle": {
     "file": "motions/hishi_miracle.png",
@@ -1525,9 +1647,10 @@
     "rows": 6,
     "source": "docs/art-source/motions/production-144/hishi_miracle/packing.json",
     "skillId": "skill_hishi_miracle",
-    "skillSignature": "2043aa46609de8ba3463e58bdeba0b339f91f76316a428315f8ba9e6e1fcf55c",
-    "skillReview": "최저 체력 비율 적 하나를 지목하고 힘을 모아 단일 결정타 후 회복. 달리기 중간 무릎 전환 보정.",
-    "skillReleaseFrame": 2
+    "skillSignature": "f8f07a24db327e2e1b5da33a9111624088136db5af3afcd0d6d5c5d039fa7317",
+    "skillReview": "최저 체력 비율 적 하나를 지목하고 힘을 모아 단일 결정타 후 회복. 달리기 중간 무릎 전환 보정. 2026-09-09 시간표 재검토: 기존 조준·결정타·회수 유지. 방어 감소/대형 적 추가 피해/자기 회복은 결정타의 부가 효과.",
+    "skillReleaseFrame": 2,
+    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
   },
   "tap_dance_city": {
     "file": "motions/tap_dance_city.png",
@@ -1537,9 +1660,10 @@
     "rows": 6,
     "source": "docs/art-source/motions/production-144/tap_dance_city/packing.json",
     "skillId": "skill_tap_dance_city",
-    "skillSignature": "645de284dbdc1753e4a58917851d1b85e6e7b05e92a052c3597d253d978366cb",
-    "skillReview": "지휘 팔을 들고 양팔을 펼쳐 아군 전체를 강화하는 춤과 지휘 자세.",
-    "skillReleaseFrame": 2
+    "skillSignature": "f9c622bfc835232449fb3d9c51fd57e7563dbcbc6c02fcc5c23dfc9c66cc0e5e",
+    "skillReview": "지휘 팔을 들고 양팔을 펼쳐 아군 전체를 강화하는 춤과 지휘 자세. 2026-09-09 시간표 재검토: 기존 양팔 확장·오라 유지 동작 유지. 회복 파동/보호막/이동 강화는 펼친 오라에 의해 발생.",
+    "skillReleaseFrame": 2,
+    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
   },
   "duramente": {
     "file": "motions/duramente.png",
@@ -1549,9 +1673,10 @@
     "rows": 6,
     "source": "docs/art-source/motions/production-144/duramente/packing.json",
     "skillId": "skill_duramente",
-    "skillSignature": "0d8a74ebd4ec8ce6af01cfe172e53980e7ab8df80b5abe9bfa073bdf094ff5b9",
-    "skillReview": "현재 대상 향해 낮게 준비하고 발진, 강한 전방 돌파, 빠른 공격 준비 복귀.",
-    "skillReleaseFrame": 2
+    "skillSignature": "4ec7a0359e5126ced78d932f28f677c296b5195d24acd16f7339c2791084f629",
+    "skillReview": "현재 대상 향해 낮게 준비하고 발진, 강한 전방 돌파, 빠른 공격 준비 복귀. 2026-09-09 시간표 재검토: 기존 출발·발진·돌파·착지 유지. 돌파 위치에 방어 약화/화상, 또는 착지 보호막을 별도 효과로 표시.",
+    "skillReleaseFrame": 2,
+    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
   },
   "lucky_lilac": {
     "file": "motions/lucky_lilac.png",
@@ -1561,9 +1686,10 @@
     "rows": 6,
     "source": "docs/art-source/motions/production-144/lucky_lilac/packing.json",
     "skillId": "skill_lucky_lilac",
-    "skillSignature": "f8d763979215f81462fa46380fa8388ccd3c2ecc5277bb190e1b8a2122a3fb10",
-    "skillReview": "원거리 손짓 발사. 광역 폭발: 적 밀집 지점 조준 → 응축 → 양팔 방출 → 회복. 자기 보호막 강화. 자주색 포니테일, 흰 소매와 구리색 비대칭 치맛단 유지.",
-    "skillReleaseFrame": 2
+    "skillSignature": "d966ca949d1fe5fde2c188a099d83cff2c9d8e4a07bc8cd74e5551b0fa70a389",
+    "skillReview": "원거리 손짓 발사. 광역 폭발: 적 밀집 지점 조준 → 응축 → 양팔 방출 → 회복. 자기 보호막 강화. 자주색 포니테일, 흰 소매와 구리색 비대칭 치맛단 유지. 2026-09-09 시간표 재검토: 기존 충전·방출 동작 유지. 두 번째 폭발은 잔류 에너지 효과이며 새 팔 동작을 요구하지 않음.",
+    "skillReleaseFrame": 2,
+    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
   },
   "almond_eye": {
     "file": "motions/almond_eye.png",
@@ -1573,9 +1699,10 @@
     "rows": 6,
     "source": "docs/art-source/motions/production-144/almond_eye/packing.json",
     "skillId": "skill_almond_eye",
-    "skillSignature": "727a98397ccfe83715fea3edb20e26cfeaee3905529f1beba7a9bc277700ae41",
-    "skillReview": "원거리 손짓 발사. 연속 스퍼트: 동일 대상 첫 발사 → 두 번째 발사 → 세 번째 양손 발사 → 회복. 첫 프레임을 준비에서 발사로 보정. 하늘색 드레스와 붉은 허리 리본 유지. 적중 마나와 자기 보호막 강화.",
-    "skillReleaseFrame": 0
+    "skillSignature": "16486cc94098545140ab9970bc386bb1330d91e990f6289db7486f7ce1259a5c",
+    "skillReview": "원거리 손짓 발사. 연속 스퍼트: 동일 대상 첫 발사 → 두 번째 발사 → 세 번째 양손 발사 → 회복. 첫 프레임을 준비에서 발사로 보정. 하늘색 드레스와 붉은 허리 리본 유지. 적중 마나와 자기 보호막 강화. 2026-09-09 시간표 재검토: 검수된 1·2·3차 발사 포즈에 실제 0/0.167/0.333초 연타를 각각 연결. 이전에는 3회 피해가 동시 발생.",
+    "skillReleaseFrame": 0,
+    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
   },
   "blast_onepiece": {
     "file": "motions/blast_onepiece.png",
@@ -1585,9 +1712,10 @@
     "rows": 6,
     "source": "docs/art-source/motions/production-144/blast_onepiece/packing.json",
     "skillId": "skill_blast_onepiece",
-    "skillSignature": "70d341029aaed1f831b1e0e8bf0e29fbc83d731d4a681aaf6e44dc2ab49789ce",
-    "skillReview": "원거리 손짓 발사. 연속 스퍼트: 동일 대상 첫 발사 → 두 번째 발사 → 세 번째 양손 발사 → 회복. 적중 마나와 자기 보호막 강화. 큰 양갈래 머리, 허리 파란 재킷과 줄무늬 다리 유지.",
-    "skillReleaseFrame": 0
+    "skillSignature": "c78c2eef2f7baf35e0fff5e8448c47ae689974e156f75d6f60d092a16276843f",
+    "skillReview": "원거리 손짓 발사. 연속 스퍼트: 동일 대상 첫 발사 → 두 번째 발사 → 세 번째 양손 발사 → 회복. 적중 마나와 자기 보호막 강화. 큰 양갈래 머리, 허리 파란 재킷과 줄무늬 다리 유지. 2026-09-09 시간표 재검토: 검수된 1·2·3차 발사 포즈에 실제 0/0.167/0.333초 연타를 각각 연결. 이전에는 3회 피해가 동시 발생.",
+    "skillReleaseFrame": 0,
+    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
   },
   "fenomeno": {
     "file": "motions/fenomeno.png",
@@ -1597,9 +1725,10 @@
     "rows": 6,
     "source": "docs/art-source/motions/production-144/fenomeno/packing.json",
     "skillId": "skill_fenomeno",
-    "skillSignature": "85c432391cb3928ab879110874b4f3b316521b4b705041e17e8efe622709d06b",
-    "skillReview": "근접 손바닥 타격. 직선 돌파: 낮은 출발 → 발진 → 수평 돌파 → 착지. 자기 공격속도·이동속도 강화. 제복·모자·붉은 벨트와 보라색 머리 유지.",
-    "skillReleaseFrame": 2
+    "skillSignature": "128ebe510c3c5d1b2efca3ecf8c70e68eccc4688e6d053d1ae2dcf8e855435af",
+    "skillReview": "근접 손바닥 타격. 직선 돌파: 낮은 출발 → 발진 → 수평 돌파 → 착지. 자기 공격속도·이동속도 강화. 제복·모자·붉은 벨트와 보라색 머리 유지. 2026-09-09 시간표 재검토: 기존 출발·발진·돌파·착지 유지. 돌파 위치에 방어 약화/화상, 또는 착지 보호막을 별도 효과로 표시.",
+    "skillReleaseFrame": 2,
+    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
   },
   "sakura_chitose_o": {
     "file": "motions/sakura_chitose_o.png",
@@ -1609,9 +1738,10 @@
     "rows": 6,
     "source": "docs/art-source/motions/production-144/sakura_chitose_o/packing.json",
     "skillId": "skill_sakura_chitose_o",
-    "skillSignature": "54842ac59b249f0fbb46093277a9b0dc5a9db7c61c6bca3304931fd26a685a4d",
-    "skillReview": "누락되었던 스킬 행을 재생성하여 6행 24포즈 확인. 적 밀집 지점을 겨냥하고 힘을 모아 양손으로 광역 기절을 방출한다. 원거리 기본 공격과 꽃무늬 치마, 땋은 머리 유지.",
-    "skillReleaseFrame": 2
+    "skillSignature": "f153bb4290fbc69e2b70de8ff5eca15442ec64c05cc3a68e63dd9c95a9e87a0c",
+    "skillReview": "누락되었던 스킬 행을 재생성하여 6행 24포즈 확인. 적 밀집 지점을 겨냥하고 힘을 모아 양손으로 광역 기절을 방출한다. 원거리 기본 공격과 꽃무늬 치마, 땋은 머리 유지. 2026-09-09 시간표 재검토: 기존 조준·응축·구속 명령 유지. 침묵·기절·감속의 차이는 대상 상태 아이콘과 효과로 표시.",
+    "skillReleaseFrame": 2,
+    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
   },
   "bubble_gum_fellow": {
     "file": "motions/bubble_gum_fellow.png",
@@ -1621,9 +1751,10 @@
     "rows": 6,
     "source": "docs/art-source/motions/production-144/bubble_gum_fellow/packing.json",
     "skillId": "skill_bubble_gum_fellow",
-    "skillSignature": "1c0f102ab64686d4673ea0c04ddff4bd40ef8b3661c7561ae72d3059dfc55b7e",
-    "skillReview": "노란 재킷, 붉은 머리, 흰 반바지 유지. 동일 적에게 첫 세 프레임 연속 방출 후 반동 회복. 기본 원거리 공격과 자기 보호막의 준비 자세 구별. 24포즈 확인.",
-    "skillReleaseFrame": 0
+    "skillSignature": "de1f1fa195bd214499abbaa550f82a6a757e4b5cc248bf4c224ba4fc5d206397",
+    "skillReview": "노란 재킷, 붉은 머리, 흰 반바지 유지. 동일 적에게 첫 세 프레임 연속 방출 후 반동 회복. 기본 원거리 공격과 자기 보호막의 준비 자세 구별. 24포즈 확인. 2026-09-09 시간표 재검토: 검수된 1·2·3차 발사 포즈에 실제 0/0.167/0.333초 연타를 각각 연결. 이전에는 3회 피해가 동시 발생.",
+    "skillReleaseFrame": 0,
+    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
   },
   "genuine": {
     "file": "motions/genuine.png",
@@ -1633,9 +1764,10 @@
     "rows": 6,
     "source": "docs/art-source/motions/production-144/genuine/packing.json",
     "skillId": "skill_genuine",
-    "skillSignature": "15e4116c6e79b860452e9a916d8926f17c2c6ab23fa3c4dcba79f3bc35c67cf3",
-    "skillReview": "직선 돌파의 낮은 출발, 발진, 수평 돌파, 착지. 공격속도 및 치명타 확률 증가 효과에 맞춤. 검정과 보라색 드레스, 흰 꽃과 땋은 머리 유지. 24포즈와 투명 배경 확인.",
-    "skillReleaseFrame": 2
+    "skillSignature": "0d1398b61ce41b0e3dab1600785352f27aaf04720c6d9cfccc22f118ed76d89f",
+    "skillReview": "직선 돌파의 낮은 출발, 발진, 수평 돌파, 착지. 공격속도 및 치명타 확률 증가 효과에 맞춤. 검정과 보라색 드레스, 흰 꽃과 땋은 머리 유지. 24포즈와 투명 배경 확인. 2026-09-09 시간표 재검토: 기존 출발·발진·돌파·착지 유지. 돌파 위치에 방어 약화/화상, 또는 착지 보호막을 별도 효과로 표시.",
+    "skillReleaseFrame": 2,
+    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
   },
   "durandal": {
     "file": "motions/durandal.png",
@@ -1645,9 +1777,10 @@
     "rows": 6,
     "source": "docs/art-source/motions/production-144/durandal/packing.json",
     "skillId": "skill_durandal",
-    "skillSignature": "86e8e4ebf358d5bd724e5c67fb23f4f1229acd4c64d4d238c8abb864574482c0",
-    "skillReview": "최저 체력 비율 적을 겨냥하는 단일 결정타. 제자리 집중 후 손을 뻗어 방출하며 스킬에 없는 돌진이나 무기 없음. 금색 머리와 비대칭 군복, 흰 바지 유지. 24포즈 확인.",
-    "skillReleaseFrame": 2
+    "skillSignature": "118cbebd7a4175cdedd72d46f5571f15ae51e0ddbf9033cf304bcad3c49e525e",
+    "skillReview": "최저 체력 비율 적을 겨냥하는 단일 결정타. 제자리 집중 후 손을 뻗어 방출하며 스킬에 없는 돌진이나 무기 없음. 금색 머리와 비대칭 군복, 흰 바지 유지. 24포즈 확인. 2026-09-09 시간표 재검토: 기존 조준·결정타·회수 유지. 방어 감소/대형 적 추가 피해/자기 회복은 결정타의 부가 효과.",
+    "skillReleaseFrame": 2,
+    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
   },
   "calstone_light_o": {
     "file": "motions/calstone_light_o.png",
@@ -1657,9 +1790,10 @@
     "rows": 6,
     "source": "docs/art-source/motions/production-144/calstone_light_o/packing.json",
     "skillId": "skill_calstone_light_o",
-    "skillSignature": "32f51161f7c4b6fe11044b40fbff71b9cdf96a48063d439465ec5105423f7b3b",
-    "skillReview": "아군 전체 공속 및 방어 강화에 맞춰 양팔을 펼치는 오라 유지. 달리기 중간 자세를 재생성하여 다리 접힘과 보폭을 구분. 남색 군복, 흰 앞머리와 좌우 다른 부츠 유지. 24포즈 확인.",
-    "skillReleaseFrame": 2
+    "skillSignature": "91758c45ae76e87554d4e7c09bd96b0fb6c7897d59d0dde02926e2e27ecdffac",
+    "skillReview": "아군 전체 공속 및 방어 강화에 맞춰 양팔을 펼치는 오라 유지. 달리기 중간 자세를 재생성하여 다리 접힘과 보폭을 구분. 남색 군복, 흰 앞머리와 좌우 다른 부츠 유지. 24포즈 확인. 2026-09-09 시간표 재검토: 기존 양팔 확장·오라 유지 동작 유지. 회복 파동/보호막/이동 강화는 펼친 오라에 의해 발생.",
+    "skillReleaseFrame": 2,
+    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
   },
   "dream_journey": {
     "file": "motions/dream_journey.png",
@@ -1669,9 +1803,10 @@
     "rows": 6,
     "source": "docs/art-source/motions/production-144/dream_journey/packing.json",
     "skillId": "skill_dream_journey",
-    "skillSignature": "fa37e0a4753f10620e8a0caad867a8fa8d8a08f70c6cd5b1304abc80a16a39ed",
-    "skillReview": "흰 앞머리와 안경, 붉은 끈 장식의 긴 코트 유지. 단일 약화된 적을 조준하고 힘을 모아 제자리 결정타 방출. 원거리 기본 공격과 구별된 스킬 준비와 주먹 방출. 24포즈 확인.",
-    "skillReleaseFrame": 2
+    "skillSignature": "b6bc35fa60010e2e13b671ef5837f3c9a757080910d32160535d26d7a4b44adf",
+    "skillReview": "흰 앞머리와 안경, 붉은 끈 장식의 긴 코트 유지. 단일 약화된 적을 조준하고 힘을 모아 제자리 결정타 방출. 원거리 기본 공격과 구별된 스킬 준비와 주먹 방출. 24포즈 확인. 2026-09-09 시간표 재검토: 기존 조준·결정타·회수 유지. 방어 감소/대형 적 추가 피해/자기 회복은 결정타의 부가 효과.",
+    "skillReleaseFrame": 2,
+    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
   },
   "admire_groove": {
     "file": "motions/admire_groove.png",
@@ -1681,9 +1816,10 @@
     "rows": 6,
     "source": "docs/art-source/motions/production-144/admire_groove/packing.json",
     "skillId": "skill_admire_groove",
-    "skillSignature": "622322115189158e69669b9314cef18dd4f0a3eb72527eb285d339592bb7b874",
-    "skillReview": "직선 돌파의 낮은 출발, 발진, 수평 돌파, 착지. 원거리 기본 공격. 푸른 머리와 흰 앞머리, 장미와 긴 리본, 청록색 비대칭 의상 유지. 24포즈 확인.",
-    "skillReleaseFrame": 2
+    "skillSignature": "be7c4f868aa0f444d113ffb9b94d560dcfe9c9012bd9e3231268c8e83746a415",
+    "skillReview": "직선 돌파의 낮은 출발, 발진, 수평 돌파, 착지. 원거리 기본 공격. 푸른 머리와 흰 앞머리, 장미와 긴 리본, 청록색 비대칭 의상 유지. 24포즈 확인. 2026-09-09 시간표 재검토: 기존 출발·발진·돌파·착지 유지. 돌파 위치에 방어 약화/화상, 또는 착지 보호막을 별도 효과로 표시.",
+    "skillReleaseFrame": 2,
+    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
   },
   "win_variation": {
     "file": "motions/win_variation.png",
@@ -1693,9 +1829,10 @@
     "rows": 6,
     "source": "docs/art-source/motions/production-144/win_variation/packing.json",
     "skillId": "skill_win_variation",
-    "skillSignature": "21cceac6f660594c59f03f4f7c7ea3a3349c2d604f10985b129b7457241adc6a",
-    "skillReview": "근접 기본 공격의 주먹 준비, 당김, 타격, 회수. 적 밀집 지점 조준 후 양손 광역 기절 방출. 붉은 단발과 흰 앞머리, 붉은 드레스와 검정 흰색 신발 유지. 24포즈 확인.",
-    "skillReleaseFrame": 2
+    "skillSignature": "b4572314f585d8aaf8fbafe27dc2750c742a45813e80857dcfd5630f72ba130a",
+    "skillReview": "근접 기본 공격의 주먹 준비, 당김, 타격, 회수. 적 밀집 지점 조준 후 양손 광역 기절 방출. 붉은 단발과 흰 앞머리, 붉은 드레스와 검정 흰색 신발 유지. 24포즈 확인. 2026-09-09 시간표 재검토: 기존 조준·응축·구속 명령 유지. 침묵·기절·감속의 차이는 대상 상태 아이콘과 효과로 표시.",
+    "skillReleaseFrame": 2,
+    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
   },
   "gentildonna": {
     "file": "motions/gentildonna.png",
@@ -1705,9 +1842,10 @@
     "rows": 6,
     "source": "docs/art-source/motions/production-144/gentildonna/packing.json",
     "skillId": "skill_gentildonna",
-    "skillSignature": "8ce408247dc36b18f12c021f6e0d7cb72ad16f0bc1f7c8a9c576e9de39c419c2",
-    "skillReview": "근접 펀치의 준비, 당김, 타격, 회수. 아군 전체 강화는 가슴 앞 집중 후 양팔 확장 및 유지. 붉은 드레스와 흰 장갑, 어깨 깃털, 검은 리본과 왕관 유지. 24포즈 확인.",
-    "skillReleaseFrame": 2
+    "skillSignature": "75956430ef522005c6dbf2c04cfea4ae46721ff7afc6a428446c00cc9cd17ac7",
+    "skillReview": "근접 펀치의 준비, 당김, 타격, 회수. 아군 전체 강화는 가슴 앞 집중 후 양팔 확장 및 유지. 붉은 드레스와 흰 장갑, 어깨 깃털, 검은 리본과 왕관 유지. 24포즈 확인. 2026-09-09 시간표 재검토: 기존 양팔 확장·오라 유지 동작 유지. 회복 파동/보호막/이동 강화는 펼친 오라에 의해 발생.",
+    "skillReleaseFrame": 2,
+    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
   },
   "orfevre": {
     "file": "motions/orfevre.png",
@@ -1717,9 +1855,10 @@
     "rows": 6,
     "source": "docs/art-source/motions/production-144/orfevre/packing.json",
     "skillId": "skill_orfevre",
-    "skillSignature": "45c4bce88a33d9d2aaece19c1266ed1612939296804b1eb915351b7fd1ce7ac6",
-    "skillReview": "원거리 기본 공격, 직선 돌파의 웅크림, 발진, 수평 돌파, 착지. 흰 앞머리와 주황색 긴 머리, 왕관, 흰 코트와 붉은 망토 유지. 실제 공격속도 및 치명타 증가 스킬에 맞춤. 24포즈 확인.",
-    "skillReleaseFrame": 2
+    "skillSignature": "52635cf2efd79c6d5b8d14325586ecd9952797e57768863806947afe4ff02928",
+    "skillReview": "원거리 기본 공격, 직선 돌파의 웅크림, 발진, 수평 돌파, 착지. 흰 앞머리와 주황색 긴 머리, 왕관, 흰 코트와 붉은 망토 유지. 실제 공격속도 및 치명타 증가 스킬에 맞춤. 24포즈 확인. 2026-09-09 시간표 재검토: 기존 출발·발진·돌파·착지 유지. 돌파 위치에 방어 약화/화상, 또는 착지 보호막을 별도 효과로 표시.",
+    "skillReleaseFrame": 2,
+    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
   },
   "buena_vista": {
     "file": "motions/buena_vista.png",
@@ -1729,9 +1868,10 @@
     "rows": 6,
     "source": "docs/art-source/motions/production-144/buena_vista/packing.json",
     "skillId": "skill_buena_vista",
-    "skillSignature": "a5fb0cba9ac434372e683bc01b1cc9071bfcbe58f4cf35e78396fd0d3d24affc",
-    "skillReview": "초안의 잘못된 스킬 및 쓰러짐 행을 다시 생성. 낮은 체력 비율 적 조준, 집중, 제자리 결정타, 회복. 체크 치마와 금색 머리띠, 좌우 다른 양말 및 신발 유지. 최종 6행 24포즈 확인.",
-    "skillReleaseFrame": 2
+    "skillSignature": "df46dca1dc8da6a95609f6b1d457ccc8016652e50f620472e200607e671e70a6",
+    "skillReview": "초안의 잘못된 스킬 및 쓰러짐 행을 다시 생성. 낮은 체력 비율 적 조준, 집중, 제자리 결정타, 회복. 체크 치마와 금색 머리띠, 좌우 다른 양말 및 신발 유지. 최종 6행 24포즈 확인. 2026-09-09 시간표 재검토: 기존 조준·결정타·회수 유지. 방어 감소/대형 적 추가 피해/자기 회복은 결정타의 부가 효과.",
+    "skillReleaseFrame": 2,
+    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
   },
   "fusaichi_pandora": {
     "file": "motions/fusaichi_pandora.png",
@@ -1741,9 +1881,10 @@
     "rows": 6,
     "source": "docs/art-source/motions/production-144/fusaichi_pandora/packing.json",
     "skillId": "skill_fusaichi_pandora",
-    "skillSignature": "afdc9a4f89c471b9b6563963fe8ab45c80da1a14dbaf537a571bf0f7540bc9f2",
-    "skillReview": "원거리 기본 발사와 아군 전체 강화의 가슴 앞 집중, 양팔 확장, 유지. 금색 곱슬 양갈래, 하트 장식과 다색 프릴 의상, 좌우 다른 신발 유지. 흰 소매와 24포즈 확인.",
-    "skillReleaseFrame": 2
+    "skillSignature": "70d9fe551e023a86e6f962996eaa9f98b133b5e1ab55161b4bf9046d7fcd4bf4",
+    "skillReview": "원거리 기본 발사와 아군 전체 강화의 가슴 앞 집중, 양팔 확장, 유지. 금색 곱슬 양갈래, 하트 장식과 다색 프릴 의상, 좌우 다른 신발 유지. 흰 소매와 24포즈 확인. 2026-09-09 시간표 재검토: 기존 양팔 확장·오라 유지 동작 유지. 회복 파동/보호막/이동 강화는 펼친 오라에 의해 발생.",
+    "skillReleaseFrame": 2,
+    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
   },
   "daring_heart": {
     "file": "motions/daring_heart.png",
@@ -1753,9 +1894,10 @@
     "rows": 6,
     "source": "docs/art-source/motions/production-144/daring_heart/packing.json",
     "skillId": "skill_daring_heart",
-    "skillSignature": "03c9cf51e394d06a3f0f102b27d9aec11f039bad25000c0c791aec831f5a00e7",
-    "skillReview": "아군 전체 강화의 집중, 확장, 유지 및 원거리 기본 공격. 일부 양쪽 망사 오류를 한쪽 망사로 교정하고 달리기 중간 자세를 재생성. 노란 재킷과 파란 치마 장식 유지. 24포즈 확인.",
-    "skillReleaseFrame": 2
+    "skillSignature": "785009ce7bb2cfb6a2dc9a1f9c2972533165c13db2f23233626b1ee0073d256d",
+    "skillReview": "아군 전체 강화의 집중, 확장, 유지 및 원거리 기본 공격. 일부 양쪽 망사 오류를 한쪽 망사로 교정하고 달리기 중간 자세를 재생성. 노란 재킷과 파란 치마 장식 유지. 24포즈 확인. 2026-09-09 시간표 재검토: 기존 양팔 확장·오라 유지 동작 유지. 회복 파동/보호막/이동 강화는 펼친 오라에 의해 발생.",
+    "skillReleaseFrame": 2,
+    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
   },
   "air_messiah": {
     "file": "motions/air_messiah.png",
@@ -1765,9 +1907,10 @@
     "rows": 6,
     "source": "docs/art-source/motions/production-144/air_messiah/packing.json",
     "skillId": "skill_air_messiah",
-    "skillSignature": "ee561ea8fd8080de772542357b0774a507c5e4b57493cf0a560b1372cbd9c244",
-    "skillReview": "누락되었던 스킬 행을 재생성하여 최종 24포즈 확인. 원거리 기본 공격, 적 밀집 지점 조준과 집중 후 양손 광역 기절 방출. 녹색 머리와 주황 안경, 넓은 노란 소매와 잎무늬 파란 치마 유지.",
-    "skillReleaseFrame": 2
+    "skillSignature": "0ddb8874d5a39915188a9eddbb1208450c8a705fd81fa8faafc1c2fd9340536c",
+    "skillReview": "누락되었던 스킬 행을 재생성하여 최종 24포즈 확인. 원거리 기본 공격, 적 밀집 지점 조준과 집중 후 양손 광역 기절 방출. 녹색 머리와 주황 안경, 넓은 노란 소매와 잎무늬 파란 치마 유지. 2026-09-09 시간표 재검토: 기존 조준·응축·구속 명령 유지. 침묵·기절·감속의 차이는 대상 상태 아이콘과 효과로 표시.",
+    "skillReleaseFrame": 2,
+    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
   },
   "cesario": {
     "file": "motions/cesario.png",
@@ -1777,9 +1920,10 @@
     "rows": 6,
     "source": "docs/art-source/motions/production-144/cesario/packing.json",
     "skillId": "skill_cesario",
-    "skillSignature": "6673b1c813c15c6c26c40e887a3798e118c9a074804ef03aa047e11d29354cbb",
-    "skillReview": "근접 펀치의 준비, 당김, 타격, 회수와 아군 전체 강화의 양팔 확장. 파란 단발과 흰 앞머리, 흰 군복과 녹색 조끼, 반바지 및 흰 부츠 유지. 24포즈 확인.",
-    "skillReleaseFrame": 2
+    "skillSignature": "1723bd5fe6edd29bcf16d6a5f2453cdc13af0ce240d9bc33b17c967dc3d7c453",
+    "skillReview": "근접 펀치의 준비, 당김, 타격, 회수와 아군 전체 강화의 양팔 확장. 파란 단발과 흰 앞머리, 흰 군복과 녹색 조끼, 반바지 및 흰 부츠 유지. 24포즈 확인. 2026-09-09 시간표 재검토: 기존 양팔 확장·오라 유지 동작 유지. 회복 파동/보호막/이동 강화는 펼친 오라에 의해 발생.",
+    "skillReleaseFrame": 2,
+    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
   },
   "rhein_kraft": {
     "file": "motions/rhein_kraft.png",
@@ -1789,8 +1933,9 @@
     "rows": 6,
     "source": "docs/art-source/motions/production-144/rhein_kraft/packing.json",
     "skillId": "skill_rhein_kraft",
-    "skillSignature": "000edce15c51e41ba2f942a415b7e9f2d5601bb8f7c7f64bed37537f6ec92b3b",
-    "skillReview": "섞여 생성된 공격, 스킬, 쓰러짐 행을 다시 생성. 원거리 한손 발사, 아군 강화의 양팔 확장, 단계별 쓰러짐을 구별. 분홍 상의, 체크무늬 흰 치마, 녹색 리본과 밝은 삐침 머리 유지. 24포즈 확인.",
-    "skillReleaseFrame": 2
+    "skillSignature": "a9d8bb148141d8e9e7794eab9410d8b6e43ec6f06cf06dbd648f124ec8d6866e",
+    "skillReview": "섞여 생성된 공격, 스킬, 쓰러짐 행을 다시 생성. 원거리 한손 발사, 아군 강화의 양팔 확장, 단계별 쓰러짐을 구별. 분홍 상의, 체크무늬 흰 치마, 녹색 리본과 밝은 삐침 머리 유지. 24포즈 확인. 2026-09-09 시간표 재검토: 기존 양팔 확장·오라 유지 동작 유지. 회복 파동/보호막/이동 강화는 펼친 오라에 의해 발생.",
+    "skillReleaseFrame": 2,
+    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
   }
 }

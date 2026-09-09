@@ -1,31 +1,31 @@
 {
-  "checkedAt": "2026-09-08",
+  "checkedAt": "2026-09-09",
   "latestOfficialPatchReviewed": "18.1, including Aug 31 / Sep 1 update",
   "verdict": "NOT_IDENTICAL",
   "method": "Public-rule fixture comparison, not binary/replay equivalence. Each row pins its own published baseline; older values are not asserted to be a complete 18.1 ruleset.",
   "counts": {
-    "MATCH": 4,
-    "DIFFERENT": 11,
+    "MATCH": 17,
+    "DIFFERENT": 0,
     "UNVERIFIED": 4
   },
   "results": [
     {
       "id": "attack_mana_TANK",
-      "status": "DIFFERENT",
+      "status": "MATCH",
       "expected": 5,
-      "actual": 10,
+      "actual": 5,
       "source": "https://teamfighttactics.leagueoflegends.com/en-us/news/game-updates/teamfight-tactics-patch-15-1-notes-2025/",
       "baseline": "15.1 published role contract",
-      "evidence": "One isolated attack; enemy stunned; mana initially zero. AP_CARRY mapped to Caster and AD_CARRY to Marksman for this comparison."
+      "evidence": "One isolated attack minus a same-duration no-attack control to separate passive regeneration. AP_CARRY mapped to Caster and AD_CARRY to Marksman."
     },
     {
       "id": "attack_mana_AP_CARRY",
-      "status": "DIFFERENT",
+      "status": "MATCH",
       "expected": 7,
-      "actual": 10,
+      "actual": 6.999999999999997,
       "source": "https://teamfighttactics.leagueoflegends.com/en-us/news/game-updates/teamfight-tactics-patch-15-1-notes-2025/",
       "baseline": "15.1 published role contract",
-      "evidence": "One isolated attack; enemy stunned; mana initially zero. AP_CARRY mapped to Caster and AD_CARRY to Marksman for this comparison."
+      "evidence": "One isolated attack minus a same-duration no-attack control to separate passive regeneration. AP_CARRY mapped to Caster and AD_CARRY to Marksman."
     },
     {
       "id": "attack_mana_AD_CARRY",
@@ -34,31 +34,31 @@
       "actual": 10,
       "source": "https://teamfighttactics.leagueoflegends.com/en-us/news/game-updates/teamfight-tactics-patch-15-1-notes-2025/",
       "baseline": "15.1 published role contract",
-      "evidence": "One isolated attack; enemy stunned; mana initially zero. AP_CARRY mapped to Caster and AD_CARRY to Marksman for this comparison."
+      "evidence": "One isolated attack minus a same-duration no-attack control to separate passive regeneration. AP_CARRY mapped to Caster and AD_CARRY to Marksman."
     },
     {
       "id": "caster_passive_mana_per_second",
-      "status": "DIFFERENT",
+      "status": "MATCH",
       "expected": 2,
-      "actual": 0,
+      "actual": 2.0000000000000004,
       "source": "https://teamfighttactics.leagueoflegends.com/en-us/news/game-updates/teamfight-tactics-patch-15-1-notes-2025/",
       "baseline": "15.1 published role contract",
       "evidence": "1 second, no attacks or damage, no items."
     },
     {
       "id": "equal_distance_tank_priority",
-      "status": "DIFFERENT",
+      "status": "MATCH",
       "expected": "auditB#auditB1",
-      "actual": "auditB#auditB0",
+      "actual": "auditB#auditB1",
       "source": "https://teamfighttactics.leagueoflegends.com/en-us/news/game-updates/teamfight-tactics-patch-15-1-notes-2025/",
       "baseline": "15.1 targeting priority",
       "evidence": "Two adjacent full-health targets. Non-tank sorts first by ID, so an ID tie-break cannot be mistaken for role priority."
     },
     {
       "id": "retarget_in_range_before_chasing",
-      "status": "DIFFERENT",
+      "status": "MATCH",
       "expected": "auditB#auditB1",
-      "actual": "auditB#auditB0",
+      "actual": "auditB#auditB1",
       "source": "https://teamfighttactics.leagueoflegends.com/en-us/news/game-updates/teamfight-tactics-patch-17-1/",
       "baseline": "17.1 published targeting change",
       "evidence": "Existing target outside range; another enemy already in range."
@@ -91,7 +91,7 @@
     },
     {
       "id": "pool_copies",
-      "status": "DIFFERENT",
+      "status": "MATCH",
       "expected": [
         30,
         25,
@@ -100,9 +100,9 @@
         9
       ],
       "actual": [
-        22,
-        20,
-        17,
+        30,
+        25,
+        18,
         10,
         9
       ],
@@ -112,7 +112,7 @@
     },
     {
       "id": "shop_level_7",
-      "status": "DIFFERENT",
+      "status": "MATCH",
       "expected": [
         19,
         30,
@@ -122,8 +122,8 @@
       ],
       "actual": [
         19,
-        35,
-        35,
+        30,
+        40,
         10,
         1
       ],
@@ -133,7 +133,7 @@
     },
     {
       "id": "shop_level_8",
-      "status": "DIFFERENT",
+      "status": "MATCH",
       "expected": [
         15,
         20,
@@ -142,10 +142,10 @@
         3
       ],
       "actual": [
-        18,
-        25,
-        36,
-        18,
+        15,
+        20,
+        32,
+        30,
         3
       ],
       "source": "https://teamfighttactics.leagueoflegends.com/en-us/news/game-updates/teamfight-tactics-patch-16-1/",
@@ -154,7 +154,7 @@
     },
     {
       "id": "shop_level_9",
-      "status": "DIFFERENT",
+      "status": "MATCH",
       "expected": [
         10,
         17,
@@ -164,10 +164,10 @@
       ],
       "actual": [
         10,
-        20,
+        17,
         25,
-        35,
-        10
+        33,
+        15
       ],
       "source": "https://teamfighttactics.leagueoflegends.com/en-us/news/game-updates/teamfight-tactics-patch-16-1/",
       "baseline": "16.1 published odds",
@@ -192,14 +192,14 @@
     },
     {
       "id": "stage_3_4_player_damage",
-      "status": "DIFFERENT",
+      "status": "MATCH",
       "expected": [
         6,
         7
       ],
       "actual": [
-        2,
-        3
+        6,
+        7
       ],
       "source": "https://teamfighttactics.leagueoflegends.com/en-us/news/game-updates/teamfight-tactics-patch-16-1/",
       "baseline": "16.1 published base player damage",
@@ -207,7 +207,7 @@
     },
     {
       "id": "surviving_enemy_damage",
-      "status": "DIFFERENT",
+      "status": "MATCH",
       "expected": [
         1,
         2,
@@ -217,16 +217,66 @@
         6
       ],
       "actual": [
+        1,
         2,
+        3,
         4,
-        6,
-        8,
-        10,
-        11
+        5,
+        6
       ],
       "source": "https://teamfighttactics.leagueoflegends.com/en-us/news/game-updates/teamfight-tactics-patch-16-1/",
       "baseline": "16.1 survivor damage description",
       "evidence": "One damage per surviving enemy in the published rule."
+    },
+    {
+      "id": "base_damage_other_stages",
+      "status": "MATCH",
+      "expected": [
+        0,
+        2,
+        10,
+        12,
+        17,
+        150
+      ],
+      "actual": [
+        0,
+        2,
+        10,
+        12,
+        17,
+        150
+      ],
+      "source": "https://teamfighttactics.leagueoflegends.com/en-us/news/game-updates/teamfight-tactics-patch-14-9-notes/",
+      "baseline": "14.9 full table, with 16.1 stage 3/4 updates above",
+      "evidence": "Historical full table used where the later patch does not override it."
+    },
+    {
+      "id": "streak_gold",
+      "status": "MATCH",
+      "expected": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        2,
+        3,
+        3
+      ],
+      "actual": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        2,
+        3,
+        3
+      ],
+      "source": "https://teamfighttactics.leagueoflegends.com/en-us/news/game-updates/teamfight-tactics-patch-14-1-notes/",
+      "baseline": "14.1 public streak thresholds",
+      "evidence": "Three/four wins or losses pay 1; five pays 2; six or more pays 3."
     },
     {
       "id": "latest_full_set_content",

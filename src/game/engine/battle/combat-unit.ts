@@ -55,6 +55,7 @@ export type CombatUnit = {
   shields: Shield[];
   statuses: ActiveStatus[];
   modifiers: TimedModifier[];
+  timedEffects: Array<{ effect: EffectDef; expiresAt: number; key: string }>;
   /** Named permanent stacks: key -> stack count. */
   stacks: Record<string, number>;
   /** Flags for once-per-combat effects, keyed by effect signature. */
@@ -191,6 +192,7 @@ export function makeCombatUnit(params: {
     shields: [],
     statuses: [],
     modifiers: [],
+    timedEffects: [],
     stacks: {},
     usedOnce: new Set(),
     targetId: null,
@@ -304,12 +306,15 @@ export function resistFor(unit: CombatUnit, type: DamageType, now: number): numb
   const key: keyof BattleStats = type === 'PHYSICAL' ? 'armor' : 'magicResist';
   let value = stat(unit, key, now);
   const shredKey = type === 'PHYSICAL' ? 'shred:armor' : 'shred:magicResist';
-  const shredPct = Math.min(0.9, unit.stacks[shredKey] ?? 0);
+  const kind = type === 'PHYSICAL' ? 'SUNDER_ARMOR_PCT' : 'SHRED_MR_PCT';
+  const shredPct = Math.min(0.9, Math.max(unit.stacks[shredKey] ?? 0,
+    ...unit.timedEffects.filter((e) => e.effect.kind === kind && e.expiresAt > now).map((e) => e.effect.value ?? 0)));
   value *= 1 - shredPct;
   return value;
 }
 
 export function cleanupExpired(unit: CombatUnit, now: number): void {
+  unit.timedEffects = unit.timedEffects.filter((e) => e.expiresAt > now);
   if (unit.modifiers.length) unit.modifiers = unit.modifiers.filter((m) => m.expiresAt > now);
   if (unit.shields.length) unit.shields = unit.shields.filter((s) => s.expiresAt > now && s.amount > 0.01);
   if (unit.statuses.length) unit.statuses = unit.statuses.filter((s) => s.expiresAt > now);

@@ -85,6 +85,8 @@ export type EffectDef = {
   duration?: number;
   /** Seconds between ticks for periodic effects. */
   interval?: number;
+  /** Delay after the skill's first release, in seconds (skills only). */
+  delay?: number;
   /** Stack ceiling for stacking effects. */
   maxStacks?: number;
   /** Radius in hexes for area effects. */
@@ -190,6 +192,8 @@ export type SkillDef = {
   effects: EffectDef[];
   vfxKey: string;
   description: string;
+  /** Shared by simulation, motion playback and the preview. */
+  choreography?: { windup: number; recovery: number; pulseInterval: number; color: string; variant: string };
 };
 
 export type UnitDef = {

@@ -7,7 +7,9 @@ import { assetUrl, portraitUrl, standeeUrl, animationFrame, type AnimationName }
 import { movingPoint } from '../ui/board-projection';
 import { orientSnapshot, samplePosition, effectProgress, frameAt, attackExtension } from '../ui/battle-playback';
 import { STATUS_PRESENTATION } from '../ui/status-presentation';
-import { FRAME_SHEETS, frameSheetUrl, motionFrame } from '../ui/frame-animation';
+import { FRAME_SHEETS, frameSheetUrl, motionFrame, skillMotionFrame } from '../ui/frame-animation';
+import { skillDuration } from '../engine/battle/skill-timeline';
+import { skillLabel } from '../ui/skill-presentation';
 
 type Snapshot = BattleFrame['units'][number];
 type Actor = {
@@ -47,6 +49,7 @@ export class BattleScene extends Phaser.Scene {
   private mirrored = false;
   private streaming = false;
   private lastCutinAt = -10;
+  private pulseAt = new Map<string, number>();
   private effects: Array<{ start: number; duration: number; object: Phaser.GameObjects.GameObject; update: (progress: number) => void }> = [];
   private projectiles: Array<{ image: Phaser.GameObjects.Arc; source: string; target: string; start: number; end: number; x: number; y: number }> = [];
 
@@ -74,7 +77,7 @@ export class BattleScene extends Phaser.Scene {
       else if (standeeUrl(id)) this.load.image(`standee:${id}`, standeeUrl(id)!);
       else if (portrait) this.load.image(`portrait:${id}`, portrait);
     }
-    const vfx = new Set([...ids].map((id) => getUnitDef(id).skill.vfxKey));
+    const vfx = new Set([...ids].map((id) => getUnitDef(id).skill.vfxKey).concat(['vfx_heal', 'vfx_shield', 'vfx_buff']));
     for (const key of vfx) {
       const url = assetUrl(`vfx/${key}.png`);
       if (url) this.load.spritesheet(key, url, { frameWidth: 192, frameHeight: 192 });
@@ -94,6 +97,7 @@ export class BattleScene extends Phaser.Scene {
     this.playbackTime = time;
     this.readySent = false;
     this.lastCutinAt = -10;
+    this.pulseAt.clear();
     this.mirrored = frames[0]?.units.some((u) => u.id.startsWith(`${this.humanId}#`) && u.team === 'B') ?? false;
     this.effects.forEach((e) => e.object.destroy()); this.effects = [];
     this.projectiles.forEach((p) => p.image.destroy()); this.projectiles = [];
@@ -211,12 +215,14 @@ export class BattleScene extends Phaser.Scene {
     let elapsed = this.playbackTime - a.actionAt;
     let action = a.action;
     if (!u.alive) action = 'ko';
-    else if (action === 'ko' || (action === 'basic_attack' && elapsed > a.attackDuration) || (action === 'skill_cast' && elapsed > .67)) {
+    else if (action === 'ko' || (action === 'basic_attack' && elapsed > a.attackDuration) || (action === 'skill_cast' && elapsed > skillDuration(getUnitDef(u.unitDefId).skill))) {
       action = u.fromQ !== null ? 'run' : 'idle';
     } else if (action === 'idle' || action === 'run') action = u.fromQ !== null ? 'run' : 'idle';
     if (action !== a.action) { a.action = action; a.actionAt = this.playbackTime; elapsed = 0; }
     if (a.sheet) {
-      if (a.frameSheet) a.body.setFrame(motionFrame(action, elapsed, a.attackReleaseAt - a.actionAt, true, FRAME_SHEETS[u.unitDefId].skillReleaseFrame ?? 2));
+      if (a.frameSheet) a.body.setFrame(action === 'skill_cast'
+        ? skillMotionFrame(getUnitDef(u.unitDefId).skill, elapsed, FRAME_SHEETS[u.unitDefId].skillReleaseFrame ?? 2)
+        : motionFrame(action, elapsed, a.attackReleaseAt - a.actionAt));
       else if (u.unitDefId.startsWith('pve_')) {
         const clip = action === 'ko' ? { start: 30, count: 6, fps: 10 } : action === 'basic_attack' || action === 'skill_cast' ? { start: 10, count: 8, fps: 14 } : { start: 0, count: 6, fps: 8 };
         const n = Math.floor((this.playbackTime - a.actionAt) * clip.fps);
@@ -314,16 +320,13 @@ export class BattleScene extends Phaser.Scene {
         const cutin = this.add.image(1300, 20, `cutin:${unit.unitDefId}`).setOrigin(1, 0).setDisplaySize(400, 225).setDepth(850);
         this.track(cutin, event.t, .85, (t) => cutin.setX(1300 + 24 * (1 - Math.min(1, t * 6))).setAlpha(Math.min(1, t * 8, (1 - t) * 4)));
       }
-      if (this.textures.exists(def.skill.vfxKey)) {
-        const target = event.target ? this.actors.get(event.target) : undefined;
-        const centeredOnCaster = ['DASH_LINE', 'AURA', 'SHIELD_WALL', 'SUMMON', 'REVIVE'].includes(def.skill.template);
-        const anchor = !centeredOnCaster && target ? target : actor;
-        const effect = this.add.image(anchor.container.x, anchor.container.y - 20, def.skill.vfxKey, 0).setDepth(820).setScale(anchor.container.scaleX).setBlendMode(Phaser.BlendModes.ADD);
-        this.track(effect, event.t, .6, (t) => effect.setFrame(Math.min(9, Math.floor(t * 10))).setPosition(anchor.container.x, anchor.container.y - 20 * anchor.container.scaleX).setScale(anchor.container.scaleX));
-      }
-      const label = this.add.text(actor.container.x, actor.container.y - 98, def.skill.displayName, { fontFamily: 'Noto Sans KR Variable, sans-serif', fontSize: '14px', color: '#ffdd8e', backgroundColor: '#182b43', padding: { x: 8, y: 5 } }).setOrigin(.5).setDepth(910);
+      const label = this.add.text(actor.container.x, actor.container.y - 98, skillLabel(def.skill), { fontFamily: 'Noto Sans KR Variable, sans-serif', fontSize: '12px', color: '#ffdd8e', backgroundColor: '#182b43', padding: { x: 4, y: 3 } }).setOrigin(.5).setDepth(910);
       const x = label.x, y = label.y;
       this.track(label, event.t, .85, (t) => label.setPosition(x, y - t * 16).setAlpha(Math.min(1, (1 - t) * 3)));
+    } else if (event.type === 'SKILL_EFFECT') {
+      this.presentSkillEffect(event);
+    } else if (event.type === 'CAST_CANCEL') {
+      this.setAction(event.source, 'idle', event.t);
     } else if (event.type === 'END') {
       for (const u of this.frames[this.eventIndex].units) {
         if (u.alive && u.team === event.winner) this.setAction(u.id, 'victory', event.t);
@@ -333,6 +336,35 @@ export class BattleScene extends Phaser.Scene {
     else if (event.type === 'OVERTIME') {
       const text = this.add.text(660, 90, 'OVERTIME', { fontFamily: 'Noto Sans KR Variable, sans-serif', fontSize: '32px', color: '#ffe6ae', stroke: '#96372a', strokeThickness: 5 }).setOrigin(.5).setDepth(950);
       this.track(text, event.t, 1.7, (t) => text.setAlpha(Math.min(1, (1 - t) * 3)));
+    }
+  }
+
+  private presentSkillEffect(event: Extract<BattleEvent, { type: 'SKILL_EFFECT' }>): void {
+    if (this.playbackTime - event.t >= .4) return;
+    const unit = this.frames[this.eventIndex].units.find((u) => u.id === event.source);
+    if (!unit) return;
+    const def = getUnitDef(unit.unitDefId), color = tint(def.skill.choreography?.color ?? '#c6b6ff');
+    const healing = event.kind.startsWith('HEAL'), shield = event.kind.startsWith('SHIELD');
+    // Buff triplets share a pulse; damage and repeated healing retain every release.
+    const buff = event.kind === 'STAT_MUL' || event.kind === 'STAT_ADD';
+    if (buff && this.frames[this.eventIndex].events.find(e => e.type === 'SKILL_EFFECT' && e.source === event.source && (e.kind === 'STAT_MUL' || e.kind === 'STAT_ADD')) !== event) return;
+    if (!healing && !shield && !buff && !['DAMAGE', 'DAMAGE_MAXHP_PCT', 'APPLY_STATUS', 'DASH', 'TAUNT'].includes(event.kind)) return;
+    const texture = healing ? 'vfx_heal' : shield ? 'vfx_shield' : def.skill.vfxKey;
+    for (const id of event.targets) {
+      const actor = this.actors.get(id);
+      if (!actor) continue;
+      const pulseKey = `${id}:${healing ? 'heal' : shield ? 'shield' : buff ? 'buff' : 'impact'}`;
+      if (event.t - (this.pulseAt.get(pulseKey) ?? -1) < .1) continue;
+      this.pulseAt.set(pulseKey, event.t);
+      const x = actor.container.x, y = actor.container.y - 22 * actor.container.scaleX;
+      const radius = (shield ? 38 : healing ? 22 : 28) * actor.container.scaleX;
+      const ring = this.add.circle(x, y, radius, color, .08).setStrokeStyle(shield ? 3 : 2, color, .85).setDepth(819);
+      this.track(ring, event.t, .4, (p) => ring.setScale(shield ? 1 : .5 + p).setAlpha(1 - p));
+      if (this.textures.exists(texture)) {
+        const effect = this.add.image(x, y + 18 * actor.container.scaleX, texture, 0).setDepth(820).setScale(actor.container.scaleX * .65);
+        // Normal alpha blending works identically on WebGL and Canvas.
+        this.track(effect, event.t, .4, (p) => effect.setFrame(Math.min(9, Math.floor(p * 10))).setAlpha(.7 - p * .4));
+      }
     }
   }
 }

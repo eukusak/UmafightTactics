@@ -24,6 +24,7 @@
   },
   "requiredArt": 514,
   "resumeInstructions": [
+    "All 145 character and 5 PvE basic motion atlases are registered. Read docs/SKILL_CHOREOGRAPHY.md before editing skills; preserve generation provenance and validate the separate compatibility review.",
     "All 145 character and five PvE frame sheets are registered and reviewed. Do not regenerate completed assets without a new request.",
     "Read docs/qa/PR6_MOTIONS_144_2026-09-09.md for final checks and docs/TFT_PARITY_AUDIT.md for unresolved gameplay differences."
   ],
@@ -74,7 +75,7 @@
     "actualCubismModels": 0,
     "status": "generated full-body images and reviewed PNG frame animations"
   },
-  "latestValidation": "docs/qa/PR6_DESKTOP_MOTIONS_2026-09-09.md",
+  "latestValidation": "docs/qa/SKILL_SYSTEMS_2026-09-09.md",
   "motionStatus": {
     "format": "24 poses; 4 columns x 6 rows; 512x768 RGBA runtime",
     "characters": 145,
@@ -85,5 +86,21 @@
     "registry": "src/data/manual/frame-sheets.json",
     "reservation": "docs/art-source/motions/desktop-reservation.json",
     "status": "COMPLETE"
+  },
+  "skillSystems": {
+    "reviewedAt": "2026-09-09",
+    "characters": 145,
+    "tacticalVariants": 24,
+    "timeline": "Shared 50ms simulation/preview release schedule",
+    "tests": 169,
+    "simulationMatches": 200,
+    "simulationBattles": 26940,
+    "tftPublicRuleChecks": {
+      "match": 17,
+      "different": 0,
+      "unverified": 4
+    },
+    "documentation": "docs/SKILL_CHOREOGRAPHY.md",
+    "qa": "docs/qa/SKILL_SYSTEMS_2026-09-09.md"
   }
 }

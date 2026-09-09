@@ -38,8 +38,8 @@ describe('unit roster', () => {
     }
   });
 
-  it('uses pool copies 22/20/17/10/9', () => {
-    expect(POOL_COPIES).toEqual({ 1: 22, 2: 20, 3: 17, 4: 10, 5: 9 });
+  it('uses the adopted 14.15 pool copies 30/25/18/10/9', () => {
+    expect(POOL_COPIES).toEqual({ 1: 30, 2: 25, 3: 18, 4: 10, 5: 9 });
   });
 
   it('passes the unit schema for every unit', () => {

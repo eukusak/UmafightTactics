@@ -238,7 +238,7 @@ describe('full match', () => {
     const state = run(556);
     for (const u of ACTIVE_UNITS) {
       expect(remainingOf(state.pool, u.id)).toBeLessThanOrEqual(
-        { 1: 22, 2: 20, 3: 17, 4: 10, 5: 9 }[u.cost],
+        { 1: 30, 2: 25, 3: 18, 4: 10, 5: 9 }[u.cost],
       );
       expect(remainingOf(state.pool, u.id)).toBeGreaterThanOrEqual(0);
     }

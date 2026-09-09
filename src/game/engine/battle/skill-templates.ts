@@ -1,11 +1,12 @@
 /**
  * Skill generation from 12 shared templates (spec §12).
  *
- * There is no per-character skill function anywhere: a unit's skill is a
- * SkillDef built from its role, run style and cost, and the battle engine
- * interprets the resulting EffectDefs generically.
+ * Role/style/cost establish the body-action family. Authored specializations
+ * add character-specific tactics and choreography as declarative EffectDefs;
+ * the battle engine never switches on a character ID.
  */
 import type { Cost, DamageType, EffectDef, Role, RunStyle, SkillDef, SkillTemplate, TargetRule } from '../types';
+import { specializeSkill } from './skill-variants';
 
 /** Spec §12.2 — which templates a role may draw from, in preference order. */
 export const ROLE_TEMPLATES: Record<Role, SkillTemplate[]> = {
@@ -165,7 +166,6 @@ export function buildSkill(input: SkillBuildInput): SkillDef {
       effects.push(
         { kind: 'SHIELD_MAXHP_PCT', value: shield, duration: 5, target: 'SELF' },
         { kind: 'TAUNT', duration: 2.5, radius: 2, target: 'ALL_ENEMIES' },
-        { kind: 'APPLY_STATUS', status: 'TAUNT', duration: 2.5, radius: 2 },
       );
       description = `최대 체력 ${Math.round(shield * 100)}% 보호막(5초)을 얻고 2칸 내 적을 2.5초간 도발한다.`;
       break;
@@ -246,7 +246,7 @@ export function buildSkill(input: SkillBuildInput): SkillDef {
     TANK: 90, BRUISER: 80, AD_CARRY: 70, AP_CARRY: 80, SUPPORT: 90,
   };
 
-  return {
+  return specializeSkill(input.unitId, {
     id: `skill_${input.unitId}`,
     displayName,
     template,
@@ -260,5 +260,5 @@ export function buildSkill(input: SkillBuildInput): SkillDef {
       ? STYLE_VFX[input.style]
       : TEMPLATE_VFX[template],
     description: `[${TEMPLATE_LABEL[template]}] ${description}`,
-  };
+  });
 }

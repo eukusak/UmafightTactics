@@ -2,7 +2,8 @@ import { useEffect, useRef, useState } from 'react';
 import Phaser from 'phaser';
 import { ALL_UNITS, getUnitDef } from '../../game/engine/roster';
 import { PVE_UNIT_IDS } from '../../game/engine/battle/pve-units';
-import { FRAME_CLIPS, FRAME_SHEETS, frameSheetUrl, motionFrame } from '../../game/ui/frame-animation';
+import { FRAME_CLIPS, FRAME_SHEETS, frameSheetUrl, motionFrame, skillMotionFrame } from '../../game/ui/frame-animation';
+import { skillTimeline, skillWindup } from '../../game/engine/battle/skill-timeline';
 import { portraitUrl, standeeUrl, type AnimationName } from '../../game/ui/art';
 import { useGameStore } from '../../store/gameStore';
 
@@ -30,6 +31,7 @@ export function MotionScreen(): JSX.Element {
       private clock = 0;
       private lastAction: AnimationName = 'idle';
       private wasPaused = false;
+      private pulses!: Phaser.GameObjects.Graphics;
       preload(): void {
         const sheet = FRAME_SHEETS[id];
         if (sheet) this.load.spritesheet('preview-body', frameSheetUrl(id)!, { frameWidth: sheet.frameWidth, frameHeight: sheet.frameHeight });
@@ -37,6 +39,7 @@ export function MotionScreen(): JSX.Element {
         this.load.on('loaderror', () => { if (alive) setStatus('이미지를 불러오지 못했습니다.'); });
       }
       create(): void {
+        this.pulses = this.add.graphics().setDepth(20);
         const count = crowd ? 28 : 1;
         for (let i = 0; i < count; i++) {
           const x = crowd ? 58 + (i % 7) * 99 : 360;
@@ -56,9 +59,23 @@ export function MotionScreen(): JSX.Element {
         const time = c.paused ? c.frame : this.clock;
         const cycle = time % 2;
         timeline.current = cycle;
+        const skill = getUnitDef(id).skill;
+        this.pulses.clear();
         for (const sprite of this.sprites) {
           sprite.setFlipX(c.facing < 0);
-          if (FRAME_SHEETS[id]) sprite.setFrame(motionFrame(c.action, cycle));
+          if (FRAME_SHEETS[id]) sprite.setFrame(c.action === 'skill_cast'
+            ? skillMotionFrame(skill, cycle, FRAME_SHEETS[id].skillReleaseFrame ?? 2)
+            : motionFrame(c.action, cycle));
+          if (c.action === 'skill_cast') {
+            const releases = [...new Set(skillTimeline(skill).map(e => e.at))];
+            for (const at of releases) {
+              const age = cycle - at;
+              if (age < 0 || age > .25) continue;
+              const color = parseInt((skill.choreography?.color ?? '#b9ddff').slice(1), 16);
+              this.pulses.lineStyle(crowd ? 2 : 4, color, 1 - age / .25);
+              this.pulses.strokeCircle(sprite.x, sprite.y - (crowd ? 36 : 130), (crowd ? 22 : 72) * (1 + age * 2));
+            }
+          }
         }
       }
     }
@@ -102,7 +119,7 @@ export function MotionScreen(): JSX.Element {
         </div>
         <label style={{ display: 'block', margin: '20px 0' }}><input type="checkbox" checked={crowd} onChange={e => setCrowd(e.target.checked)} /> 28기 동시 미리보기</label>
         <label style={{ display: 'block', margin: '20px 0' }}><input type="checkbox" checked={canvas} onChange={e => setCanvas(e.target.checked)} /> 호환 렌더러 (Canvas)</label>
-        <p className="muted" style={{ lineHeight: 1.8 }}>미리보기에서는 준비부터 회복까지 모든 포즈를 재생합니다. 전투의 공격 타격은 실제 발사 시각에, 즉시 발동 스킬은 시전 시각에 방출 포즈를 맞춥니다. 피격은 모션을 초기화하지 않습니다.</p>
+        <p className="muted" style={{ lineHeight: 1.8 }}>스킬 준비 {skillWindup(getUnitDef(id).skill).toFixed(2)}초 · 방출 시각 {[...new Set(skillTimeline(getUnitDef(id).skill).map(e => e.at))].map(t => `${t.toFixed(2)}초`).join(' / ')}<br />빛의 파동은 각 효과의 발동 시각을 표시합니다. 전투에서도 같은 시간표를 사용하며, 기절하면 진행 중인 시전이 중단됩니다. 피격만으로 모션을 초기화하지 않습니다.</p>
       </div>
     </div>
   </div>;

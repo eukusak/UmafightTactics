@@ -30,7 +30,15 @@ def pack(unit_id):
     assert review['approved'] is True, f'{unit_id}: needs visual review'
     briefs = json.loads((ROOT / 'docs/art-source/motions/briefs.json').read_text(encoding='utf-8'))['units']
     brief = next(u for u in briefs if u['id'] == unit_id)
-    assert generation['skillSignature'] == brief['skillSignature'], 'Skill changed since generation'
+    if generation['skillSignature'] != brief['skillSignature']:
+        # Original generation provenance stays immutable after a compatible
+        # timing/effect review. Only that exact, recorded skill revision may pack.
+        registry = json.loads((ROOT / 'src/data/manual/frame-sheets.json').read_text(encoding='utf-8'))
+        review_path = registry.get(unit_id, {}).get('skillCompatibilityReview')
+        assert review_path, 'Skill changed since generation; needs motion review'
+        compatibility = json.loads((ROOT / review_path).read_text(encoding='utf-8'))['units'][unit_id]
+        assert compatibility['originalSkillSignature'] == generation['skillSignature']
+        assert compatibility['skillSignature'] == brief['skillSignature'], 'Skill changed since compatibility review'
     source = directory / review['source']
     assert source.resolve().is_relative_to(directory.resolve()), 'Source must stay in character directory'
     im = Image.open(source)
@@ -68,7 +76,10 @@ def pack(unit_id):
     packing.write_text(json.dumps({'format': 'uft-baked-frames-v1', 'scale': scale, 'anchor': [64, 110], 'runtimeSha256': sha(dest), 'frames': records}, indent=2) + '\n', encoding='utf-8')
     registry_file = ROOT / 'src/data/manual/frame-sheets.json'
     registry = json.loads(registry_file.read_text(encoding='utf-8'))
+    compatibility_path = registry.get(unit_id, {}).get('skillCompatibilityReview')
     registry[unit_id] = {'file': f'motions/{unit_id}.png', 'frameWidth': 128, 'frameHeight': 128, 'columns': 4, 'rows': 6, 'source': packing.relative_to(ROOT).as_posix(), 'skillId': brief['skill']['id'], 'skillSignature': brief['skillSignature'], 'skillReview': review['skillReview'], 'skillReleaseFrame': generation['skillReleaseFrame']}
+    if compatibility_path:
+        registry[unit_id]['skillCompatibilityReview'] = compatibility_path
     registry_file.write_text(json.dumps(registry, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
     inventory_file = ROOT / 'src/data/manual/delivered-art.json'
     inventory = set(json.loads(inventory_file.read_text(encoding='utf-8')))

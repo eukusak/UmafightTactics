@@ -2,7 +2,7 @@
 import { writeFileSync } from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { AUGMENT_ROUNDS, POOL_COPIES, SHOP_ODDS, XP_TO_LEVEL, baseStageDamage, survivorDamage } from '../src/game/engine/constants';
+import { AUGMENT_ROUNDS, POOL_COPIES, SHOP_ODDS, XP_TO_LEVEL, baseStageDamage, survivorDamage, streakGold } from '../src/game/engine/constants';
 import { ACTIVE_BY_COST } from '../src/game/engine/roster';
 import { BattleEngine, type BattleSideInput } from '../src/game/engine/battle/engine';
 import { Rng } from '../src/game/engine/rng';
@@ -49,7 +49,8 @@ for (const [role, expected] of [['TANK', 5], ['AP_CARRY', 7], ['AD_CARRY', 10]] 
   assertZeroManaStart(engine);
   const attacks = result.events.filter(e => e.type === 'ATTACK' && e.source === unit.id).length;
   if (attacks !== 1) throw new Error(`Invalid mana fixture: ${attacks} attacks ${JSON.stringify(result.events)}`);
-  compare(`attack_mana_${role}`, expected, unit.mana, sources.roles, '15.1 published role contract', 'One isolated attack; enemy stunned; mana initially zero. AP_CARRY mapped to Caster and AD_CARRY to Marksman for this comparison.');
+  const control = fixture(); control.units[0].role = role; control.units[0].attackCooldown = 20; control.run();
+  compare(`attack_mana_${role}`, expected, unit.mana - control.units[0].mana, sources.roles, '15.1 published role contract', 'One isolated attack minus a same-duration no-attack control to separate passive regeneration. AP_CARRY mapped to Caster and AD_CARRY to Marksman.');
 }
 {
   const engine = fixture(1); const unit = engine.units[0]; unit.role = 'AP_CARRY'; unit.attackCooldown = 20;
@@ -89,6 +90,8 @@ for (const [level, expected, source, baseline] of [
 compare('xp_to_levels_8_9_10', [60, 68, 68], [XP_TO_LEVEL[8], XP_TO_LEVEL[9], XP_TO_LEVEL[10]], sources.xp, '16.1 + 16.4 rollback', 'Runtime constants. Level 8 and 10 baseline: ' + sources.systems);
 compare('stage_3_4_player_damage', [6, 7], [baseStageDamage(3), baseStageDamage(4)], sources.systems, '16.1 published base player damage', 'No player damage reduction effects.');
 compare('surviving_enemy_damage', [1, 2, 3, 4, 5, 6], [1, 2, 3, 4, 5, 6].map(survivorDamage), sources.systems, '16.1 survivor damage description', 'One damage per surviving enemy in the published rule.');
+compare('base_damage_other_stages', [0, 2, 10, 12, 17, 150], [1, 2, 5, 6, 7, 8].map(baseStageDamage), official('teamfight-tactics-patch-14-9-notes'), '14.9 full table, with 16.1 stage 3/4 updates above', 'Historical full table used where the later patch does not override it.');
+compare('streak_gold', [0, 0, 0, 1, 1, 2, 3, 3], [0, 1, 2, 3, 4, 5, 6, 7].map(streakGold), official('teamfight-tactics-patch-14-1-notes'), '14.1 public streak thresholds', 'Three/four wins or losses pay 1; five pays 2; six or more pays 3.');
 for (const [id, actual, evidence] of [
   ['latest_full_set_content', 'Uma Musume roster, custom skills/items/traits; no Wisps', '18.1 introduces Wisps and a different roster; content equivalence is intentionally absent.'],
   ['riot_internal_combat_timing', '50ms deterministic simulation; custom windup/projectile timing', 'No official executable oracle or complete internal timing specification was available.'],
@@ -98,10 +101,25 @@ for (const [id, actual, evidence] of [
 
 const counts = { MATCH: 0, DIFFERENT: 0, UNVERIFIED: 0 };
 for (const row of results) counts[row.status]++;
-const report = { checkedAt: '2026-09-08', latestOfficialPatchReviewed: '18.1, including Aug 31 / Sep 1 update', verdict: 'NOT_IDENTICAL', method: 'Public-rule fixture comparison, not binary/replay equivalence. Each row pins its own published baseline; older values are not asserted to be a complete 18.1 ruleset.', counts, results };
+const report = { checkedAt: '2026-09-09', latestOfficialPatchReviewed: '18.1, including Aug 31 / Sep 1 update', verdict: 'NOT_IDENTICAL', method: 'Public-rule fixture comparison, not binary/replay equivalence. Each row pins its own published baseline; older values are not asserted to be a complete 18.1 ruleset.', counts, results };
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 writeFileSync(path.join(root, 'docs/qa/tft-parity-report.json'), JSON.stringify(report, null, 2) + '\n');
 const rows = results.map(r => `| ${r.id} | ${r.status} | ${JSON.stringify(r.expected)} | ${JSON.stringify(r.actual)} | [${r.baseline}](${r.source}) |`).join('\n');
-writeFileSync(path.join(root, 'docs/TFT_PARITY_AUDIT.md'), `# TFT 공개 규칙 동일성 검증\n\n검증일: 2026-09-08. 최신 확인 문서: TFT 18.1 (8/31·9/1 수정 포함). **결론: 동일하지 않음.**\n\n일치 ${counts.MATCH}, 차이 ${counts.DIFFERENT}, 미검증 ${counts.UNVERIFIED}. 이 수량은 아래 표의 개별 검증 항목 수이며 게임 전체의 동일성 백분율이 아니다.\n\n각 행은 해당 패치에 공개된 규칙과 비교한다. 과거 패치 수치를 전부 최신 18.1의 완전한 명세로 간주하지 않는다. 공식 패치 노트는 변경분만 제공하며 최신 전체 수치표·Riot 내부 엔진·동일 데이터와 시드의 리플레이 비교는 확보하지 못했다. AP_CARRY→Caster, AD_CARRY→Marksman은 비교용 역할 대응이다.\n\n| 항목 | 결과 | 공식 기준 | 현재 실행 결과 | 근거 |\n|---|---|---|---|---|\n${rows}\n\n실행: \`npm run audit:tft\`. 보고서는 매번 실제 엔진 실행/현재 상수로 다시 작성된다. \`npm run audit:tft -- --strict\`는 불일치 또는 미검증이 있으면 종료 코드 1이다. 기본 모드의 종료 코드 0은 보고서 생성 성공만 뜻한다.\n\n기존 npm 테스트 및 200회 매치 시뮬레이션은 자체 엔진의 회귀/완주 검증이다. TFT 동일성 통과를 뜻하지 않는다. 8인 경쟁·공유 풀·경제·편성·자동 전투라는 구조는 구현되어 있지만, 마나·대상 선택·상점 확률·플레이어 피해의 차이가 결과와 운영 전략을 바꾼다. 이번 검증을 통과시키기 위해 기존 프로젝트 밸런스 상수를 임의로 바꾸지 않았다.\n\n우선순위: (1) 기준 세트를 고정한 역할/마나·대상 선택 이식, (2) 경제/피해/공유 풀 전체표 확정, (3) 아이템·특성·스킬과 예외 판정, (4) 동일 입력의 원본 TFT 실행 결과 대조. 상세 fixture 조건은 [JSON 보고서](qa/tft-parity-report.json)에 있다.\n`);
+writeFileSync(path.join(root, 'docs/TFT_PARITY_AUDIT.md'), `# TFT 공개 규칙 비교
+
+검증일: 2026-09-09. 현재 구조를 유지하며 공개된 전투·성장 규칙부터 맞춘다. **전체 TFT와 동일하다는 판정은 아니다.**
+
+일치 ${counts.MATCH}, 차이 ${counts.DIFFERENT}, 미검증 ${counts.UNVERIFIED}. 각 행은 링크된 공개 패치 규칙에 한정된다. 과거 패치의 변경분을 합친 프로젝트 기준이며, 최신 18.1의 완전한 명세가 아니다.
+
+| 항목 | 결과 | 공식 기준 | 실제 결과 | 근거 |
+|---|---|---|---|---|
+${rows}
+
+공격 마나는 같은 시간의 비공격 대조군을 빼서 자연 재생과 분리했다. SUPPORT는 Caster 자원 모델에 대응한다. BRUISER는 15.4의 Fighter 공격속도 보너스를 실제 스테이지로 받는다. [15.4 역할 변경](https://teamfighttactics.leagueoflegends.com/en-us/news/game-updates/teamfight-tactics-patch-15-4-notes/)
+
+새 스킬은 캐릭터별 창작 변형이다. 내부 판정 시간, 최신 전체 수치표, 세트 고유 콘텐츠, 동일 입력의 Riot 리플레이 대조는 미검증으로 남긴다.
+
+실행: \`npm run audit:tft\`. \`--strict\`는 불일치 또는 미검증이 있으면 종료 코드 1이다. 자체 테스트와 매치 시뮬레이션의 성공은 게임 전체 동일성을 뜻하지 않는다. 상세 조건은 [JSON 보고서](qa/tft-parity-report.json)에 있다.
+`);
 console.log(JSON.stringify({ verdict: report.verdict, counts }, null, 2));
 if (process.argv.includes('--strict') && (counts.DIFFERENT || counts.UNVERIFIED)) process.exitCode = 1;

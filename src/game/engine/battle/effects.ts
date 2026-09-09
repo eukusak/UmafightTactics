@@ -40,9 +40,10 @@ export function resolveTargets(
   const foes = enemies(ctx, self).filter((u) => isTargetable(u, ctx.now));
 
   const expand = (centre: CombatUnit | null, pool: CombatUnit[]): CombatUnit[] => {
-    if (!centre) return [];
+    if (!centre || !centre.alive || (centre.team !== self.team && !isTargetable(centre, ctx.now))) return [];
     if (!radius || radius <= 0) return [centre];
-    return pool.filter((u) => hexDistance(u.cell, centre.cell) <= radius);
+    return pool.filter((u) => hexDistance(u.cell, centre.cell) <= radius)
+      .sort((a, b) => Number(b.id === centre.id) - Number(a.id === centre.id) || byId(a, b));
   };
 
   switch (rule) {
@@ -180,6 +181,7 @@ export type ApplyOptions = {
   sourceKey: string;
   currentTarget: CombatUnit | null;
   event: TriggerEvent;
+  targets?: CombatUnit[];
 };
 
 /**
@@ -198,7 +200,15 @@ export function applyEffect(
   const power = opts.power;
   const value = (effect.value ?? 0) * (effect.kind === 'DAMAGE' || effect.kind === 'HEAL' ? power : 1);
   const healScale = ctx.overtime ? OVERTIME_HEAL_MULT : 1;
-  const targets = resolveTargets(ctx, self, effect.target as TargetRule, effect.radius, opts.currentTarget);
+  const targets = opts.targets ?? resolveTargets(ctx, self, effect.target as TargetRule, effect.radius, opts.currentTarget);
+  if (isAuraKind(effect.kind) && effect.kind !== 'EXECUTE_THRESHOLD') {
+    for (const t of effect.target ? targets : [self]) {
+      t.timedEffects = t.timedEffects.filter((e) => e.key !== onceKey);
+      t.timedEffects.push({ effect, key: onceKey, expiresAt: ctx.now + (effect.duration || 999) });
+      if (triggerHolds(t, effect.trigger, ctx, 'RECOMPUTE', opts.currentTarget)) accumulateAura(t, effect);
+    }
+    return effect.target ? targets.length : 1;
+  }
 
   switch (effect.kind) {
     case 'STAT_ADD':
@@ -314,14 +324,18 @@ export function applyEffect(
       return list.length;
     }
     case 'SUNDER_ARMOR_PCT': {
-      const list = targets.length ? targets : opts.currentTarget ? [opts.currentTarget] : [];
-      for (const t of list) t.stacks['shred:armor'] = Math.max(t.stacks['shred:armor'] ?? 0, effect.value ?? 0);
-      return list.length;
+      for (const t of targets) t.timedEffects.push({ effect, key: onceKey, expiresAt: ctx.now + (effect.duration || 999) });
+      return targets.length;
     }
     case 'SHRED_MR_PCT': {
-      const list = targets.length ? targets : opts.currentTarget ? [opts.currentTarget] : [];
-      for (const t of list) t.stacks['shred:magicResist'] = Math.max(t.stacks['shred:magicResist'] ?? 0, effect.value ?? 0);
-      return list.length;
+      for (const t of targets) t.timedEffects.push({ effect, key: onceKey, expiresAt: ctx.now + (effect.duration || 999) });
+      return targets.length;
+    }
+    case 'EXECUTE_THRESHOLD': {
+      for (const t of targets) if (t.alive && t.hp / t.maxHp < (effect.value ?? 0)) {
+        ctx.dealDamage(self, t, t.hp + t.shields.reduce((n, s) => n + s.amount, 0), 'TRUE', true);
+      }
+      return targets.length;
     }
     case 'CC_IMMUNE': {
       self.aura.ccImmuneUntil = Math.max(self.aura.ccImmuneUntil, ctx.now + (effect.duration ?? 0));
