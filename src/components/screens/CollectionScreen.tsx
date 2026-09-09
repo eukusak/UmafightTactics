@@ -1,52 +1,37 @@
 /** Collection: all 145 characters with the spec §29 filters. */
 import { useMemo, useState } from 'react';
 import { useGameStore } from '../../store/gameStore';
-import type { SeasonId } from '../../game/engine/seasons/catalog';
 import { ALL_UNITS, SEASONS, getSeason, getUnitTraits } from '../../game/engine/roster';
 import { getTrait } from '../../game/engine/traits/trait-defs';
 import { ROLE_LABELS } from '../../game/ui/palette';
 import { Portrait, costVar, RoleChip, TraitChip } from '../common';
 import type { UnitDef } from '../../game/engine/types';
 
-const DECADES = ['~1989', '1990s', '2000s', '2010s+'];
-
-function decadeOf(u: UnitDef): string {
-  const y = u.source.birthYear;
-  if (y <= 1989) return '~1989';
-  if (y <= 1999) return '1990s';
-  if (y <= 2009) return '2000s';
-  return '2010s+';
-}
-
 export function CollectionScreen(): JSX.Element {
   const setScreen = useGameStore((s) => s.setScreen);
   const match = useGameStore((s) => s.match);
 
   const [query, setQuery] = useState('');
-  const [seasonId, setSeasonId] = useState<SeasonId>(match?.seasonId ?? 's1');
+  const seasonId = match?.seasonId ?? 's1';
   const [faction, setFaction] = useState('all');
   const season = getSeason(seasonId);
   const available = new Set(season.unitIds);
-  const [activeOnly, setActiveOnly] = useState<'all' | 'active' | 'inactive'>('all');
   const [cost, setCost] = useState('all');
   const [role, setRole] = useState('all');
   const [style, setStyle] = useState('all');
   const [distance, setDistance] = useState('all');
-  const [decade, setDecade] = useState('all');
+  const traitOptions = [...new Set(ALL_UNITS.flatMap(u => [...u.traits, ...SEASONS.flatMap(s => s.unitTraits[u.id] ? [s.unitTraits[u.id]] : [])]))].filter(id => !['nige', 'senko', 'sashi', 'oikomi', 'sprinter', 'miler', 'middle', 'stayer', 'dirt_champion', 'all_rounder'].includes(id));
   const [selected, setSelected] = useState<UnitDef | null>(null);
 
   const filtered = useMemo(() => ALL_UNITS.filter((u) => {
     if (query && !u.nameKo.includes(query) && !u.nameEn.toLowerCase().includes(query.toLowerCase())) return false;
-    if (activeOnly === 'active' && !season.unitIds.includes(u.id)) return false;
-    if (activeOnly === 'inactive' && season.unitIds.includes(u.id)) return false;
-    if (faction !== 'all' && season.unitTraits[u.id] !== faction) return false;
+    if (faction !== 'all' && !u.traits.includes(faction as never) && !SEASONS.some(s => s.unitTraits[u.id] === faction)) return false;
     if (cost !== 'all' && u.cost !== Number(cost)) return false;
     if (role !== 'all' && u.role !== role) return false;
     if (style !== 'all' && !u.traits.includes(style as never)) return false;
     if (distance !== 'all' && !u.traits.includes(distance as never)) return false;
-    if (decade !== 'all' && decadeOf(u) !== decade) return false;
     return true;
-  }), [query, activeOnly, cost, role, style, distance, decade, season, faction]);
+  }), [query, cost, role, style, distance, faction]);
 
   return (
     <div style={{ position: 'absolute', inset: 0, display: 'flex', flexDirection: 'column' }}>
@@ -60,14 +45,8 @@ export function CollectionScreen(): JSX.Element {
       </div>
 
       <div className="filters" style={{ marginTop: 84 }}>
-        <select aria-label="도감 시즌" value={seasonId} onChange={e => { setSeasonId(e.target.value as SeasonId); setFaction("all"); }}>{SEASONS.map(s => <option key={s.id} value={s.id}>{s.id.toUpperCase()} · {s.name}</option>)}</select>
-        <select aria-label="시즌 시너지" value={faction} onChange={e => setFaction(e.target.value)}><option value="all">시즌 시너지 전체</option>{season.traits.map(t => <option key={t.id} value={t.id}>{t.name}</option>)}</select>
+        <select aria-label="특성" value={faction} onChange={e => setFaction(e.target.value)}><option value="all">특성 전체</option>{traitOptions.map(id => <option key={id} value={id}>{getTrait(id).name}</option>)}</select>
         <input placeholder="이름 검색" value={query} onChange={(e) => setQuery(e.target.value)} />
-        <select value={activeOnly} onChange={(e) => setActiveOnly(e.target.value as never)}>
-          <option value="all">전체</option>
-          <option value="active">{seasonId.toUpperCase()} 출전</option>
-          <option value="inactive">다른 시즌 출전</option>
-        </select>
         <select value={cost} onChange={(e) => setCost(e.target.value)}>
           <option value="all">코스트 전체</option>
           {[1, 2, 3, 4, 5].map((c) => <option key={c} value={c}>{c}코</option>)}
@@ -86,10 +65,7 @@ export function CollectionScreen(): JSX.Element {
           {['sprinter', 'miler', 'middle', 'stayer', 'dirt_champion', 'all_rounder'].map((s) =>
             <option key={s} value={s}>{getTrait(s as never).name}</option>)}
         </select>
-        <select value={decade} onChange={(e) => setDecade(e.target.value)}>
-          <option value="all">연대 전체</option>
-          {DECADES.map((d) => <option key={d} value={d}>{d}</option>)}
-        </select>
+
       </div>
 
       <div className="collection-grid scroll">
@@ -127,6 +103,7 @@ export function CollectionScreen(): JSX.Element {
       {selected && (
         <div className="overlay" onClick={() => setSelected(null)}>
           <div className="overlay-card" style={{ maxWidth: 640 }} onClick={(e) => e.stopPropagation()}>
+            <Portrait id={selected.id} name={selected.nameKo} size={100} />
             <h2 style={{ margin: 0 }}>
               {selected.nameKo} <span className="gold-text">{selected.cost}코</span>
             </h2>

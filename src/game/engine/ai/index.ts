@@ -1,3 +1,5 @@
+import { itemFit } from './evaluation';
+import { choosePlan, economyPlan, plannedUnitValue, publicBoards, xpGoldToLevel, type PublicBoard } from './strategy';
 /**
  * AI turn logic (spec §26).
  *
@@ -7,7 +9,7 @@
  */
 import { MAX_LEVEL } from '../constants';
 import { addXp, buyXp, payReroll, rerollCost } from '../economy';
-import { getItem, COMPONENT_IDS } from '../items/item-defs';
+import { combine, getItem, COMPONENT_IDS } from '../items/item-defs';
 import { canEquip, equipItem, equipTactician } from '../items/inventory';
 import { getUnitDef, getUnitTraits } from '../roster';
 import { activeTierIndex, getTrait } from '../traits/trait-defs';
@@ -63,6 +65,7 @@ function copiesOf(player: PlayerState, unitDefId: string, star: 1 | 2 | 3): numb
 export function buyScore(player: PlayerState, unitDefId: string): number {
   const profile = AI_PROFILES[player.aiProfile ?? 'BALANCED'];
   const def = getUnitDef(unitDefId);
+  if ([...player.board, ...player.bench].some(u => u.unitDefId === unitDefId && u.star === 3)) return -100;
 
   const ones = copiesOf(player, unitDefId, 1);
   const twos = copiesOf(player, unitDefId, 2);
@@ -89,6 +92,7 @@ export function buyScore(player: PlayerState, unitDefId: string): number {
     const have = counts.get(t) ?? 0;
     const currentTier = activeTierIndex(trait, have);
     const nextTier = activeTierIndex(trait, have + 1);
+    if (copies > 0) continue;
     if (nextTier > currentTier) traitFit += 1.5;
     else {
       const nextThreshold = trait.thresholds.find((v) => v > have);
@@ -108,6 +112,7 @@ export function buyScore(player: PlayerState, unitDefId: string): number {
   // every AI keeps buying 1-costs all game, the shared pool stays fragmented
   // and nobody can ever gather the 9 copies a 1-cost 3-star needs.
   const chasingThisUnit = copies > 0;
+  if (copies >= 3 && player.aiPlan && (unitDefId !== player.aiPlan.carryId || !player.aiPlan.mode.startsWith('REROLL'))) upgradeNeed *= .15;
   // A reroll player is deliberately farming low-cost copies, so it keeps
   // buying them until it finally levels out of that plan.
   const lowCostFloor = profile.id === 'REROLL' ? 8 : 6;
@@ -124,6 +129,7 @@ export function buyScore(player: PlayerState, unitDefId: string): number {
     : 0;
 
   return (
+    plannedUnitValue(player, unitDefId) +
     pairNeed * 2.2 +
     upgradeNeed * 3.0 +
     traitFit * 1.5 +
@@ -147,64 +153,19 @@ function roleNeed(player: PlayerState, role: Role): number {
   return 0;
 }
 
-function shouldBuyXp(player: PlayerState): boolean {
-  const profile = AI_PROFILES[player.aiProfile ?? 'BALANCED'];
-  if (player.level >= MAX_LEVEL) return false;
-  if (player.level >= profile.targetLevel && player.hp > profile.panicHp) return false;
-
-  const desperate = player.hp <= profile.panicHp;
-  const spendFloor = desperate ? 0 : profile.econFloor;
-  if (player.gold - 4 < spendFloor) return false;
-
-  // Every profile levels up TO its target; `levelAggression` only decides how
-  // eagerly it spends beyond passive XP. The previous `targetLevel - 1` bound
-  // left low-aggression profiles stuck one level short of their own plan, and
-  // so below the level at which they are allowed to start rolling.
-  const eagerness = profile.levelAggression * (desperate ? 1.6 : 1);
-  return eagerness >= 1 || player.level < profile.targetLevel;
-}
-
-function shouldReroll(player: PlayerState): boolean {
-  const profile = AI_PROFILES[player.aiProfile ?? 'BALANCED'];
-  const cost = rerollCost(player);
-  if (player.gold < cost) return false;
-  if (player.freeRerolls > 0) return true;
-
-  const desperate = player.hp <= profile.panicHp;
-  if (desperate) return player.gold >= cost;
-  // One copy short of a star upgrade is worth rolling for even off-plan;
-  // without this the AI banks gold and 3-stars essentially never complete.
-  if (player.level >= 4 && oneCopyFromUpgrade(player)
-    && player.gold - cost >= Math.min(20, profile.rollThreshold)) {
-    return true;
-  }
-  if (player.level < profile.targetLevel) return false;
-  return player.gold - cost >= profile.rollThreshold;
-}
-
-/** True when some owned unit needs exactly one more copy to star up. */
-function oneCopyFromUpgrade(player: PlayerState): boolean {
-  const byDef = new Map<string, { ones: number; twos: number }>();
-  for (const u of [...player.board, ...player.bench]) {
-    const e = byDef.get(u.unitDefId) ?? { ones: 0, twos: 0 };
-    if (u.star === 1) e.ones += 1;
-    else if (u.star === 2) e.twos += 1;
-    byDef.set(u.unitDefId, e);
-  }
-  for (const e of byDef.values()) {
-    if (e.ones === 2 || e.twos === 2) return true;
-  }
-  return false;
-}
-
 /** Runs one AI preparation phase: buy, level, roll, equip and place. */
 export function runAiPrep(state: MatchState, player: PlayerState, rng: Rng): void {
   if (player.aiProfile === null) return;
+  const scouts = publicBoards(state, player);
+  player.aiPlan = choosePlan(player, state.stage, state.round, scouts);
+  applyPlacement(player, planPlacement(player, true, scouts));
+  const budget = economyPlan(player, state.stage, state.round, scouts);
 
   // Generous cap: a reroll-style plan legitimately cycles the shop many times
   // in one prep phase, and the loop exits as soon as a pass does nothing.
   for (let pass = 0; pass < 40; pass += 1) {
     let acted = false;
+    sellSurplus(state, player);
 
     // 1. Buy anything worth buying from the current shop.
     for (let i = 0; i < player.shop.length; i += 1) {
@@ -219,10 +180,13 @@ export function runAiPrep(state: MatchState, player: PlayerState, rng: Rng): voi
     }
 
     // 2. Level up.
-    if (shouldBuyXp(player) && buyXp(player).ok) acted = true;
+    if (player.level < Math.min(MAX_LEVEL, budget.targetLevel)
+      && player.gold - xpGoldToLevel(player, Math.min(budget.targetLevel, player.level + 1)) >= budget.levelFloor
+      && buyXp(player).ok) acted = true;
 
     // 3. Reroll for more options.
-    if (!acted && shouldReroll(player) && payReroll(player).ok) {
+    const rolling = economyPlan(player, state.stage, state.round, scouts);
+    if (!acted && (player.freeRerolls > 0 || rolling.roll && player.gold - rerollCost(player) >= rolling.rollFloor) && payReroll(player).ok) {
       player.shop = rollShop(player, state.pool, rng);
       acted = true;
     }
@@ -231,22 +195,22 @@ export function runAiPrep(state: MatchState, player: PlayerState, rng: Rng): voi
   }
 
   sellSurplus(state, player);
-  finalizeAiFormation(player);
+  finalizeAiFormation(player, scouts);
 }
 
 /** Re-evaluate a late draft reward without running a second economy turn. */
-export function finalizeAiFormation(player: PlayerState): void {
+export function finalizeAiFormation(player: PlayerState, scouts: PublicBoard[] = []): void {
   if (player.aiProfile === null) return;
   assignItems(player);
-  applyPlacement(player, planPlacement(player, true));
+  applyPlacement(player, planPlacement(player, true, scouts));
 }
 
 /** The bar a unit must clear to be bought; rises when gold is tight. */
 function buyThreshold(player: PlayerState): number {
   const profile = AI_PROFILES[player.aiProfile ?? 'BALANCED'];
   if (player.hp <= profile.panicHp) return 1.0;
-  if (player.gold < profile.econFloor) return 2.4;
-  return 1.6;
+  if (player.gold < profile.econFloor) return 3.5;
+  return 2.8;
 }
 
 /** Sells low-value bench units when the bench is nearly full. */
@@ -258,7 +222,7 @@ function sellSurplus(state: MatchState, player: PlayerState): void {
   const droppable = player.bench
     .filter((u) => !fielded.has(u.instanceId) && u.star === 1 && u.items.length === 0)
     // Never sell a copy that is part of a star-up chain.
-    .filter((u) => copiesOf(player, u.unitDefId, 1) === 1 && copiesOf(player, u.unitDefId, 2) === 0)
+    .filter((u) => (copiesOf(player, u.unitDefId, 1) === 1 && copiesOf(player, u.unitDefId, 2) === 0) || (player.aiPlan && plannedUnitValue(player, u.unitDefId) < 0 && u.unitDefId !== player.aiPlan.carryId))
     .sort((a, b) => {
       const va = getUnitDef(a.unitDefId).uftRating;
       const vb = getUnitDef(b.unitDefId).uftRating;
@@ -271,50 +235,44 @@ function sellSurplus(state: MatchState, player: PlayerState): void {
   }
 }
 
-/** Spec §26.6 — tag-based item assignment. */
-function assignItems(player: PlayerState): void {
-  // Tactician items go straight to the player's tactician slots.
-  for (const stored of player.items.slice()) {
-    if (getItem(stored.itemId).tactician) equipTactician(player, stored.instanceId);
-  }
-
+/** Search completed recipes first; commit only legal pairs to suitable deployed carriers. */
+export function assignItems(player: PlayerState): void {
+  for (const stored of player.items.slice()) if (getItem(stored.itemId).tactician) equipTactician(player, stored.instanceId);
   const fielded = chooseFieldedUnits(player);
   if (!fielded.length) return;
-
+  for (let pass = 0; pass < 12; pass++) {
+    const candidates: { unit: UnitInstance; first: string; second?: string; result: string; score: number }[] = [];
+    for (const unit of fielded) for (const stored of player.items) {
+      const item = getItem(stored.itemId);
+      if (!canEquip(unit, stored.itemId).ok) continue;
+      if (!item.isComponent) candidates.push({ unit, first: stored.instanceId, result: item.id, score: itemFit(unit, item.id) });
+      else {
+        const equipped = unit.items.find(id => getItem(id).isComponent && combine(id, item.id));
+        if (equipped) {
+          const result = combine(equipped, item.id)!;
+          const virtual = { ...unit, items: unit.items.filter(id => id !== equipped) };
+          if (canEquip(virtual, result).ok) candidates.push({ unit, first: stored.instanceId, result, score: itemFit(unit, result) + 1 });
+        } else for (const partner of player.items) {
+          if (partner === stored || !getItem(partner.itemId).isComponent) continue;
+          const result = combine(item.id, partner.itemId);
+          if (result && !getItem(result).tactician && canEquip(unit, result).ok)
+            candidates.push({ unit, first: stored.instanceId, second: partner.instanceId, result, score: itemFit(unit, result) });
+        }
+      }
+    }
+    candidates.sort((a, b) => b.score - a.score || a.unit.instanceId.localeCompare(b.unit.instanceId) || a.result.localeCompare(b.result));
+    const best = candidates[0];
+    if (!best || best.score < 1) break;
+    if (!equipItem(player, best.unit.instanceId, best.first).ok) break;
+    if (best.second) equipItem(player, best.unit.instanceId, best.second);
+  }
+  // One useful temporary component can strengthen the board without random recipes.
   for (const stored of player.items.slice()) {
-    const item = getItem(stored.itemId);
-    const ranked = fielded
-      .map((u) => ({ unit: u, score: itemFitScore(player, u, stored.itemId) }))
-      .filter((e) => canEquip(e.unit, stored.itemId).ok)
-      .sort((a, b) => b.score - a.score || a.unit.instanceId.localeCompare(b.unit.instanceId));
-    if (!ranked.length) continue;
-    // Hold onto raw components early so pairs can combine into real items.
-    if (item.isComponent && player.items.length < 2 && fielded.length < 4) continue;
-    equipItem(player, ranked[0].unit.instanceId, stored.instanceId);
+    if (!getItem(stored.itemId).isComponent) continue;
+    const candidates = fielded.filter(u => !u.items.some(id => getItem(id).isComponent) && canEquip(u, stored.itemId).ok)
+      .sort((a, b) => itemFit(b, stored.itemId) - itemFit(a, stored.itemId));
+    if (candidates[0] && itemFit(candidates[0], stored.itemId) >= 3 && (player.hp < 65 || player.items.length >= 6)) equipItem(player, candidates[0].instanceId, stored.instanceId);
   }
-}
-
-function itemFitScore(player: PlayerState, unit: UnitInstance, itemId: string): number {
-  const item = getItem(itemId);
-  const def = getUnitDef(unit.unitDefId);
-  let score = def.uftRating + (unit.star - 1) * 0.6;
-
-  const tags = new Set(item.tags);
-  if (tags.has('DAMAGE') && (def.role === 'AD_CARRY' || def.role === 'BRUISER')) score += 2;
-  if (tags.has('MANA') && (def.role === 'AP_CARRY' || def.role === 'SUPPORT')) score += 2;
-  if (tags.has('TANK') && def.role === 'TANK') score += 2;
-  if (item.pctStats?.abilityPower || item.stats.abilityPower) {
-    if (def.role === 'AP_CARRY' || def.role === 'SUPPORT') score += 1.5;
-  }
-
-  // An emblem is worth the most on whichever unit unlocks the next trait tier.
-  if (item.grantsTrait) {
-    const counts = activeTraitCounts(player);
-    const trait = getTrait(item.grantsTrait);
-    const have = counts.get(item.grantsTrait) ?? 0;
-    score += activeTierIndex(trait, have + 1) > activeTierIndex(trait, have) ? 4 : 0.5;
-  }
-  return score;
 }
 
 /** Cheap starting board for round 1-1, before the AI has any gold. */

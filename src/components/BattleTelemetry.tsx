@@ -1,3 +1,4 @@
+import { useInteractionStore } from '../store/interactionStore';
 import { useMemo } from 'react';
 import { useGameStore } from '../store/gameStore';
 import { frameAt, damageTotals } from '../game/ui/battle-playback';
@@ -9,6 +10,7 @@ export function BattleTelemetry(): JSX.Element | null {
   const frames = useGameStore((s) => s.battleFrames);
   const time = useGameStore((s) => s.battleTime);
   const humanId = useGameStore((s) => s.human()?.id);
+  const running = useGameStore(s => s.battleRunning);
   const complete = useGameStore((s) => s.battleComplete);
   const totals = useMemo(() => damageTotals(frames ?? [], time), [frames, time]);
   if (!frames?.length) return null;
@@ -20,14 +22,14 @@ export function BattleTelemetry(): JSX.Element | null {
   const max = Math.max(1, ...rows.map((u) => totals.get(u.id) ?? 0));
   const health = (units: typeof allies) => units.reduce((v, u) => v + Math.max(0, u.hp), 0) / Math.max(1, units.reduce((v, u) => v + u.maxHp, 0));
   return <>
-    <div className={`battle-clock${frame.overtime ? ' overtime' : ''}`}>
+    {running && <div className={`battle-clock${frame.overtime ? ' overtime' : ''}`}>
       <span>{complete ? '전투 종료' : frame.overtime ? '오버타임' : '전투 진행'}</span>
       <strong>{Math.floor(time)}<small>초</small></strong>
       <div className="battle-survivors"><span>아군 {allies.filter((u) => u.alive).length}</span><span>상대 {enemies.filter((u) => u.alive).length}</span></div>
       <div className="team-vitals"><i style={{ width: `${health(allies) * 100}%` }} /><i style={{ width: `${health(enemies) * 100}%` }} /></div>
-    </div>
-    <div className="battle-damage-panel">
-      <div className="battle-damage-heading"><strong>전투 기여</strong><span>누적 피해 · 보호막 흡수 포함</span></div>
+    </div>}
+    <button type="button" aria-label="전투 기여 전체 보기" className={`battle-damage-panel${running ? '' : ' previous'}`} onClick={() => useInteractionStore.getState().inspect({ kind: 'recap' })}>
+      <div className="battle-damage-heading"><strong>전투 기여</strong><span>{running ? '전체 보기 ›' : '이전 전투 · 전체 보기 ›'}</span></div>
       <div className="battle-damage-rows">{rows.map((u) => {
         const def = getUnitDef(u.unitDefId); const damage = totals.get(u.id) ?? 0;
         return <div className={`battle-damage-row${u.alive ? '' : ' fallen'}`} key={u.id}>
@@ -36,6 +38,6 @@ export function BattleTelemetry(): JSX.Element | null {
           <b>{Math.round(damage).toLocaleString()}</b>
         </div>;
       })}</div>
-    </div>
+    </button>
   </>;
 }

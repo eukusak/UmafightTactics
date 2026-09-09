@@ -13,6 +13,7 @@ import { hexDistance, isBackRow, isFrontRow, neighbours, hexKey } from './hex';
 
 /** Everything an effect may need from the battle it runs inside. */
 export type EffectContext = {
+  shieldCreated?: (source: CombatUnit, target: CombatUnit, amount: number) => void;
   now: number;
   overtime: boolean;
   units: CombatUnit[];
@@ -281,12 +282,12 @@ export function applyEffect(
     }
     case 'SHIELD_MAXHP_PCT': {
       const list = targets.length ? targets : [self];
-      for (const t of list) addShield(t, t.maxHp * (effect.value ?? 0) * healScale, effect.duration ?? 5, ctx.now);
+      for (const t of list) { const before = t.shields.length; addShield(t, t.maxHp * (effect.value ?? 0) * healScale, effect.duration ?? 5, ctx.now); ctx.shieldCreated?.(self, t, t.shields.slice(before).reduce((n, s) => n + s.amount, 0)); }
       return list.length;
     }
     case 'SHIELD_FLAT': {
       const list = targets.length ? targets : [self];
-      for (const t of list) addShield(t, value * healScale, effect.duration ?? 5, ctx.now);
+      for (const t of list) { const before = t.shields.length; addShield(t, value * healScale, effect.duration ?? 5, ctx.now); ctx.shieldCreated?.(self, t, t.shields.slice(before).reduce((n, s) => n + s.amount, 0)); }
       return list.length;
     }
     case 'MANA_ADD': {

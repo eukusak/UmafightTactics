@@ -1,3 +1,4 @@
+import { draftValue, publicBoards } from '../ai/strategy';
 import { createCarousel, advanceCarousel as advanceCarouselState } from './carousel';
 /**
  * The single owner of match state transitions (spec §32).
@@ -238,8 +239,8 @@ export class RoundDirector {
       const best = available
         .slice()
         .sort((a, b) => {
-          const va = getUnitDef(a.unitDefId).uftRating + getUnitDef(a.unitDefId).cost * 0.1;
-          const vb = getUnitDef(b.unitDefId).uftRating + getUnitDef(b.unitDefId).cost * 0.1;
+          const va = draftValue(player, a);
+          const vb = draftValue(player, b);
           return vb - va || a.index - b.index;
         })[0];
       pickDraftOption(s, player, best.index);
@@ -258,7 +259,7 @@ export class RoundDirector {
     const result = pickDraftOption(s, getPlayer(s, playerId), optionIndex);
     if (!result.ok) return false;
     this.resolveAiDraftPicks();
-    if (!s.draft) for (const player of livingPlayers(s)) finalizeAiFormation(player);
+    if (!s.draft) for (const player of livingPlayers(s)) finalizeAiFormation(player, publicBoards(s, player));
     this.syncRng();
     return true;
   }
@@ -272,16 +273,24 @@ export class RoundDirector {
         if (p.aiProfile === null) continue;
         if (absoluteRound(this.state.stage, this.state.round) === 1) ensureInitialBoard(this.state, p, this.rngs.get(`ai-${p.id}`));
         runAiPrep(this.state, p, this.rngs.get(`ai-${p.id}`));
-        finalizeAiFormation(p);
+        finalizeAiFormation(p, publicBoards(this.state, p));
       }
       this.syncRng();
     }
+  }
+
+  /** Re-scout visible boards during prep without additional purchases or hidden pairings. */
+  refreshAiPlacements(): void {
+    if (this.state.phase !== 'ROUND_PREP') return;
+    const snapshots = this.state.players.filter(isAlive).map(p => ({ id: p.id, board: structuredClone(p.board) }));
+    for (const p of this.state.players.filter(isAlive)) finalizeAiFormation(p, snapshots.filter(b => b.id !== p.id));
   }
 
   // ----------------------------------------------------------------- battle
   /** Resolves the whole round: fights, damage, elimination, income. */
   resolveRound(deferSettlement = false): RoundResolution {
     if (this.pendingSettlement) throw new Error('The previous battle has not settled');
+    this.refreshAiPlacements();
     const s = this.state;
     s.phase = 'BATTLE';
     this.lastHumanFrames = null;

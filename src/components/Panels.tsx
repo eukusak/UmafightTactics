@@ -1,3 +1,4 @@
+import { AudioControls } from './AudioControls';
 /** Left (traits + items), right (leaderboard), top HUD and footer panels. */
 import { useInteractionStore } from '../store/interactionStore';
 import { useGameStore } from '../store/gameStore';
@@ -47,6 +48,7 @@ export function TopHud(): JSX.Element | null {
           </span>
         ))}
       </div>
+      <AudioControls />
     </div>
   );
 }

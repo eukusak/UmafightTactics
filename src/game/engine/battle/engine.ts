@@ -58,6 +58,7 @@ export type BattleResult = {
 };
 
 export type BattleEvent =
+  | { t: number; type: 'SHIELD'; source: string; target: string; amount: number }
   | { t: number; type: 'ATTACK_START'; source: string; target: string; releaseAt: number; impactAt: number; ranged: boolean }
   | { t: number; type: 'PROJECTILE'; source: string; target: string; impactAt: number }
   | { t: number; type: 'DAMAGE'; source: string; target: string; damage: number; absorbed: number; isSkill: boolean }
@@ -136,6 +137,7 @@ export class BattleEngine {
     this.spawn(sideA, 'A');
     this.spawn(sideB, 'B');
     this.ctx = {
+      shieldCreated: (source, target, amount) => { if (amount > 0) this.events.push({ t: this.time, type: 'SHIELD', source: source.id, target: target.id, amount }); },
       now: 0,
       overtime: false,
       units: this.units,

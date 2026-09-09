@@ -4,7 +4,7 @@ import { useGameStore } from '../../store/gameStore';
 import { TopHud, TraitPanel, ItemPanel, Leaderboard, OpponentBoardPeek } from '../Panels';
 import { ShopRow, BenchRow, ShopControls } from '../Shop';
 import { ArenaBackdrop, PrepBoard, BattleBoard, BattleInspectTargets } from '../BoardView';
-import { AugmentOverlay, DraftOverlay, BattleResultOverlay, DevPanel } from '../Overlays';
+import { AugmentOverlay, DraftOverlay, BattleResultOverlay } from '../Overlays';
 import { DetailPanel } from '../DetailPanel';
 import { useInteractionStore } from '../../store/interactionStore';
 import { handleBattleKey } from '../../game/ui/controls';
@@ -87,7 +87,8 @@ export function BattleScreen(): JSX.Element | null {
         <ArenaBackdrop />
         {(!battleRunning || !arenaReady) && <PrepBoard onUnitContext={onUnitContext} />}
         {battleRunning && (!online || !!frames?.length) && <BattleBoard key={battleId ?? 'solo'} onFinished={onPlaybackFinished} onReady={onArenaReady} />}
-        {battleRunning && arenaReady && <><BattleInspectTargets /><BattleTelemetry /></>}
+        {battleRunning && arenaReady && <BattleInspectTargets />}
+        {(!battleRunning || arenaReady) && <BattleTelemetry />}
         {online && !battleRunning && <OnlineClock />}
         {!online && !battleRunning && <PrepCountdown key={info.label} active={!awaitingAugment && !awaitingDraft} seconds={info.prepSeconds} />}
       </div>
@@ -141,7 +142,6 @@ export function BattleScreen(): JSX.Element | null {
       {awaitingAugment && <AugmentOverlay />}
       {awaitingDraft && !awaitingAugment && <DraftOverlay />}
       {showResult && <BattleResultOverlay onContinue={handleContinue} />}
-      <DevPanel />
     </>
   );
 }

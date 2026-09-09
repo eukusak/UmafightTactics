@@ -1,28 +1,10 @@
+import { preparedGame } from './fixtures';
 import { test, expect, type Page } from '@playwright/test';
 
-async function setup(page: Page) {
-  await page.goto('/?dev=1');
-  await page.getByRole('button', { name: '시작하기' }).click();
-  await page.getByRole('button', { name: '새 게임' }).click();
-  await page.getByLabel('무작위 시드 사용').uncheck();
-  await page.getByRole('button', { name: '게임 시작' }).click();
-  await page.locator('.carousel-option').first().dispatchEvent('click');
-  await expect(page.locator('.draft-overlay')).toHaveCount(0, { timeout: 35000 });
-  await page.getByRole('button', { name: '준비 타이머 일시정지' }).click();
-  await page.getByRole('button', { name: '+50G', exact: true }).click();
-}
+async function setup(page: Page) { await preparedGame(page); }
 const gold = async (page: Page) => Number(await page.locator('.hud-top .stat').filter({ hasText: '골드' }).locator('b').innerText());
-async function collapseDev(page: Page) {
-  await page.getByRole('button', { name: '설정', exact: true }).click();
-  await page.getByLabel('개발자 패널').uncheck();
-  await page.getByRole('button', { name: '돌아가기' }).click();
-}
-async function grantComponents(page: Page) {
-  // The draft already grants one material. Equip it before adding ten so this
-  // successful-sale scenario respects the real ten-slot storage limit.
-  await page.locator('.hud-left [draggable="true"]').first().dragTo(page.locator('.bench-slot.filled').first());
-  await page.getByRole('button', { name: '재료 10종', exact: true }).click();
-}
+async function collapseDev(page: Page) { await expect(page.locator('.dev-panel')).toHaveCount(0); }
+async function grantComponents(page: Page) { await preparedGame(page, 'components'); }
 
 async function buy(page: Page) {
   const count = await page.locator('.bench-slot.filled').count();
@@ -66,9 +48,8 @@ test('shop drag sells bench and field units, refunds gold and returns equipment'
 test('keyboard supports Korean physical keys, uppercase, E/W, custom bindings and typing guards', async ({ page }) => {
   await setup(page);
   const beforeTyping = await gold(page);
-  await page.getByPlaceholder('유닛 검색').pressSequentially('defw');
+  await page.getByLabel('음악 음량').focus(); await page.keyboard.type('defw');
   expect(await gold(page)).toBe(beforeTyping);
-  await page.getByPlaceholder('유닛 검색').fill('');
   await collapseDev(page);
   await page.locator('.hud-top').click();
   await page.locator('body').dispatchEvent('keydown', { key: 'ㅇ', code: 'KeyD', bubbles: true });

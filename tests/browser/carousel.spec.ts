@@ -1,4 +1,5 @@
 /// <reference lib="dom" />
+import { fundSavedGame } from './fixtures';
 import { test, expect } from '@playwright/test';
 
 test('carousel requires walking, supports arrows and floor clicks, then shows animated idle units and uploaded sounds', async ({ page }, info) => {
@@ -48,16 +49,17 @@ test('carousel requires walking, supports arrows and floor clicks, then shows an
   await expect(me).toHaveAttribute('data-picked', '');
   await page.screenshot({ path: info.outputPath('carousel-race.png') });
   const option = page.locator('.carousel-option').first();
-  const ob = (await option.boundingBox())!;
-  await page.mouse.click(ob.x + ob.width / 2, ob.y + ob.height * .7);
-  // Clicking issues a chase, with no immediate grant from a distant character.
-  await expect(me).toHaveAttribute('data-picked', '');
+  // Observe the click synchronously: later animation ticks may legitimately reach a pedestal.
+  const claim = await option.evaluate(el => {
+    const me = document.querySelector('.carousel-trainer.mine')!;
+    const before = me.getAttribute('data-picked');
+    el.dispatchEvent(new MouseEvent('click', { bubbles: true }));
+    return { before, after: me.getAttribute('data-picked') };
+  });
+  expect(claim.after).toBe(claim.before);
   await expect(page.locator('.draft-overlay')).toHaveCount(0, { timeout: 35000 });
   await page.getByRole('button', { name: '준비 타이머 일시정지' }).click();
-  await page.getByRole('button', { name: '+50G', exact: true }).click();
-  await page.getByRole('button', { name: '설정', exact: true }).click();
-  await page.getByLabel('개발자 패널').uncheck();
-  await page.getByRole('button', { name: '돌아가기' }).click();
+  await fundSavedGame(page);
   await page.locator('.bench-slot.filled').first().hover(); await page.keyboard.press('w');
   const idle = page.locator('.arena-unit .animated-unit').first();
   await expect(idle).toHaveAttribute('data-animation', 'idle');

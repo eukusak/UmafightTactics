@@ -1,3 +1,4 @@
+import { BattleRecap } from './BattleRecap';
 import { useGameStore } from '../store/gameStore';
 import { useInteractionStore } from '../store/interactionStore';
 import { getUnitDef, getUnitTraits, getSeasonUnits } from '../game/engine/roster';
@@ -6,7 +7,7 @@ import { getTrait, activeTierIndex } from '../game/engine/traits/trait-defs';
 import { activeTraitCounts } from '../game/engine/ai';
 import { buildBaseStats } from '../game/engine/battle/combat-unit';
 import { sellPrice } from '../game/engine/shop';
-import { frameAt, damageTotals } from '../game/ui/battle-playback';
+import { frameAt } from '../game/ui/battle-playback';
 import { ItemIcon, Portrait, RoleChip } from './common';
 import type { TraitId } from '../game/engine/types';
 
@@ -60,8 +61,7 @@ export function DetailPanel(): JSX.Element | null {
   if (inspection.kind === 'item') body = <ItemDetail id={inspection.id} />;
   else if (inspection.kind === 'trait') body = <TraitDetail id={inspection.id} playerId={inspection.playerId} />;
   else if (inspection.kind === 'recap') {
-    const totals = damageTotals(frames ?? [], time);
-    body = <><h3>전투 통계</h3><p className="muted">현재 재생 시점까지의 누적 피해</p>{frame?.units.map(u => <div className="detail-stat" key={u.id}><span>{getUnitDef(u.unitDefId).nameKo}</span><b>{Math.round(totals.get(u.id) ?? 0).toLocaleString()}</b></div>) ?? <p>전투 시작 후 표시됩니다.</p>}</>;
+    body = <BattleRecap />;
   } else {
     const owner = inspection.kind === 'unit' ? match.players.find(p => p.id === inspection.playerId) : match.players.find(p => inspection.id.startsWith(`${p.id}#`));
     const combatId = inspection.kind === 'combat' ? inspection.id : `${inspection.playerId}#${inspection.id}`;

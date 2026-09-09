@@ -26,7 +26,7 @@ export function privateMatch(state: MatchState, playerId: string): MatchState {
   return {
     ...state, seed: 0, rngStates: {}, pool: { seasonId: state.seasonId, remaining: {} },
     players: state.players.map((p) => p.id === playerId ? { ...p, isHuman: true } : {
-      ...p, isHuman: false, shop: [], bench: [], items: [], pendingGrants: [], freeRerolls: 0, cheapRerollsUsed: 0, aiProfile: null,
+      ...p, isHuman: false, shop: [], bench: [], items: [], pendingGrants: [], freeRerolls: 0, cheapRerollsUsed: 0, aiProfile: null, aiPlan: undefined,
     }),
     augmentOffers: state.augmentOffers.filter((o) => o.playerId === playerId),
   };
@@ -176,6 +176,7 @@ export class RoomService {
   }
 
   /** One wall clock owns every seat. No client's speed/skip changes the match. */
+  private readonly aiScoutTimes = new Map<string, number>();
   tick(): void {
     const now = this.now();
     for (const room of this.rooms.values()) {
@@ -196,6 +197,9 @@ export class RoomService {
           this.broadcastState(room); room.draftBroadcastAt = now;
         }
         continue;
+      }
+      if (d.state.phase === 'ROUND_PREP' && now - (this.aiScoutTimes.get(room.code) ?? 0) >= 3000) {
+        d.refreshAiPlacements(); this.aiScoutTimes.set(room.code, now); this.broadcastState(room);
       }
       if (now < room.deadline) continue;
       if (d.state.phase === 'ROUND_RESOLVE') {

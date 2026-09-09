@@ -62,7 +62,8 @@ export function pveEnemyFor(stage: number, round: number): PveEnemyId {
 export function pveScale(stage: number): number {
   // Opening training must be clearable with the draft starter, before the player can build a team.
   if (stage === 1) return .35;
-  return 1 + Math.max(0, stage - 1) * 0.28;
+  const scale = 1 + Math.max(0, stage - 1) * 0.28;
+  return scale * (stage === 4 ? .88 : stage === 5 ? .9 : 1);
 }
 
 export type OrbTier = 'GRAY' | 'BLUE' | 'GOLD';

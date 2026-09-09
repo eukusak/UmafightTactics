@@ -50,6 +50,8 @@ export type PlayerState = {
   eliminatedAtRound: number | null;
   placement: number | null;
   aiProfile: AiProfileId | null;
+  /** Persisted adaptive strategy, optional for older saves. */
+  aiPlan?: import('./ai/strategy').AiPlan;
   /** Opponents faced most recently, newest first; used to avoid instant rematches. */
   recentOpponents: string[];
   /** Round index at which this player's hp last changed, for draft tie-breaks. */
