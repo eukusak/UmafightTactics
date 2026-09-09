@@ -1,3 +1,4 @@
+import { createCarousel, advanceCarousel as advanceCarouselState } from './carousel';
 /**
  * The single owner of match state transitions (spec §32).
  *
@@ -132,7 +133,8 @@ export class RoundDirector {
     this.pendingSettlement = structuredClone(pending);
   }
 
-  constructor(readonly state: MatchState) {
+  constructor(readonly state: MatchState, readonly interactiveDraft = false) {
+    if (interactiveDraft && state.draft && !state.draft.carousel) state.draft.carousel = createCarousel(state.draft, state.stage === 1 && state.round === 1);
     this.rngs = new RngRegistry(state.seed);
     if (Object.keys(state.rngStates).length) this.rngs.restore(state.rngStates);
   }
@@ -173,11 +175,13 @@ export class RoundDirector {
     // 1-1 opens with the Twinkle Start selection; later x-4 rounds are drafts.
     const startSelection = hasStartSelection(s.stage, s.round);
     if (startSelection || this.info.kind === 'DRAFT') {
-      const isFirst = startSelection || !s.history.some((h) => h.kind === 'DRAFT');
+      const isFirst = startSelection || (!this.interactiveDraft && !s.history.some((h) => h.kind === 'DRAFT'));
       s.draft = createDraft(s, this.rngs.get('draft'), isFirst, startSelection);
       s.phase = 'DRAFT';
-      this.resolveAiDraftPicks();
+      if (this.interactiveDraft) s.draft.carousel = createCarousel(s.draft, startSelection);
+      else this.resolveAiDraftPicks();
     }
+    if (s.draft?.carousel) { this.syncRng(); return; }
 
     // The AI plans its board once the round's special phase is settled.
     for (const p of s.players) {
@@ -257,6 +261,21 @@ export class RoundDirector {
     if (!s.draft) for (const player of livingPlayers(s)) finalizeAiFormation(player);
     this.syncRng();
     return true;
+  }
+
+  /** One shared carousel clock is advanced by the server or the solo store. */
+  advanceCarousel(delta: number): void {
+    if (!this.state.draft?.carousel) return;
+    if (advanceCarouselState(this.state, delta)) {
+      this.state.draft = null; this.state.phase = 'ROUND_PREP';
+      for (const p of livingPlayers(this.state)) {
+        if (p.aiProfile === null) continue;
+        if (absoluteRound(this.state.stage, this.state.round) === 1) ensureInitialBoard(this.state, p, this.rngs.get(`ai-${p.id}`));
+        runAiPrep(this.state, p, this.rngs.get(`ai-${p.id}`));
+        finalizeAiFormation(p);
+      }
+      this.syncRng();
+    }
   }
 
   // ----------------------------------------------------------------- battle

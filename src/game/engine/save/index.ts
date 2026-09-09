@@ -81,6 +81,6 @@ export function hasSave(): boolean {
 }
 
 /** Rebuilds a director from a save, restoring every RNG stream. */
-export function restoreDirector(save: SaveGame): RoundDirector {
-  return new RoundDirector(save.match);
+export function restoreDirector(save: SaveGame, interactiveDraft = false): RoundDirector {
+  return new RoundDirector(save.match, interactiveDraft);
 }

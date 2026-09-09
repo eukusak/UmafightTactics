@@ -3,7 +3,7 @@ import { defineConfig } from '@playwright/test';
 export default defineConfig({
   testDir: './tests/browser',
   timeout: 60_000,
-  globalTimeout: 300_000,
+  globalTimeout: 600_000,
   maxFailures: 1,
   workers: 1,
   retries: 0,

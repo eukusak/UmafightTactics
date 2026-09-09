@@ -1,3 +1,4 @@
+import { playSound } from '../game/ui/audio';
 import { create } from 'zustand';
 import type { ClientMessage, RoomView, ServerMessage } from '../game/network/protocol';
 import { onlineBridge } from '../game/network/bridge';
@@ -47,7 +48,8 @@ export const useOnlineStore = create<OnlineStore>((set, get) => ({
           ...(newBattle ? { battleFrames: null, battleTime: m.battleTime, selectedUnitId: null } : {}),
           screen: m.match.phase === 'GAME_OVER' ? 'RESULT' : first || game.screen === 'ONLINE' || game.screen === 'RESULT' ? 'BATTLE' : game.screen,
         });
-      } else if (m.type === 'frames' && m.battleId === game.onlineBattleId) {
+      } else if (m.type === 'ack' && m.sound) playSound(m.sound);
+      else if (m.type === 'frames' && m.battleId === game.onlineBattleId) {
         useGameStore.setState({ battleFrames: m.reset ? m.frames : [...(game.battleFrames ?? []), ...m.frames] });
       }
     };

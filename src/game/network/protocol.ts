@@ -14,6 +14,7 @@ export const commandSchema = z.discriminatedUnion('action', [
   z.object({ action: z.literal('move'), unit: id, position: cell.nullable() }).strict(),
   z.object({ action: z.literal('equip'), unit: id, item: id }).strict(),
   z.object({ action: z.literal('augment'), id }).strict(),
+  z.object({ action: z.literal('carouselMove'), target: z.object({ x: z.number().finite().min(0).max(1100), y: z.number().finite().min(0).max(650) }).strict(), option: z.number().int().min(0).max(15).nullable() }).strict(),
   z.object({ action: z.literal('draft'), index: z.number().int().min(0).max(15) }).strict(),
 ]);
 export type OnlineCommand = z.infer<typeof commandSchema>;
@@ -35,5 +36,5 @@ export type ServerMessage =
   | { type: 'room'; room: RoomView }
   | { type: 'state'; match: MatchState; playerId: string; deadline: number; serverNow: number; battleId: string | null; battleTime: number; settled: boolean }
   | { type: 'frames'; battleId: string; frames: BattleFrame[]; time: number; reset: boolean }
-  | { type: 'ack'; seq: number }
+  | { type: 'ack'; seq: number; sound?: 'level-up' }
   | { type: 'error'; message: string };

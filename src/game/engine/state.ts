@@ -95,6 +95,25 @@ export type DraftState = {
   /** Player ids in pick order. */
   order: string[];
   cursor: number;
+  /** Authoritative shared movement state for interactive matches. */
+  carousel?: CarouselState;
+};
+
+export type CarouselPoint = { x: number; y: number };
+export type CarouselAvatar = CarouselPoint & {
+  playerId: string;
+  home: CarouselPoint;
+  target: CarouselPoint;
+  targetOption: number | null;
+  releaseAt: number;
+  picked: number | null;
+};
+export type CarouselState = {
+  elapsed: number;
+  remainder: number;
+  angle: number;
+  avatars: CarouselAvatar[];
+  completedAt: number | null;
 };
 
 export type BattleOutcome = {

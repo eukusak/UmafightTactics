@@ -12,7 +12,7 @@ import type { ClientMessage, RoomView, ServerMessage } from '../src/game/network
 
 export type Peer = { send: (message: ServerMessage) => void; close: () => void };
 type Seat = { id: string; name: string; token: string; ready: boolean; peer: Peer | null; disconnectedAt: number; lastSeq: number; sentFrames: number };
-export type Room = { seasonId: import('../src/game/engine/seasons/catalog').SeasonId; code: string; hostId: string; seats: Seat[]; director: RoundDirector | null; deadline: number; changedAt: number; phaseKey: string; battleStarted: number; battleDuration: number; battleId: string | null; settled: boolean };
+export type Room = { seasonId: import('../src/game/engine/seasons/catalog').SeasonId; code: string; hostId: string; seats: Seat[]; director: RoundDirector | null; deadline: number; changedAt: number; phaseKey: string; battleStarted: number; battleDuration: number; battleId: string | null; settled: boolean; draftUpdatedAt?: number; draftBroadcastAt?: number };
 type SavedRoom = Omit<Room, 'director' | 'seats'> & {
   seats: Omit<Seat, 'peer'>[];
   match: MatchState | null;
@@ -63,10 +63,11 @@ export class RoomService {
         || !Number.isFinite(rest.deadline) || !Number.isFinite(rest.battleStarted)) throw new Error('Invalid saved room');
       if (!isSeasonId(rest.seasonId)) throw new Error('Invalid saved season');
       if (match && match.seasonId !== rest.seasonId) throw new Error('Saved room season mismatch');
-      const director = match ? new RoundDirector(match) : null;
+      const director = match ? new RoundDirector(match, true) : null;
       director?.restorePendingSettlement(pending);
       for (const [id, record] of frames) director?.playerFrames.set(id, record);
       restored.set(rest.code, { ...rest, director, deadline: rest.deadline ? rest.deadline + shift : 0,
+        draftUpdatedAt: now, draftBroadcastAt: 0,
         battleStarted: rest.battleId ? rest.battleStarted + shift : 0, changedAt: now,
         seats: seats.map((seat) => ({ ...seat, peer: null, disconnectedAt: now, sentFrames: 0 })) });
     }
@@ -134,7 +135,7 @@ export class RoomService {
         const human = room.seats.find((s) => s.id === p.id);
         if (human) { p.isHuman = true; p.aiProfile = null; p.name = human.name; }
       }
-      room.director = new RoundDirector(state); room.director.beginPrep();
+      room.director = new RoundDirector(state, true); room.director.beginPrep();
       this.setDeadline(room); this.broadcastRoom(room); this.broadcastState(room); return;
     }
     if (message.type === 'command') {
@@ -146,7 +147,8 @@ export class RoomService {
       const error = applyOnlineCommand(director, seat.id, message.command);
       if (error) throw new Error(error);
       if (director.state.phase !== 'BATTLE') this.setDeadline(room);
-      peer.send({ type: 'ack', seq: message.seq }); this.broadcastState(room);
+      peer.send({ type: 'ack', seq: message.seq, ...(message.command.action === 'xp' ? { sound: 'level-up' as const } : {}) });
+      if (message.command.action !== 'carouselMove') this.broadcastState(room);
     }
   }
 
@@ -164,11 +166,12 @@ export class RoomService {
 
   private setDeadline(room: Room): void {
     const d = room.director!;
-    const cursor = d.state.draft?.cursor ?? '-';
+    const cursor = d.state.draft?.carousel ? 'carousel' : d.state.draft?.cursor ?? '-';
     const key = `${d.state.stage}-${d.state.round}:${d.state.phase}:${cursor}`;
     if (room.phaseKey === key) return;
     room.phaseKey = key;
-    const seconds = d.state.draft ? 12 : d.state.augmentOffers.length ? 30 : roundInfo(d.state.stage, d.state.round).prepSeconds;
+    if (d.state.draft?.carousel) room.draftUpdatedAt = this.now();
+    const seconds = d.state.draft?.carousel ? 45 : d.state.draft ? 12 : d.state.augmentOffers.length ? 30 : roundInfo(d.state.stage, d.state.round).prepSeconds;
     room.deadline = this.now() + seconds * 1000;
   }
 
@@ -184,6 +187,15 @@ export class RoomService {
         if (now < room.deadline) continue;
         d.settleRound(); room.settled = true; room.deadline = now + 5000;
         this.broadcastState(room); continue;
+      }
+      if (d.state.draft?.carousel) {
+        d.advanceCarousel(Math.max(0, now - (room.draftUpdatedAt ?? now)));
+        room.draftUpdatedAt = now;
+        if (!d.state.draft) this.setDeadline(room);
+        if (!d.state.draft || now - (room.draftBroadcastAt ?? 0) >= 100) {
+          this.broadcastState(room); room.draftBroadcastAt = now;
+        }
+        continue;
       }
       if (now < room.deadline) continue;
       if (d.state.phase === 'ROUND_RESOLVE') {

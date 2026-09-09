@@ -132,7 +132,7 @@ export function ShopControls(): JSX.Element | null {
   const cost = rerollCost(player);
   return (
     <div style={{ display: 'flex', gap: 10, alignItems: 'center' }}>
-      <button onClick={buyXp} disabled={player.gold < XP_PURCHASE_COST || player.level >= 10}>
+      <button data-sound="xp" onClick={buyXp} disabled={player.gold < XP_PURCHASE_COST || player.level >= 10}>
         경험치 구매 ({XP_PURCHASE_COST}G) <span className="muted">{keybinds.buyXp.toUpperCase()}</span>
       </button>
       <button onClick={reroll} disabled={player.gold < cost}>

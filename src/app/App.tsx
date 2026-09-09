@@ -1,6 +1,7 @@
 /** Root shell: screen routing plus the 1920x1080 scale-to-fit wrapper. */
 import { useEffect, useLayoutEffect, useRef, useState } from 'react';
 import { useGameStore } from '../store/gameStore';
+import { playSound } from '../game/ui/audio';
 import { OnlineScreen } from '../components/screens/OnlineScreen';
 import { BattleScreen } from '../components/screens/BattleScreen';
 import { CollectionScreen } from '../components/screens/CollectionScreen';
@@ -34,6 +35,14 @@ function useStageBox(): StageBox {
 }
 
 export function App(): JSX.Element {
+  useEffect(() => {
+    const click = (event: MouseEvent) => {
+      const button = event.target instanceof Element ? event.target.closest('button, [role="button"]') : null;
+      if (button && !button.matches(':disabled, [aria-disabled="true"], [data-sound="xp"]')) playSound('select');
+    };
+    document.addEventListener('click', click);
+    return () => document.removeEventListener('click', click);
+  }, []);
   const screen = useGameStore((s) => s.screen);
   const setScreen = useGameStore((s) => s.setScreen);
   const { scale, left, top } = useStageBox();

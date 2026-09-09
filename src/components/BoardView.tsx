@@ -3,10 +3,10 @@ import { useEffect, useRef, useState } from 'react';
 import Phaser from 'phaser';
 import { useGameStore } from '../store/gameStore';
 import { BattleScene } from '../game/phaser/BattleScene';
-import { Portrait } from './common';
+import { AnimatedUnit } from './AnimatedUnit';
 import { getUnitDef } from '../game/engine/roster';
 import { prepPoint, boardHexPoints } from '../game/ui/board-projection';
-import { arenaUrl, standeeUrl } from '../game/ui/art';
+import { arenaUrl } from '../game/ui/art';
 import { roundInfo } from '../game/engine/rounds/schedule';
 import { useInteractionStore } from '../store/interactionStore';
 import { frameAt, orientSnapshot, samplePosition } from '../game/ui/battle-playback';
@@ -64,7 +64,7 @@ export function PrepBoard({ onUnitContext }: { onUnitContext: (e: React.MouseEve
         onDrop={(e) => drop(e, q, r, unit)} onClick={() => click(q, r, unit)} />;
     })}
     {player.board.filter((u) => u.position).map((unit) => {
-      const p = prepPoint(unit.position!); const def = getUnitDef(unit.unitDefId); const sprite = standeeUrl(def.id);
+      const p = prepPoint(unit.position!); const def = getUnitDef(unit.unitDefId);
       return <div key={unit.instanceId} className={`arena-unit${selectedUnitId === unit.instanceId ? ' selected' : ''}`}
         data-unit-id={unit.instanceId} data-unit-def={unit.unitDefId}
         style={{ transform: `translate3d(${p.x}px,${p.y}px,0) scale(${p.scale})`, zIndex: Math.round(p.y) }}>
@@ -76,8 +76,8 @@ export function PrepBoard({ onUnitContext }: { onUnitContext: (e: React.MouseEve
           onClick={() => click(unit.position!.q, unit.position!.r, unit)}
           onContextMenu={(e) => { e.preventDefault(); onUnitContext(e, unit); }}>
           <span className="arena-unit-base" style={{ borderColor: `var(--cost-${def.cost})` }} />
-          {sprite ? <img className="arena-standee" src={sprite} alt={def.nameKo} draggable={false} /> : <div className="arena-unit-portrait"><Portrait id={def.id} name={def.nameKo} /></div>}
-          <span className="arena-unit-stars" style={{ top: sprite ? 14 : 61 }}>{'★'.repeat(unit.star)}</span>
+          <AnimatedUnit id={def.id} name={def.nameKo} className="arena-idle" />
+          <span className="arena-unit-stars" >{'★'.repeat(unit.star)}</span>
           <span className="arena-unit-health" />
           <span className="arena-unit-name">{def.nameKo}</span>
         </div>
