@@ -25,6 +25,14 @@ test('carousel requires walking, supports arrows and floor clicks, then shows an
   expect(bounds!.x).toBeGreaterThanOrEqual(0); expect(bounds!.y).toBeGreaterThanOrEqual(0);
   expect(bounds!.x + bounds!.width).toBeLessThanOrEqual(viewport.width + 1);
   expect(bounds!.y + bounds!.height).toBeLessThanOrEqual(viewport.height + 1);
+  const openingOption = page.locator('.carousel-option').first();
+  const openingBox = (await openingOption.boundingBox())!;
+  await page.mouse.click(openingBox.x + openingBox.width / 2, openingBox.y + openingBox.height * .7);
+  await expect(page.locator('.carousel-option.targeted')).toHaveCount(1);
+  await expect(me).toHaveAttribute('data-picked', '');
+  // Cancel the chase before release so the following checks isolate direct movement.
+  const openingArena = (await arena.boundingBox())!;
+  await page.mouse.click(openingArena.x + openingArena.width * .94, openingArena.y + openingArena.height * .94);
   const initial = await page.locator('.carousel-option').first().getAttribute('style');
   await expect.poll(() => page.locator('.carousel-option').first().getAttribute('style')).not.toBe(initial);
   await expect(me).not.toHaveClass(/waiting/, { timeout: 5000 });
