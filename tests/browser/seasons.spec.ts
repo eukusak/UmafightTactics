@@ -6,7 +6,7 @@ const { seasons: SEASONS } = JSON.parse(readFileSync(new URL('../../src/data/gen
 
 async function mainMenu(page: Page): Promise<void> {
   await page.goto('/');
-  await page.getByRole('button', { name: '시작하기', exact: true }).click();
+  await page.getByRole('button', { name: '시작하기' }).click();
 }
 
 async function inViewport(page: Page, selector: string): Promise<void> {
@@ -27,7 +27,7 @@ for (const season of SEASONS) {
       if (response.url().includes('/assets/') && response.status() >= 400) errors.push(`${response.status()} ${response.url()}`);
     });
     await mainMenu(page);
-    await page.getByRole('button', { name: '새 게임', exact: true }).click();
+    await page.getByRole('button', { name: '새 게임' }).click();
     const card = page.getByRole('button', { name: new RegExp(season.name) });
     await card.click();
     await expect(card).toHaveAttribute('aria-pressed', 'true');
@@ -52,9 +52,9 @@ for (const season of SEASONS) {
       await expect(image).toHaveJSProperty('naturalWidth', 256);
     }
     await page.screenshot({ path: info.outputPath(`${season.id}-roster.png`) });
-    await page.getByRole('button', { name: '닫기', exact: true }).click();
+    await page.getByRole('button', { name: '닫기' }).click();
     await expect(page.locator('.season-roster')).toHaveCount(0);
-    await page.getByRole('button', { name: '게임 시작', exact: true }).click();
+    await page.getByRole('button', { name: '게임 시작' }).click();
     await expect(page.locator('.hud-top')).toContainText(season.id.toUpperCase());
     await expect(page.locator('.hud-shop')).toBeVisible();
     expect(errors).toEqual([]);
@@ -63,7 +63,7 @@ for (const season of SEASONS) {
 
 test('collection season and faction filters', async ({ page }, info) => {
   await mainMenu(page);
-  await page.getByRole('button', { name: '도감 (145명)', exact: true }).click();
+  await page.getByRole('button', { name: '도감 (145명)' }).click();
   await expect(page.locator('.collection-card')).toHaveCount(145);
   for (const season of SEASONS) {
     await page.getByLabel('도감 시즌').selectOption(season.id);
@@ -92,13 +92,13 @@ test('online season selection, room creation and joining', async ({ page, browse
       await mainMenu(guest);
       await guest.getByRole('button', { name: '온라인 대전 · 최대 8인' }).click();
       await guest.getByLabel('방 코드', { exact: true }).fill(code);
-      await guest.getByRole('button', { name: '방 참가', exact: true }).click();
+      await guest.getByRole('button', { name: '방 참가' }).click();
       await expect(guest.locator('.online-lobby')).toContainText(season.name);
       await expect(guest.locator('.season-screen')).toHaveCSS('background-image', new RegExp(`/seasons/${season.id}\\.webp`));
       await expect(page.locator('.online-seat.occupied')).toHaveCount(2);
       await page.screenshot({ path: info.outputPath(`${season.id}-online.png`) });
-      await guest.getByRole('button', { name: '방 나가기', exact: true }).click();
-      await page.getByRole('button', { name: '방 나가기', exact: true }).click();
+      await guest.getByRole('button', { name: '방 나가기' }).click();
+      await page.getByRole('button', { name: '방 나가기' }).click();
       await expect(page.getByLabel('새 방 시즌')).toBeVisible();
     }
   } finally { await guest.close(); }
