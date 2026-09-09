@@ -68,7 +68,7 @@ export function PrepBoard({ onUnitContext }: { onUnitContext: (e: React.MouseEve
       return <div key={unit.instanceId} className={`arena-unit${selectedUnitId === unit.instanceId ? ' selected' : ''}`}
         data-unit-id={unit.instanceId} data-unit-def={unit.unitDefId}
         style={{ transform: `translate3d(${p.x}px,${p.y}px,0) scale(${p.scale})`, zIndex: Math.round(p.y) }}>
-        <div className="arena-unit-touch" role="button" tabIndex={0} aria-label={`${def.nameKo} 정보`} 
+        <div className="arena-unit-touch" role="button" tabIndex={0} aria-label={`${def.nameKo} 정보`}
           onMouseEnter={() => useInteractionStore.getState().hover(unit.instanceId)}
           onMouseLeave={() => useInteractionStore.getState().hover(null)}
           onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); click(unit.position!.q, unit.position!.r, unit); } }} draggable onDragStart={(e) => { useInteractionStore.getState().drag(unit.instanceId); e.dataTransfer.setData('application/x-unit', unit.instanceId); e.dataTransfer.effectAllowed = 'move'; }}
@@ -167,7 +167,7 @@ export function BattleInspectTargets(): JSX.Element | null {
     const following = next?.units.find(n => n.id === u.id);
     const p = samplePosition(orientSnapshot(u, mirrored), following ? orientSnapshot(following, mirrored) : undefined, mix);
     const inspect = () => useInteractionStore.getState().inspect({ kind: 'combat', id: u.id });
-    return <button key={u.id} className="battle-inspect-target" aria-label={`${getUnitDef(u.unitDefId).nameKo} 전투 정보`}
+    return <button key={u.id} className="battle-inspect-target" data-combat-id={u.id} aria-label={`${getUnitDef(u.unitDefId).nameKo} 전투 정보`}
       style={{ left: p.x - 35 * p.scale, top: p.y - 110 * p.scale, width: 70 * p.scale, height: 110 * p.scale, zIndex: Math.round(p.y) }}
       onClick={inspect} onContextMenu={e => { e.preventDefault(); inspect(); }} />;
   })}</div>;

@@ -129,14 +129,15 @@ test('unit selection inspects without moving another unit; gear updates stats; t
   expect(bounds!.x + bounds!.width).toBeLessThanOrEqual(viewport.width + 1);
 });
 
-test('battle units remain inspectable; field sale is blocked; bench sale and reroll still work', async ({ page }) => {
+test('battle units remain inspectable; field sale is blocked; bench sale still works', async ({ page }) => {
   await setup(page); await collapseDev(page);
-  const unit = await buy(page);
+  const unit = await buy(page), unitId = await unit.getAttribute('data-unit-id');
   await unit.hover(); await page.keyboard.press('w');
   const bench = await buy(page), benchId = await bench.getAttribute('data-unit-id');
   await page.getByRole('button', { name: /전투 시작 \(/ }).click();
   await expect(page.locator('.battle-inspect-target').first()).toBeVisible();
-  await page.locator('.battle-inspect-target').first().click();
+  await page.locator(`.battle-inspect-target[data-combat-id="p1#${unitId}"]`).click();
+  await expect(page.locator('.detail-sell')).toBeDisabled();
   await expect(page.locator('.detail-panel')).toContainText('전투 중 현재 능력치');
   await page.keyboard.press('Tab');
   await expect(page.locator('.detail-panel')).toContainText('전투 통계');
