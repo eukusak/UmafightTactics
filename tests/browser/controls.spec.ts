@@ -12,7 +12,17 @@ async function setup(page: Page) {
   await page.getByRole('button', { name: '+50G', exact: true }).click();
 }
 const gold = async (page: Page) => Number(await page.locator('.hud-top .stat').filter({ hasText: '골드' }).locator('b').innerText());
-async function collapseDev(page: Page) { await page.locator('.dev-head button').click(); }
+async function collapseDev(page: Page) {
+  await page.getByRole('button', { name: '설정', exact: true }).click();
+  await page.getByLabel('개발자 패널').uncheck();
+  await page.getByRole('button', { name: '돌아가기' }).click();
+}
+async function grantComponents(page: Page) {
+  // The draft already grants one material. Equip it before adding ten so this
+  // successful-sale scenario respects the real ten-slot storage limit.
+  await page.locator('.hud-left [draggable="true"]').first().dragTo(page.locator('.bench-slot.filled').first());
+  await page.getByRole('button', { name: '재료 10종', exact: true }).click();
+}
 
 async function buy(page: Page) {
   const count = await page.locator('.bench-slot.filled').count();
@@ -23,7 +33,7 @@ async function buy(page: Page) {
 
 test('shop drag sells bench and field units, refunds gold and returns equipment', async ({ page }, info) => {
   await setup(page);
-  await page.getByRole('button', { name: '재료 10종', exact: true }).click();
+  await grantComponents(page);
   await collapseDev(page);
   const bench = await buy(page);
   await bench.click();
@@ -95,7 +105,7 @@ test('keyboard supports Korean physical keys, uppercase, E/W, custom bindings an
 
 test('unit selection inspects without moving another unit; gear updates stats; traits and recipes open on right', async ({ page }, info) => {
   await setup(page);
-  await page.getByRole('button', { name: '재료 10종', exact: true }).click();
+  await grantComponents(page);
   await collapseDev(page);
   const unit = await buy(page), id = await unit.getAttribute('data-unit-id');
   await unit.hover(); await page.keyboard.press('w');
