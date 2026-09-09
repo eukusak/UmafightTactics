@@ -1,0 +1,12 @@
+{
+  "approved": true,
+  "source": "alpha.png",
+  "skillReview": "섞여 생성된 공격, 스킬, 쓰러짐 행을 다시 생성. 원거리 한손 발사, 아군 강화의 양팔 확장, 단계별 쓰러짐을 구별. 분홍 상의, 체크무늬 흰 치마, 녹색 리본과 밝은 삐침 머리 유지. 24포즈 확인.",
+  "reviewedAt": "2026-09-09",
+  "checks": [
+    "Race costume and identity",
+    "24 poses with correct action rows",
+    "actual skill target and effect",
+    "transparent RGBA"
+  ]
+}

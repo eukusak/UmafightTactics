@@ -1,0 +1,443 @@
+{
+  "format": "uft-baked-frames-v1",
+  "scale": 0.4015444015444015,
+  "anchor": [
+    64,
+    110
+  ],
+  "runtimeSha256": "29173960d1bf6e7362653bb1ee4cc2c1fc47c3d6169cbb7b1284c0c6f83f9997",
+  "frames": [
+    {
+      "frame": 0,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/production-144/air_messiah/alpha.png",
+      "sourceSha256": "c437e246c58d4b4e26c5b598bc786e9ef674d94b93fe1fd21d55c45cb3fa5ecf",
+      "crop": [
+        48,
+        9,
+        198,
+        254
+      ],
+      "destination": [
+        34,
+        12,
+        60,
+        98
+      ]
+    },
+    {
+      "frame": 1,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/production-144/air_messiah/alpha.png",
+      "sourceSha256": "c437e246c58d4b4e26c5b598bc786e9ef674d94b93fe1fd21d55c45cb3fa5ecf",
+      "crop": [
+        296,
+        9,
+        450,
+        255
+      ],
+      "destination": [
+        161,
+        11,
+        62,
+        99
+      ]
+    },
+    {
+      "frame": 2,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/production-144/air_messiah/alpha.png",
+      "sourceSha256": "c437e246c58d4b4e26c5b598bc786e9ef674d94b93fe1fd21d55c45cb3fa5ecf",
+      "crop": [
+        549,
+        9,
+        703,
+        255
+      ],
+      "destination": [
+        289,
+        11,
+        62,
+        99
+      ]
+    },
+    {
+      "frame": 3,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/production-144/air_messiah/alpha.png",
+      "sourceSha256": "c437e246c58d4b4e26c5b598bc786e9ef674d94b93fe1fd21d55c45cb3fa5ecf",
+      "crop": [
+        803,
+        9,
+        954,
+        255
+      ],
+      "destination": [
+        417,
+        11,
+        61,
+        99
+      ]
+    },
+    {
+      "frame": 4,
+      "sourceFrame": 4,
+      "source": "docs/art-source/motions/production-144/air_messiah/alpha.png",
+      "sourceSha256": "c437e246c58d4b4e26c5b598bc786e9ef674d94b93fe1fd21d55c45cb3fa5ecf",
+      "crop": [
+        22,
+        263,
+        211,
+        505
+      ],
+      "destination": [
+        26,
+        141,
+        76,
+        97
+      ]
+    },
+    {
+      "frame": 5,
+      "sourceFrame": 5,
+      "source": "docs/art-source/motions/production-144/air_messiah/alpha.png",
+      "sourceSha256": "c437e246c58d4b4e26c5b598bc786e9ef674d94b93fe1fd21d55c45cb3fa5ecf",
+      "crop": [
+        277,
+        268,
+        470,
+        506
+      ],
+      "destination": [
+        153,
+        142,
+        77,
+        96
+      ]
+    },
+    {
+      "frame": 6,
+      "sourceFrame": 6,
+      "source": "docs/art-source/motions/production-144/air_messiah/alpha.png",
+      "sourceSha256": "c437e246c58d4b4e26c5b598bc786e9ef674d94b93fe1fd21d55c45cb3fa5ecf",
+      "crop": [
+        529,
+        264,
+        714,
+        504
+      ],
+      "destination": [
+        283,
+        142,
+        74,
+        96
+      ]
+    },
+    {
+      "frame": 7,
+      "sourceFrame": 7,
+      "source": "docs/art-source/motions/production-144/air_messiah/alpha.png",
+      "sourceSha256": "c437e246c58d4b4e26c5b598bc786e9ef674d94b93fe1fd21d55c45cb3fa5ecf",
+      "crop": [
+        789,
+        271,
+        978,
+        506
+      ],
+      "destination": [
+        410,
+        144,
+        76,
+        94
+      ]
+    },
+    {
+      "frame": 8,
+      "sourceFrame": 8,
+      "source": "docs/art-source/motions/production-144/air_messiah/alpha.png",
+      "sourceSha256": "c437e246c58d4b4e26c5b598bc786e9ef674d94b93fe1fd21d55c45cb3fa5ecf",
+      "crop": [
+        35,
+        516,
+        245,
+        769
+      ],
+      "destination": [
+        22,
+        264,
+        84,
+        102
+      ]
+    },
+    {
+      "frame": 9,
+      "sourceFrame": 9,
+      "source": "docs/art-source/motions/production-144/air_messiah/alpha.png",
+      "sourceSha256": "c437e246c58d4b4e26c5b598bc786e9ef674d94b93fe1fd21d55c45cb3fa5ecf",
+      "crop": [
+        293,
+        524,
+        456,
+        769
+      ],
+      "destination": [
+        159,
+        268,
+        65,
+        98
+      ]
+    },
+    {
+      "frame": 10,
+      "sourceFrame": 10,
+      "source": "docs/art-source/motions/production-144/air_messiah/alpha.png",
+      "sourceSha256": "c437e246c58d4b4e26c5b598bc786e9ef674d94b93fe1fd21d55c45cb3fa5ecf",
+      "crop": [
+        545,
+        519,
+        749,
+        769
+      ],
+      "destination": [
+        279,
+        266,
+        82,
+        100
+      ]
+    },
+    {
+      "frame": 11,
+      "sourceFrame": 11,
+      "source": "docs/art-source/motions/production-144/air_messiah/alpha.png",
+      "sourceSha256": "c437e246c58d4b4e26c5b598bc786e9ef674d94b93fe1fd21d55c45cb3fa5ecf",
+      "crop": [
+        806,
+        520,
+        972,
+        769
+      ],
+      "destination": [
+        414,
+        266,
+        67,
+        100
+      ]
+    },
+    {
+      "frame": 12,
+      "sourceFrame": 12,
+      "source": "docs/art-source/motions/production-144/air_messiah/alpha.png",
+      "sourceSha256": "c437e246c58d4b4e26c5b598bc786e9ef674d94b93fe1fd21d55c45cb3fa5ecf",
+      "crop": [
+        39,
+        786,
+        243,
+        1045
+      ],
+      "destination": [
+        23,
+        390,
+        82,
+        104
+      ]
+    },
+    {
+      "frame": 13,
+      "sourceFrame": 13,
+      "source": "docs/art-source/motions/production-144/air_messiah/alpha.png",
+      "sourceSha256": "c437e246c58d4b4e26c5b598bc786e9ef674d94b93fe1fd21d55c45cb3fa5ecf",
+      "crop": [
+        297,
+        790,
+        454,
+        1045
+      ],
+      "destination": [
+        160,
+        392,
+        63,
+        102
+      ]
+    },
+    {
+      "frame": 14,
+      "sourceFrame": 14,
+      "source": "docs/art-source/motions/production-144/air_messiah/alpha.png",
+      "sourceSha256": "c437e246c58d4b4e26c5b598bc786e9ef674d94b93fe1fd21d55c45cb3fa5ecf",
+      "crop": [
+        545,
+        787,
+        745,
+        1045
+      ],
+      "destination": [
+        280,
+        390,
+        80,
+        104
+      ]
+    },
+    {
+      "frame": 15,
+      "sourceFrame": 15,
+      "source": "docs/art-source/motions/production-144/air_messiah/alpha.png",
+      "sourceSha256": "c437e246c58d4b4e26c5b598bc786e9ef674d94b93fe1fd21d55c45cb3fa5ecf",
+      "crop": [
+        811,
+        786,
+        963,
+        1045
+      ],
+      "destination": [
+        417,
+        390,
+        61,
+        104
+      ]
+    },
+    {
+      "frame": 16,
+      "sourceFrame": 16,
+      "source": "docs/art-source/motions/production-144/air_messiah/alpha.png",
+      "sourceSha256": "c437e246c58d4b4e26c5b598bc786e9ef674d94b93fe1fd21d55c45cb3fa5ecf",
+      "crop": [
+        43,
+        1069,
+        207,
+        1293
+      ],
+      "destination": [
+        31,
+        532,
+        66,
+        90
+      ]
+    },
+    {
+      "frame": 17,
+      "sourceFrame": 17,
+      "source": "docs/art-source/motions/production-144/air_messiah/alpha.png",
+      "sourceSha256": "c437e246c58d4b4e26c5b598bc786e9ef674d94b93fe1fd21d55c45cb3fa5ecf",
+      "crop": [
+        291,
+        1070,
+        459,
+        1293
+      ],
+      "destination": [
+        158,
+        532,
+        67,
+        90
+      ]
+    },
+    {
+      "frame": 18,
+      "sourceFrame": 18,
+      "source": "docs/art-source/motions/production-144/air_messiah/alpha.png",
+      "sourceSha256": "c437e246c58d4b4e26c5b598bc786e9ef674d94b93fe1fd21d55c45cb3fa5ecf",
+      "crop": [
+        531,
+        1072,
+        728,
+        1293
+      ],
+      "destination": [
+        280,
+        533,
+        79,
+        89
+      ]
+    },
+    {
+      "frame": 19,
+      "sourceFrame": 19,
+      "source": "docs/art-source/motions/production-144/air_messiah/alpha.png",
+      "sourceSha256": "c437e246c58d4b4e26c5b598bc786e9ef674d94b93fe1fd21d55c45cb3fa5ecf",
+      "crop": [
+        774,
+        1160,
+        1024,
+        1272
+      ],
+      "destination": [
+        398,
+        577,
+        100,
+        45
+      ]
+    },
+    {
+      "frame": 20,
+      "sourceFrame": 20,
+      "source": "docs/art-source/motions/production-144/air_messiah/alpha.png",
+      "sourceSha256": "c437e246c58d4b4e26c5b598bc786e9ef674d94b93fe1fd21d55c45cb3fa5ecf",
+      "crop": [
+        48,
+        1293,
+        206,
+        1533
+      ],
+      "destination": [
+        32,
+        654,
+        63,
+        96
+      ]
+    },
+    {
+      "frame": 21,
+      "sourceFrame": 21,
+      "source": "docs/art-source/motions/production-144/air_messiah/alpha.png",
+      "sourceSha256": "c437e246c58d4b4e26c5b598bc786e9ef674d94b93fe1fd21d55c45cb3fa5ecf",
+      "crop": [
+        293,
+        1293,
+        459,
+        1533
+      ],
+      "destination": [
+        158,
+        654,
+        67,
+        96
+      ]
+    },
+    {
+      "frame": 22,
+      "sourceFrame": 22,
+      "source": "docs/art-source/motions/production-144/air_messiah/alpha.png",
+      "sourceSha256": "c437e246c58d4b4e26c5b598bc786e9ef674d94b93fe1fd21d55c45cb3fa5ecf",
+      "crop": [
+        540,
+        1293,
+        724,
+        1533
+      ],
+      "destination": [
+        283,
+        654,
+        74,
+        96
+      ]
+    },
+    {
+      "frame": 23,
+      "sourceFrame": 23,
+      "source": "docs/art-source/motions/production-144/air_messiah/alpha.png",
+      "sourceSha256": "c437e246c58d4b4e26c5b598bc786e9ef674d94b93fe1fd21d55c45cb3fa5ecf",
+      "crop": [
+        809,
+        1293,
+        965,
+        1534
+      ],
+      "destination": [
+        416,
+        653,
+        63,
+        97
+      ]
+    }
+  ]
+}

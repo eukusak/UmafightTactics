@@ -1,0 +1,443 @@
+{
+  "format": "uft-baked-frames-v1",
+  "scale": 0.4094488188976378,
+  "anchor": [
+    64,
+    110
+  ],
+  "runtimeSha256": "87493a1868ab59051a7dc1a3c136e11aa4a20795fbca7b0952d016c209ace92c",
+  "frames": [
+    {
+      "frame": 0,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/production-144/rhein_kraft/alpha.png",
+      "sourceSha256": "f373bec2cc7ea04927aebf34d1492f764b0265add0923796074b9e64b851a919",
+      "crop": [
+        48,
+        5,
+        201,
+        251
+      ],
+      "destination": [
+        32,
+        9,
+        63,
+        101
+      ]
+    },
+    {
+      "frame": 1,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/production-144/rhein_kraft/alpha.png",
+      "sourceSha256": "f373bec2cc7ea04927aebf34d1492f764b0265add0923796074b9e64b851a919",
+      "crop": [
+        310,
+        11,
+        468,
+        251
+      ],
+      "destination": [
+        159,
+        12,
+        65,
+        98
+      ]
+    },
+    {
+      "frame": 2,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/production-144/rhein_kraft/alpha.png",
+      "sourceSha256": "f373bec2cc7ea04927aebf34d1492f764b0265add0923796074b9e64b851a919",
+      "crop": [
+        578,
+        8,
+        733,
+        251
+      ],
+      "destination": [
+        288,
+        11,
+        63,
+        99
+      ]
+    },
+    {
+      "frame": 3,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/production-144/rhein_kraft/alpha.png",
+      "sourceSha256": "f373bec2cc7ea04927aebf34d1492f764b0265add0923796074b9e64b851a919",
+      "crop": [
+        835,
+        11,
+        993,
+        251
+      ],
+      "destination": [
+        415,
+        12,
+        65,
+        98
+      ]
+    },
+    {
+      "frame": 4,
+      "sourceFrame": 4,
+      "source": "docs/art-source/motions/production-144/rhein_kraft/alpha.png",
+      "sourceSha256": "f373bec2cc7ea04927aebf34d1492f764b0265add0923796074b9e64b851a919",
+      "crop": [
+        29,
+        264,
+        210,
+        507
+      ],
+      "destination": [
+        27,
+        139,
+        74,
+        99
+      ]
+    },
+    {
+      "frame": 5,
+      "sourceFrame": 5,
+      "source": "docs/art-source/motions/production-144/rhein_kraft/alpha.png",
+      "sourceSha256": "f373bec2cc7ea04927aebf34d1492f764b0265add0923796074b9e64b851a919",
+      "crop": [
+        294,
+        266,
+        470,
+        508
+      ],
+      "destination": [
+        156,
+        139,
+        72,
+        99
+      ]
+    },
+    {
+      "frame": 6,
+      "sourceFrame": 6,
+      "source": "docs/art-source/motions/production-144/rhein_kraft/alpha.png",
+      "sourceSha256": "f373bec2cc7ea04927aebf34d1492f764b0265add0923796074b9e64b851a919",
+      "crop": [
+        550,
+        265,
+        739,
+        507
+      ],
+      "destination": [
+        281,
+        139,
+        77,
+        99
+      ]
+    },
+    {
+      "frame": 7,
+      "sourceFrame": 7,
+      "source": "docs/art-source/motions/production-144/rhein_kraft/alpha.png",
+      "sourceSha256": "f373bec2cc7ea04927aebf34d1492f764b0265add0923796074b9e64b851a919",
+      "crop": [
+        814,
+        268,
+        998,
+        508
+      ],
+      "destination": [
+        410,
+        140,
+        75,
+        98
+      ]
+    },
+    {
+      "frame": 8,
+      "sourceFrame": 8,
+      "source": "docs/art-source/motions/production-144/rhein_kraft/alpha.png",
+      "sourceSha256": "f373bec2cc7ea04927aebf34d1492f764b0265add0923796074b9e64b851a919",
+      "crop": [
+        46,
+        521,
+        241,
+        774
+      ],
+      "destination": [
+        24,
+        262,
+        80,
+        104
+      ]
+    },
+    {
+      "frame": 9,
+      "sourceFrame": 9,
+      "source": "docs/art-source/motions/production-144/rhein_kraft/alpha.png",
+      "sourceSha256": "f373bec2cc7ea04927aebf34d1492f764b0265add0923796074b9e64b851a919",
+      "crop": [
+        308,
+        521,
+        471,
+        774
+      ],
+      "destination": [
+        158,
+        262,
+        67,
+        104
+      ]
+    },
+    {
+      "frame": 10,
+      "sourceFrame": 10,
+      "source": "docs/art-source/motions/production-144/rhein_kraft/alpha.png",
+      "sourceSha256": "f373bec2cc7ea04927aebf34d1492f764b0265add0923796074b9e64b851a919",
+      "crop": [
+        566,
+        521,
+        772,
+        774
+      ],
+      "destination": [
+        278,
+        262,
+        84,
+        104
+      ]
+    },
+    {
+      "frame": 11,
+      "sourceFrame": 11,
+      "source": "docs/art-source/motions/production-144/rhein_kraft/alpha.png",
+      "sourceSha256": "f373bec2cc7ea04927aebf34d1492f764b0265add0923796074b9e64b851a919",
+      "crop": [
+        832,
+        520,
+        994,
+        774
+      ],
+      "destination": [
+        415,
+        262,
+        66,
+        104
+      ]
+    },
+    {
+      "frame": 12,
+      "sourceFrame": 12,
+      "source": "docs/art-source/motions/production-144/rhein_kraft/alpha.png",
+      "sourceSha256": "f373bec2cc7ea04927aebf34d1492f764b0265add0923796074b9e64b851a919",
+      "crop": [
+        46,
+        794,
+        211,
+        1045
+      ],
+      "destination": [
+        30,
+        391,
+        68,
+        103
+      ]
+    },
+    {
+      "frame": 13,
+      "sourceFrame": 13,
+      "source": "docs/art-source/motions/production-144/rhein_kraft/alpha.png",
+      "sourceSha256": "f373bec2cc7ea04927aebf34d1492f764b0265add0923796074b9e64b851a919",
+      "crop": [
+        307,
+        797,
+        478,
+        1045
+      ],
+      "destination": [
+        157,
+        392,
+        70,
+        102
+      ]
+    },
+    {
+      "frame": 14,
+      "sourceFrame": 14,
+      "source": "docs/art-source/motions/production-144/rhein_kraft/alpha.png",
+      "sourceSha256": "f373bec2cc7ea04927aebf34d1492f764b0265add0923796074b9e64b851a919",
+      "crop": [
+        556,
+        798,
+        762,
+        1045
+      ],
+      "destination": [
+        278,
+        393,
+        84,
+        101
+      ]
+    },
+    {
+      "frame": 15,
+      "sourceFrame": 15,
+      "source": "docs/art-source/motions/production-144/rhein_kraft/alpha.png",
+      "sourceSha256": "f373bec2cc7ea04927aebf34d1492f764b0265add0923796074b9e64b851a919",
+      "crop": [
+        839,
+        799,
+        1009,
+        1045
+      ],
+      "destination": [
+        413,
+        393,
+        70,
+        101
+      ]
+    },
+    {
+      "frame": 16,
+      "sourceFrame": 16,
+      "source": "docs/art-source/motions/production-144/rhein_kraft/alpha.png",
+      "sourceSha256": "f373bec2cc7ea04927aebf34d1492f764b0265add0923796074b9e64b851a919",
+      "crop": [
+        42,
+        1061,
+        211,
+        1278
+      ],
+      "destination": [
+        29,
+        533,
+        69,
+        89
+      ]
+    },
+    {
+      "frame": 17,
+      "sourceFrame": 17,
+      "source": "docs/art-source/motions/production-144/rhein_kraft/alpha.png",
+      "sourceSha256": "f373bec2cc7ea04927aebf34d1492f764b0265add0923796074b9e64b851a919",
+      "crop": [
+        301,
+        1074,
+        495,
+        1278
+      ],
+      "destination": [
+        152,
+        538,
+        79,
+        84
+      ]
+    },
+    {
+      "frame": 18,
+      "sourceFrame": 18,
+      "source": "docs/art-source/motions/production-144/rhein_kraft/alpha.png",
+      "sourceSha256": "f373bec2cc7ea04927aebf34d1492f764b0265add0923796074b9e64b851a919",
+      "crop": [
+        552,
+        1106,
+        728,
+        1278
+      ],
+      "destination": [
+        284,
+        552,
+        72,
+        70
+      ]
+    },
+    {
+      "frame": 19,
+      "sourceFrame": 19,
+      "source": "docs/art-source/motions/production-144/rhein_kraft/alpha.png",
+      "sourceSha256": "f373bec2cc7ea04927aebf34d1492f764b0265add0923796074b9e64b851a919",
+      "crop": [
+        772,
+        1152,
+        1022,
+        1278
+      ],
+      "destination": [
+        397,
+        570,
+        102,
+        52
+      ]
+    },
+    {
+      "frame": 20,
+      "sourceFrame": 20,
+      "source": "docs/art-source/motions/production-144/rhein_kraft/alpha.png",
+      "sourceSha256": "f373bec2cc7ea04927aebf34d1492f764b0265add0923796074b9e64b851a919",
+      "crop": [
+        56,
+        1288,
+        212,
+        1520
+      ],
+      "destination": [
+        32,
+        655,
+        64,
+        95
+      ]
+    },
+    {
+      "frame": 21,
+      "sourceFrame": 21,
+      "source": "docs/art-source/motions/production-144/rhein_kraft/alpha.png",
+      "sourceSha256": "f373bec2cc7ea04927aebf34d1492f764b0265add0923796074b9e64b851a919",
+      "crop": [
+        309,
+        1290,
+        474,
+        1521
+      ],
+      "destination": [
+        158,
+        655,
+        68,
+        95
+      ]
+    },
+    {
+      "frame": 22,
+      "sourceFrame": 22,
+      "source": "docs/art-source/motions/production-144/rhein_kraft/alpha.png",
+      "sourceSha256": "f373bec2cc7ea04927aebf34d1492f764b0265add0923796074b9e64b851a919",
+      "crop": [
+        568,
+        1288,
+        729,
+        1518
+      ],
+      "destination": [
+        287,
+        656,
+        66,
+        94
+      ]
+    },
+    {
+      "frame": 23,
+      "sourceFrame": 23,
+      "source": "docs/art-source/motions/production-144/rhein_kraft/alpha.png",
+      "sourceSha256": "f373bec2cc7ea04927aebf34d1492f764b0265add0923796074b9e64b851a919",
+      "crop": [
+        833,
+        1288,
+        992,
+        1520
+      ],
+      "destination": [
+        415,
+        655,
+        65,
+        95
+      ]
+    }
+  ]
+}

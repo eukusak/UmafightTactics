@@ -1,0 +1,12 @@
+{
+  "approved": true,
+  "source": "alpha.png",
+  "skillReview": "누락되었던 스킬 행을 재생성하여 최종 24포즈 확인. 원거리 기본 공격, 적 밀집 지점 조준과 집중 후 양손 광역 기절 방출. 녹색 머리와 주황 안경, 넓은 노란 소매와 잎무늬 파란 치마 유지.",
+  "reviewedAt": "2026-09-09",
+  "checks": [
+    "Race costume and identity",
+    "24 poses with correct action rows",
+    "actual skill target and effect",
+    "transparent RGBA"
+  ]
+}
