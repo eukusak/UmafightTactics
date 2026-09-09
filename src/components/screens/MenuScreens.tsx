@@ -1,3 +1,4 @@
+import { bindingKey } from '../../game/ui/keybindings';
 /** Title, main menu, match setup, settings and final result screens. */
 import { useState } from 'react';
 import { useGameStore, DEFAULT_KEYBINDS } from '../../store/gameStore';
@@ -158,7 +159,7 @@ export function SettingsScreen(): JSX.Element {
               onKeyDown={(e) => {
                 if (rebinding !== action) return;
                 e.preventDefault();
-                setSettings({ keybinds: { ...settings.keybinds, [action]: e.key } });
+                setSettings({ keybinds: { ...settings.keybinds, [action]: bindingKey(e.nativeEvent) } });
                 setRebinding(null);
               }}
             >

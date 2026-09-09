@@ -202,7 +202,8 @@ export const useGameStore = create<GameStore>((set, get) => ({
     const player = get().human();
     if (!director || !player) return;
     const result = sellUnit(director.state, player, instanceId);
-    if (!result.ok) set({ lastError: '아이템 보관함이 가득 차 판매할 수 없습니다.' });
+    if (!result.ok) set({ lastError: result.reason === 'NOT_FOUND' ? '판매할 기물이 없습니다.' : '아이템 보관함이 가득 차 판매할 수 없습니다.' });
+    else set({ lastError: null, selectedUnitId: get().selectedUnitId === instanceId ? null : get().selectedUnitId });
     bump(set);
   },
 

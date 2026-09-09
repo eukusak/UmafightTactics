@@ -1,9 +1,11 @@
 /** Shop row, bench row and the footer controls. */
+import { useState } from 'react';
+import { useInteractionStore } from '../store/interactionStore';
 import { useGameStore } from '../store/gameStore';
 import { getUnitDef, getUnitTraits } from '../game/engine/roster';
 import { getTrait } from '../game/engine/traits/trait-defs';
 import { rerollCost } from '../game/engine/economy';
-import { benchCapacity } from '../game/engine/shop';
+import { benchCapacity, sellPrice } from '../game/engine/shop';
 import { XP_PURCHASE_COST } from '../game/engine/constants';
 import { Portrait, UnitToken, costVar } from './common';
 import type { UnitInstance } from '../game/engine/state';
@@ -11,11 +13,18 @@ import type { UnitInstance } from '../game/engine/state';
 export function ShopRow(): JSX.Element | null {
   const player = useGameStore((s) => s.human());
   const buy = useGameStore((s) => s.buy);
+  const dragged = useInteractionStore(s => s.draggedUnit);
+  const [over, setOver] = useState(false);
   useGameStore((s) => s.revision);
   if (!player) return null;
 
+  const unit = [...player.board, ...player.bench].find(u => u.instanceId === dragged);
   return (
-    <div className="shop-row">
+    <div className={`shop-row sell-drop-zone${unit ? ' selling' : ''}${over ? ' over' : ''}`} aria-label="상점 판매 영역"
+      onDragOver={e => { if (e.dataTransfer.types.includes('application/x-unit')) { e.preventDefault(); e.dataTransfer.dropEffect = 'move'; setOver(true); } }}
+      onDragLeave={e => { if (!e.currentTarget.contains(e.relatedTarget as Node | null)) setOver(false); }}
+      onDrop={e => { e.preventDefault(); setOver(false); const id = e.dataTransfer.getData('application/x-unit'); if (id) useGameStore.getState().sell(id); useInteractionStore.getState().drag(null); }}>
+      {unit && <div className="sell-overlay"><strong>{getUnitDef(unit.unitDefId).nameKo} 판매 · {sellPrice(player, unit)}G</strong><span>상점 위에 놓으면 판매 · 장착 아이템은 보관함으로 반환</span></div>}
       {player.shop.map((slot, i) => {
         if (!slot.unitDefId) {
           return <div key={i} className="shop-card sold" style={{ borderColor: '#2b3d4f' }} />;
@@ -76,9 +85,15 @@ export function BenchRow({
         <div
           key={unit?.instanceId ?? `empty-${i}`}
           className={`bench-slot${unit ? ' filled' : ''}`}
+          data-unit-id={unit?.instanceId}
+          role="button" tabIndex={0} aria-label={unit ? `${getUnitDef(unit.unitDefId).nameKo} 대기석 정보` : '빈 대기석'}
+          onMouseEnter={() => useInteractionStore.getState().hover(unit?.instanceId ?? null)}
+          onMouseLeave={() => useInteractionStore.getState().hover(null)}
+          onKeyDown={e => { if (unit && (e.key === 'Enter' || e.key === ' ')) { e.preventDefault(); selectUnit(unit.instanceId); useInteractionStore.getState().inspect({ kind: 'unit', id: unit.instanceId, playerId: player.id }); } }}
           draggable={!!unit}
           onDragStart={(e) => {
             if (!unit) return;
+            useInteractionStore.getState().drag(unit.instanceId);
             e.dataTransfer.setData('application/x-unit', unit.instanceId);
             e.dataTransfer.effectAllowed = 'move';
           }}
@@ -92,8 +107,8 @@ export function BenchRow({
           }}
           onContextMenu={(e) => { if (unit) { e.preventDefault(); onUnitContext(e, unit); } }}
           onClick={() => {
-            if (selectedUnitId) placeSelected(null);
-            else if (unit) selectUnit(unit.instanceId);
+            if (unit) { selectUnit(unit.instanceId); useInteractionStore.getState().inspect({ kind: 'unit', id: unit.instanceId, playerId: player.id }); }
+            else if (selectedUnitId) placeSelected(null);
           }}
           style={selectedUnitId === unit?.instanceId
             ? { boxShadow: '0 0 0 2px var(--gold)' } : undefined}
@@ -110,6 +125,7 @@ export function ShopControls(): JSX.Element | null {
   const reroll = useGameStore((s) => s.reroll);
   const buyXp = useGameStore((s) => s.buyExperience);
   const toggleLock = useGameStore((s) => s.toggleLock);
+  const keybinds = useGameStore((s) => s.settings.keybinds);
   useGameStore((s) => s.revision);
   if (!player) return null;
 
@@ -117,10 +133,10 @@ export function ShopControls(): JSX.Element | null {
   return (
     <div style={{ display: 'flex', gap: 10, alignItems: 'center' }}>
       <button onClick={buyXp} disabled={player.gold < XP_PURCHASE_COST || player.level >= 10}>
-        경험치 구매 ({XP_PURCHASE_COST}G) <span className="muted">F</span>
+        경험치 구매 ({XP_PURCHASE_COST}G) <span className="muted">{keybinds.buyXp.toUpperCase()}</span>
       </button>
       <button onClick={reroll} disabled={player.gold < cost}>
-        새로고침 ({cost}G) <span className="muted">D</span>
+        새로고침 ({cost}G) <span className="muted">{keybinds.reroll.toUpperCase()}</span>
       </button>
       <button className={player.shopLocked ? 'btn-primary' : 'btn-ghost'} onClick={toggleLock}>
         {player.shopLocked ? '잠금 해제' : '상점 잠금'}

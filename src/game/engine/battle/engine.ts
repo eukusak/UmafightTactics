@@ -79,6 +79,8 @@ export type BattleFrame = {
     q: number; r: number; fromQ: number | null; fromR: number | null; progress: number;
     hp: number; maxHp: number; shield: number; mana: number; maxMana: number;
     alive: boolean; casting: boolean; statuses: StatusKind[];
+    /** Optional for old recordings; current engine always records inspection data. */
+    items?: string[]; traits?: TraitId[]; stats?: BattleStats;
   }>;
   events: BattleEvent[];
 };
@@ -940,6 +942,14 @@ export class BattleEngine {
       overtime: this.overtimeApplied,
       units: this.units.map((u) => ({
         id: u.id, team: u.team, unitDefId: u.unitDefId, star: u.star,
+        items: [...u.items], traits: [...u.traits],
+        stats: {
+          ...Object.fromEntries(Object.keys(u.base).map(key => [key, stat(u, key as keyof BattleStats, this.time)])) as BattleStats,
+          armor: resistFor(u, 'PHYSICAL', this.time), magicResist: resistFor(u, 'MAGIC', this.time),
+          critChance: stat(u, 'critChance', this.time) + u.aura.critChance,
+          critMultiplier: stat(u, 'critMultiplier', this.time) + u.aura.critDamage
+            + this.excessCritDamage(u, stat(u, 'critChance', this.time) + u.aura.critChance),
+        },
         q: u.cell.q, r: u.cell.r,
         fromQ: u.moveFrom?.q ?? null, fromR: u.moveFrom?.r ?? null,
         progress: u.moveProgress,
