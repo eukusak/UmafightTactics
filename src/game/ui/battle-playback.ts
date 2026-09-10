@@ -53,3 +53,18 @@ export function attackExtension(time: number, start: number, release: number): n
   }
   return 1 - smooth(effectProgress(time, release, .18));
 }
+
+export type ContributionMetric = 'dealt' | 'taken' | 'shield';
+export function contributionTotals(frames: BattleFrame[], time: number, metric: ContributionMetric): Map<string, number> {
+  const totals = new Map<string, number>();
+  for (const frame of frames) {
+    if (frame.t > time) break;
+    for (const event of frame.events) {
+      if (event.t > time) continue;
+      const id = event.type === 'DAMAGE' && metric !== 'shield' ? (metric === 'dealt' ? event.source : event.target) : event.type === 'SHIELD' && metric === 'shield' ? event.source : null;
+      const amount = event.type === 'DAMAGE' ? event.damage + event.absorbed : event.type === 'SHIELD' ? event.amount : 0;
+      if (id) totals.set(id, (totals.get(id) ?? 0) + amount);
+    }
+  }
+  return totals;
+}

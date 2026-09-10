@@ -10,7 +10,7 @@ export function OnlineScreen(): JSX.Element {
   const [name, setName] = useState('트레이너');
   const [code, setCode] = useState('');
   const [seasonId, setSeasonId] = useState<SeasonId>('s1');
-  const [fillAi, setFillAi] = useState(false);
+  const [fillAi, setFillAi] = useState(true);
   const self = online.room?.seats.find((s) => s.id === online.session?.playerId);
   const host = online.room?.hostId === self?.id;
   return <div className="menu-screen online-screen season-screen" style={seasonBackdrop(online.room?.seasonId ?? seasonId)}>
@@ -31,13 +31,14 @@ export function OnlineScreen(): JSX.Element {
         const seat = online.room!.seats[i];
         return <div key={seat?.id ?? i} className={`online-seat ${seat ? 'occupied' : ''} ${seat?.ready ? 'ready' : ''}`}>
           <span className="seat-emblem">{seat ? seat.name.slice(0, 1) : '+'}</span><strong>{seat?.name ?? '참가 대기'}</strong>
-          <small>{seat ? !seat.connected ? '재접속 대기' : seat.ready ? '준비 완료' : '준비 중' : '친구를 초대하세요'}</small>
+          <small>{seat ? seat.ai ? 'AI · 준비 완료' : !seat.connected ? '재접속 대기' : seat.ready ? '준비 완료' : '준비 중' : '친구를 초대하세요'}</small>
+          {host && seat?.ai && !online.room!.started && <button className="btn-ghost" aria-label={`${seat.name} 제거`} onClick={() => online.send({ type: 'removeAi', id: seat.id })}>AI 제거</button>}
           {seat?.id === online.room!.hostId && <b className="host-badge">방장</b>}
         </div>;
       })}</div>
       <div className="online-actions">
         <button className={self?.ready ? 'btn-ghost' : 'btn-primary'} disabled={!online.connected || online.room.started} onClick={() => online.send({ type: 'ready', ready: !self?.ready })}>{self?.ready ? '준비 취소' : '준비 완료'}</button>
-        {host && <><label><input type="checkbox" checked={fillAi} onChange={(e) => setFillAi(e.target.checked)} />빈자리는 AI로 채우기</label><button className="btn-primary" disabled={!online.connected || online.room.started || online.room.seats.some((s) => !s.ready || !s.connected) || (fillAi ? online.room.seats.length < 2 : online.room.seats.length !== 8)} onClick={() => online.send({ type: 'start', fillAi })}>대전 시작</button></>}
+        {host && <><button disabled={!online.connected || online.room.started || online.room.seats.length >= 8} onClick={() => online.send({ type: 'addAi' })}>AI 추가</button><label><input type="checkbox" checked={fillAi} onChange={(e) => setFillAi(e.target.checked)} />빈자리는 AI로 채우기</label><button className="btn-primary" disabled={!online.connected || online.room.started || online.room.seats.some((s) => !s.ai && (!s.ready || !s.connected)) || (!fillAi && online.room.seats.length !== 8)} onClick={() => online.send({ type: 'start', fillAi })}>대전 시작</button></>}
         <button className="btn-ghost" onClick={online.leave}>방 나가기</button>
       </div>
     </div>}

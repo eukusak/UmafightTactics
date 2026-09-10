@@ -25,7 +25,7 @@
     "simulate": "tsx scripts/simulate.ts",
     "check:art": "tsx scripts/check-art-manifest.ts",
     "verify": "npm run sync:data && npm run data:build && npm run data:validate && npm run typecheck && npm test && npm run simulate -- --matches 250 && npm run check:art && npm run build",
-    "start:static": "node scripts/serve.mjs",
+    "start:static": "node scripts/serve.mjs --static",
     "audit:tft": "tsx scripts/audit-tft.ts",
     "art:briefs": "tsx scripts/build-motion-briefs.ts"
   },

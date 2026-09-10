@@ -61,6 +61,7 @@ export function PrepBoard({ onUnitContext }: { onUnitContext: (e: React.MouseEve
       return <div key={key} className={`arena-cell${dragOver === key ? ' hovered' : ''}`}
         style={{ position: 'absolute', left: p.x - 50 * p.scale, top: p.y - 30, width: 100 * p.scale, height: 60 }}
         onDragOver={(e) => { e.preventDefault(); setDragOver(key); }} onDragLeave={() => setDragOver(null)}
+        data-drop="board" data-q={q} data-r={r} data-drop-unit={unit?.instanceId}
         onDrop={(e) => drop(e, q, r, unit)} onClick={() => click(q, r, unit)} />;
     })}
     {player.board.filter((u) => u.position).map((unit) => {
@@ -68,7 +69,7 @@ export function PrepBoard({ onUnitContext }: { onUnitContext: (e: React.MouseEve
       return <div key={unit.instanceId} className={`arena-unit${selectedUnitId === unit.instanceId ? ' selected' : ''}`}
         data-unit-id={unit.instanceId} data-unit-def={unit.unitDefId}
         style={{ transform: `translate3d(${p.x}px,${p.y}px,0) scale(${p.scale})`, zIndex: Math.round(p.y) }}>
-        <div className="arena-unit-touch" role="button" tabIndex={0} aria-label={`${def.nameKo} 정보`}
+        <div data-touch-unit={unit.instanceId} data-drop="board" data-q={unit.position!.q} data-r={unit.position!.r} data-drop-unit={unit.instanceId} className="arena-unit-touch" role="button" tabIndex={0} aria-label={`${def.nameKo} 정보`}
           onMouseEnter={() => useInteractionStore.getState().hover(unit.instanceId)}
           onMouseLeave={() => useInteractionStore.getState().hover(null)}
           onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); click(unit.position!.q, unit.position!.r, unit); } }} draggable onDragStart={(e) => { useInteractionStore.getState().drag(unit.instanceId); e.dataTransfer.setData('application/x-unit', unit.instanceId); e.dataTransfer.effectAllowed = 'move'; }}

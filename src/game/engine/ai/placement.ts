@@ -1,3 +1,5 @@
+import { lineupScore, unitPower } from './evaluation';
+import type { PublicBoard } from './strategy';
 /** Board placement search (spec §26.5). Bounded to 40 candidate layouts. */
 import { BOARD_COLS, BOARD_ROWS_PER_SIDE } from '../constants';
 import { getUnitDef } from '../roster';
@@ -5,7 +7,7 @@ import type { Role } from '../types';
 import type { HexPos, PlayerState, UnitInstance } from '../state';
 import { teamSizeLimit } from '../shop';
 
-const MAX_CANDIDATES = 40;
+const MAX_CANDIDATES = 180;
 
 /** Preferred row (0 = front line) per role. */
 const ROLE_ROW: Record<Role, number> = {
@@ -19,14 +21,14 @@ const ROLE_ROW_WEIGHT: Record<Role, number> = {
 
 export type Layout = { instanceId: string; position: HexPos }[];
 
-function scoreLayout(layout: Layout, units: Map<string, UnitInstance>, spreadCarries: boolean): number {
+function scoreLayout(layout: Layout, units: Map<string, UnitInstance>, spreadCarries: boolean, opponents: PublicBoard[] = []): number {
   let score = 0;
   const byCell = new Map<string, Role>();
 
   for (const slot of layout) {
     const unit = units.get(slot.instanceId)!;
     const def = getUnitDef(unit.unitDefId);
-    const want = ROLE_ROW[def.role];
+    const want = preferredRow(unit);
     score -= Math.abs(slot.position.r - want) * ROLE_ROW_WEIGHT[def.role];
     byCell.set(`${slot.position.q},${slot.position.r}`, def.role);
   }
@@ -65,30 +67,62 @@ function scoreLayout(layout: Layout, units: Map<string, UnitInstance>, spreadCar
     }
   }
 
+  for (const slot of layout) {
+    const unit = units.get(slot.instanceId)!, def = getUnitDef(unit.unitDefId);
+    const carry = def.role === 'AD_CARRY' || def.role === 'AP_CARRY';
+    for (const opponent of opponents) for (const enemy of opponent.board) {
+      if (!enemy.position) continue;
+      const ed = getUnitDef(enemy.unitDefId), column = 6 - enemy.position.q;
+      const alignment = Math.max(0, 3 - Math.abs(slot.position.q - column));
+      const threat = unitPower(enemy) / Math.max(1, opponents.length);
+      if (carry && ed.attackRange >= 3) score -= alignment * threat * .12;
+      if (def.role === 'TANK' && ed.attackRange >= 3) score += alignment * threat * .1;
+    }
+    if (carry && def.attackRange >= 3) {
+      const front = layout.filter(other => getUnitDef(units.get(other.instanceId)!.unitDefId).role === 'TANK');
+      if (front.some(other => Math.abs(other.position.q - slot.position.q) <= 1)) score += 1.3;
+      for (const other of layout) if (other !== slot && Math.abs(other.position.q - slot.position.q) <= 1 && other.position.r === slot.position.r) score -= .65;
+    }
+  }
   return score;
 }
 
-/** Picks which units go on the board, strongest first within the size limit. */
+const selectionCache = new WeakMap<PlayerState, { key: string; units: UnitInstance[] }>();
+
+/** Greedy team selection followed by swap search scores complete trait breakpoints. */
 export function chooseFieldedUnits(player: PlayerState): UnitInstance[] {
-  const limit = teamSizeLimit(player);
-  const all = [...player.board, ...player.bench];
-  return all
-    .slice()
-    .sort((a, b) => {
-      const da = getUnitDef(a.unitDefId);
-      const dbb = getUnitDef(b.unitDefId);
-      const va = da.uftRating + (a.star - 1) * 0.9 + a.items.length * 0.12;
-      const vb = dbb.uftRating + (b.star - 1) * 0.9 + b.items.length * 0.12;
-      return vb - va || a.instanceId.localeCompare(b.instanceId);
-    })
-    .slice(0, limit);
+  const key = `${player.seasonId}:${teamSizeLimit(player)}:${JSON.stringify(player.bonusTraits)}:` + [...player.board, ...player.bench].map(u => `${u.instanceId}/${u.unitDefId}/${u.star}/${u.items.join(',')}`).sort().join(';');
+  const cached = selectionCache.get(player);
+  if (cached?.key === key) return cached.units.slice();
+  const all = [...player.board, ...player.bench].sort((a, b) => unitPower(b) - unitPower(a) || a.instanceId.localeCompare(b.instanceId));
+  const limit = Math.min(teamSizeLimit(player), all.length);
+  let selected: UnitInstance[] = [];
+  while (selected.length < limit) {
+    const next = all.filter(u => !selected.includes(u)).sort((a, b) => lineupScore(player, [...selected, b]) - lineupScore(player, [...selected, a]) || a.instanceId.localeCompare(b.instanceId))[0];
+    selected.push(next);
+  }
+  let score = lineupScore(player, selected);
+  for (let pass = 0; pass < 2; pass++) for (const candidate of all.filter(u => !selected.includes(u))) {
+    for (let i = 0; i < selected.length; i++) {
+      if (selected.includes(candidate)) break;
+      const next = selected.slice(); next[i] = candidate;
+      const value = lineupScore(player, next);
+      if (value > score + .01) { selected = next; score = value; }
+    }
+  }
+  selectionCache.set(player, { key, units: selected });
+  return selected.slice();
+}
+function preferredRow(unit: UnitInstance): number {
+  const def = getUnitDef(unit.unitDefId);
+  return def.attackRange <= 1 && (def.role === 'AD_CARRY' || def.role === 'AP_CARRY') ? 1 : ROLE_ROW[def.role];
 }
 
 /**
  * Deterministic hill-climb over a bounded candidate set: start from the
  * role-ideal layout, then try swaps and keep improvements.
  */
-export function planPlacement(player: PlayerState, spreadCarries: boolean): Layout {
+export function planPlacement(player: PlayerState, spreadCarries: boolean, opponents: PublicBoard[] = []): Layout {
   const fielded = chooseFieldedUnits(player);
   const units = new Map(fielded.map((u) => [u.instanceId, u]));
   if (!fielded.length) return [];
@@ -101,18 +135,18 @@ export function planPlacement(player: PlayerState, spreadCarries: boolean): Layo
   cells.sort((a, b) => a.r - b.r || Math.abs(a.q - 3) - Math.abs(b.q - 3) || a.q - b.q);
 
   const sorted = fielded.slice().sort((a, b) => {
-    const ra = ROLE_ROW[getUnitDef(a.unitDefId).role];
-    const rb = ROLE_ROW[getUnitDef(b.unitDefId).role];
+    const ra = preferredRow(a);
+    const rb = preferredRow(b);
     return ra - rb || a.instanceId.localeCompare(b.instanceId);
   });
 
   let best: Layout = sorted.map((u) => {
-    const want = ROLE_ROW[getUnitDef(u.unitDefId).role];
+    const want = preferredRow(u);
     const idx = cells.findIndex((c) => c.r === want);
     const cell = cells.splice(idx >= 0 ? idx : 0, 1)[0];
     return { instanceId: u.instanceId, position: cell };
   });
-  let bestScore = scoreLayout(best, units, spreadCarries);
+  let bestScore = scoreLayout(best, units, spreadCarries, opponents);
 
   let evaluated = 1;
   for (let i = 0; i < best.length && evaluated < MAX_CANDIDATES; i += 1) {
@@ -122,8 +156,18 @@ export function planPlacement(player: PlayerState, spreadCarries: boolean): Layo
       candidate[i].position = candidate[j].position;
       candidate[j].position = tmp;
       evaluated += 1;
-      const score = scoreLayout(candidate, units, spreadCarries);
+      const score = scoreLayout(candidate, units, spreadCarries, opponents);
       if (score > bestScore) { best = candidate; bestScore = score; }
+    }
+  }
+  for (let i = 0; i < best.length && evaluated < MAX_CANDIDATES; i++) {
+    for (let q = 0; q < BOARD_COLS && evaluated < MAX_CANDIDATES; q++) {
+      const r = preferredRow(units.get(best[i].instanceId)!);
+      if (best.some(slot => slot.position.q === q && slot.position.r === r)) continue;
+      const candidate = best.map(slot => ({ ...slot, position: { ...slot.position } }));
+      candidate[i].position = { q, r }; evaluated++;
+      const score = scoreLayout(candidate, units, spreadCarries, opponents);
+      if (score > bestScore + .01) { best = candidate; bestScore = score; }
     }
   }
   return best;

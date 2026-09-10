@@ -1,5 +1,5 @@
 import type { CarouselPoint, CarouselState, DraftState, MatchState } from '../state';
-import { getUnitDef } from '../roster';
+import { draftValue } from '../ai/strategy';
 import { pickDraftOption } from './draft';
 
 export const CAROUSEL = { width: 1100, height: 650, cx: 550, cy: 325, rx: 270, ry: 180,
@@ -52,10 +52,10 @@ export function advanceCarousel(state: MatchState, delta: number): boolean {
       const player = state.players.find(p => p.id === avatar.playerId)!;
       const auto = player.aiProfile !== null || c.elapsed >= avatar.releaseAt + CAROUSEL.autoAfter;
       const available = draft.options.filter(o => !o.takenBy);
-      if (auto && (avatar.targetOption === null || !available.some(o => o.index === avatar.targetOption))) {
+      if (auto && (avatar.targetOption === null || !available.some(o => o.index === avatar.targetOption) || c.elapsed % 500 === 0)) {
         const best = available.sort((a, b) => {
-          const score = (o: typeof a) => getUnitDef(o.unitDefId).cost * 35 + getUnitDef(o.unitDefId).uftRating * 5
-            - distance(avatar, carouselPosition(o.index, draft.options.length, c.angle)) * .12;
+          const score = (o: typeof a) => draftValue(player, o) + (avatar.targetOption === o.index ? 7 : 0)
+            - distance(avatar, carouselPosition(o.index, draft.options.length, c.angle)) * .06;
           return score(b) - score(a) || a.index - b.index;
         })[0];
         avatar.targetOption = best?.index ?? null;

@@ -1,7 +1,7 @@
 /** Root shell: screen routing plus the 1920x1080 scale-to-fit wrapper. */
 import { useEffect, useLayoutEffect, useRef, useState } from 'react';
 import { useGameStore } from '../store/gameStore';
-import { playSound } from '../game/ui/audio';
+import { configureAudio, setMusicScene, unlockAudio, playSound } from '../game/ui/audio';
 import { OnlineScreen } from '../components/screens/OnlineScreen';
 import { BattleScreen } from '../components/screens/BattleScreen';
 import { CollectionScreen } from '../components/screens/CollectionScreen';
@@ -13,24 +13,29 @@ import {
 const DESIGN_W = 1920;
 const DESIGN_H = 1080;
 
-type StageBox = { scale: number; left: number; top: number };
+type StageBox = { mobile?: boolean; scale: number; left: number; top: number; width: number; height: number };
 
 /** Scales the fixed design canvas to the viewport, preserving aspect ratio. */
-function useStageBox(): StageBox {
-  const [box, setBox] = useState<StageBox>({ scale: 1, left: 0, top: 0 });
+function useStageBox(resolution: string): StageBox {
+  const [box, setBox] = useState<StageBox>({ scale: 1, left: 0, top: 0, width: DESIGN_W, height: DESIGN_H });
   useLayoutEffect(() => {
     const update = (): void => {
-      const scale = Math.min(window.innerWidth / DESIGN_W, window.innerHeight / DESIGN_H);
-      setBox({
-        scale,
-        left: Math.round((window.innerWidth - DESIGN_W * scale) / 2),
-        top: Math.round((window.innerHeight - DESIGN_H * scale) / 2),
-      });
+      const vw = window.visualViewport?.width ?? window.innerWidth;
+      const vh = window.visualViewport?.height ?? window.innerHeight;
+      const mobile = window.matchMedia('(pointer: coarse)').matches || window.innerWidth <= 600;
+      if (mobile) { setBox({ mobile: true, scale: 1, width: vw, height: vh, left: 0, top: 0 }); return; }
+      const [w, h] = resolution === 'auto' ? [window.innerWidth, window.innerHeight] : resolution.split('x').map(Number);
+      const cap = Math.min(1, window.innerWidth / w, window.innerHeight / h);
+      const scale = Math.min(w / DESIGN_W, h / DESIGN_H) * cap;
+      const width = resolution === 'auto' ? window.innerWidth / scale : DESIGN_W;
+      const height = resolution === 'auto' ? window.innerHeight / scale : DESIGN_H;
+      setBox({ scale, width, height, left: (window.innerWidth - width * scale) / 2, top: (window.innerHeight - height * scale) / 2 });
     };
     update();
     window.addEventListener('resize', update);
-    return () => window.removeEventListener('resize', update);
-  }, []);
+    window.visualViewport?.addEventListener('resize', update);
+    return () => { window.removeEventListener('resize', update); window.visualViewport?.removeEventListener('resize', update); };
+  }, [resolution]);
   return box;
 }
 
@@ -45,7 +50,16 @@ export function App(): JSX.Element {
   }, []);
   const screen = useGameStore((s) => s.screen);
   const setScreen = useGameStore((s) => s.setScreen);
-  const { scale, left, top } = useStageBox();
+  const settings = useGameStore(s => s.settings);
+  const inMatch = useGameStore(s => !!s.match);
+  const { scale, left, top, width, height, mobile } = useStageBox(settings.resolution);
+  useEffect(() => { configureAudio(settings); }, [settings]);
+  useEffect(() => { setMusicScene(inMatch ? 'game' : 'title'); }, [inMatch]);
+  useEffect(() => {
+    const unlock = () => unlockAudio();
+    document.addEventListener('pointerdown', unlock); document.addEventListener('keydown', unlock);
+    return () => { document.removeEventListener('pointerdown', unlock); document.removeEventListener('keydown', unlock); };
+  }, []);
   const booted = useRef(false);
 
   useEffect(() => {
@@ -69,8 +83,8 @@ export function App(): JSX.Element {
   }
 
   return (
-    <div className="stage-root">
-      <div className="stage" style={{ left, top, transform: `scale(${scale})` }}>
+    <div className={`stage-root${mobile ? ' mobile-root' : ''}`}>
+      <div className={`stage${mobile ? ' mobile' : ''}`} style={{ left, top, width, height, transform: `scale(${scale})`, '--field-scale': width / 1320 } as React.CSSProperties}>
         {content}
       </div>
     </div>

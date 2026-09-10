@@ -2,8 +2,8 @@ import { useEffect, useRef, useState } from 'react';
 import Phaser from 'phaser';
 import { ALL_UNITS, getUnitDef } from '../../game/engine/roster';
 import { PVE_UNIT_IDS } from '../../game/engine/battle/pve-units';
-import { FRAME_CLIPS, FRAME_SHEETS, frameSheetUrl, motionFrame, skillMotionFrame } from '../../game/ui/frame-animation';
-import { skillTimeline, skillWindup } from '../../game/engine/battle/skill-timeline';
+import { FRAME_SHEETS, frameSheetUrl, motionFrame, skillMotionFrame } from '../../game/ui/frame-animation';
+import { skillTimeline } from '../../game/engine/battle/skill-timeline';
 import { portraitUrl, standeeUrl, type AnimationName } from '../../game/ui/art';
 import { useGameStore } from '../../store/gameStore';
 
@@ -16,8 +16,6 @@ export function MotionScreen(): JSX.Element {
   const [facing, setFacing] = useState(1);
   const [speed, setSpeed] = useState(1);
   const [frame, setFrame] = useState(0);
-  const [canvas, setCanvas] = useState(false);
-  const [crowd, setCrowd] = useState(false);
   const [status, setStatus] = useState('불러오는 중');
   const host = useRef<HTMLDivElement>(null);
   const timeline = useRef(0);
@@ -40,14 +38,8 @@ export function MotionScreen(): JSX.Element {
       }
       create(): void {
         this.pulses = this.add.graphics().setDepth(20);
-        const count = crowd ? 28 : 1;
-        for (let i = 0; i < count; i++) {
-          const x = crowd ? 58 + (i % 7) * 99 : 360;
-          const y = crowd ? 130 + Math.floor(i / 7) * 124 : 465;
-          this.add.ellipse(x, y + 3, crowd ? 52 : 180, crowd ? 15 : 38, 0x07131e, .6);
-          const body = this.add.image(x, y, 'preview-body').setOrigin(.5, .859375).setDisplaySize(crowd ? 116 : 420, crowd ? 116 : 420);
-          this.sprites.push(body);
-        }
+        this.add.ellipse(360, 468, 180, 38, 0x07131e, .6);
+        this.sprites.push(this.add.image(360, 465, 'preview-body').setOrigin(.5, .859375).setDisplaySize(420, 420));
         if (alive) setStatus(FRAME_SHEETS[id] ? '프레임 애니메이션 · 6종 모션 · 24개 원화' : '프레임 제작 대기 · 현재 원화 미리보기');
       }
       override update(_t: number, dt: number): void {
@@ -72,35 +64,33 @@ export function MotionScreen(): JSX.Element {
               const age = cycle - at;
               if (age < 0 || age > .25) continue;
               const color = parseInt((skill.choreography?.color ?? '#b9ddff').slice(1), 16);
-              this.pulses.lineStyle(crowd ? 2 : 4, color, 1 - age / .25);
-              this.pulses.strokeCircle(sprite.x, sprite.y - (crowd ? 36 : 130), (crowd ? 22 : 72) * (1 + age * 2));
+              this.pulses.lineStyle(4, color, 1 - age / .25);
+              this.pulses.strokeCircle(sprite.x, sprite.y - 130, 72 * (1 + age * 2));
             }
           }
         }
       }
     }
-    const game = new Phaser.Game({ type: canvas ? Phaser.CANVAS : Phaser.AUTO, width: 720, height: 550,
+    const game = new Phaser.Game({ type: Phaser.AUTO, width: 720, height: 550,
       parent: host.current, backgroundColor: '#183549', scene: Preview, audio: { noAudio: true },
       render: { antialias: false, pixelArt: true }, scale: { mode: Phaser.Scale.NONE },
       callbacks: { postBoot: game => { game.canvas.style.width = '100%'; game.canvas.style.height = '100%'; } } });
     return () => { alive = false; game.destroy(true); };
-  }, [id, canvas, crowd]);
+  }, [id]);
 
-  return <div className="menu-screen" style={{ padding: 55, justifyContent: 'flex-start' }}>
+  return <div className="menu-screen motion-screen" style={{ padding: 55, justifyContent: 'flex-start' }}>
     <div style={{ display: 'flex', width: '100%', alignItems: 'center', justifyContent: 'space-between' }}>
       <h1 style={{ fontFamily: 'var(--font-display)', fontWeight: 400 }}>기물 모션 미리보기</h1>
       <button onClick={() => back('MAIN_MENU')}>돌아가기</button>
     </div>
-    <div style={{ display: 'flex', gap: 35, width: '100%' }}>
-      <div className="panel" style={{ width: 1000, height: 765 }} ref={host} aria-label={`${getUnitDef(id).nameKo} 모션 화면`} />
+    <div className="motion-layout" style={{ display: 'flex', gap: 35, width: '100%' }}>
+      <div className="panel motion-preview" style={{ width: 1000, height: 765 }} ref={host} aria-label={`${getUnitDef(id).nameKo} 모션 화면`} />
       <div className="panel" style={{ flex: 1, padding: 30 }}>
         <label>기물 선택<select aria-label="기물 선택" value={id} onChange={e => setId(e.target.value)} style={{ width: '100%', margin: '12px 0 28px', padding: 12, background: '#173044', color: '#fff5df' }}>
           {ALL_UNITS.map(u => <option key={u.id} value={u.id}>{u.nameKo}</option>)}
           {Object.values(PVE_UNIT_IDS).map(key => <option key={key} value={key}>{getUnitDef(key).nameKo} (PvE)</option>)}
         </select></label>
         <p>{status}</p>
-        <p style={{ lineHeight: 1.6 }}><strong>{getUnitDef(id).skill.displayName}</strong><br />{getUnitDef(id).skill.description}</p>
-        {FRAME_SHEETS[id] && <p className="muted">{FRAME_SHEETS[id].skillReview}</p>}
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: 10, margin: '25px 0' }}>
           {Object.entries(ACTIONS).map(([key, label]) => <button key={key} className={action === key ? 'btn-primary' : ''} onClick={() => setAction(key as AnimationName)}>{label}</button>)}
         </div>
@@ -109,17 +99,6 @@ export function MotionScreen(): JSX.Element {
           <button onClick={() => setFacing(-facing)}>방향 반전</button>
           <button onClick={() => setSpeed(speed === 1 ? 2 : 1)}>{speed}×</button>
         </div>
-        <label style={{ display: 'block', margin: '30px 0' }}>장면 시간 {frame.toFixed(2)}초
-          <input aria-label="장면 시간" type="range" min="0" max="1.99" step="0.01" value={frame}
-            onChange={e => { setPaused(true); setFrame(Number(e.target.value)); }} style={{ display: 'block', width: '100%' }} />
-        </label>
-        <div style={{ display: 'flex', gap: 12 }}>
-          <button onClick={() => { setPaused(true); setFrame(Math.max(0, frame - 1 / FRAME_CLIPS[action].fps)); }}>이전 프레임</button>
-          <button onClick={() => { setPaused(true); setFrame(Math.min(1.99, frame + 1 / FRAME_CLIPS[action].fps)); }}>다음 프레임</button>
-        </div>
-        <label style={{ display: 'block', margin: '20px 0' }}><input type="checkbox" checked={crowd} onChange={e => setCrowd(e.target.checked)} /> 28기 동시 미리보기</label>
-        <label style={{ display: 'block', margin: '20px 0' }}><input type="checkbox" checked={canvas} onChange={e => setCanvas(e.target.checked)} /> 호환 렌더러 (Canvas)</label>
-        <p className="muted" style={{ lineHeight: 1.8 }}>스킬 준비 {skillWindup(getUnitDef(id).skill).toFixed(2)}초 · 방출 시각 {[...new Set(skillTimeline(getUnitDef(id).skill).map(e => e.at))].map(t => `${t.toFixed(2)}초`).join(' / ')}<br />빛의 파동은 각 효과의 발동 시각을 표시합니다. 전투에서도 같은 시간표를 사용하며, 기절하면 진행 중인 시전이 중단됩니다. 피격만으로 모션을 초기화하지 않습니다.</p>
       </div>
     </div>
   </div>;

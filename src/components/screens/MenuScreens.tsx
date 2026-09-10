@@ -1,3 +1,4 @@
+import { AudioControls } from '../AudioControls';
 import { bindingKey } from '../../game/ui/keybindings';
 /** Title, main menu, match setup, settings and final result screens. */
 import { useState } from 'react';
@@ -109,8 +110,7 @@ export function SettingsScreen(): JSX.Element {
   const setSettings = useGameStore((s) => s.setSettings);
   const setScreen = useGameStore((s) => s.setScreen);
   const match = useGameStore((s) => s.match);
-  const devMode = useGameStore((s) => s.devMode);
-  const setDevMode = useGameStore((s) => s.setDevMode);
+  const online = useGameStore(s => s.onlinePlayerId !== null);
   const [rebinding, setRebinding] = useState<string | null>(null);
 
   const bindLabels: Record<string, string> = {
@@ -126,8 +126,8 @@ export function SettingsScreen(): JSX.Element {
         <h3 style={{ marginTop: 0 }}>전투</h3>
         <div style={{ display: 'flex', gap: 8, alignItems: 'center', marginBottom: 18 }}>
           <span className="muted">기본 재생 속도</span>
-          {[1, 2, 4, 10].map((s) => (
-            <button key={s} className={settings.battleSpeed === s ? 'btn-primary' : 'btn-ghost'}
+          {(online ? [1] : [1, 2, 4, 10]).map((s) => (
+            <button key={s} disabled={online} className={online || settings.battleSpeed === s ? 'btn-primary' : 'btn-ghost'}
               onClick={() => setSettings({ battleSpeed: s as 1 | 2 | 4 | 10 })}>{s}×</button>
           ))}
         </div>
@@ -141,10 +141,12 @@ export function SettingsScreen(): JSX.Element {
             onChange={(e) => setSettings({ autoContinue: e.target.checked })} />
           <span>전투 결과 확인 후 5초 뒤 자동 진행</span>
         </label>
-        <label style={{ display: 'flex', gap: 8, alignItems: 'center', marginBottom: 18 }}>
-          <input type="checkbox" checked={devMode} onChange={(e) => setDevMode(e.target.checked)} />
-          <span>개발자 패널</span>
-        </label>
+        <h3>화면</h3>
+        <label>해상도 <select aria-label="해상도" value={settings.resolution} onChange={e => setSettings({ resolution: e.target.value as typeof settings.resolution })}>
+          <option value="auto">자동 · 웹 페이지에 맞춤</option>
+          <option value="1280x720">1280 × 720</option><option value="1600x900">1600 × 900</option><option value="1920x1080">1920 × 1080</option><option value="2560x1440">2560 × 1440</option>
+        </select></label>
+        <h3>음향</h3><AudioControls expanded />
 
         <h3>키 바인딩</h3>
         <p className="muted" style={{ fontSize: 12, marginTop: 0 }}>

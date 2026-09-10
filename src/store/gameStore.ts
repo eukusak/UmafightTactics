@@ -1,3 +1,4 @@
+import { configureAudio } from '../game/ui/audio';
 import { setCarouselTarget } from '../game/engine/rounds/carousel';
 import type { CarouselPoint } from '../game/engine/state';
 import { playSound } from '../game/ui/audio';
@@ -28,6 +29,10 @@ export type Screen =
   | 'AUGMENT' | 'COLLECTION' | 'SETTINGS' | 'RESULT' | 'ONLINE' | 'MOTION';
 
 export type Settings = {
+  resolution: 'auto' | '1280x720' | '1600x900' | '1920x1080' | '2560x1440';
+  musicVolume: number;
+  effectsVolume: number;
+  muted: boolean;
   battleSpeed: 1 | 2 | 4 | 10;
   showDamageNumbers: boolean;
   autoContinue: boolean;
@@ -45,6 +50,17 @@ export const DEFAULT_KEYBINDS: Record<string, string> = {
   battleInfo: 'Tab',
   settings: 'Escape',
 };
+
+const DEFAULT_SETTINGS: Settings = { resolution: 'auto', musicVolume: .45, effectsVolume: .65, muted: false, battleSpeed: 1, showDamageNumbers: true, autoContinue: true, keybinds: { ...DEFAULT_KEYBINDS } };
+function readSettings(): Settings {
+  try {
+    const saved = JSON.parse(localStorage.getItem('uft-settings-v2') ?? '{}');
+    const settings = { ...DEFAULT_SETTINGS, ...saved, keybinds: { ...DEFAULT_KEYBINDS, ...saved.keybinds } };
+    if (!['auto', '1280x720', '1600x900', '1920x1080', '2560x1440'].includes(settings.resolution)) settings.resolution = 'auto';
+    for (const key of ['musicVolume', 'effectsVolume'] as const) settings[key] = Number.isFinite(settings[key]) ? Math.max(0, Math.min(1, settings[key])) : DEFAULT_SETTINGS[key];
+    return settings;
+  } catch { return { ...DEFAULT_SETTINGS }; }
+}
 
 type GameStore = {
   screen: Screen;
@@ -126,7 +142,7 @@ export const useGameStore = create<GameStore>((set, get) => ({
   prepRemaining: null, prepPaused: false,
   spectating: null,
   selectedUnitId: null,
-  settings: { battleSpeed: 1, showDamageNumbers: true, autoContinue: true, keybinds: { ...DEFAULT_KEYBINDS } },
+  settings: readSettings(),
   devMode: new URLSearchParams((globalThis as { location?: { search: string } }).location?.search ?? '').get('dev') === '1',
   lastError: null,
 
@@ -394,9 +410,16 @@ export const useGameStore = create<GameStore>((set, get) => ({
     bump(set);
   },
 
-  setPrepClock: (remaining, paused) => set((s) => ({ prepRemaining: Math.max(0, remaining), prepPaused: paused ?? s.prepPaused })),
+  setPrepClock: (remaining, paused) => {
+    const s = get();
+    if (s.prepRemaining !== null && Math.floor(s.prepRemaining / 3) !== Math.floor(remaining / 3)) { s.director?.refreshAiPlacements(); bump(set); }
+    set({ prepRemaining: Math.max(0, remaining), prepPaused: paused ?? s.prepPaused });
+  },
 
-  setBattleTime: (seconds) => set({ battleTime: seconds }),
+  setBattleTime: (seconds) => {
+    // A final animation tick after skipping must not rewind the retained report.
+    if (get().battleRunning && !get().battleComplete) set({ battleTime: seconds });
+  },
 
   completeBattle: () => {
     if (get().onlinePlayerId) return;
@@ -404,7 +427,7 @@ export const useGameStore = create<GameStore>((set, get) => ({
     if (!director || !battleRunning || battleComplete) return;
     director.settleRound();
     saveToStorage(director);
-    set({ battleComplete: true });
+    set({ battleComplete: true, battleTime: get().battleFrames?.at(-1)?.t ?? get().battleTime });
     bump(set);
   },
 
@@ -420,9 +443,7 @@ export const useGameStore = create<GameStore>((set, get) => ({
     set({
       battleRunning: false,
       battleComplete: false,
-      battleTime: 0,
       prepRemaining: null, prepPaused: false,
-      battleFrames: null,
       screen: director.isOver ? 'RESULT' : 'BATTLE',
       spectating: null,
     });
@@ -457,7 +478,12 @@ export const useGameStore = create<GameStore>((set, get) => ({
     set({ selectedUnitId: null });
   },
 
-  setSettings: (patch) => set((s) => ({ settings: { ...s.settings, ...patch } })),
+  setSettings: (patch) => {
+    const settings = { ...get().settings, ...patch };
+    for (const key of ['musicVolume', 'effectsVolume'] as const) settings[key] = Number.isFinite(settings[key]) ? Math.max(0, Math.min(1, settings[key])) : DEFAULT_SETTINGS[key];
+    try { localStorage.setItem('uft-settings-v2', JSON.stringify(settings)); } catch { /* Settings still apply in memory. */ }
+    configureAudio(settings); set({ settings });
+  },
   setDevMode: (on) => set({ devMode: on }),
 
   devGrant: (action, payload) => {

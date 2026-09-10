@@ -11,7 +11,7 @@ import { applyOnlineCommand, autoField } from '../src/game/network/commands';
 import type { ClientMessage, RoomView, ServerMessage } from '../src/game/network/protocol';
 
 export type Peer = { send: (message: ServerMessage) => void; close: () => void };
-type Seat = { id: string; name: string; token: string; ready: boolean; peer: Peer | null; disconnectedAt: number; lastSeq: number; sentFrames: number };
+type Seat = { ai?: boolean; id: string; name: string; token: string; ready: boolean; peer: Peer | null; disconnectedAt: number; lastSeq: number; sentFrames: number };
 export type Room = { seasonId: import('../src/game/engine/seasons/catalog').SeasonId; code: string; hostId: string; seats: Seat[]; director: RoundDirector | null; deadline: number; changedAt: number; phaseKey: string; battleStarted: number; battleDuration: number; battleId: string | null; settled: boolean; draftUpdatedAt?: number; draftBroadcastAt?: number };
 type SavedRoom = Omit<Room, 'director' | 'seats'> & {
   seats: Omit<Seat, 'peer'>[];
@@ -26,7 +26,7 @@ export function privateMatch(state: MatchState, playerId: string): MatchState {
   return {
     ...state, seed: 0, rngStates: {}, pool: { seasonId: state.seasonId, remaining: {} },
     players: state.players.map((p) => p.id === playerId ? { ...p, isHuman: true } : {
-      ...p, isHuman: false, shop: [], bench: [], items: [], pendingGrants: [], freeRerolls: 0, cheapRerollsUsed: 0, aiProfile: null,
+      ...p, isHuman: false, shop: [], bench: [], items: [], pendingGrants: [], freeRerolls: 0, cheapRerollsUsed: 0, aiProfile: null, aiPlan: undefined,
     }),
     augmentOffers: state.augmentOffers.filter((o) => o.playerId === playerId),
   };
@@ -99,11 +99,12 @@ export class RoomService {
       }
       let seat: Seat;
       if (message.type === 'resume') {
-        const found = room.seats.find((s) => s.token === message.token);
+        const found = room.seats.find((s) => !s.ai && s.token === message.token);
         if (!found) throw new Error('재접속 정보가 올바르지 않습니다.');
         seat = found;
         if (seat.peer) { this.memberships.delete(seat.peer); seat.peer.close(); }
         seat.peer = peer; seat.disconnectedAt = 0;
+        if (!room.director && !room.seats.some(s => s.id === room.hostId && s.peer && !s.ai)) room.hostId = seat.id;
       } else {
         if (room.director) throw new Error('이미 시작된 방입니다.');
         if (room.seats.length >= 8) throw new Error('최대 8명까지 참가할 수 있습니다.');
@@ -125,14 +126,25 @@ export class RoomService {
       if (room.director) throw new Error('이미 게임이 시작되었습니다.');
       seat.ready = message.ready; this.broadcastRoom(room); return;
     }
+    if (message.type === 'addAi' || message.type === 'removeAi') {
+      if (seat.id !== room.hostId) throw new Error('방장만 AI를 변경할 수 있습니다.');
+      if (room.director) throw new Error('이미 게임이 시작되었습니다.');
+      if (message.type === 'addAi') this.addAi(room);
+      else {
+        if (!room.seats.some(s => s.id === message.id && s.ai)) throw new Error('AI 좌석만 제거할 수 있습니다.');
+        room.seats = room.seats.filter(s => s.id !== message.id);
+      }
+      this.broadcastRoom(room); return;
+    }
     if (message.type === 'start') {
       if (seat.id !== room.hostId) throw new Error('방장만 시작할 수 있습니다.');
       if (room.director) throw new Error('이미 게임이 시작되었습니다.');
-      if (room.seats.length < 2 || (!message.fillAi && room.seats.length !== 8)) throw new Error(message.fillAi ? '사람 2명 이상이 필요합니다.' : '8명이 모여야 시작할 수 있습니다.');
-      if (room.seats.some((s) => !s.peer || !s.ready)) throw new Error('모두 연결된 상태에서 준비를 눌러 주세요.');
+      if (!message.fillAi && room.seats.length !== 8) throw new Error('AI를 추가하거나 8명이 모여야 시작할 수 있습니다.');
+      if (room.seats.some((s) => !s.ai && (!s.peer || !s.ready))) throw new Error('모두 연결된 상태에서 준비를 눌러 주세요.');
+      if (message.fillAi) while (room.seats.length < 8) this.addAi(room);
       const state = createMatch({ seed: randomBytes(4).readUInt32LE(), allAi: true, seasonId: room.seasonId });
       for (const p of state.players) {
-        const human = room.seats.find((s) => s.id === p.id);
+        const human = room.seats.find((s) => s.id === p.id && !s.ai);
         if (human) { p.isHuman = true; p.aiProfile = null; p.name = human.name; }
       }
       room.director = new RoundDirector(state, true); room.director.beginPrep();
@@ -159,8 +171,8 @@ export class RoomService {
     if (seat.peer !== peer) return;
     seat.peer = null; seat.disconnectedAt = this.now(); room.changedAt = this.now();
     if (leave && !room.director) room.seats = room.seats.filter((s) => s !== seat);
-    if (!room.director && room.hostId === seat.id) room.hostId = room.seats.find((s) => s.peer)?.id ?? room.seats[0]?.id ?? '';
-    if (!room.seats.length) this.rooms.delete(room.code); else this.broadcastRoom(room);
+    if (!room.director && room.hostId === seat.id) room.hostId = room.seats.find((s) => s.peer && !s.ai)?.id ?? room.seats.find(s => !s.ai)?.id ?? '';
+    if (!room.seats.some(s => !s.ai)) this.rooms.delete(room.code); else this.broadcastRoom(room);
     if (leave) peer.close();
   }
 
@@ -176,6 +188,7 @@ export class RoomService {
   }
 
   /** One wall clock owns every seat. No client's speed/skip changes the match. */
+  private readonly aiScoutTimes = new Map<string, number>();
   tick(): void {
     const now = this.now();
     for (const room of this.rooms.values()) {
@@ -196,6 +209,9 @@ export class RoomService {
           this.broadcastState(room); room.draftBroadcastAt = now;
         }
         continue;
+      }
+      if (d.state.phase === 'ROUND_PREP' && now - (this.aiScoutTimes.get(room.code) ?? 0) >= 3000) {
+        d.refreshAiPlacements(); this.aiScoutTimes.set(room.code, now); this.broadcastState(room);
       }
       if (now < room.deadline) continue;
       if (d.state.phase === 'ROUND_RESOLVE') {
@@ -225,8 +241,13 @@ export class RoomService {
     }
   }
 
+  private addAi(room: Room): void {
+    if (room.seats.length >= 8) throw new Error('빈자리가 없습니다.');
+    const id = Array.from({ length: 8 }, (_, i) => `p${i + 1}`).find(id => !room.seats.some(s => s.id === id))!;
+    room.seats.push({ id, name: `AI ${id.slice(1)}`, ai: true, token: '', ready: true, peer: null, disconnectedAt: 0, lastSeq: 0, sentFrames: 0 });
+  }
   private broadcastRoom(room: Room): void {
-    const view: RoomView = { seasonId: room.seasonId, code: room.code, hostId: room.hostId, started: !!room.director, seats: room.seats.map((s) => ({ id: s.id, name: s.name, ready: s.ready, connected: !!s.peer })), deadline: room.deadline, serverNow: this.now() };
+    const view: RoomView = { seasonId: room.seasonId, code: room.code, hostId: room.hostId, started: !!room.director, seats: room.seats.map((s) => ({ id: s.id, name: s.name, ready: s.ready, connected: !!s.peer || !!s.ai, ai: !!s.ai })), deadline: room.deadline, serverNow: this.now() };
     for (const s of room.seats) s.peer?.send({ type: 'room', room: view });
   }
   private broadcastState(room: Room): void { for (const s of room.seats) if (s.peer) this.sendState(room, s); }

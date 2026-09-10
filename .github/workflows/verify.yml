@@ -65,19 +65,8 @@ jobs:
       - name: Build
         run: npm run build
 
-      - name: Serve the build and check it responds
-        run: |
-          npm start &
-          for i in $(seq 1 30); do
-            if curl -fsS -o /dev/null http://127.0.0.1:4173/; then
-              echo "server responded"
-              curl -fsS -o /dev/null -w 'deep link: %{http_code}\n' http://127.0.0.1:4173/some/route
-              exit 0
-            fi
-            sleep 2
-          done
-          echo "server did not respond in time" >&2
-          exit 1
+      - name: Check production entry points and WebSocket rooms
+        run: node --test tests/support/production-start.mjs
 
   browser:
     runs-on: ubuntu-latest

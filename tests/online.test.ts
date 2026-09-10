@@ -198,3 +198,39 @@ it('synchronizes carousel targets, preserves progress across restart, and awards
   p.gold = 0; f.send(0, { ...xp, seq: 4 });
   expect(f.peers[0].messages.filter(m => m.type === 'ack' && m.sound === 'level-up')).toHaveLength(1);
 });
+
+it('lets only the host manage AI seats, restores them and finishes a solo online match at server speed', () => {
+  const f = fixture(2);
+  f.send(1, { type: 'addAi' }); expect(f.room.seats).toHaveLength(2);
+  f.send(0, { type: 'addAi' });
+  const ai = f.room.seats.find(s => s.ai)!; expect(ai.ready).toBe(true);
+  f.send(1, { type: 'removeAi', id: ai.id }); expect(f.room.seats).toHaveLength(3);
+  f.send(0, { type: 'removeAi', id: 'p2' }); expect(f.room.seats).toHaveLength(3);
+  f.send(0, { type: 'removeAi', id: ai.id }); expect(f.room.seats).toHaveLength(2);
+  f.send(1, { type: 'leave' });
+  f.send(0, { type: 'ready', ready: true }); f.send(0, { type: 'start', fillAi: true });
+  expect(f.room.seats.filter(s => s.ai)).toHaveLength(7);
+  expect(f.room.director!.state.players.filter(p => p.isHuman)).toHaveLength(1);
+  expect(f.room.director!.state.players.filter(p => !p.isHuman).every(p => !!p.aiProfile)).toBe(true);
+  const saved = f.service.snapshot(), restored = new RoomService(); restored.restore(saved);
+  expect([...restored.rooms.values()][0].seats.filter(s => s.ai)).toHaveLength(7);
+  f.send(0, { type: 'removeAi', id: 'p2' }); expect(f.room.seats).toHaveLength(8);
+  f.prep(); f.tick();
+  expect(f.room.director!.state.phase).toBe('BATTLE');
+  f.tick(f.room.battleStarted + 500);
+  const frames = f.peers[0].messages.filter(m => m.type === 'frames').at(-1)!;
+  expect(frames.frames.every(frame => frame.t <= .5)).toBe(true);
+  for (const action of ['skip', 'speed']) expect(clientMessageSchema.safeParse({ type: 'command', seq: 99, round: '1-1', command: { action } }).success).toBe(false);
+  for (let i = 0; i < 700 && !f.room.director!.isOver; i++) { f.tick(); f.peers[0].messages.length = 0; }
+  expect(f.room.director!.isOver).toBe(true);
+  expect(f.room.director!.state.players.map(p => p.placement).sort()).toEqual([1,2,3,4,5,6,7,8]);
+}, 20000);
+
+it('keeps lobby ownership with people when a host disconnects or leaves AI seats behind', () => {
+  const f = fixture(1); f.send(0, { type: 'addAi' });
+  const token = f.room.seats[0].token;
+  f.service.disconnect(f.peers[0]);
+  const resumed = peer(); f.service.receive(resumed, { type: 'resume', code: f.room.code, token });
+  expect(f.room.hostId).toBe('p1');
+  f.service.receive(resumed, { type: 'leave' }); expect(f.service.rooms.size).toBe(0);
+});

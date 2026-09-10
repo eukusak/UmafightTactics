@@ -43,9 +43,10 @@ if (result.status !== 0) {
   console.error(
     '\n[render] The build failed during install.\n' +
       '         If this was an out-of-memory failure, the build machine is too small.\n' +
-      '         Deploy this repository as a Render *Static Site* instead:\n' +
-      '           Build Command:     npm ci && npm run build\n' +
-      '           Publish Directory: dist\n',
+      '         Use a build machine with sufficient memory for the Node Web Service.\n' +
+      '           Build Command: npm ci && npm run build\n' +
+      '           Start Command: npm start\n' +
+      '         Static Sites cannot host online rooms.\n',
   );
   process.exit(result.status ?? 1);
 }

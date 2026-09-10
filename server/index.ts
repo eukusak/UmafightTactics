@@ -45,7 +45,7 @@ export function attachMultiplayer(server: Server, rooms = new RoomService()) {
   return { rooms, wss };
 }
 
-async function main(): Promise<void> {
+export async function main(): Promise<void> {
   const { staticHandler, requireBuild } = await import('../scripts/serve.mjs');
   requireBuild();
   const server = createServer((req, res) => {

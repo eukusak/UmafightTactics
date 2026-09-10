@@ -1,13 +1,11 @@
 /** Delivered art is preferred. Reference thumbnails are explicitly tracked separately. */
-import previewsRaw from '../../data/manual/reference-previews.json';
 import deliveredRaw from '../../data/manual/delivered-art.json';
 const deliveredFiles = new Set<string>(deliveredRaw);
-const previews = previewsRaw as Record<string, { preview: string }>;
 export function assetUrl(relative: string): string | null {
   return deliveredFiles.has(relative) ? `/assets/${relative}` : null;
 }
 export function portraitUrl(id: string): string | null {
-  return assetUrl(`portraits/${id}.png`) ?? (previews[id] ? `/assets/${previews[id].preview}` : null);
+  return assetUrl(`portraits/${id}.png`);
 }
 export function standeeUrl(id: string): string | null {
   return id.startsWith('pve_') ? assetUrl(`pve/standees/${id.slice(4)}.png`) : assetUrl(`characters/standees/${id}.png`);

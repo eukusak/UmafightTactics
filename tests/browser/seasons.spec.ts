@@ -61,16 +61,14 @@ for (const season of SEASONS) {
   });
 }
 
-test('collection season and faction filters', async ({ page }, info) => {
+test('collection trait filters without season or era selectors', async ({ page }, info) => {
   await mainMenu(page);
   await page.getByRole('button', { name: '도감 (145명)' }).click();
   await expect(page.locator('.collection-card')).toHaveCount(145);
   for (const season of SEASONS) {
-    await page.getByLabel('도감 시즌').selectOption(season.id);
-    await page.locator('select').filter({ has: page.locator('option[value="active"]') }).selectOption('active');
-    await expect(page.locator('.collection-card')).toHaveCount(60);
+    await expect(page.getByLabel('도감 시즌')).toHaveCount(0);
     for (const trait of season.traits) {
-      await page.getByLabel('시즌 시너지').selectOption(trait.id);
+      await page.getByLabel('특성', { exact: true }).selectOption(trait.id);
       await expect(page.locator('.collection-card')).toHaveCount(15);
     }
   }
