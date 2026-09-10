@@ -1,6 +1,6 @@
 import { createServer, type Server } from 'node:http';
 import { WebSocketServer, WebSocket } from 'ws';
-import { pathToFileURL } from 'node:url';
+import { isMainModule, listenAddress } from '../scripts/runtime.mjs';
 import { clientMessageSchema } from '../src/game/network/protocol';
 import { RoomService, type Peer } from './rooms';
 import { loadRooms, saveRooms } from './persistence';
@@ -46,6 +46,8 @@ export function attachMultiplayer(server: Server, rooms = new RoomService()) {
 }
 
 export async function main(): Promise<void> {
+  const { port, host } = listenAddress();
+  console.log('[startup] Loading HTTP + multiplayer server');
   const { staticHandler, requireBuild } = await import('../scripts/serve.mjs');
   requireBuild();
   const server = createServer((req, res) => {
@@ -67,7 +69,11 @@ export async function main(): Promise<void> {
     try { persist(); } catch { console.error('Room checkpoint failed; check disk space and permissions.'); }
   }, 2000) : null;
   saver?.unref();
-  server.listen(Number(process.env.PORT) || 4173, process.env.HOST || '0.0.0.0', () => console.log('UmafightTactics HTTP + multiplayer server ready'));
+  await new Promise<void>((resolve, reject) => {
+    server.once('error', reject);
+    server.listen(port, host, () => { server.removeListener('error', reject); resolve(); });
+  });
+  console.log('UmafightTactics HTTP + multiplayer server ready on http://' + host + ':' + port);
   let stopping = false;
   for (const signal of ['SIGTERM', 'SIGINT']) process.once(signal, () => {
     if (stopping) return;
@@ -78,4 +84,7 @@ export async function main(): Promise<void> {
     server.close(() => process.exit(process.exitCode ?? 0));
   });
 }
-if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) void main();
+if (isMainModule(import.meta.url)) void main().catch(error => {
+  console.error('[startup] Failed to start HTTP + multiplayer server:', error);
+  process.exitCode = 1;
+});

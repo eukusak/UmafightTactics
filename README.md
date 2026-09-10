@@ -190,6 +190,8 @@ Render에서 **New → Blueprint**로 연결하면 `render.yaml`의 Node 서비�
 
 `npm start`는 `server/index.ts`에서 정적 파일과 `/multiplayer` WebSocket을 같은 포트로 제공합니다. 기존 시작 명령 `node scripts/serve.mjs`도 같은 온라인 서버를 실행합니다. `/health` 응답의 `multiplayer: true`로 온라인 서버가 실행 중인지 확인할 수 있습니다.
 
+포트 검색 시간 초과가 발생하면 Deploy 로그에서 실행 명령과 시작 로그를 확인합니다. 정상 로그는 `UmafightTactics HTTP + multiplayer server ready on http://0.0.0.0:<PORT>`입니다. 빌드의 500kB 청크 경고는 포트 미개방 오류가 아닙니다. 시작 명령은 `npm start`, 배포 브랜치는 `main`을 사용합니다. 서버는 Render의 `PORT`를 사용하고 Render 환경에서는 `HOST` 값과 관계없이 `0.0.0.0`에 바인딩합니다. 실행 경로가 심볼릭 링크여도 서버가 시작되며, 잘못된 포트나 시작 실패는 오류 로그와 실패 종료 코드로 표시합니다.
+
 기존 Static Site는 Node Web Service로 새로 만들어야 합니다. `npm run start:static`과 `npm run preview`는 오프라인 확인용으로만 사용합니다.
 
 SPA fallback, gzip, 해시 자산 캐시 및 경로 탈출 차단을 유지합니다. 설치만 수행하는 Render 기본 빌드 명령에서도 `scripts/render-postinstall.mjs`가 빌드 단계에서 번들을 만듭니다.

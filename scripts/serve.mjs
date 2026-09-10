@@ -15,15 +15,14 @@
 import { createReadStream, existsSync, statSync } from 'node:fs';
 import { createServer } from 'node:http';
 import path from 'node:path';
-import { fileURLToPath, pathToFileURL } from 'node:url';
+import { fileURLToPath } from 'node:url';
+import { isMainModule, listenAddress } from './runtime.mjs';
 import { createGzip, gzipSync } from 'node:zlib';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const DIST = path.join(ROOT, 'dist');
 const INDEX = path.join(DIST, 'index.html');
 
-const PORT = Number(process.env.PORT) || 4173;
-const HOST = process.env.HOST || '0.0.0.0';
 
 const MIME = {
   '.html': 'text/html; charset=utf-8',
@@ -145,7 +144,7 @@ export function staticHandler(req, res) {
   res.end(NOT_FOUND_BODY);
 }
 
-if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {
+if (isMainModule(import.meta.url)) {
   if (!process.argv.includes('--static')) {
     const { register } = await import('tsx/esm/api');
     register();
@@ -156,6 +155,7 @@ if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) 
     });
   } else {
     requireBuild();
+    const { port: PORT, host: HOST } = listenAddress();
     const server = createServer(staticHandler);
     server.listen(PORT, HOST, () => {
       console.log(`UmafightTactics static server listening on ${HOST}:${PORT}`);
