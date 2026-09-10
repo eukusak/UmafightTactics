@@ -16,6 +16,7 @@ import { OnlineClock } from './OnlineScreen';
 import { useOnlineStore } from '../../store/onlineStore';
 import { useTouchDrag } from '../../game/ui/touch-drag';
 import { PrepCountdown } from '../PrepCountdown';
+import { WishlistPanel } from '../WishlistPanel';
 
 export function BattleScreen(): JSX.Element | null {
   useTouchDrag();
@@ -83,6 +84,7 @@ export function BattleScreen(): JSX.Element | null {
       <div className="hud-left scroll">
         <TraitPanel />
         <ItemPanel />
+        <WishlistPanel />
       </div>
 
       <div className="hud-field"><div className="field-surface">

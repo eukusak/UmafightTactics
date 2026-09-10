@@ -31,7 +31,7 @@ function ItemDetail({ id }: { id: string }): JSX.Element {
         const pair = [...recipe.components!]; pair.splice(pair.indexOf(id), 1);
         return <div className="detail-recipe-card" key={recipe.id}><div className="detail-recipe"><b>＋</b><ItemLink id={pair[0]} /></div><ItemLink id={recipe.id} /><p>{recipe.description}</p></div>;
       })}</>}
-    <p className="muted">보관함의 재료를 기물 위로 드래그하면 장착됩니다. 이미 장착한 재료와 조합할 수 있으면 자동 완성됩니다.</p>
+    <p className="muted">보관함의 재료끼리 0.7초간 겹쳐 유지하면 조합됩니다. 재료를 기물 위로 드래그하면 장착됩니다. 이미 장착한 재료와 조합할 수 있으면 자동 완성됩니다.</p>
   </>;
 }
 

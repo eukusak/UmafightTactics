@@ -47,7 +47,7 @@ export function UnitToken({
       {unit.items.length > 0 && (
         <div className="items">
           {unit.items.map((id, i) => (
-            <i key={`${id}-${i}`} style={{ background: ITEM_TAG_COLORS[getItem(id).tags[0]] ?? ART_COLORS.muted }} />
+            <ItemIcon key={`${id}-${i}`} itemId={id} size={18} />
           ))}
         </div>
       )}

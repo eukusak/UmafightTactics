@@ -13,6 +13,7 @@ export const commandSchema = z.discriminatedUnion('action', [
   z.object({ action: z.literal('lock') }).strict(),
   z.object({ action: z.literal('move'), unit: id, position: cell.nullable() }).strict(),
   z.object({ action: z.literal('equip'), unit: id, item: id }).strict(),
+  z.object({ action: z.literal('combineItems'), source: id, target: id }).strict(),
   z.object({ action: z.literal('augment'), id }).strict(),
   z.object({ action: z.literal('carouselMove'), target: z.object({ x: z.number().finite().min(0).max(1100), y: z.number().finite().min(0).max(650) }).strict(), option: z.number().int().min(0).max(15).nullable() }).strict(),
   z.object({ action: z.literal('draft'), index: z.number().int().min(0).max(15) }).strict(),

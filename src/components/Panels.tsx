@@ -10,6 +10,8 @@ import { roundInfo } from '../game/engine/rounds/schedule';
 import { ItemIcon, Stat, Portrait } from './common';
 import { traitTierLabel } from './UnitTooltip';
 import type { PlayerState } from '../game/engine/state';
+import { getItem } from '../game/engine/items/item-defs';
+import { ITEM_COMBINE_HOLD_MS } from '../game/ui/item-combine-drag';
 
 export function TopHud(): JSX.Element | null {
   const match = useGameStore((s) => s.match);
@@ -88,6 +90,7 @@ export function TraitPanel(): JSX.Element | null {
 }
 
 export function ItemPanel(): JSX.Element | null {
+  const preview = useInteractionStore(s => s.itemCombine);
   const player = useGameStore((s) => s.human());
   const unequipTarget = useGameStore((s) => s.revision);
   if (!player) return null;
@@ -102,7 +105,10 @@ export function ItemPanel(): JSX.Element | null {
         {player.items.map((i) => (
           <div
             key={i.instanceId}
-            data-touch-item={i.instanceId}
+            className={`stored-item${preview?.target === i.instanceId ? ' combining' : ''}`}
+            data-touch-item={i.instanceId} data-drop="item" data-drop-item={i.instanceId}
+            aria-label={getItem(i.itemId).name}
+            style={{ '--combine-duration': `${ITEM_COMBINE_HOLD_MS}ms` } as React.CSSProperties}
             draggable
             onDragStart={(e) => {
               e.dataTransfer.setData('application/x-item', i.instanceId);
@@ -110,10 +116,12 @@ export function ItemPanel(): JSX.Element | null {
             }}
           >
             <ItemIcon itemId={i.itemId} onClick={() => useInteractionStore.getState().inspect({ kind: 'item', id: i.itemId })} />
+            {preview?.target === i.instanceId && <span className="item-combine-progress" />}
           </div>
         ))}
         {player.items.length === 0 && <div className="muted" style={{ fontSize: 13 }}>보유 아이템 없음</div>}
       </div>
+      <p className="item-combine-hint" role="status">{preview ? `${getItem(preview.resultId).name} 조합 중… 떼면 취소` : '재료끼리 0.7초 겹치면 조합 · 기물에 재료 2개를 넣으면 자동 조합'}</p>
 
       {player.tacticianItems.length > 0 && (
         <>

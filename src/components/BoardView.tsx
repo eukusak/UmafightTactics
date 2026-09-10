@@ -11,6 +11,7 @@ import { roundInfo } from '../game/engine/rounds/schedule';
 import { useInteractionStore } from '../store/interactionStore';
 import { frameAt, orientSnapshot, samplePosition } from '../game/ui/battle-playback';
 import type { UnitInstance } from '../game/engine/state';
+import { ItemIcon } from './common';
 
 const FIELD_W = 1320;
 const FIELD_H = 658;
@@ -81,6 +82,7 @@ export function PrepBoard({ onUnitContext }: { onUnitContext: (e: React.MouseEve
           <span className="arena-unit-stars" >{'★'.repeat(unit.star)}</span>
           <span className="arena-unit-health" />
           <span className="arena-unit-name">{def.nameKo}</span>
+          <span className="arena-unit-items">{unit.items.map((id, i) => <ItemIcon key={`${id}-${i}`} itemId={id} size={20} />)}</span>
         </div>
       </div>;
     })}
