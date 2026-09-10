@@ -1,3 +1,4 @@
+import traitCorrections from '../src/data/manual/trait-corrections.json';
 import { buildSeasons } from '../src/game/engine/seasons/catalog';
 import { writeSeasonIcons } from './season-icons';
 /**
@@ -332,6 +333,8 @@ const DISTANCE_KEYS: Array<[keyof Horse['aptitudes']['distance'], DistanceTrait]
 ];
 
 function bestDistance(h: Horse): DistanceTrait {
+  const correction = Object.values(traitCorrections.units).find(c => c.horseId === h.id);
+  if (correction) return correction.to as DistanceTrait;
   const fromHistory: Record<string, DistanceTrait> = {
     SPRINT: 'sprinter', MILE: 'miler', MIDDLE: 'middle', LONG: 'stayer',
   };

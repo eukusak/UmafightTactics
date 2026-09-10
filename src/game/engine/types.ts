@@ -57,6 +57,7 @@ export type SkillTemplate =
   | 'SUMMON';
 
 export type TargetRule =
+  | 'HIGHEST_AD_ENEMY' | 'HIGHEST_AD_ALLY' | 'LOWEST_HP_ALLIES'
   | 'CURRENT_TARGET'
   | 'NEAREST_ENEMY'
   | 'LOWEST_HP_ENEMY'
@@ -74,6 +75,12 @@ export type TargetRule =
  * per-item or per-skill switch anywhere in the battle engine (spec §42).
  */
 export type EffectDef = {
+  shape?: 'LINE' | 'CONE' | 'CHAIN';
+  range?: number;
+  maxTargets?: number;
+  leech?: number;
+  isolatedMultiplier?: number;
+  onKillMana?: number;
   kind: EffectKind;
   /** Coefficients for item procs; these never use the character's star skill multiplier. */
   scaling?: { attackDamage?: number; abilityPower?: number; armor?: number; selfMaxHp?: number; targetCurrentHp?: number; targetMissingHp?: number; cap?: number };
@@ -113,6 +120,7 @@ export type EffectDef = {
 };
 
 export type EffectKind =
+  | 'CLEANSE' | 'MANA_DRAIN'
   | 'PROC_DAMAGE'
   | 'SPELLBLADE'
   | 'STAT_ADD'
@@ -208,7 +216,7 @@ export type SkillDef = {
   vfxKey: string;
   description: string;
   /** Shared by simulation, motion playback and the preview. */
-  choreography?: { windup: number; recovery: number; pulseInterval: number; color: string; variant: string };
+  choreography?: { windup: number; recovery: number; pulseInterval: number; color: string; variant: string; accent?: string; emblem?: number; label?: string; motion?: 'STRIKE' | 'PULSE' | 'CHANNEL' };
 };
 
 export type UnitDef = {

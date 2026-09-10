@@ -6,7 +6,7 @@
  * the battle engine never switches on a character ID.
  */
 import type { Cost, DamageType, EffectDef, Role, RunStyle, SkillDef, SkillTemplate, TargetRule } from '../types';
-import { specializeSkill } from './skill-variants';
+import { buildTacticalSkill } from './skill-patterns';
 
 /** Spec §12.2 — which templates a role may draw from, in preference order. */
 export const ROLE_TEMPLATES: Record<Role, SkillTemplate[]> = {
@@ -246,7 +246,7 @@ export function buildSkill(input: SkillBuildInput): SkillDef {
     TANK: 90, BRUISER: 80, AD_CARRY: 70, AP_CARRY: 80, SUPPORT: 90,
   };
 
-  return specializeSkill(input.unitId, {
+  return buildTacticalSkill(input.unitId, {
     id: `skill_${input.unitId}`,
     displayName,
     template,

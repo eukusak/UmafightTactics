@@ -33,6 +33,9 @@ export const TriggerSchema = z.object({
 });
 
 export const EffectSchema = z.object({
+  shape: z.enum(['LINE', 'CONE', 'CHAIN']).optional(), range: z.number().positive().max(12).optional(),
+  maxTargets: z.number().int().min(1).max(8).optional(), leech: z.number().min(0).max(1).optional(),
+  isolatedMultiplier: z.number().min(1).max(2).optional(), onKillMana: z.number().min(0).max(50).optional(),
   scaling: z.object({ attackDamage: z.number().optional(), abilityPower: z.number().optional(), armor: z.number().optional(), selfMaxHp: z.number().optional(), targetCurrentHp: z.number().optional(), targetMissingHp: z.number().optional(), cap: z.number().optional() }).optional(),
   refresh: z.boolean().optional(),
   perTargetCooldown: z.boolean().optional(),
@@ -70,6 +73,7 @@ export const SkillDefSchema = z.object({
   vfxKey: z.string().min(1),
   description: z.string().min(1),
   choreography: z.object({
+    accent: z.string().regex(/^#[0-9a-fA-F]{6}$/).optional(), emblem: z.number().int().min(0).max(144).optional(), label: z.string().optional(), motion: z.enum(['STRIKE','PULSE','CHANNEL']).optional(),
     windup: z.number().min(0).max(2), recovery: z.number().min(0).max(2),
     pulseInterval: z.number().positive().max(2), color: z.string().regex(/^#[0-9a-fA-F]{6}$/), variant: z.string().min(1),
   }).optional(),

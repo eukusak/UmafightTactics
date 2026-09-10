@@ -711,6 +711,8 @@ moveSpeedHexPerSec = 1.65 + 0.35*pSpeed;
 145명 각각 별도 하드코딩 함수 금지.
 `SkillDef` JSON DSL + 12개 공통 행동 템플릿으로 구성한다.
 
+**2026-09-10 개정:** 몸동작 템플릿은 유지하고 실제 효과는 145명의 명시적 프로필과 42개 전투 패턴으로 결정한다. 아래 기존 템플릿 표는 몸동작 분류이며 최신 수치·효과·대표 경기의 기준은 `src/data/manual/skill-profiles.json`, `src/game/engine/battle/skill-patterns.ts` 및 [스킬 패치 문서](SKILL_PATCH_2026-09-10.md)다. 직선/부채꼴/연쇄 범위, 타격 상한, 정화, 마나 방해, 고립 배율, 실제 체력 피해 흡수, 처치 환급을 지원한다.
+
 ```ts
 type SkillDef = {
   id: string;

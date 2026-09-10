@@ -21,7 +21,7 @@ import {
   type CombatUnit, type Team,
 } from './combat-unit';
 import {
-  accumulateAura, applyEffect, isAuraKind, resolveTargets, triggerHolds, procDamage,
+  accumulateAura, applyEffect, isAuraKind, resolveTargets, triggerHolds, procDamage, resolveEffectTargets,
   type EffectContext, type TriggerEvent,
 } from './effects';
 import {
@@ -64,7 +64,7 @@ export type BattleEvent =
   | { t: number; type: 'DAMAGE'; source: string; target: string; damage: number; absorbed: number; isSkill: boolean; crit?: boolean }
   | { t: number; type: 'ATTACK'; source: string; target: string; damage: number; crit: boolean }
   | { t: number; type: 'CAST'; source: string; skill: string; target?: string; releaseAt?: number; endAt?: number }
-  | { t: number; type: 'SKILL_EFFECT'; source: string; targets: string[]; kind: EffectDef['kind']; radius: number }
+  | { t: number; type: 'SKILL_EFFECT'; source: string; targets: string[]; kind: EffectDef['kind']; radius: number; shape?: EffectDef['shape']; effectIndex?: number }
   | { t: number; type: 'CAST_CANCEL'; source: string }
   | { t: number; type: 'DEATH'; unit: string }
   | { t: number; type: 'REVIVE'; unit: string }
@@ -765,13 +765,13 @@ export class BattleEngine {
       while (unit.alive && cast.timeline.length && cast.start + cast.timeline[0].at <= this.time + 1e-8) {
         const { effect, index } = cast.timeline.shift()!;
         const lockPrimary = effect.target === unit.skill.targetRule && !['SELF', 'ALL_ALLIES', 'ALL_ENEMIES'].includes(effect.target ?? '');
-        const targets = resolveTargets(this.ctx, unit, lockPrimary ? 'CURRENT_TARGET' : effect.target ?? 'SELF', effect.radius, primary);
+        const targets = resolveEffectTargets(this.ctx, unit, { ...effect, target: effect.target ?? 'SELF' }, primary, lockPrimary);
         const touched = applyEffect(this.ctx, unit, effect, index, {
           power: ['HEAL', 'SHIELD_FLAT'].includes(effect.kind) ? unit.skillMultiplier : 1,
           sourceKey: `skill:${unit.id}:${unit.skill.id}`, currentTarget: primary, event: 'ON_CAST', targets,
         });
         if (touched && targets.length) this.events.push({ t: this.time, type: 'SKILL_EFFECT', source: unit.id,
-          targets: targets.map((u) => u.id), kind: effect.kind, radius: effect.radius ?? 0 });
+          targets: targets.map((u) => u.id), kind: effect.kind, radius: effect.radius ?? 0, shape: effect.shape, effectIndex: index });
       }
       if (unit.alive && cast.end > this.time + 1e-8) this.casts.push(cast);
     }

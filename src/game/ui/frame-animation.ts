@@ -24,6 +24,15 @@ export function skillMotionFrame(skill: SkillDef, elapsed: number, releaseFrame 
   const first = Math.max(0, Math.min(3, releaseFrame));
   if (time < windup && first > 0) return 12 + Math.min(first - 1, Math.floor(time / windup * first));
   const interval = skill.choreography?.pulseInterval ?? 1 / 6;
+  if (skill.choreography?.motion) {
+    const releases = [...new Set(skillTimeline(skill).map(e => e.at))];
+    const last = releases.at(-1) ?? windup;
+    if (time >= last + (skill.choreography.recovery ?? .3)) return 15;
+    if (skill.choreography.motion === 'CHANNEL') return 14;
+    const next = releases.find(at => at > time + 1e-8);
+    if (skill.choreography.motion === 'PULSE' && next !== undefined && next - time < .1) return 13;
+    return 14;
+  }
   if (skill.template === 'MULTI_SHOT') {
     const shots = skillTimeline(skill).filter(e => e.effect.kind === 'DAMAGE').slice(0, 3).map(e => e.at);
     if (time >= (shots.at(-1) ?? windup) + interval) return 15;

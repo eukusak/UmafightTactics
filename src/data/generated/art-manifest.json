@@ -329,8 +329,8 @@
     {
       "id": "curren_chan",
       "nameKo": "카렌짱",
-      "activeS1": true,
-      "cost": 2,
+      "activeS1": false,
+      "cost": 3,
       "portrait": "portraits/curren_chan.png",
       "battleSheet": "characters/curren_chan.png",
       "cutinRequired": false
@@ -528,7 +528,7 @@
       "id": "nice_nature",
       "nameKo": "나이스 네이처",
       "activeS1": true,
-      "cost": 1,
+      "cost": 2,
       "portrait": "portraits/nice_nature.png",
       "battleSheet": "characters/nice_nature.png",
       "cutinRequired": false
@@ -537,7 +537,7 @@
       "id": "king_halo",
       "nameKo": "킹 헤일로",
       "activeS1": true,
-      "cost": 1,
+      "cost": 2,
       "portrait": "portraits/king_halo.png",
       "battleSheet": "characters/king_halo.png",
       "cutinRequired": false
@@ -644,7 +644,7 @@
     {
       "id": "tsurumaru_tsuyoshi",
       "nameKo": "츠루마루 츠요시",
-      "activeS1": false,
+      "activeS1": true,
       "cost": 1,
       "portrait": "portraits/tsurumaru_tsuyoshi.png",
       "battleSheet": "characters/tsurumaru_tsuyoshi.png",
@@ -654,7 +654,7 @@
       "id": "mejiro_bright",
       "nameKo": "메지로 브라이트",
       "activeS1": true,
-      "cost": 2,
+      "cost": 1,
       "portrait": "portraits/mejiro_bright.png",
       "battleSheet": "characters/mejiro_bright.png",
       "cutinRequired": false
@@ -698,8 +698,8 @@
     {
       "id": "furioso",
       "nameKo": "푸리오소",
-      "activeS1": true,
-      "cost": 2,
+      "activeS1": false,
+      "cost": 3,
       "portrait": "portraits/furioso.png",
       "battleSheet": "characters/furioso.png",
       "cutinRequired": false
@@ -752,8 +752,8 @@
     {
       "id": "mejiro_ramonu",
       "nameKo": "메지로 라모누",
-      "activeS1": true,
-      "cost": 2,
+      "activeS1": false,
+      "cost": 3,
       "portrait": "portraits/mejiro_ramonu.png",
       "battleSheet": "characters/mejiro_ramonu.png",
       "cutinRequired": false
@@ -806,7 +806,7 @@
     {
       "id": "ks_miracle",
       "nameKo": "케이에스 미라클",
-      "activeS1": false,
+      "activeS1": true,
       "cost": 1,
       "portrait": "portraits/ks_miracle.png",
       "battleSheet": "characters/ks_miracle.png",
@@ -842,8 +842,8 @@
     {
       "id": "still_in_love",
       "nameKo": "스틸 인 러브",
-      "activeS1": true,
-      "cost": 1,
+      "activeS1": false,
+      "cost": 2,
       "portrait": "portraits/still_in_love.png",
       "battleSheet": "characters/still_in_love.png",
       "cutinRequired": false
@@ -1049,7 +1049,7 @@
     {
       "id": "calstone_light_o",
       "nameKo": "칼스톤 라이트 오",
-      "activeS1": false,
+      "activeS1": true,
       "cost": 1,
       "portrait": "portraits/calstone_light_o.png",
       "battleSheet": "characters/calstone_light_o.png",
@@ -1085,7 +1085,7 @@
     {
       "id": "sakura_chitose_o",
       "nameKo": "사쿠라 치토세 오",
-      "activeS1": false,
+      "activeS1": true,
       "cost": 2,
       "portrait": "portraits/sakura_chitose_o.png",
       "battleSheet": "characters/sakura_chitose_o.png",
@@ -1121,8 +1121,8 @@
     {
       "id": "lucky_lilac",
       "nameKo": "럭키 라일락",
-      "activeS1": true,
-      "cost": 2,
+      "activeS1": false,
+      "cost": 3,
       "portrait": "portraits/lucky_lilac.png",
       "battleSheet": "characters/lucky_lilac.png",
       "cutinRequired": false
@@ -1203,7 +1203,7 @@
       "id": "marche_lorraine",
       "nameKo": "마르슈 로렌",
       "activeS1": true,
-      "cost": 1,
+      "cost": 2,
       "portrait": "portraits/marche_lorraine.png",
       "battleSheet": "characters/marche_lorraine.png",
       "cutinRequired": false
@@ -1256,8 +1256,8 @@
     {
       "id": "efforia",
       "nameKo": "에프포리아",
-      "activeS1": false,
-      "cost": 3,
+      "activeS1": true,
+      "cost": 2,
       "portrait": "portraits/efforia.png",
       "battleSheet": "characters/efforia.png",
       "cutinRequired": false

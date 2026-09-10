@@ -50,7 +50,7 @@ export function resolveTargets(
 
   switch (rule) {
     case 'SELF': return [self];
-    case 'ALL_ALLIES': return allies(ctx, self);
+    case 'ALL_ALLIES': return radius ? expand(self, allies(ctx, self)) : allies(ctx, self);
     case 'ALL_ENEMIES': return radius ? expand(self, foes) : foes;
     case 'NEAREST_ENEMY': {
       const sorted = foes.slice().sort(
@@ -86,6 +86,11 @@ export function resolveTargets(
       }
       return expand(best, foes);
     }
+    case 'HIGHEST_AD_ENEMY':
+      return expand(foes.slice().sort((a, b) => stat(b, 'attackDamage', ctx.now) - stat(a, 'attackDamage', ctx.now) || byId(a, b))[0] ?? null, foes);
+    case 'HIGHEST_AD_ALLY':
+      return expand(allies(ctx, self).sort((a, b) => stat(b, 'attackDamage', ctx.now) - stat(a, 'attackDamage', ctx.now) || byId(a, b))[0] ?? null, allies(ctx, self));
+    case 'LOWEST_HP_ALLIES': return allies(ctx, self).sort((a, b) => a.hp / a.maxHp - b.hp / b.maxHp || byId(a, b));
     case 'LOWEST_HP_ALLY': {
       const pool = allies(ctx, self);
       const sorted = pool.slice().sort((a, b) => a.hp / a.maxHp - b.hp / b.maxHp || byId(a, b));
@@ -95,6 +100,38 @@ export function resolveTargets(
     default:
       return expand(currentTarget, foes);
   }
+}
+
+/** Actual spatial hit list shared by the simulation and its emitted visual events. */
+export function resolveEffectTargets(ctx: EffectContext, self: CombatUnit, effect: EffectDef, primary: CombatUnit | null, lockPrimary = false): CombatUnit[] {
+  const filtered = effect.excludeSelf ? { ...ctx, units: ctx.units.filter(u => u.id !== self.id) } : ctx;
+  let targets = resolveTargets(filtered, self, lockPrimary ? 'CURRENT_TARGET' : effect.target, effect.radius, primary);
+  const centre = targets[0];
+  const cap = effect.maxTargets ?? Infinity;
+  const byId = (a: CombatUnit, b: CombatUnit) => a.id.localeCompare(b.id);
+  if (effect.shape === 'CHAIN' && centre) {
+    const pool = filtered.units.filter(u => u.alive && u.team === centre.team && (u.team === self.team || isTargetable(u, ctx.now)));
+    targets = [centre];
+    while (targets.length < cap) {
+      const last = targets[targets.length - 1];
+      const next = pool.filter(u => !targets.includes(u) && hexDistance(u.cell, last.cell) <= (effect.range ?? 3))
+        .sort((a, b) => hexDistance(last.cell, a.cell) - hexDistance(last.cell, b.cell) || byId(a, b))[0];
+      if (!next) break;
+      targets.push(next);
+    }
+  } else if ((effect.shape === 'LINE' || effect.shape === 'CONE') && centre) {
+    const point = (u: CombatUnit) => ({ x: u.cell.q + (u.cell.r & 1) * .5, y: u.cell.r * Math.sqrt(3) / 2 });
+    const a = point(self), b = point(centre), dx = b.x - a.x, dy = b.y - a.y, length = Math.hypot(dx, dy);
+    if (length < .001) return [];
+    targets = filtered.units.filter(u => {
+      if (u.team === self.team || !u.alive || !isTargetable(u, ctx.now)) return false;
+      const p = point(u), vx = p.x - a.x, vy = p.y - a.y;
+      const along = (vx * dx + vy * dy) / length, cross = Math.abs(vx * dy - vy * dx) / length;
+      if (along < -.001 || hexDistance(self.cell, u.cell) > (effect.range ?? 3)) return false;
+      return effect.shape === 'LINE' ? cross <= .51 : along / Math.max(.001, Math.hypot(vx, vy)) >= .5 - 1e-8;
+    }).sort((a, b) => hexDistance(self.cell, a.cell) - hexDistance(self.cell, b.cell) || byId(a, b));
+  }
+  return targets.filter(t => !effect.excludeSelf || t.id !== self.id).slice(0, cap);
 }
 
 /** True when the effect's trigger gate is currently satisfied. */
@@ -216,10 +253,9 @@ export function applyEffect(
   }
 
   const power = opts.power;
-  const value = (effect.value ?? 0) * (effect.kind === 'DAMAGE' || effect.kind === 'HEAL' ? power : 1);
+  const value = (effect.value ?? 0) * (effect.kind === 'DAMAGE' || effect.kind === 'HEAL' || effect.kind === 'SHIELD_FLAT' ? power : 1);
   const healScale = ctx.overtime ? OVERTIME_HEAL_MULT : 1;
-  const targetContext = effect.excludeSelf ? { ...ctx, units: ctx.units.filter(u => u.id !== self.id) } : ctx;
-  const targets = (opts.targets ?? resolveTargets(targetContext, self, effect.target as TargetRule, effect.radius, opts.currentTarget))
+  const targets = (opts.targets ?? resolveEffectTargets(ctx, self, effect, opts.currentTarget))
     .filter(t => !effect.excludeSelf || t.id !== self.id);
   const recipients = effect.target ? targets : [self];
   const support = (target: CombatUnit, amount: number) => {
@@ -270,7 +306,15 @@ export function applyEffect(
       const repeat = effect.tag?.startsWith('REPEAT:') ? Number(effect.tag.slice(7)) || 1 : 1;
       let hits = 0;
       for (let i = 0; i < repeat; i += 1) {
-        for (const t of targets) { ctx.dealDamage(self, t, value, effect.damageType ?? 'MAGIC', true); hits += 1; }
+        for (const t of targets) {
+          if (!t.alive) continue;
+          const isolated = !ctx.units.some(u => u.id !== t.id && u.alive && u.team === t.team && hexDistance(u.cell, t.cell) <= 1);
+          const hpBefore = t.hp;
+          ctx.dealDamage(self, t, value * (isolated ? effect.isolatedMultiplier ?? 1 : 1), effect.damageType ?? 'MAGIC', true);
+          if (effect.leech && self.alive) heal(self, Math.max(0, hpBefore - t.hp) * effect.leech * healScale, ctx.now);
+          if (effect.onKillMana && !t.alive && self.alive) self.mana = Math.min(stat(self, 'maxMana', ctx.now), self.mana + effect.onKillMana);
+          hits += 1;
+        }
       }
       return hits;
     }
@@ -300,6 +344,14 @@ export function applyEffect(
       const list = recipients;
       for (const t of list) support(t, heal(t, value * healScale, ctx.now));
       return list.length;
+    }
+    case 'CLEANSE': {
+      for (const t of targets) t.statuses = t.statuses.filter(s => !['STUN', 'SILENCE', 'DISARM', 'SLOW', 'TAUNT'].includes(s.kind));
+      return targets.length;
+    }
+    case 'MANA_DRAIN': {
+      for (const t of targets) t.mana = Math.max(0, t.mana - (effect.value ?? 0));
+      return targets.length;
     }
     case 'HEAL_MAXHP_PCT': {
       const list = recipients;

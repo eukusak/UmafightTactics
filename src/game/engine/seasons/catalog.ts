@@ -82,7 +82,9 @@ export function buildSeasons(units: UnitDef[], firstSeasonIds: string[]): Season
       for (let n = 0; n < SEASON_COST_COUNTS[cost]; n++) {
         const needsNew = n < newQuota;
         const eligible = candidates.filter(u => appearances.has(u.id) !== needsNew);
-        const score = (u: UnitDef): number => (roles.get(u.role) ?? 0) * .5 + traitLoad(u)
+        // Draw common reserve traits earlier so the final season is not forced to take all of them.
+        const reservePressure = (u: UnitDef): number => needsNew ? u.traits.reduce((sum, t) => sum + eligible.filter(v => v.traits.includes(t)).length, 0) * .15 : 0;
+        const score = (u: UnitDef): number => (roles.get(u.role) ?? 0) * .5 + traitLoad(u) - reservePressure(u)
           + (appearances.get(u.id) ?? 0) * .35 - u.traits.filter(t => theme.focus.includes(t)).length * .2;
         eligible.sort((a, b) => score(a) - score(b) || compareId(a, b));
         const unit = eligible[0];

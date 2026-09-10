@@ -11,4 +11,4 @@ const labels: Record<string, string> = {
   execute_break: '파쇄 결정타', execute_siphon: '회복 결정타', execute_giant: '거인 결정타',
 };
 
-export const skillLabel = (skill: SkillDef): string => labels[skill.choreography?.variant ?? ''] ?? '스킬';
+export const skillLabel = (skill: SkillDef): string => skill.choreography?.label ?? labels[skill.choreography?.variant ?? ''] ?? '스킬';
