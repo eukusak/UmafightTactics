@@ -66,7 +66,9 @@ jobs:
         run: npm run build
 
       - name: Check production entry points and WebSocket rooms
-        run: node --test tests/support/production-start.mjs tests/support/startup-paths.mjs
+        # Both files probe a free TCP port before spawning the production entry.
+        # Run them serially so neither suite reclaims the other's released port.
+        run: node --test --test-concurrency=1 tests/support/production-start.mjs tests/support/startup-paths.mjs
 
   browser:
     runs-on: ubuntu-latest
