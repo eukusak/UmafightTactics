@@ -13,13 +13,17 @@ import {
 const DESIGN_W = 1920;
 const DESIGN_H = 1080;
 
-type StageBox = { scale: number; left: number; top: number; width: number; height: number };
+type StageBox = { mobile?: boolean; scale: number; left: number; top: number; width: number; height: number };
 
 /** Scales the fixed design canvas to the viewport, preserving aspect ratio. */
 function useStageBox(resolution: string): StageBox {
   const [box, setBox] = useState<StageBox>({ scale: 1, left: 0, top: 0, width: DESIGN_W, height: DESIGN_H });
   useLayoutEffect(() => {
     const update = (): void => {
+      const vw = window.visualViewport?.width ?? window.innerWidth;
+      const vh = window.visualViewport?.height ?? window.innerHeight;
+      const mobile = window.matchMedia('(pointer: coarse)').matches || window.innerWidth <= 600;
+      if (mobile) { setBox({ mobile: true, scale: 1, width: vw, height: vh, left: 0, top: 0 }); return; }
       const [w, h] = resolution === 'auto' ? [window.innerWidth, window.innerHeight] : resolution.split('x').map(Number);
       const cap = Math.min(1, window.innerWidth / w, window.innerHeight / h);
       const scale = Math.min(w / DESIGN_W, h / DESIGN_H) * cap;
@@ -29,7 +33,8 @@ function useStageBox(resolution: string): StageBox {
     };
     update();
     window.addEventListener('resize', update);
-    return () => window.removeEventListener('resize', update);
+    window.visualViewport?.addEventListener('resize', update);
+    return () => { window.removeEventListener('resize', update); window.visualViewport?.removeEventListener('resize', update); };
   }, [resolution]);
   return box;
 }
@@ -47,7 +52,7 @@ export function App(): JSX.Element {
   const setScreen = useGameStore((s) => s.setScreen);
   const settings = useGameStore(s => s.settings);
   const inMatch = useGameStore(s => !!s.match);
-  const { scale, left, top, width, height } = useStageBox(settings.resolution);
+  const { scale, left, top, width, height, mobile } = useStageBox(settings.resolution);
   useEffect(() => { configureAudio(settings); }, [settings]);
   useEffect(() => { setMusicScene(inMatch ? 'game' : 'title'); }, [inMatch]);
   useEffect(() => {
@@ -78,8 +83,8 @@ export function App(): JSX.Element {
   }
 
   return (
-    <div className="stage-root">
-      <div className="stage" style={{ left, top, width, height, transform: `scale(${scale})` }}>
+    <div className={`stage-root${mobile ? ' mobile-root' : ''}`}>
+      <div className={`stage${mobile ? ' mobile' : ''}`} style={{ left, top, width, height, transform: `scale(${scale})`, '--field-scale': width / 1320 } as React.CSSProperties}>
         {content}
       </div>
     </div>

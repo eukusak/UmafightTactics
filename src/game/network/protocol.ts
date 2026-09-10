@@ -26,11 +26,13 @@ export const clientMessageSchema = z.discriminatedUnion('type', [
   z.object({ type: z.literal('resume'), code, token: z.string().min(32).max(80) }).strict(),
   z.object({ type: z.literal('ready'), ready: z.boolean() }).strict(),
   z.object({ type: z.literal('start'), fillAi: z.boolean() }).strict(),
+  z.object({ type: z.literal('addAi') }).strict(),
+  z.object({ type: z.literal('removeAi'), id }).strict(),
   z.object({ type: z.literal('leave') }).strict(),
   z.object({ type: z.literal('command'), seq: z.number().int().positive().max(Number.MAX_SAFE_INTEGER), round: z.string().max(16), command: commandSchema }).strict(),
 ]);
 export type ClientMessage = z.infer<typeof clientMessageSchema>;
-export type RoomView = { seasonId: SeasonId; code: string; hostId: string; started: boolean; seats: Array<{ id: string; name: string; ready: boolean; connected: boolean }>; deadline: number; serverNow: number };
+export type RoomView = { seasonId: SeasonId; code: string; hostId: string; started: boolean; seats: Array<{ id: string; name: string; ready: boolean; connected: boolean; ai?: boolean }>; deadline: number; serverNow: number };
 export type ServerMessage =
   | { type: 'welcome'; code: string; token: string; playerId: string; lastSeq: number }
   | { type: 'room'; room: RoomView }

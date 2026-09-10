@@ -110,6 +110,7 @@ export function SettingsScreen(): JSX.Element {
   const setSettings = useGameStore((s) => s.setSettings);
   const setScreen = useGameStore((s) => s.setScreen);
   const match = useGameStore((s) => s.match);
+  const online = useGameStore(s => s.onlinePlayerId !== null);
   const [rebinding, setRebinding] = useState<string | null>(null);
 
   const bindLabels: Record<string, string> = {
@@ -125,8 +126,8 @@ export function SettingsScreen(): JSX.Element {
         <h3 style={{ marginTop: 0 }}>전투</h3>
         <div style={{ display: 'flex', gap: 8, alignItems: 'center', marginBottom: 18 }}>
           <span className="muted">기본 재생 속도</span>
-          {[1, 2, 4, 10].map((s) => (
-            <button key={s} className={settings.battleSpeed === s ? 'btn-primary' : 'btn-ghost'}
+          {(online ? [1] : [1, 2, 4, 10]).map((s) => (
+            <button key={s} disabled={online} className={online || settings.battleSpeed === s ? 'btn-primary' : 'btn-ghost'}
               onClick={() => setSettings({ battleSpeed: s as 1 | 2 | 4 | 10 })}>{s}×</button>
           ))}
         </div>

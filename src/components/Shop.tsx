@@ -20,7 +20,7 @@ export function ShopRow(): JSX.Element | null {
 
   const unit = [...player.board, ...player.bench].find(u => u.instanceId === dragged);
   return (
-    <div className={`shop-row sell-drop-zone${unit ? ' selling' : ''}${over ? ' over' : ''}`} aria-label="상점 판매 영역"
+    <div className={`shop-row sell-drop-zone${unit ? ' selling' : ''}${over ? ' over' : ''}`} aria-label="상점 판매 영역" data-drop="sell"
       onDragOver={e => { if (e.dataTransfer.types.includes('application/x-unit')) { e.preventDefault(); e.dataTransfer.dropEffect = 'move'; setOver(true); } }}
       onDragLeave={e => { if (!e.currentTarget.contains(e.relatedTarget as Node | null)) setOver(false); }}
       onDrop={e => { e.preventDefault(); setOver(false); const id = e.dataTransfer.getData('application/x-unit'); if (id) useGameStore.getState().sell(id); useInteractionStore.getState().drag(null); }}>
@@ -85,7 +85,7 @@ export function BenchRow({
         <div
           key={unit?.instanceId ?? `empty-${i}`}
           className={`bench-slot${unit ? ' filled' : ''}`}
-          data-unit-id={unit?.instanceId}
+          data-unit-id={unit?.instanceId} data-touch-unit={unit?.instanceId} data-drop="bench" data-drop-unit={unit?.instanceId}
           role="button" tabIndex={0} aria-label={unit ? `${getUnitDef(unit.unitDefId).nameKo} 대기석 정보` : '빈 대기석'}
           onMouseEnter={() => useInteractionStore.getState().hover(unit?.instanceId ?? null)}
           onMouseLeave={() => useInteractionStore.getState().hover(null)}

@@ -2,7 +2,7 @@
  * Production static server for the built SPA.
  *
  * Used by server/index.ts for HTTP assets alongside WebSocket multiplayer.
- * Run this file directly only for an offline, static-only deployment.
+ * Direct execution starts multiplayer too; --static explicitly serves offline only.
  *
  * It deliberately does NOT build. The build needs roughly 500MB of heap, and a
  * small runtime instance caps it near 256MB: an earlier version built here on
@@ -10,7 +10,7 @@
  * Allocation failed", which crash-looped the service. The build belongs on the
  * build machine — scripts/render-postinstall.mjs runs it during install.
  *
- * Dependency-free on purpose — nothing here should need an install to work.
+ * The static handler is dependency-free; multiplayer requires installed dependencies.
  */
 import { createReadStream, existsSync, statSync } from 'node:fs';
 import { createServer } from 'node:http';
@@ -146,14 +146,22 @@ export function staticHandler(req, res) {
 }
 
 if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {
-requireBuild();
-const server = createServer(staticHandler);
-server.listen(PORT, HOST, () => {
-  console.log(`[serve] UmafightTactics listening on http://${HOST}:${PORT}`);
-});
-
-for (const signal of ['SIGTERM', 'SIGINT']) {
-  process.on(signal, () => server.close(() => process.exit(0)));
-}
-
+  if (!process.argv.includes('--static')) {
+    const { register } = await import('tsx/esm/api');
+    register();
+    // Let this module finish before main imports its static handler exports.
+    void import('../server/index.ts').then(({ main }) => main()).catch(error => {
+      console.error(error);
+      process.exitCode = 1;
+    });
+  } else {
+    requireBuild();
+    const server = createServer(staticHandler);
+    server.listen(PORT, HOST, () => {
+      console.log(`UmafightTactics static server listening on ${HOST}:${PORT}`);
+    });
+    for (const signal of ['SIGTERM', 'SIGINT']) {
+      process.on(signal, () => server.close(() => process.exit(0)));
+    }
+  }
 }

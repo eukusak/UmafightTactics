@@ -34,7 +34,7 @@ export function CollectionScreen(): JSX.Element {
   }), [query, cost, role, style, distance, faction]);
 
   return (
-    <div style={{ position: 'absolute', inset: 0, display: 'flex', flexDirection: 'column' }}>
+    <div className="collection-screen" style={{ position: 'absolute', inset: 0, display: 'flex', flexDirection: 'column' }}>
       <div className="hud-top">
         <h2 style={{ margin: 0, fontSize: 24 }}>도감</h2>
         <span className="muted">{filtered.length} / {ALL_UNITS.length}명</span>

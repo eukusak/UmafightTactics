@@ -14,9 +14,11 @@ import { PromotionFeedback } from '../PromotionFeedback';
 import { BattleTelemetry } from '../BattleTelemetry';
 import { OnlineClock } from './OnlineScreen';
 import { useOnlineStore } from '../../store/onlineStore';
+import { useTouchDrag } from '../../game/ui/touch-drag';
 import { PrepCountdown } from '../PrepCountdown';
 
 export function BattleScreen(): JSX.Element | null {
+  useTouchDrag();
   const online = useGameStore((s) => s.onlinePlayerId !== null);
   const frames = useGameStore((s) => s.battleFrames);
   const battleId = useGameStore((s) => s.onlineBattleId);
@@ -83,7 +85,7 @@ export function BattleScreen(): JSX.Element | null {
         <ItemPanel />
       </div>
 
-      <div className="hud-field">
+      <div className="hud-field"><div className="field-surface">
         <ArenaBackdrop />
         {(!battleRunning || !arenaReady) && <PrepBoard onUnitContext={onUnitContext} />}
         {battleRunning && (!online || !!frames?.length) && <BattleBoard key={battleId ?? 'solo'} onFinished={onPlaybackFinished} onReady={onArenaReady} />}
@@ -91,7 +93,7 @@ export function BattleScreen(): JSX.Element | null {
         {(!battleRunning || arenaReady) && <BattleTelemetry />}
         {online && !battleRunning && <OnlineClock />}
         {!online && !battleRunning && <PrepCountdown key={info.label} active={!awaitingAugment && !awaitingDraft} seconds={info.prepSeconds} />}
-      </div>
+      </div></div>
 
       <div className="hud-right scroll">
         {inspection ? <DetailPanel /> : <><Leaderboard /><OpponentBoardPeek /><div className="panel controls-help">
@@ -112,6 +114,7 @@ export function BattleScreen(): JSX.Element | null {
       <div className="hud-footer">
         <ShopControls />
         <div style={{ display: 'flex', gap: 10, alignItems: 'center' }}>
+          {online && <span className="online-speed">1× · 서버 동기화</span>}
           {battleRunning && !online && (
             <>
               {[1, 2, 4, 10].map((s) => (

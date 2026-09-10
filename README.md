@@ -10,7 +10,7 @@
 
 ## 게임 소개
 
-- 8인 로비: 싱글 1명 + AI 7 / 온라인 사람 8명 또는 사람 2~7명 + AI, 시작 체력 100
+- 8인 로비: 싱글 1명 + AI 7 / 온라인 사람 8명 또는 사람 1~7명 + AI, 시작 체력 100
 - 스테이지 1(PvE 3라운드) → 스테이지 2 이후 7라운드 구성(PvP × 5, 트윙클 드래프트, PvE)
 - 상점 5칸 · 2골드 리롤 · 상점 잠금 · 4골드 경험치 구매 · 레벨 1~10
 - 공유 유닛 풀(코스트별 22 / 20 / 17 / 10 / 9장)
@@ -63,7 +63,7 @@ npm start             # http://localhost:4173 (PORT 환경변수로 변경 가�
 
 ### 온라인 방 대전
 
-메인 메뉴 → 온라인 대전 → 새 방 → 코드 공유 → 8명 준비 → 방장 시작.
+메인 메뉴 → 온라인 대전 → 새 방 → 코드 공유 또는 AI 추가 → 참가자 준비 → 방장 시작. 빈자리를 AI로 채우면 혼자서도 온라인 경기를 시작할 수 있습니다.
 `npm run dev`와 `npm start`는 같은 주소의 `/multiplayer` WebSocket 서버를 함께 실행한다.
 `npm run preview`·`npm run start:static`은 정적 미리보기이며 온라인 방 서버가 없다.
 외부 접속에는 Node 웹 서비스와 WebSocket 프록시가 필요하다. [운영 안내](docs/ONLINE_MULTIPLAYER.md).
@@ -176,48 +176,23 @@ STRICT_ART=1 npm run check:art   # 규격·알파·크기까지 전수 검사
 
 ## Render 배포
 
-이 게임은 **정적 SPA**입니다. 서버 런타임이 필요 없습니다.
+온라인 대전에는 **Node Web Service**가 필요합니다. 정적 사이트만 배포하면 웹페이지는 열리지만 WebSocket 방 생성·참가는 동작하지 않습니다.
 
-### 권장: Static Site
-
-Render 대시보드에서 **New → Blueprint**로 저장소를 연결하면 루트의 `render.yaml`을 그대로 사용합니다.
-
-```yaml
-runtime: static
-buildCommand: npm ci && npm run build
-staticPublishPath: ./dist
-```
-
-SPA fallback(`/* → /index.html`), `/assets/*` 장기 캐시 헤더, `NODE_VERSION=22`가 함께 설정됩니다.
-
-> **`render.yaml`은 Blueprint로 만든 서비스에만 적용됩니다.**
-> 대시보드에서 손으로 만든 서비스는 이 파일을 무시하고 대시보드 설정을 씁니다.
-> Node 프로젝트의 기본값은 `yarn`(설치만) + `yarn start`라서, 빌드가 일어나지 않고
-> `start` 스크립트도 없어 `Command "start" not found`로 실패합니다.
-
-이미 손으로 만든 서비스가 있다면 **Settings**에서 다음으로 맞추세요.
+Render에서 **New → Blueprint**로 연결하면 `render.yaml`의 Node 서비스 설정을 사용합니다. 기존에 직접 만든 서비스는 대시보드의 설정을 사용하므로 다음과 같이 맞춥니다.
 
 | 항목 | 값 |
 |---|---|
-| Service Type | Static Site |
-| Build Command | `npm ci && npm run build` |
-| Publish Directory | `dist` |
-| Rewrite Rule | `/*` → `/index.html` (Action: Rewrite) |
-
-### 대안: Node Web Service
-
-정적 사이트로 못 바꾸는 상황이면 Web Service로도 뜹니다.
-
-| 항목 | 값 |
-|---|---|
+| Service Type | Web Service (Node) |
 | Build Command | `npm ci && npm run build` |
 | Start Command | `npm start` |
+| Health Check Path | `/health` |
+| Instances | 1 |
 
-`npm start`는 `scripts/serve.mjs`(외부 의존성 없음)를 실행해 `dist/`를 `0.0.0.0:$PORT`로 서빙합니다.
-SPA fallback, gzip, 해시 자산 immutable 캐시, 경로 탈출 차단이 들어 있습니다.
+`npm start`는 `server/index.ts`에서 정적 파일과 `/multiplayer` WebSocket을 같은 포트로 제공합니다. 기존 시작 명령 `node scripts/serve.mjs`도 같은 온라인 서버를 실행합니다. `/health` 응답의 `multiplayer: true`로 온라인 서버가 실행 중인지 확인할 수 있습니다.
 
-빌드 커맨드가 설치만 하는 기본값(`yarn`)이어도, 설치 중 `scripts/render-postinstall.mjs`가
-빌드를 대신 수행하므로 서비스가 뜹니다.
+기존 Static Site는 Node Web Service로 새로 만들어야 합니다. `npm run start:static`과 `npm run preview`는 오프라인 확인용으로만 사용합니다.
+
+SPA fallback, gzip, 해시 자산 캐시 및 경로 탈출 차단을 유지합니다. 설치만 수행하는 Render 기본 빌드 명령에서도 `scripts/render-postinstall.mjs`가 빌드 단계에서 번들을 만듭니다.
 
 ### 런타임 인스턴스는 빌드하지 않는다
 

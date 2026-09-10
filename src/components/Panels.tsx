@@ -102,6 +102,7 @@ export function ItemPanel(): JSX.Element | null {
         {player.items.map((i) => (
           <div
             key={i.instanceId}
+            data-touch-item={i.instanceId}
             draggable
             onDragStart={(e) => {
               e.dataTransfer.setData('application/x-item', i.instanceId);
