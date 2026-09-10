@@ -66,7 +66,7 @@ jobs:
         run: npm run build
 
       - name: Check production entry points and WebSocket rooms
-        run: node --test tests/support/production-start.mjs
+        run: node --test tests/support/production-start.mjs tests/support/startup-paths.mjs
 
   browser:
     runs-on: ubuntu-latest
