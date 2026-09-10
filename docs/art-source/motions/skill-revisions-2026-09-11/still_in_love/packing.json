@@ -1,0 +1,506 @@
+{
+  "format": "uft-baked-frames-v1",
+  "scale": 0.44635193133047213,
+  "anchor": [
+    64,
+    110
+  ],
+  "runtimeSha256": "495c888ea0d79c6069a5708690bfae1989ee7491390e1b81849ae4fa26cf2a9e",
+  "frames": [
+    {
+      "frame": 0,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/production-144/still_in_love/alpha.png",
+      "sourceSha256": "6faf35f38a68ad975d5a192d3569469e7513d06fe3349eaa8e3b268a8c307327",
+      "crop": [
+        45,
+        39,
+        191,
+        256
+      ],
+      "destination": [
+        31,
+        13,
+        65,
+        97
+      ]
+    },
+    {
+      "frame": 1,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/production-144/still_in_love/alpha.png",
+      "sourceSha256": "6faf35f38a68ad975d5a192d3569469e7513d06fe3349eaa8e3b268a8c307327",
+      "crop": [
+        301,
+        39,
+        447,
+        256
+      ],
+      "destination": [
+        159,
+        13,
+        65,
+        97
+      ]
+    },
+    {
+      "frame": 2,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/production-144/still_in_love/alpha.png",
+      "sourceSha256": "6faf35f38a68ad975d5a192d3569469e7513d06fe3349eaa8e3b268a8c307327",
+      "crop": [
+        556,
+        39,
+        703,
+        256
+      ],
+      "destination": [
+        287,
+        13,
+        66,
+        97
+      ]
+    },
+    {
+      "frame": 3,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/production-144/still_in_love/alpha.png",
+      "sourceSha256": "6faf35f38a68ad975d5a192d3569469e7513d06fe3349eaa8e3b268a8c307327",
+      "crop": [
+        812,
+        39,
+        959,
+        256
+      ],
+      "destination": [
+        415,
+        13,
+        66,
+        97
+      ]
+    },
+    {
+      "frame": 4,
+      "sourceFrame": 4,
+      "source": "docs/art-source/motions/production-144/still_in_love/alpha.png",
+      "sourceSha256": "6faf35f38a68ad975d5a192d3569469e7513d06fe3349eaa8e3b268a8c307327",
+      "crop": [
+        29,
+        287,
+        222,
+        505
+      ],
+      "destination": [
+        21,
+        141,
+        86,
+        97
+      ]
+    },
+    {
+      "frame": 5,
+      "sourceFrame": 5,
+      "source": "docs/art-source/motions/production-144/still_in_love/alpha.png",
+      "sourceSha256": "6faf35f38a68ad975d5a192d3569469e7513d06fe3349eaa8e3b268a8c307327",
+      "crop": [
+        280,
+        285,
+        479,
+        506
+      ],
+      "destination": [
+        147,
+        139,
+        89,
+        99
+      ]
+    },
+    {
+      "frame": 6,
+      "sourceFrame": 6,
+      "source": "docs/art-source/motions/production-144/still_in_love/alpha.png",
+      "sourceSha256": "6faf35f38a68ad975d5a192d3569469e7513d06fe3349eaa8e3b268a8c307327",
+      "crop": [
+        534,
+        288,
+        735,
+        509
+      ],
+      "destination": [
+        275,
+        139,
+        90,
+        99
+      ]
+    },
+    {
+      "frame": 7,
+      "sourceFrame": 7,
+      "source": "docs/art-source/motions/production-144/still_in_love/alpha.png",
+      "sourceSha256": "6faf35f38a68ad975d5a192d3569469e7513d06fe3349eaa8e3b268a8c307327",
+      "crop": [
+        798,
+        287,
+        985,
+        508
+      ],
+      "destination": [
+        406,
+        139,
+        83,
+        99
+      ]
+    },
+    {
+      "frame": 8,
+      "sourceFrame": 8,
+      "source": "docs/art-source/motions/production-144/still_in_love/alpha.png",
+      "sourceSha256": "6faf35f38a68ad975d5a192d3569469e7513d06fe3349eaa8e3b268a8c307327",
+      "crop": [
+        42,
+        543,
+        213,
+        767
+      ],
+      "destination": [
+        26,
+        266,
+        76,
+        100
+      ]
+    },
+    {
+      "frame": 9,
+      "sourceFrame": 9,
+      "source": "docs/art-source/motions/production-144/still_in_love/alpha.png",
+      "sourceSha256": "6faf35f38a68ad975d5a192d3569469e7513d06fe3349eaa8e3b268a8c307327",
+      "crop": [
+        290,
+        540,
+        474,
+        767
+      ],
+      "destination": [
+        151,
+        265,
+        82,
+        101
+      ]
+    },
+    {
+      "frame": 10,
+      "sourceFrame": 10,
+      "source": "docs/art-source/motions/production-144/still_in_love/alpha.png",
+      "sourceSha256": "6faf35f38a68ad975d5a192d3569469e7513d06fe3349eaa8e3b268a8c307327",
+      "crop": [
+        546,
+        540,
+        760,
+        767
+      ],
+      "destination": [
+        272,
+        265,
+        96,
+        101
+      ]
+    },
+    {
+      "frame": 11,
+      "sourceFrame": 11,
+      "source": "docs/art-source/motions/production-144/still_in_love/alpha.png",
+      "sourceSha256": "6faf35f38a68ad975d5a192d3569469e7513d06fe3349eaa8e3b268a8c307327",
+      "crop": [
+        807,
+        540,
+        981,
+        767
+      ],
+      "destination": [
+        409,
+        265,
+        78,
+        101
+      ]
+    },
+    {
+      "frame": 12,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/skill-revisions-2026-09-11/still_in_love/generated.png",
+      "sourceSha256": "a92a48dcfd13e64db549e3185445a1191cfdc25628a30fb0358c7f0a5927eb4e",
+      "crop": [
+        139,
+        132,
+        636,
+        465
+      ],
+      "destination": [
+        17,
+        431,
+        93,
+        63
+      ]
+    },
+    {
+      "frame": 13,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/skill-revisions-2026-09-11/still_in_love/generated.png",
+      "sourceSha256": "a92a48dcfd13e64db549e3185445a1191cfdc25628a30fb0358c7f0a5927eb4e",
+      "crop": [
+        841,
+        16,
+        1331,
+        479
+      ],
+      "destination": [
+        146,
+        407,
+        92,
+        87
+      ]
+    },
+    {
+      "frame": 14,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/skill-revisions-2026-09-11/still_in_love/generated.png",
+      "sourceSha256": "a92a48dcfd13e64db549e3185445a1191cfdc25628a30fb0358c7f0a5927eb4e",
+      "crop": [
+        121,
+        558,
+        739,
+        979
+      ],
+      "destination": [
+        262,
+        415,
+        116,
+        79
+      ]
+    },
+    {
+      "frame": 15,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/skill-revisions-2026-09-11/still_in_love/generated.png",
+      "sourceSha256": "a92a48dcfd13e64db549e3185445a1191cfdc25628a30fb0358c7f0a5927eb4e",
+      "crop": [
+        976,
+        515,
+        1340,
+        1006
+      ],
+      "destination": [
+        414,
+        402,
+        68,
+        92
+      ]
+    },
+    {
+      "frame": 16,
+      "sourceFrame": 16,
+      "source": "docs/art-source/motions/production-144/still_in_love/alpha.png",
+      "sourceSha256": "6faf35f38a68ad975d5a192d3569469e7513d06fe3349eaa8e3b268a8c307327",
+      "crop": [
+        40,
+        1055,
+        215,
+        1263
+      ],
+      "destination": [
+        25,
+        529,
+        78,
+        93
+      ]
+    },
+    {
+      "frame": 17,
+      "sourceFrame": 17,
+      "source": "docs/art-source/motions/production-144/still_in_love/alpha.png",
+      "sourceSha256": "6faf35f38a68ad975d5a192d3569469e7513d06fe3349eaa8e3b268a8c307327",
+      "crop": [
+        292,
+        1066,
+        468,
+        1256
+      ],
+      "destination": [
+        152,
+        537,
+        79,
+        85
+      ]
+    },
+    {
+      "frame": 18,
+      "sourceFrame": 18,
+      "source": "docs/art-source/motions/production-144/still_in_love/alpha.png",
+      "sourceSha256": "6faf35f38a68ad975d5a192d3569469e7513d06fe3349eaa8e3b268a8c307327",
+      "crop": [
+        537,
+        1076,
+        722,
+        1252
+      ],
+      "destination": [
+        278,
+        543,
+        83,
+        79
+      ]
+    },
+    {
+      "frame": 19,
+      "sourceFrame": 19,
+      "source": "docs/art-source/motions/production-144/still_in_love/alpha.png",
+      "sourceSha256": "6faf35f38a68ad975d5a192d3569469e7513d06fe3349eaa8e3b268a8c307327",
+      "crop": [
+        788,
+        1156,
+        1014,
+        1256
+      ],
+      "destination": [
+        397,
+        577,
+        101,
+        45
+      ]
+    },
+    {
+      "frame": 20,
+      "sourceFrame": 20,
+      "source": "docs/art-source/motions/production-144/still_in_love/alpha.png",
+      "sourceSha256": "6faf35f38a68ad975d5a192d3569469e7513d06fe3349eaa8e3b268a8c307327",
+      "crop": [
+        47,
+        1283,
+        196,
+        1515
+      ],
+      "destination": [
+        30,
+        646,
+        67,
+        104
+      ]
+    },
+    {
+      "frame": 21,
+      "sourceFrame": 21,
+      "source": "docs/art-source/motions/production-144/still_in_love/alpha.png",
+      "sourceSha256": "6faf35f38a68ad975d5a192d3569469e7513d06fe3349eaa8e3b268a8c307327",
+      "crop": [
+        299,
+        1284,
+        452,
+        1515
+      ],
+      "destination": [
+        158,
+        647,
+        68,
+        103
+      ]
+    },
+    {
+      "frame": 22,
+      "sourceFrame": 22,
+      "source": "docs/art-source/motions/production-144/still_in_love/alpha.png",
+      "sourceSha256": "6faf35f38a68ad975d5a192d3569469e7513d06fe3349eaa8e3b268a8c307327",
+      "crop": [
+        549,
+        1284,
+        717,
+        1517
+      ],
+      "destination": [
+        282,
+        646,
+        75,
+        104
+      ]
+    },
+    {
+      "frame": 23,
+      "sourceFrame": 23,
+      "source": "docs/art-source/motions/production-144/still_in_love/alpha.png",
+      "sourceSha256": "6faf35f38a68ad975d5a192d3569469e7513d06fe3349eaa8e3b268a8c307327",
+      "crop": [
+        815,
+        1285,
+        961,
+        1516
+      ],
+      "destination": [
+        415,
+        647,
+        65,
+        103
+      ]
+    }
+  ],
+  "skillRevision": {
+    "scale": 0.18770226537216828,
+    "review": "docs/art-source/motions/skill-revisions-2026-09-11/still_in_love/review.json",
+    "beforeFrames": [
+      "382f6be6ca5063c7a4cbe02dd7f1e39bdd4176814ee20fccfc721900278ed5f8",
+      "0c5f91d89d8ad7290301c720e1f09011ad11f5927e9564503a2eb7097ae2d056",
+      "228f3100f1568e5481e285d99304234f9e56138330c3b83d665e9635516b8741",
+      "fbdcc2d8aededd39ca17fe9aec5da4bdccb32aa2ba1c76a8fcb223f48af2f42e",
+      "98c91291151e26acbe9d8a2c202fc73d8b0671f30360a04713317e00546b1c0b",
+      "bc0eefb2ec206b8c2598ce0be6ad2c46a660ba7543a707ab58c68279cf2d1bfe",
+      "9064cc5945b4e527697a90aa0f51d1ba24f86ab28f8fc4d9283d3167470f0bd2",
+      "6d374a8335f70cd64f151451d5984d5a9ed9c4278d0d5182ecb463d9094defbd",
+      "d07f1e0e41c218572085d19541c6851757d772164acefebad0e6762b4b6ceb57",
+      "a7d0b359a86a20804b15636063e81a969b2b3dce0a4b0ccb6d6249769a9ed423",
+      "a956d730db1614903b725dd4ba5773e65882f035d59245c45bed98334078af82",
+      "b97ae87aa43690d3083349a5e2fdd38882e2db5cd3d1967f822fe6642e2d10ec",
+      "cda63894236ba60377397896696e33ccc2e4db7f68b3123b5ef160811cc34a39",
+      "f20a711e16799d276d2067c8614574ca79d99a5d62f55e4acc8ed0301a3ff749",
+      "58faf58ca86d37f1aaeeb2441a6cb6815f8f0e56660c8d9af54db77db5f39857",
+      "b901612a40b2316ba68df189ec2b08d6f80232af7879cc6dbf2a2b3f00e0e76e",
+      "a366434bd54667045cfd37fe9d2a523e76d0a54c225819fce1ed3545ed8d696d",
+      "1206f6b9f076ba6c9ac31f23bb22c3918c1bb8e278396b05d4cf5c9f31b40b75",
+      "291b11c7b016ac024226ee417e7d3d90d55df23b94e6d59b2e1ea28039c2c0b9",
+      "2fec306b9e501723e0dc7730cc448624b53bc1822161cbe9fe8e29306a7ecc34",
+      "3fd8b46040ea69389a0e2030ac919073e004e40a053b4b31a6fa863d828eaff0",
+      "44bb551ca3c0cbbd4c37a0b52d6c9db208aa123b0fd29c5a0e1a168df389798a",
+      "3d432dde627d211cbdca9e0e54bb8668bda208d00d5eeba32220fe432b6c4054",
+      "d756c584ce63b0843c361fe8a6116273a78fb1be53f87dbfd72ec91e7c62150c"
+    ],
+    "afterFrames": [
+      "382f6be6ca5063c7a4cbe02dd7f1e39bdd4176814ee20fccfc721900278ed5f8",
+      "0c5f91d89d8ad7290301c720e1f09011ad11f5927e9564503a2eb7097ae2d056",
+      "228f3100f1568e5481e285d99304234f9e56138330c3b83d665e9635516b8741",
+      "fbdcc2d8aededd39ca17fe9aec5da4bdccb32aa2ba1c76a8fcb223f48af2f42e",
+      "98c91291151e26acbe9d8a2c202fc73d8b0671f30360a04713317e00546b1c0b",
+      "bc0eefb2ec206b8c2598ce0be6ad2c46a660ba7543a707ab58c68279cf2d1bfe",
+      "9064cc5945b4e527697a90aa0f51d1ba24f86ab28f8fc4d9283d3167470f0bd2",
+      "6d374a8335f70cd64f151451d5984d5a9ed9c4278d0d5182ecb463d9094defbd",
+      "d07f1e0e41c218572085d19541c6851757d772164acefebad0e6762b4b6ceb57",
+      "a7d0b359a86a20804b15636063e81a969b2b3dce0a4b0ccb6d6249769a9ed423",
+      "a956d730db1614903b725dd4ba5773e65882f035d59245c45bed98334078af82",
+      "b97ae87aa43690d3083349a5e2fdd38882e2db5cd3d1967f822fe6642e2d10ec",
+      "fbf8844144bfc90656268bf02858910c13aa09d9e5b0d0c2c0c3a3b0c7f3ce5d",
+      "901199786487b2977cf00839e817c37128e78c132dbbe594b001c5facb3daea9",
+      "0dcf0c63f5ee3b513ad1cfd4a5ce4c99c0ade2ce3a51280c7920aa9d0c902d50",
+      "fcecb178edda53d9cb566b53eb6316d67e7451179ee4037904e8d27940b3f358",
+      "a366434bd54667045cfd37fe9d2a523e76d0a54c225819fce1ed3545ed8d696d",
+      "1206f6b9f076ba6c9ac31f23bb22c3918c1bb8e278396b05d4cf5c9f31b40b75",
+      "291b11c7b016ac024226ee417e7d3d90d55df23b94e6d59b2e1ea28039c2c0b9",
+      "2fec306b9e501723e0dc7730cc448624b53bc1822161cbe9fe8e29306a7ecc34",
+      "3fd8b46040ea69389a0e2030ac919073e004e40a053b4b31a6fa863d828eaff0",
+      "44bb551ca3c0cbbd4c37a0b52d6c9db208aa123b0fd29c5a0e1a168df389798a",
+      "3d432dde627d211cbdca9e0e54bb8668bda208d00d5eeba32220fe432b6c4054",
+      "d756c584ce63b0843c361fe8a6116273a78fb1be53f87dbfd72ec91e7c62150c"
+    ],
+    "unchangedFrames": 20,
+    "changedFrames": [
+      12,
+      13,
+      14,
+      15
+    ]
+  }
+}

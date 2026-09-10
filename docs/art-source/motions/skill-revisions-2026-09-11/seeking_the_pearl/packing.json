@@ -1,0 +1,506 @@
+{
+  "format": "uft-baked-frames-v1",
+  "scale": 0.42276422764227645,
+  "anchor": [
+    64,
+    110
+  ],
+  "runtimeSha256": "f919f5d4ac539b43701d5ba60394d5cd634f6960ffa21fcae2ebf001b5137574",
+  "frames": [
+    {
+      "frame": 0,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/production-144/seeking_the_pearl/alpha.png",
+      "sourceSha256": "fa45954627188357020f6f563be8042ac706d42a90e71eac0032d6d29b57336a",
+      "crop": [
+        51,
+        17,
+        198,
+        261
+      ],
+      "destination": [
+        33,
+        7,
+        62,
+        103
+      ]
+    },
+    {
+      "frame": 1,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/production-144/seeking_the_pearl/alpha.png",
+      "sourceSha256": "fa45954627188357020f6f563be8042ac706d42a90e71eac0032d6d29b57336a",
+      "crop": [
+        300,
+        17,
+        448,
+        261
+      ],
+      "destination": [
+        160,
+        7,
+        63,
+        103
+      ]
+    },
+    {
+      "frame": 2,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/production-144/seeking_the_pearl/alpha.png",
+      "sourceSha256": "fa45954627188357020f6f563be8042ac706d42a90e71eac0032d6d29b57336a",
+      "crop": [
+        555,
+        16,
+        703,
+        261
+      ],
+      "destination": [
+        288,
+        6,
+        63,
+        104
+      ]
+    },
+    {
+      "frame": 3,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/production-144/seeking_the_pearl/alpha.png",
+      "sourceSha256": "fa45954627188357020f6f563be8042ac706d42a90e71eac0032d6d29b57336a",
+      "crop": [
+        813,
+        17,
+        955,
+        261
+      ],
+      "destination": [
+        418,
+        7,
+        60,
+        103
+      ]
+    },
+    {
+      "frame": 4,
+      "sourceFrame": 4,
+      "source": "docs/art-source/motions/production-144/seeking_the_pearl/alpha.png",
+      "sourceSha256": "fa45954627188357020f6f563be8042ac706d42a90e71eac0032d6d29b57336a",
+      "crop": [
+        33,
+        278,
+        216,
+        517
+      ],
+      "destination": [
+        25,
+        137,
+        77,
+        101
+      ]
+    },
+    {
+      "frame": 5,
+      "sourceFrame": 5,
+      "source": "docs/art-source/motions/production-144/seeking_the_pearl/alpha.png",
+      "sourceSha256": "fa45954627188357020f6f563be8042ac706d42a90e71eac0032d6d29b57336a",
+      "crop": [
+        284,
+        278,
+        468,
+        505
+      ],
+      "destination": [
+        153,
+        142,
+        78,
+        96
+      ]
+    },
+    {
+      "frame": 6,
+      "sourceFrame": 6,
+      "source": "docs/art-source/motions/production-144/seeking_the_pearl/alpha.png",
+      "sourceSha256": "fa45954627188357020f6f563be8042ac706d42a90e71eac0032d6d29b57336a",
+      "crop": [
+        537,
+        283,
+        725,
+        517
+      ],
+      "destination": [
+        280,
+        139,
+        79,
+        99
+      ]
+    },
+    {
+      "frame": 7,
+      "sourceFrame": 7,
+      "source": "docs/art-source/motions/production-144/seeking_the_pearl/alpha.png",
+      "sourceSha256": "fa45954627188357020f6f563be8042ac706d42a90e71eac0032d6d29b57336a",
+      "crop": [
+        791,
+        280,
+        975,
+        517
+      ],
+      "destination": [
+        409,
+        138,
+        78,
+        100
+      ]
+    },
+    {
+      "frame": 8,
+      "sourceFrame": 8,
+      "source": "docs/art-source/motions/production-144/seeking_the_pearl/alpha.png",
+      "sourceSha256": "fa45954627188357020f6f563be8042ac706d42a90e71eac0032d6d29b57336a",
+      "crop": [
+        37,
+        530,
+        227,
+        768
+      ],
+      "destination": [
+        24,
+        265,
+        80,
+        101
+      ]
+    },
+    {
+      "frame": 9,
+      "sourceFrame": 9,
+      "source": "docs/art-source/motions/production-144/seeking_the_pearl/alpha.png",
+      "sourceSha256": "fa45954627188357020f6f563be8042ac706d42a90e71eac0032d6d29b57336a",
+      "crop": [
+        288,
+        530,
+        450,
+        768
+      ],
+      "destination": [
+        158,
+        265,
+        68,
+        101
+      ]
+    },
+    {
+      "frame": 10,
+      "sourceFrame": 10,
+      "source": "docs/art-source/motions/production-144/seeking_the_pearl/alpha.png",
+      "sourceSha256": "fa45954627188357020f6f563be8042ac706d42a90e71eac0032d6d29b57336a",
+      "crop": [
+        539,
+        530,
+        742,
+        768
+      ],
+      "destination": [
+        277,
+        265,
+        86,
+        101
+      ]
+    },
+    {
+      "frame": 11,
+      "sourceFrame": 11,
+      "source": "docs/art-source/motions/production-144/seeking_the_pearl/alpha.png",
+      "sourceSha256": "fa45954627188357020f6f563be8042ac706d42a90e71eac0032d6d29b57336a",
+      "crop": [
+        809,
+        532,
+        963,
+        768
+      ],
+      "destination": [
+        415,
+        266,
+        65,
+        100
+      ]
+    },
+    {
+      "frame": 12,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/skill-revisions-2026-09-11/seeking_the_pearl/generated.png",
+      "sourceSha256": "1c8e92d7ae414bdcfc6c73d58efe104fb951544f12d800e0af59ed266925247b",
+      "crop": [
+        173,
+        20,
+        564,
+        479
+      ],
+      "destination": [
+        28,
+        410,
+        72,
+        84
+      ]
+    },
+    {
+      "frame": 13,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/skill-revisions-2026-09-11/seeking_the_pearl/generated.png",
+      "sourceSha256": "1c8e92d7ae414bdcfc6c73d58efe104fb951544f12d800e0af59ed266925247b",
+      "crop": [
+        871,
+        13,
+        1498,
+        479
+      ],
+      "destination": [
+        134,
+        408,
+        115,
+        86
+      ]
+    },
+    {
+      "frame": 14,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/skill-revisions-2026-09-11/seeking_the_pearl/generated.png",
+      "sourceSha256": "1c8e92d7ae414bdcfc6c73d58efe104fb951544f12d800e0af59ed266925247b",
+      "crop": [
+        117,
+        540,
+        748,
+        982
+      ],
+      "destination": [
+        262,
+        413,
+        116,
+        81
+      ]
+    },
+    {
+      "frame": 15,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/skill-revisions-2026-09-11/seeking_the_pearl/generated.png",
+      "sourceSha256": "1c8e92d7ae414bdcfc6c73d58efe104fb951544f12d800e0af59ed266925247b",
+      "crop": [
+        954,
+        535,
+        1234,
+        1000
+      ],
+      "destination": [
+        422,
+        409,
+        51,
+        85
+      ]
+    },
+    {
+      "frame": 16,
+      "sourceFrame": 16,
+      "source": "docs/art-source/motions/production-144/seeking_the_pearl/alpha.png",
+      "sourceSha256": "fa45954627188357020f6f563be8042ac706d42a90e71eac0032d6d29b57336a",
+      "crop": [
+        37,
+        1054,
+        214,
+        1270
+      ],
+      "destination": [
+        26,
+        531,
+        75,
+        91
+      ]
+    },
+    {
+      "frame": 17,
+      "sourceFrame": 17,
+      "source": "docs/art-source/motions/production-144/seeking_the_pearl/alpha.png",
+      "sourceSha256": "fa45954627188357020f6f563be8042ac706d42a90e71eac0032d6d29b57336a",
+      "crop": [
+        289,
+        1091,
+        469,
+        1259
+      ],
+      "destination": [
+        154,
+        551,
+        76,
+        71
+      ]
+    },
+    {
+      "frame": 18,
+      "sourceFrame": 18,
+      "source": "docs/art-source/motions/production-144/seeking_the_pearl/alpha.png",
+      "sourceSha256": "fa45954627188357020f6f563be8042ac706d42a90e71eac0032d6d29b57336a",
+      "crop": [
+        536,
+        1100,
+        718,
+        1264
+      ],
+      "destination": [
+        281,
+        553,
+        77,
+        69
+      ]
+    },
+    {
+      "frame": 19,
+      "sourceFrame": 19,
+      "source": "docs/art-source/motions/production-144/seeking_the_pearl/alpha.png",
+      "sourceSha256": "fa45954627188357020f6f563be8042ac706d42a90e71eac0032d6d29b57336a",
+      "crop": [
+        769,
+        1157,
+        999,
+        1258
+      ],
+      "destination": [
+        399,
+        579,
+        97,
+        43
+      ]
+    },
+    {
+      "frame": 20,
+      "sourceFrame": 20,
+      "source": "docs/art-source/motions/production-144/seeking_the_pearl/alpha.png",
+      "sourceSha256": "fa45954627188357020f6f563be8042ac706d42a90e71eac0032d6d29b57336a",
+      "crop": [
+        49,
+        1282,
+        196,
+        1527
+      ],
+      "destination": [
+        33,
+        646,
+        62,
+        104
+      ]
+    },
+    {
+      "frame": 21,
+      "sourceFrame": 21,
+      "source": "docs/art-source/motions/production-144/seeking_the_pearl/alpha.png",
+      "sourceSha256": "fa45954627188357020f6f563be8042ac706d42a90e71eac0032d6d29b57336a",
+      "crop": [
+        300,
+        1281,
+        449,
+        1527
+      ],
+      "destination": [
+        160,
+        646,
+        63,
+        104
+      ]
+    },
+    {
+      "frame": 22,
+      "sourceFrame": 22,
+      "source": "docs/art-source/motions/production-144/seeking_the_pearl/alpha.png",
+      "sourceSha256": "fa45954627188357020f6f563be8042ac706d42a90e71eac0032d6d29b57336a",
+      "crop": [
+        546,
+        1281,
+        700,
+        1527
+      ],
+      "destination": [
+        287,
+        646,
+        65,
+        104
+      ]
+    },
+    {
+      "frame": 23,
+      "sourceFrame": 23,
+      "source": "docs/art-source/motions/production-144/seeking_the_pearl/alpha.png",
+      "sourceSha256": "fa45954627188357020f6f563be8042ac706d42a90e71eac0032d6d29b57336a",
+      "crop": [
+        820,
+        1282,
+        995,
+        1527
+      ],
+      "destination": [
+        411,
+        646,
+        74,
+        104
+      ]
+    }
+  ],
+  "skillRevision": {
+    "scale": 0.1838351822503962,
+    "review": "docs/art-source/motions/skill-revisions-2026-09-11/seeking_the_pearl/review.json",
+    "beforeFrames": [
+      "505db58c80d93934937908b1b5b1c675cbaa8d839ede949ffb407ed003d971ef",
+      "6c1a46b95ad2c471736d336d062be18882837fc295707ee23b55023c3be57fd1",
+      "e0f32e9afc03ea165e89d2f7a43d5d08faf4585d7d6c413411a53194eec934da",
+      "c6ca1fd2f56f2d2836c58eba752a0cadec6f131864bb8f9eca42d266c10a3ae7",
+      "27bea523fb996609508d0e0300b8b6363ac39dd85b70476e2a1deea1621f5422",
+      "35f32f2a58add362eaa34626d0a129ffb4362411e6a6d0363bc6a79d2e6a82ad",
+      "ee92658a51123740dd811d5525a307b868ca6b153e8fcca06e78af5ebafb2bc1",
+      "853195f2c8b45f4afd6bb417313aa7d97a621c34eaaa78a407b017522b02afe8",
+      "c8890c8b5cbf4c4058e498747a788f0e9dbd43b7bdc1413fab8ef6e02ed886a1",
+      "b895784c60b237afa13c31aa3bc83ccff0ba60c4a64ad62988419375fa27f8a0",
+      "4e4185acdce60a52b60c8e8b78d80a0b7d7171d94f195c8fef9c3eeea7081517",
+      "f9ab67e159c7227b443346d32f7c1b96d10ca537e9e7dd58d72f6d610a7da209",
+      "5492ad35ab288740a69a329c5392554639bd242645c4f98707d2d46ba2db4e4d",
+      "007e0230b2694168aa197d400ab57f9b60d1ad1eba82085adac0a833ff34d12b",
+      "59b16e438a0b8af6053fbd54f5743fcd867de5a21a94cd382e473530821a5842",
+      "7422561e7cee8a7cfc14dd58e97cb076d2dc282bc183af2d15635060e8703db7",
+      "3be3ae9d18e2b668d912dafc6a448ca37fd1b20bfa22a0b848535fa27811c619",
+      "d86c6fe8cf3eb3eea59e71854315b19a280e63c06428062d3923fed7d8a93c10",
+      "0b14b2faf8c2f06044a8a0a273622b4e7de33a16ce21fe4ebf6601a7db8ac3b3",
+      "4fd30dbc7cef508fe3e682364445f59d8d6e0b42cb00c128c8aaa163d2efd95e",
+      "2b58400bbbfe3a283384b46ab4b76ea8581dddfe5e6d52848b79ad5fec26b95c",
+      "7e66066599efd578647c15f2454226688631abd404901507e0309fb6498dd58d",
+      "6c3c929ea58f9d3cd6bdf9fae0fe70bae6448670a5854dd50199996799e5839c",
+      "e0a87f09073bf3ee70e28eca7c42b426a530c7f1ffc2b0531b53bd1b1ebf1c96"
+    ],
+    "afterFrames": [
+      "505db58c80d93934937908b1b5b1c675cbaa8d839ede949ffb407ed003d971ef",
+      "6c1a46b95ad2c471736d336d062be18882837fc295707ee23b55023c3be57fd1",
+      "e0f32e9afc03ea165e89d2f7a43d5d08faf4585d7d6c413411a53194eec934da",
+      "c6ca1fd2f56f2d2836c58eba752a0cadec6f131864bb8f9eca42d266c10a3ae7",
+      "27bea523fb996609508d0e0300b8b6363ac39dd85b70476e2a1deea1621f5422",
+      "35f32f2a58add362eaa34626d0a129ffb4362411e6a6d0363bc6a79d2e6a82ad",
+      "ee92658a51123740dd811d5525a307b868ca6b153e8fcca06e78af5ebafb2bc1",
+      "853195f2c8b45f4afd6bb417313aa7d97a621c34eaaa78a407b017522b02afe8",
+      "c8890c8b5cbf4c4058e498747a788f0e9dbd43b7bdc1413fab8ef6e02ed886a1",
+      "b895784c60b237afa13c31aa3bc83ccff0ba60c4a64ad62988419375fa27f8a0",
+      "4e4185acdce60a52b60c8e8b78d80a0b7d7171d94f195c8fef9c3eeea7081517",
+      "f9ab67e159c7227b443346d32f7c1b96d10ca537e9e7dd58d72f6d610a7da209",
+      "cbb03d1341e088d6854990fc4f7cef22a2c62d7f930debf4a02670a2d810c981",
+      "d04736deb984c509dbdb3658775aa6be44e59860afbe309ff0adc9e1e35c80ba",
+      "749c9925c8d5f607efcc7d5968f1814cdb39183aaefaaeb03151ef784767fe51",
+      "bc55b734fa7b9c29e331e2828c9305a496275260bad72b0022de7769ba632575",
+      "3be3ae9d18e2b668d912dafc6a448ca37fd1b20bfa22a0b848535fa27811c619",
+      "d86c6fe8cf3eb3eea59e71854315b19a280e63c06428062d3923fed7d8a93c10",
+      "0b14b2faf8c2f06044a8a0a273622b4e7de33a16ce21fe4ebf6601a7db8ac3b3",
+      "4fd30dbc7cef508fe3e682364445f59d8d6e0b42cb00c128c8aaa163d2efd95e",
+      "2b58400bbbfe3a283384b46ab4b76ea8581dddfe5e6d52848b79ad5fec26b95c",
+      "7e66066599efd578647c15f2454226688631abd404901507e0309fb6498dd58d",
+      "6c3c929ea58f9d3cd6bdf9fae0fe70bae6448670a5854dd50199996799e5839c",
+      "e0a87f09073bf3ee70e28eca7c42b426a530c7f1ffc2b0531b53bd1b1ebf1c96"
+    ],
+    "unchangedFrames": 20,
+    "changedFrames": [
+      12,
+      13,
+      14,
+      15
+    ]
+  }
+}

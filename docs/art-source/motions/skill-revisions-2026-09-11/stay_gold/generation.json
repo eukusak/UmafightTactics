@@ -1,0 +1,9 @@
+{
+  "mode": "built-in image_gen",
+  "prompt": "Create a transparent PNG cutout sprite sheet using this character reference. Four full-body chibi poses in a 2 by 2 grid on an EMPTY TRANSPARENT ALPHA background, with wide empty gutters. Preserve stay_gold's hair, face, ears, costume and accessories. Four poses in reading order: gather a small guard crest at chest; brace behind a close circular shield; draw three inward energy ribbons from nearby space while keeping feet planted; return hands to the chest behind the lingering guard. Same proportions across poses, crisp cel-shaded game art, compact effects within each cell. No labels, no ground or backdrop. Transparency is essential: do not draw a checkerboard.",
+  "references": [
+    "public/assets/motions/stay_gold.png"
+  ],
+  "referenceCommit": "3c950f3ce3476b152f2ad3d99fd296327a3c82bf",
+  "skillSignature": "d58ee4bff5943c07e9038e06458702b23924ac70a73a5ccb944c986fa01bdd63"
+}

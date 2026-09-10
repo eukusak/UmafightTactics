@@ -11,8 +11,10 @@ const registryPath = path.join(root, 'src/data/manual/frame-sheets.json');
 const registry = JSON.parse(await fs.readFile(registryPath, 'utf8'));
 const reviewsPath = path.join(root, 'docs/art-source/motions/skill-choreography-review.json');
 const reviews = JSON.parse(await fs.readFile(reviewsPath, 'utf8'));
+const revisionDate = process.env.SKILL_REVISION_DATE ?? '2026-09-10';
+if (!/^\d{4}-\d{2}-\d{2}$/.test(revisionDate)) throw Error('Invalid revision date');
 for (const id of process.argv.slice(2)) {
-  const dir = 'docs/art-source/motions/skill-revisions-2026-09-10/' + id;
+  const dir = `docs/art-source/motions/skill-revisions-${revisionDate}/` + id;
   const spec = JSON.parse(await fs.readFile(path.join(root, dir, 'review.json'), 'utf8'));
   if (!spec.approved) throw Error('Unreviewed poses: ' + id);
   const source = dir + '/generated.png';

@@ -243,10 +243,11 @@
       },
       "originalSkillSignature": "8eafe2d3c38f86cb6ec16f1e11a1d526530ebcaf3a814dbbb36c9333e71510a4",
       "skillSignature": "1d80a9213b1edae0f14d4ae9de40ad22328ac909900f6e1097097e8ac6552f48",
-      "runtimeSha256": "072d1436cb17d868442b4d4def0cc97b7642ddd66dddc3eaa31936facd596f58",
+      "runtimeSha256": "6f688414e686d5374ac76b6e2b27468e04e320faab2803eaf4059a284af69441",
       "variant": "expanding_nova",
       "review": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
-      "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings."
+      "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings.",
+      "rasterRevision": "docs/art-source/motions/skill-revisions-2026-09-11/fuji_kiseki/review.json"
     },
     "oguri_cap": {
       "originalSkill": {
@@ -340,11 +341,12 @@
       },
       "originalSkillSignature": "823f0b5a45a9db1ccd687f513b7ed17e82a8e95269a0f99b699a436abad62603",
       "skillSignature": "4564de25f07442456ea4abfca60d105aa4bf6a310720c7ba2a3b169b60423be6",
-      "runtimeSha256": "cd35a411a6a7d0aa29d4e15b0b702f684d7a02c4da367d20717e905dc025d5c0",
+      "runtimeSha256": "da0a61e83873c2aabbc982d72fe2ff3b81f9585a789e53b32f69562b447b1dc9",
       "variant": "pursuit_flurry",
       "review": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
       "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings.",
-      "styleRevision": "Running-style correction reviewed: authored body family and targeting retained; current generated skill signature checked."
+      "styleRevision": "Running-style correction reviewed: authored body family and targeting retained; current generated skill signature checked.",
+      "rasterRevision": "docs/art-source/motions/skill-revisions-2026-09-11/gold_ship/review.json"
     },
     "vodka": {
       "originalSkill": {
@@ -388,10 +390,11 @@
       },
       "originalSkillSignature": "940a279905c029488e06b489ebf9dd34d787c59e509872d29c94f15a534aae2f",
       "skillSignature": "cf13baf5401d112c2ef72db9f0a070a6c5a029f7511c036ca4163a7ca08146b2",
-      "runtimeSha256": "1a9f2c46a66c99274ff0db0d6f2dc642af744d97c5b87c568ddca11661209b0c",
+      "runtimeSha256": "cf409ed4cbc5ef7e212fa13f21455cb5bb05a5add7c3ce3cf5385940ae1bcc1f",
       "variant": "split_barrage",
       "review": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
-      "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings."
+      "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings.",
+      "rasterRevision": "docs/art-source/motions/skill-revisions-2026-09-11/vodka/review.json"
     },
     "daiwa_scarlet": {
       "originalSkill": {
@@ -431,10 +434,11 @@
       },
       "originalSkillSignature": "0598288470252e8707662dba7d557ef19b1bc114335d1237df220506c9a52182",
       "skillSignature": "5a96af15b15fba6c5f62b81a60a7e3680c561664f139ec0a7885dfb19f3ef048",
-      "runtimeSha256": "e737a6aa903a8f12e82a399857eab2e7bf64acc94acbb95579d4753247a172ef",
+      "runtimeSha256": "2b2c0095304f848ac3b0f23f6db702a109701741bcd475923d89d08d7fc1e790",
       "variant": "cinder_field",
       "review": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
-      "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings."
+      "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings.",
+      "rasterRevision": "docs/art-source/motions/skill-revisions-2026-09-11/daiwa_scarlet/review.json"
     },
     "taiki_shuttle": {
       "originalSkill": {
@@ -896,10 +900,11 @@
       },
       "originalSkillSignature": "138285ad131ff3af814412ffe6de23e2a061223b2346602e9d2a26f6d9604ad9",
       "skillSignature": "90064e70c2e02774347dc939b66fc56ce872577b3051fd472d22aed356bd661e",
-      "runtimeSha256": "cd9b986b9b2456738843d715900f6bbb3ee1c5751b57d5fb7f2be928b9b4bfc1",
+      "runtimeSha256": "8e4379d85625895b3f8485f5fcff050847457e27ffbe2b3b28cc1368e165a2f0",
       "variant": "counter_surge",
       "review": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
-      "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings."
+      "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings.",
+      "rasterRevision": "docs/art-source/motions/skill-revisions-2026-09-11/air_groove/review.json"
     },
     "agnes_digital": {
       "originalSkill": {
@@ -943,11 +948,12 @@
       },
       "originalSkillSignature": "92fca10bf9c97838240bed8fdd18b714a9faa3d10ec9048088519661c20fee97",
       "skillSignature": "98807291639a679acce31516e0bce9b9236831be08e183a7e8f86a6f95031ea6",
-      "runtimeSha256": "673f76c0674c066b61f0b0ba94653a4ba501a2c43dd346b11660660d0439a899",
+      "runtimeSha256": "ee9a562de6408ca7c5c77792d28c4f6f848c2e2c323e7778feed5f5ddb7d4bf6",
       "variant": "seeking_bolt",
       "review": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
       "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings.",
-      "styleRevision": "Running-style correction reviewed: authored body family and targeting retained; current generated skill signature checked."
+      "styleRevision": "Running-style correction reviewed: authored body family and targeting retained; current generated skill signature checked.",
+      "rasterRevision": "docs/art-source/motions/skill-revisions-2026-09-11/agnes_digital/review.json"
     },
     "seiun_sky": {
       "originalSkill": {
@@ -1055,10 +1061,11 @@
       },
       "originalSkillSignature": "715aad28b72845b35a87e89b65bedd9a9951046047585da1527a498d4f876d71",
       "skillSignature": "77bc42e85476b96200a84509818d115d0421b94ede9511e562b46501f21b7a2b",
-      "runtimeSha256": "7391222b68b67a8fe9b1d2a1c19e8660c4d3a113b0995fd9c82df985aa6f4d88",
+      "runtimeSha256": "b5b42abda38163c96426afb73e7d299525376b79c04e4d0812c89f8ab8b12271",
       "variant": "drain_arc",
       "review": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
-      "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings."
+      "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings.",
+      "rasterRevision": "docs/art-source/motions/skill-revisions-2026-09-11/tamamo_cross/review.json"
     },
     "fine_motion": {
       "originalSkill": {
@@ -1152,10 +1159,11 @@
       },
       "originalSkillSignature": "31fd01c2bbda71aad65dd0cf18211517a9178bd62c0c7674fb29817c8f337550",
       "skillSignature": "de88ee0dbaec8c6f55f662a8f9cc92a8ccd9278f96b5d7b0982aaec88dabdd39",
-      "runtimeSha256": "09179a590206f4442731e632a9a0849e411c89e2c678b5d89d63624c13336d97",
+      "runtimeSha256": "a29e388d3c00041287c5f41f8162c628d7fefa0abf808a8d8b2fd98066a2b9f3",
       "variant": "comet_fall",
       "review": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
-      "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings."
+      "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings.",
+      "rasterRevision": "docs/art-source/motions/skill-revisions-2026-09-11/biwa_hayahide/review.json"
     },
     "mayano_top_gun": {
       "originalSkill": {
@@ -1209,10 +1217,11 @@
       },
       "originalSkillSignature": "509003a42be16514b6e7f4dced9d5a1a4b7f1c04d34a1182a2308260769211f3",
       "skillSignature": "91bd34d49881eaba8cd795b115138de88c594dfd670115fa2b7edc6c75dbf9b6",
-      "runtimeSha256": "f160e09800d71e03fa0ea5b91ff4af8f3631d32882747a572069b58545a94eba",
+      "runtimeSha256": "a288e1850528788b10dd5367281299bf9ee0dbcda8db10b27f487efad222078d",
       "variant": "retaliate_storm",
       "review": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
-      "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings."
+      "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings.",
+      "rasterRevision": "docs/art-source/motions/skill-revisions-2026-09-11/mayano_top_gun/review.json"
     },
     "mihono_bourbon": {
       "originalSkill": {
@@ -1252,10 +1261,11 @@
       },
       "originalSkillSignature": "48d93fde4552365199075375dafbea917007372051b5759e4c829d58fc1df3a9",
       "skillSignature": "cc4a45f707d4a11aec3ab6e9ddf2cfb1d4634c0bc72e2c814ee1d7ec4e700a39",
-      "runtimeSha256": "09b894e0785649c99a4b0eeb90ad30d8f10f0fb63e0cc9d1b4d4a05e4f230d09",
+      "runtimeSha256": "a5aadcb13d90ebfbed170e53c67d5f04faae30a4912cf2a9f3edae616ab671ef",
       "variant": "orbital_beam",
       "review": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
-      "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings."
+      "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings.",
+      "rasterRevision": "docs/art-source/motions/skill-revisions-2026-09-11/mihono_bourbon/review.json"
     },
     "mejiro_ryan": {
       "originalSkill": {
@@ -1305,10 +1315,11 @@
       },
       "originalSkillSignature": "f70f9d33816ef77e12df5e410a6e460f4867f560d220b2f310bd0ae979d07498",
       "skillSignature": "a8be7e54c06f8512ce7d66332d7f977417471f9aa620d452dcd81425d486682c",
-      "runtimeSha256": "7af4d35462620a3f47f7c0238e1616f47178281e025ea32ef503048ffcb10458",
+      "runtimeSha256": "e9633f1352264894398572ca8dc2fa8e05e9e46fde7a2916e6eb1409ecab40b2",
       "variant": "drain_arc",
       "review": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
-      "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings."
+      "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings.",
+      "rasterRevision": "docs/art-source/motions/skill-revisions-2026-09-11/mejiro_ryan/review.json"
     },
     "hishi_akebono": {
       "originalSkill": {
@@ -1531,10 +1542,11 @@
       },
       "originalSkillSignature": "5f59f99d29e917d95cb66d96ef17271ad7f23747af107a149e4b735ce9e405b7",
       "skillSignature": "781d44b5ba1c8d84524034f720e23156ec02e276f5a88172a8cf40456afc53b6",
-      "runtimeSha256": "4ffd61de57029539de731cad45414fe9c6bc5b41169d27df583b9a45cf1811f0",
+      "runtimeSha256": "0a706ddeb4f88561fd583fec479ea4be9764df2b2a1bcea615f18cde178715f0",
       "variant": "bastion_growth",
       "review": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
-      "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings."
+      "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings.",
+      "rasterRevision": "docs/art-source/motions/skill-revisions-2026-09-11/ines_fujin/review.json"
     },
     "agnes_tachyon": {
       "originalSkill": {
@@ -1578,10 +1590,11 @@
       },
       "originalSkillSignature": "ae87e8922ffd068dde121571a31a710960ef79d699895db6eeb238e580e94d90",
       "skillSignature": "c6bdf18b2467a9c90d37fe0304488c79872cf060e65ec7395ca4a24b43a803c1",
-      "runtimeSha256": "b3209383c678409fa4f275957ddab99ab4988e20962d3d2e0d9848a88a06b48d",
+      "runtimeSha256": "8a5e04e050544350fb63e7ff388c5438d5776786d75e65d94ce4aec16aad7202",
       "variant": "carry_charge",
       "review": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
-      "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings."
+      "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings.",
+      "rasterRevision": "docs/art-source/motions/skill-revisions-2026-09-11/agnes_tachyon/review.json"
     },
     "admire_vega": {
       "originalSkill": {
@@ -1631,10 +1644,11 @@
       },
       "originalSkillSignature": "53e5946cac1dbe04adac934cb081384d0b60845f7bb84c67ff4336eff5df9d57",
       "skillSignature": "2c85b6b65f6b5a8697f59af818b6933ddd0768271932604e307014290a655a62",
-      "runtimeSha256": "36776e0b48a91363906239031fa41572d56889323ea525dba6b20c939b856fae",
+      "runtimeSha256": "6416ea7240c3b671606b70afee48f19810548feef69afb10e508113d32aa8727",
       "variant": "crossing_echo",
       "review": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
-      "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings."
+      "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings.",
+      "rasterRevision": "docs/art-source/motions/skill-revisions-2026-09-11/admire_vega/review.json"
     },
     "inari_one": {
       "originalSkill": {
@@ -1688,10 +1702,11 @@
       },
       "originalSkillSignature": "b23a4454e72007f15b9bee695651832de40c49c761d29a90f9613860be41ac9d",
       "skillSignature": "70311f4c4c5ec6de97e1a2c0d0864c7f0f5f15097599623553a25d00259fdfd9",
-      "runtimeSha256": "2e24fd74d7a187de85e6837985da109fb9722cb66c5e33be2b4892973bf7fadb",
+      "runtimeSha256": "87059ec980431e7d28330b2d90c3ffd10ea15d305f82ed8da19cd6b2543cce23",
       "variant": "pursuit_flurry",
       "review": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
-      "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings."
+      "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings.",
+      "rasterRevision": "docs/art-source/motions/skill-revisions-2026-09-11/inari_one/review.json"
     },
     "winning_ticket": {
       "originalSkill": {
@@ -1742,10 +1757,11 @@
       },
       "originalSkillSignature": "bd60695a70aabf66e1a5f2a18f07e7f9b3346d4aa64fb02ee8bfe6689d4348df",
       "skillSignature": "ee855b49f573ce85a0ec1b927300287fcd15a5668e1f25fd66a4e3fa5f85fe6e",
-      "runtimeSha256": "5dfb196e3629bc7e0006db8c1ba7aa9c15a23080c55116fca97f2293539968b3",
+      "runtimeSha256": "8e8166de462ecbe1def5871d9078f5dd2ed41272a4c62a8f01d7f7a11bb0739d",
       "variant": "trample_wave",
       "review": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
-      "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings."
+      "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings.",
+      "rasterRevision": "docs/art-source/motions/skill-revisions-2026-09-11/winning_ticket/review.json"
     },
     "air_shakur": {
       "originalSkill": {
@@ -1844,10 +1860,11 @@
       },
       "originalSkillSignature": "5eb530dc54c5524bd6b133481e4408d49f332b5d78c224e3a7381c9de3e2c187",
       "skillSignature": "d16940cc4610ae78e3fa4e375280fa9f8bdf487e7fbf1d84f932c0d8d82cdc7b",
-      "runtimeSha256": "b90d12a4abda69e4e36bab022cb5f103ddfcadfb0215bd5b2a3fd67a404dcaa6",
+      "runtimeSha256": "24cd39a240cf347230be503a164084422a59676c198e8de86e65cb428719be4b",
       "variant": "delayed_prison",
       "review": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
-      "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings."
+      "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings.",
+      "rasterRevision": "docs/art-source/motions/skill-revisions-2026-09-11/eishin_flash/review.json"
     },
     "curren_chan": {
       "originalSkill": {
@@ -1930,10 +1947,11 @@
       },
       "originalSkillSignature": "fb107e5812647b0dbaa0c9e5ac7d32a14d70bd30a50cf24c62d74f60fdec1fe2",
       "skillSignature": "064dacb83c556bf3cbddf79d3ed3c239310fb457170a9aedfc0ac1d6ecdca384",
-      "runtimeSha256": "c0e73b1ec464ebe048b50ed26d3c3c1a5d66f68b93b78d1018a1d80463d24b87",
+      "runtimeSha256": "b924a7bb27aa36b47685741a64b8f51cc80a94f5664cc1f4ef811199f637b928",
       "variant": "comet_fall",
       "review": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
-      "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings."
+      "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings.",
+      "rasterRevision": "docs/art-source/motions/skill-revisions-2026-09-11/kawakami_princess/review.json"
     },
     "gold_city": {
       "originalSkill": {
@@ -2083,11 +2101,12 @@
       },
       "originalSkillSignature": "3c967f1a6b45f3032c5c2320e7a34660808f2b4c5acdb90713355bec45d9cb56",
       "skillSignature": "5c048797cb82543d1591fa22cf9bcc164a57fee87e5d5330f4905e8fc2f00552",
-      "runtimeSha256": "c4a06bd87a234566f1ffdb0c6a4328bedab452f0a1c84bf731919830bfa0b5e4",
+      "runtimeSha256": "f919f5d4ac539b43701d5ba60394d5cd634f6960ffa21fcae2ebf001b5137574",
       "variant": "split_barrage",
       "review": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
       "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings.",
-      "styleRevision": "Running-style correction reviewed: authored body family and targeting retained; current generated skill signature checked."
+      "styleRevision": "Running-style correction reviewed: authored body family and targeting retained; current generated skill signature checked.",
+      "rasterRevision": "docs/art-source/motions/skill-revisions-2026-09-11/seeking_the_pearl/review.json"
     },
     "shinko_windy": {
       "originalSkill": {
@@ -2192,10 +2211,11 @@
       },
       "originalSkillSignature": "97392632a383cf6152339fe3f3f44eedd5a1eabc22d71422f051a2d342c10dc1",
       "skillSignature": "e11cfe62a02f17de2d9b3bdf08879095a5a053fdf07de240ca3eb1c75467a66a",
-      "runtimeSha256": "2efc22a26b46e1e558a2bc256bddef9e56647f96efdb06afa5b862670cb320a6",
+      "runtimeSha256": "cc493f0d4952a3d4d2f71cfecc7443ad95ec272cdfd29d049c71b28e5b39684a",
       "variant": "crossing_echo",
       "review": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
-      "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings."
+      "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings.",
+      "rasterRevision": "docs/art-source/motions/skill-revisions-2026-09-11/sweep_tosho/review.json"
     },
     "super_creek": {
       "originalSkill": {
@@ -2284,10 +2304,11 @@
       },
       "originalSkillSignature": "8b3c919532f33934074acf2e2046a7c1c15fee1da208bcc6b085ecdc1f35e07a",
       "skillSignature": "9903d1a87d2d8cd7f1f0f1c73d9b012c309065dcb5cbf95eda438c47624db980",
-      "runtimeSha256": "b30197ae5b831c7dbdad6d83da9dba9e3a3e258ba12e370f895bf88adaa4946c",
+      "runtimeSha256": "e37bba17e92c860965683dd9cf1dcbd7775d51535e1d5824ae00d46712572fcc",
       "variant": "cinder_field",
       "review": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
-      "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings."
+      "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings.",
+      "rasterRevision": "docs/art-source/motions/skill-revisions-2026-09-11/smart_falcon/review.json"
     },
     "zenno_rob_roy": {
       "originalSkill": {
@@ -2395,10 +2416,11 @@
       },
       "originalSkillSignature": "5a24af10579990d05d30f90819d78dffe9e1845a8c99229ff0c7da145353278a",
       "skillSignature": "9ce6cb2394f86fe091745fe8666ae4783ca9b0b2b82bf92330256febab4b4cc0",
-      "runtimeSha256": "c24c12442b87a06413e60e56383cf876797e1f481dd8c45d0ffaa359b5a389c7",
+      "runtimeSha256": "f8f1a71e432b539b72fce00f83476743426c01fafeebc3157aee5ee0bd04e8f1",
       "variant": "bastion_growth",
       "review": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
-      "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings."
+      "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings.",
+      "rasterRevision": "docs/art-source/motions/skill-revisions-2026-09-11/tosen_jordan/review.json"
     },
     "nakayama_festa": {
       "originalSkill": {
@@ -2507,10 +2529,11 @@
       },
       "originalSkillSignature": "3a272ebaf69618b633976ecebdb63b684d73a1456916af7845b999a0919beeb4",
       "skillSignature": "f65fe82bbf08bf9a726bb25ef411d640e4b427302940227f3711b6f777564584",
-      "runtimeSha256": "25bc65d55166444169054c8de2fe63dfc9fa28c0973f67ee79345a3172a0b18e",
+      "runtimeSha256": "a750b67321a111b1ae01c7554630b65d9caee7f562044c3524956f1b302fac71",
       "variant": "pursuit_flurry",
       "review": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
-      "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings."
+      "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings.",
+      "rasterRevision": "docs/art-source/motions/skill-revisions-2026-09-11/narita_taishin/review.json"
     },
     "nishino_flower": {
       "originalSkill": {
@@ -2713,10 +2736,11 @@
       },
       "originalSkillSignature": "2e880f5dc9d7ea99f77b6bd3f6b2c7f409490b406ab3ba830faabef56e831508",
       "skillSignature": "c0e5cf4133d43b7074b2ef1648b3add9e74ed963a68b7707c661fbf2e2a98465",
-      "runtimeSha256": "d21d53a519a55a431ff00d94fb8305170a77c139efef0aa5d4872543a68d794e",
+      "runtimeSha256": "74c6b0b33314d0d7ce19394f7ba6d7fdd222e2d5b63c086997815eb185fd019b",
       "variant": "delayed_prison",
       "review": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
-      "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings."
+      "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings.",
+      "rasterRevision": "docs/art-source/motions/skill-revisions-2026-09-11/biko_pegasus/review.json"
     },
     "marvelous_sunday": {
       "originalSkill": {
@@ -2767,10 +2791,11 @@
       },
       "originalSkillSignature": "a42be7eee7fc16523dff0669a223b0fa4b98c336bd78ea5618f037aae5d6916a",
       "skillSignature": "0f971de1f5a5a8afb1b87878a4ddf0cea12b95e5d20d02316ad31fb312d3a380",
-      "runtimeSha256": "836154a604b99b81cbc36f9958bf436d3dbc43f4017b4e61f7345777e7db6d7f",
+      "runtimeSha256": "1b08f915f1e61c2d317627ad85bae5eaefbdf03d22472d11870693849725ebdf",
       "variant": "counter_surge",
       "review": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
-      "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings."
+      "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings.",
+      "rasterRevision": "docs/art-source/motions/skill-revisions-2026-09-11/marvelous_sunday/review.json"
     },
     "matikanefukukitaru": {
       "originalSkill": {
@@ -2985,10 +3010,11 @@
       },
       "originalSkillSignature": "a952a7e52f8ac9c21f63bb02d009ba1c0a83a34af142335d383f69b7c63d46ae",
       "skillSignature": "31261a694dd6fc493465b04830e69cb7082eb63d9109c9dcfc9082e7f2bd7b4b",
-      "runtimeSha256": "75cfb15c2ac6cd05f7a47b1fcf2999e9d1efef5ab2f579bd92374371887d4d62",
+      "runtimeSha256": "b8aba003ad507fbfd323b75ec46c000870e9e053bdb922f91f96ac1b9054bd29",
       "variant": "crossing_echo",
       "review": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
-      "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings."
+      "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings.",
+      "rasterRevision": "docs/art-source/motions/skill-revisions-2026-09-11/mejiro_dober/review.json"
     },
     "nice_nature": {
       "originalSkill": {
@@ -3259,10 +3285,11 @@
       },
       "originalSkillSignature": "ef2a7e58627e9998fdac92084003a979699ed3fe0fb891bc78ab16773b205c15",
       "skillSignature": "14a3e8af313aca65543d8bb3e37178fdecf92062c27db27148561f34f4b41ac2",
-      "runtimeSha256": "5b290e58fb9978170330e4d23733559d90efc99ba28acd21d9d67eca3cf23265",
+      "runtimeSha256": "e13f8a186f89dbc02fff189a37b7f7916eafe9bbe0fea9b89b3cf11414ec1446",
       "variant": "bastion_growth",
       "review": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
-      "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings."
+      "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings.",
+      "rasterRevision": "docs/art-source/motions/skill-revisions-2026-09-11/mejiro_palmer/review.json"
     },
     "daitaku_helios": {
       "originalSkill": {
@@ -3533,10 +3560,11 @@
       },
       "originalSkillSignature": "bfc882643e29734401e8efc972fb34e2125d2f5236ed1e02f00509fcfdc813da",
       "skillSignature": "d12f64b9ea59a38038a5450202ea41861d6231af089cb755717eae75de77d112",
-      "runtimeSha256": "974acc4ff5c0488b74702eb805bba361f54bbbeedfd7caf6790a3503b43621f1",
+      "runtimeSha256": "4e5bbd7a66642f0262517cabe4415b8082f804bcc36f3c2f4ab86177e42c5d8a",
       "variant": "crossing_echo",
       "review": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
-      "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings."
+      "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings.",
+      "rasterRevision": "docs/art-source/motions/skill-revisions-2026-09-11/sakura_chiyono_o/review.json"
     },
     "sirius_symboli": {
       "originalSkill": {
@@ -3747,10 +3775,11 @@
       },
       "originalSkillSignature": "be46db030298735c66a08e738fdeeeed41f54fe2e66899eabc22056836610535",
       "skillSignature": "62aac5a15778224810298a4c3a663917c4da73855a628eac86fc46bf99000702",
-      "runtimeSha256": "a8eec91e1402f100d502fc7a35a592821cc462afcf9e636a819211a4a40ed123",
+      "runtimeSha256": "4181961ac3f6d991fba27a84ef728ded69a34643d13d726b3d421271b2df3284",
       "variant": "delayed_prison",
       "review": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
-      "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings."
+      "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings.",
+      "rasterRevision": "docs/art-source/motions/skill-revisions-2026-09-11/tsurumaru_tsuyoshi/review.json"
     },
     "mejiro_bright": {
       "originalSkill": {
@@ -3853,10 +3882,11 @@
       },
       "originalSkillSignature": "67f4f0bcdfec0b239d10904f734e148690c32c9940039faeeea2f6533b9c6415",
       "skillSignature": "a43bac208f8550310489f9c733d9ece34d9f2cb3065a6a1f718258f822eeaf97",
-      "runtimeSha256": "94df5886343b4fb85daefee992d47a00bc076fd8a7f0dcdc334b83a688cc55ba",
+      "runtimeSha256": "0431aef031821e5d920f942204cd511ce05dcbd237e79793e4ec24d9dbe9e94d",
       "variant": "crossing_echo",
       "review": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
-      "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings."
+      "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings.",
+      "rasterRevision": "docs/art-source/motions/skill-revisions-2026-09-11/daring_tact/review.json"
     },
     "sakura_laurel": {
       "originalSkill": {
@@ -4112,10 +4142,11 @@
       },
       "originalSkillSignature": "ab102082eacbdf128bf4ac8c119c9afea9d66b35282386102121a2109b5292d0",
       "skillSignature": "ce94f27d06507a5020d43b9af43b37f5d9d5e978903237d5250bb8ced6c42c72",
-      "runtimeSha256": "f45727cbd3cf89496555755d93edd2511042344cd5f0109c7b20d16036205f43",
+      "runtimeSha256": "f50b83c817a73d88130838c35cecdd9cacf70f9e69b68dd8cfa8e48b23de7595",
       "variant": "twin_orbit",
       "review": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
-      "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings."
+      "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings.",
+      "rasterRevision": "docs/art-source/motions/skill-revisions-2026-09-11/transcend/review.json"
     },
     "north_flight": {
       "originalSkill": {
@@ -4320,10 +4351,11 @@
       },
       "originalSkillSignature": "0c54cef6d504e935cf3ed8984f850a6e204eaa0dab127d3f1290bfe743107081",
       "skillSignature": "e83993a266d6b8aaae08b6d424e8e38533274a6a9fb8615f366a9d9c8813658a",
-      "runtimeSha256": "78dbe074d0178cb8d72d4627d47aabdf4a970088d05b57d6a2ecb7b0727cf97f",
+      "runtimeSha256": "cfce230eee8a3729c56ee29950cad6006f0be1cb70adee7f7545092c36607939",
       "variant": "seeking_bolt",
       "review": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
-      "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings."
+      "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings.",
+      "rasterRevision": "docs/art-source/motions/skill-revisions-2026-09-11/daiichi_ruby/review.json"
     },
     "mejiro_ramonu": {
       "originalSkill": {
@@ -4377,11 +4409,12 @@
       },
       "originalSkillSignature": "1cdedaa6ae773c5a0b27a76b78a8a38ddb3314a7cba391eef7bd59e8f28ef28b",
       "skillSignature": "2be97b935ca963fc961ea6706d22bcb735de58d17180ae4289c57156aa329541",
-      "runtimeSha256": "70f07d7b4ce77b74cb5eb4d8871c6d6a485c78618d7fb70b4aa897da27c30bdb",
+      "runtimeSha256": "6d4b32c7f67a8e1b7edd90ed534d5a4556d3f6990dc07a8a9015417556fb8d78",
       "variant": "crossing_echo",
       "review": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
       "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings.",
-      "styleRevision": "Running-style correction reviewed: authored body family and targeting retained; current generated skill signature checked."
+      "styleRevision": "Running-style correction reviewed: authored body family and targeting retained; current generated skill signature checked.",
+      "rasterRevision": "docs/art-source/motions/skill-revisions-2026-09-11/mejiro_ramonu/review.json"
     },
     "aston_machan": {
       "originalSkill": {
@@ -4421,10 +4454,11 @@
       },
       "originalSkillSignature": "e1b9d45dc34c96429597ac0bf73f5beb136d089ea5c82964a0327af6a606dad2",
       "skillSignature": "f9a14d34580dd71bd5b3d23db795f75565ef4803f8e1bcc61a797624fd4406fb",
-      "runtimeSha256": "1b7da634747307a4c1994d30b4081c8293a3ef3d288928fcb74a5772a25e490e",
+      "runtimeSha256": "22e1561bbac1e62ef4dd174de320531d6d87d50ff98a6d716acebdec0c770d15",
       "variant": "twin_orbit",
       "review": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
-      "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings."
+      "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings.",
+      "rasterRevision": "docs/art-source/motions/skill-revisions-2026-09-11/aston_machan/review.json"
     },
     "satono_crown": {
       "originalSkill": {
@@ -4468,10 +4502,11 @@
       },
       "originalSkillSignature": "8f6b78b930e75dcb58f84461c739f567213c69cf2327294576e5cf0a2cb10802",
       "skillSignature": "d3f2bc6a2a9c2aef0afbf42cd6febda2c8371c07e209588d0c688820a9761dd5",
-      "runtimeSha256": "24b5e5e2bea0a4128d9316e9ddcda96538b9f47b3b940ad80f0cf093839450b9",
+      "runtimeSha256": "3bbd3b92b69b2646d58ac20ade83497afdbb111d2560e7b9ee296f322dcc0061",
       "variant": "fan_volley",
       "review": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
-      "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings."
+      "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings.",
+      "rasterRevision": "docs/art-source/motions/skill-revisions-2026-09-11/satono_crown/review.json"
     },
     "cheval_grand": {
       "originalSkill": {
@@ -4571,10 +4606,11 @@
       },
       "originalSkillSignature": "53ce53966fc7676682c8b9a2fde67205951ad44dac38e75db23ca0100f70a96d",
       "skillSignature": "89b3d5341e3eebf15d822aa1ea0ca516af962f1dae1952817159343f2a950c41",
-      "runtimeSha256": "168853ad85ddb027f422aeeb6f8793ae746df586d222fc3e704507f4d29135e2",
+      "runtimeSha256": "b8406843098bf314b71b202d5fa0e50f3fd6c4410f77db1156a761f9323a27b7",
       "variant": "crossing_echo",
       "review": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
-      "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings."
+      "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings.",
+      "rasterRevision": "docs/art-source/motions/skill-revisions-2026-09-11/vivlos/review.json"
     },
     "dantsu_flame": {
       "originalSkill": {
@@ -4683,10 +4719,11 @@
       },
       "originalSkillSignature": "1a408a384e48e584b93b2d6067663b452df5139fba9fa1179bb331b10656972c",
       "skillSignature": "c3b7226663dd08f4f3bda8a45b2072e7a74a31c39c862144aa8ff475c5b09819",
-      "runtimeSha256": "c035dc3a6022397bcba0258d144fac5780020591b763fe4073d10d371c1cf06a",
+      "runtimeSha256": "7710dfc56e956169b6955ceba72431a2bafdfa6ef4f71748a79fb87d9acf76ae",
       "variant": "bastion_growth",
       "review": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
-      "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings."
+      "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings.",
+      "rasterRevision": "docs/art-source/motions/skill-revisions-2026-09-11/ks_miracle/review.json"
     },
     "jungle_pocket": {
       "originalSkill": {
@@ -4878,10 +4915,11 @@
       },
       "originalSkillSignature": "9b3cd71dc259678f78f4dca9682bf4bdf863c1417780bfe0ae9b0cc60f2b6d12",
       "skillSignature": "8167674cd85625d189d3832bcfc6cbe8c2893327177a38bc880f836791a1f726",
-      "runtimeSha256": "e359e7d0a83720ecf95f62f870a0645c1d75a7cd6435be78d717c60aa1b6f81e",
+      "runtimeSha256": "495c888ea0d79c6069a5708690bfae1989ee7491390e1b81849ae4fa26cf2a9e",
       "variant": "trample_wave",
       "review": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
-      "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings."
+      "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings.",
+      "rasterRevision": "docs/art-source/motions/skill-revisions-2026-09-11/still_in_love/review.json"
     },
     "copano_rickey": {
       "originalSkill": {
@@ -4975,10 +5013,11 @@
       },
       "originalSkillSignature": "fb4544a118e5c2a0050ebd09184cb52845c717c9c9e259eab816d6df092de1a8",
       "skillSignature": "169c2b643b3e8b23097442d57fdd2d8c45dc342469261fafa379d192561335dc",
-      "runtimeSha256": "eb52294564af0791caf60c1aad48bf1b67012bf0a17400c96c37b1a5d9729fb9",
+      "runtimeSha256": "8a4b1fd073efe8e0e12c15a905cfcfd5491ebdc5f4cada0516ba24cfdc1e6b03",
       "variant": "cinder_field",
       "review": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
-      "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings."
+      "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings.",
+      "rasterRevision": "docs/art-source/motions/skill-revisions-2026-09-11/hokko_tarumae/review.json"
     },
     "wonder_acute": {
       "originalSkill": {
@@ -5294,10 +5333,11 @@
       },
       "originalSkillSignature": "6197e868123c5cea9addff383dae86886b0835e7dac9960554b66371ead9e1d0",
       "skillSignature": "8ef8af6fba3f5c64a37ee94255e29e2be015107c6c9357cf212c8f53263c7642",
-      "runtimeSha256": "0d1d444b91df7907e0ed9680337452dba41b373abdc964b2fb73642e7a7ce0fd",
+      "runtimeSha256": "33d5683746f1363f0c65424ad3f1640a43c7d98334d33df8f91f0a1b0c635971",
       "variant": "trample_wave",
       "review": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
-      "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings."
+      "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings.",
+      "rasterRevision": "docs/art-source/motions/skill-revisions-2026-09-11/neo_universe/review.json"
     },
     "hishi_miracle": {
       "originalSkill": {
@@ -5344,10 +5384,11 @@
       },
       "originalSkillSignature": "2043aa46609de8ba3463e58bdeba0b339f91f76316a428315f8ba9e6e1fcf55c",
       "skillSignature": "40161fbf6894ac63518283fd0969bdd358fd866251225b84041c9b071c5f96b6",
-      "runtimeSha256": "4f1364ba952e048034fd5a2a2453380650915994a2ab1783eaed835f7f0121ee",
+      "runtimeSha256": "8781d99bf23a82a842a48d5bab367084290d8b16bbb6ba4603b335b3c933dff7",
       "variant": "giant_cutter",
       "review": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
-      "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings."
+      "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings.",
+      "rasterRevision": "docs/art-source/motions/skill-revisions-2026-09-11/hishi_miracle/review.json"
     },
     "tap_dance_city": {
       "originalSkill": {
@@ -5401,10 +5442,11 @@
       },
       "originalSkillSignature": "645de284dbdc1753e4a58917851d1b85e6e7b05e92a052c3597d253d978366cb",
       "skillSignature": "06f51dd87940f87b7be8173e86ea4e2030bd1a4241eea3652d5452f3013f0409",
-      "runtimeSha256": "4d8be99bb61626cd2f5a53b4c2bdaf14416f8509c96bf2a796f5830a02636586",
+      "runtimeSha256": "c3cb362bf1f3b6676570c25f0916ffb12755082289213a332e03d384333e20be",
       "variant": "retaliate_storm",
       "review": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
-      "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings."
+      "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings.",
+      "rasterRevision": "docs/art-source/motions/skill-revisions-2026-09-11/tap_dance_city/review.json"
     },
     "duramente": {
       "originalSkill": {
@@ -5834,10 +5876,11 @@
       },
       "originalSkillSignature": "45c4bce88a33d9d2aaece19c1266ed1612939296804b1eb915351b7fd1ce7ac6",
       "skillSignature": "368388d4889cf903c55c99d457c5270bb5e8dc394d657437152396bead76aeed",
-      "runtimeSha256": "8fd9f453d68b9760512e61b921d7ac6ebeaed248a0ff92720c56f717cd876c04",
+      "runtimeSha256": "055c34f21c8a4d5499599a76442c0087eb02dbdfc743d7d9c15381d9ab6403e8",
       "variant": "pursuit_flurry",
       "review": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
-      "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings."
+      "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings.",
+      "rasterRevision": "docs/art-source/motions/skill-revisions-2026-09-11/orfevre/review.json"
     },
     "gentildonna": {
       "originalSkill": {
@@ -5891,10 +5934,11 @@
       },
       "originalSkillSignature": "8ce408247dc36b18f12c021f6e0d7cb72ad16f0bc1f7c8a9c576e9de39c419c2",
       "skillSignature": "632d471cd7a785d2b6655dd8484b7adcf89d2bd138f57d056117ee42c8699f07",
-      "runtimeSha256": "4ca7dff800c01ae162e43fcf6a67ebb6cc29154887f364d11c605fff3e93a7ac",
+      "runtimeSha256": "a2ec371018fcc664cd571a6bd8356df35262c99b506e1b217425ab7ff06b6a8a",
       "variant": "retaliate_storm",
       "review": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
-      "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings."
+      "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings.",
+      "rasterRevision": "docs/art-source/motions/skill-revisions-2026-09-11/gentildonna/review.json"
     },
     "win_variation": {
       "originalSkill": {
@@ -5993,10 +6037,11 @@
       },
       "originalSkillSignature": "622322115189158e69669b9314cef18dd4f0a3eb72527eb285d339592bb7b874",
       "skillSignature": "5ede3c8d5bb303f5773b11b74a1aaa803094d123827a118f450fa51d1e94fddf",
-      "runtimeSha256": "ac194c09a3576e98d925ae607ea149727f2b04e5857233c284b144e4dd61b4c4",
+      "runtimeSha256": "d840f5e44d3705536ca95c94164d8ea66563cb5785324866bf4b9169eab202ca",
       "variant": "drain_arc",
       "review": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
-      "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings."
+      "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings.",
+      "rasterRevision": "docs/art-source/motions/skill-revisions-2026-09-11/admire_groove/review.json"
     },
     "dream_journey": {
       "originalSkill": {
@@ -6150,10 +6195,11 @@
       },
       "originalSkillSignature": "86e8e4ebf358d5bd724e5c67fb23f4f1229acd4c64d4d238c8abb864574482c0",
       "skillSignature": "eb1b374a4dbe705d469900467d9aba1241f19460fd5d42b95fe64b42c3e4d2fd",
-      "runtimeSha256": "6e67973115d2cb01e2b0d1947e9432b3b1f66b7a888c02b3aeedc4c34d693cd4",
+      "runtimeSha256": "b1da6e15d1d60af012b8e05fbbec04259288fbe9a9593b3fdedcaf093e15c275",
       "variant": "shadow_finish",
       "review": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
-      "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings."
+      "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings.",
+      "rasterRevision": "docs/art-source/motions/skill-revisions-2026-09-11/durandal/review.json"
     },
     "genuine": {
       "originalSkill": {
@@ -6203,10 +6249,11 @@
       },
       "originalSkillSignature": "15e4116c6e79b860452e9a916d8926f17c2c6ab23fa3c4dcba79f3bc35c67cf3",
       "skillSignature": "18223b70e1da36fdaec264434c190066e85622b3b52fd23c27b62f99c3d2a93d",
-      "runtimeSha256": "9e15f03b5f5a6685adc1f1deff01b66f82f5dc032b3eeee7f7396730469bf59b",
+      "runtimeSha256": "63f5f09f8bd2a481c64fd571ad278c2056e314f9251bc1e620f2c8230f914504",
       "variant": "drain_arc",
       "review": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
-      "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings."
+      "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings.",
+      "rasterRevision": "docs/art-source/motions/skill-revisions-2026-09-11/genuine/review.json"
     },
     "bubble_gum_fellow": {
       "originalSkill": {
@@ -6250,11 +6297,12 @@
       },
       "originalSkillSignature": "1c0f102ab64686d4673ea0c04ddff4bd40ef8b3661c7561ae72d3059dfc55b7e",
       "skillSignature": "f0340343990d3a6793511ebf45bcf0089bdb87a7df500c129c2c52a7569fb538",
-      "runtimeSha256": "1147a956978388470005554952d22a2c0f147cbec71b87af171ccd93a15cdf7d",
+      "runtimeSha256": "1596ce17a4f02258a918698b347a5004767fae514883068f5bc3fc3ea7399e26",
       "variant": "carry_charge",
       "review": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
       "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings.",
-      "styleRevision": "Running-style correction reviewed: authored body family and targeting retained; current generated skill signature checked."
+      "styleRevision": "Running-style correction reviewed: authored body family and targeting retained; current generated skill signature checked.",
+      "rasterRevision": "docs/art-source/motions/skill-revisions-2026-09-11/bubble_gum_fellow/review.json"
     },
     "sakura_chitose_o": {
       "originalSkill": {
@@ -6304,10 +6352,11 @@
       },
       "originalSkillSignature": "54842ac59b249f0fbb46093277a9b0dc5a9db7c61c6bca3304931fd26a685a4d",
       "skillSignature": "cd13009229be0a31424b62a921d422547142014a8ffba0d7491002d616fb0881",
-      "runtimeSha256": "15197c34b8e51efc9b09f0a2a194daefeeb999719db94cf0665e60937f22b6e5",
+      "runtimeSha256": "c0f327e9074b8ea44b9fff94ab0ed796b67941939ec161f7e38a663dee01ec64",
       "variant": "delayed_prison",
       "review": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
-      "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings."
+      "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings.",
+      "rasterRevision": "docs/art-source/motions/skill-revisions-2026-09-11/sakura_chitose_o/review.json"
     },
     "fenomeno": {
       "originalSkill": {
@@ -6358,10 +6407,11 @@
       },
       "originalSkillSignature": "85c432391cb3928ab879110874b4f3b316521b4b705041e17e8efe622709d06b",
       "skillSignature": "1f68887fd3b68e847d0571998d0bc384d471a20e0a876db95653c8cb8f7165ca",
-      "runtimeSha256": "8cbb7e5014208eefc59e3f1d0a2bf330310e0b5f9dc8ace31d63bfcd2fbadfc0",
+      "runtimeSha256": "fc600a55cdce049ae59e683b42f98ce00d2f36aa3473d49200aedd763b579fd6",
       "variant": "crossing_echo",
       "review": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
-      "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings."
+      "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings.",
+      "rasterRevision": "docs/art-source/motions/skill-revisions-2026-09-11/fenomeno/review.json"
     },
     "blast_onepiece": {
       "originalSkill": {
@@ -6405,10 +6455,11 @@
       },
       "originalSkillSignature": "70d341029aaed1f831b1e0e8bf0e29fbc83d731d4a681aaf6e44dc2ab49789ce",
       "skillSignature": "eb28d591b847dc06060d708153c930eca5e9127e46da1b47665dc1fee165f7a7",
-      "runtimeSha256": "0742726222a20e5dc697290c6215d942b96d4d07a5897a65f183d5b584771012",
+      "runtimeSha256": "f67b6454df33cfe986d5bb7fb77c27b5717ab4d4aaba53a37d5f7d4d8fb55bb9",
       "variant": "split_barrage",
       "review": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
-      "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings."
+      "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings.",
+      "rasterRevision": "docs/art-source/motions/skill-revisions-2026-09-11/blast_onepiece/review.json"
     },
     "almond_eye": {
       "originalSkill": {
@@ -6452,10 +6503,11 @@
       },
       "originalSkillSignature": "727a98397ccfe83715fea3edb20e26cfeaee3905529f1beba7a9bc277700ae41",
       "skillSignature": "61f1ba230ba9231f3cb29e01741c9c0006551c95d2fcff0a6033ab32637a7bb3",
-      "runtimeSha256": "9020836a3ce86bb2153d19484b9aa2803e4c8bee9d7032b574193611a5b36399",
+      "runtimeSha256": "ef20ac0ce5fcb396b8928d4e22fb3a4f7bffd5f6720fad94d29f61c32623380b",
       "variant": "focus_three",
       "review": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
-      "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings."
+      "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings.",
+      "rasterRevision": "docs/art-source/motions/skill-revisions-2026-09-11/almond_eye/review.json"
     },
     "lucky_lilac": {
       "originalSkill": {
@@ -6495,10 +6547,11 @@
       },
       "originalSkillSignature": "f8d763979215f81462fa46380fa8388ccd3c2ecc5277bb190e1b8a2122a3fb10",
       "skillSignature": "a8d16db06c57c5534e975078e59fbc563911032367107b243feb42ccf8569b12",
-      "runtimeSha256": "1a5a387a465a1bbb69da9af4bc17792424cb7a05bb772dead911c1ad10ad50e7",
+      "runtimeSha256": "c95700bb5006906ba873306d6e6e27640b737ce98a2e7e55df6695192798b326",
       "variant": "expanding_nova",
       "review": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
-      "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings."
+      "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings.",
+      "rasterRevision": "docs/art-source/motions/skill-revisions-2026-09-11/lucky_lilac/review.json"
     },
     "gran_alegria": {
       "originalSkill": {
@@ -6549,10 +6602,11 @@
       },
       "originalSkillSignature": "5dc4173a1d39483570dab1d50f824319d39a6d386b68e4db978f4ffcf6f93702",
       "skillSignature": "54443f2284207c93b975836724d8a3ce74a2501209257b856d645eb65a2d3843",
-      "runtimeSha256": "f94456207629f4cb2d55cadea43cc594ad9bcfb638a7e1c41fc28fbb99d50e26",
+      "runtimeSha256": "98f77dbbd14a9514ad9e1c8e0256ee41697dd078c3cd035a6000879a1daee31b",
       "variant": "pursuit_flurry",
       "review": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
-      "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings."
+      "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings.",
+      "rasterRevision": "docs/art-source/motions/skill-revisions-2026-09-11/gran_alegria/review.json"
     },
     "loves_only_you": {
       "originalSkill": {
@@ -6652,10 +6706,11 @@
       },
       "originalSkillSignature": "2d8e96210aec5a4154e601992b45505112cea59d3249b86063612825c16bd7a1",
       "skillSignature": "84476adf472c78aaed8b8b178f566d1308fc27cf390e20c636bf88b062f71dc4",
-      "runtimeSha256": "074ec1a16e88979b9453ad3c33e9275c5946d98803c9b2e3d1b36adf3db31d3e",
+      "runtimeSha256": "115ed6e515e7843128a20f1d47350bd9a86b50cef835c86c6977abf35b5fe772",
       "variant": "trample_wave",
       "review": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
-      "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings."
+      "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings.",
+      "rasterRevision": "docs/art-source/motions/skill-revisions-2026-09-11/chrono_genesis/review.json"
     },
     "curren_bouquetdor": {
       "originalSkill": {
@@ -6761,10 +6816,11 @@
       },
       "originalSkillSignature": "c8fe82acaf0e77d89431a57d033094f95985f5da472136855af6fb6e52956592",
       "skillSignature": "d58ee4bff5943c07e9038e06458702b23924ac70a73a5ccb944c986fa01bdd63",
-      "runtimeSha256": "39b9ce263b67f40a58c1bd92fddc4aa189fb5e5538ca9be64bd55353100c2377",
+      "runtimeSha256": "cb6cca2189f4de09e6a5d15fcf8f6bdf95c743e846bf9027a25f50dcc0f58f0c",
       "variant": "iron_drain",
       "review": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
-      "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings."
+      "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings.",
+      "rasterRevision": "docs/art-source/motions/skill-revisions-2026-09-11/stay_gold/review.json"
     },
     "red_desire": {
       "originalSkill": {
@@ -6810,10 +6866,11 @@
       },
       "originalSkillSignature": "a5801ca3c7b617c805d8d286b026df896dbd4b994ccbcc05b29afac289ad66b6",
       "skillSignature": "57207a7c1f2e989d45587018ddb75b549d10893eb9b96698493ecbff3e5a7db4",
-      "runtimeSha256": "6e1f0623aa15dc435f89f17257dcd058b1124b89ad76afd5d279fbb185013d89",
+      "runtimeSha256": "89d16b0f71e9775b783557416a4c004d7af71e42f4b489a47cfe4126107a42d1",
       "variant": "delayed_prison",
       "review": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
-      "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings."
+      "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings.",
+      "rasterRevision": "docs/art-source/motions/skill-revisions-2026-09-11/red_desire/review.json"
     },
     "kiseki": {
       "originalSkill": {
@@ -6867,10 +6924,11 @@
       },
       "originalSkillSignature": "998a7069b6643616e9c408bd21e6326b7215ba19f1a598523412a13aa08a8fe3",
       "skillSignature": "b0784ab6de5ddee4850849d8d859ab6ef286033c075ac732057a74a2246fd519",
-      "runtimeSha256": "dfca94f6af69f2439b174c549392c8da34f66b8cbd5efe07505371e0150ebc10",
+      "runtimeSha256": "5a77e8dd7dfd7faf3bf7fc9923dbd78e2a680c6b959f252abef8725e5d24d768",
       "variant": "bastion_growth",
       "review": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
-      "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings."
+      "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings.",
+      "rasterRevision": "docs/art-source/motions/skill-revisions-2026-09-11/kiseki/review.json"
     },
     "forever_young": {
       "originalSkill": {
@@ -6910,10 +6968,11 @@
       },
       "originalSkillSignature": "2c632da66946b45c992f1638fc736ca5f09ab233b30b332233d9a0bd55ce2c31",
       "skillSignature": "536b43240fbca5507a478cf2b05672d68203c41815206798ba515427391464a4",
-      "runtimeSha256": "9032b6de463b49eebbaaf4af94458312224edca3aad009822c633c229407177a",
+      "runtimeSha256": "cca55531c3df747f419648c6702359e22f3651ef9c6991e2bc0b0de8d1892cce",
       "variant": "cinder_field",
       "review": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
-      "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings."
+      "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings.",
+      "rasterRevision": "docs/art-source/motions/skill-revisions-2026-09-11/forever_young/review.json"
     },
     "marche_lorraine": {
       "originalSkill": {
@@ -7016,11 +7075,12 @@
       },
       "originalSkillSignature": "83b205dcd1d173f0efcd015e0864202ab7c34b86895df45930ea8431e3dbf493",
       "skillSignature": "4729e8ab9b3b238717d7e857096662fe914528fdd4f72bada30b92a57de68fc5",
-      "runtimeSha256": "917d4db9050bba71d0fc48c70216105210f91997d1966b51e74e542348e15265",
+      "runtimeSha256": "6c3ef5726cd48951f5c480bb1a964442d4cd4172cc28fee349a5ae1721e3a6bf",
       "variant": "retaliate_storm",
       "review": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
       "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings.",
-      "styleRevision": "Running-style correction reviewed: authored body family and targeting retained; current generated skill signature checked."
+      "styleRevision": "Running-style correction reviewed: authored body family and targeting retained; current generated skill signature checked.",
+      "rasterRevision": "docs/art-source/motions/skill-revisions-2026-09-11/epiphaneia/review.json"
     },
     "logotype": {
       "originalSkill": {
@@ -7128,11 +7188,12 @@
       },
       "originalSkillSignature": "ec19a867c32a0ddafadae901133e579931b98690900ac5f005d92f53cd0b91a4",
       "skillSignature": "b21b85740361f18811a905f924a2c10a9525523693c49b16a5ef956de488a8f1",
-      "runtimeSha256": "57a973d67d96668387a47cf3ea31f05fc01024260f08000a1845062e42b34113",
+      "runtimeSha256": "8ca71dd7851437cc3ded386163c161431ef0bd087a36dadf70e3c0897555180c",
       "variant": "crossing_echo",
       "review": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
       "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings.",
-      "styleRevision": "Running-style correction reviewed: authored body family and targeting retained; current generated skill signature checked."
+      "styleRevision": "Running-style correction reviewed: authored body family and targeting retained; current generated skill signature checked.",
+      "rasterRevision": "docs/art-source/motions/skill-revisions-2026-09-11/victoire_pisa/review.json"
     },
     "rose_kingdom": {
       "originalSkill": {
@@ -7183,10 +7244,11 @@
       },
       "originalSkillSignature": "3616b8ed705dc0b7aa261863458af85b18684143d56ec350458157378f315da2",
       "skillSignature": "d17c483b0e08046dca1e3a2904297e0d1f942fced05f43cf3733f5e79bc9e6ab",
-      "runtimeSha256": "0795c0572820a8476eb80207e8a5ea130c7533b391f5cc7660554861b3d12a1e",
+      "runtimeSha256": "707cf1a8be1c0007243d6779da3c771834fb45de9071da55a9a1462e2a1ac531",
       "variant": "trample_wave",
       "review": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
-      "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings."
+      "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings.",
+      "rasterRevision": "docs/art-source/motions/skill-revisions-2026-09-11/rose_kingdom/review.json"
     },
     "rulership": {
       "originalSkill": {
@@ -7349,11 +7411,12 @@
       },
       "originalSkillSignature": "e478885685cdb5ddb2ecbbdb95590a1965b0deb7d40a7c4d6485818362ad58e6",
       "skillSignature": "ba0aaf68f0034e5b39f3b34190b35e521619352c7440d8ab32c05f364d879512",
-      "runtimeSha256": "0e421077039fa8232db037adf410c860cfd0ed7885d73a47b03a006037c6591f",
+      "runtimeSha256": "51770cbc814f5dace2831305da04cb0990f10593b123f8ad0747072e15f10785",
       "variant": "retaliate_storm",
       "review": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
       "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings.",
-      "styleRevision": "Running-style correction reviewed: authored body family and targeting retained; current generated skill signature checked."
+      "styleRevision": "Running-style correction reviewed: authored body family and targeting retained; current generated skill signature checked.",
+      "rasterRevision": "docs/art-source/motions/skill-revisions-2026-09-11/titleholder/review.json"
     },
     "phalaenopsis": {
       "originalSkill": {
@@ -7447,10 +7510,11 @@
       },
       "originalSkillSignature": "3e01c8d25dde354c4912cc9788c73424699293ded8d787656a3c726d7a67dd07",
       "skillSignature": "b39e7a0301924bbc0263bc24d3b9c98cf672178c22bf27d649bd5d657173c667",
-      "runtimeSha256": "38c73857f7f7a3f68cd74b8bb2dd2565347edf3f64b2be86c594b323c7b43208",
+      "runtimeSha256": "fc2dbd6919275ce6e1c6bc10974bec10e5c28c2e3b2203d04a1c5742a35cd944",
       "variant": "expanding_nova",
       "review": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
-      "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings."
+      "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings.",
+      "rasterRevision": "docs/art-source/motions/skill-revisions-2026-09-11/verxina/review.json"
     },
     "manhattan_cafe": {
       "originalSkill": {
@@ -7500,11 +7564,12 @@
       },
       "originalSkillSignature": "a9c2fb2133342d46161e9711e2a54cb07c392db4a0e586664aeedb20755f5ef6",
       "skillSignature": "afdbb3bf5feda7b64e2d6bf5c3f350ab340a0550b3d79e453d1ea43524471f80",
-      "runtimeSha256": "4f88d03a5ee682ba1f8232361886b970cb81b5753118910e3ae043962a8fde3e",
+      "runtimeSha256": "dc6fecf747f0ea18440a3d1e76d1891b1ef290ce03e0c3636ee4baa5bbe35c9b",
       "variant": "drain_arc",
       "review": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
       "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings.",
-      "styleRevision": "Running-style correction reviewed: authored body family and targeting retained; current generated skill signature checked."
+      "styleRevision": "Running-style correction reviewed: authored body family and targeting retained; current generated skill signature checked.",
+      "rasterRevision": "docs/art-source/motions/skill-revisions-2026-09-11/manhattan_cafe/review.json"
     },
     "espoir_city": {
       "originalSkill": {

@@ -1,0 +1,506 @@
+{
+  "format": "uft-baked-frames-v1",
+  "scale": 0.40310077519379844,
+  "anchor": [
+    64,
+    110
+  ],
+  "runtimeSha256": "b8aba003ad507fbfd323b75ec46c000870e9e053bdb922f91f96ac1b9054bd29",
+  "frames": [
+    {
+      "frame": 0,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/production-144/mejiro_dober/alpha.png",
+      "sourceSha256": "670c2627f8a97d98c9cf981dbb78fb880353d0cd22e46f6d370104e56b31eb9d",
+      "crop": [
+        52,
+        20,
+        208,
+        270
+      ],
+      "destination": [
+        32,
+        9,
+        63,
+        101
+      ]
+    },
+    {
+      "frame": 1,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/production-144/mejiro_dober/alpha.png",
+      "sourceSha256": "670c2627f8a97d98c9cf981dbb78fb880353d0cd22e46f6d370104e56b31eb9d",
+      "crop": [
+        305,
+        23,
+        461,
+        270
+      ],
+      "destination": [
+        160,
+        10,
+        63,
+        100
+      ]
+    },
+    {
+      "frame": 2,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/production-144/mejiro_dober/alpha.png",
+      "sourceSha256": "670c2627f8a97d98c9cf981dbb78fb880353d0cd22e46f6d370104e56b31eb9d",
+      "crop": [
+        546,
+        20,
+        705,
+        270
+      ],
+      "destination": [
+        288,
+        9,
+        64,
+        101
+      ]
+    },
+    {
+      "frame": 3,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/production-144/mejiro_dober/alpha.png",
+      "sourceSha256": "670c2627f8a97d98c9cf981dbb78fb880353d0cd22e46f6d370104e56b31eb9d",
+      "crop": [
+        796,
+        21,
+        954,
+        270
+      ],
+      "destination": [
+        416,
+        10,
+        64,
+        100
+      ]
+    },
+    {
+      "frame": 4,
+      "sourceFrame": 4,
+      "source": "docs/art-source/motions/production-144/mejiro_dober/alpha.png",
+      "sourceSha256": "670c2627f8a97d98c9cf981dbb78fb880353d0cd22e46f6d370104e56b31eb9d",
+      "crop": [
+        47,
+        290,
+        241,
+        530
+      ],
+      "destination": [
+        25,
+        141,
+        78,
+        97
+      ]
+    },
+    {
+      "frame": 5,
+      "sourceFrame": 5,
+      "source": "docs/art-source/motions/production-144/mejiro_dober/alpha.png",
+      "sourceSha256": "670c2627f8a97d98c9cf981dbb78fb880353d0cd22e46f6d370104e56b31eb9d",
+      "crop": [
+        300,
+        291,
+        490,
+        530
+      ],
+      "destination": [
+        153,
+        142,
+        77,
+        96
+      ]
+    },
+    {
+      "frame": 6,
+      "sourceFrame": 6,
+      "source": "docs/art-source/motions/production-144/mejiro_dober/alpha.png",
+      "sourceSha256": "670c2627f8a97d98c9cf981dbb78fb880353d0cd22e46f6d370104e56b31eb9d",
+      "crop": [
+        538,
+        290,
+        735,
+        530
+      ],
+      "destination": [
+        280,
+        141,
+        79,
+        97
+      ]
+    },
+    {
+      "frame": 7,
+      "sourceFrame": 7,
+      "source": "docs/art-source/motions/production-144/mejiro_dober/alpha.png",
+      "sourceSha256": "670c2627f8a97d98c9cf981dbb78fb880353d0cd22e46f6d370104e56b31eb9d",
+      "crop": [
+        785,
+        292,
+        985,
+        530
+      ],
+      "destination": [
+        407,
+        142,
+        81,
+        96
+      ]
+    },
+    {
+      "frame": 8,
+      "sourceFrame": 8,
+      "source": "docs/art-source/motions/production-144/mejiro_dober/alpha.png",
+      "sourceSha256": "670c2627f8a97d98c9cf981dbb78fb880353d0cd22e46f6d370104e56b31eb9d",
+      "crop": [
+        49,
+        536,
+        243,
+        784
+      ],
+      "destination": [
+        25,
+        266,
+        78,
+        100
+      ]
+    },
+    {
+      "frame": 9,
+      "sourceFrame": 9,
+      "source": "docs/art-source/motions/production-144/mejiro_dober/alpha.png",
+      "sourceSha256": "670c2627f8a97d98c9cf981dbb78fb880353d0cd22e46f6d370104e56b31eb9d",
+      "crop": [
+        299,
+        540,
+        482,
+        784
+      ],
+      "destination": [
+        155,
+        268,
+        74,
+        98
+      ]
+    },
+    {
+      "frame": 10,
+      "sourceFrame": 10,
+      "source": "docs/art-source/motions/production-144/mejiro_dober/alpha.png",
+      "sourceSha256": "670c2627f8a97d98c9cf981dbb78fb880353d0cd22e46f6d370104e56b31eb9d",
+      "crop": [
+        538,
+        536,
+        740,
+        784
+      ],
+      "destination": [
+        279,
+        266,
+        81,
+        100
+      ]
+    },
+    {
+      "frame": 11,
+      "sourceFrame": 11,
+      "source": "docs/art-source/motions/production-144/mejiro_dober/alpha.png",
+      "sourceSha256": "670c2627f8a97d98c9cf981dbb78fb880353d0cd22e46f6d370104e56b31eb9d",
+      "crop": [
+        795,
+        539,
+        954,
+        784
+      ],
+      "destination": [
+        416,
+        267,
+        64,
+        99
+      ]
+    },
+    {
+      "frame": 12,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/skill-revisions-2026-09-11/mejiro_dober/generated.png",
+      "sourceSha256": "a5344ffbb80aab42fa29001fb9be9f983fb7246f060677c168ce2646ad772aaa",
+      "crop": [
+        186,
+        81,
+        585,
+        484
+      ],
+      "destination": [
+        31,
+        428,
+        65,
+        66
+      ]
+    },
+    {
+      "frame": 13,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/skill-revisions-2026-09-11/mejiro_dober/generated.png",
+      "sourceSha256": "a5344ffbb80aab42fa29001fb9be9f983fb7246f060677c168ce2646ad772aaa",
+      "crop": [
+        872,
+        81,
+        1400,
+        508
+      ],
+      "destination": [
+        149,
+        424,
+        86,
+        70
+      ]
+    },
+    {
+      "frame": 14,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/skill-revisions-2026-09-11/mejiro_dober/generated.png",
+      "sourceSha256": "a5344ffbb80aab42fa29001fb9be9f983fb7246f060677c168ce2646ad772aaa",
+      "crop": [
+        135,
+        541,
+        846,
+        965
+      ],
+      "destination": [
+        262,
+        425,
+        116,
+        69
+      ]
+    },
+    {
+      "frame": 15,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/skill-revisions-2026-09-11/mejiro_dober/generated.png",
+      "sourceSha256": "a5344ffbb80aab42fa29001fb9be9f983fb7246f060677c168ce2646ad772aaa",
+      "crop": [
+        971,
+        539,
+        1346,
+        967
+      ],
+      "destination": [
+        417,
+        424,
+        61,
+        70
+      ]
+    },
+    {
+      "frame": 16,
+      "sourceFrame": 16,
+      "source": "docs/art-source/motions/production-144/mejiro_dober/alpha.png",
+      "sourceSha256": "670c2627f8a97d98c9cf981dbb78fb880353d0cd22e46f6d370104e56b31eb9d",
+      "crop": [
+        57,
+        1007,
+        217,
+        1227
+      ],
+      "destination": [
+        32,
+        533,
+        64,
+        89
+      ]
+    },
+    {
+      "frame": 17,
+      "sourceFrame": 17,
+      "source": "docs/art-source/motions/production-144/mejiro_dober/alpha.png",
+      "sourceSha256": "670c2627f8a97d98c9cf981dbb78fb880353d0cd22e46f6d370104e56b31eb9d",
+      "crop": [
+        308,
+        1031,
+        466,
+        1225
+      ],
+      "destination": [
+        160,
+        544,
+        64,
+        78
+      ]
+    },
+    {
+      "frame": 18,
+      "sourceFrame": 18,
+      "source": "docs/art-source/motions/production-144/mejiro_dober/alpha.png",
+      "sourceSha256": "670c2627f8a97d98c9cf981dbb78fb880353d0cd22e46f6d370104e56b31eb9d",
+      "crop": [
+        554,
+        1051,
+        732,
+        1225
+      ],
+      "destination": [
+        284,
+        552,
+        72,
+        70
+      ]
+    },
+    {
+      "frame": 19,
+      "sourceFrame": 19,
+      "source": "docs/art-source/motions/production-144/mejiro_dober/alpha.png",
+      "sourceSha256": "670c2627f8a97d98c9cf981dbb78fb880353d0cd22e46f6d370104e56b31eb9d",
+      "crop": [
+        772,
+        1113,
+        1019,
+        1223
+      ],
+      "destination": [
+        398,
+        578,
+        100,
+        44
+      ]
+    },
+    {
+      "frame": 20,
+      "sourceFrame": 20,
+      "source": "docs/art-source/motions/production-144/mejiro_dober/alpha.png",
+      "sourceSha256": "670c2627f8a97d98c9cf981dbb78fb880353d0cd22e46f6d370104e56b31eb9d",
+      "crop": [
+        55,
+        1243,
+        223,
+        1498
+      ],
+      "destination": [
+        30,
+        647,
+        68,
+        103
+      ]
+    },
+    {
+      "frame": 21,
+      "sourceFrame": 21,
+      "source": "docs/art-source/motions/production-144/mejiro_dober/alpha.png",
+      "sourceSha256": "670c2627f8a97d98c9cf981dbb78fb880353d0cd22e46f6d370104e56b31eb9d",
+      "crop": [
+        305,
+        1248,
+        458,
+        1497
+      ],
+      "destination": [
+        161,
+        650,
+        62,
+        100
+      ]
+    },
+    {
+      "frame": 22,
+      "sourceFrame": 22,
+      "source": "docs/art-source/motions/production-144/mejiro_dober/alpha.png",
+      "sourceSha256": "670c2627f8a97d98c9cf981dbb78fb880353d0cd22e46f6d370104e56b31eb9d",
+      "crop": [
+        545,
+        1243,
+        705,
+        1501
+      ],
+      "destination": [
+        288,
+        646,
+        64,
+        104
+      ]
+    },
+    {
+      "frame": 23,
+      "sourceFrame": 23,
+      "source": "docs/art-source/motions/production-144/mejiro_dober/alpha.png",
+      "sourceSha256": "670c2627f8a97d98c9cf981dbb78fb880353d0cd22e46f6d370104e56b31eb9d",
+      "crop": [
+        801,
+        1250,
+        961,
+        1499
+      ],
+      "destination": [
+        416,
+        650,
+        64,
+        100
+      ]
+    }
+  ],
+  "skillRevision": {
+    "scale": 0.1631504922644163,
+    "review": "docs/art-source/motions/skill-revisions-2026-09-11/mejiro_dober/review.json",
+    "beforeFrames": [
+      "571de1aad9f70a1a9884c2b67f7107721a76cfa81879d0c64faeb2fe5cba3124",
+      "f6180295627cb3d9d83584975eed92271d775245ba89a2c8e01751b5b1cb5c0d",
+      "3f1a5b557a2b0184ec28de197cee8ede7fee83b9a6f48098e6cd9582f4e269e4",
+      "54f139aae72431734c1037a628bf1d7079daef60ad651270934abcecd8fbac19",
+      "1cb9068168040f0c346d4062f20733d8d9f002d8e52fc29b56e3b1dff5c13f72",
+      "fe06b0e3fd026651552103b33a3e2b92bac9abe70a9e8acc5e81ff5d92e20488",
+      "36a77640e9fa9b0cc89682111007469695a14e6b07254a37b1151a4332ac6ee7",
+      "24507502975415a707887dffae067271075a6ddb3a6845479339a048dd835222",
+      "21cf09aeb3a327908ecee0e99bb0e69e5e20a469522b414a348b33c47a92dacf",
+      "0e60b445185f033d28ed451b8f41e2e31c1255d088ae958f369df24e2334fcc3",
+      "1bca7ce4c000e6b76b43c4d11cbe7bc4aebc22f2e2b0dff7ff789f5d9d0b56c7",
+      "39d25b1a8442c77cb1b0e50109dcb78d4201ff0add520753d724ead03c60d270",
+      "0cceed0e5a059d6ac2af3d38e7d8b245c1878e86d40b47f0bd44621c89563e32",
+      "9337dfecc2bedfa75cd0efd7143c969e34b6387177f46c3316829ff6db7f1daa",
+      "161d06daac9a7fdfd023965b74fe28e58711056b5cc3afae8d8d117320aa7ad6",
+      "5cd4876a35ad64b5b9071a9c2b6b9bcbeb6c1e8944026a063b09f72d57ba087c",
+      "8808fdd5778a947ac77b13e2dbac95f522f3f2bec178edf6413928098607cebe",
+      "caf695cdf68094654ebadd10a4a7031c918c1c9f83ebf88181abc04dfc40cf13",
+      "b2b9ef822aac9b70be4e59cb1464d9067d3c289bad79910ffbf86591e002ca2b",
+      "e63ea9e67180a5ccd07bae81a728d584c26875c1f1d155c2553d2c01e8df01ab",
+      "56c24302ffa00b23b85e897d176dfe0810c65c252e2dbd8eb52c5950c6ab2565",
+      "dd0029efcd1ed863fe1f24519511000192a68b2e7a02a467592beeefb5f440ee",
+      "9a6202a46b039b762a3250e3b01f32199f460f9ef869c2d3b05c8cbd6e8cc7b8",
+      "dce74dd22cceb049e36c68d36c10646258a6726d228f2929595c5e0924b0c9cd"
+    ],
+    "afterFrames": [
+      "571de1aad9f70a1a9884c2b67f7107721a76cfa81879d0c64faeb2fe5cba3124",
+      "f6180295627cb3d9d83584975eed92271d775245ba89a2c8e01751b5b1cb5c0d",
+      "3f1a5b557a2b0184ec28de197cee8ede7fee83b9a6f48098e6cd9582f4e269e4",
+      "54f139aae72431734c1037a628bf1d7079daef60ad651270934abcecd8fbac19",
+      "1cb9068168040f0c346d4062f20733d8d9f002d8e52fc29b56e3b1dff5c13f72",
+      "fe06b0e3fd026651552103b33a3e2b92bac9abe70a9e8acc5e81ff5d92e20488",
+      "36a77640e9fa9b0cc89682111007469695a14e6b07254a37b1151a4332ac6ee7",
+      "24507502975415a707887dffae067271075a6ddb3a6845479339a048dd835222",
+      "21cf09aeb3a327908ecee0e99bb0e69e5e20a469522b414a348b33c47a92dacf",
+      "0e60b445185f033d28ed451b8f41e2e31c1255d088ae958f369df24e2334fcc3",
+      "1bca7ce4c000e6b76b43c4d11cbe7bc4aebc22f2e2b0dff7ff789f5d9d0b56c7",
+      "39d25b1a8442c77cb1b0e50109dcb78d4201ff0add520753d724ead03c60d270",
+      "44a5a64de474b7a074f0441141a5bfdf30be0f424eb22960a4d9001c13d22b0b",
+      "254f2e9fa9aaca1ac425de2d02956d641f50f96021cf8ba769fe1c552e90eee4",
+      "60960ba94a005960c72bf2d513b99caaf90e38fe7d7f8686e4d022ee5b6c377b",
+      "4760701645963f10dbf98d57416d131e0a579847206d124ed556ed8ad7b99cee",
+      "8808fdd5778a947ac77b13e2dbac95f522f3f2bec178edf6413928098607cebe",
+      "caf695cdf68094654ebadd10a4a7031c918c1c9f83ebf88181abc04dfc40cf13",
+      "b2b9ef822aac9b70be4e59cb1464d9067d3c289bad79910ffbf86591e002ca2b",
+      "e63ea9e67180a5ccd07bae81a728d584c26875c1f1d155c2553d2c01e8df01ab",
+      "56c24302ffa00b23b85e897d176dfe0810c65c252e2dbd8eb52c5950c6ab2565",
+      "dd0029efcd1ed863fe1f24519511000192a68b2e7a02a467592beeefb5f440ee",
+      "9a6202a46b039b762a3250e3b01f32199f460f9ef869c2d3b05c8cbd6e8cc7b8",
+      "dce74dd22cceb049e36c68d36c10646258a6726d228f2929595c5e0924b0c9cd"
+    ],
+    "unchangedFrames": 20,
+    "changedFrames": [
+      12,
+      13,
+      14,
+      15
+    ]
+  }
+}

@@ -1,0 +1,506 @@
+{
+  "format": "uft-baked-frames-v1",
+  "scale": 0.45217391304347826,
+  "anchor": [
+    64,
+    110
+  ],
+  "runtimeSha256": "f50b83c817a73d88130838c35cecdd9cacf70f9e69b68dd8cfa8e48b23de7595",
+  "frames": [
+    {
+      "frame": 0,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/production-144/transcend/alpha.png",
+      "sourceSha256": "55a11e09040ab6ca1c51da03b3afe48be5a148cb391a564819f56919184dbe85",
+      "crop": [
+        67,
+        24,
+        192,
+        243
+      ],
+      "destination": [
+        35,
+        11,
+        57,
+        99
+      ]
+    },
+    {
+      "frame": 1,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/production-144/transcend/alpha.png",
+      "sourceSha256": "55a11e09040ab6ca1c51da03b3afe48be5a148cb391a564819f56919184dbe85",
+      "crop": [
+        319,
+        23,
+        441,
+        243
+      ],
+      "destination": [
+        164,
+        11,
+        55,
+        99
+      ]
+    },
+    {
+      "frame": 2,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/production-144/transcend/alpha.png",
+      "sourceSha256": "55a11e09040ab6ca1c51da03b3afe48be5a148cb391a564819f56919184dbe85",
+      "crop": [
+        574,
+        24,
+        696,
+        243
+      ],
+      "destination": [
+        292,
+        11,
+        55,
+        99
+      ]
+    },
+    {
+      "frame": 3,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/production-144/transcend/alpha.png",
+      "sourceSha256": "55a11e09040ab6ca1c51da03b3afe48be5a148cb391a564819f56919184dbe85",
+      "crop": [
+        830,
+        24,
+        952,
+        243
+      ],
+      "destination": [
+        420,
+        11,
+        55,
+        99
+      ]
+    },
+    {
+      "frame": 4,
+      "sourceFrame": 4,
+      "source": "docs/art-source/motions/production-144/transcend/alpha.png",
+      "sourceSha256": "55a11e09040ab6ca1c51da03b3afe48be5a148cb391a564819f56919184dbe85",
+      "crop": [
+        42,
+        273,
+        200,
+        495
+      ],
+      "destination": [
+        28,
+        138,
+        71,
+        100
+      ]
+    },
+    {
+      "frame": 5,
+      "sourceFrame": 5,
+      "source": "docs/art-source/motions/production-144/transcend/alpha.png",
+      "sourceSha256": "55a11e09040ab6ca1c51da03b3afe48be5a148cb391a564819f56919184dbe85",
+      "crop": [
+        300,
+        272,
+        457,
+        496
+      ],
+      "destination": [
+        156,
+        137,
+        71,
+        101
+      ]
+    },
+    {
+      "frame": 6,
+      "sourceFrame": 6,
+      "source": "docs/art-source/motions/production-144/transcend/alpha.png",
+      "sourceSha256": "55a11e09040ab6ca1c51da03b3afe48be5a148cb391a564819f56919184dbe85",
+      "crop": [
+        543,
+        276,
+        722,
+        494
+      ],
+      "destination": [
+        279,
+        139,
+        81,
+        99
+      ]
+    },
+    {
+      "frame": 7,
+      "sourceFrame": 7,
+      "source": "docs/art-source/motions/production-144/transcend/alpha.png",
+      "sourceSha256": "55a11e09040ab6ca1c51da03b3afe48be5a148cb391a564819f56919184dbe85",
+      "crop": [
+        817,
+        274,
+        975,
+        496
+      ],
+      "destination": [
+        412,
+        138,
+        71,
+        100
+      ]
+    },
+    {
+      "frame": 8,
+      "sourceFrame": 8,
+      "source": "docs/art-source/motions/production-144/transcend/alpha.png",
+      "sourceSha256": "55a11e09040ab6ca1c51da03b3afe48be5a148cb391a564819f56919184dbe85",
+      "crop": [
+        43,
+        526,
+        226,
+        750
+      ],
+      "destination": [
+        22,
+        265,
+        83,
+        101
+      ]
+    },
+    {
+      "frame": 9,
+      "sourceFrame": 9,
+      "source": "docs/art-source/motions/production-144/transcend/alpha.png",
+      "sourceSha256": "55a11e09040ab6ca1c51da03b3afe48be5a148cb391a564819f56919184dbe85",
+      "crop": [
+        298,
+        527,
+        445,
+        753
+      ],
+      "destination": [
+        159,
+        264,
+        66,
+        102
+      ]
+    },
+    {
+      "frame": 10,
+      "sourceFrame": 10,
+      "source": "docs/art-source/motions/production-144/transcend/alpha.png",
+      "sourceSha256": "55a11e09040ab6ca1c51da03b3afe48be5a148cb391a564819f56919184dbe85",
+      "crop": [
+        537,
+        532,
+        721,
+        751
+      ],
+      "destination": [
+        278,
+        267,
+        83,
+        99
+      ]
+    },
+    {
+      "frame": 11,
+      "sourceFrame": 11,
+      "source": "docs/art-source/motions/production-144/transcend/alpha.png",
+      "sourceSha256": "55a11e09040ab6ca1c51da03b3afe48be5a148cb391a564819f56919184dbe85",
+      "crop": [
+        815,
+        532,
+        962,
+        751
+      ],
+      "destination": [
+        415,
+        267,
+        66,
+        99
+      ]
+    },
+    {
+      "frame": 12,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/skill-revisions-2026-09-11/transcend/generated.png",
+      "sourceSha256": "dd612d769168e37feeef39c1338f46effa15ce0ac0a943f24a2573280796448d",
+      "crop": [
+        201,
+        42,
+        507,
+        478
+      ],
+      "destination": [
+        36,
+        414,
+        56,
+        80
+      ]
+    },
+    {
+      "frame": 13,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/skill-revisions-2026-09-11/transcend/generated.png",
+      "sourceSha256": "dd612d769168e37feeef39c1338f46effa15ce0ac0a943f24a2573280796448d",
+      "crop": [
+        861,
+        56,
+        1490,
+        463
+      ],
+      "destination": [
+        134,
+        419,
+        116,
+        75
+      ]
+    },
+    {
+      "frame": 14,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/skill-revisions-2026-09-11/transcend/generated.png",
+      "sourceSha256": "dd612d769168e37feeef39c1338f46effa15ce0ac0a943f24a2573280796448d",
+      "crop": [
+        197,
+        549,
+        615,
+        993
+      ],
+      "destination": [
+        281,
+        412,
+        77,
+        82
+      ]
+    },
+    {
+      "frame": 15,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/skill-revisions-2026-09-11/transcend/generated.png",
+      "sourceSha256": "dd612d769168e37feeef39c1338f46effa15ce0ac0a943f24a2573280796448d",
+      "crop": [
+        978,
+        547,
+        1235,
+        982
+      ],
+      "destination": [
+        424,
+        414,
+        47,
+        80
+      ]
+    },
+    {
+      "frame": 16,
+      "sourceFrame": 16,
+      "source": "docs/art-source/motions/production-144/transcend/alpha.png",
+      "sourceSha256": "55a11e09040ab6ca1c51da03b3afe48be5a148cb391a564819f56919184dbe85",
+      "crop": [
+        43,
+        1057,
+        201,
+        1260
+      ],
+      "destination": [
+        28,
+        530,
+        71,
+        92
+      ]
+    },
+    {
+      "frame": 17,
+      "sourceFrame": 17,
+      "source": "docs/art-source/motions/production-144/transcend/alpha.png",
+      "sourceSha256": "55a11e09040ab6ca1c51da03b3afe48be5a148cb391a564819f56919184dbe85",
+      "crop": [
+        292,
+        1091,
+        464,
+        1253
+      ],
+      "destination": [
+        153,
+        549,
+        78,
+        73
+      ]
+    },
+    {
+      "frame": 18,
+      "sourceFrame": 18,
+      "source": "docs/art-source/motions/production-144/transcend/alpha.png",
+      "sourceSha256": "55a11e09040ab6ca1c51da03b3afe48be5a148cb391a564819f56919184dbe85",
+      "crop": [
+        549,
+        1098,
+        707,
+        1254
+      ],
+      "destination": [
+        284,
+        551,
+        71,
+        71
+      ]
+    },
+    {
+      "frame": 19,
+      "sourceFrame": 19,
+      "source": "docs/art-source/motions/production-144/transcend/alpha.png",
+      "sourceSha256": "55a11e09040ab6ca1c51da03b3afe48be5a148cb391a564819f56919184dbe85",
+      "crop": [
+        790,
+        1159,
+        1005,
+        1253
+      ],
+      "destination": [
+        399,
+        579,
+        97,
+        43
+      ]
+    },
+    {
+      "frame": 20,
+      "sourceFrame": 20,
+      "source": "docs/art-source/motions/production-144/transcend/alpha.png",
+      "sourceSha256": "55a11e09040ab6ca1c51da03b3afe48be5a148cb391a564819f56919184dbe85",
+      "crop": [
+        65,
+        1287,
+        192,
+        1517
+      ],
+      "destination": [
+        35,
+        646,
+        57,
+        104
+      ]
+    },
+    {
+      "frame": 21,
+      "sourceFrame": 21,
+      "source": "docs/art-source/motions/production-144/transcend/alpha.png",
+      "sourceSha256": "55a11e09040ab6ca1c51da03b3afe48be5a148cb391a564819f56919184dbe85",
+      "crop": [
+        313,
+        1287,
+        448,
+        1516
+      ],
+      "destination": [
+        161,
+        646,
+        61,
+        104
+      ]
+    },
+    {
+      "frame": 22,
+      "sourceFrame": 22,
+      "source": "docs/art-source/motions/production-144/transcend/alpha.png",
+      "sourceSha256": "55a11e09040ab6ca1c51da03b3afe48be5a148cb391a564819f56919184dbe85",
+      "crop": [
+        564,
+        1290,
+        699,
+        1512
+      ],
+      "destination": [
+        289,
+        650,
+        61,
+        100
+      ]
+    },
+    {
+      "frame": 23,
+      "sourceFrame": 23,
+      "source": "docs/art-source/motions/production-144/transcend/alpha.png",
+      "sourceSha256": "55a11e09040ab6ca1c51da03b3afe48be5a148cb391a564819f56919184dbe85",
+      "crop": [
+        829,
+        1291,
+        952,
+        1517
+      ],
+      "destination": [
+        420,
+        648,
+        56,
+        102
+      ]
+    }
+  ],
+  "skillRevision": {
+    "scale": 0.18441971383147854,
+    "review": "docs/art-source/motions/skill-revisions-2026-09-11/transcend/review.json",
+    "beforeFrames": [
+      "3095b9c824c2e4c1a0ca7a9df199bc37ea6b1514b9ee1e38f81ceb55cf845fb7",
+      "d473eb7e32e90269fdf5eb02985ca553028e589a05440306d592af32319bdaf6",
+      "0466477b3b77f5b6ae07250ffbbc88b51dc2b930d6d39a69aa2c8ae2847edba6",
+      "9c2d386efb36d5353932f28994ef9495493360d2cdee247ddf0b5a4a318c5db7",
+      "df6cefa69878d75b69aef675540f0bae725ad16ae64f980f44c72a4acd53740d",
+      "49c0eb1ef33bc7c49bca44fba9328c8675757f858ee7f04b06c6bf37579080e0",
+      "70f90d718f2214a2321cdea87d782e4c1af1067d6e67302389f69ec1330d983c",
+      "ed84a858e9b6c731a76a0ae8588a997efe5fcee28907690b71cac40a5702c34f",
+      "0a9b8c86f125365d4c36ca174deeb17de2df3d19f26f458fc4b0b81294caf653",
+      "b9d611a2bbc5a704e453f95df9316a0d6c4e7bd4d216178e2fbe1a1a56e553fb",
+      "ca4348df6672184aac46773a89985e99e2cb442b5efc2695bcd0adadf5712dfd",
+      "68e2b814bb2beccc7c70aece5d60eb3087455f02b9ce76619d4acfab47708726",
+      "0dd8dd7b729b79406a8b662b7a6ebf0e2ec87ebea579f47cd7880a49e9fefe24",
+      "9ef464ece1c98c808e1b6a6e5d65ec3b2c044b6cb1e4b5ab3115c62613676185",
+      "e1804b7fdec1b0c4f41fdcee0426e3fa9485da905734a3dabad6663b502501c5",
+      "eabd44329f0ce9e9dc326b9d80e9d898acfe81e738a5e98ea098f22fbb4455eb",
+      "1f47d3e7495b3bdc679996744e559d33722c00ef9c63a2172678ab2c1c3cfe5f",
+      "6f89ace6c0853929c897de7f7c17faab6ae948c00abd3da4244521ca641fd58b",
+      "d76bf30e3a4a6c783ec720968410937278ce43c280ae09310e6fd37a73396151",
+      "4dd4e9bb036e1cfaa59e78a0cee2cb14b4af019f214a9c8887218e4d542b27d6",
+      "fcdaf39b1ff12c973bc8c279972ae2ec6d76082351626be06fdad0671c71c7e6",
+      "b4be690577ff2622a5906ac92d62871dc3e42c4ad6c8d5f51bb51dc44d2b513f",
+      "fa0d5c2469e1160dee87a6a15707573b4d6fde1db64cb78ed1a353b9bbffa9ad",
+      "c6963c38484b3021ddbce620512267286205ece86305c03f1a63174402e613ec"
+    ],
+    "afterFrames": [
+      "3095b9c824c2e4c1a0ca7a9df199bc37ea6b1514b9ee1e38f81ceb55cf845fb7",
+      "d473eb7e32e90269fdf5eb02985ca553028e589a05440306d592af32319bdaf6",
+      "0466477b3b77f5b6ae07250ffbbc88b51dc2b930d6d39a69aa2c8ae2847edba6",
+      "9c2d386efb36d5353932f28994ef9495493360d2cdee247ddf0b5a4a318c5db7",
+      "df6cefa69878d75b69aef675540f0bae725ad16ae64f980f44c72a4acd53740d",
+      "49c0eb1ef33bc7c49bca44fba9328c8675757f858ee7f04b06c6bf37579080e0",
+      "70f90d718f2214a2321cdea87d782e4c1af1067d6e67302389f69ec1330d983c",
+      "ed84a858e9b6c731a76a0ae8588a997efe5fcee28907690b71cac40a5702c34f",
+      "0a9b8c86f125365d4c36ca174deeb17de2df3d19f26f458fc4b0b81294caf653",
+      "b9d611a2bbc5a704e453f95df9316a0d6c4e7bd4d216178e2fbe1a1a56e553fb",
+      "ca4348df6672184aac46773a89985e99e2cb442b5efc2695bcd0adadf5712dfd",
+      "68e2b814bb2beccc7c70aece5d60eb3087455f02b9ce76619d4acfab47708726",
+      "179ce22f22f7341d55ec5095aebff6b3db7e8930a566b18dc1fd5691b6d1d0ba",
+      "09660f12c507a9282347d8d40b1a52a455092d1cfefa63aec8a571ca7848ec57",
+      "608c7fceb24a634e5b27beff1c3a4f3eb0c7d958faf0a9a743e530dcca848d02",
+      "650e19ff6e4ab090d35b3346e2a09460ceacd5015e9f028cc36320932be5fb5b",
+      "1f47d3e7495b3bdc679996744e559d33722c00ef9c63a2172678ab2c1c3cfe5f",
+      "6f89ace6c0853929c897de7f7c17faab6ae948c00abd3da4244521ca641fd58b",
+      "d76bf30e3a4a6c783ec720968410937278ce43c280ae09310e6fd37a73396151",
+      "4dd4e9bb036e1cfaa59e78a0cee2cb14b4af019f214a9c8887218e4d542b27d6",
+      "fcdaf39b1ff12c973bc8c279972ae2ec6d76082351626be06fdad0671c71c7e6",
+      "b4be690577ff2622a5906ac92d62871dc3e42c4ad6c8d5f51bb51dc44d2b513f",
+      "fa0d5c2469e1160dee87a6a15707573b4d6fde1db64cb78ed1a353b9bbffa9ad",
+      "c6963c38484b3021ddbce620512267286205ece86305c03f1a63174402e613ec"
+    ],
+    "unchangedFrames": 20,
+    "changedFrames": [
+      12,
+      13,
+      14,
+      15
+    ]
+  }
+}

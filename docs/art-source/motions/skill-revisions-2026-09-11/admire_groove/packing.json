@@ -1,0 +1,506 @@
+{
+  "format": "uft-baked-frames-v1",
+  "scale": 0.40310077519379844,
+  "anchor": [
+    64,
+    110
+  ],
+  "runtimeSha256": "d840f5e44d3705536ca95c94164d8ea66563cb5785324866bf4b9169eab202ca",
+  "frames": [
+    {
+      "frame": 0,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/production-144/admire_groove/alpha.png",
+      "sourceSha256": "e1e5fa72e24f18d3afb27715ffbcf63bba3435a77bd4605f3d72df658c74fce1",
+      "crop": [
+        46,
+        7,
+        230,
+        265
+      ],
+      "destination": [
+        27,
+        6,
+        74,
+        104
+      ]
+    },
+    {
+      "frame": 1,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/production-144/admire_groove/alpha.png",
+      "sourceSha256": "e1e5fa72e24f18d3afb27715ffbcf63bba3435a77bd4605f3d72df658c74fce1",
+      "crop": [
+        298,
+        8,
+        477,
+        265
+      ],
+      "destination": [
+        156,
+        6,
+        72,
+        104
+      ]
+    },
+    {
+      "frame": 2,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/production-144/admire_groove/alpha.png",
+      "sourceSha256": "e1e5fa72e24f18d3afb27715ffbcf63bba3435a77bd4605f3d72df658c74fce1",
+      "crop": [
+        546,
+        9,
+        729,
+        265
+      ],
+      "destination": [
+        283,
+        7,
+        74,
+        103
+      ]
+    },
+    {
+      "frame": 3,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/production-144/admire_groove/alpha.png",
+      "sourceSha256": "e1e5fa72e24f18d3afb27715ffbcf63bba3435a77bd4605f3d72df658c74fce1",
+      "crop": [
+        794,
+        7,
+        978,
+        265
+      ],
+      "destination": [
+        411,
+        6,
+        74,
+        104
+      ]
+    },
+    {
+      "frame": 4,
+      "sourceFrame": 4,
+      "source": "docs/art-source/motions/production-144/admire_groove/alpha.png",
+      "sourceSha256": "e1e5fa72e24f18d3afb27715ffbcf63bba3435a77bd4605f3d72df658c74fce1",
+      "crop": [
+        34,
+        274,
+        245,
+        530
+      ],
+      "destination": [
+        21,
+        135,
+        85,
+        103
+      ]
+    },
+    {
+      "frame": 5,
+      "sourceFrame": 5,
+      "source": "docs/art-source/motions/production-144/admire_groove/alpha.png",
+      "sourceSha256": "e1e5fa72e24f18d3afb27715ffbcf63bba3435a77bd4605f3d72df658c74fce1",
+      "crop": [
+        295,
+        274,
+        487,
+        530
+      ],
+      "destination": [
+        153,
+        135,
+        77,
+        103
+      ]
+    },
+    {
+      "frame": 6,
+      "sourceFrame": 6,
+      "source": "docs/art-source/motions/production-144/admire_groove/alpha.png",
+      "sourceSha256": "e1e5fa72e24f18d3afb27715ffbcf63bba3435a77bd4605f3d72df658c74fce1",
+      "crop": [
+        539,
+        275,
+        743,
+        530
+      ],
+      "destination": [
+        279,
+        135,
+        82,
+        103
+      ]
+    },
+    {
+      "frame": 7,
+      "sourceFrame": 7,
+      "source": "docs/art-source/motions/production-144/admire_groove/alpha.png",
+      "sourceSha256": "e1e5fa72e24f18d3afb27715ffbcf63bba3435a77bd4605f3d72df658c74fce1",
+      "crop": [
+        794,
+        274,
+        993,
+        530
+      ],
+      "destination": [
+        408,
+        135,
+        80,
+        103
+      ]
+    },
+    {
+      "frame": 8,
+      "sourceFrame": 8,
+      "source": "docs/art-source/motions/production-144/admire_groove/alpha.png",
+      "sourceSha256": "e1e5fa72e24f18d3afb27715ffbcf63bba3435a77bd4605f3d72df658c74fce1",
+      "crop": [
+        31,
+        536,
+        253,
+        793
+      ],
+      "destination": [
+        19,
+        262,
+        89,
+        104
+      ]
+    },
+    {
+      "frame": 9,
+      "sourceFrame": 9,
+      "source": "docs/art-source/motions/production-144/admire_groove/alpha.png",
+      "sourceSha256": "e1e5fa72e24f18d3afb27715ffbcf63bba3435a77bd4605f3d72df658c74fce1",
+      "crop": [
+        284,
+        536,
+        486,
+        793
+      ],
+      "destination": [
+        151,
+        262,
+        81,
+        104
+      ]
+    },
+    {
+      "frame": 10,
+      "sourceFrame": 10,
+      "source": "docs/art-source/motions/production-144/admire_groove/alpha.png",
+      "sourceSha256": "e1e5fa72e24f18d3afb27715ffbcf63bba3435a77bd4605f3d72df658c74fce1",
+      "crop": [
+        533,
+        541,
+        767,
+        793
+      ],
+      "destination": [
+        273,
+        264,
+        94,
+        102
+      ]
+    },
+    {
+      "frame": 11,
+      "sourceFrame": 11,
+      "source": "docs/art-source/motions/production-144/admire_groove/alpha.png",
+      "sourceSha256": "e1e5fa72e24f18d3afb27715ffbcf63bba3435a77bd4605f3d72df658c74fce1",
+      "crop": [
+        802,
+        536,
+        984,
+        793
+      ],
+      "destination": [
+        411,
+        262,
+        73,
+        104
+      ]
+    },
+    {
+      "frame": 12,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/skill-revisions-2026-09-11/admire_groove/generated.png",
+      "sourceSha256": "3c53539abfc2575adc44366b079bc996b0c7e21c2bc12ab2a8469cd899740a0f",
+      "crop": [
+        83,
+        74,
+        659,
+        455
+      ],
+      "destination": [
+        17,
+        432,
+        94,
+        62
+      ]
+    },
+    {
+      "frame": 13,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/skill-revisions-2026-09-11/admire_groove/generated.png",
+      "sourceSha256": "3c53539abfc2575adc44366b079bc996b0c7e21c2bc12ab2a8469cd899740a0f",
+      "crop": [
+        908,
+        13,
+        1410,
+        482
+      ],
+      "destination": [
+        151,
+        417,
+        82,
+        77
+      ]
+    },
+    {
+      "frame": 14,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/skill-revisions-2026-09-11/admire_groove/generated.png",
+      "sourceSha256": "3c53539abfc2575adc44366b079bc996b0c7e21c2bc12ab2a8469cd899740a0f",
+      "crop": [
+        119,
+        529,
+        828,
+        980
+      ],
+      "destination": [
+        262,
+        420,
+        116,
+        74
+      ]
+    },
+    {
+      "frame": 15,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/skill-revisions-2026-09-11/admire_groove/generated.png",
+      "sourceSha256": "3c53539abfc2575adc44366b079bc996b0c7e21c2bc12ab2a8469cd899740a0f",
+      "crop": [
+        938,
+        529,
+        1366,
+        1009
+      ],
+      "destination": [
+        413,
+        415,
+        70,
+        79
+      ]
+    },
+    {
+      "frame": 16,
+      "sourceFrame": 16,
+      "source": "docs/art-source/motions/production-144/admire_groove/alpha.png",
+      "sourceSha256": "e1e5fa72e24f18d3afb27715ffbcf63bba3435a77bd4605f3d72df658c74fce1",
+      "crop": [
+        30,
+        1037,
+        228,
+        1272
+      ],
+      "destination": [
+        24,
+        527,
+        80,
+        95
+      ]
+    },
+    {
+      "frame": 17,
+      "sourceFrame": 17,
+      "source": "docs/art-source/motions/production-144/admire_groove/alpha.png",
+      "sourceSha256": "e1e5fa72e24f18d3afb27715ffbcf63bba3435a77bd4605f3d72df658c74fce1",
+      "crop": [
+        295,
+        1061,
+        479,
+        1269
+      ],
+      "destination": [
+        155,
+        538,
+        74,
+        84
+      ]
+    },
+    {
+      "frame": 18,
+      "sourceFrame": 18,
+      "source": "docs/art-source/motions/production-144/admire_groove/alpha.png",
+      "sourceSha256": "e1e5fa72e24f18d3afb27715ffbcf63bba3435a77bd4605f3d72df658c74fce1",
+      "crop": [
+        533,
+        1077,
+        746,
+        1273
+      ],
+      "destination": [
+        277,
+        543,
+        86,
+        79
+      ]
+    },
+    {
+      "frame": 19,
+      "sourceFrame": 19,
+      "source": "docs/art-source/motions/production-144/admire_groove/alpha.png",
+      "sourceSha256": "e1e5fa72e24f18d3afb27715ffbcf63bba3435a77bd4605f3d72df658c74fce1",
+      "crop": [
+        778,
+        1164,
+        1020,
+        1269
+      ],
+      "destination": [
+        399,
+        580,
+        98,
+        42
+      ]
+    },
+    {
+      "frame": 20,
+      "sourceFrame": 20,
+      "source": "docs/art-source/motions/production-144/admire_groove/alpha.png",
+      "sourceSha256": "e1e5fa72e24f18d3afb27715ffbcf63bba3435a77bd4605f3d72df658c74fce1",
+      "crop": [
+        30,
+        1278,
+        212,
+        1534
+      ],
+      "destination": [
+        27,
+        647,
+        73,
+        103
+      ]
+    },
+    {
+      "frame": 21,
+      "sourceFrame": 21,
+      "source": "docs/art-source/motions/production-144/admire_groove/alpha.png",
+      "sourceSha256": "e1e5fa72e24f18d3afb27715ffbcf63bba3435a77bd4605f3d72df658c74fce1",
+      "crop": [
+        283,
+        1280,
+        463,
+        1535
+      ],
+      "destination": [
+        155,
+        647,
+        73,
+        103
+      ]
+    },
+    {
+      "frame": 22,
+      "sourceFrame": 22,
+      "source": "docs/art-source/motions/production-144/admire_groove/alpha.png",
+      "sourceSha256": "e1e5fa72e24f18d3afb27715ffbcf63bba3435a77bd4605f3d72df658c74fce1",
+      "crop": [
+        534,
+        1282,
+        722,
+        1529
+      ],
+      "destination": [
+        282,
+        650,
+        76,
+        100
+      ]
+    },
+    {
+      "frame": 23,
+      "sourceFrame": 23,
+      "source": "docs/art-source/motions/production-144/admire_groove/alpha.png",
+      "sourceSha256": "e1e5fa72e24f18d3afb27715ffbcf63bba3435a77bd4605f3d72df658c74fce1",
+      "crop": [
+        792,
+        1282,
+        970,
+        1534
+      ],
+      "destination": [
+        412,
+        648,
+        72,
+        102
+      ]
+    }
+  ],
+  "skillRevision": {
+    "scale": 0.16361071932299012,
+    "review": "docs/art-source/motions/skill-revisions-2026-09-11/admire_groove/review.json",
+    "beforeFrames": [
+      "ebcf7f7b43f437be155ff1704d7654f010592131c9ebd63f864ad00a284c8109",
+      "b160782c4162330c3a2cf58d4d12bb6558bc6bfdad3384c6606f4a81128ce39f",
+      "57ef52d7db4d1733c36eada94a3e592d8f82f36eaf37370ba3eb38b75d644f5a",
+      "1db0cc492d064012f0c5bbce314d8a3be7171678034ff5e24c1367bbb4c06074",
+      "fea66d145672f029a245ca421d8d1cfb49d63636e053671746e7d9819e35ee66",
+      "881ce78f23c86051b0d6fb118983390eca728a2efe786b1818bccdc53a941d80",
+      "d72aeb1e7dd989d141bc3da8b88b2e51d0345daf43695a28cfe0cca8690e55ad",
+      "e850687cf082f9f05f4814d4079b0cb8ed9a192e647bb1f9cec38ed97d72a01e",
+      "270cc232f92cc972c0a945ee000791b4b86deb110c7bd871232ae81cd8df40c4",
+      "76075c83ac45d3dd2569eed3442131a92b8b5b86a4b7ba6431de471a23e9f112",
+      "9d17aaf9725aedd904681e9bb80bc7dfd44db1c4b202c54cf9c175469ac33467",
+      "414e186afbe40b83393887f48c045683cddab6d0bc76e38a1797471d8c627ea3",
+      "a288187e7bf6eee4e831a2ab8d6248a1a93bd925485d1006a870bb38202cc435",
+      "95adc09bf5a025050960fd394190a06ecb6b47029e51e4f61844b160b92a4650",
+      "57e532574dec3b796547904166ebe013f349702c85911d50014fabbd35d60c9f",
+      "78ab2be1871f36383c5471f713fee4265bbcc741debbe24c3a7fc82278293688",
+      "ccece4cd60e42a107c80df82230707b8394ae6e574e45735eed774e04612d6bf",
+      "d06fbd4268f83c5d1c9c2cc409f7e003ba46ae4bdfe2412c9bed13b4fd2da551",
+      "aed0a5739ef0a1a6aa66e92fb12bcf5077986467df26e0247edf771b2d67aa21",
+      "535052d2e2149c55592acb6ef4ee4828026a59d5e2e55762da0350287d8e37ab",
+      "5faee0a603646a801d5d20f0c8403078b11d54d618ad5a70d4f6587ea5120286",
+      "5229a6d62e5b805b3d7c126cbff1745c1be5393abcb8c71acf6c30fc68f4dec1",
+      "6a57793d78d4b88069d1c45693e9a5ab7a28c68000844944d54fb228ec29facf",
+      "8314bb6f426fab21fe52a17fad6d18d8d9c222791fc011d9449c7f40e15167f5"
+    ],
+    "afterFrames": [
+      "ebcf7f7b43f437be155ff1704d7654f010592131c9ebd63f864ad00a284c8109",
+      "b160782c4162330c3a2cf58d4d12bb6558bc6bfdad3384c6606f4a81128ce39f",
+      "57ef52d7db4d1733c36eada94a3e592d8f82f36eaf37370ba3eb38b75d644f5a",
+      "1db0cc492d064012f0c5bbce314d8a3be7171678034ff5e24c1367bbb4c06074",
+      "fea66d145672f029a245ca421d8d1cfb49d63636e053671746e7d9819e35ee66",
+      "881ce78f23c86051b0d6fb118983390eca728a2efe786b1818bccdc53a941d80",
+      "d72aeb1e7dd989d141bc3da8b88b2e51d0345daf43695a28cfe0cca8690e55ad",
+      "e850687cf082f9f05f4814d4079b0cb8ed9a192e647bb1f9cec38ed97d72a01e",
+      "270cc232f92cc972c0a945ee000791b4b86deb110c7bd871232ae81cd8df40c4",
+      "76075c83ac45d3dd2569eed3442131a92b8b5b86a4b7ba6431de471a23e9f112",
+      "9d17aaf9725aedd904681e9bb80bc7dfd44db1c4b202c54cf9c175469ac33467",
+      "414e186afbe40b83393887f48c045683cddab6d0bc76e38a1797471d8c627ea3",
+      "3c70da1b65030ad573640debee321c693056e47ba11adce27c7d6db4ecbcab88",
+      "720465ebc7b91a5dd6ab90d3c0a48d06fa0a6d3cbcb1555384a19be9b2696160",
+      "c620c1e77b1e75cd0d2b698bb30252e21d03cfcd5c0268dc9e0310cc5e3fe818",
+      "633ee41366c88033de3e2286486f316b3f3323622b78f4345471bf4e3de9cc3c",
+      "ccece4cd60e42a107c80df82230707b8394ae6e574e45735eed774e04612d6bf",
+      "d06fbd4268f83c5d1c9c2cc409f7e003ba46ae4bdfe2412c9bed13b4fd2da551",
+      "aed0a5739ef0a1a6aa66e92fb12bcf5077986467df26e0247edf771b2d67aa21",
+      "535052d2e2149c55592acb6ef4ee4828026a59d5e2e55762da0350287d8e37ab",
+      "5faee0a603646a801d5d20f0c8403078b11d54d618ad5a70d4f6587ea5120286",
+      "5229a6d62e5b805b3d7c126cbff1745c1be5393abcb8c71acf6c30fc68f4dec1",
+      "6a57793d78d4b88069d1c45693e9a5ab7a28c68000844944d54fb228ec29facf",
+      "8314bb6f426fab21fe52a17fad6d18d8d9c222791fc011d9449c7f40e15167f5"
+    ],
+    "unchangedFrames": 20,
+    "changedFrames": [
+      12,
+      13,
+      14,
+      15
+    ]
+  }
+}

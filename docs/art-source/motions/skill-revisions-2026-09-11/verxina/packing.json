@@ -1,0 +1,506 @@
+{
+  "format": "uft-baked-frames-v1",
+  "scale": 0.416,
+  "anchor": [
+    64,
+    110
+  ],
+  "runtimeSha256": "fc2dbd6919275ce6e1c6bc10974bec10e5c28c2e3b2203d04a1c5742a35cd944",
+  "frames": [
+    {
+      "frame": 0,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/production-144/verxina/alpha.png",
+      "sourceSha256": "b5304f1c20c5132fb6d05768d8f339588c25714d16a29f30393df44a09ab2e63",
+      "crop": [
+        32,
+        9,
+        212,
+        250
+      ],
+      "destination": [
+        26,
+        10,
+        75,
+        100
+      ]
+    },
+    {
+      "frame": 1,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/production-144/verxina/alpha.png",
+      "sourceSha256": "b5304f1c20c5132fb6d05768d8f339588c25714d16a29f30393df44a09ab2e63",
+      "crop": [
+        283,
+        8,
+        466,
+        250
+      ],
+      "destination": [
+        154,
+        9,
+        76,
+        101
+      ]
+    },
+    {
+      "frame": 2,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/production-144/verxina/alpha.png",
+      "sourceSha256": "b5304f1c20c5132fb6d05768d8f339588c25714d16a29f30393df44a09ab2e63",
+      "crop": [
+        533,
+        9,
+        715,
+        250
+      ],
+      "destination": [
+        282,
+        10,
+        76,
+        100
+      ]
+    },
+    {
+      "frame": 3,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/production-144/verxina/alpha.png",
+      "sourceSha256": "b5304f1c20c5132fb6d05768d8f339588c25714d16a29f30393df44a09ab2e63",
+      "crop": [
+        792,
+        9,
+        969,
+        250
+      ],
+      "destination": [
+        411,
+        10,
+        74,
+        100
+      ]
+    },
+    {
+      "frame": 4,
+      "sourceFrame": 4,
+      "source": "docs/art-source/motions/production-144/verxina/alpha.png",
+      "sourceSha256": "b5304f1c20c5132fb6d05768d8f339588c25714d16a29f30393df44a09ab2e63",
+      "crop": [
+        23,
+        259,
+        225,
+        496
+      ],
+      "destination": [
+        22,
+        139,
+        84,
+        99
+      ]
+    },
+    {
+      "frame": 5,
+      "sourceFrame": 5,
+      "source": "docs/art-source/motions/production-144/verxina/alpha.png",
+      "sourceSha256": "b5304f1c20c5132fb6d05768d8f339588c25714d16a29f30393df44a09ab2e63",
+      "crop": [
+        278,
+        262,
+        493,
+        500
+      ],
+      "destination": [
+        147,
+        139,
+        89,
+        99
+      ]
+    },
+    {
+      "frame": 6,
+      "sourceFrame": 6,
+      "source": "docs/art-source/motions/production-144/verxina/alpha.png",
+      "sourceSha256": "b5304f1c20c5132fb6d05768d8f339588c25714d16a29f30393df44a09ab2e63",
+      "crop": [
+        533,
+        267,
+        735,
+        501
+      ],
+      "destination": [
+        278,
+        141,
+        84,
+        97
+      ]
+    },
+    {
+      "frame": 7,
+      "sourceFrame": 7,
+      "source": "docs/art-source/motions/production-144/verxina/alpha.png",
+      "sourceSha256": "b5304f1c20c5132fb6d05768d8f339588c25714d16a29f30393df44a09ab2e63",
+      "crop": [
+        781,
+        263,
+        986,
+        499
+      ],
+      "destination": [
+        405,
+        140,
+        85,
+        98
+      ]
+    },
+    {
+      "frame": 8,
+      "sourceFrame": 8,
+      "source": "docs/art-source/motions/production-144/verxina/alpha.png",
+      "sourceSha256": "b5304f1c20c5132fb6d05768d8f339588c25714d16a29f30393df44a09ab2e63",
+      "crop": [
+        32,
+        512,
+        232,
+        760
+      ],
+      "destination": [
+        22,
+        263,
+        83,
+        103
+      ]
+    },
+    {
+      "frame": 9,
+      "sourceFrame": 9,
+      "source": "docs/art-source/motions/production-144/verxina/alpha.png",
+      "sourceSha256": "b5304f1c20c5132fb6d05768d8f339588c25714d16a29f30393df44a09ab2e63",
+      "crop": [
+        282,
+        515,
+        484,
+        760
+      ],
+      "destination": [
+        150,
+        264,
+        84,
+        102
+      ]
+    },
+    {
+      "frame": 10,
+      "sourceFrame": 10,
+      "source": "docs/art-source/motions/production-144/verxina/alpha.png",
+      "sourceSha256": "b5304f1c20c5132fb6d05768d8f339588c25714d16a29f30393df44a09ab2e63",
+      "crop": [
+        533,
+        515,
+        751,
+        760
+      ],
+      "destination": [
+        274,
+        264,
+        91,
+        102
+      ]
+    },
+    {
+      "frame": 11,
+      "sourceFrame": 11,
+      "source": "docs/art-source/motions/production-144/verxina/alpha.png",
+      "sourceSha256": "b5304f1c20c5132fb6d05768d8f339588c25714d16a29f30393df44a09ab2e63",
+      "crop": [
+        788,
+        512,
+        986,
+        760
+      ],
+      "destination": [
+        407,
+        263,
+        82,
+        103
+      ]
+    },
+    {
+      "frame": 12,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/skill-revisions-2026-09-11/verxina/generated.png",
+      "sourceSha256": "2259af18e5e914e654582275523f40a3fb5d52a216b98b5709f8bbc9f541c052",
+      "crop": [
+        166,
+        18,
+        553,
+        480
+      ],
+      "destination": [
+        34,
+        423,
+        60,
+        71
+      ]
+    },
+    {
+      "frame": 13,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/skill-revisions-2026-09-11/verxina/generated.png",
+      "sourceSha256": "2259af18e5e914e654582275523f40a3fb5d52a216b98b5709f8bbc9f541c052",
+      "crop": [
+        895,
+        16,
+        1355,
+        483
+      ],
+      "destination": [
+        156,
+        422,
+        71,
+        72
+      ]
+    },
+    {
+      "frame": 14,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/skill-revisions-2026-09-11/verxina/generated.png",
+      "sourceSha256": "2259af18e5e914e654582275523f40a3fb5d52a216b98b5709f8bbc9f541c052",
+      "crop": [
+        68,
+        512,
+        821,
+        995
+      ],
+      "destination": [
+        262,
+        420,
+        116,
+        74
+      ]
+    },
+    {
+      "frame": 15,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/skill-revisions-2026-09-11/verxina/generated.png",
+      "sourceSha256": "2259af18e5e914e654582275523f40a3fb5d52a216b98b5709f8bbc9f541c052",
+      "crop": [
+        907,
+        515,
+        1402,
+        998
+      ],
+      "destination": [
+        410,
+        420,
+        76,
+        74
+      ]
+    },
+    {
+      "frame": 16,
+      "sourceFrame": 16,
+      "source": "docs/art-source/motions/production-144/verxina/alpha.png",
+      "sourceSha256": "b5304f1c20c5132fb6d05768d8f339588c25714d16a29f30393df44a09ab2e63",
+      "crop": [
+        27,
+        1035,
+        218,
+        1264
+      ],
+      "destination": [
+        24,
+        527,
+        79,
+        95
+      ]
+    },
+    {
+      "frame": 17,
+      "sourceFrame": 17,
+      "source": "docs/art-source/motions/production-144/verxina/alpha.png",
+      "sourceSha256": "b5304f1c20c5132fb6d05768d8f339588c25714d16a29f30393df44a09ab2e63",
+      "crop": [
+        277,
+        1056,
+        473,
+        1254
+      ],
+      "destination": [
+        151,
+        540,
+        82,
+        82
+      ]
+    },
+    {
+      "frame": 18,
+      "sourceFrame": 18,
+      "source": "docs/art-source/motions/production-144/verxina/alpha.png",
+      "sourceSha256": "b5304f1c20c5132fb6d05768d8f339588c25714d16a29f30393df44a09ab2e63",
+      "crop": [
+        524,
+        1091,
+        725,
+        1253
+      ],
+      "destination": [
+        278,
+        555,
+        84,
+        67
+      ]
+    },
+    {
+      "frame": 19,
+      "sourceFrame": 19,
+      "source": "docs/art-source/motions/production-144/verxina/alpha.png",
+      "sourceSha256": "b5304f1c20c5132fb6d05768d8f339588c25714d16a29f30393df44a09ab2e63",
+      "crop": [
+        774,
+        1120,
+        1001,
+        1249
+      ],
+      "destination": [
+        401,
+        568,
+        94,
+        54
+      ]
+    },
+    {
+      "frame": 20,
+      "sourceFrame": 20,
+      "source": "docs/art-source/motions/production-144/verxina/alpha.png",
+      "sourceSha256": "b5304f1c20c5132fb6d05768d8f339588c25714d16a29f30393df44a09ab2e63",
+      "crop": [
+        34,
+        1276,
+        211,
+        1524
+      ],
+      "destination": [
+        27,
+        647,
+        74,
+        103
+      ]
+    },
+    {
+      "frame": 21,
+      "sourceFrame": 21,
+      "source": "docs/art-source/motions/production-144/verxina/alpha.png",
+      "sourceSha256": "b5304f1c20c5132fb6d05768d8f339588c25714d16a29f30393df44a09ab2e63",
+      "crop": [
+        272,
+        1274,
+        462,
+        1524
+      ],
+      "destination": [
+        152,
+        646,
+        79,
+        104
+      ]
+    },
+    {
+      "frame": 22,
+      "sourceFrame": 22,
+      "source": "docs/art-source/motions/production-144/verxina/alpha.png",
+      "sourceSha256": "b5304f1c20c5132fb6d05768d8f339588c25714d16a29f30393df44a09ab2e63",
+      "crop": [
+        527,
+        1275,
+        715,
+        1524
+      ],
+      "destination": [
+        281,
+        646,
+        78,
+        104
+      ]
+    },
+    {
+      "frame": 23,
+      "sourceFrame": 23,
+      "source": "docs/art-source/motions/production-144/verxina/alpha.png",
+      "sourceSha256": "b5304f1c20c5132fb6d05768d8f339588c25714d16a29f30393df44a09ab2e63",
+      "crop": [
+        788,
+        1276,
+        980,
+        1524
+      ],
+      "destination": [
+        408,
+        647,
+        80,
+        103
+      ]
+    }
+  ],
+  "skillRevision": {
+    "scale": 0.15405046480743692,
+    "review": "docs/art-source/motions/skill-revisions-2026-09-11/verxina/review.json",
+    "beforeFrames": [
+      "eabffdfdb18c707898206524a8fef52d283f22108ffdd11fa76596baa3f43221",
+      "c0f86d3f787d14a6b10f80e2e2e9ca7c5c24f7bfa48d340b41ec5c1277e2940b",
+      "2905409754b4ad0e082ead2928c6235cadc03389ef7cda4d313118f8d134c9a0",
+      "7fda6afd9bbc145a94dc4f63dc31856b61dc77b4f8e4535d0e87e781f8a6cf93",
+      "f810516bab7af70aeaa078c68db7364186d58185fc38b3b0793f7141c813502c",
+      "e499296874ee08b6e6024a98923917a3544057c7d71c4f90ad67066fcdaaf93c",
+      "3bf532deb40f5aa372fa1ad6e9aa671ddd59ac84a8b742ca11d0d4c0486edbb0",
+      "a0b1a32e16c9a2cc1257da1745112ea1d12c052b2f44b816e714aff8d46832ee",
+      "3ee3b832d25760e5a3001c93a3dbe83194c30c2307f2fe983e3cfaf1b692698b",
+      "326e482e38694563fcdb3ccc7e4296aba35b7d1434f150f98be86a2458014631",
+      "29d31509557015f9bd3af75f73ef3c121a1593b1aca9c2ad400b59142edde96b",
+      "793833c956742baeb3d92c1517c05d2532cb608938d5d7063b4bb9a1d5aad3a3",
+      "c2c45ff3a854bba6ec82b02d4d9fd80b47088e974af809f75a5804f73819f8b4",
+      "7dbea9b80d41ce57f146f9c81c4329c9655f53b2f804a3d37385057d35750548",
+      "19181514568b3640cdc9f3240fde0440f29748c9cdd7a8620ab79a7491cebe2a",
+      "7e6b0aeb3e8a0938303032a538e21bbf9ba0289c5cc5a015e1bcacc76dc0091d",
+      "7e4b2e99b7804a54a4041cfc2dc54157ba4bdd43fad6b83f8ed109446d000d9d",
+      "d7d0fd2ea6bde8bcd10bb4c6abf04a1ef8aa8b5026c56d129b511661508661e3",
+      "687f0a0b1538cab4252104005b0a34c41d52d193158fc6f396533c62554b0142",
+      "dec16c474d983b89d66d2682c354189fdb900672dc79c6ced20c6af01b2bbc88",
+      "3b9bebe5dfa004456ccf3f752e24475235157addbbed25ce3dea4a381c00b7e9",
+      "3615d9b78250fda765110bd072d491424f981e3cfeef31a0c5939b83c0b8d228",
+      "e683ca96c91662e07764a9c6f2568011ed2f9f9027358f857cf9b3fdad86cc31",
+      "0e215e74a10e769cd24d7227f0087552e7fbdbe17206de1a50778dfc6c347fcb"
+    ],
+    "afterFrames": [
+      "eabffdfdb18c707898206524a8fef52d283f22108ffdd11fa76596baa3f43221",
+      "c0f86d3f787d14a6b10f80e2e2e9ca7c5c24f7bfa48d340b41ec5c1277e2940b",
+      "2905409754b4ad0e082ead2928c6235cadc03389ef7cda4d313118f8d134c9a0",
+      "7fda6afd9bbc145a94dc4f63dc31856b61dc77b4f8e4535d0e87e781f8a6cf93",
+      "f810516bab7af70aeaa078c68db7364186d58185fc38b3b0793f7141c813502c",
+      "e499296874ee08b6e6024a98923917a3544057c7d71c4f90ad67066fcdaaf93c",
+      "3bf532deb40f5aa372fa1ad6e9aa671ddd59ac84a8b742ca11d0d4c0486edbb0",
+      "a0b1a32e16c9a2cc1257da1745112ea1d12c052b2f44b816e714aff8d46832ee",
+      "3ee3b832d25760e5a3001c93a3dbe83194c30c2307f2fe983e3cfaf1b692698b",
+      "326e482e38694563fcdb3ccc7e4296aba35b7d1434f150f98be86a2458014631",
+      "29d31509557015f9bd3af75f73ef3c121a1593b1aca9c2ad400b59142edde96b",
+      "793833c956742baeb3d92c1517c05d2532cb608938d5d7063b4bb9a1d5aad3a3",
+      "1ff493be5dab52a78a4bd5dfc5211d8f57d7fdad659ec6ad95ca0ad4373afb57",
+      "6bc538e787e2969d8e0b658868ad66caedaa1f04fc4c835a74cec705d8d58ae8",
+      "0aef968ae66373e5a750a9e42918a0f994023d160cc3fe4791a97d623a3a701d",
+      "71ac1083581997a39b10aaee7fd8fcec6bd2e969ee2208744670d5d508cd519c",
+      "7e4b2e99b7804a54a4041cfc2dc54157ba4bdd43fad6b83f8ed109446d000d9d",
+      "d7d0fd2ea6bde8bcd10bb4c6abf04a1ef8aa8b5026c56d129b511661508661e3",
+      "687f0a0b1538cab4252104005b0a34c41d52d193158fc6f396533c62554b0142",
+      "dec16c474d983b89d66d2682c354189fdb900672dc79c6ced20c6af01b2bbc88",
+      "3b9bebe5dfa004456ccf3f752e24475235157addbbed25ce3dea4a381c00b7e9",
+      "3615d9b78250fda765110bd072d491424f981e3cfeef31a0c5939b83c0b8d228",
+      "e683ca96c91662e07764a9c6f2568011ed2f9f9027358f857cf9b3fdad86cc31",
+      "0e215e74a10e769cd24d7227f0087552e7fbdbe17206de1a50778dfc6c347fcb"
+    ],
+    "unchangedFrames": 20,
+    "changedFrames": [
+      12,
+      13,
+      14,
+      15
+    ]
+  }
+}

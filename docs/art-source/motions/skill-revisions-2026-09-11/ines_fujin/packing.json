@@ -1,0 +1,506 @@
+{
+  "format": "uft-baked-frames-v1",
+  "scale": 0.41935483870967744,
+  "anchor": [
+    64,
+    110
+  ],
+  "runtimeSha256": "0a706ddeb4f88561fd583fec479ea4be9764df2b2a1bcea615f18cde178715f0",
+  "frames": [
+    {
+      "frame": 0,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/production-144/ines_fujin/alpha.png",
+      "sourceSha256": "2a3a5df4909ebe653b5aa433e5ed5109d757672a5c043e1c43b294d9ee61e8ee",
+      "crop": [
+        55,
+        21,
+        200,
+        265
+      ],
+      "destination": [
+        33,
+        8,
+        61,
+        102
+      ]
+    },
+    {
+      "frame": 1,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/production-144/ines_fujin/alpha.png",
+      "sourceSha256": "2a3a5df4909ebe653b5aa433e5ed5109d757672a5c043e1c43b294d9ee61e8ee",
+      "crop": [
+        310,
+        21,
+        458,
+        265
+      ],
+      "destination": [
+        161,
+        8,
+        62,
+        102
+      ]
+    },
+    {
+      "frame": 2,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/production-144/ines_fujin/alpha.png",
+      "sourceSha256": "2a3a5df4909ebe653b5aa433e5ed5109d757672a5c043e1c43b294d9ee61e8ee",
+      "crop": [
+        566,
+        21,
+        710,
+        265
+      ],
+      "destination": [
+        290,
+        8,
+        60,
+        102
+      ]
+    },
+    {
+      "frame": 3,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/production-144/ines_fujin/alpha.png",
+      "sourceSha256": "2a3a5df4909ebe653b5aa433e5ed5109d757672a5c043e1c43b294d9ee61e8ee",
+      "crop": [
+        821,
+        22,
+        965,
+        265
+      ],
+      "destination": [
+        418,
+        8,
+        60,
+        102
+      ]
+    },
+    {
+      "frame": 4,
+      "sourceFrame": 4,
+      "source": "docs/art-source/motions/production-144/ines_fujin/alpha.png",
+      "sourceSha256": "2a3a5df4909ebe653b5aa433e5ed5109d757672a5c043e1c43b294d9ee61e8ee",
+      "crop": [
+        20,
+        290,
+        251,
+        512
+      ],
+      "destination": [
+        15,
+        145,
+        97,
+        93
+      ]
+    },
+    {
+      "frame": 5,
+      "sourceFrame": 5,
+      "source": "docs/art-source/motions/production-144/ines_fujin/alpha.png",
+      "sourceSha256": "2a3a5df4909ebe653b5aa433e5ed5109d757672a5c043e1c43b294d9ee61e8ee",
+      "crop": [
+        286,
+        286,
+        510,
+        510
+      ],
+      "destination": [
+        145,
+        144,
+        94,
+        94
+      ]
+    },
+    {
+      "frame": 6,
+      "sourceFrame": 6,
+      "source": "docs/art-source/motions/production-144/ines_fujin/alpha.png",
+      "sourceSha256": "2a3a5df4909ebe653b5aa433e5ed5109d757672a5c043e1c43b294d9ee61e8ee",
+      "crop": [
+        537,
+        288,
+        754,
+        512
+      ],
+      "destination": [
+        274,
+        144,
+        91,
+        94
+      ]
+    },
+    {
+      "frame": 7,
+      "sourceFrame": 7,
+      "source": "docs/art-source/motions/production-144/ines_fujin/alpha.png",
+      "sourceSha256": "2a3a5df4909ebe653b5aa433e5ed5109d757672a5c043e1c43b294d9ee61e8ee",
+      "crop": [
+        797,
+        295,
+        1015,
+        509
+      ],
+      "destination": [
+        402,
+        148,
+        91,
+        90
+      ]
+    },
+    {
+      "frame": 8,
+      "sourceFrame": 8,
+      "source": "docs/art-source/motions/production-144/ines_fujin/alpha.png",
+      "sourceSha256": "2a3a5df4909ebe653b5aa433e5ed5109d757672a5c043e1c43b294d9ee61e8ee",
+      "crop": [
+        44,
+        529,
+        205,
+        761
+      ],
+      "destination": [
+        30,
+        269,
+        68,
+        97
+      ]
+    },
+    {
+      "frame": 9,
+      "sourceFrame": 9,
+      "source": "docs/art-source/motions/production-144/ines_fujin/alpha.png",
+      "sourceSha256": "2a3a5df4909ebe653b5aa433e5ed5109d757672a5c043e1c43b294d9ee61e8ee",
+      "crop": [
+        287,
+        528,
+        462,
+        761
+      ],
+      "destination": [
+        155,
+        268,
+        73,
+        98
+      ]
+    },
+    {
+      "frame": 10,
+      "sourceFrame": 10,
+      "source": "docs/art-source/motions/production-144/ines_fujin/alpha.png",
+      "sourceSha256": "2a3a5df4909ebe653b5aa433e5ed5109d757672a5c043e1c43b294d9ee61e8ee",
+      "crop": [
+        546,
+        527,
+        745,
+        761
+      ],
+      "destination": [
+        278,
+        268,
+        83,
+        98
+      ]
+    },
+    {
+      "frame": 11,
+      "sourceFrame": 11,
+      "source": "docs/art-source/motions/production-144/ines_fujin/alpha.png",
+      "sourceSha256": "2a3a5df4909ebe653b5aa433e5ed5109d757672a5c043e1c43b294d9ee61e8ee",
+      "crop": [
+        809,
+        529,
+        969,
+        761
+      ],
+      "destination": [
+        414,
+        269,
+        67,
+        97
+      ]
+    },
+    {
+      "frame": 12,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/skill-revisions-2026-09-11/ines_fujin/generated.png",
+      "sourceSha256": "af12b884c636c6a2f75c82503ee09393b32296b11ab2bbb5a6a4a292ee3457ee",
+      "crop": [
+        249,
+        9,
+        580,
+        512
+      ],
+      "destination": [
+        30,
+        390,
+        68,
+        104
+      ]
+    },
+    {
+      "frame": 13,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/skill-revisions-2026-09-11/ines_fujin/generated.png",
+      "sourceSha256": "af12b884c636c6a2f75c82503ee09393b32296b11ab2bbb5a6a4a292ee3457ee",
+      "crop": [
+        873,
+        73,
+        1350,
+        475
+      ],
+      "destination": [
+        142,
+        411,
+        99,
+        83
+      ]
+    },
+    {
+      "frame": 14,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/skill-revisions-2026-09-11/ines_fujin/generated.png",
+      "sourceSha256": "af12b884c636c6a2f75c82503ee09393b32296b11ab2bbb5a6a4a292ee3457ee",
+      "crop": [
+        200,
+        512,
+        636,
+        1008
+      ],
+      "destination": [
+        275,
+        391,
+        90,
+        103
+      ]
+    },
+    {
+      "frame": 15,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/skill-revisions-2026-09-11/ines_fujin/generated.png",
+      "sourceSha256": "af12b884c636c6a2f75c82503ee09393b32296b11ab2bbb5a6a4a292ee3457ee",
+      "crop": [
+        903,
+        520,
+        1281,
+        1006
+      ],
+      "destination": [
+        409,
+        394,
+        78,
+        100
+      ]
+    },
+    {
+      "frame": 16,
+      "sourceFrame": 16,
+      "source": "docs/art-source/motions/production-144/ines_fujin/alpha.png",
+      "sourceSha256": "2a3a5df4909ebe653b5aa433e5ed5109d757672a5c043e1c43b294d9ee61e8ee",
+      "crop": [
+        45,
+        1070,
+        225,
+        1272
+      ],
+      "destination": [
+        26,
+        537,
+        75,
+        85
+      ]
+    },
+    {
+      "frame": 17,
+      "sourceFrame": 17,
+      "source": "docs/art-source/motions/production-144/ines_fujin/alpha.png",
+      "sourceSha256": "2a3a5df4909ebe653b5aa433e5ed5109d757672a5c043e1c43b294d9ee61e8ee",
+      "crop": [
+        302,
+        1086,
+        474,
+        1274
+      ],
+      "destination": [
+        156,
+        543,
+        72,
+        79
+      ]
+    },
+    {
+      "frame": 18,
+      "sourceFrame": 18,
+      "source": "docs/art-source/motions/production-144/ines_fujin/alpha.png",
+      "sourceSha256": "2a3a5df4909ebe653b5aa433e5ed5109d757672a5c043e1c43b294d9ee61e8ee",
+      "crop": [
+        532,
+        1110,
+        724,
+        1274
+      ],
+      "destination": [
+        279,
+        553,
+        81,
+        69
+      ]
+    },
+    {
+      "frame": 19,
+      "sourceFrame": 19,
+      "source": "docs/art-source/motions/production-144/ines_fujin/alpha.png",
+      "sourceSha256": "2a3a5df4909ebe653b5aa433e5ed5109d757672a5c043e1c43b294d9ee61e8ee",
+      "crop": [
+        766,
+        1151,
+        1017,
+        1269
+      ],
+      "destination": [
+        395,
+        573,
+        105,
+        49
+      ]
+    },
+    {
+      "frame": 20,
+      "sourceFrame": 20,
+      "source": "docs/art-source/motions/production-144/ines_fujin/alpha.png",
+      "sourceSha256": "2a3a5df4909ebe653b5aa433e5ed5109d757672a5c043e1c43b294d9ee61e8ee",
+      "crop": [
+        54,
+        1287,
+        202,
+        1526
+      ],
+      "destination": [
+        33,
+        650,
+        62,
+        100
+      ]
+    },
+    {
+      "frame": 21,
+      "sourceFrame": 21,
+      "source": "docs/art-source/motions/production-144/ines_fujin/alpha.png",
+      "sourceSha256": "2a3a5df4909ebe653b5aa433e5ed5109d757672a5c043e1c43b294d9ee61e8ee",
+      "crop": [
+        313,
+        1282,
+        463,
+        1526
+      ],
+      "destination": [
+        160,
+        648,
+        63,
+        102
+      ]
+    },
+    {
+      "frame": 22,
+      "sourceFrame": 22,
+      "source": "docs/art-source/motions/production-144/ines_fujin/alpha.png",
+      "sourceSha256": "2a3a5df4909ebe653b5aa433e5ed5109d757672a5c043e1c43b294d9ee61e8ee",
+      "crop": [
+        565,
+        1280,
+        718,
+        1526
+      ],
+      "destination": [
+        288,
+        647,
+        64,
+        103
+      ]
+    },
+    {
+      "frame": 23,
+      "sourceFrame": 23,
+      "source": "docs/art-source/motions/production-144/ines_fujin/alpha.png",
+      "sourceSha256": "2a3a5df4909ebe653b5aa433e5ed5109d757672a5c043e1c43b294d9ee61e8ee",
+      "crop": [
+        815,
+        1285,
+        959,
+        1526
+      ],
+      "destination": [
+        418,
+        649,
+        60,
+        101
+      ]
+    }
+  ],
+  "skillRevision": {
+    "scale": 0.20675944333996024,
+    "review": "docs/art-source/motions/skill-revisions-2026-09-11/ines_fujin/review.json",
+    "beforeFrames": [
+      "edb72fb001e26a22c0b01b1c49390a07b1e5dbffc3f5a18eb90721e9e03811f4",
+      "41c6632a25b67ddbfe3969eae12ff42115a757cd1901ae5faec3265431357fa1",
+      "8d8549b11511052a63bed0dcd238627da0f9c42c6b4c3e3379c53f8fac01ca15",
+      "4c38d8f64fb9d4b499621bbdf2761ff8e0f1e0c32a7100c82269c4e582891d01",
+      "0afb784ca4f99e868a49faca0ffe8e2b3d06bf0d56c53e7034647420aafa2502",
+      "f53966e33d528cf456cec12c6257d68678c9abe9e1dda3d70dfaef430efa3cf4",
+      "83a5af41dcce944a46412112843ba0f1b876015450e07f0d7753345312997765",
+      "330572c2c8fd73b7ffa75577cbb7596334b5246ee5d267fcaddc0c5c4d182475",
+      "d1d4419264c0f9db7ce1a5a4e746ab5788df5c7d2c7f1fcfdd03e2dd257f53b8",
+      "be3af90b4d05ec20729e84a54d15d90ef107d49cd46a835c275dfd6fd5b4ec42",
+      "c00e8c475e0691b5b4a28755f63ff6f8f5b7b0f81029e607237c8546b90ddc7c",
+      "aa657d64a040bacb16aaad2b06870827b7558bc391f117fc81ec7852e6997da9",
+      "ff01071276ebec6d05987356c023c56a3d8067a0c464efd1267b5427cd73f6fd",
+      "d686f6a137aad26fa3ff572bf2e6e28fc9e5b20b402dc0d838882af045854cd2",
+      "734f110aa6d7422cf4b25d031bee19d74370c92e49ca59cf52068180716e7478",
+      "fe5f19544901e89741b38c7e35efa56da1ccf367ec950d3a11a1c10293be5abc",
+      "88b50f73583427e0135da14646c31a5f30f35113362caf4594b4ada75378403a",
+      "4a8e3c42fef81ddc16946f388a4b17dc6683dc356c36733c19a6d30978e888e7",
+      "caa65ea332e7fa831f8e48531220018dc448d15236cff720787b4c5665532593",
+      "cbc440ac8f95fc07c03ae83c05a747c0381fa4d8c83b028bab5383e009015614",
+      "72140129a9484d764c729ac336f5de19346445e3ab4ff198d97dab5b74a5d170",
+      "f6cb2869f2eee25f75652caea243f8bc5e06453fa499e6fa6d52ecb7abe16e58",
+      "85e335ac85490707e6d429e6c8d34543f7563fd39458005eca2bf1f70ba0cedf",
+      "9bb836fbba61a93d390c0f7a889ebde02d550820d75bf87857f533221b63da80"
+    ],
+    "afterFrames": [
+      "edb72fb001e26a22c0b01b1c49390a07b1e5dbffc3f5a18eb90721e9e03811f4",
+      "41c6632a25b67ddbfe3969eae12ff42115a757cd1901ae5faec3265431357fa1",
+      "8d8549b11511052a63bed0dcd238627da0f9c42c6b4c3e3379c53f8fac01ca15",
+      "4c38d8f64fb9d4b499621bbdf2761ff8e0f1e0c32a7100c82269c4e582891d01",
+      "0afb784ca4f99e868a49faca0ffe8e2b3d06bf0d56c53e7034647420aafa2502",
+      "f53966e33d528cf456cec12c6257d68678c9abe9e1dda3d70dfaef430efa3cf4",
+      "83a5af41dcce944a46412112843ba0f1b876015450e07f0d7753345312997765",
+      "330572c2c8fd73b7ffa75577cbb7596334b5246ee5d267fcaddc0c5c4d182475",
+      "d1d4419264c0f9db7ce1a5a4e746ab5788df5c7d2c7f1fcfdd03e2dd257f53b8",
+      "be3af90b4d05ec20729e84a54d15d90ef107d49cd46a835c275dfd6fd5b4ec42",
+      "c00e8c475e0691b5b4a28755f63ff6f8f5b7b0f81029e607237c8546b90ddc7c",
+      "aa657d64a040bacb16aaad2b06870827b7558bc391f117fc81ec7852e6997da9",
+      "896c9381c8352138f9debc715f91277dc14204eea8934c81330b4a11f531559a",
+      "7541a9018ef5010f96f7bacf0ce90ad4cb7b142e21bb5ca98fa52da7bb023c2c",
+      "9bb5d65316a703e49a76ac28eca9fe2cdc23453eb3ab83e94d8961e0c5a4561f",
+      "1eacb57321aa32b9322f74f5015ac7ac9947a9c6678b348f477e69a3f5aaa2b1",
+      "88b50f73583427e0135da14646c31a5f30f35113362caf4594b4ada75378403a",
+      "4a8e3c42fef81ddc16946f388a4b17dc6683dc356c36733c19a6d30978e888e7",
+      "caa65ea332e7fa831f8e48531220018dc448d15236cff720787b4c5665532593",
+      "cbc440ac8f95fc07c03ae83c05a747c0381fa4d8c83b028bab5383e009015614",
+      "72140129a9484d764c729ac336f5de19346445e3ab4ff198d97dab5b74a5d170",
+      "f6cb2869f2eee25f75652caea243f8bc5e06453fa499e6fa6d52ecb7abe16e58",
+      "85e335ac85490707e6d429e6c8d34543f7563fd39458005eca2bf1f70ba0cedf",
+      "9bb836fbba61a93d390c0f7a889ebde02d550820d75bf87857f533221b63da80"
+    ],
+    "unchangedFrames": 20,
+    "changedFrames": [
+      12,
+      13,
+      14,
+      15
+    ]
+  }
+}

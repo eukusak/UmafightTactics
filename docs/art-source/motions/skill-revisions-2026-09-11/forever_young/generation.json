@@ -1,0 +1,9 @@
+{
+  "mode": "built-in image_gen",
+  "prompt": "Edit the reference character into four chibi skill animation poses on a transparent background. A 2 by 2 sprite sheet, only four full-body characters, no labels. Preserve forever_young's exact hairstyle, horse ears, face, costume, accessories and tail from the reference. Keep her hat and round sunglasses in every pose. Four poses in reading order: cup a small ember; bend and sweep a hand down to plant a compact flame seal; keep palm low maintaining three small pulses above the seal; rise and return hand to chest. Four clearly different body poses, same body proportions and costume, crisp cel shading, no ground shadow. Real PNG cutouts with an alpha channel. Absolutely no checkerboard or background design. Wide transparent gutters between all poses; compact effects stay within each cell.",
+  "references": [
+    "public/assets/motions/forever_young.png"
+  ],
+  "referenceCommit": "3c950f3ce3476b152f2ad3d99fd296327a3c82bf",
+  "skillSignature": "536b43240fbca5507a478cf2b05672d68203c41815206798ba515427391464a4"
+}

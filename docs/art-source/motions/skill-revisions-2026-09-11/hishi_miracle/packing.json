@@ -1,0 +1,506 @@
+{
+  "format": "uft-baked-frames-v1",
+  "scale": 0.4369747899159664,
+  "anchor": [
+    64,
+    110
+  ],
+  "runtimeSha256": "8781d99bf23a82a842a48d5bab367084290d8b16bbb6ba4603b335b3c933dff7",
+  "frames": [
+    {
+      "frame": 0,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/production-144/hishi_miracle/run-alpha.png",
+      "sourceSha256": "0002a3e303ab284e5aad6aae957e4a50ca99f8d388e2a80cd8d61633d5f6158f",
+      "crop": [
+        64,
+        24,
+        208,
+        258
+      ],
+      "destination": [
+        32,
+        8,
+        63,
+        102
+      ]
+    },
+    {
+      "frame": 1,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/production-144/hishi_miracle/run-alpha.png",
+      "sourceSha256": "0002a3e303ab284e5aad6aae957e4a50ca99f8d388e2a80cd8d61633d5f6158f",
+      "crop": [
+        318,
+        31,
+        458,
+        259
+      ],
+      "destination": [
+        161,
+        10,
+        61,
+        100
+      ]
+    },
+    {
+      "frame": 2,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/production-144/hishi_miracle/run-alpha.png",
+      "sourceSha256": "0002a3e303ab284e5aad6aae957e4a50ca99f8d388e2a80cd8d61633d5f6158f",
+      "crop": [
+        573,
+        28,
+        714,
+        259
+      ],
+      "destination": [
+        289,
+        9,
+        62,
+        101
+      ]
+    },
+    {
+      "frame": 3,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/production-144/hishi_miracle/run-alpha.png",
+      "sourceSha256": "0002a3e303ab284e5aad6aae957e4a50ca99f8d388e2a80cd8d61633d5f6158f",
+      "crop": [
+        824,
+        25,
+        966,
+        260
+      ],
+      "destination": [
+        417,
+        7,
+        62,
+        103
+      ]
+    },
+    {
+      "frame": 4,
+      "sourceFrame": 4,
+      "source": "docs/art-source/motions/production-144/hishi_miracle/run-alpha.png",
+      "sourceSha256": "0002a3e303ab284e5aad6aae957e4a50ca99f8d388e2a80cd8d61633d5f6158f",
+      "crop": [
+        52,
+        286,
+        216,
+        517
+      ],
+      "destination": [
+        28,
+        137,
+        72,
+        101
+      ]
+    },
+    {
+      "frame": 5,
+      "sourceFrame": 5,
+      "source": "docs/art-source/motions/production-144/hishi_miracle/run-alpha.png",
+      "sourceSha256": "0002a3e303ab284e5aad6aae957e4a50ca99f8d388e2a80cd8d61633d5f6158f",
+      "crop": [
+        301,
+        280,
+        459,
+        517
+      ],
+      "destination": [
+        157,
+        134,
+        69,
+        104
+      ]
+    },
+    {
+      "frame": 6,
+      "sourceFrame": 6,
+      "source": "docs/art-source/motions/production-144/hishi_miracle/run-alpha.png",
+      "sourceSha256": "0002a3e303ab284e5aad6aae957e4a50ca99f8d388e2a80cd8d61633d5f6158f",
+      "crop": [
+        554,
+        285,
+        715,
+        514
+      ],
+      "destination": [
+        285,
+        138,
+        70,
+        100
+      ]
+    },
+    {
+      "frame": 7,
+      "sourceFrame": 7,
+      "source": "docs/art-source/motions/production-144/hishi_miracle/run-alpha.png",
+      "sourceSha256": "0002a3e303ab284e5aad6aae957e4a50ca99f8d388e2a80cd8d61633d5f6158f",
+      "crop": [
+        809,
+        285,
+        964,
+        517
+      ],
+      "destination": [
+        414,
+        137,
+        68,
+        101
+      ]
+    },
+    {
+      "frame": 8,
+      "sourceFrame": 8,
+      "source": "docs/art-source/motions/production-144/hishi_miracle/run-alpha.png",
+      "sourceSha256": "0002a3e303ab284e5aad6aae957e4a50ca99f8d388e2a80cd8d61633d5f6158f",
+      "crop": [
+        55,
+        529,
+        224,
+        763
+      ],
+      "destination": [
+        27,
+        264,
+        74,
+        102
+      ]
+    },
+    {
+      "frame": 9,
+      "sourceFrame": 9,
+      "source": "docs/art-source/motions/production-144/hishi_miracle/run-alpha.png",
+      "sourceSha256": "0002a3e303ab284e5aad6aae957e4a50ca99f8d388e2a80cd8d61633d5f6158f",
+      "crop": [
+        300,
+        531,
+        462,
+        760
+      ],
+      "destination": [
+        156,
+        266,
+        71,
+        100
+      ]
+    },
+    {
+      "frame": 10,
+      "sourceFrame": 10,
+      "source": "docs/art-source/motions/production-144/hishi_miracle/run-alpha.png",
+      "sourceSha256": "0002a3e303ab284e5aad6aae957e4a50ca99f8d388e2a80cd8d61633d5f6158f",
+      "crop": [
+        563,
+        533,
+        722,
+        760
+      ],
+      "destination": [
+        285,
+        267,
+        69,
+        99
+      ]
+    },
+    {
+      "frame": 11,
+      "sourceFrame": 11,
+      "source": "docs/art-source/motions/production-144/hishi_miracle/run-alpha.png",
+      "sourceSha256": "0002a3e303ab284e5aad6aae957e4a50ca99f8d388e2a80cd8d61633d5f6158f",
+      "crop": [
+        812,
+        531,
+        966,
+        764
+      ],
+      "destination": [
+        414,
+        264,
+        67,
+        102
+      ]
+    },
+    {
+      "frame": 12,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/skill-revisions-2026-09-11/hishi_miracle/generated.png",
+      "sourceSha256": "41873b8f555e5450faa80bd4a547bab00c6767a8d0282586b34b2ab5bfe8dcb4",
+      "crop": [
+        270,
+        40,
+        628,
+        479
+      ],
+      "destination": [
+        25,
+        399,
+        77,
+        95
+      ]
+    },
+    {
+      "frame": 13,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/skill-revisions-2026-09-11/hishi_miracle/generated.png",
+      "sourceSha256": "41873b8f555e5450faa80bd4a547bab00c6767a8d0282586b34b2ab5bfe8dcb4",
+      "crop": [
+        922,
+        28,
+        1317,
+        482
+      ],
+      "destination": [
+        149,
+        396,
+        85,
+        98
+      ]
+    },
+    {
+      "frame": 14,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/skill-revisions-2026-09-11/hishi_miracle/generated.png",
+      "sourceSha256": "41873b8f555e5450faa80bd4a547bab00c6767a8d0282586b34b2ab5bfe8dcb4",
+      "crop": [
+        217,
+        522,
+        754,
+        982
+      ],
+      "destination": [
+        262,
+        395,
+        116,
+        99
+      ]
+    },
+    {
+      "frame": 15,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/skill-revisions-2026-09-11/hishi_miracle/generated.png",
+      "sourceSha256": "41873b8f555e5450faa80bd4a547bab00c6767a8d0282586b34b2ab5bfe8dcb4",
+      "crop": [
+        970,
+        540,
+        1329,
+        982
+      ],
+      "destination": [
+        409,
+        399,
+        78,
+        95
+      ]
+    },
+    {
+      "frame": 16,
+      "sourceFrame": 16,
+      "source": "docs/art-source/motions/production-144/hishi_miracle/run-alpha.png",
+      "sourceSha256": "0002a3e303ab284e5aad6aae957e4a50ca99f8d388e2a80cd8d61633d5f6158f",
+      "crop": [
+        43,
+        1053,
+        220,
+        1268
+      ],
+      "destination": [
+        25,
+        528,
+        77,
+        94
+      ]
+    },
+    {
+      "frame": 17,
+      "sourceFrame": 17,
+      "source": "docs/art-source/motions/production-144/hishi_miracle/run-alpha.png",
+      "sourceSha256": "0002a3e303ab284e5aad6aae957e4a50ca99f8d388e2a80cd8d61633d5f6158f",
+      "crop": [
+        293,
+        1079,
+        469,
+        1263
+      ],
+      "destination": [
+        153,
+        542,
+        77,
+        80
+      ]
+    },
+    {
+      "frame": 18,
+      "sourceFrame": 18,
+      "source": "docs/art-source/motions/production-144/hishi_miracle/run-alpha.png",
+      "sourceSha256": "0002a3e303ab284e5aad6aae957e4a50ca99f8d388e2a80cd8d61633d5f6158f",
+      "crop": [
+        537,
+        1080,
+        727,
+        1261
+      ],
+      "destination": [
+        278,
+        543,
+        83,
+        79
+      ]
+    },
+    {
+      "frame": 19,
+      "sourceFrame": 19,
+      "source": "docs/art-source/motions/production-144/hishi_miracle/run-alpha.png",
+      "sourceSha256": "0002a3e303ab284e5aad6aae957e4a50ca99f8d388e2a80cd8d61633d5f6158f",
+      "crop": [
+        772,
+        1156,
+        999,
+        1264
+      ],
+      "destination": [
+        398,
+        575,
+        99,
+        47
+      ]
+    },
+    {
+      "frame": 20,
+      "sourceFrame": 20,
+      "source": "docs/art-source/motions/production-144/hishi_miracle/run-alpha.png",
+      "sourceSha256": "0002a3e303ab284e5aad6aae957e4a50ca99f8d388e2a80cd8d61633d5f6158f",
+      "crop": [
+        53,
+        1288,
+        207,
+        1522
+      ],
+      "destination": [
+        30,
+        648,
+        67,
+        102
+      ]
+    },
+    {
+      "frame": 21,
+      "sourceFrame": 21,
+      "source": "docs/art-source/motions/production-144/hishi_miracle/run-alpha.png",
+      "sourceSha256": "0002a3e303ab284e5aad6aae957e4a50ca99f8d388e2a80cd8d61633d5f6158f",
+      "crop": [
+        314,
+        1286,
+        468,
+        1522
+      ],
+      "destination": [
+        158,
+        647,
+        67,
+        103
+      ]
+    },
+    {
+      "frame": 22,
+      "sourceFrame": 22,
+      "source": "docs/art-source/motions/production-144/hishi_miracle/run-alpha.png",
+      "sourceSha256": "0002a3e303ab284e5aad6aae957e4a50ca99f8d388e2a80cd8d61633d5f6158f",
+      "crop": [
+        561,
+        1284,
+        712,
+        1522
+      ],
+      "destination": [
+        287,
+        646,
+        66,
+        104
+      ]
+    },
+    {
+      "frame": 23,
+      "sourceFrame": 23,
+      "source": "docs/art-source/motions/production-144/hishi_miracle/run-alpha.png",
+      "sourceSha256": "0002a3e303ab284e5aad6aae957e4a50ca99f8d388e2a80cd8d61633d5f6158f",
+      "crop": [
+        821,
+        1289,
+        973,
+        1522
+      ],
+      "destination": [
+        415,
+        648,
+        66,
+        102
+      ]
+    }
+  ],
+  "skillRevision": {
+    "scale": 0.21601489757914338,
+    "review": "docs/art-source/motions/skill-revisions-2026-09-11/hishi_miracle/review.json",
+    "beforeFrames": [
+      "31eb574534fca22310974941b8423d35760893a092bd887ec6b2eb8358ad716b",
+      "fef38520bf9fe10c6bd0afcc0139a51d9a62d68ff3d91a2b5e0ab64d0978cafc",
+      "9ee9933c6ca29bd596822c5107d599495246071dd7a897573595c01c7c2d530e",
+      "ade60a410d03abdb55df98997ee92b9678ba95406e5dcb1c7ff0b72b3525359e",
+      "afb45b3068d1dabbfe5e58a8eed71f430c736f8932a1ca1d7cb3d6920870d01a",
+      "5fd979f509eebca9793693e50fc7040148a8cff5dd082472038e51488f8412c5",
+      "39914c34eb0e90c18c330939e03c24fb4482829bcb0e73bf425b589f5521701a",
+      "0c46d577d281ef35cbc5ad49ae4a95ef485dadf5e338b62cb7051a8246e9bc1c",
+      "96bf76e7da5aec952c965a8280b1f0a18574070cf7c1bda87c79d94493351677",
+      "eb40fffa777ba53dea2823e9a7a8fd30c92af6c8fdc372680dc994db282d6413",
+      "20c0fc0bc65bbc6a155aa993c50138eefb42e68d6c77cbffba69a04ad1ba73ee",
+      "b0b0d3db8ff41bab0f7be5f2105d518013e22f199f26c3c79a142eae08dbc483",
+      "3afbdf4571e0af9dcfab8a2ae3e54bdabeefa521568b3b568ebb05c773acce2b",
+      "4351b38aec12d57404ae2b1427af9b00f03bcb98eb525f62f84bcb3b412d39ae",
+      "b26128d2fd60f8f807aee93200fc385cf0bd8843a222c483c734c4b5fab33bad",
+      "1601d3564553f6c30feb4b06007e2ae2b315bbdb9e1d916365c1938f387170c7",
+      "708c31a33901ddccff8180c5d191e79b64ccd45ce607593d212df510b8ae832f",
+      "e739ee55f333044d5168a7ee76f53d209f5188729a42be6d5e0fbc1bcfd837c7",
+      "c23254944f3c844f300107e82addaf7f2bddc156d475edf62ee4c4c190698751",
+      "678efbddd36b4275446179d4d0c0a6ce4ee8148b55c0bb1944453f3de2d8c83d",
+      "32552119a11b62eb205be20e1a6be3a4a300213379885f64cda50df175f5d3db",
+      "f72109f8309b0e6aec5b5925c26e229f3e3a25ca36af6099a71e61987d3e7c37",
+      "f2058734ddbdf6ea32070c2b4349225cbb4a218a35b4991c81a26a24452e9479",
+      "629a97ab1b6b390ad826681da9183096cbdd0d69327abe2706174978d9b7714e"
+    ],
+    "afterFrames": [
+      "31eb574534fca22310974941b8423d35760893a092bd887ec6b2eb8358ad716b",
+      "fef38520bf9fe10c6bd0afcc0139a51d9a62d68ff3d91a2b5e0ab64d0978cafc",
+      "9ee9933c6ca29bd596822c5107d599495246071dd7a897573595c01c7c2d530e",
+      "ade60a410d03abdb55df98997ee92b9678ba95406e5dcb1c7ff0b72b3525359e",
+      "afb45b3068d1dabbfe5e58a8eed71f430c736f8932a1ca1d7cb3d6920870d01a",
+      "5fd979f509eebca9793693e50fc7040148a8cff5dd082472038e51488f8412c5",
+      "39914c34eb0e90c18c330939e03c24fb4482829bcb0e73bf425b589f5521701a",
+      "0c46d577d281ef35cbc5ad49ae4a95ef485dadf5e338b62cb7051a8246e9bc1c",
+      "96bf76e7da5aec952c965a8280b1f0a18574070cf7c1bda87c79d94493351677",
+      "eb40fffa777ba53dea2823e9a7a8fd30c92af6c8fdc372680dc994db282d6413",
+      "20c0fc0bc65bbc6a155aa993c50138eefb42e68d6c77cbffba69a04ad1ba73ee",
+      "b0b0d3db8ff41bab0f7be5f2105d518013e22f199f26c3c79a142eae08dbc483",
+      "61a97903c1cb8ba5560b5e3933e30717864d4a5acc988e6dc11db8765cd82afa",
+      "7027f537008fff13547b4759109fbf7517e6327ac4c63e6ec674db80ff0fbe60",
+      "e4475b8c1910eb99bb45f723b20949ce0c3bf5a0d8a5e1806d0618eb5b97d12c",
+      "aab2898571f80760afc821df892798fa1dfc44293ff5d99eeb2f9fc70e896477",
+      "708c31a33901ddccff8180c5d191e79b64ccd45ce607593d212df510b8ae832f",
+      "e739ee55f333044d5168a7ee76f53d209f5188729a42be6d5e0fbc1bcfd837c7",
+      "c23254944f3c844f300107e82addaf7f2bddc156d475edf62ee4c4c190698751",
+      "678efbddd36b4275446179d4d0c0a6ce4ee8148b55c0bb1944453f3de2d8c83d",
+      "32552119a11b62eb205be20e1a6be3a4a300213379885f64cda50df175f5d3db",
+      "f72109f8309b0e6aec5b5925c26e229f3e3a25ca36af6099a71e61987d3e7c37",
+      "f2058734ddbdf6ea32070c2b4349225cbb4a218a35b4991c81a26a24452e9479",
+      "629a97ab1b6b390ad826681da9183096cbdd0d69327abe2706174978d9b7714e"
+    ],
+    "unchangedFrames": 20,
+    "changedFrames": [
+      12,
+      13,
+      14,
+      15
+    ]
+  }
+}

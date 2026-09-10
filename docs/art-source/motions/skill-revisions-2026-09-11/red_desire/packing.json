@@ -1,0 +1,506 @@
+{
+  "format": "uft-baked-frames-v1",
+  "scale": 0.4094488188976378,
+  "anchor": [
+    64,
+    110
+  ],
+  "runtimeSha256": "89d16b0f71e9775b783557416a4c004d7af71e42f4b489a47cfe4126107a42d1",
+  "frames": [
+    {
+      "frame": 0,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/production-144/red_desire/alpha.png",
+      "sourceSha256": "25d3b0bbb3fc51c96bf41c6bd575d07310a7c781cb17346f79f7959041b0fac3",
+      "crop": [
+        48,
+        12,
+        206,
+        246
+      ],
+      "destination": [
+        31,
+        14,
+        65,
+        96
+      ]
+    },
+    {
+      "frame": 1,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/production-144/red_desire/alpha.png",
+      "sourceSha256": "25d3b0bbb3fc51c96bf41c6bd575d07310a7c781cb17346f79f7959041b0fac3",
+      "crop": [
+        305,
+        13,
+        462,
+        246
+      ],
+      "destination": [
+        160,
+        15,
+        64,
+        95
+      ]
+    },
+    {
+      "frame": 2,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/production-144/red_desire/alpha.png",
+      "sourceSha256": "25d3b0bbb3fc51c96bf41c6bd575d07310a7c781cb17346f79f7959041b0fac3",
+      "crop": [
+        567,
+        14,
+        716,
+        246
+      ],
+      "destination": [
+        289,
+        15,
+        61,
+        95
+      ]
+    },
+    {
+      "frame": 3,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/production-144/red_desire/alpha.png",
+      "sourceSha256": "25d3b0bbb3fc51c96bf41c6bd575d07310a7c781cb17346f79f7959041b0fac3",
+      "crop": [
+        818,
+        12,
+        975,
+        246
+      ],
+      "destination": [
+        416,
+        14,
+        64,
+        96
+      ]
+    },
+    {
+      "frame": 4,
+      "sourceFrame": 4,
+      "source": "docs/art-source/motions/production-144/red_desire/alpha.png",
+      "sourceSha256": "25d3b0bbb3fc51c96bf41c6bd575d07310a7c781cb17346f79f7959041b0fac3",
+      "crop": [
+        37,
+        263,
+        229,
+        497
+      ],
+      "destination": [
+        24,
+        142,
+        79,
+        96
+      ]
+    },
+    {
+      "frame": 5,
+      "sourceFrame": 5,
+      "source": "docs/art-source/motions/production-144/red_desire/alpha.png",
+      "sourceSha256": "25d3b0bbb3fc51c96bf41c6bd575d07310a7c781cb17346f79f7959041b0fac3",
+      "crop": [
+        287,
+        266,
+        479,
+        500
+      ],
+      "destination": [
+        152,
+        142,
+        79,
+        96
+      ]
+    },
+    {
+      "frame": 6,
+      "sourceFrame": 6,
+      "source": "docs/art-source/motions/production-144/red_desire/alpha.png",
+      "sourceSha256": "25d3b0bbb3fc51c96bf41c6bd575d07310a7c781cb17346f79f7959041b0fac3",
+      "crop": [
+        541,
+        263,
+        743,
+        504
+      ],
+      "destination": [
+        278,
+        139,
+        83,
+        99
+      ]
+    },
+    {
+      "frame": 7,
+      "sourceFrame": 7,
+      "source": "docs/art-source/motions/production-144/red_desire/alpha.png",
+      "sourceSha256": "25d3b0bbb3fc51c96bf41c6bd575d07310a7c781cb17346f79f7959041b0fac3",
+      "crop": [
+        795,
+        266,
+        990,
+        504
+      ],
+      "destination": [
+        408,
+        141,
+        80,
+        97
+      ]
+    },
+    {
+      "frame": 8,
+      "sourceFrame": 8,
+      "source": "docs/art-source/motions/production-144/red_desire/alpha.png",
+      "sourceSha256": "25d3b0bbb3fc51c96bf41c6bd575d07310a7c781cb17346f79f7959041b0fac3",
+      "crop": [
+        32,
+        513,
+        202,
+        761
+      ],
+      "destination": [
+        29,
+        264,
+        70,
+        102
+      ]
+    },
+    {
+      "frame": 9,
+      "sourceFrame": 9,
+      "source": "docs/art-source/motions/production-144/red_desire/alpha.png",
+      "sourceSha256": "25d3b0bbb3fc51c96bf41c6bd575d07310a7c781cb17346f79f7959041b0fac3",
+      "crop": [
+        290,
+        516,
+        465,
+        758
+      ],
+      "destination": [
+        156,
+        267,
+        72,
+        99
+      ]
+    },
+    {
+      "frame": 10,
+      "sourceFrame": 10,
+      "source": "docs/art-source/motions/production-144/red_desire/alpha.png",
+      "sourceSha256": "25d3b0bbb3fc51c96bf41c6bd575d07310a7c781cb17346f79f7959041b0fac3",
+      "crop": [
+        536,
+        518,
+        736,
+        761
+      ],
+      "destination": [
+        279,
+        267,
+        82,
+        99
+      ]
+    },
+    {
+      "frame": 11,
+      "sourceFrame": 11,
+      "source": "docs/art-source/motions/production-144/red_desire/alpha.png",
+      "sourceSha256": "25d3b0bbb3fc51c96bf41c6bd575d07310a7c781cb17346f79f7959041b0fac3",
+      "crop": [
+        799,
+        517,
+        971,
+        761
+      ],
+      "destination": [
+        413,
+        266,
+        70,
+        100
+      ]
+    },
+    {
+      "frame": 12,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/skill-revisions-2026-09-11/red_desire/generated.png",
+      "sourceSha256": "13aac2bfb6cd0ad856d1f95e2239d1212085e7ddae6340743bc18754ff53a177",
+      "crop": [
+        160,
+        17,
+        540,
+        490
+      ],
+      "destination": [
+        27,
+        403,
+        73,
+        91
+      ]
+    },
+    {
+      "frame": 13,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/skill-revisions-2026-09-11/red_desire/generated.png",
+      "sourceSha256": "13aac2bfb6cd0ad856d1f95e2239d1212085e7ddae6340743bc18754ff53a177",
+      "crop": [
+        814,
+        19,
+        1420,
+        494
+      ],
+      "destination": [
+        134,
+        403,
+        116,
+        91
+      ]
+    },
+    {
+      "frame": 14,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/skill-revisions-2026-09-11/red_desire/generated.png",
+      "sourceSha256": "13aac2bfb6cd0ad856d1f95e2239d1212085e7ddae6340743bc18754ff53a177",
+      "crop": [
+        144,
+        512,
+        533,
+        995
+      ],
+      "destination": [
+        283,
+        402,
+        74,
+        92
+      ]
+    },
+    {
+      "frame": 15,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/skill-revisions-2026-09-11/red_desire/generated.png",
+      "sourceSha256": "13aac2bfb6cd0ad856d1f95e2239d1212085e7ddae6340743bc18754ff53a177",
+      "crop": [
+        882,
+        523,
+        1372,
+        1005
+      ],
+      "destination": [
+        401,
+        402,
+        94,
+        92
+      ]
+    },
+    {
+      "frame": 16,
+      "sourceFrame": 16,
+      "source": "docs/art-source/motions/production-144/red_desire/alpha.png",
+      "sourceSha256": "25d3b0bbb3fc51c96bf41c6bd575d07310a7c781cb17346f79f7959041b0fac3",
+      "crop": [
+        34,
+        1037,
+        212,
+        1254
+      ],
+      "destination": [
+        27,
+        533,
+        73,
+        89
+      ]
+    },
+    {
+      "frame": 17,
+      "sourceFrame": 17,
+      "source": "docs/art-source/motions/production-144/red_desire/alpha.png",
+      "sourceSha256": "25d3b0bbb3fc51c96bf41c6bd575d07310a7c781cb17346f79f7959041b0fac3",
+      "crop": [
+        282,
+        1050,
+        456,
+        1249
+      ],
+      "destination": [
+        156,
+        541,
+        71,
+        81
+      ]
+    },
+    {
+      "frame": 18,
+      "sourceFrame": 18,
+      "source": "docs/art-source/motions/production-144/red_desire/alpha.png",
+      "sourceSha256": "25d3b0bbb3fc51c96bf41c6bd575d07310a7c781cb17346f79f7959041b0fac3",
+      "crop": [
+        531,
+        1078,
+        726,
+        1254
+      ],
+      "destination": [
+        280,
+        550,
+        80,
+        72
+      ]
+    },
+    {
+      "frame": 19,
+      "sourceFrame": 19,
+      "source": "docs/art-source/motions/production-144/red_desire/alpha.png",
+      "sourceSha256": "25d3b0bbb3fc51c96bf41c6bd575d07310a7c781cb17346f79f7959041b0fac3",
+      "crop": [
+        766,
+        1130,
+        1014,
+        1252
+      ],
+      "destination": [
+        397,
+        572,
+        102,
+        50
+      ]
+    },
+    {
+      "frame": 20,
+      "sourceFrame": 20,
+      "source": "docs/art-source/motions/production-144/red_desire/alpha.png",
+      "sourceSha256": "25d3b0bbb3fc51c96bf41c6bd575d07310a7c781cb17346f79f7959041b0fac3",
+      "crop": [
+        41,
+        1269,
+        202,
+        1523
+      ],
+      "destination": [
+        31,
+        646,
+        66,
+        104
+      ]
+    },
+    {
+      "frame": 21,
+      "sourceFrame": 21,
+      "source": "docs/art-source/motions/production-144/red_desire/alpha.png",
+      "sourceSha256": "25d3b0bbb3fc51c96bf41c6bd575d07310a7c781cb17346f79f7959041b0fac3",
+      "crop": [
+        291,
+        1272,
+        461,
+        1523
+      ],
+      "destination": [
+        157,
+        647,
+        70,
+        103
+      ]
+    },
+    {
+      "frame": 22,
+      "sourceFrame": 22,
+      "source": "docs/art-source/motions/production-144/red_desire/alpha.png",
+      "sourceSha256": "25d3b0bbb3fc51c96bf41c6bd575d07310a7c781cb17346f79f7959041b0fac3",
+      "crop": [
+        529,
+        1271,
+        725,
+        1523
+      ],
+      "destination": [
+        280,
+        647,
+        80,
+        103
+      ]
+    },
+    {
+      "frame": 23,
+      "sourceFrame": 23,
+      "source": "docs/art-source/motions/production-144/red_desire/alpha.png",
+      "sourceSha256": "25d3b0bbb3fc51c96bf41c6bd575d07310a7c781cb17346f79f7959041b0fac3",
+      "crop": [
+        805,
+        1270,
+        976,
+        1523
+      ],
+      "destination": [
+        413,
+        646,
+        70,
+        104
+      ]
+    }
+  ],
+  "skillRevision": {
+    "scale": 0.19141914191419143,
+    "review": "docs/art-source/motions/skill-revisions-2026-09-11/red_desire/review.json",
+    "beforeFrames": [
+      "044f9f406d0d3b71b8c0091d447845f4f33f88beeccc876ec87db3ce2c4c8d7c",
+      "a61c9e487e9335560e0983863e6506d107164c3a0dabb9601870ed6121ccb01e",
+      "1c8ac95c8d5755541965bdb5a7fc57f056fa8b305653461a6daacc57520ddccd",
+      "d36a26f1064f2585f62ea147b977386a9fcc8836695459b6f73c43f4e39486fe",
+      "503fb1cd1eab5010bcd41c26ccc109cc693060d0a270bf288bc277415fa2b1dd",
+      "80248af261670f77e0fc69212b8bc407a2711d05f43a855d8326e4b78d52ed4d",
+      "0ed04ed50ad562bf40df7832535b830e99eec9250bd08b9b7e9bdc61f86c42b4",
+      "d25ff4b3b6092446f7992db6a61930815009ef677332dd347b98b02388f73564",
+      "f786d1575049cf020804046697e2cd862e3dc1ed458da28bf50e4f821748b25a",
+      "82b6ce88739a9261054df5af124458f13a34515e9edd6a6496d19433d0d83893",
+      "9116a1e7ef1c6a50162bc404bd4fe0c5c1e6a37615c76bd0d9d26eb5201ac960",
+      "09f05124da0731a2df7be89bda5bb5c04cc39a129ec000ce5718a951cb12e9d1",
+      "39b454a09dad35c35462c8bbe956bd0fff62c2109f75e5f8daa2518dc32e8491",
+      "ab6247bac82e63c6ba98e34e21ad76ebf815ff085f954ddab582359bf95ff89c",
+      "07c6a218984e059dbf93cec754cdad1b804d955b0ffda6b5c0f3871fb68cdb85",
+      "c85557ed2e356c202045bbc259301fdadf627ab0b0b019a322c26e4072d9100c",
+      "1f39e2490771c95a8c9f37798237ed1e942a136634ba1b75e2d90b1015030361",
+      "2db9c486c2063e6ec90b47b27691dd03fad19460b004fcf882a53742ce471519",
+      "e7bb7678316359d3864041dea315efd92386043ba367826e1e95fe414e20c645",
+      "b819ea8546c32341dcca2912842a0a741413ee6737dbec35469475013a768378",
+      "eb4da668f67327c98f0b640c9debf860b9ac2ef4923a1e2b2d12b57c321699b2",
+      "17eb69d250a36878cfe911eca83c417464456ed71f87d794f2fdfa1d37335cf3",
+      "cb7276f1803e62337f7b737a7ef841cf90e44bd2d2a04336a72e8b84a49a43cf",
+      "f7e0377b6a502b1dec90f36c5e9dea542e643af4445b59047f6a8e9a0c0b5b0c"
+    ],
+    "afterFrames": [
+      "044f9f406d0d3b71b8c0091d447845f4f33f88beeccc876ec87db3ce2c4c8d7c",
+      "a61c9e487e9335560e0983863e6506d107164c3a0dabb9601870ed6121ccb01e",
+      "1c8ac95c8d5755541965bdb5a7fc57f056fa8b305653461a6daacc57520ddccd",
+      "d36a26f1064f2585f62ea147b977386a9fcc8836695459b6f73c43f4e39486fe",
+      "503fb1cd1eab5010bcd41c26ccc109cc693060d0a270bf288bc277415fa2b1dd",
+      "80248af261670f77e0fc69212b8bc407a2711d05f43a855d8326e4b78d52ed4d",
+      "0ed04ed50ad562bf40df7832535b830e99eec9250bd08b9b7e9bdc61f86c42b4",
+      "d25ff4b3b6092446f7992db6a61930815009ef677332dd347b98b02388f73564",
+      "f786d1575049cf020804046697e2cd862e3dc1ed458da28bf50e4f821748b25a",
+      "82b6ce88739a9261054df5af124458f13a34515e9edd6a6496d19433d0d83893",
+      "9116a1e7ef1c6a50162bc404bd4fe0c5c1e6a37615c76bd0d9d26eb5201ac960",
+      "09f05124da0731a2df7be89bda5bb5c04cc39a129ec000ce5718a951cb12e9d1",
+      "1920d15d681f223173e169d4bfa14995c77b2d063844f9cf07a2494d98c3db1a",
+      "246c2cd347116d59f28ce9c8ed219b79d20c35a5e0e614301294bb7a852fc6d4",
+      "ea212254388587fe418fb600967c43a97bea0f2b880034dd59befabc99cff9ca",
+      "6b718d9796650be363291206201cf8ff5aca5ac085520068ab2bcf6b3e67afd1",
+      "1f39e2490771c95a8c9f37798237ed1e942a136634ba1b75e2d90b1015030361",
+      "2db9c486c2063e6ec90b47b27691dd03fad19460b004fcf882a53742ce471519",
+      "e7bb7678316359d3864041dea315efd92386043ba367826e1e95fe414e20c645",
+      "b819ea8546c32341dcca2912842a0a741413ee6737dbec35469475013a768378",
+      "eb4da668f67327c98f0b640c9debf860b9ac2ef4923a1e2b2d12b57c321699b2",
+      "17eb69d250a36878cfe911eca83c417464456ed71f87d794f2fdfa1d37335cf3",
+      "cb7276f1803e62337f7b737a7ef841cf90e44bd2d2a04336a72e8b84a49a43cf",
+      "f7e0377b6a502b1dec90f36c5e9dea542e643af4445b59047f6a8e9a0c0b5b0c"
+    ],
+    "unchangedFrames": 20,
+    "changedFrames": [
+      12,
+      13,
+      14,
+      15
+    ]
+  }
+}

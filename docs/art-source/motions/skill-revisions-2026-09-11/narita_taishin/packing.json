@@ -1,0 +1,506 @@
+{
+  "format": "uft-baked-frames-v1",
+  "scale": 0.41434262948207173,
+  "anchor": [
+    64,
+    110
+  ],
+  "runtimeSha256": "a750b67321a111b1ae01c7554630b65d9caee7f562044c3524956f1b302fac71",
+  "frames": [
+    {
+      "frame": 0,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/production-144/narita_taishin/alpha.png",
+      "sourceSha256": "1d5d7ba6680f53d93ed2164ed32eff681fce824ebf83f5a2573e09e073bc73c7",
+      "crop": [
+        50,
+        21,
+        196,
+        257
+      ],
+      "destination": [
+        34,
+        12,
+        60,
+        98
+      ]
+    },
+    {
+      "frame": 1,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/production-144/narita_taishin/alpha.png",
+      "sourceSha256": "1d5d7ba6680f53d93ed2164ed32eff681fce824ebf83f5a2573e09e073bc73c7",
+      "crop": [
+        312,
+        27,
+        445,
+        257
+      ],
+      "destination": [
+        164,
+        15,
+        55,
+        95
+      ]
+    },
+    {
+      "frame": 2,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/production-144/narita_taishin/alpha.png",
+      "sourceSha256": "1d5d7ba6680f53d93ed2164ed32eff681fce824ebf83f5a2573e09e073bc73c7",
+      "crop": [
+        574,
+        22,
+        706,
+        257
+      ],
+      "destination": [
+        292,
+        13,
+        55,
+        97
+      ]
+    },
+    {
+      "frame": 3,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/production-144/narita_taishin/alpha.png",
+      "sourceSha256": "1d5d7ba6680f53d93ed2164ed32eff681fce824ebf83f5a2573e09e073bc73c7",
+      "crop": [
+        818,
+        21,
+        963,
+        257
+      ],
+      "destination": [
+        418,
+        12,
+        60,
+        98
+      ]
+    },
+    {
+      "frame": 4,
+      "sourceFrame": 4,
+      "source": "docs/art-source/motions/production-144/narita_taishin/alpha.png",
+      "sourceSha256": "1d5d7ba6680f53d93ed2164ed32eff681fce824ebf83f5a2573e09e073bc73c7",
+      "crop": [
+        35,
+        274,
+        219,
+        497
+      ],
+      "destination": [
+        26,
+        146,
+        76,
+        92
+      ]
+    },
+    {
+      "frame": 5,
+      "sourceFrame": 5,
+      "source": "docs/art-source/motions/production-144/narita_taishin/alpha.png",
+      "sourceSha256": "1d5d7ba6680f53d93ed2164ed32eff681fce824ebf83f5a2573e09e073bc73c7",
+      "crop": [
+        301,
+        282,
+        482,
+        508
+      ],
+      "destination": [
+        154,
+        144,
+        75,
+        94
+      ]
+    },
+    {
+      "frame": 6,
+      "sourceFrame": 6,
+      "source": "docs/art-source/motions/production-144/narita_taishin/alpha.png",
+      "sourceSha256": "1d5d7ba6680f53d93ed2164ed32eff681fce824ebf83f5a2573e09e073bc73c7",
+      "crop": [
+        548,
+        283,
+        734,
+        508
+      ],
+      "destination": [
+        281,
+        145,
+        77,
+        93
+      ]
+    },
+    {
+      "frame": 7,
+      "sourceFrame": 7,
+      "source": "docs/art-source/motions/production-144/narita_taishin/alpha.png",
+      "sourceSha256": "1d5d7ba6680f53d93ed2164ed32eff681fce824ebf83f5a2573e09e073bc73c7",
+      "crop": [
+        804,
+        275,
+        995,
+        507
+      ],
+      "destination": [
+        408,
+        142,
+        79,
+        96
+      ]
+    },
+    {
+      "frame": 8,
+      "sourceFrame": 8,
+      "source": "docs/art-source/motions/production-144/narita_taishin/alpha.png",
+      "sourceSha256": "1d5d7ba6680f53d93ed2164ed32eff681fce824ebf83f5a2573e09e073bc73c7",
+      "crop": [
+        51,
+        524,
+        199,
+        761
+      ],
+      "destination": [
+        33,
+        268,
+        61,
+        98
+      ]
+    },
+    {
+      "frame": 9,
+      "sourceFrame": 9,
+      "source": "docs/art-source/motions/production-144/narita_taishin/alpha.png",
+      "sourceSha256": "1d5d7ba6680f53d93ed2164ed32eff681fce824ebf83f5a2573e09e073bc73c7",
+      "crop": [
+        305,
+        530,
+        476,
+        760
+      ],
+      "destination": [
+        156,
+        271,
+        71,
+        95
+      ]
+    },
+    {
+      "frame": 10,
+      "sourceFrame": 10,
+      "source": "docs/art-source/motions/production-144/narita_taishin/alpha.png",
+      "sourceSha256": "1d5d7ba6680f53d93ed2164ed32eff681fce824ebf83f5a2573e09e073bc73c7",
+      "crop": [
+        547,
+        529,
+        764,
+        759
+      ],
+      "destination": [
+        275,
+        271,
+        90,
+        95
+      ]
+    },
+    {
+      "frame": 11,
+      "sourceFrame": 11,
+      "source": "docs/art-source/motions/production-144/narita_taishin/alpha.png",
+      "sourceSha256": "1d5d7ba6680f53d93ed2164ed32eff681fce824ebf83f5a2573e09e073bc73c7",
+      "crop": [
+        819,
+        531,
+        978,
+        761
+      ],
+      "destination": [
+        415,
+        271,
+        66,
+        95
+      ]
+    },
+    {
+      "frame": 12,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/skill-revisions-2026-09-11/narita_taishin/generated.png",
+      "sourceSha256": "98d12b113c8ff82b4eaba8669375d010d62fd261e3b355b8e12d81bb0a27f771",
+      "crop": [
+        70,
+        73,
+        684,
+        430
+      ],
+      "destination": [
+        6,
+        427,
+        116,
+        67
+      ]
+    },
+    {
+      "frame": 13,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/skill-revisions-2026-09-11/narita_taishin/generated.png",
+      "sourceSha256": "98d12b113c8ff82b4eaba8669375d010d62fd261e3b355b8e12d81bb0a27f771",
+      "crop": [
+        925,
+        34,
+        1503,
+        451
+      ],
+      "destination": [
+        137,
+        415,
+        109,
+        79
+      ]
+    },
+    {
+      "frame": 14,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/skill-revisions-2026-09-11/narita_taishin/generated.png",
+      "sourceSha256": "98d12b113c8ff82b4eaba8669375d010d62fd261e3b355b8e12d81bb0a27f771",
+      "crop": [
+        220,
+        491,
+        635,
+        985
+      ],
+      "destination": [
+        281,
+        401,
+        78,
+        93
+      ]
+    },
+    {
+      "frame": 15,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/skill-revisions-2026-09-11/narita_taishin/generated.png",
+      "sourceSha256": "98d12b113c8ff82b4eaba8669375d010d62fd261e3b355b8e12d81bb0a27f771",
+      "crop": [
+        950,
+        542,
+        1313,
+        995
+      ],
+      "destination": [
+        413,
+        408,
+        69,
+        86
+      ]
+    },
+    {
+      "frame": 16,
+      "sourceFrame": 16,
+      "source": "docs/art-source/motions/production-144/narita_taishin/alpha.png",
+      "sourceSha256": "1d5d7ba6680f53d93ed2164ed32eff681fce824ebf83f5a2573e09e073bc73c7",
+      "crop": [
+        44,
+        1032,
+        227,
+        1255
+      ],
+      "destination": [
+        26,
+        530,
+        76,
+        92
+      ]
+    },
+    {
+      "frame": 17,
+      "sourceFrame": 17,
+      "source": "docs/art-source/motions/production-144/narita_taishin/alpha.png",
+      "sourceSha256": "1d5d7ba6680f53d93ed2164ed32eff681fce824ebf83f5a2573e09e073bc73c7",
+      "crop": [
+        299,
+        1071,
+        488,
+        1254
+      ],
+      "destination": [
+        153,
+        546,
+        78,
+        76
+      ]
+    },
+    {
+      "frame": 18,
+      "sourceFrame": 18,
+      "source": "docs/art-source/motions/production-144/narita_taishin/alpha.png",
+      "sourceSha256": "1d5d7ba6680f53d93ed2164ed32eff681fce824ebf83f5a2573e09e073bc73c7",
+      "crop": [
+        551,
+        1081,
+        729,
+        1250
+      ],
+      "destination": [
+        283,
+        552,
+        74,
+        70
+      ]
+    },
+    {
+      "frame": 19,
+      "sourceFrame": 19,
+      "source": "docs/art-source/motions/production-144/narita_taishin/alpha.png",
+      "sourceSha256": "1d5d7ba6680f53d93ed2164ed32eff681fce824ebf83f5a2573e09e073bc73c7",
+      "crop": [
+        772,
+        1145,
+        1011,
+        1255
+      ],
+      "destination": [
+        398,
+        576,
+        99,
+        46
+      ]
+    },
+    {
+      "frame": 20,
+      "sourceFrame": 20,
+      "source": "docs/art-source/motions/production-144/narita_taishin/alpha.png",
+      "sourceSha256": "1d5d7ba6680f53d93ed2164ed32eff681fce824ebf83f5a2573e09e073bc73c7",
+      "crop": [
+        49,
+        1268,
+        197,
+        1519
+      ],
+      "destination": [
+        33,
+        646,
+        61,
+        104
+      ]
+    },
+    {
+      "frame": 21,
+      "sourceFrame": 21,
+      "source": "docs/art-source/motions/production-144/narita_taishin/alpha.png",
+      "sourceSha256": "1d5d7ba6680f53d93ed2164ed32eff681fce824ebf83f5a2573e09e073bc73c7",
+      "crop": [
+        316,
+        1276,
+        459,
+        1519
+      ],
+      "destination": [
+        162,
+        649,
+        59,
+        101
+      ]
+    },
+    {
+      "frame": 22,
+      "sourceFrame": 22,
+      "source": "docs/art-source/motions/production-144/narita_taishin/alpha.png",
+      "sourceSha256": "1d5d7ba6680f53d93ed2164ed32eff681fce824ebf83f5a2573e09e073bc73c7",
+      "crop": [
+        559,
+        1268,
+        708,
+        1518
+      ],
+      "destination": [
+        289,
+        646,
+        62,
+        104
+      ]
+    },
+    {
+      "frame": 23,
+      "sourceFrame": 23,
+      "source": "docs/art-source/motions/production-144/narita_taishin/alpha.png",
+      "sourceSha256": "1d5d7ba6680f53d93ed2164ed32eff681fce824ebf83f5a2573e09e073bc73c7",
+      "crop": [
+        815,
+        1275,
+        977,
+        1519
+      ],
+      "destination": [
+        414,
+        649,
+        67,
+        101
+      ]
+    }
+  ],
+  "skillRevision": {
+    "scale": 0.18892508143322476,
+    "review": "docs/art-source/motions/skill-revisions-2026-09-11/narita_taishin/review.json",
+    "beforeFrames": [
+      "16e2c144ba1acf382734bc182a587ed50af713141d3e4f8775f6ded704ec0147",
+      "9ea53cc52fa0d28328fb2a09b89523faa1390bb7b485c00a5cd867eb31f91dbc",
+      "08e783481ed9b8ab08daadf4975a7d52658bcab62e245b46fcf355b07ee0aab2",
+      "5f9e6833483f5ede400f54c38c359e11bd056e70208e8515ae88a06114179137",
+      "a00ebac4086ee43cd15f9b34735432229b9d9789ac5f4304e53696c29c5a8cbf",
+      "e988542f60d14e4c4a7c0546016ce288565dd892c3f7a50e20efb9a0bc6b6d90",
+      "4b69ab5cfcba37d670fd601a5f3a658d7b25cecaee91d4991174fe36e2406633",
+      "961d4540e78851d7a04d8e58c4325938976f621141af2c4452145639e8c00aee",
+      "0772de84be49dd95a9a0a15611e447d15ab9cb2e3abc9335ce04840db70a6342",
+      "0be4b8b33749f457fd3599a955ad30e1318a75404a071bc933d5cca74bbef0b4",
+      "106e1dea203984abb956835f1f23dc72e46f04285262b154270be1b0554af2e9",
+      "66dbdde6c529676dcc94cf2615d5cc257e3a5e3f200c7a471e85c203c832f52e",
+      "24537e28b869179c35e654fac1be96cb03a3f6f78e458a5d41e656194541db87",
+      "fc336eb8e8671b8b26ba1d811b5ca7268eab32cfc89618322f500f40d0302315",
+      "78636f97c0b8e23ed1d09749747784c17f207737903eee6e0812f23d7392fe90",
+      "136a645700f7c1582efefe70a6c6fb66eaeadd4ca586f26004544ffd8acc5df7",
+      "2bab9e8c953c29bb91474984daba76a118ab5b02c0a30de52a8071045ba4f20c",
+      "2fa3ac7181212e8542fdb1dc0d351d96afc1e83de73877f0d76aeb533458a8c7",
+      "7a5fe1dfd1a4c97a0bcebf67f1afd2e3957da3591364019a2eae66f392be5305",
+      "9925d0d6eb95c0a3c8e3ebb348fd7c1313368be6dc245132bdf80ba5b5ef7845",
+      "0ec2bfe9e4be7e5e37f904509500303a05a1a803c02490d863b6ff318ec7698d",
+      "951437536022421ff5c77076b03b3ef6ca28455fe5e7c808768bf44abb2ca488",
+      "9b90d370250bf0050eebd6a1914a0a57605dc235a2f3a5c64b4374e18d517abc",
+      "56dbe980225b20a4ffecaee0419ff886b1c2396b5034183cc8a7664c0afbc504"
+    ],
+    "afterFrames": [
+      "16e2c144ba1acf382734bc182a587ed50af713141d3e4f8775f6ded704ec0147",
+      "9ea53cc52fa0d28328fb2a09b89523faa1390bb7b485c00a5cd867eb31f91dbc",
+      "08e783481ed9b8ab08daadf4975a7d52658bcab62e245b46fcf355b07ee0aab2",
+      "5f9e6833483f5ede400f54c38c359e11bd056e70208e8515ae88a06114179137",
+      "a00ebac4086ee43cd15f9b34735432229b9d9789ac5f4304e53696c29c5a8cbf",
+      "e988542f60d14e4c4a7c0546016ce288565dd892c3f7a50e20efb9a0bc6b6d90",
+      "4b69ab5cfcba37d670fd601a5f3a658d7b25cecaee91d4991174fe36e2406633",
+      "961d4540e78851d7a04d8e58c4325938976f621141af2c4452145639e8c00aee",
+      "0772de84be49dd95a9a0a15611e447d15ab9cb2e3abc9335ce04840db70a6342",
+      "0be4b8b33749f457fd3599a955ad30e1318a75404a071bc933d5cca74bbef0b4",
+      "106e1dea203984abb956835f1f23dc72e46f04285262b154270be1b0554af2e9",
+      "66dbdde6c529676dcc94cf2615d5cc257e3a5e3f200c7a471e85c203c832f52e",
+      "2131b35f22113e39b1e77894e387c8a07db4b78f3a57dacb6a6454f34cacf95e",
+      "af8b3464e41ea02adb31807b16eebbabf60e64804ebcff41b84298b1cae94141",
+      "4a30062ebfc8948dc9ddc303afda7a239fac3197976cef155c6ef0475b529867",
+      "eec59657b3ff10d91d6d17a375c04c89887a788c1e98d976ce469031520fc653",
+      "2bab9e8c953c29bb91474984daba76a118ab5b02c0a30de52a8071045ba4f20c",
+      "2fa3ac7181212e8542fdb1dc0d351d96afc1e83de73877f0d76aeb533458a8c7",
+      "7a5fe1dfd1a4c97a0bcebf67f1afd2e3957da3591364019a2eae66f392be5305",
+      "9925d0d6eb95c0a3c8e3ebb348fd7c1313368be6dc245132bdf80ba5b5ef7845",
+      "0ec2bfe9e4be7e5e37f904509500303a05a1a803c02490d863b6ff318ec7698d",
+      "951437536022421ff5c77076b03b3ef6ca28455fe5e7c808768bf44abb2ca488",
+      "9b90d370250bf0050eebd6a1914a0a57605dc235a2f3a5c64b4374e18d517abc",
+      "56dbe980225b20a4ffecaee0419ff886b1c2396b5034183cc8a7664c0afbc504"
+    ],
+    "unchangedFrames": 20,
+    "changedFrames": [
+      12,
+      13,
+      14,
+      15
+    ]
+  }
+}

@@ -1,0 +1,506 @@
+{
+  "format": "uft-baked-frames-v1",
+  "scale": 0.4,
+  "anchor": [
+    64,
+    110
+  ],
+  "runtimeSha256": "f8f1a71e432b539b72fce00f83476743426c01fafeebc3157aee5ee0bd04e8f1",
+  "frames": [
+    {
+      "frame": 0,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/production-144/tosen_jordan/alpha.png",
+      "sourceSha256": "d8788efb19c8e0a4fe785cf3fbfa5591379a5c0286ffe3d5664023fef8769017",
+      "crop": [
+        60,
+        12,
+        212,
+        259
+      ],
+      "destination": [
+        33,
+        11,
+        61,
+        99
+      ]
+    },
+    {
+      "frame": 1,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/production-144/tosen_jordan/alpha.png",
+      "sourceSha256": "d8788efb19c8e0a4fe785cf3fbfa5591379a5c0286ffe3d5664023fef8769017",
+      "crop": [
+        302,
+        12,
+        456,
+        259
+      ],
+      "destination": [
+        161,
+        11,
+        62,
+        99
+      ]
+    },
+    {
+      "frame": 2,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/production-144/tosen_jordan/alpha.png",
+      "sourceSha256": "d8788efb19c8e0a4fe785cf3fbfa5591379a5c0286ffe3d5664023fef8769017",
+      "crop": [
+        552,
+        14,
+        702,
+        259
+      ],
+      "destination": [
+        290,
+        12,
+        60,
+        98
+      ]
+    },
+    {
+      "frame": 3,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/production-144/tosen_jordan/alpha.png",
+      "sourceSha256": "d8788efb19c8e0a4fe785cf3fbfa5591379a5c0286ffe3d5664023fef8769017",
+      "crop": [
+        800,
+        12,
+        951,
+        259
+      ],
+      "destination": [
+        418,
+        11,
+        60,
+        99
+      ]
+    },
+    {
+      "frame": 4,
+      "sourceFrame": 4,
+      "source": "docs/art-source/motions/production-144/tosen_jordan/alpha.png",
+      "sourceSha256": "d8788efb19c8e0a4fe785cf3fbfa5591379a5c0286ffe3d5664023fef8769017",
+      "crop": [
+        46,
+        268,
+        228,
+        512
+      ],
+      "destination": [
+        27,
+        140,
+        73,
+        98
+      ]
+    },
+    {
+      "frame": 5,
+      "sourceFrame": 5,
+      "source": "docs/art-source/motions/production-144/tosen_jordan/alpha.png",
+      "sourceSha256": "d8788efb19c8e0a4fe785cf3fbfa5591379a5c0286ffe3d5664023fef8769017",
+      "crop": [
+        302,
+        270,
+        494,
+        508
+      ],
+      "destination": [
+        153,
+        143,
+        77,
+        95
+      ]
+    },
+    {
+      "frame": 6,
+      "sourceFrame": 6,
+      "source": "docs/art-source/motions/production-144/tosen_jordan/alpha.png",
+      "sourceSha256": "d8788efb19c8e0a4fe785cf3fbfa5591379a5c0286ffe3d5664023fef8769017",
+      "crop": [
+        551,
+        274,
+        738,
+        512
+      ],
+      "destination": [
+        282,
+        143,
+        75,
+        95
+      ]
+    },
+    {
+      "frame": 7,
+      "sourceFrame": 7,
+      "source": "docs/art-source/motions/production-144/tosen_jordan/alpha.png",
+      "sourceSha256": "d8788efb19c8e0a4fe785cf3fbfa5591379a5c0286ffe3d5664023fef8769017",
+      "crop": [
+        814,
+        277,
+        1002,
+        512
+      ],
+      "destination": [
+        410,
+        144,
+        75,
+        94
+      ]
+    },
+    {
+      "frame": 8,
+      "sourceFrame": 8,
+      "source": "docs/art-source/motions/production-144/tosen_jordan/alpha.png",
+      "sourceSha256": "d8788efb19c8e0a4fe785cf3fbfa5591379a5c0286ffe3d5664023fef8769017",
+      "crop": [
+        37,
+        522,
+        198,
+        768
+      ],
+      "destination": [
+        32,
+        268,
+        64,
+        98
+      ]
+    },
+    {
+      "frame": 9,
+      "sourceFrame": 9,
+      "source": "docs/art-source/motions/production-144/tosen_jordan/alpha.png",
+      "sourceSha256": "d8788efb19c8e0a4fe785cf3fbfa5591379a5c0286ffe3d5664023fef8769017",
+      "crop": [
+        291,
+        522,
+        466,
+        767
+      ],
+      "destination": [
+        157,
+        268,
+        70,
+        98
+      ]
+    },
+    {
+      "frame": 10,
+      "sourceFrame": 10,
+      "source": "docs/art-source/motions/production-144/tosen_jordan/alpha.png",
+      "sourceSha256": "d8788efb19c8e0a4fe785cf3fbfa5591379a5c0286ffe3d5664023fef8769017",
+      "crop": [
+        545,
+        527,
+        750,
+        768
+      ],
+      "destination": [
+        279,
+        270,
+        82,
+        96
+      ]
+    },
+    {
+      "frame": 11,
+      "sourceFrame": 11,
+      "source": "docs/art-source/motions/production-144/tosen_jordan/alpha.png",
+      "sourceSha256": "d8788efb19c8e0a4fe785cf3fbfa5591379a5c0286ffe3d5664023fef8769017",
+      "crop": [
+        802,
+        523,
+        965,
+        768
+      ],
+      "destination": [
+        415,
+        268,
+        65,
+        98
+      ]
+    },
+    {
+      "frame": 12,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/skill-revisions-2026-09-11/tosen_jordan/generated.png",
+      "sourceSha256": "ddbe951eda682d7799f661c3131eca8a222d9d8acc6fa9b7771e755299d57016",
+      "crop": [
+        252,
+        7,
+        603,
+        512
+      ],
+      "destination": [
+        28,
+        390,
+        72,
+        104
+      ]
+    },
+    {
+      "frame": 13,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/skill-revisions-2026-09-11/tosen_jordan/generated.png",
+      "sourceSha256": "ddbe951eda682d7799f661c3131eca8a222d9d8acc6fa9b7771e755299d57016",
+      "crop": [
+        875,
+        70,
+        1320,
+        502
+      ],
+      "destination": [
+        146,
+        405,
+        92,
+        89
+      ]
+    },
+    {
+      "frame": 14,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/skill-revisions-2026-09-11/tosen_jordan/generated.png",
+      "sourceSha256": "ddbe951eda682d7799f661c3131eca8a222d9d8acc6fa9b7771e755299d57016",
+      "crop": [
+        247,
+        512,
+        626,
+        1006
+      ],
+      "destination": [
+        281,
+        392,
+        78,
+        102
+      ]
+    },
+    {
+      "frame": 15,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/skill-revisions-2026-09-11/tosen_jordan/generated.png",
+      "sourceSha256": "ddbe951eda682d7799f661c3131eca8a222d9d8acc6fa9b7771e755299d57016",
+      "crop": [
+        893,
+        523,
+        1242,
+        1006
+      ],
+      "destination": [
+        412,
+        395,
+        72,
+        99
+      ]
+    },
+    {
+      "frame": 16,
+      "sourceFrame": 16,
+      "source": "docs/art-source/motions/production-144/tosen_jordan/alpha.png",
+      "sourceSha256": "d8788efb19c8e0a4fe785cf3fbfa5591379a5c0286ffe3d5664023fef8769017",
+      "crop": [
+        47,
+        1037,
+        230,
+        1260
+      ],
+      "destination": [
+        27,
+        533,
+        73,
+        89
+      ]
+    },
+    {
+      "frame": 17,
+      "sourceFrame": 17,
+      "source": "docs/art-source/motions/production-144/tosen_jordan/alpha.png",
+      "sourceSha256": "d8788efb19c8e0a4fe785cf3fbfa5591379a5c0286ffe3d5664023fef8769017",
+      "crop": [
+        301,
+        1070,
+        486,
+        1260
+      ],
+      "destination": [
+        155,
+        546,
+        74,
+        76
+      ]
+    },
+    {
+      "frame": 18,
+      "sourceFrame": 18,
+      "source": "docs/art-source/motions/production-144/tosen_jordan/alpha.png",
+      "sourceSha256": "d8788efb19c8e0a4fe785cf3fbfa5591379a5c0286ffe3d5664023fef8769017",
+      "crop": [
+        553,
+        1074,
+        716,
+        1257
+      ],
+      "destination": [
+        287,
+        549,
+        65,
+        73
+      ]
+    },
+    {
+      "frame": 19,
+      "sourceFrame": 19,
+      "source": "docs/art-source/motions/production-144/tosen_jordan/alpha.png",
+      "sourceSha256": "d8788efb19c8e0a4fe785cf3fbfa5591379a5c0286ffe3d5664023fef8769017",
+      "crop": [
+        774,
+        1147,
+        1014,
+        1256
+      ],
+      "destination": [
+        400,
+        578,
+        96,
+        44
+      ]
+    },
+    {
+      "frame": 20,
+      "sourceFrame": 20,
+      "source": "docs/art-source/motions/production-144/tosen_jordan/alpha.png",
+      "sourceSha256": "d8788efb19c8e0a4fe785cf3fbfa5591379a5c0286ffe3d5664023fef8769017",
+      "crop": [
+        50,
+        1271,
+        206,
+        1520
+      ],
+      "destination": [
+        33,
+        650,
+        62,
+        100
+      ]
+    },
+    {
+      "frame": 21,
+      "sourceFrame": 21,
+      "source": "docs/art-source/motions/production-144/tosen_jordan/alpha.png",
+      "sourceSha256": "d8788efb19c8e0a4fe785cf3fbfa5591379a5c0286ffe3d5664023fef8769017",
+      "crop": [
+        315,
+        1271,
+        470,
+        1522
+      ],
+      "destination": [
+        161,
+        650,
+        62,
+        100
+      ]
+    },
+    {
+      "frame": 22,
+      "sourceFrame": 22,
+      "source": "docs/art-source/motions/production-144/tosen_jordan/alpha.png",
+      "sourceSha256": "d8788efb19c8e0a4fe785cf3fbfa5591379a5c0286ffe3d5664023fef8769017",
+      "crop": [
+        552,
+        1271,
+        713,
+        1522
+      ],
+      "destination": [
+        288,
+        650,
+        64,
+        100
+      ]
+    },
+    {
+      "frame": 23,
+      "sourceFrame": 23,
+      "source": "docs/art-source/motions/production-144/tosen_jordan/alpha.png",
+      "sourceSha256": "d8788efb19c8e0a4fe785cf3fbfa5591379a5c0286ffe3d5664023fef8769017",
+      "crop": [
+        807,
+        1276,
+        964,
+        1520
+      ],
+      "destination": [
+        416,
+        652,
+        63,
+        98
+      ]
+    }
+  ],
+  "skillRevision": {
+    "scale": 0.20594059405940593,
+    "review": "docs/art-source/motions/skill-revisions-2026-09-11/tosen_jordan/review.json",
+    "beforeFrames": [
+      "081377bb81d1968928895e45ea9af5d1e35b94dc7081b9a0ec0b7e9752d02e99",
+      "ffecff209219c397bae2f21bd43bdd8c5dbbb6dbb78f45f3fc8b68e9ba25afb3",
+      "81353e3f17b8ae331a8566ece68fbf6b55d471edb4b00bd42f9f58fba6be3a77",
+      "4a79eba2e4cc5960e91e400a69038212ca5a5fbe16d3d8f426d514f75329a56c",
+      "11d2dd15ee72f492184b1421e97c7315b0bd3b0a711fffe3b42085b103090cbb",
+      "746da546aa22afb88a920a82840558caa48ef91aa3e6e884056e0c719757c664",
+      "1c398c904b56df068eb220473bd7fdc2dcc64880fab718d46ecce893f0f43db4",
+      "739f281d93218a8e569717b67a81429db08e2b8012b4ac9c82a1249f76be4e46",
+      "1564a316316ad2ff6c9b4791c3136e3cbe23ead80e08e2c603a81734d6159f29",
+      "06620f92ca4c227f39b9c06dcc4c7fa1089daa32b54fe0e8ba66f66903117630",
+      "9321d2512bfdb9b0e9e59215f58e97dc1ff21df5bbaa01a2edd972c478650ded",
+      "04cefc0e56d5d92104355121736ff1dd9f5ef3226a5626e665024da753e2c6da",
+      "52f0aa1296962dd2b7f78405ff5389ba789d0a40ec63ffac32b6caadeb49fb2d",
+      "42e0810b7da4f518e3a61235c903127060bb98e81d64ace1eb041a75cd8f04eb",
+      "b9f6afa92e4dbbaf48af73065a1c11d292a08a3f754e441c0f8046dcf86dd48e",
+      "d1640edd24ad6b06eaa699169a7850672d0e7fd159571daf1f9d9bd271d75a6a",
+      "fce856d429c123976adc061ada1e82c26deda367d6ce9303f8298dd4aa89fbbd",
+      "13812a30e7b913ff7ce7ed7f8140133323f90bba01dbc13dd63e300a4c5f89cb",
+      "abbe7a2e1c55a28e33ff85a01e01e6c7bd804b57aa5f2e2c94dad43d0fa8d447",
+      "01f69ed3f908d738dff3f65136f772bc8d6f5a5e6e3c632ef145e114e788940d",
+      "c6d145f947a93c442ac496828f76c684944cfec413912d6223d301e085c7bc18",
+      "81919fffd96194cf4be2864ce197b3486591f0324fd435c32c3fb80432f3a55d",
+      "3bd6792f06c1eeb982294c2b55bebe6d4b83c22ab1f6432e11728699c731163a",
+      "d525850c8e55e919ab6ce618c325ab1a4be51ab54d33c1437709366ba72044a0"
+    ],
+    "afterFrames": [
+      "081377bb81d1968928895e45ea9af5d1e35b94dc7081b9a0ec0b7e9752d02e99",
+      "ffecff209219c397bae2f21bd43bdd8c5dbbb6dbb78f45f3fc8b68e9ba25afb3",
+      "81353e3f17b8ae331a8566ece68fbf6b55d471edb4b00bd42f9f58fba6be3a77",
+      "4a79eba2e4cc5960e91e400a69038212ca5a5fbe16d3d8f426d514f75329a56c",
+      "11d2dd15ee72f492184b1421e97c7315b0bd3b0a711fffe3b42085b103090cbb",
+      "746da546aa22afb88a920a82840558caa48ef91aa3e6e884056e0c719757c664",
+      "1c398c904b56df068eb220473bd7fdc2dcc64880fab718d46ecce893f0f43db4",
+      "739f281d93218a8e569717b67a81429db08e2b8012b4ac9c82a1249f76be4e46",
+      "1564a316316ad2ff6c9b4791c3136e3cbe23ead80e08e2c603a81734d6159f29",
+      "06620f92ca4c227f39b9c06dcc4c7fa1089daa32b54fe0e8ba66f66903117630",
+      "9321d2512bfdb9b0e9e59215f58e97dc1ff21df5bbaa01a2edd972c478650ded",
+      "04cefc0e56d5d92104355121736ff1dd9f5ef3226a5626e665024da753e2c6da",
+      "893fd793035d2d322d655dd2266b651aa41c8e5351f98a073901a1b60a9dcb75",
+      "9b015e272ad3421c9857bf047f4dc4309d12397f237d2320d52221a2b5214533",
+      "51d39cc47220d17213a05a7d7050c0b984c1bdb915ef2e203a47b11dcbdb67ee",
+      "a58b464fbc8f9659cc5e33fa480b19841c9c5bbefcffea5509b3bfc0d1893a30",
+      "fce856d429c123976adc061ada1e82c26deda367d6ce9303f8298dd4aa89fbbd",
+      "13812a30e7b913ff7ce7ed7f8140133323f90bba01dbc13dd63e300a4c5f89cb",
+      "abbe7a2e1c55a28e33ff85a01e01e6c7bd804b57aa5f2e2c94dad43d0fa8d447",
+      "01f69ed3f908d738dff3f65136f772bc8d6f5a5e6e3c632ef145e114e788940d",
+      "c6d145f947a93c442ac496828f76c684944cfec413912d6223d301e085c7bc18",
+      "81919fffd96194cf4be2864ce197b3486591f0324fd435c32c3fb80432f3a55d",
+      "3bd6792f06c1eeb982294c2b55bebe6d4b83c22ab1f6432e11728699c731163a",
+      "d525850c8e55e919ab6ce618c325ab1a4be51ab54d33c1437709366ba72044a0"
+    ],
+    "unchangedFrames": 20,
+    "changedFrames": [
+      12,
+      13,
+      14,
+      15
+    ]
+  }
+}

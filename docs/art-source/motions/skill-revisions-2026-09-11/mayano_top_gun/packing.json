@@ -1,0 +1,506 @@
+{
+  "format": "uft-baked-frames-v1",
+  "scale": 0.4297520661157025,
+  "anchor": [
+    64,
+    110
+  ],
+  "runtimeSha256": "a288e1850528788b10dd5367281299bf9ee0dbcda8db10b27f487efad222078d",
+  "frames": [
+    {
+      "frame": 0,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/production-144/mayano_top_gun/alpha.png",
+      "sourceSha256": "487ef5c5c96688261eb1d27fd5f7deb6513fbdd7b50637d2a92f5411f9e5af25",
+      "crop": [
+        61,
+        28,
+        194,
+        258
+      ],
+      "destination": [
+        35,
+        11,
+        57,
+        99
+      ]
+    },
+    {
+      "frame": 1,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/production-144/mayano_top_gun/alpha.png",
+      "sourceSha256": "487ef5c5c96688261eb1d27fd5f7deb6513fbdd7b50637d2a92f5411f9e5af25",
+      "crop": [
+        317,
+        27,
+        453,
+        258
+      ],
+      "destination": [
+        163,
+        11,
+        58,
+        99
+      ]
+    },
+    {
+      "frame": 2,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/production-144/mayano_top_gun/alpha.png",
+      "sourceSha256": "487ef5c5c96688261eb1d27fd5f7deb6513fbdd7b50637d2a92f5411f9e5af25",
+      "crop": [
+        565,
+        28,
+        697,
+        258
+      ],
+      "destination": [
+        291,
+        11,
+        57,
+        99
+      ]
+    },
+    {
+      "frame": 3,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/production-144/mayano_top_gun/alpha.png",
+      "sourceSha256": "487ef5c5c96688261eb1d27fd5f7deb6513fbdd7b50637d2a92f5411f9e5af25",
+      "crop": [
+        819,
+        28,
+        952,
+        258
+      ],
+      "destination": [
+        419,
+        11,
+        57,
+        99
+      ]
+    },
+    {
+      "frame": 4,
+      "sourceFrame": 4,
+      "source": "docs/art-source/motions/production-144/mayano_top_gun/alpha.png",
+      "sourceSha256": "487ef5c5c96688261eb1d27fd5f7deb6513fbdd7b50637d2a92f5411f9e5af25",
+      "crop": [
+        40,
+        277,
+        211,
+        511
+      ],
+      "destination": [
+        27,
+        137,
+        73,
+        101
+      ]
+    },
+    {
+      "frame": 5,
+      "sourceFrame": 5,
+      "source": "docs/art-source/motions/production-144/mayano_top_gun/alpha.png",
+      "sourceSha256": "487ef5c5c96688261eb1d27fd5f7deb6513fbdd7b50637d2a92f5411f9e5af25",
+      "crop": [
+        298,
+        278,
+        483,
+        511
+      ],
+      "destination": [
+        152,
+        138,
+        80,
+        100
+      ]
+    },
+    {
+      "frame": 6,
+      "sourceFrame": 6,
+      "source": "docs/art-source/motions/production-144/mayano_top_gun/alpha.png",
+      "sourceSha256": "487ef5c5c96688261eb1d27fd5f7deb6513fbdd7b50637d2a92f5411f9e5af25",
+      "crop": [
+        554,
+        280,
+        725,
+        512
+      ],
+      "destination": [
+        283,
+        138,
+        73,
+        100
+      ]
+    },
+    {
+      "frame": 7,
+      "sourceFrame": 7,
+      "source": "docs/art-source/motions/production-144/mayano_top_gun/alpha.png",
+      "sourceSha256": "487ef5c5c96688261eb1d27fd5f7deb6513fbdd7b50637d2a92f5411f9e5af25",
+      "crop": [
+        804,
+        281,
+        978,
+        511
+      ],
+      "destination": [
+        410,
+        139,
+        75,
+        99
+      ]
+    },
+    {
+      "frame": 8,
+      "sourceFrame": 8,
+      "source": "docs/art-source/motions/production-144/mayano_top_gun/alpha.png",
+      "sourceSha256": "487ef5c5c96688261eb1d27fd5f7deb6513fbdd7b50637d2a92f5411f9e5af25",
+      "crop": [
+        45,
+        538,
+        196,
+        768
+      ],
+      "destination": [
+        31,
+        267,
+        65,
+        99
+      ]
+    },
+    {
+      "frame": 9,
+      "sourceFrame": 9,
+      "source": "docs/art-source/motions/production-144/mayano_top_gun/alpha.png",
+      "sourceSha256": "487ef5c5c96688261eb1d27fd5f7deb6513fbdd7b50637d2a92f5411f9e5af25",
+      "crop": [
+        304,
+        538,
+        483,
+        768
+      ],
+      "destination": [
+        153,
+        267,
+        77,
+        99
+      ]
+    },
+    {
+      "frame": 10,
+      "sourceFrame": 10,
+      "source": "docs/art-source/motions/production-144/mayano_top_gun/alpha.png",
+      "sourceSha256": "487ef5c5c96688261eb1d27fd5f7deb6513fbdd7b50637d2a92f5411f9e5af25",
+      "crop": [
+        544,
+        541,
+        747,
+        767
+      ],
+      "destination": [
+        276,
+        269,
+        87,
+        97
+      ]
+    },
+    {
+      "frame": 11,
+      "sourceFrame": 11,
+      "source": "docs/art-source/motions/production-144/mayano_top_gun/alpha.png",
+      "sourceSha256": "487ef5c5c96688261eb1d27fd5f7deb6513fbdd7b50637d2a92f5411f9e5af25",
+      "crop": [
+        815,
+        535,
+        964,
+        767
+      ],
+      "destination": [
+        416,
+        266,
+        64,
+        100
+      ]
+    },
+    {
+      "frame": 12,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/skill-revisions-2026-09-11/mayano_top_gun/generated.png",
+      "sourceSha256": "1c5fbaf35998609bf89f442d04413af711d189785cb210cfe415ea42fc3dde7d",
+      "crop": [
+        164,
+        10,
+        645,
+        496
+      ],
+      "destination": [
+        19,
+        403,
+        90,
+        91
+      ]
+    },
+    {
+      "frame": 13,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/skill-revisions-2026-09-11/mayano_top_gun/generated.png",
+      "sourceSha256": "1c5fbaf35998609bf89f442d04413af711d189785cb210cfe415ea42fc3dde7d",
+      "crop": [
+        860,
+        5,
+        1479,
+        496
+      ],
+      "destination": [
+        134,
+        402,
+        116,
+        92
+      ]
+    },
+    {
+      "frame": 14,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/skill-revisions-2026-09-11/mayano_top_gun/generated.png",
+      "sourceSha256": "1c5fbaf35998609bf89f442d04413af711d189785cb210cfe415ea42fc3dde7d",
+      "crop": [
+        119,
+        523,
+        720,
+        999
+      ],
+      "destination": [
+        263,
+        405,
+        113,
+        89
+      ]
+    },
+    {
+      "frame": 15,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/skill-revisions-2026-09-11/mayano_top_gun/generated.png",
+      "sourceSha256": "1c5fbaf35998609bf89f442d04413af711d189785cb210cfe415ea42fc3dde7d",
+      "crop": [
+        915,
+        521,
+        1392,
+        1006
+      ],
+      "destination": [
+        403,
+        403,
+        89,
+        91
+      ]
+    },
+    {
+      "frame": 16,
+      "sourceFrame": 16,
+      "source": "docs/art-source/motions/production-144/mayano_top_gun/alpha.png",
+      "sourceSha256": "487ef5c5c96688261eb1d27fd5f7deb6513fbdd7b50637d2a92f5411f9e5af25",
+      "crop": [
+        47,
+        1052,
+        217,
+        1264
+      ],
+      "destination": [
+        27,
+        531,
+        73,
+        91
+      ]
+    },
+    {
+      "frame": 17,
+      "sourceFrame": 17,
+      "source": "docs/art-source/motions/production-144/mayano_top_gun/alpha.png",
+      "sourceSha256": "487ef5c5c96688261eb1d27fd5f7deb6513fbdd7b50637d2a92f5411f9e5af25",
+      "crop": [
+        310,
+        1069,
+        477,
+        1264
+      ],
+      "destination": [
+        156,
+        538,
+        72,
+        84
+      ]
+    },
+    {
+      "frame": 18,
+      "sourceFrame": 18,
+      "source": "docs/art-source/motions/production-144/mayano_top_gun/alpha.png",
+      "sourceSha256": "487ef5c5c96688261eb1d27fd5f7deb6513fbdd7b50637d2a92f5411f9e5af25",
+      "crop": [
+        545,
+        1101,
+        707,
+        1264
+      ],
+      "destination": [
+        285,
+        552,
+        70,
+        70
+      ]
+    },
+    {
+      "frame": 19,
+      "sourceFrame": 19,
+      "source": "docs/art-source/motions/production-144/mayano_top_gun/alpha.png",
+      "sourceSha256": "487ef5c5c96688261eb1d27fd5f7deb6513fbdd7b50637d2a92f5411f9e5af25",
+      "crop": [
+        778,
+        1159,
+        1005,
+        1261
+      ],
+      "destination": [
+        399,
+        578,
+        98,
+        44
+      ]
+    },
+    {
+      "frame": 20,
+      "sourceFrame": 20,
+      "source": "docs/art-source/motions/production-144/mayano_top_gun/alpha.png",
+      "sourceSha256": "487ef5c5c96688261eb1d27fd5f7deb6513fbdd7b50637d2a92f5411f9e5af25",
+      "crop": [
+        61,
+        1282,
+        195,
+        1522
+      ],
+      "destination": [
+        35,
+        647,
+        58,
+        103
+      ]
+    },
+    {
+      "frame": 21,
+      "sourceFrame": 21,
+      "source": "docs/art-source/motions/production-144/mayano_top_gun/alpha.png",
+      "sourceSha256": "487ef5c5c96688261eb1d27fd5f7deb6513fbdd7b50637d2a92f5411f9e5af25",
+      "crop": [
+        317,
+        1280,
+        458,
+        1522
+      ],
+      "destination": [
+        161,
+        646,
+        61,
+        104
+      ]
+    },
+    {
+      "frame": 22,
+      "sourceFrame": 22,
+      "source": "docs/art-source/motions/production-144/mayano_top_gun/alpha.png",
+      "sourceSha256": "487ef5c5c96688261eb1d27fd5f7deb6513fbdd7b50637d2a92f5411f9e5af25",
+      "crop": [
+        562,
+        1287,
+        699,
+        1519
+      ],
+      "destination": [
+        290,
+        650,
+        59,
+        100
+      ]
+    },
+    {
+      "frame": 23,
+      "sourceFrame": 23,
+      "source": "docs/art-source/motions/production-144/mayano_top_gun/alpha.png",
+      "sourceSha256": "487ef5c5c96688261eb1d27fd5f7deb6513fbdd7b50637d2a92f5411f9e5af25",
+      "crop": [
+        828,
+        1285,
+        965,
+        1519
+      ],
+      "destination": [
+        418,
+        649,
+        59,
+        101
+      ]
+    }
+  ],
+  "skillRevision": {
+    "scale": 0.18739903069466882,
+    "review": "docs/art-source/motions/skill-revisions-2026-09-11/mayano_top_gun/review.json",
+    "beforeFrames": [
+      "5019c683b7559ff4a01a20eb908e231b14dce4f4b9a074d7f8ba8e2ae40601a7",
+      "e6984912cc6d7f6e5e5806fbba606ba1e997b323e440fd0da8c07fdb9edcc7cf",
+      "f7e3dec7b2d1cf292dfdb028b730fb2892d9ce8aaec7da2e51f184a7e9bf7a65",
+      "39d29926b6e9735ee997378e73e05b521783499931164fb461ff48050eb43fa8",
+      "37038cfb0fb55dddc17688973cc16c4e4c289ae366312b8aacfd9a3f7796416e",
+      "4d296d44811ec09d4517ae4d58f59d73a116f42be3f8ba22dc3c93098b26aff8",
+      "bedb3fec8cd540219d112c7462429ec524fb30c7ebad1a9e5c5793017b0c59a1",
+      "82c95e93f117e7730bb733dd6f93730c9a814aa9b893cf7cfef38eb241c02df7",
+      "a984e9ae77871a21aca14da3fab2a882322aabf683419cea0e5dce1f30f88b9a",
+      "af5185e2e9744630ecef2916292748502007d8fe8995aac64c559f23830a4799",
+      "d66736fcb72daca5b37e5585c346bc9f009d0e04bb2030866b1ea10d03ffd09e",
+      "9cd9888045242d1da209b8ae771da8f25e6d62ff52d2cc3847ff5695f04db127",
+      "a9313a149f843b48b638b8d5daf1ef0edd749702c500eab9f01b8a917c2474d8",
+      "e6f2cca0c3cb14b17496a57597637922876c020996e059120d774e08891407cc",
+      "e4a6986272f6bed36190e620aba69de1faf8a9f40a11c8ed6f659f2e0ac0582f",
+      "d97f135c2370f9a096bc5932ecb342bed25562e9305d48c82cfb613e9456e8ed",
+      "2f26bd1be6dac2e5c1decbfd602501d5457ecc1d4dcbafc8e740d2f2946d09a6",
+      "0223acac4143fc9666e79d00f8306825689fdf9ed1abd3f8ec07f7ad22603f59",
+      "bf7dce05ef8abe3afca4a5602ac6405962f6e63384533a203cda853807f75446",
+      "58ba6fd4e47aa0b5ada134a8c60585bec6e6523ccc0217e478f5dc0ec6b4d6c4",
+      "1470d1334adb0e88d8b9d72e9c62c131314312570939f1aaa16257267cdc17e6",
+      "c946a2cb514c92ac16e7d5ce67f55f7a5b7c9bfa5846878167fa66c929bec191",
+      "e89fc17e3aa691e02115335880bafd34d7c00f5a1c094aed04618693c073c17e",
+      "b1c963d6ddb9db8d27bfab5e7b012c68ce9764d25a2812d38bfb560c098efc79"
+    ],
+    "afterFrames": [
+      "5019c683b7559ff4a01a20eb908e231b14dce4f4b9a074d7f8ba8e2ae40601a7",
+      "e6984912cc6d7f6e5e5806fbba606ba1e997b323e440fd0da8c07fdb9edcc7cf",
+      "f7e3dec7b2d1cf292dfdb028b730fb2892d9ce8aaec7da2e51f184a7e9bf7a65",
+      "39d29926b6e9735ee997378e73e05b521783499931164fb461ff48050eb43fa8",
+      "37038cfb0fb55dddc17688973cc16c4e4c289ae366312b8aacfd9a3f7796416e",
+      "4d296d44811ec09d4517ae4d58f59d73a116f42be3f8ba22dc3c93098b26aff8",
+      "bedb3fec8cd540219d112c7462429ec524fb30c7ebad1a9e5c5793017b0c59a1",
+      "82c95e93f117e7730bb733dd6f93730c9a814aa9b893cf7cfef38eb241c02df7",
+      "a984e9ae77871a21aca14da3fab2a882322aabf683419cea0e5dce1f30f88b9a",
+      "af5185e2e9744630ecef2916292748502007d8fe8995aac64c559f23830a4799",
+      "d66736fcb72daca5b37e5585c346bc9f009d0e04bb2030866b1ea10d03ffd09e",
+      "9cd9888045242d1da209b8ae771da8f25e6d62ff52d2cc3847ff5695f04db127",
+      "aa4bf84cb27010545402dafcb0a48fc206aaa44be90f0558e3ec92c5b6d0473e",
+      "e168c566dfc03e9e32354c0f07827bc6becacfb52768d30fb3f3400e93d85b51",
+      "bcaedb543ea6731c9badb82788d7157240f90e3d352b9b05988718759cf15667",
+      "1051c9ac5fb12b188eab11d15e1509d258da318153d0b9664b2f2969e4792803",
+      "2f26bd1be6dac2e5c1decbfd602501d5457ecc1d4dcbafc8e740d2f2946d09a6",
+      "0223acac4143fc9666e79d00f8306825689fdf9ed1abd3f8ec07f7ad22603f59",
+      "bf7dce05ef8abe3afca4a5602ac6405962f6e63384533a203cda853807f75446",
+      "58ba6fd4e47aa0b5ada134a8c60585bec6e6523ccc0217e478f5dc0ec6b4d6c4",
+      "1470d1334adb0e88d8b9d72e9c62c131314312570939f1aaa16257267cdc17e6",
+      "c946a2cb514c92ac16e7d5ce67f55f7a5b7c9bfa5846878167fa66c929bec191",
+      "e89fc17e3aa691e02115335880bafd34d7c00f5a1c094aed04618693c073c17e",
+      "b1c963d6ddb9db8d27bfab5e7b012c68ce9764d25a2812d38bfb560c098efc79"
+    ],
+    "unchangedFrames": 20,
+    "changedFrames": [
+      12,
+      13,
+      14,
+      15
+    ]
+  }
+}

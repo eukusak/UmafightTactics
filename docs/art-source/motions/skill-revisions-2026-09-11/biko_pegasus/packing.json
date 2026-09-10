@@ -1,0 +1,506 @@
+{
+  "format": "uft-baked-frames-v1",
+  "scale": 0.4126984126984127,
+  "anchor": [
+    64,
+    110
+  ],
+  "runtimeSha256": "74c6b0b33314d0d7ce19394f7ba6d7fdd222e2d5b63c086997815eb185fd019b",
+  "frames": [
+    {
+      "frame": 0,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/production-144/biko_pegasus/alpha.png",
+      "sourceSha256": "953b1a6bba03f40df8c7f1424a2b9b5c45403d682c855dd22f0ea2f3adb94b82",
+      "crop": [
+        51,
+        22,
+        210,
+        264
+      ],
+      "destination": [
+        31,
+        10,
+        66,
+        100
+      ]
+    },
+    {
+      "frame": 1,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/production-144/biko_pegasus/alpha.png",
+      "sourceSha256": "953b1a6bba03f40df8c7f1424a2b9b5c45403d682c855dd22f0ea2f3adb94b82",
+      "crop": [
+        311,
+        24,
+        464,
+        264
+      ],
+      "destination": [
+        160,
+        11,
+        63,
+        99
+      ]
+    },
+    {
+      "frame": 2,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/production-144/biko_pegasus/alpha.png",
+      "sourceSha256": "953b1a6bba03f40df8c7f1424a2b9b5c45403d682c855dd22f0ea2f3adb94b82",
+      "crop": [
+        561,
+        23,
+        713,
+        264
+      ],
+      "destination": [
+        288,
+        11,
+        63,
+        99
+      ]
+    },
+    {
+      "frame": 3,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/production-144/biko_pegasus/alpha.png",
+      "sourceSha256": "953b1a6bba03f40df8c7f1424a2b9b5c45403d682c855dd22f0ea2f3adb94b82",
+      "crop": [
+        808,
+        24,
+        960,
+        264
+      ],
+      "destination": [
+        416,
+        11,
+        63,
+        99
+      ]
+    },
+    {
+      "frame": 4,
+      "sourceFrame": 4,
+      "source": "docs/art-source/motions/production-144/biko_pegasus/alpha.png",
+      "sourceSha256": "953b1a6bba03f40df8c7f1424a2b9b5c45403d682c855dd22f0ea2f3adb94b82",
+      "crop": [
+        39,
+        279,
+        214,
+        512
+      ],
+      "destination": [
+        28,
+        142,
+        72,
+        96
+      ]
+    },
+    {
+      "frame": 5,
+      "sourceFrame": 5,
+      "source": "docs/art-source/motions/production-144/biko_pegasus/alpha.png",
+      "sourceSha256": "953b1a6bba03f40df8c7f1424a2b9b5c45403d682c855dd22f0ea2f3adb94b82",
+      "crop": [
+        289,
+        283,
+        479,
+        512
+      ],
+      "destination": [
+        153,
+        143,
+        78,
+        95
+      ]
+    },
+    {
+      "frame": 6,
+      "sourceFrame": 6,
+      "source": "docs/art-source/motions/production-144/biko_pegasus/alpha.png",
+      "sourceSha256": "953b1a6bba03f40df8c7f1424a2b9b5c45403d682c855dd22f0ea2f3adb94b82",
+      "crop": [
+        541,
+        284,
+        725,
+        512
+      ],
+      "destination": [
+        282,
+        144,
+        76,
+        94
+      ]
+    },
+    {
+      "frame": 7,
+      "sourceFrame": 7,
+      "source": "docs/art-source/motions/production-144/biko_pegasus/alpha.png",
+      "sourceSha256": "953b1a6bba03f40df8c7f1424a2b9b5c45403d682c855dd22f0ea2f3adb94b82",
+      "crop": [
+        799,
+        285,
+        979,
+        512
+      ],
+      "destination": [
+        411,
+        144,
+        74,
+        94
+      ]
+    },
+    {
+      "frame": 8,
+      "sourceFrame": 8,
+      "source": "docs/art-source/motions/production-144/biko_pegasus/alpha.png",
+      "sourceSha256": "953b1a6bba03f40df8c7f1424a2b9b5c45403d682c855dd22f0ea2f3adb94b82",
+      "crop": [
+        45,
+        525,
+        250,
+        767
+      ],
+      "destination": [
+        21,
+        266,
+        85,
+        100
+      ]
+    },
+    {
+      "frame": 9,
+      "sourceFrame": 9,
+      "source": "docs/art-source/motions/production-144/biko_pegasus/alpha.png",
+      "sourceSha256": "953b1a6bba03f40df8c7f1424a2b9b5c45403d682c855dd22f0ea2f3adb94b82",
+      "crop": [
+        304,
+        531,
+        472,
+        763
+      ],
+      "destination": [
+        157,
+        270,
+        69,
+        96
+      ]
+    },
+    {
+      "frame": 10,
+      "sourceFrame": 10,
+      "source": "docs/art-source/motions/production-144/biko_pegasus/alpha.png",
+      "sourceSha256": "953b1a6bba03f40df8c7f1424a2b9b5c45403d682c855dd22f0ea2f3adb94b82",
+      "crop": [
+        540,
+        531,
+        746,
+        767
+      ],
+      "destination": [
+        277,
+        269,
+        85,
+        97
+      ]
+    },
+    {
+      "frame": 11,
+      "sourceFrame": 11,
+      "source": "docs/art-source/motions/production-144/biko_pegasus/alpha.png",
+      "sourceSha256": "953b1a6bba03f40df8c7f1424a2b9b5c45403d682c855dd22f0ea2f3adb94b82",
+      "crop": [
+        811,
+        531,
+        967,
+        768
+      ],
+      "destination": [
+        416,
+        268,
+        64,
+        98
+      ]
+    },
+    {
+      "frame": 12,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/skill-revisions-2026-09-11/biko_pegasus/generated.png",
+      "sourceSha256": "543d0335aa786cf098adcea2fc46d58fca09c76944aafd3c18222338dc3c26e5",
+      "crop": [
+        165,
+        14,
+        539,
+        484
+      ],
+      "destination": [
+        30,
+        409,
+        68,
+        85
+      ]
+    },
+    {
+      "frame": 13,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/skill-revisions-2026-09-11/biko_pegasus/generated.png",
+      "sourceSha256": "543d0335aa786cf098adcea2fc46d58fca09c76944aafd3c18222338dc3c26e5",
+      "crop": [
+        832,
+        16,
+        1470,
+        512
+      ],
+      "destination": [
+        134,
+        404,
+        116,
+        90
+      ]
+    },
+    {
+      "frame": 14,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/skill-revisions-2026-09-11/biko_pegasus/generated.png",
+      "sourceSha256": "543d0335aa786cf098adcea2fc46d58fca09c76944aafd3c18222338dc3c26e5",
+      "crop": [
+        145,
+        524,
+        571,
+        991
+      ],
+      "destination": [
+        281,
+        409,
+        77,
+        85
+      ]
+    },
+    {
+      "frame": 15,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/skill-revisions-2026-09-11/biko_pegasus/generated.png",
+      "sourceSha256": "543d0335aa786cf098adcea2fc46d58fca09c76944aafd3c18222338dc3c26e5",
+      "crop": [
+        892,
+        512,
+        1440,
+        999
+      ],
+      "destination": [
+        398,
+        405,
+        100,
+        89
+      ]
+    },
+    {
+      "frame": 16,
+      "sourceFrame": 16,
+      "source": "docs/art-source/motions/production-144/biko_pegasus/alpha.png",
+      "sourceSha256": "953b1a6bba03f40df8c7f1424a2b9b5c45403d682c855dd22f0ea2f3adb94b82",
+      "crop": [
+        53,
+        1055,
+        228,
+        1255
+      ],
+      "destination": [
+        28,
+        539,
+        72,
+        83
+      ]
+    },
+    {
+      "frame": 17,
+      "sourceFrame": 17,
+      "source": "docs/art-source/motions/production-144/biko_pegasus/alpha.png",
+      "sourceSha256": "953b1a6bba03f40df8c7f1424a2b9b5c45403d682c855dd22f0ea2f3adb94b82",
+      "crop": [
+        297,
+        1077,
+        490,
+        1255
+      ],
+      "destination": [
+        152,
+        549,
+        80,
+        73
+      ]
+    },
+    {
+      "frame": 18,
+      "sourceFrame": 18,
+      "source": "docs/art-source/motions/production-144/biko_pegasus/alpha.png",
+      "sourceSha256": "953b1a6bba03f40df8c7f1424a2b9b5c45403d682c855dd22f0ea2f3adb94b82",
+      "crop": [
+        546,
+        1069,
+        724,
+        1253
+      ],
+      "destination": [
+        283,
+        546,
+        73,
+        76
+      ]
+    },
+    {
+      "frame": 19,
+      "sourceFrame": 19,
+      "source": "docs/art-source/motions/production-144/biko_pegasus/alpha.png",
+      "sourceSha256": "953b1a6bba03f40df8c7f1424a2b9b5c45403d682c855dd22f0ea2f3adb94b82",
+      "crop": [
+        774,
+        1142,
+        995,
+        1255
+      ],
+      "destination": [
+        402,
+        575,
+        91,
+        47
+      ]
+    },
+    {
+      "frame": 20,
+      "sourceFrame": 20,
+      "source": "docs/art-source/motions/production-144/biko_pegasus/alpha.png",
+      "sourceSha256": "953b1a6bba03f40df8c7f1424a2b9b5c45403d682c855dd22f0ea2f3adb94b82",
+      "crop": [
+        60,
+        1270,
+        209,
+        1522
+      ],
+      "destination": [
+        33,
+        646,
+        61,
+        104
+      ]
+    },
+    {
+      "frame": 21,
+      "sourceFrame": 21,
+      "source": "docs/art-source/motions/production-144/biko_pegasus/alpha.png",
+      "sourceSha256": "953b1a6bba03f40df8c7f1424a2b9b5c45403d682c855dd22f0ea2f3adb94b82",
+      "crop": [
+        319,
+        1271,
+        465,
+        1521
+      ],
+      "destination": [
+        162,
+        647,
+        60,
+        103
+      ]
+    },
+    {
+      "frame": 22,
+      "sourceFrame": 22,
+      "source": "docs/art-source/motions/production-144/biko_pegasus/alpha.png",
+      "sourceSha256": "953b1a6bba03f40df8c7f1424a2b9b5c45403d682c855dd22f0ea2f3adb94b82",
+      "crop": [
+        554,
+        1273,
+        710,
+        1523
+      ],
+      "destination": [
+        288,
+        647,
+        64,
+        103
+      ]
+    },
+    {
+      "frame": 23,
+      "sourceFrame": 23,
+      "source": "docs/art-source/motions/production-144/biko_pegasus/alpha.png",
+      "sourceSha256": "953b1a6bba03f40df8c7f1424a2b9b5c45403d682c855dd22f0ea2f3adb94b82",
+      "crop": [
+        812,
+        1275,
+        958,
+        1523
+      ],
+      "destination": [
+        418,
+        648,
+        60,
+        102
+      ]
+    }
+  ],
+  "skillRevision": {
+    "scale": 0.18181818181818182,
+    "review": "docs/art-source/motions/skill-revisions-2026-09-11/biko_pegasus/review.json",
+    "beforeFrames": [
+      "c1fd6a4044e724463fd5e7e09a41e170a4e0be6cb105d5e985c7b7ba37c44a78",
+      "7d1836a8eb149f8de3ee20082fe5b00db838e515737f6df9de91cf8821089586",
+      "134fcb9e0767638122a14329fa6ba043fa2822589cdde5a1b46775bd946e4bdb",
+      "696710e3ee8713ef6f0cb1090126620f31149da6e3b85d62ce76003e5cc475b3",
+      "86eb09d9210cdb8412d39ef771299be1e52990d94cd523685b2378a504651e72",
+      "ffe120b96c53d1a12ecf5e0086a96f27cc0b72ff7a37a14058f988d65d4265fa",
+      "3959bd78fabc197a3d1b1b928133cd260b19df7a42ceb425827543c6751589b1",
+      "a5e6c97e020b40e8e279ef5e89f0e0a2c683760f413aa3fa27a0435f20053711",
+      "739793155b98d2cede72042c5850d9ce5999ca63f0f5e63d627e11735bf1b4b7",
+      "b1ecf38d34726778d956fa465a9efdab09bee030ab51b8b386c614e579c26e99",
+      "634792ea9ab5fec308ec9c3c423473c6d3abb32aeb8c2fc475bdc8a8ea9770a1",
+      "bd2b652bbfaa98e0ce3e8b592f6d0b2eb1d50a1ecbe9e190b796f8ed9ba13181",
+      "1f41347baa00c68b676bced6d0c9b18e879d06c9984348746aae0bc53c8947c0",
+      "50a7c48d4b0dc2a8601cb9dcb895342dd099ea02d66963302f1c3848241ca383",
+      "780ff9d5728d5fd39060cb9abdcddd87610a5549dd6114d9b152a512da84e06f",
+      "e692893ee5ceaf9d3b04a3fc4fb668bd836653932f716bb5d95e680c9a77e5ae",
+      "1b35af97954f80276ba336b7ce286d0c27e68af47fea754b7bd273e9beaf3bad",
+      "9eeb184df922654eb33240deca60a713950396997a2f1a163995c418fa45746c",
+      "8b0f7b736d803e0717218388c363285d18827682c6e6e9d46a8e8697ab0b2d49",
+      "db7cea979cfa7a4c392fd81c1752023881a3e35ead1a5927f411fa1da946cfb5",
+      "7bfb42b162c82cabc67a45918aca4a9e6d967f8072a1553ba6f39777b5f3958e",
+      "46632b359b8e86d146d1fca9884219335e42ff7d914541c7420fa6ba7c777e76",
+      "677bc4bc31da3bc7b9b946b9a6d4a74e4896a935fa595c85b38ba54a8b58a955",
+      "e17a5ffc9d892fcd1c47aadddf9e7e498e780d041584c375f3948fc05522622a"
+    ],
+    "afterFrames": [
+      "c1fd6a4044e724463fd5e7e09a41e170a4e0be6cb105d5e985c7b7ba37c44a78",
+      "7d1836a8eb149f8de3ee20082fe5b00db838e515737f6df9de91cf8821089586",
+      "134fcb9e0767638122a14329fa6ba043fa2822589cdde5a1b46775bd946e4bdb",
+      "696710e3ee8713ef6f0cb1090126620f31149da6e3b85d62ce76003e5cc475b3",
+      "86eb09d9210cdb8412d39ef771299be1e52990d94cd523685b2378a504651e72",
+      "ffe120b96c53d1a12ecf5e0086a96f27cc0b72ff7a37a14058f988d65d4265fa",
+      "3959bd78fabc197a3d1b1b928133cd260b19df7a42ceb425827543c6751589b1",
+      "a5e6c97e020b40e8e279ef5e89f0e0a2c683760f413aa3fa27a0435f20053711",
+      "739793155b98d2cede72042c5850d9ce5999ca63f0f5e63d627e11735bf1b4b7",
+      "b1ecf38d34726778d956fa465a9efdab09bee030ab51b8b386c614e579c26e99",
+      "634792ea9ab5fec308ec9c3c423473c6d3abb32aeb8c2fc475bdc8a8ea9770a1",
+      "bd2b652bbfaa98e0ce3e8b592f6d0b2eb1d50a1ecbe9e190b796f8ed9ba13181",
+      "93089c08ac5de37121c3257ab327bbba156299c14d3b9bccb5b1322df3b69fa8",
+      "9b1a51399bc61c8204dfc6070cb280d7b633a7771b16812453539222b4be44ee",
+      "308fac9aa34f38a406d58b7d0c3ba08e878badb491ad63773a786232175458ee",
+      "1ad8271c5252eb6f9ca9b419c725976212da66266cc2a541892bddf90725e0fb",
+      "1b35af97954f80276ba336b7ce286d0c27e68af47fea754b7bd273e9beaf3bad",
+      "9eeb184df922654eb33240deca60a713950396997a2f1a163995c418fa45746c",
+      "8b0f7b736d803e0717218388c363285d18827682c6e6e9d46a8e8697ab0b2d49",
+      "db7cea979cfa7a4c392fd81c1752023881a3e35ead1a5927f411fa1da946cfb5",
+      "7bfb42b162c82cabc67a45918aca4a9e6d967f8072a1553ba6f39777b5f3958e",
+      "46632b359b8e86d146d1fca9884219335e42ff7d914541c7420fa6ba7c777e76",
+      "677bc4bc31da3bc7b9b946b9a6d4a74e4896a935fa595c85b38ba54a8b58a955",
+      "e17a5ffc9d892fcd1c47aadddf9e7e498e780d041584c375f3948fc05522622a"
+    ],
+    "unchangedFrames": 20,
+    "changedFrames": [
+      12,
+      13,
+      14,
+      15
+    ]
+  }
+}

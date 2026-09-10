@@ -1,0 +1,506 @@
+{
+  "format": "uft-baked-frames-v1",
+  "scale": 0.43333333333333335,
+  "anchor": [
+    64,
+    110
+  ],
+  "runtimeSha256": "b5b42abda38163c96426afb73e7d299525376b79c04e4d0812c89f8ab8b12271",
+  "frames": [
+    {
+      "frame": 0,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/production-144/tamamo_cross/clean-alpha.png",
+      "sourceSha256": "6fffaf22c2ece17bc0ef1110b75eba62e1fb4c41dee381c1bee5b2d54f31aabb",
+      "crop": [
+        30,
+        37,
+        208,
+        270
+      ],
+      "destination": [
+        25,
+        9,
+        77,
+        101
+      ]
+    },
+    {
+      "frame": 1,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/production-144/tamamo_cross/clean-alpha.png",
+      "sourceSha256": "6fffaf22c2ece17bc0ef1110b75eba62e1fb4c41dee381c1bee5b2d54f31aabb",
+      "crop": [
+        283,
+        33,
+        464,
+        270
+      ],
+      "destination": [
+        153,
+        7,
+        78,
+        103
+      ]
+    },
+    {
+      "frame": 2,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/production-144/tamamo_cross/clean-alpha.png",
+      "sourceSha256": "6fffaf22c2ece17bc0ef1110b75eba62e1fb4c41dee381c1bee5b2d54f31aabb",
+      "crop": [
+        531,
+        33,
+        706,
+        270
+      ],
+      "destination": [
+        282,
+        7,
+        76,
+        103
+      ]
+    },
+    {
+      "frame": 3,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/production-144/tamamo_cross/clean-alpha.png",
+      "sourceSha256": "6fffaf22c2ece17bc0ef1110b75eba62e1fb4c41dee381c1bee5b2d54f31aabb",
+      "crop": [
+        795,
+        36,
+        993,
+        270
+      ],
+      "destination": [
+        405,
+        9,
+        86,
+        101
+      ]
+    },
+    {
+      "frame": 4,
+      "sourceFrame": 4,
+      "source": "docs/art-source/motions/production-144/tamamo_cross/clean-alpha.png",
+      "sourceSha256": "6fffaf22c2ece17bc0ef1110b75eba62e1fb4c41dee381c1bee5b2d54f31aabb",
+      "crop": [
+        16,
+        298,
+        231,
+        537
+      ],
+      "destination": [
+        17,
+        134,
+        93,
+        104
+      ]
+    },
+    {
+      "frame": 5,
+      "sourceFrame": 5,
+      "source": "docs/art-source/motions/production-144/tamamo_cross/clean-alpha.png",
+      "sourceSha256": "6fffaf22c2ece17bc0ef1110b75eba62e1fb4c41dee381c1bee5b2d54f31aabb",
+      "crop": [
+        273,
+        300,
+        482,
+        532
+      ],
+      "destination": [
+        146,
+        137,
+        91,
+        101
+      ]
+    },
+    {
+      "frame": 6,
+      "sourceFrame": 6,
+      "source": "docs/art-source/motions/production-144/tamamo_cross/clean-alpha.png",
+      "sourceSha256": "6fffaf22c2ece17bc0ef1110b75eba62e1fb4c41dee381c1bee5b2d54f31aabb",
+      "crop": [
+        529,
+        298,
+        742,
+        537
+      ],
+      "destination": [
+        274,
+        134,
+        92,
+        104
+      ]
+    },
+    {
+      "frame": 7,
+      "sourceFrame": 7,
+      "source": "docs/art-source/motions/production-144/tamamo_cross/clean-alpha.png",
+      "sourceSha256": "6fffaf22c2ece17bc0ef1110b75eba62e1fb4c41dee381c1bee5b2d54f31aabb",
+      "crop": [
+        787,
+        304,
+        998,
+        537
+      ],
+      "destination": [
+        402,
+        137,
+        91,
+        101
+      ]
+    },
+    {
+      "frame": 8,
+      "sourceFrame": 8,
+      "source": "docs/art-source/motions/production-144/tamamo_cross/clean-alpha.png",
+      "sourceSha256": "6fffaf22c2ece17bc0ef1110b75eba62e1fb4c41dee381c1bee5b2d54f31aabb",
+      "crop": [
+        26,
+        561,
+        210,
+        796
+      ],
+      "destination": [
+        24,
+        264,
+        80,
+        102
+      ]
+    },
+    {
+      "frame": 9,
+      "sourceFrame": 9,
+      "source": "docs/art-source/motions/production-144/tamamo_cross/clean-alpha.png",
+      "sourceSha256": "6fffaf22c2ece17bc0ef1110b75eba62e1fb4c41dee381c1bee5b2d54f31aabb",
+      "crop": [
+        274,
+        560,
+        480,
+        798
+      ],
+      "destination": [
+        147,
+        263,
+        89,
+        103
+      ]
+    },
+    {
+      "frame": 10,
+      "sourceFrame": 10,
+      "source": "docs/art-source/motions/production-144/tamamo_cross/clean-alpha.png",
+      "sourceSha256": "6fffaf22c2ece17bc0ef1110b75eba62e1fb4c41dee381c1bee5b2d54f31aabb",
+      "crop": [
+        528,
+        566,
+        757,
+        798
+      ],
+      "destination": [
+        270,
+        265,
+        99,
+        101
+      ]
+    },
+    {
+      "frame": 11,
+      "sourceFrame": 11,
+      "source": "docs/art-source/motions/production-144/tamamo_cross/clean-alpha.png",
+      "sourceSha256": "6fffaf22c2ece17bc0ef1110b75eba62e1fb4c41dee381c1bee5b2d54f31aabb",
+      "crop": [
+        792,
+        558,
+        986,
+        798
+      ],
+      "destination": [
+        406,
+        262,
+        84,
+        104
+      ]
+    },
+    {
+      "frame": 12,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/skill-revisions-2026-09-11/tamamo_cross/generated.png",
+      "sourceSha256": "4bc2fa50eb3459dfc70e1a66bfd66227aa765e0203197ba62c282cb0c155eb5e",
+      "crop": [
+        102,
+        56,
+        663,
+        464
+      ],
+      "destination": [
+        10,
+        416,
+        107,
+        78
+      ]
+    },
+    {
+      "frame": 13,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/skill-revisions-2026-09-11/tamamo_cross/generated.png",
+      "sourceSha256": "4bc2fa50eb3459dfc70e1a66bfd66227aa765e0203197ba62c282cb0c155eb5e",
+      "crop": [
+        871,
+        13,
+        1403,
+        496
+      ],
+      "destination": [
+        141,
+        402,
+        101,
+        92
+      ]
+    },
+    {
+      "frame": 14,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/skill-revisions-2026-09-11/tamamo_cross/generated.png",
+      "sourceSha256": "4bc2fa50eb3459dfc70e1a66bfd66227aa765e0203197ba62c282cb0c155eb5e",
+      "crop": [
+        150,
+        567,
+        759,
+        994
+      ],
+      "destination": [
+        262,
+        413,
+        116,
+        81
+      ]
+    },
+    {
+      "frame": 15,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/skill-revisions-2026-09-11/tamamo_cross/generated.png",
+      "sourceSha256": "4bc2fa50eb3459dfc70e1a66bfd66227aa765e0203197ba62c282cb0c155eb5e",
+      "crop": [
+        911,
+        515,
+        1335,
+        1011
+      ],
+      "destination": [
+        407,
+        400,
+        81,
+        94
+      ]
+    },
+    {
+      "frame": 16,
+      "sourceFrame": 16,
+      "source": "docs/art-source/motions/production-144/tamamo_cross/clean-alpha.png",
+      "sourceSha256": "6fffaf22c2ece17bc0ef1110b75eba62e1fb4c41dee381c1bee5b2d54f31aabb",
+      "crop": [
+        27,
+        1059,
+        217,
+        1277
+      ],
+      "destination": [
+        23,
+        528,
+        82,
+        94
+      ]
+    },
+    {
+      "frame": 17,
+      "sourceFrame": 17,
+      "source": "docs/art-source/motions/production-144/tamamo_cross/clean-alpha.png",
+      "sourceSha256": "6fffaf22c2ece17bc0ef1110b75eba62e1fb4c41dee381c1bee5b2d54f31aabb",
+      "crop": [
+        288,
+        1083,
+        496,
+        1276
+      ],
+      "destination": [
+        147,
+        538,
+        90,
+        84
+      ]
+    },
+    {
+      "frame": 18,
+      "sourceFrame": 18,
+      "source": "docs/art-source/motions/production-144/tamamo_cross/clean-alpha.png",
+      "sourceSha256": "6fffaf22c2ece17bc0ef1110b75eba62e1fb4c41dee381c1bee5b2d54f31aabb",
+      "crop": [
+        518,
+        1168,
+        754,
+        1276
+      ],
+      "destination": [
+        269,
+        575,
+        102,
+        47
+      ]
+    },
+    {
+      "frame": 19,
+      "sourceFrame": 19,
+      "source": "docs/art-source/motions/production-144/tamamo_cross/clean-alpha.png",
+      "sourceSha256": "6fffaf22c2ece17bc0ef1110b75eba62e1fb4c41dee381c1bee5b2d54f31aabb",
+      "crop": [
+        791,
+        1171,
+        1014,
+        1276
+      ],
+      "destination": [
+        399,
+        576,
+        97,
+        46
+      ]
+    },
+    {
+      "frame": 20,
+      "sourceFrame": 20,
+      "source": "docs/art-source/motions/production-144/tamamo_cross/clean-alpha.png",
+      "sourceSha256": "6fffaf22c2ece17bc0ef1110b75eba62e1fb4c41dee381c1bee5b2d54f31aabb",
+      "crop": [
+        21,
+        1293,
+        223,
+        1530
+      ],
+      "destination": [
+        20,
+        647,
+        88,
+        103
+      ]
+    },
+    {
+      "frame": 21,
+      "sourceFrame": 21,
+      "source": "docs/art-source/motions/production-144/tamamo_cross/clean-alpha.png",
+      "sourceSha256": "6fffaf22c2ece17bc0ef1110b75eba62e1fb4c41dee381c1bee5b2d54f31aabb",
+      "crop": [
+        279,
+        1294,
+        475,
+        1506
+      ],
+      "destination": [
+        149,
+        658,
+        85,
+        92
+      ]
+    },
+    {
+      "frame": 22,
+      "sourceFrame": 22,
+      "source": "docs/art-source/motions/production-144/tamamo_cross/clean-alpha.png",
+      "sourceSha256": "6fffaf22c2ece17bc0ef1110b75eba62e1fb4c41dee381c1bee5b2d54f31aabb",
+      "crop": [
+        527,
+        1295,
+        723,
+        1530
+      ],
+      "destination": [
+        277,
+        648,
+        85,
+        102
+      ]
+    },
+    {
+      "frame": 23,
+      "sourceFrame": 23,
+      "source": "docs/art-source/motions/production-144/tamamo_cross/clean-alpha.png",
+      "sourceSha256": "6fffaf22c2ece17bc0ef1110b75eba62e1fb4c41dee381c1bee5b2d54f31aabb",
+      "crop": [
+        799,
+        1294,
+        999,
+        1529
+      ],
+      "destination": [
+        404,
+        648,
+        87,
+        102
+      ]
+    }
+  ],
+  "skillRevision": {
+    "scale": 0.19047619047619047,
+    "review": "docs/art-source/motions/skill-revisions-2026-09-11/tamamo_cross/review.json",
+    "beforeFrames": [
+      "0ba97946dcbd9b7f48cc87e1abaff7860b296b23dc695ee1421ff0c7c61380f7",
+      "299c13dc7cac217b3531b91ba33a13680b87ed208740e4e8d10195d0ace13cef",
+      "87600ce280d178e39442af5fef72d88bbfc367de11dc949c8c0a76b6b0826b5b",
+      "6e0cd9ab1ff4440497597c428a7dac914c514f9cd7161fe7de42514385749576",
+      "3d48381a044c69d9e376ca31c86b5f271a5a61f9fe81882fc26c1e5895802fc8",
+      "b0d31930f176eceb6156516b5f658fd88377250f35ff86ba97ff0f686e0f5671",
+      "ac33b3a72025ea4d34597c22aac6358638c4bcc9acaefed414673f90f310a284",
+      "c62295b640f575dbc106c702b21ffc7c3bcd1f3996b2c2bdb7cdf1394576b141",
+      "364e7f13e659ff44e8986fca54c49b4668e9f509bab60b8660ed89aa38834b3c",
+      "a387359410be9af71c933328eec3a3ca3a03c7631b1b50b554c4ab85d80e9497",
+      "d2d9951c6562a91f01301d577a10c9771d62cb33a43b2ed03c563688a2e33b71",
+      "11bc1640ae1354d9fac1a7ecaadc8f2f2a0eadf13470001242d49fa8a4d0a863",
+      "055ba8a6283f08ca1b95a56103f691828f06a307c37ce086ea075d40e95d1c84",
+      "eda0855f8a7ead924bba3865867ffc14265a03cbb4dd8c58d592586c98894cb4",
+      "0f057505eb37f560bb2d27201201d4e19f8fa256b90ea8de31c76ed850d38134",
+      "727a1c0bf81fad0c2166e2615783914bad5b48a2bcc0960261c4b721b1bea996",
+      "1dae539c33445d4306d142bfc8eeeb00cc06ec801133db2ce555951cfd59b8ad",
+      "134d1f21abdf2dc221329627f6e7d0a5a3b97729f46525b6e222807fc5dddd91",
+      "ac3da2075a8c1a32274598bafc183ded36346d3a6ab9bb8fa97e85bbaf80662a",
+      "746c3523b5890f1422a150fd580a32b6f135b1977918c09e7877124eb4d8ebc7",
+      "21dfe25d502a7b630f76a9a5ddefb8800b2b4903b0440fd3afba50228adac57f",
+      "d6a31b5d2c6d6c0ebb2ef9e84764ee860fba8d80ecf2102d2b47e73dc3d5519c",
+      "277050d9bf8150dd43fe6d4cc6976fd5a2a06f7382169368c71f6cb945eb27b4",
+      "17ee1d50e8fc4fb739aba0b3cffa90b34944825003d04b18b96610a5d07b7496"
+    ],
+    "afterFrames": [
+      "0ba97946dcbd9b7f48cc87e1abaff7860b296b23dc695ee1421ff0c7c61380f7",
+      "299c13dc7cac217b3531b91ba33a13680b87ed208740e4e8d10195d0ace13cef",
+      "87600ce280d178e39442af5fef72d88bbfc367de11dc949c8c0a76b6b0826b5b",
+      "6e0cd9ab1ff4440497597c428a7dac914c514f9cd7161fe7de42514385749576",
+      "3d48381a044c69d9e376ca31c86b5f271a5a61f9fe81882fc26c1e5895802fc8",
+      "b0d31930f176eceb6156516b5f658fd88377250f35ff86ba97ff0f686e0f5671",
+      "ac33b3a72025ea4d34597c22aac6358638c4bcc9acaefed414673f90f310a284",
+      "c62295b640f575dbc106c702b21ffc7c3bcd1f3996b2c2bdb7cdf1394576b141",
+      "364e7f13e659ff44e8986fca54c49b4668e9f509bab60b8660ed89aa38834b3c",
+      "a387359410be9af71c933328eec3a3ca3a03c7631b1b50b554c4ab85d80e9497",
+      "d2d9951c6562a91f01301d577a10c9771d62cb33a43b2ed03c563688a2e33b71",
+      "11bc1640ae1354d9fac1a7ecaadc8f2f2a0eadf13470001242d49fa8a4d0a863",
+      "fef9d93b2f0595f90037d84927adf46c7d02d582853a7f39a61d87871de74b7b",
+      "0f987f844e98028571db608f4acfa65b1356220683657d086c29f30e305addd5",
+      "93d6ce00453109572ec793be62ce80fd0526d67a54c3a020289915acf11ef469",
+      "a41e4b75217c41332138d16fdb0fff76f2297ce2c14eb11d9c83f6cc2f25904d",
+      "1dae539c33445d4306d142bfc8eeeb00cc06ec801133db2ce555951cfd59b8ad",
+      "134d1f21abdf2dc221329627f6e7d0a5a3b97729f46525b6e222807fc5dddd91",
+      "ac3da2075a8c1a32274598bafc183ded36346d3a6ab9bb8fa97e85bbaf80662a",
+      "746c3523b5890f1422a150fd580a32b6f135b1977918c09e7877124eb4d8ebc7",
+      "21dfe25d502a7b630f76a9a5ddefb8800b2b4903b0440fd3afba50228adac57f",
+      "d6a31b5d2c6d6c0ebb2ef9e84764ee860fba8d80ecf2102d2b47e73dc3d5519c",
+      "277050d9bf8150dd43fe6d4cc6976fd5a2a06f7382169368c71f6cb945eb27b4",
+      "17ee1d50e8fc4fb739aba0b3cffa90b34944825003d04b18b96610a5d07b7496"
+    ],
+    "unchangedFrames": 20,
+    "changedFrames": [
+      12,
+      13,
+      14,
+      15
+    ]
+  }
+}

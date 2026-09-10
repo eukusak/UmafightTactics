@@ -1,0 +1,506 @@
+{
+  "format": "uft-baked-frames-v1",
+  "scale": 0.416,
+  "anchor": [
+    64,
+    110
+  ],
+  "runtimeSha256": "cf409ed4cbc5ef7e212fa13f21455cb5bb05a5add7c3ce3cf5385940ae1bcc1f",
+  "frames": [
+    {
+      "frame": 0,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/production-144/vodka/clean-alpha.png",
+      "sourceSha256": "636951a63ecf3d8058a358e16101b0152f53879f4d715a246b931b28d17842cb",
+      "crop": [
+        74,
+        10,
+        217,
+        256
+      ],
+      "destination": [
+        34,
+        8,
+        59,
+        102
+      ]
+    },
+    {
+      "frame": 1,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/production-144/vodka/clean-alpha.png",
+      "sourceSha256": "636951a63ecf3d8058a358e16101b0152f53879f4d715a246b931b28d17842cb",
+      "crop": [
+        324,
+        10,
+        466,
+        256
+      ],
+      "destination": [
+        162,
+        8,
+        59,
+        102
+      ]
+    },
+    {
+      "frame": 2,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/production-144/vodka/clean-alpha.png",
+      "sourceSha256": "636951a63ecf3d8058a358e16101b0152f53879f4d715a246b931b28d17842cb",
+      "crop": [
+        576,
+        11,
+        717,
+        256
+      ],
+      "destination": [
+        290,
+        8,
+        59,
+        102
+      ]
+    },
+    {
+      "frame": 3,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/production-144/vodka/clean-alpha.png",
+      "sourceSha256": "636951a63ecf3d8058a358e16101b0152f53879f4d715a246b931b28d17842cb",
+      "crop": [
+        827,
+        10,
+        969,
+        256
+      ],
+      "destination": [
+        418,
+        8,
+        59,
+        102
+      ]
+    },
+    {
+      "frame": 4,
+      "sourceFrame": 4,
+      "source": "docs/art-source/motions/production-144/vodka/clean-alpha.png",
+      "sourceSha256": "636951a63ecf3d8058a358e16101b0152f53879f4d715a246b931b28d17842cb",
+      "crop": [
+        48,
+        275,
+        227,
+        508
+      ],
+      "destination": [
+        27,
+        141,
+        74,
+        97
+      ]
+    },
+    {
+      "frame": 5,
+      "sourceFrame": 5,
+      "source": "docs/art-source/motions/production-144/vodka/clean-alpha.png",
+      "sourceSha256": "636951a63ecf3d8058a358e16101b0152f53879f4d715a246b931b28d17842cb",
+      "crop": [
+        306,
+        279,
+        482,
+        511
+      ],
+      "destination": [
+        155,
+        141,
+        73,
+        97
+      ]
+    },
+    {
+      "frame": 6,
+      "sourceFrame": 6,
+      "source": "docs/art-source/motions/production-144/vodka/clean-alpha.png",
+      "sourceSha256": "636951a63ecf3d8058a358e16101b0152f53879f4d715a246b931b28d17842cb",
+      "crop": [
+        556,
+        277,
+        732,
+        509
+      ],
+      "destination": [
+        283,
+        141,
+        73,
+        97
+      ]
+    },
+    {
+      "frame": 7,
+      "sourceFrame": 7,
+      "source": "docs/art-source/motions/production-144/vodka/clean-alpha.png",
+      "sourceSha256": "636951a63ecf3d8058a358e16101b0152f53879f4d715a246b931b28d17842cb",
+      "crop": [
+        811,
+        277,
+        986,
+        512
+      ],
+      "destination": [
+        411,
+        140,
+        73,
+        98
+      ]
+    },
+    {
+      "frame": 8,
+      "sourceFrame": 8,
+      "source": "docs/art-source/motions/production-144/vodka/clean-alpha.png",
+      "sourceSha256": "636951a63ecf3d8058a358e16101b0152f53879f4d715a246b931b28d17842cb",
+      "crop": [
+        51,
+        523,
+        208,
+        760
+      ],
+      "destination": [
+        31,
+        267,
+        65,
+        99
+      ]
+    },
+    {
+      "frame": 9,
+      "sourceFrame": 9,
+      "source": "docs/art-source/motions/production-144/vodka/clean-alpha.png",
+      "sourceSha256": "636951a63ecf3d8058a358e16101b0152f53879f4d715a246b931b28d17842cb",
+      "crop": [
+        306,
+        521,
+        472,
+        760
+      ],
+      "destination": [
+        157,
+        267,
+        69,
+        99
+      ]
+    },
+    {
+      "frame": 10,
+      "sourceFrame": 10,
+      "source": "docs/art-source/motions/production-144/vodka/clean-alpha.png",
+      "sourceSha256": "636951a63ecf3d8058a358e16101b0152f53879f4d715a246b931b28d17842cb",
+      "crop": [
+        560,
+        522,
+        737,
+        760
+      ],
+      "destination": [
+        283,
+        267,
+        74,
+        99
+      ]
+    },
+    {
+      "frame": 11,
+      "sourceFrame": 11,
+      "source": "docs/art-source/motions/production-144/vodka/clean-alpha.png",
+      "sourceSha256": "636951a63ecf3d8058a358e16101b0152f53879f4d715a246b931b28d17842cb",
+      "crop": [
+        819,
+        525,
+        975,
+        761
+      ],
+      "destination": [
+        415,
+        268,
+        65,
+        98
+      ]
+    },
+    {
+      "frame": 12,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/skill-revisions-2026-09-11/vodka/generated.png",
+      "sourceSha256": "39dfae9149e1baab383dda9d7e9ffd984aa34756cf3c2547ddd7b292b6e107c5",
+      "crop": [
+        172,
+        41,
+        567,
+        479
+      ],
+      "destination": [
+        26,
+        410,
+        75,
+        84
+      ]
+    },
+    {
+      "frame": 13,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/skill-revisions-2026-09-11/vodka/generated.png",
+      "sourceSha256": "39dfae9149e1baab383dda9d7e9ffd984aa34756cf3c2547ddd7b292b6e107c5",
+      "crop": [
+        828,
+        39,
+        1427,
+        479
+      ],
+      "destination": [
+        135,
+        410,
+        114,
+        84
+      ]
+    },
+    {
+      "frame": 14,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/skill-revisions-2026-09-11/vodka/generated.png",
+      "sourceSha256": "39dfae9149e1baab383dda9d7e9ffd984aa34756cf3c2547ddd7b292b6e107c5",
+      "crop": [
+        131,
+        523,
+        739,
+        980
+      ],
+      "destination": [
+        262,
+        407,
+        116,
+        87
+      ]
+    },
+    {
+      "frame": 15,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/skill-revisions-2026-09-11/vodka/generated.png",
+      "sourceSha256": "39dfae9149e1baab383dda9d7e9ffd984aa34756cf3c2547ddd7b292b6e107c5",
+      "crop": [
+        941,
+        530,
+        1267,
+        981
+      ],
+      "destination": [
+        417,
+        408,
+        62,
+        86
+      ]
+    },
+    {
+      "frame": 16,
+      "sourceFrame": 16,
+      "source": "docs/art-source/motions/production-144/vodka/clean-alpha.png",
+      "sourceSha256": "636951a63ecf3d8058a358e16101b0152f53879f4d715a246b931b28d17842cb",
+      "crop": [
+        54,
+        1034,
+        227,
+        1269
+      ],
+      "destination": [
+        28,
+        524,
+        72,
+        98
+      ]
+    },
+    {
+      "frame": 17,
+      "sourceFrame": 17,
+      "source": "docs/art-source/motions/production-144/vodka/clean-alpha.png",
+      "sourceSha256": "636951a63ecf3d8058a358e16101b0152f53879f4d715a246b931b28d17842cb",
+      "crop": [
+        304,
+        1092,
+        484,
+        1260
+      ],
+      "destination": [
+        154,
+        552,
+        75,
+        70
+      ]
+    },
+    {
+      "frame": 18,
+      "sourceFrame": 18,
+      "source": "docs/art-source/motions/production-144/vodka/clean-alpha.png",
+      "sourceSha256": "636951a63ecf3d8058a358e16101b0152f53879f4d715a246b931b28d17842cb",
+      "crop": [
+        550,
+        1101,
+        732,
+        1260
+      ],
+      "destination": [
+        282,
+        556,
+        76,
+        66
+      ]
+    },
+    {
+      "frame": 19,
+      "sourceFrame": 19,
+      "source": "docs/art-source/motions/production-144/vodka/clean-alpha.png",
+      "sourceSha256": "636951a63ecf3d8058a358e16101b0152f53879f4d715a246b931b28d17842cb",
+      "crop": [
+        784,
+        1161,
+        999,
+        1262
+      ],
+      "destination": [
+        403,
+        580,
+        89,
+        42
+      ]
+    },
+    {
+      "frame": 20,
+      "sourceFrame": 20,
+      "source": "docs/art-source/motions/production-144/vodka/clean-alpha.png",
+      "sourceSha256": "636951a63ecf3d8058a358e16101b0152f53879f4d715a246b931b28d17842cb",
+      "crop": [
+        75,
+        1282,
+        212,
+        1528
+      ],
+      "destination": [
+        35,
+        648,
+        57,
+        102
+      ]
+    },
+    {
+      "frame": 21,
+      "sourceFrame": 21,
+      "source": "docs/art-source/motions/production-144/vodka/clean-alpha.png",
+      "sourceSha256": "636951a63ecf3d8058a358e16101b0152f53879f4d715a246b931b28d17842cb",
+      "crop": [
+        314,
+        1276,
+        464,
+        1516
+      ],
+      "destination": [
+        161,
+        650,
+        62,
+        100
+      ]
+    },
+    {
+      "frame": 22,
+      "sourceFrame": 22,
+      "source": "docs/art-source/motions/production-144/vodka/clean-alpha.png",
+      "sourceSha256": "636951a63ecf3d8058a358e16101b0152f53879f4d715a246b931b28d17842cb",
+      "crop": [
+        563,
+        1282,
+        710,
+        1528
+      ],
+      "destination": [
+        289,
+        648,
+        61,
+        102
+      ]
+    },
+    {
+      "frame": 23,
+      "sourceFrame": 23,
+      "source": "docs/art-source/motions/production-144/vodka/clean-alpha.png",
+      "sourceSha256": "636951a63ecf3d8058a358e16101b0152f53879f4d715a246b931b28d17842cb",
+      "crop": [
+        826,
+        1280,
+        961,
+        1530
+      ],
+      "destination": [
+        420,
+        646,
+        56,
+        104
+      ]
+    }
+  ],
+  "skillRevision": {
+    "scale": 0.19078947368421054,
+    "review": "docs/art-source/motions/skill-revisions-2026-09-11/vodka/review.json",
+    "beforeFrames": [
+      "f5c226729b9c978bdaa417c0f83e34429be999e2057204688abfdadadf12ff88",
+      "2c302874c9a038b6ba470e7a47b06a95ced3e448880dace13bb20a1444188861",
+      "78aa53365b137b03b805ba74072c6e466b7ce9ee1cbf9359b241018edb555648",
+      "928160f8cee4a4ca4472fe1f6477d818d1e8770edc058c8cd7ab7ea1c03143af",
+      "f70d37365513e710d5d5042ee0ea240ded5377ad5c9520b2df1a17b996ec5647",
+      "c67bcccdfe4a216e5eae3e828dfe9d0d8bcfc205a39418a252e727f80601963a",
+      "fa1bf8f1f33e5d40379acd4adb0552aa381aca1040de768a9e7127db1c45018c",
+      "9523a1466f02b56bd627138dc64b94bd0a0030c059a8d164bb493460208f21da",
+      "b69564b18cc60585c529a456efddca174e61ebb3d858f7b0a0efbf828f66297a",
+      "f39a02902d548be6c538320a1d9f22ed407273e1a4f266c544c89058f953c6cd",
+      "f1ef218ed7c08d086a55bd693da61626156077f0cfd27cb4b844ff329b4103d2",
+      "097c8499e5b0e9a87c054d7c776dfa2632ad96dc3997cb10974f816d51876f32",
+      "ba3c1d6c84667a5370b459533e2da893e23b4998894375ae4ca025a60db2c10d",
+      "c9507ded135bc7bc83c0ff8e86af8b049dc51208011f56a5d4883fc0e4c28356",
+      "495ba70c9df6d394b5e2f932fcac1387a679240581867dd6780b0919703d71c0",
+      "8027c07c45d512fee1f4b662530539f189f7c277d4440e5c9655cb5a2a62ca13",
+      "c4eaff5587d5d274dc47e601485f0464de54e81269d0153bddb7f88057289ac1",
+      "40497088e3dd508b223ae6285ff413a0ff36735f9f71779b34a22a23e14d847a",
+      "fc7e69fa4b4197f3c273f24a04c03882e800e554b4130551d22e0e40046cbe48",
+      "c3fd8082086915a0915da218721236cffdfca9d43e6ce7ea412c72125114c490",
+      "3941ab19d2cd7958a0ad3433bdf4fe9feeab0fa0db0e9c5639f81673c3f1c896",
+      "0d4507c676a6bea19b4deee31df4a1210b65c009f90047e8d18e441a7272a9ab",
+      "990b69830c1f48261f33afaf57e6ffea6b0f7b77d7745447e5ff53c93d66cbe2",
+      "2d95f8f008635cc2d06f061aae837ad0a2db281075df6a3deeb2ca9fb3f769de"
+    ],
+    "afterFrames": [
+      "f5c226729b9c978bdaa417c0f83e34429be999e2057204688abfdadadf12ff88",
+      "2c302874c9a038b6ba470e7a47b06a95ced3e448880dace13bb20a1444188861",
+      "78aa53365b137b03b805ba74072c6e466b7ce9ee1cbf9359b241018edb555648",
+      "928160f8cee4a4ca4472fe1f6477d818d1e8770edc058c8cd7ab7ea1c03143af",
+      "f70d37365513e710d5d5042ee0ea240ded5377ad5c9520b2df1a17b996ec5647",
+      "c67bcccdfe4a216e5eae3e828dfe9d0d8bcfc205a39418a252e727f80601963a",
+      "fa1bf8f1f33e5d40379acd4adb0552aa381aca1040de768a9e7127db1c45018c",
+      "9523a1466f02b56bd627138dc64b94bd0a0030c059a8d164bb493460208f21da",
+      "b69564b18cc60585c529a456efddca174e61ebb3d858f7b0a0efbf828f66297a",
+      "f39a02902d548be6c538320a1d9f22ed407273e1a4f266c544c89058f953c6cd",
+      "f1ef218ed7c08d086a55bd693da61626156077f0cfd27cb4b844ff329b4103d2",
+      "097c8499e5b0e9a87c054d7c776dfa2632ad96dc3997cb10974f816d51876f32",
+      "2b7e3c1348bc1534f3ed116fd01b6f73eb3fbe142092124744c2f5d941819b05",
+      "27c94ce495d7cba6a2209f744ea61c7e0d6879796692af3fe7cd6ff03d3adf04",
+      "eb3c59ea9f2fdb9c42437e3b14ad1311f584e1eddd4249888c04faa127143a71",
+      "3685ea30257f413b42d01f561c1de4f9667a788cc8ae286bf4da1ce4caf081d5",
+      "c4eaff5587d5d274dc47e601485f0464de54e81269d0153bddb7f88057289ac1",
+      "40497088e3dd508b223ae6285ff413a0ff36735f9f71779b34a22a23e14d847a",
+      "fc7e69fa4b4197f3c273f24a04c03882e800e554b4130551d22e0e40046cbe48",
+      "c3fd8082086915a0915da218721236cffdfca9d43e6ce7ea412c72125114c490",
+      "3941ab19d2cd7958a0ad3433bdf4fe9feeab0fa0db0e9c5639f81673c3f1c896",
+      "0d4507c676a6bea19b4deee31df4a1210b65c009f90047e8d18e441a7272a9ab",
+      "990b69830c1f48261f33afaf57e6ffea6b0f7b77d7745447e5ff53c93d66cbe2",
+      "2d95f8f008635cc2d06f061aae837ad0a2db281075df6a3deeb2ca9fb3f769de"
+    ],
+    "unchangedFrames": 20,
+    "changedFrames": [
+      12,
+      13,
+      14,
+      15
+    ]
+  }
+}

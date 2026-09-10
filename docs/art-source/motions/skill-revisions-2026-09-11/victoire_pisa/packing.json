@@ -1,0 +1,506 @@
+{
+  "format": "uft-baked-frames-v1",
+  "scale": 0.38235294117647056,
+  "anchor": [
+    64,
+    110
+  ],
+  "runtimeSha256": "8ca71dd7851437cc3ded386163c161431ef0bd087a36dadf70e3c0897555180c",
+  "frames": [
+    {
+      "frame": 0,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/production-144/victoire_pisa/alpha.png",
+      "sourceSha256": "e854c1a5eba0d9ca8c6b1c3ae566585aaa185705c9908b7e70ff03c268699f1a",
+      "crop": [
+        59,
+        12,
+        207,
+        259
+      ],
+      "destination": [
+        35,
+        16,
+        57,
+        94
+      ]
+    },
+    {
+      "frame": 1,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/production-144/victoire_pisa/alpha.png",
+      "sourceSha256": "e854c1a5eba0d9ca8c6b1c3ae566585aaa185705c9908b7e70ff03c268699f1a",
+      "crop": [
+        302,
+        14,
+        457,
+        259
+      ],
+      "destination": [
+        162,
+        16,
+        59,
+        94
+      ]
+    },
+    {
+      "frame": 2,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/production-144/victoire_pisa/alpha.png",
+      "sourceSha256": "e854c1a5eba0d9ca8c6b1c3ae566585aaa185705c9908b7e70ff03c268699f1a",
+      "crop": [
+        538,
+        13,
+        710,
+        259
+      ],
+      "destination": [
+        287,
+        16,
+        66,
+        94
+      ]
+    },
+    {
+      "frame": 3,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/production-144/victoire_pisa/alpha.png",
+      "sourceSha256": "e854c1a5eba0d9ca8c6b1c3ae566585aaa185705c9908b7e70ff03c268699f1a",
+      "crop": [
+        796,
+        14,
+        954,
+        259
+      ],
+      "destination": [
+        418,
+        16,
+        60,
+        94
+      ]
+    },
+    {
+      "frame": 4,
+      "sourceFrame": 4,
+      "source": "docs/art-source/motions/production-144/victoire_pisa/alpha.png",
+      "sourceSha256": "e854c1a5eba0d9ca8c6b1c3ae566585aaa185705c9908b7e70ff03c268699f1a",
+      "crop": [
+        31,
+        283,
+        222,
+        512
+      ],
+      "destination": [
+        27,
+        150,
+        73,
+        88
+      ]
+    },
+    {
+      "frame": 5,
+      "sourceFrame": 5,
+      "source": "docs/art-source/motions/production-144/victoire_pisa/alpha.png",
+      "sourceSha256": "e854c1a5eba0d9ca8c6b1c3ae566585aaa185705c9908b7e70ff03c268699f1a",
+      "crop": [
+        279,
+        286,
+        478,
+        512
+      ],
+      "destination": [
+        154,
+        152,
+        76,
+        86
+      ]
+    },
+    {
+      "frame": 6,
+      "sourceFrame": 6,
+      "source": "docs/art-source/motions/production-144/victoire_pisa/alpha.png",
+      "sourceSha256": "e854c1a5eba0d9ca8c6b1c3ae566585aaa185705c9908b7e70ff03c268699f1a",
+      "crop": [
+        530,
+        288,
+        724,
+        512
+      ],
+      "destination": [
+        283,
+        152,
+        74,
+        86
+      ]
+    },
+    {
+      "frame": 7,
+      "sourceFrame": 7,
+      "source": "docs/art-source/motions/production-144/victoire_pisa/alpha.png",
+      "sourceSha256": "e854c1a5eba0d9ca8c6b1c3ae566585aaa185705c9908b7e70ff03c268699f1a",
+      "crop": [
+        786,
+        287,
+        978,
+        512
+      ],
+      "destination": [
+        411,
+        152,
+        73,
+        86
+      ]
+    },
+    {
+      "frame": 8,
+      "sourceFrame": 8,
+      "source": "docs/art-source/motions/production-144/victoire_pisa/alpha.png",
+      "sourceSha256": "e854c1a5eba0d9ca8c6b1c3ae566585aaa185705c9908b7e70ff03c268699f1a",
+      "crop": [
+        37,
+        525,
+        215,
+        772
+      ],
+      "destination": [
+        30,
+        272,
+        68,
+        94
+      ]
+    },
+    {
+      "frame": 9,
+      "sourceFrame": 9,
+      "source": "docs/art-source/motions/production-144/victoire_pisa/alpha.png",
+      "sourceSha256": "e854c1a5eba0d9ca8c6b1c3ae566585aaa185705c9908b7e70ff03c268699f1a",
+      "crop": [
+        289,
+        533,
+        484,
+        772
+      ],
+      "destination": [
+        154,
+        275,
+        75,
+        91
+      ]
+    },
+    {
+      "frame": 10,
+      "sourceFrame": 10,
+      "source": "docs/art-source/motions/production-144/victoire_pisa/alpha.png",
+      "sourceSha256": "e854c1a5eba0d9ca8c6b1c3ae566585aaa185705c9908b7e70ff03c268699f1a",
+      "crop": [
+        540,
+        537,
+        754,
+        771
+      ],
+      "destination": [
+        279,
+        277,
+        82,
+        89
+      ]
+    },
+    {
+      "frame": 11,
+      "sourceFrame": 11,
+      "source": "docs/art-source/motions/production-144/victoire_pisa/alpha.png",
+      "sourceSha256": "e854c1a5eba0d9ca8c6b1c3ae566585aaa185705c9908b7e70ff03c268699f1a",
+      "crop": [
+        804,
+        535,
+        981,
+        772
+      ],
+      "destination": [
+        414,
+        275,
+        68,
+        91
+      ]
+    },
+    {
+      "frame": 12,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/skill-revisions-2026-09-11/victoire_pisa/generated.png",
+      "sourceSha256": "0a9a87410ed5d0dafb2c31743d015fc51137b9d78593dfd8784fc49b162f2788",
+      "crop": [
+        115,
+        71,
+        518,
+        471
+      ],
+      "destination": [
+        35,
+        436,
+        58,
+        58
+      ]
+    },
+    {
+      "frame": 13,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/skill-revisions-2026-09-11/victoire_pisa/generated.png",
+      "sourceSha256": "0a9a87410ed5d0dafb2c31743d015fc51137b9d78593dfd8784fc49b162f2788",
+      "crop": [
+        771,
+        71,
+        1429,
+        468
+      ],
+      "destination": [
+        144,
+        437,
+        95,
+        57
+      ]
+    },
+    {
+      "frame": 14,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/skill-revisions-2026-09-11/victoire_pisa/generated.png",
+      "sourceSha256": "0a9a87410ed5d0dafb2c31743d015fc51137b9d78593dfd8784fc49b162f2788",
+      "crop": [
+        60,
+        562,
+        861,
+        971
+      ],
+      "destination": [
+        262,
+        435,
+        116,
+        59
+      ]
+    },
+    {
+      "frame": 15,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/skill-revisions-2026-09-11/victoire_pisa/generated.png",
+      "sourceSha256": "0a9a87410ed5d0dafb2c31743d015fc51137b9d78593dfd8784fc49b162f2788",
+      "crop": [
+        1007,
+        554,
+        1392,
+        975
+      ],
+      "destination": [
+        420,
+        433,
+        56,
+        61
+      ]
+    },
+    {
+      "frame": 16,
+      "sourceFrame": 16,
+      "source": "docs/art-source/motions/production-144/victoire_pisa/alpha.png",
+      "sourceSha256": "e854c1a5eba0d9ca8c6b1c3ae566585aaa185705c9908b7e70ff03c268699f1a",
+      "crop": [
+        43,
+        1016,
+        235,
+        1238
+      ],
+      "destination": [
+        27,
+        537,
+        73,
+        85
+      ]
+    },
+    {
+      "frame": 17,
+      "sourceFrame": 17,
+      "source": "docs/art-source/motions/production-144/victoire_pisa/alpha.png",
+      "sourceSha256": "e854c1a5eba0d9ca8c6b1c3ae566585aaa185705c9908b7e70ff03c268699f1a",
+      "crop": [
+        304,
+        1030,
+        477,
+        1237
+      ],
+      "destination": [
+        159,
+        543,
+        66,
+        79
+      ]
+    },
+    {
+      "frame": 18,
+      "sourceFrame": 18,
+      "source": "docs/art-source/motions/production-144/victoire_pisa/alpha.png",
+      "sourceSha256": "e854c1a5eba0d9ca8c6b1c3ae566585aaa185705c9908b7e70ff03c268699f1a",
+      "crop": [
+        545,
+        1061,
+        718,
+        1236
+      ],
+      "destination": [
+        287,
+        555,
+        66,
+        67
+      ]
+    },
+    {
+      "frame": 19,
+      "sourceFrame": 19,
+      "source": "docs/art-source/motions/production-144/victoire_pisa/alpha.png",
+      "sourceSha256": "e854c1a5eba0d9ca8c6b1c3ae566585aaa185705c9908b7e70ff03c268699f1a",
+      "crop": [
+        772,
+        1116,
+        1010,
+        1232
+      ],
+      "destination": [
+        402,
+        578,
+        91,
+        44
+      ]
+    },
+    {
+      "frame": 20,
+      "sourceFrame": 20,
+      "source": "docs/art-source/motions/production-144/victoire_pisa/alpha.png",
+      "sourceSha256": "e854c1a5eba0d9ca8c6b1c3ae566585aaa185705c9908b7e70ff03c268699f1a",
+      "crop": [
+        39,
+        1252,
+        207,
+        1524
+      ],
+      "destination": [
+        32,
+        646,
+        64,
+        104
+      ]
+    },
+    {
+      "frame": 21,
+      "sourceFrame": 21,
+      "source": "docs/art-source/motions/production-144/victoire_pisa/alpha.png",
+      "sourceSha256": "e854c1a5eba0d9ca8c6b1c3ae566585aaa185705c9908b7e70ff03c268699f1a",
+      "crop": [
+        296,
+        1252,
+        470,
+        1524
+      ],
+      "destination": [
+        158,
+        646,
+        67,
+        104
+      ]
+    },
+    {
+      "frame": 22,
+      "sourceFrame": 22,
+      "source": "docs/art-source/motions/production-144/victoire_pisa/alpha.png",
+      "sourceSha256": "e854c1a5eba0d9ca8c6b1c3ae566585aaa185705c9908b7e70ff03c268699f1a",
+      "crop": [
+        549,
+        1252,
+        716,
+        1508
+      ],
+      "destination": [
+        288,
+        652,
+        64,
+        98
+      ]
+    },
+    {
+      "frame": 23,
+      "sourceFrame": 23,
+      "source": "docs/art-source/motions/production-144/victoire_pisa/alpha.png",
+      "sourceSha256": "e854c1a5eba0d9ca8c6b1c3ae566585aaa185705c9908b7e70ff03c268699f1a",
+      "crop": [
+        787,
+        1252,
+        980,
+        1524
+      ],
+      "destination": [
+        411,
+        646,
+        74,
+        104
+      ]
+    }
+  ],
+  "skillRevision": {
+    "scale": 0.14481897627965043,
+    "review": "docs/art-source/motions/skill-revisions-2026-09-11/victoire_pisa/review.json",
+    "beforeFrames": [
+      "9143bdb041ee0bc807f97a4f5d1318a24e50ba8830aa11699c78fdb7be4c1b0b",
+      "d66c4094123a81927ea0609a1beb530692d3ad4401dba8e0b4e96d80c9d46512",
+      "9589e8b8cbf6dd54ea38a5cff4a7ef7d813818a05e9d773483e6c94c27afc95a",
+      "73017d8073d6e0a13c1cba73fb3554f70744e3a00a4bd46db5221404201d6759",
+      "c8de4821c59638231ccc5219572c86bccf1806f18e3a22071dba60699d968000",
+      "928c5a8c4ec6287eb7ba74f33c0dcde72190a291f54911fcbbcf75f680637f7e",
+      "e0f72a87008532a764066ce79deb8827c46e88cdbb48883e8d4b5330a098a6ed",
+      "9a302d670e04e3dd3c54ff9b3edfb0f7e9e67e4e320cd31e96b1cc3a8742eeea",
+      "1877a80eefe2421c895cbd4c5a86b81a7a655ba92ca0ac48f6a1ba13e932f53d",
+      "6ec9584d895bc03581123a42b49daf209f5270620af15ab2ce0351af0ad2b636",
+      "0307bde1f657c2a261e1cd94594f35eddef8cc7d2b6319889b59f6be687e6232",
+      "c373dc5cbaa24c8410dd248b73c0f064ff4965f8d62754a7378174b9e9dc13e2",
+      "a1197ee0b7bfd4b2e74be3f0001361b540aae2570ccc0d32b92da7a3f40c6b76",
+      "d8a789b9690c72259b0044f48e7c421003b57931d8293ab27514624f88ef9d91",
+      "d823d3f37f0b0a2a7e32c7a2597c3fa74a078b9998d9beedaf4ecd8d4fbe393f",
+      "c5f0fcb8402302e8ddf88623e6da790a2a35071b6100d6552c028524333bf830",
+      "01ee2ab3459458b655bf6ed7c9eb0ccd1764c7aa7645bf14f2c6f1cac4365344",
+      "ca86cf57b05d933ce6afca2e8063385ca2f28fb1f439e2082d1736bb4a8e9e3f",
+      "be3a185a1d41107d9c98acda5183247c46387dd3937fafed79c086009263299b",
+      "f66bfc4e3628e9fb6af921c28466009a54e170569030dc8ff855d7b042b8030e",
+      "8887a62a76c2d04f07908f067bfb99715d4253d39bd3a3f3ff09bf0aedd7051f",
+      "b5d165b5d551ac6868da3fddbefd2a572465672d51759f7454d1aa7be7a0a90c",
+      "db91447d22c109d90bc65bc7eea5a5cc6cb901dd162b760f2f7e752260341698",
+      "734702b1ae18bc5e255e26c24e1f4b3d5c8aa7c7c6eaeef3e60f696de72f2627"
+    ],
+    "afterFrames": [
+      "9143bdb041ee0bc807f97a4f5d1318a24e50ba8830aa11699c78fdb7be4c1b0b",
+      "d66c4094123a81927ea0609a1beb530692d3ad4401dba8e0b4e96d80c9d46512",
+      "9589e8b8cbf6dd54ea38a5cff4a7ef7d813818a05e9d773483e6c94c27afc95a",
+      "73017d8073d6e0a13c1cba73fb3554f70744e3a00a4bd46db5221404201d6759",
+      "c8de4821c59638231ccc5219572c86bccf1806f18e3a22071dba60699d968000",
+      "928c5a8c4ec6287eb7ba74f33c0dcde72190a291f54911fcbbcf75f680637f7e",
+      "e0f72a87008532a764066ce79deb8827c46e88cdbb48883e8d4b5330a098a6ed",
+      "9a302d670e04e3dd3c54ff9b3edfb0f7e9e67e4e320cd31e96b1cc3a8742eeea",
+      "1877a80eefe2421c895cbd4c5a86b81a7a655ba92ca0ac48f6a1ba13e932f53d",
+      "6ec9584d895bc03581123a42b49daf209f5270620af15ab2ce0351af0ad2b636",
+      "0307bde1f657c2a261e1cd94594f35eddef8cc7d2b6319889b59f6be687e6232",
+      "c373dc5cbaa24c8410dd248b73c0f064ff4965f8d62754a7378174b9e9dc13e2",
+      "36ffb7a7ddcf0e962634ce6a32bb03f21230afdfed4b53c7c53e9f90c58b61c4",
+      "873cb44d5388035dd4bd2ff0b8d8ea5df4be7621bbff9c6116b785188a52fba3",
+      "e8b1b21f0b871f28c2a7067b69cabaa9d32dd4d1581dd1a3feab69c518b39753",
+      "e8646f33b3fa9eb8ef9d5638b5ea053be4b367535c51708b9279a3ddcdc0af8a",
+      "01ee2ab3459458b655bf6ed7c9eb0ccd1764c7aa7645bf14f2c6f1cac4365344",
+      "ca86cf57b05d933ce6afca2e8063385ca2f28fb1f439e2082d1736bb4a8e9e3f",
+      "be3a185a1d41107d9c98acda5183247c46387dd3937fafed79c086009263299b",
+      "f66bfc4e3628e9fb6af921c28466009a54e170569030dc8ff855d7b042b8030e",
+      "8887a62a76c2d04f07908f067bfb99715d4253d39bd3a3f3ff09bf0aedd7051f",
+      "b5d165b5d551ac6868da3fddbefd2a572465672d51759f7454d1aa7be7a0a90c",
+      "db91447d22c109d90bc65bc7eea5a5cc6cb901dd162b760f2f7e752260341698",
+      "734702b1ae18bc5e255e26c24e1f4b3d5c8aa7c7c6eaeef3e60f696de72f2627"
+    ],
+    "unchangedFrames": 20,
+    "changedFrames": [
+      12,
+      13,
+      14,
+      15
+    ]
+  }
+}

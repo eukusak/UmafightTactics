@@ -1,0 +1,506 @@
+{
+  "format": "uft-baked-frames-v1",
+  "scale": 0.40625,
+  "anchor": [
+    64,
+    110
+  ],
+  "runtimeSha256": "51770cbc814f5dace2831305da04cb0990f10593b123f8ad0747072e15f10785",
+  "frames": [
+    {
+      "frame": 0,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/production-144/titleholder/alpha.png",
+      "sourceSha256": "c53ac19c72162565b8db45c9edfc29f22001e56c57ec146ea9e29aa669af5696",
+      "crop": [
+        57,
+        19,
+        218,
+        257
+      ],
+      "destination": [
+        31,
+        13,
+        65,
+        97
+      ]
+    },
+    {
+      "frame": 1,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/production-144/titleholder/alpha.png",
+      "sourceSha256": "c53ac19c72162565b8db45c9edfc29f22001e56c57ec146ea9e29aa669af5696",
+      "crop": [
+        302,
+        20,
+        464,
+        257
+      ],
+      "destination": [
+        159,
+        14,
+        66,
+        96
+      ]
+    },
+    {
+      "frame": 2,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/production-144/titleholder/alpha.png",
+      "sourceSha256": "c53ac19c72162565b8db45c9edfc29f22001e56c57ec146ea9e29aa669af5696",
+      "crop": [
+        552,
+        19,
+        711,
+        257
+      ],
+      "destination": [
+        287,
+        13,
+        65,
+        97
+      ]
+    },
+    {
+      "frame": 3,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/production-144/titleholder/alpha.png",
+      "sourceSha256": "c53ac19c72162565b8db45c9edfc29f22001e56c57ec146ea9e29aa669af5696",
+      "crop": [
+        806,
+        20,
+        965,
+        257
+      ],
+      "destination": [
+        415,
+        14,
+        65,
+        96
+      ]
+    },
+    {
+      "frame": 4,
+      "sourceFrame": 4,
+      "source": "docs/art-source/motions/production-144/titleholder/alpha.png",
+      "sourceSha256": "c53ac19c72162565b8db45c9edfc29f22001e56c57ec146ea9e29aa669af5696",
+      "crop": [
+        42,
+        271,
+        221,
+        508
+      ],
+      "destination": [
+        27,
+        142,
+        73,
+        96
+      ]
+    },
+    {
+      "frame": 5,
+      "sourceFrame": 5,
+      "source": "docs/art-source/motions/production-144/titleholder/alpha.png",
+      "sourceSha256": "c53ac19c72162565b8db45c9edfc29f22001e56c57ec146ea9e29aa669af5696",
+      "crop": [
+        292,
+        279,
+        475,
+        510
+      ],
+      "destination": [
+        155,
+        144,
+        74,
+        94
+      ]
+    },
+    {
+      "frame": 6,
+      "sourceFrame": 6,
+      "source": "docs/art-source/motions/production-144/titleholder/alpha.png",
+      "sourceSha256": "c53ac19c72162565b8db45c9edfc29f22001e56c57ec146ea9e29aa669af5696",
+      "crop": [
+        542,
+        273,
+        722,
+        510
+      ],
+      "destination": [
+        283,
+        142,
+        73,
+        96
+      ]
+    },
+    {
+      "frame": 7,
+      "sourceFrame": 7,
+      "source": "docs/art-source/motions/production-144/titleholder/alpha.png",
+      "sourceSha256": "c53ac19c72162565b8db45c9edfc29f22001e56c57ec146ea9e29aa669af5696",
+      "crop": [
+        801,
+        277,
+        986,
+        508
+      ],
+      "destination": [
+        410,
+        144,
+        75,
+        94
+      ]
+    },
+    {
+      "frame": 8,
+      "sourceFrame": 8,
+      "source": "docs/art-source/motions/production-144/titleholder/alpha.png",
+      "sourceSha256": "c53ac19c72162565b8db45c9edfc29f22001e56c57ec146ea9e29aa669af5696",
+      "crop": [
+        47,
+        513,
+        223,
+        751
+      ],
+      "destination": [
+        28,
+        269,
+        72,
+        97
+      ]
+    },
+    {
+      "frame": 9,
+      "sourceFrame": 9,
+      "source": "docs/art-source/motions/production-144/titleholder/alpha.png",
+      "sourceSha256": "c53ac19c72162565b8db45c9edfc29f22001e56c57ec146ea9e29aa669af5696",
+      "crop": [
+        299,
+        519,
+        477,
+        751
+      ],
+      "destination": [
+        156,
+        272,
+        72,
+        94
+      ]
+    },
+    {
+      "frame": 10,
+      "sourceFrame": 10,
+      "source": "docs/art-source/motions/production-144/titleholder/alpha.png",
+      "sourceSha256": "c53ac19c72162565b8db45c9edfc29f22001e56c57ec146ea9e29aa669af5696",
+      "crop": [
+        551,
+        522,
+        756,
+        751
+      ],
+      "destination": [
+        278,
+        273,
+        83,
+        93
+      ]
+    },
+    {
+      "frame": 11,
+      "sourceFrame": 11,
+      "source": "docs/art-source/motions/production-144/titleholder/alpha.png",
+      "sourceSha256": "c53ac19c72162565b8db45c9edfc29f22001e56c57ec146ea9e29aa669af5696",
+      "crop": [
+        816,
+        519,
+        987,
+        751
+      ],
+      "destination": [
+        413,
+        272,
+        69,
+        94
+      ]
+    },
+    {
+      "frame": 12,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/skill-revisions-2026-09-11/titleholder/generated.png",
+      "sourceSha256": "a4746150b5912624c0e11dc89a701dded383afff257af508cd43af9e638dbf3a",
+      "crop": [
+        197,
+        45,
+        638,
+        474
+      ],
+      "destination": [
+        21,
+        410,
+        86,
+        84
+      ]
+    },
+    {
+      "frame": 13,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/skill-revisions-2026-09-11/titleholder/generated.png",
+      "sourceSha256": "a4746150b5912624c0e11dc89a701dded383afff257af508cd43af9e638dbf3a",
+      "crop": [
+        886,
+        45,
+        1439,
+        491
+      ],
+      "destination": [
+        138,
+        407,
+        108,
+        87
+      ]
+    },
+    {
+      "frame": 14,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/skill-revisions-2026-09-11/titleholder/generated.png",
+      "sourceSha256": "a4746150b5912624c0e11dc89a701dded383afff257af508cd43af9e638dbf3a",
+      "crop": [
+        120,
+        541,
+        715,
+        989
+      ],
+      "destination": [
+        262,
+        407,
+        116,
+        87
+      ]
+    },
+    {
+      "frame": 15,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/skill-revisions-2026-09-11/titleholder/generated.png",
+      "sourceSha256": "a4746150b5912624c0e11dc89a701dded383afff257af508cd43af9e638dbf3a",
+      "crop": [
+        926,
+        552,
+        1329,
+        994
+      ],
+      "destination": [
+        408,
+        408,
+        79,
+        86
+      ]
+    },
+    {
+      "frame": 16,
+      "sourceFrame": 16,
+      "source": "docs/art-source/motions/production-144/titleholder/alpha.png",
+      "sourceSha256": "c53ac19c72162565b8db45c9edfc29f22001e56c57ec146ea9e29aa669af5696",
+      "crop": [
+        39,
+        1025,
+        205,
+        1245
+      ],
+      "destination": [
+        30,
+        533,
+        67,
+        89
+      ]
+    },
+    {
+      "frame": 17,
+      "sourceFrame": 17,
+      "source": "docs/art-source/motions/production-144/titleholder/alpha.png",
+      "sourceSha256": "c53ac19c72162565b8db45c9edfc29f22001e56c57ec146ea9e29aa669af5696",
+      "crop": [
+        307,
+        1044,
+        477,
+        1245
+      ],
+      "destination": [
+        157,
+        540,
+        69,
+        82
+      ]
+    },
+    {
+      "frame": 18,
+      "sourceFrame": 18,
+      "source": "docs/art-source/motions/production-144/titleholder/alpha.png",
+      "sourceSha256": "c53ac19c72162565b8db45c9edfc29f22001e56c57ec146ea9e29aa669af5696",
+      "crop": [
+        530,
+        1075,
+        709,
+        1246
+      ],
+      "destination": [
+        283,
+        553,
+        73,
+        69
+      ]
+    },
+    {
+      "frame": 19,
+      "sourceFrame": 19,
+      "source": "docs/art-source/motions/production-144/titleholder/alpha.png",
+      "sourceSha256": "c53ac19c72162565b8db45c9edfc29f22001e56c57ec146ea9e29aa669af5696",
+      "crop": [
+        763,
+        1128,
+        1013,
+        1248
+      ],
+      "destination": [
+        397,
+        573,
+        102,
+        49
+      ]
+    },
+    {
+      "frame": 20,
+      "sourceFrame": 20,
+      "source": "docs/art-source/motions/production-144/titleholder/alpha.png",
+      "sourceSha256": "c53ac19c72162565b8db45c9edfc29f22001e56c57ec146ea9e29aa669af5696",
+      "crop": [
+        47,
+        1263,
+        199,
+        1519
+      ],
+      "destination": [
+        33,
+        646,
+        62,
+        104
+      ]
+    },
+    {
+      "frame": 21,
+      "sourceFrame": 21,
+      "source": "docs/art-source/motions/production-144/titleholder/alpha.png",
+      "sourceSha256": "c53ac19c72162565b8db45c9edfc29f22001e56c57ec146ea9e29aa669af5696",
+      "crop": [
+        311,
+        1264,
+        465,
+        1519
+      ],
+      "destination": [
+        160,
+        646,
+        63,
+        104
+      ]
+    },
+    {
+      "frame": 22,
+      "sourceFrame": 22,
+      "source": "docs/art-source/motions/production-144/titleholder/alpha.png",
+      "sourceSha256": "c53ac19c72162565b8db45c9edfc29f22001e56c57ec146ea9e29aa669af5696",
+      "crop": [
+        542,
+        1261,
+        715,
+        1494
+      ],
+      "destination": [
+        285,
+        655,
+        70,
+        95
+      ]
+    },
+    {
+      "frame": 23,
+      "sourceFrame": 23,
+      "source": "docs/art-source/motions/production-144/titleholder/alpha.png",
+      "sourceSha256": "c53ac19c72162565b8db45c9edfc29f22001e56c57ec146ea9e29aa669af5696",
+      "crop": [
+        815,
+        1265,
+        965,
+        1519
+      ],
+      "destination": [
+        417,
+        647,
+        61,
+        103
+      ]
+    }
+  ],
+  "skillRevision": {
+    "scale": 0.1949579831932773,
+    "review": "docs/art-source/motions/skill-revisions-2026-09-11/titleholder/review.json",
+    "beforeFrames": [
+      "06b3cf3f4558c37ac29c2218183515bded1c26c04303c960ef7fb27d331824cb",
+      "88700f958a162d784f65fd0d6b4961177a2c78aa6ec4f96ea39856a2f524791d",
+      "5fb27d7262ea224cef709591bec2ff1be667994839616df0ceb6d9ba74c8f025",
+      "19e7528f1b80ba30990dc04a929d3ceaabade705cc0bc395a17ad7fcfd3541b2",
+      "d5c596d983f53199a5c35c0c026bd305dde38b550c6c8de9e6390fe8e491e645",
+      "3b99584ebcecc7b25e7ef5c685265580a3f834fd42288f293c98503f36b4ac6a",
+      "f3d2ab784373600f9dfd9df8d64fb3c36e0df761d26687fdc216bebf124574e0",
+      "496af3bd4a822e85ec9465b8a327c0a695a7efe3d405371e8565ebf07751dd4f",
+      "2d62f5a274292e9e77d510b0f61aa182820ad0c6c18cfd44da0de136aa822854",
+      "ec93b10203cc433401aa8848f149087bb8753a047d8f813c4ea84c91eb1b486b",
+      "f1b2b381cb28ee01e07fe62d3be680e865e1cd1d8c7e02134f33d34fd86dc988",
+      "477d28e60fbc229300b79ae39ffc9a969537a49c67268568d5ba60a626b1a7b6",
+      "4c6fbbd29a13e1569c47ba2104568087a13ad5c4d3e7904c7a6cc99751b9644a",
+      "eb73ff5d50f960867551a5fd2ff0b61072e1b67e8b981bbc2792cabf39cb365e",
+      "8985fdb246f4304b02466bcf301f09ab4b20a3dd6fa66308f37d10b730f901fe",
+      "b1b07462f013b7ddad02bef9a348a992e55cbeab44f0f3c937e6b9f52876cd2f",
+      "42fbf853ffa0a502df48af3774e87bfe0f0db2f9e4b245cb19c2c06095faf17d",
+      "5f071ce6b17c93db62aa695439eb541a72dfa67400d5de4ef5d5b60425b8c54d",
+      "88aa7c8c67b13b356ceb31b6be186097ee20141c06f997d7d662a2dac4a42058",
+      "31e09958d68772f10586f1b8c9259516f7242c257b5ea4a8ae7efff3cebf2898",
+      "2f9d78680e69ecc1f83d9ec27f9edf47c55851abc66e8eab8c39d1da83b68d12",
+      "e03018a66ffa6682c0fd95b00294497e0872858239bdb8db7d1debdb015967c5",
+      "a45d8ca18fb6566de44cf2abe6a4338d8303a030d463eea148060f055ee8f1c0",
+      "482f171508ac6b59df33226c93c8c4a88b217a29e888d59d415142a288ad3ec3"
+    ],
+    "afterFrames": [
+      "06b3cf3f4558c37ac29c2218183515bded1c26c04303c960ef7fb27d331824cb",
+      "88700f958a162d784f65fd0d6b4961177a2c78aa6ec4f96ea39856a2f524791d",
+      "5fb27d7262ea224cef709591bec2ff1be667994839616df0ceb6d9ba74c8f025",
+      "19e7528f1b80ba30990dc04a929d3ceaabade705cc0bc395a17ad7fcfd3541b2",
+      "d5c596d983f53199a5c35c0c026bd305dde38b550c6c8de9e6390fe8e491e645",
+      "3b99584ebcecc7b25e7ef5c685265580a3f834fd42288f293c98503f36b4ac6a",
+      "f3d2ab784373600f9dfd9df8d64fb3c36e0df761d26687fdc216bebf124574e0",
+      "496af3bd4a822e85ec9465b8a327c0a695a7efe3d405371e8565ebf07751dd4f",
+      "2d62f5a274292e9e77d510b0f61aa182820ad0c6c18cfd44da0de136aa822854",
+      "ec93b10203cc433401aa8848f149087bb8753a047d8f813c4ea84c91eb1b486b",
+      "f1b2b381cb28ee01e07fe62d3be680e865e1cd1d8c7e02134f33d34fd86dc988",
+      "477d28e60fbc229300b79ae39ffc9a969537a49c67268568d5ba60a626b1a7b6",
+      "5d370cb3db8f3795544fed1d76f5c92f38d56e740b4a75b1fd316168d17bc7cc",
+      "6c28845b2c21414073caf5e6ff37445db46988a50fb698cbc8775f87908a35f4",
+      "e11ac3f4d7b0abbd71144f542af7649443a373f7129c34900c9bea8ad500af63",
+      "715cfdf49877622930ea79c37aab637d130a58a5e8960a7ec484e25116937f78",
+      "42fbf853ffa0a502df48af3774e87bfe0f0db2f9e4b245cb19c2c06095faf17d",
+      "5f071ce6b17c93db62aa695439eb541a72dfa67400d5de4ef5d5b60425b8c54d",
+      "88aa7c8c67b13b356ceb31b6be186097ee20141c06f997d7d662a2dac4a42058",
+      "31e09958d68772f10586f1b8c9259516f7242c257b5ea4a8ae7efff3cebf2898",
+      "2f9d78680e69ecc1f83d9ec27f9edf47c55851abc66e8eab8c39d1da83b68d12",
+      "e03018a66ffa6682c0fd95b00294497e0872858239bdb8db7d1debdb015967c5",
+      "a45d8ca18fb6566de44cf2abe6a4338d8303a030d463eea148060f055ee8f1c0",
+      "482f171508ac6b59df33226c93c8c4a88b217a29e888d59d415142a288ad3ec3"
+    ],
+    "unchangedFrames": 20,
+    "changedFrames": [
+      12,
+      13,
+      14,
+      15
+    ]
+  }
+}

@@ -1,0 +1,506 @@
+{
+  "format": "uft-baked-frames-v1",
+  "scale": 0.42276422764227645,
+  "anchor": [
+    64,
+    110
+  ],
+  "runtimeSha256": "3bbd3b92b69b2646d58ac20ade83497afdbb111d2560e7b9ee296f322dcc0061",
+  "frames": [
+    {
+      "frame": 0,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/production-144/satono_crown/alpha.png",
+      "sourceSha256": "22b5964c729a97197c6842a8ccb0b1c5b26e9c4d887df0df0c0d84504ea33f33",
+      "crop": [
+        68,
+        15,
+        218,
+        255
+      ],
+      "destination": [
+        32,
+        9,
+        63,
+        101
+      ]
+    },
+    {
+      "frame": 1,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/production-144/satono_crown/alpha.png",
+      "sourceSha256": "22b5964c729a97197c6842a8ccb0b1c5b26e9c4d887df0df0c0d84504ea33f33",
+      "crop": [
+        314,
+        19,
+        465,
+        256
+      ],
+      "destination": [
+        160,
+        10,
+        64,
+        100
+      ]
+    },
+    {
+      "frame": 2,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/production-144/satono_crown/alpha.png",
+      "sourceSha256": "22b5964c729a97197c6842a8ccb0b1c5b26e9c4d887df0df0c0d84504ea33f33",
+      "crop": [
+        551,
+        16,
+        699,
+        256
+      ],
+      "destination": [
+        288,
+        9,
+        63,
+        101
+      ]
+    },
+    {
+      "frame": 3,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/production-144/satono_crown/alpha.png",
+      "sourceSha256": "22b5964c729a97197c6842a8ccb0b1c5b26e9c4d887df0df0c0d84504ea33f33",
+      "crop": [
+        808,
+        16,
+        958,
+        256
+      ],
+      "destination": [
+        416,
+        9,
+        63,
+        101
+      ]
+    },
+    {
+      "frame": 4,
+      "sourceFrame": 4,
+      "source": "docs/art-source/motions/production-144/satono_crown/alpha.png",
+      "sourceSha256": "22b5964c729a97197c6842a8ccb0b1c5b26e9c4d887df0df0c0d84504ea33f33",
+      "crop": [
+        41,
+        275,
+        248,
+        512
+      ],
+      "destination": [
+        20,
+        138,
+        88,
+        100
+      ]
+    },
+    {
+      "frame": 5,
+      "sourceFrame": 5,
+      "source": "docs/art-source/motions/production-144/satono_crown/alpha.png",
+      "sourceSha256": "22b5964c729a97197c6842a8ccb0b1c5b26e9c4d887df0df0c0d84504ea33f33",
+      "crop": [
+        303,
+        275,
+        499,
+        512
+      ],
+      "destination": [
+        150,
+        138,
+        83,
+        100
+      ]
+    },
+    {
+      "frame": 6,
+      "sourceFrame": 6,
+      "source": "docs/art-source/motions/production-144/satono_crown/alpha.png",
+      "sourceSha256": "22b5964c729a97197c6842a8ccb0b1c5b26e9c4d887df0df0c0d84504ea33f33",
+      "crop": [
+        530,
+        277,
+        740,
+        512
+      ],
+      "destination": [
+        275,
+        139,
+        89,
+        99
+      ]
+    },
+    {
+      "frame": 7,
+      "sourceFrame": 7,
+      "source": "docs/art-source/motions/production-144/satono_crown/alpha.png",
+      "sourceSha256": "22b5964c729a97197c6842a8ccb0b1c5b26e9c4d887df0df0c0d84504ea33f33",
+      "crop": [
+        788,
+        277,
+        989,
+        511
+      ],
+      "destination": [
+        405,
+        139,
+        85,
+        99
+      ]
+    },
+    {
+      "frame": 8,
+      "sourceFrame": 8,
+      "source": "docs/art-source/motions/production-144/satono_crown/alpha.png",
+      "sourceSha256": "22b5964c729a97197c6842a8ccb0b1c5b26e9c4d887df0df0c0d84504ea33f33",
+      "crop": [
+        39,
+        527,
+        235,
+        765
+      ],
+      "destination": [
+        22,
+        265,
+        83,
+        101
+      ]
+    },
+    {
+      "frame": 9,
+      "sourceFrame": 9,
+      "source": "docs/art-source/motions/production-144/satono_crown/alpha.png",
+      "sourceSha256": "22b5964c729a97197c6842a8ccb0b1c5b26e9c4d887df0df0c0d84504ea33f33",
+      "crop": [
+        298,
+        523,
+        468,
+        765
+      ],
+      "destination": [
+        156,
+        264,
+        72,
+        102
+      ]
+    },
+    {
+      "frame": 10,
+      "sourceFrame": 10,
+      "source": "docs/art-source/motions/production-144/satono_crown/alpha.png",
+      "sourceSha256": "22b5964c729a97197c6842a8ccb0b1c5b26e9c4d887df0df0c0d84504ea33f33",
+      "crop": [
+        526,
+        525,
+        744,
+        766
+      ],
+      "destination": [
+        274,
+        264,
+        92,
+        102
+      ]
+    },
+    {
+      "frame": 11,
+      "sourceFrame": 11,
+      "source": "docs/art-source/motions/production-144/satono_crown/alpha.png",
+      "sourceSha256": "22b5964c729a97197c6842a8ccb0b1c5b26e9c4d887df0df0c0d84504ea33f33",
+      "crop": [
+        797,
+        522,
+        949,
+        766
+      ],
+      "destination": [
+        416,
+        263,
+        64,
+        103
+      ]
+    },
+    {
+      "frame": 12,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/skill-revisions-2026-09-11/satono_crown/generated.png",
+      "sourceSha256": "b3afbfd983c66ff9db78798a764fa8379120cb3d352a956b2dda8245e6dcdbf9",
+      "crop": [
+        180,
+        30,
+        542,
+        468
+      ],
+      "destination": [
+        29,
+        411,
+        69,
+        83
+      ]
+    },
+    {
+      "frame": 13,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/skill-revisions-2026-09-11/satono_crown/generated.png",
+      "sourceSha256": "b3afbfd983c66ff9db78798a764fa8379120cb3d352a956b2dda8245e6dcdbf9",
+      "crop": [
+        825,
+        32,
+        1437,
+        466
+      ],
+      "destination": [
+        134,
+        412,
+        116,
+        82
+      ]
+    },
+    {
+      "frame": 14,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/skill-revisions-2026-09-11/satono_crown/generated.png",
+      "sourceSha256": "b3afbfd983c66ff9db78798a764fa8379120cb3d352a956b2dda8245e6dcdbf9",
+      "crop": [
+        147,
+        552,
+        741,
+        976
+      ],
+      "destination": [
+        263,
+        414,
+        113,
+        80
+      ]
+    },
+    {
+      "frame": 15,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/skill-revisions-2026-09-11/satono_crown/generated.png",
+      "sourceSha256": "b3afbfd983c66ff9db78798a764fa8379120cb3d352a956b2dda8245e6dcdbf9",
+      "crop": [
+        908,
+        530,
+        1310,
+        995
+      ],
+      "destination": [
+        410,
+        406,
+        76,
+        88
+      ]
+    },
+    {
+      "frame": 16,
+      "sourceFrame": 16,
+      "source": "docs/art-source/motions/production-144/satono_crown/alpha.png",
+      "sourceSha256": "22b5964c729a97197c6842a8ccb0b1c5b26e9c4d887df0df0c0d84504ea33f33",
+      "crop": [
+        64,
+        1045,
+        230,
+        1267
+      ],
+      "destination": [
+        29,
+        528,
+        70,
+        94
+      ]
+    },
+    {
+      "frame": 17,
+      "sourceFrame": 17,
+      "source": "docs/art-source/motions/production-144/satono_crown/alpha.png",
+      "sourceSha256": "22b5964c729a97197c6842a8ccb0b1c5b26e9c4d887df0df0c0d84504ea33f33",
+      "crop": [
+        317,
+        1064,
+        486,
+        1261
+      ],
+      "destination": [
+        156,
+        539,
+        71,
+        83
+      ]
+    },
+    {
+      "frame": 18,
+      "sourceFrame": 18,
+      "source": "docs/art-source/motions/production-144/satono_crown/alpha.png",
+      "sourceSha256": "22b5964c729a97197c6842a8ccb0b1c5b26e9c4d887df0df0c0d84504ea33f33",
+      "crop": [
+        552,
+        1082,
+        732,
+        1261
+      ],
+      "destination": [
+        282,
+        546,
+        76,
+        76
+      ]
+    },
+    {
+      "frame": 19,
+      "sourceFrame": 19,
+      "source": "docs/art-source/motions/production-144/satono_crown/alpha.png",
+      "sourceSha256": "22b5964c729a97197c6842a8ccb0b1c5b26e9c4d887df0df0c0d84504ea33f33",
+      "crop": [
+        773,
+        1147,
+        1006,
+        1261
+      ],
+      "destination": [
+        398,
+        574,
+        99,
+        48
+      ]
+    },
+    {
+      "frame": 20,
+      "sourceFrame": 20,
+      "source": "docs/art-source/motions/production-144/satono_crown/alpha.png",
+      "sourceSha256": "22b5964c729a97197c6842a8ccb0b1c5b26e9c4d887df0df0c0d84504ea33f33",
+      "crop": [
+        56,
+        1283,
+        226,
+        1525
+      ],
+      "destination": [
+        28,
+        648,
+        72,
+        102
+      ]
+    },
+    {
+      "frame": 21,
+      "sourceFrame": 21,
+      "source": "docs/art-source/motions/production-144/satono_crown/alpha.png",
+      "sourceSha256": "22b5964c729a97197c6842a8ccb0b1c5b26e9c4d887df0df0c0d84504ea33f33",
+      "crop": [
+        308,
+        1282,
+        471,
+        1524
+      ],
+      "destination": [
+        157,
+        648,
+        69,
+        102
+      ]
+    },
+    {
+      "frame": 22,
+      "sourceFrame": 22,
+      "source": "docs/art-source/motions/production-144/satono_crown/alpha.png",
+      "sourceSha256": "22b5964c729a97197c6842a8ccb0b1c5b26e9c4d887df0df0c0d84504ea33f33",
+      "crop": [
+        555,
+        1283,
+        704,
+        1525
+      ],
+      "destination": [
+        288,
+        648,
+        63,
+        102
+      ]
+    },
+    {
+      "frame": 23,
+      "sourceFrame": 23,
+      "source": "docs/art-source/motions/production-144/satono_crown/alpha.png",
+      "sourceSha256": "22b5964c729a97197c6842a8ccb0b1c5b26e9c4d887df0df0c0d84504ea33f33",
+      "crop": [
+        804,
+        1279,
+        950,
+        1525
+      ],
+      "destination": [
+        417,
+        646,
+        62,
+        104
+      ]
+    }
+  ],
+  "skillRevision": {
+    "scale": 0.1895424836601307,
+    "review": "docs/art-source/motions/skill-revisions-2026-09-11/satono_crown/review.json",
+    "beforeFrames": [
+      "74c605c3706c9f3be537251827cb40844c2ad926d04f9c6a31f9406749ac0163",
+      "e1574c32c4cdf420c0719c64a1450e780388e53a9710434b8c0b2660c9a144b1",
+      "f2dce2229971c90bc93362174cb3e28de68b3483ca5f6c8e322b78177e764228",
+      "e1d9112dcd674d44bbe69a3a98a34fa9f603065e7bbf7594606f54910c793fb8",
+      "fea77f52125af998c5378d32c70eb6170ac6373aa35ae648ed7a45bc2f2a52b6",
+      "7495513083b2ee2d65d95572e116f9c110b6bf0a01b5d6d829593cfe8e51103d",
+      "d25a2abebcf0d968a488bd29dffc60a1ce4e206b0b5eeaec4bc0d682c0f1521f",
+      "afcd3f8464950ca4a7fdea65e027780c60f7e98c48dc17e93f2cfe29993da7f1",
+      "cef9feeca9b37567db5ef8d9153ee711b14a11f5939ce263d56e0dd6ac6ec6fe",
+      "abe6be80571d80a5d681f8ff2074795eaacc82d7f20c32d4844fbd0d1723ce13",
+      "42c776d579ca3ad95b1b9930cf39ef17274f3e9485994ee240ec2353e9cd2b9a",
+      "f303f7a7b20f404a082b636a08e2f3746a1a0fd1495d57eb362ad6f153e2f5d6",
+      "3cc9f6e0da6e99931afbd7f1a2160b6d109fd95b7ac143f6996b59185509b7d2",
+      "573b8aa287c13e831191f6e51452382d13bf78a9a543aa72365536fabcc6be8a",
+      "e78e5c9ad515e9afe2df63e60d2cbbd6c61f25b4758a05d73001cca6481001e5",
+      "baf757cd41c2da548afb15ccabb897959b3c3a3982851903adfbb889b20eac76",
+      "f98bbb4f752ef06db762ceb3cdbcefa8b7f6ea053cb0a443cd3adfd32cdaac36",
+      "939f6043f81ffff93455fb6d5dd123d028ef64eabcad7237cb6554a26a4edadf",
+      "0f9d092fc895cb831cfcc58136b4e5bfa36f71eb559cf548633227905b848545",
+      "84e52d494b75cb78ddd60745e6482f670ebb74e1760952e05f76c875cfbad60c",
+      "30171e8b39775eade690fd1454feb1a02b542a56322cb64831415e960f09f7ef",
+      "773926e5c3df5d1264f460050d86d174dbad64772aa6721a5b78a87bdf2f679e",
+      "65358afc51ae6ab85630f6287df00559fe76dee41e6109d9fb4e0259211fa55d",
+      "451ee236d30d5e75757e3044dbbebe073a3cfe46615c212559f99f8e6acd2243"
+    ],
+    "afterFrames": [
+      "74c605c3706c9f3be537251827cb40844c2ad926d04f9c6a31f9406749ac0163",
+      "e1574c32c4cdf420c0719c64a1450e780388e53a9710434b8c0b2660c9a144b1",
+      "f2dce2229971c90bc93362174cb3e28de68b3483ca5f6c8e322b78177e764228",
+      "e1d9112dcd674d44bbe69a3a98a34fa9f603065e7bbf7594606f54910c793fb8",
+      "fea77f52125af998c5378d32c70eb6170ac6373aa35ae648ed7a45bc2f2a52b6",
+      "7495513083b2ee2d65d95572e116f9c110b6bf0a01b5d6d829593cfe8e51103d",
+      "d25a2abebcf0d968a488bd29dffc60a1ce4e206b0b5eeaec4bc0d682c0f1521f",
+      "afcd3f8464950ca4a7fdea65e027780c60f7e98c48dc17e93f2cfe29993da7f1",
+      "cef9feeca9b37567db5ef8d9153ee711b14a11f5939ce263d56e0dd6ac6ec6fe",
+      "abe6be80571d80a5d681f8ff2074795eaacc82d7f20c32d4844fbd0d1723ce13",
+      "42c776d579ca3ad95b1b9930cf39ef17274f3e9485994ee240ec2353e9cd2b9a",
+      "f303f7a7b20f404a082b636a08e2f3746a1a0fd1495d57eb362ad6f153e2f5d6",
+      "1d0161709851fe61ca63285ddb4de95df4d8301ec468c169fa0ff039607fb6f3",
+      "954291c80d40a2aa8e674908c9e287e31e0eeb44a81cde75a540a3776c6865bf",
+      "bd40667b4f755e43412158fe30aee434ecf2f22bf9c7d818cc683567dd05ac98",
+      "7a87a36f8a2565977c6d0166a544c4cf1b72915bdab091fac04a5f5aeb702883",
+      "f98bbb4f752ef06db762ceb3cdbcefa8b7f6ea053cb0a443cd3adfd32cdaac36",
+      "939f6043f81ffff93455fb6d5dd123d028ef64eabcad7237cb6554a26a4edadf",
+      "0f9d092fc895cb831cfcc58136b4e5bfa36f71eb559cf548633227905b848545",
+      "84e52d494b75cb78ddd60745e6482f670ebb74e1760952e05f76c875cfbad60c",
+      "30171e8b39775eade690fd1454feb1a02b542a56322cb64831415e960f09f7ef",
+      "773926e5c3df5d1264f460050d86d174dbad64772aa6721a5b78a87bdf2f679e",
+      "65358afc51ae6ab85630f6287df00559fe76dee41e6109d9fb4e0259211fa55d",
+      "451ee236d30d5e75757e3044dbbebe073a3cfe46615c212559f99f8e6acd2243"
+    ],
+    "unchangedFrames": 20,
+    "changedFrames": [
+      12,
+      13,
+      14,
+      15
+    ]
+  }
+}

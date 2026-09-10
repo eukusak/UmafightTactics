@@ -1,0 +1,9 @@
+{
+  "mode": "built-in image_gen",
+  "prompt": "Create a transparent PNG cutout sprite sheet using this character reference. Four full-body chibi poses in a 2 by 2 grid on an EMPTY TRANSPARENT ALPHA background, with wide empty gutters. Preserve air_groove's hair, face, ears, costume and accessories. Four poses in reading order: cross forearms in a strong defensive brace; lean into a compact shield held close; uncross arms forcefully to release a short radial counter shock; settle with one hand at chest. Same proportions across poses, crisp cel-shaded game art, compact effects within each cell. No labels, no ground or backdrop. Transparency is essential: do not draw a checkerboard.",
+  "references": [
+    "public/assets/motions/air_groove.png"
+  ],
+  "referenceCommit": "3c950f3ce3476b152f2ad3d99fd296327a3c82bf",
+  "skillSignature": "90064e70c2e02774347dc939b66fc56ce872577b3051fd472d22aed356bd661e"
+}

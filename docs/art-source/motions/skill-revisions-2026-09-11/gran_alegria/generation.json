@@ -1,0 +1,9 @@
+{
+  "mode": "built-in image_gen",
+  "prompt": "Edit the reference character into four chibi skill animation poses on a transparent background. A 2 by 2 sprite sheet, only four full-body characters, no labels. Preserve gran_alegria's exact hairstyle, horse ears, face, costume, accessories and tail from the reference. Four poses in reading order: launch forward from low crouch; plant the lead foot and deliver a jab; twist into a rising follow-up strike with three short impact accents; recoil into a ready guard. Four clearly different body poses, same body proportions and costume, crisp cel shading, no ground shadow. Real PNG cutouts with an alpha channel. Absolutely no checkerboard or background design. Wide transparent gutters between all poses; compact effects stay within each cell.",
+  "references": [
+    "public/assets/motions/gran_alegria.png"
+  ],
+  "referenceCommit": "3c950f3ce3476b152f2ad3d99fd296327a3c82bf",
+  "skillSignature": "54443f2284207c93b975836724d8a3ce74a2501209257b856d645eb65a2d3843"
+}

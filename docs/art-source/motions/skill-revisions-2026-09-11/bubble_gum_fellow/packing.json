@@ -1,0 +1,506 @@
+{
+  "format": "uft-baked-frames-v1",
+  "scale": 0.4315352697095436,
+  "anchor": [
+    64,
+    110
+  ],
+  "runtimeSha256": "1596ce17a4f02258a918698b347a5004767fae514883068f5bc3fc3ea7399e26",
+  "frames": [
+    {
+      "frame": 0,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/production-144/bubble_gum_fellow/alpha.png",
+      "sourceSha256": "0e3c4e48276a6b3ab158753254da2ac4b931d646b56651ff66ea19fc21636982",
+      "crop": [
+        42,
+        24,
+        208,
+        258
+      ],
+      "destination": [
+        28,
+        9,
+        72,
+        101
+      ]
+    },
+    {
+      "frame": 1,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/production-144/bubble_gum_fellow/alpha.png",
+      "sourceSha256": "0e3c4e48276a6b3ab158753254da2ac4b931d646b56651ff66ea19fc21636982",
+      "crop": [
+        297,
+        27,
+        462,
+        258
+      ],
+      "destination": [
+        156,
+        10,
+        71,
+        100
+      ]
+    },
+    {
+      "frame": 2,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/production-144/bubble_gum_fellow/alpha.png",
+      "sourceSha256": "0e3c4e48276a6b3ab158753254da2ac4b931d646b56651ff66ea19fc21636982",
+      "crop": [
+        539,
+        21,
+        718,
+        258
+      ],
+      "destination": [
+        281,
+        8,
+        77,
+        102
+      ]
+    },
+    {
+      "frame": 3,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/production-144/bubble_gum_fellow/alpha.png",
+      "sourceSha256": "0e3c4e48276a6b3ab158753254da2ac4b931d646b56651ff66ea19fc21636982",
+      "crop": [
+        808,
+        25,
+        975,
+        258
+      ],
+      "destination": [
+        412,
+        9,
+        72,
+        101
+      ]
+    },
+    {
+      "frame": 4,
+      "sourceFrame": 4,
+      "source": "docs/art-source/motions/production-144/bubble_gum_fellow/alpha.png",
+      "sourceSha256": "0e3c4e48276a6b3ab158753254da2ac4b931d646b56651ff66ea19fc21636982",
+      "crop": [
+        35,
+        275,
+        216,
+        502
+      ],
+      "destination": [
+        25,
+        140,
+        78,
+        98
+      ]
+    },
+    {
+      "frame": 5,
+      "sourceFrame": 5,
+      "source": "docs/art-source/motions/production-144/bubble_gum_fellow/alpha.png",
+      "sourceSha256": "0e3c4e48276a6b3ab158753254da2ac4b931d646b56651ff66ea19fc21636982",
+      "crop": [
+        290,
+        278,
+        473,
+        504
+      ],
+      "destination": [
+        152,
+        140,
+        79,
+        98
+      ]
+    },
+    {
+      "frame": 6,
+      "sourceFrame": 6,
+      "source": "docs/art-source/motions/production-144/bubble_gum_fellow/alpha.png",
+      "sourceSha256": "0e3c4e48276a6b3ab158753254da2ac4b931d646b56651ff66ea19fc21636982",
+      "crop": [
+        536,
+        275,
+        723,
+        503
+      ],
+      "destination": [
+        279,
+        140,
+        81,
+        98
+      ]
+    },
+    {
+      "frame": 7,
+      "sourceFrame": 7,
+      "source": "docs/art-source/motions/production-144/bubble_gum_fellow/alpha.png",
+      "sourceSha256": "0e3c4e48276a6b3ab158753254da2ac4b931d646b56651ff66ea19fc21636982",
+      "crop": [
+        797,
+        278,
+        985,
+        504
+      ],
+      "destination": [
+        407,
+        140,
+        81,
+        98
+      ]
+    },
+    {
+      "frame": 8,
+      "sourceFrame": 8,
+      "source": "docs/art-source/motions/production-144/bubble_gum_fellow/alpha.png",
+      "sourceSha256": "0e3c4e48276a6b3ab158753254da2ac4b931d646b56651ff66ea19fc21636982",
+      "crop": [
+        40,
+        528,
+        230,
+        766
+      ],
+      "destination": [
+        23,
+        263,
+        82,
+        103
+      ]
+    },
+    {
+      "frame": 9,
+      "sourceFrame": 9,
+      "source": "docs/art-source/motions/production-144/bubble_gum_fellow/alpha.png",
+      "sourceSha256": "0e3c4e48276a6b3ab158753254da2ac4b931d646b56651ff66ea19fc21636982",
+      "crop": [
+        293,
+        525,
+        463,
+        766
+      ],
+      "destination": [
+        155,
+        262,
+        73,
+        104
+      ]
+    },
+    {
+      "frame": 10,
+      "sourceFrame": 10,
+      "source": "docs/art-source/motions/production-144/bubble_gum_fellow/alpha.png",
+      "sourceSha256": "0e3c4e48276a6b3ab158753254da2ac4b931d646b56651ff66ea19fc21636982",
+      "crop": [
+        532,
+        530,
+        740,
+        766
+      ],
+      "destination": [
+        275,
+        264,
+        90,
+        102
+      ]
+    },
+    {
+      "frame": 11,
+      "sourceFrame": 11,
+      "source": "docs/art-source/motions/production-144/bubble_gum_fellow/alpha.png",
+      "sourceSha256": "0e3c4e48276a6b3ab158753254da2ac4b931d646b56651ff66ea19fc21636982",
+      "crop": [
+        804,
+        527,
+        974,
+        766
+      ],
+      "destination": [
+        411,
+        263,
+        73,
+        103
+      ]
+    },
+    {
+      "frame": 12,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/skill-revisions-2026-09-11/bubble_gum_fellow/generated.png",
+      "sourceSha256": "7b207e466a2c33464803c4a107547c6cb5f1f02e127e895843420e458197d977",
+      "crop": [
+        180,
+        23,
+        563,
+        493
+      ],
+      "destination": [
+        29,
+        409,
+        70,
+        85
+      ]
+    },
+    {
+      "frame": 13,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/skill-revisions-2026-09-11/bubble_gum_fellow/generated.png",
+      "sourceSha256": "7b207e466a2c33464803c4a107547c6cb5f1f02e127e895843420e458197d977",
+      "crop": [
+        873,
+        37,
+        1291,
+        484
+      ],
+      "destination": [
+        154,
+        413,
+        76,
+        81
+      ]
+    },
+    {
+      "frame": 14,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/skill-revisions-2026-09-11/bubble_gum_fellow/generated.png",
+      "sourceSha256": "7b207e466a2c33464803c4a107547c6cb5f1f02e127e895843420e458197d977",
+      "crop": [
+        120,
+        531,
+        758,
+        989
+      ],
+      "destination": [
+        262,
+        411,
+        116,
+        83
+      ]
+    },
+    {
+      "frame": 15,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/skill-revisions-2026-09-11/bubble_gum_fellow/generated.png",
+      "sourceSha256": "7b207e466a2c33464803c4a107547c6cb5f1f02e127e895843420e458197d977",
+      "crop": [
+        900,
+        526,
+        1310,
+        993
+      ],
+      "destination": [
+        410,
+        409,
+        75,
+        85
+      ]
+    },
+    {
+      "frame": 16,
+      "sourceFrame": 16,
+      "source": "docs/art-source/motions/production-144/bubble_gum_fellow/alpha.png",
+      "sourceSha256": "0e3c4e48276a6b3ab158753254da2ac4b931d646b56651ff66ea19fc21636982",
+      "crop": [
+        37,
+        1049,
+        218,
+        1273
+      ],
+      "destination": [
+        25,
+        525,
+        78,
+        97
+      ]
+    },
+    {
+      "frame": 17,
+      "sourceFrame": 17,
+      "source": "docs/art-source/motions/production-144/bubble_gum_fellow/alpha.png",
+      "sourceSha256": "0e3c4e48276a6b3ab158753254da2ac4b931d646b56651ff66ea19fc21636982",
+      "crop": [
+        282,
+        1065,
+        470,
+        1265
+      ],
+      "destination": [
+        151,
+        536,
+        81,
+        86
+      ]
+    },
+    {
+      "frame": 18,
+      "sourceFrame": 18,
+      "source": "docs/art-source/motions/production-144/bubble_gum_fellow/alpha.png",
+      "sourceSha256": "0e3c4e48276a6b3ab158753254da2ac4b931d646b56651ff66ea19fc21636982",
+      "crop": [
+        532,
+        1095,
+        716,
+        1267
+      ],
+      "destination": [
+        280,
+        548,
+        79,
+        74
+      ]
+    },
+    {
+      "frame": 19,
+      "sourceFrame": 19,
+      "source": "docs/art-source/motions/production-144/bubble_gum_fellow/alpha.png",
+      "sourceSha256": "0e3c4e48276a6b3ab158753254da2ac4b931d646b56651ff66ea19fc21636982",
+      "crop": [
+        781,
+        1137,
+        1015,
+        1262
+      ],
+      "destination": [
+        397,
+        568,
+        101,
+        54
+      ]
+    },
+    {
+      "frame": 20,
+      "sourceFrame": 20,
+      "source": "docs/art-source/motions/production-144/bubble_gum_fellow/alpha.png",
+      "sourceSha256": "0e3c4e48276a6b3ab158753254da2ac4b931d646b56651ff66ea19fc21636982",
+      "crop": [
+        30,
+        1285,
+        197,
+        1521
+      ],
+      "destination": [
+        28,
+        648,
+        72,
+        102
+      ]
+    },
+    {
+      "frame": 21,
+      "sourceFrame": 21,
+      "source": "docs/art-source/motions/production-144/bubble_gum_fellow/alpha.png",
+      "sourceSha256": "0e3c4e48276a6b3ab158753254da2ac4b931d646b56651ff66ea19fc21636982",
+      "crop": [
+        289,
+        1280,
+        454,
+        1521
+      ],
+      "destination": [
+        156,
+        646,
+        71,
+        104
+      ]
+    },
+    {
+      "frame": 22,
+      "sourceFrame": 22,
+      "source": "docs/art-source/motions/production-144/bubble_gum_fellow/alpha.png",
+      "sourceSha256": "0e3c4e48276a6b3ab158753254da2ac4b931d646b56651ff66ea19fc21636982",
+      "crop": [
+        541,
+        1283,
+        723,
+        1523
+      ],
+      "destination": [
+        280,
+        646,
+        79,
+        104
+      ]
+    },
+    {
+      "frame": 23,
+      "sourceFrame": 23,
+      "source": "docs/art-source/motions/production-144/bubble_gum_fellow/alpha.png",
+      "sourceSha256": "0e3c4e48276a6b3ab158753254da2ac4b931d646b56651ff66ea19fc21636982",
+      "crop": [
+        809,
+        1287,
+        965,
+        1521
+      ],
+      "destination": [
+        414,
+        649,
+        67,
+        101
+      ]
+    }
+  ],
+  "skillRevision": {
+    "scale": 0.18181818181818182,
+    "review": "docs/art-source/motions/skill-revisions-2026-09-11/bubble_gum_fellow/review.json",
+    "beforeFrames": [
+      "eff6b0692ea723319702f165a35ae105517bf14077b8bd889a56905fdd4725a0",
+      "2e5fa36ddab6e715f5d476d26347d280294189161246307c7a423ffbf71af4fe",
+      "230753de01690bfe10fde238ad107f5629f33eca465d3e2601f42c5f427c3c0a",
+      "6ebb0fd4ba52cb03ef3c8ca0cd45ffffcee943f62031c5de906fd86797e7b92a",
+      "b7be262e345a25c0e7f12cb22b76b50dd9d2daa5deba0d55e929e1633fdcd43d",
+      "bf1e2bed3534912838e991c7e195b682f90e2b5efe96955b558947c97253275b",
+      "fef1a751d02fc653a0c52d7ec6c79e87d2cd3b02d4acce4fca7a6ed40f08a726",
+      "5769aa756db5b0cd7a2da5014e025ab2e870658e2c572d1bc7127bfd488a5ca2",
+      "1eeff147ab1fa6a0ec8a44e66b3340e424c837bb0b15fe6dc2403571cc170b2e",
+      "14b6b194cb78002a4c015c567382d6a430e2d8844ce791bad915f49da1685454",
+      "0e5bd2b58321e1943ff045d32252f3ee5b95f81e633724b1e7210f3949d2f6ba",
+      "ab9293c452c36ccb85977654a94c893f6894a4447a7cd5f58005cc42f2bfff38",
+      "445393687d023593bda2809b05d18d0021287e26d8df66a656b37cfa62182241",
+      "06055b12b45082a199af2b5b286d3fa5d1bce6d4fafc5f5600a3e188a6ec612c",
+      "2755180b5f60b9a45e912b72d2f4d8ef6564254f53e465cea06a00f19d0c18b5",
+      "a27d27ef97f18648db1c978b1b1874f4caacdff453f55b355aace0186d541f6f",
+      "19e0fd81028fb39f7d76cc90121e9d2eef40dc7226d9031f92de745b27b8e860",
+      "892ef7e654c01943b4ddbb4f1978b742ad012e4e9d75f4569fa9c685b2d158a1",
+      "9e0e3176abc322417ddfac06e42ce7aac76d67af1b888d51b48639135f56e7ac",
+      "36325a213bb1bd72ded2520bd98987b3722f021df1db9e9fefbfbc3afc1d1aa1",
+      "677769916d4e19882ba9c8ec846238ec76a8f9e9130fe8b2f48ffb8509bbc06e",
+      "2e4bee9ee87ceca8345905aec4bc647e49f447bc2722cb27c28b7390f9976643",
+      "f2dd20632fea30374a3fe4a24a20d2305a17571cd1f4c9935a4c252fa3d4f677",
+      "6cb7c4bc2a72f82ec26e7429158e51b3c8628460bcf9cbb4e78de182526a2065"
+    ],
+    "afterFrames": [
+      "eff6b0692ea723319702f165a35ae105517bf14077b8bd889a56905fdd4725a0",
+      "2e5fa36ddab6e715f5d476d26347d280294189161246307c7a423ffbf71af4fe",
+      "230753de01690bfe10fde238ad107f5629f33eca465d3e2601f42c5f427c3c0a",
+      "6ebb0fd4ba52cb03ef3c8ca0cd45ffffcee943f62031c5de906fd86797e7b92a",
+      "b7be262e345a25c0e7f12cb22b76b50dd9d2daa5deba0d55e929e1633fdcd43d",
+      "bf1e2bed3534912838e991c7e195b682f90e2b5efe96955b558947c97253275b",
+      "fef1a751d02fc653a0c52d7ec6c79e87d2cd3b02d4acce4fca7a6ed40f08a726",
+      "5769aa756db5b0cd7a2da5014e025ab2e870658e2c572d1bc7127bfd488a5ca2",
+      "1eeff147ab1fa6a0ec8a44e66b3340e424c837bb0b15fe6dc2403571cc170b2e",
+      "14b6b194cb78002a4c015c567382d6a430e2d8844ce791bad915f49da1685454",
+      "0e5bd2b58321e1943ff045d32252f3ee5b95f81e633724b1e7210f3949d2f6ba",
+      "ab9293c452c36ccb85977654a94c893f6894a4447a7cd5f58005cc42f2bfff38",
+      "69aa1a7442de762ca93ea97269cbd45ce662e262074fa0aeeee00fbf68eb9286",
+      "4a4a98e652bdefbb2cc49ea6b034b15b629369c32b7a4980fd88565e1283e637",
+      "a129e92cd85e68b70a09cf060e975276cff08cfc116b5472ac4983432c3d38c0",
+      "57dbffc0f18e34da3dc902994dd1f0c1aa152dbe1869c79c3afe253145ccde1a",
+      "19e0fd81028fb39f7d76cc90121e9d2eef40dc7226d9031f92de745b27b8e860",
+      "892ef7e654c01943b4ddbb4f1978b742ad012e4e9d75f4569fa9c685b2d158a1",
+      "9e0e3176abc322417ddfac06e42ce7aac76d67af1b888d51b48639135f56e7ac",
+      "36325a213bb1bd72ded2520bd98987b3722f021df1db9e9fefbfbc3afc1d1aa1",
+      "677769916d4e19882ba9c8ec846238ec76a8f9e9130fe8b2f48ffb8509bbc06e",
+      "2e4bee9ee87ceca8345905aec4bc647e49f447bc2722cb27c28b7390f9976643",
+      "f2dd20632fea30374a3fe4a24a20d2305a17571cd1f4c9935a4c252fa3d4f677",
+      "6cb7c4bc2a72f82ec26e7429158e51b3c8628460bcf9cbb4e78de182526a2065"
+    ],
+    "unchangedFrames": 20,
+    "changedFrames": [
+      12,
+      13,
+      14,
+      15
+    ]
+  }
+}

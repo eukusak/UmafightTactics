@@ -1,0 +1,506 @@
+{
+  "format": "uft-baked-frames-v1",
+  "scale": 0.42276422764227645,
+  "anchor": [
+    64,
+    110
+  ],
+  "runtimeSha256": "a5aadcb13d90ebfbed170e53c67d5f04faae30a4912cf2a9f3edae616ab671ef",
+  "frames": [
+    {
+      "frame": 0,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/production-144/mihono_bourbon/alpha.png",
+      "sourceSha256": "b4f2daa44e9f640ab9be5ff333588760a715e837142eedd4968c93d9fc856419",
+      "crop": [
+        69,
+        17,
+        210,
+        258
+      ],
+      "destination": [
+        34,
+        8,
+        60,
+        102
+      ]
+    },
+    {
+      "frame": 1,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/production-144/mihono_bourbon/alpha.png",
+      "sourceSha256": "b4f2daa44e9f640ab9be5ff333588760a715e837142eedd4968c93d9fc856419",
+      "crop": [
+        320,
+        17,
+        463,
+        258
+      ],
+      "destination": [
+        162,
+        8,
+        60,
+        102
+      ]
+    },
+    {
+      "frame": 2,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/production-144/mihono_bourbon/alpha.png",
+      "sourceSha256": "b4f2daa44e9f640ab9be5ff333588760a715e837142eedd4968c93d9fc856419",
+      "crop": [
+        578,
+        17,
+        718,
+        258
+      ],
+      "destination": [
+        290,
+        8,
+        59,
+        102
+      ]
+    },
+    {
+      "frame": 3,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/production-144/mihono_bourbon/alpha.png",
+      "sourceSha256": "b4f2daa44e9f640ab9be5ff333588760a715e837142eedd4968c93d9fc856419",
+      "crop": [
+        844,
+        17,
+        981,
+        258
+      ],
+      "destination": [
+        419,
+        8,
+        58,
+        102
+      ]
+    },
+    {
+      "frame": 4,
+      "sourceFrame": 4,
+      "source": "docs/art-source/motions/production-144/mihono_bourbon/alpha.png",
+      "sourceSha256": "b4f2daa44e9f640ab9be5ff333588760a715e837142eedd4968c93d9fc856419",
+      "crop": [
+        36,
+        283,
+        220,
+        512
+      ],
+      "destination": [
+        25,
+        141,
+        78,
+        97
+      ]
+    },
+    {
+      "frame": 5,
+      "sourceFrame": 5,
+      "source": "docs/art-source/motions/production-144/mihono_bourbon/alpha.png",
+      "sourceSha256": "b4f2daa44e9f640ab9be5ff333588760a715e837142eedd4968c93d9fc856419",
+      "crop": [
+        296,
+        288,
+        483,
+        512
+      ],
+      "destination": [
+        152,
+        143,
+        79,
+        95
+      ]
+    },
+    {
+      "frame": 6,
+      "sourceFrame": 6,
+      "source": "docs/art-source/motions/production-144/mihono_bourbon/alpha.png",
+      "sourceSha256": "b4f2daa44e9f640ab9be5ff333588760a715e837142eedd4968c93d9fc856419",
+      "crop": [
+        554,
+        284,
+        738,
+        512
+      ],
+      "destination": [
+        281,
+        142,
+        78,
+        96
+      ]
+    },
+    {
+      "frame": 7,
+      "sourceFrame": 7,
+      "source": "docs/art-source/motions/production-144/mihono_bourbon/alpha.png",
+      "sourceSha256": "b4f2daa44e9f640ab9be5ff333588760a715e837142eedd4968c93d9fc856419",
+      "crop": [
+        819,
+        287,
+        993,
+        512
+      ],
+      "destination": [
+        411,
+        143,
+        74,
+        95
+      ]
+    },
+    {
+      "frame": 8,
+      "sourceFrame": 8,
+      "source": "docs/art-source/motions/production-144/mihono_bourbon/alpha.png",
+      "sourceSha256": "b4f2daa44e9f640ab9be5ff333588760a715e837142eedd4968c93d9fc856419",
+      "crop": [
+        56,
+        533,
+        259,
+        770
+      ],
+      "destination": [
+        21,
+        266,
+        86,
+        100
+      ]
+    },
+    {
+      "frame": 9,
+      "sourceFrame": 9,
+      "source": "docs/art-source/motions/production-144/mihono_bourbon/alpha.png",
+      "sourceSha256": "b4f2daa44e9f640ab9be5ff333588760a715e837142eedd4968c93d9fc856419",
+      "crop": [
+        303,
+        535,
+        477,
+        770
+      ],
+      "destination": [
+        155,
+        267,
+        74,
+        99
+      ]
+    },
+    {
+      "frame": 10,
+      "sourceFrame": 10,
+      "source": "docs/art-source/motions/production-144/mihono_bourbon/alpha.png",
+      "sourceSha256": "b4f2daa44e9f640ab9be5ff333588760a715e837142eedd4968c93d9fc856419",
+      "crop": [
+        568,
+        535,
+        754,
+        770
+      ],
+      "destination": [
+        280,
+        267,
+        79,
+        99
+      ]
+    },
+    {
+      "frame": 11,
+      "sourceFrame": 11,
+      "source": "docs/art-source/motions/production-144/mihono_bourbon/alpha.png",
+      "sourceSha256": "b4f2daa44e9f640ab9be5ff333588760a715e837142eedd4968c93d9fc856419",
+      "crop": [
+        827,
+        538,
+        972,
+        770
+      ],
+      "destination": [
+        417,
+        268,
+        61,
+        98
+      ]
+    },
+    {
+      "frame": 12,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/skill-revisions-2026-09-11/mihono_bourbon/generated.png",
+      "sourceSha256": "d80730fe1397e1077be1e611ced28c08dc80bf243c7df422d108ccec439597f0",
+      "crop": [
+        167,
+        9,
+        551,
+        488
+      ],
+      "destination": [
+        30,
+        409,
+        68,
+        85
+      ]
+    },
+    {
+      "frame": 13,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/skill-revisions-2026-09-11/mihono_bourbon/generated.png",
+      "sourceSha256": "d80730fe1397e1077be1e611ced28c08dc80bf243c7df422d108ccec439597f0",
+      "crop": [
+        919,
+        12,
+        1435,
+        489
+      ],
+      "destination": [
+        146,
+        410,
+        91,
+        84
+      ]
+    },
+    {
+      "frame": 14,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/skill-revisions-2026-09-11/mihono_bourbon/generated.png",
+      "sourceSha256": "d80730fe1397e1077be1e611ced28c08dc80bf243c7df422d108ccec439597f0",
+      "crop": [
+        85,
+        542,
+        741,
+        986
+      ],
+      "destination": [
+        262,
+        415,
+        116,
+        79
+      ]
+    },
+    {
+      "frame": 15,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/skill-revisions-2026-09-11/mihono_bourbon/generated.png",
+      "sourceSha256": "d80730fe1397e1077be1e611ced28c08dc80bf243c7df422d108ccec439597f0",
+      "crop": [
+        942,
+        524,
+        1355,
+        1001
+      ],
+      "destination": [
+        411,
+        410,
+        73,
+        84
+      ]
+    },
+    {
+      "frame": 16,
+      "sourceFrame": 16,
+      "source": "docs/art-source/motions/production-144/mihono_bourbon/alpha.png",
+      "sourceSha256": "b4f2daa44e9f640ab9be5ff333588760a715e837142eedd4968c93d9fc856419",
+      "crop": [
+        61,
+        1053,
+        225,
+        1272
+      ],
+      "destination": [
+        29,
+        529,
+        69,
+        93
+      ]
+    },
+    {
+      "frame": 17,
+      "sourceFrame": 17,
+      "source": "docs/art-source/motions/production-144/mihono_bourbon/alpha.png",
+      "sourceSha256": "b4f2daa44e9f640ab9be5ff333588760a715e837142eedd4968c93d9fc856419",
+      "crop": [
+        321,
+        1077,
+        476,
+        1264
+      ],
+      "destination": [
+        159,
+        543,
+        66,
+        79
+      ]
+    },
+    {
+      "frame": 18,
+      "sourceFrame": 18,
+      "source": "docs/art-source/motions/production-144/mihono_bourbon/alpha.png",
+      "sourceSha256": "b4f2daa44e9f640ab9be5ff333588760a715e837142eedd4968c93d9fc856419",
+      "crop": [
+        552,
+        1103,
+        728,
+        1264
+      ],
+      "destination": [
+        283,
+        554,
+        74,
+        68
+      ]
+    },
+    {
+      "frame": 19,
+      "sourceFrame": 19,
+      "source": "docs/art-source/motions/production-144/mihono_bourbon/alpha.png",
+      "sourceSha256": "b4f2daa44e9f640ab9be5ff333588760a715e837142eedd4968c93d9fc856419",
+      "crop": [
+        780,
+        1156,
+        1002,
+        1263
+      ],
+      "destination": [
+        401,
+        577,
+        94,
+        45
+      ]
+    },
+    {
+      "frame": 20,
+      "sourceFrame": 20,
+      "source": "docs/art-source/motions/production-144/mihono_bourbon/alpha.png",
+      "sourceSha256": "b4f2daa44e9f640ab9be5ff333588760a715e837142eedd4968c93d9fc856419",
+      "crop": [
+        60,
+        1280,
+        208,
+        1524
+      ],
+      "destination": [
+        32,
+        647,
+        63,
+        103
+      ]
+    },
+    {
+      "frame": 21,
+      "sourceFrame": 21,
+      "source": "docs/art-source/motions/production-144/mihono_bourbon/alpha.png",
+      "sourceSha256": "b4f2daa44e9f640ab9be5ff333588760a715e837142eedd4968c93d9fc856419",
+      "crop": [
+        314,
+        1280,
+        489,
+        1518
+      ],
+      "destination": [
+        155,
+        649,
+        74,
+        101
+      ]
+    },
+    {
+      "frame": 22,
+      "sourceFrame": 22,
+      "source": "docs/art-source/motions/production-144/mihono_bourbon/alpha.png",
+      "sourceSha256": "b4f2daa44e9f640ab9be5ff333588760a715e837142eedd4968c93d9fc856419",
+      "crop": [
+        568,
+        1281,
+        708,
+        1524
+      ],
+      "destination": [
+        290,
+        647,
+        59,
+        103
+      ]
+    },
+    {
+      "frame": 23,
+      "sourceFrame": 23,
+      "source": "docs/art-source/motions/production-144/mihono_bourbon/alpha.png",
+      "sourceSha256": "b4f2daa44e9f640ab9be5ff333588760a715e837142eedd4968c93d9fc856419",
+      "crop": [
+        806,
+        1280,
+        977,
+        1524
+      ],
+      "destination": [
+        412,
+        647,
+        72,
+        103
+      ]
+    }
+  ],
+  "skillRevision": {
+    "scale": 0.17682926829268292,
+    "review": "docs/art-source/motions/skill-revisions-2026-09-11/mihono_bourbon/review.json",
+    "beforeFrames": [
+      "03c506fe3428b74346bdd8d747593796241c063c75a137bbf195e45fe745e61e",
+      "37edce5b5a35d5a94f2ca38883c5fbd45d9a6ad3ce10013981e716a37e093f9e",
+      "bf759d4daf6d56ec64f870a2c28e84b234ea2da5550d8c1f10334c54409f78cf",
+      "8031c16f17537d9025faee1969bebbaa49ee166db6b54024cc71f67d447a2e3b",
+      "9dc388d29b9c83d5cda04be77862bf5834cc9375e612ab117fc09a86b9bbbb45",
+      "ea34ed3ba3ddce6f2e4b6eddf3d9d6d0be3aca0b4380d1e387a211acd1e270dc",
+      "c912bfb8cae7aa097eb088b69310d54452cfe7e703408ab078e206457c288f4f",
+      "82a33529ed154ff0fe7cf61fcfb88439bc62723857d652838a477dbd2df74db2",
+      "a3bd86e7d767c886efa9d84641601a8a86272538432406da74e7f47bcd775473",
+      "3b8af061d511743095563db52a47919d10cd9d3433ff86f612f97c46eba9c727",
+      "084465fb9fd90885df2e38d71637c6716f41023177656180adde8215be572e8e",
+      "f6c80b4aebf802ad17d5be45efa3b611dcb5c8b470bb5bc56e6504c9f5939d3c",
+      "065a7b6473490a76e60b1531ab57168077415e092cdd8d30e5c2a9a67b835ae4",
+      "b646049b922c13853fff8313456d0d260cdb6d645e9bbf65b36eb61d93d9c3e7",
+      "8ebfbfcdebfbbce9229537b6776dd3340dcc8c9986157606a6b424c61ffc3a23",
+      "3ffad157c563dd5ece3c0153f61c9c2827eea07ad5e5a4aadb07f55a1868bd5e",
+      "03e8563d3e2532c40a39e944afb4db215c5d73962048a8a75d439f953de9cd81",
+      "43cb24a83d237e29c3ab32405250c7a318fb4ff66cf3907386ee185d71bdcb25",
+      "52be0163d495c0d06818a78a82d5b07dc0bea95520a7281ea40cd8e917f0504b",
+      "642b28dc73228bed84308f47ff6727c7a1e985d5dd4ec665c4cbea79a6f70f09",
+      "398a8da027fdf78e16c08a46a809ad84922ae0d509ec3c3a1a903336620c4c4c",
+      "dacefce3b3edb2b36087e4647de87fcbe30ace41c2cf8dee12398735509aed18",
+      "91d8794eaa71f3075fb6cfc1e4d989e70977885e1391337eb34955b52f8653ea",
+      "6aed7fbea465910bcb4e734574f797737c7607629b25203093f044e055e3947c"
+    ],
+    "afterFrames": [
+      "03c506fe3428b74346bdd8d747593796241c063c75a137bbf195e45fe745e61e",
+      "37edce5b5a35d5a94f2ca38883c5fbd45d9a6ad3ce10013981e716a37e093f9e",
+      "bf759d4daf6d56ec64f870a2c28e84b234ea2da5550d8c1f10334c54409f78cf",
+      "8031c16f17537d9025faee1969bebbaa49ee166db6b54024cc71f67d447a2e3b",
+      "9dc388d29b9c83d5cda04be77862bf5834cc9375e612ab117fc09a86b9bbbb45",
+      "ea34ed3ba3ddce6f2e4b6eddf3d9d6d0be3aca0b4380d1e387a211acd1e270dc",
+      "c912bfb8cae7aa097eb088b69310d54452cfe7e703408ab078e206457c288f4f",
+      "82a33529ed154ff0fe7cf61fcfb88439bc62723857d652838a477dbd2df74db2",
+      "a3bd86e7d767c886efa9d84641601a8a86272538432406da74e7f47bcd775473",
+      "3b8af061d511743095563db52a47919d10cd9d3433ff86f612f97c46eba9c727",
+      "084465fb9fd90885df2e38d71637c6716f41023177656180adde8215be572e8e",
+      "f6c80b4aebf802ad17d5be45efa3b611dcb5c8b470bb5bc56e6504c9f5939d3c",
+      "555d414cc44b84357cd85c64fbf91b9aa5eb4da4e04aff72d1d08f6e34d92596",
+      "addb545c7bd96b044a236b0294f60fc3827dbdc925d886a08e5a829e6c8dfb06",
+      "61cc895ba9efefd94a2841401038c0edd77bfe26a7107bf972749ebfcef98bea",
+      "e216c9bbd4b6b216256c183af529bac65efe02490836062f2e7c56c1b557e3c5",
+      "03e8563d3e2532c40a39e944afb4db215c5d73962048a8a75d439f953de9cd81",
+      "43cb24a83d237e29c3ab32405250c7a318fb4ff66cf3907386ee185d71bdcb25",
+      "52be0163d495c0d06818a78a82d5b07dc0bea95520a7281ea40cd8e917f0504b",
+      "642b28dc73228bed84308f47ff6727c7a1e985d5dd4ec665c4cbea79a6f70f09",
+      "398a8da027fdf78e16c08a46a809ad84922ae0d509ec3c3a1a903336620c4c4c",
+      "dacefce3b3edb2b36087e4647de87fcbe30ace41c2cf8dee12398735509aed18",
+      "91d8794eaa71f3075fb6cfc1e4d989e70977885e1391337eb34955b52f8653ea",
+      "6aed7fbea465910bcb4e734574f797737c7607629b25203093f044e055e3947c"
+    ],
+    "unchangedFrames": 20,
+    "changedFrames": [
+      12,
+      13,
+      14,
+      15
+    ]
+  }
+}

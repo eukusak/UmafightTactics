@@ -1,0 +1,506 @@
+{
+  "format": "uft-baked-frames-v1",
+  "scale": 0.39543726235741444,
+  "anchor": [
+    64,
+    110
+  ],
+  "runtimeSha256": "055c34f21c8a4d5499599a76442c0087eb02dbdfc743d7d9c15381d9ab6403e8",
+  "frames": [
+    {
+      "frame": 0,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/production-144/orfevre/alpha.png",
+      "sourceSha256": "01c9f32bd590d52b205afa2b4dc3b7348b4e4c420de202643fdcc4c4c8da824c",
+      "crop": [
+        31,
+        17,
+        206,
+        261
+      ],
+      "destination": [
+        29,
+        14,
+        69,
+        96
+      ]
+    },
+    {
+      "frame": 1,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/production-144/orfevre/alpha.png",
+      "sourceSha256": "01c9f32bd590d52b205afa2b4dc3b7348b4e4c420de202643fdcc4c4c8da824c",
+      "crop": [
+        287,
+        17,
+        461,
+        261
+      ],
+      "destination": [
+        157,
+        14,
+        69,
+        96
+      ]
+    },
+    {
+      "frame": 2,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/production-144/orfevre/alpha.png",
+      "sourceSha256": "01c9f32bd590d52b205afa2b4dc3b7348b4e4c420de202643fdcc4c4c8da824c",
+      "crop": [
+        542,
+        17,
+        717,
+        261
+      ],
+      "destination": [
+        285,
+        14,
+        69,
+        96
+      ]
+    },
+    {
+      "frame": 3,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/production-144/orfevre/alpha.png",
+      "sourceSha256": "01c9f32bd590d52b205afa2b4dc3b7348b4e4c420de202643fdcc4c4c8da824c",
+      "crop": [
+        797,
+        17,
+        972,
+        261
+      ],
+      "destination": [
+        413,
+        14,
+        69,
+        96
+      ]
+    },
+    {
+      "frame": 4,
+      "sourceFrame": 4,
+      "source": "docs/art-source/motions/production-144/orfevre/alpha.png",
+      "sourceSha256": "01c9f32bd590d52b205afa2b4dc3b7348b4e4c420de202643fdcc4c4c8da824c",
+      "crop": [
+        12,
+        276,
+        233,
+        519
+      ],
+      "destination": [
+        20,
+        142,
+        87,
+        96
+      ]
+    },
+    {
+      "frame": 5,
+      "sourceFrame": 5,
+      "source": "docs/art-source/motions/production-144/orfevre/alpha.png",
+      "sourceSha256": "01c9f32bd590d52b205afa2b4dc3b7348b4e4c420de202643fdcc4c4c8da824c",
+      "crop": [
+        266,
+        277,
+        501,
+        521
+      ],
+      "destination": [
+        145,
+        142,
+        93,
+        96
+      ]
+    },
+    {
+      "frame": 6,
+      "sourceFrame": 6,
+      "source": "docs/art-source/motions/production-144/orfevre/alpha.png",
+      "sourceSha256": "01c9f32bd590d52b205afa2b4dc3b7348b4e4c420de202643fdcc4c4c8da824c",
+      "crop": [
+        527,
+        280,
+        760,
+        518
+      ],
+      "destination": [
+        274,
+        144,
+        92,
+        94
+      ]
+    },
+    {
+      "frame": 7,
+      "sourceFrame": 7,
+      "source": "docs/art-source/motions/production-144/orfevre/alpha.png",
+      "sourceSha256": "01c9f32bd590d52b205afa2b4dc3b7348b4e4c420de202643fdcc4c4c8da824c",
+      "crop": [
+        782,
+        277,
+        1005,
+        521
+      ],
+      "destination": [
+        404,
+        142,
+        88,
+        96
+      ]
+    },
+    {
+      "frame": 8,
+      "sourceFrame": 8,
+      "source": "docs/art-source/motions/production-144/orfevre/alpha.png",
+      "sourceSha256": "01c9f32bd590d52b205afa2b4dc3b7348b4e4c420de202643fdcc4c4c8da824c",
+      "crop": [
+        11,
+        522,
+        244,
+        772
+      ],
+      "destination": [
+        18,
+        267,
+        92,
+        99
+      ]
+    },
+    {
+      "frame": 9,
+      "sourceFrame": 9,
+      "source": "docs/art-source/motions/production-144/orfevre/alpha.png",
+      "sourceSha256": "01c9f32bd590d52b205afa2b4dc3b7348b4e4c420de202643fdcc4c4c8da824c",
+      "crop": [
+        272,
+        524,
+        466,
+        772
+      ],
+      "destination": [
+        153,
+        268,
+        77,
+        98
+      ]
+    },
+    {
+      "frame": 10,
+      "sourceFrame": 10,
+      "source": "docs/art-source/motions/production-144/orfevre/alpha.png",
+      "sourceSha256": "01c9f32bd590d52b205afa2b4dc3b7348b4e4c420de202643fdcc4c4c8da824c",
+      "crop": [
+        531,
+        522,
+        768,
+        772
+      ],
+      "destination": [
+        273,
+        267,
+        94,
+        99
+      ]
+    },
+    {
+      "frame": 11,
+      "sourceFrame": 11,
+      "source": "docs/art-source/motions/production-144/orfevre/alpha.png",
+      "sourceSha256": "01c9f32bd590d52b205afa2b4dc3b7348b4e4c420de202643fdcc4c4c8da824c",
+      "crop": [
+        786,
+        521,
+        972,
+        772
+      ],
+      "destination": [
+        411,
+        267,
+        74,
+        99
+      ]
+    },
+    {
+      "frame": 12,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/skill-revisions-2026-09-11/orfevre/generated.png",
+      "sourceSha256": "771c74d9901f97e5024b87bcbb55553edb50a1cbf10f4b607b0c94a202d8a136",
+      "crop": [
+        119,
+        59,
+        694,
+        442
+      ],
+      "destination": [
+        8,
+        420,
+        111,
+        74
+      ]
+    },
+    {
+      "frame": 13,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/skill-revisions-2026-09-11/orfevre/generated.png",
+      "sourceSha256": "771c74d9901f97e5024b87bcbb55553edb50a1cbf10f4b607b0c94a202d8a136",
+      "crop": [
+        887,
+        19,
+        1475,
+        459
+      ],
+      "destination": [
+        135,
+        409,
+        114,
+        85
+      ]
+    },
+    {
+      "frame": 14,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/skill-revisions-2026-09-11/orfevre/generated.png",
+      "sourceSha256": "771c74d9901f97e5024b87bcbb55553edb50a1cbf10f4b607b0c94a202d8a136",
+      "crop": [
+        190,
+        463,
+        663,
+        1000
+      ],
+      "destination": [
+        274,
+        390,
+        92,
+        104
+      ]
+    },
+    {
+      "frame": 15,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/skill-revisions-2026-09-11/orfevre/generated.png",
+      "sourceSha256": "771c74d9901f97e5024b87bcbb55553edb50a1cbf10f4b607b0c94a202d8a136",
+      "crop": [
+        904,
+        548,
+        1307,
+        979
+      ],
+      "destination": [
+        409,
+        411,
+        78,
+        83
+      ]
+    },
+    {
+      "frame": 16,
+      "sourceFrame": 16,
+      "source": "docs/art-source/motions/production-144/orfevre/alpha.png",
+      "sourceSha256": "01c9f32bd590d52b205afa2b4dc3b7348b4e4c420de202643fdcc4c4c8da824c",
+      "crop": [
+        29,
+        1023,
+        224,
+        1251
+      ],
+      "destination": [
+        25,
+        532,
+        77,
+        90
+      ]
+    },
+    {
+      "frame": 17,
+      "sourceFrame": 17,
+      "source": "docs/art-source/motions/production-144/orfevre/alpha.png",
+      "sourceSha256": "01c9f32bd590d52b205afa2b4dc3b7348b4e4c420de202643fdcc4c4c8da824c",
+      "crop": [
+        280,
+        1044,
+        487,
+        1247
+      ],
+      "destination": [
+        151,
+        542,
+        82,
+        80
+      ]
+    },
+    {
+      "frame": 18,
+      "sourceFrame": 18,
+      "source": "docs/art-source/motions/production-144/orfevre/alpha.png",
+      "sourceSha256": "01c9f32bd590d52b205afa2b4dc3b7348b4e4c420de202643fdcc4c4c8da824c",
+      "crop": [
+        541,
+        1061,
+        725,
+        1248
+      ],
+      "destination": [
+        283,
+        548,
+        73,
+        74
+      ]
+    },
+    {
+      "frame": 19,
+      "sourceFrame": 19,
+      "source": "docs/art-source/motions/production-144/orfevre/alpha.png",
+      "sourceSha256": "01c9f32bd590d52b205afa2b4dc3b7348b4e4c420de202643fdcc4c4c8da824c",
+      "crop": [
+        751,
+        1137,
+        1013,
+        1247
+      ],
+      "destination": [
+        396,
+        579,
+        104,
+        43
+      ]
+    },
+    {
+      "frame": 20,
+      "sourceFrame": 20,
+      "source": "docs/art-source/motions/production-144/orfevre/alpha.png",
+      "sourceSha256": "01c9f32bd590d52b205afa2b4dc3b7348b4e4c420de202643fdcc4c4c8da824c",
+      "crop": [
+        26,
+        1261,
+        202,
+        1519
+      ],
+      "destination": [
+        29,
+        648,
+        70,
+        102
+      ]
+    },
+    {
+      "frame": 21,
+      "sourceFrame": 21,
+      "source": "docs/art-source/motions/production-144/orfevre/alpha.png",
+      "sourceSha256": "01c9f32bd590d52b205afa2b4dc3b7348b4e4c420de202643fdcc4c4c8da824c",
+      "crop": [
+        287,
+        1261,
+        454,
+        1524
+      ],
+      "destination": [
+        159,
+        646,
+        66,
+        104
+      ]
+    },
+    {
+      "frame": 22,
+      "sourceFrame": 22,
+      "source": "docs/art-source/motions/production-144/orfevre/alpha.png",
+      "sourceSha256": "01c9f32bd590d52b205afa2b4dc3b7348b4e4c420de202643fdcc4c4c8da824c",
+      "crop": [
+        529,
+        1260,
+        724,
+        1523
+      ],
+      "destination": [
+        281,
+        646,
+        77,
+        104
+      ]
+    },
+    {
+      "frame": 23,
+      "sourceFrame": 23,
+      "source": "docs/art-source/motions/production-144/orfevre/alpha.png",
+      "sourceSha256": "01c9f32bd590d52b205afa2b4dc3b7348b4e4c420de202643fdcc4c4c8da824c",
+      "crop": [
+        806,
+        1264,
+        972,
+        1525
+      ],
+      "destination": [
+        415,
+        647,
+        66,
+        103
+      ]
+    }
+  ],
+  "skillRevision": {
+    "scale": 0.19366852886405958,
+    "review": "docs/art-source/motions/skill-revisions-2026-09-11/orfevre/review.json",
+    "beforeFrames": [
+      "691481c69bb28e8ce7fa589a0dd803d0ed64b2f3632fd21b38076c3b9d0af220",
+      "dfe6d9e3bf0bc0a3197c4fa71c936c87afaf543bc8627e147e3d206ea434cd80",
+      "c0ce6d1e64ae78230a4e6e880e848596da72c83f236518c4a7cdd74824d4ffcb",
+      "c861769a9f356be5fc1f633491f53e3ced60843a88a242eaf6f3670ff3f5b614",
+      "bef9c92c4ba1a27f9214dfcdd4c4633f38a8eed2d2fb363169ba7aab7e134455",
+      "dfe853077623fba88b1b5ecaec756e93b51395b42c42c3d6761bc1ee9822ced7",
+      "3efa7191d83432860076fe7067c767c8d33c85341655bcb8abdb3aae3b7f1e9f",
+      "b442471cccac5c24ca8c63762830149128ad2fecf16cde3074db1b497a13b3e3",
+      "edf9d6a37f7d4bb1b10903317c2a959dc7d5b856a0063e52f12a4ab9397d388b",
+      "ccbb2bd643343b94bc25415bb242ad9643d60fcef616454d0f3b384e476eac5a",
+      "5a67a226386a1626f777fc30ed8b9f3fe622309310f1426c64ffdc0cb96610c5",
+      "a3788230179406197d4468449b2f2a81f727ef17b2c0e9c06fa51dc85eec69f4",
+      "466f30704ae9fa714c67fc78c497c6dcc8c7155819e14cd6b7521cfe00eff144",
+      "c1630b7b49538d6c422e552ead9b492ed54ac3c6467e1fb98a89ae1247eca9ed",
+      "f1ac9322a8affabf563c3d2fa7bc974e5b4d59552bd75d9397db9c38ba903bfd",
+      "b1b3d1ee0401be38815b043c260fc1c1fc73dcb381300a69333aa67de6945e0f",
+      "cfc08a32e3dcc3be400ed7c446b454610618f71ce6ba7fd189afaf68ae2c2078",
+      "3a149ae28a13c11614b17bc2338e16725c75546c193226f081284684458304d8",
+      "abd5a79153da74a45b0d5dddebb9d9df93f46519b0f87c551bcb6d994400d69f",
+      "84eae5590e40228cac2a13ba2647c13686cf550420fc472e05ac4b9516324d40",
+      "942481cf0be33fd6922b9a5066366412596b0ca22a70c3601a5d576cbb832003",
+      "36cf3eccc1a4ca19df4013cb3425a857c7684cc80ca6f80a7234e91277ad92ab",
+      "d2c1b527ddcaeea1f9b7a5a20da7e5196d018cae76e5e02541903718391a2a5f",
+      "e008ff65d4b02fe340e0f3f89ffdffda371445f20a94a4ad55412b5998f3248c"
+    ],
+    "afterFrames": [
+      "691481c69bb28e8ce7fa589a0dd803d0ed64b2f3632fd21b38076c3b9d0af220",
+      "dfe6d9e3bf0bc0a3197c4fa71c936c87afaf543bc8627e147e3d206ea434cd80",
+      "c0ce6d1e64ae78230a4e6e880e848596da72c83f236518c4a7cdd74824d4ffcb",
+      "c861769a9f356be5fc1f633491f53e3ced60843a88a242eaf6f3670ff3f5b614",
+      "bef9c92c4ba1a27f9214dfcdd4c4633f38a8eed2d2fb363169ba7aab7e134455",
+      "dfe853077623fba88b1b5ecaec756e93b51395b42c42c3d6761bc1ee9822ced7",
+      "3efa7191d83432860076fe7067c767c8d33c85341655bcb8abdb3aae3b7f1e9f",
+      "b442471cccac5c24ca8c63762830149128ad2fecf16cde3074db1b497a13b3e3",
+      "edf9d6a37f7d4bb1b10903317c2a959dc7d5b856a0063e52f12a4ab9397d388b",
+      "ccbb2bd643343b94bc25415bb242ad9643d60fcef616454d0f3b384e476eac5a",
+      "5a67a226386a1626f777fc30ed8b9f3fe622309310f1426c64ffdc0cb96610c5",
+      "a3788230179406197d4468449b2f2a81f727ef17b2c0e9c06fa51dc85eec69f4",
+      "06306c85d999e3c1570edc64047a5ade020b35f4161d3c12c248fafd927572f7",
+      "8765d392c29779ebf284b64c4a3a096fcf527aa60ed126b49b0f6cb599722afc",
+      "b64e998ffe9dbc559eed23a2a824ceff4435dbf71be15ad391c9239dca02381a",
+      "07f300f8c6d6cd21ecfd6bab3692a04b1c239c7ae20c6c4a38713eb19eb0c91a",
+      "cfc08a32e3dcc3be400ed7c446b454610618f71ce6ba7fd189afaf68ae2c2078",
+      "3a149ae28a13c11614b17bc2338e16725c75546c193226f081284684458304d8",
+      "abd5a79153da74a45b0d5dddebb9d9df93f46519b0f87c551bcb6d994400d69f",
+      "84eae5590e40228cac2a13ba2647c13686cf550420fc472e05ac4b9516324d40",
+      "942481cf0be33fd6922b9a5066366412596b0ca22a70c3601a5d576cbb832003",
+      "36cf3eccc1a4ca19df4013cb3425a857c7684cc80ca6f80a7234e91277ad92ab",
+      "d2c1b527ddcaeea1f9b7a5a20da7e5196d018cae76e5e02541903718391a2a5f",
+      "e008ff65d4b02fe340e0f3f89ffdffda371445f20a94a4ad55412b5998f3248c"
+    ],
+    "unchangedFrames": 20,
+    "changedFrames": [
+      12,
+      13,
+      14,
+      15
+    ]
+  }
+}

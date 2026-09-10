@@ -14,6 +14,13 @@ test('race-backed skills expose distinct patterns and render their timed frame p
     ['oguri_cap', '집중 유성', '1990'],
     ['rice_shower', '흡수 요새', '1995'],
     ['haru_urara', '서리 전선', '2위'],
+    ['fuji_kiseki', '확장 폭발', '1994'],
+    ['gold_ship', '추격 연타', '2012'],
+    ['daiwa_scarlet', '잔불 지대', '2008'],
+    ['ines_fujin', '지구력 축적', '1990'],
+    ['eishin_flash', '지연 봉쇄', '2010'],
+    ['almond_eye', '삼단 결정타', '2020'],
+    ['manhattan_cafe', '흡수 휩쓸기', '2001'],
   ]) {
     await page.getByLabel('기물 선택').selectOption(id);
     await expect(page.locator('.motion-skill-name')).toContainText(label);

@@ -1,0 +1,506 @@
+{
+  "format": "uft-baked-frames-v1",
+  "scale": 0.44635193133047213,
+  "anchor": [
+    64,
+    110
+  ],
+  "runtimeSha256": "4e5bbd7a66642f0262517cabe4415b8082f804bcc36f3c2f4ab86177e42c5d8a",
+  "frames": [
+    {
+      "frame": 0,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/production-144/sakura_chiyono_o/alpha.png",
+      "sourceSha256": "26c3593b51c71d7edfa9bcf621a8123780749fa72ad743051bf11de60b3b15b2",
+      "crop": [
+        66,
+        34,
+        203,
+        260
+      ],
+      "destination": [
+        33,
+        9,
+        61,
+        101
+      ]
+    },
+    {
+      "frame": 1,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/production-144/sakura_chiyono_o/alpha.png",
+      "sourceSha256": "26c3593b51c71d7edfa9bcf621a8123780749fa72ad743051bf11de60b3b15b2",
+      "crop": [
+        314,
+        32,
+        463,
+        260
+      ],
+      "destination": [
+        158,
+        8,
+        67,
+        102
+      ]
+    },
+    {
+      "frame": 2,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/production-144/sakura_chiyono_o/alpha.png",
+      "sourceSha256": "26c3593b51c71d7edfa9bcf621a8123780749fa72ad743051bf11de60b3b15b2",
+      "crop": [
+        568,
+        33,
+        717,
+        260
+      ],
+      "destination": [
+        286,
+        9,
+        67,
+        101
+      ]
+    },
+    {
+      "frame": 3,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/production-144/sakura_chiyono_o/alpha.png",
+      "sourceSha256": "26c3593b51c71d7edfa9bcf621a8123780749fa72ad743051bf11de60b3b15b2",
+      "crop": [
+        817,
+        33,
+        961,
+        260
+      ],
+      "destination": [
+        416,
+        9,
+        64,
+        101
+      ]
+    },
+    {
+      "frame": 4,
+      "sourceFrame": 4,
+      "source": "docs/art-source/motions/production-144/sakura_chiyono_o/alpha.png",
+      "sourceSha256": "26c3593b51c71d7edfa9bcf621a8123780749fa72ad743051bf11de60b3b15b2",
+      "crop": [
+        38,
+        284,
+        222,
+        515
+      ],
+      "destination": [
+        23,
+        135,
+        82,
+        103
+      ]
+    },
+    {
+      "frame": 5,
+      "sourceFrame": 5,
+      "source": "docs/art-source/motions/production-144/sakura_chiyono_o/alpha.png",
+      "sourceSha256": "26c3593b51c71d7edfa9bcf621a8123780749fa72ad743051bf11de60b3b15b2",
+      "crop": [
+        292,
+        282,
+        475,
+        515
+      ],
+      "destination": [
+        151,
+        134,
+        82,
+        104
+      ]
+    },
+    {
+      "frame": 6,
+      "sourceFrame": 6,
+      "source": "docs/art-source/motions/production-144/sakura_chiyono_o/alpha.png",
+      "sourceSha256": "26c3593b51c71d7edfa9bcf621a8123780749fa72ad743051bf11de60b3b15b2",
+      "crop": [
+        538,
+        284,
+        728,
+        515
+      ],
+      "destination": [
+        277,
+        135,
+        85,
+        103
+      ]
+    },
+    {
+      "frame": 7,
+      "sourceFrame": 7,
+      "source": "docs/art-source/motions/production-144/sakura_chiyono_o/alpha.png",
+      "sourceSha256": "26c3593b51c71d7edfa9bcf621a8123780749fa72ad743051bf11de60b3b15b2",
+      "crop": [
+        800,
+        286,
+        979,
+        515
+      ],
+      "destination": [
+        408,
+        136,
+        80,
+        102
+      ]
+    },
+    {
+      "frame": 8,
+      "sourceFrame": 8,
+      "source": "docs/art-source/motions/production-144/sakura_chiyono_o/alpha.png",
+      "sourceSha256": "26c3593b51c71d7edfa9bcf621a8123780749fa72ad743051bf11de60b3b15b2",
+      "crop": [
+        51,
+        543,
+        208,
+        775
+      ],
+      "destination": [
+        29,
+        262,
+        70,
+        104
+      ]
+    },
+    {
+      "frame": 9,
+      "sourceFrame": 9,
+      "source": "docs/art-source/motions/production-144/sakura_chiyono_o/alpha.png",
+      "sourceSha256": "26c3593b51c71d7edfa9bcf621a8123780749fa72ad743051bf11de60b3b15b2",
+      "crop": [
+        296,
+        546,
+        472,
+        775
+      ],
+      "destination": [
+        152,
+        264,
+        79,
+        102
+      ]
+    },
+    {
+      "frame": 10,
+      "sourceFrame": 10,
+      "source": "docs/art-source/motions/production-144/sakura_chiyono_o/alpha.png",
+      "sourceSha256": "26c3593b51c71d7edfa9bcf621a8123780749fa72ad743051bf11de60b3b15b2",
+      "crop": [
+        543,
+        545,
+        745,
+        775
+      ],
+      "destination": [
+        275,
+        263,
+        90,
+        103
+      ]
+    },
+    {
+      "frame": 11,
+      "sourceFrame": 11,
+      "source": "docs/art-source/motions/production-144/sakura_chiyono_o/alpha.png",
+      "sourceSha256": "26c3593b51c71d7edfa9bcf621a8123780749fa72ad743051bf11de60b3b15b2",
+      "crop": [
+        812,
+        543,
+        972,
+        775
+      ],
+      "destination": [
+        412,
+        262,
+        71,
+        104
+      ]
+    },
+    {
+      "frame": 12,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/skill-revisions-2026-09-11/sakura_chiyono_o/generated.png",
+      "sourceSha256": "e05004ba9de1e579d11d0f9e27d6220cb97f861cdfa81fbfb91381e97ca4eae9",
+      "crop": [
+        145,
+        94,
+        559,
+        482
+      ],
+      "destination": [
+        34,
+        438,
+        60,
+        56
+      ]
+    },
+    {
+      "frame": 13,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/skill-revisions-2026-09-11/sakura_chiyono_o/generated.png",
+      "sourceSha256": "e05004ba9de1e579d11d0f9e27d6220cb97f861cdfa81fbfb91381e97ca4eae9",
+      "crop": [
+        774,
+        92,
+        1356,
+        490
+      ],
+      "destination": [
+        150,
+        437,
+        84,
+        57
+      ]
+    },
+    {
+      "frame": 14,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/skill-revisions-2026-09-11/sakura_chiyono_o/generated.png",
+      "sourceSha256": "e05004ba9de1e579d11d0f9e27d6220cb97f861cdfa81fbfb91381e97ca4eae9",
+      "crop": [
+        83,
+        557,
+        887,
+        954
+      ],
+      "destination": [
+        262,
+        437,
+        116,
+        57
+      ]
+    },
+    {
+      "frame": 15,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/skill-revisions-2026-09-11/sakura_chiyono_o/generated.png",
+      "sourceSha256": "e05004ba9de1e579d11d0f9e27d6220cb97f861cdfa81fbfb91381e97ca4eae9",
+      "crop": [
+        983,
+        558,
+        1371,
+        953
+      ],
+      "destination": [
+        420,
+        437,
+        56,
+        57
+      ]
+    },
+    {
+      "frame": 16,
+      "sourceFrame": 16,
+      "source": "docs/art-source/motions/production-144/sakura_chiyono_o/alpha.png",
+      "sourceSha256": "26c3593b51c71d7edfa9bcf621a8123780749fa72ad743051bf11de60b3b15b2",
+      "crop": [
+        45,
+        1036,
+        208,
+        1254
+      ],
+      "destination": [
+        27,
+        525,
+        73,
+        97
+      ]
+    },
+    {
+      "frame": 17,
+      "sourceFrame": 17,
+      "source": "docs/art-source/motions/production-144/sakura_chiyono_o/alpha.png",
+      "sourceSha256": "26c3593b51c71d7edfa9bcf621a8123780749fa72ad743051bf11de60b3b15b2",
+      "crop": [
+        288,
+        1062,
+        466,
+        1246
+      ],
+      "destination": [
+        152,
+        540,
+        79,
+        82
+      ]
+    },
+    {
+      "frame": 18,
+      "sourceFrame": 18,
+      "source": "docs/art-source/motions/production-144/sakura_chiyono_o/alpha.png",
+      "sourceSha256": "26c3593b51c71d7edfa9bcf621a8123780749fa72ad743051bf11de60b3b15b2",
+      "crop": [
+        537,
+        1069,
+        713,
+        1245
+      ],
+      "destination": [
+        280,
+        543,
+        79,
+        79
+      ]
+    },
+    {
+      "frame": 19,
+      "sourceFrame": 19,
+      "source": "docs/art-source/motions/production-144/sakura_chiyono_o/alpha.png",
+      "sourceSha256": "26c3593b51c71d7edfa9bcf621a8123780749fa72ad743051bf11de60b3b15b2",
+      "crop": [
+        776,
+        1134,
+        1007,
+        1236
+      ],
+      "destination": [
+        396,
+        576,
+        103,
+        46
+      ]
+    },
+    {
+      "frame": 20,
+      "sourceFrame": 20,
+      "source": "docs/art-source/motions/production-144/sakura_chiyono_o/alpha.png",
+      "sourceSha256": "26c3593b51c71d7edfa9bcf621a8123780749fa72ad743051bf11de60b3b15b2",
+      "crop": [
+        54,
+        1284,
+        200,
+        1514
+      ],
+      "destination": [
+        31,
+        647,
+        65,
+        103
+      ]
+    },
+    {
+      "frame": 21,
+      "sourceFrame": 21,
+      "source": "docs/art-source/motions/production-144/sakura_chiyono_o/alpha.png",
+      "sourceSha256": "26c3593b51c71d7edfa9bcf621a8123780749fa72ad743051bf11de60b3b15b2",
+      "crop": [
+        311,
+        1281,
+        470,
+        1513
+      ],
+      "destination": [
+        156,
+        646,
+        71,
+        104
+      ]
+    },
+    {
+      "frame": 22,
+      "sourceFrame": 22,
+      "source": "docs/art-source/motions/production-144/sakura_chiyono_o/alpha.png",
+      "sourceSha256": "26c3593b51c71d7edfa9bcf621a8123780749fa72ad743051bf11de60b3b15b2",
+      "crop": [
+        543,
+        1282,
+        717,
+        1514
+      ],
+      "destination": [
+        281,
+        646,
+        78,
+        104
+      ]
+    },
+    {
+      "frame": 23,
+      "sourceFrame": 23,
+      "source": "docs/art-source/motions/production-144/sakura_chiyono_o/alpha.png",
+      "sourceSha256": "26c3593b51c71d7edfa9bcf621a8123780749fa72ad743051bf11de60b3b15b2",
+      "crop": [
+        815,
+        1282,
+        966,
+        1513
+      ],
+      "destination": [
+        414,
+        647,
+        67,
+        103
+      ]
+    }
+  ],
+  "skillRevision": {
+    "scale": 0.14427860696517414,
+    "review": "docs/art-source/motions/skill-revisions-2026-09-11/sakura_chiyono_o/review.json",
+    "beforeFrames": [
+      "04ec4fc88ba9d8cd0da6cab50e7f02a3d8aa0e0ec7c06b74a8c125e5930ed6ed",
+      "e0eb2599c2bfae810c146736e604134c489e0953d1075e7d8f3946bbd61add13",
+      "657c320a959b908a2a43ffd91de6730a4aab2226212899a5bbf869ece8b4cf88",
+      "eff79b14c1a0b4be3dc4cb2e0877ba7a23582eacd12740207c50fd50786b8617",
+      "e8ba72be692fb70c82ffbc61ae95a88541e3862a14422099e45eaa3cb34f108d",
+      "255fd5b5fa46b1dede5651728f70f8ced1945fd962bea7f76e5e85f87dab209d",
+      "3cd16ba746cf75bb93d23714b4e958dc3f3819b80cc039424e6b10bbaea7d5cc",
+      "420243fd2d972f3ed153c109e0970b7798b7fa0a66baece9ff531a75181e88d6",
+      "44663c8d3a82cb2046c37e7a75eb5da9f9de09836ebcdadd8296394f99d0ffdb",
+      "11a4346b393ddace9babe199556990fab8c2ab0d163df0ed741f1a2c93e1c237",
+      "e017bffce7bceea3638737d72a0964194ed52c55855eccf7b87af56ab4d07142",
+      "280f0306ec03cd02d76f06e102306a0e906d3b8f102e9a733f79507a163448a7",
+      "f1a753af42d8191719bd9f9e6f0fd4b58acaf530004adce1acef0b37610fedd0",
+      "49d4b3f28180f0c44dcfcf625b644e4cab9d5eccd102b4e2e3d3622b24fb7994",
+      "9116260ba5c0625088e1955e6e517c6b5dd257c5ca8a08d40bb8215867ddc049",
+      "0e9e782484b51d7ee0344d13676a578c4427042f4e4426fa589004f0a55f08f8",
+      "56f1915fdf727dd09fc8df6b26be16dd624472642dd23dcac49436985e049c5f",
+      "bc10e28a849d4c13b7e933823cbc52eac75719722f034d60f835e1b026986eaa",
+      "ad87c41e779383355a4f82dfb6209cf255cd1aca742a53ef6d81f2d01b64cda3",
+      "1c62602cf3ed8a277ad6af49e58cfdbbe786735793dade923d9e4a239b8e5e8c",
+      "588425aea332b691758d1c4d7039d5d61643f35f6b9b8baafd0068805b9c682e",
+      "7ab36cc1fa2f2fdb98a9b3d9d107ea1565647c14c373c8e17c626c9ad1926c95",
+      "1a1d36dc6250572622fb20c1bd837e2cb945868e3961d04ce7720331cdb95495",
+      "b02865a756203d6ffc907bdf28ae5f19524a73efc060c8fd5e9af3c68bb348ce"
+    ],
+    "afterFrames": [
+      "04ec4fc88ba9d8cd0da6cab50e7f02a3d8aa0e0ec7c06b74a8c125e5930ed6ed",
+      "e0eb2599c2bfae810c146736e604134c489e0953d1075e7d8f3946bbd61add13",
+      "657c320a959b908a2a43ffd91de6730a4aab2226212899a5bbf869ece8b4cf88",
+      "eff79b14c1a0b4be3dc4cb2e0877ba7a23582eacd12740207c50fd50786b8617",
+      "e8ba72be692fb70c82ffbc61ae95a88541e3862a14422099e45eaa3cb34f108d",
+      "255fd5b5fa46b1dede5651728f70f8ced1945fd962bea7f76e5e85f87dab209d",
+      "3cd16ba746cf75bb93d23714b4e958dc3f3819b80cc039424e6b10bbaea7d5cc",
+      "420243fd2d972f3ed153c109e0970b7798b7fa0a66baece9ff531a75181e88d6",
+      "44663c8d3a82cb2046c37e7a75eb5da9f9de09836ebcdadd8296394f99d0ffdb",
+      "11a4346b393ddace9babe199556990fab8c2ab0d163df0ed741f1a2c93e1c237",
+      "e017bffce7bceea3638737d72a0964194ed52c55855eccf7b87af56ab4d07142",
+      "280f0306ec03cd02d76f06e102306a0e906d3b8f102e9a733f79507a163448a7",
+      "16816a1a18a845be9211a38994369d1e222f301637f6dd54128eacdf7dfeb7b5",
+      "05327ce6c7f436c5e77ffe3b6bd270e2e2095ac6154bba1c5c1b3575e14ea878",
+      "a8711b9310a2b4e343725f41cf731b39e5568dfc888f76f3a45039130d34c030",
+      "597d24186a6bc18e6fb189bf90a8e5643cb66a22b6a7d8c5f7bd4f143ed64853",
+      "56f1915fdf727dd09fc8df6b26be16dd624472642dd23dcac49436985e049c5f",
+      "bc10e28a849d4c13b7e933823cbc52eac75719722f034d60f835e1b026986eaa",
+      "ad87c41e779383355a4f82dfb6209cf255cd1aca742a53ef6d81f2d01b64cda3",
+      "1c62602cf3ed8a277ad6af49e58cfdbbe786735793dade923d9e4a239b8e5e8c",
+      "588425aea332b691758d1c4d7039d5d61643f35f6b9b8baafd0068805b9c682e",
+      "7ab36cc1fa2f2fdb98a9b3d9d107ea1565647c14c373c8e17c626c9ad1926c95",
+      "1a1d36dc6250572622fb20c1bd837e2cb945868e3961d04ce7720331cdb95495",
+      "b02865a756203d6ffc907bdf28ae5f19524a73efc060c8fd5e9af3c68bb348ce"
+    ],
+    "unchangedFrames": 20,
+    "changedFrames": [
+      12,
+      13,
+      14,
+      15
+    ]
+  }
+}
