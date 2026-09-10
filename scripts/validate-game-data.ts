@@ -123,7 +123,7 @@ for (const cost of [1, 2, 3, 4, 5] as const) {
 // -------------------------------------------------------------------- items
 check(COMPONENT_DEFS.length === 10, `components ${COMPONENT_DEFS.length} != 10`);
 check(COMPLETED_ITEM_DEFS.length === 55, `completed items ${COMPLETED_ITEM_DEFS.length} != 55`);
-check(new Set(ALL_ITEM_DEFS.map((i) => i.id)).size === 65, 'duplicate item ids');
+check(new Set(ALL_ITEM_DEFS.map((i) => i.id)).size === ALL_ITEM_DEFS.length, 'duplicate item ids');
 
 const recipeKeys = new Set<string>();
 const componentIds = new Set(COMPONENT_DEFS.map((c) => c.id));
@@ -225,5 +225,5 @@ if (failures.length) {
   process.exit(1);
 }
 console.log(
-  `data:validate — OK (145 units / 5 seasons × 60 / ${COST_UNIT_COUNTS[1]}-${COST_UNIT_COUNTS[2]}-${COST_UNIT_COUNTS[3]}-${COST_UNIT_COUNTS[4]}-${COST_UNIT_COUNTS[5]} costs / 65 items / 24 shared + 20 seasonal traits / 48 augments)`,
+  `data:validate — OK (145 units / 5 seasons × 60 / ${COST_UNIT_COUNTS[1]}-${COST_UNIT_COUNTS[2]}-${COST_UNIT_COUNTS[3]}-${COST_UNIT_COUNTS[4]}-${COST_UNIT_COUNTS[5]} costs / ${ALL_ITEM_DEFS.length} items / 24 shared + 20 seasonal traits / 48 augments)`,
 );

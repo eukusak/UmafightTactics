@@ -13,6 +13,7 @@ import { hexDistance, isBackRow, isFrontRow, neighbours, hexKey } from './hex';
 
 /** Everything an effect may need from the battle it runs inside. */
 export type EffectContext = {
+  supportSkillApplied?: (source: CombatUnit, target: CombatUnit, amount: number) => void;
   shieldCreated?: (source: CombatUnit, target: CombatUnit, amount: number) => void;
   now: number;
   overtime: boolean;
@@ -108,6 +109,11 @@ export function triggerHolds(
     case 'COMBAT_START': return event === 'COMBAT_START';
     case 'ON_ATTACK': return event === 'ON_ATTACK';
     case 'ON_NTH_ATTACK': return event === 'ON_ATTACK' && t > 0 && unit.attackCount % t === 0;
+    case 'ON_SAME_TARGET_NTH_ATTACK': return event === 'ON_ATTACK' && t > 0 && unit.attacksOnCurrentTarget % t === 0;
+    case 'ON_BASIC_HIT_TAKEN': return event === 'ON_BASIC_HIT_TAKEN';
+    case 'ON_SKILL_HIT': return event === 'ON_SKILL_HIT';
+    case 'ON_CC_APPLIED': return event === 'ON_CC_APPLIED';
+    case 'ON_SUPPORT_SKILL': return event === 'ON_SUPPORT_SKILL';
     case 'ON_HIT_TAKEN': return event === 'ON_HIT_TAKEN';
     case 'ON_CAST': return event === 'ON_CAST';
     case 'ON_KILL': return event === 'ON_KILL';
@@ -139,6 +145,7 @@ export function triggerHolds(
 }
 
 export type TriggerEvent =
+  | 'ON_BASIC_HIT_TAKEN' | 'ON_SKILL_HIT' | 'ON_CC_APPLIED' | 'ON_SUPPORT_SKILL'
   | 'PASSIVE' | 'RECOMPUTE' | 'COMBAT_START' | 'ON_ATTACK' | 'ON_HIT_TAKEN' | 'ON_CAST'
   | 'ON_KILL' | 'ON_ASSIST' | 'ON_DEATH' | 'TICK';
 
@@ -185,6 +192,16 @@ export type ApplyOptions = {
   targets?: CombatUnit[];
 };
 
+/** Item proc damage is bounded before mitigation and is independent of skill/star scaling. */
+export function procDamage(self: CombatUnit, target: CombatUnit, effect: EffectDef, now: number): number {
+  const s = effect.scaling ?? {};
+  const amount = (effect.value ?? 0) + (s.attackDamage ?? 0) * stat(self, 'attackDamage', now)
+    + (s.abilityPower ?? 0) * stat(self, 'abilityPower', now) + (s.armor ?? 0) * stat(self, 'armor', now)
+    + (s.selfMaxHp ?? 0) * self.maxHp + (s.targetCurrentHp ?? 0) * Math.max(0, target.hp)
+    + (s.targetMissingHp ?? 0) * Math.max(0, target.maxHp - target.hp);
+  return Math.max(0, Math.min(s.cap ?? Infinity, amount));
+}
+
 /**
  * Applies one non-aura effect. Returns the number of units it touched, which
  * the caller uses only for logging.
@@ -201,7 +218,13 @@ export function applyEffect(
   const power = opts.power;
   const value = (effect.value ?? 0) * (effect.kind === 'DAMAGE' || effect.kind === 'HEAL' ? power : 1);
   const healScale = ctx.overtime ? OVERTIME_HEAL_MULT : 1;
-  const targets = opts.targets ?? resolveTargets(ctx, self, effect.target as TargetRule, effect.radius, opts.currentTarget);
+  const targetContext = effect.excludeSelf ? { ...ctx, units: ctx.units.filter(u => u.id !== self.id) } : ctx;
+  const targets = (opts.targets ?? resolveTargets(targetContext, self, effect.target as TargetRule, effect.radius, opts.currentTarget))
+    .filter(t => !effect.excludeSelf || t.id !== self.id);
+  const recipients = effect.target ? targets : [self];
+  const support = (target: CombatUnit, amount: number) => {
+    if (opts.sourceKey.startsWith('skill:') && target.id !== self.id && target.team === self.team && amount > 0) ctx.supportSkillApplied?.(self, target, amount);
+  };
   if (isAuraKind(effect.kind) && effect.kind !== 'EXECUTE_THRESHOLD') {
     for (const t of effect.target ? targets : [self]) {
       t.timedEffects = t.timedEffects.filter((e) => e.key !== onceKey);
@@ -212,11 +235,19 @@ export function applyEffect(
   }
 
   switch (effect.kind) {
+    case 'SPELLBLADE': {
+      self.stacks[`armed:${onceKey}`] = ctx.now + (effect.duration ?? 5);
+      return 1;
+    }
+    case 'PROC_DAMAGE': {
+      for (const t of targets) ctx.dealDamage(self, t, procDamage(self, t, effect, ctx.now), effect.damageType ?? 'PHYSICAL', false);
+      return targets.length;
+    }
     case 'STAT_ADD':
     case 'STAT_MUL': {
       const list = effect.target ? targets : [self];
       for (const t of list) {
-        addModifier(t, effect.stat as keyof BattleStats, value, effect.kind === 'STAT_MUL', effect.duration ?? 0, ctx.now);
+        addModifier(t, effect.stat as keyof BattleStats, value, effect.kind === 'STAT_MUL', effect.duration ?? 0, ctx.now, effect.refresh ? `${self.id}:${onceKey}` : undefined);
       }
       return list.length;
     }
@@ -266,28 +297,28 @@ export function applyEffect(
       return 1;
     }
     case 'HEAL': {
-      const list = targets.length ? targets : [self];
-      for (const t of list) heal(t, value * healScale, ctx.now);
+      const list = recipients;
+      for (const t of list) support(t, heal(t, value * healScale, ctx.now));
       return list.length;
     }
     case 'HEAL_MAXHP_PCT': {
-      const list = targets.length ? targets : [self];
-      for (const t of list) heal(t, t.maxHp * (effect.value ?? 0) * healScale, ctx.now);
+      const list = recipients;
+      for (const t of list) support(t, heal(t, t.maxHp * (effect.value ?? 0) * healScale, ctx.now));
       return list.length;
     }
     case 'HEAL_MISSING_PCT': {
-      const list = targets.length ? targets : [self];
-      for (const t of list) heal(t, (t.maxHp - t.hp) * (effect.value ?? 0) * healScale, ctx.now);
+      const list = recipients;
+      for (const t of list) support(t, heal(t, (t.maxHp - t.hp) * (effect.value ?? 0) * healScale, ctx.now));
       return list.length;
     }
     case 'SHIELD_MAXHP_PCT': {
-      const list = targets.length ? targets : [self];
-      for (const t of list) { const before = t.shields.length; addShield(t, t.maxHp * (effect.value ?? 0) * healScale, effect.duration ?? 5, ctx.now); ctx.shieldCreated?.(self, t, t.shields.slice(before).reduce((n, s) => n + s.amount, 0)); }
+      const list = recipients;
+      for (const t of list) { const before = t.shields.length; addShield(t, t.maxHp * (effect.value ?? 0) * healScale, effect.duration ?? 5, ctx.now); const amount = t.shields.slice(before).reduce((n, s) => n + s.amount, 0); ctx.shieldCreated?.(self, t, amount); support(t, amount); }
       return list.length;
     }
     case 'SHIELD_FLAT': {
-      const list = targets.length ? targets : [self];
-      for (const t of list) { const before = t.shields.length; addShield(t, value * healScale, effect.duration ?? 5, ctx.now); ctx.shieldCreated?.(self, t, t.shields.slice(before).reduce((n, s) => n + s.amount, 0)); }
+      const list = recipients;
+      for (const t of list) { const before = t.shields.length; addShield(t, value * healScale, effect.duration ?? 5, ctx.now); const amount = t.shields.slice(before).reduce((n, s) => n + s.amount, 0); ctx.shieldCreated?.(self, t, amount); support(t, amount); }
       return list.length;
     }
     case 'MANA_ADD': {
@@ -325,11 +356,21 @@ export function applyEffect(
       return list.length;
     }
     case 'SUNDER_ARMOR_PCT': {
-      for (const t of targets) t.timedEffects.push({ effect, key: onceKey, expiresAt: ctx.now + (effect.duration || 999) });
+      for (const t of targets) {
+        const key = `${self.id}:${onceKey}`;
+        const old = t.timedEffects.find(e => e.key === key && e.expiresAt > ctx.now);
+        const stacked = effect.maxStacks ? Math.min((effect.value ?? 0) * effect.maxStacks, (old?.effect.value ?? 0) + (effect.value ?? 0)) : effect.value;
+        t.timedEffects = t.timedEffects.filter(e => e.key !== key);
+        t.timedEffects.push({ effect: { ...effect, value: stacked }, key, expiresAt: ctx.now + (effect.duration || 999) });
+      }
       return targets.length;
     }
     case 'SHRED_MR_PCT': {
-      for (const t of targets) t.timedEffects.push({ effect, key: onceKey, expiresAt: ctx.now + (effect.duration || 999) });
+      for (const t of targets) {
+        const key = `${self.id}:${onceKey}`;
+        t.timedEffects = t.timedEffects.filter(e => e.key !== key);
+        t.timedEffects.push({ effect, key, expiresAt: ctx.now + (effect.duration || 999) });
+      }
       return targets.length;
     }
     case 'EXECUTE_THRESHOLD': {

@@ -88,7 +88,7 @@ export function ItemIcon({
       onKeyDown={e => { if (onClick && (e.key === 'Enter' || e.key === ' ')) { e.preventDefault(); onClick(); } }}
       title={title ?? `${item.name} — ${item.description}`}
       style={{
-        width: size, height: size, borderRadius: 5,
+        width: size, height: size, borderRadius: 5, position: 'relative',
         border: `2px solid ${tint}`, background: ART_COLORS.panelBright,
         display: 'grid', placeItems: 'center', fontSize: size * 0.36, fontWeight: 700,
         cursor: onClick ? 'pointer' : 'default', flex: '0 0 auto',
@@ -97,6 +97,7 @@ export function ItemIcon({
       {itemUrl(itemId)
         ? <img src={itemUrl(itemId)!} alt={item.name} width={size - 4} height={size - 4} draggable={false} />
         : item.name.slice(0, 2)}
+      {item.tier && <span aria-hidden="true" style={{ position: 'absolute', right: -3, bottom: -3, background: item.tier === 'RADIANT' ? '#f8d66a' : '#bfa4ff', color: '#152030', border: '1px solid #152030', fontSize: 10, padding: '0 2px', lineHeight: '14px' }}>{item.tier === 'RADIANT' ? '찬' : '유'}</span>}
     </div>
   );
 }

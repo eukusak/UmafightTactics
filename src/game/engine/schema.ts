@@ -27,11 +27,16 @@ export const TriggerSchema = z.object({
     'ON_TAKEDOWN_ASSIST', 'HP_BELOW', 'HP_ABOVE', 'TARGET_HP_BELOW', 'AFTER_SECONDS',
     'EVERY_SECONDS', 'ON_DEATH', 'ADJACENT_ALLIES_AT_LEAST', 'NO_ADJACENT_ALLIES',
     'IN_FRONT_ROWS', 'IN_BACK_ROWS',
+    'ON_SAME_TARGET_NTH_ATTACK', 'ON_BASIC_HIT_TAKEN', 'ON_SKILL_HIT', 'ON_CC_APPLIED', 'ON_SUPPORT_SKILL',
   ]),
   threshold: z.number().optional(),
 });
 
 export const EffectSchema = z.object({
+  scaling: z.object({ attackDamage: z.number().optional(), abilityPower: z.number().optional(), armor: z.number().optional(), selfMaxHp: z.number().optional(), targetCurrentHp: z.number().optional(), targetMissingHp: z.number().optional(), cap: z.number().optional() }).optional(),
+  refresh: z.boolean().optional(),
+  perTargetCooldown: z.boolean().optional(),
+  excludeSelf: z.boolean().optional(),
   kind: z.string(),
   stat: StatKeySchema.optional(),
   value: z.number().optional(),

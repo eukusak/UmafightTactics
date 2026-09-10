@@ -40,6 +40,7 @@ export function canEquip(unit: UnitInstance, itemId: string): { ok: boolean; rea
     }
   }
   if (item.unique && unit.items.includes(itemId)) return { ok: false, reason: 'UNIQUE' };
+  if (item.uniqueGroup && unit.items.some(id => getItem(id).uniqueGroup === item.uniqueGroup)) return { ok: false, reason: 'UNIQUE_GROUP' };
 
   const used = usedSlots(unit);
   if (used + item.slotCost > MAX_ITEMS_PER_UNIT) return { ok: false, reason: 'NO_SLOT' };

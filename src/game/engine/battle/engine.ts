@@ -17,11 +17,11 @@ import type { Rng } from '../rng';
 import type { BattleStats, EffectDef, StatusKind, TraitId } from '../types';
 import {
   addModifier, addShield, cleanupExpired, heal, isSilenced, isStunned, isTargetable,
-  makeCombatUnit, mitigationMultiplier, resistFor, stat, totalShield, hasStatus,
+  makeCombatUnit, mitigationMultiplier, resistFor, stat, totalShield,
   type CombatUnit, type Team,
 } from './combat-unit';
 import {
-  accumulateAura, applyEffect, isAuraKind, resolveTargets, triggerHolds,
+  accumulateAura, applyEffect, isAuraKind, resolveTargets, triggerHolds, procDamage,
   type EffectContext, type TriggerEvent,
 } from './effects';
 import {
@@ -61,7 +61,7 @@ export type BattleEvent =
   | { t: number; type: 'SHIELD'; source: string; target: string; amount: number }
   | { t: number; type: 'ATTACK_START'; source: string; target: string; releaseAt: number; impactAt: number; ranged: boolean }
   | { t: number; type: 'PROJECTILE'; source: string; target: string; impactAt: number }
-  | { t: number; type: 'DAMAGE'; source: string; target: string; damage: number; absorbed: number; isSkill: boolean }
+  | { t: number; type: 'DAMAGE'; source: string; target: string; damage: number; absorbed: number; isSkill: boolean; crit?: boolean }
   | { t: number; type: 'ATTACK'; source: string; target: string; damage: number; crit: boolean }
   | { t: number; type: 'CAST'; source: string; skill: string; target?: string; releaseAt?: number; endAt?: number }
   | { t: number; type: 'SKILL_EFFECT'; source: string; targets: string[]; kind: EffectDef['kind']; radius: number }
@@ -137,6 +137,7 @@ export class BattleEngine {
     this.spawn(sideA, 'A');
     this.spawn(sideB, 'B');
     this.ctx = {
+      supportSkillApplied: (source, target) => this.fireFor(source, 'ON_SUPPORT_SKILL', target),
       shieldCreated: (source, target, amount) => { if (amount > 0) this.events.push({ t: this.time, type: 'SHIELD', source: source.id, target: target.id, amount }); },
       now: 0,
       overtime: false,
@@ -290,6 +291,7 @@ export class BattleEngine {
       if (!unit.alive) continue;
       cleanupExpired(unit, this.time);
       this.recomputeAura(unit);
+      this.fireFor(unit, 'RECOMPUTE', null);
       if (this.time >= unit.manaLockUntil) {
         unit.mana = Math.min(stat(unit, 'maxMana', this.time), unit.mana + ROLE_MANA_REGEN[unit.role] * dt);
       }
@@ -576,6 +578,16 @@ export class BattleEngine {
     const dealt = this.dealDamage(unit, target, damage, 'PHYSICAL', false);
     this.events.push({ t: this.time, type: 'ATTACK', source: unit.id, target: target.id, damage: dealt, crit: isCrit });
 
+    // A prepared strike is consumed by one landed basic attack, even if that attack kills.
+    for (const b of this.bindings.get(unit.id) ?? []) {
+      if (b.effect.kind !== 'SPELLBLADE') continue;
+      const key = `armed:${b.sourceKey}:SPELLBLADE:${b.index}`;
+      const armedUntil = unit.stacks[key] ?? -1;
+      delete unit.stacks[key];
+      if (armedUntil > this.time && target.alive) this.dealDamage(unit, target, procDamage(unit, target, b.effect, this.time), b.effect.damageType ?? 'PHYSICAL', false);
+    }
+    if (target.alive) this.fireFor(target, 'ON_BASIC_HIT_TAKEN', unit);
+
     if (this.time >= unit.manaLockUntil) {
       unit.mana = Math.min(stat(unit, 'maxMana', this.time), unit.mana + ROLE_ATTACK_MANA[unit.role]);
     }
@@ -611,16 +623,14 @@ export class BattleEngine {
   ): number {
 
     let amount = rawAmount;
+    const critChance = stat(source, 'critChance', this.time) + source.aura.critChance;
+    const skillCrit = isSkill && source.aura.skillsCanCrit && this.rng.bool(Math.min(1, critChance));
     if (isSkill) {
       amount *= source.skillMultiplier;
       amount *= 1 + source.aura.skillDamageAmp;
+      if (skillCrit) amount *= stat(source, 'critMultiplier', this.time) + source.aura.critDamage + this.excessCritDamage(source, critChance);
     }
     amount *= 1 + source.aura.damageAmp;
-    // 거인 추월자: extra amp against big targets.
-    if ((this.bindings.get(source.id) ?? []).some((b) => b.effect.tag === 'TARGET_MAXHP_AT_LEAST_1600') && target.maxHp >= 1600) {
-      const bonus = (this.bindings.get(source.id) ?? []).find((b) => b.effect.tag === 'TARGET_MAXHP_AT_LEAST_1600');
-      amount *= 1 + (bonus?.effect.value ?? 0);
-    }
     if (this.overtimeApplied) amount *= OVERTIME_DAMAGE_MULT;
 
     const preMitigation = amount;
@@ -646,7 +656,7 @@ export class BattleEngine {
     const postMitigation = Math.max(0, remaining);
     const visibleDamage = Math.min(target.hp, postMitigation);
     target.hp -= postMitigation;
-    this.events.push({ t: this.time, type: 'DAMAGE', source: source.id, target: target.id, damage: Math.max(0, visibleDamage), absorbed: Math.max(0, amount - remaining), isSkill });
+    this.events.push({ t: this.time, type: 'DAMAGE', source: source.id, target: target.id, damage: Math.max(0, visibleDamage), absorbed: Math.max(0, amount - remaining), isSkill, ...(skillCrit ? { crit: true } : {}) });
 
     // Spec §14.6 — mana from taking damage.
     if (target.role === 'TANK' && this.time >= target.manaLockUntil) {
@@ -668,6 +678,7 @@ export class BattleEngine {
     if (postMitigation > 0) this.fireFor(target, 'ON_HIT_TAKEN', source);
 
     if (target.hp <= 0) this.kill(target, source);
+    if (isSkill && source.alive && target.alive && amount > 0) this.fireFor(source, 'ON_SKILL_HIT', target);
     return postMitigation;
   }
 
@@ -821,10 +832,9 @@ export class BattleEngine {
     } else {
       target.statuses.push(status);
     }
+    if (isCc && source.alive && target.alive && source.team !== target.team) this.fireFor(source, 'ON_CC_APPLIED', target);
     // A burn always carries a wound (healing reduction) alongside it.
-    if (kind === 'BURN' && !hasStatus(target, 'WOUND', this.time)) {
-      target.statuses.push({ kind: 'WOUND', expiresAt: status.expiresAt, sourceId: source.id });
-    }
+    if (kind === 'BURN') this.applyStatus(source, target, { kind: 'WOUND', status: 'WOUND', duration });
   }
 
   private tickStatuses(): void {
@@ -889,13 +899,14 @@ export class BattleEngine {
       } else if (!gate || gate.when === 'EVERY_SECONDS' || !triggerHolds(unit, gate, this.ctx, event, target)) {
         continue;
       }
+      if (event === 'RECOMPUTE' && gate?.when !== 'AFTER_SECONDS') continue;
       // An `interval` on an event-triggered effect is a re-use cooldown.
       if (b.effect.interval && gate && gate.when !== 'EVERY_SECONDS') {
-        const key = `${unit.id}:${i}`;
+        const key = `${unit.id}:${i}${b.effect.perTargetCooldown ? `:${target?.id ?? ''}` : ''}`;
         if (this.time < (this.triggerReadyAt.get(key) ?? 0)) continue;
         this.triggerReadyAt.set(key, this.time + b.effect.interval);
       }
-      applyEffect(this.ctx, unit, b.effect, b.index, {
+      applyEffect(this.ctx, unit, gate?.when === 'AFTER_SECONDS' ? { ...b.effect, oncePerCombat: true } : b.effect, b.index, {
         power: b.power, sourceKey: b.sourceKey, currentTarget: target, event,
       });
     }

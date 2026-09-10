@@ -1,11 +1,13 @@
 import { SEASON_IDS, type SeasonId } from '../engine/seasons/catalog';
 import { z } from 'zod';
+import { ITEM_REWARD_KINDS } from '../engine/items/rewards';
 import type { MatchState } from '../engine/state';
 import type { BattleFrame } from '../engine/battle/engine';
 
 const id = z.string().min(1).max(80);
 const cell = z.object({ q: z.number().int().min(0).max(6), r: z.number().int().min(0).max(3) }).strict();
 export const commandSchema = z.discriminatedUnion('action', [
+  z.object({ action: z.literal('itemReward'), kind: z.enum(ITEM_REWARD_KINDS), item: id }).strict(),
   z.object({ action: z.literal('buy'), slot: z.number().int().min(0).max(8) }).strict(),
   z.object({ action: z.literal('sell'), unit: id }).strict(),
   z.object({ action: z.literal('reroll') }).strict(),

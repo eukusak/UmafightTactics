@@ -22,9 +22,10 @@ function ItemDetail({ id }: { id: string }): JSX.Element {
   const recipes = COMPLETED_ITEM_DEFS.filter(i => i.components?.includes(id));
   return <>
     <div className="detail-heading"><ItemIcon itemId={id} size={46} /><h3>{item.name}</h3></div>
-    <span className="pill">{item.isComponent ? '하위 아이템 · 조합 재료' : item.tactician ? '전략가 장비' : '완성 아이템'}</span>
+    <span className="pill">{item.tier === 'ARTIFACT' ? '유물 · 4-7 승리 보상' : item.tier === 'RADIANT' ? '찬란한 장비 · 증강 보상' : item.isComponent ? '하위 아이템 · 조합 재료' : item.tactician ? '전략가 장비' : '완성 아이템'}</span>
     <p>{item.description}</p>
     {item.unique && <p className="gold-text">중복 장착 불가</p>}
+    {item.uniqueGroup && <p className="gold-text">동일 계열 장비와 중복 장착 불가 · 일반/찬란한 버전 포함</p>}
     {item.components && <><h4>조합식</h4><div className="detail-recipe">{item.components.map((id, i) => <div key={i}>{i > 0 && <b>＋</b>}<ItemLink id={id} /></div>)}</div></>}
     {item.isComponent && <><h4>만들 수 있는 아이템 · {recipes.length}종</h4><p className="muted">함께 필요한 재료와 완성 효과입니다. 이름을 누르면 상세 설명을 확인합니다.</p>
       {recipes.map(recipe => {

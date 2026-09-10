@@ -840,7 +840,7 @@ const manifest: ArtManifest = {
     battleSheet: `characters/${u.id}.png`,
     cutinRequired: u.activeS1 && u.cost === 5,
   })),
-  items: ALL_ITEM_DEFS.map((i) => `items/${i.isComponent ? 'components' : 'complete'}/${i.id}.png`),
+  items: [...new Set(ALL_ITEM_DEFS.map((i) => `items/${i.isComponent ? 'components' : 'complete'}/${i.iconId ?? i.id}.png`))],
   traits: TRAIT_DEFS.map((t) => `traits/${t.id}.png`),
   augments: AUGMENT_DEFS.map((a) => `augments/${a.id}.png`),
   status: [

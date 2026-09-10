@@ -1,4 +1,5 @@
 import { itemFit } from './evaluation';
+import { claimItemReward, isItemReward, itemRewardOptions } from '../items/rewards';
 import { choosePlan, economyPlan, plannedUnitValue, publicBoards, xpGoldToLevel, type PublicBoard } from './strategy';
 /**
  * AI turn logic (spec §26).
@@ -154,8 +155,23 @@ function roleNeed(player: PlayerState, role: Role): number {
 }
 
 /** Runs one AI preparation phase: buy, level, roll, equip and place. */
+export function resolveAiItemRewards(state: MatchState, player: PlayerState): void {
+  if (player.aiProfile === null) return;
+  if (state.phase === 'ROUND_PREP') {
+    for (const grant of [...player.pendingGrants]) {
+      if (!isItemReward(grant)) continue;
+      const units = [...player.board, ...player.bench];
+      const score = (id: string) => Math.max(0, ...units.filter(u => canEquip(u, id).ok).map(u => itemFit(u, id)));
+      const options = itemRewardOptions(grant.kind).sort((a, b) => score(b) - score(a) || a.localeCompare(b));
+      while (grant.count > 0 && options.length) if (!claimItemReward(state, player, grant.kind, options[0])) break;
+    }
+  }
+}
+
+/** Runs one AI preparation phase: buy, level, roll, equip and place. */
 export function runAiPrep(state: MatchState, player: PlayerState, rng: Rng): void {
   if (player.aiProfile === null) return;
+  resolveAiItemRewards(state, player);
   const scouts = publicBoards(state, player);
   player.aiPlan = choosePlan(player, state.stage, state.round, scouts);
   applyPlacement(player, planPlacement(player, true, scouts));

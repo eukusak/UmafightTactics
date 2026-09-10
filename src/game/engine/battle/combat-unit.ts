@@ -20,6 +20,7 @@ export type ActiveStatus = {
 };
 
 export type TimedModifier = {
+  key?: string;
   stat: keyof BattleStats;
   /** Additive amount, or multiplier delta when `isMultiplier`. */
   value: number;
@@ -275,6 +276,7 @@ export function heal(unit: CombatUnit, amount: number, now: number): number {
 export function addModifier(
   unit: CombatUnit, key: keyof BattleStats, value: number, isMultiplier: boolean,
   duration: number, now: number,
+  refreshKey?: string,
 ): void {
   if (duration <= 0) {
     // Permanent for this battle: fold into the stack table so it survives cleanup.
@@ -287,7 +289,8 @@ export function addModifier(
     }
     return;
   }
-  unit.modifiers.push({ stat: key, value, isMultiplier, expiresAt: now + duration });
+  if (refreshKey) unit.modifiers = unit.modifiers.filter(m => m.key !== refreshKey);
+  unit.modifiers.push({ stat: key, value, isMultiplier, expiresAt: now + duration, key: refreshKey });
   if (key === 'hp') {
     const ratio = unit.maxHp > 0 ? unit.hp / unit.maxHp : 1;
     unit.maxHp = stat(unit, 'hp', now);

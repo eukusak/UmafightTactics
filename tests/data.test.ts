@@ -93,10 +93,10 @@ describe('shop odds', () => {
 });
 
 describe('items', () => {
-  it('has 10 components and 55 completed items', () => {
+  it('has 10 components, 55 recipes and 12 special items', () => {
     expect(COMPONENT_DEFS).toHaveLength(10);
     expect(COMPLETED_ITEM_DEFS).toHaveLength(55);
-    expect(ALL_ITEM_DEFS).toHaveLength(65);
+    expect(ALL_ITEM_DEFS).toHaveLength(77);
   });
 
   it('maps every unordered component pair to exactly one unique result', () => {
