@@ -1,0 +1,1167 @@
+{
+  "method": "Identical two-star boards; tested trait added to first N units on alternate sides. All other natural traits retained equally. Measures marginal combat power, not real composition win rate. Economy traits need campaign sampling.",
+  "seed": 20260910,
+  "seeds": 8,
+  "rows": [
+    {
+      "id": "nige",
+      "name": "도주",
+      "count": 2,
+      "battles": 16,
+      "winRate": 0.5,
+      "draws": 0,
+      "hpMargin": -141,
+      "seconds": 31.4
+    },
+    {
+      "id": "nige",
+      "name": "도주",
+      "count": 4,
+      "battles": 16,
+      "winRate": 0.8125,
+      "draws": 2,
+      "hpMargin": 1915,
+      "seconds": 28.528125000000003
+    },
+    {
+      "id": "nige",
+      "name": "도주",
+      "count": 6,
+      "battles": 16,
+      "winRate": 0.875,
+      "draws": 1,
+      "hpMargin": 3347,
+      "seconds": 22.8125
+    },
+    {
+      "id": "senko",
+      "name": "선행",
+      "count": 2,
+      "battles": 16,
+      "winRate": 0.375,
+      "draws": 2,
+      "hpMargin": -63,
+      "seconds": 34.809375
+    },
+    {
+      "id": "senko",
+      "name": "선행",
+      "count": 4,
+      "battles": 16,
+      "winRate": 0.375,
+      "draws": 2,
+      "hpMargin": 221,
+      "seconds": 34.690625
+    },
+    {
+      "id": "senko",
+      "name": "선행",
+      "count": 6,
+      "battles": 16,
+      "winRate": 0.8125,
+      "draws": 1,
+      "hpMargin": 1636,
+      "seconds": 33.371875
+    },
+    {
+      "id": "sashi",
+      "name": "선입",
+      "count": 2,
+      "battles": 16,
+      "winRate": 0.5625,
+      "draws": 2,
+      "hpMargin": -19,
+      "seconds": 33.790625
+    },
+    {
+      "id": "sashi",
+      "name": "선입",
+      "count": 4,
+      "battles": 16,
+      "winRate": 0.375,
+      "draws": 2,
+      "hpMargin": -89,
+      "seconds": 33.315625000000004
+    },
+    {
+      "id": "sashi",
+      "name": "선입",
+      "count": 6,
+      "battles": 16,
+      "winRate": 0.5625,
+      "draws": 1,
+      "hpMargin": 480,
+      "seconds": 32.3875
+    },
+    {
+      "id": "oikomi",
+      "name": "추입",
+      "count": 2,
+      "battles": 16,
+      "winRate": 0.5625,
+      "draws": 0,
+      "hpMargin": 339,
+      "seconds": 31.8875
+    },
+    {
+      "id": "oikomi",
+      "name": "추입",
+      "count": 4,
+      "battles": 16,
+      "winRate": 0.6875,
+      "draws": 0,
+      "hpMargin": 1197,
+      "seconds": 30.746875
+    },
+    {
+      "id": "oikomi",
+      "name": "추입",
+      "count": 6,
+      "battles": 16,
+      "winRate": 0.9375,
+      "draws": 0,
+      "hpMargin": 2773,
+      "seconds": 28.681250000000006
+    },
+    {
+      "id": "sprinter",
+      "name": "스프린터",
+      "count": 2,
+      "battles": 16,
+      "winRate": 0.5,
+      "draws": 0,
+      "hpMargin": 77,
+      "seconds": 28.593750000000004
+    },
+    {
+      "id": "sprinter",
+      "name": "스프린터",
+      "count": 4,
+      "battles": 16,
+      "winRate": 0.8125,
+      "draws": 0,
+      "hpMargin": 1377,
+      "seconds": 27.834375
+    },
+    {
+      "id": "miler",
+      "name": "마일러",
+      "count": 2,
+      "battles": 16,
+      "winRate": 0.5,
+      "draws": 0,
+      "hpMargin": 232,
+      "seconds": 30.946875
+    },
+    {
+      "id": "miler",
+      "name": "마일러",
+      "count": 4,
+      "battles": 16,
+      "winRate": 0.5,
+      "draws": 0,
+      "hpMargin": 606,
+      "seconds": 31.059375
+    },
+    {
+      "id": "middle",
+      "name": "중거리",
+      "count": 2,
+      "battles": 16,
+      "winRate": 0.75,
+      "draws": 0,
+      "hpMargin": 440,
+      "seconds": 29.096875
+    },
+    {
+      "id": "middle",
+      "name": "중거리",
+      "count": 4,
+      "battles": 16,
+      "winRate": 0.875,
+      "draws": 0,
+      "hpMargin": 1627,
+      "seconds": 27.493750000000002
+    },
+    {
+      "id": "stayer",
+      "name": "스테이어",
+      "count": 2,
+      "battles": 16,
+      "winRate": 0.5,
+      "draws": 0,
+      "hpMargin": 75,
+      "seconds": 28.687500000000004
+    },
+    {
+      "id": "stayer",
+      "name": "스테이어",
+      "count": 4,
+      "battles": 16,
+      "winRate": 0.75,
+      "draws": 0,
+      "hpMargin": 1570,
+      "seconds": 28.465625
+    },
+    {
+      "id": "dirt_champion",
+      "name": "더트 챔피언",
+      "count": 2,
+      "battles": 16,
+      "winRate": 0.4375,
+      "draws": 0,
+      "hpMargin": -244,
+      "seconds": 31.165625000000002
+    },
+    {
+      "id": "dirt_champion",
+      "name": "더트 챔피언",
+      "count": 3,
+      "battles": 16,
+      "winRate": 0.5,
+      "draws": 0,
+      "hpMargin": 286,
+      "seconds": 30.86875
+    },
+    {
+      "id": "dirt_champion",
+      "name": "더트 챔피언",
+      "count": 4,
+      "battles": 16,
+      "winRate": 0.8125,
+      "draws": 0,
+      "hpMargin": 1722,
+      "seconds": 29.765625000000004
+    },
+    {
+      "id": "all_rounder",
+      "name": "올라운더",
+      "count": 2,
+      "battles": 16,
+      "winRate": 0.375,
+      "draws": 2,
+      "hpMargin": 61,
+      "seconds": 34.315625000000004
+    },
+    {
+      "id": "all_rounder",
+      "name": "올라운더",
+      "count": 3,
+      "battles": 16,
+      "winRate": 0.5625,
+      "draws": 2,
+      "hpMargin": 988,
+      "seconds": 32.57812500000001
+    },
+    {
+      "id": "golden_generation",
+      "name": "황금세대",
+      "count": 2,
+      "battles": 16,
+      "winRate": 0.875,
+      "draws": 0,
+      "hpMargin": 3234,
+      "seconds": 27.890625000000004
+    },
+    {
+      "id": "golden_generation",
+      "name": "황금세대",
+      "count": 4,
+      "battles": 16,
+      "winRate": 0.9375,
+      "draws": 0,
+      "hpMargin": 4483,
+      "seconds": 21.803124999999998
+    },
+    {
+      "id": "golden_generation",
+      "name": "황금세대",
+      "count": 6,
+      "battles": 16,
+      "winRate": 1,
+      "draws": 0,
+      "hpMargin": 5956,
+      "seconds": 15.9875
+    },
+    {
+      "id": "famous_house",
+      "name": "명가",
+      "count": 2,
+      "battles": 16,
+      "winRate": 0.9375,
+      "draws": 1,
+      "hpMargin": 3802,
+      "seconds": 27.053124999999994
+    },
+    {
+      "id": "famous_house",
+      "name": "명가",
+      "count": 4,
+      "battles": 16,
+      "winRate": 1,
+      "draws": 0,
+      "hpMargin": 7440,
+      "seconds": 24.065625000000004
+    },
+    {
+      "id": "international",
+      "name": "국제파",
+      "count": 2,
+      "battles": 16,
+      "winRate": 0.4375,
+      "draws": 2,
+      "hpMargin": 183,
+      "seconds": 34.28125
+    },
+    {
+      "id": "international",
+      "name": "국제파",
+      "count": 3,
+      "battles": 16,
+      "winRate": 0.5,
+      "draws": 2,
+      "hpMargin": 174,
+      "seconds": 33.82812499999999
+    },
+    {
+      "id": "international",
+      "name": "국제파",
+      "count": 4,
+      "battles": 16,
+      "winRate": 0.5,
+      "draws": 2,
+      "hpMargin": 472,
+      "seconds": 33.518750000000004
+    },
+    {
+      "id": "unbeaten",
+      "name": "무패 전설",
+      "count": 2,
+      "battles": 16,
+      "winRate": 0.5625,
+      "draws": 0,
+      "hpMargin": 444,
+      "seconds": 27.990625000000005
+    },
+    {
+      "id": "unbeaten",
+      "name": "무패 전설",
+      "count": 3,
+      "battles": 16,
+      "winRate": 0.6875,
+      "draws": 0,
+      "hpMargin": 1303,
+      "seconds": 26.58125
+    },
+    {
+      "id": "comeback",
+      "name": "역전극",
+      "count": 2,
+      "battles": 16,
+      "winRate": 0.8125,
+      "draws": 0,
+      "hpMargin": 2207,
+      "seconds": 29.025000000000002
+    },
+    {
+      "id": "comeback",
+      "name": "역전극",
+      "count": 4,
+      "battles": 16,
+      "winRate": 0.9375,
+      "draws": 0,
+      "hpMargin": 3850,
+      "seconds": 24.518750000000004
+    },
+    {
+      "id": "triple_crown",
+      "name": "삼관",
+      "count": 2,
+      "battles": 16,
+      "winRate": 0.5,
+      "draws": 0,
+      "hpMargin": 81,
+      "seconds": 31.578125
+    },
+    {
+      "id": "triple_crown",
+      "name": "삼관",
+      "count": 3,
+      "battles": 16,
+      "winRate": 0.8125,
+      "draws": 0,
+      "hpMargin": 1423,
+      "seconds": 30.690625
+    },
+    {
+      "id": "era_star",
+      "name": "시대의 스타",
+      "count": 2,
+      "battles": 16,
+      "winRate": 0.5,
+      "draws": 0,
+      "hpMargin": 150,
+      "seconds": 31.275
+    },
+    {
+      "id": "era_star",
+      "name": "시대의 스타",
+      "count": 4,
+      "battles": 16,
+      "winRate": 0.5625,
+      "draws": 0,
+      "hpMargin": 440,
+      "seconds": 30.874999999999996
+    },
+    {
+      "id": "era_star",
+      "name": "시대의 스타",
+      "count": 6,
+      "battles": 16,
+      "winRate": 0.75,
+      "draws": 0,
+      "hpMargin": 964,
+      "seconds": 30.796874999999996
+    },
+    {
+      "id": "classic_legend",
+      "name": "클래식 레전드",
+      "count": 2,
+      "battles": 16,
+      "winRate": 0.5625,
+      "draws": 0,
+      "hpMargin": 105,
+      "seconds": 31.98125
+    },
+    {
+      "id": "classic_legend",
+      "name": "클래식 레전드",
+      "count": 4,
+      "battles": 16,
+      "winRate": 0.8125,
+      "draws": 0,
+      "hpMargin": 1331,
+      "seconds": 29.996875
+    },
+    {
+      "id": "heisei_dynasty",
+      "name": "헤이세이 왕조",
+      "count": 2,
+      "battles": 16,
+      "winRate": 0.4375,
+      "draws": 2,
+      "hpMargin": 125,
+      "seconds": 35.428125
+    },
+    {
+      "id": "heisei_dynasty",
+      "name": "헤이세이 왕조",
+      "count": 4,
+      "battles": 16,
+      "winRate": 0.5,
+      "draws": 2,
+      "hpMargin": 684,
+      "seconds": 34.300000000000004
+    },
+    {
+      "id": "heisei_dynasty",
+      "name": "헤이세이 왕조",
+      "count": 6,
+      "battles": 16,
+      "winRate": 0.625,
+      "draws": 2,
+      "hpMargin": 1225,
+      "seconds": 33.984375
+    },
+    {
+      "id": "reiwa_elite",
+      "name": "레이와 엘리트",
+      "count": 2,
+      "battles": 16,
+      "winRate": 0.625,
+      "draws": 0,
+      "hpMargin": 628,
+      "seconds": 31.734375
+    },
+    {
+      "id": "reiwa_elite",
+      "name": "레이와 엘리트",
+      "count": 4,
+      "battles": 16,
+      "winRate": 0.6875,
+      "draws": 0,
+      "hpMargin": 1811,
+      "seconds": 29.025
+    },
+    {
+      "id": "queen",
+      "name": "여왕",
+      "count": 2,
+      "battles": 16,
+      "winRate": 0.625,
+      "draws": 0,
+      "hpMargin": 600,
+      "seconds": 32.425
+    },
+    {
+      "id": "queen",
+      "name": "여왕",
+      "count": 3,
+      "battles": 16,
+      "winRate": 0.6875,
+      "draws": 1,
+      "hpMargin": 1605,
+      "seconds": 32.653125
+    },
+    {
+      "id": "emperor",
+      "name": "황제",
+      "count": 1,
+      "battles": 16,
+      "winRate": 0.75,
+      "draws": 0,
+      "hpMargin": 888,
+      "seconds": 29.328125
+    },
+    {
+      "id": "record_breaker",
+      "name": "레코드 브레이커",
+      "count": 2,
+      "battles": 16,
+      "winRate": 0.5,
+      "draws": 2,
+      "hpMargin": 7,
+      "seconds": 33.2
+    },
+    {
+      "id": "record_breaker",
+      "name": "레코드 브레이커",
+      "count": 3,
+      "battles": 16,
+      "winRate": 0.6875,
+      "draws": 2,
+      "hpMargin": 1413,
+      "seconds": 32.199999999999996
+    },
+    {
+      "id": "iron_horse",
+      "name": "철마",
+      "count": 2,
+      "battles": 16,
+      "winRate": 0.625,
+      "draws": 0,
+      "hpMargin": 365,
+      "seconds": 31.784374999999997
+    },
+    {
+      "id": "iron_horse",
+      "name": "철마",
+      "count": 4,
+      "battles": 16,
+      "winRate": 0.8125,
+      "draws": 0,
+      "hpMargin": 2405,
+      "seconds": 30.39375
+    },
+    {
+      "id": "s1_pace",
+      "name": "페이스메이커",
+      "count": 3,
+      "battles": 16,
+      "winRate": 0.4375,
+      "draws": 0,
+      "hpMargin": -406,
+      "seconds": 30.109375
+    },
+    {
+      "id": "s1_pace",
+      "name": "페이스메이커",
+      "count": 5,
+      "battles": 16,
+      "winRate": 0.5625,
+      "draws": 0,
+      "hpMargin": 38,
+      "seconds": 29.246875
+    },
+    {
+      "id": "s1_pace",
+      "name": "페이스메이커",
+      "count": 7,
+      "battles": 16,
+      "winRate": 0.6875,
+      "draws": 0,
+      "hpMargin": 1117,
+      "seconds": 28.525000000000006
+    },
+    {
+      "id": "s1_banner",
+      "name": "개막 기수",
+      "count": 3,
+      "battles": 16,
+      "winRate": 0.5,
+      "draws": 0,
+      "hpMargin": 76,
+      "seconds": 30.090625000000003
+    },
+    {
+      "id": "s1_banner",
+      "name": "개막 기수",
+      "count": 5,
+      "battles": 16,
+      "winRate": 0.875,
+      "draws": 0,
+      "hpMargin": 1659,
+      "seconds": 30.062500000000004
+    },
+    {
+      "id": "s1_banner",
+      "name": "개막 기수",
+      "count": 7,
+      "battles": 16,
+      "winRate": 0.875,
+      "draws": 0,
+      "hpMargin": 2091,
+      "seconds": 29.26875
+    },
+    {
+      "id": "s1_spark",
+      "name": "샛별",
+      "count": 3,
+      "battles": 16,
+      "winRate": 0.625,
+      "draws": 0,
+      "hpMargin": 412,
+      "seconds": 30.271874999999998
+    },
+    {
+      "id": "s1_spark",
+      "name": "샛별",
+      "count": 5,
+      "battles": 16,
+      "winRate": 0.75,
+      "draws": 0,
+      "hpMargin": 767,
+      "seconds": 31.1
+    },
+    {
+      "id": "s1_spark",
+      "name": "샛별",
+      "count": 7,
+      "battles": 16,
+      "winRate": 0.8125,
+      "draws": 0,
+      "hpMargin": 1472,
+      "seconds": 28.778124999999996
+    },
+    {
+      "id": "s1_team",
+      "name": "원팀",
+      "count": 3,
+      "battles": 16,
+      "winRate": 0.5625,
+      "draws": 0,
+      "hpMargin": 321,
+      "seconds": 29.9375
+    },
+    {
+      "id": "s1_team",
+      "name": "원팀",
+      "count": 5,
+      "battles": 16,
+      "winRate": 0.5625,
+      "draws": 1,
+      "hpMargin": 660,
+      "seconds": 30.728125
+    },
+    {
+      "id": "s1_team",
+      "name": "원팀",
+      "count": 7,
+      "battles": 16,
+      "winRate": 0.75,
+      "draws": 0,
+      "hpMargin": 1707,
+      "seconds": 30.6125
+    },
+    {
+      "id": "s2_rhythm",
+      "name": "리듬 메이커",
+      "count": 3,
+      "battles": 16,
+      "winRate": 0.5625,
+      "draws": 0,
+      "hpMargin": 216,
+      "seconds": 29.871875
+    },
+    {
+      "id": "s2_rhythm",
+      "name": "리듬 메이커",
+      "count": 5,
+      "battles": 16,
+      "winRate": 0.625,
+      "draws": 0,
+      "hpMargin": 886,
+      "seconds": 30.090624999999996
+    },
+    {
+      "id": "s2_rhythm",
+      "name": "리듬 메이커",
+      "count": 7,
+      "battles": 16,
+      "winRate": 0.75,
+      "draws": 0,
+      "hpMargin": 1516,
+      "seconds": 29.481250000000003
+    },
+    {
+      "id": "s2_aria",
+      "name": "별빛 아리아",
+      "count": 3,
+      "battles": 16,
+      "winRate": 0.4375,
+      "draws": 0,
+      "hpMargin": -347,
+      "seconds": 29.853125
+    },
+    {
+      "id": "s2_aria",
+      "name": "별빛 아리아",
+      "count": 5,
+      "battles": 16,
+      "winRate": 0.4375,
+      "draws": 0,
+      "hpMargin": -187,
+      "seconds": 29.746875000000003
+    },
+    {
+      "id": "s2_aria",
+      "name": "별빛 아리아",
+      "count": 7,
+      "battles": 16,
+      "winRate": 0.5,
+      "draws": 0,
+      "hpMargin": 241,
+      "seconds": 29.706249999999997
+    },
+    {
+      "id": "s2_encore",
+      "name": "앙코르",
+      "count": 3,
+      "battles": 16,
+      "winRate": 0.4375,
+      "draws": 0,
+      "hpMargin": -414,
+      "seconds": 30.324999999999996
+    },
+    {
+      "id": "s2_encore",
+      "name": "앙코르",
+      "count": 5,
+      "battles": 16,
+      "winRate": 0.4375,
+      "draws": 0,
+      "hpMargin": 173,
+      "seconds": 30.559375000000003
+    },
+    {
+      "id": "s2_encore",
+      "name": "앙코르",
+      "count": 7,
+      "battles": 16,
+      "winRate": 0.6875,
+      "draws": 0,
+      "hpMargin": 1598,
+      "seconds": 30.815625000000008
+    },
+    {
+      "id": "s2_harmony",
+      "name": "하모니",
+      "count": 3,
+      "battles": 16,
+      "winRate": 0.4375,
+      "draws": 0,
+      "hpMargin": -266,
+      "seconds": 30.10625
+    },
+    {
+      "id": "s2_harmony",
+      "name": "하모니",
+      "count": 5,
+      "battles": 16,
+      "winRate": 0.625,
+      "draws": 0,
+      "hpMargin": 852,
+      "seconds": 30.459374999999998
+    },
+    {
+      "id": "s2_harmony",
+      "name": "하모니",
+      "count": 7,
+      "battles": 16,
+      "winRate": 0.875,
+      "draws": 0,
+      "hpMargin": 1934,
+      "seconds": 30.371875
+    },
+    {
+      "id": "s3_trail",
+      "name": "개척단",
+      "count": 3,
+      "battles": 16,
+      "winRate": 0.4375,
+      "draws": 0,
+      "hpMargin": 93,
+      "seconds": 30.140625000000004
+    },
+    {
+      "id": "s3_trail",
+      "name": "개척단",
+      "count": 5,
+      "battles": 16,
+      "winRate": 0.6875,
+      "draws": 0,
+      "hpMargin": 1559,
+      "seconds": 29.734375
+    },
+    {
+      "id": "s3_trail",
+      "name": "개척단",
+      "count": 7,
+      "battles": 16,
+      "winRate": 0.9375,
+      "draws": 0,
+      "hpMargin": 3408,
+      "seconds": 29.075000000000003
+    },
+    {
+      "id": "s3_spring",
+      "name": "오아시스",
+      "count": 3,
+      "battles": 16,
+      "winRate": 0.4375,
+      "draws": 0,
+      "hpMargin": -61,
+      "seconds": 30.3125
+    },
+    {
+      "id": "s3_spring",
+      "name": "오아시스",
+      "count": 5,
+      "battles": 16,
+      "winRate": 0.6875,
+      "draws": 0,
+      "hpMargin": 1248,
+      "seconds": 30.515624999999996
+    },
+    {
+      "id": "s3_spring",
+      "name": "오아시스",
+      "count": 7,
+      "battles": 16,
+      "winRate": 0.875,
+      "draws": 0,
+      "hpMargin": 3115,
+      "seconds": 30.184374999999996
+    },
+    {
+      "id": "s3_fang",
+      "name": "야생의 송곳니",
+      "count": 3,
+      "battles": 16,
+      "winRate": 0.4375,
+      "draws": 0,
+      "hpMargin": -408,
+      "seconds": 29.999999999999996
+    },
+    {
+      "id": "s3_fang",
+      "name": "야생의 송곳니",
+      "count": 5,
+      "battles": 16,
+      "winRate": 0.5625,
+      "draws": 0,
+      "hpMargin": 701,
+      "seconds": 30.209375
+    },
+    {
+      "id": "s3_fang",
+      "name": "야생의 송곳니",
+      "count": 7,
+      "battles": 16,
+      "winRate": 0.75,
+      "draws": 0,
+      "hpMargin": 2019,
+      "seconds": 28.815625
+    },
+    {
+      "id": "s3_stone",
+      "name": "바위 수호자",
+      "count": 3,
+      "battles": 16,
+      "winRate": 0.5,
+      "draws": 0,
+      "hpMargin": 51,
+      "seconds": 30.037499999999998
+    },
+    {
+      "id": "s3_stone",
+      "name": "바위 수호자",
+      "count": 5,
+      "battles": 16,
+      "winRate": 0.75,
+      "draws": 0,
+      "hpMargin": 806,
+      "seconds": 30.546874999999996
+    },
+    {
+      "id": "s3_stone",
+      "name": "바위 수호자",
+      "count": 7,
+      "battles": 16,
+      "winRate": 0.6875,
+      "draws": 0,
+      "hpMargin": 1368,
+      "seconds": 29.925
+    },
+    {
+      "id": "s4_pulse",
+      "name": "네온 펄스",
+      "count": 3,
+      "battles": 16,
+      "winRate": 0.5,
+      "draws": 0,
+      "hpMargin": 64,
+      "seconds": 29.55625
+    },
+    {
+      "id": "s4_pulse",
+      "name": "네온 펄스",
+      "count": 5,
+      "battles": 16,
+      "winRate": 0.5,
+      "draws": 0,
+      "hpMargin": 229,
+      "seconds": 28.774999999999995
+    },
+    {
+      "id": "s4_pulse",
+      "name": "네온 펄스",
+      "count": 7,
+      "battles": 16,
+      "winRate": 0.625,
+      "draws": 0,
+      "hpMargin": 768,
+      "seconds": 28.253124999999997
+    },
+    {
+      "id": "s4_chrome",
+      "name": "크롬 에이스",
+      "count": 3,
+      "battles": 16,
+      "winRate": 0.5,
+      "draws": 0,
+      "hpMargin": 134,
+      "seconds": 29.528124999999996
+    },
+    {
+      "id": "s4_chrome",
+      "name": "크롬 에이스",
+      "count": 5,
+      "battles": 16,
+      "winRate": 0.5,
+      "draws": 0,
+      "hpMargin": 111,
+      "seconds": 29.518749999999997
+    },
+    {
+      "id": "s4_chrome",
+      "name": "크롬 에이스",
+      "count": 7,
+      "battles": 16,
+      "winRate": 0.6875,
+      "draws": 0,
+      "hpMargin": 1124,
+      "seconds": 28.54375
+    },
+    {
+      "id": "s4_nitro",
+      "name": "니트로",
+      "count": 3,
+      "battles": 16,
+      "winRate": 0.4375,
+      "draws": 0,
+      "hpMargin": -392,
+      "seconds": 30.86875000000001
+    },
+    {
+      "id": "s4_nitro",
+      "name": "니트로",
+      "count": 5,
+      "battles": 16,
+      "winRate": 0.625,
+      "draws": 0,
+      "hpMargin": 880,
+      "seconds": 29.815625
+    },
+    {
+      "id": "s4_nitro",
+      "name": "니트로",
+      "count": 7,
+      "battles": 16,
+      "winRate": 0.75,
+      "draws": 0,
+      "hpMargin": 1600,
+      "seconds": 28.268749999999997
+    },
+    {
+      "id": "s4_chase",
+      "name": "추격자",
+      "count": 3,
+      "battles": 16,
+      "winRate": 0.5,
+      "draws": 0,
+      "hpMargin": 45,
+      "seconds": 29.965624999999996
+    },
+    {
+      "id": "s4_chase",
+      "name": "추격자",
+      "count": 5,
+      "battles": 16,
+      "winRate": 0.5,
+      "draws": 0,
+      "hpMargin": 191,
+      "seconds": 28.943749999999998
+    },
+    {
+      "id": "s4_chase",
+      "name": "추격자",
+      "count": 7,
+      "battles": 16,
+      "winRate": 0.6875,
+      "draws": 0,
+      "hpMargin": 964,
+      "seconds": 29.371875000000003
+    },
+    {
+      "id": "s5_crown",
+      "name": "왕관의 계승자",
+      "count": 3,
+      "battles": 16,
+      "winRate": 0.5,
+      "draws": 0,
+      "hpMargin": -57,
+      "seconds": 29.615624999999998
+    },
+    {
+      "id": "s5_crown",
+      "name": "왕관의 계승자",
+      "count": 5,
+      "battles": 16,
+      "winRate": 0.5625,
+      "draws": 0,
+      "hpMargin": 618,
+      "seconds": 28.556250000000002
+    },
+    {
+      "id": "s5_crown",
+      "name": "왕관의 계승자",
+      "count": 7,
+      "battles": 16,
+      "winRate": 0.6875,
+      "draws": 0,
+      "hpMargin": 810,
+      "seconds": 28.546875
+    },
+    {
+      "id": "s5_vow",
+      "name": "불굴의 맹세",
+      "count": 3,
+      "battles": 16,
+      "winRate": 0.5,
+      "draws": 0,
+      "hpMargin": 321,
+      "seconds": 29.778124999999996
+    },
+    {
+      "id": "s5_vow",
+      "name": "불굴의 맹세",
+      "count": 5,
+      "battles": 16,
+      "winRate": 0.75,
+      "draws": 0,
+      "hpMargin": 1896,
+      "seconds": 29.900000000000002
+    },
+    {
+      "id": "s5_vow",
+      "name": "불굴의 맹세",
+      "count": 7,
+      "battles": 16,
+      "winRate": 0.8125,
+      "draws": 0,
+      "hpMargin": 2438,
+      "seconds": 28.650000000000002
+    },
+    {
+      "id": "s5_legacy",
+      "name": "영광의 유산",
+      "count": 3,
+      "battles": 16,
+      "winRate": 0.5,
+      "draws": 0,
+      "hpMargin": 289,
+      "seconds": 29.871875
+    },
+    {
+      "id": "s5_legacy",
+      "name": "영광의 유산",
+      "count": 5,
+      "battles": 16,
+      "winRate": 0.6875,
+      "draws": 0,
+      "hpMargin": 1541,
+      "seconds": 30.118750000000002
+    },
+    {
+      "id": "s5_legacy",
+      "name": "영광의 유산",
+      "count": 7,
+      "battles": 16,
+      "winRate": 0.875,
+      "draws": 0,
+      "hpMargin": 3715,
+      "seconds": 29.675
+    },
+    {
+      "id": "s5_finale",
+      "name": "피날레",
+      "count": 3,
+      "battles": 16,
+      "winRate": 0.5,
+      "draws": 0,
+      "hpMargin": 163,
+      "seconds": 29.359375
+    },
+    {
+      "id": "s5_finale",
+      "name": "피날레",
+      "count": 5,
+      "battles": 16,
+      "winRate": 0.5,
+      "draws": 0,
+      "hpMargin": 352,
+      "seconds": 29.49375
+    },
+    {
+      "id": "s5_finale",
+      "name": "피날레",
+      "count": 7,
+      "battles": 16,
+      "winRate": 0.8125,
+      "draws": 0,
+      "hpMargin": 1785,
+      "seconds": 28.5125
+    }
+  ]
+}

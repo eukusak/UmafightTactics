@@ -11,10 +11,11 @@ import { fileURLToPath } from 'node:url';
 
 import { createMatch, RoundDirector, heldUnits } from '../src/game/engine/rounds/director';
 import { countInPlay, totalCopies } from '../src/game/engine/pool';
-import { getUnitDef, getUnitTraits, getSeason, getSeasonUnits, getSeasonTraits } from '../src/game/engine/roster';
+import { getUnitDef, getSeason, getSeasonUnits, getSeasonTraits } from '../src/game/engine/roster';
 import { activeTierIndex, getTrait } from '../src/game/engine/traits/trait-defs';
+import { boardTraitCounts } from './lib/balance-observations';
 import { AI_PROFILE_IDS } from '../src/game/engine/ai/profiles';
-import type { AiProfileId, MatchState } from '../src/game/engine/state';
+import type { AiProfileId } from '../src/game/engine/state';
 import type { Cost, TraitId } from '../src/game/engine/types';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
@@ -42,6 +43,7 @@ type Totals = {
   placementByProfile: Record<AiProfileId, number[]>;
   traitTop4: Record<string, number>;
   traitTop1: Record<string, number>;
+  traitOutcomes: Record<string, { boards: number; top4: number; wins: number }>;
   goldSamples: number[];
   damageSamples: number[];
   unitBought: Record<string, number>;
@@ -62,6 +64,7 @@ const totals: Totals = {
   }, {} as Record<AiProfileId, number[]>),
   traitTop4: {},
   traitTop1: {},
+  traitOutcomes: {},
   goldSamples: [],
   damageSamples: [],
   unitBought: {},
@@ -71,27 +74,11 @@ const totals: Totals = {
   battleCount: 0,
 };
 
-/** Distinct-unit trait counts for a player's fielded board. */
-function boardTraitCounts(state: MatchState, playerId: string): Map<TraitId, number> {
-  const player = state.players.find((p) => p.id === playerId)!;
-  const counts = new Map<TraitId, number>();
-  const seen = new Map<TraitId, Set<string>>();
-  for (const u of player.board) {
-    for (const t of getUnitTraits(u.unitDefId, state.seasonId)) {
-      const s = seen.get(t) ?? new Set<string>();
-      if (s.has(u.unitDefId)) continue;
-      s.add(u.unitDefId);
-      seen.set(t, s);
-      counts.set(t, (counts.get(t) ?? 0) + 1);
-    }
-  }
-  return counts;
-}
-
 const startedAt = Date.now();
 for (let m = 0; m < MATCHES; m += 1) {
   const state = createMatch({ seed: BASE_SEED + m * 7919, allAi: true, seasonId: SEASON.id });
   const director = new RoundDirector(state);
+  const finalBoards = new Map<string, Map<TraitId, number>>();
 
   // Sample every prep phase. Sampling only at the end would miss every board
   // an eliminated player ever had, since elimination returns their units to
@@ -113,7 +100,12 @@ for (let m = 0; m < MATCHES; m += 1) {
   director.beginPrep();
   sample();
   for (let guard = 0; guard < 120 && !director.isOver; guard += 1) {
-    director.resolveRound();
+    director.resolveRound(true);
+    // Settlement returns eliminated boards to the pool. Retain their last field.
+    for (const player of state.players) {
+      if (player.hp > 0) finalBoards.set(player.id, boardTraitCounts(state, player.id));
+    }
+    director.settleRound();
     director.advance();
     sample();
   }
@@ -142,8 +134,15 @@ for (let m = 0; m < MATCHES; m += 1) {
   // units). Counting every active trait would let one board vote 8 times and
   // push every share far above the 25% warning line.
   const standings = state.finalStandings ?? [];
+  standings.forEach((pid, idx) => {
+    for (const [trait, count] of finalBoards.get(pid) ?? []) {
+      if (activeTierIndex(getTrait(trait), count) < 0) continue;
+      const row = totals.traitOutcomes[trait] ??= { boards: 0, top4: 0, wins: 0 };
+      row.boards++; row.top4 += Number(idx < 4); row.wins += Number(idx === 0);
+    }
+  });
   standings.slice(0, 4).forEach((pid, idx) => {
-    const counts = boardTraitCounts(state, pid);
+    const counts = finalBoards.get(pid) ?? new Map<TraitId, number>();
     let dominant: TraitId | null = null;
     let bestTier = -1;
     let bestCount = -1;
@@ -288,3 +287,6 @@ if (totals.poolViolations > 0) {
   process.exit(1);
 }
 console.log('\nsimulate — OK');
+
+const jsonIndex = process.argv.indexOf('--json');
+if (jsonIndex >= 0 && process.argv[jsonIndex + 1]) writeFileSync(process.argv[jsonIndex + 1], JSON.stringify({season: SEASON.id, seed: BASE_SEED, totals, traitRows, profileAvg}, null, 2) + '\n');

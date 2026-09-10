@@ -168,7 +168,7 @@
       "id": "agnes_digital",
       "nameKo": "아그네스 디지털",
       "activeS1": true,
-      "cost": 2,
+      "cost": 1,
       "portrait": "portraits/agnes_digital.png",
       "battleSheet": "characters/agnes_digital.png",
       "cutinRequired": false
@@ -356,7 +356,7 @@
     {
       "id": "sakura_bakushin_o",
       "nameKo": "사쿠라 바쿠신 오",
-      "activeS1": false,
+      "activeS1": true,
       "cost": 2,
       "portrait": "portraits/sakura_bakushin_o.png",
       "battleSheet": "characters/sakura_bakushin_o.png",
@@ -365,8 +365,8 @@
     {
       "id": "seeking_the_pearl",
       "nameKo": "시킹 더 펄",
-      "activeS1": true,
-      "cost": 1,
+      "activeS1": false,
+      "cost": 2,
       "portrait": "portraits/seeking_the_pearl.png",
       "battleSheet": "characters/seeking_the_pearl.png",
       "cutinRequired": false
@@ -536,8 +536,8 @@
     {
       "id": "king_halo",
       "nameKo": "킹 헤일로",
-      "activeS1": true,
-      "cost": 2,
+      "activeS1": false,
+      "cost": 1,
       "portrait": "portraits/king_halo.png",
       "battleSheet": "characters/king_halo.png",
       "cutinRequired": false
@@ -698,8 +698,8 @@
     {
       "id": "furioso",
       "nameKo": "푸리오소",
-      "activeS1": false,
-      "cost": 3,
+      "activeS1": true,
+      "cost": 1,
       "portrait": "portraits/furioso.png",
       "battleSheet": "characters/furioso.png",
       "cutinRequired": false
@@ -752,8 +752,8 @@
     {
       "id": "mejiro_ramonu",
       "nameKo": "메지로 라모누",
-      "activeS1": false,
-      "cost": 3,
+      "activeS1": true,
+      "cost": 1,
       "portrait": "portraits/mejiro_ramonu.png",
       "battleSheet": "characters/mejiro_ramonu.png",
       "cutinRequired": false
@@ -779,8 +779,8 @@
     {
       "id": "cheval_grand",
       "nameKo": "슈발 그랑",
-      "activeS1": true,
-      "cost": 1,
+      "activeS1": false,
+      "cost": 2,
       "portrait": "portraits/cheval_grand.png",
       "battleSheet": "characters/cheval_grand.png",
       "cutinRequired": false
@@ -869,7 +869,7 @@
     {
       "id": "wonder_acute",
       "nameKo": "원더 어큐트",
-      "activeS1": true,
+      "activeS1": false,
       "cost": 2,
       "portrait": "portraits/wonder_acute.png",
       "battleSheet": "characters/wonder_acute.png",
@@ -1076,8 +1076,8 @@
     {
       "id": "bubble_gum_fellow",
       "nameKo": "버블검 펠로",
-      "activeS1": false,
-      "cost": 3,
+      "activeS1": true,
+      "cost": 2,
       "portrait": "portraits/bubble_gum_fellow.png",
       "battleSheet": "characters/bubble_gum_fellow.png",
       "cutinRequired": false
@@ -1085,7 +1085,7 @@
     {
       "id": "sakura_chitose_o",
       "nameKo": "사쿠라 치토세 오",
-      "activeS1": true,
+      "activeS1": false,
       "cost": 2,
       "portrait": "portraits/sakura_chitose_o.png",
       "battleSheet": "characters/sakura_chitose_o.png",
@@ -1103,7 +1103,7 @@
     {
       "id": "blast_onepiece",
       "nameKo": "블래스트 원피스",
-      "activeS1": true,
+      "activeS1": false,
       "cost": 1,
       "portrait": "portraits/blast_onepiece.png",
       "battleSheet": "characters/blast_onepiece.png",
@@ -1211,8 +1211,8 @@
     {
       "id": "epiphaneia",
       "nameKo": "에피파네이아",
-      "activeS1": false,
-      "cost": 3,
+      "activeS1": true,
+      "cost": 1,
       "portrait": "portraits/epiphaneia.png",
       "battleSheet": "characters/epiphaneia.png",
       "cutinRequired": false
@@ -1220,7 +1220,7 @@
     {
       "id": "logotype",
       "nameKo": "로고타입",
-      "activeS1": false,
+      "activeS1": true,
       "cost": 2,
       "portrait": "portraits/logotype.png",
       "battleSheet": "characters/logotype.png",
@@ -1229,8 +1229,8 @@
     {
       "id": "victoire_pisa",
       "nameKo": "빅투아르 피사",
-      "activeS1": false,
-      "cost": 3,
+      "activeS1": true,
+      "cost": 2,
       "portrait": "portraits/victoire_pisa.png",
       "battleSheet": "characters/victoire_pisa.png",
       "cutinRequired": false
@@ -1256,8 +1256,8 @@
     {
       "id": "efforia",
       "nameKo": "에프포리아",
-      "activeS1": true,
-      "cost": 2,
+      "activeS1": false,
+      "cost": 3,
       "portrait": "portraits/efforia.png",
       "battleSheet": "characters/efforia.png",
       "cutinRequired": false
@@ -1265,8 +1265,8 @@
     {
       "id": "titleholder",
       "nameKo": "타이틀홀더",
-      "activeS1": false,
-      "cost": 3,
+      "activeS1": true,
+      "cost": 2,
       "portrait": "portraits/titleholder.png",
       "battleSheet": "characters/titleholder.png",
       "cutinRequired": false
@@ -1292,8 +1292,8 @@
     {
       "id": "manhattan_cafe",
       "nameKo": "맨하탄 카페",
-      "activeS1": true,
-      "cost": 1,
+      "activeS1": false,
+      "cost": 2,
       "portrait": "portraits/manhattan_cafe.png",
       "battleSheet": "characters/manhattan_cafe.png",
       "cutinRequired": false

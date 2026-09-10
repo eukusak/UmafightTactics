@@ -1,0 +1,506 @@
+{
+  "format": "uft-baked-frames-v1",
+  "scale": 0.44,
+  "anchor": [
+    64,
+    110
+  ],
+  "runtimeSha256": "67592d5f980deda8468ac6a33087ad6378f7231d34e2618ac8a092301eab0000",
+  "frames": [
+    {
+      "frame": 0,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/production-144/tokai_teio/alpha.png",
+      "sourceSha256": "f6902b8e0a686d112f646b14d973f5500d3f79dc0a6bb1dd4a472db473c5b1f1",
+      "crop": [
+        59,
+        36,
+        218,
+        255
+      ],
+      "destination": [
+        29,
+        14,
+        70,
+        96
+      ]
+    },
+    {
+      "frame": 1,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/production-144/tokai_teio/alpha.png",
+      "sourceSha256": "f6902b8e0a686d112f646b14d973f5500d3f79dc0a6bb1dd4a472db473c5b1f1",
+      "crop": [
+        307,
+        38,
+        463,
+        255
+      ],
+      "destination": [
+        157,
+        15,
+        69,
+        95
+      ]
+    },
+    {
+      "frame": 2,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/production-144/tokai_teio/alpha.png",
+      "sourceSha256": "f6902b8e0a686d112f646b14d973f5500d3f79dc0a6bb1dd4a472db473c5b1f1",
+      "crop": [
+        555,
+        39,
+        714,
+        254
+      ],
+      "destination": [
+        285,
+        15,
+        70,
+        95
+      ]
+    },
+    {
+      "frame": 3,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/production-144/tokai_teio/alpha.png",
+      "sourceSha256": "f6902b8e0a686d112f646b14d973f5500d3f79dc0a6bb1dd4a472db473c5b1f1",
+      "crop": [
+        820,
+        38,
+        977,
+        255
+      ],
+      "destination": [
+        413,
+        15,
+        69,
+        95
+      ]
+    },
+    {
+      "frame": 4,
+      "sourceFrame": 4,
+      "source": "docs/art-source/motions/production-144/tokai_teio/alpha.png",
+      "sourceSha256": "f6902b8e0a686d112f646b14d973f5500d3f79dc0a6bb1dd4a472db473c5b1f1",
+      "crop": [
+        17,
+        290,
+        226,
+        508
+      ],
+      "destination": [
+        18,
+        142,
+        92,
+        96
+      ]
+    },
+    {
+      "frame": 5,
+      "sourceFrame": 5,
+      "source": "docs/art-source/motions/production-144/tokai_teio/alpha.png",
+      "sourceSha256": "f6902b8e0a686d112f646b14d973f5500d3f79dc0a6bb1dd4a472db473c5b1f1",
+      "crop": [
+        277,
+        291,
+        489,
+        509
+      ],
+      "destination": [
+        145,
+        142,
+        93,
+        96
+      ]
+    },
+    {
+      "frame": 6,
+      "sourceFrame": 6,
+      "source": "docs/art-source/motions/production-144/tokai_teio/alpha.png",
+      "sourceSha256": "f6902b8e0a686d112f646b14d973f5500d3f79dc0a6bb1dd4a472db473c5b1f1",
+      "crop": [
+        530,
+        291,
+        750,
+        508
+      ],
+      "destination": [
+        271,
+        143,
+        97,
+        95
+      ]
+    },
+    {
+      "frame": 7,
+      "sourceFrame": 7,
+      "source": "docs/art-source/motions/production-144/tokai_teio/alpha.png",
+      "sourceSha256": "f6902b8e0a686d112f646b14d973f5500d3f79dc0a6bb1dd4a472db473c5b1f1",
+      "crop": [
+        793,
+        289,
+        1007,
+        506
+      ],
+      "destination": [
+        401,
+        143,
+        94,
+        95
+      ]
+    },
+    {
+      "frame": 8,
+      "sourceFrame": 8,
+      "source": "docs/art-source/motions/production-144/tokai_teio/alpha.png",
+      "sourceSha256": "f6902b8e0a686d112f646b14d973f5500d3f79dc0a6bb1dd4a472db473c5b1f1",
+      "crop": [
+        38,
+        548,
+        217,
+        760
+      ],
+      "destination": [
+        24,
+        273,
+        79,
+        93
+      ]
+    },
+    {
+      "frame": 9,
+      "sourceFrame": 9,
+      "source": "docs/art-source/motions/production-144/tokai_teio/alpha.png",
+      "sourceSha256": "f6902b8e0a686d112f646b14d973f5500d3f79dc0a6bb1dd4a472db473c5b1f1",
+      "crop": [
+        296,
+        542,
+        470,
+        760
+      ],
+      "destination": [
+        153,
+        270,
+        77,
+        96
+      ]
+    },
+    {
+      "frame": 10,
+      "sourceFrame": 10,
+      "source": "docs/art-source/motions/production-144/tokai_teio/alpha.png",
+      "sourceSha256": "f6902b8e0a686d112f646b14d973f5500d3f79dc0a6bb1dd4a472db473c5b1f1",
+      "crop": [
+        518,
+        548,
+        768,
+        759
+      ],
+      "destination": [
+        265,
+        273,
+        110,
+        93
+      ]
+    },
+    {
+      "frame": 11,
+      "sourceFrame": 11,
+      "source": "docs/art-source/motions/production-144/tokai_teio/alpha.png",
+      "sourceSha256": "f6902b8e0a686d112f646b14d973f5500d3f79dc0a6bb1dd4a472db473c5b1f1",
+      "crop": [
+        808,
+        542,
+        979,
+        760
+      ],
+      "destination": [
+        410,
+        270,
+        75,
+        96
+      ]
+    },
+    {
+      "frame": 12,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/skill-revisions-2026-09-10/tokai_teio/generated.png",
+      "sourceSha256": "bb7c546c69817e6dbae3313c040eba57c0ae97844fb3018923a1cd1cb2bde9e9",
+      "crop": [
+        121,
+        82,
+        542,
+        518
+      ],
+      "destination": [
+        24,
+        411,
+        80,
+        83
+      ]
+    },
+    {
+      "frame": 13,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/skill-revisions-2026-09-10/tokai_teio/generated.png",
+      "sourceSha256": "bb7c546c69817e6dbae3313c040eba57c0ae97844fb3018923a1cd1cb2bde9e9",
+      "crop": [
+        789,
+        81,
+        1396,
+        525
+      ],
+      "destination": [
+        134,
+        409,
+        116,
+        85
+      ]
+    },
+    {
+      "frame": 14,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/skill-revisions-2026-09-10/tokai_teio/generated.png",
+      "sourceSha256": "bb7c546c69817e6dbae3313c040eba57c0ae97844fb3018923a1cd1cb2bde9e9",
+      "crop": [
+        76,
+        654,
+        683,
+        1026
+      ],
+      "destination": [
+        262,
+        423,
+        116,
+        71
+      ]
+    },
+    {
+      "frame": 15,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/skill-revisions-2026-09-10/tokai_teio/generated.png",
+      "sourceSha256": "bb7c546c69817e6dbae3313c040eba57c0ae97844fb3018923a1cd1cb2bde9e9",
+      "crop": [
+        868,
+        590,
+        1218,
+        1047
+      ],
+      "destination": [
+        414,
+        407,
+        67,
+        87
+      ]
+    },
+    {
+      "frame": 16,
+      "sourceFrame": 16,
+      "source": "docs/art-source/motions/production-144/tokai_teio/alpha.png",
+      "sourceSha256": "f6902b8e0a686d112f646b14d973f5500d3f79dc0a6bb1dd4a472db473c5b1f1",
+      "crop": [
+        49,
+        1062,
+        219,
+        1265
+      ],
+      "destination": [
+        26,
+        533,
+        75,
+        89
+      ]
+    },
+    {
+      "frame": 17,
+      "sourceFrame": 17,
+      "source": "docs/art-source/motions/production-144/tokai_teio/alpha.png",
+      "sourceSha256": "f6902b8e0a686d112f646b14d973f5500d3f79dc0a6bb1dd4a472db473c5b1f1",
+      "crop": [
+        301,
+        1088,
+        486,
+        1264
+      ],
+      "destination": [
+        151,
+        545,
+        81,
+        77
+      ]
+    },
+    {
+      "frame": 18,
+      "sourceFrame": 18,
+      "source": "docs/art-source/motions/production-144/tokai_teio/alpha.png",
+      "sourceSha256": "f6902b8e0a686d112f646b14d973f5500d3f79dc0a6bb1dd4a472db473c5b1f1",
+      "crop": [
+        546,
+        1108,
+        710,
+        1263
+      ],
+      "destination": [
+        284,
+        554,
+        72,
+        68
+      ]
+    },
+    {
+      "frame": 19,
+      "sourceFrame": 19,
+      "source": "docs/art-source/motions/production-144/tokai_teio/alpha.png",
+      "sourceSha256": "f6902b8e0a686d112f646b14d973f5500d3f79dc0a6bb1dd4a472db473c5b1f1",
+      "crop": [
+        783,
+        1162,
+        1001,
+        1259
+      ],
+      "destination": [
+        400,
+        579,
+        96,
+        43
+      ]
+    },
+    {
+      "frame": 20,
+      "sourceFrame": 20,
+      "source": "docs/art-source/motions/production-144/tokai_teio/alpha.png",
+      "sourceSha256": "f6902b8e0a686d112f646b14d973f5500d3f79dc0a6bb1dd4a472db473c5b1f1",
+      "crop": [
+        56,
+        1296,
+        214,
+        1515
+      ],
+      "destination": [
+        29,
+        654,
+        70,
+        96
+      ]
+    },
+    {
+      "frame": 21,
+      "sourceFrame": 21,
+      "source": "docs/art-source/motions/production-144/tokai_teio/alpha.png",
+      "sourceSha256": "f6902b8e0a686d112f646b14d973f5500d3f79dc0a6bb1dd4a472db473c5b1f1",
+      "crop": [
+        300,
+        1296,
+        461,
+        1514
+      ],
+      "destination": [
+        156,
+        654,
+        71,
+        96
+      ]
+    },
+    {
+      "frame": 22,
+      "sourceFrame": 22,
+      "source": "docs/art-source/motions/production-144/tokai_teio/alpha.png",
+      "sourceSha256": "f6902b8e0a686d112f646b14d973f5500d3f79dc0a6bb1dd4a472db473c5b1f1",
+      "crop": [
+        549,
+        1286,
+        717,
+        1510
+      ],
+      "destination": [
+        283,
+        651,
+        74,
+        99
+      ]
+    },
+    {
+      "frame": 23,
+      "sourceFrame": 23,
+      "source": "docs/art-source/motions/production-144/tokai_teio/alpha.png",
+      "sourceSha256": "f6902b8e0a686d112f646b14d973f5500d3f79dc0a6bb1dd4a472db473c5b1f1",
+      "crop": [
+        822,
+        1302,
+        988,
+        1514
+      ],
+      "destination": [
+        411,
+        657,
+        73,
+        93
+      ]
+    }
+  ],
+  "skillRevision": {
+    "scale": 0.19110378912685339,
+    "review": "docs/art-source/motions/skill-revisions-2026-09-10/tokai_teio/review.json",
+    "beforeFrames": [
+      "23f50d79afacbdd9cb39c4201b2d0073ba02bb2b5079c8ac599eaced413236fe",
+      "899942e9a642ca80c890f093e56c6cdb8806790fc7a1570d7fa89352ccc1c04a",
+      "fc5380ef8a8d4dbe5597aa3310b9d032b2ca8a8f06d0423f257eba0844c4a1d9",
+      "f584dd2d114a3708340e1d45781448f1fea2914cef3a890084bff19ef7e31426",
+      "893893fa848843c86f4ebdd4906d4e8c0293a5e364f2d855cd35bf1a5d1db7e1",
+      "53fa8813e78cff1167e00bc6c2095a8ebef7af4ac0b5884adb32eee6d0408e08",
+      "dd7fcd557da72ada04f86c0c92eb2296c799b6e61a151aaa67e1111923c3b9d5",
+      "f936b14148f9f38036333dd8c41f51499a6c4dd5d96982e9d4f92c37ccb63b6f",
+      "06813747d1afcb4d3b4e0b81a2523c841f48cdcf9eae35ebfc1c56e176e4b6e3",
+      "20fa8e1b8df0e150e51ad30e5c116c2691150b6408c93e532d2ba87b283dc962",
+      "6021383c3c39422faafcf7785203a47ca1e71442f226c78795c46a9ead36d001",
+      "dde9fb72a55b2d16a229889c2c782d230ea27872b587058567d2236f6966e1ef",
+      "dba02cf04c1f8bfdd08c9ea50bda0082fdb4e3bc79de6e2b3464c5663d36f219",
+      "00dec945b75d9458dd115838e9007bc3f5146a6ec1128fa10d41a92fcc7c4854",
+      "58e9e79cffa58513585e4859bdd881dfc488804cc320983c3b4e1b319558b8ed",
+      "18846ae2d9c601ad502011ed8a4b5c8683004e4c6033dc224b1c757b4d73c1da",
+      "592c705627d7ab7e0f234a877a324bca4df537e7ac161f9c831230a8a4d18975",
+      "dfd0cea827c509b812b8e33154b335f4abb6b6a2aa5a886c86e93192dd158978",
+      "15e6d5fae03ab7f4a7e2b7e26a1dbe4121032d973b35549c516af412475e05b8",
+      "4a0034c94caef62aa0a8ec27e21b07127189443159723ad87ca2e1a062e9d7d3",
+      "c412a2ceae0c9fe5c9510da0ee8dca21c8dd95cba1d87b4294fd08caac80350b",
+      "7f946f50c8df2fb65ad66bf11c7c50c1be4372fe96d4a9b5fd7608424a1fac32",
+      "2470d2be3581b1388d476bcc784416b0ee90284693bcfb30619598ce5ae13463",
+      "35c85247dda1f5d1f50b03881c615d0404428d2c038ed310d94f386fc30a9e32"
+    ],
+    "afterFrames": [
+      "23f50d79afacbdd9cb39c4201b2d0073ba02bb2b5079c8ac599eaced413236fe",
+      "899942e9a642ca80c890f093e56c6cdb8806790fc7a1570d7fa89352ccc1c04a",
+      "fc5380ef8a8d4dbe5597aa3310b9d032b2ca8a8f06d0423f257eba0844c4a1d9",
+      "f584dd2d114a3708340e1d45781448f1fea2914cef3a890084bff19ef7e31426",
+      "893893fa848843c86f4ebdd4906d4e8c0293a5e364f2d855cd35bf1a5d1db7e1",
+      "53fa8813e78cff1167e00bc6c2095a8ebef7af4ac0b5884adb32eee6d0408e08",
+      "dd7fcd557da72ada04f86c0c92eb2296c799b6e61a151aaa67e1111923c3b9d5",
+      "f936b14148f9f38036333dd8c41f51499a6c4dd5d96982e9d4f92c37ccb63b6f",
+      "06813747d1afcb4d3b4e0b81a2523c841f48cdcf9eae35ebfc1c56e176e4b6e3",
+      "20fa8e1b8df0e150e51ad30e5c116c2691150b6408c93e532d2ba87b283dc962",
+      "6021383c3c39422faafcf7785203a47ca1e71442f226c78795c46a9ead36d001",
+      "dde9fb72a55b2d16a229889c2c782d230ea27872b587058567d2236f6966e1ef",
+      "9c99985246ad1c060d1a1a44e894c35ed0aba40a798b530ec5d83c40c1eab8b5",
+      "7e281658df084e1147d9ad20cf2adb1a5b83875c7213e492f892910ec6fdc72c",
+      "65d6c3547eda2bb92d079c70d35bcdc36d4c1eda8390f934e725ee80c518b705",
+      "81e5565bfb9c31c69031e2bb34175ada8532df9d122af13c5810cadf3e0c6bdd",
+      "592c705627d7ab7e0f234a877a324bca4df537e7ac161f9c831230a8a4d18975",
+      "dfd0cea827c509b812b8e33154b335f4abb6b6a2aa5a886c86e93192dd158978",
+      "15e6d5fae03ab7f4a7e2b7e26a1dbe4121032d973b35549c516af412475e05b8",
+      "4a0034c94caef62aa0a8ec27e21b07127189443159723ad87ca2e1a062e9d7d3",
+      "c412a2ceae0c9fe5c9510da0ee8dca21c8dd95cba1d87b4294fd08caac80350b",
+      "7f946f50c8df2fb65ad66bf11c7c50c1be4372fe96d4a9b5fd7608424a1fac32",
+      "2470d2be3581b1388d476bcc784416b0ee90284693bcfb30619598ce5ae13463",
+      "35c85247dda1f5d1f50b03881c615d0404428d2c038ed310d94f386fc30a9e32"
+    ],
+    "unchangedFrames": 20,
+    "changedFrames": [
+      12,
+      13,
+      14,
+      15
+    ]
+  }
+}

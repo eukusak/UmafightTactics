@@ -11,6 +11,8 @@ test('race-backed skills expose distinct patterns and render their timed frame p
     ['special_week', '관통 돌파', '1999'],
     ['silence_suzuka', '지속 광선', '毎日王冠'],
     ['tokai_teio', '삼단 결정타', '1993'],
+    ['oguri_cap', '집중 유성', '1990'],
+    ['rice_shower', '흡수 요새', '1995'],
     ['haru_urara', '서리 전선', '2위'],
   ]) {
     await page.getByLabel('기물 선택').selectOption(id);

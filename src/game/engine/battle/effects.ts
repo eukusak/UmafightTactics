@@ -197,6 +197,10 @@ const AURA_KINDS = new Set([
   'EXECUTE_THRESHOLD', 'ATTACK_SPEED_CAP_ADD', 'SKILLS_CAN_CRIT',
 ]);
 
+/** Gates that remain conditions throughout an aura's lifetime. */
+export const isContinuousAura = (effect: EffectDef): boolean => !effect.trigger ||
+  ['ALWAYS', 'HP_BELOW', 'HP_ABOVE', 'TARGET_HP_BELOW', 'AFTER_SECONDS', 'IN_FRONT_ROWS', 'IN_BACK_ROWS', 'ADJACENT_ALLIES_AT_LEAST', 'NO_ADJACENT_ALLIES'].includes(effect.trigger.when);
+
 export const isAuraKind = (kind: string): boolean => AURA_KINDS.has(kind);
 
 /** Folds one aura effect into the unit's aggregate totals. */
@@ -263,9 +267,15 @@ export function applyEffect(
   };
   if (isAuraKind(effect.kind) && effect.kind !== 'EXECUTE_THRESHOLD') {
     for (const t of effect.target ? targets : [self]) {
+      // The event already fired. Keep HP/target gates, consume event gates.
+      const activeEffect = isContinuousAura(effect) ? effect : { ...effect, trigger: undefined };
+      const previous = t.timedEffects.find(e => e.key === onceKey && e.expiresAt > ctx.now);
+      if (previous && triggerHolds(t, previous.effect.trigger, ctx, 'RECOMPUTE', opts.currentTarget)) {
+        accumulateAura(t, { ...previous.effect, value: -(previous.effect.value ?? 0) });
+      }
       t.timedEffects = t.timedEffects.filter((e) => e.key !== onceKey);
-      t.timedEffects.push({ effect, key: onceKey, expiresAt: ctx.now + (effect.duration || 999) });
-      if (triggerHolds(t, effect.trigger, ctx, 'RECOMPUTE', opts.currentTarget)) accumulateAura(t, effect);
+      t.timedEffects.push({ effect: activeEffect, key: onceKey, expiresAt: ctx.now + (effect.duration || 999) });
+      if (triggerHolds(t, activeEffect.trigger, ctx, 'RECOMPUTE', opts.currentTarget)) accumulateAura(t, activeEffect);
     }
     return effect.target ? targets.length : 1;
   }

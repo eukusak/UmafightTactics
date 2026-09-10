@@ -1,0 +1,10 @@
+{
+  "mode": "built-in image_gen",
+  "prompt": "Transparent background, RGBA sprite asset. Make a four-pose sprite sheet of the dark-haired girl in the FIRST reference, using the SECOND reference only as an example of transparent sprite-sheet output. Exactly 4 full-body chibi poses in 2 columns by 2 rows: she holds a red rose; extends her red glove toward the viewer; clasps hands behind a small blue crescent shield; relaxes her arms. Retain first reference's one eye covered by dark hair, tilted blue-rose hat, navy dress. Flat cel shading and crisp outlines. No glow, no gradient, no backdrop, no black background, no ground shadow. Background must be completely transparent.",
+  "references": [
+    "public/assets/motions/rice_shower.png",
+    "docs/art-source/motions/skill-revisions-2026-09-10/oguri_cap/generated.png"
+  ],
+  "referenceCommit": "ccd64939bf23acd699db25829b4f26b6b80d861f",
+  "skillSignature": "35630d85727b1a1d199cbb16e89debcc4231aaa86c4a665dc874b0661398e6ff"
+}

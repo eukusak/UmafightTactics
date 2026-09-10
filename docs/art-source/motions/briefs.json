@@ -160,7 +160,7 @@
       ],
       "productionRule": "이 초안은 제작 완료가 아니다. 원본 -Race.png의 의상·머리·장식과 이 캐릭터의 실제 효과/대상/이동을 함께 검토하여 개별 원화를 생성하고 검수한다. 존재하지 않는 치유·소환·무기를 추가하지 않는다.",
       "status": "REVIEWED_FRAMES",
-      "reviewedPoses": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현."
+      "reviewedPoses": "민트 에너지 준비 → 양손 전개 → 빔 유지 → 회수. CHANNEL 발동 구간에서 세 번째 프레임을 유지한다."
     },
     {
       "id": "tokai_teio",
@@ -230,7 +230,7 @@
       ],
       "productionRule": "이 초안은 제작 완료가 아니다. 원본 -Race.png의 의상·머리·장식과 이 캐릭터의 실제 효과/대상/이동을 함께 검토하여 개별 원화를 생성하고 검수한다. 존재하지 않는 치유·소환·무기를 추가하지 않는다.",
       "status": "REVIEWED_FRAMES",
-      "reviewedPoses": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현."
+      "reviewedPoses": "조준 → 첫 발 → 세 갈래 연사 → 석궁 회수. focus_three의 반복 발사에 대응."
     },
     {
       "id": "maruzensky",
@@ -430,7 +430,7 @@
       ],
       "productionRule": "이 초안은 제작 완료가 아니다. 원본 -Race.png의 의상·머리·장식과 이 캐릭터의 실제 효과/대상/이동을 함께 검토하여 개별 원화를 생성하고 검수한다. 존재하지 않는 치유·소환·무기를 추가하지 않는다.",
       "status": "REVIEWED_FRAMES",
-      "reviewedPoses": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현."
+      "reviewedPoses": "별 충전 → 머리 위 준비 → 하강 혜성 발사 → 회수. comet_fall의 지연 낙하와 일치."
     },
     {
       "id": "gold_ship",
@@ -489,7 +489,7 @@
             "target": "SELF"
           }
         ],
-        "vfxKey": "vfx_dash_sashi",
+        "vfxKey": "vfx_dash_oikomi",
         "description": "[추격 연타] 돌진 후 한 적에게 86 물리 피해를 3회, 4초간 공격속도 +20%. 대상 사망 시 남은 타격은 재탐색. 근거: 2012 菊花賞(GI) 1위.",
         "choreography": {
           "windup": 0.45,
@@ -503,7 +503,7 @@
           "motion": "PULSE"
         }
       },
-      "skillSignature": "26c93acf5a937888a1e42aa5ca6f232da0c2bec97a383ad96835addd93a0b2f2",
+      "skillSignature": "4564de25f07442456ea4abfca60d105aa4bf6a310720c7ba2a3b169b60423be6",
       "basicAttack": "근접 준비 → 당김 → 타격 → 회수",
       "skillPoseDraft": [
         "낮게 웅크린 출발",
@@ -1268,8 +1268,8 @@
         "displayName": "아그네스 디지털 · 주력 저격 (2001 天皇賞(秋)(GI))",
         "template": "MULTI_SHOT",
         "baseValues": [
-          200,
-          222,
+          185,
+          205,
           31
         ],
         "starMultipliers": [
@@ -1283,7 +1283,7 @@
         "effects": [
           {
             "kind": "DAMAGE",
-            "value": 250,
+            "value": 232,
             "damageType": "PHYSICAL",
             "target": "HIGHEST_AD_ENEMY"
           },
@@ -1297,7 +1297,7 @@
           }
         ],
         "vfxKey": "vfx_projectile",
-        "description": "[주력 저격] 공격력이 가장 높은 적을 저격해 250 물리 피해와 공격력 15% 감소(3초). 근거: 2001 天皇賞(秋)(GI) 1위.",
+        "description": "[주력 저격] 공격력이 가장 높은 적을 저격해 232 물리 피해와 공격력 15% 감소(3초). 근거: 2001 天皇賞(秋)(GI) 1위.",
         "choreography": {
           "windup": 0.3,
           "recovery": 0.3,
@@ -1310,7 +1310,7 @@
           "motion": "STRIKE"
         }
       },
-      "skillSignature": "abf47616521891467f9192adb47820af54479d113d363b076ef7fe8d53e58cd4",
+      "skillSignature": "98807291639a679acce31516e0bce9b9236831be08e183a7e8f86a6f95031ea6",
       "basicAttack": "원거리 조준 → 발사 준비 → 투사체 방출 → 반동 회복",
       "skillPoseDraft": [
         "동일 대상에 1차 발사",
@@ -2049,7 +2049,7 @@
       ],
       "productionRule": "이 초안은 제작 완료가 아니다. 원본 -Race.png의 의상·머리·장식과 이 캐릭터의 실제 효과/대상/이동을 함께 검토하여 개별 원화를 생성하고 검수한다. 존재하지 않는 치유·소환·무기를 추가하지 않는다.",
       "status": "REVIEWED_FRAMES",
-      "reviewedPoses": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현."
+      "reviewedPoses": "장미 준비 → 손을 뻗어 흡수 → 가슴으로 회수하며 방어막 표현 → 경계 자세. iron_drain의 피해 감소와 반복 흡수에 대응하며 방어막 그림은 피해 감소를 나타내고 별도 보호막 수치를 추가하지 않는다."
     },
     {
       "id": "ines_fujin",
@@ -2821,8 +2821,8 @@
         "displayName": "시킹 더 펄 · 분산 포격 (1997 NHKマイルC(GI))",
         "template": "MULTI_SHOT",
         "baseValues": [
-          180,
-          199,
+          194,
+          215,
           30
         ],
         "starMultipliers": [
@@ -2836,7 +2836,7 @@
         "effects": [
           {
             "kind": "DAMAGE",
-            "value": 98,
+            "value": 106,
             "damageType": "MAGIC",
             "target": "NEAREST_ENEMY",
             "shape": "CHAIN",
@@ -2846,7 +2846,7 @@
           },
           {
             "kind": "DAMAGE",
-            "value": 98,
+            "value": 106,
             "damageType": "MAGIC",
             "target": "NEAREST_ENEMY",
             "shape": "CHAIN",
@@ -2856,7 +2856,7 @@
           }
         ],
         "vfxKey": "vfx_projectile",
-        "description": "[분산 포격] 가까운 적에서 시작해 서로 다른 최대 3명에게 98 마법 피해. 0.35초 뒤 한 번 더 발사. 근거: 1997 NHKマイルC(GI) 1위.",
+        "description": "[분산 포격] 가까운 적에서 시작해 서로 다른 최대 3명에게 106 마법 피해. 0.35초 뒤 한 번 더 발사. 근거: 1997 NHKマイルC(GI) 1위.",
         "choreography": {
           "windup": 0.3,
           "recovery": 0.3,
@@ -2869,7 +2869,7 @@
           "motion": "PULSE"
         }
       },
-      "skillSignature": "5a9ec4567bb69cad1afd67d3fe498252a0373edb9c07acdfc621aff0708a95ad",
+      "skillSignature": "5c048797cb82543d1591fa22cf9bcc164a57fee87e5d5330f4905e8fc2f00552",
       "basicAttack": "원거리 조준 → 발사 준비 → 투사체 방출 → 반동 회복",
       "skillPoseDraft": [
         "동일 대상에 1차 발사",
@@ -3506,7 +3506,7 @@
             "delay": 0.25
           }
         ],
-        "vfxKey": "vfx_dash_nige",
+        "vfxKey": "vfx_dash_senko",
         "description": "[유인 돌진] 141 보호막을 얻고 0.25초 뒤 돌진. 대상에게 249 물리 피해와 2초 둔화. 근거: 1992 スプリンターズS(GI) 1위.",
         "choreography": {
           "windup": 0.15,
@@ -3520,7 +3520,7 @@
           "motion": "STRIKE"
         }
       },
-      "skillSignature": "7e495e1c473196528f39787e907d8f002bd98f38e8748840ce3ebb72cae727e0",
+      "skillSignature": "417cf339f01df38799ed22055357ed32c1d88d38e85b1672a89cfad993505cd3",
       "basicAttack": "원거리 조준 → 발사 준비 → 투사체 방출 → 반동 회복",
       "skillPoseDraft": [
         "낮게 웅크린 출발",
@@ -4171,8 +4171,8 @@
         "displayName": "킹 헤일로 · 구원 방벽 (2000 高松宮記念(GI))",
         "template": "HEAL_BUFF",
         "baseValues": [
-          184,
-          205,
+          171,
+          190,
           29
         ],
         "starMultipliers": [
@@ -4191,13 +4191,13 @@
           },
           {
             "kind": "SHIELD_FLAT",
-            "value": 183,
+            "value": 170,
             "duration": 4,
             "target": "LOWEST_HP_ALLY"
           }
         ],
         "vfxKey": "vfx_heal",
-        "description": "[구원 방벽] 체력 비율이 가장 낮은 아군의 잃은 체력 25%를 회복하고 183 보호막(4초). 근거: 2000 高松宮記念(GI) 1위.",
+        "description": "[구원 방벽] 체력 비율이 가장 낮은 아군의 잃은 체력 25%를 회복하고 170 보호막(4초). 근거: 2000 高松宮記念(GI) 1위.",
         "choreography": {
           "windup": 0.15,
           "recovery": 0.3,
@@ -4210,7 +4210,7 @@
           "motion": "STRIKE"
         }
       },
-      "skillSignature": "e4087c8fe8c012e69eb07a66a26c4fed1030b8bb14328d40ce6d5fd8529c99a1",
+      "skillSignature": "389000e943964bd69efef095eb717c41e56e7937161e608d9bba3fdd4ea38106",
       "basicAttack": "원거리 조준 → 발사 준비 → 투사체 방출 → 반동 회복",
       "skillPoseDraft": [
         "아군을 향해 손 모음",
@@ -5404,8 +5404,8 @@
         "displayName": "푸리오소 · 방벽 원진 (2010 帝王賞競走(JpnI))",
         "template": "AURA",
         "baseValues": [
-          213,
-          236,
+          183,
+          204,
           30
         ],
         "starMultipliers": [
@@ -5419,7 +5419,7 @@
         "effects": [
           {
             "kind": "SHIELD_FLAT",
-            "value": 193,
+            "value": 166,
             "duration": 4,
             "target": "ALL_ALLIES",
             "radius": 2,
@@ -5437,7 +5437,7 @@
           }
         ],
         "vfxKey": "vfx_buff",
-        "description": "[방벽 원진] 2칸 내 최대 4명의 아군에게 193 보호막과 방어력 +20을 4초간 부여. 근거: 2010 帝王賞競走(JpnI) 1위.",
+        "description": "[방벽 원진] 2칸 내 최대 4명의 아군에게 166 보호막과 방어력 +20을 4초간 부여. 근거: 2010 帝王賞競走(JpnI) 1위.",
         "choreography": {
           "windup": 0.3,
           "recovery": 0.3,
@@ -5450,7 +5450,7 @@
           "motion": "STRIKE"
         }
       },
-      "skillSignature": "26d5debf09fcbb810311c0b49e7d585c54998ec31bce678670cfd71176569258",
+      "skillSignature": "68a572a5e07bf63dd3423088de6fb45e7468574335fe70cdbbbab73d30c3f112",
       "basicAttack": "근접 준비 → 당김 → 타격 → 회수",
       "skillPoseDraft": [
         "몸 중심에 기운 모음",
@@ -5580,7 +5580,7 @@
             "delay": 0.25
           }
         ],
-        "vfxKey": "vfx_dash_nige",
+        "vfxKey": "vfx_dash_senko",
         "description": "[유인 돌진] 158 보호막을 얻고 0.25초 뒤 돌진. 대상에게 279 물리 피해와 2초 둔화. 근거: 1994 マイルチャンピオンS(GI) 1위.",
         "choreography": {
           "windup": 0.3,
@@ -5594,7 +5594,7 @@
           "motion": "STRIKE"
         }
       },
-      "skillSignature": "c100e5da99b04775c844cc4125e1e3e2286e0520515bee5cd343eaf69be35f4c",
+      "skillSignature": "a68bb8fa484c2f6481620680d50a9831f834f2c7256e7d2260b5ac460f23730c",
       "basicAttack": "원거리 조준 → 발사 준비 → 투사체 방출 → 반동 회복",
       "skillPoseDraft": [
         "낮게 웅크린 출발",
@@ -5817,8 +5817,8 @@
         "displayName": "메지로 라모누 · 교차 파동 (1986 エリザベス女王杯(GI))",
         "template": "DASH_LINE",
         "baseValues": [
-          217,
-          241,
+          187,
+          208,
           31
         ],
         "starMultipliers": [
@@ -5837,7 +5837,7 @@
           },
           {
             "kind": "DAMAGE",
-            "value": 140,
+            "value": 121,
             "damageType": "PHYSICAL",
             "target": "CURRENT_TARGET",
             "shape": "LINE",
@@ -5846,7 +5846,7 @@
           },
           {
             "kind": "DAMAGE",
-            "value": 99,
+            "value": 86,
             "damageType": "MAGIC",
             "target": "CURRENT_TARGET",
             "shape": "LINE",
@@ -5856,7 +5856,7 @@
           }
         ],
         "vfxKey": "vfx_dash_oikomi",
-        "description": "[교차 파동] 돌진 후 직선 최대 4명에게 140 물리 피해, 0.45초 뒤 같은 방향으로 99 마법 파동. 근거: 1986 エリザベス女王杯(GI) 1위.",
+        "description": "[교차 파동] 돌진 후 직선 최대 4명에게 121 물리 피해, 0.45초 뒤 같은 방향으로 86 마법 파동. 근거: 1986 エリザベス女王杯(GI) 1위.",
         "choreography": {
           "windup": 0.3,
           "recovery": 0.3,
@@ -5869,7 +5869,7 @@
           "motion": "PULSE"
         }
       },
-      "skillSignature": "016d05a2d99effee64a014bac2ba6fd524324cfad9023f1bc723b904b44fb004",
+      "skillSignature": "2be97b935ca963fc961ea6706d22bcb735de58d17180ae4289c57156aa329541",
       "basicAttack": "근접 준비 → 당김 → 타격 → 회수",
       "skillPoseDraft": [
         "낮게 웅크린 출발",
@@ -6027,8 +6027,8 @@
         "displayName": "슈발 그랑 · 서리 전선 (2017 ジャパンC(GI))",
         "template": "CONTROL",
         "baseValues": [
-          174,
-          194,
+          188,
+          209,
           29
         ],
         "starMultipliers": [
@@ -6042,7 +6042,7 @@
         "effects": [
           {
             "kind": "DAMAGE",
-            "value": 104,
+            "value": 113,
             "damageType": "MAGIC",
             "target": "LARGEST_ENEMY_CLUSTER",
             "radius": 2,
@@ -6067,7 +6067,7 @@
           }
         ],
         "vfxKey": "vfx_stun",
-        "description": "[서리 전선] 주변 2칸 최대 4명에게 104 마법 피해, 0.6초 기절과 3초 둔화. 근거: 2017 ジャパンC(GI) 1위.",
+        "description": "[서리 전선] 주변 2칸 최대 4명에게 113 마법 피해, 0.6초 기절과 3초 둔화. 근거: 2017 ジャパンC(GI) 1위.",
         "choreography": {
           "windup": 0.3,
           "recovery": 0.3,
@@ -6080,7 +6080,7 @@
           "motion": "STRIKE"
         }
       },
-      "skillSignature": "406aea05798d167323fcb2ff11b73abecb2892601b3fb1770c83f20e07e88f84",
+      "skillSignature": "884d9abd3b29d529ca873d4ab229c7c2d83fb7e02010b672aceda4f902615b6a",
       "basicAttack": "근접 준비 → 당김 → 타격 → 회수",
       "skillPoseDraft": [
         "대상 지점 조준",
@@ -8299,8 +8299,8 @@
         "displayName": "버블검 펠로 · 가속 장전 (1996 天皇賞(秋)(GI))",
         "template": "MULTI_SHOT",
         "baseValues": [
-          221,
-          246,
+          206,
+          229,
           31
         ],
         "starMultipliers": [
@@ -8330,21 +8330,21 @@
           },
           {
             "kind": "DAMAGE",
-            "value": 89,
+            "value": 83,
             "damageType": "PHYSICAL",
             "target": "CURRENT_TARGET",
             "delay": 0
           },
           {
             "kind": "DAMAGE",
-            "value": 89,
+            "value": 83,
             "damageType": "PHYSICAL",
             "target": "CURRENT_TARGET",
             "delay": 0.2
           }
         ],
         "vfxKey": "vfx_projectile",
-        "description": "[가속 장전] 4초간 공격속도 +45%, 공격력 +20%. 장전 타격으로 89 물리 피해를 2회. 근거: 1996 天皇賞(秋)(GI) 1위.",
+        "description": "[가속 장전] 4초간 공격속도 +45%, 공격력 +20%. 장전 타격으로 83 물리 피해를 2회. 근거: 1996 天皇賞(秋)(GI) 1위.",
         "choreography": {
           "windup": 0.15,
           "recovery": 0.3,
@@ -8357,7 +8357,7 @@
           "motion": "PULSE"
         }
       },
-      "skillSignature": "7282d131e5c70e870dcb598e2cece534dc53a701203c22a42e78e99afd937771",
+      "skillSignature": "f0340343990d3a6793511ebf45bcf0089bdb87a7df500c129c2c52a7569fb538",
       "basicAttack": "원거리 조준 → 발사 준비 → 투사체 방출 → 반동 회복",
       "skillPoseDraft": [
         "동일 대상에 1차 발사",
@@ -9399,8 +9399,8 @@
         "displayName": "에피파네이아 · 반격 폭풍 (2014 ジャパンC(GI))",
         "template": "AURA",
         "baseValues": [
-          212,
-          236,
+          183,
+          203,
           30
         ],
         "starMultipliers": [
@@ -9414,7 +9414,7 @@
         "effects": [
           {
             "kind": "DAMAGE",
-            "value": 71,
+            "value": 61,
             "damageType": "MAGIC",
             "target": "ALL_ENEMIES",
             "radius": 2,
@@ -9424,7 +9424,7 @@
           },
           {
             "kind": "DAMAGE",
-            "value": 71,
+            "value": 61,
             "damageType": "MAGIC",
             "target": "ALL_ENEMIES",
             "radius": 2,
@@ -9434,7 +9434,7 @@
           },
           {
             "kind": "DAMAGE",
-            "value": 71,
+            "value": 61,
             "damageType": "MAGIC",
             "target": "ALL_ENEMIES",
             "radius": 2,
@@ -9444,13 +9444,13 @@
           },
           {
             "kind": "SHIELD_FLAT",
-            "value": 141,
+            "value": 122,
             "duration": 4,
             "target": "SELF"
           }
         ],
         "vfxKey": "vfx_buff",
-        "description": "[반격 폭풍] 141 보호막을 얻고 주변 2칸 최대 4명에게 0.4초 간격으로 71 마법 피해 3회. 체력 피해의 15% 회복. 근거: 2014 ジャパンC(GI) 1위.",
+        "description": "[반격 폭풍] 122 보호막을 얻고 주변 2칸 최대 4명에게 0.4초 간격으로 61 마법 피해 3회. 체력 피해의 15% 회복. 근거: 2014 ジャパンC(GI) 1위.",
         "choreography": {
           "windup": 0.3,
           "recovery": 0.3,
@@ -9463,7 +9463,7 @@
           "motion": "CHANNEL"
         }
       },
-      "skillSignature": "d121ec21a69e0e78954556a960d5349d4984c2e567dee397ddf1003a0aac5676",
+      "skillSignature": "4729e8ab9b3b238717d7e857096662fe914528fdd4f72bada30b92a57de68fc5",
       "basicAttack": "근접 준비 → 당김 → 타격 → 회수",
       "skillPoseDraft": [
         "몸 중심에 기운 모음",
@@ -9547,8 +9547,8 @@
         "displayName": "빅투아르 피사 · 교차 파동 (2010 有馬記念(GI))",
         "template": "DASH_LINE",
         "baseValues": [
-          215,
-          239,
+          200,
+          223,
           31
         ],
         "starMultipliers": [
@@ -9567,7 +9567,7 @@
           },
           {
             "kind": "DAMAGE",
-            "value": 139,
+            "value": 129,
             "damageType": "PHYSICAL",
             "target": "CURRENT_TARGET",
             "shape": "LINE",
@@ -9576,7 +9576,7 @@
           },
           {
             "kind": "DAMAGE",
-            "value": 98,
+            "value": 92,
             "damageType": "MAGIC",
             "target": "CURRENT_TARGET",
             "shape": "LINE",
@@ -9586,7 +9586,7 @@
           }
         ],
         "vfxKey": "vfx_dash_nige",
-        "description": "[교차 파동] 돌진 후 직선 최대 4명에게 139 물리 피해, 0.45초 뒤 같은 방향으로 98 마법 파동. 근거: 2010 有馬記念(GI) 1위.",
+        "description": "[교차 파동] 돌진 후 직선 최대 4명에게 129 물리 피해, 0.45초 뒤 같은 방향으로 92 마법 파동. 근거: 2010 有馬記念(GI) 1위.",
         "choreography": {
           "windup": 0.45,
           "recovery": 0.3,
@@ -9599,7 +9599,7 @@
           "motion": "PULSE"
         }
       },
-      "skillSignature": "cb393a8d7b4206bbd49b2c173b089e16249e52d92ed6c23f2f811f6b74e20025",
+      "skillSignature": "b21b85740361f18811a905f924a2c10a9525523693c49b16a5ef956de488a8f1",
       "basicAttack": "근접 준비 → 당김 → 타격 → 회수",
       "skillPoseDraft": [
         "낮게 웅크린 출발",
@@ -9754,8 +9754,8 @@
         "displayName": "에프포리아 · 관통 돌파 (2021 有馬記念(GI))",
         "template": "DASH_LINE",
         "baseValues": [
-          198,
-          221,
+          213,
+          237,
           30
         ],
         "starMultipliers": [
@@ -9783,7 +9783,7 @@
           },
           {
             "kind": "DAMAGE",
-            "value": 203,
+            "value": 218,
             "damageType": "PHYSICAL",
             "target": "CURRENT_TARGET",
             "shape": "LINE",
@@ -9792,7 +9792,7 @@
           }
         ],
         "vfxKey": "vfx_dash_senko",
-        "description": "[관통 돌파] 돌진 후 직선 6칸의 최대 4명에게 방어력 20% 감소(4초)와 203 물리 피해. 근거: 2021 有馬記念(GI) 1위.",
+        "description": "[관통 돌파] 돌진 후 직선 6칸의 최대 4명에게 방어력 20% 감소(4초)와 218 물리 피해. 근거: 2021 有馬記念(GI) 1위.",
         "choreography": {
           "windup": 0.45,
           "recovery": 0.3,
@@ -9805,7 +9805,7 @@
           "motion": "STRIKE"
         }
       },
-      "skillSignature": "44d5cf68da2030b556beb151858a188e78fc863ab0cb22f6ca28798e391e491e",
+      "skillSignature": "34b35668f405f394815aa3a99e303a52b03cdce1bc48e46449a20daa62d6251f",
       "basicAttack": "근접 준비 → 당김 → 타격 → 회수",
       "skillPoseDraft": [
         "낮게 웅크린 출발",
@@ -9826,8 +9826,8 @@
         "displayName": "타이틀홀더 · 반격 폭풍 (2022 宝塚記念(GI))",
         "template": "AURA",
         "baseValues": [
-          214,
-          238,
+          199,
+          221,
           31
         ],
         "starMultipliers": [
@@ -9841,7 +9841,7 @@
         "effects": [
           {
             "kind": "DAMAGE",
-            "value": 70,
+            "value": 65,
             "damageType": "MAGIC",
             "target": "ALL_ENEMIES",
             "radius": 2,
@@ -9851,7 +9851,7 @@
           },
           {
             "kind": "DAMAGE",
-            "value": 70,
+            "value": 65,
             "damageType": "MAGIC",
             "target": "ALL_ENEMIES",
             "radius": 2,
@@ -9861,7 +9861,7 @@
           },
           {
             "kind": "DAMAGE",
-            "value": 70,
+            "value": 65,
             "damageType": "MAGIC",
             "target": "ALL_ENEMIES",
             "radius": 2,
@@ -9871,13 +9871,13 @@
           },
           {
             "kind": "SHIELD_FLAT",
-            "value": 140,
+            "value": 130,
             "duration": 4,
             "target": "SELF"
           }
         ],
         "vfxKey": "vfx_buff",
-        "description": "[반격 폭풍] 140 보호막을 얻고 주변 2칸 최대 4명에게 0.4초 간격으로 70 마법 피해 3회. 체력 피해의 15% 회복. 근거: 2022 宝塚記念(GI) 1위.",
+        "description": "[반격 폭풍] 130 보호막을 얻고 주변 2칸 최대 4명에게 0.4초 간격으로 65 마법 피해 3회. 체력 피해의 15% 회복. 근거: 2022 宝塚記念(GI) 1위.",
         "choreography": {
           "windup": 0.3,
           "recovery": 0.3,
@@ -9890,7 +9890,7 @@
           "motion": "CHANNEL"
         }
       },
-      "skillSignature": "bb9787f7f94ac66cf60dce3103cd72e20d8a97d559d105315d1ab20de2a2a801",
+      "skillSignature": "ba0aaf68f0034e5b39f3b34190b35e521619352c7440d8ab32c05f364d879512",
       "basicAttack": "근접 준비 → 당김 → 타격 → 회수",
       "skillPoseDraft": [
         "몸 중심에 기운 모음",
@@ -10063,8 +10063,8 @@
         "displayName": "맨하탄 카페 · 흡수 휩쓸기 (2001 有馬記念(GI))",
         "template": "DASH_LINE",
         "baseValues": [
-          178,
-          198,
+          192,
+          214,
           30
         ],
         "starMultipliers": [
@@ -10083,7 +10083,7 @@
           },
           {
             "kind": "DAMAGE",
-            "value": 160,
+            "value": 172,
             "damageType": "PHYSICAL",
             "target": "CURRENT_TARGET",
             "shape": "CONE",
@@ -10093,7 +10093,7 @@
           }
         ],
         "vfxKey": "vfx_dash_sashi",
-        "description": "[흡수 휩쓸기] 돌진 후 전방 3칸 부채꼴의 최대 4명에게 160 물리 피해. 실제 체력 피해의 25% 회복. 근거: 2001 有馬記念(GI) 1위.",
+        "description": "[흡수 휩쓸기] 돌진 후 전방 3칸 부채꼴의 최대 4명에게 172 물리 피해. 실제 체력 피해의 25% 회복. 근거: 2001 有馬記念(GI) 1위.",
         "choreography": {
           "windup": 0.45,
           "recovery": 0.3,
@@ -10106,7 +10106,7 @@
           "motion": "STRIKE"
         }
       },
-      "skillSignature": "c31ae5f24a59feec42f34218b24806f48f66159d04189b38a8053a726722a681",
+      "skillSignature": "afdbb3bf5feda7b64e2d6bf5c3f350ab340a0550b3d79e453d1ea43524471f80",
       "basicAttack": "근접 준비 → 당김 → 타격 → 회수",
       "skillPoseDraft": [
         "낮게 웅크린 출발",

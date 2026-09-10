@@ -1,0 +1,7 @@
+{
+  "mode": "built-in image_gen",
+  "prompt": "Create 4 chibi sprite animation poses for Tokai Teio matching this reference character. Transparent background. A 2 by 2 sprite sheet, only four full-body characters, no labels. Her skill is a rapid three-shot focus volley from her small gold-blue hand crossbow: 1 raise crossbow and aim; 2 step forward and fire small gold streak; 3 lean into shot with three short parallel gold-blue projectile streaks; 4 lower crossbow and recover. Preserve brown ponytail, white forelock, horse ears, blue-white racing costume, magenta ribbon and white boots. Real PNG cutouts with an alpha channel. Absolutely no checkerboard, no background design. Leave wide transparent gutters between poses and compact effects within each cell.",
+  "reference": "public/assets/motions/tokai_teio.png",
+  "referenceCommit": "ccd64939bf23acd699db25829b4f26b6b80d861f",
+  "skillSignature": "0f5c2e571d02a92a5462afabbac790e3581a42dc80cc377286bde7b5b8f3674b"
+}

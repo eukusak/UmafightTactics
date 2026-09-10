@@ -11,7 +11,7 @@ import { buildDraftOptions, draftOrder } from '../src/game/engine/rounds/draft';
 import { serializeMatch, parseSave, restoreDirector } from '../src/game/engine/save';
 import { ACTIVE_BY_COST, getUnitDef, ACTIVE_UNITS } from '../src/game/engine/roster';
 import { Rng } from '../src/game/engine/rng';
-import { DEFAULT_SEED } from '../src/game/engine/constants';
+import { DEFAULT_SEED, baseStageDamage, survivorDamage } from '../src/game/engine/constants';
 import type { MatchState } from '../src/game/engine/state';
 
 describe('round schedule', () => {
@@ -335,12 +335,17 @@ describe('ghost boards', () => {
     const before = new Map(state.players.map((p) => [p.id, p.hp]));
     const res = d.resolveRound();
     const ghostOutcomes = res.outcomes.filter((o) => o.isGhost);
-    for (const o of ghostOutcomes) {
-      // The ghost's owner takes no damage from a fight it did not choose.
-      if (o.winnerId === o.attackerId) {
-        expect(state.players.find((p) => p.id === o.defenderId)!.hp)
-          .toBe(before.get(o.defenderId));
-      }
+    expect(ghostOutcomes).toHaveLength(1);
+    for (const ghost of ghostOutcomes) {
+      const owner = ghost.defenderId;
+      // The owner still participates in a separate live match and can lose HP there.
+      const live = res.outcomes.find(o => !o.isGhost && (o.attackerId === owner || o.defenderId === owner))!;
+      expect(live).toBeDefined();
+      const ownDamage = live.winnerId === owner ? 0 : live.winnerId === null
+        ? 1 + survivorDamage(live.attackerId === owner ? live.survivorsWinner : live.survivorsLoser)
+        : baseStageDamage(state.stage) + survivorDamage(live.survivorsWinner);
+      expect(res.damage[owner] ?? 0).toBe(ownDamage);
+      expect(state.players.find(p => p.id === owner)!.hp).toBe(before.get(owner)! - ownDamage);
     }
   });
 });

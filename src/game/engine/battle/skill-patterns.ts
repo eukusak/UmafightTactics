@@ -18,6 +18,8 @@ type Profile = typeof profiles.units.special_week;
 const roster = profiles.units as Record<string, Profile>;
 const races = evidence.units as Record<string, { name: string; representative: { race_date: string; race_name: string; finish_rank: number } }>;
 
+export const authoredBodyFamily = (id: string): SkillTemplate | undefined => roster[id]?.bodyFamily as SkillTemplate | undefined;
+
 export function buildTacticalSkill(unitId: string, base: SkillDef): SkillDef {
   const p = roster[unitId];
   if (!p) throw new Error(`Missing authored skill: ${unitId}`);

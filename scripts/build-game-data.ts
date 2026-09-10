@@ -1,3 +1,4 @@
+import styleCorrections from '../src/data/manual/running-style-corrections.json';
 import traitCorrections from '../src/data/manual/trait-corrections.json';
 import { buildSeasons } from '../src/game/engine/seasons/catalog';
 import { writeSeasonIcons } from './season-icons';
@@ -308,6 +309,8 @@ const STYLE_FROM_APT: Array<[keyof Horse['aptitudes']['style'], RunStyle]> = [
 
 /** Spec §11.1 — run style: trusted primary style, then archetype, then aptitude, then senko. */
 function styleOf(h: Horse): RunStyle {
+  const correction = Object.values(styleCorrections.units).find(c => c.horseId === h.id);
+  if (correction) return correction.to as RunStyle;
   const conf = h.dataConfidence.styleConfidence;
   const primary = h.historySummary.primaryStyle;
   if (primary && (conf === 'HIGH' || conf === 'MEDIUM') && STYLE_FROM_PRIMARY[primary]) {

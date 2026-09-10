@@ -21,7 +21,7 @@ import {
   type CombatUnit, type Team,
 } from './combat-unit';
 import {
-  accumulateAura, applyEffect, isAuraKind, resolveTargets, triggerHolds, procDamage, resolveEffectTargets,
+  accumulateAura, applyEffect, isAuraKind, isContinuousAura, resolveTargets, triggerHolds, procDamage, resolveEffectTargets,
   type EffectContext, type TriggerEvent,
 } from './effects';
 import {
@@ -891,7 +891,7 @@ export class BattleEngine {
     const list = this.bindings.get(unit.id) ?? [];
     for (let i = 0; i < list.length; i += 1) {
       const b = list[i];
-      if (isAuraKind(b.effect.kind)) continue;
+      if (isAuraKind(b.effect.kind) && isContinuousAura(b.effect)) continue;
       const gate = b.effect.trigger;
       if (event === 'COMBAT_START') {
         // At combat start, run untriggered passives plus explicit COMBAT_START effects.

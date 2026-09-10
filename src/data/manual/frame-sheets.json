@@ -73,10 +73,10 @@
     "frameHeight": 128,
     "columns": 4,
     "rows": 6,
-    "source": "docs/art-source/motions/production-144/silence_suzuka/packing.json",
+    "source": "docs/art-source/motions/skill-revisions-2026-09-10/silence_suzuka/packing.json",
     "skillId": "skill_silence_suzuka",
     "skillSignature": "258f5e5902e8e8aff4e81b7be37da56203091f0b39de38cf04bdd3dc5facbf2d",
-    "skillReview": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
+    "skillReview": "민트 에너지 준비 → 양손 전개 → 빔 유지 → 회수. CHANNEL 발동 구간에서 세 번째 프레임을 유지한다.",
     "skillReleaseFrame": 2,
     "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
   },
@@ -86,10 +86,10 @@
     "frameHeight": 128,
     "columns": 4,
     "rows": 6,
-    "source": "docs/art-source/motions/production-144/tokai_teio/packing.json",
+    "source": "docs/art-source/motions/skill-revisions-2026-09-10/tokai_teio/packing.json",
     "skillId": "skill_tokai_teio",
     "skillSignature": "0f5c2e571d02a92a5462afabbac790e3581a42dc80cc377286bde7b5b8f3674b",
-    "skillReview": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
+    "skillReview": "조준 → 첫 발 → 세 갈래 연사 → 석궁 회수. focus_three의 반복 발사에 대응.",
     "skillReleaseFrame": 2,
     "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
   },
@@ -125,10 +125,10 @@
     "frameHeight": 128,
     "columns": 4,
     "rows": 6,
-    "source": "docs/art-source/motions/production-144/oguri_cap/packing.json",
+    "source": "docs/art-source/motions/skill-revisions-2026-09-10/oguri_cap/packing.json",
     "skillId": "skill_oguri_cap",
     "skillSignature": "65eefb83f4a32b62a0ab4d17362ada84bbb1d62111fd001703cdea306420e8f9",
-    "skillReview": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
+    "skillReview": "별 충전 → 머리 위 준비 → 하강 혜성 발사 → 회수. comet_fall의 지연 낙하와 일치.",
     "skillReleaseFrame": 2,
     "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
   },
@@ -140,7 +140,7 @@
     "rows": 6,
     "source": "docs/art-source/motions/production-144/gold_ship/packing.json",
     "skillId": "skill_gold_ship",
-    "skillSignature": "26c93acf5a937888a1e42aa5ca6f232da0c2bec97a383ad96835addd93a0b2f2",
+    "skillSignature": "4564de25f07442456ea4abfca60d105aa4bf6a310720c7ba2a3b169b60423be6",
     "skillReview": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
     "skillReleaseFrame": 2,
     "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
@@ -296,7 +296,7 @@
     "rows": 6,
     "source": "docs/art-source/motions/production-144/agnes_digital/packing.json",
     "skillId": "skill_agnes_digital",
-    "skillSignature": "abf47616521891467f9192adb47820af54479d113d363b076ef7fe8d53e58cd4",
+    "skillSignature": "98807291639a679acce31516e0bce9b9236831be08e183a7e8f86a6f95031ea6",
     "skillReview": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
     "skillReleaseFrame": 2,
     "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
@@ -424,10 +424,10 @@
     "frameHeight": 128,
     "columns": 4,
     "rows": 6,
-    "source": "docs/art-source/motions/production-144/rice_shower/packing.json",
+    "source": "docs/art-source/motions/skill-revisions-2026-09-10/rice_shower/packing.json",
     "skillId": "skill_rice_shower",
     "skillSignature": "35630d85727b1a1d199cbb16e89debcc4231aaa86c4a665dc874b0661398e6ff",
-    "skillReview": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
+    "skillReview": "장미 준비 → 손을 뻗어 흡수 → 가슴으로 회수하며 방어막 표현 → 경계 자세. iron_drain의 피해 감소와 반복 흡수에 대응하며 방어막 그림은 피해 감소를 나타내고 별도 보호막 수치를 추가하지 않는다.",
     "skillReleaseFrame": 2,
     "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
   },
@@ -582,7 +582,7 @@
     "rows": 6,
     "source": "docs/art-source/motions/production-144/seeking_the_pearl/packing.json",
     "skillId": "skill_seeking_the_pearl",
-    "skillSignature": "5a9ec4567bb69cad1afd67d3fe498252a0373edb9c07acdfc621aff0708a95ad",
+    "skillSignature": "5c048797cb82543d1591fa22cf9bcc164a57fee87e5d5330f4905e8fc2f00552",
     "skillReview": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
     "skillReleaseFrame": 2,
     "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
@@ -699,7 +699,7 @@
     "rows": 6,
     "source": "docs/art-source/motions/production-144/nishino_flower/packing.json",
     "skillId": "skill_nishino_flower",
-    "skillSignature": "7e495e1c473196528f39787e907d8f002bd98f38e8748840ce3ebb72cae727e0",
+    "skillSignature": "417cf339f01df38799ed22055357ed32c1d88d38e85b1672a89cfad993505cd3",
     "skillReview": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
     "skillReleaseFrame": 2,
     "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
@@ -829,7 +829,7 @@
     "rows": 6,
     "source": "docs/art-source/motions/production-144/king_halo/packing.json",
     "skillId": "skill_king_halo",
-    "skillSignature": "e4087c8fe8c012e69eb07a66a26c4fed1030b8bb14328d40ce6d5fd8529c99a1",
+    "skillSignature": "389000e943964bd69efef095eb717c41e56e7937161e608d9bba3fdd4ea38106",
     "skillReview": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
     "skillReleaseFrame": 2,
     "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
@@ -868,7 +868,7 @@
     "rows": 6,
     "source": "docs/art-source/motions/production-144/manhattan_cafe/packing.json",
     "skillId": "skill_manhattan_cafe",
-    "skillSignature": "c31ae5f24a59feec42f34218b24806f48f66159d04189b38a8053a726722a681",
+    "skillSignature": "afdbb3bf5feda7b64e2d6bf5c3f350ab340a0550b3d79e453d1ea43524471f80",
     "skillReview": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
     "skillReleaseFrame": 2,
     "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
@@ -907,7 +907,7 @@
     "rows": 6,
     "source": "docs/art-source/motions/production-144/titleholder/packing.json",
     "skillId": "skill_titleholder",
-    "skillSignature": "bb9787f7f94ac66cf60dce3103cd72e20d8a97d559d105315d1ab20de2a2a801",
+    "skillSignature": "ba0aaf68f0034e5b39f3b34190b35e521619352c7440d8ab32c05f364d879512",
     "skillReview": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
     "skillReleaseFrame": 2,
     "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
@@ -920,7 +920,7 @@
     "rows": 6,
     "source": "docs/art-source/motions/production-144/efforia/packing.json",
     "skillId": "skill_efforia",
-    "skillSignature": "44d5cf68da2030b556beb151858a188e78fc863ab0cb22f6ca28798e391e491e",
+    "skillSignature": "34b35668f405f394815aa3a99e303a52b03cdce1bc48e46449a20daa62d6251f",
     "skillReview": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
     "skillReleaseFrame": 2,
     "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
@@ -1141,7 +1141,7 @@
     "rows": 6,
     "source": "docs/art-source/motions/production-144/furioso/packing.json",
     "skillId": "skill_furioso",
-    "skillSignature": "26d5debf09fcbb810311c0b49e7d585c54998ec31bce678670cfd71176569258",
+    "skillSignature": "68a572a5e07bf63dd3423088de6fb45e7468574335fe70cdbbbab73d30c3f112",
     "skillReview": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
     "skillReleaseFrame": 2,
     "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
@@ -1167,7 +1167,7 @@
     "rows": 6,
     "source": "docs/art-source/motions/production-144/north_flight/packing.json",
     "skillId": "skill_north_flight",
-    "skillSignature": "c100e5da99b04775c844cc4125e1e3e2286e0520515bee5cd343eaf69be35f4c",
+    "skillSignature": "a68bb8fa484c2f6481620680d50a9831f834f2c7256e7d2260b5ac460f23730c",
     "skillReview": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
     "skillReleaseFrame": 2,
     "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
@@ -1219,7 +1219,7 @@
     "rows": 6,
     "source": "docs/art-source/motions/production-144/victoire_pisa/packing.json",
     "skillId": "skill_victoire_pisa",
-    "skillSignature": "cb393a8d7b4206bbd49b2c173b089e16249e52d92ed6c23f2f811f6b74e20025",
+    "skillSignature": "b21b85740361f18811a905f924a2c10a9525523693c49b16a5ef956de488a8f1",
     "skillReview": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
     "skillReleaseFrame": 2,
     "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
@@ -1245,7 +1245,7 @@
     "rows": 6,
     "source": "docs/art-source/motions/production-144/epiphaneia/packing.json",
     "skillId": "skill_epiphaneia",
-    "skillSignature": "d121ec21a69e0e78954556a960d5349d4984c2e567dee397ddf1003a0aac5676",
+    "skillSignature": "4729e8ab9b3b238717d7e857096662fe914528fdd4f72bada30b92a57de68fc5",
     "skillReview": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
     "skillReleaseFrame": 2,
     "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
@@ -1336,7 +1336,7 @@
     "rows": 6,
     "source": "docs/art-source/motions/production-144/mejiro_ramonu/packing.json",
     "skillId": "skill_mejiro_ramonu",
-    "skillSignature": "016d05a2d99effee64a014bac2ba6fd524324cfad9023f1bc723b904b44fb004",
+    "skillSignature": "2be97b935ca963fc961ea6706d22bcb735de58d17180ae4289c57156aa329541",
     "skillReview": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
     "skillReleaseFrame": 2,
     "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
@@ -1375,7 +1375,7 @@
     "rows": 6,
     "source": "docs/art-source/motions/production-144/cheval_grand/packing.json",
     "skillId": "skill_cheval_grand",
-    "skillSignature": "406aea05798d167323fcb2ff11b73abecb2892601b3fb1770c83f20e07e88f84",
+    "skillSignature": "884d9abd3b29d529ca873d4ab229c7c2d83fb7e02010b672aceda4f902615b6a",
     "skillReview": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
     "skillReleaseFrame": 2,
     "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
@@ -1752,7 +1752,7 @@
     "rows": 6,
     "source": "docs/art-source/motions/production-144/bubble_gum_fellow/packing.json",
     "skillId": "skill_bubble_gum_fellow",
-    "skillSignature": "7282d131e5c70e870dcb598e2cece534dc53a701203c22a42e78e99afd937771",
+    "skillSignature": "f0340343990d3a6793511ebf45bcf0089bdb87a7df500c129c2c52a7569fb538",
     "skillReview": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
     "skillReleaseFrame": 2,
     "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"

@@ -33,6 +33,15 @@ describe('generated frame animation playback', () => {
       }
       expect(createHash('sha256').update(png).digest('hex')).toBe(packing.runtimeSha256);
       expect(packing.frames).toHaveLength(24);
+      if (packing.skillRevision) {
+        const revision = packing.skillRevision;
+        expect(revision.beforeFrames).toHaveLength(24);
+        expect(revision.afterFrames).toHaveLength(24);
+        expect(revision.changedFrames).toEqual([12, 13, 14, 15]);
+        for (let frame = 0; frame < 24; frame++) {
+          expect(revision.beforeFrames[frame] !== revision.afterFrames[frame]).toBe(frame >= 12 && frame <= 15);
+        }
+      }
       for (const frame of packing.frames) {
         expect(existsSync(frame.source)).toBe(true);
         expect(createHash('sha256').update(readFileSync(frame.source)).digest('hex')).toBe(frame.sourceSha256);

@@ -1,0 +1,506 @@
+{
+  "format": "uft-baked-frames-v1",
+  "scale": 0.41106719367588934,
+  "anchor": [
+    64,
+    110
+  ],
+  "runtimeSha256": "7827d810db6f55863290ce0a2703b194fa09ec24fae2fd1c32a17e9fb7b2dbbc",
+  "frames": [
+    {
+      "frame": 0,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/production-144/oguri_cap/alpha.png",
+      "sourceSha256": "103e6c76bcb1fc3fd66376394f8fd1d46957be2315b3dd8e4ddf3f19c0024a44",
+      "crop": [
+        34,
+        14,
+        193,
+        260
+      ],
+      "destination": [
+        31,
+        9,
+        65,
+        101
+      ]
+    },
+    {
+      "frame": 1,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/production-144/oguri_cap/alpha.png",
+      "sourceSha256": "103e6c76bcb1fc3fd66376394f8fd1d46957be2315b3dd8e4ddf3f19c0024a44",
+      "crop": [
+        292,
+        15,
+        449,
+        260
+      ],
+      "destination": [
+        159,
+        9,
+        65,
+        101
+      ]
+    },
+    {
+      "frame": 2,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/production-144/oguri_cap/alpha.png",
+      "sourceSha256": "103e6c76bcb1fc3fd66376394f8fd1d46957be2315b3dd8e4ddf3f19c0024a44",
+      "crop": [
+        547,
+        14,
+        703,
+        260
+      ],
+      "destination": [
+        288,
+        9,
+        64,
+        101
+      ]
+    },
+    {
+      "frame": 3,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/production-144/oguri_cap/alpha.png",
+      "sourceSha256": "103e6c76bcb1fc3fd66376394f8fd1d46957be2315b3dd8e4ddf3f19c0024a44",
+      "crop": [
+        808,
+        14,
+        963,
+        260
+      ],
+      "destination": [
+        416,
+        9,
+        64,
+        101
+      ]
+    },
+    {
+      "frame": 4,
+      "sourceFrame": 4,
+      "source": "docs/art-source/motions/production-144/oguri_cap/alpha.png",
+      "sourceSha256": "103e6c76bcb1fc3fd66376394f8fd1d46957be2315b3dd8e4ddf3f19c0024a44",
+      "crop": [
+        25,
+        284,
+        221,
+        514
+      ],
+      "destination": [
+        23,
+        143,
+        81,
+        95
+      ]
+    },
+    {
+      "frame": 5,
+      "sourceFrame": 5,
+      "source": "docs/art-source/motions/production-144/oguri_cap/alpha.png",
+      "sourceSha256": "103e6c76bcb1fc3fd66376394f8fd1d46957be2315b3dd8e4ddf3f19c0024a44",
+      "crop": [
+        279,
+        279,
+        478,
+        514
+      ],
+      "destination": [
+        151,
+        141,
+        82,
+        97
+      ]
+    },
+    {
+      "frame": 6,
+      "sourceFrame": 6,
+      "source": "docs/art-source/motions/production-144/oguri_cap/alpha.png",
+      "sourceSha256": "103e6c76bcb1fc3fd66376394f8fd1d46957be2315b3dd8e4ddf3f19c0024a44",
+      "crop": [
+        552,
+        287,
+        743,
+        514
+      ],
+      "destination": [
+        280,
+        145,
+        79,
+        93
+      ]
+    },
+    {
+      "frame": 7,
+      "sourceFrame": 7,
+      "source": "docs/art-source/motions/production-144/oguri_cap/alpha.png",
+      "sourceSha256": "103e6c76bcb1fc3fd66376394f8fd1d46957be2315b3dd8e4ddf3f19c0024a44",
+      "crop": [
+        801,
+        282,
+        995,
+        514
+      ],
+      "destination": [
+        408,
+        143,
+        80,
+        95
+      ]
+    },
+    {
+      "frame": 8,
+      "sourceFrame": 8,
+      "source": "docs/art-source/motions/production-144/oguri_cap/alpha.png",
+      "sourceSha256": "103e6c76bcb1fc3fd66376394f8fd1d46957be2315b3dd8e4ddf3f19c0024a44",
+      "crop": [
+        31,
+        524,
+        226,
+        763
+      ],
+      "destination": [
+        24,
+        268,
+        80,
+        98
+      ]
+    },
+    {
+      "frame": 9,
+      "sourceFrame": 9,
+      "source": "docs/art-source/motions/production-144/oguri_cap/alpha.png",
+      "sourceSha256": "103e6c76bcb1fc3fd66376394f8fd1d46957be2315b3dd8e4ddf3f19c0024a44",
+      "crop": [
+        283,
+        527,
+        448,
+        763
+      ],
+      "destination": [
+        158,
+        269,
+        68,
+        97
+      ]
+    },
+    {
+      "frame": 10,
+      "sourceFrame": 10,
+      "source": "docs/art-source/motions/production-144/oguri_cap/alpha.png",
+      "sourceSha256": "103e6c76bcb1fc3fd66376394f8fd1d46957be2315b3dd8e4ddf3f19c0024a44",
+      "crop": [
+        526,
+        532,
+        781,
+        765
+      ],
+      "destination": [
+        267,
+        270,
+        105,
+        96
+      ]
+    },
+    {
+      "frame": 11,
+      "sourceFrame": 11,
+      "source": "docs/art-source/motions/production-144/oguri_cap/alpha.png",
+      "sourceSha256": "103e6c76bcb1fc3fd66376394f8fd1d46957be2315b3dd8e4ddf3f19c0024a44",
+      "crop": [
+        806,
+        530,
+        972,
+        766
+      ],
+      "destination": [
+        414,
+        269,
+        68,
+        97
+      ]
+    },
+    {
+      "frame": 12,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/skill-revisions-2026-09-10/oguri_cap/generated.png",
+      "sourceSha256": "43b20285f6489bef44280dfcf49159d28a66e2e81d3d953d01628882c69154ad",
+      "crop": [
+        111,
+        63,
+        467,
+        572
+      ],
+      "destination": [
+        27,
+        390,
+        73,
+        104
+      ]
+    },
+    {
+      "frame": 13,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/skill-revisions-2026-09-10/oguri_cap/generated.png",
+      "sourceSha256": "43b20285f6489bef44280dfcf49159d28a66e2e81d3d953d01628882c69154ad",
+      "crop": [
+        792,
+        70,
+        1164,
+        575
+      ],
+      "destination": [
+        154,
+        391,
+        76,
+        103
+      ]
+    },
+    {
+      "frame": 14,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/skill-revisions-2026-09-10/oguri_cap/generated.png",
+      "sourceSha256": "43b20285f6489bef44280dfcf49159d28a66e2e81d3d953d01628882c69154ad",
+      "crop": [
+        92,
+        655,
+        604,
+        1092
+      ],
+      "destination": [
+        267,
+        405,
+        105,
+        89
+      ]
+    },
+    {
+      "frame": 15,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/skill-revisions-2026-09-10/oguri_cap/generated.png",
+      "sourceSha256": "43b20285f6489bef44280dfcf49159d28a66e2e81d3d953d01628882c69154ad",
+      "crop": [
+        810,
+        646,
+        1192,
+        1110
+      ],
+      "destination": [
+        409,
+        399,
+        78,
+        95
+      ]
+    },
+    {
+      "frame": 16,
+      "sourceFrame": 16,
+      "source": "docs/art-source/motions/production-144/oguri_cap/alpha.png",
+      "sourceSha256": "103e6c76bcb1fc3fd66376394f8fd1d46957be2315b3dd8e4ddf3f19c0024a44",
+      "crop": [
+        44,
+        1047,
+        214,
+        1274
+      ],
+      "destination": [
+        29,
+        529,
+        70,
+        93
+      ]
+    },
+    {
+      "frame": 17,
+      "sourceFrame": 17,
+      "source": "docs/art-source/motions/production-144/oguri_cap/alpha.png",
+      "sourceSha256": "103e6c76bcb1fc3fd66376394f8fd1d46957be2315b3dd8e4ddf3f19c0024a44",
+      "crop": [
+        299,
+        1080,
+        467,
+        1271
+      ],
+      "destination": [
+        157,
+        543,
+        69,
+        79
+      ]
+    },
+    {
+      "frame": 18,
+      "sourceFrame": 18,
+      "source": "docs/art-source/motions/production-144/oguri_cap/alpha.png",
+      "sourceSha256": "103e6c76bcb1fc3fd66376394f8fd1d46957be2315b3dd8e4ddf3f19c0024a44",
+      "crop": [
+        534,
+        1117,
+        716,
+        1271
+      ],
+      "destination": [
+        282,
+        559,
+        75,
+        63
+      ]
+    },
+    {
+      "frame": 19,
+      "sourceFrame": 19,
+      "source": "docs/art-source/motions/production-144/oguri_cap/alpha.png",
+      "sourceSha256": "103e6c76bcb1fc3fd66376394f8fd1d46957be2315b3dd8e4ddf3f19c0024a44",
+      "crop": [
+        775,
+        1173,
+        1004,
+        1277
+      ],
+      "destination": [
+        401,
+        579,
+        94,
+        43
+      ]
+    },
+    {
+      "frame": 20,
+      "sourceFrame": 20,
+      "source": "docs/art-source/motions/production-144/oguri_cap/alpha.png",
+      "sourceSha256": "103e6c76bcb1fc3fd66376394f8fd1d46957be2315b3dd8e4ddf3f19c0024a44",
+      "crop": [
+        36,
+        1280,
+        206,
+        1527
+      ],
+      "destination": [
+        29,
+        648,
+        70,
+        102
+      ]
+    },
+    {
+      "frame": 21,
+      "sourceFrame": 21,
+      "source": "docs/art-source/motions/production-144/oguri_cap/alpha.png",
+      "sourceSha256": "103e6c76bcb1fc3fd66376394f8fd1d46957be2315b3dd8e4ddf3f19c0024a44",
+      "crop": [
+        300,
+        1288,
+        466,
+        1514
+      ],
+      "destination": [
+        158,
+        657,
+        68,
+        93
+      ]
+    },
+    {
+      "frame": 22,
+      "sourceFrame": 22,
+      "source": "docs/art-source/motions/production-144/oguri_cap/alpha.png",
+      "sourceSha256": "103e6c76bcb1fc3fd66376394f8fd1d46957be2315b3dd8e4ddf3f19c0024a44",
+      "crop": [
+        547,
+        1284,
+        707,
+        1529
+      ],
+      "destination": [
+        287,
+        649,
+        66,
+        101
+      ]
+    },
+    {
+      "frame": 23,
+      "sourceFrame": 23,
+      "source": "docs/art-source/motions/production-144/oguri_cap/alpha.png",
+      "sourceSha256": "103e6c76bcb1fc3fd66376394f8fd1d46957be2315b3dd8e4ddf3f19c0024a44",
+      "crop": [
+        802,
+        1292,
+        968,
+        1529
+      ],
+      "destination": [
+        414,
+        653,
+        68,
+        97
+      ]
+    }
+  ],
+  "skillRevision": {
+    "scale": 0.2043222003929273,
+    "review": "docs/art-source/motions/skill-revisions-2026-09-10/oguri_cap/review.json",
+    "beforeFrames": [
+      "bd46843ca0342afa0cbd3cd1399115c05eabb87aaa5e5e15679198d1da678c2c",
+      "685b80a52dd2936eddb294d154823bdc8ae7fed24e92a55a6e55ef94a3fcfb67",
+      "c6774f87aad676f6eaf8fe9616d9d6dbbb897ea48ca0e3021c43aa58a09a8093",
+      "f2fd1c538ee5e9764ac5c832f812e91a8eb8e1a20f3f89609a93634b7b8cc1a1",
+      "bc568c718bcfa58b698972d5f6cd72b7c7ef6e0fb6deae29feaaeaf78fc5a3f4",
+      "47221904f868a5b474a9c721b53fd344940bb4b15d21793c6a2bd8d04f34d9c8",
+      "2bb2c28728d94be9f8e5bfcb159e058a85fa15aef3de154d6be19eb8720e4d30",
+      "e483ce81596a255080e2e8b882e940c4f5dfcfe266cb2815530655afba7555e9",
+      "533796122966716ecf8a6af1ee67c8f61d8ea66fad01a6cae885e81345b78800",
+      "b5965b52cf9782a443164dc07fb516be3b0e9c228293d8938052d42af8511607",
+      "d0574b239f0cd0b45f8e676fef293edcee286dfebf4f6d4c73ac890fb9c73c10",
+      "6c2aa4821375b79aee1b10d5a5603c8296e7fee6fe146330fec773cc7ce9442c",
+      "cbf9bd469c2ed750caa296c391af314d92fd59b262246d4b620d0f547dec7280",
+      "34ed5a12c40339a4ff2df409afdd8362ac19599ab5ef8300f0af337c4a75fad7",
+      "5d4be433f8c3339998113ac64d877494aea1dcf49b53feaf3fffc2790bbfba4c",
+      "82117d3bf0e29b8ea0c068bbab1a09692429bd7e02cd3120fe28c09fff81d307",
+      "d7e92e8d62df65ad592d1f920a9140c64e8d23e640264f0bca56b6f2631066d7",
+      "9bed74e45cf981d96a91f8dcc57d718074e01bd056afd205fff01f0d15419b94",
+      "0fe61884a8d71d693c25600e2107567a37dc58bf2a4a3217c25ebf520c0c024a",
+      "de9484801a86c47423467986c48c7672db2224da2677e579ead474b05c3b17ba",
+      "5cb797bb6525858626255b9d52a845642a842003348e6bddb31b1e5c1433db1b",
+      "21f0aceb13828093124dbd97cf4e533d955033bceac6eb395c5238f9f35f0238",
+      "b1efd4f3448819a9caee095366bb9f830db37ed47efb8a7725bd5343d3e7c22f",
+      "7939be5393f19a67491f18080510859f775fa01d2a2acf2f7dfc7ef439fc73e9"
+    ],
+    "afterFrames": [
+      "bd46843ca0342afa0cbd3cd1399115c05eabb87aaa5e5e15679198d1da678c2c",
+      "685b80a52dd2936eddb294d154823bdc8ae7fed24e92a55a6e55ef94a3fcfb67",
+      "c6774f87aad676f6eaf8fe9616d9d6dbbb897ea48ca0e3021c43aa58a09a8093",
+      "f2fd1c538ee5e9764ac5c832f812e91a8eb8e1a20f3f89609a93634b7b8cc1a1",
+      "bc568c718bcfa58b698972d5f6cd72b7c7ef6e0fb6deae29feaaeaf78fc5a3f4",
+      "47221904f868a5b474a9c721b53fd344940bb4b15d21793c6a2bd8d04f34d9c8",
+      "2bb2c28728d94be9f8e5bfcb159e058a85fa15aef3de154d6be19eb8720e4d30",
+      "e483ce81596a255080e2e8b882e940c4f5dfcfe266cb2815530655afba7555e9",
+      "533796122966716ecf8a6af1ee67c8f61d8ea66fad01a6cae885e81345b78800",
+      "b5965b52cf9782a443164dc07fb516be3b0e9c228293d8938052d42af8511607",
+      "d0574b239f0cd0b45f8e676fef293edcee286dfebf4f6d4c73ac890fb9c73c10",
+      "6c2aa4821375b79aee1b10d5a5603c8296e7fee6fe146330fec773cc7ce9442c",
+      "584c6ab240f8cd8b938b95b87a6dd1033f8c3a8a06ee8ee43d2b2b6c9a4e3369",
+      "0ea3b3d18eae091eae779fa38e3fdfcd62fcb56b5e011eb9f5a9920a13be36c9",
+      "a0d01bfd05e6cfe47ab702b670d1d65c9cee01a1aa4f705bfb2855db8cbb301d",
+      "033749276f1ebba88318a827aacd9e9d94895227d9e541fbf8d499f9f365159c",
+      "d7e92e8d62df65ad592d1f920a9140c64e8d23e640264f0bca56b6f2631066d7",
+      "9bed74e45cf981d96a91f8dcc57d718074e01bd056afd205fff01f0d15419b94",
+      "0fe61884a8d71d693c25600e2107567a37dc58bf2a4a3217c25ebf520c0c024a",
+      "de9484801a86c47423467986c48c7672db2224da2677e579ead474b05c3b17ba",
+      "5cb797bb6525858626255b9d52a845642a842003348e6bddb31b1e5c1433db1b",
+      "21f0aceb13828093124dbd97cf4e533d955033bceac6eb395c5238f9f35f0238",
+      "b1efd4f3448819a9caee095366bb9f830db37ed47efb8a7725bd5343d3e7c22f",
+      "7939be5393f19a67491f18080510859f775fa01d2a2acf2f7dfc7ef439fc73e9"
+    ],
+    "unchangedFrames": 20,
+    "changedFrames": [
+      12,
+      13,
+      14,
+      15
+    ]
+  }
+}

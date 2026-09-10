@@ -1,0 +1,101 @@
+{
+  "source": "running-style-evidence.json",
+  "units": {
+    "gold_ship": {
+      "horseId": "H-2009102739",
+      "from": "sashi",
+      "to": "oikomi",
+      "support": 0.667,
+      "starts": 27,
+      "reason": "초반 두 통과 지점의 위치 분포를 근거로 교정. 경기별 전술 변동은 유지."
+    },
+    "taiki_shuttle": {
+      "horseId": "H-1994109686",
+      "from": "nige",
+      "to": "senko",
+      "support": 0.917,
+      "starts": 12,
+      "reason": "초반 두 통과 지점의 위치 분포를 근거로 교정. 경기별 전술 변동은 유지."
+    },
+    "biwa_hayahide": {
+      "horseId": "H-1990103355",
+      "from": "nige",
+      "to": "senko",
+      "support": 0.75,
+      "starts": 16,
+      "reason": "초반 두 통과 지점의 위치 분포를 근거로 교정. 경기별 전술 변동은 유지."
+    },
+    "curren_chan": {
+      "horseId": "H-2007102807",
+      "from": "nige",
+      "to": "senko",
+      "support": 0.75,
+      "starts": 16,
+      "reason": "초반 두 통과 지점의 위치 분포를 근거로 교정. 경기별 전술 변동은 유지."
+    },
+    "nishino_flower": {
+      "horseId": "H-1989107262",
+      "from": "nige",
+      "to": "senko",
+      "support": 0.688,
+      "starts": 16,
+      "reason": "초반 두 통과 지점의 위치 분포를 근거로 교정. 경기별 전술 변동은 유지."
+    },
+    "mejiro_ardan": {
+      "horseId": "H-1985103406",
+      "from": "nige",
+      "to": "senko",
+      "support": 0.714,
+      "starts": 14,
+      "reason": "초반 두 통과 지점의 위치 분포를 근거로 교정. 경기별 전술 변동은 유지."
+    },
+    "north_flight": {
+      "horseId": "H-1990100908",
+      "from": "nige",
+      "to": "senko",
+      "support": 0.727,
+      "starts": 11,
+      "reason": "초반 두 통과 지점의 위치 분포를 근거로 교정. 경기별 전술 변동은 유지."
+    },
+    "hokko_tarumae": {
+      "horseId": "H-2009100921",
+      "from": "nige",
+      "to": "senko",
+      "support": 0.833,
+      "starts": 36,
+      "reason": "초반 두 통과 지점의 위치 분포를 근거로 교정. 경기별 전술 변동은 유지."
+    },
+    "daring_heart": {
+      "horseId": "H-2002100600",
+      "from": "nige",
+      "to": "senko",
+      "support": 0.923,
+      "starts": 26,
+      "reason": "초반 두 통과 지점의 위치 분포를 근거로 교정. 경기별 전술 변동은 유지."
+    },
+    "gentildonna": {
+      "horseId": "H-2009106253",
+      "from": "nige",
+      "to": "senko",
+      "support": 0.647,
+      "starts": 17,
+      "reason": "초반 두 통과 지점의 위치 분포를 근거로 교정. 경기별 전술 변동은 유지."
+    },
+    "believe": {
+      "horseId": "H-1998101038",
+      "from": "nige",
+      "to": "senko",
+      "support": 0.667,
+      "starts": 27,
+      "reason": "초반 두 통과 지점의 위치 분포를 근거로 교정. 경기별 전술 변동은 유지."
+    },
+    "rhein_kraft": {
+      "horseId": "H-2002100959",
+      "from": "nige",
+      "to": "senko",
+      "support": 0.692,
+      "starts": 13,
+      "reason": "초반 두 통과 지점의 위치 분포를 근거로 교정. 경기별 전술 변동은 유지."
+    }
+  }
+}
