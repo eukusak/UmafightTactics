@@ -20,6 +20,17 @@ export function canEquip(unit: UnitInstance, itemId: string): { ok: boolean; rea
   const item = getItem(itemId);
   if (item.tactician) return { ok: false, reason: 'TACTICIAN_ITEM' };
 
+  // Validate the finished item against the remaining equipment, not the incoming
+  // component: gloves use three slots and emblems still obey trait restrictions.
+  if (item.isComponent) {
+    const partnerIdx = unit.items.findIndex((id) => getItem(id).isComponent && combine(id, itemId));
+    if (partnerIdx >= 0) {
+      const resultId = combine(unit.items[partnerIdx], itemId)!;
+      if (getItem(resultId).tactician) return { ok: true };
+      return canEquip({ ...unit, items: unit.items.filter((_, i) => i !== partnerIdx) }, resultId);
+    }
+  }
+
   // An emblem is refused when the unit already has that trait natively.
   if (item.grantsTrait) {
     const def = getUnitDef(unit.unitDefId);
@@ -31,11 +42,6 @@ export function canEquip(unit: UnitInstance, itemId: string): { ok: boolean; rea
   if (item.unique && unit.items.includes(itemId)) return { ok: false, reason: 'UNIQUE' };
 
   const used = usedSlots(unit);
-  // A component that will immediately combine occupies no extra slot.
-  if (item.isComponent) {
-    const partner = unit.items.find((id) => getItem(id).isComponent && combine(id, itemId));
-    if (partner) return { ok: true };
-  }
   if (used + item.slotCost > MAX_ITEMS_PER_UNIT) return { ok: false, reason: 'NO_SLOT' };
   return { ok: true };
 }
@@ -67,13 +73,33 @@ export function equipItem(
     if (partnerIdx >= 0) {
       const partner = unit.items[partnerIdx];
       const resultId = combine(partner, stored.itemId)!;
-      unit.items.splice(partnerIdx, 1, resultId);
+      if (getItem(resultId).tactician) {
+        unit.items.splice(partnerIdx, 1);
+        player.tacticianItems.push(resultId);
+      } else unit.items.splice(partnerIdx, 1, resultId);
       return { ok: true, resultItemId: resultId };
     }
   }
 
   unit.items.push(stored.itemId);
   return { ok: true, resultItemId: stored.itemId };
+}
+
+/** Atomically consumes two distinct owned components, preserving the target slot. */
+export function combineStoredItems(player: PlayerState, sourceId: string, targetId: string, inBattle = false): EquipResult {
+  if (inBattle) return { ok: false, reason: 'IN_BATTLE' };
+  if (sourceId === targetId) return { ok: false, reason: 'SAME_ITEM' };
+  const source = player.items.find(i => i.instanceId === sourceId);
+  const target = player.items.find(i => i.instanceId === targetId);
+  if (!source || !target) return { ok: false, reason: 'NO_ITEM' };
+  const resultId = combine(source.itemId, target.itemId);
+  if (!resultId) return { ok: false, reason: 'NO_RECIPE' };
+  player.items = player.items.filter(i => i.instanceId !== sourceId);
+  if (getItem(resultId).tactician) {
+    player.items = player.items.filter(i => i.instanceId !== targetId);
+    player.tacticianItems.push(resultId);
+  } else target.itemId = resultId;
+  return { ok: true, resultItemId: resultId };
 }
 
 /** Moves a tactician item straight into the player's tactician slots. */

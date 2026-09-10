@@ -16,7 +16,7 @@ import { createMatch, RoundDirector } from '../game/engine/rounds/director';
 import type { BattleFrame, BattleSideInput } from '../game/engine/battle/engine';
 import { buyUnit, sellUnit, rollShop, teamSizeLimit, benchCapacity, applyCombines } from '../game/engine/shop';
 import { payReroll, buyXp } from '../game/engine/economy';
-import { equipItem, equipTactician, removeItems } from '../game/engine/items/inventory';
+import { combineStoredItems, equipItem, equipTactician, removeItems } from '../game/engine/items/inventory';
 import { getItem } from '../game/engine/items/item-defs';
 import { saveToStorage, loadFromStorage, clearSave, hasSave, restoreDirector } from '../game/engine/save';
 import { getUnitDef } from '../game/engine/roster';
@@ -103,6 +103,7 @@ type GameStore = {
   toggleLock: () => void;
   moveUnit: (instanceId: string, position: HexPos | null) => void;
   equip: (unitInstanceId: string, itemInstanceId: string) => void;
+  combineItems: (sourceId: string, targetId: string) => void;
   unequip: (unitInstanceId: string) => void;
 
   chooseAugment: (augmentId: string) => void;
@@ -331,6 +332,15 @@ export const useGameStore = create<GameStore>((set, get) => ({
     const result = equipItem(player, unitInstanceId, itemInstanceId, get().battleRunning);
     if (!result.ok) set({ lastError: equipErrorMessage(result.reason) });
     else set({ lastError: null });
+    bump(set);
+  },
+
+  combineItems: (sourceId, targetId) => {
+    if (get().onlinePlayerId) { onlineBridge.send?.({ action: 'combineItems', source: sourceId, target: targetId }); return; }
+    const player = get().human();
+    if (!player || get().match?.phase !== 'ROUND_PREP') return;
+    const result = combineStoredItems(player, sourceId, targetId, get().battleRunning);
+    set({ lastError: result.ok ? null : '조합할 수 없는 아이템입니다.' });
     bump(set);
   },
 

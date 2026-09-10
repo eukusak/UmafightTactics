@@ -9,8 +9,10 @@ import { benchCapacity, sellPrice } from '../game/engine/shop';
 import { XP_PURCHASE_COST } from '../game/engine/constants';
 import { Portrait, UnitToken, costVar } from './common';
 import type { UnitInstance } from '../game/engine/state';
+import { useWishlistStore } from '../store/wishlistStore';
 
 export function ShopRow(): JSX.Element | null {
+  const wishlist = useWishlistStore(s => s.wishlist);
   const player = useGameStore((s) => s.human());
   const buy = useGameStore((s) => s.buy);
   const dragged = useInteractionStore(s => s.draggedUnit);
@@ -31,16 +33,19 @@ export function ShopRow(): JSX.Element | null {
         }
         const def = getUnitDef(slot.unitDefId);
         const affordable = player.gold >= def.cost;
+        const wanted = wishlist[player.seasonId ?? 's1']?.includes(def.id) ?? false;
         return (
           <button
             key={i}
-            className="shop-card"
+            className={`shop-card${wanted ? ' wanted' : ''}`}
+            data-unit-def={def.id}
             style={{ borderColor: costVar(def.cost), opacity: affordable ? 1 : 0.55 }}
             onClick={() => buy(i)}
             disabled={!affordable}
             title={`${def.nameKo} — ${def.skill.displayName}\n${def.skill.description}`}
           >
             <span className="cost">{def.cost}G</span>
+            {wanted && <span className="wishlist-marker" aria-label="희망 기물" title="희망 기물">★<span className="wishlist-marker-label"> 희망 기물</span></span>}
             <div
               className="token"
               style={{ width: 52, height: 52, fontSize: 20, border: `3px solid ${costVar(def.cost)}` }}

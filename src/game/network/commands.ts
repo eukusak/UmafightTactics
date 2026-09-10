@@ -3,7 +3,7 @@ import type { OnlineCommand } from './protocol';
 import type { RoundDirector } from '../engine/rounds/director';
 import { buyUnit, sellUnit, rollShop, teamSizeLimit, benchCapacity, applyCombines } from '../engine/shop';
 import { payReroll, buyXp } from '../engine/economy';
-import { equipItem, equipTactician } from '../engine/items/inventory';
+import { combineStoredItems, equipItem, equipTactician } from '../engine/items/inventory';
 import { getItem } from '../engine/items/item-defs';
 import { getUnitDef } from '../engine/roster';
 import { getPlayer, isAlive } from '../engine/state';
@@ -19,6 +19,7 @@ export function applyOnlineCommand(director: RoundDirector, playerId: string, co
   if (command.action === 'draft') return director.pickDraft(playerId, command.index) ? null : '지금 선택할 수 없습니다.';
   if (!['ROUND_PREP', 'BATTLE'].includes(state.phase)) return '현재는 선택 단계입니다.';
   switch (command.action) {
+    case 'combineItems': return combineStoredItems(player, command.source, command.target, battle).ok ? null : '조합할 수 없습니다. 준비 단계에서 보유한 하위 아이템 2개를 선택하세요.';
     case 'buy': { const r = buyUnit(state, player, command.slot); return r.ok ? null : '구매할 수 없습니다. 골드·대기석·공유 풀을 확인하세요.'; }
     case 'sell': {
       if (!owns(command.unit) || (battle && player.board.some((u) => u.instanceId === command.unit))) return '현재 판매할 수 없는 유닛입니다.';
