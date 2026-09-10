@@ -5,7 +5,7 @@ import { Rng } from '../src/game/engine/rng';
 import type { EffectDef, Role } from '../src/game/engine/types';
 import { resistFor, stat } from '../src/game/engine/battle/combat-unit';
 import { skillMotionFrame } from '../src/game/ui/frame-animation';
-import { skillTimeline } from '../src/game/engine/battle/skill-timeline';
+import { skillTimeline, skillWindup } from '../src/game/engine/battle/skill-timeline';
 
 function fixture(seconds = 1, effects: EffectDef[] = [], windup = .3, enemyCount = 1): BattleEngine {
   const side = (id: string, count: number): BattleSideInput => ({ playerId: id, augments: [], tacticianItems: [],
@@ -121,12 +121,12 @@ describe('skill timing and effect lifecycle', () => {
     expect(resistFor(after.units[1], 'PHYSICAL', .5)).toBeCloseTo(stat(after.units[1], 'armor', .5));
     expect(after.units[0].aura.critChance).toBe(0);
   });
-  it('covers the whole roster with 24 mechanical variants and matching release poses', () => {
+  it('covers the whole roster with 42 mechanical variants and matching release poses', () => {
     expect(ALL_UNITS).toHaveLength(145);
-    expect(new Set(ALL_UNITS.map(u => u.skill.choreography?.variant)).size).toBe(24);
+    expect(new Set(ALL_UNITS.map(u => u.skill.choreography?.variant)).size).toBe(42);
     for (const { skill } of ALL_UNITS) {
       expect(skill.choreography).toBeDefined();
-      const windup = skill.choreography!.windup ? .35 : 0;
+      const windup = skillWindup(skill);
       if (windup) {
         expect(skillMotionFrame(skill, windup - .001)).toBe(13);
         expect(skillMotionFrame(skill, windup)).toBe(14);

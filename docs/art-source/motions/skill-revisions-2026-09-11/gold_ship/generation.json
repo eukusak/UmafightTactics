@@ -1,0 +1,9 @@
+{
+  "mode": "built-in image_gen",
+  "prompt": "Edit the reference Gold Ship character into four chibi skill animation poses. Transparent background. A 2 by 2 sprite sheet, only four full-body characters, no labels. Preserve long silver lavender hair, horse ears, sailor cap and headset, red white gold racing costume and tail. Pursuit flurry skill: top left low forward launch with clenched fists; top right planted forward foot and sharp right jab; bottom left twisting hips into a followup left uppercut, three compact red punch trails indicate rapid combination; bottom right recoil into ready boxing guard, silver hair settling. Four visibly different silhouettes, she dashes then strikes rather than running throughout. Crisp cel shading, same proportions. Real PNG cutouts with alpha. No checkerboard, no backdrop, no ground shadow. Wide transparent gutters, compact opaque red action accents within each cell.",
+  "references": [
+    "public/assets/motions/gold_ship.png"
+  ],
+  "referenceCommit": "3c950f3ce3476b152f2ad3d99fd296327a3c82bf",
+  "skillSignature": "4564de25f07442456ea4abfca60d105aa4bf6a310720c7ba2a3b169b60423be6"
+}

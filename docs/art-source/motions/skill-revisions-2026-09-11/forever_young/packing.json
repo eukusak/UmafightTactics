@@ -1,0 +1,506 @@
+{
+  "format": "uft-baked-frames-v1",
+  "scale": 0.4015444015444015,
+  "anchor": [
+    64,
+    110
+  ],
+  "runtimeSha256": "cca55531c3df747f419648c6702359e22f3651ef9c6991e2bc0b0de8d1892cce",
+  "frames": [
+    {
+      "frame": 0,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/production-144/forever_young/alpha.png",
+      "sourceSha256": "dabccfdacae4bc8def7a13aabc033d3b241d07e181cf8fffa59c157c618ac48d",
+      "crop": [
+        28,
+        9,
+        202,
+        256
+      ],
+      "destination": [
+        29,
+        11,
+        70,
+        99
+      ]
+    },
+    {
+      "frame": 1,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/production-144/forever_young/alpha.png",
+      "sourceSha256": "dabccfdacae4bc8def7a13aabc033d3b241d07e181cf8fffa59c157c618ac48d",
+      "crop": [
+        284,
+        10,
+        458,
+        256
+      ],
+      "destination": [
+        157,
+        11,
+        70,
+        99
+      ]
+    },
+    {
+      "frame": 2,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/production-144/forever_young/alpha.png",
+      "sourceSha256": "dabccfdacae4bc8def7a13aabc033d3b241d07e181cf8fffa59c157c618ac48d",
+      "crop": [
+        532,
+        16,
+        714,
+        256
+      ],
+      "destination": [
+        283,
+        14,
+        73,
+        96
+      ]
+    },
+    {
+      "frame": 3,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/production-144/forever_young/alpha.png",
+      "sourceSha256": "dabccfdacae4bc8def7a13aabc033d3b241d07e181cf8fffa59c157c618ac48d",
+      "crop": [
+        796,
+        10,
+        970,
+        256
+      ],
+      "destination": [
+        413,
+        11,
+        70,
+        99
+      ]
+    },
+    {
+      "frame": 4,
+      "sourceFrame": 4,
+      "source": "docs/art-source/motions/production-144/forever_young/alpha.png",
+      "sourceSha256": "dabccfdacae4bc8def7a13aabc033d3b241d07e181cf8fffa59c157c618ac48d",
+      "crop": [
+        28,
+        266,
+        230,
+        506
+      ],
+      "destination": [
+        23,
+        142,
+        81,
+        96
+      ]
+    },
+    {
+      "frame": 5,
+      "sourceFrame": 5,
+      "source": "docs/art-source/motions/production-144/forever_young/alpha.png",
+      "sourceSha256": "dabccfdacae4bc8def7a13aabc033d3b241d07e181cf8fffa59c157c618ac48d",
+      "crop": [
+        276,
+        266,
+        479,
+        510
+      ],
+      "destination": [
+        151,
+        140,
+        82,
+        98
+      ]
+    },
+    {
+      "frame": 6,
+      "sourceFrame": 6,
+      "source": "docs/art-source/motions/production-144/forever_young/alpha.png",
+      "sourceSha256": "dabccfdacae4bc8def7a13aabc033d3b241d07e181cf8fffa59c157c618ac48d",
+      "crop": [
+        533,
+        266,
+        736,
+        510
+      ],
+      "destination": [
+        279,
+        140,
+        82,
+        98
+      ]
+    },
+    {
+      "frame": 7,
+      "sourceFrame": 7,
+      "source": "docs/art-source/motions/production-144/forever_young/alpha.png",
+      "sourceSha256": "dabccfdacae4bc8def7a13aabc033d3b241d07e181cf8fffa59c157c618ac48d",
+      "crop": [
+        788,
+        270,
+        991,
+        510
+      ],
+      "destination": [
+        407,
+        142,
+        82,
+        96
+      ]
+    },
+    {
+      "frame": 8,
+      "sourceFrame": 8,
+      "source": "docs/art-source/motions/production-144/forever_young/alpha.png",
+      "sourceSha256": "dabccfdacae4bc8def7a13aabc033d3b241d07e181cf8fffa59c157c618ac48d",
+      "crop": [
+        22,
+        520,
+        238,
+        766
+      ],
+      "destination": [
+        20,
+        267,
+        87,
+        99
+      ]
+    },
+    {
+      "frame": 9,
+      "sourceFrame": 9,
+      "source": "docs/art-source/motions/production-144/forever_young/alpha.png",
+      "sourceSha256": "dabccfdacae4bc8def7a13aabc033d3b241d07e181cf8fffa59c157c618ac48d",
+      "crop": [
+        277,
+        520,
+        476,
+        766
+      ],
+      "destination": [
+        152,
+        267,
+        80,
+        99
+      ]
+    },
+    {
+      "frame": 10,
+      "sourceFrame": 10,
+      "source": "docs/art-source/motions/production-144/forever_young/alpha.png",
+      "sourceSha256": "dabccfdacae4bc8def7a13aabc033d3b241d07e181cf8fffa59c157c618ac48d",
+      "crop": [
+        531,
+        523,
+        758,
+        768
+      ],
+      "destination": [
+        274,
+        268,
+        91,
+        98
+      ]
+    },
+    {
+      "frame": 11,
+      "sourceFrame": 11,
+      "source": "docs/art-source/motions/production-144/forever_young/alpha.png",
+      "sourceSha256": "dabccfdacae4bc8def7a13aabc033d3b241d07e181cf8fffa59c157c618ac48d",
+      "crop": [
+        791,
+        520,
+        985,
+        768
+      ],
+      "destination": [
+        409,
+        266,
+        78,
+        100
+      ]
+    },
+    {
+      "frame": 12,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/skill-revisions-2026-09-11/forever_young/generated.png",
+      "sourceSha256": "0889c2e82d37c557931f87d7c080d5e910acc6ecd5ca671a67d7678fb0fc670e",
+      "crop": [
+        238,
+        13,
+        570,
+        487
+      ],
+      "destination": [
+        28,
+        392,
+        72,
+        102
+      ]
+    },
+    {
+      "frame": 13,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/skill-revisions-2026-09-11/forever_young/generated.png",
+      "sourceSha256": "0889c2e82d37c557931f87d7c080d5e910acc6ecd5ca671a67d7678fb0fc670e",
+      "crop": [
+        862,
+        95,
+        1311,
+        498
+      ],
+      "destination": [
+        143,
+        407,
+        97,
+        87
+      ]
+    },
+    {
+      "frame": 14,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/skill-revisions-2026-09-11/forever_young/generated.png",
+      "sourceSha256": "0889c2e82d37c557931f87d7c080d5e910acc6ecd5ca671a67d7678fb0fc670e",
+      "crop": [
+        199,
+        591,
+        690,
+        998
+      ],
+      "destination": [
+        267,
+        406,
+        106,
+        88
+      ]
+    },
+    {
+      "frame": 15,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/skill-revisions-2026-09-11/forever_young/generated.png",
+      "sourceSha256": "0889c2e82d37c557931f87d7c080d5e910acc6ecd5ca671a67d7678fb0fc670e",
+      "crop": [
+        931,
+        519,
+        1301,
+        1000
+      ],
+      "destination": [
+        408,
+        390,
+        80,
+        104
+      ]
+    },
+    {
+      "frame": 16,
+      "sourceFrame": 16,
+      "source": "docs/art-source/motions/production-144/forever_young/alpha.png",
+      "sourceSha256": "dabccfdacae4bc8def7a13aabc033d3b241d07e181cf8fffa59c157c618ac48d",
+      "crop": [
+        33,
+        1044,
+        229,
+        1259
+      ],
+      "destination": [
+        24,
+        536,
+        79,
+        86
+      ]
+    },
+    {
+      "frame": 17,
+      "sourceFrame": 17,
+      "source": "docs/art-source/motions/production-144/forever_young/alpha.png",
+      "sourceSha256": "dabccfdacae4bc8def7a13aabc033d3b241d07e181cf8fffa59c157c618ac48d",
+      "crop": [
+        282,
+        1080,
+        497,
+        1258
+      ],
+      "destination": [
+        149,
+        551,
+        86,
+        71
+      ]
+    },
+    {
+      "frame": 18,
+      "sourceFrame": 18,
+      "source": "docs/art-source/motions/production-144/forever_young/alpha.png",
+      "sourceSha256": "dabccfdacae4bc8def7a13aabc033d3b241d07e181cf8fffa59c157c618ac48d",
+      "crop": [
+        520,
+        1088,
+        742,
+        1258
+      ],
+      "destination": [
+        275,
+        554,
+        89,
+        68
+      ]
+    },
+    {
+      "frame": 19,
+      "sourceFrame": 19,
+      "source": "docs/art-source/motions/production-144/forever_young/alpha.png",
+      "sourceSha256": "dabccfdacae4bc8def7a13aabc033d3b241d07e181cf8fffa59c157c618ac48d",
+      "crop": [
+        768,
+        1129,
+        1017,
+        1255
+      ],
+      "destination": [
+        398,
+        571,
+        100,
+        51
+      ]
+    },
+    {
+      "frame": 20,
+      "sourceFrame": 20,
+      "source": "docs/art-source/motions/production-144/forever_young/alpha.png",
+      "sourceSha256": "dabccfdacae4bc8def7a13aabc033d3b241d07e181cf8fffa59c157c618ac48d",
+      "crop": [
+        31,
+        1273,
+        215,
+        1529
+      ],
+      "destination": [
+        27,
+        647,
+        74,
+        103
+      ]
+    },
+    {
+      "frame": 21,
+      "sourceFrame": 21,
+      "source": "docs/art-source/motions/production-144/forever_young/alpha.png",
+      "sourceSha256": "dabccfdacae4bc8def7a13aabc033d3b241d07e181cf8fffa59c157c618ac48d",
+      "crop": [
+        286,
+        1281,
+        470,
+        1531
+      ],
+      "destination": [
+        155,
+        650,
+        74,
+        100
+      ]
+    },
+    {
+      "frame": 22,
+      "sourceFrame": 22,
+      "source": "docs/art-source/motions/production-144/forever_young/alpha.png",
+      "sourceSha256": "dabccfdacae4bc8def7a13aabc033d3b241d07e181cf8fffa59c157c618ac48d",
+      "crop": [
+        531,
+        1273,
+        736,
+        1532
+      ],
+      "destination": [
+        279,
+        646,
+        82,
+        104
+      ]
+    },
+    {
+      "frame": 23,
+      "sourceFrame": 23,
+      "source": "docs/art-source/motions/production-144/forever_young/alpha.png",
+      "sourceSha256": "dabccfdacae4bc8def7a13aabc033d3b241d07e181cf8fffa59c157c618ac48d",
+      "crop": [
+        781,
+        1273,
+        957,
+        1530
+      ],
+      "destination": [
+        412,
+        647,
+        71,
+        103
+      ]
+    }
+  ],
+  "skillRevision": {
+    "scale": 0.21621621621621623,
+    "review": "docs/art-source/motions/skill-revisions-2026-09-11/forever_young/review.json",
+    "beforeFrames": [
+      "171e8b0360e48e9e85d338adb20cfdea2c514193e1528da74dd58d2d01857597",
+      "7cce62143b00a510738972938d7a95e24c1cddf044a57c41c4f4f2194e32d090",
+      "bf8938d7c9c8cf7fac5fc577d52de191a104880a38aa0667985c11dd5dcf8bcf",
+      "b88ba8ef6985beb9b95cfae1bdaae3d6e9a8d3ff4a85fc3a15545db0d8ec5429",
+      "fcf0c0f1ae4637fecf4386e76ae5567668872f9333938fd9ea289d87fff67bc8",
+      "77be5980906dcd9fe0fd148b9a5e279f611e066bb68175073035587336ef047d",
+      "a52941946d4b6bf0479a8e488ba530b2948d83eb7750d5927310436b9e51a9f6",
+      "f144c869c01cc4334fe462ff1739fc9ab5ff51e0d31d21c5f86d9420dae896c1",
+      "8417d719b8f9c36ce4d1ca7aca495e9f384ef03f6a7099002707e6a394f59519",
+      "8c08b659b34dacd862167b3e19f6154a1d846763fcff5df361e3eb121eeb34f0",
+      "8f21f1c96751ff5976afee4c90245b8a480de31ef46f0685abe598c8ad83845e",
+      "24e9c72aa57e60e9e7ae8189a9729dfaed92772c41d370f6c8e51b0ab58707ce",
+      "336c12bcf987b6c9aca378bb89cb0acc2fcc88724385b93efb34acfbda49b58f",
+      "dea40fb0a701bd18ed5a73f2a5a7e75182074890bec869819f8453cdc95c9b62",
+      "8c949abc683b6a3151b7a8568ba50eb2ecb21648295a29010c82449f4184ac8e",
+      "05ce413376bf1bc14d24849a611d28979ed40d9c3bc713f40b1667993ae56a5b",
+      "44a387fbc9164bc73859466eb3693cb16fc8c45405faefa43a2e15c41e44fea3",
+      "c31b5c75cbe23dd0e961c4884054d41e356434b65cd2cbb738d758376d17fe41",
+      "f5afc742b7c1ae6a63759105d45b6adfa1414bfb14187707a4455a6ce953d702",
+      "8a68794e3ca3fa0c752f7845c674cb7a25a1d45742d21026fd1f503a4916a565",
+      "8cab676cd65c1e7eebb075dce3eb9800b6430d96b8a1b9cd9f0a85bddec47108",
+      "38a9fcc2015a609027f02c620875dfdb9bc911bc155107339bcfe93974dc0a21",
+      "daff641f94f0cba7ae97035ce04978edfba3a838f4c747a9b86a747ff0800a49",
+      "c7fd0cc0179cd4069556782cf19c8024fdcb484ed768cdcb235e7ce693674d2a"
+    ],
+    "afterFrames": [
+      "171e8b0360e48e9e85d338adb20cfdea2c514193e1528da74dd58d2d01857597",
+      "7cce62143b00a510738972938d7a95e24c1cddf044a57c41c4f4f2194e32d090",
+      "bf8938d7c9c8cf7fac5fc577d52de191a104880a38aa0667985c11dd5dcf8bcf",
+      "b88ba8ef6985beb9b95cfae1bdaae3d6e9a8d3ff4a85fc3a15545db0d8ec5429",
+      "fcf0c0f1ae4637fecf4386e76ae5567668872f9333938fd9ea289d87fff67bc8",
+      "77be5980906dcd9fe0fd148b9a5e279f611e066bb68175073035587336ef047d",
+      "a52941946d4b6bf0479a8e488ba530b2948d83eb7750d5927310436b9e51a9f6",
+      "f144c869c01cc4334fe462ff1739fc9ab5ff51e0d31d21c5f86d9420dae896c1",
+      "8417d719b8f9c36ce4d1ca7aca495e9f384ef03f6a7099002707e6a394f59519",
+      "8c08b659b34dacd862167b3e19f6154a1d846763fcff5df361e3eb121eeb34f0",
+      "8f21f1c96751ff5976afee4c90245b8a480de31ef46f0685abe598c8ad83845e",
+      "24e9c72aa57e60e9e7ae8189a9729dfaed92772c41d370f6c8e51b0ab58707ce",
+      "ff016a91c8cf670c62715a7e802e20ffb1797b989092a1f524db363c05aa40f6",
+      "8ec537f4a60f694d86ca0f623355bb64de78e0b5a1dd6f4667040074eaf2662d",
+      "b721660ecf462f520c4cdcff1b776ab169e8a259dc1d10eb8d32a45f20939039",
+      "bb7526cc7ea3e4fe9443a31cad240e071d80e8ca55bd7252b0b1f6759dc137c6",
+      "44a387fbc9164bc73859466eb3693cb16fc8c45405faefa43a2e15c41e44fea3",
+      "c31b5c75cbe23dd0e961c4884054d41e356434b65cd2cbb738d758376d17fe41",
+      "f5afc742b7c1ae6a63759105d45b6adfa1414bfb14187707a4455a6ce953d702",
+      "8a68794e3ca3fa0c752f7845c674cb7a25a1d45742d21026fd1f503a4916a565",
+      "8cab676cd65c1e7eebb075dce3eb9800b6430d96b8a1b9cd9f0a85bddec47108",
+      "38a9fcc2015a609027f02c620875dfdb9bc911bc155107339bcfe93974dc0a21",
+      "daff641f94f0cba7ae97035ce04978edfba3a838f4c747a9b86a747ff0800a49",
+      "c7fd0cc0179cd4069556782cf19c8024fdcb484ed768cdcb235e7ce693674d2a"
+    ],
+    "unchangedFrames": 20,
+    "changedFrames": [
+      12,
+      13,
+      14,
+      15
+    ]
+  }
+}

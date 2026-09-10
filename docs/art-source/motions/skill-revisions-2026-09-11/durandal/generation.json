@@ -1,0 +1,9 @@
+{
+  "mode": "built-in image_gen",
+  "prompt": "Create a transparent PNG cutout sprite sheet using this character reference. Four full-body chibi poses in a 2 by 2 grid on an EMPTY TRANSPARENT ALPHA background, with wide empty gutters. Preserve durandal's hair, face, ears, costume and accessories. Four poses in reading order: pull arms inward and lower the silhouette; crouch into a compact shadow veil with one faint offset silhouette; emerge in a sudden forward finishing strike; settle upright as the small afterimage fades. Same proportions across poses, crisp cel-shaded game art, compact effects within each cell. No labels, no ground or backdrop. Transparency is essential: do not draw a checkerboard.",
+  "references": [
+    "public/assets/motions/durandal.png"
+  ],
+  "referenceCommit": "3c950f3ce3476b152f2ad3d99fd296327a3c82bf",
+  "skillSignature": "eb1b374a4dbe705d469900467d9aba1241f19460fd5d42b95fe64b42c3e4d2fd"
+}

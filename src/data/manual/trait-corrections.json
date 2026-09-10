@@ -1,0 +1,77 @@
+{
+  "source": "race-evidence.json",
+  "units": {
+    "aston_machan": {
+      "horseId": "H-2004103323",
+      "to": "sprinter",
+      "previous": "miler",
+      "reason": "등급을 반영한 우승 거리 표본의 최다 가중치 구간"
+    },
+    "ks_miracle": {
+      "horseId": "H-1988107943",
+      "to": "sprinter",
+      "previous": "miler",
+      "reason": "등급을 반영한 우승 거리 표본의 최다 가중치 구간"
+    },
+    "dantsu_flame": {
+      "horseId": "H-1998103058",
+      "to": "middle",
+      "previous": "sprinter",
+      "reason": "등급을 반영한 우승 거리 표본의 최다 가중치 구간"
+    },
+    "still_in_love": {
+      "horseId": "H-2000106022",
+      "to": "middle",
+      "previous": "sprinter",
+      "reason": "등급을 반영한 우승 거리 표본의 최다 가중치 구간"
+    },
+    "nakayama_festa": {
+      "horseId": "H-2006102424",
+      "to": "middle",
+      "previous": "miler",
+      "reason": "등급을 반영한 우승 거리 표본의 최다 가중치 구간"
+    },
+    "satono_crown": {
+      "horseId": "H-2012104668",
+      "to": "middle",
+      "previous": "miler",
+      "reason": "등급을 반영한 우승 거리 표본의 최다 가중치 구간"
+    },
+    "no_reason": {
+      "horseId": "H-1999104198",
+      "to": "middle",
+      "previous": "miler",
+      "reason": "등급을 반영한 우승 거리 표본의 최다 가중치 구간"
+    },
+    "admire_groove": {
+      "horseId": "H-2000107542",
+      "to": "middle",
+      "previous": "miler",
+      "reason": "등급을 반영한 우승 거리 표본의 최다 가중치 구간"
+    },
+    "red_desire": {
+      "horseId": "H-2006102929",
+      "to": "middle",
+      "previous": "miler",
+      "reason": "등급을 반영한 우승 거리 표본의 최다 가중치 구간"
+    },
+    "rhein_kraft": {
+      "horseId": "H-2002100959",
+      "to": "miler",
+      "previous": "sprinter",
+      "reason": "등급을 반영한 우승 거리 표본의 최다 가중치 구간"
+    },
+    "rose_kingdom": {
+      "horseId": "H-2007103404",
+      "to": "middle",
+      "previous": "miler",
+      "reason": "등급을 반영한 우승 거리 표본의 최다 가중치 구간"
+    },
+    "kiseki": {
+      "horseId": "H-2014101976",
+      "to": "stayer",
+      "previous": "middle",
+      "reason": "등급을 반영한 우승 거리 표본의 최다 가중치 구간"
+    }
+  }
+}

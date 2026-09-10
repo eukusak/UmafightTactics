@@ -27,11 +27,19 @@ export const TriggerSchema = z.object({
     'ON_TAKEDOWN_ASSIST', 'HP_BELOW', 'HP_ABOVE', 'TARGET_HP_BELOW', 'AFTER_SECONDS',
     'EVERY_SECONDS', 'ON_DEATH', 'ADJACENT_ALLIES_AT_LEAST', 'NO_ADJACENT_ALLIES',
     'IN_FRONT_ROWS', 'IN_BACK_ROWS',
+    'ON_SAME_TARGET_NTH_ATTACK', 'ON_BASIC_HIT_TAKEN', 'ON_SKILL_HIT', 'ON_CC_APPLIED', 'ON_SUPPORT_SKILL',
   ]),
   threshold: z.number().optional(),
 });
 
 export const EffectSchema = z.object({
+  shape: z.enum(['LINE', 'CONE', 'CHAIN']).optional(), range: z.number().positive().max(12).optional(),
+  maxTargets: z.number().int().min(1).max(8).optional(), leech: z.number().min(0).max(1).optional(),
+  isolatedMultiplier: z.number().min(1).max(2).optional(), onKillMana: z.number().min(0).max(50).optional(),
+  scaling: z.object({ attackDamage: z.number().optional(), abilityPower: z.number().optional(), armor: z.number().optional(), selfMaxHp: z.number().optional(), targetCurrentHp: z.number().optional(), targetMissingHp: z.number().optional(), cap: z.number().optional() }).optional(),
+  refresh: z.boolean().optional(),
+  perTargetCooldown: z.boolean().optional(),
+  excludeSelf: z.boolean().optional(),
   kind: z.string(),
   stat: StatKeySchema.optional(),
   value: z.number().optional(),
@@ -65,6 +73,7 @@ export const SkillDefSchema = z.object({
   vfxKey: z.string().min(1),
   description: z.string().min(1),
   choreography: z.object({
+    accent: z.string().regex(/^#[0-9a-fA-F]{6}$/).optional(), emblem: z.number().int().min(0).max(144).optional(), label: z.string().optional(), motion: z.enum(['STRIKE','PULSE','CHANNEL']).optional(),
     windup: z.number().min(0).max(2), recovery: z.number().min(0).max(2),
     pulseInterval: z.number().positive().max(2), color: z.string().regex(/^#[0-9a-fA-F]{6}$/), variant: z.string().min(1),
   }).optional(),

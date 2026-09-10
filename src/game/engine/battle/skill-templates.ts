@@ -6,7 +6,7 @@
  * the battle engine never switches on a character ID.
  */
 import type { Cost, DamageType, EffectDef, Role, RunStyle, SkillDef, SkillTemplate, TargetRule } from '../types';
-import { specializeSkill } from './skill-variants';
+import { buildTacticalSkill, authoredBodyFamily } from './skill-patterns';
 
 /** Spec §12.2 — which templates a role may draw from, in preference order. */
 export const ROLE_TEMPLATES: Record<Role, SkillTemplate[]> = {
@@ -124,7 +124,8 @@ export function cleanSignature(raw: string | null): string | null {
 }
 
 export function buildSkill(input: SkillBuildInput): SkillDef {
-  const template = chooseTemplate(input.role, input.style);
+  // Racing-style corrections must not silently replace an authored skill or its art.
+  const template = authoredBodyFamily(input.unitId) ?? chooseTemplate(input.role, input.style);
   const scale = COST_POWER[input.cost] * (0.9 + 0.2 * input.power01);
 
   // Spec §12.4: prefer the signature / representative race name, never official skill text.
@@ -246,7 +247,7 @@ export function buildSkill(input: SkillBuildInput): SkillDef {
     TANK: 90, BRUISER: 80, AD_CARRY: 70, AP_CARRY: 80, SUPPORT: 90,
   };
 
-  return specializeSkill(input.unitId, {
+  return buildTacticalSkill(input.unitId, {
     id: `skill_${input.unitId}`,
     displayName,
     template,

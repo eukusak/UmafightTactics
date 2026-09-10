@@ -1,0 +1,506 @@
+{
+  "format": "uft-baked-frames-v1",
+  "scale": 0.40625,
+  "anchor": [
+    64,
+    110
+  ],
+  "runtimeSha256": "707cf1a8be1c0007243d6779da3c771834fb45de9071da55a9a1462e2a1ac531",
+  "frames": [
+    {
+      "frame": 0,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/production-144/rose_kingdom/alpha.png",
+      "sourceSha256": "8f8836cf4cc718c0e0dcf3a9b0e6a7cd9b45e7223f3d5be929f356e2b1c0587a",
+      "crop": [
+        59,
+        19,
+        218,
+        256
+      ],
+      "destination": [
+        31,
+        14,
+        65,
+        96
+      ]
+    },
+    {
+      "frame": 1,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/production-144/rose_kingdom/alpha.png",
+      "sourceSha256": "8f8836cf4cc718c0e0dcf3a9b0e6a7cd9b45e7223f3d5be929f356e2b1c0587a",
+      "crop": [
+        307,
+        16,
+        468,
+        256
+      ],
+      "destination": [
+        159,
+        12,
+        65,
+        98
+      ]
+    },
+    {
+      "frame": 2,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/production-144/rose_kingdom/alpha.png",
+      "sourceSha256": "8f8836cf4cc718c0e0dcf3a9b0e6a7cd9b45e7223f3d5be929f356e2b1c0587a",
+      "crop": [
+        551,
+        16,
+        712,
+        256
+      ],
+      "destination": [
+        287,
+        12,
+        65,
+        98
+      ]
+    },
+    {
+      "frame": 3,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/production-144/rose_kingdom/alpha.png",
+      "sourceSha256": "8f8836cf4cc718c0e0dcf3a9b0e6a7cd9b45e7223f3d5be929f356e2b1c0587a",
+      "crop": [
+        804,
+        17,
+        957,
+        256
+      ],
+      "destination": [
+        417,
+        13,
+        62,
+        97
+      ]
+    },
+    {
+      "frame": 4,
+      "sourceFrame": 4,
+      "source": "docs/art-source/motions/production-144/rose_kingdom/alpha.png",
+      "sourceSha256": "8f8836cf4cc718c0e0dcf3a9b0e6a7cd9b45e7223f3d5be929f356e2b1c0587a",
+      "crop": [
+        17,
+        280,
+        223,
+        508
+      ],
+      "destination": [
+        22,
+        145,
+        84,
+        93
+      ]
+    },
+    {
+      "frame": 5,
+      "sourceFrame": 5,
+      "source": "docs/art-source/motions/production-144/rose_kingdom/alpha.png",
+      "sourceSha256": "8f8836cf4cc718c0e0dcf3a9b0e6a7cd9b45e7223f3d5be929f356e2b1c0587a",
+      "crop": [
+        277,
+        281,
+        478,
+        505
+      ],
+      "destination": [
+        151,
+        147,
+        82,
+        91
+      ]
+    },
+    {
+      "frame": 6,
+      "sourceFrame": 6,
+      "source": "docs/art-source/motions/production-144/rose_kingdom/alpha.png",
+      "sourceSha256": "8f8836cf4cc718c0e0dcf3a9b0e6a7cd9b45e7223f3d5be929f356e2b1c0587a",
+      "crop": [
+        519,
+        282,
+        733,
+        504
+      ],
+      "destination": [
+        276,
+        148,
+        87,
+        90
+      ]
+    },
+    {
+      "frame": 7,
+      "sourceFrame": 7,
+      "source": "docs/art-source/motions/production-144/rose_kingdom/alpha.png",
+      "sourceSha256": "8f8836cf4cc718c0e0dcf3a9b0e6a7cd9b45e7223f3d5be929f356e2b1c0587a",
+      "crop": [
+        776,
+        284,
+        982,
+        505
+      ],
+      "destination": [
+        406,
+        148,
+        84,
+        90
+      ]
+    },
+    {
+      "frame": 8,
+      "sourceFrame": 8,
+      "source": "docs/art-source/motions/production-144/rose_kingdom/alpha.png",
+      "sourceSha256": "8f8836cf4cc718c0e0dcf3a9b0e6a7cd9b45e7223f3d5be929f356e2b1c0587a",
+      "crop": [
+        33,
+        526,
+        218,
+        758
+      ],
+      "destination": [
+        26,
+        272,
+        75,
+        94
+      ]
+    },
+    {
+      "frame": 9,
+      "sourceFrame": 9,
+      "source": "docs/art-source/motions/production-144/rose_kingdom/alpha.png",
+      "sourceSha256": "8f8836cf4cc718c0e0dcf3a9b0e6a7cd9b45e7223f3d5be929f356e2b1c0587a",
+      "crop": [
+        271,
+        525,
+        456,
+        758
+      ],
+      "destination": [
+        154,
+        271,
+        75,
+        95
+      ]
+    },
+    {
+      "frame": 10,
+      "sourceFrame": 10,
+      "source": "docs/art-source/motions/production-144/rose_kingdom/alpha.png",
+      "sourceSha256": "8f8836cf4cc718c0e0dcf3a9b0e6a7cd9b45e7223f3d5be929f356e2b1c0587a",
+      "crop": [
+        500,
+        530,
+        766,
+        759
+      ],
+      "destination": [
+        266,
+        273,
+        108,
+        93
+      ]
+    },
+    {
+      "frame": 11,
+      "sourceFrame": 11,
+      "source": "docs/art-source/motions/production-144/rose_kingdom/alpha.png",
+      "sourceSha256": "8f8836cf4cc718c0e0dcf3a9b0e6a7cd9b45e7223f3d5be929f356e2b1c0587a",
+      "crop": [
+        804,
+        528,
+        967,
+        759
+      ],
+      "destination": [
+        415,
+        272,
+        66,
+        94
+      ]
+    },
+    {
+      "frame": 12,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/skill-revisions-2026-09-11/rose_kingdom/generated.png",
+      "sourceSha256": "5d2f9717d48a9a379bf78960d50eea51cb15537de6ba2ee00dfebb5546cac4bd",
+      "crop": [
+        148,
+        127,
+        644,
+        460
+      ],
+      "destination": [
+        15,
+        429,
+        97,
+        65
+      ]
+    },
+    {
+      "frame": 13,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/skill-revisions-2026-09-11/rose_kingdom/generated.png",
+      "sourceSha256": "5d2f9717d48a9a379bf78960d50eea51cb15537de6ba2ee00dfebb5546cac4bd",
+      "crop": [
+        878,
+        34,
+        1363,
+        488
+      ],
+      "destination": [
+        144,
+        405,
+        95,
+        89
+      ]
+    },
+    {
+      "frame": 14,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/skill-revisions-2026-09-11/rose_kingdom/generated.png",
+      "sourceSha256": "5d2f9717d48a9a379bf78960d50eea51cb15537de6ba2ee00dfebb5546cac4bd",
+      "crop": [
+        136,
+        600,
+        727,
+        983
+      ],
+      "destination": [
+        262,
+        419,
+        116,
+        75
+      ]
+    },
+    {
+      "frame": 15,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/skill-revisions-2026-09-11/rose_kingdom/generated.png",
+      "sourceSha256": "5d2f9717d48a9a379bf78960d50eea51cb15537de6ba2ee00dfebb5546cac4bd",
+      "crop": [
+        913,
+        526,
+        1363,
+        989
+      ],
+      "destination": [
+        404,
+        403,
+        88,
+        91
+      ]
+    },
+    {
+      "frame": 16,
+      "sourceFrame": 16,
+      "source": "docs/art-source/motions/production-144/rose_kingdom/alpha.png",
+      "sourceSha256": "8f8836cf4cc718c0e0dcf3a9b0e6a7cd9b45e7223f3d5be929f356e2b1c0587a",
+      "crop": [
+        44,
+        1003,
+        214,
+        1219
+      ],
+      "destination": [
+        29,
+        534,
+        69,
+        88
+      ]
+    },
+    {
+      "frame": 17,
+      "sourceFrame": 17,
+      "source": "docs/art-source/motions/production-144/rose_kingdom/alpha.png",
+      "sourceSha256": "8f8836cf4cc718c0e0dcf3a9b0e6a7cd9b45e7223f3d5be929f356e2b1c0587a",
+      "crop": [
+        278,
+        1038,
+        475,
+        1218
+      ],
+      "destination": [
+        152,
+        549,
+        80,
+        73
+      ]
+    },
+    {
+      "frame": 18,
+      "sourceFrame": 18,
+      "source": "docs/art-source/motions/production-144/rose_kingdom/alpha.png",
+      "sourceSha256": "8f8836cf4cc718c0e0dcf3a9b0e6a7cd9b45e7223f3d5be929f356e2b1c0587a",
+      "crop": [
+        529,
+        1044,
+        750,
+        1219
+      ],
+      "destination": [
+        275,
+        551,
+        90,
+        71
+      ]
+    },
+    {
+      "frame": 19,
+      "sourceFrame": 19,
+      "source": "docs/art-source/motions/production-144/rose_kingdom/alpha.png",
+      "sourceSha256": "8f8836cf4cc718c0e0dcf3a9b0e6a7cd9b45e7223f3d5be929f356e2b1c0587a",
+      "crop": [
+        780,
+        1097,
+        1023,
+        1212
+      ],
+      "destination": [
+        398,
+        575,
+        99,
+        47
+      ]
+    },
+    {
+      "frame": 20,
+      "sourceFrame": 20,
+      "source": "docs/art-source/motions/production-144/rose_kingdom/alpha.png",
+      "sourceSha256": "8f8836cf4cc718c0e0dcf3a9b0e6a7cd9b45e7223f3d5be929f356e2b1c0587a",
+      "crop": [
+        58,
+        1244,
+        208,
+        1498
+      ],
+      "destination": [
+        33,
+        647,
+        61,
+        103
+      ]
+    },
+    {
+      "frame": 21,
+      "sourceFrame": 21,
+      "source": "docs/art-source/motions/production-144/rose_kingdom/alpha.png",
+      "sourceSha256": "8f8836cf4cc718c0e0dcf3a9b0e6a7cd9b45e7223f3d5be929f356e2b1c0587a",
+      "crop": [
+        306,
+        1247,
+        467,
+        1499
+      ],
+      "destination": [
+        159,
+        648,
+        65,
+        102
+      ]
+    },
+    {
+      "frame": 22,
+      "sourceFrame": 22,
+      "source": "docs/art-source/motions/production-144/rose_kingdom/alpha.png",
+      "sourceSha256": "8f8836cf4cc718c0e0dcf3a9b0e6a7cd9b45e7223f3d5be929f356e2b1c0587a",
+      "crop": [
+        561,
+        1244,
+        724,
+        1499
+      ],
+      "destination": [
+        287,
+        646,
+        66,
+        104
+      ]
+    },
+    {
+      "frame": 23,
+      "sourceFrame": 23,
+      "source": "docs/art-source/motions/production-144/rose_kingdom/alpha.png",
+      "sourceSha256": "8f8836cf4cc718c0e0dcf3a9b0e6a7cd9b45e7223f3d5be929f356e2b1c0587a",
+      "crop": [
+        810,
+        1244,
+        964,
+        1500
+      ],
+      "destination": [
+        416,
+        646,
+        63,
+        104
+      ]
+    }
+  ],
+  "skillRevision": {
+    "scale": 0.19627749576988154,
+    "review": "docs/art-source/motions/skill-revisions-2026-09-11/rose_kingdom/review.json",
+    "beforeFrames": [
+      "561b511deacfdf5ea5fdfce3cb6e551b3878bc4e69221dd373895787360eb9d1",
+      "9cc46d9f08a41be484abed4920b1becc2d824fc60878e13e68e6d09842af381b",
+      "51f00ac275df24e4d01cbd66042d9b5b66fa83fdc4df9b769ec2f5cfef0f1782",
+      "5f8dedf8ba005466b7ec940a3df7cf58c1a2482ed69784b67d7dc6ddc39c8e9c",
+      "cc06dc511d5846ec1412ce364cb2f5faa3409398dc55170c6daf9957b1d16ca4",
+      "ab426dc28bbe5718878283c1c5b1cdad1d08ed60928700f1e05f99451a2997c7",
+      "71599f8b067860a9d5c316a666736e08844cfc5f7a648628075d1f7dadbc6565",
+      "560e6b523b68ff8e3dd2e7981ed5092d65be5d5e88e719274b1f8b44da50d5ac",
+      "58e553115fb0f82f2abd1195d3243f8bf7abeb6fc1089d85102fb1aafe935b7b",
+      "35559c8570c473f520b9ecfd346f9110246971683c72339b9ce1bcb549f44533",
+      "7bd8952f420f1095471c1fe99fccb8a62d297437d9a555ce49bf84bf579a9e25",
+      "c6d6f455463fe651f63a635defab13707d4824a1e69d45e75a0e8048bc8d42be",
+      "d85ab53eeab2532cfd57bae83f2c5b622dde03af6a5f8f7c3e94f9b660513f59",
+      "7ea0b0b798b4fa97f64a8b902d4e9b7a2179609d7bbf9fa3ab7f968d7122dcfe",
+      "65d12bf09f4d33156df4dc827e46bca1c7d9fe0085ee3646479b0be323efe959",
+      "3793aa7482152ec123c90b1f65f9aba0c57e26350c2cb863361e4fdf914331bf",
+      "3dccd07ac9b776399702f5400814ad5ac372f81ac2d231a2deb60deb106f7f4e",
+      "e69bdcb58d82fff85307da0987401ea73a63576e65bcb1017c0bf61a42c375b5",
+      "aaff6c5dcb8998dd7d72278b2f29e603e69a7256171805c1b6168121d13c7295",
+      "28de6c5f4e6fae959a98c48c7a83a552c563ae64a5bd81d952d19927949c20d2",
+      "acf006c2c35e12038bebde669a5bdbdc692c2e428ab0ae203aea528b90360ef3",
+      "c5ac67372cf81083769304884334beb8fa2ae1eef48065b3a6d188eabc90db41",
+      "2700433574801879d5f0cdc4bb6313c1164075a851ca6138cc3ade2efeb69270",
+      "db2bbd412dcb405bbd8890b52b4abcc9f67bf9c07360fcf9e78d107a204aedd3"
+    ],
+    "afterFrames": [
+      "561b511deacfdf5ea5fdfce3cb6e551b3878bc4e69221dd373895787360eb9d1",
+      "9cc46d9f08a41be484abed4920b1becc2d824fc60878e13e68e6d09842af381b",
+      "51f00ac275df24e4d01cbd66042d9b5b66fa83fdc4df9b769ec2f5cfef0f1782",
+      "5f8dedf8ba005466b7ec940a3df7cf58c1a2482ed69784b67d7dc6ddc39c8e9c",
+      "cc06dc511d5846ec1412ce364cb2f5faa3409398dc55170c6daf9957b1d16ca4",
+      "ab426dc28bbe5718878283c1c5b1cdad1d08ed60928700f1e05f99451a2997c7",
+      "71599f8b067860a9d5c316a666736e08844cfc5f7a648628075d1f7dadbc6565",
+      "560e6b523b68ff8e3dd2e7981ed5092d65be5d5e88e719274b1f8b44da50d5ac",
+      "58e553115fb0f82f2abd1195d3243f8bf7abeb6fc1089d85102fb1aafe935b7b",
+      "35559c8570c473f520b9ecfd346f9110246971683c72339b9ce1bcb549f44533",
+      "7bd8952f420f1095471c1fe99fccb8a62d297437d9a555ce49bf84bf579a9e25",
+      "c6d6f455463fe651f63a635defab13707d4824a1e69d45e75a0e8048bc8d42be",
+      "968b9ec122992721ab017038ee2941f58a2647e34b993aacdeb014604e09425e",
+      "f81b4cd2788f4d03f1326356545fb35dc264f1f2e178d458b7f18e8835564d04",
+      "c625c4316fcec1e59929d90e734bdba7ffeb25ffb73de937f80c3f0cd1059683",
+      "f896e5f9f960e8eda8526526057f00dd57eca102e4143ea11f5ea6fc0c1793b4",
+      "3dccd07ac9b776399702f5400814ad5ac372f81ac2d231a2deb60deb106f7f4e",
+      "e69bdcb58d82fff85307da0987401ea73a63576e65bcb1017c0bf61a42c375b5",
+      "aaff6c5dcb8998dd7d72278b2f29e603e69a7256171805c1b6168121d13c7295",
+      "28de6c5f4e6fae959a98c48c7a83a552c563ae64a5bd81d952d19927949c20d2",
+      "acf006c2c35e12038bebde669a5bdbdc692c2e428ab0ae203aea528b90360ef3",
+      "c5ac67372cf81083769304884334beb8fa2ae1eef48065b3a6d188eabc90db41",
+      "2700433574801879d5f0cdc4bb6313c1164075a851ca6138cc3ade2efeb69270",
+      "db2bbd412dcb405bbd8890b52b4abcc9f67bf9c07360fcf9e78d107a204aedd3"
+    ],
+    "unchangedFrames": 20,
+    "changedFrames": [
+      12,
+      13,
+      14,
+      15
+    ]
+  }
+}

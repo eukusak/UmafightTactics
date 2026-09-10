@@ -65,7 +65,21 @@ export function MotionScreen(): JSX.Element {
               if (age < 0 || age > .25) continue;
               const color = parseInt((skill.choreography?.color ?? '#b9ddff').slice(1), 16);
               this.pulses.lineStyle(4, color, 1 - age / .25);
-              this.pulses.strokeCircle(sprite.x, sprite.y - 130, 72 * (1 + age * 2));
+              const effect = skillTimeline(skill).find(e => Math.abs(e.at - at) < 1e-8 && e.effect.shape)?.effect;
+              const x = sprite.x, y = sprite.y - 130, direction = c.facing;
+              if (effect?.shape === 'LINE') this.pulses.lineBetween(x, y, x + direction * 250, y - 25);
+              else if (effect?.shape === 'CONE') {
+                for (const offset of [-65, 0, 65]) this.pulses.lineBetween(x, y, x + direction * 200, y + offset);
+              } else if (effect?.shape === 'CHAIN') {
+                this.pulses.lineBetween(x, y, x + direction * 90, y - 60);
+                this.pulses.lineBetween(x + direction * 90, y - 60, x + direction * 185, y + 15);
+              } else this.pulses.strokeCircle(x, y, 72 * (1 + age * 2));
+              const seed = (skill.choreography?.emblem ?? 0) + 1;
+              this.pulses.fillStyle(parseInt((skill.choreography?.accent ?? '#ffffff').slice(1), 16), 1 - age / .25);
+              for (let i = 0; i < 3 + seed % 5; i++) {
+                const a = i * Math.PI * 2 / (3 + seed % 5) + seed * .17;
+                this.pulses.fillRect(x + Math.cos(a) * (85 + age * 120), y + Math.sin(a) * (85 + age * 120), 6, 6);
+              }
             }
           }
         }
@@ -91,6 +105,8 @@ export function MotionScreen(): JSX.Element {
           {Object.values(PVE_UNIT_IDS).map(key => <option key={key} value={key}>{getUnitDef(key).nameKo} (PvE)</option>)}
         </select></label>
         <p>{status}</p>
+        <p className="motion-skill-name" style={{ color: '#ffe4a6', fontWeight: 700 }}>{getUnitDef(id).skill.displayName}</p>
+        <p className="motion-skill-description" style={{ fontSize: 14, lineHeight: 1.6 }}>{getUnitDef(id).skill.description}</p>
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: 10, margin: '25px 0' }}>
           {Object.entries(ACTIONS).map(([key, label]) => <button key={key} className={action === key ? 'btn-primary' : ''} onClick={() => setAction(key as AnimationName)}>{label}</button>)}
         </div>

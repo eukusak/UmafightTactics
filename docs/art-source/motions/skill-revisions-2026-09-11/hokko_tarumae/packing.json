@@ -1,0 +1,506 @@
+{
+  "format": "uft-baked-frames-v1",
+  "scale": 0.41434262948207173,
+  "anchor": [
+    64,
+    110
+  ],
+  "runtimeSha256": "8a4b1fd073efe8e0e12c15a905cfcfd5491ebdc5f4cada0516ba24cfdc1e6b03",
+  "frames": [
+    {
+      "frame": 0,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/production-144/hokko_tarumae/alpha.png",
+      "sourceSha256": "862f0b23823f41178dc06a62e4bd01d0eb839b6f2de485d193f530d262e7b950",
+      "crop": [
+        47,
+        28,
+        209,
+        270
+      ],
+      "destination": [
+        30,
+        10,
+        67,
+        100
+      ]
+    },
+    {
+      "frame": 1,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/production-144/hokko_tarumae/alpha.png",
+      "sourceSha256": "862f0b23823f41178dc06a62e4bd01d0eb839b6f2de485d193f530d262e7b950",
+      "crop": [
+        311,
+        28,
+        477,
+        270
+      ],
+      "destination": [
+        157,
+        10,
+        69,
+        100
+      ]
+    },
+    {
+      "frame": 2,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/production-144/hokko_tarumae/alpha.png",
+      "sourceSha256": "862f0b23823f41178dc06a62e4bd01d0eb839b6f2de485d193f530d262e7b950",
+      "crop": [
+        574,
+        28,
+        735,
+        270
+      ],
+      "destination": [
+        286,
+        10,
+        67,
+        100
+      ]
+    },
+    {
+      "frame": 3,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/production-144/hokko_tarumae/alpha.png",
+      "sourceSha256": "862f0b23823f41178dc06a62e4bd01d0eb839b6f2de485d193f530d262e7b950",
+      "crop": [
+        828,
+        29,
+        986,
+        270
+      ],
+      "destination": [
+        415,
+        10,
+        65,
+        100
+      ]
+    },
+    {
+      "frame": 4,
+      "sourceFrame": 4,
+      "source": "docs/art-source/motions/production-144/hokko_tarumae/alpha.png",
+      "sourceSha256": "862f0b23823f41178dc06a62e4bd01d0eb839b6f2de485d193f530d262e7b950",
+      "crop": [
+        41,
+        289,
+        224,
+        523
+      ],
+      "destination": [
+        26,
+        141,
+        76,
+        97
+      ]
+    },
+    {
+      "frame": 5,
+      "sourceFrame": 5,
+      "source": "docs/art-source/motions/production-144/hokko_tarumae/alpha.png",
+      "sourceSha256": "862f0b23823f41178dc06a62e4bd01d0eb839b6f2de485d193f530d262e7b950",
+      "crop": [
+        309,
+        285,
+        496,
+        524
+      ],
+      "destination": [
+        153,
+        139,
+        77,
+        99
+      ]
+    },
+    {
+      "frame": 6,
+      "sourceFrame": 6,
+      "source": "docs/art-source/motions/production-144/hokko_tarumae/alpha.png",
+      "sourceSha256": "862f0b23823f41178dc06a62e4bd01d0eb839b6f2de485d193f530d262e7b950",
+      "crop": [
+        564,
+        294,
+        736,
+        527
+      ],
+      "destination": [
+        284,
+        141,
+        71,
+        97
+      ]
+    },
+    {
+      "frame": 7,
+      "sourceFrame": 7,
+      "source": "docs/art-source/motions/production-144/hokko_tarumae/alpha.png",
+      "sourceSha256": "862f0b23823f41178dc06a62e4bd01d0eb839b6f2de485d193f530d262e7b950",
+      "crop": [
+        804,
+        294,
+        1003,
+        527
+      ],
+      "destination": [
+        407,
+        141,
+        82,
+        97
+      ]
+    },
+    {
+      "frame": 8,
+      "sourceFrame": 8,
+      "source": "docs/art-source/motions/production-144/hokko_tarumae/alpha.png",
+      "sourceSha256": "862f0b23823f41178dc06a62e4bd01d0eb839b6f2de485d193f530d262e7b950",
+      "crop": [
+        42,
+        549,
+        230,
+        799
+      ],
+      "destination": [
+        25,
+        262,
+        78,
+        104
+      ]
+    },
+    {
+      "frame": 9,
+      "sourceFrame": 9,
+      "source": "docs/art-source/motions/production-144/hokko_tarumae/alpha.png",
+      "sourceSha256": "862f0b23823f41178dc06a62e4bd01d0eb839b6f2de485d193f530d262e7b950",
+      "crop": [
+        313,
+        549,
+        474,
+        797
+      ],
+      "destination": [
+        158,
+        263,
+        67,
+        103
+      ]
+    },
+    {
+      "frame": 10,
+      "sourceFrame": 10,
+      "source": "docs/art-source/motions/production-144/hokko_tarumae/alpha.png",
+      "sourceSha256": "862f0b23823f41178dc06a62e4bd01d0eb839b6f2de485d193f530d262e7b950",
+      "crop": [
+        559,
+        549,
+        751,
+        799
+      ],
+      "destination": [
+        280,
+        262,
+        80,
+        104
+      ]
+    },
+    {
+      "frame": 11,
+      "sourceFrame": 11,
+      "source": "docs/art-source/motions/production-144/hokko_tarumae/alpha.png",
+      "sourceSha256": "862f0b23823f41178dc06a62e4bd01d0eb839b6f2de485d193f530d262e7b950",
+      "crop": [
+        822,
+        552,
+        974,
+        800
+      ],
+      "destination": [
+        416,
+        263,
+        63,
+        103
+      ]
+    },
+    {
+      "frame": 12,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/skill-revisions-2026-09-11/hokko_tarumae/generated.png",
+      "sourceSha256": "1685885ab130b33981460503f0c9ee4456b2e777175c61a5668bb05d4312a148",
+      "crop": [
+        236,
+        12,
+        560,
+        492
+      ],
+      "destination": [
+        29,
+        391,
+        69,
+        103
+      ]
+    },
+    {
+      "frame": 13,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/skill-revisions-2026-09-11/hokko_tarumae/generated.png",
+      "sourceSha256": "1685885ab130b33981460503f0c9ee4456b2e777175c61a5668bb05d4312a148",
+      "crop": [
+        863,
+        89,
+        1332,
+        506
+      ],
+      "destination": [
+        142,
+        405,
+        100,
+        89
+      ]
+    },
+    {
+      "frame": 14,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/skill-revisions-2026-09-11/hokko_tarumae/generated.png",
+      "sourceSha256": "1685885ab130b33981460503f0c9ee4456b2e777175c61a5668bb05d4312a148",
+      "crop": [
+        200,
+        579,
+        653,
+        996
+      ],
+      "destination": [
+        271,
+        405,
+        97,
+        89
+      ]
+    },
+    {
+      "frame": 15,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/skill-revisions-2026-09-11/hokko_tarumae/generated.png",
+      "sourceSha256": "1685885ab130b33981460503f0c9ee4456b2e777175c61a5668bb05d4312a148",
+      "crop": [
+        919,
+        512,
+        1294,
+        998
+      ],
+      "destination": [
+        408,
+        390,
+        80,
+        104
+      ]
+    },
+    {
+      "frame": 16,
+      "sourceFrame": 16,
+      "source": "docs/art-source/motions/production-144/hokko_tarumae/alpha.png",
+      "sourceSha256": "862f0b23823f41178dc06a62e4bd01d0eb839b6f2de485d193f530d262e7b950",
+      "crop": [
+        50,
+        1090,
+        230,
+        1294
+      ],
+      "destination": [
+        26,
+        537,
+        75,
+        85
+      ]
+    },
+    {
+      "frame": 17,
+      "sourceFrame": 17,
+      "source": "docs/art-source/motions/production-144/hokko_tarumae/alpha.png",
+      "sourceSha256": "862f0b23823f41178dc06a62e4bd01d0eb839b6f2de485d193f530d262e7b950",
+      "crop": [
+        310,
+        1111,
+        487,
+        1294
+      ],
+      "destination": [
+        155,
+        546,
+        73,
+        76
+      ]
+    },
+    {
+      "frame": 18,
+      "sourceFrame": 18,
+      "source": "docs/art-source/motions/production-144/hokko_tarumae/alpha.png",
+      "sourceSha256": "862f0b23823f41178dc06a62e4bd01d0eb839b6f2de485d193f530d262e7b950",
+      "crop": [
+        546,
+        1129,
+        744,
+        1291
+      ],
+      "destination": [
+        279,
+        555,
+        82,
+        67
+      ]
+    },
+    {
+      "frame": 19,
+      "sourceFrame": 19,
+      "source": "docs/art-source/motions/production-144/hokko_tarumae/alpha.png",
+      "sourceSha256": "862f0b23823f41178dc06a62e4bd01d0eb839b6f2de485d193f530d262e7b950",
+      "crop": [
+        782,
+        1181,
+        1003,
+        1287
+      ],
+      "destination": [
+        402,
+        578,
+        92,
+        44
+      ]
+    },
+    {
+      "frame": 20,
+      "sourceFrame": 20,
+      "source": "docs/art-source/motions/production-144/hokko_tarumae/alpha.png",
+      "sourceSha256": "862f0b23823f41178dc06a62e4bd01d0eb839b6f2de485d193f530d262e7b950",
+      "crop": [
+        45,
+        1304,
+        208,
+        1534
+      ],
+      "destination": [
+        30,
+        655,
+        68,
+        95
+      ]
+    },
+    {
+      "frame": 21,
+      "sourceFrame": 21,
+      "source": "docs/art-source/motions/production-144/hokko_tarumae/alpha.png",
+      "sourceSha256": "862f0b23823f41178dc06a62e4bd01d0eb839b6f2de485d193f530d262e7b950",
+      "crop": [
+        315,
+        1302,
+        473,
+        1516
+      ],
+      "destination": [
+        159,
+        661,
+        65,
+        89
+      ]
+    },
+    {
+      "frame": 22,
+      "sourceFrame": 22,
+      "source": "docs/art-source/motions/production-144/hokko_tarumae/alpha.png",
+      "sourceSha256": "862f0b23823f41178dc06a62e4bd01d0eb839b6f2de485d193f530d262e7b950",
+      "crop": [
+        565,
+        1314,
+        724,
+        1535
+      ],
+      "destination": [
+        287,
+        658,
+        66,
+        92
+      ]
+    },
+    {
+      "frame": 23,
+      "sourceFrame": 23,
+      "source": "docs/art-source/motions/production-144/hokko_tarumae/alpha.png",
+      "sourceSha256": "862f0b23823f41178dc06a62e4bd01d0eb839b6f2de485d193f530d262e7b950",
+      "crop": [
+        825,
+        1310,
+        991,
+        1534
+      ],
+      "destination": [
+        413,
+        657,
+        69,
+        93
+      ]
+    }
+  ],
+  "skillRevision": {
+    "scale": 0.2139917695473251,
+    "review": "docs/art-source/motions/skill-revisions-2026-09-11/hokko_tarumae/review.json",
+    "beforeFrames": [
+      "82650acd9106a2519c4ce1792b06f73e3fc52d7f91b02f5b87c52463153b7135",
+      "c958fa368e98d0e93ec5f6e11596a3d4a2b72b5b9dade4a402f0a534fa9ce336",
+      "81931e9e15717e13ec6afcfaeef9a0a51fe352fa46a2a13c0c12874b76ada350",
+      "f10ead13d15901e8b264429494259c53ce3ffe9f3421b38d80cd6155fb0b73fb",
+      "e1d3b360576756e40dc59a82f1cdaa720f7defcd72b9662cd2115ec7c2f2bcbc",
+      "afede6e8b7a8b8a73cf281dbc4587a9910157e1a0789a3fa92788ee5776ed97f",
+      "2e1228030289fdc9791de334abc64dfb28a256ab6e8167ae90dd6fb78be23de5",
+      "e6d91ef28ecd2cd72080b5810c61aa9509f6ff6e6f1a98f8dde75907812ed0ae",
+      "06fdd3c0632820ed9e47f4a1c86873a43671456329ca669230295036e8a22683",
+      "9a553e213bb82fe972d0e21387e45d440a03a12626a80e46addfe1fbb98a0aa5",
+      "ec07b286ed19fb28b10b28030e855311ae6f73b95288f38288a7d7e2337d0890",
+      "cc13e90a7a21d5916a4c189d8a59363049d28943354711b1e60691d3f806ee33",
+      "7c3ef20fa622a8a698947823835d4a8dc95ef072d63bea20596052a90ec35aea",
+      "03e10e42fa04f4110190af898e473edd41528c7fdcd1da198cabb30c33cbc8be",
+      "c300281b52ea169c5a53604f8c7ca0fe237f0012b093605af948a1a3b4b37af7",
+      "554823f43577a01b51bfc532f561d4ac2c1cc7354ab915e5f55d4e862d88bfbd",
+      "9663fafec2a927a2e973901243142e363355cbb5d2de7ac0f7ac1899f6625906",
+      "767509dd1d63fead3e1edcf022dfb0e1ca7e72afbccd2979a65e233616372fe3",
+      "8ed0593dc44cc5ec5c3f9d6c60c937ec7d59f4110dbac4c14319b72d53d1a2a5",
+      "0f8b7e53be98c09420f3ba7a52d3bb4d3beab5fc0b034ea7e1291052c3a1c555",
+      "28861c10680b482a66ce71905717df37a0b2a32aa89986d4d0c11b09f12dce3b",
+      "5179d9866e4fe7b0a229715dcd6ecc839aa13f47c450a5215b680441c7e70535",
+      "89704e8f6c75e1b1baee4702d22cc02d688893416ce1ce9e6145d2fd21979ff0",
+      "79a82a52abb490660f0e99a95ea93de63f6dd5130130cbd650c10d1d06e3c951"
+    ],
+    "afterFrames": [
+      "82650acd9106a2519c4ce1792b06f73e3fc52d7f91b02f5b87c52463153b7135",
+      "c958fa368e98d0e93ec5f6e11596a3d4a2b72b5b9dade4a402f0a534fa9ce336",
+      "81931e9e15717e13ec6afcfaeef9a0a51fe352fa46a2a13c0c12874b76ada350",
+      "f10ead13d15901e8b264429494259c53ce3ffe9f3421b38d80cd6155fb0b73fb",
+      "e1d3b360576756e40dc59a82f1cdaa720f7defcd72b9662cd2115ec7c2f2bcbc",
+      "afede6e8b7a8b8a73cf281dbc4587a9910157e1a0789a3fa92788ee5776ed97f",
+      "2e1228030289fdc9791de334abc64dfb28a256ab6e8167ae90dd6fb78be23de5",
+      "e6d91ef28ecd2cd72080b5810c61aa9509f6ff6e6f1a98f8dde75907812ed0ae",
+      "06fdd3c0632820ed9e47f4a1c86873a43671456329ca669230295036e8a22683",
+      "9a553e213bb82fe972d0e21387e45d440a03a12626a80e46addfe1fbb98a0aa5",
+      "ec07b286ed19fb28b10b28030e855311ae6f73b95288f38288a7d7e2337d0890",
+      "cc13e90a7a21d5916a4c189d8a59363049d28943354711b1e60691d3f806ee33",
+      "885e153ef7f6156815a9e2035e160d5e04aeb9690bffeb37da370faad554ea61",
+      "ba0232bcfd7c80119f2a273e0febe49103a12aa69d4898ff7556060495d573f9",
+      "841403c6c5bebc84745a16a991feb3642d9476679bb4cf14e3c18c0a25139f69",
+      "ff82a932b410b8984febc284e13236b4368b921ae8a375235f979201e861cef6",
+      "9663fafec2a927a2e973901243142e363355cbb5d2de7ac0f7ac1899f6625906",
+      "767509dd1d63fead3e1edcf022dfb0e1ca7e72afbccd2979a65e233616372fe3",
+      "8ed0593dc44cc5ec5c3f9d6c60c937ec7d59f4110dbac4c14319b72d53d1a2a5",
+      "0f8b7e53be98c09420f3ba7a52d3bb4d3beab5fc0b034ea7e1291052c3a1c555",
+      "28861c10680b482a66ce71905717df37a0b2a32aa89986d4d0c11b09f12dce3b",
+      "5179d9866e4fe7b0a229715dcd6ecc839aa13f47c450a5215b680441c7e70535",
+      "89704e8f6c75e1b1baee4702d22cc02d688893416ce1ce9e6145d2fd21979ff0",
+      "79a82a52abb490660f0e99a95ea93de63f6dd5130130cbd650c10d1d06e3c951"
+    ],
+    "unchangedFrames": 20,
+    "changedFrames": [
+      12,
+      13,
+      14,
+      15
+    ]
+  }
+}

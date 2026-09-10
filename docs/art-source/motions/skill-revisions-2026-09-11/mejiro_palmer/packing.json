@@ -1,0 +1,506 @@
+{
+  "format": "uft-baked-frames-v1",
+  "scale": 0.4444444444444444,
+  "anchor": [
+    64,
+    110
+  ],
+  "runtimeSha256": "e13f8a186f89dbc02fff189a37b7f7916eafe9bbe0fea9b89b3cf11414ec1446",
+  "frames": [
+    {
+      "frame": 0,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/production-144/mejiro_palmer/alpha.png",
+      "sourceSha256": "f0f054975883f80e0b5f2dc72c5737b8431246136a852715b56eb762cf484a99",
+      "crop": [
+        52,
+        39,
+        215,
+        269
+      ],
+      "destination": [
+        28,
+        8,
+        72,
+        102
+      ]
+    },
+    {
+      "frame": 1,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/production-144/mejiro_palmer/alpha.png",
+      "sourceSha256": "f0f054975883f80e0b5f2dc72c5737b8431246136a852715b56eb762cf484a99",
+      "crop": [
+        305,
+        37,
+        467,
+        269
+      ],
+      "destination": [
+        156,
+        7,
+        72,
+        103
+      ]
+    },
+    {
+      "frame": 2,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/production-144/mejiro_palmer/alpha.png",
+      "sourceSha256": "f0f054975883f80e0b5f2dc72c5737b8431246136a852715b56eb762cf484a99",
+      "crop": [
+        547,
+        39,
+        711,
+        269
+      ],
+      "destination": [
+        283,
+        8,
+        73,
+        102
+      ]
+    },
+    {
+      "frame": 3,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/production-144/mejiro_palmer/alpha.png",
+      "sourceSha256": "f0f054975883f80e0b5f2dc72c5737b8431246136a852715b56eb762cf484a99",
+      "crop": [
+        806,
+        40,
+        968,
+        269
+      ],
+      "destination": [
+        412,
+        8,
+        72,
+        102
+      ]
+    },
+    {
+      "frame": 4,
+      "sourceFrame": 4,
+      "source": "docs/art-source/motions/production-144/mejiro_palmer/alpha.png",
+      "sourceSha256": "f0f054975883f80e0b5f2dc72c5737b8431246136a852715b56eb762cf484a99",
+      "crop": [
+        41,
+        305,
+        238,
+        527
+      ],
+      "destination": [
+        20,
+        139,
+        88,
+        99
+      ]
+    },
+    {
+      "frame": 5,
+      "sourceFrame": 5,
+      "source": "docs/art-source/motions/production-144/mejiro_palmer/alpha.png",
+      "sourceSha256": "f0f054975883f80e0b5f2dc72c5737b8431246136a852715b56eb762cf484a99",
+      "crop": [
+        288,
+        300,
+        496,
+        527
+      ],
+      "destination": [
+        146,
+        137,
+        92,
+        101
+      ]
+    },
+    {
+      "frame": 6,
+      "sourceFrame": 6,
+      "source": "docs/art-source/motions/production-144/mejiro_palmer/alpha.png",
+      "sourceSha256": "f0f054975883f80e0b5f2dc72c5737b8431246136a852715b56eb762cf484a99",
+      "crop": [
+        542,
+        304,
+        744,
+        527
+      ],
+      "destination": [
+        275,
+        139,
+        90,
+        99
+      ]
+    },
+    {
+      "frame": 7,
+      "sourceFrame": 7,
+      "source": "docs/art-source/motions/production-144/mejiro_palmer/alpha.png",
+      "sourceSha256": "f0f054975883f80e0b5f2dc72c5737b8431246136a852715b56eb762cf484a99",
+      "crop": [
+        799,
+        303,
+        997,
+        527
+      ],
+      "destination": [
+        404,
+        138,
+        88,
+        100
+      ]
+    },
+    {
+      "frame": 8,
+      "sourceFrame": 8,
+      "source": "docs/art-source/motions/production-144/mejiro_palmer/alpha.png",
+      "sourceSha256": "f0f054975883f80e0b5f2dc72c5737b8431246136a852715b56eb762cf484a99",
+      "crop": [
+        57,
+        556,
+        223,
+        784
+      ],
+      "destination": [
+        27,
+        265,
+        74,
+        101
+      ]
+    },
+    {
+      "frame": 9,
+      "sourceFrame": 9,
+      "source": "docs/art-source/motions/production-144/mejiro_palmer/alpha.png",
+      "sourceSha256": "f0f054975883f80e0b5f2dc72c5737b8431246136a852715b56eb762cf484a99",
+      "crop": [
+        294,
+        553,
+        460,
+        784
+      ],
+      "destination": [
+        155,
+        263,
+        74,
+        103
+      ]
+    },
+    {
+      "frame": 10,
+      "sourceFrame": 10,
+      "source": "docs/art-source/motions/production-144/mejiro_palmer/alpha.png",
+      "sourceSha256": "f0f054975883f80e0b5f2dc72c5737b8431246136a852715b56eb762cf484a99",
+      "crop": [
+        535,
+        550,
+        729,
+        784
+      ],
+      "destination": [
+        277,
+        262,
+        86,
+        104
+      ]
+    },
+    {
+      "frame": 11,
+      "sourceFrame": 11,
+      "source": "docs/art-source/motions/production-144/mejiro_palmer/alpha.png",
+      "sourceSha256": "f0f054975883f80e0b5f2dc72c5737b8431246136a852715b56eb762cf484a99",
+      "crop": [
+        795,
+        559,
+        957,
+        784
+      ],
+      "destination": [
+        412,
+        266,
+        72,
+        100
+      ]
+    },
+    {
+      "frame": 12,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/skill-revisions-2026-09-11/mejiro_palmer/generated.png",
+      "sourceSha256": "ba6151b4c4cb9b8d7c544ea5561202be20d787fb148acc2440ee6c9a6334b13c",
+      "crop": [
+        294,
+        38,
+        574,
+        512
+      ],
+      "destination": [
+        33,
+        390,
+        61,
+        104
+      ]
+    },
+    {
+      "frame": 13,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/skill-revisions-2026-09-11/mejiro_palmer/generated.png",
+      "sourceSha256": "ba6151b4c4cb9b8d7c544ea5561202be20d787fb148acc2440ee6c9a6334b13c",
+      "crop": [
+        867,
+        74,
+        1274,
+        475
+      ],
+      "destination": [
+        147,
+        406,
+        89,
+        88
+      ]
+    },
+    {
+      "frame": 14,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/skill-revisions-2026-09-11/mejiro_palmer/generated.png",
+      "sourceSha256": "ba6151b4c4cb9b8d7c544ea5561202be20d787fb148acc2440ee6c9a6334b13c",
+      "crop": [
+        272,
+        512,
+        642,
+        986
+      ],
+      "destination": [
+        279,
+        390,
+        81,
+        104
+      ]
+    },
+    {
+      "frame": 15,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/skill-revisions-2026-09-11/mejiro_palmer/generated.png",
+      "sourceSha256": "ba6151b4c4cb9b8d7c544ea5561202be20d787fb148acc2440ee6c9a6334b13c",
+      "crop": [
+        917,
+        538,
+        1234,
+        987
+      ],
+      "destination": [
+        413,
+        395,
+        70,
+        99
+      ]
+    },
+    {
+      "frame": 16,
+      "sourceFrame": 16,
+      "source": "docs/art-source/motions/production-144/mejiro_palmer/alpha.png",
+      "sourceSha256": "f0f054975883f80e0b5f2dc72c5737b8431246136a852715b56eb762cf484a99",
+      "crop": [
+        51,
+        1067,
+        222,
+        1280
+      ],
+      "destination": [
+        26,
+        527,
+        76,
+        95
+      ]
+    },
+    {
+      "frame": 17,
+      "sourceFrame": 17,
+      "source": "docs/art-source/motions/production-144/mejiro_palmer/alpha.png",
+      "sourceSha256": "f0f054975883f80e0b5f2dc72c5737b8431246136a852715b56eb762cf484a99",
+      "crop": [
+        303,
+        1080,
+        475,
+        1274
+      ],
+      "destination": [
+        154,
+        536,
+        76,
+        86
+      ]
+    },
+    {
+      "frame": 18,
+      "sourceFrame": 18,
+      "source": "docs/art-source/motions/production-144/mejiro_palmer/alpha.png",
+      "sourceSha256": "f0f054975883f80e0b5f2dc72c5737b8431246136a852715b56eb762cf484a99",
+      "crop": [
+        540,
+        1101,
+        717,
+        1279
+      ],
+      "destination": [
+        280,
+        543,
+        79,
+        79
+      ]
+    },
+    {
+      "frame": 19,
+      "sourceFrame": 19,
+      "source": "docs/art-source/motions/production-144/mejiro_palmer/alpha.png",
+      "sourceSha256": "f0f054975883f80e0b5f2dc72c5737b8431246136a852715b56eb762cf484a99",
+      "crop": [
+        781,
+        1162,
+        991,
+        1271
+      ],
+      "destination": [
+        401,
+        574,
+        93,
+        48
+      ]
+    },
+    {
+      "frame": 20,
+      "sourceFrame": 20,
+      "source": "docs/art-source/motions/production-144/mejiro_palmer/alpha.png",
+      "sourceSha256": "f0f054975883f80e0b5f2dc72c5737b8431246136a852715b56eb762cf484a99",
+      "crop": [
+        43,
+        1302,
+        202,
+        1532
+      ],
+      "destination": [
+        28,
+        648,
+        71,
+        102
+      ]
+    },
+    {
+      "frame": 21,
+      "sourceFrame": 21,
+      "source": "docs/art-source/motions/production-144/mejiro_palmer/alpha.png",
+      "sourceSha256": "f0f054975883f80e0b5f2dc72c5737b8431246136a852715b56eb762cf484a99",
+      "crop": [
+        298,
+        1297,
+        455,
+        1531
+      ],
+      "destination": [
+        157,
+        646,
+        70,
+        104
+      ]
+    },
+    {
+      "frame": 22,
+      "sourceFrame": 22,
+      "source": "docs/art-source/motions/production-144/mejiro_palmer/alpha.png",
+      "sourceSha256": "f0f054975883f80e0b5f2dc72c5737b8431246136a852715b56eb762cf484a99",
+      "crop": [
+        544,
+        1299,
+        707,
+        1532
+      ],
+      "destination": [
+        284,
+        646,
+        72,
+        104
+      ]
+    },
+    {
+      "frame": 23,
+      "sourceFrame": 23,
+      "source": "docs/art-source/motions/production-144/mejiro_palmer/alpha.png",
+      "sourceSha256": "f0f054975883f80e0b5f2dc72c5737b8431246136a852715b56eb762cf484a99",
+      "crop": [
+        808,
+        1304,
+        966,
+        1532
+      ],
+      "destination": [
+        413,
+        649,
+        70,
+        101
+      ]
+    }
+  ],
+  "skillRevision": {
+    "scale": 0.21940928270042195,
+    "review": "docs/art-source/motions/skill-revisions-2026-09-11/mejiro_palmer/review.json",
+    "beforeFrames": [
+      "ba9522875197f0f6a7eaff416e71782deecab63f3d57ce2e069d763a13f0ccd5",
+      "aa5adbae11e62bb8fbe2f315d87065e0234d221802e6b829cf83dd6016431958",
+      "16b22ffa275e877b3389a2e6acefe096a9ca58fe77972ad0e8627d26dce087e4",
+      "87946d4dab5e0ecb0ad55ef099557c1b505b00917f8ba4e0dea4a7f2911ad32b",
+      "09a6926d21361cdab0d9b240bc3743e459c21e6fdad3da453f456cf71b169919",
+      "61aaea0d6856abf9959a9f97fbd6c6a5619b237a3dd2bf0219b8157afd3af86d",
+      "7587eaebd6b3d4b8886c27a77f5891a489617a85b33a16c5daa654118d3e331b",
+      "f1495f972028784696b797bdf28355dd34f96c7ad05a3d1f1d586d0e86c5b544",
+      "19fa81f431c9ecd266a4aa42c9df4d1c35fd63c8cc900e4b0038917a71c44230",
+      "b0c74c236e86ffaa68951ce7ec6ee7aede2c789dce0a15ad3ecb56edf37261d8",
+      "f14489cfccc9434b90be91dd6cb3650e653a9ab260add9dbd54fb9382240c76c",
+      "eb3ab36ae472084356bace811261d10f8492f8ec444304bf36f0ff831ef6ff81",
+      "77527ad28752e242b65e0c15a4f7f7318ead7aa54fd34d2bc6d0b411661e9e29",
+      "2d9adec2180401de3cf8686a4e28e754e1111eb45249148a3c1958f5d89ea07b",
+      "b02e7267d349f8f66c79b0578ec9f8f640b99c12cbb7b21f095123e4639516ac",
+      "7f91f17b318cb83be765843f98f1388e5818166af3cba52ee67b95bc176dddba",
+      "3fd1178d77a035609d1594a57638b4a85b9aee44f1ea90c0a5457624d74acdb0",
+      "14b0139345ab046093701bd613f89410ef0dd38f17d7376ffe1f7b38d6908151",
+      "a219c548d6571f1102ff396ca1a84626a69e80b849bf23b86e262098c71509c7",
+      "ffa45e6764793fd0c7822f7b981b0d704b55992f182a271c4458253938013231",
+      "a0262f3f7ce68834b31c279fe6c3e2d270f3b6626315e528b8019c7b23fbe75c",
+      "396bb7fe9c1a61c45621d64016d69401b2f7f8f2cbe327662f3f9ed112766cf5",
+      "d9f6d4862776c3f93daa2210fcf7a69610a037246ae23471c75db87b72ce0a89",
+      "e9a295894928454d65732241dab27198405e78c0eba49ac6ede7c9bd143059d0"
+    ],
+    "afterFrames": [
+      "ba9522875197f0f6a7eaff416e71782deecab63f3d57ce2e069d763a13f0ccd5",
+      "aa5adbae11e62bb8fbe2f315d87065e0234d221802e6b829cf83dd6016431958",
+      "16b22ffa275e877b3389a2e6acefe096a9ca58fe77972ad0e8627d26dce087e4",
+      "87946d4dab5e0ecb0ad55ef099557c1b505b00917f8ba4e0dea4a7f2911ad32b",
+      "09a6926d21361cdab0d9b240bc3743e459c21e6fdad3da453f456cf71b169919",
+      "61aaea0d6856abf9959a9f97fbd6c6a5619b237a3dd2bf0219b8157afd3af86d",
+      "7587eaebd6b3d4b8886c27a77f5891a489617a85b33a16c5daa654118d3e331b",
+      "f1495f972028784696b797bdf28355dd34f96c7ad05a3d1f1d586d0e86c5b544",
+      "19fa81f431c9ecd266a4aa42c9df4d1c35fd63c8cc900e4b0038917a71c44230",
+      "b0c74c236e86ffaa68951ce7ec6ee7aede2c789dce0a15ad3ecb56edf37261d8",
+      "f14489cfccc9434b90be91dd6cb3650e653a9ab260add9dbd54fb9382240c76c",
+      "eb3ab36ae472084356bace811261d10f8492f8ec444304bf36f0ff831ef6ff81",
+      "66162157b6c271c9094d30f623036259237d96d417298ccc778016913df642ca",
+      "93630df98545a733d49e5c2a6010c8dba8943905bdc7f06c2a5b279888b281bb",
+      "33372dcd25c4cfb1b46b622dea97ca1cfe1c6d6d46d93d4738c3c84c1fcc1d9e",
+      "3fdd2e098080f8edd32fa090a2cae55d5a35bc1b060eb1dca89d86ce48344702",
+      "3fd1178d77a035609d1594a57638b4a85b9aee44f1ea90c0a5457624d74acdb0",
+      "14b0139345ab046093701bd613f89410ef0dd38f17d7376ffe1f7b38d6908151",
+      "a219c548d6571f1102ff396ca1a84626a69e80b849bf23b86e262098c71509c7",
+      "ffa45e6764793fd0c7822f7b981b0d704b55992f182a271c4458253938013231",
+      "a0262f3f7ce68834b31c279fe6c3e2d270f3b6626315e528b8019c7b23fbe75c",
+      "396bb7fe9c1a61c45621d64016d69401b2f7f8f2cbe327662f3f9ed112766cf5",
+      "d9f6d4862776c3f93daa2210fcf7a69610a037246ae23471c75db87b72ce0a89",
+      "e9a295894928454d65732241dab27198405e78c0eba49ac6ede7c9bd143059d0"
+    ],
+    "unchangedFrames": 20,
+    "changedFrames": [
+      12,
+      13,
+      14,
+      15
+    ]
+  }
+}

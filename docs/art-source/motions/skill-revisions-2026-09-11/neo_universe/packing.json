@@ -1,0 +1,506 @@
+{
+  "format": "uft-baked-frames-v1",
+  "scale": 0.44534412955465585,
+  "anchor": [
+    64,
+    110
+  ],
+  "runtimeSha256": "33d5683746f1363f0c65424ad3f1640a43c7d98334d33df8f91f0a1b0c635971",
+  "frames": [
+    {
+      "frame": 0,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/production-144/neo_universe/alpha.png",
+      "sourceSha256": "81dd29a83676e5e133e51c4b9d7bb3bd51ed9983e57375d9503d825ca38e9bb8",
+      "crop": [
+        50,
+        29,
+        201,
+        261
+      ],
+      "destination": [
+        30,
+        7,
+        67,
+        103
+      ]
+    },
+    {
+      "frame": 1,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/production-144/neo_universe/alpha.png",
+      "sourceSha256": "81dd29a83676e5e133e51c4b9d7bb3bd51ed9983e57375d9503d825ca38e9bb8",
+      "crop": [
+        303,
+        30,
+        454,
+        261
+      ],
+      "destination": [
+        158,
+        7,
+        67,
+        103
+      ]
+    },
+    {
+      "frame": 2,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/production-144/neo_universe/alpha.png",
+      "sourceSha256": "81dd29a83676e5e133e51c4b9d7bb3bd51ed9983e57375d9503d825ca38e9bb8",
+      "crop": [
+        568,
+        33,
+        719,
+        261
+      ],
+      "destination": [
+        286,
+        8,
+        67,
+        102
+      ]
+    },
+    {
+      "frame": 3,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/production-144/neo_universe/alpha.png",
+      "sourceSha256": "81dd29a83676e5e133e51c4b9d7bb3bd51ed9983e57375d9503d825ca38e9bb8",
+      "crop": [
+        815,
+        30,
+        965,
+        261
+      ],
+      "destination": [
+        414,
+        7,
+        67,
+        103
+      ]
+    },
+    {
+      "frame": 4,
+      "sourceFrame": 4,
+      "source": "docs/art-source/motions/production-144/neo_universe/alpha.png",
+      "sourceSha256": "81dd29a83676e5e133e51c4b9d7bb3bd51ed9983e57375d9503d825ca38e9bb8",
+      "crop": [
+        43,
+        287,
+        222,
+        511
+      ],
+      "destination": [
+        24,
+        138,
+        80,
+        100
+      ]
+    },
+    {
+      "frame": 5,
+      "sourceFrame": 5,
+      "source": "docs/art-source/motions/production-144/neo_universe/alpha.png",
+      "sourceSha256": "81dd29a83676e5e133e51c4b9d7bb3bd51ed9983e57375d9503d825ca38e9bb8",
+      "crop": [
+        286,
+        285,
+        473,
+        512
+      ],
+      "destination": [
+        150,
+        137,
+        83,
+        101
+      ]
+    },
+    {
+      "frame": 6,
+      "sourceFrame": 6,
+      "source": "docs/art-source/motions/production-144/neo_universe/alpha.png",
+      "sourceSha256": "81dd29a83676e5e133e51c4b9d7bb3bd51ed9983e57375d9503d825ca38e9bb8",
+      "crop": [
+        542,
+        286,
+        734,
+        512
+      ],
+      "destination": [
+        277,
+        137,
+        86,
+        101
+      ]
+    },
+    {
+      "frame": 7,
+      "sourceFrame": 7,
+      "source": "docs/art-source/motions/production-144/neo_universe/alpha.png",
+      "sourceSha256": "81dd29a83676e5e133e51c4b9d7bb3bd51ed9983e57375d9503d825ca38e9bb8",
+      "crop": [
+        807,
+        290,
+        990,
+        510
+      ],
+      "destination": [
+        407,
+        140,
+        81,
+        98
+      ]
+    },
+    {
+      "frame": 8,
+      "sourceFrame": 8,
+      "source": "docs/art-source/motions/production-144/neo_universe/alpha.png",
+      "sourceSha256": "81dd29a83676e5e133e51c4b9d7bb3bd51ed9983e57375d9503d825ca38e9bb8",
+      "crop": [
+        48,
+        544,
+        221,
+        777
+      ],
+      "destination": [
+        25,
+        262,
+        77,
+        104
+      ]
+    },
+    {
+      "frame": 9,
+      "sourceFrame": 9,
+      "source": "docs/art-source/motions/production-144/neo_universe/alpha.png",
+      "sourceSha256": "81dd29a83676e5e133e51c4b9d7bb3bd51ed9983e57375d9503d825ca38e9bb8",
+      "crop": [
+        290,
+        557,
+        481,
+        777
+      ],
+      "destination": [
+        149,
+        268,
+        85,
+        98
+      ]
+    },
+    {
+      "frame": 10,
+      "sourceFrame": 10,
+      "source": "docs/art-source/motions/production-144/neo_universe/alpha.png",
+      "sourceSha256": "81dd29a83676e5e133e51c4b9d7bb3bd51ed9983e57375d9503d825ca38e9bb8",
+      "crop": [
+        544,
+        557,
+        758,
+        777
+      ],
+      "destination": [
+        272,
+        268,
+        95,
+        98
+      ]
+    },
+    {
+      "frame": 11,
+      "sourceFrame": 11,
+      "source": "docs/art-source/motions/production-144/neo_universe/alpha.png",
+      "sourceSha256": "81dd29a83676e5e133e51c4b9d7bb3bd51ed9983e57375d9503d825ca38e9bb8",
+      "crop": [
+        824,
+        551,
+        970,
+        777
+      ],
+      "destination": [
+        415,
+        265,
+        65,
+        101
+      ]
+    },
+    {
+      "frame": 12,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/skill-revisions-2026-09-11/neo_universe/generated.png",
+      "sourceSha256": "fb3f1b8268f5556a30fa4aa33bf5a470bd79b7de5a6d01874fc3926b63fdc9db",
+      "crop": [
+        129,
+        101,
+        583,
+        465
+      ],
+      "destination": [
+        17,
+        420,
+        93,
+        74
+      ]
+    },
+    {
+      "frame": 13,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/skill-revisions-2026-09-11/neo_universe/generated.png",
+      "sourceSha256": "fb3f1b8268f5556a30fa4aa33bf5a470bd79b7de5a6d01874fc3926b63fdc9db",
+      "crop": [
+        843,
+        38,
+        1359,
+        475
+      ],
+      "destination": [
+        139,
+        405,
+        105,
+        89
+      ]
+    },
+    {
+      "frame": 14,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/skill-revisions-2026-09-11/neo_universe/generated.png",
+      "sourceSha256": "fb3f1b8268f5556a30fa4aa33bf5a470bd79b7de5a6d01874fc3926b63fdc9db",
+      "crop": [
+        135,
+        613,
+        704,
+        988
+      ],
+      "destination": [
+        262,
+        418,
+        116,
+        76
+      ]
+    },
+    {
+      "frame": 15,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/skill-revisions-2026-09-11/neo_universe/generated.png",
+      "sourceSha256": "fb3f1b8268f5556a30fa4aa33bf5a470bd79b7de5a6d01874fc3926b63fdc9db",
+      "crop": [
+        891,
+        518,
+        1318,
+        977
+      ],
+      "destination": [
+        404,
+        400,
+        87,
+        94
+      ]
+    },
+    {
+      "frame": 16,
+      "sourceFrame": 16,
+      "source": "docs/art-source/motions/production-144/neo_universe/alpha.png",
+      "sourceSha256": "81dd29a83676e5e133e51c4b9d7bb3bd51ed9983e57375d9503d825ca38e9bb8",
+      "crop": [
+        56,
+        1078,
+        228,
+        1276
+      ],
+      "destination": [
+        25,
+        534,
+        77,
+        88
+      ]
+    },
+    {
+      "frame": 17,
+      "sourceFrame": 17,
+      "source": "docs/art-source/motions/production-144/neo_universe/alpha.png",
+      "sourceSha256": "81dd29a83676e5e133e51c4b9d7bb3bd51ed9983e57375d9503d825ca38e9bb8",
+      "crop": [
+        294,
+        1098,
+        466,
+        1276
+      ],
+      "destination": [
+        153,
+        543,
+        77,
+        79
+      ]
+    },
+    {
+      "frame": 18,
+      "sourceFrame": 18,
+      "source": "docs/art-source/motions/production-144/neo_universe/alpha.png",
+      "sourceSha256": "81dd29a83676e5e133e51c4b9d7bb3bd51ed9983e57375d9503d825ca38e9bb8",
+      "crop": [
+        546,
+        1110,
+        722,
+        1277
+      ],
+      "destination": [
+        281,
+        548,
+        78,
+        74
+      ]
+    },
+    {
+      "frame": 19,
+      "sourceFrame": 19,
+      "source": "docs/art-source/motions/production-144/neo_universe/alpha.png",
+      "sourceSha256": "81dd29a83676e5e133e51c4b9d7bb3bd51ed9983e57375d9503d825ca38e9bb8",
+      "crop": [
+        773,
+        1178,
+        1013,
+        1275
+      ],
+      "destination": [
+        394,
+        579,
+        107,
+        43
+      ]
+    },
+    {
+      "frame": 20,
+      "sourceFrame": 20,
+      "source": "docs/art-source/motions/production-144/neo_universe/alpha.png",
+      "sourceSha256": "81dd29a83676e5e133e51c4b9d7bb3bd51ed9983e57375d9503d825ca38e9bb8",
+      "crop": [
+        62,
+        1305,
+        209,
+        1532
+      ],
+      "destination": [
+        31,
+        649,
+        65,
+        101
+      ]
+    },
+    {
+      "frame": 21,
+      "sourceFrame": 21,
+      "source": "docs/art-source/motions/production-144/neo_universe/alpha.png",
+      "sourceSha256": "81dd29a83676e5e133e51c4b9d7bb3bd51ed9983e57375d9503d825ca38e9bb8",
+      "crop": [
+        307,
+        1301,
+        457,
+        1520
+      ],
+      "destination": [
+        158,
+        652,
+        67,
+        98
+      ]
+    },
+    {
+      "frame": 22,
+      "sourceFrame": 22,
+      "source": "docs/art-source/motions/production-144/neo_universe/alpha.png",
+      "sourceSha256": "81dd29a83676e5e133e51c4b9d7bb3bd51ed9983e57375d9503d825ca38e9bb8",
+      "crop": [
+        552,
+        1305,
+        704,
+        1532
+      ],
+      "destination": [
+        286,
+        649,
+        68,
+        101
+      ]
+    },
+    {
+      "frame": 23,
+      "sourceFrame": 23,
+      "source": "docs/art-source/motions/production-144/neo_universe/alpha.png",
+      "sourceSha256": "81dd29a83676e5e133e51c4b9d7bb3bd51ed9983e57375d9503d825ca38e9bb8",
+      "crop": [
+        807,
+        1307,
+        975,
+        1532
+      ],
+      "destination": [
+        410,
+        650,
+        75,
+        100
+      ]
+    }
+  ],
+  "skillRevision": {
+    "scale": 0.2038664323374341,
+    "review": "docs/art-source/motions/skill-revisions-2026-09-11/neo_universe/review.json",
+    "beforeFrames": [
+      "6b4b91991784fe2cc49973fa763ee395f22209354b781f381cb1a4223caf1133",
+      "d6545d4dc84353054566b5a8d6293585a2a630750fe968b06ce8d880fe595783",
+      "9f2cd7206baf78200e3d853fe9146540b5c707db35491c0c7a49e09eef535bf5",
+      "c62a84a5bccd705ed514fd0d3356d1e053d948a8b7d4f4f5d3d3627f9adc35c0",
+      "02dafc7d9db38c8608858974bf15d1bbe0a72cd5de2b617861dba644a3e24339",
+      "2030eb38bec733b2ab22fabc9325098857a5f1a16f6c57ba9fb71b3e7bfdc697",
+      "c3cc8b7fd51a1fd06275c3e6c68686447b3b9196c5f83c3f8e6011f3ac8cb93b",
+      "d3906e23264b33164eb07b1a73b74f10e3d63243d4d9245623e7731cd9d9416c",
+      "81394c711c076f029d037ee9ba9ddee743da4026444ce10908b59de97d1a4a4c",
+      "08b01e1b66bd5117bb616f49863de38212e5c7048cb9daf792bd514955cfb409",
+      "c436ce223dee8817a63c790878c5e4f3007ba28da57c3e28b21f3e2807580ce3",
+      "7a42778e5b14ad6e7a8d8f4514307dea99f90edfadddf4238877a81310a3be6e",
+      "7fea66325b8cfcb8b35da2c0e42271a3524763c4b29fb1c4b52744c08759e8de",
+      "2002130b1e6fa07a21cdae29bbe222a13a7c71e15d2f8675c2fbdcd5f132a16b",
+      "0339da09a15b5f9addfeb204c7835a1598ac654c340036ba0ef06fdbcb90969f",
+      "8018f395738a7f5ba52ffb1516069482ddc59dafdff9f35d312eb76804bc5754",
+      "9ffb6f9e28642f6b6295cad947d8bc214749d439f1d73d4ebc69f16a3a61da51",
+      "6d7549aa36fdb138f12dbcfad3427f281785cbe75e401c8098ee554e4a3aaa82",
+      "bc14a2d049d00ef2f8a118f4f41f11b723a4c434f88fe2dc8faca3da6f241ac8",
+      "5a02567f40671514322fe05d815d8c8ad62d9d68dc35c6e3add7a2e9e4b2e2ef",
+      "82fe316612ac6d11703ecfa854a9d088e0801cf48ad3a20a200f4be5650b6e2a",
+      "1b74eac5fba441630a731c7484d17d3743fd11026b7c36e546af826bdadc90bd",
+      "f3e8404f0a682400a97cb3bb098db1772770da5a66246d172f1596ec4f2951d1",
+      "f58b9b6d188dd98b5f701bd34e63431ef5c81bda127539b615057e3e1d0b5dfb"
+    ],
+    "afterFrames": [
+      "6b4b91991784fe2cc49973fa763ee395f22209354b781f381cb1a4223caf1133",
+      "d6545d4dc84353054566b5a8d6293585a2a630750fe968b06ce8d880fe595783",
+      "9f2cd7206baf78200e3d853fe9146540b5c707db35491c0c7a49e09eef535bf5",
+      "c62a84a5bccd705ed514fd0d3356d1e053d948a8b7d4f4f5d3d3627f9adc35c0",
+      "02dafc7d9db38c8608858974bf15d1bbe0a72cd5de2b617861dba644a3e24339",
+      "2030eb38bec733b2ab22fabc9325098857a5f1a16f6c57ba9fb71b3e7bfdc697",
+      "c3cc8b7fd51a1fd06275c3e6c68686447b3b9196c5f83c3f8e6011f3ac8cb93b",
+      "d3906e23264b33164eb07b1a73b74f10e3d63243d4d9245623e7731cd9d9416c",
+      "81394c711c076f029d037ee9ba9ddee743da4026444ce10908b59de97d1a4a4c",
+      "08b01e1b66bd5117bb616f49863de38212e5c7048cb9daf792bd514955cfb409",
+      "c436ce223dee8817a63c790878c5e4f3007ba28da57c3e28b21f3e2807580ce3",
+      "7a42778e5b14ad6e7a8d8f4514307dea99f90edfadddf4238877a81310a3be6e",
+      "ed6a12963ee217b6dac0509931eaf4a54dfb7de3058105368911871411edbff6",
+      "3c650464c10f7cb251edb19bfe52d9e2f36841fc5d68690ce5a9c226bc5c21e8",
+      "774c209efe585a4b81b91f51f7853c9fbe0096f2fbd49fa1fdc4bb6e4f5219ed",
+      "328f9f4571b5266e0d3964fa4190258751587a2c8a2646a76ff79496ee0a5a73",
+      "9ffb6f9e28642f6b6295cad947d8bc214749d439f1d73d4ebc69f16a3a61da51",
+      "6d7549aa36fdb138f12dbcfad3427f281785cbe75e401c8098ee554e4a3aaa82",
+      "bc14a2d049d00ef2f8a118f4f41f11b723a4c434f88fe2dc8faca3da6f241ac8",
+      "5a02567f40671514322fe05d815d8c8ad62d9d68dc35c6e3add7a2e9e4b2e2ef",
+      "82fe316612ac6d11703ecfa854a9d088e0801cf48ad3a20a200f4be5650b6e2a",
+      "1b74eac5fba441630a731c7484d17d3743fd11026b7c36e546af826bdadc90bd",
+      "f3e8404f0a682400a97cb3bb098db1772770da5a66246d172f1596ec4f2951d1",
+      "f58b9b6d188dd98b5f701bd34e63431ef5c81bda127539b615057e3e1d0b5dfb"
+    ],
+    "unchangedFrames": 20,
+    "changedFrames": [
+      12,
+      13,
+      14,
+      15
+    ]
+  }
+}

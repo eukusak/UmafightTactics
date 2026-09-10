@@ -1,0 +1,9 @@
+{
+  "mode": "built-in image_gen",
+  "prompt": "Transparent background. Edit reference Vodka into a 2 by 2 sheet of four full-body chibi skill animation poses. Preserve short dark red hair with side fringe, horse ears, green black gold racing outfit, gloves and tail, same proportions and crisp cel shading. Split barrage spell: top left draw both hands back loading three small green diamond bolts; top right wide stance thrust hands to fire three green bolts fanning toward upper right, middle right and lower right; bottom left shift weight to opposite foot and repeat the three-way burst with visible recoil and changed arms; bottom right lower arms to ready stance. Four readable motion beats, tiny compact solid green effects entirely inside cells. Only four figures, no labels. Real PNG cutouts with alpha, no background design or checkerboard, no ground shadows. Wide transparent gutters.",
+  "references": [
+    "public/assets/motions/vodka.png"
+  ],
+  "referenceCommit": "3c950f3ce3476b152f2ad3d99fd296327a3c82bf",
+  "skillSignature": "cf13baf5401d112c2ef72db9f0a070a6c5a029f7511c036ca4163a7ca08146b2"
+}

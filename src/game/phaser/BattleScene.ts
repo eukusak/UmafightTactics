@@ -305,7 +305,7 @@ export class BattleScene extends Phaser.Scene {
       if (!actor) return;
       if (this.playbackTime - event.t >= .6) return;
       if (this.showNumbers && (event.damage > 0 || event.absorbed > 0)) {
-        const critical = this.frames[this.eventIndex].events.some((e) => e.type === 'ATTACK' && e.source === event.source && e.target === event.target && e.crit);
+        const critical = event.crit || this.frames[this.eventIndex].events.some((e) => e.type === 'ATTACK' && e.source === event.source && e.target === event.target && e.crit);
         const label = this.add.text(actor.container.x, actor.container.y - 78, event.damage > 0 ? `${critical ? '✦ ' : ''}${Math.round(event.damage)}` : '방어', { fontFamily: 'Noto Sans KR Variable, sans-serif', fontSize: critical ? '26px' : '20px', color: critical ? '#ffdc80' : event.isSkill ? '#dac7ff' : '#ffffff', stroke: '#182238', strokeThickness: 4 }).setOrigin(.5).setDepth(900);
         const x = label.x, y = label.y;
         this.track(label, event.t, .6, (t) => label.setPosition(x, y - t * 36).setAlpha(1 - t));
@@ -349,6 +349,28 @@ export class BattleScene extends Phaser.Scene {
     const buff = event.kind === 'STAT_MUL' || event.kind === 'STAT_ADD';
     if (buff && this.frames[this.eventIndex].events.find(e => e.type === 'SKILL_EFFECT' && e.source === event.source && (e.kind === 'STAT_MUL' || e.kind === 'STAT_ADD')) !== event) return;
     if (!healing && !shield && !buff && !['DAMAGE', 'DAMAGE_MAXHP_PCT', 'APPLY_STATUS', 'DASH', 'TAUNT'].includes(event.kind)) return;
+    const source = this.actors.get(event.source);
+    const signature = def.skill.choreography;
+    const accent = tint(signature?.accent ?? '#ffffff');
+    const points = event.targets.map(id => this.actors.get(id)).filter((a): a is NonNullable<typeof a> => !!a).map(a => ({ x: a.container.x, y: a.container.y - 22 * a.container.scaleX }));
+    if (source && points.length && (event.shape || event.kind === 'DASH')) {
+      const origin = { x: source.container.x, y: source.container.y - 22 * source.container.scaleX };
+      const geometry = this.add.graphics().setDepth(818);
+      geometry.lineStyle(event.shape === 'LINE' ? 7 : 3, color, .8);
+      if (event.shape === 'CONE') {
+        for (const end of points) geometry.lineBetween(origin.x, origin.y, end.x, end.y);
+        geometry.lineStyle(1, accent, .7);
+        for (let i = 1; i < points.length; i++) geometry.lineBetween(points[i - 1].x, points[i - 1].y, points[i].x, points[i].y);
+      } else {
+        let from = origin;
+        for (const end of points) {
+          geometry.lineBetween(from.x, from.y, end.x, end.y);
+          geometry.fillStyle(accent, .9).fillRect(end.x - 3, end.y - 3, 6, 6);
+          if (event.shape === 'CHAIN') from = end;
+        }
+      }
+      this.track(geometry, event.t, .4, p => geometry.setAlpha(1 - p));
+    }
     const texture = healing ? 'vfx_heal' : shield ? 'vfx_shield' : def.skill.vfxKey;
     for (const id of event.targets) {
       const actor = this.actors.get(id);
@@ -360,6 +382,17 @@ export class BattleScene extends Phaser.Scene {
       const radius = (shield ? 38 : healing ? 22 : 28) * actor.container.scaleX;
       const ring = this.add.circle(x, y, radius, color, .08).setStrokeStyle(shield ? 3 : 2, color, .85).setDepth(819);
       this.track(ring, event.t, .4, (p) => ring.setScale(shield ? 1 : .5 + p).setAlpha(1 - p));
+      if (signature?.emblem !== undefined) {
+        const glyph = this.add.graphics().setPosition(x, y).setDepth(821);
+        const seed = signature.emblem + 1, count = 3 + seed % 5;
+        glyph.fillStyle(accent, .9);
+        for (let i = 0; i < count; i++) {
+          const angle = i * Math.PI * 2 / count + (seed % 17) * .17 + (event.effectIndex ?? 0) * .4;
+          const spread = radius * (.55 + (seed % 3) * .15);
+          glyph.fillRect(Math.cos(angle) * spread - 2, Math.sin(angle) * spread - 2, 4, 4);
+        }
+        this.track(glyph, event.t, .4, p => glyph.setScale(1 + p * .8).setRotation(p * (seed % 2 ? 1 : -1)).setAlpha(1 - p));
+      }
       if (this.textures.exists(texture)) {
         const effect = this.add.image(x, y + 18 * actor.container.scaleX, texture, 0).setDepth(820).setScale(actor.container.scaleX * .65);
         // Normal alpha blending works identically on WebGL and Canvas.

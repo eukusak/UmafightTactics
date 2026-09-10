@@ -1,0 +1,506 @@
+{
+  "format": "uft-baked-frames-v1",
+  "scale": 0.40310077519379844,
+  "anchor": [
+    64,
+    110
+  ],
+  "runtimeSha256": "c0f327e9074b8ea44b9fff94ab0ed796b67941939ec161f7e38a663dee01ec64",
+  "frames": [
+    {
+      "frame": 0,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/production-144/sakura_chitose_o/alpha.png",
+      "sourceSha256": "e929bfc682e3f7914523b34892a5f1ddf9f4e29286ec5ee74fca32349c6aa707",
+      "crop": [
+        45,
+        4,
+        219,
+        256
+      ],
+      "destination": [
+        29,
+        8,
+        70,
+        102
+      ]
+    },
+    {
+      "frame": 1,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/production-144/sakura_chitose_o/alpha.png",
+      "sourceSha256": "e929bfc682e3f7914523b34892a5f1ddf9f4e29286ec5ee74fca32349c6aa707",
+      "crop": [
+        307,
+        7,
+        471,
+        256
+      ],
+      "destination": [
+        159,
+        10,
+        66,
+        100
+      ]
+    },
+    {
+      "frame": 2,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/production-144/sakura_chitose_o/alpha.png",
+      "sourceSha256": "e929bfc682e3f7914523b34892a5f1ddf9f4e29286ec5ee74fca32349c6aa707",
+      "crop": [
+        560,
+        7,
+        718,
+        256
+      ],
+      "destination": [
+        288,
+        10,
+        64,
+        100
+      ]
+    },
+    {
+      "frame": 3,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/production-144/sakura_chitose_o/alpha.png",
+      "sourceSha256": "e929bfc682e3f7914523b34892a5f1ddf9f4e29286ec5ee74fca32349c6aa707",
+      "crop": [
+        813,
+        8,
+        967,
+        256
+      ],
+      "destination": [
+        417,
+        10,
+        62,
+        100
+      ]
+    },
+    {
+      "frame": 4,
+      "sourceFrame": 4,
+      "source": "docs/art-source/motions/production-144/sakura_chitose_o/alpha.png",
+      "sourceSha256": "e929bfc682e3f7914523b34892a5f1ddf9f4e29286ec5ee74fca32349c6aa707",
+      "crop": [
+        29,
+        267,
+        228,
+        513
+      ],
+      "destination": [
+        24,
+        139,
+        80,
+        99
+      ]
+    },
+    {
+      "frame": 5,
+      "sourceFrame": 5,
+      "source": "docs/art-source/motions/production-144/sakura_chitose_o/alpha.png",
+      "sourceSha256": "e929bfc682e3f7914523b34892a5f1ddf9f4e29286ec5ee74fca32349c6aa707",
+      "crop": [
+        304,
+        268,
+        473,
+        513
+      ],
+      "destination": [
+        158,
+        139,
+        68,
+        99
+      ]
+    },
+    {
+      "frame": 6,
+      "sourceFrame": 6,
+      "source": "docs/art-source/motions/production-144/sakura_chitose_o/alpha.png",
+      "sourceSha256": "e929bfc682e3f7914523b34892a5f1ddf9f4e29286ec5ee74fca32349c6aa707",
+      "crop": [
+        537,
+        270,
+        737,
+        513
+      ],
+      "destination": [
+        279,
+        140,
+        81,
+        98
+      ]
+    },
+    {
+      "frame": 7,
+      "sourceFrame": 7,
+      "source": "docs/art-source/motions/production-144/sakura_chitose_o/alpha.png",
+      "sourceSha256": "e929bfc682e3f7914523b34892a5f1ddf9f4e29286ec5ee74fca32349c6aa707",
+      "crop": [
+        819,
+        268,
+        987,
+        513
+      ],
+      "destination": [
+        414,
+        139,
+        68,
+        99
+      ]
+    },
+    {
+      "frame": 8,
+      "sourceFrame": 8,
+      "source": "docs/art-source/motions/production-144/sakura_chitose_o/alpha.png",
+      "sourceSha256": "e929bfc682e3f7914523b34892a5f1ddf9f4e29286ec5ee74fca32349c6aa707",
+      "crop": [
+        43,
+        513,
+        244,
+        768
+      ],
+      "destination": [
+        23,
+        263,
+        81,
+        103
+      ]
+    },
+    {
+      "frame": 9,
+      "sourceFrame": 9,
+      "source": "docs/art-source/motions/production-144/sakura_chitose_o/alpha.png",
+      "sourceSha256": "e929bfc682e3f7914523b34892a5f1ddf9f4e29286ec5ee74fca32349c6aa707",
+      "crop": [
+        303,
+        515,
+        469,
+        768
+      ],
+      "destination": [
+        158,
+        264,
+        67,
+        102
+      ]
+    },
+    {
+      "frame": 10,
+      "sourceFrame": 10,
+      "source": "docs/art-source/motions/production-144/sakura_chitose_o/alpha.png",
+      "sourceSha256": "e929bfc682e3f7914523b34892a5f1ddf9f4e29286ec5ee74fca32349c6aa707",
+      "crop": [
+        550,
+        516,
+        766,
+        768
+      ],
+      "destination": [
+        276,
+        264,
+        87,
+        102
+      ]
+    },
+    {
+      "frame": 11,
+      "sourceFrame": 11,
+      "source": "docs/art-source/motions/production-144/sakura_chitose_o/alpha.png",
+      "sourceSha256": "e929bfc682e3f7914523b34892a5f1ddf9f4e29286ec5ee74fca32349c6aa707",
+      "crop": [
+        812,
+        514,
+        974,
+        768
+      ],
+      "destination": [
+        415,
+        264,
+        65,
+        102
+      ]
+    },
+    {
+      "frame": 12,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/skill-revisions-2026-09-11/sakura_chitose_o/generated.png",
+      "sourceSha256": "6807b6c6c83058da5144ff4c2822186863cfcf67072ef26fc5ac48de6075f018",
+      "crop": [
+        167,
+        24,
+        525,
+        495
+      ],
+      "destination": [
+        26,
+        395,
+        76,
+        99
+      ]
+    },
+    {
+      "frame": 13,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/skill-revisions-2026-09-11/sakura_chitose_o/generated.png",
+      "sourceSha256": "6807b6c6c83058da5144ff4c2822186863cfcf67072ef26fc5ac48de6075f018",
+      "crop": [
+        874,
+        32,
+        1424,
+        499
+      ],
+      "destination": [
+        134,
+        396,
+        116,
+        98
+      ]
+    },
+    {
+      "frame": 14,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/skill-revisions-2026-09-11/sakura_chitose_o/generated.png",
+      "sourceSha256": "6807b6c6c83058da5144ff4c2822186863cfcf67072ef26fc5ac48de6075f018",
+      "crop": [
+        194,
+        531,
+        547,
+        998
+      ],
+      "destination": [
+        283,
+        396,
+        74,
+        98
+      ]
+    },
+    {
+      "frame": 15,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/skill-revisions-2026-09-11/sakura_chitose_o/generated.png",
+      "sourceSha256": "6807b6c6c83058da5144ff4c2822186863cfcf67072ef26fc5ac48de6075f018",
+      "crop": [
+        917,
+        527,
+        1395,
+        995
+      ],
+      "destination": [
+        397,
+        395,
+        101,
+        99
+      ]
+    },
+    {
+      "frame": 16,
+      "sourceFrame": 16,
+      "source": "docs/art-source/motions/production-144/sakura_chitose_o/alpha.png",
+      "sourceSha256": "e929bfc682e3f7914523b34892a5f1ddf9f4e29286ec5ee74fca32349c6aa707",
+      "crop": [
+        38,
+        1036,
+        220,
+        1282
+      ],
+      "destination": [
+        27,
+        523,
+        73,
+        99
+      ]
+    },
+    {
+      "frame": 17,
+      "sourceFrame": 17,
+      "source": "docs/art-source/motions/production-144/sakura_chitose_o/alpha.png",
+      "sourceSha256": "e929bfc682e3f7914523b34892a5f1ddf9f4e29286ec5ee74fca32349c6aa707",
+      "crop": [
+        286,
+        1036,
+        473,
+        1282
+      ],
+      "destination": [
+        154,
+        523,
+        75,
+        99
+      ]
+    },
+    {
+      "frame": 18,
+      "sourceFrame": 18,
+      "source": "docs/art-source/motions/production-144/sakura_chitose_o/alpha.png",
+      "sourceSha256": "e929bfc682e3f7914523b34892a5f1ddf9f4e29286ec5ee74fca32349c6aa707",
+      "crop": [
+        525,
+        1071,
+        736,
+        1282
+      ],
+      "destination": [
+        277,
+        537,
+        85,
+        85
+      ]
+    },
+    {
+      "frame": 19,
+      "sourceFrame": 19,
+      "source": "docs/art-source/motions/production-144/sakura_chitose_o/alpha.png",
+      "sourceSha256": "e929bfc682e3f7914523b34892a5f1ddf9f4e29286ec5ee74fca32349c6aa707",
+      "crop": [
+        768,
+        1140,
+        1013,
+        1282
+      ],
+      "destination": [
+        398,
+        565,
+        99,
+        57
+      ]
+    },
+    {
+      "frame": 20,
+      "sourceFrame": 20,
+      "source": "docs/art-source/motions/production-144/sakura_chitose_o/alpha.png",
+      "sourceSha256": "e929bfc682e3f7914523b34892a5f1ddf9f4e29286ec5ee74fca32349c6aa707",
+      "crop": [
+        44,
+        1282,
+        214,
+        1536
+      ],
+      "destination": [
+        29,
+        648,
+        69,
+        102
+      ]
+    },
+    {
+      "frame": 21,
+      "sourceFrame": 21,
+      "source": "docs/art-source/motions/production-144/sakura_chitose_o/alpha.png",
+      "sourceSha256": "e929bfc682e3f7914523b34892a5f1ddf9f4e29286ec5ee74fca32349c6aa707",
+      "crop": [
+        297,
+        1282,
+        462,
+        1536
+      ],
+      "destination": [
+        158,
+        648,
+        67,
+        102
+      ]
+    },
+    {
+      "frame": 22,
+      "sourceFrame": 22,
+      "source": "docs/art-source/motions/production-144/sakura_chitose_o/alpha.png",
+      "sourceSha256": "e929bfc682e3f7914523b34892a5f1ddf9f4e29286ec5ee74fca32349c6aa707",
+      "crop": [
+        549,
+        1282,
+        724,
+        1536
+      ],
+      "destination": [
+        284,
+        648,
+        71,
+        102
+      ]
+    },
+    {
+      "frame": 23,
+      "sourceFrame": 23,
+      "source": "docs/art-source/motions/production-144/sakura_chitose_o/alpha.png",
+      "sourceSha256": "e929bfc682e3f7914523b34892a5f1ddf9f4e29286ec5ee74fca32349c6aa707",
+      "crop": [
+        799,
+        1282,
+        979,
+        1536
+      ],
+      "destination": [
+        411,
+        648,
+        73,
+        102
+      ]
+    }
+  ],
+  "skillRevision": {
+    "scale": 0.2109090909090909,
+    "review": "docs/art-source/motions/skill-revisions-2026-09-11/sakura_chitose_o/review.json",
+    "beforeFrames": [
+      "253e6511712f45ccf008b0e785b3ffefa5dd8ecbc07d55a90216306a0ca4b0e7",
+      "a37cb02ce91e67e8b3e3c9b7e369b1866e5b2127389da0b673d3aad03a55a343",
+      "93996ae1a7b77e5e0a39b309887de59aa9685f941b0289c78632860545712dc7",
+      "80e48e35479025965441e83ca10fd8215b331a27e0c43c8770e9b2633eb9702e",
+      "12f42e6a7debadb4a1d20542c623fe0ba5577170b43f0886557824e90c8e6164",
+      "fd8182416196e1c0bc1b87d23c5fe9afb0fad4ff514a558ef3726cc4b497c439",
+      "8bd718b9b4e34a85449fdcbfc1f34036000c81493cd5745976201c5585585d18",
+      "87edb990b22d210f4186f5f18e1e6a0f6a471fb5f62e9771c029f024a9c1edd3",
+      "1bb67309329c5b10703928ce6564f878d6f5bd9bc98e2919983c460d503383ca",
+      "f02ca311a97007dc59418fe87bf93b880434edc4e4a834c36c80dd84aafa5387",
+      "1e47f852d24af98caf7aed81f155d32c16ec45c598d4faa5348422e39981d6b1",
+      "53c3406ba433a6c1511f5af6ba9b2cf768b1131580a81f6896541361e3803a9c",
+      "1cc14d29f3b9bb7305a64215671757a02578de97ab50ee0f97d8e009488e0ed1",
+      "aa2f5b0ac1516bd0241686904b6e01eb35e10f2b4ae3386558091e9c6dd17f21",
+      "6c2375a4fb16350ab696682aa2b22f0727eef3a87f7bf978b23fc4972091892b",
+      "2473a3976d4af3e3cdaffdfed99623712c7d8fde89a9dcb580a06b9c4277c9f9",
+      "44f3aa8034650e525623689443181f94f4ca2c4def94cb4b56568d69a4814d4d",
+      "1ef7eb2e47e92af63f3840a7ca46f2e79b78188c2aaea8ae8f6bc248868543c4",
+      "cf2bedfea097c803a10f902dc28d4bb06153633a209fa3732f3e44f0541c9492",
+      "41f70b56baeee8d56b5b0e9e48db66545be0b8d606743d999c7da5251bed4b80",
+      "7c3fe0b4e39e5923cded36463cd7cc57d4abeef9abd2ae395a0a8c3fe29302a7",
+      "65c1dfd1ba9ef88711567e5aa573d1adc9af6fd8bffccd5b97d84878a038368b",
+      "3d0668556e634b0d825f8cc4e25adb2cd6f9f49b68f1368f2bb4a5740941dc82",
+      "10c82a0bd8715edf77c2efd67e42b70f96d2754becc28fae4c0d288e268a821b"
+    ],
+    "afterFrames": [
+      "253e6511712f45ccf008b0e785b3ffefa5dd8ecbc07d55a90216306a0ca4b0e7",
+      "a37cb02ce91e67e8b3e3c9b7e369b1866e5b2127389da0b673d3aad03a55a343",
+      "93996ae1a7b77e5e0a39b309887de59aa9685f941b0289c78632860545712dc7",
+      "80e48e35479025965441e83ca10fd8215b331a27e0c43c8770e9b2633eb9702e",
+      "12f42e6a7debadb4a1d20542c623fe0ba5577170b43f0886557824e90c8e6164",
+      "fd8182416196e1c0bc1b87d23c5fe9afb0fad4ff514a558ef3726cc4b497c439",
+      "8bd718b9b4e34a85449fdcbfc1f34036000c81493cd5745976201c5585585d18",
+      "87edb990b22d210f4186f5f18e1e6a0f6a471fb5f62e9771c029f024a9c1edd3",
+      "1bb67309329c5b10703928ce6564f878d6f5bd9bc98e2919983c460d503383ca",
+      "f02ca311a97007dc59418fe87bf93b880434edc4e4a834c36c80dd84aafa5387",
+      "1e47f852d24af98caf7aed81f155d32c16ec45c598d4faa5348422e39981d6b1",
+      "53c3406ba433a6c1511f5af6ba9b2cf768b1131580a81f6896541361e3803a9c",
+      "51d90184462a79429de0c9cc4f0eacecf53416ed64d9486a8de96ed532e1b97b",
+      "e35357946f6e436355a82823017a445db9cb3e8b185a9e367e07209f5a8fa9e7",
+      "d64302529af9bcec56889b8937ae204595ef1022a6ab51cd415e8ac347bba3f7",
+      "6f5ac26bcdfef328883d6bd574a3654549a5515d2c28ec7e77840dc7d9f9a219",
+      "44f3aa8034650e525623689443181f94f4ca2c4def94cb4b56568d69a4814d4d",
+      "1ef7eb2e47e92af63f3840a7ca46f2e79b78188c2aaea8ae8f6bc248868543c4",
+      "cf2bedfea097c803a10f902dc28d4bb06153633a209fa3732f3e44f0541c9492",
+      "41f70b56baeee8d56b5b0e9e48db66545be0b8d606743d999c7da5251bed4b80",
+      "7c3fe0b4e39e5923cded36463cd7cc57d4abeef9abd2ae395a0a8c3fe29302a7",
+      "65c1dfd1ba9ef88711567e5aa573d1adc9af6fd8bffccd5b97d84878a038368b",
+      "3d0668556e634b0d825f8cc4e25adb2cd6f9f49b68f1368f2bb4a5740941dc82",
+      "10c82a0bd8715edf77c2efd67e42b70f96d2754becc28fae4c0d288e268a821b"
+    ],
+    "unchangedFrames": 20,
+    "changedFrames": [
+      12,
+      13,
+      14,
+      15
+    ]
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "date": "2026-09-10",
+  "baseCommit": "1878aa187b39eb81245320b6f1a1d69645ba3019",
+  "unitTests": 333,
+  "browserTests": 10,
+  "browserViewports": [
+    "1920x1080",
+    "1366x768",
+    "phone touch fixture"
+  ],
+  "checks": [
+    "data:build",
+    "data:validate",
+    "typecheck",
+    "lint",
+    "STRICT_ART=1 check:art",
+    "production build"
+  ],
+  "art": {
+    "verified": 514,
+    "missing": 0,
+    "mismatched": 0
+  },
+  "simulation": [
+    {
+      "season": "s1",
+      "matches": 10,
+      "baseSeed": 20260907,
+      "averageEndStage": 5.7,
+      "averageRounds": 33,
+      "battles": 1297,
+      "poolConservation": true,
+      "warnings": [
+        "trait 원팀 top1 share 40.0% exceeds 25%"
+      ]
+    },
+    {
+      "season": "s2",
+      "matches": 10,
+      "baseSeed": 20260907,
+      "averageEndStage": 5.9,
+      "averageRounds": 33.5,
+      "battles": 1338,
+      "poolConservation": true,
+      "warnings": [
+        "trait 중거리 top1 share 30.0% exceeds 25%"
+      ]
+    },
+    {
+      "season": "s3",
+      "matches": 10,
+      "baseSeed": 20260907,
+      "averageEndStage": 5.8,
+      "averageRounds": 32.5,
+      "battles": 1311,
+      "poolConservation": true,
+      "warnings": [
+        "trait 도주 top1 share 50.0% exceeds 25%"
+      ]
+    },
+    {
+      "season": "s4",
+      "matches": 10,
+      "baseSeed": 20260907,
+      "averageEndStage": 5.8,
+      "averageRounds": 32.7,
+      "battles": 1325,
+      "poolConservation": true,
+      "warnings": [
+        "trait 도주 top1 share 30.0% exceeds 25%",
+        "trait 선행 top1 share 30.0% exceeds 25%"
+      ]
+    },
+    {
+      "season": "s5",
+      "matches": 10,
+      "baseSeed": 20260907,
+      "averageEndStage": 5.8,
+      "averageRounds": 32.7,
+      "battles": 1283,
+      "poolConservation": true,
+      "warnings": [
+        "trait 도주 top1 share 50.0% exceeds 25%"
+      ]
+    }
+  ]
+}

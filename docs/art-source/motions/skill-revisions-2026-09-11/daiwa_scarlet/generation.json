@@ -1,0 +1,9 @@
+{
+  "mode": "built-in image_gen",
+  "prompt": "Transparent background, RGBA sprite asset. Edit reference Daiwa Scarlet into four full-body chibi poses in a 2 by 2 sprite sheet. Preserve long red twin tails, blue ear ribbons, horse ears, blue white gold racing dress, boots, proportions and crisp cel shading. Cinder field skill: top left cup a compact scarlet ember between hands; top right bend knees and sweep one hand downward to plant a little scarlet flame sigil beside her; bottom left maintain a low outstretched palm as three separate small ember tongues pulse around that sigil; bottom right straighten with hand returning to chest, last ember fading. Emphasize ground placement and sustained pulse, not a forward projectile. No text, only four figures, compact opaque flame accents within individual cells. Real transparent PNG cutouts with alpha, no checkerboard, no background design, no ground shadow. Wide transparent gutters.",
+  "references": [
+    "public/assets/motions/daiwa_scarlet.png"
+  ],
+  "referenceCommit": "3c950f3ce3476b152f2ad3d99fd296327a3c82bf",
+  "skillSignature": "5a96af15b15fba6c5f62b81a60a7e3680c561664f139ec0a7885dfb19f3ef048"
+}

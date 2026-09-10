@@ -57,6 +57,7 @@ export type SkillTemplate =
   | 'SUMMON';
 
 export type TargetRule =
+  | 'HIGHEST_AD_ENEMY' | 'HIGHEST_AD_ALLY' | 'LOWEST_HP_ALLIES'
   | 'CURRENT_TARGET'
   | 'NEAREST_ENEMY'
   | 'LOWEST_HP_ENEMY'
@@ -74,7 +75,21 @@ export type TargetRule =
  * per-item or per-skill switch anywhere in the battle engine (spec §42).
  */
 export type EffectDef = {
+  shape?: 'LINE' | 'CONE' | 'CHAIN';
+  range?: number;
+  maxTargets?: number;
+  leech?: number;
+  isolatedMultiplier?: number;
+  onKillMana?: number;
   kind: EffectKind;
+  /** Coefficients for item procs; these never use the character's star skill multiplier. */
+  scaling?: { attackDamage?: number; abilityPower?: number; armor?: number; selfMaxHp?: number; targetCurrentHp?: number; targetMissingHp?: number; cap?: number };
+  /** Refresh this binding's timed stat modifier instead of adding another copy. */
+  refresh?: boolean;
+  /** Event cooldown is independent for each victim. */
+  perTargetCooldown?: boolean;
+  /** Exclude the holder (support gear cannot bounce back to itself). */
+  excludeSelf?: boolean;
   /** Stat touched by STAT_ADD / STAT_MUL / stat-shaped effects. */
   stat?: keyof BattleStats;
   /** Primary magnitude. Percentages are fractions (0.25 == 25%). */
@@ -105,6 +120,9 @@ export type EffectDef = {
 };
 
 export type EffectKind =
+  | 'CLEANSE' | 'MANA_DRAIN'
+  | 'PROC_DAMAGE'
+  | 'SPELLBLADE'
   | 'STAT_ADD'
   | 'STAT_MUL'
   | 'DAMAGE'
@@ -161,6 +179,11 @@ export type TriggerDef = {
     | 'ALWAYS'
     | 'COMBAT_START'
     | 'ON_ATTACK'
+    | 'ON_SAME_TARGET_NTH_ATTACK'
+    | 'ON_BASIC_HIT_TAKEN'
+    | 'ON_SKILL_HIT'
+    | 'ON_CC_APPLIED'
+    | 'ON_SUPPORT_SKILL'
     | 'ON_NTH_ATTACK'
     | 'ON_HIT_TAKEN'
     | 'ON_CAST'
@@ -193,7 +216,7 @@ export type SkillDef = {
   vfxKey: string;
   description: string;
   /** Shared by simulation, motion playback and the preview. */
-  choreography?: { windup: number; recovery: number; pulseInterval: number; color: string; variant: string };
+  choreography?: { windup: number; recovery: number; pulseInterval: number; color: string; variant: string; accent?: string; emblem?: number; label?: string; motion?: 'STRIKE' | 'PULSE' | 'CHANNEL' };
 };
 
 export type UnitDef = {
@@ -258,6 +281,11 @@ export type TraitDef = {
 export type ItemTag = 'DAMAGE' | 'TANK' | 'MANA' | 'UTILITY' | 'EMBLEM' | 'TACTICIAN';
 
 export type ItemDef = {
+  tier?: 'ARTIFACT' | 'RADIANT';
+  /** Special editions reuse the base icon with an explicit tier badge. */
+  iconId?: string;
+  /** Mutually exclusive item family, including normal/radiant editions. */
+  uniqueGroup?: string;
   id: string;
   name: string;
   /** null for the 10 base components. */

@@ -1,0 +1,9 @@
+{
+  "mode": "built-in image_gen",
+  "prompt": "Edit the reference character into four chibi skill animation poses on a transparent background. A 2 by 2 sprite sheet, only four full-body characters, no labels. Preserve Fuji Kiseki's black hair, horse ears, green eyes, black and gold costume and tail from the reference. Expanding nova skill: top left both hands gather a tiny violet star at chest; top right open arms release a small circular violet star ring; bottom left arms stretched wide expand the ring into a larger radius with compact violet diamond sparks; bottom right lower arms as sparks fade. Four clearly different body poses, same body proportions and costume, crisp cel shading, no ground shadow. Real PNG cutouts with an alpha channel. Absolutely no checkerboard or background design. Wide transparent gutters between all poses; compact effects stay within each cell.",
+  "references": [
+    "public/assets/motions/fuji_kiseki.png"
+  ],
+  "referenceCommit": "3c950f3ce3476b152f2ad3d99fd296327a3c82bf",
+  "skillSignature": "1d80a9213b1edae0f14d4ae9de40ad22328ac909900f6e1097097e8ac6552f48"
+}

@@ -98,7 +98,7 @@ test('unit selection inspects without moving another unit; gear updates stats; t
   const beforeArmor = Number(await armor.innerText());
   const component = page.locator('.hud-left [draggable="true"]').filter({ has: page.getByRole('button', { name: '강화 편자 설명과 조합식' }) });
   await component.dragTo(field);
-  await expect(armor).toHaveText(String(beforeArmor + 20));
+  await expect(armor).toHaveText(String(beforeArmor + 15));
   await page.screenshot({ path: info.outputPath('unit-detail.png') });
   const other = await buy(page), otherId = await other.getAttribute('data-unit-id');
   await other.click();
@@ -111,8 +111,8 @@ test('unit selection inspects without moving another unit; gear updates stats; t
   await page.screenshot({ path: info.outputPath('trait-detail.png') });
   await page.locator('.hud-left').getByRole('button', { name: '우승자 리본 설명과 조합식' }).first().click();
   await expect(panel.locator('.detail-recipe-card')).toHaveCount(10);
-  await expect(panel).toContainText('공격력 +10%');
-  await panel.getByRole('button', { name: /챔피언 트로피/ }).click();
+  await expect(panel).toContainText('공격력 +5');
+  await panel.getByRole('button', { name: /연승 사냥꾼의 트로피/ }).click();
   await expect(panel).toContainText('조합식');
   await expect(panel.getByRole('button', { name: /우승자 리본/ })).toHaveCount(2);
   await page.screenshot({ path: info.outputPath('item-recipe.png') });

@@ -1,0 +1,506 @@
+{
+  "format": "uft-baked-frames-v1",
+  "scale": 0.39543726235741444,
+  "anchor": [
+    64,
+    110
+  ],
+  "runtimeSha256": "8e8166de462ecbe1def5871d9078f5dd2ed41272a4c62a8f01d7f7a11bb0739d",
+  "frames": [
+    {
+      "frame": 0,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/production-144/winning_ticket/alpha.png",
+      "sourceSha256": "e0c2272bb8ee7e0fb106d516adf4d3b8645c5c424e04e6c5d8655a1b311f07cd",
+      "crop": [
+        81,
+        21,
+        222,
+        284
+      ],
+      "destination": [
+        36,
+        6,
+        56,
+        104
+      ]
+    },
+    {
+      "frame": 1,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/production-144/winning_ticket/alpha.png",
+      "sourceSha256": "e0c2272bb8ee7e0fb106d516adf4d3b8645c5c424e04e6c5d8655a1b311f07cd",
+      "crop": [
+        326,
+        22,
+        458,
+        284
+      ],
+      "destination": [
+        166,
+        6,
+        52,
+        104
+      ]
+    },
+    {
+      "frame": 2,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/production-144/winning_ticket/alpha.png",
+      "sourceSha256": "e0c2272bb8ee7e0fb106d516adf4d3b8645c5c424e04e6c5d8655a1b311f07cd",
+      "crop": [
+        577,
+        21,
+        727,
+        284
+      ],
+      "destination": [
+        290,
+        6,
+        59,
+        104
+      ]
+    },
+    {
+      "frame": 3,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/production-144/winning_ticket/alpha.png",
+      "sourceSha256": "e0c2272bb8ee7e0fb106d516adf4d3b8645c5c424e04e6c5d8655a1b311f07cd",
+      "crop": [
+        826,
+        22,
+        971,
+        284
+      ],
+      "destination": [
+        419,
+        6,
+        57,
+        104
+      ]
+    },
+    {
+      "frame": 4,
+      "sourceFrame": 4,
+      "source": "docs/art-source/motions/production-144/winning_ticket/alpha.png",
+      "sourceSha256": "e0c2272bb8ee7e0fb106d516adf4d3b8645c5c424e04e6c5d8655a1b311f07cd",
+      "crop": [
+        41,
+        295,
+        235,
+        547
+      ],
+      "destination": [
+        25,
+        138,
+        77,
+        100
+      ]
+    },
+    {
+      "frame": 5,
+      "sourceFrame": 5,
+      "source": "docs/art-source/motions/production-144/winning_ticket/alpha.png",
+      "sourceSha256": "e0c2272bb8ee7e0fb106d516adf4d3b8645c5c424e04e6c5d8655a1b311f07cd",
+      "crop": [
+        288,
+        295,
+        486,
+        547
+      ],
+      "destination": [
+        153,
+        138,
+        78,
+        100
+      ]
+    },
+    {
+      "frame": 6,
+      "sourceFrame": 6,
+      "source": "docs/art-source/motions/production-144/winning_ticket/alpha.png",
+      "sourceSha256": "e0c2272bb8ee7e0fb106d516adf4d3b8645c5c424e04e6c5d8655a1b311f07cd",
+      "crop": [
+        547,
+        299,
+        744,
+        550
+      ],
+      "destination": [
+        281,
+        139,
+        78,
+        99
+      ]
+    },
+    {
+      "frame": 7,
+      "sourceFrame": 7,
+      "source": "docs/art-source/motions/production-144/winning_ticket/alpha.png",
+      "sourceSha256": "e0c2272bb8ee7e0fb106d516adf4d3b8645c5c424e04e6c5d8655a1b311f07cd",
+      "crop": [
+        817,
+        298,
+        992,
+        550
+      ],
+      "destination": [
+        413,
+        138,
+        69,
+        100
+      ]
+    },
+    {
+      "frame": 8,
+      "sourceFrame": 8,
+      "source": "docs/art-source/motions/production-144/winning_ticket/alpha.png",
+      "sourceSha256": "e0c2272bb8ee7e0fb106d516adf4d3b8645c5c424e04e6c5d8655a1b311f07cd",
+      "crop": [
+        57,
+        551,
+        214,
+        808
+      ],
+      "destination": [
+        33,
+        264,
+        62,
+        102
+      ]
+    },
+    {
+      "frame": 9,
+      "sourceFrame": 9,
+      "source": "docs/art-source/motions/production-144/winning_ticket/alpha.png",
+      "sourceSha256": "e0c2272bb8ee7e0fb106d516adf4d3b8645c5c424e04e6c5d8655a1b311f07cd",
+      "crop": [
+        307,
+        550,
+        472,
+        808
+      ],
+      "destination": [
+        159,
+        264,
+        65,
+        102
+      ]
+    },
+    {
+      "frame": 10,
+      "sourceFrame": 10,
+      "source": "docs/art-source/motions/production-144/winning_ticket/alpha.png",
+      "sourceSha256": "e0c2272bb8ee7e0fb106d516adf4d3b8645c5c424e04e6c5d8655a1b311f07cd",
+      "crop": [
+        547,
+        560,
+        767,
+        808
+      ],
+      "destination": [
+        276,
+        268,
+        87,
+        98
+      ]
+    },
+    {
+      "frame": 11,
+      "sourceFrame": 11,
+      "source": "docs/art-source/motions/production-144/winning_ticket/alpha.png",
+      "sourceSha256": "e0c2272bb8ee7e0fb106d516adf4d3b8645c5c424e04e6c5d8655a1b311f07cd",
+      "crop": [
+        823,
+        552,
+        981,
+        808
+      ],
+      "destination": [
+        417,
+        265,
+        62,
+        101
+      ]
+    },
+    {
+      "frame": 12,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/skill-revisions-2026-09-11/winning_ticket/generated.png",
+      "sourceSha256": "25cbffc70cc760769d1f327cd8fa62a604db00f60540ae71f37ad58b1a448521",
+      "crop": [
+        194,
+        121,
+        578,
+        473
+      ],
+      "destination": [
+        23,
+        420,
+        81,
+        74
+      ]
+    },
+    {
+      "frame": 13,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/skill-revisions-2026-09-11/winning_ticket/generated.png",
+      "sourceSha256": "25cbffc70cc760769d1f327cd8fa62a604db00f60540ae71f37ad58b1a448521",
+      "crop": [
+        937,
+        29,
+        1327,
+        504
+      ],
+      "destination": [
+        151,
+        394,
+        82,
+        100
+      ]
+    },
+    {
+      "frame": 14,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/skill-revisions-2026-09-11/winning_ticket/generated.png",
+      "sourceSha256": "25cbffc70cc760769d1f327cd8fa62a604db00f60540ae71f37ad58b1a448521",
+      "crop": [
+        170,
+        582,
+        621,
+        992
+      ],
+      "destination": [
+        272,
+        408,
+        95,
+        86
+      ]
+    },
+    {
+      "frame": 15,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/skill-revisions-2026-09-11/winning_ticket/generated.png",
+      "sourceSha256": "25cbffc70cc760769d1f327cd8fa62a604db00f60540ae71f37ad58b1a448521",
+      "crop": [
+        977,
+        512,
+        1307,
+        1008
+      ],
+      "destination": [
+        413,
+        390,
+        69,
+        104
+      ]
+    },
+    {
+      "frame": 16,
+      "sourceFrame": 16,
+      "source": "docs/art-source/motions/production-144/winning_ticket/alpha.png",
+      "sourceSha256": "e0c2272bb8ee7e0fb106d516adf4d3b8645c5c424e04e6c5d8655a1b311f07cd",
+      "crop": [
+        53,
+        1051,
+        226,
+        1274
+      ],
+      "destination": [
+        30,
+        534,
+        68,
+        88
+      ]
+    },
+    {
+      "frame": 17,
+      "sourceFrame": 17,
+      "source": "docs/art-source/motions/production-144/winning_ticket/alpha.png",
+      "sourceSha256": "e0c2272bb8ee7e0fb106d516adf4d3b8645c5c424e04e6c5d8655a1b311f07cd",
+      "crop": [
+        293,
+        1072,
+        472,
+        1272
+      ],
+      "destination": [
+        156,
+        543,
+        71,
+        79
+      ]
+    },
+    {
+      "frame": 18,
+      "sourceFrame": 18,
+      "source": "docs/art-source/motions/production-144/winning_ticket/alpha.png",
+      "sourceSha256": "e0c2272bb8ee7e0fb106d516adf4d3b8645c5c424e04e6c5d8655a1b311f07cd",
+      "crop": [
+        547,
+        1089,
+        728,
+        1272
+      ],
+      "destination": [
+        284,
+        550,
+        72,
+        72
+      ]
+    },
+    {
+      "frame": 19,
+      "sourceFrame": 19,
+      "source": "docs/art-source/motions/production-144/winning_ticket/alpha.png",
+      "sourceSha256": "e0c2272bb8ee7e0fb106d516adf4d3b8645c5c424e04e6c5d8655a1b311f07cd",
+      "crop": [
+        771,
+        1152,
+        1014,
+        1263
+      ],
+      "destination": [
+        400,
+        578,
+        96,
+        44
+      ]
+    },
+    {
+      "frame": 20,
+      "sourceFrame": 20,
+      "source": "docs/art-source/motions/production-144/winning_ticket/alpha.png",
+      "sourceSha256": "e0c2272bb8ee7e0fb106d516adf4d3b8645c5c424e04e6c5d8655a1b311f07cd",
+      "crop": [
+        60,
+        1280,
+        204,
+        1529
+      ],
+      "destination": [
+        35,
+        652,
+        57,
+        98
+      ]
+    },
+    {
+      "frame": 21,
+      "sourceFrame": 21,
+      "source": "docs/art-source/motions/production-144/winning_ticket/alpha.png",
+      "sourceSha256": "e0c2272bb8ee7e0fb106d516adf4d3b8645c5c424e04e6c5d8655a1b311f07cd",
+      "crop": [
+        323,
+        1280,
+        483,
+        1506
+      ],
+      "destination": [
+        160,
+        661,
+        63,
+        89
+      ]
+    },
+    {
+      "frame": 22,
+      "sourceFrame": 22,
+      "source": "docs/art-source/motions/production-144/winning_ticket/alpha.png",
+      "sourceSha256": "e0c2272bb8ee7e0fb106d516adf4d3b8645c5c424e04e6c5d8655a1b311f07cd",
+      "crop": [
+        581,
+        1280,
+        718,
+        1530
+      ],
+      "destination": [
+        293,
+        651,
+        54,
+        99
+      ]
+    },
+    {
+      "frame": 23,
+      "sourceFrame": 23,
+      "source": "docs/art-source/motions/production-144/winning_ticket/alpha.png",
+      "sourceSha256": "e0c2272bb8ee7e0fb106d516adf4d3b8645c5c424e04e6c5d8655a1b311f07cd",
+      "crop": [
+        836,
+        1280,
+        973,
+        1530
+      ],
+      "destination": [
+        421,
+        651,
+        54,
+        99
+      ]
+    }
+  ],
+  "skillRevision": {
+    "scale": 0.20967741935483872,
+    "review": "docs/art-source/motions/skill-revisions-2026-09-11/winning_ticket/review.json",
+    "beforeFrames": [
+      "1ea4f3cc308e08f01a7d85e98e31dc0b4c44e41970f904983eb7c7b0b400c5c4",
+      "092ae2f20a9e92e2b7d2a49c6af3efd5f7e95d92c978e78241a7ea2c22259e2f",
+      "38dd6ae886c1103551aaf11b329e65ab4b3dd1d6bea5ed1ba9461862bc4eeed8",
+      "843c495cf0f97f57d891252b492bb7e67e7ce1885b27f32e4a8edcb11a8d983f",
+      "a4714eefc05c47fa363b9af3ce19cc1d841b707ddebf5bc324c9e64bb87c33c1",
+      "4d6442bb1dc34af3ffffe77dc2945be9d0967502110d668ff2e614a85f6669bb",
+      "6ac3c749850f993c47129151727f1fedf4a24367325ed9291112236fce801249",
+      "46ddbeb5d755f2af2a90db4400d7bb0ab024613aec96d8d497fc0f19731a2df3",
+      "a757f55932cacc3084b5bf74dc4b21a01cccde890b926f2b50993df587928b33",
+      "d1a883b0523a4fe472856fd160ae06cd18dca3993a44085d7c6fe5288f1e6fd5",
+      "99bbea867bc00a2fe00f2c392c219c61a27e1d755e6ba774bffb64d0392ecfcc",
+      "31f3cc9ae032104a4ba2d6ff06a8996ecee19bf7c5acdc133cbb64a7e398547c",
+      "9d62b1d930b9b03b388a0f40d13ac9c04189df29a4f8ee0df9878f112a0ae02d",
+      "eb20ca7016a412286ae45d9836abaf8658a2c0a736468bb67518cb4771a6ca0b",
+      "76d0ad524e1933451a2ace8b7d3e6e289a1c76f6af62546838bf287986052d5b",
+      "b2b4ff685f220627ebd17b0eb15764dc05c84b1360bb1a04ca782b794b990fad",
+      "790aaf9004de2c64c3e2fd80818829d042f68166d39eac2dd43ebc64f22b5df1",
+      "cfb5b60a6cac4125f42661dd44c5864388745be5067bbd21cc5bc1580ecea0ad",
+      "c96f58ca22e920567aaba90c50aa82b5f670cf281fe67b5d735fe286e0f3699e",
+      "91b6451d3e81f73c5e5b858465dd89ec1877db55af8724a9e6ff3063f209d7e7",
+      "aa02e99bd20e4c4115688c2e7b67af0956b2ea140624393db6cb9fd288c4fdf4",
+      "c54b28dc525b4f1b3e3df28159ae831119dbd05e0d4d2cc256f9fd34237ea106",
+      "cebd11814fd3081a44ce9d2d67f975a7b9ee16e810bdf30dbff14e8536046580",
+      "64d4dbbdf6eec4d0750512ebba4b4075da2c786b9e93937575e69919a0d76a14"
+    ],
+    "afterFrames": [
+      "1ea4f3cc308e08f01a7d85e98e31dc0b4c44e41970f904983eb7c7b0b400c5c4",
+      "092ae2f20a9e92e2b7d2a49c6af3efd5f7e95d92c978e78241a7ea2c22259e2f",
+      "38dd6ae886c1103551aaf11b329e65ab4b3dd1d6bea5ed1ba9461862bc4eeed8",
+      "843c495cf0f97f57d891252b492bb7e67e7ce1885b27f32e4a8edcb11a8d983f",
+      "a4714eefc05c47fa363b9af3ce19cc1d841b707ddebf5bc324c9e64bb87c33c1",
+      "4d6442bb1dc34af3ffffe77dc2945be9d0967502110d668ff2e614a85f6669bb",
+      "6ac3c749850f993c47129151727f1fedf4a24367325ed9291112236fce801249",
+      "46ddbeb5d755f2af2a90db4400d7bb0ab024613aec96d8d497fc0f19731a2df3",
+      "a757f55932cacc3084b5bf74dc4b21a01cccde890b926f2b50993df587928b33",
+      "d1a883b0523a4fe472856fd160ae06cd18dca3993a44085d7c6fe5288f1e6fd5",
+      "99bbea867bc00a2fe00f2c392c219c61a27e1d755e6ba774bffb64d0392ecfcc",
+      "31f3cc9ae032104a4ba2d6ff06a8996ecee19bf7c5acdc133cbb64a7e398547c",
+      "82849093f258cf5c45c9dc75f6749471695c016cd4c3de94b1ddd1e449cdd138",
+      "0202b25864ee714f007c20754639136246fa87800d5377908bb459cb80d6aa72",
+      "425c02a91d5be99fa98e708898ab8b595af652f50a5a34dccf73418d0154e707",
+      "379cd629c52852293b0515200382800e4640a90069cef0eef64799769e3c9ffd",
+      "790aaf9004de2c64c3e2fd80818829d042f68166d39eac2dd43ebc64f22b5df1",
+      "cfb5b60a6cac4125f42661dd44c5864388745be5067bbd21cc5bc1580ecea0ad",
+      "c96f58ca22e920567aaba90c50aa82b5f670cf281fe67b5d735fe286e0f3699e",
+      "91b6451d3e81f73c5e5b858465dd89ec1877db55af8724a9e6ff3063f209d7e7",
+      "aa02e99bd20e4c4115688c2e7b67af0956b2ea140624393db6cb9fd288c4fdf4",
+      "c54b28dc525b4f1b3e3df28159ae831119dbd05e0d4d2cc256f9fd34237ea106",
+      "cebd11814fd3081a44ce9d2d67f975a7b9ee16e810bdf30dbff14e8536046580",
+      "64d4dbbdf6eec4d0750512ebba4b4075da2c786b9e93937575e69919a0d76a14"
+    ],
+    "unchangedFrames": 20,
+    "changedFrames": [
+      12,
+      13,
+      14,
+      15
+    ]
+  }
+}

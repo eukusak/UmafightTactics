@@ -1,0 +1,9 @@
+{
+  "mode": "built-in image_gen",
+  "prompt": "Edit the reference character into four chibi skill animation poses on a transparent background. A 2 by 2 sprite sheet, only four full-body characters, no labels. Preserve satono_crown's exact hairstyle, horse ears, face, costume, accessories and tail from the reference. Four poses in reading order: gather three small darts with a pulled-back hand; sweep the hand outward launching a fan of three darts; twist and repeat a second fan with a different arm angle; draw the wrist inward to rest. Four clearly different body poses, same body proportions and costume, crisp cel shading, no ground shadow. Real PNG cutouts with an alpha channel. Absolutely no checkerboard or background design. Wide transparent gutters between all poses; compact effects stay within each cell.",
+  "references": [
+    "public/assets/motions/satono_crown.png"
+  ],
+  "referenceCommit": "3c950f3ce3476b152f2ad3d99fd296327a3c82bf",
+  "skillSignature": "d3f2bc6a2a9c2aef0afbf42cd6febda2c8371c07e209588d0c688820a9761dd5"
+}

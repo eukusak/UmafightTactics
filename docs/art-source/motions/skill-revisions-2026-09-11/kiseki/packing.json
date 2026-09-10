@@ -1,0 +1,506 @@
+{
+  "format": "uft-baked-frames-v1",
+  "scale": 0.4,
+  "anchor": [
+    64,
+    110
+  ],
+  "runtimeSha256": "5a77e8dd7dfd7faf3bf7fc9923dbd78e2a680c6b959f252abef8725e5d24d768",
+  "frames": [
+    {
+      "frame": 0,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/production-144/kiseki/alpha.png",
+      "sourceSha256": "6fe4da0f2dae9a762149d627768d2bcd99d239e15056f1b227a0dafa1eef20e1",
+      "crop": [
+        74,
+        6,
+        204,
+        242
+      ],
+      "destination": [
+        38,
+        16,
+        52,
+        94
+      ]
+    },
+    {
+      "frame": 1,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/production-144/kiseki/alpha.png",
+      "sourceSha256": "6fe4da0f2dae9a762149d627768d2bcd99d239e15056f1b227a0dafa1eef20e1",
+      "crop": [
+        336,
+        7,
+        460,
+        242
+      ],
+      "destination": [
+        167,
+        16,
+        50,
+        94
+      ]
+    },
+    {
+      "frame": 2,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/production-144/kiseki/alpha.png",
+      "sourceSha256": "6fe4da0f2dae9a762149d627768d2bcd99d239e15056f1b227a0dafa1eef20e1",
+      "crop": [
+        592,
+        7,
+        716,
+        242
+      ],
+      "destination": [
+        295,
+        16,
+        50,
+        94
+      ]
+    },
+    {
+      "frame": 3,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/production-144/kiseki/alpha.png",
+      "sourceSha256": "6fe4da0f2dae9a762149d627768d2bcd99d239e15056f1b227a0dafa1eef20e1",
+      "crop": [
+        848,
+        6,
+        972,
+        242
+      ],
+      "destination": [
+        423,
+        16,
+        50,
+        94
+      ]
+    },
+    {
+      "frame": 4,
+      "sourceFrame": 4,
+      "source": "docs/art-source/motions/production-144/kiseki/alpha.png",
+      "sourceSha256": "6fe4da0f2dae9a762149d627768d2bcd99d239e15056f1b227a0dafa1eef20e1",
+      "crop": [
+        26,
+        255,
+        223,
+        500
+      ],
+      "destination": [
+        24,
+        140,
+        79,
+        98
+      ]
+    },
+    {
+      "frame": 5,
+      "sourceFrame": 5,
+      "source": "docs/art-source/motions/production-144/kiseki/alpha.png",
+      "sourceSha256": "6fe4da0f2dae9a762149d627768d2bcd99d239e15056f1b227a0dafa1eef20e1",
+      "crop": [
+        288,
+        252,
+        478,
+        500
+      ],
+      "destination": [
+        154,
+        139,
+        76,
+        99
+      ]
+    },
+    {
+      "frame": 6,
+      "sourceFrame": 6,
+      "source": "docs/art-source/motions/production-144/kiseki/alpha.png",
+      "sourceSha256": "6fe4da0f2dae9a762149d627768d2bcd99d239e15056f1b227a0dafa1eef20e1",
+      "crop": [
+        540,
+        252,
+        736,
+        500
+      ],
+      "destination": [
+        281,
+        139,
+        78,
+        99
+      ]
+    },
+    {
+      "frame": 7,
+      "sourceFrame": 7,
+      "source": "docs/art-source/motions/production-144/kiseki/alpha.png",
+      "sourceSha256": "6fe4da0f2dae9a762149d627768d2bcd99d239e15056f1b227a0dafa1eef20e1",
+      "crop": [
+        802,
+        252,
+        990,
+        500
+      ],
+      "destination": [
+        410,
+        139,
+        75,
+        99
+      ]
+    },
+    {
+      "frame": 8,
+      "sourceFrame": 8,
+      "source": "docs/art-source/motions/production-144/kiseki/alpha.png",
+      "sourceSha256": "6fe4da0f2dae9a762149d627768d2bcd99d239e15056f1b227a0dafa1eef20e1",
+      "crop": [
+        54,
+        514,
+        239,
+        763
+      ],
+      "destination": [
+        27,
+        266,
+        74,
+        100
+      ]
+    },
+    {
+      "frame": 9,
+      "sourceFrame": 9,
+      "source": "docs/art-source/motions/production-144/kiseki/alpha.png",
+      "sourceSha256": "6fe4da0f2dae9a762149d627768d2bcd99d239e15056f1b227a0dafa1eef20e1",
+      "crop": [
+        317,
+        513,
+        457,
+        763
+      ],
+      "destination": [
+        164,
+        266,
+        56,
+        100
+      ]
+    },
+    {
+      "frame": 10,
+      "sourceFrame": 10,
+      "source": "docs/art-source/motions/production-144/kiseki/alpha.png",
+      "sourceSha256": "6fe4da0f2dae9a762149d627768d2bcd99d239e15056f1b227a0dafa1eef20e1",
+      "crop": [
+        565,
+        514,
+        754,
+        763
+      ],
+      "destination": [
+        282,
+        266,
+        76,
+        100
+      ]
+    },
+    {
+      "frame": 11,
+      "sourceFrame": 11,
+      "source": "docs/art-source/motions/production-144/kiseki/alpha.png",
+      "sourceSha256": "6fe4da0f2dae9a762149d627768d2bcd99d239e15056f1b227a0dafa1eef20e1",
+      "crop": [
+        833,
+        514,
+        985,
+        763
+      ],
+      "destination": [
+        417,
+        266,
+        61,
+        100
+      ]
+    },
+    {
+      "frame": 12,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/skill-revisions-2026-09-11/kiseki/generated.png",
+      "sourceSha256": "ee1b2e25b6805d19756531e1aa7a5fb947f2f6dd3116d429b322f06b1d7b62ad",
+      "crop": [
+        272,
+        21,
+        571,
+        481
+      ],
+      "destination": [
+        32,
+        396,
+        64,
+        98
+      ]
+    },
+    {
+      "frame": 13,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/skill-revisions-2026-09-11/kiseki/generated.png",
+      "sourceSha256": "ee1b2e25b6805d19756531e1aa7a5fb947f2f6dd3116d429b322f06b1d7b62ad",
+      "crop": [
+        863,
+        66,
+        1284,
+        480
+      ],
+      "destination": [
+        147,
+        405,
+        90,
+        89
+      ]
+    },
+    {
+      "frame": 14,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/skill-revisions-2026-09-11/kiseki/generated.png",
+      "sourceSha256": "ee1b2e25b6805d19756531e1aa7a5fb947f2f6dd3116d429b322f06b1d7b62ad",
+      "crop": [
+        268,
+        512,
+        639,
+        998
+      ],
+      "destination": [
+        280,
+        390,
+        79,
+        104
+      ]
+    },
+    {
+      "frame": 15,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/skill-revisions-2026-09-11/kiseki/generated.png",
+      "sourceSha256": "ee1b2e25b6805d19756531e1aa7a5fb947f2f6dd3116d429b322f06b1d7b62ad",
+      "crop": [
+        904,
+        517,
+        1210,
+        996
+      ],
+      "destination": [
+        415,
+        391,
+        65,
+        103
+      ]
+    },
+    {
+      "frame": 16,
+      "sourceFrame": 16,
+      "source": "docs/art-source/motions/production-144/kiseki/alpha.png",
+      "sourceSha256": "6fe4da0f2dae9a762149d627768d2bcd99d239e15056f1b227a0dafa1eef20e1",
+      "crop": [
+        41,
+        1040,
+        217,
+        1257
+      ],
+      "destination": [
+        29,
+        535,
+        70,
+        87
+      ]
+    },
+    {
+      "frame": 17,
+      "sourceFrame": 17,
+      "source": "docs/art-source/motions/production-144/kiseki/alpha.png",
+      "sourceSha256": "6fe4da0f2dae9a762149d627768d2bcd99d239e15056f1b227a0dafa1eef20e1",
+      "crop": [
+        311,
+        1068,
+        478,
+        1253
+      ],
+      "destination": [
+        158,
+        548,
+        67,
+        74
+      ]
+    },
+    {
+      "frame": 18,
+      "sourceFrame": 18,
+      "source": "docs/art-source/motions/production-144/kiseki/alpha.png",
+      "sourceSha256": "6fe4da0f2dae9a762149d627768d2bcd99d239e15056f1b227a0dafa1eef20e1",
+      "crop": [
+        556,
+        1071,
+        714,
+        1253
+      ],
+      "destination": [
+        288,
+        549,
+        63,
+        73
+      ]
+    },
+    {
+      "frame": 19,
+      "sourceFrame": 19,
+      "source": "docs/art-source/motions/production-144/kiseki/alpha.png",
+      "sourceSha256": "6fe4da0f2dae9a762149d627768d2bcd99d239e15056f1b227a0dafa1eef20e1",
+      "crop": [
+        778,
+        1141,
+        1009,
+        1260
+      ],
+      "destination": [
+        402,
+        574,
+        92,
+        48
+      ]
+    },
+    {
+      "frame": 20,
+      "sourceFrame": 20,
+      "source": "docs/art-source/motions/production-144/kiseki/alpha.png",
+      "sourceSha256": "6fe4da0f2dae9a762149d627768d2bcd99d239e15056f1b227a0dafa1eef20e1",
+      "crop": [
+        59,
+        1283,
+        202,
+        1529
+      ],
+      "destination": [
+        35,
+        652,
+        57,
+        98
+      ]
+    },
+    {
+      "frame": 21,
+      "sourceFrame": 21,
+      "source": "docs/art-source/motions/production-144/kiseki/alpha.png",
+      "sourceSha256": "6fe4da0f2dae9a762149d627768d2bcd99d239e15056f1b227a0dafa1eef20e1",
+      "crop": [
+        311,
+        1272,
+        459,
+        1532
+      ],
+      "destination": [
+        162,
+        646,
+        59,
+        104
+      ]
+    },
+    {
+      "frame": 22,
+      "sourceFrame": 22,
+      "source": "docs/art-source/motions/production-144/kiseki/alpha.png",
+      "sourceSha256": "6fe4da0f2dae9a762149d627768d2bcd99d239e15056f1b227a0dafa1eef20e1",
+      "crop": [
+        553,
+        1272,
+        721,
+        1530
+      ],
+      "destination": [
+        286,
+        647,
+        67,
+        103
+      ]
+    },
+    {
+      "frame": 23,
+      "sourceFrame": 23,
+      "source": "docs/art-source/motions/production-144/kiseki/alpha.png",
+      "sourceSha256": "6fe4da0f2dae9a762149d627768d2bcd99d239e15056f1b227a0dafa1eef20e1",
+      "crop": [
+        818,
+        1286,
+        968,
+        1530
+      ],
+      "destination": [
+        418,
+        652,
+        60,
+        98
+      ]
+    }
+  ],
+  "skillRevision": {
+    "scale": 0.2139917695473251,
+    "review": "docs/art-source/motions/skill-revisions-2026-09-11/kiseki/review.json",
+    "beforeFrames": [
+      "962ef61a1c2b8d21e5a4d5354dc49caeeab48d11fe63aad0aaba3e3a1a74c60b",
+      "1a4a8922b1376bb3cb9492c1b8f1ac9895e1735aab384781037044dc49ff4ae1",
+      "becd0c8d8e87bfca25e9890011575b8a307b351fd94630cb45b7224b834fe67c",
+      "85af689c0706d6c30fde5f399c12539e2fa207208cea785abb9c88d04e910348",
+      "a6baa32993255a1932abf0f628d77b154a53b51962e504db6c4c93e8550d030a",
+      "ffd7ab31be56feac5a0a0dc350f940c189f1e9a260a9142f2fd159f889b479e7",
+      "01fbb1ccf1914b9158713bc79095e67fd3be5dc0b3684933e9542f76845759a4",
+      "067ba18e565838961cba9db8162ecb19b95bed663093a640fabd0560733092de",
+      "8980ada78520b71a6d1de9426b701073ef87ac2717c1654ec6d8ce70ea75de77",
+      "cd86c92af2efef9131ce1f844381e64124d0bef6ebb3ae9744a85a9cb8accac9",
+      "65689ebe79b359af7af80fa7cff35125b0390f58adcd076a0cb5fd0fbb8f1734",
+      "692dff9b9f307942eef350742e6b0fc31bd48ddf77cd86eb6a1d0611ac5c6199",
+      "3f28699ef4e63ba9fc5509bb3ddced9e20b77e9d564b3bcfd005e0089bb147b8",
+      "3065c2212031ae271db8738dc57fbf959212d26dd324f5e6fd21f5dc0ecdebc1",
+      "eb55fc1d3109ef169dcaa004a87324205f9dc4126d59f2a69e6013f45e8a159d",
+      "eb3a98a182625ef9f43ee5cf41096bce872a592df211acee158617fa054295f8",
+      "807e03e49902d5ee48169593ca841328752b1f32680e34ddf9c2113006344fad",
+      "247192a70201f016f63c33754ae8d72b28345aab49594ca6a8d4f1098bb09cdd",
+      "1e9ba05e1914a61c1b2e2c2db848f54002966c4c9f1599c1952fd893d859e07f",
+      "6565fc79c7abb251fa1e702e5df232647e34ff7ffeebdb4e822d56243d25e96d",
+      "1221a5eed39b579ba2b0f90ed7558a6c7f5edf998ef3c42c2ac5c4016708fd09",
+      "f9f1736bceb94d5573a3cc364cd5d30747e6b505831b317613d1196451b6895a",
+      "2f85b48c2c2ac200fca01e26e5cde540353eef92ebb0a6a4effb883a5f77866f",
+      "a0e5e99da5bcb82ceacbc800c6e001760f6311f316853d953002ca13eaf4225d"
+    ],
+    "afterFrames": [
+      "962ef61a1c2b8d21e5a4d5354dc49caeeab48d11fe63aad0aaba3e3a1a74c60b",
+      "1a4a8922b1376bb3cb9492c1b8f1ac9895e1735aab384781037044dc49ff4ae1",
+      "becd0c8d8e87bfca25e9890011575b8a307b351fd94630cb45b7224b834fe67c",
+      "85af689c0706d6c30fde5f399c12539e2fa207208cea785abb9c88d04e910348",
+      "a6baa32993255a1932abf0f628d77b154a53b51962e504db6c4c93e8550d030a",
+      "ffd7ab31be56feac5a0a0dc350f940c189f1e9a260a9142f2fd159f889b479e7",
+      "01fbb1ccf1914b9158713bc79095e67fd3be5dc0b3684933e9542f76845759a4",
+      "067ba18e565838961cba9db8162ecb19b95bed663093a640fabd0560733092de",
+      "8980ada78520b71a6d1de9426b701073ef87ac2717c1654ec6d8ce70ea75de77",
+      "cd86c92af2efef9131ce1f844381e64124d0bef6ebb3ae9744a85a9cb8accac9",
+      "65689ebe79b359af7af80fa7cff35125b0390f58adcd076a0cb5fd0fbb8f1734",
+      "692dff9b9f307942eef350742e6b0fc31bd48ddf77cd86eb6a1d0611ac5c6199",
+      "1b65d30a11824762e4eadba58ed86c9087524e4f84592c378266ece9ad9a47c1",
+      "09bfa86013daa6e31d8bd5a4609f1909f75fd218e1af52f80d8c64b30db17b03",
+      "3e59db95d6a7d9dd141cb7c3c37afc1eda7ca4dc428df17ac83be48a6c603ee1",
+      "60f9f8dbbaac4cdb8d30a95c934ff5f1bf9d7458ee8d93acc9ebd4a9c0eab93a",
+      "807e03e49902d5ee48169593ca841328752b1f32680e34ddf9c2113006344fad",
+      "247192a70201f016f63c33754ae8d72b28345aab49594ca6a8d4f1098bb09cdd",
+      "1e9ba05e1914a61c1b2e2c2db848f54002966c4c9f1599c1952fd893d859e07f",
+      "6565fc79c7abb251fa1e702e5df232647e34ff7ffeebdb4e822d56243d25e96d",
+      "1221a5eed39b579ba2b0f90ed7558a6c7f5edf998ef3c42c2ac5c4016708fd09",
+      "f9f1736bceb94d5573a3cc364cd5d30747e6b505831b317613d1196451b6895a",
+      "2f85b48c2c2ac200fca01e26e5cde540353eef92ebb0a6a4effb883a5f77866f",
+      "a0e5e99da5bcb82ceacbc800c6e001760f6311f316853d953002ca13eaf4225d"
+    ],
+    "unchangedFrames": 20,
+    "changedFrames": [
+      12,
+      13,
+      14,
+      15
+    ]
+  }
+}

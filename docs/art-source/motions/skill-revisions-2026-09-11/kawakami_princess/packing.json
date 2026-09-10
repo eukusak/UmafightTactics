@@ -1,0 +1,506 @@
+{
+  "format": "uft-baked-frames-v1",
+  "scale": 0.4425531914893617,
+  "anchor": [
+    64,
+    110
+  ],
+  "runtimeSha256": "b924a7bb27aa36b47685741a64b8f51cc80a94f5664cc1f4ef811199f637b928",
+  "frames": [
+    {
+      "frame": 0,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/production-144/kawakami_princess/alpha.png",
+      "sourceSha256": "787d42841179b6a0018862a10681c1f195cef04d5523cf357ab8d15996cd898f",
+      "crop": [
+        50,
+        36,
+        205,
+        260
+      ],
+      "destination": [
+        29,
+        11,
+        69,
+        99
+      ]
+    },
+    {
+      "frame": 1,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/production-144/kawakami_princess/alpha.png",
+      "sourceSha256": "787d42841179b6a0018862a10681c1f195cef04d5523cf357ab8d15996cd898f",
+      "crop": [
+        306,
+        36,
+        462,
+        260
+      ],
+      "destination": [
+        157,
+        11,
+        69,
+        99
+      ]
+    },
+    {
+      "frame": 2,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/production-144/kawakami_princess/alpha.png",
+      "sourceSha256": "787d42841179b6a0018862a10681c1f195cef04d5523cf357ab8d15996cd898f",
+      "crop": [
+        561,
+        35,
+        716,
+        260
+      ],
+      "destination": [
+        285,
+        10,
+        69,
+        100
+      ]
+    },
+    {
+      "frame": 3,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/production-144/kawakami_princess/alpha.png",
+      "sourceSha256": "787d42841179b6a0018862a10681c1f195cef04d5523cf357ab8d15996cd898f",
+      "crop": [
+        816,
+        36,
+        972,
+        260
+      ],
+      "destination": [
+        413,
+        11,
+        69,
+        99
+      ]
+    },
+    {
+      "frame": 4,
+      "sourceFrame": 4,
+      "source": "docs/art-source/motions/production-144/kawakami_princess/alpha.png",
+      "sourceSha256": "787d42841179b6a0018862a10681c1f195cef04d5523cf357ab8d15996cd898f",
+      "crop": [
+        41,
+        292,
+        214,
+        516
+      ],
+      "destination": [
+        25,
+        139,
+        77,
+        99
+      ]
+    },
+    {
+      "frame": 5,
+      "sourceFrame": 5,
+      "source": "docs/art-source/motions/production-144/kawakami_princess/alpha.png",
+      "sourceSha256": "787d42841179b6a0018862a10681c1f195cef04d5523cf357ab8d15996cd898f",
+      "crop": [
+        298,
+        293,
+        476,
+        514
+      ],
+      "destination": [
+        152,
+        140,
+        79,
+        98
+      ]
+    },
+    {
+      "frame": 6,
+      "sourceFrame": 6,
+      "source": "docs/art-source/motions/production-144/kawakami_princess/alpha.png",
+      "sourceSha256": "787d42841179b6a0018862a10681c1f195cef04d5523cf357ab8d15996cd898f",
+      "crop": [
+        552,
+        292,
+        725,
+        516
+      ],
+      "destination": [
+        281,
+        139,
+        77,
+        99
+      ]
+    },
+    {
+      "frame": 7,
+      "sourceFrame": 7,
+      "source": "docs/art-source/motions/production-144/kawakami_princess/alpha.png",
+      "sourceSha256": "787d42841179b6a0018862a10681c1f195cef04d5523cf357ab8d15996cd898f",
+      "crop": [
+        811,
+        293,
+        986,
+        516
+      ],
+      "destination": [
+        409,
+        139,
+        77,
+        99
+      ]
+    },
+    {
+      "frame": 8,
+      "sourceFrame": 8,
+      "source": "docs/art-source/motions/production-144/kawakami_princess/alpha.png",
+      "sourceSha256": "787d42841179b6a0018862a10681c1f195cef04d5523cf357ab8d15996cd898f",
+      "crop": [
+        49,
+        544,
+        231,
+        772
+      ],
+      "destination": [
+        23,
+        265,
+        81,
+        101
+      ]
+    },
+    {
+      "frame": 9,
+      "sourceFrame": 9,
+      "source": "docs/art-source/motions/production-144/kawakami_princess/alpha.png",
+      "sourceSha256": "787d42841179b6a0018862a10681c1f195cef04d5523cf357ab8d15996cd898f",
+      "crop": [
+        302,
+        544,
+        455,
+        772
+      ],
+      "destination": [
+        158,
+        265,
+        68,
+        101
+      ]
+    },
+    {
+      "frame": 10,
+      "sourceFrame": 10,
+      "source": "docs/art-source/motions/production-144/kawakami_princess/alpha.png",
+      "sourceSha256": "787d42841179b6a0018862a10681c1f195cef04d5523cf357ab8d15996cd898f",
+      "crop": [
+        540,
+        546,
+        751,
+        772
+      ],
+      "destination": [
+        273,
+        266,
+        93,
+        100
+      ]
+    },
+    {
+      "frame": 11,
+      "sourceFrame": 11,
+      "source": "docs/art-source/motions/production-144/kawakami_princess/alpha.png",
+      "sourceSha256": "787d42841179b6a0018862a10681c1f195cef04d5523cf357ab8d15996cd898f",
+      "crop": [
+        813,
+        545,
+        963,
+        772
+      ],
+      "destination": [
+        415,
+        266,
+        66,
+        100
+      ]
+    },
+    {
+      "frame": 12,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/skill-revisions-2026-09-11/kawakami_princess/generated.png",
+      "sourceSha256": "15995b965bb34e77715a7fb49e70e580ed9b0fb20eca23eb1cfb8366790de31e",
+      "crop": [
+        209,
+        13,
+        561,
+        498
+      ],
+      "destination": [
+        27,
+        391,
+        74,
+        103
+      ]
+    },
+    {
+      "frame": 13,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/skill-revisions-2026-09-11/kawakami_princess/generated.png",
+      "sourceSha256": "15995b965bb34e77715a7fb49e70e580ed9b0fb20eca23eb1cfb8366790de31e",
+      "crop": [
+        932,
+        13,
+        1289,
+        503
+      ],
+      "destination": [
+        154,
+        390,
+        75,
+        104
+      ]
+    },
+    {
+      "frame": 14,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/skill-revisions-2026-09-11/kawakami_princess/generated.png",
+      "sourceSha256": "15995b965bb34e77715a7fb49e70e580ed9b0fb20eca23eb1cfb8366790de31e",
+      "crop": [
+        156,
+        512,
+        684,
+        1004
+      ],
+      "destination": [
+        264,
+        390,
+        112,
+        104
+      ]
+    },
+    {
+      "frame": 15,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/skill-revisions-2026-09-11/kawakami_princess/generated.png",
+      "sourceSha256": "15995b965bb34e77715a7fb49e70e580ed9b0fb20eca23eb1cfb8366790de31e",
+      "crop": [
+        910,
+        515,
+        1395,
+        1007
+      ],
+      "destination": [
+        396,
+        390,
+        103,
+        104
+      ]
+    },
+    {
+      "frame": 16,
+      "sourceFrame": 16,
+      "source": "docs/art-source/motions/production-144/kawakami_princess/alpha.png",
+      "sourceSha256": "787d42841179b6a0018862a10681c1f195cef04d5523cf357ab8d15996cd898f",
+      "crop": [
+        37,
+        1069,
+        220,
+        1280
+      ],
+      "destination": [
+        23,
+        529,
+        81,
+        93
+      ]
+    },
+    {
+      "frame": 17,
+      "sourceFrame": 17,
+      "source": "docs/art-source/motions/production-144/kawakami_princess/alpha.png",
+      "sourceSha256": "787d42841179b6a0018862a10681c1f195cef04d5523cf357ab8d15996cd898f",
+      "crop": [
+        295,
+        1087,
+        481,
+        1268
+      ],
+      "destination": [
+        151,
+        542,
+        82,
+        80
+      ]
+    },
+    {
+      "frame": 18,
+      "sourceFrame": 18,
+      "source": "docs/art-source/motions/production-144/kawakami_princess/alpha.png",
+      "sourceSha256": "787d42841179b6a0018862a10681c1f195cef04d5523cf357ab8d15996cd898f",
+      "crop": [
+        541,
+        1090,
+        724,
+        1268
+      ],
+      "destination": [
+        279,
+        543,
+        81,
+        79
+      ]
+    },
+    {
+      "frame": 19,
+      "sourceFrame": 19,
+      "source": "docs/art-source/motions/production-144/kawakami_princess/alpha.png",
+      "sourceSha256": "787d42841179b6a0018862a10681c1f195cef04d5523cf357ab8d15996cd898f",
+      "crop": [
+        777,
+        1165,
+        1005,
+        1272
+      ],
+      "destination": [
+        397,
+        575,
+        101,
+        47
+      ]
+    },
+    {
+      "frame": 20,
+      "sourceFrame": 20,
+      "source": "docs/art-source/motions/production-144/kawakami_princess/alpha.png",
+      "sourceSha256": "787d42841179b6a0018862a10681c1f195cef04d5523cf357ab8d15996cd898f",
+      "crop": [
+        53,
+        1296,
+        213,
+        1529
+      ],
+      "destination": [
+        28,
+        647,
+        71,
+        103
+      ]
+    },
+    {
+      "frame": 21,
+      "sourceFrame": 21,
+      "source": "docs/art-source/motions/production-144/kawakami_princess/alpha.png",
+      "sourceSha256": "787d42841179b6a0018862a10681c1f195cef04d5523cf357ab8d15996cd898f",
+      "crop": [
+        303,
+        1292,
+        468,
+        1527
+      ],
+      "destination": [
+        155,
+        646,
+        73,
+        104
+      ]
+    },
+    {
+      "frame": 22,
+      "sourceFrame": 22,
+      "source": "docs/art-source/motions/production-144/kawakami_princess/alpha.png",
+      "sourceSha256": "787d42841179b6a0018862a10681c1f195cef04d5523cf357ab8d15996cd898f",
+      "crop": [
+        547,
+        1300,
+        714,
+        1529
+      ],
+      "destination": [
+        283,
+        649,
+        74,
+        101
+      ]
+    },
+    {
+      "frame": 23,
+      "sourceFrame": 23,
+      "source": "docs/art-source/motions/production-144/kawakami_princess/alpha.png",
+      "sourceSha256": "787d42841179b6a0018862a10681c1f195cef04d5523cf357ab8d15996cd898f",
+      "crop": [
+        814,
+        1298,
+        967,
+        1529
+      ],
+      "destination": [
+        414,
+        648,
+        68,
+        102
+      ]
+    }
+  ],
+  "skillRevision": {
+    "scale": 0.21138211382113822,
+    "review": "docs/art-source/motions/skill-revisions-2026-09-11/kawakami_princess/review.json",
+    "beforeFrames": [
+      "465d684e8377e75e391fcfeab5f3a7892e653a2af7b0b50c4e49e4b45a5457dd",
+      "fcceb39a97c6a0b25a7f5301b7a378b4d09775cf590c5f8977ebbd7507841361",
+      "4a452aab7107dc42a2c456cc44ae7390a5d9c04051acd87d809f394fbf4b6644",
+      "16b21ef0440c36c262225f27569d7630256d9eeb0ff2d1249076558eb08bb2c5",
+      "ac1afd2307df56967556058ca14355530d71d7b2b08e49da1ae574a1eeb4586f",
+      "b79b365d111cbe84dae61285d87294fb97d760079f08340c17b5b035ea8795be",
+      "844c054894c46091d4f1841ea90aba2d471f2b994d214719e88339bc26f2f2cf",
+      "929e80dfdd17642cc0560ea78b4224845f729543685169e14d31622b38803795",
+      "4f5df203fbf2a5902714074e406ecfb576d168e313999de016288e92e3cb8852",
+      "5741b48fdb3d214f25c9f01d02db478eae2175e0c95a504124bb211190178788",
+      "edc638553469dfe15e0ea27cde582c0c89fc3b7139c5be9df4dcaa02c28a2df8",
+      "c29a3857bf3ef06e64de1bfebdd11aafe4b7d2988ba0ad130797252e6bcb2fec",
+      "47b55b277302e1701e720dcca4a020ee045aac2ef9b96f9c301f040578727233",
+      "0b08cf44532614fd8548f19588afea543c74a49601310e1b0d364e6b9db8353f",
+      "853e94a55c0f18fe1df605e1ce1e5eb776142ded8a853eaeb15f80d81f0f663c",
+      "9b64259984c5a81d3fe7a450018bbc1f71926ace45093ae35631704369146cf1",
+      "cc048b63106b33aadaed066e06bd5f38809eab4ba22445cb2f1f45c50968e9fa",
+      "e8c55d66aae082af67ef08109face5196029c53b7494f46872034c9a4f2f157c",
+      "13c3b353f80d5d969d61190628fecc67de9a60728e04bb096b5f2bc1644c7b2d",
+      "6cdaba5b8abe2152e007d65d81c8e7d4556877642312de184e1b8742704e0b47",
+      "ca94204989e36ac2f31901f054a95e5fdad3b7809b55667e52610c4534436c00",
+      "356abd2e2747071de6e9687a90018c3133db2d5409c74187fd930c89c9fb8f84",
+      "56ea92a46d71d8a2ce9d670df723bd46672c23911bbf7122ccf5d659b81a706d",
+      "157e543484a5469e25ed6a3979dd856d7e460e2b9bd8a53d2f4548e61fb42ba7"
+    ],
+    "afterFrames": [
+      "465d684e8377e75e391fcfeab5f3a7892e653a2af7b0b50c4e49e4b45a5457dd",
+      "fcceb39a97c6a0b25a7f5301b7a378b4d09775cf590c5f8977ebbd7507841361",
+      "4a452aab7107dc42a2c456cc44ae7390a5d9c04051acd87d809f394fbf4b6644",
+      "16b21ef0440c36c262225f27569d7630256d9eeb0ff2d1249076558eb08bb2c5",
+      "ac1afd2307df56967556058ca14355530d71d7b2b08e49da1ae574a1eeb4586f",
+      "b79b365d111cbe84dae61285d87294fb97d760079f08340c17b5b035ea8795be",
+      "844c054894c46091d4f1841ea90aba2d471f2b994d214719e88339bc26f2f2cf",
+      "929e80dfdd17642cc0560ea78b4224845f729543685169e14d31622b38803795",
+      "4f5df203fbf2a5902714074e406ecfb576d168e313999de016288e92e3cb8852",
+      "5741b48fdb3d214f25c9f01d02db478eae2175e0c95a504124bb211190178788",
+      "edc638553469dfe15e0ea27cde582c0c89fc3b7139c5be9df4dcaa02c28a2df8",
+      "c29a3857bf3ef06e64de1bfebdd11aafe4b7d2988ba0ad130797252e6bcb2fec",
+      "400876051eb0d5d50ae6533e30f5b83adc4613008d844a7f68d8a234159a43d0",
+      "87759ed27b9e1f376770cb30c73bf3af76c0868df13c596f2af152ab8d78c258",
+      "8878cc04a542ed38840cb34131dcf4594157a57ed37b9071e1c0c06d8a49611d",
+      "944d68d6cf75e63b2cafc27dfd7db953631edba8477d988b4c6391326fec6a64",
+      "cc048b63106b33aadaed066e06bd5f38809eab4ba22445cb2f1f45c50968e9fa",
+      "e8c55d66aae082af67ef08109face5196029c53b7494f46872034c9a4f2f157c",
+      "13c3b353f80d5d969d61190628fecc67de9a60728e04bb096b5f2bc1644c7b2d",
+      "6cdaba5b8abe2152e007d65d81c8e7d4556877642312de184e1b8742704e0b47",
+      "ca94204989e36ac2f31901f054a95e5fdad3b7809b55667e52610c4534436c00",
+      "356abd2e2747071de6e9687a90018c3133db2d5409c74187fd930c89c9fb8f84",
+      "56ea92a46d71d8a2ce9d670df723bd46672c23911bbf7122ccf5d659b81a706d",
+      "157e543484a5469e25ed6a3979dd856d7e460e2b9bd8a53d2f4548e61fb42ba7"
+    ],
+    "unchangedFrames": 20,
+    "changedFrames": [
+      12,
+      13,
+      14,
+      15
+    ]
+  }
+}

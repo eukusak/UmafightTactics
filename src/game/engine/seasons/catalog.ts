@@ -48,7 +48,7 @@ const recipes: Record<SeasonId, TraitRecipe[]> = {
   ],
   s5: [
     ['crown', '왕관의 계승자', t => [stat('STAT_MUL', 'attackDamage', .05 * t), stat('STAT_ADD', 'abilityPower', 7 * t)], t => `공격력 +${5*t}%, 주문력 +${7*t}`],
-    ['vow', '불굴의 맹세', t => [{ kind: 'SHIELD_MAXHP_PCT', value: .1 * t, duration: 5, oncePerCombat: true, trigger: { when: 'HP_BELOW', threshold: .4 } }], t => `체력 40% 미만일 때 한 번, 5초 동안 최대 체력 ${10*t}% 보호막`],
+    ['vow', '불굴의 맹세', t => [{ kind: 'SHIELD_MAXHP_PCT', value: .08 * t, duration: 5, oncePerCombat: true, trigger: { when: 'HP_BELOW', threshold: .4 } }], t => `체력 40% 미만일 때 한 번, 5초 동안 최대 체력 ${8*t}% 보호막`],
     ['legacy', '영광의 유산', t => [{ kind: 'HEAL_MAXHP_PCT', value: .06 * t, trigger: { when: 'ON_TAKEDOWN_ASSIST' } }], t => `처치 관여 시 자신의 최대 체력 ${6*t}% 회복`],
     ['finale', '피날레', t => [{ ...stat('STAT_MUL', 'attackSpeed', .08 * t), oncePerCombat: true, trigger: { when: 'EVERY_SECONDS', threshold: 10 } }, { kind: 'DAMAGE_AMP', value: .04 * t, trigger: { when: 'AFTER_SECONDS', threshold: 10 } }], t => `전투 10초 후 공격속도 +${8*t}%, 피해 +${4*t}%`],
   ],
@@ -82,7 +82,9 @@ export function buildSeasons(units: UnitDef[], firstSeasonIds: string[]): Season
       for (let n = 0; n < SEASON_COST_COUNTS[cost]; n++) {
         const needsNew = n < newQuota;
         const eligible = candidates.filter(u => appearances.has(u.id) !== needsNew);
-        const score = (u: UnitDef): number => (roles.get(u.role) ?? 0) * .5 + traitLoad(u)
+        // Draw common reserve traits earlier so the final season is not forced to take all of them.
+        const reservePressure = (u: UnitDef): number => needsNew ? u.traits.reduce((sum, t) => sum + eligible.filter(v => v.traits.includes(t)).length, 0) * .15 : 0;
+        const score = (u: UnitDef): number => (roles.get(u.role) ?? 0) * .5 + traitLoad(u) - reservePressure(u)
           + (appearances.get(u.id) ?? 0) * .35 - u.traits.filter(t => theme.focus.includes(t)).length * .2;
         eligible.sort((a, b) => score(a) - score(b) || compareId(a, b));
         const unit = eligible[0];

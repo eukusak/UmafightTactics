@@ -1,0 +1,61 @@
+{
+  "raceSource": {
+    "repository": "eukusak/UmaRogue",
+    "commit": "b53aab53a96626187bc9877dacd4a0cab5d94275",
+    "path": "data_pipeline/source/uma_rogue_jpn.sqlite3",
+    "gitBlob": "e0aee26ca7353d897e96a8da8bd16c277428eef6",
+    "sha256": "5618551e0d1783d3c0ced6597d865c9ca7b1f5acac23f14eb1f5201d9882fb25",
+    "rows": 6413
+  },
+  "tftUserAttachments": [
+    {
+      "set": 1,
+      "attachmentId": "e1ae3589-05da-4691-a8af-3992605ac01c",
+      "sha256": "1f8bca821542fa440b0a440d499c03bc5c163af116da35409256a700a6a022ca",
+      "characters": 63907,
+      "scope": "supplied full-set text"
+    },
+    {
+      "set": 2,
+      "attachmentId": "4acb0d82-4d1a-4820-86c5-a7450019eca1",
+      "sha256": "f1fa7580559204943ba3c0f56989c8915b77c05eadfa78fb43b70a1183d5959c",
+      "characters": 51991,
+      "scope": "supplied full-set text"
+    },
+    {
+      "set": 3,
+      "attachmentId": "ec95e288-7c7b-4935-80c2-25b1f418cb68",
+      "sha256": "14575df7cefdcd31f6640fbbf5782fa08e471bb6a8723222cd2e55a046d48ba4",
+      "characters": 11458,
+      "scope": "supplied partial / removed-unit text"
+    },
+    {
+      "set": 4,
+      "attachmentId": "06258ebf-d05f-4281-a3f7-3f7e6491fabd",
+      "sha256": "a21249366776a1069277ca375c909248f5f67a4628b0cc075960a711172a03a7",
+      "characters": 31807,
+      "scope": "supplied partial / removed-unit text"
+    },
+    {
+      "set": 5,
+      "attachmentId": "b66e90f6-0225-45b5-b555-b6bd00ecd818",
+      "sha256": "1467039d45d1ca17178e43193c86d6c2d7f099e74b188938103dbde4cb27e1c1",
+      "characters": 18678,
+      "scope": "supplied partial / removed-unit text"
+    }
+  ],
+  "skillProfiles": 145,
+  "mechanicalPatterns": 42,
+  "traitCorrections": 12,
+  "visuals": {
+    "rasterRedraws": 0,
+    "bodyContractsChecked": 145,
+    "visuallyInspectedAtlases": [
+      "special_week",
+      "silence_suzuka",
+      "tokai_teio",
+      "rice_shower"
+    ],
+    "changes": "Event-driven LINE/CONE/CHAIN geometry, per-character accent/pixel glyph, STRIKE/PULSE/CHANNEL timing"
+  }
+}

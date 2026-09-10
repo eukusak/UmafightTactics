@@ -15,7 +15,7 @@ import { createPool, returnInstance } from '../pool';
 import { emptyShop, rollShop, applyCombines, teamSizeLimit } from '../shop';
 import { grantRoundXp, resetRoundEconomy, roundIncome, reducePlayerDamage } from '../economy';
 import { addItemToStorage, resolveTrickGloves } from '../items/inventory';
-import { runAiPrep, ensureInitialBoard, finalizeAiFormation } from '../ai';
+import { runAiPrep, ensureInitialBoard, finalizeAiFormation, resolveAiItemRewards } from '../ai';
 import { AI_PROFILE_IDS } from '../ai/profiles';
 import { BattleEngine, simulateBattle, type BattleFrame, type BattleSideInput } from '../battle/engine';
 import { PVE_UNIT_IDS } from '../battle/pve-units';
@@ -290,6 +290,7 @@ export class RoundDirector {
   /** Resolves the whole round: fights, damage, elimination, income. */
   resolveRound(deferSettlement = false): RoundResolution {
     if (this.pendingSettlement) throw new Error('The previous battle has not settled');
+    for (const p of this.state.players.filter(isAlive)) resolveAiItemRewards(this.state, p);
     this.refreshAiPlacements();
     const s = this.state;
     s.phase = 'BATTLE';
@@ -479,6 +480,7 @@ export class RoundDirector {
     for (const outcome of outcomes) {
       const p = getPlayer(s, outcome.attackerId);
       const won = outcome.winnerId === p.id;
+      if (won && s.stage === 4 && s.round === 7) p.pendingGrants.push({ kind: 'ARTIFACT_CHOICE', count: 1 });
       const loot = rollPveLoot(this.rngs.get('loot'), s.stage, won);
       p.gold += loot.gold;
       for (const c of loot.components) addItemToStorage(s, p, c);

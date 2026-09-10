@@ -1,0 +1,9 @@
+{
+  "mode": "built-in image_gen",
+  "prompt": "Create a transparent PNG cutout sprite sheet using this character reference. Four full-body chibi poses in a 2 by 2 grid on an EMPTY TRANSPARENT ALPHA background, with wide empty gutters. Preserve neo_universe's hair, face, ears, costume and accessories. Four poses in reading order: crouch ready to launch; dash forward lifting the leading knee; plant that boot firmly and compress the body releasing a compact circular impact ring; rise from the planted stance. Same proportions across poses, crisp cel-shaded game art, compact effects within each cell. No labels, no ground or backdrop. Transparency is essential: do not draw a checkerboard.",
+  "references": [
+    "public/assets/motions/neo_universe.png"
+  ],
+  "referenceCommit": "3c950f3ce3476b152f2ad3d99fd296327a3c82bf",
+  "skillSignature": "8ef8af6fba3f5c64a37ee94255e29e2be015107c6c9357cf212c8f53263c7642"
+}

@@ -1,0 +1,506 @@
+{
+  "format": "uft-baked-frames-v1",
+  "scale": 0.41767068273092367,
+  "anchor": [
+    64,
+    110
+  ],
+  "runtimeSha256": "c3cb362bf1f3b6676570c25f0916ffb12755082289213a332e03d384333e20be",
+  "frames": [
+    {
+      "frame": 0,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/production-144/tap_dance_city/alpha.png",
+      "sourceSha256": "20fc0b8e3e77a7a5b84e26c19bf24f1e9d7fe5330d162ea3e592e9e10717559e",
+      "crop": [
+        64,
+        18,
+        205,
+        266
+      ],
+      "destination": [
+        34,
+        6,
+        59,
+        104
+      ]
+    },
+    {
+      "frame": 1,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/production-144/tap_dance_city/alpha.png",
+      "sourceSha256": "20fc0b8e3e77a7a5b84e26c19bf24f1e9d7fe5330d162ea3e592e9e10717559e",
+      "crop": [
+        315,
+        17,
+        451,
+        266
+      ],
+      "destination": [
+        163,
+        6,
+        57,
+        104
+      ]
+    },
+    {
+      "frame": 2,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/production-144/tap_dance_city/alpha.png",
+      "sourceSha256": "20fc0b8e3e77a7a5b84e26c19bf24f1e9d7fe5330d162ea3e592e9e10717559e",
+      "crop": [
+        565,
+        17,
+        698,
+        266
+      ],
+      "destination": [
+        292,
+        6,
+        56,
+        104
+      ]
+    },
+    {
+      "frame": 3,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/production-144/tap_dance_city/alpha.png",
+      "sourceSha256": "20fc0b8e3e77a7a5b84e26c19bf24f1e9d7fe5330d162ea3e592e9e10717559e",
+      "crop": [
+        824,
+        17,
+        958,
+        266
+      ],
+      "destination": [
+        420,
+        6,
+        56,
+        104
+      ]
+    },
+    {
+      "frame": 4,
+      "sourceFrame": 4,
+      "source": "docs/art-source/motions/production-144/tap_dance_city/alpha.png",
+      "sourceSha256": "20fc0b8e3e77a7a5b84e26c19bf24f1e9d7fe5330d162ea3e592e9e10717559e",
+      "crop": [
+        42,
+        278,
+        216,
+        513
+      ],
+      "destination": [
+        27,
+        140,
+        73,
+        98
+      ]
+    },
+    {
+      "frame": 5,
+      "sourceFrame": 5,
+      "source": "docs/art-source/motions/production-144/tap_dance_city/alpha.png",
+      "sourceSha256": "20fc0b8e3e77a7a5b84e26c19bf24f1e9d7fe5330d162ea3e592e9e10717559e",
+      "crop": [
+        288,
+        281,
+        477,
+        513
+      ],
+      "destination": [
+        152,
+        141,
+        79,
+        97
+      ]
+    },
+    {
+      "frame": 6,
+      "sourceFrame": 6,
+      "source": "docs/art-source/motions/production-144/tap_dance_city/alpha.png",
+      "sourceSha256": "20fc0b8e3e77a7a5b84e26c19bf24f1e9d7fe5330d162ea3e592e9e10717559e",
+      "crop": [
+        542,
+        278,
+        724,
+        508
+      ],
+      "destination": [
+        282,
+        142,
+        76,
+        96
+      ]
+    },
+    {
+      "frame": 7,
+      "sourceFrame": 7,
+      "source": "docs/art-source/motions/production-144/tap_dance_city/alpha.png",
+      "sourceSha256": "20fc0b8e3e77a7a5b84e26c19bf24f1e9d7fe5330d162ea3e592e9e10717559e",
+      "crop": [
+        798,
+        278,
+        985,
+        513
+      ],
+      "destination": [
+        409,
+        140,
+        78,
+        98
+      ]
+    },
+    {
+      "frame": 8,
+      "sourceFrame": 8,
+      "source": "docs/art-source/motions/production-144/tap_dance_city/alpha.png",
+      "sourceSha256": "20fc0b8e3e77a7a5b84e26c19bf24f1e9d7fe5330d162ea3e592e9e10717559e",
+      "crop": [
+        51,
+        533,
+        213,
+        769
+      ],
+      "destination": [
+        30,
+        267,
+        68,
+        99
+      ]
+    },
+    {
+      "frame": 9,
+      "sourceFrame": 9,
+      "source": "docs/art-source/motions/production-144/tap_dance_city/alpha.png",
+      "sourceSha256": "20fc0b8e3e77a7a5b84e26c19bf24f1e9d7fe5330d162ea3e592e9e10717559e",
+      "crop": [
+        304,
+        533,
+        482,
+        769
+      ],
+      "destination": [
+        155,
+        267,
+        74,
+        99
+      ]
+    },
+    {
+      "frame": 10,
+      "sourceFrame": 10,
+      "source": "docs/art-source/motions/production-144/tap_dance_city/alpha.png",
+      "sourceSha256": "20fc0b8e3e77a7a5b84e26c19bf24f1e9d7fe5330d162ea3e592e9e10717559e",
+      "crop": [
+        552,
+        535,
+        768,
+        769
+      ],
+      "destination": [
+        275,
+        268,
+        90,
+        98
+      ]
+    },
+    {
+      "frame": 11,
+      "sourceFrame": 11,
+      "source": "docs/art-source/motions/production-144/tap_dance_city/alpha.png",
+      "sourceSha256": "20fc0b8e3e77a7a5b84e26c19bf24f1e9d7fe5330d162ea3e592e9e10717559e",
+      "crop": [
+        816,
+        533,
+        971,
+        769
+      ],
+      "destination": [
+        415,
+        267,
+        65,
+        99
+      ]
+    },
+    {
+      "frame": 12,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/skill-revisions-2026-09-11/tap_dance_city/generated.png",
+      "sourceSha256": "9b9fe3e683a01af71de07305ce8fd1ae81dedc40fb91570bec5050a97d4d52d7",
+      "crop": [
+        179,
+        21,
+        642,
+        470
+      ],
+      "destination": [
+        20,
+        409,
+        87,
+        85
+      ]
+    },
+    {
+      "frame": 13,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/skill-revisions-2026-09-11/tap_dance_city/generated.png",
+      "sourceSha256": "9b9fe3e683a01af71de07305ce8fd1ae81dedc40fb91570bec5050a97d4d52d7",
+      "crop": [
+        892,
+        22,
+        1471,
+        480
+      ],
+      "destination": [
+        137,
+        407,
+        109,
+        87
+      ]
+    },
+    {
+      "frame": 14,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/skill-revisions-2026-09-11/tap_dance_city/generated.png",
+      "sourceSha256": "9b9fe3e683a01af71de07305ce8fd1ae81dedc40fb91570bec5050a97d4d52d7",
+      "crop": [
+        99,
+        538,
+        713,
+        959
+      ],
+      "destination": [
+        262,
+        414,
+        116,
+        80
+      ]
+    },
+    {
+      "frame": 15,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/skill-revisions-2026-09-11/tap_dance_city/generated.png",
+      "sourceSha256": "9b9fe3e683a01af71de07305ce8fd1ae81dedc40fb91570bec5050a97d4d52d7",
+      "crop": [
+        949,
+        527,
+        1364,
+        992
+      ],
+      "destination": [
+        409,
+        406,
+        78,
+        88
+      ]
+    },
+    {
+      "frame": 16,
+      "sourceFrame": 16,
+      "source": "docs/art-source/motions/production-144/tap_dance_city/alpha.png",
+      "sourceSha256": "20fc0b8e3e77a7a5b84e26c19bf24f1e9d7fe5330d162ea3e592e9e10717559e",
+      "crop": [
+        59,
+        1061,
+        209,
+        1264
+      ],
+      "destination": [
+        32,
+        537,
+        63,
+        85
+      ]
+    },
+    {
+      "frame": 17,
+      "sourceFrame": 17,
+      "source": "docs/art-source/motions/production-144/tap_dance_city/alpha.png",
+      "sourceSha256": "20fc0b8e3e77a7a5b84e26c19bf24f1e9d7fe5330d162ea3e592e9e10717559e",
+      "crop": [
+        307,
+        1071,
+        466,
+        1263
+      ],
+      "destination": [
+        159,
+        542,
+        66,
+        80
+      ]
+    },
+    {
+      "frame": 18,
+      "sourceFrame": 18,
+      "source": "docs/art-source/motions/production-144/tap_dance_city/alpha.png",
+      "sourceSha256": "20fc0b8e3e77a7a5b84e26c19bf24f1e9d7fe5330d162ea3e592e9e10717559e",
+      "crop": [
+        544,
+        1102,
+        714,
+        1259
+      ],
+      "destination": [
+        284,
+        556,
+        71,
+        66
+      ]
+    },
+    {
+      "frame": 19,
+      "sourceFrame": 19,
+      "source": "docs/art-source/motions/production-144/tap_dance_city/alpha.png",
+      "sourceSha256": "20fc0b8e3e77a7a5b84e26c19bf24f1e9d7fe5330d162ea3e592e9e10717559e",
+      "crop": [
+        785,
+        1157,
+        1000,
+        1256
+      ],
+      "destination": [
+        403,
+        581,
+        90,
+        41
+      ]
+    },
+    {
+      "frame": 20,
+      "sourceFrame": 20,
+      "source": "docs/art-source/motions/production-144/tap_dance_city/alpha.png",
+      "sourceSha256": "20fc0b8e3e77a7a5b84e26c19bf24f1e9d7fe5330d162ea3e592e9e10717559e",
+      "crop": [
+        60,
+        1279,
+        204,
+        1523
+      ],
+      "destination": [
+        34,
+        648,
+        60,
+        102
+      ]
+    },
+    {
+      "frame": 21,
+      "sourceFrame": 21,
+      "source": "docs/art-source/motions/production-144/tap_dance_city/alpha.png",
+      "sourceSha256": "20fc0b8e3e77a7a5b84e26c19bf24f1e9d7fe5330d162ea3e592e9e10717559e",
+      "crop": [
+        310,
+        1279,
+        479,
+        1521
+      ],
+      "destination": [
+        156,
+        649,
+        71,
+        101
+      ]
+    },
+    {
+      "frame": 22,
+      "sourceFrame": 22,
+      "source": "docs/art-source/motions/production-144/tap_dance_city/alpha.png",
+      "sourceSha256": "20fc0b8e3e77a7a5b84e26c19bf24f1e9d7fe5330d162ea3e592e9e10717559e",
+      "crop": [
+        562,
+        1279,
+        706,
+        1523
+      ],
+      "destination": [
+        290,
+        648,
+        60,
+        102
+      ]
+    },
+    {
+      "frame": 23,
+      "sourceFrame": 23,
+      "source": "docs/art-source/motions/production-144/tap_dance_city/alpha.png",
+      "sourceSha256": "20fc0b8e3e77a7a5b84e26c19bf24f1e9d7fe5330d162ea3e592e9e10717559e",
+      "crop": [
+        829,
+        1279,
+        965,
+        1524
+      ],
+      "destination": [
+        419,
+        648,
+        57,
+        102
+      ]
+    }
+  ],
+  "skillRevision": {
+    "scale": 0.18892508143322476,
+    "review": "docs/art-source/motions/skill-revisions-2026-09-11/tap_dance_city/review.json",
+    "beforeFrames": [
+      "53fb4605023925ce1f78c0928d34db66df88bec177c50cd626822e5f5da0043f",
+      "ec7741f0b2fe4d5def64f7e305ac7789e4c555aa0fdfb1d8288584d3bb626e41",
+      "247b26bcfec24a8cbb7b717b2e9207fec994054fe7bb3bd058e973f5fba05fbc",
+      "c66a8353e05c9d09a4cf1d6b44addc4cc08ed0e29e2efdbc1d8466366cd836ca",
+      "19c21ae95083a1a18669c014c09c21b2bca9ca2c7fd7ce0c3cd98fb5beca8241",
+      "f21a2035340c66070cc5c8ed11938eff14143d0db7a884fe381bf9b69caf43cf",
+      "af1eeedd0057688db3457f6641e52de2a3c6f9cc4f0e0444350d75bdc62d9fc5",
+      "c9ac69a56d3d4969ee0ae5f850cffe9979fa09db0eca5d540d099cf70a2999c2",
+      "6715872062a937832fea113b5d65dccade04f72f87e8d054bc1463d9ca149b96",
+      "04fab38b6980362bdb1e70e2688685ff8fdd3fe7f216eed61b22823bc0165962",
+      "294f7c179d5c8c4a8cba747cd49f40a2791857afd37cfc3da39eb599c637fa1f",
+      "cb679c8ddf4bcb07cbb6c7cf297307a96037e5c50e7b6e44a6af55a36e245027",
+      "d793915ee0a9cc7e074a721e9e8966b1c2509592b6a10b6f54330223c0a10e91",
+      "7b97421b1938dd7acbd9dc3113350021f6c30439f386e06076b350a53e47fb00",
+      "b228aaea541c24044209c5f2f5d2a3cda76136f5e13de35620e64cf842d4fb77",
+      "fedbf51c45eba7f89362aeac96ce3c4af0b4ccefa3f23ca9541b8f9636ad6ddc",
+      "865b2ab3f11d0897302fafed38aa71f95208ea86dfd4861a83724f166dbbbcc7",
+      "d0a1db0ba81b191071504a38e36844fc1e2b17dcb137c42a784d1c3cbf5a2fe8",
+      "fee304c9265f43bdfd1de01154a6ecbeddbd4dad689412e29b8b751c401aa110",
+      "dcc362d4bd7ba57dae5126a7d60a871f22adc0c65a256f047b8d3fdc2e726ec0",
+      "033a7f46b66ac836405f1ac8989c6c6f2e2f9b702df81951db01dabec9fa3463",
+      "9aa315afa4bddea3dc012fe52c232bc1b6fb4da19cd611c1f136abf485cdc18d",
+      "8f5ca77ded0b66621f5173573337440ed0a7d1083ee1f34a8049df49c7572553",
+      "c9be3689d863fadcacce48bf6fcb25f78d62a23ae18b60168a3741422757212f"
+    ],
+    "afterFrames": [
+      "53fb4605023925ce1f78c0928d34db66df88bec177c50cd626822e5f5da0043f",
+      "ec7741f0b2fe4d5def64f7e305ac7789e4c555aa0fdfb1d8288584d3bb626e41",
+      "247b26bcfec24a8cbb7b717b2e9207fec994054fe7bb3bd058e973f5fba05fbc",
+      "c66a8353e05c9d09a4cf1d6b44addc4cc08ed0e29e2efdbc1d8466366cd836ca",
+      "19c21ae95083a1a18669c014c09c21b2bca9ca2c7fd7ce0c3cd98fb5beca8241",
+      "f21a2035340c66070cc5c8ed11938eff14143d0db7a884fe381bf9b69caf43cf",
+      "af1eeedd0057688db3457f6641e52de2a3c6f9cc4f0e0444350d75bdc62d9fc5",
+      "c9ac69a56d3d4969ee0ae5f850cffe9979fa09db0eca5d540d099cf70a2999c2",
+      "6715872062a937832fea113b5d65dccade04f72f87e8d054bc1463d9ca149b96",
+      "04fab38b6980362bdb1e70e2688685ff8fdd3fe7f216eed61b22823bc0165962",
+      "294f7c179d5c8c4a8cba747cd49f40a2791857afd37cfc3da39eb599c637fa1f",
+      "cb679c8ddf4bcb07cbb6c7cf297307a96037e5c50e7b6e44a6af55a36e245027",
+      "5d871b1c7062f7b18543e9f76053a6ff585cdc0b940b108a6145a97282ea3844",
+      "fc3bebe47368aa50a0dcf41a1d0f9bb074dca7fe983f1145df27201f0641eb38",
+      "a806e5af655120886ebf279d455421519dd04b2fdfd27e1b381cf9510b34e868",
+      "e1b24443a0d23e226ccc39b16c0cf84701541c97006f7b78715fbefbed035e7e",
+      "865b2ab3f11d0897302fafed38aa71f95208ea86dfd4861a83724f166dbbbcc7",
+      "d0a1db0ba81b191071504a38e36844fc1e2b17dcb137c42a784d1c3cbf5a2fe8",
+      "fee304c9265f43bdfd1de01154a6ecbeddbd4dad689412e29b8b751c401aa110",
+      "dcc362d4bd7ba57dae5126a7d60a871f22adc0c65a256f047b8d3fdc2e726ec0",
+      "033a7f46b66ac836405f1ac8989c6c6f2e2f9b702df81951db01dabec9fa3463",
+      "9aa315afa4bddea3dc012fe52c232bc1b6fb4da19cd611c1f136abf485cdc18d",
+      "8f5ca77ded0b66621f5173573337440ed0a7d1083ee1f34a8049df49c7572553",
+      "c9be3689d863fadcacce48bf6fcb25f78d62a23ae18b60168a3741422757212f"
+    ],
+    "unchangedFrames": 20,
+    "changedFrames": [
+      12,
+      13,
+      14,
+      15
+    ]
+  }
+}

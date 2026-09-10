@@ -63,21 +63,21 @@ describe('item stats', () => {
     const unit = ACTIVE_BY_COST[1][0];
     const bare = buildBaseStats(unit.id, 1, []);
     const belted = buildBaseStats(unit.id, 1, ['training_belt']);
-    expect(belted.hp).toBeCloseTo(bare.hp + 150, 6);
+    expect(belted.hp).toBeCloseTo(bare.hp + 180, 6);
   });
 
   it('applies percentage item stats on top of flat ones', () => {
     const unit = ACTIVE_BY_COST[1][0];
     const bare = buildBaseStats(unit.id, 1, []);
-    const armed = buildBaseStats(unit.id, 1, ['winner_ribbon']);
-    expect(armed.attackDamage).toBeCloseTo(bare.attackDamage * 1.1, 6);
+    const armed = buildBaseStats(unit.id, 1, ['winner_ribbon', 'champion_trophy']);
+    expect(armed.attackDamage).toBeCloseTo((bare.attackDamage + 5) * 1.2, 6);
   });
 
   it('stacks duplicate components', () => {
     const unit = ACTIVE_BY_COST[1][0];
     const bare = buildBaseStats(unit.id, 1, []);
     const doubled = buildBaseStats(unit.id, 1, ['training_belt', 'training_belt']);
-    expect(doubled.hp).toBeCloseTo(bare.hp + 300, 6);
+    expect(doubled.hp).toBeCloseTo(bare.hp + 360, 6);
   });
 });
 

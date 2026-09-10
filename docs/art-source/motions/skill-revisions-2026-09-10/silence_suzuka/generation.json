@@ -1,0 +1,7 @@
+{
+  "mode": "built-in image_gen",
+  "prompt": "Create 4 chibi sprite animation poses for Silence Suzuka matching this reference character. Transparent background. A 2 by 2 sprite sheet, only four full-body characters, no labels. Charging mint energy, extending both hands, emitting a compact mint beam from both hands, recovering. Preserve chestnut hair, horse ears, white and green racing costume. Real PNG cutouts with an alpha channel. Absolutely no checkerboard, no background design.",
+  "reference": "public/assets/motions/silence_suzuka.png",
+  "referenceCommit": "ccd64939bf23acd699db25829b4f26b6b80d861f",
+  "skillSignature": "258f5e5902e8e8aff4e81b7be37da56203091f0b39de38cf04bdd3dc5facbf2d"
+}

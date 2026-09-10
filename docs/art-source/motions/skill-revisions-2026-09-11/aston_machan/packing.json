@@ -1,0 +1,506 @@
+{
+  "format": "uft-baked-frames-v1",
+  "scale": 0.4444444444444444,
+  "anchor": [
+    64,
+    110
+  ],
+  "runtimeSha256": "22e1561bbac1e62ef4dd174de320531d6d87d50ff98a6d716acebdec0c770d15",
+  "frames": [
+    {
+      "frame": 0,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/production-144/aston_machan/alpha.png",
+      "sourceSha256": "d826eb122f480d048edaa98c93f6dce4f89e84b1c661927f5998bfcdd2eebb26",
+      "crop": [
+        49,
+        27,
+        194,
+        253
+      ],
+      "destination": [
+        32,
+        10,
+        64,
+        100
+      ]
+    },
+    {
+      "frame": 1,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/production-144/aston_machan/alpha.png",
+      "sourceSha256": "d826eb122f480d048edaa98c93f6dce4f89e84b1c661927f5998bfcdd2eebb26",
+      "crop": [
+        304,
+        26,
+        450,
+        253
+      ],
+      "destination": [
+        159,
+        9,
+        65,
+        101
+      ]
+    },
+    {
+      "frame": 2,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/production-144/aston_machan/alpha.png",
+      "sourceSha256": "d826eb122f480d048edaa98c93f6dce4f89e84b1c661927f5998bfcdd2eebb26",
+      "crop": [
+        559,
+        27,
+        705,
+        254
+      ],
+      "destination": [
+        287,
+        9,
+        65,
+        101
+      ]
+    },
+    {
+      "frame": 3,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/production-144/aston_machan/alpha.png",
+      "sourceSha256": "d826eb122f480d048edaa98c93f6dce4f89e84b1c661927f5998bfcdd2eebb26",
+      "crop": [
+        814,
+        27,
+        960,
+        253
+      ],
+      "destination": [
+        415,
+        10,
+        65,
+        100
+      ]
+    },
+    {
+      "frame": 4,
+      "sourceFrame": 4,
+      "source": "docs/art-source/motions/production-144/aston_machan/alpha.png",
+      "sourceSha256": "d826eb122f480d048edaa98c93f6dce4f89e84b1c661927f5998bfcdd2eebb26",
+      "crop": [
+        43,
+        285,
+        205,
+        512
+      ],
+      "destination": [
+        28,
+        137,
+        72,
+        101
+      ]
+    },
+    {
+      "frame": 5,
+      "sourceFrame": 5,
+      "source": "docs/art-source/motions/production-144/aston_machan/alpha.png",
+      "sourceSha256": "d826eb122f480d048edaa98c93f6dce4f89e84b1c661927f5998bfcdd2eebb26",
+      "crop": [
+        296,
+        285,
+        460,
+        509
+      ],
+      "destination": [
+        155,
+        138,
+        73,
+        100
+      ]
+    },
+    {
+      "frame": 6,
+      "sourceFrame": 6,
+      "source": "docs/art-source/motions/production-144/aston_machan/alpha.png",
+      "sourceSha256": "d826eb122f480d048edaa98c93f6dce4f89e84b1c661927f5998bfcdd2eebb26",
+      "crop": [
+        552,
+        285,
+        715,
+        512
+      ],
+      "destination": [
+        284,
+        137,
+        72,
+        101
+      ]
+    },
+    {
+      "frame": 7,
+      "sourceFrame": 7,
+      "source": "docs/art-source/motions/production-144/aston_machan/alpha.png",
+      "sourceSha256": "d826eb122f480d048edaa98c93f6dce4f89e84b1c661927f5998bfcdd2eebb26",
+      "crop": [
+        807,
+        285,
+        972,
+        512
+      ],
+      "destination": [
+        411,
+        137,
+        73,
+        101
+      ]
+    },
+    {
+      "frame": 8,
+      "sourceFrame": 8,
+      "source": "docs/art-source/motions/production-144/aston_machan/alpha.png",
+      "sourceSha256": "d826eb122f480d048edaa98c93f6dce4f89e84b1c661927f5998bfcdd2eebb26",
+      "crop": [
+        53,
+        538,
+        215,
+        767
+      ],
+      "destination": [
+        28,
+        264,
+        72,
+        102
+      ]
+    },
+    {
+      "frame": 9,
+      "sourceFrame": 9,
+      "source": "docs/art-source/motions/production-144/aston_machan/alpha.png",
+      "sourceSha256": "d826eb122f480d048edaa98c93f6dce4f89e84b1c661927f5998bfcdd2eebb26",
+      "crop": [
+        295,
+        538,
+        454,
+        768
+      ],
+      "destination": [
+        156,
+        264,
+        71,
+        102
+      ]
+    },
+    {
+      "frame": 10,
+      "sourceFrame": 10,
+      "source": "docs/art-source/motions/production-144/aston_machan/alpha.png",
+      "sourceSha256": "d826eb122f480d048edaa98c93f6dce4f89e84b1c661927f5998bfcdd2eebb26",
+      "crop": [
+        553,
+        538,
+        744,
+        768
+      ],
+      "destination": [
+        277,
+        264,
+        85,
+        102
+      ]
+    },
+    {
+      "frame": 11,
+      "sourceFrame": 11,
+      "source": "docs/art-source/motions/production-144/aston_machan/alpha.png",
+      "sourceSha256": "d826eb122f480d048edaa98c93f6dce4f89e84b1c661927f5998bfcdd2eebb26",
+      "crop": [
+        815,
+        538,
+        960,
+        768
+      ],
+      "destination": [
+        416,
+        264,
+        64,
+        102
+      ]
+    },
+    {
+      "frame": 12,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/skill-revisions-2026-09-11/aston_machan/generated.png",
+      "sourceSha256": "fa68b2f5e097bc7ed5a6cc9f248f73f6c8fbf2d3de44411aac1e095bfdd78263",
+      "crop": [
+        172,
+        39,
+        533,
+        497
+      ],
+      "destination": [
+        33,
+        417,
+        61,
+        77
+      ]
+    },
+    {
+      "frame": 13,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/skill-revisions-2026-09-11/aston_machan/generated.png",
+      "sourceSha256": "fa68b2f5e097bc7ed5a6cc9f248f73f6c8fbf2d3de44411aac1e095bfdd78263",
+      "crop": [
+        805,
+        33,
+        1491,
+        486
+      ],
+      "destination": [
+        134,
+        417,
+        116,
+        77
+      ]
+    },
+    {
+      "frame": 14,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/skill-revisions-2026-09-11/aston_machan/generated.png",
+      "sourceSha256": "fa68b2f5e097bc7ed5a6cc9f248f73f6c8fbf2d3de44411aac1e095bfdd78263",
+      "crop": [
+        213,
+        529,
+        651,
+        998
+      ],
+      "destination": [
+        283,
+        415,
+        74,
+        79
+      ]
+    },
+    {
+      "frame": 15,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/skill-revisions-2026-09-11/aston_machan/generated.png",
+      "sourceSha256": "fa68b2f5e097bc7ed5a6cc9f248f73f6c8fbf2d3de44411aac1e095bfdd78263",
+      "crop": [
+        951,
+        533,
+        1237,
+        1000
+      ],
+      "destination": [
+        424,
+        415,
+        48,
+        79
+      ]
+    },
+    {
+      "frame": 16,
+      "sourceFrame": 16,
+      "source": "docs/art-source/motions/production-144/aston_machan/alpha.png",
+      "sourceSha256": "d826eb122f480d048edaa98c93f6dce4f89e84b1c661927f5998bfcdd2eebb26",
+      "crop": [
+        49,
+        1060,
+        215,
+        1269
+      ],
+      "destination": [
+        27,
+        529,
+        74,
+        93
+      ]
+    },
+    {
+      "frame": 17,
+      "sourceFrame": 17,
+      "source": "docs/art-source/motions/production-144/aston_machan/alpha.png",
+      "sourceSha256": "d826eb122f480d048edaa98c93f6dce4f89e84b1c661927f5998bfcdd2eebb26",
+      "crop": [
+        304,
+        1077,
+        473,
+        1249
+      ],
+      "destination": [
+        154,
+        546,
+        75,
+        76
+      ]
+    },
+    {
+      "frame": 18,
+      "sourceFrame": 18,
+      "source": "docs/art-source/motions/production-144/aston_machan/alpha.png",
+      "sourceSha256": "d826eb122f480d048edaa98c93f6dce4f89e84b1c661927f5998bfcdd2eebb26",
+      "crop": [
+        544,
+        1093,
+        711,
+        1253
+      ],
+      "destination": [
+        283,
+        551,
+        74,
+        71
+      ]
+    },
+    {
+      "frame": 19,
+      "sourceFrame": 19,
+      "source": "docs/art-source/motions/production-144/aston_machan/alpha.png",
+      "sourceSha256": "d826eb122f480d048edaa98c93f6dce4f89e84b1c661927f5998bfcdd2eebb26",
+      "crop": [
+        782,
+        1143,
+        1001,
+        1254
+      ],
+      "destination": [
+        399,
+        573,
+        97,
+        49
+      ]
+    },
+    {
+      "frame": 20,
+      "sourceFrame": 20,
+      "source": "docs/art-source/motions/production-144/aston_machan/alpha.png",
+      "sourceSha256": "d826eb122f480d048edaa98c93f6dce4f89e84b1c661927f5998bfcdd2eebb26",
+      "crop": [
+        52,
+        1287,
+        198,
+        1519
+      ],
+      "destination": [
+        31,
+        647,
+        65,
+        103
+      ]
+    },
+    {
+      "frame": 21,
+      "sourceFrame": 21,
+      "source": "docs/art-source/motions/production-144/aston_machan/alpha.png",
+      "sourceSha256": "d826eb122f480d048edaa98c93f6dce4f89e84b1c661927f5998bfcdd2eebb26",
+      "crop": [
+        309,
+        1283,
+        460,
+        1511
+      ],
+      "destination": [
+        158,
+        649,
+        67,
+        101
+      ]
+    },
+    {
+      "frame": 22,
+      "sourceFrame": 22,
+      "source": "docs/art-source/motions/production-144/aston_machan/alpha.png",
+      "sourceSha256": "d826eb122f480d048edaa98c93f6dce4f89e84b1c661927f5998bfcdd2eebb26",
+      "crop": [
+        564,
+        1285,
+        706,
+        1519
+      ],
+      "destination": [
+        288,
+        646,
+        63,
+        104
+      ]
+    },
+    {
+      "frame": 23,
+      "sourceFrame": 23,
+      "source": "docs/art-source/motions/production-144/aston_machan/alpha.png",
+      "sourceSha256": "d826eb122f480d048edaa98c93f6dce4f89e84b1c661927f5998bfcdd2eebb26",
+      "crop": [
+        824,
+        1287,
+        975,
+        1519
+      ],
+      "destination": [
+        414,
+        647,
+        67,
+        103
+      ]
+    }
+  ],
+  "skillRevision": {
+    "scale": 0.16909620991253643,
+    "review": "docs/art-source/motions/skill-revisions-2026-09-11/aston_machan/review.json",
+    "beforeFrames": [
+      "94c8d61638d132c60f40c89f1f73f90508b6fe3f2574d9dbfce9d8561e36845c",
+      "dd2ff2824813787b9c2b09ebea306ecdcbf1bc1155172e98c1cbea02d8e513d7",
+      "559c7d2a7aae99d929c854c068eae4c0fc31fa4ccc648844781965c83df608e8",
+      "efdb478c1cd6e1ad760135418e3e162c93066d364695ef79ace79cb33ed33019",
+      "a8e4aa0e9725605177a4bc72da6a16ee83e8e07be7eab2b008325415b51cdc2b",
+      "07ba287d6be5b26856049e70412377067240682e5ea7f4485ed59bc00de1c3a1",
+      "206db85a0947d7caa47931833ae5e0d2fa8c0b0bd223e45953d882cc5266912a",
+      "eb01dd124bc8c1f4f856d578a532c867937df5510d3f93afbff5dbf70bb05924",
+      "2516b1f16f1390de962f5826fb652e8ab5a3ee863cb486835156b183af23b898",
+      "2f7aa35dd2e0ce4a8f267a519166455eb605bcc117ae5429b48e816faee1e1a7",
+      "bbdecbe4b225928b7e7b5ac8bdff8ed5f0b7cdba95a33b26edce816cd7e86b13",
+      "85dfad9790e778b073f635312e3f7be827866937f58e3db758ea361753331cb7",
+      "564db560aacea84e301a46ab732212993848fd07444558e9510cd1379b1c8bf5",
+      "7feba335b4dd08f030792333d7bca397df9ea12db1e0edd61999c022182697b2",
+      "013c7e517f59363388986ea162d25ba726dff3361384c2fbccc20dfe3cc45581",
+      "d1076d1a8f89a4692efe4051934179dd3fe6cbbbb389805b0610e0ad4af53074",
+      "bbea1e3b6d8368e44da86138f34be6db53a24cdce14ce595ecdb770be6d51605",
+      "3a0119ded94fa2d66213347b2f740b2c457e1af44c0e076333c2777fbe8266a9",
+      "b7350f09987e96c0abe933070948ca5445ece17753cd715d684fbcaf0445e996",
+      "4f9c3ffa2e6ad7240134fa49a68664dc14b089fa32cbe475d517300d82955b5e",
+      "25319f4bb6149d74e6b6f5452051a2cdc856658aaae4eda39a9e0118148ae411",
+      "06ed36f74f3b3348a0632ee7cba6a5f5c25e7c05338a471a1a79dc4e6edd4f87",
+      "7c620ea4ba521903b8721892d2d8802642e4017c8ee2c5721a650f4d4f75ca1d",
+      "d019d0243911a32a8e86dc8197c634872ecde2059bc38dd3c8acb4df661f094a"
+    ],
+    "afterFrames": [
+      "94c8d61638d132c60f40c89f1f73f90508b6fe3f2574d9dbfce9d8561e36845c",
+      "dd2ff2824813787b9c2b09ebea306ecdcbf1bc1155172e98c1cbea02d8e513d7",
+      "559c7d2a7aae99d929c854c068eae4c0fc31fa4ccc648844781965c83df608e8",
+      "efdb478c1cd6e1ad760135418e3e162c93066d364695ef79ace79cb33ed33019",
+      "a8e4aa0e9725605177a4bc72da6a16ee83e8e07be7eab2b008325415b51cdc2b",
+      "07ba287d6be5b26856049e70412377067240682e5ea7f4485ed59bc00de1c3a1",
+      "206db85a0947d7caa47931833ae5e0d2fa8c0b0bd223e45953d882cc5266912a",
+      "eb01dd124bc8c1f4f856d578a532c867937df5510d3f93afbff5dbf70bb05924",
+      "2516b1f16f1390de962f5826fb652e8ab5a3ee863cb486835156b183af23b898",
+      "2f7aa35dd2e0ce4a8f267a519166455eb605bcc117ae5429b48e816faee1e1a7",
+      "bbdecbe4b225928b7e7b5ac8bdff8ed5f0b7cdba95a33b26edce816cd7e86b13",
+      "85dfad9790e778b073f635312e3f7be827866937f58e3db758ea361753331cb7",
+      "9b9430a445b01a219a19a6672325803bdd09aba0781365f82579d8a8c6017e43",
+      "f71969bf9625112e43c1882a430afc8c5b42ca2280914550525bea379853c469",
+      "3ae15dd9b4e55f2055895880ed78b4eb776d730a20ce18f40481e992e0a860f6",
+      "85dbfe56ff376155a9af7ecc1de10a58b6b708c1010304dac466d0ee5aded9c9",
+      "bbea1e3b6d8368e44da86138f34be6db53a24cdce14ce595ecdb770be6d51605",
+      "3a0119ded94fa2d66213347b2f740b2c457e1af44c0e076333c2777fbe8266a9",
+      "b7350f09987e96c0abe933070948ca5445ece17753cd715d684fbcaf0445e996",
+      "4f9c3ffa2e6ad7240134fa49a68664dc14b089fa32cbe475d517300d82955b5e",
+      "25319f4bb6149d74e6b6f5452051a2cdc856658aaae4eda39a9e0118148ae411",
+      "06ed36f74f3b3348a0632ee7cba6a5f5c25e7c05338a471a1a79dc4e6edd4f87",
+      "7c620ea4ba521903b8721892d2d8802642e4017c8ee2c5721a650f4d4f75ca1d",
+      "d019d0243911a32a8e86dc8197c634872ecde2059bc38dd3c8acb4df661f094a"
+    ],
+    "unchangedFrames": 20,
+    "changedFrames": [
+      12,
+      13,
+      14,
+      15
+    ]
+  }
+}

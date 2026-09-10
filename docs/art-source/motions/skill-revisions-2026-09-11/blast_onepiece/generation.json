@@ -1,0 +1,9 @@
+{
+  "mode": "built-in image_gen",
+  "prompt": "Edit the reference character into four chibi skill animation poses on a transparent background. A 2 by 2 sprite sheet, only four full-body characters, no labels. Preserve blast_onepiece's exact hairstyle, horse ears, face, costume, accessories and tail from the reference. Four poses in reading order: draw both arms back loading three tiny bolts; fire three bolts in different directions to the right; change weight and fire a second three-way burst; lower arms and recover. Four clearly different body poses, same body proportions and costume, crisp cel shading, no ground shadow. Real PNG cutouts with an alpha channel. Absolutely no checkerboard or background design. Wide transparent gutters between all poses; compact effects stay within each cell.",
+  "references": [
+    "public/assets/motions/blast_onepiece.png"
+  ],
+  "referenceCommit": "3c950f3ce3476b152f2ad3d99fd296327a3c82bf",
+  "skillSignature": "eb28d591b847dc06060d708153c930eca5e9127e46da1b47665dc1fee165f7a7"
+}

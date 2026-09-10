@@ -94,7 +94,7 @@ export const AUGMENT_DEFS: AugmentDef[] = [
     teamEffects: [], grants: { emblemChoice: 1 } },
   { id: 'trait_double', grade: 'P', name: '이중 적성', description: '선택한 유닛 1명에게 보조 특성 +1 부여. 같은 유닛 1회.',
     teamEffects: [], grants: { secondaryTraitPick: true } },
-  { id: 'item_radiant', grade: 'P', name: '찬란한 레이스 장비', description: '찬란한 완성 아이템 선택 모루 1개(효과 ×1.5).',
+  { id: 'item_radiant', grade: 'P', name: '찬란한 레이스 장비', description: '고유 효과가 강화된 찬란한 장비 6종 중 1개 선택. 준비 단계 보관함에서 받습니다.',
     teamEffects: [], grants: { radiantChoice: 1 } },
   { id: 'item_crown', grade: 'P', name: '왕관의 자격', description: '트레이너 왕관 1개.',
     teamEffects: [], grants: { tacticianCrown: 1 } },

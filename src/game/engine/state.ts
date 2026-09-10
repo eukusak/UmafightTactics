@@ -63,6 +63,7 @@ export type PlayerState = {
 };
 
 export type PendingGrant =
+  | { kind: 'ARTIFACT_CHOICE'; count: number }
   | { kind: 'COMPONENT_CHOICE'; count: number }
   | { kind: 'COMPLETED_CHOICE'; count: number }
   | { kind: 'RADIANT_CHOICE'; count: number }

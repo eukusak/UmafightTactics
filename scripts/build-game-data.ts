@@ -1,3 +1,5 @@
+import styleCorrections from '../src/data/manual/running-style-corrections.json';
+import traitCorrections from '../src/data/manual/trait-corrections.json';
 import { buildSeasons } from '../src/game/engine/seasons/catalog';
 import { writeSeasonIcons } from './season-icons';
 /**
@@ -307,6 +309,8 @@ const STYLE_FROM_APT: Array<[keyof Horse['aptitudes']['style'], RunStyle]> = [
 
 /** Spec §11.1 — run style: trusted primary style, then archetype, then aptitude, then senko. */
 function styleOf(h: Horse): RunStyle {
+  const correction = Object.values(styleCorrections.units).find(c => c.horseId === h.id);
+  if (correction) return correction.to as RunStyle;
   const conf = h.dataConfidence.styleConfidence;
   const primary = h.historySummary.primaryStyle;
   if (primary && (conf === 'HIGH' || conf === 'MEDIUM') && STYLE_FROM_PRIMARY[primary]) {
@@ -332,6 +336,8 @@ const DISTANCE_KEYS: Array<[keyof Horse['aptitudes']['distance'], DistanceTrait]
 ];
 
 function bestDistance(h: Horse): DistanceTrait {
+  const correction = Object.values(traitCorrections.units).find(c => c.horseId === h.id);
+  if (correction) return correction.to as DistanceTrait;
   const fromHistory: Record<string, DistanceTrait> = {
     SPRINT: 'sprinter', MILE: 'miler', MIDDLE: 'middle', LONG: 'stayer',
   };
@@ -840,7 +846,7 @@ const manifest: ArtManifest = {
     battleSheet: `characters/${u.id}.png`,
     cutinRequired: u.activeS1 && u.cost === 5,
   })),
-  items: ALL_ITEM_DEFS.map((i) => `items/${i.isComponent ? 'components' : 'complete'}/${i.id}.png`),
+  items: [...new Set(ALL_ITEM_DEFS.map((i) => `items/${i.isComponent ? 'components' : 'complete'}/${i.iconId ?? i.id}.png`))],
   traits: TRAIT_DEFS.map((t) => `traits/${t.id}.png`),
   augments: AUGMENT_DEFS.map((a) => `augments/${a.id}.png`),
   status: [

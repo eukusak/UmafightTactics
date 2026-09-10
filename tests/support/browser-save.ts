@@ -23,6 +23,7 @@ for (let i = 0; i < count; i++) {
   else p.bench.push(u);
 }
 if (mode === 'components') p.items = COMPONENT_IDS.map((id, i) => ({ instanceId: `fixture-item-${i}`, itemId: id }));
+if (mode === 'item-rewards') { p.items = []; p.pendingGrants = [{ kind: 'RADIANT_CHOICE', count: 1 }, { kind: 'ARTIFACT_CHOICE', count: 1 }]; }
 p.shop = rollShop(p, state.pool, new Rng(9001));
 if (mode === 'augment') { state.stage = 2; state.round = 1; state.augmentOffers = createAugmentOffers(state, new Rng(91)); state.phase = 'AUGMENT_SELECT'; }
 console.log(JSON.stringify(serializeMatch(director)));

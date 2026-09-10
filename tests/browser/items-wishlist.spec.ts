@@ -24,7 +24,7 @@ test('mouse hold previews, cancels on leaving or early release, then crafts exac
   await mouseOver(page, component(page, 0), component(page, 1));
   await expect(component(page, 0)).toHaveCount(0);
   await page.mouse.up();
-  await expect(component(page, 1)).toHaveAttribute('aria-label', '황혼의 승부복');
+  await expect(component(page, 1)).toHaveAttribute('aria-label', '삼박자 승부복');
   await expect(page.locator('[data-touch-item]')).toHaveCount(9);
   await page.screenshot({ path: info.outputPath('crafted-desktop.png') });
 });
@@ -34,7 +34,7 @@ test('two component drops auto craft on bench and field with visible finished ge
   const bench = page.locator('.bench-slot.filled').first();
   await component(page, 0).dragTo(bench); await component(page, 1).dragTo(bench);
   await expect(bench.locator('.items img')).toHaveCount(1);
-  await expect(bench.locator('.items img')).toHaveAttribute('alt', '황혼의 승부복');
+  await expect(bench.locator('.items img')).toHaveAttribute('alt', '삼박자 승부복');
   await bench.hover(); await page.keyboard.press('w');
   const unit = page.locator('.arena-unit-touch').first();
   await component(page, 2).dragTo(unit); await component(page, 3).dragTo(unit);
@@ -83,7 +83,7 @@ test.describe('phone crafting and wishlist', () => {
     await session.send('Input.dispatchTouchEvent', { type: 'touchMove', touchPoints: point(b) });
     await expect(component(page, 0)).toHaveCount(0);
     await session.send('Input.dispatchTouchEvent', { type: 'touchEnd', touchPoints: [] }); await session.detach();
-    await expect(component(page, 1)).toHaveAttribute('aria-label', '황혼의 승부복');
+    await expect(component(page, 1)).toHaveAttribute('aria-label', '삼박자 승부복');
     // Allow the completed drag's click-suppression window to expire.
     await page.waitForTimeout(550);
     const name = await page.locator('.shop-card:not(.sold) .name').first().innerText();

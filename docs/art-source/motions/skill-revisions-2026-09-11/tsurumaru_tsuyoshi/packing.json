@@ -1,0 +1,506 @@
+{
+  "format": "uft-baked-frames-v1",
+  "scale": 0.416,
+  "anchor": [
+    64,
+    110
+  ],
+  "runtimeSha256": "4181961ac3f6d991fba27a84ef728ded69a34643d13d726b3d421271b2df3284",
+  "frames": [
+    {
+      "frame": 0,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/production-144/tsurumaru_tsuyoshi/alpha.png",
+      "sourceSha256": "34bc882cab4205a4b3cbd6511acfccb15ab75f07b75eb4eec27b54a6327aa6c8",
+      "crop": [
+        59,
+        9,
+        214,
+        251
+      ],
+      "destination": [
+        32,
+        9,
+        64,
+        101
+      ]
+    },
+    {
+      "frame": 1,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/production-144/tsurumaru_tsuyoshi/alpha.png",
+      "sourceSha256": "34bc882cab4205a4b3cbd6511acfccb15ab75f07b75eb4eec27b54a6327aa6c8",
+      "crop": [
+        316,
+        12,
+        467,
+        251
+      ],
+      "destination": [
+        160,
+        11,
+        63,
+        99
+      ]
+    },
+    {
+      "frame": 2,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/production-144/tsurumaru_tsuyoshi/alpha.png",
+      "sourceSha256": "34bc882cab4205a4b3cbd6511acfccb15ab75f07b75eb4eec27b54a6327aa6c8",
+      "crop": [
+        564,
+        10,
+        725,
+        251
+      ],
+      "destination": [
+        286,
+        10,
+        67,
+        100
+      ]
+    },
+    {
+      "frame": 3,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/production-144/tsurumaru_tsuyoshi/alpha.png",
+      "sourceSha256": "34bc882cab4205a4b3cbd6511acfccb15ab75f07b75eb4eec27b54a6327aa6c8",
+      "crop": [
+        829,
+        10,
+        980,
+        251
+      ],
+      "destination": [
+        416,
+        10,
+        63,
+        100
+      ]
+    },
+    {
+      "frame": 4,
+      "sourceFrame": 4,
+      "source": "docs/art-source/motions/production-144/tsurumaru_tsuyoshi/alpha.png",
+      "sourceSha256": "34bc882cab4205a4b3cbd6511acfccb15ab75f07b75eb4eec27b54a6327aa6c8",
+      "crop": [
+        33,
+        262,
+        228,
+        498
+      ],
+      "destination": [
+        23,
+        140,
+        81,
+        98
+      ]
+    },
+    {
+      "frame": 5,
+      "sourceFrame": 5,
+      "source": "docs/art-source/motions/production-144/tsurumaru_tsuyoshi/alpha.png",
+      "sourceSha256": "34bc882cab4205a4b3cbd6511acfccb15ab75f07b75eb4eec27b54a6327aa6c8",
+      "crop": [
+        286,
+        261,
+        485,
+        500
+      ],
+      "destination": [
+        150,
+        139,
+        83,
+        99
+      ]
+    },
+    {
+      "frame": 6,
+      "sourceFrame": 6,
+      "source": "docs/art-source/motions/production-144/tsurumaru_tsuyoshi/alpha.png",
+      "sourceSha256": "34bc882cab4205a4b3cbd6511acfccb15ab75f07b75eb4eec27b54a6327aa6c8",
+      "crop": [
+        548,
+        267,
+        738,
+        502
+      ],
+      "destination": [
+        280,
+        140,
+        79,
+        98
+      ]
+    },
+    {
+      "frame": 7,
+      "sourceFrame": 7,
+      "source": "docs/art-source/motions/production-144/tsurumaru_tsuyoshi/alpha.png",
+      "sourceSha256": "34bc882cab4205a4b3cbd6511acfccb15ab75f07b75eb4eec27b54a6327aa6c8",
+      "crop": [
+        813,
+        261,
+        992,
+        500
+      ],
+      "destination": [
+        411,
+        139,
+        74,
+        99
+      ]
+    },
+    {
+      "frame": 8,
+      "sourceFrame": 8,
+      "source": "docs/art-source/motions/production-144/tsurumaru_tsuyoshi/alpha.png",
+      "sourceSha256": "34bc882cab4205a4b3cbd6511acfccb15ab75f07b75eb4eec27b54a6327aa6c8",
+      "crop": [
+        33,
+        519,
+        231,
+        758
+      ],
+      "destination": [
+        23,
+        267,
+        82,
+        99
+      ]
+    },
+    {
+      "frame": 9,
+      "sourceFrame": 9,
+      "source": "docs/art-source/motions/production-144/tsurumaru_tsuyoshi/alpha.png",
+      "sourceSha256": "34bc882cab4205a4b3cbd6511acfccb15ab75f07b75eb4eec27b54a6327aa6c8",
+      "crop": [
+        303,
+        517,
+        470,
+        759
+      ],
+      "destination": [
+        157,
+        265,
+        69,
+        101
+      ]
+    },
+    {
+      "frame": 10,
+      "sourceFrame": 10,
+      "source": "docs/art-source/motions/production-144/tsurumaru_tsuyoshi/alpha.png",
+      "sourceSha256": "34bc882cab4205a4b3cbd6511acfccb15ab75f07b75eb4eec27b54a6327aa6c8",
+      "crop": [
+        545,
+        519,
+        764,
+        759
+      ],
+      "destination": [
+        274,
+        266,
+        91,
+        100
+      ]
+    },
+    {
+      "frame": 11,
+      "sourceFrame": 11,
+      "source": "docs/art-source/motions/production-144/tsurumaru_tsuyoshi/alpha.png",
+      "sourceSha256": "34bc882cab4205a4b3cbd6511acfccb15ab75f07b75eb4eec27b54a6327aa6c8",
+      "crop": [
+        831,
+        516,
+        980,
+        762
+      ],
+      "destination": [
+        417,
+        264,
+        62,
+        102
+      ]
+    },
+    {
+      "frame": 12,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/skill-revisions-2026-09-11/tsurumaru_tsuyoshi/generated.png",
+      "sourceSha256": "1c73c3cb587a5ea2e7c7a698ed500bc997c6f26d6bf85f08a4287bc56be18cf5",
+      "crop": [
+        132,
+        13,
+        580,
+        526
+      ],
+      "destination": [
+        21,
+        396,
+        85,
+        98
+      ]
+    },
+    {
+      "frame": 13,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/skill-revisions-2026-09-11/tsurumaru_tsuyoshi/generated.png",
+      "sourceSha256": "1c73c3cb587a5ea2e7c7a698ed500bc997c6f26d6bf85f08a4287bc56be18cf5",
+      "crop": [
+        796,
+        27,
+        1404,
+        526
+      ],
+      "destination": [
+        134,
+        399,
+        116,
+        95
+      ]
+    },
+    {
+      "frame": 14,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/skill-revisions-2026-09-11/tsurumaru_tsuyoshi/generated.png",
+      "sourceSha256": "1c73c3cb587a5ea2e7c7a698ed500bc997c6f26d6bf85f08a4287bc56be18cf5",
+      "crop": [
+        140,
+        564,
+        557,
+        1065
+      ],
+      "destination": [
+        280,
+        398,
+        80,
+        96
+      ]
+    },
+    {
+      "frame": 15,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/skill-revisions-2026-09-11/tsurumaru_tsuyoshi/generated.png",
+      "sourceSha256": "1c73c3cb587a5ea2e7c7a698ed500bc997c6f26d6bf85f08a4287bc56be18cf5",
+      "crop": [
+        877,
+        560,
+        1340,
+        1069
+      ],
+      "destination": [
+        404,
+        397,
+        88,
+        97
+      ]
+    },
+    {
+      "frame": 16,
+      "sourceFrame": 16,
+      "source": "docs/art-source/motions/production-144/tsurumaru_tsuyoshi/alpha.png",
+      "sourceSha256": "34bc882cab4205a4b3cbd6511acfccb15ab75f07b75eb4eec27b54a6327aa6c8",
+      "crop": [
+        43,
+        1038,
+        224,
+        1268
+      ],
+      "destination": [
+        26,
+        526,
+        75,
+        96
+      ]
+    },
+    {
+      "frame": 17,
+      "sourceFrame": 17,
+      "source": "docs/art-source/motions/production-144/tsurumaru_tsuyoshi/alpha.png",
+      "sourceSha256": "34bc882cab4205a4b3cbd6511acfccb15ab75f07b75eb4eec27b54a6327aa6c8",
+      "crop": [
+        293,
+        1073,
+        482,
+        1266
+      ],
+      "destination": [
+        152,
+        542,
+        79,
+        80
+      ]
+    },
+    {
+      "frame": 18,
+      "sourceFrame": 18,
+      "source": "docs/art-source/motions/production-144/tsurumaru_tsuyoshi/alpha.png",
+      "sourceSha256": "34bc882cab4205a4b3cbd6511acfccb15ab75f07b75eb4eec27b54a6327aa6c8",
+      "crop": [
+        540,
+        1089,
+        724,
+        1265
+      ],
+      "destination": [
+        281,
+        549,
+        77,
+        73
+      ]
+    },
+    {
+      "frame": 19,
+      "sourceFrame": 19,
+      "source": "docs/art-source/motions/production-144/tsurumaru_tsuyoshi/alpha.png",
+      "sourceSha256": "34bc882cab4205a4b3cbd6511acfccb15ab75f07b75eb4eec27b54a6327aa6c8",
+      "crop": [
+        786,
+        1157,
+        1018,
+        1261
+      ],
+      "destination": [
+        399,
+        579,
+        97,
+        43
+      ]
+    },
+    {
+      "frame": 20,
+      "sourceFrame": 20,
+      "source": "docs/art-source/motions/production-144/tsurumaru_tsuyoshi/alpha.png",
+      "sourceSha256": "34bc882cab4205a4b3cbd6511acfccb15ab75f07b75eb4eec27b54a6327aa6c8",
+      "crop": [
+        61,
+        1285,
+        206,
+        1521
+      ],
+      "destination": [
+        34,
+        652,
+        60,
+        98
+      ]
+    },
+    {
+      "frame": 21,
+      "sourceFrame": 21,
+      "source": "docs/art-source/motions/production-144/tsurumaru_tsuyoshi/alpha.png",
+      "sourceSha256": "34bc882cab4205a4b3cbd6511acfccb15ab75f07b75eb4eec27b54a6327aa6c8",
+      "crop": [
+        305,
+        1281,
+        463,
+        1518
+      ],
+      "destination": [
+        159,
+        651,
+        66,
+        99
+      ]
+    },
+    {
+      "frame": 22,
+      "sourceFrame": 22,
+      "source": "docs/art-source/motions/production-144/tsurumaru_tsuyoshi/alpha.png",
+      "sourceSha256": "34bc882cab4205a4b3cbd6511acfccb15ab75f07b75eb4eec27b54a6327aa6c8",
+      "crop": [
+        569,
+        1286,
+        717,
+        1525
+      ],
+      "destination": [
+        289,
+        651,
+        62,
+        99
+      ]
+    },
+    {
+      "frame": 23,
+      "sourceFrame": 23,
+      "source": "docs/art-source/motions/production-144/tsurumaru_tsuyoshi/alpha.png",
+      "sourceSha256": "34bc882cab4205a4b3cbd6511acfccb15ab75f07b75eb4eec27b54a6327aa6c8",
+      "crop": [
+        826,
+        1288,
+        981,
+        1524
+      ],
+      "destination": [
+        416,
+        652,
+        64,
+        98
+      ]
+    }
+  ],
+  "skillRevision": {
+    "scale": 0.19078947368421054,
+    "review": "docs/art-source/motions/skill-revisions-2026-09-11/tsurumaru_tsuyoshi/review.json",
+    "beforeFrames": [
+      "bef62c11c96064896543192d54a1a4b34ea12779ac21018a50beab39be2f7660",
+      "ffd83fc99ebcc2122b387654eb1d2080ad5566113b4d0c3691e394741f10bfce",
+      "19127eeac979b909cdb3c81d9cbc1aea382fb836807900aa7c4aa05aab778d76",
+      "ab2933f7791daf2d1d6a6727a93ec2b8d28da7dd710bad018fcc4c47fcee3401",
+      "5a7ed323fab8d5f0e198f1b54035884e102e3edeac95db86a9db14666f65b996",
+      "31496ba58d396c18e88882a7b0ce8040afed0d6a7be282262f3f022aee3a4d67",
+      "a625fc7db831fdeaae9ffac684095c2279aceed8089c681303389b93a98bcd10",
+      "7ad3cfd812e70edcf0ef5759d47cc90d088ccc0550b39a0674cf9859cac12eec",
+      "08f9b0feaf283a074bd34f17137f8db6f2b39a1b3b8ba4620f1590807ec4ca91",
+      "02525273aae6f0242b9fda034b05e979a07a14f158167a401c7fd73f54c04e54",
+      "f9eed549c4af011494dff673e4f2698b13d480af8009680762e53aa3a7a5cdee",
+      "5994a5f0b4b54bfe93ec487adcec05f822a2cb91e4b0a808b38ecbd8f1f1cc95",
+      "a482840211d4be59ebb0fca126b64b3a2cd8f7080142cbc2629776b71208f244",
+      "d4332c8e6196e8a2dda1bb8ab832bca85ab42a60c275e9553df7ea9075ce6a0e",
+      "ed790709680f4f20021deedf45361898e92adf527f20b2e84504170debbfed27",
+      "90ec0f8843f3cae57e7d9f312d34fe717aa9254c236454fe0137bcf59bfc4cda",
+      "19557142f05c8f52d9f46998c99b830a4835a1c5204d2f05c7ee0ca57ca6e807",
+      "db82178b539953eccb42fdd57f21ad4a85652512347f6767de8856656dbe4ace",
+      "d44c96a6335dc292e9e8c986e8705b304c5eccd8ad8904c18711fc9f2abec9a0",
+      "88c069212338a6c186bdf56c6fc14e311212d8132921c2c747048051a8a24952",
+      "6503c8cdc52ed113333f22b23829a217321987e68662c139a52f3ec81683ba16",
+      "55d708a41ae344351baecb876409dfcf7fc1e1877eae6884d23f634e51a465b0",
+      "7d461d020e1a7d4e74d520d48395af070b3d64e12701873bcdd9cb5c8df8d30a",
+      "1542546afd70f7c5f9a1c968a1aa4ffb9168c1aa4cf29e1704774774c7ae160f"
+    ],
+    "afterFrames": [
+      "bef62c11c96064896543192d54a1a4b34ea12779ac21018a50beab39be2f7660",
+      "ffd83fc99ebcc2122b387654eb1d2080ad5566113b4d0c3691e394741f10bfce",
+      "19127eeac979b909cdb3c81d9cbc1aea382fb836807900aa7c4aa05aab778d76",
+      "ab2933f7791daf2d1d6a6727a93ec2b8d28da7dd710bad018fcc4c47fcee3401",
+      "5a7ed323fab8d5f0e198f1b54035884e102e3edeac95db86a9db14666f65b996",
+      "31496ba58d396c18e88882a7b0ce8040afed0d6a7be282262f3f022aee3a4d67",
+      "a625fc7db831fdeaae9ffac684095c2279aceed8089c681303389b93a98bcd10",
+      "7ad3cfd812e70edcf0ef5759d47cc90d088ccc0550b39a0674cf9859cac12eec",
+      "08f9b0feaf283a074bd34f17137f8db6f2b39a1b3b8ba4620f1590807ec4ca91",
+      "02525273aae6f0242b9fda034b05e979a07a14f158167a401c7fd73f54c04e54",
+      "f9eed549c4af011494dff673e4f2698b13d480af8009680762e53aa3a7a5cdee",
+      "5994a5f0b4b54bfe93ec487adcec05f822a2cb91e4b0a808b38ecbd8f1f1cc95",
+      "4c5445f53f4f07993165c88745ebafe803c76184c540d2d1a395208bd67bb904",
+      "edf8a3b0a5159ebb5b45c5299289675e07a1d4605b68751b03737ed66a32a7da",
+      "1ffb186fa07dc3356d3301de859bb01748747642768275d3679d4432b9e725a5",
+      "d77fc928a100cb552e202e5baa9b51c4a890f56e20c416ce2233e8434cbbabc8",
+      "19557142f05c8f52d9f46998c99b830a4835a1c5204d2f05c7ee0ca57ca6e807",
+      "db82178b539953eccb42fdd57f21ad4a85652512347f6767de8856656dbe4ace",
+      "d44c96a6335dc292e9e8c986e8705b304c5eccd8ad8904c18711fc9f2abec9a0",
+      "88c069212338a6c186bdf56c6fc14e311212d8132921c2c747048051a8a24952",
+      "6503c8cdc52ed113333f22b23829a217321987e68662c139a52f3ec81683ba16",
+      "55d708a41ae344351baecb876409dfcf7fc1e1877eae6884d23f634e51a465b0",
+      "7d461d020e1a7d4e74d520d48395af070b3d64e12701873bcdd9cb5c8df8d30a",
+      "1542546afd70f7c5f9a1c968a1aa4ffb9168c1aa4cf29e1704774774c7ae160f"
+    ],
+    "unchangedFrames": 20,
+    "changedFrames": [
+      12,
+      13,
+      14,
+      15
+    ]
+  }
+}

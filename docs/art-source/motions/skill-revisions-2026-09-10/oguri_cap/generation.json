@@ -1,0 +1,7 @@
+{
+  "mode": "built-in image_gen",
+  "prompt": "Create 4 chibi sprite animation poses for Oguri Cap matching this reference character. Transparent background. A 2 by 2 sprite sheet, only four full-body characters, no labels. Holding a small blue star at waist, lifting star overhead, swinging arms downward releasing a compact falling blue comet, recovering with blue sparkles. Preserve long white hair, horse ears, jeweled headband, blue-white racing costume and red neck ribbon. Real PNG cutouts with an alpha channel. Absolutely no checkerboard, no background design. Leave wide transparent gutters between poses and compact effects within each cell.",
+  "reference": "public/assets/motions/oguri_cap.png",
+  "referenceCommit": "ccd64939bf23acd699db25829b4f26b6b80d861f",
+  "skillSignature": "65eefb83f4a32b62a0ab4d17362ada84bbb1d62111fd001703cdea306420e8f9"
+}

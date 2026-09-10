@@ -1,0 +1,506 @@
+{
+  "format": "uft-baked-frames-v1",
+  "scale": 0.41935483870967744,
+  "anchor": [
+    64,
+    110
+  ],
+  "runtimeSha256": "87059ec980431e7d28330b2d90c3ffd10ea15d305f82ed8da19cd6b2543cce23",
+  "frames": [
+    {
+      "frame": 0,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/production-144/inari_one/alpha.png",
+      "sourceSha256": "f0506839c3ae44c1ab9ccd4a08b06a3c315b05a325681fe299c175ce7b741a18",
+      "crop": [
+        50,
+        23,
+        220,
+        258
+      ],
+      "destination": [
+        28,
+        11,
+        71,
+        99
+      ]
+    },
+    {
+      "frame": 1,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/production-144/inari_one/alpha.png",
+      "sourceSha256": "f0506839c3ae44c1ab9ccd4a08b06a3c315b05a325681fe299c175ce7b741a18",
+      "crop": [
+        306,
+        23,
+        473,
+        258
+      ],
+      "destination": [
+        157,
+        11,
+        70,
+        99
+      ]
+    },
+    {
+      "frame": 2,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/production-144/inari_one/alpha.png",
+      "sourceSha256": "f0506839c3ae44c1ab9ccd4a08b06a3c315b05a325681fe299c175ce7b741a18",
+      "crop": [
+        563,
+        23,
+        730,
+        258
+      ],
+      "destination": [
+        285,
+        11,
+        70,
+        99
+      ]
+    },
+    {
+      "frame": 3,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/production-144/inari_one/alpha.png",
+      "sourceSha256": "f0506839c3ae44c1ab9ccd4a08b06a3c315b05a325681fe299c175ce7b741a18",
+      "crop": [
+        815,
+        23,
+        985,
+        258
+      ],
+      "destination": [
+        412,
+        11,
+        71,
+        99
+      ]
+    },
+    {
+      "frame": 4,
+      "sourceFrame": 4,
+      "source": "docs/art-source/motions/production-144/inari_one/alpha.png",
+      "sourceSha256": "f0506839c3ae44c1ab9ccd4a08b06a3c315b05a325681fe299c175ce7b741a18",
+      "crop": [
+        20,
+        279,
+        235,
+        509
+      ],
+      "destination": [
+        19,
+        142,
+        90,
+        96
+      ]
+    },
+    {
+      "frame": 5,
+      "sourceFrame": 5,
+      "source": "docs/art-source/motions/production-144/inari_one/alpha.png",
+      "sourceSha256": "f0506839c3ae44c1ab9ccd4a08b06a3c315b05a325681fe299c175ce7b741a18",
+      "crop": [
+        277,
+        280,
+        486,
+        499
+      ],
+      "destination": [
+        148,
+        146,
+        88,
+        92
+      ]
+    },
+    {
+      "frame": 6,
+      "sourceFrame": 6,
+      "source": "docs/art-source/motions/production-144/inari_one/alpha.png",
+      "sourceSha256": "f0506839c3ae44c1ab9ccd4a08b06a3c315b05a325681fe299c175ce7b741a18",
+      "crop": [
+        541,
+        282,
+        749,
+        511
+      ],
+      "destination": [
+        276,
+        142,
+        87,
+        96
+      ]
+    },
+    {
+      "frame": 7,
+      "sourceFrame": 7,
+      "source": "docs/art-source/motions/production-144/inari_one/alpha.png",
+      "sourceSha256": "f0506839c3ae44c1ab9ccd4a08b06a3c315b05a325681fe299c175ce7b741a18",
+      "crop": [
+        799,
+        286,
+        1002,
+        512
+      ],
+      "destination": [
+        405,
+        143,
+        85,
+        95
+      ]
+    },
+    {
+      "frame": 8,
+      "sourceFrame": 8,
+      "source": "docs/art-source/motions/production-144/inari_one/alpha.png",
+      "sourceSha256": "f0506839c3ae44c1ab9ccd4a08b06a3c315b05a325681fe299c175ce7b741a18",
+      "crop": [
+        46,
+        528,
+        216,
+        765
+      ],
+      "destination": [
+        28,
+        267,
+        71,
+        99
+      ]
+    },
+    {
+      "frame": 9,
+      "sourceFrame": 9,
+      "source": "docs/art-source/motions/production-144/inari_one/alpha.png",
+      "sourceSha256": "f0506839c3ae44c1ab9ccd4a08b06a3c315b05a325681fe299c175ce7b741a18",
+      "crop": [
+        288,
+        529,
+        475,
+        765
+      ],
+      "destination": [
+        153,
+        267,
+        78,
+        99
+      ]
+    },
+    {
+      "frame": 10,
+      "sourceFrame": 10,
+      "source": "docs/art-source/motions/production-144/inari_one/alpha.png",
+      "sourceSha256": "f0506839c3ae44c1ab9ccd4a08b06a3c315b05a325681fe299c175ce7b741a18",
+      "crop": [
+        534,
+        529,
+        746,
+        763
+      ],
+      "destination": [
+        275,
+        268,
+        89,
+        98
+      ]
+    },
+    {
+      "frame": 11,
+      "sourceFrame": 11,
+      "source": "docs/art-source/motions/production-144/inari_one/alpha.png",
+      "sourceSha256": "f0506839c3ae44c1ab9ccd4a08b06a3c315b05a325681fe299c175ce7b741a18",
+      "crop": [
+        817,
+        529,
+        988,
+        769
+      ],
+      "destination": [
+        412,
+        265,
+        72,
+        101
+      ]
+    },
+    {
+      "frame": 12,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/skill-revisions-2026-09-11/inari_one/generated.png",
+      "sourceSha256": "d94d8a0ab23caa41f1fcd3eee2dd68ba92fa97922e757008e0a215ef4a50bccc",
+      "crop": [
+        34,
+        39,
+        679,
+        425
+      ],
+      "destination": [
+        6,
+        425,
+        116,
+        69
+      ]
+    },
+    {
+      "frame": 13,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/skill-revisions-2026-09-11/inari_one/generated.png",
+      "sourceSha256": "d94d8a0ab23caa41f1fcd3eee2dd68ba92fa97922e757008e0a215ef4a50bccc",
+      "crop": [
+        846,
+        10,
+        1475,
+        463
+      ],
+      "destination": [
+        135,
+        413,
+        113,
+        81
+      ]
+    },
+    {
+      "frame": 14,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/skill-revisions-2026-09-11/inari_one/generated.png",
+      "sourceSha256": "d94d8a0ab23caa41f1fcd3eee2dd68ba92fa97922e757008e0a215ef4a50bccc",
+      "crop": [
+        165,
+        473,
+        623,
+        1015
+      ],
+      "destination": [
+        279,
+        397,
+        82,
+        97
+      ]
+    },
+    {
+      "frame": 15,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/skill-revisions-2026-09-11/inari_one/generated.png",
+      "sourceSha256": "d94d8a0ab23caa41f1fcd3eee2dd68ba92fa97922e757008e0a215ef4a50bccc",
+      "crop": [
+        887,
+        566,
+        1299,
+        1002
+      ],
+      "destination": [
+        411,
+        416,
+        74,
+        78
+      ]
+    },
+    {
+      "frame": 16,
+      "sourceFrame": 16,
+      "source": "docs/art-source/motions/production-144/inari_one/alpha.png",
+      "sourceSha256": "f0506839c3ae44c1ab9ccd4a08b06a3c315b05a325681fe299c175ce7b741a18",
+      "crop": [
+        38,
+        1036,
+        227,
+        1256
+      ],
+      "destination": [
+        24,
+        530,
+        79,
+        92
+      ]
+    },
+    {
+      "frame": 17,
+      "sourceFrame": 17,
+      "source": "docs/art-source/motions/production-144/inari_one/alpha.png",
+      "sourceSha256": "f0506839c3ae44c1ab9ccd4a08b06a3c315b05a325681fe299c175ce7b741a18",
+      "crop": [
+        294,
+        1059,
+        475,
+        1249
+      ],
+      "destination": [
+        154,
+        542,
+        76,
+        80
+      ]
+    },
+    {
+      "frame": 18,
+      "sourceFrame": 18,
+      "source": "docs/art-source/motions/production-144/inari_one/alpha.png",
+      "sourceSha256": "f0506839c3ae44c1ab9ccd4a08b06a3c315b05a325681fe299c175ce7b741a18",
+      "crop": [
+        544,
+        1082,
+        713,
+        1252
+      ],
+      "destination": [
+        284,
+        551,
+        71,
+        71
+      ]
+    },
+    {
+      "frame": 19,
+      "sourceFrame": 19,
+      "source": "docs/art-source/motions/production-144/inari_one/alpha.png",
+      "sourceSha256": "f0506839c3ae44c1ab9ccd4a08b06a3c315b05a325681fe299c175ce7b741a18",
+      "crop": [
+        786,
+        1149,
+        1008,
+        1253
+      ],
+      "destination": [
+        401,
+        578,
+        93,
+        44
+      ]
+    },
+    {
+      "frame": 20,
+      "sourceFrame": 20,
+      "source": "docs/art-source/motions/production-144/inari_one/alpha.png",
+      "sourceSha256": "f0506839c3ae44c1ab9ccd4a08b06a3c315b05a325681fe299c175ce7b741a18",
+      "crop": [
+        52,
+        1276,
+        206,
+        1524
+      ],
+      "destination": [
+        31,
+        646,
+        65,
+        104
+      ]
+    },
+    {
+      "frame": 21,
+      "sourceFrame": 21,
+      "source": "docs/art-source/motions/production-144/inari_one/alpha.png",
+      "sourceSha256": "f0506839c3ae44c1ab9ccd4a08b06a3c315b05a325681fe299c175ce7b741a18",
+      "crop": [
+        299,
+        1269,
+        475,
+        1498
+      ],
+      "destination": [
+        155,
+        654,
+        74,
+        96
+      ]
+    },
+    {
+      "frame": 22,
+      "sourceFrame": 22,
+      "source": "docs/art-source/motions/production-144/inari_one/alpha.png",
+      "sourceSha256": "f0506839c3ae44c1ab9ccd4a08b06a3c315b05a325681fe299c175ce7b741a18",
+      "crop": [
+        550,
+        1276,
+        718,
+        1524
+      ],
+      "destination": [
+        285,
+        646,
+        70,
+        104
+      ]
+    },
+    {
+      "frame": 23,
+      "sourceFrame": 23,
+      "source": "docs/art-source/motions/production-144/inari_one/alpha.png",
+      "sourceSha256": "f0506839c3ae44c1ab9ccd4a08b06a3c315b05a325681fe299c175ce7b741a18",
+      "crop": [
+        823,
+        1276,
+        983,
+        1524
+      ],
+      "destination": [
+        414,
+        646,
+        67,
+        104
+      ]
+    }
+  ],
+  "skillRevision": {
+    "scale": 0.17984496124031008,
+    "review": "docs/art-source/motions/skill-revisions-2026-09-11/inari_one/review.json",
+    "beforeFrames": [
+      "e5958761d639c9f86ea8d449c5d3537c69677d78b0d4055dc3015417fe659d0b",
+      "b5043917c0d1d63361913f6f976853bb168d82e853b29f46940cb8589db6f834",
+      "ac1a1a316970e7244074efb210206b7a5bd22c46c238a991eb0935235fa811ff",
+      "e1ac9dc5aabc11a2dff4a6a0e42b0c330f8aa97dcc382619472c3b6dfba8c6ab",
+      "efb2a1525d3bd58957ff68b47c25117de93935427617f103a0b43e21fb11df34",
+      "40e54483b2e3fdc9f724d5c3f06acf0f188b7f2d10ba3c4deb4495e51730e35b",
+      "b3738b471ea1d60cccde017a601d54c97dd2273c0c8d40057330e63c79b49a14",
+      "7fe6ac5fa8603eac3201b3275e2c0e663ed27709f902fe57c4a1358f9cf159e0",
+      "940feb84c025762308b3af37ad6b7bdb9ffffc5b2da3e988f84c904d1952412a",
+      "6ff7fc8e9a50ca0c5d4d45cb2838c9558d5fad5203d033b9213f96fe5d482341",
+      "8cbb980a6cba1fba8e7ad7d2275f2ae40cd65abadd352f04a9199e66c31c21e4",
+      "154e675055a175bbd3c4dc29257b7a3f9dbd566997942793ed30128ccd853f36",
+      "b72886a95d4ba7d5cee28b6433b75fe821202673f38adbce3c42aae3419ea155",
+      "3b117972e5ff0f7f2ba96c342f0f3d86b94519523cd70f22099eb50ae524e020",
+      "55003dd2a99d856dc0a5458647d3fb3307a0356fa723dd42b9a0fbe9cc2e5c12",
+      "e6585fd81484c57588acd80debc89dc150bbef22094777a6271d018f77ca5feb",
+      "a5d72902bfd160c12a3f578a52d086a8ba2e69f52c11e2acf0e998885f87d3b4",
+      "fffb0013aab766bd00f69cb9a4468b0615329ebdbfb0d0fa7c3d03e5ec9e7a35",
+      "3cf09972c1b35166a4de0acf44cf95a4701b747797ff5692d227371f41f6b358",
+      "5bade9fc5b05f5907cd0842616630a6f3683e517d247affdb2134e6bf3263f91",
+      "39b4c6e318ff26e990dcccb1fdad98d814567fac3fc09a5e9e83cd18befd7a80",
+      "ff00797ea08407075a6907055dc26256705d1f1b56626005e9621807b7bcdf11",
+      "0bf6304e64332fd753e3fe1cd77a11207d7aa8ae2a647f7267adbfc39ec7e121",
+      "f3fe5ff4ba05f08031cdb69aa5e6331ceaac8fecc0f317638f647c2051f63f19"
+    ],
+    "afterFrames": [
+      "e5958761d639c9f86ea8d449c5d3537c69677d78b0d4055dc3015417fe659d0b",
+      "b5043917c0d1d63361913f6f976853bb168d82e853b29f46940cb8589db6f834",
+      "ac1a1a316970e7244074efb210206b7a5bd22c46c238a991eb0935235fa811ff",
+      "e1ac9dc5aabc11a2dff4a6a0e42b0c330f8aa97dcc382619472c3b6dfba8c6ab",
+      "efb2a1525d3bd58957ff68b47c25117de93935427617f103a0b43e21fb11df34",
+      "40e54483b2e3fdc9f724d5c3f06acf0f188b7f2d10ba3c4deb4495e51730e35b",
+      "b3738b471ea1d60cccde017a601d54c97dd2273c0c8d40057330e63c79b49a14",
+      "7fe6ac5fa8603eac3201b3275e2c0e663ed27709f902fe57c4a1358f9cf159e0",
+      "940feb84c025762308b3af37ad6b7bdb9ffffc5b2da3e988f84c904d1952412a",
+      "6ff7fc8e9a50ca0c5d4d45cb2838c9558d5fad5203d033b9213f96fe5d482341",
+      "8cbb980a6cba1fba8e7ad7d2275f2ae40cd65abadd352f04a9199e66c31c21e4",
+      "154e675055a175bbd3c4dc29257b7a3f9dbd566997942793ed30128ccd853f36",
+      "e585dbb5e686d10dc083dddf0364c4d6e6a873df678aea8e3cbc18c62f044c3f",
+      "2fa18a4f417f6264f8e4e46e5923ed4540ed298b999972aba833985699388fb0",
+      "6fe03fd5d807c0e1e10ddfa0e9e390ed6f79fc9aa56aab237b5f690d35e22640",
+      "74ced0152644baadeb0a4821ee7ee8df6e3a8eb49826fd053325abb2726cc05b",
+      "a5d72902bfd160c12a3f578a52d086a8ba2e69f52c11e2acf0e998885f87d3b4",
+      "fffb0013aab766bd00f69cb9a4468b0615329ebdbfb0d0fa7c3d03e5ec9e7a35",
+      "3cf09972c1b35166a4de0acf44cf95a4701b747797ff5692d227371f41f6b358",
+      "5bade9fc5b05f5907cd0842616630a6f3683e517d247affdb2134e6bf3263f91",
+      "39b4c6e318ff26e990dcccb1fdad98d814567fac3fc09a5e9e83cd18befd7a80",
+      "ff00797ea08407075a6907055dc26256705d1f1b56626005e9621807b7bcdf11",
+      "0bf6304e64332fd753e3fe1cd77a11207d7aa8ae2a647f7267adbfc39ec7e121",
+      "f3fe5ff4ba05f08031cdb69aa5e6331ceaac8fecc0f317638f647c2051f63f19"
+    ],
+    "unchangedFrames": 20,
+    "changedFrames": [
+      12,
+      13,
+      14,
+      15
+    ]
+  }
+}

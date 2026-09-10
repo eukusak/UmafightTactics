@@ -1,0 +1,506 @@
+{
+  "format": "uft-baked-frames-v1",
+  "scale": 0.4094488188976378,
+  "anchor": [
+    64,
+    110
+  ],
+  "runtimeSha256": "cb6cca2189f4de09e6a5d15fcf8f6bdf95c743e846bf9027a25f50dcc0f58f0c",
+  "frames": [
+    {
+      "frame": 0,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/production-144/stay_gold/alpha.png",
+      "sourceSha256": "92801672fb056281be9fbfff1eff8d8387966e73201f2b8bbd29255ec06bd590",
+      "crop": [
+        74,
+        17,
+        218,
+        256
+      ],
+      "destination": [
+        34,
+        12,
+        59,
+        98
+      ]
+    },
+    {
+      "frame": 1,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/production-144/stay_gold/alpha.png",
+      "sourceSha256": "92801672fb056281be9fbfff1eff8d8387966e73201f2b8bbd29255ec06bd590",
+      "crop": [
+        318,
+        19,
+        463,
+        256
+      ],
+      "destination": [
+        162,
+        13,
+        59,
+        97
+      ]
+    },
+    {
+      "frame": 2,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/production-144/stay_gold/alpha.png",
+      "sourceSha256": "92801672fb056281be9fbfff1eff8d8387966e73201f2b8bbd29255ec06bd590",
+      "crop": [
+        571,
+        20,
+        717,
+        256
+      ],
+      "destination": [
+        290,
+        13,
+        60,
+        97
+      ]
+    },
+    {
+      "frame": 3,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/production-144/stay_gold/alpha.png",
+      "sourceSha256": "92801672fb056281be9fbfff1eff8d8387966e73201f2b8bbd29255ec06bd590",
+      "crop": [
+        819,
+        20,
+        956,
+        256
+      ],
+      "destination": [
+        420,
+        13,
+        56,
+        97
+      ]
+    },
+    {
+      "frame": 4,
+      "sourceFrame": 4,
+      "source": "docs/art-source/motions/production-144/stay_gold/alpha.png",
+      "sourceSha256": "92801672fb056281be9fbfff1eff8d8387966e73201f2b8bbd29255ec06bd590",
+      "crop": [
+        33,
+        267,
+        231,
+        501
+      ],
+      "destination": [
+        23,
+        142,
+        81,
+        96
+      ]
+    },
+    {
+      "frame": 5,
+      "sourceFrame": 5,
+      "source": "docs/art-source/motions/production-144/stay_gold/alpha.png",
+      "sourceSha256": "92801672fb056281be9fbfff1eff8d8387966e73201f2b8bbd29255ec06bd590",
+      "crop": [
+        287,
+        269,
+        483,
+        497
+      ],
+      "destination": [
+        152,
+        145,
+        80,
+        93
+      ]
+    },
+    {
+      "frame": 6,
+      "sourceFrame": 6,
+      "source": "docs/art-source/motions/production-144/stay_gold/alpha.png",
+      "sourceSha256": "92801672fb056281be9fbfff1eff8d8387966e73201f2b8bbd29255ec06bd590",
+      "crop": [
+        547,
+        272,
+        738,
+        500
+      ],
+      "destination": [
+        281,
+        145,
+        78,
+        93
+      ]
+    },
+    {
+      "frame": 7,
+      "sourceFrame": 7,
+      "source": "docs/art-source/motions/production-144/stay_gold/alpha.png",
+      "sourceSha256": "92801672fb056281be9fbfff1eff8d8387966e73201f2b8bbd29255ec06bd590",
+      "crop": [
+        788,
+        271,
+        991,
+        506
+      ],
+      "destination": [
+        406,
+        142,
+        83,
+        96
+      ]
+    },
+    {
+      "frame": 8,
+      "sourceFrame": 8,
+      "source": "docs/art-source/motions/production-144/stay_gold/alpha.png",
+      "sourceSha256": "92801672fb056281be9fbfff1eff8d8387966e73201f2b8bbd29255ec06bd590",
+      "crop": [
+        44,
+        515,
+        206,
+        759
+      ],
+      "destination": [
+        31,
+        266,
+        66,
+        100
+      ]
+    },
+    {
+      "frame": 9,
+      "sourceFrame": 9,
+      "source": "docs/art-source/motions/production-144/stay_gold/alpha.png",
+      "sourceSha256": "92801672fb056281be9fbfff1eff8d8387966e73201f2b8bbd29255ec06bd590",
+      "crop": [
+        307,
+        512,
+        472,
+        759
+      ],
+      "destination": [
+        158,
+        265,
+        68,
+        101
+      ]
+    },
+    {
+      "frame": 10,
+      "sourceFrame": 10,
+      "source": "docs/art-source/motions/production-144/stay_gold/alpha.png",
+      "sourceSha256": "92801672fb056281be9fbfff1eff8d8387966e73201f2b8bbd29255ec06bd590",
+      "crop": [
+        544,
+        518,
+        749,
+        759
+      ],
+      "destination": [
+        278,
+        267,
+        84,
+        99
+      ]
+    },
+    {
+      "frame": 11,
+      "sourceFrame": 11,
+      "source": "docs/art-source/motions/production-144/stay_gold/alpha.png",
+      "sourceSha256": "92801672fb056281be9fbfff1eff8d8387966e73201f2b8bbd29255ec06bd590",
+      "crop": [
+        828,
+        514,
+        977,
+        759
+      ],
+      "destination": [
+        417,
+        266,
+        61,
+        100
+      ]
+    },
+    {
+      "frame": 12,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/skill-revisions-2026-09-11/stay_gold/generated.png",
+      "sourceSha256": "b3c90641f284b7bb900b739a88278292d2a2101e896ef95ccea82984f96487eb",
+      "crop": [
+        178,
+        33,
+        510,
+        535
+      ],
+      "destination": [
+        29,
+        390,
+        69,
+        104
+      ]
+    },
+    {
+      "frame": 13,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/skill-revisions-2026-09-11/stay_gold/generated.png",
+      "sourceSha256": "b3c90641f284b7bb900b739a88278292d2a2101e896ef95ccea82984f96487eb",
+      "crop": [
+        826,
+        57,
+        1327,
+        533
+      ],
+      "destination": [
+        140,
+        395,
+        104,
+        99
+      ]
+    },
+    {
+      "frame": 14,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/skill-revisions-2026-09-11/stay_gold/generated.png",
+      "sourceSha256": "b3c90641f284b7bb900b739a88278292d2a2101e896ef95ccea82984f96487eb",
+      "crop": [
+        110,
+        593,
+        623,
+        1077
+      ],
+      "destination": [
+        267,
+        394,
+        106,
+        100
+      ]
+    },
+    {
+      "frame": 15,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/skill-revisions-2026-09-11/stay_gold/generated.png",
+      "sourceSha256": "b3c90641f284b7bb900b739a88278292d2a2101e896ef95ccea82984f96487eb",
+      "crop": [
+        879,
+        577,
+        1242,
+        1078
+      ],
+      "destination": [
+        410,
+        390,
+        75,
+        104
+      ]
+    },
+    {
+      "frame": 16,
+      "sourceFrame": 16,
+      "source": "docs/art-source/motions/production-144/stay_gold/alpha.png",
+      "sourceSha256": "92801672fb056281be9fbfff1eff8d8387966e73201f2b8bbd29255ec06bd590",
+      "crop": [
+        51,
+        1027,
+        228,
+        1255
+      ],
+      "destination": [
+        28,
+        529,
+        72,
+        93
+      ]
+    },
+    {
+      "frame": 17,
+      "sourceFrame": 17,
+      "source": "docs/art-source/motions/production-144/stay_gold/alpha.png",
+      "sourceSha256": "92801672fb056281be9fbfff1eff8d8387966e73201f2b8bbd29255ec06bd590",
+      "crop": [
+        284,
+        1064,
+        474,
+        1255
+      ],
+      "destination": [
+        153,
+        544,
+        78,
+        78
+      ]
+    },
+    {
+      "frame": 18,
+      "sourceFrame": 18,
+      "source": "docs/art-source/motions/production-144/stay_gold/alpha.png",
+      "sourceSha256": "92801672fb056281be9fbfff1eff8d8387966e73201f2b8bbd29255ec06bd590",
+      "crop": [
+        528,
+        1064,
+        746,
+        1253
+      ],
+      "destination": [
+        275,
+        545,
+        89,
+        77
+      ]
+    },
+    {
+      "frame": 19,
+      "sourceFrame": 19,
+      "source": "docs/art-source/motions/production-144/stay_gold/alpha.png",
+      "sourceSha256": "92801672fb056281be9fbfff1eff8d8387966e73201f2b8bbd29255ec06bd590",
+      "crop": [
+        765,
+        1133,
+        1020,
+        1251
+      ],
+      "destination": [
+        396,
+        574,
+        104,
+        48
+      ]
+    },
+    {
+      "frame": 20,
+      "sourceFrame": 20,
+      "source": "docs/art-source/motions/production-144/stay_gold/alpha.png",
+      "sourceSha256": "92801672fb056281be9fbfff1eff8d8387966e73201f2b8bbd29255ec06bd590",
+      "crop": [
+        57,
+        1276,
+        201,
+        1522
+      ],
+      "destination": [
+        34,
+        649,
+        59,
+        101
+      ]
+    },
+    {
+      "frame": 21,
+      "sourceFrame": 21,
+      "source": "docs/art-source/motions/production-144/stay_gold/alpha.png",
+      "sourceSha256": "92801672fb056281be9fbfff1eff8d8387966e73201f2b8bbd29255ec06bd590",
+      "crop": [
+        319,
+        1270,
+        466,
+        1519
+      ],
+      "destination": [
+        162,
+        648,
+        60,
+        102
+      ]
+    },
+    {
+      "frame": 22,
+      "sourceFrame": 22,
+      "source": "docs/art-source/motions/production-144/stay_gold/alpha.png",
+      "sourceSha256": "92801672fb056281be9fbfff1eff8d8387966e73201f2b8bbd29255ec06bd590",
+      "crop": [
+        552,
+        1267,
+        732,
+        1521
+      ],
+      "destination": [
+        283,
+        646,
+        74,
+        104
+      ]
+    },
+    {
+      "frame": 23,
+      "sourceFrame": 23,
+      "source": "docs/art-source/motions/production-144/stay_gold/alpha.png",
+      "sourceSha256": "92801672fb056281be9fbfff1eff8d8387966e73201f2b8bbd29255ec06bd590",
+      "crop": [
+        812,
+        1273,
+        966,
+        1522
+      ],
+      "destination": [
+        416,
+        648,
+        63,
+        102
+      ]
+    }
+  ],
+  "skillRevision": {
+    "scale": 0.20717131474103587,
+    "review": "docs/art-source/motions/skill-revisions-2026-09-11/stay_gold/review.json",
+    "beforeFrames": [
+      "ff3e62dd5d9b33ce547da8a74f8b00322e2e2173b47ece9d869a50758fc3088c",
+      "8a756401f7c4f92868e28af66e1fd9beee00f966f451d29e8498256c7c21e72c",
+      "186aa77f83d997c03afa91153e9ebba045015637d915fb713368a38994332603",
+      "fd8a07bfc141dc4ce3d5585e306f7e4a1445378602a2ee9f51c0caffa7fe92e0",
+      "980ce9a2e65e4020fab9d86aaccd6acf25e3dc931a4bc3bd8cf4046acb97f1be",
+      "4ca2cb86380c5d4bb0d76684e5bfe8ed82782d18535b9d62fb1f157221723dfe",
+      "ae76168988a82882cab3280fc57d5f46ac5b6c60d5257e745e40e6c2af357ab0",
+      "bc2c7318c1eb5f34fe55e91662c36951cdd79be2f91aa2d2be8f691362fa69d1",
+      "4d5ef92893008655d5b84f00461b02e9629e2595ba617c223b85d2338b1377c9",
+      "991579747362946531c418db297091e6be299e7a96808094fb714fe6fdc04d16",
+      "5215ca3eee663891d571ebcf666758e84921130f3c0cbe266506493c2a32ea70",
+      "27ddd5aee7ee6dd845ab5ae726ef8b35e4b50f609751f641d2e1d66149d1b8d6",
+      "edc9543f283308e0a77a8edb472df64c83d17d784eb17e874476568f942000c8",
+      "46296a0502d44f70ddb09d886fc3f4f78fef003bfde02bf4e0efb034134358ad",
+      "e1f2431eb5fd344256e76969e8c2f407198b3b679362b63e445bab85ef5b651e",
+      "70ff618eb8becef2a600c246fefda6fc16a746d64f222092d280086dabd2ecc4",
+      "d726b108f65d210ccd580d4ab4734d613c7a722678d360d6baa930894db9bff6",
+      "2f875d982e862a03b66e7762c803ef648cfed9d18142150bfab7e3646cee42fd",
+      "dfae0a36068b9eff05592d1adb56775f045f49dfe2012dc7444ac27aa1c5060d",
+      "24bcf0958badca8ceb618e873efd68de2f8245487e8451d8ed220bff8c41b8f7",
+      "4b63797ead3ff023b80cb23431ad29333c9f0816f5f5781b411b4dc52f5307a1",
+      "9f510ebdfd6431c577ef618208790c7c527a0641ae62a3e2c18693466e14eeab",
+      "9b6e8251764ad77fbba30222bf573474340406aaa356887f7a3d20f9adbcd101",
+      "ec025c9a198a0caace4e346f336ab33a55485b3dbb7eb8c3bddda4620f55e1f0"
+    ],
+    "afterFrames": [
+      "ff3e62dd5d9b33ce547da8a74f8b00322e2e2173b47ece9d869a50758fc3088c",
+      "8a756401f7c4f92868e28af66e1fd9beee00f966f451d29e8498256c7c21e72c",
+      "186aa77f83d997c03afa91153e9ebba045015637d915fb713368a38994332603",
+      "fd8a07bfc141dc4ce3d5585e306f7e4a1445378602a2ee9f51c0caffa7fe92e0",
+      "980ce9a2e65e4020fab9d86aaccd6acf25e3dc931a4bc3bd8cf4046acb97f1be",
+      "4ca2cb86380c5d4bb0d76684e5bfe8ed82782d18535b9d62fb1f157221723dfe",
+      "ae76168988a82882cab3280fc57d5f46ac5b6c60d5257e745e40e6c2af357ab0",
+      "bc2c7318c1eb5f34fe55e91662c36951cdd79be2f91aa2d2be8f691362fa69d1",
+      "4d5ef92893008655d5b84f00461b02e9629e2595ba617c223b85d2338b1377c9",
+      "991579747362946531c418db297091e6be299e7a96808094fb714fe6fdc04d16",
+      "5215ca3eee663891d571ebcf666758e84921130f3c0cbe266506493c2a32ea70",
+      "27ddd5aee7ee6dd845ab5ae726ef8b35e4b50f609751f641d2e1d66149d1b8d6",
+      "b60831bd0312b98a11763a0a3f6c16ca571e435bce4762a442fcedc63b5685d6",
+      "02640c9902dcbda36fe87797bdf5cae18dd778489c0d5a9da65c6ce4f9ba4df4",
+      "b963a2d780028097d40bfab2a39e17701f96e6cfa494f779b1871347cf831d03",
+      "3c433ea5645723156855bd15698202228d83835017f2baac47757e189f74b784",
+      "d726b108f65d210ccd580d4ab4734d613c7a722678d360d6baa930894db9bff6",
+      "2f875d982e862a03b66e7762c803ef648cfed9d18142150bfab7e3646cee42fd",
+      "dfae0a36068b9eff05592d1adb56775f045f49dfe2012dc7444ac27aa1c5060d",
+      "24bcf0958badca8ceb618e873efd68de2f8245487e8451d8ed220bff8c41b8f7",
+      "4b63797ead3ff023b80cb23431ad29333c9f0816f5f5781b411b4dc52f5307a1",
+      "9f510ebdfd6431c577ef618208790c7c527a0641ae62a3e2c18693466e14eeab",
+      "9b6e8251764ad77fbba30222bf573474340406aaa356887f7a3d20f9adbcd101",
+      "ec025c9a198a0caace4e346f336ab33a55485b3dbb7eb8c3bddda4620f55e1f0"
+    ],
+    "unchangedFrames": 20,
+    "changedFrames": [
+      12,
+      13,
+      14,
+      15
+    ]
+  }
+}

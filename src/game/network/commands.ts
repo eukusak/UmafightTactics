@@ -1,4 +1,5 @@
 import { setCarouselTarget } from '../engine/rounds/carousel';
+import { claimItemReward } from '../engine/items/rewards';
 import type { OnlineCommand } from './protocol';
 import type { RoundDirector } from '../engine/rounds/director';
 import { buyUnit, sellUnit, rollShop, teamSizeLimit, benchCapacity, applyCombines } from '../engine/shop';
@@ -19,6 +20,7 @@ export function applyOnlineCommand(director: RoundDirector, playerId: string, co
   if (command.action === 'draft') return director.pickDraft(playerId, command.index) ? null : '지금 선택할 수 없습니다.';
   if (!['ROUND_PREP', 'BATTLE'].includes(state.phase)) return '현재는 선택 단계입니다.';
   switch (command.action) {
+    case 'itemReward': return claimItemReward(state, player, command.kind, command.item) ? null : '지금 받을 수 없는 보상입니다. 보상 종류와 보관함 공간을 확인하세요.';
     case 'combineItems': return combineStoredItems(player, command.source, command.target, battle).ok ? null : '조합할 수 없습니다. 준비 단계에서 보유한 하위 아이템 2개를 선택하세요.';
     case 'buy': { const r = buyUnit(state, player, command.slot); return r.ok ? null : '구매할 수 없습니다. 골드·대기석·공유 풀을 확인하세요.'; }
     case 'sell': {

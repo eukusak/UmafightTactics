@@ -1,0 +1,506 @@
+{
+  "format": "uft-baked-frames-v1",
+  "scale": 0.4425531914893617,
+  "anchor": [
+    64,
+    110
+  ],
+  "runtimeSha256": "24cd39a240cf347230be503a164084422a59676c198e8de86e65cb428719be4b",
+  "frames": [
+    {
+      "frame": 0,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/production-144/eishin_flash/alpha.png",
+      "sourceSha256": "59be0b15d21f92cfb314347aebe1c3afa2f651755157309a8d91d9b5d1d7e36c",
+      "crop": [
+        54,
+        26,
+        201,
+        256
+      ],
+      "destination": [
+        31,
+        8,
+        65,
+        102
+      ]
+    },
+    {
+      "frame": 1,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/production-144/eishin_flash/alpha.png",
+      "sourceSha256": "59be0b15d21f92cfb314347aebe1c3afa2f651755157309a8d91d9b5d1d7e36c",
+      "crop": [
+        310,
+        25,
+        453,
+        255
+      ],
+      "destination": [
+        160,
+        8,
+        63,
+        102
+      ]
+    },
+    {
+      "frame": 2,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/production-144/eishin_flash/alpha.png",
+      "sourceSha256": "59be0b15d21f92cfb314347aebe1c3afa2f651755157309a8d91d9b5d1d7e36c",
+      "crop": [
+        558,
+        26,
+        699,
+        255
+      ],
+      "destination": [
+        289,
+        9,
+        62,
+        101
+      ]
+    },
+    {
+      "frame": 3,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/production-144/eishin_flash/alpha.png",
+      "sourceSha256": "59be0b15d21f92cfb314347aebe1c3afa2f651755157309a8d91d9b5d1d7e36c",
+      "crop": [
+        822,
+        25,
+        969,
+        256
+      ],
+      "destination": [
+        415,
+        8,
+        65,
+        102
+      ]
+    },
+    {
+      "frame": 4,
+      "sourceFrame": 4,
+      "source": "docs/art-source/motions/production-144/eishin_flash/alpha.png",
+      "sourceSha256": "59be0b15d21f92cfb314347aebe1c3afa2f651755157309a8d91d9b5d1d7e36c",
+      "crop": [
+        42,
+        280,
+        212,
+        507
+      ],
+      "destination": [
+        26,
+        138,
+        75,
+        100
+      ]
+    },
+    {
+      "frame": 5,
+      "sourceFrame": 5,
+      "source": "docs/art-source/motions/production-144/eishin_flash/alpha.png",
+      "sourceSha256": "59be0b15d21f92cfb314347aebe1c3afa2f651755157309a8d91d9b5d1d7e36c",
+      "crop": [
+        283,
+        280,
+        462,
+        508
+      ],
+      "destination": [
+        152,
+        137,
+        79,
+        101
+      ]
+    },
+    {
+      "frame": 6,
+      "sourceFrame": 6,
+      "source": "docs/art-source/motions/production-144/eishin_flash/alpha.png",
+      "sourceSha256": "59be0b15d21f92cfb314347aebe1c3afa2f651755157309a8d91d9b5d1d7e36c",
+      "crop": [
+        545,
+        278,
+        722,
+        508
+      ],
+      "destination": [
+        281,
+        136,
+        78,
+        102
+      ]
+    },
+    {
+      "frame": 7,
+      "sourceFrame": 7,
+      "source": "docs/art-source/motions/production-144/eishin_flash/alpha.png",
+      "sourceSha256": "59be0b15d21f92cfb314347aebe1c3afa2f651755157309a8d91d9b5d1d7e36c",
+      "crop": [
+        795,
+        283,
+        977,
+        508
+      ],
+      "destination": [
+        407,
+        138,
+        81,
+        100
+      ]
+    },
+    {
+      "frame": 8,
+      "sourceFrame": 8,
+      "source": "docs/art-source/motions/production-144/eishin_flash/alpha.png",
+      "sourceSha256": "59be0b15d21f92cfb314347aebe1c3afa2f651755157309a8d91d9b5d1d7e36c",
+      "crop": [
+        46,
+        529,
+        206,
+        764
+      ],
+      "destination": [
+        28,
+        262,
+        71,
+        104
+      ]
+    },
+    {
+      "frame": 9,
+      "sourceFrame": 9,
+      "source": "docs/art-source/motions/production-144/eishin_flash/alpha.png",
+      "sourceSha256": "59be0b15d21f92cfb314347aebe1c3afa2f651755157309a8d91d9b5d1d7e36c",
+      "crop": [
+        309,
+        529,
+        462,
+        764
+      ],
+      "destination": [
+        158,
+        262,
+        68,
+        104
+      ]
+    },
+    {
+      "frame": 10,
+      "sourceFrame": 10,
+      "source": "docs/art-source/motions/production-144/eishin_flash/alpha.png",
+      "sourceSha256": "59be0b15d21f92cfb314347aebe1c3afa2f651755157309a8d91d9b5d1d7e36c",
+      "crop": [
+        552,
+        532,
+        744,
+        764
+      ],
+      "destination": [
+        277,
+        263,
+        85,
+        103
+      ]
+    },
+    {
+      "frame": 11,
+      "sourceFrame": 11,
+      "source": "docs/art-source/motions/production-144/eishin_flash/alpha.png",
+      "sourceSha256": "59be0b15d21f92cfb314347aebe1c3afa2f651755157309a8d91d9b5d1d7e36c",
+      "crop": [
+        820,
+        531,
+        968,
+        764
+      ],
+      "destination": [
+        415,
+        263,
+        65,
+        103
+      ]
+    },
+    {
+      "frame": 12,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/skill-revisions-2026-09-11/eishin_flash/generated.png",
+      "sourceSha256": "7ae5a75923ae5985dbdf7737d29b9d91bf8a52f52d889077c9f7e8fe5290b0ab",
+      "crop": [
+        187,
+        16,
+        587,
+        494
+      ],
+      "destination": [
+        20,
+        390,
+        87,
+        104
+      ]
+    },
+    {
+      "frame": 13,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/skill-revisions-2026-09-11/eishin_flash/generated.png",
+      "sourceSha256": "7ae5a75923ae5985dbdf7737d29b9d91bf8a52f52d889077c9f7e8fe5290b0ab",
+      "crop": [
+        884,
+        36,
+        1389,
+        497
+      ],
+      "destination": [
+        137,
+        394,
+        110,
+        100
+      ]
+    },
+    {
+      "frame": 14,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/skill-revisions-2026-09-11/eishin_flash/generated.png",
+      "sourceSha256": "7ae5a75923ae5985dbdf7737d29b9d91bf8a52f52d889077c9f7e8fe5290b0ab",
+      "crop": [
+        199,
+        530,
+        546,
+        1004
+      ],
+      "destination": [
+        282,
+        391,
+        75,
+        103
+      ]
+    },
+    {
+      "frame": 15,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/skill-revisions-2026-09-11/eishin_flash/generated.png",
+      "sourceSha256": "7ae5a75923ae5985dbdf7737d29b9d91bf8a52f52d889077c9f7e8fe5290b0ab",
+      "crop": [
+        932,
+        532,
+        1375,
+        1010
+      ],
+      "destination": [
+        400,
+        390,
+        96,
+        104
+      ]
+    },
+    {
+      "frame": 16,
+      "sourceFrame": 16,
+      "source": "docs/art-source/motions/production-144/eishin_flash/alpha.png",
+      "sourceSha256": "59be0b15d21f92cfb314347aebe1c3afa2f651755157309a8d91d9b5d1d7e36c",
+      "crop": [
+        68,
+        1051,
+        209,
+        1267
+      ],
+      "destination": [
+        33,
+        526,
+        62,
+        96
+      ]
+    },
+    {
+      "frame": 17,
+      "sourceFrame": 17,
+      "source": "docs/art-source/motions/production-144/eishin_flash/alpha.png",
+      "sourceSha256": "59be0b15d21f92cfb314347aebe1c3afa2f651755157309a8d91d9b5d1d7e36c",
+      "crop": [
+        309,
+        1089,
+        469,
+        1262
+      ],
+      "destination": [
+        156,
+        545,
+        71,
+        77
+      ]
+    },
+    {
+      "frame": 18,
+      "sourceFrame": 18,
+      "source": "docs/art-source/motions/production-144/eishin_flash/alpha.png",
+      "sourceSha256": "59be0b15d21f92cfb314347aebe1c3afa2f651755157309a8d91d9b5d1d7e36c",
+      "crop": [
+        543,
+        1093,
+        725,
+        1266
+      ],
+      "destination": [
+        279,
+        545,
+        81,
+        77
+      ]
+    },
+    {
+      "frame": 19,
+      "sourceFrame": 19,
+      "source": "docs/art-source/motions/production-144/eishin_flash/alpha.png",
+      "sourceSha256": "59be0b15d21f92cfb314347aebe1c3afa2f651755157309a8d91d9b5d1d7e36c",
+      "crop": [
+        790,
+        1161,
+        990,
+        1259
+      ],
+      "destination": [
+        403,
+        579,
+        89,
+        43
+      ]
+    },
+    {
+      "frame": 20,
+      "sourceFrame": 20,
+      "source": "docs/art-source/motions/production-144/eishin_flash/alpha.png",
+      "sourceSha256": "59be0b15d21f92cfb314347aebe1c3afa2f651755157309a8d91d9b5d1d7e36c",
+      "crop": [
+        71,
+        1296,
+        204,
+        1518
+      ],
+      "destination": [
+        34,
+        652,
+        59,
+        98
+      ]
+    },
+    {
+      "frame": 21,
+      "sourceFrame": 21,
+      "source": "docs/art-source/motions/production-144/eishin_flash/alpha.png",
+      "sourceSha256": "59be0b15d21f92cfb314347aebe1c3afa2f651755157309a8d91d9b5d1d7e36c",
+      "crop": [
+        309,
+        1291,
+        471,
+        1497
+      ],
+      "destination": [
+        156,
+        659,
+        72,
+        91
+      ]
+    },
+    {
+      "frame": 22,
+      "sourceFrame": 22,
+      "source": "docs/art-source/motions/production-144/eishin_flash/alpha.png",
+      "sourceSha256": "59be0b15d21f92cfb314347aebe1c3afa2f651755157309a8d91d9b5d1d7e36c",
+      "crop": [
+        563,
+        1290,
+        700,
+        1520
+      ],
+      "destination": [
+        289,
+        648,
+        61,
+        102
+      ]
+    },
+    {
+      "frame": 23,
+      "sourceFrame": 23,
+      "source": "docs/art-source/motions/production-144/eishin_flash/alpha.png",
+      "sourceSha256": "59be0b15d21f92cfb314347aebe1c3afa2f651755157309a8d91d9b5d1d7e36c",
+      "crop": [
+        834,
+        1294,
+        955,
+        1521
+      ],
+      "destination": [
+        421,
+        650,
+        54,
+        100
+      ]
+    }
+  ],
+  "skillRevision": {
+    "scale": 0.2175732217573222,
+    "review": "docs/art-source/motions/skill-revisions-2026-09-11/eishin_flash/review.json",
+    "beforeFrames": [
+      "4d502da4f3d72487824cf571a5757eb78123c1c15de9adbb0d54e28648b66613",
+      "8d786f9cb1b817de1188f419a3f7eb36032e528e7aa1d2872fcf197e74de3c0b",
+      "38a27abc5e89bb4f95e147df779dc5eb93c71a5c6b249b23b51a969b370ac96d",
+      "43541cbfd8456c59c07e2c9ab1ab502307fff3bf31c22fb56b0f97240cda2feb",
+      "1147d17e08020ff7a0150de0048318c7f7d85ff7f09666f598982337baf2c1f9",
+      "f815541b314359b0e77a39dd2464c1d59c569946a5fea38b2cd1e2088dc06862",
+      "e107707e5404e50c549c4aea1635fcb918c8ad8b60b232a744c95bb5c58df624",
+      "a31dc3b7e00847ab9ecff7d7598c7c38fd3395ea46fa06e7dfaf97d770580fff",
+      "e229f423312142ec18925ddff6ab8a1f6549537256a258bd3ee5826d400ded2f",
+      "f73ecc18b0aa211682c13cf3b3d8ae908beb343cf9abd0ceb16019f7d1de6c67",
+      "098230f1f6007a744836e39cf41e8204d1642f4d4f6b52aad8564bae964ad14c",
+      "d247ec6056557d30c9c0ba6edf2d63d440f85b9abf1b603c2120e4f9bf4c048e",
+      "666749a2b94b077c129f16e94649f551ad31bbaa76b1cc0271c63732257e8091",
+      "cdafdbe823b093dc64213a7a405711ac7f9a058f840b9229b5cedfc16097758b",
+      "0d1d8884dce0a1f0cb246f3d115aa296bc89447de4e0cd61d174f2ae94b9f2f8",
+      "432bfaa09c0fe8f9f6b75d91f37ffff1cdae103110972b65164773c144e6e559",
+      "c584656563281064c115d7bf53c23b6a8e403e156220a7fa149f98cbda23fc42",
+      "d6bd822574d81a221e0eefc4ec51bf0fde561b4a423afdf42cb8fa0000cfd325",
+      "f9bb3131db19f0ea724b9fa0c674c93a107df65a149a111e1090200c33f07c4d",
+      "3b7d0f14cde02b4d72b95c2caabb5d928cc81baa41724e089adcbfbabde6c146",
+      "c3edac2750e1abeae36f734a7c4d28b73c70477675705927e5d87d188921e37d",
+      "2c60d845c0b733da4d434108fd2c45286462ff6280ebabbe0e72b2f49c5fca4b",
+      "1465611053f6537dc680d61b95a5561f11e4477328269dee6e7f1dff6aa62d0a",
+      "b143b57cba76299c49ad6047b4cae1dacdcfbd0d4b441680c5b48f5730181ba0"
+    ],
+    "afterFrames": [
+      "4d502da4f3d72487824cf571a5757eb78123c1c15de9adbb0d54e28648b66613",
+      "8d786f9cb1b817de1188f419a3f7eb36032e528e7aa1d2872fcf197e74de3c0b",
+      "38a27abc5e89bb4f95e147df779dc5eb93c71a5c6b249b23b51a969b370ac96d",
+      "43541cbfd8456c59c07e2c9ab1ab502307fff3bf31c22fb56b0f97240cda2feb",
+      "1147d17e08020ff7a0150de0048318c7f7d85ff7f09666f598982337baf2c1f9",
+      "f815541b314359b0e77a39dd2464c1d59c569946a5fea38b2cd1e2088dc06862",
+      "e107707e5404e50c549c4aea1635fcb918c8ad8b60b232a744c95bb5c58df624",
+      "a31dc3b7e00847ab9ecff7d7598c7c38fd3395ea46fa06e7dfaf97d770580fff",
+      "e229f423312142ec18925ddff6ab8a1f6549537256a258bd3ee5826d400ded2f",
+      "f73ecc18b0aa211682c13cf3b3d8ae908beb343cf9abd0ceb16019f7d1de6c67",
+      "098230f1f6007a744836e39cf41e8204d1642f4d4f6b52aad8564bae964ad14c",
+      "d247ec6056557d30c9c0ba6edf2d63d440f85b9abf1b603c2120e4f9bf4c048e",
+      "5acf0e7118cc7d784f286d3a6683be8b35380f02ccf6bb63e7c2d9cee3ccca51",
+      "359f760afffbe6671275fcdf5b2645ba430159efa31b1236171ebcd57302a3a2",
+      "1a05d7e2737cd5e399c3f4cc4a98e1fae668f54787563e7c990bb4fab54ac356",
+      "d3d4f49d7c181a389fe770625c521d9f777b2fc52765a2c016e4ee4b59e5ed17",
+      "c584656563281064c115d7bf53c23b6a8e403e156220a7fa149f98cbda23fc42",
+      "d6bd822574d81a221e0eefc4ec51bf0fde561b4a423afdf42cb8fa0000cfd325",
+      "f9bb3131db19f0ea724b9fa0c674c93a107df65a149a111e1090200c33f07c4d",
+      "3b7d0f14cde02b4d72b95c2caabb5d928cc81baa41724e089adcbfbabde6c146",
+      "c3edac2750e1abeae36f734a7c4d28b73c70477675705927e5d87d188921e37d",
+      "2c60d845c0b733da4d434108fd2c45286462ff6280ebabbe0e72b2f49c5fca4b",
+      "1465611053f6537dc680d61b95a5561f11e4477328269dee6e7f1dff6aa62d0a",
+      "b143b57cba76299c49ad6047b4cae1dacdcfbd0d4b441680c5b48f5730181ba0"
+    ],
+    "unchangedFrames": 20,
+    "changedFrames": [
+      12,
+      13,
+      14,
+      15
+    ]
+  }
+}

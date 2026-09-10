@@ -1,5 +1,6 @@
 /** Delivered art is preferred. Reference thumbnails are explicitly tracked separately. */
 import deliveredRaw from '../../data/manual/delivered-art.json';
+import { getItem } from '../engine/items/item-defs';
 const deliveredFiles = new Set<string>(deliveredRaw);
 export function assetUrl(relative: string): string | null {
   return deliveredFiles.has(relative) ? `/assets/${relative}` : null;
@@ -31,5 +32,6 @@ export function animationFrame(name: AnimationName, seconds: number): number {
 }
 
 export function itemUrl(id: string): string | null {
+  id = getItem(id).iconId ?? id;
   return assetUrl(`items/components/${id}.png`) ?? assetUrl(`items/complete/${id}.png`);
 }

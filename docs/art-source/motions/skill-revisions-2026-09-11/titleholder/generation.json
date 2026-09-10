@@ -1,0 +1,9 @@
+{
+  "mode": "built-in image_gen",
+  "prompt": "Edit the reference character into four chibi skill animation poses on a transparent background. A 2 by 2 sprite sheet, only four full-body characters, no labels. Preserve titleholder's exact hairstyle, horse ears, face, costume, accessories and tail from the reference. Four poses in reading order: brace forearms tightly behind a small guard crest; pivot hips and open one arm to start a circular gust; hold a wide grounded stance sustaining three short orbiting gust arcs; fold hands back as the gust ends. Four clearly different body poses, same body proportions and costume, crisp cel shading, no ground shadow. Real PNG cutouts with an alpha channel. Absolutely no checkerboard or background design. Wide transparent gutters between all poses; compact effects stay within each cell.",
+  "references": [
+    "public/assets/motions/titleholder.png"
+  ],
+  "referenceCommit": "3c950f3ce3476b152f2ad3d99fd296327a3c82bf",
+  "skillSignature": "ba0aaf68f0034e5b39f3b34190b35e521619352c7440d8ab32c05f364d879512"
+}

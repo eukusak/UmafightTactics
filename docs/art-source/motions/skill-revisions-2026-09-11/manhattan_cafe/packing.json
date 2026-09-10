@@ -1,0 +1,506 @@
+{
+  "format": "uft-baked-frames-v1",
+  "scale": 0.4,
+  "anchor": [
+    64,
+    110
+  ],
+  "runtimeSha256": "dc6fecf747f0ea18440a3d1e76d1891b1ef290ce03e0c3636ee4baa5bbe35c9b",
+  "frames": [
+    {
+      "frame": 0,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/production-144/manhattan_cafe/alpha.png",
+      "sourceSha256": "f10b2f2ba5182d8658229fa6ca4c4325373cf6a5f9250fb597f880374d90eb43",
+      "crop": [
+        48,
+        9,
+        216,
+        246
+      ],
+      "destination": [
+        30,
+        15,
+        67,
+        95
+      ]
+    },
+    {
+      "frame": 1,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/production-144/manhattan_cafe/alpha.png",
+      "sourceSha256": "f10b2f2ba5182d8658229fa6ca4c4325373cf6a5f9250fb597f880374d90eb43",
+      "crop": [
+        302,
+        12,
+        468,
+        246
+      ],
+      "destination": [
+        159,
+        16,
+        66,
+        94
+      ]
+    },
+    {
+      "frame": 2,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/production-144/manhattan_cafe/alpha.png",
+      "sourceSha256": "f10b2f2ba5182d8658229fa6ca4c4325373cf6a5f9250fb597f880374d90eb43",
+      "crop": [
+        558,
+        11,
+        723,
+        246
+      ],
+      "destination": [
+        287,
+        16,
+        66,
+        94
+      ]
+    },
+    {
+      "frame": 3,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/production-144/manhattan_cafe/alpha.png",
+      "sourceSha256": "f10b2f2ba5182d8658229fa6ca4c4325373cf6a5f9250fb597f880374d90eb43",
+      "crop": [
+        812,
+        11,
+        977,
+        246
+      ],
+      "destination": [
+        415,
+        16,
+        66,
+        94
+      ]
+    },
+    {
+      "frame": 4,
+      "sourceFrame": 4,
+      "source": "docs/art-source/motions/production-144/manhattan_cafe/alpha.png",
+      "sourceSha256": "f10b2f2ba5182d8658229fa6ca4c4325373cf6a5f9250fb597f880374d90eb43",
+      "crop": [
+        43,
+        273,
+        241,
+        511
+      ],
+      "destination": [
+        24,
+        143,
+        79,
+        95
+      ]
+    },
+    {
+      "frame": 5,
+      "sourceFrame": 5,
+      "source": "docs/art-source/motions/production-144/manhattan_cafe/alpha.png",
+      "sourceSha256": "f10b2f2ba5182d8658229fa6ca4c4325373cf6a5f9250fb597f880374d90eb43",
+      "crop": [
+        296,
+        276,
+        483,
+        513
+      ],
+      "destination": [
+        154,
+        143,
+        75,
+        95
+      ]
+    },
+    {
+      "frame": 6,
+      "sourceFrame": 6,
+      "source": "docs/art-source/motions/production-144/manhattan_cafe/alpha.png",
+      "sourceSha256": "f10b2f2ba5182d8658229fa6ca4c4325373cf6a5f9250fb597f880374d90eb43",
+      "crop": [
+        536,
+        274,
+        730,
+        513
+      ],
+      "destination": [
+        281,
+        142,
+        78,
+        96
+      ]
+    },
+    {
+      "frame": 7,
+      "sourceFrame": 7,
+      "source": "docs/art-source/motions/production-144/manhattan_cafe/alpha.png",
+      "sourceSha256": "f10b2f2ba5182d8658229fa6ca4c4325373cf6a5f9250fb597f880374d90eb43",
+      "crop": [
+        797,
+        274,
+        992,
+        513
+      ],
+      "destination": [
+        409,
+        142,
+        78,
+        96
+      ]
+    },
+    {
+      "frame": 8,
+      "sourceFrame": 8,
+      "source": "docs/art-source/motions/production-144/manhattan_cafe/alpha.png",
+      "sourceSha256": "f10b2f2ba5182d8658229fa6ca4c4325373cf6a5f9250fb597f880374d90eb43",
+      "crop": [
+        36,
+        528,
+        208,
+        768
+      ],
+      "destination": [
+        29,
+        270,
+        69,
+        96
+      ]
+    },
+    {
+      "frame": 9,
+      "sourceFrame": 9,
+      "source": "docs/art-source/motions/production-144/manhattan_cafe/alpha.png",
+      "sourceSha256": "f10b2f2ba5182d8658229fa6ca4c4325373cf6a5f9250fb597f880374d90eb43",
+      "crop": [
+        289,
+        531,
+        465,
+        768
+      ],
+      "destination": [
+        157,
+        271,
+        70,
+        95
+      ]
+    },
+    {
+      "frame": 10,
+      "sourceFrame": 10,
+      "source": "docs/art-source/motions/production-144/manhattan_cafe/alpha.png",
+      "sourceSha256": "f10b2f2ba5182d8658229fa6ca4c4325373cf6a5f9250fb597f880374d90eb43",
+      "crop": [
+        545,
+        532,
+        753,
+        768
+      ],
+      "destination": [
+        278,
+        272,
+        83,
+        94
+      ]
+    },
+    {
+      "frame": 11,
+      "sourceFrame": 11,
+      "source": "docs/art-source/motions/production-144/manhattan_cafe/alpha.png",
+      "sourceSha256": "f10b2f2ba5182d8658229fa6ca4c4325373cf6a5f9250fb597f880374d90eb43",
+      "crop": [
+        810,
+        534,
+        983,
+        764
+      ],
+      "destination": [
+        413,
+        274,
+        69,
+        92
+      ]
+    },
+    {
+      "frame": 12,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/skill-revisions-2026-09-11/manhattan_cafe/generated.png",
+      "sourceSha256": "3954ed005664e00fb2de9738b07544092a3aa71cadef243015a94d18b41ad7d4",
+      "crop": [
+        102,
+        125,
+        670,
+        456
+      ],
+      "destination": [
+        16,
+        438,
+        95,
+        56
+      ]
+    },
+    {
+      "frame": 13,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/skill-revisions-2026-09-11/manhattan_cafe/generated.png",
+      "sourceSha256": "3954ed005664e00fb2de9738b07544092a3aa71cadef243015a94d18b41ad7d4",
+      "crop": [
+        923,
+        14,
+        1422,
+        483
+      ],
+      "destination": [
+        150,
+        415,
+        84,
+        79
+      ]
+    },
+    {
+      "frame": 14,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/skill-revisions-2026-09-11/manhattan_cafe/generated.png",
+      "sourceSha256": "3954ed005664e00fb2de9738b07544092a3aa71cadef243015a94d18b41ad7d4",
+      "crop": [
+        121,
+        544,
+        811,
+        988
+      ],
+      "destination": [
+        262,
+        419,
+        116,
+        75
+      ]
+    },
+    {
+      "frame": 15,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/skill-revisions-2026-09-11/manhattan_cafe/generated.png",
+      "sourceSha256": "3954ed005664e00fb2de9738b07544092a3aa71cadef243015a94d18b41ad7d4",
+      "crop": [
+        944,
+        532,
+        1355,
+        1011
+      ],
+      "destination": [
+        413,
+        413,
+        69,
+        81
+      ]
+    },
+    {
+      "frame": 16,
+      "sourceFrame": 16,
+      "source": "docs/art-source/motions/production-144/manhattan_cafe/alpha.png",
+      "sourceSha256": "f10b2f2ba5182d8658229fa6ca4c4325373cf6a5f9250fb597f880374d90eb43",
+      "crop": [
+        39,
+        1006,
+        223,
+        1232
+      ],
+      "destination": [
+        27,
+        532,
+        74,
+        90
+      ]
+    },
+    {
+      "frame": 17,
+      "sourceFrame": 17,
+      "source": "docs/art-source/motions/production-144/manhattan_cafe/alpha.png",
+      "sourceSha256": "f10b2f2ba5182d8658229fa6ca4c4325373cf6a5f9250fb597f880374d90eb43",
+      "crop": [
+        299,
+        1012,
+        496,
+        1231
+      ],
+      "destination": [
+        152,
+        534,
+        79,
+        88
+      ]
+    },
+    {
+      "frame": 18,
+      "sourceFrame": 18,
+      "source": "docs/art-source/motions/production-144/manhattan_cafe/alpha.png",
+      "sourceSha256": "f10b2f2ba5182d8658229fa6ca4c4325373cf6a5f9250fb597f880374d90eb43",
+      "crop": [
+        527,
+        1054,
+        718,
+        1233
+      ],
+      "destination": [
+        282,
+        550,
+        76,
+        72
+      ]
+    },
+    {
+      "frame": 19,
+      "sourceFrame": 19,
+      "source": "docs/art-source/motions/production-144/manhattan_cafe/alpha.png",
+      "sourceSha256": "f10b2f2ba5182d8658229fa6ca4c4325373cf6a5f9250fb597f880374d90eb43",
+      "crop": [
+        767,
+        1116,
+        1014,
+        1228
+      ],
+      "destination": [
+        398,
+        577,
+        99,
+        45
+      ]
+    },
+    {
+      "frame": 20,
+      "sourceFrame": 20,
+      "source": "docs/art-source/motions/production-144/manhattan_cafe/alpha.png",
+      "sourceSha256": "f10b2f2ba5182d8658229fa6ca4c4325373cf6a5f9250fb597f880374d90eb43",
+      "crop": [
+        37,
+        1259,
+        201,
+        1511
+      ],
+      "destination": [
+        31,
+        649,
+        66,
+        101
+      ]
+    },
+    {
+      "frame": 21,
+      "sourceFrame": 21,
+      "source": "docs/art-source/motions/production-144/manhattan_cafe/alpha.png",
+      "sourceSha256": "f10b2f2ba5182d8658229fa6ca4c4325373cf6a5f9250fb597f880374d90eb43",
+      "crop": [
+        286,
+        1265,
+        469,
+        1513
+      ],
+      "destination": [
+        155,
+        651,
+        73,
+        99
+      ]
+    },
+    {
+      "frame": 22,
+      "sourceFrame": 22,
+      "source": "docs/art-source/motions/production-144/manhattan_cafe/alpha.png",
+      "sourceSha256": "f10b2f2ba5182d8658229fa6ca4c4325373cf6a5f9250fb597f880374d90eb43",
+      "crop": [
+        547,
+        1260,
+        729,
+        1504
+      ],
+      "destination": [
+        283,
+        652,
+        73,
+        98
+      ]
+    },
+    {
+      "frame": 23,
+      "sourceFrame": 23,
+      "source": "docs/art-source/motions/production-144/manhattan_cafe/alpha.png",
+      "sourceSha256": "f10b2f2ba5182d8658229fa6ca4c4325373cf6a5f9250fb597f880374d90eb43",
+      "crop": [
+        801,
+        1254,
+        979,
+        1514
+      ],
+      "destination": [
+        412,
+        646,
+        71,
+        104
+      ]
+    }
+  ],
+  "skillRevision": {
+    "scale": 0.1681159420289855,
+    "review": "docs/art-source/motions/skill-revisions-2026-09-11/manhattan_cafe/review.json",
+    "beforeFrames": [
+      "6589ea8bd38b4095dacf04489f8035b528a40f47a3656da62116cae07ac3cb8e",
+      "19a4270c70f08ed4938471ffb0a6dc5b44a907b16a0107ba07bb11beb29701b4",
+      "5d4e8ca43b5f24c3fbe7d3476415395a5fdce0bc8fbc150f9a46e377872a5cf4",
+      "7d136d63adfa953991201643b9fc4c36bef436f9ef6188f1a04a36ff74179246",
+      "fcb2a10c5148e72520a5154f9c4d6f5448394a34ecf77a3334cd66656e01426b",
+      "dedaa92e47b01f366aaba685d2eee570c1ded9582ba2f981056099a6caa4665a",
+      "21485049891f738300040bed6597acd289dcf0225a506cd06111651fed0bc7c1",
+      "9fd26592c30f3428a076f63266a3a4b2c98087f1827579ca8832d46ce9382249",
+      "bd4bd89073724b5cf81744e005a748ae23d7b7a04386217a4a051be859c888a2",
+      "b116264b68c05e3c897eaa1927d670e532c20db9dd5632b249a2ba4f372bba31",
+      "a7934cc8009d55089b44586a11b367463b0706bf4cde1942710c41b4cb1097ae",
+      "1289ff072571bb6574579f7ad8a201ba76ad9b42fc94576ebccb5e152546239c",
+      "82146856683cc410e833b9f9b488522f510ec0859c8b6fa3ef7da395111d614c",
+      "eb5701946abc3d35f1cbc3271ac18f7c6523c52ab18ff86254e74157a7ea9225",
+      "1249d32e7ba7b88bc10b262ea5abae69cc0f2c7f4b283d182a07b8a33c36b5ae",
+      "17c8820efc4951a20faf7c5804bf74b1c5257bc288de3d6903f5969c75b46c73",
+      "3169f49a6d30248a5c8503c61f494ef18fdf931857e788934643a223da2601f9",
+      "46c23b38bbd5f5c5d08167daabf7b515f495f12e87df0bcc8f7cc2b78fa9277d",
+      "c3402ba7a95b6082793ccf02aa08ce1051f40bf03312163dcec670c671a2dfbd",
+      "efbee87dc2e56233537c0c32fa943c711f4bc62f03c98b1f50479fcdb8de0b6a",
+      "b3a99b71c382c13b3fccba01315d7cca971777e753ca3db5caed12558afff179",
+      "1291237abeed4af8e26105b6eb79993619f2b9ddad9455cf87be47ef6f5a2d5a",
+      "727f0395b9986872e721446053d584ec16d50ed01f9ce65c3bcdd63f4308792a",
+      "163ade5835d2f62d9c8f8fa4d2d01cd5607edec6ce462cbf19a71cdc99304dd7"
+    ],
+    "afterFrames": [
+      "6589ea8bd38b4095dacf04489f8035b528a40f47a3656da62116cae07ac3cb8e",
+      "19a4270c70f08ed4938471ffb0a6dc5b44a907b16a0107ba07bb11beb29701b4",
+      "5d4e8ca43b5f24c3fbe7d3476415395a5fdce0bc8fbc150f9a46e377872a5cf4",
+      "7d136d63adfa953991201643b9fc4c36bef436f9ef6188f1a04a36ff74179246",
+      "fcb2a10c5148e72520a5154f9c4d6f5448394a34ecf77a3334cd66656e01426b",
+      "dedaa92e47b01f366aaba685d2eee570c1ded9582ba2f981056099a6caa4665a",
+      "21485049891f738300040bed6597acd289dcf0225a506cd06111651fed0bc7c1",
+      "9fd26592c30f3428a076f63266a3a4b2c98087f1827579ca8832d46ce9382249",
+      "bd4bd89073724b5cf81744e005a748ae23d7b7a04386217a4a051be859c888a2",
+      "b116264b68c05e3c897eaa1927d670e532c20db9dd5632b249a2ba4f372bba31",
+      "a7934cc8009d55089b44586a11b367463b0706bf4cde1942710c41b4cb1097ae",
+      "1289ff072571bb6574579f7ad8a201ba76ad9b42fc94576ebccb5e152546239c",
+      "7908be2a9180a0eef0ec88545586861e06ff3b647c6a5f84feea0d732991778f",
+      "43998f8b8160146b6d774a69131996759316d9515584fcf487209093736032fa",
+      "5cf9ce20f985ad9308298efe773f1235df59bcf1a329ca4d1e9d8123375b467e",
+      "1577f405ffb526c71b2293e5154c046301a2e1f5ba933f2ac6833698a19a32e6",
+      "3169f49a6d30248a5c8503c61f494ef18fdf931857e788934643a223da2601f9",
+      "46c23b38bbd5f5c5d08167daabf7b515f495f12e87df0bcc8f7cc2b78fa9277d",
+      "c3402ba7a95b6082793ccf02aa08ce1051f40bf03312163dcec670c671a2dfbd",
+      "efbee87dc2e56233537c0c32fa943c711f4bc62f03c98b1f50479fcdb8de0b6a",
+      "b3a99b71c382c13b3fccba01315d7cca971777e753ca3db5caed12558afff179",
+      "1291237abeed4af8e26105b6eb79993619f2b9ddad9455cf87be47ef6f5a2d5a",
+      "727f0395b9986872e721446053d584ec16d50ed01f9ce65c3bcdd63f4308792a",
+      "163ade5835d2f62d9c8f8fa4d2d01cd5607edec6ce462cbf19a71cdc99304dd7"
+    ],
+    "unchangedFrames": 20,
+    "changedFrames": [
+      12,
+      13,
+      14,
+      15
+    ]
+  }
+}

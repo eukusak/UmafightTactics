@@ -1,4 +1,5 @@
 import { configureAudio } from '../game/ui/audio';
+import { claimItemReward, type ItemRewardKind } from '../game/engine/items/rewards';
 import { setCarouselTarget } from '../game/engine/rounds/carousel';
 import type { CarouselPoint } from '../game/engine/state';
 import { playSound } from '../game/ui/audio';
@@ -104,6 +105,7 @@ type GameStore = {
   moveUnit: (instanceId: string, position: HexPos | null) => void;
   equip: (unitInstanceId: string, itemInstanceId: string) => void;
   combineItems: (sourceId: string, targetId: string) => void;
+  claimItemReward: (kind: ItemRewardKind, itemId: string) => void;
   unequip: (unitInstanceId: string) => void;
 
   chooseAugment: (augmentId: string) => void;
@@ -344,6 +346,15 @@ export const useGameStore = create<GameStore>((set, get) => ({
     bump(set);
   },
 
+  claimItemReward: (kind, itemId) => {
+    if (get().onlinePlayerId) { onlineBridge.send?.({ action: 'itemReward', kind, item: itemId }); return; }
+    const state = get().match, player = get().human();
+    if (!state || !player) return;
+    const ok = claimItemReward(state, player, kind, itemId);
+    set({ lastError: ok ? null : '보상을 받을 수 없습니다. 준비 단계와 보관함 공간을 확인하세요.' });
+    bump(set);
+  },
+
   unequip: (unitInstanceId) => {
     if (get().onlinePlayerId) return;
     if (get().battleRunning) { set({ lastError: '전투 종료 후 장비를 변경할 수 있습니다.' }); return; }
@@ -575,6 +586,7 @@ function equipErrorMessage(reason: string): string {
     case 'ALREADY_HAS_TRAIT': return '이미 해당 특성을 가지고 있습니다.';
     case 'IN_BATTLE': return '전투 중에는 장착할 수 없습니다.';
     case 'UNIQUE': return '중복 장착할 수 없는 아이템입니다.';
+    case 'UNIQUE_GROUP': return '이미 같은 계열 장비를 장착했습니다. 일반·찬란한 버전도 함께 장착할 수 없습니다.';
     default: return '장착할 수 없습니다.';
   }
 }

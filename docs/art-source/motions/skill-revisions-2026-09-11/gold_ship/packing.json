@@ -1,0 +1,506 @@
+{
+  "format": "uft-baked-frames-v1",
+  "scale": 0.41509433962264153,
+  "anchor": [
+    64,
+    110
+  ],
+  "runtimeSha256": "da0a61e83873c2aabbc982d72fe2ff3b81f9585a789e53b32f69562b447b1dc9",
+  "frames": [
+    {
+      "frame": 0,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/production-144/gold_ship/alpha.png",
+      "sourceSha256": "cc09b16a20a02392ceaefa6a2a59dca1729aefcbd12c3f81bd418961ecc88769",
+      "crop": [
+        40,
+        32,
+        228,
+        260
+      ],
+      "destination": [
+        25,
+        15,
+        78,
+        95
+      ]
+    },
+    {
+      "frame": 1,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/production-144/gold_ship/alpha.png",
+      "sourceSha256": "cc09b16a20a02392ceaefa6a2a59dca1729aefcbd12c3f81bd418961ecc88769",
+      "crop": [
+        300,
+        32,
+        484,
+        260
+      ],
+      "destination": [
+        154,
+        15,
+        76,
+        95
+      ]
+    },
+    {
+      "frame": 2,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/production-144/gold_ship/alpha.png",
+      "sourceSha256": "cc09b16a20a02392ceaefa6a2a59dca1729aefcbd12c3f81bd418961ecc88769",
+      "crop": [
+        553,
+        32,
+        732,
+        260
+      ],
+      "destination": [
+        283,
+        15,
+        74,
+        95
+      ]
+    },
+    {
+      "frame": 3,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/production-144/gold_ship/alpha.png",
+      "sourceSha256": "cc09b16a20a02392ceaefa6a2a59dca1729aefcbd12c3f81bd418961ecc88769",
+      "crop": [
+        819,
+        32,
+        987,
+        260
+      ],
+      "destination": [
+        413,
+        15,
+        70,
+        95
+      ]
+    },
+    {
+      "frame": 4,
+      "sourceFrame": 4,
+      "source": "docs/art-source/motions/production-144/gold_ship/alpha.png",
+      "sourceSha256": "cc09b16a20a02392ceaefa6a2a59dca1729aefcbd12c3f81bd418961ecc88769",
+      "crop": [
+        26,
+        287,
+        238,
+        520
+      ],
+      "destination": [
+        20,
+        141,
+        88,
+        97
+      ]
+    },
+    {
+      "frame": 5,
+      "sourceFrame": 5,
+      "source": "docs/art-source/motions/production-144/gold_ship/alpha.png",
+      "sourceSha256": "cc09b16a20a02392ceaefa6a2a59dca1729aefcbd12c3f81bd418961ecc88769",
+      "crop": [
+        283,
+        290,
+        494,
+        520
+      ],
+      "destination": [
+        148,
+        143,
+        88,
+        95
+      ]
+    },
+    {
+      "frame": 6,
+      "sourceFrame": 6,
+      "source": "docs/art-source/motions/production-144/gold_ship/alpha.png",
+      "sourceSha256": "cc09b16a20a02392ceaefa6a2a59dca1729aefcbd12c3f81bd418961ecc88769",
+      "crop": [
+        532,
+        290,
+        739,
+        520
+      ],
+      "destination": [
+        277,
+        143,
+        86,
+        95
+      ]
+    },
+    {
+      "frame": 7,
+      "sourceFrame": 7,
+      "source": "docs/art-source/motions/production-144/gold_ship/alpha.png",
+      "sourceSha256": "cc09b16a20a02392ceaefa6a2a59dca1729aefcbd12c3f81bd418961ecc88769",
+      "crop": [
+        790,
+        296,
+        996,
+        520
+      ],
+      "destination": [
+        405,
+        145,
+        86,
+        93
+      ]
+    },
+    {
+      "frame": 8,
+      "sourceFrame": 8,
+      "source": "docs/art-source/motions/production-144/gold_ship/alpha.png",
+      "sourceSha256": "cc09b16a20a02392ceaefa6a2a59dca1729aefcbd12c3f81bd418961ecc88769",
+      "crop": [
+        38,
+        544,
+        208,
+        768
+      ],
+      "destination": [
+        28,
+        273,
+        71,
+        93
+      ]
+    },
+    {
+      "frame": 9,
+      "sourceFrame": 9,
+      "source": "docs/art-source/motions/production-144/gold_ship/alpha.png",
+      "sourceSha256": "cc09b16a20a02392ceaefa6a2a59dca1729aefcbd12c3f81bd418961ecc88769",
+      "crop": [
+        293,
+        544,
+        484,
+        768
+      ],
+      "destination": [
+        152,
+        273,
+        79,
+        93
+      ]
+    },
+    {
+      "frame": 10,
+      "sourceFrame": 10,
+      "source": "docs/art-source/motions/production-144/gold_ship/alpha.png",
+      "sourceSha256": "cc09b16a20a02392ceaefa6a2a59dca1729aefcbd12c3f81bd418961ecc88769",
+      "crop": [
+        538,
+        549,
+        788,
+        763
+      ],
+      "destination": [
+        268,
+        277,
+        104,
+        89
+      ]
+    },
+    {
+      "frame": 11,
+      "sourceFrame": 11,
+      "source": "docs/art-source/motions/production-144/gold_ship/alpha.png",
+      "sourceSha256": "cc09b16a20a02392ceaefa6a2a59dca1729aefcbd12c3f81bd418961ecc88769",
+      "crop": [
+        822,
+        548,
+        987,
+        767
+      ],
+      "destination": [
+        414,
+        275,
+        68,
+        91
+      ]
+    },
+    {
+      "frame": 12,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/skill-revisions-2026-09-11/gold_ship/generated.png",
+      "sourceSha256": "1d50a0984183dfcbf4fffb08c740f28790243b729442608aa5bca83e0e72e59d",
+      "crop": [
+        72,
+        56,
+        722,
+        468
+      ],
+      "destination": [
+        6,
+        420,
+        116,
+        74
+      ]
+    },
+    {
+      "frame": 13,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/skill-revisions-2026-09-11/gold_ship/generated.png",
+      "sourceSha256": "1d50a0984183dfcbf4fffb08c740f28790243b729442608aa5bca83e0e72e59d",
+      "crop": [
+        867,
+        23,
+        1500,
+        495
+      ],
+      "destination": [
+        135,
+        410,
+        113,
+        84
+      ]
+    },
+    {
+      "frame": 14,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/skill-revisions-2026-09-11/gold_ship/generated.png",
+      "sourceSha256": "1d50a0984183dfcbf4fffb08c740f28790243b729442608aa5bca83e0e72e59d",
+      "crop": [
+        145,
+        525,
+        733,
+        997
+      ],
+      "destination": [
+        267,
+        410,
+        105,
+        84
+      ]
+    },
+    {
+      "frame": 15,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/skill-revisions-2026-09-11/gold_ship/generated.png",
+      "sourceSha256": "1d50a0984183dfcbf4fffb08c740f28790243b729442608aa5bca83e0e72e59d",
+      "crop": [
+        875,
+        526,
+        1335,
+        997
+      ],
+      "destination": [
+        407,
+        410,
+        82,
+        84
+      ]
+    },
+    {
+      "frame": 16,
+      "sourceFrame": 16,
+      "source": "docs/art-source/motions/production-144/gold_ship/alpha.png",
+      "sourceSha256": "cc09b16a20a02392ceaefa6a2a59dca1729aefcbd12c3f81bd418961ecc88769",
+      "crop": [
+        34,
+        1050,
+        233,
+        1256
+      ],
+      "destination": [
+        22,
+        536,
+        83,
+        86
+      ]
+    },
+    {
+      "frame": 17,
+      "sourceFrame": 17,
+      "source": "docs/art-source/motions/production-144/gold_ship/alpha.png",
+      "sourceSha256": "cc09b16a20a02392ceaefa6a2a59dca1729aefcbd12c3f81bd418961ecc88769",
+      "crop": [
+        299,
+        1071,
+        490,
+        1255
+      ],
+      "destination": [
+        152,
+        546,
+        79,
+        76
+      ]
+    },
+    {
+      "frame": 18,
+      "sourceFrame": 18,
+      "source": "docs/art-source/motions/production-144/gold_ship/alpha.png",
+      "sourceSha256": "cc09b16a20a02392ceaefa6a2a59dca1729aefcbd12c3f81bd418961ecc88769",
+      "crop": [
+        553,
+        1086,
+        716,
+        1259
+      ],
+      "destination": [
+        286,
+        550,
+        68,
+        72
+      ]
+    },
+    {
+      "frame": 19,
+      "sourceFrame": 19,
+      "source": "docs/art-source/motions/production-144/gold_ship/alpha.png",
+      "sourceSha256": "cc09b16a20a02392ceaefa6a2a59dca1729aefcbd12c3f81bd418961ecc88769",
+      "crop": [
+        786,
+        1146,
+        1001,
+        1249
+      ],
+      "destination": [
+        403,
+        579,
+        89,
+        43
+      ]
+    },
+    {
+      "frame": 20,
+      "sourceFrame": 20,
+      "source": "docs/art-source/motions/production-144/gold_ship/alpha.png",
+      "sourceSha256": "cc09b16a20a02392ceaefa6a2a59dca1729aefcbd12c3f81bd418961ecc88769",
+      "crop": [
+        38,
+        1280,
+        209,
+        1519
+      ],
+      "destination": [
+        28,
+        651,
+        71,
+        99
+      ]
+    },
+    {
+      "frame": 21,
+      "sourceFrame": 21,
+      "source": "docs/art-source/motions/production-144/gold_ship/alpha.png",
+      "sourceSha256": "cc09b16a20a02392ceaefa6a2a59dca1729aefcbd12c3f81bd418961ecc88769",
+      "crop": [
+        299,
+        1282,
+        469,
+        1519
+      ],
+      "destination": [
+        156,
+        652,
+        71,
+        98
+      ]
+    },
+    {
+      "frame": 22,
+      "sourceFrame": 22,
+      "source": "docs/art-source/motions/production-144/gold_ship/alpha.png",
+      "sourceSha256": "cc09b16a20a02392ceaefa6a2a59dca1729aefcbd12c3f81bd418961ecc88769",
+      "crop": [
+        553,
+        1283,
+        722,
+        1519
+      ],
+      "destination": [
+        285,
+        652,
+        70,
+        98
+      ]
+    },
+    {
+      "frame": 23,
+      "sourceFrame": 23,
+      "source": "docs/art-source/motions/production-144/gold_ship/alpha.png",
+      "sourceSha256": "cc09b16a20a02392ceaefa6a2a59dca1729aefcbd12c3f81bd418961ecc88769",
+      "crop": [
+        802,
+        1285,
+        991,
+        1519
+      ],
+      "destination": [
+        409,
+        653,
+        78,
+        97
+      ]
+    }
+  ],
+  "skillRevision": {
+    "scale": 0.17846153846153845,
+    "review": "docs/art-source/motions/skill-revisions-2026-09-11/gold_ship/review.json",
+    "beforeFrames": [
+      "aef9d69b7ba628a08f20c325916271e1ee619137aab27aab5c47be073edb8010",
+      "0a3857a81eaaf26ab130aedd2ab396c707b19bafa2b77dd66357a7a8ff2246cc",
+      "576ec6130f5d69199263f6db1c5a9e91cca17c21e099d2776e22915eea8e418e",
+      "9a981af277c670910c1250909f3549ac118e1ad95208478c9c5d5a57356cf99f",
+      "01842cdd05b9a3edee1869621eece5365aee6fdbd008c61842ffb5e3216493ca",
+      "9eab13e201bbfe9eed031f67b6c7606cb0cd02e1f447d95b9a129c8c60640286",
+      "2bf1b8284cddb1798ee4b66583eca421d32318ef4890f693c116d204ab44ce9d",
+      "80cad7479808cd9a44a5625aa86eba220c7be6781ac13534cd818b370e4e904e",
+      "489f7932b1bfcf374899d1bfe3badf34eb7e8fd7ef1d400021e60b8d450e9828",
+      "f3475cf0c0c82c837081532ca07007b2075574d19cc46af9a7384b450134c42f",
+      "1056c1102d354e6e8a4d2899acda5e93fc860c26b9986b53e2c10ea3f0a99281",
+      "eca1c68772376a75f13eb3c4c9a2b872182b5741b857d15d9410f3f5550825bc",
+      "e9f5040ffc54e978998923925e62e28eb692ee34b1a919e65f606acc506257eb",
+      "371c4331364826fc68d9a4caf5d5436b40c9cd1c3a96f2feb6d1babf384ccf12",
+      "c17b873941405bd785d06243138cd65aaf0b1ce6c7a41340c43705293fb435a3",
+      "ebb04781b1224cc885d25a4bed71efdfecf373dd16bbb1e3769111160059e356",
+      "47bafb92472f5d40cae5e0bab53c80b38d272a7f9059cee7a0e8314974a8d230",
+      "95862078ed1cff2cbfeaf228508baa176ed251a8f99d51e665f77b74b532d689",
+      "2b3e0a0573fb76ba576eb51d71cfe5abfd095b95e17f39214d6ccf8a262735ed",
+      "5bda79c8d3c962b9d792973fe3c8bb54fa094326a0f8257ed5a39840d60aa578",
+      "bf268d34ccfc2ba94f19f98e455062ac02dfd59296b5a77400488c85fc7b1282",
+      "648584c2b99b467327879c7a586c5cf05560723286cb47ad91ea350592560f04",
+      "bfa169657d3e8ff24aad2400d788d0fc802ade1569f02f47763a853e6f53fea3",
+      "5489562e151d8d347c73cd4afb1bda51fab189990763e9a07ed933073012bff6"
+    ],
+    "afterFrames": [
+      "aef9d69b7ba628a08f20c325916271e1ee619137aab27aab5c47be073edb8010",
+      "0a3857a81eaaf26ab130aedd2ab396c707b19bafa2b77dd66357a7a8ff2246cc",
+      "576ec6130f5d69199263f6db1c5a9e91cca17c21e099d2776e22915eea8e418e",
+      "9a981af277c670910c1250909f3549ac118e1ad95208478c9c5d5a57356cf99f",
+      "01842cdd05b9a3edee1869621eece5365aee6fdbd008c61842ffb5e3216493ca",
+      "9eab13e201bbfe9eed031f67b6c7606cb0cd02e1f447d95b9a129c8c60640286",
+      "2bf1b8284cddb1798ee4b66583eca421d32318ef4890f693c116d204ab44ce9d",
+      "80cad7479808cd9a44a5625aa86eba220c7be6781ac13534cd818b370e4e904e",
+      "489f7932b1bfcf374899d1bfe3badf34eb7e8fd7ef1d400021e60b8d450e9828",
+      "f3475cf0c0c82c837081532ca07007b2075574d19cc46af9a7384b450134c42f",
+      "1056c1102d354e6e8a4d2899acda5e93fc860c26b9986b53e2c10ea3f0a99281",
+      "eca1c68772376a75f13eb3c4c9a2b872182b5741b857d15d9410f3f5550825bc",
+      "e8c954dba7b69b04a185a90b64086440688d05cbf6107d4dccb0448378a2f4b4",
+      "8ccecb9e8952b056ece2d3c473bafacd0df4cdc57bc87f0fd0d696c3d2579f37",
+      "ab1ab313f7df4ec3eb5a9c04b24e19243627bba5f849efbbf1b867105f9935e0",
+      "d0bd4bf47fdef4c4a866b36d38aa237c12865f920bf0f1f559c6a9a8925d0ecd",
+      "47bafb92472f5d40cae5e0bab53c80b38d272a7f9059cee7a0e8314974a8d230",
+      "95862078ed1cff2cbfeaf228508baa176ed251a8f99d51e665f77b74b532d689",
+      "2b3e0a0573fb76ba576eb51d71cfe5abfd095b95e17f39214d6ccf8a262735ed",
+      "5bda79c8d3c962b9d792973fe3c8bb54fa094326a0f8257ed5a39840d60aa578",
+      "bf268d34ccfc2ba94f19f98e455062ac02dfd59296b5a77400488c85fc7b1282",
+      "648584c2b99b467327879c7a586c5cf05560723286cb47ad91ea350592560f04",
+      "bfa169657d3e8ff24aad2400d788d0fc802ade1569f02f47763a853e6f53fea3",
+      "5489562e151d8d347c73cd4afb1bda51fab189990763e9a07ed933073012bff6"
+    ],
+    "unchangedFrames": 20,
+    "changedFrames": [
+      12,
+      13,
+      14,
+      15
+    ]
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "mode": "built-in image_gen",
+  "prompt": "Create a transparent PNG cutout sprite sheet using this character reference. Four full-body chibi poses in a 2 by 2 grid on an EMPTY TRANSPARENT ALPHA background, with wide empty gutters. Preserve bubble_gum_fellow's hair, face, ears, costume and accessories. Four poses in reading order: pull hands to the chest charging two small crests; draw one arm back and brace the other while crests enter the gloves; deliver a straight first strike followed by a visible second trailing strike accent; return to an empowered ready stance. Same proportions across poses, crisp cel-shaded game art, compact effects within each cell. No labels, no ground or backdrop. Transparency is essential: do not draw a checkerboard.",
+  "references": [
+    "public/assets/motions/bubble_gum_fellow.png"
+  ],
+  "referenceCommit": "3c950f3ce3476b152f2ad3d99fd296327a3c82bf",
+  "skillSignature": "f0340343990d3a6793511ebf45bcf0089bdb87a7df500c129c2c52a7569fb538"
+}
