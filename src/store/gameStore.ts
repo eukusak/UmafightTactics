@@ -95,6 +95,7 @@ type GameStore = {
   continueMatch: () => boolean;
   hasSavedMatch: () => boolean;
   abandonMatch: () => void;
+  exitToMainMenu: () => void;
 
   human: () => PlayerState | null;
   viewedPlayer: () => PlayerState | null;
@@ -191,6 +192,20 @@ export const useGameStore = create<GameStore>((set, get) => ({
   },
 
   hasSavedMatch: () => hasSave(),
+
+  exitToMainMenu: () => {
+    if (get().onlinePlayerId) return;
+    const { director } = get();
+    // Save an already resolved battle once; never persist a half-settled round.
+    if (director?.hasPendingSettlement) director.settleRound();
+    if (director && !saveToStorage(director)) {
+      set({ lastError: '진행 상황을 저장하지 못했습니다. 저장 공간을 확인한 뒤 다시 시도해 주세요.' });
+      return;
+    }
+    set({ director: null, match: null, screen: 'MAIN_MENU', battleFrames: null, scoutFrames: {},
+      battleRunning: false, battleComplete: false, battleTime: 0, prepRemaining: null, prepPaused: false,
+      selectedUnitId: null, spectating: null, lastError: null });
+  },
 
   abandonMatch: () => {
     const online = !!get().onlinePlayerId;

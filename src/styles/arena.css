@@ -394,3 +394,7 @@ button.trait-row { display:flex; align-items:center; width:100%; text-align:left
 .item-tools label { display:block; margin-top:8px; }
 .item-tools select,.item-tools button { width:100%; }
 .scouting-banner { position:absolute; top:58px; left:390px; right:390px; z-index:1500; text-align:center; background:#152c3de8; padding:10px; border:1px solid var(--gold); border-radius:10px; }
+
+/* Remains reachable above draft, augment and battle-result overlays. */
+.solo-menu-exit { position:absolute; top:18px; right:24px; z-index:1500; }
+.solo-menu-exit button { background:#142c40; padding:10px 16px; }
