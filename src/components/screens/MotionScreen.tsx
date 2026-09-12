@@ -4,8 +4,9 @@ import { ALL_UNITS, getUnitDef } from '../../game/engine/roster';
 import { PVE_UNIT_IDS } from '../../game/engine/battle/pve-units';
 import { FRAME_SHEETS, frameSheetUrl, frameGeometry, motionFrame, skillMotionFrame } from '../../game/ui/frame-animation';
 import { skillTimeline } from '../../game/engine/battle/skill-timeline';
-import { portraitUrl, standeeUrl, type AnimationName } from '../../game/ui/art';
+import { cutinUrl, portraitUrl, standeeUrl, type AnimationName } from '../../game/ui/art';
 import { useGameStore } from '../../store/gameStore';
+import { drawLegendaryFeedback, legendaryFeedback } from '../../game/ui/legendary-skill-feedback';
 import { COST_SKILL_PRESENTATION } from '../../game/ui/cost-skill-presentation';
 
 const ACTIONS: Record<AnimationName, string> = { idle: '대기', run: '달리기', basic_attack: '공격', skill_cast: '스킬', ko: '쓰러짐', victory: '승리' };
@@ -27,6 +28,7 @@ export function MotionScreen(): JSX.Element {
     let alive = true;
     class Preview extends Phaser.Scene {
       private sprites: Phaser.GameObjects.Image[] = [];
+      private echoes: Phaser.GameObjects.Image[] = [];
       private clock = 0;
       private lastAction: AnimationName = 'idle';
       private wasPaused = false;
@@ -42,6 +44,10 @@ export function MotionScreen(): JSX.Element {
         this.add.ellipse(360, 468, 180, 38, 0x07131e, .6);
         const geometry = frameGeometry(id, 420);
         this.sprites.push(this.add.image(360, 465, 'preview-body').setOrigin(geometry.originX, geometry.originY).setDisplaySize(geometry.width, geometry.height));
+        if (legendaryFeedback(id, getUnitDef(id).cost, 0)) for (let i = 0; i < 2; i++) {
+          this.echoes.push(this.add.image(360, 465, 'preview-body', 14).setOrigin(geometry.originX, geometry.originY)
+            .setDisplaySize(geometry.width, geometry.height).setAlpha(0).setDepth(-1));
+        }
         if (alive) setStatus(FRAME_SHEETS[id] ? '프레임 애니메이션 · 6종 모션 · 24개 원화' : '프레임 제작 대기 · 현재 원화 미리보기');
       }
       override update(_t: number, dt: number): void {
@@ -56,6 +62,12 @@ export function MotionScreen(): JSX.Element {
         const skill = getUnitDef(id).skill;
         const style = COST_SKILL_PRESENTATION[getUnitDef(id).cost];
         this.pulses.clear();
+        const releaseAge = cycle - (skillTimeline(skill).find(e => e.effect.kind === 'DAMAGE')?.at ?? Infinity);
+        this.echoes.forEach((echo, i) => {
+          const p = releaseAge / .22;
+          echo.setFlipX(c.facing < 0).setX(360 - c.facing * (i + 1) * (3 + Math.max(0, p) * 7) * 3)
+            .setAlpha(c.action === 'skill_cast' && p >= 0 && p < 1 ? (1 - p) * .18 : 0);
+        });
         for (const sprite of this.sprites) {
           sprite.setFlipX(c.facing < 0);
           if (FRAME_SHEETS[id]) sprite.setFrame(c.action === 'skill_cast'
@@ -70,6 +82,10 @@ export function MotionScreen(): JSX.Element {
               this.pulses.lineStyle(style.stroke * 1.5, color, 1 - age / style.duration);
               const effect = skillTimeline(skill).find(e => Math.abs(e.at - at) < 1e-8 && e.effect.shape)?.effect;
               const x = sprite.x, y = sprite.y - 130, direction = c.facing;
+              const feedbackTargets = id === 'taiki_shuttle'
+                ? [{ x: x + direction * 90, y: y - 60 }, { x: x + direction * 185, y: y + 15 }]
+                : [{ x: x + direction * 185, y }];
+              drawLegendaryFeedback(this.pulses, id, getUnitDef(id).cost, { x, y }, feedbackTargets, age, 1.5);
               if (effect?.shape === 'LINE') this.pulses.lineBetween(x, y, x + direction * 250, y - 25);
               else if (effect?.shape === 'CONE') {
                 for (const offset of [-65, 0, 65]) this.pulses.lineBetween(x, y, x + direction * 200, y + offset);
@@ -98,6 +114,7 @@ export function MotionScreen(): JSX.Element {
     return () => { alive = false; game.destroy(true); };
   }, [id]);
 
+  const cutin = cutinUrl(id, getUnitDef(id).cost);
   return <div className="menu-screen motion-screen" style={{ padding: 55, justifyContent: 'flex-start' }}>
     <div style={{ display: 'flex', width: '100%', alignItems: 'center', justifyContent: 'space-between' }}>
       <h1 style={{ fontFamily: 'var(--font-display)', fontWeight: 400 }}>기물 모션 미리보기</h1>
@@ -111,6 +128,9 @@ export function MotionScreen(): JSX.Element {
           {Object.values(PVE_UNIT_IDS).map(key => <option key={key} value={key}>{getUnitDef(key).nameKo} (PvE)</option>)}
         </select></label>
         <p>{status}</p>
+        {cutin && <details className="legendary-cutin-preview"><summary>전설 컷신</summary>
+          <img src={cutin} alt={getUnitDef(id).nameKo + ' 전설 컷신'} style={{ width: '100%', height: 'auto', maxHeight: 220, objectFit: 'contain' }} />
+        </details>}
         <p className="motion-cost">{getUnitDef(id).cost}코스트 · {COST_SKILL_PRESENTATION[getUnitDef(id).cost].label} 이펙트</p>
         <p className="motion-skill-name" style={{ color: '#ffe4a6', fontWeight: 700 }}>{getUnitDef(id).skill.displayName}</p>
         <p className="motion-skill-description" style={{ fontSize: 14, lineHeight: 1.6 }}>{getUnitDef(id).skill.description}</p>

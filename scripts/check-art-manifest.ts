@@ -55,8 +55,8 @@ for (const c of manifest.characters) {
     expect: frames ? { w: frames.frameWidth * frames.columns, h: frames.frameHeight * frames.rows } : { w: 1280, h: 768 } });
   if (c.cutinRequired) {
     checks.push({
-      rel: c.cutinPortrait ?? `characters/cutin/${c.id}.png`, label: `컷인 ${c.nameKo}`,
-      priority: 'P0', expect: c.cutinPortrait ? { w: 256, h: 256 } : { w: 960, h: 540 },
+      rel: `characters/cutin/${c.id}.png`, label: `컷인 ${c.nameKo}`,
+      priority: 'P0', expect: { w: 960, h: 540 },
     });
   }
 }

@@ -39,7 +39,8 @@ export function skillMotionFrame(skill: SkillDef, elapsed: number, releaseFrame 
   if (skill.choreography?.motion) {
     const releases = [...new Set(skillTimeline(skill).map(e => e.at))];
     const last = releases.at(-1) ?? windup;
-    if (time >= last + (skill.choreography.recovery ?? .3)) return 15;
+    const crispRelease = skill.id === 'skill_buena_vista' || skill.id === 'skill_taiki_shuttle';
+    if (time >= last + (crispRelease ? Math.min(.16, skill.choreography.recovery ?? .3) : skill.choreography.recovery ?? .3)) return 15;
     if (skill.choreography.motion === 'CHANNEL') return 14;
     const next = releases.find(at => at > time + 1e-8);
     if (skill.choreography.motion === 'PULSE' && next !== undefined && next - time < .1) return 13;

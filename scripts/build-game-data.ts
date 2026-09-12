@@ -847,8 +847,6 @@ const manifest: ArtManifest = {
     portrait: `portraits/${u.id}.png`,
     battleSheet: `characters/${u.id}.png`,
     cutinRequired: u.activeS1 && u.cost === 5,
-    ...(['symboli_kris_s', 'symboli_rudolf', 'buena_vista'].includes(u.id)
-      ? { cutinPortrait: `portraits/${u.id}.png` } : {}),
   })),
   items: [...new Set(ALL_ITEM_DEFS.map((i) => `items/${i.isComponent ? 'components' : 'complete'}/${i.iconId ?? i.id}.png`))],
   traits: TRAIT_DEFS.map((t) => `traits/${t.id}.png`),

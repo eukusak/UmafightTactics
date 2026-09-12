@@ -6,6 +6,10 @@ const deliveredFiles = new Set<string>(deliveredRaw);
 export function assetUrl(relative: string): string | null {
   return deliveredFiles.has(relative) ? versionedAssetUrl(`/assets/${relative}`) : null;
 }
+/** Only current legendary units can load a cinematic cut-in. */
+export function cutinUrl(id: string, cost: number): string | null {
+  return cost === 5 ? assetUrl(`characters/cutin/${id}.png`) : null;
+}
 export function portraitUrl(id: string): string | null {
   return assetUrl(`portraits/${id}.png`);
 }
