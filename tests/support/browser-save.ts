@@ -34,6 +34,7 @@ if (mode === 'patch-tools') {
   p.bench.push(extra);
 }
 if (mode === 'item-rewards') { p.items = []; p.pendingGrants = [{ kind: 'RADIANT_CHOICE', count: 1 }, { kind: 'ARTIFACT_CHOICE', count: 1 }]; }
+if (mode === 'arena-day') { state.stage = 5; state.round = 6; p.bench[0].position = { q: 3, r: 0 }; p.board.push(p.bench.shift()!); }
 if (mode === 'six-shop') p.augments.push('shop_extra_slot');
 if (mode === 'trait-chase') {
   p.level = 9;

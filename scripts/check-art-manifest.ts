@@ -9,6 +9,7 @@
 import { existsSync, readFileSync, statSync } from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { assertCompletePng } from './validate-png';
 import type { ArtManifest } from '../src/game/engine/types';
 import { FRAME_SHEETS } from '../src/game/ui/frame-animation';
 
@@ -97,6 +98,13 @@ for (const check of checks) {
     malformed.push(
       `${check.rel}: ${size.w}×${size.h} (기대 ${check.expect.w}×${check.expect.h})`,
     );
+  }
+  if (check.rel.startsWith('boards/')) {
+    try {
+      await assertCompletePng(file);
+    } catch (error) {
+      malformed.push(check.rel + ': PNG 전체 디코딩 실패 (' + String(error) + ')');
+    }
   }
   // Backgrounds are the only assets allowed to be opaque.
   const needsAlpha = !check.rel.startsWith('boards/');
