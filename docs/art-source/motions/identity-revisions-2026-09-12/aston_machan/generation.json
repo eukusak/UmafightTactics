@@ -11,5 +11,11 @@
     "referenceAtlas": "docs/art-source/motions/identity-revisions-2026-09-12/aston_machan/generated.png",
     "prompt": "Edit the SECOND 24-pose sprite sheet with the FIRST portrait as the identity reference. Match the portrait hairstyle: a wavy chestnut chin-length bob plus a clearly visible HIGH SIDE PONYTAIL on the viewer RIGHT, tied beside the crown with a red ribbon. Keep green eyes. Do not confuse the side ponytail with the horse tail near the waist. Change that identity detail in EVERY pose consistently. Preserve all body poses, outfits and skill effects, exactly 4 columns by 6 rows, 24 separate full bodies with empty gutters. Transparent PNG cutouts, alpha zero empty space.",
     "finalEditPrompt": "Make the background transparent. Preserve every character and effect. Export a transparent PNG cutout, with alpha zero in the empty space."
+  },
+  "gutterRevision": {
+    "referenceCommit": "5b2688fe7f4086dd55b55e4a7fe5e838b4e7cff4",
+    "referenceAtlas": "docs/art-source/motions/identity-revisions-2026-09-12/aston_machan/generated.png",
+    "prompt": "Shorten ONLY the right-reaching orange skill effect in row 4, column 2 so it stays well within that cell. Leave a clearly empty transparent gutter before the character in row 4, column 3. Preserve all 24 characters, faces, high side ponytails, poses and the other effects unchanged in their existing 4-column 6-row layout. Export transparent PNG cutouts with actual alpha zero empty space.",
+    "alphaEditPrompt": "Make the background transparent. Preserve every character and effect. Export a transparent PNG cutout, with alpha zero in the empty space."
   }
 }

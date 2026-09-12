@@ -4,8 +4,8 @@
   "identityReview": "Compared the portrait and all 24 final poses on a neutral background. Wavy chestnut chin-length bob, green eyes and high viewer-right side ponytail with red ribbon beside crown.",
   "skillReview": "All six action rows reviewed. Row 4 preserves twin_orbit preparation, release in column 3 and recovery; game skill data and timeline unchanged.",
   "alphaReview": {
-    "zero": 0.5472494761149088,
-    "solid": 0.3088213602701823
+    "zero": 0.5828399658203125,
+    "solid": 0.31920496622721356
   },
   "cells": [
     [
@@ -89,11 +89,11 @@
     [
       256,
       768,
-      553,
+      512,
       1021
     ],
     [
-      553,
+      512,
       768,
       768,
       1021
@@ -154,10 +154,9 @@
     ]
   ],
   "reviewedEffectBoundaryFrames": [
-    13,
     14
   ],
-  "boundaryReview": "Reviewed flagged boundary pixels: only soft antialiasing or effect glow reaches the cut; no opaque face, hair silhouette, limb or body is clipped.",
+  "boundaryReview": "All 24 poses reviewed. Row 4 column 2 effect shortened to leave a clear gutter before column 3; no neighboring effect fragments in the runtime skill frame. Only seven soft outer glow pixels touch frame 14 boundary, without opaque clipping.",
   "reviewedAt": "2026-09-12",
   "detailRevisionReviewedAt": "2026-09-12"
 }

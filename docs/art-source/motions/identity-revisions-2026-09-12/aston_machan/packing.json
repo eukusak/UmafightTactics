@@ -8,428 +8,428 @@
     64,
     110
   ],
-  "scale": 0.3972602739726027,
-  "runtimeSha256": "1959d15a003ac15aba78e387a8b5b233ff294b2fc2617fdc33633ccbd5a69da9",
+  "scale": 0.40784313725490196,
+  "runtimeSha256": "125a23f2e5eb38231d1c9610246c82565c1c52f738e5d9204cfe31d1b5761218",
   "frames": [
     {
       "frame": 0,
       "sourceFrame": 0,
       "source": "docs/art-source/motions/identity-revisions-2026-09-12/aston_machan/generated.png",
-      "sourceSha256": "b4b9b170445737f3a63164923ddaeeb3e13092dcda6f30850f14992af74bcf93",
+      "sourceSha256": "ac536f05a097d2f36a58a934d02c8e39b3ad7503355c45fd27b25fe03ed898ab",
       "crop": [
-        54,
-        7,
-        226,
-        240
+        55,
+        8,
+        227,
+        241
       ],
       "destination": [
-        30,
-        17,
-        68,
-        93
+        29,
+        15,
+        70,
+        95
       ]
     },
     {
       "frame": 1,
       "sourceFrame": 1,
       "source": "docs/art-source/motions/identity-revisions-2026-09-12/aston_machan/generated.png",
-      "sourceSha256": "b4b9b170445737f3a63164923ddaeeb3e13092dcda6f30850f14992af74bcf93",
+      "sourceSha256": "ac536f05a097d2f36a58a934d02c8e39b3ad7503355c45fd27b25fe03ed898ab",
       "crop": [
-        309,
+        310,
         7,
         482,
-        240
+        241
       ],
       "destination": [
         157,
-        17,
-        69,
-        93
+        15,
+        70,
+        95
       ]
     },
     {
       "frame": 2,
       "sourceFrame": 2,
       "source": "docs/art-source/motions/identity-revisions-2026-09-12/aston_machan/generated.png",
-      "sourceSha256": "b4b9b170445737f3a63164923ddaeeb3e13092dcda6f30850f14992af74bcf93",
+      "sourceSha256": "ac536f05a097d2f36a58a934d02c8e39b3ad7503355c45fd27b25fe03ed898ab",
       "crop": [
-        565,
+        566,
         7,
         738,
-        240
+        241
       ],
       "destination": [
         285,
-        17,
-        69,
-        93
+        15,
+        70,
+        95
       ]
     },
     {
       "frame": 3,
       "sourceFrame": 3,
       "source": "docs/art-source/motions/identity-revisions-2026-09-12/aston_machan/generated.png",
-      "sourceSha256": "b4b9b170445737f3a63164923ddaeeb3e13092dcda6f30850f14992af74bcf93",
+      "sourceSha256": "ac536f05a097d2f36a58a934d02c8e39b3ad7503355c45fd27b25fe03ed898ab",
       "crop": [
         822,
         7,
         994,
-        240
+        241
       ],
       "destination": [
-        414,
-        17,
-        68,
-        93
+        413,
+        15,
+        70,
+        95
       ]
     },
     {
       "frame": 4,
       "sourceFrame": 4,
       "source": "docs/art-source/motions/identity-revisions-2026-09-12/aston_machan/generated.png",
-      "sourceSha256": "b4b9b170445737f3a63164923ddaeeb3e13092dcda6f30850f14992af74bcf93",
+      "sourceSha256": "ac536f05a097d2f36a58a934d02c8e39b3ad7503355c45fd27b25fe03ed898ab",
       "crop": [
-        43,
-        258,
-        239,
+        44,
+        259,
+        240,
         499
       ],
       "destination": [
-        25,
-        142,
-        78,
-        96
+        24,
+        140,
+        80,
+        98
       ]
     },
     {
       "frame": 5,
       "sourceFrame": 5,
       "source": "docs/art-source/motions/identity-revisions-2026-09-12/aston_machan/generated.png",
-      "sourceSha256": "b4b9b170445737f3a63164923ddaeeb3e13092dcda6f30850f14992af74bcf93",
+      "sourceSha256": "ac536f05a097d2f36a58a934d02c8e39b3ad7503355c45fd27b25fe03ed898ab",
       "crop": [
         299,
-        262,
+        263,
         495,
-        497
+        498
       ],
       "destination": [
-        153,
-        145,
-        78,
-        93
+        152,
+        142,
+        80,
+        96
       ]
     },
     {
       "frame": 6,
       "sourceFrame": 6,
       "source": "docs/art-source/motions/identity-revisions-2026-09-12/aston_machan/generated.png",
-      "sourceSha256": "b4b9b170445737f3a63164923ddaeeb3e13092dcda6f30850f14992af74bcf93",
+      "sourceSha256": "ac536f05a097d2f36a58a934d02c8e39b3ad7503355c45fd27b25fe03ed898ab",
       "crop": [
         556,
-        262,
+        263,
         750,
         502
       ],
       "destination": [
-        281,
-        143,
-        77,
-        95
+        280,
+        141,
+        79,
+        97
       ]
     },
     {
       "frame": 7,
       "sourceFrame": 7,
       "source": "docs/art-source/motions/identity-revisions-2026-09-12/aston_machan/generated.png",
-      "sourceSha256": "b4b9b170445737f3a63164923ddaeeb3e13092dcda6f30850f14992af74bcf93",
+      "sourceSha256": "ac536f05a097d2f36a58a934d02c8e39b3ad7503355c45fd27b25fe03ed898ab",
       "crop": [
-        815,
-        258,
+        814,
+        259,
         1006,
         501
       ],
       "destination": [
-        410,
-        141,
-        76,
-        97
+        409,
+        139,
+        78,
+        99
       ]
     },
     {
       "frame": 8,
       "sourceFrame": 8,
       "source": "docs/art-source/motions/identity-revisions-2026-09-12/aston_machan/generated.png",
-      "sourceSha256": "b4b9b170445737f3a63164923ddaeeb3e13092dcda6f30850f14992af74bcf93",
+      "sourceSha256": "ac536f05a097d2f36a58a934d02c8e39b3ad7503355c45fd27b25fe03ed898ab",
       "crop": [
-        43,
+        44,
         513,
-        223,
+        225,
         753
       ],
       "destination": [
-        28,
-        271,
-        72,
-        95
+        27,
+        268,
+        74,
+        98
       ]
     },
     {
       "frame": 9,
       "sourceFrame": 9,
       "source": "docs/art-source/motions/identity-revisions-2026-09-12/aston_machan/generated.png",
-      "sourceSha256": "b4b9b170445737f3a63164923ddaeeb3e13092dcda6f30850f14992af74bcf93",
+      "sourceSha256": "ac536f05a097d2f36a58a934d02c8e39b3ad7503355c45fd27b25fe03ed898ab",
       "crop": [
-        307,
+        308,
         513,
-        482,
+        483,
         754
       ],
       "destination": [
-        157,
-        270,
-        70,
-        96
+        156,
+        268,
+        71,
+        98
       ]
     },
     {
       "frame": 10,
       "sourceFrame": 10,
       "source": "docs/art-source/motions/identity-revisions-2026-09-12/aston_machan/generated.png",
-      "sourceSha256": "b4b9b170445737f3a63164923ddaeeb3e13092dcda6f30850f14992af74bcf93",
+      "sourceSha256": "ac536f05a097d2f36a58a934d02c8e39b3ad7503355c45fd27b25fe03ed898ab",
       "crop": [
         553,
-        515,
+        514,
         746,
         754
       ],
       "destination": [
-        281,
-        271,
-        77,
-        95
+        280,
+        268,
+        79,
+        98
       ]
     },
     {
       "frame": 11,
       "sourceFrame": 11,
       "source": "docs/art-source/motions/identity-revisions-2026-09-12/aston_machan/generated.png",
-      "sourceSha256": "b4b9b170445737f3a63164923ddaeeb3e13092dcda6f30850f14992af74bcf93",
+      "sourceSha256": "ac536f05a097d2f36a58a934d02c8e39b3ad7503355c45fd27b25fe03ed898ab",
       "crop": [
         822,
         515,
-        1000,
+        998,
         754
       ],
       "destination": [
         412,
-        271,
-        71,
-        95
+        269,
+        72,
+        97
       ]
     },
     {
       "frame": 12,
       "sourceFrame": 12,
       "source": "docs/art-source/motions/identity-revisions-2026-09-12/aston_machan/generated.png",
-      "sourceSha256": "b4b9b170445737f3a63164923ddaeeb3e13092dcda6f30850f14992af74bcf93",
+      "sourceSha256": "ac536f05a097d2f36a58a934d02c8e39b3ad7503355c45fd27b25fe03ed898ab",
       "crop": [
-        28,
-        781,
+        32,
+        782,
         231,
-        1004
+        1005
       ],
       "destination": [
         23,
-        405,
+        403,
         81,
-        89
+        91
       ]
     },
     {
       "frame": 13,
       "sourceFrame": 13,
       "source": "docs/art-source/motions/identity-revisions-2026-09-12/aston_machan/generated.png",
-      "sourceSha256": "b4b9b170445737f3a63164923ddaeeb3e13092dcda6f30850f14992af74bcf93",
+      "sourceSha256": "ac536f05a097d2f36a58a934d02c8e39b3ad7503355c45fd27b25fe03ed898ab",
       "crop": [
         261,
-        776,
-        553,
-        1004
+        777,
+        503,
+        1005
       ],
       "destination": [
-        134,
-        403,
-        116,
-        91
+        142,
+        401,
+        99,
+        93
       ]
     },
     {
       "frame": 14,
       "sourceFrame": 14,
       "source": "docs/art-source/motions/identity-revisions-2026-09-12/aston_machan/generated.png",
-      "sourceSha256": "b4b9b170445737f3a63164923ddaeeb3e13092dcda6f30850f14992af74bcf93",
+      "sourceSha256": "ac536f05a097d2f36a58a934d02c8e39b3ad7503355c45fd27b25fe03ed898ab",
       "crop": [
-        553,
-        777,
+        555,
+        778,
         768,
-        1006
+        1007
       ],
       "destination": [
-        277,
-        403,
-        85,
-        91
+        276,
+        401,
+        87,
+        93
       ]
     },
     {
       "frame": 15,
       "sourceFrame": 15,
       "source": "docs/art-source/motions/identity-revisions-2026-09-12/aston_machan/generated.png",
-      "sourceSha256": "b4b9b170445737f3a63164923ddaeeb3e13092dcda6f30850f14992af74bcf93",
+      "sourceSha256": "ac536f05a097d2f36a58a934d02c8e39b3ad7503355c45fd27b25fe03ed898ab",
       "crop": [
-        819,
-        777,
-        998,
-        1008
+        820,
+        779,
+        997,
+        1009
       ],
       "destination": [
         412,
-        402,
-        71,
-        92
+        400,
+        72,
+        94
       ]
     },
     {
       "frame": 16,
       "sourceFrame": 16,
       "source": "docs/art-source/motions/identity-revisions-2026-09-12/aston_machan/generated.png",
-      "sourceSha256": "b4b9b170445737f3a63164923ddaeeb3e13092dcda6f30850f14992af74bcf93",
+      "sourceSha256": "ac536f05a097d2f36a58a934d02c8e39b3ad7503355c45fd27b25fe03ed898ab",
       "crop": [
-        32,
+        31,
         1021,
         238,
-        1252
+        1253
       ],
       "destination": [
-        23,
-        530,
-        82,
-        92
+        22,
+        527,
+        84,
+        95
       ]
     },
     {
       "frame": 17,
       "sourceFrame": 17,
       "source": "docs/art-source/motions/identity-revisions-2026-09-12/aston_machan/generated.png",
-      "sourceSha256": "b4b9b170445737f3a63164923ddaeeb3e13092dcda6f30850f14992af74bcf93",
+      "sourceSha256": "ac536f05a097d2f36a58a934d02c8e39b3ad7503355c45fd27b25fe03ed898ab",
       "crop": [
-        295,
-        1043,
+        296,
+        1044,
         502,
-        1245
+        1246
       ],
       "destination": [
-        151,
-        542,
-        82,
-        80
+        150,
+        540,
+        84,
+        82
       ]
     },
     {
       "frame": 18,
       "sourceFrame": 18,
       "source": "docs/art-source/motions/identity-revisions-2026-09-12/aston_machan/generated.png",
-      "sourceSha256": "b4b9b170445737f3a63164923ddaeeb3e13092dcda6f30850f14992af74bcf93",
+      "sourceSha256": "ac536f05a097d2f36a58a934d02c8e39b3ad7503355c45fd27b25fe03ed898ab",
       "crop": [
         549,
-        1044,
+        1045,
         741,
-        1237
+        1238
       ],
       "destination": [
-        282,
-        545,
-        76,
-        77
+        281,
+        543,
+        78,
+        79
       ]
     },
     {
       "frame": 19,
       "sourceFrame": 19,
       "source": "docs/art-source/motions/identity-revisions-2026-09-12/aston_machan/generated.png",
-      "sourceSha256": "b4b9b170445737f3a63164923ddaeeb3e13092dcda6f30850f14992af74bcf93",
+      "sourceSha256": "ac536f05a097d2f36a58a934d02c8e39b3ad7503355c45fd27b25fe03ed898ab",
       "crop": [
         782,
         1115,
-        1010,
-        1240
+        1008,
+        1241
       ],
       "destination": [
         402,
-        572,
-        91,
-        50
+        571,
+        92,
+        51
       ]
     },
     {
       "frame": 20,
       "sourceFrame": 20,
       "source": "docs/art-source/motions/identity-revisions-2026-09-12/aston_machan/generated.png",
-      "sourceSha256": "b4b9b170445737f3a63164923ddaeeb3e13092dcda6f30850f14992af74bcf93",
+      "sourceSha256": "ac536f05a097d2f36a58a934d02c8e39b3ad7503355c45fd27b25fe03ed898ab",
       "crop": [
         45,
         1265,
-        228,
-        1518
+        229,
+        1520
       ],
       "destination": [
-        27,
-        649,
-        73,
-        101
+        26,
+        646,
+        75,
+        104
       ]
     },
     {
       "frame": 21,
       "sourceFrame": 21,
       "source": "docs/art-source/motions/identity-revisions-2026-09-12/aston_machan/generated.png",
-      "sourceSha256": "b4b9b170445737f3a63164923ddaeeb3e13092dcda6f30850f14992af74bcf93",
+      "sourceSha256": "ac536f05a097d2f36a58a934d02c8e39b3ad7503355c45fd27b25fe03ed898ab",
       "crop": [
         300,
-        1271,
+        1272,
         496,
         1520
       ],
       "destination": [
-        153,
-        651,
-        78,
-        99
+        152,
+        649,
+        80,
+        101
       ]
     },
     {
       "frame": 22,
       "sourceFrame": 22,
       "source": "docs/art-source/motions/identity-revisions-2026-09-12/aston_machan/generated.png",
-      "sourceSha256": "b4b9b170445737f3a63164923ddaeeb3e13092dcda6f30850f14992af74bcf93",
+      "sourceSha256": "ac536f05a097d2f36a58a934d02c8e39b3ad7503355c45fd27b25fe03ed898ab",
       "crop": [
         556,
         1266,
         739,
-        1520
+        1521
       ],
       "destination": [
-        283,
-        649,
-        73,
-        101
+        282,
+        646,
+        75,
+        104
       ]
     },
     {
       "frame": 23,
       "sourceFrame": 23,
       "source": "docs/art-source/motions/identity-revisions-2026-09-12/aston_machan/generated.png",
-      "sourceSha256": "b4b9b170445737f3a63164923ddaeeb3e13092dcda6f30850f14992af74bcf93",
+      "sourceSha256": "ac536f05a097d2f36a58a934d02c8e39b3ad7503355c45fd27b25fe03ed898ab",
       "crop": [
         807,
         1267,
@@ -437,10 +437,10 @@
         1520
       ],
       "destination": [
-        411,
-        649,
-        73,
-        101
+        410,
+        647,
+        75,
+        103
       ]
     }
   ],
@@ -477,8 +477,8 @@
       23
     ],
     "alpha": {
-      "transparentFraction": 0.5472494761149088,
-      "solidFraction": 0.3088213602701823
+      "transparentFraction": 0.5828399658203125,
+      "solidFraction": 0.31920496622721356
     }
   }
 }
