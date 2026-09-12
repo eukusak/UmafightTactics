@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from 'react';
 import Phaser from 'phaser';
 import { ALL_UNITS, getUnitDef } from '../../game/engine/roster';
 import { PVE_UNIT_IDS } from '../../game/engine/battle/pve-units';
-import { FRAME_SHEETS, frameSheetUrl, motionFrame, skillMotionFrame } from '../../game/ui/frame-animation';
+import { FRAME_SHEETS, frameSheetUrl, frameGeometry, motionFrame, skillMotionFrame } from '../../game/ui/frame-animation';
 import { skillTimeline } from '../../game/engine/battle/skill-timeline';
 import { portraitUrl, standeeUrl, type AnimationName } from '../../game/ui/art';
 import { useGameStore } from '../../store/gameStore';
@@ -39,7 +39,8 @@ export function MotionScreen(): JSX.Element {
       create(): void {
         this.pulses = this.add.graphics().setDepth(20);
         this.add.ellipse(360, 468, 180, 38, 0x07131e, .6);
-        this.sprites.push(this.add.image(360, 465, 'preview-body').setOrigin(.5, .859375).setDisplaySize(420, 420));
+        const geometry = frameGeometry(id, 420);
+        this.sprites.push(this.add.image(360, 465, 'preview-body').setOrigin(geometry.originX, geometry.originY).setDisplaySize(geometry.width, geometry.height));
         if (alive) setStatus(FRAME_SHEETS[id] ? '프레임 애니메이션 · 6종 모션 · 24개 원화' : '프레임 제작 대기 · 현재 원화 미리보기');
       }
       override update(_t: number, dt: number): void {

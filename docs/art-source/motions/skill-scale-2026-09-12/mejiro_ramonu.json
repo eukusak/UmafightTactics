@@ -1,0 +1,551 @@
+{
+  "format": "uft-baked-frames-v1",
+  "scale": 0.41434262948207173,
+  "anchor": [
+    128,
+    174
+  ],
+  "runtimeSha256": "81a7df99ad9ed802bc0b09b6c7b9bc1665cc78529fcfca1288a14ad6a8608d55",
+  "frames": [
+    {
+      "frame": 0,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/production-144/mejiro_ramonu/alpha.png",
+      "sourceSha256": "c696616d3a920e3e198f37a598b1cf7dc216d2a9cb9dc1a03a87f84cec192223",
+      "crop": [
+        38,
+        15,
+        199,
+        261
+      ],
+      "destination": [
+        94,
+        72,
+        67,
+        102
+      ]
+    },
+    {
+      "frame": 1,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/production-144/mejiro_ramonu/alpha.png",
+      "sourceSha256": "c696616d3a920e3e198f37a598b1cf7dc216d2a9cb9dc1a03a87f84cec192223",
+      "crop": [
+        312,
+        15,
+        465,
+        261
+      ],
+      "destination": [
+        352,
+        72,
+        63,
+        102
+      ]
+    },
+    {
+      "frame": 2,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/production-144/mejiro_ramonu/alpha.png",
+      "sourceSha256": "c696616d3a920e3e198f37a598b1cf7dc216d2a9cb9dc1a03a87f84cec192223",
+      "crop": [
+        558,
+        15,
+        712,
+        261
+      ],
+      "destination": [
+        608,
+        72,
+        64,
+        102
+      ]
+    },
+    {
+      "frame": 3,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/production-144/mejiro_ramonu/alpha.png",
+      "sourceSha256": "c696616d3a920e3e198f37a598b1cf7dc216d2a9cb9dc1a03a87f84cec192223",
+      "crop": [
+        822,
+        16,
+        979,
+        261
+      ],
+      "destination": [
+        863,
+        72,
+        65,
+        102
+      ]
+    },
+    {
+      "frame": 4,
+      "sourceFrame": 4,
+      "source": "docs/art-source/motions/production-144/mejiro_ramonu/alpha.png",
+      "sourceSha256": "c696616d3a920e3e198f37a598b1cf7dc216d2a9cb9dc1a03a87f84cec192223",
+      "crop": [
+        21,
+        274,
+        217,
+        512
+      ],
+      "destination": [
+        87,
+        331,
+        81,
+        99
+      ]
+    },
+    {
+      "frame": 5,
+      "sourceFrame": 5,
+      "source": "docs/art-source/motions/production-144/mejiro_ramonu/alpha.png",
+      "sourceSha256": "c696616d3a920e3e198f37a598b1cf7dc216d2a9cb9dc1a03a87f84cec192223",
+      "crop": [
+        274,
+        276,
+        479,
+        512
+      ],
+      "destination": [
+        341,
+        332,
+        85,
+        98
+      ]
+    },
+    {
+      "frame": 6,
+      "sourceFrame": 6,
+      "source": "docs/art-source/motions/production-144/mejiro_ramonu/alpha.png",
+      "sourceSha256": "c696616d3a920e3e198f37a598b1cf7dc216d2a9cb9dc1a03a87f84cec192223",
+      "crop": [
+        536,
+        276,
+        729,
+        512
+      ],
+      "destination": [
+        600,
+        332,
+        80,
+        98
+      ]
+    },
+    {
+      "frame": 7,
+      "sourceFrame": 7,
+      "source": "docs/art-source/motions/production-144/mejiro_ramonu/alpha.png",
+      "sourceSha256": "c696616d3a920e3e198f37a598b1cf7dc216d2a9cb9dc1a03a87f84cec192223",
+      "crop": [
+        791,
+        280,
+        1001,
+        512
+      ],
+      "destination": [
+        852,
+        334,
+        87,
+        96
+      ]
+    },
+    {
+      "frame": 8,
+      "sourceFrame": 8,
+      "source": "docs/art-source/motions/production-144/mejiro_ramonu/alpha.png",
+      "sourceSha256": "c696616d3a920e3e198f37a598b1cf7dc216d2a9cb9dc1a03a87f84cec192223",
+      "crop": [
+        34,
+        526,
+        200,
+        772
+      ],
+      "destination": [
+        93,
+        584,
+        69,
+        102
+      ]
+    },
+    {
+      "frame": 9,
+      "sourceFrame": 9,
+      "source": "docs/art-source/motions/production-144/mejiro_ramonu/alpha.png",
+      "sourceSha256": "c696616d3a920e3e198f37a598b1cf7dc216d2a9cb9dc1a03a87f84cec192223",
+      "crop": [
+        305,
+        522,
+        477,
+        772
+      ],
+      "destination": [
+        348,
+        582,
+        71,
+        104
+      ]
+    },
+    {
+      "frame": 10,
+      "sourceFrame": 10,
+      "source": "docs/art-source/motions/production-144/mejiro_ramonu/alpha.png",
+      "sourceSha256": "c696616d3a920e3e198f37a598b1cf7dc216d2a9cb9dc1a03a87f84cec192223",
+      "crop": [
+        560,
+        541,
+        792,
+        772
+      ],
+      "destination": [
+        592,
+        590,
+        96,
+        96
+      ]
+    },
+    {
+      "frame": 11,
+      "sourceFrame": 11,
+      "source": "docs/art-source/motions/production-144/mejiro_ramonu/alpha.png",
+      "sourceSha256": "c696616d3a920e3e198f37a598b1cf7dc216d2a9cb9dc1a03a87f84cec192223",
+      "crop": [
+        832,
+        523,
+        983,
+        772
+      ],
+      "destination": [
+        864,
+        583,
+        63,
+        103
+      ]
+    },
+    {
+      "frame": 12,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/skill-revisions-2026-09-11/mejiro_ramonu/generated.png",
+      "sourceSha256": "9cc1ccf75896f9f949ba0c0189b3380ab5a081c0f3be3dd31c76feabcd01b154",
+      "crop": [
+        136,
+        61,
+        569,
+        507
+      ],
+      "destination": [
+        83,
+        851,
+        89,
+        91
+      ]
+    },
+    {
+      "frame": 13,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/skill-revisions-2026-09-11/mejiro_ramonu/generated.png",
+      "sourceSha256": "9cc1ccf75896f9f949ba0c0189b3380ab5a081c0f3be3dd31c76feabcd01b154",
+      "crop": [
+        846,
+        67,
+        1435,
+        508
+      ],
+      "destination": [
+        324,
+        852,
+        120,
+        90
+      ]
+    },
+    {
+      "frame": 14,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/skill-revisions-2026-09-11/mejiro_ramonu/generated.png",
+      "sourceSha256": "9cc1ccf75896f9f949ba0c0189b3380ab5a081c0f3be3dd31c76feabcd01b154",
+      "crop": [
+        130,
+        575,
+        801,
+        995
+      ],
+      "destination": [
+        571,
+        856,
+        137,
+        86
+      ]
+    },
+    {
+      "frame": 15,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/skill-revisions-2026-09-11/mejiro_ramonu/generated.png",
+      "sourceSha256": "9cc1ccf75896f9f949ba0c0189b3380ab5a081c0f3be3dd31c76feabcd01b154",
+      "crop": [
+        960,
+        568,
+        1309,
+        997
+      ],
+      "destination": [
+        860,
+        855,
+        71,
+        87
+      ]
+    },
+    {
+      "frame": 16,
+      "sourceFrame": 16,
+      "source": "docs/art-source/motions/production-144/mejiro_ramonu/alpha.png",
+      "sourceSha256": "c696616d3a920e3e198f37a598b1cf7dc216d2a9cb9dc1a03a87f84cec192223",
+      "crop": [
+        46,
+        1024,
+        215,
+        1266
+      ],
+      "destination": [
+        93,
+        1098,
+        70,
+        100
+      ]
+    },
+    {
+      "frame": 17,
+      "sourceFrame": 17,
+      "source": "docs/art-source/motions/production-144/mejiro_ramonu/alpha.png",
+      "sourceSha256": "c696616d3a920e3e198f37a598b1cf7dc216d2a9cb9dc1a03a87f84cec192223",
+      "crop": [
+        302,
+        1060,
+        512,
+        1260
+      ],
+      "destination": [
+        340,
+        1115,
+        87,
+        83
+      ]
+    },
+    {
+      "frame": 18,
+      "sourceFrame": 18,
+      "source": "docs/art-source/motions/production-144/mejiro_ramonu/alpha.png",
+      "sourceSha256": "c696616d3a920e3e198f37a598b1cf7dc216d2a9cb9dc1a03a87f84cec192223",
+      "crop": [
+        526,
+        1084,
+        725,
+        1263
+      ],
+      "destination": [
+        599,
+        1124,
+        82,
+        74
+      ]
+    },
+    {
+      "frame": 19,
+      "sourceFrame": 19,
+      "source": "docs/art-source/motions/production-144/mejiro_ramonu/alpha.png",
+      "sourceSha256": "c696616d3a920e3e198f37a598b1cf7dc216d2a9cb9dc1a03a87f84cec192223",
+      "crop": [
+        768,
+        1153,
+        1013,
+        1258
+      ],
+      "destination": [
+        845,
+        1154,
+        102,
+        44
+      ]
+    },
+    {
+      "frame": 20,
+      "sourceFrame": 20,
+      "source": "docs/art-source/motions/production-144/mejiro_ramonu/alpha.png",
+      "sourceSha256": "c696616d3a920e3e198f37a598b1cf7dc216d2a9cb9dc1a03a87f84cec192223",
+      "crop": [
+        55,
+        1278,
+        209,
+        1529
+      ],
+      "destination": [
+        96,
+        1350,
+        64,
+        104
+      ]
+    },
+    {
+      "frame": 21,
+      "sourceFrame": 21,
+      "source": "docs/art-source/motions/production-144/mejiro_ramonu/alpha.png",
+      "sourceSha256": "c696616d3a920e3e198f37a598b1cf7dc216d2a9cb9dc1a03a87f84cec192223",
+      "crop": [
+        324,
+        1291,
+        486,
+        1530
+      ],
+      "destination": [
+        350,
+        1355,
+        67,
+        99
+      ]
+    },
+    {
+      "frame": 22,
+      "sourceFrame": 22,
+      "source": "docs/art-source/motions/production-144/mejiro_ramonu/alpha.png",
+      "sourceSha256": "c696616d3a920e3e198f37a598b1cf7dc216d2a9cb9dc1a03a87f84cec192223",
+      "crop": [
+        564,
+        1278,
+        722,
+        1505
+      ],
+      "destination": [
+        607,
+        1360,
+        65,
+        94
+      ]
+    },
+    {
+      "frame": 23,
+      "sourceFrame": 23,
+      "source": "docs/art-source/motions/production-144/mejiro_ramonu/alpha.png",
+      "sourceSha256": "c696616d3a920e3e198f37a598b1cf7dc216d2a9cb9dc1a03a87f84cec192223",
+      "crop": [
+        822,
+        1278,
+        985,
+        1529
+      ],
+      "destination": [
+        862,
+        1350,
+        68,
+        104
+      ]
+    }
+  ],
+  "skillRevision": {
+    "scale": 0.17287630402384502,
+    "review": "docs/art-source/motions/skill-revisions-2026-09-11/mejiro_ramonu/review.json",
+    "beforeFrames": [
+      "dc182a4e136357f2a66ecd9db574419faae225a7b64796fa904cf89fc8c580b1",
+      "37afb6c15d5ecabe033a096dce082d74f98772a635ca836edabfb868b0c79040",
+      "ccdba6d67a0a09ee67b6868484e43d4706a10789eae6b20005721c798a7e66f7",
+      "47f572cce943cf5e694dea866dfa817db71ec10df715ee8ff230e95ebf63d35e",
+      "439e0cee6fa932d880df80da468bf269ff0bf8a1e7099b2afd396f096bddb99a",
+      "760f3fa3769ac16870ac4ab99c47de5cfa0d845aba1172ac209f865d89345b82",
+      "d5c8c0e62bab022943e27cada42242cca2123b7b65943ae5f04352f87ba59d26",
+      "eddb5a2db2d125614bbd1b48fa76cf4a059eda55591a44b2826762912e838b27",
+      "f973bdfd9bece24f1b9d59b989bfffe198b0f4920bc11c4a379ddc4deca83658",
+      "8ea0ceb420dc7a59fad5bd953ded94bb8b7ac5f2c0e0d8d7d36d8f35c46513f2",
+      "4fbebe7a0b1da0a7be2c0bf385f7b42c589a9c2e29cb3caf8946e33426df1cb4",
+      "b58b1bc34f5309b32dfc6e18a0c3fab0aa3ac5e9a42dd15fcc2e24c4e6020082",
+      "5010bf342b30d20270618ba943f2593a402f989eda5fc91beb61d0dda8d9f785",
+      "bd82f96f317a87639b0583f378d1bad9cc1ca91f3e1f8812f2f947a55faceab2",
+      "0810b5ca89cb26b1dcc251486876aa59ea8eec0d6a9ab6ff3d1d3195288d8357",
+      "4489e6cf5daa99765a648d07d99cabade5f7cfd5c6266c2dd3becacf513f4154",
+      "7d06bbbfcb6b68ec4a6c71115cbc911ffbf86c20389f32792e2d543b80e3ca91",
+      "d3f1d8562b3b42a39810d646cc62943e12010b89753c4a6f875f7726f4727297",
+      "6396300f289c6f19545d6e5a38db7a82c2aeca5154f1ffc0399757aff73807bb",
+      "049e1f11e75f78ce179d9922f2741cf8c4dd4813eea64b5e7fd778d28005ad0e",
+      "9ca266cf20875659e44c62185252d6e9fe4b98704124b21fb1a419490c3bd2a7",
+      "f3e8fda4cf2c871e932f3958ef161aca3c3d32f685cd84d605cc79abbb7baed4",
+      "c4ee2b84bf1095361470b6f4b785f06447f10e7b9475684265a1f5b472bcd546",
+      "42f52f827ee5c257ff0aab6addd5497d8fe0ee8829e5eabebd1fddcd2b46a8e2"
+    ],
+    "afterFrames": [
+      "dc182a4e136357f2a66ecd9db574419faae225a7b64796fa904cf89fc8c580b1",
+      "37afb6c15d5ecabe033a096dce082d74f98772a635ca836edabfb868b0c79040",
+      "ccdba6d67a0a09ee67b6868484e43d4706a10789eae6b20005721c798a7e66f7",
+      "47f572cce943cf5e694dea866dfa817db71ec10df715ee8ff230e95ebf63d35e",
+      "439e0cee6fa932d880df80da468bf269ff0bf8a1e7099b2afd396f096bddb99a",
+      "760f3fa3769ac16870ac4ab99c47de5cfa0d845aba1172ac209f865d89345b82",
+      "d5c8c0e62bab022943e27cada42242cca2123b7b65943ae5f04352f87ba59d26",
+      "eddb5a2db2d125614bbd1b48fa76cf4a059eda55591a44b2826762912e838b27",
+      "f973bdfd9bece24f1b9d59b989bfffe198b0f4920bc11c4a379ddc4deca83658",
+      "8ea0ceb420dc7a59fad5bd953ded94bb8b7ac5f2c0e0d8d7d36d8f35c46513f2",
+      "4fbebe7a0b1da0a7be2c0bf385f7b42c589a9c2e29cb3caf8946e33426df1cb4",
+      "b58b1bc34f5309b32dfc6e18a0c3fab0aa3ac5e9a42dd15fcc2e24c4e6020082",
+      "df3e19788c4d84c825527fdc12227e277fb5d510cce17d1c0b6ddd1c2b0b1100",
+      "39fec3052e7cd012427f090d2ba8edc8bf1e097c5e66ebedf11a4f67120cf8e5",
+      "f0f7f76674671b0292956ab5503e5302a26d031dc4e20a3cdc95d40f2c19138c",
+      "426fa0c737dfe1effb8dcae51842c38338f8aa989dcca05bdc625a618c851f5e",
+      "7d06bbbfcb6b68ec4a6c71115cbc911ffbf86c20389f32792e2d543b80e3ca91",
+      "d3f1d8562b3b42a39810d646cc62943e12010b89753c4a6f875f7726f4727297",
+      "6396300f289c6f19545d6e5a38db7a82c2aeca5154f1ffc0399757aff73807bb",
+      "049e1f11e75f78ce179d9922f2741cf8c4dd4813eea64b5e7fd778d28005ad0e",
+      "9ca266cf20875659e44c62185252d6e9fe4b98704124b21fb1a419490c3bd2a7",
+      "f3e8fda4cf2c871e932f3958ef161aca3c3d32f685cd84d605cc79abbb7baed4",
+      "c4ee2b84bf1095361470b6f4b785f06447f10e7b9475684265a1f5b472bcd546",
+      "42f52f827ee5c257ff0aab6addd5497d8fe0ee8829e5eabebd1fddcd2b46a8e2"
+    ],
+    "unchangedFrames": 20,
+    "changedFrames": [
+      12,
+      13,
+      14,
+      15
+    ]
+  },
+  "frameWidth": 256,
+  "frameHeight": 256,
+  "columns": 4,
+  "rows": 6,
+  "logicalFrameSize": 128,
+  "scaleRevision": {
+    "review": "docs/art-source/motions/skill-scale-2026-09-12/review.json",
+    "previousPacking": "docs/art-source/motions/skill-revisions-2026-09-11/mejiro_ramonu/packing.json",
+    "baselineRuntimeSha256": "6d4b32c7f67a8e1b7edd90ed534d5a4556d3f6990dc07a8a9015417556fb8d78",
+    "baselineFrames": [
+      "dc182a4e136357f2a66ecd9db574419faae225a7b64796fa904cf89fc8c580b1",
+      "37afb6c15d5ecabe033a096dce082d74f98772a635ca836edabfb868b0c79040",
+      "ccdba6d67a0a09ee67b6868484e43d4706a10789eae6b20005721c798a7e66f7",
+      "47f572cce943cf5e694dea866dfa817db71ec10df715ee8ff230e95ebf63d35e",
+      "439e0cee6fa932d880df80da468bf269ff0bf8a1e7099b2afd396f096bddb99a",
+      "760f3fa3769ac16870ac4ab99c47de5cfa0d845aba1172ac209f865d89345b82",
+      "d5c8c0e62bab022943e27cada42242cca2123b7b65943ae5f04352f87ba59d26",
+      "eddb5a2db2d125614bbd1b48fa76cf4a059eda55591a44b2826762912e838b27",
+      "f973bdfd9bece24f1b9d59b989bfffe198b0f4920bc11c4a379ddc4deca83658",
+      "8ea0ceb420dc7a59fad5bd953ded94bb8b7ac5f2c0e0d8d7d36d8f35c46513f2",
+      "4fbebe7a0b1da0a7be2c0bf385f7b42c589a9c2e29cb3caf8946e33426df1cb4",
+      "b58b1bc34f5309b32dfc6e18a0c3fab0aa3ac5e9a42dd15fcc2e24c4e6020082",
+      "df3e19788c4d84c825527fdc12227e277fb5d510cce17d1c0b6ddd1c2b0b1100",
+      "39fec3052e7cd012427f090d2ba8edc8bf1e097c5e66ebedf11a4f67120cf8e5",
+      "f0f7f76674671b0292956ab5503e5302a26d031dc4e20a3cdc95d40f2c19138c",
+      "426fa0c737dfe1effb8dcae51842c38338f8aa989dcca05bdc625a618c851f5e",
+      "7d06bbbfcb6b68ec4a6c71115cbc911ffbf86c20389f32792e2d543b80e3ca91",
+      "d3f1d8562b3b42a39810d646cc62943e12010b89753c4a6f875f7726f4727297",
+      "6396300f289c6f19545d6e5a38db7a82c2aeca5154f1ffc0399757aff73807bb",
+      "049e1f11e75f78ce179d9922f2741cf8c4dd4813eea64b5e7fd778d28005ad0e",
+      "9ca266cf20875659e44c62185252d6e9fe4b98704124b21fb1a419490c3bd2a7",
+      "f3e8fda4cf2c871e932f3958ef161aca3c3d32f685cd84d605cc79abbb7baed4",
+      "c4ee2b84bf1095361470b6f4b785f06447f10e7b9475684265a1f5b472bcd546",
+      "42f52f827ee5c257ff0aab6addd5497d8fe0ee8829e5eabebd1fddcd2b46a8e2"
+    ],
+    "factor": 1.18,
+    "padding": 64,
+    "changedFrames": [
+      12,
+      13,
+      14,
+      15
+    ],
+    "unchangedFrames": 20
+  }
+}

@@ -14,6 +14,7 @@ const reviews = JSON.parse(await fs.readFile(reviewsPath, 'utf8'));
 const revisionDate = process.env.SKILL_REVISION_DATE ?? '2026-09-10';
 if (!/^\d{4}-\d{2}-\d{2}$/.test(revisionDate)) throw Error('Invalid revision date');
 for (const id of process.argv.slice(2)) {
+  if (registry[id]?.logicalFrameSize) throw Error('Padded atlas: review and repack through normalize-skill-scale.mjs instead of overwriting its layout: ' + id);
   const dir = `docs/art-source/motions/skill-revisions-${revisionDate}/` + id;
   const spec = JSON.parse(await fs.readFile(path.join(root, dir, 'review.json'), 'utf8'));
   if (!spec.approved) throw Error('Unreviewed poses: ' + id);

@@ -1,0 +1,551 @@
+{
+  "format": "uft-baked-frames-v1",
+  "scale": 0.45021645021645024,
+  "anchor": [
+    128,
+    174
+  ],
+  "runtimeSha256": "235db5765d0d712db8901c6d6dab7d726c98a0c8a347c51e9a9210c4af3a093c",
+  "frames": [
+    {
+      "frame": 0,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/production-144/vivlos/alpha.png",
+      "sourceSha256": "de7fdef2a00a7c8c580860ed4cadf1e99bdbde691dfe0f0031e3596c64812e93",
+      "crop": [
+        24,
+        32,
+        186,
+        256
+      ],
+      "destination": [
+        91,
+        73,
+        73,
+        101
+      ]
+    },
+    {
+      "frame": 1,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/production-144/vivlos/alpha.png",
+      "sourceSha256": "de7fdef2a00a7c8c580860ed4cadf1e99bdbde691dfe0f0031e3596c64812e93",
+      "crop": [
+        280,
+        32,
+        447,
+        256
+      ],
+      "destination": [
+        346,
+        73,
+        75,
+        101
+      ]
+    },
+    {
+      "frame": 2,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/production-144/vivlos/alpha.png",
+      "sourceSha256": "de7fdef2a00a7c8c580860ed4cadf1e99bdbde691dfe0f0031e3596c64812e93",
+      "crop": [
+        544,
+        32,
+        714,
+        256
+      ],
+      "destination": [
+        601,
+        73,
+        77,
+        101
+      ]
+    },
+    {
+      "frame": 3,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/production-144/vivlos/alpha.png",
+      "sourceSha256": "de7fdef2a00a7c8c580860ed4cadf1e99bdbde691dfe0f0031e3596c64812e93",
+      "crop": [
+        797,
+        34,
+        956,
+        256
+      ],
+      "destination": [
+        860,
+        74,
+        72,
+        100
+      ]
+    },
+    {
+      "frame": 4,
+      "sourceFrame": 4,
+      "source": "docs/art-source/motions/production-144/vivlos/alpha.png",
+      "sourceSha256": "de7fdef2a00a7c8c580860ed4cadf1e99bdbde691dfe0f0031e3596c64812e93",
+      "crop": [
+        17,
+        290,
+        203,
+        512
+      ],
+      "destination": [
+        86,
+        330,
+        84,
+        100
+      ]
+    },
+    {
+      "frame": 5,
+      "sourceFrame": 5,
+      "source": "docs/art-source/motions/production-144/vivlos/alpha.png",
+      "sourceSha256": "de7fdef2a00a7c8c580860ed4cadf1e99bdbde691dfe0f0031e3596c64812e93",
+      "crop": [
+        278,
+        289,
+        465,
+        505
+      ],
+      "destination": [
+        342,
+        333,
+        84,
+        97
+      ]
+    },
+    {
+      "frame": 6,
+      "sourceFrame": 6,
+      "source": "docs/art-source/motions/production-144/vivlos/alpha.png",
+      "sourceSha256": "de7fdef2a00a7c8c580860ed4cadf1e99bdbde691dfe0f0031e3596c64812e93",
+      "crop": [
+        539,
+        295,
+        723,
+        512
+      ],
+      "destination": [
+        598,
+        332,
+        83,
+        98
+      ]
+    },
+    {
+      "frame": 7,
+      "sourceFrame": 7,
+      "source": "docs/art-source/motions/production-144/vivlos/alpha.png",
+      "sourceSha256": "de7fdef2a00a7c8c580860ed4cadf1e99bdbde691dfe0f0031e3596c64812e93",
+      "crop": [
+        795,
+        288,
+        987,
+        512
+      ],
+      "destination": [
+        853,
+        329,
+        86,
+        101
+      ]
+    },
+    {
+      "frame": 8,
+      "sourceFrame": 8,
+      "source": "docs/art-source/motions/production-144/vivlos/alpha.png",
+      "sourceSha256": "de7fdef2a00a7c8c580860ed4cadf1e99bdbde691dfe0f0031e3596c64812e93",
+      "crop": [
+        26,
+        536,
+        223,
+        764
+      ],
+      "destination": [
+        83,
+        583,
+        89,
+        103
+      ]
+    },
+    {
+      "frame": 9,
+      "sourceFrame": 9,
+      "source": "docs/art-source/motions/production-144/vivlos/alpha.png",
+      "sourceSha256": "de7fdef2a00a7c8c580860ed4cadf1e99bdbde691dfe0f0031e3596c64812e93",
+      "crop": [
+        280,
+        540,
+        462,
+        764
+      ],
+      "destination": [
+        343,
+        585,
+        82,
+        101
+      ]
+    },
+    {
+      "frame": 10,
+      "sourceFrame": 10,
+      "source": "docs/art-source/motions/production-144/vivlos/alpha.png",
+      "sourceSha256": "de7fdef2a00a7c8c580860ed4cadf1e99bdbde691dfe0f0031e3596c64812e93",
+      "crop": [
+        544,
+        540,
+        744,
+        764
+      ],
+      "destination": [
+        595,
+        585,
+        90,
+        101
+      ]
+    },
+    {
+      "frame": 11,
+      "sourceFrame": 11,
+      "source": "docs/art-source/motions/production-144/vivlos/alpha.png",
+      "sourceSha256": "de7fdef2a00a7c8c580860ed4cadf1e99bdbde691dfe0f0031e3596c64812e93",
+      "crop": [
+        790,
+        537,
+        970,
+        768
+      ],
+      "destination": [
+        855,
+        582,
+        81,
+        104
+      ]
+    },
+    {
+      "frame": 12,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/skill-revisions-2026-09-11/vivlos/generated.png",
+      "sourceSha256": "257987b0eed66abf0da34939bc0bbbc0668950d095fa90b2895ed7ffc928bd7c",
+      "crop": [
+        100,
+        50,
+        586,
+        501
+      ],
+      "destination": [
+        83,
+        859,
+        90,
+        83
+      ]
+    },
+    {
+      "frame": 13,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/skill-revisions-2026-09-11/vivlos/generated.png",
+      "sourceSha256": "257987b0eed66abf0da34939bc0bbbc0668950d095fa90b2895ed7ffc928bd7c",
+      "crop": [
+        787,
+        41,
+        1418,
+        491
+      ],
+      "destination": [
+        325,
+        859,
+        117,
+        83
+      ]
+    },
+    {
+      "frame": 14,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/skill-revisions-2026-09-11/vivlos/generated.png",
+      "sourceSha256": "257987b0eed66abf0da34939bc0bbbc0668950d095fa90b2895ed7ffc928bd7c",
+      "crop": [
+        61,
+        538,
+        878,
+        992
+      ],
+      "destination": [
+        564,
+        859,
+        151,
+        83
+      ]
+    },
+    {
+      "frame": 15,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/skill-revisions-2026-09-11/vivlos/generated.png",
+      "sourceSha256": "257987b0eed66abf0da34939bc0bbbc0668950d095fa90b2895ed7ffc928bd7c",
+      "crop": [
+        905,
+        533,
+        1387,
+        991
+      ],
+      "destination": [
+        852,
+        857,
+        88,
+        85
+      ]
+    },
+    {
+      "frame": 16,
+      "sourceFrame": 16,
+      "source": "docs/art-source/motions/production-144/vivlos/alpha.png",
+      "sourceSha256": "de7fdef2a00a7c8c580860ed4cadf1e99bdbde691dfe0f0031e3596c64812e93",
+      "crop": [
+        28,
+        1049,
+        203,
+        1259
+      ],
+      "destination": [
+        88,
+        1103,
+        79,
+        95
+      ]
+    },
+    {
+      "frame": 17,
+      "sourceFrame": 17,
+      "source": "docs/art-source/motions/production-144/vivlos/alpha.png",
+      "sourceSha256": "de7fdef2a00a7c8c580860ed4cadf1e99bdbde691dfe0f0031e3596c64812e93",
+      "crop": [
+        296,
+        1074,
+        473,
+        1254
+      ],
+      "destination": [
+        344,
+        1117,
+        80,
+        81
+      ]
+    },
+    {
+      "frame": 18,
+      "sourceFrame": 18,
+      "source": "docs/art-source/motions/production-144/vivlos/alpha.png",
+      "sourceSha256": "de7fdef2a00a7c8c580860ed4cadf1e99bdbde691dfe0f0031e3596c64812e93",
+      "crop": [
+        550,
+        1096,
+        723,
+        1252
+      ],
+      "destination": [
+        601,
+        1128,
+        78,
+        70
+      ]
+    },
+    {
+      "frame": 19,
+      "sourceFrame": 19,
+      "source": "docs/art-source/motions/production-144/vivlos/alpha.png",
+      "sourceSha256": "de7fdef2a00a7c8c580860ed4cadf1e99bdbde691dfe0f0031e3596c64812e93",
+      "crop": [
+        798,
+        1152,
+        1007,
+        1249
+      ],
+      "destination": [
+        849,
+        1154,
+        94,
+        44
+      ]
+    },
+    {
+      "frame": 20,
+      "sourceFrame": 20,
+      "source": "docs/art-source/motions/production-144/vivlos/alpha.png",
+      "sourceSha256": "de7fdef2a00a7c8c580860ed4cadf1e99bdbde691dfe0f0031e3596c64812e93",
+      "crop": [
+        33,
+        1279,
+        198,
+        1510
+      ],
+      "destination": [
+        91,
+        1350,
+        74,
+        104
+      ]
+    },
+    {
+      "frame": 21,
+      "sourceFrame": 21,
+      "source": "docs/art-source/motions/production-144/vivlos/alpha.png",
+      "sourceSha256": "de7fdef2a00a7c8c580860ed4cadf1e99bdbde691dfe0f0031e3596c64812e93",
+      "crop": [
+        297,
+        1283,
+        464,
+        1511
+      ],
+      "destination": [
+        346,
+        1351,
+        75,
+        103
+      ]
+    },
+    {
+      "frame": 22,
+      "sourceFrame": 22,
+      "source": "docs/art-source/motions/production-144/vivlos/alpha.png",
+      "sourceSha256": "de7fdef2a00a7c8c580860ed4cadf1e99bdbde691dfe0f0031e3596c64812e93",
+      "crop": [
+        543,
+        1284,
+        724,
+        1510
+      ],
+      "destination": [
+        599,
+        1352,
+        81,
+        102
+      ]
+    },
+    {
+      "frame": 23,
+      "sourceFrame": 23,
+      "source": "docs/art-source/motions/production-144/vivlos/alpha.png",
+      "sourceSha256": "de7fdef2a00a7c8c580860ed4cadf1e99bdbde691dfe0f0031e3596c64812e93",
+      "crop": [
+        803,
+        1287,
+        990,
+        1513
+      ],
+      "destination": [
+        854,
+        1352,
+        84,
+        102
+      ]
+    }
+  ],
+  "skillRevision": {
+    "scale": 0.1419828641370869,
+    "review": "docs/art-source/motions/skill-revisions-2026-09-11/vivlos/review.json",
+    "beforeFrames": [
+      "d252c6c624a6ea977754bdfdfcd4a1c79e0e3e7180d5b956b16f538ea5c72097",
+      "b762cd3ed993d3a075e67e2c54c2fbc2364a9b9665b61a0d23fba56796690a55",
+      "e14e945abdad87605ec9e84a07cf0981f7a3a23927a49a071db4d0791e07083b",
+      "766f6851a46c8f9a983e063e3935296b9446de9e96710b9983f516dd58417c3a",
+      "fd052d034dc1b96f5fcc6234082a773470959da7e0875804b80dc4f73db3337b",
+      "ccc32217235ca1b012e2f61864fce537e4c1c90f0252f681d4293fb4924f7691",
+      "44f90376c9ee7898cf6ee9b52894b91024427e539dde6e0bb593137358f1200c",
+      "040e5208b0efd45ca33262c20207668265419a6d754f19d4820176a602eab4cf",
+      "8853830c0338b2d7cb41cd2e0acf0e54314477ec2be700c49fddf148c45affe4",
+      "7f0355b33d44feb30c9061ef1ed269108ae3e6f3d4ddc2283c3282fc36119b68",
+      "2f099931267404f75df1fff97827dafc7191ff032c94bb3a472bdce597bfc58c",
+      "8ab30e9d2932f5a85e5f40aef9db155b8a4003aebabbfef60125ebf526ee0cc3",
+      "a323a6d24bea5bcaf57237ab648ad935ace26d4952fa2cfef20275a27011b685",
+      "51c1a6b5bdbd5d90779b956b074ea14492a8e93e932843661d469c330ead6a87",
+      "f5cad93176d203531d46babbadf2816edb0b7b46392cc3f8a2b50df63bc3a403",
+      "21708245053ed775afb17dd28bbf3a305003ba5a41aeffdffe83cd2b94ac0afe",
+      "ba36ad71dbca5d5f8a24d1bd91198f17012e3eba16bb4e93e98f37ee350c10ba",
+      "d7d3399c46f419a7c4216efc49ea2db1329e0e590cf824624cff5d0904ab944d",
+      "2edb3a4b8a58967ff4be72298134c1f3ce448dbcc4bad88d8ae19a31c8c5a732",
+      "9e350473144a6bd249a52ae9b1d85688e605d77779d60c418c3831060250604f",
+      "f8290c51c986ea94f26d5b4e5863958070659f1455b7b2af1f06ef46a5287afe",
+      "7a1714b9ac5661c88b2e4696f85978545290c2ca8d2670a92ff2273bfd1ed98b",
+      "cb7b208b2dba2d20f4364565336c51bbe0c9493ae84bfc70ac0851f9fed71d0b",
+      "b10a5dfa2bbaf16bccc66aca6702dc2e01caafb7e0f217e6ccd84f4851887df8"
+    ],
+    "afterFrames": [
+      "d252c6c624a6ea977754bdfdfcd4a1c79e0e3e7180d5b956b16f538ea5c72097",
+      "b762cd3ed993d3a075e67e2c54c2fbc2364a9b9665b61a0d23fba56796690a55",
+      "e14e945abdad87605ec9e84a07cf0981f7a3a23927a49a071db4d0791e07083b",
+      "766f6851a46c8f9a983e063e3935296b9446de9e96710b9983f516dd58417c3a",
+      "fd052d034dc1b96f5fcc6234082a773470959da7e0875804b80dc4f73db3337b",
+      "ccc32217235ca1b012e2f61864fce537e4c1c90f0252f681d4293fb4924f7691",
+      "44f90376c9ee7898cf6ee9b52894b91024427e539dde6e0bb593137358f1200c",
+      "040e5208b0efd45ca33262c20207668265419a6d754f19d4820176a602eab4cf",
+      "8853830c0338b2d7cb41cd2e0acf0e54314477ec2be700c49fddf148c45affe4",
+      "7f0355b33d44feb30c9061ef1ed269108ae3e6f3d4ddc2283c3282fc36119b68",
+      "2f099931267404f75df1fff97827dafc7191ff032c94bb3a472bdce597bfc58c",
+      "8ab30e9d2932f5a85e5f40aef9db155b8a4003aebabbfef60125ebf526ee0cc3",
+      "22294b8838e2e6218de2546fd990aa2caa82818ec1f2a63a1c0e876810de472d",
+      "1de2cfb35b12e461688447dc5367662843d1593c218e01c6ca44ae7d3e9678f0",
+      "44346659546e7b9dc61b6750981ae4755779129ce2041bcc98b611b2e877300e",
+      "0d4f9b8e4baff7d806a07f928a2f63b1a4a46c3c5d8ccd2886dc342a619ba1ed",
+      "ba36ad71dbca5d5f8a24d1bd91198f17012e3eba16bb4e93e98f37ee350c10ba",
+      "d7d3399c46f419a7c4216efc49ea2db1329e0e590cf824624cff5d0904ab944d",
+      "2edb3a4b8a58967ff4be72298134c1f3ce448dbcc4bad88d8ae19a31c8c5a732",
+      "9e350473144a6bd249a52ae9b1d85688e605d77779d60c418c3831060250604f",
+      "f8290c51c986ea94f26d5b4e5863958070659f1455b7b2af1f06ef46a5287afe",
+      "7a1714b9ac5661c88b2e4696f85978545290c2ca8d2670a92ff2273bfd1ed98b",
+      "cb7b208b2dba2d20f4364565336c51bbe0c9493ae84bfc70ac0851f9fed71d0b",
+      "b10a5dfa2bbaf16bccc66aca6702dc2e01caafb7e0f217e6ccd84f4851887df8"
+    ],
+    "unchangedFrames": 20,
+    "changedFrames": [
+      12,
+      13,
+      14,
+      15
+    ]
+  },
+  "frameWidth": 256,
+  "frameHeight": 256,
+  "columns": 4,
+  "rows": 6,
+  "logicalFrameSize": 128,
+  "scaleRevision": {
+    "review": "docs/art-source/motions/skill-scale-2026-09-12/review.json",
+    "previousPacking": "docs/art-source/motions/skill-revisions-2026-09-11/vivlos/packing.json",
+    "baselineRuntimeSha256": "b8406843098bf314b71b202d5fa0e50f3fd6c4410f77db1156a761f9323a27b7",
+    "baselineFrames": [
+      "d252c6c624a6ea977754bdfdfcd4a1c79e0e3e7180d5b956b16f538ea5c72097",
+      "b762cd3ed993d3a075e67e2c54c2fbc2364a9b9665b61a0d23fba56796690a55",
+      "e14e945abdad87605ec9e84a07cf0981f7a3a23927a49a071db4d0791e07083b",
+      "766f6851a46c8f9a983e063e3935296b9446de9e96710b9983f516dd58417c3a",
+      "fd052d034dc1b96f5fcc6234082a773470959da7e0875804b80dc4f73db3337b",
+      "ccc32217235ca1b012e2f61864fce537e4c1c90f0252f681d4293fb4924f7691",
+      "44f90376c9ee7898cf6ee9b52894b91024427e539dde6e0bb593137358f1200c",
+      "040e5208b0efd45ca33262c20207668265419a6d754f19d4820176a602eab4cf",
+      "8853830c0338b2d7cb41cd2e0acf0e54314477ec2be700c49fddf148c45affe4",
+      "7f0355b33d44feb30c9061ef1ed269108ae3e6f3d4ddc2283c3282fc36119b68",
+      "2f099931267404f75df1fff97827dafc7191ff032c94bb3a472bdce597bfc58c",
+      "8ab30e9d2932f5a85e5f40aef9db155b8a4003aebabbfef60125ebf526ee0cc3",
+      "22294b8838e2e6218de2546fd990aa2caa82818ec1f2a63a1c0e876810de472d",
+      "1de2cfb35b12e461688447dc5367662843d1593c218e01c6ca44ae7d3e9678f0",
+      "44346659546e7b9dc61b6750981ae4755779129ce2041bcc98b611b2e877300e",
+      "0d4f9b8e4baff7d806a07f928a2f63b1a4a46c3c5d8ccd2886dc342a619ba1ed",
+      "ba36ad71dbca5d5f8a24d1bd91198f17012e3eba16bb4e93e98f37ee350c10ba",
+      "d7d3399c46f419a7c4216efc49ea2db1329e0e590cf824624cff5d0904ab944d",
+      "2edb3a4b8a58967ff4be72298134c1f3ce448dbcc4bad88d8ae19a31c8c5a732",
+      "9e350473144a6bd249a52ae9b1d85688e605d77779d60c418c3831060250604f",
+      "f8290c51c986ea94f26d5b4e5863958070659f1455b7b2af1f06ef46a5287afe",
+      "7a1714b9ac5661c88b2e4696f85978545290c2ca8d2670a92ff2273bfd1ed98b",
+      "cb7b208b2dba2d20f4364565336c51bbe0c9493ae84bfc70ac0851f9fed71d0b",
+      "b10a5dfa2bbaf16bccc66aca6702dc2e01caafb7e0f217e6ccd84f4851887df8"
+    ],
+    "factor": 1.3,
+    "padding": 64,
+    "changedFrames": [
+      12,
+      13,
+      14,
+      15
+    ],
+    "unchangedFrames": 20
+  }
+}

@@ -1,0 +1,551 @@
+{
+  "format": "uft-baked-frames-v1",
+  "scale": 0.4094488188976378,
+  "anchor": [
+    128,
+    174
+  ],
+  "runtimeSha256": "92aa742ef15b67218625cc024d3579b10ea5718d0a54972209d6599172031613",
+  "frames": [
+    {
+      "frame": 0,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/production-144/almond_eye/alpha.png",
+      "sourceSha256": "8041c16e6907408b3e956d58b1e2defebf193a6eb7c33040fb71e94b24e5cc71",
+      "crop": [
+        48,
+        10,
+        209,
+        254
+      ],
+      "destination": [
+        95,
+        74,
+        66,
+        100
+      ]
+    },
+    {
+      "frame": 1,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/production-144/almond_eye/alpha.png",
+      "sourceSha256": "8041c16e6907408b3e956d58b1e2defebf193a6eb7c33040fb71e94b24e5cc71",
+      "crop": [
+        301,
+        13,
+        461,
+        255
+      ],
+      "destination": [
+        351,
+        75,
+        66,
+        99
+      ]
+    },
+    {
+      "frame": 2,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/production-144/almond_eye/alpha.png",
+      "sourceSha256": "8041c16e6907408b3e956d58b1e2defebf193a6eb7c33040fb71e94b24e5cc71",
+      "crop": [
+        557,
+        11,
+        714,
+        254
+      ],
+      "destination": [
+        608,
+        75,
+        64,
+        99
+      ]
+    },
+    {
+      "frame": 3,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/production-144/almond_eye/alpha.png",
+      "sourceSha256": "8041c16e6907408b3e956d58b1e2defebf193a6eb7c33040fb71e94b24e5cc71",
+      "crop": [
+        814,
+        11,
+        970,
+        255
+      ],
+      "destination": [
+        864,
+        74,
+        64,
+        100
+      ]
+    },
+    {
+      "frame": 4,
+      "sourceFrame": 4,
+      "source": "docs/art-source/motions/production-144/almond_eye/alpha.png",
+      "sourceSha256": "8041c16e6907408b3e956d58b1e2defebf193a6eb7c33040fb71e94b24e5cc71",
+      "crop": [
+        12,
+        264,
+        233,
+        506
+      ],
+      "destination": [
+        83,
+        331,
+        90,
+        99
+      ]
+    },
+    {
+      "frame": 5,
+      "sourceFrame": 5,
+      "source": "docs/art-source/motions/production-144/almond_eye/alpha.png",
+      "sourceSha256": "8041c16e6907408b3e956d58b1e2defebf193a6eb7c33040fb71e94b24e5cc71",
+      "crop": [
+        275,
+        264,
+        493,
+        505
+      ],
+      "destination": [
+        339,
+        331,
+        89,
+        99
+      ]
+    },
+    {
+      "frame": 6,
+      "sourceFrame": 6,
+      "source": "docs/art-source/motions/production-144/almond_eye/alpha.png",
+      "sourceSha256": "8041c16e6907408b3e956d58b1e2defebf193a6eb7c33040fb71e94b24e5cc71",
+      "crop": [
+        527,
+        265,
+        745,
+        506
+      ],
+      "destination": [
+        595,
+        331,
+        89,
+        99
+      ]
+    },
+    {
+      "frame": 7,
+      "sourceFrame": 7,
+      "source": "docs/art-source/motions/production-144/almond_eye/alpha.png",
+      "sourceSha256": "8041c16e6907408b3e956d58b1e2defebf193a6eb7c33040fb71e94b24e5cc71",
+      "crop": [
+        779,
+        265,
+        1003,
+        505
+      ],
+      "destination": [
+        850,
+        332,
+        92,
+        98
+      ]
+    },
+    {
+      "frame": 8,
+      "sourceFrame": 8,
+      "source": "docs/art-source/motions/production-144/almond_eye/alpha.png",
+      "sourceSha256": "8041c16e6907408b3e956d58b1e2defebf193a6eb7c33040fb71e94b24e5cc71",
+      "crop": [
+        37,
+        516,
+        236,
+        770
+      ],
+      "destination": [
+        87,
+        582,
+        81,
+        104
+      ]
+    },
+    {
+      "frame": 9,
+      "sourceFrame": 9,
+      "source": "docs/art-source/motions/production-144/almond_eye/alpha.png",
+      "sourceSha256": "8041c16e6907408b3e956d58b1e2defebf193a6eb7c33040fb71e94b24e5cc71",
+      "crop": [
+        282,
+        516,
+        457,
+        770
+      ],
+      "destination": [
+        348,
+        582,
+        72,
+        104
+      ]
+    },
+    {
+      "frame": 10,
+      "sourceFrame": 10,
+      "source": "docs/art-source/motions/production-144/almond_eye/alpha.png",
+      "sourceSha256": "8041c16e6907408b3e956d58b1e2defebf193a6eb7c33040fb71e94b24e5cc71",
+      "crop": [
+        539,
+        518,
+        737,
+        770
+      ],
+      "destination": [
+        599,
+        583,
+        81,
+        103
+      ]
+    },
+    {
+      "frame": 11,
+      "sourceFrame": 11,
+      "source": "docs/art-source/motions/production-144/almond_eye/alpha.png",
+      "sourceSha256": "8041c16e6907408b3e956d58b1e2defebf193a6eb7c33040fb71e94b24e5cc71",
+      "crop": [
+        807,
+        519,
+        979,
+        770
+      ],
+      "destination": [
+        861,
+        583,
+        70,
+        103
+      ]
+    },
+    {
+      "frame": 12,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/skill-revisions-2026-09-11/almond_eye/generated.png",
+      "sourceSha256": "b37b6d801ff0a838bcd59fc62d5a44b0495ec344d644ab3a237f43f4f034916e",
+      "crop": [
+        117,
+        19,
+        600,
+        481
+      ],
+      "destination": [
+        74,
+        840,
+        107,
+        102
+      ]
+    },
+    {
+      "frame": 13,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/skill-revisions-2026-09-11/almond_eye/generated.png",
+      "sourceSha256": "b37b6d801ff0a838bcd59fc62d5a44b0495ec344d644ab3a237f43f4f034916e",
+      "crop": [
+        952,
+        51,
+        1481,
+        484
+      ],
+      "destination": [
+        325,
+        846,
+        117,
+        96
+      ]
+    },
+    {
+      "frame": 14,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/skill-revisions-2026-09-11/almond_eye/generated.png",
+      "sourceSha256": "b37b6d801ff0a838bcd59fc62d5a44b0495ec344d644ab3a237f43f4f034916e",
+      "crop": [
+        104,
+        602,
+        944,
+        988
+      ],
+      "destination": [
+        547,
+        857,
+        186,
+        85
+      ]
+    },
+    {
+      "frame": 15,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/skill-revisions-2026-09-11/almond_eye/generated.png",
+      "sourceSha256": "b37b6d801ff0a838bcd59fc62d5a44b0495ec344d644ab3a237f43f4f034916e",
+      "crop": [
+        1032,
+        526,
+        1418,
+        994
+      ],
+      "destination": [
+        853,
+        838,
+        85,
+        104
+      ]
+    },
+    {
+      "frame": 16,
+      "sourceFrame": 16,
+      "source": "docs/art-source/motions/production-144/almond_eye/alpha.png",
+      "sourceSha256": "8041c16e6907408b3e956d58b1e2defebf193a6eb7c33040fb71e94b24e5cc71",
+      "crop": [
+        32,
+        1038,
+        236,
+        1273
+      ],
+      "destination": [
+        86,
+        1102,
+        84,
+        96
+      ]
+    },
+    {
+      "frame": 17,
+      "sourceFrame": 17,
+      "source": "docs/art-source/motions/production-144/almond_eye/alpha.png",
+      "sourceSha256": "8041c16e6907408b3e956d58b1e2defebf193a6eb7c33040fb71e94b24e5cc71",
+      "crop": [
+        298,
+        1065,
+        482,
+        1265
+      ],
+      "destination": [
+        346,
+        1116,
+        75,
+        82
+      ]
+    },
+    {
+      "frame": 18,
+      "sourceFrame": 18,
+      "source": "docs/art-source/motions/production-144/almond_eye/alpha.png",
+      "sourceSha256": "8041c16e6907408b3e956d58b1e2defebf193a6eb7c33040fb71e94b24e5cc71",
+      "crop": [
+        537,
+        1095,
+        738,
+        1264
+      ],
+      "destination": [
+        599,
+        1129,
+        82,
+        69
+      ]
+    },
+    {
+      "frame": 19,
+      "sourceFrame": 19,
+      "source": "docs/art-source/motions/production-144/almond_eye/alpha.png",
+      "sourceSha256": "8041c16e6907408b3e956d58b1e2defebf193a6eb7c33040fb71e94b24e5cc71",
+      "crop": [
+        778,
+        1138,
+        1004,
+        1263
+      ],
+      "destination": [
+        849,
+        1147,
+        93,
+        51
+      ]
+    },
+    {
+      "frame": 20,
+      "sourceFrame": 20,
+      "source": "docs/art-source/motions/production-144/almond_eye/alpha.png",
+      "sourceSha256": "8041c16e6907408b3e956d58b1e2defebf193a6eb7c33040fb71e94b24e5cc71",
+      "crop": [
+        41,
+        1284,
+        209,
+        1533
+      ],
+      "destination": [
+        93,
+        1352,
+        69,
+        102
+      ]
+    },
+    {
+      "frame": 21,
+      "sourceFrame": 21,
+      "source": "docs/art-source/motions/production-144/almond_eye/alpha.png",
+      "sourceSha256": "8041c16e6907408b3e956d58b1e2defebf193a6eb7c33040fb71e94b24e5cc71",
+      "crop": [
+        288,
+        1288,
+        461,
+        1533
+      ],
+      "destination": [
+        348,
+        1354,
+        71,
+        100
+      ]
+    },
+    {
+      "frame": 22,
+      "sourceFrame": 22,
+      "source": "docs/art-source/motions/production-144/almond_eye/alpha.png",
+      "sourceSha256": "8041c16e6907408b3e956d58b1e2defebf193a6eb7c33040fb71e94b24e5cc71",
+      "crop": [
+        534,
+        1276,
+        725,
+        1507
+      ],
+      "destination": [
+        601,
+        1359,
+        78,
+        95
+      ]
+    },
+    {
+      "frame": 23,
+      "sourceFrame": 23,
+      "source": "docs/art-source/motions/production-144/almond_eye/alpha.png",
+      "sourceSha256": "8041c16e6907408b3e956d58b1e2defebf193a6eb7c33040fb71e94b24e5cc71",
+      "crop": [
+        812,
+        1283,
+        979,
+        1533
+      ],
+      "destination": [
+        862,
+        1352,
+        68,
+        102
+      ]
+    }
+  ],
+  "skillRevision": {
+    "scale": 0.1380952380952381,
+    "review": "docs/art-source/motions/skill-revisions-2026-09-11/almond_eye/review.json",
+    "beforeFrames": [
+      "8e71e50f03bd5c5cfad59813b772414098711ded4ae67d54a07c1db226af6e3f",
+      "173293203d8bbec8ee5f9385cd470bec406b0478c289b2ca451b8c1562a0f9a3",
+      "76e0c780756ba18e9bded6c5922b42d42c48c7cb768f2f9122377f25296591fb",
+      "ebf71d40e819e2e9cd6f051791e3403cce2f1ad7778dbaa940edaafebf3bda6b",
+      "6b2f0df7940e00af0ffc5dc41be8fdbfe3c271173bd7832cd62ab9223eddbab3",
+      "6fa5f40c38fd7a13a3d16a19c21452c495b9ecad37837df29e1834f26e67f5d3",
+      "2aea0b4d6ce5bf1244bdd8142fd16652481b8848c22045af111558c952c7da3d",
+      "96e423e8460b2c2907fa3e7ef87b5b54d4a48745c5b821edd6c8f710b3daada5",
+      "9ad69be52dc611a25d6879a37c7f4373faf07b37f0384d521c6c81986b155bb0",
+      "f71a309d3dc0aa619eb7c588e8cbbe0b424035f1a9bb74092379f2d9f1cbd074",
+      "c721df26ed585b17edc4530cd7174a3a058fc963359e572a3fd0e5d32a64745d",
+      "22ffd7624484b7217c1be32a3071319812cda3319724ba1219b9f2c1b996ad24",
+      "8dffc52033d6dfed64f888e61f96ae954e8cc1756d5709d4b8fc66887bb050c2",
+      "da2d5cd3a29757b55f10445dd9d7287fed0bf421f543fd38a91de869f08f3066",
+      "f4258bf2380b0190743b357affd515543b507d0454f009b502ba539297d5309c",
+      "2599e85406fba1edcd8f6f5639b8977675710be88444fbce2dad11424cfd1bcf",
+      "2728e8fd70f9fa4f83c4f3992abc8c6c806b6e9c39d00c8cea7f284ed0c5859a",
+      "e55a182b02faec997e7eca510743e74c1ea30daf092a45349fccbcde336aceca",
+      "de0b4d2f5c243e6ab11f682d18083ae3fd9363ff7ec2de2f79996f4cf20d581d",
+      "bcc8e0552cc83e574b34157dab8428b2c0deb61933e7021d80e27c1abd687330",
+      "02cec875c1ad4558d2b7e660346d003c73a2c5cf65f7dd24d151797e6125d476",
+      "23917ef62340757716415e052a285d804a3697dbe296aa148ca52ab567763627",
+      "ef5be4ea797c38dc978568a031f5ee2ea464cf90447d006df52ac79257dc8679",
+      "9564e9e3b96c0f7ee92c785617202b0f5534da3f4017966df26d5c94df90d143"
+    ],
+    "afterFrames": [
+      "8e71e50f03bd5c5cfad59813b772414098711ded4ae67d54a07c1db226af6e3f",
+      "173293203d8bbec8ee5f9385cd470bec406b0478c289b2ca451b8c1562a0f9a3",
+      "76e0c780756ba18e9bded6c5922b42d42c48c7cb768f2f9122377f25296591fb",
+      "ebf71d40e819e2e9cd6f051791e3403cce2f1ad7778dbaa940edaafebf3bda6b",
+      "6b2f0df7940e00af0ffc5dc41be8fdbfe3c271173bd7832cd62ab9223eddbab3",
+      "6fa5f40c38fd7a13a3d16a19c21452c495b9ecad37837df29e1834f26e67f5d3",
+      "2aea0b4d6ce5bf1244bdd8142fd16652481b8848c22045af111558c952c7da3d",
+      "96e423e8460b2c2907fa3e7ef87b5b54d4a48745c5b821edd6c8f710b3daada5",
+      "9ad69be52dc611a25d6879a37c7f4373faf07b37f0384d521c6c81986b155bb0",
+      "f71a309d3dc0aa619eb7c588e8cbbe0b424035f1a9bb74092379f2d9f1cbd074",
+      "c721df26ed585b17edc4530cd7174a3a058fc963359e572a3fd0e5d32a64745d",
+      "22ffd7624484b7217c1be32a3071319812cda3319724ba1219b9f2c1b996ad24",
+      "d55a12fbc590363552944c1b5e97e79c26dfe03bf82a18391ebcd6cb26e1d7b1",
+      "ee50b228034b7a11b163d303224b78ac04b965c90cecccb4ff4e2451a1b340e2",
+      "ce6a40a0e995a7b3c4be0e21c4e5afa9a574708fde5ad1a935cf61723ff43730",
+      "bfbdf6709d99ff140d5b08806d8b27b53f723e58977872241b7bd6fbe518ea66",
+      "2728e8fd70f9fa4f83c4f3992abc8c6c806b6e9c39d00c8cea7f284ed0c5859a",
+      "e55a182b02faec997e7eca510743e74c1ea30daf092a45349fccbcde336aceca",
+      "de0b4d2f5c243e6ab11f682d18083ae3fd9363ff7ec2de2f79996f4cf20d581d",
+      "bcc8e0552cc83e574b34157dab8428b2c0deb61933e7021d80e27c1abd687330",
+      "02cec875c1ad4558d2b7e660346d003c73a2c5cf65f7dd24d151797e6125d476",
+      "23917ef62340757716415e052a285d804a3697dbe296aa148ca52ab567763627",
+      "ef5be4ea797c38dc978568a031f5ee2ea464cf90447d006df52ac79257dc8679",
+      "9564e9e3b96c0f7ee92c785617202b0f5534da3f4017966df26d5c94df90d143"
+    ],
+    "unchangedFrames": 20,
+    "changedFrames": [
+      12,
+      13,
+      14,
+      15
+    ]
+  },
+  "frameWidth": 256,
+  "frameHeight": 256,
+  "columns": 4,
+  "rows": 6,
+  "logicalFrameSize": 128,
+  "scaleRevision": {
+    "review": "docs/art-source/motions/skill-scale-2026-09-12/review.json",
+    "previousPacking": "docs/art-source/motions/skill-revisions-2026-09-11/almond_eye/packing.json",
+    "baselineRuntimeSha256": "ef20ac0ce5fcb396b8928d4e22fb3a4f7bffd5f6720fad94d29f61c32623380b",
+    "baselineFrames": [
+      "8e71e50f03bd5c5cfad59813b772414098711ded4ae67d54a07c1db226af6e3f",
+      "173293203d8bbec8ee5f9385cd470bec406b0478c289b2ca451b8c1562a0f9a3",
+      "76e0c780756ba18e9bded6c5922b42d42c48c7cb768f2f9122377f25296591fb",
+      "ebf71d40e819e2e9cd6f051791e3403cce2f1ad7778dbaa940edaafebf3bda6b",
+      "6b2f0df7940e00af0ffc5dc41be8fdbfe3c271173bd7832cd62ab9223eddbab3",
+      "6fa5f40c38fd7a13a3d16a19c21452c495b9ecad37837df29e1834f26e67f5d3",
+      "2aea0b4d6ce5bf1244bdd8142fd16652481b8848c22045af111558c952c7da3d",
+      "96e423e8460b2c2907fa3e7ef87b5b54d4a48745c5b821edd6c8f710b3daada5",
+      "9ad69be52dc611a25d6879a37c7f4373faf07b37f0384d521c6c81986b155bb0",
+      "f71a309d3dc0aa619eb7c588e8cbbe0b424035f1a9bb74092379f2d9f1cbd074",
+      "c721df26ed585b17edc4530cd7174a3a058fc963359e572a3fd0e5d32a64745d",
+      "22ffd7624484b7217c1be32a3071319812cda3319724ba1219b9f2c1b996ad24",
+      "d55a12fbc590363552944c1b5e97e79c26dfe03bf82a18391ebcd6cb26e1d7b1",
+      "ee50b228034b7a11b163d303224b78ac04b965c90cecccb4ff4e2451a1b340e2",
+      "ce6a40a0e995a7b3c4be0e21c4e5afa9a574708fde5ad1a935cf61723ff43730",
+      "bfbdf6709d99ff140d5b08806d8b27b53f723e58977872241b7bd6fbe518ea66",
+      "2728e8fd70f9fa4f83c4f3992abc8c6c806b6e9c39d00c8cea7f284ed0c5859a",
+      "e55a182b02faec997e7eca510743e74c1ea30daf092a45349fccbcde336aceca",
+      "de0b4d2f5c243e6ab11f682d18083ae3fd9363ff7ec2de2f79996f4cf20d581d",
+      "bcc8e0552cc83e574b34157dab8428b2c0deb61933e7021d80e27c1abd687330",
+      "02cec875c1ad4558d2b7e660346d003c73a2c5cf65f7dd24d151797e6125d476",
+      "23917ef62340757716415e052a285d804a3697dbe296aa148ca52ab567763627",
+      "ef5be4ea797c38dc978568a031f5ee2ea464cf90447d006df52ac79257dc8679",
+      "9564e9e3b96c0f7ee92c785617202b0f5534da3f4017966df26d5c94df90d143"
+    ],
+    "factor": 1.6,
+    "padding": 64,
+    "changedFrames": [
+      12,
+      13,
+      14,
+      15
+    ],
+    "unchangedFrames": 20
+  }
+}

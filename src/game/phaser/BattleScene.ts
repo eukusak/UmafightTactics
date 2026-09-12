@@ -7,7 +7,7 @@ import { assetUrl, portraitUrl, standeeUrl, animationFrame, type AnimationName }
 import { movingPoint } from '../ui/board-projection';
 import { orientSnapshot, samplePosition, effectProgress, frameAt, attackExtension } from '../ui/battle-playback';
 import { STATUS_PRESENTATION } from '../ui/status-presentation';
-import { FRAME_SHEETS, frameSheetUrl, motionFrame, skillMotionFrame } from '../ui/frame-animation';
+import { FRAME_SHEETS, frameSheetUrl, frameGeometry, motionFrame, skillMotionFrame } from '../ui/frame-animation';
 import { skillDuration } from '../engine/battle/skill-timeline';
 import { skillLabel } from '../ui/skill-presentation';
 
@@ -192,6 +192,10 @@ export class BattleScene extends Phaser.Scene {
     }
     const size = sheet ? 110 : fullBody ? 148 : 64;
     const body = this.add.image(0, 0, texture).setOrigin(.5, fullBody ? 440 / 512 : 1).setDisplaySize(size, size);
+    if (FRAME_SHEETS[u.unitDefId]) {
+      const geometry = frameGeometry(u.unitDefId, size);
+      body.setOrigin(geometry.originX, geometry.originY).setDisplaySize(geometry.width, geometry.height);
+    }
     container.addAt(body, 2);
     container.add(this.add.text(0, 24, def.nameKo, { fontFamily: 'Noto Sans KR Variable, sans-serif', fontSize: '12px', color: '#fff5dc', stroke: '#0a1727', strokeThickness: 4 }).setOrigin(.5));
     container.add(this.add.text(0, fullBody && !sheet ? -130 : -83, '★'.repeat(u.star), { fontFamily: 'Noto Sans KR Variable, sans-serif', fontSize: '13px', color: '#ffdc84', stroke: '#17362a', strokeThickness: 3 }).setOrigin(.5));

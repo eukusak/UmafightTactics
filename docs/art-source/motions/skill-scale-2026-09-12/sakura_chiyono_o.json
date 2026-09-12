@@ -1,0 +1,525 @@
+{
+  "format": "uft-baked-frames-v1",
+  "columns": 4,
+  "rows": 6,
+  "frameWidth": 256,
+  "frameHeight": 256,
+  "anchor": [
+    128,
+    174
+  ],
+  "scale": 0.4233576642335766,
+  "runtimeSha256": "f94a769d816cc7d8f8da8c83e2e8e6124db0d6bf743407bba297ad3ad5f3606c",
+  "frames": [
+    {
+      "frame": 0,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/sakura_chiyono_o/generated.png",
+      "sourceSha256": "cc73764fa7055291b7e3bb8484b9008274a47ace2bc95242b32cb7918074ed4f",
+      "crop": [
+        57,
+        9,
+        204,
+        227
+      ],
+      "destination": [
+        97,
+        82,
+        62,
+        92
+      ]
+    },
+    {
+      "frame": 1,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/sakura_chiyono_o/generated.png",
+      "sourceSha256": "cc73764fa7055291b7e3bb8484b9008274a47ace2bc95242b32cb7918074ed4f",
+      "crop": [
+        314,
+        12,
+        463,
+        226
+      ],
+      "destination": [
+        352,
+        83,
+        63,
+        91
+      ]
+    },
+    {
+      "frame": 2,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/sakura_chiyono_o/generated.png",
+      "sourceSha256": "cc73764fa7055291b7e3bb8484b9008274a47ace2bc95242b32cb7918074ed4f",
+      "crop": [
+        563,
+        10,
+        714,
+        224
+      ],
+      "destination": [
+        608,
+        83,
+        64,
+        91
+      ]
+    },
+    {
+      "frame": 3,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/sakura_chiyono_o/generated.png",
+      "sourceSha256": "cc73764fa7055291b7e3bb8484b9008274a47ace2bc95242b32cb7918074ed4f",
+      "crop": [
+        826,
+        10,
+        970,
+        226
+      ],
+      "destination": [
+        865,
+        83,
+        61,
+        91
+      ]
+    },
+    {
+      "frame": 4,
+      "sourceFrame": 4,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/sakura_chiyono_o/generated.png",
+      "sourceSha256": "cc73764fa7055291b7e3bb8484b9008274a47ace2bc95242b32cb7918074ed4f",
+      "crop": [
+        41,
+        264,
+        230,
+        482
+      ],
+      "destination": [
+        88,
+        338,
+        80,
+        92
+      ]
+    },
+    {
+      "frame": 5,
+      "sourceFrame": 5,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/sakura_chiyono_o/generated.png",
+      "sourceSha256": "cc73764fa7055291b7e3bb8484b9008274a47ace2bc95242b32cb7918074ed4f",
+      "crop": [
+        298,
+        263,
+        484,
+        481
+      ],
+      "destination": [
+        344,
+        338,
+        79,
+        92
+      ]
+    },
+    {
+      "frame": 6,
+      "sourceFrame": 6,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/sakura_chiyono_o/generated.png",
+      "sourceSha256": "cc73764fa7055291b7e3bb8484b9008274a47ace2bc95242b32cb7918074ed4f",
+      "crop": [
+        548,
+        263,
+        740,
+        484
+      ],
+      "destination": [
+        599,
+        336,
+        81,
+        94
+      ]
+    },
+    {
+      "frame": 7,
+      "sourceFrame": 7,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/sakura_chiyono_o/generated.png",
+      "sourceSha256": "cc73764fa7055291b7e3bb8484b9008274a47ace2bc95242b32cb7918074ed4f",
+      "crop": [
+        809,
+        264,
+        996,
+        484
+      ],
+      "destination": [
+        856,
+        337,
+        79,
+        93
+      ]
+    },
+    {
+      "frame": 8,
+      "sourceFrame": 8,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/sakura_chiyono_o/generated.png",
+      "sourceSha256": "cc73764fa7055291b7e3bb8484b9008274a47ace2bc95242b32cb7918074ed4f",
+      "crop": [
+        49,
+        517,
+        204,
+        738
+      ],
+      "destination": [
+        95,
+        592,
+        66,
+        94
+      ]
+    },
+    {
+      "frame": 9,
+      "sourceFrame": 9,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/sakura_chiyono_o/generated.png",
+      "sourceSha256": "cc73764fa7055291b7e3bb8484b9008274a47ace2bc95242b32cb7918074ed4f",
+      "crop": [
+        295,
+        518,
+        481,
+        739
+      ],
+      "destination": [
+        344,
+        592,
+        79,
+        94
+      ]
+    },
+    {
+      "frame": 10,
+      "sourceFrame": 10,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/sakura_chiyono_o/generated.png",
+      "sourceSha256": "cc73764fa7055291b7e3bb8484b9008274a47ace2bc95242b32cb7918074ed4f",
+      "crop": [
+        543,
+        520,
+        733,
+        738
+      ],
+      "destination": [
+        600,
+        594,
+        80,
+        92
+      ]
+    },
+    {
+      "frame": 11,
+      "sourceFrame": 11,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/sakura_chiyono_o/generated.png",
+      "sourceSha256": "cc73764fa7055291b7e3bb8484b9008274a47ace2bc95242b32cb7918074ed4f",
+      "crop": [
+        816,
+        519,
+        985,
+        740
+      ],
+      "destination": [
+        860,
+        592,
+        72,
+        94
+      ]
+    },
+    {
+      "frame": 12,
+      "sourceFrame": 12,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/sakura_chiyono_o/generated.png",
+      "sourceSha256": "cc73764fa7055291b7e3bb8484b9008274a47ace2bc95242b32cb7918074ed4f",
+      "crop": [
+        44,
+        816,
+        215,
+        969
+      ],
+      "destination": [
+        85,
+        864,
+        86,
+        78
+      ]
+    },
+    {
+      "frame": 13,
+      "sourceFrame": 13,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/sakura_chiyono_o/generated.png",
+      "sourceSha256": "cc73764fa7055291b7e3bb8484b9008274a47ace2bc95242b32cb7918074ed4f",
+      "crop": [
+        266,
+        812,
+        490,
+        968
+      ],
+      "destination": [
+        327,
+        863,
+        114,
+        79
+      ]
+    },
+    {
+      "frame": 14,
+      "sourceFrame": 14,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/sakura_chiyono_o/generated.png",
+      "sourceSha256": "cc73764fa7055291b7e3bb8484b9008274a47ace2bc95242b32cb7918074ed4f",
+      "crop": [
+        517,
+        812,
+        791,
+        968
+      ],
+      "destination": [
+        570,
+        863,
+        139,
+        79
+      ]
+    },
+    {
+      "frame": 15,
+      "sourceFrame": 15,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/sakura_chiyono_o/generated.png",
+      "sourceSha256": "cc73764fa7055291b7e3bb8484b9008274a47ace2bc95242b32cb7918074ed4f",
+      "crop": [
+        818,
+        812,
+        988,
+        971
+      ],
+      "destination": [
+        853,
+        862,
+        86,
+        80
+      ]
+    },
+    {
+      "frame": 16,
+      "sourceFrame": 16,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/sakura_chiyono_o/generated.png",
+      "sourceSha256": "cc73764fa7055291b7e3bb8484b9008274a47ace2bc95242b32cb7918074ed4f",
+      "crop": [
+        45,
+        1014,
+        207,
+        1225
+      ],
+      "destination": [
+        93,
+        1109,
+        69,
+        89
+      ]
+    },
+    {
+      "frame": 17,
+      "sourceFrame": 17,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/sakura_chiyono_o/generated.png",
+      "sourceSha256": "cc73764fa7055291b7e3bb8484b9008274a47ace2bc95242b32cb7918074ed4f",
+      "crop": [
+        295,
+        1037,
+        476,
+        1222
+      ],
+      "destination": [
+        345,
+        1120,
+        77,
+        78
+      ]
+    },
+    {
+      "frame": 18,
+      "sourceFrame": 18,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/sakura_chiyono_o/generated.png",
+      "sourceSha256": "cc73764fa7055291b7e3bb8484b9008274a47ace2bc95242b32cb7918074ed4f",
+      "crop": [
+        548,
+        1033,
+        722,
+        1219
+      ],
+      "destination": [
+        603,
+        1119,
+        74,
+        79
+      ]
+    },
+    {
+      "frame": 19,
+      "sourceFrame": 19,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/sakura_chiyono_o/generated.png",
+      "sourceSha256": "cc73764fa7055291b7e3bb8484b9008274a47ace2bc95242b32cb7918074ed4f",
+      "crop": [
+        783,
+        1113,
+        1008,
+        1217
+      ],
+      "destination": [
+        848,
+        1154,
+        95,
+        44
+      ]
+    },
+    {
+      "frame": 20,
+      "sourceFrame": 20,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/sakura_chiyono_o/generated.png",
+      "sourceSha256": "cc73764fa7055291b7e3bb8484b9008274a47ace2bc95242b32cb7918074ed4f",
+      "crop": [
+        46,
+        1256,
+        205,
+        1495
+      ],
+      "destination": [
+        94,
+        1353,
+        67,
+        101
+      ]
+    },
+    {
+      "frame": 21,
+      "sourceFrame": 21,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/sakura_chiyono_o/generated.png",
+      "sourceSha256": "cc73764fa7055291b7e3bb8484b9008274a47ace2bc95242b32cb7918074ed4f",
+      "crop": [
+        305,
+        1255,
+        473,
+        1495
+      ],
+      "destination": [
+        348,
+        1352,
+        71,
+        102
+      ]
+    },
+    {
+      "frame": 22,
+      "sourceFrame": 22,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/sakura_chiyono_o/generated.png",
+      "sourceSha256": "cc73764fa7055291b7e3bb8484b9008274a47ace2bc95242b32cb7918074ed4f",
+      "crop": [
+        548,
+        1256,
+        728,
+        1499
+      ],
+      "destination": [
+        602,
+        1351,
+        76,
+        103
+      ]
+    },
+    {
+      "frame": 23,
+      "sourceFrame": 23,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/sakura_chiyono_o/generated.png",
+      "sourceSha256": "cc73764fa7055291b7e3bb8484b9008274a47ace2bc95242b32cb7918074ed4f",
+      "crop": [
+        815,
+        1259,
+        973,
+        1496
+      ],
+      "destination": [
+        862,
+        1354,
+        67,
+        100
+      ]
+    }
+  ],
+  "identityRevision": {
+    "review": "docs/art-source/motions/identity-revisions-2026-09-12/sakura_chiyono_o/review.json",
+    "baselineRuntimeSha256": "4e5bbd7a66642f0262517cabe4415b8082f804bcc36f3c2f4ab86177e42c5d8a",
+    "previousPacking": "docs/art-source/motions/skill-revisions-2026-09-11/sakura_chiyono_o/packing.json",
+    "portrait": "public/assets/portraits/sakura_chiyono_o.png",
+    "portraitSha256": "1b5d48cec7d1a4737da989e238847abf1b7eeb8f7f92df54b0f09f68ad84f66f",
+    "changedFrames": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23
+    ],
+    "alpha": {
+      "transparentFraction": 0.6028664906819662,
+      "solidFraction": 0.2685496012369792
+    }
+  },
+  "logicalFrameSize": 128,
+  "scaleRevision": {
+    "review": "docs/art-source/motions/skill-scale-2026-09-12/review.json",
+    "previousPacking": "docs/art-source/motions/identity-revisions-2026-09-12/sakura_chiyono_o/packing.json",
+    "baselineRuntimeSha256": "3ee93f461d91b0bef4be66063b916668224a25933e11e80383c8d34b5ffbe406",
+    "baselineFrames": [
+      "c7a936057eea1b45c903fe3f427db0dab2a86b4b7ff19c42453bea3f74e0759b",
+      "0dd649050d52ea277ded45b0311e2550a76a1b13fbc574b44bffa4205e879e0d",
+      "077ec701ba4cdeffd3ec482df18bf9b8da7b1632149afb25db466d65189cc4ca",
+      "47482b0967a6b64292196a7fee726f1673be5022b5a00f128c861d241348cad4",
+      "c7b00b2ac2d0f17241c67849151f691d8e0f1ad99572b9ab01acdfd542ccfa4c",
+      "8afb9429446108ed0f4bc7a87b5d8b295937666a05c45e84c0ae041403e8aeca",
+      "c1be5b14730bd9ec4e1fab374eef8f387d049acae21ff5702d6a188a0db66a20",
+      "eddaedd8f6876b453e35d49192942f5f4356a357a5d453f24a0c113d4afb03b1",
+      "55ffcce4d96184a00dffdf86d51daf99a970bc7e49e7c02edec1e3fe5012cd6e",
+      "fac649243f0f538e93711e68eb3563bfd0d103fbd14cc0a22b72014019b88ba6",
+      "d084f29a5fe77a1de03fa7f7ad38dbb7b937c90b274f5578da14ab97a2bf1388",
+      "52d0c9a27e6b896aacdd80127ea4894272caaf8fcbbcb95bd09df80d719775c3",
+      "0ffc5ec10430d2e82679396cebdf136602466c8801d78928787162ab1721896f",
+      "9ce1578527b12d424b9673dedf42f2b54392062226b00df020ed79060d1e34d2",
+      "f95fd30149c7053f920cc7909e28739b0c21900d3b88bc2a589c6676aa122bff",
+      "b29648325c06e5de1e57c906a8127b99fe55463fb02a2d720a06ac80328bcc85",
+      "fad336c4322cf3a95cf100e790811ad268a04316df3526ff0acc124757024a56",
+      "f9d99f9f661465bee75342043f5657b46da818c0b634ba0a7e492e02742d3f52",
+      "889ebd0094be03f93ce6af6ffd7f422d9362a8892f275af15b8051430563f6f7",
+      "099ea66d07731013c93edc346fb1fa3af5699ba0a63a30ff8feffabb92a483c9",
+      "94f31006a2e2f2e7ebc367226e56386ce72b501908450a4719a8415df22e05fe",
+      "37b0a2439547ae11e30a100093b74ca2ee44ec25f810425d4faee4571162a5ec",
+      "e07cdfa469611f7322cd83b85a0ec708d3c5fb48ec189e2e1909e63d7cec4141",
+      "e4d752463fe41981470e2e16238f3ddcae0af241ed9ee16dc223497123dbf2ef"
+    ],
+    "factor": 1.2,
+    "padding": 64,
+    "changedFrames": [
+      12,
+      13,
+      14,
+      15
+    ],
+    "unchangedFrames": 20
+  }
+}

@@ -20,7 +20,7 @@ describe('generated frame animation playback', () => {
       expect(sheet.skillId).toBe(skill.id);
       expect(sheet.skillSignature, `${id}: skill changed; review drawings`).toBe(createHash('sha256').update(JSON.stringify(skill)).digest('hex'));
       const png = readFileSync(`public/assets/${sheet.file}`);
-      expect([png.readUInt32BE(16), png.readUInt32BE(20), png[25]]).toEqual([512, 768, 6]);
+      expect([png.readUInt32BE(16), png.readUInt32BE(20), png[25]]).toEqual([sheet.frameWidth * sheet.columns, sheet.frameHeight * sheet.rows, 6]);
       const packing = JSON.parse(readFileSync(sheet.source, 'utf8'));
       if (skill.choreography) {
         expect(sheet.skillCompatibilityReview).toBeDefined();

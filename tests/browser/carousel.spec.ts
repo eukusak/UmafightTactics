@@ -63,9 +63,10 @@ test('carousel requires walking, supports arrows and floor clicks, then shows an
   await page.locator('.bench-slot.filled').first().hover(); await page.keyboard.press('w');
   const idle = page.locator('.arena-unit .animated-unit').first();
   await expect(idle).toHaveAttribute('data-animation', 'idle');
-  await expect(idle).toHaveCSS('background-image', /assets\/motions\//);
-  const frame = await idle.evaluate(e => getComputedStyle(e).backgroundPositionX);
-  await expect.poll(() => idle.evaluate(e => getComputedStyle(e).backgroundPositionX)).not.toBe(frame);
+  const pixels = idle.locator('.animated-unit-frames');
+  await expect(pixels).toHaveCSS('background-image', /assets\/motions\//);
+  const frame = await pixels.evaluate(e => getComputedStyle(e).backgroundPositionX);
+  await expect.poll(() => pixels.evaluate(e => getComputedStyle(e).backgroundPositionX)).not.toBe(frame);
   await expect(page.locator('.arena-unit .arena-unit-portrait, .arena-unit .arena-standee')).toHaveCount(0);
   await page.screenshot({ path: info.outputPath('field-idle.png') });
   const sounds = () => page.evaluate(() => (window as unknown as { __soundCalls: string[] }).__soundCalls);
