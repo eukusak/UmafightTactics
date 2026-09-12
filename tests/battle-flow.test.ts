@@ -91,7 +91,7 @@ describe('store battle lifecycle and scouting', () => {
     expect(useGameStore.getState().battleRunning).toBe(false);
   });
 
-  it('finishes the remaining AI standings after the human is eliminated', () => {
+  it('shows the elimination result without advancing the surviving AI players', () => {
     const store = useGameStore.getState();
     store.match!.stage = 2; store.match!.round = 1;
     store.human()!.hp = 1; store.human()!.board = []; store.human()!.bench = [];
@@ -99,7 +99,9 @@ describe('store battle lifecycle and scouting', () => {
     expect(store.human()!.eliminatedAtRound).not.toBeNull();
     store.finishBattle();
     expect(useGameStore.getState().screen).toBe('RESULT');
-    expect(store.match!.finalStandings).toHaveLength(8);
+    expect(store.match!.history).toHaveLength(1);
+    expect(store.match!.phase).toBe('ROUND_RESOLVE');
+    expect(store.human()!.finalLineup).toBeDefined();
   });
 
   it('fields every AI starter after the human completes the opening draft', () => {

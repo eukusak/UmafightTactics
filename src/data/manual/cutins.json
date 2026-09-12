@@ -1,90 +1,98 @@
 {
-  "kitasan_black": {
-    "file": "characters/cutin/kitasan_black.png",
-    "source": "docs/art-source/cutins/kitasan_black.png",
-    "sourceSha256": "1ee9464f6c2625b3be03f8b207dd8d8e478ceb3b829b77af0603d927671b4e76",
-    "size": [
-      960,
-      540
-    ],
-    "leftClearPixels": 384,
-    "status": "static-skill-illustration; not-rigged-model"
-  },
-  "almond_eye": {
-    "file": "characters/cutin/almond_eye.png",
-    "source": "docs/art-source/cutins/almond_eye.png",
-    "sourceSha256": "85bf1bd3344293d0edd2c1e2866b886854b76f67de432efa54a2b6bc481698b8",
-    "size": [
-      960,
-      540
-    ],
-    "leftClearPixels": 384,
-    "status": "static-skill-illustration; not-rigged-model"
-  },
   "special_week": {
     "file": "characters/cutin/special_week.png",
-    "source": "docs/art-source/cutins/special_week.png",
-    "sourceSha256": "eb69d1f5cfe8869e8b0abb22854f010468b6242572dc8c69974d64d2857dc8e7",
+    "source": "docs/art-source/cutins/legendary-2026-09-12/special_week.png",
+    "sourceSha256": "89ee8120a069194ceec5fd5e34de202dea3d9e98da8176760b3b2d8d81666235",
     "size": [
       960,
       540
     ],
-    "leftClearPixels": 384,
-    "status": "static-skill-illustration; not-rigged-model"
-  },
-  "maruzensky": {
-    "file": "characters/cutin/maruzensky.png",
-    "source": "docs/art-source/cutins/maruzensky.png",
-    "sourceSha256": "684b8c2d8e0fa3fd3fcdc9f48e0a61c340bdc73dc12caf5b4243f01670248f0d",
-    "size": [
-      960,
-      540
-    ],
-    "leftClearPixels": 384,
-    "status": "static-skill-illustration; not-rigged-model"
+    "leftClearPixels": 75,
+    "status": "generated-cinematic-skill-panel; aspect-preserving-fit; static-illustration",
+    "method": "Built-in image_gen; painted background and transparent fit padding. Original face portraits unchanged."
   },
   "daiwa_scarlet": {
     "file": "characters/cutin/daiwa_scarlet.png",
-    "source": "docs/art-source/cutins/daiwa_scarlet.png",
-    "sourceSha256": "0cba3d483e7f540e9896052287bd5648bcbeaa2160dfb329efdc935e4b00bc9e",
+    "source": "docs/art-source/cutins/legendary-2026-09-12/daiwa_scarlet.png",
+    "sourceSha256": "9680425406495a146258ecf484ba8eaef5368df6025e0a3b9bd0cd35a74b3e71",
     "size": [
       960,
       540
     ],
-    "leftClearPixels": 384,
-    "status": "static-skill-illustration; not-rigged-model"
+    "leftClearPixels": 75,
+    "status": "generated-cinematic-skill-panel; aspect-preserving-fit; static-illustration",
+    "method": "Built-in image_gen; painted background and transparent fit padding. Original face portraits unchanged."
   },
   "taiki_shuttle": {
     "file": "characters/cutin/taiki_shuttle.png",
-    "source": "docs/art-source/cutins/taiki_shuttle.png",
-    "sourceSha256": "b03a998ee940e5033416ed54f7e6e5eee1c8565dd218252ade3635068b3f176f",
+    "source": "docs/art-source/cutins/legendary-2026-09-12/taiki_shuttle.png",
+    "sourceSha256": "7fae0508c71a5ddd1693e1f56ab0147d7bbdbe5cfb175d6d19a0f6999029bac6",
     "size": [
       960,
       540
     ],
-    "leftClearPixels": 384,
-    "status": "static-skill-illustration; not-rigged-model"
+    "leftClearPixels": 75,
+    "status": "generated-cinematic-skill-panel; aspect-preserving-fit; static-illustration",
+    "method": "Built-in image_gen; painted background and transparent fit padding. Original face portraits unchanged."
   },
   "tm_opera_o": {
     "file": "characters/cutin/tm_opera_o.png",
-    "source": "docs/art-source/cutins/tm_opera_o.png",
-    "sourceSha256": "407d5a2725aaad2b456df68ea5982c1ac376af5f6ea899b40ca3e984944c3895",
+    "source": "docs/art-source/cutins/legendary-2026-09-12/tm_opera_o.png",
+    "sourceSha256": "b34718bd2c057ad94f63f48dc16ac1a2c2ef2015b710d1096220aa061239ec17",
     "size": [
       960,
       540
     ],
-    "leftClearPixels": 384,
-    "status": "static-skill-illustration; not-rigged-model"
+    "leftClearPixels": 75,
+    "status": "generated-cinematic-skill-panel; aspect-preserving-fit; static-illustration",
+    "method": "Built-in image_gen; painted background and transparent fit padding. Original face portraits unchanged."
   },
   "mihono_bourbon": {
     "file": "characters/cutin/mihono_bourbon.png",
-    "source": "docs/art-source/cutins/mihono_bourbon.png",
-    "sourceSha256": "22579239ff22977a932fb6d57971903f9efb80c8bbb78b10e6b0a85e74294d0f",
+    "source": "docs/art-source/cutins/legendary-2026-09-12/mihono_bourbon.png",
+    "sourceSha256": "dd1eb954030c61b192304bee795b0060ab33f03e04f4d7e59958bf4274b9036d",
     "size": [
       960,
       540
     ],
-    "leftClearPixels": 384,
-    "status": "static-skill-illustration; not-rigged-model"
+    "leftClearPixels": 75,
+    "status": "generated-cinematic-skill-panel; aspect-preserving-fit; static-illustration",
+    "method": "Built-in image_gen; painted background and transparent fit padding. Original face portraits unchanged."
+  },
+  "symboli_kris_s": {
+    "file": "characters/cutin/symboli_kris_s.png",
+    "source": "docs/art-source/cutins/legendary-2026-09-12/symboli_kris_s.png",
+    "sourceSha256": "5d7d0e8bd86de5d266050b4457e6e03c1e7e934ba44404d3a1958632431a26fa",
+    "size": [
+      960,
+      540
+    ],
+    "leftClearPixels": 75,
+    "status": "generated-cinematic-skill-panel; aspect-preserving-fit; static-illustration",
+    "method": "Built-in image_gen; painted background and transparent fit padding. Original face portraits unchanged."
+  },
+  "symboli_rudolf": {
+    "file": "characters/cutin/symboli_rudolf.png",
+    "source": "docs/art-source/cutins/legendary-2026-09-12/symboli_rudolf.png",
+    "sourceSha256": "ad396979dff803e772e3a5f0a12937b7b2b8497ba1a28aec379bd4ffcb81cbf3",
+    "size": [
+      960,
+      540
+    ],
+    "leftClearPixels": 75,
+    "status": "generated-cinematic-skill-panel; aspect-preserving-fit; static-illustration",
+    "method": "Built-in image_gen; painted background and transparent fit padding. Original face portraits unchanged."
+  },
+  "buena_vista": {
+    "file": "characters/cutin/buena_vista.png",
+    "source": "docs/art-source/cutins/legendary-2026-09-12/buena_vista.png",
+    "sourceSha256": "7d22032f1829e53bd73c6fc088b21a12f02262fb192c6011a6cc405166ded025",
+    "size": [
+      960,
+      540
+    ],
+    "leftClearPixels": 75,
+    "status": "generated-cinematic-skill-panel; aspect-preserving-fit; static-illustration",
+    "method": "Built-in image_gen; painted background and transparent fit padding. Original face portraits unchanged."
   }
 }

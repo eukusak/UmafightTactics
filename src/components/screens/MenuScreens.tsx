@@ -183,48 +183,4 @@ export function SettingsScreen(): JSX.Element {
   );
 }
 
-export function ResultScreen(): JSX.Element {
-  const match = useGameStore((s) => s.match);
-  const setScreen = useGameStore((s) => s.setScreen);
-  const abandon = useGameStore((s) => s.abandonMatch);
-  if (!match) return <div />;
-
-  const ordered = (match.finalStandings ?? []).map((id) => match.players.find((p) => p.id === id)!);
-  const human = match.players.find((p) => p.isHuman);
-
-  return (
-    <div className="menu-screen result-screen" style={{ justifyContent: 'flex-start', paddingTop: 50 }}>
-      <h1 className="menu-title" style={{ fontSize: 48 }}>
-        {human?.placement === 1 ? '우승!' : `${human?.placement ?? '-'}위`}
-      </h1>
-      <p className="menu-sub">최종 순위</p>
-      <div className="panel" style={{ padding: 20, width: 620 }}>
-        {ordered.map((p, i) => (
-          <div key={p.id} style={{
-            display: 'flex', alignItems: 'center', gap: 12, padding: '9px 6px',
-            borderBottom: '1px solid #24384a',
-            background: p.isHuman ? 'rgba(255,204,51,0.12)' : 'transparent',
-          }}>
-            <span style={{ width: 34, fontSize: 20, fontWeight: 800,
-              color: i === 0 ? 'var(--gold)' : 'var(--muted)' }}>{i + 1}</span>
-            <span style={{ flex: 1 }}>{p.name}</span>
-            <span className="muted" style={{ width: 90 }}>{p.aiProfile ?? '플레이어'}</span>
-            <span style={{ width: 60, textAlign: 'right' }}>체력 {Math.max(0, p.hp)}</span>
-            <span className="muted" style={{ width: 44, textAlign: 'right' }}>L{p.level}</span>
-          </div>
-        ))}
-      </div>
-      <div className="menu-buttons" style={{ marginTop: 20 }}>
-        <button className="btn-primary" onClick={() => { abandon(); setScreen('MATCH_SETUP'); }}>
-          새 게임
-        </button>
-        <button className="btn-ghost" onClick={() => { abandon(); setScreen('MAIN_MENU'); }}>
-          메인 메뉴
-        </button>
-      </div>
-      <p className="muted" style={{ marginTop: 14, fontSize: 12 }}>
-        시드 {match.seed} · {match.history.length} 라운드
-      </p>
-    </div>
-  );
-}
+export { ResultScreen } from './ResultScreen';

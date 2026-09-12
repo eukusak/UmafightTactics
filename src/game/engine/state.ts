@@ -20,6 +20,12 @@ export type UnitInstance = {
 
 export type ItemInstance = { instanceId: string; itemId: string };
 
+/** Public field only; no bench, shop, inventory or pool copies are owned here. */
+export type ResultLineup = {
+  playerId: string; stage: number; round: number; level: number; hp: number;
+  units: UnitInstance[];
+};
+
 export type ShopSlot = { unitDefId: string | null; sold: boolean };
 
 export type AiProfileId =
@@ -60,6 +66,7 @@ export type PlayerState = {
   pendingGrants: PendingGrant[];
   /** Secondary trait handed out by the 이중 적성 augment. */
   bonusTraits: Array<{ instanceId: string; trait: TraitId }>;
+  finalLineup?: ResultLineup;
 };
 
 export type PendingGrant =
@@ -159,6 +166,8 @@ export type MatchState = {
   history: RoundResolution[];
   /** Set once the match ends: player ids ordered 1st..8th. */
   finalStandings: string[] | null;
+  /** One immutable public-field snapshot per elimination round. */
+  eliminationLineups?: Record<number, ResultLineup[]>;
 };
 
 export const isAlive = (p: PlayerState): boolean => p.hp > 0 && p.eliminatedAtRound === null;

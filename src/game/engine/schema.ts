@@ -138,7 +138,6 @@ export const ArtManifestSchema = z.object({
     portrait: z.string(),
     battleSheet: z.string(),
     cutinRequired: z.boolean(),
-    cutinPortrait: z.string().optional(),
   })),
   items: z.array(z.string()),
   traits: z.array(z.string()),

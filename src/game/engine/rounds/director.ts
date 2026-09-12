@@ -1,4 +1,5 @@
 import { draftValue, publicBoards } from '../ai/strategy';
+import { captureLineup } from './result-lineups';
 import { createCarousel, advanceCarousel as advanceCarouselState } from './carousel';
 /**
  * The single owner of match state transitions (spec §32).
@@ -361,6 +362,12 @@ export class RoundDirector {
     // Lowest HP is eliminated "first" and so takes the worst remaining place.
     dying.sort((a, b) => a.hp - b.hp || a.id.localeCompare(b.id));
     const stillInMatch = s.players.filter((p) => p.eliminatedAtRound === null).length;
+    // Record before returning copies or granting next-round income/XP.
+    if (dying.length) {
+      const lineups = s.players.map(p => p.finalLineup ?? captureLineup(p, s.stage, s.round));
+      (s.eliminationLineups ??= {})[roundKey] = lineups;
+      for (const p of dying) p.finalLineup = lineups.find(lineup => lineup.playerId === p.id)!;
+    }
     dying.forEach((p, i) => {
       p.eliminatedAtRound = roundKey;
       p.placement = stillInMatch - i;
@@ -582,6 +589,8 @@ export class RoundDirector {
     // Whoever is still standing takes the best remaining places.
     const living = livingPlayers(s).sort((a, b) => b.hp - a.hp || a.id.localeCompare(b.id));
     living.forEach((p, i) => { p.placement = i + 1; });
+    const finalRound = s.eliminationLineups?.[absoluteRound(s.stage, s.round)];
+    for (const p of living) p.finalLineup ??= finalRound?.find(lineup => lineup.playerId === p.id) ?? captureLineup(p, s.stage, s.round);
     // Anyone still standing shares first place; eliminated players keep theirs.
     s.finalStandings = s.players
       .slice()

@@ -6,6 +6,7 @@ import { newInstance, rollShop } from '../../src/game/engine/shop';
 import { take } from '../../src/game/engine/pool';
 import { COMPONENT_IDS } from '../../src/game/engine/items/item-defs';
 import { createAugmentOffers } from '../../src/game/engine/augments/offers';
+import { resultSave } from './result-save';
 import { Rng } from '../../src/game/engine/rng';
 const mode = process.argv[2];
 const state = createMatch({ seed: 2209 });
@@ -48,4 +49,4 @@ if (mode === 'trait-chase') {
 }
 p.shop = rollShop(p, state.pool, new Rng(9001));
 if (mode === 'augment') { state.stage = 2; state.round = 1; state.augmentOffers = createAugmentOffers(state, new Rng(91)); state.phase = 'AUGMENT_SELECT'; }
-console.log(JSON.stringify(serializeMatch(director)));
+console.log(JSON.stringify(mode.startsWith('result-') ? resultSave(mode === 'result-eliminated') : serializeMatch(director)));

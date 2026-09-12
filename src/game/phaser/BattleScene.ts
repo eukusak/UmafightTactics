@@ -3,13 +3,14 @@ import Phaser from 'phaser';
 import type { BattleFrame, BattleEvent } from '../engine/battle/engine';
 import { getUnitDef } from '../engine/roster';
 import { costColor, initialOf } from './fallback-art';
-import { assetUrl, portraitUrl, standeeUrl, animationFrame, type AnimationName } from '../ui/art';
+import { assetUrl, cutinUrl, portraitUrl, standeeUrl, animationFrame, type AnimationName } from '../ui/art';
 import { movingPoint } from '../ui/board-projection';
 import { orientSnapshot, samplePosition, effectProgress, frameAt, attackExtension } from '../ui/battle-playback';
 import { STATUS_PRESENTATION } from '../ui/status-presentation';
 import { FRAME_SHEETS, frameSheetUrl, frameGeometry, motionFrame, skillMotionFrame } from '../ui/frame-animation';
 import { skillDuration } from '../engine/battle/skill-timeline';
 import { skillLabel } from '../ui/skill-presentation';
+import { drawLegendaryFeedback, legendaryFeedback, LEGENDARY_FEEDBACK_SECONDS } from '../ui/legendary-skill-feedback';
 import { COST_SKILL_PRESENTATION } from '../ui/cost-skill-presentation';
 
 type Snapshot = BattleFrame['units'][number];
@@ -70,7 +71,7 @@ export class BattleScene extends Phaser.Scene {
       const frames = frameSheetUrl(id);
       const sheet = assetUrl(`characters/${id}.png`) ?? (id.startsWith('pve_') ? assetUrl(`pve/${id.slice(4)}.png`) : null);
       const portrait = portraitUrl(id);
-      const cutin = getUnitDef(id).cost === 5 ? assetUrl(`characters/cutin/${id}.png`) ?? portrait : null;
+      const cutin = cutinUrl(id, getUnitDef(id).cost);
       if (cutin) this.load.image(`cutin:${id}`, cutin);
       if (frames) this.load.spritesheet(`sheet:${id}`, frames, { frameWidth: FRAME_SHEETS[id].frameWidth, frameHeight: FRAME_SHEETS[id].frameHeight });
       else if (id.startsWith('pve_') && standeeUrl(id)) this.load.image(`standee:${id}`, standeeUrl(id)!);
@@ -325,7 +326,7 @@ export class BattleScene extends Phaser.Scene {
       if (def.cost === 5 && unit.id.startsWith(`${this.humanId}#`) && event.t - this.lastCutinAt >= 5 && this.textures.exists(`cutin:${unit.unitDefId}`)) {
         this.lastCutinAt = event.t;
         const cutin = this.add.image(1300, 20, `cutin:${unit.unitDefId}`).setOrigin(1, 0).setDepth(850);
-        // Promoted units reuse their approved square portrait without stretching faces.
+        // All legendary panels preserve their source aspect ratio.
         const image = cutin.texture.getSourceImage();
         cutin.setDisplaySize(225 * image.width / image.height, 225);
         this.track(cutin, event.t, .85, (t) => cutin.setX(1300 + 24 * (1 - Math.min(1, t * 6))).setAlpha(Math.min(1, t * 8, (1 - t) * 4)));
@@ -364,6 +365,22 @@ export class BattleScene extends Phaser.Scene {
     const signature = def.skill.choreography;
     const accent = tint(signature?.accent ?? '#ffffff');
     const points = event.targets.map(id => this.actors.get(id)).filter((a): a is NonNullable<typeof a> => !!a).map(a => ({ x: a.container.x, y: a.container.y - 22 * a.container.scaleX }));
+    if (source && event.kind === 'DAMAGE' && points.length && legendaryFeedback(def.id, def.cost, 0)) {
+      const origin = { x: source.container.x, y: source.container.y - 22 * source.container.scaleX };
+      const feedback = this.add.graphics().setDepth(822);
+      this.track(feedback, event.t, LEGENDARY_FEEDBACK_SECONDS, p => {
+        feedback.clear();
+        drawLegendaryFeedback(feedback, def.id, def.cost, origin, points, p * LEGENDARY_FEEDBACK_SECONDS, source.container.scaleX);
+      });
+      // Echo the authored release pose; never stretch, recolor, or rotate the body.
+      for (let i = 0; i < 2; i++) {
+        const body = source.body;
+        const echo = this.add.image(0, 0, body.texture.key, 14).setOrigin(body.originX, body.originY)
+          .setScale(source.bodyScaleX, source.bodyScaleY).setFlipX(body.flipX).setAlpha(.18);
+        source.container.addAt(echo, 0);
+        this.track(echo, event.t, .22, p => echo.setX(-source.facing * (i + 1) * (3 + p * 7)).setAlpha((1 - p) * .18));
+      }
+    }
     if (source && points.length && (event.shape || event.kind === 'DASH')) {
       const origin = { x: source.container.x, y: source.container.y - 22 * source.container.scaleX };
       const geometry = this.add.graphics().setDepth(818);
