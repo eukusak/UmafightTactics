@@ -14,7 +14,7 @@ director.beginPrep();
 state.draft = null; state.augmentOffers = []; state.phase = 'ROUND_PREP';
 const p = state.players.find(p => p.isHuman)!;
 p.gold = 100; p.level = mode === 'recap' ? 8 : 1;
-const units = getSeasonUnits(state.seasonId).filter(d => d.cost === 2);
+const units = getSeasonUnits(state.seasonId).filter(d => mode === 'frame-scale' ? ['fuji_kiseki', 'air_groove', 'agnes_tachyon', 'sweep_tosho'].includes(d.id) : d.cost === 2);
 const count = mode === 'recap' ? 8 : 1;
 for (let i = 0; i < count; i++) {
   const d = units[i]; if (!take(state.pool, d.id, 1)) throw new Error('fixture pool');

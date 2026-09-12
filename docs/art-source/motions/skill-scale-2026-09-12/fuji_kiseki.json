@@ -1,0 +1,551 @@
+{
+  "format": "uft-baked-frames-v1",
+  "scale": 0.4279835390946502,
+  "anchor": [
+    128,
+    174
+  ],
+  "runtimeSha256": "f7239c1f9c56473607966a3543aa6c72907a9121eb8c4b60450d8c8c2b4d4db1",
+  "frames": [
+    {
+      "frame": 0,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/production-144/fuji_kiseki/alpha.png",
+      "sourceSha256": "75414088a4c006b57b76a72c951f893e463ca1dcb206691c3b23af349084597e",
+      "crop": [
+        74,
+        23,
+        222,
+        263
+      ],
+      "destination": [
+        96,
+        71,
+        63,
+        103
+      ]
+    },
+    {
+      "frame": 1,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/production-144/fuji_kiseki/alpha.png",
+      "sourceSha256": "75414088a4c006b57b76a72c951f893e463ca1dcb206691c3b23af349084597e",
+      "crop": [
+        336,
+        25,
+        476,
+        263
+      ],
+      "destination": [
+        354,
+        72,
+        60,
+        102
+      ]
+    },
+    {
+      "frame": 2,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/production-144/fuji_kiseki/alpha.png",
+      "sourceSha256": "75414088a4c006b57b76a72c951f893e463ca1dcb206691c3b23af349084597e",
+      "crop": [
+        566,
+        26,
+        711,
+        263
+      ],
+      "destination": [
+        609,
+        73,
+        62,
+        101
+      ]
+    },
+    {
+      "frame": 3,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/production-144/fuji_kiseki/alpha.png",
+      "sourceSha256": "75414088a4c006b57b76a72c951f893e463ca1dcb206691c3b23af349084597e",
+      "crop": [
+        823,
+        24,
+        956,
+        263
+      ],
+      "destination": [
+        867,
+        72,
+        57,
+        102
+      ]
+    },
+    {
+      "frame": 4,
+      "sourceFrame": 4,
+      "source": "docs/art-source/motions/production-144/fuji_kiseki/alpha.png",
+      "sourceSha256": "75414088a4c006b57b76a72c951f893e463ca1dcb206691c3b23af349084597e",
+      "crop": [
+        49,
+        292,
+        225,
+        510
+      ],
+      "destination": [
+        90,
+        337,
+        75,
+        93
+      ]
+    },
+    {
+      "frame": 5,
+      "sourceFrame": 5,
+      "source": "docs/art-source/motions/production-144/fuji_kiseki/alpha.png",
+      "sourceSha256": "75414088a4c006b57b76a72c951f893e463ca1dcb206691c3b23af349084597e",
+      "crop": [
+        297,
+        292,
+        482,
+        515
+      ],
+      "destination": [
+        344,
+        335,
+        79,
+        95
+      ]
+    },
+    {
+      "frame": 6,
+      "sourceFrame": 6,
+      "source": "docs/art-source/motions/production-144/fuji_kiseki/alpha.png",
+      "sourceSha256": "75414088a4c006b57b76a72c951f893e463ca1dcb206691c3b23af349084597e",
+      "crop": [
+        543,
+        292,
+        727,
+        515
+      ],
+      "destination": [
+        600,
+        335,
+        79,
+        95
+      ]
+    },
+    {
+      "frame": 7,
+      "sourceFrame": 7,
+      "source": "docs/art-source/motions/production-144/fuji_kiseki/alpha.png",
+      "sourceSha256": "75414088a4c006b57b76a72c951f893e463ca1dcb206691c3b23af349084597e",
+      "crop": [
+        788,
+        293,
+        968,
+        515
+      ],
+      "destination": [
+        857,
+        335,
+        77,
+        95
+      ]
+    },
+    {
+      "frame": 8,
+      "sourceFrame": 8,
+      "source": "docs/art-source/motions/production-144/fuji_kiseki/alpha.png",
+      "sourceSha256": "75414088a4c006b57b76a72c951f893e463ca1dcb206691c3b23af349084597e",
+      "crop": [
+        45,
+        531,
+        233,
+        771
+      ],
+      "destination": [
+        88,
+        583,
+        80,
+        103
+      ]
+    },
+    {
+      "frame": 9,
+      "sourceFrame": 9,
+      "source": "docs/art-source/motions/production-144/fuji_kiseki/alpha.png",
+      "sourceSha256": "75414088a4c006b57b76a72c951f893e463ca1dcb206691c3b23af349084597e",
+      "crop": [
+        302,
+        530,
+        495,
+        771
+      ],
+      "destination": [
+        342,
+        583,
+        83,
+        103
+      ]
+    },
+    {
+      "frame": 10,
+      "sourceFrame": 10,
+      "source": "docs/art-source/motions/production-144/fuji_kiseki/alpha.png",
+      "sourceSha256": "75414088a4c006b57b76a72c951f893e463ca1dcb206691c3b23af349084597e",
+      "crop": [
+        541,
+        538,
+        747,
+        771
+      ],
+      "destination": [
+        596,
+        586,
+        88,
+        100
+      ]
+    },
+    {
+      "frame": 11,
+      "sourceFrame": 11,
+      "source": "docs/art-source/motions/production-144/fuji_kiseki/alpha.png",
+      "sourceSha256": "75414088a4c006b57b76a72c951f893e463ca1dcb206691c3b23af349084597e",
+      "crop": [
+        818,
+        535,
+        974,
+        771
+      ],
+      "destination": [
+        862,
+        585,
+        67,
+        101
+      ]
+    },
+    {
+      "frame": 12,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/skill-revisions-2026-09-11/fuji_kiseki/generated.png",
+      "sourceSha256": "77ebffccdf591e21ef3b40e2a412e6fb73dffc17657a0d720a8d11e948ef3e32",
+      "crop": [
+        281,
+        14,
+        557,
+        476
+      ],
+      "destination": [
+        98,
+        843,
+        59,
+        99
+      ]
+    },
+    {
+      "frame": 13,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/skill-revisions-2026-09-11/fuji_kiseki/generated.png",
+      "sourceSha256": "77ebffccdf591e21ef3b40e2a412e6fb73dffc17657a0d720a8d11e948ef3e32",
+      "crop": [
+        942,
+        17,
+        1418,
+        488
+      ],
+      "destination": [
+        333,
+        840,
+        102,
+        102
+      ]
+    },
+    {
+      "frame": 14,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/skill-revisions-2026-09-11/fuji_kiseki/generated.png",
+      "sourceSha256": "77ebffccdf591e21ef3b40e2a412e6fb73dffc17657a0d720a8d11e948ef3e32",
+      "crop": [
+        78,
+        529,
+        820,
+        989
+      ],
+      "destination": [
+        560,
+        843,
+        160,
+        99
+      ]
+    },
+    {
+      "frame": 15,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/skill-revisions-2026-09-11/fuji_kiseki/generated.png",
+      "sourceSha256": "77ebffccdf591e21ef3b40e2a412e6fb73dffc17657a0d720a8d11e948ef3e32",
+      "crop": [
+        1028,
+        540,
+        1346,
+        994
+      ],
+      "destination": [
+        861,
+        844,
+        69,
+        98
+      ]
+    },
+    {
+      "frame": 16,
+      "sourceFrame": 16,
+      "source": "docs/art-source/motions/production-144/fuji_kiseki/alpha.png",
+      "sourceSha256": "75414088a4c006b57b76a72c951f893e463ca1dcb206691c3b23af349084597e",
+      "crop": [
+        45,
+        1068,
+        242,
+        1260
+      ],
+      "destination": [
+        86,
+        1116,
+        84,
+        82
+      ]
+    },
+    {
+      "frame": 17,
+      "sourceFrame": 17,
+      "source": "docs/art-source/motions/production-144/fuji_kiseki/alpha.png",
+      "sourceSha256": "75414088a4c006b57b76a72c951f893e463ca1dcb206691c3b23af349084597e",
+      "crop": [
+        308,
+        1079,
+        474,
+        1255
+      ],
+      "destination": [
+        348,
+        1123,
+        71,
+        75
+      ]
+    },
+    {
+      "frame": 18,
+      "sourceFrame": 18,
+      "source": "docs/art-source/motions/production-144/fuji_kiseki/alpha.png",
+      "sourceSha256": "75414088a4c006b57b76a72c951f893e463ca1dcb206691c3b23af349084597e",
+      "crop": [
+        544,
+        1102,
+        713,
+        1257
+      ],
+      "destination": [
+        604,
+        1132,
+        72,
+        66
+      ]
+    },
+    {
+      "frame": 19,
+      "sourceFrame": 19,
+      "source": "docs/art-source/motions/production-144/fuji_kiseki/alpha.png",
+      "sourceSha256": "75414088a4c006b57b76a72c951f893e463ca1dcb206691c3b23af349084597e",
+      "crop": [
+        773,
+        1155,
+        1007,
+        1259
+      ],
+      "destination": [
+        846,
+        1153,
+        100,
+        45
+      ]
+    },
+    {
+      "frame": 20,
+      "sourceFrame": 20,
+      "source": "docs/art-source/motions/production-144/fuji_kiseki/alpha.png",
+      "sourceSha256": "75414088a4c006b57b76a72c951f893e463ca1dcb206691c3b23af349084597e",
+      "crop": [
+        70,
+        1278,
+        215,
+        1520
+      ],
+      "destination": [
+        97,
+        1350,
+        62,
+        104
+      ]
+    },
+    {
+      "frame": 21,
+      "sourceFrame": 21,
+      "source": "docs/art-source/motions/production-144/fuji_kiseki/alpha.png",
+      "sourceSha256": "75414088a4c006b57b76a72c951f893e463ca1dcb206691c3b23af349084597e",
+      "crop": [
+        309,
+        1278,
+        464,
+        1520
+      ],
+      "destination": [
+        351,
+        1350,
+        66,
+        104
+      ]
+    },
+    {
+      "frame": 22,
+      "sourceFrame": 22,
+      "source": "docs/art-source/motions/production-144/fuji_kiseki/alpha.png",
+      "sourceSha256": "75414088a4c006b57b76a72c951f893e463ca1dcb206691c3b23af349084597e",
+      "crop": [
+        561,
+        1279,
+        700,
+        1518
+      ],
+      "destination": [
+        610,
+        1352,
+        59,
+        102
+      ]
+    },
+    {
+      "frame": 23,
+      "sourceFrame": 23,
+      "source": "docs/art-source/motions/production-144/fuji_kiseki/alpha.png",
+      "sourceSha256": "75414088a4c006b57b76a72c951f893e463ca1dcb206691c3b23af349084597e",
+      "crop": [
+        826,
+        1278,
+        954,
+        1521
+      ],
+      "destination": [
+        868,
+        1350,
+        55,
+        104
+      ]
+    }
+  ],
+  "skillRevision": {
+    "scale": 0.15633423180592992,
+    "review": "docs/art-source/motions/skill-revisions-2026-09-11/fuji_kiseki/review.json",
+    "beforeFrames": [
+      "af86e178cacf804d2951a8ac47fbd60fc31210df5796a43fdbb9a349333ea26a",
+      "ee3bae440d0219122190847c03741ca94ba632b148ab0091ecbc43b57f3f3d69",
+      "97f9120bb1ac991d476f8f9f12298ff155918301e91ab1ba762c4321dd5026ef",
+      "9dd5e663aec26e681d888367329eb88937eb4e1c0a4566c472cd32f5fcf9d70f",
+      "c5bf856e17997c9bfb70eda883eb8be93a18bc23145137d62edc24459c28c242",
+      "b7c69e9b87ebfd6c0cd42d69dbbc70cb70677d095ffbce8e691e14b19819151e",
+      "00eaed6d5d93fc69c4373974f0ac3b00cbeec2d731e9f9b68bcac9269cd6a2d9",
+      "e2c854242efdd6d10d3fa6d7070e20e4a8054a749159b51dcb2f7beffdc283ca",
+      "38d567ee3f9b5b6f0d25f539d85f06cda8a7a040638fecc0834cfc8caee0668b",
+      "1bea3a76410bed626ceb8660c4d67e9f7737a772e038e479ef351bf6201aa69d",
+      "296ec88c18907b14e9c707473b4df575ef862232e4b25774c93ea11e8668a219",
+      "0cbd8de21a796cb27fb9b2006d9209c0f88a06a522658737eda156b3fc4c37c2",
+      "afafbdee155372450bd63a66519765c97ea780658362d666188bd6776b5dc5f6",
+      "99aaf820dda75b3f75b0c00bba3be718e604cb27c75f33234c022e0f60fd7180",
+      "c60d34c72b1116bf0fc73c01d0e0694e7f4eaa4b31675330aa947ebcb29bcf62",
+      "9b84ea289de555edd3444c322af002f7fdf9cd6555b94370377145eccdd940d8",
+      "1f22429f32640c8941489535955dd7902fd781be1dbcb2de024fd006944bc3cb",
+      "e7be48fd8aeb2deec474ba7e99d3f7f49394cc051a10053aa15a9960072a5bf3",
+      "77cca59385ccc10f0f7a8c7c811966d73ee4ff24fc3e6ca13b8833acbde2af29",
+      "a87cb656585502d0fa427c2d35012fba5837e16223371f5a22f4cee807ca9185",
+      "b3541e7f80003ae66d0e8626eebfa872a2e2e2a66f83acaa74fc0f9d2f833208",
+      "d511d783caa1cc1777700a07205fef1e3fa45740d43f23824f24e042b22dfd20",
+      "08c088a0ab459d7fc7c35c16815c7b140552f55f020d4250af66295a497af1a0",
+      "0173898dac41074d454ee26a4b59bf08c64006de06b3dc4ef3c303713602187c"
+    ],
+    "afterFrames": [
+      "af86e178cacf804d2951a8ac47fbd60fc31210df5796a43fdbb9a349333ea26a",
+      "ee3bae440d0219122190847c03741ca94ba632b148ab0091ecbc43b57f3f3d69",
+      "97f9120bb1ac991d476f8f9f12298ff155918301e91ab1ba762c4321dd5026ef",
+      "9dd5e663aec26e681d888367329eb88937eb4e1c0a4566c472cd32f5fcf9d70f",
+      "c5bf856e17997c9bfb70eda883eb8be93a18bc23145137d62edc24459c28c242",
+      "b7c69e9b87ebfd6c0cd42d69dbbc70cb70677d095ffbce8e691e14b19819151e",
+      "00eaed6d5d93fc69c4373974f0ac3b00cbeec2d731e9f9b68bcac9269cd6a2d9",
+      "e2c854242efdd6d10d3fa6d7070e20e4a8054a749159b51dcb2f7beffdc283ca",
+      "38d567ee3f9b5b6f0d25f539d85f06cda8a7a040638fecc0834cfc8caee0668b",
+      "1bea3a76410bed626ceb8660c4d67e9f7737a772e038e479ef351bf6201aa69d",
+      "296ec88c18907b14e9c707473b4df575ef862232e4b25774c93ea11e8668a219",
+      "0cbd8de21a796cb27fb9b2006d9209c0f88a06a522658737eda156b3fc4c37c2",
+      "67385bc6066e1c899d2f6ac7b22b419178687c92453b27728e26416d477f7179",
+      "a1e8a25a7a5aed94e3a3de29c424e718a59cc1d34e3fdbcbbe62552a16d22177",
+      "f251173e602a99ee03e4649b68c4d69650c9de9f5f43ba0ad7beaaecc9316966",
+      "eec751532e1b3389de4fe9f9178ab8b37093102898b763fbf7cafcc614f3ab82",
+      "1f22429f32640c8941489535955dd7902fd781be1dbcb2de024fd006944bc3cb",
+      "e7be48fd8aeb2deec474ba7e99d3f7f49394cc051a10053aa15a9960072a5bf3",
+      "77cca59385ccc10f0f7a8c7c811966d73ee4ff24fc3e6ca13b8833acbde2af29",
+      "a87cb656585502d0fa427c2d35012fba5837e16223371f5a22f4cee807ca9185",
+      "b3541e7f80003ae66d0e8626eebfa872a2e2e2a66f83acaa74fc0f9d2f833208",
+      "d511d783caa1cc1777700a07205fef1e3fa45740d43f23824f24e042b22dfd20",
+      "08c088a0ab459d7fc7c35c16815c7b140552f55f020d4250af66295a497af1a0",
+      "0173898dac41074d454ee26a4b59bf08c64006de06b3dc4ef3c303713602187c"
+    ],
+    "unchangedFrames": 20,
+    "changedFrames": [
+      12,
+      13,
+      14,
+      15
+    ]
+  },
+  "frameWidth": 256,
+  "frameHeight": 256,
+  "columns": 4,
+  "rows": 6,
+  "logicalFrameSize": 128,
+  "scaleRevision": {
+    "review": "docs/art-source/motions/skill-scale-2026-09-12/review.json",
+    "previousPacking": "docs/art-source/motions/skill-revisions-2026-09-11/fuji_kiseki/packing.json",
+    "baselineRuntimeSha256": "6f688414e686d5374ac76b6e2b27468e04e320faab2803eaf4059a284af69441",
+    "baselineFrames": [
+      "af86e178cacf804d2951a8ac47fbd60fc31210df5796a43fdbb9a349333ea26a",
+      "ee3bae440d0219122190847c03741ca94ba632b148ab0091ecbc43b57f3f3d69",
+      "97f9120bb1ac991d476f8f9f12298ff155918301e91ab1ba762c4321dd5026ef",
+      "9dd5e663aec26e681d888367329eb88937eb4e1c0a4566c472cd32f5fcf9d70f",
+      "c5bf856e17997c9bfb70eda883eb8be93a18bc23145137d62edc24459c28c242",
+      "b7c69e9b87ebfd6c0cd42d69dbbc70cb70677d095ffbce8e691e14b19819151e",
+      "00eaed6d5d93fc69c4373974f0ac3b00cbeec2d731e9f9b68bcac9269cd6a2d9",
+      "e2c854242efdd6d10d3fa6d7070e20e4a8054a749159b51dcb2f7beffdc283ca",
+      "38d567ee3f9b5b6f0d25f539d85f06cda8a7a040638fecc0834cfc8caee0668b",
+      "1bea3a76410bed626ceb8660c4d67e9f7737a772e038e479ef351bf6201aa69d",
+      "296ec88c18907b14e9c707473b4df575ef862232e4b25774c93ea11e8668a219",
+      "0cbd8de21a796cb27fb9b2006d9209c0f88a06a522658737eda156b3fc4c37c2",
+      "67385bc6066e1c899d2f6ac7b22b419178687c92453b27728e26416d477f7179",
+      "a1e8a25a7a5aed94e3a3de29c424e718a59cc1d34e3fdbcbbe62552a16d22177",
+      "f251173e602a99ee03e4649b68c4d69650c9de9f5f43ba0ad7beaaecc9316966",
+      "eec751532e1b3389de4fe9f9178ab8b37093102898b763fbf7cafcc614f3ab82",
+      "1f22429f32640c8941489535955dd7902fd781be1dbcb2de024fd006944bc3cb",
+      "e7be48fd8aeb2deec474ba7e99d3f7f49394cc051a10053aa15a9960072a5bf3",
+      "77cca59385ccc10f0f7a8c7c811966d73ee4ff24fc3e6ca13b8833acbde2af29",
+      "a87cb656585502d0fa427c2d35012fba5837e16223371f5a22f4cee807ca9185",
+      "b3541e7f80003ae66d0e8626eebfa872a2e2e2a66f83acaa74fc0f9d2f833208",
+      "d511d783caa1cc1777700a07205fef1e3fa45740d43f23824f24e042b22dfd20",
+      "08c088a0ab459d7fc7c35c16815c7b140552f55f020d4250af66295a497af1a0",
+      "0173898dac41074d454ee26a4b59bf08c64006de06b3dc4ef3c303713602187c"
+    ],
+    "factor": 1.38,
+    "padding": 64,
+    "changedFrames": [
+      12,
+      13,
+      14,
+      15
+    ],
+    "unchangedFrames": 20
+  }
+}

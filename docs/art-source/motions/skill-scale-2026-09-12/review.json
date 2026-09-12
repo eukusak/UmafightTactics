@@ -1,0 +1,888 @@
+{
+  "format": "uft-skill-scale-review-v1",
+  "referenceCommit": "95f96727aeb608dd15e630ee654cdc064ef060f5",
+  "referenceFrames": [
+    0,
+    4,
+    8
+  ],
+  "reviewFrames": [
+    12,
+    13,
+    14,
+    15
+  ],
+  "method": "Visual comparison of head and torso scale against idle/run/attack. Crouching, lunging, foreshortening and effect bounds are not used as standing height. One uniform multiplier per four-frame skill clip preserves poses and timing.",
+  "units": {
+    "admire_groove": {
+      "decision": "normalize",
+      "factor": 1.25,
+      "reason": "Skill head/torso are visibly smaller than the movement/attack reference. Enlarge the existing source uniformly; preserve effects in padded cells.",
+      "baselineRuntimeSha256": "d840f5e44d3705536ca95c94164d8ea66563cb5785324866bf4b9169eab202ca"
+    },
+    "agnes_tachyon": {
+      "decision": "normalize",
+      "factor": 1.3,
+      "reason": "Skill head/torso are visibly smaller than the movement/attack reference. Enlarge the existing source uniformly; preserve effects in padded cells.",
+      "baselineRuntimeSha256": "8a5e04e050544350fb63e7ff388c5438d5776786d75e65d94ce4aec16aad7202"
+    },
+    "air_groove": {
+      "decision": "normalize",
+      "factor": 1.2,
+      "reason": "Skill head/torso are visibly smaller than the movement/attack reference. Enlarge the existing source uniformly; preserve effects in padded cells.",
+      "baselineRuntimeSha256": "8e4379d85625895b3f8485f5fcff050847457e27ffbe2b3b28cc1368e165a2f0"
+    },
+    "almond_eye": {
+      "decision": "normalize",
+      "factor": 1.6,
+      "reason": "Skill head/torso are visibly smaller than the movement/attack reference. Enlarge the existing source uniformly; preserve effects in padded cells.",
+      "baselineRuntimeSha256": "ef20ac0ce5fcb396b8928d4e22fb3a4f7bffd5f6720fad94d29f61c32623380b"
+    },
+    "biwa_hayahide": {
+      "decision": "retain",
+      "factor": 1,
+      "reason": "Head/torso scale is consistent; apparent height changes come from posture, camera angle or limb extension.",
+      "baselineRuntimeSha256": "a29e388d3c00041287c5f41f8162c628d7fefa0abf808a8d8b2fd98066a2b9f3"
+    },
+    "blast_onepiece": {
+      "decision": "retain",
+      "factor": 1,
+      "reason": "Head/torso scale is consistent; apparent height changes come from posture, camera angle or limb extension.",
+      "baselineRuntimeSha256": "f67b6454df33cfe986d5bb7fb77c27b5717ab4d4aaba53a37d5f7d4d8fb55bb9"
+    },
+    "bubble_gum_fellow": {
+      "decision": "normalize",
+      "factor": 1.12,
+      "reason": "Skill head/torso are visibly smaller than the movement/attack reference. Enlarge the existing source uniformly; preserve effects in padded cells.",
+      "baselineRuntimeSha256": "1596ce17a4f02258a918698b347a5004767fae514883068f5bc3fc3ea7399e26"
+    },
+    "chrono_genesis": {
+      "decision": "retain",
+      "factor": 1,
+      "reason": "Head/torso scale is consistent; apparent height changes come from posture, camera angle or limb extension.",
+      "baselineRuntimeSha256": "115ed6e515e7843128a20f1d47350bd9a86b50cef835c86c6977abf35b5fe772"
+    },
+    "daiwa_scarlet": {
+      "decision": "retain",
+      "factor": 1,
+      "reason": "Head/torso scale is consistent; apparent height changes come from posture, camera angle or limb extension.",
+      "baselineRuntimeSha256": "2b2c0095304f848ac3b0f23f6db702a109701741bcd475923d89d08d7fc1e790"
+    },
+    "durandal": {
+      "decision": "normalize",
+      "factor": 1.4,
+      "reason": "Skill head/torso are visibly smaller than the movement/attack reference. Enlarge the existing source uniformly; preserve effects in padded cells.",
+      "baselineRuntimeSha256": "b1da6e15d1d60af012b8e05fbbec04259288fbe9a9593b3fdedcaf093e15c275"
+    },
+    "eishin_flash": {
+      "decision": "retain",
+      "factor": 1,
+      "reason": "Head/torso scale is consistent; apparent height changes come from posture, camera angle or limb extension.",
+      "baselineRuntimeSha256": "24cd39a240cf347230be503a164084422a59676c198e8de86e65cb428719be4b"
+    },
+    "epiphaneia": {
+      "decision": "normalize",
+      "factor": 1.28,
+      "reason": "Skill head/torso are visibly smaller than the movement/attack reference. Enlarge the existing source uniformly; preserve effects in padded cells.",
+      "baselineRuntimeSha256": "6c3ef5726cd48951f5c480bb1a964442d4cd4172cc28fee349a5ae1721e3a6bf"
+    },
+    "fenomeno": {
+      "decision": "normalize",
+      "factor": 1.25,
+      "reason": "Skill head/torso are visibly smaller than the movement/attack reference. Enlarge the existing source uniformly; preserve effects in padded cells.",
+      "baselineRuntimeSha256": "fc600a55cdce049ae59e683b42f98ce00d2f36aa3473d49200aedd763b579fd6"
+    },
+    "forever_young": {
+      "decision": "retain",
+      "factor": 1,
+      "reason": "Head/torso scale is consistent; apparent height changes come from posture, camera angle or limb extension.",
+      "baselineRuntimeSha256": "cca55531c3df747f419648c6702359e22f3651ef9c6991e2bc0b0de8d1892cce"
+    },
+    "fuji_kiseki": {
+      "decision": "normalize",
+      "factor": 1.38,
+      "reason": "Skill head/torso are visibly smaller than the movement/attack reference. Enlarge the existing source uniformly; preserve effects in padded cells.",
+      "baselineRuntimeSha256": "6f688414e686d5374ac76b6e2b27468e04e320faab2803eaf4059a284af69441"
+    },
+    "gentildonna": {
+      "decision": "retain",
+      "factor": 1,
+      "reason": "Head/torso scale is consistent; apparent height changes come from posture, camera angle or limb extension.",
+      "baselineRuntimeSha256": "a2ec371018fcc664cd571a6bd8356df35262c99b506e1b217425ab7ff06b6a8a"
+    },
+    "genuine": {
+      "decision": "retain",
+      "factor": 1,
+      "reason": "Head/torso scale is consistent; apparent height changes come from posture, camera angle or limb extension.",
+      "baselineRuntimeSha256": "63f5f09f8bd2a481c64fd571ad278c2056e314f9251bc1e620f2c8230f914504"
+    },
+    "gold_ship": {
+      "decision": "retain",
+      "factor": 1,
+      "reason": "Head/torso scale is consistent; apparent height changes come from posture, camera angle or limb extension.",
+      "baselineRuntimeSha256": "da0a61e83873c2aabbc982d72fe2ff3b81f9585a789e53b32f69562b447b1dc9"
+    },
+    "gran_alegria": {
+      "decision": "normalize",
+      "factor": 1.2,
+      "reason": "Skill head/torso are visibly smaller than the movement/attack reference. Enlarge the existing source uniformly; preserve effects in padded cells.",
+      "baselineRuntimeSha256": "98f77dbbd14a9514ad9e1c8e0256ee41697dd078c3cd035a6000879a1daee31b"
+    },
+    "kiseki": {
+      "decision": "retain",
+      "factor": 1,
+      "reason": "Head/torso scale is consistent; apparent height changes come from posture, camera angle or limb extension.",
+      "baselineRuntimeSha256": "5a77e8dd7dfd7faf3bf7fc9923dbd78e2a680c6b959f252abef8725e5d24d768"
+    },
+    "lucky_lilac": {
+      "decision": "normalize",
+      "factor": 1.35,
+      "reason": "Skill head/torso are visibly smaller than the movement/attack reference. Enlarge the existing source uniformly; preserve effects in padded cells.",
+      "baselineRuntimeSha256": "c95700bb5006906ba873306d6e6e27640b737ce98a2e7e55df6695192798b326"
+    },
+    "manhattan_cafe": {
+      "decision": "normalize",
+      "factor": 1.2,
+      "reason": "Skill head/torso are visibly smaller than the movement/attack reference. Enlarge the existing source uniformly; preserve effects in padded cells.",
+      "baselineRuntimeSha256": "dc6fecf747f0ea18440a3d1e76d1891b1ef290ce03e0c3636ee4baa5bbe35c9b"
+    },
+    "marvelous_sunday": {
+      "decision": "retain",
+      "factor": 1,
+      "reason": "Head/torso scale is consistent; apparent height changes come from posture, camera angle or limb extension.",
+      "baselineRuntimeSha256": "1b08f915f1e61c2d317627ad85bae5eaefbdf03d22472d11870693849725ebdf"
+    },
+    "mayano_top_gun": {
+      "decision": "retain",
+      "factor": 1,
+      "reason": "Head/torso scale is consistent; apparent height changes come from posture, camera angle or limb extension.",
+      "baselineRuntimeSha256": "a288e1850528788b10dd5367281299bf9ee0dbcda8db10b27f487efad222078d"
+    },
+    "mejiro_dober": {
+      "decision": "normalize",
+      "factor": 1.28,
+      "reason": "Skill head/torso are visibly smaller than the movement/attack reference. Enlarge the existing source uniformly; preserve effects in padded cells.",
+      "baselineRuntimeSha256": "b8aba003ad507fbfd323b75ec46c000870e9e053bdb922f91f96ac1b9054bd29"
+    },
+    "mejiro_ramonu": {
+      "decision": "normalize",
+      "factor": 1.18,
+      "reason": "Skill head/torso are visibly smaller than the movement/attack reference. Enlarge the existing source uniformly; preserve effects in padded cells.",
+      "baselineRuntimeSha256": "6d4b32c7f67a8e1b7edd90ed534d5a4556d3f6990dc07a8a9015417556fb8d78"
+    },
+    "mejiro_ryan": {
+      "decision": "retain",
+      "factor": 1,
+      "reason": "Head/torso scale is consistent; apparent height changes come from posture, camera angle or limb extension.",
+      "baselineRuntimeSha256": "e9633f1352264894398572ca8dc2fa8e05e9e46fde7a2916e6eb1409ecab40b2"
+    },
+    "mihono_bourbon": {
+      "decision": "retain",
+      "factor": 1,
+      "reason": "Head/torso scale is consistent; apparent height changes come from posture, camera angle or limb extension.",
+      "baselineRuntimeSha256": "a5aadcb13d90ebfbed170e53c67d5f04faae30a4912cf2a9f3edae616ab671ef"
+    },
+    "neo_universe": {
+      "decision": "retain",
+      "factor": 1,
+      "reason": "Head/torso scale is consistent; apparent height changes come from posture, camera angle or limb extension.",
+      "baselineRuntimeSha256": "33d5683746f1363f0c65424ad3f1640a43c7d98334d33df8f91f0a1b0c635971"
+    },
+    "oguri_cap": {
+      "decision": "retain",
+      "factor": 1,
+      "reason": "Head/torso scale is consistent; apparent height changes come from posture, camera angle or limb extension.",
+      "baselineRuntimeSha256": "7827d810db6f55863290ce0a2703b194fa09ec24fae2fd1c32a17e9fb7b2dbbc"
+    },
+    "orfevre": {
+      "decision": "retain",
+      "factor": 1,
+      "reason": "Head/torso scale is consistent; apparent height changes come from posture, camera angle or limb extension.",
+      "baselineRuntimeSha256": "055c34f21c8a4d5499599a76442c0087eb02dbdfc743d7d9c15381d9ab6403e8"
+    },
+    "red_desire": {
+      "decision": "retain",
+      "factor": 1,
+      "reason": "Head/torso scale is consistent; apparent height changes come from posture, camera angle or limb extension.",
+      "baselineRuntimeSha256": "89d16b0f71e9775b783557416a4c004d7af71e42f4b489a47cfe4126107a42d1"
+    },
+    "rice_shower": {
+      "decision": "retain",
+      "factor": 1,
+      "reason": "Head/torso scale is consistent; apparent height changes come from posture, camera angle or limb extension.",
+      "baselineRuntimeSha256": "4ff7da943a346758998ef41135251d3a9778219b5c7c625ff6eb6a1efe271bd8"
+    },
+    "rose_kingdom": {
+      "decision": "retain",
+      "factor": 1,
+      "reason": "Head/torso scale is consistent; apparent height changes come from posture, camera angle or limb extension.",
+      "baselineRuntimeSha256": "707cf1a8be1c0007243d6779da3c771834fb45de9071da55a9a1462e2a1ac531"
+    },
+    "seeking_the_pearl": {
+      "decision": "retain",
+      "factor": 1,
+      "reason": "Head/torso scale is consistent; apparent height changes come from posture, camera angle or limb extension.",
+      "baselineRuntimeSha256": "f919f5d4ac539b43701d5ba60394d5cd634f6960ffa21fcae2ebf001b5137574"
+    },
+    "silence_suzuka": {
+      "decision": "retain",
+      "factor": 1,
+      "reason": "Head/torso scale is consistent; apparent height changes come from posture, camera angle or limb extension.",
+      "baselineRuntimeSha256": "b36c0068484d9949aa644a02f7cc36f292c8cb060cbc84e02f09ba823fd955d7"
+    },
+    "still_in_love": {
+      "decision": "retain",
+      "factor": 1,
+      "reason": "Head/torso scale is consistent; apparent height changes come from posture, camera angle or limb extension.",
+      "baselineRuntimeSha256": "495c888ea0d79c6069a5708690bfae1989ee7491390e1b81849ae4fa26cf2a9e"
+    },
+    "sweep_tosho": {
+      "decision": "normalize",
+      "factor": 1.6,
+      "reason": "Skill head/torso are visibly smaller than the movement/attack reference. Enlarge the existing source uniformly; preserve effects in padded cells.",
+      "baselineRuntimeSha256": "cc493f0d4952a3d4d2f71cfecc7443ad95ec272cdfd29d049c71b28e5b39684a"
+    },
+    "tamamo_cross": {
+      "decision": "retain",
+      "factor": 1,
+      "reason": "Head/torso scale is consistent; apparent height changes come from posture, camera angle or limb extension.",
+      "baselineRuntimeSha256": "b5b42abda38163c96426afb73e7d299525376b79c04e4d0812c89f8ab8b12271"
+    },
+    "titleholder": {
+      "decision": "retain",
+      "factor": 1,
+      "reason": "Head/torso scale is consistent; apparent height changes come from posture, camera angle or limb extension.",
+      "baselineRuntimeSha256": "51770cbc814f5dace2831305da04cb0990f10593b123f8ad0747072e15f10785"
+    },
+    "tokai_teio": {
+      "decision": "retain",
+      "factor": 1,
+      "reason": "Head/torso scale is consistent; apparent height changes come from posture, camera angle or limb extension.",
+      "baselineRuntimeSha256": "67592d5f980deda8468ac6a33087ad6378f7231d34e2618ac8a092301eab0000"
+    },
+    "tosen_jordan": {
+      "decision": "retain",
+      "factor": 1,
+      "reason": "Head/torso scale is consistent; apparent height changes come from posture, camera angle or limb extension.",
+      "baselineRuntimeSha256": "f8f1a71e432b539b72fce00f83476743426c01fafeebc3157aee5ee0bd04e8f1"
+    },
+    "verxina": {
+      "decision": "normalize",
+      "factor": 1.35,
+      "reason": "Skill head/torso are visibly smaller than the movement/attack reference. Enlarge the existing source uniformly; preserve effects in padded cells.",
+      "baselineRuntimeSha256": "fc2dbd6919275ce6e1c6bc10974bec10e5c28c2e3b2203d04a1c5742a35cd944"
+    },
+    "victoire_pisa": {
+      "decision": "normalize",
+      "factor": 1.5,
+      "reason": "Skill head/torso are visibly smaller than the movement/attack reference. Enlarge the existing source uniformly; preserve effects in padded cells.",
+      "baselineRuntimeSha256": "8ca71dd7851437cc3ded386163c161431ef0bd087a36dadf70e3c0897555180c"
+    },
+    "vivlos": {
+      "decision": "normalize",
+      "factor": 1.3,
+      "reason": "Skill head/torso are visibly smaller than the movement/attack reference. Enlarge the existing source uniformly; preserve effects in padded cells.",
+      "baselineRuntimeSha256": "b8406843098bf314b71b202d5fa0e50f3fd6c4410f77db1156a761f9323a27b7"
+    },
+    "vodka": {
+      "decision": "retain",
+      "factor": 1,
+      "reason": "Head/torso scale is consistent; apparent height changes come from posture, camera angle or limb extension.",
+      "baselineRuntimeSha256": "cf409ed4cbc5ef7e212fa13f21455cb5bb05a5add7c3ce3cf5385940ae1bcc1f"
+    },
+    "winning_ticket": {
+      "decision": "retain",
+      "factor": 1,
+      "reason": "Head/torso scale is consistent; apparent height changes come from posture, camera angle or limb extension.",
+      "baselineRuntimeSha256": "8e8166de462ecbe1def5871d9078f5dd2ed41272a4c62a8f01d7f7a11bb0739d"
+    },
+    "admire_vega": {
+      "decision": "retain",
+      "factor": 1,
+      "reason": "Head/torso scale is consistent; apparent height changes come from posture, camera angle or limb extension.",
+      "baselineRuntimeSha256": "ec3cd28bc0910e1c7c1fadfb22937c155d912c1f568627e04d15d4d60662800c"
+    },
+    "agnes_digital": {
+      "decision": "retain",
+      "factor": 1,
+      "reason": "Head/torso scale is consistent; apparent height changes come from posture, camera angle or limb extension.",
+      "baselineRuntimeSha256": "592b64ce0b84f3539ed09f06e6cabfb4e3e187cf978b566dc4af758d759f5cb0"
+    },
+    "air_messiah": {
+      "decision": "retain",
+      "factor": 1,
+      "reason": "Head/torso scale is consistent; apparent height changes come from posture, camera angle or limb extension.",
+      "baselineRuntimeSha256": "29173960d1bf6e7362653bb1ee4cc2c1fc47c3d6169cbb7b1284c0c6f83f9997"
+    },
+    "air_shakur": {
+      "decision": "retain",
+      "factor": 1,
+      "reason": "Head/torso scale is consistent; apparent height changes come from posture, camera angle or limb extension.",
+      "baselineRuntimeSha256": "1f794b3404f1756c542e307a1c567a1f55d79ef5284a67155dfd9415da609209"
+    },
+    "aston_machan": {
+      "decision": "retain",
+      "factor": 1,
+      "reason": "Head/torso scale is consistent; apparent height changes come from posture, camera angle or limb extension.",
+      "baselineRuntimeSha256": "125a23f2e5eb38231d1c9610246c82565c1c52f738e5d9204cfe31d1b5761218"
+    },
+    "bamboo_memory": {
+      "decision": "retain",
+      "factor": 1,
+      "reason": "Head/torso scale is consistent; apparent height changes come from posture, camera angle or limb extension.",
+      "baselineRuntimeSha256": "2630fe899590288020e4ae9605da4a93ed8209acac9cd29d4fa5f78e77f4cbcf"
+    },
+    "believe": {
+      "decision": "retain",
+      "factor": 1,
+      "reason": "Head/torso scale is consistent; apparent height changes come from posture, camera angle or limb extension.",
+      "baselineRuntimeSha256": "26e0f337ebb96c5e76ed3039ce9d340b1f9c9c16ad304427cfaf3c8c3884061e"
+    },
+    "biko_pegasus": {
+      "decision": "retain",
+      "factor": 1,
+      "reason": "Head/torso scale is consistent; apparent height changes come from posture, camera angle or limb extension.",
+      "baselineRuntimeSha256": "7dd33bbebc1e086c7443656f77a3a8588b369a1e2cb5b5906282bedd22e60f95"
+    },
+    "buena_vista": {
+      "decision": "retain",
+      "factor": 1,
+      "reason": "Head/torso scale is consistent; apparent height changes come from posture, camera angle or limb extension.",
+      "baselineRuntimeSha256": "13dddf1bf42c34d992abd43466faf1e1fcb067e3804982ef6de9fdaf1e4e6b4b"
+    },
+    "calstone_light_o": {
+      "decision": "retain",
+      "factor": 1,
+      "reason": "Head/torso scale is consistent; apparent height changes come from posture, camera angle or limb extension.",
+      "baselineRuntimeSha256": "f76cca94a66ae2e3be008dcf885cf11089bb4b7aedef4b088de4371bc3b8481b"
+    },
+    "cesario": {
+      "decision": "retain",
+      "factor": 1,
+      "reason": "Head/torso scale is consistent; apparent height changes come from posture, camera angle or limb extension.",
+      "baselineRuntimeSha256": "db5964df63ae8a7b4eb78183cb5e07bf12844aa293aaeabb6f60078a8cecb285"
+    },
+    "cheval_grand": {
+      "decision": "retain",
+      "factor": 1,
+      "reason": "Head/torso scale is consistent; apparent height changes come from posture, camera angle or limb extension.",
+      "baselineRuntimeSha256": "72c0490ba8f097ddf506de3ce9ea87986779f999887f085c803c67f12ad20549"
+    },
+    "copano_rickey": {
+      "decision": "retain",
+      "factor": 1,
+      "reason": "Head/torso scale is consistent; apparent height changes come from posture, camera angle or limb extension.",
+      "baselineRuntimeSha256": "8245e7295897ab4b93afa1d034c329577b493acc7f918536f3f0d3610884c07e"
+    },
+    "curren_bouquetdor": {
+      "decision": "retain",
+      "factor": 1,
+      "reason": "Head/torso scale is consistent; apparent height changes come from posture, camera angle or limb extension.",
+      "baselineRuntimeSha256": "04992c97b034e1220e8e96418918afc0580e0d5aff9e96b06d800c251ff71309"
+    },
+    "curren_chan": {
+      "decision": "retain",
+      "factor": 1,
+      "reason": "Head/torso scale is consistent; apparent height changes come from posture, camera angle or limb extension.",
+      "baselineRuntimeSha256": "b723a20b754437d6c35ad264775437e92ffa19dc98a7138bf09e91ddc1fcbc28"
+    },
+    "daiichi_ruby": {
+      "decision": "normalize",
+      "factor": 1.12,
+      "reason": "Skill head/torso are visibly smaller than the movement/attack reference. Enlarge the existing source uniformly; preserve effects in padded cells.",
+      "baselineRuntimeSha256": "9d6ff9de4abadeb3adc56dc1e937bd2428214e806c6c425b0a492adddc8c3901"
+    },
+    "daitaku_helios": {
+      "decision": "retain",
+      "factor": 1,
+      "reason": "Head/torso scale is consistent; apparent height changes come from posture, camera angle or limb extension.",
+      "baselineRuntimeSha256": "b84714694346490886bf882aeb01f8c06f01bfe948aee9dedbea550ad3052b38"
+    },
+    "dantsu_flame": {
+      "decision": "retain",
+      "factor": 1,
+      "reason": "Head/torso scale is consistent; apparent height changes come from posture, camera angle or limb extension.",
+      "baselineRuntimeSha256": "8e24f87bc5facaa3818305c9bf65e7c021cad48f6110ce0ee62a74652c7b5e6e"
+    },
+    "daring_heart": {
+      "decision": "retain",
+      "factor": 1,
+      "reason": "Head/torso scale is consistent; apparent height changes come from posture, camera angle or limb extension.",
+      "baselineRuntimeSha256": "e56fbc145643453e934fe4b79cf0ea8f0f8d1a6cd856cbcdeb304c91093ae7dc"
+    },
+    "daring_tact": {
+      "decision": "retain",
+      "factor": 1,
+      "reason": "Head/torso scale is consistent; apparent height changes come from posture, camera angle or limb extension.",
+      "baselineRuntimeSha256": "4ac5ee725835768739f0c496d1928f900f3aab051262a764830fab3a5415fdd5"
+    },
+    "dream_journey": {
+      "decision": "retain",
+      "factor": 1,
+      "reason": "Head/torso scale is consistent; apparent height changes come from posture, camera angle or limb extension.",
+      "baselineRuntimeSha256": "62b6dac8992b5fd9f49f624bb844d118c7c94f8785ee7ee92a0c8144d93698a7"
+    },
+    "duramente": {
+      "decision": "retain",
+      "factor": 1,
+      "reason": "Head/torso scale is consistent; apparent height changes come from posture, camera angle or limb extension.",
+      "baselineRuntimeSha256": "3217b8fdba6b1f65120173c6e5826064ead93f1b7545f0009e71807badc11fb8"
+    },
+    "efforia": {
+      "decision": "retain",
+      "factor": 1,
+      "reason": "Head/torso scale is consistent; apparent height changes come from posture, camera angle or limb extension.",
+      "baselineRuntimeSha256": "133aa5d7ce4d4855e4641dd1d136913c44d0ecbfc25165fe7d4bff6f7f89161f"
+    },
+    "el_condor_pasa": {
+      "decision": "retain",
+      "factor": 1,
+      "reason": "Head/torso scale is consistent; apparent height changes come from posture, camera angle or limb extension.",
+      "baselineRuntimeSha256": "82c61c47183b37710bd74ea0d1a2ce568aab587ea2406fa415e7145de2f56e64"
+    },
+    "espoir_city": {
+      "decision": "retain",
+      "factor": 1,
+      "reason": "Head/torso scale is consistent; apparent height changes come from posture, camera angle or limb extension.",
+      "baselineRuntimeSha256": "acd705ed94f4d9ca2a90ef8b44c7e03165e7427f796c1db3426dce8315c32ece"
+    },
+    "fine_motion": {
+      "decision": "retain",
+      "factor": 1,
+      "reason": "Head/torso scale is consistent; apparent height changes come from posture, camera angle or limb extension.",
+      "baselineRuntimeSha256": "d6fc22b3ec9d157b5a14e8bf6131859f7e4e06e7f73639866b23a696fa1a3b16"
+    },
+    "furioso": {
+      "decision": "retain",
+      "factor": 1,
+      "reason": "Head/torso scale is consistent; apparent height changes come from posture, camera angle or limb extension.",
+      "baselineRuntimeSha256": "3ece739d91e02858d3ca9601c711cbc1cf5eae7244b993bc0b4d9ef88d1bcb00"
+    },
+    "fusaichi_pandora": {
+      "decision": "retain",
+      "factor": 1,
+      "reason": "Head/torso scale is consistent; apparent height changes come from posture, camera angle or limb extension.",
+      "baselineRuntimeSha256": "8104ce0527cab1009039d7f9be386b1626e1cd67855aeb38aa37bf463b8a3539"
+    },
+    "gold_city": {
+      "decision": "retain",
+      "factor": 1,
+      "reason": "Head/torso scale is consistent; apparent height changes come from posture, camera angle or limb extension.",
+      "baselineRuntimeSha256": "10e67d520efaa7a47c7682f48071c2cec507e58847f68bbcfb44fb52cbfa7a38"
+    },
+    "grass_wonder": {
+      "decision": "retain",
+      "factor": 1,
+      "reason": "Head/torso scale is consistent; apparent height changes come from posture, camera angle or limb extension.",
+      "baselineRuntimeSha256": "858e7b0d0fb4557dadf063d2309182799ea2493cba9dd2545225f1f474303c19"
+    },
+    "haru_urara": {
+      "decision": "retain",
+      "factor": 1,
+      "reason": "Head/torso scale is consistent; apparent height changes come from posture, camera angle or limb extension.",
+      "baselineRuntimeSha256": "18e0d6fc52a3ba77f2bd77d679e23a5f31da9efa31ef8d39c2816806e38178c8"
+    },
+    "hishi_akebono": {
+      "decision": "retain",
+      "factor": 1,
+      "reason": "Head/torso scale is consistent; apparent height changes come from posture, camera angle or limb extension.",
+      "baselineRuntimeSha256": "3f6690704b9a969dbe6e27aeac15c63e5b4e715c4c1b9831d821ad0e4def6166"
+    },
+    "hishi_amazon": {
+      "decision": "retain",
+      "factor": 1,
+      "reason": "Head/torso scale is consistent; apparent height changes come from posture, camera angle or limb extension.",
+      "baselineRuntimeSha256": "0c5ac3767cb68ddaeaabcb898160f4ebbb3b8262e750d7124e0da5b9399488be"
+    },
+    "hishi_miracle": {
+      "decision": "retain",
+      "factor": 1,
+      "reason": "Head/torso scale is consistent; apparent height changes come from posture, camera angle or limb extension.",
+      "baselineRuntimeSha256": "9166a15770aa016ce93829bb42c253f065c8f6da996b9dab57baae6902e5cf71"
+    },
+    "hokko_tarumae": {
+      "decision": "retain",
+      "factor": 1,
+      "reason": "Head/torso scale is consistent; apparent height changes come from posture, camera angle or limb extension.",
+      "baselineRuntimeSha256": "eceb7fc1bcdba4808e497b63ff6d751947328ae9fc769b43dec84f18be2d48fc"
+    },
+    "ikuno_dictus": {
+      "decision": "retain",
+      "factor": 1,
+      "reason": "Head/torso scale is consistent; apparent height changes come from posture, camera angle or limb extension.",
+      "baselineRuntimeSha256": "c0ec5d537a3650ba9bc3f8239b1445fa3a46afb827148e9cf7794dd15e4812be"
+    },
+    "inari_one": {
+      "decision": "retain",
+      "factor": 1,
+      "reason": "Head/torso scale is consistent; apparent height changes come from posture, camera angle or limb extension.",
+      "baselineRuntimeSha256": "190eed6b68ba40fb201d31b3c2ec973032fc428e77a7952774c51063b0fe9184"
+    },
+    "ines_fujin": {
+      "decision": "retain",
+      "factor": 1,
+      "reason": "Head/torso scale is consistent; apparent height changes come from posture, camera angle or limb extension.",
+      "baselineRuntimeSha256": "65f8b3a1c1acc58dddfd5262851da098f8bbc5268a07e42a6552d8599c10a919"
+    },
+    "jungle_pocket": {
+      "decision": "retain",
+      "factor": 1,
+      "reason": "Head/torso scale is consistent; apparent height changes come from posture, camera angle or limb extension.",
+      "baselineRuntimeSha256": "ab408eac5aa3634aad569ed05da6177e0bb878b7c4b67d2122fadfbf041bd782"
+    },
+    "katsuragi_ace": {
+      "decision": "retain",
+      "factor": 1,
+      "reason": "Head/torso scale is consistent; apparent height changes come from posture, camera angle or limb extension.",
+      "baselineRuntimeSha256": "2dc02c73608219459f9626c013b6d2009ecc7635c5ed8329171918f3e828ea7c"
+    },
+    "kawakami_princess": {
+      "decision": "retain",
+      "factor": 1,
+      "reason": "Head/torso scale is consistent; apparent height changes come from posture, camera angle or limb extension.",
+      "baselineRuntimeSha256": "bf81e4f4e046b0c4e8b3964a68c84a7d0f2a0a9720099e1e5dffa9aafc503c60"
+    },
+    "king_halo": {
+      "decision": "retain",
+      "factor": 1,
+      "reason": "Head/torso scale is consistent; apparent height changes come from posture, camera angle or limb extension.",
+      "baselineRuntimeSha256": "a4536321e7ebba9377cc05f48678faf87188a6bb99540d364dfa862ea625c44c"
+    },
+    "kitasan_black": {
+      "decision": "retain",
+      "factor": 1,
+      "reason": "Head/torso scale is consistent; apparent height changes come from posture, camera angle or limb extension.",
+      "baselineRuntimeSha256": "4ad3dd7401cf1b69d147f4fc060158d944277a98e87e9b1eb2d878c4dcd04879"
+    },
+    "ks_miracle": {
+      "decision": "retain",
+      "factor": 1,
+      "reason": "Head/torso scale is consistent; apparent height changes come from posture, camera angle or limb extension.",
+      "baselineRuntimeSha256": "dfa9becd9943e57878a0a47893cb1dc95c394b3a5879b14f6c9107ed0192b5d2"
+    },
+    "logotype": {
+      "decision": "retain",
+      "factor": 1,
+      "reason": "Head/torso scale is consistent; apparent height changes come from posture, camera angle or limb extension.",
+      "baselineRuntimeSha256": "a0b8d349c8eb745b9f61e7e2304557b156c5cf6f01a800a3603a0488835118b0"
+    },
+    "loves_only_you": {
+      "decision": "retain",
+      "factor": 1,
+      "reason": "Head/torso scale is consistent; apparent height changes come from posture, camera angle or limb extension.",
+      "baselineRuntimeSha256": "43b6759d19d373334eff8e5e6a199166691f18845437bfc3acee22076b45cbbb"
+    },
+    "marche_lorraine": {
+      "decision": "retain",
+      "factor": 1,
+      "reason": "Head/torso scale is consistent; apparent height changes come from posture, camera angle or limb extension.",
+      "baselineRuntimeSha256": "0dd8bd06ffa484136f04113d1462d1a872ccac1c7917833fea63577c9148f689"
+    },
+    "maruzensky": {
+      "decision": "retain",
+      "factor": 1,
+      "reason": "Head/torso scale is consistent; apparent height changes come from posture, camera angle or limb extension.",
+      "baselineRuntimeSha256": "a36d9b7987af9e187eed9da42fe08e79c66c72efa512ba50071f4def2f6e8f0b"
+    },
+    "matikanefukukitaru": {
+      "decision": "retain",
+      "factor": 1,
+      "reason": "Head/torso scale is consistent; apparent height changes come from posture, camera angle or limb extension.",
+      "baselineRuntimeSha256": "bddeead9fe610707dac0a95a12ae806f827706196efe3adbe9419288ff90b58c"
+    },
+    "matikanetannhauser": {
+      "decision": "retain",
+      "factor": 1,
+      "reason": "Head/torso scale is consistent; apparent height changes come from posture, camera angle or limb extension.",
+      "baselineRuntimeSha256": "c6dc571c85b991c037b87eeb2e94161fc54c5db20aaa069338dab817f4471cff"
+    },
+    "meisho_doto": {
+      "decision": "retain",
+      "factor": 1,
+      "reason": "Head/torso scale is consistent; apparent height changes come from posture, camera angle or limb extension.",
+      "baselineRuntimeSha256": "c29e15f2cf397b44d488a4d092e71eeb843527700ff565db21085094cbea4ff0"
+    },
+    "mejiro_ardan": {
+      "decision": "retain",
+      "factor": 1,
+      "reason": "Head/torso scale is consistent; apparent height changes come from posture, camera angle or limb extension.",
+      "baselineRuntimeSha256": "cb229bdee26e064baa36170aa84061c556efbdcba5931f23cb53e19d83583858"
+    },
+    "mejiro_bright": {
+      "decision": "retain",
+      "factor": 1,
+      "reason": "Head/torso scale is consistent; apparent height changes come from posture, camera angle or limb extension.",
+      "baselineRuntimeSha256": "569711ce63b1ea7bce4fc1b8ecca7199295c82322f84e41e3eeee12fdbc4322d"
+    },
+    "mejiro_mcqueen": {
+      "decision": "retain",
+      "factor": 1,
+      "reason": "Head/torso scale is consistent; apparent height changes come from posture, camera angle or limb extension.",
+      "baselineRuntimeSha256": "ccd08a0f83eb62af28173be0e100bf2804f882794de14122681a6eaaf2ff5c1b"
+    },
+    "mejiro_palmer": {
+      "decision": "retain",
+      "factor": 1,
+      "reason": "Head/torso scale is consistent; apparent height changes come from posture, camera angle or limb extension.",
+      "baselineRuntimeSha256": "ab37a4730cc6d63518fb5f63651cad72e44ec8fe38134fe7598250010fcd301f"
+    },
+    "mr_cb": {
+      "decision": "retain",
+      "factor": 1,
+      "reason": "Head/torso scale is consistent; apparent height changes come from posture, camera angle or limb extension.",
+      "baselineRuntimeSha256": "62e1e36b5181e272ffbe27a5cfa6426faa5acd11e449d302c902d92b80ddb8af"
+    },
+    "nakayama_festa": {
+      "decision": "retain",
+      "factor": 1,
+      "reason": "Head/torso scale is consistent; apparent height changes come from posture, camera angle or limb extension.",
+      "baselineRuntimeSha256": "95ad0c32d3b0a8c4a653ea30c71775fb0f6c2e8b17a7e444b57b5e638bff7687"
+    },
+    "narita_brian": {
+      "decision": "retain",
+      "factor": 1,
+      "reason": "Head/torso scale is consistent; apparent height changes come from posture, camera angle or limb extension.",
+      "baselineRuntimeSha256": "2e1a45e1eb45c5f3290c72ce2cf147530a95a70ae6abe815b71a25acd84c24c2"
+    },
+    "narita_taishin": {
+      "decision": "retain",
+      "factor": 1,
+      "reason": "Head/torso scale is consistent; apparent height changes come from posture, camera angle or limb extension.",
+      "baselineRuntimeSha256": "c403d59b556e12c5d0e9f6f6e459682e4425d40bb68e29d377f34f8eb17c6a57"
+    },
+    "narita_top_road": {
+      "decision": "retain",
+      "factor": 1,
+      "reason": "Head/torso scale is consistent; apparent height changes come from posture, camera angle or limb extension.",
+      "baselineRuntimeSha256": "eb5e9a5e0fbb82f10f281c598dc3aaf9a9be8a86f7c96574e94141b94a6cbdca"
+    },
+    "nice_nature": {
+      "decision": "retain",
+      "factor": 1,
+      "reason": "Head/torso scale is consistent; apparent height changes come from posture, camera angle or limb extension.",
+      "baselineRuntimeSha256": "cb5da19cbda11869a9e022e9569516d0902a6d8aadb4d80264166b5eb3f55ad9"
+    },
+    "nishino_flower": {
+      "decision": "retain",
+      "factor": 1,
+      "reason": "Head/torso scale is consistent; apparent height changes come from posture, camera angle or limb extension.",
+      "baselineRuntimeSha256": "124ba850690702b15a09f56b975e30f971329f9ce8fb370b82136f8c858e2159"
+    },
+    "no_reason": {
+      "decision": "retain",
+      "factor": 1,
+      "reason": "Head/torso scale is consistent; apparent height changes come from posture, camera angle or limb extension.",
+      "baselineRuntimeSha256": "6032582568071fadedc702c79db7e19388ade6e6995871fe1a2b058a42bf772d"
+    },
+    "north_flight": {
+      "decision": "retain",
+      "factor": 1,
+      "reason": "Head/torso scale is consistent; apparent height changes come from posture, camera angle or limb extension.",
+      "baselineRuntimeSha256": "0e878963bf93b19221fa5a0be963aec79d10555b5c75fcfe89f05a178af6050f"
+    },
+    "phalaenopsis": {
+      "decision": "retain",
+      "factor": 1,
+      "reason": "Head/torso scale is consistent; apparent height changes come from posture, camera angle or limb extension.",
+      "baselineRuntimeSha256": "df2585fe4deb0dec609534bab32f30355a57b38e4de56c61e44463005a37731f"
+    },
+    "rhein_kraft": {
+      "decision": "retain",
+      "factor": 1,
+      "reason": "Head/torso scale is consistent; apparent height changes come from posture, camera angle or limb extension.",
+      "baselineRuntimeSha256": "87493a1868ab59051a7dc1a3c136e11aa4a20795fbca7b0952d016c209ace92c"
+    },
+    "royce_and_royce": {
+      "decision": "retain",
+      "factor": 1,
+      "reason": "Head/torso scale is consistent; apparent height changes come from posture, camera angle or limb extension.",
+      "baselineRuntimeSha256": "0fd9f2e12133fde214793b447c01a11357eb699af5904fd70e12d663c37114f0"
+    },
+    "rulership": {
+      "decision": "retain",
+      "factor": 1,
+      "reason": "Head/torso scale is consistent; apparent height changes come from posture, camera angle or limb extension.",
+      "baselineRuntimeSha256": "0d4f09df0f1b1f22a4c0e40a4712b4b42a908529812d59dc078d8d1948400eb0"
+    },
+    "sakura_bakushin_o": {
+      "decision": "retain",
+      "factor": 1,
+      "reason": "Head/torso scale is consistent; apparent height changes come from posture, camera angle or limb extension.",
+      "baselineRuntimeSha256": "4e850134449b96d34d8723f64600824857cf6a875b058bd8c3a687235ade0bf3"
+    },
+    "sakura_chitose_o": {
+      "decision": "retain",
+      "factor": 1,
+      "reason": "Head/torso scale is consistent; apparent height changes come from posture, camera angle or limb extension.",
+      "baselineRuntimeSha256": "6bb8284e481c42e51d8166d455ba9381b3cd59995d9b853c0701a3dcec406171"
+    },
+    "sakura_chiyono_o": {
+      "decision": "normalize",
+      "factor": 1.2,
+      "reason": "Skill head/torso are visibly smaller than the movement/attack reference. Enlarge the existing source uniformly; preserve effects in padded cells.",
+      "baselineRuntimeSha256": "3ee93f461d91b0bef4be66063b916668224a25933e11e80383c8d34b5ffbe406"
+    },
+    "sakura_laurel": {
+      "decision": "retain",
+      "factor": 1,
+      "reason": "Head/torso scale is consistent; apparent height changes come from posture, camera angle or limb extension.",
+      "baselineRuntimeSha256": "2c9793c30cdfffe7f12d525275b567b8da22c5d0b5d1d65b0234726bef457e7a"
+    },
+    "samson_big": {
+      "decision": "retain",
+      "factor": 1,
+      "reason": "Head/torso scale is consistent; apparent height changes come from posture, camera angle or limb extension.",
+      "baselineRuntimeSha256": "42afde5c7350cf5589a46fddb8c6536504e026804cb96afff0391a04bcbf15bb"
+    },
+    "satono_crown": {
+      "decision": "retain",
+      "factor": 1,
+      "reason": "Head/torso scale is consistent; apparent height changes come from posture, camera angle or limb extension.",
+      "baselineRuntimeSha256": "c007e44ba8db959146cd1c98d6ea9c6bab4e50ecca12aa848eff44be37f515bd"
+    },
+    "satono_diamond": {
+      "decision": "retain",
+      "factor": 1,
+      "reason": "Head/torso scale is consistent; apparent height changes come from posture, camera angle or limb extension.",
+      "baselineRuntimeSha256": "90ec1902d60d8ca2946a2d64a152ed72f0ed4cac0f98af15bd586971955446fa"
+    },
+    "seiun_sky": {
+      "decision": "retain",
+      "factor": 1,
+      "reason": "Head/torso scale is consistent; apparent height changes come from posture, camera angle or limb extension.",
+      "baselineRuntimeSha256": "c140788434f98d2abe24be856322238cac9f44bdcb85a83e812bd450e8808023"
+    },
+    "shinko_windy": {
+      "decision": "retain",
+      "factor": 1,
+      "reason": "Head/torso scale is consistent; apparent height changes come from posture, camera angle or limb extension.",
+      "baselineRuntimeSha256": "ae6870b757b14ee1d751c73dd6e5aea2211f7eb590746c89f753443bc324bdac"
+    },
+    "sirius_symboli": {
+      "decision": "retain",
+      "factor": 1,
+      "reason": "Head/torso scale is consistent; apparent height changes come from posture, camera angle or limb extension.",
+      "baselineRuntimeSha256": "d81e1d0526702ef9c54f8c364b1021f5bfb1c3416c3e6c451e93f919c2818b34"
+    },
+    "smart_falcon": {
+      "decision": "retain",
+      "factor": 1,
+      "reason": "Head/torso scale is consistent; apparent height changes come from posture, camera angle or limb extension.",
+      "baselineRuntimeSha256": "54a5b6b86bb1fd1d204c6de710a378cc5602c635f2882ccfe0ee8fc488204ed2"
+    },
+    "sounds_of_earth": {
+      "decision": "retain",
+      "factor": 1,
+      "reason": "Head/torso scale is consistent; apparent height changes come from posture, camera angle or limb extension.",
+      "baselineRuntimeSha256": "5ca6a990c1b5c9b2c0615a2834ea13dd8d6993f400a1703f134b68216b9858b3"
+    },
+    "special_week": {
+      "decision": "retain",
+      "factor": 1,
+      "reason": "Head/torso scale is consistent; apparent height changes come from posture, camera angle or limb extension.",
+      "baselineRuntimeSha256": "8c9211fc584ea07013bf11b91ce389b0b97576ef950dd9eaa2584e55ca3f6470"
+    },
+    "stay_gold": {
+      "decision": "retain",
+      "factor": 1,
+      "reason": "Head/torso scale is consistent; apparent height changes come from posture, camera angle or limb extension.",
+      "baselineRuntimeSha256": "d7327cb272dfddf50f167f18fa456f8639ccd95a8d810153e9522a2c2a761b8e"
+    },
+    "super_creek": {
+      "decision": "retain",
+      "factor": 1,
+      "reason": "Head/torso scale is consistent; apparent height changes come from posture, camera angle or limb extension.",
+      "baselineRuntimeSha256": "cac503dbdd5252df30c29d94e4fcc60a5cbdea08617cc5b351ce83a9021b9de3"
+    },
+    "symboli_kris_s": {
+      "decision": "retain",
+      "factor": 1,
+      "reason": "Head/torso scale is consistent; apparent height changes come from posture, camera angle or limb extension.",
+      "baselineRuntimeSha256": "cca6259b1bccec94666f1d0a4c213909a62290dfdacdce077ee30bbf7b567ba6"
+    },
+    "symboli_rudolf": {
+      "decision": "retain",
+      "factor": 1,
+      "reason": "Head/torso scale is consistent; apparent height changes come from posture, camera angle or limb extension.",
+      "baselineRuntimeSha256": "bffcdd5cb256881b0596545b871f80264e39bb9f07825a69708a6e8b07361e30"
+    },
+    "taiki_shuttle": {
+      "decision": "retain",
+      "factor": 1,
+      "reason": "Head/torso scale is consistent; apparent height changes come from posture, camera angle or limb extension.",
+      "baselineRuntimeSha256": "b62d6da4bddc8e74462f06a04a7c2578bf8e5df27913fa1fa61c3423368c2fc1"
+    },
+    "tanino_gimlet": {
+      "decision": "retain",
+      "factor": 1,
+      "reason": "Head/torso scale is consistent; apparent height changes come from posture, camera angle or limb extension.",
+      "baselineRuntimeSha256": "f5138dcb47dbea6c546bb075874cb67bb35256f347378f957773eed00731d3f4"
+    },
+    "tap_dance_city": {
+      "decision": "retain",
+      "factor": 1,
+      "reason": "Head/torso scale is consistent; apparent height changes come from posture, camera angle or limb extension.",
+      "baselineRuntimeSha256": "4fbea13dc18a681ba82e6d44939434265945ec6250cb1dd395a736cfbf3a58cb"
+    },
+    "tm_opera_o": {
+      "decision": "retain",
+      "factor": 1,
+      "reason": "Head/torso scale is consistent; apparent height changes come from posture, camera angle or limb extension.",
+      "baselineRuntimeSha256": "6a7b7f5dcbe891f26b2bea2717100ca0ab419256402980f61a1b6c515c55f41a"
+    },
+    "transcend": {
+      "decision": "normalize",
+      "factor": 1.15,
+      "reason": "Skill head/torso are visibly smaller than the movement/attack reference. Enlarge the existing source uniformly; preserve effects in padded cells.",
+      "baselineRuntimeSha256": "3dc56ee14a61b5101aab14f74345f1c0422472496bdd84dc8ed52d730079f796"
+    },
+    "tsurumaru_tsuyoshi": {
+      "decision": "retain",
+      "factor": 1,
+      "reason": "Head/torso scale is consistent; apparent height changes come from posture, camera angle or limb extension.",
+      "baselineRuntimeSha256": "8b42a95ecacdda1e55beef7ed9aebe9fefe1601e47ee8c4e4f5f322dc4068c3e"
+    },
+    "twin_turbo": {
+      "decision": "retain",
+      "factor": 1,
+      "reason": "Head/torso scale is consistent; apparent height changes come from posture, camera angle or limb extension.",
+      "baselineRuntimeSha256": "84230d6545d295ea33d1bf6de33ac9e335ed8ecd13ca1730639fec450e87b5fb"
+    },
+    "win_variation": {
+      "decision": "retain",
+      "factor": 1,
+      "reason": "Head/torso scale is consistent; apparent height changes come from posture, camera angle or limb extension.",
+      "baselineRuntimeSha256": "b993be63724615a33cbcbbd89bbe3e44993ca3199c4d40c30ad29a81d6a1711d"
+    },
+    "wonder_acute": {
+      "decision": "retain",
+      "factor": 1,
+      "reason": "Head/torso scale is consistent; apparent height changes come from posture, camera angle or limb extension.",
+      "baselineRuntimeSha256": "d053e7f20b135d6bd443c7b7b595491c18cf82bd7a3270139b4cb2296c5769ef"
+    },
+    "yaeno_muteki": {
+      "decision": "retain",
+      "factor": 1,
+      "reason": "Head/torso scale is consistent; apparent height changes come from posture, camera angle or limb extension.",
+      "baselineRuntimeSha256": "827da48e2a282406f2e569b430ec88beb873fbee5d66ab00599857386a5b891a"
+    },
+    "yamanin_zephyr": {
+      "decision": "retain",
+      "factor": 1,
+      "reason": "Head/torso scale is consistent; apparent height changes come from posture, camera angle or limb extension.",
+      "baselineRuntimeSha256": "015cf9ccbd0fbb6deb91ff4f039a9fd4be13b5b70ff2d167c6ba833f13af888f"
+    },
+    "yukino_bijin": {
+      "decision": "retain",
+      "factor": 1,
+      "reason": "Head/torso scale is consistent; apparent height changes come from posture, camera angle or limb extension.",
+      "baselineRuntimeSha256": "0d0c2fc474caa87fbaa2bc24cde135f15f5fd87a63c7e2be06880f635f328a22"
+    },
+    "zenno_rob_roy": {
+      "decision": "retain",
+      "factor": 1,
+      "reason": "Head/torso scale is consistent; apparent height changes come from posture, camera angle or limb extension.",
+      "baselineRuntimeSha256": "76c45f5c135f08291827d2ceca68b5ff14f35a9178e5e0b54cfc0e2285170a8b"
+    }
+  }
+}

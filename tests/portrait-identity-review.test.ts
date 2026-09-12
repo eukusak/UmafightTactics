@@ -21,6 +21,7 @@ it('accounts for every portrait and permits only explicitly approved complete id
     );
     expect(sha(JSON.stringify(unit.skill)), `${unit.id}: skill changed`).toBe(entry.skillSignature);
     const current = sha(readFileSync('public/assets/' + sheet.file));
+    const priorToScale = json(sheet.source).scaleRevision?.baselineRuntimeSha256 ?? current;
     if (entry.decision === 'revise') targets++;
     else expect(entry.decision).toBe('retain');
     if (entry.status === 'integrated') {
@@ -41,7 +42,7 @@ it('accounts for every portrait and permits only explicitly approved complete id
       expect(packing.identityRevision.alpha.transparentFraction).toBeGreaterThan(0.3);
       expect(packing.identityRevision.alpha.solidFraction).toBeGreaterThan(0.08);
       expect(packing.runtimeSha256).toBe(current);
-      expect(entry.runtimeSha256).toBe(current);
+      expect(entry.runtimeSha256).toBe(priorToScale);
       expect(current).not.toBe(entry.baselineRuntimeSha256);
       const sourcePath = base + '/' + unit.id + '/generated.png';
       const sourceHash = sha(readFileSync(sourcePath));
@@ -52,7 +53,7 @@ it('accounts for every portrait and permits only explicitly approved complete id
       }
     } else {
       expect(entry.status).toBe(entry.decision === 'retain' ? 'retained' : 'pending');
-      expect(current, `${unit.id}: unapproved image changed`).toBe(entry.baselineRuntimeSha256);
+      expect(priorToScale, `${unit.id}: unapproved image changed`).toBe(entry.baselineRuntimeSha256);
     }
   }
   expect(audit.targetCount).toBe(targets);

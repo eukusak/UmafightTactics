@@ -14,6 +14,7 @@ const registry = await read('src/data/manual/frame-sheets.json');
 const compatibility = await read('docs/art-source/motions/skill-choreography-review.json');
 const audit = await read(base + '/roster-review.json');
 for (const id of process.argv.slice(2)) {
+  if (registry[id]?.logicalFrameSize) throw Error('Padded atlas: review and repack through normalize-skill-scale.mjs instead of overwriting its layout: ' + id);
   const dir = base + '/' + id,
     spec = await read(dir + '/review.json'),
     entry = audit.units[id];

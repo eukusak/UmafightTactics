@@ -1,0 +1,551 @@
+{
+  "format": "uft-baked-frames-v1",
+  "scale": 0.4126984126984127,
+  "anchor": [
+    128,
+    174
+  ],
+  "runtimeSha256": "7352c87de5ee616961feebaac9f76b722c7418d461bf32ba008038bdde0705e4",
+  "frames": [
+    {
+      "frame": 0,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/production-144/gran_alegria/alpha.png",
+      "sourceSha256": "4191730ed63cdc68b1254fd24ac6256fffede66d366e2dfd0537d86db73789b5",
+      "crop": [
+        56,
+        12,
+        213,
+        264
+      ],
+      "destination": [
+        95,
+        70,
+        65,
+        104
+      ]
+    },
+    {
+      "frame": 1,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/production-144/gran_alegria/alpha.png",
+      "sourceSha256": "4191730ed63cdc68b1254fd24ac6256fffede66d366e2dfd0537d86db73789b5",
+      "crop": [
+        304,
+        12,
+        461,
+        264
+      ],
+      "destination": [
+        351,
+        70,
+        65,
+        104
+      ]
+    },
+    {
+      "frame": 2,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/production-144/gran_alegria/alpha.png",
+      "sourceSha256": "4191730ed63cdc68b1254fd24ac6256fffede66d366e2dfd0537d86db73789b5",
+      "crop": [
+        561,
+        13,
+        720,
+        264
+      ],
+      "destination": [
+        607,
+        70,
+        66,
+        104
+      ]
+    },
+    {
+      "frame": 3,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/production-144/gran_alegria/alpha.png",
+      "sourceSha256": "4191730ed63cdc68b1254fd24ac6256fffede66d366e2dfd0537d86db73789b5",
+      "crop": [
+        815,
+        12,
+        973,
+        264
+      ],
+      "destination": [
+        863,
+        70,
+        65,
+        104
+      ]
+    },
+    {
+      "frame": 4,
+      "sourceFrame": 4,
+      "source": "docs/art-source/motions/production-144/gran_alegria/alpha.png",
+      "sourceSha256": "4191730ed63cdc68b1254fd24ac6256fffede66d366e2dfd0537d86db73789b5",
+      "crop": [
+        28,
+        279,
+        228,
+        519
+      ],
+      "destination": [
+        86,
+        331,
+        83,
+        99
+      ]
+    },
+    {
+      "frame": 5,
+      "sourceFrame": 5,
+      "source": "docs/art-source/motions/production-144/gran_alegria/alpha.png",
+      "sourceSha256": "4191730ed63cdc68b1254fd24ac6256fffede66d366e2dfd0537d86db73789b5",
+      "crop": [
+        277,
+        282,
+        480,
+        519
+      ],
+      "destination": [
+        342,
+        332,
+        84,
+        98
+      ]
+    },
+    {
+      "frame": 6,
+      "sourceFrame": 6,
+      "source": "docs/art-source/motions/production-144/gran_alegria/alpha.png",
+      "sourceSha256": "4191730ed63cdc68b1254fd24ac6256fffede66d366e2dfd0537d86db73789b5",
+      "crop": [
+        534,
+        283,
+        738,
+        520
+      ],
+      "destination": [
+        598,
+        332,
+        84,
+        98
+      ]
+    },
+    {
+      "frame": 7,
+      "sourceFrame": 7,
+      "source": "docs/art-source/motions/production-144/gran_alegria/alpha.png",
+      "sourceSha256": "4191730ed63cdc68b1254fd24ac6256fffede66d366e2dfd0537d86db73789b5",
+      "crop": [
+        789,
+        283,
+        992,
+        520
+      ],
+      "destination": [
+        854,
+        332,
+        84,
+        98
+      ]
+    },
+    {
+      "frame": 8,
+      "sourceFrame": 8,
+      "source": "docs/art-source/motions/production-144/gran_alegria/alpha.png",
+      "sourceSha256": "4191730ed63cdc68b1254fd24ac6256fffede66d366e2dfd0537d86db73789b5",
+      "crop": [
+        46,
+        536,
+        206,
+        780
+      ],
+      "destination": [
+        95,
+        585,
+        66,
+        101
+      ]
+    },
+    {
+      "frame": 9,
+      "sourceFrame": 9,
+      "source": "docs/art-source/motions/production-144/gran_alegria/alpha.png",
+      "sourceSha256": "4191730ed63cdc68b1254fd24ac6256fffede66d366e2dfd0537d86db73789b5",
+      "crop": [
+        290,
+        541,
+        451,
+        780
+      ],
+      "destination": [
+        351,
+        587,
+        66,
+        99
+      ]
+    },
+    {
+      "frame": 10,
+      "sourceFrame": 10,
+      "source": "docs/art-source/motions/production-144/gran_alegria/alpha.png",
+      "sourceSha256": "4191730ed63cdc68b1254fd24ac6256fffede66d366e2dfd0537d86db73789b5",
+      "crop": [
+        544,
+        543,
+        758,
+        780
+      ],
+      "destination": [
+        596,
+        588,
+        88,
+        98
+      ]
+    },
+    {
+      "frame": 11,
+      "sourceFrame": 11,
+      "source": "docs/art-source/motions/production-144/gran_alegria/alpha.png",
+      "sourceSha256": "4191730ed63cdc68b1254fd24ac6256fffede66d366e2dfd0537d86db73789b5",
+      "crop": [
+        815,
+        536,
+        972,
+        780
+      ],
+      "destination": [
+        863,
+        585,
+        65,
+        101
+      ]
+    },
+    {
+      "frame": 12,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/skill-revisions-2026-09-11/gran_alegria/generated.png",
+      "sourceSha256": "d4b55dc36ce160b4f0ded0e8f073f9747bcae5e16041da497dd8f5d5ab77acce",
+      "crop": [
+        87,
+        40,
+        638,
+        426
+      ],
+      "destination": [
+        65,
+        854,
+        125,
+        88
+      ]
+    },
+    {
+      "frame": 13,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/skill-revisions-2026-09-11/gran_alegria/generated.png",
+      "sourceSha256": "d4b55dc36ce160b4f0ded0e8f073f9747bcae5e16041da497dd8f5d5ab77acce",
+      "crop": [
+        871,
+        27,
+        1484,
+        453
+      ],
+      "destination": [
+        314,
+        845,
+        139,
+        97
+      ]
+    },
+    {
+      "frame": 14,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/skill-revisions-2026-09-11/gran_alegria/generated.png",
+      "sourceSha256": "d4b55dc36ce160b4f0ded0e8f073f9747bcae5e16041da497dd8f5d5ab77acce",
+      "crop": [
+        220,
+        470,
+        642,
+        983
+      ],
+      "destination": [
+        592,
+        826,
+        96,
+        116
+      ]
+    },
+    {
+      "frame": 15,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/skill-revisions-2026-09-11/gran_alegria/generated.png",
+      "sourceSha256": "d4b55dc36ce160b4f0ded0e8f073f9747bcae5e16041da497dd8f5d5ab77acce",
+      "crop": [
+        916,
+        559,
+        1258,
+        982
+      ],
+      "destination": [
+        857,
+        846,
+        78,
+        96
+      ]
+    },
+    {
+      "frame": 16,
+      "sourceFrame": 16,
+      "source": "docs/art-source/motions/production-144/gran_alegria/alpha.png",
+      "sourceSha256": "4191730ed63cdc68b1254fd24ac6256fffede66d366e2dfd0537d86db73789b5",
+      "crop": [
+        39,
+        1028,
+        204,
+        1263
+      ],
+      "destination": [
+        94,
+        1101,
+        68,
+        97
+      ]
+    },
+    {
+      "frame": 17,
+      "sourceFrame": 17,
+      "source": "docs/art-source/motions/production-144/gran_alegria/alpha.png",
+      "sourceSha256": "4191730ed63cdc68b1254fd24ac6256fffede66d366e2dfd0537d86db73789b5",
+      "crop": [
+        295,
+        1047,
+        463,
+        1262
+      ],
+      "destination": [
+        349,
+        1109,
+        69,
+        89
+      ]
+    },
+    {
+      "frame": 18,
+      "sourceFrame": 18,
+      "source": "docs/art-source/motions/production-144/gran_alegria/alpha.png",
+      "sourceSha256": "4191730ed63cdc68b1254fd24ac6256fffede66d366e2dfd0537d86db73789b5",
+      "crop": [
+        544,
+        1069,
+        707,
+        1253
+      ],
+      "destination": [
+        606,
+        1122,
+        67,
+        76
+      ]
+    },
+    {
+      "frame": 19,
+      "sourceFrame": 19,
+      "source": "docs/art-source/motions/production-144/gran_alegria/alpha.png",
+      "sourceSha256": "4191730ed63cdc68b1254fd24ac6256fffede66d366e2dfd0537d86db73789b5",
+      "crop": [
+        768,
+        1121,
+        1018,
+        1256
+      ],
+      "destination": [
+        844,
+        1142,
+        103,
+        56
+      ]
+    },
+    {
+      "frame": 20,
+      "sourceFrame": 20,
+      "source": "docs/art-source/motions/production-144/gran_alegria/alpha.png",
+      "sourceSha256": "4191730ed63cdc68b1254fd24ac6256fffede66d366e2dfd0537d86db73789b5",
+      "crop": [
+        39,
+        1277,
+        203,
+        1526
+      ],
+      "destination": [
+        94,
+        1351,
+        68,
+        103
+      ]
+    },
+    {
+      "frame": 21,
+      "sourceFrame": 21,
+      "source": "docs/art-source/motions/production-144/gran_alegria/alpha.png",
+      "sourceSha256": "4191730ed63cdc68b1254fd24ac6256fffede66d366e2dfd0537d86db73789b5",
+      "crop": [
+        302,
+        1284,
+        468,
+        1526
+      ],
+      "destination": [
+        349,
+        1354,
+        69,
+        100
+      ]
+    },
+    {
+      "frame": 22,
+      "sourceFrame": 22,
+      "source": "docs/art-source/motions/production-144/gran_alegria/alpha.png",
+      "sourceSha256": "4191730ed63cdc68b1254fd24ac6256fffede66d366e2dfd0537d86db73789b5",
+      "crop": [
+        547,
+        1272,
+        719,
+        1511
+      ],
+      "destination": [
+        604,
+        1355,
+        71,
+        99
+      ]
+    },
+    {
+      "frame": 23,
+      "sourceFrame": 23,
+      "source": "docs/art-source/motions/production-144/gran_alegria/alpha.png",
+      "sourceSha256": "4191730ed63cdc68b1254fd24ac6256fffede66d366e2dfd0537d86db73789b5",
+      "crop": [
+        805,
+        1278,
+        969,
+        1526
+      ],
+      "destination": [
+        862,
+        1352,
+        68,
+        102
+      ]
+    }
+  ],
+  "skillRevision": {
+    "scale": 0.18923327895595432,
+    "review": "docs/art-source/motions/skill-revisions-2026-09-11/gran_alegria/review.json",
+    "beforeFrames": [
+      "dd64af70b4818f520436cfc67ab8476ae2cf9d1943038e6f53da86bb2c861959",
+      "f1746f437c3257964bf9a7d2e5f8004843be6458729ba3b69b6e5f1301633922",
+      "5060c307309203ab54444da7f3f0f989ccb75bbeb73a9a6c7114a6e3752f03b3",
+      "d0b06edc2bd031dd870a355a4679675bdf46d54ebf0e36bc0eb0a4318d91bbf9",
+      "291bd5e3ac10ecf07a94d8a8b41dec71ce8a9870369f578c3126fbc66cff5797",
+      "87c66eb0dfb6523c93c69d5d1cb842745a4cffa8dcd63322becc7622a9220e74",
+      "573cb78ef1495d44d72ff466d193c550d19f318eced57977501a509b7cbfb433",
+      "f47ac5ca0f2b7317e97fc72f664dab995401daf5a588a01ec4da984e94f959b1",
+      "f683bb853f382fabac96ad9ed6be45d0bc88fa7c71e0cbb252a54b5bfa20debe",
+      "dba5602d1463298cd9398ad224c93293ff821be62a9dda47292d73b93d385e15",
+      "a6ea6f47ce68b8745e820e019ca5ba5fe2d463ebd0953736b60bde26d39d6c03",
+      "6815f207dc86f5ec18ed255c0fa4e25b58875cda42f894e2d3fca05217fe8ca9",
+      "4ee8817c367046dfdea8e5260022c8462b233d1eeca025a5d280d28f565e1ea2",
+      "fbaf4452906b3424da7e9fceabb0fc99e052f0470aa36d796d67f84f09a3811a",
+      "794c877a41b44b64f378596ccc383afa2997ba1c45eb36587b162d5d1a7604ee",
+      "13ff0a9dd35d75787906a408578a45f83eed5a8b6f8996c72ed0f2e7601d3022",
+      "1e97b7568157b572ac354b76700156a94af217522110d6dda4d6d576f1729ecf",
+      "6ebb2e37aa85a5bc5cff0370f800a55db73dd36e78a09fa54038bd1f0f965bdb",
+      "271b24989a42c9af27b42001825139d3a9aae413296d6fb01febaf315ebc605d",
+      "234aa49794cca2b3d1648f69823de6cc55ffcc234cae5785f0d55962ec200bbf",
+      "ee79ef31e1cbfc11e45959676dd8871ba2c63467986cfc2398d618ac1b185611",
+      "71b892df92582334856d17c77462fa879adab7d4c8453dee3afabab637614f16",
+      "e9bd3e2160ced02875836c62254353566ab665e0f9bc91ab6ff5ee52527e7c06",
+      "d83bf4a4a5f6e5cf5455e3790f6751c92af70ba5bd6b944b496c8033bdb54a78"
+    ],
+    "afterFrames": [
+      "dd64af70b4818f520436cfc67ab8476ae2cf9d1943038e6f53da86bb2c861959",
+      "f1746f437c3257964bf9a7d2e5f8004843be6458729ba3b69b6e5f1301633922",
+      "5060c307309203ab54444da7f3f0f989ccb75bbeb73a9a6c7114a6e3752f03b3",
+      "d0b06edc2bd031dd870a355a4679675bdf46d54ebf0e36bc0eb0a4318d91bbf9",
+      "291bd5e3ac10ecf07a94d8a8b41dec71ce8a9870369f578c3126fbc66cff5797",
+      "87c66eb0dfb6523c93c69d5d1cb842745a4cffa8dcd63322becc7622a9220e74",
+      "573cb78ef1495d44d72ff466d193c550d19f318eced57977501a509b7cbfb433",
+      "f47ac5ca0f2b7317e97fc72f664dab995401daf5a588a01ec4da984e94f959b1",
+      "f683bb853f382fabac96ad9ed6be45d0bc88fa7c71e0cbb252a54b5bfa20debe",
+      "dba5602d1463298cd9398ad224c93293ff821be62a9dda47292d73b93d385e15",
+      "a6ea6f47ce68b8745e820e019ca5ba5fe2d463ebd0953736b60bde26d39d6c03",
+      "6815f207dc86f5ec18ed255c0fa4e25b58875cda42f894e2d3fca05217fe8ca9",
+      "0dd2b3ee1794c3d3474085dad2d8eaa893d3ba9a7e1343724da075cb216f2595",
+      "91da8bee37e7d04f58a0cde8a127a3e9554860325a888e17dfc4448e7974da2d",
+      "9eac112d97f9b87a6b1e187095cbe5780aa79233819fd5cf90b2d19b8bdbfbb1",
+      "30637730abeb8c0c17c175043dcbf75b0344dd03b0afaba7ba780336752fae95",
+      "1e97b7568157b572ac354b76700156a94af217522110d6dda4d6d576f1729ecf",
+      "6ebb2e37aa85a5bc5cff0370f800a55db73dd36e78a09fa54038bd1f0f965bdb",
+      "271b24989a42c9af27b42001825139d3a9aae413296d6fb01febaf315ebc605d",
+      "234aa49794cca2b3d1648f69823de6cc55ffcc234cae5785f0d55962ec200bbf",
+      "ee79ef31e1cbfc11e45959676dd8871ba2c63467986cfc2398d618ac1b185611",
+      "71b892df92582334856d17c77462fa879adab7d4c8453dee3afabab637614f16",
+      "e9bd3e2160ced02875836c62254353566ab665e0f9bc91ab6ff5ee52527e7c06",
+      "d83bf4a4a5f6e5cf5455e3790f6751c92af70ba5bd6b944b496c8033bdb54a78"
+    ],
+    "unchangedFrames": 20,
+    "changedFrames": [
+      12,
+      13,
+      14,
+      15
+    ]
+  },
+  "frameWidth": 256,
+  "frameHeight": 256,
+  "columns": 4,
+  "rows": 6,
+  "logicalFrameSize": 128,
+  "scaleRevision": {
+    "review": "docs/art-source/motions/skill-scale-2026-09-12/review.json",
+    "previousPacking": "docs/art-source/motions/skill-revisions-2026-09-11/gran_alegria/packing.json",
+    "baselineRuntimeSha256": "98f77dbbd14a9514ad9e1c8e0256ee41697dd078c3cd035a6000879a1daee31b",
+    "baselineFrames": [
+      "dd64af70b4818f520436cfc67ab8476ae2cf9d1943038e6f53da86bb2c861959",
+      "f1746f437c3257964bf9a7d2e5f8004843be6458729ba3b69b6e5f1301633922",
+      "5060c307309203ab54444da7f3f0f989ccb75bbeb73a9a6c7114a6e3752f03b3",
+      "d0b06edc2bd031dd870a355a4679675bdf46d54ebf0e36bc0eb0a4318d91bbf9",
+      "291bd5e3ac10ecf07a94d8a8b41dec71ce8a9870369f578c3126fbc66cff5797",
+      "87c66eb0dfb6523c93c69d5d1cb842745a4cffa8dcd63322becc7622a9220e74",
+      "573cb78ef1495d44d72ff466d193c550d19f318eced57977501a509b7cbfb433",
+      "f47ac5ca0f2b7317e97fc72f664dab995401daf5a588a01ec4da984e94f959b1",
+      "f683bb853f382fabac96ad9ed6be45d0bc88fa7c71e0cbb252a54b5bfa20debe",
+      "dba5602d1463298cd9398ad224c93293ff821be62a9dda47292d73b93d385e15",
+      "a6ea6f47ce68b8745e820e019ca5ba5fe2d463ebd0953736b60bde26d39d6c03",
+      "6815f207dc86f5ec18ed255c0fa4e25b58875cda42f894e2d3fca05217fe8ca9",
+      "0dd2b3ee1794c3d3474085dad2d8eaa893d3ba9a7e1343724da075cb216f2595",
+      "91da8bee37e7d04f58a0cde8a127a3e9554860325a888e17dfc4448e7974da2d",
+      "9eac112d97f9b87a6b1e187095cbe5780aa79233819fd5cf90b2d19b8bdbfbb1",
+      "30637730abeb8c0c17c175043dcbf75b0344dd03b0afaba7ba780336752fae95",
+      "1e97b7568157b572ac354b76700156a94af217522110d6dda4d6d576f1729ecf",
+      "6ebb2e37aa85a5bc5cff0370f800a55db73dd36e78a09fa54038bd1f0f965bdb",
+      "271b24989a42c9af27b42001825139d3a9aae413296d6fb01febaf315ebc605d",
+      "234aa49794cca2b3d1648f69823de6cc55ffcc234cae5785f0d55962ec200bbf",
+      "ee79ef31e1cbfc11e45959676dd8871ba2c63467986cfc2398d618ac1b185611",
+      "71b892df92582334856d17c77462fa879adab7d4c8453dee3afabab637614f16",
+      "e9bd3e2160ced02875836c62254353566ab665e0f9bc91ab6ff5ee52527e7c06",
+      "d83bf4a4a5f6e5cf5455e3790f6751c92af70ba5bd6b944b496c8033bdb54a78"
+    ],
+    "factor": 1.2,
+    "padding": 64,
+    "changedFrames": [
+      12,
+      13,
+      14,
+      15
+    ],
+    "unchangedFrames": 20
+  }
+}

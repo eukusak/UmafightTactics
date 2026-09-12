@@ -3,8 +3,19 @@ import type { AnimationName } from './art';
 import type { SkillDef } from '../engine/types';
 import { skillTimeline, skillWindup } from '../engine/battle/skill-timeline';
 
-export type FrameSheet = { file: string; frameWidth: number; frameHeight: number; columns: number; rows: number; source: string; skillId: string; skillSignature: string; skillReview: string; skillReleaseFrame?: number; skillCompatibilityReview?: string };
+export type FrameSheet = { file: string; frameWidth: number; frameHeight: number; logicalFrameSize?: number; anchor?: number[]; columns: number; rows: number; source: string; skillId: string; skillSignature: string; skillReview: string; skillReleaseFrame?: number; skillCompatibilityReview?: string };
 export const FRAME_SHEETS: Record<string, FrameSheet> = sheetsRaw;
+
+/** Transparent effect padding must not change the unit's size or foot position. */
+export function frameGeometry(id: string, size: number): { width: number; height: number; originX: number; originY: number; offsetX: number; offsetY: number } {
+  const sheet = FRAME_SHEETS[id];
+  const logical = sheet?.logicalFrameSize ?? 128;
+  const width = sheet?.frameWidth ?? 128, height = sheet?.frameHeight ?? 128;
+  const [x, y] = sheet?.anchor ?? [64, 110];
+  return { width: size * width / logical, height: size * height / logical,
+    originX: x / width, originY: y / height,
+    offsetX: size * (.5 - x / logical), offsetY: size * (110 / 128 - y / logical) };
+}
 export const FRAME_CLIPS = {
   idle: { start: 0, count: 4, fps: 4, loop: true },
   run: { start: 4, count: 4, fps: 8, loop: true },

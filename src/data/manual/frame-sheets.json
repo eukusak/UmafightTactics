@@ -108,16 +108,21 @@
   },
   "fuji_kiseki": {
     "file": "motions/fuji_kiseki.png",
-    "frameWidth": 128,
-    "frameHeight": 128,
+    "frameWidth": 256,
+    "frameHeight": 256,
     "columns": 4,
     "rows": 6,
-    "source": "docs/art-source/motions/skill-revisions-2026-09-11/fuji_kiseki/packing.json",
+    "source": "docs/art-source/motions/skill-scale-2026-09-12/fuji_kiseki.json",
     "skillId": "skill_fuji_kiseki",
     "skillSignature": "1d80a9213b1edae0f14d4ae9de40ad22328ac909900f6e1097097e8ac6552f48",
     "skillReview": "gather a tiny core between close hands; open elbows releasing a small ring; fully extend arms releasing a larger ring; bring arms down as ring fragments settle",
     "skillReleaseFrame": 2,
-    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
+    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json",
+    "logicalFrameSize": 128,
+    "anchor": [
+      128,
+      174
+    ]
   },
   "oguri_cap": {
     "file": "motions/oguri_cap.png",
@@ -277,16 +282,21 @@
   },
   "air_groove": {
     "file": "motions/air_groove.png",
-    "frameWidth": 128,
-    "frameHeight": 128,
+    "frameWidth": 256,
+    "frameHeight": 256,
     "columns": 4,
     "rows": 6,
-    "source": "docs/art-source/motions/skill-revisions-2026-09-11/air_groove/packing.json",
+    "source": "docs/art-source/motions/skill-scale-2026-09-12/air_groove.json",
     "skillId": "skill_air_groove",
     "skillSignature": "90064e70c2e02774347dc939b66fc56ce872577b3051fd472d22aed356bd661e",
     "skillReview": "cross forearms in a strong defensive brace; lean into a compact shield held close; uncross arms forcefully to release a short radial counter shock; settle with one hand at chest",
     "skillReleaseFrame": 2,
-    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
+    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json",
+    "logicalFrameSize": 128,
+    "anchor": [
+      128,
+      174
+    ]
   },
   "agnes_digital": {
     "file": "motions/agnes_digital.png",
@@ -446,16 +456,21 @@
   },
   "agnes_tachyon": {
     "file": "motions/agnes_tachyon.png",
-    "frameWidth": 128,
-    "frameHeight": 128,
+    "frameWidth": 256,
+    "frameHeight": 256,
     "columns": 4,
     "rows": 6,
-    "source": "docs/art-source/motions/skill-revisions-2026-09-11/agnes_tachyon/packing.json",
+    "source": "docs/art-source/motions/skill-scale-2026-09-12/agnes_tachyon.json",
     "skillId": "skill_agnes_tachyon",
     "skillSignature": "c6bdf18b2467a9c90d37fe0304488c79872cf060e65ec7395ca4a24b43a803c1",
     "skillReview": "pull hands to the chest charging two small crests; draw one arm back and brace the other while crests enter the gloves; deliver a straight first strike followed by a visible second trailing strike accent; return to an empowered ready stance",
     "skillReleaseFrame": 2,
-    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
+    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json",
+    "logicalFrameSize": 128,
+    "anchor": [
+      128,
+      174
+    ]
   },
   "admire_vega": {
     "file": "motions/admire_vega.png",
@@ -602,16 +617,21 @@
   },
   "sweep_tosho": {
     "file": "motions/sweep_tosho.png",
-    "frameWidth": 128,
-    "frameHeight": 128,
+    "frameWidth": 256,
+    "frameHeight": 256,
     "columns": 4,
     "rows": 6,
-    "source": "docs/art-source/motions/skill-revisions-2026-09-11/sweep_tosho/packing.json",
+    "source": "docs/art-source/motions/skill-scale-2026-09-12/sweep_tosho.json",
     "skillId": "skill_sweep_tosho",
     "skillSignature": "e11cfe62a02f17de2d9b3bdf08879095a5a053fdf07de240ca3eb1c75467a66a",
     "skillReview": "crouch and cross forearms preparing to dash; drive forward with hair streaming; land and uncross both arms releasing a short straight trailing wave in the same direction; draw arms back into ready stance",
     "skillReleaseFrame": 2,
-    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
+    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json",
+    "logicalFrameSize": 128,
+    "anchor": [
+      128,
+      174
+    ]
   },
   "super_creek": {
     "file": "motions/super_creek.png",
@@ -797,16 +817,21 @@
   },
   "mejiro_dober": {
     "file": "motions/mejiro_dober.png",
-    "frameWidth": 128,
-    "frameHeight": 128,
+    "frameWidth": 256,
+    "frameHeight": 256,
     "columns": 4,
     "rows": 6,
-    "source": "docs/art-source/motions/skill-revisions-2026-09-11/mejiro_dober/packing.json",
+    "source": "docs/art-source/motions/skill-scale-2026-09-12/mejiro_dober.json",
     "skillId": "skill_mejiro_dober",
     "skillSignature": "31261a694dd6fc493465b04830e69cb7082eb63d9109c9dcfc9082e7f2bd7b4b",
     "skillReview": "crouch and cross forearms preparing to dash; drive forward with hair streaming; land and uncross both arms releasing a short straight trailing wave in the same direction; draw arms back into ready stance",
     "skillReleaseFrame": 2,
-    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
+    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json",
+    "logicalFrameSize": 128,
+    "anchor": [
+      128,
+      174
+    ]
   },
   "nice_nature": {
     "file": "motions/nice_nature.png",
@@ -862,29 +887,39 @@
   },
   "manhattan_cafe": {
     "file": "motions/manhattan_cafe.png",
-    "frameWidth": 128,
-    "frameHeight": 128,
+    "frameWidth": 256,
+    "frameHeight": 256,
     "columns": 4,
     "rows": 6,
-    "source": "docs/art-source/motions/skill-revisions-2026-09-11/manhattan_cafe/packing.json",
+    "source": "docs/art-source/motions/skill-scale-2026-09-12/manhattan_cafe.json",
     "skillId": "skill_manhattan_cafe",
     "skillSignature": "afdbb3bf5feda7b64e2d6bf5c3f350ab340a0550b3d79e453d1ea43524471f80",
     "skillReview": "dash from a low starting pose; plant feet and wind one arm across the body; sweep a broad short crescent across the front; pull the arm back to the heart with three inward motes",
     "skillReleaseFrame": 2,
-    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
+    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json",
+    "logicalFrameSize": 128,
+    "anchor": [
+      128,
+      174
+    ]
   },
   "verxina": {
     "file": "motions/verxina.png",
-    "frameWidth": 128,
-    "frameHeight": 128,
+    "frameWidth": 256,
+    "frameHeight": 256,
     "columns": 4,
     "rows": 6,
-    "source": "docs/art-source/motions/skill-revisions-2026-09-11/verxina/packing.json",
+    "source": "docs/art-source/motions/skill-scale-2026-09-12/verxina.json",
     "skillId": "skill_verxina",
     "skillSignature": "b39e7a0301924bbc0263bc24d3b9c98cf672178c22bf27d649bd5d657173c667",
     "skillReview": "gather a tiny core between close hands; open elbows releasing a small ring; fully extend arms releasing a larger ring; bring arms down as ring fragments settle",
     "skillReleaseFrame": 2,
-    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
+    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json",
+    "logicalFrameSize": 128,
+    "anchor": [
+      128,
+      174
+    ]
   },
   "phalaenopsis": {
     "file": "motions/phalaenopsis.png",
@@ -1005,16 +1040,21 @@
   },
   "sakura_chiyono_o": {
     "file": "motions/sakura_chiyono_o.png",
-    "frameWidth": 128,
-    "frameHeight": 128,
+    "frameWidth": 256,
+    "frameHeight": 256,
     "columns": 4,
     "rows": 6,
-    "source": "docs/art-source/motions/identity-revisions-2026-09-12/sakura_chiyono_o/packing.json",
+    "source": "docs/art-source/motions/skill-scale-2026-09-12/sakura_chiyono_o.json",
     "skillId": "skill_sakura_chiyono_o",
     "skillSignature": "d12f64b9ea59a38038a5450202ea41861d6231af089cb755717eae75de77d112",
     "skillReview": "All six action rows reviewed. Row 4 preserves crossing_echo preparation, release in column 3 and recovery; game skill data and timeline unchanged.",
     "skillReleaseFrame": 2,
-    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
+    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json",
+    "logicalFrameSize": 128,
+    "anchor": [
+      128,
+      174
+    ]
   },
   "sirius_symboli": {
     "file": "motions/sirius_symboli.png",
@@ -1148,16 +1188,21 @@
   },
   "transcend": {
     "file": "motions/transcend.png",
-    "frameWidth": 128,
-    "frameHeight": 128,
+    "frameWidth": 256,
+    "frameHeight": 256,
     "columns": 4,
     "rows": 6,
-    "source": "docs/art-source/motions/identity-revisions-2026-09-12/transcend/packing.json",
+    "source": "docs/art-source/motions/skill-scale-2026-09-12/transcend.json",
     "skillId": "skill_transcend",
     "skillSignature": "ce94f27d06507a5020d43b9af43b37f5d9d5e978903237d5250bb8ced6c42c72",
     "skillReview": "All six action rows reviewed. Row 4 preserves twin_orbit preparation, release in column 3 and recovery; game skill data and timeline unchanged.",
     "skillReleaseFrame": 2,
-    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
+    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json",
+    "logicalFrameSize": 128,
+    "anchor": [
+      128,
+      174
+    ]
   },
   "north_flight": {
     "file": "motions/north_flight.png",
@@ -1213,16 +1258,21 @@
   },
   "victoire_pisa": {
     "file": "motions/victoire_pisa.png",
-    "frameWidth": 128,
-    "frameHeight": 128,
+    "frameWidth": 256,
+    "frameHeight": 256,
     "columns": 4,
     "rows": 6,
-    "source": "docs/art-source/motions/skill-revisions-2026-09-11/victoire_pisa/packing.json",
+    "source": "docs/art-source/motions/skill-scale-2026-09-12/victoire_pisa.json",
     "skillId": "skill_victoire_pisa",
     "skillSignature": "b21b85740361f18811a905f924a2c10a9525523693c49b16a5ef956de488a8f1",
     "skillReview": "crouch and cross forearms preparing to dash; drive forward with hair streaming; land and uncross both arms releasing a short straight trailing wave in the same direction; draw arms back into ready stance",
     "skillReleaseFrame": 2,
-    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
+    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json",
+    "logicalFrameSize": 128,
+    "anchor": [
+      128,
+      174
+    ]
   },
   "logotype": {
     "file": "motions/logotype.png",
@@ -1239,16 +1289,21 @@
   },
   "epiphaneia": {
     "file": "motions/epiphaneia.png",
-    "frameWidth": 128,
-    "frameHeight": 128,
+    "frameWidth": 256,
+    "frameHeight": 256,
     "columns": 4,
     "rows": 6,
-    "source": "docs/art-source/motions/skill-revisions-2026-09-11/epiphaneia/packing.json",
+    "source": "docs/art-source/motions/skill-scale-2026-09-12/epiphaneia.json",
     "skillId": "skill_epiphaneia",
     "skillSignature": "4729e8ab9b3b238717d7e857096662fe914528fdd4f72bada30b92a57de68fc5",
     "skillReview": "brace forearms tightly behind a small guard crest; pivot hips and open one arm to start a circular gust; hold a wide grounded stance sustaining three short orbiting gust arcs; fold hands back as the gust ends",
     "skillReleaseFrame": 2,
-    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
+    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json",
+    "logicalFrameSize": 128,
+    "anchor": [
+      128,
+      174
+    ]
   },
   "marche_lorraine": {
     "file": "motions/marche_lorraine.png",
@@ -1317,29 +1372,39 @@
   },
   "daiichi_ruby": {
     "file": "motions/daiichi_ruby.png",
-    "frameWidth": 128,
-    "frameHeight": 128,
+    "frameWidth": 256,
+    "frameHeight": 256,
     "columns": 4,
     "rows": 6,
-    "source": "docs/art-source/motions/identity-revisions-2026-09-12/daiichi_ruby/packing.json",
+    "source": "docs/art-source/motions/skill-scale-2026-09-12/daiichi_ruby.json",
     "skillId": "skill_daiichi_ruby",
     "skillSignature": "e83993a266d6b8aaae08b6d424e8e38533274a6a9fb8615f366a9d9c8813658a",
     "skillReview": "All six action rows reviewed. Row 4 preserves seeking_bolt preparation, release in column 3 and recovery; game skill data and timeline unchanged.",
     "skillReleaseFrame": 2,
-    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
+    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json",
+    "logicalFrameSize": 128,
+    "anchor": [
+      128,
+      174
+    ]
   },
   "mejiro_ramonu": {
     "file": "motions/mejiro_ramonu.png",
-    "frameWidth": 128,
-    "frameHeight": 128,
+    "frameWidth": 256,
+    "frameHeight": 256,
     "columns": 4,
     "rows": 6,
-    "source": "docs/art-source/motions/skill-revisions-2026-09-11/mejiro_ramonu/packing.json",
+    "source": "docs/art-source/motions/skill-scale-2026-09-12/mejiro_ramonu.json",
     "skillId": "skill_mejiro_ramonu",
     "skillSignature": "2be97b935ca963fc961ea6706d22bcb735de58d17180ae4289c57156aa329541",
     "skillReview": "crouch and cross forearms preparing to dash; drive forward with hair streaming; land and uncross both arms releasing a short straight trailing wave in the same direction; draw arms back into ready stance",
     "skillReleaseFrame": 2,
-    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
+    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json",
+    "logicalFrameSize": 128,
+    "anchor": [
+      128,
+      174
+    ]
   },
   "aston_machan": {
     "file": "motions/aston_machan.png",
@@ -1382,16 +1447,21 @@
   },
   "vivlos": {
     "file": "motions/vivlos.png",
-    "frameWidth": 128,
-    "frameHeight": 128,
+    "frameWidth": 256,
+    "frameHeight": 256,
     "columns": 4,
     "rows": 6,
-    "source": "docs/art-source/motions/skill-revisions-2026-09-11/vivlos/packing.json",
+    "source": "docs/art-source/motions/skill-scale-2026-09-12/vivlos.json",
     "skillId": "skill_vivlos",
     "skillSignature": "89b3d5341e3eebf15d822aa1ea0ca516af962f1dae1952817159343f2a950c41",
     "skillReview": "crouch and cross forearms preparing to dash; drive forward with hair streaming; land and uncross both arms releasing a short straight trailing wave in the same direction; draw arms back into ready stance",
     "skillReleaseFrame": 2,
-    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
+    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json",
+    "logicalFrameSize": 128,
+    "anchor": [
+      128,
+      174
+    ]
   },
   "dantsu_flame": {
     "file": "motions/dantsu_flame.png",
@@ -1486,16 +1556,21 @@
   },
   "gran_alegria": {
     "file": "motions/gran_alegria.png",
-    "frameWidth": 128,
-    "frameHeight": 128,
+    "frameWidth": 256,
+    "frameHeight": 256,
     "columns": 4,
     "rows": 6,
-    "source": "docs/art-source/motions/skill-revisions-2026-09-11/gran_alegria/packing.json",
+    "source": "docs/art-source/motions/skill-scale-2026-09-12/gran_alegria.json",
     "skillId": "skill_gran_alegria",
     "skillSignature": "54443f2284207c93b975836724d8a3ce74a2501209257b856d645eb65a2d3843",
     "skillReview": "launch forward from low crouch; plant the lead foot and deliver a jab; twist into a rising follow-up strike with three short impact accents; recoil into a ready guard",
     "skillReleaseFrame": 2,
-    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
+    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json",
+    "logicalFrameSize": 128,
+    "anchor": [
+      128,
+      174
+    ]
   },
   "believe": {
     "file": "motions/believe.png",
@@ -1681,29 +1756,39 @@
   },
   "lucky_lilac": {
     "file": "motions/lucky_lilac.png",
-    "frameWidth": 128,
-    "frameHeight": 128,
+    "frameWidth": 256,
+    "frameHeight": 256,
     "columns": 4,
     "rows": 6,
-    "source": "docs/art-source/motions/skill-revisions-2026-09-11/lucky_lilac/packing.json",
+    "source": "docs/art-source/motions/skill-scale-2026-09-12/lucky_lilac.json",
     "skillId": "skill_lucky_lilac",
     "skillSignature": "a8d16db06c57c5534e975078e59fbc563911032367107b243feb42ccf8569b12",
     "skillReview": "gather a tiny core between close hands; open elbows releasing a small ring; fully extend arms releasing a larger ring; bring arms down as ring fragments settle",
     "skillReleaseFrame": 2,
-    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
+    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json",
+    "logicalFrameSize": 128,
+    "anchor": [
+      128,
+      174
+    ]
   },
   "almond_eye": {
     "file": "motions/almond_eye.png",
-    "frameWidth": 128,
-    "frameHeight": 128,
+    "frameWidth": 256,
+    "frameHeight": 256,
     "columns": 4,
     "rows": 6,
-    "source": "docs/art-source/motions/skill-revisions-2026-09-11/almond_eye/packing.json",
+    "source": "docs/art-source/motions/skill-scale-2026-09-12/almond_eye.json",
     "skillId": "skill_almond_eye",
     "skillSignature": "61f1ba230ba9231f3cb29e01741c9c0006551c95d2fcff0a6033ab32637a7bb3",
     "skillReview": "steady both hands aiming at one point; release a small first bolt; brace lower and release two aligned follow-up bolts, the last larger; lower arms after visible recoil",
     "skillReleaseFrame": 2,
-    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
+    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json",
+    "logicalFrameSize": 128,
+    "anchor": [
+      128,
+      174
+    ]
   },
   "blast_onepiece": {
     "file": "motions/blast_onepiece.png",
@@ -1720,16 +1805,21 @@
   },
   "fenomeno": {
     "file": "motions/fenomeno.png",
-    "frameWidth": 128,
-    "frameHeight": 128,
+    "frameWidth": 256,
+    "frameHeight": 256,
     "columns": 4,
     "rows": 6,
-    "source": "docs/art-source/motions/skill-revisions-2026-09-11/fenomeno/packing.json",
+    "source": "docs/art-source/motions/skill-scale-2026-09-12/fenomeno.json",
     "skillId": "skill_fenomeno",
     "skillSignature": "1f68887fd3b68e847d0571998d0bc384d471a20e0a876db95653c8cb8f7165ca",
     "skillReview": "crouch and cross forearms preparing to dash; drive forward with hair streaming; land and uncross both arms releasing a short straight trailing wave in the same direction; draw arms back into ready stance",
     "skillReleaseFrame": 2,
-    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
+    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json",
+    "logicalFrameSize": 128,
+    "anchor": [
+      128,
+      174
+    ]
   },
   "sakura_chitose_o": {
     "file": "motions/sakura_chitose_o.png",
@@ -1746,16 +1836,21 @@
   },
   "bubble_gum_fellow": {
     "file": "motions/bubble_gum_fellow.png",
-    "frameWidth": 128,
-    "frameHeight": 128,
+    "frameWidth": 256,
+    "frameHeight": 256,
     "columns": 4,
     "rows": 6,
-    "source": "docs/art-source/motions/skill-revisions-2026-09-11/bubble_gum_fellow/packing.json",
+    "source": "docs/art-source/motions/skill-scale-2026-09-12/bubble_gum_fellow.json",
     "skillId": "skill_bubble_gum_fellow",
     "skillSignature": "f0340343990d3a6793511ebf45bcf0089bdb87a7df500c129c2c52a7569fb538",
     "skillReview": "pull hands to the chest charging two small crests; draw one arm back and brace the other while crests enter the gloves; deliver a straight first strike followed by a visible second trailing strike accent; return to an empowered ready stance",
     "skillReleaseFrame": 2,
-    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
+    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json",
+    "logicalFrameSize": 128,
+    "anchor": [
+      128,
+      174
+    ]
   },
   "genuine": {
     "file": "motions/genuine.png",
@@ -1772,16 +1867,21 @@
   },
   "durandal": {
     "file": "motions/durandal.png",
-    "frameWidth": 128,
-    "frameHeight": 128,
+    "frameWidth": 256,
+    "frameHeight": 256,
     "columns": 4,
     "rows": 6,
-    "source": "docs/art-source/motions/skill-revisions-2026-09-11/durandal/packing.json",
+    "source": "docs/art-source/motions/skill-scale-2026-09-12/durandal.json",
     "skillId": "skill_durandal",
     "skillSignature": "eb1b374a4dbe705d469900467d9aba1241f19460fd5d42b95fe64b42c3e4d2fd",
     "skillReview": "pull arms inward and lower the silhouette; crouch into a compact shadow veil with one faint offset silhouette; emerge in a sudden forward finishing strike; settle upright as the small afterimage fades",
     "skillReleaseFrame": 2,
-    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
+    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json",
+    "logicalFrameSize": 128,
+    "anchor": [
+      128,
+      174
+    ]
   },
   "calstone_light_o": {
     "file": "motions/calstone_light_o.png",
@@ -1811,16 +1911,21 @@
   },
   "admire_groove": {
     "file": "motions/admire_groove.png",
-    "frameWidth": 128,
-    "frameHeight": 128,
+    "frameWidth": 256,
+    "frameHeight": 256,
     "columns": 4,
     "rows": 6,
-    "source": "docs/art-source/motions/skill-revisions-2026-09-11/admire_groove/packing.json",
+    "source": "docs/art-source/motions/skill-scale-2026-09-12/admire_groove.json",
     "skillId": "skill_admire_groove",
     "skillSignature": "5ede3c8d5bb303f5773b11b74a1aaa803094d123827a118f450fa51d1e94fddf",
     "skillReview": "dash from a low starting pose; plant feet and wind one arm across the body; sweep a broad short crescent across the front; pull the arm back to the heart with three inward motes",
     "skillReleaseFrame": 2,
-    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
+    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json",
+    "logicalFrameSize": 128,
+    "anchor": [
+      128,
+      174
+    ]
   },
   "win_variation": {
     "file": "motions/win_variation.png",

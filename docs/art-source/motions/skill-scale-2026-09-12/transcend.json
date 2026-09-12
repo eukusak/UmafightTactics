@@ -1,0 +1,525 @@
+{
+  "format": "uft-baked-frames-v1",
+  "columns": 4,
+  "rows": 6,
+  "frameWidth": 256,
+  "frameHeight": 256,
+  "anchor": [
+    128,
+    174
+  ],
+  "scale": 0.42962962962962964,
+  "runtimeSha256": "18fb264d453ec5cfaac08dc1803c0e4ba91c389d2032ce31ad7d24bb8da23f16",
+  "frames": [
+    {
+      "frame": 0,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/transcend/generated.png",
+      "sourceSha256": "ca6dc54f5121408d6b1b196c9361028b82fb583d97e5d723998b07ea37189ee7",
+      "crop": [
+        52,
+        17,
+        194,
+        236
+      ],
+      "destination": [
+        97,
+        80,
+        61,
+        94
+      ]
+    },
+    {
+      "frame": 1,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/transcend/generated.png",
+      "sourceSha256": "ca6dc54f5121408d6b1b196c9361028b82fb583d97e5d723998b07ea37189ee7",
+      "crop": [
+        310,
+        17,
+        451,
+        236
+      ],
+      "destination": [
+        353,
+        80,
+        61,
+        94
+      ]
+    },
+    {
+      "frame": 2,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/transcend/generated.png",
+      "sourceSha256": "ca6dc54f5121408d6b1b196c9361028b82fb583d97e5d723998b07ea37189ee7",
+      "crop": [
+        567,
+        17,
+        706,
+        236
+      ],
+      "destination": [
+        610,
+        80,
+        60,
+        94
+      ]
+    },
+    {
+      "frame": 3,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/transcend/generated.png",
+      "sourceSha256": "ca6dc54f5121408d6b1b196c9361028b82fb583d97e5d723998b07ea37189ee7",
+      "crop": [
+        824,
+        17,
+        963,
+        236
+      ],
+      "destination": [
+        866,
+        80,
+        60,
+        94
+      ]
+    },
+    {
+      "frame": 4,
+      "sourceFrame": 4,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/transcend/generated.png",
+      "sourceSha256": "ca6dc54f5121408d6b1b196c9361028b82fb583d97e5d723998b07ea37189ee7",
+      "crop": [
+        44,
+        275,
+        201,
+        495
+      ],
+      "destination": [
+        94,
+        335,
+        67,
+        95
+      ]
+    },
+    {
+      "frame": 5,
+      "sourceFrame": 5,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/transcend/generated.png",
+      "sourceSha256": "ca6dc54f5121408d6b1b196c9361028b82fb583d97e5d723998b07ea37189ee7",
+      "crop": [
+        303,
+        273,
+        466,
+        496
+      ],
+      "destination": [
+        349,
+        334,
+        70,
+        96
+      ]
+    },
+    {
+      "frame": 6,
+      "sourceFrame": 6,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/transcend/generated.png",
+      "sourceSha256": "ca6dc54f5121408d6b1b196c9361028b82fb583d97e5d723998b07ea37189ee7",
+      "crop": [
+        550,
+        277,
+        727,
+        495
+      ],
+      "destination": [
+        602,
+        336,
+        76,
+        94
+      ]
+    },
+    {
+      "frame": 7,
+      "sourceFrame": 7,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/transcend/generated.png",
+      "sourceSha256": "ca6dc54f5121408d6b1b196c9361028b82fb583d97e5d723998b07ea37189ee7",
+      "crop": [
+        811,
+        280,
+        975,
+        495
+      ],
+      "destination": [
+        861,
+        338,
+        70,
+        92
+      ]
+    },
+    {
+      "frame": 8,
+      "sourceFrame": 8,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/transcend/generated.png",
+      "sourceSha256": "ca6dc54f5121408d6b1b196c9361028b82fb583d97e5d723998b07ea37189ee7",
+      "crop": [
+        30,
+        531,
+        224,
+        755
+      ],
+      "destination": [
+        86,
+        590,
+        83,
+        96
+      ]
+    },
+    {
+      "frame": 9,
+      "sourceFrame": 9,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/transcend/generated.png",
+      "sourceSha256": "ca6dc54f5121408d6b1b196c9361028b82fb583d97e5d723998b07ea37189ee7",
+      "crop": [
+        302,
+        530,
+        464,
+        755
+      ],
+      "destination": [
+        349,
+        589,
+        70,
+        97
+      ]
+    },
+    {
+      "frame": 10,
+      "sourceFrame": 10,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/transcend/generated.png",
+      "sourceSha256": "ca6dc54f5121408d6b1b196c9361028b82fb583d97e5d723998b07ea37189ee7",
+      "crop": [
+        550,
+        533,
+        736,
+        755
+      ],
+      "destination": [
+        600,
+        591,
+        80,
+        95
+      ]
+    },
+    {
+      "frame": 11,
+      "sourceFrame": 11,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/transcend/generated.png",
+      "sourceSha256": "ca6dc54f5121408d6b1b196c9361028b82fb583d97e5d723998b07ea37189ee7",
+      "crop": [
+        816,
+        532,
+        966,
+        755
+      ],
+      "destination": [
+        864,
+        590,
+        64,
+        96
+      ]
+    },
+    {
+      "frame": 12,
+      "sourceFrame": 12,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/transcend/generated.png",
+      "sourceSha256": "ca6dc54f5121408d6b1b196c9361028b82fb583d97e5d723998b07ea37189ee7",
+      "crop": [
+        49,
+        833,
+        201,
+        1025
+      ],
+      "destination": [
+        90,
+        848,
+        75,
+        94
+      ]
+    },
+    {
+      "frame": 13,
+      "sourceFrame": 13,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/transcend/generated.png",
+      "sourceSha256": "ca6dc54f5121408d6b1b196c9361028b82fb583d97e5d723998b07ea37189ee7",
+      "crop": [
+        259,
+        840,
+        529,
+        1025
+      ],
+      "destination": [
+        317,
+        851,
+        133,
+        91
+      ]
+    },
+    {
+      "frame": 14,
+      "sourceFrame": 14,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/transcend/generated.png",
+      "sourceSha256": "ca6dc54f5121408d6b1b196c9361028b82fb583d97e5d723998b07ea37189ee7",
+      "crop": [
+        546,
+        831,
+        744,
+        1025
+      ],
+      "destination": [
+        591,
+        847,
+        98,
+        95
+      ]
+    },
+    {
+      "frame": 15,
+      "sourceFrame": 15,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/transcend/generated.png",
+      "sourceSha256": "ca6dc54f5121408d6b1b196c9361028b82fb583d97e5d723998b07ea37189ee7",
+      "crop": [
+        822,
+        832,
+        963,
+        1025
+      ],
+      "destination": [
+        861,
+        847,
+        70,
+        95
+      ]
+    },
+    {
+      "frame": 16,
+      "sourceFrame": 16,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/transcend/generated.png",
+      "sourceSha256": "ca6dc54f5121408d6b1b196c9361028b82fb583d97e5d723998b07ea37189ee7",
+      "crop": [
+        46,
+        1066,
+        195,
+        1265
+      ],
+      "destination": [
+        96,
+        1113,
+        64,
+        85
+      ]
+    },
+    {
+      "frame": 17,
+      "sourceFrame": 17,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/transcend/generated.png",
+      "sourceSha256": "ca6dc54f5121408d6b1b196c9361028b82fb583d97e5d723998b07ea37189ee7",
+      "crop": [
+        301,
+        1098,
+        458,
+        1264
+      ],
+      "destination": [
+        350,
+        1127,
+        67,
+        71
+      ]
+    },
+    {
+      "frame": 18,
+      "sourceFrame": 18,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/transcend/generated.png",
+      "sourceSha256": "ca6dc54f5121408d6b1b196c9361028b82fb583d97e5d723998b07ea37189ee7",
+      "crop": [
+        553,
+        1098,
+        712,
+        1264
+      ],
+      "destination": [
+        606,
+        1127,
+        68,
+        71
+      ]
+    },
+    {
+      "frame": 19,
+      "sourceFrame": 19,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/transcend/generated.png",
+      "sourceSha256": "ca6dc54f5121408d6b1b196c9361028b82fb583d97e5d723998b07ea37189ee7",
+      "crop": [
+        787,
+        1159,
+        1002,
+        1263
+      ],
+      "destination": [
+        850,
+        1153,
+        92,
+        45
+      ]
+    },
+    {
+      "frame": 20,
+      "sourceFrame": 20,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/transcend/generated.png",
+      "sourceSha256": "ca6dc54f5121408d6b1b196c9361028b82fb583d97e5d723998b07ea37189ee7",
+      "crop": [
+        54,
+        1296,
+        193,
+        1522
+      ],
+      "destination": [
+        98,
+        1357,
+        60,
+        97
+      ]
+    },
+    {
+      "frame": 21,
+      "sourceFrame": 21,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/transcend/generated.png",
+      "sourceSha256": "ca6dc54f5121408d6b1b196c9361028b82fb583d97e5d723998b07ea37189ee7",
+      "crop": [
+        305,
+        1294,
+        459,
+        1523
+      ],
+      "destination": [
+        351,
+        1356,
+        66,
+        98
+      ]
+    },
+    {
+      "frame": 22,
+      "sourceFrame": 22,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/transcend/generated.png",
+      "sourceSha256": "ca6dc54f5121408d6b1b196c9361028b82fb583d97e5d723998b07ea37189ee7",
+      "crop": [
+        569,
+        1300,
+        710,
+        1522
+      ],
+      "destination": [
+        609,
+        1359,
+        61,
+        95
+      ]
+    },
+    {
+      "frame": 23,
+      "sourceFrame": 23,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/transcend/generated.png",
+      "sourceSha256": "ca6dc54f5121408d6b1b196c9361028b82fb583d97e5d723998b07ea37189ee7",
+      "crop": [
+        821,
+        1298,
+        959,
+        1522
+      ],
+      "destination": [
+        866,
+        1358,
+        59,
+        96
+      ]
+    }
+  ],
+  "identityRevision": {
+    "review": "docs/art-source/motions/identity-revisions-2026-09-12/transcend/review.json",
+    "baselineRuntimeSha256": "f50b83c817a73d88130838c35cecdd9cacf70f9e69b68dd8cfa8e48b23de7595",
+    "previousPacking": "docs/art-source/motions/skill-revisions-2026-09-11/transcend/packing.json",
+    "portrait": "public/assets/portraits/transcend.png",
+    "portraitSha256": "99ec557feb60065ae4af029a533a1ac1f2a0e1bf74720d8600aa51808eb0f349",
+    "changedFrames": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23
+    ],
+    "alpha": {
+      "transparentFraction": 0.6711444854736328,
+      "solidFraction": 0.251800537109375
+    }
+  },
+  "logicalFrameSize": 128,
+  "scaleRevision": {
+    "review": "docs/art-source/motions/skill-scale-2026-09-12/review.json",
+    "previousPacking": "docs/art-source/motions/identity-revisions-2026-09-12/transcend/packing.json",
+    "baselineRuntimeSha256": "3dc56ee14a61b5101aab14f74345f1c0422472496bdd84dc8ed52d730079f796",
+    "baselineFrames": [
+      "e3d510b1f79139c2dec9b1aa2f1e375ce05a71a8f893ed1af4610024d0217719",
+      "7a56b88469fb9d752b1b939cf49d452eaf53768146b6f0fb92637b57e047bab3",
+      "01b28112ba87295d10bea29c5ec9bee5011b7283475c8a78e2871790e48b96a7",
+      "14ff2bd5a131b5d92ea37217a0805b28b047f1f72eac69898b05dc7153072869",
+      "6a91835ed2c20418ad3563eef2739ec260823389502beb58019bea8fcd541dc1",
+      "5f776094f2a66e0fc568fd4a49adecd92f8d6b75a0df567eed43bc5076fb146f",
+      "d57cc49e51bd75b047cec727ab00a3c296a74f587918873ef715957ed5d929dc",
+      "cb68227ebf2816dd78f367a8448cc3d4dad054b96ad34de893b87826ede72705",
+      "b3dca477e91df57f414b64e83dfc19759390dabd30b227fca65855bb28a179e8",
+      "ad35da2d1f6939dc8cd342459e9e6015411fd08f9d0e9eb7327d7c8721657706",
+      "b1f965f042af81068fe3e8b919f2d8ec12e209a5391c03be52066b4547da6778",
+      "412854a92c1ad7ccf8c67446159989bf420456612f61321c7bf758b14f5fdf4f",
+      "3405c43f38bd4d9f763a76750097f1d1cc9a7992d37445aeb14c722374cf5e89",
+      "78855fcbec760d0bade3e9a1e63cb22f53da8d80dfd13f37c6503443594b5424",
+      "a5be55056a239ba46c194748747eb4aaf619ae81e3f92039e94e9d3591518685",
+      "7820a32525588a5867425fe5a05cde8afdb5c8c68444bfbcd3cb44480cf218d9",
+      "6bdac6d589f8c7baa0b2676009d7e80c7490e114595ab60c0d9b0866425b6ac1",
+      "ac93ebdd827f9939012ca91c39b946099577805f69a0a15b81d356e7fa46c0ac",
+      "1ee2d773b1937e417a90fa5c8a19627ae0b4804171aa4ccdfbec937ce14ecdc2",
+      "ecfb65a01bbe325d686c5e2a41316f6695758cd50c38d64013806d67e5eb134e",
+      "5258187545e1ad25d5b75ab1b3517bcea60ff3c120a2e38378530541dd001d6a",
+      "827d93ef4e46e3e0ecbf66bfd6bad75bc520bdb27d7afcd9aa5c88ef381f885f",
+      "5ef764a14111e1bfda8ce647deeb3ae1866ecb22422045a2caf4d3a3c6459f6f",
+      "5f963188ceb1c2889161f45fcf371844b59b90decde295b3a8694bee95e03255"
+    ],
+    "factor": 1.15,
+    "padding": 64,
+    "changedFrames": [
+      12,
+      13,
+      14,
+      15
+    ],
+    "unchangedFrames": 20
+  }
+}

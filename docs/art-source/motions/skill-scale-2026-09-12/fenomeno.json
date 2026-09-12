@@ -1,0 +1,551 @@
+{
+  "format": "uft-baked-frames-v1",
+  "scale": 0.37410071942446044,
+  "anchor": [
+    128,
+    174
+  ],
+  "runtimeSha256": "956299b6d3b341d18f8f04fa63166596b8cb01eb0c3140f26d78e3ffdb16db7a",
+  "frames": [
+    {
+      "frame": 0,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/production-144/fenomeno/alpha.png",
+      "sourceSha256": "770edd6ebb172ed4cba1e44b93cf828be1725bc073338b7282c9d3ebd0b509db",
+      "crop": [
+        40,
+        8,
+        213,
+        254
+      ],
+      "destination": [
+        95,
+        82,
+        65,
+        92
+      ]
+    },
+    {
+      "frame": 1,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/production-144/fenomeno/alpha.png",
+      "sourceSha256": "770edd6ebb172ed4cba1e44b93cf828be1725bc073338b7282c9d3ebd0b509db",
+      "crop": [
+        297,
+        10,
+        469,
+        254
+      ],
+      "destination": [
+        352,
+        83,
+        64,
+        91
+      ]
+    },
+    {
+      "frame": 2,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/production-144/fenomeno/alpha.png",
+      "sourceSha256": "770edd6ebb172ed4cba1e44b93cf828be1725bc073338b7282c9d3ebd0b509db",
+      "crop": [
+        554,
+        8,
+        723,
+        253
+      ],
+      "destination": [
+        608,
+        82,
+        63,
+        92
+      ]
+    },
+    {
+      "frame": 3,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/production-144/fenomeno/alpha.png",
+      "sourceSha256": "770edd6ebb172ed4cba1e44b93cf828be1725bc073338b7282c9d3ebd0b509db",
+      "crop": [
+        806,
+        8,
+        977,
+        253
+      ],
+      "destination": [
+        864,
+        82,
+        64,
+        92
+      ]
+    },
+    {
+      "frame": 4,
+      "sourceFrame": 4,
+      "source": "docs/art-source/motions/production-144/fenomeno/alpha.png",
+      "sourceSha256": "770edd6ebb172ed4cba1e44b93cf828be1725bc073338b7282c9d3ebd0b509db",
+      "crop": [
+        34,
+        264,
+        234,
+        512
+      ],
+      "destination": [
+        90,
+        337,
+        75,
+        93
+      ]
+    },
+    {
+      "frame": 5,
+      "sourceFrame": 5,
+      "source": "docs/art-source/motions/production-144/fenomeno/alpha.png",
+      "sourceSha256": "770edd6ebb172ed4cba1e44b93cf828be1725bc073338b7282c9d3ebd0b509db",
+      "crop": [
+        283,
+        263,
+        486,
+        506
+      ],
+      "destination": [
+        346,
+        339,
+        76,
+        91
+      ]
+    },
+    {
+      "frame": 6,
+      "sourceFrame": 6,
+      "source": "docs/art-source/motions/production-144/fenomeno/alpha.png",
+      "sourceSha256": "770edd6ebb172ed4cba1e44b93cf828be1725bc073338b7282c9d3ebd0b509db",
+      "crop": [
+        550,
+        263,
+        752,
+        507
+      ],
+      "destination": [
+        602,
+        339,
+        76,
+        91
+      ]
+    },
+    {
+      "frame": 7,
+      "sourceFrame": 7,
+      "source": "docs/art-source/motions/production-144/fenomeno/alpha.png",
+      "sourceSha256": "770edd6ebb172ed4cba1e44b93cf828be1725bc073338b7282c9d3ebd0b509db",
+      "crop": [
+        795,
+        273,
+        1000,
+        507
+      ],
+      "destination": [
+        857,
+        342,
+        77,
+        88
+      ]
+    },
+    {
+      "frame": 8,
+      "sourceFrame": 8,
+      "source": "docs/art-source/motions/production-144/fenomeno/alpha.png",
+      "sourceSha256": "770edd6ebb172ed4cba1e44b93cf828be1725bc073338b7282c9d3ebd0b509db",
+      "crop": [
+        42,
+        516,
+        215,
+        755
+      ],
+      "destination": [
+        95,
+        597,
+        65,
+        89
+      ]
+    },
+    {
+      "frame": 9,
+      "sourceFrame": 9,
+      "source": "docs/art-source/motions/production-144/fenomeno/alpha.png",
+      "sourceSha256": "770edd6ebb172ed4cba1e44b93cf828be1725bc073338b7282c9d3ebd0b509db",
+      "crop": [
+        282,
+        515,
+        470,
+        756
+      ],
+      "destination": [
+        349,
+        596,
+        70,
+        90
+      ]
+    },
+    {
+      "frame": 10,
+      "sourceFrame": 10,
+      "source": "docs/art-source/motions/production-144/fenomeno/alpha.png",
+      "sourceSha256": "770edd6ebb172ed4cba1e44b93cf828be1725bc073338b7282c9d3ebd0b509db",
+      "crop": [
+        532,
+        516,
+        756,
+        758
+      ],
+      "destination": [
+        598,
+        595,
+        84,
+        91
+      ]
+    },
+    {
+      "frame": 11,
+      "sourceFrame": 11,
+      "source": "docs/art-source/motions/production-144/fenomeno/alpha.png",
+      "sourceSha256": "770edd6ebb172ed4cba1e44b93cf828be1725bc073338b7282c9d3ebd0b509db",
+      "crop": [
+        800,
+        516,
+        983,
+        757
+      ],
+      "destination": [
+        862,
+        596,
+        68,
+        90
+      ]
+    },
+    {
+      "frame": 12,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/skill-revisions-2026-09-11/fenomeno/generated.png",
+      "sourceSha256": "d11c45049232737cd14f93f72b15aabae2f435caf77e30832d30a72d9203ea3b",
+      "crop": [
+        163,
+        69,
+        552,
+        472
+      ],
+      "destination": [
+        88,
+        859,
+        79,
+        83
+      ]
+    },
+    {
+      "frame": 13,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/skill-revisions-2026-09-11/fenomeno/generated.png",
+      "sourceSha256": "d11c45049232737cd14f93f72b15aabae2f435caf77e30832d30a72d9203ea3b",
+      "crop": [
+        814,
+        64,
+        1397,
+        471
+      ],
+      "destination": [
+        324,
+        859,
+        119,
+        83
+      ]
+    },
+    {
+      "frame": 14,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/skill-revisions-2026-09-11/fenomeno/generated.png",
+      "sourceSha256": "d11c45049232737cd14f93f72b15aabae2f435caf77e30832d30a72d9203ea3b",
+      "crop": [
+        123,
+        530,
+        834,
+        965
+      ],
+      "destination": [
+        567,
+        853,
+        145,
+        89
+      ]
+    },
+    {
+      "frame": 15,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/skill-revisions-2026-09-11/fenomeno/generated.png",
+      "sourceSha256": "d11c45049232737cd14f93f72b15aabae2f435caf77e30832d30a72d9203ea3b",
+      "crop": [
+        967,
+        530,
+        1365,
+        972
+      ],
+      "destination": [
+        855,
+        852,
+        81,
+        90
+      ]
+    },
+    {
+      "frame": 16,
+      "sourceFrame": 16,
+      "source": "docs/art-source/motions/production-144/fenomeno/alpha.png",
+      "sourceSha256": "770edd6ebb172ed4cba1e44b93cf828be1725bc073338b7282c9d3ebd0b509db",
+      "crop": [
+        33,
+        985,
+        224,
+        1219
+      ],
+      "destination": [
+        92,
+        1110,
+        71,
+        88
+      ]
+    },
+    {
+      "frame": 17,
+      "sourceFrame": 17,
+      "source": "docs/art-source/motions/production-144/fenomeno/alpha.png",
+      "sourceSha256": "770edd6ebb172ed4cba1e44b93cf828be1725bc073338b7282c9d3ebd0b509db",
+      "crop": [
+        286,
+        1018,
+        473,
+        1211
+      ],
+      "destination": [
+        349,
+        1126,
+        70,
+        72
+      ]
+    },
+    {
+      "frame": 18,
+      "sourceFrame": 18,
+      "source": "docs/art-source/motions/production-144/fenomeno/alpha.png",
+      "sourceSha256": "770edd6ebb172ed4cba1e44b93cf828be1725bc073338b7282c9d3ebd0b509db",
+      "crop": [
+        532,
+        1028,
+        723,
+        1219
+      ],
+      "destination": [
+        604,
+        1127,
+        71,
+        71
+      ]
+    },
+    {
+      "frame": 19,
+      "sourceFrame": 19,
+      "source": "docs/art-source/motions/production-144/fenomeno/alpha.png",
+      "sourceSha256": "770edd6ebb172ed4cba1e44b93cf828be1725bc073338b7282c9d3ebd0b509db",
+      "crop": [
+        768,
+        1100,
+        1017,
+        1216
+      ],
+      "destination": [
+        849,
+        1155,
+        93,
+        43
+      ]
+    },
+    {
+      "frame": 20,
+      "sourceFrame": 20,
+      "source": "docs/art-source/motions/production-144/fenomeno/alpha.png",
+      "sourceSha256": "770edd6ebb172ed4cba1e44b93cf828be1725bc073338b7282c9d3ebd0b509db",
+      "crop": [
+        32,
+        1239,
+        213,
+        1514
+      ],
+      "destination": [
+        94,
+        1351,
+        68,
+        103
+      ]
+    },
+    {
+      "frame": 21,
+      "sourceFrame": 21,
+      "source": "docs/art-source/motions/production-144/fenomeno/alpha.png",
+      "sourceSha256": "770edd6ebb172ed4cba1e44b93cf828be1725bc073338b7282c9d3ebd0b509db",
+      "crop": [
+        278,
+        1236,
+        466,
+        1514
+      ],
+      "destination": [
+        349,
+        1350,
+        70,
+        104
+      ]
+    },
+    {
+      "frame": 22,
+      "sourceFrame": 22,
+      "source": "docs/art-source/motions/production-144/fenomeno/alpha.png",
+      "sourceSha256": "770edd6ebb172ed4cba1e44b93cf828be1725bc073338b7282c9d3ebd0b509db",
+      "crop": [
+        533,
+        1232,
+        730,
+        1491
+      ],
+      "destination": [
+        603,
+        1357,
+        74,
+        97
+      ]
+    },
+    {
+      "frame": 23,
+      "sourceFrame": 23,
+      "source": "docs/art-source/motions/production-144/fenomeno/alpha.png",
+      "sourceSha256": "770edd6ebb172ed4cba1e44b93cf828be1725bc073338b7282c9d3ebd0b509db",
+      "crop": [
+        788,
+        1242,
+        969,
+        1518
+      ],
+      "destination": [
+        862,
+        1351,
+        68,
+        103
+      ]
+    }
+  ],
+  "skillRevision": {
+    "scale": 0.1631504922644163,
+    "review": "docs/art-source/motions/skill-revisions-2026-09-11/fenomeno/review.json",
+    "beforeFrames": [
+      "458ba7517bd6e2a94f85c36734574bf995694e6aa2e21ec4696afbbcf3afa7b8",
+      "cd27974d16a0ef12f95b378671080c795a6b79beb42c1f2991f47e3c052cbbe8",
+      "97bdecf7926594a8ae979b688fdf1774058375b83ae9b91056aaebc2f26dd237",
+      "16e7fff826d6320e98b2a377773aefa4a05dad5acc636e29126bbc017536bc00",
+      "bb912d91d1128ee87ebf1e7bef01fb6cf1898863f39539c0ad659f4f49e01d16",
+      "258ddf8b131bc3b18421a74263b9bf0f0e497ae33c3d92f885d83c6d566d4ecd",
+      "017e43f6db3bb76dfcdd61dbcf79e27b390614923c9d3494b8858fb2ef08552d",
+      "f737cacfe04b21cf2a62349f5626a106f6d9733c5eefc1ed7d56d4f1e3505759",
+      "c26a38a3c594aa008f849ac7d85b2e902c46ea12f6b2a7e4da06ea5720deb4f6",
+      "2c895b4cb91c9b26d55d8472bf2bff9c410f3bf0c5834f779edf10f8d212f9e9",
+      "e33645e0e31fab81231dc1d1943eb9e2037c3ed51bae842b161d3c4e6d2530bd",
+      "d64390cba19d275d2d3f7c26aa26f3ad5fa6aba2a1cc0b29666c8b10a9b01b80",
+      "c9ec5a3b25c676eb59c910f02e1ebf095388dad29cb0aa88fe287fde06946e9f",
+      "40d622f33da35d3ac5844150da6e115c45cf4ff47a1ad624fc2dcdaaf3ccc7b2",
+      "9993f7da9b476e78d280d3ff6919b1c72ecf648c47f8356b883adf1fc1e42934",
+      "01ffc5806eee1a352469d6f7a2e9f4e1a40d551144c53fe954cc08a66bbe7e0e",
+      "27cc2941ef1ce2737743a28351a336ad21dbfdf6dacc9e2d63c7136bed2a0762",
+      "c524e68e86b3b6dd4f63cc8e025617af647b9d00288b902a5af5181424844f6e",
+      "57edceb27a31f70d02111f3ad614a7861b4bec23378ef31cae449fab587fd120",
+      "30ac6b14a4887045bb29a448ae3d8a08764f8216bbafa48a9cc13d861cd37359",
+      "03e39270a6f0f4e07f0cb6b4bf00aa1e7ec23a562357ca5822f5a585557cfa7b",
+      "49e77bbf3de627d8b1bcc698ecf296742f78704e4f273edc4c445004e6080d84",
+      "e960d226f14a9399b80e72f05890ec702ded4866dfcba9b58edf74601d2edb57",
+      "3bc80a88feada5e41e69436069fc39aec3a766692c3107b8d3a78d9e1c9b0ecc"
+    ],
+    "afterFrames": [
+      "458ba7517bd6e2a94f85c36734574bf995694e6aa2e21ec4696afbbcf3afa7b8",
+      "cd27974d16a0ef12f95b378671080c795a6b79beb42c1f2991f47e3c052cbbe8",
+      "97bdecf7926594a8ae979b688fdf1774058375b83ae9b91056aaebc2f26dd237",
+      "16e7fff826d6320e98b2a377773aefa4a05dad5acc636e29126bbc017536bc00",
+      "bb912d91d1128ee87ebf1e7bef01fb6cf1898863f39539c0ad659f4f49e01d16",
+      "258ddf8b131bc3b18421a74263b9bf0f0e497ae33c3d92f885d83c6d566d4ecd",
+      "017e43f6db3bb76dfcdd61dbcf79e27b390614923c9d3494b8858fb2ef08552d",
+      "f737cacfe04b21cf2a62349f5626a106f6d9733c5eefc1ed7d56d4f1e3505759",
+      "c26a38a3c594aa008f849ac7d85b2e902c46ea12f6b2a7e4da06ea5720deb4f6",
+      "2c895b4cb91c9b26d55d8472bf2bff9c410f3bf0c5834f779edf10f8d212f9e9",
+      "e33645e0e31fab81231dc1d1943eb9e2037c3ed51bae842b161d3c4e6d2530bd",
+      "d64390cba19d275d2d3f7c26aa26f3ad5fa6aba2a1cc0b29666c8b10a9b01b80",
+      "0d9a0a3a2c8c3d70d02a6ef26a9d201fc835d10bbd38d755c1812bba139c8340",
+      "3322a35b45835cd979657e4865b835a8d4ba519743f06d0e709645e044875c00",
+      "93d9eab234868a1d0ed13ca4d28fce6e89a9d87a048d26c5178ec0594aeff407",
+      "de3411ebf5b224c291221ee2a4adf2b8a093af34965cb4279b68816a827b3f35",
+      "27cc2941ef1ce2737743a28351a336ad21dbfdf6dacc9e2d63c7136bed2a0762",
+      "c524e68e86b3b6dd4f63cc8e025617af647b9d00288b902a5af5181424844f6e",
+      "57edceb27a31f70d02111f3ad614a7861b4bec23378ef31cae449fab587fd120",
+      "30ac6b14a4887045bb29a448ae3d8a08764f8216bbafa48a9cc13d861cd37359",
+      "03e39270a6f0f4e07f0cb6b4bf00aa1e7ec23a562357ca5822f5a585557cfa7b",
+      "49e77bbf3de627d8b1bcc698ecf296742f78704e4f273edc4c445004e6080d84",
+      "e960d226f14a9399b80e72f05890ec702ded4866dfcba9b58edf74601d2edb57",
+      "3bc80a88feada5e41e69436069fc39aec3a766692c3107b8d3a78d9e1c9b0ecc"
+    ],
+    "unchangedFrames": 20,
+    "changedFrames": [
+      12,
+      13,
+      14,
+      15
+    ]
+  },
+  "frameWidth": 256,
+  "frameHeight": 256,
+  "columns": 4,
+  "rows": 6,
+  "logicalFrameSize": 128,
+  "scaleRevision": {
+    "review": "docs/art-source/motions/skill-scale-2026-09-12/review.json",
+    "previousPacking": "docs/art-source/motions/skill-revisions-2026-09-11/fenomeno/packing.json",
+    "baselineRuntimeSha256": "fc600a55cdce049ae59e683b42f98ce00d2f36aa3473d49200aedd763b579fd6",
+    "baselineFrames": [
+      "458ba7517bd6e2a94f85c36734574bf995694e6aa2e21ec4696afbbcf3afa7b8",
+      "cd27974d16a0ef12f95b378671080c795a6b79beb42c1f2991f47e3c052cbbe8",
+      "97bdecf7926594a8ae979b688fdf1774058375b83ae9b91056aaebc2f26dd237",
+      "16e7fff826d6320e98b2a377773aefa4a05dad5acc636e29126bbc017536bc00",
+      "bb912d91d1128ee87ebf1e7bef01fb6cf1898863f39539c0ad659f4f49e01d16",
+      "258ddf8b131bc3b18421a74263b9bf0f0e497ae33c3d92f885d83c6d566d4ecd",
+      "017e43f6db3bb76dfcdd61dbcf79e27b390614923c9d3494b8858fb2ef08552d",
+      "f737cacfe04b21cf2a62349f5626a106f6d9733c5eefc1ed7d56d4f1e3505759",
+      "c26a38a3c594aa008f849ac7d85b2e902c46ea12f6b2a7e4da06ea5720deb4f6",
+      "2c895b4cb91c9b26d55d8472bf2bff9c410f3bf0c5834f779edf10f8d212f9e9",
+      "e33645e0e31fab81231dc1d1943eb9e2037c3ed51bae842b161d3c4e6d2530bd",
+      "d64390cba19d275d2d3f7c26aa26f3ad5fa6aba2a1cc0b29666c8b10a9b01b80",
+      "0d9a0a3a2c8c3d70d02a6ef26a9d201fc835d10bbd38d755c1812bba139c8340",
+      "3322a35b45835cd979657e4865b835a8d4ba519743f06d0e709645e044875c00",
+      "93d9eab234868a1d0ed13ca4d28fce6e89a9d87a048d26c5178ec0594aeff407",
+      "de3411ebf5b224c291221ee2a4adf2b8a093af34965cb4279b68816a827b3f35",
+      "27cc2941ef1ce2737743a28351a336ad21dbfdf6dacc9e2d63c7136bed2a0762",
+      "c524e68e86b3b6dd4f63cc8e025617af647b9d00288b902a5af5181424844f6e",
+      "57edceb27a31f70d02111f3ad614a7861b4bec23378ef31cae449fab587fd120",
+      "30ac6b14a4887045bb29a448ae3d8a08764f8216bbafa48a9cc13d861cd37359",
+      "03e39270a6f0f4e07f0cb6b4bf00aa1e7ec23a562357ca5822f5a585557cfa7b",
+      "49e77bbf3de627d8b1bcc698ecf296742f78704e4f273edc4c445004e6080d84",
+      "e960d226f14a9399b80e72f05890ec702ded4866dfcba9b58edf74601d2edb57",
+      "3bc80a88feada5e41e69436069fc39aec3a766692c3107b8d3a78d9e1c9b0ecc"
+    ],
+    "factor": 1.25,
+    "padding": 64,
+    "changedFrames": [
+      12,
+      13,
+      14,
+      15
+    ],
+    "unchangedFrames": 20
+  }
+}
