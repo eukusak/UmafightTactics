@@ -1,0 +1,20 @@
+{
+  "date": "2026-09-12",
+  "asset": "public/assets/boards/bg_board_turf_day.png",
+  "method": "built-in image_gen edit; lower damaged region reconstructed, not a recovered original",
+  "originalGitBlob": "3c58a98b783b2ec4ffe429c3b1499791739441b5",
+  "originalBytes": 2032017,
+  "damage": "Compressed IDAT stream truncated; no IEND. Browser rendered only upper 62 percent.",
+  "reference": "Original damaged PNG decoded with sharp failOn:none for reference only.",
+  "generatedFile": "exec-508660df-f4e3-43a7-a3ea-7ef65924dd1f.png",
+  "generatedSha256": "691981da4de004c4d469153ae6518aff08ba955f0975de0e0dd2d0ff9e165e4c",
+  "packing": {
+    "width": 1920,
+    "height": 1080,
+    "fit": "fill",
+    "paletteColors": 256,
+    "dither": 0.5
+  },
+  "outputSha256": "b4faf4e6dd64923a22534bd1383c2c809db7ec558bf48b98a572cf793dd62125",
+  "prompt": "Use case: precise-object-edit. Asset type: production 16:9 fantasy auto-battler arena background. Input image is the edit target, a damaged image. Restore its missing lower 38 percent: replace ALL black area and the erroneous repeated sky strip at the very bottom with the natural continuation of this same green turf arena. Preserve the intact upper scene, academy castle, floating islands, two horse statues, pink trees, gold ivory stone borders, camera angle and colors as closely as possible. Extend the textured green grass downwards, side gold-trimmed stone rails diverging with perspective, and show the near/front edge of the rectangular arena close to the bottom of the image. The grass must remain wide and unobstructed across the central gameplay region from 20 to 90 percent height. Continue the side trees and racing tracks naturally. Same polished cel-shaded anime videogame style and warm daylight. No black bars, no repeated scenery strip, no characters, UI, text, grid or watermark. Complete full-frame 16:9 landscape image, ideally 1920x1080."
+}

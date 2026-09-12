@@ -53,3 +53,26 @@ test('persistent arena failure shows a fallback and can recover with the retry b
   await expect(page.locator('.arena-background-image')).toHaveAttribute('src', /bg_pve_training.png/);
   await expect(retry).toHaveCount(0);
 });
+
+
+test('day arena renders detailed scenery through its previously missing lower rows', async ({ page }, info) => {
+  await preparedGame(page, 'arena-day');
+  const image = page.locator('.arena-background-image');
+  await expect(image).toHaveAttribute('src', /bg_board_turf_day.png/);
+  await expect.poll(() => image.evaluate(e => (e as HTMLImageElement).complete && (e as HTMLImageElement).naturalWidth === 1920)).toBe(true);
+  const bands = await image.evaluate(element => {
+    const canvas = document.createElement('canvas'); canvas.width = 192; canvas.height = 108;
+    const ctx = canvas.getContext('2d')!; ctx.drawImage(element as HTMLImageElement, 0, 0, 192, 108);
+    return [70, 85, 100, 107].map(y => {
+      const pixels = ctx.getImageData(0, y, 192, 1).data;
+      const colors = new Set<string>(); let opaque = true;
+      for (let x = 0; x < pixels.length; x += 4) {
+        colors.add(pixels[x] + ',' + pixels[x + 1] + ',' + pixels[x + 2]);
+        opaque &&= pixels[x + 3] === 255;
+      }
+      return { uniqueColors: colors.size, opaque };
+    });
+  });
+  for (const band of bands) { expect(band.opaque).toBe(true); expect(band.uniqueColors).toBeGreaterThan(40); }
+  await page.screenshot({ path: info.outputPath('day-arena-restored.png') });
+});
