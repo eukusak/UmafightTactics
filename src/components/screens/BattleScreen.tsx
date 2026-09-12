@@ -32,6 +32,7 @@ export function BattleScreen(): JSX.Element | null {
   const startBattle = useGameStore((s) => s.startBattle);
   const finishBattle = useGameStore((s) => s.finishBattle);
   const setScreen = useGameStore((s) => s.setScreen);
+  const exitToMainMenu = useGameStore(s => s.exitToMainMenu);
   const lastError = useGameStore((s) => s.lastError);
   const settings = useGameStore((s) => s.settings);
   const setSettings = useGameStore((s) => s.setSettings);
@@ -94,6 +95,9 @@ export function BattleScreen(): JSX.Element | null {
   const info = roundInfo(match.stage, match.round);
   const awaitingAugment = match.augmentOffers.some((o) => o.playerId === human.id && o.chosen === null);
   const awaitingDraft = !!match.draft;
+  const modalOpen = awaitingAugment || awaitingDraft || showResult;
+  const exitButton = <button className="btn-ghost" onClick={exitToMainMenu}
+    title="진행 상황을 저장하고 나갑니다. 전투 중에는 현재 전투를 정산합니다.">메인 메뉴</button>;
 
   return (
     <>
@@ -156,6 +160,7 @@ export function BattleScreen(): JSX.Element | null {
               전투 시작 ({info.kind === 'PVE' ? 'PvE' : 'PvP'})
             </button>
           )}
+          {!online && !modalOpen && exitButton}
           {online && <button className="btn-ghost" onClick={() => { useOnlineStore.getState().leave(); setScreen('ONLINE'); }}>방 나가기</button>}
           <button className="btn-ghost" onClick={() => setScreen('COLLECTION')}>도감</button>
           <button className="btn-ghost" onClick={() => setScreen('SETTINGS')}>설정</button>
@@ -163,6 +168,7 @@ export function BattleScreen(): JSX.Element | null {
       </div>
 
       {online && !connected && <div className="network-banner">연결이 끊어졌습니다 · 재접속 중 · 경기는 계속 진행됩니다</div>}
+      {!online && modalOpen && <div className="solo-menu-exit">{exitButton}</div>}
       {lastError && <div className="toast">{lastError}</div>}
       {awaitingAugment && <AugmentOverlay />}
       {awaitingDraft && !awaitingAugment && <DraftOverlay />}
