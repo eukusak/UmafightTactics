@@ -3,7 +3,7 @@
   "baselineCommit": "847fc5a43eb3017d485192dec5e77812e7e4f98f",
   "reviewedCount": 145,
   "targetCount": 54,
-  "integratedCount": 10,
+  "integratedCount": 54,
   "scope": "All six rows / 24 frames; portrait is the identity reference",
   "units": {
     "special_week": {
@@ -446,14 +446,16 @@
     },
     "gold_city": {
       "decision": "revise",
-      "status": "pending",
+      "status": "integrated",
       "reason": "Long wavy blonde hair with PINK TIPS, blue eyes, blue ear bow. Replace orange short bob.",
       "portrait": "public/assets/portraits/gold_city.png",
       "portraitSha256": "6b7df06e412278dfd8fb7cd82a5a811ba7073daeeb016c9f12ce43443969bdeb",
       "baselineRuntimeSha256": "9a56c82963f0c36bf359dd62f7c8d0bd2c0059d5b33c9d515519e3b812eaaa21",
       "baselinePacking": "docs/art-source/motions/production-144/gold_city/packing.json",
       "skillSignature": "921dc93ae7e38ca45a7711eb23caa57adae1e55ffd3f87ace46d51cebe4477a0",
-      "name": "골드 시티"
+      "name": "골드 시티",
+      "revision": "docs/art-source/motions/identity-revisions-2026-09-12/gold_city/review.json",
+      "runtimeSha256": "10e67d520efaa7a47c7682f48071c2cec507e58847f68bbcfb44fb52cbfa7a38"
     },
     "sakura_bakushin_o": {
       "decision": "retain",
@@ -512,25 +514,29 @@
     },
     "smart_falcon": {
       "decision": "revise",
-      "status": "pending",
+      "status": "integrated",
       "reason": "Light brown hair in TWO short rounded side ponytails with pink ribbons, amber eyes. Replace the bob.",
       "portrait": "public/assets/portraits/smart_falcon.png",
       "portraitSha256": "4925e98ef79d80ae1c393510a6a9536b5fa4fdaa5324dfec739b671a26aae1da",
       "baselineRuntimeSha256": "e37bba17e92c860965683dd9cf1dcbd7775d51535e1d5824ae00d46712572fcc",
       "baselinePacking": "docs/art-source/motions/skill-revisions-2026-09-11/smart_falcon/packing.json",
       "skillSignature": "9903d1a87d2d8cd7f1f0f1c73d9b012c309065dcb5cbf95eda438c47624db980",
-      "name": "스마트 팔콘"
+      "name": "스마트 팔콘",
+      "revision": "docs/art-source/motions/identity-revisions-2026-09-12/smart_falcon/review.json",
+      "runtimeSha256": "54a5b6b86bb1fd1d204c6de710a378cc5602c635f2882ccfe0ee8fc488204ed2"
     },
     "zenno_rob_roy": {
       "decision": "revise",
-      "status": "pending",
+      "status": "integrated",
       "reason": "Dark purple hair with a LONG BRAID over one shoulder, round blue glasses, blue eyes. Replace the bob.",
       "portrait": "public/assets/portraits/zenno_rob_roy.png",
       "portraitSha256": "1d982fa36deadeb4d71f939dc3704e201970f753971b1504fc23ea2a4d609e2a",
       "baselineRuntimeSha256": "9178e44ce7106e0f260084a1715b036470ac87dce88465872f10a8a881a01392",
       "baselinePacking": "docs/art-source/motions/production-144/zenno_rob_roy/packing.json",
       "skillSignature": "a5ec4fd0851b0f0f4fbc0cee114d157864bcff63ce8fb8c92ba726bd0c913969",
-      "name": "젠노 롭 로이"
+      "name": "젠노 롭 로이",
+      "revision": "docs/art-source/motions/identity-revisions-2026-09-12/zenno_rob_roy/review.json",
+      "runtimeSha256": "76c45f5c135f08291827d2ceca68b5ff14f35a9178e5e0b54cfc0e2285170a8b"
     },
     "tosen_jordan": {
       "decision": "retain",
@@ -556,14 +562,16 @@
     },
     "narita_taishin": {
       "decision": "revise",
-      "status": "pending",
+      "status": "integrated",
       "reason": "Light taupe-brown short tousled bob, BLUE eyes, yellow ear ribbon. No white forelock.",
       "portrait": "public/assets/portraits/narita_taishin.png",
       "portraitSha256": "50ba9a7c9540b80100586c1da909713f7002cc0859bca5d7c5f5cf539d4d37e5",
       "baselineRuntimeSha256": "a750b67321a111b1ae01c7554630b65d9caee7f562044c3524956f1b302fac71",
       "baselinePacking": "docs/art-source/motions/skill-revisions-2026-09-11/narita_taishin/packing.json",
       "skillSignature": "f65fe82bbf08bf9a726bb25ef411d640e4b427302940227f3711b6f777564584",
-      "name": "나리타 타이신"
+      "name": "나리타 타이신",
+      "revision": "docs/art-source/motions/identity-revisions-2026-09-12/narita_taishin/review.json",
+      "runtimeSha256": "c403d59b556e12c5d0e9f6f6e459682e4425d40bb68e29d377f34f8eb17c6a57"
     },
     "nishino_flower": {
       "decision": "retain",
@@ -589,25 +597,29 @@
     },
     "bamboo_memory": {
       "decision": "revise",
-      "status": "pending",
+      "status": "integrated",
       "reason": "Reddish brown short spiky tousled hair, blue eyes, GREEN HEADBAND. No white forelock.",
       "portrait": "public/assets/portraits/bamboo_memory.png",
       "portraitSha256": "12b60fe7688427bc175ac53a7dfd367e97a1906daf7fa42afd28c54530dbcd36",
       "baselineRuntimeSha256": "ffd3dfd188a82b0702d2ede9be56d6654247289bcafe9620614ccf553adb28f8",
       "baselinePacking": "docs/art-source/motions/production-144/bamboo_memory/packing.json",
       "skillSignature": "6ef8a700532e3eff17ca4d7d468541ac754352c5f99e855589212019cf697c7f",
-      "name": "뱀부 메모리"
+      "name": "뱀부 메모리",
+      "revision": "docs/art-source/motions/identity-revisions-2026-09-12/bamboo_memory/review.json",
+      "runtimeSha256": "c5709680cab2cebf9da7b3c877e5fd0e9adce08d268fd644386ec9436912b80a"
     },
     "biko_pegasus": {
       "decision": "revise",
-      "status": "pending",
+      "status": "integrated",
       "reason": "Golden-orange brown short spiky hair, bright blue eyes, blue-white ear ornament, red scarf. No white forelock or purple eyes.",
       "portrait": "public/assets/portraits/biko_pegasus.png",
       "portraitSha256": "6632f0118f4cd96faebdfd5ba989ce4510a090fcb7b69751e05577b3a066ae22",
       "baselineRuntimeSha256": "74c6b0b33314d0d7ce19394f7ba6d7fdd222e2d5b63c086997815eb185fd019b",
       "baselinePacking": "docs/art-source/motions/skill-revisions-2026-09-11/biko_pegasus/packing.json",
       "skillSignature": "c0e5cf4133d43b7074b2ef1648b3add9e74ed963a68b7707c661fbf2e2a98465",
-      "name": "비코 페가수스"
+      "name": "비코 페가수스",
+      "revision": "docs/art-source/motions/identity-revisions-2026-09-12/biko_pegasus/review.json",
+      "runtimeSha256": "7dd33bbebc1e086c7443656f77a3a8588b369a1e2cb5b5906282bedd22e60f95"
     },
     "marvelous_sunday": {
       "decision": "retain",
@@ -644,14 +656,16 @@
     },
     "meisho_doto": {
       "decision": "revise",
-      "status": "pending",
+      "status": "integrated",
       "reason": "Brown rounded WAVY bob, broad pink-white front streak, floppy ears, loop ahoge, violet eyes. Replace straight generic bob.",
       "portrait": "public/assets/portraits/meisho_doto.png",
       "portraitSha256": "1a6aa21d32b43d4a9886b3e43834355281838f9fccb09bd92060f8891eda40dd",
       "baselineRuntimeSha256": "191733e4404321ab8d1e27020b3aa14548b4fcdfbc37f979ff3bd6bdc985d6b1",
       "baselinePacking": "docs/art-source/motions/production-144/meisho_doto/packing.json",
       "skillSignature": "d189d5a064f68ca2b64b19768e2e2085bde2f5761e8067c1efde4f70833b98d9",
-      "name": "메이쇼 도토"
+      "name": "메이쇼 도토",
+      "revision": "docs/art-source/motions/identity-revisions-2026-09-12/meisho_doto/review.json",
+      "runtimeSha256": "c29e15f2cf397b44d488a4d092e71eeb843527700ff565db21085094cbea4ff0"
     },
     "mejiro_dober": {
       "decision": "retain",
@@ -666,14 +680,16 @@
     },
     "nice_nature": {
       "decision": "revise",
-      "status": "pending",
+      "status": "integrated",
       "reason": "Red-brown CURLY TWIN PONYTAILS, green bows, muted green eyes. Replace the plain bob.",
       "portrait": "public/assets/portraits/nice_nature.png",
       "portraitSha256": "b6766002b3d5b0ee35f4260585e37e69d86d4813f926ff3170caf1f66cc50f57",
       "baselineRuntimeSha256": "8d3c7ee9a831996d0aa61fccdc517993f3871149a18c8383784b5d0de128e65c",
       "baselinePacking": "docs/art-source/motions/production-144/nice_nature/packing.json",
       "skillSignature": "f53f11dacdbb00d5f8ad0d41fafd2b3881178dc1871d167c38002fcc9bf9f604",
-      "name": "나이스 네이처"
+      "name": "나이스 네이처",
+      "revision": "docs/art-source/motions/identity-revisions-2026-09-12/nice_nature/review.json",
+      "runtimeSha256": "cb5da19cbda11869a9e022e9569516d0902a6d8aadb4d80264166b5eb3f55ad9"
     },
     "king_halo": {
       "decision": "retain",
@@ -688,14 +704,16 @@
     },
     "matikanetannhauser": {
       "decision": "revise",
-      "status": "pending",
+      "status": "integrated",
       "reason": "Muted ash-brown LONG WAVY hair, amber-gold eyes, blue-white hat and maroon ribbon. Replace short bob and violet eyes.",
       "portrait": "public/assets/portraits/matikanetannhauser.png",
       "portraitSha256": "d2f65042f76687277f12133816b4d73c421b693245dbb86faaa4843599c8bc00",
       "baselineRuntimeSha256": "03e4d9147878de8c4308cc205df5133615670ed0a7ce7af88dad34f48dfe5c3d",
       "baselinePacking": "docs/art-source/motions/production-144/matikanetannhauser/packing.json",
       "skillSignature": "d35ef76dfdf4789d754ef66ff71d68eed99ce3f2fb2965f12a44c3f11f0236fa",
-      "name": "마치카네 탄호이저"
+      "name": "마치카네 탄호이저",
+      "revision": "docs/art-source/motions/identity-revisions-2026-09-12/matikanetannhauser/review.json",
+      "runtimeSha256": "c6dc571c85b991c037b87eeb2e94161fc54c5db20aaa069338dab817f4471cff"
     },
     "ikuno_dictus": {
       "decision": "retain",
@@ -710,14 +728,16 @@
     },
     "mejiro_palmer": {
       "decision": "revise",
-      "status": "pending",
+      "status": "integrated",
       "reason": "Brown long wavy side ponytail/half-up hair, blue eyes, little yellow clip. Replace short bob.",
       "portrait": "public/assets/portraits/mejiro_palmer.png",
       "portraitSha256": "6b7b40d7e7a861275ae77452624dbbe3422c18f99fada3893c28371838f39669",
       "baselineRuntimeSha256": "e13f8a186f89dbc02fff189a37b7f7916eafe9bbe0fea9b89b3cf11414ec1446",
       "baselinePacking": "docs/art-source/motions/skill-revisions-2026-09-11/mejiro_palmer/packing.json",
       "skillSignature": "14a3e8af313aca65543d8bb3e37178fdecf92062c27db27148561f34f4b41ac2",
-      "name": "메지로 파머"
+      "name": "메지로 파머",
+      "revision": "docs/art-source/motions/identity-revisions-2026-09-12/mejiro_palmer/review.json",
+      "runtimeSha256": "ab37a4730cc6d63518fb5f63651cad72e44ec8fe38134fe7598250010fcd301f"
     },
     "daitaku_helios": {
       "decision": "retain",
@@ -765,14 +785,16 @@
     },
     "sakura_chiyono_o": {
       "decision": "revise",
-      "status": "pending",
+      "status": "integrated",
       "reason": "Reddish pink fluffy shoulder-length bob with spiky ends, BLUE eyes, white ear covers with pink flowers.",
       "portrait": "public/assets/portraits/sakura_chiyono_o.png",
       "portraitSha256": "1b5d48cec7d1a4737da989e238847abf1b7eeb8f7f92df54b0f09f68ad84f66f",
       "baselineRuntimeSha256": "4e5bbd7a66642f0262517cabe4415b8082f804bcc36f3c2f4ab86177e42c5d8a",
       "baselinePacking": "docs/art-source/motions/skill-revisions-2026-09-11/sakura_chiyono_o/packing.json",
       "skillSignature": "d12f64b9ea59a38038a5450202ea41861d6231af089cb755717eae75de77d112",
-      "name": "사쿠라 치요노 오"
+      "name": "사쿠라 치요노 오",
+      "revision": "docs/art-source/motions/identity-revisions-2026-09-12/sakura_chiyono_o/review.json",
+      "runtimeSha256": "3ee93f461d91b0bef4be66063b916668224a25933e11e80383c8d34b5ffbe406"
     },
     "sirius_symboli": {
       "decision": "retain",
@@ -798,25 +820,29 @@
     },
     "yaeno_muteki": {
       "decision": "revise",
-      "status": "pending",
+      "status": "integrated",
       "reason": "Brown short tousled hair, SMALL WHITE CENTRAL forehead patch, red-orange eyes, large red flower ornament. Replace long diagonal white stripe.",
       "portrait": "public/assets/portraits/yaeno_muteki.png",
       "portraitSha256": "0638d549a150faf46477ff2d6ea002e765cac209f39eb2dbcab06bba56f2cbfc",
       "baselineRuntimeSha256": "89a40b422075b6b7e3ebd7c24321e1ad33d0906f2df2300630651e2639993d01",
       "baselinePacking": "docs/art-source/motions/production-144/yaeno_muteki/packing.json",
       "skillSignature": "d29be149d07775f69b010f4778e3f0efb67025187f1d99409c17934e2ecb9734",
-      "name": "야에노 무테키"
+      "name": "야에노 무테키",
+      "revision": "docs/art-source/motions/identity-revisions-2026-09-12/yaeno_muteki/review.json",
+      "runtimeSha256": "827da48e2a282406f2e569b430ec88beb873fbee5d66ab00599857386a5b891a"
     },
     "tsurumaru_tsuyoshi": {
       "decision": "revise",
-      "status": "pending",
+      "status": "integrated",
       "reason": "Soft brown shoulder-length layered hair, violet eyes, small gold clips. NO white stripe.",
       "portrait": "public/assets/portraits/tsurumaru_tsuyoshi.png",
       "portraitSha256": "c637b481f35af9cf3c376c416857f9cb87706df06406017323bec3cda6bce089",
       "baselineRuntimeSha256": "4181961ac3f6d991fba27a84ef728ded69a34643d13d726b3d421271b2df3284",
       "baselinePacking": "docs/art-source/motions/skill-revisions-2026-09-11/tsurumaru_tsuyoshi/packing.json",
       "skillSignature": "62aac5a15778224810298a4c3a663917c4da73855a628eac86fc46bf99000702",
-      "name": "츠루마루 츠요시"
+      "name": "츠루마루 츠요시",
+      "revision": "docs/art-source/motions/identity-revisions-2026-09-12/tsurumaru_tsuyoshi/review.json",
+      "runtimeSha256": "8b42a95ecacdda1e55beef7ed9aebe9fefe1601e47ee8c4e4f5f322dc4068c3e"
     },
     "mejiro_bright": {
       "decision": "retain",
@@ -831,25 +857,29 @@
     },
     "daring_tact": {
       "decision": "revise",
-      "status": "pending",
+      "status": "integrated",
       "reason": "Dark brown LONG WAVY half-up braided hair, blue eyes, blue-white bow behind. NO white forelock.",
       "portrait": "public/assets/portraits/daring_tact.png",
       "portraitSha256": "3e25b1485d03a7c9f991aef9ce88f86831889f8340226f98bbf3beea04a1b488",
       "baselineRuntimeSha256": "0431aef031821e5d920f942204cd511ce05dcbd237e79793e4ec24d9dbe9e94d",
       "baselinePacking": "docs/art-source/motions/skill-revisions-2026-09-11/daring_tact/packing.json",
       "skillSignature": "a43bac208f8550310489f9c733d9ece34d9f2cb3065a6a1f718258f822eeaf97",
-      "name": "데어링 택트"
+      "name": "데어링 택트",
+      "revision": "docs/art-source/motions/identity-revisions-2026-09-12/daring_tact/review.json",
+      "runtimeSha256": "4ac5ee725835768739f0c496d1928f900f3aab051262a764830fab3a5415fdd5"
     },
     "sakura_laurel": {
       "decision": "revise",
-      "status": "pending",
+      "status": "integrated",
       "reason": "Warm red-brown soft short bob, pink-violet eyes, small gold-pink ear ribbon. NO white forelock.",
       "portrait": "public/assets/portraits/sakura_laurel.png",
       "portraitSha256": "537fbf6c17c456d622c8fac5acbe2ca79a1a22f52ac2c5e0a5412ca1b473bef8",
       "baselineRuntimeSha256": "19da18fa3a272262290e8e3bdff29ac46c58b9f7779c9f14ff67af7a2100c127",
       "baselinePacking": "docs/art-source/motions/production-144/sakura_laurel/packing.json",
       "skillSignature": "40a0e817ea19fdba04c7dbe490d0fded6519f3ade4031687a07ea2f81106d138",
-      "name": "사쿠라 로렐"
+      "name": "사쿠라 로렐",
+      "revision": "docs/art-source/motions/identity-revisions-2026-09-12/sakura_laurel/review.json",
+      "runtimeSha256": "2c9793c30cdfffe7f12d525275b567b8da22c5d0b5d1d65b0234726bef457e7a"
     },
     "narita_top_road": {
       "decision": "retain",
@@ -864,80 +894,94 @@
     },
     "yamanin_zephyr": {
       "decision": "revise",
-      "status": "pending",
+      "status": "integrated",
       "reason": "Muted mauve-brown LONG FLOWING WAVY hair, broad soft white central front lock, warm brown-gold eyes, red flower headband.",
       "portrait": "public/assets/portraits/yamanin_zephyr.png",
       "portraitSha256": "5f979f95e27493b178aa103bf3fe88c13a355ef0c325652816e680cfd48298c2",
       "baselineRuntimeSha256": "b9d6d1d0684e02bd22905c57813cd857f9c3a65dd4d56df0069a918a19f1a617",
       "baselinePacking": "docs/art-source/motions/production-144/yamanin_zephyr/packing.json",
       "skillSignature": "4e773e4ef1dc26483483006ae197a6b43b809a605d8e22e032ecc72e761fb789",
-      "name": "야마닌 제퍼"
+      "name": "야마닌 제퍼",
+      "revision": "docs/art-source/motions/identity-revisions-2026-09-12/yamanin_zephyr/review.json",
+      "runtimeSha256": "60357b7492f271bccac93d5edad584679a31fa3e8957459e3a9bd6cdd8f54ac4"
     },
     "furioso": {
       "decision": "revise",
-      "status": "pending",
+      "status": "integrated",
       "reason": "Warm orange HIGH SIDE PONYTAIL, short blunt fringe, white patch on ONE EAR (not forehead), golden eyes, blue bandana.",
       "portrait": "public/assets/portraits/furioso.png",
       "portraitSha256": "da2ac2ea2a4afb3acbe197669d19faaf1a98c2fbf3c136ef582a2d8cc75065ba",
       "baselineRuntimeSha256": "325cca6b28c1889dcc5b08e7af80c0bdd8b69e5a8990a9cc71eca19024e10771",
       "baselinePacking": "docs/art-source/motions/production-144/furioso/packing.json",
       "skillSignature": "68a572a5e07bf63dd3423088de6fb45e7468574335fe70cdbbbab73d30c3f112",
-      "name": "푸리오소"
+      "name": "푸리오소",
+      "revision": "docs/art-source/motions/identity-revisions-2026-09-12/furioso/review.json",
+      "runtimeSha256": "3ece739d91e02858d3ca9601c711cbc1cf5eae7244b993bc0b4d9ef88d1bcb00"
     },
     "transcend": {
       "decision": "revise",
-      "status": "pending",
+      "status": "integrated",
       "reason": "Orange-chestnut straight CHIN-LENGTH BOB with blunt fringe, pink-red eyes, small red ear ribbon. NO white forelock.",
       "portrait": "public/assets/portraits/transcend.png",
       "portraitSha256": "99ec557feb60065ae4af029a533a1ac1f2a0e1bf74720d8600aa51808eb0f349",
       "baselineRuntimeSha256": "f50b83c817a73d88130838c35cecdd9cacf70f9e69b68dd8cfa8e48b23de7595",
       "baselinePacking": "docs/art-source/motions/skill-revisions-2026-09-11/transcend/packing.json",
       "skillSignature": "ce94f27d06507a5020d43b9af43b37f5d9d5e978903237d5250bb8ced6c42c72",
-      "name": "트랜센드"
+      "name": "트랜센드",
+      "revision": "docs/art-source/motions/identity-revisions-2026-09-12/transcend/review.json",
+      "runtimeSha256": "3dc56ee14a61b5101aab14f74345f1c0422472496bdd84dc8ed52d730079f796"
     },
     "north_flight": {
       "decision": "revise",
-      "status": "pending",
+      "status": "integrated",
       "reason": "Orange-brown wavy shoulder hair with golden ends, pink-violet eyes, magenta hat with white feathers. NO white forelock.",
       "portrait": "public/assets/portraits/north_flight.png",
       "portraitSha256": "83defdc74910bec884d2a0491b3b0e9352364e87f22a4114a2373d3274e3ce0e",
       "baselineRuntimeSha256": "b5c33e87f962327f0403ee664ba67ea0038dc047b94389cac5a0144369342b00",
       "baselinePacking": "docs/art-source/motions/production-144/north_flight/packing.json",
       "skillSignature": "a68bb8fa484c2f6481620680d50a9831f834f2c7256e7d2260b5ac460f23730c",
-      "name": "노스 플라이트"
+      "name": "노스 플라이트",
+      "revision": "docs/art-source/motions/identity-revisions-2026-09-12/north_flight/review.json",
+      "runtimeSha256": "0e878963bf93b19221fa5a0be963aec79d10555b5c75fcfe89f05a178af6050f"
     },
     "symboli_kris_s": {
       "decision": "revise",
-      "status": "pending",
+      "status": "integrated",
       "reason": "Dark black-brown very long HIGH PONYTAIL, TAN SKIN, bright BLUE eyes, blue hair tie.",
       "portrait": "public/assets/portraits/symboli_kris_s.png",
       "portraitSha256": "f8b939dc38018ec43679c0c6a45f6afa3f9f4fcd210fbcadd7973f473f887427",
       "baselineRuntimeSha256": "9c94fa49b69c5a498c19dad3554c55394c6bc88c3be00443139f67ed305bc8cd",
       "baselinePacking": "docs/art-source/motions/production-144/symboli_kris_s/packing.json",
       "skillSignature": "7a17a481d192bc68e0db7336a90badb9be4cbda9b6d70f48ca36c508f76605ac",
-      "name": "심볼리 크리스 에스"
+      "name": "심볼리 크리스 에스",
+      "revision": "docs/art-source/motions/identity-revisions-2026-09-12/symboli_kris_s/review.json",
+      "runtimeSha256": "cca6259b1bccec94666f1d0a4c213909a62290dfdacdce077ee30bbf7b567ba6"
     },
     "tanino_gimlet": {
       "decision": "revise",
-      "status": "pending",
+      "status": "integrated",
       "reason": "Burgundy short tousled bob, BLACK EYEPATCH over one eye, visible GOLDEN eye, white patch in bangs. Keep the eyepatch.",
       "portrait": "public/assets/portraits/tanino_gimlet.png",
       "portraitSha256": "1ca410dec98b73a14979b2989191638005914b7930a5ea9344a97e69f9a4ab85",
       "baselineRuntimeSha256": "d624b6fa3936e4e3619798a111c1bb6c70862045464c3ef4e9fb8d7f6ef5be9c",
       "baselinePacking": "docs/art-source/motions/production-144/tanino_gimlet/packing.json",
       "skillSignature": "72b029082bb6d81cf82cdb8036770dbeb595e454483722d1e7d09b2a50588dc0",
-      "name": "타니노 김렛"
+      "name": "타니노 김렛",
+      "revision": "docs/art-source/motions/identity-revisions-2026-09-12/tanino_gimlet/review.json",
+      "runtimeSha256": "f5138dcb47dbea6c546bb075874cb67bb35256f347378f957773eed00731d3f4"
     },
     "daiichi_ruby": {
       "decision": "revise",
-      "status": "pending",
+      "status": "integrated",
       "reason": "Dark brown long hair with TWO LARGE SPIRAL RINGLETS framing the cheeks, pink-red eyes, large red bow and pink flower. Replace plain straight front locks.",
       "portrait": "public/assets/portraits/daiichi_ruby.png",
       "portraitSha256": "a43dc57edb4b791f614331682e5fb9170aff59cbe0a064311a948860fb890540",
       "baselineRuntimeSha256": "cfce230eee8a3729c56ee29950cad6006f0be1cb70adee7f7545092c36607939",
       "baselinePacking": "docs/art-source/motions/skill-revisions-2026-09-11/daiichi_ruby/packing.json",
       "skillSignature": "e83993a266d6b8aaae08b6d424e8e38533274a6a9fb8615f366a9d9c8813658a",
-      "name": "다이이치 루비"
+      "name": "다이이치 루비",
+      "revision": "docs/art-source/motions/identity-revisions-2026-09-12/daiichi_ruby/review.json",
+      "runtimeSha256": "9d6ff9de4abadeb3adc56dc1e937bd2428214e806c6c425b0a492adddc8c3901"
     },
     "mejiro_ramonu": {
       "decision": "retain",
@@ -952,25 +996,29 @@
     },
     "aston_machan": {
       "decision": "revise",
-      "status": "pending",
+      "status": "integrated",
       "reason": "Orange-brown WAVY BOB with small side ponytail, GREEN eyes, tiny crown. Replace straight bob and brown eyes.",
       "portrait": "public/assets/portraits/aston_machan.png",
       "portraitSha256": "6bb530bafc3607dc5d0f56283e1872ca968f0aad70dfca93ca754b3126e44afc",
       "baselineRuntimeSha256": "22e1561bbac1e62ef4dd174de320531d6d87d50ff98a6d716acebdec0c770d15",
       "baselinePacking": "docs/art-source/motions/skill-revisions-2026-09-11/aston_machan/packing.json",
       "skillSignature": "f9a14d34580dd71bd5b3d23db795f75565ef4803f8e1bcc61a797624fd4406fb",
-      "name": "애스턴 마짱"
+      "name": "애스턴 마짱",
+      "revision": "docs/art-source/motions/identity-revisions-2026-09-12/aston_machan/review.json",
+      "runtimeSha256": "3f9f894e3a6f5ed9d480c158022a48796b53e2be20d7aaa1695cc80a1cfb5743"
     },
     "satono_crown": {
       "decision": "revise",
-      "status": "pending",
+      "status": "integrated",
       "reason": "Black long CURLY HIGH PONYTAIL, GREEN eyes, silver bow. Replace short dark bob.",
       "portrait": "public/assets/portraits/satono_crown.png",
       "portraitSha256": "5b502e1931e7fd188aa50a31c101c4f15aecdb635e0d9f46d382e3e4ace7fe29",
       "baselineRuntimeSha256": "3bbd3b92b69b2646d58ac20ade83497afdbb111d2560e7b9ee296f322dcc0061",
       "baselinePacking": "docs/art-source/motions/skill-revisions-2026-09-11/satono_crown/packing.json",
       "skillSignature": "d3f2bc6a2a9c2aef0afbf42cd6febda2c8371c07e209588d0c688820a9761dd5",
-      "name": "사토노 크라운"
+      "name": "사토노 크라운",
+      "revision": "docs/art-source/motions/identity-revisions-2026-09-12/satono_crown/review.json",
+      "runtimeSha256": "c007e44ba8db959146cd1c98d6ea9c6bab4e50ecca12aa848eff44be37f515bd"
     },
     "cheval_grand": {
       "decision": "retain",
@@ -996,36 +1044,42 @@
     },
     "dantsu_flame": {
       "decision": "revise",
-      "status": "pending",
+      "status": "integrated",
       "reason": "Chestnut short WAVY bob and side ponytail with green ribbon, gold-brown eyes. Replace bright red hair/red eyes.",
       "portrait": "public/assets/portraits/dantsu_flame.png",
       "portraitSha256": "ac2e56bcf00ab99a0836f160717b894bd6b76888a44f0c481a09219a3f2188eb",
       "baselineRuntimeSha256": "91f6bc7be0fe9390edf96f38548d1b46de7bdeb9317c0564380ffbb20216afb7",
       "baselinePacking": "docs/art-source/motions/production-144/dantsu_flame/packing.json",
       "skillSignature": "4bb397b8fbd12d324c4b3b4709529ea449ac714a35f9a49cd301cb83b512f1a7",
-      "name": "단츠 플레임"
+      "name": "단츠 플레임",
+      "revision": "docs/art-source/motions/identity-revisions-2026-09-12/dantsu_flame/review.json",
+      "runtimeSha256": "8e24f87bc5facaa3818305c9bf65e7c021cad48f6110ce0ee62a74652c7b5e6e"
     },
     "ks_miracle": {
       "decision": "revise",
-      "status": "pending",
+      "status": "integrated",
       "reason": "Light blue smooth ASYMMETRIC BOB HIDING ONE EYE, blue visible eye, yellow ear covers and blue bow.",
       "portrait": "public/assets/portraits/ks_miracle.png",
       "portraitSha256": "50b6a9e67f65fc4b4639fa1329187b538c6e78f7d68686d6f6bb6a08162a01ae",
       "baselineRuntimeSha256": "7710dfc56e956169b6955ceba72431a2bafdfa6ef4f71748a79fb87d9acf76ae",
       "baselinePacking": "docs/art-source/motions/skill-revisions-2026-09-11/ks_miracle/packing.json",
       "skillSignature": "c3b7226663dd08f4f3bda8a45b2072e7a74a31c39c862144aa8ff475c5b09819",
-      "name": "케이에스 미라클"
+      "name": "케이에스 미라클",
+      "revision": "docs/art-source/motions/identity-revisions-2026-09-12/ks_miracle/review.json",
+      "runtimeSha256": "dfa9becd9943e57878a0a47893cb1dc95c394b3a5879b14f6c9107ed0192b5d2"
     },
     "jungle_pocket": {
       "decision": "revise",
-      "status": "pending",
+      "status": "integrated",
       "reason": "Golden brown wild WAVY hair, HORIZONTAL PALE HEADBAND across bangs, yellow-green eyes. Replace generic white forelock.",
       "portrait": "public/assets/portraits/jungle_pocket.png",
       "portraitSha256": "f995bdc6e8a79937bccade12fa13e945550cd0f772c9c8a3ad57977183d99028",
       "baselineRuntimeSha256": "922391836cb7b959e5e2533fa7d15014366e3e7cc3919d15efe68dc4ed12081e",
       "baselinePacking": "docs/art-source/motions/production-144/jungle_pocket/packing.json",
       "skillSignature": "a8d5066459a7261ae937e2bc84fec854e9d00a00d365de5221d0265429c9ca82",
-      "name": "정글 포켓"
+      "name": "정글 포켓",
+      "revision": "docs/art-source/motions/identity-revisions-2026-09-12/jungle_pocket/review.json",
+      "runtimeSha256": "ab408eac5aa3634aad569ed05da6177e0bb878b7c4b67d2122fadfbf041bd782"
     },
     "believe": {
       "decision": "retain",
@@ -1040,14 +1094,16 @@
     },
     "no_reason": {
       "decision": "revise",
-      "status": "pending",
+      "status": "integrated",
       "reason": "Dark brown LONG SHAGGY LAYERED hair, green eyes, RED HEADBAND. No large white forelock.",
       "portrait": "public/assets/portraits/no_reason.png",
       "portraitSha256": "afac81684da8e0b43aa7220e21f0002932a54e5c2af01cd0fc29b8951a25168d",
       "baselineRuntimeSha256": "6e29800437ff9d55ffadda59336f85b16f404d942a9f571c96aea6ac6063f786",
       "baselinePacking": "docs/art-source/motions/production-144/no_reason/packing.json",
       "skillSignature": "9c116827a9efc2dc14ef8a74beddaddc59535634f579de62ab9c1c8eec08f2c0",
-      "name": "노 리즌"
+      "name": "노 리즌",
+      "revision": "docs/art-source/motions/identity-revisions-2026-09-12/no_reason/review.json",
+      "runtimeSha256": "6032582568071fadedc702c79db7e19388ade6e6995871fe1a2b058a42bf772d"
     },
     "still_in_love": {
       "decision": "retain",
@@ -1062,80 +1118,94 @@
     },
     "copano_rickey": {
       "decision": "revise",
-      "status": "pending",
+      "status": "integrated",
       "reason": "Golden light brown long hair with TWO ROUNDED SIDE BUNS, broad central white forelock, pink eyes, red-gold ornaments.",
       "portrait": "public/assets/portraits/copano_rickey.png",
       "portraitSha256": "2d58a453cd091b1cc9e6b87025182cf41206f81c6b8c4104398cddd3f053169f",
       "baselineRuntimeSha256": "3c7942f8f8bae119e937a76a5d655322f19e9c8bbd5fa1abaeed378509b733f0",
       "baselinePacking": "docs/art-source/motions/production-144/copano_rickey/packing.json",
       "skillSignature": "27fd59c3d6e5f0bea98c243456d957b64550495a9f9cacd997091e4358986ae6",
-      "name": "코파노 리키"
+      "name": "코파노 리키",
+      "revision": "docs/art-source/motions/identity-revisions-2026-09-12/copano_rickey/review.json",
+      "runtimeSha256": "8245e7295897ab4b93afa1d034c329577b493acc7f918536f3f0d3610884c07e"
     },
     "hokko_tarumae": {
       "decision": "revise",
-      "status": "pending",
+      "status": "integrated",
       "reason": "Dark brown TWO THICK BRAIDS, BLUE eyes, white cap, turquoise ear covers. Replace generic white streak and violet eyes.",
       "portrait": "public/assets/portraits/hokko_tarumae.png",
       "portraitSha256": "404f36aee6955c32dcd5f87216c2ddc8a4ae06b3f529dd661e9bda9199947d82",
       "baselineRuntimeSha256": "8a4b1fd073efe8e0e12c15a905cfcfd5491ebdc5f4cada0516ba24cfdc1e6b03",
       "baselinePacking": "docs/art-source/motions/skill-revisions-2026-09-11/hokko_tarumae/packing.json",
       "skillSignature": "169c2b643b3e8b23097442d57fdd2d8c45dc342469261fafa379d192561335dc",
-      "name": "홋코 타루마에"
+      "name": "홋코 타루마에",
+      "revision": "docs/art-source/motions/identity-revisions-2026-09-12/hokko_tarumae/review.json",
+      "runtimeSha256": "eceb7fc1bcdba4808e497b63ff6d751947328ae9fc769b43dec84f18be2d48fc"
     },
     "wonder_acute": {
       "decision": "revise",
-      "status": "pending",
+      "status": "integrated",
       "reason": "Silver-gray soft long layered WAVY hair, LIGHT BLUE eyes, red-white-blue ear bow. Replace violet eyes.",
       "portrait": "public/assets/portraits/wonder_acute.png",
       "portraitSha256": "701c94d17ecd474b3bd77cc5e834c956fdb087437cdd976e0eea955a59529e7f",
       "baselineRuntimeSha256": "f109ad18b6335bba6d91841b54eee28528f414783dc7893974dd0eaab3299a66",
       "baselinePacking": "docs/art-source/motions/production-144/wonder_acute/packing.json",
       "skillSignature": "97249df86962bd780510bf837b2dcf58b56c2218e3daea65b9e0614dec00c34a",
-      "name": "원더 어큐트"
+      "name": "원더 어큐트",
+      "revision": "docs/art-source/motions/identity-revisions-2026-09-12/wonder_acute/review.json",
+      "runtimeSha256": "949e168f8f1f8be62acc28040bae2286cb56af376c0ccb5b2169ca3200da58b3"
     },
     "samson_big": {
       "decision": "revise",
-      "status": "pending",
+      "status": "integrated",
       "reason": "Reddish brown long layered hair, GREEN eyes, cyan-pink beanie. Replace blue eyes.",
       "portrait": "public/assets/portraits/samson_big.png",
       "portraitSha256": "21b6f184ca6c8f0f62d476119e60c50e5377d846b9ab6033c0a917d6aaae994a",
       "baselineRuntimeSha256": "553726d62ff77bdb7ec81d3893e208376bd30f8fa45a23175049736655ae35fd",
       "baselinePacking": "docs/art-source/motions/production-144/samson_big/packing.json",
       "skillSignature": "b5f65b3637c73a3ab44f52ff4f6638e3a3ee679f38acd9f73b1385de7aef6d65",
-      "name": "삼손 빅"
+      "name": "삼손 빅",
+      "revision": "docs/art-source/motions/identity-revisions-2026-09-12/samson_big/review.json",
+      "runtimeSha256": "42afde5c7350cf5589a46fddb8c6536504e026804cb96afff0391a04bcbf15bb"
     },
     "sounds_of_earth": {
       "decision": "revise",
-      "status": "pending",
+      "status": "integrated",
       "reason": "Brown wavy shoulder-length hair, BLUE eyes, blue feather ornament. NO white forelock.",
       "portrait": "public/assets/portraits/sounds_of_earth.png",
       "portraitSha256": "5120089b5138d2fe62cad22f27e069c2dd6c32fc9e05c2d09417e6a6b98393bf",
       "baselineRuntimeSha256": "f18a233a1f11034d2d331beb35b26ba855147e593f43b1df0345354b59f43cdb",
       "baselinePacking": "docs/art-source/motions/production-144/sounds_of_earth/packing.json",
       "skillSignature": "ccd830e5a385ecfa3dffd93242bdfa7bd307c91110bf9b37f50ce3821e478113",
-      "name": "사운즈 오브 어스"
+      "name": "사운즈 오브 어스",
+      "revision": "docs/art-source/motions/identity-revisions-2026-09-12/sounds_of_earth/review.json",
+      "runtimeSha256": "5ca6a990c1b5c9b2c0615a2834ea13dd8d6993f400a1703f134b68216b9858b3"
     },
     "royce_and_royce": {
       "decision": "revise",
-      "status": "pending",
+      "status": "integrated",
       "reason": "Brown side-braided bun and long straight locks, GREEN-FRAME GLASSES and green eyes, purple ribbon. No white forelock.",
       "portrait": "public/assets/portraits/royce_and_royce.png",
       "portraitSha256": "e4fa7be39e7c2b00adfcdeeb5c9084bb258cc90fab12e48427f265b4bd8c90cd",
       "baselineRuntimeSha256": "5cc36db5534ffe1c5d5780866e74032954d2106a95781f11b7dfdd58c1e7d11a",
       "baselinePacking": "docs/art-source/motions/production-144/royce_and_royce/packing.json",
       "skillSignature": "b4a255d605c032bffdf3f0962377ca68818fe77e38800620631fc5657252cb00",
-      "name": "로이스 앤 로이스"
+      "name": "로이스 앤 로이스",
+      "revision": "docs/art-source/motions/identity-revisions-2026-09-12/royce_and_royce/review.json",
+      "runtimeSha256": "0fd9f2e12133fde214793b447c01a11357eb699af5904fd70e12d663c37114f0"
     },
     "katsuragi_ace": {
       "decision": "revise",
-      "status": "pending",
+      "status": "integrated",
       "reason": "Black SPIKY SHOULDER HAIR with BLUE ENDS, white forehead tuft, BLUE eyes, white ear covers and red ties.",
       "portrait": "public/assets/portraits/katsuragi_ace.png",
       "portraitSha256": "08bad7f55068573c709fafc57109c0d54cb316584f84da44f694c510a87d25d4",
       "baselineRuntimeSha256": "156db7453a66a096605afcd9918d09cac468229f3405de7e25fc6e4960271adc",
       "baselinePacking": "docs/art-source/motions/production-144/katsuragi_ace/packing.json",
       "skillSignature": "f8c653528ba01efbfa134767179f10f3e52ac41a7279bea5c8aa29e1570ddca0",
-      "name": "카츠라기 에이스"
+      "name": "카츠라기 에이스",
+      "revision": "docs/art-source/motions/identity-revisions-2026-09-12/katsuragi_ace/review.json",
+      "runtimeSha256": "2dc02c73608219459f9626c013b6d2009ecc7635c5ed8329171918f3e828ea7c"
     },
     "neo_universe": {
       "decision": "retain",
@@ -1150,36 +1220,42 @@
     },
     "hishi_miracle": {
       "decision": "revise",
-      "status": "pending",
+      "status": "integrated",
       "reason": "Silver WAVY SHOULDER BOB, TEAL-GREEN eyes, white-blue ear covers and yellow bow.",
       "portrait": "public/assets/portraits/hishi_miracle.png",
       "portraitSha256": "07342a78e64e5cc74ca4574195ca842890a67e085d58d87b561ac7ef3888bef4",
       "baselineRuntimeSha256": "8781d99bf23a82a842a48d5bab367084290d8b16bbb6ba4603b335b3c933dff7",
       "baselinePacking": "docs/art-source/motions/skill-revisions-2026-09-11/hishi_miracle/packing.json",
       "skillSignature": "40161fbf6894ac63518283fd0969bdd358fd866251225b84041c9b071c5f96b6",
-      "name": "히시 미라클"
+      "name": "히시 미라클",
+      "revision": "docs/art-source/motions/identity-revisions-2026-09-12/hishi_miracle/review.json",
+      "runtimeSha256": "61034eac030d27dc8b72ee34e88cd6581e5f4fa8a4e99f630aa747c7d5835466"
     },
     "tap_dance_city": {
       "decision": "revise",
-      "status": "pending",
+      "status": "integrated",
       "reason": "Dark brown SHORT CURLY WAVY BOB, violet eyes, red-blue braided ear ornament. Replace long straight ponytail.",
       "portrait": "public/assets/portraits/tap_dance_city.png",
       "portraitSha256": "efd21e9da5e5c009d0b7005e433f7d597befce772b2520ac674e4e912cd1c746",
       "baselineRuntimeSha256": "c3cb362bf1f3b6676570c25f0916ffb12755082289213a332e03d384333e20be",
       "baselinePacking": "docs/art-source/motions/skill-revisions-2026-09-11/tap_dance_city/packing.json",
       "skillSignature": "06f51dd87940f87b7be8173e86ea4e2030bd1a4241eea3652d5452f3013f0409",
-      "name": "탭 댄스 시티"
+      "name": "탭 댄스 시티",
+      "revision": "docs/art-source/motions/identity-revisions-2026-09-12/tap_dance_city/review.json",
+      "runtimeSha256": "4fbea13dc18a681ba82e6d44939434265945ec6250cb1dd395a736cfbf3a58cb"
     },
     "duramente": {
       "decision": "revise",
-      "status": "pending",
+      "status": "integrated",
       "reason": "Dark brown very long straight layered hair, SMALL WHITE COMMA forehead mark, BLUE eyes, gold hair accessory. Replace reddish ombre and violet eyes.",
       "portrait": "public/assets/portraits/duramente.png",
       "portraitSha256": "42dbd3a4fa65f7c7ab8b8014e31da1df9fa4a12691e803f9f0100e52c0f11e36",
       "baselineRuntimeSha256": "63ae220a70d88123aada3a199aad159a05437519ad3a50ea8c6b1e38ec200fe9",
       "baselinePacking": "docs/art-source/motions/production-144/duramente/packing.json",
       "skillSignature": "1720c2c48e946371991ae0385d125f0d0d025dc59d89174b847b4680bd6cb74f",
-      "name": "두라멘테"
+      "name": "두라멘테",
+      "revision": "docs/art-source/motions/identity-revisions-2026-09-12/duramente/review.json",
+      "runtimeSha256": "3217b8fdba6b1f65120173c6e5826064ead93f1b7545f0009e71807badc11fb8"
     },
     "rhein_kraft": {
       "decision": "retain",
@@ -1194,14 +1270,16 @@
     },
     "cesario": {
       "decision": "revise",
-      "status": "pending",
+      "status": "integrated",
       "reason": "Dark blue smooth short bob, CENTRAL VERTICAL WHITE FORELOCK, HETEROCHROMIA: viewer-left eye lavender and viewer-right eye gold.",
       "portrait": "public/assets/portraits/cesario.png",
       "portraitSha256": "f809bd86a206bdfd904a3de9eee12cc9d8e0a0a6bb5143702d0be0e034494279",
       "baselineRuntimeSha256": "9f333f80edcda93b004dd1ec377b71c0823cc70e99389eee039cdd8db5b52b03",
       "baselinePacking": "docs/art-source/motions/production-144/cesario/packing.json",
       "skillSignature": "4a41d75ad5c99161ecf9fbaef7896fa11317024cf72cca643d46d07c61dc95ce",
-      "name": "세자리오"
+      "name": "세자리오",
+      "revision": "docs/art-source/motions/identity-revisions-2026-09-12/cesario/review.json",
+      "runtimeSha256": "033174a14be24fd0c0ea1c24e7fe9b76d0291de8a6eaab2b2457d6e00971ce4e"
     },
     "air_messiah": {
       "decision": "retain",
@@ -1238,14 +1316,16 @@
     },
     "buena_vista": {
       "decision": "revise",
-      "status": "pending",
+      "status": "integrated",
       "reason": "Dark red-brown shoulder-length straight bob, PINK eyes, gold headband/ear covers. Replace long red hair and cyan eyes.",
       "portrait": "public/assets/portraits/buena_vista.png",
       "portraitSha256": "8dc3d2e019ec35d90e7ddd4b504183b9a794ab834a5cec0dd04e8c15139b2bcd",
       "baselineRuntimeSha256": "b34475916a9d4b4cce100901b8074f6fb4c10eb941df4a8fe6ecf88ccc2030f2",
       "baselinePacking": "docs/art-source/motions/production-144/buena_vista/packing.json",
       "skillSignature": "4bc1d2fe82346b5b038b2580a28c1fb87b3f0b05419ebae0074163567704775d",
-      "name": "부에나 비스타"
+      "name": "부에나 비스타",
+      "revision": "docs/art-source/motions/identity-revisions-2026-09-12/buena_vista/review.json",
+      "runtimeSha256": "13dddf1bf42c34d992abd43466faf1e1fcb067e3804982ef6de9fdaf1e4e6b4b"
     },
     "orfevre": {
       "decision": "retain",
@@ -1348,14 +1428,16 @@
     },
     "sakura_chitose_o": {
       "decision": "revise",
-      "status": "pending",
+      "status": "integrated",
       "reason": "Plum-brown soft bob with ONE LONG THICK SIDE BRAID, pink-violet eyes, pink blossom ear decorations. Replace loose straight side hair.",
       "portrait": "public/assets/portraits/sakura_chitose_o.png",
       "portraitSha256": "67ffd8c8a20e811f2f180b50b871b1d412f12fd9c811d64f416f0b060fb42dfa",
       "baselineRuntimeSha256": "c0f327e9074b8ea44b9fff94ab0ed796b67941939ec161f7e38a663dee01ec64",
       "baselinePacking": "docs/art-source/motions/skill-revisions-2026-09-11/sakura_chitose_o/packing.json",
       "skillSignature": "cd13009229be0a31424b62a921d422547142014a8ffba0d7491002d616fb0881",
-      "name": "사쿠라 치토세 오"
+      "name": "사쿠라 치토세 오",
+      "revision": "docs/art-source/motions/identity-revisions-2026-09-12/sakura_chitose_o/review.json",
+      "runtimeSha256": "6bb8284e481c42e51d8166d455ba9381b3cd59995d9b853c0701a3dcec406171"
     },
     "fenomeno": {
       "decision": "retain",
@@ -1436,25 +1518,29 @@
     },
     "curren_bouquetdor": {
       "decision": "revise",
-      "status": "pending",
+      "status": "integrated",
       "reason": "Brown hair with TWO THICK FRONT BRAIDS, violet eyes, broad white forehead curl, white headband and floral ear ornament. Replace plain short bob.",
       "portrait": "public/assets/portraits/curren_bouquetdor.png",
       "portraitSha256": "538b7b61127c01d93c71e9abc4c81be876e2d04fc05810f8f4548f2ef9d902bf",
       "baselineRuntimeSha256": "615fa9afff5d4a40634f151fcf9171a2d51ab0af2f09089be34dc8185fcdf1ac",
       "baselinePacking": "docs/art-source/motions/production-144/curren_bouquetdor/packing.json",
       "skillSignature": "3018a59c5a8b06336d0e20fc55968b2769b179f0642de51cf941d43aa1d948ce",
-      "name": "카렌 부케도르"
+      "name": "카렌 부케도르",
+      "revision": "docs/art-source/motions/identity-revisions-2026-09-12/curren_bouquetdor/review.json",
+      "runtimeSha256": "04992c97b034e1220e8e96418918afc0580e0d5aff9e96b06d800c251ff71309"
     },
     "stay_gold": {
       "decision": "revise",
-      "status": "pending",
+      "status": "integrated",
       "reason": "Black-brown asymmetric shoulder hair, AMBER-GOLD eyes, fine gold leaf ear accessories, subtle white front mark. Replace violet eyes.",
       "portrait": "public/assets/portraits/stay_gold.png",
       "portraitSha256": "dba82eaa6db2161eedf966dd27c9071c0a09fe14c209aa41ab78ce45af4b1d5b",
       "baselineRuntimeSha256": "cb6cca2189f4de09e6a5d15fcf8f6bdf95c743e846bf9027a25f50dcc0f58f0c",
       "baselinePacking": "docs/art-source/motions/skill-revisions-2026-09-11/stay_gold/packing.json",
       "skillSignature": "d58ee4bff5943c07e9038e06458702b23924ac70a73a5ccb944c986fa01bdd63",
-      "name": "스테이 골드"
+      "name": "스테이 골드",
+      "revision": "docs/art-source/motions/identity-revisions-2026-09-12/stay_gold/review.json",
+      "runtimeSha256": "d7327cb272dfddf50f167f18fa456f8639ccd95a8d810153e9522a2c2a761b8e"
     },
     "red_desire": {
       "decision": "retain",
@@ -1513,14 +1599,16 @@
     },
     "logotype": {
       "decision": "revise",
-      "status": "pending",
+      "status": "integrated",
       "reason": "Black STRAIGHT SHOULDER-LENGTH layered hair, dark gray eyes, gold headband. Replace short bob.",
       "portrait": "public/assets/portraits/logotype.png",
       "portraitSha256": "695826b3297170fe61f0505f0c7de7aefb9af0f885060e2fd31fc7cb4839cf46",
       "baselineRuntimeSha256": "d417b61937d4ef075c3f0ead396d64592fc8a514367e9ab3ee66bd2b6c8491ab",
       "baselinePacking": "docs/art-source/motions/production-144/logotype/packing.json",
       "skillSignature": "603f420f2e8bd6d21de92c819d16afc0bcef60480ce02def9c4a9c41e76744e2",
-      "name": "로고타입"
+      "name": "로고타입",
+      "revision": "docs/art-source/motions/identity-revisions-2026-09-12/logotype/review.json",
+      "runtimeSha256": "a0b8d349c8eb745b9f61e7e2304557b156c5cf6f01a800a3603a0488835118b0"
     },
     "victoire_pisa": {
       "decision": "retain",

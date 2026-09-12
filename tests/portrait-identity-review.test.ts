@@ -43,10 +43,12 @@ it('accounts for every portrait and permits only explicitly approved complete id
       expect(packing.runtimeSha256).toBe(current);
       expect(entry.runtimeSha256).toBe(current);
       expect(current).not.toBe(entry.baselineRuntimeSha256);
+      const sourcePath = base + '/' + unit.id + '/generated.png';
+      const sourceHash = sha(readFileSync(sourcePath));
       for (let i = 0; i < 24; i++) {
         expect(packing.frames[i].sourceFrame).toBe(i);
-        expect(packing.frames[i].source).toBe(base + '/' + unit.id + '/generated.png');
-        expect(sha(readFileSync(packing.frames[i].source))).toBe(packing.frames[i].sourceSha256);
+        expect(packing.frames[i].source).toBe(sourcePath);
+        expect(sourceHash).toBe(packing.frames[i].sourceSha256);
       }
     } else {
       expect(entry.status).toBe(entry.decision === 'retain' ? 'retained' : 'pending');
@@ -55,4 +57,5 @@ it('accounts for every portrait and permits only explicitly approved complete id
   }
   expect(audit.targetCount).toBe(targets);
   expect(audit.integratedCount).toBe(integrated);
+  expect(integrated, 'Every selected identity revision must be integrated').toBe(targets);
 });

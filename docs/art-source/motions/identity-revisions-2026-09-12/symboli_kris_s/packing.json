@@ -1,0 +1,484 @@
+{
+  "format": "uft-baked-frames-v1",
+  "columns": 4,
+  "rows": 6,
+  "frameWidth": 128,
+  "frameHeight": 128,
+  "anchor": [
+    64,
+    110
+  ],
+  "scale": 0.4444444444444444,
+  "runtimeSha256": "cca6259b1bccec94666f1d0a4c213909a62290dfdacdce077ee30bbf7b567ba6",
+  "frames": [
+    {
+      "frame": 0,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/symboli_kris_s/generated.png",
+      "sourceSha256": "21b165950608a5275d4b0e002e9ba9157afe4b07964095484862f83d2a88f763",
+      "crop": [
+        22,
+        10,
+        212,
+        244
+      ],
+      "destination": [
+        22,
+        6,
+        84,
+        104
+      ]
+    },
+    {
+      "frame": 1,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/symboli_kris_s/generated.png",
+      "sourceSha256": "21b165950608a5275d4b0e002e9ba9157afe4b07964095484862f83d2a88f763",
+      "crop": [
+        281,
+        11,
+        476,
+        244
+      ],
+      "destination": [
+        148,
+        6,
+        87,
+        104
+      ]
+    },
+    {
+      "frame": 2,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/symboli_kris_s/generated.png",
+      "sourceSha256": "21b165950608a5275d4b0e002e9ba9157afe4b07964095484862f83d2a88f763",
+      "crop": [
+        565,
+        11,
+        763,
+        244
+      ],
+      "destination": [
+        276,
+        6,
+        88,
+        104
+      ]
+    },
+    {
+      "frame": 3,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/symboli_kris_s/generated.png",
+      "sourceSha256": "21b165950608a5275d4b0e002e9ba9157afe4b07964095484862f83d2a88f763",
+      "crop": [
+        825,
+        12,
+        1007,
+        244
+      ],
+      "destination": [
+        407,
+        7,
+        81,
+        103
+      ]
+    },
+    {
+      "frame": 4,
+      "sourceFrame": 4,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/symboli_kris_s/generated.png",
+      "sourceSha256": "21b165950608a5275d4b0e002e9ba9157afe4b07964095484862f83d2a88f763",
+      "crop": [
+        23,
+        291,
+        230,
+        508
+      ],
+      "destination": [
+        18,
+        142,
+        92,
+        96
+      ]
+    },
+    {
+      "frame": 5,
+      "sourceFrame": 5,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/symboli_kris_s/generated.png",
+      "sourceSha256": "21b165950608a5275d4b0e002e9ba9157afe4b07964095484862f83d2a88f763",
+      "crop": [
+        280,
+        292,
+        494,
+        507
+      ],
+      "destination": [
+        144,
+        142,
+        95,
+        96
+      ]
+    },
+    {
+      "frame": 6,
+      "sourceFrame": 6,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/symboli_kris_s/generated.png",
+      "sourceSha256": "21b165950608a5275d4b0e002e9ba9157afe4b07964095484862f83d2a88f763",
+      "crop": [
+        544,
+        293,
+        751,
+        508
+      ],
+      "destination": [
+        274,
+        142,
+        92,
+        96
+      ]
+    },
+    {
+      "frame": 7,
+      "sourceFrame": 7,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/symboli_kris_s/generated.png",
+      "sourceSha256": "21b165950608a5275d4b0e002e9ba9157afe4b07964095484862f83d2a88f763",
+      "crop": [
+        796,
+        292,
+        1003,
+        507
+      ],
+      "destination": [
+        402,
+        142,
+        92,
+        96
+      ]
+    },
+    {
+      "frame": 8,
+      "sourceFrame": 8,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/symboli_kris_s/generated.png",
+      "sourceSha256": "21b165950608a5275d4b0e002e9ba9157afe4b07964095484862f83d2a88f763",
+      "crop": [
+        18,
+        540,
+        218,
+        773
+      ],
+      "destination": [
+        19,
+        262,
+        89,
+        104
+      ]
+    },
+    {
+      "frame": 9,
+      "sourceFrame": 9,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/symboli_kris_s/generated.png",
+      "sourceSha256": "21b165950608a5275d4b0e002e9ba9157afe4b07964095484862f83d2a88f763",
+      "crop": [
+        271,
+        540,
+        494,
+        773
+      ],
+      "destination": [
+        142,
+        262,
+        99,
+        104
+      ]
+    },
+    {
+      "frame": 10,
+      "sourceFrame": 10,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/symboli_kris_s/generated.png",
+      "sourceSha256": "21b165950608a5275d4b0e002e9ba9157afe4b07964095484862f83d2a88f763",
+      "crop": [
+        537,
+        543,
+        766,
+        773
+      ],
+      "destination": [
+        269,
+        264,
+        102,
+        102
+      ]
+    },
+    {
+      "frame": 11,
+      "sourceFrame": 11,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/symboli_kris_s/generated.png",
+      "sourceSha256": "21b165950608a5275d4b0e002e9ba9157afe4b07964095484862f83d2a88f763",
+      "crop": [
+        804,
+        542,
+        1002,
+        772
+      ],
+      "destination": [
+        404,
+        264,
+        88,
+        102
+      ]
+    },
+    {
+      "frame": 12,
+      "sourceFrame": 12,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/symboli_kris_s/generated.png",
+      "sourceSha256": "21b165950608a5275d4b0e002e9ba9157afe4b07964095484862f83d2a88f763",
+      "crop": [
+        21,
+        816,
+        229,
+        1009
+      ],
+      "destination": [
+        18,
+        408,
+        92,
+        86
+      ]
+    },
+    {
+      "frame": 13,
+      "sourceFrame": 13,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/symboli_kris_s/generated.png",
+      "sourceSha256": "21b165950608a5275d4b0e002e9ba9157afe4b07964095484862f83d2a88f763",
+      "crop": [
+        277,
+        818,
+        489,
+        1008
+      ],
+      "destination": [
+        145,
+        410,
+        94,
+        84
+      ]
+    },
+    {
+      "frame": 14,
+      "sourceFrame": 14,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/symboli_kris_s/generated.png",
+      "sourceSha256": "21b165950608a5275d4b0e002e9ba9157afe4b07964095484862f83d2a88f763",
+      "crop": [
+        530,
+        856,
+        755,
+        1003
+      ],
+      "destination": [
+        270,
+        429,
+        100,
+        65
+      ]
+    },
+    {
+      "frame": 15,
+      "sourceFrame": 15,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/symboli_kris_s/generated.png",
+      "sourceSha256": "21b165950608a5275d4b0e002e9ba9157afe4b07964095484862f83d2a88f763",
+      "crop": [
+        798,
+        824,
+        1003,
+        1004
+      ],
+      "destination": [
+        402,
+        414,
+        91,
+        80
+      ]
+    },
+    {
+      "frame": 16,
+      "sourceFrame": 16,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/symboli_kris_s/generated.png",
+      "sourceSha256": "21b165950608a5275d4b0e002e9ba9157afe4b07964095484862f83d2a88f763",
+      "crop": [
+        28,
+        1053,
+        206,
+        1261
+      ],
+      "destination": [
+        24,
+        530,
+        79,
+        92
+      ]
+    },
+    {
+      "frame": 17,
+      "sourceFrame": 17,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/symboli_kris_s/generated.png",
+      "sourceSha256": "21b165950608a5275d4b0e002e9ba9157afe4b07964095484862f83d2a88f763",
+      "crop": [
+        294,
+        1075,
+        472,
+        1255
+      ],
+      "destination": [
+        152,
+        542,
+        79,
+        80
+      ]
+    },
+    {
+      "frame": 18,
+      "sourceFrame": 18,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/symboli_kris_s/generated.png",
+      "sourceSha256": "21b165950608a5275d4b0e002e9ba9157afe4b07964095484862f83d2a88f763",
+      "crop": [
+        550,
+        1081,
+        728,
+        1257
+      ],
+      "destination": [
+        280,
+        544,
+        79,
+        78
+      ]
+    },
+    {
+      "frame": 19,
+      "sourceFrame": 19,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/symboli_kris_s/generated.png",
+      "sourceSha256": "21b165950608a5275d4b0e002e9ba9157afe4b07964095484862f83d2a88f763",
+      "crop": [
+        793,
+        1157,
+        1007,
+        1259
+      ],
+      "destination": [
+        400,
+        577,
+        95,
+        45
+      ]
+    },
+    {
+      "frame": 20,
+      "sourceFrame": 20,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/symboli_kris_s/generated.png",
+      "sourceSha256": "21b165950608a5275d4b0e002e9ba9157afe4b07964095484862f83d2a88f763",
+      "crop": [
+        41,
+        1291,
+        204,
+        1520
+      ],
+      "destination": [
+        28,
+        648,
+        72,
+        102
+      ]
+    },
+    {
+      "frame": 21,
+      "sourceFrame": 21,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/symboli_kris_s/generated.png",
+      "sourceSha256": "21b165950608a5275d4b0e002e9ba9157afe4b07964095484862f83d2a88f763",
+      "crop": [
+        294,
+        1293,
+        462,
+        1519
+      ],
+      "destination": [
+        154,
+        650,
+        75,
+        100
+      ]
+    },
+    {
+      "frame": 22,
+      "sourceFrame": 22,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/symboli_kris_s/generated.png",
+      "sourceSha256": "21b165950608a5275d4b0e002e9ba9157afe4b07964095484862f83d2a88f763",
+      "crop": [
+        542,
+        1302,
+        733,
+        1519
+      ],
+      "destination": [
+        277,
+        654,
+        85,
+        96
+      ]
+    },
+    {
+      "frame": 23,
+      "sourceFrame": 23,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/symboli_kris_s/generated.png",
+      "sourceSha256": "21b165950608a5275d4b0e002e9ba9157afe4b07964095484862f83d2a88f763",
+      "crop": [
+        809,
+        1293,
+        989,
+        1521
+      ],
+      "destination": [
+        408,
+        649,
+        80,
+        101
+      ]
+    }
+  ],
+  "identityRevision": {
+    "review": "docs/art-source/motions/identity-revisions-2026-09-12/symboli_kris_s/review.json",
+    "baselineRuntimeSha256": "9c94fa49b69c5a498c19dad3554c55394c6bc88c3be00443139f67ed305bc8cd",
+    "previousPacking": "docs/art-source/motions/production-144/symboli_kris_s/packing.json",
+    "portrait": "public/assets/portraits/symboli_kris_s.png",
+    "portraitSha256": "f8b939dc38018ec43679c0c6a45f6afa3f9f4fcd210fbcadd7973f473f887427",
+    "changedFrames": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23
+    ],
+    "alpha": {
+      "transparentFraction": 0.6089346462717294,
+      "solidFraction": 0.30036868358273694
+    }
+  }
+}

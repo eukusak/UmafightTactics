@@ -1,0 +1,484 @@
+{
+  "format": "uft-baked-frames-v1",
+  "columns": 4,
+  "rows": 6,
+  "frameWidth": 128,
+  "frameHeight": 128,
+  "anchor": [
+    64,
+    110
+  ],
+  "scale": 0.41767068273092367,
+  "runtimeSha256": "ab408eac5aa3634aad569ed05da6177e0bb878b7c4b67d2122fadfbf041bd782",
+  "frames": [
+    {
+      "frame": 0,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/jungle_pocket/generated.png",
+      "sourceSha256": "51ff8a63dea4a8b2c33ce9aba6620c60d06044cb2f4e8abbc9f137b5667a2ca7",
+      "crop": [
+        51,
+        7,
+        216,
+        253
+      ],
+      "destination": [
+        29,
+        7,
+        69,
+        103
+      ]
+    },
+    {
+      "frame": 1,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/jungle_pocket/generated.png",
+      "sourceSha256": "51ff8a63dea4a8b2c33ce9aba6620c60d06044cb2f4e8abbc9f137b5667a2ca7",
+      "crop": [
+        302,
+        9,
+        474,
+        252
+      ],
+      "destination": [
+        156,
+        9,
+        72,
+        101
+      ]
+    },
+    {
+      "frame": 2,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/jungle_pocket/generated.png",
+      "sourceSha256": "51ff8a63dea4a8b2c33ce9aba6620c60d06044cb2f4e8abbc9f137b5667a2ca7",
+      "crop": [
+        566,
+        8,
+        727,
+        253
+      ],
+      "destination": [
+        286,
+        8,
+        67,
+        102
+      ]
+    },
+    {
+      "frame": 3,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/jungle_pocket/generated.png",
+      "sourceSha256": "51ff8a63dea4a8b2c33ce9aba6620c60d06044cb2f4e8abbc9f137b5667a2ca7",
+      "crop": [
+        819,
+        8,
+        977,
+        253
+      ],
+      "destination": [
+        415,
+        8,
+        66,
+        102
+      ]
+    },
+    {
+      "frame": 4,
+      "sourceFrame": 4,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/jungle_pocket/generated.png",
+      "sourceSha256": "51ff8a63dea4a8b2c33ce9aba6620c60d06044cb2f4e8abbc9f137b5667a2ca7",
+      "crop": [
+        30,
+        266,
+        226,
+        515
+      ],
+      "destination": [
+        23,
+        134,
+        82,
+        104
+      ]
+    },
+    {
+      "frame": 5,
+      "sourceFrame": 5,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/jungle_pocket/generated.png",
+      "sourceSha256": "51ff8a63dea4a8b2c33ce9aba6620c60d06044cb2f4e8abbc9f137b5667a2ca7",
+      "crop": [
+        293,
+        271,
+        486,
+        513
+      ],
+      "destination": [
+        151,
+        137,
+        81,
+        101
+      ]
+    },
+    {
+      "frame": 6,
+      "sourceFrame": 6,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/jungle_pocket/generated.png",
+      "sourceSha256": "51ff8a63dea4a8b2c33ce9aba6620c60d06044cb2f4e8abbc9f137b5667a2ca7",
+      "crop": [
+        543,
+        268,
+        743,
+        517
+      ],
+      "destination": [
+        278,
+        134,
+        84,
+        104
+      ]
+    },
+    {
+      "frame": 7,
+      "sourceFrame": 7,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/jungle_pocket/generated.png",
+      "sourceSha256": "51ff8a63dea4a8b2c33ce9aba6620c60d06044cb2f4e8abbc9f137b5667a2ca7",
+      "crop": [
+        798,
+        269,
+        995,
+        517
+      ],
+      "destination": [
+        407,
+        134,
+        82,
+        104
+      ]
+    },
+    {
+      "frame": 8,
+      "sourceFrame": 8,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/jungle_pocket/generated.png",
+      "sourceSha256": "51ff8a63dea4a8b2c33ce9aba6620c60d06044cb2f4e8abbc9f137b5667a2ca7",
+      "crop": [
+        41,
+        524,
+        224,
+        766
+      ],
+      "destination": [
+        26,
+        265,
+        76,
+        101
+      ]
+    },
+    {
+      "frame": 9,
+      "sourceFrame": 9,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/jungle_pocket/generated.png",
+      "sourceSha256": "51ff8a63dea4a8b2c33ce9aba6620c60d06044cb2f4e8abbc9f137b5667a2ca7",
+      "crop": [
+        299,
+        525,
+        471,
+        767
+      ],
+      "destination": [
+        156,
+        265,
+        72,
+        101
+      ]
+    },
+    {
+      "frame": 10,
+      "sourceFrame": 10,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/jungle_pocket/generated.png",
+      "sourceSha256": "51ff8a63dea4a8b2c33ce9aba6620c60d06044cb2f4e8abbc9f137b5667a2ca7",
+      "crop": [
+        543,
+        525,
+        751,
+        768
+      ],
+      "destination": [
+        276,
+        265,
+        87,
+        101
+      ]
+    },
+    {
+      "frame": 11,
+      "sourceFrame": 11,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/jungle_pocket/generated.png",
+      "sourceSha256": "51ff8a63dea4a8b2c33ce9aba6620c60d06044cb2f4e8abbc9f137b5667a2ca7",
+      "crop": [
+        811,
+        525,
+        987,
+        768
+      ],
+      "destination": [
+        411,
+        265,
+        74,
+        101
+      ]
+    },
+    {
+      "frame": 12,
+      "sourceFrame": 12,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/jungle_pocket/generated.png",
+      "sourceSha256": "51ff8a63dea4a8b2c33ce9aba6620c60d06044cb2f4e8abbc9f137b5667a2ca7",
+      "crop": [
+        43,
+        775,
+        224,
+        1024
+      ],
+      "destination": [
+        26,
+        390,
+        76,
+        104
+      ]
+    },
+    {
+      "frame": 13,
+      "sourceFrame": 13,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/jungle_pocket/generated.png",
+      "sourceSha256": "51ff8a63dea4a8b2c33ce9aba6620c60d06044cb2f4e8abbc9f137b5667a2ca7",
+      "crop": [
+        301,
+        779,
+        481,
+        1025
+      ],
+      "destination": [
+        154,
+        391,
+        75,
+        103
+      ]
+    },
+    {
+      "frame": 14,
+      "sourceFrame": 14,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/jungle_pocket/generated.png",
+      "sourceSha256": "51ff8a63dea4a8b2c33ce9aba6620c60d06044cb2f4e8abbc9f137b5667a2ca7",
+      "crop": [
+        552,
+        779,
+        751,
+        1025
+      ],
+      "destination": [
+        278,
+        391,
+        83,
+        103
+      ]
+    },
+    {
+      "frame": 15,
+      "sourceFrame": 15,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/jungle_pocket/generated.png",
+      "sourceSha256": "51ff8a63dea4a8b2c33ce9aba6620c60d06044cb2f4e8abbc9f137b5667a2ca7",
+      "crop": [
+        815,
+        776,
+        993,
+        1025
+      ],
+      "destination": [
+        411,
+        390,
+        74,
+        104
+      ]
+    },
+    {
+      "frame": 16,
+      "sourceFrame": 16,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/jungle_pocket/generated.png",
+      "sourceSha256": "51ff8a63dea4a8b2c33ce9aba6620c60d06044cb2f4e8abbc9f137b5667a2ca7",
+      "crop": [
+        40,
+        1050,
+        223,
+        1255
+      ],
+      "destination": [
+        26,
+        536,
+        76,
+        86
+      ]
+    },
+    {
+      "frame": 17,
+      "sourceFrame": 17,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/jungle_pocket/generated.png",
+      "sourceSha256": "51ff8a63dea4a8b2c33ce9aba6620c60d06044cb2f4e8abbc9f137b5667a2ca7",
+      "crop": [
+        298,
+        1068,
+        485,
+        1257
+      ],
+      "destination": [
+        153,
+        543,
+        78,
+        79
+      ]
+    },
+    {
+      "frame": 18,
+      "sourceFrame": 18,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/jungle_pocket/generated.png",
+      "sourceSha256": "51ff8a63dea4a8b2c33ce9aba6620c60d06044cb2f4e8abbc9f137b5667a2ca7",
+      "crop": [
+        528,
+        1092,
+        746,
+        1257
+      ],
+      "destination": [
+        274,
+        553,
+        91,
+        69
+      ]
+    },
+    {
+      "frame": 19,
+      "sourceFrame": 19,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/jungle_pocket/generated.png",
+      "sourceSha256": "51ff8a63dea4a8b2c33ce9aba6620c60d06044cb2f4e8abbc9f137b5667a2ca7",
+      "crop": [
+        783,
+        1135,
+        1013,
+        1266
+      ],
+      "destination": [
+        400,
+        567,
+        96,
+        55
+      ]
+    },
+    {
+      "frame": 20,
+      "sourceFrame": 20,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/jungle_pocket/generated.png",
+      "sourceSha256": "51ff8a63dea4a8b2c33ce9aba6620c60d06044cb2f4e8abbc9f137b5667a2ca7",
+      "crop": [
+        47,
+        1274,
+        222,
+        1519
+      ],
+      "destination": [
+        27,
+        648,
+        73,
+        102
+      ]
+    },
+    {
+      "frame": 21,
+      "sourceFrame": 21,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/jungle_pocket/generated.png",
+      "sourceSha256": "51ff8a63dea4a8b2c33ce9aba6620c60d06044cb2f4e8abbc9f137b5667a2ca7",
+      "crop": [
+        315,
+        1274,
+        483,
+        1507
+      ],
+      "destination": [
+        157,
+        653,
+        70,
+        97
+      ]
+    },
+    {
+      "frame": 22,
+      "sourceFrame": 22,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/jungle_pocket/generated.png",
+      "sourceSha256": "51ff8a63dea4a8b2c33ce9aba6620c60d06044cb2f4e8abbc9f137b5667a2ca7",
+      "crop": [
+        565,
+        1274,
+        722,
+        1521
+      ],
+      "destination": [
+        287,
+        647,
+        66,
+        103
+      ]
+    },
+    {
+      "frame": 23,
+      "sourceFrame": 23,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/jungle_pocket/generated.png",
+      "sourceSha256": "51ff8a63dea4a8b2c33ce9aba6620c60d06044cb2f4e8abbc9f137b5667a2ca7",
+      "crop": [
+        821,
+        1278,
+        979,
+        1519
+      ],
+      "destination": [
+        415,
+        649,
+        66,
+        101
+      ]
+    }
+  ],
+  "identityRevision": {
+    "review": "docs/art-source/motions/identity-revisions-2026-09-12/jungle_pocket/review.json",
+    "baselineRuntimeSha256": "922391836cb7b959e5e2533fa7d15014366e3e7cc3919d15efe68dc4ed12081e",
+    "previousPacking": "docs/art-source/motions/production-144/jungle_pocket/packing.json",
+    "portrait": "public/assets/portraits/jungle_pocket.png",
+    "portraitSha256": "f995bdc6e8a79937bccade12fa13e945550cd0f772c9c8a3ad57977183d99028",
+    "changedFrames": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23
+    ],
+    "alpha": {
+      "transparentFraction": 0.5611464182535807,
+      "solidFraction": 0.31618372599283856
+    }
+  }
+}

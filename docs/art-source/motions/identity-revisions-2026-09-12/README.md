@@ -1,6 +1,6 @@
 # 초상화·기물 외형 전체 검토
 
-145명 대조: **54명 수정 대상 / 91명 유지 / 10명 실제 이미지 반영**. 완료 전까지 Draft PR입니다.
+145명 대조: **54명 수정 대상 / 91명 유지 / 54명 실제 이미지 반영**. 완료 전까지 Draft PR입니다.
 
 초상화를 외형 기준으로 삼고 수정 대상의 24프레임(대기·이동·공격·스킬·쓰러짐·승리)을 교체합니다. 스킬 데이터와 발동 타이밍은 유지합니다.
 
@@ -22,50 +22,50 @@ PR12는 병합되었으며 PR13의 초기 커밋에는 명단 README만 있었�
 | 이나리 원 | inari_one | Brown hair in TWO wild outward ponytails, turquoise eyes, side fox mask, yellow ties. NO generic white forelock or bob. | integrated |
 | 카렌짱 | curren_chan | Silver-white fluffy layered bob with flipped ends, violet eyes, red bow. Replace flat bob and red eyes. | integrated |
 | 카와카미 프린세스 | kawakami_princess | Rose-chestnut long wavy hair with crown braid on the side, BLUE eyes, jeweled tiara. Preserve the visible braided hairline. | integrated |
-| 골드 시티 | gold_city | Long wavy blonde hair with PINK TIPS, blue eyes, blue ear bow. Replace orange short bob. | pending |
-| 스마트 팔콘 | smart_falcon | Light brown hair in TWO short rounded side ponytails with pink ribbons, amber eyes. Replace the bob. | pending |
-| 젠노 롭 로이 | zenno_rob_roy | Dark purple hair with a LONG BRAID over one shoulder, round blue glasses, blue eyes. Replace the bob. | pending |
-| 나리타 타이신 | narita_taishin | Light taupe-brown short tousled bob, BLUE eyes, yellow ear ribbon. No white forelock. | pending |
-| 뱀부 메모리 | bamboo_memory | Reddish brown short spiky tousled hair, blue eyes, GREEN HEADBAND. No white forelock. | pending |
-| 비코 페가수스 | biko_pegasus | Golden-orange brown short spiky hair, bright blue eyes, blue-white ear ornament, red scarf. No white forelock or purple eyes. | pending |
-| 메이쇼 도토 | meisho_doto | Brown rounded WAVY bob, broad pink-white front streak, floppy ears, loop ahoge, violet eyes. Replace straight generic bob. | pending |
-| 나이스 네이처 | nice_nature | Red-brown CURLY TWIN PONYTAILS, green bows, muted green eyes. Replace the plain bob. | pending |
-| 마치카네 탄호이저 | matikanetannhauser | Muted ash-brown LONG WAVY hair, amber-gold eyes, blue-white hat and maroon ribbon. Replace short bob and violet eyes. | pending |
-| 메지로 파머 | mejiro_palmer | Brown long wavy side ponytail/half-up hair, blue eyes, little yellow clip. Replace short bob. | pending |
-| 사쿠라 치요노 오 | sakura_chiyono_o | Reddish pink fluffy shoulder-length bob with spiky ends, BLUE eyes, white ear covers with pink flowers. | pending |
-| 야에노 무테키 | yaeno_muteki | Brown short tousled hair, SMALL WHITE CENTRAL forehead patch, red-orange eyes, large red flower ornament. Replace long diagonal white stripe. | pending |
-| 츠루마루 츠요시 | tsurumaru_tsuyoshi | Soft brown shoulder-length layered hair, violet eyes, small gold clips. NO white stripe. | pending |
-| 데어링 택트 | daring_tact | Dark brown LONG WAVY half-up braided hair, blue eyes, blue-white bow behind. NO white forelock. | pending |
-| 사쿠라 로렐 | sakura_laurel | Warm red-brown soft short bob, pink-violet eyes, small gold-pink ear ribbon. NO white forelock. | pending |
-| 야마닌 제퍼 | yamanin_zephyr | Muted mauve-brown LONG FLOWING WAVY hair, broad soft white central front lock, warm brown-gold eyes, red flower headband. | pending |
-| 푸리오소 | furioso | Warm orange HIGH SIDE PONYTAIL, short blunt fringe, white patch on ONE EAR (not forehead), golden eyes, blue bandana. | pending |
-| 트랜센드 | transcend | Orange-chestnut straight CHIN-LENGTH BOB with blunt fringe, pink-red eyes, small red ear ribbon. NO white forelock. | pending |
-| 노스 플라이트 | north_flight | Orange-brown wavy shoulder hair with golden ends, pink-violet eyes, magenta hat with white feathers. NO white forelock. | pending |
-| 심볼리 크리스 에스 | symboli_kris_s | Dark black-brown very long HIGH PONYTAIL, TAN SKIN, bright BLUE eyes, blue hair tie. | pending |
-| 타니노 김렛 | tanino_gimlet | Burgundy short tousled bob, BLACK EYEPATCH over one eye, visible GOLDEN eye, white patch in bangs. Keep the eyepatch. | pending |
-| 다이이치 루비 | daiichi_ruby | Dark brown long hair with TWO LARGE SPIRAL RINGLETS framing the cheeks, pink-red eyes, large red bow and pink flower. Replace plain straight front locks. | pending |
-| 애스턴 마짱 | aston_machan | Orange-brown WAVY BOB with small side ponytail, GREEN eyes, tiny crown. Replace straight bob and brown eyes. | pending |
-| 사토노 크라운 | satono_crown | Black long CURLY HIGH PONYTAIL, GREEN eyes, silver bow. Replace short dark bob. | pending |
-| 단츠 플레임 | dantsu_flame | Chestnut short WAVY bob and side ponytail with green ribbon, gold-brown eyes. Replace bright red hair/red eyes. | pending |
-| 케이에스 미라클 | ks_miracle | Light blue smooth ASYMMETRIC BOB HIDING ONE EYE, blue visible eye, yellow ear covers and blue bow. | pending |
-| 정글 포켓 | jungle_pocket | Golden brown wild WAVY hair, HORIZONTAL PALE HEADBAND across bangs, yellow-green eyes. Replace generic white forelock. | pending |
-| 노 리즌 | no_reason | Dark brown LONG SHAGGY LAYERED hair, green eyes, RED HEADBAND. No large white forelock. | pending |
-| 코파노 리키 | copano_rickey | Golden light brown long hair with TWO ROUNDED SIDE BUNS, broad central white forelock, pink eyes, red-gold ornaments. | pending |
-| 홋코 타루마에 | hokko_tarumae | Dark brown TWO THICK BRAIDS, BLUE eyes, white cap, turquoise ear covers. Replace generic white streak and violet eyes. | pending |
-| 원더 어큐트 | wonder_acute | Silver-gray soft long layered WAVY hair, LIGHT BLUE eyes, red-white-blue ear bow. Replace violet eyes. | pending |
-| 삼손 빅 | samson_big | Reddish brown long layered hair, GREEN eyes, cyan-pink beanie. Replace blue eyes. | pending |
-| 사운즈 오브 어스 | sounds_of_earth | Brown wavy shoulder-length hair, BLUE eyes, blue feather ornament. NO white forelock. | pending |
-| 로이스 앤 로이스 | royce_and_royce | Brown side-braided bun and long straight locks, GREEN-FRAME GLASSES and green eyes, purple ribbon. No white forelock. | pending |
-| 카츠라기 에이스 | katsuragi_ace | Black SPIKY SHOULDER HAIR with BLUE ENDS, white forehead tuft, BLUE eyes, white ear covers and red ties. | pending |
-| 히시 미라클 | hishi_miracle | Silver WAVY SHOULDER BOB, TEAL-GREEN eyes, white-blue ear covers and yellow bow. | pending |
-| 탭 댄스 시티 | tap_dance_city | Dark brown SHORT CURLY WAVY BOB, violet eyes, red-blue braided ear ornament. Replace long straight ponytail. | pending |
-| 두라멘테 | duramente | Dark brown very long straight layered hair, SMALL WHITE COMMA forehead mark, BLUE eyes, gold hair accessory. Replace reddish ombre and violet eyes. | pending |
-| 세자리오 | cesario | Dark blue smooth short bob, CENTRAL VERTICAL WHITE FORELOCK, HETEROCHROMIA: viewer-left eye lavender and viewer-right eye gold. | pending |
-| 부에나 비스타 | buena_vista | Dark red-brown shoulder-length straight bob, PINK eyes, gold headband/ear covers. Replace long red hair and cyan eyes. | pending |
-| 사쿠라 치토세 오 | sakura_chitose_o | Plum-brown soft bob with ONE LONG THICK SIDE BRAID, pink-violet eyes, pink blossom ear decorations. Replace loose straight side hair. | pending |
-| 카렌 부케도르 | curren_bouquetdor | Brown hair with TWO THICK FRONT BRAIDS, violet eyes, broad white forehead curl, white headband and floral ear ornament. Replace plain short bob. | pending |
-| 스테이 골드 | stay_gold | Black-brown asymmetric shoulder hair, AMBER-GOLD eyes, fine gold leaf ear accessories, subtle white front mark. Replace violet eyes. | pending |
-| 로고타입 | logotype | Black STRAIGHT SHOULDER-LENGTH layered hair, dark gray eyes, gold headband. Replace short bob. | pending |
+| 골드 시티 | gold_city | Long wavy blonde hair with PINK TIPS, blue eyes, blue ear bow. Replace orange short bob. | integrated |
+| 스마트 팔콘 | smart_falcon | Light brown hair in TWO short rounded side ponytails with pink ribbons, amber eyes. Replace the bob. | integrated |
+| 젠노 롭 로이 | zenno_rob_roy | Dark purple hair with a LONG BRAID over one shoulder, round blue glasses, blue eyes. Replace the bob. | integrated |
+| 나리타 타이신 | narita_taishin | Light taupe-brown short tousled bob, BLUE eyes, yellow ear ribbon. No white forelock. | integrated |
+| 뱀부 메모리 | bamboo_memory | Reddish brown short spiky tousled hair, blue eyes, GREEN HEADBAND. No white forelock. | integrated |
+| 비코 페가수스 | biko_pegasus | Golden-orange brown short spiky hair, bright blue eyes, blue-white ear ornament, red scarf. No white forelock or purple eyes. | integrated |
+| 메이쇼 도토 | meisho_doto | Brown rounded WAVY bob, broad pink-white front streak, floppy ears, loop ahoge, violet eyes. Replace straight generic bob. | integrated |
+| 나이스 네이처 | nice_nature | Red-brown CURLY TWIN PONYTAILS, green bows, muted green eyes. Replace the plain bob. | integrated |
+| 마치카네 탄호이저 | matikanetannhauser | Muted ash-brown LONG WAVY hair, amber-gold eyes, blue-white hat and maroon ribbon. Replace short bob and violet eyes. | integrated |
+| 메지로 파머 | mejiro_palmer | Brown long wavy side ponytail/half-up hair, blue eyes, little yellow clip. Replace short bob. | integrated |
+| 사쿠라 치요노 오 | sakura_chiyono_o | Reddish pink fluffy shoulder-length bob with spiky ends, BLUE eyes, white ear covers with pink flowers. | integrated |
+| 야에노 무테키 | yaeno_muteki | Brown short tousled hair, SMALL WHITE CENTRAL forehead patch, red-orange eyes, large red flower ornament. Replace long diagonal white stripe. | integrated |
+| 츠루마루 츠요시 | tsurumaru_tsuyoshi | Soft brown shoulder-length layered hair, violet eyes, small gold clips. NO white stripe. | integrated |
+| 데어링 택트 | daring_tact | Dark brown LONG WAVY half-up braided hair, blue eyes, blue-white bow behind. NO white forelock. | integrated |
+| 사쿠라 로렐 | sakura_laurel | Warm red-brown soft short bob, pink-violet eyes, small gold-pink ear ribbon. NO white forelock. | integrated |
+| 야마닌 제퍼 | yamanin_zephyr | Muted mauve-brown LONG FLOWING WAVY hair, broad soft white central front lock, warm brown-gold eyes, red flower headband. | integrated |
+| 푸리오소 | furioso | Warm orange HIGH SIDE PONYTAIL, short blunt fringe, white patch on ONE EAR (not forehead), golden eyes, blue bandana. | integrated |
+| 트랜센드 | transcend | Orange-chestnut straight CHIN-LENGTH BOB with blunt fringe, pink-red eyes, small red ear ribbon. NO white forelock. | integrated |
+| 노스 플라이트 | north_flight | Orange-brown wavy shoulder hair with golden ends, pink-violet eyes, magenta hat with white feathers. NO white forelock. | integrated |
+| 심볼리 크리스 에스 | symboli_kris_s | Dark black-brown very long HIGH PONYTAIL, TAN SKIN, bright BLUE eyes, blue hair tie. | integrated |
+| 타니노 김렛 | tanino_gimlet | Burgundy short tousled bob, BLACK EYEPATCH over one eye, visible GOLDEN eye, white patch in bangs. Keep the eyepatch. | integrated |
+| 다이이치 루비 | daiichi_ruby | Dark brown long hair with TWO LARGE SPIRAL RINGLETS framing the cheeks, pink-red eyes, large red bow and pink flower. Replace plain straight front locks. | integrated |
+| 애스턴 마짱 | aston_machan | Orange-brown WAVY BOB with small side ponytail, GREEN eyes, tiny crown. Replace straight bob and brown eyes. | integrated |
+| 사토노 크라운 | satono_crown | Black long CURLY HIGH PONYTAIL, GREEN eyes, silver bow. Replace short dark bob. | integrated |
+| 단츠 플레임 | dantsu_flame | Chestnut short WAVY bob and side ponytail with green ribbon, gold-brown eyes. Replace bright red hair/red eyes. | integrated |
+| 케이에스 미라클 | ks_miracle | Light blue smooth ASYMMETRIC BOB HIDING ONE EYE, blue visible eye, yellow ear covers and blue bow. | integrated |
+| 정글 포켓 | jungle_pocket | Golden brown wild WAVY hair, HORIZONTAL PALE HEADBAND across bangs, yellow-green eyes. Replace generic white forelock. | integrated |
+| 노 리즌 | no_reason | Dark brown LONG SHAGGY LAYERED hair, green eyes, RED HEADBAND. No large white forelock. | integrated |
+| 코파노 리키 | copano_rickey | Golden light brown long hair with TWO ROUNDED SIDE BUNS, broad central white forelock, pink eyes, red-gold ornaments. | integrated |
+| 홋코 타루마에 | hokko_tarumae | Dark brown TWO THICK BRAIDS, BLUE eyes, white cap, turquoise ear covers. Replace generic white streak and violet eyes. | integrated |
+| 원더 어큐트 | wonder_acute | Silver-gray soft long layered WAVY hair, LIGHT BLUE eyes, red-white-blue ear bow. Replace violet eyes. | integrated |
+| 삼손 빅 | samson_big | Reddish brown long layered hair, GREEN eyes, cyan-pink beanie. Replace blue eyes. | integrated |
+| 사운즈 오브 어스 | sounds_of_earth | Brown wavy shoulder-length hair, BLUE eyes, blue feather ornament. NO white forelock. | integrated |
+| 로이스 앤 로이스 | royce_and_royce | Brown side-braided bun and long straight locks, GREEN-FRAME GLASSES and green eyes, purple ribbon. No white forelock. | integrated |
+| 카츠라기 에이스 | katsuragi_ace | Black SPIKY SHOULDER HAIR with BLUE ENDS, white forehead tuft, BLUE eyes, white ear covers and red ties. | integrated |
+| 히시 미라클 | hishi_miracle | Silver WAVY SHOULDER BOB, TEAL-GREEN eyes, white-blue ear covers and yellow bow. | integrated |
+| 탭 댄스 시티 | tap_dance_city | Dark brown SHORT CURLY WAVY BOB, violet eyes, red-blue braided ear ornament. Replace long straight ponytail. | integrated |
+| 두라멘테 | duramente | Dark brown very long straight layered hair, SMALL WHITE COMMA forehead mark, BLUE eyes, gold hair accessory. Replace reddish ombre and violet eyes. | integrated |
+| 세자리오 | cesario | Dark blue smooth short bob, CENTRAL VERTICAL WHITE FORELOCK, HETEROCHROMIA: viewer-left eye lavender and viewer-right eye gold. | integrated |
+| 부에나 비스타 | buena_vista | Dark red-brown shoulder-length straight bob, PINK eyes, gold headband/ear covers. Replace long red hair and cyan eyes. | integrated |
+| 사쿠라 치토세 오 | sakura_chitose_o | Plum-brown soft bob with ONE LONG THICK SIDE BRAID, pink-violet eyes, pink blossom ear decorations. Replace loose straight side hair. | integrated |
+| 카렌 부케도르 | curren_bouquetdor | Brown hair with TWO THICK FRONT BRAIDS, violet eyes, broad white forehead curl, white headband and floral ear ornament. Replace plain short bob. | integrated |
+| 스테이 골드 | stay_gold | Black-brown asymmetric shoulder hair, AMBER-GOLD eyes, fine gold leaf ear accessories, subtle white front mark. Replace violet eyes. | integrated |
+| 로고타입 | logotype | Black STRAIGHT SHOULDER-LENGTH layered hair, dark gray eyes, gold headband. Replace short bob. | integrated |
 
 ## 유지 대상 91명
 

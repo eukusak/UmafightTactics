@@ -2743,7 +2743,7 @@
       ],
       "productionRule": "이 초안은 제작 완료가 아니다. 원본 -Race.png의 의상·머리·장식과 이 캐릭터의 실제 효과/대상/이동을 함께 검토하여 개별 원화를 생성하고 검수한다. 존재하지 않는 치유·소환·무기를 추가하지 않는다.",
       "status": "REVIEWED_FRAMES",
-      "reviewedPoses": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현."
+      "reviewedPoses": "All six action rows reviewed. Row 4 preserves disarm_cone preparation, release in column 3 and recovery; game skill data and timeline unchanged."
     },
     {
       "id": "sakura_bakushin_o",
@@ -3167,7 +3167,7 @@
       ],
       "productionRule": "이 초안은 제작 완료가 아니다. 원본 -Race.png의 의상·머리·장식과 이 캐릭터의 실제 효과/대상/이동을 함께 검토하여 개별 원화를 생성하고 검수한다. 존재하지 않는 치유·소환·무기를 추가하지 않는다.",
       "status": "REVIEWED_FRAMES",
-      "reviewedPoses": "cup a small ember; bend and sweep a hand down to plant a compact flame seal; keep palm low maintaining three small pulses above the seal; rise and return hand to chest"
+      "reviewedPoses": "All six action rows reviewed. Row 4 preserves cinder_field preparation, release in column 3 and recovery; game skill data and timeline unchanged."
     },
     {
       "id": "zenno_rob_roy",
@@ -3234,7 +3234,7 @@
       ],
       "productionRule": "이 초안은 제작 완료가 아니다. 원본 -Race.png의 의상·머리·장식과 이 캐릭터의 실제 효과/대상/이동을 함께 검토하여 개별 원화를 생성하고 검수한다. 존재하지 않는 치유·소환·무기를 추가하지 않는다.",
       "status": "REVIEWED_FRAMES",
-      "reviewedPoses": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현."
+      "reviewedPoses": "All six action rows reviewed. Row 4 preserves challenge_bastion preparation, release in column 3 and recovery; game skill data and timeline unchanged."
     },
     {
       "id": "tosen_jordan",
@@ -3454,7 +3454,7 @@
       ],
       "productionRule": "이 초안은 제작 완료가 아니다. 원본 -Race.png의 의상·머리·장식과 이 캐릭터의 실제 효과/대상/이동을 함께 검토하여 개별 원화를 생성하고 검수한다. 존재하지 않는 치유·소환·무기를 추가하지 않는다.",
       "status": "REVIEWED_FRAMES",
-      "reviewedPoses": "launch forward from low crouch; plant the lead foot and deliver a jab; twist into a rising follow-up strike with three short impact accents; recoil into a ready guard"
+      "reviewedPoses": "All six action rows reviewed. Row 4 preserves pursuit_flurry preparation, release in column 3 and recovery; game skill data and timeline unchanged."
     },
     {
       "id": "nishino_flower",
@@ -3671,7 +3671,7 @@
       ],
       "productionRule": "이 초안은 제작 완료가 아니다. 원본 -Race.png의 의상·머리·장식과 이 캐릭터의 실제 효과/대상/이동을 함께 검토하여 개별 원화를 생성하고 검수한다. 존재하지 않는 치유·소환·무기를 추가하지 않는다.",
       "status": "REVIEWED_FRAMES",
-      "reviewedPoses": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현."
+      "reviewedPoses": "All six action rows reviewed. Row 4 preserves disarm_cone preparation, release in column 3 and recovery; game skill data and timeline unchanged."
     },
     {
       "id": "biko_pegasus",
@@ -3746,7 +3746,7 @@
       ],
       "productionRule": "이 초안은 제작 완료가 아니다. 원본 -Race.png의 의상·머리·장식과 이 캐릭터의 실제 효과/대상/이동을 함께 검토하여 개별 원화를 생성하고 검수한다. 존재하지 않는 치유·소환·무기를 추가하지 않는다.",
       "status": "REVIEWED_FRAMES",
-      "reviewedPoses": "hold hands apart outlining a tiny open seal; spread palms to set two open curved seal brackets; snap hands together closing the brackets into a compact lock; release hands and let the closed seal fade"
+      "reviewedPoses": "All six action rows reviewed. Row 4 preserves delayed_prison preparation, release in column 3 and recovery; game skill data and timeline unchanged."
     },
     {
       "id": "marvelous_sunday",
@@ -4022,7 +4022,7 @@
       ],
       "productionRule": "이 초안은 제작 완료가 아니다. 원본 -Race.png의 의상·머리·장식과 이 캐릭터의 실제 효과/대상/이동을 함께 검토하여 개별 원화를 생성하고 검수한다. 존재하지 않는 치유·소환·무기를 추가하지 않는다.",
       "status": "REVIEWED_FRAMES",
-      "reviewedPoses": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현."
+      "reviewedPoses": "All six action rows reviewed. Row 4 preserves sanctuary preparation, release in column 3 and recovery; game skill data and timeline unchanged."
     },
     {
       "id": "mejiro_dober",
@@ -4160,7 +4160,7 @@
       ],
       "productionRule": "이 초안은 제작 완료가 아니다. 원본 -Race.png의 의상·머리·장식과 이 캐릭터의 실제 효과/대상/이동을 함께 검토하여 개별 원화를 생성하고 검수한다. 존재하지 않는 치유·소환·무기를 추가하지 않는다.",
       "status": "REVIEWED_FRAMES",
-      "reviewedPoses": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현."
+      "reviewedPoses": "All six action rows reviewed. Row 4 preserves silence_zone preparation, release in column 3 and recovery; game skill data and timeline unchanged."
     },
     {
       "id": "king_halo",
@@ -4288,7 +4288,7 @@
       ],
       "productionRule": "이 초안은 제작 완료가 아니다. 원본 -Race.png의 의상·머리·장식과 이 캐릭터의 실제 효과/대상/이동을 함께 검토하여 개별 원화를 생성하고 검수한다. 존재하지 않는 치유·소환·무기를 추가하지 않는다.",
       "status": "REVIEWED_FRAMES",
-      "reviewedPoses": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현."
+      "reviewedPoses": "All six action rows reviewed. Row 4 preserves draining_tether preparation, release in column 3 and recovery; game skill data and timeline unchanged."
     },
     {
       "id": "ikuno_dictus",
@@ -4422,7 +4422,7 @@
       ],
       "productionRule": "이 초안은 제작 완료가 아니다. 원본 -Race.png의 의상·머리·장식과 이 캐릭터의 실제 효과/대상/이동을 함께 검토하여 개별 원화를 생성하고 검수한다. 존재하지 않는 치유·소환·무기를 추가하지 않는다.",
       "status": "REVIEWED_FRAMES",
-      "reviewedPoses": "clench hands at the heart gathering a small crest; bend knees and brace forearms as one armor ring forms; straighten in a planted stance as three close armor plates stack around the torso; settle with a compact guard still held"
+      "reviewedPoses": "All six action rows reviewed. Row 4 preserves bastion_growth preparation, release in column 3 and recovery; game skill data and timeline unchanged."
     },
     {
       "id": "daitaku_helios",
@@ -4759,7 +4759,7 @@
       ],
       "productionRule": "이 초안은 제작 완료가 아니다. 원본 -Race.png의 의상·머리·장식과 이 캐릭터의 실제 효과/대상/이동을 함께 검토하여 개별 원화를 생성하고 검수한다. 존재하지 않는 치유·소환·무기를 추가하지 않는다.",
       "status": "REVIEWED_FRAMES",
-      "reviewedPoses": "crouch and cross forearms preparing to dash; drive forward with hair streaming; land and uncross both arms releasing a short straight trailing wave in the same direction; draw arms back into ready stance"
+      "reviewedPoses": "All six action rows reviewed. Row 4 preserves crossing_echo preparation, release in column 3 and recovery; game skill data and timeline unchanged."
     },
     {
       "id": "sirius_symboli",
@@ -4973,7 +4973,7 @@
       ],
       "productionRule": "이 초안은 제작 완료가 아니다. 원본 -Race.png의 의상·머리·장식과 이 캐릭터의 실제 효과/대상/이동을 함께 검토하여 개별 원화를 생성하고 검수한다. 존재하지 않는 치유·소환·무기를 추가하지 않는다.",
       "status": "REVIEWED_FRAMES",
-      "reviewedPoses": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현."
+      "reviewedPoses": "All six action rows reviewed. Row 4 preserves power_link preparation, release in column 3 and recovery; game skill data and timeline unchanged."
     },
     {
       "id": "tsurumaru_tsuyoshi",
@@ -5048,7 +5048,7 @@
       ],
       "productionRule": "이 초안은 제작 완료가 아니다. 원본 -Race.png의 의상·머리·장식과 이 캐릭터의 실제 효과/대상/이동을 함께 검토하여 개별 원화를 생성하고 검수한다. 존재하지 않는 치유·소환·무기를 추가하지 않는다.",
       "status": "REVIEWED_FRAMES",
-      "reviewedPoses": "hold hands apart outlining a tiny open seal; spread palms to set two open curved seal brackets; snap hands together closing the brackets into a compact lock; release hands and let the closed seal fade"
+      "reviewedPoses": "All six action rows reviewed. Row 4 preserves delayed_prison preparation, release in column 3 and recovery; game skill data and timeline unchanged."
     },
     {
       "id": "mejiro_bright",
@@ -5195,7 +5195,7 @@
       ],
       "productionRule": "이 초안은 제작 완료가 아니다. 원본 -Race.png의 의상·머리·장식과 이 캐릭터의 실제 효과/대상/이동을 함께 검토하여 개별 원화를 생성하고 검수한다. 존재하지 않는 치유·소환·무기를 추가하지 않는다.",
       "status": "REVIEWED_FRAMES",
-      "reviewedPoses": "crouch and cross forearms preparing to dash; drive forward with hair streaming; land and uncross both arms releasing a short straight trailing wave in the same direction; draw arms back into ready stance"
+      "reviewedPoses": "All six action rows reviewed. Row 4 preserves crossing_echo preparation, release in column 3 and recovery; game skill data and timeline unchanged."
     },
     {
       "id": "sakura_laurel",
@@ -5269,7 +5269,7 @@
       ],
       "productionRule": "이 초안은 제작 완료가 아니다. 원본 -Race.png의 의상·머리·장식과 이 캐릭터의 실제 효과/대상/이동을 함께 검토하여 개별 원화를 생성하고 검수한다. 존재하지 않는 치유·소환·무기를 추가하지 않는다.",
       "status": "REVIEWED_FRAMES",
-      "reviewedPoses": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현."
+      "reviewedPoses": "All six action rows reviewed. Row 4 preserves frost_front preparation, release in column 3 and recovery; game skill data and timeline unchanged."
     },
     {
       "id": "narita_top_road",
@@ -5393,7 +5393,7 @@
       ],
       "productionRule": "이 초안은 제작 완료가 아니다. 원본 -Race.png의 의상·머리·장식과 이 캐릭터의 실제 효과/대상/이동을 함께 검토하여 개별 원화를 생성하고 검수한다. 존재하지 않는 치유·소환·무기를 추가하지 않는다.",
       "status": "REVIEWED_FRAMES",
-      "reviewedPoses": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현."
+      "reviewedPoses": "All six action rows reviewed. Row 4 preserves cleanse_hymn preparation, release in column 3 and recovery; game skill data and timeline unchanged."
     },
     {
       "id": "furioso",
@@ -5460,7 +5460,7 @@
       ],
       "productionRule": "이 초안은 제작 완료가 아니다. 원본 -Race.png의 의상·머리·장식과 이 캐릭터의 실제 효과/대상/이동을 함께 검토하여 개별 원화를 생성하고 검수한다. 존재하지 않는 치유·소환·무기를 추가하지 않는다.",
       "status": "REVIEWED_FRAMES",
-      "reviewedPoses": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현."
+      "reviewedPoses": "All six action rows reviewed. Row 4 preserves bulwark_circle preparation, release in column 3 and recovery; game skill data and timeline unchanged."
     },
     {
       "id": "transcend",
@@ -5528,7 +5528,7 @@
       ],
       "productionRule": "이 초안은 제작 완료가 아니다. 원본 -Race.png의 의상·머리·장식과 이 캐릭터의 실제 효과/대상/이동을 함께 검토하여 개별 원화를 생성하고 검수한다. 존재하지 않는 치유·소환·무기를 추가하지 않는다.",
       "status": "REVIEWED_FRAMES",
-      "reviewedPoses": "draw a small crescent back near the shoulder; throw it forward with an extended arm; turn the palm inward and catch its returning arc with the other hand; lower both hands and reset"
+      "reviewedPoses": "All six action rows reviewed. Row 4 preserves twin_orbit preparation, release in column 3 and recovery; game skill data and timeline unchanged."
     },
     {
       "id": "north_flight",
@@ -5604,7 +5604,7 @@
       ],
       "productionRule": "이 초안은 제작 완료가 아니다. 원본 -Race.png의 의상·머리·장식과 이 캐릭터의 실제 효과/대상/이동을 함께 검토하여 개별 원화를 생성하고 검수한다. 존재하지 않는 치유·소환·무기를 추가하지 않는다.",
       "status": "REVIEWED_FRAMES",
-      "reviewedPoses": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현."
+      "reviewedPoses": "All six action rows reviewed. Row 4 preserves dash_feint preparation, release in column 3 and recovery; game skill data and timeline unchanged."
     },
     {
       "id": "symboli_kris_s",
@@ -5676,7 +5676,7 @@
       ],
       "productionRule": "이 초안은 제작 완료가 아니다. 원본 -Race.png의 의상·머리·장식과 이 캐릭터의 실제 효과/대상/이동을 함께 검토하여 개별 원화를 생성하고 검수한다. 존재하지 않는 치유·소환·무기를 추가하지 않는다.",
       "status": "REVIEWED_FRAMES",
-      "reviewedPoses": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현."
+      "reviewedPoses": "All six action rows reviewed. Row 4 preserves breach_line preparation, release in column 3 and recovery; game skill data and timeline unchanged."
     },
     {
       "id": "tanino_gimlet",
@@ -5743,7 +5743,7 @@
       ],
       "productionRule": "이 초안은 제작 완료가 아니다. 원본 -Race.png의 의상·머리·장식과 이 캐릭터의 실제 효과/대상/이동을 함께 검토하여 개별 원화를 생성하고 검수한다. 존재하지 않는 치유·소환·무기를 추가하지 않는다.",
       "status": "REVIEWED_FRAMES",
-      "reviewedPoses": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현."
+      "reviewedPoses": "All six action rows reviewed. Row 4 preserves disarm_cone preparation, release in column 3 and recovery; game skill data and timeline unchanged."
     },
     {
       "id": "daiichi_ruby",
@@ -5806,7 +5806,7 @@
       ],
       "productionRule": "이 초안은 제작 완료가 아니다. 원본 -Race.png의 의상·머리·장식과 이 캐릭터의 실제 효과/대상/이동을 함께 검토하여 개별 원화를 생성하고 검수한다. 존재하지 않는 치유·소환·무기를 추가하지 않는다.",
       "status": "REVIEWED_FRAMES",
-      "reviewedPoses": "raise one hand to sight a single target; steady the other wrist and charge one thin bolt; release a single precise bolt with a braced stance; lower the aiming hand and relax"
+      "reviewedPoses": "All six action rows reviewed. Row 4 preserves seeking_bolt preparation, release in column 3 and recovery; game skill data and timeline unchanged."
     },
     {
       "id": "mejiro_ramonu",
@@ -5947,7 +5947,7 @@
       ],
       "productionRule": "이 초안은 제작 완료가 아니다. 원본 -Race.png의 의상·머리·장식과 이 캐릭터의 실제 효과/대상/이동을 함께 검토하여 개별 원화를 생성하고 검수한다. 존재하지 않는 치유·소환·무기를 추가하지 않는다.",
       "status": "REVIEWED_FRAMES",
-      "reviewedPoses": "draw a small crescent back near the shoulder; throw it forward with an extended arm; turn the palm inward and catch its returning arc with the other hand; lower both hands and reset"
+      "reviewedPoses": "All six action rows reviewed. Row 4 preserves twin_orbit preparation, release in column 3 and recovery; game skill data and timeline unchanged."
     },
     {
       "id": "satono_crown",
@@ -6016,7 +6016,7 @@
       ],
       "productionRule": "이 초안은 제작 완료가 아니다. 원본 -Race.png의 의상·머리·장식과 이 캐릭터의 실제 효과/대상/이동을 함께 검토하여 개별 원화를 생성하고 검수한다. 존재하지 않는 치유·소환·무기를 추가하지 않는다.",
       "status": "REVIEWED_FRAMES",
-      "reviewedPoses": "gather three small darts with a pulled-back hand; sweep the hand outward launching a fan of three darts; twist and repeat a second fan with a different arm angle; draw the wrist inward to rest"
+      "reviewedPoses": "All six action rows reviewed. Row 4 preserves fan_volley preparation, release in column 3 and recovery; game skill data and timeline unchanged."
     },
     {
       "id": "cheval_grand",
@@ -6221,7 +6221,7 @@
       ],
       "productionRule": "이 초안은 제작 완료가 아니다. 원본 -Race.png의 의상·머리·장식과 이 캐릭터의 실제 효과/대상/이동을 함께 검토하여 개별 원화를 생성하고 검수한다. 존재하지 않는 치유·소환·무기를 추가하지 않는다.",
       "status": "REVIEWED_FRAMES",
-      "reviewedPoses": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현."
+      "reviewedPoses": "All six action rows reviewed. Row 4 preserves relay_lantern preparation, release in column 3 and recovery; game skill data and timeline unchanged."
     },
     {
       "id": "ks_miracle",
@@ -6288,7 +6288,7 @@
       ],
       "productionRule": "이 초안은 제작 완료가 아니다. 원본 -Race.png의 의상·머리·장식과 이 캐릭터의 실제 효과/대상/이동을 함께 검토하여 개별 원화를 생성하고 검수한다. 존재하지 않는 치유·소환·무기를 추가하지 않는다.",
       "status": "REVIEWED_FRAMES",
-      "reviewedPoses": "clench hands at the heart gathering a small crest; bend knees and brace forearms as one armor ring forms; straighten in a planted stance as three close armor plates stack around the torso; settle with a compact guard still held"
+      "reviewedPoses": "All six action rows reviewed. Row 4 preserves bastion_growth preparation, release in column 3 and recovery; game skill data and timeline unchanged."
     },
     {
       "id": "jungle_pocket",
@@ -6355,7 +6355,7 @@
       ],
       "productionRule": "이 초안은 제작 완료가 아니다. 원본 -Race.png의 의상·머리·장식과 이 캐릭터의 실제 효과/대상/이동을 함께 검토하여 개별 원화를 생성하고 검수한다. 존재하지 않는 치유·소환·무기를 추가하지 않는다.",
       "status": "REVIEWED_FRAMES",
-      "reviewedPoses": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현."
+      "reviewedPoses": "All six action rows reviewed. Row 4 preserves binding_line preparation, release in column 3 and recovery; game skill data and timeline unchanged."
     },
     {
       "id": "believe",
@@ -6480,7 +6480,7 @@
       ],
       "productionRule": "이 초안은 제작 완료가 아니다. 원본 -Race.png의 의상·머리·장식과 이 캐릭터의 실제 효과/대상/이동을 함께 검토하여 개별 원화를 생성하고 검수한다. 존재하지 않는 치유·소환·무기를 추가하지 않는다.",
       "status": "REVIEWED_FRAMES",
-      "reviewedPoses": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현."
+      "reviewedPoses": "All six action rows reviewed. Row 4 preserves binding_line preparation, release in column 3 and recovery; game skill data and timeline unchanged."
     },
     {
       "id": "still_in_love",
@@ -6626,7 +6626,7 @@
       ],
       "productionRule": "이 초안은 제작 완료가 아니다. 원본 -Race.png의 의상·머리·장식과 이 캐릭터의 실제 효과/대상/이동을 함께 검토하여 개별 원화를 생성하고 검수한다. 존재하지 않는 치유·소환·무기를 추가하지 않는다.",
       "status": "REVIEWED_FRAMES",
-      "reviewedPoses": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현."
+      "reviewedPoses": "All six action rows reviewed. Row 4 preserves dash_feint preparation, release in column 3 and recovery; game skill data and timeline unchanged."
     },
     {
       "id": "hokko_tarumae",
@@ -6709,7 +6709,7 @@
       ],
       "productionRule": "이 초안은 제작 완료가 아니다. 원본 -Race.png의 의상·머리·장식과 이 캐릭터의 실제 효과/대상/이동을 함께 검토하여 개별 원화를 생성하고 검수한다. 존재하지 않는 치유·소환·무기를 추가하지 않는다.",
       "status": "REVIEWED_FRAMES",
-      "reviewedPoses": "cup a small ember; bend and sweep a hand down to plant a compact flame seal; keep palm low maintaining three small pulses above the seal; rise and return hand to chest"
+      "reviewedPoses": "All six action rows reviewed. Row 4 preserves cinder_field preparation, release in column 3 and recovery; game skill data and timeline unchanged."
     },
     {
       "id": "wonder_acute",
@@ -6776,7 +6776,7 @@
       ],
       "productionRule": "이 초안은 제작 완료가 아니다. 원본 -Race.png의 의상·머리·장식과 이 캐릭터의 실제 효과/대상/이동을 함께 검토하여 개별 원화를 생성하고 검수한다. 존재하지 않는 치유·소환·무기를 추가하지 않는다.",
       "status": "REVIEWED_FRAMES",
-      "reviewedPoses": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현."
+      "reviewedPoses": "All six action rows reviewed. Row 4 preserves triage_echo preparation, release in column 3 and recovery; game skill data and timeline unchanged."
     },
     {
       "id": "samson_big",
@@ -6844,7 +6844,7 @@
       ],
       "productionRule": "이 초안은 제작 완료가 아니다. 원본 -Race.png의 의상·머리·장식과 이 캐릭터의 실제 효과/대상/이동을 함께 검토하여 개별 원화를 생성하고 검수한다. 존재하지 않는 치유·소환·무기를 추가하지 않는다.",
       "status": "REVIEWED_FRAMES",
-      "reviewedPoses": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현."
+      "reviewedPoses": "All six action rows reviewed. Row 4 preserves draining_tether preparation, release in column 3 and recovery; game skill data and timeline unchanged."
     },
     {
       "id": "sounds_of_earth",
@@ -6912,7 +6912,7 @@
       ],
       "productionRule": "이 초안은 제작 완료가 아니다. 원본 -Race.png의 의상·머리·장식과 이 캐릭터의 실제 효과/대상/이동을 함께 검토하여 개별 원화를 생성하고 검수한다. 존재하지 않는 치유·소환·무기를 추가하지 않는다.",
       "status": "REVIEWED_FRAMES",
-      "reviewedPoses": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현."
+      "reviewedPoses": "All six action rows reviewed. Row 4 preserves draining_tether preparation, release in column 3 and recovery; game skill data and timeline unchanged."
     },
     {
       "id": "royce_and_royce",
@@ -6972,7 +6972,7 @@
       ],
       "productionRule": "이 초안은 제작 완료가 아니다. 원본 -Race.png의 의상·머리·장식과 이 캐릭터의 실제 효과/대상/이동을 함께 검토하여 개별 원화를 생성하고 검수한다. 존재하지 않는 치유·소환·무기를 추가하지 않는다.",
       "status": "REVIEWED_FRAMES",
-      "reviewedPoses": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현."
+      "reviewedPoses": "All six action rows reviewed. Row 4 preserves cleanse_hymn preparation, release in column 3 and recovery; game skill data and timeline unchanged."
     },
     {
       "id": "katsuragi_ace",
@@ -7039,7 +7039,7 @@
       ],
       "productionRule": "이 초안은 제작 완료가 아니다. 원본 -Race.png의 의상·머리·장식과 이 캐릭터의 실제 효과/대상/이동을 함께 검토하여 개별 원화를 생성하고 검수한다. 존재하지 않는 치유·소환·무기를 추가하지 않는다.",
       "status": "REVIEWED_FRAMES",
-      "reviewedPoses": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현."
+      "reviewedPoses": "All six action rows reviewed. Row 4 preserves disarm_cone preparation, release in column 3 and recovery; game skill data and timeline unchanged."
     },
     {
       "id": "neo_universe",
@@ -7170,7 +7170,7 @@
       ],
       "productionRule": "이 초안은 제작 완료가 아니다. 원본 -Race.png의 의상·머리·장식과 이 캐릭터의 실제 효과/대상/이동을 함께 검토하여 개별 원화를 생성하고 검수한다. 존재하지 않는 치유·소환·무기를 추가하지 않는다.",
       "status": "REVIEWED_FRAMES",
-      "reviewedPoses": "grip a compact energy blade with both hands at waist; lift it diagonally over one shoulder; bend knees and deliver one heavy downward cleaving arc; recover with lowered arms"
+      "reviewedPoses": "All six action rows reviewed. Row 4 preserves giant_cutter preparation, release in column 3 and recovery; game skill data and timeline unchanged."
     },
     {
       "id": "tap_dance_city",
@@ -7255,7 +7255,7 @@
       ],
       "productionRule": "이 초안은 제작 완료가 아니다. 원본 -Race.png의 의상·머리·장식과 이 캐릭터의 실제 효과/대상/이동을 함께 검토하여 개별 원화를 생성하고 검수한다. 존재하지 않는 치유·소환·무기를 추가하지 않는다.",
       "status": "REVIEWED_FRAMES",
-      "reviewedPoses": "brace forearms tightly behind a small guard crest; pivot hips and open one arm to start a circular gust; hold a wide grounded stance sustaining three short orbiting gust arcs; fold hands back as the gust ends"
+      "reviewedPoses": "All six action rows reviewed. Row 4 preserves retaliate_storm preparation, release in column 3 and recovery; game skill data and timeline unchanged."
     },
     {
       "id": "duramente",
@@ -7327,7 +7327,7 @@
       ],
       "productionRule": "이 초안은 제작 완료가 아니다. 원본 -Race.png의 의상·머리·장식과 이 캐릭터의 실제 효과/대상/이동을 함께 검토하여 개별 원화를 생성하고 검수한다. 존재하지 않는 치유·소환·무기를 추가하지 않는다.",
       "status": "REVIEWED_FRAMES",
-      "reviewedPoses": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현."
+      "reviewedPoses": "All six action rows reviewed. Row 4 preserves breach_line preparation, release in column 3 and recovery; game skill data and timeline unchanged."
     },
     {
       "id": "rhein_kraft",
@@ -7469,7 +7469,7 @@
       ],
       "productionRule": "이 초안은 제작 완료가 아니다. 원본 -Race.png의 의상·머리·장식과 이 캐릭터의 실제 효과/대상/이동을 함께 검토하여 개별 원화를 생성하고 검수한다. 존재하지 않는 치유·소환·무기를 추가하지 않는다.",
       "status": "REVIEWED_FRAMES",
-      "reviewedPoses": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현."
+      "reviewedPoses": "All six action rows reviewed. Row 4 preserves sanctuary preparation, release in column 3 and recovery; game skill data and timeline unchanged."
     },
     {
       "id": "air_messiah",
@@ -7732,7 +7732,7 @@
       ],
       "productionRule": "이 초안은 제작 완료가 아니다. 원본 -Race.png의 의상·머리·장식과 이 캐릭터의 실제 효과/대상/이동을 함께 검토하여 개별 원화를 생성하고 검수한다. 존재하지 않는 치유·소환·무기를 추가하지 않는다.",
       "status": "REVIEWED_FRAMES",
-      "reviewedPoses": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현."
+      "reviewedPoses": "All six action rows reviewed. Row 4 preserves execution_refund preparation, release in column 3 and recovery; game skill data and timeline unchanged."
     },
     {
       "id": "orfevre",
@@ -8442,7 +8442,7 @@
       ],
       "productionRule": "이 초안은 제작 완료가 아니다. 원본 -Race.png의 의상·머리·장식과 이 캐릭터의 실제 효과/대상/이동을 함께 검토하여 개별 원화를 생성하고 검수한다. 존재하지 않는 치유·소환·무기를 추가하지 않는다.",
       "status": "REVIEWED_FRAMES",
-      "reviewedPoses": "hold hands apart outlining a tiny open seal; spread palms to set two open curved seal brackets; snap hands together closing the brackets into a compact lock; release hands and let the closed seal fade"
+      "reviewedPoses": "All six action rows reviewed. Row 4 preserves delayed_prison preparation, release in column 3 and recovery; game skill data and timeline unchanged."
     },
     {
       "id": "fenomeno",
@@ -9011,7 +9011,7 @@
       ],
       "productionRule": "이 초안은 제작 완료가 아니다. 원본 -Race.png의 의상·머리·장식과 이 캐릭터의 실제 효과/대상/이동을 함께 검토하여 개별 원화를 생성하고 검수한다. 존재하지 않는 치유·소환·무기를 추가하지 않는다.",
       "status": "REVIEWED_FRAMES",
-      "reviewedPoses": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현."
+      "reviewedPoses": "All six action rows reviewed. Row 4 preserves rescue_barrier preparation, release in column 3 and recovery; game skill data and timeline unchanged."
     },
     {
       "id": "stay_gold",
@@ -9096,7 +9096,7 @@
       ],
       "productionRule": "이 초안은 제작 완료가 아니다. 원본 -Race.png의 의상·머리·장식과 이 캐릭터의 실제 효과/대상/이동을 함께 검토하여 개별 원화를 생성하고 검수한다. 존재하지 않는 치유·소환·무기를 추가하지 않는다.",
       "status": "REVIEWED_FRAMES",
-      "reviewedPoses": "gather a small guard crest at chest; brace behind a close circular shield; draw three inward energy ribbons from nearby space while keeping feet planted; return hands to the chest behind the lingering guard"
+      "reviewedPoses": "All six action rows reviewed. Row 4 preserves iron_drain preparation, release in column 3 and recovery; game skill data and timeline unchanged."
     },
     {
       "id": "red_desire",
@@ -9536,7 +9536,7 @@
       ],
       "productionRule": "이 초안은 제작 완료가 아니다. 원본 -Race.png의 의상·머리·장식과 이 캐릭터의 실제 효과/대상/이동을 함께 검토하여 개별 원화를 생성하고 검수한다. 존재하지 않는 치유·소환·무기를 추가하지 않는다.",
       "status": "REVIEWED_FRAMES",
-      "reviewedPoses": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현."
+      "reviewedPoses": "All six action rows reviewed. Row 4 preserves command_pulse preparation, release in column 3 and recovery; game skill data and timeline unchanged."
     },
     {
       "id": "victoire_pisa",

@@ -1,0 +1,484 @@
+{
+  "format": "uft-baked-frames-v1",
+  "columns": 4,
+  "rows": 6,
+  "frameWidth": 128,
+  "frameHeight": 128,
+  "anchor": [
+    64,
+    110
+  ],
+  "scale": 0.46846846846846846,
+  "runtimeSha256": "949e168f8f1f8be62acc28040bae2286cb56af376c0ccb5b2169ca3200da58b3",
+  "frames": [
+    {
+      "frame": 0,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/wonder_acute/generated.png",
+      "sourceSha256": "7ba4889d7cbca5eec20fc8b94267e327ea62317e7c36e489f800bdff5b0169c0",
+      "crop": [
+        46,
+        9,
+        214,
+        229
+      ],
+      "destination": [
+        24,
+        7,
+        79,
+        103
+      ]
+    },
+    {
+      "frame": 1,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/wonder_acute/generated.png",
+      "sourceSha256": "7ba4889d7cbca5eec20fc8b94267e327ea62317e7c36e489f800bdff5b0169c0",
+      "crop": [
+        300,
+        9,
+        466,
+        229
+      ],
+      "destination": [
+        153,
+        7,
+        78,
+        103
+      ]
+    },
+    {
+      "frame": 2,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/wonder_acute/generated.png",
+      "sourceSha256": "7ba4889d7cbca5eec20fc8b94267e327ea62317e7c36e489f800bdff5b0169c0",
+      "crop": [
+        561,
+        8,
+        723,
+        229
+      ],
+      "destination": [
+        282,
+        6,
+        76,
+        104
+      ]
+    },
+    {
+      "frame": 3,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/wonder_acute/generated.png",
+      "sourceSha256": "7ba4889d7cbca5eec20fc8b94267e327ea62317e7c36e489f800bdff5b0169c0",
+      "crop": [
+        817,
+        9,
+        966,
+        229
+      ],
+      "destination": [
+        413,
+        7,
+        70,
+        103
+      ]
+    },
+    {
+      "frame": 4,
+      "sourceFrame": 4,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/wonder_acute/generated.png",
+      "sourceSha256": "7ba4889d7cbca5eec20fc8b94267e327ea62317e7c36e489f800bdff5b0169c0",
+      "crop": [
+        39,
+        271,
+        222,
+        484
+      ],
+      "destination": [
+        21,
+        138,
+        86,
+        100
+      ]
+    },
+    {
+      "frame": 5,
+      "sourceFrame": 5,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/wonder_acute/generated.png",
+      "sourceSha256": "7ba4889d7cbca5eec20fc8b94267e327ea62317e7c36e489f800bdff5b0169c0",
+      "crop": [
+        294,
+        270,
+        475,
+        484
+      ],
+      "destination": [
+        149,
+        138,
+        85,
+        100
+      ]
+    },
+    {
+      "frame": 6,
+      "sourceFrame": 6,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/wonder_acute/generated.png",
+      "sourceSha256": "7ba4889d7cbca5eec20fc8b94267e327ea62317e7c36e489f800bdff5b0169c0",
+      "crop": [
+        547,
+        271,
+        736,
+        485
+      ],
+      "destination": [
+        275,
+        138,
+        89,
+        100
+      ]
+    },
+    {
+      "frame": 7,
+      "sourceFrame": 7,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/wonder_acute/generated.png",
+      "sourceSha256": "7ba4889d7cbca5eec20fc8b94267e327ea62317e7c36e489f800bdff5b0169c0",
+      "crop": [
+        805,
+        271,
+        984,
+        484
+      ],
+      "destination": [
+        406,
+        138,
+        84,
+        100
+      ]
+    },
+    {
+      "frame": 8,
+      "sourceFrame": 8,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/wonder_acute/generated.png",
+      "sourceSha256": "7ba4889d7cbca5eec20fc8b94267e327ea62317e7c36e489f800bdff5b0169c0",
+      "crop": [
+        39,
+        521,
+        226,
+        741
+      ],
+      "destination": [
+        20,
+        263,
+        88,
+        103
+      ]
+    },
+    {
+      "frame": 9,
+      "sourceFrame": 9,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/wonder_acute/generated.png",
+      "sourceSha256": "7ba4889d7cbca5eec20fc8b94267e327ea62317e7c36e489f800bdff5b0169c0",
+      "crop": [
+        304,
+        522,
+        463,
+        741
+      ],
+      "destination": [
+        155,
+        263,
+        74,
+        103
+      ]
+    },
+    {
+      "frame": 10,
+      "sourceFrame": 10,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/wonder_acute/generated.png",
+      "sourceSha256": "7ba4889d7cbca5eec20fc8b94267e327ea62317e7c36e489f800bdff5b0169c0",
+      "crop": [
+        536,
+        522,
+        745,
+        741
+      ],
+      "destination": [
+        271,
+        263,
+        98,
+        103
+      ]
+    },
+    {
+      "frame": 11,
+      "sourceFrame": 11,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/wonder_acute/generated.png",
+      "sourceSha256": "7ba4889d7cbca5eec20fc8b94267e327ea62317e7c36e489f800bdff5b0169c0",
+      "crop": [
+        822,
+        522,
+        967,
+        743
+      ],
+      "destination": [
+        414,
+        262,
+        68,
+        104
+      ]
+    },
+    {
+      "frame": 12,
+      "sourceFrame": 12,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/wonder_acute/generated.png",
+      "sourceSha256": "7ba4889d7cbca5eec20fc8b94267e327ea62317e7c36e489f800bdff5b0169c0",
+      "crop": [
+        56,
+        777,
+        203,
+        996
+      ],
+      "destination": [
+        29,
+        391,
+        69,
+        103
+      ]
+    },
+    {
+      "frame": 13,
+      "sourceFrame": 13,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/wonder_acute/generated.png",
+      "sourceSha256": "7ba4889d7cbca5eec20fc8b94267e327ea62317e7c36e489f800bdff5b0169c0",
+      "crop": [
+        297,
+        776,
+        475,
+        996
+      ],
+      "destination": [
+        150,
+        391,
+        83,
+        103
+      ]
+    },
+    {
+      "frame": 14,
+      "sourceFrame": 14,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/wonder_acute/generated.png",
+      "sourceSha256": "7ba4889d7cbca5eec20fc8b94267e327ea62317e7c36e489f800bdff5b0169c0",
+      "crop": [
+        545,
+        776,
+        735,
+        995
+      ],
+      "destination": [
+        275,
+        391,
+        89,
+        103
+      ]
+    },
+    {
+      "frame": 15,
+      "sourceFrame": 15,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/wonder_acute/generated.png",
+      "sourceSha256": "7ba4889d7cbca5eec20fc8b94267e327ea62317e7c36e489f800bdff5b0169c0",
+      "crop": [
+        820,
+        778,
+        968,
+        998
+      ],
+      "destination": [
+        413,
+        391,
+        69,
+        103
+      ]
+    },
+    {
+      "frame": 16,
+      "sourceFrame": 16,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/wonder_acute/generated.png",
+      "sourceSha256": "7ba4889d7cbca5eec20fc8b94267e327ea62317e7c36e489f800bdff5b0169c0",
+      "crop": [
+        39,
+        1064,
+        216,
+        1253
+      ],
+      "destination": [
+        22,
+        533,
+        83,
+        89
+      ]
+    },
+    {
+      "frame": 17,
+      "sourceFrame": 17,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/wonder_acute/generated.png",
+      "sourceSha256": "7ba4889d7cbca5eec20fc8b94267e327ea62317e7c36e489f800bdff5b0169c0",
+      "crop": [
+        294,
+        1086,
+        472,
+        1252
+      ],
+      "destination": [
+        150,
+        544,
+        83,
+        78
+      ]
+    },
+    {
+      "frame": 18,
+      "sourceFrame": 18,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/wonder_acute/generated.png",
+      "sourceSha256": "7ba4889d7cbca5eec20fc8b94267e327ea62317e7c36e489f800bdff5b0169c0",
+      "crop": [
+        562,
+        1100,
+        721,
+        1251
+      ],
+      "destination": [
+        283,
+        551,
+        74,
+        71
+      ]
+    },
+    {
+      "frame": 19,
+      "sourceFrame": 19,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/wonder_acute/generated.png",
+      "sourceSha256": "7ba4889d7cbca5eec20fc8b94267e327ea62317e7c36e489f800bdff5b0169c0",
+      "crop": [
+        783,
+        1150,
+        1003,
+        1253
+      ],
+      "destination": [
+        396,
+        574,
+        103,
+        48
+      ]
+    },
+    {
+      "frame": 20,
+      "sourceFrame": 20,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/wonder_acute/generated.png",
+      "sourceSha256": "7ba4889d7cbca5eec20fc8b94267e327ea62317e7c36e489f800bdff5b0169c0",
+      "crop": [
+        50,
+        1288,
+        202,
+        1507
+      ],
+      "destination": [
+        28,
+        647,
+        71,
+        103
+      ]
+    },
+    {
+      "frame": 21,
+      "sourceFrame": 21,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/wonder_acute/generated.png",
+      "sourceSha256": "7ba4889d7cbca5eec20fc8b94267e327ea62317e7c36e489f800bdff5b0169c0",
+      "crop": [
+        311,
+        1285,
+        455,
+        1507
+      ],
+      "destination": [
+        158,
+        646,
+        67,
+        104
+      ]
+    },
+    {
+      "frame": 22,
+      "sourceFrame": 22,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/wonder_acute/generated.png",
+      "sourceSha256": "7ba4889d7cbca5eec20fc8b94267e327ea62317e7c36e489f800bdff5b0169c0",
+      "crop": [
+        570,
+        1289,
+        713,
+        1506
+      ],
+      "destination": [
+        286,
+        648,
+        67,
+        102
+      ]
+    },
+    {
+      "frame": 23,
+      "sourceFrame": 23,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/wonder_acute/generated.png",
+      "sourceSha256": "7ba4889d7cbca5eec20fc8b94267e327ea62317e7c36e489f800bdff5b0169c0",
+      "crop": [
+        817,
+        1286,
+        964,
+        1508
+      ],
+      "destination": [
+        413,
+        646,
+        69,
+        104
+      ]
+    }
+  ],
+  "identityRevision": {
+    "review": "docs/art-source/motions/identity-revisions-2026-09-12/wonder_acute/review.json",
+    "baselineRuntimeSha256": "f109ad18b6335bba6d91841b54eee28528f414783dc7893974dd0eaab3299a66",
+    "previousPacking": "docs/art-source/motions/production-144/wonder_acute/packing.json",
+    "portrait": "public/assets/portraits/wonder_acute.png",
+    "portraitSha256": "701c94d17ecd474b3bd77cc5e834c956fdb087437cdd976e0eea955a59529e7f",
+    "changedFrames": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23
+    ],
+    "alpha": {
+      "transparentFraction": 0.6419150034586588,
+      "solidFraction": 0.2678667704264323
+    }
+  }
+}

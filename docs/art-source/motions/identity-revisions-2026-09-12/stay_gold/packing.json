@@ -1,0 +1,484 @@
+{
+  "format": "uft-baked-frames-v1",
+  "columns": 4,
+  "rows": 6,
+  "frameWidth": 128,
+  "frameHeight": 128,
+  "anchor": [
+    64,
+    110
+  ],
+  "scale": 0.4482758620689655,
+  "runtimeSha256": "d7327cb272dfddf50f167f18fa456f8639ccd95a8d810153e9522a2c2a761b8e",
+  "frames": [
+    {
+      "frame": 0,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/stay_gold/generated.png",
+      "sourceSha256": "f8e3d77e2996914288711ffd186f91428d3709e1bb535f779f159a0022ddb8f0",
+      "crop": [
+        61,
+        21,
+        197,
+        236
+      ],
+      "destination": [
+        33,
+        14,
+        61,
+        96
+      ]
+    },
+    {
+      "frame": 1,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/stay_gold/generated.png",
+      "sourceSha256": "f8e3d77e2996914288711ffd186f91428d3709e1bb535f779f159a0022ddb8f0",
+      "crop": [
+        320,
+        22,
+        462,
+        236
+      ],
+      "destination": [
+        160,
+        14,
+        64,
+        96
+      ]
+    },
+    {
+      "frame": 2,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/stay_gold/generated.png",
+      "sourceSha256": "f8e3d77e2996914288711ffd186f91428d3709e1bb535f779f159a0022ddb8f0",
+      "crop": [
+        570,
+        22,
+        712,
+        236
+      ],
+      "destination": [
+        288,
+        14,
+        64,
+        96
+      ]
+    },
+    {
+      "frame": 3,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/stay_gold/generated.png",
+      "sourceSha256": "f8e3d77e2996914288711ffd186f91428d3709e1bb535f779f159a0022ddb8f0",
+      "crop": [
+        827,
+        22,
+        967,
+        236
+      ],
+      "destination": [
+        416,
+        14,
+        63,
+        96
+      ]
+    },
+    {
+      "frame": 4,
+      "sourceFrame": 4,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/stay_gold/generated.png",
+      "sourceSha256": "f8e3d77e2996914288711ffd186f91428d3709e1bb535f779f159a0022ddb8f0",
+      "crop": [
+        31,
+        280,
+        220,
+        500
+      ],
+      "destination": [
+        21,
+        139,
+        85,
+        99
+      ]
+    },
+    {
+      "frame": 5,
+      "sourceFrame": 5,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/stay_gold/generated.png",
+      "sourceSha256": "f8e3d77e2996914288711ffd186f91428d3709e1bb535f779f159a0022ddb8f0",
+      "crop": [
+        298,
+        287,
+        483,
+        499
+      ],
+      "destination": [
+        150,
+        143,
+        83,
+        95
+      ]
+    },
+    {
+      "frame": 6,
+      "sourceFrame": 6,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/stay_gold/generated.png",
+      "sourceSha256": "f8e3d77e2996914288711ffd186f91428d3709e1bb535f779f159a0022ddb8f0",
+      "crop": [
+        552,
+        284,
+        731,
+        498
+      ],
+      "destination": [
+        280,
+        142,
+        80,
+        96
+      ]
+    },
+    {
+      "frame": 7,
+      "sourceFrame": 7,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/stay_gold/generated.png",
+      "sourceSha256": "f8e3d77e2996914288711ffd186f91428d3709e1bb535f779f159a0022ddb8f0",
+      "crop": [
+        808,
+        286,
+        994,
+        500
+      ],
+      "destination": [
+        406,
+        142,
+        83,
+        96
+      ]
+    },
+    {
+      "frame": 8,
+      "sourceFrame": 8,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/stay_gold/generated.png",
+      "sourceSha256": "f8e3d77e2996914288711ffd186f91428d3709e1bb535f779f159a0022ddb8f0",
+      "crop": [
+        46,
+        535,
+        208,
+        753
+      ],
+      "destination": [
+        27,
+        268,
+        73,
+        98
+      ]
+    },
+    {
+      "frame": 9,
+      "sourceFrame": 9,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/stay_gold/generated.png",
+      "sourceSha256": "f8e3d77e2996914288711ffd186f91428d3709e1bb535f779f159a0022ddb8f0",
+      "crop": [
+        307,
+        532,
+        467,
+        753
+      ],
+      "destination": [
+        156,
+        267,
+        72,
+        99
+      ]
+    },
+    {
+      "frame": 10,
+      "sourceFrame": 10,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/stay_gold/generated.png",
+      "sourceSha256": "f8e3d77e2996914288711ffd186f91428d3709e1bb535f779f159a0022ddb8f0",
+      "crop": [
+        545,
+        535,
+        737,
+        753
+      ],
+      "destination": [
+        277,
+        268,
+        86,
+        98
+      ]
+    },
+    {
+      "frame": 11,
+      "sourceFrame": 11,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/stay_gold/generated.png",
+      "sourceSha256": "f8e3d77e2996914288711ffd186f91428d3709e1bb535f779f159a0022ddb8f0",
+      "crop": [
+        825,
+        534,
+        974,
+        753
+      ],
+      "destination": [
+        414,
+        268,
+        67,
+        98
+      ]
+    },
+    {
+      "frame": 12,
+      "sourceFrame": 12,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/stay_gold/generated.png",
+      "sourceSha256": "f8e3d77e2996914288711ffd186f91428d3709e1bb535f779f159a0022ddb8f0",
+      "crop": [
+        39,
+        782,
+        202,
+        1007
+      ],
+      "destination": [
+        27,
+        393,
+        73,
+        101
+      ]
+    },
+    {
+      "frame": 13,
+      "sourceFrame": 13,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/stay_gold/generated.png",
+      "sourceSha256": "f8e3d77e2996914288711ffd186f91428d3709e1bb535f779f159a0022ddb8f0",
+      "crop": [
+        274,
+        786,
+        502,
+        1008
+      ],
+      "destination": [
+        141,
+        394,
+        102,
+        100
+      ]
+    },
+    {
+      "frame": 14,
+      "sourceFrame": 14,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/stay_gold/generated.png",
+      "sourceSha256": "f8e3d77e2996914288711ffd186f91428d3709e1bb535f779f159a0022ddb8f0",
+      "crop": [
+        525,
+        783,
+        757,
+        1007
+      ],
+      "destination": [
+        268,
+        394,
+        104,
+        100
+      ]
+    },
+    {
+      "frame": 15,
+      "sourceFrame": 15,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/stay_gold/generated.png",
+      "sourceSha256": "f8e3d77e2996914288711ffd186f91428d3709e1bb535f779f159a0022ddb8f0",
+      "crop": [
+        814,
+        784,
+        984,
+        1007
+      ],
+      "destination": [
+        410,
+        394,
+        76,
+        100
+      ]
+    },
+    {
+      "frame": 16,
+      "sourceFrame": 16,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/stay_gold/generated.png",
+      "sourceSha256": "f8e3d77e2996914288711ffd186f91428d3709e1bb535f779f159a0022ddb8f0",
+      "crop": [
+        47,
+        1038,
+        209,
+        1251
+      ],
+      "destination": [
+        27,
+        527,
+        73,
+        95
+      ]
+    },
+    {
+      "frame": 17,
+      "sourceFrame": 17,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/stay_gold/generated.png",
+      "sourceSha256": "f8e3d77e2996914288711ffd186f91428d3709e1bb535f779f159a0022ddb8f0",
+      "crop": [
+        294,
+        1068,
+        468,
+        1249
+      ],
+      "destination": [
+        153,
+        541,
+        78,
+        81
+      ]
+    },
+    {
+      "frame": 18,
+      "sourceFrame": 18,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/stay_gold/generated.png",
+      "sourceSha256": "f8e3d77e2996914288711ffd186f91428d3709e1bb535f779f159a0022ddb8f0",
+      "crop": [
+        538,
+        1074,
+        738,
+        1247
+      ],
+      "destination": [
+        275,
+        544,
+        90,
+        78
+      ]
+    },
+    {
+      "frame": 19,
+      "sourceFrame": 19,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/stay_gold/generated.png",
+      "sourceSha256": "f8e3d77e2996914288711ffd186f91428d3709e1bb535f779f159a0022ddb8f0",
+      "crop": [
+        786,
+        1142,
+        1013,
+        1250
+      ],
+      "destination": [
+        397,
+        574,
+        102,
+        48
+      ]
+    },
+    {
+      "frame": 20,
+      "sourceFrame": 20,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/stay_gold/generated.png",
+      "sourceSha256": "f8e3d77e2996914288711ffd186f91428d3709e1bb535f779f159a0022ddb8f0",
+      "crop": [
+        57,
+        1287,
+        194,
+        1513
+      ],
+      "destination": [
+        33,
+        649,
+        61,
+        101
+      ]
+    },
+    {
+      "frame": 21,
+      "sourceFrame": 21,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/stay_gold/generated.png",
+      "sourceSha256": "f8e3d77e2996914288711ffd186f91428d3709e1bb535f779f159a0022ddb8f0",
+      "crop": [
+        303,
+        1287,
+        457,
+        1513
+      ],
+      "destination": [
+        157,
+        649,
+        69,
+        101
+      ]
+    },
+    {
+      "frame": 22,
+      "sourceFrame": 22,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/stay_gold/generated.png",
+      "sourceSha256": "f8e3d77e2996914288711ffd186f91428d3709e1bb535f779f159a0022ddb8f0",
+      "crop": [
+        555,
+        1282,
+        723,
+        1514
+      ],
+      "destination": [
+        282,
+        646,
+        75,
+        104
+      ]
+    },
+    {
+      "frame": 23,
+      "sourceFrame": 23,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/stay_gold/generated.png",
+      "sourceSha256": "f8e3d77e2996914288711ffd186f91428d3709e1bb535f779f159a0022ddb8f0",
+      "crop": [
+        819,
+        1287,
+        968,
+        1513
+      ],
+      "destination": [
+        414,
+        649,
+        67,
+        101
+      ]
+    }
+  ],
+  "identityRevision": {
+    "review": "docs/art-source/motions/identity-revisions-2026-09-12/stay_gold/review.json",
+    "baselineRuntimeSha256": "cb6cca2189f4de09e6a5d15fcf8f6bdf95c743e846bf9027a25f50dcc0f58f0c",
+    "previousPacking": "docs/art-source/motions/skill-revisions-2026-09-11/stay_gold/packing.json",
+    "portrait": "public/assets/portraits/stay_gold.png",
+    "portraitSha256": "dba82eaa6db2161eedf966dd27c9071c0a09fe14c209aa41ab78ce45af4b1d5b",
+    "changedFrames": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23
+    ],
+    "alpha": {
+      "transparentFraction": 0.6183923085530599,
+      "solidFraction": 0.2849133809407552
+    }
+  }
+}

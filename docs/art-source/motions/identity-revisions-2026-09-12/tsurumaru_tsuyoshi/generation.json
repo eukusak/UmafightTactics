@@ -1,0 +1,8 @@
+{
+  "tool": "built-in image_gen",
+  "referenceCommit": "847fc5a43eb3017d485192dec5e77812e7e4f98f",
+  "referencePortrait": "public/assets/portraits/tsurumaru_tsuyoshi.png",
+  "referenceAtlas": "public/assets/motions/tsurumaru_tsuyoshi.png",
+  "prompt": "Edit the second image's complete 24-pose chibi sprite atlas so EVERY face and hairstyle matches the FIRST portrait. Identity: Soft brown shoulder-length layered hair, violet eyes, small gold clips. NO white stripe. Keep the second image's outfit, full-body poses and exact 4 columns by 6 rows layout: idle, run, attack, skill, KO, victory. Keep the distinct skill gestures and effects (delayed_prison) in row 4, including release in column 3. Do not repeat or replace action rows. All 24 bodies inside separate equal cells, empty gutters. Transparent PNG cutouts with real alpha; no backdrop or checkerboard.",
+  "alphaEditPrompt": "Make the background transparent. Preserve every character and effect. Export a transparent PNG cutout, with alpha zero in the empty space."
+}

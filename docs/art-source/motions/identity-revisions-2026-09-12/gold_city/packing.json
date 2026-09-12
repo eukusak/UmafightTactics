@@ -1,0 +1,484 @@
+{
+  "format": "uft-baked-frames-v1",
+  "columns": 4,
+  "rows": 6,
+  "frameWidth": 128,
+  "frameHeight": 128,
+  "anchor": [
+    64,
+    110
+  ],
+  "scale": 0.42105263157894735,
+  "runtimeSha256": "10e67d520efaa7a47c7682f48071c2cec507e58847f68bbcfb44fb52cbfa7a38",
+  "frames": [
+    {
+      "frame": 0,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/gold_city/generated.png",
+      "sourceSha256": "a6e9d25ba7bb1cf053f50c1ca77c952b29e5f13e941247d5984d2e870fd40cc7",
+      "crop": [
+        45,
+        10,
+        214,
+        249
+      ],
+      "destination": [
+        28,
+        9,
+        71,
+        101
+      ]
+    },
+    {
+      "frame": 1,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/gold_city/generated.png",
+      "sourceSha256": "a6e9d25ba7bb1cf053f50c1ca77c952b29e5f13e941247d5984d2e870fd40cc7",
+      "crop": [
+        301,
+        10,
+        473,
+        249
+      ],
+      "destination": [
+        156,
+        9,
+        72,
+        101
+      ]
+    },
+    {
+      "frame": 2,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/gold_city/generated.png",
+      "sourceSha256": "a6e9d25ba7bb1cf053f50c1ca77c952b29e5f13e941247d5984d2e870fd40cc7",
+      "crop": [
+        564,
+        9,
+        726,
+        249
+      ],
+      "destination": [
+        286,
+        9,
+        68,
+        101
+      ]
+    },
+    {
+      "frame": 3,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/gold_city/generated.png",
+      "sourceSha256": "a6e9d25ba7bb1cf053f50c1ca77c952b29e5f13e941247d5984d2e870fd40cc7",
+      "crop": [
+        824,
+        10,
+        984,
+        249
+      ],
+      "destination": [
+        414,
+        9,
+        67,
+        101
+      ]
+    },
+    {
+      "frame": 4,
+      "sourceFrame": 4,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/gold_city/generated.png",
+      "sourceSha256": "a6e9d25ba7bb1cf053f50c1ca77c952b29e5f13e941247d5984d2e870fd40cc7",
+      "crop": [
+        29,
+        264,
+        220,
+        504
+      ],
+      "destination": [
+        24,
+        137,
+        80,
+        101
+      ]
+    },
+    {
+      "frame": 5,
+      "sourceFrame": 5,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/gold_city/generated.png",
+      "sourceSha256": "a6e9d25ba7bb1cf053f50c1ca77c952b29e5f13e941247d5984d2e870fd40cc7",
+      "crop": [
+        289,
+        265,
+        482,
+        503
+      ],
+      "destination": [
+        151,
+        138,
+        81,
+        100
+      ]
+    },
+    {
+      "frame": 6,
+      "sourceFrame": 6,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/gold_city/generated.png",
+      "sourceSha256": "a6e9d25ba7bb1cf053f50c1ca77c952b29e5f13e941247d5984d2e870fd40cc7",
+      "crop": [
+        553,
+        265,
+        743,
+        503
+      ],
+      "destination": [
+        280,
+        138,
+        80,
+        100
+      ]
+    },
+    {
+      "frame": 7,
+      "sourceFrame": 7,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/gold_city/generated.png",
+      "sourceSha256": "a6e9d25ba7bb1cf053f50c1ca77c952b29e5f13e941247d5984d2e870fd40cc7",
+      "crop": [
+        805,
+        266,
+        1001,
+        504
+      ],
+      "destination": [
+        406,
+        138,
+        83,
+        100
+      ]
+    },
+    {
+      "frame": 8,
+      "sourceFrame": 8,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/gold_city/generated.png",
+      "sourceSha256": "a6e9d25ba7bb1cf053f50c1ca77c952b29e5f13e941247d5984d2e870fd40cc7",
+      "crop": [
+        21,
+        518,
+        241,
+        764
+      ],
+      "destination": [
+        17,
+        262,
+        93,
+        104
+      ]
+    },
+    {
+      "frame": 9,
+      "sourceFrame": 9,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/gold_city/generated.png",
+      "sourceSha256": "a6e9d25ba7bb1cf053f50c1ca77c952b29e5f13e941247d5984d2e870fd40cc7",
+      "crop": [
+        295,
+        522,
+        469,
+        766
+      ],
+      "destination": [
+        155,
+        263,
+        73,
+        103
+      ]
+    },
+    {
+      "frame": 10,
+      "sourceFrame": 10,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/gold_city/generated.png",
+      "sourceSha256": "a6e9d25ba7bb1cf053f50c1ca77c952b29e5f13e941247d5984d2e870fd40cc7",
+      "crop": [
+        537,
+        519,
+        761,
+        766
+      ],
+      "destination": [
+        273,
+        262,
+        94,
+        104
+      ]
+    },
+    {
+      "frame": 11,
+      "sourceFrame": 11,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/gold_city/generated.png",
+      "sourceSha256": "a6e9d25ba7bb1cf053f50c1ca77c952b29e5f13e941247d5984d2e870fd40cc7",
+      "crop": [
+        818,
+        522,
+        986,
+        766
+      ],
+      "destination": [
+        412,
+        263,
+        71,
+        103
+      ]
+    },
+    {
+      "frame": 12,
+      "sourceFrame": 12,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/gold_city/generated.png",
+      "sourceSha256": "a6e9d25ba7bb1cf053f50c1ca77c952b29e5f13e941247d5984d2e870fd40cc7",
+      "crop": [
+        17,
+        778,
+        227,
+        1025
+      ],
+      "destination": [
+        20,
+        390,
+        88,
+        104
+      ]
+    },
+    {
+      "frame": 13,
+      "sourceFrame": 13,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/gold_city/generated.png",
+      "sourceSha256": "a6e9d25ba7bb1cf053f50c1ca77c952b29e5f13e941247d5984d2e870fd40cc7",
+      "crop": [
+        295,
+        779,
+        468,
+        1025
+      ],
+      "destination": [
+        155,
+        390,
+        73,
+        104
+      ]
+    },
+    {
+      "frame": 14,
+      "sourceFrame": 14,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/gold_city/generated.png",
+      "sourceSha256": "a6e9d25ba7bb1cf053f50c1ca77c952b29e5f13e941247d5984d2e870fd40cc7",
+      "crop": [
+        541,
+        779,
+        751,
+        1025
+      ],
+      "destination": [
+        276,
+        390,
+        88,
+        104
+      ]
+    },
+    {
+      "frame": 15,
+      "sourceFrame": 15,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/gold_city/generated.png",
+      "sourceSha256": "a6e9d25ba7bb1cf053f50c1ca77c952b29e5f13e941247d5984d2e870fd40cc7",
+      "crop": [
+        822,
+        781,
+        984,
+        1025
+      ],
+      "destination": [
+        414,
+        391,
+        68,
+        103
+      ]
+    },
+    {
+      "frame": 16,
+      "sourceFrame": 16,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/gold_city/generated.png",
+      "sourceSha256": "a6e9d25ba7bb1cf053f50c1ca77c952b29e5f13e941247d5984d2e870fd40cc7",
+      "crop": [
+        21,
+        1049,
+        229,
+        1268
+      ],
+      "destination": [
+        20,
+        530,
+        88,
+        92
+      ]
+    },
+    {
+      "frame": 17,
+      "sourceFrame": 17,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/gold_city/generated.png",
+      "sourceSha256": "a6e9d25ba7bb1cf053f50c1ca77c952b29e5f13e941247d5984d2e870fd40cc7",
+      "crop": [
+        272,
+        1090,
+        483,
+        1263
+      ],
+      "destination": [
+        147,
+        549,
+        89,
+        73
+      ]
+    },
+    {
+      "frame": 18,
+      "sourceFrame": 18,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/gold_city/generated.png",
+      "sourceSha256": "a6e9d25ba7bb1cf053f50c1ca77c952b29e5f13e941247d5984d2e870fd40cc7",
+      "crop": [
+        539,
+        1092,
+        732,
+        1260
+      ],
+      "destination": [
+        279,
+        551,
+        81,
+        71
+      ]
+    },
+    {
+      "frame": 19,
+      "sourceFrame": 19,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/gold_city/generated.png",
+      "sourceSha256": "a6e9d25ba7bb1cf053f50c1ca77c952b29e5f13e941247d5984d2e870fd40cc7",
+      "crop": [
+        782,
+        1145,
+        1015,
+        1258
+      ],
+      "destination": [
+        399,
+        574,
+        98,
+        48
+      ]
+    },
+    {
+      "frame": 20,
+      "sourceFrame": 20,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/gold_city/generated.png",
+      "sourceSha256": "a6e9d25ba7bb1cf053f50c1ca77c952b29e5f13e941247d5984d2e870fd40cc7",
+      "crop": [
+        31,
+        1280,
+        195,
+        1520
+      ],
+      "destination": [
+        29,
+        649,
+        69,
+        101
+      ]
+    },
+    {
+      "frame": 21,
+      "sourceFrame": 21,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/gold_city/generated.png",
+      "sourceSha256": "a6e9d25ba7bb1cf053f50c1ca77c952b29e5f13e941247d5984d2e870fd40cc7",
+      "crop": [
+        291,
+        1280,
+        456,
+        1521
+      ],
+      "destination": [
+        157,
+        649,
+        69,
+        101
+      ]
+    },
+    {
+      "frame": 22,
+      "sourceFrame": 22,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/gold_city/generated.png",
+      "sourceSha256": "a6e9d25ba7bb1cf053f50c1ca77c952b29e5f13e941247d5984d2e870fd40cc7",
+      "crop": [
+        550,
+        1281,
+        713,
+        1522
+      ],
+      "destination": [
+        285,
+        649,
+        69,
+        101
+      ]
+    },
+    {
+      "frame": 23,
+      "sourceFrame": 23,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/gold_city/generated.png",
+      "sourceSha256": "a6e9d25ba7bb1cf053f50c1ca77c952b29e5f13e941247d5984d2e870fd40cc7",
+      "crop": [
+        824,
+        1280,
+        970,
+        1519
+      ],
+      "destination": [
+        417,
+        649,
+        61,
+        101
+      ]
+    }
+  ],
+  "identityRevision": {
+    "review": "docs/art-source/motions/identity-revisions-2026-09-12/gold_city/review.json",
+    "baselineRuntimeSha256": "9a56c82963f0c36bf359dd62f7c8d0bd2c0059d5b33c9d515519e3b812eaaa21",
+    "previousPacking": "docs/art-source/motions/production-144/gold_city/packing.json",
+    "portrait": "public/assets/portraits/gold_city.png",
+    "portraitSha256": "6b7df06e412278dfd8fb7cd82a5a811ba7073daeeb016c9f12ce43443969bdeb",
+    "changedFrames": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23
+    ],
+    "alpha": {
+      "transparentFraction": 0.5907179758209203,
+      "solidFraction": 0.2923545696857763
+    }
+  }
+}

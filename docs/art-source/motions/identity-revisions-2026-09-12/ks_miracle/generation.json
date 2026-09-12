@@ -1,0 +1,9 @@
+{
+  "tool": "built-in image_gen",
+  "referenceCommit": "847fc5a43eb3017d485192dec5e77812e7e4f98f",
+  "referencePortrait": "public/assets/portraits/ks_miracle.png",
+  "referenceAtlas": "public/assets/motions/ks_miracle.png",
+  "prompt": "Edit the second image's complete 24-pose chibi sprite atlas so EVERY face and hairstyle matches the FIRST portrait. Identity: Light blue smooth ASYMMETRIC BOB HIDING ONE EYE, blue visible eye, yellow ear covers and blue bow. Keep the second image's outfit, full-body poses and exact 4 columns by 6 rows layout: idle, run, attack, skill, KO, victory. Keep the distinct skill gestures and effects (bastion_growth) in row 4, including release in column 3. Do not repeat or replace action rows. All 24 bodies inside separate equal cells, empty gutters. Transparent PNG cutouts with real alpha; no backdrop or checkerboard.",
+  "correctionPrompt": "Preserve these exact 24 character poses in the same 4-column 6-row layout. Add empty transparent padding inside every cell so every body, foot, hair strand and effect fits completely without touching any cell edge, especially the bottom-right pose. Keep the same light blue one-eye-covering hairstyle. Transparent PNG with alpha zero in all empty space.",
+  "alphaEditPrompt": "Make the background transparent. Preserve every character and effect. Export a transparent PNG cutout, with alpha zero in the empty space."
+}
