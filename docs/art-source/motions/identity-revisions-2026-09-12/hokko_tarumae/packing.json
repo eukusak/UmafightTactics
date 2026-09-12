@@ -1,0 +1,484 @@
+{
+  "format": "uft-baked-frames-v1",
+  "columns": 4,
+  "rows": 6,
+  "frameWidth": 128,
+  "frameHeight": 128,
+  "anchor": [
+    64,
+    110
+  ],
+  "scale": 0.45217391304347826,
+  "runtimeSha256": "eceb7fc1bcdba4808e497b63ff6d751947328ae9fc769b43dec84f18be2d48fc",
+  "frames": [
+    {
+      "frame": 0,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/hokko_tarumae/generated.png",
+      "sourceSha256": "eaeb6477152ed930e594573b973006baad7e022dc8c480a63e74a425ca2ba780",
+      "crop": [
+        48,
+        11,
+        210,
+        236
+      ],
+      "destination": [
+        27,
+        8,
+        73,
+        102
+      ]
+    },
+    {
+      "frame": 1,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/hokko_tarumae/generated.png",
+      "sourceSha256": "eaeb6477152ed930e594573b973006baad7e022dc8c480a63e74a425ca2ba780",
+      "crop": [
+        308,
+        12,
+        471,
+        236
+      ],
+      "destination": [
+        155,
+        9,
+        74,
+        101
+      ]
+    },
+    {
+      "frame": 2,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/hokko_tarumae/generated.png",
+      "sourceSha256": "eaeb6477152ed930e594573b973006baad7e022dc8c480a63e74a425ca2ba780",
+      "crop": [
+        568,
+        12,
+        727,
+        236
+      ],
+      "destination": [
+        284,
+        9,
+        72,
+        101
+      ]
+    },
+    {
+      "frame": 3,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/hokko_tarumae/generated.png",
+      "sourceSha256": "eaeb6477152ed930e594573b973006baad7e022dc8c480a63e74a425ca2ba780",
+      "crop": [
+        830,
+        12,
+        989,
+        236
+      ],
+      "destination": [
+        412,
+        9,
+        72,
+        101
+      ]
+    },
+    {
+      "frame": 4,
+      "sourceFrame": 4,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/hokko_tarumae/generated.png",
+      "sourceSha256": "eaeb6477152ed930e594573b973006baad7e022dc8c480a63e74a425ca2ba780",
+      "crop": [
+        44,
+        279,
+        215,
+        497
+      ],
+      "destination": [
+        25,
+        139,
+        77,
+        99
+      ]
+    },
+    {
+      "frame": 5,
+      "sourceFrame": 5,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/hokko_tarumae/generated.png",
+      "sourceSha256": "eaeb6477152ed930e594573b973006baad7e022dc8c480a63e74a425ca2ba780",
+      "crop": [
+        303,
+        279,
+        472,
+        501
+      ],
+      "destination": [
+        154,
+        138,
+        76,
+        100
+      ]
+    },
+    {
+      "frame": 6,
+      "sourceFrame": 6,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/hokko_tarumae/generated.png",
+      "sourceSha256": "eaeb6477152ed930e594573b973006baad7e022dc8c480a63e74a425ca2ba780",
+      "crop": [
+        558,
+        281,
+        729,
+        502
+      ],
+      "destination": [
+        281,
+        138,
+        77,
+        100
+      ]
+    },
+    {
+      "frame": 7,
+      "sourceFrame": 7,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/hokko_tarumae/generated.png",
+      "sourceSha256": "eaeb6477152ed930e594573b973006baad7e022dc8c480a63e74a425ca2ba780",
+      "crop": [
+        814,
+        280,
+        1002,
+        503
+      ],
+      "destination": [
+        405,
+        137,
+        85,
+        101
+      ]
+    },
+    {
+      "frame": 8,
+      "sourceFrame": 8,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/hokko_tarumae/generated.png",
+      "sourceSha256": "eaeb6477152ed930e594573b973006baad7e022dc8c480a63e74a425ca2ba780",
+      "crop": [
+        33,
+        533,
+        205,
+        759
+      ],
+      "destination": [
+        25,
+        264,
+        78,
+        102
+      ]
+    },
+    {
+      "frame": 9,
+      "sourceFrame": 9,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/hokko_tarumae/generated.png",
+      "sourceSha256": "eaeb6477152ed930e594573b973006baad7e022dc8c480a63e74a425ca2ba780",
+      "crop": [
+        306,
+        534,
+        466,
+        761
+      ],
+      "destination": [
+        156,
+        263,
+        72,
+        103
+      ]
+    },
+    {
+      "frame": 10,
+      "sourceFrame": 10,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/hokko_tarumae/generated.png",
+      "sourceSha256": "eaeb6477152ed930e594573b973006baad7e022dc8c480a63e74a425ca2ba780",
+      "crop": [
+        558,
+        533,
+        736,
+        761
+      ],
+      "destination": [
+        280,
+        263,
+        80,
+        103
+      ]
+    },
+    {
+      "frame": 11,
+      "sourceFrame": 11,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/hokko_tarumae/generated.png",
+      "sourceSha256": "eaeb6477152ed930e594573b973006baad7e022dc8c480a63e74a425ca2ba780",
+      "crop": [
+        822,
+        533,
+        983,
+        763
+      ],
+      "destination": [
+        411,
+        262,
+        73,
+        104
+      ]
+    },
+    {
+      "frame": 12,
+      "sourceFrame": 12,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/hokko_tarumae/generated.png",
+      "sourceSha256": "eaeb6477152ed930e594573b973006baad7e022dc8c480a63e74a425ca2ba780",
+      "crop": [
+        33,
+        790,
+        213,
+        1019
+      ],
+      "destination": [
+        23,
+        390,
+        81,
+        104
+      ]
+    },
+    {
+      "frame": 13,
+      "sourceFrame": 13,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/hokko_tarumae/generated.png",
+      "sourceSha256": "eaeb6477152ed930e594573b973006baad7e022dc8c480a63e74a425ca2ba780",
+      "crop": [
+        272,
+        815,
+        501,
+        1023
+      ],
+      "destination": [
+        140,
+        400,
+        104,
+        94
+      ]
+    },
+    {
+      "frame": 14,
+      "sourceFrame": 14,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/hokko_tarumae/generated.png",
+      "sourceSha256": "eaeb6477152ed930e594573b973006baad7e022dc8c480a63e74a425ca2ba780",
+      "crop": [
+        536,
+        812,
+        771,
+        1022
+      ],
+      "destination": [
+        267,
+        399,
+        106,
+        95
+      ]
+    },
+    {
+      "frame": 15,
+      "sourceFrame": 15,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/hokko_tarumae/generated.png",
+      "sourceSha256": "eaeb6477152ed930e594573b973006baad7e022dc8c480a63e74a425ca2ba780",
+      "crop": [
+        813,
+        790,
+        1000,
+        1020
+      ],
+      "destination": [
+        405,
+        390,
+        85,
+        104
+      ]
+    },
+    {
+      "frame": 16,
+      "sourceFrame": 16,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/hokko_tarumae/generated.png",
+      "sourceSha256": "eaeb6477152ed930e594573b973006baad7e022dc8c480a63e74a425ca2ba780",
+      "crop": [
+        31,
+        1062,
+        213,
+        1263
+      ],
+      "destination": [
+        23,
+        531,
+        82,
+        91
+      ]
+    },
+    {
+      "frame": 17,
+      "sourceFrame": 17,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/hokko_tarumae/generated.png",
+      "sourceSha256": "eaeb6477152ed930e594573b973006baad7e022dc8c480a63e74a425ca2ba780",
+      "crop": [
+        294,
+        1082,
+        468,
+        1259
+      ],
+      "destination": [
+        152,
+        542,
+        79,
+        80
+      ]
+    },
+    {
+      "frame": 18,
+      "sourceFrame": 18,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/hokko_tarumae/generated.png",
+      "sourceSha256": "eaeb6477152ed930e594573b973006baad7e022dc8c480a63e74a425ca2ba780",
+      "crop": [
+        550,
+        1110,
+        745,
+        1262
+      ],
+      "destination": [
+        276,
+        553,
+        88,
+        69
+      ]
+    },
+    {
+      "frame": 19,
+      "sourceFrame": 19,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/hokko_tarumae/generated.png",
+      "sourceSha256": "eaeb6477152ed930e594573b973006baad7e022dc8c480a63e74a425ca2ba780",
+      "crop": [
+        797,
+        1151,
+        1011,
+        1259
+      ],
+      "destination": [
+        399,
+        573,
+        97,
+        49
+      ]
+    },
+    {
+      "frame": 20,
+      "sourceFrame": 20,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/hokko_tarumae/generated.png",
+      "sourceSha256": "eaeb6477152ed930e594573b973006baad7e022dc8c480a63e74a425ca2ba780",
+      "crop": [
+        32,
+        1295,
+        203,
+        1514
+      ],
+      "destination": [
+        25,
+        651,
+        77,
+        99
+      ]
+    },
+    {
+      "frame": 21,
+      "sourceFrame": 21,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/hokko_tarumae/generated.png",
+      "sourceSha256": "eaeb6477152ed930e594573b973006baad7e022dc8c480a63e74a425ca2ba780",
+      "crop": [
+        301,
+        1296,
+        469,
+        1517
+      ],
+      "destination": [
+        154,
+        650,
+        76,
+        100
+      ]
+    },
+    {
+      "frame": 22,
+      "sourceFrame": 22,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/hokko_tarumae/generated.png",
+      "sourceSha256": "eaeb6477152ed930e594573b973006baad7e022dc8c480a63e74a425ca2ba780",
+      "crop": [
+        558,
+        1295,
+        721,
+        1515
+      ],
+      "destination": [
+        283,
+        651,
+        74,
+        99
+      ]
+    },
+    {
+      "frame": 23,
+      "sourceFrame": 23,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/hokko_tarumae/generated.png",
+      "sourceSha256": "eaeb6477152ed930e594573b973006baad7e022dc8c480a63e74a425ca2ba780",
+      "crop": [
+        819,
+        1295,
+        984,
+        1515
+      ],
+      "destination": [
+        410,
+        651,
+        75,
+        99
+      ]
+    }
+  ],
+  "identityRevision": {
+    "review": "docs/art-source/motions/identity-revisions-2026-09-12/hokko_tarumae/review.json",
+    "baselineRuntimeSha256": "8a4b1fd073efe8e0e12c15a905cfcfd5491ebdc5f4cada0516ba24cfdc1e6b03",
+    "previousPacking": "docs/art-source/motions/skill-revisions-2026-09-11/hokko_tarumae/packing.json",
+    "portrait": "public/assets/portraits/hokko_tarumae.png",
+    "portraitSha256": "404f36aee6955c32dcd5f87216c2ddc8a4ae06b3f529dd661e9bda9199947d82",
+    "changedFrames": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23
+    ],
+    "alpha": {
+      "transparentFraction": 0.6140467325846354,
+      "solidFraction": 0.3051904042561849
+    }
+  }
+}

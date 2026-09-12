@@ -73,11 +73,13 @@ export type PveLoot = {
   components: string[];
   completedAnvil: number;
   cloneToken: number;
+  removers: number;
+  reforgers: number;
 };
 
 /** Spec §21 — reward orbs; a PvE loss drops the reward one tier. */
 export function rollPveLoot(rng: Rng, stage: number, won: boolean): PveLoot {
-  const loot: PveLoot = { gold: 0, components: [], completedAnvil: 0, cloneToken: 0 };
+  const loot: PveLoot = { gold: 0, components: [], completedAnvil: 0, cloneToken: 0, removers: 1, reforgers: 0 };
   const tiers: OrbTier[] = stage === 1
     ? ['GRAY', 'GRAY', 'BLUE']
     : stage <= 3
@@ -105,6 +107,12 @@ export function rollPveLoot(rng: Rng, stage: number, won: boolean): PveLoot {
       }
     }
   }
+  // Guaranteed ordinary components prevent gold-only PvE rounds. Special
+  // spatula/pan components remain bonus orb drops, outside this minimum.
+  const minimum = !won || stage === 1 ? 1 : stage <= 3 ? 2 : 3;
+  while (loot.components.filter(id => id !== 'factor_badge' && id !== 'support_card').length < minimum)
+    loot.components.push(rng.pick(COMPONENT_IDS.slice(0, 8)));
+  loot.reforgers = stage === 2 || (stage > 2 && rng.bool(.35)) ? 1 : 0;
   return loot;
 }
 

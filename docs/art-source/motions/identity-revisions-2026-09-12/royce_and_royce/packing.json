@@ -1,0 +1,484 @@
+{
+  "format": "uft-baked-frames-v1",
+  "columns": 4,
+  "rows": 6,
+  "frameWidth": 128,
+  "frameHeight": 128,
+  "anchor": [
+    64,
+    110
+  ],
+  "scale": 0.4369747899159664,
+  "runtimeSha256": "0fd9f2e12133fde214793b447c01a11357eb699af5904fd70e12d663c37114f0",
+  "frames": [
+    {
+      "frame": 0,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/royce_and_royce/generated.png",
+      "sourceSha256": "cafef3f1071bec831d5bbe3fbf7963e3d5e3605a249d5fd7f21317094bece83b",
+      "crop": [
+        44,
+        5,
+        194,
+        234
+      ],
+      "destination": [
+        31,
+        10,
+        66,
+        100
+      ]
+    },
+    {
+      "frame": 1,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/royce_and_royce/generated.png",
+      "sourceSha256": "cafef3f1071bec831d5bbe3fbf7963e3d5e3605a249d5fd7f21317094bece83b",
+      "crop": [
+        300,
+        5,
+        451,
+        235
+      ],
+      "destination": [
+        159,
+        9,
+        66,
+        101
+      ]
+    },
+    {
+      "frame": 2,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/royce_and_royce/generated.png",
+      "sourceSha256": "cafef3f1071bec831d5bbe3fbf7963e3d5e3605a249d5fd7f21317094bece83b",
+      "crop": [
+        556,
+        4,
+        706,
+        235
+      ],
+      "destination": [
+        287,
+        9,
+        66,
+        101
+      ]
+    },
+    {
+      "frame": 3,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/royce_and_royce/generated.png",
+      "sourceSha256": "cafef3f1071bec831d5bbe3fbf7963e3d5e3605a249d5fd7f21317094bece83b",
+      "crop": [
+        811,
+        5,
+        962,
+        235
+      ],
+      "destination": [
+        415,
+        9,
+        66,
+        101
+      ]
+    },
+    {
+      "frame": 4,
+      "sourceFrame": 4,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/royce_and_royce/generated.png",
+      "sourceSha256": "cafef3f1071bec831d5bbe3fbf7963e3d5e3605a249d5fd7f21317094bece83b",
+      "crop": [
+        24,
+        273,
+        211,
+        499
+      ],
+      "destination": [
+        23,
+        139,
+        82,
+        99
+      ]
+    },
+    {
+      "frame": 5,
+      "sourceFrame": 5,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/royce_and_royce/generated.png",
+      "sourceSha256": "cafef3f1071bec831d5bbe3fbf7963e3d5e3605a249d5fd7f21317094bece83b",
+      "crop": [
+        282,
+        274,
+        483,
+        499
+      ],
+      "destination": [
+        148,
+        140,
+        88,
+        98
+      ]
+    },
+    {
+      "frame": 6,
+      "sourceFrame": 6,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/royce_and_royce/generated.png",
+      "sourceSha256": "cafef3f1071bec831d5bbe3fbf7963e3d5e3605a249d5fd7f21317094bece83b",
+      "crop": [
+        543,
+        274,
+        736,
+        499
+      ],
+      "destination": [
+        278,
+        140,
+        84,
+        98
+      ]
+    },
+    {
+      "frame": 7,
+      "sourceFrame": 7,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/royce_and_royce/generated.png",
+      "sourceSha256": "cafef3f1071bec831d5bbe3fbf7963e3d5e3605a249d5fd7f21317094bece83b",
+      "crop": [
+        799,
+        275,
+        992,
+        499
+      ],
+      "destination": [
+        406,
+        140,
+        84,
+        98
+      ]
+    },
+    {
+      "frame": 8,
+      "sourceFrame": 8,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/royce_and_royce/generated.png",
+      "sourceSha256": "cafef3f1071bec831d5bbe3fbf7963e3d5e3605a249d5fd7f21317094bece83b",
+      "crop": [
+        29,
+        526,
+        199,
+        760
+      ],
+      "destination": [
+        27,
+        264,
+        74,
+        102
+      ]
+    },
+    {
+      "frame": 9,
+      "sourceFrame": 9,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/royce_and_royce/generated.png",
+      "sourceSha256": "cafef3f1071bec831d5bbe3fbf7963e3d5e3605a249d5fd7f21317094bece83b",
+      "crop": [
+        278,
+        526,
+        481,
+        756
+      ],
+      "destination": [
+        147,
+        265,
+        89,
+        101
+      ]
+    },
+    {
+      "frame": 10,
+      "sourceFrame": 10,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/royce_and_royce/generated.png",
+      "sourceSha256": "cafef3f1071bec831d5bbe3fbf7963e3d5e3605a249d5fd7f21317094bece83b",
+      "crop": [
+        528,
+        526,
+        740,
+        756
+      ],
+      "destination": [
+        273,
+        265,
+        93,
+        101
+      ]
+    },
+    {
+      "frame": 11,
+      "sourceFrame": 11,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/royce_and_royce/generated.png",
+      "sourceSha256": "cafef3f1071bec831d5bbe3fbf7963e3d5e3605a249d5fd7f21317094bece83b",
+      "crop": [
+        806,
+        527,
+        965,
+        762
+      ],
+      "destination": [
+        413,
+        263,
+        69,
+        103
+      ]
+    },
+    {
+      "frame": 12,
+      "sourceFrame": 12,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/royce_and_royce/generated.png",
+      "sourceSha256": "cafef3f1071bec831d5bbe3fbf7963e3d5e3605a249d5fd7f21317094bece83b",
+      "crop": [
+        34,
+        786,
+        197,
+        1022
+      ],
+      "destination": [
+        28,
+        391,
+        71,
+        103
+      ]
+    },
+    {
+      "frame": 13,
+      "sourceFrame": 13,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/royce_and_royce/generated.png",
+      "sourceSha256": "cafef3f1071bec831d5bbe3fbf7963e3d5e3605a249d5fd7f21317094bece83b",
+      "crop": [
+        279,
+        787,
+        468,
+        1022
+      ],
+      "destination": [
+        150,
+        391,
+        83,
+        103
+      ]
+    },
+    {
+      "frame": 14,
+      "sourceFrame": 14,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/royce_and_royce/generated.png",
+      "sourceSha256": "cafef3f1071bec831d5bbe3fbf7963e3d5e3605a249d5fd7f21317094bece83b",
+      "crop": [
+        537,
+        787,
+        736,
+        1022
+      ],
+      "destination": [
+        276,
+        391,
+        87,
+        103
+      ]
+    },
+    {
+      "frame": 15,
+      "sourceFrame": 15,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/royce_and_royce/generated.png",
+      "sourceSha256": "cafef3f1071bec831d5bbe3fbf7963e3d5e3605a249d5fd7f21317094bece83b",
+      "crop": [
+        803,
+        786,
+        966,
+        1024
+      ],
+      "destination": [
+        412,
+        390,
+        71,
+        104
+      ]
+    },
+    {
+      "frame": 16,
+      "sourceFrame": 16,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/royce_and_royce/generated.png",
+      "sourceSha256": "cafef3f1071bec831d5bbe3fbf7963e3d5e3605a249d5fd7f21317094bece83b",
+      "crop": [
+        24,
+        1050,
+        213,
+        1258
+      ],
+      "destination": [
+        22,
+        531,
+        83,
+        91
+      ]
+    },
+    {
+      "frame": 17,
+      "sourceFrame": 17,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/royce_and_royce/generated.png",
+      "sourceSha256": "cafef3f1071bec831d5bbe3fbf7963e3d5e3605a249d5fd7f21317094bece83b",
+      "crop": [
+        284,
+        1074,
+        471,
+        1257
+      ],
+      "destination": [
+        151,
+        542,
+        82,
+        80
+      ]
+    },
+    {
+      "frame": 18,
+      "sourceFrame": 18,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/royce_and_royce/generated.png",
+      "sourceSha256": "cafef3f1071bec831d5bbe3fbf7963e3d5e3605a249d5fd7f21317094bece83b",
+      "crop": [
+        535,
+        1089,
+        731,
+        1257
+      ],
+      "destination": [
+        277,
+        549,
+        86,
+        73
+      ]
+    },
+    {
+      "frame": 19,
+      "sourceFrame": 19,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/royce_and_royce/generated.png",
+      "sourceSha256": "cafef3f1071bec831d5bbe3fbf7963e3d5e3605a249d5fd7f21317094bece83b",
+      "crop": [
+        781,
+        1144,
+        1006,
+        1260
+      ],
+      "destination": [
+        399,
+        571,
+        98,
+        51
+      ]
+    },
+    {
+      "frame": 20,
+      "sourceFrame": 20,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/royce_and_royce/generated.png",
+      "sourceSha256": "cafef3f1071bec831d5bbe3fbf7963e3d5e3605a249d5fd7f21317094bece83b",
+      "crop": [
+        42,
+        1293,
+        194,
+        1520
+      ],
+      "destination": [
+        31,
+        651,
+        66,
+        99
+      ]
+    },
+    {
+      "frame": 21,
+      "sourceFrame": 21,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/royce_and_royce/generated.png",
+      "sourceSha256": "cafef3f1071bec831d5bbe3fbf7963e3d5e3605a249d5fd7f21317094bece83b",
+      "crop": [
+        289,
+        1283,
+        454,
+        1520
+      ],
+      "destination": [
+        156,
+        646,
+        72,
+        104
+      ]
+    },
+    {
+      "frame": 22,
+      "sourceFrame": 22,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/royce_and_royce/generated.png",
+      "sourceSha256": "cafef3f1071bec831d5bbe3fbf7963e3d5e3605a249d5fd7f21317094bece83b",
+      "crop": [
+        558,
+        1293,
+        711,
+        1520
+      ],
+      "destination": [
+        286,
+        651,
+        67,
+        99
+      ]
+    },
+    {
+      "frame": 23,
+      "sourceFrame": 23,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/royce_and_royce/generated.png",
+      "sourceSha256": "cafef3f1071bec831d5bbe3fbf7963e3d5e3605a249d5fd7f21317094bece83b",
+      "crop": [
+        811,
+        1293,
+        967,
+        1520
+      ],
+      "destination": [
+        414,
+        651,
+        68,
+        99
+      ]
+    }
+  ],
+  "identityRevision": {
+    "review": "docs/art-source/motions/identity-revisions-2026-09-12/royce_and_royce/review.json",
+    "baselineRuntimeSha256": "5cc36db5534ffe1c5d5780866e74032954d2106a95781f11b7dfdd58c1e7d11a",
+    "previousPacking": "docs/art-source/motions/production-144/royce_and_royce/packing.json",
+    "portrait": "public/assets/portraits/royce_and_royce.png",
+    "portraitSha256": "e4fa7be39e7c2b00adfcdeeb5c9084bb258cc90fab12e48427f265b4bd8c90cd",
+    "changedFrames": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23
+    ],
+    "alpha": {
+      "transparentFraction": 0.5941950480143229,
+      "solidFraction": 0.2949301401774089
+    }
+  }
+}

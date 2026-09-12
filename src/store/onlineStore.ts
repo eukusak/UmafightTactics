@@ -35,6 +35,7 @@ export const useOnlineStore = create<OnlineStore>((set, get) => ({
       if (m.type === 'welcome') {
         const session = { code: m.code, token: m.token, playerId: m.playerId, lastSeq: m.lastSeq };
         sequence = m.lastSeq; storeSession(session); set({ session, error: null });
+        if (game.onlinePlayerId) ws.send(JSON.stringify({ type: 'watch', player: game.spectating }));
       } else if (m.type === 'room') set({ room: m.room });
       else if (m.type === 'error') { set({ error: m.message }); useGameStore.setState({ lastError: m.message }); }
       else if (m.type === 'state') {
@@ -45,13 +46,15 @@ export const useOnlineStore = create<OnlineStore>((set, get) => ({
           director: null, match: m.match, onlinePlayerId: m.playerId, onlineBattleId: m.battleId,
           onlineDeadline: m.deadline, onlineClockOffset: m.serverNow - Date.now(), networkConnected: true, lastError: null,
           battleRunning: battling, battleComplete: m.settled, revision: game.revision + 1,
-          ...(newBattle && battling ? { battleFrames: null, battleTime: m.battleTime, selectedUnitId: null } : {}),
+          ...(newBattle && battling ? { battleFrames: null, scoutFrames: {}, battleTime: m.battleTime, selectedUnitId: null } : {}),
           ...(!battling && game.battleRunning ? { battleTime: game.battleFrames?.at(-1)?.t ?? game.battleTime } : {}),
           screen: m.match.phase === 'GAME_OVER' ? 'RESULT' : first || game.screen === 'ONLINE' || game.screen === 'RESULT' ? 'BATTLE' : game.screen,
         });
       } else if (m.type === 'ack' && m.sound) playSound(m.sound);
       else if (m.type === 'frames' && m.battleId === game.onlineBattleId) {
-        useGameStore.setState({ battleFrames: m.reset ? m.frames : [...(game.battleFrames ?? []), ...m.frames] });
+        const owner = m.playerId ?? game.onlinePlayerId!;
+        if (owner === game.onlinePlayerId) useGameStore.setState({ battleFrames: m.reset ? m.frames : [...(game.battleFrames ?? []), ...m.frames], battleTime: m.time });
+        else useGameStore.setState({ scoutFrames: { ...game.scoutFrames, [owner]: m.reset ? m.frames : [...(game.scoutFrames[owner] ?? []), ...m.frames] }, battleTime: m.time });
       }
     };
     ws.onclose = (event) => {
@@ -84,3 +87,5 @@ onlineBridge.send = (command) => {
   useOnlineStore.getState().send({ type: 'command', seq: ++sequence, round: `${state.match?.stage}-${state.match?.round}`, command });
 };
 onlineBridge.leave = () => useOnlineStore.getState().leave();
+
+onlineBridge.watch = player => useOnlineStore.getState().send({ type: 'watch', player });

@@ -2,6 +2,12 @@ import { useEffect } from 'react';
 import { useGameStore } from '../../store/gameStore';
 import { useInteractionStore } from '../../store/interactionStore';
 import { bindMouseItemCombine, createItemCombineHold } from './item-combine-drag';
+import { prepPoint } from './board-projection';
+
+const contextKey = () => {
+  const s = useGameStore.getState();
+  return `${s.screen}:${s.match?.stage}-${s.match?.round}:${s.match?.phase}:${s.battleRunning}:${s.spectating}:${s.networkConnected}`;
+};
 
 /** Use viewport hit testing so touch drops also work on a scaled/scrolling board. */
 export function bindTouchDrag(): () => void {
@@ -12,6 +18,17 @@ export function bindTouchDrag(): () => void {
   const hit = () => {
     target?.removeAttribute('data-touch-over');
     target = document.elementFromPoint(x, y)?.closest<HTMLElement>('[data-drop]') ?? null;
+    // A unit's tall artwork overlaps the row behind it. Unit placement uses
+    // board coordinates, while item equipment still targets the visible body.
+    const board = document.querySelector<HTMLElement>('[data-prep-board="editable"]');
+    if (pending?.unit && board && document.elementFromPoint(x, y)?.closest('.prep-layer')) {
+      const box = board.getBoundingClientRect();
+      const px = (x - box.left) * 1320 / box.width, py = (y - box.top) * 658 / box.height;
+      const cells = Array.from({ length: 28 }, (_, i) => ({ q: i % 7, r: Math.floor(i / 7) }));
+      const nearest = cells.map(cell => { const p = prepPoint(cell); return { cell, distance: ((px - p.x) / (56 * p.scale)) ** 2 + ((py - p.y) / 25) ** 2 }; }).sort((a, b) => a.distance - b.distance)[0];
+      if (nearest.distance < 2) target = board.querySelector<HTMLElement>(`.arena-cell[data-q="${nearest.cell.q}"][data-r="${nearest.cell.r}"]`);
+      else target = null;
+    }
     target?.setAttribute('data-touch-over', 'true');
     if (pending?.item) combineHold.over(target?.dataset.dropItem ?? null);
   };
@@ -20,6 +37,7 @@ export function bindTouchDrag(): () => void {
     cancelAnimationFrame(raf); ghost?.remove(); ghost = null;
     target?.removeAttribute('data-touch-over'); target = null;
     pending = null; active = false; useInteractionStore.getState().drag(null);
+    document.body.classList.remove('placing-unit');
   };
   const scroll = () => {
     if (!active) return;
@@ -32,7 +50,10 @@ export function bindTouchDrag(): () => void {
     raf = requestAnimationFrame(scroll);
   };
   const down = (e: PointerEvent) => {
-    if (e.pointerType === 'mouse' || !e.isPrimary || pending) return;
+    if (!e.isPrimary || e.button !== 0 || pending) return;
+    suppressUntil = 0; // A fresh press is intentional, not the drag's synthetic click.
+    const game = useGameStore.getState();
+    if (game.battleRunning || game.match?.phase !== 'ROUND_PREP' || game.spectating || (game.onlinePlayerId && !game.networkConnected)) return;
     const source = e.target instanceof Element ? e.target.closest<HTMLElement>('[data-touch-unit], [data-touch-item]') : null;
     if (!source || source.closest('.overlay')) return;
     pending = { pointer: e.pointerId, unit: source.dataset.touchUnit, item: source.dataset.touchItem, x: e.clientX, y: e.clientY, source };
@@ -44,6 +65,7 @@ export function bindTouchDrag(): () => void {
     e.preventDefault();
     if (!active) {
       active = true;
+      if (pending.unit) document.body.classList.add('placing-unit');
       if (pending.item) combineHold.start(pending.item);
       useInteractionStore.getState().drag(pending.unit ?? null);
       ghost = document.createElement('div'); ghost.className = 'touch-drag-ghost';
@@ -83,7 +105,21 @@ export function bindTouchDrag(): () => void {
   window.addEventListener('blur', stop);
   document.addEventListener('keydown', key, true);
   document.addEventListener('visibilitychange', visibility);
+  let keyBefore = contextKey();
+  let watchedBefore = useGameStore.getState().spectating;
+  const unsubscribe = useGameStore.subscribe(() => {
+    const next = contextKey();
+    if (next !== keyBefore) {
+      keyBefore = next;
+      if (active) suppressUntil = Date.now() + 500;
+      stop(); useInteractionStore.getState().hover(null);
+      const game = useGameStore.getState();
+      if (game.spectating !== watchedBefore) { watchedBefore = game.spectating; useInteractionStore.getState().inspect(null); }
+      if (game.selectedUnitId) useGameStore.setState({ selectedUnitId: null });
+    }
+  });
   return () => {
+    unsubscribe();
     stop();
     document.removeEventListener('pointerdown', down, true);
     document.removeEventListener('pointermove', move, true);

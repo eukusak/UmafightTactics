@@ -1,0 +1,484 @@
+{
+  "format": "uft-baked-frames-v1",
+  "columns": 4,
+  "rows": 6,
+  "frameWidth": 128,
+  "frameHeight": 128,
+  "anchor": [
+    64,
+    110
+  ],
+  "scale": 0.4279835390946502,
+  "runtimeSha256": "8e24f87bc5facaa3818305c9bf65e7c021cad48f6110ce0ee62a74652c7b5e6e",
+  "frames": [
+    {
+      "frame": 0,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/dantsu_flame/generated.png",
+      "sourceSha256": "ba08c7502595fc9cff0d8aa661b0278f4aa367c2ff193006dea5e639080b7284",
+      "crop": [
+        52,
+        8,
+        197,
+        242
+      ],
+      "destination": [
+        33,
+        10,
+        62,
+        100
+      ]
+    },
+    {
+      "frame": 1,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/dantsu_flame/generated.png",
+      "sourceSha256": "ba08c7502595fc9cff0d8aa661b0278f4aa367c2ff193006dea5e639080b7284",
+      "crop": [
+        312,
+        12,
+        460,
+        243
+      ],
+      "destination": [
+        160,
+        11,
+        63,
+        99
+      ]
+    },
+    {
+      "frame": 2,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/dantsu_flame/generated.png",
+      "sourceSha256": "ba08c7502595fc9cff0d8aa661b0278f4aa367c2ff193006dea5e639080b7284",
+      "crop": [
+        574,
+        13,
+        719,
+        241
+      ],
+      "destination": [
+        289,
+        12,
+        62,
+        98
+      ]
+    },
+    {
+      "frame": 3,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/dantsu_flame/generated.png",
+      "sourceSha256": "ba08c7502595fc9cff0d8aa661b0278f4aa367c2ff193006dea5e639080b7284",
+      "crop": [
+        836,
+        11,
+        981,
+        244
+      ],
+      "destination": [
+        417,
+        10,
+        62,
+        100
+      ]
+    },
+    {
+      "frame": 4,
+      "sourceFrame": 4,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/dantsu_flame/generated.png",
+      "sourceSha256": "ba08c7502595fc9cff0d8aa661b0278f4aa367c2ff193006dea5e639080b7284",
+      "crop": [
+        36,
+        278,
+        211,
+        505
+      ],
+      "destination": [
+        26,
+        141,
+        75,
+        97
+      ]
+    },
+    {
+      "frame": 5,
+      "sourceFrame": 5,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/dantsu_flame/generated.png",
+      "sourceSha256": "ba08c7502595fc9cff0d8aa661b0278f4aa367c2ff193006dea5e639080b7284",
+      "crop": [
+        301,
+        281,
+        473,
+        500
+      ],
+      "destination": [
+        155,
+        144,
+        74,
+        94
+      ]
+    },
+    {
+      "frame": 6,
+      "sourceFrame": 6,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/dantsu_flame/generated.png",
+      "sourceSha256": "ba08c7502595fc9cff0d8aa661b0278f4aa367c2ff193006dea5e639080b7284",
+      "crop": [
+        559,
+        274,
+        734,
+        507
+      ],
+      "destination": [
+        282,
+        138,
+        75,
+        100
+      ]
+    },
+    {
+      "frame": 7,
+      "sourceFrame": 7,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/dantsu_flame/generated.png",
+      "sourceSha256": "ba08c7502595fc9cff0d8aa661b0278f4aa367c2ff193006dea5e639080b7284",
+      "crop": [
+        819,
+        276,
+        989,
+        507
+      ],
+      "destination": [
+        411,
+        139,
+        73,
+        99
+      ]
+    },
+    {
+      "frame": 8,
+      "sourceFrame": 8,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/dantsu_flame/generated.png",
+      "sourceSha256": "ba08c7502595fc9cff0d8aa661b0278f4aa367c2ff193006dea5e639080b7284",
+      "crop": [
+        49,
+        532,
+        206,
+        761
+      ],
+      "destination": [
+        30,
+        268,
+        67,
+        98
+      ]
+    },
+    {
+      "frame": 9,
+      "sourceFrame": 9,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/dantsu_flame/generated.png",
+      "sourceSha256": "ba08c7502595fc9cff0d8aa661b0278f4aa367c2ff193006dea5e639080b7284",
+      "crop": [
+        302,
+        532,
+        479,
+        762
+      ],
+      "destination": [
+        154,
+        268,
+        76,
+        98
+      ]
+    },
+    {
+      "frame": 10,
+      "sourceFrame": 10,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/dantsu_flame/generated.png",
+      "sourceSha256": "ba08c7502595fc9cff0d8aa661b0278f4aa367c2ff193006dea5e639080b7284",
+      "crop": [
+        552,
+        536,
+        754,
+        765
+      ],
+      "destination": [
+        277,
+        268,
+        86,
+        98
+      ]
+    },
+    {
+      "frame": 11,
+      "sourceFrame": 11,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/dantsu_flame/generated.png",
+      "sourceSha256": "ba08c7502595fc9cff0d8aa661b0278f4aa367c2ff193006dea5e639080b7284",
+      "crop": [
+        830,
+        532,
+        980,
+        765
+      ],
+      "destination": [
+        416,
+        266,
+        64,
+        100
+      ]
+    },
+    {
+      "frame": 12,
+      "sourceFrame": 12,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/dantsu_flame/generated.png",
+      "sourceSha256": "ba08c7502595fc9cff0d8aa661b0278f4aa367c2ff193006dea5e639080b7284",
+      "crop": [
+        47,
+        783,
+        203,
+        1025
+      ],
+      "destination": [
+        30,
+        390,
+        67,
+        104
+      ]
+    },
+    {
+      "frame": 13,
+      "sourceFrame": 13,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/dantsu_flame/generated.png",
+      "sourceSha256": "ba08c7502595fc9cff0d8aa661b0278f4aa367c2ff193006dea5e639080b7284",
+      "crop": [
+        300,
+        784,
+        486,
+        1025
+      ],
+      "destination": [
+        152,
+        391,
+        80,
+        103
+      ]
+    },
+    {
+      "frame": 14,
+      "sourceFrame": 14,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/dantsu_flame/generated.png",
+      "sourceSha256": "ba08c7502595fc9cff0d8aa661b0278f4aa367c2ff193006dea5e639080b7284",
+      "crop": [
+        556,
+        782,
+        757,
+        1025
+      ],
+      "destination": [
+        277,
+        390,
+        86,
+        104
+      ]
+    },
+    {
+      "frame": 15,
+      "sourceFrame": 15,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/dantsu_flame/generated.png",
+      "sourceSha256": "ba08c7502595fc9cff0d8aa661b0278f4aa367c2ff193006dea5e639080b7284",
+      "crop": [
+        827,
+        784,
+        981,
+        1025
+      ],
+      "destination": [
+        415,
+        391,
+        66,
+        103
+      ]
+    },
+    {
+      "frame": 16,
+      "sourceFrame": 16,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/dantsu_flame/generated.png",
+      "sourceSha256": "ba08c7502595fc9cff0d8aa661b0278f4aa367c2ff193006dea5e639080b7284",
+      "crop": [
+        44,
+        1052,
+        206,
+        1270
+      ],
+      "destination": [
+        29,
+        529,
+        69,
+        93
+      ]
+    },
+    {
+      "frame": 17,
+      "sourceFrame": 17,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/dantsu_flame/generated.png",
+      "sourceSha256": "ba08c7502595fc9cff0d8aa661b0278f4aa367c2ff193006dea5e639080b7284",
+      "crop": [
+        295,
+        1076,
+        479,
+        1265
+      ],
+      "destination": [
+        152,
+        541,
+        79,
+        81
+      ]
+    },
+    {
+      "frame": 18,
+      "sourceFrame": 18,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/dantsu_flame/generated.png",
+      "sourceSha256": "ba08c7502595fc9cff0d8aa661b0278f4aa367c2ff193006dea5e639080b7284",
+      "crop": [
+        556,
+        1084,
+        733,
+        1265
+      ],
+      "destination": [
+        282,
+        545,
+        76,
+        77
+      ]
+    },
+    {
+      "frame": 19,
+      "sourceFrame": 19,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/dantsu_flame/generated.png",
+      "sourceSha256": "ba08c7502595fc9cff0d8aa661b0278f4aa367c2ff193006dea5e639080b7284",
+      "crop": [
+        795,
+        1141,
+        1016,
+        1261
+      ],
+      "destination": [
+        400,
+        571,
+        95,
+        51
+      ]
+    },
+    {
+      "frame": 20,
+      "sourceFrame": 20,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/dantsu_flame/generated.png",
+      "sourceSha256": "ba08c7502595fc9cff0d8aa661b0278f4aa367c2ff193006dea5e639080b7284",
+      "crop": [
+        49,
+        1282,
+        202,
+        1518
+      ],
+      "destination": [
+        31,
+        649,
+        65,
+        101
+      ]
+    },
+    {
+      "frame": 21,
+      "sourceFrame": 21,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/dantsu_flame/generated.png",
+      "sourceSha256": "ba08c7502595fc9cff0d8aa661b0278f4aa367c2ff193006dea5e639080b7284",
+      "crop": [
+        309,
+        1282,
+        462,
+        1518
+      ],
+      "destination": [
+        159,
+        649,
+        65,
+        101
+      ]
+    },
+    {
+      "frame": 22,
+      "sourceFrame": 22,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/dantsu_flame/generated.png",
+      "sourceSha256": "ba08c7502595fc9cff0d8aa661b0278f4aa367c2ff193006dea5e639080b7284",
+      "crop": [
+        571,
+        1286,
+        723,
+        1519
+      ],
+      "destination": [
+        287,
+        650,
+        65,
+        100
+      ]
+    },
+    {
+      "frame": 23,
+      "sourceFrame": 23,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/dantsu_flame/generated.png",
+      "sourceSha256": "ba08c7502595fc9cff0d8aa661b0278f4aa367c2ff193006dea5e639080b7284",
+      "crop": [
+        831,
+        1281,
+        984,
+        1522
+      ],
+      "destination": [
+        415,
+        647,
+        65,
+        103
+      ]
+    }
+  ],
+  "identityRevision": {
+    "review": "docs/art-source/motions/identity-revisions-2026-09-12/dantsu_flame/review.json",
+    "baselineRuntimeSha256": "91f6bc7be0fe9390edf96f38548d1b46de7bdeb9317c0564380ffbb20216afb7",
+    "previousPacking": "docs/art-source/motions/production-144/dantsu_flame/packing.json",
+    "portrait": "public/assets/portraits/dantsu_flame.png",
+    "portraitSha256": "ac2e56bcf00ab99a0836f160717b894bd6b76888a44f0c481a09219a3f2188eb",
+    "changedFrames": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23
+    ],
+    "alpha": {
+      "transparentFraction": 0.6098492940266927,
+      "solidFraction": 0.28853607177734375
+    }
+  }
+}

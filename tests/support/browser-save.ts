@@ -23,6 +23,15 @@ for (let i = 0; i < count; i++) {
   else p.bench.push(u);
 }
 if (mode === 'components') p.items = COMPONENT_IDS.map((id, i) => ({ instanceId: `fixture-item-${i}`, itemId: id }));
+if (mode === 'patch-tools') {
+  p.level = 3;
+  p.pendingGrants = [{ kind: 'REMOVER', count: 2 }, { kind: 'REFORGER', count: 2 }];
+  p.items = [{ instanceId: 'tool-component', itemId: 'training_belt' }];
+  p.bench[0].items = ['winner_ribbon', 'iron_stable'];
+  const extra = newInstance(state, units[1].id, 1);
+  if (!take(state.pool, extra.unitDefId, 1)) throw new Error('fixture pool');
+  p.bench.push(extra);
+}
 if (mode === 'item-rewards') { p.items = []; p.pendingGrants = [{ kind: 'RADIANT_CHOICE', count: 1 }, { kind: 'ARTIFACT_CHOICE', count: 1 }]; }
 p.shop = rollShop(p, state.pool, new Rng(9001));
 if (mode === 'augment') { state.stage = 2; state.round = 1; state.augmentOffers = createAugmentOffers(state, new Rng(91)); state.phase = 'AUGMENT_SELECT'; }

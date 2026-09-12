@@ -11,7 +11,7 @@ import { applyOnlineCommand, autoField } from '../src/game/network/commands';
 import type { ClientMessage, RoomView, ServerMessage } from '../src/game/network/protocol';
 
 export type Peer = { send: (message: ServerMessage) => void; close: () => void };
-type Seat = { ai?: boolean; id: string; name: string; token: string; ready: boolean; peer: Peer | null; disconnectedAt: number; lastSeq: number; sentFrames: number };
+type Seat = { ai?: boolean; id: string; name: string; token: string; ready: boolean; peer: Peer | null; disconnectedAt: number; lastSeq: number; sentFrames: number; watching?: string | null };
 export type Room = { seasonId: import('../src/game/engine/seasons/catalog').SeasonId; code: string; hostId: string; seats: Seat[]; director: RoundDirector | null; deadline: number; changedAt: number; phaseKey: string; battleStarted: number; battleDuration: number; battleId: string | null; settled: boolean; draftUpdatedAt?: number; draftBroadcastAt?: number };
 type SavedRoom = Omit<Room, 'director' | 'seats'> & {
   seats: Omit<Seat, 'peer'>[];
@@ -103,7 +103,7 @@ export class RoomService {
         if (!found) throw new Error('재접속 정보가 올바르지 않습니다.');
         seat = found;
         if (seat.peer) { this.memberships.delete(seat.peer); seat.peer.close(); }
-        seat.peer = peer; seat.disconnectedAt = 0;
+        seat.peer = peer; seat.disconnectedAt = 0; seat.watching = null; seat.sentFrames = 0;
         if (!room.director && !room.seats.some(s => s.id === room.hostId && s.peer && !s.ai)) room.hostId = seat.id;
       } else {
         if (room.director) throw new Error('이미 시작된 방입니다.');
@@ -122,6 +122,10 @@ export class RoomService {
     const { room, seat } = member;
     room.changedAt = this.now();
     if (message.type === 'leave') { this.disconnect(peer, true); return; }
+    if (message.type === 'watch') {
+      if (!room.director || (message.player && !room.director.state.players.some(p => p.id === message.player))) throw new Error('관전할 수 없는 플레이어입니다.');
+      seat.watching = message.player; seat.sentFrames = 0; this.sendFrames(room, seat, true); return;
+    }
     if (message.type === 'ready') {
       if (room.director) throw new Error('이미 게임이 시작되었습니다.');
       seat.ready = message.ready; this.broadcastRoom(room); return;
@@ -231,7 +235,7 @@ export class RoomService {
         this.setDeadline(room); this.broadcastState(room); continue;
       }
       for (const p of d.state.players.filter(isAlive)) autoField(d, p.id);
-      const resolution = d.resolveRound(true);
+      const resolution = d.resolveRound(true, true);
       room.battleStarted = this.now(); room.battleDuration = Math.max(0, ...resolution.outcomes.map((o) => o.durationSeconds));
       room.battleId = `${d.state.stage}-${d.state.round}`; room.settled = false;
       room.deadline = room.battleStarted + (room.battleDuration + 1) * 1000;
@@ -257,12 +261,13 @@ export class RoomService {
   }
   private sendFrames(room: Room, seat: Seat, reset = false): void {
     if (!room.battleId) return;
-    const frames = room.director?.playerFrames.get(seat.id) ?? [];
+    const playerId = seat.watching ?? seat.id;
+    const frames = room.director?.playerFrames.get(playerId) ?? [];
     const time = Math.max(0, (this.now() - room.battleStarted) / 1000);
     let end = seat.sentFrames;
     while (end < frames.length && frames[end].t <= time) end++;
     if (!reset && end === seat.sentFrames) return;
-    seat.peer?.send({ type: 'frames', battleId: room.battleId, frames: frames.slice(reset ? 0 : seat.sentFrames, end), time, reset });
+    seat.peer?.send({ type: 'frames', playerId, battleId: room.battleId, frames: frames.slice(reset ? 0 : seat.sentFrames, end), time, reset });
     seat.sentFrames = end;
   }
 }

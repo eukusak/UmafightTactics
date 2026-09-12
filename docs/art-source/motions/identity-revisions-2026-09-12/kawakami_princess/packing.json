@@ -1,0 +1,484 @@
+{
+  "format": "uft-baked-frames-v1",
+  "columns": 4,
+  "rows": 6,
+  "frameWidth": 128,
+  "frameHeight": 128,
+  "anchor": [
+    64,
+    110
+  ],
+  "scale": 0.416,
+  "runtimeSha256": "bf81e4f4e046b0c4e8b3964a68c84a7d0f2a0a9720099e1e5dffa9aafc503c60",
+  "frames": [
+    {
+      "frame": 0,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/kawakami_princess/generated.png",
+      "sourceSha256": "85be4016a5fbc987f99387437cb73843e9cd53c955b585ab2c9c33a5259b26ce",
+      "crop": [
+        29,
+        7,
+        216,
+        251
+      ],
+      "destination": [
+        25,
+        8,
+        78,
+        102
+      ]
+    },
+    {
+      "frame": 1,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/kawakami_princess/generated.png",
+      "sourceSha256": "85be4016a5fbc987f99387437cb73843e9cd53c955b585ab2c9c33a5259b26ce",
+      "crop": [
+        285,
+        7,
+        472,
+        251
+      ],
+      "destination": [
+        153,
+        8,
+        78,
+        102
+      ]
+    },
+    {
+      "frame": 2,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/kawakami_princess/generated.png",
+      "sourceSha256": "85be4016a5fbc987f99387437cb73843e9cd53c955b585ab2c9c33a5259b26ce",
+      "crop": [
+        541,
+        7,
+        727,
+        251
+      ],
+      "destination": [
+        281,
+        8,
+        77,
+        102
+      ]
+    },
+    {
+      "frame": 3,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/kawakami_princess/generated.png",
+      "sourceSha256": "85be4016a5fbc987f99387437cb73843e9cd53c955b585ab2c9c33a5259b26ce",
+      "crop": [
+        797,
+        7,
+        983,
+        251
+      ],
+      "destination": [
+        409,
+        8,
+        77,
+        102
+      ]
+    },
+    {
+      "frame": 4,
+      "sourceFrame": 4,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/kawakami_princess/generated.png",
+      "sourceSha256": "85be4016a5fbc987f99387437cb73843e9cd53c955b585ab2c9c33a5259b26ce",
+      "crop": [
+        27,
+        264,
+        216,
+        501
+      ],
+      "destination": [
+        24,
+        139,
+        79,
+        99
+      ]
+    },
+    {
+      "frame": 5,
+      "sourceFrame": 5,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/kawakami_princess/generated.png",
+      "sourceSha256": "85be4016a5fbc987f99387437cb73843e9cd53c955b585ab2c9c33a5259b26ce",
+      "crop": [
+        282,
+        264,
+        472,
+        500
+      ],
+      "destination": [
+        152,
+        140,
+        79,
+        98
+      ]
+    },
+    {
+      "frame": 6,
+      "sourceFrame": 6,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/kawakami_princess/generated.png",
+      "sourceSha256": "85be4016a5fbc987f99387437cb73843e9cd53c955b585ab2c9c33a5259b26ce",
+      "crop": [
+        538,
+        264,
+        727,
+        503
+      ],
+      "destination": [
+        280,
+        139,
+        79,
+        99
+      ]
+    },
+    {
+      "frame": 7,
+      "sourceFrame": 7,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/kawakami_princess/generated.png",
+      "sourceSha256": "85be4016a5fbc987f99387437cb73843e9cd53c955b585ab2c9c33a5259b26ce",
+      "crop": [
+        795,
+        264,
+        983,
+        499
+      ],
+      "destination": [
+        409,
+        140,
+        78,
+        98
+      ]
+    },
+    {
+      "frame": 8,
+      "sourceFrame": 8,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/kawakami_princess/generated.png",
+      "sourceSha256": "85be4016a5fbc987f99387437cb73843e9cd53c955b585ab2c9c33a5259b26ce",
+      "crop": [
+        19,
+        517,
+        224,
+        756
+      ],
+      "destination": [
+        21,
+        267,
+        85,
+        99
+      ]
+    },
+    {
+      "frame": 9,
+      "sourceFrame": 9,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/kawakami_princess/generated.png",
+      "sourceSha256": "85be4016a5fbc987f99387437cb73843e9cd53c955b585ab2c9c33a5259b26ce",
+      "crop": [
+        276,
+        517,
+        455,
+        761
+      ],
+      "destination": [
+        155,
+        264,
+        74,
+        102
+      ]
+    },
+    {
+      "frame": 10,
+      "sourceFrame": 10,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/kawakami_princess/generated.png",
+      "sourceSha256": "85be4016a5fbc987f99387437cb73843e9cd53c955b585ab2c9c33a5259b26ce",
+      "crop": [
+        528,
+        517,
+        746,
+        758
+      ],
+      "destination": [
+        274,
+        266,
+        91,
+        100
+      ]
+    },
+    {
+      "frame": 11,
+      "sourceFrame": 11,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/kawakami_princess/generated.png",
+      "sourceSha256": "85be4016a5fbc987f99387437cb73843e9cd53c955b585ab2c9c33a5259b26ce",
+      "crop": [
+        788,
+        517,
+        967,
+        761
+      ],
+      "destination": [
+        411,
+        264,
+        74,
+        102
+      ]
+    },
+    {
+      "frame": 12,
+      "sourceFrame": 12,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/kawakami_princess/generated.png",
+      "sourceSha256": "85be4016a5fbc987f99387437cb73843e9cd53c955b585ab2c9c33a5259b26ce",
+      "crop": [
+        20,
+        776,
+        214,
+        1025
+      ],
+      "destination": [
+        23,
+        390,
+        81,
+        104
+      ]
+    },
+    {
+      "frame": 13,
+      "sourceFrame": 13,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/kawakami_princess/generated.png",
+      "sourceSha256": "85be4016a5fbc987f99387437cb73843e9cd53c955b585ab2c9c33a5259b26ce",
+      "crop": [
+        278,
+        777,
+        470,
+        1026
+      ],
+      "destination": [
+        152,
+        390,
+        80,
+        104
+      ]
+    },
+    {
+      "frame": 14,
+      "sourceFrame": 14,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/kawakami_princess/generated.png",
+      "sourceSha256": "85be4016a5fbc987f99387437cb73843e9cd53c955b585ab2c9c33a5259b26ce",
+      "crop": [
+        512,
+        785,
+        763,
+        1033
+      ],
+      "destination": [
+        268,
+        391,
+        104,
+        103
+      ]
+    },
+    {
+      "frame": 15,
+      "sourceFrame": 15,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/kawakami_princess/generated.png",
+      "sourceSha256": "85be4016a5fbc987f99387437cb73843e9cd53c955b585ab2c9c33a5259b26ce",
+      "crop": [
+        779,
+        781,
+        1018,
+        1028
+      ],
+      "destination": [
+        398,
+        391,
+        99,
+        103
+      ]
+    },
+    {
+      "frame": 16,
+      "sourceFrame": 16,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/kawakami_princess/generated.png",
+      "sourceSha256": "85be4016a5fbc987f99387437cb73843e9cd53c955b585ab2c9c33a5259b26ce",
+      "crop": [
+        21,
+        1040,
+        211,
+        1267
+      ],
+      "destination": [
+        24,
+        528,
+        79,
+        94
+      ]
+    },
+    {
+      "frame": 17,
+      "sourceFrame": 17,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/kawakami_princess/generated.png",
+      "sourceSha256": "85be4016a5fbc987f99387437cb73843e9cd53c955b585ab2c9c33a5259b26ce",
+      "crop": [
+        277,
+        1067,
+        470,
+        1266
+      ],
+      "destination": [
+        152,
+        539,
+        80,
+        83
+      ]
+    },
+    {
+      "frame": 18,
+      "sourceFrame": 18,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/kawakami_princess/generated.png",
+      "sourceSha256": "85be4016a5fbc987f99387437cb73843e9cd53c955b585ab2c9c33a5259b26ce",
+      "crop": [
+        532,
+        1064,
+        717,
+        1266
+      ],
+      "destination": [
+        281,
+        538,
+        77,
+        84
+      ]
+    },
+    {
+      "frame": 19,
+      "sourceFrame": 19,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/kawakami_princess/generated.png",
+      "sourceSha256": "85be4016a5fbc987f99387437cb73843e9cd53c955b585ab2c9c33a5259b26ce",
+      "crop": [
+        775,
+        1147,
+        1017,
+        1261
+      ],
+      "destination": [
+        397,
+        575,
+        101,
+        47
+      ]
+    },
+    {
+      "frame": 20,
+      "sourceFrame": 20,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/kawakami_princess/generated.png",
+      "sourceSha256": "85be4016a5fbc987f99387437cb73843e9cd53c955b585ab2c9c33a5259b26ce",
+      "crop": [
+        24,
+        1280,
+        207,
+        1529
+      ],
+      "destination": [
+        26,
+        646,
+        76,
+        104
+      ]
+    },
+    {
+      "frame": 21,
+      "sourceFrame": 21,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/kawakami_princess/generated.png",
+      "sourceSha256": "85be4016a5fbc987f99387437cb73843e9cd53c955b585ab2c9c33a5259b26ce",
+      "crop": [
+        277,
+        1280,
+        462,
+        1530
+      ],
+      "destination": [
+        153,
+        646,
+        77,
+        104
+      ]
+    },
+    {
+      "frame": 22,
+      "sourceFrame": 22,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/kawakami_princess/generated.png",
+      "sourceSha256": "85be4016a5fbc987f99387437cb73843e9cd53c955b585ab2c9c33a5259b26ce",
+      "crop": [
+        525,
+        1280,
+        721,
+        1529
+      ],
+      "destination": [
+        279,
+        646,
+        82,
+        104
+      ]
+    },
+    {
+      "frame": 23,
+      "sourceFrame": 23,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/kawakami_princess/generated.png",
+      "sourceSha256": "85be4016a5fbc987f99387437cb73843e9cd53c955b585ab2c9c33a5259b26ce",
+      "crop": [
+        792,
+        1280,
+        983,
+        1530
+      ],
+      "destination": [
+        408,
+        646,
+        79,
+        104
+      ]
+    }
+  ],
+  "identityRevision": {
+    "review": "docs/art-source/motions/identity-revisions-2026-09-12/kawakami_princess/review.json",
+    "baselineRuntimeSha256": "b924a7bb27aa36b47685741a64b8f51cc80a94f5664cc1f4ef811199f637b928",
+    "previousPacking": "docs/art-source/motions/skill-revisions-2026-09-11/kawakami_princess/packing.json",
+    "portrait": "public/assets/portraits/kawakami_princess.png",
+    "portraitSha256": "757c13b3059221d634c585e2cab93598be77007a5b5dbedfe3391c821bfe4876",
+    "changedFrames": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23
+    ],
+    "alpha": {
+      "transparentFraction": 0.5094776153564453,
+      "solidFraction": 0.38073984781901044
+    }
+  }
+}

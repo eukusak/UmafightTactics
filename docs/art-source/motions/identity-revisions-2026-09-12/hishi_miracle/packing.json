@@ -1,0 +1,484 @@
+{
+  "format": "uft-baked-frames-v1",
+  "columns": 4,
+  "rows": 6,
+  "frameWidth": 128,
+  "frameHeight": 128,
+  "anchor": [
+    64,
+    110
+  ],
+  "scale": 0.4046692607003891,
+  "runtimeSha256": "9166a15770aa016ce93829bb42c253f065c8f6da996b9dab57baae6902e5cf71",
+  "frames": [
+    {
+      "frame": 0,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/hishi_miracle/generated.png",
+      "sourceSha256": "25b1192bdfd79ee49dc2b1bdbc712e5eaa468711d6721676d71844017f11bd09",
+      "crop": [
+        56,
+        8,
+        219,
+        244
+      ],
+      "destination": [
+        31,
+        14,
+        66,
+        96
+      ]
+    },
+    {
+      "frame": 1,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/hishi_miracle/generated.png",
+      "sourceSha256": "25b1192bdfd79ee49dc2b1bdbc712e5eaa468711d6721676d71844017f11bd09",
+      "crop": [
+        310,
+        8,
+        469,
+        247
+      ],
+      "destination": [
+        160,
+        13,
+        64,
+        97
+      ]
+    },
+    {
+      "frame": 2,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/hishi_miracle/generated.png",
+      "sourceSha256": "25b1192bdfd79ee49dc2b1bdbc712e5eaa468711d6721676d71844017f11bd09",
+      "crop": [
+        558,
+        7,
+        716,
+        247
+      ],
+      "destination": [
+        288,
+        13,
+        64,
+        97
+      ]
+    },
+    {
+      "frame": 3,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/hishi_miracle/generated.png",
+      "sourceSha256": "25b1192bdfd79ee49dc2b1bdbc712e5eaa468711d6721676d71844017f11bd09",
+      "crop": [
+        814,
+        8,
+        971,
+        247
+      ],
+      "destination": [
+        416,
+        13,
+        64,
+        97
+      ]
+    },
+    {
+      "frame": 4,
+      "sourceFrame": 4,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/hishi_miracle/generated.png",
+      "sourceSha256": "25b1192bdfd79ee49dc2b1bdbc712e5eaa468711d6721676d71844017f11bd09",
+      "crop": [
+        36,
+        258,
+        225,
+        511
+      ],
+      "destination": [
+        26,
+        136,
+        76,
+        102
+      ]
+    },
+    {
+      "frame": 5,
+      "sourceFrame": 5,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/hishi_miracle/generated.png",
+      "sourceSha256": "25b1192bdfd79ee49dc2b1bdbc712e5eaa468711d6721676d71844017f11bd09",
+      "crop": [
+        293,
+        263,
+        482,
+        512
+      ],
+      "destination": [
+        154,
+        137,
+        76,
+        101
+      ]
+    },
+    {
+      "frame": 6,
+      "sourceFrame": 6,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/hishi_miracle/generated.png",
+      "sourceSha256": "25b1192bdfd79ee49dc2b1bdbc712e5eaa468711d6721676d71844017f11bd09",
+      "crop": [
+        545,
+        265,
+        734,
+        512
+      ],
+      "destination": [
+        282,
+        138,
+        76,
+        100
+      ]
+    },
+    {
+      "frame": 7,
+      "sourceFrame": 7,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/hishi_miracle/generated.png",
+      "sourceSha256": "25b1192bdfd79ee49dc2b1bdbc712e5eaa468711d6721676d71844017f11bd09",
+      "crop": [
+        802,
+        266,
+        987,
+        512
+      ],
+      "destination": [
+        410,
+        138,
+        75,
+        100
+      ]
+    },
+    {
+      "frame": 8,
+      "sourceFrame": 8,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/hishi_miracle/generated.png",
+      "sourceSha256": "25b1192bdfd79ee49dc2b1bdbc712e5eaa468711d6721676d71844017f11bd09",
+      "crop": [
+        38,
+        527,
+        234,
+        770
+      ],
+      "destination": [
+        24,
+        268,
+        79,
+        98
+      ]
+    },
+    {
+      "frame": 9,
+      "sourceFrame": 9,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/hishi_miracle/generated.png",
+      "sourceSha256": "25b1192bdfd79ee49dc2b1bdbc712e5eaa468711d6721676d71844017f11bd09",
+      "crop": [
+        297,
+        526,
+        481,
+        772
+      ],
+      "destination": [
+        155,
+        266,
+        74,
+        100
+      ]
+    },
+    {
+      "frame": 10,
+      "sourceFrame": 10,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/hishi_miracle/generated.png",
+      "sourceSha256": "25b1192bdfd79ee49dc2b1bdbc712e5eaa468711d6721676d71844017f11bd09",
+      "crop": [
+        549,
+        525,
+        734,
+        771
+      ],
+      "destination": [
+        282,
+        266,
+        75,
+        100
+      ]
+    },
+    {
+      "frame": 11,
+      "sourceFrame": 11,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/hishi_miracle/generated.png",
+      "sourceSha256": "25b1192bdfd79ee49dc2b1bdbc712e5eaa468711d6721676d71844017f11bd09",
+      "crop": [
+        805,
+        528,
+        988,
+        772
+      ],
+      "destination": [
+        411,
+        267,
+        74,
+        99
+      ]
+    },
+    {
+      "frame": 12,
+      "sourceFrame": 12,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/hishi_miracle/generated.png",
+      "sourceSha256": "25b1192bdfd79ee49dc2b1bdbc712e5eaa468711d6721676d71844017f11bd09",
+      "crop": [
+        29,
+        791,
+        249,
+        1027
+      ],
+      "destination": [
+        19,
+        398,
+        89,
+        96
+      ]
+    },
+    {
+      "frame": 13,
+      "sourceFrame": 13,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/hishi_miracle/generated.png",
+      "sourceSha256": "25b1192bdfd79ee49dc2b1bdbc712e5eaa468711d6721676d71844017f11bd09",
+      "crop": [
+        282,
+        772,
+        514,
+        1027
+      ],
+      "destination": [
+        145,
+        391,
+        94,
+        103
+      ]
+    },
+    {
+      "frame": 14,
+      "sourceFrame": 14,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/hishi_miracle/generated.png",
+      "sourceSha256": "25b1192bdfd79ee49dc2b1bdbc712e5eaa468711d6721676d71844017f11bd09",
+      "crop": [
+        514,
+        777,
+        793,
+        1034
+      ],
+      "destination": [
+        263,
+        390,
+        113,
+        104
+      ]
+    },
+    {
+      "frame": 15,
+      "sourceFrame": 15,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/hishi_miracle/generated.png",
+      "sourceSha256": "25b1192bdfd79ee49dc2b1bdbc712e5eaa468711d6721676d71844017f11bd09",
+      "crop": [
+        804,
+        792,
+        1004,
+        1035
+      ],
+      "destination": [
+        407,
+        396,
+        81,
+        98
+      ]
+    },
+    {
+      "frame": 16,
+      "sourceFrame": 16,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/hishi_miracle/generated.png",
+      "sourceSha256": "25b1192bdfd79ee49dc2b1bdbc712e5eaa468711d6721676d71844017f11bd09",
+      "crop": [
+        38,
+        1050,
+        241,
+        1271
+      ],
+      "destination": [
+        23,
+        533,
+        82,
+        89
+      ]
+    },
+    {
+      "frame": 17,
+      "sourceFrame": 17,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/hishi_miracle/generated.png",
+      "sourceSha256": "25b1192bdfd79ee49dc2b1bdbc712e5eaa468711d6721676d71844017f11bd09",
+      "crop": [
+        297,
+        1078,
+        488,
+        1278
+      ],
+      "destination": [
+        153,
+        541,
+        77,
+        81
+      ]
+    },
+    {
+      "frame": 18,
+      "sourceFrame": 18,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/hishi_miracle/generated.png",
+      "sourceSha256": "25b1192bdfd79ee49dc2b1bdbc712e5eaa468711d6721676d71844017f11bd09",
+      "crop": [
+        548,
+        1079,
+        737,
+        1272
+      ],
+      "destination": [
+        282,
+        544,
+        76,
+        78
+      ]
+    },
+    {
+      "frame": 19,
+      "sourceFrame": 19,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/hishi_miracle/generated.png",
+      "sourceSha256": "25b1192bdfd79ee49dc2b1bdbc712e5eaa468711d6721676d71844017f11bd09",
+      "crop": [
+        776,
+        1159,
+        1010,
+        1275
+      ],
+      "destination": [
+        400,
+        575,
+        95,
+        47
+      ]
+    },
+    {
+      "frame": 20,
+      "sourceFrame": 20,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/hishi_miracle/generated.png",
+      "sourceSha256": "25b1192bdfd79ee49dc2b1bdbc712e5eaa468711d6721676d71844017f11bd09",
+      "crop": [
+        40,
+        1283,
+        219,
+        1532
+      ],
+      "destination": [
+        28,
+        649,
+        72,
+        101
+      ]
+    },
+    {
+      "frame": 21,
+      "sourceFrame": 21,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/hishi_miracle/generated.png",
+      "sourceSha256": "25b1192bdfd79ee49dc2b1bdbc712e5eaa468711d6721676d71844017f11bd09",
+      "crop": [
+        297,
+        1283,
+        475,
+        1531
+      ],
+      "destination": [
+        156,
+        650,
+        72,
+        100
+      ]
+    },
+    {
+      "frame": 22,
+      "sourceFrame": 22,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/hishi_miracle/generated.png",
+      "sourceSha256": "25b1192bdfd79ee49dc2b1bdbc712e5eaa468711d6721676d71844017f11bd09",
+      "crop": [
+        556,
+        1287,
+        723,
+        1531
+      ],
+      "destination": [
+        286,
+        651,
+        68,
+        99
+      ]
+    },
+    {
+      "frame": 23,
+      "sourceFrame": 23,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/hishi_miracle/generated.png",
+      "sourceSha256": "25b1192bdfd79ee49dc2b1bdbc712e5eaa468711d6721676d71844017f11bd09",
+      "crop": [
+        810,
+        1286,
+        984,
+        1532
+      ],
+      "destination": [
+        413,
+        650,
+        70,
+        100
+      ]
+    }
+  ],
+  "identityRevision": {
+    "review": "docs/art-source/motions/identity-revisions-2026-09-12/hishi_miracle/review.json",
+    "baselineRuntimeSha256": "8781d99bf23a82a842a48d5bab367084290d8b16bbb6ba4603b335b3c933dff7",
+    "previousPacking": "docs/art-source/motions/skill-revisions-2026-09-11/hishi_miracle/packing.json",
+    "portrait": "public/assets/portraits/hishi_miracle.png",
+    "portraitSha256": "07342a78e64e5cc74ca4574195ca842890a67e085d58d87b561ac7ef3888bef4",
+    "changedFrames": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23
+    ],
+    "alpha": {
+      "transparentFraction": 0.5143648783365885,
+      "solidFraction": 0.3360328674316406
+    }
+  }
+}

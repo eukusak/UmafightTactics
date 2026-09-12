@@ -1,0 +1,484 @@
+{
+  "format": "uft-baked-frames-v1",
+  "columns": 4,
+  "rows": 6,
+  "frameWidth": 128,
+  "frameHeight": 128,
+  "anchor": [
+    64,
+    110
+  ],
+  "scale": 0.4482758620689655,
+  "runtimeSha256": "db5964df63ae8a7b4eb78183cb5e07bf12844aa293aaeabb6f60078a8cecb285",
+  "frames": [
+    {
+      "frame": 0,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/cesario/generated.png",
+      "sourceSha256": "7cade537308c08754c90898157060866e8e5b742dec26583574447ee35cacdd7",
+      "crop": [
+        59,
+        24,
+        197,
+        233
+      ],
+      "destination": [
+        33,
+        16,
+        62,
+        94
+      ]
+    },
+    {
+      "frame": 1,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/cesario/generated.png",
+      "sourceSha256": "7cade537308c08754c90898157060866e8e5b742dec26583574447ee35cacdd7",
+      "crop": [
+        314,
+        25,
+        453,
+        234
+      ],
+      "destination": [
+        161,
+        16,
+        62,
+        94
+      ]
+    },
+    {
+      "frame": 2,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/cesario/generated.png",
+      "sourceSha256": "7cade537308c08754c90898157060866e8e5b742dec26583574447ee35cacdd7",
+      "crop": [
+        568,
+        26,
+        705,
+        235
+      ],
+      "destination": [
+        289,
+        16,
+        61,
+        94
+      ]
+    },
+    {
+      "frame": 3,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/cesario/generated.png",
+      "sourceSha256": "7cade537308c08754c90898157060866e8e5b742dec26583574447ee35cacdd7",
+      "crop": [
+        822,
+        27,
+        957,
+        234
+      ],
+      "destination": [
+        417,
+        17,
+        61,
+        93
+      ]
+    },
+    {
+      "frame": 4,
+      "sourceFrame": 4,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/cesario/generated.png",
+      "sourceSha256": "7cade537308c08754c90898157060866e8e5b742dec26583574447ee35cacdd7",
+      "crop": [
+        41,
+        275,
+        213,
+        488
+      ],
+      "destination": [
+        25,
+        143,
+        77,
+        95
+      ]
+    },
+    {
+      "frame": 5,
+      "sourceFrame": 5,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/cesario/generated.png",
+      "sourceSha256": "7cade537308c08754c90898157060866e8e5b742dec26583574447ee35cacdd7",
+      "crop": [
+        305,
+        275,
+        473,
+        489
+      ],
+      "destination": [
+        154,
+        142,
+        75,
+        96
+      ]
+    },
+    {
+      "frame": 6,
+      "sourceFrame": 6,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/cesario/generated.png",
+      "sourceSha256": "7cade537308c08754c90898157060866e8e5b742dec26583574447ee35cacdd7",
+      "crop": [
+        554,
+        275,
+        724,
+        489
+      ],
+      "destination": [
+        282,
+        142,
+        76,
+        96
+      ]
+    },
+    {
+      "frame": 7,
+      "sourceFrame": 7,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/cesario/generated.png",
+      "sourceSha256": "7cade537308c08754c90898157060866e8e5b742dec26583574447ee35cacdd7",
+      "crop": [
+        812,
+        279,
+        977,
+        489
+      ],
+      "destination": [
+        411,
+        144,
+        74,
+        94
+      ]
+    },
+    {
+      "frame": 8,
+      "sourceFrame": 8,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/cesario/generated.png",
+      "sourceSha256": "7cade537308c08754c90898157060866e8e5b742dec26583574447ee35cacdd7",
+      "crop": [
+        51,
+        528,
+        201,
+        745
+      ],
+      "destination": [
+        30,
+        269,
+        67,
+        97
+      ]
+    },
+    {
+      "frame": 9,
+      "sourceFrame": 9,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/cesario/generated.png",
+      "sourceSha256": "7cade537308c08754c90898157060866e8e5b742dec26583574447ee35cacdd7",
+      "crop": [
+        306,
+        529,
+        462,
+        743
+      ],
+      "destination": [
+        157,
+        270,
+        70,
+        96
+      ]
+    },
+    {
+      "frame": 10,
+      "sourceFrame": 10,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/cesario/generated.png",
+      "sourceSha256": "7cade537308c08754c90898157060866e8e5b742dec26583574447ee35cacdd7",
+      "crop": [
+        543,
+        529,
+        734,
+        747
+      ],
+      "destination": [
+        277,
+        268,
+        86,
+        98
+      ]
+    },
+    {
+      "frame": 11,
+      "sourceFrame": 11,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/cesario/generated.png",
+      "sourceSha256": "7cade537308c08754c90898157060866e8e5b742dec26583574447ee35cacdd7",
+      "crop": [
+        816,
+        529,
+        970,
+        747
+      ],
+      "destination": [
+        413,
+        268,
+        69,
+        98
+      ]
+    },
+    {
+      "frame": 12,
+      "sourceFrame": 12,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/cesario/generated.png",
+      "sourceSha256": "7cade537308c08754c90898157060866e8e5b742dec26583574447ee35cacdd7",
+      "crop": [
+        57,
+        771,
+        194,
+        1002
+      ],
+      "destination": [
+        33,
+        390,
+        61,
+        104
+      ]
+    },
+    {
+      "frame": 13,
+      "sourceFrame": 13,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/cesario/generated.png",
+      "sourceSha256": "7cade537308c08754c90898157060866e8e5b742dec26583574447ee35cacdd7",
+      "crop": [
+        307,
+        770,
+        466,
+        1002
+      ],
+      "destination": [
+        156,
+        390,
+        71,
+        104
+      ]
+    },
+    {
+      "frame": 14,
+      "sourceFrame": 14,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/cesario/generated.png",
+      "sourceSha256": "7cade537308c08754c90898157060866e8e5b742dec26583574447ee35cacdd7",
+      "crop": [
+        548,
+        771,
+        735,
+        1000
+      ],
+      "destination": [
+        278,
+        391,
+        84,
+        103
+      ]
+    },
+    {
+      "frame": 15,
+      "sourceFrame": 15,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/cesario/generated.png",
+      "sourceSha256": "7cade537308c08754c90898157060866e8e5b742dec26583574447ee35cacdd7",
+      "crop": [
+        815,
+        775,
+        974,
+        1001
+      ],
+      "destination": [
+        412,
+        393,
+        71,
+        101
+      ]
+    },
+    {
+      "frame": 16,
+      "sourceFrame": 16,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/cesario/generated.png",
+      "sourceSha256": "7cade537308c08754c90898157060866e8e5b742dec26583574447ee35cacdd7",
+      "crop": [
+        46,
+        1064,
+        208,
+        1256
+      ],
+      "destination": [
+        27,
+        536,
+        73,
+        86
+      ]
+    },
+    {
+      "frame": 17,
+      "sourceFrame": 17,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/cesario/generated.png",
+      "sourceSha256": "7cade537308c08754c90898157060866e8e5b742dec26583574447ee35cacdd7",
+      "crop": [
+        296,
+        1080,
+        476,
+        1253
+      ],
+      "destination": [
+        151,
+        544,
+        81,
+        78
+      ]
+    },
+    {
+      "frame": 18,
+      "sourceFrame": 18,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/cesario/generated.png",
+      "sourceSha256": "7cade537308c08754c90898157060866e8e5b742dec26583574447ee35cacdd7",
+      "crop": [
+        563,
+        1090,
+        730,
+        1254
+      ],
+      "destination": [
+        282,
+        548,
+        75,
+        74
+      ]
+    },
+    {
+      "frame": 19,
+      "sourceFrame": 19,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/cesario/generated.png",
+      "sourceSha256": "7cade537308c08754c90898157060866e8e5b742dec26583574447ee35cacdd7",
+      "crop": [
+        784,
+        1142,
+        1003,
+        1250
+      ],
+      "destination": [
+        399,
+        574,
+        98,
+        48
+      ]
+    },
+    {
+      "frame": 20,
+      "sourceFrame": 20,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/cesario/generated.png",
+      "sourceSha256": "7cade537308c08754c90898157060866e8e5b742dec26583574447ee35cacdd7",
+      "crop": [
+        58,
+        1304,
+        192,
+        1515
+      ],
+      "destination": [
+        34,
+        655,
+        60,
+        95
+      ]
+    },
+    {
+      "frame": 21,
+      "sourceFrame": 21,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/cesario/generated.png",
+      "sourceSha256": "7cade537308c08754c90898157060866e8e5b742dec26583574447ee35cacdd7",
+      "crop": [
+        313,
+        1302,
+        455,
+        1515
+      ],
+      "destination": [
+        160,
+        655,
+        64,
+        95
+      ]
+    },
+    {
+      "frame": 22,
+      "sourceFrame": 22,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/cesario/generated.png",
+      "sourceSha256": "7cade537308c08754c90898157060866e8e5b742dec26583574447ee35cacdd7",
+      "crop": [
+        561,
+        1306,
+        707,
+        1515
+      ],
+      "destination": [
+        287,
+        656,
+        65,
+        94
+      ]
+    },
+    {
+      "frame": 23,
+      "sourceFrame": 23,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/cesario/generated.png",
+      "sourceSha256": "7cade537308c08754c90898157060866e8e5b742dec26583574447ee35cacdd7",
+      "crop": [
+        825,
+        1305,
+        958,
+        1515
+      ],
+      "destination": [
+        418,
+        656,
+        60,
+        94
+      ]
+    }
+  ],
+  "identityRevision": {
+    "review": "docs/art-source/motions/identity-revisions-2026-09-12/cesario/review.json",
+    "baselineRuntimeSha256": "9f333f80edcda93b004dd1ec377b71c0823cc70e99389eee039cdd8db5b52b03",
+    "previousPacking": "docs/art-source/motions/production-144/cesario/packing.json",
+    "portrait": "public/assets/portraits/cesario.png",
+    "portraitSha256": "f809bd86a206bdfd904a3de9eee12cc9d8e0a0a6bb5143702d0be0e034494279",
+    "changedFrames": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23
+    ],
+    "alpha": {
+      "transparentFraction": 0.6908766428629557,
+      "solidFraction": 0.24123382568359375
+    }
+  }
+}

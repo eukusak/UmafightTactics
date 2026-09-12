@@ -51,7 +51,7 @@ function TraitDetail({ id, playerId }: { id: TraitId; playerId: string }): JSX.E
 export function DetailPanel(): JSX.Element | null {
   const inspection = useInteractionStore(s => s.inspection);
   const inspect = useInteractionStore(s => s.inspect);
-  const frames = useGameStore(s => s.battleFrames);
+  const frames = useGameStore(s => s.viewedBattleFrames());
   const time = useGameStore(s => s.battleTime);
   const running = useGameStore(s => s.battleRunning);
   const match = useGameStore(s => s.match);

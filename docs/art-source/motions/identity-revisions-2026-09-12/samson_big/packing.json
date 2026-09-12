@@ -1,0 +1,484 @@
+{
+  "format": "uft-baked-frames-v1",
+  "columns": 4,
+  "rows": 6,
+  "frameWidth": 128,
+  "frameHeight": 128,
+  "anchor": [
+    64,
+    110
+  ],
+  "scale": 0.43333333333333335,
+  "runtimeSha256": "42afde5c7350cf5589a46fddb8c6536504e026804cb96afff0391a04bcbf15bb",
+  "frames": [
+    {
+      "frame": 0,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/samson_big/generated.png",
+      "sourceSha256": "89432747425acaaab3fcd5a8a4161870665bab6599ed3b06b7b541ff3f05a9ae",
+      "crop": [
+        46,
+        16,
+        207,
+        240
+      ],
+      "destination": [
+        29,
+        13,
+        70,
+        97
+      ]
+    },
+    {
+      "frame": 1,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/samson_big/generated.png",
+      "sourceSha256": "89432747425acaaab3fcd5a8a4161870665bab6599ed3b06b7b541ff3f05a9ae",
+      "crop": [
+        300,
+        18,
+        463,
+        240
+      ],
+      "destination": [
+        156,
+        14,
+        71,
+        96
+      ]
+    },
+    {
+      "frame": 2,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/samson_big/generated.png",
+      "sourceSha256": "89432747425acaaab3fcd5a8a4161870665bab6599ed3b06b7b541ff3f05a9ae",
+      "crop": [
+        560,
+        18,
+        722,
+        240
+      ],
+      "destination": [
+        285,
+        14,
+        70,
+        96
+      ]
+    },
+    {
+      "frame": 3,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/samson_big/generated.png",
+      "sourceSha256": "89432747425acaaab3fcd5a8a4161870665bab6599ed3b06b7b541ff3f05a9ae",
+      "crop": [
+        817,
+        18,
+        980,
+        240
+      ],
+      "destination": [
+        412,
+        14,
+        71,
+        96
+      ]
+    },
+    {
+      "frame": 4,
+      "sourceFrame": 4,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/samson_big/generated.png",
+      "sourceSha256": "89432747425acaaab3fcd5a8a4161870665bab6599ed3b06b7b541ff3f05a9ae",
+      "crop": [
+        29,
+        262,
+        228,
+        498
+      ],
+      "destination": [
+        21,
+        136,
+        86,
+        102
+      ]
+    },
+    {
+      "frame": 5,
+      "sourceFrame": 5,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/samson_big/generated.png",
+      "sourceSha256": "89432747425acaaab3fcd5a8a4161870665bab6599ed3b06b7b541ff3f05a9ae",
+      "crop": [
+        294,
+        261,
+        482,
+        501
+      ],
+      "destination": [
+        151,
+        134,
+        81,
+        104
+      ]
+    },
+    {
+      "frame": 6,
+      "sourceFrame": 6,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/samson_big/generated.png",
+      "sourceSha256": "89432747425acaaab3fcd5a8a4161870665bab6599ed3b06b7b541ff3f05a9ae",
+      "crop": [
+        540,
+        261,
+        741,
+        499
+      ],
+      "destination": [
+        276,
+        135,
+        87,
+        103
+      ]
+    },
+    {
+      "frame": 7,
+      "sourceFrame": 7,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/samson_big/generated.png",
+      "sourceSha256": "89432747425acaaab3fcd5a8a4161870665bab6599ed3b06b7b541ff3f05a9ae",
+      "crop": [
+        801,
+        262,
+        997,
+        501
+      ],
+      "destination": [
+        405,
+        134,
+        85,
+        104
+      ]
+    },
+    {
+      "frame": 8,
+      "sourceFrame": 8,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/samson_big/generated.png",
+      "sourceSha256": "89432747425acaaab3fcd5a8a4161870665bab6599ed3b06b7b541ff3f05a9ae",
+      "crop": [
+        28,
+        528,
+        229,
+        759
+      ],
+      "destination": [
+        20,
+        266,
+        87,
+        100
+      ]
+    },
+    {
+      "frame": 9,
+      "sourceFrame": 9,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/samson_big/generated.png",
+      "sourceSha256": "89432747425acaaab3fcd5a8a4161870665bab6599ed3b06b7b541ff3f05a9ae",
+      "crop": [
+        304,
+        530,
+        476,
+        759
+      ],
+      "destination": [
+        154,
+        267,
+        75,
+        99
+      ]
+    },
+    {
+      "frame": 10,
+      "sourceFrame": 10,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/samson_big/generated.png",
+      "sourceSha256": "89432747425acaaab3fcd5a8a4161870665bab6599ed3b06b7b541ff3f05a9ae",
+      "crop": [
+        536,
+        531,
+        758,
+        759
+      ],
+      "destination": [
+        272,
+        267,
+        96,
+        99
+      ]
+    },
+    {
+      "frame": 11,
+      "sourceFrame": 11,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/samson_big/generated.png",
+      "sourceSha256": "89432747425acaaab3fcd5a8a4161870665bab6599ed3b06b7b541ff3f05a9ae",
+      "crop": [
+        816,
+        529,
+        993,
+        759
+      ],
+      "destination": [
+        409,
+        266,
+        77,
+        100
+      ]
+    },
+    {
+      "frame": 12,
+      "sourceFrame": 12,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/samson_big/generated.png",
+      "sourceSha256": "89432747425acaaab3fcd5a8a4161870665bab6599ed3b06b7b541ff3f05a9ae",
+      "crop": [
+        30,
+        795,
+        236,
+        1024
+      ],
+      "destination": [
+        19,
+        395,
+        89,
+        99
+      ]
+    },
+    {
+      "frame": 13,
+      "sourceFrame": 13,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/samson_big/generated.png",
+      "sourceSha256": "89432747425acaaab3fcd5a8a4161870665bab6599ed3b06b7b541ff3f05a9ae",
+      "crop": [
+        309,
+        795,
+        469,
+        1024
+      ],
+      "destination": [
+        157,
+        395,
+        69,
+        99
+      ]
+    },
+    {
+      "frame": 14,
+      "sourceFrame": 14,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/samson_big/generated.png",
+      "sourceSha256": "89432747425acaaab3fcd5a8a4161870665bab6599ed3b06b7b541ff3f05a9ae",
+      "crop": [
+        557,
+        797,
+        742,
+        1024
+      ],
+      "destination": [
+        280,
+        396,
+        80,
+        98
+      ]
+    },
+    {
+      "frame": 15,
+      "sourceFrame": 15,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/samson_big/generated.png",
+      "sourceSha256": "89432747425acaaab3fcd5a8a4161870665bab6599ed3b06b7b541ff3f05a9ae",
+      "crop": [
+        822,
+        795,
+        984,
+        1024
+      ],
+      "destination": [
+        413,
+        395,
+        70,
+        99
+      ]
+    },
+    {
+      "frame": 16,
+      "sourceFrame": 16,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/samson_big/generated.png",
+      "sourceSha256": "89432747425acaaab3fcd5a8a4161870665bab6599ed3b06b7b541ff3f05a9ae",
+      "crop": [
+        37,
+        1066,
+        211,
+        1270
+      ],
+      "destination": [
+        26,
+        534,
+        75,
+        88
+      ]
+    },
+    {
+      "frame": 17,
+      "sourceFrame": 17,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/samson_big/generated.png",
+      "sourceSha256": "89432747425acaaab3fcd5a8a4161870665bab6599ed3b06b7b541ff3f05a9ae",
+      "crop": [
+        289,
+        1077,
+        475,
+        1265
+      ],
+      "destination": [
+        151,
+        541,
+        81,
+        81
+      ]
+    },
+    {
+      "frame": 18,
+      "sourceFrame": 18,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/samson_big/generated.png",
+      "sourceSha256": "89432747425acaaab3fcd5a8a4161870665bab6599ed3b06b7b541ff3f05a9ae",
+      "crop": [
+        541,
+        1098,
+        734,
+        1263
+      ],
+      "destination": [
+        278,
+        550,
+        84,
+        72
+      ]
+    },
+    {
+      "frame": 19,
+      "sourceFrame": 19,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/samson_big/generated.png",
+      "sourceSha256": "89432747425acaaab3fcd5a8a4161870665bab6599ed3b06b7b541ff3f05a9ae",
+      "crop": [
+        768,
+        1152,
+        1014,
+        1265
+      ],
+      "destination": [
+        394,
+        573,
+        107,
+        49
+      ]
+    },
+    {
+      "frame": 20,
+      "sourceFrame": 20,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/samson_big/generated.png",
+      "sourceSha256": "89432747425acaaab3fcd5a8a4161870665bab6599ed3b06b7b541ff3f05a9ae",
+      "crop": [
+        34,
+        1280,
+        209,
+        1520
+      ],
+      "destination": [
+        26,
+        646,
+        76,
+        104
+      ]
+    },
+    {
+      "frame": 21,
+      "sourceFrame": 21,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/samson_big/generated.png",
+      "sourceSha256": "89432747425acaaab3fcd5a8a4161870665bab6599ed3b06b7b541ff3f05a9ae",
+      "crop": [
+        293,
+        1284,
+        475,
+        1521
+      ],
+      "destination": [
+        152,
+        647,
+        79,
+        103
+      ]
+    },
+    {
+      "frame": 22,
+      "sourceFrame": 22,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/samson_big/generated.png",
+      "sourceSha256": "89432747425acaaab3fcd5a8a4161870665bab6599ed3b06b7b541ff3f05a9ae",
+      "crop": [
+        567,
+        1287,
+        723,
+        1520
+      ],
+      "destination": [
+        286,
+        649,
+        68,
+        101
+      ]
+    },
+    {
+      "frame": 23,
+      "sourceFrame": 23,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/samson_big/generated.png",
+      "sourceSha256": "89432747425acaaab3fcd5a8a4161870665bab6599ed3b06b7b541ff3f05a9ae",
+      "crop": [
+        818,
+        1287,
+        978,
+        1519
+      ],
+      "destination": [
+        413,
+        649,
+        69,
+        101
+      ]
+    }
+  ],
+  "identityRevision": {
+    "review": "docs/art-source/motions/identity-revisions-2026-09-12/samson_big/review.json",
+    "baselineRuntimeSha256": "553726d62ff77bdb7ec81d3893e208376bd30f8fa45a23175049736655ae35fd",
+    "previousPacking": "docs/art-source/motions/production-144/samson_big/packing.json",
+    "portrait": "public/assets/portraits/samson_big.png",
+    "portraitSha256": "21b6f184ca6c8f0f62d476119e60c50e5377d846b9ab6033c0a917d6aaae994a",
+    "changedFrames": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23
+    ],
+    "alpha": {
+      "transparentFraction": 0.6093502044677734,
+      "solidFraction": 0.3055604298909505
+    }
+  }
+}

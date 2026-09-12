@@ -116,6 +116,7 @@ export class RoundDirector {
    */
   lastHumanFrames: BattleFrame[] | null = null;
   readonly playerFrames = new Map<string, BattleFrame[]>();
+  private recordAllBattles = false;
   /** Whether the human's fight was against PvE, for the battle banner. */
   lastHumanBattleWasPve = false;
   private pendingSettlement: PendingSettlement | null = null;
@@ -288,7 +289,8 @@ export class RoundDirector {
 
   // ----------------------------------------------------------------- battle
   /** Resolves the whole round: fights, damage, elimination, income. */
-  resolveRound(deferSettlement = false): RoundResolution {
+  resolveRound(deferSettlement = false, recordAllBattles = false): RoundResolution {
+    this.recordAllBattles = recordAllBattles;
     if (this.pendingSettlement) throw new Error('The previous battle has not settled');
     for (const p of this.state.players.filter(isAlive)) resolveAiItemRewards(this.state, p);
     this.refreshAiPlacements();
@@ -404,12 +406,12 @@ export class RoundDirector {
    * what the player watches is the very run that produced the result.
    */
   private runBattle(a: BattleSideInput, b: BattleSideInput, rng: Rng, record: boolean, isGhost = false) {
-    if (!record) return simulateBattle(a, b, rng, { stage: this.state.stage });
+    if (!record && !this.recordAllBattles) return simulateBattle(a, b, rng, { stage: this.state.stage });
     const engine = new BattleEngine(a, b, rng, { recordFrames: true, stage: this.state.stage });
     const result = engine.run();
-    this.lastHumanFrames = engine.frames;
-    if (this.state.players.some((p) => p.id === a.playerId && p.isHuman)) this.playerFrames.set(a.playerId, engine.frames);
-    if (!isGhost && this.state.players.some((p) => p.id === b.playerId && p.isHuman)) this.playerFrames.set(b.playerId, engine.frames);
+    if (record) this.lastHumanFrames = engine.frames;
+    this.playerFrames.set(a.playerId, engine.frames);
+    if (!isGhost && this.state.players.some(p => p.id === b.playerId)) this.playerFrames.set(b.playerId, engine.frames);
     return result;
   }
 
@@ -483,7 +485,11 @@ export class RoundDirector {
       if (won && s.stage === 4 && s.round === 7) p.pendingGrants.push({ kind: 'ARTIFACT_CHOICE', count: 1 });
       const loot = rollPveLoot(this.rngs.get('loot'), s.stage, won);
       p.gold += loot.gold;
-      for (const c of loot.components) addItemToStorage(s, p, c);
+      for (const c of loot.components) {
+        if (!addItemToStorage(s, p, c)) p.pendingGrants.push({ kind: 'COMPONENT_CHOICE', count: 1 });
+      }
+      p.pendingGrants.push({ kind: 'REMOVER', count: loot.removers });
+      if (loot.reforgers) p.pendingGrants.push({ kind: 'REFORGER', count: loot.reforgers });
       for (let i = 0; i < loot.completedAnvil; i += 1) {
         p.pendingGrants.push({ kind: 'COMPLETED_CHOICE', count: 1 });
       }

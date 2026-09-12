@@ -7,9 +7,9 @@ import { Portrait } from './common';
 
 /** Reads only events already played; never exposes the precomputed outcome. */
 export function BattleTelemetry(): JSX.Element | null {
-  const frames = useGameStore((s) => s.battleFrames);
+  const frames = useGameStore((s) => s.viewedBattleFrames());
   const time = useGameStore((s) => s.battleTime);
-  const humanId = useGameStore((s) => s.human()?.id);
+  const humanId = useGameStore((s) => s.viewedPlayer()?.id);
   const running = useGameStore(s => s.battleRunning);
   const complete = useGameStore((s) => s.battleComplete);
   const totals = useMemo(() => damageTotals(frames ?? [], time), [frames, time]);

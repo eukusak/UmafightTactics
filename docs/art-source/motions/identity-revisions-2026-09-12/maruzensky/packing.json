@@ -1,0 +1,484 @@
+{
+  "format": "uft-baked-frames-v1",
+  "columns": 4,
+  "rows": 6,
+  "frameWidth": 128,
+  "frameHeight": 128,
+  "anchor": [
+    64,
+    110
+  ],
+  "scale": 0.42105263157894735,
+  "runtimeSha256": "a36d9b7987af9e187eed9da42fe08e79c66c72efa512ba50071f4def2f6e8f0b",
+  "frames": [
+    {
+      "frame": 0,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/maruzensky/generated.png",
+      "sourceSha256": "188e323fdef9e636594880c3f94e5a9c1188e7f319ed25189a749e21bf11df0b",
+      "crop": [
+        45,
+        9,
+        214,
+        244
+      ],
+      "destination": [
+        28,
+        11,
+        71,
+        99
+      ]
+    },
+    {
+      "frame": 1,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/maruzensky/generated.png",
+      "sourceSha256": "188e323fdef9e636594880c3f94e5a9c1188e7f319ed25189a749e21bf11df0b",
+      "crop": [
+        300,
+        9,
+        470,
+        244
+      ],
+      "destination": [
+        156,
+        11,
+        72,
+        99
+      ]
+    },
+    {
+      "frame": 2,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/maruzensky/generated.png",
+      "sourceSha256": "188e323fdef9e636594880c3f94e5a9c1188e7f319ed25189a749e21bf11df0b",
+      "crop": [
+        556,
+        10,
+        725,
+        244
+      ],
+      "destination": [
+        284,
+        11,
+        71,
+        99
+      ]
+    },
+    {
+      "frame": 3,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/maruzensky/generated.png",
+      "sourceSha256": "188e323fdef9e636594880c3f94e5a9c1188e7f319ed25189a749e21bf11df0b",
+      "crop": [
+        811,
+        10,
+        978,
+        245
+      ],
+      "destination": [
+        413,
+        11,
+        70,
+        99
+      ]
+    },
+    {
+      "frame": 4,
+      "sourceFrame": 4,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/maruzensky/generated.png",
+      "sourceSha256": "188e323fdef9e636594880c3f94e5a9c1188e7f319ed25189a749e21bf11df0b",
+      "crop": [
+        33,
+        272,
+        233,
+        499
+      ],
+      "destination": [
+        22,
+        142,
+        84,
+        96
+      ]
+    },
+    {
+      "frame": 5,
+      "sourceFrame": 5,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/maruzensky/generated.png",
+      "sourceSha256": "188e323fdef9e636594880c3f94e5a9c1188e7f319ed25189a749e21bf11df0b",
+      "crop": [
+        286,
+        271,
+        487,
+        502
+      ],
+      "destination": [
+        149,
+        141,
+        85,
+        97
+      ]
+    },
+    {
+      "frame": 6,
+      "sourceFrame": 6,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/maruzensky/generated.png",
+      "sourceSha256": "188e323fdef9e636594880c3f94e5a9c1188e7f319ed25189a749e21bf11df0b",
+      "crop": [
+        535,
+        272,
+        741,
+        501
+      ],
+      "destination": [
+        276,
+        142,
+        87,
+        96
+      ]
+    },
+    {
+      "frame": 7,
+      "sourceFrame": 7,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/maruzensky/generated.png",
+      "sourceSha256": "188e323fdef9e636594880c3f94e5a9c1188e7f319ed25189a749e21bf11df0b",
+      "crop": [
+        800,
+        271,
+        996,
+        501
+      ],
+      "destination": [
+        406,
+        141,
+        83,
+        97
+      ]
+    },
+    {
+      "frame": 8,
+      "sourceFrame": 8,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/maruzensky/generated.png",
+      "sourceSha256": "188e323fdef9e636594880c3f94e5a9c1188e7f319ed25189a749e21bf11df0b",
+      "crop": [
+        39,
+        521,
+        242,
+        759
+      ],
+      "destination": [
+        21,
+        266,
+        85,
+        100
+      ]
+    },
+    {
+      "frame": 9,
+      "sourceFrame": 9,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/maruzensky/generated.png",
+      "sourceSha256": "188e323fdef9e636594880c3f94e5a9c1188e7f319ed25189a749e21bf11df0b",
+      "crop": [
+        294,
+        521,
+        477,
+        758
+      ],
+      "destination": [
+        153,
+        266,
+        77,
+        100
+      ]
+    },
+    {
+      "frame": 10,
+      "sourceFrame": 10,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/maruzensky/generated.png",
+      "sourceSha256": "188e323fdef9e636594880c3f94e5a9c1188e7f319ed25189a749e21bf11df0b",
+      "crop": [
+        536,
+        521,
+        749,
+        759
+      ],
+      "destination": [
+        275,
+        266,
+        90,
+        100
+      ]
+    },
+    {
+      "frame": 11,
+      "sourceFrame": 11,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/maruzensky/generated.png",
+      "sourceSha256": "188e323fdef9e636594880c3f94e5a9c1188e7f319ed25189a749e21bf11df0b",
+      "crop": [
+        806,
+        521,
+        981,
+        762
+      ],
+      "destination": [
+        411,
+        265,
+        74,
+        101
+      ]
+    },
+    {
+      "frame": 12,
+      "sourceFrame": 12,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/maruzensky/generated.png",
+      "sourceSha256": "188e323fdef9e636594880c3f94e5a9c1188e7f319ed25189a749e21bf11df0b",
+      "crop": [
+        39,
+        782,
+        226,
+        1029
+      ],
+      "destination": [
+        24,
+        390,
+        79,
+        104
+      ]
+    },
+    {
+      "frame": 13,
+      "sourceFrame": 13,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/maruzensky/generated.png",
+      "sourceSha256": "188e323fdef9e636594880c3f94e5a9c1188e7f319ed25189a749e21bf11df0b",
+      "crop": [
+        282,
+        784,
+        486,
+        1029
+      ],
+      "destination": [
+        149,
+        391,
+        86,
+        103
+      ]
+    },
+    {
+      "frame": 14,
+      "sourceFrame": 14,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/maruzensky/generated.png",
+      "sourceSha256": "188e323fdef9e636594880c3f94e5a9c1188e7f319ed25189a749e21bf11df0b",
+      "crop": [
+        535,
+        784,
+        753,
+        1028
+      ],
+      "destination": [
+        274,
+        391,
+        92,
+        103
+      ]
+    },
+    {
+      "frame": 15,
+      "sourceFrame": 15,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/maruzensky/generated.png",
+      "sourceSha256": "188e323fdef9e636594880c3f94e5a9c1188e7f319ed25189a749e21bf11df0b",
+      "crop": [
+        806,
+        784,
+        981,
+        1029
+      ],
+      "destination": [
+        411,
+        391,
+        74,
+        103
+      ]
+    },
+    {
+      "frame": 16,
+      "sourceFrame": 16,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/maruzensky/generated.png",
+      "sourceSha256": "188e323fdef9e636594880c3f94e5a9c1188e7f319ed25189a749e21bf11df0b",
+      "crop": [
+        42,
+        1061,
+        211,
+        1261
+      ],
+      "destination": [
+        28,
+        538,
+        71,
+        84
+      ]
+    },
+    {
+      "frame": 17,
+      "sourceFrame": 17,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/maruzensky/generated.png",
+      "sourceSha256": "188e323fdef9e636594880c3f94e5a9c1188e7f319ed25189a749e21bf11df0b",
+      "crop": [
+        293,
+        1089,
+        481,
+        1260
+      ],
+      "destination": [
+        152,
+        550,
+        79,
+        72
+      ]
+    },
+    {
+      "frame": 18,
+      "sourceFrame": 18,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/maruzensky/generated.png",
+      "sourceSha256": "188e323fdef9e636594880c3f94e5a9c1188e7f319ed25189a749e21bf11df0b",
+      "crop": [
+        531,
+        1099,
+        742,
+        1262
+      ],
+      "destination": [
+        275,
+        553,
+        89,
+        69
+      ]
+    },
+    {
+      "frame": 19,
+      "sourceFrame": 19,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/maruzensky/generated.png",
+      "sourceSha256": "188e323fdef9e636594880c3f94e5a9c1188e7f319ed25189a749e21bf11df0b",
+      "crop": [
+        782,
+        1145,
+        1011,
+        1258
+      ],
+      "destination": [
+        400,
+        574,
+        96,
+        48
+      ]
+    },
+    {
+      "frame": 20,
+      "sourceFrame": 20,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/maruzensky/generated.png",
+      "sourceSha256": "188e323fdef9e636594880c3f94e5a9c1188e7f319ed25189a749e21bf11df0b",
+      "crop": [
+        38,
+        1284,
+        214,
+        1520
+      ],
+      "destination": [
+        27,
+        651,
+        74,
+        99
+      ]
+    },
+    {
+      "frame": 21,
+      "sourceFrame": 21,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/maruzensky/generated.png",
+      "sourceSha256": "188e323fdef9e636594880c3f94e5a9c1188e7f319ed25189a749e21bf11df0b",
+      "crop": [
+        292,
+        1284,
+        475,
+        1520
+      ],
+      "destination": [
+        153,
+        651,
+        77,
+        99
+      ]
+    },
+    {
+      "frame": 22,
+      "sourceFrame": 22,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/maruzensky/generated.png",
+      "sourceSha256": "188e323fdef9e636594880c3f94e5a9c1188e7f319ed25189a749e21bf11df0b",
+      "crop": [
+        551,
+        1284,
+        726,
+        1524
+      ],
+      "destination": [
+        283,
+        649,
+        74,
+        101
+      ]
+    },
+    {
+      "frame": 23,
+      "sourceFrame": 23,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/maruzensky/generated.png",
+      "sourceSha256": "188e323fdef9e636594880c3f94e5a9c1188e7f319ed25189a749e21bf11df0b",
+      "crop": [
+        803,
+        1284,
+        977,
+        1520
+      ],
+      "destination": [
+        411,
+        651,
+        73,
+        99
+      ]
+    }
+  ],
+  "identityRevision": {
+    "review": "docs/art-source/motions/identity-revisions-2026-09-12/maruzensky/review.json",
+    "baselineRuntimeSha256": "8fc149b1a411a66a5e09b8cf70456c00a8b352e3e1ddd9d62fc98a36dac8888d",
+    "previousPacking": "docs/art-source/motions/production-144/maruzensky/packing.json",
+    "portrait": "public/assets/portraits/maruzensky.png",
+    "portraitSha256": "333e2532cc428de14678f4a9c8cad3bc3508df65f4cbfc15c29f1ad2beb9a7dc",
+    "changedFrames": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23
+    ],
+    "alpha": {
+      "transparentFraction": 0.5704663594563802,
+      "solidFraction": 0.33796946207682294
+    }
+  }
+}

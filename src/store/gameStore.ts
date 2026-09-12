@@ -1,3 +1,4 @@
+import { applyItemTool, type ItemTool, type ItemToolTarget } from '../game/engine/items/consumables';
 import { configureAudio } from '../game/ui/audio';
 import { claimItemReward, type ItemRewardKind } from '../game/engine/items/rewards';
 import { setCarouselTarget } from '../game/engine/rounds/carousel';
@@ -17,7 +18,7 @@ import { createMatch, RoundDirector } from '../game/engine/rounds/director';
 import type { BattleFrame, BattleSideInput } from '../game/engine/battle/engine';
 import { buyUnit, sellUnit, rollShop, teamSizeLimit, benchCapacity, applyCombines } from '../game/engine/shop';
 import { payReroll, buyXp } from '../game/engine/economy';
-import { combineStoredItems, equipItem, equipTactician, removeItems } from '../game/engine/items/inventory';
+import { combineStoredItems, equipItem, equipTactician } from '../game/engine/items/inventory';
 import { getItem } from '../game/engine/items/item-defs';
 import { saveToStorage, loadFromStorage, clearSave, hasSave, restoreDirector } from '../game/engine/save';
 import { getUnitDef } from '../game/engine/roster';
@@ -75,6 +76,8 @@ type GameStore = {
   /** Bumped on every mutation so React re-renders. */
   revision: number;
   battleFrames: BattleFrame[] | null;
+  scoutFrames: Record<string, BattleFrame[]>;
+  viewedBattleFrames: () => BattleFrame[] | null;
   battleRunning: boolean;
   battleComplete: boolean;
   battleTime: number;
@@ -107,6 +110,7 @@ type GameStore = {
   combineItems: (sourceId: string, targetId: string) => void;
   claimItemReward: (kind: ItemRewardKind, itemId: string) => void;
   unequip: (unitInstanceId: string) => void;
+  useItemTool: (kind: ItemTool, target: ItemToolTarget) => void;
 
   chooseAugment: (augmentId: string) => void;
   pickDraft: (optionIndex: number) => void;
@@ -139,6 +143,8 @@ export const useGameStore = create<GameStore>((set, get) => ({
   match: null,
   revision: 0,
   battleFrames: null,
+  scoutFrames: {},
+  viewedBattleFrames: () => { const s = get(); return s.spectating ? (s.onlinePlayerId ? s.scoutFrames[s.spectating] ?? null : s.director?.playerFrames.get(s.spectating) ?? null) : s.battleFrames; },
   battleRunning: false,
   battleComplete: false,
   battleTime: 0,
@@ -355,15 +361,14 @@ export const useGameStore = create<GameStore>((set, get) => ({
     bump(set);
   },
 
-  unequip: (unitInstanceId) => {
-    if (get().onlinePlayerId) return;
-    if (get().battleRunning) { set({ lastError: '전투 종료 후 장비를 변경할 수 있습니다.' }); return; }
-    const { director } = get();
-    const player = get().human();
-    if (!director || !player) return;
-    if (!removeItems(director.state, player, unitInstanceId)) {
-      set({ lastError: '아이템 보관함 공간이 부족합니다.' });
-    }
+  unequip: unit => get().useItemTool('REMOVER', { unit }),
+  useItemTool: (kind, target) => {
+    if (get().onlinePlayerId) { onlineBridge.send?.({ action: 'itemTool', kind, target }); return; }
+    const director = get().director, player = get().human();
+    if (!director || !player || get().battleRunning) return;
+    const ok = applyItemTool(director.state, player, kind, target, director.rngs.get('loot'));
+    if (ok) director.syncRng();
+    set({ lastError: ok ? null : '사용할 수 없습니다. 도구 수량, 대상 장비와 보관함 공간을 확인하세요.' });
     bump(set);
   },
 
@@ -426,8 +431,8 @@ export const useGameStore = create<GameStore>((set, get) => ({
     // Resolve now and play back the frames the resolution itself produced, so
     // the animation can never disagree with the result it leads to.
     saveToStorage(director); // Reload returns to a complete preparation checkpoint.
-    director.resolveRound(true);
-    set({ battleFrames: director.lastHumanFrames, battleRunning: true, battleComplete: false, battleTime: 0, prepRemaining: null, prepPaused: false, selectedUnitId: null, spectating: null, lastError: null });
+    director.resolveRound(true, true);
+    set({ battleFrames: director.lastHumanFrames, battleRunning: true, battleComplete: false, battleTime: 0, prepRemaining: null, prepPaused: false, selectedUnitId: null, lastError: null });
     bump(set);
   },
 
@@ -448,7 +453,7 @@ export const useGameStore = create<GameStore>((set, get) => ({
     if (!director || !battleRunning || battleComplete) return;
     director.settleRound();
     saveToStorage(director);
-    set({ battleComplete: true, battleTime: get().battleFrames?.at(-1)?.t ?? get().battleTime });
+    set({ battleComplete: true, battleTime: Math.max(get().battleTime, ...[...director.playerFrames.values()].map(frames => frames.at(-1)?.t ?? 0)) });
     bump(set);
   },
 
@@ -473,7 +478,9 @@ export const useGameStore = create<GameStore>((set, get) => ({
 
   inspectPlayer: (id) => {
     const player = get().match?.players.find((p) => p.id === id && p.eliminatedAtRound === null);
-    set({ spectating: player && !player.isHuman ? player.id : null, selectedUnitId: null });
+    const spectating = player && player.id !== get().human()?.id ? player.id : null;
+    set({ spectating, selectedUnitId: null });
+    if (get().onlinePlayerId) onlineBridge.watch?.(spectating);
   },
 
   spectate: (direction) => {
@@ -484,7 +491,7 @@ export const useGameStore = create<GameStore>((set, get) => ({
     const currentId = spectating ?? match.players.find((p) => p.isHuman)?.id;
     const idx = alive.findIndex((p) => p.id === currentId);
     const next = alive[(idx + direction + alive.length) % alive.length];
-    set({ spectating: next.isHuman ? null : next.id });
+    get().inspectPlayer(next.id);
   },
 
   selectUnit: (instanceId) => set((s) => ({

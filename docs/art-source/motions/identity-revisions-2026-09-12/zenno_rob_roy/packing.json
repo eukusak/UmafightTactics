@@ -1,0 +1,484 @@
+{
+  "format": "uft-baked-frames-v1",
+  "columns": 4,
+  "rows": 6,
+  "frameWidth": 128,
+  "frameHeight": 128,
+  "anchor": [
+    64,
+    110
+  ],
+  "scale": 0.4279835390946502,
+  "runtimeSha256": "76c45f5c135f08291827d2ceca68b5ff14f35a9178e5e0b54cfc0e2285170a8b",
+  "frames": [
+    {
+      "frame": 0,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/zenno_rob_roy/generated.png",
+      "sourceSha256": "ff7f51986f30fd4f66daeadb70a4d2f7543db941a0ce78f551d8d9a2b31740b0",
+      "crop": [
+        61,
+        14,
+        198,
+        231
+      ],
+      "destination": [
+        34,
+        17,
+        59,
+        93
+      ]
+    },
+    {
+      "frame": 1,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/zenno_rob_roy/generated.png",
+      "sourceSha256": "ff7f51986f30fd4f66daeadb70a4d2f7543db941a0ce78f551d8d9a2b31740b0",
+      "crop": [
+        318,
+        14,
+        458,
+        232
+      ],
+      "destination": [
+        162,
+        17,
+        60,
+        93
+      ]
+    },
+    {
+      "frame": 2,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/zenno_rob_roy/generated.png",
+      "sourceSha256": "ff7f51986f30fd4f66daeadb70a4d2f7543db941a0ce78f551d8d9a2b31740b0",
+      "crop": [
+        575,
+        15,
+        705,
+        233
+      ],
+      "destination": [
+        292,
+        17,
+        56,
+        93
+      ]
+    },
+    {
+      "frame": 3,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/zenno_rob_roy/generated.png",
+      "sourceSha256": "ff7f51986f30fd4f66daeadb70a4d2f7543db941a0ce78f551d8d9a2b31740b0",
+      "crop": [
+        829,
+        15,
+        962,
+        232
+      ],
+      "destination": [
+        419,
+        17,
+        57,
+        93
+      ]
+    },
+    {
+      "frame": 4,
+      "sourceFrame": 4,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/zenno_rob_roy/generated.png",
+      "sourceSha256": "ff7f51986f30fd4f66daeadb70a4d2f7543db941a0ce78f551d8d9a2b31740b0",
+      "crop": [
+        45,
+        270,
+        212,
+        492
+      ],
+      "destination": [
+        28,
+        143,
+        71,
+        95
+      ]
+    },
+    {
+      "frame": 5,
+      "sourceFrame": 5,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/zenno_rob_roy/generated.png",
+      "sourceSha256": "ff7f51986f30fd4f66daeadb70a4d2f7543db941a0ce78f551d8d9a2b31740b0",
+      "crop": [
+        295,
+        270,
+        470,
+        492
+      ],
+      "destination": [
+        154,
+        143,
+        75,
+        95
+      ]
+    },
+    {
+      "frame": 6,
+      "sourceFrame": 6,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/zenno_rob_roy/generated.png",
+      "sourceSha256": "ff7f51986f30fd4f66daeadb70a4d2f7543db941a0ce78f551d8d9a2b31740b0",
+      "crop": [
+        552,
+        270,
+        722,
+        492
+      ],
+      "destination": [
+        283,
+        143,
+        73,
+        95
+      ]
+    },
+    {
+      "frame": 7,
+      "sourceFrame": 7,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/zenno_rob_roy/generated.png",
+      "sourceSha256": "ff7f51986f30fd4f66daeadb70a4d2f7543db941a0ce78f551d8d9a2b31740b0",
+      "crop": [
+        803,
+        270,
+        978,
+        492
+      ],
+      "destination": [
+        410,
+        143,
+        75,
+        95
+      ]
+    },
+    {
+      "frame": 8,
+      "sourceFrame": 8,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/zenno_rob_roy/generated.png",
+      "sourceSha256": "ff7f51986f30fd4f66daeadb70a4d2f7543db941a0ce78f551d8d9a2b31740b0",
+      "crop": [
+        48,
+        522,
+        199,
+        745
+      ],
+      "destination": [
+        31,
+        271,
+        65,
+        95
+      ]
+    },
+    {
+      "frame": 9,
+      "sourceFrame": 9,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/zenno_rob_roy/generated.png",
+      "sourceSha256": "ff7f51986f30fd4f66daeadb70a4d2f7543db941a0ce78f551d8d9a2b31740b0",
+      "crop": [
+        302,
+        522,
+        461,
+        748
+      ],
+      "destination": [
+        158,
+        269,
+        68,
+        97
+      ]
+    },
+    {
+      "frame": 10,
+      "sourceFrame": 10,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/zenno_rob_roy/generated.png",
+      "sourceSha256": "ff7f51986f30fd4f66daeadb70a4d2f7543db941a0ce78f551d8d9a2b31740b0",
+      "crop": [
+        546,
+        524,
+        727,
+        746
+      ],
+      "destination": [
+        281,
+        271,
+        77,
+        95
+      ]
+    },
+    {
+      "frame": 11,
+      "sourceFrame": 11,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/zenno_rob_roy/generated.png",
+      "sourceSha256": "ff7f51986f30fd4f66daeadb70a4d2f7543db941a0ce78f551d8d9a2b31740b0",
+      "crop": [
+        821,
+        523,
+        963,
+        747
+      ],
+      "destination": [
+        417,
+        270,
+        61,
+        96
+      ]
+    },
+    {
+      "frame": 12,
+      "sourceFrame": 12,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/zenno_rob_roy/generated.png",
+      "sourceSha256": "ff7f51986f30fd4f66daeadb70a4d2f7543db941a0ce78f551d8d9a2b31740b0",
+      "crop": [
+        51,
+        776,
+        198,
+        1003
+      ],
+      "destination": [
+        32,
+        397,
+        63,
+        97
+      ]
+    },
+    {
+      "frame": 13,
+      "sourceFrame": 13,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/zenno_rob_roy/generated.png",
+      "sourceSha256": "ff7f51986f30fd4f66daeadb70a4d2f7543db941a0ce78f551d8d9a2b31740b0",
+      "crop": [
+        293,
+        775,
+        472,
+        1003
+      ],
+      "destination": [
+        153,
+        396,
+        77,
+        98
+      ]
+    },
+    {
+      "frame": 14,
+      "sourceFrame": 14,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/zenno_rob_roy/generated.png",
+      "sourceSha256": "ff7f51986f30fd4f66daeadb70a4d2f7543db941a0ce78f551d8d9a2b31740b0",
+      "crop": [
+        551,
+        775,
+        721,
+        1002
+      ],
+      "destination": [
+        283,
+        397,
+        73,
+        97
+      ]
+    },
+    {
+      "frame": 15,
+      "sourceFrame": 15,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/zenno_rob_roy/generated.png",
+      "sourceSha256": "ff7f51986f30fd4f66daeadb70a4d2f7543db941a0ce78f551d8d9a2b31740b0",
+      "crop": [
+        822,
+        775,
+        964,
+        1003
+      ],
+      "destination": [
+        417,
+        396,
+        61,
+        98
+      ]
+    },
+    {
+      "frame": 16,
+      "sourceFrame": 16,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/zenno_rob_roy/generated.png",
+      "sourceSha256": "ff7f51986f30fd4f66daeadb70a4d2f7543db941a0ce78f551d8d9a2b31740b0",
+      "crop": [
+        44,
+        1042,
+        204,
+        1263
+      ],
+      "destination": [
+        30,
+        527,
+        68,
+        95
+      ]
+    },
+    {
+      "frame": 17,
+      "sourceFrame": 17,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/zenno_rob_roy/generated.png",
+      "sourceSha256": "ff7f51986f30fd4f66daeadb70a4d2f7543db941a0ce78f551d8d9a2b31740b0",
+      "crop": [
+        295,
+        1069,
+        464,
+        1256
+      ],
+      "destination": [
+        156,
+        542,
+        72,
+        80
+      ]
+    },
+    {
+      "frame": 18,
+      "sourceFrame": 18,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/zenno_rob_roy/generated.png",
+      "sourceSha256": "ff7f51986f30fd4f66daeadb70a4d2f7543db941a0ce78f551d8d9a2b31740b0",
+      "crop": [
+        549,
+        1077,
+        715,
+        1256
+      ],
+      "destination": [
+        284,
+        545,
+        71,
+        77
+      ]
+    },
+    {
+      "frame": 19,
+      "sourceFrame": 19,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/zenno_rob_roy/generated.png",
+      "sourceSha256": "ff7f51986f30fd4f66daeadb70a4d2f7543db941a0ce78f551d8d9a2b31740b0",
+      "crop": [
+        789,
+        1143,
+        1003,
+        1252
+      ],
+      "destination": [
+        402,
+        575,
+        92,
+        47
+      ]
+    },
+    {
+      "frame": 20,
+      "sourceFrame": 20,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/zenno_rob_roy/generated.png",
+      "sourceSha256": "ff7f51986f30fd4f66daeadb70a4d2f7543db941a0ce78f551d8d9a2b31740b0",
+      "crop": [
+        53,
+        1279,
+        193,
+        1522
+      ],
+      "destination": [
+        34,
+        646,
+        60,
+        104
+      ]
+    },
+    {
+      "frame": 21,
+      "sourceFrame": 21,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/zenno_rob_roy/generated.png",
+      "sourceSha256": "ff7f51986f30fd4f66daeadb70a4d2f7543db941a0ce78f551d8d9a2b31740b0",
+      "crop": [
+        300,
+        1280,
+        464,
+        1522
+      ],
+      "destination": [
+        157,
+        646,
+        70,
+        104
+      ]
+    },
+    {
+      "frame": 22,
+      "sourceFrame": 22,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/zenno_rob_roy/generated.png",
+      "sourceSha256": "ff7f51986f30fd4f66daeadb70a4d2f7543db941a0ce78f551d8d9a2b31740b0",
+      "crop": [
+        566,
+        1281,
+        705,
+        1523
+      ],
+      "destination": [
+        290,
+        646,
+        59,
+        104
+      ]
+    },
+    {
+      "frame": 23,
+      "sourceFrame": 23,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/zenno_rob_roy/generated.png",
+      "sourceSha256": "ff7f51986f30fd4f66daeadb70a4d2f7543db941a0ce78f551d8d9a2b31740b0",
+      "crop": [
+        822,
+        1282,
+        958,
+        1522
+      ],
+      "destination": [
+        419,
+        647,
+        58,
+        103
+      ]
+    }
+  ],
+  "identityRevision": {
+    "review": "docs/art-source/motions/identity-revisions-2026-09-12/zenno_rob_roy/review.json",
+    "baselineRuntimeSha256": "9178e44ce7106e0f260084a1715b036470ac87dce88465872f10a8a881a01392",
+    "previousPacking": "docs/art-source/motions/production-144/zenno_rob_roy/packing.json",
+    "portrait": "public/assets/portraits/zenno_rob_roy.png",
+    "portraitSha256": "1d982fa36deadeb4d71f939dc3704e201970f753971b1504fc23ea2a4d609e2a",
+    "changedFrames": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23
+    ],
+    "alpha": {
+      "transparentFraction": 0.6789773305257162,
+      "solidFraction": 0.2500756581624349
+    }
+  }
+}

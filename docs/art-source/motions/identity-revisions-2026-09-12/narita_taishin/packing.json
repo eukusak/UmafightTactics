@@ -1,0 +1,484 @@
+{
+  "format": "uft-baked-frames-v1",
+  "columns": 4,
+  "rows": 6,
+  "frameWidth": 128,
+  "frameHeight": 128,
+  "anchor": [
+    64,
+    110
+  ],
+  "scale": 0.4482758620689655,
+  "runtimeSha256": "c403d59b556e12c5d0e9f6f6e459682e4425d40bb68e29d377f34f8eb17c6a57",
+  "frames": [
+    {
+      "frame": 0,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/narita_taishin/generated.png",
+      "sourceSha256": "861b90b194a0a261d181168ed204d456036e1d95db59f9ad8dfab6a81f641dae",
+      "crop": [
+        60,
+        20,
+        211,
+        240
+      ],
+      "destination": [
+        30,
+        11,
+        68,
+        99
+      ]
+    },
+    {
+      "frame": 1,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/narita_taishin/generated.png",
+      "sourceSha256": "861b90b194a0a261d181168ed204d456036e1d95db59f9ad8dfab6a81f641dae",
+      "crop": [
+        314,
+        21,
+        463,
+        239
+      ],
+      "destination": [
+        158,
+        12,
+        67,
+        98
+      ]
+    },
+    {
+      "frame": 2,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/narita_taishin/generated.png",
+      "sourceSha256": "861b90b194a0a261d181168ed204d456036e1d95db59f9ad8dfab6a81f641dae",
+      "crop": [
+        571,
+        21,
+        715,
+        240
+      ],
+      "destination": [
+        287,
+        12,
+        65,
+        98
+      ]
+    },
+    {
+      "frame": 3,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/narita_taishin/generated.png",
+      "sourceSha256": "861b90b194a0a261d181168ed204d456036e1d95db59f9ad8dfab6a81f641dae",
+      "crop": [
+        828,
+        21,
+        978,
+        240
+      ],
+      "destination": [
+        414,
+        12,
+        67,
+        98
+      ]
+    },
+    {
+      "frame": 4,
+      "sourceFrame": 4,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/narita_taishin/generated.png",
+      "sourceSha256": "861b90b194a0a261d181168ed204d456036e1d95db59f9ad8dfab6a81f641dae",
+      "crop": [
+        46,
+        288,
+        226,
+        499
+      ],
+      "destination": [
+        23,
+        143,
+        81,
+        95
+      ]
+    },
+    {
+      "frame": 5,
+      "sourceFrame": 5,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/narita_taishin/generated.png",
+      "sourceSha256": "861b90b194a0a261d181168ed204d456036e1d95db59f9ad8dfab6a81f641dae",
+      "crop": [
+        304,
+        288,
+        485,
+        498
+      ],
+      "destination": [
+        151,
+        144,
+        81,
+        94
+      ]
+    },
+    {
+      "frame": 6,
+      "sourceFrame": 6,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/narita_taishin/generated.png",
+      "sourceSha256": "861b90b194a0a261d181168ed204d456036e1d95db59f9ad8dfab6a81f641dae",
+      "crop": [
+        557,
+        288,
+        737,
+        499
+      ],
+      "destination": [
+        279,
+        143,
+        81,
+        95
+      ]
+    },
+    {
+      "frame": 7,
+      "sourceFrame": 7,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/narita_taishin/generated.png",
+      "sourceSha256": "861b90b194a0a261d181168ed204d456036e1d95db59f9ad8dfab6a81f641dae",
+      "crop": [
+        810,
+        289,
+        993,
+        501
+      ],
+      "destination": [
+        407,
+        143,
+        82,
+        95
+      ]
+    },
+    {
+      "frame": 8,
+      "sourceFrame": 8,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/narita_taishin/generated.png",
+      "sourceSha256": "861b90b194a0a261d181168ed204d456036e1d95db59f9ad8dfab6a81f641dae",
+      "crop": [
+        53,
+        545,
+        207,
+        759
+      ],
+      "destination": [
+        29,
+        270,
+        69,
+        96
+      ]
+    },
+    {
+      "frame": 9,
+      "sourceFrame": 9,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/narita_taishin/generated.png",
+      "sourceSha256": "861b90b194a0a261d181168ed204d456036e1d95db59f9ad8dfab6a81f641dae",
+      "crop": [
+        306,
+        548,
+        473,
+        757
+      ],
+      "destination": [
+        154,
+        272,
+        75,
+        94
+      ]
+    },
+    {
+      "frame": 10,
+      "sourceFrame": 10,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/narita_taishin/generated.png",
+      "sourceSha256": "861b90b194a0a261d181168ed204d456036e1d95db59f9ad8dfab6a81f641dae",
+      "crop": [
+        550,
+        549,
+        739,
+        759
+      ],
+      "destination": [
+        277,
+        272,
+        85,
+        94
+      ]
+    },
+    {
+      "frame": 11,
+      "sourceFrame": 11,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/narita_taishin/generated.png",
+      "sourceSha256": "861b90b194a0a261d181168ed204d456036e1d95db59f9ad8dfab6a81f641dae",
+      "crop": [
+        823,
+        548,
+        979,
+        759
+      ],
+      "destination": [
+        413,
+        271,
+        70,
+        95
+      ]
+    },
+    {
+      "frame": 12,
+      "sourceFrame": 12,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/narita_taishin/generated.png",
+      "sourceSha256": "861b90b194a0a261d181168ed204d456036e1d95db59f9ad8dfab6a81f641dae",
+      "crop": [
+        9,
+        853,
+        266,
+        1025
+      ],
+      "destination": [
+        6,
+        417,
+        115,
+        77
+      ]
+    },
+    {
+      "frame": 13,
+      "sourceFrame": 13,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/narita_taishin/generated.png",
+      "sourceSha256": "861b90b194a0a261d181168ed204d456036e1d95db59f9ad8dfab6a81f641dae",
+      "crop": [
+        280,
+        833,
+        517,
+        1024
+      ],
+      "destination": [
+        139,
+        408,
+        106,
+        86
+      ]
+    },
+    {
+      "frame": 14,
+      "sourceFrame": 14,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/narita_taishin/generated.png",
+      "sourceSha256": "861b90b194a0a261d181168ed204d456036e1d95db59f9ad8dfab6a81f641dae",
+      "crop": [
+        553,
+        802,
+        751,
+        1029
+      ],
+      "destination": [
+        275,
+        392,
+        89,
+        102
+      ]
+    },
+    {
+      "frame": 15,
+      "sourceFrame": 15,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/narita_taishin/generated.png",
+      "sourceSha256": "861b90b194a0a261d181168ed204d456036e1d95db59f9ad8dfab6a81f641dae",
+      "crop": [
+        816,
+        826,
+        972,
+        1027
+      ],
+      "destination": [
+        413,
+        404,
+        70,
+        90
+      ]
+    },
+    {
+      "frame": 16,
+      "sourceFrame": 16,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/narita_taishin/generated.png",
+      "sourceSha256": "861b90b194a0a261d181168ed204d456036e1d95db59f9ad8dfab6a81f641dae",
+      "crop": [
+        45,
+        1050,
+        219,
+        1257
+      ],
+      "destination": [
+        25,
+        529,
+        78,
+        93
+      ]
+    },
+    {
+      "frame": 17,
+      "sourceFrame": 17,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/narita_taishin/generated.png",
+      "sourceSha256": "861b90b194a0a261d181168ed204d456036e1d95db59f9ad8dfab6a81f641dae",
+      "crop": [
+        303,
+        1070,
+        485,
+        1257
+      ],
+      "destination": [
+        151,
+        538,
+        82,
+        84
+      ]
+    },
+    {
+      "frame": 18,
+      "sourceFrame": 18,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/narita_taishin/generated.png",
+      "sourceSha256": "861b90b194a0a261d181168ed204d456036e1d95db59f9ad8dfab6a81f641dae",
+      "crop": [
+        564,
+        1079,
+        731,
+        1254
+      ],
+      "destination": [
+        282,
+        544,
+        75,
+        78
+      ]
+    },
+    {
+      "frame": 19,
+      "sourceFrame": 19,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/narita_taishin/generated.png",
+      "sourceSha256": "861b90b194a0a261d181168ed204d456036e1d95db59f9ad8dfab6a81f641dae",
+      "crop": [
+        790,
+        1159,
+        1007,
+        1262
+      ],
+      "destination": [
+        399,
+        576,
+        97,
+        46
+      ]
+    },
+    {
+      "frame": 20,
+      "sourceFrame": 20,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/narita_taishin/generated.png",
+      "sourceSha256": "861b90b194a0a261d181168ed204d456036e1d95db59f9ad8dfab6a81f641dae",
+      "crop": [
+        55,
+        1288,
+        206,
+        1511
+      ],
+      "destination": [
+        30,
+        650,
+        68,
+        100
+      ]
+    },
+    {
+      "frame": 21,
+      "sourceFrame": 21,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/narita_taishin/generated.png",
+      "sourceSha256": "861b90b194a0a261d181168ed204d456036e1d95db59f9ad8dfab6a81f641dae",
+      "crop": [
+        316,
+        1289,
+        468,
+        1511
+      ],
+      "destination": [
+        158,
+        650,
+        68,
+        100
+      ]
+    },
+    {
+      "frame": 22,
+      "sourceFrame": 22,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/narita_taishin/generated.png",
+      "sourceSha256": "861b90b194a0a261d181168ed204d456036e1d95db59f9ad8dfab6a81f641dae",
+      "crop": [
+        574,
+        1283,
+        722,
+        1515
+      ],
+      "destination": [
+        287,
+        646,
+        66,
+        104
+      ]
+    },
+    {
+      "frame": 23,
+      "sourceFrame": 23,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/narita_taishin/generated.png",
+      "sourceSha256": "861b90b194a0a261d181168ed204d456036e1d95db59f9ad8dfab6a81f641dae",
+      "crop": [
+        832,
+        1290,
+        987,
+        1511
+      ],
+      "destination": [
+        413,
+        651,
+        69,
+        99
+      ]
+    }
+  ],
+  "identityRevision": {
+    "review": "docs/art-source/motions/identity-revisions-2026-09-12/narita_taishin/review.json",
+    "baselineRuntimeSha256": "a750b67321a111b1ae01c7554630b65d9caee7f562044c3524956f1b302fac71",
+    "previousPacking": "docs/art-source/motions/skill-revisions-2026-09-11/narita_taishin/packing.json",
+    "portrait": "public/assets/portraits/narita_taishin.png",
+    "portraitSha256": "50ba9a7c9540b80100586c1da909713f7002cc0859bca5d7c5f5cf539d4d37e5",
+    "changedFrames": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23
+    ],
+    "alpha": {
+      "transparentFraction": 0.6719868977864584,
+      "solidFraction": 0.2405846913655599
+    }
+  }
+}

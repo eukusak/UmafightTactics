@@ -1,0 +1,15 @@
+{
+  "tool": "built-in image_gen",
+  "referenceCommit": "847fc5a43eb3017d485192dec5e77812e7e4f98f",
+  "referencePortrait": "public/assets/portraits/yamanin_zephyr.png",
+  "referenceAtlas": "public/assets/motions/yamanin_zephyr.png",
+  "prompt": "Edit the second image's complete 24-pose chibi sprite atlas so EVERY face and hairstyle matches the FIRST portrait. Identity: Muted mauve-brown LONG FLOWING WAVY hair, broad soft white central front lock, warm brown-gold eyes, red flower headband. Keep the second image's outfit, full-body poses and exact 4 columns by 6 rows layout: idle, run, attack, skill, KO, victory. Keep the distinct skill gestures and effects (cleanse_hymn) in row 4, including release in column 3. Do not repeat or replace action rows. All 24 bodies inside separate equal cells, empty gutters. Transparent PNG cutouts with real alpha; no backdrop or checkerboard.",
+  "alphaEditPrompt": "Make the background transparent. Preserve every character and effect. Export a transparent PNG cutout, with alpha zero in the empty space.",
+  "detailRevision": {
+    "referenceCommit": "715aac15241ab0f2cffd240a116a88324584167c",
+    "referencePortrait": "public/assets/portraits/yamanin_zephyr.png",
+    "referenceAtlas": "docs/art-source/motions/identity-revisions-2026-09-12/yamanin_zephyr/generated.png",
+    "prompt": "Edit the SECOND 24-pose sprite sheet with the FIRST portrait as the identity reference. Match the portrait iris color: soft warm HAZEL BROWN, not pink or red. Keep the mauve-brown long wavy hair and pale forelock. Change that identity detail in EVERY pose consistently. Preserve all body poses, outfits and skill effects, exactly 4 columns by 6 rows, 24 separate full bodies with empty gutters. Transparent PNG cutouts, alpha zero empty space.",
+    "finalEditPrompt": "Make the background transparent. Preserve every character and effect. Export a transparent PNG cutout, with alpha zero in the empty space."
+  }
+}
