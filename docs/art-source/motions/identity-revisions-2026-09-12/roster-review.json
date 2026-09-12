@@ -598,7 +598,7 @@
     "bamboo_memory": {
       "decision": "revise",
       "status": "integrated",
-      "reason": "Reddish brown short spiky tousled hair, blue eyes, GREEN HEADBAND. No white forelock.",
+      "reason": "Short spiky chestnut hair, blue eyes, thin green headband and green bow; large white central forelock restored.",
       "portrait": "public/assets/portraits/bamboo_memory.png",
       "portraitSha256": "12b60fe7688427bc175ac53a7dfd367e97a1906daf7fa42afd28c54530dbcd36",
       "baselineRuntimeSha256": "ffd3dfd188a82b0702d2ede9be56d6654247289bcafe9620614ccf553adb28f8",
@@ -606,7 +606,8 @@
       "skillSignature": "6ef8a700532e3eff17ca4d7d468541ac754352c5f99e855589212019cf697c7f",
       "name": "뱀부 메모리",
       "revision": "docs/art-source/motions/identity-revisions-2026-09-12/bamboo_memory/review.json",
-      "runtimeSha256": "c5709680cab2cebf9da7b3c877e5fd0e9adce08d268fd644386ec9436912b80a"
+      "runtimeSha256": "2630fe899590288020e4ae9605da4a93ed8209acac9cd29d4fa5f78e77f4cbcf",
+      "detailRevision": "Short spiky chestnut hair, blue eyes, thin green headband and green bow; large white central forelock restored."
     },
     "biko_pegasus": {
       "decision": "revise",
@@ -895,7 +896,7 @@
     "yamanin_zephyr": {
       "decision": "revise",
       "status": "integrated",
-      "reason": "Muted mauve-brown LONG FLOWING WAVY hair, broad soft white central front lock, warm brown-gold eyes, red flower headband.",
+      "reason": "Mauve-brown long wavy hair with pale central forelock and warm brown irises.",
       "portrait": "public/assets/portraits/yamanin_zephyr.png",
       "portraitSha256": "5f979f95e27493b178aa103bf3fe88c13a355ef0c325652816e680cfd48298c2",
       "baselineRuntimeSha256": "b9d6d1d0684e02bd22905c57813cd857f9c3a65dd4d56df0069a918a19f1a617",
@@ -903,7 +904,8 @@
       "skillSignature": "4e773e4ef1dc26483483006ae197a6b43b809a605d8e22e032ecc72e761fb789",
       "name": "야마닌 제퍼",
       "revision": "docs/art-source/motions/identity-revisions-2026-09-12/yamanin_zephyr/review.json",
-      "runtimeSha256": "60357b7492f271bccac93d5edad584679a31fa3e8957459e3a9bd6cdd8f54ac4"
+      "runtimeSha256": "015cf9ccbd0fbb6deb91ff4f039a9fd4be13b5b70ff2d167c6ba833f13af888f",
+      "detailRevision": "Mauve-brown long wavy hair with pale central forelock and warm brown irises."
     },
     "furioso": {
       "decision": "revise",
@@ -997,7 +999,7 @@
     "aston_machan": {
       "decision": "revise",
       "status": "integrated",
-      "reason": "Orange-brown WAVY BOB with small side ponytail, GREEN eyes, tiny crown. Replace straight bob and brown eyes.",
+      "reason": "Wavy chestnut chin-length bob, green eyes and high viewer-right side ponytail with red ribbon beside crown.",
       "portrait": "public/assets/portraits/aston_machan.png",
       "portraitSha256": "6bb530bafc3607dc5d0f56283e1872ca968f0aad70dfca93ca754b3126e44afc",
       "baselineRuntimeSha256": "22e1561bbac1e62ef4dd174de320531d6d87d50ff98a6d716acebdec0c770d15",
@@ -1005,7 +1007,8 @@
       "skillSignature": "f9a14d34580dd71bd5b3d23db795f75565ef4803f8e1bcc61a797624fd4406fb",
       "name": "애스턴 마짱",
       "revision": "docs/art-source/motions/identity-revisions-2026-09-12/aston_machan/review.json",
-      "runtimeSha256": "3f9f894e3a6f5ed9d480c158022a48796b53e2be20d7aaa1695cc80a1cfb5743"
+      "runtimeSha256": "1959d15a003ac15aba78e387a8b5b233ff294b2fc2617fdc33633ccbd5a69da9",
+      "detailRevision": "Wavy chestnut chin-length bob, green eyes and high viewer-right side ponytail with red ribbon beside crown."
     },
     "satono_crown": {
       "decision": "revise",
@@ -1145,7 +1148,7 @@
     "wonder_acute": {
       "decision": "revise",
       "status": "integrated",
-      "reason": "Silver-gray soft long layered WAVY hair, LIGHT BLUE eyes, red-white-blue ear bow. Replace violet eyes.",
+      "reason": "Long wavy gray hair, cyan-blue eyes and fine round glasses retained across all 24 poses, including closed-eye poses.",
       "portrait": "public/assets/portraits/wonder_acute.png",
       "portraitSha256": "701c94d17ecd474b3bd77cc5e834c956fdb087437cdd976e0eea955a59529e7f",
       "baselineRuntimeSha256": "f109ad18b6335bba6d91841b54eee28528f414783dc7893974dd0eaab3299a66",
@@ -1153,7 +1156,8 @@
       "skillSignature": "97249df86962bd780510bf837b2dcf58b56c2218e3daea65b9e0614dec00c34a",
       "name": "원더 어큐트",
       "revision": "docs/art-source/motions/identity-revisions-2026-09-12/wonder_acute/review.json",
-      "runtimeSha256": "949e168f8f1f8be62acc28040bae2286cb56af376c0ccb5b2169ca3200da58b3"
+      "runtimeSha256": "d053e7f20b135d6bd443c7b7b595491c18cf82bd7a3270139b4cb2296c5769ef",
+      "detailRevision": "Long wavy gray hair, cyan-blue eyes and fine round glasses retained across all 24 poses, including closed-eye poses."
     },
     "samson_big": {
       "decision": "revise",
@@ -1221,7 +1225,7 @@
     "hishi_miracle": {
       "decision": "revise",
       "status": "integrated",
-      "reason": "Silver WAVY SHOULDER BOB, TEAL-GREEN eyes, white-blue ear covers and yellow bow.",
+      "reason": "Softly wavy silver-blue shoulder-length hair, blue-white ear covers and pale blue-green irises.",
       "portrait": "public/assets/portraits/hishi_miracle.png",
       "portraitSha256": "07342a78e64e5cc74ca4574195ca842890a67e085d58d87b561ac7ef3888bef4",
       "baselineRuntimeSha256": "8781d99bf23a82a842a48d5bab367084290d8b16bbb6ba4603b335b3c933dff7",
@@ -1229,7 +1233,8 @@
       "skillSignature": "40161fbf6894ac63518283fd0969bdd358fd866251225b84041c9b071c5f96b6",
       "name": "히시 미라클",
       "revision": "docs/art-source/motions/identity-revisions-2026-09-12/hishi_miracle/review.json",
-      "runtimeSha256": "61034eac030d27dc8b72ee34e88cd6581e5f4fa8a4e99f630aa747c7d5835466"
+      "runtimeSha256": "9166a15770aa016ce93829bb42c253f065c8f6da996b9dab57baae6902e5cf71",
+      "detailRevision": "Softly wavy silver-blue shoulder-length hair, blue-white ear covers and pale blue-green irises."
     },
     "tap_dance_city": {
       "decision": "revise",
@@ -1271,7 +1276,7 @@
     "cesario": {
       "decision": "revise",
       "status": "integrated",
-      "reason": "Dark blue smooth short bob, CENTRAL VERTICAL WHITE FORELOCK, HETEROCHROMIA: viewer-left eye lavender and viewer-right eye gold.",
+      "reason": "Blue bob and white central fringe retained; all visible irises are lavender purple, with the orange iris removed.",
       "portrait": "public/assets/portraits/cesario.png",
       "portraitSha256": "f809bd86a206bdfd904a3de9eee12cc9d8e0a0a6bb5143702d0be0e034494279",
       "baselineRuntimeSha256": "9f333f80edcda93b004dd1ec377b71c0823cc70e99389eee039cdd8db5b52b03",
@@ -1279,7 +1284,8 @@
       "skillSignature": "4a41d75ad5c99161ecf9fbaef7896fa11317024cf72cca643d46d07c61dc95ce",
       "name": "세자리오",
       "revision": "docs/art-source/motions/identity-revisions-2026-09-12/cesario/review.json",
-      "runtimeSha256": "033174a14be24fd0c0ea1c24e7fe9b76d0291de8a6eaab2b2457d6e00971ce4e"
+      "runtimeSha256": "db5964df63ae8a7b4eb78183cb5e07bf12844aa293aaeabb6f60078a8cecb285",
+      "detailRevision": "Blue bob and white central fringe retained; all visible irises are lavender purple, with the orange iris removed."
     },
     "air_messiah": {
       "decision": "retain",

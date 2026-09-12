@@ -8,24 +8,24 @@
     64,
     110
   ],
-  "scale": 0.46846846846846846,
-  "runtimeSha256": "949e168f8f1f8be62acc28040bae2286cb56af376c0ccb5b2169ca3200da58b3",
+  "scale": 0.4642857142857143,
+  "runtimeSha256": "d053e7f20b135d6bd443c7b7b595491c18cf82bd7a3270139b4cb2296c5769ef",
   "frames": [
     {
       "frame": 0,
       "sourceFrame": 0,
       "source": "docs/art-source/motions/identity-revisions-2026-09-12/wonder_acute/generated.png",
-      "sourceSha256": "7ba4889d7cbca5eec20fc8b94267e327ea62317e7c36e489f800bdff5b0169c0",
+      "sourceSha256": "85c399961dee799793493be6f534416bc1b1c1ec175d189a973d49c6e26bf355",
       "crop": [
-        46,
+        47,
         9,
-        214,
-        229
+        215,
+        231
       ],
       "destination": [
-        24,
+        25,
         7,
-        79,
+        78,
         103
       ]
     },
@@ -33,12 +33,12 @@
       "frame": 1,
       "sourceFrame": 1,
       "source": "docs/art-source/motions/identity-revisions-2026-09-12/wonder_acute/generated.png",
-      "sourceSha256": "7ba4889d7cbca5eec20fc8b94267e327ea62317e7c36e489f800bdff5b0169c0",
+      "sourceSha256": "85c399961dee799793493be6f534416bc1b1c1ec175d189a973d49c6e26bf355",
       "crop": [
         300,
         9,
-        466,
-        229
+        467,
+        231
       ],
       "destination": [
         153,
@@ -51,35 +51,35 @@
       "frame": 2,
       "sourceFrame": 2,
       "source": "docs/art-source/motions/identity-revisions-2026-09-12/wonder_acute/generated.png",
-      "sourceSha256": "7ba4889d7cbca5eec20fc8b94267e327ea62317e7c36e489f800bdff5b0169c0",
+      "sourceSha256": "85c399961dee799793493be6f534416bc1b1c1ec175d189a973d49c6e26bf355",
       "crop": [
-        561,
-        8,
-        723,
-        229
+        559,
+        9,
+        722,
+        231
       ],
       "destination": [
         282,
-        6,
+        7,
         76,
-        104
+        103
       ]
     },
     {
       "frame": 3,
       "sourceFrame": 3,
       "source": "docs/art-source/motions/identity-revisions-2026-09-12/wonder_acute/generated.png",
-      "sourceSha256": "7ba4889d7cbca5eec20fc8b94267e327ea62317e7c36e489f800bdff5b0169c0",
+      "sourceSha256": "85c399961dee799793493be6f534416bc1b1c1ec175d189a973d49c6e26bf355",
       "crop": [
-        817,
+        813,
         9,
-        966,
-        229
+        967,
+        231
       ],
       "destination": [
-        413,
+        412,
         7,
-        70,
+        72,
         103
       ]
     },
@@ -87,53 +87,53 @@
       "frame": 4,
       "sourceFrame": 4,
       "source": "docs/art-source/motions/identity-revisions-2026-09-12/wonder_acute/generated.png",
-      "sourceSha256": "7ba4889d7cbca5eec20fc8b94267e327ea62317e7c36e489f800bdff5b0169c0",
+      "sourceSha256": "85c399961dee799793493be6f534416bc1b1c1ec175d189a973d49c6e26bf355",
       "crop": [
         39,
-        271,
-        222,
-        484
+        269,
+        223,
+        486
       ],
       "destination": [
         21,
-        138,
-        86,
-        100
+        137,
+        85,
+        101
       ]
     },
     {
       "frame": 5,
       "sourceFrame": 5,
       "source": "docs/art-source/motions/identity-revisions-2026-09-12/wonder_acute/generated.png",
-      "sourceSha256": "7ba4889d7cbca5eec20fc8b94267e327ea62317e7c36e489f800bdff5b0169c0",
+      "sourceSha256": "85c399961dee799793493be6f534416bc1b1c1ec175d189a973d49c6e26bf355",
       "crop": [
-        294,
-        270,
-        475,
-        484
+        295,
+        268,
+        477,
+        486
       ],
       "destination": [
         149,
-        138,
+        137,
         85,
-        100
+        101
       ]
     },
     {
       "frame": 6,
       "sourceFrame": 6,
       "source": "docs/art-source/motions/identity-revisions-2026-09-12/wonder_acute/generated.png",
-      "sourceSha256": "7ba4889d7cbca5eec20fc8b94267e327ea62317e7c36e489f800bdff5b0169c0",
+      "sourceSha256": "85c399961dee799793493be6f534416bc1b1c1ec175d189a973d49c6e26bf355",
       "crop": [
         547,
         271,
-        736,
-        485
+        737,
+        486
       ],
       "destination": [
-        275,
+        276,
         138,
-        89,
+        88,
         100
       ]
     },
@@ -141,17 +141,17 @@
       "frame": 7,
       "sourceFrame": 7,
       "source": "docs/art-source/motions/identity-revisions-2026-09-12/wonder_acute/generated.png",
-      "sourceSha256": "7ba4889d7cbca5eec20fc8b94267e327ea62317e7c36e489f800bdff5b0169c0",
+      "sourceSha256": "85c399961dee799793493be6f534416bc1b1c1ec175d189a973d49c6e26bf355",
       "crop": [
         805,
-        271,
-        984,
-        484
+        270,
+        983,
+        486
       ],
       "destination": [
         406,
         138,
-        84,
+        83,
         100
       ]
     },
@@ -159,89 +159,89 @@
       "frame": 8,
       "sourceFrame": 8,
       "source": "docs/art-source/motions/identity-revisions-2026-09-12/wonder_acute/generated.png",
-      "sourceSha256": "7ba4889d7cbca5eec20fc8b94267e327ea62317e7c36e489f800bdff5b0169c0",
+      "sourceSha256": "85c399961dee799793493be6f534416bc1b1c1ec175d189a973d49c6e26bf355",
       "crop": [
-        39,
-        521,
-        226,
-        741
+        38,
+        523,
+        227,
+        743
       ],
       "destination": [
         20,
-        263,
+        264,
         88,
-        103
+        102
       ]
     },
     {
       "frame": 9,
       "sourceFrame": 9,
       "source": "docs/art-source/motions/identity-revisions-2026-09-12/wonder_acute/generated.png",
-      "sourceSha256": "7ba4889d7cbca5eec20fc8b94267e327ea62317e7c36e489f800bdff5b0169c0",
+      "sourceSha256": "85c399961dee799793493be6f534416bc1b1c1ec175d189a973d49c6e26bf355",
       "crop": [
-        304,
-        522,
-        463,
-        741
+        301,
+        523,
+        462,
+        743
       ],
       "destination": [
-        155,
-        263,
-        74,
-        103
+        154,
+        264,
+        75,
+        102
       ]
     },
     {
       "frame": 10,
       "sourceFrame": 10,
       "source": "docs/art-source/motions/identity-revisions-2026-09-12/wonder_acute/generated.png",
-      "sourceSha256": "7ba4889d7cbca5eec20fc8b94267e327ea62317e7c36e489f800bdff5b0169c0",
+      "sourceSha256": "85c399961dee799793493be6f534416bc1b1c1ec175d189a973d49c6e26bf355",
       "crop": [
-        536,
-        522,
-        745,
-        741
+        537,
+        523,
+        747,
+        743
       ],
       "destination": [
         271,
-        263,
+        264,
         98,
-        103
+        102
       ]
     },
     {
       "frame": 11,
       "sourceFrame": 11,
       "source": "docs/art-source/motions/identity-revisions-2026-09-12/wonder_acute/generated.png",
-      "sourceSha256": "7ba4889d7cbca5eec20fc8b94267e327ea62317e7c36e489f800bdff5b0169c0",
+      "sourceSha256": "85c399961dee799793493be6f534416bc1b1c1ec175d189a973d49c6e26bf355",
       "crop": [
-        822,
-        522,
+        817,
+        524,
         967,
-        743
+        744
       ],
       "destination": [
-        414,
-        262,
-        68,
-        104
+        413,
+        264,
+        70,
+        102
       ]
     },
     {
       "frame": 12,
       "sourceFrame": 12,
       "source": "docs/art-source/motions/identity-revisions-2026-09-12/wonder_acute/generated.png",
-      "sourceSha256": "7ba4889d7cbca5eec20fc8b94267e327ea62317e7c36e489f800bdff5b0169c0",
+      "sourceSha256": "85c399961dee799793493be6f534416bc1b1c1ec175d189a973d49c6e26bf355",
       "crop": [
-        56,
-        777,
-        203,
-        996
+        53,
+        776,
+        205,
+        998
       ],
       "destination": [
-        29,
+        28,
         391,
-        69,
+        71,
         103
       ]
     },
@@ -249,30 +249,30 @@
       "frame": 13,
       "sourceFrame": 13,
       "source": "docs/art-source/motions/identity-revisions-2026-09-12/wonder_acute/generated.png",
-      "sourceSha256": "7ba4889d7cbca5eec20fc8b94267e327ea62317e7c36e489f800bdff5b0169c0",
+      "sourceSha256": "85c399961dee799793493be6f534416bc1b1c1ec175d189a973d49c6e26bf355",
       "crop": [
         297,
-        776,
-        475,
-        996
+        775,
+        479,
+        999
       ],
       "destination": [
-        150,
-        391,
-        83,
-        103
+        149,
+        390,
+        85,
+        104
       ]
     },
     {
       "frame": 14,
       "sourceFrame": 14,
       "source": "docs/art-source/motions/identity-revisions-2026-09-12/wonder_acute/generated.png",
-      "sourceSha256": "7ba4889d7cbca5eec20fc8b94267e327ea62317e7c36e489f800bdff5b0169c0",
+      "sourceSha256": "85c399961dee799793493be6f534416bc1b1c1ec175d189a973d49c6e26bf355",
       "crop": [
         545,
         776,
-        735,
-        995
+        736,
+        997
       ],
       "destination": [
         275,
@@ -285,17 +285,17 @@
       "frame": 15,
       "sourceFrame": 15,
       "source": "docs/art-source/motions/identity-revisions-2026-09-12/wonder_acute/generated.png",
-      "sourceSha256": "7ba4889d7cbca5eec20fc8b94267e327ea62317e7c36e489f800bdff5b0169c0",
+      "sourceSha256": "85c399961dee799793493be6f534416bc1b1c1ec175d189a973d49c6e26bf355",
       "crop": [
-        820,
+        817,
         778,
         968,
-        998
+        1000
       ],
       "destination": [
         413,
         391,
-        69,
+        70,
         103
       ]
     },
@@ -303,125 +303,125 @@
       "frame": 16,
       "sourceFrame": 16,
       "source": "docs/art-source/motions/identity-revisions-2026-09-12/wonder_acute/generated.png",
-      "sourceSha256": "7ba4889d7cbca5eec20fc8b94267e327ea62317e7c36e489f800bdff5b0169c0",
+      "sourceSha256": "85c399961dee799793493be6f534416bc1b1c1ec175d189a973d49c6e26bf355",
       "crop": [
-        39,
-        1064,
-        216,
-        1253
+        42,
+        1063,
+        218,
+        1256
       ],
       "destination": [
-        22,
-        533,
-        83,
-        89
+        23,
+        532,
+        82,
+        90
       ]
     },
     {
       "frame": 17,
       "sourceFrame": 17,
       "source": "docs/art-source/motions/identity-revisions-2026-09-12/wonder_acute/generated.png",
-      "sourceSha256": "7ba4889d7cbca5eec20fc8b94267e327ea62317e7c36e489f800bdff5b0169c0",
+      "sourceSha256": "85c399961dee799793493be6f534416bc1b1c1ec175d189a973d49c6e26bf355",
       "crop": [
-        294,
-        1086,
-        472,
-        1252
+        295,
+        1084,
+        475,
+        1256
       ],
       "destination": [
         150,
-        544,
-        83,
-        78
+        542,
+        84,
+        80
       ]
     },
     {
       "frame": 18,
       "sourceFrame": 18,
       "source": "docs/art-source/motions/identity-revisions-2026-09-12/wonder_acute/generated.png",
-      "sourceSha256": "7ba4889d7cbca5eec20fc8b94267e327ea62317e7c36e489f800bdff5b0169c0",
+      "sourceSha256": "85c399961dee799793493be6f534416bc1b1c1ec175d189a973d49c6e26bf355",
       "crop": [
-        562,
-        1100,
+        561,
+        1097,
         721,
-        1251
+        1254
       ],
       "destination": [
         283,
-        551,
+        549,
         74,
-        71
+        73
       ]
     },
     {
       "frame": 19,
       "sourceFrame": 19,
       "source": "docs/art-source/motions/identity-revisions-2026-09-12/wonder_acute/generated.png",
-      "sourceSha256": "7ba4889d7cbca5eec20fc8b94267e327ea62317e7c36e489f800bdff5b0169c0",
+      "sourceSha256": "85c399961dee799793493be6f534416bc1b1c1ec175d189a973d49c6e26bf355",
       "crop": [
-        783,
-        1150,
-        1003,
-        1253
+        784,
+        1148,
+        1000,
+        1255
       ],
       "destination": [
-        396,
-        574,
-        103,
-        48
+        398,
+        572,
+        100,
+        50
       ]
     },
     {
       "frame": 20,
       "sourceFrame": 20,
       "source": "docs/art-source/motions/identity-revisions-2026-09-12/wonder_acute/generated.png",
-      "sourceSha256": "7ba4889d7cbca5eec20fc8b94267e327ea62317e7c36e489f800bdff5b0169c0",
+      "sourceSha256": "85c399961dee799793493be6f534416bc1b1c1ec175d189a973d49c6e26bf355",
       "crop": [
-        50,
-        1288,
+        47,
+        1289,
         202,
-        1507
+        1509
       ],
       "destination": [
         28,
-        647,
-        71,
-        103
+        648,
+        72,
+        102
       ]
     },
     {
       "frame": 21,
       "sourceFrame": 21,
       "source": "docs/art-source/motions/identity-revisions-2026-09-12/wonder_acute/generated.png",
-      "sourceSha256": "7ba4889d7cbca5eec20fc8b94267e327ea62317e7c36e489f800bdff5b0169c0",
+      "sourceSha256": "85c399961dee799793493be6f534416bc1b1c1ec175d189a973d49c6e26bf355",
       "crop": [
-        311,
-        1285,
-        455,
-        1507
+        310,
+        1287,
+        457,
+        1509
       ],
       "destination": [
         158,
-        646,
-        67,
-        104
+        647,
+        68,
+        103
       ]
     },
     {
       "frame": 22,
       "sourceFrame": 22,
       "source": "docs/art-source/motions/identity-revisions-2026-09-12/wonder_acute/generated.png",
-      "sourceSha256": "7ba4889d7cbca5eec20fc8b94267e327ea62317e7c36e489f800bdff5b0169c0",
+      "sourceSha256": "85c399961dee799793493be6f534416bc1b1c1ec175d189a973d49c6e26bf355",
       "crop": [
-        570,
+        567,
         1289,
-        713,
-        1506
+        714,
+        1508
       ],
       "destination": [
         286,
         648,
-        67,
+        68,
         102
       ]
     },
@@ -429,12 +429,12 @@
       "frame": 23,
       "sourceFrame": 23,
       "source": "docs/art-source/motions/identity-revisions-2026-09-12/wonder_acute/generated.png",
-      "sourceSha256": "7ba4889d7cbca5eec20fc8b94267e327ea62317e7c36e489f800bdff5b0169c0",
+      "sourceSha256": "85c399961dee799793493be6f534416bc1b1c1ec175d189a973d49c6e26bf355",
       "crop": [
-        817,
-        1286,
+        815,
+        1287,
         964,
-        1508
+        1510
       ],
       "destination": [
         413,
@@ -477,8 +477,8 @@
       23
     ],
     "alpha": {
-      "transparentFraction": 0.6419150034586588,
-      "solidFraction": 0.2678667704264323
+      "transparentFraction": 0.6445744832356771,
+      "solidFraction": 0.2813129425048828
     }
   }
 }

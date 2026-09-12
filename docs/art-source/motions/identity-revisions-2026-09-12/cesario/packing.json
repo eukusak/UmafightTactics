@@ -8,24 +8,24 @@
     64,
     110
   ],
-  "scale": 0.45614035087719296,
-  "runtimeSha256": "033174a14be24fd0c0ea1c24e7fe9b76d0291de8a6eaab2b2457d6e00971ce4e",
+  "scale": 0.4482758620689655,
+  "runtimeSha256": "db5964df63ae8a7b4eb78183cb5e07bf12844aa293aaeabb6f60078a8cecb285",
   "frames": [
     {
       "frame": 0,
       "sourceFrame": 0,
       "source": "docs/art-source/motions/identity-revisions-2026-09-12/cesario/generated.png",
-      "sourceSha256": "ff0ac8d3deea376830fac0051e80a14ac8783cecb3bdc4584fc11a3e369360e4",
+      "sourceSha256": "7cade537308c08754c90898157060866e8e5b742dec26583574447ee35cacdd7",
       "crop": [
-        62,
-        27,
-        196,
-        232
+        59,
+        24,
+        197,
+        233
       ],
       "destination": [
         33,
         16,
-        61,
+        62,
         94
       ]
     },
@@ -33,12 +33,12 @@
       "frame": 1,
       "sourceFrame": 1,
       "source": "docs/art-source/motions/identity-revisions-2026-09-12/cesario/generated.png",
-      "sourceSha256": "ff0ac8d3deea376830fac0051e80a14ac8783cecb3bdc4584fc11a3e369360e4",
+      "sourceSha256": "7cade537308c08754c90898157060866e8e5b742dec26583574447ee35cacdd7",
       "crop": [
-        317,
-        26,
-        452,
-        233
+        314,
+        25,
+        453,
+        234
       ],
       "destination": [
         161,
@@ -51,17 +51,17 @@
       "frame": 2,
       "sourceFrame": 2,
       "source": "docs/art-source/motions/identity-revisions-2026-09-12/cesario/generated.png",
-      "sourceSha256": "ff0ac8d3deea376830fac0051e80a14ac8783cecb3bdc4584fc11a3e369360e4",
+      "sourceSha256": "7cade537308c08754c90898157060866e8e5b742dec26583574447ee35cacdd7",
       "crop": [
-        573,
-        27,
-        704,
-        233
+        568,
+        26,
+        705,
+        235
       ],
       "destination": [
-        290,
+        289,
         16,
-        60,
+        61,
         94
       ]
     },
@@ -69,107 +69,107 @@
       "frame": 3,
       "sourceFrame": 3,
       "source": "docs/art-source/motions/identity-revisions-2026-09-12/cesario/generated.png",
-      "sourceSha256": "ff0ac8d3deea376830fac0051e80a14ac8783cecb3bdc4584fc11a3e369360e4",
+      "sourceSha256": "7cade537308c08754c90898157060866e8e5b742dec26583574447ee35cacdd7",
       "crop": [
-        827,
-        28,
+        822,
+        27,
         957,
-        233
+        234
       ],
       "destination": [
-        418,
-        16,
-        59,
-        94
+        417,
+        17,
+        61,
+        93
       ]
     },
     {
       "frame": 4,
       "sourceFrame": 4,
       "source": "docs/art-source/motions/identity-revisions-2026-09-12/cesario/generated.png",
-      "sourceSha256": "ff0ac8d3deea376830fac0051e80a14ac8783cecb3bdc4584fc11a3e369360e4",
+      "sourceSha256": "7cade537308c08754c90898157060866e8e5b742dec26583574447ee35cacdd7",
       "crop": [
-        45,
-        276,
-        212,
+        41,
+        275,
+        213,
         488
       ],
       "destination": [
-        26,
-        141,
-        76,
-        97
+        25,
+        143,
+        77,
+        95
       ]
     },
     {
       "frame": 5,
       "sourceFrame": 5,
       "source": "docs/art-source/motions/identity-revisions-2026-09-12/cesario/generated.png",
-      "sourceSha256": "ff0ac8d3deea376830fac0051e80a14ac8783cecb3bdc4584fc11a3e369360e4",
+      "sourceSha256": "7cade537308c08754c90898157060866e8e5b742dec26583574447ee35cacdd7",
       "crop": [
-        309,
-        276,
-        471,
-        488
+        305,
+        275,
+        473,
+        489
       ],
       "destination": [
-        155,
-        141,
-        74,
-        97
+        154,
+        142,
+        75,
+        96
       ]
     },
     {
       "frame": 6,
       "sourceFrame": 6,
       "source": "docs/art-source/motions/identity-revisions-2026-09-12/cesario/generated.png",
-      "sourceSha256": "ff0ac8d3deea376830fac0051e80a14ac8783cecb3bdc4584fc11a3e369360e4",
+      "sourceSha256": "7cade537308c08754c90898157060866e8e5b742dec26583574447ee35cacdd7",
       "crop": [
-        560,
-        276,
-        722,
-        488
+        554,
+        275,
+        724,
+        489
       ],
       "destination": [
-        283,
-        141,
-        74,
-        97
+        282,
+        142,
+        76,
+        96
       ]
     },
     {
       "frame": 7,
       "sourceFrame": 7,
       "source": "docs/art-source/motions/identity-revisions-2026-09-12/cesario/generated.png",
-      "sourceSha256": "ff0ac8d3deea376830fac0051e80a14ac8783cecb3bdc4584fc11a3e369360e4",
+      "sourceSha256": "7cade537308c08754c90898157060866e8e5b742dec26583574447ee35cacdd7",
       "crop": [
-        815,
-        281,
-        974,
+        812,
+        279,
+        977,
         489
       ],
       "destination": [
         411,
-        143,
-        73,
-        95
+        144,
+        74,
+        94
       ]
     },
     {
       "frame": 8,
       "sourceFrame": 8,
       "source": "docs/art-source/motions/identity-revisions-2026-09-12/cesario/generated.png",
-      "sourceSha256": "ff0ac8d3deea376830fac0051e80a14ac8783cecb3bdc4584fc11a3e369360e4",
+      "sourceSha256": "7cade537308c08754c90898157060866e8e5b742dec26583574447ee35cacdd7",
       "crop": [
-        55,
-        531,
-        200,
-        744
+        51,
+        528,
+        201,
+        745
       ],
       "destination": [
-        31,
+        30,
         269,
-        66,
+        67,
         97
       ]
     },
@@ -177,89 +177,89 @@
       "frame": 9,
       "sourceFrame": 9,
       "source": "docs/art-source/motions/identity-revisions-2026-09-12/cesario/generated.png",
-      "sourceSha256": "ff0ac8d3deea376830fac0051e80a14ac8783cecb3bdc4584fc11a3e369360e4",
+      "sourceSha256": "7cade537308c08754c90898157060866e8e5b742dec26583574447ee35cacdd7",
       "crop": [
-        309,
-        530,
-        460,
-        742
+        306,
+        529,
+        462,
+        743
       ],
       "destination": [
         157,
-        269,
-        69,
-        97
+        270,
+        70,
+        96
       ]
     },
     {
       "frame": 10,
       "sourceFrame": 10,
       "source": "docs/art-source/motions/identity-revisions-2026-09-12/cesario/generated.png",
-      "sourceSha256": "ff0ac8d3deea376830fac0051e80a14ac8783cecb3bdc4584fc11a3e369360e4",
+      "sourceSha256": "7cade537308c08754c90898157060866e8e5b742dec26583574447ee35cacdd7",
       "crop": [
-        544,
-        530,
-        732,
-        746
+        543,
+        529,
+        734,
+        747
       ],
       "destination": [
         277,
-        267,
+        268,
         86,
-        99
+        98
       ]
     },
     {
       "frame": 11,
       "sourceFrame": 11,
       "source": "docs/art-source/motions/identity-revisions-2026-09-12/cesario/generated.png",
-      "sourceSha256": "ff0ac8d3deea376830fac0051e80a14ac8783cecb3bdc4584fc11a3e369360e4",
+      "sourceSha256": "7cade537308c08754c90898157060866e8e5b742dec26583574447ee35cacdd7",
       "crop": [
-        820,
+        816,
         529,
-        968,
-        746
+        970,
+        747
       ],
       "destination": [
-        414,
-        267,
-        68,
-        99
+        413,
+        268,
+        69,
+        98
       ]
     },
     {
       "frame": 12,
       "sourceFrame": 12,
       "source": "docs/art-source/motions/identity-revisions-2026-09-12/cesario/generated.png",
-      "sourceSha256": "ff0ac8d3deea376830fac0051e80a14ac8783cecb3bdc4584fc11a3e369360e4",
+      "sourceSha256": "7cade537308c08754c90898157060866e8e5b742dec26583574447ee35cacdd7",
       "crop": [
-        65,
-        774,
-        193,
-        1000
+        57,
+        771,
+        194,
+        1002
       ],
       "destination": [
-        35,
-        391,
-        58,
-        103
+        33,
+        390,
+        61,
+        104
       ]
     },
     {
       "frame": 13,
       "sourceFrame": 13,
       "source": "docs/art-source/motions/identity-revisions-2026-09-12/cesario/generated.png",
-      "sourceSha256": "ff0ac8d3deea376830fac0051e80a14ac8783cecb3bdc4584fc11a3e369360e4",
+      "sourceSha256": "7cade537308c08754c90898157060866e8e5b742dec26583574447ee35cacdd7",
       "crop": [
-        309,
-        772,
-        463,
-        1000
+        307,
+        770,
+        466,
+        1002
       ],
       "destination": [
-        157,
+        156,
         390,
-        70,
+        71,
         104
       ]
     },
@@ -267,12 +267,12 @@
       "frame": 14,
       "sourceFrame": 14,
       "source": "docs/art-source/motions/identity-revisions-2026-09-12/cesario/generated.png",
-      "sourceSha256": "ff0ac8d3deea376830fac0051e80a14ac8783cecb3bdc4584fc11a3e369360e4",
+      "sourceSha256": "7cade537308c08754c90898157060866e8e5b742dec26583574447ee35cacdd7",
       "crop": [
-        549,
-        773,
-        733,
-        999
+        548,
+        771,
+        735,
+        1000
       ],
       "destination": [
         278,
@@ -285,53 +285,53 @@
       "frame": 15,
       "sourceFrame": 15,
       "source": "docs/art-source/motions/identity-revisions-2026-09-12/cesario/generated.png",
-      "sourceSha256": "ff0ac8d3deea376830fac0051e80a14ac8783cecb3bdc4584fc11a3e369360e4",
+      "sourceSha256": "7cade537308c08754c90898157060866e8e5b742dec26583574447ee35cacdd7",
       "crop": [
-        821,
-        776,
-        971,
-        1000
+        815,
+        775,
+        974,
+        1001
       ],
       "destination": [
-        414,
-        392,
-        68,
-        102
+        412,
+        393,
+        71,
+        101
       ]
     },
     {
       "frame": 16,
       "sourceFrame": 16,
       "source": "docs/art-source/motions/identity-revisions-2026-09-12/cesario/generated.png",
-      "sourceSha256": "ff0ac8d3deea376830fac0051e80a14ac8783cecb3bdc4584fc11a3e369360e4",
+      "sourceSha256": "7cade537308c08754c90898157060866e8e5b742dec26583574447ee35cacdd7",
       "crop": [
-        48,
+        46,
         1064,
-        207,
-        1254
+        208,
+        1256
       ],
       "destination": [
         27,
-        535,
+        536,
         73,
-        87
+        86
       ]
     },
     {
       "frame": 17,
       "sourceFrame": 17,
       "source": "docs/art-source/motions/identity-revisions-2026-09-12/cesario/generated.png",
-      "sourceSha256": "ff0ac8d3deea376830fac0051e80a14ac8783cecb3bdc4584fc11a3e369360e4",
+      "sourceSha256": "7cade537308c08754c90898157060866e8e5b742dec26583574447ee35cacdd7",
       "crop": [
-        299,
+        296,
         1080,
-        474,
-        1251
+        476,
+        1253
       ],
       "destination": [
-        152,
+        151,
         544,
-        80,
+        81,
         78
       ]
     },
@@ -339,107 +339,107 @@
       "frame": 18,
       "sourceFrame": 18,
       "source": "docs/art-source/motions/identity-revisions-2026-09-12/cesario/generated.png",
-      "sourceSha256": "ff0ac8d3deea376830fac0051e80a14ac8783cecb3bdc4584fc11a3e369360e4",
+      "sourceSha256": "7cade537308c08754c90898157060866e8e5b742dec26583574447ee35cacdd7",
       "crop": [
-        566,
-        1091,
-        727,
-        1251
+        563,
+        1090,
+        730,
+        1254
       ],
       "destination": [
-        283,
-        549,
-        73,
-        73
+        282,
+        548,
+        75,
+        74
       ]
     },
     {
       "frame": 19,
       "sourceFrame": 19,
       "source": "docs/art-source/motions/identity-revisions-2026-09-12/cesario/generated.png",
-      "sourceSha256": "ff0ac8d3deea376830fac0051e80a14ac8783cecb3bdc4584fc11a3e369360e4",
+      "sourceSha256": "7cade537308c08754c90898157060866e8e5b742dec26583574447ee35cacdd7",
       "crop": [
-        790,
-        1143,
-        1002,
+        784,
+        1142,
+        1003,
         1250
       ],
       "destination": [
         399,
-        573,
-        97,
-        49
+        574,
+        98,
+        48
       ]
     },
     {
       "frame": 20,
       "sourceFrame": 20,
       "source": "docs/art-source/motions/identity-revisions-2026-09-12/cesario/generated.png",
-      "sourceSha256": "ff0ac8d3deea376830fac0051e80a14ac8783cecb3bdc4584fc11a3e369360e4",
+      "sourceSha256": "7cade537308c08754c90898157060866e8e5b742dec26583574447ee35cacdd7",
       "crop": [
-        63,
-        1308,
-        191,
-        1512
+        58,
+        1304,
+        192,
+        1515
       ],
       "destination": [
-        35,
-        657,
-        58,
-        93
+        34,
+        655,
+        60,
+        95
       ]
     },
     {
       "frame": 21,
       "sourceFrame": 21,
       "source": "docs/art-source/motions/identity-revisions-2026-09-12/cesario/generated.png",
-      "sourceSha256": "ff0ac8d3deea376830fac0051e80a14ac8783cecb3bdc4584fc11a3e369360e4",
+      "sourceSha256": "7cade537308c08754c90898157060866e8e5b742dec26583574447ee35cacdd7",
       "crop": [
-        318,
+        313,
         1302,
-        452,
-        1513
+        455,
+        1515
       ],
       "destination": [
-        161,
-        654,
-        61,
-        96
+        160,
+        655,
+        64,
+        95
       ]
     },
     {
       "frame": 22,
       "sourceFrame": 22,
       "source": "docs/art-source/motions/identity-revisions-2026-09-12/cesario/generated.png",
-      "sourceSha256": "ff0ac8d3deea376830fac0051e80a14ac8783cecb3bdc4584fc11a3e369360e4",
+      "sourceSha256": "7cade537308c08754c90898157060866e8e5b742dec26583574447ee35cacdd7",
       "crop": [
-        565,
-        1308,
-        705,
-        1512
+        561,
+        1306,
+        707,
+        1515
       ],
       "destination": [
-        288,
-        657,
-        64,
-        93
+        287,
+        656,
+        65,
+        94
       ]
     },
     {
       "frame": 23,
       "sourceFrame": 23,
       "source": "docs/art-source/motions/identity-revisions-2026-09-12/cesario/generated.png",
-      "sourceSha256": "ff0ac8d3deea376830fac0051e80a14ac8783cecb3bdc4584fc11a3e369360e4",
+      "sourceSha256": "7cade537308c08754c90898157060866e8e5b742dec26583574447ee35cacdd7",
       "crop": [
-        832,
-        1308,
-        957,
-        1513
+        825,
+        1305,
+        958,
+        1515
       ],
       "destination": [
-        419,
+        418,
         656,
-        57,
+        60,
         94
       ]
     }
@@ -477,8 +477,8 @@
       23
     ],
     "alpha": {
-      "transparentFraction": 0.6915276845296224,
-      "solidFraction": 0.22699101765950522
+      "transparentFraction": 0.6908766428629557,
+      "solidFraction": 0.24123382568359375
     }
   }
 }

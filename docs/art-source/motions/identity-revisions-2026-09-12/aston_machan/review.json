@@ -1,11 +1,11 @@
 {
   "approved": true,
   "frameCount": 24,
-  "identityReview": "Visually compared portrait and all 24 generated poses on a neutral background. Corrected identity: Orange-brown WAVY BOB with small side ponytail, GREEN eyes, tiny crown. Replace straight bob and brown eyes.",
+  "identityReview": "Compared the portrait and all 24 final poses on a neutral background. Wavy chestnut chin-length bob, green eyes and high viewer-right side ponytail with red ribbon beside crown.",
   "skillReview": "All six action rows reviewed. Row 4 preserves twin_orbit preparation, release in column 3 and recovery; game skill data and timeline unchanged.",
   "alphaReview": {
-    "zero": 0.6468194325764974,
-    "solid": 0.2537333170572917
+    "zero": 0.5472494761149088,
+    "solid": 0.3088213602701823
   },
   "cells": [
     [
@@ -84,78 +84,80 @@
       0,
       768,
       256,
-      1024
+      1021
     ],
     [
       256,
       768,
-      549,
-      1024
+      553,
+      1021
     ],
     [
-      549,
+      553,
       768,
       768,
-      1024
+      1021
     ],
     [
       768,
       768,
       1024,
-      1024
+      1021
     ],
     [
       0,
-      1024,
+      1021,
       256,
-      1280
+      1265
     ],
     [
       256,
-      1024,
+      1021,
       512,
-      1280
+      1265
     ],
     [
       512,
-      1024,
+      1021,
       768,
-      1280
+      1265
     ],
     [
       768,
+      1021,
       1024,
-      1024,
-      1280
+      1265
     ],
     [
       0,
-      1280,
+      1265,
       256,
       1536
     ],
     [
       256,
-      1280,
+      1265,
       512,
       1536
     ],
     [
       512,
-      1280,
+      1265,
       768,
       1536
     ],
     [
       768,
-      1280,
+      1265,
       1024,
       1536
     ]
   ],
   "reviewedEffectBoundaryFrames": [
-    13
+    13,
+    14
   ],
-  "boundaryReview": "Reviewed flagged edges on the neutral composite: only feathered hair-edge pixels or isolated effect glow reaches the cell boundary; no face, head, limb, or opaque body is clipped.",
-  "reviewedAt": "2026-09-12"
+  "boundaryReview": "Reviewed flagged boundary pixels: only soft antialiasing or effect glow reaches the cut; no opaque face, hair silhouette, limb or body is clipped.",
+  "reviewedAt": "2026-09-12",
+  "detailRevisionReviewedAt": "2026-09-12"
 }

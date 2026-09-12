@@ -1,11 +1,11 @@
 {
   "approved": true,
   "frameCount": 24,
-  "identityReview": "Visually compared portrait and all 24 generated poses on a neutral background. Corrected identity: Dark blue smooth short bob, CENTRAL VERTICAL WHITE FORELOCK, HETEROCHROMIA: viewer-left eye lavender and viewer-right eye gold.",
+  "identityReview": "Compared the portrait and all 24 final poses on a neutral background. Blue bob and white central fringe retained; all visible irises are lavender purple, with the orange iris removed.",
   "skillReview": "All six action rows reviewed. Row 4 preserves sanctuary preparation, release in column 3 and recovery; game skill data and timeline unchanged.",
   "alphaReview": {
-    "zero": 0.6915276845296224,
-    "solid": 0.22699101765950522
+    "zero": 0.6908766428629557,
+    "solid": 0.24123382568359375
   },
   "cells": [
     [
@@ -154,6 +154,7 @@
     ]
   ],
   "reviewedEffectBoundaryFrames": [],
-  "boundaryReview": "Reviewed flagged edges on the neutral composite: only feathered hair-edge pixels or isolated effect glow reaches the cell boundary; no face, head, limb, or opaque body is clipped.",
-  "reviewedAt": "2026-09-12"
+  "boundaryReview": "All 24 silhouettes and effects remain within separate cells.",
+  "reviewedAt": "2026-09-12",
+  "detailRevisionReviewedAt": "2026-09-12"
 }

@@ -4,5 +4,12 @@
   "referencePortrait": "public/assets/portraits/bamboo_memory.png",
   "referenceAtlas": "public/assets/motions/bamboo_memory.png",
   "prompt": "Edit the second image's complete 24-pose chibi sprite atlas so EVERY face and hairstyle matches the FIRST portrait. Identity: Reddish brown short spiky tousled hair, blue eyes, GREEN HEADBAND. No white forelock. Keep the second image's outfit, full-body poses and exact 4 columns by 6 rows layout: idle, run, attack, skill, KO, victory. Keep the distinct skill gestures and effects (disarm_cone) in row 4, including release in column 3. Do not repeat or replace action rows. All 24 bodies inside separate equal cells, empty gutters. Transparent PNG cutouts with real alpha; no backdrop or checkerboard.",
-  "alphaEditPrompt": "Make the background transparent. Preserve every character and effect. Export a transparent PNG cutout, with alpha zero in the empty space."
+  "alphaEditPrompt": "Make the background transparent. Preserve every character and effect. Export a transparent PNG cutout, with alpha zero in the empty space.",
+  "detailRevision": {
+    "referenceCommit": "715aac15241ab0f2cffd240a116a88324584167c",
+    "referencePortrait": "public/assets/portraits/bamboo_memory.png",
+    "referenceAtlas": "docs/art-source/motions/identity-revisions-2026-09-12/bamboo_memory/generated.png",
+    "prompt": "Edit the SECOND 24-pose sprite sheet with the FIRST portrait as the identity reference. Restore the large WHITE CENTRAL FORELOCK extending from under the thin green headband down over the central forehead, exactly as the portrait. Keep the short spiky chestnut hair, blue eyes and green bow. Change that identity detail in EVERY pose consistently. Preserve all body poses, outfits and skill effects, exactly 4 columns by 6 rows, 24 separate full bodies with empty gutters. Transparent PNG cutouts, alpha zero empty space.",
+    "finalEditPrompt": "Make the background transparent. Preserve every character and effect. Export a transparent PNG cutout, with alpha zero in the empty space."
+  }
 }

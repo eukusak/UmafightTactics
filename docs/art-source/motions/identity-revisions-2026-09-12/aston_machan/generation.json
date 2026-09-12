@@ -4,5 +4,12 @@
   "referencePortrait": "public/assets/portraits/aston_machan.png",
   "referenceAtlas": "public/assets/motions/aston_machan.png",
   "prompt": "Edit the second image's complete 24-pose chibi sprite atlas so EVERY face and hairstyle matches the FIRST portrait. Identity: Orange-brown WAVY BOB with small side ponytail, GREEN eyes, tiny crown. Replace straight bob and brown eyes. Keep the second image's outfit, full-body poses and exact 4 columns by 6 rows layout: idle, run, attack, skill, KO, victory. Keep the distinct skill gestures and effects (twin_orbit) in row 4, including release in column 3. Do not repeat or replace action rows. All 24 bodies inside separate equal cells, empty gutters. Transparent PNG cutouts with real alpha; no backdrop or checkerboard.",
-  "alphaEditPrompt": "Make the background transparent. Preserve every character and effect. Export a transparent PNG cutout, with alpha zero in the empty space."
+  "alphaEditPrompt": "Make the background transparent. Preserve every character and effect. Export a transparent PNG cutout, with alpha zero in the empty space.",
+  "detailRevision": {
+    "referenceCommit": "715aac15241ab0f2cffd240a116a88324584167c",
+    "referencePortrait": "public/assets/portraits/aston_machan.png",
+    "referenceAtlas": "docs/art-source/motions/identity-revisions-2026-09-12/aston_machan/generated.png",
+    "prompt": "Edit the SECOND 24-pose sprite sheet with the FIRST portrait as the identity reference. Match the portrait hairstyle: a wavy chestnut chin-length bob plus a clearly visible HIGH SIDE PONYTAIL on the viewer RIGHT, tied beside the crown with a red ribbon. Keep green eyes. Do not confuse the side ponytail with the horse tail near the waist. Change that identity detail in EVERY pose consistently. Preserve all body poses, outfits and skill effects, exactly 4 columns by 6 rows, 24 separate full bodies with empty gutters. Transparent PNG cutouts, alpha zero empty space.",
+    "finalEditPrompt": "Make the background transparent. Preserve every character and effect. Export a transparent PNG cutout, with alpha zero in the empty space."
+  }
 }

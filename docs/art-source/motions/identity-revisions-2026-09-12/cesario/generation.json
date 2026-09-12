@@ -4,5 +4,12 @@
   "referencePortrait": "public/assets/portraits/cesario.png",
   "referenceAtlas": "public/assets/motions/cesario.png",
   "prompt": "Edit the second image's complete 24-pose chibi sprite atlas so EVERY face and hairstyle matches the FIRST portrait. Identity: Dark blue smooth short bob, CENTRAL VERTICAL WHITE FORELOCK, HETEROCHROMIA: viewer-left eye lavender and viewer-right eye gold. Keep the second image's outfit, full-body poses and exact 4 columns by 6 rows layout: idle, run, attack, skill, KO, victory. Keep the distinct skill gestures and effects (sanctuary) in row 4, including release in column 3. Do not repeat or replace action rows. All 24 bodies inside separate equal cells, empty gutters. Transparent PNG cutouts with real alpha; no backdrop or checkerboard.",
-  "alphaEditPrompt": "Make the background transparent. Preserve every character and effect. Export a transparent PNG cutout, with alpha zero in the empty space."
+  "alphaEditPrompt": "Make the background transparent. Preserve every character and effect. Export a transparent PNG cutout, with alpha zero in the empty space.",
+  "detailRevision": {
+    "referenceCommit": "715aac15241ab0f2cffd240a116a88324584167c",
+    "referencePortrait": "public/assets/portraits/cesario.png",
+    "referenceAtlas": "docs/art-source/motions/identity-revisions-2026-09-12/cesario/generated.png",
+    "prompt": "Edit the SECOND 24-pose sprite sheet with the FIRST portrait as the identity reference. Both irises must be the SAME LAVENDER PURPLE matching the portrait. Remove the gold/orange iris: this portrait does NOT have heterochromia. Keep the blue bob and white fringe. Change that identity detail in EVERY pose consistently. Preserve all body poses, outfits and skill effects, exactly 4 columns by 6 rows, 24 separate full bodies with empty gutters. Transparent PNG cutouts, alpha zero empty space.",
+    "finalEditPrompt": "Recolor the orange/red iris in EVERY open-eyed pose to lavender purple so both irises match. The character has two PURPLE eyes. Change eye color only; preserve all 24 poses and their layout. Transparent PNG."
+  }
 }

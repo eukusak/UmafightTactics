@@ -8,24 +8,24 @@
     64,
     110
   ],
-  "scale": 0.45217391304347826,
-  "runtimeSha256": "c5709680cab2cebf9da7b3c877e5fd0e9adce08d268fd644386ec9436912b80a",
+  "scale": 0.44635193133047213,
+  "runtimeSha256": "2630fe899590288020e4ae9605da4a93ed8209acac9cd29d4fa5f78e77f4cbcf",
   "frames": [
     {
       "frame": 0,
       "sourceFrame": 0,
       "source": "docs/art-source/motions/identity-revisions-2026-09-12/bamboo_memory/generated.png",
-      "sourceSha256": "060e25222421d0060f8249a009c1eeb58a3733547aed76d661f0072b67282bc0",
+      "sourceSha256": "adca363ad1f4c10297118f32524ca1909283303910e99300b6826195f050a053",
       "crop": [
-        80,
-        18,
-        219,
-        241
+        78,
+        16,
+        221,
+        242
       ],
       "destination": [
         32,
         9,
-        63,
+        64,
         101
       ]
     },
@@ -33,17 +33,17 @@
       "frame": 1,
       "sourceFrame": 1,
       "source": "docs/art-source/motions/identity-revisions-2026-09-12/bamboo_memory/generated.png",
-      "sourceSha256": "060e25222421d0060f8249a009c1eeb58a3733547aed76d661f0072b67282bc0",
+      "sourceSha256": "adca363ad1f4c10297118f32524ca1909283303910e99300b6826195f050a053",
       "crop": [
-        338,
-        17,
-        478,
-        241
+        337,
+        16,
+        480,
+        242
       ],
       "destination": [
         160,
         9,
-        63,
+        64,
         101
       ]
     },
@@ -51,48 +51,48 @@
       "frame": 2,
       "sourceFrame": 2,
       "source": "docs/art-source/motions/identity-revisions-2026-09-12/bamboo_memory/generated.png",
-      "sourceSha256": "060e25222421d0060f8249a009c1eeb58a3733547aed76d661f0072b67282bc0",
+      "sourceSha256": "adca363ad1f4c10297118f32524ca1909283303910e99300b6826195f050a053",
       "crop": [
-        576,
-        19,
+        575,
+        18,
         715,
         242
       ],
       "destination": [
-        288,
-        9,
-        63,
-        101
+        289,
+        10,
+        62,
+        100
       ]
     },
     {
       "frame": 3,
       "sourceFrame": 3,
       "source": "docs/art-source/motions/identity-revisions-2026-09-12/bamboo_memory/generated.png",
-      "sourceSha256": "060e25222421d0060f8249a009c1eeb58a3733547aed76d661f0072b67282bc0",
+      "sourceSha256": "adca363ad1f4c10297118f32524ca1909283303910e99300b6826195f050a053",
       "crop": [
-        831,
+        830,
         18,
-        969,
-        241
+        970,
+        242
       ],
       "destination": [
         417,
-        9,
+        10,
         62,
-        101
+        100
       ]
     },
     {
       "frame": 4,
       "sourceFrame": 4,
       "source": "docs/art-source/motions/identity-revisions-2026-09-12/bamboo_memory/generated.png",
-      "sourceSha256": "060e25222421d0060f8249a009c1eeb58a3733547aed76d661f0072b67282bc0",
+      "sourceSha256": "adca363ad1f4c10297118f32524ca1909283303910e99300b6826195f050a053",
       "crop": [
         58,
-        271,
-        224,
-        492
+        269,
+        226,
+        493
       ],
       "destination": [
         26,
@@ -105,35 +105,35 @@
       "frame": 5,
       "sourceFrame": 5,
       "source": "docs/art-source/motions/identity-revisions-2026-09-12/bamboo_memory/generated.png",
-      "sourceSha256": "060e25222421d0060f8249a009c1eeb58a3733547aed76d661f0072b67282bc0",
+      "sourceSha256": "adca363ad1f4c10297118f32524ca1909283303910e99300b6826195f050a053",
       "crop": [
         321,
-        273,
-        488,
-        492
+        270,
+        490,
+        494
       ],
       "destination": [
         154,
-        139,
-        76,
-        99
+        138,
+        75,
+        100
       ]
     },
     {
       "frame": 6,
       "sourceFrame": 6,
       "source": "docs/art-source/motions/identity-revisions-2026-09-12/bamboo_memory/generated.png",
-      "sourceSha256": "060e25222421d0060f8249a009c1eeb58a3733547aed76d661f0072b67282bc0",
+      "sourceSha256": "adca363ad1f4c10297118f32524ca1909283303910e99300b6826195f050a053",
       "crop": [
         569,
-        272,
-        736,
-        493
+        271,
+        738,
+        495
       ],
       "destination": [
         282,
         138,
-        76,
+        75,
         100
       ]
     },
@@ -141,17 +141,17 @@
       "frame": 7,
       "sourceFrame": 7,
       "source": "docs/art-source/motions/identity-revisions-2026-09-12/bamboo_memory/generated.png",
-      "sourceSha256": "060e25222421d0060f8249a009c1eeb58a3733547aed76d661f0072b67282bc0",
+      "sourceSha256": "adca363ad1f4c10297118f32524ca1909283303910e99300b6826195f050a053",
       "crop": [
-        829,
-        271,
-        990,
-        492
+        827,
+        270,
+        992,
+        495
       ],
       "destination": [
         411,
         138,
-        73,
+        74,
         100
       ]
     },
@@ -159,17 +159,17 @@
       "frame": 8,
       "sourceFrame": 8,
       "source": "docs/art-source/motions/identity-revisions-2026-09-12/bamboo_memory/generated.png",
-      "sourceSha256": "060e25222421d0060f8249a009c1eeb58a3733547aed76d661f0072b67282bc0",
+      "sourceSha256": "adca363ad1f4c10297118f32524ca1909283303910e99300b6826195f050a053",
       "crop": [
         55,
-        532,
-        216,
-        757
+        530,
+        220,
+        758
       ],
       "destination": [
         27,
         264,
-        73,
+        74,
         102
       ]
     },
@@ -177,12 +177,12 @@
       "frame": 9,
       "sourceFrame": 9,
       "source": "docs/art-source/motions/identity-revisions-2026-09-12/bamboo_memory/generated.png",
-      "sourceSha256": "060e25222421d0060f8249a009c1eeb58a3733547aed76d661f0072b67282bc0",
+      "sourceSha256": "adca363ad1f4c10297118f32524ca1909283303910e99300b6826195f050a053",
       "crop": [
-        324,
+        325,
         531,
-        463,
-        757
+        467,
+        759
       ],
       "destination": [
         160,
@@ -195,17 +195,17 @@
       "frame": 10,
       "sourceFrame": 10,
       "source": "docs/art-source/motions/identity-revisions-2026-09-12/bamboo_memory/generated.png",
-      "sourceSha256": "060e25222421d0060f8249a009c1eeb58a3733547aed76d661f0072b67282bc0",
+      "sourceSha256": "adca363ad1f4c10297118f32524ca1909283303910e99300b6826195f050a053",
       "crop": [
-        572,
+        571,
         531,
-        735,
-        757
+        740,
+        760
       ],
       "destination": [
-        283,
+        282,
         264,
-        74,
+        75,
         102
       ]
     },
@@ -213,48 +213,48 @@
       "frame": 11,
       "sourceFrame": 11,
       "source": "docs/art-source/motions/identity-revisions-2026-09-12/bamboo_memory/generated.png",
-      "sourceSha256": "060e25222421d0060f8249a009c1eeb58a3733547aed76d661f0072b67282bc0",
+      "sourceSha256": "adca363ad1f4c10297118f32524ca1909283303910e99300b6826195f050a053",
       "crop": [
-        833,
-        532,
+        831,
+        531,
         972,
-        756
+        759
       ],
       "destination": [
         416,
-        265,
+        264,
         63,
-        101
+        102
       ]
     },
     {
       "frame": 12,
       "sourceFrame": 12,
       "source": "docs/art-source/motions/identity-revisions-2026-09-12/bamboo_memory/generated.png",
-      "sourceSha256": "060e25222421d0060f8249a009c1eeb58a3733547aed76d661f0072b67282bc0",
+      "sourceSha256": "adca363ad1f4c10297118f32524ca1909283303910e99300b6826195f050a053",
       "crop": [
-        62,
-        805,
-        219,
-        1031
+        61,
+        802,
+        224,
+        1033
       ],
       "destination": [
-        28,
-        392,
-        71,
-        102
+        27,
+        391,
+        73,
+        103
       ]
     },
     {
       "frame": 13,
       "sourceFrame": 13,
       "source": "docs/art-source/motions/identity-revisions-2026-09-12/bamboo_memory/generated.png",
-      "sourceSha256": "060e25222421d0060f8249a009c1eeb58a3733547aed76d661f0072b67282bc0",
+      "sourceSha256": "adca363ad1f4c10297118f32524ca1909283303910e99300b6826195f050a053",
       "crop": [
-        326,
-        802,
-        468,
-        1032
+        325,
+        801,
+        469,
+        1034
       ],
       "destination": [
         160,
@@ -267,30 +267,30 @@
       "frame": 14,
       "sourceFrame": 14,
       "source": "docs/art-source/motions/identity-revisions-2026-09-12/bamboo_memory/generated.png",
-      "sourceSha256": "060e25222421d0060f8249a009c1eeb58a3733547aed76d661f0072b67282bc0",
+      "sourceSha256": "adca363ad1f4c10297118f32524ca1909283303910e99300b6826195f050a053",
       "crop": [
-        575,
-        807,
-        726,
-        1032
+        574,
+        806,
+        727,
+        1033
       ],
       "destination": [
         286,
-        392,
+        393,
         68,
-        102
+        101
       ]
     },
     {
       "frame": 15,
       "sourceFrame": 15,
       "source": "docs/art-source/motions/identity-revisions-2026-09-12/bamboo_memory/generated.png",
-      "sourceSha256": "060e25222421d0060f8249a009c1eeb58a3733547aed76d661f0072b67282bc0",
+      "sourceSha256": "adca363ad1f4c10297118f32524ca1909283303910e99300b6826195f050a053",
       "crop": [
-        834,
-        802,
+        831,
+        801,
         975,
-        1032
+        1034
       ],
       "destination": [
         416,
@@ -303,102 +303,102 @@
       "frame": 16,
       "sourceFrame": 16,
       "source": "docs/art-source/motions/identity-revisions-2026-09-12/bamboo_memory/generated.png",
-      "sourceSha256": "060e25222421d0060f8249a009c1eeb58a3733547aed76d661f0072b67282bc0",
+      "sourceSha256": "adca363ad1f4c10297118f32524ca1909283303910e99300b6826195f050a053",
       "crop": [
-        75,
-        1094,
-        211,
-        1278
+        72,
+        1090,
+        212,
+        1279
       ],
       "destination": [
         33,
-        539,
-        61,
-        83
+        538,
+        62,
+        84
       ]
     },
     {
       "frame": 17,
       "sourceFrame": 17,
       "source": "docs/art-source/motions/identity-revisions-2026-09-12/bamboo_memory/generated.png",
-      "sourceSha256": "060e25222421d0060f8249a009c1eeb58a3733547aed76d661f0072b67282bc0",
+      "sourceSha256": "adca363ad1f4c10297118f32524ca1909283303910e99300b6826195f050a053",
       "crop": [
         330,
-        1096,
-        466,
-        1277
+        1093,
+        469,
+        1279
       ],
       "destination": [
         161,
-        540,
-        61,
-        82
+        539,
+        62,
+        83
       ]
     },
     {
       "frame": 18,
       "sourceFrame": 18,
       "source": "docs/art-source/motions/identity-revisions-2026-09-12/bamboo_memory/generated.png",
-      "sourceSha256": "060e25222421d0060f8249a009c1eeb58a3733547aed76d661f0072b67282bc0",
+      "sourceSha256": "adca363ad1f4c10297118f32524ca1909283303910e99300b6826195f050a053",
       "crop": [
-        570,
-        1098,
-        723,
+        569,
+        1094,
+        726,
         1275
       ],
       "destination": [
         285,
-        542,
-        69,
-        80
+        541,
+        70,
+        81
       ]
     },
     {
       "frame": 19,
       "sourceFrame": 19,
       "source": "docs/art-source/motions/identity-revisions-2026-09-12/bamboo_memory/generated.png",
-      "sourceSha256": "060e25222421d0060f8249a009c1eeb58a3733547aed76d661f0072b67282bc0",
+      "sourceSha256": "adca363ad1f4c10297118f32524ca1909283303910e99300b6826195f050a053",
       "crop": [
-        780,
-        1168,
-        990,
-        1277
+        779,
+        1166,
+        992,
+        1280
       ],
       "destination": [
         400,
-        573,
+        571,
         95,
-        49
+        51
       ]
     },
     {
       "frame": 20,
       "sourceFrame": 20,
       "source": "docs/art-source/motions/identity-revisions-2026-09-12/bamboo_memory/generated.png",
-      "sourceSha256": "060e25222421d0060f8249a009c1eeb58a3733547aed76d661f0072b67282bc0",
+      "sourceSha256": "adca363ad1f4c10297118f32524ca1909283303910e99300b6826195f050a053",
       "crop": [
-        69,
-        1314,
-        208,
-        1527
+        62,
+        1310,
+        209,
+        1528
       ],
       "destination": [
-        32,
-        654,
-        63,
-        96
+        31,
+        653,
+        66,
+        97
       ]
     },
     {
       "frame": 21,
       "sourceFrame": 21,
       "source": "docs/art-source/motions/identity-revisions-2026-09-12/bamboo_memory/generated.png",
-      "sourceSha256": "060e25222421d0060f8249a009c1eeb58a3733547aed76d661f0072b67282bc0",
+      "sourceSha256": "adca363ad1f4c10297118f32524ca1909283303910e99300b6826195f050a053",
       "crop": [
-        328,
-        1321,
-        467,
-        1527
+        326,
+        1319,
+        468,
+        1528
       ],
       "destination": [
         160,
@@ -411,30 +411,30 @@
       "frame": 22,
       "sourceFrame": 22,
       "source": "docs/art-source/motions/identity-revisions-2026-09-12/bamboo_memory/generated.png",
-      "sourceSha256": "060e25222421d0060f8249a009c1eeb58a3733547aed76d661f0072b67282bc0",
+      "sourceSha256": "adca363ad1f4c10297118f32524ca1909283303910e99300b6826195f050a053",
       "crop": [
-        573,
-        1314,
+        571,
+        1312,
         711,
-        1527
+        1530
       ],
       "destination": [
         289,
-        654,
+        653,
         62,
-        96
+        97
       ]
     },
     {
       "frame": 23,
       "sourceFrame": 23,
       "source": "docs/art-source/motions/identity-revisions-2026-09-12/bamboo_memory/generated.png",
-      "sourceSha256": "060e25222421d0060f8249a009c1eeb58a3733547aed76d661f0072b67282bc0",
+      "sourceSha256": "adca363ad1f4c10297118f32524ca1909283303910e99300b6826195f050a053",
       "crop": [
-        833,
-        1315,
+        831,
+        1313,
         972,
-        1527
+        1528
       ],
       "destination": [
         416,
@@ -477,8 +477,8 @@
       23
     ],
     "alpha": {
-      "transparentFraction": 0.704736073811849,
-      "solidFraction": 0.23658370971679688
+      "transparentFraction": 0.6896241505940756,
+      "solidFraction": 0.2469050089518229
     }
   }
 }

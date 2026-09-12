@@ -1,11 +1,11 @@
 {
   "approved": true,
   "frameCount": 24,
-  "identityReview": "Visually compared portrait and all 24 generated poses on a neutral background. Corrected identity: Silver-gray soft long layered WAVY hair, LIGHT BLUE eyes, red-white-blue ear bow. Replace violet eyes.",
+  "identityReview": "Compared the portrait and all 24 final poses on a neutral background. Long wavy gray hair, cyan-blue eyes and fine round glasses retained across all 24 poses, including closed-eye poses.",
   "skillReview": "All six action rows reviewed. Row 4 preserves triage_echo preparation, release in column 3 and recovery; game skill data and timeline unchanged.",
   "alphaReview": {
-    "zero": 0.6419150034586588,
-    "solid": 0.2678667704264323
+    "zero": 0.6445744832356771,
+    "solid": 0.2813129425048828
   },
   "cells": [
     [
@@ -154,6 +154,7 @@
     ]
   ],
   "reviewedEffectBoundaryFrames": [],
-  "boundaryReview": "Reviewed flagged edges on the neutral composite: only feathered hair-edge pixels or isolated effect glow reaches the cell boundary; no face, head, limb, or opaque body is clipped.",
-  "reviewedAt": "2026-09-12"
+  "boundaryReview": "All 24 silhouettes and effects remain within separate cells.",
+  "reviewedAt": "2026-09-12",
+  "detailRevisionReviewedAt": "2026-09-12"
 }
