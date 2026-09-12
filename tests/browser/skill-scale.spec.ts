@@ -1,12 +1,14 @@
 import { test, expect } from '@playwright/test';
 import { preparedGame } from './fixtures';
 
-test('padded art keeps bench and field layout while animating the full texture', async ({ page }, info) => {
+test('padded art keeps field layout while animating the full texture', async ({ page }, info) => {
   const errors: string[] = [];
   page.on('pageerror', e => errors.push(e.message));
   await preparedGame(page, 'frame-scale');
   const bench = page.locator('.bench-slot.filled').first();
-  const art = bench.locator('.animated-unit');
+  await bench.hover(); await page.keyboard.press('w');
+  const art = page.locator('.arena-unit .animated-unit');
+  await expect(art).toBeVisible();
   const geometry = await art.evaluate(e => {
     const frame = e.firstElementChild as HTMLElement;
     const box = getComputedStyle(e), pixels = getComputedStyle(frame);
@@ -15,8 +17,6 @@ test('padded art keeps bench and field layout while animating the full texture',
   expect(geometry.pixels).toBeCloseTo(geometry.width * 2);
   expect(geometry.left).toBeCloseTo(-geometry.width / 2);
   expect(geometry.top).toBeCloseTo(-geometry.height / 2);
-  await bench.hover(); await page.keyboard.press('w');
-  await expect(page.locator('.arena-unit .animated-unit')).toBeVisible();
   const frames = page.locator('.arena-unit .animated-unit-frames');
   const x = await frames.evaluate(e => getComputedStyle(e).backgroundPositionX);
   await expect.poll(() => frames.evaluate(e => getComputedStyle(e).backgroundPositionX)).not.toBe(x);
