@@ -95,7 +95,10 @@ function send(req, res, file, status = 200) {
   const type = MIME[ext] ?? 'application/octet-stream';
 
   // Hashed asset filenames are safe to cache forever; the shell never is.
-  const cache = file.includes(`${path.sep}assets${path.sep}`)
+  const assets = path.join(DIST, 'assets');
+  const hashedBundle = path.dirname(file) === assets && /-[A-Za-z0-9_-]{8,}\.[a-z0-9]+$/i.test(path.basename(file));
+  const versioned = file.startsWith(assets + path.sep) && new URL(req.url, 'http://localhost').searchParams.has('v');
+  const cache = hashedBundle || versioned
     ? 'public, max-age=31536000, immutable'
     : 'no-cache';
 

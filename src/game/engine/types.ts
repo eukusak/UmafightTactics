@@ -363,6 +363,8 @@ export type ArtManifestEntry = {
   portrait: string;
   battleSheet: string;
   cutinRequired: boolean;
+  /** Reuse an approved portrait when a promoted unit has no dedicated wide cut-in. */
+  cutinPortrait?: string;
 };
 
 export type ArtManifest = {

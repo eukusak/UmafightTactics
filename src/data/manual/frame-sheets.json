@@ -7,7 +7,7 @@
     "rows": 6,
     "source": "docs/art-source/motions/batch-01/special_week/packing.json",
     "skillId": "skill_special_week",
-    "skillSignature": "1648a399fa582a0486023d45ff1f096206ff4135dfdca02e5664fe2121214822",
+    "skillSignature": "39cdc44510f08756f4f041d1de916160fdb8988fa5b2721ba9813e3d26aa176b",
     "skillReview": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
     "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json",
     "skillReleaseFrame": 2
@@ -75,7 +75,7 @@
     "rows": 6,
     "source": "docs/art-source/motions/skill-revisions-2026-09-10/silence_suzuka/packing.json",
     "skillId": "skill_silence_suzuka",
-    "skillSignature": "258f5e5902e8e8aff4e81b7be37da56203091f0b39de38cf04bdd3dc5facbf2d",
+    "skillSignature": "c191ba1eb46d612709f7184cac45e8011e1d2f4989276c6591bbb9fe5b4521f7",
     "skillReview": "민트 에너지 준비 → 양손 전개 → 빔 유지 → 회수. CHANNEL 발동 구간에서 세 번째 프레임을 유지한다.",
     "skillReleaseFrame": 2,
     "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
@@ -88,7 +88,7 @@
     "rows": 6,
     "source": "docs/art-source/motions/skill-revisions-2026-09-10/tokai_teio/packing.json",
     "skillId": "skill_tokai_teio",
-    "skillSignature": "0f5c2e571d02a92a5462afabbac790e3581a42dc80cc377286bde7b5b8f3674b",
+    "skillSignature": "4a2b06f1140a510480ef4e0a38f090dbc59511d601b0a930cb93802686db0753",
     "skillReview": "조준 → 첫 발 → 세 갈래 연사 → 석궁 회수. focus_three의 반복 발사에 대응.",
     "skillReleaseFrame": 2,
     "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
@@ -101,7 +101,7 @@
     "rows": 6,
     "source": "docs/art-source/motions/identity-revisions-2026-09-12/maruzensky/packing.json",
     "skillId": "skill_maruzensky",
-    "skillSignature": "3c271e139fa737f704b4aec45f98b2e36527ea5cc1713fdb49f4d907c0562067",
+    "skillSignature": "1903827c02ce7b21a4d028bf5e433b8d2d3dd505fb359a8412b68f101f2430c1",
     "skillReview": "All six action rows reviewed. Row 4 preserves tempo_banner preparation, release in column 3 and recovery; game skill data and timeline unchanged.",
     "skillReleaseFrame": 2,
     "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
@@ -114,7 +114,7 @@
     "rows": 6,
     "source": "docs/art-source/motions/skill-scale-2026-09-12/fuji_kiseki.json",
     "skillId": "skill_fuji_kiseki",
-    "skillSignature": "1d80a9213b1edae0f14d4ae9de40ad22328ac909900f6e1097097e8ac6552f48",
+    "skillSignature": "e1cad23ade63c1ed8dedbaa5c12417d068055cf4fcb5c4b212d11830afb8c074",
     "skillReview": "gather a tiny core between close hands; open elbows releasing a small ring; fully extend arms releasing a larger ring; bring arms down as ring fragments settle",
     "skillReleaseFrame": 2,
     "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json",
@@ -132,7 +132,7 @@
     "rows": 6,
     "source": "docs/art-source/motions/skill-revisions-2026-09-10/oguri_cap/packing.json",
     "skillId": "skill_oguri_cap",
-    "skillSignature": "65eefb83f4a32b62a0ab4d17362ada84bbb1d62111fd001703cdea306420e8f9",
+    "skillSignature": "f6bcaeea8a9156ef5276d6af3e8833400229809b7d2123ad23460ae194885069",
     "skillReview": "별 충전 → 머리 위 준비 → 하강 혜성 발사 → 회수. comet_fall의 지연 낙하와 일치.",
     "skillReleaseFrame": 2,
     "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
@@ -145,7 +145,7 @@
     "rows": 6,
     "source": "docs/art-source/motions/skill-revisions-2026-09-11/gold_ship/packing.json",
     "skillId": "skill_gold_ship",
-    "skillSignature": "4564de25f07442456ea4abfca60d105aa4bf6a310720c7ba2a3b169b60423be6",
+    "skillSignature": "28605f6dddcc89ad958fe311ab4290b31995312db143814ab9486f2737eb8052",
     "skillReview": "launch forward from low crouch; plant the lead foot and deliver a jab; twist into a rising follow-up strike with three short impact accents; recoil into a ready guard",
     "skillReleaseFrame": 2,
     "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
@@ -158,7 +158,7 @@
     "rows": 6,
     "source": "docs/art-source/motions/skill-revisions-2026-09-11/vodka/packing.json",
     "skillId": "skill_vodka",
-    "skillSignature": "cf13baf5401d112c2ef72db9f0a070a6c5a029f7511c036ca4163a7ca08146b2",
+    "skillSignature": "858d7b1b16b25e58b343f37ed021462ccfb48ba33e05ce4c43e8f18a9f5d3833",
     "skillReview": "draw both arms back loading three tiny bolts; fire three bolts in different directions to the right; change weight and fire a second three-way burst; lower arms and recover",
     "skillReleaseFrame": 2,
     "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
@@ -171,7 +171,7 @@
     "rows": 6,
     "source": "docs/art-source/motions/skill-revisions-2026-09-11/daiwa_scarlet/packing.json",
     "skillId": "skill_daiwa_scarlet",
-    "skillSignature": "5a96af15b15fba6c5f62b81a60a7e3680c561664f139ec0a7885dfb19f3ef048",
+    "skillSignature": "e886716346cd00fd465e4d65e08e0d9b0ce3714f5ea74d536b64aeb66e0f87c1",
     "skillReview": "cup a small ember; bend and sweep a hand down to plant a compact flame seal; keep palm low maintaining three small pulses above the seal; rise and return hand to chest",
     "skillReleaseFrame": 2,
     "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
@@ -184,7 +184,7 @@
     "rows": 6,
     "source": "docs/art-source/motions/production-144/taiki_shuttle/packing.json",
     "skillId": "skill_taiki_shuttle",
-    "skillSignature": "181c60a55ecb4beb0954c41699a0718fc86eaa90c79cced50001a8807fca3d98",
+    "skillSignature": "49a3a2e6fb9bedfe9a5ddbbc5c1bdc5f6735036be5e0a1e292555330ee980b73",
     "skillReview": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
     "skillReleaseFrame": 2,
     "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
@@ -197,7 +197,7 @@
     "rows": 6,
     "source": "docs/art-source/motions/production-144/grass_wonder/packing.json",
     "skillId": "skill_grass_wonder",
-    "skillSignature": "77bbaca674d3e98889ad556214e9ba3db2a72efce1224969315ceb6ab783a0f2",
+    "skillSignature": "af2accb4f5ed7ca493201e46d5182068b22d705c1ebadf2f812c466773c3d6db",
     "skillReview": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
     "skillReleaseFrame": 2,
     "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
@@ -210,7 +210,7 @@
     "rows": 6,
     "source": "docs/art-source/motions/production-144/hishi_amazon/packing.json",
     "skillId": "skill_hishi_amazon",
-    "skillSignature": "e404f3f22e2d1b797eb92cb9e72992fd83f307b0374973a5bdf16fbc53713194",
+    "skillSignature": "14e1833362f33a51498138af277dd5faf896db4d96b4be665af469a8bf1abb5f",
     "skillReview": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
     "skillReleaseFrame": 2,
     "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
@@ -223,7 +223,7 @@
     "rows": 6,
     "source": "docs/art-source/motions/production-144/mejiro_mcqueen/packing.json",
     "skillId": "skill_mejiro_mcqueen",
-    "skillSignature": "894a769fe66f7a9b6919cb083edf641f1030e0f67e064ef7a595d813c2bdbc12",
+    "skillSignature": "29c54eddad83a5ba9d486d1c479ac01421a171ee91ca28d4d0f6f714c90670f8",
     "skillReview": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
     "skillReleaseFrame": 2,
     "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
@@ -236,7 +236,7 @@
     "rows": 6,
     "source": "docs/art-source/motions/identity-revisions-2026-09-12/el_condor_pasa/packing.json",
     "skillId": "skill_el_condor_pasa",
-    "skillSignature": "b52f9d20f88aeb0ddaa42f9dc977424d4cd1520c91f5be59f5604e5e2d5027a1",
+    "skillSignature": "d07fa79ed6961fa205adbc262cd097a773aaee7d7615f5f31f1316256beb7126",
     "skillReview": "Row 4 retains preparation, gathering light, outward barrier release in column 3, and recovery; rescue_barrier game choreography and timing unchanged.",
     "skillReleaseFrame": 2,
     "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
@@ -249,7 +249,7 @@
     "rows": 6,
     "source": "docs/art-source/motions/production-144/tm_opera_o/packing.json",
     "skillId": "skill_tm_opera_o",
-    "skillSignature": "de1e4b9674680e33a4f1cddffb026460cfa292d37e07be01960815bed054cfc0",
+    "skillSignature": "6a058a7c1d3a4b1a46bb313191dd1699a9386691158a0589b36d20aaf7be369b",
     "skillReview": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
     "skillReleaseFrame": 2,
     "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
@@ -262,7 +262,7 @@
     "rows": 6,
     "source": "docs/art-source/motions/production-144/narita_brian/packing.json",
     "skillId": "skill_narita_brian",
-    "skillSignature": "195567aaa9562a106524a2dd202038d3fdd7c92de8ff87e579a146410ab943c9",
+    "skillSignature": "526ad2b2ca8d83ff88d51f7e1400087c8bc13b1d9bcb62cadba0bb91c151bb0c",
     "skillReview": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
     "skillReleaseFrame": 2,
     "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
@@ -275,7 +275,7 @@
     "rows": 6,
     "source": "docs/art-source/motions/identity-revisions-2026-09-12/symboli_rudolf/packing.json",
     "skillId": "skill_symboli_rudolf",
-    "skillSignature": "95108382f16d512aee2e189bf14601c4356d491e3eee538b38e6841e30628904",
+    "skillSignature": "ccd301ae7e36fa92ca4acb3b94e965cd1449c96fadbe37dfa1467b7d7763c055",
     "skillReview": "All six action rows reviewed. Row 4 preserves binding_line preparation, release in column 3 and recovery; game skill data and timeline unchanged.",
     "skillReleaseFrame": 2,
     "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
@@ -288,7 +288,7 @@
     "rows": 6,
     "source": "docs/art-source/motions/skill-scale-2026-09-12/air_groove.json",
     "skillId": "skill_air_groove",
-    "skillSignature": "90064e70c2e02774347dc939b66fc56ce872577b3051fd472d22aed356bd661e",
+    "skillSignature": "2179dcf1a946a9ad40e8923cbb403294694b50316114c820563b1598804ffbaa",
     "skillReview": "cross forearms in a strong defensive brace; lean into a compact shield held close; uncross arms forcefully to release a short radial counter shock; settle with one hand at chest",
     "skillReleaseFrame": 2,
     "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json",
@@ -319,7 +319,7 @@
     "rows": 6,
     "source": "docs/art-source/motions/production-144/seiun_sky/packing.json",
     "skillId": "skill_seiun_sky",
-    "skillSignature": "fb8b902370f0a9e53302f9f32fa1537481942ff01d0f9a9bc578975dc3107f07",
+    "skillSignature": "2b0ed7ed82d821feb44149b59bc3d8be36f73a3ef76e9813e81711da920e5e8e",
     "skillReview": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
     "skillReleaseFrame": 2,
     "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
@@ -332,7 +332,7 @@
     "rows": 6,
     "source": "docs/art-source/motions/skill-revisions-2026-09-11/tamamo_cross/packing.json",
     "skillId": "skill_tamamo_cross",
-    "skillSignature": "77bc42e85476b96200a84509818d115d0421b94ede9511e562b46501f21b7a2b",
+    "skillSignature": "179373b8259d12372221cbdf38d83a8e84e581871e38ef5a7148b388741b556f",
     "skillReview": "dash from a low starting pose; plant feet and wind one arm across the body; sweep a broad short crescent across the front; pull the arm back to the heart with three inward motes",
     "skillReleaseFrame": 2,
     "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
@@ -345,7 +345,7 @@
     "rows": 6,
     "source": "docs/art-source/motions/production-144/fine_motion/packing.json",
     "skillId": "skill_fine_motion",
-    "skillSignature": "9cbbd6194035d283f310bd5622dcc54cf129b75ddedba23b4f1706f10e32f25f",
+    "skillSignature": "b342d046ab2362821e7daa8793169c56a8168dd72174abdb0081996aa0654bcc",
     "skillReview": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
     "skillReleaseFrame": 2,
     "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
@@ -358,7 +358,7 @@
     "rows": 6,
     "source": "docs/art-source/motions/skill-revisions-2026-09-11/biwa_hayahide/packing.json",
     "skillId": "skill_biwa_hayahide",
-    "skillSignature": "de88ee0dbaec8c6f55f662a8f9cc92a8ccd9278f96b5d7b0982aaec88dabdd39",
+    "skillSignature": "859aff35577ad4b8f7f0476411d7677869f97278aecb66789b12d90034482b63",
     "skillReview": "gather a compact star at waist; lift both arms holding the star overhead; bend forward and drive both hands downward releasing a descending comet; stand with hands close as fragments fade",
     "skillReleaseFrame": 2,
     "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
@@ -371,7 +371,7 @@
     "rows": 6,
     "source": "docs/art-source/motions/skill-revisions-2026-09-11/mayano_top_gun/packing.json",
     "skillId": "skill_mayano_top_gun",
-    "skillSignature": "91bd34d49881eaba8cd795b115138de88c594dfd670115fa2b7edc6c75dbf9b6",
+    "skillSignature": "ab01f3d4846a6a9c6adfae3a029588366064cb18a16e7edaa31aa5cbfe01bc30",
     "skillReview": "brace forearms tightly behind a small guard crest; pivot hips and open one arm to start a circular gust; hold a wide grounded stance sustaining three short orbiting gust arcs; fold hands back as the gust ends",
     "skillReleaseFrame": 2,
     "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
@@ -384,7 +384,7 @@
     "rows": 6,
     "source": "docs/art-source/motions/skill-revisions-2026-09-11/mihono_bourbon/packing.json",
     "skillId": "skill_mihono_bourbon",
-    "skillSignature": "cc4a45f707d4a11aec3ab6e9ddf2cfb1d4634c0bc72e2c814ee1d7ec4e700a39",
+    "skillSignature": "5dc1457dc526d93fa1c92e54b67b47c816f19df2d67391970f4f164efa09ce69",
     "skillReview": "gather energy in both hands at waist; plant both feet and extend hands together; lean against recoil while maintaining a short thick straight beam; lower hands and release the stance",
     "skillReleaseFrame": 2,
     "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
@@ -397,7 +397,7 @@
     "rows": 6,
     "source": "docs/art-source/motions/skill-revisions-2026-09-11/mejiro_ryan/packing.json",
     "skillId": "skill_mejiro_ryan",
-    "skillSignature": "a8be7e54c06f8512ce7d66332d7f977417471f9aa620d452dcd81425d486682c",
+    "skillSignature": "92618bcf20c2e6629d79b56cf5a88ff786a0c2cb91bc4a52fab33e8a852d20d9",
     "skillReview": "dash from a low starting pose; plant feet and wind one arm across the body; sweep a broad short crescent across the front; pull the arm back to the heart with three inward motes",
     "skillReleaseFrame": 2,
     "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
@@ -436,7 +436,7 @@
     "rows": 6,
     "source": "docs/art-source/motions/skill-revisions-2026-09-10/rice_shower/packing.json",
     "skillId": "skill_rice_shower",
-    "skillSignature": "35630d85727b1a1d199cbb16e89debcc4231aaa86c4a665dc874b0661398e6ff",
+    "skillSignature": "ae6af6fcb572b0daaca6a3b49e133ccbc9bca8737ef1dc364688550409e27ee3",
     "skillReview": "장미 준비 → 손을 뻗어 흡수 → 가슴으로 회수하며 방어막 표현 → 경계 자세. iron_drain의 피해 감소와 반복 흡수에 대응하며 방어막 그림은 피해 감소를 나타내고 별도 보호막 수치를 추가하지 않는다.",
     "skillReleaseFrame": 2,
     "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
@@ -449,7 +449,7 @@
     "rows": 6,
     "source": "docs/art-source/motions/identity-revisions-2026-09-12/ines_fujin/packing.json",
     "skillId": "skill_ines_fujin",
-    "skillSignature": "781d44b5ba1c8d84524034f720e23156ec02e276f5a88172a8cf40456afc53b6",
+    "skillSignature": "b5e4035317a8ad27fca4163a87543f4e40bca786c805209dab4e3d644b53286b",
     "skillReview": "All six action rows reviewed. Row 4 preserves bastion_growth preparation, release in column 3 and recovery; game skill data and timeline unchanged.",
     "skillReleaseFrame": 2,
     "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
@@ -462,7 +462,7 @@
     "rows": 6,
     "source": "docs/art-source/motions/skill-scale-2026-09-12/agnes_tachyon.json",
     "skillId": "skill_agnes_tachyon",
-    "skillSignature": "c6bdf18b2467a9c90d37fe0304488c79872cf060e65ec7395ca4a24b43a803c1",
+    "skillSignature": "3b857d50eb10c1ab2456b994e4da174eff38c1b171fd25f746ba7fa7771bbf29",
     "skillReview": "pull hands to the chest charging two small crests; draw one arm back and brace the other while crests enter the gloves; deliver a straight first strike followed by a visible second trailing strike accent; return to an empowered ready stance",
     "skillReleaseFrame": 2,
     "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json",
@@ -532,7 +532,7 @@
     "rows": 6,
     "source": "docs/art-source/motions/skill-revisions-2026-09-11/eishin_flash/packing.json",
     "skillId": "skill_eishin_flash",
-    "skillSignature": "d16940cc4610ae78e3fa4e375280fa9f8bdf487e7fbf1d84f932c0d8d82cdc7b",
+    "skillSignature": "0b7af4a89c1852b0ec0b07d0e5679fed3b2a9ee768938bf9cc140b832ef757a0",
     "skillReview": "hold hands apart outlining a tiny open seal; spread palms to set two open curved seal brackets; snap hands together closing the brackets into a compact lock; release hands and let the closed seal fade",
     "skillReleaseFrame": 2,
     "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
@@ -545,7 +545,7 @@
     "rows": 6,
     "source": "docs/art-source/motions/identity-revisions-2026-09-12/curren_chan/packing.json",
     "skillId": "skill_curren_chan",
-    "skillSignature": "d7be1d28bdcbbc3b056d2d64786fad8f1e590581f90c71ae9b18a1eecf44d4b7",
+    "skillSignature": "cceb7cd2714fce49ff545dcb252d722cd88d8d184b1249714d02d956af8c5ee8",
     "skillReview": "All six action rows reviewed. Row 4 preserves chain_spark preparation, release in column 3 and recovery; game skill data and timeline unchanged.",
     "skillReleaseFrame": 2,
     "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
@@ -584,7 +584,7 @@
     "rows": 6,
     "source": "docs/art-source/motions/production-144/sakura_bakushin_o/packing.json",
     "skillId": "skill_sakura_bakushin_o",
-    "skillSignature": "8534893e105539479619d309ab356f9d16b979cca4a7db93144a8149fb624538",
+    "skillSignature": "e6dbbe03fc42ce2470f3f8a99dd204db44926a4684e9ffe1f5981de9cd2613ec",
     "skillReview": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
     "skillReleaseFrame": 2,
     "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
@@ -597,7 +597,7 @@
     "rows": 6,
     "source": "docs/art-source/motions/skill-revisions-2026-09-11/seeking_the_pearl/packing.json",
     "skillId": "skill_seeking_the_pearl",
-    "skillSignature": "5c048797cb82543d1591fa22cf9bcc164a57fee87e5d5330f4905e8fc2f00552",
+    "skillSignature": "62004a924865c4e5cd0575cbbaca0f81fc54de857f9e5782107d9a14401e2848",
     "skillReview": "draw both arms back loading three tiny bolts; fire three bolts in different directions to the right; change weight and fire a second three-way burst; lower arms and recover",
     "skillReleaseFrame": 2,
     "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
@@ -623,7 +623,7 @@
     "rows": 6,
     "source": "docs/art-source/motions/skill-scale-2026-09-12/sweep_tosho.json",
     "skillId": "skill_sweep_tosho",
-    "skillSignature": "e11cfe62a02f17de2d9b3bdf08879095a5a053fdf07de240ca3eb1c75467a66a",
+    "skillSignature": "d815a3c24e9155bc8593a8dcee3edcebe2affd4b5826a11f53a5f29a9411b443",
     "skillReview": "crouch and cross forearms preparing to dash; drive forward with hair streaming; land and uncross both arms releasing a short straight trailing wave in the same direction; draw arms back into ready stance",
     "skillReleaseFrame": 2,
     "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json",
@@ -641,7 +641,7 @@
     "rows": 6,
     "source": "docs/art-source/motions/production-144/super_creek/packing.json",
     "skillId": "skill_super_creek",
-    "skillSignature": "18553fbb2a4372ce58e6b601033ddd4453ec32a0d0c69149aa3c6ce4f47fc32a",
+    "skillSignature": "49228d4f4355117af0604e5716efeecbd654dff9974fd2c3170d99449315a594",
     "skillReview": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
     "skillReleaseFrame": 2,
     "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
@@ -654,7 +654,7 @@
     "rows": 6,
     "source": "docs/art-source/motions/identity-revisions-2026-09-12/smart_falcon/packing.json",
     "skillId": "skill_smart_falcon",
-    "skillSignature": "9903d1a87d2d8cd7f1f0f1c73d9b012c309065dcb5cbf95eda438c47624db980",
+    "skillSignature": "c29c995c610c609d4747aceaf3784ffbb4dc694c66be62bbc0f299ae48b5748e",
     "skillReview": "All six action rows reviewed. Row 4 preserves cinder_field preparation, release in column 3 and recovery; game skill data and timeline unchanged.",
     "skillReleaseFrame": 2,
     "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
@@ -667,7 +667,7 @@
     "rows": 6,
     "source": "docs/art-source/motions/identity-revisions-2026-09-12/zenno_rob_roy/packing.json",
     "skillId": "skill_zenno_rob_roy",
-    "skillSignature": "a5ec4fd0851b0f0f4fbc0cee114d157864bcff63ce8fb8c92ba726bd0c913969",
+    "skillSignature": "fa7f36736f4d69e1eda7d60296f53eaed233bb20ddcde8fbbfb62f69bb04a518",
     "skillReview": "All six action rows reviewed. Row 4 preserves challenge_bastion preparation, release in column 3 and recovery; game skill data and timeline unchanged.",
     "skillReleaseFrame": 2,
     "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
@@ -719,7 +719,7 @@
     "rows": 6,
     "source": "docs/art-source/motions/production-144/nishino_flower/packing.json",
     "skillId": "skill_nishino_flower",
-    "skillSignature": "417cf339f01df38799ed22055357ed32c1d88d38e85b1672a89cfad993505cd3",
+    "skillSignature": "47d00b66e9650d6cd8669044f7bb38cf12ff9ed42561402524ccd0122a11b32d",
     "skillReview": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
     "skillReleaseFrame": 2,
     "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
@@ -745,7 +745,7 @@
     "rows": 6,
     "source": "docs/art-source/motions/identity-revisions-2026-09-12/bamboo_memory/packing.json",
     "skillId": "skill_bamboo_memory",
-    "skillSignature": "6ef8a700532e3eff17ca4d7d468541ac754352c5f99e855589212019cf697c7f",
+    "skillSignature": "136600900b0ff02edb527de70b34921e9243cef8db7b6425b7008fbe945a21c0",
     "skillReview": "All six action rows reviewed. Row 4 preserves disarm_cone preparation, release in column 3 and recovery; game skill data and timeline unchanged.",
     "skillReleaseFrame": 2,
     "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
@@ -771,7 +771,7 @@
     "rows": 6,
     "source": "docs/art-source/motions/skill-revisions-2026-09-11/marvelous_sunday/packing.json",
     "skillId": "skill_marvelous_sunday",
-    "skillSignature": "0f971de1f5a5a8afb1b87878a4ddf0cea12b95e5d20d02316ad31fb312d3a380",
+    "skillSignature": "a34c434c3316237774e9cc9cb1d2fbc98ee17721f1b3f679b77d04cd8dd322ea",
     "skillReview": "cross forearms in a strong defensive brace; lean into a compact shield held close; uncross arms forcefully to release a short radial counter shock; settle with one hand at chest",
     "skillReleaseFrame": 2,
     "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
@@ -810,7 +810,7 @@
     "rows": 6,
     "source": "docs/art-source/motions/identity-revisions-2026-09-12/meisho_doto/packing.json",
     "skillId": "skill_meisho_doto",
-    "skillSignature": "d189d5a064f68ca2b64b19768e2e2085bde2f5761e8067c1efde4f70833b98d9",
+    "skillSignature": "29b3b19c9d657014ccce8743b075aea330d5085f53c40f7099c71eb19e62c960",
     "skillReview": "All six action rows reviewed. Row 4 preserves sanctuary preparation, release in column 3 and recovery; game skill data and timeline unchanged.",
     "skillReleaseFrame": 2,
     "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
@@ -823,7 +823,7 @@
     "rows": 6,
     "source": "docs/art-source/motions/skill-scale-2026-09-12/mejiro_dober.json",
     "skillId": "skill_mejiro_dober",
-    "skillSignature": "31261a694dd6fc493465b04830e69cb7082eb63d9109c9dcfc9082e7f2bd7b4b",
+    "skillSignature": "eaa6415a831a3ad350dbe93f0c024ee8b72e69e1b8024c55039a46283d7469fb",
     "skillReview": "crouch and cross forearms preparing to dash; drive forward with hair streaming; land and uncross both arms releasing a short straight trailing wave in the same direction; draw arms back into ready stance",
     "skillReleaseFrame": 2,
     "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json",
@@ -841,7 +841,7 @@
     "rows": 6,
     "source": "docs/art-source/motions/identity-revisions-2026-09-12/nice_nature/packing.json",
     "skillId": "skill_nice_nature",
-    "skillSignature": "f53f11dacdbb00d5f8ad0d41fafd2b3881178dc1871d167c38002fcc9bf9f604",
+    "skillSignature": "4661cb8e6a78fce5d9000dcade9a40ecba9b3bdbfc5e5e7b285c0322bea3badc",
     "skillReview": "All six action rows reviewed. Row 4 preserves silence_zone preparation, release in column 3 and recovery; game skill data and timeline unchanged.",
     "skillReleaseFrame": 2,
     "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
@@ -880,7 +880,7 @@
     "rows": 6,
     "source": "docs/art-source/motions/production-144/espoir_city/packing.json",
     "skillId": "skill_espoir_city",
-    "skillSignature": "bfca0fa60515ac6ccbe4b582911c00ca7f548da884e8b62a7c7f03f011bd8e62",
+    "skillSignature": "46e1e6b7c56b6693766fd666f584577af137ac1ebe466f3e8f53e562b7e54fa9",
     "skillReview": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
     "skillReleaseFrame": 2,
     "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
@@ -893,7 +893,7 @@
     "rows": 6,
     "source": "docs/art-source/motions/skill-scale-2026-09-12/manhattan_cafe.json",
     "skillId": "skill_manhattan_cafe",
-    "skillSignature": "afdbb3bf5feda7b64e2d6bf5c3f350ab340a0550b3d79e453d1ea43524471f80",
+    "skillSignature": "0f130f21c00cc0f9e918ed2b562effa5a9c9fece74c75aec6d9a7405df01887c",
     "skillReview": "dash from a low starting pose; plant feet and wind one arm across the body; sweep a broad short crescent across the front; pull the arm back to the heart with three inward motes",
     "skillReleaseFrame": 2,
     "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json",
@@ -929,7 +929,7 @@
     "rows": 6,
     "source": "docs/art-source/motions/production-144/phalaenopsis/packing.json",
     "skillId": "skill_phalaenopsis",
-    "skillSignature": "52ad4c572f6e2561609861c25e0cd5d85397141e760467229d8193c3b6e029b8",
+    "skillSignature": "8b9277fb4e530b7358d43c860912dbda85e675c2ab2d18b448c0465ab9aac33b",
     "skillReview": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
     "skillReleaseFrame": 2,
     "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
@@ -942,7 +942,7 @@
     "rows": 6,
     "source": "docs/art-source/motions/skill-revisions-2026-09-11/titleholder/packing.json",
     "skillId": "skill_titleholder",
-    "skillSignature": "ba0aaf68f0034e5b39f3b34190b35e521619352c7440d8ab32c05f364d879512",
+    "skillSignature": "7b9980a1aaa8d3caebb5f3aedfb37fc566701042168e2ac4d694da67e765d6a3",
     "skillReview": "brace forearms tightly behind a small guard crest; pivot hips and open one arm to start a circular gust; hold a wide grounded stance sustaining three short orbiting gust arcs; fold hands back as the gust ends",
     "skillReleaseFrame": 2,
     "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
@@ -955,7 +955,7 @@
     "rows": 6,
     "source": "docs/art-source/motions/production-144/efforia/packing.json",
     "skillId": "skill_efforia",
-    "skillSignature": "34b35668f405f394815aa3a99e303a52b03cdce1bc48e46449a20daa62d6251f",
+    "skillSignature": "ccf9f1495dd8ed7b548fc89fe9798de682204e20225c3616f3586cc97dcbc388",
     "skillReview": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
     "skillReleaseFrame": 2,
     "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
@@ -994,7 +994,7 @@
     "rows": 6,
     "source": "docs/art-source/motions/production-144/daitaku_helios/packing.json",
     "skillId": "skill_daitaku_helios",
-    "skillSignature": "f09101157016ac73c89bd3c8aee2b803be39dae6082e612f69f47557120e6233",
+    "skillSignature": "4d1ef3adeedb98aedc4486507397a81b7b56fc2089895dbb6971cb9976214b02",
     "skillReview": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
     "skillReleaseFrame": 2,
     "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
@@ -1020,7 +1020,7 @@
     "rows": 6,
     "source": "docs/art-source/motions/production-144/satono_diamond/packing.json",
     "skillId": "skill_satono_diamond",
-    "skillSignature": "70eb93ca286e2aebda485b3bd3965ad6c1a2989403565a4bfdd33a8fb79fddb7",
+    "skillSignature": "94c96e5d1c2e22cb1e582050de772ed0be37bed558ad401d8f32acc23c4a3fcb",
     "skillReview": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
     "skillReleaseFrame": 2,
     "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
@@ -1033,7 +1033,7 @@
     "rows": 6,
     "source": "docs/art-source/motions/production-144/kitasan_black/packing.json",
     "skillId": "skill_kitasan_black",
-    "skillSignature": "648e886bb804f31a5a5107cc2fc6a1d288322f409b7ee84a1ec913bfd4b1a984",
+    "skillSignature": "3597bd37e88acfa06c10af04eda84f98f3371fd88f94c649d474970b927051e8",
     "skillReview": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
     "skillReleaseFrame": 2,
     "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
@@ -1046,7 +1046,7 @@
     "rows": 6,
     "source": "docs/art-source/motions/skill-scale-2026-09-12/sakura_chiyono_o.json",
     "skillId": "skill_sakura_chiyono_o",
-    "skillSignature": "d12f64b9ea59a38038a5450202ea41861d6231af089cb755717eae75de77d112",
+    "skillSignature": "9cdf224fcf2d86cefe0ca47535346b2fabe87158a62816e0e8bff5e5b794a0d0",
     "skillReview": "All six action rows reviewed. Row 4 preserves crossing_echo preparation, release in column 3 and recovery; game skill data and timeline unchanged.",
     "skillReleaseFrame": 2,
     "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json",
@@ -1090,7 +1090,7 @@
     "rows": 6,
     "source": "docs/art-source/motions/identity-revisions-2026-09-12/yaeno_muteki/packing.json",
     "skillId": "skill_yaeno_muteki",
-    "skillSignature": "d29be149d07775f69b010f4778e3f0efb67025187f1d99409c17934e2ecb9734",
+    "skillSignature": "cd14728283a96ea26526161831730c54bc91c632bc1a299fa4670201579f8194",
     "skillReview": "All six action rows reviewed. Row 4 preserves power_link preparation, release in column 3 and recovery; game skill data and timeline unchanged.",
     "skillReleaseFrame": 2,
     "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
@@ -1129,7 +1129,7 @@
     "rows": 6,
     "source": "docs/art-source/motions/identity-revisions-2026-09-12/daring_tact/packing.json",
     "skillId": "skill_daring_tact",
-    "skillSignature": "a43bac208f8550310489f9c733d9ece34d9f2cb3065a6a1f718258f822eeaf97",
+    "skillSignature": "02d10d076d918a58b690961a1100cea42c747a86ac6fa05e92e000386a1c5143",
     "skillReview": "All six action rows reviewed. Row 4 preserves crossing_echo preparation, release in column 3 and recovery; game skill data and timeline unchanged.",
     "skillReleaseFrame": 2,
     "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
@@ -1142,7 +1142,7 @@
     "rows": 6,
     "source": "docs/art-source/motions/identity-revisions-2026-09-12/sakura_laurel/packing.json",
     "skillId": "skill_sakura_laurel",
-    "skillSignature": "40a0e817ea19fdba04c7dbe490d0fded6519f3ade4031687a07ea2f81106d138",
+    "skillSignature": "3a43903c78ad97955da7a267594b046228a7e18caf125ed3ba755a95ac743dd9",
     "skillReview": "All six action rows reviewed. Row 4 preserves frost_front preparation, release in column 3 and recovery; game skill data and timeline unchanged.",
     "skillReleaseFrame": 2,
     "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
@@ -1155,7 +1155,7 @@
     "rows": 6,
     "source": "docs/art-source/motions/production-144/narita_top_road/packing.json",
     "skillId": "skill_narita_top_road",
-    "skillSignature": "1a47c0a297f30d082eae170bc70818157751a663059818fbd02df0792ba21c3b",
+    "skillSignature": "c148c84e3de91c3ee221b393fe330daf18fabfbb7669480774e363378fa6d7f1",
     "skillReview": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
     "skillReleaseFrame": 2,
     "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
@@ -1168,7 +1168,7 @@
     "rows": 6,
     "source": "docs/art-source/motions/identity-revisions-2026-09-12/yamanin_zephyr/packing.json",
     "skillId": "skill_yamanin_zephyr",
-    "skillSignature": "4e773e4ef1dc26483483006ae197a6b43b809a605d8e22e032ecc72e761fb789",
+    "skillSignature": "acadf897444eaa50f7eba6e9b247237fe335108b9ed7421894f8829b76d9d835",
     "skillReview": "All six action rows reviewed. Row 4 preserves cleanse_hymn preparation, release in column 3 and recovery; game skill data and timeline unchanged.",
     "skillReleaseFrame": 2,
     "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
@@ -1194,7 +1194,7 @@
     "rows": 6,
     "source": "docs/art-source/motions/skill-scale-2026-09-12/transcend.json",
     "skillId": "skill_transcend",
-    "skillSignature": "ce94f27d06507a5020d43b9af43b37f5d9d5e978903237d5250bb8ced6c42c72",
+    "skillSignature": "8620375c028f2c655037403765d976c44ee6b4deb3e98d18d12eba4c3a8120af",
     "skillReview": "All six action rows reviewed. Row 4 preserves twin_orbit preparation, release in column 3 and recovery; game skill data and timeline unchanged.",
     "skillReleaseFrame": 2,
     "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json",
@@ -1212,7 +1212,7 @@
     "rows": 6,
     "source": "docs/art-source/motions/identity-revisions-2026-09-12/north_flight/packing.json",
     "skillId": "skill_north_flight",
-    "skillSignature": "a68bb8fa484c2f6481620680d50a9831f834f2c7256e7d2260b5ac460f23730c",
+    "skillSignature": "95434cfe10af4294bbf3dfe7a85f1e3cb9cd06eac1c7dc08acf137db92181fd2",
     "skillReview": "All six action rows reviewed. Row 4 preserves dash_feint preparation, release in column 3 and recovery; game skill data and timeline unchanged.",
     "skillReleaseFrame": 2,
     "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
@@ -1225,7 +1225,7 @@
     "rows": 6,
     "source": "docs/art-source/motions/identity-revisions-2026-09-12/symboli_kris_s/packing.json",
     "skillId": "skill_symboli_kris_s",
-    "skillSignature": "7a17a481d192bc68e0db7336a90badb9be4cbda9b6d70f48ca36c508f76605ac",
+    "skillSignature": "37ad4fd6818f81deab1ae1a36b83610abfc30b3acde3cb416743ebbe6a640254",
     "skillReview": "All six action rows reviewed. Row 4 preserves breach_line preparation, release in column 3 and recovery; game skill data and timeline unchanged.",
     "skillReleaseFrame": 2,
     "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
@@ -1238,7 +1238,7 @@
     "rows": 6,
     "source": "docs/art-source/motions/production-144/rulership/packing.json",
     "skillId": "skill_rulership",
-    "skillSignature": "91380f4209c21247c4a89d2e998874b5c3b7a0f31b09b1ed41357faaf73ad59b",
+    "skillSignature": "0df46186b9db1e85a6db7bdab1defe53c841b4f2c553422237f50199dbe332ea",
     "skillReview": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
     "skillReleaseFrame": 2,
     "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
@@ -1264,7 +1264,7 @@
     "rows": 6,
     "source": "docs/art-source/motions/skill-scale-2026-09-12/victoire_pisa.json",
     "skillId": "skill_victoire_pisa",
-    "skillSignature": "b21b85740361f18811a905f924a2c10a9525523693c49b16a5ef956de488a8f1",
+    "skillSignature": "f323fb2d8216c73d542f52cd7fcf7eee1372ff24035f005cc2d392c2d47beb95",
     "skillReview": "crouch and cross forearms preparing to dash; drive forward with hair streaming; land and uncross both arms releasing a short straight trailing wave in the same direction; draw arms back into ready stance",
     "skillReleaseFrame": 2,
     "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json",
@@ -1282,7 +1282,7 @@
     "rows": 6,
     "source": "docs/art-source/motions/identity-revisions-2026-09-12/logotype/packing.json",
     "skillId": "skill_logotype",
-    "skillSignature": "603f420f2e8bd6d21de92c819d16afc0bcef60480ce02def9c4a9c41e76744e2",
+    "skillSignature": "49b249d3b80ee340b467d78b6b98ff47e02cab27b5b266bdde3dc0646fc4906a",
     "skillReview": "All six action rows reviewed. Row 4 preserves command_pulse preparation, release in column 3 and recovery; game skill data and timeline unchanged.",
     "skillReleaseFrame": 2,
     "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
@@ -1313,7 +1313,7 @@
     "rows": 6,
     "source": "docs/art-source/motions/production-144/marche_lorraine/packing.json",
     "skillId": "skill_marche_lorraine",
-    "skillSignature": "583810f75b379993213623a5b1ba284b254b765f0f30d4a05ff5eaba50c275ee",
+    "skillSignature": "e5592c3d5c1dd739ac8fdea2989cf975a5dd66b9a95031eb234cebe116f2eb09",
     "skillReview": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
     "skillReleaseFrame": 2,
     "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
@@ -1326,7 +1326,7 @@
     "rows": 6,
     "source": "docs/art-source/motions/skill-revisions-2026-09-11/forever_young/packing.json",
     "skillId": "skill_forever_young",
-    "skillSignature": "536b43240fbca5507a478cf2b05672d68203c41815206798ba515427391464a4",
+    "skillSignature": "d7c0c42ad06666a1e93cf552418b74a33d13e17529d09a965a5c1e1b4067e54d",
     "skillReview": "cup a small ember; bend and sweep a hand down to plant a compact flame seal; keep palm low maintaining three small pulses above the seal; rise and return hand to chest",
     "skillReleaseFrame": 2,
     "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
@@ -1365,7 +1365,7 @@
     "rows": 6,
     "source": "docs/art-source/motions/identity-revisions-2026-09-12/tanino_gimlet/packing.json",
     "skillId": "skill_tanino_gimlet",
-    "skillSignature": "72b029082bb6d81cf82cdb8036770dbeb595e454483722d1e7d09b2a50588dc0",
+    "skillSignature": "52a8cc0d4e86c2ab926128945485067a7356a9c5ed046f5d6c88cb4c0e2b8161",
     "skillReview": "All six action rows reviewed. Row 4 preserves disarm_cone preparation, release in column 3 and recovery; game skill data and timeline unchanged.",
     "skillReleaseFrame": 2,
     "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
@@ -1440,7 +1440,7 @@
     "rows": 6,
     "source": "docs/art-source/motions/production-144/cheval_grand/packing.json",
     "skillId": "skill_cheval_grand",
-    "skillSignature": "884d9abd3b29d529ca873d4ab229c7c2d83fb7e02010b672aceda4f902615b6a",
+    "skillSignature": "063f1a719bb7888994bcba9883b9d63b830e03b10fe7cf49f3153d3777b30b02",
     "skillReview": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
     "skillReleaseFrame": 2,
     "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
@@ -1497,7 +1497,7 @@
     "rows": 6,
     "source": "docs/art-source/motions/identity-revisions-2026-09-12/jungle_pocket/packing.json",
     "skillId": "skill_jungle_pocket",
-    "skillSignature": "a8d5066459a7261ae937e2bc84fec854e9d00a00d365de5221d0265429c9ca82",
+    "skillSignature": "534d6f3887528e236f0b8b5fb934e25f9fcde96e38bf803ae7671e53f80c548c",
     "skillReview": "All six action rows reviewed. Row 4 preserves binding_line preparation, release in column 3 and recovery; game skill data and timeline unchanged.",
     "skillReleaseFrame": 2,
     "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
@@ -1536,7 +1536,7 @@
     "rows": 6,
     "source": "docs/art-source/motions/skill-revisions-2026-09-11/chrono_genesis/packing.json",
     "skillId": "skill_chrono_genesis",
-    "skillSignature": "84476adf472c78aaed8b8b178f566d1308fc27cf390e20c636bf88b062f71dc4",
+    "skillSignature": "cba28bd63113c982593a92af8c23953b7440a62c9defbf3b9bb5a3e8134a1b59",
     "skillReview": "crouch ready to launch; dash forward lifting the leading knee; plant that boot firmly and compress the body releasing a compact circular impact ring; rise from the planted stance",
     "skillReleaseFrame": 2,
     "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
@@ -1562,7 +1562,7 @@
     "rows": 6,
     "source": "docs/art-source/motions/skill-scale-2026-09-12/gran_alegria.json",
     "skillId": "skill_gran_alegria",
-    "skillSignature": "54443f2284207c93b975836724d8a3ce74a2501209257b856d645eb65a2d3843",
+    "skillSignature": "db31e0d4d4d5ee882cdb44764dd43f34c933d4090972e4da6d14076e45a21b6a",
     "skillReview": "launch forward from low crouch; plant the lead foot and deliver a jab; twist into a rising follow-up strike with three short impact accents; recoil into a ready guard",
     "skillReleaseFrame": 2,
     "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json",
@@ -1580,7 +1580,7 @@
     "rows": 6,
     "source": "docs/art-source/motions/production-144/believe/packing.json",
     "skillId": "skill_believe",
-    "skillSignature": "671f1e9c1a5c63f7fc7605ff2907b8ef3c0bc8364c1612e066290d349ca33f4c",
+    "skillSignature": "acbcff1acc1969c1dafb4ce6419afb71917f2bdb2c3b77fed80056c25f36b6a3",
     "skillReview": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
     "skillReleaseFrame": 2,
     "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
@@ -1606,7 +1606,7 @@
     "rows": 6,
     "source": "docs/art-source/motions/skill-revisions-2026-09-11/still_in_love/packing.json",
     "skillId": "skill_still_in_love",
-    "skillSignature": "8167674cd85625d189d3832bcfc6cbe8c2893327177a38bc880f836791a1f726",
+    "skillSignature": "864a9f916bf15176bf63aa16cd61fb713cb97fd429547f3396c20a1ec3bc760b",
     "skillReview": "crouch ready to launch; dash forward lifting the leading knee; plant that boot firmly and compress the body releasing a compact circular impact ring; rise from the planted stance",
     "skillReleaseFrame": 2,
     "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
@@ -1619,7 +1619,7 @@
     "rows": 6,
     "source": "docs/art-source/motions/identity-revisions-2026-09-12/copano_rickey/packing.json",
     "skillId": "skill_copano_rickey",
-    "skillSignature": "27fd59c3d6e5f0bea98c243456d957b64550495a9f9cacd997091e4358986ae6",
+    "skillSignature": "bd2819876abd38d63a9cd60cec221f63c3c47852ac5293e2912698e2a8114fa8",
     "skillReview": "All six action rows reviewed. Row 4 preserves dash_feint preparation, release in column 3 and recovery; game skill data and timeline unchanged.",
     "skillReleaseFrame": 2,
     "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
@@ -1632,7 +1632,7 @@
     "rows": 6,
     "source": "docs/art-source/motions/identity-revisions-2026-09-12/hokko_tarumae/packing.json",
     "skillId": "skill_hokko_tarumae",
-    "skillSignature": "169c2b643b3e8b23097442d57fdd2d8c45dc342469261fafa379d192561335dc",
+    "skillSignature": "3554ec66f5b04c099caead29e6d812412dbe2122dd2b1167290699eaf89afd05",
     "skillReview": "All six action rows reviewed. Row 4 preserves cinder_field preparation, release in column 3 and recovery; game skill data and timeline unchanged.",
     "skillReleaseFrame": 2,
     "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
@@ -1645,7 +1645,7 @@
     "rows": 6,
     "source": "docs/art-source/motions/identity-revisions-2026-09-12/wonder_acute/packing.json",
     "skillId": "skill_wonder_acute",
-    "skillSignature": "97249df86962bd780510bf837b2dcf58b56c2218e3daea65b9e0614dec00c34a",
+    "skillSignature": "ef74243e0d052fffb30bb3ee839f6b7ecd8292de301a073b54a34813ff254234",
     "skillReview": "All six action rows reviewed. Row 4 preserves triage_echo preparation, release in column 3 and recovery; game skill data and timeline unchanged.",
     "skillReleaseFrame": 2,
     "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
@@ -1710,7 +1710,7 @@
     "rows": 6,
     "source": "docs/art-source/motions/skill-revisions-2026-09-11/neo_universe/packing.json",
     "skillId": "skill_neo_universe",
-    "skillSignature": "8ef8af6fba3f5c64a37ee94255e29e2be015107c6c9357cf212c8f53263c7642",
+    "skillSignature": "a3ed456d2d9cede71b1f00d345f882642c967b8ebca931d42770dc48886cb058",
     "skillReview": "crouch ready to launch; dash forward lifting the leading knee; plant that boot firmly and compress the body releasing a compact circular impact ring; rise from the planted stance",
     "skillReleaseFrame": 2,
     "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
@@ -1736,7 +1736,7 @@
     "rows": 6,
     "source": "docs/art-source/motions/identity-revisions-2026-09-12/tap_dance_city/packing.json",
     "skillId": "skill_tap_dance_city",
-    "skillSignature": "06f51dd87940f87b7be8173e86ea4e2030bd1a4241eea3652d5452f3013f0409",
+    "skillSignature": "dd0bdec0d8ff659c87fb907a7a973f514a84a06c9942d8322be6304ec44a0bdd",
     "skillReview": "All six action rows reviewed. Row 4 preserves retaliate_storm preparation, release in column 3 and recovery; game skill data and timeline unchanged.",
     "skillReleaseFrame": 2,
     "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
@@ -1749,7 +1749,7 @@
     "rows": 6,
     "source": "docs/art-source/motions/identity-revisions-2026-09-12/duramente/packing.json",
     "skillId": "skill_duramente",
-    "skillSignature": "1720c2c48e946371991ae0385d125f0d0d025dc59d89174b847b4680bd6cb74f",
+    "skillSignature": "c7e058aae2a24d39d06a1d40aa817b5f5eccb9ee7d972c89eb90259688100669",
     "skillReview": "All six action rows reviewed. Row 4 preserves breach_line preparation, release in column 3 and recovery; game skill data and timeline unchanged.",
     "skillReleaseFrame": 2,
     "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
@@ -1762,7 +1762,7 @@
     "rows": 6,
     "source": "docs/art-source/motions/skill-scale-2026-09-12/lucky_lilac.json",
     "skillId": "skill_lucky_lilac",
-    "skillSignature": "a8d16db06c57c5534e975078e59fbc563911032367107b243feb42ccf8569b12",
+    "skillSignature": "53d13e9a6f8b9adae930e8504f953617b93d16027b208c243880bc77b72693fa",
     "skillReview": "gather a tiny core between close hands; open elbows releasing a small ring; fully extend arms releasing a larger ring; bring arms down as ring fragments settle",
     "skillReleaseFrame": 2,
     "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json",
@@ -1780,7 +1780,7 @@
     "rows": 6,
     "source": "docs/art-source/motions/skill-scale-2026-09-12/almond_eye.json",
     "skillId": "skill_almond_eye",
-    "skillSignature": "61f1ba230ba9231f3cb29e01741c9c0006551c95d2fcff0a6033ab32637a7bb3",
+    "skillSignature": "e56991041fe9c70a7c6a6577001e0db112b6fd9c4cff6fc9f10ec89309892b91",
     "skillReview": "steady both hands aiming at one point; release a small first bolt; brace lower and release two aligned follow-up bolts, the last larger; lower arms after visible recoil",
     "skillReleaseFrame": 2,
     "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json",
@@ -1811,7 +1811,7 @@
     "rows": 6,
     "source": "docs/art-source/motions/skill-scale-2026-09-12/fenomeno.json",
     "skillId": "skill_fenomeno",
-    "skillSignature": "1f68887fd3b68e847d0571998d0bc384d471a20e0a876db95653c8cb8f7165ca",
+    "skillSignature": "5243873c8b6bfc3b4b719ebdea6957dbc42d4ee381d466a0a1d4a6e04c252bc8",
     "skillReview": "crouch and cross forearms preparing to dash; drive forward with hair streaming; land and uncross both arms releasing a short straight trailing wave in the same direction; draw arms back into ready stance",
     "skillReleaseFrame": 2,
     "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json",
@@ -1829,7 +1829,7 @@
     "rows": 6,
     "source": "docs/art-source/motions/identity-revisions-2026-09-12/sakura_chitose_o/packing.json",
     "skillId": "skill_sakura_chitose_o",
-    "skillSignature": "cd13009229be0a31424b62a921d422547142014a8ffba0d7491002d616fb0881",
+    "skillSignature": "3464da0e2c07797c68449714d05683801a02347a24e2cf73f367bdad7d1c8e43",
     "skillReview": "All six action rows reviewed. Row 4 preserves delayed_prison preparation, release in column 3 and recovery; game skill data and timeline unchanged.",
     "skillReleaseFrame": 2,
     "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
@@ -1842,7 +1842,7 @@
     "rows": 6,
     "source": "docs/art-source/motions/skill-scale-2026-09-12/bubble_gum_fellow.json",
     "skillId": "skill_bubble_gum_fellow",
-    "skillSignature": "f0340343990d3a6793511ebf45bcf0089bdb87a7df500c129c2c52a7569fb538",
+    "skillSignature": "de14838208d85b42f8e31c7555e11f0d01a09f9f0cf84ae549a9b08f71056e0a",
     "skillReview": "pull hands to the chest charging two small crests; draw one arm back and brace the other while crests enter the gloves; deliver a straight first strike followed by a visible second trailing strike accent; return to an empowered ready stance",
     "skillReleaseFrame": 2,
     "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json",
@@ -1873,7 +1873,7 @@
     "rows": 6,
     "source": "docs/art-source/motions/skill-scale-2026-09-12/durandal.json",
     "skillId": "skill_durandal",
-    "skillSignature": "eb1b374a4dbe705d469900467d9aba1241f19460fd5d42b95fe64b42c3e4d2fd",
+    "skillSignature": "ca3160d2671f1537cbbb01c2474a39112e35b2ac0b43de65b49dfc2a09e2e166",
     "skillReview": "pull arms inward and lower the silhouette; crouch into a compact shadow veil with one faint offset silhouette; emerge in a sudden forward finishing strike; settle upright as the small afterimage fades",
     "skillReleaseFrame": 2,
     "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json",
@@ -1904,7 +1904,7 @@
     "rows": 6,
     "source": "docs/art-source/motions/production-144/dream_journey/packing.json",
     "skillId": "skill_dream_journey",
-    "skillSignature": "9744a481c34d89b27ad6f876188fd6a21dd11b21b71a02acd9cbe4fe4cc636e0",
+    "skillSignature": "3f682286cfa611a197965cb99e00b5eb6d55467f83db18639af51db7f3e194ed",
     "skillReview": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
     "skillReleaseFrame": 2,
     "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
@@ -1917,7 +1917,7 @@
     "rows": 6,
     "source": "docs/art-source/motions/skill-scale-2026-09-12/admire_groove.json",
     "skillId": "skill_admire_groove",
-    "skillSignature": "5ede3c8d5bb303f5773b11b74a1aaa803094d123827a118f450fa51d1e94fddf",
+    "skillSignature": "59be3b87731d11e54efab1ae622cf5911d00fc302fe3966a388e813ac791b594",
     "skillReview": "dash from a low starting pose; plant feet and wind one arm across the body; sweep a broad short crescent across the front; pull the arm back to the heart with three inward motes",
     "skillReleaseFrame": 2,
     "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json",
@@ -1948,7 +1948,7 @@
     "rows": 6,
     "source": "docs/art-source/motions/skill-revisions-2026-09-11/gentildonna/packing.json",
     "skillId": "skill_gentildonna",
-    "skillSignature": "632d471cd7a785d2b6655dd8484b7adcf89d2bd138f57d056117ee42c8699f07",
+    "skillSignature": "ea763ad0b08b307db6c6a87db6aa21f273e34aa165274f6d0fccf72392cee505",
     "skillReview": "brace forearms tightly behind a small guard crest; pivot hips and open one arm to start a circular gust; hold a wide grounded stance sustaining three short orbiting gust arcs; fold hands back as the gust ends",
     "skillReleaseFrame": 2,
     "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
@@ -1961,7 +1961,7 @@
     "rows": 6,
     "source": "docs/art-source/motions/skill-revisions-2026-09-11/orfevre/packing.json",
     "skillId": "skill_orfevre",
-    "skillSignature": "368388d4889cf903c55c99d457c5270bb5e8dc394d657437152396bead76aeed",
+    "skillSignature": "85f537548c23c02b581b395e6d8b87581e154c3e74d2044bfbefafea27d3a3af",
     "skillReview": "launch forward from low crouch; plant the lead foot and deliver a jab; twist into a rising follow-up strike with three short impact accents; recoil into a ready guard",
     "skillReleaseFrame": 2,
     "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
@@ -1974,7 +1974,7 @@
     "rows": 6,
     "source": "docs/art-source/motions/identity-revisions-2026-09-12/buena_vista/packing.json",
     "skillId": "skill_buena_vista",
-    "skillSignature": "4bc1d2fe82346b5b038b2580a28c1fb87b3f0b05419ebae0074163567704775d",
+    "skillSignature": "d99d2885706df0c01af99f713d590f2095cbfdea00fb252e146f0722ee862a23",
     "skillReview": "All six action rows reviewed. Row 4 preserves execution_refund preparation, release in column 3 and recovery; game skill data and timeline unchanged.",
     "skillReleaseFrame": 2,
     "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
@@ -2013,7 +2013,7 @@
     "rows": 6,
     "source": "docs/art-source/motions/production-144/air_messiah/packing.json",
     "skillId": "skill_air_messiah",
-    "skillSignature": "3451d6b3a030ce932cf216965d8086f9a727eea2a73a11e188ae78f70bf1cf6d",
+    "skillSignature": "c3f59424337503fa11f8fd430594e2f84f1b511f5bc3c31d226bb17a0356d22c",
     "skillReview": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
     "skillReleaseFrame": 2,
     "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
@@ -2026,7 +2026,7 @@
     "rows": 6,
     "source": "docs/art-source/motions/identity-revisions-2026-09-12/cesario/packing.json",
     "skillId": "skill_cesario",
-    "skillSignature": "4a41d75ad5c99161ecf9fbaef7896fa11317024cf72cca643d46d07c61dc95ce",
+    "skillSignature": "bcc4a82b77f7eadbc54934379cf1e5e46837c31483b6df0b46a4e8bc71cf31e3",
     "skillReview": "All six action rows reviewed. Row 4 preserves sanctuary preparation, release in column 3 and recovery; game skill data and timeline unchanged.",
     "skillReleaseFrame": 2,
     "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
@@ -2039,7 +2039,7 @@
     "rows": 6,
     "source": "docs/art-source/motions/production-144/rhein_kraft/packing.json",
     "skillId": "skill_rhein_kraft",
-    "skillSignature": "f7fe58c6b64b33a204b5bb058a45b7d428e7502927b3067f7c994b9cdaa8ea7a",
+    "skillSignature": "f69690708a4cc5210a7fd90233afd69e0c096cae2e505d6848b64bc86bd5be22",
     "skillReview": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
     "skillReleaseFrame": 2,
     "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"

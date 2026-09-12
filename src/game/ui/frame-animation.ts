@@ -2,6 +2,7 @@ import sheetsRaw from '../../data/manual/frame-sheets.json';
 import type { AnimationName } from './art';
 import type { SkillDef } from '../engine/types';
 import { skillTimeline, skillWindup } from '../engine/battle/skill-timeline';
+import { versionedAssetUrl } from './asset-version';
 
 export type FrameSheet = { file: string; frameWidth: number; frameHeight: number; logicalFrameSize?: number; anchor?: number[]; columns: number; rows: number; source: string; skillId: string; skillSignature: string; skillReview: string; skillReleaseFrame?: number; skillCompatibilityReview?: string };
 export const FRAME_SHEETS: Record<string, FrameSheet> = sheetsRaw;
@@ -26,7 +27,7 @@ export const FRAME_CLIPS = {
 } as const;
 
 export function frameSheetUrl(id: string): string | null {
-  return FRAME_SHEETS[id] ? `/assets/${FRAME_SHEETS[id].file}` : null;
+  return FRAME_SHEETS[id] ? versionedAssetUrl(`/assets/${FRAME_SHEETS[id].file}`) : null;
 }
 
 /** Stretch the reviewed preparation/recovery poses around real release times. */

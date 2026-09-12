@@ -61,6 +61,7 @@ type TraitOverrides = { historyTrait: Record<string, { trait: HistoryTrait; reas
 type UnitOverrides = {
   forceActiveS1: string[]; forceInactiveS1: string[];
   costOverride: Record<string, Cost>; roleOverride: Record<string, Role>;
+  costReasons: Record<string, string>;
 };
 type LegacyTags = {
   tripleCrown: Record<string, string>;
@@ -664,6 +665,7 @@ for (let pass = 0; pass < 60; pass += 1) {
 }
 
 for (const [name, cost] of Object.entries(unitOverrides.costOverride)) {
+  if (!unitOverrides.costReasons?.[name]?.trim()) throw new Error(`Missing cost adjustment reason: ${name}`);
   if (!active.has(name)) throw new Error(`costOverride names "${name}", which is not in the active roster.`);
   costOf.set(name, cost);
 }
@@ -845,6 +847,8 @@ const manifest: ArtManifest = {
     portrait: `portraits/${u.id}.png`,
     battleSheet: `characters/${u.id}.png`,
     cutinRequired: u.activeS1 && u.cost === 5,
+    ...(['symboli_kris_s', 'symboli_rudolf', 'buena_vista'].includes(u.id)
+      ? { cutinPortrait: `portraits/${u.id}.png` } : {}),
   })),
   items: [...new Set(ALL_ITEM_DEFS.map((i) => `items/${i.isComponent ? 'components' : 'complete'}/${i.iconId ?? i.id}.png`))],
   traits: TRAIT_DEFS.map((t) => `traits/${t.id}.png`),

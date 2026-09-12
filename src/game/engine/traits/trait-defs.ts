@@ -314,6 +314,43 @@ export const TRAIT_DEFS: TraitDef[] = [
   },
 ];
 
+// Broad rosters keep early splashes; late tiers require committing most of the board.
+// Each reached tier replaces the previous one, rather than stacking with it.
+const extend = (id: TraitId, tiers: TraitDef['tiers']): void => {
+  const trait = TRAIT_DEFS.find(t => t.id === id)!;
+  trait.tiers.push(...tiers);
+  trait.thresholds = trait.tiers.map(t => t.count);
+};
+const percent = (value: number): number => Math.round(value * 100);
+for (const [count, speed, move, immune] of [[8, .55, .45, 6], [10, .8, .65, 8]]) {
+  extend('nige', [{ count, description: `공속 +${percent(speed)}%, 이동속도 +${percent(move)}%, 시작 ${immune}초 방해 효과 면역`, effects: [mul('attackSpeed', speed), mul('moveSpeedHexPerSec', move), { kind: 'CC_IMMUNE', duration: immune, trigger: { when: 'COMBAT_START' } }] }]);
+}
+for (const [count, amp, mana] of [[8, .42, 25], [10, .65, 35]]) {
+  extend('senko', [{ count, description: `체력 60% 이상에서 피해 +${percent(amp)}%, 시작 마나 +${mana}`, effects: [{ kind: 'DAMAGE_AMP', value: amp, trigger: { when: 'HP_ABOVE', threshold: .6 } }, { kind: 'MANA_ADD', value: mana, trigger: { when: 'COMBAT_START' } }] }]);
+}
+for (const [count, crit, bonus, amp] of [[8, .25, .3, .18], [10, .35, .35, .3]]) {
+  extend('sashi', [{ count, description: `치명타 +${percent(crit)}%. 처치 관여 시 6초간 추가 치명타 +${percent(bonus)}%, 피해 +${percent(amp)}%`, effects: [{ kind: 'CRIT_CHANCE_ADD', value: crit }, { kind: 'CRIT_CHANCE_ADD', value: bonus, duration: 6, trigger: { when: 'ON_TAKEDOWN_ASSIST' } }, { kind: 'DAMAGE_AMP', value: amp, duration: 6, trigger: { when: 'ON_TAKEDOWN_ASSIST' } }] }]);
+}
+for (const [count, amp, mana] of [[8, .5, 20], [10, .75, 25]]) {
+  extend('oikomi', [{ count, description: `체력 50% 미만인 대상에게 피해 +${percent(amp)}%. 처치 관여 시 마나 +${mana}`, effects: [{ kind: 'DAMAGE_AMP', value: amp, trigger: { when: 'TARGET_HP_BELOW', threshold: .5 } }, { kind: 'MANA_ADD', value: mana, trigger: { when: 'ON_TAKEDOWN_ASSIST' } }] }]);
+}
+for (const [count, damage, speed] of [[6, 140, .1], [9, 240, .3]]) {
+  extend('sprinter', [{ count, description: `공격 3회마다 물리 피해 ${damage}, 공격속도 +${percent(speed)}%, 공속 상한 +1`, effects: [{ kind: 'ON_HIT_DAMAGE', value: damage, damageType: 'PHYSICAL', trigger: { when: 'ON_NTH_ATTACK', threshold: 3 } }, mul('attackSpeed', speed), { kind: 'ATTACK_SPEED_CAP_ADD', value: 1 }] }]);
+}
+for (const [count, value] of [[6, .4], [9, .7]]) {
+  extend('miler', [{ count, description: `스킬 사용 후 5초간 공격력/주문력 +${percent(value)}%`, effects: [mul('attackDamage', value, { duration: 5, trigger: { when: 'ON_CAST' } }), mul('abilityPower', value, { duration: 5, trigger: { when: 'ON_CAST' } })] }]);
+}
+for (const [count, value] of [[6, .25], [8, .34], [10, .5]]) {
+  extend('middle', [{ count, description: `전투 8초 후 최대 체력·공격력·주문력 +${percent(value)}%`, effects: [mul('hp', value, { trigger: { when: 'AFTER_SECONDS', threshold: 8 } }), mul('attackDamage', value, { trigger: { when: 'AFTER_SECONDS', threshold: 8 } }), mul('abilityPower', value, { trigger: { when: 'AFTER_SECONDS', threshold: 8 } })] }]);
+}
+for (const [count, heal, resist] of [[6, .12, 40], [9, .2, 65]]) {
+  extend('stayer', [{ count, description: `5초마다 잃은 체력 ${percent(heal)}% 회복, 전투 15초 후 방어력/마저 +${resist}`, effects: [{ kind: 'HEAL_MISSING_PCT', value: heal, interval: 5, trigger: { when: 'EVERY_SECONDS', threshold: 5 } }, add('armor', resist, { trigger: { when: 'AFTER_SECONDS', threshold: 15 } }), add('magicResist', resist, { trigger: { when: 'AFTER_SECONDS', threshold: 15 } })] }]);
+}
+extend('dirt_champion', [{ count: 6, description: '방어력/마저 +55, 군중제어 저항 +45%', effects: [add('armor', 55), add('magicResist', 55), { kind: 'CC_RESIST', value: .45 }] }]);
+for (const [count, value] of [[8, .28], [10, .42]]) {
+  extend('heisei_dynasty', [{ count, description: `공격력/주문력 +${percent(value)}%`, effects: [mul('attackDamage', value), mul('abilityPower', value)] }]);
+}
+
 export const TRAIT_BY_ID = new Map<TraitId, TraitDef>([...TRAIT_DEFS, ...SEASON_TRAIT_DEFS].map((t) => [t.id, t]));
 
 export function getTrait(id: TraitId): TraitDef {

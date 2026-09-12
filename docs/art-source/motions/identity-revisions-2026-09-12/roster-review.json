@@ -14,8 +14,9 @@
       "portraitSha256": "0e21e3e0a614174fa2f2f4dfb24414c79cc0fbc96c2a09dfb44bb69133c149d3",
       "baselineRuntimeSha256": "8c9211fc584ea07013bf11b91ce389b0b97576ef950dd9eaa2584e55ca3f6470",
       "baselinePacking": "docs/art-source/motions/batch-01/special_week/packing.json",
-      "skillSignature": "1648a399fa582a0486023d45ff1f096206ff4135dfdca02e5664fe2121214822",
-      "name": "스페셜 위크"
+      "skillSignature": "39cdc44510f08756f4f041d1de916160fdb8988fa5b2721ba9813e3d26aa176b",
+      "name": "스페셜 위크",
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
     },
     "silence_suzuka": {
       "decision": "retain",
@@ -25,8 +26,9 @@
       "portraitSha256": "618b65ed1b4a47caea1d7301972efbf624de98e82ab95858fa14389488ed7fe5",
       "baselineRuntimeSha256": "b36c0068484d9949aa644a02f7cc36f292c8cb060cbc84e02f09ba823fd955d7",
       "baselinePacking": "docs/art-source/motions/skill-revisions-2026-09-10/silence_suzuka/packing.json",
-      "skillSignature": "258f5e5902e8e8aff4e81b7be37da56203091f0b39de38cf04bdd3dc5facbf2d",
-      "name": "사일런스 스즈카"
+      "skillSignature": "c191ba1eb46d612709f7184cac45e8011e1d2f4989276c6591bbb9fe5b4521f7",
+      "name": "사일런스 스즈카",
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
     },
     "tokai_teio": {
       "decision": "retain",
@@ -36,8 +38,9 @@
       "portraitSha256": "eb51eeb2f99cd9c6186d6d86fb98f44e898c1af723b8c2382536eaab0c599e43",
       "baselineRuntimeSha256": "67592d5f980deda8468ac6a33087ad6378f7231d34e2618ac8a092301eab0000",
       "baselinePacking": "docs/art-source/motions/skill-revisions-2026-09-10/tokai_teio/packing.json",
-      "skillSignature": "0f5c2e571d02a92a5462afabbac790e3581a42dc80cc377286bde7b5b8f3674b",
-      "name": "토카이 테이오"
+      "skillSignature": "4a2b06f1140a510480ef4e0a38f090dbc59511d601b0a930cb93802686db0753",
+      "name": "토카이 테이오",
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
     },
     "maruzensky": {
       "decision": "revise",
@@ -47,10 +50,11 @@
       "portraitSha256": "333e2532cc428de14678f4a9c8cad3bc3508df65f4cbfc15c29f1ad2beb9a7dc",
       "baselineRuntimeSha256": "8fc149b1a411a66a5e09b8cf70456c00a8b352e3e1ddd9d62fc98a36dac8888d",
       "baselinePacking": "docs/art-source/motions/production-144/maruzensky/packing.json",
-      "skillSignature": "3c271e139fa737f704b4aec45f98b2e36527ea5cc1713fdb49f4d907c0562067",
+      "skillSignature": "1903827c02ce7b21a4d028bf5e433b8d2d3dd505fb359a8412b68f101f2430c1",
       "name": "마루젠스키",
       "revision": "docs/art-source/motions/identity-revisions-2026-09-12/maruzensky/review.json",
-      "runtimeSha256": "a36d9b7987af9e187eed9da42fe08e79c66c72efa512ba50071f4def2f6e8f0b"
+      "runtimeSha256": "a36d9b7987af9e187eed9da42fe08e79c66c72efa512ba50071f4def2f6e8f0b",
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
     },
     "fuji_kiseki": {
       "decision": "retain",
@@ -60,8 +64,9 @@
       "portraitSha256": "d9539677667a8f01b6ad4961cc18e040b044c596708d1ba8d3cd98d9d07d4971",
       "baselineRuntimeSha256": "6f688414e686d5374ac76b6e2b27468e04e320faab2803eaf4059a284af69441",
       "baselinePacking": "docs/art-source/motions/skill-revisions-2026-09-11/fuji_kiseki/packing.json",
-      "skillSignature": "1d80a9213b1edae0f14d4ae9de40ad22328ac909900f6e1097097e8ac6552f48",
-      "name": "후지 키세키"
+      "skillSignature": "e1cad23ade63c1ed8dedbaa5c12417d068055cf4fcb5c4b212d11830afb8c074",
+      "name": "후지 키세키",
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
     },
     "oguri_cap": {
       "decision": "retain",
@@ -71,8 +76,9 @@
       "portraitSha256": "43a8f2796c83d05ca4c4aec35a9dfa2fb75203a08c5801814cf48b6839e06efa",
       "baselineRuntimeSha256": "7827d810db6f55863290ce0a2703b194fa09ec24fae2fd1c32a17e9fb7b2dbbc",
       "baselinePacking": "docs/art-source/motions/skill-revisions-2026-09-10/oguri_cap/packing.json",
-      "skillSignature": "65eefb83f4a32b62a0ab4d17362ada84bbb1d62111fd001703cdea306420e8f9",
-      "name": "오구리 캡"
+      "skillSignature": "f6bcaeea8a9156ef5276d6af3e8833400229809b7d2123ad23460ae194885069",
+      "name": "오구리 캡",
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
     },
     "gold_ship": {
       "decision": "retain",
@@ -82,8 +88,9 @@
       "portraitSha256": "82eaa77b64a3ac079d926b26a04a203b71e3ae1fabb668547a09f63e5ebb567b",
       "baselineRuntimeSha256": "da0a61e83873c2aabbc982d72fe2ff3b81f9585a789e53b32f69562b447b1dc9",
       "baselinePacking": "docs/art-source/motions/skill-revisions-2026-09-11/gold_ship/packing.json",
-      "skillSignature": "4564de25f07442456ea4abfca60d105aa4bf6a310720c7ba2a3b169b60423be6",
-      "name": "골드 쉽"
+      "skillSignature": "28605f6dddcc89ad958fe311ab4290b31995312db143814ab9486f2737eb8052",
+      "name": "골드 쉽",
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
     },
     "vodka": {
       "decision": "retain",
@@ -93,8 +100,9 @@
       "portraitSha256": "bc869da28c9e4ca374f973700b77f79a2205c6918880c05ee7ee469359aa7815",
       "baselineRuntimeSha256": "cf409ed4cbc5ef7e212fa13f21455cb5bb05a5add7c3ce3cf5385940ae1bcc1f",
       "baselinePacking": "docs/art-source/motions/skill-revisions-2026-09-11/vodka/packing.json",
-      "skillSignature": "cf13baf5401d112c2ef72db9f0a070a6c5a029f7511c036ca4163a7ca08146b2",
-      "name": "보드카"
+      "skillSignature": "858d7b1b16b25e58b343f37ed021462ccfb48ba33e05ce4c43e8f18a9f5d3833",
+      "name": "보드카",
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
     },
     "daiwa_scarlet": {
       "decision": "retain",
@@ -104,8 +112,9 @@
       "portraitSha256": "bcc282e6d2299922a5623672437a1f1f1b8450daadcd64d422e6bb5860da10c7",
       "baselineRuntimeSha256": "2b2c0095304f848ac3b0f23f6db702a109701741bcd475923d89d08d7fc1e790",
       "baselinePacking": "docs/art-source/motions/skill-revisions-2026-09-11/daiwa_scarlet/packing.json",
-      "skillSignature": "5a96af15b15fba6c5f62b81a60a7e3680c561664f139ec0a7885dfb19f3ef048",
-      "name": "다이와 스칼렛"
+      "skillSignature": "e886716346cd00fd465e4d65e08e0d9b0ce3714f5ea74d536b64aeb66e0f87c1",
+      "name": "다이와 스칼렛",
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
     },
     "taiki_shuttle": {
       "decision": "retain",
@@ -115,8 +124,9 @@
       "portraitSha256": "e388cc215ded5b2d6c6bd456eb38eb944ff6963d8238836e7abee78ffed2ba63",
       "baselineRuntimeSha256": "b62d6da4bddc8e74462f06a04a7c2578bf8e5df27913fa1fa61c3423368c2fc1",
       "baselinePacking": "docs/art-source/motions/production-144/taiki_shuttle/packing.json",
-      "skillSignature": "181c60a55ecb4beb0954c41699a0718fc86eaa90c79cced50001a8807fca3d98",
-      "name": "타이키 셔틀"
+      "skillSignature": "49a3a2e6fb9bedfe9a5ddbbc5c1bdc5f6735036be5e0a1e292555330ee980b73",
+      "name": "타이키 셔틀",
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
     },
     "grass_wonder": {
       "decision": "retain",
@@ -126,8 +136,9 @@
       "portraitSha256": "6dfe84965d380726b4286c88852a7e675c8e4af64541a6f1e7522979e4a09597",
       "baselineRuntimeSha256": "858e7b0d0fb4557dadf063d2309182799ea2493cba9dd2545225f1f474303c19",
       "baselinePacking": "docs/art-source/motions/production-144/grass_wonder/packing.json",
-      "skillSignature": "77bbaca674d3e98889ad556214e9ba3db2a72efce1224969315ceb6ab783a0f2",
-      "name": "그래스 원더"
+      "skillSignature": "af2accb4f5ed7ca493201e46d5182068b22d705c1ebadf2f812c466773c3d6db",
+      "name": "그래스 원더",
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
     },
     "hishi_amazon": {
       "decision": "retain",
@@ -137,8 +148,9 @@
       "portraitSha256": "f7a7909d32733da01789bf97ea7d135f4c17959c8359c5b39f581df4a6b4ccef",
       "baselineRuntimeSha256": "0c5ac3767cb68ddaeaabcb898160f4ebbb3b8262e750d7124e0da5b9399488be",
       "baselinePacking": "docs/art-source/motions/production-144/hishi_amazon/packing.json",
-      "skillSignature": "e404f3f22e2d1b797eb92cb9e72992fd83f307b0374973a5bdf16fbc53713194",
-      "name": "히시 아마존"
+      "skillSignature": "14e1833362f33a51498138af277dd5faf896db4d96b4be665af469a8bf1abb5f",
+      "name": "히시 아마존",
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
     },
     "mejiro_mcqueen": {
       "decision": "retain",
@@ -148,8 +160,9 @@
       "portraitSha256": "45fe7d21378d27b3d40c6213ac0a2284c8988aca176c358867d86323cbd80c9d",
       "baselineRuntimeSha256": "ccd08a0f83eb62af28173be0e100bf2804f882794de14122681a6eaaf2ff5c1b",
       "baselinePacking": "docs/art-source/motions/production-144/mejiro_mcqueen/packing.json",
-      "skillSignature": "894a769fe66f7a9b6919cb083edf641f1030e0f67e064ef7a595d813c2bdbc12",
-      "name": "메지로 맥퀸"
+      "skillSignature": "29c54eddad83a5ba9d486d1c479ac01421a171ee91ca28d4d0f6f714c90670f8",
+      "name": "메지로 맥퀸",
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
     },
     "el_condor_pasa": {
       "decision": "revise",
@@ -159,10 +172,11 @@
       "portraitSha256": "57aafeaead9938c27aa2dda08a152e9cfe5a7edf1cbc1c0ad80ba18ffcd34b07",
       "baselineRuntimeSha256": "0b2cfa8c217deae2079b8ea3831aadfc5d89dd08ebd7d9f848d6d8733daa80d0",
       "baselinePacking": "docs/art-source/motions/production-144/el_condor_pasa/packing.json",
-      "skillSignature": "b52f9d20f88aeb0ddaa42f9dc977424d4cd1520c91f5be59f5604e5e2d5027a1",
+      "skillSignature": "d07fa79ed6961fa205adbc262cd097a773aaee7d7615f5f31f1316256beb7126",
       "name": "엘 콘도르 파사",
       "revision": "docs/art-source/motions/identity-revisions-2026-09-12/el_condor_pasa/review.json",
-      "runtimeSha256": "82c61c47183b37710bd74ea0d1a2ce568aab587ea2406fa415e7145de2f56e64"
+      "runtimeSha256": "82c61c47183b37710bd74ea0d1a2ce568aab587ea2406fa415e7145de2f56e64",
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
     },
     "tm_opera_o": {
       "decision": "retain",
@@ -172,8 +186,9 @@
       "portraitSha256": "f91a0d4bbb4a42d6430c975f74d0b808fbf0cf63ce218ce3c044ae8cea3f1cbe",
       "baselineRuntimeSha256": "6a7b7f5dcbe891f26b2bea2717100ca0ab419256402980f61a1b6c515c55f41a",
       "baselinePacking": "docs/art-source/motions/production-144/tm_opera_o/packing.json",
-      "skillSignature": "de1e4b9674680e33a4f1cddffb026460cfa292d37e07be01960815bed054cfc0",
-      "name": "티엠 오페라 오"
+      "skillSignature": "6a058a7c1d3a4b1a46bb313191dd1699a9386691158a0589b36d20aaf7be369b",
+      "name": "티엠 오페라 오",
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
     },
     "narita_brian": {
       "decision": "retain",
@@ -183,8 +198,9 @@
       "portraitSha256": "b95ce3e4050b62b9a370e7b0e54ce05d5ac54f1e9d1168a68ebb82800dde7092",
       "baselineRuntimeSha256": "2e1a45e1eb45c5f3290c72ce2cf147530a95a70ae6abe815b71a25acd84c24c2",
       "baselinePacking": "docs/art-source/motions/production-144/narita_brian/packing.json",
-      "skillSignature": "195567aaa9562a106524a2dd202038d3fdd7c92de8ff87e579a146410ab943c9",
-      "name": "나리타 브라이언"
+      "skillSignature": "526ad2b2ca8d83ff88d51f7e1400087c8bc13b1d9bcb62cadba0bb91c151bb0c",
+      "name": "나리타 브라이언",
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
     },
     "symboli_rudolf": {
       "decision": "revise",
@@ -194,10 +210,11 @@
       "portraitSha256": "971dee45efe55a6c2abefde82e3b9e345e0cb41329df93e554895f303ae6d8a3",
       "baselineRuntimeSha256": "4bf8b078d777fe61bd935cf356719c7ea5cc26fec3dd7ca60ce7a62d51ae6d38",
       "baselinePacking": "docs/art-source/motions/production-144/symboli_rudolf/packing.json",
-      "skillSignature": "95108382f16d512aee2e189bf14601c4356d491e3eee538b38e6841e30628904",
+      "skillSignature": "ccd301ae7e36fa92ca4acb3b94e965cd1449c96fadbe37dfa1467b7d7763c055",
       "name": "심볼리 루돌프",
       "revision": "docs/art-source/motions/identity-revisions-2026-09-12/symboli_rudolf/review.json",
-      "runtimeSha256": "bffcdd5cb256881b0596545b871f80264e39bb9f07825a69708a6e8b07361e30"
+      "runtimeSha256": "bffcdd5cb256881b0596545b871f80264e39bb9f07825a69708a6e8b07361e30",
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
     },
     "air_groove": {
       "decision": "retain",
@@ -207,8 +224,9 @@
       "portraitSha256": "7858041ea65dee4727a9929546dad7f2a940789445c45b3d67dcb47a57e47b9e",
       "baselineRuntimeSha256": "8e4379d85625895b3f8485f5fcff050847457e27ffbe2b3b28cc1368e165a2f0",
       "baselinePacking": "docs/art-source/motions/skill-revisions-2026-09-11/air_groove/packing.json",
-      "skillSignature": "90064e70c2e02774347dc939b66fc56ce872577b3051fd472d22aed356bd661e",
-      "name": "에어 그루브"
+      "skillSignature": "2179dcf1a946a9ad40e8923cbb403294694b50316114c820563b1598804ffbaa",
+      "name": "에어 그루브",
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
     },
     "agnes_digital": {
       "decision": "revise",
@@ -231,8 +249,9 @@
       "portraitSha256": "5ce1e71bd03bff15d034795ec5e7b62ad0149eac50c37d6569b9655dc768e14d",
       "baselineRuntimeSha256": "c140788434f98d2abe24be856322238cac9f44bdcb85a83e812bd450e8808023",
       "baselinePacking": "docs/art-source/motions/production-144/seiun_sky/packing.json",
-      "skillSignature": "fb8b902370f0a9e53302f9f32fa1537481942ff01d0f9a9bc578975dc3107f07",
-      "name": "세이운 스카이"
+      "skillSignature": "2b0ed7ed82d821feb44149b59bc3d8be36f73a3ef76e9813e81711da920e5e8e",
+      "name": "세이운 스카이",
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
     },
     "tamamo_cross": {
       "decision": "retain",
@@ -242,8 +261,9 @@
       "portraitSha256": "5414baae426ddd89a4cf428826a69dcfa8ff91ebef3e597710f146d7a1b38bcc",
       "baselineRuntimeSha256": "b5b42abda38163c96426afb73e7d299525376b79c04e4d0812c89f8ab8b12271",
       "baselinePacking": "docs/art-source/motions/skill-revisions-2026-09-11/tamamo_cross/packing.json",
-      "skillSignature": "77bc42e85476b96200a84509818d115d0421b94ede9511e562b46501f21b7a2b",
-      "name": "타마모 크로스"
+      "skillSignature": "179373b8259d12372221cbdf38d83a8e84e581871e38ef5a7148b388741b556f",
+      "name": "타마모 크로스",
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
     },
     "fine_motion": {
       "decision": "retain",
@@ -253,8 +273,9 @@
       "portraitSha256": "2e77a8240855dcaf845e38c11e1a7d820f3fc743e2b0ac052cdc92a651cfc29f",
       "baselineRuntimeSha256": "d6fc22b3ec9d157b5a14e8bf6131859f7e4e06e7f73639866b23a696fa1a3b16",
       "baselinePacking": "docs/art-source/motions/production-144/fine_motion/packing.json",
-      "skillSignature": "9cbbd6194035d283f310bd5622dcc54cf129b75ddedba23b4f1706f10e32f25f",
-      "name": "파인 모션"
+      "skillSignature": "b342d046ab2362821e7daa8793169c56a8168dd72174abdb0081996aa0654bcc",
+      "name": "파인 모션",
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
     },
     "biwa_hayahide": {
       "decision": "retain",
@@ -264,8 +285,9 @@
       "portraitSha256": "f80beb38a42679fa598044f533f710eb7852529c32cfaa933674af4e12241bb4",
       "baselineRuntimeSha256": "a29e388d3c00041287c5f41f8162c628d7fefa0abf808a8d8b2fd98066a2b9f3",
       "baselinePacking": "docs/art-source/motions/skill-revisions-2026-09-11/biwa_hayahide/packing.json",
-      "skillSignature": "de88ee0dbaec8c6f55f662a8f9cc92a8ccd9278f96b5d7b0982aaec88dabdd39",
-      "name": "비와 하야히데"
+      "skillSignature": "859aff35577ad4b8f7f0476411d7677869f97278aecb66789b12d90034482b63",
+      "name": "비와 하야히데",
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
     },
     "mayano_top_gun": {
       "decision": "retain",
@@ -275,8 +297,9 @@
       "portraitSha256": "11339902fe0be56205e8a845598e12e9dbac418aff15ff8596a754b5fd96221b",
       "baselineRuntimeSha256": "a288e1850528788b10dd5367281299bf9ee0dbcda8db10b27f487efad222078d",
       "baselinePacking": "docs/art-source/motions/skill-revisions-2026-09-11/mayano_top_gun/packing.json",
-      "skillSignature": "91bd34d49881eaba8cd795b115138de88c594dfd670115fa2b7edc6c75dbf9b6",
-      "name": "마야노 탑건"
+      "skillSignature": "ab01f3d4846a6a9c6adfae3a029588366064cb18a16e7edaa31aa5cbfe01bc30",
+      "name": "마야노 탑건",
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
     },
     "mihono_bourbon": {
       "decision": "retain",
@@ -286,8 +309,9 @@
       "portraitSha256": "e669adec768c1f72a3606b7a229fe8fdd07b9aff7260aa64b2098518da796368",
       "baselineRuntimeSha256": "a5aadcb13d90ebfbed170e53c67d5f04faae30a4912cf2a9f3edae616ab671ef",
       "baselinePacking": "docs/art-source/motions/skill-revisions-2026-09-11/mihono_bourbon/packing.json",
-      "skillSignature": "cc4a45f707d4a11aec3ab6e9ddf2cfb1d4634c0bc72e2c814ee1d7ec4e700a39",
-      "name": "미호노 부르봉"
+      "skillSignature": "5dc1457dc526d93fa1c92e54b67b47c816f19df2d67391970f4f164efa09ce69",
+      "name": "미호노 부르봉",
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
     },
     "mejiro_ryan": {
       "decision": "retain",
@@ -297,8 +321,9 @@
       "portraitSha256": "37eb417a90b956ee58b355869b2bb1b0002ccc3b87c9242cca9c0e72c9e52438",
       "baselineRuntimeSha256": "e9633f1352264894398572ca8dc2fa8e05e9e46fde7a2916e6eb1409ecab40b2",
       "baselinePacking": "docs/art-source/motions/skill-revisions-2026-09-11/mejiro_ryan/packing.json",
-      "skillSignature": "a8be7e54c06f8512ce7d66332d7f977417471f9aa620d452dcd81425d486682c",
-      "name": "메지로 라이언"
+      "skillSignature": "92618bcf20c2e6629d79b56cf5a88ff786a0c2cb91bc4a52fab33e8a852d20d9",
+      "name": "메지로 라이언",
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
     },
     "hishi_akebono": {
       "decision": "revise",
@@ -332,8 +357,9 @@
       "portraitSha256": "b92f0ffbbaa5582151dcc71d1f4f37df75937296b933ec745150a0ae5d770792",
       "baselineRuntimeSha256": "4ff7da943a346758998ef41135251d3a9778219b5c7c625ff6eb6a1efe271bd8",
       "baselinePacking": "docs/art-source/motions/skill-revisions-2026-09-10/rice_shower/packing.json",
-      "skillSignature": "35630d85727b1a1d199cbb16e89debcc4231aaa86c4a665dc874b0661398e6ff",
-      "name": "라이스 샤워"
+      "skillSignature": "ae6af6fcb572b0daaca6a3b49e133ccbc9bca8737ef1dc364688550409e27ee3",
+      "name": "라이스 샤워",
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
     },
     "ines_fujin": {
       "decision": "revise",
@@ -343,10 +369,11 @@
       "portraitSha256": "091319c3fe50de924aec02585e9f3ae0e59d161d6721713ae417fa480a08ed5f",
       "baselineRuntimeSha256": "0a706ddeb4f88561fd583fec479ea4be9764df2b2a1bcea615f18cde178715f0",
       "baselinePacking": "docs/art-source/motions/skill-revisions-2026-09-11/ines_fujin/packing.json",
-      "skillSignature": "781d44b5ba1c8d84524034f720e23156ec02e276f5a88172a8cf40456afc53b6",
+      "skillSignature": "b5e4035317a8ad27fca4163a87543f4e40bca786c805209dab4e3d644b53286b",
       "name": "아이네스 후진",
       "revision": "docs/art-source/motions/identity-revisions-2026-09-12/ines_fujin/review.json",
-      "runtimeSha256": "65f8b3a1c1acc58dddfd5262851da098f8bbc5268a07e42a6552d8599c10a919"
+      "runtimeSha256": "65f8b3a1c1acc58dddfd5262851da098f8bbc5268a07e42a6552d8599c10a919",
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
     },
     "agnes_tachyon": {
       "decision": "retain",
@@ -356,8 +383,9 @@
       "portraitSha256": "f240fb3bd647f0d61ec5080910dbec8fb9f4019def1720c7dc68592e0fd7cefb",
       "baselineRuntimeSha256": "8a5e04e050544350fb63e7ff388c5438d5776786d75e65d94ce4aec16aad7202",
       "baselinePacking": "docs/art-source/motions/skill-revisions-2026-09-11/agnes_tachyon/packing.json",
-      "skillSignature": "c6bdf18b2467a9c90d37fe0304488c79872cf060e65ec7395ca4a24b43a803c1",
-      "name": "아그네스 타키온"
+      "skillSignature": "3b857d50eb10c1ab2456b994e4da174eff38c1b171fd25f746ba7fa7771bbf29",
+      "name": "아그네스 타키온",
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
     },
     "admire_vega": {
       "decision": "revise",
@@ -415,8 +443,9 @@
       "portraitSha256": "13c5197103e582709f260285d99347c81a09ee718bb4f8672020af6d994a7e72",
       "baselineRuntimeSha256": "24cd39a240cf347230be503a164084422a59676c198e8de86e65cb428719be4b",
       "baselinePacking": "docs/art-source/motions/skill-revisions-2026-09-11/eishin_flash/packing.json",
-      "skillSignature": "d16940cc4610ae78e3fa4e375280fa9f8bdf487e7fbf1d84f932c0d8d82cdc7b",
-      "name": "에이신 플래시"
+      "skillSignature": "0b7af4a89c1852b0ec0b07d0e5679fed3b2a9ee768938bf9cc140b832ef757a0",
+      "name": "에이신 플래시",
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
     },
     "curren_chan": {
       "decision": "revise",
@@ -426,10 +455,11 @@
       "portraitSha256": "966b2f641e7e9af68adadb03f99b98a550bd5cb8b2b0fcbd7216dbfa3bc55aa8",
       "baselineRuntimeSha256": "934e017c0117cc69acd916ca452d3ff2b62682c34696ca62ae68347847d1cbe6",
       "baselinePacking": "docs/art-source/motions/production-144/curren_chan/packing.json",
-      "skillSignature": "d7be1d28bdcbbc3b056d2d64786fad8f1e590581f90c71ae9b18a1eecf44d4b7",
+      "skillSignature": "cceb7cd2714fce49ff545dcb252d722cd88d8d184b1249714d02d956af8c5ee8",
       "name": "카렌짱",
       "revision": "docs/art-source/motions/identity-revisions-2026-09-12/curren_chan/review.json",
-      "runtimeSha256": "b723a20b754437d6c35ad264775437e92ffa19dc98a7138bf09e91ddc1fcbc28"
+      "runtimeSha256": "b723a20b754437d6c35ad264775437e92ffa19dc98a7138bf09e91ddc1fcbc28",
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
     },
     "kawakami_princess": {
       "decision": "revise",
@@ -465,8 +495,9 @@
       "portraitSha256": "23bb2c9ff3c3c614490d0211dcf615b9d3ddfbd447f46649ff629764dad19937",
       "baselineRuntimeSha256": "4e850134449b96d34d8723f64600824857cf6a875b058bd8c3a687235ade0bf3",
       "baselinePacking": "docs/art-source/motions/production-144/sakura_bakushin_o/packing.json",
-      "skillSignature": "8534893e105539479619d309ab356f9d16b979cca4a7db93144a8149fb624538",
-      "name": "사쿠라 바쿠신 오"
+      "skillSignature": "e6dbbe03fc42ce2470f3f8a99dd204db44926a4684e9ffe1f5981de9cd2613ec",
+      "name": "사쿠라 바쿠신 오",
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
     },
     "seeking_the_pearl": {
       "decision": "retain",
@@ -476,8 +507,9 @@
       "portraitSha256": "703b67467d79cb4eeae8b478624bac45e9cf77d7b8005f51c71a190b56a6bca6",
       "baselineRuntimeSha256": "f919f5d4ac539b43701d5ba60394d5cd634f6960ffa21fcae2ebf001b5137574",
       "baselinePacking": "docs/art-source/motions/skill-revisions-2026-09-11/seeking_the_pearl/packing.json",
-      "skillSignature": "5c048797cb82543d1591fa22cf9bcc164a57fee87e5d5330f4905e8fc2f00552",
-      "name": "시킹 더 펄"
+      "skillSignature": "62004a924865c4e5cd0575cbbaca0f81fc54de857f9e5782107d9a14401e2848",
+      "name": "시킹 더 펄",
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
     },
     "shinko_windy": {
       "decision": "retain",
@@ -498,8 +530,9 @@
       "portraitSha256": "4c697f32f5af39666551a6195ceee9695d2fd387443891abd0df1e95523a6112",
       "baselineRuntimeSha256": "cc493f0d4952a3d4d2f71cfecc7443ad95ec272cdfd29d049c71b28e5b39684a",
       "baselinePacking": "docs/art-source/motions/skill-revisions-2026-09-11/sweep_tosho/packing.json",
-      "skillSignature": "e11cfe62a02f17de2d9b3bdf08879095a5a053fdf07de240ca3eb1c75467a66a",
-      "name": "스윕 토쇼"
+      "skillSignature": "d815a3c24e9155bc8593a8dcee3edcebe2affd4b5826a11f53a5f29a9411b443",
+      "name": "스윕 토쇼",
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
     },
     "super_creek": {
       "decision": "retain",
@@ -509,8 +542,9 @@
       "portraitSha256": "01ef55e308cef50f15f9852e23f9e3174e35e8edf2de6b9c653214e01fe16423",
       "baselineRuntimeSha256": "cac503dbdd5252df30c29d94e4fcc60a5cbdea08617cc5b351ce83a9021b9de3",
       "baselinePacking": "docs/art-source/motions/production-144/super_creek/packing.json",
-      "skillSignature": "18553fbb2a4372ce58e6b601033ddd4453ec32a0d0c69149aa3c6ce4f47fc32a",
-      "name": "슈퍼 크릭"
+      "skillSignature": "49228d4f4355117af0604e5716efeecbd654dff9974fd2c3170d99449315a594",
+      "name": "슈퍼 크릭",
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
     },
     "smart_falcon": {
       "decision": "revise",
@@ -520,10 +554,11 @@
       "portraitSha256": "4925e98ef79d80ae1c393510a6a9536b5fa4fdaa5324dfec739b671a26aae1da",
       "baselineRuntimeSha256": "e37bba17e92c860965683dd9cf1dcbd7775d51535e1d5824ae00d46712572fcc",
       "baselinePacking": "docs/art-source/motions/skill-revisions-2026-09-11/smart_falcon/packing.json",
-      "skillSignature": "9903d1a87d2d8cd7f1f0f1c73d9b012c309065dcb5cbf95eda438c47624db980",
+      "skillSignature": "c29c995c610c609d4747aceaf3784ffbb4dc694c66be62bbc0f299ae48b5748e",
       "name": "스마트 팔콘",
       "revision": "docs/art-source/motions/identity-revisions-2026-09-12/smart_falcon/review.json",
-      "runtimeSha256": "54a5b6b86bb1fd1d204c6de710a378cc5602c635f2882ccfe0ee8fc488204ed2"
+      "runtimeSha256": "54a5b6b86bb1fd1d204c6de710a378cc5602c635f2882ccfe0ee8fc488204ed2",
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
     },
     "zenno_rob_roy": {
       "decision": "revise",
@@ -533,10 +568,11 @@
       "portraitSha256": "1d982fa36deadeb4d71f939dc3704e201970f753971b1504fc23ea2a4d609e2a",
       "baselineRuntimeSha256": "9178e44ce7106e0f260084a1715b036470ac87dce88465872f10a8a881a01392",
       "baselinePacking": "docs/art-source/motions/production-144/zenno_rob_roy/packing.json",
-      "skillSignature": "a5ec4fd0851b0f0f4fbc0cee114d157864bcff63ce8fb8c92ba726bd0c913969",
+      "skillSignature": "fa7f36736f4d69e1eda7d60296f53eaed233bb20ddcde8fbbfb62f69bb04a518",
       "name": "젠노 롭 로이",
       "revision": "docs/art-source/motions/identity-revisions-2026-09-12/zenno_rob_roy/review.json",
-      "runtimeSha256": "76c45f5c135f08291827d2ceca68b5ff14f35a9178e5e0b54cfc0e2285170a8b"
+      "runtimeSha256": "76c45f5c135f08291827d2ceca68b5ff14f35a9178e5e0b54cfc0e2285170a8b",
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
     },
     "tosen_jordan": {
       "decision": "retain",
@@ -581,8 +617,9 @@
       "portraitSha256": "d156edee103b10d6ebf2078da680f0926fe361e85dc48a25c3e6703d18e984ea",
       "baselineRuntimeSha256": "124ba850690702b15a09f56b975e30f971329f9ce8fb370b82136f8c858e2159",
       "baselinePacking": "docs/art-source/motions/production-144/nishino_flower/packing.json",
-      "skillSignature": "417cf339f01df38799ed22055357ed32c1d88d38e85b1672a89cfad993505cd3",
-      "name": "니시노 플라워"
+      "skillSignature": "47d00b66e9650d6cd8669044f7bb38cf12ff9ed42561402524ccd0122a11b32d",
+      "name": "니시노 플라워",
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
     },
     "haru_urara": {
       "decision": "retain",
@@ -603,11 +640,12 @@
       "portraitSha256": "12b60fe7688427bc175ac53a7dfd367e97a1906daf7fa42afd28c54530dbcd36",
       "baselineRuntimeSha256": "ffd3dfd188a82b0702d2ede9be56d6654247289bcafe9620614ccf553adb28f8",
       "baselinePacking": "docs/art-source/motions/production-144/bamboo_memory/packing.json",
-      "skillSignature": "6ef8a700532e3eff17ca4d7d468541ac754352c5f99e855589212019cf697c7f",
+      "skillSignature": "136600900b0ff02edb527de70b34921e9243cef8db7b6425b7008fbe945a21c0",
       "name": "뱀부 메모리",
       "revision": "docs/art-source/motions/identity-revisions-2026-09-12/bamboo_memory/review.json",
       "runtimeSha256": "2630fe899590288020e4ae9605da4a93ed8209acac9cd29d4fa5f78e77f4cbcf",
-      "detailRevision": "Short spiky chestnut hair, blue eyes, thin green headband and green bow; large white central forelock restored."
+      "detailRevision": "Short spiky chestnut hair, blue eyes, thin green headband and green bow; large white central forelock restored.",
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
     },
     "biko_pegasus": {
       "decision": "revise",
@@ -630,8 +668,9 @@
       "portraitSha256": "a21cf77822e272ccecfe1f8e62ca0163c4329ec8860704738d4e97751d9fb5d4",
       "baselineRuntimeSha256": "1b08f915f1e61c2d317627ad85bae5eaefbdf03d22472d11870693849725ebdf",
       "baselinePacking": "docs/art-source/motions/skill-revisions-2026-09-11/marvelous_sunday/packing.json",
-      "skillSignature": "0f971de1f5a5a8afb1b87878a4ddf0cea12b95e5d20d02316ad31fb312d3a380",
-      "name": "마블러스 선데이"
+      "skillSignature": "a34c434c3316237774e9cc9cb1d2fbc98ee17721f1b3f679b77d04cd8dd322ea",
+      "name": "마블러스 선데이",
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
     },
     "matikanefukukitaru": {
       "decision": "retain",
@@ -663,10 +702,11 @@
       "portraitSha256": "1a6aa21d32b43d4a9886b3e43834355281838f9fccb09bd92060f8891eda40dd",
       "baselineRuntimeSha256": "191733e4404321ab8d1e27020b3aa14548b4fcdfbc37f979ff3bd6bdc985d6b1",
       "baselinePacking": "docs/art-source/motions/production-144/meisho_doto/packing.json",
-      "skillSignature": "d189d5a064f68ca2b64b19768e2e2085bde2f5761e8067c1efde4f70833b98d9",
+      "skillSignature": "29b3b19c9d657014ccce8743b075aea330d5085f53c40f7099c71eb19e62c960",
       "name": "메이쇼 도토",
       "revision": "docs/art-source/motions/identity-revisions-2026-09-12/meisho_doto/review.json",
-      "runtimeSha256": "c29e15f2cf397b44d488a4d092e71eeb843527700ff565db21085094cbea4ff0"
+      "runtimeSha256": "c29e15f2cf397b44d488a4d092e71eeb843527700ff565db21085094cbea4ff0",
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
     },
     "mejiro_dober": {
       "decision": "retain",
@@ -676,8 +716,9 @@
       "portraitSha256": "80723ea8c835c151d29a27027cf117b0bdfba0c32f762e3e7bc1e9b49a9e8d4a",
       "baselineRuntimeSha256": "b8aba003ad507fbfd323b75ec46c000870e9e053bdb922f91f96ac1b9054bd29",
       "baselinePacking": "docs/art-source/motions/skill-revisions-2026-09-11/mejiro_dober/packing.json",
-      "skillSignature": "31261a694dd6fc493465b04830e69cb7082eb63d9109c9dcfc9082e7f2bd7b4b",
-      "name": "메지로 도베르"
+      "skillSignature": "eaa6415a831a3ad350dbe93f0c024ee8b72e69e1b8024c55039a46283d7469fb",
+      "name": "메지로 도베르",
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
     },
     "nice_nature": {
       "decision": "revise",
@@ -687,10 +728,11 @@
       "portraitSha256": "b6766002b3d5b0ee35f4260585e37e69d86d4813f926ff3170caf1f66cc50f57",
       "baselineRuntimeSha256": "8d3c7ee9a831996d0aa61fccdc517993f3871149a18c8383784b5d0de128e65c",
       "baselinePacking": "docs/art-source/motions/production-144/nice_nature/packing.json",
-      "skillSignature": "f53f11dacdbb00d5f8ad0d41fafd2b3881178dc1871d167c38002fcc9bf9f604",
+      "skillSignature": "4661cb8e6a78fce5d9000dcade9a40ecba9b3bdbfc5e5e7b285c0322bea3badc",
       "name": "나이스 네이처",
       "revision": "docs/art-source/motions/identity-revisions-2026-09-12/nice_nature/review.json",
-      "runtimeSha256": "cb5da19cbda11869a9e022e9569516d0902a6d8aadb4d80264166b5eb3f55ad9"
+      "runtimeSha256": "cb5da19cbda11869a9e022e9569516d0902a6d8aadb4d80264166b5eb3f55ad9",
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
     },
     "king_halo": {
       "decision": "retain",
@@ -748,8 +790,9 @@
       "portraitSha256": "66f85096fdff9d5497dc398ade0570fceacf415782993466d272c3c73ff6e7cb",
       "baselineRuntimeSha256": "b84714694346490886bf882aeb01f8c06f01bfe948aee9dedbea550ad3052b38",
       "baselinePacking": "docs/art-source/motions/production-144/daitaku_helios/packing.json",
-      "skillSignature": "f09101157016ac73c89bd3c8aee2b803be39dae6082e612f69f47557120e6233",
-      "name": "다이타쿠 헬리오스"
+      "skillSignature": "4d1ef3adeedb98aedc4486507397a81b7b56fc2089895dbb6971cb9976214b02",
+      "name": "다이타쿠 헬리오스",
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
     },
     "twin_turbo": {
       "decision": "retain",
@@ -770,8 +813,9 @@
       "portraitSha256": "adce689959dd741fa9465b71bd11f1213ebdc44b86520f523a73d2e638681a54",
       "baselineRuntimeSha256": "90ec1902d60d8ca2946a2d64a152ed72f0ed4cac0f98af15bd586971955446fa",
       "baselinePacking": "docs/art-source/motions/production-144/satono_diamond/packing.json",
-      "skillSignature": "70eb93ca286e2aebda485b3bd3965ad6c1a2989403565a4bfdd33a8fb79fddb7",
-      "name": "사토노 다이아몬드"
+      "skillSignature": "94c96e5d1c2e22cb1e582050de772ed0be37bed558ad401d8f32acc23c4a3fcb",
+      "name": "사토노 다이아몬드",
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
     },
     "kitasan_black": {
       "decision": "retain",
@@ -781,8 +825,9 @@
       "portraitSha256": "b9d39bcfa9130c2613b2ba8c9f571a01ccbc12953ec188eb899adf68a77acd42",
       "baselineRuntimeSha256": "4ad3dd7401cf1b69d147f4fc060158d944277a98e87e9b1eb2d878c4dcd04879",
       "baselinePacking": "docs/art-source/motions/production-144/kitasan_black/packing.json",
-      "skillSignature": "648e886bb804f31a5a5107cc2fc6a1d288322f409b7ee84a1ec913bfd4b1a984",
-      "name": "키타산 블랙"
+      "skillSignature": "3597bd37e88acfa06c10af04eda84f98f3371fd88f94c649d474970b927051e8",
+      "name": "키타산 블랙",
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
     },
     "sakura_chiyono_o": {
       "decision": "revise",
@@ -792,10 +837,11 @@
       "portraitSha256": "1b5d48cec7d1a4737da989e238847abf1b7eeb8f7f92df54b0f09f68ad84f66f",
       "baselineRuntimeSha256": "4e5bbd7a66642f0262517cabe4415b8082f804bcc36f3c2f4ab86177e42c5d8a",
       "baselinePacking": "docs/art-source/motions/skill-revisions-2026-09-11/sakura_chiyono_o/packing.json",
-      "skillSignature": "d12f64b9ea59a38038a5450202ea41861d6231af089cb755717eae75de77d112",
+      "skillSignature": "9cdf224fcf2d86cefe0ca47535346b2fabe87158a62816e0e8bff5e5b794a0d0",
       "name": "사쿠라 치요노 오",
       "revision": "docs/art-source/motions/identity-revisions-2026-09-12/sakura_chiyono_o/review.json",
-      "runtimeSha256": "3ee93f461d91b0bef4be66063b916668224a25933e11e80383c8d34b5ffbe406"
+      "runtimeSha256": "3ee93f461d91b0bef4be66063b916668224a25933e11e80383c8d34b5ffbe406",
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
     },
     "sirius_symboli": {
       "decision": "retain",
@@ -827,10 +873,11 @@
       "portraitSha256": "0638d549a150faf46477ff2d6ea002e765cac209f39eb2dbcab06bba56f2cbfc",
       "baselineRuntimeSha256": "89a40b422075b6b7e3ebd7c24321e1ad33d0906f2df2300630651e2639993d01",
       "baselinePacking": "docs/art-source/motions/production-144/yaeno_muteki/packing.json",
-      "skillSignature": "d29be149d07775f69b010f4778e3f0efb67025187f1d99409c17934e2ecb9734",
+      "skillSignature": "cd14728283a96ea26526161831730c54bc91c632bc1a299fa4670201579f8194",
       "name": "야에노 무테키",
       "revision": "docs/art-source/motions/identity-revisions-2026-09-12/yaeno_muteki/review.json",
-      "runtimeSha256": "827da48e2a282406f2e569b430ec88beb873fbee5d66ab00599857386a5b891a"
+      "runtimeSha256": "827da48e2a282406f2e569b430ec88beb873fbee5d66ab00599857386a5b891a",
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
     },
     "tsurumaru_tsuyoshi": {
       "decision": "revise",
@@ -864,10 +911,11 @@
       "portraitSha256": "3e25b1485d03a7c9f991aef9ce88f86831889f8340226f98bbf3beea04a1b488",
       "baselineRuntimeSha256": "0431aef031821e5d920f942204cd511ce05dcbd237e79793e4ec24d9dbe9e94d",
       "baselinePacking": "docs/art-source/motions/skill-revisions-2026-09-11/daring_tact/packing.json",
-      "skillSignature": "a43bac208f8550310489f9c733d9ece34d9f2cb3065a6a1f718258f822eeaf97",
+      "skillSignature": "02d10d076d918a58b690961a1100cea42c747a86ac6fa05e92e000386a1c5143",
       "name": "데어링 택트",
       "revision": "docs/art-source/motions/identity-revisions-2026-09-12/daring_tact/review.json",
-      "runtimeSha256": "4ac5ee725835768739f0c496d1928f900f3aab051262a764830fab3a5415fdd5"
+      "runtimeSha256": "4ac5ee725835768739f0c496d1928f900f3aab051262a764830fab3a5415fdd5",
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
     },
     "sakura_laurel": {
       "decision": "revise",
@@ -877,10 +925,11 @@
       "portraitSha256": "537fbf6c17c456d622c8fac5acbe2ca79a1a22f52ac2c5e0a5412ca1b473bef8",
       "baselineRuntimeSha256": "19da18fa3a272262290e8e3bdff29ac46c58b9f7779c9f14ff67af7a2100c127",
       "baselinePacking": "docs/art-source/motions/production-144/sakura_laurel/packing.json",
-      "skillSignature": "40a0e817ea19fdba04c7dbe490d0fded6519f3ade4031687a07ea2f81106d138",
+      "skillSignature": "3a43903c78ad97955da7a267594b046228a7e18caf125ed3ba755a95ac743dd9",
       "name": "사쿠라 로렐",
       "revision": "docs/art-source/motions/identity-revisions-2026-09-12/sakura_laurel/review.json",
-      "runtimeSha256": "2c9793c30cdfffe7f12d525275b567b8da22c5d0b5d1d65b0234726bef457e7a"
+      "runtimeSha256": "2c9793c30cdfffe7f12d525275b567b8da22c5d0b5d1d65b0234726bef457e7a",
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
     },
     "narita_top_road": {
       "decision": "retain",
@@ -890,8 +939,9 @@
       "portraitSha256": "1b3ae25a896ad9d4120dc2e72a6afb970c2b9e7c846d82bc87059bdc74660b59",
       "baselineRuntimeSha256": "eb5e9a5e0fbb82f10f281c598dc3aaf9a9be8a86f7c96574e94141b94a6cbdca",
       "baselinePacking": "docs/art-source/motions/production-144/narita_top_road/packing.json",
-      "skillSignature": "1a47c0a297f30d082eae170bc70818157751a663059818fbd02df0792ba21c3b",
-      "name": "나리타 탑 로드"
+      "skillSignature": "c148c84e3de91c3ee221b393fe330daf18fabfbb7669480774e363378fa6d7f1",
+      "name": "나리타 탑 로드",
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
     },
     "yamanin_zephyr": {
       "decision": "revise",
@@ -901,11 +951,12 @@
       "portraitSha256": "5f979f95e27493b178aa103bf3fe88c13a355ef0c325652816e680cfd48298c2",
       "baselineRuntimeSha256": "b9d6d1d0684e02bd22905c57813cd857f9c3a65dd4d56df0069a918a19f1a617",
       "baselinePacking": "docs/art-source/motions/production-144/yamanin_zephyr/packing.json",
-      "skillSignature": "4e773e4ef1dc26483483006ae197a6b43b809a605d8e22e032ecc72e761fb789",
+      "skillSignature": "acadf897444eaa50f7eba6e9b247237fe335108b9ed7421894f8829b76d9d835",
       "name": "야마닌 제퍼",
       "revision": "docs/art-source/motions/identity-revisions-2026-09-12/yamanin_zephyr/review.json",
       "runtimeSha256": "015cf9ccbd0fbb6deb91ff4f039a9fd4be13b5b70ff2d167c6ba833f13af888f",
-      "detailRevision": "Mauve-brown long wavy hair with pale central forelock and warm brown irises."
+      "detailRevision": "Mauve-brown long wavy hair with pale central forelock and warm brown irises.",
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
     },
     "furioso": {
       "decision": "revise",
@@ -928,10 +979,11 @@
       "portraitSha256": "99ec557feb60065ae4af029a533a1ac1f2a0e1bf74720d8600aa51808eb0f349",
       "baselineRuntimeSha256": "f50b83c817a73d88130838c35cecdd9cacf70f9e69b68dd8cfa8e48b23de7595",
       "baselinePacking": "docs/art-source/motions/skill-revisions-2026-09-11/transcend/packing.json",
-      "skillSignature": "ce94f27d06507a5020d43b9af43b37f5d9d5e978903237d5250bb8ced6c42c72",
+      "skillSignature": "8620375c028f2c655037403765d976c44ee6b4deb3e98d18d12eba4c3a8120af",
       "name": "트랜센드",
       "revision": "docs/art-source/motions/identity-revisions-2026-09-12/transcend/review.json",
-      "runtimeSha256": "3dc56ee14a61b5101aab14f74345f1c0422472496bdd84dc8ed52d730079f796"
+      "runtimeSha256": "3dc56ee14a61b5101aab14f74345f1c0422472496bdd84dc8ed52d730079f796",
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
     },
     "north_flight": {
       "decision": "revise",
@@ -941,10 +993,11 @@
       "portraitSha256": "83defdc74910bec884d2a0491b3b0e9352364e87f22a4114a2373d3274e3ce0e",
       "baselineRuntimeSha256": "b5c33e87f962327f0403ee664ba67ea0038dc047b94389cac5a0144369342b00",
       "baselinePacking": "docs/art-source/motions/production-144/north_flight/packing.json",
-      "skillSignature": "a68bb8fa484c2f6481620680d50a9831f834f2c7256e7d2260b5ac460f23730c",
+      "skillSignature": "95434cfe10af4294bbf3dfe7a85f1e3cb9cd06eac1c7dc08acf137db92181fd2",
       "name": "노스 플라이트",
       "revision": "docs/art-source/motions/identity-revisions-2026-09-12/north_flight/review.json",
-      "runtimeSha256": "0e878963bf93b19221fa5a0be963aec79d10555b5c75fcfe89f05a178af6050f"
+      "runtimeSha256": "0e878963bf93b19221fa5a0be963aec79d10555b5c75fcfe89f05a178af6050f",
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
     },
     "symboli_kris_s": {
       "decision": "revise",
@@ -954,10 +1007,11 @@
       "portraitSha256": "f8b939dc38018ec43679c0c6a45f6afa3f9f4fcd210fbcadd7973f473f887427",
       "baselineRuntimeSha256": "9c94fa49b69c5a498c19dad3554c55394c6bc88c3be00443139f67ed305bc8cd",
       "baselinePacking": "docs/art-source/motions/production-144/symboli_kris_s/packing.json",
-      "skillSignature": "7a17a481d192bc68e0db7336a90badb9be4cbda9b6d70f48ca36c508f76605ac",
+      "skillSignature": "37ad4fd6818f81deab1ae1a36b83610abfc30b3acde3cb416743ebbe6a640254",
       "name": "심볼리 크리스 에스",
       "revision": "docs/art-source/motions/identity-revisions-2026-09-12/symboli_kris_s/review.json",
-      "runtimeSha256": "cca6259b1bccec94666f1d0a4c213909a62290dfdacdce077ee30bbf7b567ba6"
+      "runtimeSha256": "cca6259b1bccec94666f1d0a4c213909a62290dfdacdce077ee30bbf7b567ba6",
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
     },
     "tanino_gimlet": {
       "decision": "revise",
@@ -967,10 +1021,11 @@
       "portraitSha256": "1ca410dec98b73a14979b2989191638005914b7930a5ea9344a97e69f9a4ab85",
       "baselineRuntimeSha256": "d624b6fa3936e4e3619798a111c1bb6c70862045464c3ef4e9fb8d7f6ef5be9c",
       "baselinePacking": "docs/art-source/motions/production-144/tanino_gimlet/packing.json",
-      "skillSignature": "72b029082bb6d81cf82cdb8036770dbeb595e454483722d1e7d09b2a50588dc0",
+      "skillSignature": "52a8cc0d4e86c2ab926128945485067a7356a9c5ed046f5d6c88cb4c0e2b8161",
       "name": "타니노 김렛",
       "revision": "docs/art-source/motions/identity-revisions-2026-09-12/tanino_gimlet/review.json",
-      "runtimeSha256": "f5138dcb47dbea6c546bb075874cb67bb35256f347378f957773eed00731d3f4"
+      "runtimeSha256": "f5138dcb47dbea6c546bb075874cb67bb35256f347378f957773eed00731d3f4",
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
     },
     "daiichi_ruby": {
       "decision": "revise",
@@ -1031,8 +1086,9 @@
       "portraitSha256": "e5d2ca8419a61ab41270cb279f483f6076a076ea88394e6987acfd859c6f04d0",
       "baselineRuntimeSha256": "72c0490ba8f097ddf506de3ce9ea87986779f999887f085c803c67f12ad20549",
       "baselinePacking": "docs/art-source/motions/production-144/cheval_grand/packing.json",
-      "skillSignature": "884d9abd3b29d529ca873d4ab229c7c2d83fb7e02010b672aceda4f902615b6a",
-      "name": "슈발 그랑"
+      "skillSignature": "063f1a719bb7888994bcba9883b9d63b830e03b10fe7cf49f3153d3777b30b02",
+      "name": "슈발 그랑",
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
     },
     "vivlos": {
       "decision": "retain",
@@ -1079,10 +1135,11 @@
       "portraitSha256": "f995bdc6e8a79937bccade12fa13e945550cd0f772c9c8a3ad57977183d99028",
       "baselineRuntimeSha256": "922391836cb7b959e5e2533fa7d15014366e3e7cc3919d15efe68dc4ed12081e",
       "baselinePacking": "docs/art-source/motions/production-144/jungle_pocket/packing.json",
-      "skillSignature": "a8d5066459a7261ae937e2bc84fec854e9d00a00d365de5221d0265429c9ca82",
+      "skillSignature": "534d6f3887528e236f0b8b5fb934e25f9fcde96e38bf803ae7671e53f80c548c",
       "name": "정글 포켓",
       "revision": "docs/art-source/motions/identity-revisions-2026-09-12/jungle_pocket/review.json",
-      "runtimeSha256": "ab408eac5aa3634aad569ed05da6177e0bb878b7c4b67d2122fadfbf041bd782"
+      "runtimeSha256": "ab408eac5aa3634aad569ed05da6177e0bb878b7c4b67d2122fadfbf041bd782",
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
     },
     "believe": {
       "decision": "retain",
@@ -1092,8 +1149,9 @@
       "portraitSha256": "1312e4c18642dd192be7f6755720783d0956b166b61fc4e472d678feb889411e",
       "baselineRuntimeSha256": "26e0f337ebb96c5e76ed3039ce9d340b1f9c9c16ad304427cfaf3c8c3884061e",
       "baselinePacking": "docs/art-source/motions/production-144/believe/packing.json",
-      "skillSignature": "671f1e9c1a5c63f7fc7605ff2907b8ef3c0bc8364c1612e066290d349ca33f4c",
-      "name": "빌리브"
+      "skillSignature": "acbcff1acc1969c1dafb4ce6419afb71917f2bdb2c3b77fed80056c25f36b6a3",
+      "name": "빌리브",
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
     },
     "no_reason": {
       "decision": "revise",
@@ -1116,8 +1174,9 @@
       "portraitSha256": "fa1ed46036d4cb1884262b34a8a7e456566ca58368dc423ccd630ad5cd06a0a6",
       "baselineRuntimeSha256": "495c888ea0d79c6069a5708690bfae1989ee7491390e1b81849ae4fa26cf2a9e",
       "baselinePacking": "docs/art-source/motions/skill-revisions-2026-09-11/still_in_love/packing.json",
-      "skillSignature": "8167674cd85625d189d3832bcfc6cbe8c2893327177a38bc880f836791a1f726",
-      "name": "스틸 인 러브"
+      "skillSignature": "864a9f916bf15176bf63aa16cd61fb713cb97fd429547f3396c20a1ec3bc760b",
+      "name": "스틸 인 러브",
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
     },
     "copano_rickey": {
       "decision": "revise",
@@ -1127,10 +1186,11 @@
       "portraitSha256": "2d58a453cd091b1cc9e6b87025182cf41206f81c6b8c4104398cddd3f053169f",
       "baselineRuntimeSha256": "3c7942f8f8bae119e937a76a5d655322f19e9c8bbd5fa1abaeed378509b733f0",
       "baselinePacking": "docs/art-source/motions/production-144/copano_rickey/packing.json",
-      "skillSignature": "27fd59c3d6e5f0bea98c243456d957b64550495a9f9cacd997091e4358986ae6",
+      "skillSignature": "bd2819876abd38d63a9cd60cec221f63c3c47852ac5293e2912698e2a8114fa8",
       "name": "코파노 리키",
       "revision": "docs/art-source/motions/identity-revisions-2026-09-12/copano_rickey/review.json",
-      "runtimeSha256": "8245e7295897ab4b93afa1d034c329577b493acc7f918536f3f0d3610884c07e"
+      "runtimeSha256": "8245e7295897ab4b93afa1d034c329577b493acc7f918536f3f0d3610884c07e",
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
     },
     "hokko_tarumae": {
       "decision": "revise",
@@ -1140,10 +1200,11 @@
       "portraitSha256": "404f36aee6955c32dcd5f87216c2ddc8a4ae06b3f529dd661e9bda9199947d82",
       "baselineRuntimeSha256": "8a4b1fd073efe8e0e12c15a905cfcfd5491ebdc5f4cada0516ba24cfdc1e6b03",
       "baselinePacking": "docs/art-source/motions/skill-revisions-2026-09-11/hokko_tarumae/packing.json",
-      "skillSignature": "169c2b643b3e8b23097442d57fdd2d8c45dc342469261fafa379d192561335dc",
+      "skillSignature": "3554ec66f5b04c099caead29e6d812412dbe2122dd2b1167290699eaf89afd05",
       "name": "홋코 타루마에",
       "revision": "docs/art-source/motions/identity-revisions-2026-09-12/hokko_tarumae/review.json",
-      "runtimeSha256": "eceb7fc1bcdba4808e497b63ff6d751947328ae9fc769b43dec84f18be2d48fc"
+      "runtimeSha256": "eceb7fc1bcdba4808e497b63ff6d751947328ae9fc769b43dec84f18be2d48fc",
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
     },
     "wonder_acute": {
       "decision": "revise",
@@ -1153,11 +1214,12 @@
       "portraitSha256": "701c94d17ecd474b3bd77cc5e834c956fdb087437cdd976e0eea955a59529e7f",
       "baselineRuntimeSha256": "f109ad18b6335bba6d91841b54eee28528f414783dc7893974dd0eaab3299a66",
       "baselinePacking": "docs/art-source/motions/production-144/wonder_acute/packing.json",
-      "skillSignature": "97249df86962bd780510bf837b2dcf58b56c2218e3daea65b9e0614dec00c34a",
+      "skillSignature": "ef74243e0d052fffb30bb3ee839f6b7ecd8292de301a073b54a34813ff254234",
       "name": "원더 어큐트",
       "revision": "docs/art-source/motions/identity-revisions-2026-09-12/wonder_acute/review.json",
       "runtimeSha256": "d053e7f20b135d6bd443c7b7b595491c18cf82bd7a3270139b4cb2296c5769ef",
-      "detailRevision": "Long wavy gray hair, cyan-blue eyes and fine round glasses retained across all 24 poses, including closed-eye poses."
+      "detailRevision": "Long wavy gray hair, cyan-blue eyes and fine round glasses retained across all 24 poses, including closed-eye poses.",
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
     },
     "samson_big": {
       "decision": "revise",
@@ -1219,8 +1281,9 @@
       "portraitSha256": "c099e26dc4ddeae2dc9e1d72e713c210777285537c9d44f9e40d14b0272db973",
       "baselineRuntimeSha256": "33d5683746f1363f0c65424ad3f1640a43c7d98334d33df8f91f0a1b0c635971",
       "baselinePacking": "docs/art-source/motions/skill-revisions-2026-09-11/neo_universe/packing.json",
-      "skillSignature": "8ef8af6fba3f5c64a37ee94255e29e2be015107c6c9357cf212c8f53263c7642",
-      "name": "네오 유니버스"
+      "skillSignature": "a3ed456d2d9cede71b1f00d345f882642c967b8ebca931d42770dc48886cb058",
+      "name": "네오 유니버스",
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
     },
     "hishi_miracle": {
       "decision": "revise",
@@ -1244,10 +1307,11 @@
       "portraitSha256": "efd21e9da5e5c009d0b7005e433f7d597befce772b2520ac674e4e912cd1c746",
       "baselineRuntimeSha256": "c3cb362bf1f3b6676570c25f0916ffb12755082289213a332e03d384333e20be",
       "baselinePacking": "docs/art-source/motions/skill-revisions-2026-09-11/tap_dance_city/packing.json",
-      "skillSignature": "06f51dd87940f87b7be8173e86ea4e2030bd1a4241eea3652d5452f3013f0409",
+      "skillSignature": "dd0bdec0d8ff659c87fb907a7a973f514a84a06c9942d8322be6304ec44a0bdd",
       "name": "탭 댄스 시티",
       "revision": "docs/art-source/motions/identity-revisions-2026-09-12/tap_dance_city/review.json",
-      "runtimeSha256": "4fbea13dc18a681ba82e6d44939434265945ec6250cb1dd395a736cfbf3a58cb"
+      "runtimeSha256": "4fbea13dc18a681ba82e6d44939434265945ec6250cb1dd395a736cfbf3a58cb",
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
     },
     "duramente": {
       "decision": "revise",
@@ -1257,10 +1321,11 @@
       "portraitSha256": "42dbd3a4fa65f7c7ab8b8014e31da1df9fa4a12691e803f9f0100e52c0f11e36",
       "baselineRuntimeSha256": "63ae220a70d88123aada3a199aad159a05437519ad3a50ea8c6b1e38ec200fe9",
       "baselinePacking": "docs/art-source/motions/production-144/duramente/packing.json",
-      "skillSignature": "1720c2c48e946371991ae0385d125f0d0d025dc59d89174b847b4680bd6cb74f",
+      "skillSignature": "c7e058aae2a24d39d06a1d40aa817b5f5eccb9ee7d972c89eb90259688100669",
       "name": "두라멘테",
       "revision": "docs/art-source/motions/identity-revisions-2026-09-12/duramente/review.json",
-      "runtimeSha256": "3217b8fdba6b1f65120173c6e5826064ead93f1b7545f0009e71807badc11fb8"
+      "runtimeSha256": "3217b8fdba6b1f65120173c6e5826064ead93f1b7545f0009e71807badc11fb8",
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
     },
     "rhein_kraft": {
       "decision": "retain",
@@ -1270,8 +1335,9 @@
       "portraitSha256": "beb3d520bf03e682f5e352185a1059f0b96e8001e6fe529c822f1a243f13c65a",
       "baselineRuntimeSha256": "87493a1868ab59051a7dc1a3c136e11aa4a20795fbca7b0952d016c209ace92c",
       "baselinePacking": "docs/art-source/motions/production-144/rhein_kraft/packing.json",
-      "skillSignature": "f7fe58c6b64b33a204b5bb058a45b7d428e7502927b3067f7c994b9cdaa8ea7a",
-      "name": "라인 크라프트"
+      "skillSignature": "f69690708a4cc5210a7fd90233afd69e0c096cae2e505d6848b64bc86bd5be22",
+      "name": "라인 크라프트",
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
     },
     "cesario": {
       "decision": "revise",
@@ -1281,11 +1347,12 @@
       "portraitSha256": "f809bd86a206bdfd904a3de9eee12cc9d8e0a0a6bb5143702d0be0e034494279",
       "baselineRuntimeSha256": "9f333f80edcda93b004dd1ec377b71c0823cc70e99389eee039cdd8db5b52b03",
       "baselinePacking": "docs/art-source/motions/production-144/cesario/packing.json",
-      "skillSignature": "4a41d75ad5c99161ecf9fbaef7896fa11317024cf72cca643d46d07c61dc95ce",
+      "skillSignature": "bcc4a82b77f7eadbc54934379cf1e5e46837c31483b6df0b46a4e8bc71cf31e3",
       "name": "세자리오",
       "revision": "docs/art-source/motions/identity-revisions-2026-09-12/cesario/review.json",
       "runtimeSha256": "db5964df63ae8a7b4eb78183cb5e07bf12844aa293aaeabb6f60078a8cecb285",
-      "detailRevision": "Blue bob and white central fringe retained; all visible irises are lavender purple, with the orange iris removed."
+      "detailRevision": "Blue bob and white central fringe retained; all visible irises are lavender purple, with the orange iris removed.",
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
     },
     "air_messiah": {
       "decision": "retain",
@@ -1295,8 +1362,9 @@
       "portraitSha256": "fe49b8c14373704f128ba4e25578d8b2ff9be430f96fb3d3ce71bc21a44b369b",
       "baselineRuntimeSha256": "29173960d1bf6e7362653bb1ee4cc2c1fc47c3d6169cbb7b1284c0c6f83f9997",
       "baselinePacking": "docs/art-source/motions/production-144/air_messiah/packing.json",
-      "skillSignature": "3451d6b3a030ce932cf216965d8086f9a727eea2a73a11e188ae78f70bf1cf6d",
-      "name": "에어 메사이어"
+      "skillSignature": "c3f59424337503fa11f8fd430594e2f84f1b511f5bc3c31d226bb17a0356d22c",
+      "name": "에어 메사이어",
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
     },
     "daring_heart": {
       "decision": "retain",
@@ -1328,10 +1396,11 @@
       "portraitSha256": "8dc3d2e019ec35d90e7ddd4b504183b9a794ab834a5cec0dd04e8c15139b2bcd",
       "baselineRuntimeSha256": "b34475916a9d4b4cce100901b8074f6fb4c10eb941df4a8fe6ecf88ccc2030f2",
       "baselinePacking": "docs/art-source/motions/production-144/buena_vista/packing.json",
-      "skillSignature": "4bc1d2fe82346b5b038b2580a28c1fb87b3f0b05419ebae0074163567704775d",
+      "skillSignature": "d99d2885706df0c01af99f713d590f2095cbfdea00fb252e146f0722ee862a23",
       "name": "부에나 비스타",
       "revision": "docs/art-source/motions/identity-revisions-2026-09-12/buena_vista/review.json",
-      "runtimeSha256": "13dddf1bf42c34d992abd43466faf1e1fcb067e3804982ef6de9fdaf1e4e6b4b"
+      "runtimeSha256": "13dddf1bf42c34d992abd43466faf1e1fcb067e3804982ef6de9fdaf1e4e6b4b",
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
     },
     "orfevre": {
       "decision": "retain",
@@ -1341,8 +1410,9 @@
       "portraitSha256": "64fe66d3b719e3eb4b39e1a651d16b9a8b30e7293624d73d8d73e9be3da47daf",
       "baselineRuntimeSha256": "055c34f21c8a4d5499599a76442c0087eb02dbdfc743d7d9c15381d9ab6403e8",
       "baselinePacking": "docs/art-source/motions/skill-revisions-2026-09-11/orfevre/packing.json",
-      "skillSignature": "368388d4889cf903c55c99d457c5270bb5e8dc394d657437152396bead76aeed",
-      "name": "오르페브르"
+      "skillSignature": "85f537548c23c02b581b395e6d8b87581e154c3e74d2044bfbefafea27d3a3af",
+      "name": "오르페브르",
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
     },
     "gentildonna": {
       "decision": "retain",
@@ -1352,8 +1422,9 @@
       "portraitSha256": "b339a4d583c3955c42f5cffdf1cac7fdc292e3e6efe36d10a337ac52c532784b",
       "baselineRuntimeSha256": "a2ec371018fcc664cd571a6bd8356df35262c99b506e1b217425ab7ff06b6a8a",
       "baselinePacking": "docs/art-source/motions/skill-revisions-2026-09-11/gentildonna/packing.json",
-      "skillSignature": "632d471cd7a785d2b6655dd8484b7adcf89d2bd138f57d056117ee42c8699f07",
-      "name": "젠틸돈나"
+      "skillSignature": "ea763ad0b08b307db6c6a87db6aa21f273e34aa165274f6d0fccf72392cee505",
+      "name": "젠틸돈나",
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
     },
     "win_variation": {
       "decision": "retain",
@@ -1374,8 +1445,9 @@
       "portraitSha256": "adb52c7aaa49c0f01151ca6f7d97683a574d25f6aba5319ba8796fed5c685020",
       "baselineRuntimeSha256": "d840f5e44d3705536ca95c94164d8ea66563cb5785324866bf4b9169eab202ca",
       "baselinePacking": "docs/art-source/motions/skill-revisions-2026-09-11/admire_groove/packing.json",
-      "skillSignature": "5ede3c8d5bb303f5773b11b74a1aaa803094d123827a118f450fa51d1e94fddf",
-      "name": "어드마이어 그루브"
+      "skillSignature": "59be3b87731d11e54efab1ae622cf5911d00fc302fe3966a388e813ac791b594",
+      "name": "어드마이어 그루브",
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
     },
     "dream_journey": {
       "decision": "retain",
@@ -1385,8 +1457,9 @@
       "portraitSha256": "54d684393b2a067b982f13d6d18cafd4064c8288f002b8bdfdec7f9216220672",
       "baselineRuntimeSha256": "62b6dac8992b5fd9f49f624bb844d118c7c94f8785ee7ee92a0c8144d93698a7",
       "baselinePacking": "docs/art-source/motions/production-144/dream_journey/packing.json",
-      "skillSignature": "9744a481c34d89b27ad6f876188fd6a21dd11b21b71a02acd9cbe4fe4cc636e0",
-      "name": "드림 저니"
+      "skillSignature": "3f682286cfa611a197965cb99e00b5eb6d55467f83db18639af51db7f3e194ed",
+      "name": "드림 저니",
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
     },
     "calstone_light_o": {
       "decision": "retain",
@@ -1407,8 +1480,9 @@
       "portraitSha256": "aa4e5d8ab8d896939154f8026bf81b2ed5a400da21bbacc4493484b1a771d171",
       "baselineRuntimeSha256": "b1da6e15d1d60af012b8e05fbbec04259288fbe9a9593b3fdedcaf093e15c275",
       "baselinePacking": "docs/art-source/motions/skill-revisions-2026-09-11/durandal/packing.json",
-      "skillSignature": "eb1b374a4dbe705d469900467d9aba1241f19460fd5d42b95fe64b42c3e4d2fd",
-      "name": "뒤랑달"
+      "skillSignature": "ca3160d2671f1537cbbb01c2474a39112e35b2ac0b43de65b49dfc2a09e2e166",
+      "name": "뒤랑달",
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
     },
     "genuine": {
       "decision": "retain",
@@ -1429,8 +1503,9 @@
       "portraitSha256": "25ee3a63d6f07a4c119c7aad544789a3959df2924cd1943660612c01cdfc8395",
       "baselineRuntimeSha256": "1596ce17a4f02258a918698b347a5004767fae514883068f5bc3fc3ea7399e26",
       "baselinePacking": "docs/art-source/motions/skill-revisions-2026-09-11/bubble_gum_fellow/packing.json",
-      "skillSignature": "f0340343990d3a6793511ebf45bcf0089bdb87a7df500c129c2c52a7569fb538",
-      "name": "버블검 펠로"
+      "skillSignature": "de14838208d85b42f8e31c7555e11f0d01a09f9f0cf84ae549a9b08f71056e0a",
+      "name": "버블검 펠로",
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
     },
     "sakura_chitose_o": {
       "decision": "revise",
@@ -1440,10 +1515,11 @@
       "portraitSha256": "67ffd8c8a20e811f2f180b50b871b1d412f12fd9c811d64f416f0b060fb42dfa",
       "baselineRuntimeSha256": "c0f327e9074b8ea44b9fff94ab0ed796b67941939ec161f7e38a663dee01ec64",
       "baselinePacking": "docs/art-source/motions/skill-revisions-2026-09-11/sakura_chitose_o/packing.json",
-      "skillSignature": "cd13009229be0a31424b62a921d422547142014a8ffba0d7491002d616fb0881",
+      "skillSignature": "3464da0e2c07797c68449714d05683801a02347a24e2cf73f367bdad7d1c8e43",
       "name": "사쿠라 치토세 오",
       "revision": "docs/art-source/motions/identity-revisions-2026-09-12/sakura_chitose_o/review.json",
-      "runtimeSha256": "6bb8284e481c42e51d8166d455ba9381b3cd59995d9b853c0701a3dcec406171"
+      "runtimeSha256": "6bb8284e481c42e51d8166d455ba9381b3cd59995d9b853c0701a3dcec406171",
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
     },
     "fenomeno": {
       "decision": "retain",
@@ -1453,8 +1529,9 @@
       "portraitSha256": "cc72c1a889a8a4b749af80365c62e76bcf0897d568412a91e12ca7d8f6e73de7",
       "baselineRuntimeSha256": "fc600a55cdce049ae59e683b42f98ce00d2f36aa3473d49200aedd763b579fd6",
       "baselinePacking": "docs/art-source/motions/skill-revisions-2026-09-11/fenomeno/packing.json",
-      "skillSignature": "1f68887fd3b68e847d0571998d0bc384d471a20e0a876db95653c8cb8f7165ca",
-      "name": "페노메노"
+      "skillSignature": "5243873c8b6bfc3b4b719ebdea6957dbc42d4ee381d466a0a1d4a6e04c252bc8",
+      "name": "페노메노",
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
     },
     "blast_onepiece": {
       "decision": "retain",
@@ -1475,8 +1552,9 @@
       "portraitSha256": "dc4f1d501a79a17802957d7c4512859e87adb69b037fa39a9445d1b392a20082",
       "baselineRuntimeSha256": "ef20ac0ce5fcb396b8928d4e22fb3a4f7bffd5f6720fad94d29f61c32623380b",
       "baselinePacking": "docs/art-source/motions/skill-revisions-2026-09-11/almond_eye/packing.json",
-      "skillSignature": "61f1ba230ba9231f3cb29e01741c9c0006551c95d2fcff0a6033ab32637a7bb3",
-      "name": "아몬드 아이"
+      "skillSignature": "e56991041fe9c70a7c6a6577001e0db112b6fd9c4cff6fc9f10ec89309892b91",
+      "name": "아몬드 아이",
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
     },
     "lucky_lilac": {
       "decision": "retain",
@@ -1486,8 +1564,9 @@
       "portraitSha256": "d17296dc26a32ee2a5e84d7847be4c6f334b24219ff72d407ec2b3dd2d88b652",
       "baselineRuntimeSha256": "c95700bb5006906ba873306d6e6e27640b737ce98a2e7e55df6695192798b326",
       "baselinePacking": "docs/art-source/motions/skill-revisions-2026-09-11/lucky_lilac/packing.json",
-      "skillSignature": "a8d16db06c57c5534e975078e59fbc563911032367107b243feb42ccf8569b12",
-      "name": "럭키 라일락"
+      "skillSignature": "53d13e9a6f8b9adae930e8504f953617b93d16027b208c243880bc77b72693fa",
+      "name": "럭키 라일락",
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
     },
     "gran_alegria": {
       "decision": "retain",
@@ -1497,8 +1576,9 @@
       "portraitSha256": "8facd0bcfe8c7cfc69789b6d7a7928f786b29719f1f7f49bfaf63012c74fcb81",
       "baselineRuntimeSha256": "98f77dbbd14a9514ad9e1c8e0256ee41697dd078c3cd035a6000879a1daee31b",
       "baselinePacking": "docs/art-source/motions/skill-revisions-2026-09-11/gran_alegria/packing.json",
-      "skillSignature": "54443f2284207c93b975836724d8a3ce74a2501209257b856d645eb65a2d3843",
-      "name": "그란 알레그리아"
+      "skillSignature": "db31e0d4d4d5ee882cdb44764dd43f34c933d4090972e4da6d14076e45a21b6a",
+      "name": "그란 알레그리아",
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
     },
     "loves_only_you": {
       "decision": "retain",
@@ -1519,8 +1599,9 @@
       "portraitSha256": "051d18fdf2b18880a213514531f5234d937840b7dc77c1d0604f20477f8a0c42",
       "baselineRuntimeSha256": "115ed6e515e7843128a20f1d47350bd9a86b50cef835c86c6977abf35b5fe772",
       "baselinePacking": "docs/art-source/motions/skill-revisions-2026-09-11/chrono_genesis/packing.json",
-      "skillSignature": "84476adf472c78aaed8b8b178f566d1308fc27cf390e20c636bf88b062f71dc4",
-      "name": "크로노 제네시스"
+      "skillSignature": "cba28bd63113c982593a92af8c23953b7440a62c9defbf3b9bb5a3e8134a1b59",
+      "name": "크로노 제네시스",
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
     },
     "curren_bouquetdor": {
       "decision": "revise",
@@ -1578,8 +1659,9 @@
       "portraitSha256": "2201f83e28c6d1830430689d44d9d21f6d3031fc3995c17527b94873cea9697f",
       "baselineRuntimeSha256": "cca55531c3df747f419648c6702359e22f3651ef9c6991e2bc0b0de8d1892cce",
       "baselinePacking": "docs/art-source/motions/skill-revisions-2026-09-11/forever_young/packing.json",
-      "skillSignature": "536b43240fbca5507a478cf2b05672d68203c41815206798ba515427391464a4",
-      "name": "포에버 영"
+      "skillSignature": "d7c0c42ad06666a1e93cf552418b74a33d13e17529d09a965a5c1e1b4067e54d",
+      "name": "포에버 영",
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
     },
     "marche_lorraine": {
       "decision": "retain",
@@ -1589,8 +1671,9 @@
       "portraitSha256": "3d8c471b6c0c9d6fbdda22e1494734d1b726f24a3ce167429b76e84db3e8cbf4",
       "baselineRuntimeSha256": "0dd8bd06ffa484136f04113d1462d1a872ccac1c7917833fea63577c9148f689",
       "baselinePacking": "docs/art-source/motions/production-144/marche_lorraine/packing.json",
-      "skillSignature": "583810f75b379993213623a5b1ba284b254b765f0f30d4a05ff5eaba50c275ee",
-      "name": "마르슈 로렌"
+      "skillSignature": "e5592c3d5c1dd739ac8fdea2989cf975a5dd66b9a95031eb234cebe116f2eb09",
+      "name": "마르슈 로렌",
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
     },
     "epiphaneia": {
       "decision": "retain",
@@ -1611,10 +1694,11 @@
       "portraitSha256": "695826b3297170fe61f0505f0c7de7aefb9af0f885060e2fd31fc7cb4839cf46",
       "baselineRuntimeSha256": "d417b61937d4ef075c3f0ead396d64592fc8a514367e9ab3ee66bd2b6c8491ab",
       "baselinePacking": "docs/art-source/motions/production-144/logotype/packing.json",
-      "skillSignature": "603f420f2e8bd6d21de92c819d16afc0bcef60480ce02def9c4a9c41e76744e2",
+      "skillSignature": "49b249d3b80ee340b467d78b6b98ff47e02cab27b5b266bdde3dc0646fc4906a",
       "name": "로고타입",
       "revision": "docs/art-source/motions/identity-revisions-2026-09-12/logotype/review.json",
-      "runtimeSha256": "a0b8d349c8eb745b9f61e7e2304557b156c5cf6f01a800a3603a0488835118b0"
+      "runtimeSha256": "a0b8d349c8eb745b9f61e7e2304557b156c5cf6f01a800a3603a0488835118b0",
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
     },
     "victoire_pisa": {
       "decision": "retain",
@@ -1624,8 +1708,9 @@
       "portraitSha256": "5683fef0330b156165663337b2524b78f59d46bf23e413a19eecf620e9a86f74",
       "baselineRuntimeSha256": "8ca71dd7851437cc3ded386163c161431ef0bd087a36dadf70e3c0897555180c",
       "baselinePacking": "docs/art-source/motions/skill-revisions-2026-09-11/victoire_pisa/packing.json",
-      "skillSignature": "b21b85740361f18811a905f924a2c10a9525523693c49b16a5ef956de488a8f1",
-      "name": "빅투아르 피사"
+      "skillSignature": "f323fb2d8216c73d542f52cd7fcf7eee1372ff24035f005cc2d392c2d47beb95",
+      "name": "빅투아르 피사",
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
     },
     "rose_kingdom": {
       "decision": "retain",
@@ -1646,8 +1731,9 @@
       "portraitSha256": "f7a2c8e4cc40941045c81e2af8133e256712182a3422b344d3997dfeaf6a7b28",
       "baselineRuntimeSha256": "0d4f09df0f1b1f22a4c0e40a4712b4b42a908529812d59dc078d8d1948400eb0",
       "baselinePacking": "docs/art-source/motions/production-144/rulership/packing.json",
-      "skillSignature": "91380f4209c21247c4a89d2e998874b5c3b7a0f31b09b1ed41357faaf73ad59b",
-      "name": "룰러쉽"
+      "skillSignature": "0df46186b9db1e85a6db7bdab1defe53c841b4f2c553422237f50199dbe332ea",
+      "name": "룰러쉽",
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
     },
     "efforia": {
       "decision": "retain",
@@ -1657,8 +1743,9 @@
       "portraitSha256": "2c92bf2079c369ee9c83a98390f2ed74fdcac36812f6ad7a5608f21ff77de284",
       "baselineRuntimeSha256": "133aa5d7ce4d4855e4641dd1d136913c44d0ecbfc25165fe7d4bff6f7f89161f",
       "baselinePacking": "docs/art-source/motions/production-144/efforia/packing.json",
-      "skillSignature": "34b35668f405f394815aa3a99e303a52b03cdce1bc48e46449a20daa62d6251f",
-      "name": "에프포리아"
+      "skillSignature": "ccf9f1495dd8ed7b548fc89fe9798de682204e20225c3616f3586cc97dcbc388",
+      "name": "에프포리아",
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
     },
     "titleholder": {
       "decision": "retain",
@@ -1668,8 +1755,9 @@
       "portraitSha256": "fa55150236d89f11a40a8739238025cc7b67a0dd6474c3848cc5506757e7bede",
       "baselineRuntimeSha256": "51770cbc814f5dace2831305da04cb0990f10593b123f8ad0747072e15f10785",
       "baselinePacking": "docs/art-source/motions/skill-revisions-2026-09-11/titleholder/packing.json",
-      "skillSignature": "ba0aaf68f0034e5b39f3b34190b35e521619352c7440d8ab32c05f364d879512",
-      "name": "타이틀홀더"
+      "skillSignature": "7b9980a1aaa8d3caebb5f3aedfb37fc566701042168e2ac4d694da67e765d6a3",
+      "name": "타이틀홀더",
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
     },
     "phalaenopsis": {
       "decision": "retain",
@@ -1679,8 +1767,9 @@
       "portraitSha256": "a6b9b708158522e59cdf4307cae0779f6482211e782a9e50f76ae89eda9877c7",
       "baselineRuntimeSha256": "df2585fe4deb0dec609534bab32f30355a57b38e4de56c61e44463005a37731f",
       "baselinePacking": "docs/art-source/motions/production-144/phalaenopsis/packing.json",
-      "skillSignature": "52ad4c572f6e2561609861c25e0cd5d85397141e760467229d8193c3b6e029b8",
-      "name": "팔레놉시스"
+      "skillSignature": "8b9277fb4e530b7358d43c860912dbda85e675c2ab2d18b448c0465ab9aac33b",
+      "name": "팔레놉시스",
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
     },
     "verxina": {
       "decision": "retain",
@@ -1701,8 +1790,9 @@
       "portraitSha256": "546ad0d52fab0e20f54c8b76b50f26c9cd40c3cd0a40a18b208567661a89483d",
       "baselineRuntimeSha256": "dc6fecf747f0ea18440a3d1e76d1891b1ef290ce03e0c3636ee4baa5bbe35c9b",
       "baselinePacking": "docs/art-source/motions/skill-revisions-2026-09-11/manhattan_cafe/packing.json",
-      "skillSignature": "afdbb3bf5feda7b64e2d6bf5c3f350ab340a0550b3d79e453d1ea43524471f80",
-      "name": "맨하탄 카페"
+      "skillSignature": "0f130f21c00cc0f9e918ed2b562effa5a9c9fece74c75aec6d9a7405df01887c",
+      "name": "맨하탄 카페",
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
     },
     "espoir_city": {
       "decision": "retain",
@@ -1712,8 +1802,9 @@
       "portraitSha256": "211d2a284136c77acdf0eb6be1e0a5893e683c9dee705b20069e7e7635431516",
       "baselineRuntimeSha256": "acd705ed94f4d9ca2a90ef8b44c7e03165e7427f796c1db3426dce8315c32ece",
       "baselinePacking": "docs/art-source/motions/production-144/espoir_city/packing.json",
-      "skillSignature": "bfca0fa60515ac6ccbe4b582911c00ca7f548da884e8b62a7c7f03f011bd8e62",
-      "name": "에스포와르 시티"
+      "skillSignature": "46e1e6b7c56b6693766fd666f584577af137ac1ebe466f3e8f53e562b7e54fa9",
+      "name": "에스포와르 시티",
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
     }
   }
 }

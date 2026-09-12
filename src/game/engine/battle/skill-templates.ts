@@ -7,6 +7,7 @@
  */
 import type { Cost, DamageType, EffectDef, Role, RunStyle, SkillDef, SkillTemplate, TargetRule } from '../types';
 import { buildTacticalSkill, authoredBodyFamily } from './skill-patterns';
+import { COST_SKILL_POWER } from '../constants';
 
 /** Spec §12.2 — which templates a role may draw from, in preference order. */
 export const ROLE_TEMPLATES: Record<Role, SkillTemplate[]> = {
@@ -101,7 +102,6 @@ const TEMPLATE_DAMAGE_TYPE: Record<SkillTemplate, DamageType> = {
 };
 
 /** Cost scaling for a skill's headline number, before star multipliers. */
-const COST_POWER: Record<Cost, number> = { 1: 1.0, 2: 1.08, 3: 1.16, 4: 1.26, 5: 1.4 };
 
 export type SkillBuildInput = {
   unitId: string;
@@ -126,7 +126,7 @@ export function cleanSignature(raw: string | null): string | null {
 export function buildSkill(input: SkillBuildInput): SkillDef {
   // Racing-style corrections must not silently replace an authored skill or its art.
   const template = authoredBodyFamily(input.unitId) ?? chooseTemplate(input.role, input.style);
-  const scale = COST_POWER[input.cost] * (0.9 + 0.2 * input.power01);
+  const scale = COST_SKILL_POWER[input.cost] * (0.9 + 0.2 * input.power01);
 
   // Spec §12.4: prefer the signature / representative race name, never official skill text.
   const race = cleanSignature(input.signatureName) ?? input.mainWin;
@@ -261,5 +261,5 @@ export function buildSkill(input: SkillBuildInput): SkillDef {
       ? STYLE_VFX[input.style]
       : TEMPLATE_VFX[template],
     description: `[${TEMPLATE_LABEL[template]}] ${description}`,
-  });
+  }, input.cost);
 }

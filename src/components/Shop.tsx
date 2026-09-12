@@ -23,6 +23,7 @@ export function ShopRow(): JSX.Element | null {
   const unit = [...player.board, ...player.bench].find(u => u.instanceId === dragged);
   return (
     <div className={`shop-row sell-drop-zone${unit ? ' selling' : ''}${over ? ' over' : ''}`} aria-label="상점 판매 영역" data-drop="sell"
+      style={{ gridTemplateColumns: `repeat(${Math.max(1, player.shop.length)}, minmax(0, 1fr))` }}
       onDragOver={e => { if (e.dataTransfer.types.includes('application/x-unit')) { e.preventDefault(); e.dataTransfer.dropEffect = 'move'; setOver(true); } }}
       onDragLeave={e => { if (!e.currentTarget.contains(e.relatedTarget as Node | null)) setOver(false); }}
       onDrop={e => { e.preventDefault(); setOver(false); const id = e.dataTransfer.getData('application/x-unit'); if (id) useGameStore.getState().sell(id); useInteractionStore.getState().drag(null); }}>

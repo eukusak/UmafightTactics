@@ -34,7 +34,7 @@ describe('art playback contract', () => {
 
   it('uses the training environment for every PvE stage', () => {
     for (let stage = 1; stage < 10; stage += 1) {
-      expect(arenaUrl(stage, true)).toBe('/assets/boards/bg_pve_training.png');
+      expect(arenaUrl(stage, true)).toBe('/assets/boards/bg_pve_training.png?v=test');
     }
   });
 });

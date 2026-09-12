@@ -41,10 +41,15 @@ function TraitDetail({ id, playerId }: { id: TraitId; playerId: string }): JSX.E
   if (!player) return null;
   const trait = getTrait(id), count = activeTraitCounts(player, player.board).get(id) ?? 0;
   const tier = activeTierIndex(trait, count);
+  const members = getSeasonUnits(player.seasonId).filter(u => getUnitTraits(u.id, player.seasonId).includes(id));
+  const finalCount = trait.thresholds.at(-1)!;
+  const shortage = Math.max(0, finalCount - members.length);
   return <><h3>{trait.name}</h3><p>{trait.description}</p><strong className="gold-text">{player.name} · 배치 {count}명</strong>
     <p className="muted">같은 기물은 한 번만 집계하며 대기석은 제외합니다.</p>
+    <p className="trait-chase-note">총 {trait.tiers.length}단계 · 최종 {finalCount}명 · 이번 시즌 기본 보유 {members.length}명
+      {shortage > 0 ? ` · 상징 또는 특성 추가로 최소 ${shortage}명 보강 필요` : finalCount >= 8 ? ' · 높은 레벨 또는 편성 인원 증가가 필요한 최종 조합' : ''}</p>
     {trait.tiers.map((t, i) => <div className={`detail-tier${i === tier ? ' active' : ''}`} key={t.count}><b>{t.count}명 {i === tier ? '· 현재 활성' : count >= t.count ? '· 달성' : '· 미달성'}</b><p>{t.description}</p></div>)}
-    <h4>이번 시즌의 해당 기물</h4><div className="detail-trait-roster">{getSeasonUnits(player.seasonId).filter(u => getUnitTraits(u.id, player.seasonId).includes(id)).map(u => <div key={u.id}><Portrait id={u.id} name={u.nameKo} size={30} /><span>{u.nameKo}</span><b>{u.cost}G</b></div>)}</div>
+    <h4>이번 시즌의 해당 기물</h4><div className="detail-trait-roster">{members.map(u => <div key={u.id}><Portrait id={u.id} name={u.nameKo} size={30} /><span>{u.nameKo}</span><b>{u.cost}G</b></div>)}</div>
   </>;
 }
 

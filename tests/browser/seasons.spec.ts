@@ -39,7 +39,7 @@ for (const season of SEASONS) {
     await expect(page.locator('.season-screen')).toHaveCSS('background-image', new RegExp(`/seasons/${season.id}\\.webp`));
     await expect(page.locator('.season-detail-heading > strong')).toHaveText(`${season.name} · 전용 시너지`);
     await expect(page.locator('.season-traits > div')).toHaveCount(4);
-    await expect(page.locator('.season-traits em')).toHaveText(['3', '5', '7', '3', '5', '7', '3', '5', '7', '3', '5', '7']);
+    await expect(page.locator('.season-traits em')).toHaveText(Array.from({ length: 4 }, () => ['3', '5', '7', '10']).flat());
     await inViewport(page, '.season-picker');
     await inViewport(page, '.season-screen .menu-buttons');
     await page.screenshot({ path: info.outputPath(`${season.id}-setup.png`) });

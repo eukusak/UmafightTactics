@@ -6,6 +6,7 @@ import { FRAME_SHEETS, frameSheetUrl, frameGeometry, motionFrame, skillMotionFra
 import { skillTimeline } from '../../game/engine/battle/skill-timeline';
 import { portraitUrl, standeeUrl, type AnimationName } from '../../game/ui/art';
 import { useGameStore } from '../../store/gameStore';
+import { COST_SKILL_PRESENTATION } from '../../game/ui/cost-skill-presentation';
 
 const ACTIONS: Record<AnimationName, string> = { idle: '대기', run: '달리기', basic_attack: '공격', skill_cast: '스킬', ko: '쓰러짐', victory: '승리' };
 export function MotionScreen(): JSX.Element {
@@ -53,6 +54,7 @@ export function MotionScreen(): JSX.Element {
         const cycle = time % 2;
         timeline.current = cycle;
         const skill = getUnitDef(id).skill;
+        const style = COST_SKILL_PRESENTATION[getUnitDef(id).cost];
         this.pulses.clear();
         for (const sprite of this.sprites) {
           sprite.setFlipX(c.facing < 0);
@@ -63,9 +65,9 @@ export function MotionScreen(): JSX.Element {
             const releases = [...new Set(skillTimeline(skill).map(e => e.at))];
             for (const at of releases) {
               const age = cycle - at;
-              if (age < 0 || age > .25) continue;
+              if (age < 0 || age > style.duration) continue;
               const color = parseInt((skill.choreography?.color ?? '#b9ddff').slice(1), 16);
-              this.pulses.lineStyle(4, color, 1 - age / .25);
+              this.pulses.lineStyle(style.stroke * 1.5, color, 1 - age / style.duration);
               const effect = skillTimeline(skill).find(e => Math.abs(e.at - at) < 1e-8 && e.effect.shape)?.effect;
               const x = sprite.x, y = sprite.y - 130, direction = c.facing;
               if (effect?.shape === 'LINE') this.pulses.lineBetween(x, y, x + direction * 250, y - 25);
@@ -74,12 +76,15 @@ export function MotionScreen(): JSX.Element {
               } else if (effect?.shape === 'CHAIN') {
                 this.pulses.lineBetween(x, y, x + direction * 90, y - 60);
                 this.pulses.lineBetween(x + direction * 90, y - 60, x + direction * 185, y + 15);
-              } else this.pulses.strokeCircle(x, y, 72 * (1 + age * 2));
+              } else this.pulses.strokeCircle(x, y, 72 * style.radius * (1 + age * 2));
+              this.pulses.lineStyle(2, color, (1 - age / style.duration) * .5);
+              for (let echo = 0; echo < style.echoes; echo++) this.pulses.strokeCircle(x, y, (48 + echo * 16) * style.radius * (1 + age * 2));
               const seed = (skill.choreography?.emblem ?? 0) + 1;
-              this.pulses.fillStyle(parseInt((skill.choreography?.accent ?? '#ffffff').slice(1), 16), 1 - age / .25);
-              for (let i = 0; i < 3 + seed % 5; i++) {
-                const a = i * Math.PI * 2 / (3 + seed % 5) + seed * .17;
-                this.pulses.fillRect(x + Math.cos(a) * (85 + age * 120), y + Math.sin(a) * (85 + age * 120), 6, 6);
+              this.pulses.fillStyle(parseInt((skill.choreography?.accent ?? '#ffffff').slice(1), 16), 1 - age / style.duration);
+              const particles = 3 + seed % 5 + style.particles;
+              for (let i = 0; i < particles; i++) {
+                const a = i * Math.PI * 2 / particles + seed * .17;
+                this.pulses.fillRect(x + Math.cos(a) * (70 * style.radius + age * 120), y + Math.sin(a) * (70 * style.radius + age * 120), 6, 6);
               }
             }
           }
@@ -106,6 +111,7 @@ export function MotionScreen(): JSX.Element {
           {Object.values(PVE_UNIT_IDS).map(key => <option key={key} value={key}>{getUnitDef(key).nameKo} (PvE)</option>)}
         </select></label>
         <p>{status}</p>
+        <p className="motion-cost">{getUnitDef(id).cost}코스트 · {COST_SKILL_PRESENTATION[getUnitDef(id).cost].label} 이펙트</p>
         <p className="motion-skill-name" style={{ color: '#ffe4a6', fontWeight: 700 }}>{getUnitDef(id).skill.displayName}</p>
         <p className="motion-skill-description" style={{ fontSize: 14, lineHeight: 1.6 }}>{getUnitDef(id).skill.description}</p>
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: 10, margin: '25px 0' }}>

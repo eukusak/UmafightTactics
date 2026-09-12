@@ -19,7 +19,7 @@ const stat = (kind: 'STAT_ADD' | 'STAT_MUL', key: EffectDef['stat'], value: numb
 const onStart = (kind: EffectDef['kind'], value: number, duration?: number): EffectDef => ({ kind, value, duration, trigger: { when: 'COMBAT_START' } });
 const onCast = (kind: EffectDef['kind'], value: number, duration?: number): EffectDef => ({ kind, value, duration, trigger: { when: 'ON_CAST' } });
 type TraitRecipe = [string, string, (tier: number) => EffectDef[], (tier: number) => string];
-// Each seasonal faction has 15 members and three reachable breakpoints.
+// Each faction has 15 members; its final breakpoint commits ten distinct bodies.
 // Effects belong to faction members only; shared historical traits still apply.
 const recipes: Record<SeasonId, TraitRecipe[]> = {
   s1: [
@@ -55,9 +55,9 @@ const recipes: Record<SeasonId, TraitRecipe[]> = {
 };
 
 export const SEASON_TRAIT_DEFS: TraitDef[] = SEASON_IDS.flatMap(season => recipes[season].map(([key, name, effects, description]) => ({
-  id: `${season}_${key}` as TraitId, name, category: 'SEASON', thresholds: [3, 5, 7], emblemItemId: null,
-  description: `${SEASON_THEMES.find(s => s.id === season)!.name} 전용 · 해당 특성 기물에게 적용 · 서로 다른 기물 3/5/7명`,
-  tiers: [3, 5, 7].map((count, i) => ({ count, effects: effects(i + 1).map(e => ({ ...e, target: e.kind === 'ON_HIT_DAMAGE' ? 'CURRENT_TARGET' : 'SELF' })), description: description(i + 1) })),
+  id: `${season}_${key}` as TraitId, name, category: 'SEASON', thresholds: [3, 5, 7, 10], emblemItemId: null,
+  description: `${SEASON_THEMES.find(s => s.id === season)!.name} 전용 · 해당 특성 기물에게 적용 · 서로 다른 기물 3/5/7/10명`,
+  tiers: [3, 5, 7, 10].map((count, i) => ({ count, effects: effects(i + 1).map(e => ({ ...e, target: e.kind === 'ON_HIT_DAMAGE' ? 'CURRENT_TARGET' : 'SELF' })), description: description(i + 1) })),
 })));
 
 export type SeasonDef = Theme & { unitIds: string[]; traits: TraitDef[]; unitTraits: Record<string, TraitId> };

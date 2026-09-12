@@ -1,9 +1,10 @@
 /** Delivered art is preferred. Reference thumbnails are explicitly tracked separately. */
 import deliveredRaw from '../../data/manual/delivered-art.json';
 import { getItem } from '../engine/items/item-defs';
+import { versionedAssetUrl } from './asset-version';
 const deliveredFiles = new Set<string>(deliveredRaw);
 export function assetUrl(relative: string): string | null {
-  return deliveredFiles.has(relative) ? `/assets/${relative}` : null;
+  return deliveredFiles.has(relative) ? versionedAssetUrl(`/assets/${relative}`) : null;
 }
 export function portraitUrl(id: string): string | null {
   return assetUrl(`portraits/${id}.png`);
@@ -14,7 +15,7 @@ export function standeeUrl(id: string): string | null {
 /** Decorative environments only: never affect surface traits or combat rules. */
 export function arenaUrl(stage = 1, pve = false): string {
   const name = pve ? 'pve_training' : stage % 3 === 0 ? 'board_dirt' : stage % 2 === 0 ? 'board_turf_night' : 'board_turf_day';
-  return `/assets/boards/bg_${name}.png`;
+  return versionedAssetUrl(`/assets/boards/bg_${name}.png`);
 }
 export const ANIMATION_CLIPS = {
   idle: { start: 0, count: 6, fps: 8, loop: true },

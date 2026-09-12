@@ -3,6 +3,21 @@
   "note": "Final manual overrides applied after the automatic roster/cost pass. Spec §7.5 requires a reason string on every entry. Keys are canonical Korean names. Leave empty unless a balance pass demands a change.",
   "forceActiveS1": [],
   "forceInactiveS1": [],
-  "costOverride": {},
-  "roleOverride": {}
+  "costOverride": {
+    "마루젠스키": 4,
+    "키타산 블랙": 4,
+    "아몬드 아이": 4,
+    "심볼리 크리스 에스": 5,
+    "심볼리 루돌프": 5,
+    "부에나 비스타": 5
+  },
+  "roleOverride": {},
+  "costReasons": {
+    "마루젠스키": "도주 5코스트 과밀을 줄이고 4코스트 지원 선택지를 확보한다.",
+    "키타산 블랙": "도주 5코스트 과밀을 줄이고 4코스트 전열을 강화한다.",
+    "아몬드 아이": "선행 5코스트 과밀을 줄이고 4코스트 주력 딜러 선택지를 확보한다.",
+    "심볼리 크리스 에스": "선입 5코스트를 2명으로 늘리고 근접 전사 역할을 확보한다.",
+    "심볼리 루돌프": "없던 추입 5코스트 전열 선택지를 추가한다. 각질은 기존 경기 근거를 유지한다.",
+    "부에나 비스타": "없던 추입 5코스트 주력 딜러를 추가해 각질별 2명을 맞춘다."
+  }
 }

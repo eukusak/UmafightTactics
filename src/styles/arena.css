@@ -103,7 +103,9 @@ html, body, #root { font-family: "Noto Sans KR Variable", "Malgun Gothic", syste
 .promotion-card { position:relative; display:flex; align-items:center; gap:16px; min-width:230px; padding:12px 24px; color:#fff5da; border:1px solid #e2c376; border-radius:14px; background:linear-gradient(120deg,#173c50f5,#142638f5); box-shadow:0 8px 40px #05122190,0 0 25px #efc36835; }
 .promotion-vfx { position:absolute; width:128px; height:128px; left:-10px; top:50%; transform:translateY(-50%); background-size:600% 200%; }
 
-.arena-backdrop { position:absolute; inset:0; background-size:100% 100%; background-position:center; pointer-events:none; }
+.arena-backdrop { position:absolute; inset:0; background:#244a3b; pointer-events:none; }
+.arena-background-image { position:absolute; inset:0; display:block; width:100%; height:100%; max-width:none; object-fit:fill; pointer-events:none; }
+.arena-image-retry { position:absolute; right:16px; bottom:16px; z-index:2; pointer-events:auto; font-size:13px; }
 .arena-grid { position:absolute; inset:0; }
 .arena-grid polygon { stroke-width:1; }
 .arena-grid .friendly { fill:#154e4a; fill-opacity:.1; stroke:#baffd5; stroke-opacity:.2; }

@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "rosterHash": "76b52c4cf30795f3",
+  "rosterHash": "e577139f4ebec75f",
   "seasons": [
     {
       "id": "s1",
@@ -81,10 +81,11 @@
           "thresholds": [
             3,
             5,
-            7
+            7,
+            10
           ],
           "emblemItemId": null,
-          "description": "트윙클 개막전 전용 · 해당 특성 기물에게 적용 · 서로 다른 기물 3/5/7명",
+          "description": "트윙클 개막전 전용 · 해당 특성 기물에게 적용 · 서로 다른 기물 3/5/7/10명",
           "tiers": [
             {
               "count": 3,
@@ -139,6 +140,24 @@
                 }
               ],
               "description": "공격속도 +18%, 이동속도 +24%"
+            },
+            {
+              "count": 10,
+              "effects": [
+                {
+                  "kind": "STAT_MUL",
+                  "stat": "attackSpeed",
+                  "value": 0.24,
+                  "target": "SELF"
+                },
+                {
+                  "kind": "STAT_MUL",
+                  "stat": "moveSpeedHexPerSec",
+                  "value": 0.32,
+                  "target": "SELF"
+                }
+              ],
+              "description": "공격속도 +24%, 이동속도 +32%"
             }
           ]
         },
@@ -149,10 +168,11 @@
           "thresholds": [
             3,
             5,
-            7
+            7,
+            10
           ],
           "emblemItemId": null,
-          "description": "트윙클 개막전 전용 · 해당 특성 기물에게 적용 · 서로 다른 기물 3/5/7명",
+          "description": "트윙클 개막전 전용 · 해당 특성 기물에게 적용 · 서로 다른 기물 3/5/7/10명",
           "tiers": [
             {
               "count": 3,
@@ -198,6 +218,21 @@
                 }
               ],
               "description": "전투 시작 시 8초 동안 최대 체력 24% 보호막"
+            },
+            {
+              "count": 10,
+              "effects": [
+                {
+                  "kind": "SHIELD_MAXHP_PCT",
+                  "value": 0.32,
+                  "duration": 8,
+                  "trigger": {
+                    "when": "COMBAT_START"
+                  },
+                  "target": "SELF"
+                }
+              ],
+              "description": "전투 시작 시 8초 동안 최대 체력 32% 보호막"
             }
           ]
         },
@@ -208,10 +243,11 @@
           "thresholds": [
             3,
             5,
-            7
+            7,
+            10
           ],
           "emblemItemId": null,
-          "description": "트윙클 개막전 전용 · 해당 특성 기물에게 적용 · 서로 다른 기물 3/5/7명",
+          "description": "트윙클 개막전 전용 · 해당 특성 기물에게 적용 · 서로 다른 기물 3/5/7/10명",
           "tiers": [
             {
               "count": 3,
@@ -266,6 +302,24 @@
                 }
               ],
               "description": "시작 마나 +24, 주문력 +15"
+            },
+            {
+              "count": 10,
+              "effects": [
+                {
+                  "kind": "STAT_ADD",
+                  "stat": "startMana",
+                  "value": 32,
+                  "target": "SELF"
+                },
+                {
+                  "kind": "STAT_ADD",
+                  "stat": "abilityPower",
+                  "value": 20,
+                  "target": "SELF"
+                }
+              ],
+              "description": "시작 마나 +32, 주문력 +20"
             }
           ]
         },
@@ -276,10 +330,11 @@
           "thresholds": [
             3,
             5,
-            7
+            7,
+            10
           ],
           "emblemItemId": null,
-          "description": "트윙클 개막전 전용 · 해당 특성 기물에게 적용 · 서로 다른 기물 3/5/7명",
+          "description": "트윙클 개막전 전용 · 해당 특성 기물에게 적용 · 서로 다른 기물 3/5/7/10명",
           "tiers": [
             {
               "count": 3,
@@ -334,6 +389,24 @@
                 }
               ],
               "description": "방어력·마법 저항력 +24"
+            },
+            {
+              "count": 10,
+              "effects": [
+                {
+                  "kind": "STAT_ADD",
+                  "stat": "armor",
+                  "value": 32,
+                  "target": "SELF"
+                },
+                {
+                  "kind": "STAT_ADD",
+                  "stat": "magicResist",
+                  "value": 32,
+                  "target": "SELF"
+                }
+              ],
+              "description": "방어력·마법 저항력 +32"
             }
           ]
         }
@@ -381,7 +454,7 @@
         "mejiro_mcqueen": "s1_banner",
         "super_creek": "s1_pace",
         "agnes_tachyon": "s1_team",
-        "buena_vista": "s1_banner",
+        "almond_eye": "s1_banner",
         "gran_alegria": "s1_spark",
         "orfevre": "s1_pace",
         "biwa_hayahide": "s1_banner",
@@ -389,16 +462,16 @@
         "oguri_cap": "s1_spark",
         "smart_falcon": "s1_pace",
         "chrono_genesis": "s1_banner",
-        "symboli_kris_s": "s1_spark",
-        "symboli_rudolf": "s1_team",
-        "almond_eye": "s1_team",
+        "maruzensky": "s1_spark",
+        "kitasan_black": "s1_team",
+        "buena_vista": "s1_team",
         "special_week": "s1_pace",
         "daiwa_scarlet": "s1_banner",
         "mihono_bourbon": "s1_spark",
         "taiki_shuttle": "s1_team",
-        "maruzensky": "s1_banner",
-        "kitasan_black": "s1_pace",
-        "tm_opera_o": "s1_spark"
+        "symboli_kris_s": "s1_pace",
+        "symboli_rudolf": "s1_spark",
+        "tm_opera_o": "s1_banner"
       }
     },
     {
@@ -455,20 +528,20 @@
         "tokai_teio",
         "gran_alegria",
         "fuji_kiseki",
-        "symboli_rudolf",
-        "oguri_cap",
-        "symboli_kris_s",
-        "smart_falcon",
-        "orfevre",
-        "chrono_genesis",
-        "biwa_hayahide",
-        "buena_vista",
-        "kitasan_black",
         "maruzensky",
-        "taiki_shuttle",
-        "special_week",
-        "tm_opera_o",
+        "kitasan_black",
+        "oguri_cap",
+        "chrono_genesis",
+        "orfevre",
+        "smart_falcon",
         "almond_eye",
+        "biwa_hayahide",
+        "symboli_rudolf",
+        "symboli_kris_s",
+        "taiki_shuttle",
+        "tm_opera_o",
+        "special_week",
+        "buena_vista",
         "mihono_bourbon",
         "daiwa_scarlet"
       ],
@@ -480,10 +553,11 @@
           "thresholds": [
             3,
             5,
-            7
+            7,
+            10
           ],
           "emblemItemId": null,
-          "description": "별빛 오케스트라 전용 · 해당 특성 기물에게 적용 · 서로 다른 기물 3/5/7명",
+          "description": "별빛 오케스트라 전용 · 해당 특성 기물에게 적용 · 서로 다른 기물 3/5/7/10명",
           "tiers": [
             {
               "count": 3,
@@ -526,6 +600,20 @@
                 }
               ],
               "description": "기본 공격 적중 시 추가 마나 3"
+            },
+            {
+              "count": 10,
+              "effects": [
+                {
+                  "kind": "ON_HIT_MANA",
+                  "value": 4,
+                  "trigger": {
+                    "when": "ON_ATTACK"
+                  },
+                  "target": "SELF"
+                }
+              ],
+              "description": "기본 공격 적중 시 추가 마나 4"
             }
           ]
         },
@@ -536,10 +624,11 @@
           "thresholds": [
             3,
             5,
-            7
+            7,
+            10
           ],
           "emblemItemId": null,
-          "description": "별빛 오케스트라 전용 · 해당 특성 기물에게 적용 · 서로 다른 기물 3/5/7명",
+          "description": "별빛 오케스트라 전용 · 해당 특성 기물에게 적용 · 서로 다른 기물 3/5/7/10명",
           "tiers": [
             {
               "count": 3,
@@ -573,6 +662,17 @@
                 }
               ],
               "description": "스킬 피해 +21%"
+            },
+            {
+              "count": 10,
+              "effects": [
+                {
+                  "kind": "SKILL_DAMAGE_AMP",
+                  "value": 0.28,
+                  "target": "SELF"
+                }
+              ],
+              "description": "스킬 피해 +28%"
             }
           ]
         },
@@ -583,10 +683,11 @@
           "thresholds": [
             3,
             5,
-            7
+            7,
+            10
           ],
           "emblemItemId": null,
-          "description": "별빛 오케스트라 전용 · 해당 특성 기물에게 적용 · 서로 다른 기물 3/5/7명",
+          "description": "별빛 오케스트라 전용 · 해당 특성 기물에게 적용 · 서로 다른 기물 3/5/7/10명",
           "tiers": [
             {
               "count": 3,
@@ -629,6 +730,20 @@
                 }
               ],
               "description": "스킬 사용 시 자신의 최대 체력 7.5% 회복"
+            },
+            {
+              "count": 10,
+              "effects": [
+                {
+                  "kind": "HEAL_MAXHP_PCT",
+                  "value": 0.1,
+                  "trigger": {
+                    "when": "ON_CAST"
+                  },
+                  "target": "SELF"
+                }
+              ],
+              "description": "스킬 사용 시 자신의 최대 체력 10% 회복"
             }
           ]
         },
@@ -639,10 +754,11 @@
           "thresholds": [
             3,
             5,
-            7
+            7,
+            10
           ],
           "emblemItemId": null,
-          "description": "별빛 오케스트라 전용 · 해당 특성 기물에게 적용 · 서로 다른 기물 3/5/7명",
+          "description": "별빛 오케스트라 전용 · 해당 특성 기물에게 적용 · 서로 다른 기물 3/5/7/10명",
           "tiers": [
             {
               "count": 3,
@@ -688,6 +804,21 @@
                 }
               ],
               "description": "스킬 사용 시 3초 동안 자신의 최대 체력 12% 보호막"
+            },
+            {
+              "count": 10,
+              "effects": [
+                {
+                  "kind": "SHIELD_MAXHP_PCT",
+                  "value": 0.16,
+                  "duration": 3,
+                  "trigger": {
+                    "when": "ON_CAST"
+                  },
+                  "target": "SELF"
+                }
+              ],
+              "description": "스킬 사용 시 3초 동안 자신의 최대 체력 16% 보호막"
             }
           ]
         }
@@ -734,7 +865,7 @@
         "gentildonna": "s2_aria",
         "mejiro_mcqueen": "s2_encore",
         "super_creek": "s2_harmony",
-        "buena_vista": "s2_rhythm",
+        "almond_eye": "s2_rhythm",
         "gran_alegria": "s2_aria",
         "orfevre": "s2_encore",
         "tokai_teio": "s2_harmony",
@@ -743,15 +874,15 @@
         "oguri_cap": "s2_aria",
         "smart_falcon": "s2_harmony",
         "chrono_genesis": "s2_aria",
-        "symboli_kris_s": "s2_rhythm",
-        "symboli_rudolf": "s2_encore",
-        "almond_eye": "s2_harmony",
+        "maruzensky": "s2_rhythm",
+        "kitasan_black": "s2_encore",
+        "buena_vista": "s2_harmony",
         "special_week": "s2_rhythm",
         "daiwa_scarlet": "s2_encore",
         "mihono_bourbon": "s2_aria",
         "taiki_shuttle": "s2_harmony",
-        "maruzensky": "s2_rhythm",
-        "kitasan_black": "s2_aria",
+        "symboli_kris_s": "s2_rhythm",
+        "symboli_rudolf": "s2_aria",
         "tm_opera_o": "s2_encore"
       }
     },
@@ -810,20 +941,20 @@
         "fuji_kiseki",
         "oguri_cap",
         "gran_alegria",
-        "symboli_rudolf",
         "smart_falcon",
-        "symboli_kris_s",
-        "orfevre",
-        "biwa_hayahide",
-        "chrono_genesis",
-        "agnes_tachyon",
         "maruzensky",
         "kitasan_black",
+        "orfevre",
+        "chrono_genesis",
+        "agnes_tachyon",
+        "biwa_hayahide",
+        "symboli_rudolf",
         "taiki_shuttle",
+        "symboli_kris_s",
         "special_week",
         "tm_opera_o",
         "mihono_bourbon",
-        "almond_eye",
+        "buena_vista",
         "daiwa_scarlet"
       ],
       "traits": [
@@ -834,10 +965,11 @@
           "thresholds": [
             3,
             5,
-            7
+            7,
+            10
           ],
           "emblemItemId": null,
-          "description": "와일드 프런티어 전용 · 해당 특성 기물에게 적용 · 서로 다른 기물 3/5/7명",
+          "description": "와일드 프런티어 전용 · 해당 특성 기물에게 적용 · 서로 다른 기물 3/5/7/10명",
           "tiers": [
             {
               "count": 3,
@@ -874,6 +1006,18 @@
                 }
               ],
               "description": "최대 체력 +24%"
+            },
+            {
+              "count": 10,
+              "effects": [
+                {
+                  "kind": "STAT_MUL",
+                  "stat": "hp",
+                  "value": 0.32,
+                  "target": "SELF"
+                }
+              ],
+              "description": "최대 체력 +32%"
             }
           ]
         },
@@ -884,10 +1028,11 @@
           "thresholds": [
             3,
             5,
-            7
+            7,
+            10
           ],
           "emblemItemId": null,
-          "description": "와일드 프런티어 전용 · 해당 특성 기물에게 적용 · 서로 다른 기물 3/5/7명",
+          "description": "와일드 프런티어 전용 · 해당 특성 기물에게 적용 · 서로 다른 기물 3/5/7/10명",
           "tiers": [
             {
               "count": 3,
@@ -933,6 +1078,21 @@
                 }
               ],
               "description": "5초마다 자신의 최대 체력 9% 회복"
+            },
+            {
+              "count": 10,
+              "effects": [
+                {
+                  "kind": "HEAL_MAXHP_PCT",
+                  "value": 0.12,
+                  "trigger": {
+                    "when": "EVERY_SECONDS",
+                    "threshold": 5
+                  },
+                  "target": "SELF"
+                }
+              ],
+              "description": "5초마다 자신의 최대 체력 12% 회복"
             }
           ]
         },
@@ -943,10 +1103,11 @@
           "thresholds": [
             3,
             5,
-            7
+            7,
+            10
           ],
           "emblemItemId": null,
-          "description": "와일드 프런티어 전용 · 해당 특성 기물에게 적용 · 서로 다른 기물 3/5/7명",
+          "description": "와일드 프런티어 전용 · 해당 특성 기물에게 적용 · 서로 다른 기물 3/5/7/10명",
           "tiers": [
             {
               "count": 3,
@@ -998,6 +1159,23 @@
                 }
               ],
               "description": "모든 피해 흡혈 +12%, 공격력 +12%"
+            },
+            {
+              "count": 10,
+              "effects": [
+                {
+                  "kind": "OMNIVAMP",
+                  "value": 0.16,
+                  "target": "SELF"
+                },
+                {
+                  "kind": "STAT_MUL",
+                  "stat": "attackDamage",
+                  "value": 0.16,
+                  "target": "SELF"
+                }
+              ],
+              "description": "모든 피해 흡혈 +16%, 공격력 +16%"
             }
           ]
         },
@@ -1008,10 +1186,11 @@
           "thresholds": [
             3,
             5,
-            7
+            7,
+            10
           ],
           "emblemItemId": null,
-          "description": "와일드 프런티어 전용 · 해당 특성 기물에게 적용 · 서로 다른 기물 3/5/7명",
+          "description": "와일드 프런티어 전용 · 해당 특성 기물에게 적용 · 서로 다른 기물 3/5/7/10명",
           "tiers": [
             {
               "count": 3,
@@ -1072,6 +1251,26 @@
                 }
               ],
               "description": "받는 피해 12% 감소, 시작 6초 방해 효과 면역"
+            },
+            {
+              "count": 10,
+              "effects": [
+                {
+                  "kind": "DAMAGE_REDUCTION",
+                  "value": 0.16,
+                  "target": "SELF"
+                },
+                {
+                  "kind": "CC_IMMUNE",
+                  "value": 0,
+                  "duration": 8,
+                  "trigger": {
+                    "when": "COMBAT_START"
+                  },
+                  "target": "SELF"
+                }
+              ],
+              "description": "받는 피해 16% 감소, 시작 8초 방해 효과 면역"
             }
           ]
         }
@@ -1126,16 +1325,16 @@
         "oguri_cap": "s3_trail",
         "smart_falcon": "s3_spring",
         "chrono_genesis": "s3_fang",
-        "symboli_kris_s": "s3_stone",
-        "mayano_top_gun": "s3_trail",
-        "symboli_rudolf": "s3_spring",
-        "almond_eye": "s3_fang",
+        "maruzensky": "s3_stone",
+        "kitasan_black": "s3_trail",
+        "mayano_top_gun": "s3_spring",
+        "buena_vista": "s3_fang",
         "special_week": "s3_stone",
         "daiwa_scarlet": "s3_trail",
         "mihono_bourbon": "s3_spring",
         "taiki_shuttle": "s3_fang",
-        "maruzensky": "s3_stone",
-        "kitasan_black": "s3_trail",
+        "symboli_kris_s": "s3_stone",
+        "symboli_rudolf": "s3_trail",
         "tm_opera_o": "s3_spring"
       }
     },
@@ -1194,21 +1393,21 @@
         "smart_falcon",
         "gran_alegria",
         "fuji_kiseki",
-        "oguri_cap",
-        "symboli_kris_s",
-        "mayano_top_gun",
-        "symboli_rudolf",
-        "orfevre",
-        "biwa_hayahide",
-        "chrono_genesis",
-        "maruzensky",
         "kitasan_black",
+        "oguri_cap",
+        "maruzensky",
+        "orfevre",
+        "mayano_top_gun",
+        "chrono_genesis",
+        "tokai_teio",
         "taiki_shuttle",
-        "special_week",
+        "symboli_kris_s",
+        "symboli_rudolf",
         "tm_opera_o",
+        "special_week",
         "mihono_bourbon",
-        "almond_eye",
-        "daiwa_scarlet"
+        "daiwa_scarlet",
+        "buena_vista"
       ],
       "traits": [
         {
@@ -1218,10 +1417,11 @@
           "thresholds": [
             3,
             5,
-            7
+            7,
+            10
           ],
           "emblemItemId": null,
-          "description": "네온 스프린트 전용 · 해당 특성 기물에게 적용 · 서로 다른 기물 3/5/7명",
+          "description": "네온 스프린트 전용 · 해당 특성 기물에게 적용 · 서로 다른 기물 3/5/7/10명",
           "tiers": [
             {
               "count": 3,
@@ -1267,6 +1467,21 @@
                 }
               ],
               "description": "기본 공격에 마법 피해 30 추가"
+            },
+            {
+              "count": 10,
+              "effects": [
+                {
+                  "kind": "ON_HIT_DAMAGE",
+                  "value": 40,
+                  "damageType": "MAGIC",
+                  "trigger": {
+                    "when": "ON_ATTACK"
+                  },
+                  "target": "CURRENT_TARGET"
+                }
+              ],
+              "description": "기본 공격에 마법 피해 40 추가"
             }
           ]
         },
@@ -1277,10 +1492,11 @@
           "thresholds": [
             3,
             5,
-            7
+            7,
+            10
           ],
           "emblemItemId": null,
-          "description": "네온 스프린트 전용 · 해당 특성 기물에게 적용 · 서로 다른 기물 3/5/7명",
+          "description": "네온 스프린트 전용 · 해당 특성 기물에게 적용 · 서로 다른 기물 3/5/7/10명",
           "tiers": [
             {
               "count": 3,
@@ -1329,6 +1545,22 @@
                 }
               ],
               "description": "치명타 확률 +15%, 치명타 피해 +24%"
+            },
+            {
+              "count": 10,
+              "effects": [
+                {
+                  "kind": "CRIT_CHANCE_ADD",
+                  "value": 0.2,
+                  "target": "SELF"
+                },
+                {
+                  "kind": "CRIT_DAMAGE_ADD",
+                  "value": 0.32,
+                  "target": "SELF"
+                }
+              ],
+              "description": "치명타 확률 +20%, 치명타 피해 +32%"
             }
           ]
         },
@@ -1339,10 +1571,11 @@
           "thresholds": [
             3,
             5,
-            7
+            7,
+            10
           ],
           "emblemItemId": null,
-          "description": "네온 스프린트 전용 · 해당 특성 기물에게 적용 · 서로 다른 기물 3/5/7명",
+          "description": "네온 스프린트 전용 · 해당 특성 기물에게 적용 · 서로 다른 기물 3/5/7/10명",
           "tiers": [
             {
               "count": 3,
@@ -1391,6 +1624,22 @@
                 }
               ],
               "description": "전투 시작 6초 동안 공격속도 +36%"
+            },
+            {
+              "count": 10,
+              "effects": [
+                {
+                  "kind": "STAT_MUL",
+                  "stat": "attackSpeed",
+                  "value": 0.48,
+                  "duration": 6,
+                  "trigger": {
+                    "when": "COMBAT_START"
+                  },
+                  "target": "SELF"
+                }
+              ],
+              "description": "전투 시작 6초 동안 공격속도 +48%"
             }
           ]
         },
@@ -1401,10 +1650,11 @@
           "thresholds": [
             3,
             5,
-            7
+            7,
+            10
           ],
           "emblemItemId": null,
-          "description": "네온 스프린트 전용 · 해당 특성 기물에게 적용 · 서로 다른 기물 3/5/7명",
+          "description": "네온 스프린트 전용 · 해당 특성 기물에게 적용 · 서로 다른 기물 3/5/7/10명",
           "tiers": [
             {
               "count": 3,
@@ -1450,6 +1700,21 @@
                 }
               ],
               "description": "체력이 절반 미만인 대상에게 피해 +24%"
+            },
+            {
+              "count": 10,
+              "effects": [
+                {
+                  "kind": "DAMAGE_AMP",
+                  "value": 0.32,
+                  "trigger": {
+                    "when": "TARGET_HP_BELOW",
+                    "threshold": 0.5
+                  },
+                  "target": "SELF"
+                }
+              ],
+              "description": "체력이 절반 미만인 대상에게 피해 +32%"
             }
           ]
         }
@@ -1498,23 +1763,23 @@
         "super_creek": "s4_chrome",
         "gran_alegria": "s4_nitro",
         "orfevre": "s4_chase",
-        "biwa_hayahide": "s4_pulse",
-        "fuji_kiseki": "s4_chrome",
-        "oguri_cap": "s4_nitro",
-        "smart_falcon": "s4_chase",
-        "chrono_genesis": "s4_pulse",
-        "symboli_kris_s": "s4_chrome",
-        "mayano_top_gun": "s4_nitro",
-        "symboli_rudolf": "s4_chase",
-        "zenno_rob_roy": "s4_pulse",
-        "almond_eye": "s4_pulse",
-        "special_week": "s4_chrome",
-        "daiwa_scarlet": "s4_nitro",
-        "mihono_bourbon": "s4_chase",
-        "taiki_shuttle": "s4_pulse",
+        "tokai_teio": "s4_pulse",
+        "fuji_kiseki": "s4_pulse",
+        "oguri_cap": "s4_chrome",
+        "smart_falcon": "s4_nitro",
+        "chrono_genesis": "s4_chase",
         "maruzensky": "s4_chase",
         "kitasan_black": "s4_chrome",
-        "tm_opera_o": "s4_nitro"
+        "mayano_top_gun": "s4_nitro",
+        "zenno_rob_roy": "s4_pulse",
+        "buena_vista": "s4_chrome",
+        "special_week": "s4_nitro",
+        "daiwa_scarlet": "s4_chase",
+        "mihono_bourbon": "s4_pulse",
+        "taiki_shuttle": "s4_chrome",
+        "symboli_kris_s": "s4_nitro",
+        "symboli_rudolf": "s4_chase",
+        "tm_opera_o": "s4_pulse"
       }
     },
     {
@@ -1571,21 +1836,21 @@
         "smart_falcon",
         "fuji_kiseki",
         "gran_alegria",
+        "kitasan_black",
         "oguri_cap",
         "mayano_top_gun",
-        "symboli_kris_s",
-        "symboli_rudolf",
         "chrono_genesis",
-        "biwa_hayahide",
-        "orfevre",
-        "tokai_teio",
-        "kitasan_black",
-        "taiki_shuttle",
-        "tm_opera_o",
         "maruzensky",
+        "orfevre",
+        "biwa_hayahide",
+        "almond_eye",
+        "taiki_shuttle",
+        "symboli_kris_s",
+        "tm_opera_o",
+        "symboli_rudolf",
         "special_week",
         "mihono_bourbon",
-        "almond_eye",
+        "buena_vista",
         "daiwa_scarlet"
       ],
       "traits": [
@@ -1596,10 +1861,11 @@
           "thresholds": [
             3,
             5,
-            7
+            7,
+            10
           ],
           "emblemItemId": null,
-          "description": "크라운 피날레 전용 · 해당 특성 기물에게 적용 · 서로 다른 기물 3/5/7명",
+          "description": "크라운 피날레 전용 · 해당 특성 기물에게 적용 · 서로 다른 기물 3/5/7/10명",
           "tiers": [
             {
               "count": 3,
@@ -1654,6 +1920,24 @@
                 }
               ],
               "description": "공격력 +15%, 주문력 +21"
+            },
+            {
+              "count": 10,
+              "effects": [
+                {
+                  "kind": "STAT_MUL",
+                  "stat": "attackDamage",
+                  "value": 0.2,
+                  "target": "SELF"
+                },
+                {
+                  "kind": "STAT_ADD",
+                  "stat": "abilityPower",
+                  "value": 28,
+                  "target": "SELF"
+                }
+              ],
+              "description": "공격력 +20%, 주문력 +28"
             }
           ]
         },
@@ -1664,10 +1948,11 @@
           "thresholds": [
             3,
             5,
-            7
+            7,
+            10
           ],
           "emblemItemId": null,
-          "description": "크라운 피날레 전용 · 해당 특성 기물에게 적용 · 서로 다른 기물 3/5/7명",
+          "description": "크라운 피날레 전용 · 해당 특성 기물에게 적용 · 서로 다른 기물 3/5/7/10명",
           "tiers": [
             {
               "count": 3,
@@ -1719,6 +2004,23 @@
                 }
               ],
               "description": "체력 40% 미만일 때 한 번, 5초 동안 최대 체력 24% 보호막"
+            },
+            {
+              "count": 10,
+              "effects": [
+                {
+                  "kind": "SHIELD_MAXHP_PCT",
+                  "value": 0.32,
+                  "duration": 5,
+                  "oncePerCombat": true,
+                  "trigger": {
+                    "when": "HP_BELOW",
+                    "threshold": 0.4
+                  },
+                  "target": "SELF"
+                }
+              ],
+              "description": "체력 40% 미만일 때 한 번, 5초 동안 최대 체력 32% 보호막"
             }
           ]
         },
@@ -1729,10 +2031,11 @@
           "thresholds": [
             3,
             5,
-            7
+            7,
+            10
           ],
           "emblemItemId": null,
-          "description": "크라운 피날레 전용 · 해당 특성 기물에게 적용 · 서로 다른 기물 3/5/7명",
+          "description": "크라운 피날레 전용 · 해당 특성 기물에게 적용 · 서로 다른 기물 3/5/7/10명",
           "tiers": [
             {
               "count": 3,
@@ -1775,6 +2078,20 @@
                 }
               ],
               "description": "처치 관여 시 자신의 최대 체력 18% 회복"
+            },
+            {
+              "count": 10,
+              "effects": [
+                {
+                  "kind": "HEAL_MAXHP_PCT",
+                  "value": 0.24,
+                  "trigger": {
+                    "when": "ON_TAKEDOWN_ASSIST"
+                  },
+                  "target": "SELF"
+                }
+              ],
+              "description": "처치 관여 시 자신의 최대 체력 24% 회복"
             }
           ]
         },
@@ -1785,10 +2102,11 @@
           "thresholds": [
             3,
             5,
-            7
+            7,
+            10
           ],
           "emblemItemId": null,
-          "description": "크라운 피날레 전용 · 해당 특성 기물에게 적용 · 서로 다른 기물 3/5/7명",
+          "description": "크라운 피날레 전용 · 해당 특성 기물에게 적용 · 서로 다른 기물 3/5/7/10명",
           "tiers": [
             {
               "count": 3,
@@ -1867,6 +2185,32 @@
                 }
               ],
               "description": "전투 10초 후 공격속도 +24%, 피해 +12%"
+            },
+            {
+              "count": 10,
+              "effects": [
+                {
+                  "kind": "STAT_MUL",
+                  "stat": "attackSpeed",
+                  "value": 0.32,
+                  "oncePerCombat": true,
+                  "trigger": {
+                    "when": "EVERY_SECONDS",
+                    "threshold": 10
+                  },
+                  "target": "SELF"
+                },
+                {
+                  "kind": "DAMAGE_AMP",
+                  "value": 0.16,
+                  "trigger": {
+                    "when": "AFTER_SECONDS",
+                    "threshold": 10
+                  },
+                  "target": "SELF"
+                }
+              ],
+              "description": "전투 10초 후 공격속도 +32%, 피해 +16%"
             }
           ]
         }
@@ -1913,24 +2257,24 @@
         "tanino_gimlet": "s5_legacy",
         "yamanin_zephyr": "s5_finale",
         "super_creek": "s5_crown",
-        "gran_alegria": "s5_vow",
-        "orfevre": "s5_legacy",
-        "tokai_teio": "s5_finale",
+        "almond_eye": "s5_vow",
+        "gran_alegria": "s5_legacy",
+        "orfevre": "s5_finale",
         "biwa_hayahide": "s5_crown",
         "fuji_kiseki": "s5_vow",
         "oguri_cap": "s5_legacy",
         "smart_falcon": "s5_finale",
         "chrono_genesis": "s5_finale",
-        "symboli_kris_s": "s5_crown",
-        "mayano_top_gun": "s5_legacy",
-        "symboli_rudolf": "s5_vow",
-        "almond_eye": "s5_crown",
+        "maruzensky": "s5_vow",
+        "kitasan_black": "s5_legacy",
+        "mayano_top_gun": "s5_crown",
+        "buena_vista": "s5_crown",
         "special_week": "s5_vow",
         "daiwa_scarlet": "s5_legacy",
         "mihono_bourbon": "s5_finale",
         "taiki_shuttle": "s5_crown",
-        "maruzensky": "s5_vow",
-        "kitasan_black": "s5_legacy",
+        "symboli_kris_s": "s5_vow",
+        "symboli_rudolf": "s5_legacy",
         "tm_opera_o": "s5_finale"
       }
     }
