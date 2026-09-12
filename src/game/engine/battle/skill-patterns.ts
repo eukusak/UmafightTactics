@@ -1,5 +1,6 @@
 /** Tactical kits inspired by the supplied TFT sets, adapted to UFT battle scale. */
-import type { EffectDef, SkillDef, SkillTemplate, TargetRule } from '../types';
+import type { Cost, EffectDef, SkillDef, SkillTemplate, TargetRule } from '../types';
+import { COST_SKILL_UTILITY } from '../constants';
 import profiles from '../../../data/manual/skill-profiles.json';
 import evidence from '../../../data/manual/race-evidence.json';
 
@@ -20,7 +21,7 @@ const races = evidence.units as Record<string, { name: string; representative: {
 
 export const authoredBodyFamily = (id: string): SkillTemplate | undefined => roster[id]?.bodyFamily as SkillTemplate | undefined;
 
-export function buildTacticalSkill(unitId: string, base: SkillDef): SkillDef {
+export function buildTacticalSkill(unitId: string, base: SkillDef, cost: Cost = 1): SkillDef {
   const p = roster[unitId];
   if (!p) throw new Error(`Missing authored skill: ${unitId}`);
   if (p.bodyFamily !== base.template || p.primaryTarget !== base.targetRule) throw new Error(`${unitId}: reviewed body contract changed`);
@@ -30,7 +31,8 @@ export function buildTacticalSkill(unitId: string, base: SkillDef): SkillDef {
   const effects: EffectDef[] = [];
   const hit = (v: number, extra: Partial<EffectDef> = {}): EffectDef => ({ kind: 'DAMAGE', value: n(v), damageType: 'MAGIC', target, ...extra });
   const shield = (v: number, who: TargetRule = 'SELF', extra: Partial<EffectDef> = {}): EffectDef => ({ kind: 'SHIELD_FLAT', value: n(v), duration: 4, target: who, ...extra });
-  const buff = (stat: NonNullable<EffectDef['stat']>, value: number, who: TargetRule = 'SELF', extra: Partial<EffectDef> = {}): EffectDef => ({ kind: 'STAT_MUL', stat, value, duration: 4, refresh: true, target: who, ...extra });
+  const utility = (value: number): number => value > 0 ? Math.round(value * COST_SKILL_UTILITY[cost] * 1000) / 1000 : value;
+  const buff = (stat: NonNullable<EffectDef['stat']>, value: number, who: TargetRule = 'SELF', extra: Partial<EffectDef> = {}): EffectDef => ({ kind: 'STAT_MUL', stat, value: utility(value), duration: 4, refresh: true, target: who, ...extra });
   const cc = (status: NonNullable<EffectDef['status']>, duration: number, extra: Partial<EffectDef> = {}): EffectDef => ({ kind: 'APPLY_STATUS', status, duration, target, ...extra });
   const pulses = (effect: EffectDef, count: number, gap = p.pulseInterval) => { for (let i = 0; i < count; i++) effects.push({ ...effect, delay: (effect.delay ?? 0) + i * gap }); };
   const line = { shape: 'LINE', range: 6, maxTargets: 4 } as const;
@@ -172,6 +174,9 @@ export function buildTacticalSkill(unitId: string, base: SkillDef): SkillDef {
     default: throw new Error(`Unknown tactical kit: ${pattern}`);
   }
   const race = races[unitId].representative;
+  // All explicit +N% entries describe the positive STAT_MUL buffs above.
+  // Damage percentages, debuffs and control durations retain their authored values.
+  text = text.replace(/\+(\d+(?:\.\d+)?)%/g, (_, value: string) => `+${Math.round(utility(Number(value) / 100) * 1000) / 10}%`);
   const title = `${race.race_date.slice(0, 4)} ${race.race_name}`;
   return { ...base, effects, displayName: `${races[unitId].name} · ${PATTERN_LABELS[pattern]} (${title})`,
     description: `[${PATTERN_LABELS[pattern]}] ${text} 근거: ${title} ${race.finish_rank}위.`,

@@ -12,6 +12,7 @@ import { useInteractionStore } from '../store/interactionStore';
 import { frameAt, orientSnapshot, samplePosition } from '../game/ui/battle-playback';
 import type { UnitInstance } from '../game/engine/state';
 import { ItemIcon } from './common';
+import { ArenaImage } from './ArenaImage';
 
 const FIELD_W = 1320;
 const FIELD_H = 658;
@@ -21,7 +22,8 @@ export function ArenaBackdrop(): JSX.Element {
   const running = useGameStore((s) => s.battleRunning);
   useGameStore((s) => s.revision);
   const background = arenaUrl(match?.stage, !!match && roundInfo(match.stage, match.round).kind === 'PVE');
-  return <div className="arena-backdrop" style={{ backgroundImage: `url(${background})` }}>
+  return <div className="arena-backdrop">
+    <ArenaImage url={background} fallback={arenaUrl(1, false)} />
     <svg className="arena-grid" width={FIELD_W} height={FIELD_H} aria-hidden="true">
       {Array.from({ length: 56 }, (_, i) => {
         const cell = { q: i % 7, r: Math.floor(i / 7) };

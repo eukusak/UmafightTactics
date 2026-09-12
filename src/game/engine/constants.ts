@@ -17,6 +17,11 @@ export const BASE_AD: Record<Cost, number> = { 1: 48, 2: 54, 3: 60, 4: 68, 5: 76
 export const BASE_AS: Record<Cost, number> = { 1: 0.68, 2: 0.7, 3: 0.72, 4: 0.74, 5: 0.76 };
 export const BASE_RESIST: Record<Cost, number> = { 1: 28, 2: 30, 3: 32, 4: 35, 5: 38 };
 
+/** Same kit/percentile at one star: damage, healing and flat shields separate by cost. */
+export const COST_SKILL_POWER: Record<Cost, number> = { 1: 1, 2: 1.14, 3: 1.32, 4: 1.56, 5: 1.9 };
+/** Utility scales more gently to avoid multiplying team-wide buffs into runaway carries. */
+export const COST_SKILL_UTILITY: Record<Cost, number> = { 1: 1, 2: 1.06, 3: 1.14, 4: 1.24, 5: 1.36 };
+
 /** Spec §9.5 — role mana pools, before the run-style adjustment. */
 export const ROLE_MANA: Record<Role, { start: number; max: number }> = {
   TANK: { start: 30, max: 90 },

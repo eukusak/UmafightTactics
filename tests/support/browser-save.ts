@@ -33,6 +33,19 @@ if (mode === 'patch-tools') {
   p.bench.push(extra);
 }
 if (mode === 'item-rewards') { p.items = []; p.pendingGrants = [{ kind: 'RADIANT_CHOICE', count: 1 }, { kind: 'ARTIFACT_CHOICE', count: 1 }]; }
+if (mode === 'six-shop') p.augments.push('shop_extra_slot');
+if (mode === 'trait-chase') {
+  p.level = 9;
+  const natural = getSeasonUnits(state.seasonId).filter(u => u.traits.includes('sprinter'));
+  const donors = getSeasonUnits(state.seasonId).filter(u => !u.traits.includes('sprinter') && u.id !== p.bench[0].unitDefId).slice(0, 9 - natural.length);
+  for (const [i, def] of [...natural, ...donors].entries()) {
+    if (!take(state.pool, def.id, 1)) throw new Error('trait fixture pool');
+    const u = newInstance(state, def.id, 1);
+    u.position = { q: i % 7, r: Math.floor(i / 7) };
+    if (i >= natural.length) u.items.push('emblem_sprinter');
+    p.board.push(u);
+  }
+}
 p.shop = rollShop(p, state.pool, new Rng(9001));
 if (mode === 'augment') { state.stage = 2; state.round = 1; state.augmentOffers = createAugmentOffers(state, new Rng(91)); state.phase = 'AUGMENT_SELECT'; }
 console.log(JSON.stringify(serializeMatch(director)));

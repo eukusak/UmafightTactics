@@ -50,11 +50,12 @@
         "description": "[직선 돌파] 대상 방향으로 돌진해 주변 적에게 274 물리피해를 입히고 4초간 공격속도 +35%."
       },
       "originalSkillSignature": "8ac194cdae59ec9105bc27211fa715ff2d9f3538ac1b6bcda89f36a89d16bbab",
-      "skillSignature": "1648a399fa582a0486023d45ff1f096206ff4135dfdca02e5664fe2121214822",
+      "skillSignature": "39cdc44510f08756f4f041d1de916160fdb8988fa5b2721ba9813e3d26aa176b",
       "runtimeSha256": "8c9211fc584ea07013bf11b91ce389b0b97576ef950dd9eaa2584e55ca3f6470",
       "variant": "breach_line",
       "review": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
-      "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings."
+      "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings.",
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
     },
     "silence_suzuka": {
       "originalSkill": {
@@ -93,12 +94,13 @@
         "description": "[광역 폭발] 가장 밀집한 적 무리에 166 마법피해를 입힌다."
       },
       "originalSkillSignature": "f8f6a811b6062e4f4aaa0de6b8e4747e97bad6179c66f9339266dad2f54228d4",
-      "skillSignature": "258f5e5902e8e8aff4e81b7be37da56203091f0b39de38cf04bdd3dc5facbf2d",
+      "skillSignature": "c191ba1eb46d612709f7184cac45e8011e1d2f4989276c6591bbb9fe5b4521f7",
       "runtimeSha256": "b36c0068484d9949aa644a02f7cc36f292c8cb060cbc84e02f09ba823fd955d7",
       "variant": "orbital_beam",
       "review": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
       "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings.",
-      "rasterRevision": "docs/art-source/motions/skill-revisions-2026-09-10/silence_suzuka/review.json"
+      "rasterRevision": "docs/art-source/motions/skill-revisions-2026-09-10/silence_suzuka/review.json",
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
     },
     "tokai_teio": {
       "originalSkill": {
@@ -141,12 +143,13 @@
         "description": "[연속 스퍼트] 대상에게 101 물리피해를 3회 연속으로 가한다."
       },
       "originalSkillSignature": "53f8b70ef58a0626eee71de330677ce40a7738849ad283dbb0f2fbc77254adf4",
-      "skillSignature": "0f5c2e571d02a92a5462afabbac790e3581a42dc80cc377286bde7b5b8f3674b",
+      "skillSignature": "4a2b06f1140a510480ef4e0a38f090dbc59511d601b0a930cb93802686db0753",
       "runtimeSha256": "67592d5f980deda8468ac6a33087ad6378f7231d34e2618ac8a092301eab0000",
       "variant": "focus_three",
       "review": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
       "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings.",
-      "rasterRevision": "docs/art-source/motions/skill-revisions-2026-09-10/tokai_teio/review.json"
+      "rasterRevision": "docs/art-source/motions/skill-revisions-2026-09-10/tokai_teio/review.json",
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
     },
     "maruzensky": {
       "originalSkill": {
@@ -199,12 +202,13 @@
         "description": "[주도권 장악] 6초간 아군 전체의 공격속도 +25%, 방어력/마저 +20."
       },
       "originalSkillSignature": "2e7ca5a6ddbdd3382c342099f7daf046ae4b498f3eee31c4600756bd8e727494",
-      "skillSignature": "3c271e139fa737f704b4aec45f98b2e36527ea5cc1713fdb49f4d907c0562067",
+      "skillSignature": "1903827c02ce7b21a4d028bf5e433b8d2d3dd505fb359a8412b68f101f2430c1",
       "runtimeSha256": "a36d9b7987af9e187eed9da42fe08e79c66c72efa512ba50071f4def2f6e8f0b",
       "variant": "tempo_banner",
       "review": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
       "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings.",
-      "identityRevision": "docs/art-source/motions/identity-revisions-2026-09-12/maruzensky/review.json"
+      "identityRevision": "docs/art-source/motions/identity-revisions-2026-09-12/maruzensky/review.json",
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
     },
     "fuji_kiseki": {
       "originalSkill": {
@@ -243,13 +247,14 @@
         "description": "[광역 폭발] 가장 밀집한 적 무리에 211 마법피해를 입힌다."
       },
       "originalSkillSignature": "8eafe2d3c38f86cb6ec16f1e11a1d526530ebcaf3a814dbbb36c9333e71510a4",
-      "skillSignature": "1d80a9213b1edae0f14d4ae9de40ad22328ac909900f6e1097097e8ac6552f48",
+      "skillSignature": "e1cad23ade63c1ed8dedbaa5c12417d068055cf4fcb5c4b212d11830afb8c074",
       "runtimeSha256": "f7239c1f9c56473607966a3543aa6c72907a9121eb8c4b60450d8c8c2b4d4db1",
       "variant": "expanding_nova",
       "review": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
       "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings.",
       "rasterRevision": "docs/art-source/motions/skill-revisions-2026-09-11/fuji_kiseki/review.json",
-      "scaleRevision": "docs/art-source/motions/skill-scale-2026-09-12/fuji_kiseki.json"
+      "scaleRevision": "docs/art-source/motions/skill-scale-2026-09-12/fuji_kiseki.json",
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
     },
     "oguri_cap": {
       "originalSkill": {
@@ -288,12 +293,13 @@
         "description": "[광역 폭발] 가장 밀집한 적 무리에 209 마법피해를 입힌다."
       },
       "originalSkillSignature": "84fc026079c3fe011c67e10c6cfa3a4fc7ffd6a8be0ce8910281f42734fa812d",
-      "skillSignature": "65eefb83f4a32b62a0ab4d17362ada84bbb1d62111fd001703cdea306420e8f9",
+      "skillSignature": "f6bcaeea8a9156ef5276d6af3e8833400229809b7d2123ad23460ae194885069",
       "runtimeSha256": "7827d810db6f55863290ce0a2703b194fa09ec24fae2fd1c32a17e9fb7b2dbbc",
       "variant": "comet_fall",
       "review": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
       "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings.",
-      "rasterRevision": "docs/art-source/motions/skill-revisions-2026-09-10/oguri_cap/review.json"
+      "rasterRevision": "docs/art-source/motions/skill-revisions-2026-09-10/oguri_cap/review.json",
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
     },
     "gold_ship": {
       "originalSkill": {
@@ -342,13 +348,14 @@
         "description": "[직선 돌파] 대상 방향으로 돌진해 주변 적에게 203 물리피해를 입히고 4초간 공격속도 +35%."
       },
       "originalSkillSignature": "823f0b5a45a9db1ccd687f513b7ed17e82a8e95269a0f99b699a436abad62603",
-      "skillSignature": "4564de25f07442456ea4abfca60d105aa4bf6a310720c7ba2a3b169b60423be6",
+      "skillSignature": "28605f6dddcc89ad958fe311ab4290b31995312db143814ab9486f2737eb8052",
       "runtimeSha256": "da0a61e83873c2aabbc982d72fe2ff3b81f9585a789e53b32f69562b447b1dc9",
       "variant": "pursuit_flurry",
       "review": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
       "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings.",
       "styleRevision": "Running-style correction reviewed: authored body family and targeting retained; current generated skill signature checked.",
-      "rasterRevision": "docs/art-source/motions/skill-revisions-2026-09-11/gold_ship/review.json"
+      "rasterRevision": "docs/art-source/motions/skill-revisions-2026-09-11/gold_ship/review.json",
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
     },
     "vodka": {
       "originalSkill": {
@@ -391,12 +398,13 @@
         "description": "[연속 스퍼트] 대상에게 93 물리피해를 3회 연속으로 가한다."
       },
       "originalSkillSignature": "940a279905c029488e06b489ebf9dd34d787c59e509872d29c94f15a534aae2f",
-      "skillSignature": "cf13baf5401d112c2ef72db9f0a070a6c5a029f7511c036ca4163a7ca08146b2",
+      "skillSignature": "858d7b1b16b25e58b343f37ed021462ccfb48ba33e05ce4c43e8f18a9f5d3833",
       "runtimeSha256": "cf409ed4cbc5ef7e212fa13f21455cb5bb05a5add7c3ce3cf5385940ae1bcc1f",
       "variant": "split_barrage",
       "review": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
       "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings.",
-      "rasterRevision": "docs/art-source/motions/skill-revisions-2026-09-11/vodka/review.json"
+      "rasterRevision": "docs/art-source/motions/skill-revisions-2026-09-11/vodka/review.json",
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
     },
     "daiwa_scarlet": {
       "originalSkill": {
@@ -435,12 +443,13 @@
         "description": "[광역 폭발] 가장 밀집한 적 무리에 235 마법피해를 입힌다."
       },
       "originalSkillSignature": "0598288470252e8707662dba7d557ef19b1bc114335d1237df220506c9a52182",
-      "skillSignature": "5a96af15b15fba6c5f62b81a60a7e3680c561664f139ec0a7885dfb19f3ef048",
+      "skillSignature": "e886716346cd00fd465e4d65e08e0d9b0ce3714f5ea74d536b64aeb66e0f87c1",
       "runtimeSha256": "2b2c0095304f848ac3b0f23f6db702a109701741bcd475923d89d08d7fc1e790",
       "variant": "cinder_field",
       "review": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
       "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings.",
-      "rasterRevision": "docs/art-source/motions/skill-revisions-2026-09-11/daiwa_scarlet/review.json"
+      "rasterRevision": "docs/art-source/motions/skill-revisions-2026-09-11/daiwa_scarlet/review.json",
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
     },
     "taiki_shuttle": {
       "originalSkill": {
@@ -479,11 +488,12 @@
         "description": "[광역 폭발] 가장 밀집한 적 무리에 235 마법피해를 입힌다."
       },
       "originalSkillSignature": "c8e4a83769f92ccbb8e5d6ed6e88ca22e56bcf0473c564c874578abd547b838e",
-      "skillSignature": "181c60a55ecb4beb0954c41699a0718fc86eaa90c79cced50001a8807fca3d98",
+      "skillSignature": "49a3a2e6fb9bedfe9a5ddbbc5c1bdc5f6735036be5e0a1e292555330ee980b73",
       "runtimeSha256": "b62d6da4bddc8e74462f06a04a7c2578bf8e5df27913fa1fa61c3423368c2fc1",
       "variant": "chain_spark",
       "review": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
-      "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings."
+      "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings.",
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
     },
     "grass_wonder": {
       "originalSkill": {
@@ -532,11 +542,12 @@
         "description": "[직선 돌파] 대상 방향으로 돌진해 주변 적에게 220 물리피해를 입히고 4초간 공격속도 +35%."
       },
       "originalSkillSignature": "b9810a358310953135b6cdba4ee61d8a6cf03a3d95fef818fb71d6421f3d0c7c",
-      "skillSignature": "77bbaca674d3e98889ad556214e9ba3db2a72efce1224969315ceb6ab783a0f2",
+      "skillSignature": "af2accb4f5ed7ca493201e46d5182068b22d705c1ebadf2f812c466773c3d6db",
       "runtimeSha256": "858e7b0d0fb4557dadf063d2309182799ea2493cba9dd2545225f1f474303c19",
       "variant": "breach_line",
       "review": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
-      "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings."
+      "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings.",
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
     },
     "hishi_amazon": {
       "originalSkill": {
@@ -581,11 +592,12 @@
         "description": "[진로 봉쇄] 대상 주변 적에게 129 마법피해를 입히고 1.5초간 기절시킨다."
       },
       "originalSkillSignature": "2b2965e47352f1a0671112cafd000756c2db69f3c859e31de4478aee09b4ba79",
-      "skillSignature": "e404f3f22e2d1b797eb92cb9e72992fd83f307b0374973a5bdf16fbc53713194",
+      "skillSignature": "14e1833362f33a51498138af277dd5faf896db4d96b4be665af469a8bf1abb5f",
       "runtimeSha256": "0c5ac3767cb68ddaeaabcb898160f4ebbb3b8262e750d7124e0da5b9399488be",
       "variant": "binding_line",
       "review": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
-      "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings."
+      "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings.",
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
     },
     "mejiro_mcqueen": {
       "originalSkill": {
@@ -638,11 +650,12 @@
         "description": "[주도권 장악] 6초간 아군 전체의 공격속도 +25%, 방어력/마저 +20."
       },
       "originalSkillSignature": "1083ccd060200c3adeca3eca3fdff4f04ebd5d172ee900d108aec2edbf71172b",
-      "skillSignature": "894a769fe66f7a9b6919cb083edf641f1030e0f67e064ef7a595d813c2bdbc12",
+      "skillSignature": "29c54eddad83a5ba9d486d1c479ac01421a171ee91ca28d4d0f6f714c90670f8",
       "runtimeSha256": "ccd08a0f83eb62af28173be0e100bf2804f882794de14122681a6eaaf2ff5c1b",
       "variant": "bulwark_circle",
       "review": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
-      "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings."
+      "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings.",
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
     },
     "el_condor_pasa": {
       "originalSkill": {
@@ -693,12 +706,13 @@
         "description": "[팀 페이스 업] 체력이 가장 낮은 아군을 246 회복시키고 아군 전체 공격력/주문력을 5초간 +20%."
       },
       "originalSkillSignature": "9734d31a74952ab4f8f74b0ab6e50fee8600f697f6eb4de3b4a3a9bd627959ed",
-      "skillSignature": "b52f9d20f88aeb0ddaa42f9dc977424d4cd1520c91f5be59f5604e5e2d5027a1",
+      "skillSignature": "d07fa79ed6961fa205adbc262cd097a773aaee7d7615f5f31f1316256beb7126",
       "runtimeSha256": "82c61c47183b37710bd74ea0d1a2ce568aab587ea2406fa415e7145de2f56e64",
       "variant": "rescue_barrier",
       "review": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
       "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings.",
-      "identityRevision": "docs/art-source/motions/identity-revisions-2026-09-12/el_condor_pasa/review.json"
+      "identityRevision": "docs/art-source/motions/identity-revisions-2026-09-12/el_condor_pasa/review.json",
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
     },
     "tm_opera_o": {
       "originalSkill": {
@@ -748,11 +762,12 @@
         "description": "[선두 방벽] 최대 체력 32% 보호막(5초)을 얻고 2칸 내 적을 2.5초간 도발한다."
       },
       "originalSkillSignature": "65e1472307f584280247a34de7f41a3368b96a8dd00eeb7aeaad7285e37b7748",
-      "skillSignature": "de1e4b9674680e33a4f1cddffb026460cfa292d37e07be01960815bed054cfc0",
+      "skillSignature": "6a058a7c1d3a4b1a46bb313191dd1699a9386691158a0589b36d20aaf7be369b",
       "runtimeSha256": "6a7b7f5dcbe891f26b2bea2717100ca0ab419256402980f61a1b6c515c55f41a",
       "variant": "challenge_bastion",
       "review": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
-      "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings."
+      "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings.",
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
     },
     "narita_brian": {
       "originalSkill": {
@@ -795,11 +810,12 @@
         "description": "[연속 스퍼트] 대상에게 94 물리피해를 3회 연속으로 가한다."
       },
       "originalSkillSignature": "3d222d557400b71e14bebde543f2e78f859816d7d25d002e2050f66db2e5d3cd",
-      "skillSignature": "195567aaa9562a106524a2dd202038d3fdd7c92de8ff87e579a146410ab943c9",
+      "skillSignature": "526ad2b2ca8d83ff88d51f7e1400087c8bc13b1d9bcb62cadba0bb91c151bb0c",
       "runtimeSha256": "2e1a45e1eb45c5f3290c72ce2cf147530a95a70ae6abe815b71a25acd84c24c2",
       "variant": "fan_volley",
       "review": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
-      "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings."
+      "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings.",
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
     },
     "symboli_rudolf": {
       "originalSkill": {
@@ -848,12 +864,13 @@
         "description": "[진로 봉쇄] 대상 주변 적에게 146 마법피해를 입히고 1.5초간 기절시킨다."
       },
       "originalSkillSignature": "27d41e22d4d772a525593c7447fd1db8074303350d4b4cc17113f7bc4ce2a739",
-      "skillSignature": "95108382f16d512aee2e189bf14601c4356d491e3eee538b38e6841e30628904",
+      "skillSignature": "ccd301ae7e36fa92ca4acb3b94e965cd1449c96fadbe37dfa1467b7d7763c055",
       "runtimeSha256": "bffcdd5cb256881b0596545b871f80264e39bb9f07825a69708a6e8b07361e30",
       "variant": "binding_line",
       "review": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
       "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings.",
-      "identityRevision": "docs/art-source/motions/identity-revisions-2026-09-12/symboli_rudolf/review.json"
+      "identityRevision": "docs/art-source/motions/identity-revisions-2026-09-12/symboli_rudolf/review.json",
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
     },
     "air_groove": {
       "originalSkill": {
@@ -903,13 +920,14 @@
         "description": "[선두 방벽] 최대 체력 31% 보호막(5초)을 얻고 2칸 내 적을 2.5초간 도발한다."
       },
       "originalSkillSignature": "138285ad131ff3af814412ffe6de23e2a061223b2346602e9d2a26f6d9604ad9",
-      "skillSignature": "90064e70c2e02774347dc939b66fc56ce872577b3051fd472d22aed356bd661e",
+      "skillSignature": "2179dcf1a946a9ad40e8923cbb403294694b50316114c820563b1598804ffbaa",
       "runtimeSha256": "5f1123b973ae3aa32f26d35fede70c7fb4af4ca89f9601896e151f2af14b7e6d",
       "variant": "counter_surge",
       "review": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
       "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings.",
       "rasterRevision": "docs/art-source/motions/skill-revisions-2026-09-11/air_groove/review.json",
-      "scaleRevision": "docs/art-source/motions/skill-scale-2026-09-12/air_groove.json"
+      "scaleRevision": "docs/art-source/motions/skill-scale-2026-09-12/air_groove.json",
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
     },
     "agnes_digital": {
       "originalSkill": {
@@ -1012,11 +1030,12 @@
         "description": "[주도권 장악] 6초간 아군 전체의 공격속도 +25%, 방어력/마저 +20."
       },
       "originalSkillSignature": "b072867db98ec5b86119b559526b120c3b0fa8ec819c8cef3c9c9c312c503367",
-      "skillSignature": "fb8b902370f0a9e53302f9f32fa1537481942ff01d0f9a9bc578975dc3107f07",
+      "skillSignature": "2b0ed7ed82d821feb44149b59bc3d8be36f73a3ef76e9813e81711da920e5e8e",
       "runtimeSha256": "c140788434f98d2abe24be856322238cac9f44bdcb85a83e812bd450e8808023",
       "variant": "command_pulse",
       "review": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
-      "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings."
+      "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings.",
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
     },
     "tamamo_cross": {
       "originalSkill": {
@@ -1066,12 +1085,13 @@
         "description": "[직선 돌파] 대상 방향으로 돌진해 주변 적에게 224 물리피해를 입히고 4초간 공격속도 +35%."
       },
       "originalSkillSignature": "715aad28b72845b35a87e89b65bedd9a9951046047585da1527a498d4f876d71",
-      "skillSignature": "77bc42e85476b96200a84509818d115d0421b94ede9511e562b46501f21b7a2b",
+      "skillSignature": "179373b8259d12372221cbdf38d83a8e84e581871e38ef5a7148b388741b556f",
       "runtimeSha256": "b5b42abda38163c96426afb73e7d299525376b79c04e4d0812c89f8ab8b12271",
       "variant": "drain_arc",
       "review": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
       "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings.",
-      "rasterRevision": "docs/art-source/motions/skill-revisions-2026-09-11/tamamo_cross/review.json"
+      "rasterRevision": "docs/art-source/motions/skill-revisions-2026-09-11/tamamo_cross/review.json",
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
     },
     "fine_motion": {
       "originalSkill": {
@@ -1121,11 +1141,12 @@
         "description": "[직선 돌파] 대상 방향으로 돌진해 주변 적에게 198 물리피해를 입히고 4초간 공격속도 +35%."
       },
       "originalSkillSignature": "e77219649dabf17e9727c032ba0781051bb55609ae18422736bd5a699f5c98d9",
-      "skillSignature": "9cbbd6194035d283f310bd5622dcc54cf129b75ddedba23b4f1706f10e32f25f",
+      "skillSignature": "b342d046ab2362821e7daa8793169c56a8168dd72174abdb0081996aa0654bcc",
       "runtimeSha256": "d6fc22b3ec9d157b5a14e8bf6131859f7e4e06e7f73639866b23a696fa1a3b16",
       "variant": "dash_feint",
       "review": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
-      "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings."
+      "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings.",
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
     },
     "biwa_hayahide": {
       "originalSkill": {
@@ -1164,12 +1185,13 @@
         "description": "[광역 폭발] 가장 밀집한 적 무리에 208 마법피해를 입힌다."
       },
       "originalSkillSignature": "31fd01c2bbda71aad65dd0cf18211517a9178bd62c0c7674fb29817c8f337550",
-      "skillSignature": "de88ee0dbaec8c6f55f662a8f9cc92a8ccd9278f96b5d7b0982aaec88dabdd39",
+      "skillSignature": "859aff35577ad4b8f7f0476411d7677869f97278aecb66789b12d90034482b63",
       "runtimeSha256": "a29e388d3c00041287c5f41f8162c628d7fefa0abf808a8d8b2fd98066a2b9f3",
       "variant": "comet_fall",
       "review": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
       "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings.",
-      "rasterRevision": "docs/art-source/motions/skill-revisions-2026-09-11/biwa_hayahide/review.json"
+      "rasterRevision": "docs/art-source/motions/skill-revisions-2026-09-11/biwa_hayahide/review.json",
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
     },
     "mayano_top_gun": {
       "originalSkill": {
@@ -1222,12 +1244,13 @@
         "description": "[주도권 장악] 6초간 아군 전체의 공격속도 +25%, 방어력/마저 +20."
       },
       "originalSkillSignature": "509003a42be16514b6e7f4dced9d5a1a4b7f1c04d34a1182a2308260769211f3",
-      "skillSignature": "91bd34d49881eaba8cd795b115138de88c594dfd670115fa2b7edc6c75dbf9b6",
+      "skillSignature": "ab01f3d4846a6a9c6adfae3a029588366064cb18a16e7edaa31aa5cbfe01bc30",
       "runtimeSha256": "a288e1850528788b10dd5367281299bf9ee0dbcda8db10b27f487efad222078d",
       "variant": "retaliate_storm",
       "review": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
       "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings.",
-      "rasterRevision": "docs/art-source/motions/skill-revisions-2026-09-11/mayano_top_gun/review.json"
+      "rasterRevision": "docs/art-source/motions/skill-revisions-2026-09-11/mayano_top_gun/review.json",
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
     },
     "mihono_bourbon": {
       "originalSkill": {
@@ -1266,12 +1289,13 @@
         "description": "[광역 폭발] 가장 밀집한 적 무리에 234 마법피해를 입힌다."
       },
       "originalSkillSignature": "48d93fde4552365199075375dafbea917007372051b5759e4c829d58fc1df3a9",
-      "skillSignature": "cc4a45f707d4a11aec3ab6e9ddf2cfb1d4634c0bc72e2c814ee1d7ec4e700a39",
+      "skillSignature": "5dc1457dc526d93fa1c92e54b67b47c816f19df2d67391970f4f164efa09ce69",
       "runtimeSha256": "a5aadcb13d90ebfbed170e53c67d5f04faae30a4912cf2a9f3edae616ab671ef",
       "variant": "orbital_beam",
       "review": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
       "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings.",
-      "rasterRevision": "docs/art-source/motions/skill-revisions-2026-09-11/mihono_bourbon/review.json"
+      "rasterRevision": "docs/art-source/motions/skill-revisions-2026-09-11/mihono_bourbon/review.json",
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
     },
     "mejiro_ryan": {
       "originalSkill": {
@@ -1320,12 +1344,13 @@
         "description": "[직선 돌파] 대상 방향으로 돌진해 주변 적에게 196 물리피해를 입히고 4초간 공격속도 +35%."
       },
       "originalSkillSignature": "f70f9d33816ef77e12df5e410a6e460f4867f560d220b2f310bd0ae979d07498",
-      "skillSignature": "a8be7e54c06f8512ce7d66332d7f977417471f9aa620d452dcd81425d486682c",
+      "skillSignature": "92618bcf20c2e6629d79b56cf5a88ff786a0c2cb91bc4a52fab33e8a852d20d9",
       "runtimeSha256": "e9633f1352264894398572ca8dc2fa8e05e9e46fde7a2916e6eb1409ecab40b2",
       "variant": "drain_arc",
       "review": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
       "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings.",
-      "rasterRevision": "docs/art-source/motions/skill-revisions-2026-09-11/mejiro_ryan/review.json"
+      "rasterRevision": "docs/art-source/motions/skill-revisions-2026-09-11/mejiro_ryan/review.json",
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
     },
     "hishi_akebono": {
       "originalSkill": {
@@ -1490,12 +1515,13 @@
         "description": "[선두 방벽] 최대 체력 30% 보호막(5초)을 얻고 2칸 내 적을 2.5초간 도발한다."
       },
       "originalSkillSignature": "f0a5f391c97793f70bfe2d93525e379c9f807749badef0e09943694f646172a2",
-      "skillSignature": "35630d85727b1a1d199cbb16e89debcc4231aaa86c4a665dc874b0661398e6ff",
+      "skillSignature": "ae6af6fcb572b0daaca6a3b49e133ccbc9bca8737ef1dc364688550409e27ee3",
       "runtimeSha256": "4ff7da943a346758998ef41135251d3a9778219b5c7c625ff6eb6a1efe271bd8",
       "variant": "iron_drain",
       "review": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
       "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings.",
-      "rasterRevision": "docs/art-source/motions/skill-revisions-2026-09-10/rice_shower/review.json"
+      "rasterRevision": "docs/art-source/motions/skill-revisions-2026-09-10/rice_shower/review.json",
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
     },
     "ines_fujin": {
       "originalSkill": {
@@ -1548,13 +1574,14 @@
         "description": "[주도권 장악] 6초간 아군 전체의 공격속도 +25%, 방어력/마저 +20."
       },
       "originalSkillSignature": "5f59f99d29e917d95cb66d96ef17271ad7f23747af107a149e4b735ce9e405b7",
-      "skillSignature": "781d44b5ba1c8d84524034f720e23156ec02e276f5a88172a8cf40456afc53b6",
+      "skillSignature": "b5e4035317a8ad27fca4163a87543f4e40bca786c805209dab4e3d644b53286b",
       "runtimeSha256": "65f8b3a1c1acc58dddfd5262851da098f8bbc5268a07e42a6552d8599c10a919",
       "variant": "bastion_growth",
       "review": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
       "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings.",
       "rasterRevision": "docs/art-source/motions/skill-revisions-2026-09-11/ines_fujin/review.json",
-      "identityRevision": "docs/art-source/motions/identity-revisions-2026-09-12/ines_fujin/review.json"
+      "identityRevision": "docs/art-source/motions/identity-revisions-2026-09-12/ines_fujin/review.json",
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
     },
     "agnes_tachyon": {
       "originalSkill": {
@@ -1597,13 +1624,14 @@
         "description": "[연속 스퍼트] 대상에게 105 물리피해를 3회 연속으로 가한다."
       },
       "originalSkillSignature": "ae87e8922ffd068dde121571a31a710960ef79d699895db6eeb238e580e94d90",
-      "skillSignature": "c6bdf18b2467a9c90d37fe0304488c79872cf060e65ec7395ca4a24b43a803c1",
+      "skillSignature": "3b857d50eb10c1ab2456b994e4da174eff38c1b171fd25f746ba7fa7771bbf29",
       "runtimeSha256": "8128a90d5170c53d460dfa6fa8597b14e5bf273275e08cd24285331d683269f9",
       "variant": "carry_charge",
       "review": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
       "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings.",
       "rasterRevision": "docs/art-source/motions/skill-revisions-2026-09-11/agnes_tachyon/review.json",
-      "scaleRevision": "docs/art-source/motions/skill-scale-2026-09-12/agnes_tachyon.json"
+      "scaleRevision": "docs/art-source/motions/skill-scale-2026-09-12/agnes_tachyon.json",
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
     },
     "admire_vega": {
       "originalSkill": {
@@ -1870,12 +1898,13 @@
         "description": "[진로 봉쇄] 대상 주변 적에게 114 마법피해를 입히고 1.5초간 기절시킨다."
       },
       "originalSkillSignature": "5eb530dc54c5524bd6b133481e4408d49f332b5d78c224e3a7381c9de3e2c187",
-      "skillSignature": "d16940cc4610ae78e3fa4e375280fa9f8bdf487e7fbf1d84f932c0d8d82cdc7b",
+      "skillSignature": "0b7af4a89c1852b0ec0b07d0e5679fed3b2a9ee768938bf9cc140b832ef757a0",
       "runtimeSha256": "24cd39a240cf347230be503a164084422a59676c198e8de86e65cb428719be4b",
       "variant": "delayed_prison",
       "review": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
       "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings.",
-      "rasterRevision": "docs/art-source/motions/skill-revisions-2026-09-11/eishin_flash/review.json"
+      "rasterRevision": "docs/art-source/motions/skill-revisions-2026-09-11/eishin_flash/review.json",
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
     },
     "curren_chan": {
       "originalSkill": {
@@ -1914,12 +1943,13 @@
         "description": "[광역 폭발] 가장 밀집한 적 무리에 169 마법피해를 입힌다."
       },
       "originalSkillSignature": "9f41eaffd5ff5d82cc4b0e49e6334010f5eb8a2a45c520ba43f3197a83342546",
-      "skillSignature": "d7be1d28bdcbbc3b056d2d64786fad8f1e590581f90c71ae9b18a1eecf44d4b7",
+      "skillSignature": "cceb7cd2714fce49ff545dcb252d722cd88d8d184b1249714d02d956af8c5ee8",
       "runtimeSha256": "b723a20b754437d6c35ad264775437e92ffa19dc98a7138bf09e91ddc1fcbc28",
       "variant": "chain_spark",
       "review": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
       "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings.",
-      "identityRevision": "docs/art-source/motions/identity-revisions-2026-09-12/curren_chan/review.json"
+      "identityRevision": "docs/art-source/motions/identity-revisions-2026-09-12/curren_chan/review.json",
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
     },
     "kawakami_princess": {
       "originalSkill": {
@@ -2067,11 +2097,12 @@
         "description": "[주도권 장악] 6초간 아군 전체의 공격속도 +25%, 방어력/마저 +20."
       },
       "originalSkillSignature": "21e57aaa8018e79519921076f61b480c5824a47a5c5a419b7a7e7b73a9f1720b",
-      "skillSignature": "8534893e105539479619d309ab356f9d16b979cca4a7db93144a8149fb624538",
+      "skillSignature": "e6dbbe03fc42ce2470f3f8a99dd204db44926a4684e9ffe1f5981de9cd2613ec",
       "runtimeSha256": "4e850134449b96d34d8723f64600824857cf6a875b058bd8c3a687235ade0bf3",
       "variant": "tempo_banner",
       "review": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
-      "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings."
+      "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings.",
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
     },
     "seeking_the_pearl": {
       "originalSkill": {
@@ -2114,13 +2145,14 @@
         "description": "[연속 스퍼트] 대상에게 76 물리피해를 3회 연속으로 가한다."
       },
       "originalSkillSignature": "3c967f1a6b45f3032c5c2320e7a34660808f2b4c5acdb90713355bec45d9cb56",
-      "skillSignature": "5c048797cb82543d1591fa22cf9bcc164a57fee87e5d5330f4905e8fc2f00552",
+      "skillSignature": "62004a924865c4e5cd0575cbbaca0f81fc54de857f9e5782107d9a14401e2848",
       "runtimeSha256": "f919f5d4ac539b43701d5ba60394d5cd634f6960ffa21fcae2ebf001b5137574",
       "variant": "split_barrage",
       "review": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
       "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings.",
       "styleRevision": "Running-style correction reviewed: authored body family and targeting retained; current generated skill signature checked.",
-      "rasterRevision": "docs/art-source/motions/skill-revisions-2026-09-11/seeking_the_pearl/review.json"
+      "rasterRevision": "docs/art-source/motions/skill-revisions-2026-09-11/seeking_the_pearl/review.json",
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
     },
     "shinko_windy": {
       "originalSkill": {
@@ -2224,13 +2256,14 @@
         "description": "[직선 돌파] 대상 방향으로 돌진해 주변 적에게 195 물리피해를 입히고 4초간 공격속도 +35%."
       },
       "originalSkillSignature": "97392632a383cf6152339fe3f3f44eedd5a1eabc22d71422f051a2d342c10dc1",
-      "skillSignature": "e11cfe62a02f17de2d9b3bdf08879095a5a053fdf07de240ca3eb1c75467a66a",
+      "skillSignature": "d815a3c24e9155bc8593a8dcee3edcebe2affd4b5826a11f53a5f29a9411b443",
       "runtimeSha256": "41f0caaa9f5f9e88ef53b897282773fb847f42813a1b439d46722b8acf235dfa",
       "variant": "crossing_echo",
       "review": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
       "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings.",
       "rasterRevision": "docs/art-source/motions/skill-revisions-2026-09-11/sweep_tosho/review.json",
-      "scaleRevision": "docs/art-source/motions/skill-scale-2026-09-12/sweep_tosho.json"
+      "scaleRevision": "docs/art-source/motions/skill-scale-2026-09-12/sweep_tosho.json",
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
     },
     "super_creek": {
       "originalSkill": {
@@ -2275,11 +2308,12 @@
         "description": "[진로 봉쇄] 대상 주변 적에게 133 마법피해를 입히고 1.5초간 기절시킨다."
       },
       "originalSkillSignature": "7e31004898362167b2e88a54e982b478244f1d5ce26c17c24307c4764dc12398",
-      "skillSignature": "18553fbb2a4372ce58e6b601033ddd4453ec32a0d0c69149aa3c6ce4f47fc32a",
+      "skillSignature": "49228d4f4355117af0604e5716efeecbd654dff9974fd2c3170d99449315a594",
       "runtimeSha256": "cac503dbdd5252df30c29d94e4fcc60a5cbdea08617cc5b351ce83a9021b9de3",
       "variant": "frost_front",
       "review": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
-      "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings."
+      "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings.",
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
     },
     "smart_falcon": {
       "originalSkill": {
@@ -2318,13 +2352,14 @@
         "description": "[광역 폭발] 가장 밀집한 적 무리에 209 마법피해를 입힌다."
       },
       "originalSkillSignature": "8b3c919532f33934074acf2e2046a7c1c15fee1da208bcc6b085ecdc1f35e07a",
-      "skillSignature": "9903d1a87d2d8cd7f1f0f1c73d9b012c309065dcb5cbf95eda438c47624db980",
+      "skillSignature": "c29c995c610c609d4747aceaf3784ffbb4dc694c66be62bbc0f299ae48b5748e",
       "runtimeSha256": "54a5b6b86bb1fd1d204c6de710a378cc5602c635f2882ccfe0ee8fc488204ed2",
       "variant": "cinder_field",
       "review": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
       "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings.",
       "rasterRevision": "docs/art-source/motions/skill-revisions-2026-09-11/smart_falcon/review.json",
-      "identityRevision": "docs/art-source/motions/identity-revisions-2026-09-12/smart_falcon/review.json"
+      "identityRevision": "docs/art-source/motions/identity-revisions-2026-09-12/smart_falcon/review.json",
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
     },
     "zenno_rob_roy": {
       "originalSkill": {
@@ -2374,12 +2409,13 @@
         "description": "[선두 방벽] 최대 체력 31% 보호막(5초)을 얻고 2칸 내 적을 2.5초간 도발한다."
       },
       "originalSkillSignature": "b0d7d3f818568973772769cf7faefac005e67cba0c0b2226403b660911ed4f62",
-      "skillSignature": "a5ec4fd0851b0f0f4fbc0cee114d157864bcff63ce8fb8c92ba726bd0c913969",
+      "skillSignature": "fa7f36736f4d69e1eda7d60296f53eaed233bb20ddcde8fbbfb62f69bb04a518",
       "runtimeSha256": "76c45f5c135f08291827d2ceca68b5ff14f35a9178e5e0b54cfc0e2285170a8b",
       "variant": "challenge_bastion",
       "review": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
       "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings.",
-      "identityRevision": "docs/art-source/motions/identity-revisions-2026-09-12/zenno_rob_roy/review.json"
+      "identityRevision": "docs/art-source/motions/identity-revisions-2026-09-12/zenno_rob_roy/review.json",
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
     },
     "tosen_jordan": {
       "originalSkill": {
@@ -2601,12 +2637,13 @@
         "description": "[직선 돌파] 대상 방향으로 돌진해 주변 적에게 201 물리피해를 입히고 4초간 공격속도 +35%."
       },
       "originalSkillSignature": "ed9b28d5bf0bd8fe3a102499486fbff198cf4ba2d04b42f95ea957bf05c22920",
-      "skillSignature": "417cf339f01df38799ed22055357ed32c1d88d38e85b1672a89cfad993505cd3",
+      "skillSignature": "47d00b66e9650d6cd8669044f7bb38cf12ff9ed42561402524ccd0122a11b32d",
       "runtimeSha256": "124ba850690702b15a09f56b975e30f971329f9ce8fb370b82136f8c858e2159",
       "variant": "dash_feint",
       "review": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
       "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings.",
-      "styleRevision": "Running-style correction reviewed: authored body family and targeting retained; current generated skill signature checked."
+      "styleRevision": "Running-style correction reviewed: authored body family and targeting retained; current generated skill signature checked.",
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
     },
     "haru_urara": {
       "originalSkill": {
@@ -2704,12 +2741,13 @@
         "description": "[진로 봉쇄] 대상 주변 적에게 114 마법피해를 입히고 1.5초간 기절시킨다."
       },
       "originalSkillSignature": "af9eb90e6cf51f0039e525e5f1c8caa1b7dc70211753b84a7c6ad3b198aa26f8",
-      "skillSignature": "6ef8a700532e3eff17ca4d7d468541ac754352c5f99e855589212019cf697c7f",
+      "skillSignature": "136600900b0ff02edb527de70b34921e9243cef8db7b6425b7008fbe945a21c0",
       "runtimeSha256": "2630fe899590288020e4ae9605da4a93ed8209acac9cd29d4fa5f78e77f4cbcf",
       "variant": "disarm_cone",
       "review": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
       "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings.",
-      "identityRevision": "docs/art-source/motions/identity-revisions-2026-09-12/bamboo_memory/review.json"
+      "identityRevision": "docs/art-source/motions/identity-revisions-2026-09-12/bamboo_memory/review.json",
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
     },
     "biko_pegasus": {
       "originalSkill": {
@@ -2810,12 +2848,13 @@
         "description": "[선두 방벽] 최대 체력 31% 보호막(5초)을 얻고 2칸 내 적을 2.5초간 도발한다."
       },
       "originalSkillSignature": "a42be7eee7fc16523dff0669a223b0fa4b98c336bd78ea5618f037aae5d6916a",
-      "skillSignature": "0f971de1f5a5a8afb1b87878a4ddf0cea12b95e5d20d02316ad31fb312d3a380",
+      "skillSignature": "a34c434c3316237774e9cc9cb1d2fbc98ee17721f1b3f679b77d04cd8dd322ea",
       "runtimeSha256": "1b08f915f1e61c2d317627ad85bae5eaefbdf03d22472d11870693849725ebdf",
       "variant": "counter_surge",
       "review": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
       "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings.",
-      "rasterRevision": "docs/art-source/motions/skill-revisions-2026-09-11/marvelous_sunday/review.json"
+      "rasterRevision": "docs/art-source/motions/skill-revisions-2026-09-11/marvelous_sunday/review.json",
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
     },
     "matikanefukukitaru": {
       "originalSkill": {
@@ -2976,12 +3015,13 @@
         "description": "[주도권 장악] 6초간 아군 전체의 공격속도 +25%, 방어력/마저 +20."
       },
       "originalSkillSignature": "c794eddc2474c6e12cf2ad1d670b49ababb387088e1ac038a395d0816e02260a",
-      "skillSignature": "d189d5a064f68ca2b64b19768e2e2085bde2f5761e8067c1efde4f70833b98d9",
+      "skillSignature": "29b3b19c9d657014ccce8743b075aea330d5085f53c40f7099c71eb19e62c960",
       "runtimeSha256": "c29e15f2cf397b44d488a4d092e71eeb843527700ff565db21085094cbea4ff0",
       "variant": "sanctuary",
       "review": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
       "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings.",
-      "identityRevision": "docs/art-source/motions/identity-revisions-2026-09-12/meisho_doto/review.json"
+      "identityRevision": "docs/art-source/motions/identity-revisions-2026-09-12/meisho_doto/review.json",
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
     },
     "mejiro_dober": {
       "originalSkill": {
@@ -3030,13 +3070,14 @@
         "description": "[직선 돌파] 대상 방향으로 돌진해 주변 적에게 218 물리피해를 입히고 4초간 공격속도 +35%."
       },
       "originalSkillSignature": "a952a7e52f8ac9c21f63bb02d009ba1c0a83a34af142335d383f69b7c63d46ae",
-      "skillSignature": "31261a694dd6fc493465b04830e69cb7082eb63d9109c9dcfc9082e7f2bd7b4b",
+      "skillSignature": "eaa6415a831a3ad350dbe93f0c024ee8b72e69e1b8024c55039a46283d7469fb",
       "runtimeSha256": "6a1ffdaab325bb0ca526d3e793997303172285d08d456a6ca30b03991d316ced",
       "variant": "crossing_echo",
       "review": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
       "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings.",
       "rasterRevision": "docs/art-source/motions/skill-revisions-2026-09-11/mejiro_dober/review.json",
-      "scaleRevision": "docs/art-source/motions/skill-scale-2026-09-12/mejiro_dober.json"
+      "scaleRevision": "docs/art-source/motions/skill-scale-2026-09-12/mejiro_dober.json",
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
     },
     "nice_nature": {
       "originalSkill": {
@@ -3085,12 +3126,13 @@
         "description": "[진로 봉쇄] 대상 주변 적에게 101 마법피해를 입히고 1.5초간 기절시킨다."
       },
       "originalSkillSignature": "66cc30025e56d56362b38192daa30c158af0613236c004a06db424df3c3fc70a",
-      "skillSignature": "f53f11dacdbb00d5f8ad0d41fafd2b3881178dc1871d167c38002fcc9bf9f604",
+      "skillSignature": "4661cb8e6a78fce5d9000dcade9a40ecba9b3bdbfc5e5e7b285c0322bea3badc",
       "runtimeSha256": "cb5da19cbda11869a9e022e9569516d0902a6d8aadb4d80264166b5eb3f55ad9",
       "variant": "silence_zone",
       "review": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
       "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings.",
-      "identityRevision": "docs/art-source/motions/identity-revisions-2026-09-12/nice_nature/review.json"
+      "identityRevision": "docs/art-source/motions/identity-revisions-2026-09-12/nice_nature/review.json",
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
     },
     "king_halo": {
       "originalSkill": {
@@ -3367,11 +3409,12 @@
         "description": "[주도권 장악] 6초간 아군 전체의 공격속도 +25%, 방어력/마저 +20."
       },
       "originalSkillSignature": "30155170ca140da48e04b5e486317147535359f63c4b9a0ba5a2c899628201e4",
-      "skillSignature": "f09101157016ac73c89bd3c8aee2b803be39dae6082e612f69f47557120e6233",
+      "skillSignature": "4d1ef3adeedb98aedc4486507397a81b7b56fc2089895dbb6971cb9976214b02",
       "runtimeSha256": "b84714694346490886bf882aeb01f8c06f01bfe948aee9dedbea550ad3052b38",
       "variant": "tempo_banner",
       "review": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
-      "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings."
+      "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings.",
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
     },
     "twin_turbo": {
       "originalSkill": {
@@ -3473,11 +3516,12 @@
         "description": "[진로 봉쇄] 대상 주변 적에게 120 마법피해를 입히고 1.5초간 기절시킨다."
       },
       "originalSkillSignature": "807a8eac543703ea1fd2e6f5b4909a6ae7897260b4ca3107c4af4c881ef6d7a3",
-      "skillSignature": "70eb93ca286e2aebda485b3bd3965ad6c1a2989403565a4bfdd33a8fb79fddb7",
+      "skillSignature": "94c96e5d1c2e22cb1e582050de772ed0be37bed558ad401d8f32acc23c4a3fcb",
       "runtimeSha256": "90ec1902d60d8ca2946a2d64a152ed72f0ed4cac0f98af15bd586971955446fa",
       "variant": "binding_line",
       "review": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
-      "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings."
+      "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings.",
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
     },
     "kitasan_black": {
       "originalSkill": {
@@ -3530,11 +3574,12 @@
         "description": "[주도권 장악] 6초간 아군 전체의 공격속도 +25%, 방어력/마저 +20."
       },
       "originalSkillSignature": "9bbbe5cda338768ff83a5631ecc2c12bd3e6c05b7da3f7215012a72ac0436eb6",
-      "skillSignature": "648e886bb804f31a5a5107cc2fc6a1d288322f409b7ee84a1ec913bfd4b1a984",
+      "skillSignature": "3597bd37e88acfa06c10af04eda84f98f3371fd88f94c649d474970b927051e8",
       "runtimeSha256": "4ad3dd7401cf1b69d147f4fc060158d944277a98e87e9b1eb2d878c4dcd04879",
       "variant": "command_pulse",
       "review": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
-      "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings."
+      "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings.",
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
     },
     "sakura_chiyono_o": {
       "originalSkill": {
@@ -3584,14 +3629,15 @@
         "description": "[직선 돌파] 대상 방향으로 돌진해 주변 적에게 192 물리피해를 입히고 4초간 공격속도 +35%."
       },
       "originalSkillSignature": "bfc882643e29734401e8efc972fb34e2125d2f5236ed1e02f00509fcfdc813da",
-      "skillSignature": "d12f64b9ea59a38038a5450202ea41861d6231af089cb755717eae75de77d112",
+      "skillSignature": "9cdf224fcf2d86cefe0ca47535346b2fabe87158a62816e0e8bff5e5b794a0d0",
       "runtimeSha256": "f94a769d816cc7d8f8da8c83e2e8e6124db0d6bf743407bba297ad3ad5f3606c",
       "variant": "crossing_echo",
       "review": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
       "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings.",
       "rasterRevision": "docs/art-source/motions/skill-revisions-2026-09-11/sakura_chiyono_o/review.json",
       "identityRevision": "docs/art-source/motions/identity-revisions-2026-09-12/sakura_chiyono_o/review.json",
-      "scaleRevision": "docs/art-source/motions/skill-scale-2026-09-12/sakura_chiyono_o.json"
+      "scaleRevision": "docs/art-source/motions/skill-scale-2026-09-12/sakura_chiyono_o.json",
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
     },
     "sirius_symboli": {
       "originalSkill": {
@@ -3752,12 +3798,13 @@
         "description": "[팀 페이스 업] 체력이 가장 낮은 아군을 215 회복시키고 아군 전체 공격력/주문력을 5초간 +20%."
       },
       "originalSkillSignature": "38db4fa8f1ec56e191d917488a46e88ab9d65d2b5e4ad009167ee0b5984487df",
-      "skillSignature": "d29be149d07775f69b010f4778e3f0efb67025187f1d99409c17934e2ecb9734",
+      "skillSignature": "cd14728283a96ea26526161831730c54bc91c632bc1a299fa4670201579f8194",
       "runtimeSha256": "827da48e2a282406f2e569b430ec88beb873fbee5d66ab00599857386a5b891a",
       "variant": "power_link",
       "review": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
       "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings.",
-      "identityRevision": "docs/art-source/motions/identity-revisions-2026-09-12/yaeno_muteki/review.json"
+      "identityRevision": "docs/art-source/motions/identity-revisions-2026-09-12/yaeno_muteki/review.json",
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
     },
     "tsurumaru_tsuyoshi": {
       "originalSkill": {
@@ -3910,13 +3957,14 @@
         "description": "[직선 돌파] 대상 방향으로 돌진해 주변 적에게 211 물리피해를 입히고 4초간 공격속도 +35%."
       },
       "originalSkillSignature": "67f4f0bcdfec0b239d10904f734e148690c32c9940039faeeea2f6533b9c6415",
-      "skillSignature": "a43bac208f8550310489f9c733d9ece34d9f2cb3065a6a1f718258f822eeaf97",
+      "skillSignature": "02d10d076d918a58b690961a1100cea42c747a86ac6fa05e92e000386a1c5143",
       "runtimeSha256": "4ac5ee725835768739f0c496d1928f900f3aab051262a764830fab3a5415fdd5",
       "variant": "crossing_echo",
       "review": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
       "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings.",
       "rasterRevision": "docs/art-source/motions/skill-revisions-2026-09-11/daring_tact/review.json",
-      "identityRevision": "docs/art-source/motions/identity-revisions-2026-09-12/daring_tact/review.json"
+      "identityRevision": "docs/art-source/motions/identity-revisions-2026-09-12/daring_tact/review.json",
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
     },
     "sakura_laurel": {
       "originalSkill": {
@@ -3961,12 +4009,13 @@
         "description": "[진로 봉쇄] 대상 주변 적에게 122 마법피해를 입히고 1.5초간 기절시킨다."
       },
       "originalSkillSignature": "92e385a8fc4ebceaf2407884832cbb8e02ef52fb9e7ec6ce16efe08b918751aa",
-      "skillSignature": "40a0e817ea19fdba04c7dbe490d0fded6519f3ade4031687a07ea2f81106d138",
+      "skillSignature": "3a43903c78ad97955da7a267594b046228a7e18caf125ed3ba755a95ac743dd9",
       "runtimeSha256": "2c9793c30cdfffe7f12d525275b567b8da22c5d0b5d1d65b0234726bef457e7a",
       "variant": "frost_front",
       "review": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
       "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings.",
-      "identityRevision": "docs/art-source/motions/identity-revisions-2026-09-12/sakura_laurel/review.json"
+      "identityRevision": "docs/art-source/motions/identity-revisions-2026-09-12/sakura_laurel/review.json",
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
     },
     "narita_top_road": {
       "originalSkill": {
@@ -4016,11 +4065,12 @@
         "description": "[선두 방벽] 최대 체력 30% 보호막(5초)을 얻고 2칸 내 적을 2.5초간 도발한다."
       },
       "originalSkillSignature": "91fcd698cb18bfcb333302b155b87b08ff23ca23d92ff5644565d993816a17dc",
-      "skillSignature": "1a47c0a297f30d082eae170bc70818157751a663059818fbd02df0792ba21c3b",
+      "skillSignature": "c148c84e3de91c3ee221b393fe330daf18fabfbb7669480774e363378fa6d7f1",
       "runtimeSha256": "eb5e9a5e0fbb82f10f281c598dc3aaf9a9be8a86f7c96574e94141b94a6cbdca",
       "variant": "guardian_vow",
       "review": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
-      "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings."
+      "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings.",
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
     },
     "yamanin_zephyr": {
       "originalSkill": {
@@ -4071,12 +4121,13 @@
         "description": "[팀 페이스 업] 체력이 가장 낮은 아군을 240 회복시키고 아군 전체 공격력/주문력을 5초간 +20%."
       },
       "originalSkillSignature": "5d85978fa760a404b1c4bd3a5a6952f92bb0a767d221c33dca7c408c345a9f4c",
-      "skillSignature": "4e773e4ef1dc26483483006ae197a6b43b809a605d8e22e032ecc72e761fb789",
+      "skillSignature": "acadf897444eaa50f7eba6e9b247237fe335108b9ed7421894f8829b76d9d835",
       "runtimeSha256": "015cf9ccbd0fbb6deb91ff4f039a9fd4be13b5b70ff2d167c6ba833f13af888f",
       "variant": "cleanse_hymn",
       "review": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
       "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings.",
-      "identityRevision": "docs/art-source/motions/identity-revisions-2026-09-12/yamanin_zephyr/review.json"
+      "identityRevision": "docs/art-source/motions/identity-revisions-2026-09-12/yamanin_zephyr/review.json",
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
     },
     "furioso": {
       "originalSkill": {
@@ -4174,14 +4225,15 @@
         "description": "[광역 폭발] 가장 밀집한 적 무리에 182 마법피해를 입힌다."
       },
       "originalSkillSignature": "ab102082eacbdf128bf4ac8c119c9afea9d66b35282386102121a2109b5292d0",
-      "skillSignature": "ce94f27d06507a5020d43b9af43b37f5d9d5e978903237d5250bb8ced6c42c72",
+      "skillSignature": "8620375c028f2c655037403765d976c44ee6b4deb3e98d18d12eba4c3a8120af",
       "runtimeSha256": "18fb264d453ec5cfaac08dc1803c0e4ba91c389d2032ce31ad7d24bb8da23f16",
       "variant": "twin_orbit",
       "review": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
       "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings.",
       "rasterRevision": "docs/art-source/motions/skill-revisions-2026-09-11/transcend/review.json",
       "identityRevision": "docs/art-source/motions/identity-revisions-2026-09-12/transcend/review.json",
-      "scaleRevision": "docs/art-source/motions/skill-scale-2026-09-12/transcend.json"
+      "scaleRevision": "docs/art-source/motions/skill-scale-2026-09-12/transcend.json",
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
     },
     "north_flight": {
       "originalSkill": {
@@ -4231,13 +4283,14 @@
         "description": "[직선 돌파] 대상 방향으로 돌진해 주변 적에게 223 물리피해를 입히고 4초간 공격속도 +35%."
       },
       "originalSkillSignature": "3eaf3a7b87b1135eeab8cc9669fb6bdce76102dcc8a3a4f968c58bd88c7b631c",
-      "skillSignature": "a68bb8fa484c2f6481620680d50a9831f834f2c7256e7d2260b5ac460f23730c",
+      "skillSignature": "95434cfe10af4294bbf3dfe7a85f1e3cb9cd06eac1c7dc08acf137db92181fd2",
       "runtimeSha256": "0e878963bf93b19221fa5a0be963aec79d10555b5c75fcfe89f05a178af6050f",
       "variant": "dash_feint",
       "review": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
       "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings.",
       "styleRevision": "Running-style correction reviewed: authored body family and targeting retained; current generated skill signature checked.",
-      "identityRevision": "docs/art-source/motions/identity-revisions-2026-09-12/north_flight/review.json"
+      "identityRevision": "docs/art-source/motions/identity-revisions-2026-09-12/north_flight/review.json",
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
     },
     "symboli_kris_s": {
       "originalSkill": {
@@ -4286,12 +4339,13 @@
         "description": "[직선 돌파] 대상 방향으로 돌진해 주변 적에게 244 물리피해를 입히고 4초간 공격속도 +35%."
       },
       "originalSkillSignature": "24fff8d2b2f4afce1f28e5f84c01de1ab195cf4d097a64cf3e2302e014998944",
-      "skillSignature": "7a17a481d192bc68e0db7336a90badb9be4cbda9b6d70f48ca36c508f76605ac",
+      "skillSignature": "37ad4fd6818f81deab1ae1a36b83610abfc30b3acde3cb416743ebbe6a640254",
       "runtimeSha256": "cca6259b1bccec94666f1d0a4c213909a62290dfdacdce077ee30bbf7b567ba6",
       "variant": "breach_line",
       "review": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
       "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings.",
-      "identityRevision": "docs/art-source/motions/identity-revisions-2026-09-12/symboli_kris_s/review.json"
+      "identityRevision": "docs/art-source/motions/identity-revisions-2026-09-12/symboli_kris_s/review.json",
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
     },
     "tanino_gimlet": {
       "originalSkill": {
@@ -4340,12 +4394,13 @@
         "description": "[진로 봉쇄] 대상 주변 적에게 129 마법피해를 입히고 1.5초간 기절시킨다."
       },
       "originalSkillSignature": "1bef0fa0b6c62d9eb6885972ca5ac7871efb953b10647bc23852381033778959",
-      "skillSignature": "72b029082bb6d81cf82cdb8036770dbeb595e454483722d1e7d09b2a50588dc0",
+      "skillSignature": "52a8cc0d4e86c2ab926128945485067a7356a9c5ed046f5d6c88cb4c0e2b8161",
       "runtimeSha256": "f5138dcb47dbea6c546bb075874cb67bb35256f347378f957773eed00731d3f4",
       "variant": "disarm_cone",
       "review": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
       "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings.",
-      "identityRevision": "docs/art-source/motions/identity-revisions-2026-09-12/tanino_gimlet/review.json"
+      "identityRevision": "docs/art-source/motions/identity-revisions-2026-09-12/tanino_gimlet/review.json",
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
     },
     "daiichi_ruby": {
       "originalSkill": {
@@ -4594,12 +4649,13 @@
         "description": "[진로 봉쇄] 대상 주변 적에게 104 마법피해를 입히고 1.5초간 기절시킨다."
       },
       "originalSkillSignature": "3eb901da48f32a8768ac3f160926efb5366a093ef9412f88eeddcc284cd632cf",
-      "skillSignature": "884d9abd3b29d529ca873d4ab229c7c2d83fb7e02010b672aceda4f902615b6a",
+      "skillSignature": "063f1a719bb7888994bcba9883b9d63b830e03b10fe7cf49f3153d3777b30b02",
       "runtimeSha256": "72c0490ba8f097ddf506de3ce9ea87986779f999887f085c803c67f12ad20549",
       "variant": "frost_front",
       "review": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
       "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings.",
-      "styleRevision": "Running-style correction reviewed: authored body family and targeting retained; current generated skill signature checked."
+      "styleRevision": "Running-style correction reviewed: authored body family and targeting retained; current generated skill signature checked.",
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
     },
     "vivlos": {
       "originalSkill": {
@@ -4814,12 +4870,13 @@
         "description": "[진로 봉쇄] 대상 주변 적에게 117 마법피해를 입히고 1.5초간 기절시킨다."
       },
       "originalSkillSignature": "0c4626dc98dd300d999462a3882cabf2000ca7cce46fb82302ed49d096b646d3",
-      "skillSignature": "a8d5066459a7261ae937e2bc84fec854e9d00a00d365de5221d0265429c9ca82",
+      "skillSignature": "534d6f3887528e236f0b8b5fb934e25f9fcde96e38bf803ae7671e53f80c548c",
       "runtimeSha256": "ab408eac5aa3634aad569ed05da6177e0bb878b7c4b67d2122fadfbf041bd782",
       "variant": "binding_line",
       "review": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
       "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings.",
-      "identityRevision": "docs/art-source/motions/identity-revisions-2026-09-12/jungle_pocket/review.json"
+      "identityRevision": "docs/art-source/motions/identity-revisions-2026-09-12/jungle_pocket/review.json",
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
     },
     "believe": {
       "originalSkill": {
@@ -4858,11 +4915,12 @@
         "description": "[광역 폭발] 가장 밀집한 적 무리에 162 마법피해를 입힌다."
       },
       "originalSkillSignature": "ecd33756fcd34e2b89983e43790ee95aa2fffb3ea8ddcd6b418f6510d0d70d8d",
-      "skillSignature": "671f1e9c1a5c63f7fc7605ff2907b8ef3c0bc8364c1612e066290d349ca33f4c",
+      "skillSignature": "acbcff1acc1969c1dafb4ce6419afb71917f2bdb2c3b77fed80056c25f36b6a3",
       "runtimeSha256": "26e0f337ebb96c5e76ed3039ce9d340b1f9c9c16ad304427cfaf3c8c3884061e",
       "variant": "chain_spark",
       "review": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
-      "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings."
+      "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings.",
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
     },
     "no_reason": {
       "originalSkill": {
@@ -4962,12 +5020,13 @@
         "description": "[직선 돌파] 대상 방향으로 돌진해 주변 적에게 173 물리피해를 입히고 4초간 공격속도 +35%."
       },
       "originalSkillSignature": "9b3cd71dc259678f78f4dca9682bf4bdf863c1417780bfe0ae9b0cc60f2b6d12",
-      "skillSignature": "8167674cd85625d189d3832bcfc6cbe8c2893327177a38bc880f836791a1f726",
+      "skillSignature": "864a9f916bf15176bf63aa16cd61fb713cb97fd429547f3396c20a1ec3bc760b",
       "runtimeSha256": "495c888ea0d79c6069a5708690bfae1989ee7491390e1b81849ae4fa26cf2a9e",
       "variant": "trample_wave",
       "review": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
       "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings.",
-      "rasterRevision": "docs/art-source/motions/skill-revisions-2026-09-11/still_in_love/review.json"
+      "rasterRevision": "docs/art-source/motions/skill-revisions-2026-09-11/still_in_love/review.json",
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
     },
     "copano_rickey": {
       "originalSkill": {
@@ -5017,12 +5076,13 @@
         "description": "[직선 돌파] 대상 방향으로 돌진해 주변 적에게 220 물리피해를 입히고 4초간 공격속도 +35%."
       },
       "originalSkillSignature": "cd16d74ffb26fc1abc664b7a49799fdf7186a670685ce361b95a0ae50de4b8e5",
-      "skillSignature": "27fd59c3d6e5f0bea98c243456d957b64550495a9f9cacd997091e4358986ae6",
+      "skillSignature": "bd2819876abd38d63a9cd60cec221f63c3c47852ac5293e2912698e2a8114fa8",
       "runtimeSha256": "8245e7295897ab4b93afa1d034c329577b493acc7f918536f3f0d3610884c07e",
       "variant": "dash_feint",
       "review": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
       "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings.",
-      "identityRevision": "docs/art-source/motions/identity-revisions-2026-09-12/copano_rickey/review.json"
+      "identityRevision": "docs/art-source/motions/identity-revisions-2026-09-12/copano_rickey/review.json",
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
     },
     "hokko_tarumae": {
       "originalSkill": {
@@ -5061,13 +5121,14 @@
         "description": "[광역 폭발] 가장 밀집한 적 무리에 190 마법피해를 입힌다."
       },
       "originalSkillSignature": "fb4544a118e5c2a0050ebd09184cb52845c717c9c9e259eab816d6df092de1a8",
-      "skillSignature": "169c2b643b3e8b23097442d57fdd2d8c45dc342469261fafa379d192561335dc",
+      "skillSignature": "3554ec66f5b04c099caead29e6d812412dbe2122dd2b1167290699eaf89afd05",
       "runtimeSha256": "eceb7fc1bcdba4808e497b63ff6d751947328ae9fc769b43dec84f18be2d48fc",
       "variant": "cinder_field",
       "review": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
       "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings.",
       "rasterRevision": "docs/art-source/motions/skill-revisions-2026-09-11/hokko_tarumae/review.json",
-      "identityRevision": "docs/art-source/motions/identity-revisions-2026-09-12/hokko_tarumae/review.json"
+      "identityRevision": "docs/art-source/motions/identity-revisions-2026-09-12/hokko_tarumae/review.json",
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
     },
     "wonder_acute": {
       "originalSkill": {
@@ -5118,12 +5179,13 @@
         "description": "[팀 페이스 업] 체력이 가장 낮은 아군을 216 회복시키고 아군 전체 공격력/주문력을 5초간 +20%."
       },
       "originalSkillSignature": "931db2ab9e12af76058d22e3e66a0ef1747a325e7a64422afd2d0a8d2220c24b",
-      "skillSignature": "97249df86962bd780510bf837b2dcf58b56c2218e3daea65b9e0614dec00c34a",
+      "skillSignature": "ef74243e0d052fffb30bb3ee839f6b7ecd8292de301a073b54a34813ff254234",
       "runtimeSha256": "d053e7f20b135d6bd443c7b7b595491c18cf82bd7a3270139b4cb2296c5769ef",
       "variant": "triage_echo",
       "review": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
       "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings.",
-      "identityRevision": "docs/art-source/motions/identity-revisions-2026-09-12/wonder_acute/review.json"
+      "identityRevision": "docs/art-source/motions/identity-revisions-2026-09-12/wonder_acute/review.json",
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
     },
     "samson_big": {
       "originalSkill": {
@@ -5387,12 +5449,13 @@
         "description": "[직선 돌파] 대상 방향으로 돌진해 주변 적에게 197 물리피해를 입히고 4초간 공격속도 +35%."
       },
       "originalSkillSignature": "6197e868123c5cea9addff383dae86886b0835e7dac9960554b66371ead9e1d0",
-      "skillSignature": "8ef8af6fba3f5c64a37ee94255e29e2be015107c6c9357cf212c8f53263c7642",
+      "skillSignature": "a3ed456d2d9cede71b1f00d345f882642c967b8ebca931d42770dc48886cb058",
       "runtimeSha256": "33d5683746f1363f0c65424ad3f1640a43c7d98334d33df8f91f0a1b0c635971",
       "variant": "trample_wave",
       "review": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
       "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings.",
-      "rasterRevision": "docs/art-source/motions/skill-revisions-2026-09-11/neo_universe/review.json"
+      "rasterRevision": "docs/art-source/motions/skill-revisions-2026-09-11/neo_universe/review.json",
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
     },
     "hishi_miracle": {
       "originalSkill": {
@@ -5497,13 +5560,14 @@
         "description": "[주도권 장악] 6초간 아군 전체의 공격속도 +25%, 방어력/마저 +20."
       },
       "originalSkillSignature": "645de284dbdc1753e4a58917851d1b85e6e7b05e92a052c3597d253d978366cb",
-      "skillSignature": "06f51dd87940f87b7be8173e86ea4e2030bd1a4241eea3652d5452f3013f0409",
+      "skillSignature": "dd0bdec0d8ff659c87fb907a7a973f514a84a06c9942d8322be6304ec44a0bdd",
       "runtimeSha256": "4fbea13dc18a681ba82e6d44939434265945ec6250cb1dd395a736cfbf3a58cb",
       "variant": "retaliate_storm",
       "review": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
       "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings.",
       "rasterRevision": "docs/art-source/motions/skill-revisions-2026-09-11/tap_dance_city/review.json",
-      "identityRevision": "docs/art-source/motions/identity-revisions-2026-09-12/tap_dance_city/review.json"
+      "identityRevision": "docs/art-source/motions/identity-revisions-2026-09-12/tap_dance_city/review.json",
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
     },
     "duramente": {
       "originalSkill": {
@@ -5552,12 +5616,13 @@
         "description": "[직선 돌파] 대상 방향으로 돌진해 주변 적에게 204 물리피해를 입히고 4초간 공격속도 +35%."
       },
       "originalSkillSignature": "0d8a74ebd4ec8ce6af01cfe172e53980e7ab8df80b5abe9bfa073bdf094ff5b9",
-      "skillSignature": "1720c2c48e946371991ae0385d125f0d0d025dc59d89174b847b4680bd6cb74f",
+      "skillSignature": "c7e058aae2a24d39d06a1d40aa817b5f5eccb9ee7d972c89eb90259688100669",
       "runtimeSha256": "3217b8fdba6b1f65120173c6e5826064ead93f1b7545f0009e71807badc11fb8",
       "variant": "breach_line",
       "review": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
       "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings.",
-      "identityRevision": "docs/art-source/motions/identity-revisions-2026-09-12/duramente/review.json"
+      "identityRevision": "docs/art-source/motions/identity-revisions-2026-09-12/duramente/review.json",
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
     },
     "rhein_kraft": {
       "originalSkill": {
@@ -5610,11 +5675,12 @@
         "description": "[주도권 장악] 6초간 아군 전체의 공격속도 +25%, 방어력/마저 +20."
       },
       "originalSkillSignature": "000edce15c51e41ba2f942a415b7e9f2d5601bb8f7c7f64bed37537f6ec92b3b",
-      "skillSignature": "f7fe58c6b64b33a204b5bb058a45b7d428e7502927b3067f7c994b9cdaa8ea7a",
+      "skillSignature": "f69690708a4cc5210a7fd90233afd69e0c096cae2e505d6848b64bc86bd5be22",
       "runtimeSha256": "87493a1868ab59051a7dc1a3c136e11aa4a20795fbca7b0952d016c209ace92c",
       "variant": "command_pulse",
       "review": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
-      "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings."
+      "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings.",
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
     },
     "cesario": {
       "originalSkill": {
@@ -5667,12 +5733,13 @@
         "description": "[주도권 장악] 6초간 아군 전체의 공격속도 +25%, 방어력/마저 +20."
       },
       "originalSkillSignature": "6673b1c813c15c6c26c40e887a3798e118c9a074804ef03aa047e11d29354cbb",
-      "skillSignature": "4a41d75ad5c99161ecf9fbaef7896fa11317024cf72cca643d46d07c61dc95ce",
+      "skillSignature": "bcc4a82b77f7eadbc54934379cf1e5e46837c31483b6df0b46a4e8bc71cf31e3",
       "runtimeSha256": "db5964df63ae8a7b4eb78183cb5e07bf12844aa293aaeabb6f60078a8cecb285",
       "variant": "sanctuary",
       "review": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
       "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings.",
-      "identityRevision": "docs/art-source/motions/identity-revisions-2026-09-12/cesario/review.json"
+      "identityRevision": "docs/art-source/motions/identity-revisions-2026-09-12/cesario/review.json",
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
     },
     "air_messiah": {
       "originalSkill": {
@@ -5717,11 +5784,12 @@
         "description": "[진로 봉쇄] 대상 주변 적에게 115 마법피해를 입히고 1.5초간 기절시킨다."
       },
       "originalSkillSignature": "ee561ea8fd8080de772542357b0774a507c5e4b57493cf0a560b1372cbd9c244",
-      "skillSignature": "3451d6b3a030ce932cf216965d8086f9a727eea2a73a11e188ae78f70bf1cf6d",
+      "skillSignature": "c3f59424337503fa11f8fd430594e2f84f1b511f5bc3c31d226bb17a0356d22c",
       "runtimeSha256": "29173960d1bf6e7362653bb1ee4cc2c1fc47c3d6169cbb7b1284c0c6f83f9997",
       "variant": "silence_zone",
       "review": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
-      "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings."
+      "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings.",
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
     },
     "daring_heart": {
       "originalSkill": {
@@ -5881,12 +5949,13 @@
         "description": "[결정타] 체력 비율이 가장 낮은 적에게 328 물리피해. 체력 10% 미만이면 즉시 처치."
       },
       "originalSkillSignature": "a5fb0cba9ac434372e683bc01b1cc9071bfcbe58f4cf35e78396fd0d3d24affc",
-      "skillSignature": "4bc1d2fe82346b5b038b2580a28c1fb87b3f0b05419ebae0074163567704775d",
+      "skillSignature": "d99d2885706df0c01af99f713d590f2095cbfdea00fb252e146f0722ee862a23",
       "runtimeSha256": "13dddf1bf42c34d992abd43466faf1e1fcb067e3804982ef6de9fdaf1e4e6b4b",
       "variant": "execution_refund",
       "review": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
       "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings.",
-      "identityRevision": "docs/art-source/motions/identity-revisions-2026-09-12/buena_vista/review.json"
+      "identityRevision": "docs/art-source/motions/identity-revisions-2026-09-12/buena_vista/review.json",
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
     },
     "orfevre": {
       "originalSkill": {
@@ -5935,12 +6004,13 @@
         "description": "[직선 돌파] 대상 방향으로 돌진해 주변 적에게 245 물리피해를 입히고 4초간 공격속도 +35%."
       },
       "originalSkillSignature": "45c4bce88a33d9d2aaece19c1266ed1612939296804b1eb915351b7fd1ce7ac6",
-      "skillSignature": "368388d4889cf903c55c99d457c5270bb5e8dc394d657437152396bead76aeed",
+      "skillSignature": "85f537548c23c02b581b395e6d8b87581e154c3e74d2044bfbefafea27d3a3af",
       "runtimeSha256": "055c34f21c8a4d5499599a76442c0087eb02dbdfc743d7d9c15381d9ab6403e8",
       "variant": "pursuit_flurry",
       "review": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
       "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings.",
-      "rasterRevision": "docs/art-source/motions/skill-revisions-2026-09-11/orfevre/review.json"
+      "rasterRevision": "docs/art-source/motions/skill-revisions-2026-09-11/orfevre/review.json",
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
     },
     "gentildonna": {
       "originalSkill": {
@@ -5993,12 +6063,13 @@
         "description": "[주도권 장악] 6초간 아군 전체의 공격속도 +25%, 방어력/마저 +20."
       },
       "originalSkillSignature": "8ce408247dc36b18f12c021f6e0d7cb72ad16f0bc1f7c8a9c576e9de39c419c2",
-      "skillSignature": "632d471cd7a785d2b6655dd8484b7adcf89d2bd138f57d056117ee42c8699f07",
+      "skillSignature": "ea763ad0b08b307db6c6a87db6aa21f273e34aa165274f6d0fccf72392cee505",
       "runtimeSha256": "a2ec371018fcc664cd571a6bd8356df35262c99b506e1b217425ab7ff06b6a8a",
       "variant": "retaliate_storm",
       "review": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
       "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings.",
-      "rasterRevision": "docs/art-source/motions/skill-revisions-2026-09-11/gentildonna/review.json"
+      "rasterRevision": "docs/art-source/motions/skill-revisions-2026-09-11/gentildonna/review.json",
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
     },
     "win_variation": {
       "originalSkill": {
@@ -6096,13 +6167,14 @@
         "description": "[직선 돌파] 대상 방향으로 돌진해 주변 적에게 191 물리피해를 입히고 4초간 공격속도 +35%."
       },
       "originalSkillSignature": "622322115189158e69669b9314cef18dd4f0a3eb72527eb285d339592bb7b874",
-      "skillSignature": "5ede3c8d5bb303f5773b11b74a1aaa803094d123827a118f450fa51d1e94fddf",
+      "skillSignature": "59be3b87731d11e54efab1ae622cf5911d00fc302fe3966a388e813ac791b594",
       "runtimeSha256": "9196cfe72608681a7ca7a59e4d108e23d97d57075208154f4928e8d73049f1e1",
       "variant": "drain_arc",
       "review": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
       "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings.",
       "rasterRevision": "docs/art-source/motions/skill-revisions-2026-09-11/admire_groove/review.json",
-      "scaleRevision": "docs/art-source/motions/skill-scale-2026-09-12/admire_groove.json"
+      "scaleRevision": "docs/art-source/motions/skill-scale-2026-09-12/admire_groove.json",
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
     },
     "dream_journey": {
       "originalSkill": {
@@ -6148,11 +6220,12 @@
         "description": "[결정타] 체력 비율이 가장 낮은 적에게 259 물리피해. 체력 10% 미만이면 즉시 처치."
       },
       "originalSkillSignature": "fa37e0a4753f10620e8a0caad867a8fa8d8a08f70c6cd5b1304abc80a16a39ed",
-      "skillSignature": "9744a481c34d89b27ad6f876188fd6a21dd11b21b71a02acd9cbe4fe4cc636e0",
+      "skillSignature": "3f682286cfa611a197965cb99e00b5eb6d55467f83db18639af51db7f3e194ed",
       "runtimeSha256": "62b6dac8992b5fd9f49f624bb844d118c7c94f8785ee7ee92a0c8144d93698a7",
       "variant": "isolation_strike",
       "review": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
-      "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings."
+      "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings.",
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
     },
     "calstone_light_o": {
       "originalSkill": {
@@ -6255,13 +6328,14 @@
         "description": "[결정타] 체력 비율이 가장 낮은 적에게 271 물리피해. 체력 10% 미만이면 즉시 처치."
       },
       "originalSkillSignature": "86e8e4ebf358d5bd724e5c67fb23f4f1229acd4c64d4d238c8abb864574482c0",
-      "skillSignature": "eb1b374a4dbe705d469900467d9aba1241f19460fd5d42b95fe64b42c3e4d2fd",
+      "skillSignature": "ca3160d2671f1537cbbb01c2474a39112e35b2ac0b43de65b49dfc2a09e2e166",
       "runtimeSha256": "4d4d90eca0b849fb1b0b9862ad79a1d4290f76218206204a2b639bf83cbddb1e",
       "variant": "shadow_finish",
       "review": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
       "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings.",
       "rasterRevision": "docs/art-source/motions/skill-revisions-2026-09-11/durandal/review.json",
-      "scaleRevision": "docs/art-source/motions/skill-scale-2026-09-12/durandal.json"
+      "scaleRevision": "docs/art-source/motions/skill-scale-2026-09-12/durandal.json",
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
     },
     "genuine": {
       "originalSkill": {
@@ -6358,14 +6432,15 @@
         "description": "[연속 스퍼트] 대상에게 93 물리피해를 3회 연속으로 가한다."
       },
       "originalSkillSignature": "1c0f102ab64686d4673ea0c04ddff4bd40ef8b3661c7561ae72d3059dfc55b7e",
-      "skillSignature": "f0340343990d3a6793511ebf45bcf0089bdb87a7df500c129c2c52a7569fb538",
+      "skillSignature": "de14838208d85b42f8e31c7555e11f0d01a09f9f0cf84ae549a9b08f71056e0a",
       "runtimeSha256": "eb03bde60bc8042b035b1218605a6c9cf1c4c67ff40322c91be9b950c664a5ed",
       "variant": "carry_charge",
       "review": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
       "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings.",
       "styleRevision": "Running-style correction reviewed: authored body family and targeting retained; current generated skill signature checked.",
       "rasterRevision": "docs/art-source/motions/skill-revisions-2026-09-11/bubble_gum_fellow/review.json",
-      "scaleRevision": "docs/art-source/motions/skill-scale-2026-09-12/bubble_gum_fellow.json"
+      "scaleRevision": "docs/art-source/motions/skill-scale-2026-09-12/bubble_gum_fellow.json",
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
     },
     "sakura_chitose_o": {
       "originalSkill": {
@@ -6414,13 +6489,14 @@
         "description": "[진로 봉쇄] 대상 주변 적에게 115 마법피해를 입히고 1.5초간 기절시킨다."
       },
       "originalSkillSignature": "54842ac59b249f0fbb46093277a9b0dc5a9db7c61c6bca3304931fd26a685a4d",
-      "skillSignature": "cd13009229be0a31424b62a921d422547142014a8ffba0d7491002d616fb0881",
+      "skillSignature": "3464da0e2c07797c68449714d05683801a02347a24e2cf73f367bdad7d1c8e43",
       "runtimeSha256": "6bb8284e481c42e51d8166d455ba9381b3cd59995d9b853c0701a3dcec406171",
       "variant": "delayed_prison",
       "review": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
       "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings.",
       "rasterRevision": "docs/art-source/motions/skill-revisions-2026-09-11/sakura_chitose_o/review.json",
-      "identityRevision": "docs/art-source/motions/identity-revisions-2026-09-12/sakura_chitose_o/review.json"
+      "identityRevision": "docs/art-source/motions/identity-revisions-2026-09-12/sakura_chitose_o/review.json",
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
     },
     "fenomeno": {
       "originalSkill": {
@@ -6470,13 +6546,14 @@
         "description": "[직선 돌파] 대상 방향으로 돌진해 주변 적에게 190 물리피해를 입히고 4초간 공격속도 +35%."
       },
       "originalSkillSignature": "85c432391cb3928ab879110874b4f3b316521b4b705041e17e8efe622709d06b",
-      "skillSignature": "1f68887fd3b68e847d0571998d0bc384d471a20e0a876db95653c8cb8f7165ca",
+      "skillSignature": "5243873c8b6bfc3b4b719ebdea6957dbc42d4ee381d466a0a1d4a6e04c252bc8",
       "runtimeSha256": "956299b6d3b341d18f8f04fa63166596b8cb01eb0c3140f26d78e3ffdb16db7a",
       "variant": "crossing_echo",
       "review": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
       "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings.",
       "rasterRevision": "docs/art-source/motions/skill-revisions-2026-09-11/fenomeno/review.json",
-      "scaleRevision": "docs/art-source/motions/skill-scale-2026-09-12/fenomeno.json"
+      "scaleRevision": "docs/art-source/motions/skill-scale-2026-09-12/fenomeno.json",
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
     },
     "blast_onepiece": {
       "originalSkill": {
@@ -6567,13 +6644,14 @@
         "description": "[연속 스퍼트] 대상에게 116 물리피해를 3회 연속으로 가한다."
       },
       "originalSkillSignature": "727a98397ccfe83715fea3edb20e26cfeaee3905529f1beba7a9bc277700ae41",
-      "skillSignature": "61f1ba230ba9231f3cb29e01741c9c0006551c95d2fcff0a6033ab32637a7bb3",
+      "skillSignature": "e56991041fe9c70a7c6a6577001e0db112b6fd9c4cff6fc9f10ec89309892b91",
       "runtimeSha256": "92aa742ef15b67218625cc024d3579b10ea5718d0a54972209d6599172031613",
       "variant": "focus_three",
       "review": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
       "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings.",
       "rasterRevision": "docs/art-source/motions/skill-revisions-2026-09-11/almond_eye/review.json",
-      "scaleRevision": "docs/art-source/motions/skill-scale-2026-09-12/almond_eye.json"
+      "scaleRevision": "docs/art-source/motions/skill-scale-2026-09-12/almond_eye.json",
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
     },
     "lucky_lilac": {
       "originalSkill": {
@@ -6612,13 +6690,14 @@
         "description": "[광역 폭발] 가장 밀집한 적 무리에 172 마법피해를 입힌다."
       },
       "originalSkillSignature": "f8d763979215f81462fa46380fa8388ccd3c2ecc5277bb190e1b8a2122a3fb10",
-      "skillSignature": "a8d16db06c57c5534e975078e59fbc563911032367107b243feb42ccf8569b12",
+      "skillSignature": "53d13e9a6f8b9adae930e8504f953617b93d16027b208c243880bc77b72693fa",
       "runtimeSha256": "b9c122eea4272a5fec7459b0a55e635a8379dcf2d2b00382a85a6561097dbbf0",
       "variant": "expanding_nova",
       "review": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
       "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings.",
       "rasterRevision": "docs/art-source/motions/skill-revisions-2026-09-11/lucky_lilac/review.json",
-      "scaleRevision": "docs/art-source/motions/skill-scale-2026-09-12/lucky_lilac.json"
+      "scaleRevision": "docs/art-source/motions/skill-scale-2026-09-12/lucky_lilac.json",
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
     },
     "gran_alegria": {
       "originalSkill": {
@@ -6668,13 +6747,14 @@
         "description": "[직선 돌파] 대상 방향으로 돌진해 주변 적에게 246 물리피해를 입히고 4초간 공격속도 +35%."
       },
       "originalSkillSignature": "5dc4173a1d39483570dab1d50f824319d39a6d386b68e4db978f4ffcf6f93702",
-      "skillSignature": "54443f2284207c93b975836724d8a3ce74a2501209257b856d645eb65a2d3843",
+      "skillSignature": "db31e0d4d4d5ee882cdb44764dd43f34c933d4090972e4da6d14076e45a21b6a",
       "runtimeSha256": "7352c87de5ee616961feebaac9f76b722c7418d461bf32ba008038bdde0705e4",
       "variant": "pursuit_flurry",
       "review": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
       "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings.",
       "rasterRevision": "docs/art-source/motions/skill-revisions-2026-09-11/gran_alegria/review.json",
-      "scaleRevision": "docs/art-source/motions/skill-scale-2026-09-12/gran_alegria.json"
+      "scaleRevision": "docs/art-source/motions/skill-scale-2026-09-12/gran_alegria.json",
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
     },
     "loves_only_you": {
       "originalSkill": {
@@ -6773,12 +6853,13 @@
         "description": "[직선 돌파] 대상 방향으로 돌진해 주변 적에게 244 물리피해를 입히고 4초간 공격속도 +35%."
       },
       "originalSkillSignature": "2d8e96210aec5a4154e601992b45505112cea59d3249b86063612825c16bd7a1",
-      "skillSignature": "84476adf472c78aaed8b8b178f566d1308fc27cf390e20c636bf88b062f71dc4",
+      "skillSignature": "cba28bd63113c982593a92af8c23953b7440a62c9defbf3b9bb5a3e8134a1b59",
       "runtimeSha256": "115ed6e515e7843128a20f1d47350bd9a86b50cef835c86c6977abf35b5fe772",
       "variant": "trample_wave",
       "review": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
       "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings.",
-      "rasterRevision": "docs/art-source/motions/skill-revisions-2026-09-11/chrono_genesis/review.json"
+      "rasterRevision": "docs/art-source/motions/skill-revisions-2026-09-11/chrono_genesis/review.json",
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
     },
     "curren_bouquetdor": {
       "originalSkill": {
@@ -7037,12 +7118,13 @@
         "description": "[광역 폭발] 가장 밀집한 적 무리에 190 마법피해를 입힌다."
       },
       "originalSkillSignature": "2c632da66946b45c992f1638fc736ca5f09ab233b30b332233d9a0bd55ce2c31",
-      "skillSignature": "536b43240fbca5507a478cf2b05672d68203c41815206798ba515427391464a4",
+      "skillSignature": "d7c0c42ad06666a1e93cf552418b74a33d13e17529d09a965a5c1e1b4067e54d",
       "runtimeSha256": "cca55531c3df747f419648c6702359e22f3651ef9c6991e2bc0b0de8d1892cce",
       "variant": "cinder_field",
       "review": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
       "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings.",
-      "rasterRevision": "docs/art-source/motions/skill-revisions-2026-09-11/forever_young/review.json"
+      "rasterRevision": "docs/art-source/motions/skill-revisions-2026-09-11/forever_young/review.json",
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
     },
     "marche_lorraine": {
       "originalSkill": {
@@ -7087,11 +7169,12 @@
         "description": "[진로 봉쇄] 대상 주변 적에게 100 마법피해를 입히고 1.5초간 기절시킨다."
       },
       "originalSkillSignature": "48dd047f762025aa264298a2d1f03e3ac199f10cc3ae8ac0dacaae68c97b6805",
-      "skillSignature": "583810f75b379993213623a5b1ba284b254b765f0f30d4a05ff5eaba50c275ee",
+      "skillSignature": "e5592c3d5c1dd739ac8fdea2989cf975a5dd66b9a95031eb234cebe116f2eb09",
       "runtimeSha256": "0dd8bd06ffa484136f04113d1462d1a872ccac1c7917833fea63577c9148f689",
       "variant": "disarm_cone",
       "review": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
-      "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings."
+      "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings.",
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
     },
     "epiphaneia": {
       "originalSkill": {
@@ -7204,12 +7287,13 @@
         "description": "[주도권 장악] 6초간 아군 전체의 공격속도 +25%, 방어력/마저 +20."
       },
       "originalSkillSignature": "dd47040d5dd6d7aa999745514a98401b338247667b11190d594a2f9d8a33fca6",
-      "skillSignature": "603f420f2e8bd6d21de92c819d16afc0bcef60480ce02def9c4a9c41e76744e2",
+      "skillSignature": "49b249d3b80ee340b467d78b6b98ff47e02cab27b5b266bdde3dc0646fc4906a",
       "runtimeSha256": "a0b8d349c8eb745b9f61e7e2304557b156c5cf6f01a800a3603a0488835118b0",
       "variant": "command_pulse",
       "review": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
       "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings.",
-      "identityRevision": "docs/art-source/motions/identity-revisions-2026-09-12/logotype/review.json"
+      "identityRevision": "docs/art-source/motions/identity-revisions-2026-09-12/logotype/review.json",
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
     },
     "victoire_pisa": {
       "originalSkill": {
@@ -7259,14 +7343,15 @@
         "description": "[직선 돌파] 대상 방향으로 돌진해 주변 적에게 215 물리피해를 입히고 4초간 공격속도 +35%."
       },
       "originalSkillSignature": "ec19a867c32a0ddafadae901133e579931b98690900ac5f005d92f53cd0b91a4",
-      "skillSignature": "b21b85740361f18811a905f924a2c10a9525523693c49b16a5ef956de488a8f1",
+      "skillSignature": "f323fb2d8216c73d542f52cd7fcf7eee1372ff24035f005cc2d392c2d47beb95",
       "runtimeSha256": "ff881919a0bdb009262a8e52303d3d93eb2d1d6f76cae0cef5fb8ed63de68e57",
       "variant": "crossing_echo",
       "review": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
       "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings.",
       "styleRevision": "Running-style correction reviewed: authored body family and targeting retained; current generated skill signature checked.",
       "rasterRevision": "docs/art-source/motions/skill-revisions-2026-09-11/victoire_pisa/review.json",
-      "scaleRevision": "docs/art-source/motions/skill-scale-2026-09-12/victoire_pisa.json"
+      "scaleRevision": "docs/art-source/motions/skill-scale-2026-09-12/victoire_pisa.json",
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
     },
     "rose_kingdom": {
       "originalSkill": {
@@ -7371,11 +7456,12 @@
         "description": "[선두 방벽] 최대 체력 29% 보호막(5초)을 얻고 2칸 내 적을 2.5초간 도발한다."
       },
       "originalSkillSignature": "319b5a0db0108fe0248380f4d1692206d21ecbbe8a7b5fafad3dcf8b4ca3c4e3",
-      "skillSignature": "91380f4209c21247c4a89d2e998874b5c3b7a0f31b09b1ed41357faaf73ad59b",
+      "skillSignature": "0df46186b9db1e85a6db7bdab1defe53c841b4f2c553422237f50199dbe332ea",
       "runtimeSha256": "0d4f09df0f1b1f22a4c0e40a4712b4b42a908529812d59dc078d8d1948400eb0",
       "variant": "guardian_vow",
       "review": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
-      "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings."
+      "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings.",
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
     },
     "efforia": {
       "originalSkill": {
@@ -7425,12 +7511,13 @@
         "description": "[직선 돌파] 대상 방향으로 돌진해 주변 적에게 213 물리피해를 입히고 4초간 공격속도 +35%."
       },
       "originalSkillSignature": "344c1f73519dfdfdaa621de5414e6ca4111d2b3dc95beb09491d71bc19be9405",
-      "skillSignature": "34b35668f405f394815aa3a99e303a52b03cdce1bc48e46449a20daa62d6251f",
+      "skillSignature": "ccf9f1495dd8ed7b548fc89fe9798de682204e20225c3616f3586cc97dcbc388",
       "runtimeSha256": "133aa5d7ce4d4855e4641dd1d136913c44d0ecbfc25165fe7d4bff6f7f89161f",
       "variant": "breach_line",
       "review": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
       "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings.",
-      "styleRevision": "Running-style correction reviewed: authored body family and targeting retained; current generated skill signature checked."
+      "styleRevision": "Running-style correction reviewed: authored body family and targeting retained; current generated skill signature checked.",
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
     },
     "titleholder": {
       "originalSkill": {
@@ -7483,13 +7570,14 @@
         "description": "[주도권 장악] 6초간 아군 전체의 공격속도 +25%, 방어력/마저 +20."
       },
       "originalSkillSignature": "e478885685cdb5ddb2ecbbdb95590a1965b0deb7d40a7c4d6485818362ad58e6",
-      "skillSignature": "ba0aaf68f0034e5b39f3b34190b35e521619352c7440d8ab32c05f364d879512",
+      "skillSignature": "7b9980a1aaa8d3caebb5f3aedfb37fc566701042168e2ac4d694da67e765d6a3",
       "runtimeSha256": "51770cbc814f5dace2831305da04cb0990f10593b123f8ad0747072e15f10785",
       "variant": "retaliate_storm",
       "review": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
       "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings.",
       "styleRevision": "Running-style correction reviewed: authored body family and targeting retained; current generated skill signature checked.",
-      "rasterRevision": "docs/art-source/motions/skill-revisions-2026-09-11/titleholder/review.json"
+      "rasterRevision": "docs/art-source/motions/skill-revisions-2026-09-11/titleholder/review.json",
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
     },
     "phalaenopsis": {
       "originalSkill": {
@@ -7539,11 +7627,12 @@
         "description": "[직선 돌파] 대상 방향으로 돌진해 주변 적에게 193 물리피해를 입히고 4초간 공격속도 +35%."
       },
       "originalSkillSignature": "71a70da8dbe80553e10ed9f2e050178a452c2f1592710330c0bdddc1cf89e1c6",
-      "skillSignature": "52ad4c572f6e2561609861c25e0cd5d85397141e760467229d8193c3b6e029b8",
+      "skillSignature": "8b9277fb4e530b7358d43c860912dbda85e675c2ab2d18b448c0465ab9aac33b",
       "runtimeSha256": "df2585fe4deb0dec609534bab32f30355a57b38e4de56c61e44463005a37731f",
       "variant": "dash_feint",
       "review": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
-      "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings."
+      "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings.",
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
     },
     "verxina": {
       "originalSkill": {
@@ -7637,14 +7726,15 @@
         "description": "[직선 돌파] 대상 방향으로 돌진해 주변 적에게 178 물리피해를 입히고 4초간 공격속도 +35%."
       },
       "originalSkillSignature": "a9c2fb2133342d46161e9711e2a54cb07c392db4a0e586664aeedb20755f5ef6",
-      "skillSignature": "afdbb3bf5feda7b64e2d6bf5c3f350ab340a0550b3d79e453d1ea43524471f80",
+      "skillSignature": "0f130f21c00cc0f9e918ed2b562effa5a9c9fece74c75aec6d9a7405df01887c",
       "runtimeSha256": "80c6dc36a18e82788f305872290e60bbce739f0a4c5b1b699b74856b6151cabd",
       "variant": "drain_arc",
       "review": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
       "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings.",
       "styleRevision": "Running-style correction reviewed: authored body family and targeting retained; current generated skill signature checked.",
       "rasterRevision": "docs/art-source/motions/skill-revisions-2026-09-11/manhattan_cafe/review.json",
-      "scaleRevision": "docs/art-source/motions/skill-scale-2026-09-12/manhattan_cafe.json"
+      "scaleRevision": "docs/art-source/motions/skill-scale-2026-09-12/manhattan_cafe.json",
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
     },
     "espoir_city": {
       "originalSkill": {
@@ -7697,11 +7787,12 @@
         "description": "[주도권 장악] 6초간 아군 전체의 공격속도 +25%, 방어력/마저 +20."
       },
       "originalSkillSignature": "158da0d8208908aa1adae1d39eaccf440099544cd88db4e9b1f108c9b9044300",
-      "skillSignature": "bfca0fa60515ac6ccbe4b582911c00ca7f548da884e8b62a7c7f03f011bd8e62",
+      "skillSignature": "46e1e6b7c56b6693766fd666f584577af137ac1ebe466f3e8f53e562b7e54fa9",
       "runtimeSha256": "acd705ed94f4d9ca2a90ef8b44c7e03165e7427f796c1db3426dce8315c32ece",
       "variant": "bulwark_circle",
       "review": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
-      "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings."
+      "scope": "Mechanical body-contract compatibility; existing PNGs retained, no claim of 145 new drawings.",
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
     }
   }
 }

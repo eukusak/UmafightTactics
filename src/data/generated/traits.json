@@ -8,7 +8,9 @@
       "thresholds": [
         2,
         4,
-        6
+        6,
+        8,
+        10
       ],
       "emblemItemId": "emblem_nige",
       "description": "앞으로 치고 나가 속도로 압박한다.",
@@ -67,6 +69,52 @@
               }
             }
           ]
+        },
+        {
+          "count": 8,
+          "description": "공속 +55%, 이동속도 +45%, 시작 6초 방해 효과 면역",
+          "effects": [
+            {
+              "kind": "STAT_MUL",
+              "stat": "attackSpeed",
+              "value": 0.55
+            },
+            {
+              "kind": "STAT_MUL",
+              "stat": "moveSpeedHexPerSec",
+              "value": 0.45
+            },
+            {
+              "kind": "CC_IMMUNE",
+              "duration": 6,
+              "trigger": {
+                "when": "COMBAT_START"
+              }
+            }
+          ]
+        },
+        {
+          "count": 10,
+          "description": "공속 +80%, 이동속도 +65%, 시작 8초 방해 효과 면역",
+          "effects": [
+            {
+              "kind": "STAT_MUL",
+              "stat": "attackSpeed",
+              "value": 0.8
+            },
+            {
+              "kind": "STAT_MUL",
+              "stat": "moveSpeedHexPerSec",
+              "value": 0.65
+            },
+            {
+              "kind": "CC_IMMUNE",
+              "duration": 8,
+              "trigger": {
+                "when": "COMBAT_START"
+              }
+            }
+          ]
         }
       ]
     },
@@ -77,7 +125,9 @@
       "thresholds": [
         2,
         4,
-        6
+        6,
+        8,
+        10
       ],
       "emblemItemId": "emblem_senko",
       "description": "앞 자리를 지키며 안정적으로 밀어붙인다.",
@@ -144,6 +194,48 @@
               }
             }
           ]
+        },
+        {
+          "count": 8,
+          "description": "체력 60% 이상에서 피해 +42%, 시작 마나 +25",
+          "effects": [
+            {
+              "kind": "DAMAGE_AMP",
+              "value": 0.42,
+              "trigger": {
+                "when": "HP_ABOVE",
+                "threshold": 0.6
+              }
+            },
+            {
+              "kind": "MANA_ADD",
+              "value": 25,
+              "trigger": {
+                "when": "COMBAT_START"
+              }
+            }
+          ]
+        },
+        {
+          "count": 10,
+          "description": "체력 60% 이상에서 피해 +65%, 시작 마나 +35",
+          "effects": [
+            {
+              "kind": "DAMAGE_AMP",
+              "value": 0.65,
+              "trigger": {
+                "when": "HP_ABOVE",
+                "threshold": 0.6
+              }
+            },
+            {
+              "kind": "MANA_ADD",
+              "value": 35,
+              "trigger": {
+                "when": "COMBAT_START"
+              }
+            }
+          ]
         }
       ]
     },
@@ -154,7 +246,9 @@
       "thresholds": [
         2,
         4,
-        6
+        6,
+        8,
+        10
       ],
       "emblemItemId": "emblem_sashi",
       "description": "안쪽을 파고들어 승부를 뒤집는다.",
@@ -228,6 +322,58 @@
               }
             }
           ]
+        },
+        {
+          "count": 8,
+          "description": "치명타 +25%. 처치 관여 시 6초간 추가 치명타 +30%, 피해 +18%",
+          "effects": [
+            {
+              "kind": "CRIT_CHANCE_ADD",
+              "value": 0.25
+            },
+            {
+              "kind": "CRIT_CHANCE_ADD",
+              "value": 0.3,
+              "duration": 6,
+              "trigger": {
+                "when": "ON_TAKEDOWN_ASSIST"
+              }
+            },
+            {
+              "kind": "DAMAGE_AMP",
+              "value": 0.18,
+              "duration": 6,
+              "trigger": {
+                "when": "ON_TAKEDOWN_ASSIST"
+              }
+            }
+          ]
+        },
+        {
+          "count": 10,
+          "description": "치명타 +35%. 처치 관여 시 6초간 추가 치명타 +35%, 피해 +30%",
+          "effects": [
+            {
+              "kind": "CRIT_CHANCE_ADD",
+              "value": 0.35
+            },
+            {
+              "kind": "CRIT_CHANCE_ADD",
+              "value": 0.35,
+              "duration": 6,
+              "trigger": {
+                "when": "ON_TAKEDOWN_ASSIST"
+              }
+            },
+            {
+              "kind": "DAMAGE_AMP",
+              "value": 0.3,
+              "duration": 6,
+              "trigger": {
+                "when": "ON_TAKEDOWN_ASSIST"
+              }
+            }
+          ]
         }
       ]
     },
@@ -238,7 +384,9 @@
       "thresholds": [
         2,
         4,
-        6
+        6,
+        8,
+        10
       ],
       "emblemItemId": "emblem_oikomi",
       "description": "뒤에서 몰아쳐 약해진 적을 끝낸다.",
@@ -291,6 +439,48 @@
               }
             }
           ]
+        },
+        {
+          "count": 8,
+          "description": "체력 50% 미만인 대상에게 피해 +50%. 처치 관여 시 마나 +20",
+          "effects": [
+            {
+              "kind": "DAMAGE_AMP",
+              "value": 0.5,
+              "trigger": {
+                "when": "TARGET_HP_BELOW",
+                "threshold": 0.5
+              }
+            },
+            {
+              "kind": "MANA_ADD",
+              "value": 20,
+              "trigger": {
+                "when": "ON_TAKEDOWN_ASSIST"
+              }
+            }
+          ]
+        },
+        {
+          "count": 10,
+          "description": "체력 50% 미만인 대상에게 피해 +75%. 처치 관여 시 마나 +25",
+          "effects": [
+            {
+              "kind": "DAMAGE_AMP",
+              "value": 0.75,
+              "trigger": {
+                "when": "TARGET_HP_BELOW",
+                "threshold": 0.5
+              }
+            },
+            {
+              "kind": "MANA_ADD",
+              "value": 25,
+              "trigger": {
+                "when": "ON_TAKEDOWN_ASSIST"
+              }
+            }
+          ]
         }
       ]
     },
@@ -300,7 +490,9 @@
       "category": "DISTANCE",
       "thresholds": [
         2,
-        4
+        4,
+        6,
+        9
       ],
       "emblemItemId": "emblem_sprinter",
       "description": "짧은 거리에서 폭발적으로 튀어나간다.",
@@ -338,6 +530,54 @@
               "value": 1
             }
           ]
+        },
+        {
+          "count": 6,
+          "description": "공격 3회마다 물리 피해 140, 공격속도 +10%, 공속 상한 +1",
+          "effects": [
+            {
+              "kind": "ON_HIT_DAMAGE",
+              "value": 140,
+              "damageType": "PHYSICAL",
+              "trigger": {
+                "when": "ON_NTH_ATTACK",
+                "threshold": 3
+              }
+            },
+            {
+              "kind": "STAT_MUL",
+              "stat": "attackSpeed",
+              "value": 0.1
+            },
+            {
+              "kind": "ATTACK_SPEED_CAP_ADD",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "count": 9,
+          "description": "공격 3회마다 물리 피해 240, 공격속도 +30%, 공속 상한 +1",
+          "effects": [
+            {
+              "kind": "ON_HIT_DAMAGE",
+              "value": 240,
+              "damageType": "PHYSICAL",
+              "trigger": {
+                "when": "ON_NTH_ATTACK",
+                "threshold": 3
+              }
+            },
+            {
+              "kind": "STAT_MUL",
+              "stat": "attackSpeed",
+              "value": 0.3
+            },
+            {
+              "kind": "ATTACK_SPEED_CAP_ADD",
+              "value": 1
+            }
+          ]
         }
       ]
     },
@@ -347,7 +587,9 @@
       "category": "DISTANCE",
       "thresholds": [
         2,
-        4
+        4,
+        6,
+        9
       ],
       "emblemItemId": "emblem_miler",
       "description": "스킬 직후 페이스를 끌어올린다.",
@@ -399,6 +641,54 @@
               }
             }
           ]
+        },
+        {
+          "count": 6,
+          "description": "스킬 사용 후 5초간 공격력/주문력 +40%",
+          "effects": [
+            {
+              "kind": "STAT_MUL",
+              "stat": "attackDamage",
+              "value": 0.4,
+              "duration": 5,
+              "trigger": {
+                "when": "ON_CAST"
+              }
+            },
+            {
+              "kind": "STAT_MUL",
+              "stat": "abilityPower",
+              "value": 0.4,
+              "duration": 5,
+              "trigger": {
+                "when": "ON_CAST"
+              }
+            }
+          ]
+        },
+        {
+          "count": 9,
+          "description": "스킬 사용 후 5초간 공격력/주문력 +70%",
+          "effects": [
+            {
+              "kind": "STAT_MUL",
+              "stat": "attackDamage",
+              "value": 0.7,
+              "duration": 5,
+              "trigger": {
+                "when": "ON_CAST"
+              }
+            },
+            {
+              "kind": "STAT_MUL",
+              "stat": "abilityPower",
+              "value": 0.7,
+              "duration": 5,
+              "trigger": {
+                "when": "ON_CAST"
+              }
+            }
+          ]
         }
       ]
     },
@@ -408,7 +698,10 @@
       "category": "DISTANCE",
       "thresholds": [
         2,
-        4
+        4,
+        6,
+        8,
+        10
       ],
       "emblemItemId": "emblem_middle",
       "description": "중반 이후 본격적으로 힘을 낸다.",
@@ -478,6 +771,105 @@
               }
             }
           ]
+        },
+        {
+          "count": 6,
+          "description": "전투 8초 후 최대 체력·공격력·주문력 +25%",
+          "effects": [
+            {
+              "kind": "STAT_MUL",
+              "stat": "hp",
+              "value": 0.25,
+              "trigger": {
+                "when": "AFTER_SECONDS",
+                "threshold": 8
+              }
+            },
+            {
+              "kind": "STAT_MUL",
+              "stat": "attackDamage",
+              "value": 0.25,
+              "trigger": {
+                "when": "AFTER_SECONDS",
+                "threshold": 8
+              }
+            },
+            {
+              "kind": "STAT_MUL",
+              "stat": "abilityPower",
+              "value": 0.25,
+              "trigger": {
+                "when": "AFTER_SECONDS",
+                "threshold": 8
+              }
+            }
+          ]
+        },
+        {
+          "count": 8,
+          "description": "전투 8초 후 최대 체력·공격력·주문력 +34%",
+          "effects": [
+            {
+              "kind": "STAT_MUL",
+              "stat": "hp",
+              "value": 0.34,
+              "trigger": {
+                "when": "AFTER_SECONDS",
+                "threshold": 8
+              }
+            },
+            {
+              "kind": "STAT_MUL",
+              "stat": "attackDamage",
+              "value": 0.34,
+              "trigger": {
+                "when": "AFTER_SECONDS",
+                "threshold": 8
+              }
+            },
+            {
+              "kind": "STAT_MUL",
+              "stat": "abilityPower",
+              "value": 0.34,
+              "trigger": {
+                "when": "AFTER_SECONDS",
+                "threshold": 8
+              }
+            }
+          ]
+        },
+        {
+          "count": 10,
+          "description": "전투 8초 후 최대 체력·공격력·주문력 +50%",
+          "effects": [
+            {
+              "kind": "STAT_MUL",
+              "stat": "hp",
+              "value": 0.5,
+              "trigger": {
+                "when": "AFTER_SECONDS",
+                "threshold": 8
+              }
+            },
+            {
+              "kind": "STAT_MUL",
+              "stat": "attackDamage",
+              "value": 0.5,
+              "trigger": {
+                "when": "AFTER_SECONDS",
+                "threshold": 8
+              }
+            },
+            {
+              "kind": "STAT_MUL",
+              "stat": "abilityPower",
+              "value": 0.5,
+              "trigger": {
+                "when": "AFTER_SECONDS",
+                "threshold": 8
+              }
+            }
+          ]
         }
       ]
     },
@@ -487,7 +879,9 @@
       "category": "DISTANCE",
       "thresholds": [
         2,
-        4
+        4,
+        6,
+        9
       ],
       "emblemItemId": "emblem_stayer",
       "description": "오래 버틸수록 단단해진다.",
@@ -539,6 +933,72 @@
               }
             }
           ]
+        },
+        {
+          "count": 6,
+          "description": "5초마다 잃은 체력 12% 회복, 전투 15초 후 방어력/마저 +40",
+          "effects": [
+            {
+              "kind": "HEAL_MISSING_PCT",
+              "value": 0.12,
+              "interval": 5,
+              "trigger": {
+                "when": "EVERY_SECONDS",
+                "threshold": 5
+              }
+            },
+            {
+              "kind": "STAT_ADD",
+              "stat": "armor",
+              "value": 40,
+              "trigger": {
+                "when": "AFTER_SECONDS",
+                "threshold": 15
+              }
+            },
+            {
+              "kind": "STAT_ADD",
+              "stat": "magicResist",
+              "value": 40,
+              "trigger": {
+                "when": "AFTER_SECONDS",
+                "threshold": 15
+              }
+            }
+          ]
+        },
+        {
+          "count": 9,
+          "description": "5초마다 잃은 체력 20% 회복, 전투 15초 후 방어력/마저 +65",
+          "effects": [
+            {
+              "kind": "HEAL_MISSING_PCT",
+              "value": 0.2,
+              "interval": 5,
+              "trigger": {
+                "when": "EVERY_SECONDS",
+                "threshold": 5
+              }
+            },
+            {
+              "kind": "STAT_ADD",
+              "stat": "armor",
+              "value": 65,
+              "trigger": {
+                "when": "AFTER_SECONDS",
+                "threshold": 15
+              }
+            },
+            {
+              "kind": "STAT_ADD",
+              "stat": "magicResist",
+              "value": 65,
+              "trigger": {
+                "when": "AFTER_SECONDS",
+                "threshold": 15
+              }
+            }
+          ]
         }
       ]
     },
@@ -549,7 +1009,8 @@
       "thresholds": [
         2,
         3,
-        4
+        4,
+        6
       ],
       "emblemItemId": "emblem_dirt_champion",
       "description": "거친 주로에서 단련된 몸.",
@@ -607,6 +1068,26 @@
             {
               "kind": "CC_RESIST",
               "value": 0.3
+            }
+          ]
+        },
+        {
+          "count": 6,
+          "description": "방어력/마저 +55, 군중제어 저항 +45%",
+          "effects": [
+            {
+              "kind": "STAT_ADD",
+              "stat": "armor",
+              "value": 55
+            },
+            {
+              "kind": "STAT_ADD",
+              "stat": "magicResist",
+              "value": 55
+            },
+            {
+              "kind": "CC_RESIST",
+              "value": 0.45
             }
           ]
         }
@@ -1121,7 +1602,9 @@
       "thresholds": [
         2,
         4,
-        6
+        6,
+        8,
+        10
       ],
       "emblemItemId": null,
       "description": "헤이세이 경마를 지배한 계보.",
@@ -1171,6 +1654,38 @@
               "kind": "STAT_MUL",
               "stat": "abilityPower",
               "value": 0.2
+            }
+          ]
+        },
+        {
+          "count": 8,
+          "description": "공격력/주문력 +28%",
+          "effects": [
+            {
+              "kind": "STAT_MUL",
+              "stat": "attackDamage",
+              "value": 0.28
+            },
+            {
+              "kind": "STAT_MUL",
+              "stat": "abilityPower",
+              "value": 0.28
+            }
+          ]
+        },
+        {
+          "count": 10,
+          "description": "공격력/주문력 +42%",
+          "effects": [
+            {
+              "kind": "STAT_MUL",
+              "stat": "attackDamage",
+              "value": 0.42
+            },
+            {
+              "kind": "STAT_MUL",
+              "stat": "abilityPower",
+              "value": 0.42
             }
           ]
         }

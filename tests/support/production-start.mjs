@@ -30,6 +30,14 @@ for (const args of [['--import', 'tsx', 'server/index.ts'], ['scripts/serve.mjs'
       const base = `http://127.0.0.1:${port}`;
       assert.equal((await fetch(`${base}/some/route`)).status, 200);
       assert.equal((await fetch(`${base}/assets/missing.mp3`)).status, 404);
+      for (const asset of ['boards/bg_pve_training.png', 'motions/fuji_kiseki.png', 'portraits/fuji_kiseki.png']) {
+        const plain = await fetch(`${base}/assets/${asset}`, { method: 'HEAD' });
+        assert.equal(plain.status, 200);
+        assert.equal(plain.headers.get('cache-control'), 'no-cache', 'Stable filenames must not retain old artwork for a year');
+        const versioned = await fetch(`${base}/assets/${asset}?v=cache-regression`, { method: 'HEAD' });
+        assert.equal(versioned.status, 200);
+        assert.match(versioned.headers.get('cache-control'), /immutable/);
+      }
       for (const file of ['title', ...Array.from({ length: 23 }, (_, i) => `bgm${String(i).padStart(2, '0')}`)]) {
         const response = await fetch(`${base}/assets/audio/${file}.mp3`, { method: 'HEAD' });
         assert.equal(response.status, 200, file);

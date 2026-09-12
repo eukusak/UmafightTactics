@@ -10,6 +10,7 @@ import { STATUS_PRESENTATION } from '../ui/status-presentation';
 import { FRAME_SHEETS, frameSheetUrl, frameGeometry, motionFrame, skillMotionFrame } from '../ui/frame-animation';
 import { skillDuration } from '../engine/battle/skill-timeline';
 import { skillLabel } from '../ui/skill-presentation';
+import { COST_SKILL_PRESENTATION } from '../ui/cost-skill-presentation';
 
 type Snapshot = BattleFrame['units'][number];
 type Actor = {
@@ -69,7 +70,7 @@ export class BattleScene extends Phaser.Scene {
       const frames = frameSheetUrl(id);
       const sheet = assetUrl(`characters/${id}.png`) ?? (id.startsWith('pve_') ? assetUrl(`pve/${id.slice(4)}.png`) : null);
       const portrait = portraitUrl(id);
-      const cutin = assetUrl(`characters/cutin/${id}.png`);
+      const cutin = getUnitDef(id).cost === 5 ? assetUrl(`characters/cutin/${id}.png`) ?? portrait : null;
       if (cutin) this.load.image(`cutin:${id}`, cutin);
       if (frames) this.load.spritesheet(`sheet:${id}`, frames, { frameWidth: FRAME_SHEETS[id].frameWidth, frameHeight: FRAME_SHEETS[id].frameHeight });
       else if (id.startsWith('pve_') && standeeUrl(id)) this.load.image(`standee:${id}`, standeeUrl(id)!);
@@ -321,12 +322,15 @@ export class BattleScene extends Phaser.Scene {
       const unit = this.frames[this.eventIndex].units.find((u) => u.id === event.source);
       if (!actor || !unit || this.playbackTime - event.t >= .85) return;
       const def = getUnitDef(unit.unitDefId);
-      if (unit.id.startsWith(`${this.humanId}#`) && event.t - this.lastCutinAt >= 5 && this.textures.exists(`cutin:${unit.unitDefId}`)) {
+      if (def.cost === 5 && unit.id.startsWith(`${this.humanId}#`) && event.t - this.lastCutinAt >= 5 && this.textures.exists(`cutin:${unit.unitDefId}`)) {
         this.lastCutinAt = event.t;
-        const cutin = this.add.image(1300, 20, `cutin:${unit.unitDefId}`).setOrigin(1, 0).setDisplaySize(400, 225).setDepth(850);
+        const cutin = this.add.image(1300, 20, `cutin:${unit.unitDefId}`).setOrigin(1, 0).setDepth(850);
+        // Promoted units reuse their approved square portrait without stretching faces.
+        const image = cutin.texture.getSourceImage();
+        cutin.setDisplaySize(225 * image.width / image.height, 225);
         this.track(cutin, event.t, .85, (t) => cutin.setX(1300 + 24 * (1 - Math.min(1, t * 6))).setAlpha(Math.min(1, t * 8, (1 - t) * 4)));
       }
-      const label = this.add.text(actor.container.x, actor.container.y - 98, skillLabel(def.skill), { fontFamily: 'Noto Sans KR Variable, sans-serif', fontSize: '12px', color: '#ffdd8e', backgroundColor: '#182b43', padding: { x: 4, y: 3 } }).setOrigin(.5).setDepth(910);
+      const label = this.add.text(actor.container.x, actor.container.y - 98, `${def.cost} · ${skillLabel(def.skill)}`, { fontFamily: 'Noto Sans KR Variable, sans-serif', fontSize: def.cost >= 4 ? '14px' : '12px', color: costColor(def.cost), backgroundColor: '#182b43', padding: { x: 4, y: 3 } }).setOrigin(.5).setDepth(910);
       const x = label.x, y = label.y;
       this.track(label, event.t, .85, (t) => label.setPosition(x, y - t * 16).setAlpha(Math.min(1, (1 - t) * 3)));
     } else if (event.type === 'SKILL_EFFECT') {
@@ -346,10 +350,11 @@ export class BattleScene extends Phaser.Scene {
   }
 
   private presentSkillEffect(event: Extract<BattleEvent, { type: 'SKILL_EFFECT' }>): void {
-    if (this.playbackTime - event.t >= .4) return;
     const unit = this.frames[this.eventIndex].units.find((u) => u.id === event.source);
     if (!unit) return;
     const def = getUnitDef(unit.unitDefId), color = tint(def.skill.choreography?.color ?? '#c6b6ff');
+    const style = COST_SKILL_PRESENTATION[def.cost];
+    if (this.playbackTime - event.t >= style.duration) return;
     const healing = event.kind.startsWith('HEAL'), shield = event.kind.startsWith('SHIELD');
     // Buff triplets share a pulse; damage and repeated healing retain every release.
     const buff = event.kind === 'STAT_MUL' || event.kind === 'STAT_ADD';
@@ -362,7 +367,7 @@ export class BattleScene extends Phaser.Scene {
     if (source && points.length && (event.shape || event.kind === 'DASH')) {
       const origin = { x: source.container.x, y: source.container.y - 22 * source.container.scaleX };
       const geometry = this.add.graphics().setDepth(818);
-      geometry.lineStyle(event.shape === 'LINE' ? 7 : 3, color, .8);
+      geometry.lineStyle((event.shape === 'LINE' ? 2 : 1) * style.stroke, color, .8);
       if (event.shape === 'CONE') {
         for (const end of points) geometry.lineBetween(origin.x, origin.y, end.x, end.y);
         geometry.lineStyle(1, accent, .7);
@@ -375,7 +380,7 @@ export class BattleScene extends Phaser.Scene {
           if (event.shape === 'CHAIN') from = end;
         }
       }
-      this.track(geometry, event.t, .4, p => geometry.setAlpha(1 - p));
+      this.track(geometry, event.t, style.duration, p => geometry.setAlpha(1 - p));
     }
     const texture = healing ? 'vfx_heal' : shield ? 'vfx_shield' : def.skill.vfxKey;
     for (const id of event.targets) {
@@ -385,24 +390,28 @@ export class BattleScene extends Phaser.Scene {
       if (event.t - (this.pulseAt.get(pulseKey) ?? -1) < .1) continue;
       this.pulseAt.set(pulseKey, event.t);
       const x = actor.container.x, y = actor.container.y - 22 * actor.container.scaleX;
-      const radius = (shield ? 38 : healing ? 22 : 28) * actor.container.scaleX;
-      const ring = this.add.circle(x, y, radius, color, .08).setStrokeStyle(shield ? 3 : 2, color, .85).setDepth(819);
-      this.track(ring, event.t, .4, (p) => ring.setScale(shield ? 1 : .5 + p).setAlpha(1 - p));
+      const radius = (shield ? 38 : healing ? 22 : 28) * actor.container.scaleX * style.radius;
+      const ring = this.add.circle(x, y, radius, color, .08).setStrokeStyle(style.stroke, color, .85).setDepth(819);
+      this.track(ring, event.t, style.duration, (p) => ring.setScale(shield ? 1 : .5 + p).setAlpha(1 - p));
+      for (let echo = 0; echo < style.echoes; echo++) {
+        const trail = this.add.circle(x, y, radius * (.7 + echo * .16)).setStrokeStyle(1, accent, .45).setDepth(818);
+        this.track(trail, event.t, style.duration, p => trail.setScale(.5 + Math.max(0, p - echo * .12) * 1.4).setAlpha((1 - p) * .45));
+      }
       if (signature?.emblem !== undefined) {
         const glyph = this.add.graphics().setPosition(x, y).setDepth(821);
-        const seed = signature.emblem + 1, count = 3 + seed % 5;
+        const seed = signature.emblem + 1, count = 3 + seed % 5 + style.particles;
         glyph.fillStyle(accent, .9);
         for (let i = 0; i < count; i++) {
           const angle = i * Math.PI * 2 / count + (seed % 17) * .17 + (event.effectIndex ?? 0) * .4;
           const spread = radius * (.55 + (seed % 3) * .15);
           glyph.fillRect(Math.cos(angle) * spread - 2, Math.sin(angle) * spread - 2, 4, 4);
         }
-        this.track(glyph, event.t, .4, p => glyph.setScale(1 + p * .8).setRotation(p * (seed % 2 ? 1 : -1)).setAlpha(1 - p));
+        this.track(glyph, event.t, style.duration, p => glyph.setScale(1 + p * .8).setRotation(p * (seed % 2 ? 1 : -1)).setAlpha(1 - p));
       }
       if (this.textures.exists(texture)) {
-        const effect = this.add.image(x, y + 18 * actor.container.scaleX, texture, 0).setDepth(820).setScale(actor.container.scaleX * .65);
+        const effect = this.add.image(x, y + 18 * actor.container.scaleX, texture, 0).setDepth(820).setScale(actor.container.scaleX * .65 * style.radius);
         // Normal alpha blending works identically on WebGL and Canvas.
-        this.track(effect, event.t, .4, (p) => effect.setFrame(Math.min(9, Math.floor(p * 10))).setAlpha(.7 - p * .4));
+        this.track(effect, event.t, style.duration, (p) => effect.setFrame(Math.min(9, Math.floor(p * 10))).setAlpha(.7 - p * .4));
       }
     }
   }

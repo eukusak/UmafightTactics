@@ -8,7 +8,7 @@
     "ratingFormulaVersion": "horse-rating-v2",
     "skillFormulaVersion": "horse-skill-v2"
   },
-  "rosterHash": "76b52c4cf30795f3",
+  "rosterHash": "e577139f4ebec75f",
   "units": [
     {
       "id": "special_week",
@@ -43,8 +43,8 @@
         "displayName": "스페셜 위크 · 관통 돌파 (1999 天皇賞(秋)(GI))",
         "template": "DASH_LINE",
         "baseValues": [
-          274,
-          304,
+          372,
+          413,
           32
         ],
         "starMultipliers": [
@@ -72,7 +72,7 @@
           },
           {
             "kind": "DAMAGE",
-            "value": 281,
+            "value": 381,
             "damageType": "PHYSICAL",
             "target": "CURRENT_TARGET",
             "shape": "LINE",
@@ -81,7 +81,7 @@
           }
         ],
         "vfxKey": "vfx_dash_sashi",
-        "description": "[관통 돌파] 돌진 후 직선 6칸의 최대 4명에게 방어력 20% 감소(4초)와 281 물리 피해. 근거: 1999 天皇賞(秋)(GI) 1위.",
+        "description": "[관통 돌파] 돌진 후 직선 6칸의 최대 4명에게 방어력 20% 감소(4초)와 381 물리 피해. 근거: 1999 天皇賞(秋)(GI) 1위.",
         "choreography": {
           "windup": 0.3,
           "recovery": 0.3,
@@ -158,8 +158,8 @@
         "displayName": "사일런스 스즈카 · 지속 광선 (1998 毎日王冠(GII))",
         "template": "AOE_BURST",
         "baseValues": [
-          195,
-          216,
+          205,
+          228,
           30
         ],
         "starMultipliers": [
@@ -173,7 +173,7 @@
         "effects": [
           {
             "kind": "DAMAGE",
-            "value": 62,
+            "value": 65,
             "damageType": "MAGIC",
             "target": "LARGEST_ENEMY_CLUSTER",
             "shape": "LINE",
@@ -183,7 +183,7 @@
           },
           {
             "kind": "DAMAGE",
-            "value": 62,
+            "value": 65,
             "damageType": "MAGIC",
             "target": "LARGEST_ENEMY_CLUSTER",
             "shape": "LINE",
@@ -193,7 +193,7 @@
           },
           {
             "kind": "DAMAGE",
-            "value": 62,
+            "value": 65,
             "damageType": "MAGIC",
             "target": "LARGEST_ENEMY_CLUSTER",
             "shape": "LINE",
@@ -203,7 +203,7 @@
           },
           {
             "kind": "DAMAGE",
-            "value": 62,
+            "value": 65,
             "damageType": "MAGIC",
             "target": "LARGEST_ENEMY_CLUSTER",
             "shape": "LINE",
@@ -213,7 +213,7 @@
           }
         ],
         "vfxKey": "vfx_aoe_burst",
-        "description": "[지속 광선] 직선 6칸 최대 4명을 향해 0.35초 간격으로 4회 광선. 매회 62 마법 피해, 시전 중 일반 공격 불가. 근거: 1998 毎日王冠(GII) 1위.",
+        "description": "[지속 광선] 직선 6칸 최대 4명을 향해 0.35초 간격으로 4회 광선. 매회 65 마법 피해, 시전 중 일반 공격 불가. 근거: 1998 毎日王冠(GII) 1위.",
         "choreography": {
           "windup": 0.4,
           "recovery": 0.3,
@@ -291,8 +291,8 @@
         "displayName": "토카이 테이오 · 삼단 결정타 (1993 有馬記念(GI))",
         "template": "MULTI_SHOT",
         "baseValues": [
-          240,
-          266,
+          297,
+          330,
           31
         ],
         "starMultipliers": [
@@ -306,28 +306,28 @@
         "effects": [
           {
             "kind": "DAMAGE",
-            "value": 71,
+            "value": 88,
             "damageType": "PHYSICAL",
             "target": "CURRENT_TARGET",
             "delay": 0
           },
           {
             "kind": "DAMAGE",
-            "value": 103,
+            "value": 128,
             "damageType": "PHYSICAL",
             "target": "CURRENT_TARGET",
             "delay": 0.3
           },
           {
             "kind": "DAMAGE",
-            "value": 188,
+            "value": 232,
             "damageType": "PHYSICAL",
             "target": "CURRENT_TARGET",
             "delay": 0.6
           }
         ],
         "vfxKey": "vfx_projectile",
-        "description": "[삼단 결정타] 한 적에게 71 → 103 → 188 물리 피해. 마지막 타격에 위력이 집중됨. 근거: 1993 有馬記念(GI) 1위.",
+        "description": "[삼단 결정타] 한 적에게 88 → 128 → 232 물리 피해. 마지막 타격에 위력이 집중됨. 근거: 1993 有馬記念(GI) 1위.",
         "choreography": {
           "windup": 0.45,
           "recovery": 0.3,
@@ -377,16 +377,16 @@
       "nameKo": "마루젠스키",
       "nameJa": "マルゼンスキー",
       "nameEn": "Maruzensky",
-      "cost": 5,
+      "cost": 4,
       "role": "SUPPORT",
       "activeS1": true,
       "uftRating": 0.9,
-      "hp": 1105,
-      "attackDamage": 84,
+      "hp": 980,
+      "attackDamage": 75,
       "abilityPower": 100,
-      "armor": 60,
-      "magicResist": 62,
-      "attackSpeed": 0.79,
+      "armor": 57,
+      "magicResist": 59,
+      "attackSpeed": 0.77,
       "attackRange": 3,
       "moveSpeedHexPerSec": 1.92,
       "critChance": 0.25,
@@ -396,8 +396,7 @@
       "traits": [
         "nige",
         "miler",
-        "classic_legend",
-        "all_rounder"
+        "classic_legend"
       ],
       "skillId": "skill_maruzensky",
       "skill": {
@@ -405,14 +404,14 @@
         "displayName": "마루젠스키 · 진군 박자 (1977 日本短波賞(OP))",
         "template": "AURA",
         "baseValues": [
-          277,
-          308,
+          309,
+          343,
           32
         ],
         "starMultipliers": [
           1,
           1.45,
-          6
+          3.6
         ],
         "damageType": "NONE",
         "targetRule": "SELF",
@@ -421,7 +420,7 @@
           {
             "kind": "STAT_MUL",
             "stat": "attackSpeed",
-            "value": 0.3,
+            "value": 0.372,
             "duration": 4,
             "refresh": true,
             "target": "ALL_ALLIES",
@@ -438,7 +437,7 @@
           }
         ],
         "vfxKey": "vfx_buff",
-        "description": "[진군 박자] 2칸 내 최대 4명의 아군에게 4초간 공격속도 +30%. 자신 외 대상은 마나 8 회복. 근거: 1977 日本短波賞(OP) 1위.",
+        "description": "[진군 박자] 2칸 내 최대 4명의 아군에게 4초간 공격속도 +37.2%. 자신 외 대상은 마나 8 회복. 근거: 1977 日本短波賞(OP) 1위.",
         "choreography": {
           "windup": 0.3,
           "recovery": 0.3,
@@ -513,8 +512,8 @@
         "displayName": "후지 키세키 · 확장 폭발 (1994 朝日杯3歳S(GI))",
         "template": "AOE_BURST",
         "baseValues": [
-          248,
-          275,
+          307,
+          341,
           32
         ],
         "starMultipliers": [
@@ -528,7 +527,7 @@
         "effects": [
           {
             "kind": "DAMAGE",
-            "value": 87,
+            "value": 108,
             "damageType": "MAGIC",
             "target": "LARGEST_ENEMY_CLUSTER",
             "radius": 0,
@@ -537,7 +536,7 @@
           },
           {
             "kind": "DAMAGE",
-            "value": 87,
+            "value": 108,
             "damageType": "MAGIC",
             "target": "LARGEST_ENEMY_CLUSTER",
             "radius": 1,
@@ -546,7 +545,7 @@
           },
           {
             "kind": "DAMAGE",
-            "value": 87,
+            "value": 108,
             "damageType": "MAGIC",
             "target": "LARGEST_ENEMY_CLUSTER",
             "radius": 2,
@@ -555,7 +554,7 @@
           }
         ],
         "vfxKey": "vfx_aoe_burst",
-        "description": "[확장 폭발] 0.35초 간격으로 대상 중심 0·1·2칸으로 확장하는 폭발. 타격마다 최대 4명에게 87 마법 피해. 근거: 1994 朝日杯3歳S(GI) 1위.",
+        "description": "[확장 폭발] 0.35초 간격으로 대상 중심 0·1·2칸으로 확장하는 폭발. 타격마다 최대 4명에게 108 마법 피해. 근거: 1994 朝日杯3歳S(GI) 1위.",
         "choreography": {
           "windup": 0.3,
           "recovery": 0.3,
@@ -632,8 +631,8 @@
         "displayName": "오구리 캡 · 집중 유성 (1990 有馬記念(GI))",
         "template": "AOE_BURST",
         "baseValues": [
-          246,
-          274,
+          305,
+          339,
           32
         ],
         "starMultipliers": [
@@ -647,7 +646,7 @@
         "effects": [
           {
             "kind": "DAMAGE",
-            "value": 331,
+            "value": 411,
             "damageType": "MAGIC",
             "target": "LARGEST_ENEMY_CLUSTER",
             "radius": 2,
@@ -655,7 +654,7 @@
           }
         ],
         "vfxKey": "vfx_aoe_burst",
-        "description": "[집중 유성] 0.9초 집중 후 밀집 지점 2칸 내 최대 5명에게 331 마법 피해. 집중 중 기절하면 취소. 근거: 1990 有馬記念(GI) 1위.",
+        "description": "[집중 유성] 0.9초 집중 후 밀집 지점 2칸 내 최대 5명에게 411 마법 피해. 집중 중 기절하면 취소. 근거: 1990 有馬記念(GI) 1위.",
         "choreography": {
           "windup": 0.9,
           "recovery": 0.3,
@@ -732,8 +731,8 @@
         "displayName": "골드 쉽 · 추격 연타 (2012 菊花賞(GI))",
         "template": "DASH_LINE",
         "baseValues": [
-          203,
-          225,
+          214,
+          238,
           31
         ],
         "starMultipliers": [
@@ -752,21 +751,21 @@
           },
           {
             "kind": "DAMAGE",
-            "value": 86,
+            "value": 91,
             "damageType": "PHYSICAL",
             "target": "CURRENT_TARGET",
             "delay": 0
           },
           {
             "kind": "DAMAGE",
-            "value": 86,
+            "value": 91,
             "damageType": "PHYSICAL",
             "target": "CURRENT_TARGET",
             "delay": 0.3
           },
           {
             "kind": "DAMAGE",
-            "value": 86,
+            "value": 91,
             "damageType": "PHYSICAL",
             "target": "CURRENT_TARGET",
             "delay": 0.6
@@ -774,14 +773,14 @@
           {
             "kind": "STAT_MUL",
             "stat": "attackSpeed",
-            "value": 0.2,
+            "value": 0.212,
             "duration": 4,
             "refresh": true,
             "target": "SELF"
           }
         ],
         "vfxKey": "vfx_dash_oikomi",
-        "description": "[추격 연타] 돌진 후 한 적에게 86 물리 피해를 3회, 4초간 공격속도 +20%. 대상 사망 시 남은 타격은 재탐색. 근거: 2012 菊花賞(GI) 1위.",
+        "description": "[추격 연타] 돌진 후 한 적에게 91 물리 피해를 3회, 4초간 공격속도 +21.2%. 대상 사망 시 남은 타격은 재탐색. 근거: 2012 菊花賞(GI) 1위.",
         "choreography": {
           "windup": 0.45,
           "recovery": 0.3,
@@ -859,8 +858,8 @@
         "displayName": "보드카 · 분산 포격 (2009 ジャパンC(GI))",
         "template": "MULTI_SHOT",
         "baseValues": [
-          222,
-          247,
+          253,
+          281,
           31
         ],
         "starMultipliers": [
@@ -874,7 +873,7 @@
         "effects": [
           {
             "kind": "DAMAGE",
-            "value": 120,
+            "value": 136,
             "damageType": "MAGIC",
             "target": "NEAREST_ENEMY",
             "shape": "CHAIN",
@@ -884,7 +883,7 @@
           },
           {
             "kind": "DAMAGE",
-            "value": 120,
+            "value": 136,
             "damageType": "MAGIC",
             "target": "NEAREST_ENEMY",
             "shape": "CHAIN",
@@ -894,7 +893,7 @@
           }
         ],
         "vfxKey": "vfx_projectile",
-        "description": "[분산 포격] 가까운 적에서 시작해 서로 다른 최대 3명에게 120 마법 피해. 0.35초 뒤 한 번 더 발사. 근거: 2009 ジャパンC(GI) 1위.",
+        "description": "[분산 포격] 가까운 적에서 시작해 서로 다른 최대 3명에게 136 마법 피해. 0.35초 뒤 한 번 더 발사. 근거: 2009 ジャパンC(GI) 1위.",
         "choreography": {
           "windup": 0.3,
           "recovery": 0.3,
@@ -971,8 +970,8 @@
         "displayName": "다이와 스칼렛 · 잔불 지대 (2008 有馬記念(GI))",
         "template": "AOE_BURST",
         "baseValues": [
-          276,
-          306,
+          374,
+          416,
           32
         ],
         "starMultipliers": [
@@ -986,7 +985,7 @@
         "effects": [
           {
             "kind": "DAMAGE",
-            "value": 96,
+            "value": 130,
             "damageType": "MAGIC",
             "target": "LARGEST_ENEMY_CLUSTER",
             "radius": 1,
@@ -995,7 +994,7 @@
           },
           {
             "kind": "DAMAGE",
-            "value": 96,
+            "value": 130,
             "damageType": "MAGIC",
             "target": "LARGEST_ENEMY_CLUSTER",
             "radius": 1,
@@ -1004,7 +1003,7 @@
           },
           {
             "kind": "DAMAGE",
-            "value": 96,
+            "value": 130,
             "damageType": "MAGIC",
             "target": "LARGEST_ENEMY_CLUSTER",
             "radius": 1,
@@ -1020,7 +1019,7 @@
           }
         ],
         "vfxKey": "vfx_aoe_burst",
-        "description": "[잔불 지대] 대상 주변 1칸 최대 4명에게 0.6초 간격으로 96 마법 피해 3회와 3초간 회복 감소 33%. 근거: 2008 有馬記念(GI) 1위.",
+        "description": "[잔불 지대] 대상 주변 1칸 최대 4명에게 0.6초 간격으로 130 마법 피해 3회와 3초간 회복 감소 33%. 근거: 2008 有馬記念(GI) 1위.",
         "choreography": {
           "windup": 0.45,
           "recovery": 0.3,
@@ -1098,8 +1097,8 @@
         "displayName": "타이키 셔틀 · 연쇄 섬광 (1997 マイルチャンピオンS(GI))",
         "template": "AOE_BURST",
         "baseValues": [
-          277,
-          308,
+          376,
+          417,
           32
         ],
         "starMultipliers": [
@@ -1113,7 +1112,7 @@
         "effects": [
           {
             "kind": "DAMAGE",
-            "value": 175,
+            "value": 238,
             "damageType": "MAGIC",
             "target": "LARGEST_ENEMY_CLUSTER",
             "shape": "CHAIN",
@@ -1122,7 +1121,7 @@
           }
         ],
         "vfxKey": "vfx_aoe_burst",
-        "description": "[연쇄 섬광] 섬광이 대상에서 3칸 내 다음 적으로 최대 4명까지 이어지며 각각 175 마법 피해. 같은 적을 재타격하지 않음. 근거: 1997 マイルチャンピオンS(GI) 1위.",
+        "description": "[연쇄 섬광] 섬광이 대상에서 3칸 내 다음 적으로 최대 4명까지 이어지며 각각 238 마법 피해. 같은 적을 재타격하지 않음. 근거: 1997 マイルチャンピオンS(GI) 1위.",
         "choreography": {
           "windup": 0.3,
           "recovery": 0.3,
@@ -1200,8 +1199,8 @@
         "displayName": "그래스 원더 · 관통 돌파 (1999 有馬記念(GI))",
         "template": "DASH_LINE",
         "baseValues": [
-          220,
-          245,
+          250,
+          278,
           31
         ],
         "starMultipliers": [
@@ -1229,7 +1228,7 @@
           },
           {
             "kind": "DAMAGE",
-            "value": 225,
+            "value": 256,
             "damageType": "PHYSICAL",
             "target": "CURRENT_TARGET",
             "shape": "LINE",
@@ -1238,7 +1237,7 @@
           }
         ],
         "vfxKey": "vfx_dash_sashi",
-        "description": "[관통 돌파] 돌진 후 직선 6칸의 최대 4명에게 방어력 20% 감소(4초)와 225 물리 피해. 근거: 1999 有馬記念(GI) 1위.",
+        "description": "[관통 돌파] 돌진 후 직선 6칸의 최대 4명에게 방어력 20% 감소(4초)와 256 물리 피해. 근거: 1999 有馬記念(GI) 1위.",
         "choreography": {
           "windup": 0.45,
           "recovery": 0.3,
@@ -1315,8 +1314,8 @@
         "displayName": "히시 아마존 · 관통 구속 (1994 エリザベス女王杯(GI))",
         "template": "CONTROL",
         "baseValues": [
-          215,
-          239,
+          245,
+          272,
           31
         ],
         "starMultipliers": [
@@ -1330,7 +1329,7 @@
         "effects": [
           {
             "kind": "DAMAGE",
-            "value": 151,
+            "value": 172,
             "damageType": "MAGIC",
             "target": "LARGEST_ENEMY_CLUSTER",
             "shape": "LINE",
@@ -1348,7 +1347,7 @@
           }
         ],
         "vfxKey": "vfx_stun",
-        "description": "[관통 구속] 직선 6칸 최대 4명에게 151 마법 피해와 1초 기절. 근거: 1994 エリザベス女王杯(GI) 1위.",
+        "description": "[관통 구속] 직선 6칸 최대 4명에게 172 마법 피해와 1초 기절. 근거: 1994 エリザベス女王杯(GI) 1위.",
         "choreography": {
           "windup": 0.3,
           "recovery": 0.3,
@@ -1425,8 +1424,8 @@
         "displayName": "메지로 맥퀸 · 방벽 원진 (1992 天皇賞(春)(GI))",
         "template": "AURA",
         "baseValues": [
-          226,
-          251,
+          257,
+          285,
           32
         ],
         "starMultipliers": [
@@ -1440,7 +1439,7 @@
         "effects": [
           {
             "kind": "SHIELD_FLAT",
-            "value": 205,
+            "value": 233,
             "duration": 4,
             "target": "ALL_ALLIES",
             "radius": 2,
@@ -1458,7 +1457,7 @@
           }
         ],
         "vfxKey": "vfx_buff",
-        "description": "[방벽 원진] 2칸 내 최대 4명의 아군에게 205 보호막과 방어력 +20을 4초간 부여. 근거: 1992 天皇賞(春)(GI) 1위.",
+        "description": "[방벽 원진] 2칸 내 최대 4명의 아군에게 233 보호막과 방어력 +20을 4초간 부여. 근거: 1992 天皇賞(春)(GI) 1위.",
         "choreography": {
           "windup": 0.45,
           "recovery": 0.3,
@@ -1534,8 +1533,8 @@
         "displayName": "엘 콘도르 파사 · 구원 방벽 (1998 ジャパンC(GI))",
         "template": "HEAL_BUFF",
         "baseValues": [
-          222,
-          246,
+          252,
+          280,
           31
         ],
         "starMultipliers": [
@@ -1554,13 +1553,13 @@
           },
           {
             "kind": "SHIELD_FLAT",
-            "value": 226,
+            "value": 256,
             "duration": 4,
             "target": "LOWEST_HP_ALLY"
           }
         ],
         "vfxKey": "vfx_heal",
-        "description": "[구원 방벽] 체력 비율이 가장 낮은 아군의 잃은 체력 25%를 회복하고 226 보호막(4초). 근거: 1998 ジャパンC(GI) 1위.",
+        "description": "[구원 방벽] 체력 비율이 가장 낮은 아군의 잃은 체력 25%를 회복하고 256 보호막(4초). 근거: 1998 ジャパンC(GI) 1위.",
         "choreography": {
           "windup": 0.3,
           "recovery": 0.3,
@@ -1637,8 +1636,8 @@
         "displayName": "티엠 오페라 오 · 결투 방벽 (2000 有馬記念(GI))",
         "template": "SHIELD_TAUNT",
         "baseValues": [
-          275,
-          305,
+          373,
+          414,
           32
         ],
         "starMultipliers": [
@@ -1652,7 +1651,7 @@
         "effects": [
           {
             "kind": "SHIELD_FLAT",
-            "value": 474,
+            "value": 643,
             "duration": 4,
             "target": "SELF"
           },
@@ -1670,7 +1669,7 @@
           }
         ],
         "vfxKey": "vfx_shield",
-        "description": "[결투 방벽] 474 보호막(4초), 1.5초 제어 면역. 주변 2칸 최대 3명을 2초 도발. 근거: 2000 有馬記念(GI) 1위.",
+        "description": "[결투 방벽] 643 보호막(4초), 1.5초 제어 면역. 주변 2칸 최대 3명을 2초 도발. 근거: 2000 有馬記念(GI) 1위.",
         "choreography": {
           "windup": 0.45,
           "recovery": 0.3,
@@ -1747,8 +1746,8 @@
         "displayName": "나리타 브라이언 · 부채 연사 (1994 菊花賞(GI))",
         "template": "MULTI_SHOT",
         "baseValues": [
-          223,
-          248,
+          254,
+          282,
           31
         ],
         "starMultipliers": [
@@ -1762,7 +1761,7 @@
         "effects": [
           {
             "kind": "DAMAGE",
-            "value": 140,
+            "value": 160,
             "damageType": "PHYSICAL",
             "target": "CURRENT_TARGET",
             "shape": "CONE",
@@ -1772,7 +1771,7 @@
           },
           {
             "kind": "DAMAGE",
-            "value": 140,
+            "value": 160,
             "damageType": "PHYSICAL",
             "target": "CURRENT_TARGET",
             "shape": "CONE",
@@ -1782,7 +1781,7 @@
           }
         ],
         "vfxKey": "vfx_projectile",
-        "description": "[부채 연사] 전방 3칸 부채꼴 최대 4명에게 140 물리 피해를 0.3초 간격으로 2회. 근거: 1994 菊花賞(GI) 1위.",
+        "description": "[부채 연사] 전방 3칸 부채꼴 최대 4명에게 160 물리 피해를 0.3초 간격으로 2회. 근거: 1994 菊花賞(GI) 1위.",
         "choreography": {
           "windup": 0.45,
           "recovery": 0.3,
@@ -1833,16 +1832,16 @@
       "nameKo": "심볼리 루돌프",
       "nameJa": "シンボリルドルフ",
       "nameEn": "Symboli Rudolf",
-      "cost": 4,
+      "cost": 5,
       "role": "TANK",
       "activeS1": true,
       "uftRating": 0.84,
-      "hp": 1035,
-      "attackDamage": 75,
+      "hp": 1170,
+      "attackDamage": 83,
       "abilityPower": 100,
-      "armor": 64,
-      "magicResist": 59,
-      "attackSpeed": 0.78,
+      "armor": 67,
+      "magicResist": 62,
+      "attackSpeed": 0.81,
       "attackRange": 1,
       "moveSpeedHexPerSec": 1.96,
       "critChance": 0.25,
@@ -1860,14 +1859,14 @@
         "displayName": "심볼리 루돌프 · 관통 구속 (1985 有馬記念(GI))",
         "template": "CONTROL",
         "baseValues": [
-          244,
-          271,
+          368,
+          409,
           32
         ],
         "starMultipliers": [
           1,
           1.45,
-          3.6
+          6
         ],
         "damageType": "MAGIC",
         "targetRule": "LARGEST_ENEMY_CLUSTER",
@@ -1875,7 +1874,7 @@
         "effects": [
           {
             "kind": "DAMAGE",
-            "value": 171,
+            "value": 258,
             "damageType": "MAGIC",
             "target": "LARGEST_ENEMY_CLUSTER",
             "shape": "LINE",
@@ -1893,7 +1892,7 @@
           }
         ],
         "vfxKey": "vfx_stun",
-        "description": "[관통 구속] 직선 6칸 최대 4명에게 171 마법 피해와 1초 기절. 근거: 1985 有馬記念(GI) 1위.",
+        "description": "[관통 구속] 직선 6칸 최대 4명에게 258 마법 피해와 1초 기절. 근거: 1985 有馬記念(GI) 1위.",
         "choreography": {
           "windup": 0.45,
           "recovery": 0.3,
@@ -1967,8 +1966,8 @@
         "displayName": "에어 그루브 · 방벽 반격 (1997 天皇賞(秋)(GI))",
         "template": "SHIELD_TAUNT",
         "baseValues": [
-          219,
-          244,
+          249,
+          277,
           31
         ],
         "starMultipliers": [
@@ -1982,13 +1981,13 @@
         "effects": [
           {
             "kind": "SHIELD_FLAT",
-            "value": 295,
+            "value": 335,
             "duration": 4,
             "target": "SELF"
           },
           {
             "kind": "DAMAGE",
-            "value": 171,
+            "value": 195,
             "damageType": "MAGIC",
             "target": "ALL_ENEMIES",
             "radius": 2,
@@ -1998,7 +1997,7 @@
           }
         ],
         "vfxKey": "vfx_shield",
-        "description": "[방벽 반격] 295 보호막을 얻고 0.7초 뒤 주변 2칸 최대 4명에게 171 마법 피해. 체력 피해의 20% 회복. 근거: 1997 天皇賞(秋)(GI) 1위.",
+        "description": "[방벽 반격] 335 보호막을 얻고 0.7초 뒤 주변 2칸 최대 4명에게 195 마법 피해. 체력 피해의 20% 회복. 근거: 1997 天皇賞(秋)(GI) 1위.",
         "choreography": {
           "windup": 0.3,
           "recovery": 0.3,
@@ -2184,8 +2183,8 @@
         "displayName": "세이운 스카이 · 에이스 지휘 (1998 菊花賞(GI))",
         "template": "AURA",
         "baseValues": [
-          197,
-          218,
+          207,
+          231,
           30
         ],
         "starMultipliers": [
@@ -2200,20 +2199,20 @@
           {
             "kind": "STAT_MUL",
             "stat": "attackSpeed",
-            "value": 0.45,
+            "value": 0.477,
             "duration": 4,
             "refresh": true,
             "target": "HIGHEST_AD_ALLY"
           },
           {
             "kind": "SHIELD_FLAT",
-            "value": 217,
+            "value": 228,
             "duration": 4,
             "target": "HIGHEST_AD_ALLY"
           }
         ],
         "vfxKey": "vfx_buff",
-        "description": "[에이스 지휘] 공격력이 가장 높은 아군 1명에게 4초간 공격속도 +45%와 217 보호막. 근거: 1998 菊花賞(GI) 1위.",
+        "description": "[에이스 지휘] 공격력이 가장 높은 아군 1명에게 4초간 공격속도 +47.7%와 228 보호막. 근거: 1998 菊花賞(GI) 1위.",
         "choreography": {
           "windup": 0.45,
           "recovery": 0.3,
@@ -2290,8 +2289,8 @@
         "displayName": "타마모 크로스 · 흡수 휩쓸기 (1988 天皇賞(秋)(GI))",
         "template": "DASH_LINE",
         "baseValues": [
-          224,
-          249,
+          255,
+          283,
           31
         ],
         "starMultipliers": [
@@ -2310,7 +2309,7 @@
           },
           {
             "kind": "DAMAGE",
-            "value": 201,
+            "value": 229,
             "damageType": "PHYSICAL",
             "target": "CURRENT_TARGET",
             "shape": "CONE",
@@ -2320,7 +2319,7 @@
           }
         ],
         "vfxKey": "vfx_dash_senko",
-        "description": "[흡수 휩쓸기] 돌진 후 전방 3칸 부채꼴의 최대 4명에게 201 물리 피해. 실제 체력 피해의 25% 회복. 근거: 1988 天皇賞(秋)(GI) 1위.",
+        "description": "[흡수 휩쓸기] 돌진 후 전방 3칸 부채꼴의 최대 4명에게 229 물리 피해. 실제 체력 피해의 25% 회복. 근거: 1988 天皇賞(秋)(GI) 1위.",
         "choreography": {
           "windup": 0.3,
           "recovery": 0.3,
@@ -2397,8 +2396,8 @@
         "displayName": "파인 모션 · 유인 돌진 (2002 エリザベス女王杯(GI))",
         "template": "DASH_LINE",
         "baseValues": [
-          198,
-          220,
+          209,
+          232,
           30
         ],
         "starMultipliers": [
@@ -2412,7 +2411,7 @@
         "effects": [
           {
             "kind": "SHIELD_FLAT",
-            "value": 142,
+            "value": 149,
             "duration": 4,
             "target": "SELF"
           },
@@ -2424,7 +2423,7 @@
           },
           {
             "kind": "DAMAGE",
-            "value": 250,
+            "value": 264,
             "damageType": "PHYSICAL",
             "target": "CURRENT_TARGET",
             "delay": 0.25
@@ -2439,7 +2438,7 @@
           }
         ],
         "vfxKey": "vfx_dash_nige",
-        "description": "[유인 돌진] 142 보호막을 얻고 0.25초 뒤 돌진. 대상에게 250 물리 피해와 2초 둔화. 근거: 2002 エリザベス女王杯(GI) 1위.",
+        "description": "[유인 돌진] 149 보호막을 얻고 0.25초 뒤 돌진. 대상에게 264 물리 피해와 2초 둔화. 근거: 2002 エリザベス女王杯(GI) 1위.",
         "choreography": {
           "windup": 0.3,
           "recovery": 0.3,
@@ -2515,8 +2514,8 @@
         "displayName": "비와 하야히데 · 집중 유성 (1994 宝塚記念(GI))",
         "template": "AOE_BURST",
         "baseValues": [
-          245,
-          272,
+          303,
+          337,
           32
         ],
         "starMultipliers": [
@@ -2530,7 +2529,7 @@
         "effects": [
           {
             "kind": "DAMAGE",
-            "value": 340,
+            "value": 421,
             "damageType": "MAGIC",
             "target": "LARGEST_ENEMY_CLUSTER",
             "radius": 2,
@@ -2538,7 +2537,7 @@
           }
         ],
         "vfxKey": "vfx_aoe_burst",
-        "description": "[집중 유성] 0.9초 집중 후 밀집 지점 2칸 내 최대 5명에게 340 마법 피해. 집중 중 기절하면 취소. 근거: 1994 宝塚記念(GI) 1위.",
+        "description": "[집중 유성] 0.9초 집중 후 밀집 지점 2칸 내 최대 5명에게 421 마법 피해. 집중 중 기절하면 취소. 근거: 1994 宝塚記念(GI) 1위.",
         "choreography": {
           "windup": 0.9,
           "recovery": 0.3,
@@ -2616,8 +2615,8 @@
         "displayName": "마야노 탑건 · 반격 폭풍 (1995 菊花賞(GI))",
         "template": "AURA",
         "baseValues": [
-          238,
-          264,
+          294,
+          327,
           31
         ],
         "starMultipliers": [
@@ -2631,7 +2630,7 @@
         "effects": [
           {
             "kind": "DAMAGE",
-            "value": 78,
+            "value": 96,
             "damageType": "MAGIC",
             "target": "ALL_ENEMIES",
             "radius": 2,
@@ -2641,7 +2640,7 @@
           },
           {
             "kind": "DAMAGE",
-            "value": 78,
+            "value": 96,
             "damageType": "MAGIC",
             "target": "ALL_ENEMIES",
             "radius": 2,
@@ -2651,7 +2650,7 @@
           },
           {
             "kind": "DAMAGE",
-            "value": 78,
+            "value": 96,
             "damageType": "MAGIC",
             "target": "ALL_ENEMIES",
             "radius": 2,
@@ -2661,13 +2660,13 @@
           },
           {
             "kind": "SHIELD_FLAT",
-            "value": 155,
+            "value": 192,
             "duration": 4,
             "target": "SELF"
           }
         ],
         "vfxKey": "vfx_buff",
-        "description": "[반격 폭풍] 155 보호막을 얻고 주변 2칸 최대 4명에게 0.4초 간격으로 78 마법 피해 3회. 체력 피해의 15% 회복. 근거: 1995 菊花賞(GI) 1위.",
+        "description": "[반격 폭풍] 192 보호막을 얻고 주변 2칸 최대 4명에게 0.4초 간격으로 96 마법 피해 3회. 체력 피해의 15% 회복. 근거: 1995 菊花賞(GI) 1위.",
         "choreography": {
           "windup": 0.45,
           "recovery": 0.3,
@@ -2743,8 +2742,8 @@
         "displayName": "미호노 부르봉 · 지속 광선 (1992 東京優駿(GI))",
         "template": "AOE_BURST",
         "baseValues": [
-          275,
-          306,
+          374,
+          415,
           32
         ],
         "starMultipliers": [
@@ -2758,7 +2757,7 @@
         "effects": [
           {
             "kind": "DAMAGE",
-            "value": 89,
+            "value": 121,
             "damageType": "MAGIC",
             "target": "LARGEST_ENEMY_CLUSTER",
             "shape": "LINE",
@@ -2768,7 +2767,7 @@
           },
           {
             "kind": "DAMAGE",
-            "value": 89,
+            "value": 121,
             "damageType": "MAGIC",
             "target": "LARGEST_ENEMY_CLUSTER",
             "shape": "LINE",
@@ -2778,7 +2777,7 @@
           },
           {
             "kind": "DAMAGE",
-            "value": 89,
+            "value": 121,
             "damageType": "MAGIC",
             "target": "LARGEST_ENEMY_CLUSTER",
             "shape": "LINE",
@@ -2788,7 +2787,7 @@
           },
           {
             "kind": "DAMAGE",
-            "value": 89,
+            "value": 121,
             "damageType": "MAGIC",
             "target": "LARGEST_ENEMY_CLUSTER",
             "shape": "LINE",
@@ -2798,7 +2797,7 @@
           }
         ],
         "vfxKey": "vfx_aoe_burst",
-        "description": "[지속 광선] 직선 6칸 최대 4명을 향해 0.35초 간격으로 4회 광선. 매회 89 마법 피해, 시전 중 일반 공격 불가. 근거: 1992 東京優駿(GI) 1위.",
+        "description": "[지속 광선] 직선 6칸 최대 4명을 향해 0.35초 간격으로 4회 광선. 매회 121 마법 피해, 시전 중 일반 공격 불가. 근거: 1992 東京優駿(GI) 1위.",
         "choreography": {
           "windup": 0.4,
           "recovery": 0.3,
@@ -2874,8 +2873,8 @@
         "displayName": "메지로 라이언 · 흡수 휩쓸기 (1991 宝塚記念(GI))",
         "template": "DASH_LINE",
         "baseValues": [
-          196,
-          218,
+          207,
+          230,
           30
         ],
         "starMultipliers": [
@@ -2894,7 +2893,7 @@
           },
           {
             "kind": "DAMAGE",
-            "value": 176,
+            "value": 186,
             "damageType": "PHYSICAL",
             "target": "CURRENT_TARGET",
             "shape": "CONE",
@@ -2904,7 +2903,7 @@
           }
         ],
         "vfxKey": "vfx_dash_sashi",
-        "description": "[흡수 휩쓸기] 돌진 후 전방 3칸 부채꼴의 최대 4명에게 176 물리 피해. 실제 체력 피해의 25% 회복. 근거: 1991 宝塚記念(GI) 1위.",
+        "description": "[흡수 휩쓸기] 돌진 후 전방 3칸 부채꼴의 최대 4명에게 186 물리 피해. 실제 체력 피해의 25% 회복. 근거: 1991 宝塚記念(GI) 1위.",
         "choreography": {
           "windup": 0.3,
           "recovery": 0.3,
@@ -3211,8 +3210,8 @@
         "displayName": "라이스 샤워 · 흡수 요새 (1995 天皇賞(春)(GI))",
         "template": "SHIELD_TAUNT",
         "baseValues": [
-          193,
-          214,
+          203,
+          226,
           30
         ],
         "starMultipliers": [
@@ -3232,7 +3231,7 @@
           },
           {
             "kind": "DAMAGE",
-            "value": 78,
+            "value": 82,
             "damageType": "MAGIC",
             "target": "ALL_ENEMIES",
             "radius": 1,
@@ -3242,7 +3241,7 @@
           },
           {
             "kind": "DAMAGE",
-            "value": 78,
+            "value": 82,
             "damageType": "MAGIC",
             "target": "ALL_ENEMIES",
             "radius": 1,
@@ -3252,7 +3251,7 @@
           },
           {
             "kind": "DAMAGE",
-            "value": 78,
+            "value": 82,
             "damageType": "MAGIC",
             "target": "ALL_ENEMIES",
             "radius": 1,
@@ -3262,7 +3261,7 @@
           }
         ],
         "vfxKey": "vfx_shield",
-        "description": "[흡수 요새] 4초간 받는 피해 20% 감소. 주변 1칸 최대 3명에게 78 마법 피해 3회, 체력 피해의 45% 회복. 근거: 1995 天皇賞(春)(GI) 1위.",
+        "description": "[흡수 요새] 4초간 받는 피해 20% 감소. 주변 1칸 최대 3명에게 82 마법 피해 3회, 체력 피해의 45% 회복. 근거: 1995 天皇賞(春)(GI) 1위.",
         "choreography": {
           "windup": 0.45,
           "recovery": 0.3,
@@ -3339,8 +3338,8 @@
         "displayName": "아이네스 후진 · 지구력 축적 (1990 東京優駿(GI))",
         "template": "AURA",
         "baseValues": [
-          197,
-          219,
+          208,
+          231,
           30
         ],
         "starMultipliers": [
@@ -3366,13 +3365,13 @@
           },
           {
             "kind": "SHIELD_FLAT",
-            "value": 161,
+            "value": 170,
             "duration": 4,
             "target": "SELF"
           }
         ],
         "vfxKey": "vfx_buff",
-        "description": "[지구력 축적] 시전마다 최대 체력 +70(전투당 최대 4중첩). 4초간 받는 피해 18% 감소와 161 보호막. 근거: 1990 東京優駿(GI) 1위.",
+        "description": "[지구력 축적] 시전마다 최대 체력 +70(전투당 최대 4중첩). 4초간 받는 피해 18% 감소와 170 보호막. 근거: 1990 東京優駿(GI) 1위.",
         "choreography": {
           "windup": 0.3,
           "recovery": 0.3,
@@ -3448,8 +3447,8 @@
         "displayName": "아그네스 타키온 · 가속 장전 (2001 皐月賞(GI))",
         "template": "MULTI_SHOT",
         "baseValues": [
-          249,
-          276,
+          308,
+          342,
           32
         ],
         "starMultipliers": [
@@ -3464,7 +3463,7 @@
           {
             "kind": "STAT_MUL",
             "stat": "attackSpeed",
-            "value": 0.45,
+            "value": 0.558,
             "duration": 4,
             "refresh": true,
             "target": "SELF"
@@ -3472,28 +3471,28 @@
           {
             "kind": "STAT_MUL",
             "stat": "attackDamage",
-            "value": 0.2,
+            "value": 0.248,
             "duration": 4,
             "refresh": true,
             "target": "SELF"
           },
           {
             "kind": "DAMAGE",
-            "value": 102,
+            "value": 126,
             "damageType": "PHYSICAL",
             "target": "CURRENT_TARGET",
             "delay": 0
           },
           {
             "kind": "DAMAGE",
-            "value": 102,
+            "value": 126,
             "damageType": "PHYSICAL",
             "target": "CURRENT_TARGET",
             "delay": 0.2
           }
         ],
         "vfxKey": "vfx_projectile",
-        "description": "[가속 장전] 4초간 공격속도 +45%, 공격력 +20%. 장전 타격으로 102 물리 피해를 2회. 근거: 2001 皐月賞(GI) 1위.",
+        "description": "[가속 장전] 4초간 공격속도 +55.8%, 공격력 +24.8%. 장전 타격으로 126 물리 피해를 2회. 근거: 2001 皐月賞(GI) 1위.",
         "choreography": {
           "windup": 0.15,
           "recovery": 0.3,
@@ -4029,8 +4028,8 @@
         "displayName": "에이신 플래시 · 지연 봉쇄 (2010 東京優駿(GI))",
         "template": "CONTROL",
         "baseValues": [
-          190,
-          211,
+          201,
+          223,
           30
         ],
         "starMultipliers": [
@@ -4044,7 +4043,7 @@
         "effects": [
           {
             "kind": "DAMAGE",
-            "value": 77,
+            "value": 81,
             "damageType": "MAGIC",
             "target": "LARGEST_ENEMY_CLUSTER",
             "radius": 1,
@@ -4052,7 +4051,7 @@
           },
           {
             "kind": "DAMAGE",
-            "value": 97,
+            "value": 103,
             "damageType": "MAGIC",
             "target": "LARGEST_ENEMY_CLUSTER",
             "radius": 1,
@@ -4070,7 +4069,7 @@
           }
         ],
         "vfxKey": "vfx_stun",
-        "description": "[지연 봉쇄] 주변 1칸 최대 4명에게 77 마법 피해, 0.8초 뒤 97 추가 피해와 1.4초 기절. 근거: 2010 東京優駿(GI) 1위.",
+        "description": "[지연 봉쇄] 주변 1칸 최대 4명에게 81 마법 피해, 0.8초 뒤 103 추가 피해와 1.4초 기절. 근거: 2010 東京優駿(GI) 1위.",
         "choreography": {
           "windup": 0.3,
           "recovery": 0.3,
@@ -4147,8 +4146,8 @@
         "displayName": "카렌짱 · 연쇄 섬광 (2012 高松宮記念(GI))",
         "template": "AOE_BURST",
         "baseValues": [
-          213,
-          237,
+          243,
+          270,
           30
         ],
         "starMultipliers": [
@@ -4162,7 +4161,7 @@
         "effects": [
           {
             "kind": "DAMAGE",
-            "value": 132,
+            "value": 151,
             "damageType": "MAGIC",
             "target": "LARGEST_ENEMY_CLUSTER",
             "shape": "CHAIN",
@@ -4171,7 +4170,7 @@
           }
         ],
         "vfxKey": "vfx_aoe_burst",
-        "description": "[연쇄 섬광] 섬광이 대상에서 3칸 내 다음 적으로 최대 4명까지 이어지며 각각 132 마법 피해. 같은 적을 재타격하지 않음. 근거: 2012 高松宮記念(GI) 1위.",
+        "description": "[연쇄 섬광] 섬광이 대상에서 3칸 내 다음 적으로 최대 4명까지 이어지며 각각 151 마법 피해. 같은 적을 재타격하지 않음. 근거: 2012 高松宮記念(GI) 1위.",
         "choreography": {
           "windup": 0.15,
           "recovery": 0.3,
@@ -4456,8 +4455,8 @@
         "displayName": "사쿠라 바쿠신 오 · 진군 박자 (1994 スプリンターズS(GI))",
         "template": "AURA",
         "baseValues": [
-          196,
-          218,
+          207,
+          230,
           30
         ],
         "starMultipliers": [
@@ -4472,7 +4471,7 @@
           {
             "kind": "STAT_MUL",
             "stat": "attackSpeed",
-            "value": 0.3,
+            "value": 0.318,
             "duration": 4,
             "refresh": true,
             "target": "ALL_ALLIES",
@@ -4489,7 +4488,7 @@
           }
         ],
         "vfxKey": "vfx_buff",
-        "description": "[진군 박자] 2칸 내 최대 4명의 아군에게 4초간 공격속도 +30%. 자신 외 대상은 마나 8 회복. 근거: 1994 スプリンターズS(GI) 1위.",
+        "description": "[진군 박자] 2칸 내 최대 4명의 아군에게 4초간 공격속도 +31.8%. 자신 외 대상은 마나 8 회복. 근거: 1994 スプリンターズS(GI) 1위.",
         "choreography": {
           "windup": 0.15,
           "recovery": 0.3,
@@ -4567,8 +4566,8 @@
         "displayName": "시킹 더 펄 · 분산 포격 (1997 NHKマイルC(GI))",
         "template": "MULTI_SHOT",
         "baseValues": [
-          194,
-          215,
+          205,
+          227,
           30
         ],
         "starMultipliers": [
@@ -4582,7 +4581,7 @@
         "effects": [
           {
             "kind": "DAMAGE",
-            "value": 106,
+            "value": 112,
             "damageType": "MAGIC",
             "target": "NEAREST_ENEMY",
             "shape": "CHAIN",
@@ -4592,7 +4591,7 @@
           },
           {
             "kind": "DAMAGE",
-            "value": 106,
+            "value": 112,
             "damageType": "MAGIC",
             "target": "NEAREST_ENEMY",
             "shape": "CHAIN",
@@ -4602,7 +4601,7 @@
           }
         ],
         "vfxKey": "vfx_projectile",
-        "description": "[분산 포격] 가까운 적에서 시작해 서로 다른 최대 3명에게 106 마법 피해. 0.35초 뒤 한 번 더 발사. 근거: 1997 NHKマイルC(GI) 1위.",
+        "description": "[분산 포격] 가까운 적에서 시작해 서로 다른 최대 3명에게 112 마법 피해. 0.35초 뒤 한 번 더 발사. 근거: 1997 NHKマイルC(GI) 1위.",
         "choreography": {
           "windup": 0.3,
           "recovery": 0.3,
@@ -4779,8 +4778,8 @@
         "displayName": "스윕 토쇼 · 교차 파동 (2005 宝塚記念(GI))",
         "template": "DASH_LINE",
         "baseValues": [
-          195,
-          217,
+          206,
+          229,
           30
         ],
         "starMultipliers": [
@@ -4799,7 +4798,7 @@
           },
           {
             "kind": "DAMAGE",
-            "value": 126,
+            "value": 133,
             "damageType": "PHYSICAL",
             "target": "CURRENT_TARGET",
             "shape": "LINE",
@@ -4808,7 +4807,7 @@
           },
           {
             "kind": "DAMAGE",
-            "value": 89,
+            "value": 94,
             "damageType": "MAGIC",
             "target": "CURRENT_TARGET",
             "shape": "LINE",
@@ -4818,7 +4817,7 @@
           }
         ],
         "vfxKey": "vfx_dash_sashi",
-        "description": "[교차 파동] 돌진 후 직선 최대 4명에게 126 물리 피해, 0.45초 뒤 같은 방향으로 89 마법 파동. 근거: 2005 宝塚記念(GI) 1위.",
+        "description": "[교차 파동] 돌진 후 직선 최대 4명에게 133 물리 피해, 0.45초 뒤 같은 방향으로 94 마법 파동. 근거: 2005 宝塚記念(GI) 1위.",
         "choreography": {
           "windup": 0.3,
           "recovery": 0.3,
@@ -4896,8 +4895,8 @@
         "displayName": "슈퍼 크릭 · 서리 전선 (1990 天皇賞(春)(GI))",
         "template": "CONTROL",
         "baseValues": [
-          222,
-          247,
+          252,
+          281,
           31
         ],
         "starMultipliers": [
@@ -4911,7 +4910,7 @@
         "effects": [
           {
             "kind": "DAMAGE",
-            "value": 132,
+            "value": 149,
             "damageType": "MAGIC",
             "target": "LARGEST_ENEMY_CLUSTER",
             "radius": 2,
@@ -4936,7 +4935,7 @@
           }
         ],
         "vfxKey": "vfx_stun",
-        "description": "[서리 전선] 주변 2칸 최대 4명에게 132 마법 피해, 0.6초 기절과 3초 둔화. 근거: 1990 天皇賞(春)(GI) 1위.",
+        "description": "[서리 전선] 주변 2칸 최대 4명에게 149 마법 피해, 0.6초 기절과 3초 둔화. 근거: 1990 天皇賞(春)(GI) 1위.",
         "choreography": {
           "windup": 0.45,
           "recovery": 0.3,
@@ -5013,8 +5012,8 @@
         "displayName": "스마트 팔콘 · 잔불 지대 (2010 JBCクラシック(JpnI))",
         "template": "AOE_BURST",
         "baseValues": [
-          246,
-          273,
+          305,
+          338,
           32
         ],
         "starMultipliers": [
@@ -5028,7 +5027,7 @@
         "effects": [
           {
             "kind": "DAMAGE",
-            "value": 89,
+            "value": 111,
             "damageType": "MAGIC",
             "target": "LARGEST_ENEMY_CLUSTER",
             "radius": 1,
@@ -5037,7 +5036,7 @@
           },
           {
             "kind": "DAMAGE",
-            "value": 89,
+            "value": 111,
             "damageType": "MAGIC",
             "target": "LARGEST_ENEMY_CLUSTER",
             "radius": 1,
@@ -5046,7 +5045,7 @@
           },
           {
             "kind": "DAMAGE",
-            "value": 89,
+            "value": 111,
             "damageType": "MAGIC",
             "target": "LARGEST_ENEMY_CLUSTER",
             "radius": 1,
@@ -5062,7 +5061,7 @@
           }
         ],
         "vfxKey": "vfx_aoe_burst",
-        "description": "[잔불 지대] 대상 주변 1칸 최대 4명에게 0.6초 간격으로 89 마법 피해 3회와 3초간 회복 감소 33%. 근거: 2010 JBCクラシック(JpnI) 1위.",
+        "description": "[잔불 지대] 대상 주변 1칸 최대 4명에게 0.6초 간격으로 111 마법 피해 3회와 3초간 회복 감소 33%. 근거: 2010 JBCクラシック(JpnI) 1위.",
         "choreography": {
           "windup": 0.3,
           "recovery": 0.3,
@@ -5141,8 +5140,8 @@
         "displayName": "젠노 롭 로이 · 결투 방벽 (2004 ジャパンC(GI))",
         "template": "SHIELD_TAUNT",
         "baseValues": [
-          238,
-          264,
+          294,
+          327,
           31
         ],
         "starMultipliers": [
@@ -5156,7 +5155,7 @@
         "effects": [
           {
             "kind": "SHIELD_FLAT",
-            "value": 419,
+            "value": 517,
             "duration": 4,
             "target": "SELF"
           },
@@ -5174,7 +5173,7 @@
           }
         ],
         "vfxKey": "vfx_shield",
-        "description": "[결투 방벽] 419 보호막(4초), 1.5초 제어 면역. 주변 2칸 최대 3명을 2초 도발. 근거: 2004 ジャパンC(GI) 1위.",
+        "description": "[결투 방벽] 517 보호막(4초), 1.5초 제어 면역. 주변 2칸 최대 3명을 2초 도발. 근거: 2004 ジャパンC(GI) 1위.",
         "choreography": {
           "windup": 0.3,
           "recovery": 0.3,
@@ -5600,8 +5599,8 @@
         "displayName": "니시노 플라워 · 유인 돌진 (1992 スプリンターズS(GI))",
         "template": "DASH_LINE",
         "baseValues": [
-          201,
-          224,
+          212,
+          236,
           31
         ],
         "starMultipliers": [
@@ -5615,7 +5614,7 @@
         "effects": [
           {
             "kind": "SHIELD_FLAT",
-            "value": 141,
+            "value": 149,
             "duration": 4,
             "target": "SELF"
           },
@@ -5627,7 +5626,7 @@
           },
           {
             "kind": "DAMAGE",
-            "value": 249,
+            "value": 263,
             "damageType": "PHYSICAL",
             "target": "CURRENT_TARGET",
             "delay": 0.25
@@ -5642,7 +5641,7 @@
           }
         ],
         "vfxKey": "vfx_dash_senko",
-        "description": "[유인 돌진] 141 보호막을 얻고 0.25초 뒤 돌진. 대상에게 249 물리 피해와 2초 둔화. 근거: 1992 スプリンターズS(GI) 1위.",
+        "description": "[유인 돌진] 149 보호막을 얻고 0.25초 뒤 돌진. 대상에게 263 물리 피해와 2초 둔화. 근거: 1992 スプリンターズS(GI) 1위.",
         "choreography": {
           "windup": 0.15,
           "recovery": 0.3,
@@ -5831,8 +5830,8 @@
         "displayName": "뱀부 메모리 · 무장 해제 (1990 スプリンターズS(GI))",
         "template": "CONTROL",
         "baseValues": [
-          190,
-          211,
+          200,
+          223,
           30
         ],
         "starMultipliers": [
@@ -5846,7 +5845,7 @@
         "effects": [
           {
             "kind": "DAMAGE",
-            "value": 155,
+            "value": 163,
             "damageType": "MAGIC",
             "target": "LARGEST_ENEMY_CLUSTER",
             "shape": "CONE",
@@ -5864,7 +5863,7 @@
           }
         ],
         "vfxKey": "vfx_stun",
-        "description": "[무장 해제] 전방 3칸 최대 4명에게 155 마법 피해. 1.8초간 일반 공격 봉쇄, 스킬은 사용 가능. 근거: 1990 スプリンターズS(GI) 1위.",
+        "description": "[무장 해제] 전방 3칸 최대 4명에게 163 마법 피해. 1.8초간 일반 공격 봉쇄, 스킬은 사용 가능. 근거: 1990 スプリンターズS(GI) 1위.",
         "choreography": {
           "windup": 0.15,
           "recovery": 0.3,
@@ -6056,8 +6055,8 @@
         "displayName": "마블러스 선데이 · 방벽 반격 (1997 宝塚記念(GI))",
         "template": "SHIELD_TAUNT",
         "baseValues": [
-          218,
-          242,
+          248,
+          276,
           31
         ],
         "starMultipliers": [
@@ -6071,13 +6070,13 @@
         "effects": [
           {
             "kind": "SHIELD_FLAT",
-            "value": 294,
+            "value": 334,
             "duration": 4,
             "target": "SELF"
           },
           {
             "kind": "DAMAGE",
-            "value": 170,
+            "value": 194,
             "damageType": "MAGIC",
             "target": "ALL_ENEMIES",
             "radius": 2,
@@ -6087,7 +6086,7 @@
           }
         ],
         "vfxKey": "vfx_shield",
-        "description": "[방벽 반격] 294 보호막을 얻고 0.7초 뒤 주변 2칸 최대 4명에게 170 마법 피해. 체력 피해의 20% 회복. 근거: 1997 宝塚記念(GI) 1위.",
+        "description": "[방벽 반격] 334 보호막을 얻고 0.7초 뒤 주변 2칸 최대 4명에게 194 마법 피해. 체력 피해의 20% 회복. 근거: 1997 宝塚記念(GI) 1위.",
         "choreography": {
           "windup": 0.3,
           "recovery": 0.3,
@@ -6376,8 +6375,8 @@
         "displayName": "메이쇼 도토 · 회복 성역 (2001 宝塚記念(GI))",
         "template": "AURA",
         "baseValues": [
-          210,
-          234,
+          239,
+          266,
           30
         ],
         "starMultipliers": [
@@ -6391,7 +6390,7 @@
         "effects": [
           {
             "kind": "HEAL",
-            "value": 63,
+            "value": 72,
             "target": "ALL_ALLIES",
             "radius": 2,
             "maxTargets": 4,
@@ -6399,7 +6398,7 @@
           },
           {
             "kind": "HEAL",
-            "value": 63,
+            "value": 72,
             "target": "ALL_ALLIES",
             "radius": 2,
             "maxTargets": 4,
@@ -6407,7 +6406,7 @@
           },
           {
             "kind": "HEAL",
-            "value": 63,
+            "value": 72,
             "target": "ALL_ALLIES",
             "radius": 2,
             "maxTargets": 4,
@@ -6421,7 +6420,7 @@
           }
         ],
         "vfxKey": "vfx_buff",
-        "description": "[회복 성역] 2칸 내 최대 4명 아군의 제어 효과를 해제하고, 0.5초 간격으로 63씩 3회 회복. 근거: 2001 宝塚記念(GI) 1위.",
+        "description": "[회복 성역] 2칸 내 최대 4명 아군의 제어 효과를 해제하고, 0.5초 간격으로 72씩 3회 회복. 근거: 2001 宝塚記念(GI) 1위.",
         "choreography": {
           "windup": 0.3,
           "recovery": 0.3,
@@ -6499,8 +6498,8 @@
         "displayName": "메지로 도베르 · 교차 파동 (1997 優駿牝馬(GI))",
         "template": "DASH_LINE",
         "baseValues": [
-          218,
-          243,
+          248,
+          276,
           31
         ],
         "starMultipliers": [
@@ -6519,7 +6518,7 @@
           },
           {
             "kind": "DAMAGE",
-            "value": 144,
+            "value": 164,
             "damageType": "PHYSICAL",
             "target": "CURRENT_TARGET",
             "shape": "LINE",
@@ -6528,7 +6527,7 @@
           },
           {
             "kind": "DAMAGE",
-            "value": 102,
+            "value": 116,
             "damageType": "MAGIC",
             "target": "CURRENT_TARGET",
             "shape": "LINE",
@@ -6538,7 +6537,7 @@
           }
         ],
         "vfxKey": "vfx_dash_sashi",
-        "description": "[교차 파동] 돌진 후 직선 최대 4명에게 144 물리 피해, 0.45초 뒤 같은 방향으로 102 마법 파동. 근거: 1997 優駿牝馬(GI) 1위.",
+        "description": "[교차 파동] 돌진 후 직선 최대 4명에게 164 물리 피해, 0.45초 뒤 같은 방향으로 116 마법 파동. 근거: 1997 優駿牝馬(GI) 1위.",
         "choreography": {
           "windup": 0.3,
           "recovery": 0.3,
@@ -6616,8 +6615,8 @@
         "displayName": "나이스 네이처 · 침묵 지대 (1994 高松宮杯(GII))",
         "template": "CONTROL",
         "baseValues": [
-          182,
-          202,
+          192,
+          213,
           29
         ],
         "starMultipliers": [
@@ -6631,7 +6630,7 @@
         "effects": [
           {
             "kind": "DAMAGE",
-            "value": 128,
+            "value": 135,
             "damageType": "MAGIC",
             "target": "LARGEST_ENEMY_CLUSTER",
             "radius": 1,
@@ -6647,7 +6646,7 @@
           }
         ],
         "vfxKey": "vfx_stun",
-        "description": "[침묵 지대] 대상 주변 1칸 최대 4명에게 128 마법 피해와 2초 침묵. 일반 공격과 이동은 가능. 근거: 1994 高松宮杯(GII) 1위.",
+        "description": "[침묵 지대] 대상 주변 1칸 최대 4명에게 135 마법 피해와 2초 침묵. 일반 공격과 이동은 가능. 근거: 1994 高松宮杯(GII) 1위.",
         "choreography": {
           "windup": 0.3,
           "recovery": 0.3,
@@ -7157,8 +7156,8 @@
         "displayName": "다이타쿠 헬리오스 · 진군 박자 (1992 マイルチャンピオンS(GI))",
         "template": "AURA",
         "baseValues": [
-          190,
-          212,
+          201,
+          223,
           30
         ],
         "starMultipliers": [
@@ -7173,7 +7172,7 @@
           {
             "kind": "STAT_MUL",
             "stat": "attackSpeed",
-            "value": 0.3,
+            "value": 0.318,
             "duration": 4,
             "refresh": true,
             "target": "ALL_ALLIES",
@@ -7190,7 +7189,7 @@
           }
         ],
         "vfxKey": "vfx_buff",
-        "description": "[진군 박자] 2칸 내 최대 4명의 아군에게 4초간 공격속도 +30%. 자신 외 대상은 마나 8 회복. 근거: 1992 マイルチャンピオンS(GI) 1위.",
+        "description": "[진군 박자] 2칸 내 최대 4명의 아군에게 4초간 공격속도 +31.8%. 자신 외 대상은 마나 8 회복. 근거: 1992 マイルチャンピオンS(GI) 1위.",
         "choreography": {
           "windup": 0.3,
           "recovery": 0.3,
@@ -7376,8 +7375,8 @@
         "displayName": "사토노 다이아몬드 · 관통 구속 (2016 有馬記念(GI))",
         "template": "CONTROL",
         "baseValues": [
-          200,
-          222,
+          211,
+          234,
           31
         ],
         "starMultipliers": [
@@ -7391,7 +7390,7 @@
         "effects": [
           {
             "kind": "DAMAGE",
-            "value": 140,
+            "value": 148,
             "damageType": "MAGIC",
             "target": "LARGEST_ENEMY_CLUSTER",
             "shape": "LINE",
@@ -7409,7 +7408,7 @@
           }
         ],
         "vfxKey": "vfx_stun",
-        "description": "[관통 구속] 직선 6칸 최대 4명에게 140 마법 피해와 1초 기절. 근거: 2016 有馬記念(GI) 1위.",
+        "description": "[관통 구속] 직선 6칸 최대 4명에게 148 마법 피해와 1초 기절. 근거: 2016 有馬記念(GI) 1위.",
         "choreography": {
           "windup": 0.45,
           "recovery": 0.3,
@@ -7459,16 +7458,16 @@
       "nameKo": "키타산 블랙",
       "nameJa": "キタサンブラック",
       "nameEn": "Kitasan Black",
-      "cost": 5,
+      "cost": 4,
       "role": "TANK",
       "activeS1": true,
       "uftRating": 0.89,
-      "hp": 1175,
-      "attackDamage": 81,
+      "hp": 1040,
+      "attackDamage": 73,
       "abilityPower": 100,
-      "armor": 68,
-      "magicResist": 62,
-      "attackSpeed": 0.81,
+      "armor": 65,
+      "magicResist": 59,
+      "attackSpeed": 0.79,
       "attackRange": 1,
       "moveSpeedHexPerSec": 1.98,
       "critChance": 0.25,
@@ -7486,14 +7485,14 @@
         "displayName": "키타산 블랙 · 에이스 지휘 (2017 天皇賞(秋)(GI))",
         "template": "AURA",
         "baseValues": [
-          274,
-          305,
+          306,
+          340,
           32
         ],
         "starMultipliers": [
           1,
           1.45,
-          6
+          3.6
         ],
         "damageType": "NONE",
         "targetRule": "SELF",
@@ -7502,20 +7501,20 @@
           {
             "kind": "STAT_MUL",
             "stat": "attackSpeed",
-            "value": 0.45,
+            "value": 0.558,
             "duration": 4,
             "refresh": true,
             "target": "HIGHEST_AD_ALLY"
           },
           {
             "kind": "SHIELD_FLAT",
-            "value": 295,
+            "value": 330,
             "duration": 4,
             "target": "HIGHEST_AD_ALLY"
           }
         ],
         "vfxKey": "vfx_buff",
-        "description": "[에이스 지휘] 공격력이 가장 높은 아군 1명에게 4초간 공격속도 +45%와 295 보호막. 근거: 2017 天皇賞(秋)(GI) 1위.",
+        "description": "[에이스 지휘] 공격력이 가장 높은 아군 1명에게 4초간 공격속도 +55.8%와 330 보호막. 근거: 2017 天皇賞(秋)(GI) 1위.",
         "choreography": {
           "windup": 0.3,
           "recovery": 0.3,
@@ -7591,8 +7590,8 @@
         "displayName": "사쿠라 치요노 오 · 교차 파동 (1988 東京優駿(GI))",
         "template": "DASH_LINE",
         "baseValues": [
-          192,
-          213,
+          203,
+          225,
           30
         ],
         "starMultipliers": [
@@ -7611,7 +7610,7 @@
           },
           {
             "kind": "DAMAGE",
-            "value": 124,
+            "value": 131,
             "damageType": "PHYSICAL",
             "target": "CURRENT_TARGET",
             "shape": "LINE",
@@ -7620,7 +7619,7 @@
           },
           {
             "kind": "DAMAGE",
-            "value": 88,
+            "value": 93,
             "damageType": "MAGIC",
             "target": "CURRENT_TARGET",
             "shape": "LINE",
@@ -7630,7 +7629,7 @@
           }
         ],
         "vfxKey": "vfx_dash_nige",
-        "description": "[교차 파동] 돌진 후 직선 최대 4명에게 124 물리 피해, 0.45초 뒤 같은 방향으로 88 마법 파동. 근거: 1988 東京優駿(GI) 1위.",
+        "description": "[교차 파동] 돌진 후 직선 최대 4명에게 131 물리 피해, 0.45초 뒤 같은 방향으로 93 마법 파동. 근거: 1988 東京優駿(GI) 1위.",
         "choreography": {
           "windup": 0.3,
           "recovery": 0.3,
@@ -7931,8 +7930,8 @@
         "displayName": "야에노 무테키 · 전력 연결 (1990 天皇賞(秋)(GI))",
         "template": "HEAL_BUFF",
         "baseValues": [
-          194,
-          215,
+          204,
+          227,
           30
         ],
         "starMultipliers": [
@@ -7946,13 +7945,13 @@
         "effects": [
           {
             "kind": "HEAL",
-            "value": 220,
+            "value": 231,
             "target": "LOWEST_HP_ALLY"
           },
           {
             "kind": "STAT_MUL",
             "stat": "attackSpeed",
-            "value": 0.35,
+            "value": 0.371,
             "duration": 4,
             "refresh": true,
             "target": "LOWEST_HP_ALLY"
@@ -7960,14 +7959,14 @@
           {
             "kind": "STAT_MUL",
             "stat": "abilityPower",
-            "value": 0.2,
+            "value": 0.212,
             "duration": 4,
             "refresh": true,
             "target": "LOWEST_HP_ALLY"
           }
         ],
         "vfxKey": "vfx_heal",
-        "description": "[전력 연결] 가장 위급한 아군을 220 회복. 같은 아군에게 4초간 공격속도 +35%, 주문력 +20%. 근거: 1990 天皇賞(秋)(GI) 1위.",
+        "description": "[전력 연결] 가장 위급한 아군을 231 회복. 같은 아군에게 4초간 공격속도 +37.1%, 주문력 +21.2%. 근거: 1990 天皇賞(秋)(GI) 1위.",
         "choreography": {
           "windup": 0.3,
           "recovery": 0.3,
@@ -8278,8 +8277,8 @@
         "displayName": "데어링 택트 · 교차 파동 (2020 優駿牝馬(GI))",
         "template": "DASH_LINE",
         "baseValues": [
-          211,
-          235,
+          241,
+          267,
           30
         ],
         "starMultipliers": [
@@ -8298,7 +8297,7 @@
           },
           {
             "kind": "DAMAGE",
-            "value": 136,
+            "value": 156,
             "damageType": "PHYSICAL",
             "target": "CURRENT_TARGET",
             "shape": "LINE",
@@ -8307,7 +8306,7 @@
           },
           {
             "kind": "DAMAGE",
-            "value": 97,
+            "value": 110,
             "damageType": "MAGIC",
             "target": "CURRENT_TARGET",
             "shape": "LINE",
@@ -8317,7 +8316,7 @@
           }
         ],
         "vfxKey": "vfx_dash_sashi",
-        "description": "[교차 파동] 돌진 후 직선 최대 4명에게 136 물리 피해, 0.45초 뒤 같은 방향으로 97 마법 파동. 근거: 2020 優駿牝馬(GI) 1위.",
+        "description": "[교차 파동] 돌진 후 직선 최대 4명에게 156 물리 피해, 0.45초 뒤 같은 방향으로 110 마법 파동. 근거: 2020 優駿牝馬(GI) 1위.",
         "choreography": {
           "windup": 0.3,
           "recovery": 0.3,
@@ -8393,8 +8392,8 @@
         "displayName": "사쿠라 로렐 · 서리 전선 (1996 天皇賞(春)(GI))",
         "template": "CONTROL",
         "baseValues": [
-          203,
-          225,
+          214,
+          238,
           31
         ],
         "starMultipliers": [
@@ -8408,7 +8407,7 @@
         "effects": [
           {
             "kind": "DAMAGE",
-            "value": 123,
+            "value": 129,
             "damageType": "MAGIC",
             "target": "LARGEST_ENEMY_CLUSTER",
             "radius": 2,
@@ -8433,7 +8432,7 @@
           }
         ],
         "vfxKey": "vfx_stun",
-        "description": "[서리 전선] 주변 2칸 최대 4명에게 123 마법 피해, 0.6초 기절과 3초 둔화. 근거: 1996 天皇賞(春)(GI) 1위.",
+        "description": "[서리 전선] 주변 2칸 최대 4명에게 129 마법 피해, 0.6초 기절과 3초 둔화. 근거: 1996 天皇賞(春)(GI) 1위.",
         "choreography": {
           "windup": 0.45,
           "recovery": 0.3,
@@ -8510,8 +8509,8 @@
         "displayName": "나리타 탑 로드 · 수호 서약 (1999 菊花賞(GI))",
         "template": "SHIELD_TAUNT",
         "baseValues": [
-          193,
-          214,
+          203,
+          226,
           30
         ],
         "starMultipliers": [
@@ -8525,7 +8524,7 @@
         "effects": [
           {
             "kind": "SHIELD_FLAT",
-            "value": 218,
+            "value": 230,
             "duration": 4,
             "target": "ALL_ALLIES",
             "radius": 1,
@@ -8540,7 +8539,7 @@
           }
         ],
         "vfxKey": "vfx_shield",
-        "description": "[수호 서약] 주변 1칸 최대 3명 아군에게 218 보호막. 주변 적 최대 3명을 1.5초 도발. 근거: 1999 菊花賞(GI) 1위.",
+        "description": "[수호 서약] 주변 1칸 최대 3명 아군에게 230 보호막. 주변 적 최대 3명을 1.5초 도발. 근거: 1999 菊花賞(GI) 1위.",
         "choreography": {
           "windup": 0.45,
           "recovery": 0.3,
@@ -8617,8 +8616,8 @@
         "displayName": "야마닌 제퍼 · 정화 선율 (1993 天皇賞(秋)(GI))",
         "template": "HEAL_BUFF",
         "baseValues": [
-          216,
-          240,
+          246,
+          274,
           31
         ],
         "starMultipliers": [
@@ -8637,13 +8636,13 @@
           },
           {
             "kind": "HEAL",
-            "value": 175,
+            "value": 199,
             "target": "LOWEST_HP_ALLIES",
             "maxTargets": 3
           }
         ],
         "vfxKey": "vfx_heal",
-        "description": "[정화 선율] 체력 비율이 낮은 아군 최대 3명의 기절·침묵·무장해제·둔화·도발을 해제하고 175 회복. 근거: 1993 天皇賞(秋)(GI) 1위.",
+        "description": "[정화 선율] 체력 비율이 낮은 아군 최대 3명의 기절·침묵·무장해제·둔화·도발을 해제하고 199 회복. 근거: 1993 天皇賞(秋)(GI) 1위.",
         "choreography": {
           "windup": 0.3,
           "recovery": 0.3,
@@ -8828,8 +8827,8 @@
         "displayName": "트랜센드 · 왕복 궤도 (2011 ジャパンカップダート(GI))",
         "template": "AOE_BURST",
         "baseValues": [
-          214,
-          237,
+          243,
+          270,
           30
         ],
         "starMultipliers": [
@@ -8843,7 +8842,7 @@
         "effects": [
           {
             "kind": "DAMAGE",
-            "value": 151,
+            "value": 172,
             "damageType": "MAGIC",
             "target": "LARGEST_ENEMY_CLUSTER",
             "shape": "LINE",
@@ -8852,7 +8851,7 @@
           },
           {
             "kind": "DAMAGE",
-            "value": 76,
+            "value": 86,
             "damageType": "TRUE",
             "target": "LARGEST_ENEMY_CLUSTER",
             "shape": "LINE",
@@ -8862,7 +8861,7 @@
           }
         ],
         "vfxKey": "vfx_aoe_burst",
-        "description": "[왕복 궤도] 직선 최대 4명에게 151 마법 피해 후 0.5초 뒤 76 고정 피해의 귀환 파동. 근거: 2011 ジャパンカップダート(GI) 1위.",
+        "description": "[왕복 궤도] 직선 최대 4명에게 172 마법 피해 후 0.5초 뒤 86 고정 피해의 귀환 파동. 근거: 2011 ジャパンカップダート(GI) 1위.",
         "choreography": {
           "windup": 0.3,
           "recovery": 0.3,
@@ -8939,8 +8938,8 @@
         "displayName": "노스 플라이트 · 유인 돌진 (1994 マイルチャンピオンS(GI))",
         "template": "DASH_LINE",
         "baseValues": [
-          223,
-          248,
+          254,
+          282,
           31
         ],
         "starMultipliers": [
@@ -8954,7 +8953,7 @@
         "effects": [
           {
             "kind": "SHIELD_FLAT",
-            "value": 158,
+            "value": 180,
             "duration": 4,
             "target": "SELF"
           },
@@ -8966,7 +8965,7 @@
           },
           {
             "kind": "DAMAGE",
-            "value": 279,
+            "value": 318,
             "damageType": "PHYSICAL",
             "target": "CURRENT_TARGET",
             "delay": 0.25
@@ -8981,7 +8980,7 @@
           }
         ],
         "vfxKey": "vfx_dash_senko",
-        "description": "[유인 돌진] 158 보호막을 얻고 0.25초 뒤 돌진. 대상에게 279 물리 피해와 2초 둔화. 근거: 1994 マイルチャンピオンS(GI) 1위.",
+        "description": "[유인 돌진] 180 보호막을 얻고 0.25초 뒤 돌진. 대상에게 318 물리 피해와 2초 둔화. 근거: 1994 マイルチャンピオンS(GI) 1위.",
         "choreography": {
           "windup": 0.3,
           "recovery": 0.3,
@@ -9031,16 +9030,16 @@
       "nameKo": "심볼리 크리스 에스",
       "nameJa": "シンボリクリスエス",
       "nameEn": "Symboli Kris S",
-      "cost": 4,
+      "cost": 5,
       "role": "BRUISER",
       "activeS1": true,
       "uftRating": 0.85,
-      "hp": 1025,
-      "attackDamage": 75,
+      "hp": 1160,
+      "attackDamage": 84,
       "abilityPower": 100,
-      "armor": 63,
-      "magicResist": 58,
-      "attackSpeed": 0.79,
+      "armor": 66,
+      "magicResist": 61,
+      "attackSpeed": 0.81,
       "attackRange": 1,
       "moveSpeedHexPerSec": 1.97,
       "critChance": 0.25,
@@ -9058,14 +9057,14 @@
         "displayName": "심볼리 크리스 에스 · 관통 돌파 (2003 有馬記念(GI))",
         "template": "DASH_LINE",
         "baseValues": [
-          244,
-          272,
+          369,
+          410,
           32
         ],
         "starMultipliers": [
           1,
           1.45,
-          3.6
+          6
         ],
         "damageType": "PHYSICAL",
         "targetRule": "CURRENT_TARGET",
@@ -9087,7 +9086,7 @@
           },
           {
             "kind": "DAMAGE",
-            "value": 265,
+            "value": 401,
             "damageType": "PHYSICAL",
             "target": "CURRENT_TARGET",
             "shape": "LINE",
@@ -9096,7 +9095,7 @@
           }
         ],
         "vfxKey": "vfx_dash_sashi",
-        "description": "[관통 돌파] 돌진 후 직선 6칸의 최대 4명에게 방어력 20% 감소(4초)와 265 물리 피해. 근거: 2003 有馬記念(GI) 1위.",
+        "description": "[관통 돌파] 돌진 후 직선 6칸의 최대 4명에게 방어력 20% 감소(4초)와 401 물리 피해. 근거: 2003 有馬記念(GI) 1위.",
         "choreography": {
           "windup": 0.45,
           "recovery": 0.3,
@@ -9172,8 +9171,8 @@
         "displayName": "타니노 김렛 · 무장 해제 (2002 東京優駿(GI))",
         "template": "CONTROL",
         "baseValues": [
-          215,
-          239,
+          245,
+          272,
           31
         ],
         "starMultipliers": [
@@ -9187,7 +9186,7 @@
         "effects": [
           {
             "kind": "DAMAGE",
-            "value": 176,
+            "value": 200,
             "damageType": "MAGIC",
             "target": "LARGEST_ENEMY_CLUSTER",
             "shape": "CONE",
@@ -9205,7 +9204,7 @@
           }
         ],
         "vfxKey": "vfx_stun",
-        "description": "[무장 해제] 전방 3칸 최대 4명에게 176 마법 피해. 1.8초간 일반 공격 봉쇄, 스킬은 사용 가능. 근거: 2002 東京優駿(GI) 1위.",
+        "description": "[무장 해제] 전방 3칸 최대 4명에게 200 마법 피해. 1.8초간 일반 공격 봉쇄, 스킬은 사용 가능. 근거: 2002 東京優駿(GI) 1위.",
         "choreography": {
           "windup": 0.3,
           "recovery": 0.3,
@@ -9725,8 +9724,8 @@
         "displayName": "슈발 그랑 · 서리 전선 (2017 ジャパンC(GI))",
         "template": "CONTROL",
         "baseValues": [
-          188,
-          209,
+          199,
+          221,
           29
         ],
         "starMultipliers": [
@@ -9740,7 +9739,7 @@
         "effects": [
           {
             "kind": "DAMAGE",
-            "value": 113,
+            "value": 119,
             "damageType": "MAGIC",
             "target": "LARGEST_ENEMY_CLUSTER",
             "radius": 2,
@@ -9765,7 +9764,7 @@
           }
         ],
         "vfxKey": "vfx_stun",
-        "description": "[서리 전선] 주변 2칸 최대 4명에게 113 마법 피해, 0.6초 기절과 3초 둔화. 근거: 2017 ジャパンC(GI) 1위.",
+        "description": "[서리 전선] 주변 2칸 최대 4명에게 119 마법 피해, 0.6초 기절과 3초 둔화. 근거: 2017 ジャパンC(GI) 1위.",
         "choreography": {
           "windup": 0.3,
           "recovery": 0.3,
@@ -10165,8 +10164,8 @@
         "displayName": "정글 포켓 · 관통 구속 (2001 ジャパンC(GI))",
         "template": "CONTROL",
         "baseValues": [
-          195,
-          217,
+          206,
+          229,
           30
         ],
         "starMultipliers": [
@@ -10180,7 +10179,7 @@
         "effects": [
           {
             "kind": "DAMAGE",
-            "value": 137,
+            "value": 144,
             "damageType": "MAGIC",
             "target": "LARGEST_ENEMY_CLUSTER",
             "shape": "LINE",
@@ -10198,7 +10197,7 @@
           }
         ],
         "vfxKey": "vfx_stun",
-        "description": "[관통 구속] 직선 6칸 최대 4명에게 137 마법 피해와 1초 기절. 근거: 2001 ジャパンC(GI) 1위.",
+        "description": "[관통 구속] 직선 6칸 최대 4명에게 144 마법 피해와 1초 기절. 근거: 2001 ジャパンC(GI) 1위.",
         "choreography": {
           "windup": 0.3,
           "recovery": 0.3,
@@ -10274,8 +10273,8 @@
         "displayName": "빌리브 · 연쇄 섬광 (2003 高松宮記念(GI))",
         "template": "AOE_BURST",
         "baseValues": [
-          191,
-          212,
+          202,
+          224,
           30
         ],
         "starMultipliers": [
@@ -10289,7 +10288,7 @@
         "effects": [
           {
             "kind": "DAMAGE",
-            "value": 120,
+            "value": 126,
             "damageType": "MAGIC",
             "target": "LARGEST_ENEMY_CLUSTER",
             "shape": "CHAIN",
@@ -10298,7 +10297,7 @@
           }
         ],
         "vfxKey": "vfx_aoe_burst",
-        "description": "[연쇄 섬광] 섬광이 대상에서 3칸 내 다음 적으로 최대 4명까지 이어지며 각각 120 마법 피해. 같은 적을 재타격하지 않음. 근거: 2003 高松宮記念(GI) 1위.",
+        "description": "[연쇄 섬광] 섬광이 대상에서 3칸 내 다음 적으로 최대 4명까지 이어지며 각각 126 마법 피해. 같은 적을 재타격하지 않음. 근거: 2003 高松宮記念(GI) 1위.",
         "choreography": {
           "windup": 0.15,
           "recovery": 0.3,
@@ -10482,8 +10481,8 @@
         "displayName": "스틸 인 러브 · 충격 질주 (2003 優駿牝馬(GI))",
         "template": "DASH_LINE",
         "baseValues": [
-          187,
-          208,
+          198,
+          219,
           29
         ],
         "starMultipliers": [
@@ -10502,7 +10501,7 @@
           },
           {
             "kind": "DAMAGE",
-            "value": 178,
+            "value": 189,
             "damageType": "PHYSICAL",
             "target": "CURRENT_TARGET",
             "radius": 1,
@@ -10518,7 +10517,7 @@
           }
         ],
         "vfxKey": "vfx_dash_senko",
-        "description": "[충격 질주] 돌진 지점 주변 1칸 최대 4명에게 178 물리 피해와 0.65초 기절. 근거: 2003 優駿牝馬(GI) 1위.",
+        "description": "[충격 질주] 돌진 지점 주변 1칸 최대 4명에게 189 물리 피해와 0.65초 기절. 근거: 2003 優駿牝馬(GI) 1위.",
         "choreography": {
           "windup": 0.3,
           "recovery": 0.3,
@@ -10594,8 +10593,8 @@
         "displayName": "코파노 리키 · 유인 돌진 (2015 フェブラリーS(GI))",
         "template": "DASH_LINE",
         "baseValues": [
-          220,
-          245,
+          251,
+          279,
           31
         ],
         "starMultipliers": [
@@ -10609,7 +10608,7 @@
         "effects": [
           {
             "kind": "SHIELD_FLAT",
-            "value": 154,
+            "value": 176,
             "duration": 4,
             "target": "SELF"
           },
@@ -10621,7 +10620,7 @@
           },
           {
             "kind": "DAMAGE",
-            "value": 273,
+            "value": 311,
             "damageType": "PHYSICAL",
             "target": "CURRENT_TARGET",
             "delay": 0.25
@@ -10636,7 +10635,7 @@
           }
         ],
         "vfxKey": "vfx_dash_nige",
-        "description": "[유인 돌진] 154 보호막을 얻고 0.25초 뒤 돌진. 대상에게 273 물리 피해와 2초 둔화. 근거: 2015 フェブラリーS(GI) 1위.",
+        "description": "[유인 돌진] 176 보호막을 얻고 0.25초 뒤 돌진. 대상에게 311 물리 피해와 2초 둔화. 근거: 2015 フェブラリーS(GI) 1위.",
         "choreography": {
           "windup": 0.3,
           "recovery": 0.3,
@@ -10715,8 +10714,8 @@
         "displayName": "홋코 타루마에 · 잔불 지대 (2014 チャンピオンズC(GI))",
         "template": "AOE_BURST",
         "baseValues": [
-          224,
-          248,
+          254,
+          283,
           31
         ],
         "starMultipliers": [
@@ -10730,7 +10729,7 @@
         "effects": [
           {
             "kind": "DAMAGE",
-            "value": 77,
+            "value": 88,
             "damageType": "MAGIC",
             "target": "LARGEST_ENEMY_CLUSTER",
             "radius": 1,
@@ -10739,7 +10738,7 @@
           },
           {
             "kind": "DAMAGE",
-            "value": 77,
+            "value": 88,
             "damageType": "MAGIC",
             "target": "LARGEST_ENEMY_CLUSTER",
             "radius": 1,
@@ -10748,7 +10747,7 @@
           },
           {
             "kind": "DAMAGE",
-            "value": 77,
+            "value": 88,
             "damageType": "MAGIC",
             "target": "LARGEST_ENEMY_CLUSTER",
             "radius": 1,
@@ -10764,7 +10763,7 @@
           }
         ],
         "vfxKey": "vfx_aoe_burst",
-        "description": "[잔불 지대] 대상 주변 1칸 최대 4명에게 0.6초 간격으로 77 마법 피해 3회와 3초간 회복 감소 33%. 근거: 2014 チャンピオンズC(GI) 1위.",
+        "description": "[잔불 지대] 대상 주변 1칸 최대 4명에게 0.6초 간격으로 88 마법 피해 3회와 3초간 회복 감소 33%. 근거: 2014 チャンピオンズC(GI) 1위.",
         "choreography": {
           "windup": 0.3,
           "recovery": 0.3,
@@ -10842,8 +10841,8 @@
         "displayName": "원더 어큐트 · 삼중 회복 (2012 JBCクラシック(JpnI))",
         "template": "HEAL_BUFF",
         "baseValues": [
-          194,
-          216,
+          205,
+          228,
           30
         ],
         "starMultipliers": [
@@ -10857,25 +10856,25 @@
         "effects": [
           {
             "kind": "HEAL",
-            "value": 109,
+            "value": 115,
             "target": "LOWEST_HP_ALLY",
             "delay": 0
           },
           {
             "kind": "HEAL",
-            "value": 109,
+            "value": 115,
             "target": "LOWEST_HP_ALLY",
             "delay": 0.45
           },
           {
             "kind": "HEAL",
-            "value": 109,
+            "value": 115,
             "target": "LOWEST_HP_ALLY",
             "delay": 0.9
           }
         ],
         "vfxKey": "vfx_heal",
-        "description": "[삼중 회복] 처음 선택한 체력 비율이 가장 낮은 아군에게 109씩 0.45초 간격으로 3회 회복. 사망하면 새 대상 선택. 근거: 2012 JBCクラシック(JpnI) 1위.",
+        "description": "[삼중 회복] 처음 선택한 체력 비율이 가장 낮은 아군에게 115씩 0.45초 간격으로 3회 회복. 사망하면 새 대상 선택. 근거: 2012 JBCクラシック(JpnI) 1위.",
         "choreography": {
           "windup": 0.3,
           "recovery": 0.3,
@@ -11378,8 +11377,8 @@
         "displayName": "네오 유니버스 · 충격 질주 (2003 東京優駿(GI))",
         "template": "DASH_LINE",
         "baseValues": [
-          197,
-          219,
+          208,
+          231,
           30
         ],
         "starMultipliers": [
@@ -11398,7 +11397,7 @@
           },
           {
             "kind": "DAMAGE",
-            "value": 186,
+            "value": 196,
             "damageType": "PHYSICAL",
             "target": "CURRENT_TARGET",
             "radius": 1,
@@ -11414,7 +11413,7 @@
           }
         ],
         "vfxKey": "vfx_dash_senko",
-        "description": "[충격 질주] 돌진 지점 주변 1칸 최대 4명에게 186 물리 피해와 0.65초 기절. 근거: 2003 東京優駿(GI) 1위.",
+        "description": "[충격 질주] 돌진 지점 주변 1칸 최대 4명에게 196 물리 피해와 0.65초 기절. 근거: 2003 東京優駿(GI) 1위.",
         "choreography": {
           "windup": 0.3,
           "recovery": 0.3,
@@ -11593,8 +11592,8 @@
         "displayName": "탭 댄스 시티 · 반격 폭풍 (2003 ジャパンC(GI))",
         "template": "AURA",
         "baseValues": [
-          194,
-          216,
+          205,
+          228,
           30
         ],
         "starMultipliers": [
@@ -11608,7 +11607,7 @@
         "effects": [
           {
             "kind": "DAMAGE",
-            "value": 67,
+            "value": 70,
             "damageType": "MAGIC",
             "target": "ALL_ENEMIES",
             "radius": 2,
@@ -11618,7 +11617,7 @@
           },
           {
             "kind": "DAMAGE",
-            "value": 67,
+            "value": 70,
             "damageType": "MAGIC",
             "target": "ALL_ENEMIES",
             "radius": 2,
@@ -11628,7 +11627,7 @@
           },
           {
             "kind": "DAMAGE",
-            "value": 67,
+            "value": 70,
             "damageType": "MAGIC",
             "target": "ALL_ENEMIES",
             "radius": 2,
@@ -11638,13 +11637,13 @@
           },
           {
             "kind": "SHIELD_FLAT",
-            "value": 133,
+            "value": 141,
             "duration": 4,
             "target": "SELF"
           }
         ],
         "vfxKey": "vfx_buff",
-        "description": "[반격 폭풍] 133 보호막을 얻고 주변 2칸 최대 4명에게 0.4초 간격으로 67 마법 피해 3회. 체력 피해의 15% 회복. 근거: 2003 ジャパンC(GI) 1위.",
+        "description": "[반격 폭풍] 141 보호막을 얻고 주변 2칸 최대 4명에게 0.4초 간격으로 70 마법 피해 3회. 체력 피해의 15% 회복. 근거: 2003 ジャパンC(GI) 1위.",
         "choreography": {
           "windup": 0.3,
           "recovery": 0.3,
@@ -11722,8 +11721,8 @@
         "displayName": "두라멘테 · 관통 돌파 (2015 東京優駿(GI))",
         "template": "DASH_LINE",
         "baseValues": [
-          204,
-          227,
+          216,
+          240,
           31
         ],
         "starMultipliers": [
@@ -11751,7 +11750,7 @@
           },
           {
             "kind": "DAMAGE",
-            "value": 211,
+            "value": 223,
             "damageType": "PHYSICAL",
             "target": "CURRENT_TARGET",
             "shape": "LINE",
@@ -11760,7 +11759,7 @@
           }
         ],
         "vfxKey": "vfx_dash_sashi",
-        "description": "[관통 돌파] 돌진 후 직선 6칸의 최대 4명에게 방어력 20% 감소(4초)와 211 물리 피해. 근거: 2015 東京優駿(GI) 1위.",
+        "description": "[관통 돌파] 돌진 후 직선 6칸의 최대 4명에게 방어력 20% 감소(4초)와 223 물리 피해. 근거: 2015 東京優駿(GI) 1위.",
         "choreography": {
           "windup": 0.3,
           "recovery": 0.3,
@@ -11836,8 +11835,8 @@
         "displayName": "라인 크라프트 · 에이스 지휘 (2005 桜花賞(GI))",
         "template": "AURA",
         "baseValues": [
-          217,
-          241,
+          247,
+          274,
           31
         ],
         "starMultipliers": [
@@ -11852,20 +11851,20 @@
           {
             "kind": "STAT_MUL",
             "stat": "attackSpeed",
-            "value": 0.45,
+            "value": 0.513,
             "duration": 4,
             "refresh": true,
             "target": "HIGHEST_AD_ALLY"
           },
           {
             "kind": "SHIELD_FLAT",
-            "value": 234,
+            "value": 266,
             "duration": 4,
             "target": "HIGHEST_AD_ALLY"
           }
         ],
         "vfxKey": "vfx_buff",
-        "description": "[에이스 지휘] 공격력이 가장 높은 아군 1명에게 4초간 공격속도 +45%와 234 보호막. 근거: 2005 桜花賞(GI) 1위.",
+        "description": "[에이스 지휘] 공격력이 가장 높은 아군 1명에게 4초간 공격속도 +51.3%와 266 보호막. 근거: 2005 桜花賞(GI) 1위.",
         "choreography": {
           "windup": 0.3,
           "recovery": 0.3,
@@ -11942,8 +11941,8 @@
         "displayName": "세자리오 · 회복 성역 (2005 優駿牝馬(GI))",
         "template": "AURA",
         "baseValues": [
-          220,
-          244,
+          250,
+          278,
           31
         ],
         "starMultipliers": [
@@ -11957,7 +11956,7 @@
         "effects": [
           {
             "kind": "HEAL",
-            "value": 65,
+            "value": 74,
             "target": "ALL_ALLIES",
             "radius": 2,
             "maxTargets": 4,
@@ -11965,7 +11964,7 @@
           },
           {
             "kind": "HEAL",
-            "value": 65,
+            "value": 74,
             "target": "ALL_ALLIES",
             "radius": 2,
             "maxTargets": 4,
@@ -11973,7 +11972,7 @@
           },
           {
             "kind": "HEAL",
-            "value": 65,
+            "value": 74,
             "target": "ALL_ALLIES",
             "radius": 2,
             "maxTargets": 4,
@@ -11987,7 +11986,7 @@
           }
         ],
         "vfxKey": "vfx_buff",
-        "description": "[회복 성역] 2칸 내 최대 4명 아군의 제어 효과를 해제하고, 0.5초 간격으로 65씩 3회 회복. 근거: 2005 優駿牝馬(GI) 1위.",
+        "description": "[회복 성역] 2칸 내 최대 4명 아군의 제어 효과를 해제하고, 0.5초 간격으로 74씩 3회 회복. 근거: 2005 優駿牝馬(GI) 1위.",
         "choreography": {
           "windup": 0.3,
           "recovery": 0.3,
@@ -12063,8 +12062,8 @@
         "displayName": "에어 메사이어 · 침묵 지대 (2005 秋華賞(GI))",
         "template": "CONTROL",
         "baseValues": [
-          191,
-          212,
+          201,
+          224,
           30
         ],
         "starMultipliers": [
@@ -12078,7 +12077,7 @@
         "effects": [
           {
             "kind": "DAMAGE",
-            "value": 134,
+            "value": 141,
             "damageType": "MAGIC",
             "target": "LARGEST_ENEMY_CLUSTER",
             "radius": 1,
@@ -12094,7 +12093,7 @@
           }
         ],
         "vfxKey": "vfx_stun",
-        "description": "[침묵 지대] 대상 주변 1칸 최대 4명에게 134 마법 피해와 2초 침묵. 일반 공격과 이동은 가능. 근거: 2005 秋華賞(GI) 1위.",
+        "description": "[침묵 지대] 대상 주변 1칸 최대 4명에게 141 마법 피해와 2초 침묵. 일반 공격과 이동은 가능. 근거: 2005 秋華賞(GI) 1위.",
         "choreography": {
           "windup": 0.3,
           "recovery": 0.3,
@@ -12369,16 +12368,16 @@
       "nameKo": "부에나 비스타",
       "nameJa": "ブエナビスタ",
       "nameEn": "Buena Vista",
-      "cost": 4,
+      "cost": 5,
       "role": "AD_CARRY",
       "activeS1": true,
       "uftRating": 0.87,
-      "hp": 1015,
-      "attackDamage": 76,
+      "hp": 1145,
+      "attackDamage": 85,
       "abilityPower": 100,
-      "armor": 62,
-      "magicResist": 59,
-      "attackSpeed": 0.79,
+      "armor": 65,
+      "magicResist": 62,
+      "attackSpeed": 0.81,
       "attackRange": 2,
       "moveSpeedHexPerSec": 1.97,
       "critChance": 0.25,
@@ -12396,14 +12395,14 @@
         "displayName": "부에나 비스타 · 마무리 순환 (2011 ジャパンC(GI))",
         "template": "SINGLE_EXECUTE",
         "baseValues": [
-          243,
-          271,
+          367,
+          408,
           31
         ],
         "starMultipliers": [
           1,
           1.45,
-          3.6
+          6
         ],
         "damageType": "PHYSICAL",
         "targetRule": "LOWEST_HP_PCT_ENEMY",
@@ -12411,14 +12410,14 @@
         "effects": [
           {
             "kind": "DAMAGE",
-            "value": 380,
+            "value": 574,
             "damageType": "PHYSICAL",
             "target": "LOWEST_HP_PCT_ENEMY",
             "onKillMana": 25
           }
         ],
         "vfxKey": "vfx_execute",
-        "description": "[마무리 순환] 체력 비율이 가장 낮은 적에게 380 물리 피해. 이 타격으로 처치하면 마나 25 회복. 근거: 2011 ジャパンC(GI) 1위.",
+        "description": "[마무리 순환] 체력 비율이 가장 낮은 적에게 574 물리 피해. 이 타격으로 처치하면 마나 25 회복. 근거: 2011 ジャパンC(GI) 1위.",
         "choreography": {
           "windup": 0.3,
           "recovery": 0.3,
@@ -12495,8 +12494,8 @@
         "displayName": "오르페브르 · 추격 연타 (2013 有馬記念(GI))",
         "template": "DASH_LINE",
         "baseValues": [
-          245,
-          273,
+          304,
+          338,
           32
         ],
         "starMultipliers": [
@@ -12515,21 +12514,21 @@
           },
           {
             "kind": "DAMAGE",
-            "value": 108,
+            "value": 134,
             "damageType": "PHYSICAL",
             "target": "CURRENT_TARGET",
             "delay": 0
           },
           {
             "kind": "DAMAGE",
-            "value": 108,
+            "value": 134,
             "damageType": "PHYSICAL",
             "target": "CURRENT_TARGET",
             "delay": 0.3
           },
           {
             "kind": "DAMAGE",
-            "value": 108,
+            "value": 134,
             "damageType": "PHYSICAL",
             "target": "CURRENT_TARGET",
             "delay": 0.6
@@ -12537,14 +12536,14 @@
           {
             "kind": "STAT_MUL",
             "stat": "attackSpeed",
-            "value": 0.2,
+            "value": 0.248,
             "duration": 4,
             "refresh": true,
             "target": "SELF"
           }
         ],
         "vfxKey": "vfx_dash_sashi",
-        "description": "[추격 연타] 돌진 후 한 적에게 108 물리 피해를 3회, 4초간 공격속도 +20%. 대상 사망 시 남은 타격은 재탐색. 근거: 2013 有馬記念(GI) 1위.",
+        "description": "[추격 연타] 돌진 후 한 적에게 134 물리 피해를 3회, 4초간 공격속도 +24.8%. 대상 사망 시 남은 타격은 재탐색. 근거: 2013 有馬記念(GI) 1위.",
         "choreography": {
           "windup": 0.45,
           "recovery": 0.3,
@@ -12620,8 +12619,8 @@
         "displayName": "젠틸돈나 · 반격 폭풍 (2014 有馬記念(GI))",
         "template": "AURA",
         "baseValues": [
-          222,
-          247,
+          253,
+          281,
           31
         ],
         "starMultipliers": [
@@ -12635,7 +12634,7 @@
         "effects": [
           {
             "kind": "DAMAGE",
-            "value": 72,
+            "value": 82,
             "damageType": "MAGIC",
             "target": "ALL_ENEMIES",
             "radius": 2,
@@ -12645,7 +12644,7 @@
           },
           {
             "kind": "DAMAGE",
-            "value": 72,
+            "value": 82,
             "damageType": "MAGIC",
             "target": "ALL_ENEMIES",
             "radius": 2,
@@ -12655,7 +12654,7 @@
           },
           {
             "kind": "DAMAGE",
-            "value": 72,
+            "value": 82,
             "damageType": "MAGIC",
             "target": "ALL_ENEMIES",
             "radius": 2,
@@ -12665,13 +12664,13 @@
           },
           {
             "kind": "SHIELD_FLAT",
-            "value": 144,
+            "value": 164,
             "duration": 4,
             "target": "SELF"
           }
         ],
         "vfxKey": "vfx_buff",
-        "description": "[반격 폭풍] 144 보호막을 얻고 주변 2칸 최대 4명에게 0.4초 간격으로 72 마법 피해 3회. 체력 피해의 15% 회복. 근거: 2014 有馬記念(GI) 1위.",
+        "description": "[반격 폭풍] 164 보호막을 얻고 주변 2칸 최대 4명에게 0.4초 간격으로 82 마법 피해 3회. 체력 피해의 15% 회복. 근거: 2014 有馬記念(GI) 1위.",
         "choreography": {
           "windup": 0.45,
           "recovery": 0.3,
@@ -12858,8 +12857,8 @@
         "displayName": "어드마이어 그루브 · 흡수 휩쓸기 (2004 エリザベス女王杯(GI))",
         "template": "DASH_LINE",
         "baseValues": [
-          191,
-          213,
+          202,
+          225,
           30
         ],
         "starMultipliers": [
@@ -12878,7 +12877,7 @@
           },
           {
             "kind": "DAMAGE",
-            "value": 170,
+            "value": 180,
             "damageType": "PHYSICAL",
             "target": "CURRENT_TARGET",
             "shape": "CONE",
@@ -12888,7 +12887,7 @@
           }
         ],
         "vfxKey": "vfx_dash_sashi",
-        "description": "[흡수 휩쓸기] 돌진 후 전방 3칸 부채꼴의 최대 4명에게 170 물리 피해. 실제 체력 피해의 25% 회복. 근거: 2004 エリザベス女王杯(GI) 1위.",
+        "description": "[흡수 휩쓸기] 돌진 후 전방 3칸 부채꼴의 최대 4명에게 180 물리 피해. 실제 체력 피해의 25% 회복. 근거: 2004 エリザベス女王杯(GI) 1위.",
         "choreography": {
           "windup": 0.3,
           "recovery": 0.3,
@@ -12966,8 +12965,8 @@
         "displayName": "드림 저니 · 고립 결정타 (2009 有馬記念(GI))",
         "template": "SINGLE_EXECUTE",
         "baseValues": [
-          192,
-          213,
+          202,
+          225,
           30
         ],
         "starMultipliers": [
@@ -12981,14 +12980,14 @@
         "effects": [
           {
             "kind": "DAMAGE",
-            "value": 264,
+            "value": 278,
             "damageType": "PHYSICAL",
             "target": "LOWEST_HP_PCT_ENEMY",
             "isolatedMultiplier": 1.4
           }
         ],
         "vfxKey": "vfx_execute",
-        "description": "[고립 결정타] 체력 비율이 가장 낮은 적에게 264 물리 피해. 대상 1칸 내 다른 적이 없으면 피해 40% 증가. 근거: 2009 有馬記念(GI) 1위.",
+        "description": "[고립 결정타] 체력 비율이 가장 낮은 적에게 278 물리 피해. 대상 1칸 내 다른 적이 없으면 피해 40% 증가. 근거: 2009 有馬記念(GI) 1위.",
         "choreography": {
           "windup": 0.45,
           "recovery": 0.3,
@@ -13176,8 +13175,8 @@
         "displayName": "뒤랑달 · 잔상 마무리 (2003 マイルチャンピオンS(GI))",
         "template": "SINGLE_EXECUTE",
         "baseValues": [
-          201,
-          223,
+          212,
+          236,
           31
         ],
         "starMultipliers": [
@@ -13196,7 +13195,7 @@
           },
           {
             "kind": "DAMAGE",
-            "value": 303,
+            "value": 320,
             "damageType": "PHYSICAL",
             "target": "LOWEST_HP_PCT_ENEMY",
             "delay": 0.2
@@ -13204,14 +13203,14 @@
           {
             "kind": "STAT_MUL",
             "stat": "attackSpeed",
-            "value": 0.3,
+            "value": 0.318,
             "duration": 4,
             "refresh": true,
             "target": "SELF"
           }
         ],
         "vfxKey": "vfx_execute",
-        "description": "[잔상 마무리] 0.3초간 대상 지정 불가. 0.2초 뒤 최저 체력 비율 적에게 303 물리 피해. 4초간 공격속도 +30%. 근거: 2003 マイルチャンピオンS(GI) 1위.",
+        "description": "[잔상 마무리] 0.3초간 대상 지정 불가. 0.2초 뒤 최저 체력 비율 적에게 320 물리 피해. 4초간 공격속도 +31.8%. 근거: 2003 マイルチャンピオンS(GI) 1위.",
         "choreography": {
           "windup": 0.3,
           "recovery": 0.3,
@@ -13393,8 +13392,8 @@
         "displayName": "버블검 펠로 · 가속 장전 (1996 天皇賞(秋)(GI))",
         "template": "MULTI_SHOT",
         "baseValues": [
-          206,
-          229,
+          217,
+          242,
           31
         ],
         "starMultipliers": [
@@ -13409,7 +13408,7 @@
           {
             "kind": "STAT_MUL",
             "stat": "attackSpeed",
-            "value": 0.45,
+            "value": 0.477,
             "duration": 4,
             "refresh": true,
             "target": "SELF"
@@ -13417,28 +13416,28 @@
           {
             "kind": "STAT_MUL",
             "stat": "attackDamage",
-            "value": 0.2,
+            "value": 0.212,
             "duration": 4,
             "refresh": true,
             "target": "SELF"
           },
           {
             "kind": "DAMAGE",
-            "value": 83,
+            "value": 88,
             "damageType": "PHYSICAL",
             "target": "CURRENT_TARGET",
             "delay": 0
           },
           {
             "kind": "DAMAGE",
-            "value": 83,
+            "value": 88,
             "damageType": "PHYSICAL",
             "target": "CURRENT_TARGET",
             "delay": 0.2
           }
         ],
         "vfxKey": "vfx_projectile",
-        "description": "[가속 장전] 4초간 공격속도 +45%, 공격력 +20%. 장전 타격으로 83 물리 피해를 2회. 근거: 1996 天皇賞(秋)(GI) 1위.",
+        "description": "[가속 장전] 4초간 공격속도 +47.7%, 공격력 +21.2%. 장전 타격으로 88 물리 피해를 2회. 근거: 1996 天皇賞(秋)(GI) 1위.",
         "choreography": {
           "windup": 0.15,
           "recovery": 0.3,
@@ -13515,8 +13514,8 @@
         "displayName": "사쿠라 치토세 오 · 지연 봉쇄 (1995 天皇賞(秋)(GI))",
         "template": "CONTROL",
         "baseValues": [
-          191,
-          212,
+          201,
+          224,
           30
         ],
         "starMultipliers": [
@@ -13530,7 +13529,7 @@
         "effects": [
           {
             "kind": "DAMAGE",
-            "value": 77,
+            "value": 81,
             "damageType": "MAGIC",
             "target": "LARGEST_ENEMY_CLUSTER",
             "radius": 1,
@@ -13538,7 +13537,7 @@
           },
           {
             "kind": "DAMAGE",
-            "value": 98,
+            "value": 103,
             "damageType": "MAGIC",
             "target": "LARGEST_ENEMY_CLUSTER",
             "radius": 1,
@@ -13556,7 +13555,7 @@
           }
         ],
         "vfxKey": "vfx_stun",
-        "description": "[지연 봉쇄] 주변 1칸 최대 4명에게 77 마법 피해, 0.8초 뒤 98 추가 피해와 1.4초 기절. 근거: 1995 天皇賞(秋)(GI) 1위.",
+        "description": "[지연 봉쇄] 주변 1칸 최대 4명에게 81 마법 피해, 0.8초 뒤 103 추가 피해와 1.4초 기절. 근거: 1995 天皇賞(秋)(GI) 1위.",
         "choreography": {
           "windup": 0.3,
           "recovery": 0.3,
@@ -13634,8 +13633,8 @@
         "displayName": "페노메노 · 교차 파동 (2013 天皇賞(春)(GI))",
         "template": "DASH_LINE",
         "baseValues": [
-          190,
-          211,
+          200,
+          222,
           30
         ],
         "starMultipliers": [
@@ -13654,7 +13653,7 @@
           },
           {
             "kind": "DAMAGE",
-            "value": 124,
+            "value": 131,
             "damageType": "PHYSICAL",
             "target": "CURRENT_TARGET",
             "shape": "LINE",
@@ -13663,7 +13662,7 @@
           },
           {
             "kind": "DAMAGE",
-            "value": 88,
+            "value": 93,
             "damageType": "MAGIC",
             "target": "CURRENT_TARGET",
             "shape": "LINE",
@@ -13673,7 +13672,7 @@
           }
         ],
         "vfxKey": "vfx_dash_nige",
-        "description": "[교차 파동] 돌진 후 직선 최대 4명에게 124 물리 피해, 0.45초 뒤 같은 방향으로 88 마법 파동. 근거: 2013 天皇賞(春)(GI) 1위.",
+        "description": "[교차 파동] 돌진 후 직선 최대 4명에게 131 물리 피해, 0.45초 뒤 같은 방향으로 93 마법 파동. 근거: 2013 天皇賞(春)(GI) 1위.",
         "choreography": {
           "windup": 0.45,
           "recovery": 0.3,
@@ -13834,16 +13833,16 @@
       "nameKo": "아몬드 아이",
       "nameJa": "アーモンドアイ",
       "nameEn": "Almond Eye",
-      "cost": 5,
+      "cost": 4,
       "role": "AD_CARRY",
       "activeS1": true,
       "uftRating": 0.93,
-      "hp": 1145,
-      "attackDamage": 85,
+      "hp": 1015,
+      "attackDamage": 76,
       "abilityPower": 100,
-      "armor": 64,
-      "magicResist": 59,
-      "attackSpeed": 0.82,
+      "armor": 61,
+      "magicResist": 56,
+      "attackSpeed": 0.8,
       "attackRange": 3,
       "moveSpeedHexPerSec": 2,
       "critChance": 0.25,
@@ -13861,14 +13860,14 @@
         "displayName": "아몬드 아이 · 삼단 결정타 (2020 ジャパンC(GI))",
         "template": "MULTI_SHOT",
         "baseValues": [
-          277,
-          307,
+          308,
+          342,
           32
         ],
         "starMultipliers": [
           1,
           1.45,
-          6
+          3.6
         ],
         "damageType": "PHYSICAL",
         "targetRule": "CURRENT_TARGET",
@@ -13876,28 +13875,28 @@
         "effects": [
           {
             "kind": "DAMAGE",
-            "value": 83,
+            "value": 92,
             "damageType": "PHYSICAL",
             "target": "CURRENT_TARGET",
             "delay": 0
           },
           {
             "kind": "DAMAGE",
-            "value": 121,
+            "value": 134,
             "damageType": "PHYSICAL",
             "target": "CURRENT_TARGET",
             "delay": 0.2
           },
           {
             "kind": "DAMAGE",
-            "value": 219,
+            "value": 243,
             "damageType": "PHYSICAL",
             "target": "CURRENT_TARGET",
             "delay": 0.4
           }
         ],
         "vfxKey": "vfx_projectile",
-        "description": "[삼단 결정타] 한 적에게 83 → 121 → 219 물리 피해. 마지막 타격에 위력이 집중됨. 근거: 2020 ジャパンC(GI) 1위.",
+        "description": "[삼단 결정타] 한 적에게 92 → 134 → 243 물리 피해. 마지막 타격에 위력이 집중됨. 근거: 2020 ジャパンC(GI) 1위.",
         "choreography": {
           "windup": 0.3,
           "recovery": 0.3,
@@ -13973,8 +13972,8 @@
         "displayName": "럭키 라일락 · 확장 폭발 (2020 大阪杯(GI))",
         "template": "AOE_BURST",
         "baseValues": [
-          217,
-          241,
+          247,
+          274,
           31
         ],
         "starMultipliers": [
@@ -13988,7 +13987,7 @@
         "effects": [
           {
             "kind": "DAMAGE",
-            "value": 76,
+            "value": 87,
             "damageType": "MAGIC",
             "target": "LARGEST_ENEMY_CLUSTER",
             "radius": 0,
@@ -13997,7 +13996,7 @@
           },
           {
             "kind": "DAMAGE",
-            "value": 76,
+            "value": 87,
             "damageType": "MAGIC",
             "target": "LARGEST_ENEMY_CLUSTER",
             "radius": 1,
@@ -14006,7 +14005,7 @@
           },
           {
             "kind": "DAMAGE",
-            "value": 76,
+            "value": 87,
             "damageType": "MAGIC",
             "target": "LARGEST_ENEMY_CLUSTER",
             "radius": 2,
@@ -14015,7 +14014,7 @@
           }
         ],
         "vfxKey": "vfx_aoe_burst",
-        "description": "[확장 폭발] 0.35초 간격으로 대상 중심 0·1·2칸으로 확장하는 폭발. 타격마다 최대 4명에게 76 마법 피해. 근거: 2020 大阪杯(GI) 1위.",
+        "description": "[확장 폭발] 0.35초 간격으로 대상 중심 0·1·2칸으로 확장하는 폭발. 타격마다 최대 4명에게 87 마법 피해. 근거: 2020 大阪杯(GI) 1위.",
         "choreography": {
           "windup": 0.3,
           "recovery": 0.3,
@@ -14092,8 +14091,8 @@
         "displayName": "그란 알레그리아 · 추격 연타 (2020 マイルチャンピオンS(GI))",
         "template": "DASH_LINE",
         "baseValues": [
-          246,
-          273,
+          304,
+          338,
           32
         ],
         "starMultipliers": [
@@ -14112,21 +14111,21 @@
           },
           {
             "kind": "DAMAGE",
-            "value": 103,
+            "value": 128,
             "damageType": "PHYSICAL",
             "target": "CURRENT_TARGET",
             "delay": 0
           },
           {
             "kind": "DAMAGE",
-            "value": 103,
+            "value": 128,
             "damageType": "PHYSICAL",
             "target": "CURRENT_TARGET",
             "delay": 0.2
           },
           {
             "kind": "DAMAGE",
-            "value": 103,
+            "value": 128,
             "damageType": "PHYSICAL",
             "target": "CURRENT_TARGET",
             "delay": 0.4
@@ -14134,14 +14133,14 @@
           {
             "kind": "STAT_MUL",
             "stat": "attackSpeed",
-            "value": 0.2,
+            "value": 0.248,
             "duration": 4,
             "refresh": true,
             "target": "SELF"
           }
         ],
         "vfxKey": "vfx_dash_nige",
-        "description": "[추격 연타] 돌진 후 한 적에게 103 물리 피해를 3회, 4초간 공격속도 +20%. 대상 사망 시 남은 타격은 재탐색. 근거: 2020 マイルチャンピオンS(GI) 1위.",
+        "description": "[추격 연타] 돌진 후 한 적에게 128 물리 피해를 3회, 4초간 공격속도 +24.8%. 대상 사망 시 남은 타격은 재탐색. 근거: 2020 マイルチャンピオンS(GI) 1위.",
         "choreography": {
           "windup": 0.3,
           "recovery": 0.3,
@@ -14329,8 +14328,8 @@
         "displayName": "크로노 제네시스 · 충격 질주 (2021 宝塚記念(GI))",
         "template": "DASH_LINE",
         "baseValues": [
-          244,
-          271,
+          302,
+          336,
           32
         ],
         "starMultipliers": [
@@ -14349,7 +14348,7 @@
           },
           {
             "kind": "DAMAGE",
-            "value": 235,
+            "value": 291,
             "damageType": "PHYSICAL",
             "target": "CURRENT_TARGET",
             "radius": 1,
@@ -14365,7 +14364,7 @@
           }
         ],
         "vfxKey": "vfx_dash_senko",
-        "description": "[충격 질주] 돌진 지점 주변 1칸 최대 4명에게 235 물리 피해와 0.65초 기절. 근거: 2021 宝塚記念(GI) 1위.",
+        "description": "[충격 질주] 돌진 지점 주변 1칸 최대 4명에게 291 물리 피해와 0.65초 기절. 근거: 2021 宝塚記念(GI) 1위.",
         "choreography": {
           "windup": 0.3,
           "recovery": 0.3,
@@ -14895,8 +14894,8 @@
         "displayName": "포에버 영 · 잔불 지대 (2024 東京大賞典競走(GI))",
         "template": "AOE_BURST",
         "baseValues": [
-          223,
-          247,
+          253,
+          282,
           31
         ],
         "starMultipliers": [
@@ -14910,7 +14909,7 @@
         "effects": [
           {
             "kind": "DAMAGE",
-            "value": 78,
+            "value": 88,
             "damageType": "MAGIC",
             "target": "LARGEST_ENEMY_CLUSTER",
             "radius": 1,
@@ -14919,7 +14918,7 @@
           },
           {
             "kind": "DAMAGE",
-            "value": 78,
+            "value": 88,
             "damageType": "MAGIC",
             "target": "LARGEST_ENEMY_CLUSTER",
             "radius": 1,
@@ -14928,7 +14927,7 @@
           },
           {
             "kind": "DAMAGE",
-            "value": 78,
+            "value": 88,
             "damageType": "MAGIC",
             "target": "LARGEST_ENEMY_CLUSTER",
             "radius": 1,
@@ -14944,7 +14943,7 @@
           }
         ],
         "vfxKey": "vfx_aoe_burst",
-        "description": "[잔불 지대] 대상 주변 1칸 최대 4명에게 0.6초 간격으로 78 마법 피해 3회와 3초간 회복 감소 33%. 근거: 2024 東京大賞典競走(GI) 1위.",
+        "description": "[잔불 지대] 대상 주변 1칸 최대 4명에게 0.6초 간격으로 88 마법 피해 3회와 3초간 회복 감소 33%. 근거: 2024 東京大賞典競走(GI) 1위.",
         "choreography": {
           "windup": 0.3,
           "recovery": 0.3,
@@ -15022,8 +15021,8 @@
         "displayName": "마르슈 로렌 · 무장 해제 (2021 エンプレス杯(JpnII))",
         "template": "CONTROL",
         "baseValues": [
-          181,
-          201,
+          191,
+          212,
           29
         ],
         "starMultipliers": [
@@ -15037,7 +15036,7 @@
         "effects": [
           {
             "kind": "DAMAGE",
-            "value": 146,
+            "value": 154,
             "damageType": "MAGIC",
             "target": "LARGEST_ENEMY_CLUSTER",
             "shape": "CONE",
@@ -15055,7 +15054,7 @@
           }
         ],
         "vfxKey": "vfx_stun",
-        "description": "[무장 해제] 전방 3칸 최대 4명에게 146 마법 피해. 1.8초간 일반 공격 봉쇄, 스킬은 사용 가능. 근거: 2021 エンプレス杯(JpnII) 1위.",
+        "description": "[무장 해제] 전방 3칸 최대 4명에게 154 마법 피해. 1.8초간 일반 공격 봉쇄, 스킬은 사용 가능. 근거: 2021 エンプレス杯(JpnII) 1위.",
         "choreography": {
           "windup": 0.3,
           "recovery": 0.3,
@@ -15260,8 +15259,8 @@
         "displayName": "로고타입 · 에이스 지휘 (2013 皐月賞(GI))",
         "template": "AURA",
         "baseValues": [
-          189,
-          210,
+          200,
+          222,
           29
         ],
         "starMultipliers": [
@@ -15276,20 +15275,20 @@
           {
             "kind": "STAT_MUL",
             "stat": "attackSpeed",
-            "value": 0.45,
+            "value": 0.477,
             "duration": 4,
             "refresh": true,
             "target": "HIGHEST_AD_ALLY"
           },
           {
             "kind": "SHIELD_FLAT",
-            "value": 204,
+            "value": 216,
             "duration": 4,
             "target": "HIGHEST_AD_ALLY"
           }
         ],
         "vfxKey": "vfx_buff",
-        "description": "[에이스 지휘] 공격력이 가장 높은 아군 1명에게 4초간 공격속도 +45%와 204 보호막. 근거: 2013 皐月賞(GI) 1위.",
+        "description": "[에이스 지휘] 공격력이 가장 높은 아군 1명에게 4초간 공격속도 +47.7%와 216 보호막. 근거: 2013 皐月賞(GI) 1위.",
         "choreography": {
           "windup": 0.3,
           "recovery": 0.3,
@@ -15365,8 +15364,8 @@
         "displayName": "빅투아르 피사 · 교차 파동 (2010 有馬記念(GI))",
         "template": "DASH_LINE",
         "baseValues": [
-          200,
-          223,
+          211,
+          235,
           31
         ],
         "starMultipliers": [
@@ -15385,7 +15384,7 @@
           },
           {
             "kind": "DAMAGE",
-            "value": 129,
+            "value": 136,
             "damageType": "PHYSICAL",
             "target": "CURRENT_TARGET",
             "shape": "LINE",
@@ -15394,7 +15393,7 @@
           },
           {
             "kind": "DAMAGE",
-            "value": 92,
+            "value": 97,
             "damageType": "MAGIC",
             "target": "CURRENT_TARGET",
             "shape": "LINE",
@@ -15404,7 +15403,7 @@
           }
         ],
         "vfxKey": "vfx_dash_nige",
-        "description": "[교차 파동] 돌진 후 직선 최대 4명에게 129 물리 피해, 0.45초 뒤 같은 방향으로 92 마법 파동. 근거: 2010 有馬記念(GI) 1위.",
+        "description": "[교차 파동] 돌진 후 직선 최대 4명에게 136 물리 피해, 0.45초 뒤 같은 방향으로 97 마법 파동. 근거: 2010 有馬記念(GI) 1위.",
         "choreography": {
           "windup": 0.45,
           "recovery": 0.3,
@@ -15595,8 +15594,8 @@
         "displayName": "룰러쉽 · 수호 서약 (2011 金鯱賞(GII))",
         "template": "SHIELD_TAUNT",
         "baseValues": [
-          188,
-          209,
+          198,
+          220,
           29
         ],
         "starMultipliers": [
@@ -15610,7 +15609,7 @@
         "effects": [
           {
             "kind": "SHIELD_FLAT",
-            "value": 213,
+            "value": 224,
             "duration": 4,
             "target": "ALL_ALLIES",
             "radius": 1,
@@ -15625,7 +15624,7 @@
           }
         ],
         "vfxKey": "vfx_shield",
-        "description": "[수호 서약] 주변 1칸 최대 3명 아군에게 213 보호막. 주변 적 최대 3명을 1.5초 도발. 근거: 2011 金鯱賞(GII) 1위.",
+        "description": "[수호 서약] 주변 1칸 최대 3명 아군에게 224 보호막. 주변 적 최대 3명을 1.5초 도발. 근거: 2011 金鯱賞(GII) 1위.",
         "choreography": {
           "windup": 0.3,
           "recovery": 0.3,
@@ -15702,8 +15701,8 @@
         "displayName": "에프포리아 · 관통 돌파 (2021 有馬記念(GI))",
         "template": "DASH_LINE",
         "baseValues": [
-          213,
-          237,
+          243,
+          270,
           30
         ],
         "starMultipliers": [
@@ -15731,7 +15730,7 @@
           },
           {
             "kind": "DAMAGE",
-            "value": 218,
+            "value": 249,
             "damageType": "PHYSICAL",
             "target": "CURRENT_TARGET",
             "shape": "LINE",
@@ -15740,7 +15739,7 @@
           }
         ],
         "vfxKey": "vfx_dash_senko",
-        "description": "[관통 돌파] 돌진 후 직선 6칸의 최대 4명에게 방어력 20% 감소(4초)와 218 물리 피해. 근거: 2021 有馬記念(GI) 1위.",
+        "description": "[관통 돌파] 돌진 후 직선 6칸의 최대 4명에게 방어력 20% 감소(4초)와 249 물리 피해. 근거: 2021 有馬記念(GI) 1위.",
         "choreography": {
           "windup": 0.45,
           "recovery": 0.3,
@@ -15816,8 +15815,8 @@
         "displayName": "타이틀홀더 · 반격 폭풍 (2022 宝塚記念(GI))",
         "template": "AURA",
         "baseValues": [
-          199,
-          221,
+          210,
+          234,
           31
         ],
         "starMultipliers": [
@@ -15831,7 +15830,7 @@
         "effects": [
           {
             "kind": "DAMAGE",
-            "value": 65,
+            "value": 69,
             "damageType": "MAGIC",
             "target": "ALL_ENEMIES",
             "radius": 2,
@@ -15841,7 +15840,7 @@
           },
           {
             "kind": "DAMAGE",
-            "value": 65,
+            "value": 69,
             "damageType": "MAGIC",
             "target": "ALL_ENEMIES",
             "radius": 2,
@@ -15851,7 +15850,7 @@
           },
           {
             "kind": "DAMAGE",
-            "value": 65,
+            "value": 69,
             "damageType": "MAGIC",
             "target": "ALL_ENEMIES",
             "radius": 2,
@@ -15861,13 +15860,13 @@
           },
           {
             "kind": "SHIELD_FLAT",
-            "value": 130,
+            "value": 137,
             "duration": 4,
             "target": "SELF"
           }
         ],
         "vfxKey": "vfx_buff",
-        "description": "[반격 폭풍] 130 보호막을 얻고 주변 2칸 최대 4명에게 0.4초 간격으로 65 마법 피해 3회. 체력 피해의 15% 회복. 근거: 2022 宝塚記念(GI) 1위.",
+        "description": "[반격 폭풍] 137 보호막을 얻고 주변 2칸 최대 4명에게 0.4초 간격으로 69 마법 피해 3회. 체력 피해의 15% 회복. 근거: 2022 宝塚記念(GI) 1위.",
         "choreography": {
           "windup": 0.3,
           "recovery": 0.3,
@@ -15943,8 +15942,8 @@
         "displayName": "팔레놉시스 · 유인 돌진 (1998 桜花賞(GI))",
         "template": "DASH_LINE",
         "baseValues": [
-          193,
-          215,
+          204,
+          226,
           30
         ],
         "starMultipliers": [
@@ -15958,7 +15957,7 @@
         "effects": [
           {
             "kind": "SHIELD_FLAT",
-            "value": 137,
+            "value": 144,
             "duration": 4,
             "target": "SELF"
           },
@@ -15970,7 +15969,7 @@
           },
           {
             "kind": "DAMAGE",
-            "value": 242,
+            "value": 255,
             "damageType": "PHYSICAL",
             "target": "CURRENT_TARGET",
             "delay": 0.25
@@ -15985,7 +15984,7 @@
           }
         ],
         "vfxKey": "vfx_dash_nige",
-        "description": "[유인 돌진] 137 보호막을 얻고 0.25초 뒤 돌진. 대상에게 242 물리 피해와 2초 둔화. 근거: 1998 桜花賞(GI) 1위.",
+        "description": "[유인 돌진] 144 보호막을 얻고 0.25초 뒤 돌진. 대상에게 255 물리 피해와 2초 둔화. 근거: 1998 桜花賞(GI) 1위.",
         "choreography": {
           "windup": 0.3,
           "recovery": 0.3,
@@ -16180,8 +16179,8 @@
         "displayName": "맨하탄 카페 · 흡수 휩쓸기 (2001 有馬記念(GI))",
         "template": "DASH_LINE",
         "baseValues": [
-          192,
-          214,
+          203,
+          225,
           30
         ],
         "starMultipliers": [
@@ -16200,7 +16199,7 @@
           },
           {
             "kind": "DAMAGE",
-            "value": 172,
+            "value": 182,
             "damageType": "PHYSICAL",
             "target": "CURRENT_TARGET",
             "shape": "CONE",
@@ -16210,7 +16209,7 @@
           }
         ],
         "vfxKey": "vfx_dash_sashi",
-        "description": "[흡수 휩쓸기] 돌진 후 전방 3칸 부채꼴의 최대 4명에게 172 물리 피해. 실제 체력 피해의 25% 회복. 근거: 2001 有馬記念(GI) 1위.",
+        "description": "[흡수 휩쓸기] 돌진 후 전방 3칸 부채꼴의 최대 4명에게 182 물리 피해. 실제 체력 피해의 25% 회복. 근거: 2001 有馬記念(GI) 1위.",
         "choreography": {
           "windup": 0.45,
           "recovery": 0.3,
@@ -16285,8 +16284,8 @@
         "displayName": "에스포와르 시티 · 방벽 원진 (2009 ジャパンカップダート(GI))",
         "template": "AURA",
         "baseValues": [
-          221,
-          246,
+          251,
+          279,
           31
         ],
         "starMultipliers": [
@@ -16300,7 +16299,7 @@
         "effects": [
           {
             "kind": "SHIELD_FLAT",
-            "value": 201,
+            "value": 228,
             "duration": 4,
             "target": "ALL_ALLIES",
             "radius": 2,
@@ -16318,7 +16317,7 @@
           }
         ],
         "vfxKey": "vfx_buff",
-        "description": "[방벽 원진] 2칸 내 최대 4명의 아군에게 201 보호막과 방어력 +20을 4초간 부여. 근거: 2009 ジャパンカップダート(GI) 1위.",
+        "description": "[방벽 원진] 2칸 내 최대 4명의 아군에게 228 보호막과 방어력 +20을 4초간 부여. 근거: 2009 ジャパンカップダート(GI) 1위.",
         "choreography": {
           "windup": 0.3,
           "recovery": 0.3,

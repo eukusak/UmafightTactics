@@ -10,7 +10,6 @@ import { interestGold, streakBonus, xpToNextLevel } from '../game/engine/economy
 import { itemStorageCapacity, teamSizeLimit } from '../game/engine/shop';
 import { roundInfo } from '../game/engine/rounds/schedule';
 import { ItemIcon, Stat, Portrait } from './common';
-import { traitTierLabel } from './UnitTooltip';
 import type { PlayerState } from '../game/engine/state';
 import { getItem } from '../game/engine/items/item-defs';
 import { ITEM_COMBINE_HOLD_MS } from '../game/ui/item-combine-drag';
@@ -83,7 +82,10 @@ export function TraitPanel(): JSX.Element | null {
           }>
             <img className="trait-icon" src={`/assets/traits/${trait.id}.${trait.category === "SEASON" ? "svg" : "png"}`} alt="" />
             <span>{trait.name}</span>
-            <span className="count">{traitTierLabel(trait.id, count)}</span>
+            <span className="count trait-progress" aria-label={`${count}명 · ${tier + 1}/${trait.tiers.length}단계`}>
+              <b>{count}명 · {tier + 1}/{trait.tiers.length}단계</b>
+              <small>{trait.thresholds.join(' · ')}</small>
+            </span>
           </button>
         );
       })}

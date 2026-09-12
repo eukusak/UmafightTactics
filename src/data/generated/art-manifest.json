@@ -33,10 +33,10 @@
       "id": "maruzensky",
       "nameKo": "마루젠스키",
       "activeS1": true,
-      "cost": 5,
+      "cost": 4,
       "portrait": "portraits/maruzensky.png",
       "battleSheet": "characters/maruzensky.png",
-      "cutinRequired": true
+      "cutinRequired": false
     },
     {
       "id": "fuji_kiseki",
@@ -150,10 +150,11 @@
       "id": "symboli_rudolf",
       "nameKo": "심볼리 루돌프",
       "activeS1": true,
-      "cost": 4,
+      "cost": 5,
       "portrait": "portraits/symboli_rudolf.png",
       "battleSheet": "characters/symboli_rudolf.png",
-      "cutinRequired": false
+      "cutinRequired": true,
+      "cutinPortrait": "portraits/symboli_rudolf.png"
     },
     {
       "id": "air_groove",
@@ -600,10 +601,10 @@
       "id": "kitasan_black",
       "nameKo": "키타산 블랙",
       "activeS1": true,
-      "cost": 5,
+      "cost": 4,
       "portrait": "portraits/kitasan_black.png",
       "battleSheet": "characters/kitasan_black.png",
-      "cutinRequired": true
+      "cutinRequired": false
     },
     {
       "id": "sakura_chiyono_o",
@@ -726,10 +727,11 @@
       "id": "symboli_kris_s",
       "nameKo": "심볼리 크리스 에스",
       "activeS1": true,
-      "cost": 4,
+      "cost": 5,
       "portrait": "portraits/symboli_kris_s.png",
       "battleSheet": "characters/symboli_kris_s.png",
-      "cutinRequired": false
+      "cutinRequired": true,
+      "cutinPortrait": "portraits/symboli_kris_s.png"
     },
     {
       "id": "tanino_gimlet",
@@ -996,10 +998,11 @@
       "id": "buena_vista",
       "nameKo": "부에나 비스타",
       "activeS1": true,
-      "cost": 4,
+      "cost": 5,
       "portrait": "portraits/buena_vista.png",
       "battleSheet": "characters/buena_vista.png",
-      "cutinRequired": false
+      "cutinRequired": true,
+      "cutinPortrait": "portraits/buena_vista.png"
     },
     {
       "id": "orfevre",
@@ -1113,10 +1116,10 @@
       "id": "almond_eye",
       "nameKo": "아몬드 아이",
       "activeS1": true,
-      "cost": 5,
+      "cost": 4,
       "portrait": "portraits/almond_eye.png",
       "battleSheet": "characters/almond_eye.png",
-      "cutinRequired": true
+      "cutinRequired": false
     },
     {
       "id": "lucky_lilac",
