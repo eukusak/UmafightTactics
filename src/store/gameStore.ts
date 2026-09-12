@@ -176,12 +176,12 @@ export const useGameStore = create<GameStore>((set, get) => ({
       return false;
     }
     const director = restoreDirector(result.save, true);
-    if (director.state.phase === 'ROUND_RESOLVE') director.advance();
-    if (director.state.players.some((p) => p.isHuman && p.eliminatedAtRound !== null) && !director.isOver) director.runToCompletion(120, false);
+    const eliminated = director.state.players.some(p => p.isHuman && p.eliminatedAtRound !== null);
+    if (director.state.phase === 'ROUND_RESOLVE' && (!eliminated || director.state.players.filter(p => p.eliminatedAtRound === null).length <= 1)) director.advance();
     set({
       director,
       match: director.state,
-      screen: director.state.phase === 'GAME_OVER' ? 'RESULT' : 'BATTLE',
+      screen: director.isOver || eliminated ? 'RESULT' : 'BATTLE',
       battleFrames: null,
       battleRunning: false, battleComplete: false, battleTime: 0, prepRemaining: null, prepPaused: false, selectedUnitId: null, spectating: null,
       lastError: null,
@@ -463,14 +463,15 @@ export const useGameStore = create<GameStore>((set, get) => ({
     const { director } = get();
     if (!director || !get().battleRunning) return;
     get().completeBattle();
-    director.advance();
-    if (get().human()?.eliminatedAtRound !== null && !director.isOver) director.runToCompletion(120, false);
+    const eliminated = get().human()?.eliminatedAtRound != null;
+    // Once only one survivor remains, advance finalizes the winner as usual.
+    if (!eliminated || director.state.players.filter(p => p.eliminatedAtRound === null).length <= 1) director.advance();
     saveToStorage(director);
     set({
       battleRunning: false,
       battleComplete: false,
       prepRemaining: null, prepPaused: false,
-      screen: director.isOver ? 'RESULT' : 'BATTLE',
+      screen: director.isOver || eliminated ? 'RESULT' : 'BATTLE',
       spectating: null,
     });
     bump(set);

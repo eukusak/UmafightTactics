@@ -48,7 +48,7 @@ export const useOnlineStore = create<OnlineStore>((set, get) => ({
           battleRunning: battling, battleComplete: m.settled, revision: game.revision + 1,
           ...(newBattle && battling ? { battleFrames: null, scoutFrames: {}, battleTime: m.battleTime, selectedUnitId: null } : {}),
           ...(!battling && game.battleRunning ? { battleTime: game.battleFrames?.at(-1)?.t ?? game.battleTime } : {}),
-          screen: m.match.phase === 'GAME_OVER' ? 'RESULT' : first || game.screen === 'ONLINE' || game.screen === 'RESULT' ? 'BATTLE' : game.screen,
+          screen: m.match.phase === 'GAME_OVER' || m.match.players.some(p => p.id === m.playerId && p.eliminatedAtRound !== null) ? 'RESULT' : first || game.screen === 'ONLINE' || game.screen === 'RESULT' ? 'BATTLE' : game.screen,
         });
       } else if (m.type === 'ack' && m.sound) playSound(m.sound);
       else if (m.type === 'frames' && m.battleId === game.onlineBattleId) {
