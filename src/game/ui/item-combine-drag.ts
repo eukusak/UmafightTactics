@@ -78,7 +78,11 @@ export function bindMouseItemCombine(): () => void {
   document.addEventListener('keydown', key, true);
   document.addEventListener('visibilitychange', visibility);
   window.addEventListener('blur', stop);
+  const unsubscribe = useGameStore.subscribe((s, previous) => {
+    if (s.battleRunning !== previous.battleRunning || s.spectating !== previous.spectating || s.screen !== previous.screen || s.match?.phase !== 'ROUND_PREP') stop();
+  });
   return () => {
+    unsubscribe();
     stop();
     document.removeEventListener('dragstart', start);
     document.removeEventListener('dragover', over, true);

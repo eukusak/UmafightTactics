@@ -33,7 +33,8 @@ export function ArenaBackdrop(): JSX.Element {
 }
 
 export function PrepBoard({ onUnitContext }: { onUnitContext: (e: React.MouseEvent, unit: UnitInstance) => void }): JSX.Element | null {
-  const player = useGameStore((s) => s.human());
+  const player = useGameStore((s) => s.viewedPlayer());
+  const spectating = useGameStore(s => s.spectating);
   const selectedUnitId = useGameStore((s) => s.selectedUnitId);
   const running = useGameStore((s) => s.battleRunning);
   const [dragOver, setDragOver] = useState<string | null>(null);
@@ -41,6 +42,7 @@ export function PrepBoard({ onUnitContext }: { onUnitContext: (e: React.MouseEve
   if (!player) return null;
   const drop = (e: React.DragEvent, q: number, r: number, unit?: UnitInstance): void => {
     e.preventDefault(); setDragOver(null);
+    if (spectating || running) return;
     const store = useGameStore.getState();
     const item = e.dataTransfer.getData('application/x-item');
     const id = e.dataTransfer.getData('application/x-unit');
@@ -52,9 +54,9 @@ export function PrepBoard({ onUnitContext }: { onUnitContext: (e: React.MouseEve
     if (unit) {
       store.selectUnit(unit.instanceId);
       useInteractionStore.getState().inspect({ kind: 'unit', id: unit.instanceId, playerId: player.id });
-    } else if (selectedUnitId) store.placeSelected({ q, r });
+    } else if (!spectating && selectedUnitId) store.placeSelected({ q, r });
   };
-  return <div className="prep-layer" style={{ pointerEvents: running ? 'none' : undefined }}>
+  return <div className="prep-layer" data-prep-board={spectating ? "readonly" : "editable"} data-viewed-player={player.id} style={{ pointerEvents: running ? 'none' : undefined }}>
     {Array.from({ length: 28 }, (_, i) => {
       const q = i % 7, r = Math.floor(i / 7), key = `${q},${r}`;
       const p = prepPoint({ q, r });
@@ -62,7 +64,7 @@ export function PrepBoard({ onUnitContext }: { onUnitContext: (e: React.MouseEve
       return <div key={key} className={`arena-cell${dragOver === key ? ' hovered' : ''}`}
         style={{ position: 'absolute', left: p.x - 50 * p.scale, top: p.y - 30, width: 100 * p.scale, height: 60 }}
         onDragOver={(e) => { e.preventDefault(); setDragOver(key); }} onDragLeave={() => setDragOver(null)}
-        data-drop="board" data-q={q} data-r={r} data-drop-unit={unit?.instanceId}
+        data-drop={spectating ? undefined : "board"} data-q={q} data-r={r} data-drop-unit={unit?.instanceId}
         onDrop={(e) => drop(e, q, r, unit)} onClick={() => click(q, r, unit)} />;
     })}
     {player.board.filter((u) => u.position).map((unit) => {
@@ -70,13 +72,13 @@ export function PrepBoard({ onUnitContext }: { onUnitContext: (e: React.MouseEve
       return <div key={unit.instanceId} className={`arena-unit${selectedUnitId === unit.instanceId ? ' selected' : ''}`}
         data-unit-id={unit.instanceId} data-unit-def={unit.unitDefId}
         style={{ transform: `translate3d(${p.x}px,${p.y}px,0) scale(${p.scale})`, zIndex: Math.round(p.y) }}>
-        <div data-touch-unit={unit.instanceId} data-drop="board" data-q={unit.position!.q} data-r={unit.position!.r} data-drop-unit={unit.instanceId} className="arena-unit-touch" role="button" tabIndex={0} aria-label={`${def.nameKo} 정보`}
+        <div data-touch-unit={spectating ? undefined : unit.instanceId} data-drop={spectating ? undefined : "board"} data-q={unit.position!.q} data-r={unit.position!.r} data-drop-unit={unit.instanceId} className="arena-unit-touch" role="button" tabIndex={0} aria-label={`${def.nameKo} 정보`}
           onMouseEnter={() => useInteractionStore.getState().hover(unit.instanceId)}
           onMouseLeave={() => useInteractionStore.getState().hover(null)}
-          onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); click(unit.position!.q, unit.position!.r, unit); } }} draggable onDragStart={(e) => { useInteractionStore.getState().drag(unit.instanceId); e.dataTransfer.setData('application/x-unit', unit.instanceId); e.dataTransfer.effectAllowed = 'move'; }}
+          onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); click(unit.position!.q, unit.position!.r, unit); } }} draggable={!spectating && !running} onDragStart={(e) => { useInteractionStore.getState().drag(unit.instanceId); e.dataTransfer.setData('application/x-unit', unit.instanceId); e.dataTransfer.effectAllowed = 'move'; }}
           onDragOver={(e) => e.preventDefault()} onDrop={(e) => drop(e, unit.position!.q, unit.position!.r, unit)}
           onClick={() => click(unit.position!.q, unit.position!.r, unit)}
-          onContextMenu={(e) => { e.preventDefault(); onUnitContext(e, unit); }}>
+          onContextMenu={(e) => { e.preventDefault(); if (spectating) useInteractionStore.getState().inspect({ kind: 'unit', id: unit.instanceId, playerId: player.id }); else onUnitContext(e, unit); }}>
           <span className="arena-unit-base" style={{ borderColor: `var(--cost-${def.cost})` }} />
           <AnimatedUnit id={def.id} name={def.nameKo} className="arena-idle" />
           <span className="arena-unit-stars" >{'★'.repeat(unit.star)}</span>
@@ -90,22 +92,18 @@ export function PrepBoard({ onUnitContext }: { onUnitContext: (e: React.MouseEve
 }
 
 /** Phaser-hosted playback of the recorded battle frames. */
-export function BattleBoard({ onFinished, onReady }: { onFinished: () => void; onReady: () => void }): JSX.Element {
-  const frames = useGameStore((s) => s.battleFrames);
+export function BattleBoard({ onReady }: { onReady: () => void }): JSX.Element {
+  const frames = useGameStore((s) => s.viewedBattleFrames());
   const complete = useGameStore((s) => s.battleComplete);
   const speed = useGameStore((s) => s.settings.battleSpeed);
   const hostRef = useRef<HTMLDivElement>(null);
   const gameRef = useRef<Phaser.Game | null>(null);
   const sceneRef = useRef<BattleScene | null>(null);
-  const doneRef = useRef(false);
 
   useEffect(() => {
     if (!hostRef.current || gameRef.current) return;
     const state = useGameStore.getState();
-    const scene = new BattleScene(frames ?? [], state.settings.showDamageNumbers, onReady, (time) => {
-      const store = useGameStore.getState();
-      if (Math.abs(time - store.battleTime) >= .1) store.setBattleTime(time);
-    }, state.human()?.id ?? 'p1');
+    const scene = new BattleScene(frames ?? [], state.settings.showDamageNumbers, onReady, () => {}, state.viewedPlayer()?.id ?? 'p1', state.onlinePlayerId ? undefined : () => useGameStore.getState().battleTime);
     sceneRef.current = scene;
     gameRef.current = new Phaser.Game({
       type: Phaser.AUTO,
@@ -130,7 +128,6 @@ export function BattleBoard({ onFinished, onReady }: { onFinished: () => void; o
   useEffect(() => {
     const scene = sceneRef.current;
     if (!scene || !frames) return;
-    doneRef.current = false;
     // The scene queues this itself when Phaser has not finished booting.
     const state = useGameStore.getState();
     if (state.onlinePlayerId) scene.streamFrames(frames, state.battleTime);
@@ -141,27 +138,14 @@ export function BattleBoard({ onFinished, onReady }: { onFinished: () => void; o
     sceneRef.current?.setSpeed(useGameStore.getState().battleComplete ? 0 : useGameStore.getState().onlinePlayerId ? 1 : speed);
   }, [speed, complete]);
 
-  // Poll for playback completion; the scene owns the clock.
-  useEffect(() => {
-    const timer = window.setInterval(() => {
-      const scene = sceneRef.current;
-      if (!scene || doneRef.current) return;
-      if (scene.finished) {
-        doneRef.current = true;
-        onFinished();
-      }
-    }, 120);
-    return () => window.clearInterval(timer);
-  }, [onFinished]);
-
   return <div ref={hostRef} className="battle-layer" style={{ width: FIELD_W, height: FIELD_H }} />;
 }
 
 /** Hit areas follow the same recorded positions and orientation as Phaser. */
 export function BattleInspectTargets(): JSX.Element | null {
-  const frames = useGameStore(s => s.battleFrames);
+  const frames = useGameStore(s => s.viewedBattleFrames());
   const time = useGameStore(s => s.battleTime);
-  const humanId = useGameStore(s => s.human()?.id);
+  const humanId = useGameStore(s => s.viewedPlayer()?.id);
   if (!frames?.length) return null;
   const index = frameAt(frames, time), frame = frames[index], next = frames[index + 1];
   const mirrored = frames[0].units.find(u => u.id.startsWith(`${humanId}#`))?.team === 'B';

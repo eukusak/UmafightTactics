@@ -21,6 +21,26 @@ function fixture(count = 8) {
   return { service, room, peers, send, start, tick, prep };
 }
 
+it('switches a human seat to an AI fight and back without streaming future frames', () => {
+  const f = fixture(1); f.start(); f.prep(); f.tick();
+  const d = f.room.director!;
+  expect(d.playerFrames.size).toBe(8);
+  f.tick(f.room.battleStarted + 1500);
+  f.send(0, { type: 'watch', player: 'p2' });
+  const enemy = f.peers[0].messages.filter(m => m.type === 'frames').at(-1)!;
+  expect(enemy.playerId).toBe('p2'); expect(enemy.reset).toBe(true);
+  expect(enemy.frames.length).toBeGreaterThan(0);
+  expect(enemy.frames[0].units.some(u => u.id.startsWith('p2#'))).toBe(true);
+  expect(enemy.frames.every(frame => frame.t <= enemy.time)).toBe(true);
+  f.send(0, { type: 'watch', player: null });
+  const own = f.peers[0].messages.filter(m => m.type === 'frames').at(-1)!;
+  expect(own.playerId).toBe('p1'); expect(own.reset).toBe(true);
+  expect(own.frames.every(frame => frame.t <= own.time)).toBe(true);
+  f.send(0, { type: 'watch', player: 'foreign-player' });
+  expect(f.peers[0].messages.at(-1)?.type).toBe('error');
+  expect(d.state.phase).toBe('BATTLE'); expect(d.state.history).toHaveLength(0);
+});
+
 describe('authoritative eight-player rooms', () => {
   it('requires host, eight ready seats, and refuses a ninth participant', () => {
     const f = fixture();

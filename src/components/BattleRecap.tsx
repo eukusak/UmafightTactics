@@ -5,8 +5,8 @@ import { getUnitDef } from '../game/engine/roster';
 import { Portrait } from './common';
 const METRICS: { id: ContributionMetric; label: string }[] = [{ id: 'dealt', label: '가한 피해량' }, { id: 'taken', label: '받은 피해량' }, { id: 'shield', label: '보호막 생성량' }];
 export function BattleRecap(): JSX.Element {
-  const frames = useGameStore(s => s.battleFrames), time = useGameStore(s => s.battleTime), running = useGameStore(s => s.battleRunning);
-  const humanId = useGameStore(s => s.human()?.id);
+  const frames = useGameStore(s => s.viewedBattleFrames()), time = useGameStore(s => s.battleTime), running = useGameStore(s => s.battleRunning);
+  const humanId = useGameStore(s => s.viewedPlayer()?.id);
   const [index, setIndex] = useState(0), [side, setSide] = useState<'allies' | 'enemies'>('allies');
   const metric = METRICS[index];
   const totals = useMemo(() => contributionTotals(frames ?? [], time, metric.id), [frames, time, metric]);

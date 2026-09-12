@@ -336,3 +336,15 @@ button.trait-row { display:flex; align-items:center; width:100%; text-align:left
 .wishlist-filters input, .wishlist-filters select { font-family:inherit; color:var(--text); background:#10283d; border:1px solid #68858e; border-radius:4px; padding:6px; }
 .mobile .wishlist-marker { top:auto; bottom:27px; left:4px; padding:1px 4px; font-size:13px; }
 .mobile .wishlist-marker-label { display:none; }
+
+/* Keep artwork out of placement hit testing once a unit is picked up. */
+.placing-unit .prep-layer .arena-unit { pointer-events:none; opacity:.72; }
+.placing-unit .prep-layer .arena-cell { z-index:1000; }
+.placing-unit .prep-layer .arena-cell:before { opacity:.55; }
+.arena-unit-touch > * { pointer-events:none; }
+.arena-unit-touch,.bench-slot,.stored-item { touch-action:none; user-select:none; }
+.item-tools { margin:8px 0; padding:8px; border:1px solid #d3bd8055; border-radius:8px; font-size:12px; }
+.item-tools summary { cursor:pointer; color:var(--gold); }
+.item-tools label { display:block; margin-top:8px; }
+.item-tools select,.item-tools button { width:100%; }
+.scouting-banner { position:absolute; top:58px; left:390px; right:390px; z-index:1500; text-align:center; background:#152c3de8; padding:10px; border:1px solid var(--gold); border-radius:10px; }

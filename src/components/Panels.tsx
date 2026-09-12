@@ -1,5 +1,6 @@
 import { AudioControls } from './AudioControls';
 import { ItemRewards } from './ItemRewards';
+import { ItemTools } from './ItemTools';
 /** Left (traits + items), right (leaderboard), top HUD and footer panels. */
 import { useInteractionStore } from '../store/interactionStore';
 import { useGameStore } from '../store/gameStore';
@@ -103,6 +104,7 @@ export function ItemPanel(): JSX.Element | null {
         아이템 보관함 <span className="muted">{player.items.length}/{itemStorageCapacity(player)}</span>
       </h4>
       <ItemRewards />
+      <ItemTools />
       <div style={{ display: 'flex', flexWrap: 'wrap', gap: 6 }}>
         {player.items.map((i) => (
           <div

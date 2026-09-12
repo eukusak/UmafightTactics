@@ -1,7 +1,7 @@
 /** The main play screen: prep, battle playback and all HUD panels. */
 import { useCallback, useEffect, useState } from 'react';
 import { useGameStore } from '../../store/gameStore';
-import { TopHud, TraitPanel, ItemPanel, Leaderboard, OpponentBoardPeek } from '../Panels';
+import { TopHud, TraitPanel, ItemPanel, Leaderboard } from '../Panels';
 import { ShopRow, BenchRow, ShopControls } from '../Shop';
 import { ArenaBackdrop, PrepBoard, BattleBoard, BattleInspectTargets } from '../BoardView';
 import { AugmentOverlay, DraftOverlay, BattleResultOverlay } from '../Overlays';
@@ -21,7 +21,9 @@ import { WishlistPanel } from '../WishlistPanel';
 export function BattleScreen(): JSX.Element | null {
   useTouchDrag();
   const online = useGameStore((s) => s.onlinePlayerId !== null);
-  const frames = useGameStore((s) => s.battleFrames);
+  const frames = useGameStore((s) => s.viewedBattleFrames());
+  const spectating = useGameStore(s => s.spectating);
+  const viewed = useGameStore(s => s.viewedPlayer());
   const battleId = useGameStore((s) => s.onlineBattleId);
   const connected = useGameStore((s) => s.networkConnected);
   const match = useGameStore((s) => s.match);
@@ -39,7 +41,24 @@ export function BattleScreen(): JSX.Element | null {
   const showResult = useGameStore((s) => s.battleComplete);
   const [arenaReady, setArenaReady] = useState(false);
   const onArenaReady = useCallback(() => setArenaReady(true), []);
-  useEffect(() => { if (!battleRunning) setArenaReady(false); }, [battleRunning]);
+  useEffect(() => { setArenaReady(false); }, [battleRunning, spectating]);
+
+  // One match clock survives scouting switches; a short enemy battle cannot
+  // settle the player’s longer fight early.
+  useEffect(() => {
+    if (!battleRunning || online) return;
+    let last = performance.now();
+    const timer = window.setInterval(() => {
+      const now = performance.now(), game = useGameStore.getState();
+      const delta = (now - last) / 1000; last = now;
+      if (game.battleComplete) return;
+      const end = Math.max(0, ...[...(game.director?.playerFrames.values() ?? [])].map(f => f.at(-1)?.t ?? 0));
+      const time = Math.min(end, game.battleTime + delta * game.settings.battleSpeed);
+      game.setBattleTime(time);
+      if (time >= end) game.completeBattle();
+    }, 50);
+    return () => window.clearInterval(timer);
+  }, [battleRunning, online]);
 
   const onUnitContext = useCallback((e: React.MouseEvent, unit: UnitInstance) => {
     e.preventDefault();
@@ -89,8 +108,9 @@ export function BattleScreen(): JSX.Element | null {
 
       <div className="hud-field"><div className="field-surface">
         <ArenaBackdrop />
+        {spectating && <div className="scouting-banner" role="status">{viewed?.name} · {battleRunning ? "전투 관전" : "필드 정찰"} <button onClick={() => useGameStore.getState().inspectPlayer(null)}>내 필드로 돌아가기</button></div>}
         {(!battleRunning || !arenaReady) && <PrepBoard onUnitContext={onUnitContext} />}
-        {battleRunning && (!online || !!frames?.length) && <BattleBoard key={battleId ?? 'solo'} onFinished={onPlaybackFinished} onReady={onArenaReady} />}
+        {battleRunning && (!online || !!frames?.length) && <BattleBoard key={`${battleId ?? 'solo'}:${spectating ?? human.id}`} onReady={onArenaReady} />}
         {battleRunning && arenaReady && <BattleInspectTargets />}
         {(!battleRunning || arenaReady) && <BattleTelemetry />}
         {online && !battleRunning && <OnlineClock />}
@@ -98,7 +118,7 @@ export function BattleScreen(): JSX.Element | null {
       </div></div>
 
       <div className="hud-right scroll">
-        {inspection ? <DetailPanel /> : <><Leaderboard /><OpponentBoardPeek /><div className="panel controls-help">
+        <Leaderboard />{inspection ? <DetailPanel /> : <><div className="panel controls-help">
           <strong>조작 안내</strong><p>기물·특성·아이템 클릭: 상세 정보</p>
           <p>기물을 상점으로 드래그: 판매</p><p>{settings.keybinds.sellHovered.toUpperCase()}: 가리킨 기물 판매 · {settings.keybinds.toggleBench.toUpperCase()}: 필드/대기석</p>
           <p>{settings.keybinds.battleInfo}: 전투 통계 · Esc: 선택 취소/닫기</p>

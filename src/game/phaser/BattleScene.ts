@@ -53,7 +53,7 @@ export class BattleScene extends Phaser.Scene {
   private effects: Array<{ start: number; duration: number; object: Phaser.GameObjects.GameObject; update: (progress: number) => void }> = [];
   private projectiles: Array<{ image: Phaser.GameObjects.Arc; source: string; target: string; start: number; end: number; x: number; y: number }> = [];
 
-  constructor(frames: BattleFrame[] = [], showNumbers = true, private onReady: () => void = () => {}, private onTime: (time: number) => void = () => {}, private humanId = 'p1') {
+  constructor(frames: BattleFrame[] = [], showNumbers = true, private onReady: () => void = () => {}, private onTime: (time: number) => void = () => {}, private humanId = 'p1', private matchClock?: () => number) {
     super({ key: 'BattleScene' });
     this.frames = frames;
     this.showNumbers = showNumbers;
@@ -128,7 +128,9 @@ export class BattleScene extends Phaser.Scene {
     this.frameDelta = Math.min(delta, 100) * this.speed / 1000;
     const latest = this.frames[this.frames.length - 1];
     const limit = this.streaming && !latest.events.some((e) => e.type === 'END') ? Math.max(0, latest.t - .15) : latest.t + .7;
-    this.playbackTime = Math.min(limit, this.playbackTime + this.frameDelta);
+    const previousTime = this.playbackTime;
+    this.playbackTime = Math.min(limit, this.matchClock ? this.matchClock() : this.playbackTime + this.frameDelta);
+    this.frameDelta = Math.max(0, this.playbackTime - previousTime);
     while (this.frameIndex < this.frames.length - 1 && this.frames[this.frameIndex + 1].t <= this.playbackTime) this.frameIndex += 1;
     const frame = this.frames[this.frameIndex];
     // Create actors before replaying events so the first tick has a visual target.
