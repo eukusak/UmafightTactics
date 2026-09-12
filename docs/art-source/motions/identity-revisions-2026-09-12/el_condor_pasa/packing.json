@@ -1,0 +1,484 @@
+{
+  "format": "uft-baked-frames-v1",
+  "columns": 4,
+  "rows": 6,
+  "frameWidth": 128,
+  "frameHeight": 128,
+  "anchor": [
+    64,
+    110
+  ],
+  "scale": 0.4406779661016949,
+  "runtimeSha256": "82c61c47183b37710bd74ea0d1a2ce568aab587ea2406fa415e7145de2f56e64",
+  "frames": [
+    {
+      "frame": 0,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/el_condor_pasa/generated.png",
+      "sourceSha256": "119712218b2eeac5a744fd18f66ec773cff719f5ddb3fdc483f28f497dacba97",
+      "crop": [
+        40,
+        19,
+        208,
+        243
+      ],
+      "destination": [
+        27,
+        11,
+        74,
+        99
+      ]
+    },
+    {
+      "frame": 1,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/el_condor_pasa/generated.png",
+      "sourceSha256": "119712218b2eeac5a744fd18f66ec773cff719f5ddb3fdc483f28f497dacba97",
+      "crop": [
+        298,
+        19,
+        463,
+        243
+      ],
+      "destination": [
+        155,
+        11,
+        73,
+        99
+      ]
+    },
+    {
+      "frame": 2,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/el_condor_pasa/generated.png",
+      "sourceSha256": "119712218b2eeac5a744fd18f66ec773cff719f5ddb3fdc483f28f497dacba97",
+      "crop": [
+        549,
+        18,
+        723,
+        243
+      ],
+      "destination": [
+        281,
+        11,
+        77,
+        99
+      ]
+    },
+    {
+      "frame": 3,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/el_condor_pasa/generated.png",
+      "sourceSha256": "119712218b2eeac5a744fd18f66ec773cff719f5ddb3fdc483f28f497dacba97",
+      "crop": [
+        810,
+        17,
+        974,
+        243
+      ],
+      "destination": [
+        412,
+        10,
+        72,
+        100
+      ]
+    },
+    {
+      "frame": 4,
+      "sourceFrame": 4,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/el_condor_pasa/generated.png",
+      "sourceSha256": "119712218b2eeac5a744fd18f66ec773cff719f5ddb3fdc483f28f497dacba97",
+      "crop": [
+        36,
+        276,
+        220,
+        498
+      ],
+      "destination": [
+        23,
+        140,
+        81,
+        98
+      ]
+    },
+    {
+      "frame": 5,
+      "sourceFrame": 5,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/el_condor_pasa/generated.png",
+      "sourceSha256": "119712218b2eeac5a744fd18f66ec773cff719f5ddb3fdc483f28f497dacba97",
+      "crop": [
+        287,
+        275,
+        474,
+        497
+      ],
+      "destination": [
+        151,
+        140,
+        82,
+        98
+      ]
+    },
+    {
+      "frame": 6,
+      "sourceFrame": 6,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/el_condor_pasa/generated.png",
+      "sourceSha256": "119712218b2eeac5a744fd18f66ec773cff719f5ddb3fdc483f28f497dacba97",
+      "crop": [
+        540,
+        273,
+        727,
+        498
+      ],
+      "destination": [
+        279,
+        139,
+        82,
+        99
+      ]
+    },
+    {
+      "frame": 7,
+      "sourceFrame": 7,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/el_condor_pasa/generated.png",
+      "sourceSha256": "119712218b2eeac5a744fd18f66ec773cff719f5ddb3fdc483f28f497dacba97",
+      "crop": [
+        797,
+        275,
+        984,
+        498
+      ],
+      "destination": [
+        407,
+        140,
+        82,
+        98
+      ]
+    },
+    {
+      "frame": 8,
+      "sourceFrame": 8,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/el_condor_pasa/generated.png",
+      "sourceSha256": "119712218b2eeac5a744fd18f66ec773cff719f5ddb3fdc483f28f497dacba97",
+      "crop": [
+        30,
+        527,
+        218,
+        748
+      ],
+      "destination": [
+        22,
+        269,
+        83,
+        97
+      ]
+    },
+    {
+      "frame": 9,
+      "sourceFrame": 9,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/el_condor_pasa/generated.png",
+      "sourceSha256": "119712218b2eeac5a744fd18f66ec773cff719f5ddb3fdc483f28f497dacba97",
+      "crop": [
+        287,
+        522,
+        462,
+        746
+      ],
+      "destination": [
+        153,
+        267,
+        77,
+        99
+      ]
+    },
+    {
+      "frame": 10,
+      "sourceFrame": 10,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/el_condor_pasa/generated.png",
+      "sourceSha256": "119712218b2eeac5a744fd18f66ec773cff719f5ddb3fdc483f28f497dacba97",
+      "crop": [
+        531,
+        529,
+        781,
+        749
+      ],
+      "destination": [
+        265,
+        269,
+        110,
+        97
+      ]
+    },
+    {
+      "frame": 11,
+      "sourceFrame": 11,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/el_condor_pasa/generated.png",
+      "sourceSha256": "119712218b2eeac5a744fd18f66ec773cff719f5ddb3fdc483f28f497dacba97",
+      "crop": [
+        805,
+        525,
+        973,
+        750
+      ],
+      "destination": [
+        411,
+        267,
+        74,
+        99
+      ]
+    },
+    {
+      "frame": 12,
+      "sourceFrame": 12,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/el_condor_pasa/generated.png",
+      "sourceSha256": "119712218b2eeac5a744fd18f66ec773cff719f5ddb3fdc483f28f497dacba97",
+      "crop": [
+        23,
+        790,
+        225,
+        1004
+      ],
+      "destination": [
+        19,
+        400,
+        89,
+        94
+      ]
+    },
+    {
+      "frame": 13,
+      "sourceFrame": 13,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/el_condor_pasa/generated.png",
+      "sourceSha256": "119712218b2eeac5a744fd18f66ec773cff719f5ddb3fdc483f28f497dacba97",
+      "crop": [
+        289,
+        770,
+        470,
+        1004
+      ],
+      "destination": [
+        152,
+        391,
+        80,
+        103
+      ]
+    },
+    {
+      "frame": 14,
+      "sourceFrame": 14,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/el_condor_pasa/generated.png",
+      "sourceSha256": "119712218b2eeac5a744fd18f66ec773cff719f5ddb3fdc483f28f497dacba97",
+      "crop": [
+        527,
+        779,
+        758,
+        1005
+      ],
+      "destination": [
+        269,
+        394,
+        102,
+        100
+      ]
+    },
+    {
+      "frame": 15,
+      "sourceFrame": 15,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/el_condor_pasa/generated.png",
+      "sourceSha256": "119712218b2eeac5a744fd18f66ec773cff719f5ddb3fdc483f28f497dacba97",
+      "crop": [
+        799,
+        773,
+        994,
+        1009
+      ],
+      "destination": [
+        405,
+        390,
+        86,
+        104
+      ]
+    },
+    {
+      "frame": 16,
+      "sourceFrame": 16,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/el_condor_pasa/generated.png",
+      "sourceSha256": "119712218b2eeac5a744fd18f66ec773cff719f5ddb3fdc483f28f497dacba97",
+      "crop": [
+        38,
+        1050,
+        223,
+        1247
+      ],
+      "destination": [
+        23,
+        535,
+        82,
+        87
+      ]
+    },
+    {
+      "frame": 17,
+      "sourceFrame": 17,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/el_condor_pasa/generated.png",
+      "sourceSha256": "119712218b2eeac5a744fd18f66ec773cff719f5ddb3fdc483f28f497dacba97",
+      "crop": [
+        289,
+        1053,
+        480,
+        1244
+      ],
+      "destination": [
+        150,
+        538,
+        84,
+        84
+      ]
+    },
+    {
+      "frame": 18,
+      "sourceFrame": 18,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/el_condor_pasa/generated.png",
+      "sourceSha256": "119712218b2eeac5a744fd18f66ec773cff719f5ddb3fdc483f28f497dacba97",
+      "crop": [
+        523,
+        1122,
+        752,
+        1244
+      ],
+      "destination": [
+        269,
+        568,
+        101,
+        54
+      ]
+    },
+    {
+      "frame": 19,
+      "sourceFrame": 19,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/el_condor_pasa/generated.png",
+      "sourceSha256": "119712218b2eeac5a744fd18f66ec773cff719f5ddb3fdc483f28f497dacba97",
+      "crop": [
+        785,
+        1129,
+        1000,
+        1243
+      ],
+      "destination": [
+        400,
+        572,
+        95,
+        50
+      ]
+    },
+    {
+      "frame": 20,
+      "sourceFrame": 20,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/el_condor_pasa/generated.png",
+      "sourceSha256": "119712218b2eeac5a744fd18f66ec773cff719f5ddb3fdc483f28f497dacba97",
+      "crop": [
+        42,
+        1286,
+        215,
+        1516
+      ],
+      "destination": [
+        26,
+        649,
+        76,
+        101
+      ]
+    },
+    {
+      "frame": 21,
+      "sourceFrame": 21,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/el_condor_pasa/generated.png",
+      "sourceSha256": "119712218b2eeac5a744fd18f66ec773cff719f5ddb3fdc483f28f497dacba97",
+      "crop": [
+        292,
+        1309,
+        465,
+        1508
+      ],
+      "destination": [
+        154,
+        662,
+        76,
+        88
+      ]
+    },
+    {
+      "frame": 22,
+      "sourceFrame": 22,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/el_condor_pasa/generated.png",
+      "sourceSha256": "119712218b2eeac5a744fd18f66ec773cff719f5ddb3fdc483f28f497dacba97",
+      "crop": [
+        546,
+        1284,
+        713,
+        1516
+      ],
+      "destination": [
+        283,
+        648,
+        74,
+        102
+      ]
+    },
+    {
+      "frame": 23,
+      "sourceFrame": 23,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/el_condor_pasa/generated.png",
+      "sourceSha256": "119712218b2eeac5a744fd18f66ec773cff719f5ddb3fdc483f28f497dacba97",
+      "crop": [
+        794,
+        1293,
+        987,
+        1516
+      ],
+      "destination": [
+        405,
+        652,
+        85,
+        98
+      ]
+    }
+  ],
+  "identityRevision": {
+    "review": "docs/art-source/motions/identity-revisions-2026-09-12/el_condor_pasa/review.json",
+    "baselineRuntimeSha256": "0b2cfa8c217deae2079b8ea3831aadfc5d89dd08ebd7d9f848d6d8733daa80d0",
+    "previousPacking": "docs/art-source/motions/production-144/el_condor_pasa/packing.json",
+    "portrait": "public/assets/portraits/el_condor_pasa.png",
+    "portraitSha256": "57aafeaead9938c27aa2dda08a152e9cfe5a7edf1cbc1c0ad80ba18ffcd34b07",
+    "changedFrames": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23
+    ],
+    "alpha": {
+      "transparentFraction": 0.5920880635579427,
+      "solidFraction": 0.32217152913411456
+    }
+  }
+}

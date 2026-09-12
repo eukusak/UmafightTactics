@@ -1,6 +1,6 @@
 # 초상화·기물 외형 전체 검토
 
-145명 대조: **54명 수정 대상 / 91명 유지 / 0명 실제 이미지 반영**. 완료 전까지 Draft PR입니다.
+145명 대조: **54명 수정 대상 / 91명 유지 / 10명 실제 이미지 반영**. 완료 전까지 Draft PR입니다.
 
 초상화를 외형 기준으로 삼고 수정 대상의 24프레임(대기·이동·공격·스킬·쓰러짐·승리)을 교체합니다. 스킬 데이터와 발동 타이밍은 유지합니다.
 
@@ -12,16 +12,16 @@ PR12는 병합되었으며 PR13의 초기 커밋에는 명단 README만 있었�
 
 | 캐릭터 | ID | 외형 수정 기준 | 현재 상태 |
 | --- | --- | --- | --- |
-| 마루젠스키 | maruzensky | Chestnut-brown long layered waves, swept fringe, emerald eyes, small navy ear bow. Replace the overly orange hair. | pending |
-| 엘 콘도르 파사 | el_condor_pasa | Dark chocolate high ponytail and cheek locks, amber eyes, gold-yellow eye mask with blue trim, purple ear ribbon. Replace red glasses-like mask. | pending |
-| 심볼리 루돌프 | symboli_rudolf | Long wavy brown hair, broad white curled forelock swept diagonally, violet eyes. Replace the generic thin straight white stripe. | pending |
-| 아그네스 디지털 | agnes_digital | Long pink twin ponytails, yellow-orange bows, BLUE eyes. Replace red eyes. | pending |
-| 히시 아케보노 | hishi_akebono | Brown hair in TWO thick side ponytails, red eyes, tiny white-blue hat and bows. Replace the single ponytail/bob silhouette. | pending |
-| 아이네스 후진 | ines_fujin | Brown HIGH SIDE PONYTAIL, green eyes, pink-white visor, green ear ornament. Replace the short bob and red eyes. | pending |
-| 어드마이어 베가 | admire_vega | Straight dark brown shoulder-length hair and proper front bangs, violet eyes, blue ear cover. NO white forelock. | pending |
-| 이나리 원 | inari_one | Brown hair in TWO wild outward ponytails, turquoise eyes, side fox mask, yellow ties. NO generic white forelock or bob. | pending |
-| 카렌짱 | curren_chan | Silver-white fluffy layered bob with flipped ends, violet eyes, red bow. Replace flat bob and red eyes. | pending |
-| 카와카미 프린세스 | kawakami_princess | Rose-chestnut long wavy hair with crown braid on the side, BLUE eyes, jeweled tiara. Preserve the visible braided hairline. | pending |
+| 마루젠스키 | maruzensky | Chestnut-brown long layered waves, swept fringe, emerald eyes, small navy ear bow. Replace the overly orange hair. | integrated |
+| 엘 콘도르 파사 | el_condor_pasa | Dark chocolate high ponytail and cheek locks, amber eyes, gold-yellow eye mask with blue trim, purple ear ribbon. Replace red glasses-like mask. | integrated |
+| 심볼리 루돌프 | symboli_rudolf | Long wavy brown hair, broad white curled forelock swept diagonally, violet eyes. Replace the generic thin straight white stripe. | integrated |
+| 아그네스 디지털 | agnes_digital | Long pink twin ponytails, yellow-orange bows, BLUE eyes. Replace red eyes. | integrated |
+| 히시 아케보노 | hishi_akebono | Brown hair in TWO thick side ponytails, red eyes, tiny white-blue hat and bows. Replace the single ponytail/bob silhouette. | integrated |
+| 아이네스 후진 | ines_fujin | Brown HIGH SIDE PONYTAIL, green eyes, pink-white visor, green ear ornament. Replace the short bob and red eyes. | integrated |
+| 어드마이어 베가 | admire_vega | Straight dark brown shoulder-length hair and proper front bangs, violet eyes, blue ear cover. NO white forelock. | integrated |
+| 이나리 원 | inari_one | Brown hair in TWO wild outward ponytails, turquoise eyes, side fox mask, yellow ties. NO generic white forelock or bob. | integrated |
+| 카렌짱 | curren_chan | Silver-white fluffy layered bob with flipped ends, violet eyes, red bow. Replace flat bob and red eyes. | integrated |
+| 카와카미 프린세스 | kawakami_princess | Rose-chestnut long wavy hair with crown braid on the side, BLUE eyes, jeweled tiara. Preserve the visible braided hairline. | integrated |
 | 골드 시티 | gold_city | Long wavy blonde hair with PINK TIPS, blue eyes, blue ear bow. Replace orange short bob. | pending |
 | 스마트 팔콘 | smart_falcon | Light brown hair in TWO short rounded side ponytails with pink ribbons, amber eyes. Replace the bob. | pending |
 | 젠노 롭 로이 | zenno_rob_roy | Dark purple hair with a LONG BRAID over one shoulder, round blue glasses, blue eyes. Replace the bob. | pending |

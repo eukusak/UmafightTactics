@@ -1,0 +1,484 @@
+{
+  "format": "uft-baked-frames-v1",
+  "columns": 4,
+  "rows": 6,
+  "frameWidth": 128,
+  "frameHeight": 128,
+  "anchor": [
+    64,
+    110
+  ],
+  "scale": 0.39322033898305087,
+  "runtimeSha256": "592b64ce0b84f3539ed09f06e6cabfb4e3e187cf978b566dc4af758d759f5cb0",
+  "frames": [
+    {
+      "frame": 0,
+      "sourceFrame": 0,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/agnes_digital/generated.png",
+      "sourceSha256": "1355e2e9b945b0fa359cadc21ab5a728453effd19427859c28257dc63682a064",
+      "crop": [
+        44,
+        19,
+        215,
+        243
+      ],
+      "destination": [
+        30,
+        22,
+        67,
+        88
+      ]
+    },
+    {
+      "frame": 1,
+      "sourceFrame": 1,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/agnes_digital/generated.png",
+      "sourceSha256": "1355e2e9b945b0fa359cadc21ab5a728453effd19427859c28257dc63682a064",
+      "crop": [
+        299,
+        19,
+        472,
+        242
+      ],
+      "destination": [
+        158,
+        22,
+        68,
+        88
+      ]
+    },
+    {
+      "frame": 2,
+      "sourceFrame": 2,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/agnes_digital/generated.png",
+      "sourceSha256": "1355e2e9b945b0fa359cadc21ab5a728453effd19427859c28257dc63682a064",
+      "crop": [
+        556,
+        19,
+        727,
+        242
+      ],
+      "destination": [
+        286,
+        22,
+        67,
+        88
+      ]
+    },
+    {
+      "frame": 3,
+      "sourceFrame": 3,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/agnes_digital/generated.png",
+      "sourceSha256": "1355e2e9b945b0fa359cadc21ab5a728453effd19427859c28257dc63682a064",
+      "crop": [
+        813,
+        21,
+        986,
+        242
+      ],
+      "destination": [
+        414,
+        23,
+        68,
+        87
+      ]
+    },
+    {
+      "frame": 4,
+      "sourceFrame": 4,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/agnes_digital/generated.png",
+      "sourceSha256": "1355e2e9b945b0fa359cadc21ab5a728453effd19427859c28257dc63682a064",
+      "crop": [
+        35,
+        273,
+        231,
+        506
+      ],
+      "destination": [
+        25,
+        146,
+        77,
+        92
+      ]
+    },
+    {
+      "frame": 5,
+      "sourceFrame": 5,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/agnes_digital/generated.png",
+      "sourceSha256": "1355e2e9b945b0fa359cadc21ab5a728453effd19427859c28257dc63682a064",
+      "crop": [
+        295,
+        274,
+        486,
+        505
+      ],
+      "destination": [
+        154,
+        147,
+        75,
+        91
+      ]
+    },
+    {
+      "frame": 6,
+      "sourceFrame": 6,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/agnes_digital/generated.png",
+      "sourceSha256": "1355e2e9b945b0fa359cadc21ab5a728453effd19427859c28257dc63682a064",
+      "crop": [
+        541,
+        276,
+        740,
+        510
+      ],
+      "destination": [
+        281,
+        146,
+        78,
+        92
+      ]
+    },
+    {
+      "frame": 7,
+      "sourceFrame": 7,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/agnes_digital/generated.png",
+      "sourceSha256": "1355e2e9b945b0fa359cadc21ab5a728453effd19427859c28257dc63682a064",
+      "crop": [
+        802,
+        280,
+        993,
+        511
+      ],
+      "destination": [
+        410,
+        147,
+        75,
+        91
+      ]
+    },
+    {
+      "frame": 8,
+      "sourceFrame": 8,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/agnes_digital/generated.png",
+      "sourceSha256": "1355e2e9b945b0fa359cadc21ab5a728453effd19427859c28257dc63682a064",
+      "crop": [
+        30,
+        535,
+        227,
+        764
+      ],
+      "destination": [
+        25,
+        276,
+        77,
+        90
+      ]
+    },
+    {
+      "frame": 9,
+      "sourceFrame": 9,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/agnes_digital/generated.png",
+      "sourceSha256": "1355e2e9b945b0fa359cadc21ab5a728453effd19427859c28257dc63682a064",
+      "crop": [
+        297,
+        536,
+        476,
+        765
+      ],
+      "destination": [
+        157,
+        276,
+        70,
+        90
+      ]
+    },
+    {
+      "frame": 10,
+      "sourceFrame": 10,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/agnes_digital/generated.png",
+      "sourceSha256": "1355e2e9b945b0fa359cadc21ab5a728453effd19427859c28257dc63682a064",
+      "crop": [
+        543,
+        535,
+        745,
+        763
+      ],
+      "destination": [
+        280,
+        276,
+        79,
+        90
+      ]
+    },
+    {
+      "frame": 11,
+      "sourceFrame": 11,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/agnes_digital/generated.png",
+      "sourceSha256": "1355e2e9b945b0fa359cadc21ab5a728453effd19427859c28257dc63682a064",
+      "crop": [
+        818,
+        540,
+        985,
+        765
+      ],
+      "destination": [
+        415,
+        278,
+        66,
+        88
+      ]
+    },
+    {
+      "frame": 12,
+      "sourceFrame": 12,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/agnes_digital/generated.png",
+      "sourceSha256": "1355e2e9b945b0fa359cadc21ab5a728453effd19427859c28257dc63682a064",
+      "crop": [
+        34,
+        806,
+        228,
+        1006
+      ],
+      "destination": [
+        26,
+        415,
+        76,
+        79
+      ]
+    },
+    {
+      "frame": 13,
+      "sourceFrame": 13,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/agnes_digital/generated.png",
+      "sourceSha256": "1355e2e9b945b0fa359cadc21ab5a728453effd19427859c28257dc63682a064",
+      "crop": [
+        296,
+        809,
+        502,
+        1005
+      ],
+      "destination": [
+        151,
+        417,
+        81,
+        77
+      ]
+    },
+    {
+      "frame": 14,
+      "sourceFrame": 14,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/agnes_digital/generated.png",
+      "sourceSha256": "1355e2e9b945b0fa359cadc21ab5a728453effd19427859c28257dc63682a064",
+      "crop": [
+        511,
+        811,
+        806,
+        1005
+      ],
+      "destination": [
+        262,
+        418,
+        116,
+        76
+      ]
+    },
+    {
+      "frame": 15,
+      "sourceFrame": 15,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/agnes_digital/generated.png",
+      "sourceSha256": "1355e2e9b945b0fa359cadc21ab5a728453effd19427859c28257dc63682a064",
+      "crop": [
+        806,
+        800,
+        998,
+        1008
+      ],
+      "destination": [
+        410,
+        412,
+        75,
+        82
+      ]
+    },
+    {
+      "frame": 16,
+      "sourceFrame": 16,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/agnes_digital/generated.png",
+      "sourceSha256": "1355e2e9b945b0fa359cadc21ab5a728453effd19427859c28257dc63682a064",
+      "crop": [
+        35,
+        1041,
+        213,
+        1254
+      ],
+      "destination": [
+        29,
+        538,
+        70,
+        84
+      ]
+    },
+    {
+      "frame": 17,
+      "sourceFrame": 17,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/agnes_digital/generated.png",
+      "sourceSha256": "1355e2e9b945b0fa359cadc21ab5a728453effd19427859c28257dc63682a064",
+      "crop": [
+        289,
+        1064,
+        472,
+        1243
+      ],
+      "destination": [
+        156,
+        552,
+        72,
+        70
+      ]
+    },
+    {
+      "frame": 18,
+      "sourceFrame": 18,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/agnes_digital/generated.png",
+      "sourceSha256": "1355e2e9b945b0fa359cadc21ab5a728453effd19427859c28257dc63682a064",
+      "crop": [
+        539,
+        1075,
+        723,
+        1243
+      ],
+      "destination": [
+        284,
+        556,
+        72,
+        66
+      ]
+    },
+    {
+      "frame": 19,
+      "sourceFrame": 19,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/agnes_digital/generated.png",
+      "sourceSha256": "1355e2e9b945b0fa359cadc21ab5a728453effd19427859c28257dc63682a064",
+      "crop": [
+        784,
+        1144,
+        1015,
+        1244
+      ],
+      "destination": [
+        402,
+        583,
+        91,
+        39
+      ]
+    },
+    {
+      "frame": 20,
+      "sourceFrame": 20,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/agnes_digital/generated.png",
+      "sourceSha256": "1355e2e9b945b0fa359cadc21ab5a728453effd19427859c28257dc63682a064",
+      "crop": [
+        49,
+        1280,
+        221,
+        1517
+      ],
+      "destination": [
+        30,
+        657,
+        68,
+        93
+      ]
+    },
+    {
+      "frame": 21,
+      "sourceFrame": 21,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/agnes_digital/generated.png",
+      "sourceSha256": "1355e2e9b945b0fa359cadc21ab5a728453effd19427859c28257dc63682a064",
+      "crop": [
+        296,
+        1280,
+        484,
+        1518
+      ],
+      "destination": [
+        155,
+        656,
+        74,
+        94
+      ]
+    },
+    {
+      "frame": 22,
+      "sourceFrame": 22,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/agnes_digital/generated.png",
+      "sourceSha256": "1355e2e9b945b0fa359cadc21ab5a728453effd19427859c28257dc63682a064",
+      "crop": [
+        549,
+        1280,
+        732,
+        1521
+      ],
+      "destination": [
+        284,
+        655,
+        72,
+        95
+      ]
+    },
+    {
+      "frame": 23,
+      "sourceFrame": 23,
+      "source": "docs/art-source/motions/identity-revisions-2026-09-12/agnes_digital/generated.png",
+      "sourceSha256": "1355e2e9b945b0fa359cadc21ab5a728453effd19427859c28257dc63682a064",
+      "crop": [
+        805,
+        1280,
+        978,
+        1520
+      ],
+      "destination": [
+        414,
+        656,
+        68,
+        94
+      ]
+    }
+  ],
+  "identityRevision": {
+    "review": "docs/art-source/motions/identity-revisions-2026-09-12/agnes_digital/review.json",
+    "baselineRuntimeSha256": "ee9a562de6408ca7c5c77792d28c4f6f848c2e2c323e7778feed5f5ddb7d4bf6",
+    "previousPacking": "docs/art-source/motions/skill-revisions-2026-09-11/agnes_digital/packing.json",
+    "portrait": "public/assets/portraits/agnes_digital.png",
+    "portraitSha256": "b186ade2fafb02ce3f31c20f3272d8d18940359cb19b5e5181f5aae767ef1ae1",
+    "changedFrames": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23
+    ],
+    "alpha": {
+      "transparentFraction": 0.5781154632568359,
+      "solidFraction": 0.31830787658691406
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "tool": "built-in image_gen",
+  "referenceCommit": "847fc5a43eb3017d485192dec5e77812e7e4f98f",
+  "referencePortrait": "public/assets/portraits/maruzensky.png",
+  "referenceAtlas": "public/assets/motions/maruzensky.png",
+  "prompt": "Edit the second image, a 24-pose chibi sprite sheet, to match the character identity in the first portrait image. Identity is defined by the FIRST PORTRAIT: long warm chestnut-brown layered hair with soft curled ends, swept bangs, a small dark-blue bow near the ear, emerald-teal eyes and a confident refined face. Do not make the hair bright orange-red or the eyes bright cyan. Correct the face, hairstyle, eye color and head accessories in EVERY pose, including running, attacking and lying down. Preserve the second image's costume, compact chibi proportions, each pose and skill-effect sequence. Output exactly 24 separate full-body poses, 4 columns and 6 rows: row 1 idle, row 2 run, row 3 basic attack, row 4 skill cast, row 5 collapse/KO, row 6 victory. Keep the original pose order and all six distinct action rows. A portrait-oriented PNG sprite sheet with a REAL transparent alpha background, crisp cel-shaded game art. Wide transparent gutters, no captions, no grids, no checkerboard, no painted backdrop or ground shadows. Only 24 poses of this one character.",
+  "colorEditPrompt": "Match ONLY the hair color in the sprite sheet (second image) to the portrait (first image): deeper neutral CHESTNUT BROWN with muted golden highlights, not orange-red. Eyes should be muted emerald green. Keep all 24 existing poses, hairstyle, outfit and transparent alpha exactly. Transparent PNG cutouts.",
+  "alphaEditPrompt": "Make the background transparent. Preserve every character and effect. Export a transparent PNG cutout, with alpha zero in the empty space."
+}

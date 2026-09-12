@@ -1,0 +1,8 @@
+{
+  "tool": "built-in image_gen",
+  "referenceCommit": "847fc5a43eb3017d485192dec5e77812e7e4f98f",
+  "referencePortrait": "public/assets/portraits/el_condor_pasa.png",
+  "referenceAtlas": "public/assets/motions/el_condor_pasa.png",
+  "prompt": "Edit the second image, a 24-pose chibi sprite sheet, to match the character identity in the first portrait image. Identity is defined by the FIRST PORTRAIT: long dark chocolate-brown hair with a high ponytail and loose cheek-length locks, amber-gold eyes, the portrait's distinctive gold-yellow and blue-trimmed eye mask, and a small purple ear ribbon. Replace the sprite's red eyeglasses with the portrait's eye mask. Correct the face, hairstyle, eye color and head accessories in EVERY pose, including running, attacking and lying down. Preserve the second image's costume, compact chibi proportions, each pose and skill-effect sequence. Output exactly 24 separate full-body poses, 4 columns and 6 rows: row 1 idle, row 2 run, row 3 basic attack, row 4 skill cast, row 5 collapse/KO, row 6 victory. Keep the original pose order and all six distinct action rows. A portrait-oriented PNG sprite sheet with a REAL transparent alpha background, crisp cel-shaded game art. Wide transparent gutters, no captions, no grids, no checkerboard, no painted backdrop or ground shadows. Only 24 poses of this one character.",
+  "alphaEditPrompt": "Make the background transparent. Preserve every character and effect. Export a transparent PNG cutout, with alpha zero in the empty space."
+}

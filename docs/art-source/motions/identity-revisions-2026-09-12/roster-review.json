@@ -3,7 +3,7 @@
   "baselineCommit": "847fc5a43eb3017d485192dec5e77812e7e4f98f",
   "reviewedCount": 145,
   "targetCount": 54,
-  "integratedCount": 0,
+  "integratedCount": 10,
   "scope": "All six rows / 24 frames; portrait is the identity reference",
   "units": {
     "special_week": {
@@ -41,14 +41,16 @@
     },
     "maruzensky": {
       "decision": "revise",
-      "status": "pending",
+      "status": "integrated",
       "reason": "Chestnut-brown long layered waves, swept fringe, emerald eyes, small navy ear bow. Replace the overly orange hair.",
       "portrait": "public/assets/portraits/maruzensky.png",
       "portraitSha256": "333e2532cc428de14678f4a9c8cad3bc3508df65f4cbfc15c29f1ad2beb9a7dc",
       "baselineRuntimeSha256": "8fc149b1a411a66a5e09b8cf70456c00a8b352e3e1ddd9d62fc98a36dac8888d",
       "baselinePacking": "docs/art-source/motions/production-144/maruzensky/packing.json",
       "skillSignature": "3c271e139fa737f704b4aec45f98b2e36527ea5cc1713fdb49f4d907c0562067",
-      "name": "마루젠스키"
+      "name": "마루젠스키",
+      "revision": "docs/art-source/motions/identity-revisions-2026-09-12/maruzensky/review.json",
+      "runtimeSha256": "a36d9b7987af9e187eed9da42fe08e79c66c72efa512ba50071f4def2f6e8f0b"
     },
     "fuji_kiseki": {
       "decision": "retain",
@@ -151,14 +153,16 @@
     },
     "el_condor_pasa": {
       "decision": "revise",
-      "status": "pending",
+      "status": "integrated",
       "reason": "Dark chocolate high ponytail and cheek locks, amber eyes, gold-yellow eye mask with blue trim, purple ear ribbon. Replace red glasses-like mask.",
       "portrait": "public/assets/portraits/el_condor_pasa.png",
       "portraitSha256": "57aafeaead9938c27aa2dda08a152e9cfe5a7edf1cbc1c0ad80ba18ffcd34b07",
       "baselineRuntimeSha256": "0b2cfa8c217deae2079b8ea3831aadfc5d89dd08ebd7d9f848d6d8733daa80d0",
       "baselinePacking": "docs/art-source/motions/production-144/el_condor_pasa/packing.json",
       "skillSignature": "b52f9d20f88aeb0ddaa42f9dc977424d4cd1520c91f5be59f5604e5e2d5027a1",
-      "name": "엘 콘도르 파사"
+      "name": "엘 콘도르 파사",
+      "revision": "docs/art-source/motions/identity-revisions-2026-09-12/el_condor_pasa/review.json",
+      "runtimeSha256": "82c61c47183b37710bd74ea0d1a2ce568aab587ea2406fa415e7145de2f56e64"
     },
     "tm_opera_o": {
       "decision": "retain",
@@ -184,14 +188,16 @@
     },
     "symboli_rudolf": {
       "decision": "revise",
-      "status": "pending",
+      "status": "integrated",
       "reason": "Long wavy brown hair, broad white curled forelock swept diagonally, violet eyes. Replace the generic thin straight white stripe.",
       "portrait": "public/assets/portraits/symboli_rudolf.png",
       "portraitSha256": "971dee45efe55a6c2abefde82e3b9e345e0cb41329df93e554895f303ae6d8a3",
       "baselineRuntimeSha256": "4bf8b078d777fe61bd935cf356719c7ea5cc26fec3dd7ca60ce7a62d51ae6d38",
       "baselinePacking": "docs/art-source/motions/production-144/symboli_rudolf/packing.json",
       "skillSignature": "95108382f16d512aee2e189bf14601c4356d491e3eee538b38e6841e30628904",
-      "name": "심볼리 루돌프"
+      "name": "심볼리 루돌프",
+      "revision": "docs/art-source/motions/identity-revisions-2026-09-12/symboli_rudolf/review.json",
+      "runtimeSha256": "bffcdd5cb256881b0596545b871f80264e39bb9f07825a69708a6e8b07361e30"
     },
     "air_groove": {
       "decision": "retain",
@@ -206,14 +212,16 @@
     },
     "agnes_digital": {
       "decision": "revise",
-      "status": "pending",
+      "status": "integrated",
       "reason": "Long pink twin ponytails, yellow-orange bows, BLUE eyes. Replace red eyes.",
       "portrait": "public/assets/portraits/agnes_digital.png",
       "portraitSha256": "b186ade2fafb02ce3f31c20f3272d8d18940359cb19b5e5181f5aae767ef1ae1",
       "baselineRuntimeSha256": "ee9a562de6408ca7c5c77792d28c4f6f848c2e2c323e7778feed5f5ddb7d4bf6",
       "baselinePacking": "docs/art-source/motions/skill-revisions-2026-09-11/agnes_digital/packing.json",
       "skillSignature": "98807291639a679acce31516e0bce9b9236831be08e183a7e8f86a6f95031ea6",
-      "name": "아그네스 디지털"
+      "name": "아그네스 디지털",
+      "revision": "docs/art-source/motions/identity-revisions-2026-09-12/agnes_digital/review.json",
+      "runtimeSha256": "592b64ce0b84f3539ed09f06e6cabfb4e3e187cf978b566dc4af758d759f5cb0"
     },
     "seiun_sky": {
       "decision": "retain",
@@ -294,14 +302,16 @@
     },
     "hishi_akebono": {
       "decision": "revise",
-      "status": "pending",
+      "status": "integrated",
       "reason": "Brown hair in TWO thick side ponytails, red eyes, tiny white-blue hat and bows. Replace the single ponytail/bob silhouette.",
       "portrait": "public/assets/portraits/hishi_akebono.png",
       "portraitSha256": "e98d72a6b0afedf3c6e5db4767ddd680e338b98967af6023f79390175016341e",
       "baselineRuntimeSha256": "eb5a531311e2440ec28ef4df5c719877ccba9eda8601a4d3c45517c416c49397",
       "baselinePacking": "docs/art-source/motions/production-144/hishi_akebono/packing.json",
       "skillSignature": "6ab2e61ead057748ce120b9b8f7dea19c5d7521a95c8cc8cbf639b8a7e358d7b",
-      "name": "히시 아케보노"
+      "name": "히시 아케보노",
+      "revision": "docs/art-source/motions/identity-revisions-2026-09-12/hishi_akebono/review.json",
+      "runtimeSha256": "3f6690704b9a969dbe6e27aeac15c63e5b4e715c4c1b9831d821ad0e4def6166"
     },
     "yukino_bijin": {
       "decision": "retain",
@@ -327,14 +337,16 @@
     },
     "ines_fujin": {
       "decision": "revise",
-      "status": "pending",
+      "status": "integrated",
       "reason": "Brown HIGH SIDE PONYTAIL, green eyes, pink-white visor, green ear ornament. Replace the short bob and red eyes.",
       "portrait": "public/assets/portraits/ines_fujin.png",
       "portraitSha256": "091319c3fe50de924aec02585e9f3ae0e59d161d6721713ae417fa480a08ed5f",
       "baselineRuntimeSha256": "0a706ddeb4f88561fd583fec479ea4be9764df2b2a1bcea615f18cde178715f0",
       "baselinePacking": "docs/art-source/motions/skill-revisions-2026-09-11/ines_fujin/packing.json",
       "skillSignature": "781d44b5ba1c8d84524034f720e23156ec02e276f5a88172a8cf40456afc53b6",
-      "name": "아이네스 후진"
+      "name": "아이네스 후진",
+      "revision": "docs/art-source/motions/identity-revisions-2026-09-12/ines_fujin/review.json",
+      "runtimeSha256": "65f8b3a1c1acc58dddfd5262851da098f8bbc5268a07e42a6552d8599c10a919"
     },
     "agnes_tachyon": {
       "decision": "retain",
@@ -349,25 +361,29 @@
     },
     "admire_vega": {
       "decision": "revise",
-      "status": "pending",
+      "status": "integrated",
       "reason": "Straight dark brown shoulder-length hair and proper front bangs, violet eyes, blue ear cover. NO white forelock.",
       "portrait": "public/assets/portraits/admire_vega.png",
       "portraitSha256": "bf9057a9ba2b0f36d0b74b00f66bc38390a06ee0891e6313a95cd59f9afb7d64",
       "baselineRuntimeSha256": "6416ea7240c3b671606b70afee48f19810548feef69afb10e508113d32aa8727",
       "baselinePacking": "docs/art-source/motions/skill-revisions-2026-09-11/admire_vega/packing.json",
       "skillSignature": "2c85b6b65f6b5a8697f59af818b6933ddd0768271932604e307014290a655a62",
-      "name": "어드마이어 베가"
+      "name": "어드마이어 베가",
+      "revision": "docs/art-source/motions/identity-revisions-2026-09-12/admire_vega/review.json",
+      "runtimeSha256": "ec3cd28bc0910e1c7c1fadfb22937c155d912c1f568627e04d15d4d60662800c"
     },
     "inari_one": {
       "decision": "revise",
-      "status": "pending",
+      "status": "integrated",
       "reason": "Brown hair in TWO wild outward ponytails, turquoise eyes, side fox mask, yellow ties. NO generic white forelock or bob.",
       "portrait": "public/assets/portraits/inari_one.png",
       "portraitSha256": "704481b4d8a48a11e6c059c6cec328e3c52a90f602fd0cb73ca2c2699c7c8458",
       "baselineRuntimeSha256": "87059ec980431e7d28330b2d90c3ffd10ea15d305f82ed8da19cd6b2543cce23",
       "baselinePacking": "docs/art-source/motions/skill-revisions-2026-09-11/inari_one/packing.json",
       "skillSignature": "70311f4c4c5ec6de97e1a2c0d0864c7f0f5f15097599623553a25d00259fdfd9",
-      "name": "이나리 원"
+      "name": "이나리 원",
+      "revision": "docs/art-source/motions/identity-revisions-2026-09-12/inari_one/review.json",
+      "runtimeSha256": "190eed6b68ba40fb201d31b3c2ec973032fc428e77a7952774c51063b0fe9184"
     },
     "winning_ticket": {
       "decision": "retain",
@@ -404,25 +420,29 @@
     },
     "curren_chan": {
       "decision": "revise",
-      "status": "pending",
+      "status": "integrated",
       "reason": "Silver-white fluffy layered bob with flipped ends, violet eyes, red bow. Replace flat bob and red eyes.",
       "portrait": "public/assets/portraits/curren_chan.png",
       "portraitSha256": "966b2f641e7e9af68adadb03f99b98a550bd5cb8b2b0fcbd7216dbfa3bc55aa8",
       "baselineRuntimeSha256": "934e017c0117cc69acd916ca452d3ff2b62682c34696ca62ae68347847d1cbe6",
       "baselinePacking": "docs/art-source/motions/production-144/curren_chan/packing.json",
       "skillSignature": "d7be1d28bdcbbc3b056d2d64786fad8f1e590581f90c71ae9b18a1eecf44d4b7",
-      "name": "카렌짱"
+      "name": "카렌짱",
+      "revision": "docs/art-source/motions/identity-revisions-2026-09-12/curren_chan/review.json",
+      "runtimeSha256": "b723a20b754437d6c35ad264775437e92ffa19dc98a7138bf09e91ddc1fcbc28"
     },
     "kawakami_princess": {
       "decision": "revise",
-      "status": "pending",
+      "status": "integrated",
       "reason": "Rose-chestnut long wavy hair with crown braid on the side, BLUE eyes, jeweled tiara. Preserve the visible braided hairline.",
       "portrait": "public/assets/portraits/kawakami_princess.png",
       "portraitSha256": "757c13b3059221d634c585e2cab93598be77007a5b5dbedfe3391c821bfe4876",
       "baselineRuntimeSha256": "b924a7bb27aa36b47685741a64b8f51cc80a94f5664cc1f4ef811199f637b928",
       "baselinePacking": "docs/art-source/motions/skill-revisions-2026-09-11/kawakami_princess/packing.json",
       "skillSignature": "064dacb83c556bf3cbddf79d3ed3c239310fb457170a9aedfc0ac1d6ecdca384",
-      "name": "카와카미 프린세스"
+      "name": "카와카미 프린세스",
+      "revision": "docs/art-source/motions/identity-revisions-2026-09-12/kawakami_princess/review.json",
+      "runtimeSha256": "bf81e4f4e046b0c4e8b3964a68c84a7d0f2a0a9720099e1e5dffa9aafc503c60"
     },
     "gold_city": {
       "decision": "revise",
