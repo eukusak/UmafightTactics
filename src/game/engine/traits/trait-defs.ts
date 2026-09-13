@@ -13,14 +13,14 @@ export const TRAIT_DEFS: TraitDef[] = [
   {
     id: 'nige', name: '도주', category: 'STYLE', thresholds: [2, 4, 6],
     emblemItemId: 'emblem_nige',
-    description: '앞으로 치고 나가 속도로 압박한다.',
+    description: '빠른 기본 공격과 전투 초반의 선점으로 압박한다.',
     tiers: [
-      { count: 2, description: '공속 +10%, 이동속도 +10%',
-        effects: [mul('attackSpeed', 0.1), mul('moveSpeedHexPerSec', 0.1)] },
-      { count: 4, description: '공속 +22%, 이동속도 +20%',
-        effects: [mul('attackSpeed', 0.22), mul('moveSpeedHexPerSec', 0.2)] },
-      { count: 6, description: '공속 +38%, 이동속도 +35%. 전투 시작 4초간 방해 효과 면역',
-        effects: [mul('attackSpeed', 0.38), mul('moveSpeedHexPerSec', 0.35),
+      { count: 2, description: '공속 +10%, 시작 6초간 피해 +4%',
+        effects: [mul('attackSpeed', 0.1), { kind: 'DAMAGE_AMP', value: 0.04, duration: 6, trigger: { when: 'COMBAT_START' } }] },
+      { count: 4, description: '공속 +22%, 시작 6초간 피해 +8%',
+        effects: [mul('attackSpeed', 0.22), { kind: 'DAMAGE_AMP', value: 0.08, duration: 6, trigger: { when: 'COMBAT_START' } }] },
+      { count: 6, description: '공속 +38%, 시작 6초간 피해 +12%. 전투 시작 4초간 방해 효과 면역',
+        effects: [mul('attackSpeed', 0.38), { kind: 'DAMAGE_AMP', value: 0.12, duration: 6, trigger: { when: 'COMBAT_START' } },
           { kind: 'CC_IMMUNE', duration: 4, trigger: { when: 'COMBAT_START' } }] },
     ],
   },
@@ -263,10 +263,10 @@ export const TRAIT_DEFS: TraitDef[] = [
     emblemItemId: null,
     description: '가장 새로운 세대의 정예.',
     tiers: [
-      { count: 2, description: '시작 마나 +10, 이동속도 +10%',
-        effects: [add('startMana', 10), mul('moveSpeedHexPerSec', 0.1)] },
-      { count: 4, description: '시작 마나 +20, 이동속도 +20%',
-        effects: [add('startMana', 20), mul('moveSpeedHexPerSec', 0.2)] },
+      { count: 2, description: '시작 마나 +10, 스킬 피해 +10%, 첫 시전 시 자신의 방해 효과 해제',
+        effects: [add('startMana', 10), { kind: 'SKILL_DAMAGE_AMP', value: 0.1 }, { kind: 'CLEANSE', oncePerCombat: true, target: 'SELF', trigger: { when: 'ON_CAST' } }] },
+      { count: 4, description: '시작 마나 +20, 스킬 피해 +20%, 첫 시전 시 자신의 방해 효과 해제',
+        effects: [add('startMana', 20), { kind: 'SKILL_DAMAGE_AMP', value: 0.2 }, { kind: 'CLEANSE', oncePerCombat: true, target: 'SELF', trigger: { when: 'ON_CAST' } }] },
     ],
   },
   {
@@ -322,8 +322,8 @@ const extend = (id: TraitId, tiers: TraitDef['tiers']): void => {
   trait.thresholds = trait.tiers.map(t => t.count);
 };
 const percent = (value: number): number => Math.round(value * 100);
-for (const [count, speed, move, immune] of [[8, .55, .45, 6], [10, .8, .65, 8]]) {
-  extend('nige', [{ count, description: `공속 +${percent(speed)}%, 이동속도 +${percent(move)}%, 시작 ${immune}초 방해 효과 면역`, effects: [mul('attackSpeed', speed), mul('moveSpeedHexPerSec', move), { kind: 'CC_IMMUNE', duration: immune, trigger: { when: 'COMBAT_START' } }] }]);
+for (const [count, speed, amp, immune] of [[8, .55, .18, 6], [10, .8, .25, 8]]) {
+  extend('nige', [{ count, description: `공속 +${percent(speed)}%, 시작 6초간 피해 +${percent(amp)}%, 시작 ${immune}초 방해 효과 면역`, effects: [mul('attackSpeed', speed), { kind: 'DAMAGE_AMP', value: amp, duration: 6, trigger: { when: 'COMBAT_START' } }, { kind: 'CC_IMMUNE', duration: immune, trigger: { when: 'COMBAT_START' } }] }]);
 }
 for (const [count, amp, mana] of [[8, .42, 25], [10, .65, 35]]) {
   extend('senko', [{ count, description: `체력 60% 이상에서 피해 +${percent(amp)}%, 시작 마나 +${mana}`, effects: [{ kind: 'DAMAGE_AMP', value: amp, trigger: { when: 'HP_ABOVE', threshold: .6 } }, { kind: 'MANA_ADD', value: mana, trigger: { when: 'COMBAT_START' } }] }]);

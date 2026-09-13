@@ -29,12 +29,16 @@ function battle() {
   return new BattleEngine(side('A'), side('B'), new Rng(5), { maxSeconds: 1 });
 }
 describe('running styles and active trait effects', () => {
-  it('uses supported early race positions for all twelve corrections', () => {
+  it('uses supported early race positions for automatic corrections and the explicit Gran Alegria correction', () => {
     expect(Object.keys(evidence.units)).toHaveLength(145);
     for (const [id, c] of Object.entries(corrections.units)) {
       const e = evidence.units[id as keyof typeof evidence.units];
       expect(e.validStarts).toBeGreaterThanOrEqual(8);
-      expect(e.confidence).toBeGreaterThanOrEqual(0.6);
+      if (id === 'gran_alegria') {
+        expect(e.counts).toEqual({ nige: 0, senko: 8, sashi: 4, oikomi: 3 });
+        expect(e.confidence).toBeGreaterThanOrEqual(0.5);
+        expect(c.reason).toContain('사용자 교정');
+      } else expect(e.confidence).toBeGreaterThanOrEqual(0.6);
       expect(e.dominant).toBe(c.to);
       expect(e.previous).toBe(c.from);
       expect(getUnitDef(id).traits).toContain(c.to as TraitId);

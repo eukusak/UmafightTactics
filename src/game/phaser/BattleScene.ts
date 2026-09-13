@@ -50,7 +50,6 @@ export class BattleScene extends Phaser.Scene {
   private frameDelta = 0;
   private mirrored = false;
   private streaming = false;
-  private lastCutinAt = -10;
   private pulseAt = new Map<string, number>();
   private effects: Array<{ start: number; duration: number; object: Phaser.GameObjects.GameObject; update: (progress: number) => void }> = [];
   private projectiles: Array<{ image: Phaser.GameObjects.Arc; source: string; target: string; start: number; end: number; x: number; y: number }> = [];
@@ -71,6 +70,7 @@ export class BattleScene extends Phaser.Scene {
       const frames = frameSheetUrl(id);
       const sheet = assetUrl(`characters/${id}.png`) ?? (id.startsWith('pve_') ? assetUrl(`pve/${id.slice(4)}.png`) : null);
       const portrait = portraitUrl(id);
+      // Warm the browser cache before the DOM cinematic's first visible cast.
       const cutin = cutinUrl(id, getUnitDef(id).cost);
       if (cutin) this.load.image(`cutin:${id}`, cutin);
       if (frames) this.load.spritesheet(`sheet:${id}`, frames, { frameWidth: FRAME_SHEETS[id].frameWidth, frameHeight: FRAME_SHEETS[id].frameHeight });
@@ -98,7 +98,6 @@ export class BattleScene extends Phaser.Scene {
     this.eventIndex = -1;
     this.playbackTime = time;
     this.readySent = false;
-    this.lastCutinAt = -10;
     this.pulseAt.clear();
     this.mirrored = frames[0]?.units.some((u) => u.id.startsWith(`${this.humanId}#`) && u.team === 'B') ?? false;
     this.effects.forEach((e) => e.object.destroy()); this.effects = [];
@@ -323,14 +322,6 @@ export class BattleScene extends Phaser.Scene {
       const unit = this.frames[this.eventIndex].units.find((u) => u.id === event.source);
       if (!actor || !unit || this.playbackTime - event.t >= .85) return;
       const def = getUnitDef(unit.unitDefId);
-      if (def.cost === 5 && unit.id.startsWith(`${this.humanId}#`) && event.t - this.lastCutinAt >= 5 && this.textures.exists(`cutin:${unit.unitDefId}`)) {
-        this.lastCutinAt = event.t;
-        const cutin = this.add.image(1300, 20, `cutin:${unit.unitDefId}`).setOrigin(1, 0).setDepth(850);
-        // All legendary panels preserve their source aspect ratio.
-        const image = cutin.texture.getSourceImage();
-        cutin.setDisplaySize(225 * image.width / image.height, 225);
-        this.track(cutin, event.t, .85, (t) => cutin.setX(1300 + 24 * (1 - Math.min(1, t * 6))).setAlpha(Math.min(1, t * 8, (1 - t) * 4)));
-      }
       const label = this.add.text(actor.container.x, actor.container.y - 98, `${def.cost} · ${skillLabel(def.skill)}`, { fontFamily: 'Noto Sans KR Variable, sans-serif', fontSize: def.cost >= 4 ? '14px' : '12px', color: costColor(def.cost), backgroundColor: '#182b43', padding: { x: 4, y: 3 } }).setOrigin(.5).setDepth(910);
       const x = label.x, y = label.y;
       this.track(label, event.t, .85, (t) => label.setPosition(x, y - t * 16).setAlpha(Math.min(1, (1 - t) * 3)));

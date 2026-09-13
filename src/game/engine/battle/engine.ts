@@ -12,6 +12,7 @@ import {
 } from '../constants';
 import { getItem } from '../items/item-defs';
 import { activeTierIndex, getTrait } from '../traits/trait-defs';
+import { augmentApplies, augmentEffects, restoreItemMemory } from '../augments/runtime';
 import { getAugment } from '../augments/augment-defs';
 import type { Rng } from '../rng';
 import type { BattleStats, EffectDef, StatusKind, TraitId } from '../types';
@@ -45,6 +46,7 @@ export type BattleSideInput = {
     statScale?: number;
   }>;
   augments: string[];
+  augmentProgress?: Record<string, number>;
   tacticianItems: string[];
 };
 
@@ -66,7 +68,7 @@ export type BattleEvent =
   | { t: number; type: 'CAST'; source: string; skill: string; target?: string; releaseAt?: number; endAt?: number }
   | { t: number; type: 'SKILL_EFFECT'; source: string; targets: string[]; kind: EffectDef['kind']; radius: number; shape?: EffectDef['shape']; effectIndex?: number }
   | { t: number; type: 'CAST_CANCEL'; source: string }
-  | { t: number; type: 'DEATH'; unit: string }
+  | { t: number; type: 'DEATH'; unit: string; killer?: string }
   | { t: number; type: 'REVIVE'; unit: string }
   | { t: number; type: 'OVERTIME' }
   | { t: number; type: 'END'; winner: 'A' | 'B' | null };
@@ -234,7 +236,14 @@ export class BattleEngine {
       // --- augments
       for (const augId of side.augments) {
         const aug = getAugment(augId);
-        aug.teamEffects.forEach((effect, i) => {
+        if (!augmentApplies(aug, unit, counts)) continue;
+        restoreItemMemory(unit, aug, side.augmentProgress ?? {});
+        if (aug.skillUpgrade) {
+          unit.skill = structuredClone(unit.skill);
+          if (aug.skillUpgrade.damageMultiplier) unit.skill.effects = unit.skill.effects.map(e => e.kind === 'DAMAGE' || e.kind === 'DAMAGE_MAXHP_PCT' ? { ...e, value: (e.value ?? 0) * aug.skillUpgrade!.damageMultiplier! } : e);
+          unit.skill.effects.push(...structuredClone(aug.skillUpgrade.append ?? []));
+        }
+        augmentEffects(aug, side.augmentProgress ?? {}, counts).forEach((effect, i) => {
           // Trait-scoped augments only touch units with that trait.
           const scoped = effect.tag?.startsWith('TRAIT:');
           if (scoped) {
@@ -700,7 +709,7 @@ export class BattleEngine {
       if (u.targetId === target.id) u.targetId = null;
       u.attackedBy.delete(target.id);
     }
-    this.events.push({ t: this.time, type: 'DEATH', unit: target.id });
+    this.events.push({ t: this.time, type: 'DEATH', unit: target.id, killer: source.id });
 
     this.fireFor(target, 'ON_DEATH', source);
     this.fireFor(source, 'ON_KILL', target);

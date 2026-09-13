@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "rosterHash": "e577139f4ebec75f",
+  "rosterHash": "a223dc3ade5b2c43",
   "size": 60,
   "costCounts": {
     "1": 14,
@@ -31,12 +31,10 @@
     "tm_opera_o",
     "narita_brian",
     "symboli_rudolf",
-    "agnes_digital",
     "tamamo_cross",
     "biwa_hayahide",
     "mihono_bourbon",
     "agnes_tachyon",
-    "inari_one",
     "gold_city",
     "sakura_bakushin_o",
     "super_creek",
@@ -54,19 +52,20 @@
     "furioso",
     "north_flight",
     "symboli_kris_s",
+    "tanino_gimlet",
     "daiichi_ruby",
     "mejiro_ramonu",
     "ks_miracle",
     "copano_rickey",
     "hokko_tarumae",
     "duramente",
+    "cesario",
     "buena_vista",
     "orfevre",
     "gentildonna",
     "calstone_light_o",
     "durandal",
     "genuine",
-    "bubble_gum_fellow",
     "almond_eye",
     "gran_alegria",
     "chrono_genesis",
@@ -76,12 +75,11 @@
     "logotype",
     "victoire_pisa",
     "titleholder",
+    "manhattan_cafe",
     "espoir_city"
   ],
   "byCost": {
     "1": [
-      "agnes_digital",
-      "inari_one",
       "gold_city",
       "haru_urara",
       "biko_pegasus",
@@ -93,7 +91,9 @@
       "ks_miracle",
       "calstone_light_o",
       "genuine",
-      "epiphaneia"
+      "epiphaneia",
+      "titleholder",
+      "manhattan_cafe"
     ],
     "2": [
       "gold_ship",
@@ -103,13 +103,13 @@
       "nice_nature",
       "satono_diamond",
       "sakura_laurel",
+      "tanino_gimlet",
       "duramente",
+      "cesario",
       "durandal",
-      "bubble_gum_fellow",
       "marche_lorraine",
       "logotype",
-      "victoire_pisa",
-      "titleholder"
+      "victoire_pisa"
     ],
     "3": [
       "vodka",

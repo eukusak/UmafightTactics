@@ -235,14 +235,16 @@
       "index": 19,
       "name": "아그네스 디지털",
       "pattern": "seeking_bolt",
-      "skillSignature": "98807291639a679acce31516e0bce9b9236831be08e183a7e8f86a6f95031ea6",
+      "skillSignature": "3c6c96dada7d38990c58d902a8428f9915c155904a6748d29e67caaa46f1ef34",
       "referenceRasterSha256": "673f76c0674c066b61f0b0ba94653a4ba501a2c43dd346b11660660d0439a899",
       "decision": "revise",
       "status": "integrated",
       "reason": "비슷한 전방 손동작이 반복되어 조준과 단일 정밀 타격의 차이가 약함.",
       "reviewSheetPage": 2,
       "revision": "docs/art-source/motions/skill-revisions-2026-09-11/agnes_digital/review.json",
-      "runtimeSha256": "ee9a562de6408ca7c5c77792d28c4f6f848c2e2c323e7778feed5f5ddb7d4bf6"
+      "runtimeSha256": "ee9a562de6408ca7c5c77792d28c4f6f848c2e2c323e7778feed5f5ddb7d4bf6",
+      "previousAugmentPatchSkillSignature": "98807291639a679acce31516e0bce9b9236831be08e183a7e8f86a6f95031ea6",
+      "augmentPatchReview": "docs/qa/augment-motion-compatibility.json"
     },
     "seiun_sky": {
       "index": 20,
@@ -1016,13 +1018,15 @@
       "index": 82,
       "name": "타니노 김렛",
       "pattern": "disarm_cone",
-      "skillSignature": "52a8cc0d4e86c2ab926128945485067a7356a9c5ed046f5d6c88cb4c0e2b8161",
+      "skillSignature": "2c3e69425cd2995894c857fe309a4185ca5d4bca3b33975a56b90d6194ecf85c",
       "referenceRasterSha256": "d624b6fa3936e4e3619798a111c1bb6c70862045464c3ef4e9fb8d7f6ef5be9c",
       "decision": "retain",
       "status": "retained",
       "reason": "전방 지정에서 열린 손바닥 제지 자세로 전환하여 무장 해제 발동을 표현. 부채꼴 범위는 엔진 이펙트가 명확하게 표시.",
       "reviewSheetPage": 9,
-      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json",
+      "previousAugmentPatchSkillSignature": "52a8cc0d4e86c2ab926128945485067a7356a9c5ed046f5d6c88cb4c0e2b8161",
+      "augmentPatchReview": "docs/qa/augment-motion-compatibility.json"
     },
     "daiichi_ruby": {
       "index": 83,
@@ -1325,13 +1329,15 @@
       "index": 107,
       "name": "세자리오",
       "pattern": "sanctuary",
-      "skillSignature": "bcc4a82b77f7eadbc54934379cf1e5e46837c31483b6df0b46a4e8bc71cf31e3",
+      "skillSignature": "8be844c39beede3e03928653e25057b988f1cc2d5ee27e339093e070fa11647a",
       "referenceRasterSha256": "9f333f80edcda93b004dd1ec377b71c0823cc70e99389eee039cdd8db5b52b03",
       "decision": "retain",
       "status": "retained",
       "reason": "모은 손과 열린 팔을 거쳐 안정된 회수로 이어져 정화와 주변 회복의 시전 흐름에 적합.",
       "reviewSheetPage": 11,
-      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json",
+      "previousAugmentPatchSkillSignature": "bcc4a82b77f7eadbc54934379cf1e5e46837c31483b6df0b46a4e8bc71cf31e3",
+      "augmentPatchReview": "docs/qa/augment-motion-compatibility.json"
     },
     "air_messiah": {
       "index": 108,
@@ -1486,7 +1492,7 @@
       "index": 120,
       "name": "버블검 펠로",
       "pattern": "carry_charge",
-      "skillSignature": "de14838208d85b42f8e31c7555e11f0d01a09f9f0cf84ae549a9b08f71056e0a",
+      "skillSignature": "255b742297116d0c4b5e062f0a293041a8eb6cd562edbb2e9dcc85833833abaf",
       "referenceRasterSha256": "1147a956978388470005554952d22a2c0f147cbec71b87af171ccd93a15cdf7d",
       "decision": "revise",
       "status": "integrated",
@@ -1494,7 +1500,9 @@
       "reviewSheetPage": 12,
       "revision": "docs/art-source/motions/skill-revisions-2026-09-11/bubble_gum_fellow/review.json",
       "runtimeSha256": "1596ce17a4f02258a918698b347a5004767fae514883068f5bc3fc3ea7399e26",
-      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json",
+      "previousAugmentPatchSkillSignature": "de14838208d85b42f8e31c7555e11f0d01a09f9f0cf84ae549a9b08f71056e0a",
+      "augmentPatchReview": "docs/qa/augment-motion-compatibility.json"
     },
     "sakura_chitose_o": {
       "index": 121,
@@ -1569,7 +1577,7 @@
       "index": 126,
       "name": "그란 알레그리아",
       "pattern": "pursuit_flurry",
-      "skillSignature": "db31e0d4d4d5ee882cdb44764dd43f34c933d4090972e4da6d14076e45a21b6a",
+      "skillSignature": "5e134ba7ac2ef0f0fa9c0d35681fbfe188d5cab7555394469302b60a23d774d3",
       "referenceRasterSha256": "f94456207629f4cb2d55cadea43cc594ad9bcfb638a7e1c41fc28fbb99d50e26",
       "decision": "revise",
       "status": "integrated",
@@ -1577,7 +1585,9 @@
       "reviewSheetPage": 13,
       "revision": "docs/art-source/motions/skill-revisions-2026-09-11/gran_alegria/review.json",
       "runtimeSha256": "98f77dbbd14a9514ad9e1c8e0256ee41697dd078c3cd035a6000879a1daee31b",
-      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json",
+      "previousAugmentPatchSkillSignature": "db31e0d4d4d5ee882cdb44764dd43f34c933d4090972e4da6d14076e45a21b6a",
+      "augmentPatchReview": "docs/qa/augment-motion-compatibility.json"
     },
     "loves_only_you": {
       "index": 127,
@@ -1760,7 +1770,7 @@
       "index": 141,
       "name": "타이틀홀더",
       "pattern": "retaliate_storm",
-      "skillSignature": "7b9980a1aaa8d3caebb5f3aedfb37fc566701042168e2ac4d694da67e765d6a3",
+      "skillSignature": "9dfaa6bfc8dd249cc6594574bdbe21d2d56f155f835219962dec5964fa61a3ec",
       "referenceRasterSha256": "0e421077039fa8232db037adf410c860cfd0ed7885d73a47b03a006037c6591f",
       "decision": "revise",
       "status": "integrated",
@@ -1768,7 +1778,9 @@
       "reviewSheetPage": 15,
       "revision": "docs/art-source/motions/skill-revisions-2026-09-11/titleholder/review.json",
       "runtimeSha256": "51770cbc814f5dace2831305da04cb0990f10593b123f8ad0747072e15f10785",
-      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json",
+      "previousAugmentPatchSkillSignature": "7b9980a1aaa8d3caebb5f3aedfb37fc566701042168e2ac4d694da67e765d6a3",
+      "augmentPatchReview": "docs/qa/augment-motion-compatibility.json"
     },
     "phalaenopsis": {
       "index": 142,
@@ -1799,7 +1811,7 @@
       "index": 144,
       "name": "맨하탄 카페",
       "pattern": "drain_arc",
-      "skillSignature": "0f130f21c00cc0f9e918ed2b562effa5a9c9fece74c75aec6d9a7405df01887c",
+      "skillSignature": "c31ae5f24a59feec42f34218b24806f48f66159d04189b38a8053a726722a681",
       "referenceRasterSha256": "4f88d03a5ee682ba1f8232361886b970cb81b5753118910e3ae043962a8fde3e",
       "decision": "revise",
       "status": "integrated",
@@ -1807,7 +1819,9 @@
       "reviewSheetPage": 15,
       "revision": "docs/art-source/motions/skill-revisions-2026-09-11/manhattan_cafe/review.json",
       "runtimeSha256": "dc6fecf747f0ea18440a3d1e76d1891b1ef290ce03e0c3636ee4baa5bbe35c9b",
-      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json",
+      "previousAugmentPatchSkillSignature": "0f130f21c00cc0f9e918ed2b562effa5a9c9fece74c75aec6d9a7405df01887c",
+      "augmentPatchReview": "docs/qa/augment-motion-compatibility.json"
     },
     "espoir_city": {
       "index": 145,

@@ -5,7 +5,7 @@ import { useGameStore } from '../store/gameStore';
 import { getUnitDef, getUnitTraits } from '../game/engine/roster';
 import { getTrait } from '../game/engine/traits/trait-defs';
 import { rerollCost } from '../game/engine/economy';
-import { benchCapacity, sellPrice } from '../game/engine/shop';
+import { benchCapacity, sellPrice, purchaseUpgradeStar } from '../game/engine/shop';
 import { XP_PURCHASE_COST } from '../game/engine/constants';
 import { Portrait, UnitToken, costVar } from './common';
 import type { UnitInstance } from '../game/engine/state';
@@ -34,11 +34,12 @@ export function ShopRow(): JSX.Element | null {
         }
         const def = getUnitDef(slot.unitDefId);
         const affordable = player.gold >= def.cost;
+        const upgrade = purchaseUpgradeStar(player, def.id);
         const wanted = wishlist[player.seasonId ?? 's1']?.includes(def.id) ?? false;
         return (
           <button
             key={i}
-            className={`shop-card${wanted ? ' wanted' : ''}`}
+            className={`shop-card${wanted ? ' wanted' : ''}${upgrade ? ' upgradable' : ''}`}
             data-unit-def={def.id}
             style={{ borderColor: costVar(def.cost), opacity: affordable ? 1 : 0.55 }}
             onClick={() => buy(i)}
@@ -46,6 +47,7 @@ export function ShopRow(): JSX.Element | null {
             title={`${def.nameKo} — ${def.skill.displayName}\n${def.skill.description}`}
           >
             <span className="cost">{def.cost}G</span>
+            {upgrade && <span className={`shop-upgrade-badge star-${upgrade}`} aria-label={`구입 시 ${upgrade}성 합성`} title={`필드와 대기석 기물 포함 · 구입 시 ${upgrade}성 합성`}>{'★'.repeat(upgrade)} {upgrade}성 가능</span>}
             {wanted && <span className="wishlist-marker" aria-label="희망 기물" title="희망 기물">★<span className="wishlist-marker-label"> 희망 기물</span></span>}
             <div
               className="token"

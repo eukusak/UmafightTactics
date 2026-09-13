@@ -1,3 +1,4 @@
+import { getAugment } from '../game/engine/augments/augment-defs';
 import { BattleRecap } from './BattleRecap';
 import { useGameStore } from '../store/gameStore';
 import { useInteractionStore } from '../store/interactionStore';
@@ -64,7 +65,12 @@ export function DetailPanel(): JSX.Element | null {
   if (!inspection || !match) return null;
   const frame = running && frames?.length ? frames[frameAt(frames, time)] : null;
   let body: JSX.Element;
-  if (inspection.kind === 'item') body = <ItemDetail id={inspection.id} />;
+  if (inspection.kind === 'augment') {
+    const aug = getAugment(inspection.id), owner = match.players.find(p=>p.id === inspection.playerId);
+    const progress = owner?.augmentProgress?.[aug.id] ?? 0;
+    body = <div className="augment-detail"><h3>{aug.name}</h3><span className="pill">{{ S: '실버', G: '골드', P: '프리즘' }[aug.grade]} 증강</span><p>{aug.description}</p>{aug.grants?.unitId && <p className="muted">공유 풀에 재고가 없거나 대기석이 가득 차면 해당 기물 가격만큼 골드로 지급합니다.</p>}{(aug.growth || aug.rememberItem) && <p className="gold-text">영구 기록: {progress}{aug.growth ? ' / ' + aug.growth.maxStacks : ''}중첩 · 다음 전투 적용</p>}</div>;
+  }
+  else if (inspection.kind === 'item') body = <ItemDetail id={inspection.id} />;
   else if (inspection.kind === 'trait') body = <TraitDetail id={inspection.id} playerId={inspection.playerId} />;
   else if (inspection.kind === 'recap') {
     body = <BattleRecap />;

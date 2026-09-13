@@ -309,6 +309,16 @@ export type ItemDef = {
 export type AugmentGrade = 'S' | 'G' | 'P';
 
 export type AugmentDef = {
+  /** Reuse an existing icon for a related mechanic. */
+  iconId?: string;
+  filter?: { unitIds?: string[]; itemId?: string; minCost?: number; maxCost?: number; minItems?: number; maxItems?: number; noActiveTrait?: boolean };
+  activeTraitScaling?: boolean;
+  skillUpgrade?: { damageMultiplier?: number; append?: EffectDef[] };
+  growth?: { stat: keyof BattleStats; value: number; maxStacks: number; perRoundCap: number; event: 'CAST' | 'KILL' };
+  /** Team record of this item's highest stack count, kept between PvP rounds. */
+  rememberItem?: string;
+  roundReward?: { condition: 'EMPTY_BENCH' | 'FULL_BENCH' | 'WIN' | 'LOSS'; gold?: number; xp?: number };
+
   id: string;
   grade: AugmentGrade;
   name: string;
@@ -339,6 +349,8 @@ export type AugmentDef = {
   };
   /** One-shot grants handed out the moment the augment is picked. */
   grants?: {
+    unitId?: string;
+    itemId?: string;
     components?: number;
     componentChoice?: number;
     completedChoice?: number;

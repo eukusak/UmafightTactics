@@ -398,3 +398,14 @@ button.trait-row { display:flex; align-items:center; width:100%; text-align:left
 /* Remains reachable above draft, augment and battle-result overlays. */
 .solo-menu-exit { position:absolute; top:18px; right:24px; z-index:1500; }
 .solo-menu-exit button { background:#142c40; padding:10px 16px; }
+
+/* The cinematic and damage panel share an anchor, so no screen-size magic offsets. */
+.battle-lower-hud { position:absolute; left:32px; right:32px; bottom:18px; z-index:800; pointer-events:none; }
+.battle-lower-hud > .battle-damage-panel { position:relative; inset:auto; display:block; width:100%; }
+.battle-legendary-cutin { position:absolute; left:0; bottom:calc(100% + 12px); width:min(400px, 38%); height:auto; max-height:225px; object-fit:contain; object-position:left bottom; pointer-events:none; filter:drop-shadow(0 4px 12px #07182980); }
+
+.shop-upgrade-badge { position:absolute; top:48px; left:14px; z-index:3; padding:3px 5px; border:1px solid #bddcff; border-radius:4px; background:#142e4ef2; color:#d9ecff; font-size:11px; font-weight:900; white-space:nowrap; pointer-events:none; }
+.shop-upgrade-badge.star-3 { color:#ffe79e; border-color:#f8ce6d; background:#4c3713f2; }
+.shop-card.upgradable .wishlist-marker { top:6px; left:auto; right:6px; }
+.shop-card.upgradable .wishlist-marker-label { display:none; }
+.mobile .shop-upgrade-badge { top:73px; left:2px; right:2px; padding:2px 0; text-align:center; font-size:8px; }

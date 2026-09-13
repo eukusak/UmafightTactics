@@ -1268,8 +1268,8 @@
         "displayName": "아그네스 디지털 · 주력 저격 (2001 天皇賞(秋)(GI))",
         "template": "MULTI_SHOT",
         "baseValues": [
-          185,
-          205,
+          244,
+          271,
           31
         ],
         "starMultipliers": [
@@ -1283,7 +1283,7 @@
         "effects": [
           {
             "kind": "DAMAGE",
-            "value": 232,
+            "value": 306,
             "damageType": "PHYSICAL",
             "target": "HIGHEST_AD_ENEMY"
           },
@@ -1297,7 +1297,7 @@
           }
         ],
         "vfxKey": "vfx_projectile",
-        "description": "[주력 저격] 공격력이 가장 높은 적을 저격해 232 물리 피해와 공격력 15% 감소(3초). 근거: 2001 天皇賞(秋)(GI) 1위.",
+        "description": "[주력 저격] 공격력이 가장 높은 적을 저격해 306 물리 피해와 공격력 15% 감소(3초). 근거: 2001 天皇賞(秋)(GI) 1위.",
         "choreography": {
           "windup": 0.3,
           "recovery": 0.3,
@@ -1310,7 +1310,7 @@
           "motion": "STRIKE"
         }
       },
-      "skillSignature": "98807291639a679acce31516e0bce9b9236831be08e183a7e8f86a6f95031ea6",
+      "skillSignature": "3c6c96dada7d38990c58d902a8428f9915c155904a6748d29e67caaa46f1ef34",
       "basicAttack": "원거리 조준 → 발사 준비 → 투사체 방출 → 반동 회복",
       "skillPoseDraft": [
         "동일 대상에 1차 발사",
@@ -1320,7 +1320,7 @@
       ],
       "productionRule": "이 초안은 제작 완료가 아니다. 원본 -Race.png의 의상·머리·장식과 이 캐릭터의 실제 효과/대상/이동을 함께 검토하여 개별 원화를 생성하고 검수한다. 존재하지 않는 치유·소환·무기를 추가하지 않는다.",
       "status": "REVIEWED_FRAMES",
-      "reviewedPoses": "All six action rows reviewed. Row 4 preserves seeking_bolt preparation, release in column 3 and recovery; game skill data and timeline unchanged."
+      "reviewedPoses": "2026-09-13: 수치 또는 각질 VFX 키만 변경. 기존 스킬의 대상·공간 범위·효과 종류·발사 횟수·타이밍이 동일함을 비교 검수하여 기존 프레임 유지."
     },
     {
       "id": "seiun_sky",
@@ -5687,8 +5687,8 @@
         "displayName": "타니노 김렛 · 무장 해제 (2002 東京優駿(GI))",
         "template": "CONTROL",
         "baseValues": [
-          245,
-          272,
+          212,
+          235,
           31
         ],
         "starMultipliers": [
@@ -5702,7 +5702,7 @@
         "effects": [
           {
             "kind": "DAMAGE",
-            "value": 200,
+            "value": 173,
             "damageType": "MAGIC",
             "target": "LARGEST_ENEMY_CLUSTER",
             "shape": "CONE",
@@ -5720,7 +5720,7 @@
           }
         ],
         "vfxKey": "vfx_stun",
-        "description": "[무장 해제] 전방 3칸 최대 4명에게 200 마법 피해. 1.8초간 일반 공격 봉쇄, 스킬은 사용 가능. 근거: 2002 東京優駿(GI) 1위.",
+        "description": "[무장 해제] 전방 3칸 최대 4명에게 173 마법 피해. 1.8초간 일반 공격 봉쇄, 스킬은 사용 가능. 근거: 2002 東京優駿(GI) 1위.",
         "choreography": {
           "windup": 0.3,
           "recovery": 0.3,
@@ -5733,7 +5733,7 @@
           "motion": "STRIKE"
         }
       },
-      "skillSignature": "52a8cc0d4e86c2ab926128945485067a7356a9c5ed046f5d6c88cb4c0e2b8161",
+      "skillSignature": "2c3e69425cd2995894c857fe309a4185ca5d4bca3b33975a56b90d6194ecf85c",
       "basicAttack": "원거리 조준 → 발사 준비 → 투사체 방출 → 반동 회복",
       "skillPoseDraft": [
         "대상 지점 조준",
@@ -5743,7 +5743,7 @@
       ],
       "productionRule": "이 초안은 제작 완료가 아니다. 원본 -Race.png의 의상·머리·장식과 이 캐릭터의 실제 효과/대상/이동을 함께 검토하여 개별 원화를 생성하고 검수한다. 존재하지 않는 치유·소환·무기를 추가하지 않는다.",
       "status": "REVIEWED_FRAMES",
-      "reviewedPoses": "All six action rows reviewed. Row 4 preserves disarm_cone preparation, release in column 3 and recovery; game skill data and timeline unchanged."
+      "reviewedPoses": "2026-09-13: 수치 또는 각질 VFX 키만 변경. 기존 스킬의 대상·공간 범위·효과 종류·발사 횟수·타이밍이 동일함을 비교 검수하여 기존 프레임 유지."
     },
     {
       "id": "daiichi_ruby",
@@ -7401,8 +7401,8 @@
         "displayName": "세자리오 · 회복 성역 (2005 優駿牝馬(GI))",
         "template": "AURA",
         "baseValues": [
-          250,
-          278,
+          216,
+          240,
           31
         ],
         "starMultipliers": [
@@ -7416,7 +7416,7 @@
         "effects": [
           {
             "kind": "HEAL",
-            "value": 74,
+            "value": 64,
             "target": "ALL_ALLIES",
             "radius": 2,
             "maxTargets": 4,
@@ -7424,7 +7424,7 @@
           },
           {
             "kind": "HEAL",
-            "value": 74,
+            "value": 64,
             "target": "ALL_ALLIES",
             "radius": 2,
             "maxTargets": 4,
@@ -7432,7 +7432,7 @@
           },
           {
             "kind": "HEAL",
-            "value": 74,
+            "value": 64,
             "target": "ALL_ALLIES",
             "radius": 2,
             "maxTargets": 4,
@@ -7446,7 +7446,7 @@
           }
         ],
         "vfxKey": "vfx_buff",
-        "description": "[회복 성역] 2칸 내 최대 4명 아군의 제어 효과를 해제하고, 0.5초 간격으로 74씩 3회 회복. 근거: 2005 優駿牝馬(GI) 1위.",
+        "description": "[회복 성역] 2칸 내 최대 4명 아군의 제어 효과를 해제하고, 0.5초 간격으로 64씩 3회 회복. 근거: 2005 優駿牝馬(GI) 1위.",
         "choreography": {
           "windup": 0.3,
           "recovery": 0.3,
@@ -7459,7 +7459,7 @@
           "motion": "STRIKE"
         }
       },
-      "skillSignature": "bcc4a82b77f7eadbc54934379cf1e5e46837c31483b6df0b46a4e8bc71cf31e3",
+      "skillSignature": "8be844c39beede3e03928653e25057b988f1cc2d5ee27e339093e070fa11647a",
       "basicAttack": "근접 준비 → 당김 → 타격 → 회수",
       "skillPoseDraft": [
         "몸 중심에 기운 모음",
@@ -7469,7 +7469,7 @@
       ],
       "productionRule": "이 초안은 제작 완료가 아니다. 원본 -Race.png의 의상·머리·장식과 이 캐릭터의 실제 효과/대상/이동을 함께 검토하여 개별 원화를 생성하고 검수한다. 존재하지 않는 치유·소환·무기를 추가하지 않는다.",
       "status": "REVIEWED_FRAMES",
-      "reviewedPoses": "All six action rows reviewed. Row 4 preserves sanctuary preparation, release in column 3 and recovery; game skill data and timeline unchanged."
+      "reviewedPoses": "2026-09-13: 수치 또는 각질 VFX 키만 변경. 기존 스킬의 대상·공간 범위·효과 종류·발사 횟수·타이밍이 동일함을 비교 검수하여 기존 프레임 유지."
     },
     {
       "id": "air_messiah",
@@ -8299,8 +8299,8 @@
         "displayName": "버블검 펠로 · 가속 장전 (1996 天皇賞(秋)(GI))",
         "template": "MULTI_SHOT",
         "baseValues": [
-          217,
-          242,
+          252,
+          280,
           31
         ],
         "starMultipliers": [
@@ -8315,7 +8315,7 @@
           {
             "kind": "STAT_MUL",
             "stat": "attackSpeed",
-            "value": 0.477,
+            "value": 0.513,
             "duration": 4,
             "refresh": true,
             "target": "SELF"
@@ -8323,28 +8323,28 @@
           {
             "kind": "STAT_MUL",
             "stat": "attackDamage",
-            "value": 0.212,
+            "value": 0.228,
             "duration": 4,
             "refresh": true,
             "target": "SELF"
           },
           {
             "kind": "DAMAGE",
-            "value": 88,
+            "value": 102,
             "damageType": "PHYSICAL",
             "target": "CURRENT_TARGET",
             "delay": 0
           },
           {
             "kind": "DAMAGE",
-            "value": 88,
+            "value": 102,
             "damageType": "PHYSICAL",
             "target": "CURRENT_TARGET",
             "delay": 0.2
           }
         ],
         "vfxKey": "vfx_projectile",
-        "description": "[가속 장전] 4초간 공격속도 +47.7%, 공격력 +21.2%. 장전 타격으로 88 물리 피해를 2회. 근거: 1996 天皇賞(秋)(GI) 1위.",
+        "description": "[가속 장전] 4초간 공격속도 +51.3%, 공격력 +22.8%. 장전 타격으로 102 물리 피해를 2회. 근거: 1996 天皇賞(秋)(GI) 1위.",
         "choreography": {
           "windup": 0.15,
           "recovery": 0.3,
@@ -8357,7 +8357,7 @@
           "motion": "PULSE"
         }
       },
-      "skillSignature": "de14838208d85b42f8e31c7555e11f0d01a09f9f0cf84ae549a9b08f71056e0a",
+      "skillSignature": "255b742297116d0c4b5e062f0a293041a8eb6cd562edbb2e9dcc85833833abaf",
       "basicAttack": "원거리 조준 → 발사 준비 → 투사체 방출 → 반동 회복",
       "skillPoseDraft": [
         "동일 대상에 1차 발사",
@@ -8367,7 +8367,7 @@
       ],
       "productionRule": "이 초안은 제작 완료가 아니다. 원본 -Race.png의 의상·머리·장식과 이 캐릭터의 실제 효과/대상/이동을 함께 검토하여 개별 원화를 생성하고 검수한다. 존재하지 않는 치유·소환·무기를 추가하지 않는다.",
       "status": "REVIEWED_FRAMES",
-      "reviewedPoses": "pull hands to the chest charging two small crests; draw one arm back and brace the other while crests enter the gloves; deliver a straight first strike followed by a visible second trailing strike accent; return to an empowered ready stance"
+      "reviewedPoses": "2026-09-13: 수치 또는 각질 VFX 키만 변경. 기존 스킬의 대상·공간 범위·효과 종류·발사 횟수·타이밍이 동일함을 비교 검수하여 기존 프레임 유지."
     },
     {
       "id": "sakura_chitose_o",
@@ -8789,7 +8789,7 @@
             "target": "SELF"
           }
         ],
-        "vfxKey": "vfx_dash_nige",
+        "vfxKey": "vfx_dash_senko",
         "description": "[추격 연타] 돌진 후 한 적에게 128 물리 피해를 3회, 4초간 공격속도 +24.8%. 대상 사망 시 남은 타격은 재탐색. 근거: 2020 マイルチャンピオンS(GI) 1위.",
         "choreography": {
           "windup": 0.3,
@@ -8803,7 +8803,7 @@
           "motion": "PULSE"
         }
       },
-      "skillSignature": "db31e0d4d4d5ee882cdb44764dd43f34c933d4090972e4da6d14076e45a21b6a",
+      "skillSignature": "5e134ba7ac2ef0f0fa9c0d35681fbfe188d5cab7555394469302b60a23d774d3",
       "basicAttack": "원거리 조준 → 발사 준비 → 투사체 방출 → 반동 회복",
       "skillPoseDraft": [
         "낮게 웅크린 출발",
@@ -8813,7 +8813,7 @@
       ],
       "productionRule": "이 초안은 제작 완료가 아니다. 원본 -Race.png의 의상·머리·장식과 이 캐릭터의 실제 효과/대상/이동을 함께 검토하여 개별 원화를 생성하고 검수한다. 존재하지 않는 치유·소환·무기를 추가하지 않는다.",
       "status": "REVIEWED_FRAMES",
-      "reviewedPoses": "launch forward from low crouch; plant the lead foot and deliver a jab; twist into a rising follow-up strike with three short impact accents; recoil into a ready guard"
+      "reviewedPoses": "2026-09-13: 수치 또는 각질 VFX 키만 변경. 기존 스킬의 대상·공간 범위·효과 종류·발사 횟수·타이밍이 동일함을 비교 검수하여 기존 프레임 유지."
     },
     {
       "id": "loves_only_you",
@@ -9826,8 +9826,8 @@
         "displayName": "타이틀홀더 · 반격 폭풍 (2022 宝塚記念(GI))",
         "template": "AURA",
         "baseValues": [
-          210,
-          234,
+          184,
+          205,
           31
         ],
         "starMultipliers": [
@@ -9841,7 +9841,7 @@
         "effects": [
           {
             "kind": "DAMAGE",
-            "value": 69,
+            "value": 60,
             "damageType": "MAGIC",
             "target": "ALL_ENEMIES",
             "radius": 2,
@@ -9851,7 +9851,7 @@
           },
           {
             "kind": "DAMAGE",
-            "value": 69,
+            "value": 60,
             "damageType": "MAGIC",
             "target": "ALL_ENEMIES",
             "radius": 2,
@@ -9861,7 +9861,7 @@
           },
           {
             "kind": "DAMAGE",
-            "value": 69,
+            "value": 60,
             "damageType": "MAGIC",
             "target": "ALL_ENEMIES",
             "radius": 2,
@@ -9871,13 +9871,13 @@
           },
           {
             "kind": "SHIELD_FLAT",
-            "value": 137,
+            "value": 120,
             "duration": 4,
             "target": "SELF"
           }
         ],
         "vfxKey": "vfx_buff",
-        "description": "[반격 폭풍] 137 보호막을 얻고 주변 2칸 최대 4명에게 0.4초 간격으로 69 마법 피해 3회. 체력 피해의 15% 회복. 근거: 2022 宝塚記念(GI) 1위.",
+        "description": "[반격 폭풍] 120 보호막을 얻고 주변 2칸 최대 4명에게 0.4초 간격으로 60 마법 피해 3회. 체력 피해의 15% 회복. 근거: 2022 宝塚記念(GI) 1위.",
         "choreography": {
           "windup": 0.3,
           "recovery": 0.3,
@@ -9890,7 +9890,7 @@
           "motion": "CHANNEL"
         }
       },
-      "skillSignature": "7b9980a1aaa8d3caebb5f3aedfb37fc566701042168e2ac4d694da67e765d6a3",
+      "skillSignature": "9dfaa6bfc8dd249cc6594574bdbe21d2d56f155f835219962dec5964fa61a3ec",
       "basicAttack": "근접 준비 → 당김 → 타격 → 회수",
       "skillPoseDraft": [
         "몸 중심에 기운 모음",
@@ -9900,7 +9900,7 @@
       ],
       "productionRule": "이 초안은 제작 완료가 아니다. 원본 -Race.png의 의상·머리·장식과 이 캐릭터의 실제 효과/대상/이동을 함께 검토하여 개별 원화를 생성하고 검수한다. 존재하지 않는 치유·소환·무기를 추가하지 않는다.",
       "status": "REVIEWED_FRAMES",
-      "reviewedPoses": "brace forearms tightly behind a small guard crest; pivot hips and open one arm to start a circular gust; hold a wide grounded stance sustaining three short orbiting gust arcs; fold hands back as the gust ends"
+      "reviewedPoses": "2026-09-13: 수치 또는 각질 VFX 키만 변경. 기존 스킬의 대상·공간 범위·효과 종류·발사 횟수·타이밍이 동일함을 비교 검수하여 기존 프레임 유지."
     },
     {
       "id": "phalaenopsis",
@@ -10063,8 +10063,8 @@
         "displayName": "맨하탄 카페 · 흡수 휩쓸기 (2001 有馬記念(GI))",
         "template": "DASH_LINE",
         "baseValues": [
-          203,
-          225,
+          178,
+          198,
           30
         ],
         "starMultipliers": [
@@ -10083,7 +10083,7 @@
           },
           {
             "kind": "DAMAGE",
-            "value": 182,
+            "value": 160,
             "damageType": "PHYSICAL",
             "target": "CURRENT_TARGET",
             "shape": "CONE",
@@ -10093,7 +10093,7 @@
           }
         ],
         "vfxKey": "vfx_dash_sashi",
-        "description": "[흡수 휩쓸기] 돌진 후 전방 3칸 부채꼴의 최대 4명에게 182 물리 피해. 실제 체력 피해의 25% 회복. 근거: 2001 有馬記念(GI) 1위.",
+        "description": "[흡수 휩쓸기] 돌진 후 전방 3칸 부채꼴의 최대 4명에게 160 물리 피해. 실제 체력 피해의 25% 회복. 근거: 2001 有馬記念(GI) 1위.",
         "choreography": {
           "windup": 0.45,
           "recovery": 0.3,
@@ -10106,7 +10106,7 @@
           "motion": "STRIKE"
         }
       },
-      "skillSignature": "0f130f21c00cc0f9e918ed2b562effa5a9c9fece74c75aec6d9a7405df01887c",
+      "skillSignature": "c31ae5f24a59feec42f34218b24806f48f66159d04189b38a8053a726722a681",
       "basicAttack": "근접 준비 → 당김 → 타격 → 회수",
       "skillPoseDraft": [
         "낮게 웅크린 출발",
@@ -10116,7 +10116,7 @@
       ],
       "productionRule": "이 초안은 제작 완료가 아니다. 원본 -Race.png의 의상·머리·장식과 이 캐릭터의 실제 효과/대상/이동을 함께 검토하여 개별 원화를 생성하고 검수한다. 존재하지 않는 치유·소환·무기를 추가하지 않는다.",
       "status": "REVIEWED_FRAMES",
-      "reviewedPoses": "dash from a low starting pose; plant feet and wind one arm across the body; sweep a broad short crescent across the front; pull the arm back to the heart with three inward motes"
+      "reviewedPoses": "2026-09-13: 수치 또는 각질 VFX 키만 변경. 기존 스킬의 대상·공간 범위·효과 종류·발사 횟수·타이밍이 동일함을 비교 검수하여 기존 프레임 유지."
     },
     {
       "id": "espoir_city",

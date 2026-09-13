@@ -151,8 +151,8 @@ for (const e of emblemItems) check(traitIds.has(e.grantsTrait!), `${e.id} grants
 check(COMPLETED_ITEM_DEFS.filter((i) => i.tactician).length === 3, 'tactician items != 3');
 
 // ----------------------------------------------------------------- augments
-check(AUGMENT_DEFS.length === 48, `augments ${AUGMENT_DEFS.length} != 48`);
-check(new Set(AUGMENT_DEFS.map((a) => a.id)).size === 48, 'duplicate augment ids');
+check(AUGMENT_DEFS.length >= 84, 'augment expansion incomplete');
+check(new Set(AUGMENT_DEFS.map((a) => a.id)).size === AUGMENT_DEFS.length, 'duplicate augment ids');
 for (const grade of ['S', 'G', 'P'] as const) {
   const n = AUGMENT_DEFS.filter((a) => a.grade === grade).length;
   check(n >= 3, `grade ${grade} has only ${n} augments; an offer of 3 would repeat`);
@@ -185,7 +185,7 @@ if (!manifestParsed.success) {
   check(m.characters.filter((c) => c.cutinRequired).length === 8, 'manifest must mark exactly 8 cut-ins');
   check(m.items.length === 65, `manifest items ${m.items.length} != 65`);
   check(m.traits.length === 24, `manifest traits ${m.traits.length} != 24`);
-  check(m.augments.length === 48, `manifest augments ${m.augments.length} != 48`);
+  check(m.augments.length === new Set(AUGMENT_DEFS.map(a=>a.iconId ?? a.id)).size, 'augment icon manifest mismatch');
   check(m.status.length === 24, `manifest status icons ${m.status.length} != 24`);
   check(m.vfx.length === 24, `manifest vfx ${m.vfx.length} != 24`);
   check(m.starVfx.length === 3, `manifest star vfx ${m.starVfx.length} != 3`);
@@ -225,5 +225,5 @@ if (failures.length) {
   process.exit(1);
 }
 console.log(
-  `data:validate — OK (145 units / 5 seasons × 60 / ${COST_UNIT_COUNTS[1]}-${COST_UNIT_COUNTS[2]}-${COST_UNIT_COUNTS[3]}-${COST_UNIT_COUNTS[4]}-${COST_UNIT_COUNTS[5]} costs / ${ALL_ITEM_DEFS.length} items / 24 shared + 20 seasonal traits / 48 augments)`,
+  `data:validate — OK (145 units / 5 seasons × 60 / ${COST_UNIT_COUNTS[1]}-${COST_UNIT_COUNTS[2]}-${COST_UNIT_COUNTS[3]}-${COST_UNIT_COUNTS[4]}-${COST_UNIT_COUNTS[5]} costs / ${ALL_ITEM_DEFS.length} items / 24 shared + 20 seasonal traits / ${AUGMENT_DEFS.length} augments)`,
 );

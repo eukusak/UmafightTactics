@@ -1,0 +1,863 @@
+{
+  "date": "2026-09-13",
+  "changes": [
+    {
+      "id": "agnes_digital",
+      "oldCost": 1,
+      "newCost": 3,
+      "before": {
+        "id": "skill_agnes_digital",
+        "displayName": "아그네스 디지털 · 주력 저격 (2001 天皇賞(秋)(GI))",
+        "template": "MULTI_SHOT",
+        "baseValues": [
+          185,
+          205,
+          31
+        ],
+        "starMultipliers": [
+          1,
+          1.45,
+          2.2
+        ],
+        "damageType": "PHYSICAL",
+        "targetRule": "CURRENT_TARGET",
+        "manaCost": 70,
+        "effects": [
+          {
+            "kind": "DAMAGE",
+            "value": 232,
+            "damageType": "PHYSICAL",
+            "target": "HIGHEST_AD_ENEMY"
+          },
+          {
+            "kind": "STAT_MUL",
+            "stat": "attackDamage",
+            "value": -0.15,
+            "duration": 3,
+            "refresh": true,
+            "target": "HIGHEST_AD_ENEMY"
+          }
+        ],
+        "vfxKey": "vfx_projectile",
+        "description": "[주력 저격] 공격력이 가장 높은 적을 저격해 232 물리 피해와 공격력 15% 감소(3초). 근거: 2001 天皇賞(秋)(GI) 1위.",
+        "choreography": {
+          "windup": 0.3,
+          "recovery": 0.3,
+          "pulseInterval": 0.2,
+          "color": "#d5a4ff",
+          "variant": "seeking_bolt",
+          "accent": "#b6c6ff",
+          "emblem": 18,
+          "label": "주력 저격",
+          "motion": "STRIKE"
+        }
+      },
+      "after": {
+        "id": "skill_agnes_digital",
+        "displayName": "아그네스 디지털 · 주력 저격 (2001 天皇賞(秋)(GI))",
+        "template": "MULTI_SHOT",
+        "baseValues": [
+          244,
+          271,
+          31
+        ],
+        "starMultipliers": [
+          1,
+          1.45,
+          2.2
+        ],
+        "damageType": "PHYSICAL",
+        "targetRule": "CURRENT_TARGET",
+        "manaCost": 70,
+        "effects": [
+          {
+            "kind": "DAMAGE",
+            "value": 306,
+            "damageType": "PHYSICAL",
+            "target": "HIGHEST_AD_ENEMY"
+          },
+          {
+            "kind": "STAT_MUL",
+            "stat": "attackDamage",
+            "value": -0.15,
+            "duration": 3,
+            "refresh": true,
+            "target": "HIGHEST_AD_ENEMY"
+          }
+        ],
+        "vfxKey": "vfx_projectile",
+        "description": "[주력 저격] 공격력이 가장 높은 적을 저격해 306 물리 피해와 공격력 15% 감소(3초). 근거: 2001 天皇賞(秋)(GI) 1위.",
+        "choreography": {
+          "windup": 0.3,
+          "recovery": 0.3,
+          "pulseInterval": 0.2,
+          "color": "#d5a4ff",
+          "variant": "seeking_bolt",
+          "accent": "#b6c6ff",
+          "emblem": 18,
+          "label": "주력 저격",
+          "motion": "STRIKE"
+        }
+      },
+      "decision": "Retain existing raster: body motion, targeting and timeline unchanged; only numbers or running-style VFX key changed."
+    },
+    {
+      "id": "tanino_gimlet",
+      "oldCost": 3,
+      "newCost": 2,
+      "before": {
+        "id": "skill_tanino_gimlet",
+        "displayName": "타니노 김렛 · 무장 해제 (2002 東京優駿(GI))",
+        "template": "CONTROL",
+        "baseValues": [
+          245,
+          272,
+          31
+        ],
+        "starMultipliers": [
+          1,
+          1.45,
+          2.2
+        ],
+        "damageType": "MAGIC",
+        "targetRule": "LARGEST_ENEMY_CLUSTER",
+        "manaCost": 90,
+        "effects": [
+          {
+            "kind": "DAMAGE",
+            "value": 200,
+            "damageType": "MAGIC",
+            "target": "LARGEST_ENEMY_CLUSTER",
+            "shape": "CONE",
+            "range": 3,
+            "maxTargets": 4
+          },
+          {
+            "kind": "APPLY_STATUS",
+            "status": "DISARM",
+            "duration": 1.8,
+            "target": "LARGEST_ENEMY_CLUSTER",
+            "shape": "CONE",
+            "range": 3,
+            "maxTargets": 4
+          }
+        ],
+        "vfxKey": "vfx_stun",
+        "description": "[무장 해제] 전방 3칸 최대 4명에게 200 마법 피해. 1.8초간 일반 공격 봉쇄, 스킬은 사용 가능. 근거: 2002 東京優駿(GI) 1위.",
+        "choreography": {
+          "windup": 0.3,
+          "recovery": 0.3,
+          "pulseInterval": 0.2,
+          "color": "#ffc974",
+          "variant": "disarm_cone",
+          "accent": "#ff96ac",
+          "emblem": 81,
+          "label": "무장 해제",
+          "motion": "STRIKE"
+        }
+      },
+      "after": {
+        "id": "skill_tanino_gimlet",
+        "displayName": "타니노 김렛 · 무장 해제 (2002 東京優駿(GI))",
+        "template": "CONTROL",
+        "baseValues": [
+          212,
+          235,
+          31
+        ],
+        "starMultipliers": [
+          1,
+          1.45,
+          2.2
+        ],
+        "damageType": "MAGIC",
+        "targetRule": "LARGEST_ENEMY_CLUSTER",
+        "manaCost": 90,
+        "effects": [
+          {
+            "kind": "DAMAGE",
+            "value": 173,
+            "damageType": "MAGIC",
+            "target": "LARGEST_ENEMY_CLUSTER",
+            "shape": "CONE",
+            "range": 3,
+            "maxTargets": 4
+          },
+          {
+            "kind": "APPLY_STATUS",
+            "status": "DISARM",
+            "duration": 1.8,
+            "target": "LARGEST_ENEMY_CLUSTER",
+            "shape": "CONE",
+            "range": 3,
+            "maxTargets": 4
+          }
+        ],
+        "vfxKey": "vfx_stun",
+        "description": "[무장 해제] 전방 3칸 최대 4명에게 173 마법 피해. 1.8초간 일반 공격 봉쇄, 스킬은 사용 가능. 근거: 2002 東京優駿(GI) 1위.",
+        "choreography": {
+          "windup": 0.3,
+          "recovery": 0.3,
+          "pulseInterval": 0.2,
+          "color": "#ffc974",
+          "variant": "disarm_cone",
+          "accent": "#ff96ac",
+          "emblem": 81,
+          "label": "무장 해제",
+          "motion": "STRIKE"
+        }
+      },
+      "decision": "Retain existing raster: body motion, targeting and timeline unchanged; only numbers or running-style VFX key changed."
+    },
+    {
+      "id": "cesario",
+      "oldCost": 3,
+      "newCost": 2,
+      "before": {
+        "id": "skill_cesario",
+        "displayName": "세자리오 · 회복 성역 (2005 優駿牝馬(GI))",
+        "template": "AURA",
+        "baseValues": [
+          250,
+          278,
+          31
+        ],
+        "starMultipliers": [
+          1,
+          1.45,
+          2.2
+        ],
+        "damageType": "NONE",
+        "targetRule": "SELF",
+        "manaCost": 90,
+        "effects": [
+          {
+            "kind": "HEAL",
+            "value": 74,
+            "target": "ALL_ALLIES",
+            "radius": 2,
+            "maxTargets": 4,
+            "delay": 0
+          },
+          {
+            "kind": "HEAL",
+            "value": 74,
+            "target": "ALL_ALLIES",
+            "radius": 2,
+            "maxTargets": 4,
+            "delay": 0.5
+          },
+          {
+            "kind": "HEAL",
+            "value": 74,
+            "target": "ALL_ALLIES",
+            "radius": 2,
+            "maxTargets": 4,
+            "delay": 1
+          },
+          {
+            "kind": "CLEANSE",
+            "target": "ALL_ALLIES",
+            "radius": 2,
+            "maxTargets": 4
+          }
+        ],
+        "vfxKey": "vfx_buff",
+        "description": "[회복 성역] 2칸 내 최대 4명 아군의 제어 효과를 해제하고, 0.5초 간격으로 74씩 3회 회복. 근거: 2005 優駿牝馬(GI) 1위.",
+        "choreography": {
+          "windup": 0.3,
+          "recovery": 0.3,
+          "pulseInterval": 0.2,
+          "color": "#d5a4ff",
+          "variant": "sanctuary",
+          "accent": "#b6c6ff",
+          "emblem": 106,
+          "label": "회복 성역",
+          "motion": "STRIKE"
+        }
+      },
+      "after": {
+        "id": "skill_cesario",
+        "displayName": "세자리오 · 회복 성역 (2005 優駿牝馬(GI))",
+        "template": "AURA",
+        "baseValues": [
+          216,
+          240,
+          31
+        ],
+        "starMultipliers": [
+          1,
+          1.45,
+          2.2
+        ],
+        "damageType": "NONE",
+        "targetRule": "SELF",
+        "manaCost": 90,
+        "effects": [
+          {
+            "kind": "HEAL",
+            "value": 64,
+            "target": "ALL_ALLIES",
+            "radius": 2,
+            "maxTargets": 4,
+            "delay": 0
+          },
+          {
+            "kind": "HEAL",
+            "value": 64,
+            "target": "ALL_ALLIES",
+            "radius": 2,
+            "maxTargets": 4,
+            "delay": 0.5
+          },
+          {
+            "kind": "HEAL",
+            "value": 64,
+            "target": "ALL_ALLIES",
+            "radius": 2,
+            "maxTargets": 4,
+            "delay": 1
+          },
+          {
+            "kind": "CLEANSE",
+            "target": "ALL_ALLIES",
+            "radius": 2,
+            "maxTargets": 4
+          }
+        ],
+        "vfxKey": "vfx_buff",
+        "description": "[회복 성역] 2칸 내 최대 4명 아군의 제어 효과를 해제하고, 0.5초 간격으로 64씩 3회 회복. 근거: 2005 優駿牝馬(GI) 1위.",
+        "choreography": {
+          "windup": 0.3,
+          "recovery": 0.3,
+          "pulseInterval": 0.2,
+          "color": "#d5a4ff",
+          "variant": "sanctuary",
+          "accent": "#b6c6ff",
+          "emblem": 106,
+          "label": "회복 성역",
+          "motion": "STRIKE"
+        }
+      },
+      "decision": "Retain existing raster: body motion, targeting and timeline unchanged; only numbers or running-style VFX key changed."
+    },
+    {
+      "id": "bubble_gum_fellow",
+      "oldCost": 2,
+      "newCost": 3,
+      "before": {
+        "id": "skill_bubble_gum_fellow",
+        "displayName": "버블검 펠로 · 가속 장전 (1996 天皇賞(秋)(GI))",
+        "template": "MULTI_SHOT",
+        "baseValues": [
+          217,
+          242,
+          31
+        ],
+        "starMultipliers": [
+          1,
+          1.45,
+          2.2
+        ],
+        "damageType": "PHYSICAL",
+        "targetRule": "CURRENT_TARGET",
+        "manaCost": 70,
+        "effects": [
+          {
+            "kind": "STAT_MUL",
+            "stat": "attackSpeed",
+            "value": 0.477,
+            "duration": 4,
+            "refresh": true,
+            "target": "SELF"
+          },
+          {
+            "kind": "STAT_MUL",
+            "stat": "attackDamage",
+            "value": 0.212,
+            "duration": 4,
+            "refresh": true,
+            "target": "SELF"
+          },
+          {
+            "kind": "DAMAGE",
+            "value": 88,
+            "damageType": "PHYSICAL",
+            "target": "CURRENT_TARGET",
+            "delay": 0
+          },
+          {
+            "kind": "DAMAGE",
+            "value": 88,
+            "damageType": "PHYSICAL",
+            "target": "CURRENT_TARGET",
+            "delay": 0.2
+          }
+        ],
+        "vfxKey": "vfx_projectile",
+        "description": "[가속 장전] 4초간 공격속도 +47.7%, 공격력 +21.2%. 장전 타격으로 88 물리 피해를 2회. 근거: 1996 天皇賞(秋)(GI) 1위.",
+        "choreography": {
+          "windup": 0.15,
+          "recovery": 0.3,
+          "pulseInterval": 0.2,
+          "color": "#9ce4d9",
+          "variant": "carry_charge",
+          "accent": "#d5a4ff",
+          "emblem": 119,
+          "label": "가속 장전",
+          "motion": "PULSE"
+        }
+      },
+      "after": {
+        "id": "skill_bubble_gum_fellow",
+        "displayName": "버블검 펠로 · 가속 장전 (1996 天皇賞(秋)(GI))",
+        "template": "MULTI_SHOT",
+        "baseValues": [
+          252,
+          280,
+          31
+        ],
+        "starMultipliers": [
+          1,
+          1.45,
+          2.2
+        ],
+        "damageType": "PHYSICAL",
+        "targetRule": "CURRENT_TARGET",
+        "manaCost": 70,
+        "effects": [
+          {
+            "kind": "STAT_MUL",
+            "stat": "attackSpeed",
+            "value": 0.513,
+            "duration": 4,
+            "refresh": true,
+            "target": "SELF"
+          },
+          {
+            "kind": "STAT_MUL",
+            "stat": "attackDamage",
+            "value": 0.228,
+            "duration": 4,
+            "refresh": true,
+            "target": "SELF"
+          },
+          {
+            "kind": "DAMAGE",
+            "value": 102,
+            "damageType": "PHYSICAL",
+            "target": "CURRENT_TARGET",
+            "delay": 0
+          },
+          {
+            "kind": "DAMAGE",
+            "value": 102,
+            "damageType": "PHYSICAL",
+            "target": "CURRENT_TARGET",
+            "delay": 0.2
+          }
+        ],
+        "vfxKey": "vfx_projectile",
+        "description": "[가속 장전] 4초간 공격속도 +51.3%, 공격력 +22.8%. 장전 타격으로 102 물리 피해를 2회. 근거: 1996 天皇賞(秋)(GI) 1위.",
+        "choreography": {
+          "windup": 0.15,
+          "recovery": 0.3,
+          "pulseInterval": 0.2,
+          "color": "#9ce4d9",
+          "variant": "carry_charge",
+          "accent": "#d5a4ff",
+          "emblem": 119,
+          "label": "가속 장전",
+          "motion": "PULSE"
+        }
+      },
+      "decision": "Retain existing raster: body motion, targeting and timeline unchanged; only numbers or running-style VFX key changed."
+    },
+    {
+      "id": "gran_alegria",
+      "oldCost": 4,
+      "newCost": 4,
+      "before": {
+        "id": "skill_gran_alegria",
+        "displayName": "그란 알레그리아 · 추격 연타 (2020 マイルチャンピオンS(GI))",
+        "template": "DASH_LINE",
+        "baseValues": [
+          304,
+          338,
+          32
+        ],
+        "starMultipliers": [
+          1,
+          1.45,
+          3.6
+        ],
+        "damageType": "PHYSICAL",
+        "targetRule": "CURRENT_TARGET",
+        "manaCost": 70,
+        "effects": [
+          {
+            "kind": "DASH",
+            "value": 3,
+            "target": "CURRENT_TARGET"
+          },
+          {
+            "kind": "DAMAGE",
+            "value": 128,
+            "damageType": "PHYSICAL",
+            "target": "CURRENT_TARGET",
+            "delay": 0
+          },
+          {
+            "kind": "DAMAGE",
+            "value": 128,
+            "damageType": "PHYSICAL",
+            "target": "CURRENT_TARGET",
+            "delay": 0.2
+          },
+          {
+            "kind": "DAMAGE",
+            "value": 128,
+            "damageType": "PHYSICAL",
+            "target": "CURRENT_TARGET",
+            "delay": 0.4
+          },
+          {
+            "kind": "STAT_MUL",
+            "stat": "attackSpeed",
+            "value": 0.248,
+            "duration": 4,
+            "refresh": true,
+            "target": "SELF"
+          }
+        ],
+        "vfxKey": "vfx_dash_nige",
+        "description": "[추격 연타] 돌진 후 한 적에게 128 물리 피해를 3회, 4초간 공격속도 +24.8%. 대상 사망 시 남은 타격은 재탐색. 근거: 2020 マイルチャンピオンS(GI) 1위.",
+        "choreography": {
+          "windup": 0.3,
+          "recovery": 0.3,
+          "pulseInterval": 0.2,
+          "color": "#b6c6ff",
+          "variant": "pursuit_flurry",
+          "accent": "#8de2ff",
+          "emblem": 125,
+          "label": "추격 연타",
+          "motion": "PULSE"
+        }
+      },
+      "after": {
+        "id": "skill_gran_alegria",
+        "displayName": "그란 알레그리아 · 추격 연타 (2020 マイルチャンピオンS(GI))",
+        "template": "DASH_LINE",
+        "baseValues": [
+          304,
+          338,
+          32
+        ],
+        "starMultipliers": [
+          1,
+          1.45,
+          3.6
+        ],
+        "damageType": "PHYSICAL",
+        "targetRule": "CURRENT_TARGET",
+        "manaCost": 70,
+        "effects": [
+          {
+            "kind": "DASH",
+            "value": 3,
+            "target": "CURRENT_TARGET"
+          },
+          {
+            "kind": "DAMAGE",
+            "value": 128,
+            "damageType": "PHYSICAL",
+            "target": "CURRENT_TARGET",
+            "delay": 0
+          },
+          {
+            "kind": "DAMAGE",
+            "value": 128,
+            "damageType": "PHYSICAL",
+            "target": "CURRENT_TARGET",
+            "delay": 0.2
+          },
+          {
+            "kind": "DAMAGE",
+            "value": 128,
+            "damageType": "PHYSICAL",
+            "target": "CURRENT_TARGET",
+            "delay": 0.4
+          },
+          {
+            "kind": "STAT_MUL",
+            "stat": "attackSpeed",
+            "value": 0.248,
+            "duration": 4,
+            "refresh": true,
+            "target": "SELF"
+          }
+        ],
+        "vfxKey": "vfx_dash_senko",
+        "description": "[추격 연타] 돌진 후 한 적에게 128 물리 피해를 3회, 4초간 공격속도 +24.8%. 대상 사망 시 남은 타격은 재탐색. 근거: 2020 マイルチャンピオンS(GI) 1위.",
+        "choreography": {
+          "windup": 0.3,
+          "recovery": 0.3,
+          "pulseInterval": 0.2,
+          "color": "#b6c6ff",
+          "variant": "pursuit_flurry",
+          "accent": "#8de2ff",
+          "emblem": 125,
+          "label": "추격 연타",
+          "motion": "PULSE"
+        }
+      },
+      "decision": "Retain existing raster: body motion, targeting and timeline unchanged; only numbers or running-style VFX key changed."
+    },
+    {
+      "id": "titleholder",
+      "oldCost": 2,
+      "newCost": 1,
+      "before": {
+        "id": "skill_titleholder",
+        "displayName": "타이틀홀더 · 반격 폭풍 (2022 宝塚記念(GI))",
+        "template": "AURA",
+        "baseValues": [
+          210,
+          234,
+          31
+        ],
+        "starMultipliers": [
+          1,
+          1.45,
+          2.2
+        ],
+        "damageType": "NONE",
+        "targetRule": "SELF",
+        "manaCost": 90,
+        "effects": [
+          {
+            "kind": "DAMAGE",
+            "value": 69,
+            "damageType": "MAGIC",
+            "target": "ALL_ENEMIES",
+            "radius": 2,
+            "maxTargets": 4,
+            "leech": 0.15,
+            "delay": 0
+          },
+          {
+            "kind": "DAMAGE",
+            "value": 69,
+            "damageType": "MAGIC",
+            "target": "ALL_ENEMIES",
+            "radius": 2,
+            "maxTargets": 4,
+            "leech": 0.15,
+            "delay": 0.4
+          },
+          {
+            "kind": "DAMAGE",
+            "value": 69,
+            "damageType": "MAGIC",
+            "target": "ALL_ENEMIES",
+            "radius": 2,
+            "maxTargets": 4,
+            "leech": 0.15,
+            "delay": 0.8
+          },
+          {
+            "kind": "SHIELD_FLAT",
+            "value": 137,
+            "duration": 4,
+            "target": "SELF"
+          }
+        ],
+        "vfxKey": "vfx_buff",
+        "description": "[반격 폭풍] 137 보호막을 얻고 주변 2칸 최대 4명에게 0.4초 간격으로 69 마법 피해 3회. 체력 피해의 15% 회복. 근거: 2022 宝塚記念(GI) 1위.",
+        "choreography": {
+          "windup": 0.3,
+          "recovery": 0.3,
+          "pulseInterval": 0.2,
+          "color": "#ff96ac",
+          "variant": "retaliate_storm",
+          "accent": "#9ce4d9",
+          "emblem": 140,
+          "label": "반격 폭풍",
+          "motion": "CHANNEL"
+        }
+      },
+      "after": {
+        "id": "skill_titleholder",
+        "displayName": "타이틀홀더 · 반격 폭풍 (2022 宝塚記念(GI))",
+        "template": "AURA",
+        "baseValues": [
+          184,
+          205,
+          31
+        ],
+        "starMultipliers": [
+          1,
+          1.45,
+          2.2
+        ],
+        "damageType": "NONE",
+        "targetRule": "SELF",
+        "manaCost": 90,
+        "effects": [
+          {
+            "kind": "DAMAGE",
+            "value": 60,
+            "damageType": "MAGIC",
+            "target": "ALL_ENEMIES",
+            "radius": 2,
+            "maxTargets": 4,
+            "leech": 0.15,
+            "delay": 0
+          },
+          {
+            "kind": "DAMAGE",
+            "value": 60,
+            "damageType": "MAGIC",
+            "target": "ALL_ENEMIES",
+            "radius": 2,
+            "maxTargets": 4,
+            "leech": 0.15,
+            "delay": 0.4
+          },
+          {
+            "kind": "DAMAGE",
+            "value": 60,
+            "damageType": "MAGIC",
+            "target": "ALL_ENEMIES",
+            "radius": 2,
+            "maxTargets": 4,
+            "leech": 0.15,
+            "delay": 0.8
+          },
+          {
+            "kind": "SHIELD_FLAT",
+            "value": 120,
+            "duration": 4,
+            "target": "SELF"
+          }
+        ],
+        "vfxKey": "vfx_buff",
+        "description": "[반격 폭풍] 120 보호막을 얻고 주변 2칸 최대 4명에게 0.4초 간격으로 60 마법 피해 3회. 체력 피해의 15% 회복. 근거: 2022 宝塚記念(GI) 1위.",
+        "choreography": {
+          "windup": 0.3,
+          "recovery": 0.3,
+          "pulseInterval": 0.2,
+          "color": "#ff96ac",
+          "variant": "retaliate_storm",
+          "accent": "#9ce4d9",
+          "emblem": 140,
+          "label": "반격 폭풍",
+          "motion": "CHANNEL"
+        }
+      },
+      "decision": "Retain existing raster: body motion, targeting and timeline unchanged; only numbers or running-style VFX key changed."
+    },
+    {
+      "id": "manhattan_cafe",
+      "oldCost": 2,
+      "newCost": 1,
+      "before": {
+        "id": "skill_manhattan_cafe",
+        "displayName": "맨하탄 카페 · 흡수 휩쓸기 (2001 有馬記念(GI))",
+        "template": "DASH_LINE",
+        "baseValues": [
+          203,
+          225,
+          30
+        ],
+        "starMultipliers": [
+          1,
+          1.45,
+          2.2
+        ],
+        "damageType": "PHYSICAL",
+        "targetRule": "CURRENT_TARGET",
+        "manaCost": 80,
+        "effects": [
+          {
+            "kind": "DASH",
+            "value": 3,
+            "target": "CURRENT_TARGET"
+          },
+          {
+            "kind": "DAMAGE",
+            "value": 182,
+            "damageType": "PHYSICAL",
+            "target": "CURRENT_TARGET",
+            "shape": "CONE",
+            "range": 3,
+            "maxTargets": 4,
+            "leech": 0.25
+          }
+        ],
+        "vfxKey": "vfx_dash_sashi",
+        "description": "[흡수 휩쓸기] 돌진 후 전방 3칸 부채꼴의 최대 4명에게 182 물리 피해. 실제 체력 피해의 25% 회복. 근거: 2001 有馬記念(GI) 1위.",
+        "choreography": {
+          "windup": 0.45,
+          "recovery": 0.3,
+          "pulseInterval": 0.3,
+          "color": "#9ce4d9",
+          "variant": "drain_arc",
+          "accent": "#d5a4ff",
+          "emblem": 143,
+          "label": "흡수 휩쓸기",
+          "motion": "STRIKE"
+        }
+      },
+      "after": {
+        "id": "skill_manhattan_cafe",
+        "displayName": "맨하탄 카페 · 흡수 휩쓸기 (2001 有馬記念(GI))",
+        "template": "DASH_LINE",
+        "baseValues": [
+          178,
+          198,
+          30
+        ],
+        "starMultipliers": [
+          1,
+          1.45,
+          2.2
+        ],
+        "damageType": "PHYSICAL",
+        "targetRule": "CURRENT_TARGET",
+        "manaCost": 80,
+        "effects": [
+          {
+            "kind": "DASH",
+            "value": 3,
+            "target": "CURRENT_TARGET"
+          },
+          {
+            "kind": "DAMAGE",
+            "value": 160,
+            "damageType": "PHYSICAL",
+            "target": "CURRENT_TARGET",
+            "shape": "CONE",
+            "range": 3,
+            "maxTargets": 4,
+            "leech": 0.25
+          }
+        ],
+        "vfxKey": "vfx_dash_sashi",
+        "description": "[흡수 휩쓸기] 돌진 후 전방 3칸 부채꼴의 최대 4명에게 160 물리 피해. 실제 체력 피해의 25% 회복. 근거: 2001 有馬記念(GI) 1위.",
+        "choreography": {
+          "windup": 0.45,
+          "recovery": 0.3,
+          "pulseInterval": 0.3,
+          "color": "#9ce4d9",
+          "variant": "drain_arc",
+          "accent": "#d5a4ff",
+          "emblem": 143,
+          "label": "흡수 휩쓸기",
+          "motion": "STRIKE"
+        }
+      },
+      "decision": "Retain existing raster: body motion, targeting and timeline unchanged; only numbers or running-style VFX key changed."
+    }
+  ]
+}

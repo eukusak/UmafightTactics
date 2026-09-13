@@ -63,10 +63,10 @@ describe('augment offers', () => {
     }
   });
 
-  it('escalates grade by stage', () => {
-    expect(gradeForAugmentRound(2)).toBe('S');
-    expect(gradeForAugmentRound(3)).toBe('G');
-    expect(gradeForAugmentRound(4)).toBe('P');
+  it('uses the match sequence at each augment stage', () => {
+    expect(gradeForAugmentRound(2, ['S','G','P'])).toBe('S');
+    expect(gradeForAugmentRound(3, ['S','G','P'])).toBe('G');
+    expect(gradeForAugmentRound(4, ['S','G','P'])).toBe('P');
   });
 
   it('pays out instant gold and xp immediately', () => {

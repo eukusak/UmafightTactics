@@ -245,3 +245,10 @@ button:disabled { opacity: 0.42; cursor: not-allowed; }
 .scroll { overflow-y: auto; }
 .scroll::-webkit-scrollbar { width: 8px; }
 .scroll::-webkit-scrollbar-thumb { background: #33506a; border-radius: 4px; }
+
+/* The board is a drag surface; text entry remains selectable. */
+#root { -webkit-user-select: none; user-select: none; }
+#root input, #root textarea, #root [contenteditable="true"], #root [role="textbox"] { -webkit-user-select: text; user-select: text; }
+#root img { -webkit-user-drag: none; }
+.augment-inspect { cursor: pointer; font: inherit; color: inherit; background: transparent; }
+.augment-inspect:focus-visible { outline: 2px solid var(--gold); outline-offset: 3px; }

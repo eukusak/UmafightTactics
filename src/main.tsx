@@ -15,6 +15,12 @@ import './game/engine/battle/pve-units';
 const container = document.getElementById('root');
 if (!container) throw new Error('#root not found');
 
+// Native browser menus/selection interfere with unit and item dragging.
+// Keep normal editing behavior in text fields and contenteditable elements.
+const isTextEntry = (target: EventTarget | null): boolean => target instanceof Element && !!target.closest('input, textarea, [contenteditable="true"], [role="textbox"]');
+container.addEventListener('contextmenu', event => { if (!isTextEntry(event.target)) event.preventDefault(); });
+container.addEventListener('selectstart', event => { if (!isTextEntry(event.target)) event.preventDefault(); });
+
 createRoot(container).render(
   <StrictMode>
     <App />

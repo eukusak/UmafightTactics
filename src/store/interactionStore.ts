@@ -2,6 +2,7 @@ import { create } from 'zustand';
 import type { TraitId } from '../game/engine/types';
 
 export type Inspection =
+  | { kind: 'augment'; id: string; playerId: string }
   | { kind: 'unit'; id: string; playerId: string }
   | { kind: 'combat'; id: string }
   | { kind: 'trait'; id: TraitId; playerId: string }

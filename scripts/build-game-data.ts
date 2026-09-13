@@ -850,7 +850,7 @@ const manifest: ArtManifest = {
   })),
   items: [...new Set(ALL_ITEM_DEFS.map((i) => `items/${i.isComponent ? 'components' : 'complete'}/${i.iconId ?? i.id}.png`))],
   traits: TRAIT_DEFS.map((t) => `traits/${t.id}.png`),
-  augments: AUGMENT_DEFS.map((a) => `augments/${a.id}.png`),
+  augments: [...new Set(AUGMENT_DEFS.map((a) => `augments/${a.iconId ?? a.id}.png`))],
   status: [
     'stun', 'silence', 'taunt', 'burn', 'wound', 'shield', 'heal_up', 'damage_up', 'damage_down',
     'armor_up', 'armor_down', 'mr_up', 'mr_down', 'attack_speed_up', 'attack_speed_down',

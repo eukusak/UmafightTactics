@@ -1,5 +1,7 @@
 # UmafightTactics — CODEX 전체 구현 명세서 v1.0 FINAL
 
+> 2026-09-13 구현 변경: 증강은 84종이며 등급은 판마다 공통 순서를 추첨합니다(SSS 제외). 각질·특성·AI 및 영구 누적 규칙은 [증강 확장 패치](qa/augment-expansion-patch.md)를 참조하세요. 아래 48종 목록은 원본 설계 기록입니다.
+
 > **상태:** IMPLEMENTATION READY / 초안 아님  
 > **대상 저장소:** `https://github.com/eukusak/UmafightTactics`  
 > **참조 데이터 저장소:** `https://github.com/eukusak/UmaRogue` (`pr0`)  

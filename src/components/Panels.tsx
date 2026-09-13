@@ -46,9 +46,9 @@ export function TopHud(): JSX.Element | null {
       <span className="pill">이자 +{interestGold(player)}G</span>
       <div style={{ marginLeft: 'auto', display: 'flex', gap: 10 }}>
         {player.augments.map((id) => (
-          <span key={id} className="pill" style={{ borderColor: 'var(--violet)' }}>
+          <button type="button" key={id} className="pill augment-inspect" aria-label={(AUGMENT_BY_ID.get(id)?.name ?? id) + ' 증강 상세'} onClick={() => useInteractionStore.getState().inspect({ kind: 'augment', id, playerId: player.id })} style={{ borderColor: 'var(--violet)' }}>
             {AUGMENT_BY_ID.get(id)?.name ?? id}
-          </span>
+          </button>
         ))}
       </div>
       <AudioControls />

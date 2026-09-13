@@ -1,5 +1,6 @@
-/** The 48 augments from spec §25. Combat parts are EffectDefs; the rest are
+/** The 48 base augments from spec §25 plus the 36-augment expansion. Combat parts are EffectDefs; the rest are
  *  declarative economy/grant hooks the round systems read. */
+import { EXPANSION_AUGMENTS } from './expansion';
 import type { AugmentDef, EffectDef } from '../types';
 
 const mul = (stat: EffectDef['stat'], value: number, extra: Partial<EffectDef> = {}): EffectDef => ({
@@ -10,6 +11,7 @@ const add = (stat: EffectDef['stat'], value: number, extra: Partial<EffectDef> =
 });
 
 export const AUGMENT_DEFS: AugmentDef[] = [
+  ...EXPANSION_AUGMENTS,
   // ================= Silver =================
   { id: 'economy_interest_seed', grade: 'S', name: '저축의 미학', description: '최대 이자 +1. 즉시 5골드.',
     teamEffects: [], economy: { maxInterestDelta: 1, instantGold: 5 } },
@@ -64,8 +66,8 @@ export const AUGMENT_DEFS: AugmentDef[] = [
     teamEffects: [], grants: { completedChoice: 1 } },
   { id: 'item_reforge', grade: 'G', name: '장비 재조정', description: '재조합기 2개.',
     teamEffects: [], grants: { reforgers: 2 } },
-  { id: 'combat_first_cast', grade: 'G', name: '선수필승', description: '아군 첫 스킬 피해 +25%.',
-    teamEffects: [{ kind: 'SKILL_DAMAGE_AMP', value: 0.25, oncePerCombat: true }] },
+  { id: 'combat_first_cast', grade: 'G', name: '전술 숙련', description: '아군 스킬 피해 +25%.',
+    teamEffects: [{ kind: 'SKILL_DAMAGE_AMP', value: 0.25 }] },
   { id: 'combat_last_stand', grade: 'G', name: '마지막 직선', description: '체력 30% 아래 아군 피해 증폭 +20%.',
     teamEffects: [{ kind: 'DAMAGE_AMP', value: 0.2, trigger: { when: 'HP_BELOW', threshold: 0.3 } }] },
   { id: 'combat_adjacent', grade: 'G', name: '페이스메이커', description: '전투 시작 시 인접 아군 2명 이상인 유닛 방어력/마저 +15.',
