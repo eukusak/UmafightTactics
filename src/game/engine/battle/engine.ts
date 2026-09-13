@@ -159,6 +159,10 @@ export class BattleEngine {
   private readonly raceResources = new Map<string, RaceResourceTracker>();
   /** Re-release nesting per unit, so RECAST_SKILL cannot loop. */
   private readonly recastDepth = new Map<string, number>();
+  /** Continuously-gated aura bindings, pre-filtered per unit; see prepare(). */
+  private readonly auraBindings = new Map<string, EffectBinding[]>();
+  /** EVERY_SECONDS bindings with their index in the full list, pre-filtered. */
+  private readonly periodicBindings = new Map<string, Array<{ b: EffectBinding; i: number }>>();
   private readonly raceEntryIds = new Map<Team, string>();
   /** Which team resolves first each tick. Seeded once so mirror matches are fair. */
   private readonly firstTeam: Team;
@@ -349,6 +353,15 @@ export class BattleEngine {
       }
 
       this.bindings.set(unit.id, list);
+      // Both hot loops walk a filtered view of this list every tick. Partition
+      // once here instead: the race systems roughly doubled the binding count
+      // per unit, which made re-filtering it 60 times a second the single
+      // largest cost in the step loop.
+      this.auraBindings.set(unit.id, list.filter(
+        (b) => isAuraKind(b.effect.kind) && (!b.effect.trigger || CONTINUOUS_GATES.has(b.effect.trigger.when)),
+      ));
+      this.periodicBindings.set(unit.id, list.map((b, i) => ({ b, i }))
+        .filter(({ b }) => b.effect.trigger?.when === 'EVERY_SECONDS'));
     }
 
     if (side.racePlan) {
@@ -454,11 +467,8 @@ export class BattleEngine {
     for (const entry of unit.timedEffects) {
       if (entry.expiresAt > this.time && triggerHolds(unit, entry.effect.trigger, this.ctx, 'RECOMPUTE', target)) accumulateAura(unit, entry.effect);
     }
-    for (const b of this.bindings.get(unit.id) ?? []) {
-      if (!isAuraKind(b.effect.kind)) continue;
+    for (const b of this.auraBindings.get(unit.id) ?? []) {
       const gate = b.effect.trigger;
-      // Aura effects with an event trigger are handled when that event fires.
-      if (gate && !CONTINUOUS_GATES.has(gate.when)) continue;
       if (!triggerHolds(unit, gate, this.ctx, 'RECOMPUTE', target)) continue;
       if (b.effect.tag === 'AT_MAX_STACKS') {
         const key = Object.keys(unit.stacks).find((k) => k.startsWith('count:'));
@@ -1016,10 +1026,10 @@ export class BattleEngine {
   private tickPeriodics(): void {
     for (const unit of this.units) {
       if (!unit.alive) continue;
+      const periodics = this.periodicBindings.get(unit.id) ?? [];
+      if (!periodics.length) continue;
       const target = unit.targetId ? this.byId(unit.targetId) : null;
-      const list = this.bindings.get(unit.id) ?? [];
-      list.forEach((b, i) => {
-        if (b.effect.trigger?.when !== 'EVERY_SECONDS') return;
+      periodics.forEach(({ b, i }) => {
         if (this.racePhase === 'OVERTIME' && b.sourceKey.startsWith('race-plan:') && b.effect.kind === 'STACKING_STAT') return;
         const interval = b.effect.interval ?? b.effect.trigger.threshold ?? 1;
         const key = `${unit.id}:${i}`;
@@ -1047,15 +1057,19 @@ export class BattleEngine {
     for (let i = 0; i < list.length; i += 1) {
       const b = list[i];
       if (this.racePhase === 'OVERTIME' && b.sourceKey.startsWith('race-plan:') && b.effect.kind === 'STACKING_STAT') continue;
-      if (isAuraKind(b.effect.kind) && isContinuousAura(b.effect)) continue;
       const gate = b.effect.trigger;
+      // RECOMPUTE runs every tick for every unit and only ever keeps
+      // AFTER_SECONDS, so decide that before paying for triggerHolds rather
+      // than after it. Same result, one cheap comparison instead of a full
+      // gate evaluation on every binding sixty times a second.
+      if (event === 'RECOMPUTE' && gate?.when !== 'AFTER_SECONDS') continue;
+      if (isAuraKind(b.effect.kind) && isContinuousAura(b.effect)) continue;
       if (event === 'COMBAT_START') {
         // At combat start, run untriggered passives plus explicit COMBAT_START effects.
         if (gate && gate.when !== 'COMBAT_START' && gate.when !== 'ALWAYS') continue;
       } else if (!gate || gate.when === 'EVERY_SECONDS' || !triggerHolds(unit, gate, this.ctx, event, target)) {
         continue;
       }
-      if (event === 'RECOMPUTE' && gate?.when !== 'AFTER_SECONDS') continue;
       // An `interval` on an event-triggered effect is a re-use cooldown.
       if (b.effect.interval && gate && gate.when !== 'EVERY_SECONDS') {
         const key = `${unit.id}:${i}${b.effect.perTargetCooldown ? `:${target?.id ?? ''}` : ''}`;

@@ -13,13 +13,13 @@ export const TRAIT_DEFS: TraitDef[] = [
   {
     id: 'nige', name: '도주', category: 'STYLE', thresholds: [2, 4, 6],
     emblemItemId: 'emblem_nige',
-    description: '빠른 기본 공격과 전투 초반의 선점으로 압박한다.',
+    description: '발주부터 앞에 서서 끌고 간다. 초반이 가장 강하고 최종 직선에서는 다리가 남지 않는다.',
     tiers: [
-      { count: 2, description: '공속 +10%, 시작 6초간 피해 +4%',
+      { count: 2, description: '공속 +10%, 발주 6초간 피해 +4%',
         effects: [mul('attackSpeed', 0.1), { kind: 'DAMAGE_AMP', value: 0.04, duration: 6, trigger: { when: 'COMBAT_START' } }] },
-      { count: 4, description: '공속 +22%, 시작 6초간 피해 +8%',
+      { count: 4, description: '공속 +22%, 발주 6초간 피해 +8%',
         effects: [mul('attackSpeed', 0.22), { kind: 'DAMAGE_AMP', value: 0.08, duration: 6, trigger: { when: 'COMBAT_START' } }] },
-      { count: 6, description: '공속 +38%, 시작 6초간 피해 +12%. 전투 시작 4초간 방해 효과 면역',
+      { count: 6, description: '공속 +38%, 발주 6초간 피해 +12%. 발주 4초간 방해 효과 면역',
         effects: [mul('attackSpeed', 0.38), { kind: 'DAMAGE_AMP', value: 0.12, duration: 6, trigger: { when: 'COMBAT_START' } },
           { kind: 'CC_IMMUNE', duration: 4, trigger: { when: 'COMBAT_START' } }] },
     ],
@@ -27,7 +27,7 @@ export const TRAIT_DEFS: TraitDef[] = [
   {
     id: 'senko', name: '선행', category: 'STYLE', thresholds: [2, 4, 6],
     emblemItemId: 'emblem_senko',
-    description: '앞 자리를 지키며 안정적으로 밀어붙인다.',
+    description: '2, 3번수에 붙어 가다 4코너에서 먼저 승부를 건다. 어느 구간에도 약점이 없다.',
     tiers: [
       { count: 2, description: '체력 60% 이상일 때 피해 증폭 +8%. 첫 스킬 마나 -5',
         effects: [{ kind: 'DAMAGE_AMP', value: 0.08, trigger: { when: 'HP_ABOVE', threshold: 0.6 } },
@@ -43,7 +43,7 @@ export const TRAIT_DEFS: TraitDef[] = [
   {
     id: 'sashi', name: '선입', category: 'STYLE', thresholds: [2, 4, 6],
     emblemItemId: 'emblem_sashi',
-    description: '안쪽을 파고들어 승부를 뒤집는다.',
+    description: '중반까지 말군에 묻혀 버티다 4코너부터 밖으로 나온다. 뒤로 갈수록 강해진다.',
     tiers: [
       { count: 2, description: '치명타 +5%. 처치 관여 시 6초간 추가 치명타 +10%',
         effects: [{ kind: 'CRIT_CHANCE_ADD', value: 0.05 }, { kind: 'CRIT_CHANCE_ADD', value: 0.1, duration: 6, trigger: { when: 'ON_TAKEDOWN_ASSIST' } }] },
@@ -61,7 +61,7 @@ export const TRAIT_DEFS: TraitDef[] = [
     // 효과라는 약점을 감안해 수치와 마나 보상을 앞당긴다.
     id: 'oikomi', name: '추입', category: 'STYLE', thresholds: [2, 3, 5],
     emblemItemId: 'emblem_oikomi',
-    description: '뒤에서 몰아쳐 약해진 적을 끝낸다.',
+    description: '마지막 600m에 전부를 건다. 그 전까지는 맞아도 버티며 다리를 아낀다.',
     tiers: [
       { count: 2, description: '대상 체력 50% 이하일 때 피해 증폭 +12%',
         effects: [{ kind: 'DAMAGE_AMP', value: 0.12, trigger: { when: 'TARGET_HP_BELOW', threshold: 0.5 } }] },
@@ -103,11 +103,11 @@ export const TRAIT_DEFS: TraitDef[] = [
     emblemItemId: 'emblem_middle',
     description: '중반 이후 본격적으로 힘을 낸다.',
     tiers: [
-      { count: 2, description: '전투 8초 후 최대 체력 +8%, 공격력/주문력 +8%',
+      { count: 2, description: '중반에 접어드는 8초부터 최대 체력 +8%, 공격력/주문력 +8%',
         effects: [mul('hp', 0.08, { trigger: { when: 'AFTER_SECONDS', threshold: 8 } }),
           mul('attackDamage', 0.08, { trigger: { when: 'AFTER_SECONDS', threshold: 8 } }),
           mul('abilityPower', 0.08, { trigger: { when: 'AFTER_SECONDS', threshold: 8 } })] },
-      { count: 4, description: '전투 8초 후 최대 체력 +18%, 공격력/주문력 +18%',
+      { count: 4, description: '중반에 접어드는 8초부터 최대 체력 +18%, 공격력/주문력 +18%',
         effects: [mul('hp', 0.18, { trigger: { when: 'AFTER_SECONDS', threshold: 8 } }),
           mul('attackDamage', 0.18, { trigger: { when: 'AFTER_SECONDS', threshold: 8 } }),
           mul('abilityPower', 0.18, { trigger: { when: 'AFTER_SECONDS', threshold: 8 } })] },
@@ -120,7 +120,7 @@ export const TRAIT_DEFS: TraitDef[] = [
     tiers: [
       { count: 2, description: '5초마다 잃은 체력의 4% 회복',
         effects: [{ kind: 'HEAL_MISSING_PCT', value: 0.04, interval: 5, trigger: { when: 'EVERY_SECONDS', threshold: 5 } }] },
-      { count: 4, description: '5초마다 잃은 체력의 8% 회복. 전투 15초 후 방어력/마저 +25',
+      { count: 4, description: '5초마다 잃은 체력의 8% 회복. 중반을 넘기는 15초부터 방어력/마저 +25',
         effects: [{ kind: 'HEAL_MISSING_PCT', value: 0.08, interval: 5, trigger: { when: 'EVERY_SECONDS', threshold: 5 } },
           add('armor', 25, { trigger: { when: 'AFTER_SECONDS', threshold: 15 } }),
           add('magicResist', 25, { trigger: { when: 'AFTER_SECONDS', threshold: 15 } })] },
@@ -167,11 +167,11 @@ export const TRAIT_DEFS: TraitDef[] = [
     emblemItemId: 'emblem_famous_house',
     description: '이름만으로 무게가 실리는 혈통.',
     tiers: [
-      { count: 2, description: '전투 시작 시 최대 체력 +8%. 명가 유닛끼리 인접 시 방어력/마저 +10',
+      { count: 2, description: '발주 시 최대 체력 +8%. 명가 유닛끼리 인접 시 방어력/마저 +10',
         effects: [mul('hp', 0.08, { trigger: { when: 'COMBAT_START' } }),
           add('armor', 10, { trigger: { when: 'ADJACENT_ALLIES_AT_LEAST', threshold: 1 } }),
           add('magicResist', 10, { trigger: { when: 'ADJACENT_ALLIES_AT_LEAST', threshold: 1 } })] },
-      { count: 4, description: '전투 시작 시 최대 체력 +16%. 명가 유닛끼리 인접 시 방어력/마저 +20',
+      { count: 4, description: '발주 시 최대 체력 +16%. 명가 유닛끼리 인접 시 방어력/마저 +20',
         effects: [mul('hp', 0.16, { trigger: { when: 'COMBAT_START' } }),
           add('armor', 20, { trigger: { when: 'ADJACENT_ALLIES_AT_LEAST', threshold: 1 } }),
           add('magicResist', 20, { trigger: { when: 'ADJACENT_ALLIES_AT_LEAST', threshold: 1 } })] },
@@ -195,9 +195,9 @@ export const TRAIT_DEFS: TraitDef[] = [
     emblemItemId: 'emblem_unbeaten',
     description: '패배를 모르는 기록.',
     tiers: [
-      { count: 2, description: '전투 시작 8초간 피해 증폭 +12%',
+      { count: 2, description: '발주 8초간 피해 증폭 +12%',
         effects: [{ kind: 'DAMAGE_AMP', value: 0.12, duration: 8, trigger: { when: 'COMBAT_START' } }] },
-      { count: 3, description: '전투 시작 시 피해 증폭 +25%가 전투 종료까지 지속',
+      { count: 3, description: '발주와 동시에 피해 증폭 +25%가 결승선까지 지속',
         effects: [{ kind: 'DAMAGE_AMP', value: 0.25, trigger: { when: 'COMBAT_START' } }] },
     ],
   },
@@ -247,7 +247,7 @@ export const TRAIT_DEFS: TraitDef[] = [
     description: '쇼와의 끝자락을 장식한 이름.',
     tiers: [
       { count: 2, description: '방어력/마저 +8', effects: [add('armor', 8), add('magicResist', 8)] },
-      { count: 4, description: '방어력/마저 +18. 전투 시작 6초간 받는 피해 10% 감소',
+      { count: 4, description: '방어력/마저 +18. 발주 6초간 받는 피해 10% 감소',
         effects: [add('armor', 18), add('magicResist', 18),
           { kind: 'DAMAGE_REDUCTION', value: 0.1, duration: 6, trigger: { when: 'COMBAT_START' } }] },
     ],
@@ -327,7 +327,7 @@ const extend = (id: TraitId, tiers: TraitDef['tiers']): void => {
 };
 const percent = (value: number): number => Math.round(value * 100);
 for (const [count, speed, amp, immune] of [[8, .55, .18, 6], [10, .8, .25, 8]]) {
-  extend('nige', [{ count, description: `공속 +${percent(speed)}%, 시작 6초간 피해 +${percent(amp)}%, 시작 ${immune}초 방해 효과 면역`, effects: [mul('attackSpeed', speed), { kind: 'DAMAGE_AMP', value: amp, duration: 6, trigger: { when: 'COMBAT_START' } }, { kind: 'CC_IMMUNE', duration: immune, trigger: { when: 'COMBAT_START' } }] }]);
+  extend('nige', [{ count, description: `공속 +${percent(speed)}%, 발주 6초간 피해 +${percent(amp)}%, 시작 ${immune}초 방해 효과 면역`, effects: [mul('attackSpeed', speed), { kind: 'DAMAGE_AMP', value: amp, duration: 6, trigger: { when: 'COMBAT_START' } }, { kind: 'CC_IMMUNE', duration: immune, trigger: { when: 'COMBAT_START' } }] }]);
 }
 for (const [count, amp, mana] of [[8, .42, 25], [10, .65, 35]]) {
   extend('senko', [{ count, description: `체력 60% 이상에서 피해 +${percent(amp)}%, 시작 마나 +${mana}`, effects: [{ kind: 'DAMAGE_AMP', value: amp, trigger: { when: 'HP_ABOVE', threshold: .6 } }, { kind: 'MANA_ADD', value: mana, trigger: { when: 'COMBAT_START' } }] }]);
@@ -346,10 +346,10 @@ for (const [count, value] of [[6, .4], [9, .7]]) {
   extend('miler', [{ count, description: `스킬 사용 후 5초간 공격력/주문력 +${percent(value)}%`, effects: [mul('attackDamage', value, { duration: 5, trigger: { when: 'ON_CAST' } }), mul('abilityPower', value, { duration: 5, trigger: { when: 'ON_CAST' } })] }]);
 }
 for (const [count, value] of [[6, .25], [8, .34], [10, .5]]) {
-  extend('middle', [{ count, description: `전투 8초 후 최대 체력·공격력·주문력 +${percent(value)}%`, effects: [mul('hp', value, { trigger: { when: 'AFTER_SECONDS', threshold: 8 } }), mul('attackDamage', value, { trigger: { when: 'AFTER_SECONDS', threshold: 8 } }), mul('abilityPower', value, { trigger: { when: 'AFTER_SECONDS', threshold: 8 } })] }]);
+  extend('middle', [{ count, description: `중반에 접어드는 8초부터 최대 체력·공격력·주문력 +${percent(value)}%`, effects: [mul('hp', value, { trigger: { when: 'AFTER_SECONDS', threshold: 8 } }), mul('attackDamage', value, { trigger: { when: 'AFTER_SECONDS', threshold: 8 } }), mul('abilityPower', value, { trigger: { when: 'AFTER_SECONDS', threshold: 8 } })] }]);
 }
 for (const [count, heal, resist] of [[6, .12, 40], [9, .2, 65]]) {
-  extend('stayer', [{ count, description: `5초마다 잃은 체력 ${percent(heal)}% 회복, 전투 15초 후 방어력/마저 +${resist}`, effects: [{ kind: 'HEAL_MISSING_PCT', value: heal, interval: 5, trigger: { when: 'EVERY_SECONDS', threshold: 5 } }, add('armor', resist, { trigger: { when: 'AFTER_SECONDS', threshold: 15 } }), add('magicResist', resist, { trigger: { when: 'AFTER_SECONDS', threshold: 15 } })] }]);
+  extend('stayer', [{ count, description: `5초마다 잃은 체력 ${percent(heal)}% 회복, 중반을 넘기는 15초부터 방어력/마저 +${resist}`, effects: [{ kind: 'HEAL_MISSING_PCT', value: heal, interval: 5, trigger: { when: 'EVERY_SECONDS', threshold: 5 } }, add('armor', resist, { trigger: { when: 'AFTER_SECONDS', threshold: 15 } }), add('magicResist', resist, { trigger: { when: 'AFTER_SECONDS', threshold: 15 } })] }]);
 }
 extend('dirt_champion', [{ count: 6, description: '방어력/마저 +55, 군중제어 저항 +45%', effects: [add('armor', 55), add('magicResist', 55), { kind: 'CC_RESIST', value: .45 }] }]);
 for (const [count, value] of [[8, .28], [10, .42]]) {

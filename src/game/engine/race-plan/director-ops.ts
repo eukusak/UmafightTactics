@@ -40,8 +40,9 @@ export function ensureRacePlanState(state: MatchState): void {
  * the old three-value going keep working unchanged.
  */
 export function rollRoundTrackState(state: MatchState, rng: Rng): void {
-  state.raceConditions = rollRaceConditions(rng);
-  state.racePlanTrack = legacyTrackState(state.raceConditions.going);
+  const conditions = rollRaceConditions(rng);
+  state.raceConditions = conditions;
+  state.racePlanTrack = legacyTrackState(conditions.going);
 }
 
 export function racePlanOpensFor(state: MatchState, player: PlayerState): RacePlanRoundKind | null {
