@@ -10,7 +10,7 @@ test('each augment has one independent reroll, preserved through reload',async({
  for(const n of [2,3]){const button=page.getByRole('button',{name:n+'번 증강 새로고침'});await expect(button).toBeEnabled();await button.click();await expect(button).toBeDisabled();}
  const rolled=await page.locator('.augment-slot h4').allTextContents();expect(new Set([...names,...rolled]).size).toBe(6);
  await page.reload();await page.getByRole('button',{name:'시작하기'}).click();await page.getByRole('button',{name:'이어하기'}).click();
- expect(await page.locator('.augment-slot h4').allTextContents()).toEqual(rolled);
+ await expect(page.locator('.augment-slot h4')).toHaveText(rolled);
  await expect(page.locator('.augment-reroll:disabled')).toHaveCount(3);
  await page.screenshot({path:info.outputPath('augment-rerolls.png')});
  await page.locator('.augment-slot .choice-card').first().click();

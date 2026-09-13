@@ -1,6 +1,7 @@
 import { EffectDescription } from '../EffectDescription';
 import { useEffect, useRef, useState } from 'react';
 import Phaser from 'phaser';
+import { ManagedGame } from '../../game/phaser/ManagedGame';
 import { ALL_UNITS, getUnitDef } from '../../game/engine/roster';
 import { PVE_UNIT_IDS } from '../../game/engine/battle/pve-units';
 import { FRAME_SHEETS, frameSheetUrl, frameGeometry, motionFrame, skillMotionFrame } from '../../game/ui/frame-animation';
@@ -108,7 +109,7 @@ export function MotionScreen(): JSX.Element {
         }
       }
     }
-    const game = new Phaser.Game({ type: Phaser.AUTO, width: 720, height: 550,
+    const game = new ManagedGame({ type: Phaser.AUTO, width: 720, height: 550,
       parent: host.current, backgroundColor: '#183549', scene: Preview, audio: { noAudio: true },
       render: { antialias: false, pixelArt: true }, scale: { mode: Phaser.Scale.NONE },
       callbacks: { postBoot: game => { game.canvas.style.width = '100%'; game.canvas.style.height = '100%'; } } });

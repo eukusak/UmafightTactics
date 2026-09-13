@@ -9,6 +9,7 @@ export async function preparedGame(page: Page, mode = 'default'): Promise<void> 
   await page.reload();
   await page.getByRole('button', { name: '시작하기' }).click();
   await page.getByRole('button', { name: '이어하기' }).click();
+  if (mode === 'augment') await expect(page.locator('.augment-overlay')).toBeVisible();
   if (mode !== 'augment' && !mode.startsWith('result-')) await page.getByRole('button', { name: '준비 타이머 일시정지' }).click();
   await expect(page.locator('.dev-panel')).toHaveCount(0);
 }

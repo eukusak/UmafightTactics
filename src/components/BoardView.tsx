@@ -2,6 +2,7 @@ import { matchItemDescription } from '../game/ui/match-descriptions';
 /** One background and projection across preparation and recorded combat. */
 import { useEffect, useRef, useState } from 'react';
 import Phaser from 'phaser';
+import { ManagedGame } from '../game/phaser/ManagedGame';
 import { useGameStore } from '../store/gameStore';
 import { BattleScene } from '../game/phaser/BattleScene';
 import { AnimatedUnit } from './AnimatedUnit';
@@ -108,7 +109,7 @@ export function BattleBoard({ onReady }: { onReady: () => void }): JSX.Element {
     const state = useGameStore.getState();
     const scene = new BattleScene(frames ?? [], state.settings.showDamageNumbers, onReady, () => {}, state.viewedPlayer()?.id ?? 'p1', state.onlinePlayerId ? undefined : () => useGameStore.getState().battleTime);
     sceneRef.current = scene;
-    gameRef.current = new Phaser.Game({
+    gameRef.current = new ManagedGame({
       type: Phaser.AUTO,
       parent: hostRef.current,
       width: FIELD_W,
