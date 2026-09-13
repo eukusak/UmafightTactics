@@ -5,17 +5,21 @@ import { getSeasonUnits, getUnitDef, getUnitTraits } from '../roster';
 import { getTrait } from '../traits/trait-defs';
 import { combine, getItem } from '../items/item-defs';
 import { XP_TO_LEVEL } from '../constants';
-import { itemFit, lineupScore, unitPower } from './evaluation';
+import { itemFit, lineupScore, lineupTraits, unitTraits } from './evaluation';
+import { unitAugmentValue } from './knowledge';
 import type { DraftOption, MatchState, PlayerState, UnitInstance } from '../state';
 import type { TraitId } from '../types';
 export type AiPlan = { mode: 'REROLL_1' | 'REROLL_2' | 'REROLL_3' | 'FAST_8' | 'FAST_9'; carryId: string; trait: TraitId; decidedAt: number; pivots: number };
-export type PublicBoard = { id: string; board: UnitInstance[] };
-export const publicBoards = (state: MatchState, player: PlayerState): PublicBoard[] => state.players.filter(p => p.id !== player.id && p.eliminatedAtRound === null).map(p => ({ id: p.id, board: p.board }));
+export type PublicBoard = { id: string; board: UnitInstance[]; augments?:string[]; augmentProgress?:Record<string,number>; bonusTraits?:PlayerState['bonusTraits']; seasonId?:PlayerState['seasonId'] };
+export const publicBoards = (state: MatchState, player: PlayerState): PublicBoard[] => state.players.filter(p => p.id !== player.id && p.eliminatedAtRound === null).map(p => ({ id: p.id, board: p.board, augments:p.augments, augmentProgress:p.augmentProgress, bonusTraits:p.bonusTraits, seasonId:p.seasonId }));
 const copies = (p: PlayerState, id: string) => [...p.board, ...p.bench].filter(u => u.unitDefId === id).reduce((n, u) => n + u.sourceCopies, 0);
 function contested(boards: PublicBoard[], id: string): number { return boards.reduce((n, p) => n + p.board.filter(u => u.unitDefId === id).reduce((m, u) => m + u.sourceCopies, 0), 0); }
 export function choosePlan(player: PlayerState, stage: number, round: number, boards: PublicBoard[]): AiPlan {
   const owned = [...player.board, ...player.bench], roster = getSeasonUnits(player.seasonId);
   const roundKey = stage * 10 + round;
+  const ownedCounts = lineupTraits(player, owned), fieldCounts = lineupTraits(player, player.board);
+  const support = (t: TraitId) => ownedCounts.get(t) ?? 0;
+  const availableItems = [...player.items.map(i => i.itemId), ...owned.flatMap(u => u.items)];
   const damageHeroes = new Set(player.augments.flatMap(id => {
     const a = getAugment(id);
     return a.skillUpgrade?.append?.some(e => e.kind === 'DAMAGE' || e.kind === 'DAMAGE_MAXHP_PCT') ? a.filter?.unitIds ?? [] : [];
@@ -24,16 +28,15 @@ export function choosePlan(player: PlayerState, stage: number, round: number, bo
   const options = roster.filter(d => ['AD_CARRY', 'AP_CARRY', 'BRUISER'].includes(d.role) || damageHeroes.has(d.id)).map(d => {
     const count = copies(player, d.id), rivals = contested(boards, d.id);
     const traits = getUnitTraits(d.id, player.seasonId);
-    const support = (t: TraitId) => new Set(owned.filter(u => getUnitTraits(u.unitDefId, player.seasonId).includes(t)).map(u => u.unitDefId)).size;
     const trait = traits.slice().sort((a, b) => support(b) - support(a) || (getTrait(b).category === 'SEASON' ? 1 : 0) - (getTrait(a).category === 'SEASON' ? 1 : 0))[0];
-    const core: UnitInstance = { instanceId: 'candidate', unitDefId: d.id, sourceCopies: 1, star: 1, items: [], position: null };
-    const itemScore = [...player.items.map(i => i.itemId), ...owned.flatMap(u => u.items)].reduce((n, id) => n + Math.max(-2, itemFit(core, id)), 0) * .18;
+    const core: UnitInstance = owned.filter(u=>u.unitDefId===d.id).sort((a,b)=>b.star-a.star)[0] ?? { instanceId: 'candidate', unitDefId: d.id, sourceCopies: 1, star: 1, items: [], position: null };
+    const itemScore = availableItems.map(id=>Math.max(-2,itemFit(core,id,player,player.board,fieldCounts))).sort((a,b)=>b-a).slice(0,3).reduce((n,v)=>n+v,0) * .3;
     const lowSupport = roster.filter(u => u.cost <= 2 && getUnitTraits(u.id, player.seasonId).includes(trait)).length;
     let mode: AiPlan['mode'] = d.cost === 1 ? 'REROLL_1' : d.cost === 2 ? 'REROLL_2' : d.cost === 3 ? 'REROLL_3' : player.aiProfile === 'FAST_LEVEL' || player.aiProfile === 'ECONOMY' ? 'FAST_9' : 'FAST_8';
     // Stop holding level 5/6 indefinitely for an unfinished low-cost carry.
     // Seven/eight copies get one more stage; completed three-stars also level up.
     if (count >= 9 || d.cost <= 2 && (stage >= 5 && count < 7 || stage >= 6)) mode = 'FAST_8';
-    let score = (hashString(`${player.id}:${d.id}`) % 100) / 100 + Math.min(8, count) * 1.8 + support(trait) * 1.7 + itemScore + d.uftRating;
+    let score = (hashString(`${player.id}:${d.id}`) % 100) / 100 + Math.min(8, count) * 1.8 + support(trait) * 1.7 + itemScore + d.uftRating + unitAugmentValue(player,core,ownedCounts,unitTraits(player,core))*.7;
     if (player.augments.some(id => getAugment(id).filter?.unitIds?.includes(d.id))) score += 16;
     if (d.cost <= 2) score += lowSupport >= 4 ? 2 : -3;
     if (player.aiProfile === 'REROLL') score += d.cost <= 2 ? 5 : -2;
@@ -67,8 +70,8 @@ export function economyPlan(player: PlayerState, stage: number, round: number, b
   if (reroll) targetLevel = Math.min(targetLevel, targetRoll);
   if (plan?.mode === 'REROLL_1' && stage <= 2) targetLevel = Math.min(player.level, 4);
   if (!reroll && stage >= 5 && (plan?.mode === 'FAST_9' || player.gold >= 65)) targetLevel = 9;
-  const publicStrength = boards.length ? boards.reduce((n, b) => n + b.board.reduce((m, u) => m + unitPower(u), 0), 0) / boards.length : 0;
-  const weak = player.board.reduce((n, u) => n + unitPower(u), 0) < publicStrength * .78;
+  const publicStrength = boards.length ? boards.reduce((n, b) => n + lineupScore({...player,id:b.id,board:b.board,bench:[],augments:b.augments??[],augmentProgress:b.augmentProgress??{},bonusTraits:b.bonusTraits??[],seasonId:b.seasonId??player.seasonId},b.board), 0) / boards.length : 0;
+  const weak = lineupScore(player,player.board) < publicStrength * .78;
   const panic = player.hp <= 30 || (stage >= 4 && player.hp < 50 && weak);
   const nearlyComplete = !!plan && copies(player, plan.carryId) >= 7 && copies(player, plan.carryId) < 9;
   const contestedCarry = !!plan && contested(boards, plan.carryId) >= 3;
@@ -89,10 +92,10 @@ export function draftValue(player: PlayerState, option: DraftOption): number {
   let recipe = 0;
   for (const id of [...player.items.map(i => i.itemId), ...held.flatMap(u => u.items)].filter(id => getItem(id).isComponent)) {
     const result = combine(id, option.itemId); if (!result || getItem(result).tactician) continue;
-    recipe = Math.max(recipe, ...carriers.map(u => itemFit(u, result)));
+    recipe = Math.max(recipe, ...carriers.map(u => itemFit(u, result, player)));
   }
   const count = copies(player, option.unitDefId);
   return plannedUnitValue(player, option.unitDefId) * 4 + (count === 2 || count === 8 ? 36 : count > 0 ? 12 : 0)
-    + recipe * 5 + Math.max(...carriers.map(u => itemFit(u, option.itemId))) * 2 + getUnitDef(option.unitDefId).cost * 3;
+    + recipe * 5 + Math.max(...carriers.map(u => itemFit(u, option.itemId, player))) * 2 + getUnitDef(option.unitDefId).cost * 3;
 }
 export { lineupScore };

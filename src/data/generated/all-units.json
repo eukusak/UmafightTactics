@@ -8,7 +8,7 @@
     "ratingFormulaVersion": "horse-rating-v2",
     "skillFormulaVersion": "horse-skill-v2"
   },
-  "rosterHash": "a223dc3ade5b2c43",
+  "rosterHash": "6d9487b4daa06239",
   "units": [
     {
       "id": "special_week",
@@ -1651,7 +1651,7 @@
         "effects": [
           {
             "kind": "SHIELD_FLAT",
-            "value": 643,
+            "value": 729,
             "duration": 4,
             "target": "SELF"
           },
@@ -1669,7 +1669,7 @@
           }
         ],
         "vfxKey": "vfx_shield",
-        "description": "[결투 방벽] 643 보호막(4초), 1.5초 제어 면역. 주변 2칸 최대 3명을 2초 도발. 근거: 2000 有馬記念(GI) 1위.",
+        "description": "[결투 방벽] 729 보호막(4초), 1.5초 제어 면역. 주변 2칸 최대 3명을 2초 도발. 근거: 2000 有馬記念(GI) 1위.",
         "choreography": {
           "windup": 0.45,
           "recovery": 0.3,
@@ -1874,7 +1874,7 @@
         "effects": [
           {
             "kind": "DAMAGE",
-            "value": 258,
+            "value": 245,
             "damageType": "MAGIC",
             "target": "LARGEST_ENEMY_CLUSTER",
             "shape": "LINE",
@@ -1892,7 +1892,7 @@
           }
         ],
         "vfxKey": "vfx_stun",
-        "description": "[관통 구속] 직선 6칸 최대 4명에게 258 마법 피해와 1초 기절. 근거: 1985 有馬記念(GI) 1위.",
+        "description": "[관통 구속] 직선 6칸 최대 4명에게 245 마법 피해와 1초 기절. 근거: 1985 有馬記念(GI) 1위.",
         "choreography": {
           "windup": 0.45,
           "recovery": 0.3,
@@ -2090,7 +2090,7 @@
         "effects": [
           {
             "kind": "DAMAGE",
-            "value": 306,
+            "value": 330,
             "damageType": "PHYSICAL",
             "target": "HIGHEST_AD_ENEMY"
           },
@@ -2104,7 +2104,7 @@
           }
         ],
         "vfxKey": "vfx_projectile",
-        "description": "[주력 저격] 공격력이 가장 높은 적을 저격해 306 물리 피해와 공격력 15% 감소(3초). 근거: 2001 天皇賞(秋)(GI) 1위.",
+        "description": "[주력 저격] 공격력이 가장 높은 적을 저격해 330 물리 피해와 공격력 15% 감소(3초). 근거: 2001 天皇賞(秋)(GI) 1위.",
         "choreography": {
           "windup": 0.3,
           "recovery": 0.3,
@@ -3478,21 +3478,21 @@
           },
           {
             "kind": "DAMAGE",
-            "value": 126,
+            "value": 119,
             "damageType": "PHYSICAL",
             "target": "CURRENT_TARGET",
             "delay": 0
           },
           {
             "kind": "DAMAGE",
-            "value": 126,
+            "value": 119,
             "damageType": "PHYSICAL",
             "target": "CURRENT_TARGET",
             "delay": 0.2
           }
         ],
         "vfxKey": "vfx_projectile",
-        "description": "[가속 장전] 4초간 공격속도 +55.8%, 공격력 +24.8%. 장전 타격으로 126 물리 피해를 2회. 근거: 2001 皐月賞(GI) 1위.",
+        "description": "[가속 장전] 4초간 공격속도 +55.8%, 공격력 +24.8%. 장전 타격으로 119 물리 피해를 2회. 근거: 2001 皐月賞(GI) 1위.",
         "choreography": {
           "windup": 0.15,
           "recovery": 0.3,
@@ -14111,21 +14111,21 @@
           },
           {
             "kind": "DAMAGE",
-            "value": 128,
+            "value": 141,
             "damageType": "PHYSICAL",
             "target": "CURRENT_TARGET",
             "delay": 0
           },
           {
             "kind": "DAMAGE",
-            "value": 128,
+            "value": 141,
             "damageType": "PHYSICAL",
             "target": "CURRENT_TARGET",
             "delay": 0.2
           },
           {
             "kind": "DAMAGE",
-            "value": 128,
+            "value": 141,
             "damageType": "PHYSICAL",
             "target": "CURRENT_TARGET",
             "delay": 0.4
@@ -14140,7 +14140,7 @@
           }
         ],
         "vfxKey": "vfx_dash_senko",
-        "description": "[추격 연타] 돌진 후 한 적에게 128 물리 피해를 3회, 4초간 공격속도 +24.8%. 대상 사망 시 남은 타격은 재탐색. 근거: 2020 マイルチャンピオンS(GI) 1위.",
+        "description": "[추격 연타] 돌진 후 한 적에게 141 물리 피해를 3회, 4초간 공격속도 +24.8%. 대상 사망 시 남은 타격은 재탐색. 근거: 2020 マイルチャンピオンS(GI) 1위.",
         "choreography": {
           "windup": 0.3,
           "recovery": 0.3,

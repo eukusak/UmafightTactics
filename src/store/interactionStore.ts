@@ -6,7 +6,7 @@ export type Inspection =
   | { kind: 'unit'; id: string; playerId: string }
   | { kind: 'combat'; id: string }
   | { kind: 'trait'; id: TraitId; playerId: string }
-  | { kind: 'item'; id: string }
+  | { kind: 'item'; id: string; playerId?: string }
   | { kind: 'recap' };
 
 /** Transient UI state; never serialized into a match or sent as a game command. */

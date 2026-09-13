@@ -1,6 +1,6 @@
 import { combatProgress } from '../augments/runtime';
 import { getAugment } from '../augments/augment-defs';
-import { chooseAiAugment } from '../ai/augment-choice';
+import { chooseAiAugment, augmentScore } from '../ai/augment-choice';
 import { draftValue, publicBoards } from '../ai/strategy';
 import { captureLineup } from './result-lineups';
 import { createCarousel, advanceCarousel as advanceCarouselState } from './carousel';
@@ -23,7 +23,7 @@ import { runAiPrep, ensureInitialBoard, finalizeAiFormation, resolveAiItemReward
 import { AI_PROFILE_IDS } from '../ai/profiles';
 import { BattleEngine, simulateBattle, type BattleFrame, type BattleSideInput } from '../battle/engine';
 import { PVE_UNIT_IDS } from '../battle/pve-units';
-import { applyAugment, createAugmentOffers } from '../augments/offers';
+import { applyAugment, createAugmentOffers, rerollAugmentOffer } from '../augments/offers';
 import type {
   BattleOutcome, MatchState, PlayerState, RoundResolution, UnitInstance,
 } from '../state';
@@ -207,7 +207,14 @@ export class RoundDirector {
       const player = getPlayer(this.state, offer.playerId);
       if (player.aiProfile === null) continue;
       // Rank choices against public boards and the current plan.
-      const choice = chooseAiAugment(player, offer.options, this.state.stage, publicBoards(this.state, player));
+      const scouts = publicBoards(this.state, player);
+      // Keep the strongest card as a fallback; refresh the two weaker cards legally.
+      const keep = chooseAiAugment(player, offer.options, this.state.stage, scouts);
+      for (let slot = 0; slot < offer.options.length; slot++) {
+        if (offer.options[slot] !== keep && augmentScore(player, offer.options[slot], this.state.stage, scouts) <= augmentScore(player, keep, this.state.stage, scouts))
+          rerollAugmentOffer(this.state, player, slot, rng);
+      }
+      const choice = chooseAiAugment(player, offer.options, this.state.stage, scouts);
       offer.chosen = choice;
       applyAugment(this.state, player, choice, rng);
     }
@@ -215,6 +222,12 @@ export class RoundDirector {
       this.state.augmentOffers = [];
       this.state.phase = 'ROUND_PREP';
     }
+  }
+
+  rerollAugment(playerId:string,slot:number):boolean {
+    const player=getPlayer(this.state,playerId);
+    const ok=rerollAugmentOffer(this.state,player,slot,()=>this.rngs.get('augment'));
+    if(ok)this.syncRng();return ok;
   }
 
   /** Human augment pick; returns false when the id was not on offer. */

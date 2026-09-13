@@ -1,3 +1,4 @@
+import { moveToBench } from '../game/engine/shop/bench';
 import { applyItemTool, type ItemTool, type ItemToolTarget } from '../game/engine/items/consumables';
 import { configureAudio } from '../game/ui/audio';
 import { claimItemReward, type ItemRewardKind } from '../game/engine/items/rewards';
@@ -16,7 +17,7 @@ import { DEFAULT_SEED } from '../game/engine/constants';
 import type { SeasonId } from '../game/engine/seasons/catalog';
 import { createMatch, RoundDirector } from '../game/engine/rounds/director';
 import type { BattleFrame, BattleSideInput } from '../game/engine/battle/engine';
-import { buyUnit, sellUnit, rollShop, teamSizeLimit, benchCapacity, applyCombines } from '../game/engine/shop';
+import { buyUnit, sellUnit, rollShop, teamSizeLimit, applyCombines } from '../game/engine/shop';
 import { payReroll, buyXp } from '../game/engine/economy';
 import { combineStoredItems, equipItem, equipTactician } from '../game/engine/items/inventory';
 import { getItem } from '../game/engine/items/item-defs';
@@ -106,7 +107,7 @@ type GameStore = {
   reroll: () => void;
   buyExperience: () => void;
   toggleLock: () => void;
-  moveUnit: (instanceId: string, position: HexPos | null) => void;
+  moveUnit: (instanceId: string, position: HexPos | null, benchIndex?: number) => void;
   equip: (unitInstanceId: string, itemInstanceId: string) => void;
   combineItems: (sourceId: string, targetId: string) => void;
   claimItemReward: (kind: ItemRewardKind, itemId: string) => void;
@@ -114,6 +115,7 @@ type GameStore = {
   useItemTool: (kind: ItemTool, target: ItemToolTarget) => void;
 
   chooseAugment: (augmentId: string) => void;
+  rerollAugment: (slot:number) => void;
   pickDraft: (optionIndex: number) => void;
   moveCarousel: (target: CarouselPoint, option?: number | null) => void;
   tickCarousel: (delta: number) => void;
@@ -280,8 +282,9 @@ export const useGameStore = create<GameStore>((set, get) => ({
     bump(set);
   },
 
-  moveUnit: (instanceId, position) => {
-    if (get().onlinePlayerId) { onlineBridge.send?.({ action: 'move', unit: instanceId, position }); return; }
+  moveUnit: (instanceId, position, benchIndex) => {
+    if (position !== null && benchIndex !== undefined) return;
+    if (get().onlinePlayerId) { onlineBridge.send?.({ action: 'move', unit: instanceId, position, ...(benchIndex !== undefined ? { benchIndex } : {}) }); return; }
     if (get().battleRunning) { set({ lastError: '전투 종료 후 배치를 변경할 수 있습니다.' }); return; }
     if (position && (!Number.isInteger(position.q) || !Number.isInteger(position.r) || position.q < 0 || position.q > 6 || position.r < 0 || position.r > 3)) return;
     const { director } = get();
@@ -291,18 +294,8 @@ export const useGameStore = create<GameStore>((set, get) => ({
     if (!unit) return;
 
     if (position === null) {
-      // To bench.
-      if (player.board.some((u) => u.instanceId === instanceId)) {
-        if (player.bench.length >= benchCapacity(player)) {
-          set({ lastError: '벤치가 가득 찼습니다.' });
-          return;
-        }
-        player.board = player.board.filter((u) => u.instanceId !== instanceId);
-        unit.position = null;
-        player.bench.push(unit);
-      }
-      bump(set);
-      return;
+      set({ lastError: moveToBench(player, instanceId, benchIndex) });
+      bump(set); return;
     }
 
     const occupant = player.board.find(
@@ -383,10 +376,15 @@ export const useGameStore = create<GameStore>((set, get) => ({
     if (!director || !player || get().battleRunning) return;
     const ok = applyItemTool(director.state, player, kind, target, director.rngs.get('loot'));
     if (ok) director.syncRng();
-    set({ lastError: ok ? null : '사용할 수 없습니다. 도구 수량, 대상 장비와 보관함 공간을 확인하세요.' });
+    set({ lastError: ok ? null : '사용할 수 없습니다. 도구 수량·대상 코스트·대기석/보관함 공간·공유 풀 재고를 확인하세요.' });
     bump(set);
   },
 
+  rerollAugment: (slot) => {
+    if(get().onlinePlayerId){onlineBridge.send?.({action:'augmentReroll',slot});return;}
+    const {director}=get(),player=get().human();if(!director||!player)return;
+    if(director.rerollAugment(player.id,slot)){saveToStorage(director);playSound('select');bump(set);}
+  },
   chooseAugment: (augmentId) => {
     if (get().onlinePlayerId) { onlineBridge.send?.({ action: 'augment', id: augmentId }); return; }
     const { director } = get();

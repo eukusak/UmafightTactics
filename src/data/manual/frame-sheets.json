@@ -249,10 +249,11 @@
     "rows": 6,
     "source": "docs/art-source/motions/production-144/tm_opera_o/packing.json",
     "skillId": "skill_tm_opera_o",
-    "skillSignature": "6a058a7c1d3a4b1a46bb313191dd1699a9386691158a0589b36d20aaf7be369b",
+    "skillSignature": "109653cb778f21833db1e269056f0a66cc72f29504b54872857cd0dadce66cd5",
     "skillReview": "기존 몸동작 유형과 주 대상 규칙을 자동 대조. 기존 준비·발동·회수 포즈를 새 타임라인에 재사용하고 공간 범위/연쇄/상태는 엔진 이벤트 VFX로 표현.",
     "skillReleaseFrame": 2,
-    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
+    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json",
+    "balanceCompatibilityReview": "docs/qa/adaptive-balance-motion-compatibility.json"
   },
   "narita_brian": {
     "file": "motions/narita_brian.png",
@@ -275,10 +276,11 @@
     "rows": 6,
     "source": "docs/art-source/motions/identity-revisions-2026-09-12/symboli_rudolf/packing.json",
     "skillId": "skill_symboli_rudolf",
-    "skillSignature": "ccd301ae7e36fa92ca4acb3b94e965cd1449c96fadbe37dfa1467b7d7763c055",
+    "skillSignature": "7f099e60057dfa043a8cacd34ea60ee59374f05de168d718b399e7bd12e2bc17",
     "skillReview": "All six action rows reviewed. Row 4 preserves binding_line preparation, release in column 3 and recovery; game skill data and timeline unchanged.",
     "skillReleaseFrame": 2,
-    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
+    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json",
+    "balanceCompatibilityReview": "docs/qa/adaptive-balance-motion-compatibility.json"
   },
   "air_groove": {
     "file": "motions/air_groove.png",
@@ -306,10 +308,11 @@
     "rows": 6,
     "source": "docs/art-source/motions/identity-revisions-2026-09-12/agnes_digital/packing.json",
     "skillId": "skill_agnes_digital",
-    "skillSignature": "3c6c96dada7d38990c58d902a8428f9915c155904a6748d29e67caaa46f1ef34",
+    "skillSignature": "aaa84344b9a75eb59066493ab6275e0b3d1c8dcaf2e413dfbe75367b5c8b54e0",
     "skillReview": "2026-09-13: 수치 또는 각질 VFX 키만 변경. 기존 스킬의 대상·공간 범위·효과 종류·발사 횟수·타이밍이 동일함을 비교 검수하여 기존 프레임 유지.",
     "skillReleaseFrame": 2,
-    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json"
+    "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json",
+    "balanceCompatibilityReview": "docs/qa/adaptive-balance-motion-compatibility.json"
   },
   "seiun_sky": {
     "file": "motions/seiun_sky.png",
@@ -462,7 +465,7 @@
     "rows": 6,
     "source": "docs/art-source/motions/skill-scale-2026-09-12/agnes_tachyon.json",
     "skillId": "skill_agnes_tachyon",
-    "skillSignature": "3b857d50eb10c1ab2456b994e4da174eff38c1b171fd25f746ba7fa7771bbf29",
+    "skillSignature": "bc43fc6b353919149783f29ca249d6aa5ce56317402059ac16807d76e737134a",
     "skillReview": "pull hands to the chest charging two small crests; draw one arm back and brace the other while crests enter the gloves; deliver a straight first strike followed by a visible second trailing strike accent; return to an empowered ready stance",
     "skillReleaseFrame": 2,
     "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json",
@@ -470,7 +473,8 @@
     "anchor": [
       128,
       174
-    ]
+    ],
+    "balanceCompatibilityReview": "docs/qa/adaptive-balance-motion-compatibility.json"
   },
   "admire_vega": {
     "file": "motions/admire_vega.png",
@@ -1562,7 +1566,7 @@
     "rows": 6,
     "source": "docs/art-source/motions/skill-scale-2026-09-12/gran_alegria.json",
     "skillId": "skill_gran_alegria",
-    "skillSignature": "5e134ba7ac2ef0f0fa9c0d35681fbfe188d5cab7555394469302b60a23d774d3",
+    "skillSignature": "aad70cacc6cfc1d2304abc4cd1a2b9543647abafecb354da35dd0047c1ac3415",
     "skillReview": "2026-09-13: 수치 또는 각질 VFX 키만 변경. 기존 스킬의 대상·공간 범위·효과 종류·발사 횟수·타이밍이 동일함을 비교 검수하여 기존 프레임 유지.",
     "skillReleaseFrame": 2,
     "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json",
@@ -1570,7 +1574,8 @@
     "anchor": [
       128,
       174
-    ]
+    ],
+    "balanceCompatibilityReview": "docs/qa/adaptive-balance-motion-compatibility.json"
   },
   "believe": {
     "file": "motions/believe.png",

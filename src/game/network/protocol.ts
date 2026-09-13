@@ -7,17 +7,18 @@ import type { BattleFrame } from '../engine/battle/engine';
 const id = z.string().min(1).max(80);
 const cell = z.object({ q: z.number().int().min(0).max(6), r: z.number().int().min(0).max(3) }).strict();
 export const commandSchema = z.discriminatedUnion('action', [
-  z.object({ action: z.literal('itemTool'), kind: z.enum(['REMOVER', 'REFORGER']), target: z.union([z.object({ unit: id }).strict(), z.object({ item: id }).strict()]) }).strict(),
+  z.object({ action: z.literal('itemTool'), kind: z.enum(['REMOVER', 'REFORGER', 'CLONE']), target: z.union([z.object({ unit: id }).strict(), z.object({ item: id }).strict()]) }).strict(),
   z.object({ action: z.literal('itemReward'), kind: z.enum(ITEM_REWARD_KINDS), item: id }).strict(),
   z.object({ action: z.literal('buy'), slot: z.number().int().min(0).max(8) }).strict(),
   z.object({ action: z.literal('sell'), unit: id }).strict(),
   z.object({ action: z.literal('reroll') }).strict(),
   z.object({ action: z.literal('xp') }).strict(),
   z.object({ action: z.literal('lock') }).strict(),
-  z.object({ action: z.literal('move'), unit: id, position: cell.nullable() }).strict(),
+  z.object({ action: z.literal('move'), unit: id, position: cell.nullable(), benchIndex: z.number().int().min(0).max(99).optional() }).strict(),
   z.object({ action: z.literal('equip'), unit: id, item: id }).strict(),
   z.object({ action: z.literal('combineItems'), source: id, target: id }).strict(),
   z.object({ action: z.literal('augment'), id }).strict(),
+  z.object({ action: z.literal('augmentReroll'), slot: z.number().int().min(0).max(2) }).strict(),
   z.object({ action: z.literal('carouselMove'), target: z.object({ x: z.number().finite().min(0).max(1100), y: z.number().finite().min(0).max(650) }).strict(), option: z.number().int().min(0).max(15).nullable() }).strict(),
   z.object({ action: z.literal('draft'), index: z.number().int().min(0).max(15) }).strict(),
 ]);

@@ -1,0 +1,584 @@
+{
+  "date": "2026-09-13",
+  "reason": "Five bounded skill power corrections after mirrored roster matchup screening. Timelines, geometry, choreography and image atlases are unchanged.",
+  "units": {
+    "tm_opera_o": {
+      "before": {
+        "id": "skill_tm_opera_o",
+        "displayName": "티엠 오페라 오 · 결투 방벽 (2000 有馬記念(GI))",
+        "template": "SHIELD_TAUNT",
+        "baseValues": [
+          373,
+          414,
+          32
+        ],
+        "starMultipliers": [
+          1,
+          1.45,
+          6
+        ],
+        "damageType": "NONE",
+        "targetRule": "SELF",
+        "manaCost": 90,
+        "effects": [
+          {
+            "kind": "SHIELD_FLAT",
+            "value": 643,
+            "duration": 4,
+            "target": "SELF"
+          },
+          {
+            "kind": "TAUNT",
+            "duration": 2,
+            "target": "ALL_ENEMIES",
+            "radius": 2,
+            "maxTargets": 3
+          },
+          {
+            "kind": "CC_IMMUNE",
+            "duration": 1.5,
+            "target": "SELF"
+          }
+        ],
+        "vfxKey": "vfx_shield",
+        "description": "[결투 방벽] 643 보호막(4초), 1.5초 제어 면역. 주변 2칸 최대 3명을 2초 도발. 근거: 2000 有馬記念(GI) 1위.",
+        "choreography": {
+          "windup": 0.45,
+          "recovery": 0.3,
+          "pulseInterval": 0.3,
+          "color": "#ffe5a1",
+          "variant": "challenge_bastion",
+          "accent": "#ffc974",
+          "emblem": 14,
+          "label": "결투 방벽",
+          "motion": "STRIKE"
+        }
+      },
+      "after": {
+        "id": "skill_tm_opera_o",
+        "displayName": "티엠 오페라 오 · 결투 방벽 (2000 有馬記念(GI))",
+        "template": "SHIELD_TAUNT",
+        "baseValues": [
+          373,
+          414,
+          32
+        ],
+        "starMultipliers": [
+          1,
+          1.45,
+          6
+        ],
+        "damageType": "NONE",
+        "targetRule": "SELF",
+        "manaCost": 90,
+        "effects": [
+          {
+            "kind": "SHIELD_FLAT",
+            "value": 729,
+            "duration": 4,
+            "target": "SELF"
+          },
+          {
+            "kind": "TAUNT",
+            "duration": 2,
+            "target": "ALL_ENEMIES",
+            "radius": 2,
+            "maxTargets": 3
+          },
+          {
+            "kind": "CC_IMMUNE",
+            "duration": 1.5,
+            "target": "SELF"
+          }
+        ],
+        "vfxKey": "vfx_shield",
+        "description": "[결투 방벽] 729 보호막(4초), 1.5초 제어 면역. 주변 2칸 최대 3명을 2초 도발. 근거: 2000 有馬記念(GI) 1위.",
+        "choreography": {
+          "windup": 0.45,
+          "recovery": 0.3,
+          "pulseInterval": 0.3,
+          "color": "#ffe5a1",
+          "variant": "challenge_bastion",
+          "accent": "#ffc974",
+          "emblem": 14,
+          "label": "결투 방벽",
+          "motion": "STRIKE"
+        }
+      },
+      "beforeSignature": "6a058a7c1d3a4b1a46bb313191dd1699a9386691158a0589b36d20aaf7be369b",
+      "skillSignature": "109653cb778f21833db1e269056f0a66cc72f29504b54872857cd0dadce66cd5"
+    },
+    "symboli_rudolf": {
+      "before": {
+        "id": "skill_symboli_rudolf",
+        "displayName": "심볼리 루돌프 · 관통 구속 (1985 有馬記念(GI))",
+        "template": "CONTROL",
+        "baseValues": [
+          368,
+          409,
+          32
+        ],
+        "starMultipliers": [
+          1,
+          1.45,
+          6
+        ],
+        "damageType": "MAGIC",
+        "targetRule": "LARGEST_ENEMY_CLUSTER",
+        "manaCost": 90,
+        "effects": [
+          {
+            "kind": "DAMAGE",
+            "value": 258,
+            "damageType": "MAGIC",
+            "target": "LARGEST_ENEMY_CLUSTER",
+            "shape": "LINE",
+            "range": 6,
+            "maxTargets": 4
+          },
+          {
+            "kind": "APPLY_STATUS",
+            "status": "STUN",
+            "duration": 1,
+            "target": "LARGEST_ENEMY_CLUSTER",
+            "shape": "LINE",
+            "range": 6,
+            "maxTargets": 4
+          }
+        ],
+        "vfxKey": "vfx_stun",
+        "description": "[관통 구속] 직선 6칸 최대 4명에게 258 마법 피해와 1초 기절. 근거: 1985 有馬記念(GI) 1위.",
+        "choreography": {
+          "windup": 0.45,
+          "recovery": 0.3,
+          "pulseInterval": 0.3,
+          "color": "#8de2ff",
+          "variant": "binding_line",
+          "accent": "#83e7bb",
+          "emblem": 16,
+          "label": "관통 구속",
+          "motion": "STRIKE"
+        }
+      },
+      "after": {
+        "id": "skill_symboli_rudolf",
+        "displayName": "심볼리 루돌프 · 관통 구속 (1985 有馬記念(GI))",
+        "template": "CONTROL",
+        "baseValues": [
+          368,
+          409,
+          32
+        ],
+        "starMultipliers": [
+          1,
+          1.45,
+          6
+        ],
+        "damageType": "MAGIC",
+        "targetRule": "LARGEST_ENEMY_CLUSTER",
+        "manaCost": 90,
+        "effects": [
+          {
+            "kind": "DAMAGE",
+            "value": 245,
+            "damageType": "MAGIC",
+            "target": "LARGEST_ENEMY_CLUSTER",
+            "shape": "LINE",
+            "range": 6,
+            "maxTargets": 4
+          },
+          {
+            "kind": "APPLY_STATUS",
+            "status": "STUN",
+            "duration": 1,
+            "target": "LARGEST_ENEMY_CLUSTER",
+            "shape": "LINE",
+            "range": 6,
+            "maxTargets": 4
+          }
+        ],
+        "vfxKey": "vfx_stun",
+        "description": "[관통 구속] 직선 6칸 최대 4명에게 245 마법 피해와 1초 기절. 근거: 1985 有馬記念(GI) 1위.",
+        "choreography": {
+          "windup": 0.45,
+          "recovery": 0.3,
+          "pulseInterval": 0.3,
+          "color": "#8de2ff",
+          "variant": "binding_line",
+          "accent": "#83e7bb",
+          "emblem": 16,
+          "label": "관통 구속",
+          "motion": "STRIKE"
+        }
+      },
+      "beforeSignature": "ccd301ae7e36fa92ca4acb3b94e965cd1449c96fadbe37dfa1467b7d7763c055",
+      "skillSignature": "7f099e60057dfa043a8cacd34ea60ee59374f05de168d718b399e7bd12e2bc17"
+    },
+    "agnes_digital": {
+      "before": {
+        "id": "skill_agnes_digital",
+        "displayName": "아그네스 디지털 · 주력 저격 (2001 天皇賞(秋)(GI))",
+        "template": "MULTI_SHOT",
+        "baseValues": [
+          244,
+          271,
+          31
+        ],
+        "starMultipliers": [
+          1,
+          1.45,
+          2.2
+        ],
+        "damageType": "PHYSICAL",
+        "targetRule": "CURRENT_TARGET",
+        "manaCost": 70,
+        "effects": [
+          {
+            "kind": "DAMAGE",
+            "value": 306,
+            "damageType": "PHYSICAL",
+            "target": "HIGHEST_AD_ENEMY"
+          },
+          {
+            "kind": "STAT_MUL",
+            "stat": "attackDamage",
+            "value": -0.15,
+            "duration": 3,
+            "refresh": true,
+            "target": "HIGHEST_AD_ENEMY"
+          }
+        ],
+        "vfxKey": "vfx_projectile",
+        "description": "[주력 저격] 공격력이 가장 높은 적을 저격해 306 물리 피해와 공격력 15% 감소(3초). 근거: 2001 天皇賞(秋)(GI) 1위.",
+        "choreography": {
+          "windup": 0.3,
+          "recovery": 0.3,
+          "pulseInterval": 0.2,
+          "color": "#d5a4ff",
+          "variant": "seeking_bolt",
+          "accent": "#b6c6ff",
+          "emblem": 18,
+          "label": "주력 저격",
+          "motion": "STRIKE"
+        }
+      },
+      "after": {
+        "id": "skill_agnes_digital",
+        "displayName": "아그네스 디지털 · 주력 저격 (2001 天皇賞(秋)(GI))",
+        "template": "MULTI_SHOT",
+        "baseValues": [
+          244,
+          271,
+          31
+        ],
+        "starMultipliers": [
+          1,
+          1.45,
+          2.2
+        ],
+        "damageType": "PHYSICAL",
+        "targetRule": "CURRENT_TARGET",
+        "manaCost": 70,
+        "effects": [
+          {
+            "kind": "DAMAGE",
+            "value": 330,
+            "damageType": "PHYSICAL",
+            "target": "HIGHEST_AD_ENEMY"
+          },
+          {
+            "kind": "STAT_MUL",
+            "stat": "attackDamage",
+            "value": -0.15,
+            "duration": 3,
+            "refresh": true,
+            "target": "HIGHEST_AD_ENEMY"
+          }
+        ],
+        "vfxKey": "vfx_projectile",
+        "description": "[주력 저격] 공격력이 가장 높은 적을 저격해 330 물리 피해와 공격력 15% 감소(3초). 근거: 2001 天皇賞(秋)(GI) 1위.",
+        "choreography": {
+          "windup": 0.3,
+          "recovery": 0.3,
+          "pulseInterval": 0.2,
+          "color": "#d5a4ff",
+          "variant": "seeking_bolt",
+          "accent": "#b6c6ff",
+          "emblem": 18,
+          "label": "주력 저격",
+          "motion": "STRIKE"
+        }
+      },
+      "beforeSignature": "3c6c96dada7d38990c58d902a8428f9915c155904a6748d29e67caaa46f1ef34",
+      "skillSignature": "aaa84344b9a75eb59066493ab6275e0b3d1c8dcaf2e413dfbe75367b5c8b54e0"
+    },
+    "agnes_tachyon": {
+      "before": {
+        "id": "skill_agnes_tachyon",
+        "displayName": "아그네스 타키온 · 가속 장전 (2001 皐月賞(GI))",
+        "template": "MULTI_SHOT",
+        "baseValues": [
+          308,
+          342,
+          32
+        ],
+        "starMultipliers": [
+          1,
+          1.45,
+          3.6
+        ],
+        "damageType": "PHYSICAL",
+        "targetRule": "CURRENT_TARGET",
+        "manaCost": 70,
+        "effects": [
+          {
+            "kind": "STAT_MUL",
+            "stat": "attackSpeed",
+            "value": 0.558,
+            "duration": 4,
+            "refresh": true,
+            "target": "SELF"
+          },
+          {
+            "kind": "STAT_MUL",
+            "stat": "attackDamage",
+            "value": 0.248,
+            "duration": 4,
+            "refresh": true,
+            "target": "SELF"
+          },
+          {
+            "kind": "DAMAGE",
+            "value": 126,
+            "damageType": "PHYSICAL",
+            "target": "CURRENT_TARGET",
+            "delay": 0
+          },
+          {
+            "kind": "DAMAGE",
+            "value": 126,
+            "damageType": "PHYSICAL",
+            "target": "CURRENT_TARGET",
+            "delay": 0.2
+          }
+        ],
+        "vfxKey": "vfx_projectile",
+        "description": "[가속 장전] 4초간 공격속도 +55.8%, 공격력 +24.8%. 장전 타격으로 126 물리 피해를 2회. 근거: 2001 皐月賞(GI) 1위.",
+        "choreography": {
+          "windup": 0.15,
+          "recovery": 0.3,
+          "pulseInterval": 0.2,
+          "color": "#ffe5a1",
+          "variant": "carry_charge",
+          "accent": "#ffc974",
+          "emblem": 30,
+          "label": "가속 장전",
+          "motion": "PULSE"
+        }
+      },
+      "after": {
+        "id": "skill_agnes_tachyon",
+        "displayName": "아그네스 타키온 · 가속 장전 (2001 皐月賞(GI))",
+        "template": "MULTI_SHOT",
+        "baseValues": [
+          308,
+          342,
+          32
+        ],
+        "starMultipliers": [
+          1,
+          1.45,
+          3.6
+        ],
+        "damageType": "PHYSICAL",
+        "targetRule": "CURRENT_TARGET",
+        "manaCost": 70,
+        "effects": [
+          {
+            "kind": "STAT_MUL",
+            "stat": "attackSpeed",
+            "value": 0.558,
+            "duration": 4,
+            "refresh": true,
+            "target": "SELF"
+          },
+          {
+            "kind": "STAT_MUL",
+            "stat": "attackDamage",
+            "value": 0.248,
+            "duration": 4,
+            "refresh": true,
+            "target": "SELF"
+          },
+          {
+            "kind": "DAMAGE",
+            "value": 119,
+            "damageType": "PHYSICAL",
+            "target": "CURRENT_TARGET",
+            "delay": 0
+          },
+          {
+            "kind": "DAMAGE",
+            "value": 119,
+            "damageType": "PHYSICAL",
+            "target": "CURRENT_TARGET",
+            "delay": 0.2
+          }
+        ],
+        "vfxKey": "vfx_projectile",
+        "description": "[가속 장전] 4초간 공격속도 +55.8%, 공격력 +24.8%. 장전 타격으로 119 물리 피해를 2회. 근거: 2001 皐月賞(GI) 1위.",
+        "choreography": {
+          "windup": 0.15,
+          "recovery": 0.3,
+          "pulseInterval": 0.2,
+          "color": "#ffe5a1",
+          "variant": "carry_charge",
+          "accent": "#ffc974",
+          "emblem": 30,
+          "label": "가속 장전",
+          "motion": "PULSE"
+        }
+      },
+      "beforeSignature": "3b857d50eb10c1ab2456b994e4da174eff38c1b171fd25f746ba7fa7771bbf29",
+      "skillSignature": "bc43fc6b353919149783f29ca249d6aa5ce56317402059ac16807d76e737134a"
+    },
+    "gran_alegria": {
+      "before": {
+        "id": "skill_gran_alegria",
+        "displayName": "그란 알레그리아 · 추격 연타 (2020 マイルチャンピオンS(GI))",
+        "template": "DASH_LINE",
+        "baseValues": [
+          304,
+          338,
+          32
+        ],
+        "starMultipliers": [
+          1,
+          1.45,
+          3.6
+        ],
+        "damageType": "PHYSICAL",
+        "targetRule": "CURRENT_TARGET",
+        "manaCost": 70,
+        "effects": [
+          {
+            "kind": "DASH",
+            "value": 3,
+            "target": "CURRENT_TARGET"
+          },
+          {
+            "kind": "DAMAGE",
+            "value": 128,
+            "damageType": "PHYSICAL",
+            "target": "CURRENT_TARGET",
+            "delay": 0
+          },
+          {
+            "kind": "DAMAGE",
+            "value": 128,
+            "damageType": "PHYSICAL",
+            "target": "CURRENT_TARGET",
+            "delay": 0.2
+          },
+          {
+            "kind": "DAMAGE",
+            "value": 128,
+            "damageType": "PHYSICAL",
+            "target": "CURRENT_TARGET",
+            "delay": 0.4
+          },
+          {
+            "kind": "STAT_MUL",
+            "stat": "attackSpeed",
+            "value": 0.248,
+            "duration": 4,
+            "refresh": true,
+            "target": "SELF"
+          }
+        ],
+        "vfxKey": "vfx_dash_senko",
+        "description": "[추격 연타] 돌진 후 한 적에게 128 물리 피해를 3회, 4초간 공격속도 +24.8%. 대상 사망 시 남은 타격은 재탐색. 근거: 2020 マイルチャンピオンS(GI) 1위.",
+        "choreography": {
+          "windup": 0.3,
+          "recovery": 0.3,
+          "pulseInterval": 0.2,
+          "color": "#b6c6ff",
+          "variant": "pursuit_flurry",
+          "accent": "#8de2ff",
+          "emblem": 125,
+          "label": "추격 연타",
+          "motion": "PULSE"
+        }
+      },
+      "after": {
+        "id": "skill_gran_alegria",
+        "displayName": "그란 알레그리아 · 추격 연타 (2020 マイルチャンピオンS(GI))",
+        "template": "DASH_LINE",
+        "baseValues": [
+          304,
+          338,
+          32
+        ],
+        "starMultipliers": [
+          1,
+          1.45,
+          3.6
+        ],
+        "damageType": "PHYSICAL",
+        "targetRule": "CURRENT_TARGET",
+        "manaCost": 70,
+        "effects": [
+          {
+            "kind": "DASH",
+            "value": 3,
+            "target": "CURRENT_TARGET"
+          },
+          {
+            "kind": "DAMAGE",
+            "value": 141,
+            "damageType": "PHYSICAL",
+            "target": "CURRENT_TARGET",
+            "delay": 0
+          },
+          {
+            "kind": "DAMAGE",
+            "value": 141,
+            "damageType": "PHYSICAL",
+            "target": "CURRENT_TARGET",
+            "delay": 0.2
+          },
+          {
+            "kind": "DAMAGE",
+            "value": 141,
+            "damageType": "PHYSICAL",
+            "target": "CURRENT_TARGET",
+            "delay": 0.4
+          },
+          {
+            "kind": "STAT_MUL",
+            "stat": "attackSpeed",
+            "value": 0.248,
+            "duration": 4,
+            "refresh": true,
+            "target": "SELF"
+          }
+        ],
+        "vfxKey": "vfx_dash_senko",
+        "description": "[추격 연타] 돌진 후 한 적에게 141 물리 피해를 3회, 4초간 공격속도 +24.8%. 대상 사망 시 남은 타격은 재탐색. 근거: 2020 マイルチャンピオンS(GI) 1위.",
+        "choreography": {
+          "windup": 0.3,
+          "recovery": 0.3,
+          "pulseInterval": 0.2,
+          "color": "#b6c6ff",
+          "variant": "pursuit_flurry",
+          "accent": "#8de2ff",
+          "emblem": 125,
+          "label": "추격 연타",
+          "motion": "PULSE"
+        }
+      },
+      "beforeSignature": "5e134ba7ac2ef0f0fa9c0d35681fbfe188d5cab7555394469302b60a23d774d3",
+      "skillSignature": "aad70cacc6cfc1d2304abc4cd1a2b9543647abafecb354da35dd0047c1ac3415"
+    }
+  }
+}

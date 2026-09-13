@@ -1,3 +1,4 @@
+import { unitAugmentValue } from './knowledge';
 import { getAugment } from '../augments/augment-defs';
 import { augmentApplies } from '../augments/runtime';
 import { getUnitDef } from '../roster';
@@ -11,9 +12,9 @@ export function augmentScore(player: PlayerState, id: string, stage: number, sco
   const aug = getAugment(id), owned = [...player.board, ...player.bench], counts = lineupTraits(player, player.board);
   const eligible = owned.filter(u => augmentApplies(aug, { ...u, cost: getUnitDef(u.unitDefId).cost, traits: unitTraits(player, u) }, counts));
   let score = 0;
-  const coverage = eligible.length / Math.max(1, owned.length);
+
   const combatWeight = player.hp < 35 ? 1.6 : stage >= 4 ? 1.2 : 1;
-  score += aug.teamEffects.length ? combatWeight * coverage * (4 + Math.min(3, aug.teamEffects.length)) : 0;
+  score += combatWeight * eligible.reduce((n,u)=>n+unitAugmentValue(player,u,counts,unitTraits(player,u),id),0) / Math.max(1,player.board.length) * 2;
   if (aug.activeTraitScaling) score *= Math.min(1.5, [...counts].filter(([t,n]) => activeTierIndex(getTrait(t),n) >= 0).length / 4);
   if (aug.filter?.unitIds) {
     const hero = aug.filter.unitIds[0], copies = owned.filter(u => u.unitDefId === hero).reduce((n,u)=>n+u.sourceCopies,0);
@@ -30,11 +31,12 @@ export function augmentScore(player: PlayerState, id: string, stage: number, sco
     score += (econ.maxInterestDelta ?? 0) * (stage < 4 && player.hp > 40 ? 3 : .6);
     score += (econ.freeRefreshPerRound ?? 0) * 2.5 + (econ.cheapRerollCount ?? 0) * 1.6;
     if (player.aiPlan?.mode.startsWith('REROLL')) score += (econ.pairHunterWeight ?? 0) * 25 + (econ.duplicateWeightLowCost ?? 0) * 25;
+    score += (econ.baseIncomeDelta??0)*(stage<4?3:1) + (econ.benchSlots??0)*(player.bench.length>=6?2:.3) + (econ.itemSlots??0)*(player.items.length>=8?2:.3);
     score += (econ.teamSizeBonus ?? 0) * 9 + (econ.shopSlots ?? 0) * 5;
     if (player.hp < 35 && !econ.instantGold && !econ.teamSizeBonus) score -= 2;
   }
   if (aug.grants?.completedChoice || aug.grants?.radiantChoice || aug.grants?.componentChoice) score += 5 + (owned.some(u=>u.items.length<3) ? 2 : -3);
-  if (aug.grants?.itemId) score += Math.max(0, ...owned.map(u=>itemFit(u, aug.grants!.itemId!))) * .6;
+  if (aug.grants?.itemId) score += Math.max(0, ...owned.map(u=>itemFit(u, aug.grants!.itemId!, player))) * .6;
   if (aug.rememberItem || aug.growth) score += stage < 4 ? 4 : 1;
   if (aug.roundReward) {
     const r = aug.roundReward;

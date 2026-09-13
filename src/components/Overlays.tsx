@@ -1,3 +1,4 @@
+import { playSound } from '../game/ui/audio';
 /** Augment select, twinkle draft, battle result banner and the dev panel. */
 import { useEffect, useRef, useState } from 'react';
 import { useGameStore } from '../store/gameStore';
@@ -16,7 +17,7 @@ export function AugmentOverlay(): JSX.Element | null {
   useEffect(() => () => clearTimeout(timer.current), []);
   const select = (id: string) => {
     if (timer.current) return;
-    setSelected(id);
+    setSelected(id);playSound('augment');
     timer.current = setTimeout(() => { choose(id); timer.current = undefined; setSelected(null); }, 550);
   };
   if (!match || !human) return null;
@@ -31,17 +32,17 @@ export function AugmentOverlay(): JSX.Element | null {
           증강체 선택 — {GRADE_LABEL[offer.grade]}
         </h2>
         <p className="muted" style={{ margin: '6px 0 0' }}>
-          하나를 선택하면 남은 준비 단계가 이어집니다.
+          카드마다 무료 새로고침 1회 · 선택하면 준비 단계가 이어집니다.
         </p>
         <div className="choice-grid">
-          {offer.options.map((id) => {
+          {offer.options.map((id,index) => {
             const aug = AUGMENT_BY_ID.get(id);
             return (
-              <button key={id} className={`choice-card${selected === id ? ' chosen' : ''}`} disabled={selected !== null} onClick={() => select(id)}
+              <div className="augment-slot" key={index}><button key={id} className={`choice-card${selected === id ? ' chosen' : ''}`} disabled={selected !== null} onClick={() => select(id)}
                 style={{ borderColor: GRADE_COLOR[offer.grade] }}>
                 <img src={`/assets/augments/${aug?.iconId ?? id}.png`} alt="" width={82} height={82} /><h4>{aug?.name ?? id}</h4>
                 <p>{aug?.description ?? ''}</p>
-              </button>
+              </button><button className="augment-reroll" aria-label={`${index+1}번 증강 새로고침`} disabled={selected!==null||!!offer.rerolled?.[index]} onClick={()=>useGameStore.getState().rerollAugment(index)}>{offer.rerolled?.[index]?'새로고침 사용 완료':'⟳ 무료 새로고침 · 1회'}</button></div>
             );
           })}
         </div>

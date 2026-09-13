@@ -1,9 +1,15 @@
-import { lineupScore, unitPower } from './evaluation';
+import { lineupScore, unitPower, lineupTraits, unitTraits } from './evaluation';
+import { effectUtility } from './knowledge';
+import { getAugment } from '../augments/augment-defs';
+import { augmentApplies, augmentEffects } from '../augments/runtime';
+import { getItem } from '../items/item-defs';
+import { getTrait, activeTierIndex } from '../traits/trait-defs';
+import { hexDistance } from '../battle/hex';
 import type { PublicBoard } from './strategy';
 /** Board placement search (spec §26.5). Bounded to 40 candidate layouts. */
 import { BOARD_COLS, BOARD_ROWS_PER_SIDE } from '../constants';
 import { getUnitDef } from '../roster';
-import type { Role } from '../types';
+import type { Role, EffectDef, TraitId } from '../types';
 import type { HexPos, PlayerState, UnitInstance } from '../state';
 import { teamSizeLimit } from '../shop';
 
@@ -21,7 +27,7 @@ const ROLE_ROW_WEIGHT: Record<Role, number> = {
 
 export type Layout = { instanceId: string; position: HexPos }[];
 
-function scoreLayout(layout: Layout, units: Map<string, UnitInstance>, spreadCarries: boolean, opponents: PublicBoard[] = []): number {
+function scoreLayout(layout: Layout, units: Map<string, UnitInstance>, spreadCarries: boolean, opponents: PublicBoard[] = [], effects:Map<string,EffectDef[]> = new Map()): number {
   let score = 0;
   const byCell = new Map<string, Role>();
 
@@ -84,6 +90,20 @@ function scoreLayout(layout: Layout, units: Map<string, UnitInstance>, spreadCar
       for (const other of layout) if (other !== slot && Math.abs(other.position.q - slot.position.q) <= 1 && other.position.r === slot.position.r) score -= .65;
     }
   }
+  for(const slot of layout) {
+    const unit=units.get(slot.instanceId)!;
+    const adjacent=layout.filter(other=>other!==slot && hexDistance(slot.position,other.position)===1).length;
+    for(const effect of effects.get(unit.instanceId)??[]) {
+      const value=Math.max(.5,effectUtility(unit,effect));
+      switch(effect.trigger?.when) {
+        case 'NO_ADJACENT_ALLIES':score+=adjacent===0?value*2:-value;break;
+        case 'ADJACENT_ALLIES_AT_LEAST':score+=adjacent>=(effect.trigger.threshold??0)?value*2:-value;break;
+        case 'IN_FRONT_ROWS':score+=slot.position.r<=1?value:0;break;
+        case 'IN_BACK_ROWS':score+=slot.position.r>=2?value:0;break;
+      }
+      if(effect.target==='ALL_ALLIES' && effect.radius) score+=layout.filter(other=>(!effect.excludeSelf||other!==slot)&&hexDistance(slot.position,other.position)<=effect.radius!).length*value*.4;
+    }
+  }
   return score;
 }
 
@@ -91,22 +111,25 @@ const selectionCache = new WeakMap<PlayerState, { key: string; units: UnitInstan
 
 /** Greedy team selection followed by swap search scores complete trait breakpoints. */
 export function chooseFieldedUnits(player: PlayerState): UnitInstance[] {
-  const key = `${player.seasonId}:${teamSizeLimit(player)}:${JSON.stringify(player.bonusTraits)}:` + [...player.board, ...player.bench].map(u => `${u.instanceId}/${u.unitDefId}/${u.star}/${u.items.join(',')}`).sort().join(';');
+  const key = `${player.augments.join(',')}:${JSON.stringify(player.augmentProgress)}:${player.seasonId}:${teamSizeLimit(player)}:${JSON.stringify(player.bonusTraits)}:` + [...player.board, ...player.bench].map(u => `${u.instanceId}/${u.unitDefId}/${u.star}/${u.items.join(',')}`).sort().join(';');
   const cached = selectionCache.get(player);
   if (cached?.key === key) return cached.units.slice();
   const all = [...player.board, ...player.bench].sort((a, b) => unitPower(b) - unitPower(a) || a.instanceId.localeCompare(b.instanceId));
   const limit = Math.min(teamSizeLimit(player), all.length);
+  const scores=new Map<string,number>();
+  const evaluate=(units:UnitInstance[])=>{const key=units.map(u=>u.instanceId).sort().join('|');let value=scores.get(key);if(value===undefined){value=lineupScore(player,units);scores.set(key,value);}return value;};
   let selected: UnitInstance[] = [];
   while (selected.length < limit) {
-    const next = all.filter(u => !selected.includes(u)).sort((a, b) => lineupScore(player, [...selected, b]) - lineupScore(player, [...selected, a]) || a.instanceId.localeCompare(b.instanceId))[0];
-    selected.push(next);
+    let next:UnitInstance|undefined,best=-Infinity;
+    for(const unit of all)if(!selected.includes(unit)){const value=evaluate([...selected,unit]);if(value>best || value===best && unit.instanceId.localeCompare(next!.instanceId)<0){best=value;next=unit;}}
+    selected.push(next!);
   }
-  let score = lineupScore(player, selected);
+  let score = evaluate(selected);
   for (let pass = 0; pass < 2; pass++) for (const candidate of all.filter(u => !selected.includes(u))) {
     for (let i = 0; i < selected.length; i++) {
       if (selected.includes(candidate)) break;
       const next = selected.slice(); next[i] = candidate;
-      const value = lineupScore(player, next);
+      const value = evaluate(next);
       if (value > score + .01) { selected = next; score = value; }
     }
   }
@@ -125,6 +148,21 @@ function preferredRow(unit: UnitInstance): number {
 export function planPlacement(player: PlayerState, spreadCarries: boolean, opponents: PublicBoard[] = []): Layout {
   const fielded = chooseFieldedUnits(player);
   const units = new Map(fielded.map((u) => [u.instanceId, u]));
+  const counts=lineupTraits(player,fielded),effects=new Map<string,EffectDef[]>();
+  for(const unit of fielded) {
+    const def=getUnitDef(unit.unitDefId),traits=unitTraits(player,unit);
+    const list=[...def.skill.effects.filter(e=>e.target==='ALL_ALLIES'&&e.radius),...unit.items.flatMap(id=>getItem(id).effects)];
+    for(const id of player.augments) {
+      const aug=getAugment(id);
+      if(!augmentApplies(aug,{unitDefId:def.id,cost:def.cost,items:unit.items,traits},counts))continue;
+      list.push(...augmentEffects(aug,player.augmentProgress??{},counts).filter(e=>!e.tag?.startsWith('TRAIT:')||traits.includes(e.tag.slice(6) as TraitId)),...(aug.skillUpgrade?.append??[]));
+    }
+    for(const [id,count] of counts) {
+      const trait=getTrait(id),tier=activeTierIndex(trait,count);
+      if(tier>=0)list.push(...trait.tiers[tier].effects.filter(e=>traits.includes(id)||e.target==='ALL_ALLIES'));
+    }
+    effects.set(unit.instanceId,list.filter(e=>['NO_ADJACENT_ALLIES','ADJACENT_ALLIES_AT_LEAST','IN_FRONT_ROWS','IN_BACK_ROWS'].includes(e.trigger?.when??'')||e.target==='ALL_ALLIES'&&e.radius));
+  }
   if (!fielded.length) return [];
 
   const cells: HexPos[] = [];
@@ -146,7 +184,7 @@ export function planPlacement(player: PlayerState, spreadCarries: boolean, oppon
     const cell = cells.splice(idx >= 0 ? idx : 0, 1)[0];
     return { instanceId: u.instanceId, position: cell };
   });
-  let bestScore = scoreLayout(best, units, spreadCarries, opponents);
+  let bestScore = scoreLayout(best, units, spreadCarries, opponents, effects);
 
   let evaluated = 1;
   for (let i = 0; i < best.length && evaluated < MAX_CANDIDATES; i += 1) {
@@ -156,7 +194,7 @@ export function planPlacement(player: PlayerState, spreadCarries: boolean, oppon
       candidate[i].position = candidate[j].position;
       candidate[j].position = tmp;
       evaluated += 1;
-      const score = scoreLayout(candidate, units, spreadCarries, opponents);
+      const score = scoreLayout(candidate, units, spreadCarries, opponents, effects);
       if (score > bestScore) { best = candidate; bestScore = score; }
     }
   }
@@ -166,7 +204,7 @@ export function planPlacement(player: PlayerState, spreadCarries: boolean, oppon
       if (best.some(slot => slot.position.q === q && slot.position.r === r)) continue;
       const candidate = best.map(slot => ({ ...slot, position: { ...slot.position } }));
       candidate[i].position = { q, r }; evaluated++;
-      const score = scoreLayout(candidate, units, spreadCarries, opponents);
+      const score = scoreLayout(candidate, units, spreadCarries, opponents, effects);
       if (score > bestScore + .01) { best = candidate; bestScore = score; }
     }
   }

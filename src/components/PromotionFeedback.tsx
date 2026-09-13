@@ -1,3 +1,5 @@
+import { createPortal } from 'react-dom';
+import { playSound } from '../game/ui/audio';
 import { useEffect, useRef, useState } from 'react';
 import { useGameStore } from '../store/gameStore';
 import { getUnitDef } from '../game/engine/roster';
@@ -25,7 +27,7 @@ function PromotionEffect({ url }: { url: string }): JSX.Element {
 export function PromotionFeedback(): JSX.Element | null {
   const revision = useGameStore((s) => s.revision);
   const previous = useRef<Map<string, { id: string; star: number }> | null>(null);
-  const [promotions, setPromotions] = useState<Array<{ id: string; name: string; star: number; effect: string | null }>>([]);
+  const [promotions, setPromotions] = useState<Array<{ id: string; instanceId:string; name: string; star: number; effect: string | null }>>([]);
   const timer = useRef<ReturnType<typeof setTimeout>>();
 
   useEffect(() => {
@@ -43,10 +45,11 @@ export function PromotionFeedback(): JSX.Element | null {
     });
     previous.current = new Map(units.map((unit) => [unit.instanceId, { id: unit.unitDefId, star: unit.star }]));
     if (!upgraded.length) return;
+    playSound(upgraded.some(u=>u.star===3)?'promote3':'promote2');
     setPromotions(upgraded.map((unit) => {
       const def = getUnitDef(unit.unitDefId);
       const key = unit.star === 3 ? (def.cost === 5 ? 'vfx_cost5_star3' : 'vfx_star_3') : 'vfx_star_2';
-      return { id: def.id, name: def.nameKo, star: unit.star, effect: assetUrl(`vfx/${key}.png`) };
+      return { id: def.id, instanceId:unit.instanceId, name: def.nameKo, star: unit.star, effect: assetUrl(`vfx/${key}.png`) };
     }));
     clearTimeout(timer.current);
     timer.current = setTimeout(() => setPromotions([]), 2200);
@@ -58,6 +61,7 @@ export function PromotionFeedback(): JSX.Element | null {
     <div className="promotion-feedback" role="status" aria-live="polite">
       {promotions.map((unit) => (
         <div className="promotion-card" key={`${unit.id}-${unit.star}`}>
+          {(() => {const anchor=document.querySelector(`.arena-unit[data-unit-id="${unit.instanceId}"] .arena-unit-touch,.bench-slot[data-unit-id="${unit.instanceId}"]`);return anchor?createPortal(<span className={`promotion-local star-${unit.star}`} aria-hidden="true"><i/><i/><b>{'★'.repeat(unit.star)}</b></span>,anchor):null;})()}
           <Portrait id={unit.id} name={unit.name} size={58} />
           {unit.effect && <PromotionEffect url={unit.effect} />}
           <div><strong>{unit.name}</strong><div className="gold-text">{'★'.repeat(unit.star)} 합성 완료</div></div>

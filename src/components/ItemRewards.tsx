@@ -1,3 +1,4 @@
+import { matchItemDescription } from '../game/ui/match-descriptions';
 import { useState } from 'react';
 import { useGameStore } from '../store/gameStore';
 import { isItemReward, itemRewardOptions, type ItemRewardKind } from '../game/engine/items/rewards';
@@ -23,7 +24,8 @@ function RewardChoice({
 }): JSX.Element {
   const options = itemRewardOptions(kind);
   const [id, setId] = useState(options[0]);
-  const item = getItem(id);
+  const player = useGameStore(s=>s.human());
+  const description = matchItemDescription(id, player ?? undefined).description;
   return (
     <details
       className="item-reward"
@@ -43,8 +45,8 @@ function RewardChoice({
         </select>
       </label>
       <div style={{ display: 'flex', gap: 8, alignItems: 'start', marginTop: 8 }}>
-        <ItemIcon itemId={id} size={32} />
-        <p style={{ margin: 0, fontSize: 12 }}>{item.description}</p>
+        <ItemIcon itemId={id} size={32} title={description} />
+        <p style={{ margin: 0, fontSize: 12 }}>{description}</p>
       </div>
       <button
         disabled={disabled}

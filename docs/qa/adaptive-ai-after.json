@@ -1,0 +1,186 @@
+{
+  "seed": 20260913,
+  "note": "Seeded all-AI sample; diagnostic comparisons, not human ladder win rates.",
+  "rows": [
+    {
+      "seasonId": "s1",
+      "matches": 2,
+      "averageRounds": 32,
+      "battles": 257,
+      "overtimeRate": 0.32684824902723736,
+      "drawRate": 0.06614785992217899,
+      "poolViolations": 0,
+      "profiles": {
+        "ECONOMY": 7,
+        "TRAIT_FOCUS": 5,
+        "AP_FOCUS": 1.5,
+        "REROLL": 5.5,
+        "FAST_LEVEL": 3.3333333333333335,
+        "AD_FOCUS": 3,
+        "BALANCED": 5.5
+      },
+      "styles": {
+        "nige": {
+          "boards": 13,
+          "top4": 7
+        },
+        "senko": {
+          "boards": 8,
+          "top4": 4
+        },
+        "sashi": {
+          "boards": 11,
+          "top4": 7
+        },
+        "oikomi": {
+          "boards": 3,
+          "top4": 0
+        }
+      }
+    },
+    {
+      "seasonId": "s2",
+      "matches": 2,
+      "averageRounds": 33,
+      "battles": 268,
+      "overtimeRate": 0.26119402985074625,
+      "drawRate": 0.011194029850746268,
+      "poolViolations": 0,
+      "profiles": {
+        "ECONOMY": 4.333333333333333,
+        "TRAIT_FOCUS": 6,
+        "AP_FOCUS": 4,
+        "REROLL": 7,
+        "FAST_LEVEL": 4.333333333333333,
+        "AD_FOCUS": 3,
+        "BALANCED": 3
+      },
+      "styles": {
+        "nige": {
+          "boards": 9,
+          "top4": 4
+        },
+        "senko": {
+          "boards": 15,
+          "top4": 7
+        },
+        "oikomi": {
+          "boards": 2,
+          "top4": 2
+        },
+        "sashi": {
+          "boards": 6,
+          "top4": 3
+        }
+      }
+    },
+    {
+      "seasonId": "s3",
+      "matches": 2,
+      "averageRounds": 32,
+      "battles": 259,
+      "overtimeRate": 0.11969111969111969,
+      "drawRate": 0,
+      "poolViolations": 0,
+      "profiles": {
+        "ECONOMY": 3,
+        "TRAIT_FOCUS": 6.5,
+        "AP_FOCUS": 5,
+        "REROLL": 2.5,
+        "FAST_LEVEL": 4.333333333333333,
+        "AD_FOCUS": 7,
+        "BALANCED": 4
+      },
+      "styles": {
+        "nige": {
+          "boards": 5,
+          "top4": 3
+        },
+        "senko": {
+          "boards": 13,
+          "top4": 7
+        },
+        "oikomi": {
+          "boards": 3,
+          "top4": 2
+        },
+        "sashi": {
+          "boards": 8,
+          "top4": 3
+        }
+      }
+    },
+    {
+      "seasonId": "s4",
+      "matches": 2,
+      "averageRounds": 31,
+      "battles": 260,
+      "overtimeRate": 0.16538461538461538,
+      "drawRate": 0.0038461538461538464,
+      "poolViolations": 0,
+      "profiles": {
+        "ECONOMY": 2,
+        "TRAIT_FOCUS": 5,
+        "AP_FOCUS": 3,
+        "REROLL": 6,
+        "FAST_LEVEL": 3.6666666666666665,
+        "AD_FOCUS": 7.5,
+        "BALANCED": 6
+      },
+      "styles": {
+        "nige": {
+          "boards": 9,
+          "top4": 3
+        },
+        "senko": {
+          "boards": 12,
+          "top4": 8
+        },
+        "sashi": {
+          "boards": 6,
+          "top4": 3
+        },
+        "oikomi": {
+          "boards": 2,
+          "top4": 1
+        }
+      }
+    },
+    {
+      "seasonId": "s5",
+      "matches": 2,
+      "averageRounds": 32,
+      "battles": 252,
+      "overtimeRate": 0.1984126984126984,
+      "drawRate": 0,
+      "poolViolations": 0,
+      "profiles": {
+        "ECONOMY": 3,
+        "TRAIT_FOCUS": 8,
+        "AP_FOCUS": 5,
+        "REROLL": 5.5,
+        "FAST_LEVEL": 2.6666666666666665,
+        "AD_FOCUS": 5,
+        "BALANCED": 4
+      },
+      "styles": {
+        "nige": {
+          "boards": 13,
+          "top4": 7
+        },
+        "senko": {
+          "boards": 9,
+          "top4": 6
+        },
+        "oikomi": {
+          "boards": 4,
+          "top4": 2
+        },
+        "sashi": {
+          "boards": 3,
+          "top4": 2
+        }
+      }
+    }
+  ]
+}

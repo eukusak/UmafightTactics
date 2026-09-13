@@ -1,3 +1,4 @@
+import { matchItemDescription } from '../game/ui/match-descriptions';
 /** One background and projection across preparation and recorded combat. */
 import { useEffect, useRef, useState } from 'react';
 import Phaser from 'phaser';
@@ -86,7 +87,7 @@ export function PrepBoard({ onUnitContext }: { onUnitContext: (e: React.MouseEve
           <span className="arena-unit-stars" >{'★'.repeat(unit.star)}</span>
           <span className="arena-unit-health" />
           <span className="arena-unit-name">{def.nameKo}</span>
-          <span className="arena-unit-items">{unit.items.map((id, i) => <ItemIcon key={`${id}-${i}`} itemId={id} size={20} />)}</span>
+          <span className="arena-unit-items">{unit.items.map((id, i) => <ItemIcon key={`${id}-${i}`} itemId={id} size={20} title={matchItemDescription(id, player).description} />)}</span>
         </div>
       </div>;
     })}
