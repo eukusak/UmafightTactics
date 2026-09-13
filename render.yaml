@@ -1,4 +1,6 @@
-# New services: keep the existing combined service live until both are verified.
+# Optional split deployment. Existing combined service: build with
+# npm ci --include=dev && npm run build, start with npm start (health /health).
+# Keep it live until both new services are verified.
 # Do not convert a Node service to static or change the live service's region.
 services:
   - type: web

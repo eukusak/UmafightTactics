@@ -8,8 +8,8 @@ import { RoomService, type Peer } from './rooms';
 import { loadRooms, saveRooms } from './persistence';
 import { resolve, relative, isAbsolute } from 'node:path';
 
-export function attachMultiplayer(server: Server, rooms = new RoomService()) {
-  const acceptsOrigin = originPolicy();
+export function attachMultiplayer(server: Server, rooms = new RoomService(), serveAssets = false) {
+  const acceptsOrigin = originPolicy(process.env, serveAssets);
   const wss = new WebSocketServer({ noServer: true, maxPayload: 8192, perMessageDeflate: {
     threshold: 1024, concurrencyLimit: 2, serverNoContextTakeover: true, clientNoContextTakeover: true,
     zlibDeflateOptions: { level: 1, memLevel: 4 },
@@ -64,11 +64,11 @@ export function attachMultiplayer(server: Server, rooms = new RoomService()) {
   return { rooms, wss, metrics };
 }
 
-export async function main(localAssets = false): Promise<void> {
+export async function main(serveAssets = false): Promise<void> {
   const { port, host } = listenAddress();
   console.log('[startup] Loading multiplayer server');
-  // The production entry never imports filesystem/gzip asset-serving code.
-  const assets = localAssets ? await import('../scripts/serve.mjs') : null;
+  // start:server remains independent of dist/public and static-serving code.
+  const assets = serveAssets ? await import('../scripts/serve.mjs') : null;
   assets?.requireBuild();
   const server = createServer((req, res) => {
     if (req.url === '/health') { res.writeHead(200, { 'Content-Type': 'application/json', 'Cache-Control': 'no-store' }); res.end('{"ok":true,"multiplayer":true,"service":"multiplayer"}'); return; }
@@ -85,7 +85,7 @@ export async function main(localAssets = false): Promise<void> {
     }
     loadRooms(checkpoint, rooms);
   }
-  const { wss } = attachMultiplayer(server, rooms);
+  const { wss } = attachMultiplayer(server, rooms, serveAssets);
   const persist = () => { if (checkpoint) saveRooms(checkpoint, rooms); };
   const saver = checkpoint ? setInterval(() => {
     try { persist(); } catch { console.error('Room checkpoint failed; check disk space and permissions.'); }
@@ -95,7 +95,7 @@ export async function main(localAssets = false): Promise<void> {
     server.once('error', reject);
     server.listen(port, host, () => { server.removeListener('error', reject); resolve(); });
   });
-  console.log('UmafightTactics multiplayer server ready on http://' + host + ':' + port);
+  console.log('UmafightTactics ' + (serveAssets ? 'HTTP + multiplayer' : 'multiplayer') + ' server ready on http://' + host + ':' + port);
   let stopping = false;
   for (const signal of ['SIGTERM', 'SIGINT']) process.once(signal, () => {
     if (stopping) return;

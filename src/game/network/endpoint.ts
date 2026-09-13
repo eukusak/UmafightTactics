@@ -7,7 +7,9 @@ export function multiplayerUrl(configured: string | undefined, page: { protocol:
     if (page.protocol === 'https:' && url.protocol !== 'wss:') throw new Error('HTTPS 게임은 보안 연결(wss)이 필요합니다.');
     return url.href;
   }
-  if (!['localhost', '127.0.0.1', '[::1]'].includes(page.hostname))
-    throw new Error('멀티플레이 서버 주소가 설정되지 않았습니다. VITE_MULTIPLAYER_URL 설정 후 사이트를 다시 빌드해 주세요.');
+  // Existing integrated deployments use the current origin. A configured split
+  // backend always wins above, including during reconnect/seat recovery.
+  if (!['http:', 'https:'].includes(page.protocol))
+    throw new Error('온라인 대전은 HTTP 또는 HTTPS 게임 주소에서 접속해 주세요.');
   return `${page.protocol === 'https:' ? 'wss:' : 'ws:'}//${page.host}/multiplayer`;
 }

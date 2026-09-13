@@ -177,15 +177,20 @@ STRICT_ART=1 npm run check:art   # 규격·알파·크기까지 전수 검사
 
 ## Render 배포
 
-프런트엔드는 Static Site/CDN, 온라인 방은 별도 Node Web Service로 배포합니다. **기존 서비스 자동 배포를 먼저 중지한 뒤** [분리 배포 가이드](docs/RENDER_SPLIT_DEPLOYMENT.md)의 전환 순서를 따라 주세요. 이 PR은 기존 서비스를 자동 전환하지 않습니다.
+기존 Render 게임 주소는 **통합 Web Service**로 계속 사용할 수 있습니다. PR22 배포 후 `{"service":"multiplayer","endpoint":"/multiplayer"}`만 보였다면, PR23부터 `npm start`가 HTML·자산·온라인 대전을 함께 제공하도록 복구됩니다.
 
 | 대상 | 설치·빌드 | 시작/출력 |
 |---|---|---|
-| Static Site | `npm ci && npm run build` | `dist` |
-| WebSocket 서버 | `npm ci --omit=dev` | `npm run start:server` |
+| 기존 통합 Web Service | `npm ci --include=dev && npm run build` | `npm start` · health `/health` |
+| 분리 Static Site | `npm ci --include=dev && npm run build` | `dist` |
+| 분리 WebSocket 서버 | `npm ci --omit=dev` | `npm run start:server` · health `/health` |
 | 로컬 통합 미리보기 | `npm ci && npm run build` | `npm run start:local` |
 
-프런트엔드 빌드 시 `VITE_MULTIPLAYER_URL=wss://<backend>/multiplayer`, 서버에는 `ALLOWED_ORIGINS=https://<frontend>`를 설정합니다. 운영 서버는 정확한 Origin을 필수로 검사하며, `/health`와 WebSocket만 제공합니다. 설치 중 자동 프런트엔드 빌드와 런타임 1024MB 힙 강제 설정을 제거했습니다.
+통합 배포는 `VITE_MULTIPLAYER_URL`을 비워 두면 현재 게임 주소의 `/multiplayer`로 연결합니다. Render의 `RENDER_EXTERNAL_URL`을 정확한 허용 Origin에 자동 추가합니다. 사용자 지정 도메인이나 별도 프런트 주소는 `ALLOWED_ORIGINS`에 추가하세요. Render 외 production 환경에서는 `ALLOWED_ORIGINS`에 게임 주소를 명시해야 합니다. 시작 로그의 `HTTP + multiplayer server ready`와 `/`의 HTML 응답을 확인하세요.
+
+분리 배포는 프런트 빌드에 `VITE_MULTIPLAYER_URL=wss://<backend>/multiplayer`, 서버에 `ALLOWED_ORIGINS=https://<frontend>`를 설정합니다. `start:server`는 `/health`와 WebSocket만 제공하며 프런트 빌드가 필요 없습니다. `render.yaml`은 이 선택적 분리 구성을 유지합니다. [분리 배포 가이드](docs/RENDER_SPLIT_DEPLOYMENT.md).
+
+빌드는 빌드 단계에서만 수행합니다. 통합 서버 시작 시 `dist`가 없으면 안내 후 실패하며 런타임 자동 빌드나 힙 크기 강제 설정은 하지 않습니다.
 
 빌드는 고유 해시 JS/CSS를 `/bundled`에 출력합니다. 음악은 빌드 단계에서만 160kbps MP3로 인코딩하며, `public/assets/audio`의 원본은 보존합니다. 로컬 정적 미리보기는 SPA fallback, gzip, MP3 Range 응답을 지원합니다.
 

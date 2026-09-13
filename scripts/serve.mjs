@@ -1,5 +1,6 @@
-/** Local built-SPA preview. --local includes multiplayer; --static is assets only.
- * Production runs server/index.ts directly and never loads this module. */
+/** Built-SPA server for existing integrated deployments and local previews.
+ * Default/--local includes multiplayer; --static is assets only.
+ * The separate start:server entry never loads this module. */
 import { createReadStream, existsSync, statSync } from 'node:fs';
 import { createServer } from 'node:http';
 import path from 'node:path';
@@ -47,12 +48,12 @@ export function requireBuild() {
       '        This server does not build: the build needs ~500MB of heap and a small\n' +
       '        runtime instance caps it near 256MB, which crash-loops the service.\n' +
       '        Run the build on the build machine instead.\n\n' +
-      '        Render Static Site (offline only):\n' +
+      '        Render Static Site (configure VITE_MULTIPLAYER_URL for online play):\n' +
       '          Build Command:     npm ci && npm run build\n' +
       '          Publish Directory: dist\n\n' +
       '        Render Node web service:\n' +
-      '          Build Command:     npm ci && npm run build\n' +
-      '          Start Command:     npm run start:local\n\n' +
+      '          Build Command:     npm ci --include=dev && npm run build\n' +
+      '          Start Command:     npm start\n\n' +
       '        Locally:  npm run build && npm run start:local\n',
   );
   process.exit(1);
@@ -156,7 +157,7 @@ if (isMainModule(import.meta.url)) {
     const { register } = await import('tsx/esm/api');
     register();
     // Let this module finish before main imports its static handler exports.
-    void import('../server/index.ts').then(({ main }) => main(process.argv.includes('--local'))).catch(error => {
+    void import('../server/index.ts').then(({ main }) => main(true)).catch(error => {
       console.error(error);
       process.exitCode = 1;
     });

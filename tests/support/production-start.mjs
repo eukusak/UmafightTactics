@@ -4,15 +4,28 @@ import { spawn } from 'node:child_process';
 import { createServer } from 'node:net';
 import { once } from 'node:events';
 import { WebSocket } from 'ws';
+import { readFileSync } from 'node:fs';
 
-for (const args of [['--import', 'tsx', 'server/index.ts'], ['scripts/serve.mjs'], ['scripts/serve.mjs', '--local'], ['scripts/serve.mjs', '--static']]) {
-  test(`production entry: node ${args.join(' ')}`, { timeout: 20000 }, async () => {
+const pkg = JSON.parse(readFileSync(new URL('../../package.json', import.meta.url), 'utf8'));
+// Exercise the command declared by npm start, so a script-only regression fails.
+const npmStart = pkg.scripts.start.split(' ');
+assert.equal(npmStart.shift(), 'node');
+
+for (const { label, args, servesAssets } of [
+  { label: 'npm start', args: npmStart, servesAssets: true },
+  { label: 'server-only', args: ['--import', 'tsx', 'server/index.ts'], servesAssets: false },
+  { label: 'legacy wrapper', args: ['scripts/serve.mjs'], servesAssets: true },
+  { label: 'local preview', args: ['scripts/serve.mjs', '--local'], servesAssets: true },
+  { label: 'static preview', args: ['scripts/serve.mjs', '--static'], servesAssets: true },
+]) {
+  test(`production entry: ${label}`, { timeout: 20000 }, async () => {
     const probe = createServer();
     probe.listen(0, '127.0.0.1');
     await once(probe, 'listening');
     const port = probe.address().port;
     await new Promise(resolve => probe.close(resolve));
-    const child = spawn(process.execPath, args, { env: { ...process.env, PORT: String(port), HOST: '127.0.0.1', ROOM_STATE_FILE: '', NODE_ENV: 'production', ALLOWED_ORIGINS: `http://127.0.0.1:${port}` }, stdio: ['ignore', 'pipe', 'pipe'] });
+    const renderOrigin = 'https://umafight-test.onrender.com';
+    const child = spawn(process.execPath, args, { env: { ...process.env, PORT: String(port), HOST: '127.0.0.1', ROOM_STATE_FILE: '', NODE_ENV: 'production', RENDER: 'true', RENDER_EXTERNAL_URL: renderOrigin, ALLOWED_ORIGINS: servesAssets ? '' : `http://127.0.0.1:${port}` }, stdio: ['ignore', 'pipe', 'pipe'] });
     const exited = once(child, 'exit');
     let output = '', socket;
     child.stdout.on('data', data => { output += data; });
@@ -28,7 +41,18 @@ for (const args of [['--import', 'tsx', 'server/index.ts'], ['scripts/serve.mjs'
     try {
       await waitFor(() => /server ready|server listening/.test(output));
       const base = `http://127.0.0.1:${port}`;
-      const servesAssets = args.includes('--static') || args.includes('--local');
+      const root = await fetch(base);
+      assert.equal(root.status, 200);
+      assert.match(root.headers.get('content-type'), servesAssets ? /text\/html/ : /application\/json/);
+      if (servesAssets) {
+        const html = await root.text();
+        assert.match(html, /<div id="root"/);
+        const script = html.match(/src="([^"]+\.js)"/);
+        assert.ok(script, 'Game bundle must be linked from the HTML');
+        const bundle = await fetch(new URL(script[1], base));
+        assert.equal(bundle.status, 200);
+        assert.match(bundle.headers.get('content-type'), /javascript/);
+      }
       assert.equal((await fetch(`${base}/some/route`)).status, servesAssets ? 200 : 404);
       assert.equal((await fetch(`${base}/assets/missing.mp3`)).status, 404);
       if (servesAssets) {
@@ -55,7 +79,7 @@ for (const args of [['--import', 'tsx', 'server/index.ts'], ['scripts/serve.mjs'
       }
       if (args.includes('--static')) return;
       assert.equal((await (await fetch(`${base}/health`)).json()).multiplayer, true);
-      socket = new WebSocket(`ws://127.0.0.1:${port}/multiplayer`, { origin: base });
+      socket = new WebSocket(`ws://127.0.0.1:${port}/multiplayer`, { origin: servesAssets ? renderOrigin : base });
       const messages = [];
       socket.on('message', raw => messages.push(JSON.parse(raw)));
       await once(socket, 'open');
