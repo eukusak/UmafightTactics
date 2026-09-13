@@ -30,11 +30,21 @@ export const POOL_COPIES: Record<Cost, number> = { 1: 30, 2: 25, 3: 18, 4: 10, 5
  * shop cannot supply nine copies out of a pool of 10 and 9 — so their power has
  * to sit in the base rather than in a star level they cannot buy.
  *
- * The target is the relationship every auto-battler relies on: a one-star of
- * cost N is worth about a two-star of cost N-1. It was badly inverted — a
- * one-star four-cost was strictly worse than a two-star three-cost on health,
- * damage, resistances *and* skill — so a value deck won 4% of fights with
- * one-star carries and 94% with two-star ones, with nothing in between.
+ * Two relationships are being held at once.
+ *
+ * The one the designer set, which anchors the top of the curve: **a two-star
+ * four-cost sits just under a three-star two-cost, and a two-star five-cost is
+ * worth about a three-star three-cost.** And the weight sits in firepower rather
+ * than bulk — a two-star four-cost carries ~85% of a three-star two-cost's
+ * health but ~106% of its attack damage, so the expensive unit wins the trade by
+ * hitting harder, not by lasting longer. Skill power already landed where it
+ * should (90% and 95% of those same benchmarks) and is left alone.
+ *
+ * The one underneath it: a one-star of cost N is worth about a two-star of cost
+ * N-1, so the tier is still worth fielding before it is upgraded. It was badly
+ * inverted — a one-star four-cost was strictly worse than a two-star three-cost
+ * on health, damage, resistances *and* skill — so a value deck won 4% of fights
+ * with one-star carries and 94% with two-star ones, with nothing in between.
  *
  * What stops this from re-creating the early-game complaint that started the
  * previous patch is availability, not weakness: SHOP_ODDS keeps four-costs out
@@ -42,10 +52,10 @@ export const POOL_COPIES: Record<Cost, number> = { 1: 30, 2: 25, 3: 18, 4: 10, 5
  * always the strong part early (COST_SKILL_POWER pays 1.56x and 1.9x at one
  * star), and that is untouched here.
  */
-export const BASE_HP: Record<Cost, number> = { 1: 650, 2: 720, 3: 820, 4: 1300, 5: 1620 };
-export const BASE_AD: Record<Cost, number> = { 1: 48, 2: 54, 3: 60, 4: 94, 5: 117 };
+export const BASE_HP: Record<Cost, number> = { 1: 650, 2: 720, 3: 820, 4: 1320, 5: 1594 };
+export const BASE_AD: Record<Cost, number> = { 1: 48, 2: 54, 3: 60, 4: 123, 5: 149 };
 export const BASE_AS: Record<Cost, number> = { 1: 0.68, 2: 0.7, 3: 0.72, 4: 0.74, 5: 0.76 };
-export const BASE_RESIST: Record<Cost, number> = { 1: 28, 2: 30, 3: 32, 4: 48, 5: 58 };
+export const BASE_RESIST: Record<Cost, number> = { 1: 28, 2: 30, 3: 32, 4: 44, 5: 50 };
 
 /**
  * Same kit/percentile at one star: damage, healing and flat shields separate by cost.
@@ -100,8 +110,12 @@ export const STAR_STAT_MULT: Record<number, number> = { 1: 1.0, 2: 1.8, 3: 3.24 
  * win 4% of its fights at one star and 94% at two, with nothing in between, so
  * the whole game was one upgrade roll. Now the tier is bought rather than
  * rolled, and rerolling stays what multiplies a cheap board: one- to three-costs
- * keep the full 1.8x and 3.24x, and a three-star two-cost still outweighs a
- * two-star five-cost.
+ * keep the full 1.8x and 3.24x.
+ *
+ * A two-star five-cost does end up above a three-star two-cost, which is the
+ * designer's intent rather than an accident — three copies out of a pool of 9,
+ * available only at level 9 and 10, is the harder thing to assemble. The
+ * three-star two-cost's peer is the two-star four-cost, and it stays ahead of it.
  */
 /**
  * A cost tier's stat weight, relative to a one-cost, read off the real curve.
@@ -116,8 +130,9 @@ export function costStatWeight(cost: Cost): number {
 
 export function starStatMultiplier(star: number, cost: Cost): number {
   if (star !== 2) return STAR_STAT_MULT[star] ?? 1;
-  if (cost === 5) return 1.2;
-  if (cost === 4) return 1.28;
+  // 1.5 rather than 1.8: enough for the second star to matter, little enough
+  // that a tier which is realistically bought at one star is not dead there.
+  if (cost >= 4) return 1.5;
   return STAR_STAT_MULT[2];
 }
 /** Also stored on SkillDef.starMultipliers, so it is pinned by art review too. */

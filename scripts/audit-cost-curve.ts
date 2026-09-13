@@ -79,7 +79,12 @@ const rows: Array<[string, number, [number, number] | null]> = [
   ['밸류덱(고코 캐리 2성) vs 리롤덱', rate(valueDeck(2), rerollDeck), [60, 100]],
   ['밸류덱(고코 캐리 1성) vs 중코덱', rate(valueDeck(1), midDeck), [40, 70]],
   ['리롤덱 vs 중코덱', rate(rerollDeck, midDeck), [55, 95]],
-  ['4코 도배덱 vs 앞줄 두꺼운 리롤덱 (앞줄 부족)', rate(stackedFourCost, frontHeavyReroll), [0, 35]],
+  // Not [0, 35]. That band was written when the tier was undertuned and this
+  // board lost 400-0; it encoded "should lose badly", which was the bug. What
+  // has to hold is that a board which cannot form a front line is *disadvantaged
+  // relative to its unit quality*, not that it is dead — and above all that the
+  // tier never dominates from a broken structure. The ceiling is the real guard.
+  ['4코 도배덱 vs 앞줄 두꺼운 리롤덱 (앞줄 부족)', rate(stackedFourCost, frontHeavyReroll), [25, 62]],
   ['4코 도배덱 vs 일반 리롤덱', rate(stackedFourCost, rerollDeck), [40, 80]],
 ];
 console.log(`deck matchups — ${FIGHTS} fights each\n`);

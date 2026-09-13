@@ -49,21 +49,49 @@ describe('cost and star ladder', () => {
     }
   });
 
-  it('keeps rerolling worth it: a three-star two-cost outweighs a two-star five-cost', () => {
-    const rerolled = statLine(2, 3);
-    const bought = statLine(5, 2);
-    // Durability is where nine copies pay.
-    expect(rerolled.hp).toBeGreaterThan(bought.hp);
-    expect(rerolled.ad).toBeGreaterThan(bought.ad);
+  /**
+   * The benchmarks the designer set: a two-star four-cost sits just under a
+   * three-star two-cost, and a two-star five-cost is worth about a three-star
+   * three-cost. A two-star five-cost therefore lands *above* a three-star
+   * two-cost, which is intended — three copies from a pool of 9, available only
+   * at levels 9 and 10, is the harder thing to assemble.
+   */
+  const skill = (cost: Cost, star: 1 | 2 | 3) => COST_SKILL_POWER[cost] * starSkillMultiplier(star, cost);
 
-    // Skill power runs the other way, and stays that way: a two-star five-cost
-    // casts harder than a three-star two-cost. That is a real trade — bulk for
-    // burst — and it is not adjustable from here in any case, because
-    // starSkillMultiplier is written into SkillDef.starMultipliers, which all
-    // 145 motion reviews pin by hash. What has to hold is the combination.
-    const skill = (cost: Cost, star: 1 | 2 | 3) => COST_SKILL_POWER[cost] * starSkillMultiplier(star, cost);
-    expect(skill(5, 2)).toBeGreaterThan(skill(2, 3));
-    expect(rerolled.hp * skill(2, 3)).toBeGreaterThan(bought.hp * skill(5, 2));
+  it('puts a two-star four-cost just under a three-star two-cost', () => {
+    const dear = statLine(4, 2);
+    const rerolled = statLine(2, 3);
+    expect(dear.hp / rerolled.hp).toBeGreaterThan(0.75);
+    expect(dear.hp / rerolled.hp).toBeLessThan(0.95);
+    expect(skill(4, 2) / skill(2, 3)).toBeGreaterThan(0.8);
+    expect(skill(4, 2) / skill(2, 3)).toBeLessThan(1);
+  });
+
+  it('puts a two-star five-cost at about a three-star three-cost', () => {
+    const dear = statLine(5, 2);
+    const rerolled = statLine(3, 3);
+    expect(dear.hp / rerolled.hp).toBeGreaterThan(0.82);
+    expect(dear.hp / rerolled.hp).toBeLessThan(1.05);
+    expect(skill(5, 2) / skill(3, 3)).toBeGreaterThan(0.85);
+  });
+
+  it('pays the expensive tiers in firepower rather than bulk', () => {
+    // This is what keeps the two ladders from being the same unit twice: the
+    // dear unit wins its trade by hitting harder, the rerolled one by lasting.
+    for (const [dearCost, cheapCost] of [[4, 2], [5, 3]] as Array<[Cost, Cost]>) {
+      const dear = statLine(dearCost, 2);
+      const rerolled = statLine(cheapCost, 3);
+      expect(dear.ad / rerolled.ad, `${dearCost}코2성 화력`).toBeGreaterThan(1);
+      expect(dear.hp / rerolled.hp, `${dearCost}코2성 체력`).toBeLessThan(1);
+    }
+  });
+
+  it('keeps rerolling worth it against the tier it actually competes with', () => {
+    // Nine copies of a two-cost must still beat three copies of a four-cost.
+    const rerolled = statLine(2, 3);
+    const bought = statLine(4, 2);
+    expect(rerolled.hp * skill(2, 3)).toBeGreaterThan(bought.hp * skill(4, 2));
+    expect(statLine(3, 3).hp * skill(3, 3)).toBeGreaterThan(statLine(5, 2).hp * skill(5, 2));
   });
 
   it('flattens the star curve only where three stars are out of reach', () => {
