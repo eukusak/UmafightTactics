@@ -1031,7 +1031,7 @@ export class BattleEngine {
       const target = unit.targetId ? this.byId(unit.targetId) : null;
       periodics.forEach(({ b, i }) => {
         if (this.racePhase === 'OVERTIME' && b.sourceKey.startsWith('race-plan:') && b.effect.kind === 'STACKING_STAT') return;
-        const interval = b.effect.interval ?? b.effect.trigger.threshold ?? 1;
+        const interval = b.effect.interval ?? b.effect.trigger?.threshold ?? 1;
         const key = `${unit.id}:${i}`;
         const next = this.periodicNext.get(key) ?? interval;
         if (this.time < next) return;
