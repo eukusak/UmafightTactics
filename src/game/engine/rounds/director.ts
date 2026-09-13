@@ -34,6 +34,7 @@ import { createDefaultRacePlanState } from '../race-plan/types';
 import { provisionalEntryInstance, reconcileEntryUnit } from '../race-plan/entry';
 import { racePlanBattleInput } from '../race-plan/runtime';
 import { rollG1Theme } from '../race-plan/profiles';
+import { DEFAULT_CONDITIONS } from '../race-plan/conditions';
 import type {
   BattleOutcome, MatchState, PlayerState, RoundResolution, UnitInstance,
 } from '../state';
@@ -113,6 +114,7 @@ export function createMatch(options: CreateMatchOptions): MatchState {
     // One GⅠ for the whole lobby: everyone is entered for the same race.
     g1ThemeId: rollG1Theme(options.seed),
     racePlanTrack: 'STANDARD',
+    raceConditions: { ...DEFAULT_CONDITIONS },
   };
 }
 
@@ -558,7 +560,12 @@ export class RoundDirector {
    */
   private runBattle(a: BattleSideInput, b: BattleSideInput, rng: Rng, record: boolean, isGhost = false) {
     // Headless AI needs the same compact telemetry as a viewed fight; no frames required.
-    const engine = new BattleEngine(a, b, rng, { recordFrames: record || this.recordAllBattles, stage: this.state.stage });
+    const engine = new BattleEngine(a, b, rng, {
+      recordFrames: record || this.recordAllBattles,
+      stage: this.state.stage,
+      conditions: this.state.raceConditions ?? DEFAULT_CONDITIONS,
+      g1ThemeId: this.state.g1ThemeId,
+    });
     const result = engine.run();
     if (this.info.kind !== 'PVE') for (const [side, foe, team] of [[a,b,'A'],[b,a,'B']] as const) {
       if (team === 'B' && isGhost) continue;

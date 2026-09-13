@@ -13,19 +13,39 @@ export const RACE_PHASE_AT: Record<Exclude<RaceCombatPhase, 'OVERTIME'>, number>
   LAST_3F: 5 / 6,
 };
 
+/**
+ * Phase names, taken from how a race is actually called.
+ *
+ * 발주 is the gate break, 중반 the body of the race, 4코너 the final corner where
+ * the move is made, 최종 직선 the run to the line. 승부처 stays available as a
+ * gloss for 4코너 in body copy; it says what the corner *is* rather than where.
+ */
 export const RACE_PHASE_LABEL: Record<RaceCombatPhase, string> = {
-  START: '템',
-  POSITIONING: '도중',
-  LATE: '승부처',
-  LAST_3F: '라스트 3F',
-  OVERTIME: '극한 승부',
+  START: '발주',
+  POSITIONING: '중반',
+  LATE: '4코너',
+  LAST_3F: '최종 직선',
+  OVERTIME: '결승선 접전',
+};
+
+/** Longer form for tooltips and body copy. */
+export const RACE_PHASE_GLOSS: Record<RaceCombatPhase, string> = {
+  START: '발주 직후, 자리를 잡기 전',
+  POSITIONING: '중반, 대열이 굳어지는 구간',
+  LATE: '4코너, 승부를 거는 지점',
+  LAST_3F: '최종 직선, 마지막 600m',
+  OVERTIME: '결승선 접전, 연장 승부',
 };
 
 // ----------------------------------------------------------------- catalogue
 
 export type RacePlanCategory =
   | 'HIGH_PACE' | 'LEAD_CONTROL' | 'MIDDLE_PACE' | 'SLOW_PACE'
-  | 'PASSING' | 'LAST_3F' | 'GUTS' | 'TRACK';
+  | 'PASSING' | 'LAST_3F' | 'GUTS' | 'TRACK'
+  /** Reads the round's pace and the field instead of committing to a section. */
+  | 'PACE_READ'
+  /** Gives something up on purpose for a bigger payout; the high-variance line. */
+  | 'GAMBLE';
 
 /**
  * Finishing-move roles, one per move. An offer never repeats a category, which
@@ -33,7 +53,11 @@ export type RacePlanCategory =
  */
 export type FinishingCategory =
   | 'FRONTRUN' | 'SUSTAIN' | 'BURST' | 'SPELL' | 'TEMPO'
-  | 'AMPLIFY' | 'PASSING' | 'SUPPORT' | 'CRIT';
+  | 'AMPLIFY' | 'PASSING' | 'SUPPORT' | 'CRIT'
+  /** Buys an extra release of the unit's own skill rather than a bigger number. */
+  | 'ENCORE'
+  /** Trades one of the unit's own stats away for another. */
+  | 'CONVERSION';
 
 export type EvolutionTag =
   | 'MORE_EARLY' | 'MORE_LATE' | 'SURVIVAL' | 'CAST' | 'BASIC_ATTACK'
@@ -207,7 +231,8 @@ export type OfferReason =
   | 'STYLE_NIGE' | 'STYLE_SENKO' | 'STYLE_SASHI' | 'STYLE_OIKOMI'
   | 'DISTANCE_SPRINT' | 'DISTANCE_MILE' | 'DISTANCE_MIDDLE' | 'DISTANCE_LONG'
   | 'SURFACE_TURF' | 'SURFACE_DIRT' | 'COURSE_AFFINITY' | 'G1_THEME_MATCH'
-  | 'TRAIT_ACTIVE' | 'CARRY_READY' | 'PIVOT_ROOM' | 'NODE_TIMING';
+  | 'TRAIT_ACTIVE' | 'CARRY_READY' | 'PIVOT_ROOM' | 'NODE_TIMING'
+  | 'PACE_HIGH' | 'PACE_SLOW' | 'GOING_SOFT' | 'GOING_FIRM' | 'CLAUSE_ACTIVE';
 
 /** A reason plus the numbers the copy needs; the client never recomputes these. */
 export type OfferReasonPayload = { reason: OfferReason; n?: number; text?: string };

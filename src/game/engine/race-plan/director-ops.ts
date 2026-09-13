@@ -17,23 +17,31 @@ import { createDefaultRacePlanState, type RacePlanOfferPhase, type RecentCombatP
 import { createRacePlanOffer, recommendedOption, rerollRacePlanSlot } from './offers';
 import { entryCandidates, reconcileEntryUnit, recommendedEntry } from './entry';
 import { findRacePlanNode } from './defs';
-import { rollG1Theme, rollTrackState } from './profiles';
+import { rollG1Theme } from './profiles';
+import { DEFAULT_CONDITIONS, legacyTrackState, rollRaceConditions } from './conditions';
 
 const roundKey = (stage: number, round: number): number => stage * 100 + round;
 
 /** Backfills state written before this system existed, and on every load. */
 export function ensureRacePlanState(state: MatchState): void {
   state.g1ThemeId ??= rollG1Theme(state.seed);
-  state.racePlanTrack ??= 'STANDARD';
+  state.raceConditions ??= { ...DEFAULT_CONDITIONS };
+  state.racePlanTrack ??= legacyTrackState(state.raceConditions.going);
   for (const player of state.players) {
     player.racePlan ??= createDefaultRacePlanState();
     reconcileEntryUnit(player);
   }
 }
 
-/** One going per round, shared by every fight in it. */
+/**
+ * One set of conditions per round, shared by every fight in it.
+ *
+ * `racePlanTrack` is kept in step with the going so the two plan cards that read
+ * the old three-value going keep working unchanged.
+ */
 export function rollRoundTrackState(state: MatchState, rng: Rng): void {
-  state.racePlanTrack = rollTrackState(rng);
+  state.raceConditions = rollRaceConditions(rng);
+  state.racePlanTrack = legacyTrackState(state.raceConditions.going);
 }
 
 export function racePlanOpensFor(state: MatchState, player: PlayerState): RacePlanRoundKind | null {

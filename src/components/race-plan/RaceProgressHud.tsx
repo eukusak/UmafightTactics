@@ -2,7 +2,7 @@
  * Race progress bar shown above the board during combat.
  *
  * The marker tracks race progress, not the clock, which is why it can run ahead
- * of the timer: when half the field is down the race is already at 승부처 even if
+ * of the timer: when half the field is down the race is already at the 4코너 even if
  * only twelve seconds have passed. That is the whole point of the system and it
  * has to be visible, so the bar shows the progress and the clock side by side.
  */

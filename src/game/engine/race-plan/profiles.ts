@@ -7,6 +7,7 @@
  */
 import profileData from '../../../data/generated/race-plan/horse-racing-profiles.json';
 import themeData from '../../../data/generated/race-plan/g1-themes.json';
+import extraThemeData from '../../../data/manual/g1-extra-themes.json';
 import { Rng } from '../rng';
 import type { G1Theme, HorseRacingProfile, TrackState } from './types';
 
@@ -24,7 +25,34 @@ export const RACING_PROFILES = new Map<string, HorseRacingProfile>(
 export const getRacingProfile = (unitId: string): HorseRacingProfile | undefined =>
   RACING_PROFILES.get(unitId);
 
-export const G1_THEMES = (themeData as unknown as { themes: G1Theme[] }).themes;
+/**
+ * The GⅠ calendar: the vendored JRA/NAR list plus this repo's own additions.
+ *
+ * `src/data/source/race-templates.json` is pulled from UmaRogue under a SHA
+ * lock, so it cannot be edited here. The overseas GⅠ and the two 장애 JGⅠ live
+ * in `src/data/manual/g1-extra-themes.json` instead, and are merged in at load.
+ * They also fill out the calendar's two thin ends: the vendored list carries
+ * only three sprints and two staying races.
+ */
+const extra = extraThemeData as unknown as {
+  courses: Array<{ id: string; nameKo: string; straightM: number }>;
+  templates: Array<Omit<G1Theme, 'courseNameKo' | 'straightM'>>;
+};
+const EXTRA_COURSES = new Map(extra.courses.map((c) => [c.id, c]));
+
+const VENDORED_THEMES = (themeData as unknown as { themes: G1Theme[] }).themes;
+const EXTRA_THEMES: G1Theme[] = extra.templates.map((t) => ({
+  ...t,
+  courseNameKo: EXTRA_COURSES.get(t.racecourse)?.nameKo
+    ?? VENDORED_THEMES.find((v) => v.racecourse === t.racecourse)?.courseNameKo
+    ?? t.racecourse,
+  straightM: EXTRA_COURSES.get(t.racecourse)?.straightM
+    ?? VENDORED_THEMES.find((v) => v.racecourse === t.racecourse)?.straightM
+    ?? null,
+}));
+
+export const G1_THEMES: G1Theme[] = [...VENDORED_THEMES, ...EXTRA_THEMES]
+  .sort((a, b) => a.id.localeCompare(b.id));
 export const G1_THEME_IDS = G1_THEMES.map((t) => t.id);
 const THEME_BY_ID = new Map(G1_THEMES.map((t) => [t.id, t]));
 

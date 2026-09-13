@@ -19,7 +19,7 @@ const mul = (stat: EffectDef['stat'], value: number, extra: Partial<EffectDef> =
 const add = (stat: EffectDef['stat'], value: number, extra: Partial<EffectDef> = {}): EffectDef => ({
   kind: 'STAT_ADD', stat, value, ...extra,
 });
-const atPhase = (phase: 'LATE' | 'LAST_3F' | 'POSITIONING', extra: Partial<EffectDef['trigger']> = {}) =>
+const atPhase = (phase: 'LATE' | 'LAST_3F' | 'POSITIONING' | 'OVERTIME', extra: Partial<EffectDef['trigger']> = {}) =>
   ({ when: 'ON_RACE_PHASE' as const, phase, ...extra });
 
 type Fm = Omit<RacePlanNode, 'kind'> & { finishingCategory: NonNullable<RacePlanNode['finishingCategory']> };
@@ -29,7 +29,7 @@ export const FINISHING_MOVE_DEFS: RacePlanNode[] = [
   // ------------------------------------------------------------- FRONTRUN
   fm({
     id: 'FM_BREAKAWAY', finishingCategory: 'FRONTRUN', nameKo: '단독 선두',
-    descriptionKo: '템에서 앞으로 빠져나가 그대로 굳힙니다.',
+    descriptionKo: '발주에서 앞으로 빠져나가 그대로 굳힙니다.',
     majorTag: 'MORE_EARLY', tags: ['MORE_EARLY'], baseWeight: 1,
     guard: { appliesTo: 'ANY' },
     fit: { itemAxes: ['attackSpeed', 'ad'], styles: ['nige'], aptitudeAxes: ['stylePct.nige'], phases: ['START'] },
@@ -117,7 +117,7 @@ export const FINISHING_MOVE_DEFS: RacePlanNode[] = [
   // ----------------------------------------------------------------- BURST
   fm({
     id: 'FM_TURN_OF_FOOT', finishingCategory: 'BURST', nameKo: '순간 가속',
-    descriptionKo: '승부처에서 한 번 크게 튀어 나갑니다.',
+    descriptionKo: '4코너에서 한 번 크게 튀어 나갑니다.',
     majorTag: 'MORE_LATE', tags: ['MORE_LATE'], baseWeight: 1,
     guard: { appliesTo: 'ANY' },
     fit: { itemAxes: ['attackSpeed', 'ad'], phases: ['LATE'] },
@@ -178,7 +178,7 @@ export const FINISHING_MOVE_DEFS: RacePlanNode[] = [
   // ----------------------------------------------------------------- SPELL
   fm({
     id: 'FM_SECOND_WIND', finishingCategory: 'SPELL', nameKo: '두 번째 호흡',
-    descriptionKo: '도중과 종반에 한 번씩 숨을 고릅니다.',
+    descriptionKo: '중반과 4코너에서 한 번씩 숨을 고릅니다.',
     majorTag: 'SUSTAIN', tags: ['SUSTAIN', 'CAST'], baseWeight: 1,
     guard: { appliesTo: 'ANY' },
     fit: { itemAxes: ['mana', 'sustain'], phases: ['POSITIONING', 'LATE'] },
@@ -288,7 +288,7 @@ export const FINISHING_MOVE_DEFS: RacePlanNode[] = [
   }),
   fm({
     id: 'FM_RACE_READ', finishingCategory: 'AMPLIFY', nameKo: '전개 읽기',
-    descriptionKo: '승부처에서 수가 밀리면 버티고, 아니면 갑니다. 둘 중 하나만 남습니다.',
+    descriptionKo: '4코너에서 수가 밀리면 버티고, 아니면 갑니다. 둘 중 하나만 남습니다.',
     majorTag: 'RESET', tags: ['RESET', 'SURVIVAL'], baseWeight: 1,
     guard: { appliesTo: 'ANY' },
     fit: { itemAxes: ['ad', 'tank'], phases: ['LATE'] },
@@ -339,7 +339,7 @@ export const FINISHING_MOVE_DEFS: RacePlanNode[] = [
   }),
   fm({
     id: 'FM_PHOTO_EDGE', finishingCategory: 'CRIT', nameKo: '종반 집중',
-    descriptionKo: '승부처부터 한 방 한 방이 날카로워집니다.',
+    descriptionKo: '4코너부터 한 방 한 방이 날카로워집니다.',
     majorTag: 'MORE_LATE', tags: ['MORE_LATE', 'BASIC_ATTACK'], baseWeight: 1,
     guard: { appliesTo: 'ANY', roles: ['AD_CARRY', 'BRUISER'] },
     fit: { roles: ['AD_CARRY', 'BRUISER'], itemAxes: ['crit', 'ad'], phases: ['LATE', 'LAST_3F'] },
@@ -347,6 +347,203 @@ export const FINISHING_MOVE_DEFS: RacePlanNode[] = [
     effects: [
       { kind: 'CRIT_CHANCE_ADD', value: 0.25, trigger: atPhase('LATE') },
       { kind: 'CRIT_DAMAGE_ADD', value: 0.15, trigger: atPhase('LATE') },
+    ],
+  }),
+
+  // --------------------------------------------------------------- ENCORE
+  // Moves that buy another release of the unit's own skill. They are the
+  // strongest thing in the pool on a big spell and nearly nothing on a unit
+  // that never casts, which is exactly the read they are meant to ask for.
+  fm({
+    id: 'FM_ENCORE_STRAIGHT', finishingCategory: 'ENCORE', nameKo: '직선 재각',
+    descriptionKo: '최종 직선에서 승부수가 한 번 더 나갑니다.',
+    majorTag: 'CAST', tags: ['CAST', 'MORE_LATE'], baseWeight: 0.85,
+    guard: { appliesTo: 'ANY', roles: ['AP_CARRY', 'AD_CARRY', 'BRUISER', 'SUPPORT'] },
+    fit: { itemAxes: ['ap', 'mana'], phases: ['LAST_3F'] },
+    vfx: { color: '#e8c86a', accent: '#fff3c4' },
+    effects: [
+      { kind: 'RECAST_SKILL', oncePerCombat: true, trigger: atPhase('LAST_3F') },
+      { kind: 'SKILL_DAMAGE_AMP', value: 0.2, trigger: { when: 'IN_RACE_PHASE', phases: ['LATE', 'LAST_3F', 'OVERTIME'] } },
+    ],
+  }),
+  fm({
+    id: 'FM_ENCORE_DOUBLE', finishingCategory: 'ENCORE', nameKo: '연속 승부',
+    descriptionKo: '4코너와 최종 직선에서 각각 한 번씩, 승부수가 두 번 더 나갑니다. 대신 평소 기력이 잘 돌지 않습니다.',
+    majorTag: 'CAST', tags: ['CAST', 'MORE_LATE', 'RESET'], baseWeight: 0.75,
+    guard: { appliesTo: 'ANY', roles: ['AP_CARRY', 'SUPPORT'] },
+    fit: { roles: ['AP_CARRY'], itemAxes: ['ap', 'mana'], phases: ['LATE', 'LAST_3F'] },
+    vfx: { color: '#7d3f6b', accent: '#d9a8ce' },
+    effects: [
+      { kind: 'RECAST_SKILL', oncePerCombat: true, trigger: atPhase('LATE') },
+      { kind: 'RECAST_SKILL', oncePerCombat: true, trigger: atPhase('LAST_3F') },
+      add('maxMana', 20, { trigger: { when: 'COMBAT_START' } }),
+    ],
+  }),
+  fm({
+    id: 'FM_ENCORE_KILL', finishingCategory: 'ENCORE', nameKo: '연쇄 승부수',
+    descriptionKo: '상대를 쓰러뜨리면 그 자리에서 승부수가 다시 나갑니다.',
+    majorTag: 'RESET', tags: ['RESET', 'CAST', 'EXECUTE'], baseWeight: 0.8,
+    guard: { appliesTo: 'ANY', roles: ['AP_CARRY', 'AD_CARRY'], needsTakedown: true },
+    fit: { roles: ['AP_CARRY', 'AD_CARRY'], itemAxes: ['ap', 'ad'], phases: ['LATE', 'LAST_3F'] },
+    vfx: { color: '#a53c31', accent: '#ffd9b0' },
+    effects: [
+      { kind: 'RECAST_SKILL', interval: 6, trigger: { when: 'ON_KILL' } },
+    ],
+  }),
+
+  // ----------------------------------------------------------- CONVERSION
+  // Each of these takes something real away and hands back something else.
+  // They should read as a decision, never as a free upgrade.
+  fm({
+    id: 'FM_CONVERT_GUTS', finishingCategory: 'CONVERSION', nameKo: '각력 전환',
+    descriptionKo: '4코너에서 남은 방어를 힘으로 바꿉니다. 그때부터는 맞으면 아픕니다.',
+    majorTag: 'EXECUTE', tags: ['EXECUTE', 'MORE_LATE'], baseWeight: 0.9,
+    guard: { appliesTo: 'ANY' },
+    fit: { itemAxes: ['tank', 'ad'], phases: ['LATE', 'LAST_3F'] },
+    vfx: { color: '#7d3f6b' },
+    effects: [
+      { kind: 'CONVERT_STAT', stat: 'attackDamage', tag: 'armor', value: 0.55, duration: 999,
+        scaling: { cap: 1.5 }, oncePerCombat: true, trigger: atPhase('LATE') },
+    ],
+  }),
+  fm({
+    id: 'FM_CONVERT_SPELL', finishingCategory: 'CONVERSION', nameKo: '기술로 바꾼다',
+    descriptionKo: '최종 직선에서 남은 마법 저항을 전부 기술로 바꿉니다.',
+    majorTag: 'EXECUTE', tags: ['EXECUTE', 'CAST'], baseWeight: 0.9,
+    guard: { appliesTo: 'ANY', roles: ['AP_CARRY', 'SUPPORT', 'BRUISER'] },
+    fit: { roles: ['AP_CARRY'], itemAxes: ['ap', 'tank'], phases: ['LAST_3F'] },
+    vfx: { color: '#7d3f6b' },
+    effects: [
+      { kind: 'CONVERT_STAT', stat: 'abilityPower', tag: 'magicResist', value: 0.7, duration: 999,
+        scaling: { cap: 2.4 }, oncePerCombat: true, trigger: atPhase('LAST_3F') },
+    ],
+  }),
+  fm({
+    id: 'FM_CONVERT_BODY', finishingCategory: 'CONVERSION', nameKo: '몸을 아끼지 않는다',
+    descriptionKo: '발주부터 방어를 벗고 달립니다. 훨씬 세게 때리고 훨씬 세게 맞습니다.',
+    majorTag: 'EXECUTE', tags: ['EXECUTE', 'BASIC_ATTACK'], baseWeight: 0.85,
+    guard: { appliesTo: 'ANY', roles: ['AD_CARRY', 'AP_CARRY'] },
+    fit: { roles: ['AD_CARRY', 'AP_CARRY'], itemAxes: ['ad', 'crit'], phases: ['START', 'POSITIONING'] },
+    vfx: { color: '#7d3f6b' },
+    effects: [
+      { kind: 'DAMAGE_AMP', value: 0.24, trigger: { when: 'COMBAT_START' } },
+      { kind: 'DAMAGE_REDUCTION', value: -0.15, trigger: { when: 'COMBAT_START' } },
+    ],
+  }),
+
+  // ------------------------------- additions to the existing categories
+  fm({
+    id: 'FM_FRONT_WIRE', finishingCategory: 'FRONTRUN', nameKo: '와이어 투 와이어',
+    descriptionKo: '앞에 남은 상대가 많을수록 세게 끌고 갑니다. 정리될수록 힘이 빠집니다.',
+    majorTag: 'MORE_EARLY', tags: ['MORE_EARLY', 'POSITION'], baseWeight: 1,
+    guard: { appliesTo: 'ANY' },
+    fit: { itemAxes: ['attackSpeed', 'ad'], styles: ['nige'], aptitudeAxes: ['stylePct.nige'], phases: ['START', 'POSITIONING'] },
+    vfx: { color: '#a53c31' },
+    effects: [
+      { kind: 'DAMAGE_AMP', value: 0.035, scaleBy: 'ENEMIES_ALIVE', scaleCap: 6,
+        trigger: { when: 'IN_RACE_PHASE', phases: ['START', 'POSITIONING'] } },
+      mul('moveSpeedHexPerSec', 0.2, { duration: 8, trigger: { when: 'COMBAT_START' } }),
+    ],
+  }),
+  fm({
+    id: 'FM_SUSTAIN_STAYER', finishingCategory: 'SUSTAIN', nameKo: '스테이어의 심장',
+    descriptionKo: '경주가 길어질수록 회복이 빨라집니다. 짧게 끝나면 아무것도 아닙니다.',
+    majorTag: 'SUSTAIN', tags: ['SUSTAIN', 'STACK'], baseWeight: 1,
+    guard: { appliesTo: 'ANY' },
+    fit: { itemAxes: ['sustain', 'tank'], distances: ['stayer'], phases: ['LATE', 'LAST_3F'] },
+    vfx: { color: '#3f785d' },
+    effects: [
+      { kind: 'HEAL_MAXHP_PCT', value: 0.035, target: 'SELF', trigger: { when: 'EVERY_SECONDS', threshold: 4 } },
+      { kind: 'OMNIVAMP', value: 0.14, trigger: { when: 'IN_RACE_PHASE', phases: ['LATE', 'LAST_3F', 'OVERTIME'] } },
+    ],
+  }),
+  fm({
+    id: 'FM_BURST_PHOTO', finishingCategory: 'BURST', nameKo: '결승선 접전',
+    descriptionKo: '연장 승부까지 끌고 가면 거기서부터가 진짜입니다. 한 번은 쓰러지지 않고 버팁니다.',
+    majorTag: 'MORE_LATE', tags: ['MORE_LATE', 'SURVIVAL'], baseWeight: 0.9,
+    guard: { appliesTo: 'ANY' },
+    fit: { itemAxes: ['tank', 'ad'], phases: ['LAST_3F', 'OVERTIME'] },
+    vfx: { color: '#e8c86a' },
+    effects: [
+      { kind: 'SURVIVE_LETHAL', value: 0.3, oncePerCombat: true, trigger: atPhase('LAST_3F') },
+      { kind: 'DAMAGE_AMP', value: 0.18, trigger: { when: 'IN_RACE_PHASE', phases: ['OVERTIME'] } },
+    ],
+  }),
+  fm({
+    id: 'FM_SPELL_CADENCE', finishingCategory: 'SPELL', nameKo: '일정한 각',
+    descriptionKo: '구간이 넘어갈 때마다 기력이 크게 돌아옵니다. 그만큼 승부수가 자주 나갑니다.',
+    majorTag: 'CAST', tags: ['CAST', 'RESET'], baseWeight: 1,
+    guard: { appliesTo: 'ANY', roles: ['AP_CARRY', 'SUPPORT', 'BRUISER'] },
+    fit: { roles: ['AP_CARRY', 'SUPPORT'], itemAxes: ['mana', 'ap'], phases: ['POSITIONING', 'LATE', 'LAST_3F'] },
+    vfx: { color: '#3d6679' },
+    effects: [
+      { kind: 'MANA_ADD', value: 25, trigger: atPhase('POSITIONING') },
+      { kind: 'MANA_ADD', value: 25, trigger: atPhase('LATE') },
+      { kind: 'MANA_ADD', value: 25, trigger: atPhase('LAST_3F') },
+    ],
+  }),
+  fm({
+    id: 'FM_TEMPO_SWITCH', finishingCategory: 'TEMPO', nameKo: '진로 전환',
+    descriptionKo: '상대를 바꿔 잡을 때마다 발이 빨라지고 다음 한 방이 무거워집니다.',
+    majorTag: 'RESET', tags: ['RESET', 'BASIC_ATTACK'], baseWeight: 1,
+    guard: { appliesTo: 'ANY' },
+    fit: { itemAxes: ['attackSpeed', 'ad'], phases: ['POSITIONING', 'LATE'] },
+    vfx: { color: '#1e4938' },
+    effects: [
+      mul('attackSpeed', 0.18, { duration: 3, refresh: true, trigger: { when: 'ON_TARGET_CHANGED' } }),
+      { kind: 'DAMAGE_AMP', value: 0.09, duration: 3, refresh: true, trigger: { when: 'ON_TARGET_CHANGED' } },
+    ],
+  }),
+  fm({
+    id: 'FM_AMPLIFY_PROGRESS', finishingCategory: 'AMPLIFY', nameKo: '후반형',
+    descriptionKo: '경주가 진행될수록 계속 세집니다. 끝까지 가면 가장 셉니다.',
+    majorTag: 'STACK', tags: ['STACK', 'MORE_LATE'], baseWeight: 1,
+    guard: { appliesTo: 'ANY' },
+    fit: { itemAxes: ['ad', 'ap'], phases: ['LATE', 'LAST_3F'] },
+    vfx: { color: '#a98b4b' },
+    effects: [
+      { kind: 'DAMAGE_AMP', value: 0.19, scaleBy: 'RACE_PROGRESS',
+        trigger: { when: 'IN_RACE_PHASE', phases: ['POSITIONING', 'LATE', 'LAST_3F', 'OVERTIME'] } },
+    ],
+  }),
+  fm({
+    id: 'FM_PASS_THREAD', finishingCategory: 'PASSING', nameKo: '말군 돌파',
+    descriptionKo: '최종 직선에서 앞에 남은 상대 수만큼 발이 빨라집니다.',
+    majorTag: 'MORE_LATE', tags: ['MORE_LATE', 'POSITION'], baseWeight: 1,
+    guard: { appliesTo: 'ANY' },
+    fit: { itemAxes: ['attackSpeed', 'ad'], styles: ['sashi', 'oikomi'],
+      aptitudeAxes: ['stylePct.sashi', 'stylePct.oikomi'], phases: ['LAST_3F'] },
+    vfx: { color: '#3d6679' },
+    effects: [
+      { kind: 'STAT_MUL', stat: 'attackSpeed', value: 0.07, scaleBy: 'ENEMIES_ALIVE', scaleCap: 6,
+        duration: 999, oncePerCombat: true, trigger: atPhase('LAST_3F') },
+      { kind: 'DAMAGE_AMP', value: 0.1, trigger: { when: 'IN_RACE_PHASE', phases: ['LAST_3F', 'OVERTIME'] } },
+    ],
+  }),
+  fm({
+    id: 'FM_SUPPORT_PACEMAKER', finishingCategory: 'SUPPORT', nameKo: '페이스메이커',
+    descriptionKo: '앞에서 바람을 받아 주는 대신, 뒤의 동료들이 훨씬 편하게 갑니다.',
+    majorTag: 'TEAM_SUPPORT', tags: ['TEAM_SUPPORT', 'POSITION'], baseWeight: 1,
+    guard: { appliesTo: 'MELEE', needsAdjacentAlly: true },
+    fit: { roles: ['TANK', 'BRUISER'], itemAxes: ['tank'], phases: ['POSITIONING', 'LATE'] },
+    vfx: { color: '#3f785d' },
+    effects: [
+      { kind: 'DAMAGE_AMP', value: 0.08, target: 'ALL_ALLIES', excludeSelf: true, trigger: { when: 'COMBAT_START' } },
+      { kind: 'DAMAGE_REDUCTION', value: -0.06, trigger: { when: 'COMBAT_START' } },
+      add('armor', 18, { trigger: { when: 'COMBAT_START' } }),
+    ],
+  }),
+  fm({
+    id: 'FM_CRIT_CLOSER', finishingCategory: 'CRIT', nameKo: '한 방 노림',
+    descriptionKo: '뒷줄에서 기다렸다가 직선에 들어서면 치명타만 노립니다.',
+    majorTag: 'MORE_LATE', tags: ['MORE_LATE', 'POSITION'], baseWeight: 1,
+    guard: { appliesTo: 'RANGED', roles: ['AD_CARRY'] },
+    fit: { roles: ['AD_CARRY'], itemAxes: ['crit', 'ad'], phases: ['LAST_3F'] },
+    vfx: { color: '#e8c86a' },
+    effects: [
+      { kind: 'CRIT_CHANCE_ADD', value: 0.2, trigger: { when: 'IN_BACK_ROWS' } },
+      { kind: 'CRIT_DAMAGE_ADD', value: 0.3, trigger: { when: 'IN_RACE_PHASE', phases: ['LAST_3F', 'OVERTIME'] } },
+      { kind: 'SKILLS_CAN_CRIT', value: 1, trigger: { when: 'COMBAT_START' } },
     ],
   }),
 ];
@@ -369,7 +566,7 @@ export const RACE_READ_BRANCHES: { hold: EffectDef[]; push: EffectDef[] } = {
 export const SIGNATURE_MOVE_DEFS: RacePlanNode[] = [
   fm({
     id: 'FM_SIG_KITASAN_BLACK', signatureUnitId: 'kitasan_black', finishingCategory: 'SUSTAIN',
-    nameKo: '개선문의 왕도', descriptionKo: '승부처에 몸을 두껍게 하고, 남은 것을 힘으로 바꿉니다.',
+    nameKo: '개선문의 왕도', descriptionKo: '4코너에 몸을 두껍게 하고, 남은 것을 힘으로 바꿉니다.',
     majorTag: 'SURVIVAL', tags: ['SURVIVAL', 'MORE_LATE'], baseWeight: 1,
     guard: { appliesTo: 'MELEE' }, fit: { phases: ['LATE', 'LAST_3F'] }, vfx: { color: '#a98b4b' },
     effects: [
@@ -390,7 +587,7 @@ export const SIGNATURE_MOVE_DEFS: RacePlanNode[] = [
   }),
   fm({
     id: 'FM_SIG_SPECIAL_WEEK', signatureUnitId: 'special_week', finishingCategory: 'PASSING',
-    nameKo: '일본 제일의 각력', descriptionKo: '승부처에 방어를 벗겨내고, 잡아내면 마지막까지 뻗습니다.',
+    nameKo: '일본 제일의 각력', descriptionKo: '4코너에 방어를 벗겨내고, 잡아내면 마지막까지 뻗습니다.',
     majorTag: 'PENETRATION', tags: ['PENETRATION', 'MORE_LATE'], baseWeight: 1,
     guard: { appliesTo: 'RANGED' }, fit: { phases: ['LATE', 'LAST_3F'] }, vfx: { color: '#8de2ff' },
     effects: [
@@ -432,7 +629,7 @@ export const SIGNATURE_MOVE_DEFS: RacePlanNode[] = [
   }),
   fm({
     id: 'FM_SIG_OGURI_CAP', signatureUnitId: 'oguri_cap', finishingCategory: 'AMPLIFY',
-    nameKo: '괴물의 말각', descriptionKo: '승부처 이후 새 상대를 볼 때마다 더 무겁게 때립니다.',
+    nameKo: '괴물의 말각', descriptionKo: '4코너 이후 새 상대를 볼 때마다 더 무겁게 때립니다.',
     majorTag: 'RESET', tags: ['RESET', 'MORE_LATE'], baseWeight: 1,
     guard: { appliesTo: 'RANGED' }, fit: { phases: ['LATE', 'LAST_3F'] }, vfx: { color: '#a98b4b' },
     effects: [
@@ -521,7 +718,7 @@ export const SIGNATURE_MOVE_DEFS: RacePlanNode[] = [
   }),
   fm({
     id: 'FM_SIG_HOKKO_TARUMAE', signatureUnitId: 'hokko_tarumae', finishingCategory: 'SPELL',
-    nameKo: '모래 위의 지구력', descriptionKo: '스킬로 준 만큼 돌려받고, 승부처엔 두 배로 받습니다.',
+    nameKo: '모래 위의 지구력', descriptionKo: '스킬로 준 만큼 돌려받고, 4코너엔 두 배로 받습니다.',
     majorTag: 'SUSTAIN', tags: ['SUSTAIN', 'CAST'], baseWeight: 1,
     guard: { appliesTo: 'RANGED' },
     fit: { surfaces: ['dirt'], aptitudeAxes: ['surfacePct.dirt'], phases: ['POSITIONING', 'LATE'] },
@@ -533,7 +730,7 @@ export const SIGNATURE_MOVE_DEFS: RacePlanNode[] = [
   }),
   fm({
     id: 'FM_SIG_SILENCE_SUZUKA', signatureUnitId: 'silence_suzuka', finishingCategory: 'FRONTRUN',
-    nameKo: '이차원의 도주', descriptionKo: '도중까지 앞서 있으면 아무도 따라오지 못합니다.',
+    nameKo: '이차원의 도주', descriptionKo: '중반까지 앞서 있으면 아무도 따라오지 못합니다.',
     majorTag: 'MORE_EARLY', tags: ['MORE_EARLY'], baseWeight: 1,
     // Built as a range-4 AP carry: she never walks, so nothing here touches
     // movement speed even though her recorded style is nige.

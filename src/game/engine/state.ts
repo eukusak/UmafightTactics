@@ -186,6 +186,8 @@ export type MatchState = {
   g1ThemeId?: string;
   /** Shared going for the current round, rolled once so both sides race the same track. */
   racePlanTrack?: import('./race-plan/types').TrackState;
+  /** The round's full ground: going, pace, weather and any 개최 특례. */
+  raceConditions?: import('./race-plan/conditions').RaceConditions;
 };
 
 export const isAlive = (p: PlayerState): boolean => p.hp > 0 && p.eliminatedAtRound === null;

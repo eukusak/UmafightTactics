@@ -17,7 +17,18 @@ import { ALL_UNITS, getUnitDef } from '../src/game/engine/roster';
 import { newInstance } from '../src/game/engine/shop';
 import { racePlanKindBefore, roundInfo } from '../src/game/engine/rounds/schedule';
 import type { MatchState, PlayerState } from '../src/game/engine/state';
-import type { RacePlanNode } from '../src/game/engine/race-plan/types';
+import type { RaceCombatPhase, RacePlanNode } from '../src/game/engine/race-plan/types';
+import {
+  RUN_STYLES, curveWeightedDamage, styleCurveEffects, styleStepAt,
+} from '../src/game/engine/race-plan/style-curve';
+import {
+  CLAUSE_DEFS, DEFAULT_CONDITIONS, GOING_DEFS, PACE_DEFS, WEATHER_DEFS,
+  describeConditions, getWeather, paceStyleScale, rollRaceConditions,
+} from '../src/game/engine/race-plan/conditions';
+import { g1Identity } from '../src/game/engine/race-plan/g1-identity';
+import { scaleFactor } from '../src/game/engine/battle/effects';
+import { MAX_RECAST_DEPTH } from '../src/game/engine/constants';
+import { Rng } from '../src/game/engine/rng';
 
 function board(state: MatchState, player: PlayerState, unitIds: string[]): void {
   player.board = unitIds.map((id, i) => ({
@@ -77,10 +88,10 @@ describe('race progress and phases', () => {
 });
 
 describe('catalogue', () => {
-  it('ships 24 plans, 24 evolutions, 26 generic and 16 signature moves', () => {
-    expect(RACE_PLAN_DEFS).toHaveLength(24);
-    expect(RACE_EVOLUTION_DEFS).toHaveLength(24);
-    expect(FINISHING_MOVE_DEFS).toHaveLength(26);
+  it('ships 40 plans, 40 evolutions, 41 generic and 16 signature moves', () => {
+    expect(RACE_PLAN_DEFS).toHaveLength(40);
+    expect(RACE_EVOLUTION_DEFS).toHaveLength(40);
+    expect(FINISHING_MOVE_DEFS).toHaveLength(41);
     expect(SIGNATURE_MOVE_DEFS).toHaveLength(16);
     expect(new Set(ALL_RACE_PLAN_NODES.map((n) => n.id)).size).toBe(ALL_RACE_PLAN_NODES.length);
   });
@@ -147,7 +158,8 @@ describe('racing profiles', () => {
       }
     }
     expect(G1_THEMES.length).toBeGreaterThan(0);
-    for (const theme of G1_THEMES) expect(['GI', 'JpnI']).toContain(theme.grade);
+    // JGI is the 장애 (jump) grade, added with the overseas races in the manual layer.
+    for (const theme of G1_THEMES) expect(['GI', 'JpnI', 'JGI']).toContain(theme.grade);
   });
 
   it('separates a rare aptitude from a universal one', () => {
@@ -434,5 +446,166 @@ describe('AI awareness', () => {
     player.racePlan!.entryUnitInstanceId = entryUnit.instanceId;
     expect(itemFit(entryUnit, 'champion_trophy', player))
       .toBeGreaterThan(itemFit(plainUnit, 'champion_trophy', player));
+  });
+});
+
+describe('각질 phase curve', () => {
+  const WEIGHTS: Record<RaceCombatPhase, number> = {
+    // Share of a full race each phase occupies, from RACE_PHASE_AT.
+    START: 1 / 6, POSITIONING: 1 / 2, LATE: 1 / 6, LAST_3F: 1 / 6, OVERTIME: 0,
+  };
+
+  it('gives every style a differently shaped curve rather than the same one', () => {
+    const shapes = RUN_STYLES.map((style) =>
+      (['START', 'POSITIONING', 'LATE', 'LAST_3F'] as RaceCombatPhase[])
+        .map((p) => styleStepAt(style, p).damage.toFixed(2)).join(','));
+    expect(new Set(shapes).size).toBe(RUN_STYLES.length);
+  });
+
+  it('rises monotonically for the closers and falls for the front-runner', () => {
+    const order: RaceCombatPhase[] = ['START', 'POSITIONING', 'LATE', 'LAST_3F'];
+    const damage = (s: 'nige' | 'senko' | 'sashi' | 'oikomi') =>
+      order.map((p) => styleStepAt(s, p).damage);
+    // A closer is worth more the longer the race runs.
+    for (const style of ['sashi', 'oikomi'] as const) {
+      const curve = damage(style);
+      for (let i = 1; i < curve.length; i += 1) expect(curve[i], style).toBeGreaterThan(curve[i - 1]);
+      // And it buys that late power with early damage reduction.
+      expect(styleStepAt(style, 'START').resist).toBeGreaterThan(0);
+      expect(styleStepAt(style, 'LAST_3F').resist).toBe(0);
+    }
+    // 도주 is the mirror image: paid up front, spent by the straight.
+    const nige = damage('nige');
+    expect(nige[0]).toBeGreaterThan(0);
+    expect(nige.at(-1)!).toBeLessThan(0);
+  });
+
+  it('keeps the four styles within a narrow band once phase length is counted', () => {
+    // Each phase is weighted by how much of the race it actually occupies, so a
+    // 26% bonus over the last sixth does not read as six times a 4% one.
+    const totals = RUN_STYLES.map((s) => curveWeightedDamage(s, WEIGHTS));
+    const spread = Math.max(...totals) - Math.min(...totals);
+    expect(spread, `totals ${totals.map((t) => t.toFixed(3)).join(' ')}`).toBeLessThan(0.06);
+  });
+
+  it('binds the curve to every unit with a style, not just the GⅠ entry', () => {
+    for (const style of RUN_STYLES) {
+      const effects = styleCurveEffects(style);
+      // Four curve steps plus one signature, all reachable.
+      expect(effects.some((e) => e.trigger?.when === 'IN_RACE_PHASE'), style).toBe(true);
+      expect(effects.some((e) => e.trigger?.when === 'ON_RACE_PHASE'), style).toBe(true);
+    }
+  });
+
+  it('lets the pace bend the curve in opposite directions for front and back', () => {
+    const high = { ...DEFAULT_CONDITIONS, pace: 'HIGH' as const };
+    const slow = { ...DEFAULT_CONDITIONS, pace: 'SLOW' as const };
+    // A hard pace empties the front-runner and pays the closer.
+    expect(paceStyleScale(high, 'nige')).toBeLessThan(1);
+    expect(paceStyleScale(high, 'oikomi')).toBeGreaterThan(1);
+    // A slow one does exactly the reverse; that symmetry is the whole mechanic.
+    expect(paceStyleScale(slow, 'nige')).toBeGreaterThan(1);
+    expect(paceStyleScale(slow, 'oikomi')).toBeLessThan(1);
+  });
+});
+
+describe('race conditions', () => {
+  it('never announces clear skies on a bog', () => {
+    for (let i = 0; i < 500; i += 1) {
+      const c = rollRaceConditions(Rng.forStream(i, 'race-track'));
+      expect(getWeather(c.weather).goings, `${c.weather}/${c.going}`).toContain(c.going);
+    }
+  });
+
+  it('produces real variety rather than three going values', () => {
+    const lines = new Set<string>();
+    for (let i = 0; i < 400; i += 1) lines.add(describeConditions(rollRaceConditions(Rng.forStream(i, 'race-track'))));
+    expect(lines.size).toBeGreaterThan(60);
+  });
+
+  it('keeps 개최 특례 rare enough to stay special', () => {
+    let withClause = 0;
+    for (let i = 0; i < 600; i += 1) {
+      if (rollRaceConditions(Rng.forStream(i, 'race-track')).clause !== 'NONE') withClause += 1;
+    }
+    const rate = withClause / 600;
+    expect(rate).toBeGreaterThan(0.2);
+    expect(rate).toBeLessThan(0.5);
+  });
+
+  it('gives every axis a note the help panel can print', () => {
+    for (const def of [...GOING_DEFS, ...PACE_DEFS, ...WEATHER_DEFS, ...CLAUSE_DEFS]) {
+      expect(def.nameKo.length, def.id).toBeGreaterThan(0);
+      expect(def.noteKo.endsWith('.') || def.noteKo.endsWith('다'), def.id).toBe(true);
+    }
+  });
+
+  it('leaves a battle with no round behind it on neutral ground', () => {
+    // A synthetic battle is not a race: no going, no 과제, no 각질 curve. If this
+    // ever regresses, every exact-damage contract test starts drifting.
+    const state = createMatch({ seed: 77, allAi: true, seasonId: 's1' });
+    expect(state.raceConditions).toEqual(DEFAULT_CONDITIONS);
+    expect(state.g1ThemeId).toBeTruthy();
+  });
+});
+
+describe('GⅠ identity', () => {
+  it('covers the whole calendar and adds the overseas and 장애 races', () => {
+    expect(G1_THEMES.length).toBeGreaterThanOrEqual(46);
+    expect(G1_THEMES.some((t) => t.id === 'ARC')).toBe(true);
+    expect(G1_THEMES.some((t) => t.grade === 'JGI')).toBe(true);
+    // The vendored calendar was thin at both ends; the manual layer fills it.
+    const sprints = G1_THEMES.filter((t) => t.distanceClass === 'SPRINT').length;
+    const longs = G1_THEMES.filter((t) => t.distanceClass === 'LONG').length;
+    expect(sprints).toBeGreaterThanOrEqual(5);
+    expect(longs).toBeGreaterThanOrEqual(5);
+  });
+
+  it('gives every race a 과제 with effects and a readable note', () => {
+    for (const theme of G1_THEMES) {
+      const id = g1Identity(theme);
+      expect(id.effects.length, theme.id).toBeGreaterThan(0);
+      expect(id.favours.length, theme.id).toBeGreaterThan(0);
+      expect(id.noteKo.length, theme.id).toBeGreaterThan(10);
+    }
+  });
+
+  it('spreads the calendar across several identities instead of one', () => {
+    const names = new Set(G1_THEMES.map((t) => g1Identity(t).nameKo));
+    expect(names.size).toBeGreaterThanOrEqual(8);
+  });
+
+  it('has no duplicate race ids after the merge', () => {
+    expect(new Set(G1_THEMES.map((t) => t.id)).size).toBe(G1_THEMES.length);
+  });
+});
+
+describe('new effect primitives', () => {
+  it('scales a value by a live quantity and respects the cap', () => {
+    const ctx = {
+      now: 0, overtime: false, units: [] as never[],
+      dealDamage: () => 0, applyStatus: () => {}, dash: () => {}, summon: () => {},
+    } as unknown as Parameters<typeof scaleFactor>[0];
+    const self = { hp: 40, maxHp: 100, team: 'A', id: 'x' } as unknown as Parameters<typeof scaleFactor>[1];
+    expect(scaleFactor(ctx, self, { kind: 'DAMAGE_AMP', value: 1, scaleBy: 'SELF_MISSING_HP_PCT' })).toBeCloseTo(0.6);
+    expect(scaleFactor(ctx, self, { kind: 'DAMAGE_AMP', value: 1, scaleBy: 'SELF_CURRENT_HP_PCT' })).toBeCloseTo(0.4);
+    expect(scaleFactor(ctx, self, { kind: 'DAMAGE_AMP', value: 1, scaleBy: 'SELF_MISSING_HP_PCT', scaleCap: 0.25 })).toBeCloseTo(0.25);
+    // No scaleBy means no scaling at all, never zero.
+    expect(scaleFactor(ctx, self, { kind: 'DAMAGE_AMP', value: 1 })).toBe(1);
+  });
+
+  it('caps how many free re-releases one cast can buy', () => {
+    // Two is the ceiling; without it a pair of ENCORE cards on one unit loops.
+    expect(MAX_RECAST_DEPTH).toBeGreaterThan(0);
+    expect(MAX_RECAST_DEPTH).toBeLessThanOrEqual(3);
+  });
+
+  it('uses the new primitives in real cards rather than declaring them unused', () => {
+    const all = ALL_RACE_PLAN_NODES.flatMap((n) => n.effects);
+    for (const kind of ['RECAST_SKILL', 'MANA_FILL', 'CONVERT_STAT']) {
+      expect(all.some((e) => e.kind === kind), kind).toBe(true);
+    }
+    expect(all.some((e) => e.scaleBy), 'scaleBy').toBe(true);
+    expect(all.some((e) => e.trigger?.when === 'IN_RACE_PHASE'), 'IN_RACE_PHASE').toBe(true);
   });
 });

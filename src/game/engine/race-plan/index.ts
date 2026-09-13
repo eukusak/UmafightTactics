@@ -1,6 +1,9 @@
 /** Race Plan / GⅠ entry system. See docs/RACE_PLAN_CODEX_SPEC_v2.md. */
 export * from './types';
 export * from './race-phases';
+export * from './style-curve';
+export * from './conditions';
+export * from './g1-identity';
 export * from './defs';
 export * from './profiles';
 export * from './context';

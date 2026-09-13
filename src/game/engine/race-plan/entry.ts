@@ -36,8 +36,18 @@ function racePlanFit(node: RacePlanNode | undefined, unitDefId: string): number 
  * Real racing aptitude is 10% of this on purpose. It colours the recommendation
  * and never gates it: a unit with G in every relevant grade can still be entered
  * and still receives three finishing moves.
+ *
+ * `bestScore` is the strongest carry on the board, and the strength term is
+ * measured against it rather than against 1. Raw carry scores for the units a
+ * player is actually choosing between sit in a narrow band, so an absolute
+ * reading compresses the one factor that should decide this — a three-star with
+ * two items is a better entry than a bare legendary — into a gap small enough
+ * for aptitude flavour to overturn. Relative strength restores the full range
+ * to strength and leaves flavour at the tenth it is documented to be.
  */
-export function entryFit(state: MatchState, player: PlayerState, candidate: CarryCandidate): number {
+export function entryFit(
+  state: MatchState, player: PlayerState, candidate: CarryCandidate, bestScore = 1,
+): number {
   const plan = player.racePlan?.planId ? findRacePlanNode(player.racePlan.planId) : undefined;
   const evolution = player.racePlan?.evolutionId ? findRacePlanNode(player.racePlan.evolutionId) : undefined;
   const unit = [...player.board, ...player.bench].find((u) => u.instanceId === candidate.instanceId);
@@ -57,25 +67,29 @@ export function entryFit(state: MatchState, player: PlayerState, candidate: Carr
   }
 
   const signature = SIGNATURE_BY_UNIT.has(candidate.unitDefId) ? 1 : 0;
-  const recent = Math.min(1, candidate.score);
+  const relative = Math.min(1, candidate.score / Math.max(0.01, bestScore));
 
+  // Strength first. Aptitude and the signature move are flavour, and flavour is
+  // held below the strength terms so it can reorder near-equals without ever
+  // putting a bare unit ahead of a clearly better carry.
   return (
     0.3 * candidate.score +
     0.2 * planFit +
     0.15 * itemFit +
-    0.1 * recent +
+    0.15 * relative +
     0.1 * roleFit +
-    0.1 * aptitude +
-    0.05 * signature
+    0.07 * aptitude +
+    0.03 * signature
   );
 }
 
 export function entryCandidates(state: MatchState, player: PlayerState): EntryCandidate[] {
   const ctx = buildRacePlanContext(state, player);
+  const bestScore = ctx.carries.reduce((n, c) => Math.max(n, c.score), 0);
   const scored = ctx.carries
     .map((candidate) => ({
       ...candidate,
-      fit: entryFit(state, player, candidate),
+      fit: entryFit(state, player, candidate, bestScore),
       mark: '' as EntryMark,
       hasSignature: SIGNATURE_BY_UNIT.has(candidate.unitDefId),
     }))

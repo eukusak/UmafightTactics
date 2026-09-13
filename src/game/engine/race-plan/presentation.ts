@@ -19,6 +19,8 @@ export const CATEGORY_LABEL: Record<RacePlanCategory, string> = {
   LAST_3F: '라스트 3F',
   GUTS: '근성 승부',
   TRACK: '마장 적응',
+  PACE_READ: '페이스 판단',
+  GAMBLE: '승부수 전개',
 };
 
 export const CATEGORY_COLOR: Record<RacePlanCategory, string> = {
@@ -30,16 +32,20 @@ export const CATEGORY_COLOR: Record<RacePlanCategory, string> = {
   LAST_3F: '#e8c86a',
   GUTS: '#a53c31',
   TRACK: '#765844',
+  PACE_READ: '#4a6b8a',
+  GAMBLE: '#7d3f6b',
 };
 
 export const FINISHING_LABEL: Record<FinishingCategory, string> = {
   FRONTRUN: '선행', SUSTAIN: '지구력', BURST: '종반 폭발', SPELL: '스킬 회전',
   TEMPO: '템포', AMPLIFY: '증폭', PASSING: '추월', SUPPORT: '보조', CRIT: '치명타',
+  ENCORE: '재각', CONVERSION: '각력 전환',
 };
 
 export const FINISHING_COLOR: Record<FinishingCategory, string> = {
   FRONTRUN: '#a53c31', SUSTAIN: '#3f785d', BURST: '#e8c86a', SPELL: '#3d6679',
   TEMPO: '#1e4938', AMPLIFY: '#a98b4b', PASSING: '#3d6679', SUPPORT: '#3f785d', CRIT: '#e8c86a',
+  ENCORE: '#e8c86a', CONVERSION: '#7d3f6b',
 };
 
 const STAT_LABEL: Partial<Record<keyof BattleStats, string>> = {
@@ -144,7 +150,7 @@ export function describeEffects(node: RacePlanNode): string[] {
     lines.push('이번 라운드 마장 상태에 따라 총량이 같은 다른 보너스');
   }
   if (node.id === 'FM_RACE_READ') {
-    lines.push('승부처에서 적이 더 많으면 방어력·마법 저항력 +20, 받는 피해 8% 감소');
+    lines.push('4코너에서 적이 더 많으면 방어력·마법 저항력 +20, 받는 피해 8% 감소');
     lines.push('그 외에는 피해 증폭 +12%. 선택된 쪽이 전투 종료까지 유지됩니다.');
   }
   return lines;
@@ -159,8 +165,8 @@ export const REASON_COPY: Record<string, { mark: '◎' | '○' | '△'; text: (n
   FAST_COMBAT: { mark: '○', text: (n) => `최근 전투 평균 ${n ?? 0}초 — 승부가 일찍 납니다.` },
   LONG_COMBAT: { mark: '◎', text: (n) => `최근 전투 평균 ${n ?? 0}초 — 종반까지 이어집니다.` },
   OVERTIME_OFTEN: { mark: '◎', text: () => '최근 전투가 자주 극한 승부로 갑니다.' },
-  EARLY_FRONTLINE_COLLAPSE: { mark: '△', text: () => '전열이 도중에 먼저 무너지고 있습니다.' },
-  ENEMY_TANK_WALL: { mark: '△', text: () => '승부처에서 상대 전열이 아직 두껍습니다.' },
+  EARLY_FRONTLINE_COLLAPSE: { mark: '△', text: () => '전열이 중반에 먼저 무너지고 있습니다.' },
+  ENEMY_TANK_WALL: { mark: '△', text: () => '4코너에서 상대 전열이 아직 두껍습니다.' },
   CARRY_CAST_LATE: { mark: '△', text: () => '승부마의 첫 스킬이 늦게 나옵니다.' },
   LOW_LEVEL_REROLL: { mark: '○', text: () => '저코스트 3성 운영과 호응합니다.' },
   HIGH_ECONOMY: { mark: '○', text: (n) => `보유 골드 ${n ?? 0} — 고코스트 전환 여지가 큽니다.` },
@@ -182,6 +188,11 @@ export const REASON_COPY: Record<string, { mark: '◎' | '○' | '△'; text: (n
   CARRY_READY: { mark: '◎', text: () => '승부마 후보가 이미 준비되어 있습니다.' },
   PIVOT_ROOM: { mark: '○', text: () => '특정 기물에 묶이지 않는 전개입니다.' },
   NODE_TIMING: { mark: '○', text: (_n, text) => `힘이 실리는 구간: ${text ?? ''}` },
+  PACE_HIGH: { mark: '△', text: () => '오늘은 하이페이스라 앞선 말이 직선에서 무너집니다' },
+  PACE_SLOW: { mark: '△', text: () => '오늘은 슬로우페이스라 앞에 선 말이 그대로 끌고 들어갑니다' },
+  GOING_SOFT: { mark: '△', text: () => '마장이 무거워 버티는 쪽이 남습니다' },
+  GOING_FIRM: { mark: '○', text: () => '마장이 단단해 시계가 빠릅니다' },
+  CLAUSE_ACTIVE: { mark: '○', text: (_n, text) => `이번 개최 특례: ${text ?? ''}` },
 };
 
 export function reasonText(payload: OfferReasonPayload): { mark: string; text: string } {

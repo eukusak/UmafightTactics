@@ -15,7 +15,8 @@ import {
   describeEffects, reasonText,
 } from '../../game/engine/race-plan/presentation';
 import { getG1Theme } from '../../game/engine/race-plan/profiles';
-import { TRACK_STATE_LABEL } from '../../game/engine/race-plan/plan-defs';
+import { describeConditions } from '../../game/engine/race-plan/conditions';
+import { g1Identity } from '../../game/engine/race-plan/g1-identity';
 import { RACE_PHASE_LABEL } from '../../game/engine/race-plan/types';
 import type { RacePlanNode } from '../../game/engine/race-plan/types';
 import { CATEGORY_ICON } from './RaceIcons';
@@ -118,7 +119,8 @@ export function RacePlanOverlay(): JSX.Element | null {
             <h2>{isPlan ? '출주 계획' : '전개 수정'}</h2>
             <div className="race-sub">
               Stage {match.stage}-{match.round} · 목표 GⅠ {theme.nameKo} ({theme.courseNameKo} {theme.distanceM}m)
-              {match.racePlanTrack ? ` · 마장 ${TRACK_STATE_LABEL[match.racePlanTrack]}` : ''}
+              {match.raceConditions ? ` · ${describeConditions(match.raceConditions)}` : ''}
+              {` · ${g1Identity(theme).nameKo}`}
             </div>
           </div>
           <div className="race-stats">

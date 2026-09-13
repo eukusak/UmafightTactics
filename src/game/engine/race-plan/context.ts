@@ -9,6 +9,7 @@ import { getUnitDef } from '../roster';
 import { activeTraitCounts } from '../ai';
 import { starSkillMultiplier } from '../constants';
 import type { BattleStats, Cost, EffectKind, Role, RunStyle, Star } from '../types';
+import { DEFAULT_CONDITIONS, type RaceConditions } from './conditions';
 import type { MatchState, PlayerState, UnitInstance } from '../state';
 import { getRacingProfile } from './profiles';
 import type {
@@ -34,6 +35,8 @@ export type RacePlanContext = {
   carries: CarryCandidate[];
   recentCombat: RecentCombatProfile;
   augments: string[];
+  /** The ground this round is run on. Offers are weighted against it. */
+  conditions: RaceConditions;
 };
 
 const ZERO_ITEMS: ItemProfile = {
@@ -90,9 +93,20 @@ export function buildItemProfile(player: PlayerState): ItemProfile {
   return out;
 }
 
-/** Item fit of one unit for one node's axes, 0..1. */
+/**
+ * Item fit of one unit for one node's axes, 0..1.
+ *
+ * With no axes to match against — a node that wants nothing in particular, or a
+ * board that has not chosen a plan yet — this falls back to how well equipped
+ * the unit simply *is*. Returning zero there made a fully geared carry and a
+ * bare one score identically, which is the opposite of what the caller wants.
+ */
 export function unitItemFit(unit: UnitInstance, axes: Array<keyof ItemProfile> | undefined): number {
-  if (!axes?.length || !unit.items.length) return 0;
+  if (!unit.items.length) return 0;
+  if (!axes?.length) {
+    const complete = unit.items.filter((id) => !getItem(id).isComponent).length;
+    return Math.min(1, (complete + unit.items.length) / 6);
+  }
   let hits = 0;
   for (const itemId of unit.items) {
     const def = getItem(itemId);
@@ -231,6 +245,7 @@ export function buildRacePlanContext(state: MatchState, player: PlayerState): Ra
   }
 
   return {
+    conditions: state.raceConditions ?? DEFAULT_CONDITIONS,
     playerId: player.id,
     level: player.level,
     gold: player.gold,

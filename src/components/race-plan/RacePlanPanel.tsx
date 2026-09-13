@@ -10,7 +10,11 @@ import { useGameStore } from '../../store/gameStore';
 import { getUnitDef } from '../../game/engine/roster';
 import { findRacePlanNode } from '../../game/engine/race-plan/defs';
 import { getG1Theme } from '../../game/engine/race-plan/profiles';
-import { TRACK_STATE_LABEL } from '../../game/engine/race-plan/plan-defs';
+import { conditionNotes, describeConditions } from '../../game/engine/race-plan/conditions';
+import { g1Identity } from '../../game/engine/race-plan/g1-identity';
+import { STYLE_CURVES, RUN_STYLES } from '../../game/engine/race-plan/style-curve';
+import { getPace } from '../../game/engine/race-plan/conditions';
+import { getUnitTraits } from '../../game/engine/roster';
 import { describeEffects } from '../../game/engine/race-plan/presentation';
 import { RACE_PLAN_ROUNDS } from '../../game/engine/constants';
 
@@ -43,7 +47,25 @@ export function RacePlanPanel(): JSX.Element | null {
   const move = rp?.finishingMoveId ? findRacePlanNode(rp.finishingMoveId) : undefined;
   const entry = rp?.entryUnitDefId ? getUnitDef(rp.entryUnitDefId) : undefined;
   const theme = getG1Theme(match.g1ThemeId);
+  const identity = g1Identity(theme);
   const fielded = entry && human.board.some((u) => u.unitDefId === entry.id);
+
+  // What each 각질 on the board is doing under this round's pace. The pace is
+  // the part a player cannot read off the unit itself, so it is spelled out.
+  const pace = match.raceConditions ? getPace(match.raceConditions.pace) : null;
+  const counts = new Map<string, number>();
+  for (const u of human.board) {
+    for (const style of RUN_STYLES) {
+      if (getUnitTraits(u.unitDefId, human.seasonId).includes(style)) counts.set(style, (counts.get(style) ?? 0) + 1);
+    }
+  }
+  const styleLines = RUN_STYLES.filter((s) => counts.has(s)).map((style) => {
+    const curve = STYLE_CURVES[style];
+    const scale = pace?.styleScale[style] ?? 1;
+    const bend = scale > 1.05 ? ` 오늘 ${pace!.nameKo}라 이 각질이 크게 살아납니다.`
+      : scale < 0.95 ? ` 오늘 ${pace!.nameKo}라 이 각질은 힘을 덜 씁니다.` : '';
+    return { style, name: curve.nameKo, count: counts.get(style)!, text: curve.summaryKo + bend };
+  });
   const upcoming = nextStep(!!plan, !!evolution, !!entry);
 
   return (
@@ -52,12 +74,35 @@ export function RacePlanPanel(): JSX.Element | null {
       <p className="race-side-theme">
         이번 로비의 목표는 {theme.nameKo}, {theme.courseNameKo} {theme.distanceM}m{' '}
         {theme.surface === 'TURF' ? '잔디' : '더트'} {theme.direction === 'LEFT' ? '좌회전' : '우회전'}입니다
-        {match.racePlanTrack ? `. 이번 라운드 마장은 ${TRACK_STATE_LABEL[match.racePlanTrack]}입니다` : ''}.
+        {match.raceConditions ? `. 이번 라운드는 ${describeConditions(match.raceConditions)}입니다` : ''}.
       </p>
+      <p className="race-side-help">
+        <b>{identity.nameKo}</b> — {identity.noteKo}
+      </p>
+
+      {match.raceConditions && (
+        <details className="race-side-details">
+          <summary>오늘의 마장 읽기</summary>
+          <ul className="race-effects">
+            {conditionNotes(match.raceConditions).map((c) => (
+              <li key={c.label}><b>{c.label}</b> — {c.note}</li>
+            ))}
+          </ul>
+        </details>
+      )}
+
+      {styleLines.length > 0 && (
+        <details className="race-side-details">
+          <summary>내 보드의 각질</summary>
+          <ul className="race-effects">
+            {styleLines.map((line) => <li key={line.style}><b>{line.name} ×{line.count}</b> — {line.text}</li>)}
+          </ul>
+        </details>
+      )}
 
       {!plan && (
         <p className="race-side-help">
-          전투를 하나의 경주로 보고 템, 도중, 승부처, 라스트 3F 가운데 어디에서 힘을 쓸지 고르는 시스템입니다.
+          전투를 한 번의 경주로 보고 발주, 중반, 4코너, 최종 직선 가운데 어디에서 힘을 쓸지 고르는 시스템입니다.
           증강체와 달리 골드나 상점에는 손대지 않고, 마지막에 지정한 승부마 한 명에게 작전이 실립니다.
         </p>
       )}

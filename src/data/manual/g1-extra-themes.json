@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "_note": "UmaFightTactics 가 직접 소유하는 GⅠ 테마다. src/data/source/race-templates.json 은 UmaRogue 에서 SHA 잠금으로 받아오므로 직접 고치지 않고, 여기에 얹어서 합친다(scripts/sync-umarogue.ts 가 덮어써도 이 파일은 남는다).",
+  "_scope": "JRA/NAR 평지 GⅠ 30개는 vendored 쪽에 이미 전부 들어 있다. 여기에는 해외 GⅠ 과 장애 JGⅠ 을 넣어 단거리·장거리 구간과 마장 다양성을 채운다.",
+  "courses": [
+    { "id": "LONGCHAMP", "nameKo": "롱샹", "straightM": 533 },
+    { "id": "ASCOT", "nameKo": "애스콧", "straightM": 500 },
+    { "id": "MEYDAN", "nameKo": "메이단", "straightM": 450 },
+    { "id": "SANTA_ANITA", "nameKo": "산타애니타", "straightM": 300 },
+    { "id": "SHA_TIN", "nameKo": "샤틴", "straightM": 430 },
+    { "id": "FLEMINGTON", "nameKo": "플레밍턴", "straightM": 450 },
+    { "id": "SEOUL", "nameKo": "서울", "straightM": 450 }
+  ],
+  "templates": [
+    { "id": "ARC", "nameJa": "凱旋門賞", "nameKo": "개선문상", "racecourse": "LONGCHAMP", "surface": "TURF", "distanceM": 2400, "direction": "RIGHT", "season": "AUTUMN", "distanceClass": "MIDDLE", "grade": "GI" },
+    { "id": "KING_GEORGE", "nameJa": "キングジョージ6世&クイーンエリザベスS", "nameKo": "킹 조지 6세 & 퀸 엘리자베스 스테이크스", "racecourse": "ASCOT", "surface": "TURF", "distanceM": 2390, "direction": "RIGHT", "season": "SUMMER", "distanceClass": "MIDDLE", "grade": "GI" },
+    { "id": "DUBAI_WORLD_CUP", "nameJa": "ドバイワールドカップ", "nameKo": "두바이 월드컵", "racecourse": "MEYDAN", "surface": "DIRT", "distanceM": 2000, "direction": "LEFT", "season": "SPRING", "distanceClass": "MIDDLE", "grade": "GI" },
+    { "id": "DUBAI_SHEEMA", "nameJa": "ドバイシーマクラシック", "nameKo": "두바이 시마 클래식", "racecourse": "MEYDAN", "surface": "TURF", "distanceM": 2410, "direction": "LEFT", "season": "SPRING", "distanceClass": "MIDDLE", "grade": "GI" },
+    { "id": "DUBAI_TURF", "nameJa": "ドバイターフ", "nameKo": "두바이 터프", "racecourse": "MEYDAN", "surface": "TURF", "distanceM": 1800, "direction": "LEFT", "season": "SPRING", "distanceClass": "MILE", "grade": "GI" },
+    { "id": "BC_CLASSIC", "nameJa": "ブリーダーズカップクラシック", "nameKo": "브리더스컵 클래식", "racecourse": "SANTA_ANITA", "surface": "DIRT", "distanceM": 2000, "direction": "LEFT", "season": "AUTUMN", "distanceClass": "MIDDLE", "grade": "GI" },
+    { "id": "BC_TURF", "nameJa": "ブリーダーズカップターフ", "nameKo": "브리더스컵 터프", "racecourse": "SANTA_ANITA", "surface": "TURF", "distanceM": 2400, "direction": "LEFT", "season": "AUTUMN", "distanceClass": "MIDDLE", "grade": "GI" },
+    { "id": "HONG_KONG_CUP", "nameJa": "香港カップ", "nameKo": "홍콩컵", "racecourse": "SHA_TIN", "surface": "TURF", "distanceM": 2000, "direction": "RIGHT", "season": "WINTER", "distanceClass": "MIDDLE", "grade": "GI" },
+    { "id": "HONG_KONG_MILE", "nameJa": "香港マイル", "nameKo": "홍콩 마일", "racecourse": "SHA_TIN", "surface": "TURF", "distanceM": 1600, "direction": "RIGHT", "season": "WINTER", "distanceClass": "MILE", "grade": "GI" },
+    { "id": "HONG_KONG_VASE", "nameJa": "香港ヴァーズ", "nameKo": "홍콩 바즈", "racecourse": "SHA_TIN", "surface": "TURF", "distanceM": 2400, "direction": "RIGHT", "season": "WINTER", "distanceClass": "MIDDLE", "grade": "GI" },
+    { "id": "HONG_KONG_SPRINT", "nameJa": "香港スプリント", "nameKo": "홍콩 스프린트", "racecourse": "SHA_TIN", "surface": "TURF", "distanceM": 1200, "direction": "RIGHT", "season": "WINTER", "distanceClass": "SPRINT", "grade": "GI" },
+    { "id": "MELBOURNE_CUP", "nameJa": "メルボルンカップ", "nameKo": "멜버른컵", "racecourse": "FLEMINGTON", "surface": "TURF", "distanceM": 3200, "direction": "LEFT", "season": "SPRING", "distanceClass": "LONG", "grade": "GI" },
+    { "id": "KOREA_CUP", "nameJa": "コリアカップ", "nameKo": "코리아컵", "racecourse": "SEOUL", "surface": "DIRT", "distanceM": 1800, "direction": "LEFT", "season": "AUTUMN", "distanceClass": "MILE", "grade": "GI" },
+    { "id": "KOREA_SPRINT", "nameJa": "コリアスプリント", "nameKo": "코리아 스프린트", "racecourse": "SEOUL", "surface": "DIRT", "distanceM": 1200, "direction": "LEFT", "season": "AUTUMN", "distanceClass": "SPRINT", "grade": "GI" },
+    { "id": "NAKAYAMA_GRAND_JUMP", "nameJa": "中山グランドジャンプ", "nameKo": "나카야마 그랜드 점프", "racecourse": "NAKAYAMA", "surface": "TURF", "distanceM": 4250, "direction": "RIGHT", "season": "SPRING", "distanceClass": "LONG", "grade": "JGI" },
+    { "id": "NAKAYAMA_DAISHOGAI", "nameJa": "中山大障害", "nameKo": "나카야마 대장애", "racecourse": "NAKAYAMA", "surface": "TURF", "distanceM": 4100, "direction": "RIGHT", "season": "WINTER", "distanceClass": "LONG", "grade": "JGI" }
+  ]
+}

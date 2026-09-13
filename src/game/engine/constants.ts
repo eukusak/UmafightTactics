@@ -156,6 +156,13 @@ export function fighterAttackSpeed(stage: number): number {
 }
 export const MANA_FROM_DAMAGE_CAP = 50;
 export const MANA_LOCK_AFTER_CAST_SECONDS = 1;
+/**
+ * How many free re-releases one cast may buy through RECAST_SKILL.
+ *
+ * Two is enough for the "한 번 더" cards to feel like a real burst while making
+ * a runaway chain impossible even if two such cards land on the same unit.
+ */
+export const MAX_RECAST_DEPTH = 2;
 
 /** Spec §13.1 — logical board. */
 export const BOARD_COLS = 7;

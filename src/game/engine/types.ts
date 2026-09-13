@@ -74,6 +74,17 @@ export type TargetRule =
  * One declarative effect. The EffectSystem interprets these; there is no
  * per-item or per-skill switch anywhere in the battle engine (spec §42).
  */
+/**
+ * A live number an effect's magnitude can be multiplied by.
+ *
+ * This is what lets one card read "남은 상대 수만큼" instead of a flat value.
+ * Counts are whole units; the `_PCT` sources are 0..1 fractions.
+ */
+export type ScaleSource =
+  | 'ENEMIES_ALIVE' | 'ALLIES_ALIVE' | 'ENEMIES_DEAD' | 'ALLIES_DEAD'
+  | 'SELF_MISSING_HP_PCT' | 'SELF_CURRENT_HP_PCT'
+  | 'RACE_PROGRESS' | 'SECONDS_ELAPSED';
+
 export type EffectDef = {
   shape?: 'LINE' | 'CONE' | 'CHAIN';
   range?: number;
@@ -117,6 +128,10 @@ export type EffectDef = {
   tag?: string;
   /** Once-per-combat gate. */
   oncePerCombat?: boolean;
+  /** Multiply `value` by this live quantity, evaluated when the effect lands. */
+  scaleBy?: ScaleSource;
+  /** Ceiling on the `scaleBy` multiplier, so a wipe cannot produce a silly number. */
+  scaleCap?: number;
 };
 
 export type EffectKind =
@@ -162,7 +177,13 @@ export type EffectKind =
   | 'MANA_LOCK'
   | 'TAUNT'
   | 'DASH'
-  | 'SUMMON';
+  | 'SUMMON'
+  /** Race Plan: refill mana to `value` of max (default all of it), so a cast lands now. */
+  | 'MANA_FILL'
+  /** Race Plan: release the holder's own skill again, free, without touching mana. */
+  | 'RECAST_SKILL'
+  /** Race Plan: turn `value` of the `tag` stat into the `stat` stat for `duration`. */
+  | 'CONVERT_STAT';
 
 export type StatusKind =
   | 'STUN'
@@ -201,13 +222,17 @@ export type TriggerDef = {
     | 'IN_BACK_ROWS'
     /** Race Plan: fires once when the race reaches `phase` (see race-plan/race-phases). */
     | 'ON_RACE_PHASE'
+    /** Race Plan: holds continuously while the race is inside `phase` / `phases`. */
+    | 'IN_RACE_PHASE'
     /** Race Plan: fires when the holder switches to a different enemy. */
     | 'ON_TARGET_CHANGED';
   /** Threshold for HP_BELOW / AFTER_SECONDS / ON_NTH_ATTACK / adjacency counts. */
   threshold?: number;
-  /** ON_RACE_PHASE only: which phase opens this effect. */
+  /** ON_RACE_PHASE / IN_RACE_PHASE: which phase opens this effect. */
   phase?: import('./race-plan/types').RaceCombatPhase;
-  /** ON_RACE_PHASE only: extra gate on the holder's hp fraction at that moment. */
+  /** IN_RACE_PHASE: holds during any of these, as an alternative to a single `phase`. */
+  phases?: Array<import('./race-plan/types').RaceCombatPhase>;
+  /** ON_RACE_PHASE / IN_RACE_PHASE: extra gate on the holder's hp fraction. */
   hpBelow?: number;
   hpAbove?: number;
 };

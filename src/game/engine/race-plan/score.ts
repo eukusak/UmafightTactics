@@ -9,6 +9,8 @@
 import type { RacePlanContext } from './context';
 import { guardAffinity } from './defs';
 import { getG1Theme, getRacingProfile, readPct } from './profiles';
+import { getClause, paceStyleScale } from './conditions';
+import { g1Identity } from './g1-identity';
 import { RACE_PHASE_LABEL } from './types';
 import type { G1Theme, HorseRacingProfile, OfferReasonPayload, RacePlanNode } from './types';
 
@@ -20,6 +22,7 @@ export type ScoreBreakdown = {
   itemFit: number;
   economyFit: number;
   combatFit: number;
+  conditionFit: number;
   traitFit: number;
   aptitudeFlavor: number;
   themeFlavor: number;
@@ -111,7 +114,10 @@ function themeFlavor(node: RacePlanNode, theme: G1Theme): number {
   if (node.fit.surfaces?.includes(surface)) fit *= 1.08;
   const distance = { SPRINT: 'sprinter', MILE: 'miler', MIDDLE: 'middle', LONG: 'stayer' }[theme.distanceClass];
   if (node.fit.distances?.includes(distance as 'stayer')) fit *= 1.08;
-  return clamp(fit, 0.9, 1.1);
+  // The race's own 과제: a card that lands where the race pays is worth more.
+  const favours = g1Identity(theme).favours;
+  if (node.fit.phases.some((p) => favours.includes(p))) fit *= 1.1;
+  return clamp(fit, 0.9, 1.2);
 }
 
 /**
@@ -124,6 +130,32 @@ function diversity(node: RacePlanNode, ctx: RacePlanContext): number {
   if (ctx.itemProfile.mana > 0.7 && node.fit.itemAxes?.includes('mana')) fit *= 0.8;
   if (ctx.itemProfile.tank > 0.7 && node.tags.includes('SURVIVAL')) fit *= 0.82;
   return clamp(fit, 0.75, 1.2);
+}
+
+/**
+ * The round's ground, as an offer weight.
+ *
+ * A hard pace makes the closing cards genuinely better and the front-running
+ * ones genuinely worse, so the offer should say so rather than handing out a
+ * 발주 card on a day when nobody can hold the lead. A 개최 특례 that names the
+ * phases it favours pushes the same way.
+ */
+function conditionFit(node: RacePlanNode, ctx: RacePlanContext): number {
+  const early = node.fit.phases.some((p) => p === 'START' || p === 'POSITIONING');
+  const late = node.fit.phases.some((p) => p === 'LATE' || p === 'LAST_3F' || p === 'OVERTIME');
+  let fit = 1;
+  if (ctx.conditions.pace === 'HIGH') fit *= late ? 1.16 : early ? 0.88 : 1;
+  if (ctx.conditions.pace === 'SLOW') fit *= early ? 1.16 : late ? 0.9 : 1;
+  if (ctx.conditions.going === 'SOFT' && node.tags.includes('SURVIVAL')) fit *= 1.12;
+  if (ctx.conditions.going === 'FIRM' && node.fit.itemAxes?.includes('attackSpeed')) fit *= 1.08;
+  const favours = getClause(ctx.conditions.clause).favours;
+  if (favours?.length && node.fit.phases.some((p) => favours.includes(p))) fit *= 1.12;
+  const styles = node.fit.styles ?? [];
+  if (styles.length) {
+    const mean = styles.reduce((n, st) => n + paceStyleScale(ctx.conditions, st), 0) / styles.length;
+    fit *= clamp(0.82 + mean * 0.2, 0.86, 1.16);
+  }
+  return clamp(fit, 0.82, 1.3);
 }
 
 export function scoreNode(
@@ -146,6 +178,7 @@ export function scoreNode(
     itemFit: itemFit(node, ctx),
     economyFit: economyFit(node, ctx),
     combatFit: combatFit(node, ctx),
+    conditionFit: conditionFit(node, ctx),
     traitFit: traitFit(node, ctx),
     aptitudeFlavor: aptitudeFlavor(node, opts.profile),
     themeFlavor: themeFlavor(node, getG1Theme(opts.themeId)),
@@ -156,7 +189,7 @@ export function scoreNode(
 
   const raw = node.baseWeight *
     parts.boardFit * parts.itemFit * parts.economyFit * parts.combatFit *
-    parts.traitFit * parts.aptitudeFlavor * parts.themeFlavor *
+    parts.conditionFit * parts.traitFit * parts.aptitudeFlavor * parts.themeFlavor *
     parts.diversity * parts.antiRepeat * parts.lobbyVariety *
     clamp(opts.jitter, 0.94, 1.06);
 
@@ -175,6 +208,19 @@ export function buildReasons(
   }];
   const rc = ctx.recentCombat;
   const axes = node.fit.itemAxes ?? [];
+
+  // The ground comes second: it is the one thing that changed since last round,
+  // and it is what makes the same card a different pick today.
+  const early = node.fit.phases.some((p) => p === 'START' || p === 'POSITIONING');
+  const late = node.fit.phases.some((p) => p === 'LATE' || p === 'LAST_3F' || p === 'OVERTIME');
+  if (ctx.conditions.pace === 'HIGH' && (late || early)) out.push({ reason: 'PACE_HIGH' });
+  else if (ctx.conditions.pace === 'SLOW' && (late || early)) out.push({ reason: 'PACE_SLOW' });
+  if (ctx.conditions.going === 'SOFT' && node.tags.includes('SURVIVAL')) out.push({ reason: 'GOING_SOFT' });
+  if (ctx.conditions.going === 'FIRM' && axes.includes('attackSpeed')) out.push({ reason: 'GOING_FIRM' });
+  const clause = getClause(ctx.conditions.clause);
+  if (clause.favours?.some((p) => node.fit.phases.includes(p))) {
+    out.push({ reason: 'CLAUSE_ACTIVE', text: clause.nameKo });
+  }
 
   if (axes.includes('attackSpeed') && ctx.itemProfile.attackSpeed > 0.3) out.push({ reason: 'ITEM_AS_HIGH', n: Math.round(ctx.itemProfile.attackSpeed * 3) });
   if (axes.includes('ad') && ctx.itemProfile.ad > 0.3) out.push({ reason: 'ITEM_AD_HIGH', n: Math.round(ctx.itemProfile.ad * 3) });

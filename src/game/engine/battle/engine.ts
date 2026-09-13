@@ -7,7 +7,7 @@ import { scaleSkillSupport, skillAbilityPowerMultiplier, upgradeSkill } from './
  */
 import {
   BATTLE_MAX_SECONDS, BATTLE_NORMAL_SECONDS, BATTLE_TICK_MS, MANA_FROM_DAMAGE_CAP,
-  MANA_LOCK_AFTER_CAST_SECONDS, ROLE_ATTACK_MANA, ROLE_MANA_REGEN, OVERTIME_ATTACK_SPEED_MULT,
+  MANA_LOCK_AFTER_CAST_SECONDS, MAX_RECAST_DEPTH, ROLE_ATTACK_MANA, ROLE_MANA_REGEN, OVERTIME_ATTACK_SPEED_MULT,
   OVERTIME_CC_MULT, OVERTIME_DAMAGE_MULT,
   fighterAttackSpeed,
 } from '../constants';
@@ -19,6 +19,10 @@ import type { Rng } from '../rng';
 import { getRaceCombatPhase, laterPhase, phaseIndex, raceProgress } from '../race-plan/race-phases';
 import { RaceResourceTracker, nodeBattleEffects, raceReadBranch } from '../race-plan/runtime';
 import { findRacePlanNode } from '../race-plan/defs';
+import { RUN_STYLES, styleCurveEffects } from '../race-plan/style-curve';
+import { conditionEffects, paceStyleScale, type RaceConditions } from '../race-plan/conditions';
+import { g1Identity } from '../race-plan/g1-identity';
+import { getG1Theme } from '../race-plan/profiles';
 import type { RaceCombatPhase, RacePlanBattleInput } from '../race-plan/types';
 import type { BattleStats, EffectDef, StatusKind, TraitId } from '../types';
 import {
@@ -28,6 +32,7 @@ import {
 } from './combat-unit';
 import {
   accumulateAura, applyEffect, isAuraKind, isContinuousAura, resolveTargets, triggerHolds, procDamage, resolveEffectTargets,
+  CONTINUOUS_GATES,
   type EffectContext, type TriggerEvent,
 } from './effects';
 import {
@@ -108,6 +113,20 @@ export type BattleOptions = {
   recordFrames?: boolean;
   maxSeconds?: number;
   stage?: number;
+  /**
+   * The round's ground. It belongs to the round rather than to either side, so
+   * both boards get exactly the same going, pace, weather and clause.
+   *
+   * Omitted means *no ground*, not a default one: a battle assembled directly —
+   * a unit test, a preview, a what-if — has no round behind it, and must not
+   * silently inherit a going and a pace nobody asked for.
+   */
+  conditions?: RaceConditions;
+  /**
+   * The lobby's GⅠ. Its 과제 applies to every unit for the whole match.
+   * Omitted means no GⅠ and no 과제, for the same reason.
+   */
+  g1ThemeId?: string;
 };
 
 /** Maximum nesting for damage that itself causes damage. */
@@ -138,6 +157,8 @@ export class BattleEngine {
   private raceStartHp: Record<Team, number> = { A: 0, B: 0 };
   readonly raceLateHealth = new Map<string, { hp: number; maxHp: number }>();
   private readonly raceResources = new Map<string, RaceResourceTracker>();
+  /** Re-release nesting per unit, so RECAST_SKILL cannot loop. */
+  private readonly recastDepth = new Map<string, number>();
   private readonly raceEntryIds = new Map<Team, string>();
   /** Which team resolves first each tick. Seeded once so mirror matches are fair. */
   private readonly firstTeam: Team;
@@ -178,6 +199,8 @@ export class BattleEngine {
       applyStatus: (s, t, e) => this.applyStatus(s, t, e),
       dash: (u, t, d) => this.dash(u, t, d),
       summon: (owner, power, duration) => this.summon(owner, power, duration),
+      raceProgress: 0,
+      recast: (u) => this.recast(u),
     };
     this.prepare(sideA, 'A');
     this.prepare(sideB, 'B');
@@ -228,6 +251,8 @@ export class BattleEngine {
 
   private prepare(side: BattleSideInput, team: Team): void {
     const counts = this.traitCounts(team);
+    const conditions = this.options.conditions;
+    const identity = this.options.g1ThemeId ? g1Identity(getG1Theme(this.options.g1ThemeId)) : null;
     const teamUnits = this.units.filter((u) => u.team === team);
 
     for (const unit of teamUnits) {
@@ -277,6 +302,38 @@ export class BattleEngine {
             if (!unit.traits.includes(need)) return;
           }
           list.push({ effect, index: i, sourceKey: `augment:${augId}`, power: 1 });
+        });
+      }
+
+      // --- the round's ground and the lobby's GⅠ, on everyone
+      // A MELEE_ONLY / RANGED_ONLY tag is resolved here rather than at fire
+      // time: a unit that cannot receive the effect simply never binds it.
+      const reachable = (effect: EffectDef): boolean =>
+        !(effect.tag === 'MELEE_ONLY' && unit.base.attackRange > 1)
+        && !(effect.tag === 'RANGED_ONLY' && unit.base.attackRange <= 1);
+      if (conditions) {
+        conditionEffects(conditions).forEach((effect, i) => {
+          if (reachable(effect)) list.push({ effect, index: i, sourceKey: 'conditions', power: 1 });
+        });
+      }
+      for (const [i, effect] of (identity?.effects ?? []).entries()) {
+        if (reachable(effect)) list.push({ effect, index: i, sourceKey: 'g1', power: 1 });
+      }
+
+      // --- 각질 phase curve, on every unit that has a running style
+      // This is not part of the race plan: a unit runs its own style whether or
+      // not the player ever drew a plan card, which is what makes 각질 a real
+      // property of the roster rather than a trait threshold. It rides on
+      // `conditions` for the same reason the GⅠ 과제 does — a fight with no
+      // round behind it is not a race, so nobody is running a 각질 in it.
+      // The pace bends the whole curve: a hard pace empties a front-runner's
+      // early lead and pays the closers more than they could buy themselves.
+      const style = conditions && RUN_STYLES.find((st) => unit.traits.includes(st));
+      if (style && conditions) {
+        const scale = paceStyleScale(conditions, style);
+        styleCurveEffects(style).forEach((effect, i) => {
+          const scaled = effect.value === undefined ? effect : { ...effect, value: effect.value * scale };
+          list.push({ effect: scaled, index: i, sourceKey: `style:${style}`, power: 1 });
         });
       }
 
@@ -401,10 +458,7 @@ export class BattleEngine {
       if (!isAuraKind(b.effect.kind)) continue;
       const gate = b.effect.trigger;
       // Aura effects with an event trigger are handled when that event fires.
-      if (gate && !['ALWAYS', 'HP_BELOW', 'HP_ABOVE', 'TARGET_HP_BELOW', 'AFTER_SECONDS',
-        'IN_FRONT_ROWS', 'IN_BACK_ROWS', 'ADJACENT_ALLIES_AT_LEAST', 'NO_ADJACENT_ALLIES'].includes(gate.when)) {
-        continue;
-      }
+      if (gate && !CONTINUOUS_GATES.has(gate.when)) continue;
       if (!triggerHolds(unit, gate, this.ctx, 'RECOMPUTE', target)) continue;
       if (b.effect.tag === 'AT_MAX_STACKS') {
         const key = Object.keys(unit.stacks).find((k) => k.startsWith('count:'));
@@ -825,6 +879,28 @@ export class BattleEngine {
     this.resolveCasts();
   }
 
+  /**
+   * Releases a unit's skill again without paying mana.
+   *
+   * A re-release can itself carry a RECAST_SKILL, so the depth is capped: two
+   * extra releases from one cast is the most any card can buy, and a unit that
+   * is stunned or silenced gets nothing at all.
+   */
+  private recast(unit: CombatUnit): void {
+    if (!unit.alive || isStunned(unit, this.time) || isSilenced(unit, this.time)) return;
+    const depth = this.recastDepth.get(unit.id) ?? 0;
+    if (depth >= MAX_RECAST_DEPTH) return;
+    this.recastDepth.set(unit.id, depth + 1);
+    try {
+      const held = unit.mana;
+      this.cast(unit);
+      unit.mana = held;
+      unit.manaLockUntil = this.time;
+    } finally {
+      this.recastDepth.set(unit.id, depth);
+    }
+  }
+
   private resolveCasts(): void {
     const pending = this.casts;
     this.casts = [];
@@ -1008,7 +1084,7 @@ export class BattleEngine {
    *
    * Progress is the larger of the clock and the share of the starting field
    * that has fallen, so a fight that ends in ten seconds still runs through
-   * 승부처 and 라스트 3F instead of skipping every late-race payout.
+   * 4코너 and 최종 직선 instead of skipping every late-race payout.
    */
   private advanceRacePhase(): void {
     const sides = (['A', 'B'] as Team[]).map((team) => {
@@ -1021,6 +1097,7 @@ export class BattleEngine {
       };
     });
     this.racePhaseHigh = Math.max(this.racePhaseHigh, raceProgress(this.time, sides));
+    this.ctx.raceProgress = this.racePhaseHigh;
     const next = laterPhase(this.racePhase, getRaceCombatPhase(this.time, this.racePhaseHigh));
     // A burst can cross multiple thresholds in a tick; resolve each once in order.
     const phases: RaceCombatPhase[] = ['START', 'POSITIONING', 'LATE', 'LAST_3F', 'OVERTIME'];

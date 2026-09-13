@@ -42,7 +42,18 @@ export const IconTrack = ({ size = 20 }: Props): JSX.Element => (
   <svg {...base(size)}><ellipse cx="12" cy="12" rx="9" ry="6" /><ellipse cx="12" cy="12" rx="5" ry="2.6" strokeDasharray="2 2" /></svg>
 );
 
+/** 페이스 판단: a lap-time line being read, rather than a section committed to. */
+export const IconPaceRead = ({ size = 20 }: Props): JSX.Element => (
+  <svg {...base(size)}><path d="M3 16l4-5 3 3 4-7 3 4 4-3" /><circle cx="12" cy="12" r="9.5" strokeDasharray="3 3" /></svg>
+);
+/** 승부수 전개: the road forks and one branch is taken. */
+export const IconGamble = ({ size = 20 }: Props): JSX.Element => (
+  <svg {...base(size)}><path d="M12 21V13" /><path d="M12 13L5 5" /><path d="M12 13l7-8" strokeDasharray="2 2" /><circle cx="19" cy="5" r="1.8" /></svg>
+);
+
 export const CATEGORY_ICON: Record<RacePlanCategory, (p: Props) => JSX.Element> = {
+  PACE_READ: IconPaceRead,
+  GAMBLE: IconGamble,
   HIGH_PACE: IconPaceHigh,
   LEAD_CONTROL: IconPaceLead,
   MIDDLE_PACE: IconPaceMiddle,
