@@ -409,3 +409,13 @@ button.trait-row { display:flex; align-items:center; width:100%; text-align:left
 .shop-card.upgradable .wishlist-marker { top:6px; left:auto; right:6px; }
 .shop-card.upgradable .wishlist-marker-label { display:none; }
 .mobile .shop-upgrade-badge { top:73px; left:2px; right:2px; padding:2px 0; text-align:center; font-size:8px; }
+
+/* Skill inspection: keep all three star columns visible in the narrow sidebar. */
+.skill-values { margin: 12px 0; font-size: 12px; min-width: 0; }
+.skill-values table { width: 100%; table-layout: fixed; border-collapse: collapse; margin-top: 7px; font-size: 11px; }
+.skill-values th, .skill-values td { padding: 5px 2px; text-align: right; border-bottom: 1px solid #385566; overflow-wrap: anywhere; }
+.skill-values th:first-child { width: 38%; text-align: left; font-weight: 500; }
+.skill-values [data-current="true"] { color: var(--gold); background: #d5ad4520; font-weight: 700; }
+.skill-values p { font-size: 11px; line-height: 1.6; }
+
+.battle-matchup { position: absolute; top: 14px; left: 50%; transform: translateX(-50%); max-width: 44%; z-index: 1400; padding: 7px 16px; border: 1px solid var(--gold); border-radius: 5px; background: #102636ed; color: var(--gold); font-size: 15px; font-weight: 800; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; pointer-events: none; }

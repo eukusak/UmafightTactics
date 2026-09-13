@@ -1,3 +1,4 @@
+import { SkillValues } from '../SkillValues';
 /** Collection: all 145 characters with the spec §29 filters. */
 import { useMemo, useState } from 'react';
 import { useGameStore } from '../../store/gameStore';
@@ -130,7 +131,8 @@ export function CollectionScreen(): JSX.Element {
             </div>
             <div style={{ marginTop: 14, paddingTop: 10, borderTop: '1px solid #24384a' }}>
               <strong style={{ color: 'var(--cyan)' }}>{selected.skill.displayName}</strong>
-              <div className="muted" style={{ marginTop: 4, fontSize: 13 }}>{selected.skill.description}</div>
+              <div className="muted" style={{ marginTop: 4, fontSize: 13 }}>기본 동작 · 1성/주문력 100: {selected.skill.description}</div>
+              <SkillValues skill={selected.skill} cost={selected.cost} />
             </div>
             <button className="btn-primary" style={{ marginTop: 18 }} onClick={() => setSelected(null)}>
               닫기

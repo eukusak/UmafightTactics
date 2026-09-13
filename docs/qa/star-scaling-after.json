@@ -1,0 +1,186 @@
+{
+  "seed": 20260913,
+  "note": "Seeded all-AI sample; diagnostic comparisons, not human ladder win rates.",
+  "rows": [
+    {
+      "seasonId": "s1",
+      "matches": 5,
+      "averageRounds": 32.8,
+      "battles": 656,
+      "overtimeRate": 0.23323170731707318,
+      "drawRate": 0.024390243902439025,
+      "poolViolations": 0,
+      "profiles": {
+        "ECONOMY": 5.166666666666667,
+        "TRAIT_FOCUS": 4.166666666666667,
+        "AP_FOCUS": 4.4,
+        "REROLL": 4.666666666666667,
+        "FAST_LEVEL": 3,
+        "AD_FOCUS": 5.4,
+        "BALANCED": 5.2
+      },
+      "styles": {
+        "nige": {
+          "boards": 31,
+          "top4": 14
+        },
+        "sashi": {
+          "boards": 20,
+          "top4": 11
+        },
+        "oikomi": {
+          "boards": 11,
+          "top4": 4
+        },
+        "senko": {
+          "boards": 26,
+          "top4": 15
+        }
+      }
+    },
+    {
+      "seasonId": "s2",
+      "matches": 5,
+      "averageRounds": 31.6,
+      "battles": 655,
+      "overtimeRate": 0.183206106870229,
+      "drawRate": 0,
+      "poolViolations": 0,
+      "profiles": {
+        "ECONOMY": 3.1666666666666665,
+        "TRAIT_FOCUS": 4,
+        "AP_FOCUS": 4,
+        "REROLL": 6.833333333333333,
+        "FAST_LEVEL": 3.2857142857142856,
+        "AD_FOCUS": 4.6,
+        "BALANCED": 6
+      },
+      "styles": {
+        "senko": {
+          "boards": 32,
+          "top4": 18
+        },
+        "nige": {
+          "boards": 23,
+          "top4": 12
+        },
+        "sashi": {
+          "boards": 17,
+          "top4": 10
+        },
+        "oikomi": {
+          "boards": 6,
+          "top4": 5
+        }
+      }
+    },
+    {
+      "seasonId": "s3",
+      "matches": 5,
+      "averageRounds": 32.6,
+      "battles": 661,
+      "overtimeRate": 0.1422087745839637,
+      "drawRate": 0.0030257186081694403,
+      "poolViolations": 0,
+      "profiles": {
+        "ECONOMY": 2.8333333333333335,
+        "TRAIT_FOCUS": 6.333333333333333,
+        "AP_FOCUS": 5.4,
+        "REROLL": 3.3333333333333335,
+        "FAST_LEVEL": 4.714285714285714,
+        "AD_FOCUS": 3.6,
+        "BALANCED": 5.4
+      },
+      "styles": {
+        "nige": {
+          "boards": 27,
+          "top4": 17
+        },
+        "senko": {
+          "boards": 28,
+          "top4": 14
+        },
+        "oikomi": {
+          "boards": 11,
+          "top4": 7
+        },
+        "sashi": {
+          "boards": 19,
+          "top4": 8
+        }
+      }
+    },
+    {
+      "seasonId": "s4",
+      "matches": 5,
+      "averageRounds": 33.2,
+      "battles": 655,
+      "overtimeRate": 0.19541984732824427,
+      "drawRate": 0.004580152671755725,
+      "poolViolations": 0,
+      "profiles": {
+        "ECONOMY": 3.6666666666666665,
+        "TRAIT_FOCUS": 4.833333333333333,
+        "AP_FOCUS": 4.6,
+        "REROLL": 5.5,
+        "FAST_LEVEL": 3.4285714285714284,
+        "AD_FOCUS": 3.2,
+        "BALANCED": 6.6
+      },
+      "styles": {
+        "nige": {
+          "boards": 21,
+          "top4": 10
+        },
+        "senko": {
+          "boards": 34,
+          "top4": 17
+        },
+        "sashi": {
+          "boards": 16,
+          "top4": 10
+        },
+        "oikomi": {
+          "boards": 5,
+          "top4": 5
+        }
+      }
+    },
+    {
+      "seasonId": "s5",
+      "matches": 5,
+      "averageRounds": 32.8,
+      "battles": 645,
+      "overtimeRate": 0.15348837209302327,
+      "drawRate": 0,
+      "poolViolations": 0,
+      "profiles": {
+        "ECONOMY": 3.3333333333333335,
+        "TRAIT_FOCUS": 4.333333333333333,
+        "AP_FOCUS": 4.8,
+        "REROLL": 7.166666666666667,
+        "FAST_LEVEL": 3.4285714285714284,
+        "AD_FOCUS": 3,
+        "BALANCED": 5.6
+      },
+      "styles": {
+        "nige": {
+          "boards": 32,
+          "top4": 15
+        },
+        "senko": {
+          "boards": 25,
+          "top4": 16
+        },
+        "sashi": {
+          "boards": 11,
+          "top4": 5
+        },
+        "oikomi": {
+          "boards": 5,
+          "top4": 3
+        }
+      }
+    }
+  ]
+}

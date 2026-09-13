@@ -1,0 +1,4244 @@
+{
+  "baselineCommit": "a9c40bb5eab7b43d8c4b505139948250e59d380a",
+  "abilityPower": 100,
+  "note": "Per-hit unmitigated values, not DPS or a win-rate guarantee. Cost probes hold the character kit and power percentile fixed. Match samples reuse the same five seeds per season from PR19; small diagnostic sample only.",
+  "costProbes": [
+    {
+      "id": "oguri_cap",
+      "pattern": "comet_fall",
+      "costs": [
+        {
+          "cost": 1,
+          "effects": [
+            {
+              "kind": "DAMAGE",
+              "values": [
+                243,
+                352.34999999999997,
+                534.6
+              ]
+            }
+          ]
+        },
+        {
+          "cost": 2,
+          "effects": [
+            {
+              "kind": "DAMAGE",
+              "values": [
+                276,
+                400.2,
+                607.2
+              ]
+            }
+          ]
+        },
+        {
+          "cost": 3,
+          "effects": [
+            {
+              "kind": "DAMAGE",
+              "values": [
+                321,
+                465.45,
+                706.2
+              ]
+            }
+          ]
+        },
+        {
+          "cost": 4,
+          "effects": [
+            {
+              "kind": "DAMAGE",
+              "values": [
+                379,
+                549.55,
+                1364.4
+              ]
+            }
+          ]
+        },
+        {
+          "cost": 5,
+          "effects": [
+            {
+              "kind": "DAMAGE",
+              "values": [
+                461,
+                668.4499999999999,
+                2766
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mejiro_mcqueen",
+      "pattern": "bulwark_circle",
+      "costs": [
+        {
+          "cost": 1,
+          "effects": [
+            {
+              "kind": "SHIELD_FLAT",
+              "values": [
+                163,
+                236.35,
+                358.6
+              ]
+            }
+          ]
+        },
+        {
+          "cost": 2,
+          "effects": [
+            {
+              "kind": "SHIELD_FLAT",
+              "values": [
+                186,
+                269.7,
+                409.20000000000005
+              ]
+            }
+          ]
+        },
+        {
+          "cost": 3,
+          "effects": [
+            {
+              "kind": "SHIELD_FLAT",
+              "values": [
+                216,
+                313.2,
+                475.20000000000005
+              ]
+            }
+          ]
+        },
+        {
+          "cost": 4,
+          "effects": [
+            {
+              "kind": "SHIELD_FLAT",
+              "values": [
+                255,
+                369.75,
+                918
+              ]
+            }
+          ]
+        },
+        {
+          "cost": 5,
+          "effects": [
+            {
+              "kind": "SHIELD_FLAT",
+              "values": [
+                310,
+                449.5,
+                1860
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "twin_turbo",
+      "pattern": "tempo_banner",
+      "costs": [
+        {
+          "cost": 1,
+          "effects": [
+            {
+              "kind": "STAT_MUL",
+              "stat": "attackSpeed",
+              "values": [
+                0.3,
+                0.36,
+                0.44999999999999996
+              ]
+            }
+          ]
+        },
+        {
+          "cost": 2,
+          "effects": [
+            {
+              "kind": "STAT_MUL",
+              "stat": "attackSpeed",
+              "values": [
+                0.318,
+                0.3816,
+                0.477
+              ]
+            }
+          ]
+        },
+        {
+          "cost": 3,
+          "effects": [
+            {
+              "kind": "STAT_MUL",
+              "stat": "attackSpeed",
+              "values": [
+                0.342,
+                0.41040000000000004,
+                0.513
+              ]
+            }
+          ]
+        },
+        {
+          "cost": 4,
+          "effects": [
+            {
+              "kind": "STAT_MUL",
+              "stat": "attackSpeed",
+              "values": [
+                0.372,
+                0.44639999999999996,
+                0.6696
+              ]
+            }
+          ]
+        },
+        {
+          "cost": 5,
+          "effects": [
+            {
+              "kind": "STAT_MUL",
+              "stat": "attackSpeed",
+              "values": [
+                0.408,
+                0.4895999999999999,
+                0.8976000000000001
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "comparison": [
+    {
+      "season": "s1",
+      "before": {
+        "seasonId": "s1",
+        "matches": 5,
+        "averageRounds": 32.6,
+        "battles": 643,
+        "overtimeRate": 0.26127527216174184,
+        "drawRate": 0.024883359253499222,
+        "poolViolations": 0,
+        "profiles": {
+          "ECONOMY": 5,
+          "TRAIT_FOCUS": 3.3333333333333335,
+          "AP_FOCUS": 4.6,
+          "REROLL": 5,
+          "FAST_LEVEL": 2.7142857142857144,
+          "AD_FOCUS": 6.2,
+          "BALANCED": 5.4
+        },
+        "styles": {
+          "nige": {
+            "boards": 31,
+            "top4": 16
+          },
+          "sashi": {
+            "boards": 24,
+            "top4": 15
+          },
+          "oikomi": {
+            "boards": 11,
+            "top4": 2
+          },
+          "senko": {
+            "boards": 28,
+            "top4": 16
+          }
+        }
+      },
+      "after": {
+        "seasonId": "s1",
+        "matches": 5,
+        "averageRounds": 32.8,
+        "battles": 656,
+        "overtimeRate": 0.23323170731707318,
+        "drawRate": 0.024390243902439025,
+        "poolViolations": 0,
+        "profiles": {
+          "ECONOMY": 5.166666666666667,
+          "TRAIT_FOCUS": 4.166666666666667,
+          "AP_FOCUS": 4.4,
+          "REROLL": 4.666666666666667,
+          "FAST_LEVEL": 3,
+          "AD_FOCUS": 5.4,
+          "BALANCED": 5.2
+        },
+        "styles": {
+          "nige": {
+            "boards": 31,
+            "top4": 14
+          },
+          "sashi": {
+            "boards": 20,
+            "top4": 11
+          },
+          "oikomi": {
+            "boards": 11,
+            "top4": 4
+          },
+          "senko": {
+            "boards": 26,
+            "top4": 15
+          }
+        }
+      }
+    },
+    {
+      "season": "s2",
+      "before": {
+        "seasonId": "s2",
+        "matches": 5,
+        "averageRounds": 33.4,
+        "battles": 659,
+        "overtimeRate": 0.251896813353566,
+        "drawRate": 0.019726858877086494,
+        "poolViolations": 0,
+        "profiles": {
+          "ECONOMY": 3.1666666666666665,
+          "TRAIT_FOCUS": 3.1666666666666665,
+          "AP_FOCUS": 4.8,
+          "REROLL": 6.666666666666667,
+          "FAST_LEVEL": 3.5714285714285716,
+          "AD_FOCUS": 5.2,
+          "BALANCED": 5.4
+        },
+        "styles": {
+          "senko": {
+            "boards": 32,
+            "top4": 18
+          },
+          "nige": {
+            "boards": 24,
+            "top4": 12
+          },
+          "sashi": {
+            "boards": 16,
+            "top4": 9
+          },
+          "oikomi": {
+            "boards": 5,
+            "top4": 3
+          }
+        }
+      },
+      "after": {
+        "seasonId": "s2",
+        "matches": 5,
+        "averageRounds": 31.6,
+        "battles": 655,
+        "overtimeRate": 0.183206106870229,
+        "drawRate": 0,
+        "poolViolations": 0,
+        "profiles": {
+          "ECONOMY": 3.1666666666666665,
+          "TRAIT_FOCUS": 4,
+          "AP_FOCUS": 4,
+          "REROLL": 6.833333333333333,
+          "FAST_LEVEL": 3.2857142857142856,
+          "AD_FOCUS": 4.6,
+          "BALANCED": 6
+        },
+        "styles": {
+          "senko": {
+            "boards": 32,
+            "top4": 18
+          },
+          "nige": {
+            "boards": 23,
+            "top4": 12
+          },
+          "sashi": {
+            "boards": 17,
+            "top4": 10
+          },
+          "oikomi": {
+            "boards": 6,
+            "top4": 5
+          }
+        }
+      }
+    },
+    {
+      "season": "s3",
+      "before": {
+        "seasonId": "s3",
+        "matches": 5,
+        "averageRounds": 32.8,
+        "battles": 657,
+        "overtimeRate": 0.1902587519025875,
+        "drawRate": 0,
+        "poolViolations": 0,
+        "profiles": {
+          "ECONOMY": 2.8333333333333335,
+          "TRAIT_FOCUS": 6.833333333333333,
+          "AP_FOCUS": 5,
+          "REROLL": 4.666666666666667,
+          "FAST_LEVEL": 3.4285714285714284,
+          "AD_FOCUS": 3.6,
+          "BALANCED": 5.4
+        },
+        "styles": {
+          "nige": {
+            "boards": 28,
+            "top4": 15
+          },
+          "oikomi": {
+            "boards": 7,
+            "top4": 4
+          },
+          "senko": {
+            "boards": 27,
+            "top4": 15
+          },
+          "sashi": {
+            "boards": 19,
+            "top4": 9
+          }
+        }
+      },
+      "after": {
+        "seasonId": "s3",
+        "matches": 5,
+        "averageRounds": 32.6,
+        "battles": 661,
+        "overtimeRate": 0.1422087745839637,
+        "drawRate": 0.0030257186081694403,
+        "poolViolations": 0,
+        "profiles": {
+          "ECONOMY": 2.8333333333333335,
+          "TRAIT_FOCUS": 6.333333333333333,
+          "AP_FOCUS": 5.4,
+          "REROLL": 3.3333333333333335,
+          "FAST_LEVEL": 4.714285714285714,
+          "AD_FOCUS": 3.6,
+          "BALANCED": 5.4
+        },
+        "styles": {
+          "nige": {
+            "boards": 27,
+            "top4": 17
+          },
+          "senko": {
+            "boards": 28,
+            "top4": 14
+          },
+          "oikomi": {
+            "boards": 11,
+            "top4": 7
+          },
+          "sashi": {
+            "boards": 19,
+            "top4": 8
+          }
+        }
+      }
+    },
+    {
+      "season": "s4",
+      "before": {
+        "seasonId": "s4",
+        "matches": 5,
+        "averageRounds": 32,
+        "battles": 643,
+        "overtimeRate": 0.22706065318818042,
+        "drawRate": 0.006220839813374806,
+        "poolViolations": 0,
+        "profiles": {
+          "ECONOMY": 4.166666666666667,
+          "TRAIT_FOCUS": 4.166666666666667,
+          "AP_FOCUS": 4.2,
+          "REROLL": 5,
+          "FAST_LEVEL": 3.7142857142857144,
+          "AD_FOCUS": 3.8,
+          "BALANCED": 6.8
+        },
+        "styles": {
+          "nige": {
+            "boards": 24,
+            "top4": 12
+          },
+          "senko": {
+            "boards": 32,
+            "top4": 16
+          },
+          "sashi": {
+            "boards": 16,
+            "top4": 7
+          },
+          "oikomi": {
+            "boards": 6,
+            "top4": 3
+          }
+        }
+      },
+      "after": {
+        "seasonId": "s4",
+        "matches": 5,
+        "averageRounds": 33.2,
+        "battles": 655,
+        "overtimeRate": 0.19541984732824427,
+        "drawRate": 0.004580152671755725,
+        "poolViolations": 0,
+        "profiles": {
+          "ECONOMY": 3.6666666666666665,
+          "TRAIT_FOCUS": 4.833333333333333,
+          "AP_FOCUS": 4.6,
+          "REROLL": 5.5,
+          "FAST_LEVEL": 3.4285714285714284,
+          "AD_FOCUS": 3.2,
+          "BALANCED": 6.6
+        },
+        "styles": {
+          "nige": {
+            "boards": 21,
+            "top4": 10
+          },
+          "senko": {
+            "boards": 34,
+            "top4": 17
+          },
+          "sashi": {
+            "boards": 16,
+            "top4": 10
+          },
+          "oikomi": {
+            "boards": 5,
+            "top4": 5
+          }
+        }
+      }
+    },
+    {
+      "season": "s5",
+      "before": {
+        "seasonId": "s5",
+        "matches": 5,
+        "averageRounds": 33.4,
+        "battles": 654,
+        "overtimeRate": 0.18807339449541285,
+        "drawRate": 0.0045871559633027525,
+        "poolViolations": 0,
+        "profiles": {
+          "ECONOMY": 2.6666666666666665,
+          "TRAIT_FOCUS": 3.8333333333333335,
+          "AP_FOCUS": 5.2,
+          "REROLL": 7.333333333333333,
+          "FAST_LEVEL": 3.5714285714285716,
+          "AD_FOCUS": 3,
+          "BALANCED": 6.2
+        },
+        "styles": {
+          "nige": {
+            "boards": 34,
+            "top4": 17
+          },
+          "senko": {
+            "boards": 26,
+            "top4": 16
+          },
+          "sashi": {
+            "boards": 17,
+            "top4": 9
+          },
+          "oikomi": {
+            "boards": 5,
+            "top4": 2
+          }
+        }
+      },
+      "after": {
+        "seasonId": "s5",
+        "matches": 5,
+        "averageRounds": 32.8,
+        "battles": 645,
+        "overtimeRate": 0.15348837209302327,
+        "drawRate": 0,
+        "poolViolations": 0,
+        "profiles": {
+          "ECONOMY": 3.3333333333333335,
+          "TRAIT_FOCUS": 4.333333333333333,
+          "AP_FOCUS": 4.8,
+          "REROLL": 7.166666666666667,
+          "FAST_LEVEL": 3.4285714285714284,
+          "AD_FOCUS": 3,
+          "BALANCED": 5.6
+        },
+        "styles": {
+          "nige": {
+            "boards": 32,
+            "top4": 15
+          },
+          "senko": {
+            "boards": 25,
+            "top4": 16
+          },
+          "sashi": {
+            "boards": 11,
+            "top4": 5
+          },
+          "oikomi": {
+            "boards": 5,
+            "top4": 3
+          }
+        }
+      }
+    }
+  ],
+  "roster": [
+    {
+      "id": "special_week",
+      "name": "스페셜 위크",
+      "cost": 5,
+      "pattern": "breach_line",
+      "effects": [
+        {
+          "kind": "SUNDER_ARMOR_PCT",
+          "perHit": [
+            0.2,
+            0.24,
+            0.44000000000000006
+          ]
+        },
+        {
+          "kind": "DAMAGE",
+          "perHit": [
+            381,
+            552.4499999999999,
+            2286
+          ]
+        }
+      ]
+    },
+    {
+      "id": "silence_suzuka",
+      "name": "사일런스 스즈카",
+      "cost": 2,
+      "pattern": "orbital_beam",
+      "effects": [
+        {
+          "kind": "DAMAGE",
+          "perHit": [
+            65,
+            94.25,
+            143
+          ]
+        },
+        {
+          "kind": "DAMAGE",
+          "perHit": [
+            65,
+            94.25,
+            143
+          ]
+        },
+        {
+          "kind": "DAMAGE",
+          "perHit": [
+            65,
+            94.25,
+            143
+          ]
+        },
+        {
+          "kind": "DAMAGE",
+          "perHit": [
+            65,
+            94.25,
+            143
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tokai_teio",
+      "name": "토카이 테이오",
+      "cost": 4,
+      "pattern": "focus_three",
+      "effects": [
+        {
+          "kind": "DAMAGE",
+          "perHit": [
+            88,
+            127.6,
+            316.8
+          ]
+        },
+        {
+          "kind": "DAMAGE",
+          "perHit": [
+            128,
+            185.6,
+            460.8
+          ]
+        },
+        {
+          "kind": "DAMAGE",
+          "perHit": [
+            232,
+            336.4,
+            835.2
+          ]
+        }
+      ]
+    },
+    {
+      "id": "maruzensky",
+      "name": "마루젠스키",
+      "cost": 4,
+      "pattern": "tempo_banner",
+      "effects": [
+        {
+          "kind": "STAT_MUL",
+          "stat": "attackSpeed",
+          "perHit": [
+            0.372,
+            0.44639999999999996,
+            0.6696
+          ]
+        },
+        {
+          "kind": "MANA_ADD",
+          "perHit": [
+            8,
+            9.6,
+            14.4
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fuji_kiseki",
+      "name": "후지 키세키",
+      "cost": 4,
+      "pattern": "expanding_nova",
+      "effects": [
+        {
+          "kind": "DAMAGE",
+          "perHit": [
+            108,
+            156.6,
+            388.8
+          ]
+        },
+        {
+          "kind": "DAMAGE",
+          "perHit": [
+            108,
+            156.6,
+            388.8
+          ]
+        },
+        {
+          "kind": "DAMAGE",
+          "perHit": [
+            108,
+            156.6,
+            388.8
+          ]
+        }
+      ]
+    },
+    {
+      "id": "oguri_cap",
+      "name": "오구리 캡",
+      "cost": 4,
+      "pattern": "comet_fall",
+      "effects": [
+        {
+          "kind": "DAMAGE",
+          "perHit": [
+            411,
+            595.9499999999999,
+            1479.6000000000001
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gold_ship",
+      "name": "골드 쉽",
+      "cost": 2,
+      "pattern": "pursuit_flurry",
+      "effects": [
+        {
+          "kind": "DAMAGE",
+          "perHit": [
+            91,
+            131.95,
+            200.20000000000002
+          ]
+        },
+        {
+          "kind": "DAMAGE",
+          "perHit": [
+            91,
+            131.95,
+            200.20000000000002
+          ]
+        },
+        {
+          "kind": "DAMAGE",
+          "perHit": [
+            91,
+            131.95,
+            200.20000000000002
+          ]
+        },
+        {
+          "kind": "STAT_MUL",
+          "stat": "attackSpeed",
+          "perHit": [
+            0.212,
+            0.25439999999999996,
+            0.318
+          ]
+        }
+      ]
+    },
+    {
+      "id": "vodka",
+      "name": "보드카",
+      "cost": 3,
+      "pattern": "split_barrage",
+      "effects": [
+        {
+          "kind": "DAMAGE",
+          "perHit": [
+            136,
+            197.2,
+            299.20000000000005
+          ]
+        },
+        {
+          "kind": "DAMAGE",
+          "perHit": [
+            136,
+            197.2,
+            299.20000000000005
+          ]
+        }
+      ]
+    },
+    {
+      "id": "daiwa_scarlet",
+      "name": "다이와 스칼렛",
+      "cost": 5,
+      "pattern": "cinder_field",
+      "effects": [
+        {
+          "kind": "DAMAGE",
+          "perHit": [
+            130,
+            188.5,
+            780
+          ]
+        },
+        {
+          "kind": "DAMAGE",
+          "perHit": [
+            130,
+            188.5,
+            780
+          ]
+        },
+        {
+          "kind": "DAMAGE",
+          "perHit": [
+            130,
+            188.5,
+            780
+          ]
+        }
+      ]
+    },
+    {
+      "id": "taiki_shuttle",
+      "name": "타이키 셔틀",
+      "cost": 5,
+      "pattern": "chain_spark",
+      "effects": [
+        {
+          "kind": "DAMAGE",
+          "perHit": [
+            238,
+            345.09999999999997,
+            1428
+          ]
+        }
+      ]
+    },
+    {
+      "id": "grass_wonder",
+      "name": "그래스 원더",
+      "cost": 3,
+      "pattern": "breach_line",
+      "effects": [
+        {
+          "kind": "SUNDER_ARMOR_PCT",
+          "perHit": [
+            0.2,
+            0.24,
+            0.30000000000000004
+          ]
+        },
+        {
+          "kind": "DAMAGE",
+          "perHit": [
+            256,
+            371.2,
+            563.2
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hishi_amazon",
+      "name": "히시 아마존",
+      "cost": 3,
+      "pattern": "binding_line",
+      "effects": [
+        {
+          "kind": "DAMAGE",
+          "perHit": [
+            172,
+            249.4,
+            378.40000000000003
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mejiro_mcqueen",
+      "name": "메지로 맥퀸",
+      "cost": 3,
+      "pattern": "bulwark_circle",
+      "effects": [
+        {
+          "kind": "SHIELD_FLAT",
+          "perHit": [
+            233,
+            337.84999999999997,
+            512.6
+          ]
+        },
+        {
+          "kind": "STAT_ADD",
+          "stat": "armor",
+          "perHit": [
+            20,
+            24,
+            30
+          ]
+        }
+      ]
+    },
+    {
+      "id": "el_condor_pasa",
+      "name": "엘 콘도르 파사",
+      "cost": 3,
+      "pattern": "rescue_barrier",
+      "effects": [
+        {
+          "kind": "HEAL_MISSING_PCT",
+          "perHit": [
+            0.25,
+            0.3,
+            0.375
+          ]
+        },
+        {
+          "kind": "SHIELD_FLAT",
+          "perHit": [
+            256,
+            371.2,
+            563.2
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tm_opera_o",
+      "name": "티엠 오페라 오",
+      "cost": 5,
+      "pattern": "challenge_bastion",
+      "effects": [
+        {
+          "kind": "SHIELD_FLAT",
+          "perHit": [
+            643,
+            932.35,
+            3858
+          ]
+        }
+      ]
+    },
+    {
+      "id": "narita_brian",
+      "name": "나리타 브라이언",
+      "cost": 3,
+      "pattern": "fan_volley",
+      "effects": [
+        {
+          "kind": "DAMAGE",
+          "perHit": [
+            160,
+            232,
+            352
+          ]
+        },
+        {
+          "kind": "DAMAGE",
+          "perHit": [
+            160,
+            232,
+            352
+          ]
+        }
+      ]
+    },
+    {
+      "id": "symboli_rudolf",
+      "name": "심볼리 루돌프",
+      "cost": 5,
+      "pattern": "binding_line",
+      "effects": [
+        {
+          "kind": "DAMAGE",
+          "perHit": [
+            258,
+            374.09999999999997,
+            1548
+          ]
+        }
+      ]
+    },
+    {
+      "id": "air_groove",
+      "name": "에어 그루브",
+      "cost": 3,
+      "pattern": "counter_surge",
+      "effects": [
+        {
+          "kind": "SHIELD_FLAT",
+          "perHit": [
+            335,
+            485.75,
+            737.0000000000001
+          ]
+        },
+        {
+          "kind": "DAMAGE",
+          "perHit": [
+            195,
+            282.75,
+            429.00000000000006
+          ]
+        }
+      ]
+    },
+    {
+      "id": "agnes_digital",
+      "name": "아그네스 디지털",
+      "cost": 3,
+      "pattern": "seeking_bolt",
+      "effects": [
+        {
+          "kind": "DAMAGE",
+          "perHit": [
+            306,
+            443.7,
+            673.2
+          ]
+        },
+        {
+          "kind": "STAT_MUL",
+          "stat": "attackDamage",
+          "perHit": [
+            -0.15,
+            -0.15,
+            -0.15
+          ]
+        }
+      ]
+    },
+    {
+      "id": "seiun_sky",
+      "name": "세이운 스카이",
+      "cost": 2,
+      "pattern": "command_pulse",
+      "effects": [
+        {
+          "kind": "STAT_MUL",
+          "stat": "attackSpeed",
+          "perHit": [
+            0.477,
+            0.5723999999999999,
+            0.7155
+          ]
+        },
+        {
+          "kind": "SHIELD_FLAT",
+          "perHit": [
+            228,
+            330.59999999999997,
+            501.6
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tamamo_cross",
+      "name": "타마모 크로스",
+      "cost": 3,
+      "pattern": "drain_arc",
+      "effects": [
+        {
+          "kind": "DAMAGE",
+          "perHit": [
+            229,
+            332.05,
+            503.80000000000007
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fine_motion",
+      "name": "파인 모션",
+      "cost": 2,
+      "pattern": "dash_feint",
+      "effects": [
+        {
+          "kind": "SHIELD_FLAT",
+          "perHit": [
+            149,
+            216.04999999999998,
+            327.8
+          ]
+        },
+        {
+          "kind": "DAMAGE",
+          "perHit": [
+            264,
+            382.8,
+            580.8000000000001
+          ]
+        }
+      ]
+    },
+    {
+      "id": "biwa_hayahide",
+      "name": "비와 하야히데",
+      "cost": 4,
+      "pattern": "comet_fall",
+      "effects": [
+        {
+          "kind": "DAMAGE",
+          "perHit": [
+            421,
+            610.4499999999999,
+            1515.6000000000001
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mayano_top_gun",
+      "name": "마야노 탑건",
+      "cost": 4,
+      "pattern": "retaliate_storm",
+      "effects": [
+        {
+          "kind": "DAMAGE",
+          "perHit": [
+            96,
+            139.2,
+            345.6
+          ]
+        },
+        {
+          "kind": "DAMAGE",
+          "perHit": [
+            96,
+            139.2,
+            345.6
+          ]
+        },
+        {
+          "kind": "DAMAGE",
+          "perHit": [
+            96,
+            139.2,
+            345.6
+          ]
+        },
+        {
+          "kind": "SHIELD_FLAT",
+          "perHit": [
+            192,
+            278.4,
+            691.2
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mihono_bourbon",
+      "name": "미호노 부르봉",
+      "cost": 5,
+      "pattern": "orbital_beam",
+      "effects": [
+        {
+          "kind": "DAMAGE",
+          "perHit": [
+            121,
+            175.45,
+            726
+          ]
+        },
+        {
+          "kind": "DAMAGE",
+          "perHit": [
+            121,
+            175.45,
+            726
+          ]
+        },
+        {
+          "kind": "DAMAGE",
+          "perHit": [
+            121,
+            175.45,
+            726
+          ]
+        },
+        {
+          "kind": "DAMAGE",
+          "perHit": [
+            121,
+            175.45,
+            726
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mejiro_ryan",
+      "name": "메지로 라이언",
+      "cost": 2,
+      "pattern": "drain_arc",
+      "effects": [
+        {
+          "kind": "DAMAGE",
+          "perHit": [
+            186,
+            269.7,
+            409.20000000000005
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hishi_akebono",
+      "name": "히시 아케보노",
+      "cost": 1,
+      "pattern": "bulwark_circle",
+      "effects": [
+        {
+          "kind": "SHIELD_FLAT",
+          "perHit": [
+            149,
+            216.04999999999998,
+            327.8
+          ]
+        },
+        {
+          "kind": "STAT_ADD",
+          "stat": "armor",
+          "perHit": [
+            20,
+            24,
+            30
+          ]
+        }
+      ]
+    },
+    {
+      "id": "yukino_bijin",
+      "name": "유키노 비진",
+      "cost": 1,
+      "pattern": "sanctuary",
+      "effects": [
+        {
+          "kind": "HEAL",
+          "perHit": [
+            50,
+            72.5,
+            110.00000000000001
+          ]
+        },
+        {
+          "kind": "HEAL",
+          "perHit": [
+            50,
+            72.5,
+            110.00000000000001
+          ]
+        },
+        {
+          "kind": "HEAL",
+          "perHit": [
+            50,
+            72.5,
+            110.00000000000001
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rice_shower",
+      "name": "라이스 샤워",
+      "cost": 2,
+      "pattern": "iron_drain",
+      "effects": [
+        {
+          "kind": "DAMAGE_REDUCTION",
+          "perHit": [
+            0.2,
+            0.24,
+            0.30000000000000004
+          ]
+        },
+        {
+          "kind": "DAMAGE",
+          "perHit": [
+            82,
+            118.89999999999999,
+            180.4
+          ]
+        },
+        {
+          "kind": "DAMAGE",
+          "perHit": [
+            82,
+            118.89999999999999,
+            180.4
+          ]
+        },
+        {
+          "kind": "DAMAGE",
+          "perHit": [
+            82,
+            118.89999999999999,
+            180.4
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ines_fujin",
+      "name": "아이네스 후진",
+      "cost": 2,
+      "pattern": "bastion_growth",
+      "effects": [
+        {
+          "kind": "STACKING_STAT",
+          "stat": "hp",
+          "perHit": [
+            70,
+            84,
+            105
+          ]
+        },
+        {
+          "kind": "DAMAGE_REDUCTION",
+          "perHit": [
+            0.18,
+            0.216,
+            0.27
+          ]
+        },
+        {
+          "kind": "SHIELD_FLAT",
+          "perHit": [
+            170,
+            246.5,
+            374.00000000000006
+          ]
+        }
+      ]
+    },
+    {
+      "id": "agnes_tachyon",
+      "name": "아그네스 타키온",
+      "cost": 4,
+      "pattern": "carry_charge",
+      "effects": [
+        {
+          "kind": "STAT_MUL",
+          "stat": "attackSpeed",
+          "perHit": [
+            0.558,
+            0.6696000000000001,
+            1.0044000000000002
+          ]
+        },
+        {
+          "kind": "STAT_MUL",
+          "stat": "attackDamage",
+          "perHit": [
+            0.248,
+            0.2976,
+            0.4464
+          ]
+        },
+        {
+          "kind": "DAMAGE",
+          "perHit": [
+            126,
+            182.7,
+            453.6
+          ]
+        },
+        {
+          "kind": "DAMAGE",
+          "perHit": [
+            126,
+            182.7,
+            453.6
+          ]
+        }
+      ]
+    },
+    {
+      "id": "admire_vega",
+      "name": "어드마이어 베가",
+      "cost": 1,
+      "pattern": "crossing_echo",
+      "effects": [
+        {
+          "kind": "DAMAGE",
+          "perHit": [
+            110,
+            159.5,
+            242.00000000000003
+          ]
+        },
+        {
+          "kind": "DAMAGE",
+          "perHit": [
+            78,
+            113.1,
+            171.60000000000002
+          ]
+        }
+      ]
+    },
+    {
+      "id": "inari_one",
+      "name": "이나리 원",
+      "cost": 1,
+      "pattern": "pursuit_flurry",
+      "effects": [
+        {
+          "kind": "DAMAGE",
+          "perHit": [
+            72,
+            104.39999999999999,
+            158.4
+          ]
+        },
+        {
+          "kind": "DAMAGE",
+          "perHit": [
+            72,
+            104.39999999999999,
+            158.4
+          ]
+        },
+        {
+          "kind": "DAMAGE",
+          "perHit": [
+            72,
+            104.39999999999999,
+            158.4
+          ]
+        },
+        {
+          "kind": "STAT_MUL",
+          "stat": "attackSpeed",
+          "perHit": [
+            0.2,
+            0.24,
+            0.30000000000000004
+          ]
+        }
+      ]
+    },
+    {
+      "id": "winning_ticket",
+      "name": "위닝 티켓",
+      "cost": 1,
+      "pattern": "trample_wave",
+      "effects": [
+        {
+          "kind": "DAMAGE",
+          "perHit": [
+            164,
+            237.79999999999998,
+            360.8
+          ]
+        }
+      ]
+    },
+    {
+      "id": "air_shakur",
+      "name": "에어 샤커",
+      "cost": 1,
+      "pattern": "silence_zone",
+      "effects": [
+        {
+          "kind": "DAMAGE",
+          "perHit": [
+            121,
+            175.45,
+            266.20000000000005
+          ]
+        }
+      ]
+    },
+    {
+      "id": "eishin_flash",
+      "name": "에이신 플래시",
+      "cost": 2,
+      "pattern": "delayed_prison",
+      "effects": [
+        {
+          "kind": "DAMAGE",
+          "perHit": [
+            81,
+            117.45,
+            178.20000000000002
+          ]
+        },
+        {
+          "kind": "DAMAGE",
+          "perHit": [
+            103,
+            149.35,
+            226.60000000000002
+          ]
+        }
+      ]
+    },
+    {
+      "id": "curren_chan",
+      "name": "카렌짱",
+      "cost": 3,
+      "pattern": "chain_spark",
+      "effects": [
+        {
+          "kind": "DAMAGE",
+          "perHit": [
+            151,
+            218.95,
+            332.20000000000005
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kawakami_princess",
+      "name": "카와카미 프린세스",
+      "cost": 1,
+      "pattern": "comet_fall",
+      "effects": [
+        {
+          "kind": "DAMAGE",
+          "perHit": [
+            228,
+            330.59999999999997,
+            501.6
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gold_city",
+      "name": "골드 시티",
+      "cost": 1,
+      "pattern": "disarm_cone",
+      "effects": [
+        {
+          "kind": "DAMAGE",
+          "perHit": [
+            134,
+            194.29999999999998,
+            294.8
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sakura_bakushin_o",
+      "name": "사쿠라 바쿠신 오",
+      "cost": 2,
+      "pattern": "tempo_banner",
+      "effects": [
+        {
+          "kind": "STAT_MUL",
+          "stat": "attackSpeed",
+          "perHit": [
+            0.318,
+            0.3816,
+            0.477
+          ]
+        },
+        {
+          "kind": "MANA_ADD",
+          "perHit": [
+            8,
+            9.6,
+            12
+          ]
+        }
+      ]
+    },
+    {
+      "id": "seeking_the_pearl",
+      "name": "시킹 더 펄",
+      "cost": 2,
+      "pattern": "split_barrage",
+      "effects": [
+        {
+          "kind": "DAMAGE",
+          "perHit": [
+            112,
+            162.4,
+            246.40000000000003
+          ]
+        },
+        {
+          "kind": "DAMAGE",
+          "perHit": [
+            112,
+            162.4,
+            246.40000000000003
+          ]
+        }
+      ]
+    },
+    {
+      "id": "shinko_windy",
+      "name": "신코 윈디",
+      "cost": 1,
+      "pattern": "relay_lantern",
+      "effects": [
+        {
+          "kind": "SHIELD_FLAT",
+          "perHit": [
+            160,
+            232,
+            352
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sweep_tosho",
+      "name": "스윕 토쇼",
+      "cost": 2,
+      "pattern": "crossing_echo",
+      "effects": [
+        {
+          "kind": "DAMAGE",
+          "perHit": [
+            133,
+            192.85,
+            292.6
+          ]
+        },
+        {
+          "kind": "DAMAGE",
+          "perHit": [
+            94,
+            136.29999999999998,
+            206.8
+          ]
+        }
+      ]
+    },
+    {
+      "id": "super_creek",
+      "name": "슈퍼 크릭",
+      "cost": 3,
+      "pattern": "frost_front",
+      "effects": [
+        {
+          "kind": "DAMAGE",
+          "perHit": [
+            149,
+            216.04999999999998,
+            327.8
+          ]
+        }
+      ]
+    },
+    {
+      "id": "smart_falcon",
+      "name": "스마트 팔콘",
+      "cost": 4,
+      "pattern": "cinder_field",
+      "effects": [
+        {
+          "kind": "DAMAGE",
+          "perHit": [
+            111,
+            160.95,
+            399.6
+          ]
+        },
+        {
+          "kind": "DAMAGE",
+          "perHit": [
+            111,
+            160.95,
+            399.6
+          ]
+        },
+        {
+          "kind": "DAMAGE",
+          "perHit": [
+            111,
+            160.95,
+            399.6
+          ]
+        }
+      ]
+    },
+    {
+      "id": "zenno_rob_roy",
+      "name": "젠노 롭 로이",
+      "cost": 4,
+      "pattern": "challenge_bastion",
+      "effects": [
+        {
+          "kind": "SHIELD_FLAT",
+          "perHit": [
+            517,
+            749.65,
+            1861.2
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tosen_jordan",
+      "name": "토센 조던",
+      "cost": 1,
+      "pattern": "bastion_growth",
+      "effects": [
+        {
+          "kind": "STACKING_STAT",
+          "stat": "hp",
+          "perHit": [
+            70,
+            84,
+            105
+          ]
+        },
+        {
+          "kind": "DAMAGE_REDUCTION",
+          "perHit": [
+            0.18,
+            0.216,
+            0.27
+          ]
+        },
+        {
+          "kind": "SHIELD_FLAT",
+          "perHit": [
+            138,
+            200.1,
+            303.6
+          ]
+        }
+      ]
+    },
+    {
+      "id": "nakayama_festa",
+      "name": "나카야마 페스타",
+      "cost": 1,
+      "pattern": "power_link",
+      "effects": [
+        {
+          "kind": "HEAL",
+          "perHit": [
+            188,
+            272.59999999999997,
+            413.6
+          ]
+        },
+        {
+          "kind": "STAT_MUL",
+          "stat": "attackSpeed",
+          "perHit": [
+            0.35,
+            0.42,
+            0.5249999999999999
+          ]
+        },
+        {
+          "kind": "STAT_MUL",
+          "stat": "abilityPower",
+          "perHit": [
+            0.2,
+            0.24,
+            0.30000000000000004
+          ]
+        }
+      ]
+    },
+    {
+      "id": "narita_taishin",
+      "name": "나리타 타이신",
+      "cost": 1,
+      "pattern": "pursuit_flurry",
+      "effects": [
+        {
+          "kind": "DAMAGE",
+          "perHit": [
+            74,
+            107.3,
+            162.8
+          ]
+        },
+        {
+          "kind": "DAMAGE",
+          "perHit": [
+            74,
+            107.3,
+            162.8
+          ]
+        },
+        {
+          "kind": "DAMAGE",
+          "perHit": [
+            74,
+            107.3,
+            162.8
+          ]
+        },
+        {
+          "kind": "STAT_MUL",
+          "stat": "attackSpeed",
+          "perHit": [
+            0.2,
+            0.24,
+            0.30000000000000004
+          ]
+        }
+      ]
+    },
+    {
+      "id": "nishino_flower",
+      "name": "니시노 플라워",
+      "cost": 2,
+      "pattern": "dash_feint",
+      "effects": [
+        {
+          "kind": "SHIELD_FLAT",
+          "perHit": [
+            149,
+            216.04999999999998,
+            327.8
+          ]
+        },
+        {
+          "kind": "DAMAGE",
+          "perHit": [
+            263,
+            381.34999999999997,
+            578.6
+          ]
+        }
+      ]
+    },
+    {
+      "id": "haru_urara",
+      "name": "하루 우라라",
+      "cost": 1,
+      "pattern": "frost_front",
+      "effects": [
+        {
+          "kind": "DAMAGE",
+          "perHit": [
+            96,
+            139.2,
+            211.20000000000002
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bamboo_memory",
+      "name": "뱀부 메모리",
+      "cost": 2,
+      "pattern": "disarm_cone",
+      "effects": [
+        {
+          "kind": "DAMAGE",
+          "perHit": [
+            163,
+            236.35,
+            358.6
+          ]
+        }
+      ]
+    },
+    {
+      "id": "biko_pegasus",
+      "name": "비코 페가수스",
+      "cost": 1,
+      "pattern": "delayed_prison",
+      "effects": [
+        {
+          "kind": "DAMAGE",
+          "perHit": [
+            67,
+            97.14999999999999,
+            147.4
+          ]
+        },
+        {
+          "kind": "DAMAGE",
+          "perHit": [
+            85,
+            123.25,
+            187.00000000000003
+          ]
+        }
+      ]
+    },
+    {
+      "id": "marvelous_sunday",
+      "name": "마블러스 선데이",
+      "cost": 3,
+      "pattern": "counter_surge",
+      "effects": [
+        {
+          "kind": "SHIELD_FLAT",
+          "perHit": [
+            334,
+            484.3,
+            734.8000000000001
+          ]
+        },
+        {
+          "kind": "DAMAGE",
+          "perHit": [
+            194,
+            281.3,
+            426.8
+          ]
+        }
+      ]
+    },
+    {
+      "id": "matikanefukukitaru",
+      "name": "마치카네 후쿠키타루",
+      "cost": 1,
+      "pattern": "triage_echo",
+      "effects": [
+        {
+          "kind": "HEAL",
+          "perHit": [
+            91,
+            131.95,
+            200.20000000000002
+          ]
+        },
+        {
+          "kind": "HEAL",
+          "perHit": [
+            91,
+            131.95,
+            200.20000000000002
+          ]
+        },
+        {
+          "kind": "HEAL",
+          "perHit": [
+            91,
+            131.95,
+            200.20000000000002
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mr_cb",
+      "name": "미스터 시비",
+      "cost": 1,
+      "pattern": "silence_zone",
+      "effects": [
+        {
+          "kind": "DAMAGE",
+          "perHit": [
+            121,
+            175.45,
+            266.20000000000005
+          ]
+        }
+      ]
+    },
+    {
+      "id": "meisho_doto",
+      "name": "메이쇼 도토",
+      "cost": 3,
+      "pattern": "sanctuary",
+      "effects": [
+        {
+          "kind": "HEAL",
+          "perHit": [
+            72,
+            104.39999999999999,
+            158.4
+          ]
+        },
+        {
+          "kind": "HEAL",
+          "perHit": [
+            72,
+            104.39999999999999,
+            158.4
+          ]
+        },
+        {
+          "kind": "HEAL",
+          "perHit": [
+            72,
+            104.39999999999999,
+            158.4
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mejiro_dober",
+      "name": "메지로 도베르",
+      "cost": 3,
+      "pattern": "crossing_echo",
+      "effects": [
+        {
+          "kind": "DAMAGE",
+          "perHit": [
+            164,
+            237.79999999999998,
+            360.8
+          ]
+        },
+        {
+          "kind": "DAMAGE",
+          "perHit": [
+            116,
+            168.2,
+            255.20000000000002
+          ]
+        }
+      ]
+    },
+    {
+      "id": "nice_nature",
+      "name": "나이스 네이처",
+      "cost": 2,
+      "pattern": "silence_zone",
+      "effects": [
+        {
+          "kind": "DAMAGE",
+          "perHit": [
+            135,
+            195.75,
+            297
+          ]
+        }
+      ]
+    },
+    {
+      "id": "king_halo",
+      "name": "킹 헤일로",
+      "cost": 1,
+      "pattern": "rescue_barrier",
+      "effects": [
+        {
+          "kind": "HEAL_MISSING_PCT",
+          "perHit": [
+            0.25,
+            0.3,
+            0.375
+          ]
+        },
+        {
+          "kind": "SHIELD_FLAT",
+          "perHit": [
+            170,
+            246.5,
+            374.00000000000006
+          ]
+        }
+      ]
+    },
+    {
+      "id": "matikanetannhauser",
+      "name": "마치카네 탄호이저",
+      "cost": 1,
+      "pattern": "draining_tether",
+      "effects": [
+        {
+          "kind": "DAMAGE",
+          "perHit": [
+            157,
+            227.65,
+            345.40000000000003
+          ]
+        },
+        {
+          "kind": "MANA_DRAIN",
+          "perHit": [
+            15,
+            18,
+            22.5
+          ]
+        },
+        {
+          "kind": "STAT_MUL",
+          "stat": "attackSpeed",
+          "perHit": [
+            -0.25,
+            -0.25,
+            -0.25
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ikuno_dictus",
+      "name": "이쿠노 딕터스",
+      "cost": 1,
+      "pattern": "triage_echo",
+      "effects": [
+        {
+          "kind": "HEAL",
+          "perHit": [
+            91,
+            131.95,
+            200.20000000000002
+          ]
+        },
+        {
+          "kind": "HEAL",
+          "perHit": [
+            91,
+            131.95,
+            200.20000000000002
+          ]
+        },
+        {
+          "kind": "HEAL",
+          "perHit": [
+            91,
+            131.95,
+            200.20000000000002
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mejiro_palmer",
+      "name": "메지로 파머",
+      "cost": 1,
+      "pattern": "bastion_growth",
+      "effects": [
+        {
+          "kind": "STACKING_STAT",
+          "stat": "hp",
+          "perHit": [
+            70,
+            84,
+            105
+          ]
+        },
+        {
+          "kind": "DAMAGE_REDUCTION",
+          "perHit": [
+            0.18,
+            0.216,
+            0.27
+          ]
+        },
+        {
+          "kind": "SHIELD_FLAT",
+          "perHit": [
+            139,
+            201.54999999999998,
+            305.8
+          ]
+        }
+      ]
+    },
+    {
+      "id": "daitaku_helios",
+      "name": "다이타쿠 헬리오스",
+      "cost": 2,
+      "pattern": "tempo_banner",
+      "effects": [
+        {
+          "kind": "STAT_MUL",
+          "stat": "attackSpeed",
+          "perHit": [
+            0.318,
+            0.3816,
+            0.477
+          ]
+        },
+        {
+          "kind": "MANA_ADD",
+          "perHit": [
+            8,
+            9.6,
+            12
+          ]
+        }
+      ]
+    },
+    {
+      "id": "twin_turbo",
+      "name": "트윈 터보",
+      "cost": 1,
+      "pattern": "tempo_banner",
+      "effects": [
+        {
+          "kind": "STAT_MUL",
+          "stat": "attackSpeed",
+          "perHit": [
+            0.3,
+            0.36,
+            0.44999999999999996
+          ]
+        },
+        {
+          "kind": "MANA_ADD",
+          "perHit": [
+            8,
+            9.6,
+            12
+          ]
+        }
+      ]
+    },
+    {
+      "id": "satono_diamond",
+      "name": "사토노 다이아몬드",
+      "cost": 2,
+      "pattern": "binding_line",
+      "effects": [
+        {
+          "kind": "DAMAGE",
+          "perHit": [
+            148,
+            214.6,
+            325.6
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kitasan_black",
+      "name": "키타산 블랙",
+      "cost": 4,
+      "pattern": "command_pulse",
+      "effects": [
+        {
+          "kind": "STAT_MUL",
+          "stat": "attackSpeed",
+          "perHit": [
+            0.558,
+            0.6696000000000001,
+            1.0044000000000002
+          ]
+        },
+        {
+          "kind": "SHIELD_FLAT",
+          "perHit": [
+            330,
+            478.5,
+            1188
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sakura_chiyono_o",
+      "name": "사쿠라 치요노 오",
+      "cost": 2,
+      "pattern": "crossing_echo",
+      "effects": [
+        {
+          "kind": "DAMAGE",
+          "perHit": [
+            131,
+            189.95,
+            288.20000000000005
+          ]
+        },
+        {
+          "kind": "DAMAGE",
+          "perHit": [
+            93,
+            134.85,
+            204.60000000000002
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sirius_symboli",
+      "name": "시리우스 심볼리",
+      "cost": 1,
+      "pattern": "silence_zone",
+      "effects": [
+        {
+          "kind": "DAMAGE",
+          "perHit": [
+            114,
+            165.29999999999998,
+            250.8
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mejiro_ardan",
+      "name": "메지로 아르당",
+      "cost": 1,
+      "pattern": "sanctuary",
+      "effects": [
+        {
+          "kind": "HEAL",
+          "perHit": [
+            51,
+            73.95,
+            112.2
+          ]
+        },
+        {
+          "kind": "HEAL",
+          "perHit": [
+            51,
+            73.95,
+            112.2
+          ]
+        },
+        {
+          "kind": "HEAL",
+          "perHit": [
+            51,
+            73.95,
+            112.2
+          ]
+        }
+      ]
+    },
+    {
+      "id": "yaeno_muteki",
+      "name": "야에노 무테키",
+      "cost": 2,
+      "pattern": "power_link",
+      "effects": [
+        {
+          "kind": "HEAL",
+          "perHit": [
+            231,
+            334.95,
+            508.20000000000005
+          ]
+        },
+        {
+          "kind": "STAT_MUL",
+          "stat": "attackSpeed",
+          "perHit": [
+            0.371,
+            0.4452,
+            0.5565
+          ]
+        },
+        {
+          "kind": "STAT_MUL",
+          "stat": "abilityPower",
+          "perHit": [
+            0.212,
+            0.25439999999999996,
+            0.318
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tsurumaru_tsuyoshi",
+      "name": "츠루마루 츠요시",
+      "cost": 1,
+      "pattern": "delayed_prison",
+      "effects": [
+        {
+          "kind": "DAMAGE",
+          "perHit": [
+            66,
+            95.7,
+            145.20000000000002
+          ]
+        },
+        {
+          "kind": "DAMAGE",
+          "perHit": [
+            84,
+            121.8,
+            184.8
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mejiro_bright",
+      "name": "메지로 브라이트",
+      "cost": 1,
+      "pattern": "frost_front",
+      "effects": [
+        {
+          "kind": "DAMAGE",
+          "perHit": [
+            107,
+            155.15,
+            235.4
+          ]
+        }
+      ]
+    },
+    {
+      "id": "daring_tact",
+      "name": "데어링 택트",
+      "cost": 3,
+      "pattern": "crossing_echo",
+      "effects": [
+        {
+          "kind": "DAMAGE",
+          "perHit": [
+            156,
+            226.2,
+            343.20000000000005
+          ]
+        },
+        {
+          "kind": "DAMAGE",
+          "perHit": [
+            110,
+            159.5,
+            242.00000000000003
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sakura_laurel",
+      "name": "사쿠라 로렐",
+      "cost": 2,
+      "pattern": "frost_front",
+      "effects": [
+        {
+          "kind": "DAMAGE",
+          "perHit": [
+            129,
+            187.04999999999998,
+            283.8
+          ]
+        }
+      ]
+    },
+    {
+      "id": "narita_top_road",
+      "name": "나리타 탑 로드",
+      "cost": 2,
+      "pattern": "guardian_vow",
+      "effects": [
+        {
+          "kind": "SHIELD_FLAT",
+          "perHit": [
+            230,
+            333.5,
+            506.00000000000006
+          ]
+        }
+      ]
+    },
+    {
+      "id": "yamanin_zephyr",
+      "name": "야마닌 제퍼",
+      "cost": 3,
+      "pattern": "cleanse_hymn",
+      "effects": [
+        {
+          "kind": "HEAL",
+          "perHit": [
+            199,
+            288.55,
+            437.8
+          ]
+        }
+      ]
+    },
+    {
+      "id": "furioso",
+      "name": "푸리오소",
+      "cost": 1,
+      "pattern": "bulwark_circle",
+      "effects": [
+        {
+          "kind": "SHIELD_FLAT",
+          "perHit": [
+            166,
+            240.7,
+            365.20000000000005
+          ]
+        },
+        {
+          "kind": "STAT_ADD",
+          "stat": "armor",
+          "perHit": [
+            20,
+            24,
+            30
+          ]
+        }
+      ]
+    },
+    {
+      "id": "transcend",
+      "name": "트랜센드",
+      "cost": 3,
+      "pattern": "twin_orbit",
+      "effects": [
+        {
+          "kind": "DAMAGE",
+          "perHit": [
+            172,
+            249.4,
+            378.40000000000003
+          ]
+        },
+        {
+          "kind": "DAMAGE",
+          "perHit": [
+            86,
+            124.7,
+            189.20000000000002
+          ]
+        }
+      ]
+    },
+    {
+      "id": "north_flight",
+      "name": "노스 플라이트",
+      "cost": 3,
+      "pattern": "dash_feint",
+      "effects": [
+        {
+          "kind": "SHIELD_FLAT",
+          "perHit": [
+            180,
+            261,
+            396.00000000000006
+          ]
+        },
+        {
+          "kind": "DAMAGE",
+          "perHit": [
+            318,
+            461.09999999999997,
+            699.6
+          ]
+        }
+      ]
+    },
+    {
+      "id": "symboli_kris_s",
+      "name": "심볼리 크리스 에스",
+      "cost": 5,
+      "pattern": "breach_line",
+      "effects": [
+        {
+          "kind": "SUNDER_ARMOR_PCT",
+          "perHit": [
+            0.2,
+            0.24,
+            0.44000000000000006
+          ]
+        },
+        {
+          "kind": "DAMAGE",
+          "perHit": [
+            401,
+            581.4499999999999,
+            2406
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tanino_gimlet",
+      "name": "타니노 김렛",
+      "cost": 2,
+      "pattern": "disarm_cone",
+      "effects": [
+        {
+          "kind": "DAMAGE",
+          "perHit": [
+            173,
+            250.85,
+            380.6
+          ]
+        }
+      ]
+    },
+    {
+      "id": "daiichi_ruby",
+      "name": "다이이치 루비",
+      "cost": 1,
+      "pattern": "seeking_bolt",
+      "effects": [
+        {
+          "kind": "DAMAGE",
+          "perHit": [
+            231,
+            334.95,
+            508.20000000000005
+          ]
+        },
+        {
+          "kind": "STAT_MUL",
+          "stat": "attackDamage",
+          "perHit": [
+            -0.15,
+            -0.15,
+            -0.15
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mejiro_ramonu",
+      "name": "메지로 라모누",
+      "cost": 1,
+      "pattern": "crossing_echo",
+      "effects": [
+        {
+          "kind": "DAMAGE",
+          "perHit": [
+            121,
+            175.45,
+            266.20000000000005
+          ]
+        },
+        {
+          "kind": "DAMAGE",
+          "perHit": [
+            86,
+            124.7,
+            189.20000000000002
+          ]
+        }
+      ]
+    },
+    {
+      "id": "aston_machan",
+      "name": "애스턴 마짱",
+      "cost": 1,
+      "pattern": "twin_orbit",
+      "effects": [
+        {
+          "kind": "DAMAGE",
+          "perHit": [
+            121,
+            175.45,
+            266.20000000000005
+          ]
+        },
+        {
+          "kind": "DAMAGE",
+          "perHit": [
+            61,
+            88.45,
+            134.20000000000002
+          ]
+        }
+      ]
+    },
+    {
+      "id": "satono_crown",
+      "name": "사토노 크라운",
+      "cost": 1,
+      "pattern": "fan_volley",
+      "effects": [
+        {
+          "kind": "DAMAGE",
+          "perHit": [
+            103,
+            149.35,
+            226.60000000000002
+          ]
+        },
+        {
+          "kind": "DAMAGE",
+          "perHit": [
+            103,
+            149.35,
+            226.60000000000002
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cheval_grand",
+      "name": "슈발 그랑",
+      "cost": 2,
+      "pattern": "frost_front",
+      "effects": [
+        {
+          "kind": "DAMAGE",
+          "perHit": [
+            119,
+            172.54999999999998,
+            261.8
+          ]
+        }
+      ]
+    },
+    {
+      "id": "vivlos",
+      "name": "비블로스",
+      "cost": 1,
+      "pattern": "crossing_echo",
+      "effects": [
+        {
+          "kind": "DAMAGE",
+          "perHit": [
+            105,
+            152.25,
+            231.00000000000003
+          ]
+        },
+        {
+          "kind": "DAMAGE",
+          "perHit": [
+            75,
+            108.75,
+            165
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dantsu_flame",
+      "name": "단츠 플레임",
+      "cost": 1,
+      "pattern": "relay_lantern",
+      "effects": [
+        {
+          "kind": "SHIELD_FLAT",
+          "perHit": [
+            164,
+            237.79999999999998,
+            360.8
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ks_miracle",
+      "name": "케이에스 미라클",
+      "cost": 1,
+      "pattern": "bastion_growth",
+      "effects": [
+        {
+          "kind": "STACKING_STAT",
+          "stat": "hp",
+          "perHit": [
+            70,
+            84,
+            105
+          ]
+        },
+        {
+          "kind": "DAMAGE_REDUCTION",
+          "perHit": [
+            0.18,
+            0.216,
+            0.27
+          ]
+        },
+        {
+          "kind": "SHIELD_FLAT",
+          "perHit": [
+            138,
+            200.1,
+            303.6
+          ]
+        }
+      ]
+    },
+    {
+      "id": "jungle_pocket",
+      "name": "정글 포켓",
+      "cost": 2,
+      "pattern": "binding_line",
+      "effects": [
+        {
+          "kind": "DAMAGE",
+          "perHit": [
+            144,
+            208.79999999999998,
+            316.8
+          ]
+        }
+      ]
+    },
+    {
+      "id": "believe",
+      "name": "빌리브",
+      "cost": 2,
+      "pattern": "chain_spark",
+      "effects": [
+        {
+          "kind": "DAMAGE",
+          "perHit": [
+            126,
+            182.7,
+            277.20000000000005
+          ]
+        }
+      ]
+    },
+    {
+      "id": "no_reason",
+      "name": "노 리즌",
+      "cost": 1,
+      "pattern": "binding_line",
+      "effects": [
+        {
+          "kind": "DAMAGE",
+          "perHit": [
+            115,
+            166.75,
+            253.00000000000003
+          ]
+        }
+      ]
+    },
+    {
+      "id": "still_in_love",
+      "name": "스틸 인 러브",
+      "cost": 2,
+      "pattern": "trample_wave",
+      "effects": [
+        {
+          "kind": "DAMAGE",
+          "perHit": [
+            189,
+            274.05,
+            415.8
+          ]
+        }
+      ]
+    },
+    {
+      "id": "copano_rickey",
+      "name": "코파노 리키",
+      "cost": 3,
+      "pattern": "dash_feint",
+      "effects": [
+        {
+          "kind": "SHIELD_FLAT",
+          "perHit": [
+            176,
+            255.2,
+            387.20000000000005
+          ]
+        },
+        {
+          "kind": "DAMAGE",
+          "perHit": [
+            311,
+            450.95,
+            684.2
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hokko_tarumae",
+      "name": "홋코 타루마에",
+      "cost": 3,
+      "pattern": "cinder_field",
+      "effects": [
+        {
+          "kind": "DAMAGE",
+          "perHit": [
+            88,
+            127.6,
+            193.60000000000002
+          ]
+        },
+        {
+          "kind": "DAMAGE",
+          "perHit": [
+            88,
+            127.6,
+            193.60000000000002
+          ]
+        },
+        {
+          "kind": "DAMAGE",
+          "perHit": [
+            88,
+            127.6,
+            193.60000000000002
+          ]
+        }
+      ]
+    },
+    {
+      "id": "wonder_acute",
+      "name": "원더 어큐트",
+      "cost": 2,
+      "pattern": "triage_echo",
+      "effects": [
+        {
+          "kind": "HEAL",
+          "perHit": [
+            115,
+            166.75,
+            253.00000000000003
+          ]
+        },
+        {
+          "kind": "HEAL",
+          "perHit": [
+            115,
+            166.75,
+            253.00000000000003
+          ]
+        },
+        {
+          "kind": "HEAL",
+          "perHit": [
+            115,
+            166.75,
+            253.00000000000003
+          ]
+        }
+      ]
+    },
+    {
+      "id": "samson_big",
+      "name": "삼손 빅",
+      "cost": 1,
+      "pattern": "draining_tether",
+      "effects": [
+        {
+          "kind": "DAMAGE",
+          "perHit": [
+            153,
+            221.85,
+            336.6
+          ]
+        },
+        {
+          "kind": "MANA_DRAIN",
+          "perHit": [
+            15,
+            18,
+            22.5
+          ]
+        },
+        {
+          "kind": "STAT_MUL",
+          "stat": "attackSpeed",
+          "perHit": [
+            -0.25,
+            -0.25,
+            -0.25
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sounds_of_earth",
+      "name": "사운즈 오브 어스",
+      "cost": 1,
+      "pattern": "draining_tether",
+      "effects": [
+        {
+          "kind": "DAMAGE",
+          "perHit": [
+            155,
+            224.75,
+            341
+          ]
+        },
+        {
+          "kind": "MANA_DRAIN",
+          "perHit": [
+            15,
+            18,
+            22.5
+          ]
+        },
+        {
+          "kind": "STAT_MUL",
+          "stat": "attackSpeed",
+          "perHit": [
+            -0.25,
+            -0.25,
+            -0.25
+          ]
+        }
+      ]
+    },
+    {
+      "id": "royce_and_royce",
+      "name": "로이스 앤 로이스",
+      "cost": 1,
+      "pattern": "cleanse_hymn",
+      "effects": [
+        {
+          "kind": "HEAL",
+          "perHit": [
+            133,
+            192.85,
+            292.6
+          ]
+        }
+      ]
+    },
+    {
+      "id": "katsuragi_ace",
+      "name": "카츠라기 에이스",
+      "cost": 1,
+      "pattern": "disarm_cone",
+      "effects": [
+        {
+          "kind": "DAMAGE",
+          "perHit": [
+            136,
+            197.2,
+            299.20000000000005
+          ]
+        }
+      ]
+    },
+    {
+      "id": "neo_universe",
+      "name": "네오 유니버스",
+      "cost": 2,
+      "pattern": "trample_wave",
+      "effects": [
+        {
+          "kind": "DAMAGE",
+          "perHit": [
+            196,
+            284.2,
+            431.20000000000005
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hishi_miracle",
+      "name": "히시 미라클",
+      "cost": 1,
+      "pattern": "giant_cutter",
+      "effects": [
+        {
+          "kind": "DAMAGE",
+          "perHit": [
+            185,
+            268.25,
+            407.00000000000006
+          ]
+        },
+        {
+          "kind": "DAMAGE_MAXHP_PCT",
+          "perHit": [
+            0.045,
+            0.06525,
+            0.099
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tap_dance_city",
+      "name": "탭 댄스 시티",
+      "cost": 2,
+      "pattern": "retaliate_storm",
+      "effects": [
+        {
+          "kind": "DAMAGE",
+          "perHit": [
+            70,
+            101.5,
+            154
+          ]
+        },
+        {
+          "kind": "DAMAGE",
+          "perHit": [
+            70,
+            101.5,
+            154
+          ]
+        },
+        {
+          "kind": "DAMAGE",
+          "perHit": [
+            70,
+            101.5,
+            154
+          ]
+        },
+        {
+          "kind": "SHIELD_FLAT",
+          "perHit": [
+            141,
+            204.45,
+            310.20000000000005
+          ]
+        }
+      ]
+    },
+    {
+      "id": "duramente",
+      "name": "두라멘테",
+      "cost": 2,
+      "pattern": "breach_line",
+      "effects": [
+        {
+          "kind": "SUNDER_ARMOR_PCT",
+          "perHit": [
+            0.2,
+            0.24,
+            0.30000000000000004
+          ]
+        },
+        {
+          "kind": "DAMAGE",
+          "perHit": [
+            223,
+            323.34999999999997,
+            490.6
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rhein_kraft",
+      "name": "라인 크라프트",
+      "cost": 3,
+      "pattern": "command_pulse",
+      "effects": [
+        {
+          "kind": "STAT_MUL",
+          "stat": "attackSpeed",
+          "perHit": [
+            0.513,
+            0.6156,
+            0.7695000000000001
+          ]
+        },
+        {
+          "kind": "SHIELD_FLAT",
+          "perHit": [
+            266,
+            385.7,
+            585.2
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cesario",
+      "name": "세자리오",
+      "cost": 2,
+      "pattern": "sanctuary",
+      "effects": [
+        {
+          "kind": "HEAL",
+          "perHit": [
+            64,
+            92.8,
+            140.8
+          ]
+        },
+        {
+          "kind": "HEAL",
+          "perHit": [
+            64,
+            92.8,
+            140.8
+          ]
+        },
+        {
+          "kind": "HEAL",
+          "perHit": [
+            64,
+            92.8,
+            140.8
+          ]
+        }
+      ]
+    },
+    {
+      "id": "air_messiah",
+      "name": "에어 메사이어",
+      "cost": 2,
+      "pattern": "silence_zone",
+      "effects": [
+        {
+          "kind": "DAMAGE",
+          "perHit": [
+            141,
+            204.45,
+            310.20000000000005
+          ]
+        }
+      ]
+    },
+    {
+      "id": "daring_heart",
+      "name": "데어링 하트",
+      "cost": 1,
+      "pattern": "command_pulse",
+      "effects": [
+        {
+          "kind": "STAT_MUL",
+          "stat": "attackSpeed",
+          "perHit": [
+            0.45,
+            0.54,
+            0.675
+          ]
+        },
+        {
+          "kind": "SHIELD_FLAT",
+          "perHit": [
+            177,
+            256.65,
+            389.40000000000003
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fusaichi_pandora",
+      "name": "후사이치 판도라",
+      "cost": 1,
+      "pattern": "sanctuary",
+      "effects": [
+        {
+          "kind": "HEAL",
+          "perHit": [
+            50,
+            72.5,
+            110.00000000000001
+          ]
+        },
+        {
+          "kind": "HEAL",
+          "perHit": [
+            50,
+            72.5,
+            110.00000000000001
+          ]
+        },
+        {
+          "kind": "HEAL",
+          "perHit": [
+            50,
+            72.5,
+            110.00000000000001
+          ]
+        }
+      ]
+    },
+    {
+      "id": "buena_vista",
+      "name": "부에나 비스타",
+      "cost": 5,
+      "pattern": "execution_refund",
+      "effects": [
+        {
+          "kind": "DAMAGE",
+          "perHit": [
+            574,
+            832.3,
+            3444
+          ]
+        }
+      ]
+    },
+    {
+      "id": "orfevre",
+      "name": "오르페브르",
+      "cost": 4,
+      "pattern": "pursuit_flurry",
+      "effects": [
+        {
+          "kind": "DAMAGE",
+          "perHit": [
+            134,
+            194.29999999999998,
+            482.40000000000003
+          ]
+        },
+        {
+          "kind": "DAMAGE",
+          "perHit": [
+            134,
+            194.29999999999998,
+            482.40000000000003
+          ]
+        },
+        {
+          "kind": "DAMAGE",
+          "perHit": [
+            134,
+            194.29999999999998,
+            482.40000000000003
+          ]
+        },
+        {
+          "kind": "STAT_MUL",
+          "stat": "attackSpeed",
+          "perHit": [
+            0.248,
+            0.2976,
+            0.4464
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gentildonna",
+      "name": "젠틸돈나",
+      "cost": 3,
+      "pattern": "retaliate_storm",
+      "effects": [
+        {
+          "kind": "DAMAGE",
+          "perHit": [
+            82,
+            118.89999999999999,
+            180.4
+          ]
+        },
+        {
+          "kind": "DAMAGE",
+          "perHit": [
+            82,
+            118.89999999999999,
+            180.4
+          ]
+        },
+        {
+          "kind": "DAMAGE",
+          "perHit": [
+            82,
+            118.89999999999999,
+            180.4
+          ]
+        },
+        {
+          "kind": "SHIELD_FLAT",
+          "perHit": [
+            164,
+            237.79999999999998,
+            360.8
+          ]
+        }
+      ]
+    },
+    {
+      "id": "win_variation",
+      "name": "윈 바리아시옹",
+      "cost": 1,
+      "pattern": "draining_tether",
+      "effects": [
+        {
+          "kind": "DAMAGE",
+          "perHit": [
+            161,
+            233.45,
+            354.20000000000005
+          ]
+        },
+        {
+          "kind": "MANA_DRAIN",
+          "perHit": [
+            15,
+            18,
+            22.5
+          ]
+        },
+        {
+          "kind": "STAT_MUL",
+          "stat": "attackSpeed",
+          "perHit": [
+            -0.25,
+            -0.25,
+            -0.25
+          ]
+        }
+      ]
+    },
+    {
+      "id": "admire_groove",
+      "name": "어드마이어 그루브",
+      "cost": 2,
+      "pattern": "drain_arc",
+      "effects": [
+        {
+          "kind": "DAMAGE",
+          "perHit": [
+            180,
+            261,
+            396.00000000000006
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dream_journey",
+      "name": "드림 저니",
+      "cost": 2,
+      "pattern": "isolation_strike",
+      "effects": [
+        {
+          "kind": "DAMAGE",
+          "perHit": [
+            278,
+            403.09999999999997,
+            611.6
+          ]
+        }
+      ]
+    },
+    {
+      "id": "calstone_light_o",
+      "name": "칼스톤 라이트 오",
+      "cost": 1,
+      "pattern": "tempo_banner",
+      "effects": [
+        {
+          "kind": "STAT_MUL",
+          "stat": "attackSpeed",
+          "perHit": [
+            0.3,
+            0.36,
+            0.44999999999999996
+          ]
+        },
+        {
+          "kind": "MANA_ADD",
+          "perHit": [
+            8,
+            9.6,
+            12
+          ]
+        }
+      ]
+    },
+    {
+      "id": "durandal",
+      "name": "뒤랑달",
+      "cost": 2,
+      "pattern": "shadow_finish",
+      "effects": [
+        {
+          "kind": "DAMAGE",
+          "perHit": [
+            320,
+            464,
+            704
+          ]
+        },
+        {
+          "kind": "STAT_MUL",
+          "stat": "attackSpeed",
+          "perHit": [
+            0.318,
+            0.3816,
+            0.477
+          ]
+        }
+      ]
+    },
+    {
+      "id": "genuine",
+      "name": "제뉴인",
+      "cost": 1,
+      "pattern": "drain_arc",
+      "effects": [
+        {
+          "kind": "DAMAGE",
+          "perHit": [
+            156,
+            226.2,
+            343.20000000000005
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bubble_gum_fellow",
+      "name": "버블검 펠로",
+      "cost": 3,
+      "pattern": "carry_charge",
+      "effects": [
+        {
+          "kind": "STAT_MUL",
+          "stat": "attackSpeed",
+          "perHit": [
+            0.513,
+            0.6156,
+            0.7695000000000001
+          ]
+        },
+        {
+          "kind": "STAT_MUL",
+          "stat": "attackDamage",
+          "perHit": [
+            0.228,
+            0.2736,
+            0.342
+          ]
+        },
+        {
+          "kind": "DAMAGE",
+          "perHit": [
+            102,
+            147.9,
+            224.4
+          ]
+        },
+        {
+          "kind": "DAMAGE",
+          "perHit": [
+            102,
+            147.9,
+            224.4
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sakura_chitose_o",
+      "name": "사쿠라 치토세 오",
+      "cost": 2,
+      "pattern": "delayed_prison",
+      "effects": [
+        {
+          "kind": "DAMAGE",
+          "perHit": [
+            81,
+            117.45,
+            178.20000000000002
+          ]
+        },
+        {
+          "kind": "DAMAGE",
+          "perHit": [
+            103,
+            149.35,
+            226.60000000000002
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fenomeno",
+      "name": "페노메노",
+      "cost": 2,
+      "pattern": "crossing_echo",
+      "effects": [
+        {
+          "kind": "DAMAGE",
+          "perHit": [
+            131,
+            189.95,
+            288.20000000000005
+          ]
+        },
+        {
+          "kind": "DAMAGE",
+          "perHit": [
+            93,
+            134.85,
+            204.60000000000002
+          ]
+        }
+      ]
+    },
+    {
+      "id": "blast_onepiece",
+      "name": "블래스트 원피스",
+      "cost": 1,
+      "pattern": "split_barrage",
+      "effects": [
+        {
+          "kind": "DAMAGE",
+          "perHit": [
+            91,
+            131.95,
+            200.20000000000002
+          ]
+        },
+        {
+          "kind": "DAMAGE",
+          "perHit": [
+            91,
+            131.95,
+            200.20000000000002
+          ]
+        }
+      ]
+    },
+    {
+      "id": "almond_eye",
+      "name": "아몬드 아이",
+      "cost": 4,
+      "pattern": "focus_three",
+      "effects": [
+        {
+          "kind": "DAMAGE",
+          "perHit": [
+            92,
+            133.4,
+            331.2
+          ]
+        },
+        {
+          "kind": "DAMAGE",
+          "perHit": [
+            134,
+            194.29999999999998,
+            482.40000000000003
+          ]
+        },
+        {
+          "kind": "DAMAGE",
+          "perHit": [
+            243,
+            352.34999999999997,
+            874.8000000000001
+          ]
+        }
+      ]
+    },
+    {
+      "id": "lucky_lilac",
+      "name": "럭키 라일락",
+      "cost": 3,
+      "pattern": "expanding_nova",
+      "effects": [
+        {
+          "kind": "DAMAGE",
+          "perHit": [
+            87,
+            126.14999999999999,
+            191.4
+          ]
+        },
+        {
+          "kind": "DAMAGE",
+          "perHit": [
+            87,
+            126.14999999999999,
+            191.4
+          ]
+        },
+        {
+          "kind": "DAMAGE",
+          "perHit": [
+            87,
+            126.14999999999999,
+            191.4
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gran_alegria",
+      "name": "그란 알레그리아",
+      "cost": 4,
+      "pattern": "pursuit_flurry",
+      "effects": [
+        {
+          "kind": "DAMAGE",
+          "perHit": [
+            128,
+            185.6,
+            460.8
+          ]
+        },
+        {
+          "kind": "DAMAGE",
+          "perHit": [
+            128,
+            185.6,
+            460.8
+          ]
+        },
+        {
+          "kind": "DAMAGE",
+          "perHit": [
+            128,
+            185.6,
+            460.8
+          ]
+        },
+        {
+          "kind": "STAT_MUL",
+          "stat": "attackSpeed",
+          "perHit": [
+            0.248,
+            0.2976,
+            0.4464
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loves_only_you",
+      "name": "러브즈 온리 유",
+      "cost": 1,
+      "pattern": "draining_tether",
+      "effects": [
+        {
+          "kind": "DAMAGE",
+          "perHit": [
+            164,
+            237.79999999999998,
+            360.8
+          ]
+        },
+        {
+          "kind": "MANA_DRAIN",
+          "perHit": [
+            15,
+            18,
+            22.5
+          ]
+        },
+        {
+          "kind": "STAT_MUL",
+          "stat": "attackSpeed",
+          "perHit": [
+            -0.25,
+            -0.25,
+            -0.25
+          ]
+        }
+      ]
+    },
+    {
+      "id": "chrono_genesis",
+      "name": "크로노 제네시스",
+      "cost": 4,
+      "pattern": "trample_wave",
+      "effects": [
+        {
+          "kind": "DAMAGE",
+          "perHit": [
+            291,
+            421.95,
+            1047.6000000000001
+          ]
+        }
+      ]
+    },
+    {
+      "id": "curren_bouquetdor",
+      "name": "카렌 부케도르",
+      "cost": 1,
+      "pattern": "rescue_barrier",
+      "effects": [
+        {
+          "kind": "HEAL_MISSING_PCT",
+          "perHit": [
+            0.25,
+            0.3,
+            0.375
+          ]
+        },
+        {
+          "kind": "SHIELD_FLAT",
+          "perHit": [
+            166,
+            240.7,
+            365.20000000000005
+          ]
+        }
+      ]
+    },
+    {
+      "id": "stay_gold",
+      "name": "스테이 골드",
+      "cost": 1,
+      "pattern": "iron_drain",
+      "effects": [
+        {
+          "kind": "DAMAGE_REDUCTION",
+          "perHit": [
+            0.2,
+            0.24,
+            0.30000000000000004
+          ]
+        },
+        {
+          "kind": "DAMAGE",
+          "perHit": [
+            68,
+            98.6,
+            149.60000000000002
+          ]
+        },
+        {
+          "kind": "DAMAGE",
+          "perHit": [
+            68,
+            98.6,
+            149.60000000000002
+          ]
+        },
+        {
+          "kind": "DAMAGE",
+          "perHit": [
+            68,
+            98.6,
+            149.60000000000002
+          ]
+        }
+      ]
+    },
+    {
+      "id": "red_desire",
+      "name": "레드 디자이어",
+      "cost": 1,
+      "pattern": "delayed_prison",
+      "effects": [
+        {
+          "kind": "DAMAGE",
+          "perHit": [
+            70,
+            101.5,
+            154
+          ]
+        },
+        {
+          "kind": "DAMAGE",
+          "perHit": [
+            88,
+            127.6,
+            193.60000000000002
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kiseki",
+      "name": "키세키",
+      "cost": 1,
+      "pattern": "bastion_growth",
+      "effects": [
+        {
+          "kind": "STACKING_STAT",
+          "stat": "hp",
+          "perHit": [
+            70,
+            84,
+            105
+          ]
+        },
+        {
+          "kind": "DAMAGE_REDUCTION",
+          "perHit": [
+            0.18,
+            0.216,
+            0.27
+          ]
+        },
+        {
+          "kind": "SHIELD_FLAT",
+          "perHit": [
+            137,
+            198.65,
+            301.40000000000003
+          ]
+        }
+      ]
+    },
+    {
+      "id": "forever_young",
+      "name": "포에버 영",
+      "cost": 3,
+      "pattern": "cinder_field",
+      "effects": [
+        {
+          "kind": "DAMAGE",
+          "perHit": [
+            88,
+            127.6,
+            193.60000000000002
+          ]
+        },
+        {
+          "kind": "DAMAGE",
+          "perHit": [
+            88,
+            127.6,
+            193.60000000000002
+          ]
+        },
+        {
+          "kind": "DAMAGE",
+          "perHit": [
+            88,
+            127.6,
+            193.60000000000002
+          ]
+        }
+      ]
+    },
+    {
+      "id": "marche_lorraine",
+      "name": "마르슈 로렌",
+      "cost": 2,
+      "pattern": "disarm_cone",
+      "effects": [
+        {
+          "kind": "DAMAGE",
+          "perHit": [
+            154,
+            223.29999999999998,
+            338.8
+          ]
+        }
+      ]
+    },
+    {
+      "id": "epiphaneia",
+      "name": "에피파네이아",
+      "cost": 1,
+      "pattern": "retaliate_storm",
+      "effects": [
+        {
+          "kind": "DAMAGE",
+          "perHit": [
+            61,
+            88.45,
+            134.20000000000002
+          ]
+        },
+        {
+          "kind": "DAMAGE",
+          "perHit": [
+            61,
+            88.45,
+            134.20000000000002
+          ]
+        },
+        {
+          "kind": "DAMAGE",
+          "perHit": [
+            61,
+            88.45,
+            134.20000000000002
+          ]
+        },
+        {
+          "kind": "SHIELD_FLAT",
+          "perHit": [
+            122,
+            176.9,
+            268.40000000000003
+          ]
+        }
+      ]
+    },
+    {
+      "id": "logotype",
+      "name": "로고타입",
+      "cost": 2,
+      "pattern": "command_pulse",
+      "effects": [
+        {
+          "kind": "STAT_MUL",
+          "stat": "attackSpeed",
+          "perHit": [
+            0.477,
+            0.5723999999999999,
+            0.7155
+          ]
+        },
+        {
+          "kind": "SHIELD_FLAT",
+          "perHit": [
+            216,
+            313.2,
+            475.20000000000005
+          ]
+        }
+      ]
+    },
+    {
+      "id": "victoire_pisa",
+      "name": "빅투아르 피사",
+      "cost": 2,
+      "pattern": "crossing_echo",
+      "effects": [
+        {
+          "kind": "DAMAGE",
+          "perHit": [
+            136,
+            197.2,
+            299.20000000000005
+          ]
+        },
+        {
+          "kind": "DAMAGE",
+          "perHit": [
+            97,
+            140.65,
+            213.4
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rose_kingdom",
+      "name": "로즈 킹덤",
+      "cost": 1,
+      "pattern": "trample_wave",
+      "effects": [
+        {
+          "kind": "DAMAGE",
+          "perHit": [
+            162,
+            234.9,
+            356.40000000000003
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rulership",
+      "name": "룰러쉽",
+      "cost": 2,
+      "pattern": "guardian_vow",
+      "effects": [
+        {
+          "kind": "SHIELD_FLAT",
+          "perHit": [
+            224,
+            324.8,
+            492.80000000000007
+          ]
+        }
+      ]
+    },
+    {
+      "id": "efforia",
+      "name": "에프포리아",
+      "cost": 3,
+      "pattern": "breach_line",
+      "effects": [
+        {
+          "kind": "SUNDER_ARMOR_PCT",
+          "perHit": [
+            0.2,
+            0.24,
+            0.30000000000000004
+          ]
+        },
+        {
+          "kind": "DAMAGE",
+          "perHit": [
+            249,
+            361.05,
+            547.8000000000001
+          ]
+        }
+      ]
+    },
+    {
+      "id": "titleholder",
+      "name": "타이틀홀더",
+      "cost": 1,
+      "pattern": "retaliate_storm",
+      "effects": [
+        {
+          "kind": "DAMAGE",
+          "perHit": [
+            60,
+            87,
+            132
+          ]
+        },
+        {
+          "kind": "DAMAGE",
+          "perHit": [
+            60,
+            87,
+            132
+          ]
+        },
+        {
+          "kind": "DAMAGE",
+          "perHit": [
+            60,
+            87,
+            132
+          ]
+        },
+        {
+          "kind": "SHIELD_FLAT",
+          "perHit": [
+            120,
+            174,
+            264
+          ]
+        }
+      ]
+    },
+    {
+      "id": "phalaenopsis",
+      "name": "팔레놉시스",
+      "cost": 2,
+      "pattern": "dash_feint",
+      "effects": [
+        {
+          "kind": "SHIELD_FLAT",
+          "perHit": [
+            144,
+            208.79999999999998,
+            316.8
+          ]
+        },
+        {
+          "kind": "DAMAGE",
+          "perHit": [
+            255,
+            369.75,
+            561
+          ]
+        }
+      ]
+    },
+    {
+      "id": "verxina",
+      "name": "베르시나",
+      "cost": 1,
+      "pattern": "expanding_nova",
+      "effects": [
+        {
+          "kind": "DAMAGE",
+          "perHit": [
+            61,
+            88.45,
+            134.20000000000002
+          ]
+        },
+        {
+          "kind": "DAMAGE",
+          "perHit": [
+            61,
+            88.45,
+            134.20000000000002
+          ]
+        },
+        {
+          "kind": "DAMAGE",
+          "perHit": [
+            61,
+            88.45,
+            134.20000000000002
+          ]
+        }
+      ]
+    },
+    {
+      "id": "manhattan_cafe",
+      "name": "맨하탄 카페",
+      "cost": 1,
+      "pattern": "drain_arc",
+      "effects": [
+        {
+          "kind": "DAMAGE",
+          "perHit": [
+            160,
+            232,
+            352
+          ]
+        }
+      ]
+    },
+    {
+      "id": "espoir_city",
+      "name": "에스포와르 시티",
+      "cost": 3,
+      "pattern": "bulwark_circle",
+      "effects": [
+        {
+          "kind": "SHIELD_FLAT",
+          "perHit": [
+            228,
+            330.59999999999997,
+            501.6
+          ]
+        },
+        {
+          "kind": "STAT_ADD",
+          "stat": "armor",
+          "perHit": [
+            20,
+            24,
+            30
+          ]
+        }
+      ]
+    }
+  ]
+}
