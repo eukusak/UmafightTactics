@@ -521,7 +521,7 @@ export const FINISHING_MOVE_DEFS: RacePlanNode[] = [
     ],
   }),
   fm({
-    id: 'FM_SUPPORT_PACEMAKER', finishingCategory: 'SUPPORT', nameKo: '페이스메이커',
+    id: 'FM_SUPPORT_PACEMAKER', finishingCategory: 'SUPPORT', nameKo: '바람막이 역할',
     descriptionKo: '앞에서 바람을 받아 주는 대신, 뒤의 동료들이 훨씬 편하게 갑니다.',
     majorTag: 'TEAM_SUPPORT', tags: ['TEAM_SUPPORT', 'POSITION'], baseWeight: 1,
     guard: { appliesTo: 'MELEE', needsAdjacentAlly: true },

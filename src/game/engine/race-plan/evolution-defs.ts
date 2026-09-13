@@ -322,7 +322,7 @@ export const RACE_EVOLUTION_DEFS: RacePlanNode[] = [
     ],
   },
   {
-    id: 'EV_LONE_RUN', kind: 'EVOLUTION', nameKo: '단독 선두',
+    id: 'EV_LONE_RUN', kind: 'EVOLUTION', nameKo: '홀로 앞서기',
     descriptionKo: '옆에 아무도 없을 때 가장 잘 달립니다.',
     majorTag: 'POSITION', tags: ['POSITION', 'MORE_EARLY'], requires: ['POSITION', 'MORE_EARLY', 'BASIC_ATTACK'], baseWeight: 1,
     guard: { appliesTo: 'ANY' }, fit: { phases: ['START', 'POSITIONING'] },
@@ -362,7 +362,7 @@ export const RACE_EVOLUTION_DEFS: RacePlanNode[] = [
     ],
   },
   {
-    id: 'EV_PHOTO_FINISH', kind: 'EVOLUTION', nameKo: '사진 판정',
+    id: 'EV_PHOTO_FINISH', kind: 'EVOLUTION', nameKo: '결승선까지 버티기',
     descriptionKo: '결승선 접전까지 가면 한 번은 쓰러지지 않고 버팁니다.',
     majorTag: 'SURVIVAL', tags: ['SURVIVAL', 'MORE_LATE'], requires: ['SURVIVAL', 'MORE_LATE', 'SUSTAIN'], baseWeight: 0.9,
     guard: { appliesTo: 'ANY' }, fit: { phases: ['LAST_3F', 'OVERTIME'] },

@@ -510,7 +510,7 @@ export const RACE_PLAN_DEFS: RacePlanNode[] = [
   },
   {
     id: 'RP_SLOW_SAVE_LEGS', kind: 'PLAN', category: 'SLOW_PACE',
-    nameKo: '각력 온존', descriptionKo: '아무도 가지 않는 흐름에 맞춰 다리를 아낍니다. 4코너에 기력이 가득 찬 채로 들어갑니다.',
+    nameKo: '다리 아껴 두기', descriptionKo: '아무도 가지 않는 흐름에 맞춰 다리를 아낍니다. 4코너에 기력이 가득 찬 채로 들어갑니다.',
     majorTag: 'CAST', tags: ['CAST', 'MORE_LATE'], baseWeight: 1,
     guard: { appliesTo: 'ANY' },
     fit: { roles: ['AP_CARRY', 'SUPPORT'], itemAxes: ['mana', 'ap'], styles: ['sashi', 'oikomi'],

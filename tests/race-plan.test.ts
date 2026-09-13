@@ -96,6 +96,25 @@ describe('catalogue', () => {
     expect(new Set(ALL_RACE_PLAN_NODES.map((n) => n.id)).size).toBe(ALL_RACE_PLAN_NODES.length);
   });
 
+  it('never offers two cards of the same kind under the same name', () => {
+    // Two finishing moves called 페이스메이커 can land side by side in one offer,
+    // and the player has no way to tell them apart. Across kinds a shared name
+    // is a deliberate ladder (plan -> evolution -> move), so only same-kind
+    // collisions are errors.
+    const byKind = new Map<string, Map<string, string[]>>();
+    for (const node of ALL_RACE_PLAN_NODES) {
+      const kind = byKind.get(node.kind) ?? new Map<string, string[]>();
+      byKind.set(node.kind, kind);
+      const name = node.nameKo.replace(/\s/g, '');
+      kind.set(name, [...(kind.get(name) ?? []), node.id]);
+    }
+    for (const [kind, names] of byKind) {
+      for (const [name, ids] of names) {
+        expect(ids, `${kind} / ${name}`).toHaveLength(1);
+      }
+    }
+  });
+
   it('gives every plan at least three compatible evolutions', () => {
     for (const plan of RACE_PLAN_DEFS) {
       const fitting = RACE_EVOLUTION_DEFS.filter((e) => evolutionFitsPlan(e, plan));
