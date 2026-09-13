@@ -13,7 +13,11 @@ export function augmentApplies(aug: AugmentDef, unit: Pick<CombatUnit, 'unitDefI
     && (!f.noActiveTrait || !unit.traits.some(id => activeTierIndex(getTrait(id), counts.get(id) ?? 0) >= 0)));
 }
 export function augmentEffects(aug: AugmentDef, progress: Record<string, number>, counts: Map<TraitId, number>): EffectDef[] {
-  const multiplier = aug.activeTraitScaling ? Math.min(6, [...counts].filter(([id, count]) => activeTierIndex(getTrait(id), count) >= 0).length) : 1;
+  // Cap at 10, not 6. Every board that reaches the endgame now runs 8 to 11
+// active traits, so a cap of 6 never actually bound anything — it just stopped
+// paying the one build the augment exists to reward, silently, right at the
+// point where stacking breadth starts costing real board slots.
+const multiplier = aug.activeTraitScaling ? Math.min(10, [...counts].filter(([id, count]) => activeTierIndex(getTrait(id), count) >= 0).length) : 1;
   const result = aug.teamEffects.map(e => ({ ...e, value: e.value === undefined ? undefined : e.value * multiplier }));
   if (aug.growth) result.push({ kind: 'STAT_ADD', stat: aug.growth.stat, value: Math.min(aug.growth.maxStacks, progress[aug.id] ?? 0) * aug.growth.value });
   return result;

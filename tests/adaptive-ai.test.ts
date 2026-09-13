@@ -24,8 +24,12 @@ describe('rule-aware adaptive AI',()=>{
     expect(effectUtility(unit,{kind:'PROC_DAMAGE',value:100,trigger:{when:'ON_CAST'}})).toBeGreaterThan(effectUtility(unit,{kind:'PROC_DAMAGE',value:20,trigger:{when:'ON_CAST'}}));
   });
   it('invalidates selection when an augment or saved growth changes on the same player',()=>{
-    const {state,p}=setup();p.level=1;p.board=[];p.bench=[newInstance(state,'haru_urara',1),newInstance(state,'oguri_cap',1)];
-    expect(chooseFieldedUnits(p)[0].unitDefId).toBe('oguri_cap');p.augments=['hero_haru_urara'];p.augmentProgress={hero_haru_urara:20};
+    // A peer comparison: both 1-cost supports, so the augment is what decides.
+    // It used to be checked against a 1-star four-cost, which only worked while
+    // the cost curve undervalued that tier — a grade-G augment worth +240hp at
+    // full stacks should not out-value a whole cost tier.
+    const {state,p}=setup();p.level=1;p.board=[];p.bench=[newInstance(state,'haru_urara',1),newInstance(state,'biko_pegasus',1)];
+    expect(chooseFieldedUnits(p)[0].unitDefId).toBe('biko_pegasus');p.augments=['hero_haru_urara'];p.augmentProgress={hero_haru_urara:20};
     const a=chooseFieldedUnits(p),fresh=chooseFieldedUnits(structuredClone(p));
     expect(a.map(u=>u.instanceId)).toEqual(fresh.map(u=>u.instanceId));expect(a[0].unitDefId).toBe('haru_urara');
     const before=lineupScore(p,a);p.augmentProgress.hero_haru_urara=0;expect(lineupScore(p,a)).toBeLessThan(before);

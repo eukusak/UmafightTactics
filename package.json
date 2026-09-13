@@ -24,7 +24,7 @@
     "data:validate": "tsx scripts/validate-game-data.ts",
     "simulate": "tsx scripts/simulate.ts",
     "check:art": "tsx scripts/check-art-manifest.ts",
-    "verify": "npm run sync:data && npm run data:build && npm run data:validate && npm run audit:race-plan && npm run typecheck && npm test && npm run simulate -- --matches 250 && npm run check:art && npm run build",
+    "verify": "npm run sync:data && npm run data:build && npm run data:validate && npm run audit:race-plan && npm run audit:cost-curve -- --strict && npm run typecheck && npm test && npm run simulate -- --matches 250 && npm run check:art && npm run build",
     "start:static": "node scripts/serve.mjs --static",
     "audit:tft": "tsx scripts/audit-tft.ts",
     "art:briefs": "tsx scripts/build-motion-briefs.ts",
@@ -35,7 +35,8 @@
     "check:bundle": "node scripts/check-client-bundle.mjs",
     "test:server-install": "node scripts/check-server-install.mjs",
     "test:render-install": "node tests/support/render-yarn-install.mjs",
-    "audit:race-plan": "tsx scripts/audit-race-plan.ts"
+    "audit:race-plan": "tsx scripts/audit-race-plan.ts",
+    "audit:cost-curve": "tsx scripts/audit-cost-curve.ts"
   },
   "dependencies": {
     "@fontsource-variable/noto-sans-kr": "^5.3.0",

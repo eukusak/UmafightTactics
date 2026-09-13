@@ -19,10 +19,33 @@ export const POOL_COPIES: Record<Cost, number> = { 1: 30, 2: 25, 3: 18, 4: 10, 5
  * finished reroll board on raw stats alone; the 1-3 cost columns are untouched
  * so the early game plays the same.
  */
-export const BASE_HP: Record<Cost, number> = { 1: 650, 2: 720, 3: 820, 4: 900, 5: 1000 };
-export const BASE_AD: Record<Cost, number> = { 1: 48, 2: 54, 3: 60, 4: 65, 5: 72 };
+/**
+ * Base stats by cost.
+ *
+ * The four- and five-cost premium is deliberately wide. One star level is worth
+ * 1.8x and a cost step used to be worth about 1.11x, so a star beat six cost
+ * steps and cost stopped mattering: a four-cost two-star lost 100-0 to a
+ * two-cost three-star, and a board half-stuck at one star lost 400-0. Four- and
+ * five-costs are the tiers that realistically never reach three stars — the
+ * shop cannot supply nine copies out of a pool of 10 and 9 — so their power has
+ * to sit in the base rather than in a star level they cannot buy.
+ *
+ * The target is the relationship every auto-battler relies on: a one-star of
+ * cost N is worth about a two-star of cost N-1. It was badly inverted — a
+ * one-star four-cost was strictly worse than a two-star three-cost on health,
+ * damage, resistances *and* skill — so a value deck won 4% of fights with
+ * one-star carries and 94% with two-star ones, with nothing in between.
+ *
+ * What stops this from re-creating the early-game complaint that started the
+ * previous patch is availability, not weakness: SHOP_ODDS keeps four-costs out
+ * of the shop until level 6 and five-costs until level 7. Their skills were
+ * always the strong part early (COST_SKILL_POWER pays 1.56x and 1.9x at one
+ * star), and that is untouched here.
+ */
+export const BASE_HP: Record<Cost, number> = { 1: 650, 2: 720, 3: 820, 4: 1300, 5: 1620 };
+export const BASE_AD: Record<Cost, number> = { 1: 48, 2: 54, 3: 60, 4: 94, 5: 117 };
 export const BASE_AS: Record<Cost, number> = { 1: 0.68, 2: 0.7, 3: 0.72, 4: 0.74, 5: 0.76 };
-export const BASE_RESIST: Record<Cost, number> = { 1: 28, 2: 30, 3: 32, 4: 34, 5: 36 };
+export const BASE_RESIST: Record<Cost, number> = { 1: 28, 2: 30, 3: 32, 4: 48, 5: 58 };
 
 /**
  * Same kit/percentile at one star: damage, healing and flat shields separate by cost.
@@ -53,11 +76,50 @@ export const RUN_STYLE_START_MANA: Record<string, number> = {
 /**
  * Spec §10 — star scaling.
  *
- * 2026-09 balance: three stars pay 3.5 instead of 3.24. Nine copies is the
- * game's most expensive commitment and the simulator finishes ~0.00 four- and
- * five-cost three-stars per match, so this lands almost entirely on reroll boards.
+ * Back to 3.24 after 3.5. The note that justified 3.5 said the quiet part out
+ * loud: four- and five-cost three-stars finish at ~0.00 per match, so the buff
+ * landed only on reroll boards — in the same patch that cut four- and five-cost
+ * base stats to bring reroll boards *up* relative to them. Two levers pushing
+ * the same way is how a correction becomes an overcorrection, and it did:
+ * afterwards four-costs appeared in 3 of 40 final boards and five-costs in none.
  */
-export const STAR_STAT_MULT: Record<number, number> = { 1: 1.0, 2: 1.8, 3: 3.5 };
+export const STAR_STAT_MULT: Record<number, number> = { 1: 1.0, 2: 1.8, 3: 3.24 };
+
+/**
+ * Star scaling, by cost.
+ *
+ * `starSkillMultiplier` has always been cost-aware; the stat curve was not, and
+ * that asymmetry is most of why cost stopped mattering. A flat 1.8x second star
+ * is correct for the tiers built to be rerolled — that is what a reroll board is
+ * buying — but a four- or five-cost is almost never seen three times, so pinning
+ * its power to a star level makes the tier dead on arrival. Those two tiers get
+ * a flatter curve and a wider base instead: the same two-star strength they had,
+ * reached from a one-star that is worth fielding.
+ *
+ * The flattening is the half that fixes the variance. A four-cost deck used to
+ * win 4% of its fights at one star and 94% at two, with nothing in between, so
+ * the whole game was one upgrade roll. Now the tier is bought rather than
+ * rolled, and rerolling stays what multiplies a cheap board: one- to three-costs
+ * keep the full 1.8x and 3.24x, and a three-star two-cost still outweighs a
+ * two-star five-cost.
+ */
+/**
+ * A cost tier's stat weight, relative to a one-cost, read off the real curve.
+ *
+ * Anything estimating a unit's power needs this rather than a linear guess at
+ * what a cost step is worth: the four- and five-cost premium is now roughly 2x
+ * and 2.5x, not the ~1.1x per step that a linear term implies.
+ */
+export function costStatWeight(cost: Cost): number {
+  return (BASE_HP[cost] / BASE_HP[1] + BASE_AD[cost] / BASE_AD[1]) / 2;
+}
+
+export function starStatMultiplier(star: number, cost: Cost): number {
+  if (star !== 2) return STAR_STAT_MULT[star] ?? 1;
+  if (cost === 5) return 1.2;
+  if (cost === 4) return 1.28;
+  return STAR_STAT_MULT[2];
+}
 /** Also stored on SkillDef.starMultipliers, so it is pinned by art review too. */
 export function starSkillMultiplier(star: number, cost: Cost): number {
   if (star === 1) return 1.0;

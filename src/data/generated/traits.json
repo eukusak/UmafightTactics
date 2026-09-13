@@ -13,11 +13,11 @@
         10
       ],
       "emblemItemId": "emblem_nige",
-      "description": "빠른 기본 공격과 전투 초반의 선점으로 압박한다.",
+      "description": "발주부터 앞에 서서 끌고 간다. 초반이 가장 강하고 최종 직선에서는 다리가 남지 않는다.",
       "tiers": [
         {
           "count": 2,
-          "description": "공속 +10%, 시작 6초간 피해 +4%",
+          "description": "공속 +10%, 발주 6초간 피해 +4%",
           "effects": [
             {
               "kind": "STAT_MUL",
@@ -36,7 +36,7 @@
         },
         {
           "count": 4,
-          "description": "공속 +22%, 시작 6초간 피해 +8%",
+          "description": "공속 +22%, 발주 6초간 피해 +8%",
           "effects": [
             {
               "kind": "STAT_MUL",
@@ -55,7 +55,7 @@
         },
         {
           "count": 6,
-          "description": "공속 +38%, 시작 6초간 피해 +12%. 전투 시작 4초간 방해 효과 면역",
+          "description": "공속 +38%, 발주 6초간 피해 +12%. 발주 4초간 방해 효과 면역",
           "effects": [
             {
               "kind": "STAT_MUL",
@@ -81,7 +81,7 @@
         },
         {
           "count": 8,
-          "description": "공속 +55%, 시작 6초간 피해 +18%, 시작 6초 방해 효과 면역",
+          "description": "공속 +55%, 발주 6초간 피해 +18%, 시작 6초 방해 효과 면역",
           "effects": [
             {
               "kind": "STAT_MUL",
@@ -107,7 +107,7 @@
         },
         {
           "count": 10,
-          "description": "공속 +80%, 시작 6초간 피해 +25%, 시작 8초 방해 효과 면역",
+          "description": "공속 +80%, 발주 6초간 피해 +25%, 시작 8초 방해 효과 면역",
           "effects": [
             {
               "kind": "STAT_MUL",
@@ -145,7 +145,7 @@
         10
       ],
       "emblemItemId": "emblem_senko",
-      "description": "앞 자리를 지키며 안정적으로 밀어붙인다.",
+      "description": "2, 3번수에 붙어 가다 4코너에서 먼저 승부를 건다. 어느 구간에도 약점이 없다.",
       "tiers": [
         {
           "count": 2,
@@ -266,7 +266,7 @@
         10
       ],
       "emblemItemId": "emblem_sashi",
-      "description": "안쪽을 파고들어 승부를 뒤집는다.",
+      "description": "중반까지 말군에 묻혀 버티다 4코너부터 밖으로 나온다. 뒤로 갈수록 강해진다.",
       "tiers": [
         {
           "count": 2,
@@ -404,7 +404,7 @@
         9
       ],
       "emblemItemId": "emblem_oikomi",
-      "description": "뒤에서 몰아쳐 약해진 적을 끝낸다.",
+      "description": "마지막 600m에 전부를 건다. 그 전까지는 맞아도 버티며 다리를 아낀다.",
       "tiers": [
         {
           "count": 2,
@@ -730,7 +730,7 @@
       "tiers": [
         {
           "count": 2,
-          "description": "전투 8초 후 최대 체력 +8%, 공격력/주문력 +8%",
+          "description": "중반에 접어드는 8초부터 최대 체력 +8%, 공격력/주문력 +8%",
           "effects": [
             {
               "kind": "STAT_MUL",
@@ -763,7 +763,7 @@
         },
         {
           "count": 4,
-          "description": "전투 8초 후 최대 체력 +18%, 공격력/주문력 +18%",
+          "description": "중반에 접어드는 8초부터 최대 체력 +18%, 공격력/주문력 +18%",
           "effects": [
             {
               "kind": "STAT_MUL",
@@ -796,7 +796,7 @@
         },
         {
           "count": 6,
-          "description": "전투 8초 후 최대 체력·공격력·주문력 +25%",
+          "description": "중반에 접어드는 8초부터 최대 체력·공격력·주문력 +25%",
           "effects": [
             {
               "kind": "STAT_MUL",
@@ -829,7 +829,7 @@
         },
         {
           "count": 8,
-          "description": "전투 8초 후 최대 체력·공격력·주문력 +34%",
+          "description": "중반에 접어드는 8초부터 최대 체력·공격력·주문력 +34%",
           "effects": [
             {
               "kind": "STAT_MUL",
@@ -862,7 +862,7 @@
         },
         {
           "count": 10,
-          "description": "전투 8초 후 최대 체력·공격력·주문력 +50%",
+          "description": "중반에 접어드는 8초부터 최대 체력·공격력·주문력 +50%",
           "effects": [
             {
               "kind": "STAT_MUL",
@@ -925,7 +925,7 @@
         },
         {
           "count": 4,
-          "description": "5초마다 잃은 체력의 8% 회복. 전투 15초 후 방어력/마저 +25",
+          "description": "5초마다 잃은 체력의 8% 회복. 중반을 넘기는 15초부터 방어력/마저 +25",
           "effects": [
             {
               "kind": "HEAL_MISSING_PCT",
@@ -958,7 +958,7 @@
         },
         {
           "count": 6,
-          "description": "5초마다 잃은 체력 12% 회복, 전투 15초 후 방어력/마저 +40",
+          "description": "5초마다 잃은 체력 12% 회복, 중반을 넘기는 15초부터 방어력/마저 +40",
           "effects": [
             {
               "kind": "HEAL_MISSING_PCT",
@@ -991,7 +991,7 @@
         },
         {
           "count": 9,
-          "description": "5초마다 잃은 체력 20% 회복, 전투 15초 후 방어력/마저 +65",
+          "description": "5초마다 잃은 체력 20% 회복, 중반을 넘기는 15초부터 방어력/마저 +65",
           "effects": [
             {
               "kind": "HEAL_MISSING_PCT",
@@ -1241,7 +1241,7 @@
       "tiers": [
         {
           "count": 2,
-          "description": "전투 시작 시 최대 체력 +8%. 명가 유닛끼리 인접 시 방어력/마저 +10",
+          "description": "발주 시 최대 체력 +8%. 명가 유닛끼리 인접 시 방어력/마저 +10",
           "effects": [
             {
               "kind": "STAT_MUL",
@@ -1273,7 +1273,7 @@
         },
         {
           "count": 4,
-          "description": "전투 시작 시 최대 체력 +16%. 명가 유닛끼리 인접 시 방어력/마저 +20",
+          "description": "발주 시 최대 체력 +16%. 명가 유닛끼리 인접 시 방어력/마저 +20",
           "effects": [
             {
               "kind": "STAT_MUL",
@@ -1374,7 +1374,7 @@
       "tiers": [
         {
           "count": 2,
-          "description": "전투 시작 8초간 피해 증폭 +12%",
+          "description": "발주 8초간 피해 증폭 +12%",
           "effects": [
             {
               "kind": "DAMAGE_AMP",
@@ -1388,7 +1388,7 @@
         },
         {
           "count": 3,
-          "description": "전투 시작 시 피해 증폭 +25%가 전투 종료까지 지속",
+          "description": "발주와 동시에 피해 증폭 +25%가 결승선까지 지속",
           "effects": [
             {
               "kind": "DAMAGE_AMP",
@@ -1593,7 +1593,7 @@
         },
         {
           "count": 4,
-          "description": "방어력/마저 +18. 전투 시작 6초간 받는 피해 10% 감소",
+          "description": "방어력/마저 +18. 발주 6초간 받는 피해 10% 감소",
           "effects": [
             {
               "kind": "STAT_ADD",

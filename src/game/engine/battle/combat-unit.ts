@@ -1,6 +1,6 @@
 /** A unit as it exists inside one battle, plus all stat/effect bookkeeping. */
 import {
-  ATTACK_SPEED_CAP, DEFAULT_ABILITY_POWER, STAR_STAT_MULT, starSkillMultiplier,
+  ATTACK_SPEED_CAP, DEFAULT_ABILITY_POWER, starSkillMultiplier, starStatMultiplier,
 } from '../constants';
 import { getItem } from '../items/item-defs';
 import { getUnitDef } from '../roster';
@@ -111,7 +111,7 @@ export const emptyAura = (): AuraTotals => ({
 /** Builds the pre-combat stat block from unit def + star + items. */
 export function buildBaseStats(unitDefId: string, star: 1 | 2 | 3, items: string[]): BattleStats {
   const def = getUnitDef(unitDefId);
-  const starMul = STAR_STAT_MULT[star];
+  const starMul = starStatMultiplier(star, def.cost);
 
   const stats: BattleStats = {
     hp: def.hp * starMul,

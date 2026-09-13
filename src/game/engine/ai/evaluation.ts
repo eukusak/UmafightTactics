@@ -2,6 +2,7 @@ import { effectUtility, unitAugmentValue, kitProfile } from './knowledge';
 /** Public board evaluation shared by formation, shopping and item planning. */
 import { getUnitDef, getUnitTraits } from '../roster';
 import { getItem } from '../items/item-defs';
+import { costStatWeight, starStatMultiplier } from '../constants';
 import { activeTierIndex, getTrait } from '../traits/trait-defs';
 import { findRacePlanNode } from '../race-plan/defs';
 import type { ItemDef } from '../types';
@@ -53,7 +54,15 @@ export function lineupTraits(player: PlayerState, units: UnitInstance[]): Map<Tr
 }
 export function unitPower(unit: UnitInstance): number {
   const d = getUnitDef(unit.unitDefId);
-  return (1.6 + d.uftRating + d.cost * .38) * [0, 1, 1.8, 3.24][unit.star] + unit.items.reduce((n, id) => n + (getItem(id).isComponent ? .15 : .9), 0);
+  // Both factors read the real curves rather than copies of them. A linear
+  // `cost * .38` term said a one-star four-cost was worth less than a two-star
+  // two-cost when their stat lines are now equal, and a hardcoded star table
+  // said a second star on a four-cost was worth 1.8x when it is worth 1.28x.
+  // An AI wrong on either chases the wrong upgrades all game.
+  // The 0.38 stays a constant rather than scaling with cost: replacing the old
+  // `cost * .38` outright also shaved 1-costs, which was never the intent.
+  return (1.6 + d.uftRating + .38) * costStatWeight(d.cost) * starStatMultiplier(unit.star, d.cost)
+    + unit.items.reduce((n, id) => n + (getItem(id).isComponent ? .15 : .9), 0);
 }
 export function lineupScore(player: PlayerState, units: UnitInstance[]): number {
   let score = units.reduce((n, u) => n + unitPower(u), 0);
