@@ -98,7 +98,17 @@ if (mode === 'augment-descriptions') {
 p.shop = rollShop(p, state.pool, new Rng(9001));
 if (mode === 'shop-upgrades') p.shop=[units[1],units[2],units[1],units[2],units[0]].map(d=>({unitDefId:d.id,sold:false}));
 if (mode === 'augment') { state.stage = 2; state.round = 1; state.augmentOffers = createAugmentOffers(state, new Rng(91)); state.phase = 'AUGMENT_SELECT'; }
-if (mode.startsWith('race-')) {
+if(mode==='race-combat'){
+  state.stage=4;state.round=3;
+  for(const [i,player] of state.players.entries()){
+    player.aiProfile=null;player.level=8;
+    const def=getSeasonUnits(state.seasonId).filter(d=>d.cost===2 && ['TANK','BRUISER'].includes(d.role))[i%2];
+    if(!take(state.pool,def.id,3))throw new Error('race combat fixture pool');
+    const u=newInstance(state,def.id,2);u.position={q:3,r:0};u.items=['iron_stable'];player.board.push(u);
+    Object.assign(player.racePlan!,{planId:'RP_SLOW_STORE',evolutionId:'EV_STAMINA_BANK',finishingMoveId:'FM_STAYER',entryUnitDefId:u.unitDefId,entryUnitInstanceId:u.instanceId,offerPhase:'COMPLETE'});
+  }
+}
+if (mode.startsWith('race-') && mode!=='race-combat') {
   state.stage = mode === 'race-plan' ? 2 : mode === 'race-evolution' ? 3 : 4;
   state.round=5;p.level=6;
   p.bench[0].position={q:3,r:0};p.board.push(p.bench.shift()!);

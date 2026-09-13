@@ -16,6 +16,8 @@ test('carousel requires walking, supports arrows and floor clicks, then shows an
   await page.getByRole('button', { name: '시작하기' }).click();
   await page.getByRole('button', { name: '새 게임' }).click();
   await page.getByLabel('무작위 시드 사용').uncheck();
+  // Freeze the simulation while checking the initial board, before AI can claim units.
+  await page.clock.install();await page.clock.pauseAt(new Date());
   await page.getByRole('button', { name: '게임 시작' }).click();
   const arena = page.locator('.carousel-arena'), me = page.locator('.carousel-trainer.mine');
   await expect(me.locator('.animated-unit')).toBeVisible();
@@ -34,6 +36,7 @@ test('carousel requires walking, supports arrows and floor clicks, then shows an
   // Cancel the chase before release so the following checks isolate direct movement.
   const openingArena = (await arena.boundingBox())!;
   await page.mouse.click(openingArena.x + openingArena.width * .94, openingArena.y + openingArena.height * .94);
+  await page.clock.resume();
   const initial = await page.locator('.carousel-option').first().getAttribute('style');
   await expect.poll(() => page.locator('.carousel-option').first().getAttribute('style')).not.toBe(initial);
   await expect(me).not.toHaveClass(/waiting/, { timeout: 5000 });

@@ -51,7 +51,7 @@ export function RacePlanCard({
       <div className="race-band" style={{ color: band.color }}>
         {Icon ? <Icon size={18} /> : null}
         <span>{band.label}</span>
-        <span style={{ marginLeft: 'auto', color: 'var(--race-line)' }}>작전 {slot}</span>
+        <span style={{ marginLeft: 'auto', color: 'var(--race-green-700)' }}>작전 {slot}</span>
       </div>
       <div className="race-body">
         <h3>{node.nameKo}</h3>

@@ -1,5 +1,5 @@
 /**
- * GⅠ 출주 등록 (4-5, or 4-3 when the player is on 20 hp or less).
+ * GⅠ 출주 등록 (4-5, or 4-3 when the player is on 30 hp or less).
  *
  * Laid out as a race card rather than a champion picker: the grid is the field,
  * the right column is the form line for the horse under the cursor. The marks

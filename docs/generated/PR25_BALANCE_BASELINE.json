@@ -1,0 +1,1061 @@
+[
+  {
+    "season": "s1",
+    "matches": 100,
+    "seed": 20260907,
+    "raceReached": 8258,
+    "racePvP": 8285,
+    "entrySeen": 717,
+    "entryTotal": 800,
+    "meanEndStage": 5.67,
+    "battles": 12893,
+    "draws": 505,
+    "poolViolations": 0,
+    "profileAvg": [
+      [
+        "AP_FOCUS",
+        4.094017094017094
+      ],
+      [
+        "REROLL",
+        4.243243243243243
+      ],
+      [
+        "TRAIT_FOCUS",
+        4.322033898305085
+      ],
+      [
+        "BALANCED",
+        4.464285714285714
+      ],
+      [
+        "ECONOMY",
+        4.495412844036697
+      ],
+      [
+        "FAST_LEVEL",
+        4.896551724137931
+      ],
+      [
+        "AD_FOCUS",
+        4.9743589743589745
+      ]
+    ],
+    "traitRows": [
+      {
+        "id": "stayer",
+        "name": "스테이어",
+        "top4": 0.155,
+        "top1": 0.19
+      },
+      {
+        "id": "nige",
+        "name": "도주",
+        "top4": 0.175,
+        "top1": 0.16
+      },
+      {
+        "id": "senko",
+        "name": "선행",
+        "top4": 0.09,
+        "top1": 0.14
+      },
+      {
+        "id": "s1_team",
+        "name": "원팀",
+        "top4": 0.12,
+        "top1": 0.13
+      },
+      {
+        "id": "s1_spark",
+        "name": "샛별",
+        "top4": 0.0875,
+        "top1": 0.09
+      },
+      {
+        "id": "sashi",
+        "name": "선입",
+        "top4": 0.0725,
+        "top1": 0.07
+      },
+      {
+        "id": "s1_banner",
+        "name": "개막 기수",
+        "top4": 0.0625,
+        "top1": 0.06
+      },
+      {
+        "id": "dirt_champion",
+        "name": "더트 챔피언",
+        "top4": 0.0975,
+        "top1": 0.05
+      },
+      {
+        "id": "middle",
+        "name": "중거리",
+        "top4": 0.05,
+        "top1": 0.04
+      },
+      {
+        "id": "s1_pace",
+        "name": "페이스메이커",
+        "top4": 0.0325,
+        "top1": 0.03
+      },
+      {
+        "id": "famous_house",
+        "name": "명가",
+        "top4": 0.0075,
+        "top1": 0.02
+      },
+      {
+        "id": "international",
+        "name": "국제파",
+        "top4": 0.0125,
+        "top1": 0.01
+      },
+      {
+        "id": "classic_legend",
+        "name": "클래식 레전드",
+        "top4": 0.0075,
+        "top1": 0.01
+      },
+      {
+        "id": "oikomi",
+        "name": "추입",
+        "top4": 0.025,
+        "top1": 0
+      },
+      {
+        "id": "sprinter",
+        "name": "스프린터",
+        "top4": 0,
+        "top1": 0
+      },
+      {
+        "id": "miler",
+        "name": "마일러",
+        "top4": 0.0025,
+        "top1": 0
+      },
+      {
+        "id": "all_rounder",
+        "name": "올라운더",
+        "top4": 0,
+        "top1": 0
+      },
+      {
+        "id": "golden_generation",
+        "name": "황금세대",
+        "top4": 0,
+        "top1": 0
+      },
+      {
+        "id": "unbeaten",
+        "name": "무패 전설",
+        "top4": 0,
+        "top1": 0
+      },
+      {
+        "id": "comeback",
+        "name": "역전극",
+        "top4": 0.0025,
+        "top1": 0
+      },
+      {
+        "id": "triple_crown",
+        "name": "삼관",
+        "top4": 0,
+        "top1": 0
+      },
+      {
+        "id": "era_star",
+        "name": "시대의 스타",
+        "top4": 0,
+        "top1": 0
+      },
+      {
+        "id": "heisei_dynasty",
+        "name": "헤이세이 왕조",
+        "top4": 0,
+        "top1": 0
+      },
+      {
+        "id": "reiwa_elite",
+        "name": "레이와 엘리트",
+        "top4": 0,
+        "top1": 0
+      },
+      {
+        "id": "queen",
+        "name": "여왕",
+        "top4": 0,
+        "top1": 0
+      },
+      {
+        "id": "emperor",
+        "name": "황제",
+        "top4": 0,
+        "top1": 0
+      },
+      {
+        "id": "record_breaker",
+        "name": "레코드 브레이커",
+        "top4": 0,
+        "top1": 0
+      },
+      {
+        "id": "iron_horse",
+        "name": "철마",
+        "top4": 0,
+        "top1": 0
+      }
+    ]
+  },
+  {
+    "season": "s2",
+    "matches": 100,
+    "seed": 20260907,
+    "raceReached": 8306,
+    "racePvP": 8331,
+    "entrySeen": 710,
+    "entryTotal": 800,
+    "meanEndStage": 5.8,
+    "battles": 12974,
+    "draws": 391,
+    "poolViolations": 0,
+    "profileAvg": [
+      [
+        "TRAIT_FOCUS",
+        3.906779661016949
+      ],
+      [
+        "ECONOMY",
+        4.055045871559633
+      ],
+      [
+        "BALANCED",
+        4.383928571428571
+      ],
+      [
+        "REROLL",
+        4.594594594594595
+      ],
+      [
+        "FAST_LEVEL",
+        4.646551724137931
+      ],
+      [
+        "AD_FOCUS",
+        4.888888888888889
+      ],
+      [
+        "AP_FOCUS",
+        5
+      ]
+    ],
+    "traitRows": [
+      {
+        "id": "senko",
+        "name": "선행",
+        "top4": 0.23,
+        "top1": 0.19
+      },
+      {
+        "id": "dirt_champion",
+        "name": "더트 챔피언",
+        "top4": 0.195,
+        "top1": 0.17
+      },
+      {
+        "id": "s2_rhythm",
+        "name": "리듬 메이커",
+        "top4": 0.1,
+        "top1": 0.15
+      },
+      {
+        "id": "middle",
+        "name": "중거리",
+        "top4": 0.115,
+        "top1": 0.15
+      },
+      {
+        "id": "s2_harmony",
+        "name": "하모니",
+        "top4": 0.0625,
+        "top1": 0.1
+      },
+      {
+        "id": "stayer",
+        "name": "스테이어",
+        "top4": 0.0575,
+        "top1": 0.05
+      },
+      {
+        "id": "famous_house",
+        "name": "명가",
+        "top4": 0.0375,
+        "top1": 0.04
+      },
+      {
+        "id": "s2_aria",
+        "name": "별빛 아리아",
+        "top4": 0.0375,
+        "top1": 0.03
+      },
+      {
+        "id": "nige",
+        "name": "도주",
+        "top4": 0.0675,
+        "top1": 0.03
+      },
+      {
+        "id": "sashi",
+        "name": "선입",
+        "top4": 0.0275,
+        "top1": 0.03
+      },
+      {
+        "id": "heisei_dynasty",
+        "name": "헤이세이 왕조",
+        "top4": 0.0325,
+        "top1": 0.03
+      },
+      {
+        "id": "classic_legend",
+        "name": "클래식 레전드",
+        "top4": 0.0075,
+        "top1": 0.02
+      },
+      {
+        "id": "s2_encore",
+        "name": "앙코르",
+        "top4": 0.01,
+        "top1": 0.01
+      },
+      {
+        "id": "oikomi",
+        "name": "추입",
+        "top4": 0.0125,
+        "top1": 0
+      },
+      {
+        "id": "sprinter",
+        "name": "스프린터",
+        "top4": 0,
+        "top1": 0
+      },
+      {
+        "id": "miler",
+        "name": "마일러",
+        "top4": 0.0075,
+        "top1": 0
+      },
+      {
+        "id": "all_rounder",
+        "name": "올라운더",
+        "top4": 0,
+        "top1": 0
+      },
+      {
+        "id": "golden_generation",
+        "name": "황금세대",
+        "top4": 0,
+        "top1": 0
+      },
+      {
+        "id": "international",
+        "name": "국제파",
+        "top4": 0,
+        "top1": 0
+      },
+      {
+        "id": "unbeaten",
+        "name": "무패 전설",
+        "top4": 0,
+        "top1": 0
+      },
+      {
+        "id": "comeback",
+        "name": "역전극",
+        "top4": 0,
+        "top1": 0
+      },
+      {
+        "id": "triple_crown",
+        "name": "삼관",
+        "top4": 0,
+        "top1": 0
+      },
+      {
+        "id": "era_star",
+        "name": "시대의 스타",
+        "top4": 0,
+        "top1": 0
+      },
+      {
+        "id": "reiwa_elite",
+        "name": "레이와 엘리트",
+        "top4": 0,
+        "top1": 0
+      },
+      {
+        "id": "queen",
+        "name": "여왕",
+        "top4": 0,
+        "top1": 0
+      },
+      {
+        "id": "emperor",
+        "name": "황제",
+        "top4": 0,
+        "top1": 0
+      },
+      {
+        "id": "record_breaker",
+        "name": "레코드 브레이커",
+        "top4": 0,
+        "top1": 0
+      },
+      {
+        "id": "iron_horse",
+        "name": "철마",
+        "top4": 0,
+        "top1": 0
+      }
+    ]
+  },
+  {
+    "season": "s3",
+    "matches": 100,
+    "seed": 20260907,
+    "raceReached": 8230,
+    "racePvP": 8246,
+    "entrySeen": 699,
+    "entryTotal": 800,
+    "meanEndStage": 5.78,
+    "battles": 12863,
+    "draws": 188,
+    "poolViolations": 0,
+    "profileAvg": [
+      [
+        "ECONOMY",
+        4
+      ],
+      [
+        "FAST_LEVEL",
+        4.25
+      ],
+      [
+        "BALANCED",
+        4.3125
+      ],
+      [
+        "REROLL",
+        4.387387387387387
+      ],
+      [
+        "TRAIT_FOCUS",
+        4.694915254237288
+      ],
+      [
+        "AP_FOCUS",
+        4.777777777777778
+      ],
+      [
+        "AD_FOCUS",
+        5.0256410256410255
+      ]
+    ],
+    "traitRows": [
+      {
+        "id": "senko",
+        "name": "선행",
+        "top4": 0.1775,
+        "top1": 0.2
+      },
+      {
+        "id": "nige",
+        "name": "도주",
+        "top4": 0.16,
+        "top1": 0.15
+      },
+      {
+        "id": "dirt_champion",
+        "name": "더트 챔피언",
+        "top4": 0.19,
+        "top1": 0.14
+      },
+      {
+        "id": "s3_fang",
+        "name": "야생의 송곳니",
+        "top4": 0.0575,
+        "top1": 0.11
+      },
+      {
+        "id": "s3_spring",
+        "name": "오아시스",
+        "top4": 0.08,
+        "top1": 0.09
+      },
+      {
+        "id": "s3_stone",
+        "name": "바위 수호자",
+        "top4": 0.0675,
+        "top1": 0.09
+      },
+      {
+        "id": "middle",
+        "name": "중거리",
+        "top4": 0.09,
+        "top1": 0.08
+      },
+      {
+        "id": "s3_trail",
+        "name": "개척단",
+        "top4": 0.0525,
+        "top1": 0.04
+      },
+      {
+        "id": "stayer",
+        "name": "스테이어",
+        "top4": 0.035,
+        "top1": 0.03
+      },
+      {
+        "id": "heisei_dynasty",
+        "name": "헤이세이 왕조",
+        "top4": 0.0425,
+        "top1": 0.03
+      },
+      {
+        "id": "famous_house",
+        "name": "명가",
+        "top4": 0.0075,
+        "top1": 0.02
+      },
+      {
+        "id": "sashi",
+        "name": "선입",
+        "top4": 0.035,
+        "top1": 0.01
+      },
+      {
+        "id": "oikomi",
+        "name": "추입",
+        "top4": 0.0025,
+        "top1": 0.01
+      },
+      {
+        "id": "sprinter",
+        "name": "스프린터",
+        "top4": 0,
+        "top1": 0
+      },
+      {
+        "id": "miler",
+        "name": "마일러",
+        "top4": 0.0025,
+        "top1": 0
+      },
+      {
+        "id": "all_rounder",
+        "name": "올라운더",
+        "top4": 0,
+        "top1": 0
+      },
+      {
+        "id": "golden_generation",
+        "name": "황금세대",
+        "top4": 0,
+        "top1": 0
+      },
+      {
+        "id": "international",
+        "name": "국제파",
+        "top4": 0,
+        "top1": 0
+      },
+      {
+        "id": "unbeaten",
+        "name": "무패 전설",
+        "top4": 0,
+        "top1": 0
+      },
+      {
+        "id": "comeback",
+        "name": "역전극",
+        "top4": 0,
+        "top1": 0
+      },
+      {
+        "id": "triple_crown",
+        "name": "삼관",
+        "top4": 0,
+        "top1": 0
+      },
+      {
+        "id": "era_star",
+        "name": "시대의 스타",
+        "top4": 0,
+        "top1": 0
+      },
+      {
+        "id": "classic_legend",
+        "name": "클래식 레전드",
+        "top4": 0,
+        "top1": 0
+      },
+      {
+        "id": "reiwa_elite",
+        "name": "레이와 엘리트",
+        "top4": 0,
+        "top1": 0
+      },
+      {
+        "id": "emperor",
+        "name": "황제",
+        "top4": 0,
+        "top1": 0
+      },
+      {
+        "id": "record_breaker",
+        "name": "레코드 브레이커",
+        "top4": 0,
+        "top1": 0
+      },
+      {
+        "id": "iron_horse",
+        "name": "철마",
+        "top4": 0,
+        "top1": 0
+      }
+    ]
+  },
+  {
+    "season": "s4",
+    "matches": 100,
+    "seed": 20260907,
+    "raceReached": 8314,
+    "racePvP": 8345,
+    "entrySeen": 718,
+    "entryTotal": 800,
+    "meanEndStage": 5.68,
+    "battles": 12985,
+    "draws": 90,
+    "poolViolations": 0,
+    "profileAvg": [
+      [
+        "ECONOMY",
+        3.9724770642201834
+      ],
+      [
+        "FAST_LEVEL",
+        4.163793103448276
+      ],
+      [
+        "AP_FOCUS",
+        4.230769230769231
+      ],
+      [
+        "BALANCED",
+        4.669642857142857
+      ],
+      [
+        "TRAIT_FOCUS",
+        4.686440677966102
+      ],
+      [
+        "REROLL",
+        4.828828828828829
+      ],
+      [
+        "AD_FOCUS",
+        4.931623931623932
+      ]
+    ],
+    "traitRows": [
+      {
+        "id": "senko",
+        "name": "선행",
+        "top4": 0.26,
+        "top1": 0.36
+      },
+      {
+        "id": "middle",
+        "name": "중거리",
+        "top4": 0.2125,
+        "top1": 0.15
+      },
+      {
+        "id": "dirt_champion",
+        "name": "더트 챔피언",
+        "top4": 0.0975,
+        "top1": 0.13
+      },
+      {
+        "id": "nige",
+        "name": "도주",
+        "top4": 0.1,
+        "top1": 0.1
+      },
+      {
+        "id": "s4_chrome",
+        "name": "크롬 에이스",
+        "top4": 0.0925,
+        "top1": 0.06
+      },
+      {
+        "id": "heisei_dynasty",
+        "name": "헤이세이 왕조",
+        "top4": 0.0475,
+        "top1": 0.05
+      },
+      {
+        "id": "s4_pulse",
+        "name": "네온 펄스",
+        "top4": 0.0575,
+        "top1": 0.03
+      },
+      {
+        "id": "sashi",
+        "name": "선입",
+        "top4": 0.04,
+        "top1": 0.03
+      },
+      {
+        "id": "stayer",
+        "name": "스테이어",
+        "top4": 0.02,
+        "top1": 0.03
+      },
+      {
+        "id": "s4_chase",
+        "name": "추격자",
+        "top4": 0.0175,
+        "top1": 0.02
+      },
+      {
+        "id": "international",
+        "name": "국제파",
+        "top4": 0.0125,
+        "top1": 0.02
+      },
+      {
+        "id": "s4_nitro",
+        "name": "니트로",
+        "top4": 0.0275,
+        "top1": 0.01
+      },
+      {
+        "id": "oikomi",
+        "name": "추입",
+        "top4": 0.0075,
+        "top1": 0.01
+      },
+      {
+        "id": "sprinter",
+        "name": "스프린터",
+        "top4": 0,
+        "top1": 0
+      },
+      {
+        "id": "miler",
+        "name": "마일러",
+        "top4": 0,
+        "top1": 0
+      },
+      {
+        "id": "all_rounder",
+        "name": "올라운더",
+        "top4": 0,
+        "top1": 0
+      },
+      {
+        "id": "golden_generation",
+        "name": "황금세대",
+        "top4": 0,
+        "top1": 0
+      },
+      {
+        "id": "famous_house",
+        "name": "명가",
+        "top4": 0.005,
+        "top1": 0
+      },
+      {
+        "id": "unbeaten",
+        "name": "무패 전설",
+        "top4": 0,
+        "top1": 0
+      },
+      {
+        "id": "comeback",
+        "name": "역전극",
+        "top4": 0,
+        "top1": 0
+      },
+      {
+        "id": "triple_crown",
+        "name": "삼관",
+        "top4": 0,
+        "top1": 0
+      },
+      {
+        "id": "era_star",
+        "name": "시대의 스타",
+        "top4": 0,
+        "top1": 0
+      },
+      {
+        "id": "classic_legend",
+        "name": "클래식 레전드",
+        "top4": 0.0025,
+        "top1": 0
+      },
+      {
+        "id": "reiwa_elite",
+        "name": "레이와 엘리트",
+        "top4": 0,
+        "top1": 0
+      },
+      {
+        "id": "queen",
+        "name": "여왕",
+        "top4": 0,
+        "top1": 0
+      },
+      {
+        "id": "emperor",
+        "name": "황제",
+        "top4": 0,
+        "top1": 0
+      },
+      {
+        "id": "record_breaker",
+        "name": "레코드 브레이커",
+        "top4": 0,
+        "top1": 0
+      },
+      {
+        "id": "iron_horse",
+        "name": "철마",
+        "top4": 0,
+        "top1": 0
+      }
+    ]
+  },
+  {
+    "season": "s5",
+    "matches": 100,
+    "seed": 20260907,
+    "raceReached": 8251,
+    "racePvP": 8273,
+    "entrySeen": 712,
+    "entryTotal": 800,
+    "meanEndStage": 5.68,
+    "battles": 12886,
+    "draws": 121,
+    "poolViolations": 0,
+    "profileAvg": [
+      [
+        "ECONOMY",
+        4.073394495412844
+      ],
+      [
+        "BALANCED",
+        4.25
+      ],
+      [
+        "AP_FOCUS",
+        4.487179487179487
+      ],
+      [
+        "FAST_LEVEL",
+        4.525862068965517
+      ],
+      [
+        "TRAIT_FOCUS",
+        4.6440677966101696
+      ],
+      [
+        "REROLL",
+        4.684684684684685
+      ],
+      [
+        "AD_FOCUS",
+        4.803418803418803
+      ]
+    ],
+    "traitRows": [
+      {
+        "id": "nige",
+        "name": "도주",
+        "top4": 0.19,
+        "top1": 0.19
+      },
+      {
+        "id": "senko",
+        "name": "선행",
+        "top4": 0.1625,
+        "top1": 0.15
+      },
+      {
+        "id": "middle",
+        "name": "중거리",
+        "top4": 0.1,
+        "top1": 0.13
+      },
+      {
+        "id": "dirt_champion",
+        "name": "더트 챔피언",
+        "top4": 0.1475,
+        "top1": 0.11
+      },
+      {
+        "id": "s5_vow",
+        "name": "불굴의 맹세",
+        "top4": 0.0625,
+        "top1": 0.09
+      },
+      {
+        "id": "heisei_dynasty",
+        "name": "헤이세이 왕조",
+        "top4": 0.0725,
+        "top1": 0.08
+      },
+      {
+        "id": "s5_finale",
+        "name": "피날레",
+        "top4": 0.0375,
+        "top1": 0.07
+      },
+      {
+        "id": "sashi",
+        "name": "선입",
+        "top4": 0.0275,
+        "top1": 0.05
+      },
+      {
+        "id": "s5_crown",
+        "name": "왕관의 계승자",
+        "top4": 0.035,
+        "top1": 0.04
+      },
+      {
+        "id": "stayer",
+        "name": "스테이어",
+        "top4": 0.095,
+        "top1": 0.04
+      },
+      {
+        "id": "s5_legacy",
+        "name": "영광의 유산",
+        "top4": 0.0425,
+        "top1": 0.03
+      },
+      {
+        "id": "oikomi",
+        "name": "추입",
+        "top4": 0.0125,
+        "top1": 0.01
+      },
+      {
+        "id": "famous_house",
+        "name": "명가",
+        "top4": 0.0075,
+        "top1": 0.01
+      },
+      {
+        "id": "sprinter",
+        "name": "스프린터",
+        "top4": 0,
+        "top1": 0
+      },
+      {
+        "id": "miler",
+        "name": "마일러",
+        "top4": 0.0025,
+        "top1": 0
+      },
+      {
+        "id": "all_rounder",
+        "name": "올라운더",
+        "top4": 0,
+        "top1": 0
+      },
+      {
+        "id": "golden_generation",
+        "name": "황금세대",
+        "top4": 0,
+        "top1": 0
+      },
+      {
+        "id": "international",
+        "name": "국제파",
+        "top4": 0.0025,
+        "top1": 0
+      },
+      {
+        "id": "unbeaten",
+        "name": "무패 전설",
+        "top4": 0,
+        "top1": 0
+      },
+      {
+        "id": "comeback",
+        "name": "역전극",
+        "top4": 0,
+        "top1": 0
+      },
+      {
+        "id": "triple_crown",
+        "name": "삼관",
+        "top4": 0,
+        "top1": 0
+      },
+      {
+        "id": "era_star",
+        "name": "시대의 스타",
+        "top4": 0,
+        "top1": 0
+      },
+      {
+        "id": "classic_legend",
+        "name": "클래식 레전드",
+        "top4": 0.0025,
+        "top1": 0
+      },
+      {
+        "id": "reiwa_elite",
+        "name": "레이와 엘리트",
+        "top4": 0,
+        "top1": 0
+      },
+      {
+        "id": "queen",
+        "name": "여왕",
+        "top4": 0,
+        "top1": 0
+      },
+      {
+        "id": "emperor",
+        "name": "황제",
+        "top4": 0,
+        "top1": 0
+      },
+      {
+        "id": "record_breaker",
+        "name": "레코드 브레이커",
+        "top4": 0,
+        "top1": 0
+      },
+      {
+        "id": "iron_horse",
+        "name": "철마",
+        "top4": 0,
+        "top1": 0
+      }
+    ]
+  }
+]

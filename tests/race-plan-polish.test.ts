@@ -1,9 +1,12 @@
 import { describe, expect, it } from 'vitest';
 import { BattleEngine, type BattleSideInput } from '../src/game/engine/battle/engine';
 import { RaceResourceTracker } from '../src/game/engine/race-plan/runtime';
+import { newInstance } from '../src/game/engine/shop';
+import { take } from '../src/game/engine/pool';
 import { Rng } from '../src/game/engine/rng';
 import { SOUND_DESIGNS, soundPeakGain } from '../src/game/ui/audio';
 import { createMatch, RoundDirector } from '../src/game/engine/rounds/director';
+import { racePlanOpensFor } from '../src/game/engine/race-plan/director-ops';
 import { describeEffects } from '../src/game/engine/race-plan/presentation';
 import { findRacePlanNode } from '../src/game/engine/race-plan/defs';
 
@@ -44,6 +47,30 @@ describe('race plan delivery regressions',()=>{
     const reports=state.players.filter(p=>p.racePlan!.recentCombat.sampleCount>0);
     expect(reports).toHaveLength(8);
     expect([...director.playerFrames.values()].every(f=>f.length===0)).toBe(true);
+  });
+  it('does not change PvP results or rewards when a seat is marked human',()=>{
+    const setup=createMatch({seed:271,allAi:true});const initial=new RoundDirector(setup);
+    setup.stage=4;setup.round=2;initial.beginPrep();
+    for(const p of setup.players){
+      expect(take(setup.pool,'super_creek',1)).toBe(true);
+      const u=newInstance(setup,'super_creek',1);u.position={q:3,r:0};u.items=['iron_stable'];p.board.push(u);
+      Object.assign(p.racePlan!,{planId:'RP_SLOW_STORE',evolutionId:'EV_STAMINA_BANK',finishingMoveId:'FM_STAYER',entryUnitDefId:u.unitDefId,entryUnitInstanceId:u.instanceId,offerPhase:'COMPLETE'});
+    }
+    const humanState=structuredClone(setup),aiState=structuredClone(setup);
+    humanState.players[0].isHuman=true;aiState.players[0].isHuman=false;
+    const viewed=new RoundDirector(humanState),headless=new RoundDirector(aiState);
+    viewed.resolveRound();headless.resolveRound();
+    expect(humanState.lastResolution).toEqual(aiState.lastResolution);
+    const economic=(s:typeof setup)=>s.players.map(p=>({hp:p.hp,gold:p.gold,xp:p.xp,level:p.level,items:p.items,grants:p.pendingGrants,progress:p.augmentProgress}));
+    expect(economic(humanState)).toEqual(economic(aiState));
+    expect(viewed.lastHumanFrames?.length ?? 0).toBeGreaterThan(0);
+    expect(headless.lastHumanFrames?.length ?? 0).toBe(0);
+  });
+  it('opens early entry at 30 HP without overlapping the augment round',()=>{
+    const state=createMatch({seed:3});const p=state.players[0];p.racePlan!.planId='RP_SLOW_STORE';
+    state.stage=4;state.round=3;p.hp=30;expect(racePlanOpensFor(state,p)).toBe('ENTRY');
+    p.hp=31;expect(racePlanOpensFor(state,p)).toBeNull();
+    p.hp=10;state.round=2;expect(racePlanOpensFor(state,p)).toBeNull();
   });
   it('prints the actual +2 cast gain rather than saying every source grants +1',()=>{
     const text=describeEffects(findRacePlanNode('FM_SAVE_LEGS')!).join(' ');

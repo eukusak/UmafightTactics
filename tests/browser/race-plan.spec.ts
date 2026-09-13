@@ -1,5 +1,6 @@
 import { test,expect } from '@playwright/test';
 import { execFileSync } from 'node:child_process';
+import { preparedGame } from './fixtures';
 import type { Page } from '@playwright/test';
 async function open(page:Page,mode:string){
   const save=execFileSync(process.execPath,['--import','tsx','tests/support/browser-save.ts',mode],{encoding:'utf8'}).trim();
@@ -15,7 +16,7 @@ for(const mode of ['race-plan','race-evolution','race-entry','race-finishing']){
     const image=await dialog.locator('.race-header').evaluate(e=>getComputedStyle(e).backgroundImage);
     expect(image).toContain(mode==='race-entry'?'bg_g1_entry_board':'bg_paddock_panel');
     await dialog.evaluate(async e=>{
-      const urls=getComputedStyle(e.querySelector('.race-header')!).backgroundImage.match(/url\("?([^"\)]+)"?\)/g)??[];
+      const urls=getComputedStyle(e.querySelector('.race-header')!).backgroundImage.match(/url\("?([^")]+)"?\)/g)??[];
       for(const url of urls){const img=new Image();img.src=url.replace(/^url\("?|"?\)$/g,'');await img.decode();}
     });
     await page.screenshot({path:testInfo.outputPath(mode+'.png')});
@@ -57,4 +58,19 @@ test('local race deadline auto-selects instead of leaving a stuck modal',async({
   await open(page,'race-plan');await page.clock.install();
   await page.clock.fastForward(46_000);
   await expect(page.getByRole('dialog')).toHaveCount(0);
+});
+
+test('recorded race battle loads all frame sheets and presents progress without errors',async({page},testInfo)=>{
+  const errors:string[]=[];page.on('pageerror',e=>errors.push(e.message));
+  await preparedGame(page,'race-combat');
+  await page.getByRole('button',{name:/전투 시작 \(/}).click();
+  await expect(page.locator('.race-hud')).toBeVisible();
+  await expect(page.locator('.race-clock')).toContainText('%');
+  const hud=await page.locator('.race-hud').boundingBox(),opponent=await page.locator('.battle-matchup').boundingBox();
+  expect(hud!.y).toBeGreaterThanOrEqual(opponent!.y+opponent!.height);
+  const sizes=await page.evaluate(async()=>Promise.all(['vfx_race_gate','vfx_race_late_ring','vfx_race_last3f'].map(async key=>{const im=new Image();im.src='/assets/vfx/'+key+'.png';await im.decode();return [im.naturalWidth,im.naturalHeight];})));
+  expect(sizes).toEqual([[1920,192],[1920,192],[1920,192]]);
+  await page.waitForTimeout(3500);
+  await page.screenshot({path:testInfo.outputPath('race-combat.png')});
+  expect(errors).toEqual([]);
 });

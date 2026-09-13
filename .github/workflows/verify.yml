@@ -98,9 +98,9 @@ jobs:
           cache: "npm"
       - name: Install
         run: npm ci
-      # Keep all 200 matches while evaluating the more detailed AI per season.
+      # Spec §28: 500 matches across all five seasons.
       - name: Balance simulation
-        run: npm run simulate -- --season "${{ matrix.season }}" --matches 40
+        run: npm run simulate -- --season "${{ matrix.season }}" --matches 100
 
   browser:
     runs-on: ubuntu-latest

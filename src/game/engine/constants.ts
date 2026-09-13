@@ -193,7 +193,7 @@ export const RACE_PLAN_SECONDS = { PLAN: 45, ENTRY: 50, FINISHING: 35 } as const
  * power, just reachable.
  */
 export const RACE_ENTRY_EARLY_ROUND = { stage: 4, round: 3 } as const;
-export const RACE_ENTRY_EARLY_HP = 20;
+export const RACE_ENTRY_EARLY_HP = 30;
 /** Deferring the entry is free but not open-ended. */
 export const RACE_ENTRY_DEADLINE = { stage: 5, round: 2 } as const;
 /** One free 승부마 변경 per match, up to here. */

@@ -161,7 +161,7 @@ button.race-take:focus-visible, button.race-reroll:focus-visible,
 .mobile .race-entry-detail { border-left: none; border-top: 1px solid var(--race-line); padding: 14px 0 0; }
 .mobile .race-entry-actions { position: sticky; bottom: 0; padding: 12px 14px calc(12px + env(safe-area-inset-bottom)); background: var(--race-paper); }
 
-.race-hud-slot { position: absolute; top: 8px; left: 0; right: 0; z-index: 5; pointer-events: none; }
+.race-hud-slot { position: absolute; top: 60px; left: 0; right: 0; z-index: 5; pointer-events: none; }
 
 /* Generated art sits beneath readable surfaces; base colours survive load failures. */
 .race-panel { background-image: var(--race-paper-image); background-size: cover; background-position: center; }
@@ -185,5 +185,11 @@ button.race-take:focus-visible, button.race-reroll:focus-visible,
 .race-recap-log { padding-left:20px; max-height:55vh; overflow:auto; font-size:12px; line-height:1.7; }
 .race-recap-log li { margin-bottom:6px; word-break:keep-all; overflow-wrap:anywhere; }
 
-.race-selection-clock { position:absolute; top:8px; right:22px; display:flex; align-items:center; gap:10px; font-size:13px; color:var(--race-ivory); background:var(--race-green-900); padding:4px 10px; border-radius:8px; }
+.race-selection-clock { position:absolute; top:12px; right:128px; display:flex; align-items:center; gap:10px; font-size:13px; color:var(--race-ivory); background:var(--race-green-900); padding:4px 10px; border-radius:8px; }
 .race-selection-clock button { background:transparent; color:inherit; border:1px solid var(--race-brass); border-radius:4px; padding:3px 8px; }
+
+.mobile .race-overlay { padding-top:68px; }
+.mobile .race-panel { max-height:calc(100dvh - 84px); }
+.race-band > span { color:var(--race-green-700); }
+
+.race-hud { padding:8px 10px; border:1px solid #a98b4b66; border-radius:6px; background:#10271fe8; }
