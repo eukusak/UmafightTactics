@@ -11,6 +11,7 @@ import { AugmentOverlay, DraftOverlay, BattleResultOverlay } from '../Overlays';
 import { RacePlanOverlay } from '../race-plan/RacePlanOverlay';
 import { G1EntryOverlay, FinishingMoveOverlay } from '../race-plan/G1EntryOverlay';
 import { RaceProgressHud } from '../race-plan/RaceProgressHud';
+import { RacePlanPanel } from '../race-plan/RacePlanPanel';
 import { DetailPanel } from '../DetailPanel';
 import { useInteractionStore } from '../../store/interactionStore';
 import { handleBattleKey } from '../../game/ui/controls';
@@ -139,7 +140,7 @@ export function BattleScreen(): JSX.Element | null {
       </div></div>
 
       <div className="hud-right scroll">
-        <Leaderboard />{inspection ? <DetailPanel /> : <><div className="panel controls-help">
+        <Leaderboard />{inspection ? <DetailPanel /> : <><RacePlanPanel /><div className="panel controls-help">
           <strong>조작 안내</strong><p>기물·특성·아이템 클릭: 상세 정보</p>
           <p>기물을 상점으로 드래그: 판매</p><p>{settings.keybinds.sellHovered.toUpperCase()}: 가리킨 기물 판매 · {settings.keybinds.toggleBench.toUpperCase()}: 필드/대기석</p>
           <p>{settings.keybinds.battleInfo}: 전투 통계 · Esc: 선택 취소/닫기</p>

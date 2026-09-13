@@ -111,7 +111,7 @@ const selectionCache = new WeakMap<PlayerState, { key: string; units: UnitInstan
 
 /** Greedy team selection followed by swap search scores complete trait breakpoints. */
 export function chooseFieldedUnits(player: PlayerState): UnitInstance[] {
-  const key = `${player.augments.join(',')}:${JSON.stringify(player.augmentProgress)}:${player.seasonId}:${teamSizeLimit(player)}:${JSON.stringify(player.bonusTraits)}:` + [...player.board, ...player.bench].map(u => `${u.instanceId}/${u.unitDefId}/${u.star}/${u.items.join(',')}`).sort().join(';');
+  const key = `${player.augments.join(',')}:${JSON.stringify(player.augmentProgress)}:${player.seasonId}:${teamSizeLimit(player)}:${JSON.stringify(player.bonusTraits)}:${player.racePlan?.entryUnitDefId ?? ''}:` + [...player.board, ...player.bench].map(u => `${u.instanceId}/${u.unitDefId}/${u.star}/${u.items.join(',')}`).sort().join(';');
   const cached = selectionCache.get(player);
   if (cached?.key === key) return cached.units.slice();
   const all = [...player.board, ...player.bench].sort((a, b) => unitPower(b) - unitPower(a) || a.instanceId.localeCompare(b.instanceId));
@@ -133,8 +133,33 @@ export function chooseFieldedUnits(player: PlayerState): UnitInstance[] {
       if (value > score + .01) { selected = next; score = value; }
     }
   }
+  selected = withRaceEntry(player, all, selected);
   selectionCache.set(player, { key, units: selected });
   return selected.slice();
+}
+
+/**
+ * Forces the registered GⅠ entry onto the field.
+ *
+ * Race Plan effects only apply to a unit that actually races, so leaving the
+ * entry on the bench switches the player's whole plan off for the round. The
+ * lineup search does not know that — it only weighs raw power — so the entry is
+ * swapped in afterwards, over the weakest unit it picked.
+ */
+function withRaceEntry(
+  player: PlayerState, all: UnitInstance[], selected: UnitInstance[],
+): UnitInstance[] {
+  const wanted = player.racePlan?.entryUnitDefId;
+  if (!wanted || !selected.length) return selected;
+  if (selected.some((u) => u.unitDefId === wanted)) return selected;
+
+  const entry = all
+    .filter((u) => u.unitDefId === wanted)
+    .sort((a, b) => unitPower(b) - unitPower(a) || a.instanceId.localeCompare(b.instanceId))[0];
+  if (!entry) return selected;
+
+  const weakest = selected.reduce((worst, u) => (unitPower(u) < unitPower(worst) ? u : worst));
+  return selected.map((u) => (u === weakest ? entry : u));
 }
 function preferredRow(unit: UnitInstance): number {
   const def = getUnitDef(unit.unitDefId);

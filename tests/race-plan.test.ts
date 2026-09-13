@@ -8,7 +8,8 @@ import {
 import { RACING_PROFILES, G1_THEMES, readPct } from '../src/game/engine/race-plan/profiles';
 import { aptitudeFlavor } from '../src/game/engine/race-plan/score';
 import { createRacePlanOffer, rerollRacePlanSlot } from '../src/game/engine/race-plan/offers';
-import { entryCandidates, reconcileEntryUnit } from '../src/game/engine/race-plan/entry';
+import { entryCandidates, entryIsFielded, reconcileEntryUnit } from '../src/game/engine/race-plan/entry';
+import { itemFit } from '../src/game/engine/ai/evaluation';
 import { chooseRaceEntry, chooseRacePlanOption, transferRaceEntry } from '../src/game/engine/race-plan/director-ops';
 import { describeEffects } from '../src/game/engine/race-plan/presentation';
 import { createMatch, RoundDirector } from '../src/game/engine/rounds/director';
@@ -376,5 +377,62 @@ describe('match integration', () => {
     for (let i = 0; i < 6; i += 1) { director.resolveRound(); director.advance(); }
     expect(state.g1ThemeId).toBe(theme);
     expect(['FAST', 'STANDARD', 'HEAVY']).toContain(state.racePlanTrack);
+  });
+});
+
+describe('AI awareness', () => {
+  it('always fields its own GⅠ entry and never sells it', () => {
+    // Race Plan effects only apply to a unit that races, so an AI that leaves
+    // its entry on the bench has switched off the plan it just chose.
+    let registered = 0;
+    let unfielded = 0;
+    let detached = 0;
+    for (const seed of [17, 29, 43]) {
+      const state = createMatch({ seed: seed * 113, allAi: true, seasonId: 's1' });
+      const director = new RoundDirector(state);
+      director.beginPrep();
+      for (let i = 0; i < 40 && !director.isOver; i += 1) {
+        for (const player of state.players) {
+          if (player.eliminatedAtRound !== null || !player.racePlan?.entryUnitDefId) continue;
+          registered += 1;
+          if (!entryIsFielded(player)) unfielded += 1;
+          if (player.racePlan.entryDetached) detached += 1;
+        }
+        director.resolveRound();
+        director.advance();
+      }
+    }
+    expect(registered).toBeGreaterThan(100);
+    expect(unfielded).toBe(0);
+    expect(detached).toBe(0);
+  });
+
+  it('spreads its picks across the catalogue instead of converging on one plan', () => {
+    const plans = new Set<string>();
+    const moves = new Set<string>();
+    for (const seed of [5, 61, 97]) {
+      const state = createMatch({ seed: seed * 71, allAi: true, seasonId: 's1' });
+      const director = new RoundDirector(state);
+      director.runToCompletion(60);
+      for (const player of state.players) {
+        if (player.racePlan?.planId) plans.add(player.racePlan.planId);
+        if (player.racePlan?.finishingMoveId) moves.add(player.racePlan.finishingMoveId);
+      }
+    }
+    expect(plans.size).toBeGreaterThanOrEqual(6);
+    expect(moves.size).toBeGreaterThanOrEqual(6);
+  });
+
+  it('prefers to put gear on the horse carrying the race', () => {
+    const { state, player } = seeded(2026);
+    const carry = ALL_UNITS.find((u) => u.role === 'AD_CARRY' && u.cost === 3)!;
+    const other = ALL_UNITS.find((u) => u.role === 'AD_CARRY' && u.cost === 3 && u.id !== carry.id)!;
+    board(state, player, [carry.id, other.id]);
+    const [entryUnit, plainUnit] = player.board;
+    player.racePlan!.planId = 'RP_HIGH_PACE_PRESSURE';
+    player.racePlan!.entryUnitDefId = entryUnit.unitDefId;
+    player.racePlan!.entryUnitInstanceId = entryUnit.instanceId;
+    expect(itemFit(entryUnit, 'champion_trophy', player))
+      .toBeGreaterThan(itemFit(plainUnit, 'champion_trophy', player));
   });
 });

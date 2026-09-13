@@ -244,7 +244,11 @@ function sellSurplus(state: MatchState, player: PlayerState): void {
   if (player.bench.length < cap) return;
 
   const fielded = new Set(chooseFieldedUnits(player).map((u) => u.instanceId));
+  const entry = player.racePlan?.entryUnitDefId;
   const droppable = player.bench
+    // Selling your own GⅠ entry throws away the plan; a spare copy of it is
+    // still a star-up for the horse that is carrying the race.
+    .filter((u) => u.unitDefId !== entry)
     .filter((u) => !fielded.has(u.instanceId) && u.star === 1 && u.items.length === 0)
     // Never sell a copy that is part of a star-up chain.
     .filter((u) => (copiesOf(player, u.unitDefId, 1) === 1 && copiesOf(player, u.unitDefId, 2) === 0) || (player.aiPlan && plannedUnitValue(player, u.unitDefId) < 0 && u.unitDefId !== player.aiPlan.carryId))
