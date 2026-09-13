@@ -13,11 +13,11 @@
         10
       ],
       "emblemItemId": "emblem_nige",
-      "description": "앞으로 치고 나가 속도로 압박한다.",
+      "description": "빠른 기본 공격과 전투 초반의 선점으로 압박한다.",
       "tiers": [
         {
           "count": 2,
-          "description": "공속 +10%, 이동속도 +10%",
+          "description": "공속 +10%, 시작 6초간 피해 +4%",
           "effects": [
             {
               "kind": "STAT_MUL",
@@ -25,15 +25,18 @@
               "value": 0.1
             },
             {
-              "kind": "STAT_MUL",
-              "stat": "moveSpeedHexPerSec",
-              "value": 0.1
+              "kind": "DAMAGE_AMP",
+              "value": 0.04,
+              "duration": 6,
+              "trigger": {
+                "when": "COMBAT_START"
+              }
             }
           ]
         },
         {
           "count": 4,
-          "description": "공속 +22%, 이동속도 +20%",
+          "description": "공속 +22%, 시작 6초간 피해 +8%",
           "effects": [
             {
               "kind": "STAT_MUL",
@@ -41,15 +44,18 @@
               "value": 0.22
             },
             {
-              "kind": "STAT_MUL",
-              "stat": "moveSpeedHexPerSec",
-              "value": 0.2
+              "kind": "DAMAGE_AMP",
+              "value": 0.08,
+              "duration": 6,
+              "trigger": {
+                "when": "COMBAT_START"
+              }
             }
           ]
         },
         {
           "count": 6,
-          "description": "공속 +38%, 이동속도 +35%. 전투 시작 4초간 방해 효과 면역",
+          "description": "공속 +38%, 시작 6초간 피해 +12%. 전투 시작 4초간 방해 효과 면역",
           "effects": [
             {
               "kind": "STAT_MUL",
@@ -57,9 +63,12 @@
               "value": 0.38
             },
             {
-              "kind": "STAT_MUL",
-              "stat": "moveSpeedHexPerSec",
-              "value": 0.35
+              "kind": "DAMAGE_AMP",
+              "value": 0.12,
+              "duration": 6,
+              "trigger": {
+                "when": "COMBAT_START"
+              }
             },
             {
               "kind": "CC_IMMUNE",
@@ -72,7 +81,7 @@
         },
         {
           "count": 8,
-          "description": "공속 +55%, 이동속도 +45%, 시작 6초 방해 효과 면역",
+          "description": "공속 +55%, 시작 6초간 피해 +18%, 시작 6초 방해 효과 면역",
           "effects": [
             {
               "kind": "STAT_MUL",
@@ -80,9 +89,12 @@
               "value": 0.55
             },
             {
-              "kind": "STAT_MUL",
-              "stat": "moveSpeedHexPerSec",
-              "value": 0.45
+              "kind": "DAMAGE_AMP",
+              "value": 0.18,
+              "duration": 6,
+              "trigger": {
+                "when": "COMBAT_START"
+              }
             },
             {
               "kind": "CC_IMMUNE",
@@ -95,7 +107,7 @@
         },
         {
           "count": 10,
-          "description": "공속 +80%, 이동속도 +65%, 시작 8초 방해 효과 면역",
+          "description": "공속 +80%, 시작 6초간 피해 +25%, 시작 8초 방해 효과 면역",
           "effects": [
             {
               "kind": "STAT_MUL",
@@ -103,9 +115,12 @@
               "value": 0.8
             },
             {
-              "kind": "STAT_MUL",
-              "stat": "moveSpeedHexPerSec",
-              "value": 0.65
+              "kind": "DAMAGE_AMP",
+              "value": 0.25,
+              "duration": 6,
+              "trigger": {
+                "when": "COMBAT_START"
+              }
             },
             {
               "kind": "CC_IMMUNE",
@@ -1704,7 +1719,7 @@
       "tiers": [
         {
           "count": 2,
-          "description": "시작 마나 +10, 이동속도 +10%",
+          "description": "시작 마나 +10, 스킬 피해 +10%, 첫 시전 시 자신의 방해 효과 해제",
           "effects": [
             {
               "kind": "STAT_ADD",
@@ -1712,15 +1727,22 @@
               "value": 10
             },
             {
-              "kind": "STAT_MUL",
-              "stat": "moveSpeedHexPerSec",
+              "kind": "SKILL_DAMAGE_AMP",
               "value": 0.1
+            },
+            {
+              "kind": "CLEANSE",
+              "oncePerCombat": true,
+              "target": "SELF",
+              "trigger": {
+                "when": "ON_CAST"
+              }
             }
           ]
         },
         {
           "count": 4,
-          "description": "시작 마나 +20, 이동속도 +20%",
+          "description": "시작 마나 +20, 스킬 피해 +20%, 첫 시전 시 자신의 방해 효과 해제",
           "effects": [
             {
               "kind": "STAT_ADD",
@@ -1728,9 +1750,16 @@
               "value": 20
             },
             {
-              "kind": "STAT_MUL",
-              "stat": "moveSpeedHexPerSec",
+              "kind": "SKILL_DAMAGE_AMP",
               "value": 0.2
+            },
+            {
+              "kind": "CLEANSE",
+              "oncePerCombat": true,
+              "target": "SELF",
+              "trigger": {
+                "when": "ON_CAST"
+              }
             }
           ]
         }

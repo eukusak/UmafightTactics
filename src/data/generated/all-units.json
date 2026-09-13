@@ -8,7 +8,7 @@
     "ratingFormulaVersion": "horse-rating-v2",
     "skillFormulaVersion": "horse-skill-v2"
   },
-  "rosterHash": "e577139f4ebec75f",
+  "rosterHash": "a223dc3ade5b2c43",
   "units": [
     {
       "id": "special_week",
@@ -2048,16 +2048,16 @@
       "nameKo": "아그네스 디지털",
       "nameJa": "アグネスデジタル",
       "nameEn": "Agnes Digital",
-      "cost": 1,
+      "cost": 3,
       "role": "AD_CARRY",
-      "activeS1": true,
+      "activeS1": false,
       "uftRating": 0.61,
-      "hp": 640,
-      "attackDamage": 49,
+      "hp": 810,
+      "attackDamage": 62,
       "abilityPower": 100,
-      "armor": 42,
-      "magicResist": 42,
-      "attackSpeed": 0.7,
+      "armor": 46,
+      "magicResist": 46,
+      "attackSpeed": 0.74,
       "attackRange": 3,
       "moveSpeedHexPerSec": 1.9,
       "critChance": 0.25,
@@ -2075,8 +2075,8 @@
         "displayName": "아그네스 디지털 · 주력 저격 (2001 天皇賞(秋)(GI))",
         "template": "MULTI_SHOT",
         "baseValues": [
-          185,
-          205,
+          244,
+          271,
           31
         ],
         "starMultipliers": [
@@ -2090,7 +2090,7 @@
         "effects": [
           {
             "kind": "DAMAGE",
-            "value": 232,
+            "value": 306,
             "damageType": "PHYSICAL",
             "target": "HIGHEST_AD_ENEMY"
           },
@@ -2104,7 +2104,7 @@
           }
         ],
         "vfxKey": "vfx_projectile",
-        "description": "[주력 저격] 공격력이 가장 높은 적을 저격해 232 물리 피해와 공격력 15% 감소(3초). 근거: 2001 天皇賞(秋)(GI) 1위.",
+        "description": "[주력 저격] 공격력이 가장 높은 적을 저격해 306 물리 피해와 공격력 15% 감소(3초). 근거: 2001 天皇賞(秋)(GI) 1위.",
         "choreography": {
           "windup": 0.3,
           "recovery": 0.3,
@@ -3660,7 +3660,7 @@
       "nameEn": "Inari One",
       "cost": 1,
       "role": "BRUISER",
-      "activeS1": true,
+      "activeS1": false,
       "uftRating": 0.32,
       "hp": 625,
       "attackDamage": 46,
@@ -9144,16 +9144,16 @@
       "nameKo": "타니노 김렛",
       "nameJa": "タニノギムレット",
       "nameEn": "Tanino Gimlet",
-      "cost": 3,
+      "cost": 2,
       "role": "SUPPORT",
-      "activeS1": false,
+      "activeS1": true,
       "uftRating": 0.63,
-      "hp": 865,
-      "attackDamage": 64,
+      "hp": 760,
+      "attackDamage": 57,
       "abilityPower": 100,
-      "armor": 54,
-      "magicResist": 51,
-      "attackSpeed": 0.72,
+      "armor": 52,
+      "magicResist": 49,
+      "attackSpeed": 0.7,
       "attackRange": 3,
       "moveSpeedHexPerSec": 1.83,
       "critChance": 0.25,
@@ -9171,8 +9171,8 @@
         "displayName": "타니노 김렛 · 무장 해제 (2002 東京優駿(GI))",
         "template": "CONTROL",
         "baseValues": [
-          245,
-          272,
+          212,
+          235,
           31
         ],
         "starMultipliers": [
@@ -9186,7 +9186,7 @@
         "effects": [
           {
             "kind": "DAMAGE",
-            "value": 200,
+            "value": 173,
             "damageType": "MAGIC",
             "target": "LARGEST_ENEMY_CLUSTER",
             "shape": "CONE",
@@ -9204,7 +9204,7 @@
           }
         ],
         "vfxKey": "vfx_stun",
-        "description": "[무장 해제] 전방 3칸 최대 4명에게 200 마법 피해. 1.8초간 일반 공격 봉쇄, 스킬은 사용 가능. 근거: 2002 東京優駿(GI) 1위.",
+        "description": "[무장 해제] 전방 3칸 최대 4명에게 173 마법 피해. 1.8초간 일반 공격 봉쇄, 스킬은 사용 가능. 근거: 2002 東京優駿(GI) 1위.",
         "choreography": {
           "windup": 0.3,
           "recovery": 0.3,
@@ -11914,16 +11914,16 @@
       "nameKo": "세자리오",
       "nameJa": "シーザリオ",
       "nameEn": "Cesario",
-      "cost": 3,
+      "cost": 2,
       "role": "TANK",
-      "activeS1": false,
+      "activeS1": true,
       "uftRating": 0.72,
-      "hp": 880,
-      "attackDamage": 65,
+      "hp": 775,
+      "attackDamage": 58,
       "abilityPower": 100,
-      "armor": 57,
-      "magicResist": 53,
-      "attackSpeed": 0.74,
+      "armor": 55,
+      "magicResist": 51,
+      "attackSpeed": 0.71,
       "attackRange": 1,
       "moveSpeedHexPerSec": 1.87,
       "critChance": 0.25,
@@ -11941,8 +11941,8 @@
         "displayName": "세자리오 · 회복 성역 (2005 優駿牝馬(GI))",
         "template": "AURA",
         "baseValues": [
-          250,
-          278,
+          216,
+          240,
           31
         ],
         "starMultipliers": [
@@ -11956,7 +11956,7 @@
         "effects": [
           {
             "kind": "HEAL",
-            "value": 74,
+            "value": 64,
             "target": "ALL_ALLIES",
             "radius": 2,
             "maxTargets": 4,
@@ -11964,7 +11964,7 @@
           },
           {
             "kind": "HEAL",
-            "value": 74,
+            "value": 64,
             "target": "ALL_ALLIES",
             "radius": 2,
             "maxTargets": 4,
@@ -11972,7 +11972,7 @@
           },
           {
             "kind": "HEAL",
-            "value": 74,
+            "value": 64,
             "target": "ALL_ALLIES",
             "radius": 2,
             "maxTargets": 4,
@@ -11986,7 +11986,7 @@
           }
         ],
         "vfxKey": "vfx_buff",
-        "description": "[회복 성역] 2칸 내 최대 4명 아군의 제어 효과를 해제하고, 0.5초 간격으로 74씩 3회 회복. 근거: 2005 優駿牝馬(GI) 1위.",
+        "description": "[회복 성역] 2칸 내 최대 4명 아군의 제어 효과를 해제하고, 0.5초 간격으로 64씩 3회 회복. 근거: 2005 優駿牝馬(GI) 1위.",
         "choreography": {
           "windup": 0.3,
           "recovery": 0.3,
@@ -13365,16 +13365,16 @@
       "nameKo": "버블검 펠로",
       "nameJa": "バブルガムフェロー",
       "nameEn": "Bubble Gum Fellow",
-      "cost": 2,
+      "cost": 3,
       "role": "AD_CARRY",
-      "activeS1": true,
+      "activeS1": false,
       "uftRating": 0.71,
-      "hp": 745,
-      "attackDamage": 58,
+      "hp": 850,
+      "attackDamage": 64,
       "abilityPower": 100,
-      "armor": 50,
-      "magicResist": 47,
-      "attackSpeed": 0.73,
+      "armor": 52,
+      "magicResist": 49,
+      "attackSpeed": 0.75,
       "attackRange": 3,
       "moveSpeedHexPerSec": 1.92,
       "critChance": 0.25,
@@ -13392,8 +13392,8 @@
         "displayName": "버블검 펠로 · 가속 장전 (1996 天皇賞(秋)(GI))",
         "template": "MULTI_SHOT",
         "baseValues": [
-          217,
-          242,
+          252,
+          280,
           31
         ],
         "starMultipliers": [
@@ -13408,7 +13408,7 @@
           {
             "kind": "STAT_MUL",
             "stat": "attackSpeed",
-            "value": 0.477,
+            "value": 0.513,
             "duration": 4,
             "refresh": true,
             "target": "SELF"
@@ -13416,28 +13416,28 @@
           {
             "kind": "STAT_MUL",
             "stat": "attackDamage",
-            "value": 0.212,
+            "value": 0.228,
             "duration": 4,
             "refresh": true,
             "target": "SELF"
           },
           {
             "kind": "DAMAGE",
-            "value": 88,
+            "value": 102,
             "damageType": "PHYSICAL",
             "target": "CURRENT_TARGET",
             "delay": 0
           },
           {
             "kind": "DAMAGE",
-            "value": 88,
+            "value": 102,
             "damageType": "PHYSICAL",
             "target": "CURRENT_TARGET",
             "delay": 0.2
           }
         ],
         "vfxKey": "vfx_projectile",
-        "description": "[가속 장전] 4초간 공격속도 +47.7%, 공격력 +21.2%. 장전 타격으로 88 물리 피해를 2회. 근거: 1996 天皇賞(秋)(GI) 1위.",
+        "description": "[가속 장전] 4초간 공격속도 +51.3%, 공격력 +22.8%. 장전 타격으로 102 물리 피해를 2회. 근거: 1996 天皇賞(秋)(GI) 1위.",
         "choreography": {
           "windup": 0.15,
           "recovery": 0.3,
@@ -14081,7 +14081,7 @@
       "startMana": 0,
       "maxMana": 70,
       "traits": [
-        "nige",
+        "senko",
         "miler",
         "record_breaker"
       ],
@@ -14139,7 +14139,7 @@
             "target": "SELF"
           }
         ],
-        "vfxKey": "vfx_dash_nige",
+        "vfxKey": "vfx_dash_senko",
         "description": "[추격 연타] 돌진 후 한 적에게 128 물리 피해를 3회, 4초간 공격속도 +24.8%. 대상 사망 시 남은 타격은 재탐색. 근거: 2020 マイルチャンピオンS(GI) 1위.",
         "choreography": {
           "windup": 0.3,
@@ -14166,7 +14166,7 @@
         "signatureId": "sig_2016104532",
         "signatureName": "LEGACY · 桜花賞(GI)",
         "archetype": "TACTICAL_VERSATILE",
-        "primaryStyle": "nige",
+        "primaryStyle": "senko",
         "bestDistance": "miler",
         "dataConfidence": "HIGH",
         "historySummary": {
@@ -15788,16 +15788,16 @@
       "nameKo": "타이틀홀더",
       "nameJa": "タイトルホルダー",
       "nameEn": "Titleholder",
-      "cost": 2,
+      "cost": 1,
       "role": "TANK",
       "activeS1": true,
       "uftRating": 0.62,
-      "hp": 765,
-      "attackDamage": 55,
+      "hp": 690,
+      "attackDamage": 49,
       "abilityPower": 100,
-      "armor": 53,
-      "magicResist": 47,
-      "attackSpeed": 0.71,
+      "armor": 51,
+      "magicResist": 45,
+      "attackSpeed": 0.69,
       "attackRange": 1,
       "moveSpeedHexPerSec": 1.86,
       "critChance": 0.25,
@@ -15815,8 +15815,8 @@
         "displayName": "타이틀홀더 · 반격 폭풍 (2022 宝塚記念(GI))",
         "template": "AURA",
         "baseValues": [
-          210,
-          234,
+          184,
+          205,
           31
         ],
         "starMultipliers": [
@@ -15830,7 +15830,7 @@
         "effects": [
           {
             "kind": "DAMAGE",
-            "value": 69,
+            "value": 60,
             "damageType": "MAGIC",
             "target": "ALL_ENEMIES",
             "radius": 2,
@@ -15840,7 +15840,7 @@
           },
           {
             "kind": "DAMAGE",
-            "value": 69,
+            "value": 60,
             "damageType": "MAGIC",
             "target": "ALL_ENEMIES",
             "radius": 2,
@@ -15850,7 +15850,7 @@
           },
           {
             "kind": "DAMAGE",
-            "value": 69,
+            "value": 60,
             "damageType": "MAGIC",
             "target": "ALL_ENEMIES",
             "radius": 2,
@@ -15860,13 +15860,13 @@
           },
           {
             "kind": "SHIELD_FLAT",
-            "value": 137,
+            "value": 120,
             "duration": 4,
             "target": "SELF"
           }
         ],
         "vfxKey": "vfx_buff",
-        "description": "[반격 폭풍] 137 보호막을 얻고 주변 2칸 최대 4명에게 0.4초 간격으로 69 마법 피해 3회. 체력 피해의 15% 회복. 근거: 2022 宝塚記念(GI) 1위.",
+        "description": "[반격 폭풍] 120 보호막을 얻고 주변 2칸 최대 4명에게 0.4초 간격으로 60 마법 피해 3회. 체력 피해의 15% 회복. 근거: 2022 宝塚記念(GI) 1위.",
         "choreography": {
           "windup": 0.3,
           "recovery": 0.3,
@@ -16152,16 +16152,16 @@
       "nameKo": "맨하탄 카페",
       "nameJa": "マンハッタンカフェ",
       "nameEn": "Manhattan Cafe",
-      "cost": 2,
+      "cost": 1,
       "role": "BRUISER",
-      "activeS1": false,
+      "activeS1": true,
       "uftRating": 0.46,
-      "hp": 730,
-      "attackDamage": 54,
+      "hp": 660,
+      "attackDamage": 48,
       "abilityPower": 100,
-      "armor": 46,
-      "magicResist": 38,
-      "attackSpeed": 0.71,
+      "armor": 44,
+      "magicResist": 36,
+      "attackSpeed": 0.69,
       "attackRange": 1,
       "moveSpeedHexPerSec": 1.84,
       "critChance": 0.25,
@@ -16179,8 +16179,8 @@
         "displayName": "맨하탄 카페 · 흡수 휩쓸기 (2001 有馬記念(GI))",
         "template": "DASH_LINE",
         "baseValues": [
-          203,
-          225,
+          178,
+          198,
           30
         ],
         "starMultipliers": [
@@ -16199,7 +16199,7 @@
           },
           {
             "kind": "DAMAGE",
-            "value": 182,
+            "value": 160,
             "damageType": "PHYSICAL",
             "target": "CURRENT_TARGET",
             "shape": "CONE",
@@ -16209,7 +16209,7 @@
           }
         ],
         "vfxKey": "vfx_dash_sashi",
-        "description": "[흡수 휩쓸기] 돌진 후 전방 3칸 부채꼴의 최대 4명에게 182 물리 피해. 실제 체력 피해의 25% 회복. 근거: 2001 有馬記念(GI) 1위.",
+        "description": "[흡수 휩쓸기] 돌진 후 전방 3칸 부채꼴의 최대 4명에게 160 물리 피해. 실제 체력 피해의 25% 회복. 근거: 2001 有馬記念(GI) 1위.",
         "choreography": {
           "windup": 0.45,
           "recovery": 0.3,

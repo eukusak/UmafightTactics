@@ -1,3 +1,4 @@
+import { getAugment } from '../augments/augment-defs';
 import { hashString } from '../rng';
 /** TFT-inspired decisions from own holdings and public boards; no pool/RNG/opponent-shop access. */
 import { getSeasonUnits, getUnitDef, getUnitTraits } from '../roster';
@@ -15,7 +16,12 @@ function contested(boards: PublicBoard[], id: string): number { return boards.re
 export function choosePlan(player: PlayerState, stage: number, round: number, boards: PublicBoard[]): AiPlan {
   const owned = [...player.board, ...player.bench], roster = getSeasonUnits(player.seasonId);
   const roundKey = stage * 10 + round;
-  const options = roster.filter(d => ['AD_CARRY', 'AP_CARRY', 'BRUISER'].includes(d.role)).map(d => {
+  const damageHeroes = new Set(player.augments.flatMap(id => {
+    const a = getAugment(id);
+    return a.skillUpgrade?.append?.some(e => e.kind === 'DAMAGE' || e.kind === 'DAMAGE_MAXHP_PCT') ? a.filter?.unitIds ?? [] : [];
+  }));
+  // Healing/mana/support upgrades strengthen the board without becoming a damage carry.
+  const options = roster.filter(d => ['AD_CARRY', 'AP_CARRY', 'BRUISER'].includes(d.role) || damageHeroes.has(d.id)).map(d => {
     const count = copies(player, d.id), rivals = contested(boards, d.id);
     const traits = getUnitTraits(d.id, player.seasonId);
     const support = (t: TraitId) => new Set(owned.filter(u => getUnitTraits(u.unitDefId, player.seasonId).includes(t)).map(u => u.unitDefId)).size;
@@ -24,8 +30,11 @@ export function choosePlan(player: PlayerState, stage: number, round: number, bo
     const itemScore = [...player.items.map(i => i.itemId), ...owned.flatMap(u => u.items)].reduce((n, id) => n + Math.max(-2, itemFit(core, id)), 0) * .18;
     const lowSupport = roster.filter(u => u.cost <= 2 && getUnitTraits(u.id, player.seasonId).includes(trait)).length;
     let mode: AiPlan['mode'] = d.cost === 1 ? 'REROLL_1' : d.cost === 2 ? 'REROLL_2' : d.cost === 3 ? 'REROLL_3' : player.aiProfile === 'FAST_LEVEL' || player.aiProfile === 'ECONOMY' ? 'FAST_9' : 'FAST_8';
-    if (count >= 9) mode = 'FAST_8';
+    // Stop holding level 5/6 indefinitely for an unfinished low-cost carry.
+    // Seven/eight copies get one more stage; completed three-stars also level up.
+    if (count >= 9 || d.cost <= 2 && (stage >= 5 && count < 7 || stage >= 6)) mode = 'FAST_8';
     let score = (hashString(`${player.id}:${d.id}`) % 100) / 100 + Math.min(8, count) * 1.8 + support(trait) * 1.7 + itemScore + d.uftRating;
+    if (player.augments.some(id => getAugment(id).filter?.unitIds?.includes(d.id))) score += 16;
     if (d.cost <= 2) score += lowSupport >= 4 ? 2 : -3;
     if (player.aiProfile === 'REROLL') score += d.cost <= 2 ? 5 : -2;
     if (player.aiProfile === 'BALANCED' || player.aiProfile === 'TRAIT_FOCUS') score += d.cost === 3 ? 3 : 0;
@@ -61,11 +70,13 @@ export function economyPlan(player: PlayerState, stage: number, round: number, b
   const publicStrength = boards.length ? boards.reduce((n, b) => n + b.board.reduce((m, u) => m + unitPower(u), 0), 0) / boards.length : 0;
   const weak = player.board.reduce((n, u) => n + unitPower(u), 0) < publicStrength * .78;
   const panic = player.hp <= 30 || (stage >= 4 && player.hp < 50 && weak);
+  const nearlyComplete = !!plan && copies(player, plan.carryId) >= 7 && copies(player, plan.carryId) < 9;
+  const contestedCarry = !!plan && contested(boards, plan.carryId) >= 3;
   const spike = stage >= 3 && (round === 1 || round === 2 || round === 5);
   const floor = panic ? 0 : stage === 1 ? 0 : stage === 2 ? (player.streak >= 2 ? 10 : 20) : 30;
   const stable = player.board.filter(u => u.star >= 2).length >= Math.max(2, player.level - 2);
   const ready = reroll ? player.level >= (carry?.cost === 1 ? 4 : targetRoll) : player.level >= targetLevel;
-  return { targetLevel, levelFloor: floor, rollFloor: panic ? 0 : spike && (weak || !stable) ? 20 : 50, roll: stage >= 3 && ready || panic && player.level >= 4 };
+  return { targetLevel, levelFloor: floor, rollFloor: panic ? 0 : nearlyComplete && (contestedCarry || player.hp < 60) ? 20 : spike && (weak || !stable) ? 20 : 50, roll: stage >= 3 && ready || panic && player.level >= 4 };
 }
 export function xpGoldToLevel(player: PlayerState, target: number): number {
   let needed = -player.xp; for (let l = player.level + 1; l <= target; l++) needed += XP_TO_LEVEL[l] ?? 0;

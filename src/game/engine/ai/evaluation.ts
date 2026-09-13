@@ -1,3 +1,4 @@
+import { getAugment } from '../augments/augment-defs';
 /** Public board evaluation shared by formation, shopping and item planning. */
 import { getUnitDef, getUnitTraits } from '../roster';
 import { getItem } from '../items/item-defs';
@@ -18,6 +19,10 @@ export function unitPower(unit: UnitInstance): number {
 }
 export function lineupScore(player: PlayerState, units: UnitInstance[]): number {
   let score = units.reduce((n, u) => n + unitPower(u), 0);
+  for (const id of player.augments) {
+    const aug = getAugment(id);
+    if (aug.filter?.unitIds) score += units.filter(u=>aug.filter!.unitIds!.includes(u.unitDefId)).reduce((n,u)=>n+5*u.star,0);
+  }
   const counts = lineupTraits(player, units);
   for (const [id, count] of counts) {
     const tier = activeTierIndex(getTrait(id), count);

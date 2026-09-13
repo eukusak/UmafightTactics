@@ -5,32 +5,42 @@ import { addXp } from '../economy';
 import { newInstance, applyCombines, benchCapacity, itemStorageCapacity } from '../shop';
 import { take } from '../pool';
 import { EMBLEM_ITEM_IDS, COMPLETED_ITEM_DEFS } from '../items/item-defs';
-import type { Rng } from '../rng';
+import { Rng } from '../rng';
 import type { AugmentGrade, TraitId } from '../types';
 import type { AugmentOffer, MatchState, PlayerState } from '../state';
 
-/** Silver at 2-1, Gold at 3-2, Prism at 4-2. */
-export function gradeForAugmentRound(stage: number): AugmentGrade {
-  if (stage <= 2) return 'S';
-  if (stage === 3) return 'G';
-  return 'P';
+/** Supplied set-9 normal-lobby table. These are historical reference weights, not a claim about today's live patch. */
+export const AUGMENT_SEQUENCES: Array<{ grades: [AugmentGrade, AugmentGrade, AugmentGrade]; weight: number }> = [
+  ['SSG',5], ['SSP',5], ['SGG',12], ['SGP',5], ['SPP',1], ['GSG',18], ['GSP',2],
+  ['GGG',22], ['GGP',3], ['GPS',6], ['GPG',10], ['GPP',1], ['PSG',4], ['PSP',1], ['PGG',2], ['PGP',1], ['PPG',1], ['PPP',1],
+].map(([text, weight]) => ({ grades: (text as string).split('') as [AugmentGrade, AugmentGrade, AugmentGrade], weight: weight as number }));
+export function gradeForAugmentRound(stage: number, grades: readonly AugmentGrade[]): AugmentGrade {
+  return grades[stage <= 2 ? 0 : stage === 3 ? 1 : 2];
+}
+export function matchAugmentGrades(state: MatchState): [AugmentGrade, AugmentGrade, AugmentGrade] {
+  if (state.augmentGrades) return state.augmentGrades;
+  // Older saves retain their already-picked grades; all players still share future grades.
+  const prefix = state.players.reduce<string[]>((best,p) => p.augments.length > best.length ? p.augments.map(id => getAugment(id).grade) : best, []);
+  const pool = AUGMENT_SEQUENCES.filter(row => prefix.every((g,i) => row.grades[i] === g));
+  const candidates = pool.length ? pool : AUGMENT_SEQUENCES;
+  let roll = Rng.forStream(state.seed, 'augment-grade-sequence').next() * candidates.reduce((n,r) => n + r.weight, 0);
+  const chosen = candidates.find(row => (roll -= row.weight) < 0) ?? candidates[candidates.length - 1];
+  return state.augmentGrades = [...chosen.grades];
 }
 
 /** Three distinct options of the round's grade, never repeating a taken augment. */
 export function rollAugmentOptions(player: PlayerState, grade: AugmentGrade, rng: Rng): string[] {
   const taken = new Set(player.augments);
-  const pool = AUGMENTS_BY_GRADE[grade].filter((a) => !taken.has(a.id));
+  const roster = new Set(getSeasonUnits(player.seasonId).map(u => u.id));
+  const pool = AUGMENTS_BY_GRADE[grade].filter(a => !taken.has(a.id) && (!a.filter?.unitIds || a.filter.unitIds.some(id => roster.has(id))) && !(a.filter?.noActiveTrait && player.augments.includes('team_diversity')) && !(a.id === 'team_diversity' && player.augments.includes('outsider')));
   if (pool.length >= 3) return rng.sample(pool, 3).map((a) => a.id);
 
-  // Not enough left in this grade: top up from other grades, still without repeats.
-  const fallback = [...AUGMENTS_BY_GRADE.S, ...AUGMENTS_BY_GRADE.G, ...AUGMENTS_BY_GRADE.P]
-    .filter((a) => !taken.has(a.id) && !pool.some((p) => p.id === a.id));
-  const combined = [...pool, ...rng.sample(fallback, Math.max(0, 3 - pool.length))];
-  return combined.slice(0, 3).map((a) => a.id);
+  return rng.sample(pool, Math.min(3, pool.length)).map(a => a.id);
+
 }
 
 export function createAugmentOffers(state: MatchState, rng: Rng): AugmentOffer[] {
-  const grade = gradeForAugmentRound(state.stage);
+  const grade = gradeForAugmentRound(state.stage, matchAugmentGrades(state));
   return state.players
     .filter((p) => p.eliminatedAtRound === null)
     .map((p) => ({
@@ -58,6 +68,17 @@ export function applyAugment(
 
   const grants = def.grants;
   if (!grants) return;
+  if (grants.unitId) {
+    const unit = getUnitDef(grants.unitId);
+    if (player.bench.length < benchCapacity(player) && take(state.pool, unit.id, 1)) {
+      player.bench.push(newInstance(state, unit.id, 1)); applyCombines(state, player);
+    } else player.gold += unit.cost;
+  }
+  if (grants.itemId) {
+    // Reward inventory can overflow; capacity limits new purchases, never deletes earned gear.
+    state.instanceCounter++;
+    player.items.push({ instanceId: 'i' + state.instanceCounter, itemId: grants.itemId });
+  }
 
   if (grants.componentChoice) player.pendingGrants.push({ kind: 'COMPONENT_CHOICE', count: grants.componentChoice });
   if (grants.completedChoice) player.pendingGrants.push({ kind: 'COMPLETED_CHOICE', count: grants.completedChoice });

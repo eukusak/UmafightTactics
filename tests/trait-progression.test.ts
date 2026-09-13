@@ -77,6 +77,7 @@ describe('five-cost style distribution and motion compatibility', () => {
 
   it('changes six costs and power values without changing any animation contract', () => {
     const review = JSON.parse(readFileSync('docs/qa/trait-progression/cost-skill-compatibility.json', 'utf8')) as { units: Record<string, { fromCost: number; toCost: number; previousSkill: SkillDef; previousSkillSignature: string; skillSignature: string }> };
+    const latestReview = JSON.parse(readFileSync('docs/qa/augment-motion-compatibility.json', 'utf8')) as { changes: { id: string; oldCost: number; newCost: number; before: SkillDef; after: SkillDef }[] };
     const motionContract = (skill: SkillDef) => {
       const shape: Partial<SkillDef> = structuredClone(skill);
       delete shape.baseValues;
@@ -89,11 +90,25 @@ describe('five-cost style distribution and motion compatibility', () => {
     expect(Object.values(review.units).filter(e => e.fromCost !== e.toCost)).toHaveLength(6);
     for (const [id, entry] of Object.entries(review.units)) {
       const unit = getUnitDef(id);
-      expect(unit.cost).toBe(entry.toCost);
+      const latest = latestReview.changes.find(c => c.id === id);
+      expect(unit.cost).toBe(latest?.newCost ?? entry.toCost);
+      const historicalSkill = latest?.before ?? unit.skill;
+      if (latest) {
+        expect(latest.oldCost).toBe(entry.toCost);
+        expect(hash(unit.skill)).toBe(hash(latest.after));
+        const before = motionContract(latest.before), after = motionContract(latest.after);
+        if (id === 'gran_alegria') {
+          expect(before.vfxKey).toBe('vfx_dash_nige');
+          expect(after.vfxKey).toBe('vfx_dash_senko');
+          delete before.vfxKey;
+          delete after.vfxKey;
+        }
+        expect(after).toEqual(before);
+      }
       expect(Math.abs(entry.toCost - entry.fromCost)).toBeLessThanOrEqual(1);
       expect(hash(entry.previousSkill)).toBe(entry.previousSkillSignature);
-      expect(hash(unit.skill)).toBe(entry.skillSignature);
-      expect(motionContract(unit.skill)).toEqual(motionContract(entry.previousSkill));
+      expect(hash(historicalSkill)).toBe(entry.skillSignature);
+      expect(motionContract(historicalSkill)).toEqual(motionContract(entry.previousSkill));
     }
   });
 });

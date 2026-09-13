@@ -23,7 +23,7 @@ type TraitRecipe = [string, string, (tier: number) => EffectDef[], (tier: number
 // Effects belong to faction members only; shared historical traits still apply.
 const recipes: Record<SeasonId, TraitRecipe[]> = {
   s1: [
-    ['pace', '페이스메이커', t => [stat('STAT_MUL', 'attackSpeed', .06 * t), stat('STAT_MUL', 'moveSpeedHexPerSec', .08 * t)], t => `공격속도 +${6*t}%, 이동속도 +${8*t}%`],
+    ['pace', '페이스메이커', t => [stat('STAT_MUL', 'attackSpeed', .06 * t), { kind: 'SHIELD_FLAT', value: 15 * t, duration: 3, target: 'LOWEST_HP_ALLY', trigger: { when: 'ON_NTH_ATTACK', threshold: 4 } }], t => `공격속도 +${6*t}%, 공격 4회마다 체력이 가장 낮은 아군에게 3초 보호막 ${15*t}`],
     ['banner', '개막 기수', t => [onStart('SHIELD_MAXHP_PCT', .08 * t, 8)], t => `전투 시작 시 8초 동안 최대 체력 ${8*t}% 보호막`],
     ['spark', '샛별', t => [stat('STAT_ADD', 'startMana', 8 * t), stat('STAT_ADD', 'abilityPower', 5 * t)], t => `시작 마나 +${8*t}, 주문력 +${5*t}`],
     ['team', '원팀', t => [stat('STAT_ADD', 'armor', 8 * t), stat('STAT_ADD', 'magicResist', 8 * t)], t => `방어력·마법 저항력 +${8*t}`],
@@ -35,7 +35,7 @@ const recipes: Record<SeasonId, TraitRecipe[]> = {
     ['harmony', '하모니', t => [onCast('SHIELD_MAXHP_PCT', .04 * t, 3)], t => `스킬 사용 시 3초 동안 자신의 최대 체력 ${4*t}% 보호막`],
   ],
   s3: [
-    ['trail', '개척단', t => [stat('STAT_MUL', 'hp', .08 * t)], t => `최대 체력 +${8*t}%`],
+    ['trail', '개척단', t => [stat('STAT_MUL', 'hp', .05 * t), { kind: 'STACKING_STAT', stat: 'armor', value: 2 * t, maxStacks: 5, trigger: { when: 'ON_HIT_TAKEN' } }], t => `최대 체력 +${5*t}%, 피격마다 방어력 +${2*t}(전투당 최대 5중첩)`],
     ['spring', '오아시스', t => [{ kind: 'HEAL_MAXHP_PCT', value: .03 * t, trigger: { when: 'EVERY_SECONDS', threshold: 5 } }], t => `5초마다 자신의 최대 체력 ${3*t}% 회복`],
     ['fang', '야생의 송곳니', t => [{ kind: 'OMNIVAMP', value: .04 * t }, stat('STAT_MUL', 'attackDamage', .04 * t)], t => `모든 피해 흡혈 +${4*t}%, 공격력 +${4*t}%`],
     ['stone', '바위 수호자', t => [{ kind: 'DAMAGE_REDUCTION', value: .04 * t }, onStart('CC_IMMUNE', 0, 2 * t)], t => `받는 피해 ${4*t}% 감소, 시작 ${2*t}초 방해 효과 면역`],
@@ -47,7 +47,7 @@ const recipes: Record<SeasonId, TraitRecipe[]> = {
     ['chase', '추격자', t => [{ kind: 'DAMAGE_AMP', value: .08 * t, trigger: { when: 'TARGET_HP_BELOW', threshold: .5 } }], t => `체력이 절반 미만인 대상에게 피해 +${8*t}%`],
   ],
   s5: [
-    ['crown', '왕관의 계승자', t => [stat('STAT_MUL', 'attackDamage', .05 * t), stat('STAT_ADD', 'abilityPower', 7 * t)], t => `공격력 +${5*t}%, 주문력 +${7*t}`],
+    ['crown', '왕관의 계승자', t => [stat('STAT_MUL', 'attackDamage', .03 * t), stat('STAT_ADD', 'abilityPower', 4 * t), { kind: 'STACKING_STAT', stat: 'abilityPower', value: 3 * t, maxStacks: 3, trigger: { when: 'ON_CAST' } }], t => `공격력 +${3*t}%, 주문력 +${4*t}. 시전마다 주문력 +${3*t}(전투당 최대 3중첩)`],
     ['vow', '불굴의 맹세', t => [{ kind: 'SHIELD_MAXHP_PCT', value: .08 * t, duration: 5, oncePerCombat: true, trigger: { when: 'HP_BELOW', threshold: .4 } }], t => `체력 40% 미만일 때 한 번, 5초 동안 최대 체력 ${8*t}% 보호막`],
     ['legacy', '영광의 유산', t => [{ kind: 'HEAL_MAXHP_PCT', value: .06 * t, trigger: { when: 'ON_TAKEDOWN_ASSIST' } }], t => `처치 관여 시 자신의 최대 체력 ${6*t}% 회복`],
     ['finale', '피날레', t => [{ ...stat('STAT_MUL', 'attackSpeed', .08 * t), oncePerCombat: true, trigger: { when: 'EVERY_SECONDS', threshold: 10 } }, { kind: 'DAMAGE_AMP', value: .04 * t, trigger: { when: 'AFTER_SECONDS', threshold: 10 } }], t => `전투 10초 후 공격속도 +${8*t}%, 피해 +${4*t}%`],
@@ -57,7 +57,7 @@ const recipes: Record<SeasonId, TraitRecipe[]> = {
 export const SEASON_TRAIT_DEFS: TraitDef[] = SEASON_IDS.flatMap(season => recipes[season].map(([key, name, effects, description]) => ({
   id: `${season}_${key}` as TraitId, name, category: 'SEASON', thresholds: [3, 5, 7, 10], emblemItemId: null,
   description: `${SEASON_THEMES.find(s => s.id === season)!.name} 전용 · 해당 특성 기물에게 적용 · 서로 다른 기물 3/5/7/10명`,
-  tiers: [3, 5, 7, 10].map((count, i) => ({ count, effects: effects(i + 1).map(e => ({ ...e, target: e.kind === 'ON_HIT_DAMAGE' ? 'CURRENT_TARGET' : 'SELF' })), description: description(i + 1) })),
+  tiers: [3, 5, 7, 10].map((count, i) => ({ count, effects: effects(i + 1).map(e => ({ ...e, target: e.target ?? (e.kind === 'ON_HIT_DAMAGE' ? 'CURRENT_TARGET' : 'SELF') })), description: description(i + 1) })),
 })));
 
 export type SeasonDef = Theme & { unitIds: string[]; traits: TraitDef[]; unitTraits: Record<string, TraitId> };

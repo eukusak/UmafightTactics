@@ -191,6 +191,11 @@ export function runAiPrep(state: MatchState, player: PlayerState, rng: Rng): voi
       if (player.gold < def.cost) continue;
       const score = buyScore(player, slot.unitDefId);
       if (score < buyThreshold(player)) continue;
+      const held = [...player.board, ...player.bench].filter(u=>u.unitDefId === slot.unitDefId).reduce((n,u)=>n+u.sourceCopies,0);
+      const upgrade = held % 3 === 2;
+      const neededBody = player.board.length < teamSizeLimit(player);
+      const interestLoss = Math.floor(Math.min(50, player.gold)/10) > Math.floor(Math.min(50,player.gold-def.cost)/10);
+      if (interestLoss && player.hp > 45 && !upgrade && !neededBody && plannedUnitValue(player, slot.unitDefId) < 3 && score < 8) continue;
       const result = buyUnit(state, player, i);
       if (result.ok) acted = true;
     }

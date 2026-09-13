@@ -7,6 +7,14 @@ import type { MatchState, PlayerState, PoolState, ShopSlot, UnitInstance } from 
 import { copiesForStar, give, remainingOf, returnInstance, take } from '../pool';
 import { getAugment } from '../augments/augment-defs';
 
+/** Highest star created by purchasing one copy, including a chained 2→3 upgrade. */
+export function purchaseUpgradeStar(player: Pick<PlayerState, 'board' | 'bench'>, unitDefId: string): 2 | 3 | null {
+  const owned = [...player.board, ...player.bench].filter(u => u.unitDefId === unitDefId);
+  const ones = owned.filter(u => u.star === 1).length;
+  if (ones % 3 !== 2) return null;
+  return owned.filter(u => u.star === 2).length % 3 === 2 ? 3 : 2;
+}
+
 export function emptyShop(slots = SHOP_SLOTS): ShopSlot[] {
   return Array.from({ length: slots }, () => ({ unitDefId: null, sold: false }));
 }

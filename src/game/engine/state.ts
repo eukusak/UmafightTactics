@@ -48,6 +48,8 @@ export type PlayerState = {
   /** Tactician items (crown/cloak/shield) held outside unit item slots. */
   tacticianItems: string[];
   augments: string[];
+  /** Capped match-long augment training and item records; optional for old saves. */
+  augmentProgress?: Record<string, number>;
   shop: ShopSlot[];
   shopLocked: boolean;
   /** Free rerolls remaining this round, from augments. */
@@ -161,6 +163,7 @@ export type MatchState = {
   /** Deterministic counter so every created instance gets a stable unique id. */
   instanceCounter: number;
   augmentOffers: AugmentOffer[];
+  augmentGrades?: [AugmentGrade, AugmentGrade, AugmentGrade];
   draft: DraftState | null;
   lastResolution: RoundResolution | null;
   history: RoundResolution[];

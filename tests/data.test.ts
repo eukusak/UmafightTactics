@@ -130,9 +130,9 @@ describe('items', () => {
 });
 
 describe('augments', () => {
-  it('defines 48 unique augments across 3 grades', () => {
-    expect(AUGMENT_DEFS).toHaveLength(48);
-    expect(new Set(AUGMENT_DEFS.map((a) => a.id)).size).toBe(48);
+  it('defines 84 unique augments across 3 grades', () => {
+    expect(AUGMENT_DEFS).toHaveLength(84);
+    expect(new Set(AUGMENT_DEFS.map((a) => a.id)).size).toBe(84);
     for (const g of ['S', 'G', 'P'] as const) {
       expect(AUGMENT_DEFS.filter((a) => a.grade === g).length).toBeGreaterThanOrEqual(3);
     }

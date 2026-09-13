@@ -39,7 +39,7 @@ export function AugmentOverlay(): JSX.Element | null {
             return (
               <button key={id} className={`choice-card${selected === id ? ' chosen' : ''}`} disabled={selected !== null} onClick={() => select(id)}
                 style={{ borderColor: GRADE_COLOR[offer.grade] }}>
-                <img src={`/assets/augments/${id}.png`} alt="" width={82} height={82} /><h4>{aug?.name ?? id}</h4>
+                <img src={`/assets/augments/${aug?.iconId ?? id}.png`} alt="" width={82} height={82} /><h4>{aug?.name ?? id}</h4>
                 <p>{aug?.description ?? ''}</p>
               </button>
             );

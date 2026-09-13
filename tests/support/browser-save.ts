@@ -35,6 +35,7 @@ if (mode === 'patch-tools') {
 }
 if (mode === 'item-rewards') { p.items = []; p.pendingGrants = [{ kind: 'RADIANT_CHOICE', count: 1 }, { kind: 'ARTIFACT_CHOICE', count: 1 }]; }
 if (mode === 'arena-day') { state.stage = 5; state.round = 6; p.bench[0].position = { q: 3, r: 0 }; p.board.push(p.bench.shift()!); }
+if (mode === 'augment-inspect') { p.augments = ['hero_haru_urara', 'cast_memory', 'spell_jewel']; p.augmentProgress = { hero_haru_urara: 6, cast_memory: 3 }; }
 if (mode === 'six-shop') p.augments.push('shop_extra_slot');
 if (mode === 'trait-chase') {
   p.level = 9;
@@ -48,6 +49,32 @@ if (mode === 'trait-chase') {
     p.board.push(u);
   }
 }
+if (mode === 'cutin-hud') {
+  state.stage = 2; state.round = 2; p.level = 8;
+  const roster = getSeasonUnits(state.seasonId);
+  for (const player of state.players) {
+    player.aiProfile = null; player.level = 8;
+    const defs = player.isHuman ? roster.filter(d=>d.cost===5).slice(0,2) : roster.filter(d=>d.cost===3 && ['TANK','BRUISER'].includes(d.role)).slice(0,3);
+    defs.forEach((d,i)=> {
+      if (!take(state.pool,d.id,1)) throw new Error('cutin fixture pool');
+      const u=newInstance(state,d.id,1);u.position={q:2+i,r:0};
+      if(player.isHuman) u.items=['blue_focus','iron_stable'];
+      player.board.push(u);
+    });
+  }
+}
+if (mode === 'shop-upgrades') {
+  p.level=8;
+  for(const [i,d] of units.slice(1,3).entries()) {
+    const stars = i === 0 ? [1,1] as const : [2,2,1,1] as const;
+    for(const [j,star] of stars.entries()) {
+      const u=newInstance(state,d.id,star);
+      if(!take(state.pool,d.id,u.sourceCopies)) throw new Error('upgrade fixture pool');
+      if(j===0){u.position={q:i+2,r:0};p.board.push(u);}else p.bench.push(u);
+    }
+  }
+}
 p.shop = rollShop(p, state.pool, new Rng(9001));
+if (mode === 'shop-upgrades') p.shop=[units[1],units[2],units[1],units[2],units[0]].map(d=>({unitDefId:d.id,sold:false}));
 if (mode === 'augment') { state.stage = 2; state.round = 1; state.augmentOffers = createAugmentOffers(state, new Rng(91)); state.phase = 'AUGMENT_SELECT'; }
 console.log(JSON.stringify(mode.startsWith('result-') ? resultSave(mode === 'result-eliminated') : serializeMatch(director)));

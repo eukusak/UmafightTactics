@@ -1,3 +1,6 @@
+import { combatProgress } from '../augments/runtime';
+import { getAugment } from '../augments/augment-defs';
+import { chooseAiAugment } from '../ai/augment-choice';
 import { draftValue, publicBoards } from '../ai/strategy';
 import { captureLineup } from './result-lineups';
 import { createCarousel, advanceCarousel as advanceCarouselState } from './carousel';
@@ -14,7 +17,7 @@ import { Rng, RngRegistry } from '../rng';
 import { ROSTER_HASH, getUnitDef, getSeason, getSeasonUnitTraits } from '../roster';
 import { createPool, returnInstance } from '../pool';
 import { emptyShop, rollShop, applyCombines, teamSizeLimit } from '../shop';
-import { grantRoundXp, resetRoundEconomy, roundIncome, reducePlayerDamage } from '../economy';
+import { addXp, grantRoundXp, resetRoundEconomy, roundIncome, reducePlayerDamage } from '../economy';
 import { addItemToStorage, resolveTrickGloves } from '../items/inventory';
 import { runAiPrep, ensureInitialBoard, finalizeAiFormation, resolveAiItemRewards } from '../ai';
 import { AI_PROFILE_IDS } from '../ai/profiles';
@@ -104,6 +107,8 @@ export type PendingSettlement = {
   afterStreaks: Record<string, number>;
   pvpWinners: string[];
   isPve: boolean;
+  augmentProgress?: Record<string, Record<string, number>>;
+  rewardBenchCounts?: Record<string, number>;
 };
 
 export class RoundDirector {
@@ -120,6 +125,7 @@ export class RoundDirector {
   private recordAllBattles = false;
   /** Whether the human's fight was against PvE, for the battle banner. */
   lastHumanBattleWasPve = false;
+  private roundAugmentProgress: Record<string, Record<string, number>> = {};
   private pendingSettlement: PendingSettlement | null = null;
 
   get hasPendingSettlement(): boolean { return this.pendingSettlement !== null; }
@@ -200,8 +206,8 @@ export class RoundDirector {
     for (const offer of this.state.augmentOffers) {
       const player = getPlayer(this.state, offer.playerId);
       if (player.aiProfile === null) continue;
-      // The AI takes the first option that is not purely a shop-odds tweak.
-      const choice = offer.options[rng.int(0, offer.options.length)];
+      // Rank choices against public boards and the current plan.
+      const choice = chooseAiAugment(player, offer.options, this.state.stage, publicBoards(this.state, player));
       offer.chosen = choice;
       applyAugment(this.state, player, choice, rng);
     }
@@ -297,6 +303,7 @@ export class RoundDirector {
     this.refreshAiPlacements();
     const s = this.state;
     s.phase = 'BATTLE';
+    this.roundAugmentProgress = {};
     this.lastHumanFrames = null;
     this.playerFrames.clear();
     this.lastHumanBattleWasPve = false;
@@ -327,6 +334,8 @@ export class RoundDirector {
     this.pendingSettlement = {
       resolution, afterStreaks: Object.fromEntries(afterStreaks),
       pvpWinners: [...pvpWinners], isPve: kind === 'PVE',
+      augmentProgress: structuredClone(this.roundAugmentProgress),
+      rewardBenchCounts: Object.fromEntries(s.players.map(p => [p.id, p.bench.length])),
     };
     this.syncRng();
     return deferSettlement ? resolution : this.settleRound()!;
@@ -342,6 +351,17 @@ export class RoundDirector {
     const { outcomes, damage } = resolution;
     for (const p of s.players) p.streak = afterStreaks[p.id];
     if (isPve) this.grantPveRewards(outcomes);
+    else for (const p of s.players.filter(isAlive)) {
+      if (pending.augmentProgress?.[p.id]) p.augmentProgress = pending.augmentProgress[p.id];
+      const outcome = outcomes.find(o => o.attackerId === p.id || !o.isGhost && o.defenderId === p.id);
+      const count = pending.rewardBenchCounts?.[p.id] ?? p.bench.length;
+      for (const id of p.augments) {
+        const reward = getAugment(id).roundReward;
+        if (!reward) continue;
+        const earned = reward.condition === 'EMPTY_BENCH' ? count === 0 : reward.condition === 'FULL_BENCH' ? count >= 5 : reward.condition === 'WIN' ? outcome?.winnerId === p.id : !!outcome?.winnerId && outcome.winnerId !== p.id;
+        if (earned) { p.gold += reward.gold ?? 0; addXp(p, reward.xp ?? 0); }
+      }
+    }
     // Damage, loot, income and eliminations become visible together at END.
     const roundKey = absoluteRound(s.stage, s.round);
     for (const p of s.players) {
@@ -413,9 +433,16 @@ export class RoundDirector {
    * what the player watches is the very run that produced the result.
    */
   private runBattle(a: BattleSideInput, b: BattleSideInput, rng: Rng, record: boolean, isGhost = false) {
-    if (!record && !this.recordAllBattles) return simulateBattle(a, b, rng, { stage: this.state.stage });
-    const engine = new BattleEngine(a, b, rng, { recordFrames: true, stage: this.state.stage });
+    const hasGrowth = [a,b].some(side => side.augments.some(id => { const aug = getAugment(id); return aug.growth || aug.rememberItem; }));
+    if (!record && !this.recordAllBattles && !hasGrowth) return simulateBattle(a, b, rng, { stage: this.state.stage });
+    const engine = new BattleEngine(a, b, rng, { recordFrames: record || this.recordAllBattles, stage: this.state.stage });
     const result = engine.run();
+    if (this.info.kind !== 'PVE') for (const [side, team] of [[a,'A'],[b,'B']] as const) {
+      if (team === 'B' && isGhost) continue;
+      if (!this.state.players.some(p => p.id === side.playerId)) continue;
+      const originalIds = new Set(side.units.map(u => side.playerId + '#' + u.instanceId));
+      this.roundAugmentProgress[side.playerId] = combatProgress(side.augments, side.augmentProgress ?? {}, engine.units.filter(u => originalIds.has(u.id)), result.events);
+    }
     if (record) this.lastHumanFrames = engine.frames;
     this.playerFrames.set(a.playerId, engine.frames);
     if (!isGhost && this.state.players.some(p => p.id === b.playerId)) this.playerFrames.set(b.playerId, engine.frames);
@@ -426,6 +453,7 @@ export class RoundDirector {
     return {
       playerId: player.id,
       augments: player.augments,
+      augmentProgress: player.augmentProgress,
       tacticianItems: player.tacticianItems,
       units: player.board
         .filter((u) => u.position !== null)
