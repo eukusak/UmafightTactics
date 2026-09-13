@@ -77,8 +77,11 @@ export function matchSkillDescription(def: UnitDef, owner?: PlayerState, options
   const changes: string[]=[];
   for(const id of owner?.augments??[]) {
     const aug=getAugment(id);if(!augmentApplies(aug,context,counts))continue;
-    const lines:string[]=[];
-    if(aug.skillUpgrade) { skill=upgradeSkill(skill,aug.skillUpgrade);lines.push('스킬 강화 적용'); }
+    if (aug.skillUpgrade) skill = upgradeSkill(skill, aug.skillUpgrade);
+    // Shared combat bonuses belong to the augment panel, not every unit's skill.
+    // Only a dedicated hero upgrade rewrites that hero's authored explanation.
+    if (!aug.skillUpgrade || !aug.filter?.unitIds?.includes(def.id)) continue;
+    const lines: string[] = ['전용 스킬 강화 적용'];
     const effects=augmentEffects(aug,owner!.augmentProgress??{},counts).slice(0, aug.teamEffects.length).filter(e=>!e.tag?.startsWith('TRAIT:')||context.traits.includes(e.tag.slice(6) as TraitId));
     lines.push(...effects.map(e=>describeEffect(e)).filter(Boolean));
     if(aug.growth) {

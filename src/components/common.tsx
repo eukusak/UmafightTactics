@@ -17,12 +17,12 @@ export function traitColor(id: TraitId): string {
   return STYLE_COLORS[id] ?? ART_COLORS.edgeLight;
 }
 
-export function Portrait({ id, name, size = 64 }: { id: string; name: string; size?: number }): JSX.Element {
+export function Portrait({ id, name, size = 64, lazy = false }: { id: string; name: string; size?: number; lazy?: boolean }): JSX.Element {
   const [failed, setFailed] = useState(false);
   const url = portraitUrl(id);
   useEffect(() => setFailed(false), [id]);
   return url && !failed
-    ? <img className="portrait-art" src={url} alt={name} width={size} height={size} draggable={false} onError={() => setFailed(true)} />
+    ? <img loading={lazy ? 'lazy' : 'eager'} decoding="async" className="portrait-art" src={url} alt={name} width={size} height={size} draggable={false} onError={() => setFailed(true)} />
     : <span className="portrait-fallback" style={{ width: size, height: size }}>{initialOf(name)}</span>;
 }
 

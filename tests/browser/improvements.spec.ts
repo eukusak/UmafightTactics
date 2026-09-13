@@ -55,7 +55,14 @@ test('every portrait surface uses delivered portrait assets',async({page},info)=
   await expect(page.locator('.collection-card img')).toHaveCount(145);
   const images=await page.locator('.collection-card img').evaluateAll(images=>images.map(i=>({src:(i as HTMLImageElement).src,width:(i as HTMLImageElement).naturalWidth})));
   expect(images.every(i=>i.src.includes('/assets/portraits/'))).toBe(true);
+  // Viewport-lazy portraits load as the collection is scrolled, not all on entry.
+  for (let i=0;i<145;i+=12) {
+    const image=page.locator('.collection-card img').nth(i);
+    await image.scrollIntoViewIfNeeded();
+    await expect.poll(()=>image.evaluate(el=>(el as HTMLImageElement).naturalWidth)).toBeGreaterThan(0);
+  }
   await expect.poll(async()=>page.locator('.collection-card img').evaluateAll(images=>images.every(i=>(i as HTMLImageElement).naturalWidth>0))).toBe(true);
+  await page.locator('.collection-grid').evaluate(el=>{el.scrollTop=0;});
   await expect(page.locator('option', {hasText:'연대 전체'})).toHaveCount(0);await expect(page.locator('option[value="inactive"]')).toHaveCount(0);
   const options=await page.getByLabel('특성',{exact:true}).locator('option').allTextContents();expect(options).toContain('황금세대');expect(options).not.toContain('도주');expect(options).not.toContain('마일러');
   await page.screenshot({path:info.outputPath('portraits-collection.png')});

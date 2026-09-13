@@ -1,11 +1,12 @@
+import { ScreenBoundary } from '../components/ScreenBoundary';
 /** Root shell: screen routing plus the 1920x1080 scale-to-fit wrapper. */
-import { useEffect, useLayoutEffect, useRef, useState } from 'react';
+import { lazy, Suspense, useEffect, useLayoutEffect, useRef, useState } from 'react';
 import { useGameStore } from '../store/gameStore';
 import { configureAudio, setMusicScene, unlockAudio, playSound } from '../game/ui/audio';
-import { OnlineScreen } from '../components/screens/OnlineScreen';
-import { BattleScreen } from '../components/screens/BattleScreen';
-import { CollectionScreen } from '../components/screens/CollectionScreen';
-import { MotionScreen } from '../components/screens/MotionScreen';
+const OnlineScreen = lazy(() => import('../components/screens/OnlineScreen').then(m => ({ default: m.OnlineScreen })));
+const BattleScreen = lazy(() => import('../components/screens/BattleScreen').then(m => ({ default: m.BattleScreen })));
+const CollectionScreen = lazy(() => import('../components/screens/CollectionScreen').then(m => ({ default: m.CollectionScreen })));
+const MotionScreen = lazy(() => import('../components/screens/MotionScreen').then(m => ({ default: m.MotionScreen })));
 import {
   MainMenu, MatchSetup, ResultScreen, SettingsScreen, TitleScreen,
 } from '../components/screens/MenuScreens';
@@ -85,7 +86,7 @@ export function App(): JSX.Element {
   return (
     <div className={`stage-root${mobile ? ' mobile-root' : ''}`}>
       <div className={`stage${mobile ? ' mobile' : ''}`} style={{ left, top, width, height, transform: `scale(${scale})`, '--field-scale': width / 1320 } as React.CSSProperties}>
-        {content}
+        <ScreenBoundary key={screen}><Suspense fallback={<div role="status" className="screen-loading">{screen === 'BATTLE' ? '전투 화면을 준비하는 중…' : '화면을 불러오는 중…'}</div>}>{content}</Suspense></ScreenBoundary>
       </div>
     </div>
   );

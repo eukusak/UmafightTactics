@@ -1,3 +1,4 @@
+import { EffectDescription } from './EffectDescription';
 import { playSound } from '../game/ui/audio';
 /** Augment select, twinkle draft, battle result banner and the dev panel. */
 import { useEffect, useRef, useState } from 'react';
@@ -41,7 +42,7 @@ export function AugmentOverlay(): JSX.Element | null {
               <div className="augment-slot" key={index}><button key={id} className={`choice-card${selected === id ? ' chosen' : ''}`} disabled={selected !== null} onClick={() => select(id)}
                 style={{ borderColor: GRADE_COLOR[offer.grade] }}>
                 <img src={`/assets/augments/${aug?.iconId ?? id}.png`} alt="" width={82} height={82} /><h4>{aug?.name ?? id}</h4>
-                <p>{aug?.description ?? ''}</p>
+                <p><EffectDescription text={aug?.description ?? ''} /></p>
               </button><button className="augment-reroll" aria-label={`${index+1}번 증강 새로고침`} disabled={selected!==null||!!offer.rerolled?.[index]} onClick={()=>useGameStore.getState().rerollAugment(index)}>{offer.rerolled?.[index]?'새로고침 사용 완료':'⟳ 무료 새로고침 · 1회'}</button></div>
             );
           })}

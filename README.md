@@ -59,13 +59,13 @@ npm run dev           # http://localhost:5173
 
 ```bash
 npm run build
-npm start             # http://localhost:4173 (PORT 환경변수로 변경 가능)
+npm run start:local   # http://localhost:4173 (PORT 환경변수로 변경 가능)
 ```
 
 ### 온라인 방 대전
 
 메인 메뉴 → 온라인 대전 → 새 방 → 코드 공유 또는 AI 추가 → 참가자 준비 → 방장 시작. 빈자리를 AI로 채우면 혼자서도 온라인 경기를 시작할 수 있습니다.
-`npm run dev`와 `npm start`는 같은 주소의 `/multiplayer` WebSocket 서버를 함께 실행한다.
+`npm run dev`와 `npm run start:local`은 같은 주소의 `/multiplayer` WebSocket 서버를 함께 실행한다.
 `npm run preview`·`npm run start:static`은 정적 미리보기이며 온라인 방 서버가 없다.
 외부 접속에는 Node 웹 서비스와 WebSocket 프록시가 필요하다. [운영 안내](docs/ONLINE_MULTIPLAYER.md).
 
@@ -177,43 +177,17 @@ STRICT_ART=1 npm run check:art   # 규격·알파·크기까지 전수 검사
 
 ## Render 배포
 
-온라인 대전에는 **Node Web Service**가 필요합니다. 정적 사이트만 배포하면 웹페이지는 열리지만 WebSocket 방 생성·참가는 동작하지 않습니다.
+프런트엔드는 Static Site/CDN, 온라인 방은 별도 Node Web Service로 배포합니다. **기존 서비스 자동 배포를 먼저 중지한 뒤** [분리 배포 가이드](docs/RENDER_SPLIT_DEPLOYMENT.md)의 전환 순서를 따라 주세요. 이 PR은 기존 서비스를 자동 전환하지 않습니다.
 
-Render에서 **New → Blueprint**로 연결하면 `render.yaml`의 Node 서비스 설정을 사용합니다. 기존에 직접 만든 서비스는 대시보드의 설정을 사용하므로 다음과 같이 맞춥니다.
+| 대상 | 설치·빌드 | 시작/출력 |
+|---|---|---|
+| Static Site | `npm ci && npm run build` | `dist` |
+| WebSocket 서버 | `npm ci --omit=dev` | `npm run start:server` |
+| 로컬 통합 미리보기 | `npm ci && npm run build` | `npm run start:local` |
 
-| 항목 | 값 |
-|---|---|
-| Service Type | Web Service (Node) |
-| Build Command | `npm ci && npm run build` |
-| Start Command | `npm start` |
-| Health Check Path | `/health` |
-| Instances | 1 |
+프런트엔드 빌드 시 `VITE_MULTIPLAYER_URL=wss://<backend>/multiplayer`, 서버에는 `ALLOWED_ORIGINS=https://<frontend>`를 설정합니다. 운영 서버는 정확한 Origin을 필수로 검사하며, `/health`와 WebSocket만 제공합니다. 설치 중 자동 프런트엔드 빌드와 런타임 1024MB 힙 강제 설정을 제거했습니다.
 
-`npm start`는 `server/index.ts`에서 정적 파일과 `/multiplayer` WebSocket을 같은 포트로 제공합니다. 기존 시작 명령 `node scripts/serve.mjs`도 같은 온라인 서버를 실행합니다. `/health` 응답의 `multiplayer: true`로 온라인 서버가 실행 중인지 확인할 수 있습니다.
-
-포트 검색 시간 초과가 발생하면 Deploy 로그에서 실행 명령과 시작 로그를 확인합니다. 정상 로그는 `UmafightTactics HTTP + multiplayer server ready on http://0.0.0.0:<PORT>`입니다. 빌드의 500kB 청크 경고는 포트 미개방 오류가 아닙니다. 시작 명령은 `npm start`, 배포 브랜치는 `main`을 사용합니다. 서버는 Render의 `PORT`를 사용하고 Render 환경에서는 `HOST` 값과 관계없이 `0.0.0.0`에 바인딩합니다. 실행 경로가 심볼릭 링크여도 서버가 시작되며, 잘못된 포트나 시작 실패는 오류 로그와 실패 종료 코드로 표시합니다.
-
-기존 Static Site는 Node Web Service로 새로 만들어야 합니다. `npm run start:static`과 `npm run preview`는 오프라인 확인용으로만 사용합니다.
-
-SPA fallback, gzip, 해시 자산 캐시 및 경로 탈출 차단을 유지합니다. 설치만 수행하는 Render 기본 빌드 명령에서도 `scripts/render-postinstall.mjs`가 빌드 단계에서 번들을 만듭니다.
-
-### 런타임 인스턴스는 빌드하지 않는다
-
-`serve.mjs`는 **빌드를 시도하지 않고**, `dist/`가 없으면 안내 메시지와 함께 즉시 종료합니다.
-
-이 빌드는 힙이 **약 500MB** 필요한데 작은 런타임 인스턴스는 기본 힙이 **256MB 부근**입니다.
-실제로 시작 시점에 빌드를 시도했더니 2분간 GC를 돌다
-`Reached heap limit Allocation failed`로 죽으면서 서비스가 크래시 루프에 빠졌습니다.
-
-그래서 빌드는 **메모리가 넉넉한 빌드 단계**에서만 수행합니다.
-
-- `scripts/render-postinstall.mjs`가 `RENDER` 환경변수가 있을 때만, 그리고 `dist/`가 없을 때만 빌드합니다.
-  로컬 `npm ci`에는 아무 영향이 없습니다.
-- 빌드 시 `NODE_OPTIONS`에 `--max-old-space-size=1024`를 덧붙입니다. 상한을 **올리기만** 하므로
-  큰 빌드 머신의 기본값을 낮추지 않습니다.
-
-검증: 부모 힙을 256MB로 묶은 상태에서 상향 없이는 `exit 134 / heap out of memory`,
-상향 후에는 13초 만에 정상 빌드됩니다.
+빌드는 고유 해시 JS/CSS를 `/bundled`에 출력합니다. 음악은 빌드 단계에서만 160kbps MP3로 인코딩하며, `public/assets/audio`의 원본은 보존합니다. 로컬 정적 미리보기는 SPA fallback, gzip, MP3 Range 응답을 지원합니다.
 
 ### Node 버전
 

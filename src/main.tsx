@@ -3,12 +3,12 @@ import { createRoot } from 'react-dom/client';
 import { App } from './app/App';
 import '@fontsource-variable/noto-sans-kr';
 import '@fontsource/jua';
-import '@fontsource/black-han-sans';
 import '@fontsource/press-start-2p/latin-400.css';
 import './styles/global.css';
 import './styles/arena.css';
 import './styles/pixel.css';
 import './styles/mobile.css';
+import './styles/typography.css';
 // Registers the PvE combat bodies before any battle can be constructed.
 import './game/engine/battle/pve-units';
 

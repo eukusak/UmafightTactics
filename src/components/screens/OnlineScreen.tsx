@@ -42,6 +42,7 @@ export function OnlineScreen(): JSX.Element {
         <button className="btn-ghost" onClick={online.leave}>방 나가기</button>
       </div>
     </div>}
+    {online.connecting && <p className="online-connecting" role="status">온라인 서버에 연결하는 중… 잠시 쉬고 있던 서버는 연결에 시간이 걸릴 수 있습니다.</p>}
     {online.error && <p className="online-error" role="alert">{online.error}</p>}
     {!online.room && <button className="btn-ghost" style={{ marginTop: 18 }} onClick={() => { online.leave(); useGameStore.getState().setScreen('MAIN_MENU'); }}>돌아가기</button>}
   </div>;

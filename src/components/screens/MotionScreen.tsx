@@ -1,3 +1,4 @@
+import { EffectDescription } from '../EffectDescription';
 import { useEffect, useRef, useState } from 'react';
 import Phaser from 'phaser';
 import { ALL_UNITS, getUnitDef } from '../../game/engine/roster';
@@ -133,7 +134,7 @@ export function MotionScreen(): JSX.Element {
         </details>}
         <p className="motion-cost">{getUnitDef(id).cost}코스트 · {COST_SKILL_PRESENTATION[getUnitDef(id).cost].label} 이펙트</p>
         <p className="motion-skill-name" style={{ color: '#ffe4a6', fontWeight: 700 }}>{getUnitDef(id).skill.displayName}</p>
-        <p className="motion-skill-description" style={{ fontSize: 14, lineHeight: 1.6 }}>{getUnitDef(id).skill.description}</p>
+        <p className="motion-skill-description" style={{ fontSize: 14, lineHeight: 1.6 }}><EffectDescription text={getUnitDef(id).skill.description} /></p>
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: 10, margin: '25px 0' }}>
           {Object.entries(ACTIONS).map(([key, label]) => <button key={key} className={action === key ? 'btn-primary' : ''} onClick={() => setAction(key as AnimationName)}>{label}</button>)}
         </div>

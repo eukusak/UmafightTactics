@@ -10,8 +10,8 @@ import type { BattleFrame } from '../src/game/engine/battle/engine';
 import { applyOnlineCommand, autoField } from '../src/game/network/commands';
 import type { ClientMessage, RoomView, ServerMessage } from '../src/game/network/protocol';
 
-export type Peer = { send: (message: ServerMessage) => void; close: () => void };
-type Seat = { ai?: boolean; id: string; name: string; token: string; ready: boolean; peer: Peer | null; disconnectedAt: number; lastSeq: number; sentFrames: number; watching?: string | null };
+export type Peer = { send: (message: ServerMessage) => unknown; canSendFrames?: () => boolean; close: () => void };
+type Seat = { ai?: boolean; id: string; name: string; token: string; ready: boolean; peer: Peer | null; disconnectedAt: number; lastSeq: number; sentFrames: number; frameSentAt?: number; resetPending?: boolean; watching?: string | null };
 export type Room = { seasonId: import('../src/game/engine/seasons/catalog').SeasonId; code: string; hostId: string; seats: Seat[]; director: RoundDirector | null; deadline: number; changedAt: number; phaseKey: string; battleStarted: number; battleDuration: number; battleId: string | null; settled: boolean; draftUpdatedAt?: number; draftBroadcastAt?: number };
 type SavedRoom = Omit<Room, 'director' | 'seats'> & {
   seats: Omit<Seat, 'peer'>[];
@@ -69,7 +69,7 @@ export class RoomService {
       restored.set(rest.code, { ...rest, director, deadline: rest.deadline ? rest.deadline + shift : 0,
         draftUpdatedAt: now, draftBroadcastAt: 0,
         battleStarted: rest.battleId ? rest.battleStarted + shift : 0, changedAt: now,
-        seats: seats.map((seat) => ({ ...seat, peer: null, disconnectedAt: now, sentFrames: 0 })) });
+        seats: seats.map((seat) => ({ ...seat, peer: null, disconnectedAt: now, sentFrames: 0, frameSentAt: undefined, resetPending: true })) });
     }
     for (const [code, room] of restored) this.rooms.set(code, room);
   }
@@ -196,26 +196,36 @@ export class RoomService {
   tick(): void {
     const now = this.now();
     for (const room of this.rooms.values()) {
-      if (!room.seats.some((s) => s.peer) && now - room.changedAt > 300_000) { this.rooms.delete(room.code); continue; }
+      if (!room.seats.some((s) => s.peer) && now - room.changedAt > 300_000) { this.rooms.delete(room.code); this.aiScoutTimes.delete(room.code); continue; }
       const d = room.director;
       if (!d || d.isOver) continue;
+      if (d.state.phase === 'ROUND_RESOLVE') {
+        for (const seat of room.seats) if (seat.peer && now - (seat.frameSentAt ?? -Infinity) >= 100) this.sendFrames(room, seat);
+      }
       if (d.state.phase === 'BATTLE') {
-        for (const seat of room.seats) if (seat.peer) this.sendFrames(room, seat);
+        for (const seat of room.seats) if (seat.peer && (now >= room.deadline || now - (seat.frameSentAt ?? -Infinity) >= 100)) this.sendFrames(room, seat);
         if (now < room.deadline) continue;
         d.settleRound(); room.settled = true; room.deadline = now + 5000;
         this.broadcastState(room); continue;
       }
       if (d.state.draft?.carousel) {
+        const claimed = d.state.draft.options.filter(o => o.takenBy).length;
         d.advanceCarousel(Math.max(0, now - (room.draftUpdatedAt ?? now)));
         room.draftUpdatedAt = now;
         if (!d.state.draft) this.setDeadline(room);
-        if (!d.state.draft || now - (room.draftBroadcastAt ?? 0) >= 100) {
-          this.broadcastState(room); room.draftBroadcastAt = now;
+        const changed = !d.state.draft || d.state.draft.options.filter(o => o.takenBy).length !== claimed;
+        if (changed) { this.broadcastState(room); room.draftBroadcastAt = now; }
+        else if (now - (room.draftBroadcastAt ?? 0) >= 100) {
+          const message: ServerMessage = { type: 'draft', round: `${d.state.stage}-${d.state.round}`, draft: d.state.draft!, serverNow: now };
+          for (const seat of room.seats) seat.peer?.send(message);
+          room.draftBroadcastAt = now;
         }
         continue;
       }
       if (d.state.phase === 'ROUND_PREP' && now - (this.aiScoutTimes.get(room.code) ?? 0) >= 3000) {
-        d.refreshAiPlacements(); this.aiScoutTimes.set(room.code, now); this.broadcastState(room);
+        const formation = () => JSON.stringify(d.state.players.map(p => p.board.map(u => [u.instanceId, u.position])));
+        const before = formation(); d.refreshAiPlacements(); this.aiScoutTimes.set(room.code, now);
+        if (before !== formation()) this.broadcastState(room);
       }
       if (now < room.deadline) continue;
       if (d.state.phase === 'ROUND_RESOLVE') {
@@ -252,7 +262,8 @@ export class RoomService {
   }
   private broadcastRoom(room: Room): void {
     const view: RoomView = { seasonId: room.seasonId, code: room.code, hostId: room.hostId, started: !!room.director, seats: room.seats.map((s) => ({ id: s.id, name: s.name, ready: s.ready, connected: !!s.peer || !!s.ai, ai: !!s.ai })), deadline: room.deadline, serverNow: this.now() };
-    for (const s of room.seats) s.peer?.send({ type: 'room', room: view });
+    const message: ServerMessage = { type: 'room', room: view };
+    for (const s of room.seats) s.peer?.send(message);
   }
   private broadcastState(room: Room): void { for (const s of room.seats) if (s.peer) this.sendState(room, s); }
   private sendState(room: Room, seat: Seat): void {
@@ -260,14 +271,18 @@ export class RoomService {
     seat.peer?.send({ type: 'state', match: privateMatch(room.director.state, seat.id), playerId: seat.id, deadline: room.deadline, serverNow: this.now(), battleId: room.battleId, battleTime: room.battleId ? Math.min(room.battleDuration + 1, Math.max(0, (this.now() - room.battleStarted) / 1000)) : 0, settled: room.settled });
   }
   private sendFrames(room: Room, seat: Seat, reset = false): void {
-    if (!room.battleId) return;
+    if (!room.battleId || !seat.peer) return;
+    if (reset) { seat.sentFrames = 0; seat.resetPending = true; }
+    if (seat.peer.canSendFrames?.() === false) return;
+    reset = seat.resetPending ?? false;
     const playerId = seat.watching ?? seat.id;
     const frames = room.director?.playerFrames.get(playerId) ?? [];
     const time = Math.max(0, (this.now() - room.battleStarted) / 1000);
     let end = seat.sentFrames;
-    while (end < frames.length && frames[end].t <= time) end++;
+    while (end < frames.length && end < seat.sentFrames + 64 && frames[end].t <= time) end++;
     if (!reset && end === seat.sentFrames) return;
-    seat.peer?.send({ type: 'frames', playerId, battleId: room.battleId, frames: frames.slice(reset ? 0 : seat.sentFrames, end), time, reset });
-    seat.sentFrames = end;
+    const sent = seat.peer.send({ type: 'frames', playerId, battleId: room.battleId, frames: frames.slice(seat.sentFrames, end),
+      time: end < frames.length && frames[end].t <= time ? (frames[end - 1]?.t ?? 0) : time, reset });
+    if (sent !== false) { seat.sentFrames = end; seat.frameSentAt = this.now(); seat.resetPending = false; }
   }
 }

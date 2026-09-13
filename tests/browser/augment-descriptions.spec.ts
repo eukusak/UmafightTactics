@@ -9,7 +9,7 @@ test('match augments update skill and item descriptions with star scaling and sa
   const changes=panel.getByLabel('이 기물의 증강 효과');
   await expect(changes).toContainText('6/20중첩');
   await expect(changes).toContainText('다음 전투 +72');
-  await expect(changes).toContainText('스킬 치명타 가능');
+  await expect(changes).not.toContainText('스킬 치명타 가능');
   await changes.scrollIntoViewIfNeeded();
   await page.screenshot({path:info.outputPath('augmented-skill-description.png')});
   await panel.locator('.detail-item-link').filter({hasText:'연승 사냥꾼의 트로피'}).click();

@@ -1,15 +1,47 @@
-# A persistent Node web process is required for WebSocket rooms.
-# Existing Static Sites must be recreated as a Web Service to enable multiplayer.
+# New services: keep the existing combined service live until both are verified.
+# Do not convert a Node service to static or change the live service's region.
 services:
   - type: web
-    name: umafight-tactics
-    runtime: node
-    buildCommand: npm ci && npm run build
-    startCommand: npm start
-    healthCheckPath: /health
-    numInstances: 1
+    name: umafight-frontend
+    runtime: static
+    buildCommand: npm ci --include=dev && npm run build
+    staticPublishPath: dist
+    autoDeployTrigger: off
     envVars:
       - key: NODE_VERSION
         value: "22"
-      - key: NODE_OPTIONS
-        value: "--max-old-space-size=1024"
+      - key: VITE_MULTIPLAYER_URL
+        sync: false
+    routes:
+      - type: rewrite
+        source: /*
+        destination: /index.html
+    headers:
+      - path: /bundled/*
+        name: Cache-Control
+        value: public, max-age=31536000, immutable
+      - path: /assets/*
+        name: Cache-Control
+        value: public, max-age=3600, must-revalidate
+      - path: /index.html
+        name: Cache-Control
+        value: no-cache
+  - type: web
+    name: umafight-multiplayer
+    runtime: node
+    region: singapore
+    plan: free
+    numInstances: 1
+    autoDeployTrigger: off
+    buildCommand: npm ci --omit=dev
+    startCommand: npm run start:server
+    healthCheckPath: /health
+    envVars:
+      - key: NODE_VERSION
+        value: "22"
+      - key: NODE_ENV
+        value: production
+      - key: ALLOWED_ORIGINS
+        sync: false
+      - key: ENABLE_SERVER_METRICS
+        value: "true"

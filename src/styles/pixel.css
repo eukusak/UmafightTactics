@@ -1,7 +1,8 @@
 /* Arcade accents inspired by Base-Rogue: crisp frames, distinct type and small pixel motifs. */
 :root {
-  --font-body: 'Noto Sans KR Variable', 'Malgun Gothic', sans-serif;
-  --font-display: 'Black Han Sans', var(--font-body);
+  --font-reading: 'Noto Sans KR Variable', 'Malgun Gothic', sans-serif;
+  --font-body: 'Jua', var(--font-reading);
+  --font-display: 'Jua', var(--font-reading);
   --font-label: 'Jua', var(--font-body);
   --font-pixel: 'Press Start 2P', monospace;
 }

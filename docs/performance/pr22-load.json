@@ -1,0 +1,206 @@
+{
+  "environment": "Windows local development PC; browser regression checks also active; 8-second smoke, not Render capacity certification",
+  "compression": "permessage-deflate level 1, memLevel 4, concurrency 2, no context takeover",
+  "results": [
+    {
+      "scenario": {
+        "rooms": 1,
+        "playersPerRoom": 2,
+        "seconds": 8
+      },
+      "elapsed": 8.0024483,
+      "receivedBytes": 2106642,
+      "wireBytesPerSecond": 29707,
+      "receivedFrameBatches": 124,
+      "receivedFrames": 281,
+      "disconnected": 0,
+      "populatedBoards": [
+        [
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7
+        ]
+      ],
+      "rooms": 1,
+      "sockets": 2,
+      "players": 8,
+      "rssMB": 177.9,
+      "heapMB": 45.2,
+      "uptime": 9,
+      "cpuPercent": 21.5,
+      "messagesPerSecond": 16,
+      "bytesPerSecond": 261567,
+      "frameBatchesPerSecond": 15.5,
+      "deferredBatches": 0,
+      "ticks": 125,
+      "maxTickDriftMs": 936.5,
+      "maxBufferedBytes": 0,
+      "eventLoopP99Ms": 38.3
+    },
+    {
+      "scenario": {
+        "rooms": 1,
+        "playersPerRoom": 8,
+        "seconds": 8
+      },
+      "elapsed": 8.002984,
+      "receivedBytes": 8664820,
+      "wireBytesPerSecond": 126952,
+      "receivedFrameBatches": 491,
+      "receivedFrames": 1155,
+      "disconnected": 0,
+      "populatedBoards": [
+        [
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7
+        ]
+      ],
+      "rooms": 1,
+      "sockets": 8,
+      "players": 8,
+      "rssMB": 157.4,
+      "heapMB": 37.6,
+      "uptime": 9,
+      "cpuPercent": 24,
+      "messagesPerSecond": 63.3,
+      "bytesPerSecond": 1076630,
+      "frameBatchesPerSecond": 61.3,
+      "deferredBatches": 0,
+      "ticks": 126,
+      "maxTickDriftMs": 722.9,
+      "maxBufferedBytes": 0,
+      "eventLoopP99Ms": 42.9
+    },
+    {
+      "scenario": {
+        "rooms": 2,
+        "playersPerRoom": 8,
+        "seconds": 8
+      },
+      "elapsed": 8.0062528,
+      "receivedBytes": 16329204,
+      "wireBytesPerSecond": 230307,
+      "receivedFrameBatches": 942,
+      "receivedFrames": 2238,
+      "disconnected": 0,
+      "populatedBoards": [
+        [
+          7,
+          7,
+          7,
+          7,
+          5,
+          7,
+          7,
+          7
+        ],
+        [
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7
+        ]
+      ],
+      "rooms": 2,
+      "sockets": 16,
+      "players": 16,
+      "rssMB": 229.8,
+      "heapMB": 93,
+      "uptime": 10,
+      "cpuPercent": 33.8,
+      "messagesPerSecond": 120.6,
+      "bytesPerSecond": 2036973,
+      "frameBatchesPerSecond": 117.6,
+      "deferredBatches": 0,
+      "ticks": 119,
+      "maxTickDriftMs": 1195.4,
+      "maxBufferedBytes": 0,
+      "eventLoopP99Ms": 42
+    },
+    {
+      "scenario": {
+        "rooms": 4,
+        "playersPerRoom": 8,
+        "seconds": 8
+      },
+      "elapsed": 8.0088578,
+      "receivedBytes": 31540618,
+      "wireBytesPerSecond": 435956,
+      "receivedFrameBatches": 1777,
+      "receivedFrames": 4461,
+      "disconnected": 0,
+      "populatedBoards": [
+        [
+          7,
+          7,
+          7,
+          7,
+          4,
+          7,
+          7,
+          7
+        ],
+        [
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7
+        ],
+        [
+          7,
+          7,
+          7,
+          7,
+          5,
+          7,
+          7,
+          7
+        ],
+        [
+          6,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          2
+        ]
+      ],
+      "rooms": 4,
+      "sockets": 32,
+      "players": 32,
+      "rssMB": 306.7,
+      "heapMB": 126.1,
+      "uptime": 10,
+      "cpuPercent": 46,
+      "messagesPerSecond": 226.9,
+      "bytesPerSecond": 3937982,
+      "frameBatchesPerSecond": 221.9,
+      "deferredBatches": 0,
+      "ticks": 115,
+      "maxTickDriftMs": 1587.8,
+      "maxBufferedBytes": 0,
+      "eventLoopP99Ms": 45.2
+    }
+  ]
+}

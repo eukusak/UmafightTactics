@@ -40,6 +40,7 @@ export const clientMessageSchema = z.discriminatedUnion('type', [
 export type ClientMessage = z.infer<typeof clientMessageSchema>;
 export type RoomView = { seasonId: SeasonId; code: string; hostId: string; started: boolean; seats: Array<{ id: string; name: string; ready: boolean; connected: boolean; ai?: boolean }>; deadline: number; serverNow: number };
 export type ServerMessage =
+  | { type: 'draft'; round: string; draft: NonNullable<MatchState['draft']>; serverNow: number }
   | { type: 'welcome'; code: string; token: string; playerId: string; lastSeq: number }
   | { type: 'room'; room: RoomView }
   | { type: 'state'; match: MatchState; playerId: string; deadline: number; serverNow: number; battleId: string | null; battleTime: number; settled: boolean }

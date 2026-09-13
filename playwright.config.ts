@@ -21,7 +21,7 @@ export default defineConfig({
     { name: 'laptop', use: { viewport: { width: 1366, height: 768 } } },
   ],
   webServer: {
-    command: 'npm start',
+    command: 'npm run start:local',
     url: 'http://127.0.0.1:4173/health',
     reuseExistingServer: !process.env.CI,
     timeout: 30_000,

@@ -1,0 +1,47 @@
+{
+  "baseCommit": "90cae62326560eb34237b12f944ddfb1e2aae6fc",
+  "before": {
+    "files": [
+      {
+        "path": "/assets/index-CYJfjjil.js",
+        "bytes": 704489,
+        "gzip": 173932
+      },
+      {
+        "path": "/assets/phaser-BbgW2pkj.js",
+        "bytes": 1478587,
+        "gzip": 339685
+      },
+      {
+        "path": "/assets/react-DwkkceDe.js",
+        "bytes": 140796,
+        "gzip": 45254
+      }
+    ],
+    "bytes": 2323872,
+    "gzip": 558871
+  },
+  "after": {
+    "files": [
+      {
+        "file": "bundled/index-CoPHchzl.js",
+        "bytes": 505633,
+        "gzip": 120062
+      },
+      {
+        "file": "bundled/react-BJ8J4Bhk.js",
+        "bytes": 141733,
+        "gzip": 45421
+      },
+      {
+        "file": "bundled/runtime-Cpj98o6Y.js",
+        "bytes": 236,
+        "gzip": 180
+      }
+    ],
+    "totalBytes": 647602,
+    "gzip": 165663
+  },
+  "rawReductionPct": 72.13263036862617,
+  "gzipReductionPct": 70.35756015252178
+}

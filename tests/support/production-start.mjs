@@ -5,14 +5,14 @@ import { createServer } from 'node:net';
 import { once } from 'node:events';
 import { WebSocket } from 'ws';
 
-for (const args of [['--import', 'tsx', 'server/index.ts'], ['scripts/serve.mjs'], ['scripts/serve.mjs', '--static']]) {
+for (const args of [['--import', 'tsx', 'server/index.ts'], ['scripts/serve.mjs'], ['scripts/serve.mjs', '--local'], ['scripts/serve.mjs', '--static']]) {
   test(`production entry: node ${args.join(' ')}`, { timeout: 20000 }, async () => {
     const probe = createServer();
     probe.listen(0, '127.0.0.1');
     await once(probe, 'listening');
     const port = probe.address().port;
     await new Promise(resolve => probe.close(resolve));
-    const child = spawn(process.execPath, args, { env: { ...process.env, PORT: String(port), HOST: '127.0.0.1', ROOM_STATE_FILE: '' }, stdio: ['ignore', 'pipe', 'pipe'] });
+    const child = spawn(process.execPath, args, { env: { ...process.env, PORT: String(port), HOST: '127.0.0.1', ROOM_STATE_FILE: '', NODE_ENV: 'production', ALLOWED_ORIGINS: `http://127.0.0.1:${port}` }, stdio: ['ignore', 'pipe', 'pipe'] });
     const exited = once(child, 'exit');
     let output = '', socket;
     child.stdout.on('data', data => { output += data; });
@@ -28,8 +28,10 @@ for (const args of [['--import', 'tsx', 'server/index.ts'], ['scripts/serve.mjs'
     try {
       await waitFor(() => /server ready|server listening/.test(output));
       const base = `http://127.0.0.1:${port}`;
-      assert.equal((await fetch(`${base}/some/route`)).status, 200);
+      const servesAssets = args.includes('--static') || args.includes('--local');
+      assert.equal((await fetch(`${base}/some/route`)).status, servesAssets ? 200 : 404);
       assert.equal((await fetch(`${base}/assets/missing.mp3`)).status, 404);
+      if (servesAssets) {
       for (const asset of ['boards/bg_pve_training.png', 'motions/fuji_kiseki.png', 'portraits/fuji_kiseki.png']) {
         const plain = await fetch(`${base}/assets/${asset}`, { method: 'HEAD' });
         assert.equal(plain.status, 200);
@@ -43,6 +45,13 @@ for (const args of [['--import', 'tsx', 'server/index.ts'], ['scripts/serve.mjs'
         assert.equal(response.status, 200, file);
         assert.equal(response.headers.get('content-type'), 'audio/mpeg', file);
         assert.ok(Number(response.headers.get('content-length')) > 1000000, file);
+      }
+      const partial = await fetch(`${base}/assets/audio/title.mp3`, { headers: { Range: 'bytes=0-1023' } });
+      assert.equal(partial.status, 206); assert.equal((await partial.arrayBuffer()).byteLength, 1024);
+      } else {
+        for (const path of ['/assets/audio/title.mp3', '/assets/portraits/fuji_kiseki.png', '/bundled/missing.js']) {
+          const response = await fetch(base + path); assert.equal(response.status, 404); assert.equal(response.headers.get('content-encoding'), null);
+        }
       }
       if (args.includes('--static')) return;
       assert.equal((await (await fetch(`${base}/health`)).json()).multiplayer, true);
