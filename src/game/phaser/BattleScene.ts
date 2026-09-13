@@ -13,6 +13,8 @@ import { skillLabel } from '../ui/skill-presentation';
 import { drawLegendaryFeedback, legendaryFeedback, LEGENDARY_FEEDBACK_SECONDS } from '../ui/legendary-skill-feedback';
 import { COST_SKILL_PRESENTATION } from '../ui/cost-skill-presentation';
 
+import { impactPresentation } from '../ui/impact-presentation';
+
 type Snapshot = BattleFrame['units'][number];
 type Actor = {
   container: Phaser.GameObjects.Container;
@@ -33,6 +35,10 @@ type Actor = {
   bodyScaleX: number;
   bodyScaleY: number;
   frameSheet: boolean;
+  hitAt: number;
+  hitRecoil: number;
+  hitDirection: number;
+  hitTint: number;
 };
 const tint = (value: string): number => parseInt(value.replace('#', ''), 16);
 
@@ -50,6 +56,8 @@ export class BattleScene extends Phaser.Scene {
   private frameDelta = 0;
   private mirrored = false;
   private streaming = false;
+  private lastShakeAt = -Infinity;
+  private reducedMotion = typeof matchMedia === 'function' && matchMedia('(prefers-reduced-motion: reduce)').matches;
   private pulseAt = new Map<string, number>();
   private effects: Array<{ start: number; duration: number; object: Phaser.GameObjects.GameObject; update: (progress: number) => void }> = [];
   private projectiles: Array<{ image: Phaser.GameObjects.Arc; source: string; target: string; start: number; end: number; x: number; y: number }> = [];
@@ -99,6 +107,7 @@ export class BattleScene extends Phaser.Scene {
     this.playbackTime = time;
     this.readySent = false;
     this.pulseAt.clear();
+    this.lastShakeAt = -Infinity;
     this.mirrored = frames[0]?.units.some((u) => u.id.startsWith(`${this.humanId}#`) && u.team === 'B') ?? false;
     this.effects.forEach((e) => e.object.destroy()); this.effects = [];
     this.projectiles.forEach((p) => p.image.destroy()); this.projectiles = [];
@@ -211,7 +220,7 @@ export class BattleScene extends Phaser.Scene {
     container.add([hpTrail, hp, mana, shield]);
     const statuses = this.add.container(0, fullBody && !sheet ? -155 : -108);
     container.add(statuses);
-    return { container, body, hp, hpTrail, mana, shield, statuses, statusKey: '', action: 'idle', actionAt: 0, sheet, fullBody, frameSheet: sheet && !!FRAME_SHEETS[u.unitDefId], facing: u.team === 'B' ? -1 : 1, attackDuration: .4, attackReleaseAt: 0, bodyScaleX: body.scaleX, bodyScaleY: body.scaleY };
+    return { hitAt: -Infinity, hitRecoil: 0, hitDirection: 1, hitTint: 0xffffff, container, body, hp, hpTrail, mana, shield, statuses, statusKey: '', action: 'idle', actionAt: 0, sheet, fullBody, frameSheet: sheet && !!FRAME_SHEETS[u.unitDefId], facing: u.team === 'B' ? -1 : 1, attackDuration: .4, attackReleaseAt: 0, bodyScaleX: body.scaleX, bodyScaleY: body.scaleY };
   }
 
   private renderActor(u: Snapshot, next: Snapshot | undefined, mix: number): void {
@@ -251,6 +260,9 @@ export class BattleScene extends Phaser.Scene {
     a.body.setScale(a.bodyScaleX, a.bodyScaleY * (1 + idle * .008 - lunge * .025));
     // Generated frames own the pose. Do not deform or rotate the baked drawing again.
     if (a.frameSheet) a.body.setPosition(0, 0).setRotation(0).setScale(a.bodyScaleX, a.bodyScaleY);
+    // Offset only the drawing; the recorded action, frame sequence and board cell stay intact.
+    const hitAge = this.playbackTime - a.hitAt;
+    if (u.alive && hitAge >= 0 && hitAge < .18) a.body.x += a.hitDirection * a.hitRecoil * Math.sin(hitAge / .18 * Math.PI) * (1 - hitAge / .18);
     a.container.alpha = u.alive ? 1 : Math.max(0, 1 - (this.playbackTime - a.actionAt) / .65);
     const settle = 1 - Math.exp(-this.frameDelta * 22);
     a.hp.width = Phaser.Math.Linear(a.hp.width, 66 * Phaser.Math.Clamp(u.hp / Math.max(1, u.maxHp), 0, 1), settle);
@@ -275,7 +287,8 @@ export class BattleScene extends Phaser.Scene {
         }
       });
     }
-    if (u.statuses.includes('STUN')) a.body.setTint(0xc8a4ff); else a.body.clearTint();
+    if (u.alive && hitAge >= 0 && hitAge < .075) a.body.setTintFill(a.hitTint);
+    else if (u.statuses.includes('STUN')) a.body.setTint(0xc8a4ff); else a.body.clearTint();
 
   }
 
@@ -307,15 +320,19 @@ export class BattleScene extends Phaser.Scene {
       const image = this.add.circle(actor.container.x, actor.container.y - 38, 5, 0xffe2a0).setStrokeStyle(2, 0xffffff, .8).setDepth(800).setBlendMode(Phaser.BlendModes.ADD);
       this.projectiles.push({ image, source: event.source, target: event.target, start: event.t, end: event.impactAt, x: sourcePoint.x, y: sourcePoint.y - 38 * actor.container.scaleX });
     } else if (event.type === 'DAMAGE') {
-      // Damage never changes pose or interrupts an attack. User direction 2026-09-08.
+      // Damage feedback never interrupts the recorded attack or skill.
       const actor = this.actors.get(event.target);
       if (!actor) return;
       if (this.playbackTime - event.t >= .6) return;
+      if (event.damage > 0 || event.absorbed > 0) this.presentImpact(event, actor);
       if (this.showNumbers && (event.damage > 0 || event.absorbed > 0)) {
         const critical = event.crit || this.frames[this.eventIndex].events.some((e) => e.type === 'ATTACK' && e.source === event.source && e.target === event.target && e.crit);
         const label = this.add.text(actor.container.x, actor.container.y - 78, event.damage > 0 ? `${critical ? '✦ ' : ''}${Math.round(event.damage)}` : '방어', { fontFamily: 'Noto Sans KR Variable, sans-serif', fontSize: critical ? '26px' : '20px', color: critical ? '#ffdc80' : event.isSkill ? '#dac7ff' : '#ffffff', stroke: '#182238', strokeThickness: 4 }).setOrigin(.5).setDepth(900);
         const x = label.x, y = label.y;
-        this.track(label, event.t, .6, (t) => label.setPosition(x, y - t * 36).setAlpha(1 - t));
+        this.track(label, event.t, .65, (t) => {
+          const pop = this.reducedMotion ? 1 : t < .15 ? .75 + t / .15 * .5 : 1 + .25 * Math.exp(-(t - .15) * 12);
+          label.setScale(pop).setPosition(x + (this.reducedMotion ? 0 : actor.hitDirection * t * (critical ? 16 : 8)), y - (this.reducedMotion ? 0 : Math.sqrt(t) * 40)).setAlpha(Math.min(1, (1 - t) * 2));
+        });
       }
     } else if (event.type === 'CAST') {
       const actor = this.setAction(event.source, 'skill_cast', event.t);
@@ -338,6 +355,44 @@ export class BattleScene extends Phaser.Scene {
     else if (event.type === 'OVERTIME') {
       const text = this.add.text(660, 90, 'OVERTIME', { fontFamily: 'Noto Sans KR Variable, sans-serif', fontSize: '32px', color: '#ffe6ae', stroke: '#96372a', strokeThickness: 5 }).setOrigin(.5).setDepth(950);
       this.track(text, event.t, 1.7, (t) => text.setAlpha(Math.min(1, (1 - t) * 3)));
+    }
+  }
+
+  private presentImpact(event: Extract<BattleEvent, { type: 'DAMAGE' }>, actor: Actor): void {
+    if (this.playbackTime - event.t > .2 || this.effects.length > 180 || event.t - actor.hitAt < .075) return;
+    const frame = this.frames[this.eventIndex];
+    const target = frame.units.find(u => u.id === event.target);
+    const source = frame.units.find(u => u.id === event.source);
+    const critical = !!event.crit || frame.events.some(e => e.type === 'ATTACK' && e.source === event.source && e.target === event.target && e.crit);
+    const style = impactPresentation(event.damage, target?.maxHp ?? 1000, critical, !!event.isSkill, source ? getUnitDef(source.unitDefId).cost : 1, this.reducedMotion);
+    const attacker = this.actors.get(event.source);
+    const direction = attacker ? Math.sign(actor.container.x - attacker.container.x) || 1 : 1;
+    actor.hitAt = event.t; actor.hitRecoil = style.recoil; actor.hitDirection = direction; actor.hitTint = style.flash;
+    const x = actor.container.x, y = actor.container.y - 38 * actor.container.scaleX;
+    const color = event.damage <= 0 ? 0x95efff : style.flash;
+    const graphic = this.add.graphics().setDepth(850).setBlendMode(Phaser.BlendModes.ADD);
+    this.track(graphic, event.t, style.duration, p => {
+      graphic.clear();
+      const spread = this.reducedMotion ? .3 : p;
+      const radius = style.radius * (.35 + spread);
+      graphic.lineStyle(Math.max(1, 3 * (1-p)), color, (1-p)*.85);
+      if (event.isSkill || event.damage <= 0) graphic.strokeCircle(x,y,radius);
+      else {
+        graphic.lineBetween(x-radius*.7,y+radius,x+radius*.7,y-radius);
+        graphic.lineBetween(x-radius,y-radius*.35,x+radius,y+radius*.35);
+      }
+      graphic.fillStyle(0xffffff, Math.max(0,1-p*5)*.8);
+      graphic.fillCircle(x,y,style.radius*.25);
+      for(let i=0;i<style.particles;i++) {
+        const angle=i/style.particles*Math.PI*2+(direction>0?0:.45);
+        const distance=(6+spread*28)*(.7+(i%3)*.15);
+        graphic.fillStyle(i%2?color:0xffffff,(1-p)*.8);
+        graphic.fillRect(x+Math.cos(angle)*distance,y+Math.sin(angle)*distance,2+(i%2),2+(i%2));
+      }
+    });
+    if (style.shake && event.t - this.lastShakeAt >= .35) {
+      this.lastShakeAt = event.t;
+      this.cameras.main.shake(70,style.shake,false);
     }
   }
 

@@ -29,8 +29,8 @@ export function matchAugmentGrades(state: MatchState): [AugmentGrade, AugmentGra
 }
 
 /** Three distinct options of the round's grade, never repeating a taken augment. */
-export function rollAugmentOptions(player: PlayerState, grade: AugmentGrade, rng: Rng): string[] {
-  const taken = new Set(player.augments);
+export function rollAugmentOptions(player: PlayerState, grade: AugmentGrade, rng: Rng, excluded: string[] = []): string[] {
+  const taken = new Set([...player.augments,...excluded]);
   const roster = new Set(getSeasonUnits(player.seasonId).map(u => u.id));
   const pool = AUGMENTS_BY_GRADE[grade].filter(a => !taken.has(a.id) && (!a.filter?.unitIds || a.filter.unitIds.some(id => roster.has(id))) && !(a.filter?.noActiveTrait && player.augments.includes('team_diversity')) && !(a.id === 'team_diversity' && player.augments.includes('outsider')));
   if (pool.length >= 3) return rng.sample(pool, 3).map((a) => a.id);
@@ -48,6 +48,7 @@ export function createAugmentOffers(state: MatchState, rng: Rng): AugmentOffer[]
       grade,
       options: rollAugmentOptions(p, grade, rng),
       chosen: null,
+      rerolled: [false,false,false],
     }));
 }
 
@@ -148,4 +149,16 @@ function grantUnitWithTrait(state: MatchState, player: PlayerState, trait: Trait
   if (!take(state.pool, chosen.id, 1)) return;
   player.bench.push(newInstance(state, chosen.id, 1));
   applyCombines(state, player);
+}
+
+/** Replace only one card, at the same grade, without showing a previously seen option. */
+export function rerollAugmentOffer(state:MatchState,player:PlayerState,slot:number,rng:Rng|(()=>Rng)):boolean {
+  const offer=state.augmentOffers.find(o=>o.playerId===player.id);
+  if(state.phase!=='AUGMENT_SELECT'||player.eliminatedAtRound!==null||!offer||offer.chosen!==null||!Number.isInteger(slot)||slot<0||slot>=offer.options.length||offer.rerolled?.[slot])return false;
+  const seen=[...new Set([...(offer.seen??[]),...offer.options])];
+  const options=rollAugmentOptions(player,offer.grade,typeof rng==='function'?rng():rng,seen);
+  if(!options.length)return false;
+  offer.options[slot]=options[0];offer.seen=[...seen,options[0]];
+  offer.rerolled??=offer.options.map(()=>false);offer.rerolled[slot]=true;
+  return true;
 }

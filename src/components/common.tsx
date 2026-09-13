@@ -1,3 +1,5 @@
+import { useGameStore } from '../store/gameStore';
+import { matchItemDescription } from '../game/ui/match-descriptions';
 /** Small shared presentational pieces. */
 import { useEffect, useRef, useState, type ReactNode } from 'react';
 import { getUnitDef } from '../game/engine/roster';
@@ -32,6 +34,7 @@ export function UnitToken({
   size?: number;
   onContextMenu?: (e: React.MouseEvent) => void;
 }): JSX.Element {
+  const owner = useGameStore(s=>s.match?.players.find(p=>[...p.board,...p.bench].some(u=>u.instanceId===unit.instanceId)));
   const def = getUnitDef(unit.unitDefId);
   return (
     <div
@@ -47,7 +50,7 @@ export function UnitToken({
       {unit.items.length > 0 && (
         <div className="items">
           {unit.items.map((id, i) => (
-            <ItemIcon key={`${id}-${i}`} itemId={id} size={18} />
+            <ItemIcon key={`${id}-${i}`} itemId={id} size={18} title={matchItemDescription(id, owner).description} />
           ))}
         </div>
       )}

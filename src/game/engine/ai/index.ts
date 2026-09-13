@@ -14,7 +14,7 @@ import { combine, getItem, COMPONENT_IDS } from '../items/item-defs';
 import { canEquip, equipItem, equipTactician } from '../items/inventory';
 import { getUnitDef, getUnitTraits } from '../roster';
 import { activeTierIndex, getTrait } from '../traits/trait-defs';
-import { benchCapacity, buyUnit, rollShop, sellUnit, teamSizeLimit } from '../shop';
+import { benchCapacity, buyUnit, rollShop, sellUnit, teamSizeLimit, itemStorageCapacity } from '../shop';
 import type { Rng } from '../rng';
 import type { Role, TraitId } from '../types';
 import type { MatchState, PlayerState, UnitInstance } from '../state';
@@ -104,8 +104,8 @@ export function buyScore(player: PlayerState, unitDefId: string): number {
 
   const roleFit = (profile.roleBias[def.role] ?? 0) + roleNeed(player, def.role);
 
-  // Spare items the AI can already use raise the value of a new carry body.
-  const itemFit = player.items.length > 0 && (def.role === 'AD_CARRY' || def.role === 'AP_CARRY') ? 0.6 : 0.2;
+  const candidate:UnitInstance={instanceId:'shop-candidate',unitDefId,star:1,sourceCopies:1,items:[],position:null};
+  const gearFit=player.items.map(i=>itemFit(candidate,i.itemId,player)).sort((a,b)=>b-a).slice(0,3).reduce((n,v)=>n+Math.max(0,v),0)*.07;
 
   const rawPower = def.uftRating + def.cost * 0.12;
 
@@ -135,7 +135,7 @@ export function buyScore(player: PlayerState, unitDefId: string): number {
     upgradeNeed * 3.0 +
     traitFit * 1.5 +
     roleFit * 1.2 +
-    itemFit * 0.8 +
+    gearFit * 0.8 +
     rawPower * 0.8 -
     benchPressure * 1.3 -
     staleLowCost -
@@ -161,7 +161,7 @@ export function resolveAiItemRewards(state: MatchState, player: PlayerState): vo
     for (const grant of [...player.pendingGrants]) {
       if (!isItemReward(grant)) continue;
       const units = [...player.board, ...player.bench];
-      const score = (id: string) => Math.max(0, ...units.filter(u => canEquip(u, id).ok).map(u => itemFit(u, id)));
+      const score = (id: string) => Math.max(0, ...units.filter(u => canEquip(u, id).ok).map(u => itemFit(u, id, player)));
       const options = itemRewardOptions(grant.kind).sort((a, b) => score(b) - score(a) || a.localeCompare(b));
       while (grant.count > 0 && options.length) if (!claimItemReward(state, player, grant.kind, options[0])) break;
     }
@@ -215,6 +215,10 @@ export function runAiPrep(state: MatchState, player: PlayerState, rng: Rng): voi
     if (!acted) break;
   }
 
+  // New purchases and upgrades can make a different plan viable in this prep.
+  player.aiPlan=choosePlan(player,state.stage,state.round,scouts);
+  applyPlacement(player,planPlacement(player,true,scouts));
+  retireItemHolders(state,player);
   sellSurplus(state, player);
   finalizeAiFormation(player, scouts);
 }
@@ -266,13 +270,13 @@ export function assignItems(player: PlayerState): void {
     for (const unit of fielded) for (const stored of player.items) {
       const item = getItem(stored.itemId);
       if (!canEquip(unit, stored.itemId).ok) continue;
-      if (!item.isComponent) candidates.push({ unit, first: stored.instanceId, result: item.id, score: itemFit(unit, item.id) });
+      if (!item.isComponent) candidates.push({ unit, first: stored.instanceId, result: item.id, score: itemFit(unit, item.id, player, fielded) });
       else {
         const equipped = unit.items.find(id => getItem(id).isComponent && combine(id, item.id));
         if (equipped) {
           const result = combine(equipped, item.id)!;
           const virtual = { ...unit, items: unit.items.filter(id => id !== equipped) };
-          if (canEquip(virtual, result).ok) candidates.push({ unit, first: stored.instanceId, result, score: itemFit(unit, result) + 1 });
+          if (canEquip(virtual, result).ok) candidates.push({ unit, first: stored.instanceId, result, score: itemFit(unit, result, player, fielded) + 1 });
         } else for (const partner of player.items) {
           if (partner === stored || !getItem(partner.itemId).isComponent) continue;
           const result = combine(item.id, partner.itemId);
@@ -291,8 +295,8 @@ export function assignItems(player: PlayerState): void {
   for (const stored of player.items.slice()) {
     if (!getItem(stored.itemId).isComponent) continue;
     const candidates = fielded.filter(u => !u.items.some(id => getItem(id).isComponent) && canEquip(u, stored.itemId).ok)
-      .sort((a, b) => itemFit(b, stored.itemId) - itemFit(a, stored.itemId));
-    if (candidates[0] && itemFit(candidates[0], stored.itemId) >= 3 && (player.hp < 65 || player.items.length >= 6)) equipItem(player, candidates[0].instanceId, stored.instanceId);
+      .sort((a, b) => itemFit(b, stored.itemId, player, fielded) - itemFit(a, stored.itemId, player, fielded));
+    if (candidates[0] && itemFit(candidates[0], stored.itemId, player, fielded) >= 3 && (player.hp < 65 || player.items.length >= 6)) equipItem(player, candidates[0].instanceId, stored.instanceId);
   }
 }
 
@@ -315,3 +319,14 @@ export function refreshAiBoard(player: PlayerState): void {
 }
 
 export { COMPONENT_IDS, addXp };
+
+/** Sell a genuinely benched temporary holder only after a stronger compatible body exists. */
+export function retireItemHolders(state:MatchState,player:PlayerState):void {
+  for(const old of player.bench.slice()) {
+    if(!old.items.length || old.star===3 || old.unitDefId===player.aiPlan?.carryId)continue;
+    const def=getUnitDef(old.unitDefId);
+    const replacement=player.board.find(u=>getUnitDef(u.unitDefId).role===def.role && u.star>=old.star && getUnitDef(u.unitDefId).cost>def.cost
+      && old.items.every(id=>canEquip({...u,items:[...u.items]},id).ok && itemFit(u,id,player)>=itemFit(old,id,player)) && u.items.length+old.items.reduce((n,id)=>n+getItem(id).slotCost,0)<=3);
+    if(replacement && player.items.length+old.items.length<=itemStorageCapacity(player))sellUnit(state,player,old.instanceId);
+  }
+}

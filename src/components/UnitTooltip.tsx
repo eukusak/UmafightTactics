@@ -1,3 +1,4 @@
+import { matchSkillDescription, matchItemDescription } from '../game/ui/match-descriptions';
 import { SkillValues } from './SkillValues';
 import { buildBaseStats } from '../game/engine/battle/combat-unit';
 /** Right-click unit detail (spec §28). Never shows the UmaRogue tier. */
@@ -15,10 +16,14 @@ const DISTANCE_LABEL: Record<string, string> = {
 
 export function UnitTooltip({ unit }: { unit: UnitInstance }): JSX.Element {
   const seasonId = useGameStore(s => s.match?.seasonId);
+  const owner = useGameStore(s=>s.match?.players.find(p=>[...p.board,...p.bench].some(u=>u.instanceId===unit.instanceId)));
   const def = getUnitDef(unit.unitDefId);
   const mult = STAR_STAT_MULT[unit.star];
   const src = def.source;
   const abilityPower = buildBaseStats(def.id, unit.star, unit.items).abilityPower;
+
+  const traits = [...new Set([...getUnitTraits(def.id, seasonId), ...unit.items.flatMap(id=>getItem(id).grantsTrait?[getItem(id).grantsTrait!]:[]), ...(owner?.bonusTraits.filter(t=>t.instanceId===unit.instanceId).map(t=>t.trait)??[])])];
+  const effective = matchSkillDescription(def, owner, { star: unit.star, items: unit.items, abilityPower, traits });
 
   return (
     <>
@@ -49,13 +54,14 @@ export function UnitTooltip({ unit }: { unit: UnitInstance }): JSX.Element {
 
       <div style={{ marginTop: 10, paddingTop: 8, borderTop: '1px solid #24384a' }}>
         <strong style={{ color: 'var(--cyan)' }}>{def.skill.displayName}</strong>
-        <div className="muted" style={{ marginTop: 4 }}>기본 동작 · 1성/주문력 100: {def.skill.description}</div>
+        <div className="muted" style={{ marginTop: 4 }}>{effective.changes.length ? '이번 경기 효과: ' : '기본 동작 · 1성/주문력 100: '}{effective.description}</div>
         <div className="muted" style={{ marginTop: 4, fontSize: 12 }}>
           마나 {def.skill.manaCost}
         </div>
       </div>
 
-      <SkillValues skill={def.skill} cost={def.cost} star={unit.star} abilityPower={abilityPower} />
+      {effective.changes.length > 0 && <div className="match-augment-changes">{effective.changes.map(line=><p key={line}>{line}</p>)}</div>}
+      <SkillValues skill={effective.skill} cost={def.cost} star={unit.star} abilityPower={abilityPower} />
       {unit.items.length > 0 && (
         <div style={{ marginTop: 10, paddingTop: 8, borderTop: '1px solid #24384a' }}>
           {unit.items.map((id, i) => {
@@ -63,7 +69,7 @@ export function UnitTooltip({ unit }: { unit: UnitInstance }): JSX.Element {
             return (
               <div key={`${id}-${i}`} style={{ marginBottom: 5 }}>
                 <strong>{item.name}</strong>
-                <div className="muted" style={{ fontSize: 12 }}>{item.description}</div>
+                <div className="muted match-item-description" style={{ fontSize: 12 }}>{matchItemDescription(item.id, owner).description}</div>
               </div>
             );
           })}

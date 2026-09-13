@@ -1,3 +1,4 @@
+import { matchSkillDescription } from '../game/ui/match-descriptions';
 /** Shop row, bench row and the footer controls. */
 import { useState } from 'react';
 import { useInteractionStore } from '../store/interactionStore';
@@ -35,6 +36,7 @@ export function ShopRow(): JSX.Element | null {
         }
         const def = getUnitDef(slot.unitDefId);
         const affordable = player.gold >= def.cost;
+        const effective = matchSkillDescription(def, player);
         const upgrade = purchaseUpgradeStar(player, def.id);
         const wanted = wishlist[player.seasonId ?? 's1']?.includes(def.id) ?? false;
         return (
@@ -45,7 +47,7 @@ export function ShopRow(): JSX.Element | null {
             style={{ borderColor: costVar(def.cost), opacity: affordable ? 1 : 0.55 }}
             onClick={() => buy(i)}
             disabled={!affordable}
-            title={`${def.nameKo} — ${def.skill.displayName}\n${def.skill.description}`}
+            title={`${def.nameKo} — ${def.skill.displayName}\n${effective.description}\n${effective.changes.join('\n')}`}
           >
             <span className="cost">{def.cost}G</span>
             {upgrade && <span className={`shop-upgrade-badge star-${upgrade}`} aria-label={`구입 시 ${upgrade}성 합성`} title={`필드와 대기석 기물 포함 · 구입 시 ${upgrade}성 합성`}>{'★'.repeat(upgrade)} {upgrade}성 가능</span>}

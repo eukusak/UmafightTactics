@@ -186,9 +186,10 @@
       "portraitSha256": "f91a0d4bbb4a42d6430c975f74d0b808fbf0cf63ce218ce3c044ae8cea3f1cbe",
       "baselineRuntimeSha256": "6a7b7f5dcbe891f26b2bea2717100ca0ab419256402980f61a1b6c515c55f41a",
       "baselinePacking": "docs/art-source/motions/production-144/tm_opera_o/packing.json",
-      "skillSignature": "6a058a7c1d3a4b1a46bb313191dd1699a9386691158a0589b36d20aaf7be369b",
+      "skillSignature": "109653cb778f21833db1e269056f0a66cc72f29504b54872857cd0dadce66cd5",
       "name": "티엠 오페라 오",
-      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json",
+      "balanceCompatibilityReview": "docs/qa/adaptive-balance-motion-compatibility.json"
     },
     "narita_brian": {
       "decision": "retain",
@@ -210,11 +211,12 @@
       "portraitSha256": "971dee45efe55a6c2abefde82e3b9e345e0cb41329df93e554895f303ae6d8a3",
       "baselineRuntimeSha256": "4bf8b078d777fe61bd935cf356719c7ea5cc26fec3dd7ca60ce7a62d51ae6d38",
       "baselinePacking": "docs/art-source/motions/production-144/symboli_rudolf/packing.json",
-      "skillSignature": "ccd301ae7e36fa92ca4acb3b94e965cd1449c96fadbe37dfa1467b7d7763c055",
+      "skillSignature": "7f099e60057dfa043a8cacd34ea60ee59374f05de168d718b399e7bd12e2bc17",
       "name": "심볼리 루돌프",
       "revision": "docs/art-source/motions/identity-revisions-2026-09-12/symboli_rudolf/review.json",
       "runtimeSha256": "bffcdd5cb256881b0596545b871f80264e39bb9f07825a69708a6e8b07361e30",
-      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json",
+      "balanceCompatibilityReview": "docs/qa/adaptive-balance-motion-compatibility.json"
     },
     "air_groove": {
       "decision": "retain",
@@ -236,12 +238,13 @@
       "portraitSha256": "b186ade2fafb02ce3f31c20f3272d8d18940359cb19b5e5181f5aae767ef1ae1",
       "baselineRuntimeSha256": "ee9a562de6408ca7c5c77792d28c4f6f848c2e2c323e7778feed5f5ddb7d4bf6",
       "baselinePacking": "docs/art-source/motions/skill-revisions-2026-09-11/agnes_digital/packing.json",
-      "skillSignature": "3c6c96dada7d38990c58d902a8428f9915c155904a6748d29e67caaa46f1ef34",
+      "skillSignature": "aaa84344b9a75eb59066493ab6275e0b3d1c8dcaf2e413dfbe75367b5c8b54e0",
       "name": "아그네스 디지털",
       "revision": "docs/art-source/motions/identity-revisions-2026-09-12/agnes_digital/review.json",
       "runtimeSha256": "592b64ce0b84f3539ed09f06e6cabfb4e3e187cf978b566dc4af758d759f5cb0",
       "previousAugmentPatchSkillSignature": "98807291639a679acce31516e0bce9b9236831be08e183a7e8f86a6f95031ea6",
-      "augmentPatchReview": "docs/qa/augment-motion-compatibility.json"
+      "augmentPatchReview": "docs/qa/augment-motion-compatibility.json",
+      "balanceCompatibilityReview": "docs/qa/adaptive-balance-motion-compatibility.json"
     },
     "seiun_sky": {
       "decision": "retain",
@@ -385,9 +388,10 @@
       "portraitSha256": "f240fb3bd647f0d61ec5080910dbec8fb9f4019def1720c7dc68592e0fd7cefb",
       "baselineRuntimeSha256": "8a5e04e050544350fb63e7ff388c5438d5776786d75e65d94ce4aec16aad7202",
       "baselinePacking": "docs/art-source/motions/skill-revisions-2026-09-11/agnes_tachyon/packing.json",
-      "skillSignature": "3b857d50eb10c1ab2456b994e4da174eff38c1b171fd25f746ba7fa7771bbf29",
+      "skillSignature": "bc43fc6b353919149783f29ca249d6aa5ce56317402059ac16807d76e737134a",
       "name": "아그네스 타키온",
-      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json",
+      "balanceCompatibilityReview": "docs/qa/adaptive-balance-motion-compatibility.json"
     },
     "admire_vega": {
       "decision": "revise",
@@ -1584,11 +1588,12 @@
       "portraitSha256": "8facd0bcfe8c7cfc69789b6d7a7928f786b29719f1f7f49bfaf63012c74fcb81",
       "baselineRuntimeSha256": "98f77dbbd14a9514ad9e1c8e0256ee41697dd078c3cd035a6000879a1daee31b",
       "baselinePacking": "docs/art-source/motions/skill-revisions-2026-09-11/gran_alegria/packing.json",
-      "skillSignature": "5e134ba7ac2ef0f0fa9c0d35681fbfe188d5cab7555394469302b60a23d774d3",
+      "skillSignature": "aad70cacc6cfc1d2304abc4cd1a2b9543647abafecb354da35dd0047c1ac3415",
       "name": "그란 알레그리아",
       "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json",
       "previousAugmentPatchSkillSignature": "db31e0d4d4d5ee882cdb44764dd43f34c933d4090972e4da6d14076e45a21b6a",
-      "augmentPatchReview": "docs/qa/augment-motion-compatibility.json"
+      "augmentPatchReview": "docs/qa/augment-motion-compatibility.json",
+      "balanceCompatibilityReview": "docs/qa/adaptive-balance-motion-compatibility.json"
     },
     "loves_only_you": {
       "decision": "retain",

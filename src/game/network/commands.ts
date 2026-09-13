@@ -18,6 +18,7 @@ export function applyOnlineCommand(director: RoundDirector, playerId: string, co
   const battle = state.phase === 'BATTLE';
   const owns = (id: string) => [...player.board, ...player.bench].find((u) => u.instanceId === id);
   if (command.action === 'carouselMove') return setCarouselTarget(state, playerId, command.target, command.option) ? null : '이동할 수 없는 회전 드래프트입니다.';
+  if (command.action === 'augmentReroll') return director.rerollAugment(playerId,command.slot) ? null : '이 증강은 더 이상 새로고침할 수 없습니다.';
   if (command.action === 'augment') return director.chooseAugment(playerId, command.id) ? null : '선택할 수 없는 증강입니다.';
   if (command.action === 'draft') return director.pickDraft(playerId, command.index) ? null : '지금 선택할 수 없습니다.';
   if (!['ROUND_PREP', 'BATTLE'].includes(state.phase)) return '현재는 선택 단계입니다.';

@@ -1015,7 +1015,7 @@
         "effects": [
           {
             "kind": "SHIELD_FLAT",
-            "value": 643,
+            "value": 729,
             "duration": 4,
             "target": "SELF"
           },
@@ -1033,7 +1033,7 @@
           }
         ],
         "vfxKey": "vfx_shield",
-        "description": "[결투 방벽] 643 보호막(4초), 1.5초 제어 면역. 주변 2칸 최대 3명을 2초 도발. 근거: 2000 有馬記念(GI) 1위.",
+        "description": "[결투 방벽] 729 보호막(4초), 1.5초 제어 면역. 주변 2칸 최대 3명을 2초 도발. 근거: 2000 有馬記念(GI) 1위.",
         "choreography": {
           "windup": 0.45,
           "recovery": 0.3,
@@ -1046,7 +1046,7 @@
           "motion": "STRIKE"
         }
       },
-      "skillSignature": "6a058a7c1d3a4b1a46bb313191dd1699a9386691158a0589b36d20aaf7be369b",
+      "skillSignature": "109653cb778f21833db1e269056f0a66cc72f29504b54872857cd0dadce66cd5",
       "basicAttack": "근접 준비 → 당김 → 타격 → 회수",
       "skillPoseDraft": [
         "방어 자세 준비",
@@ -1151,7 +1151,7 @@
         "effects": [
           {
             "kind": "DAMAGE",
-            "value": 258,
+            "value": 245,
             "damageType": "MAGIC",
             "target": "LARGEST_ENEMY_CLUSTER",
             "shape": "LINE",
@@ -1169,7 +1169,7 @@
           }
         ],
         "vfxKey": "vfx_stun",
-        "description": "[관통 구속] 직선 6칸 최대 4명에게 258 마법 피해와 1초 기절. 근거: 1985 有馬記念(GI) 1위.",
+        "description": "[관통 구속] 직선 6칸 최대 4명에게 245 마법 피해와 1초 기절. 근거: 1985 有馬記念(GI) 1위.",
         "choreography": {
           "windup": 0.45,
           "recovery": 0.3,
@@ -1182,7 +1182,7 @@
           "motion": "STRIKE"
         }
       },
-      "skillSignature": "ccd301ae7e36fa92ca4acb3b94e965cd1449c96fadbe37dfa1467b7d7763c055",
+      "skillSignature": "7f099e60057dfa043a8cacd34ea60ee59374f05de168d718b399e7bd12e2bc17",
       "basicAttack": "근접 준비 → 당김 → 타격 → 회수",
       "skillPoseDraft": [
         "대상 지점 조준",
@@ -1283,7 +1283,7 @@
         "effects": [
           {
             "kind": "DAMAGE",
-            "value": 306,
+            "value": 330,
             "damageType": "PHYSICAL",
             "target": "HIGHEST_AD_ENEMY"
           },
@@ -1297,7 +1297,7 @@
           }
         ],
         "vfxKey": "vfx_projectile",
-        "description": "[주력 저격] 공격력이 가장 높은 적을 저격해 306 물리 피해와 공격력 15% 감소(3초). 근거: 2001 天皇賞(秋)(GI) 1위.",
+        "description": "[주력 저격] 공격력이 가장 높은 적을 저격해 330 물리 피해와 공격력 15% 감소(3초). 근거: 2001 天皇賞(秋)(GI) 1위.",
         "choreography": {
           "windup": 0.3,
           "recovery": 0.3,
@@ -1310,7 +1310,7 @@
           "motion": "STRIKE"
         }
       },
-      "skillSignature": "3c6c96dada7d38990c58d902a8428f9915c155904a6748d29e67caaa46f1ef34",
+      "skillSignature": "aaa84344b9a75eb59066493ab6275e0b3d1c8dcaf2e413dfbe75367b5c8b54e0",
       "basicAttack": "원거리 조준 → 발사 준비 → 투사체 방출 → 반동 회복",
       "skillPoseDraft": [
         "동일 대상에 1차 발사",
@@ -2158,21 +2158,21 @@
           },
           {
             "kind": "DAMAGE",
-            "value": 126,
+            "value": 119,
             "damageType": "PHYSICAL",
             "target": "CURRENT_TARGET",
             "delay": 0
           },
           {
             "kind": "DAMAGE",
-            "value": 126,
+            "value": 119,
             "damageType": "PHYSICAL",
             "target": "CURRENT_TARGET",
             "delay": 0.2
           }
         ],
         "vfxKey": "vfx_projectile",
-        "description": "[가속 장전] 4초간 공격속도 +55.8%, 공격력 +24.8%. 장전 타격으로 126 물리 피해를 2회. 근거: 2001 皐月賞(GI) 1위.",
+        "description": "[가속 장전] 4초간 공격속도 +55.8%, 공격력 +24.8%. 장전 타격으로 119 물리 피해를 2회. 근거: 2001 皐月賞(GI) 1위.",
         "choreography": {
           "windup": 0.15,
           "recovery": 0.3,
@@ -2185,7 +2185,7 @@
           "motion": "PULSE"
         }
       },
-      "skillSignature": "3b857d50eb10c1ab2456b994e4da174eff38c1b171fd25f746ba7fa7771bbf29",
+      "skillSignature": "bc43fc6b353919149783f29ca249d6aa5ce56317402059ac16807d76e737134a",
       "basicAttack": "원거리 조준 → 발사 준비 → 투사체 방출 → 반동 회복",
       "skillPoseDraft": [
         "동일 대상에 1차 발사",
@@ -8761,21 +8761,21 @@
           },
           {
             "kind": "DAMAGE",
-            "value": 128,
+            "value": 141,
             "damageType": "PHYSICAL",
             "target": "CURRENT_TARGET",
             "delay": 0
           },
           {
             "kind": "DAMAGE",
-            "value": 128,
+            "value": 141,
             "damageType": "PHYSICAL",
             "target": "CURRENT_TARGET",
             "delay": 0.2
           },
           {
             "kind": "DAMAGE",
-            "value": 128,
+            "value": 141,
             "damageType": "PHYSICAL",
             "target": "CURRENT_TARGET",
             "delay": 0.4
@@ -8790,7 +8790,7 @@
           }
         ],
         "vfxKey": "vfx_dash_senko",
-        "description": "[추격 연타] 돌진 후 한 적에게 128 물리 피해를 3회, 4초간 공격속도 +24.8%. 대상 사망 시 남은 타격은 재탐색. 근거: 2020 マイルチャンピオンS(GI) 1위.",
+        "description": "[추격 연타] 돌진 후 한 적에게 141 물리 피해를 3회, 4초간 공격속도 +24.8%. 대상 사망 시 남은 타격은 재탐색. 근거: 2020 マイルチャンピオンS(GI) 1위.",
         "choreography": {
           "windup": 0.3,
           "recovery": 0.3,
@@ -8803,7 +8803,7 @@
           "motion": "PULSE"
         }
       },
-      "skillSignature": "5e134ba7ac2ef0f0fa9c0d35681fbfe188d5cab7555394469302b60a23d774d3",
+      "skillSignature": "aad70cacc6cfc1d2304abc4cd1a2b9543647abafecb354da35dd0047c1ac3415",
       "basicAttack": "원거리 조준 → 발사 준비 → 투사체 방출 → 반동 회복",
       "skillPoseDraft": [
         "낮게 웅크린 출발",

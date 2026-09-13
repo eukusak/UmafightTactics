@@ -1,3 +1,4 @@
+import { matchItemDescription } from '../game/ui/match-descriptions';
 import { AudioControls } from './AudioControls';
 import { ItemRewards } from './ItemRewards';
 import { ItemTools } from './ItemTools';
@@ -26,7 +27,7 @@ export function TopHud(): JSX.Element | null {
 
   return (
     <div className="hud-top">
-      <div style={{ fontSize: 26, fontWeight: 900, letterSpacing: 1 }}>
+      <div className="round-crest" style={{ fontSize: 26, fontWeight: 900, letterSpacing: 1 }}>
         {info.label} <span className="muted" style={{ fontSize: 15 }}>{kindLabel}</span>
       </div>
       <span className="pill" title={getSeason(match.seasonId).name}>{match.seasonId.toUpperCase()} · {getSeason(match.seasonId).name}</span>
@@ -77,11 +78,11 @@ export function TraitPanel(): JSX.Element | null {
       {rows.map(({ trait, count }) => {
         const tier = activeTierIndex(trait, count);
         return (
-          <button type="button" onClick={() => viewed && useInteractionStore.getState().inspect({ kind: 'trait', id: trait.id, playerId: viewed.id })} key={trait.id} className={`trait-row${tier >= 0 ? ' active' : ''}`} title={
+          <button type="button" onClick={() => viewed && useInteractionStore.getState().inspect({ kind: 'trait', id: trait.id, playerId: viewed.id })} key={trait.id} data-tier={tier+1} data-prismatic={tier===trait.tiers.length-1 && tier>=2} className={`trait-row${tier >= 0 ? ' active' : ''}`} title={
             `${trait.description}\n${trait.tiers.map(t => `${t.count}: ${t.description}`).join("\n")}`
           }>
             <img className="trait-icon" src={`/assets/traits/${trait.id}.${trait.category === "SEASON" ? "svg" : "png"}`} alt="" />
-            <span>{trait.name}</span>
+            <span>{trait.name}</span><span className="trait-gems" aria-hidden="true">{tier>=0?'◆'.repeat(tier+1):'◇'}</span>
             <span className="count trait-progress" aria-label={`${count}명 · ${tier + 1}/${trait.tiers.length}단계`}>
               <b>{count}명 · {tier + 1}/{trait.tiers.length}단계</b>
               <small>{trait.thresholds.join(' · ')}</small>
@@ -121,7 +122,7 @@ export function ItemPanel(): JSX.Element | null {
               e.dataTransfer.effectAllowed = 'move';
             }}
           >
-            <ItemIcon itemId={i.itemId} onClick={() => useInteractionStore.getState().inspect({ kind: 'item', id: i.itemId })} />
+            <ItemIcon itemId={i.itemId} title={matchItemDescription(i.itemId, player).description} onClick={() => useInteractionStore.getState().inspect({ kind: 'item', id: i.itemId, playerId: player.id })} />
             {preview?.target === i.instanceId && <span className="item-combine-progress" />}
           </div>
         ))}
@@ -134,7 +135,7 @@ export function ItemPanel(): JSX.Element | null {
           <h4 style={{ margin: '12px 0 6px', fontSize: 14 }}>전략가 장비</h4>
           <div style={{ display: 'flex', gap: 6 }}>
             {player.tacticianItems.map((id, idx) => (
-              <ItemIcon key={`${id}-${idx}`} itemId={id} onClick={() => useInteractionStore.getState().inspect({ kind: 'item', id })} />
+              <ItemIcon key={`${id}-${idx}`} itemId={id} title={matchItemDescription(id, player).description} onClick={() => useInteractionStore.getState().inspect({ kind: 'item', id, playerId: player.id })} />
             ))}
           </div>
         </>
@@ -169,7 +170,7 @@ export function Leaderboard(): JSX.Element | null {
           onClick={() => { if (p.eliminatedAtRound === null) inspectPlayer(p.id); }}
           title={p.aiProfile ? `성향: ${p.aiProfile}` : '플레이어'}
         >
-          <span style={{ width: 18 }}>{i + 1}</span>
+          <span className="leader-place" style={{ width: 18 }}>{i + 1}</span><span className="leader-avatar" aria-hidden="true">{p.board[0]?<Portrait id={p.board[0].unitDefId} name="" size={32}/>:<b>{p.isHuman?'U':'AI'}</b>}</span>
           <span style={{ width: 66, overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
             {p.name}
           </span>

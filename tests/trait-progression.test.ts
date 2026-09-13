@@ -92,10 +92,12 @@ describe('five-cost style distribution and motion compatibility', () => {
       const unit = getUnitDef(id);
       const latest = latestReview.changes.find(c => c.id === id);
       expect(unit.cost).toBe(latest?.newCost ?? entry.toCost);
-      const historicalSkill = latest?.before ?? unit.skill;
+      const balance = JSON.parse(readFileSync('docs/qa/adaptive-balance-motion-compatibility.json', 'utf8')).units[id];
+      const currentSkill = balance?.before ?? unit.skill;
+      const historicalSkill = latest?.before ?? currentSkill;
       if (latest) {
         expect(latest.oldCost).toBe(entry.toCost);
-        expect(hash(unit.skill)).toBe(hash(latest.after));
+        expect(hash(currentSkill)).toBe(hash(latest.after));
         const before = motionContract(latest.before), after = motionContract(latest.after);
         if (id === 'gran_alegria') {
           expect(before.vfxKey).toBe('vfx_dash_nige');

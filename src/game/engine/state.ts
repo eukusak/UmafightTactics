@@ -89,6 +89,9 @@ export type PoolState = {
 };
 
 export type AugmentOffer = {
+  /** Each slot can be replaced once, including after save/reconnect. */
+  rerolled?: boolean[];
+  seen?: string[];
   playerId: string;
   grade: AugmentGrade;
   options: string[];

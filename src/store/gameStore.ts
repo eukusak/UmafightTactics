@@ -115,6 +115,7 @@ type GameStore = {
   useItemTool: (kind: ItemTool, target: ItemToolTarget) => void;
 
   chooseAugment: (augmentId: string) => void;
+  rerollAugment: (slot:number) => void;
   pickDraft: (optionIndex: number) => void;
   moveCarousel: (target: CarouselPoint, option?: number | null) => void;
   tickCarousel: (delta: number) => void;
@@ -379,6 +380,11 @@ export const useGameStore = create<GameStore>((set, get) => ({
     bump(set);
   },
 
+  rerollAugment: (slot) => {
+    if(get().onlinePlayerId){onlineBridge.send?.({action:'augmentReroll',slot});return;}
+    const {director}=get(),player=get().human();if(!director||!player)return;
+    if(director.rerollAugment(player.id,slot)){saveToStorage(director);playSound('select');bump(set);}
+  },
   chooseAugment: (augmentId) => {
     if (get().onlinePlayerId) { onlineBridge.send?.({ action: 'augment', id: augmentId }); return; }
     const { director } = get();

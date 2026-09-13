@@ -83,6 +83,17 @@ if (mode === 'bench-tools' || mode === 'bench-odds-augment') {
   }
   if(mode === 'bench-odds-augment') p.augments.push('shop_high_cost');
 }
+if (mode === 'augment-descriptions') {
+  p.augments=['hero_haru_urara','spell_jewel','trophy_memory','trophy_mastery'];
+  p.augmentProgress={hero_haru_urara:6,trophy_memory:3};
+  const def=getSeasonUnits(state.seasonId).find(d=>d.id==='haru_urara')!;
+  if(!take(state.pool,def.id,3)) throw new Error('description fixture pool');
+  const unit=newInstance(state,def.id,2);unit.items=['champion_trophy'];p.bench.push(unit);
+  p.items=[{instanceId:'description-trophy',itemId:'champion_trophy'}];
+  const other=state.players[1];other.aiProfile=null;other.augments=[];
+  if(!take(state.pool,def.id,1)) throw new Error('description fixture enemy pool');
+  const enemy=newInstance(state,def.id,1);enemy.items=['champion_trophy'];enemy.position={q:3,r:0};other.board.push(enemy);
+}
 p.shop = rollShop(p, state.pool, new Rng(9001));
 if (mode === 'shop-upgrades') p.shop=[units[1],units[2],units[1],units[2],units[0]].map(d=>({unitDefId:d.id,sold:false}));
 if (mode === 'augment') { state.stage = 2; state.round = 1; state.augmentOffers = createAugmentOffers(state, new Rng(91)); state.phase = 'AUGMENT_SELECT'; }
