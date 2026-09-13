@@ -1,9 +1,10 @@
+import { moveToBench } from '../engine/shop/bench';
 import { applyItemTool } from '../engine/items/consumables';
 import { setCarouselTarget } from '../engine/rounds/carousel';
 import { claimItemReward } from '../engine/items/rewards';
 import type { OnlineCommand } from './protocol';
 import type { RoundDirector } from '../engine/rounds/director';
-import { buyUnit, sellUnit, rollShop, teamSizeLimit, benchCapacity, applyCombines } from '../engine/shop';
+import { buyUnit, sellUnit, rollShop, teamSizeLimit, applyCombines } from '../engine/shop';
 import { payReroll, buyXp } from '../engine/economy';
 import { combineStoredItems, equipItem, equipTactician } from '../engine/items/inventory';
 import { getItem } from '../engine/items/item-defs';
@@ -24,7 +25,7 @@ export function applyOnlineCommand(director: RoundDirector, playerId: string, co
     case 'itemTool': {
       const ok = applyItemTool(state, player, command.kind, command.target, director.rngs.get('loot'));
       if (ok) director.syncRng();
-      return ok ? null : '도구 수량, 대상 장비와 보관함 공간을 확인하세요.';
+      return ok ? null : '도구 수량·대상 코스트·대기석/보관함 공간·공유 풀 재고를 확인하세요.';
     }
     case 'itemReward': return claimItemReward(state, player, command.kind, command.item) ? null : '지금 받을 수 없는 보상입니다. 보상 종류와 보관함 공간을 확인하세요.';
     case 'combineItems': return combineStoredItems(player, command.source, command.target, battle).ok ? null : '조합할 수 없습니다. 준비 단계에서 보유한 하위 아이템 2개를 선택하세요.';
@@ -43,11 +44,9 @@ export function applyOnlineCommand(director: RoundDirector, playerId: string, co
       if (battle) return '전투가 끝난 뒤 배치할 수 있습니다.';
       const unit = owns(command.unit); if (!unit) return '본인 유닛만 이동할 수 있습니다.';
       const position = command.position, onBench = unit.position === null;
-      if (!position) {
-        if (onBench) return null;
-        if (player.bench.length >= benchCapacity(player)) return '대기석이 가득 찼습니다.';
-        player.board = player.board.filter((u) => u !== unit); player.bench.push(unit); unit.position = null; return null;
-      }
+      if (position !== null && command.benchIndex !== undefined) return '필드와 대기석을 동시에 지정할 수 없습니다.';
+      if (!position) return moveToBench(player, command.unit, command.benchIndex);
+
       const occupant = player.board.find((u) => u.position?.q === position.q && u.position.r === position.r);
       if (occupant === unit) return null;
       if (onBench && !occupant && player.board.length >= teamSizeLimit(player)) return '출전 인원이 가득 찼습니다.';

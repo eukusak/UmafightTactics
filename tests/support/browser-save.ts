@@ -74,6 +74,15 @@ if (mode === 'shop-upgrades') {
     }
   }
 }
+if (mode === 'bench-tools' || mode === 'bench-odds-augment') {
+  p.level=3;
+  p.pendingGrants=[{kind:'CLONE',maxCost:3,count:1},{kind:'CLONE',maxCost:5,count:1}];
+  for(const def of [units[1],getSeasonUnits(state.seasonId).find(d=>d.cost===5)!,units[0]]) {
+    if(!take(state.pool,def.id,1)) throw new Error('bench fixture pool');
+    p.bench.push(newInstance(state,def.id,1));
+  }
+  if(mode === 'bench-odds-augment') p.augments.push('shop_high_cost');
+}
 p.shop = rollShop(p, state.pool, new Rng(9001));
 if (mode === 'shop-upgrades') p.shop=[units[1],units[2],units[1],units[2],units[0]].map(d=>({unitDefId:d.id,sold:false}));
 if (mode === 'augment') { state.stage = 2; state.round = 1; state.augmentOffers = createAugmentOffers(state, new Rng(91)); state.phase = 'AUGMENT_SELECT'; }

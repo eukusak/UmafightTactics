@@ -419,3 +419,16 @@ button.trait-row { display:flex; align-items:center; width:100%; text-align:left
 .skill-values p { font-size: 11px; line-height: 1.6; }
 
 .battle-matchup { position: absolute; top: 14px; left: 50%; transform: translateX(-50%); max-width: 44%; z-index: 1400; padding: 7px 16px; border: 1px solid var(--gold); border-radius: 5px; background: #102636ed; color: var(--gold); font-size: 15px; font-weight: 800; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; pointer-events: none; }
+
+/* Bench order and live shop odds share the same bar without covering slots. */
+.bench-row::after { display:none; }
+.bench-units { display:flex; align-items:center; gap:inherit; min-width:0; flex:1; overflow-x:auto; padding:4px 0; }
+.bench-units .bench-slot { flex-shrink:0; }
+.bench-odds { flex-shrink:0; font-size:11px; color:#9ec5c7; padding-left:10px; }
+.bench-odds > div { display:flex; gap:10px; margin-top:4px; }
+.bench-odds > div > span { display:flex; flex-direction:column; align-items:center; min-width:30px; }
+.bench-odds small { font-size:10px; }
+.mobile .bench-row { flex-direction:column; align-items:stretch; }
+.mobile .bench-odds { order:-1; display:flex; align-items:center; justify-content:space-between; padding:0 4px; }
+.mobile .bench-odds > div { gap:8px; margin:0; }
+.mobile .bench-units { flex:auto; }

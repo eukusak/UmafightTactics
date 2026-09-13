@@ -5,9 +5,10 @@ import { useGameStore } from '../store/gameStore';
 import { getUnitDef, getUnitTraits } from '../game/engine/roster';
 import { getTrait } from '../game/engine/traits/trait-defs';
 import { rerollCost } from '../game/engine/economy';
-import { benchCapacity, sellPrice, purchaseUpgradeStar } from '../game/engine/shop';
+import { benchCapacity, sellPrice, purchaseUpgradeStar, shopOddsFor } from '../game/engine/shop';
 import { XP_PURCHASE_COST } from '../game/engine/constants';
 import { Portrait, UnitToken, costVar } from './common';
+import type { Cost } from '../game/engine/types';
 import type { UnitInstance } from '../game/engine/state';
 import { useWishlistStore } from '../store/wishlistStore';
 
@@ -80,20 +81,21 @@ export function BenchRow({
   const equip = useGameStore((s) => s.equip);
   const selectedUnitId = useGameStore((s) => s.selectedUnitId);
   const selectUnit = useGameStore((s) => s.selectUnit);
-  const placeSelected = useGameStore((s) => s.placeSelected);
   useGameStore((s) => s.revision);
   if (!player) return null;
 
+  const odds = shopOddsFor(player);
   const capacity = benchCapacity(player);
   const slots = Array.from({ length: capacity }, (_, i) => player.bench[i] ?? null);
 
   return (
     <div className="panel-dark bench-row">
+      <div className="bench-units">
       {slots.map((unit, i) => (
         <div
           key={unit?.instanceId ?? `empty-${i}`}
           className={`bench-slot${unit ? ' filled' : ''}`}
-          data-unit-id={unit?.instanceId} data-touch-unit={unit?.instanceId} data-drop="bench" data-drop-unit={unit?.instanceId}
+          data-unit-id={unit?.instanceId} data-touch-unit={unit?.instanceId} data-drop="bench" data-bench-index={i} data-drop-unit={unit?.instanceId}
           role="button" tabIndex={0} aria-label={unit ? `${getUnitDef(unit.unitDefId).nameKo} 대기석 정보` : '빈 대기석'}
           onMouseEnter={() => useInteractionStore.getState().hover(unit?.instanceId ?? null)}
           onMouseLeave={() => useInteractionStore.getState().hover(null)}
@@ -111,12 +113,12 @@ export function BenchRow({
             const unitId = e.dataTransfer.getData('application/x-unit');
             const itemId = e.dataTransfer.getData('application/x-item');
             if (itemId && unit) equip(unit.instanceId, itemId);
-            else if (unitId) moveUnit(unitId, null);
+            else if (unitId) moveUnit(unitId, null, i);
           }}
           onContextMenu={(e) => { if (unit) { e.preventDefault(); onUnitContext(e, unit); } }}
           onClick={() => {
             if (unit) { selectUnit(unit.instanceId); useInteractionStore.getState().inspect({ kind: 'unit', id: unit.instanceId, playerId: player.id }); }
-            else if (selectedUnitId) placeSelected(null);
+            else if (selectedUnitId) moveUnit(selectedUnitId, null, i);
           }}
           style={selectedUnitId === unit?.instanceId
             ? { boxShadow: '0 0 0 2px var(--gold)' } : undefined}
@@ -124,6 +126,11 @@ export function BenchRow({
           {unit && <UnitToken unit={unit} size={58} />}
         </div>
       ))}
+      </div>
+      <div className="bench-odds" aria-label="코스트별 상점 등장 확률" title="현재 레벨과 증강 보정이 반영된 코스트 추첨 확률입니다. 개별 기물의 확률은 공유 풀 재고에 따라 달라집니다.">
+        <span>Lv.{player.level} · 상점 확률</span>
+        <div>{([1,2,3,4,5] as Cost[]).map(cost => <span key={cost} style={{color:costVar(cost)}} data-cost={cost}><small>{cost}코</small><b>{Number(odds[cost].toFixed(2))}%</b></span>)}</div>
+      </div>
     </div>
   );
 }

@@ -83,7 +83,7 @@ export function bindTouchDrag(): () => void {
       if (pending.item && drop?.dropUnit && !combineHold.completed) game.equip(drop.dropUnit, pending.item);
       else if (pending.unit && drop) {
         if (drop.drop === 'sell') game.sell(pending.unit);
-        else if (drop.drop === 'bench') game.moveUnit(pending.unit, null);
+        else if (drop.drop === 'bench') game.moveUnit(pending.unit, null, drop.benchIndex === undefined ? undefined : Number(drop.benchIndex));
         else if (drop.drop === 'board') game.moveUnit(pending.unit, { q: Number(drop.q), r: Number(drop.r) });
       }
     }
