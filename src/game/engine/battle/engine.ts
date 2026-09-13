@@ -1,3 +1,4 @@
+import { scaleSkillSupport, skillAbilityPowerMultiplier, upgradeSkill } from './skill-scaling';
 /**
  * Deterministic fixed-timestep battle simulation (spec §14).
  *
@@ -75,6 +76,8 @@ export type BattleEvent =
 
 /** Renderable snapshot of a single simulation step. */
 export type BattleFrame = {
+  /** Present on the first frame, including battles with an empty board. */
+  participants?: { A: string; B: string };
   t: number;
   overtime: boolean;
   units: Array<{
@@ -129,12 +132,15 @@ export class BattleEngine {
   private readonly ctx: EffectContext;
   private casts: Array<{ source: string; target: string | null; start: number; end: number; timeline: ReturnType<typeof skillTimeline> }> = [];
 
+  private readonly participants: { A: string; B: string };
+
   constructor(
     sideA: BattleSideInput,
     sideB: BattleSideInput,
     private readonly rng: Rng,
     private readonly options: BattleOptions = {},
   ) {
+    this.participants = { A: sideA.playerId, B: sideB.playerId };
     this.firstTeam = rng.bool(0.5) ? 'A' : 'B';
     this.spawn(sideA, 'A');
     this.spawn(sideB, 'B');
@@ -238,11 +244,7 @@ export class BattleEngine {
         const aug = getAugment(augId);
         if (!augmentApplies(aug, unit, counts)) continue;
         restoreItemMemory(unit, aug, side.augmentProgress ?? {});
-        if (aug.skillUpgrade) {
-          unit.skill = structuredClone(unit.skill);
-          if (aug.skillUpgrade.damageMultiplier) unit.skill.effects = unit.skill.effects.map(e => e.kind === 'DAMAGE' || e.kind === 'DAMAGE_MAXHP_PCT' ? { ...e, value: (e.value ?? 0) * aug.skillUpgrade!.damageMultiplier! } : e);
-          unit.skill.effects.push(...structuredClone(aug.skillUpgrade.append ?? []));
-        }
+        if (aug.skillUpgrade) unit.skill = upgradeSkill(unit.skill, aug.skillUpgrade);
         augmentEffects(aug, side.augmentProgress ?? {}, counts).forEach((effect, i) => {
           // Trait-scoped augments only touch units with that trait.
           const scoped = effect.tag?.startsWith('TRAIT:');
@@ -635,7 +637,7 @@ export class BattleEngine {
     const critChance = stat(source, 'critChance', this.time) + source.aura.critChance;
     const skillCrit = isSkill && source.aura.skillsCanCrit && this.rng.bool(Math.min(1, critChance));
     if (isSkill) {
-      amount *= source.skillMultiplier;
+      amount *= source.skillMultiplier * skillAbilityPowerMultiplier(stat(source, 'abilityPower', this.time));
       amount *= 1 + source.aura.skillDamageAmp;
       if (skillCrit) amount *= stat(source, 'critMultiplier', this.time) + source.aura.critDamage + this.excessCritDamage(source, critChance);
     }
@@ -775,8 +777,8 @@ export class BattleEngine {
         const { effect, index } = cast.timeline.shift()!;
         const lockPrimary = effect.target === unit.skill.targetRule && !['SELF', 'ALL_ALLIES', 'ALL_ENEMIES'].includes(effect.target ?? '');
         const targets = resolveEffectTargets(this.ctx, unit, { ...effect, target: effect.target ?? 'SELF' }, primary, lockPrimary);
-        const touched = applyEffect(this.ctx, unit, effect, index, {
-          power: ['HEAL', 'SHIELD_FLAT'].includes(effect.kind) ? unit.skillMultiplier : 1,
+        const touched = applyEffect(this.ctx, unit, scaleSkillSupport(effect, unit.star, unit.cost, stat(unit, 'abilityPower', this.time)), index, {
+          power: 1,
           sourceKey: `skill:${unit.id}:${unit.skill.id}`, currentTarget: primary, event: 'ON_CAST', targets,
         });
         if (touched && targets.length) this.events.push({ t: this.time, type: 'SKILL_EFFECT', source: unit.id,
@@ -960,6 +962,7 @@ export class BattleEngine {
 
   private recordFrame(): void {
     this.frames.push({
+      ...(this.frames.length === 0 ? { participants: this.participants } : {}),
       t: Math.round(this.time * 1000) / 1000,
       overtime: this.overtimeApplied,
       units: this.units.map((u) => ({

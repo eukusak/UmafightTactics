@@ -1,3 +1,4 @@
+import { BattleMatchup } from '../BattleMatchup';
 /** The main play screen: prep, battle playback and all HUD panels. */
 import { useCallback, useEffect, useState } from 'react';
 import { useGameStore } from '../../store/gameStore';
@@ -112,6 +113,7 @@ export function BattleScreen(): JSX.Element | null {
 
       <div className="hud-field"><div className="field-surface">
         <ArenaBackdrop />
+        <BattleMatchup />
         {spectating && <div className="scouting-banner" role="status">{viewed?.name} · {battleRunning ? "전투 관전" : "필드 정찰"} <button onClick={() => useGameStore.getState().inspectPlayer(null)}>내 필드로 돌아가기</button></div>}
         {(!battleRunning || !arenaReady) && <PrepBoard onUnitContext={onUnitContext} />}
         {battleRunning && (!online || !!frames?.length) && <BattleBoard key={`${battleId ?? 'solo'}:${spectating ?? human.id}`} onReady={onArenaReady} />}

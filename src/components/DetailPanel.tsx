@@ -1,3 +1,6 @@
+import { SkillValues } from './SkillValues';
+import { upgradeSkill } from '../game/engine/battle/skill-scaling';
+import { augmentApplies } from '../game/engine/augments/runtime';
 import { getAugment } from '../game/engine/augments/augment-defs';
 import { BattleRecap } from './BattleRecap';
 import { useGameStore } from '../store/gameStore';
@@ -87,6 +90,11 @@ export function DetailPanel(): JSX.Element | null {
       const hp = snapshot?.hp ?? Math.round(stats.hp), maxHp = snapshot?.maxHp ?? Math.round(stats.hp);
       const mana = snapshot?.mana ?? stats.startMana, maxMana = snapshot?.maxMana ?? stats.maxMana;
       const traits = snapshot?.traits ?? [...new Set([...getUnitTraits(def.id, owner?.seasonId ?? match.seasonId), ...items.flatMap(id => getItem(id).grantsTrait ? [getItem(id).grantsTrait!] : []), ...(owner?.bonusTraits.filter(t => t.instanceId === unit?.instanceId).map(t => t.trait) ?? [])])];
+      let skill = def.skill;
+      if (owner) for (const id of owner.augments) {
+        const aug = getAugment(id);
+        if (aug.skillUpgrade && augmentApplies(aug, { unitDefId: def.id, cost: def.cost, items, traits }, activeTraitCounts(owner, owner.board))) skill = upgradeSkill(skill, aug.skillUpgrade);
+      }
       body = <>
         <div className="detail-heading"><Portrait id={def.id} name={def.nameKo} size={58} /><div><h3>{def.nameKo}</h3><b className="gold-text">{'★'.repeat(star)} · {def.cost}코스트</b></div></div>
         <RoleChip role={def.role} /><div className="detail-traits">{traits.map(id => <button key={id} className="pill" onClick={() => inspect({ kind: 'trait', id, playerId: owner?.id ?? useGameStore.getState().human()!.id })}>{getTrait(id).name}</button>)}</div>
@@ -100,7 +108,8 @@ export function DetailPanel(): JSX.Element | null {
           ['치명타 확률', `${Math.round(stats.critChance * 100)}%`], ['치명타 피해', `${Math.round(stats.critMultiplier * 100)}%`],
         ] as const).map(([label, value]) => <div key={label}><dt>{label}</dt><dd>{value}</dd></div>)}</dl>
         {!!snapshot?.shield && <p>보호막 {snapshot.shield}</p>}
-        <h4>{def.skill.displayName}</h4><p>{def.skill.description}</p>
+        <h4>{skill.displayName}</h4><p className="muted">기본 동작 · 1성/주문력 100/증강 적용 전</p><p>{skill.description}</p>
+        <SkillValues skill={skill} cost={def.cost} star={star} abilityPower={stats.abilityPower} />
         <h4>장착 아이템 · {items.length}/3</h4>{items.length ? items.map((id, i) => <ItemLink key={`${id}-${i}`} id={id} />) : <p className="muted">장착한 아이템이 없습니다.</p>}
         {owner?.isHuman && unit && <button className="detail-sell" disabled={running && !!unit.position} onClick={() => useGameStore.getState().sell(unit.instanceId)}>판매 · {sellPrice(owner, unit)}G</button>}
       </>;
