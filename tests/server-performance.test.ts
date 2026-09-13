@@ -9,11 +9,27 @@ import type { ServerMessage } from '../src/game/network/protocol';
 
 const page = { protocol: 'https:', host: 'game.example', hostname: 'game.example' };
 describe('split service endpoints', () => {
-  it('requires an explicit remote endpoint and uses local same-origin only for development', () => {
+  it('uses same-origin for integrated deployments and honors an explicit split endpoint', () => {
     expect(multiplayerUrl('wss://server.example/multiplayer', page)).toBe('wss://server.example/multiplayer');
+    expect(multiplayerUrl('', page)).toBe('wss://game.example/multiplayer');
+    expect(multiplayerUrl(undefined, page)).toBe('wss://game.example/multiplayer');
+    expect(multiplayerUrl('  ', { protocol: 'http:', host: 'game.example:4173', hostname: 'game.example' })).toBe('ws://game.example:4173/multiplayer');
     expect(multiplayerUrl('', { protocol: 'http:', host: 'localhost:5173', hostname: 'localhost' })).toBe('ws://localhost:5173/multiplayer');
-    for (const bad of ['', 'https://server.example/multiplayer', 'ws://server.example/multiplayer', 'wss://user:pass@server.example/multiplayer', 'wss://server.example/other'])
+    expect(() => multiplayerUrl('', { protocol: 'file:', host: '', hostname: '' })).toThrow();
+    for (const bad of ['https://server.example/multiplayer', 'ws://server.example/multiplayer', 'wss://user:pass@server.example/multiplayer', 'wss://server.example/other'])
       expect(() => multiplayerUrl(bad, page)).toThrow();
+  });
+  it('allows the trusted Render URL only for integrated deployments, keeping exact-origin checks', () => {
+    const env = { NODE_ENV: 'production', RENDER: 'true', RENDER_EXTERNAL_URL: 'https://game.onrender.com' };
+    const allows = originPolicy(env, true);
+    expect(allows(env.RENDER_EXTERNAL_URL, 'internal-host:10000')).toBe(true);
+    for (const origin of [undefined, 'null', 'https://evil.example', 'https://game.onrender.com.evil', 'http://game.onrender.com', 'https://game.onrender.com/'])
+      expect(allows(origin, 'evil.example')).toBe(false);
+    expect(originPolicy({ ...env, ALLOWED_ORIGINS: 'https://custom.example' }, true)('https://custom.example', 'internal-host')).toBe(true);
+    expect(() => originPolicy(env)).toThrow(/ALLOWED_ORIGINS/);
+    expect(originPolicy({ ...env, ALLOWED_ORIGINS: 'https://frontend.example' })(env.RENDER_EXTERNAL_URL, 'game.onrender.com')).toBe(false);
+    expect(() => originPolicy({ ...env, RENDER_EXTERNAL_URL: 'https://game.onrender.com/path' }, true)).toThrow();
+    expect(() => originPolicy({ ...env, ALLOWED_ORIGINS: '*' }, true)).toThrow();
   });
   it('rejects wildcard, missing, malformed and lookalike production origins', () => {
     const allows = originPolicy({ NODE_ENV: 'production', ALLOWED_ORIGINS: 'https://game.example, https://preview.example' });

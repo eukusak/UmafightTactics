@@ -1,6 +1,10 @@
 /** Production accepts exact browser origins only, never a wildcard or an implicit host match. */
-export function originPolicy(env: NodeJS.ProcessEnv = process.env): (origin: string | undefined, host: string | undefined) => boolean {
+export function originPolicy(env: NodeJS.ProcessEnv = process.env, serveAssets = false): (origin: string | undefined, host: string | undefined) => boolean {
   const origins = (env.ALLOWED_ORIGINS ?? '').split(',').map(s => s.trim()).filter(Boolean);
+  // Render supplies a trusted public URL. Only the integrated server serves a
+  // frontend there; the split backend still requires explicit ALLOWED_ORIGINS.
+  // Never derive a production allowlist from Host or forwarded request headers.
+  if (serveAssets && env.RENDER_EXTERNAL_URL) origins.push(env.RENDER_EXTERNAL_URL);
   for (const origin of origins) {
     let url: URL;
     try { url = new URL(origin); } catch { throw new Error('ALLOWED_ORIGINS must contain exact http(s) origins'); }

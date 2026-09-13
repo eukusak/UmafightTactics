@@ -1,8 +1,24 @@
 # Render 분리 배포 (PR22)
 
-## 병합 전: 기존 서비스 자동 배포 중지
+## PR23: 기존 게임 주소 복구
 
-이번 변경 이후 `npm start`는 정적 파일을 제공하지 않는다. 기존 통합 Web Service가 main을 자동 배포하면 게임 주소가 JSON 상태 화면으로 바뀔 수 있으므로 **기존 서비스 Auto-Deploy를 먼저 끈다**. 기존 정상 배포는 새 사이트 검증이 끝날 때까지 유지한다. PR 자체는 운영 리소스를 생성·변경하지 않는다.
+PR22는 `npm start`를 멀티플레이 전용 서버로 바꿨기 때문에, 기존 통합 서비스에 그대로 배포하면 루트 주소에서 게임 대신 `{"service":"multiplayer","endpoint":"/multiplayer"}`가 표시됐다. PR23에서는 `npm start`와 기존 `node scripts/serve.mjs`를 통합 HTTP + WebSocket 시작 경로로 복구한다. `npm run start:server`는 별도 서버 전용으로 유지한다.
+
+기존 주소 복구에는 새 서비스 생성이나 분리 전환이 필요 없다. 기존 Web Service에서 다음 설정으로 이 패치를 배포한다.
+
+| 설정 | 값 |
+|---|---|
+| Build Command | `npm ci --include=dev && npm run build` |
+| Start Command | `npm start` |
+| Health Check Path | `/health` |
+| VITE_MULTIPLAYER_URL | 같은 서버를 사용할 때 빈 값. 이전에 별도 주소를 넣었다면 제거 후 재빌드 |
+| ALLOWED_ORIGINS | 기본 Render 주소는 자동 허용. 추가 도메인은 정확한 `https://...` Origin을 쉼표로 구분 |
+
+Render가 자동 제공하는 [RENDER_EXTERNAL_URL](https://render.com/docs/environment-variables#render_external_url)을 **통합 서버에서만** 허용 목록에 추가한다. Host/전달 헤더를 믿어 임의 Origin을 허용하지 않는다. Render 외 production에서는 ALLOWED_ORIGINS를 명시한다. 와일드카드·경로·마지막 slash는 허용하지 않는다.
+
+배포 후 `/`는 HTML, HTML에서 참조한 `/bundled/*.js`는 JavaScript, `/health`는 상태 JSON이어야 한다. 게임에서 방 생성·AI 추가·시작을 확인한다. `dist`가 없으면 빌드 명령을 고친 뒤 다시 배포한다. 시작 시 자동 빌드는 하지 않는다.
+
+아래 CDN 분리 구성은 선택 사항이며, 기존 서비스를 유지한 채 새 프런트와 서버를 검증하고 전환할 때 사용한다. PR23은 실제 Render 리소스를 생성하거나 변경하지 않는다.
 
 ## 구성
 
@@ -33,11 +49,11 @@
 
 ## 빌드와 로컬 사용
 
-`npm ci && npm run build` 후 `npm run start:local`은 통합 미리보기, `npm run dev`는 Vite+로컬 WebSocket이다. 로컬 localhost/127.0.0.1/::1에만 same-origin fallback이 있다. 외부 주소는 VITE_MULTIPLAYER_URL을 반드시 설정한다.
+`npm ci && npm run build` 후 `npm run start:local`은 통합 미리보기, `npm run dev`는 Vite+로컬 WebSocket이다. VITE_MULTIPLAYER_URL이 비어 있으면 로컬·외부 통합 배포 모두 현재 주소의 /multiplayer를 사용한다. 분리 Static Site는 VITE_MULTIPLAYER_URL을 반드시 설정한다.
 
 별도 경로 시험: PORT=4174로 `npm run start:server`, VITE_MULTIPLAYER_URL=ws://127.0.0.1:4174/multiplayer로 프런트를 빌드하고 PORT=4173으로 `npm run start:static`. 서버 ALLOWED_ORIGINS=http://127.0.0.1:4173. PowerShell에서는 명령 앞 변수를 `$env:PORT='4174'`처럼 지정한다.
 
-서버는 프런트 빌드/FFmpeg가 필요 없다. ffmpeg-static은 개발 의존성이며 Static Site 빌드에서만 다운로드·사용한다. 빌드 머신은 npm과 해당 FFmpeg GitHub 릴리스에 접근할 수 있어야 한다. 음악 인코딩은 원본 SHA-256을 키로 .cache/audio-160k-v1에 캐시하며, 인코딩 옵션 변경 시 캐시 버전을 올린다. 음악 원본은 public/assets/audio, 배포 파일은 dist/assets/audio의 160kbps MP3이다. 제목곡과 23곡을 포함하며 효과음은 재인코딩하지 않는다. dist/audio-build-report.json에 실제 크기가 기록된다. npm 설치 후 자동 프런트 빌드는 하지 않는다.
+서버는 프런트 빌드/FFmpeg가 필요 없다. ffmpeg-static은 개발 의존성이며 프런트 빌드(통합 배포 또는 Static Site)에서만 다운로드·사용한다. 빌드 머신은 npm과 해당 FFmpeg GitHub 릴리스에 접근할 수 있어야 한다. 음악 인코딩은 원본 SHA-256을 키로 .cache/audio-160k-v1에 캐시하며, 인코딩 옵션 변경 시 캐시 버전을 올린다. 음악 원본은 public/assets/audio, 배포 파일은 dist/assets/audio의 160kbps MP3이다. 제목곡과 23곡을 포함하며 효과음은 재인코딩하지 않는다. dist/audio-build-report.json에 실제 크기가 기록된다. npm 설치 후 자동 프런트 빌드는 하지 않는다.
 
 ## 제한과 롤백
 
