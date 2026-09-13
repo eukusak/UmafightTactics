@@ -1501,7 +1501,10 @@
     "vfx/vfx_buff.png",
     "vfx/vfx_debuff.png",
     "vfx/vfx_mana.png",
-    "vfx/vfx_item_equip.png"
+    "vfx/vfx_item_equip.png",
+    "vfx/vfx_race_gate.png",
+    "vfx/vfx_race_late_ring.png",
+    "vfx/vfx_race_last3f.png"
   ],
   "starVfx": [
     "vfx/vfx_star_2.png",
@@ -1523,7 +1526,10 @@
     "boards/bg_board_dirt.png",
     "boards/bg_twinkle_draft.png",
     "boards/bg_pve_training.png",
-    "boards/bg_final_result.png"
+    "boards/bg_final_result.png",
+    "boards/bg_race_plan_paper.png",
+    "boards/bg_g1_entry_board.png",
+    "boards/bg_paddock_panel.png"
   ],
   "ui": [
     "ui/board_hex_tiles.png",
@@ -1542,6 +1548,7 @@
     "ui/banner_draft.png",
     "ui/banner_augment.png",
     "ui/banner_eliminated.png",
-    "ui/banner_champion.png"
+    "ui/banner_champion.png",
+    "ui/banner_last3f.png"
   ]
 }

@@ -863,7 +863,7 @@ const manifest: ArtManifest = {
     'vfx_stun', 'vfx_silence', 'vfx_taunt', 'vfx_dash_nige', 'vfx_dash_senko', 'vfx_dash_sashi',
     'vfx_dash_oikomi', 'vfx_line_red', 'vfx_cone_gold', 'vfx_wedge_cyan', 'vfx_arc_violet',
     'vfx_aoe_burst', 'vfx_projectile', 'vfx_execute', 'vfx_buff', 'vfx_debuff', 'vfx_mana',
-    'vfx_item_equip',
+    'vfx_item_equip', 'vfx_race_gate', 'vfx_race_late_ring', 'vfx_race_last3f',
   ].map((v) => `vfx/${v}.png`),
   starVfx: ['vfx_star_2', 'vfx_star_3', 'vfx_cost5_star3'].map((v) => `vfx/${v}.png`),
   pve: ['training_dummy', 'track_golem', 'supply_robot', 'trophy_guardian', 'grand_trophy_guardian']
@@ -871,11 +871,12 @@ const manifest: ArtManifest = {
   boards: [
     'bg_title', 'bg_main_menu', 'bg_board_turf_day', 'bg_board_turf_night', 'bg_board_dirt',
     'bg_twinkle_draft', 'bg_pve_training', 'bg_final_result',
+    'bg_race_plan_paper', 'bg_g1_entry_board', 'bg_paddock_panel',
   ].map((b) => `boards/${b}.png`),
   ui: ['ui/board_hex_tiles.png', 'ui/ui_frames.png', 'ui/ui_slots.png'],
   banners: [
     'round_start', 'preparation', 'battle', 'overtime', 'victory', 'defeat', 'draw', 'pve',
-    'draft', 'augment', 'eliminated', 'champion',
+    'draft', 'augment', 'eliminated', 'champion', 'last3f',
   ].map((b) => `ui/banner_${b}.png`),
 };
 write('art-manifest.json', manifest);

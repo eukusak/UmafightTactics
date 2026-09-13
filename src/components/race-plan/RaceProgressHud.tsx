@@ -13,6 +13,7 @@ import { frameAt } from '../../game/ui/battle-playback';
 import { RACE_PHASE_AT, RACE_PHASE_LABEL, type RaceCombatPhase } from '../../game/engine/race-plan/types';
 import { getRaceCombatPhase } from '../../game/engine/race-plan/race-phases';
 import { findRacePlanNode } from '../../game/engine/race-plan/defs';
+import { assetUrl } from '../../game/ui/art';
 import { getUnitDef } from '../../game/engine/roster';
 
 type BarPhase = Exclude<RaceCombatPhase, 'OVERTIME'>;
@@ -25,23 +26,22 @@ export function RaceProgressHud(): JSX.Element | null {
   const [flash, setFlash] = useState<RaceCombatPhase | null>(null);
   const lastPhase = useRef<RaceCombatPhase>('START');
 
-  // Progress is read from the RACE_PHASE events the simulation already emits,
-  // so the bar can never disagree with what the battle actually did.
-  let progress = 0;
-  let phase: RaceCombatPhase = 'START';
-  if (frames?.length) {
-    const upTo = frames.slice(0, frameAt(frames, time) + 1);
-    for (const frame of upTo) {
-      for (const event of frame.events) {
-        if (event.type === 'RACE_PHASE') { progress = event.progress; phase = event.phase; }
+  const current = frames?.[frameAt(frames, time)];
+  let progress = current?.race?.progress ?? 0;
+  let phase: RaceCombatPhase = current?.race?.phase ?? 'START';
+  // Old saves have no race snapshot. Scan backwards only until the last event.
+  if (current && !current.race) {
+    outer: for (let i = frameAt(frames!, time); i >= 0; i--) {
+      for (const event of [...frames![i].events].reverse()) {
+        if (event.type === 'RACE_PHASE') { progress = event.progress; phase = event.phase; break outer; }
       }
     }
-    const clockPhase = getRaceCombatPhase(time, progress);
-    if (ORDER.indexOf(clockPhase as BarPhase) > ORDER.indexOf(phase as BarPhase)) phase = clockPhase;
     progress = Math.max(progress, Math.min(1, time / 30));
+    phase = getRaceCombatPhase(time, progress);
   }
 
   useEffect(() => {
+    if (!running) { lastPhase.current = 'START'; setFlash(null); return; }
     if (phase === lastPhase.current) return;
     lastPhase.current = phase;
     if (phase === 'LATE' || phase === 'LAST_3F') {
@@ -50,7 +50,7 @@ export function RaceProgressHud(): JSX.Element | null {
       return () => clearTimeout(timer);
     }
     return undefined;
-  }, [phase]);
+  }, [phase, running]);
 
   if (!running || !frames?.length) return null;
   const clamped = Math.min(1, Math.max(0, progress));
@@ -70,7 +70,8 @@ export function RaceProgressHud(): JSX.Element | null {
         ))}
         <span className={phase === 'OVERTIME' ? 'active' : ''}>GOAL</span>
       </div>
-      {flash && <div className="race-hud-flash">{RACE_PHASE_LABEL[flash]}</div>}
+      <span className="race-clock">{time.toFixed(1)}초 · {Math.round(clamped * 100)}%</span>
+      {flash && <div className="race-hud-flash" style={flash === 'LAST_3F' ? { backgroundImage: `url("${assetUrl('ui/banner_last3f.png') ?? ''}")` } : undefined}>{RACE_PHASE_LABEL[flash]}</div>}
     </div>
   );
 }

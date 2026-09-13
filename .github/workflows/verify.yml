@@ -36,6 +36,9 @@ jobs:
           npm run data:validate
           git diff --exit-code -- src/data/generated src/data/source public/assets/traits
 
+      - name: Race plan catalogue and budget diagnostic
+        run: npm run audit:race-plan
+
       - name: Typecheck
         run: npm run typecheck
 

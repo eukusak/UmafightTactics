@@ -3,7 +3,7 @@ import musicManifest from '../../data/manual/music.json';
 import { Rng } from '../engine/rng';
 // Audio randomness is independent of every simulation stream.
 const musicRng = new Rng(Date.now());
-export type GameSound = 'select' | 'level-up' | 'attack-melee' | 'attack-ranged' | 'hit' | 'skill-strike' | 'skill-magic' | 'skill-support' | 'augment' | 'promote2' | 'promote3';
+export type GameSound = 'select' | 'level-up' | 'attack-melee' | 'attack-ranged' | 'hit' | 'skill-strike' | 'skill-magic' | 'skill-support' | 'augment' | 'promote2' | 'promote3' | 'race-plan-open' | 'race-plan-hover' | 'race-plan-select' | 'race-plan-stamp' | 'race-gate' | 'race-late' | 'race-last3f' | 'race-entry-confirm' | 'race-entry-transfer';
 type AudioClip = { volume: number; currentTime: number; play(): Promise<void>; pause?(): void };
 const clips = new Map<GameSound, AudioClip>();
 export const GAME_TRACKS: readonly string[] = musicManifest.bgm;
@@ -78,6 +78,15 @@ export function playSound(name: GameSound, variant = 0): void {
 }
 
 export const SOUND_DESIGNS = {
+  'race-plan-open':{notes:[330,440,523],wave:'sine',duration:.34,noise:.02},
+  'race-plan-hover':{notes:[880],wave:'sine',duration:.05,noise:.01},
+  'race-plan-select':{notes:[392,523,659],wave:'triangle',duration:.30,noise:0},
+  'race-plan-stamp':{notes:[140,90],wave:'triangle',duration:.16,noise:.30},
+  'race-gate':{notes:[520,300,180],wave:'square',duration:.22,noise:.22},
+  'race-late':{notes:[294,392],wave:'sawtooth',duration:.26,noise:.06},
+  'race-last3f':{notes:[392,523,659,880],wave:'triangle',duration:.50,noise:.04},
+  'race-entry-confirm':{notes:[349,523,698,880],wave:'triangle',duration:.58,noise:.01},
+  'race-entry-transfer':{notes:[523,392,523],wave:'sine',duration:.34,noise:0},
   'attack-melee':{notes:[190,95],wave:'sawtooth',duration:.11,noise:.16},
   'attack-ranged':{notes:[880,420],wave:'triangle',duration:.12,noise:.03},
   hit:{notes:[100,45],wave:'triangle',duration:.09,noise:.25},
@@ -89,11 +98,18 @@ export const SOUND_DESIGNS = {
   promote3:{notes:[523,659,784,1046],wave:'triangle',duration:.65,noise:.015},
 } as const;
 type SynthSound=keyof typeof SOUND_DESIGNS;
+/** Combat cues +3.25 dB; keep UI loudness and the user's volume/mute intact. */
+export function soundPeakGain(name: SynthSound): number {
+  return /^(attack-|skill-|hit$)/.test(name) ? .16 : .11;
+}
 let synth:AudioContext|null=null,synthMaster:GainNode|null=null,voices=0;
 const lastSound=new Map<string,number>();
 function unlockSynth():void {
   try {
-    if(!synth && typeof AudioContext!=='undefined') {synth=new AudioContext();synthMaster=synth.createGain();synthMaster.gain.value=options.muted?0:options.effectsVolume;synthMaster.connect(synth.destination);}
+    if(!synth && typeof AudioContext!=='undefined') {synth=new AudioContext();synthMaster=synth.createGain();synthMaster.gain.value=options.muted?0:options.effectsVolume;const limiter=synth.createDynamicsCompressor();
+      limiter.threshold.value=-8;limiter.knee.value=8;limiter.ratio.value=12;
+      limiter.attack.value=.003;limiter.release.value=.12;
+      synthMaster.connect(limiter);limiter.connect(synth.destination);}
     if(synth?.state==='suspended')void synth.resume().catch(error => audioDiagnostic('AudioContext.resume failed', error));
   } catch { /* Audio devices and browser permissions never block gameplay. */ }
 }
@@ -101,10 +117,10 @@ function unlockSynth():void {
 function playSynth(name:SynthSound,variant:number):void {
   if(!synth||!synthMaster||synth.state!=='running'||options.muted||options.effectsVolume<=0||voices>=16)return;
   const now=synth.currentTime,design=SOUND_DESIGNS[name];
-  if(now-(lastSound.get(name)??-10)<(name==='hit'?.085:.06))return;
+  if(now-(lastSound.get(name)??-10)<(name==='hit'?.085:name==='race-plan-hover'?.08:.06))return;
   lastSound.set(name,now);voices++;
   const pitch=1+(Math.abs(variant)%7-3)*.025;
-  const gain=synth.createGain();gain.connect(synthMaster);gain.gain.setValueAtTime(.0001,now);gain.gain.exponentialRampToValueAtTime(.11,now+.008);gain.gain.exponentialRampToValueAtTime(.0001,now+design.duration);
+  const gain=synth.createGain();gain.connect(synthMaster);gain.gain.setValueAtTime(.0001,now);gain.gain.exponentialRampToValueAtTime(soundPeakGain(name),now+.008);gain.gain.exponentialRampToValueAtTime(.0001,now+design.duration);
   const tone=synth.createOscillator();tone.type=design.wave;tone.connect(gain);
   design.notes.forEach((f,i)=>tone.frequency.setValueAtTime(f*pitch,now+i*design.duration/design.notes.length));
   tone.start(now);tone.stop(now+design.duration);tone.onended=()=>{tone.disconnect();gain.disconnect();voices--;};

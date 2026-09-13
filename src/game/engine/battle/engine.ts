@@ -16,7 +16,7 @@ import { activeTierIndex, getTrait } from '../traits/trait-defs';
 import { augmentApplies, augmentEffects, restoreItemMemory } from '../augments/runtime';
 import { getAugment } from '../augments/augment-defs';
 import type { Rng } from '../rng';
-import { getRaceCombatPhase, laterPhase, raceProgress } from '../race-plan/race-phases';
+import { getRaceCombatPhase, laterPhase, phaseIndex, raceProgress } from '../race-plan/race-phases';
 import { RaceResourceTracker, nodeBattleEffects, raceReadBranch } from '../race-plan/runtime';
 import { findRacePlanNode } from '../race-plan/defs';
 import type { RaceCombatPhase, RacePlanBattleInput } from '../race-plan/types';
@@ -90,6 +90,7 @@ export type BattleFrame = {
   participants?: { A: string; B: string };
   t: number;
   overtime: boolean;
+  race?: { phase: RaceCombatPhase; progress: number };
   units: Array<{
     id: string; team: Team; unitDefId: string; star: 1 | 2 | 3;
     q: number; r: number; fromQ: number | null; fromR: number | null; progress: number;
@@ -97,6 +98,7 @@ export type BattleFrame = {
     alive: boolean; casting: boolean; statuses: StatusKind[];
     /** Optional for old recordings; current engine always records inspection data. */
     items?: string[]; traits?: TraitId[]; stats?: BattleStats;
+    race?: { nodeIds: string[]; resources: Array<{ kind: 'LEG' | 'STAMINA'; stacks: number; max: number }> };
   }>;
   events: BattleEvent[];
 };
@@ -134,6 +136,7 @@ export class BattleEngine {
   private racePhaseHigh = 0;
   private raceStartCount: Record<Team, number> = { A: 0, B: 0 };
   private raceStartHp: Record<Team, number> = { A: 0, B: 0 };
+  readonly raceLateHealth = new Map<string, { hp: number; maxHp: number }>();
   private readonly raceResources = new Map<string, RaceResourceTracker>();
   private readonly raceEntryIds = new Map<Team, string>();
   /** Which team resolves first each tick. Seeded once so mirror matches are fair. */
@@ -941,6 +944,7 @@ export class BattleEngine {
       const list = this.bindings.get(unit.id) ?? [];
       list.forEach((b, i) => {
         if (b.effect.trigger?.when !== 'EVERY_SECONDS') return;
+        if (this.racePhase === 'OVERTIME' && b.sourceKey.startsWith('race-plan:') && b.effect.kind === 'STACKING_STAT') return;
         const interval = b.effect.interval ?? b.effect.trigger.threshold ?? 1;
         const key = `${unit.id}:${i}`;
         const next = this.periodicNext.get(key) ?? interval;
@@ -966,6 +970,7 @@ export class BattleEngine {
     const list = this.bindings.get(unit.id) ?? [];
     for (let i = 0; i < list.length; i += 1) {
       const b = list[i];
+      if (this.racePhase === 'OVERTIME' && b.sourceKey.startsWith('race-plan:') && b.effect.kind === 'STACKING_STAT') continue;
       if (isAuraKind(b.effect.kind) && isContinuousAura(b.effect)) continue;
       const gate = b.effect.trigger;
       if (event === 'COMBAT_START') {
@@ -981,9 +986,14 @@ export class BattleEngine {
         if (this.time < (this.triggerReadyAt.get(key) ?? 0)) continue;
         this.triggerReadyAt.set(key, this.time + b.effect.interval);
       }
-      applyEffect(this.ctx, unit, gate?.when === 'AFTER_SECONDS' ? { ...b.effect, oncePerCombat: true } : b.effect, b.index, {
+      const touched = applyEffect(this.ctx, unit, gate?.when === 'AFTER_SECONDS' ? { ...b.effect, oncePerCombat: true } : b.effect, b.index, {
         power: b.power, sourceKey: b.sourceKey, currentTarget: target, event,
       });
+      if (touched > 0 && b.sourceKey.startsWith('race-plan:')) {
+        const nodeId = b.sourceKey.slice('race-plan:'.length);
+        if (!this.events.some(e => e.t === this.time && e.type === 'RACE_PROC' && e.unit === unit.id && e.nodeId === nodeId))
+          this.events.push({ t: this.time, type: 'RACE_PROC', unit: unit.id, nodeId, label: findRacePlanNode(nodeId)?.nameKo ?? nodeId });
+      }
     }
     if (event === 'COMBAT_START') {
       unit.maxHp = stat(unit, 'hp', this.time);
@@ -1012,12 +1022,16 @@ export class BattleEngine {
     });
     this.racePhaseHigh = Math.max(this.racePhaseHigh, raceProgress(this.time, sides));
     const next = laterPhase(this.racePhase, getRaceCombatPhase(this.time, this.racePhaseHigh));
-    if (next !== this.racePhase) {
-      this.racePhase = next;
-      this.ctx.racePhase = next;
-      this.events.push({ t: this.time, type: 'RACE_PHASE', phase: next, progress: Math.round(this.racePhaseHigh * 1000) / 1000 });
+    // A burst can cross multiple thresholds in a tick; resolve each once in order.
+    const phases: RaceCombatPhase[] = ['START', 'POSITIONING', 'LATE', 'LAST_3F', 'OVERTIME'];
+    for (let index = phaseIndex(this.racePhase) + 1; index <= phaseIndex(next); index++) {
+      const crossed = phases[index];
+      this.racePhase = crossed;
+      this.ctx.racePhase = crossed;
+      if (crossed === 'LATE') for (const u of this.units) this.raceLateHealth.set(u.id, { hp: u.alive ? u.hp : 0, maxHp: u.maxHp });
+      this.events.push({ t: this.time, type: 'RACE_PHASE', phase: crossed, progress: Math.round(this.racePhaseHigh * 1000) / 1000 });
       this.fire('RACE_PHASE');
-      this.resolveRacePhasePayouts(next);
+      this.resolveRacePhasePayouts(crossed);
     }
     this.tickRaceResources();
   }
@@ -1067,17 +1081,15 @@ export class BattleEngine {
       if (!unit?.alive) continue;
       const tracker = this.raceResources.get(unit.id);
       if (!tracker?.active) continue;
-      const effects = tracker.onTick(this.time, this.racePhase);
-      if (effects.length) this.applyRaceEffects(unit, effects, 'race-plan:resource');
+      for (const batch of tracker.onTick(this.time, this.racePhase)) this.applyRaceEffects(unit, batch.effects, `race-plan:resource:${batch.nodeId}`);
     }
   }
 
   /** Attack / cast / hit accrual for 각력 and 지구력. */
   private gainRaceResource(unit: CombatUnit, kind: 'ATTACK' | 'CAST' | 'HIT_TAKEN'): void {
     const tracker = this.raceResources.get(unit.id);
-    if (!tracker?.active) return;
-    const effects = tracker.onEvent(kind);
-    if (effects.length) this.applyRaceEffects(unit, effects, 'race-plan:resource');
+    if (!unit.alive || this.racePhase === 'OVERTIME' || !tracker?.active) return;
+    for (const batch of tracker.onEvent(kind)) this.applyRaceEffects(unit, batch.effects, `race-plan:resource:${batch.nodeId}`);
   }
 
   /** Current gauge for the entry unit, read by the renderer. */
@@ -1123,9 +1135,14 @@ export class BattleEngine {
       ...(this.frames.length === 0 ? { participants: this.participants } : {}),
       t: Math.round(this.time * 1000) / 1000,
       overtime: this.overtimeApplied,
+      race: { phase: this.racePhase, progress: this.racePhaseHigh },
       units: this.units.map((u) => ({
         id: u.id, team: u.team, unitDefId: u.unitDefId, star: u.star,
         items: [...u.items], traits: [...u.traits],
+        ...(this.raceEntryIds.get(u.team) === u.id ? { race: {
+          nodeIds: [...(u.team === 'A' ? this.sideA : this.sideB).racePlan!.nodeIds],
+          resources: this.raceResources.get(u.id)!.resources.map(({ kind, stacks, max }) => ({ kind, stacks, max })),
+        } } : {}),
         stats: {
           ...Object.fromEntries(Object.keys(u.base).map(key => [key, stat(u, key as keyof BattleStats, this.time)])) as BattleStats,
           armor: resistFor(u, 'PHYSICAL', this.time), magicResist: resistFor(u, 'MAGIC', this.time),

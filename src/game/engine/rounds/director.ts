@@ -21,7 +21,7 @@ import { addXp, grantRoundXp, resetRoundEconomy, roundIncome, reducePlayerDamage
 import { addItemToStorage, resolveTrickGloves } from '../items/inventory';
 import { runAiPrep, ensureInitialBoard, finalizeAiFormation, resolveAiItemRewards } from '../ai';
 import { AI_PROFILE_IDS } from '../ai/profiles';
-import { BattleEngine, simulateBattle, type BattleFrame, type BattleSideInput } from '../battle/engine';
+import { BattleEngine, type BattleFrame, type BattleSideInput } from '../battle/engine';
 import { PVE_UNIT_IDS } from '../battle/pve-units';
 import { applyAugment, createAugmentOffers, rerollAugmentOffer } from '../augments/offers';
 import {
@@ -342,35 +342,13 @@ export class RoundDirector {
    * Folds each player's own fight into the profile the offer engine reads.
    * Everything comes from events the battle already recorded.
    */
+  private roundRaceReports = new Map<string, Parameters<typeof updateRecentCombat>[1]>();
   private recordRaceTelemetry(isPve: boolean): void {
-    if (isPve) return;
-    for (const [playerId, frames] of this.playerFrames) {
-      const player = this.state.players.find((p) => p.id === playerId);
-      if (!player?.racePlan || !frames.length) continue;
-      const events = frames.flatMap((f) => f.events);
-      const last = frames[frames.length - 1];
-      const own = (id: string): boolean => id.startsWith(`${playerId}#`);
-      const phaseEvents = events.filter((e) => e.type === 'RACE_PHASE');
-      const endProgress = phaseEvents.length
-        ? (phaseEvents[phaseEvents.length - 1] as { progress: number }).progress
-        : Math.min(1, last.t / 30);
-      const startedOwn = frames[0].units.filter((u) => own(u.id)).length;
-      const frontline = frames[0].units.filter((u) => own(u.id));
-      const lostEarly = events.filter(
-        (e) => e.type === 'DEATH' && own(e.unit) && e.t <= 20,
-      ).length;
-      const enemies = last.units.filter((u) => !own(u.id) && u.alive);
-      updateRecentCombat(player, {
-        duration: last.t,
-        endProgress,
-        overtime: last.overtime,
-        casts: events.filter((e) => e.type === 'CAST' && own(e.source)).length,
-        frontlineLost: frontline.length ? lostEarly / Math.max(1, startedOwn) : 0,
-        enemyFrontHp: enemies.length
-          ? enemies.reduce((n, u) => n + u.hp / Math.max(1, u.maxHp), 0) / enemies.length
-          : 0,
-      });
+    if (!isPve) for (const [id, report] of this.roundRaceReports) {
+      const player = this.state.players.find(p => p.id === id);
+      if (player?.racePlan) updateRecentCombat(player, report);
     }
+    this.roundRaceReports.clear();
   }
 
   private resolveAiDraftPicks(): void {
@@ -576,10 +554,29 @@ export class RoundDirector {
    * what the player watches is the very run that produced the result.
    */
   private runBattle(a: BattleSideInput, b: BattleSideInput, rng: Rng, record: boolean, isGhost = false) {
-    const hasGrowth = [a,b].some(side => side.augments.some(id => { const aug = getAugment(id); return aug.growth || aug.rememberItem; }));
-    if (!record && !this.recordAllBattles && !hasGrowth) return simulateBattle(a, b, rng, { stage: this.state.stage });
+    // Headless AI needs the same compact telemetry as a viewed fight; no frames required.
     const engine = new BattleEngine(a, b, rng, { recordFrames: record || this.recordAllBattles, stage: this.state.stage });
     const result = engine.run();
+    if (this.info.kind !== 'PVE') for (const [side, foe, team] of [[a,b,'A'],[b,a,'B']] as const) {
+      if (team === 'B' && isGhost) continue;
+      const own = (id: string) => id.startsWith(side.playerId+'#');
+      const late = result.events.find(e => e.type === 'RACE_PHASE' && e.phase === 'LATE');
+      const mid = result.events.find(e => e.type === 'RACE_PHASE' && e.phase === 'POSITIONING');
+      const phases = result.events.filter(e => e.type === 'RACE_PHASE');
+      const end = phases.at(-1);
+      const front = side.units.filter(u => ['TANK','BRUISER'].includes(getUnitDef(u.unitDefId).role));
+      const frontIds = new Set(front.map(u => side.playerId+'#'+u.instanceId));
+      const enemyFront = foe.units.filter(u => ['TANK','BRUISER'].includes(getUnitDef(u.unitDefId).role));
+      const hp = enemyFront.map(u => engine.raceLateHealth.get(foe.playerId+'#'+u.instanceId));
+      this.roundRaceReports.set(side.playerId, {
+        duration: result.durationSeconds,
+        endProgress: end?.type === 'RACE_PHASE' ? end.progress : Math.min(1,result.durationSeconds/30),
+        overtime: result.wentToOvertime,
+        casts: result.events.filter(e => e.type === 'CAST' && own(e.source)).length,
+        frontlineLost: front.length ? result.events.filter(e => e.type === 'DEATH' && frontIds.has(e.unit) && e.t < (mid?.t ?? 5)).length/front.length : 0,
+        enemyFrontHp: late && hp.length ? hp.reduce((n,u) => n+(u ? u.hp/Math.max(1,u.maxHp) : 0),0)/hp.length : 0,
+      });
+    }
     if (this.info.kind !== 'PVE') for (const [side, team] of [[a,'A'],[b,'B']] as const) {
       if (team === 'B' && isGhost) continue;
       if (!this.state.players.some(p => p.id === side.playerId)) continue;
@@ -652,6 +649,7 @@ export class RoundDirector {
         survivorsLoser: won ? result.survivorsB : result.survivorsA,
         durationSeconds: result.durationSeconds,
         wentToOvertime: result.wentToOvertime,
+        raceLast3fReached: result.events.some(e => e.type === 'RACE_PHASE' && e.phase === 'LAST_3F'),
         isGhost: false,
       });
       // Spec §21 — losing PvE costs no player HP, only a reward tier.
@@ -707,6 +705,7 @@ export class RoundDirector {
         survivorsLoser: result.winner === 'A' ? result.survivorsB : result.survivorsA,
         durationSeconds: result.durationSeconds,
         wentToOvertime: result.wentToOvertime,
+        raceLast3fReached: result.events.some(e => e.type === 'RACE_PHASE' && e.phase === 'LAST_3F'),
         isGhost: pair.isGhost,
       });
 

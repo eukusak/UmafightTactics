@@ -162,3 +162,28 @@ button.race-take:focus-visible, button.race-reroll:focus-visible,
 .mobile .race-entry-actions { position: sticky; bottom: 0; padding: 12px 14px calc(12px + env(safe-area-inset-bottom)); background: var(--race-paper); }
 
 .race-hud-slot { position: absolute; top: 8px; left: 0; right: 0; z-index: 5; pointer-events: none; }
+
+/* Generated art sits beneath readable surfaces; base colours survive load failures. */
+.race-panel { background-image: var(--race-paper-image); background-size: cover; background-position: center; }
+.race-header { background-image: var(--race-paddock-image); background-size: cover; }
+.race-kind-entry .race-header { background-image: var(--race-entry-image); }
+.race-entry-card { color: var(--race-charcoal); }
+.race-card p, .race-card li, .race-entry-name, .race-entry-detail dd { word-break: keep-all; overflow-wrap: anywhere; }
+.race-overlay:focus { outline: none; }
+.race-overlay button:focus-visible { outline: 3px solid var(--race-brass-hi); outline-offset: 3px; }
+.race-confirm-stamp { position:absolute; left:50%; top:46%; padding:14px 22px; transform:translate(-50%,-50%) rotate(-8deg); border:3px solid var(--race-red); border-radius:8px; color:var(--race-red); background:var(--race-ivory); font-size:25px; font-weight:800; pointer-events:none; animation:race-stamp 300ms cubic-bezier(.2,.8,.2,1); }
+@keyframes race-stamp { from { opacity:0; transform:translate(-50%,-50%) rotate(-8deg) scale(1.6); } }
+.race-hud-flash { min-height:42px; display:grid; place-items:center; background-position:center; background-size:contain; background-repeat:no-repeat; text-shadow:0 2px 3px #10271f,0 0 8px #10271f; }
+.race-clock { margin-left:auto; letter-spacing:0; font-variant-numeric:tabular-nums; }
+.mobile .race-card { flex:0 0 auto; width:100%; }
+.mobile .race-entry-grid { flex:0 0 auto; }
+.mobile .race-entry-card { flex-wrap:wrap; min-width:0; }
+.mobile .race-card-actions { position:sticky; bottom:0; background:#fff; padding-top:10px; }
+.mobile .race-entry-actions { flex-wrap:wrap; }
+@media (prefers-reduced-motion:reduce) { .race-confirm-stamp { animation:none; } }
+
+.race-recap-log { padding-left:20px; max-height:55vh; overflow:auto; font-size:12px; line-height:1.7; }
+.race-recap-log li { margin-bottom:6px; word-break:keep-all; overflow-wrap:anywhere; }
+
+.race-selection-clock { position:absolute; top:8px; right:22px; display:flex; align-items:center; gap:10px; font-size:13px; color:var(--race-ivory); background:var(--race-green-900); padding:4px 10px; border-radius:8px; }
+.race-selection-clock button { background:transparent; color:inherit; border:1px solid var(--race-brass); border-radius:4px; padding:3px 8px; }

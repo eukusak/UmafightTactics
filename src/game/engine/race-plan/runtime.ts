@@ -126,9 +126,9 @@ export class RaceResourceTracker {
   }
 
   /** Returns effects to apply now, for resources that pay out continuously. */
-  onTick(elapsed: number, phase: RaceCombatPhase): EffectDef[] {
+  onTick(elapsed: number, phase: RaceCombatPhase): Array<{ nodeId: string; effects: EffectDef[] }> {
     if (phase === 'OVERTIME') return [];
-    const out: EffectDef[] = [];
+    const out: Array<{ nodeId: string; effects: EffectDef[] }> = [];
     for (const resource of this.resources) {
       const node = findRacePlanNode(resource.nodeId);
       const spec = node?.resource;
@@ -140,14 +140,18 @@ export class RaceResourceTracker {
       this.secondsAccrued.set(key, due);
       const gained = this.gain(resource, due - had);
       if (gained && !spec.payoutPhase) {
-        for (let i = 0; i < gained; i += 1) out.push(...spec.perStack);
+        // Refresh one aggregate per node. Reapplying a 2% aura used to replace
+        // the previous stack, leaving six stamina worth just 2%.
+        out.push({ nodeId: resource.nodeId, effects: spec.perStack.map(e => ({
+          ...e, value: (e.value ?? 0) * resource.stacks, refresh: true,
+        })) });
       }
     }
     return out;
   }
 
-  onEvent(kind: 'ATTACK' | 'CAST' | 'HIT_TAKEN'): EffectDef[] {
-    const out: EffectDef[] = [];
+  onEvent(kind: 'ATTACK' | 'CAST' | 'HIT_TAKEN'): Array<{ nodeId: string; effects: EffectDef[] }> {
+    const out: Array<{ nodeId: string; effects: EffectDef[] }> = [];
     for (const resource of this.resources) {
       const spec = findRacePlanNode(resource.nodeId)?.resource;
       if (!spec) continue;
@@ -157,7 +161,11 @@ export class RaceResourceTracker {
         : spec.gainOnHitTaken ?? 0;
       const gained = this.gain(resource, amount);
       if (gained && !spec.payoutPhase) {
-        for (let i = 0; i < gained; i += 1) out.push(...spec.perStack);
+        // Refresh one aggregate per node. Reapplying a 2% aura used to replace
+        // the previous stack, leaving six stamina worth just 2%.
+        out.push({ nodeId: resource.nodeId, effects: spec.perStack.map(e => ({
+          ...e, value: (e.value ?? 0) * resource.stacks, refresh: true,
+        })) });
       }
     }
     return out;
@@ -168,10 +176,15 @@ export class RaceResourceTracker {
     const out: Array<{ nodeId: string; label: string; stacks: number; effects: EffectDef[] }> = [];
     for (const resource of this.resources) {
       const spec = findRacePlanNode(resource.nodeId)?.resource;
+      if (resource.nodeId === 'FM_STAYER' && phase === 'LAST_3F' && resource.stacks > 0) {
+        out.push({ nodeId: resource.nodeId, label: '지구력 해방', stacks: resource.stacks, effects: [
+          { kind:'STAT_MUL',stat:'attackDamage',value:.02 * resource.stacks },
+          { kind:'STAT_MUL',stat:'abilityPower',value:.02 * resource.stacks },
+        ] });
+      }
       if (!spec?.payoutPhase || resource.paid || spec.payoutPhase !== phase) continue;
       if (resource.stacks <= 0) { resource.paid = true; continue; }
-      const effects: EffectDef[] = [];
-      for (let i = 0; i < resource.stacks; i += 1) effects.push(...spec.perStack);
+      const effects = spec.perStack.map(e => ({ ...e, value: (e.value ?? 0) * resource.stacks, refresh: true }));
       out.push({ nodeId: resource.nodeId, label: spec.label, stacks: resource.stacks, effects });
       resource.paid = true;
       if (spec.consume) resource.stacks = 0;

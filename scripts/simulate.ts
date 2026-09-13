@@ -75,6 +75,8 @@ const totals: Totals = {
 };
 
 const startedAt = Date.now();
+let racePvp = 0, raceReached = 0, entrySeen = 0;
+const raceUnreachedDurations: number[] = [];
 for (let m = 0; m < MATCHES; m += 1) {
   const state = createMatch({ seed: BASE_SEED + m * 7919, allAi: true, seasonId: SEASON.id });
   const director = new RoundDirector(state);
@@ -84,8 +86,10 @@ for (let m = 0; m < MATCHES; m += 1) {
   // an eliminated player ever had, since elimination returns their units to
   // the pool — which is why 3-star rates first read as ~0 across the board.
   const seenThreeStars = new Set<string>();
+  const sawEntry = new Set<string>();
   const sample = (): void => {
     for (const p of state.players) {
+      if (p.racePlan?.entryUnitDefId || p.racePlan?.offerPhase === 'ENTRY') sawEntry.add(p.id);
       for (const u of [...p.board, ...p.bench]) {
         const key = `${p.id}:${u.unitDefId}`;
         if (u.star === 3 && !seenThreeStars.has(key)) {
@@ -110,6 +114,7 @@ for (let m = 0; m < MATCHES; m += 1) {
     sample();
   }
 
+  entrySeen += sawEntry.size;
   totals.matches += 1;
   totals.endStage.push(state.stage);
   totals.rounds.push(state.history.length);
@@ -118,6 +123,9 @@ for (let m = 0; m < MATCHES; m += 1) {
 
   for (const res of state.history) {
     for (const o of res.outcomes) {
+      if (!o.defenderId.startsWith('pve') && state.players.some(p => p.id === o.defenderId)) {
+        racePvp++; if (o.raceLast3fReached) raceReached++; else raceUnreachedDurations.push(o.durationSeconds);
+      }
       totals.battleCount += 1;
       if (o.winnerId === null) totals.drawCount += 1;
       if (o.wentToOvertime) totals.overtimeCount += 1;
@@ -179,6 +187,14 @@ console.log(`  average gold held      ${fmt(mean(totals.goldSamples), 1)}`);
 console.log(`  average player damage  ${fmt(mean(totals.damageSamples), 1)}`);
 console.log(`  battles                ${totals.battleCount} (draws ${totals.drawCount}, overtime ${totals.overtimeCount})`);
 console.log(`  pool conservation      ${totals.poolViolations === 0 ? 'OK' : `${totals.poolViolations} VIOLATIONS`}`);
+console.log(`  Race LAST_3F           ${raceReached}/${racePvp} (${fmt(raceReached/Math.max(1,racePvp)*100)}%)`);
+console.log(`  GⅠ entry access        ${entrySeen}/${MATCHES*8} (${fmt(entrySeen/(MATCHES*8)*100)}%)`);
+console.log(`  missed LAST_3F duration ${fmt(mean(raceUnreachedDurations))}s`);
+const jsonArg = process.argv.indexOf('--json');
+if (jsonArg >= 0 && process.argv[jsonArg+1]) writeFileSync(process.argv[jsonArg+1], JSON.stringify({
+  season:SEASON.id,matches:MATCHES,seed:BASE_SEED,racePvp,raceReached,entrySeen,entryTotal:MATCHES*8,
+  missedDuration:mean(raceUnreachedDurations),totals,
+},null,2)+'\n');
 console.log('\n  3-star completions per match:');
 for (const c of [1, 2, 3, 4, 5] as Cost[]) {
   console.log(`    ${c}-cost  ${fmt(totals.threeStarsByCost[c] / MATCHES, 2)}`);

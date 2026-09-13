@@ -7,6 +7,7 @@ import { take } from '../../src/game/engine/pool';
 import { COMPONENT_IDS } from '../../src/game/engine/items/item-defs';
 import { createAugmentOffers } from '../../src/game/engine/augments/offers';
 import { resultSave } from './result-save';
+import { createRacePlanOffer } from '../../src/game/engine/race-plan/offers';
 import { Rng } from '../../src/game/engine/rng';
 const mode = process.argv[2];
 const state = createMatch({ seed: 2209 });
@@ -97,4 +98,19 @@ if (mode === 'augment-descriptions') {
 p.shop = rollShop(p, state.pool, new Rng(9001));
 if (mode === 'shop-upgrades') p.shop=[units[1],units[2],units[1],units[2],units[0]].map(d=>({unitDefId:d.id,sold:false}));
 if (mode === 'augment') { state.stage = 2; state.round = 1; state.augmentOffers = createAugmentOffers(state, new Rng(91)); state.phase = 'AUGMENT_SELECT'; }
+if (mode.startsWith('race-')) {
+  state.stage = mode === 'race-plan' ? 2 : mode === 'race-evolution' ? 3 : 4;
+  state.round=5;p.level=6;
+  p.bench[0].position={q:3,r:0};p.board.push(p.bench.shift()!);
+  if(mode!=='race-plan') p.racePlan!.planId='RP_SLOW_STORE';
+  if(mode==='race-entry' || mode==='race-finishing') p.racePlan!.evolutionId='EV_STAMINA_BANK';
+  const phase=mode==='race-evolution'?'EVOLUTION':mode==='race-finishing'?'FINISHING':'PLAN';
+  if(mode==='race-entry'){p.racePlan!.offerPhase='ENTRY';state.phase='RACE_ENTRY_SELECT';}
+  else {
+    if(mode==='race-finishing'){p.racePlan!.entryUnitDefId=p.board[0].unitDefId;p.racePlan!.entryUnitInstanceId=p.board[0].instanceId;}
+    p.racePlan!.offerPhase=phase;
+    p.racePlan!.currentOffer=createRacePlanOffer({state,player:p,phase,rerollIndex:0,entryUnitDefId:p.racePlan!.entryUnitDefId});
+    state.phase=phase==='FINISHING'?'RACE_ENTRY_SELECT':'RACE_PLAN_SELECT';
+  }
+}
 console.log(JSON.stringify(mode.startsWith('result-') ? resultSave(mode === 'result-eliminated') : serializeMatch(director)));

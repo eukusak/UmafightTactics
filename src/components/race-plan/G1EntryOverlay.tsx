@@ -6,6 +6,8 @@
  * ◎ ○ ▲ recommend; nothing here forbids a pick.
  */
 import { useState } from 'react';
+import { RaceDialog } from './RaceDialog';
+import { playSound } from '../../game/ui/audio';
 import type { JSX } from 'react';
 import { useGameStore } from '../../store/gameStore';
 import { Portrait } from '../common';
@@ -46,7 +48,7 @@ export function G1EntryOverlay(): JSX.Element | null {
   const Surface = theme.surface === 'TURF' ? IconSurfaceTurf : IconSurfaceDirt;
 
   return (
-    <div className="race-overlay">
+    <RaceDialog label="GⅠ 출주 등록" kind="entry">
       <div className="race-panel">
         <div className="race-header">
           <div className="race-g1-head">
@@ -78,7 +80,7 @@ export function G1EntryOverlay(): JSX.Element | null {
                   key={candidate.instanceId}
                   className={`race-entry-card${candidate.onBench ? ' bench' : ''}`}
                   aria-pressed={candidate.instanceId === active.instanceId}
-                  onClick={() => setSelected(candidate.instanceId)}
+                  onClick={() => { setSelected(candidate.instanceId); playSound('race-plan-hover'); }}
                 >
                   <Portrait id={def.id} name={def.nameKo} size={72} />
                   <div style={{ minWidth: 0 }}>
@@ -155,7 +157,7 @@ export function G1EntryOverlay(): JSX.Element | null {
         </div>
 
         <div className="race-entry-actions">
-          <button type="button" className="race-take" onClick={() => choose(active.instanceId)}>
+          <button type="button" className="race-take" onClick={() => { choose(active.instanceId); playSound('race-entry-confirm'); }}>
             출주 등록
           </button>
           <button type="button" className="race-defer" onClick={() => defer()}>
@@ -166,7 +168,7 @@ export function G1EntryOverlay(): JSX.Element | null {
           </span>
         </div>
       </div>
-    </div>
+    </RaceDialog>
   );
 }
 
@@ -189,7 +191,7 @@ function FinishingCards({ entryName, entryId }: { entryName: string; entryId: st
   const offer = human?.racePlan?.currentOffer;
   if (!offer) return null;
   return (
-    <div className="race-overlay">
+    <RaceDialog label="최종 승부수" kind="finishing">
       <div className="race-panel">
         <div className="race-header">
           <div>
@@ -223,13 +225,13 @@ function FinishingCards({ entryName, entryId }: { entryName: string; entryId: st
                   </div>
                 </div>
                 <div className="race-card-actions">
-                  <button type="button" className="race-take" onClick={() => choose(id)}>이 승부수로 간다</button>
+                  <button type="button" className="race-take" onClick={() => { choose(id); playSound('race-plan-select'); }}>이 승부수로 간다</button>
                 </div>
               </div>
             );
           })}
         </div>
       </div>
-    </div>
+    </RaceDialog>
   );
 }

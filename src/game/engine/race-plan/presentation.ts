@@ -126,12 +126,12 @@ export function describeEffects(node: RacePlanNode): string[] {
   if (node.resource) {
     const r = node.resource;
     const gains = [
-      r.gainPerSeconds ? `${r.gainPerSeconds}초마다` : '',
-      r.gainOnAttack ? '기본 공격마다' : '',
-      r.gainOnCast ? '스킬 사용마다' : '',
-      r.gainOnHitTaken ? '피격마다' : '',
+      r.gainPerSeconds ? `${r.gainPerSeconds}초마다 +1` : '',
+      r.gainOnAttack ? `기본 공격마다 +${r.gainOnAttack}` : '',
+      r.gainOnCast ? `스킬 사용마다 +${r.gainOnCast}` : '',
+      r.gainOnHitTaken ? `피격마다 +${r.gainOnHitTaken}` : '',
     ].filter(Boolean).join(' · ');
-    lines.push(`${gains} ${r.label} +1 (최대 ${r.max})`);
+    lines.push(`${r.label}: ${gains} (최대 ${r.max})`);
     const per = r.perStack.map(magnitude).join(', ');
     lines.push(
       r.payoutPhase
@@ -139,6 +139,7 @@ export function describeEffects(node: RacePlanNode): string[] {
         : `${r.label} 1당 ${per}`,
     );
   }
+  if (node.id === 'FM_STAYER') lines.push('라스트 3F 진입 시 지구력 1당 공격력·주문력 +2%');
   if (node.id === 'RP_TRACK_GOING' || node.id === 'EV_TRACK_ADAPT') {
     lines.push('이번 라운드 마장 상태에 따라 총량이 같은 다른 보너스');
   }

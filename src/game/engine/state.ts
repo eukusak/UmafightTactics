@@ -147,6 +147,7 @@ export type BattleOutcome = {
   survivorsLoser: number;
   durationSeconds: number;
   wentToOvertime: boolean;
+  raceLast3fReached?: boolean;
   isGhost: boolean;
 };
 

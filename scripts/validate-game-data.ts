@@ -187,11 +187,11 @@ if (!manifestParsed.success) {
   check(m.traits.length === 24, `manifest traits ${m.traits.length} != 24`);
   check(m.augments.length === new Set(AUGMENT_DEFS.map(a=>a.iconId ?? a.id)).size, 'augment icon manifest mismatch');
   check(m.status.length === 24, `manifest status icons ${m.status.length} != 24`);
-  check(m.vfx.length === 24, `manifest vfx ${m.vfx.length} != 24`);
+  check(m.vfx.length === 27, `manifest vfx ${m.vfx.length} != 27`);
   check(m.starVfx.length === 3, `manifest star vfx ${m.starVfx.length} != 3`);
   check(m.pve.length === 5, `manifest pve ${m.pve.length} != 5`);
-  check(m.boards.length === 8, `manifest boards ${m.boards.length} != 8`);
-  check(m.banners.length === 12, `manifest banners ${m.banners.length} != 12`);
+  check(m.boards.length === 11, `manifest boards ${m.boards.length} != 11`);
+  check(m.banners.length === 13, `manifest banners ${m.banners.length} != 13`);
   const manifestIds = new Set(m.characters.map((c) => c.id));
   check(units.every((u) => manifestIds.has(u.id)), 'a unit is missing from the art manifest');
   for (const c of m.characters) {

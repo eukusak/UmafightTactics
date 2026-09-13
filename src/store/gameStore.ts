@@ -118,6 +118,7 @@ type GameStore = {
   rerollAugment: (slot:number) => void;
 
   chooseRacePlan: (nodeId: string) => void;
+  timeoutRacePlan: () => void;
   rerollRacePlan: (slot: number) => void;
   chooseRaceEntry: (unitInstanceId: string) => void;
   deferRaceEntry: () => void;
@@ -401,6 +402,12 @@ export const useGameStore = create<GameStore>((set, get) => ({
     bump(set);
   },
 
+  timeoutRacePlan: () => {
+    if (get().onlinePlayerId) return;
+    const { director } = get();
+    if (!director?.racePlanPending) return;
+    director.autoResolveRacePlans(); saveToStorage(director); bump(set);
+  },
   chooseRacePlan: (nodeId) => {
     if (get().onlinePlayerId) { onlineBridge.send?.({ action: 'racePlan', id: nodeId }); return; }
     const { director } = get(), player = get().human();
@@ -426,10 +433,10 @@ export const useGameStore = create<GameStore>((set, get) => ({
     if (director.deferRaceEntry(player.id)) { saveToStorage(director); bump(set); }
   },
   transferRaceEntry: (unitInstanceId) => {
-    if (get().onlinePlayerId) { onlineBridge.send?.({ action: 'raceTransfer', unit: unitInstanceId }); return; }
+    if (get().onlinePlayerId) { onlineBridge.send?.({ action: 'raceTransfer', unit: unitInstanceId }); playSound('race-entry-transfer'); return; }
     const { director } = get(), player = get().human();
     if (!director || !player) return;
-    if (director.transferRaceEntry(player.id, unitInstanceId)) { saveToStorage(director); bump(set); }
+    if (director.transferRaceEntry(player.id, unitInstanceId)) { saveToStorage(director); playSound('race-entry-transfer'); bump(set); }
   },
 
   pickDraft: (optionIndex) => {

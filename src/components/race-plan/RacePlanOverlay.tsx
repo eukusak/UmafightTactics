@@ -19,6 +19,7 @@ import { TRACK_STATE_LABEL } from '../../game/engine/race-plan/plan-defs';
 import { RACE_PHASE_LABEL } from '../../game/engine/race-plan/types';
 import type { RacePlanNode } from '../../game/engine/race-plan/types';
 import { CATEGORY_ICON } from './RaceIcons';
+import { RaceDialog } from './RaceDialog';
 
 const markClass = (mark: string): string =>
   mark === '◎' ? 'mark-best' : mark === '△' ? 'mark-warn' : 'mark-good';
@@ -46,7 +47,7 @@ export function RacePlanCard({
   const Icon = node.category ? CATEGORY_ICON[node.category] : undefined;
   const phases = node.fit.phases.map((p) => RACE_PHASE_LABEL[p]).join(' · ');
   return (
-    <div className="race-card">
+    <div className="race-card" onPointerEnter={() => playSound('race-plan-hover')} onFocus={() => playSound('race-plan-hover')}>
       <div className="race-band" style={{ color: band.color }}>
         {Icon ? <Icon size={18} /> : null}
         <span>{band.label}</span>
@@ -89,7 +90,8 @@ export function RacePlanOverlay(): JSX.Element | null {
   useGameStore((s) => s.revision);
   const [busy, setBusy] = useState(false);
   const timer = useRef<ReturnType<typeof setTimeout>>();
-  useEffect(() => () => clearTimeout(timer.current), []);
+  const commitTimer = useRef<ReturnType<typeof setTimeout>>();
+  useEffect(() => () => { clearTimeout(timer.current); clearTimeout(commitTimer.current); }, []);
 
   const offer = human?.racePlan?.currentOffer;
   if (!match || !human || !offer || offer.chosen !== null) return null;
@@ -98,8 +100,9 @@ export function RacePlanOverlay(): JSX.Element | null {
   const take = (id: string): void => {
     if (busy) return;
     setBusy(true);
-    playSound('augment');
-    timer.current = setTimeout(() => { choose(id); setBusy(false); }, 260);
+    playSound('race-plan-select');
+    timer.current = setTimeout(() => playSound('race-plan-stamp'), 180);
+    commitTimer.current = setTimeout(() => { choose(id); setBusy(false); }, 320);
   };
 
   const theme = getG1Theme(match.g1ThemeId);
@@ -107,7 +110,7 @@ export function RacePlanOverlay(): JSX.Element | null {
   const recent = human.racePlan?.recentCombat;
 
   return (
-    <div className="race-overlay">
+    <RaceDialog label={isPlan ? '출주 계획' : '전개 수정'} busy={busy}>
       <div className="race-panel">
         <div className="race-header">
           <div>
@@ -152,6 +155,6 @@ export function RacePlanOverlay(): JSX.Element | null {
           })}
         </div>
       </div>
-    </div>
+    </RaceDialog>
   );
 }
