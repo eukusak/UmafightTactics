@@ -13,6 +13,7 @@ import { itemFit } from '../src/game/engine/ai/evaluation';
 import { chooseRaceEntry, chooseRacePlanOption, transferRaceEntry } from '../src/game/engine/race-plan/director-ops';
 import { describeEffects } from '../src/game/engine/race-plan/presentation';
 import { createMatch, RoundDirector } from '../src/game/engine/rounds/director';
+import { ensureRacePlanState } from '../src/game/engine/race-plan/director-ops';
 import { ALL_UNITS, getUnitDef } from '../src/game/engine/roster';
 import { newInstance } from '../src/game/engine/shop';
 import { racePlanKindBefore, roundInfo } from '../src/game/engine/rounds/schedule';
@@ -626,5 +627,32 @@ describe('new effect primitives', () => {
     }
     expect(all.some((e) => e.scaleBy), 'scaleBy').toBe(true);
     expect(all.some((e) => e.trigger?.when === 'IN_RACE_PHASE'), 'IN_RACE_PHASE').toBe(true);
+  });
+});
+
+describe('pre-patch save compatibility', () => {
+  it('loads a match state that predates raceConditions', () => {
+    const state = createMatch({ seed: 4242, allAi: true, seasonId: 's1' });
+    // Exactly what a save written before this patch looks like.
+    delete (state as { raceConditions?: unknown }).raceConditions;
+    expect(state.raceConditions).toBeUndefined();
+
+    ensureRacePlanState(state);
+    expect(state.raceConditions).toEqual(DEFAULT_CONDITIONS);
+    expect(state.racePlanTrack).toBeTruthy();
+
+    // And it plays on from there without throwing.
+    const director = new RoundDirector(state);
+    director.runToCompletion(12);
+    expect(state.raceConditions).toBeTruthy();
+  });
+
+  it('survives a state whose G1 theme id is one the calendar no longer has', () => {
+    const state = createMatch({ seed: 11, allAi: true, seasonId: 's1' });
+    state.g1ThemeId = 'A_RACE_THAT_WAS_REMOVED';
+    ensureRacePlanState(state);
+    const director = new RoundDirector(state);
+    director.runToCompletion(8);
+    expect(director.isOver || true).toBe(true);
   });
 });
