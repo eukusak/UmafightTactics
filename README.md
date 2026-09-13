@@ -192,6 +192,8 @@ STRICT_ART=1 npm run check:art   # 규격·알파·크기까지 전수 검사
 
 빌드는 빌드 단계에서만 수행합니다. 통합 서버 시작 시 `dist`가 없으면 안내 후 실패하며 런타임 자동 빌드나 힙 크기 강제 설정은 하지 않습니다.
 
+PR24는 기존 Render 기본 설정 `yarn` / `yarn start`도 지원합니다. Render의 Yarn Classic `postinstall`에서 게임 빌드를 실행하므로 설치만 끝난 채 `dist` 없이 배포되는 문제를 막습니다. 일반 로컬 설치·npm 설치·분리 서버의 production-only 설치에서는 이 보완 빌드를 실행하지 않습니다. 권장 명령은 위 표처럼 잠금 파일을 사용하는 npm 명령이며, 빌드 실패는 설치 실패로 전달됩니다. 작은 메모리 한도는 빌드 자식 프로세스에서만 보완합니다.
+
 빌드는 고유 해시 JS/CSS를 `/bundled`에 출력합니다. 음악은 빌드 단계에서만 160kbps MP3로 인코딩하며, `public/assets/audio`의 원본은 보존합니다. 로컬 정적 미리보기는 SPA fallback, gzip, MP3 Range 응답을 지원합니다.
 
 ### Node 버전

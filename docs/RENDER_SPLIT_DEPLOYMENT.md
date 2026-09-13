@@ -1,5 +1,19 @@
 # Render 분리 배포 (PR22)
 
+## PR24: Render 기본 yarn 빌드 명령 호환
+
+실제 서비스 `srv-daf5662d0e5s73ars9g0`의 설정은 Build Command `yarn`, Start Command `yarn start`였다. PR23 배포는 의존성 설치에 성공했지만 `npm run build`를 실행하지 않아 `dist` 없이 시작 단계에 도달했다. Render 자체 장애가 아니라 설치 전용 빌드 명령과 앱의 빌드 요구가 맞지 않은 문제다.
+
+- 기존 `yarn` / `yarn start` 설정을 유지해도 Render Yarn Classic 설치의 `postinstall`에서 게임 빌드와 음악 최적화를 수행한다.
+- `RENDER=true`, Yarn 1.x, `postinstall` 세 조건을 확인한다. `npm ci`, 일반 로컬 설치, 명시적인 production-only 설치에는 적용하지 않는다. 분리 서버의 `npm ci --omit=dev`도 프런트 빌드 없이 유지한다.
+- 복원된 `dist`가 있어도 다시 빌드하므로 이전 커밋의 HTML·번들을 재사용하지 않는다. 빌드 실패나 `dist/index.html` 누락은 설치 단계에서 실패 처리한다.
+- 1GB 미만으로 설정된 빌드 힙은 빌드 자식 프로세스에서만 최소 1GB로 보완한다. 더 큰 제한과 다른 Node 옵션은 유지한다. `yarn start`·`npm start`에서 빌드하지 않으며 운영 서버 메모리 설정은 바꾸지 않는다.
+- npm을 사용하는 권장 설정은 아래 PR23 표 그대로다. 분리 Static Site도 `npm ci --include=dev && npm run build`를 사용한다. npm 경로에서는 postinstall 자동 빌드가 없어 중복되지 않는다.
+
+확인할 로그: `[render-build] Render yarn install detected` → 실제 Vite·음악 빌드 → `[render-build] dist/index.html is ready` → 배포 후 `HTTP + multiplayer server ready`. 이번 PR에서 서비스 설정 수정·병합·재배포는 수행하지 않는다.
+
+검증 재현: `yarn run test:render-install`은 실제 Yarn 기본 설치로 빈 dist 생성, 캐시된 dist 교체, 빌드 실패 전파를 검사한다. `RENDER=true NODE_OPTIONS=--max-old-space-size=256 yarn run postinstall`은 실제 프로젝트 빌드를 검사하며 CI에도 추가했다. [npm lifecycle](https://docs.npmjs.com/cli/v11/using-npm/scripts/), [Render Node 배포](https://render.com/docs/deploy-node-express-app).
+
 ## PR23: 기존 게임 주소 복구
 
 PR22는 `npm start`를 멀티플레이 전용 서버로 바꿨기 때문에, 기존 통합 서비스에 그대로 배포하면 루트 주소에서 게임 대신 `{"service":"multiplayer","endpoint":"/multiplayer"}`가 표시됐다. PR23에서는 `npm start`와 기존 `node scripts/serve.mjs`를 통합 HTTP + WebSocket 시작 경로로 복구한다. `npm run start:server`는 별도 서버 전용으로 유지한다.

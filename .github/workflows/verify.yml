@@ -56,8 +56,15 @@ jobs:
       - name: TFT comparison report (not a parity pass gate)
         run: npm run audit:tft
 
-      - name: Build
-        run: npm run build
+      - name: Render Yarn install hook builds before runtime
+        # Exercise the legacy Render lifecycle with a small inherited heap.
+        # Dependencies remain installed from package-lock.json by npm ci above.
+        run: |
+          npm exec --yes --package=yarn@1.22.22 -- env -u npm_execpath yarn run test:render-install
+          npm exec --yes --package=yarn@1.22.22 -- env -u npm_execpath yarn run postinstall
+        env:
+          RENDER: "true"
+          NODE_OPTIONS: --max-old-space-size=256
 
       - name: Clean production-only server install
         run: npm run test:server-install
