@@ -1,3 +1,4 @@
+import { multiplayerUrl } from '../game/network/endpoint';
 import { playSound } from '../game/ui/audio';
 import { create } from 'zustand';
 import type { ClientMessage, RoomView, ServerMessage } from '../game/network/protocol';
@@ -10,6 +11,7 @@ type OnlineStore = {
   connect: (message: ClientMessage) => void; send: (message: ClientMessage) => void; leave: () => void; resume: () => void;
 };
 let socket: WebSocket | null = null;
+let connectionTimer: ReturnType<typeof setTimeout> | null = null;
 let reconnectTimer: ReturnType<typeof setTimeout> | null = null;
 let intentionalClose = false;
 let sequence = 0;
@@ -22,15 +24,19 @@ export const useOnlineStore = create<OnlineStore>((set, get) => ({
   connect: (message) => {
     intentionalClose = false;
     if (reconnectTimer) clearTimeout(reconnectTimer);
-    if (socket) { socket.onclose = null; socket.close(); }
+    if (connectionTimer) clearTimeout(connectionTimer);
+    if (socket) { socket.onopen = socket.onmessage = socket.onerror = socket.onclose = null; socket.close(); }
     set({ connecting: true, error: null });
-    const endpoint = `${location.protocol === 'https:' ? 'wss:' : 'ws:'}//${location.host}/multiplayer`;
-    const ws = new WebSocket(endpoint); socket = ws;
-    const timeout = setTimeout(() => { if (ws.readyState === WebSocket.CONNECTING) ws.close(); }, 8000);
+    let ws: WebSocket;
+    try { ws = new WebSocket(multiplayerUrl(import.meta.env.VITE_MULTIPLAYER_URL, location)); }
+    catch (error) { set({ connecting: false, connected: false, error: error instanceof Error ? error.message : '서버 주소가 올바르지 않습니다.' }); return; }
+    socket = ws;
+    const timeout = connectionTimer = setTimeout(() => { if (ws.readyState === WebSocket.CONNECTING) ws.close(); }, 45000);
     ws.onopen = () => { clearTimeout(timeout); set({ connected: true, connecting: false }); useGameStore.setState({ networkConnected: true }); ws.send(JSON.stringify(message)); };
     ws.onmessage = (event) => {
       let m: ServerMessage;
       try { m = JSON.parse(event.data as string) as ServerMessage; } catch { return; }
+      if (socket !== ws) return;
       const game = useGameStore.getState();
       if (m.type === 'welcome') {
         const session = { code: m.code, token: m.token, playerId: m.playerId, lastSeq: m.lastSeq };
@@ -50,6 +56,8 @@ export const useOnlineStore = create<OnlineStore>((set, get) => ({
           ...(!battling && game.battleRunning ? { battleTime: game.battleFrames?.at(-1)?.t ?? game.battleTime } : {}),
           screen: m.match.phase === 'GAME_OVER' || m.match.players.some(p => p.id === m.playerId && p.eliminatedAtRound !== null) ? 'RESULT' : first || game.screen === 'ONLINE' || game.screen === 'RESULT' ? 'BATTLE' : game.screen,
         });
+      } else if (m.type === 'draft' && game.match?.draft && m.round === `${game.match.stage}-${game.match.round}`) {
+        useGameStore.setState({ match: { ...game.match, draft: m.draft }, revision: game.revision + 1, onlineClockOffset: m.serverNow - Date.now() });
       } else if (m.type === 'ack' && m.sound) playSound(m.sound);
       else if (m.type === 'frames' && m.battleId === game.onlineBattleId) {
         const owner = m.playerId ?? game.onlinePlayerId!;
@@ -66,7 +74,7 @@ export const useOnlineStore = create<OnlineStore>((set, get) => ({
       if (session) { set({ error: '연결이 끊어졌습니다. 재접속 중입니다.' }); reconnectTimer = setTimeout(() => get().connect({ type: 'resume', code: session.code, token: session.token }), 1500); }
       else set({ error: '온라인 서버에 연결할 수 없습니다. 잠시 후 다시 시도해 주세요.' });
     };
-    ws.onerror = () => set({ error: '온라인 연결에 실패했습니다.' });
+    ws.onerror = () => { if (socket === ws) set({ error: '온라인 연결에 실패했습니다.' }); };
   },
   send: (message) => {
     if (socket?.readyState !== WebSocket.OPEN) { set({ error: '재접속 후 조작할 수 있습니다.' }); return; }
@@ -75,6 +83,7 @@ export const useOnlineStore = create<OnlineStore>((set, get) => ({
   resume: () => { const session = get().session ?? readSession(); if (session) get().connect({ type: 'resume', code: session.code, token: session.token }); else set({ error: '재접속할 방이 없습니다.' }); },
   leave: () => {
     intentionalClose = true; if (reconnectTimer) clearTimeout(reconnectTimer);
+    if (connectionTimer) clearTimeout(connectionTimer);
     if (socket?.readyState === WebSocket.OPEN) socket.send(JSON.stringify({ type: 'leave' }));
     socket?.close(); socket = null; storeSession(null);
     set({ room: null, session: null, connected: false, connecting: false, error: null });

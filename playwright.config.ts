@@ -3,7 +3,7 @@ import { defineConfig } from '@playwright/test';
 export default defineConfig({
   testDir: './tests/browser',
   timeout: 60_000,
-  globalTimeout: 600_000,
+  globalTimeout: 900_000,
   maxFailures: 1,
   workers: 1,
   retries: 0,
@@ -21,7 +21,7 @@ export default defineConfig({
     { name: 'laptop', use: { viewport: { width: 1366, height: 768 } } },
   ],
   webServer: {
-    command: 'npm start',
+    command: 'npm run start:local',
     url: 'http://127.0.0.1:4173/health',
     reuseExistingServer: !process.env.CI,
     timeout: 30_000,

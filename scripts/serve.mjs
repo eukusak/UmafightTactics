@@ -1,17 +1,5 @@
-/**
- * Production static server for the built SPA.
- *
- * Used by server/index.ts for HTTP assets alongside WebSocket multiplayer.
- * Direct execution starts multiplayer too; --static explicitly serves offline only.
- *
- * It deliberately does NOT build. The build needs roughly 500MB of heap, and a
- * small runtime instance caps it near 256MB: an earlier version built here on
- * first boot and spent two minutes in GC before dying with "Reached heap limit
- * Allocation failed", which crash-looped the service. The build belongs on the
- * build machine — scripts/render-postinstall.mjs runs it during install.
- *
- * The static handler is dependency-free; multiplayer requires installed dependencies.
- */
+/** Local built-SPA preview. --local includes multiplayer; --static is assets only.
+ * Production runs server/index.ts directly and never loads this module. */
 import { createReadStream, existsSync, statSync } from 'node:fs';
 import { createServer } from 'node:http';
 import path from 'node:path';
@@ -64,8 +52,8 @@ export function requireBuild() {
       '          Publish Directory: dist\n\n' +
       '        Render Node web service:\n' +
       '          Build Command:     npm ci && npm run build\n' +
-      '          Start Command:     npm start\n\n' +
-      '        Locally:  npm run build && npm start\n',
+      '          Start Command:     npm run start:local\n\n' +
+      '        Locally:  npm run build && npm run start:local\n',
   );
   process.exit(1);
 }
@@ -96,13 +84,29 @@ function send(req, res, file, status = 200) {
 
   // Hashed asset filenames are safe to cache forever; the shell never is.
   const assets = path.join(DIST, 'assets');
-  const hashedBundle = path.dirname(file) === assets && /-[A-Za-z0-9_-]{8,}\.[a-z0-9]+$/i.test(path.basename(file));
+  const hashedBundle = path.dirname(file) === path.join(DIST, 'bundled') && /-[A-Za-z0-9_-]{8,}\.[a-z0-9]+$/i.test(path.basename(file));
   const versioned = file.startsWith(assets + path.sep) && new URL(req.url, 'http://localhost').searchParams.has('v');
   const cache = hashedBundle || versioned
     ? 'public, max-age=31536000, immutable'
     : 'no-cache';
 
   const headers = { 'Content-Type': type, 'Cache-Control': cache, 'X-Content-Type-Options': 'nosniff' };
+  // Match CDN media seeking semantics for local split-service verification.
+  const size = statSync(file).size;
+  headers['Accept-Ranges'] = 'bytes';
+  if (req.headers.range && ['.mp3', '.ogg', '.wav', '.mp4'].includes(ext)) {
+    const range = /^bytes=(\d*)-(\d*)$/.exec(req.headers.range);
+    let start = range?.[1] ? Number(range[1]) : 0;
+    let end = range?.[2] ? Number(range[2]) : size - 1;
+    if (range && !range[1] && range[2]) { start = Math.max(0, size - end); end = size - 1; }
+    if (!range || (!range[1] && !range[2]) || start > end || start >= size || !Number.isSafeInteger(start) || !Number.isSafeInteger(end)) {
+      res.writeHead(416, { 'Content-Range': `bytes */${size}` }); res.end(); return;
+    }
+    end = Math.min(end, size - 1);
+    res.writeHead(206, { ...headers, 'Content-Range': `bytes ${start}-${end}/${size}`, 'Content-Length': end - start + 1 });
+    if (req.method === 'HEAD') res.end(); else createReadStream(file, { start, end }).pipe(res);
+    return;
+  }
   const acceptsGzip = /\bgzip\b/.test(req.headers['accept-encoding'] ?? '');
 
   if (acceptsGzip && COMPRESSIBLE.has(ext)) {
@@ -152,7 +156,7 @@ if (isMainModule(import.meta.url)) {
     const { register } = await import('tsx/esm/api');
     register();
     // Let this module finish before main imports its static handler exports.
-    void import('../server/index.ts').then(({ main }) => main()).catch(error => {
+    void import('../server/index.ts').then(({ main }) => main(process.argv.includes('--local'))).catch(error => {
       console.error(error);
       process.exitCode = 1;
     });

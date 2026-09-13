@@ -13,6 +13,8 @@
 
 ## 실행
 
+PR22부터 `npm start`는 멀티플레이 서버 전용입니다. 운영에서는 `ALLOWED_ORIGINS`에 정적 프런트의 정확한 origin을 설정해야 하며, 화면 배포는 [분리 배포 가이드](RENDER_SPLIT_DEPLOYMENT.md)를 따릅니다.
+
 Linux 예시:
 
 ```sh

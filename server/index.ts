@@ -1,3 +1,5 @@
+import { originPolicy } from './origins';
+import { serverMetrics } from './metrics';
 import { createServer, type Server } from 'node:http';
 import { WebSocketServer, WebSocket } from 'ws';
 import { isMainModule, listenAddress } from '../scripts/runtime.mjs';
@@ -7,22 +9,39 @@ import { loadRooms, saveRooms } from './persistence';
 import { resolve, relative, isAbsolute } from 'node:path';
 
 export function attachMultiplayer(server: Server, rooms = new RoomService()) {
-  const wss = new WebSocketServer({ noServer: true, maxPayload: 8192, perMessageDeflate: { threshold: 1024 } });
+  const acceptsOrigin = originPolicy();
+  const wss = new WebSocketServer({ noServer: true, maxPayload: 8192, perMessageDeflate: {
+    threshold: 1024, concurrencyLimit: 2, serverNoContextTakeover: true, clientNoContextTakeover: true,
+    zlibDeflateOptions: { level: 1, memLevel: 4 },
+  } });
+  const metrics = serverMetrics(rooms, () => wss.clients.size, () => Math.max(0, ...[...wss.clients].map(ws => ws.bufferedAmount)));
+  const serialized = new WeakMap<object, string>();
   server.on('upgrade', (request, socket, head) => {
-    if (request.url !== '/multiplayer') return;
-    const origin = request.headers.origin;
-    const allowed = (process.env.ALLOWED_ORIGINS ?? '').split(',').filter(Boolean);
-    let sameOrigin = false;
-    try { sameOrigin = !!origin && new URL(origin).host === request.headers.host; } catch { /* invalid origin */ }
-    if ((!sameOrigin && !allowed.includes(origin ?? '')) || wss.clients.size >= 128) {
-      socket.write('HTTP/1.1 403 Forbidden\r\n\r\n'); socket.destroy(); return;
+    if (request.url !== '/multiplayer' || !acceptsOrigin(request.headers.origin, request.headers.host) || wss.clients.size >= 128) {
+      socket.write('HTTP/1.1 403 Forbidden\r\nConnection: close\r\n\r\n'); socket.destroy(); return;
     }
     wss.handleUpgrade(request, socket, head, (ws) => wss.emit('connection', ws));
   });
   wss.on('connection', (ws) => {
-    let windowAt = Date.now(), count = 0, alive = true;
+    let windowAt = Date.now(), count = 0, alive = true, pressureAt = 0;
+    const canSendFrames = () => {
+      if (ws.readyState !== WebSocket.OPEN) return false;
+      if (ws.bufferedAmount > 512_000) {
+        if (!pressureAt) pressureAt = Date.now();
+        if (ws.bufferedAmount > 4_000_000 || Date.now() - pressureAt > 5000) ws.close(1013, 'Reconnect');
+        metrics.defer(); return false;
+      }
+      pressureAt = 0; return true;
+    };
     const peer: Peer = {
-      send: (message) => { if (ws.readyState !== WebSocket.OPEN) return; if (ws.bufferedAmount > 4_000_000) { ws.close(1013, 'Reconnect'); return; } ws.send(JSON.stringify(message)); },
+      canSendFrames,
+      send: (message) => {
+        if (ws.readyState !== WebSocket.OPEN) return false;
+        if (ws.bufferedAmount > 4_000_000) { ws.close(1013, 'Reconnect'); return false; }
+        let payload = serialized.get(message);
+        if (!payload) { payload = JSON.stringify(message); serialized.set(message, payload); }
+        ws.send(payload); metrics.sent(Buffer.byteLength(payload), message.type === 'frames'); return true;
+      },
       close: () => ws.close(1000, 'Seat closed'),
     };
     ws.on('pong', () => { alive = true; });
@@ -40,19 +59,22 @@ export function attachMultiplayer(server: Server, rooms = new RoomService()) {
     const heartbeat = setInterval(() => { if (!alive) { ws.terminate(); return; } alive = false; ws.ping(); }, 15000);
     heartbeat.unref(); ws.once('close', () => clearInterval(heartbeat));
   });
-  const clock = setInterval(() => rooms.tick(), 50); clock.unref();
-  server.once('close', () => { clearInterval(clock); for (const ws of wss.clients) ws.terminate(); wss.close(); });
-  return { rooms, wss };
+  const clock = setInterval(() => { metrics.tick(); rooms.tick(); }, 50); clock.unref();
+  server.once('close', () => { clearInterval(clock); metrics.close(); for (const ws of wss.clients) ws.terminate(); wss.close(); });
+  return { rooms, wss, metrics };
 }
 
-export async function main(): Promise<void> {
+export async function main(localAssets = false): Promise<void> {
   const { port, host } = listenAddress();
-  console.log('[startup] Loading HTTP + multiplayer server');
-  const { staticHandler, requireBuild } = await import('../scripts/serve.mjs');
-  requireBuild();
+  console.log('[startup] Loading multiplayer server');
+  // The production entry never imports filesystem/gzip asset-serving code.
+  const assets = localAssets ? await import('../scripts/serve.mjs') : null;
+  assets?.requireBuild();
   const server = createServer((req, res) => {
-    if (req.url === '/health') { res.writeHead(200, { 'Content-Type': 'application/json', 'Cache-Control': 'no-store' }); res.end('{"ok":true,"multiplayer":true}'); return; }
-    staticHandler(req, res);
+    if (req.url === '/health') { res.writeHead(200, { 'Content-Type': 'application/json', 'Cache-Control': 'no-store' }); res.end('{"ok":true,"multiplayer":true,"service":"multiplayer"}'); return; }
+    if (assets) { assets.staticHandler(req, res); return; }
+    res.writeHead(req.url === '/' ? 200 : 404, { 'Content-Type': 'application/json', 'Cache-Control': 'no-store' });
+    res.end(JSON.stringify({ service: 'multiplayer', ...(req.url === '/' ? { endpoint: '/multiplayer' } : { error: 'Not found' }) }));
   });
   const rooms = new RoomService();
   const checkpoint = process.env.ROOM_STATE_FILE;
@@ -73,7 +95,7 @@ export async function main(): Promise<void> {
     server.once('error', reject);
     server.listen(port, host, () => { server.removeListener('error', reject); resolve(); });
   });
-  console.log('UmafightTactics HTTP + multiplayer server ready on http://' + host + ':' + port);
+  console.log('UmafightTactics multiplayer server ready on http://' + host + ':' + port);
   let stopping = false;
   for (const signal of ['SIGTERM', 'SIGINT']) process.once(signal, () => {
     if (stopping) return;
@@ -85,6 +107,6 @@ export async function main(): Promise<void> {
   });
 }
 if (isMainModule(import.meta.url)) void main().catch(error => {
-  console.error('[startup] Failed to start HTTP + multiplayer server:', error);
+  console.error('[startup] Failed to start multiplayer server:', error);
   process.exitCode = 1;
 });

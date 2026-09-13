@@ -1,3 +1,4 @@
+import { EffectDescription } from './EffectDescription';
 import { useWishlistStore } from '../store/wishlistStore';
 import { SkillValues } from './SkillValues';
 import { matchSkillDescription, matchItemDescription } from '../game/ui/match-descriptions';
@@ -30,14 +31,14 @@ function ItemDetail({ id, playerId }: { id: string; playerId?: string }): JSX.El
   return <>
     <div className="detail-heading"><ItemIcon itemId={id} size={46} title={effective.description} /><h3>{item.name}</h3></div>
     <span className="pill">{item.tier === 'ARTIFACT' ? '유물 · 4-7 승리 보상' : item.tier === 'RADIANT' ? '찬란한 장비 · 증강 보상' : item.isComponent ? '하위 아이템 · 조합 재료' : item.tactician ? '전략가 장비' : '완성 아이템'}</span>
-    <p className="match-item-description">{effective.description}</p>
+    <p className="match-item-description"><EffectDescription text={effective.description} /></p>
     {item.unique && <p className="gold-text">중복 장착 불가</p>}
     {item.uniqueGroup && <p className="gold-text">동일 계열 장비와 중복 장착 불가 · 일반/찬란한 버전 포함</p>}
     {item.components && <><h4>조합식</h4><div className="detail-recipe">{item.components.map((id, i) => <div key={i}>{i > 0 && <b>＋</b>}<ItemLink id={id} playerId={owner?.id} /></div>)}</div></>}
     {item.isComponent && <><h4>만들 수 있는 아이템 · {recipes.length}종</h4><p className="muted">함께 필요한 재료와 완성 효과입니다. 이름을 누르면 상세 설명을 확인합니다.</p>
       {recipes.map(recipe => {
         const pair = [...recipe.components!]; pair.splice(pair.indexOf(id), 1);
-        return <div className="detail-recipe-card" key={recipe.id}><div className="detail-recipe"><b>＋</b><ItemLink id={pair[0]} playerId={owner?.id} /></div><ItemLink id={recipe.id} playerId={owner?.id} /><p className="match-item-description">{matchItemDescription(recipe.id, owner ?? undefined).description}</p></div>;
+        return <div className="detail-recipe-card" key={recipe.id}><div className="detail-recipe"><b>＋</b><ItemLink id={pair[0]} playerId={owner?.id} /></div><ItemLink id={recipe.id} playerId={owner?.id} /><p className="match-item-description"><EffectDescription text={matchItemDescription(recipe.id, owner ?? undefined).description} /></p></div>;
       })}</>}
     <p className="muted">보관함의 재료끼리 0.7초간 겹쳐 유지하면 조합됩니다. 재료를 기물 위로 드래그하면 장착됩니다. 이미 장착한 재료와 조합할 수 있으면 자동 완성됩니다.</p>
   </>;
@@ -52,11 +53,11 @@ function TraitDetail({ id, playerId }: { id: TraitId; playerId: string }): JSX.E
   const members = getSeasonUnits(player.seasonId).filter(u => getUnitTraits(u.id, player.seasonId).includes(id)).sort((a,b)=>a.cost-b.cost||a.nameKo.localeCompare(b.nameKo));
   const finalCount = trait.thresholds.at(-1)!;
   const shortage = Math.max(0, finalCount - members.length);
-  return <><h3>{trait.name}</h3><p>{trait.description}</p><strong className="gold-text">{player.name} · 배치 {count}명</strong>
+  return <><h3>{trait.name}</h3><p><EffectDescription text={trait.description} /></p><strong className="gold-text">{player.name} · 배치 {count}명</strong>
     <p className="muted">같은 기물은 한 번만 집계하며 대기석은 제외합니다.</p>
     <p className="trait-chase-note">총 {trait.tiers.length}단계 · 최종 {finalCount}명 · 이번 시즌 기본 보유 {members.length}명
       {shortage > 0 ? ` · 상징 또는 특성 추가로 최소 ${shortage}명 보강 필요` : finalCount >= 8 ? ' · 높은 레벨 또는 편성 인원 증가가 필요한 최종 조합' : ''}</p>
-    {trait.tiers.map((t, i) => <div className={`detail-tier${i === tier ? ' active' : ''}`} key={t.count}><b>{t.count}명 {i === tier ? '· 현재 활성' : count >= t.count ? '· 달성' : '· 미달성'}</b><p>{t.description}</p></div>)}
+    {trait.tiers.map((t, i) => <div className={`detail-tier${i === tier ? ' active' : ''}`} key={t.count}><b>{t.count}명 {i === tier ? '· 현재 활성' : count >= t.count ? '· 달성' : '· 미달성'}</b><p><EffectDescription text={t.description} /></p></div>)}
     <h4>이번 시즌의 해당 기물</h4><div className="detail-trait-roster">{members.map(u => <div key={u.id}><Portrait id={u.id} name={u.nameKo} size={30} /><span>{u.nameKo}</span><b>{u.cost}G</b><button className="trait-wishlist" aria-label={u.nameKo+' 희망 기물'} aria-pressed={!!wishlist[player.seasonId ?? 's1']?.includes(u.id)} onClick={()=>toggle(player.seasonId ?? 's1',u.id)}>{wishlist[player.seasonId ?? 's1']?.includes(u.id)?'★':'☆'}</button></div>)}</div>
   </>;
 }
@@ -75,7 +76,7 @@ export function DetailPanel(): JSX.Element | null {
   if (inspection.kind === 'augment') {
     const aug = getAugment(inspection.id), owner = match.players.find(p=>p.id === inspection.playerId);
     const progress = owner?.augmentProgress?.[aug.id] ?? 0;
-    body = <div className="augment-detail"><h3>{aug.name}</h3><span className="pill">{{ S: '실버', G: '골드', P: '프리즘' }[aug.grade]} 증강</span><p>{aug.description}</p>{aug.grants?.unitId && <p className="muted">공유 풀에 재고가 없거나 대기석이 가득 차면 해당 기물 가격만큼 골드로 지급합니다.</p>}{(aug.growth || aug.rememberItem) && <p className="gold-text">영구 기록: {progress}{aug.growth ? ' / ' + aug.growth.maxStacks : ''}중첩 · 다음 전투 적용</p>}</div>;
+    body = <div className="augment-detail"><h3>{aug.name}</h3><span className="pill">{{ S: '실버', G: '골드', P: '프리즘' }[aug.grade]} 증강</span><p><EffectDescription text={aug.description} /></p>{aug.grants?.unitId && <p className="muted">공유 풀에 재고가 없거나 대기석이 가득 차면 해당 기물 가격만큼 골드로 지급합니다.</p>}{(aug.growth || aug.rememberItem) && <p className="gold-text">영구 기록: {progress}{aug.growth ? ' / ' + aug.growth.maxStacks : ''}중첩 · 다음 전투 적용</p>}</div>;
   }
   else if (inspection.kind === 'item') body = <ItemDetail id={inspection.id} playerId={inspection.playerId} />;
   else if (inspection.kind === 'trait') body = <TraitDetail id={inspection.id} playerId={inspection.playerId} />;
@@ -109,9 +110,9 @@ export function DetailPanel(): JSX.Element | null {
           ['치명타 확률', `${Math.round(stats.critChance * 100)}%`], ['치명타 피해', `${Math.round(stats.critMultiplier * 100)}%`],
         ] as const).map(([label, value]) => <div key={label}><dt>{label}</dt><dd>{value}</dd></div>)}</dl>
         {!!snapshot?.shield && <p>보호막 {snapshot.shield}</p>}
-        <h4>{skill.displayName}</h4><p className="muted">{effective.changes.length ? '이번 경기 효과 · '+star+'성 · 주문력 '+Math.round(stats.abilityPower)+' 기준 · 추가 증폭·발동 조건은 아래 별도 표시' : '기본 동작 · 1성/주문력 100'}</p>
-        <p className="match-skill-description">{effective.description}</p>
-        {effective.changes.length > 0 && <div className="match-augment-changes" aria-label="이 기물의 증강 효과">{effective.changes.map(line=><p key={line}>{line}</p>)}<details><summary>기본 스킬 설명</summary><p>{def.skill.description}</p></details></div>}
+        <h4>{skill.displayName}</h4><p className="muted">{effective.changes.length ? '전용 증강 반영 · '+star+'성 · 주문력 '+Math.round(stats.abilityPower)+' 기준' : '기본 동작 · 1성/주문력 100'}</p>
+        <p className="match-skill-description"><EffectDescription text={effective.description} /></p>
+        {effective.changes.length > 0 && <div className="match-augment-changes" aria-label="이 기물의 증강 효과">{effective.changes.map(line=><p key={line}><EffectDescription text={line} /></p>)}<details><summary>기본 스킬 설명</summary><p><EffectDescription text={def.skill.description} /></p></details></div>}
         <SkillValues skill={skill} cost={def.cost} star={star} abilityPower={stats.abilityPower} />
         <h4>장착 아이템 · {items.length}/3</h4>{items.length ? items.map((id, i) => <ItemLink key={`${id}-${i}`} id={id} playerId={owner?.id} />) : <p className="muted">장착한 아이템이 없습니다.</p>}
         {owner?.isHuman && unit && <button className="detail-sell" disabled={running && !!unit.position} onClick={() => useGameStore.getState().sell(unit.instanceId)}>판매 · {sellPrice(owner, unit)}G</button>}

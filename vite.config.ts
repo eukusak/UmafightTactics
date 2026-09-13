@@ -15,12 +15,17 @@ export default defineConfig({
   build: {
     target: 'es2022',
     outDir: 'dist',
+    assetsDir: 'bundled',
+    manifest: true,
     sourcemap: false,
     rollupOptions: {
       output: {
-        manualChunks: {
-          phaser: ['phaser'],
-          react: ['react', 'react-dom'],
+        manualChunks(id) {
+          // CommonJS helpers must not live in Phaser: React also imports them.
+          const module = id.replaceAll('\\', '/');
+          if (module.includes('commonjsHelpers')) return 'runtime';
+          if (module.includes('/node_modules/phaser/')) return 'phaser';
+          if (/\/node_modules\/(react|react-dom|scheduler)\//.test(module)) return 'react';
         },
       },
     },

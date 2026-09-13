@@ -199,8 +199,11 @@ it('synchronizes carousel targets, preserves progress across restart, and awards
   expect(f.peers[0].messages.at(-1)?.type).toBe('error');
   f.tick(4200);
   for (const peer of f.peers) {
-    const view = peer.messages.filter(m => m.type === 'state').at(-1)!;
-    expect(view.match.draft!.carousel).toEqual(d.state.draft!.carousel);
+    // Movement is a delta, but a pickup in the same tick sends full state.
+    // The random room seed can put the moving avatar on either path.
+    const view = peer.messages.filter(m => m.type === 'draft' || m.type === 'state').at(-1)!;
+    const draft = view.type === 'draft' ? view.draft : view.match.draft;
+    expect(draft!.carousel).toEqual(d.state.draft!.carousel);
   }
   const snapshot = f.service.snapshot();
   let time = 100000;

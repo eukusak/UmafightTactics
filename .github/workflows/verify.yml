@@ -59,6 +59,15 @@ jobs:
       - name: Build
         run: npm run build
 
+      - name: Clean production-only server install
+        run: npm run test:server-install
+
+      - name: Check initial bundle boundary
+        run: npm run check:bundle
+
+      - name: Multiplayer transport load smoke
+        run: npm run test:load -- --rooms 1 --players 8 --seconds 3
+
       - name: Check production entry points and WebSocket rooms
         # Both files probe a free TCP port before spawning the production entry.
         # Run them serially so neither suite reclaims the other's released port.
@@ -85,7 +94,7 @@ jobs:
 
   browser:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 25
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4

@@ -1,3 +1,4 @@
+import { versionedAssetUrl } from './asset-version';
 import musicManifest from '../../data/manual/music.json';
 import { Rng } from '../engine/rng';
 // Audio randomness is independent of every simulation stream.
@@ -14,6 +15,9 @@ let scene: 'title' | 'game' = 'title';
 let unlocked = false;
 let bag: string[] = [];
 let lastTrack = '';
+function audioDiagnostic(event: string, error?: unknown): void {
+  if ((import.meta as ImportMeta & { env?: { DEV?: boolean } }).env?.DEV) console.warn('[audio]', event, error ?? '');
+}
 
 /** Shuffle bag: hear every available track before repeating, never repeat at a boundary. */
 export function shuffledTracks(tracks: readonly string[], previous = '', random = () => musicRng.next()): string[] {
@@ -28,12 +32,12 @@ export function shuffledTracks(tracks: readonly string[], previous = '', random 
 function nextTrack(): void {
   if (!music) return;
   if (scene === 'title' ? !TITLE_TRACK : !GAME_TRACKS.length) { music.pause?.(); return; }
-  if (scene === 'title') { music.src = TITLE_TRACK!; music.loop = true; }
+  if (scene === 'title') { music.src = versionedAssetUrl(TITLE_TRACK!); music.loop = true; }
   else {
     if (!bag.length) bag = shuffledTracks(GAME_TRACKS, lastTrack);
-    lastTrack = bag.shift()!; music.src = lastTrack; music.loop = false;
+    lastTrack = bag.shift()!; music.src = versionedAssetUrl(lastTrack); music.loop = false;
   }
-  if (unlocked) void music.play().catch(() => {});
+  if (unlocked) void music.play().catch(error => audioDiagnostic('music.play failed', error));
 }
 export function configureAudio(settings: typeof options): void {
   options = { musicVolume: settings.musicVolume, effectsVolume: settings.effectsVolume, muted: settings.muted };
@@ -55,8 +59,10 @@ export function unlockAudio(): void {
     music = new Audio(); music.preload = 'metadata';
     music.volume = options.muted ? 0 : options.musicVolume;
     music.addEventListener('ended', nextTrack);
+    for (const event of ['loadedmetadata', 'canplay', 'playing', 'waiting', 'stalled', 'error'])
+      music.addEventListener(event, () => audioDiagnostic(event));
     nextTrack();
-  } else if (music.paused) void music.play().catch(() => {});
+  } else if (music.paused) void music.play().catch(error => audioDiagnostic('music.play failed', error));
 }
 /** Reuse uploaded clips; audio failures must never interrupt a game action. */
 export function playSound(name: GameSound, variant = 0): void {
@@ -65,9 +71,9 @@ export function playSound(name: GameSound, variant = 0): void {
   if (!Audio || options.muted || options.effectsVolume <= 0) return;
   try {
     let clip = clips.get(name);
-    if (!clip) { clip = new Audio(`/assets/audio/${name}.mp3`); clips.set(name, clip); }
+    if (!clip) { clip = new Audio(versionedAssetUrl(`/assets/audio/${name}.mp3`)); clips.set(name, clip); }
     clip.volume = options.effectsVolume; clip.currentTime = 0;
-    void clip.play().catch(() => {});
+    void clip.play().catch(error => audioDiagnostic('effect.play failed', error));
   } catch { /* Browser autoplay/device restrictions are non-fatal. */ }
 }
 
@@ -88,7 +94,7 @@ const lastSound=new Map<string,number>();
 function unlockSynth():void {
   try {
     if(!synth && typeof AudioContext!=='undefined') {synth=new AudioContext();synthMaster=synth.createGain();synthMaster.gain.value=options.muted?0:options.effectsVolume;synthMaster.connect(synth.destination);}
-    if(synth?.state==='suspended')void synth.resume().catch(()=>{});
+    if(synth?.state==='suspended')void synth.resume().catch(error => audioDiagnostic('AudioContext.resume failed', error));
   } catch { /* Audio devices and browser permissions never block gameplay. */ }
 }
 /** Original synthesized cues: distinct envelopes, no downloaded game audio. */

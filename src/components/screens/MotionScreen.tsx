@@ -1,5 +1,7 @@
+import { EffectDescription } from '../EffectDescription';
 import { useEffect, useRef, useState } from 'react';
 import Phaser from 'phaser';
+import { ManagedGame } from '../../game/phaser/ManagedGame';
 import { ALL_UNITS, getUnitDef } from '../../game/engine/roster';
 import { PVE_UNIT_IDS } from '../../game/engine/battle/pve-units';
 import { FRAME_SHEETS, frameSheetUrl, frameGeometry, motionFrame, skillMotionFrame } from '../../game/ui/frame-animation';
@@ -107,7 +109,7 @@ export function MotionScreen(): JSX.Element {
         }
       }
     }
-    const game = new Phaser.Game({ type: Phaser.AUTO, width: 720, height: 550,
+    const game = new ManagedGame({ type: Phaser.AUTO, width: 720, height: 550,
       parent: host.current, backgroundColor: '#183549', scene: Preview, audio: { noAudio: true },
       render: { antialias: false, pixelArt: true }, scale: { mode: Phaser.Scale.NONE },
       callbacks: { postBoot: game => { game.canvas.style.width = '100%'; game.canvas.style.height = '100%'; } } });
@@ -133,7 +135,7 @@ export function MotionScreen(): JSX.Element {
         </details>}
         <p className="motion-cost">{getUnitDef(id).cost}코스트 · {COST_SKILL_PRESENTATION[getUnitDef(id).cost].label} 이펙트</p>
         <p className="motion-skill-name" style={{ color: '#ffe4a6', fontWeight: 700 }}>{getUnitDef(id).skill.displayName}</p>
-        <p className="motion-skill-description" style={{ fontSize: 14, lineHeight: 1.6 }}>{getUnitDef(id).skill.description}</p>
+        <p className="motion-skill-description" style={{ fontSize: 14, lineHeight: 1.6 }}><EffectDescription text={getUnitDef(id).skill.description} /></p>
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: 10, margin: '25px 0' }}>
           {Object.entries(ACTIONS).map(([key, label]) => <button key={key} className={action === key ? 'btn-primary' : ''} onClick={() => setAction(key as AnimationName)}>{label}</button>)}
         </div>

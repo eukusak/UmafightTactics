@@ -5,10 +5,10 @@
 ```bash
 npm ci
 npm run build
-npm start
+npm run start:local
 ```
 
-기본 HTTP 포트 4173, `PORT`/`HOST` 변경 가능. `/health`는 상태 검사, `/multiplayer`는 WebSocket 업그레이드 경로다. 개발 서버 `npm run dev`에도 같은 룸 서버가 붙는다. 기존 `node scripts/serve.mjs`도 같은 온라인 서버를 실행한다. 정적 `vite preview`와 `npm run start:static`에는 룸 서버가 없다.
+기본 HTTP 포트 4173, `PORT`/`HOST` 변경 가능. `/health`는 상태 검사, `/multiplayer`는 WebSocket 업그레이드 경로다. 개발 서버 `npm run dev`에도 같은 룸 서버가 붙는다. 운영은 `npm run start:server`와 별도 정적 사이트를 사용한다. 정적 `vite preview`와 `npm run start:static`에는 룸 서버가 없다.
 
 메인 메뉴의 온라인 대전에서 이름을 입력하고 방을 만든다. 6자리 코드를 공유하고 8명이 준비하면 방장이 시작한다. 방장은 AI 좌석을 추가·제거할 수 있다. 빈자리 AI 옵션을 체크하면 방장 1명 + AI 7명으로도 시작할 수 있다. 모든 사람 참가자가 준비해야 시작하며 AI는 자동 준비된다. 상대의 준비/접속 상태를 로비에서 확인할 수 있다.
 
@@ -23,7 +23,7 @@ npm start
 
 ## 배포 범위와 남은 운영 기능
 
-`render.yaml`은 단일 Node Web Service 설정으로 변경했다. 기존 Render Static Site는 이 파일 수정만으로 Node 서비스로 바뀌지 않으므로 Node Web Service로 새로 구성해야 한다. 외부 서비스 생성/배포는 이 PR에서 수행하지 않았다.
+`render.yaml`은 새 Static Site와 Node Web Service를 분리한다. 기존 서비스 자동 배포를 중지하고 [분리 배포 절차](RENDER_SPLIT_DEPLOYMENT.md)를 따라 전환한다. 외부 서비스 생성/배포는 이 PR에서 수행하지 않았다.
 
 현재 방은 단일 프로세스 메모리 기반이다. 모든 좌석이 오프라인인 방은 5분 후 삭제하며, 프로세스 재시작 시 진행 중 방은 사라진다. 수평 확장, 내구성 있는 경기 저장, 계정 로그인/랭크 매칭, 지역별 지연 시험과 대규모 부하 검증은 아직 없다. 나가기는 연결 종료이며 즉시 항복 처리하지 않는다. 남은 좌석은 보유 편성으로 자동 진행한다.
 

@@ -12,7 +12,7 @@
 
 원본: [UmaRogue pr0 음원 폴더](https://github.com/eukusak/UmaRogue/tree/pr0/assets/audio)
 
-- 사용자의 명시적인 공개 업로드 요청에 따라 `title.mp3`와 `bgm00.mp3`~`bgm22.mp3` 총 24곡을 `public/assets/audio`에 포함했다. 24곡 모두 사용자가 main 최상위에 직접 업로드한 파일의 Git blob SHA와 일치한다. 최상위 원본도 보존하며 게임은 공개 자산 경로를 사용한다.
+- 사용자의 명시적인 공개 업로드 요청에 따라 `title.mp3`와 `bgm00.mp3`~`bgm22.mp3` 총 24곡을 `public/assets/audio`에 포함했다. 24곡 모두 사용자가 main 최상위에 직접 업로드한 파일의 Git blob SHA와 일치한다. PR22에서 바이트가 동일한 최상위 중복본은 제거했으며, 원본은 `public/assets/audio`에 보존한다. 게임은 공개 자산 경로를 사용하고 배포 빌드에만 160kbps 버전을 만든다.
 - 원본 폴더에 `bgm23.mp3`는 없었다. 없는 트랙을 재생목록에 넣거나 다른 곡을 23으로 이름을 바꾸지 않았다.
 - `src/data/manual/music.json`에 24곡의 공개 자산 경로를 연결했다.
 - 구현된 재생기는 타이틀을 반복 재생하고, 게임 시작 후에는 BGM을 무작위 순서로 재생한다. 한 순환에서 모든 곡을 한 번씩 재생하며 다음 순환의 첫 곡이 직전 곡과 같지 않도록 한다.

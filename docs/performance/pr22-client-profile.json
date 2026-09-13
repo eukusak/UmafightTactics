@@ -1,0 +1,210 @@
+{
+  "environment": "Local Chromium, cold context; other regression tests active. Diagnostic snapshot, not before/after latency benchmark.",
+  "title": {
+    "lcp": 512,
+    "longTasks": [
+      59,
+      67
+    ],
+    "resources": [
+      {
+        "name": "/bundled/index-TxnNwkoK.js",
+        "transferred": 120360,
+        "decoded": 505633
+      },
+      {
+        "name": "/bundled/runtime-Cpj98o6Y.js",
+        "transferred": 480,
+        "decoded": 236
+      },
+      {
+        "name": "/bundled/react-BJ8J4Bhk.js",
+        "transferred": 45721,
+        "decoded": 141733
+      },
+      {
+        "name": "/bundled/index-aMogs40n.css",
+        "transferred": 111350,
+        "decoded": 268042
+      },
+      {
+        "name": "/assets/boards/bg_title.png",
+        "transferred": 2676032,
+        "decoded": 2675732
+      },
+      {
+        "name": "/bundled/press-start-2p-latin-400-normal-_wFEWmAB.woff2",
+        "transferred": 12812,
+        "decoded": 12512
+      },
+      {
+        "name": "/bundled/jua-latin-400-normal-B0wF3VKp.woff2",
+        "transferred": 16920,
+        "decoded": 16620
+      },
+      {
+        "name": "/bundled/noto-sans-kr-117-wght-normal-DNkILo1k.woff2",
+        "transferred": 14760,
+        "decoded": 14460
+      },
+      {
+        "name": "/bundled/noto-sans-kr-118-wght-normal-Be8jlQ51.woff2",
+        "transferred": 14964,
+        "decoded": 14664
+      },
+      {
+        "name": "/bundled/jua-119-400-normal-CKvBufeu.woff2",
+        "transferred": 17512,
+        "decoded": 17212
+      },
+      {
+        "name": "/bundled/jua-118-400-normal-BeqNSlfW.woff2",
+        "transferred": 28160,
+        "decoded": 27860
+      },
+      {
+        "name": "/bundled/jua-117-400-normal-9_Hm8DkT.woff2",
+        "transferred": 30132,
+        "decoded": 29832
+      },
+      {
+        "name": "/bundled/noto-sans-kr-latin-wght-normal-CZ1P3i-_.woff2",
+        "transferred": 26304,
+        "decoded": 26004
+      },
+      {
+        "name": "/bundled/noto-sans-kr-119-wght-normal-C_6m2-od.woff2",
+        "transferred": 16976,
+        "decoded": 16676
+      },
+      {
+        "name": "/bundled/noto-sans-kr-114-wght-normal-BcwVxkxL.woff2",
+        "transferred": 16512,
+        "decoded": 16212
+      },
+      {
+        "name": "/bundled/noto-sans-kr-115-wght-normal-Czx6kN3B.woff2",
+        "transferred": 16572,
+        "decoded": 16272
+      },
+      {
+        "name": "/bundled/jua-115-400-normal-B-cHqaay.woff2",
+        "transferred": 27540,
+        "decoded": 27240
+      },
+      {
+        "name": "/bundled/jua-114-400-normal-DvZoViHq.woff2",
+        "transferred": 26580,
+        "decoded": 26280
+      },
+      {
+        "name": "/bundled/jua-112-400-normal-BkwI7k10.woff2",
+        "transferred": 26816,
+        "decoded": 26516
+      },
+      {
+        "name": "/bundled/jua-116-400-normal-D7iyg99O.woff2",
+        "transferred": 28528,
+        "decoded": 28228
+      },
+      {
+        "name": "/bundled/jua-113-400-normal-4cahyTIP.woff2",
+        "transferred": 28412,
+        "decoded": 28112
+      },
+      {
+        "name": "/bundled/jua-106-400-normal-CAbHk8xJ.woff2",
+        "transferred": 20832,
+        "decoded": 20532
+      }
+    ]
+  },
+  "titleCPU": [
+    {
+      "name": "ScriptDuration",
+      "value": 0.064298
+    },
+    {
+      "name": "TaskDuration",
+      "value": 0.250008
+    },
+    {
+      "name": "JSHeapUsedSize",
+      "value": 2395496
+    }
+  ],
+  "collectionMs": 381.3361,
+  "loadedPortraitsAtFirstPaint": 26,
+  "motionMountUnmountCycles": [
+    {
+      "cycle": 1,
+      "heapBytes": 7463316,
+      "documents": 1,
+      "nodes": 73,
+      "jsEventListeners": 180
+    },
+    {
+      "cycle": 2,
+      "heapBytes": 7574856,
+      "documents": 1,
+      "nodes": 73,
+      "jsEventListeners": 180
+    },
+    {
+      "cycle": 3,
+      "heapBytes": 7746256,
+      "documents": 1,
+      "nodes": 73,
+      "jsEventListeners": 180
+    },
+    {
+      "cycle": 4,
+      "heapBytes": 7786744,
+      "documents": 1,
+      "nodes": 73,
+      "jsEventListeners": 180
+    },
+    {
+      "cycle": 5,
+      "heapBytes": 7957592,
+      "documents": 1,
+      "nodes": 73,
+      "jsEventListeners": 180
+    },
+    {
+      "cycle": 6,
+      "heapBytes": 7989904,
+      "documents": 1,
+      "nodes": 73,
+      "jsEventListeners": 180
+    },
+    {
+      "cycle": 7,
+      "heapBytes": 8018896,
+      "documents": 1,
+      "nodes": 73,
+      "jsEventListeners": 180
+    },
+    {
+      "cycle": 8,
+      "heapBytes": 8027148,
+      "documents": 1,
+      "nodes": 73,
+      "jsEventListeners": 180
+    },
+    {
+      "cycle": 9,
+      "heapBytes": 8300556,
+      "documents": 1,
+      "nodes": 73,
+      "jsEventListeners": 180
+    },
+    {
+      "cycle": 10,
+      "heapBytes": 8336924,
+      "documents": 1,
+      "nodes": 73,
+      "jsEventListeners": 180
+    }
+  ]
+}

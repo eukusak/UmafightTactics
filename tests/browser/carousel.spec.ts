@@ -70,12 +70,12 @@ test('carousel requires walking, supports arrows and floor clicks, then shows an
   await expect(page.locator('.arena-unit .arena-unit-portrait, .arena-unit .arena-standee')).toHaveCount(0);
   await page.screenshot({ path: info.outputPath('field-idle.png') });
   const sounds = () => page.evaluate(() => (window as unknown as { __soundCalls: string[] }).__soundCalls);
-  expect((await sounds()).some(s => s.endsWith('/select.mp3'))).toBe(true);
-  const before = (await sounds()).filter(s => s.endsWith('/level-up.mp3')).length;
+  expect((await sounds()).some(s => new URL(s).pathname.endsWith('/select.mp3'))).toBe(true);
+  const before = (await sounds()).filter(s => new URL(s).pathname.endsWith('/level-up.mp3')).length;
   await page.getByRole('button', { name: /경험치 구매 \(4G\)/ }).click();
-  expect((await sounds()).filter(s => s.endsWith('/level-up.mp3'))).toHaveLength(before + 1);
+  expect((await sounds()).filter(s => new URL(s).pathname.endsWith('/level-up.mp3'))).toHaveLength(before + 1);
   await page.keyboard.press('f');
-  expect((await sounds()).filter(s => s.endsWith('/level-up.mp3'))).toHaveLength(before + 2);
+  expect((await sounds()).filter(s => new URL(s).pathname.endsWith('/level-up.mp3'))).toHaveLength(before + 2);
   // Verify both real uploads decode in the browser, beyond recording play calls.
   const decoded = await page.evaluate(async () => {
     const ctx = new AudioContext();

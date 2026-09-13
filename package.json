@@ -10,8 +10,7 @@
   "scripts": {
     "dev": "vite",
     "start": "node --import tsx server/index.ts",
-    "postinstall": "node scripts/render-postinstall.mjs",
-    "build": "tsc -b && vite build",
+    "build": "tsc -b && vite build && node scripts/optimize-audio.mjs",
     "preview": "vite preview",
     "typecheck": "tsc -b --pretty false",
     "test": "vitest run",
@@ -27,11 +26,16 @@
     "verify": "npm run sync:data && npm run data:build && npm run data:validate && npm run typecheck && npm test && npm run simulate -- --matches 250 && npm run check:art && npm run build",
     "start:static": "node scripts/serve.mjs --static",
     "audit:tft": "tsx scripts/audit-tft.ts",
-    "art:briefs": "tsx scripts/build-motion-briefs.ts"
+    "art:briefs": "tsx scripts/build-motion-briefs.ts",
+    "start:server": "node --import tsx server/index.ts",
+    "start:local": "node scripts/serve.mjs --local",
+    "test:server": "node --test --test-concurrency=1 tests/support/production-start.mjs tests/support/startup-paths.mjs",
+    "test:load": "node --import tsx scripts/load-test.ts",
+    "check:bundle": "node scripts/check-client-bundle.mjs",
+    "test:server-install": "node scripts/check-server-install.mjs"
   },
   "dependencies": {
     "@fontsource-variable/noto-sans-kr": "^5.3.0",
-    "@fontsource/black-han-sans": "^5.3.0",
     "@fontsource/jua": "^5.3.0",
     "@fontsource/press-start-2p": "^5.3.0",
     "phaser": "^3.90.0",
@@ -53,6 +57,7 @@
     "@vitejs/plugin-react": "^4.3.4",
     "eslint": "^8.57.1",
     "eslint-plugin-react-hooks": "^4.6.2",
+    "ffmpeg-static": "^5.3.0",
     "prettier": "^3.4.2",
     "sharp": "0.35.4",
     "typescript": "^5.7.2",

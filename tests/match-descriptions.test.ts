@@ -25,12 +25,12 @@ describe('match-specific descriptions',()=>{
     const expected=Number(skillEffectValue(result.skill.effects[i],2,d.cost,150)!.toFixed(2));
     expect(result.description).toContain(String(expected));expect(result.description).toContain('침묵 (2초)');
   });
-  it('shows skill crit, on-cast proc and on-hit wound without star-scaling augment procs',()=>{
+  it('keeps shared augment procs and stat bonuses out of the authored skill explanation',()=>{
     const p=owner();p.augments=['spell_jewel','spell_echo','spell_wound'];
-    const changes=matchSkillDescription(getUnitDef('oguri_cap'),p,{star:3,abilityPower:300}).changes.join(' ');
-    expect(changes).toContain('스킬 치명타 가능');expect(changes).toContain('치명타 확률 +10%');
-    expect(changes).toContain('스킬 사용 시 현재 대상 마법 피해 70');
-    expect(changes).toContain('스킬 적중 시 현재 대상 상처');expect(changes).toContain('4초');
+    const def=getUnitDef('oguri_cap'), result=matchSkillDescription(def,p,{star:3,abilityPower:300});
+    expect(result.changes).toEqual([]); expect(result.description).toBe(def.skill.description);
+    expect(p.augments).toEqual(['spell_jewel','spell_echo','spell_wound']);
+    expect(matchItemDescription('champion_trophy',p).changes).toEqual([]);
   });
   it('shows item retention and mastery only to that owner, clamps saved stacks, and keeps base data unchanged',()=>{
     const p=owner(),other=owner();p.augments=['trophy_memory','trophy_mastery'];p.augmentProgress={trophy_memory:3};
@@ -43,13 +43,13 @@ describe('match-specific descriptions',()=>{
     expect(matchItemDescription('start_dash_plan',p).changes).toEqual([]);
     p.augments=[];expect(matchItemDescription(item.id,p).description).toBe(item.description);
   });
-  it('preserves conditional unit and trait eligibility instead of claiming every augment affects every unit',()=>{
-    const p=owner();p.augments=['equipment_pair','trait_oikomi','combat_last_stand'];
+  it('shows the matching hero upgrade but excludes common, trait and equipment bonuses',()=>{
+    const p=owner();p.augments=['equipment_pair','trait_oikomi','combat_last_stand','hero_haru_urara','spell_jewel'];
     const d=getUnitDef('oguri_cap');
-    const result=matchSkillDescription(d,p,{items:[],traits:['senko']});
-    expect(result.changes.join(' ')).not.toContain('장비 호흡');expect(result.changes.join(' ')).not.toContain('추입');
-    expect(result.changes.join(' ')).toContain('자신 체력 30% 미만일 때');
-    expect(matchSkillDescription(d,p,{items:['winner_ribbon','training_belt'],traits:['oikomi']}).changes.length).toBe(3);
+    expect(matchSkillDescription(d,p,{items:['winner_ribbon','training_belt'],traits:['oikomi']}).changes).toEqual([]);
+    const own=matchSkillDescription(getUnitDef('haru_urara'),p);
+    expect(own.changes).toHaveLength(1);expect(own.changes[0]).toContain('전용 스킬 강화');
+    expect(own.changes[0]).not.toContain('스킬 치명타');
   });
   it('can describe every current roster skill and every augment combat effect without falling back to raw identifiers',()=>{
     for(const u of ALL_UNITS) for(const e of u.skill.effects) expect(describeEffect(e),u.id+':'+e.kind).not.toBe('');

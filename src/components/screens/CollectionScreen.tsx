@@ -1,3 +1,4 @@
+import { EffectDescription } from '../EffectDescription';
 import { SkillValues } from '../SkillValues';
 /** Collection: all 145 characters with the spec §29 filters. */
 import { useMemo, useState } from 'react';
@@ -79,7 +80,7 @@ export function CollectionScreen(): JSX.Element {
           >
             <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
               <div className="token" style={{ width: 42, height: 42, fontSize: 18, border: `3px solid ${costVar(u.cost)}` }}>
-                <Portrait id={u.id} name={u.nameKo} size={74} />
+                <Portrait lazy id={u.id} name={u.nameKo} size={74} />
               </div>
               <div style={{ minWidth: 0 }}>
                 <div style={{ fontWeight: 700, fontSize: 14, whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
@@ -131,7 +132,7 @@ export function CollectionScreen(): JSX.Element {
             </div>
             <div style={{ marginTop: 14, paddingTop: 10, borderTop: '1px solid #24384a' }}>
               <strong style={{ color: 'var(--cyan)' }}>{selected.skill.displayName}</strong>
-              <div className="muted" style={{ marginTop: 4, fontSize: 13 }}>기본 동작 · 1성/주문력 100: {selected.skill.description}</div>
+              <div className="muted" style={{ marginTop: 4, fontSize: 13 }}><span className="description-context">기본 동작 · 1성 / 주문력 100</span><EffectDescription text={selected.skill.description} /></div>
               <SkillValues skill={selected.skill} cost={selected.cost} />
             </div>
             <button className="btn-primary" style={{ marginTop: 18 }} onClick={() => setSelected(null)}>

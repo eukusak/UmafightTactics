@@ -27,7 +27,7 @@ for (const directory of [root, linked]) {
       const child = spawn(process.execPath, args, {
         cwd: directory,
         // An inherited hostname must not override Render's public bind address.
-        env: { ...process.env, RENDER: 'true', HOST: 'invalid-host.example', PORT: String(port), ROOM_STATE_FILE: '' },
+        env: { ...process.env, RENDER: 'true', HOST: 'invalid-host.example', PORT: String(port), ROOM_STATE_FILE: '', ALLOWED_ORIGINS: 'http://127.0.0.1:' + port },
         stdio: ['ignore', 'pipe', 'pipe'],
       });
       const exited = once(child, 'exit');
@@ -45,7 +45,7 @@ for (const directory of [root, linked]) {
       try {
         await waitFor(() => output.includes('server ready on http://0.0.0.0:' + port));
         const base = 'http://127.0.0.1:' + port;
-        assert.deepEqual(await (await fetch(base + '/health')).json(), { ok: true, multiplayer: true });
+        assert.equal((await (await fetch(base + '/health')).json()).service, 'multiplayer');
         socket = new WebSocket('ws://127.0.0.1:' + port + '/multiplayer', { origin: base });
         const messages = [];
         socket.on('message', raw => messages.push(JSON.parse(raw)));
