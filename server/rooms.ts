@@ -8,6 +8,8 @@ import { isSeasonId } from '../src/game/engine/seasons/catalog';
 import type { PendingSettlement } from '../src/game/engine/rounds/director';
 import type { BattleFrame } from '../src/game/engine/battle/engine';
 import { applyOnlineCommand, autoField } from '../src/game/network/commands';
+import { publicRacePlan } from '../src/game/engine/race-plan/director-ops';
+import { RACE_PLAN_SECONDS, PREP_SECONDS } from '../src/game/engine/constants';
 import type { ClientMessage, RoomView, ServerMessage } from '../src/game/network/protocol';
 
 export type Peer = { send: (message: ServerMessage) => unknown; canSendFrames?: () => boolean; close: () => void };
@@ -27,6 +29,9 @@ export function privateMatch(state: MatchState, playerId: string): MatchState {
     ...state, seed: 0, rngStates: {}, pool: { seasonId: state.seasonId, remaining: {} },
     players: state.players.map((p) => p.id === playerId ? { ...p, isHuman: true } : {
       ...p, isHuman: false, shop: [], bench: [], items: [], pendingGrants: [], freeRerolls: 0, cheapRerollsUsed: 0, aiProfile: null, aiPlan: undefined,
+      // Scouting shows the plan, the branch, the entry and the finishing move.
+      // The live offer, its reasons and the recent-combat profile stay private.
+      racePlan: publicRacePlan(p.racePlan),
     }),
     augmentOffers: state.augmentOffers.filter((o) => o.playerId === playerId),
   };
@@ -183,11 +188,27 @@ export class RoomService {
   private setDeadline(room: Room): void {
     const d = room.director!;
     const cursor = d.state.draft?.carousel ? 'carousel' : d.state.draft?.cursor ?? '-';
-    const key = `${d.state.stage}-${d.state.round}:${d.state.phase}:${cursor}`;
+    // The finishing move follows the entry inside one phase, so the sub-step has
+    // to be part of the key or the deadline would never be refreshed for it.
+    const racePlanStep = d.state.players
+      .filter((p) => isAlive(p) && p.racePlan)
+      .map((p) => p.racePlan!.offerPhase)
+      .sort()
+      .join(',');
+    const key = `${d.state.stage}-${d.state.round}:${d.state.phase}:${cursor}:${racePlanStep}`;
     if (room.phaseKey === key) return;
     room.phaseKey = key;
     if (d.state.draft?.carousel) room.draftUpdatedAt = this.now();
-    const seconds = d.state.draft?.carousel ? 45 : d.state.draft ? 12 : d.state.augmentOffers.length ? 30 : roundInfo(d.state.stage, d.state.round).prepSeconds;
+    const racePlanPhase = d.state.phase === 'RACE_ENTRY_SELECT' || d.state.phase === 'RACE_PLAN_SELECT';
+    const finishing = d.state.players.some((p) => isAlive(p) && p.racePlan?.offerPhase === 'FINISHING');
+    const seconds = d.state.draft?.carousel ? 45
+      : d.state.draft ? 12
+      : racePlanPhase
+        ? (finishing ? RACE_PLAN_SECONDS.FINISHING
+          : d.state.phase === 'RACE_ENTRY_SELECT' ? RACE_PLAN_SECONDS.ENTRY : RACE_PLAN_SECONDS.PLAN)
+      // Was hardcoded to 30, which silently disagreed with PREP_SECONDS.AUGMENT.
+      : d.state.augmentOffers.length ? PREP_SECONDS.AUGMENT
+      : roundInfo(d.state.stage, d.state.round).prepSeconds;
     room.deadline = this.now() + seconds * 1000;
   }
 
@@ -230,6 +251,11 @@ export class RoomService {
       if (now < room.deadline) continue;
       if (d.state.phase === 'ROUND_RESOLVE') {
         d.advance(); room.battleId = null; room.settled = false;
+        this.setDeadline(room); this.broadcastState(room); continue;
+      }
+      if (d.racePlanPending) {
+        // Recommendation, not options[0]: the three slots are roles, not ranks.
+        d.autoResolveRacePlans();
         this.setDeadline(room); this.broadcastState(room); continue;
       }
       if (d.state.augmentOffers.length) {

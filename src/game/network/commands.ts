@@ -21,6 +21,13 @@ export function applyOnlineCommand(director: RoundDirector, playerId: string, co
   if (command.action === 'augmentReroll') return director.rerollAugment(playerId,command.slot) ? null : '이 증강은 더 이상 새로고침할 수 없습니다.';
   if (command.action === 'augment') return director.chooseAugment(playerId, command.id) ? null : '선택할 수 없는 증강입니다.';
   if (command.action === 'draft') return director.pickDraft(playerId, command.index) ? null : '지금 선택할 수 없습니다.';
+  // Race Plan selections happen in their own phase, so they are handled before
+  // the ROUND_PREP / BATTLE gate below.
+  if (command.action === 'racePlan') return director.chooseRacePlan(playerId, command.id) ? null : '선택할 수 없는 작전입니다.';
+  if (command.action === 'racePlanReroll') return director.rerollRacePlan(playerId, command.slot) ? null : '이 작전은 더 이상 새로고침할 수 없습니다.';
+  if (command.action === 'raceEntry') return director.chooseRaceEntry(playerId, command.unit) ? null : '지금 출주 등록할 수 없는 기물입니다.';
+  if (command.action === 'raceEntryDefer') return director.deferRaceEntry(playerId) ? null : '지금은 보류할 수 없습니다.';
+  if (command.action === 'raceTransfer') return director.transferRaceEntry(playerId, command.unit) ? null : '승부마 변경을 사용할 수 없습니다.';
   if (!['ROUND_PREP', 'BATTLE'].includes(state.phase)) return '현재는 선택 단계입니다.';
   switch (command.action) {
     case 'itemTool': {

@@ -116,6 +116,12 @@ type GameStore = {
 
   chooseAugment: (augmentId: string) => void;
   rerollAugment: (slot:number) => void;
+
+  chooseRacePlan: (nodeId: string) => void;
+  rerollRacePlan: (slot: number) => void;
+  chooseRaceEntry: (unitInstanceId: string) => void;
+  deferRaceEntry: () => void;
+  transferRaceEntry: (unitInstanceId: string) => void;
   pickDraft: (optionIndex: number) => void;
   moveCarousel: (target: CarouselPoint, option?: number | null) => void;
   tickCarousel: (delta: number) => void;
@@ -393,6 +399,37 @@ export const useGameStore = create<GameStore>((set, get) => ({
     director.chooseAugment(player.id, augmentId);
     saveToStorage(director);
     bump(set);
+  },
+
+  chooseRacePlan: (nodeId) => {
+    if (get().onlinePlayerId) { onlineBridge.send?.({ action: 'racePlan', id: nodeId }); return; }
+    const { director } = get(), player = get().human();
+    if (!director || !player) return;
+    if (director.chooseRacePlan(player.id, nodeId)) { saveToStorage(director); bump(set); }
+  },
+  rerollRacePlan: (slot) => {
+    if (get().onlinePlayerId) { onlineBridge.send?.({ action: 'racePlanReroll', slot }); return; }
+    const { director } = get(), player = get().human();
+    if (!director || !player) return;
+    if (director.rerollRacePlan(player.id, slot)) { saveToStorage(director); playSound('select'); bump(set); }
+  },
+  chooseRaceEntry: (unitInstanceId) => {
+    if (get().onlinePlayerId) { onlineBridge.send?.({ action: 'raceEntry', unit: unitInstanceId }); return; }
+    const { director } = get(), player = get().human();
+    if (!director || !player) return;
+    if (director.chooseRaceEntry(player.id, unitInstanceId)) { saveToStorage(director); bump(set); }
+  },
+  deferRaceEntry: () => {
+    if (get().onlinePlayerId) { onlineBridge.send?.({ action: 'raceEntryDefer' }); return; }
+    const { director } = get(), player = get().human();
+    if (!director || !player) return;
+    if (director.deferRaceEntry(player.id)) { saveToStorage(director); bump(set); }
+  },
+  transferRaceEntry: (unitInstanceId) => {
+    if (get().onlinePlayerId) { onlineBridge.send?.({ action: 'raceTransfer', unit: unitInstanceId }); return; }
+    const { director } = get(), player = get().human();
+    if (!director || !player) return;
+    if (director.transferRaceEntry(player.id, unitInstanceId)) { saveToStorage(director); bump(set); }
   },
 
   pickDraft: (optionIndex) => {

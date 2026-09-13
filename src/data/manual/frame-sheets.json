@@ -1816,7 +1816,7 @@
     "rows": 6,
     "source": "docs/art-source/motions/skill-scale-2026-09-12/fenomeno.json",
     "skillId": "skill_fenomeno",
-    "skillSignature": "5243873c8b6bfc3b4b719ebdea6957dbc42d4ee381d466a0a1d4a6e04c252bc8",
+    "skillSignature": "12946677c4520fbe62d21fa421c2acc66957718f17a6c7a447ac365c7c256a55",
     "skillReview": "crouch and cross forearms preparing to dash; drive forward with hair streaming; land and uncross both arms releasing a short straight trailing wave in the same direction; draw arms back into ready stance",
     "skillReleaseFrame": 2,
     "skillCompatibilityReview": "docs/art-source/motions/skill-choreography-review.json",
@@ -1824,7 +1824,13 @@
     "anchor": [
       128,
       174
-    ]
+    ],
+    "styleCorrection": {
+      "from": "nige",
+      "to": "senko",
+      "source": "user",
+      "reason": "사용자 지정 각질 교정. 통과 지점 표본은 선입/선행이 섞여 있고 전적 기록의 주 각질은 선두권이다. 선행으로 고정한다."
+    }
   },
   "sakura_chitose_o": {
     "file": "motions/sakura_chitose_o.png",

@@ -16,6 +16,10 @@ import { activeTierIndex, getTrait } from '../traits/trait-defs';
 import { augmentApplies, augmentEffects, restoreItemMemory } from '../augments/runtime';
 import { getAugment } from '../augments/augment-defs';
 import type { Rng } from '../rng';
+import { getRaceCombatPhase, laterPhase, raceProgress } from '../race-plan/race-phases';
+import { RaceResourceTracker, nodeBattleEffects, raceReadBranch } from '../race-plan/runtime';
+import { findRacePlanNode } from '../race-plan/defs';
+import type { RaceCombatPhase, RacePlanBattleInput } from '../race-plan/types';
 import type { BattleStats, EffectDef, StatusKind, TraitId } from '../types';
 import {
   addModifier, addShield, cleanupExpired, heal, isSilenced, isStunned, isTargetable,
@@ -49,6 +53,8 @@ export type BattleSideInput = {
   augments: string[];
   augmentProgress?: Record<string, number>;
   tacticianItems: string[];
+  /** Race Plan riding this side's entry unit, when it has one on the board. */
+  racePlan?: RacePlanBattleInput;
 };
 
 export type BattleResult = {
@@ -72,6 +78,10 @@ export type BattleEvent =
   | { t: number; type: 'DEATH'; unit: string; killer?: string }
   | { t: number; type: 'REVIVE'; unit: string }
   | { t: number; type: 'OVERTIME' }
+  /** Race Plan: the fight crossed into a new phase of the race. */
+  | { t: number; type: 'RACE_PHASE'; phase: RaceCombatPhase; progress: number }
+  /** Race Plan: an entry unit's node fired, for the recap and the HUD. */
+  | { t: number; type: 'RACE_PROC'; unit: string; nodeId: string; label: string; stacks?: number }
   | { t: number; type: 'END'; winner: 'A' | 'B' | null };
 
 /** Renderable snapshot of a single simulation step. */
@@ -115,6 +125,17 @@ export class BattleEngine {
   readonly frames: BattleFrame[] = [];
   private time = 0;
   private overtimeApplied = false;
+  /**
+   * Race Plan phase tracking. `racePhaseHigh` never decreases: a revive or a
+   * summon can put units back on the board, and a phase that ran backwards
+   * would replay one-shot payouts.
+   */
+  private racePhase: RaceCombatPhase = 'START';
+  private racePhaseHigh = 0;
+  private raceStartCount: Record<Team, number> = { A: 0, B: 0 };
+  private raceStartHp: Record<Team, number> = { A: 0, B: 0 };
+  private readonly raceResources = new Map<string, RaceResourceTracker>();
+  private readonly raceEntryIds = new Map<Team, string>();
   /** Which team resolves first each tick. Seeded once so mirror matches are fair. */
   private readonly firstTeam: Team;
   private finished = false;
@@ -135,8 +156,8 @@ export class BattleEngine {
   private readonly participants: { A: string; B: string };
 
   constructor(
-    sideA: BattleSideInput,
-    sideB: BattleSideInput,
+    private readonly sideA: BattleSideInput,
+    private readonly sideB: BattleSideInput,
     private readonly rng: Rng,
     private readonly options: BattleOptions = {},
   ) {
@@ -256,13 +277,47 @@ export class BattleEngine {
         });
       }
 
+      // --- race plan, bound only to this side's GⅠ entry
+      if (side.racePlan && unit.id === this.raceUnitId(side, team)) {
+        for (const nodeId of side.racePlan.nodeIds) {
+          const node = findRacePlanNode(nodeId);
+          if (!node) continue;
+          nodeBattleEffects(node, side.racePlan.trackState).forEach((effect, i) => {
+            list.push({ effect, index: i, sourceKey: `race-plan:${node.id}`, power: 1 });
+          });
+        }
+      }
+
       this.bindings.set(unit.id, list);
     }
+
+    if (side.racePlan) {
+      const id = this.raceUnitId(side, team);
+      if (id) {
+        this.raceEntryIds.set(team, id);
+        this.raceResources.set(id, new RaceResourceTracker(side.racePlan.nodeIds));
+      }
+    }
+  }
+
+  /** The combat unit id carrying this side's entry, if it made it to the board. */
+  private raceUnitId(side: BattleSideInput, team: Team): string | null {
+    const wanted = side.racePlan?.entryInstanceId;
+    if (!wanted) return null;
+    const unit = this.units.find((u) => u.team === team && u.instanceId === wanted)
+      ?? this.units.find((u) => u.team === team && u.unitDefId === side.racePlan!.entryUnitDefId);
+    return unit?.id ?? null;
   }
 
   // ------------------------------------------------------------------- loop
   /** Runs the whole battle and returns the result. */
   run(): BattleResult {
+    // Summons join later and must not make a side look like it shrank.
+    for (const team of ['A', 'B'] as Team[]) {
+      const roster = this.units.filter((u) => u.team === team && !u.id.includes('~summon'));
+      this.raceStartCount[team] = roster.length;
+      this.raceStartHp[team] = roster.reduce((n, u) => n + u.maxHp, 0);
+    }
     this.fire('COMBAT_START');
     if (this.options.recordFrames) this.recordFrame();
     const maxSeconds = this.options.maxSeconds ?? BATTLE_MAX_SECONDS;
@@ -296,6 +351,7 @@ export class BattleEngine {
     this.ctx.now = this.time;
 
     if (!this.overtimeApplied && this.time >= BATTLE_NORMAL_SECONDS) this.enterOvertime();
+    this.advanceRacePhase();
 
     // Recompute aura totals and conditional passives before anyone acts.
     for (const unit of this.units) {
@@ -442,9 +498,12 @@ export class BattleEngine {
   private setTarget(unit: CombatUnit, target: CombatUnit): void {
     if (unit.targetId === target.id) return;
     if (unit.targetId) this.byId(unit.targetId)?.attackedBy.delete(unit.id);
+    const hadTarget = unit.targetId !== null;
     unit.targetId = target.id;
     unit.attacksOnCurrentTarget = 0;
     target.attackedBy.add(unit.id);
+    // Only a genuine switch counts; acquiring the first target is not a pass.
+    if (hadTarget) this.fireFor(unit, 'ON_TARGET_CHANGED', target);
   }
 
   // ------------------------------------------------------------------ moving
@@ -603,6 +662,7 @@ export class BattleEngine {
       unit.mana = Math.min(stat(unit, 'maxMana', this.time), unit.mana + ROLE_ATTACK_MANA[unit.role]);
     }
     this.fireFor(unit, 'ON_ATTACK', target);
+    this.gainRaceResource(unit, 'ATTACK');
   }
 
   /** 결승선의 일격 converts crit chance beyond 100% into crit damage. */
@@ -686,7 +746,10 @@ export class BattleEngine {
     }
 
     source.recentDamageTo.set(target.id, (source.recentDamageTo.get(target.id) ?? 0) + postMitigation);
-    if (postMitigation > 0) this.fireFor(target, 'ON_HIT_TAKEN', source);
+    if (postMitigation > 0) {
+      this.fireFor(target, 'ON_HIT_TAKEN', source);
+      this.gainRaceResource(target, 'HIT_TAKEN');
+    }
 
     if (target.hp <= 0) this.kill(target, source);
     if (isSkill && source.alive && target.alive && amount > 0) this.fireFor(source, 'ON_SKILL_HIT', target);
@@ -755,6 +818,7 @@ export class BattleEngine {
       releaseAt: this.time + skillWindup(unit.skill), endAt: end });
     this.casts.push({ source: unit.id, target: primary?.id ?? null, start: this.time, end, timeline: skillTimeline(unit.skill) });
     this.fireFor(unit, 'ON_CAST', primary);
+    this.gainRaceResource(unit, 'CAST');
     this.resolveCasts();
   }
 
@@ -926,6 +990,100 @@ export class BattleEngine {
       unit.hp = unit.maxHp;
       unit.mana = Math.min(stat(unit, 'maxMana', this.time), stat(unit, 'startMana', this.time));
     }
+  }
+
+  // -------------------------------------------------------------- race plan
+  /**
+   * Moves the race forward and fires the phase exactly once.
+   *
+   * Progress is the larger of the clock and the share of the starting field
+   * that has fallen, so a fight that ends in ten seconds still runs through
+   * 승부처 and 라스트 3F instead of skipping every late-race payout.
+   */
+  private advanceRacePhase(): void {
+    const sides = (['A', 'B'] as Team[]).map((team) => {
+      const living = this.units.filter((u) => u.alive && u.team === team && !u.id.includes('~summon'));
+      return {
+        alive: living.length,
+        start: this.raceStartCount[team],
+        hp: living.reduce((n, u) => n + Math.min(u.hp, u.maxHp), 0),
+        startHp: this.raceStartHp[team],
+      };
+    });
+    this.racePhaseHigh = Math.max(this.racePhaseHigh, raceProgress(this.time, sides));
+    const next = laterPhase(this.racePhase, getRaceCombatPhase(this.time, this.racePhaseHigh));
+    if (next !== this.racePhase) {
+      this.racePhase = next;
+      this.ctx.racePhase = next;
+      this.events.push({ t: this.time, type: 'RACE_PHASE', phase: next, progress: Math.round(this.racePhaseHigh * 1000) / 1000 });
+      this.fire('RACE_PHASE');
+      this.resolveRacePhasePayouts(next);
+    }
+    this.tickRaceResources();
+  }
+
+  private raceUnit(team: Team): CombatUnit | null {
+    const id = this.raceEntryIds.get(team);
+    return id ? this.byId(id) : null;
+  }
+
+  private applyRaceEffects(unit: CombatUnit, effects: EffectDef[], sourceKey: string): void {
+    const target = unit.targetId ? this.byId(unit.targetId) : null;
+    effects.forEach((effect, i) => {
+      applyEffect(this.ctx, unit, effect, i, {
+        power: 1, sourceKey, currentTarget: target, event: 'RACE_PHASE',
+      });
+    });
+  }
+
+  private resolveRacePhasePayouts(phase: RaceCombatPhase): void {
+    for (const team of ['A', 'B'] as Team[]) {
+      const unit = this.raceUnit(team);
+      if (!unit?.alive) continue;
+      const tracker = this.raceResources.get(unit.id);
+      for (const payout of tracker?.onPhase(phase) ?? []) {
+        this.applyRaceEffects(unit, payout.effects, `race-plan:${payout.nodeId}`);
+        this.events.push({ t: this.time, type: 'RACE_PROC', unit: unit.id, nodeId: payout.nodeId, label: payout.label, stacks: payout.stacks });
+      }
+      // 전개 읽기 resolves its one explicit branch here and keeps it.
+      if (phase === 'LATE' && this.raceHasNode(team, 'FM_RACE_READ')) {
+        const allies = this.units.filter((u) => u.alive && u.team === unit.team).length;
+        const foes = this.units.filter((u) => u.alive && u.team !== unit.team).length;
+        const { branch, effects } = raceReadBranch(allies, foes);
+        this.applyRaceEffects(unit, effects, 'race-plan:FM_RACE_READ');
+        this.events.push({ t: this.time, type: 'RACE_PROC', unit: unit.id, nodeId: 'FM_RACE_READ', label: branch === 'HOLD' ? '기다린다' : '간다' });
+      }
+    }
+  }
+
+  private raceHasNode(team: Team, nodeId: string): boolean {
+    const side = team === 'A' ? this.sideA : this.sideB;
+    return Boolean(side.racePlan?.nodeIds.includes(nodeId));
+  }
+
+  private tickRaceResources(): void {
+    for (const team of ['A', 'B'] as Team[]) {
+      const unit = this.raceUnit(team);
+      if (!unit?.alive) continue;
+      const tracker = this.raceResources.get(unit.id);
+      if (!tracker?.active) continue;
+      const effects = tracker.onTick(this.time, this.racePhase);
+      if (effects.length) this.applyRaceEffects(unit, effects, 'race-plan:resource');
+    }
+  }
+
+  /** Attack / cast / hit accrual for 각력 and 지구력. */
+  private gainRaceResource(unit: CombatUnit, kind: 'ATTACK' | 'CAST' | 'HIT_TAKEN'): void {
+    const tracker = this.raceResources.get(unit.id);
+    if (!tracker?.active) return;
+    const effects = tracker.onEvent(kind);
+    if (effects.length) this.applyRaceEffects(unit, effects, 'race-plan:resource');
+  }
+
+  /** Current gauge for the entry unit, read by the renderer. */
+  raceGauge(team: Team): { kind: 'LEG' | 'STAMINA'; stacks: number; max: number } | null {
+    const unit = this.raceUnit(team);
+    return unit ? this.raceResources.get(unit.id)?.gauge() ?? null : null;
   }
 
   // --------------------------------------------------------------- overtime

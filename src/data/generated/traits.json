@@ -398,21 +398,21 @@
       "category": "STYLE",
       "thresholds": [
         2,
-        4,
-        6,
-        8,
-        10
+        3,
+        5,
+        7,
+        9
       ],
       "emblemItemId": "emblem_oikomi",
       "description": "뒤에서 몰아쳐 약해진 적을 끝낸다.",
       "tiers": [
         {
           "count": 2,
-          "description": "대상 체력 50% 이하일 때 피해 증폭 +10%",
+          "description": "대상 체력 50% 이하일 때 피해 증폭 +12%",
           "effects": [
             {
               "kind": "DAMAGE_AMP",
-              "value": 0.1,
+              "value": 0.12,
               "trigger": {
                 "when": "TARGET_HP_BELOW",
                 "threshold": 0.5
@@ -421,26 +421,12 @@
           ]
         },
         {
-          "count": 4,
-          "description": "대상 체력 50% 이하일 때 피해 증폭 +20%",
+          "count": 3,
+          "description": "대상 체력 50% 이하일 때 피해 증폭 +22%. 처치 관여 시 마나 +10",
           "effects": [
             {
               "kind": "DAMAGE_AMP",
-              "value": 0.2,
-              "trigger": {
-                "when": "TARGET_HP_BELOW",
-                "threshold": 0.5
-              }
-            }
-          ]
-        },
-        {
-          "count": 6,
-          "description": "대상 체력 50% 이하일 때 피해 증폭 +30%. 처치 관여 시 마나 +15",
-          "effects": [
-            {
-              "kind": "DAMAGE_AMP",
-              "value": 0.3,
+              "value": 0.22,
               "trigger": {
                 "when": "TARGET_HP_BELOW",
                 "threshold": 0.5
@@ -448,7 +434,7 @@
             },
             {
               "kind": "MANA_ADD",
-              "value": 15,
+              "value": 10,
               "trigger": {
                 "when": "ON_TAKEDOWN_ASSIST"
               }
@@ -456,12 +442,12 @@
           ]
         },
         {
-          "count": 8,
-          "description": "체력 50% 미만인 대상에게 피해 +50%. 처치 관여 시 마나 +20",
+          "count": 5,
+          "description": "대상 체력 50% 이하일 때 피해 증폭 +34%. 처치 관여 시 마나 +18",
           "effects": [
             {
               "kind": "DAMAGE_AMP",
-              "value": 0.5,
+              "value": 0.34,
               "trigger": {
                 "when": "TARGET_HP_BELOW",
                 "threshold": 0.5
@@ -469,7 +455,7 @@
             },
             {
               "kind": "MANA_ADD",
-              "value": 20,
+              "value": 18,
               "trigger": {
                 "when": "ON_TAKEDOWN_ASSIST"
               }
@@ -477,8 +463,29 @@
           ]
         },
         {
-          "count": 10,
-          "description": "체력 50% 미만인 대상에게 피해 +75%. 처치 관여 시 마나 +25",
+          "count": 7,
+          "description": "체력 50% 미만인 대상에게 피해 +52%. 처치 관여 시 마나 +22",
+          "effects": [
+            {
+              "kind": "DAMAGE_AMP",
+              "value": 0.52,
+              "trigger": {
+                "when": "TARGET_HP_BELOW",
+                "threshold": 0.5
+              }
+            },
+            {
+              "kind": "MANA_ADD",
+              "value": 22,
+              "trigger": {
+                "when": "ON_TAKEDOWN_ASSIST"
+              }
+            }
+          ]
+        },
+        {
+          "count": 9,
+          "description": "체력 50% 미만인 대상에게 피해 +75%. 처치 관여 시 마나 +28",
           "effects": [
             {
               "kind": "DAMAGE_AMP",
@@ -490,7 +497,7 @@
             },
             {
               "kind": "MANA_ADD",
-              "value": 25,
+              "value": 28,
               "trigger": {
                 "when": "ON_TAKEDOWN_ASSIST"
               }

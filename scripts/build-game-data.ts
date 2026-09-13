@@ -1,6 +1,7 @@
 import styleCorrections from '../src/data/manual/running-style-corrections.json';
 import traitCorrections from '../src/data/manual/trait-corrections.json';
 import { buildSeasons } from '../src/game/engine/seasons/catalog';
+import { buildRacePlanData, writeRacePlanImportReport } from './lib/build-race-plan-data';
 import { writeSeasonIcons } from './season-icons';
 /**
  * Generates every JSON file under src/data/generated/ from the vendored
@@ -878,6 +879,20 @@ const manifest: ArtManifest = {
   ].map((b) => `ui/banner_${b}.png`),
 };
 write('art-manifest.json', manifest);
+
+// Race Plan profiles and the GⅠ calendar. Kept out of rosterHash on purpose:
+// hashing them would invalidate every save and room checkpoint on a data refresh.
+const racePlan = buildRacePlanData(
+  units.map((u) => ({ id: u.id, horseId: u.horseId, nameKo: u.nameKo })),
+  db.horses as never,
+  SRC,
+  path.join(OUT, 'race-plan'),
+  db.snapshot.sourceDb,
+);
+writeRacePlanImportReport(ROOT, racePlan);
+console.log(
+  `  wrote race-plan/ (${racePlan.matched}/${racePlan.roster} profiles, ${racePlan.themes} GⅠ themes)`,
+);
 
 const cutins = manifest.characters.filter((c) => c.cutinRequired).length;
 console.log(`data:build — OK  roster hash ${rosterHash}, ${units.length} units, ${activeUnits.length} active, ${cutins} cut-ins`);

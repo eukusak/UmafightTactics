@@ -198,9 +198,18 @@ export type TriggerDef = {
     | 'ADJACENT_ALLIES_AT_LEAST'
     | 'NO_ADJACENT_ALLIES'
     | 'IN_FRONT_ROWS'
-    | 'IN_BACK_ROWS';
+    | 'IN_BACK_ROWS'
+    /** Race Plan: fires once when the race reaches `phase` (see race-plan/race-phases). */
+    | 'ON_RACE_PHASE'
+    /** Race Plan: fires when the holder switches to a different enemy. */
+    | 'ON_TARGET_CHANGED';
   /** Threshold for HP_BELOW / AFTER_SECONDS / ON_NTH_ATTACK / adjacency counts. */
   threshold?: number;
+  /** ON_RACE_PHASE only: which phase opens this effect. */
+  phase?: import('./race-plan/types').RaceCombatPhase;
+  /** ON_RACE_PHASE only: extra gate on the holder's hp fraction at that moment. */
+  hpBelow?: number;
+  hpAbove?: number;
 };
 
 export type SkillDef = {

@@ -18,9 +18,18 @@ const LOCK_FILE = path.join(SOURCE_DIR, 'source.lock.json');
 
 const BASE = 'https://raw.githubusercontent.com/eukusak/UmaRogue/pr0/data';
 /** Local clone fallback, used when the raw URL is unreachable (private repo). */
-const LOCAL_MIRRORS = ['/home/user/umarogue/data', path.join(ROOT, '..', 'umarogue', 'data')];
+const LOCAL_MIRRORS = [
+  '/home/user/umarogue/data', path.join(ROOT, '..', 'umarogue', 'data'),
+  '/home/user/UmaRogue/data', path.join(ROOT, '..', 'UmaRogue', 'data'),
+];
 
-const FILES = ['horse-game-db.json', 'horse-game-db.validation.json'] as const;
+const FILES = [
+  'horse-game-db.json',
+  'horse-game-db.validation.json',
+  // Race Plan reads the GI/JpnI calendar and course shapes from these.
+  'race-templates.json',
+  'racecourses.json',
+] as const;
 
 type LockEntry = { sha256: string; bytes: number; fetchedAt: string; origin: string };
 type Lock = { version: 1; files: Record<string, LockEntry> };

@@ -11,13 +11,26 @@ export const COST_UNIT_COUNTS: Record<Cost, number> = { 1: 14, 2: 14, 3: 13, 4: 
 /** Adopted 14.15 standard pool; see docs/TFT_PARITY_AUDIT.md for version boundaries. */
 export const POOL_COPIES: Record<Cost, number> = { 1: 30, 2: 25, 3: 18, 4: 10, 5: 9 };
 
-/** Spec §9.2 — per-cost baselines before percentile shaping. */
-export const BASE_HP: Record<Cost, number> = { 1: 650, 2: 720, 3: 820, 4: 930, 5: 1050 };
-export const BASE_AD: Record<Cost, number> = { 1: 48, 2: 54, 3: 60, 4: 68, 5: 76 };
+/**
+ * Spec §9.2 — per-cost baselines before percentile shaping.
+ *
+ * 2026-09 balance: 4/5-cost bodies were trimmed (hp 930/1050, ad 68/76,
+ * resist 35/38). A board of one-star legendaries picked up at level 6-7 beat a
+ * finished reroll board on raw stats alone; the 1-3 cost columns are untouched
+ * so the early game plays the same.
+ */
+export const BASE_HP: Record<Cost, number> = { 1: 650, 2: 720, 3: 820, 4: 900, 5: 1000 };
+export const BASE_AD: Record<Cost, number> = { 1: 48, 2: 54, 3: 60, 4: 65, 5: 72 };
 export const BASE_AS: Record<Cost, number> = { 1: 0.68, 2: 0.7, 3: 0.72, 4: 0.74, 5: 0.76 };
-export const BASE_RESIST: Record<Cost, number> = { 1: 28, 2: 30, 3: 32, 4: 35, 5: 38 };
+export const BASE_RESIST: Record<Cost, number> = { 1: 28, 2: 30, 3: 32, 4: 34, 5: 36 };
 
-/** Same kit/percentile at one star: damage, healing and flat shields separate by cost. */
+/**
+ * Same kit/percentile at one star: damage, healing and flat shields separate by cost.
+ *
+ * These feed SkillDef.baseValues, which every art review pins by hash, so cost
+ * balance is tuned on the stat curve and the shop instead — changing a number
+ * here would force a re-review of all 145 motion sheets.
+ */
 export const COST_SKILL_POWER: Record<Cost, number> = { 1: 1, 2: 1.14, 3: 1.32, 4: 1.56, 5: 1.9 };
 /** Utility scales more gently to avoid multiplying team-wide buffs into runaway carries. */
 export const COST_SKILL_UTILITY: Record<Cost, number> = { 1: 1, 2: 1.06, 3: 1.14, 4: 1.24, 5: 1.36 };
@@ -37,8 +50,15 @@ export const RUN_STYLE_START_MANA: Record<string, number> = {
   oikomi: 15,
 };
 
-/** Spec §10 — star scaling. */
-export const STAR_STAT_MULT: Record<number, number> = { 1: 1.0, 2: 1.8, 3: 3.24 };
+/**
+ * Spec §10 — star scaling.
+ *
+ * 2026-09 balance: three stars pay 3.5 instead of 3.24. Nine copies is the
+ * game's most expensive commitment and the simulator finishes ~0.00 four- and
+ * five-cost three-stars per match, so this lands almost entirely on reroll boards.
+ */
+export const STAR_STAT_MULT: Record<number, number> = { 1: 1.0, 2: 1.8, 3: 3.5 };
+/** Also stored on SkillDef.starMultipliers, so it is pinned by art review too. */
 export function starSkillMultiplier(star: number, cost: Cost): number {
   if (star === 1) return 1.0;
   if (star === 2) return 1.45;
@@ -52,11 +72,17 @@ export const DEFAULT_CRIT_MULTIPLIER = 1.3;
 export const DEFAULT_ABILITY_POWER = 100;
 
 /** Levels 7/8/9 follow published 17.1/16.1 values. Other columns retain the project baseline. */
+/**
+ * 2026-09 balance: levels 5-7 give out fewer 4-costs (2/5/10 -> 0/3/8).
+ * Hitting a legendary at level 5-6 decided the mid game before a reroll board
+ * could finish anything. Levels 8-10 are untouched, so the late game still
+ * rewards levelling. Every column still sums to 100.
+ */
 export const SHOP_ODDS: Record<Cost, number[]> = {
-  1: [100, 100, 75, 55, 45, 30, 19, 15, 10, 5],
-  2: [0, 0, 25, 30, 33, 40, 30, 20, 17, 10],
+  1: [100, 100, 75, 55, 46, 32, 20, 15, 10, 5],
+  2: [0, 0, 25, 30, 34, 40, 31, 20, 17, 10],
   3: [0, 0, 0, 15, 20, 25, 40, 32, 25, 20],
-  4: [0, 0, 0, 0, 2, 5, 10, 30, 33, 40],
+  4: [0, 0, 0, 0, 0, 3, 8, 30, 33, 40],
   5: [0, 0, 0, 0, 0, 0, 1, 3, 15, 25],
 };
 
@@ -150,6 +176,28 @@ export const AUGMENT_ROUNDS: Array<{ stage: number; round: number }> = [
   { stage: 3, round: 2 },
   { stage: 4, round: 2 },
 ];
+
+/**
+ * Race Plan decision points. Deliberately clear of the augment rounds
+ * (2-1 / 3-2 / 4-2), the twinkle draft (x-4) and the PvE round (x-7).
+ */
+export const RACE_PLAN_ROUNDS: Array<{ stage: number; round: number; kind: 'PLAN' | 'EVOLUTION' | 'ENTRY' }> = [
+  { stage: 2, round: 5, kind: 'PLAN' },
+  { stage: 3, round: 5, kind: 'EVOLUTION' },
+  { stage: 4, round: 5, kind: 'ENTRY' },
+];
+export const RACE_PLAN_SECONDS = { PLAN: 45, ENTRY: 50, FINISHING: 35 } as const;
+/**
+ * A player on 20 hp or less is unlikely to survive to 4-5, and this is the
+ * match's headline decision — so it opens early for them. Same cards, same
+ * power, just reachable.
+ */
+export const RACE_ENTRY_EARLY_ROUND = { stage: 4, round: 3 } as const;
+export const RACE_ENTRY_EARLY_HP = 20;
+/** Deferring the entry is free but not open-ended. */
+export const RACE_ENTRY_DEADLINE = { stage: 5, round: 2 } as const;
+/** One free 승부마 변경 per match, up to here. */
+export const RACE_TRANSFER_DEADLINE = { stage: 5, round: 5 } as const;
 
 export const PLAYER_COUNT = 8;
 export const AI_COUNT = 7;

@@ -24,6 +24,16 @@ import { AI_PROFILE_IDS } from '../ai/profiles';
 import { BattleEngine, simulateBattle, type BattleFrame, type BattleSideInput } from '../battle/engine';
 import { PVE_UNIT_IDS } from '../battle/pve-units';
 import { applyAugment, createAugmentOffers, rerollAugmentOffer } from '../augments/offers';
+import {
+  autoResolveRacePlans, chooseRaceEntry, chooseRacePlanOption, deferRaceEntry,
+  enforceRaceEntryDeadline, ensureRacePlanState, finishingPending, openRacePlanOffers,
+  racePlanPending, rerollRacePlanOption, resolveAiRacePlans, rollRoundTrackState,
+  transferRaceEntry, updateRecentCombat,
+} from '../race-plan/director-ops';
+import { createDefaultRacePlanState } from '../race-plan/types';
+import { provisionalEntryInstance, reconcileEntryUnit } from '../race-plan/entry';
+import { racePlanBattleInput } from '../race-plan/runtime';
+import { rollG1Theme } from '../race-plan/profiles';
 import type {
   BattleOutcome, MatchState, PlayerState, RoundResolution, UnitInstance,
 } from '../state';
@@ -79,6 +89,7 @@ export function createMatch(options: CreateMatchOptions): MatchState {
       hpChangedAtRound: 0,
       pendingGrants: [],
       bonusTraits: [],
+      racePlan: createDefaultRacePlanState(),
     });
   }
 
@@ -99,6 +110,9 @@ export function createMatch(options: CreateMatchOptions): MatchState {
     lastResolution: null,
     history: [],
     finalStandings: null,
+    // One GⅠ for the whole lobby: everyone is entered for the same race.
+    g1ThemeId: rollG1Theme(options.seed),
+    racePlanTrack: 'STANDARD',
   };
 }
 
@@ -146,6 +160,9 @@ export class RoundDirector {
     if (interactiveDraft && state.draft && !state.draft.carousel) state.draft.carousel = createCarousel(state.draft, state.stage === 1 && state.round === 1);
     this.rngs = new RngRegistry(state.seed);
     if (Object.keys(state.rngStates).length) this.rngs.restore(state.rngStates);
+    // Saves and room checkpoints written before the Race Plan existed load with
+    // no plan state at all; give them one rather than refusing the save.
+    ensureRacePlanState(state);
   }
 
   /** Persists live RNG states back onto the match so a save replays exactly. */
@@ -173,12 +190,26 @@ export class RoundDirector {
         p.shopLocked = false;
       }
       applyCombines(s, p);
+      reconcileEntryUnit(p);
     }
 
     if (hasAugmentBefore(s.stage, s.round)) {
       s.augmentOffers = createAugmentOffers(s, this.rngs.get('augment'));
       s.phase = 'AUGMENT_SELECT';
       this.resolveAiAugments();
+    }
+
+    // --- race plan. Its rounds never collide with an augment or a draft.
+    ensureRacePlanState(s);
+    rollRoundTrackState(s, this.rngs.get('race-track'));
+    for (const p of s.players) reconcileEntryUnit(p);
+    enforceRaceEntryDeadline(s);
+    if (openRacePlanOffers(s)) {
+      resolveAiRacePlans(s, this.rngs.get('race-plan'));
+      if (racePlanPending(s)) {
+        s.phase = s.players.some((p) => isAlive(p) && p.racePlan?.offerPhase === 'ENTRY')
+          ? 'RACE_ENTRY_SELECT' : 'RACE_PLAN_SELECT';
+      }
     }
 
     // 1-1 opens with the Twinkle Start selection; later x-4 rounds are drafts.
@@ -242,6 +273,104 @@ export class RoundDirector {
     }
     this.syncRng();
     return true;
+  }
+
+  // -------------------------------------------------------------- race plan
+  /** Human picks a plan, an evolution or a finishing move from the open offer. */
+  chooseRacePlan(playerId: string, id: string): boolean {
+    const player = getPlayer(this.state, playerId);
+    if (!chooseRacePlanOption(this.state, player, id)) return false;
+    this.closeRacePlanPhaseIfDone();
+    this.syncRng();
+    return true;
+  }
+
+  rerollRacePlan(playerId: string, slot: number): boolean {
+    const player = getPlayer(this.state, playerId);
+    const ok = rerollRacePlanOption(this.state, player, slot);
+    if (ok) this.syncRng();
+    return ok;
+  }
+
+  chooseRaceEntry(playerId: string, instanceId: string): boolean {
+    const player = getPlayer(this.state, playerId);
+    if (!chooseRaceEntry(this.state, player, instanceId)) return false;
+    this.closeRacePlanPhaseIfDone();
+    this.syncRng();
+    return true;
+  }
+
+  deferRaceEntry(playerId: string): boolean {
+    const player = getPlayer(this.state, playerId);
+    if (!deferRaceEntry(this.state, player)) return false;
+    this.closeRacePlanPhaseIfDone();
+    return true;
+  }
+
+  transferRaceEntry(playerId: string, instanceId: string): boolean {
+    const player = getPlayer(this.state, playerId);
+    if (!transferRaceEntry(this.state, player, instanceId)) return false;
+    this.state.phase = 'RACE_ENTRY_SELECT';
+    this.syncRng();
+    return true;
+  }
+
+  /** Timeout handler for the server and the solo prep countdown. */
+  autoResolveRacePlans(): void {
+    autoResolveRacePlans(this.state);
+    this.closeRacePlanPhaseIfDone();
+    this.syncRng();
+  }
+
+  get racePlanPending(): boolean {
+    return racePlanPending(this.state) || finishingPending(this.state);
+  }
+
+  private closeRacePlanPhaseIfDone(): void {
+    const s = this.state;
+    if (s.phase !== 'RACE_PLAN_SELECT' && s.phase !== 'RACE_ENTRY_SELECT') return;
+    if (racePlanPending(s) || finishingPending(s)) {
+      // The entry screen hands straight over to the finishing move.
+      s.phase = finishingPending(s) || s.players.some((p) => isAlive(p) && p.racePlan?.offerPhase === 'ENTRY')
+        ? 'RACE_ENTRY_SELECT' : 'RACE_PLAN_SELECT';
+      return;
+    }
+    s.phase = s.draft ? 'DRAFT' : 'ROUND_PREP';
+  }
+
+  /**
+   * Folds each player's own fight into the profile the offer engine reads.
+   * Everything comes from events the battle already recorded.
+   */
+  private recordRaceTelemetry(isPve: boolean): void {
+    if (isPve) return;
+    for (const [playerId, frames] of this.playerFrames) {
+      const player = this.state.players.find((p) => p.id === playerId);
+      if (!player?.racePlan || !frames.length) continue;
+      const events = frames.flatMap((f) => f.events);
+      const last = frames[frames.length - 1];
+      const own = (id: string): boolean => id.startsWith(`${playerId}#`);
+      const phaseEvents = events.filter((e) => e.type === 'RACE_PHASE');
+      const endProgress = phaseEvents.length
+        ? (phaseEvents[phaseEvents.length - 1] as { progress: number }).progress
+        : Math.min(1, last.t / 30);
+      const startedOwn = frames[0].units.filter((u) => own(u.id)).length;
+      const frontline = frames[0].units.filter((u) => own(u.id));
+      const lostEarly = events.filter(
+        (e) => e.type === 'DEATH' && own(e.unit) && e.t <= 20,
+      ).length;
+      const enemies = last.units.filter((u) => !own(u.id) && u.alive);
+      updateRecentCombat(player, {
+        duration: last.t,
+        endProgress,
+        overtime: last.overtime,
+        casts: events.filter((e) => e.type === 'CAST' && own(e.source)).length,
+        frontlineLost: frontline.length ? lostEarly / Math.max(1, startedOwn) : 0,
+        enemyFrontHp: enemies.length
+          ? enemies.reduce((n, u) => n + u.hp / Math.max(1, u.maxHp), 0) / enemies.length
+          : 0,
+      });
+    }
   }
 
   private resolveAiDraftPicks(): void {
@@ -358,6 +487,7 @@ export class RoundDirector {
   settleRound(): RoundResolution | null {
     const pending = this.pendingSettlement;
     if (!pending) return this.state.lastResolution;
+    this.recordRaceTelemetry(pending.isPve);
     this.pendingSettlement = null;
     const s = this.state;
     const { resolution, afterStreaks, pvpWinners, isPve } = pending;
@@ -463,8 +593,12 @@ export class RoundDirector {
   }
 
   private sideFor(player: PlayerState): BattleSideInput {
+    // Before the GⅠ entry exists the plan rides the board's best carry, so the
+    // six rounds between 2-5 and 4-5 are not dead.
+    const provisional = provisionalEntryInstance(this.state, player)?.instanceId;
     return {
       playerId: player.id,
+      racePlan: racePlanBattleInput(player, this.state.racePlanTrack ?? 'STANDARD', provisional),
       augments: player.augments,
       augmentProgress: player.augmentProgress,
       tacticianItems: player.tacticianItems,

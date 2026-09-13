@@ -17,6 +17,8 @@ export type EffectContext = {
   shieldCreated?: (source: CombatUnit, target: CombatUnit, amount: number) => void;
   now: number;
   overtime: boolean;
+  /** Race Plan phase the fight has reached; see race-plan/race-phases. */
+  racePhase?: import('../race-plan/types').RaceCombatPhase;
   units: CombatUnit[];
   /** Applies damage through the full mitigation pipeline. */
   dealDamage: (source: CombatUnit, target: CombatUnit, amount: number, type: EffectDef['damageType'], isSkill: boolean) => number;
@@ -170,6 +172,16 @@ export function triggerHolds(
       ).length;
       return n >= t;
     }
+    // Race Plan. The phase is decided by race progress, not the clock, so a
+    // ten-second stomp still passes through LATE and LAST_3F.
+    case 'ON_RACE_PHASE': {
+      if (event !== 'RACE_PHASE' || ctx.racePhase !== trigger.phase) return false;
+      const fraction = unit.hp / Math.max(1, unit.maxHp);
+      if (trigger.hpBelow !== undefined && fraction >= trigger.hpBelow) return false;
+      if (trigger.hpAbove !== undefined && fraction < trigger.hpAbove) return false;
+      return true;
+    }
+    case 'ON_TARGET_CHANGED': return event === 'ON_TARGET_CHANGED';
     case 'NO_ADJACENT_ALLIES': {
       const keys = new Set(neighbours(unit.cell).map(hexKey));
       return !ctx.units.some(
@@ -184,7 +196,8 @@ export function triggerHolds(
 export type TriggerEvent =
   | 'ON_BASIC_HIT_TAKEN' | 'ON_SKILL_HIT' | 'ON_CC_APPLIED' | 'ON_SUPPORT_SKILL'
   | 'PASSIVE' | 'RECOMPUTE' | 'COMBAT_START' | 'ON_ATTACK' | 'ON_HIT_TAKEN' | 'ON_CAST'
-  | 'ON_KILL' | 'ON_ASSIST' | 'ON_DEATH' | 'TICK';
+  | 'ON_KILL' | 'ON_ASSIST' | 'ON_DEATH' | 'TICK'
+  | 'RACE_PHASE' | 'ON_TARGET_CHANGED';
 
 /**
  * Aura-shaped effects are recomputed from scratch each tick rather than applied

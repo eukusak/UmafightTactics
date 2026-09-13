@@ -56,17 +56,21 @@ export const TRAIT_DEFS: TraitDef[] = [
     ],
   },
   {
-    id: 'oikomi', name: '추입', category: 'STYLE', thresholds: [2, 4, 6],
+    // 2026-09 balance: 추입 기물은 시즌 60명 중 6~9명뿐이라 2/4/6 구간에서는
+    // 3단계가 사실상 닫혀 있었다. 구간을 2/3/5로 좁히고, 조건부(대상 체력 50% 이하)
+    // 효과라는 약점을 감안해 수치와 마나 보상을 앞당긴다.
+    id: 'oikomi', name: '추입', category: 'STYLE', thresholds: [2, 3, 5],
     emblemItemId: 'emblem_oikomi',
     description: '뒤에서 몰아쳐 약해진 적을 끝낸다.',
     tiers: [
-      { count: 2, description: '대상 체력 50% 이하일 때 피해 증폭 +10%',
-        effects: [{ kind: 'DAMAGE_AMP', value: 0.1, trigger: { when: 'TARGET_HP_BELOW', threshold: 0.5 } }] },
-      { count: 4, description: '대상 체력 50% 이하일 때 피해 증폭 +20%',
-        effects: [{ kind: 'DAMAGE_AMP', value: 0.2, trigger: { when: 'TARGET_HP_BELOW', threshold: 0.5 } }] },
-      { count: 6, description: '대상 체력 50% 이하일 때 피해 증폭 +30%. 처치 관여 시 마나 +15',
-        effects: [{ kind: 'DAMAGE_AMP', value: 0.3, trigger: { when: 'TARGET_HP_BELOW', threshold: 0.5 } },
-          { kind: 'MANA_ADD', value: 15, trigger: { when: 'ON_TAKEDOWN_ASSIST' } }] },
+      { count: 2, description: '대상 체력 50% 이하일 때 피해 증폭 +12%',
+        effects: [{ kind: 'DAMAGE_AMP', value: 0.12, trigger: { when: 'TARGET_HP_BELOW', threshold: 0.5 } }] },
+      { count: 3, description: '대상 체력 50% 이하일 때 피해 증폭 +22%. 처치 관여 시 마나 +10',
+        effects: [{ kind: 'DAMAGE_AMP', value: 0.22, trigger: { when: 'TARGET_HP_BELOW', threshold: 0.5 } },
+          { kind: 'MANA_ADD', value: 10, trigger: { when: 'ON_TAKEDOWN_ASSIST' } }] },
+      { count: 5, description: '대상 체력 50% 이하일 때 피해 증폭 +34%. 처치 관여 시 마나 +18',
+        effects: [{ kind: 'DAMAGE_AMP', value: 0.34, trigger: { when: 'TARGET_HP_BELOW', threshold: 0.5 } },
+          { kind: 'MANA_ADD', value: 18, trigger: { when: 'ON_TAKEDOWN_ASSIST' } }] },
     ],
   },
   {
@@ -331,7 +335,8 @@ for (const [count, amp, mana] of [[8, .42, 25], [10, .65, 35]]) {
 for (const [count, crit, bonus, amp] of [[8, .25, .3, .18], [10, .35, .35, .3]]) {
   extend('sashi', [{ count, description: `치명타 +${percent(crit)}%. 처치 관여 시 6초간 추가 치명타 +${percent(bonus)}%, 피해 +${percent(amp)}%`, effects: [{ kind: 'CRIT_CHANCE_ADD', value: crit }, { kind: 'CRIT_CHANCE_ADD', value: bonus, duration: 6, trigger: { when: 'ON_TAKEDOWN_ASSIST' } }, { kind: 'DAMAGE_AMP', value: amp, duration: 6, trigger: { when: 'ON_TAKEDOWN_ASSIST' } }] }]);
 }
-for (const [count, amp, mana] of [[8, .5, 20], [10, .75, 25]]) {
+// 추입만 7/9로 앞당긴다. 시즌 풀이 6~9명이라 8/10은 어떤 시즌에서도 닿지 않았다.
+for (const [count, amp, mana] of [[7, .52, 22], [9, .75, 28]]) {
   extend('oikomi', [{ count, description: `체력 50% 미만인 대상에게 피해 +${percent(amp)}%. 처치 관여 시 마나 +${mana}`, effects: [{ kind: 'DAMAGE_AMP', value: amp, trigger: { when: 'TARGET_HP_BELOW', threshold: .5 } }, { kind: 'MANA_ADD', value: mana, trigger: { when: 'ON_TAKEDOWN_ASSIST' } }] }]);
 }
 for (const [count, damage, speed] of [[6, 140, .1], [9, 240, .3]]) {

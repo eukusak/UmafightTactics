@@ -4747,8 +4747,14 @@
         }
       },
       "previousSkillSignature": "1f68887fd3b68e847d0571998d0bc384d471a20e0a876db95653c8cb8f7165ca",
-      "skillSignature": "5243873c8b6bfc3b4b719ebdea6957dbc42d4ee381d466a0a1d4a6e04c252bc8",
-      "unchangedChoreography": true
+      "skillSignature": "12946677c4520fbe62d21fa421c2acc66957718f17a6c7a447ac365c7c256a55",
+      "unchangedChoreography": true,
+      "styleCorrection": {
+        "from": "nige",
+        "to": "senko",
+        "source": "user",
+        "reason": "사용자 지정 각질 교정. 통과 지점 표본은 선입/선행이 섞여 있고 전적 기록의 주 각질은 선두권이다. 선행으로 고정한다."
+      }
     },
     "almond_eye": {
       "fromCost": 5,
