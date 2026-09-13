@@ -8491,7 +8491,7 @@
             "delay": 0.45
           }
         ],
-        "vfxKey": "vfx_dash_nige",
+        "vfxKey": "vfx_dash_senko",
         "description": "[교차 파동] 돌진 후 직선 최대 4명에게 131 물리 피해, 0.45초 뒤 같은 방향으로 93 마법 파동. 근거: 2013 天皇賞(春)(GI) 1위.",
         "choreography": {
           "windup": 0.45,
@@ -8505,7 +8505,7 @@
           "motion": "PULSE"
         }
       },
-      "skillSignature": "5243873c8b6bfc3b4b719ebdea6957dbc42d4ee381d466a0a1d4a6e04c252bc8",
+      "skillSignature": "12946677c4520fbe62d21fa421c2acc66957718f17a6c7a447ac365c7c256a55",
       "basicAttack": "근접 준비 → 당김 → 타격 → 회수",
       "skillPoseDraft": [
         "낮게 웅크린 출발",

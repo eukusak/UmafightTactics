@@ -6,7 +6,7 @@
  * uses. Nothing here reads the clock or the network.
  */
 import {
-  RACE_ENTRY_DEADLINE, RACE_ENTRY_EARLY_HP, RACE_ENTRY_EARLY_ROUND,
+  RACE_ENTRY_DEADLINE, RACE_ENTRY_EARLY_HP, RACE_ENTRY_EARLY_ROUND, RACE_ENTRY_RECHECK_ROUND,
   RACE_TRANSFER_DEADLINE,
 } from '../constants';
 import { Rng } from '../rng';
@@ -46,11 +46,11 @@ export function racePlanOpensFor(state: MatchState, player: PlayerState): RacePl
     if (scheduled === 'EVOLUTION' && !player.racePlan?.planId) return 'PLAN';
     return scheduled;
   }
-  const early = roundKey(RACE_ENTRY_EARLY_ROUND.stage, RACE_ENTRY_EARLY_ROUND.round);
-  if (roundKey(state.stage, state.round) === early
+  const early = [RACE_ENTRY_EARLY_ROUND, RACE_ENTRY_RECHECK_ROUND].some(r => roundKey(state.stage, state.round) === roundKey(r.stage, r.round));
+  if (early
     && player.hp <= RACE_ENTRY_EARLY_HP
     && player.racePlan?.planId
-    && !player.racePlan.entryUnitDefId) {
+    && !player.racePlan.entryUnitDefId && !player.racePlan.entryDeferred) {
     return 'ENTRY';
   }
   return null;

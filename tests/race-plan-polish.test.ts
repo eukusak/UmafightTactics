@@ -70,7 +70,18 @@ describe('race plan delivery regressions',()=>{
     const state=createMatch({seed:3});const p=state.players[0];p.racePlan!.planId='RP_SLOW_STORE';
     state.stage=4;state.round=3;p.hp=30;expect(racePlanOpensFor(state,p)).toBe('ENTRY');
     p.hp=31;expect(racePlanOpensFor(state,p)).toBeNull();
+    p.hp=30;state.round=1;expect(racePlanOpensFor(state,p)).toBe('ENTRY');
+    p.racePlan!.entryDeferred=true;expect(racePlanOpensFor(state,p)).toBeNull();p.racePlan!.entryDeferred=false;
     p.hp=10;state.round=2;expect(racePlanOpensFor(state,p)).toBeNull();
+  });
+  it('preserves pending race telemetry through a server restart and settles it once',()=>{
+    const state=createMatch({seed:29,allAi:true});const d=new RoundDirector(state);state.stage=2;state.round=2;d.beginPrep();d.resolveRound(true);
+    const restored=new RoundDirector(structuredClone(state));restored.restorePendingSettlement(JSON.parse(JSON.stringify(d.exportPendingSettlement())));
+    d.settleRound();restored.settleRound();
+    const reports=(s:typeof state)=>s.players.map(p=>p.racePlan!.recentCombat);
+    expect(reports(restored.state)).toEqual(reports(state));
+    expect(reports(state).every(r=>r.sampleCount===1)).toBe(true);
+    restored.settleRound();expect(reports(restored.state)).toEqual(reports(state));
   });
   it('prints the actual +2 cast gain rather than saying every source grants +1',()=>{
     const text=describeEffects(findRacePlanNode('FM_SAVE_LEGS')!).join(' ');

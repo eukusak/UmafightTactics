@@ -117,6 +117,7 @@ export function createMatch(options: CreateMatchOptions): MatchState {
 }
 
 export type PendingSettlement = {
+  raceReports?: Record<string, Parameters<typeof updateRecentCombat>[1]>;
   resolution: RoundResolution;
   afterStreaks: Record<string, number>;
   pvpWinners: string[];
@@ -343,8 +344,8 @@ export class RoundDirector {
    * Everything comes from events the battle already recorded.
    */
   private roundRaceReports = new Map<string, Parameters<typeof updateRecentCombat>[1]>();
-  private recordRaceTelemetry(isPve: boolean): void {
-    if (!isPve) for (const [id, report] of this.roundRaceReports) {
+  private recordRaceTelemetry(pending: PendingSettlement): void {
+    if (!pending.isPve) for (const [id, report] of Object.entries(pending.raceReports ?? {})) {
       const player = this.state.players.find(p => p.id === id);
       if (player?.racePlan) updateRecentCombat(player, report);
     }
@@ -424,6 +425,7 @@ export class RoundDirector {
     const s = this.state;
     s.phase = 'BATTLE';
     this.roundAugmentProgress = {};
+    this.roundRaceReports.clear();
     this.lastHumanFrames = null;
     this.playerFrames.clear();
     this.lastHumanBattleWasPve = false;
@@ -455,6 +457,7 @@ export class RoundDirector {
       resolution, afterStreaks: Object.fromEntries(afterStreaks),
       pvpWinners: [...pvpWinners], isPve: kind === 'PVE',
       augmentProgress: structuredClone(this.roundAugmentProgress),
+      raceReports: structuredClone(Object.fromEntries(this.roundRaceReports)),
       rewardBenchCounts: Object.fromEntries(s.players.map(p => [p.id, p.bench.length])),
     };
     this.syncRng();
@@ -465,7 +468,7 @@ export class RoundDirector {
   settleRound(): RoundResolution | null {
     const pending = this.pendingSettlement;
     if (!pending) return this.state.lastResolution;
-    this.recordRaceTelemetry(pending.isPve);
+    this.recordRaceTelemetry(pending);
     this.pendingSettlement = null;
     const s = this.state;
     const { resolution, afterStreaks, pvpWinners, isPve } = pending;

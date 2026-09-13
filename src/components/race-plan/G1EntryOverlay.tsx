@@ -1,5 +1,5 @@
 /**
- * GⅠ 출주 등록 (4-5, or 4-3 when the player is on 30 hp or less).
+ * GⅠ 출주 등록 (4-5, or 4-1/4-3 when the player is on 30 hp or less).
  *
  * Laid out as a race card rather than a champion picker: the grid is the field,
  * the right column is the form line for the horse under the cursor. The marks
@@ -164,7 +164,7 @@ export function G1EntryOverlay(): JSX.Element | null {
             등록 보류
           </button>
           <span style={{ alignSelf: 'center', fontSize: 12, color: 'var(--race-green-700)' }}>
-            보류해도 손해는 없습니다. 5-2 준비가 끝나기 전까지 등록하면 됩니다.
+            등록을 마치면 최종 승부수를 사용할 수 있습니다. 5-2 준비 종료까지 등록하세요.
           </span>
         </div>
       </div>
