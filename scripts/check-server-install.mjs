@@ -7,7 +7,7 @@ import { createServer } from 'node:net';
 const directory = await mkdtemp(path.join(tmpdir(), 'uft-server-only-'));
 for (const dir of ['src','server']) await cp(dir, path.join(directory,dir), { recursive: true });
 await mkdir(path.join(directory,'scripts'));
-for (const file of ['package.json','package-lock.json','scripts/runtime.mjs']) await cp(file,path.join(directory,file));
+for (const file of ['package.json','package-lock.json','scripts/runtime.mjs','scripts/render-postinstall.mjs']) await cp(file,path.join(directory,file));
 const npm = process.env.npm_execpath;
 if (!npm) throw new Error('Run with npm run test:server-install');
 await new Promise((resolve,reject)=>{ const child=spawn(process.execPath,[npm,'ci','--omit=dev','--no-audit','--no-fund'],{cwd:directory,stdio:'inherit',windowsHide:true});child.on('error',reject);child.on('exit',code=>code===0?resolve():reject(new Error('Production npm ci failed'))); });
