@@ -24,9 +24,13 @@ import type { RaceConditions } from '../src/game/engine/race-plan/conditions';
 import {
   RACE_PLAN_DEFS, RACE_EVOLUTION_DEFS, FINISHING_MOVE_DEFS,
 } from '../src/game/engine/race-plan/defs';
+import { writeFileSync } from 'node:fs';
 import type { TraitId } from '../src/game/engine/types';
 
 const SEP = '~';
+/** Collect every line so the report can go to a file as well as stdout. */
+const LINES: string[] = [];
+const say = (line = ''): void => { LINES.push(line); console.log(line); };
 const arg = (name: string, fallback: number): number => {
   const i = process.argv.indexOf('--' + name);
   return i >= 0 ? Number(process.argv[i + 1]) || fallback : fallback;
@@ -175,35 +179,35 @@ const pct = (cell: Cell): number => (100 * cell.wins) / Math.max(1, cell.games);
 const width = (s: string): number => [...s].reduce((w, ch) => w + (ch.charCodeAt(0) > 127 ? 2 : 1), 0);
 const pad = (s: string, n: number): string => s + ' '.repeat(Math.max(0, n - width(s)));
 
-console.log('matchup matrix — ' + battles.toLocaleString() + ' battles, ' + FIGHTS + ' seeds per cell');
+say('matchup matrix — ' + battles.toLocaleString() + ' battles, ' + FIGHTS + ' seeds per cell');
 
-console.log('\n전체 승률 (모든 조건 통합)');
+say('\n전체 승률 (모든 조건 통합)');
 const ranked = NAMES.map((n) => [n, pct(overall.get(n)!)] as const).sort((a, b) => b[1] - a[1]);
 for (const [name, value] of ranked) console.log('  ' + pad(name, 12) + value.toFixed(1).padStart(5) + '%');
-console.log('  스프레드 ' + (ranked[0][1] - ranked[ranked.length - 1][1]).toFixed(1) + '포인트');
+say('  스프레드 ' + (ranked[0][1] - ranked[ranked.length - 1][1]).toFixed(1) + '포인트');
 
-console.log('\n매치업 표 (행이 열을 이길 확률)');
-console.log('  ' + pad('', 12) + NAMES.map((n) => pad(n, 11)).join(''));
+say('\n매치업 표 (행이 열을 이길 확률)');
+say('  ' + pad('', 12) + NAMES.map((n) => pad(n, 11)).join(''));
 for (const A of NAMES) {
   const row = NAMES.map((B) => (A === B ? pad('—', 11)
     : pad(pct(pairs.get(A + SEP + B)!).toFixed(0) + '%', 11)));
-  console.log('  ' + pad(A, 12) + row.join(''));
+  say('  ' + pad(A, 12) + row.join(''));
 }
 
 for (const [dim, m] of dims) {
   const labels = [...new Set([...m.keys()].map((k) => k.split(SEP)[1]))];
-  console.log('\n조건: ' + dim);
-  console.log('  ' + pad('', 12) + labels.map((l) => pad(l, 13)).join(''));
+  say('\n조건: ' + dim);
+  say('  ' + pad('', 12) + labels.map((l) => pad(l, 13)).join(''));
   for (const A of NAMES) {
     const row = labels.map((l) => {
       const cell = m.get(A + SEP + l);
       return pad(cell ? pct(cell).toFixed(0) + '%' : '—', 13);
     });
-    console.log('  ' + pad(A, 12) + row.join(''));
+    say('  ' + pad(A, 12) + row.join(''));
   }
 }
 
-console.log('\n조건에 따라 가장 크게 흔들리는 덱 (최대 − 최소 승률)');
+say('\n조건에 따라 가장 크게 흔들리는 덱 (최대 − 최소 승률)');
 const swings: Array<[string, string, number, string, string]> = [];
 for (const [dim, m] of dims) {
   for (const A of NAMES) {
@@ -221,7 +225,7 @@ for (const [deck, dim, delta, lo, hi] of swings.sort((a, b) => b[2] - a[2]).slic
     + pad(lo, 20) + '→ ' + hi);
 }
 
-console.log('\n덱별 활성 특성');
+say('\n덱별 활성 특성');
 for (const [name, spec] of Object.entries(ARCHETYPES)) {
   const counts = new Map<TraitId, Set<string>>();
   for (const s of spec) {
@@ -234,5 +238,11 @@ for (const [name, spec] of Object.entries(ARCHETYPES)) {
   const active = [...counts]
     .filter(([t, ids]) => activeTierIndex(getTrait(t), ids.size) >= 0)
     .map(([t, ids]) => getTrait(t).name + ids.size);
-  console.log('  ' + pad(name, 12) + pad(active.length + '개', 5) + ' ' + active.join(' '));
+  say('  ' + pad(name, 12) + pad(active.length + '개', 5) + ' ' + active.join(' '));
+}
+
+const outIndex = process.argv.indexOf('--out');
+if (outIndex >= 0 && process.argv[outIndex + 1]) {
+  writeFileSync(process.argv[outIndex + 1], LINES.join('\n') + '\n');
+  console.log('\nwrote ' + process.argv[outIndex + 1]);
 }
