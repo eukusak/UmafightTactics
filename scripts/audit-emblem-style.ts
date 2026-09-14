@@ -214,18 +214,30 @@ say('');
 say('  추입만 임계가 한 칸씩 낮고(3/5 대 4/6), 최종직선 보너스가 가장 크고,');
 say('  2단계 효과가 하필 승부가 나는 구간에 항상 켜져 있다. 셋이 곱해진다.');
 say('');
-say('  셋 중 어느 것이 실제로 값을 내는지 하나씩 껐다 — 아이템 슬롯 값을 치른 기준선 위에서');
+say('  셋 중 어느 것이 실제로 값을 내는지 하나씩 껐다.');
+say('');
+say('  주의 — 추입 수치를 건드리면 *양쪽 모두* 바뀐다. 앞줄 1·2코 유닛 중에도');
+say('  타고난 추입이 있어서, 승률을 그냥 재면 상대가 약해진 몫까지 섞여 들어온다.');
+say('  그래서 재는 것은 승률이 아니라 **인자의 순값** — 같은 수정 아래에서');
+say('  (인자 박은 보드 승률) − (인자 없는 보드 승률). 공유되는 몫은 상쇄된다.');
+say('');
 const oikomiTrait = getTrait('oikomi');
 const oikomiCurve = STYLE_CURVES.oikomi;
-const before = rate('oikomi', DEFAULT_STYLE_RESOLUTION, CONDS, 400, RIVAL_BOARD);
-say('    손대지 않음                 ' + before.toFixed(1).padStart(5) + '%');
+
+/** The emblem's own contribution, with everything both sides share cancelled. */
+const emblemValue = (): number =>
+  rate('oikomi', DEFAULT_STYLE_RESOLUTION, CONDS, 400, RIVAL_BOARD)
+  - rate(null, DEFAULT_STYLE_RESOLUTION, CONDS, 400, RIVAL_BOARD, true);
+
+const before = emblemValue();
+say('  ' + pad('손대지 않음', 28) + '인자 순값 ' + (before >= 0 ? '+' : '') + before.toFixed(1).padStart(5) + 'p');
 
 const probe = (label: string, mutate: () => () => void): void => {
   const restore = mutate();
-  const v = rate('oikomi', DEFAULT_STYLE_RESOLUTION, CONDS, 400, RIVAL_BOARD);
+  const v = emblemValue();
   restore();
-  say('    ' + pad(label, 28) + v.toFixed(1).padStart(5) + '%   '
-    + (v - before >= 0 ? '+' : '') + (v - before).toFixed(1).padStart(5) + 'p');
+  say('  ' + pad(label, 28) + '인자 순값 ' + (v >= 0 ? '+' : '') + v.toFixed(1).padStart(5) + 'p'
+    + '   변화 ' + (v - before >= 0 ? '+' : '') + (v - before).toFixed(1).padStart(5) + 'p');
 };
 
 probe('임계를 2/4/6/8/10으로', () => {
@@ -255,12 +267,15 @@ probe('최종직선만 +26% → +18%', () => {
   return () => { step.damage = old; };
 });
 
-probe('2단계 효과를 조건부로', () => {
-  const tier = oikomiTrait.tiers[0];
-  const old = tier.effects;
-  (tier as { effects: typeof old }).effects = old.map((e) =>
-    e.kind === 'DAMAGE_AMP' ? { ...e, value: (e.value ?? 0) / 2 } : e);
-  return () => { (tier as { effects: typeof old }).effects = old; };
+// Halving only tiers[0] would nerf a two-count board and leave a six-count one
+// — which is my side — untouched. Every tier has to move together.
+probe('단계 피해 증폭 절반으로', () => {
+  const old = oikomiTrait.tiers.map((t) => t.effects);
+  oikomiTrait.tiers.forEach((t) => {
+    (t as { effects: typeof old[0] }).effects = t.effects.map((e) =>
+      e.kind === 'DAMAGE_AMP' ? { ...e, value: (e.value ?? 0) / 2 } : e);
+  });
+  return () => { oikomiTrait.tiers.forEach((t, i) => { (t as { effects: typeof old[0] }).effects = old[i]; }); };
 });
 
 const out = process.argv.indexOf('--out');
