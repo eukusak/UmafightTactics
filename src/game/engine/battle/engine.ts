@@ -21,8 +21,9 @@ import type { Rng } from '../rng';
 import { getRaceCombatPhase, laterPhase, phaseIndex, raceProgress } from '../race-plan/race-phases';
 import { RaceResourceTracker, nodeBattleEffects, raceReadBranch } from '../race-plan/runtime';
 import { findRacePlanNode } from '../race-plan/defs';
-import { RUN_STYLES, styleCurveEffects } from '../race-plan/style-curve';
+import { DEFAULT_STYLE_RESOLUTION, resolveRunStyles, styleCurveEffects } from '../race-plan/style-curve';
 import { conditionEffects, paceStyleScale, type RaceConditions } from '../race-plan/conditions';
+import type { StyleResolution } from '../race-plan/style-curve';
 import { g1Identity } from '../race-plan/g1-identity';
 import { getG1Theme } from '../race-plan/profiles';
 import type { RaceCombatPhase, RacePlanBattleInput } from '../race-plan/types';
@@ -129,6 +130,11 @@ export type BattleOptions = {
    * Omitted means no GⅠ and no 과제, for the same reason.
    */
   g1ThemeId?: string;
+  /**
+   * How a unit holding two 각질 (a native one plus an emblem) runs. Defaults to
+   * `DEFAULT_STYLE_RESOLUTION`; the balance audit sets it to compare policies.
+   */
+  styleResolution?: StyleResolution;
 };
 
 /** Maximum nesting for damage that itself causes damage. */
@@ -338,13 +344,19 @@ export class BattleEngine {
       // round behind it is not a race, so nobody is running a 각질 in it.
       // The pace bends the whole curve: a hard pace empties a front-runner's
       // early lead and pays the closers more than they could buy themselves.
-      const style = conditions && RUN_STYLES.find((st) => unit.traits.includes(st));
-      if (style && conditions) {
-        const scale = paceStyleScale(conditions, style);
-        styleCurveEffects(style).forEach((effect, i) => {
-          const scaled = effect.value === undefined ? effect : { ...effect, value: effect.value * scale };
-          list.push({ effect: scaled, index: i, sourceKey: `style:${style}`, power: 1 });
-        });
+      // A unit can hold more than one 각질 once emblems are in play, and it
+      // still has to run a single race: `resolveRunStyles` decides which curve
+      // or curves apply, and at what weight.
+      if (conditions) {
+        for (const { style, weight, signature } of resolveRunStyles(
+          unit.traits, unit.nativeTraits, this.options.styleResolution ?? DEFAULT_STYLE_RESOLUTION,
+        )) {
+          const scale = paceStyleScale(conditions, style) * weight;
+          styleCurveEffects(style, signature).forEach((effect, i) => {
+            const scaled = effect.value === undefined ? effect : { ...effect, value: effect.value * scale };
+            list.push({ effect: scaled, index: i, sourceKey: `style:${style}`, power: 1 });
+          });
+        }
       }
 
       // --- race plan, bound only to this side's GⅠ entry

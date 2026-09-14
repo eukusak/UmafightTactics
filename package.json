@@ -40,7 +40,9 @@
     "audit:matrix": "tsx scripts/audit-matchup-matrix.ts",
     "audit:seasons": "tsx scripts/audit-season-report.ts",
     "audit:agency": "tsx scripts/audit-agency.ts",
-    "audit:conditions": "tsx scripts/audit-conditions.ts"
+    "audit:conditions": "tsx scripts/audit-conditions.ts",
+    "audit:emblem-style": "tsx scripts/audit-emblem-style.ts",
+    "audit:combinations": "tsx scripts/audit-combinations.ts"
   },
   "dependencies": {
     "@fontsource-variable/noto-sans-kr": "^5.3.0",

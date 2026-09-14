@@ -23,7 +23,7 @@
  * On top of the curve each style carries one *signature*: a structural payout
  * that fires once and changes how the unit plays, not what its numbers say.
  */
-import type { EffectDef, RunStyle } from '../types';
+import type { EffectDef, RunStyle, TraitId } from '../types';
 import type { RaceCombatPhase } from './types';
 
 /** Damage dealt / damage taken, as fractions, for one phase of one style. */
@@ -165,13 +165,75 @@ export const STYLE_CURVES: Record<RunStyle, StyleCurve> = {
 export const RUN_STYLES: RunStyle[] = ['nige', 'senko', 'sashi', 'oikomi'];
 
 /**
+ * How a unit that holds more than one 각질 runs.
+ *
+ * Emblems exist so a board can reach a 각질 threshold the roster will not give
+ * it — 추입 in particular has no three- or four-cost unit at all — and that is
+ * a synergy tool worth keeping. But a 각질 is not only a threshold here: it is a
+ * phase curve, and a unit holding two of them has to run *some* single race.
+ *
+ *  - `FIRST`   — whichever style appears first in `RUN_STYLES`. This is what the
+ *                engine did before the policy existed, and it is indefensible:
+ *                the answer comes from an array's declaration order, so a 추입
+ *                carry handed a 도주 인자 silently loses its closer curve, while
+ *                the same emblem the other way round does nothing at all.
+ *  - `NATIVE`  — the unit runs the style it was born with; emblems count for
+ *                traits and nothing else.
+ *  - `BLEND`   — the average of every style it holds. A horse asked to run two
+ *                races commits to neither: the curve flattens, so the unit gives
+ *                up its peak in exchange for having no trough.
+ *  - `STACK`   — every curve applies at once. Kept only so the audit can show
+ *                what it costs; it is the case where a unit really does have no
+ *                weak phase.
+ */
+export type StyleResolution = 'FIRST' | 'NATIVE' | 'BLEND' | 'STACK';
+
+export const DEFAULT_STYLE_RESOLUTION: StyleResolution = 'BLEND';
+
+/**
+ * Styles in play for a unit, the weight each curve applies at, and which one
+ * carries the signature.
+ *
+ * The signature is a structural one-shot — 대도주, 직선 한 방 — not a number, so
+ * it is never split or doubled: exactly one style fires it, and a blended unit
+ * keeps the one it was born with. Only the numeric curve is shared out.
+ */
+export type ResolvedStyle = { style: RunStyle; weight: number; signature: boolean };
+
+export function resolveRunStyles(
+  traits: readonly TraitId[],
+  nativeTraits: readonly TraitId[],
+  policy: StyleResolution = DEFAULT_STYLE_RESOLUTION,
+): ResolvedStyle[] {
+  const held = RUN_STYLES.filter((st) => traits.includes(st));
+  if (held.length === 0) return [];
+  if (held.length === 1) return [{ style: held[0], weight: 1, signature: true }];
+
+  /** The style the unit was born with, falling back to declaration order. */
+  const primary = held.find((st) => nativeTraits.includes(st)) ?? held[0];
+  const only = (style: RunStyle): ResolvedStyle[] => [{ style, weight: 1, signature: true }];
+
+  switch (policy) {
+    case 'FIRST':
+      return only(held[0]);
+    case 'NATIVE':
+      return only(primary);
+    case 'STACK':
+      return held.map((style) => ({ style, weight: 1, signature: style === primary }));
+    case 'BLEND':
+    default:
+      return held.map((style) => ({ style, weight: 1 / held.length, signature: style === primary }));
+  }
+}
+
+/**
  * Every effect the curve contributes for one style, ready to bind.
  *
  * The curve steps come back as continuously-gated auras, so they switch
  * themselves on and off as the race moves without the engine tracking anything;
  * the signature comes back as its own one-shot effects.
  */
-export function styleCurveEffects(style: RunStyle): EffectDef[] {
+export function styleCurveEffects(style: RunStyle, includeSignature = true): EffectDef[] {
   const curve = STYLE_CURVES[style];
   const out: EffectDef[] = [];
   for (const step of curve.steps) {
@@ -182,7 +244,7 @@ export function styleCurveEffects(style: RunStyle): EffectDef[] {
       out.push({ kind: 'DAMAGE_REDUCTION', value: step.resist, trigger: { when: 'IN_RACE_PHASE', phases: step.phases } });
     }
   }
-  out.push(...curve.signature.effects);
+  if (includeSignature) out.push(...curve.signature.effects);
   return out;
 }
 

@@ -40,6 +40,12 @@ export type CombatUnit = {
   cost: 1 | 2 | 3 | 4 | 5;
   star: 1 | 2 | 3;
   traits: TraitId[];
+  /**
+   * The traits on the unit's own roster entry, before emblems and augments.
+   * Synergy counting uses `traits`; the 각질 curve needs to tell a style the
+   * unit was born with from one an item handed it.
+   */
+  nativeTraits: TraitId[];
   items: string[];
   skill: SkillDef;
   /** Cell the unit occupies right now. */
@@ -163,6 +169,7 @@ export function makeCombatUnit(params: {
 }): CombatUnit {
   const def = getUnitDef(params.unitDefId);
   const base = buildBaseStats(params.unitDefId, params.star, params.items);
+  const nativeTraits = [...def.traits];
   const traits = [...def.traits];
   for (const t of params.extraTraits) if (!traits.includes(t)) traits.push(t);
   // Emblem items grant their trait to the holder.
@@ -181,6 +188,7 @@ export function makeCombatUnit(params: {
     cost: def.cost,
     star: params.star,
     traits,
+    nativeTraits,
     items: params.items,
     skill: def.skill,
     cell: params.cell,
