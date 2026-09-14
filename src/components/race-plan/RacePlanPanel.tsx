@@ -5,6 +5,7 @@
  * battle, so without this the player has no way to check what they committed to
  * or when the next choice is coming.
  */
+import { G1Crest, RaceConditionsStrip } from './RaceArt';
 import type { JSX } from 'react';
 import { useGameStore } from '../../store/gameStore';
 import { getUnitDef } from '../../game/engine/roster';
@@ -71,6 +72,8 @@ export function RacePlanPanel(): JSX.Element | null {
   return (
     <div className="panel race-panel-side">
       <strong>레이스 플랜</strong>
+      <G1Crest theme={theme} />
+      {match.raceConditions && <RaceConditionsStrip conditions={match.raceConditions} />}
       <p className="race-side-theme">
         이번 로비의 목표는 {theme.nameKo}, {theme.courseNameKo} {theme.distanceM}m{' '}
         {theme.surface === 'TURF' ? '잔디' : '더트'} {theme.direction === 'LEFT' ? '좌회전' : '우회전'}입니다

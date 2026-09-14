@@ -1,0 +1,892 @@
+[
+  {
+    "key": "exposed_marker_warn",
+    "file": "battle/exposed_marker_warn.png",
+    "w": 96,
+    "h": 96,
+    "cols": 10,
+    "rows": 1,
+    "frames": 10,
+    "fps": 12
+  },
+  {
+    "key": "exposed_marker_target",
+    "file": "battle/exposed_marker_target.png",
+    "w": 96,
+    "h": 96,
+    "cols": 10,
+    "rows": 1,
+    "frames": 10,
+    "fps": 12
+  },
+  {
+    "key": "dive_trail_nige",
+    "file": "battle/dive_trail_nige.png",
+    "w": 320,
+    "h": 128,
+    "cols": 10,
+    "rows": 1,
+    "frames": 10,
+    "fps": 24
+  },
+  {
+    "key": "style_aura_nige_up",
+    "file": "race/style_aura_nige_up.png",
+    "w": 128,
+    "h": 64,
+    "cols": 10,
+    "rows": 1,
+    "frames": 10,
+    "fps": 12
+  },
+  {
+    "key": "style_aura_nige_down",
+    "file": "race/style_aura_nige_down.png",
+    "w": 128,
+    "h": 64,
+    "cols": 10,
+    "rows": 1,
+    "frames": 10,
+    "fps": 12
+  },
+  {
+    "key": "dive_trail_senko",
+    "file": "battle/dive_trail_senko.png",
+    "w": 320,
+    "h": 128,
+    "cols": 10,
+    "rows": 1,
+    "frames": 10,
+    "fps": 24
+  },
+  {
+    "key": "style_aura_senko_up",
+    "file": "race/style_aura_senko_up.png",
+    "w": 128,
+    "h": 64,
+    "cols": 10,
+    "rows": 1,
+    "frames": 10,
+    "fps": 12
+  },
+  {
+    "key": "style_aura_senko_down",
+    "file": "race/style_aura_senko_down.png",
+    "w": 128,
+    "h": 64,
+    "cols": 10,
+    "rows": 1,
+    "frames": 10,
+    "fps": 12
+  },
+  {
+    "key": "dive_trail_sashi",
+    "file": "battle/dive_trail_sashi.png",
+    "w": 320,
+    "h": 128,
+    "cols": 10,
+    "rows": 1,
+    "frames": 10,
+    "fps": 24
+  },
+  {
+    "key": "style_aura_sashi_up",
+    "file": "race/style_aura_sashi_up.png",
+    "w": 128,
+    "h": 64,
+    "cols": 10,
+    "rows": 1,
+    "frames": 10,
+    "fps": 12
+  },
+  {
+    "key": "style_aura_sashi_down",
+    "file": "race/style_aura_sashi_down.png",
+    "w": 128,
+    "h": 64,
+    "cols": 10,
+    "rows": 1,
+    "frames": 10,
+    "fps": 12
+  },
+  {
+    "key": "dive_trail_oikomi",
+    "file": "battle/dive_trail_oikomi.png",
+    "w": 320,
+    "h": 128,
+    "cols": 10,
+    "rows": 1,
+    "frames": 10,
+    "fps": 24
+  },
+  {
+    "key": "style_aura_oikomi_up",
+    "file": "race/style_aura_oikomi_up.png",
+    "w": 128,
+    "h": 64,
+    "cols": 10,
+    "rows": 1,
+    "frames": 10,
+    "fps": 12
+  },
+  {
+    "key": "style_aura_oikomi_down",
+    "file": "race/style_aura_oikomi_down.png",
+    "w": 128,
+    "h": 64,
+    "cols": 10,
+    "rows": 1,
+    "frames": 10,
+    "fps": 12
+  },
+  {
+    "key": "dive_impact",
+    "file": "battle/dive_impact.png",
+    "w": 192,
+    "h": 192,
+    "cols": 6,
+    "rows": 2,
+    "frames": 12,
+    "fps": 24
+  },
+  {
+    "key": "hit_physical_t1",
+    "file": "battle/hit_physical_t1.png",
+    "w": 192,
+    "h": 192,
+    "cols": 10,
+    "rows": 1,
+    "frames": 10,
+    "fps": 15
+  },
+  {
+    "key": "hit_physical_t2",
+    "file": "battle/hit_physical_t2.png",
+    "w": 192,
+    "h": 192,
+    "cols": 10,
+    "rows": 1,
+    "frames": 10,
+    "fps": 15
+  },
+  {
+    "key": "hit_physical_t3",
+    "file": "battle/hit_physical_t3.png",
+    "w": 192,
+    "h": 192,
+    "cols": 10,
+    "rows": 1,
+    "frames": 10,
+    "fps": 15
+  },
+  {
+    "key": "dive_execute",
+    "file": "battle/dive_execute.png",
+    "w": 256,
+    "h": 256,
+    "cols": 7,
+    "rows": 2,
+    "frames": 14,
+    "fps": 20
+  },
+  {
+    "key": "style_signature_nige",
+    "file": "race/style_signature_nige.png",
+    "w": 256,
+    "h": 256,
+    "cols": 6,
+    "rows": 2,
+    "frames": 12,
+    "fps": 18
+  },
+  {
+    "key": "style_signature_senko",
+    "file": "race/style_signature_senko.png",
+    "w": 256,
+    "h": 256,
+    "cols": 6,
+    "rows": 2,
+    "frames": 12,
+    "fps": 18
+  },
+  {
+    "key": "style_signature_sashi",
+    "file": "race/style_signature_sashi.png",
+    "w": 256,
+    "h": 256,
+    "cols": 6,
+    "rows": 2,
+    "frames": 12,
+    "fps": 18
+  },
+  {
+    "key": "style_signature_oikomi",
+    "file": "race/style_signature_oikomi.png",
+    "w": 256,
+    "h": 256,
+    "cols": 6,
+    "rows": 2,
+    "frames": 12,
+    "fps": 18
+  },
+  {
+    "key": "vfx_mana_fill",
+    "file": "vfx/vfx_mana_fill.png",
+    "w": 192,
+    "h": 192,
+    "cols": 10,
+    "rows": 1,
+    "frames": 10,
+    "fps": 15
+  },
+  {
+    "key": "vfx_recast",
+    "file": "vfx/vfx_recast.png",
+    "w": 192,
+    "h": 192,
+    "cols": 10,
+    "rows": 1,
+    "frames": 10,
+    "fps": 15
+  },
+  {
+    "key": "vfx_convert_stat",
+    "file": "vfx/vfx_convert_stat.png",
+    "w": 192,
+    "h": 192,
+    "cols": 10,
+    "rows": 1,
+    "frames": 10,
+    "fps": 15
+  },
+  {
+    "key": "phase_banner_start",
+    "file": "race/phase_banner_start.png",
+    "w": 960,
+    "h": 160,
+    "cols": 6,
+    "rows": 2,
+    "frames": 12,
+    "fps": 20
+  },
+  {
+    "key": "phase_banner_positioning",
+    "file": "race/phase_banner_positioning.png",
+    "w": 960,
+    "h": 160,
+    "cols": 6,
+    "rows": 2,
+    "frames": 12,
+    "fps": 20
+  },
+  {
+    "key": "phase_banner_late",
+    "file": "race/phase_banner_late.png",
+    "w": 960,
+    "h": 160,
+    "cols": 6,
+    "rows": 2,
+    "frames": 12,
+    "fps": 20
+  },
+  {
+    "key": "phase_banner_last3f",
+    "file": "race/phase_banner_last3f.png",
+    "w": 960,
+    "h": 160,
+    "cols": 6,
+    "rows": 2,
+    "frames": 12,
+    "fps": 20
+  },
+  {
+    "key": "phase_banner_overtime",
+    "file": "race/phase_banner_overtime.png",
+    "w": 960,
+    "h": 160,
+    "cols": 6,
+    "rows": 2,
+    "frames": 12,
+    "fps": 20
+  },
+  {
+    "key": "cond_going_firm",
+    "file": "race/cond_going_firm.png",
+    "w": 64,
+    "h": 64,
+    "cols": 1,
+    "rows": 1,
+    "frames": 1,
+    "fps": 0
+  },
+  {
+    "key": "cond_going_good",
+    "file": "race/cond_going_good.png",
+    "w": 64,
+    "h": 64,
+    "cols": 1,
+    "rows": 1,
+    "frames": 1,
+    "fps": 0
+  },
+  {
+    "key": "cond_going_yielding",
+    "file": "race/cond_going_yielding.png",
+    "w": 64,
+    "h": 64,
+    "cols": 1,
+    "rows": 1,
+    "frames": 1,
+    "fps": 0
+  },
+  {
+    "key": "cond_going_soft",
+    "file": "race/cond_going_soft.png",
+    "w": 64,
+    "h": 64,
+    "cols": 1,
+    "rows": 1,
+    "frames": 1,
+    "fps": 0
+  },
+  {
+    "key": "cond_pace_high",
+    "file": "race/cond_pace_high.png",
+    "w": 64,
+    "h": 64,
+    "cols": 1,
+    "rows": 1,
+    "frames": 1,
+    "fps": 0
+  },
+  {
+    "key": "cond_pace_middle",
+    "file": "race/cond_pace_middle.png",
+    "w": 64,
+    "h": 64,
+    "cols": 1,
+    "rows": 1,
+    "frames": 1,
+    "fps": 0
+  },
+  {
+    "key": "cond_pace_slow",
+    "file": "race/cond_pace_slow.png",
+    "w": 64,
+    "h": 64,
+    "cols": 1,
+    "rows": 1,
+    "frames": 1,
+    "fps": 0
+  },
+  {
+    "key": "cond_weather_clear",
+    "file": "race/cond_weather_clear.png",
+    "w": 64,
+    "h": 64,
+    "cols": 1,
+    "rows": 1,
+    "frames": 1,
+    "fps": 0
+  },
+  {
+    "key": "cond_weather_cloudy",
+    "file": "race/cond_weather_cloudy.png",
+    "w": 64,
+    "h": 64,
+    "cols": 1,
+    "rows": 1,
+    "frames": 1,
+    "fps": 0
+  },
+  {
+    "key": "cond_weather_rain",
+    "file": "race/cond_weather_rain.png",
+    "w": 64,
+    "h": 64,
+    "cols": 1,
+    "rows": 1,
+    "frames": 1,
+    "fps": 0
+  },
+  {
+    "key": "cond_weather_snow",
+    "file": "race/cond_weather_snow.png",
+    "w": 64,
+    "h": 64,
+    "cols": 1,
+    "rows": 1,
+    "frames": 1,
+    "fps": 0
+  },
+  {
+    "key": "cond_weather_gale",
+    "file": "race/cond_weather_gale.png",
+    "w": 64,
+    "h": 64,
+    "cols": 1,
+    "rows": 1,
+    "frames": 1,
+    "fps": 0
+  },
+  {
+    "key": "cond_clause_large_field",
+    "file": "race/cond_clause_large_field.png",
+    "w": 64,
+    "h": 64,
+    "cols": 1,
+    "rows": 1,
+    "frames": 1,
+    "fps": 0
+  },
+  {
+    "key": "cond_clause_inner_rail",
+    "file": "race/cond_clause_inner_rail.png",
+    "w": 64,
+    "h": 64,
+    "cols": 1,
+    "rows": 1,
+    "frames": 1,
+    "fps": 0
+  },
+  {
+    "key": "cond_clause_outer_lane",
+    "file": "race/cond_clause_outer_lane.png",
+    "w": 64,
+    "h": 64,
+    "cols": 1,
+    "rows": 1,
+    "frames": 1,
+    "fps": 0
+  },
+  {
+    "key": "cond_clause_long_straight",
+    "file": "race/cond_clause_long_straight.png",
+    "w": 64,
+    "h": 64,
+    "cols": 1,
+    "rows": 1,
+    "frames": 1,
+    "fps": 0
+  },
+  {
+    "key": "cond_clause_false_start",
+    "file": "race/cond_clause_false_start.png",
+    "w": 64,
+    "h": 64,
+    "cols": 1,
+    "rows": 1,
+    "frames": 1,
+    "fps": 0
+  },
+  {
+    "key": "cond_clause_head_on_head",
+    "file": "race/cond_clause_head_on_head.png",
+    "w": 64,
+    "h": 64,
+    "cols": 1,
+    "rows": 1,
+    "frames": 1,
+    "fps": 0
+  },
+  {
+    "key": "cond_clause_tailwind_home",
+    "file": "race/cond_clause_tailwind_home.png",
+    "w": 64,
+    "h": 64,
+    "cols": 1,
+    "rows": 1,
+    "frames": 1,
+    "fps": 0
+  },
+  {
+    "key": "cond_clause_tight_corner",
+    "file": "race/cond_clause_tight_corner.png",
+    "w": 64,
+    "h": 64,
+    "cols": 1,
+    "rows": 1,
+    "frames": 1,
+    "fps": 0
+  },
+  {
+    "key": "weather_clear",
+    "file": "race/weather_clear.png",
+    "w": 1920,
+    "h": 1080,
+    "cols": 4,
+    "rows": 3,
+    "frames": 12,
+    "fps": 10
+  },
+  {
+    "key": "weather_cloudy",
+    "file": "race/weather_cloudy.png",
+    "w": 1920,
+    "h": 1080,
+    "cols": 4,
+    "rows": 3,
+    "frames": 12,
+    "fps": 10
+  },
+  {
+    "key": "weather_rain",
+    "file": "race/weather_rain.png",
+    "w": 1920,
+    "h": 1080,
+    "cols": 4,
+    "rows": 3,
+    "frames": 12,
+    "fps": 10
+  },
+  {
+    "key": "weather_snow",
+    "file": "race/weather_snow.png",
+    "w": 1920,
+    "h": 1080,
+    "cols": 4,
+    "rows": 3,
+    "frames": 12,
+    "fps": 10
+  },
+  {
+    "key": "weather_gale",
+    "file": "race/weather_gale.png",
+    "w": 1920,
+    "h": 1080,
+    "cols": 4,
+    "rows": 3,
+    "frames": 12,
+    "fps": 10
+  },
+  {
+    "key": "card_frame_pace_read",
+    "file": "race/card_frame_pace_read.png",
+    "w": 480,
+    "h": 120,
+    "cols": 1,
+    "rows": 1,
+    "frames": 1,
+    "fps": 0
+  },
+  {
+    "key": "card_frame_gamble",
+    "file": "race/card_frame_gamble.png",
+    "w": 480,
+    "h": 120,
+    "cols": 1,
+    "rows": 1,
+    "frames": 1,
+    "fps": 0
+  },
+  {
+    "key": "card_frame_encore",
+    "file": "race/card_frame_encore.png",
+    "w": 480,
+    "h": 120,
+    "cols": 1,
+    "rows": 1,
+    "frames": 1,
+    "fps": 0
+  },
+  {
+    "key": "card_frame_conversion",
+    "file": "race/card_frame_conversion.png",
+    "w": 480,
+    "h": 120,
+    "cols": 1,
+    "rows": 1,
+    "frames": 1,
+    "fps": 0
+  },
+  {
+    "key": "g1_crest_sprint",
+    "file": "race/g1_crest_sprint.png",
+    "w": 192,
+    "h": 192,
+    "cols": 1,
+    "rows": 1,
+    "frames": 1,
+    "fps": 0
+  },
+  {
+    "key": "g1_crest_long",
+    "file": "race/g1_crest_long.png",
+    "w": 192,
+    "h": 192,
+    "cols": 1,
+    "rows": 1,
+    "frames": 1,
+    "fps": 0
+  },
+  {
+    "key": "g1_crest_dirt",
+    "file": "race/g1_crest_dirt.png",
+    "w": 192,
+    "h": 192,
+    "cols": 1,
+    "rows": 1,
+    "frames": 1,
+    "fps": 0
+  },
+  {
+    "key": "g1_crest_short_straight",
+    "file": "race/g1_crest_short_straight.png",
+    "w": 192,
+    "h": 192,
+    "cols": 1,
+    "rows": 1,
+    "frames": 1,
+    "fps": 0
+  },
+  {
+    "key": "g1_crest_long_straight",
+    "file": "race/g1_crest_long_straight.png",
+    "w": 192,
+    "h": 192,
+    "cols": 1,
+    "rows": 1,
+    "frames": 1,
+    "fps": 0
+  },
+  {
+    "key": "g1_crest_classic",
+    "file": "race/g1_crest_classic.png",
+    "w": 192,
+    "h": 192,
+    "cols": 1,
+    "rows": 1,
+    "frames": 1,
+    "fps": 0
+  },
+  {
+    "key": "g1_crest_arima",
+    "file": "race/g1_crest_arima.png",
+    "w": 192,
+    "h": 192,
+    "cols": 1,
+    "rows": 1,
+    "frames": 1,
+    "fps": 0
+  },
+  {
+    "key": "g1_crest_arc",
+    "file": "race/g1_crest_arc.png",
+    "w": 192,
+    "h": 192,
+    "cols": 1,
+    "rows": 1,
+    "frames": 1,
+    "fps": 0
+  },
+  {
+    "key": "g1_crest_takarazuka",
+    "file": "race/g1_crest_takarazuka.png",
+    "w": 192,
+    "h": 192,
+    "cols": 1,
+    "rows": 1,
+    "frames": 1,
+    "fps": 0
+  },
+  {
+    "key": "g1_crest_tenno_spring",
+    "file": "race/g1_crest_tenno_spring.png",
+    "w": 192,
+    "h": 192,
+    "cols": 1,
+    "rows": 1,
+    "frames": 1,
+    "fps": 0
+  },
+  {
+    "key": "g1_crest_derby",
+    "file": "race/g1_crest_derby.png",
+    "w": 192,
+    "h": 192,
+    "cols": 1,
+    "rows": 1,
+    "frames": 1,
+    "fps": 0
+  },
+  {
+    "key": "g1_crest_japan_cup",
+    "file": "race/g1_crest_japan_cup.png",
+    "w": 192,
+    "h": 192,
+    "cols": 1,
+    "rows": 1,
+    "frames": 1,
+    "fps": 0
+  },
+  {
+    "key": "g1_crest_dubai_wc",
+    "file": "race/g1_crest_dubai_wc.png",
+    "w": 192,
+    "h": 192,
+    "cols": 1,
+    "rows": 1,
+    "frames": 1,
+    "fps": 0
+  },
+  {
+    "key": "g1_crest_melbourne",
+    "file": "race/g1_crest_melbourne.png",
+    "w": 192,
+    "h": 192,
+    "cols": 1,
+    "rows": 1,
+    "frames": 1,
+    "fps": 0
+  },
+  {
+    "key": "g1_crest_grand_jump",
+    "file": "race/g1_crest_grand_jump.png",
+    "w": 192,
+    "h": 192,
+    "cols": 1,
+    "rows": 1,
+    "frames": 1,
+    "fps": 0
+  },
+  {
+    "key": "g1_crest_daishogai",
+    "file": "race/g1_crest_daishogai.png",
+    "w": 192,
+    "h": 192,
+    "cols": 1,
+    "rows": 1,
+    "frames": 1,
+    "fps": 0
+  },
+  {
+    "key": "course_longchamp",
+    "file": "race/course_longchamp.png",
+    "w": 48,
+    "h": 48,
+    "cols": 1,
+    "rows": 1,
+    "frames": 1,
+    "fps": 0
+  },
+  {
+    "key": "course_ascot",
+    "file": "race/course_ascot.png",
+    "w": 48,
+    "h": 48,
+    "cols": 1,
+    "rows": 1,
+    "frames": 1,
+    "fps": 0
+  },
+  {
+    "key": "course_meydan",
+    "file": "race/course_meydan.png",
+    "w": 48,
+    "h": 48,
+    "cols": 1,
+    "rows": 1,
+    "frames": 1,
+    "fps": 0
+  },
+  {
+    "key": "course_santa_anita",
+    "file": "race/course_santa_anita.png",
+    "w": 48,
+    "h": 48,
+    "cols": 1,
+    "rows": 1,
+    "frames": 1,
+    "fps": 0
+  },
+  {
+    "key": "course_sha_tin",
+    "file": "race/course_sha_tin.png",
+    "w": 48,
+    "h": 48,
+    "cols": 1,
+    "rows": 1,
+    "frames": 1,
+    "fps": 0
+  },
+  {
+    "key": "course_flemington",
+    "file": "race/course_flemington.png",
+    "w": 48,
+    "h": 48,
+    "cols": 1,
+    "rows": 1,
+    "frames": 1,
+    "fps": 0
+  },
+  {
+    "key": "course_seoul",
+    "file": "race/course_seoul.png",
+    "w": 48,
+    "h": 48,
+    "cols": 1,
+    "rows": 1,
+    "frames": 1,
+    "fps": 0
+  },
+  {
+    "key": "hud_track_bar",
+    "file": "race/hud_track_bar.png",
+    "w": 1200,
+    "h": 48,
+    "cols": 1,
+    "rows": 1,
+    "frames": 1,
+    "fps": 0
+  },
+  {
+    "key": "hud_track_fill",
+    "file": "race/hud_track_fill.png",
+    "w": 1200,
+    "h": 48,
+    "cols": 1,
+    "rows": 1,
+    "frames": 1,
+    "fps": 0
+  },
+  {
+    "key": "hud_marker_self",
+    "file": "race/hud_marker_self.png",
+    "w": 40,
+    "h": 48,
+    "cols": 1,
+    "rows": 1,
+    "frames": 1,
+    "fps": 0
+  },
+  {
+    "key": "hud_marker_enemy",
+    "file": "race/hud_marker_enemy.png",
+    "w": 40,
+    "h": 48,
+    "cols": 1,
+    "rows": 1,
+    "frames": 1,
+    "fps": 0
+  },
+  {
+    "key": "hud_gate",
+    "file": "race/hud_gate.png",
+    "w": 56,
+    "h": 48,
+    "cols": 1,
+    "rows": 1,
+    "frames": 1,
+    "fps": 0
+  },
+  {
+    "key": "hud_finish",
+    "file": "race/hud_finish.png",
+    "w": 56,
+    "h": 48,
+    "cols": 1,
+    "rows": 1,
+    "frames": 1,
+    "fps": 0
+  }
+]

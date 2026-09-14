@@ -15,7 +15,7 @@
  */
 import { writeFileSync } from 'node:fs';
 import { createMatch, RoundDirector } from '../src/game/engine/rounds/director';
-import { getUnitDef, getUnitTraits } from '../src/game/engine/roster';
+import { getUnitTraits } from '../src/game/engine/roster';
 import { activeTierIndex, getTrait } from '../src/game/engine/traits/trait-defs';
 import { SEASON_IDS, SEASON_THEMES } from '../src/game/engine/seasons/catalog';
 import { RUN_STYLES } from '../src/game/engine/race-plan/style-curve';

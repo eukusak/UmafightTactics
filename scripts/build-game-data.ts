@@ -1,3 +1,4 @@
+import raceArtCatalog from '../src/data/manual/race-art.json';
 import styleCorrections from '../src/data/manual/running-style-corrections.json';
 import traitCorrections from '../src/data/manual/trait-corrections.json';
 import { buildSeasons } from '../src/game/engine/seasons/catalog';
@@ -872,8 +873,11 @@ const manifest: ArtManifest = {
     'vfx_stun', 'vfx_silence', 'vfx_taunt', 'vfx_dash_nige', 'vfx_dash_senko', 'vfx_dash_sashi',
     'vfx_dash_oikomi', 'vfx_line_red', 'vfx_cone_gold', 'vfx_wedge_cyan', 'vfx_arc_violet',
     'vfx_aoe_burst', 'vfx_projectile', 'vfx_execute', 'vfx_buff', 'vfx_debuff', 'vfx_mana',
+    'vfx_mana_fill', 'vfx_recast', 'vfx_convert_stat',
     'vfx_item_equip', 'vfx_race_gate', 'vfx_race_late_ring', 'vfx_race_last3f',
   ].map((v) => `vfx/${v}.png`),
+  raceArt: raceArtCatalog.filter(a => a.file.startsWith('race/')).map(a => a.file),
+  battleArt: raceArtCatalog.filter(a => a.file.startsWith('battle/')).map(a => a.file),
   starVfx: ['vfx_star_2', 'vfx_star_3', 'vfx_cost5_star3'].map((v) => `vfx/${v}.png`),
   pve: ['training_dummy', 'track_golem', 'supply_robot', 'trophy_guardian', 'grand_trophy_guardian']
     .map((p) => `pve/${p}.png`),

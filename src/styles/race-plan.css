@@ -206,3 +206,36 @@ button.race-take:focus-visible, button.race-reroll:focus-visible,
 .race-side-list dd { margin: 0; color: #f0ece0; }
 .race-side-details summary { cursor: pointer; font-size: 12.5px; color: #9fc7b4; }
 .race-side-details .race-effects { margin: 6px 0 0; padding-left: 16px; font-size: 12px; line-height: 1.6; color: #cdd8de; }
+
+/* Generated race art is decorative, never a drag/drop hit target. */
+.race-art, .race-sprite { pointer-events:none; user-select:none; -webkit-user-drag:none; }
+.race-art { object-fit:contain; }
+.race-sprite { display:block; background-repeat:no-repeat; }
+.race-card-decoration { display:block; width:100%; height:60px; padding:4px 12px; box-sizing:border-box; background:#102336; }
+.race-g1-art { display:inline-block; position:relative; width:64px; height:64px; flex:none; vertical-align:middle; }
+.race-g1-art > .race-art { width:64px; height:64px; }
+.race-g1-art > .race-course-mark { position:absolute; right:-8px; bottom:0; width:24px; height:24px; border-radius:50%; background:#102336; padding:2px; }
+.race-conditions-strip { display:flex; flex-wrap:wrap; gap:6px 12px; padding:10px 16px; font-size:12px; line-height:1.5; }
+.race-conditions-strip > span { display:flex; align-items:center; gap:5px; }
+.race-conditions-strip .race-art { width:24px; height:24px; filter:drop-shadow(0 1px 2px #08212b); }
+.race-panel-side .race-conditions-strip { padding:6px 0; }
+.race-exposed { position:absolute; left:-48px; top:-38px; width:96px; height:96px; pointer-events:none; z-index:1; }
+.race-exposed-sheet { display:block; width:96px; height:96px; background-size:1000% 100%; animation:race-exposed-loop .833333s steps(10) infinite; }
+.race-exposed-fallback { position:absolute; inset:30px 14px; border:2px dashed #e8a33c; border-radius:50%; }
+@keyframes race-exposed-loop { to { background-position:-960px 0; } }
+@media (prefers-reduced-motion:reduce) { .race-exposed-sheet { animation:none; background-position:-384px 0; } }
+
+.race-weather { position:absolute; inset:0; overflow:hidden; pointer-events:none; }
+.race-weather .race-sprite { width:100%; height:100%; }
+.race-hud-track { height:14px; margin:12px 20px; background-size:100% 100%; background-repeat:no-repeat; }
+.race-hud-fill { background-size:100% 100%; background-repeat:no-repeat; height:100%; background-color:transparent; }
+.race-hud-gate,.race-hud-finish { position:absolute; top:-5px; width:24px; height:24px; }
+.race-hud-gate { left:-24px; } .race-hud-finish { right:-24px; }
+.race-hud-marker { top:0; width:16px; height:14px; margin-left:-8px; border-radius:0; background:none; box-shadow:none; }
+.race-hud-marker .race-art { position:absolute; width:16px; height:19px; left:0; top:-13px; }
+.race-hud-marker .race-art + .race-art { top:8px; }
+.race-hud-banner { position:absolute; width:min(600px,75vw); top:80px; left:50%; transform:translateX(-50%); pointer-events:none; }
+.race-hud-banner .race-sprite { width:100%; }
+@media (prefers-reduced-motion:reduce) { .race-weather { opacity:.5; } }
+
+.arena-unit-touch .race-exposed { left:7px; top:96px; }

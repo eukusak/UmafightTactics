@@ -421,6 +421,8 @@ export type ArtManifest = {
   augments: string[];
   status: string[];
   vfx: string[];
+  raceArt: string[];
+  battleArt: string[];
   starVfx: string[];
   pve: string[];
   boards: string[];

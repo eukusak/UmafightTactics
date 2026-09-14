@@ -5,6 +5,8 @@
  * the right column is the form line for the horse under the cursor. The marks
  * ◎ ○ ▲ recommend; nothing here forbids a pick.
  */
+import { G1Crest, RaceArt } from './RaceArt';
+import { cardFrameKey } from '../../game/ui/race-art';
 import { useState } from 'react';
 import { RaceDialog } from './RaceDialog';
 import { playSound } from '../../game/ui/audio';
@@ -52,7 +54,7 @@ export function G1EntryOverlay(): JSX.Element | null {
       <div className="race-panel">
         <div className="race-header">
           <div className="race-g1-head">
-            <div className="race-g1-badge">GⅠ</div>
+            <G1Crest theme={theme} />
             <div>
               <h2>{theme.nameKo}</h2>
               <div className="race-g1-meta">
@@ -210,6 +212,7 @@ function FinishingCards({ entryName, entryId }: { entryName: string; entryId: st
             if (!node) return null;
             return (
               <div className="race-card" key={id}>
+                {cardFrameKey(node) && <RaceArt name={cardFrameKey(node)!} className="race-card-decoration" />}
                 <div className="race-band">
                   <span>작전 {offer.slots[i] ?? i + 1}</span>
                 </div>

@@ -123,4 +123,9 @@ if (mode.startsWith('race-') && mode!=='race-combat') {
     state.phase=phase==='FINISHING'?'RACE_ENTRY_SELECT':'RACE_PLAN_SELECT';
   }
 }
+if (mode === 'art-exposed') {
+  const def = getSeasonUnits(state.seasonId).find(d => d.role === 'AD_CARRY')!;
+  if (!take(state.pool, def.id, 1)) throw new Error('exposed art fixture pool');
+  const u = newInstance(state, def.id, 1); u.position = { q: 3, r: 0 }; p.board.push(u);
+}
 console.log(JSON.stringify(mode.startsWith('result-') ? resultSave(mode === 'result-eliminated') : serializeMatch(director)));

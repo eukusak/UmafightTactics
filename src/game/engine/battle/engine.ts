@@ -1,3 +1,4 @@
+import { isExposedCarry } from './exposed-carries';
 import {
   scaleSkillSupport, skillAbilityPowerMultiplier, skillAttackDamageMultiplier, upgradeSkill,
 } from './skill-scaling';
@@ -78,7 +79,7 @@ export type BattleEvent =
   | { t: number; type: 'SHIELD'; source: string; target: string; amount: number }
   | { t: number; type: 'ATTACK_START'; source: string; target: string; releaseAt: number; impactAt: number; ranged: boolean }
   | { t: number; type: 'PROJECTILE'; source: string; target: string; impactAt: number }
-  | { t: number; type: 'DAMAGE'; source: string; target: string; damage: number; absorbed: number; isSkill: boolean; crit?: boolean }
+  | { t: number; type: 'DAMAGE'; source: string; target: string; damage: number; absorbed: number; isSkill: boolean; crit?: boolean; damageType?: NonNullable<EffectDef['damageType']>; physicalRatio?: number }
   | { t: number; type: 'ATTACK'; source: string; target: string; damage: number; crit: boolean }
   | { t: number; type: 'CAST'; source: string; skill: string; target?: string; releaseAt?: number; endAt?: number }
   | { t: number; type: 'SKILL_EFFECT'; source: string; targets: string[]; kind: EffectDef['kind']; radius: number; shape?: EffectDef['shape']; effectIndex?: number }
@@ -90,12 +91,16 @@ export type BattleEvent =
   | { t: number; type: 'RACE_PHASE'; phase: RaceCombatPhase; progress: number }
   /** Race Plan: an entry unit's node fired, for the recap and the HUD. */
   | { t: number; type: 'RACE_PROC'; unit: string; nodeId: string; label: string; stacks?: number }
+  | { t: number; type: 'RACE_VFX'; unit: string; key: string }
+  | { t: number; type: 'DIVE'; source: string; target: string; from: Hex; to: Hex; duration: number; style: string }
   | { t: number; type: 'END'; winner: 'A' | 'B' | null };
 
 /** Renderable snapshot of a single simulation step. */
 export type BattleFrame = {
   /** Present on the first frame, including battles with an empty board. */
   participants?: { A: string; B: string };
+  conditions?: RaceConditions;
+  styles?: Record<string, ReturnType<typeof resolveRunStyles>>;
   t: number;
   overtime: boolean;
   race?: { phase: RaceCombatPhase; progress: number };
@@ -212,6 +217,7 @@ export class BattleEngine {
       dealDamage: (s, t, amount, type, isSkill) => this.dealDamage(s, t, amount, type ?? 'MAGIC', isSkill),
       applyStatus: (s, t, e) => this.applyStatus(s, t, e),
       // A dive skill aims where the dive is, not at whatever the unit last hit.
+      visual: (unit, key) => { this.events.push({ t: this.time, type: 'RACE_VFX', unit: unit.id, key }); },
       dash: (u, t, d) => this.dash(u, this.diveTarget(u) ?? t, d),
       summon: (owner, power, duration) => this.summon(owner, power, duration),
       raceProgress: 0,
@@ -396,11 +402,8 @@ export class BattleEngine {
    * Read once here, never recomputed; see diveTarget for why.
    */
   private markExposedCarries(): void {
-    const guards = this.units.filter((u) => u.role === 'TANK' || u.role === 'BRUISER');
     for (const unit of this.units) {
-      if (!['AD_CARRY', 'AP_CARRY', 'SUPPORT'].includes(unit.role)) continue;
-      const screened = guards.some((g) => g.team === unit.team && hexDistance(g.cell, unit.cell) <= 1);
-      if (!screened) this.exposedAtStart.add(unit.id);
+      if (isExposedCarry(unit, this.units.filter(u => u.team === unit.team))) this.exposedAtStart.add(unit.id);
     }
   }
 
@@ -719,6 +722,11 @@ export class BattleEngine {
       }
     }
     if (best) {
+      if (unit.role === 'BRUISER' && this.exposedAtStart.has(target.id) && hexDistance(unit.cell, best) > 0) {
+        this.events.push({ t: this.time, type: 'DIVE', source: unit.id, target: target.id,
+          from: { ...unit.cell }, to: { ...best }, duration: 1 / Math.max(.1, stat(unit, 'moveSpeedHexPerSec', this.time)),
+          style: resolveRunStyles(unit.traits, unit.nativeTraits, this.options.styleResolution ?? DEFAULT_STYLE_RESOLUTION).find(s => s.signature)?.style ?? 'senko' });
+      }
       unit.moveFrom = unit.cell;
       unit.cell = best;
       unit.moveProgress = 0;
@@ -876,7 +884,7 @@ export class BattleEngine {
     const postMitigation = Math.max(0, remaining);
     const visibleDamage = Math.min(target.hp, postMitigation);
     target.hp -= postMitigation;
-    this.events.push({ t: this.time, type: 'DAMAGE', source: source.id, target: target.id, damage: Math.max(0, visibleDamage), absorbed: Math.max(0, amount - remaining), isSkill, ...(skillCrit ? { crit: true } : {}) });
+    this.events.push({ t: this.time, type: 'DAMAGE', source: source.id, target: target.id, damage: Math.max(0, visibleDamage), absorbed: Math.max(0, amount - remaining), isSkill, damageType: type, ...(isSkill && type === 'PHYSICAL' ? { physicalRatio: stat(source, 'attackDamage', this.time) / Math.max(1, source.base.attackDamage) } : {}), ...(skillCrit ? { crit: true } : {}) });
 
     // Spec §14.6 — mana from taking damage.
     if (target.role === 'TANK' && this.time >= target.manaLockUntil) {
@@ -1161,6 +1169,11 @@ export class BattleEngine {
       const touched = applyEffect(this.ctx, unit, gate?.when === 'AFTER_SECONDS' ? { ...b.effect, oncePerCombat: true } : b.effect, b.index, {
         power: b.power, sourceKey: b.sourceKey, currentTarget: target, event,
       });
+      if (touched > 0 && b.sourceKey.startsWith('style:') && gate?.when === 'ON_RACE_PHASE') {
+        const key = 'style_signature_' + b.sourceKey.slice(6);
+        if (!this.events.some(e => e.type === 'RACE_VFX' && e.t === this.time && e.unit === unit.id && e.key === key))
+          this.events.push({ t: this.time, type: 'RACE_VFX', unit: unit.id, key });
+      }
       if (touched > 0 && b.sourceKey.startsWith('race-plan:')) {
         const nodeId = b.sourceKey.slice('race-plan:'.length);
         if (!this.events.some(e => e.t === this.time && e.type === 'RACE_PROC' && e.unit === unit.id && e.nodeId === nodeId))
@@ -1305,7 +1318,7 @@ export class BattleEngine {
 
   private recordFrame(): void {
     this.frames.push({
-      ...(this.frames.length === 0 ? { participants: this.participants } : {}),
+      ...(this.frames.length === 0 ? { participants: this.participants, ...(this.options.conditions ? { conditions: this.options.conditions, styles: Object.fromEntries(this.units.map(u => [u.id, resolveRunStyles(u.traits, u.nativeTraits, this.options.styleResolution ?? DEFAULT_STYLE_RESOLUTION)])) } : {}) } : {}),
       t: Math.round(this.time * 1000) / 1000,
       overtime: this.overtimeApplied,
       race: { phase: this.racePhase, progress: this.racePhaseHigh },

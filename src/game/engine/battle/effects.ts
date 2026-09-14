@@ -28,6 +28,7 @@ export type EffectContext = {
   dealDamage: (source: CombatUnit, target: CombatUnit, amount: number, type: EffectDef['damageType'], isSkill: boolean) => number;
   applyStatus: (source: CombatUnit, target: CombatUnit, effect: EffectDef) => void;
   /** Moves a unit toward a hex, respecting occupancy. */
+  visual?: (unit: CombatUnit, key: string) => void;
   dash: (unit: CombatUnit, target: CombatUnit, maxDistance: number) => void;
   summon: (owner: CombatUnit, power: number, duration: number) => void;
 };
@@ -371,6 +372,7 @@ export function applyEffect(
      */
     case 'MANA_FILL': {
       for (const t of recipients) {
+        ctx.visual?.(t, 'vfx_mana_fill');
         t.mana = Math.min(stat(t, 'maxMana', ctx.now), stat(t, 'maxMana', ctx.now) * (effect.value ?? 1));
         t.manaLockUntil = Math.min(t.manaLockUntil, ctx.now);
       }
@@ -379,7 +381,7 @@ export function applyEffect(
     /** Releases the holder's skill again without paying for it. */
     case 'RECAST_SKILL': {
       if (!ctx.recast) return 0;
-      for (const t of recipients) ctx.recast(t);
+      for (const t of recipients) { ctx.recast(t); ctx.visual?.(t, 'vfx_recast'); }
       return recipients.length;
     }
     /**
@@ -394,6 +396,7 @@ export function applyEffect(
       for (const t of recipients) {
         const moved = stat(t, from, ctx.now) * value;
         if (moved <= 0) continue;
+        ctx.visual?.(t, 'vfx_convert_stat');
         addModifier(t, from, -moved, false, seconds, ctx.now, `${t.id}:${onceKey}:from`);
         addModifier(t, to, moved * (effect.scaling?.cap ?? 1), false, seconds, ctx.now, `${t.id}:${onceKey}:to`);
       }

@@ -5,6 +5,8 @@
  * nothing new has to be learned — but presented as a race programme: what the
  * plan does, in exact numbers, and why it was offered to *this* board.
  */
+import { RaceArt, RaceConditionsStrip, G1Crest } from './RaceArt';
+import { cardFrameKey } from '../../game/ui/race-art';
 import { useEffect, useRef, useState } from 'react';
 import type { JSX } from 'react';
 import { useGameStore } from '../../store/gameStore';
@@ -49,6 +51,7 @@ export function RacePlanCard({
   const phases = node.fit.phases.map((p) => RACE_PHASE_LABEL[p]).join(' · ');
   return (
     <div className="race-card" onPointerEnter={() => playSound('race-plan-hover')} onFocus={() => playSound('race-plan-hover')}>
+      {cardFrameKey(node) && <RaceArt name={cardFrameKey(node)!} className="race-card-decoration" />}
       <div className="race-band" style={{ color: band.color }}>
         {Icon ? <Icon size={18} /> : null}
         <span>{band.label}</span>
@@ -115,6 +118,7 @@ export function RacePlanOverlay(): JSX.Element | null {
       <div className="race-panel">
         <div className="race-header">
           <div>
+            <G1Crest theme={theme} />
             <div className="race-kicker">RACE PLAN</div>
             <h2>{isPlan ? '출주 계획' : '전개 수정'}</h2>
             <div className="race-sub">
@@ -133,6 +137,7 @@ export function RacePlanOverlay(): JSX.Element | null {
             </div>
           </div>
         </div>
+        {match.raceConditions && <RaceConditionsStrip conditions={match.raceConditions} />}
         {!isPlan && human.racePlan?.planId && (
           <div style={{ padding: '12px 28px 0', fontSize: 13, color: 'var(--race-green-700)' }}>
             현재 작전 <b>{findRacePlanNode(human.racePlan.planId)?.nameKo}</b> 에서 갈라집니다.

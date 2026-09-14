@@ -1,3 +1,6 @@
+import { RACE_ART, raceArtFrame } from '../ui/race-art';
+import { STYLE_CURVES, resolveRunStyles } from '../engine/race-plan/style-curve';
+import { paceStyleScale } from '../engine/race-plan/conditions';
 /** Presentation-only battle playback. All feedback follows recorded engine events. */
 import Phaser from 'phaser';
 import type { BattleFrame, BattleEvent } from '../engine/battle/engine';
@@ -40,6 +43,7 @@ type Actor = {
   hitRecoil: number;
   hitDirection: number;
   hitTint: number;
+  styleAura?: Phaser.GameObjects.Image;
   raceGauge?: Phaser.GameObjects.Graphics;
   raceGaugeKey?: string;
 };
@@ -62,6 +66,7 @@ export class BattleScene extends Phaser.Scene {
   private lastShakeAt = -Infinity;
   private reducedMotion = typeof matchMedia === 'function' && matchMedia('(prefers-reduced-motion: reduce)').matches;
   private pulseAt = new Map<string, number>();
+  private dives = new Set<string>();
   private effects: Array<{ start: number; duration: number; object: Phaser.GameObjects.GameObject; update: (progress: number) => void }> = [];
   private projectiles: Array<{ image: Phaser.GameObjects.Arc; source: string; target: string; start: number; end: number; x: number; y: number }> = [];
 
@@ -90,6 +95,22 @@ export class BattleScene extends Phaser.Scene {
       else if (standeeUrl(id)) this.load.image(`standee:${id}`, standeeUrl(id)!);
       else if (portrait) this.load.image(`portrait:${id}`, portrait);
     }
+    const raceKeys = new Set<string>();
+    for (const frame of this.frames) for (const event of frame.events) {
+      if (event.type === 'RACE_VFX') raceKeys.add(event.key);
+      if (event.type === 'DIVE') {
+        raceKeys.add('dive_trail_' + event.style); raceKeys.add('dive_impact'); raceKeys.add('dive_execute');
+      }
+      if (event.type === 'DAMAGE' && event.isSkill && event.damageType === 'PHYSICAL')
+        raceKeys.add('hit_physical_t' + ((event.physicalRatio ?? 1) >= 2 ? 3 : (event.physicalRatio ?? 1) >= 1.5 ? 2 : 1));
+    }
+    // Streaming records may not yet include a later proc. These compact sheets
+    // are bounded; large weather/banner sheets are kept out of the WebGL atlas.
+    for (const key of Object.keys(RACE_ART)) if (/^(style_|dive_|hit_physical_|vfx_)/.test(key)) raceKeys.add(key);
+    for (const key of raceKeys) {
+      const a = RACE_ART[key], url = a && assetUrl(a.file);
+      if (url) this.load.spritesheet(key, url, { frameWidth: a.w, frameHeight: a.h });
+    }
     const vfx = new Set([...ids].map((id) => getUnitDef(id).skill.vfxKey).concat(['vfx_heal', 'vfx_shield', 'vfx_buff', 'vfx_race_gate', 'vfx_race_late_ring', 'vfx_race_last3f']));
     for (const key of vfx) {
       const url = assetUrl(`vfx/${key}.png`);
@@ -110,6 +131,7 @@ export class BattleScene extends Phaser.Scene {
     this.playbackTime = time;
     this.readySent = false;
     this.pulseAt.clear();
+    this.dives.clear();
     this.lastShakeAt = -Infinity;
     this.mirrored = frames[0]?.units.some((u) => u.id.startsWith(`${this.humanId}#`) && u.team === 'B') ?? false;
     this.effects.forEach((e) => e.object.destroy()); this.effects = [];
@@ -300,6 +322,22 @@ export class BattleScene extends Phaser.Scene {
       const pulse = !this.reducedMotion && resources.some(r => r.kind === 'LEG' && r.stacks >= r.max);
       a.raceGauge.setAlpha(pulse ? .8 + .2 * Math.sin(this.playbackTime * Math.PI / .3) : 1);
     }
+    const phase = this.frames[this.frameIndex]?.race?.phase;
+    if (phase && this.frames[0]?.conditions) {
+      const def = getUnitDef(u.unitDefId);
+      const resolved = this.frames[0].styles?.[u.id] ?? resolveRunStyles(u.traits ?? def.traits, def.traits);
+      const primary = resolved.find(s => s.signature)?.style;
+      if (primary) {
+        const power = resolved.reduce((n, s) => n + (STYLE_CURVES[s.style].steps.find(step => step.phases.includes(phase))?.damage ?? 0) * s.weight * paceStyleScale(this.frames[0].conditions!, s.style), 0);
+        const up = power >= 0;
+        const key = 'style_aura_' + primary + (up ? '_up' : '_down');
+        if (this.textures.exists(key)) {
+          if (!a.styleAura) { a.styleAura = this.add.image(0, 0, key); a.container.addAt(a.styleAura, 1); }
+          a.styleAura.setTexture(key, raceArtFrame(key, this.playbackTime, true, this.reducedMotion))
+            .setDisplaySize(105, 52).setAlpha(up ? .65 : .6).setVisible(u.alive);
+        }
+      }
+    }
     const active = u.alive ? [...new Set(u.statuses)].sort() : [];
     const statusKey = active.join(',');
     if (a.statusKey !== statusKey) {
@@ -335,7 +373,12 @@ export class BattleScene extends Phaser.Scene {
   }
 
   private presentEvent(event: BattleEvent): void {
-    if (event.type === 'RACE_PHASE') {
+    if (event.type === 'RACE_VFX') {
+      this.generatedEffect(event.unit, event.key, event.t);
+    } else if (event.type === 'DIVE') {
+      this.dives.add(event.source + '>' + event.target);
+      this.presentDive(event);
+    } else if (event.type === 'RACE_PHASE') {
       const key = event.phase === 'LATE' ? 'vfx_race_late_ring' : event.phase === 'LAST_3F' ? 'vfx_race_last3f' : null;
       if (key) for (const unit of this.frames[this.eventIndex].units) {
         if (unit.alive && unit.race) this.raceEffect(unit.id, key, event.t);
@@ -371,6 +414,10 @@ export class BattleScene extends Phaser.Scene {
       if (!actor) return;
       if (this.playbackTime - event.t >= .6) return;
       if (event.damage > 0 || event.absorbed > 0) this.presentImpact(event, actor);
+      if (event.isSkill && event.damageType === 'PHYSICAL' && event.damage > 0) {
+        const ratio = event.physicalRatio ?? 1;
+        this.generatedEffect(event.target, 'hit_physical_t' + (ratio >= 2 ? 3 : ratio >= 1.5 ? 2 : 1), event.t);
+      }
       if (this.showNumbers && (event.damage > 0 || event.absorbed > 0)) {
         const critical = event.crit || this.frames[this.eventIndex].events.some((e) => e.type === 'ATTACK' && e.source === event.source && e.target === event.target && e.crit);
         const label = this.add.text(actor.container.x, actor.container.y - 78, event.damage > 0 ? `${critical ? '✦ ' : ''}${Math.round(event.damage)}` : '방어', { fontFamily: 'Noto Sans KR Variable, sans-serif', fontSize: critical ? '26px' : '20px', color: critical ? '#ffdc80' : event.isSkill ? '#dac7ff' : '#ffffff', stroke: '#182238', strokeThickness: 4 }).setOrigin(.5).setDepth(900);
@@ -396,7 +443,10 @@ export class BattleScene extends Phaser.Scene {
       for (const u of this.frames[this.eventIndex].units) {
         if (u.alive && u.team === event.winner) this.setAction(u.id, 'victory', event.t);
       }
-    } else if (event.type === 'DEATH') this.setAction(event.unit, 'ko', event.t);
+    } else if (event.type === 'DEATH') {
+      this.setAction(event.unit, 'ko', event.t);
+      if (event.killer && this.dives.has(event.killer + '>' + event.unit)) this.generatedEffect(event.unit, 'dive_execute', event.t);
+    }
     else if (event.type === 'REVIVE') this.setAction(event.unit, 'idle', event.t);
     else if (event.type === 'OVERTIME') {
       const text = this.add.text(660, 90, 'OVERTIME', { fontFamily: 'Noto Sans KR Variable, sans-serif', fontSize: '32px', color: '#ffe6ae', stroke: '#96372a', strokeThickness: 5 }).setOrigin(.5).setDepth(950);
@@ -404,6 +454,48 @@ export class BattleScene extends Phaser.Scene {
     }
   }
 
+
+
+  private generatedEffect(id: string, key: string, start: number): void {
+    const meta = RACE_ART[key];
+    if (!meta || !this.textures.exists(key)) { this.raceEffect(id, 'vfx_buff', start); return; }
+    const duration = this.reducedMotion ? .12 : meta.frames / meta.fps;
+    if (this.playbackTime >= start + duration || this.effects.length >= 140) return;
+    const sprite = this.add.image(0, 0, key).setDepth(825);
+    const size = key === 'dive_execute' ? 150 : key.startsWith('style_signature') ? 135 : 115;
+    this.track(sprite, start, duration, p => {
+      const actor = this.actors.get(id);
+      if (!actor) { sprite.setVisible(false); return; }
+      sprite.setPosition(actor.container.x, actor.container.y - 30 * actor.container.scaleX)
+        .setFrame(raceArtFrame(key, p * duration, false, this.reducedMotion))
+        .setDisplaySize(size * actor.container.scaleX, size * actor.container.scaleX)
+        .setAlpha(this.reducedMotion ? (1 - p) * .6 : Math.min(1, p * 8, (1 - p) * 6) * .85);
+    });
+  }
+
+  private presentDive(event: Extract<BattleEvent, { type: 'DIVE' }>): void {
+    const unit = this.frames[this.eventIndex].units.find(u => u.id === event.source);
+    const key = 'dive_trail_' + event.style;
+    if (!unit || !this.textures.exists(key)) return;
+    const point = (cell: { q: number; r: number }) => this.position(orientSnapshot({ ...unit, ...cell, fromQ: null, fromR: null, progress: 0 }, this.mirrored));
+    const from = point(event.from), to = point(event.to);
+    const length = Math.hypot(to.x - from.x, to.y - from.y);
+    const duration = RACE_ART[key].frames / RACE_ART[key].fps;
+    if (!this.reducedMotion && this.effects.length < 140 && this.playbackTime < event.t + duration) {
+      const trail = this.add.image(from.x, from.y, key).setOrigin(0, .5).setDepth(810)
+        .setRotation(Math.atan2(to.y - from.y, to.x - from.x)).setDisplaySize(Math.max(40, length), 52);
+      this.track(trail, event.t, duration, p => trail.setFrame(raceArtFrame(key, p * duration)).setAlpha((1 - p) * .8));
+    }
+    const landingAt = event.t + event.duration;
+    if (this.playbackTime < landingAt + .5 && this.effects.length < 140 && this.textures.exists('dive_impact')) {
+      const landing = this.add.image(to.x, to.y, 'dive_impact').setOrigin(.5, .75).setDisplaySize(120, 120).setDepth(810).setVisible(false);
+      this.track(landing, event.t, event.duration + .5, () => {
+        const elapsed = this.playbackTime - landingAt;
+        landing.setVisible(elapsed >= 0).setFrame(raceArtFrame('dive_impact', elapsed, false, this.reducedMotion))
+          .setAlpha(this.reducedMotion ? .4 : Math.max(0, 1 - elapsed * 2));
+      });
+    }
+  }
 
   private raceEffect(id: string, key: string, start: number, color?: string): void {
     const duration = this.reducedMotion ? .1 : key === 'vfx_race_last3f' ? 10 / 18 : key === 'vfx_buff' ? .4 : .5;
