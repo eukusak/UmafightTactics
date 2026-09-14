@@ -1,4 +1,5 @@
 import { RACE_ART, raceArtFrame } from '../ui/race-art';
+import { DIVE_TRAIL_THICKNESS, EFFECT_SIZE, RACE_SHEET_SOURCE, STATUS_ICON, STYLE_AURA, effectSize } from '../ui/vfx-scale';
 import { STYLE_CURVES, resolveRunStyles } from '../engine/race-plan/style-curve';
 import { paceStyleScale } from '../engine/race-plan/conditions';
 /** Presentation-only battle playback. All feedback follows recorded engine events. */
@@ -334,7 +335,7 @@ export class BattleScene extends Phaser.Scene {
         if (this.textures.exists(key)) {
           if (!a.styleAura) { a.styleAura = this.add.image(0, 0, key); a.container.addAt(a.styleAura, 1); }
           a.styleAura.setTexture(key, raceArtFrame(key, this.playbackTime, true, this.reducedMotion))
-            .setDisplaySize(105, 52).setAlpha(up ? .65 : .6).setVisible(u.alive);
+            .setDisplaySize(STYLE_AURA.width, STYLE_AURA.height).setAlpha(up ? .65 : .6).setVisible(u.alive);
         }
       }
     }
@@ -350,7 +351,7 @@ export class BattleScene extends Phaser.Scene {
         const y = -Math.floor(i / 4) * 25;
         a.statuses.add(this.add.rectangle(x, y, 23, 23, 0x102336, .95).setStrokeStyle(1, 0xd9c898));
         if (status.icon && this.textures.exists(`status:${status.icon}`)) {
-          a.statuses.add(this.add.image(x, y, `status:${status.icon}`).setDisplaySize(21, 21));
+          a.statuses.add(this.add.image(x, y, `status:${status.icon}`).setDisplaySize(STATUS_ICON, STATUS_ICON));
         } else {
           a.statuses.add(this.add.text(x, y, status.label, { fontFamily: 'Noto Sans KR Variable, sans-serif', fontSize: '10px', color: '#fff5da' }).setOrigin(.5));
         }
@@ -462,7 +463,7 @@ export class BattleScene extends Phaser.Scene {
     const duration = this.reducedMotion ? .12 : meta.frames / meta.fps;
     if (this.playbackTime >= start + duration || this.effects.length >= 140) return;
     const sprite = this.add.image(0, 0, key).setDepth(825);
-    const size = key === 'dive_execute' ? 150 : key.startsWith('style_signature') ? 135 : 115;
+    const size = effectSize(key);
     this.track(sprite, start, duration, p => {
       const actor = this.actors.get(id);
       if (!actor) { sprite.setVisible(false); return; }
@@ -483,12 +484,13 @@ export class BattleScene extends Phaser.Scene {
     const duration = RACE_ART[key].frames / RACE_ART[key].fps;
     if (!this.reducedMotion && this.effects.length < 140 && this.playbackTime < event.t + duration) {
       const trail = this.add.image(from.x, from.y, key).setOrigin(0, .5).setDepth(810)
-        .setRotation(Math.atan2(to.y - from.y, to.x - from.x)).setDisplaySize(Math.max(40, length), 52);
+        .setRotation(Math.atan2(to.y - from.y, to.x - from.x)).setDisplaySize(Math.max(40, length), DIVE_TRAIL_THICKNESS);
       this.track(trail, event.t, duration, p => trail.setFrame(raceArtFrame(key, p * duration)).setAlpha((1 - p) * .8));
     }
     const landingAt = event.t + event.duration;
     if (this.playbackTime < landingAt + .5 && this.effects.length < 140 && this.textures.exists('dive_impact')) {
-      const landing = this.add.image(to.x, to.y, 'dive_impact').setOrigin(.5, .75).setDisplaySize(120, 120).setDepth(810).setVisible(false);
+      const landing = this.add.image(to.x, to.y, 'dive_impact').setOrigin(.5, .75)
+        .setDisplaySize(EFFECT_SIZE.diveImpact, EFFECT_SIZE.diveImpact).setDepth(810).setVisible(false);
       this.track(landing, event.t, event.duration + .5, () => {
         const elapsed = this.playbackTime - landingAt;
         landing.setVisible(elapsed >= 0).setFrame(raceArtFrame('dive_impact', elapsed, false, this.reducedMotion))
@@ -503,13 +505,13 @@ export class BattleScene extends Phaser.Scene {
     // Actors are created before events; gate uses a deferred lookup on the first render.
     const fullBody = key === 'vfx_race_last3f';
     if (this.textures.exists(key)) {
-      const sprite = this.add.image(0,0,key,0).setDisplaySize(120,120).setDepth(820);
+      const sprite = this.add.image(0,0,key,0).setDisplaySize(EFFECT_SIZE.race, EFFECT_SIZE.race).setDepth(820);
       if (color) sprite.setTint(tint(color));
       this.track(sprite,start,duration,p => {
         const actor = this.actors.get(id);
         if (!actor) { sprite.setVisible(false); return; }
         sprite.setVisible(true).setPosition(actor.container.x,actor.container.y-(fullBody ? 40 : 10)*actor.container.scaleX)
-          .setScale(120 / 192 * actor.container.scaleX)
+          .setScale(EFFECT_SIZE.race / RACE_SHEET_SOURCE * actor.container.scaleX)
           .setFrame(this.reducedMotion ? 4 : Math.min(9,Math.floor(p*10))).setAlpha((key === 'vfx_race_late_ring' ? .7 : .9)*(this.reducedMotion ? 1-p : 1));
       });
     } else {
