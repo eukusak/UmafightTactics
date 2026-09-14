@@ -1,3 +1,7 @@
+import { RACE_ART, raceArtFrame } from '../ui/race-art';
+import { DIVE_TRAIL_THICKNESS, EFFECT_SIZE, RACE_SHEET_SOURCE, STATUS_ICON, STYLE_AURA, effectSize } from '../ui/vfx-scale';
+import { STYLE_CURVES, resolveRunStyles } from '../engine/race-plan/style-curve';
+import { paceStyleScale } from '../engine/race-plan/conditions';
 /** Presentation-only battle playback. All feedback follows recorded engine events. */
 import Phaser from 'phaser';
 import type { BattleFrame, BattleEvent } from '../engine/battle/engine';
@@ -14,6 +18,7 @@ import { drawLegendaryFeedback, legendaryFeedback, LEGENDARY_FEEDBACK_SECONDS } 
 import { COST_SKILL_PRESENTATION } from '../ui/cost-skill-presentation';
 
 import { impactPresentation } from '../ui/impact-presentation';
+import { findRacePlanNode } from '../engine/race-plan/defs';
 
 type Snapshot = BattleFrame['units'][number];
 type Actor = {
@@ -39,6 +44,9 @@ type Actor = {
   hitRecoil: number;
   hitDirection: number;
   hitTint: number;
+  styleAura?: Phaser.GameObjects.Image;
+  raceGauge?: Phaser.GameObjects.Graphics;
+  raceGaugeKey?: string;
 };
 const tint = (value: string): number => parseInt(value.replace('#', ''), 16);
 
@@ -59,6 +67,7 @@ export class BattleScene extends Phaser.Scene {
   private lastShakeAt = -Infinity;
   private reducedMotion = typeof matchMedia === 'function' && matchMedia('(prefers-reduced-motion: reduce)').matches;
   private pulseAt = new Map<string, number>();
+  private dives = new Set<string>();
   private effects: Array<{ start: number; duration: number; object: Phaser.GameObjects.GameObject; update: (progress: number) => void }> = [];
   private projectiles: Array<{ image: Phaser.GameObjects.Arc; source: string; target: string; start: number; end: number; x: number; y: number }> = [];
 
@@ -87,7 +96,23 @@ export class BattleScene extends Phaser.Scene {
       else if (standeeUrl(id)) this.load.image(`standee:${id}`, standeeUrl(id)!);
       else if (portrait) this.load.image(`portrait:${id}`, portrait);
     }
-    const vfx = new Set([...ids].map((id) => getUnitDef(id).skill.vfxKey).concat(['vfx_heal', 'vfx_shield', 'vfx_buff']));
+    const raceKeys = new Set<string>();
+    for (const frame of this.frames) for (const event of frame.events) {
+      if (event.type === 'RACE_VFX') raceKeys.add(event.key);
+      if (event.type === 'DIVE') {
+        raceKeys.add('dive_trail_' + event.style); raceKeys.add('dive_impact'); raceKeys.add('dive_execute');
+      }
+      if (event.type === 'DAMAGE' && event.isSkill && event.damageType === 'PHYSICAL')
+        raceKeys.add('hit_physical_t' + ((event.physicalRatio ?? 1) >= 2 ? 3 : (event.physicalRatio ?? 1) >= 1.5 ? 2 : 1));
+    }
+    // Streaming records may not yet include a later proc. These compact sheets
+    // are bounded; large weather/banner sheets are kept out of the WebGL atlas.
+    for (const key of Object.keys(RACE_ART)) if (/^(style_|dive_|hit_physical_|vfx_)/.test(key)) raceKeys.add(key);
+    for (const key of raceKeys) {
+      const a = RACE_ART[key], url = a && assetUrl(a.file);
+      if (url) this.load.spritesheet(key, url, { frameWidth: a.w, frameHeight: a.h });
+    }
+    const vfx = new Set([...ids].map((id) => getUnitDef(id).skill.vfxKey).concat(['vfx_heal', 'vfx_shield', 'vfx_buff', 'vfx_race_gate', 'vfx_race_late_ring', 'vfx_race_last3f']));
     for (const key of vfx) {
       const url = assetUrl(`vfx/${key}.png`);
       if (url) this.load.spritesheet(key, url, { frameWidth: 192, frameHeight: 192 });
@@ -107,6 +132,7 @@ export class BattleScene extends Phaser.Scene {
     this.playbackTime = time;
     this.readySent = false;
     this.pulseAt.clear();
+    this.dives.clear();
     this.lastShakeAt = -Infinity;
     this.mirrored = frames[0]?.units.some((u) => u.id.startsWith(`${this.humanId}#`) && u.team === 'B') ?? false;
     this.effects.forEach((e) => e.object.destroy()); this.effects = [];
@@ -220,7 +246,16 @@ export class BattleScene extends Phaser.Scene {
     container.add([hpTrail, hp, mana, shield]);
     const statuses = this.add.container(0, fullBody && !sheet ? -155 : -108);
     container.add(statuses);
-    return { hitAt: -Infinity, hitRecoil: 0, hitDirection: 1, hitTint: 0xffffff, container, body, hp, hpTrail, mana, shield, statuses, statusKey: '', action: 'idle', actionAt: 0, sheet, fullBody, frameSheet: sheet && !!FRAME_SHEETS[u.unitDefId], facing: u.team === 'B' ? -1 : 1, attackDuration: .4, attackReleaseAt: 0, bodyScaleX: body.scaleX, bodyScaleY: body.scaleY };
+    let raceGauge: Phaser.GameObjects.Graphics | undefined;
+    if (u.race) {
+      if (u.race.resources.length) { raceGauge = this.add.graphics(); container.add(raceGauge); }
+      const participant = this.frames[0]?.participants?.[u.team] ?? '';
+      const seat = participant.match(/(\d+)$/)?.[1] ?? 'GⅠ';
+      const badge = this.add.text(-49, 11, seat, { fontFamily: 'Noto Sans KR Variable, sans-serif', fontSize:'12px', color:'#202521', backgroundColor:'#f3f0e5', padding:{x:5,y:4} }).setOrigin(.5);
+      container.add(badge);
+      this.raceEffect(u.id, 'vfx_race_gate', 0);
+    }
+    return { raceGauge, raceGaugeKey: '', hitAt: -Infinity, hitRecoil: 0, hitDirection: 1, hitTint: 0xffffff, container, body, hp, hpTrail, mana, shield, statuses, statusKey: '', action: 'idle', actionAt: 0, sheet, fullBody, frameSheet: sheet && !!FRAME_SHEETS[u.unitDefId], facing: u.team === 'B' ? -1 : 1, attackDuration: .4, attackReleaseAt: 0, bodyScaleX: body.scaleX, bodyScaleY: body.scaleY };
   }
 
   private renderActor(u: Snapshot, next: Snapshot | undefined, mix: number): void {
@@ -269,6 +304,41 @@ export class BattleScene extends Phaser.Scene {
     a.hpTrail.width = Math.max(a.hp.width, Phaser.Math.Linear(a.hpTrail.width, a.hp.width, 1 - Math.exp(-this.frameDelta * 5)));
     a.mana.width = Phaser.Math.Linear(a.mana.width, 66 * Phaser.Math.Clamp(u.mana / Math.max(1, u.maxMana), 0, 1), settle);
     a.shield.width = Math.min(66, 66 * u.shield / Math.max(1, u.maxHp));
+    if (a.raceGauge && u.race) {
+      const resources = u.race.resources;
+      const key = JSON.stringify(resources);
+      if (a.raceGaugeKey !== key) {
+        a.raceGaugeKey = key;
+        a.raceGauge.clear();
+        resources.forEach((resource, row) => {
+          const step = 44 / resource.max;
+          for (let i = 0; i < resource.max; i++) {
+            const full = resource.stacks >= resource.max;
+            const color = i >= resource.stacks ? 0x202521 : resource.kind === 'LEG' ? (full ? 0xe8c86a : 0xa98b4b) : (full ? 0x6fc49a : 0x3f785d);
+            a.raceGauge!.fillStyle(color, i >= resource.stacks ? .55 : 1);
+            a.raceGauge!.fillRect(-22 + i * step, 34 + row * 5, step - .6, 3);
+          }
+        });
+      }
+      const pulse = !this.reducedMotion && resources.some(r => r.kind === 'LEG' && r.stacks >= r.max);
+      a.raceGauge.setAlpha(pulse ? .8 + .2 * Math.sin(this.playbackTime * Math.PI / .3) : 1);
+    }
+    const phase = this.frames[this.frameIndex]?.race?.phase;
+    if (phase && this.frames[0]?.conditions) {
+      const def = getUnitDef(u.unitDefId);
+      const resolved = this.frames[0].styles?.[u.id] ?? resolveRunStyles(u.traits ?? def.traits, def.traits);
+      const primary = resolved.find(s => s.signature)?.style;
+      if (primary) {
+        const power = resolved.reduce((n, s) => n + (STYLE_CURVES[s.style].steps.find(step => step.phases.includes(phase))?.damage ?? 0) * s.weight * paceStyleScale(this.frames[0].conditions!, s.style), 0);
+        const up = power >= 0;
+        const key = 'style_aura_' + primary + (up ? '_up' : '_down');
+        if (this.textures.exists(key)) {
+          if (!a.styleAura) { a.styleAura = this.add.image(0, 0, key); a.container.addAt(a.styleAura, 1); }
+          a.styleAura.setTexture(key, raceArtFrame(key, this.playbackTime, true, this.reducedMotion))
+            .setDisplaySize(STYLE_AURA.width, STYLE_AURA.height).setAlpha(up ? .65 : .6).setVisible(u.alive);
+        }
+      }
+    }
     const active = u.alive ? [...new Set(u.statuses)].sort() : [];
     const statusKey = active.join(',');
     if (a.statusKey !== statusKey) {
@@ -281,7 +351,7 @@ export class BattleScene extends Phaser.Scene {
         const y = -Math.floor(i / 4) * 25;
         a.statuses.add(this.add.rectangle(x, y, 23, 23, 0x102336, .95).setStrokeStyle(1, 0xd9c898));
         if (status.icon && this.textures.exists(`status:${status.icon}`)) {
-          a.statuses.add(this.add.image(x, y, `status:${status.icon}`).setDisplaySize(21, 21));
+          a.statuses.add(this.add.image(x, y, `status:${status.icon}`).setDisplaySize(STATUS_ICON, STATUS_ICON));
         } else {
           a.statuses.add(this.add.text(x, y, status.label, { fontFamily: 'Noto Sans KR Variable, sans-serif', fontSize: '10px', color: '#fff5da' }).setOrigin(.5));
         }
@@ -304,7 +374,27 @@ export class BattleScene extends Phaser.Scene {
   }
 
   private presentEvent(event: BattleEvent): void {
-    if (event.type === 'ATTACK_START') {
+    if (event.type === 'RACE_VFX') {
+      this.generatedEffect(event.unit, event.key, event.t);
+    } else if (event.type === 'DIVE') {
+      this.dives.add(event.source + '>' + event.target);
+      this.presentDive(event);
+    } else if (event.type === 'RACE_PHASE') {
+      const key = event.phase === 'LATE' ? 'vfx_race_late_ring' : event.phase === 'LAST_3F' ? 'vfx_race_last3f' : null;
+      if (key) for (const unit of this.frames[this.eventIndex].units) {
+        if (unit.alive && unit.race) this.raceEffect(unit.id, key, event.t);
+      }
+    } else if (event.type === 'RACE_PROC') {
+      const node = findRacePlanNode(event.nodeId);
+      this.raceEffect(event.unit, 'vfx_buff', event.t, node?.vfx?.color);
+      if (node?.kind === 'FINISHING') {
+        const actor = this.actors.get(event.unit);
+        if (actor && this.playbackTime < event.t + .28) {
+          const badge = this.add.text(actor.container.x, actor.container.y - 70, 'GⅠ', { fontSize:'12px',color:'#e8c86a',backgroundColor:'#10271f',padding:{x:4,y:4} }).setOrigin(.5).setDepth(905);
+          this.track(badge,event.t,this.reducedMotion ? .1 : .28,p => badge.setPosition(actor.container.x, actor.container.y - 70).setScale(this.reducedMotion ? 1 : 1.25-.25*p).setAlpha(1-p));
+        }
+      }
+    } else if (event.type === 'ATTACK_START') {
       const actor = this.setAction(event.source, 'basic_attack', event.t);
       const target = this.actors.get(event.target);
       if (actor) {
@@ -325,6 +415,10 @@ export class BattleScene extends Phaser.Scene {
       if (!actor) return;
       if (this.playbackTime - event.t >= .6) return;
       if (event.damage > 0 || event.absorbed > 0) this.presentImpact(event, actor);
+      if (event.isSkill && event.damageType === 'PHYSICAL' && event.damage > 0) {
+        const ratio = event.physicalRatio ?? 1;
+        this.generatedEffect(event.target, 'hit_physical_t' + (ratio >= 2 ? 3 : ratio >= 1.5 ? 2 : 1), event.t);
+      }
       if (this.showNumbers && (event.damage > 0 || event.absorbed > 0)) {
         const critical = event.crit || this.frames[this.eventIndex].events.some((e) => e.type === 'ATTACK' && e.source === event.source && e.target === event.target && e.crit);
         const label = this.add.text(actor.container.x, actor.container.y - 78, event.damage > 0 ? `${critical ? '✦ ' : ''}${Math.round(event.damage)}` : '방어', { fontFamily: 'Noto Sans KR Variable, sans-serif', fontSize: critical ? '26px' : '20px', color: critical ? '#ffdc80' : event.isSkill ? '#dac7ff' : '#ffffff', stroke: '#182238', strokeThickness: 4 }).setOrigin(.5).setDepth(900);
@@ -350,11 +444,83 @@ export class BattleScene extends Phaser.Scene {
       for (const u of this.frames[this.eventIndex].units) {
         if (u.alive && u.team === event.winner) this.setAction(u.id, 'victory', event.t);
       }
-    } else if (event.type === 'DEATH') this.setAction(event.unit, 'ko', event.t);
+    } else if (event.type === 'DEATH') {
+      this.setAction(event.unit, 'ko', event.t);
+      if (event.killer && this.dives.has(event.killer + '>' + event.unit)) this.generatedEffect(event.unit, 'dive_execute', event.t);
+    }
     else if (event.type === 'REVIVE') this.setAction(event.unit, 'idle', event.t);
     else if (event.type === 'OVERTIME') {
       const text = this.add.text(660, 90, 'OVERTIME', { fontFamily: 'Noto Sans KR Variable, sans-serif', fontSize: '32px', color: '#ffe6ae', stroke: '#96372a', strokeThickness: 5 }).setOrigin(.5).setDepth(950);
       this.track(text, event.t, 1.7, (t) => text.setAlpha(Math.min(1, (1 - t) * 3)));
+    }
+  }
+
+
+
+  private generatedEffect(id: string, key: string, start: number): void {
+    const meta = RACE_ART[key];
+    if (!meta || !this.textures.exists(key)) { this.raceEffect(id, 'vfx_buff', start); return; }
+    const duration = this.reducedMotion ? .12 : meta.frames / meta.fps;
+    if (this.playbackTime >= start + duration || this.effects.length >= 140) return;
+    const sprite = this.add.image(0, 0, key).setDepth(825);
+    const size = effectSize(key);
+    this.track(sprite, start, duration, p => {
+      const actor = this.actors.get(id);
+      if (!actor) { sprite.setVisible(false); return; }
+      sprite.setPosition(actor.container.x, actor.container.y - 30 * actor.container.scaleX)
+        .setFrame(raceArtFrame(key, p * duration, false, this.reducedMotion))
+        .setDisplaySize(size * actor.container.scaleX, size * actor.container.scaleX)
+        .setAlpha(this.reducedMotion ? (1 - p) * .6 : Math.min(1, p * 8, (1 - p) * 6) * .85);
+    });
+  }
+
+  private presentDive(event: Extract<BattleEvent, { type: 'DIVE' }>): void {
+    const unit = this.frames[this.eventIndex].units.find(u => u.id === event.source);
+    const key = 'dive_trail_' + event.style;
+    if (!unit || !this.textures.exists(key)) return;
+    const point = (cell: { q: number; r: number }) => this.position(orientSnapshot({ ...unit, ...cell, fromQ: null, fromR: null, progress: 0 }, this.mirrored));
+    const from = point(event.from), to = point(event.to);
+    const length = Math.hypot(to.x - from.x, to.y - from.y);
+    const duration = RACE_ART[key].frames / RACE_ART[key].fps;
+    if (!this.reducedMotion && this.effects.length < 140 && this.playbackTime < event.t + duration) {
+      const trail = this.add.image(from.x, from.y, key).setOrigin(0, .5).setDepth(810)
+        .setRotation(Math.atan2(to.y - from.y, to.x - from.x)).setDisplaySize(Math.max(40, length), DIVE_TRAIL_THICKNESS);
+      this.track(trail, event.t, duration, p => trail.setFrame(raceArtFrame(key, p * duration)).setAlpha((1 - p) * .8));
+    }
+    const landingAt = event.t + event.duration;
+    if (this.playbackTime < landingAt + .5 && this.effects.length < 140 && this.textures.exists('dive_impact')) {
+      const landing = this.add.image(to.x, to.y, 'dive_impact').setOrigin(.5, .75)
+        .setDisplaySize(EFFECT_SIZE.diveImpact, EFFECT_SIZE.diveImpact).setDepth(810).setVisible(false);
+      this.track(landing, event.t, event.duration + .5, () => {
+        const elapsed = this.playbackTime - landingAt;
+        landing.setVisible(elapsed >= 0).setFrame(raceArtFrame('dive_impact', elapsed, false, this.reducedMotion))
+          .setAlpha(this.reducedMotion ? .4 : Math.max(0, 1 - elapsed * 2));
+      });
+    }
+  }
+
+  private raceEffect(id: string, key: string, start: number, color?: string): void {
+    const duration = this.reducedMotion ? .1 : key === 'vfx_race_last3f' ? 10 / 18 : key === 'vfx_buff' ? .4 : .5;
+    if (this.playbackTime >= start + duration || this.effects.length > 180) return;
+    // Actors are created before events; gate uses a deferred lookup on the first render.
+    const fullBody = key === 'vfx_race_last3f';
+    if (this.textures.exists(key)) {
+      const sprite = this.add.image(0,0,key,0).setDisplaySize(EFFECT_SIZE.race, EFFECT_SIZE.race).setDepth(820);
+      if (color) sprite.setTint(tint(color));
+      this.track(sprite,start,duration,p => {
+        const actor = this.actors.get(id);
+        if (!actor) { sprite.setVisible(false); return; }
+        sprite.setVisible(true).setPosition(actor.container.x,actor.container.y-(fullBody ? 40 : 10)*actor.container.scaleX)
+          .setScale(EFFECT_SIZE.race / RACE_SHEET_SOURCE * actor.container.scaleX)
+          .setFrame(this.reducedMotion ? 4 : Math.min(9,Math.floor(p*10))).setAlpha((key === 'vfx_race_late_ring' ? .7 : .9)*(this.reducedMotion ? 1-p : 1));
+      });
+    } else {
+      const graphic = this.add.graphics().setDepth(820);
+      this.track(graphic,start,duration,p => {
+        const actor = this.actors.get(id); if (!actor) return;
+        graphic.clear().lineStyle(2,color ? tint(color) : key === 'vfx_race_late_ring' ? 0xa53c31 : 0xe8c86a,(1-p)*.7);
+        graphic.strokeEllipse(actor.container.x,actor.container.y,60+(this.reducedMotion ? 0 : p*24),22);
+      });
     }
   }
 

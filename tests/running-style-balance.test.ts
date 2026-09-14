@@ -33,16 +33,25 @@ describe('running styles and active trait effects', () => {
     expect(Object.keys(evidence.units)).toHaveLength(145);
     for (const [id, c] of Object.entries(corrections.units)) {
       const e = evidence.units[id as keyof typeof evidence.units];
+      const correction = c as { from: string; to: string; reason: string; source?: string };
+      // Every correction, however it was reached, has to land on the built unit.
+      expect(e.previous).toBe(correction.from);
+      expect(getUnitDef(id).traits).toContain(correction.to as TraitId);
+      expect(getUnitDef(id).traits).not.toContain(correction.from as TraitId);
+      if (correction.source === 'user') {
+        // Hand-entered styles outrank the passage sample, which can be absent
+        // (카츠라기 에이스) or split across two styles (페노메노). Only the written
+        // justification is enforced.
+        expect(correction.reason).toContain('사용자 지정');
+        continue;
+      }
       expect(e.validStarts).toBeGreaterThanOrEqual(8);
       if (id === 'gran_alegria') {
         expect(e.counts).toEqual({ nige: 0, senko: 8, sashi: 4, oikomi: 3 });
         expect(e.confidence).toBeGreaterThanOrEqual(0.5);
-        expect(c.reason).toContain('사용자 교정');
+        expect(correction.reason).toContain('사용자 교정');
       } else expect(e.confidence).toBeGreaterThanOrEqual(0.6);
-      expect(e.dominant).toBe(c.to);
-      expect(e.previous).toBe(c.from);
-      expect(getUnitDef(id).traits).toContain(c.to as TraitId);
-      expect(getUnitDef(id).traits).not.toContain(c.from as TraitId);
+      expect(e.dominant).toBe(correction.to);
     }
   });
   it('fires the real takedown event into a lasting, non-stacking crit buff', () => {

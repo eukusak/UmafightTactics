@@ -9,55 +9,59 @@
       "index": 1,
       "name": "스페셜 위크",
       "pattern": "breach_line",
-      "skillSignature": "39cdc44510f08756f4f041d1de916160fdb8988fa5b2721ba9813e3d26aa176b",
+      "skillSignature": "4511cda9ad1ec111a0042fc792d6f9cfb64ce5394b37a7b6c581540e69021d3f",
       "referenceRasterSha256": "8c9211fc584ea07013bf11b91ce389b0b97576ef950dd9eaa2584e55ca3f6470",
       "decision": "retain",
       "status": "retained",
       "reason": "웅크린 준비 → 전진 달리기 → 낮은 직선 돌파 → 회수가 연결되어 직선 돌진과 일치. 방어 감소는 피격 대상 효과로 표시.",
       "reviewSheetPage": 1,
-      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json",
+      "copyRevision": "2026-09-13 · 스킬 설명 문장을 경마 표현으로 재작성. 수치·동작 변화 없음."
     },
     "silence_suzuka": {
       "index": 2,
       "name": "사일런스 스즈카",
       "pattern": "orbital_beam",
-      "skillSignature": "c191ba1eb46d612709f7184cac45e8011e1d2f4989276c6591bbb9fe5b4521f7",
+      "skillSignature": "a4ddccc89180a4159fc973e899b7e360a8a3e2bcb0417adc1c2850c4b66f37f7",
       "referenceRasterSha256": "b36c0068484d9949aa644a02f7cc36f292c8cb060cbc84e02f09ba823fd955d7",
       "decision": "retain",
       "status": "retained",
       "reason": "이전 개편 원화의 양손 충전 → 전방 광선 → 유지 → 회수로 지속 광선과 일치.",
       "reviewSheetPage": 1,
-      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json",
+      "copyRevision": "2026-09-13 · 스킬 설명 문장을 경마 표현으로 재작성. 수치·동작 변화 없음."
     },
     "tokai_teio": {
       "index": 3,
       "name": "토카이 테이오",
       "pattern": "focus_three",
-      "skillSignature": "4a2b06f1140a510480ef4e0a38f090dbc59511d601b0a930cb93802686db0753",
+      "skillSignature": "a84d4301083e9ec0f805c470dd48431e9c3c9a38ad22b8c8ab8a5736484ff91f",
       "referenceRasterSha256": "67592d5f980deda8468ac6a33087ad6378f7231d34e2618ac8a092301eab0000",
       "decision": "retain",
       "status": "retained",
       "reason": "이전 개편 원화의 석궁 조준과 점증 볼트 발사가 집중 3타와 일치.",
       "reviewSheetPage": 1,
-      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json",
+      "copyRevision": "2026-09-13 · 스킬 설명 문장을 경마 표현으로 재작성. 수치·동작 변화 없음."
     },
     "maruzensky": {
       "index": 4,
       "name": "마루젠스키",
       "pattern": "tempo_banner",
-      "skillSignature": "1903827c02ce7b21a4d028bf5e433b8d2d3dd505fb359a8412b68f101f2430c1",
+      "skillSignature": "ebdadefc9181669fc022427778b710f26ca846478316a88902374b1e17403b91",
       "referenceRasterSha256": "8fc149b1a411a66a5e09b8cf70456c00a8b352e3e1ddd9d62fc98a36dac8888d",
       "decision": "retain",
       "status": "retained",
       "reason": "가슴 가까이 모은 손 → 팔을 들어 신호 → 넓게 펼친 팔 → 회수로 주변 아군을 독려하는 시전과 일치.",
       "reviewSheetPage": 1,
-      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json",
+      "copyRevision": "2026-09-13 · 스킬 설명 문장을 경마 표현으로 재작성. 수치·동작 변화 없음."
     },
     "fuji_kiseki": {
       "index": 5,
       "name": "후지 키세키",
       "pattern": "expanding_nova",
-      "skillSignature": "e1cad23ade63c1ed8dedbaa5c12417d068055cf4fcb5c4b212d11830afb8c074",
+      "skillSignature": "cc3cce8b3a5ebaa963d0141b5afa85ef1bf9dc7cd044bec90f8bbeb2d9e2c6c7",
       "referenceRasterSha256": "072d1436cb17d868442b4d4def0cc97b7642ddd66dddc3eaa31936facd596f58",
       "decision": "revise",
       "status": "integrated",
@@ -65,25 +69,27 @@
       "reviewSheetPage": 1,
       "revision": "docs/art-source/motions/skill-revisions-2026-09-11/fuji_kiseki/review.json",
       "runtimeSha256": "6f688414e686d5374ac76b6e2b27468e04e320faab2803eaf4059a284af69441",
-      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json",
+      "copyRevision": "2026-09-13 · 스킬 설명 문장을 경마 표현으로 재작성. 수치·동작 변화 없음."
     },
     "oguri_cap": {
       "index": 6,
       "name": "오구리 캡",
       "pattern": "comet_fall",
-      "skillSignature": "f6bcaeea8a9156ef5276d6af3e8833400229809b7d2123ad23460ae194885069",
+      "skillSignature": "70cd12616ddf32ce0513c0859296805aeb1a13cd45cfa4027cfe4bd321d15f48",
       "referenceRasterSha256": "7827d810db6f55863290ce0a2703b194fa09ec24fae2fd1c32a17e9fb7b2dbbc",
       "decision": "retain",
       "status": "retained",
       "reason": "이전 개편 원화의 별 충전 → 머리 위 준비 → 하강 혜성 → 회수가 낙하 스킬과 일치.",
       "reviewSheetPage": 1,
-      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json",
+      "copyRevision": "2026-09-13 · 스킬 설명 문장을 경마 표현으로 재작성. 수치·동작 변화 없음."
     },
     "gold_ship": {
       "index": 7,
       "name": "골드 쉽",
       "pattern": "pursuit_flurry",
-      "skillSignature": "28605f6dddcc89ad958fe311ab4290b31995312db143814ab9486f2737eb8052",
+      "skillSignature": "6688ad2ec8ee66a14c66b60c8b57ae86a2a519d97efb02592efc58571e32bc31",
       "referenceRasterSha256": "cd35a411a6a7d0aa29d4e15b0b702f684d7a02c4da367d20717e905dc025d5c0",
       "decision": "revise",
       "status": "integrated",
@@ -91,13 +97,14 @@
       "reviewSheetPage": 1,
       "revision": "docs/art-source/motions/skill-revisions-2026-09-11/gold_ship/review.json",
       "runtimeSha256": "da0a61e83873c2aabbc982d72fe2ff3b81f9585a789e53b32f69562b447b1dc9",
-      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json",
+      "copyRevision": "2026-09-13 · 스킬 설명 문장을 경마 표현으로 재작성. 수치·동작 변화 없음."
     },
     "vodka": {
       "index": 8,
       "name": "보드카",
       "pattern": "split_barrage",
-      "skillSignature": "858d7b1b16b25e58b343f37ed021462ccfb48ba33e05ce4c43e8f18a9f5d3833",
+      "skillSignature": "03ba8d52ed51da351192f2e7c0e136c4a6f4f432750c9cc1010ef71a17dcfdf8",
       "referenceRasterSha256": "1a9f2c46a66c99274ff0db0d6f2dc642af744d97c5b87c568ddca11661209b0c",
       "decision": "revise",
       "status": "integrated",
@@ -105,13 +112,14 @@
       "reviewSheetPage": 1,
       "revision": "docs/art-source/motions/skill-revisions-2026-09-11/vodka/review.json",
       "runtimeSha256": "cf409ed4cbc5ef7e212fa13f21455cb5bb05a5add7c3ce3cf5385940ae1bcc1f",
-      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json",
+      "copyRevision": "2026-09-13 · 스킬 설명 문장을 경마 표현으로 재작성. 수치·동작 변화 없음."
     },
     "daiwa_scarlet": {
       "index": 9,
       "name": "다이와 스칼렛",
       "pattern": "cinder_field",
-      "skillSignature": "e886716346cd00fd465e4d65e08e0d9b0ce3714f5ea74d536b64aeb66e0f87c1",
+      "skillSignature": "4d2e5f30d88d8bc0833a34703d211393eba127a4bdbcdd46e7c01f642392daa4",
       "referenceRasterSha256": "e737a6aa903a8f12e82a399857eab2e7bf64acc94acbb95579d4753247a172ef",
       "decision": "revise",
       "status": "integrated",
@@ -119,111 +127,120 @@
       "reviewSheetPage": 1,
       "revision": "docs/art-source/motions/skill-revisions-2026-09-11/daiwa_scarlet/review.json",
       "runtimeSha256": "2b2c0095304f848ac3b0f23f6db702a109701741bcd475923d89d08d7fc1e790",
-      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json",
+      "copyRevision": "2026-09-13 · 스킬 설명 문장을 경마 표현으로 재작성. 수치·동작 변화 없음."
     },
     "taiki_shuttle": {
       "index": 10,
       "name": "타이키 셔틀",
       "pattern": "chain_spark",
-      "skillSignature": "49a3a2e6fb9bedfe9a5ddbbc5c1bdc5f6735036be5e0a1e292555330ee980b73",
+      "skillSignature": "4d7f3a443e7ea8cbb69becb0bc60a4ac40e3f03a5689529e5b36827e2115f4b8",
       "referenceRasterSha256": "b62d6da4bddc8e74462f06a04a7c2578bf8e5df27913fa1fa61c3423368c2fc1",
       "decision": "retain",
       "status": "retained",
       "reason": "집중 뒤 손을 전방으로 내미는 첫 방출이 연쇄 섬광의 출발점과 맞음. 이후 적 사이 전파는 캐릭터 재시전이 아님.",
       "reviewSheetPage": 1,
-      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json",
+      "copyRevision": "2026-09-13 · 스킬 설명 문장을 경마 표현으로 재작성. 수치·동작 변화 없음."
     },
     "grass_wonder": {
       "index": 11,
       "name": "그래스 원더",
       "pattern": "breach_line",
-      "skillSignature": "af2accb4f5ed7ca493201e46d5182068b22d705c1ebadf2f812c466773c3d6db",
+      "skillSignature": "898f5759c57b3a209622444db8b869bd014d3ca5926c10755160008193d1d4ed",
       "referenceRasterSha256": "858e7b0d0fb4557dadf063d2309182799ea2493cba9dd2545225f1f474303c19",
       "decision": "retain",
       "status": "retained",
       "reason": "웅크린 준비 → 전진 달리기 → 낮은 직선 돌파 → 회수가 연결되어 직선 돌진과 일치. 방어 감소는 피격 대상 효과로 표시.",
       "reviewSheetPage": 2,
-      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json",
+      "copyRevision": "2026-09-13 · 스킬 설명 문장을 경마 표현으로 재작성. 수치·동작 변화 없음."
     },
     "hishi_amazon": {
       "index": 12,
       "name": "히시 아마존",
       "pattern": "binding_line",
-      "skillSignature": "14e1833362f33a51498138af277dd5faf896db4d96b4be665af469a8bf1abb5f",
+      "skillSignature": "3efcb1226b03b88cb8d09487f5d0fe2e502a8d7501080d9be2d54fbd44bbef96",
       "referenceRasterSha256": "0c5ac3767cb68ddaeaabcb898160f4ebbb3b8262e750d7124e0da5b9399488be",
       "decision": "retain",
       "status": "retained",
       "reason": "대상을 가리킨 준비 → 손 모으기 → 전방 손바닥 발동 → 회수로 직선 구속 시전이 명확함.",
       "reviewSheetPage": 2,
-      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json",
+      "copyRevision": "2026-09-13 · 스킬 설명 문장을 경마 표현으로 재작성. 수치·동작 변화 없음."
     },
     "mejiro_mcqueen": {
       "index": 13,
       "name": "메지로 맥퀸",
       "pattern": "bulwark_circle",
-      "skillSignature": "29c54eddad83a5ba9d486d1c479ac01421a171ee91ca28d4d0f6f714c90670f8",
+      "skillSignature": "a3fce7a8a96f6faa616f22db1e3b1d78e6502cc78d1457f14b22def0486ee0de",
       "referenceRasterSha256": "ccd08a0f83eb62af28173be0e100bf2804f882794de14122681a6eaaf2ff5c1b",
       "decision": "retain",
       "status": "retained",
       "reason": "안쪽으로 모았다가 양팔을 넓게 펼치는 동작이 주변 방벽 부여에 적합. 지속 보호막 윤곽은 전투 이펙트가 담당.",
       "reviewSheetPage": 2,
-      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json",
+      "copyRevision": "2026-09-13 · 스킬 설명 문장을 경마 표현으로 재작성. 수치·동작 변화 없음."
     },
     "el_condor_pasa": {
       "index": 14,
       "name": "엘 콘도르 파사",
       "pattern": "rescue_barrier",
-      "skillSignature": "d07fa79ed6961fa205adbc262cd097a773aaee7d7615f5f31f1316256beb7126",
+      "skillSignature": "4a78f3f22fb2dcc1758e907266c840293234cf98054923b767c1c56f0a2d088c",
       "referenceRasterSha256": "0b2cfa8c217deae2079b8ea3831aadfc5d89dd08ebd7d9f848d6d8733daa80d0",
       "decision": "retain",
       "status": "retained",
       "reason": "모은 손에서 아군 방향으로 손을 펴는 동작이 단일 아군 회복과 보호막 전달에 적합.",
       "reviewSheetPage": 2,
-      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json",
+      "copyRevision": "2026-09-13 · 스킬 설명 문장을 경마 표현으로 재작성. 수치·동작 변화 없음."
     },
     "tm_opera_o": {
       "index": 15,
       "name": "티엠 오페라 오",
       "pattern": "challenge_bastion",
-      "skillSignature": "109653cb778f21833db1e269056f0a66cc72f29504b54872857cd0dadce66cd5",
+      "skillSignature": "9a26fd4ebc423a8f31b7999b5527c3eafc655dae5165a00a6e7728c1f67b8624",
       "referenceRasterSha256": "6a7b7f5dcbe891f26b2bea2717100ca0ab419256402980f61a1b6c515c55f41a",
       "decision": "retain",
       "status": "retained",
       "reason": "가슴 앞 준비에서 넓게 팔을 펴고 버티는 자세가 자신의 방벽과 주변 도발에 적합.",
       "reviewSheetPage": 2,
       "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json",
-      "balanceCompatibilityReview": "docs/qa/adaptive-balance-motion-compatibility.json"
+      "balanceCompatibilityReview": "docs/qa/adaptive-balance-motion-compatibility.json",
+      "copyRevision": "2026-09-13 · 스킬 설명 문장을 경마 표현으로 재작성. 수치·동작 변화 없음."
     },
     "narita_brian": {
       "index": 16,
       "name": "나리타 브라이언",
       "pattern": "fan_volley",
-      "skillSignature": "526ad2b2ca8d83ff88d51f7e1400087c8bc13b1d9bcb62cadba0bb91c151bb0c",
+      "skillSignature": "1ad3bd309d9c4c80570552871b619f0917bfd585a6778680eeb2f3190c4f3fb0",
       "referenceRasterSha256": "2e1a45e1eb45c5f3290c72ce2cf147530a95a70ae6abe815b71a25acd84c24c2",
       "decision": "retain",
       "status": "retained",
       "reason": "원화에 준비 → 금빛 부채꼴 발사 → 넓어진 후속 발사 → 회수가 이미 구분되어 부채 연사에 적합.",
       "reviewSheetPage": 2,
-      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json",
+      "copyRevision": "2026-09-13 · 스킬 설명 문장을 경마 표현으로 재작성. 수치·동작 변화 없음."
     },
     "symboli_rudolf": {
       "index": 17,
       "name": "심볼리 루돌프",
       "pattern": "binding_line",
-      "skillSignature": "7f099e60057dfa043a8cacd34ea60ee59374f05de168d718b399e7bd12e2bc17",
+      "skillSignature": "7a363fb5af26bc0221112369fedf92e410050e8285b8cbc1ec77e9fe3ee46761",
       "referenceRasterSha256": "4bf8b078d777fe61bd935cf356719c7ea5cc26fec3dd7ca60ce7a62d51ae6d38",
       "decision": "retain",
       "status": "retained",
       "reason": "대상을 가리킨 준비 → 손 모으기 → 전방 손바닥 발동 → 회수로 직선 구속 시전이 명확함.",
       "reviewSheetPage": 2,
       "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json",
-      "balanceCompatibilityReview": "docs/qa/adaptive-balance-motion-compatibility.json"
+      "balanceCompatibilityReview": "docs/qa/adaptive-balance-motion-compatibility.json",
+      "copyRevision": "2026-09-13 · 스킬 설명 문장을 경마 표현으로 재작성. 수치·동작 변화 없음."
     },
     "air_groove": {
       "index": 18,
       "name": "에어 그루브",
       "pattern": "counter_surge",
-      "skillSignature": "2179dcf1a946a9ad40e8923cbb403294694b50316114c820563b1598804ffbaa",
+      "skillSignature": "d1beccd81f43574b9dd92be8fe2037d309dad1b041a26cbdfb06928dd2edde98",
       "referenceRasterSha256": "cd9b986b9b2456738843d715900f6bbb3ee1c5751b57d5fb7f2be928b9b4bfc1",
       "decision": "revise",
       "status": "integrated",
@@ -231,13 +248,14 @@
       "reviewSheetPage": 2,
       "revision": "docs/art-source/motions/skill-revisions-2026-09-11/air_groove/review.json",
       "runtimeSha256": "8e4379d85625895b3f8485f5fcff050847457e27ffbe2b3b28cc1368e165a2f0",
-      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json",
+      "copyRevision": "2026-09-13 · 스킬 설명 문장을 경마 표현으로 재작성. 수치·동작 변화 없음."
     },
     "agnes_digital": {
       "index": 19,
       "name": "아그네스 디지털",
       "pattern": "seeking_bolt",
-      "skillSignature": "aaa84344b9a75eb59066493ab6275e0b3d1c8dcaf2e413dfbe75367b5c8b54e0",
+      "skillSignature": "2763983e1e6ec313c454ae73d236d199e3f0842a2c00c4b187bbe1474026fd83",
       "referenceRasterSha256": "673f76c0674c066b61f0b0ba94653a4ba501a2c43dd346b11660660d0439a899",
       "decision": "revise",
       "status": "integrated",
@@ -247,25 +265,27 @@
       "runtimeSha256": "ee9a562de6408ca7c5c77792d28c4f6f848c2e2c323e7778feed5f5ddb7d4bf6",
       "previousAugmentPatchSkillSignature": "98807291639a679acce31516e0bce9b9236831be08e183a7e8f86a6f95031ea6",
       "augmentPatchReview": "docs/qa/augment-motion-compatibility.json",
-      "balanceCompatibilityReview": "docs/qa/adaptive-balance-motion-compatibility.json"
+      "balanceCompatibilityReview": "docs/qa/adaptive-balance-motion-compatibility.json",
+      "copyRevision": "2026-09-13 · 스킬 설명 문장을 경마 표현으로 재작성. 수치·동작 변화 없음."
     },
     "seiun_sky": {
       "index": 20,
       "name": "세이운 스카이",
       "pattern": "command_pulse",
-      "skillSignature": "2b0ed7ed82d821feb44149b59bc3d8be36f73a3ef76e9813e81711da920e5e8e",
+      "skillSignature": "58c0eec24c1740e6909609a0c96cbdf1bc8109b69139d520def11506d71d79e4",
       "referenceRasterSha256": "c140788434f98d2abe24be856322238cac9f44bdcb85a83e812bd450e8808023",
       "decision": "retain",
       "status": "retained",
       "reason": "준비 뒤 한쪽 팔의 지시와 열린 팔 동작이 있어 아군에게 강화 효과를 전달하는 동작으로 유지. 대상 선정은 엔진 담당.",
       "reviewSheetPage": 2,
-      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json",
+      "copyRevision": "2026-09-13 · 스킬 설명 문장을 경마 표현으로 재작성. 수치·동작 변화 없음."
     },
     "tamamo_cross": {
       "index": 21,
       "name": "타마모 크로스",
       "pattern": "drain_arc",
-      "skillSignature": "179373b8259d12372221cbdf38d83a8e84e581871e38ef5a7148b388741b556f",
+      "skillSignature": "df1e1285c4a2de5892c8f49db56ce224b21aa5939c1ddc4fa0243e600ea2ec62",
       "referenceRasterSha256": "7391222b68b67a8fe9b1d2a1c19e8660c4d3a113b0995fd9c82df985aa6f4d88",
       "decision": "revise",
       "status": "integrated",
@@ -273,25 +293,27 @@
       "reviewSheetPage": 3,
       "revision": "docs/art-source/motions/skill-revisions-2026-09-11/tamamo_cross/review.json",
       "runtimeSha256": "b5b42abda38163c96426afb73e7d299525376b79c04e4d0812c89f8ab8b12271",
-      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json",
+      "copyRevision": "2026-09-13 · 스킬 설명 문장을 경마 표현으로 재작성. 수치·동작 변화 없음."
     },
     "fine_motion": {
       "index": 22,
       "name": "파인 모션",
       "pattern": "dash_feint",
-      "skillSignature": "b342d046ab2362821e7daa8793169c56a8168dd72174abdb0081996aa0654bcc",
+      "skillSignature": "5fd7dd36b883d7aa6dcbb6091f35552ae58d509e8a9f5dbc11e5417f186077d3",
       "referenceRasterSha256": "d6fc22b3ec9d157b5a14e8bf6131859f7e4e06e7f73639866b23a696fa1a3b16",
       "decision": "retain",
       "status": "retained",
       "reason": "낮은 대기 자세 → 전진 → 낮은 돌진 → 착지 회수로 준비 지연과 돌진이 구분됨. 보호막은 기존 전투 이펙트가 표시.",
       "reviewSheetPage": 3,
-      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json",
+      "copyRevision": "2026-09-13 · 스킬 설명 문장을 경마 표현으로 재작성. 수치·동작 변화 없음."
     },
     "biwa_hayahide": {
       "index": 23,
       "name": "비와 하야히데",
       "pattern": "comet_fall",
-      "skillSignature": "859aff35577ad4b8f7f0476411d7677869f97278aecb66789b12d90034482b63",
+      "skillSignature": "5cbeede0d8553ee8c4ad427ca7ed80577c788b4f2e5ba1bf27f57027064dd7e2",
       "referenceRasterSha256": "09179a590206f4442731e632a9a0849e411c89e2c678b5d89d63624c13336d97",
       "decision": "revise",
       "status": "integrated",
@@ -299,13 +321,14 @@
       "reviewSheetPage": 3,
       "revision": "docs/art-source/motions/skill-revisions-2026-09-11/biwa_hayahide/review.json",
       "runtimeSha256": "a29e388d3c00041287c5f41f8162c628d7fefa0abf808a8d8b2fd98066a2b9f3",
-      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json",
+      "copyRevision": "2026-09-13 · 스킬 설명 문장을 경마 표현으로 재작성. 수치·동작 변화 없음."
     },
     "mayano_top_gun": {
       "index": 24,
       "name": "마야노 탑건",
       "pattern": "retaliate_storm",
-      "skillSignature": "ab01f3d4846a6a9c6adfae3a029588366064cb18a16e7edaa31aa5cbfe01bc30",
+      "skillSignature": "5981c1e556abaf1448846334f1c9e953621b4b83a2cb81b909da990ebd87506d",
       "referenceRasterSha256": "f160e09800d71e03fa0ea5b91ff4af8f3631d32882747a572069b58545a94eba",
       "decision": "revise",
       "status": "integrated",
@@ -313,13 +336,14 @@
       "reviewSheetPage": 3,
       "revision": "docs/art-source/motions/skill-revisions-2026-09-11/mayano_top_gun/review.json",
       "runtimeSha256": "a288e1850528788b10dd5367281299bf9ee0dbcda8db10b27f487efad222078d",
-      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json",
+      "copyRevision": "2026-09-13 · 스킬 설명 문장을 경마 표현으로 재작성. 수치·동작 변화 없음."
     },
     "mihono_bourbon": {
       "index": 25,
       "name": "미호노 부르봉",
       "pattern": "orbital_beam",
-      "skillSignature": "5dc1457dc526d93fa1c92e54b67b47c816f19df2d67391970f4f164efa09ce69",
+      "skillSignature": "e8c59eaea3cde626adeee5034342aba48933c7bf1e1be9e94212c6d8a717e02b",
       "referenceRasterSha256": "09b894e0785649c99a4b0eeb90ad30d8f10f0fb63e0cc9d1b4d4a05e4f230d09",
       "decision": "revise",
       "status": "integrated",
@@ -327,13 +351,14 @@
       "reviewSheetPage": 3,
       "revision": "docs/art-source/motions/skill-revisions-2026-09-11/mihono_bourbon/review.json",
       "runtimeSha256": "a5aadcb13d90ebfbed170e53c67d5f04faae30a4912cf2a9f3edae616ab671ef",
-      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json",
+      "copyRevision": "2026-09-13 · 스킬 설명 문장을 경마 표현으로 재작성. 수치·동작 변화 없음."
     },
     "mejiro_ryan": {
       "index": 26,
       "name": "메지로 라이언",
       "pattern": "drain_arc",
-      "skillSignature": "92618bcf20c2e6629d79b56cf5a88ff786a0c2cb91bc4a52fab33e8a852d20d9",
+      "skillSignature": "4ca3afeaa0b546e65b25d447ce2e7705939ce51873c05fbd8b80d8873fad39a7",
       "referenceRasterSha256": "7af4d35462620a3f47f7c0238e1616f47178281e025ea32ef503048ffcb10458",
       "decision": "revise",
       "status": "integrated",
@@ -341,47 +366,51 @@
       "reviewSheetPage": 3,
       "revision": "docs/art-source/motions/skill-revisions-2026-09-11/mejiro_ryan/review.json",
       "runtimeSha256": "e9633f1352264894398572ca8dc2fa8e05e9e46fde7a2916e6eb1409ecab40b2",
-      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json",
+      "copyRevision": "2026-09-13 · 스킬 설명 문장을 경마 표현으로 재작성. 수치·동작 변화 없음."
     },
     "hishi_akebono": {
       "index": 27,
       "name": "히시 아케보노",
       "pattern": "bulwark_circle",
-      "skillSignature": "6ab2e61ead057748ce120b9b8f7dea19c5d7521a95c8cc8cbf639b8a7e358d7b",
+      "skillSignature": "b2a52860a89f776bde61713460af53119c2c093353d5209d6fd0a6d515090702",
       "referenceRasterSha256": "eb5a531311e2440ec28ef4df5c719877ccba9eda8601a4d3c45517c416c49397",
       "decision": "retain",
       "status": "retained",
       "reason": "안쪽으로 모았다가 양팔을 넓게 펼치는 동작이 주변 방벽 부여에 적합. 지속 보호막 윤곽은 전투 이펙트가 담당.",
-      "reviewSheetPage": 3
+      "reviewSheetPage": 3,
+      "copyRevision": "2026-09-13 · 스킬 설명 문장을 경마 표현으로 재작성. 수치·동작 변화 없음."
     },
     "yukino_bijin": {
       "index": 28,
       "name": "유키노 비진",
       "pattern": "sanctuary",
-      "skillSignature": "a631e4f8808040c8db55e92a3d152655334de594ad881033f60bc43170962944",
+      "skillSignature": "27d710650a9e025c103840f53e82b5e9429b0ec4196b18fc0d40db7cb77a8d09",
       "referenceRasterSha256": "0d0c2fc474caa87fbaa2bc24cde135f15f5fd87a63c7e2be06880f635f328a22",
       "decision": "retain",
       "status": "retained",
       "reason": "모은 손과 열린 팔을 거쳐 안정된 회수로 이어져 정화와 주변 회복의 시전 흐름에 적합.",
-      "reviewSheetPage": 3
+      "reviewSheetPage": 3,
+      "copyRevision": "2026-09-13 · 스킬 설명 문장을 경마 표현으로 재작성. 수치·동작 변화 없음."
     },
     "rice_shower": {
       "index": 29,
       "name": "라이스 샤워",
       "pattern": "iron_drain",
-      "skillSignature": "ae6af6fcb572b0daaca6a3b49e133ccbc9bca8737ef1dc364688550409e27ee3",
+      "skillSignature": "beb3cd691ea748d0310e7dcc44f18b74b46b7db0e601d1d8644b18c81bd2ecca",
       "referenceRasterSha256": "4ff7da943a346758998ef41135251d3a9778219b5c7c625ff6eb6a1efe271bd8",
       "decision": "retain",
       "status": "retained",
       "reason": "이전 개편 원화의 장미 준비 → 에너지 회수 → 초승달 방어 → 회수로 흡수 요새에 적합.",
       "reviewSheetPage": 3,
-      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json",
+      "copyRevision": "2026-09-13 · 스킬 설명 문장을 경마 표현으로 재작성. 수치·동작 변화 없음."
     },
     "ines_fujin": {
       "index": 30,
       "name": "아이네스 후진",
       "pattern": "bastion_growth",
-      "skillSignature": "b5e4035317a8ad27fca4163a87543f4e40bca786c805209dab4e3d644b53286b",
+      "skillSignature": "ccac02ec8dd1f51bb175869d36d84f000c54fc13b35e2b818f4bf4ff67caa11c",
       "referenceRasterSha256": "4ffd61de57029539de731cad45414fe9c6bc5b41169d27df583b9a45cf1811f0",
       "decision": "revise",
       "status": "integrated",
@@ -389,13 +418,14 @@
       "reviewSheetPage": 3,
       "revision": "docs/art-source/motions/skill-revisions-2026-09-11/ines_fujin/review.json",
       "runtimeSha256": "0a706ddeb4f88561fd583fec479ea4be9764df2b2a1bcea615f18cde178715f0",
-      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json",
+      "copyRevision": "2026-09-13 · 스킬 설명 문장을 경마 표현으로 재작성. 수치·동작 변화 없음."
     },
     "agnes_tachyon": {
       "index": 31,
       "name": "아그네스 타키온",
       "pattern": "carry_charge",
-      "skillSignature": "bc43fc6b353919149783f29ca249d6aa5ce56317402059ac16807d76e737134a",
+      "skillSignature": "99ad1cb051993b9a1deeea1aeaba51935751ea959b3cd0b1a67c5f32674c2026",
       "referenceRasterSha256": "b3209383c678409fa4f275957ddab99ab4988e20962d3d2e0d9848a88a06b48d",
       "decision": "revise",
       "status": "integrated",
@@ -404,63 +434,68 @@
       "revision": "docs/art-source/motions/skill-revisions-2026-09-11/agnes_tachyon/review.json",
       "runtimeSha256": "8a5e04e050544350fb63e7ff388c5438d5776786d75e65d94ce4aec16aad7202",
       "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json",
-      "balanceCompatibilityReview": "docs/qa/adaptive-balance-motion-compatibility.json"
+      "balanceCompatibilityReview": "docs/qa/adaptive-balance-motion-compatibility.json",
+      "copyRevision": "2026-09-13 · 스킬 설명 문장을 경마 표현으로 재작성. 수치·동작 변화 없음."
     },
     "admire_vega": {
       "index": 32,
       "name": "어드마이어 베가",
       "pattern": "crossing_echo",
-      "skillSignature": "2c85b6b65f6b5a8697f59af818b6933ddd0768271932604e307014290a655a62",
+      "skillSignature": "0822cebcef7e9b2150bc850b0abdb7562f411ad00eb3e43d762acbdb1358538b",
       "referenceRasterSha256": "36776e0b48a91363906239031fa41572d56889323ea525dba6b20c939b856fae",
       "decision": "revise",
       "status": "integrated",
       "reason": "돌진 뒤 즉시 웅크려 회수하여 후속 파동을 내보내는 별도 발동 자세가 없음.",
       "reviewSheetPage": 4,
       "revision": "docs/art-source/motions/skill-revisions-2026-09-11/admire_vega/review.json",
-      "runtimeSha256": "6416ea7240c3b671606b70afee48f19810548feef69afb10e508113d32aa8727"
+      "runtimeSha256": "6416ea7240c3b671606b70afee48f19810548feef69afb10e508113d32aa8727",
+      "copyRevision": "2026-09-13 · 스킬 설명 문장을 경마 표현으로 재작성. 수치·동작 변화 없음."
     },
     "inari_one": {
       "index": 33,
       "name": "이나리 원",
       "pattern": "pursuit_flurry",
-      "skillSignature": "70311f4c4c5ec6de97e1a2c0d0864c7f0f5f15097599623553a25d00259fdfd9",
+      "skillSignature": "2a385d19341a465e23896dff8a038e7e98d2823750de1e336bb2212bfcb9a468",
       "referenceRasterSha256": "2e24fd74d7a187de85e6837985da109fb9722cb66c5e33be2b4892973bf7fadb",
       "decision": "revise",
       "status": "integrated",
       "reason": "준비 뒤 두 프레임이 달리기여서 돌진 이후 근접 연타가 없음.",
       "reviewSheetPage": 4,
       "revision": "docs/art-source/motions/skill-revisions-2026-09-11/inari_one/review.json",
-      "runtimeSha256": "87059ec980431e7d28330b2d90c3ffd10ea15d305f82ed8da19cd6b2543cce23"
+      "runtimeSha256": "87059ec980431e7d28330b2d90c3ffd10ea15d305f82ed8da19cd6b2543cce23",
+      "copyRevision": "2026-09-13 · 스킬 설명 문장을 경마 표현으로 재작성. 수치·동작 변화 없음."
     },
     "winning_ticket": {
       "index": 34,
       "name": "위닝 티켓",
       "pattern": "trample_wave",
-      "skillSignature": "ee855b49f573ce85a0ec1b927300287fcd15a5668e1f25fd66a4e3fa5f85fe6e",
+      "skillSignature": "6c55409e8eb60296cca6ac72e367ba39ad5e9c52d85bd482db023694ff9e539c",
       "referenceRasterSha256": "5dfb196e3629bc7e0006db8c1ba7aa9c15a23080c55116fca97f2293539968b3",
       "decision": "revise",
       "status": "integrated",
       "reason": "돌진 중 낮은 자세에서 바로 회수하며 도착 지점의 발 구름과 충격 방출이 없음.",
       "reviewSheetPage": 4,
       "revision": "docs/art-source/motions/skill-revisions-2026-09-11/winning_ticket/review.json",
-      "runtimeSha256": "8e8166de462ecbe1def5871d9078f5dd2ed41272a4c62a8f01d7f7a11bb0739d"
+      "runtimeSha256": "8e8166de462ecbe1def5871d9078f5dd2ed41272a4c62a8f01d7f7a11bb0739d",
+      "copyRevision": "2026-09-13 · 스킬 설명 문장을 경마 표현으로 재작성. 수치·동작 변화 없음."
     },
     "air_shakur": {
       "index": 35,
       "name": "에어 샤커",
       "pattern": "silence_zone",
-      "skillSignature": "7c291b5d44e8caa1b48d7b44f461e9fef63dd3638a4f2708e003bfd98afe733b",
+      "skillSignature": "87b1b345c331b92bd0433b75685e47f4262b33a346f438d9160b96aba7cc3179",
       "referenceRasterSha256": "1f794b3404f1756c542e307a1c567a1f55d79ef5284a67155dfd9415da609209",
       "decision": "retain",
       "status": "retained",
       "reason": "대상 방향 지정과 제지하는 손바닥 발동이 침묵 부여에 적합. 지속 채널링이 아닌 즉시 지역 효과이므로 현 자세 유지.",
-      "reviewSheetPage": 4
+      "reviewSheetPage": 4,
+      "copyRevision": "2026-09-13 · 스킬 설명 문장을 경마 표현으로 재작성. 수치·동작 변화 없음."
     },
     "eishin_flash": {
       "index": 36,
       "name": "에이신 플래시",
       "pattern": "delayed_prison",
-      "skillSignature": "0b7af4a89c1852b0ec0b07d0e5679fed3b2a9ee768938bf9cc140b832ef757a0",
+      "skillSignature": "c04784e9827613b1eb2289496886805f1f6626b237ca0a4c7ea3bc8d70bfdec8",
       "referenceRasterSha256": "b90d12a4abda69e4e36bab022cb5f103ddfcadfb0215bd5b2a3fd67a404dcaa6",
       "decision": "revise",
       "status": "integrated",
@@ -468,61 +503,66 @@
       "reviewSheetPage": 4,
       "revision": "docs/art-source/motions/skill-revisions-2026-09-11/eishin_flash/review.json",
       "runtimeSha256": "24cd39a240cf347230be503a164084422a59676c198e8de86e65cb428719be4b",
-      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json",
+      "copyRevision": "2026-09-13 · 스킬 설명 문장을 경마 표현으로 재작성. 수치·동작 변화 없음."
     },
     "curren_chan": {
       "index": 37,
       "name": "카렌짱",
       "pattern": "chain_spark",
-      "skillSignature": "cceb7cd2714fce49ff545dcb252d722cd88d8d184b1249714d02d956af8c5ee8",
+      "skillSignature": "c3f2484827cf79397a0f480009b982968a75be85b3c1c175699797a26af273ff",
       "referenceRasterSha256": "934e017c0117cc69acd916ca452d3ff2b62682c34696ca62ae68347847d1cbe6",
       "decision": "retain",
       "status": "retained",
       "reason": "집중 뒤 손을 전방으로 내미는 첫 방출이 연쇄 섬광의 출발점과 맞음. 이후 적 사이 전파는 캐릭터 재시전이 아님.",
       "reviewSheetPage": 4,
-      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json",
+      "copyRevision": "2026-09-13 · 스킬 설명 문장을 경마 표현으로 재작성. 수치·동작 변화 없음."
     },
     "kawakami_princess": {
       "index": 38,
       "name": "카와카미 프린세스",
       "pattern": "comet_fall",
-      "skillSignature": "064dacb83c556bf3cbddf79d3ed3c239310fb457170a9aedfc0ac1d6ecdca384",
+      "skillSignature": "c61421904f42e88f9c90a391935f5c17fa0a25bda882d35fd25ccb569a4b0b7a",
       "referenceRasterSha256": "c0e73b1ec464ebe048b50ed26d3c3c1a5d66f68b93b78d1018a1d80463d24b87",
       "decision": "revise",
       "status": "integrated",
       "reason": "작은 전방 손바닥 시전이라 상공 준비와 하강 발동이 표현되지 않음.",
       "reviewSheetPage": 4,
       "revision": "docs/art-source/motions/skill-revisions-2026-09-11/kawakami_princess/review.json",
-      "runtimeSha256": "b924a7bb27aa36b47685741a64b8f51cc80a94f5664cc1f4ef811199f637b928"
+      "runtimeSha256": "b924a7bb27aa36b47685741a64b8f51cc80a94f5664cc1f4ef811199f637b928",
+      "copyRevision": "2026-09-13 · 스킬 설명 문장을 경마 표현으로 재작성. 수치·동작 변화 없음."
     },
     "gold_city": {
       "index": 39,
       "name": "골드 시티",
       "pattern": "disarm_cone",
-      "skillSignature": "921dc93ae7e38ca45a7711eb23caa57adae1e55ffd3f87ace46d51cebe4477a0",
+      "skillSignature": "a0cb1df3ec0fbf0ec617ac913e86d530126398ce5498c3f9104a16f979531aa7",
       "referenceRasterSha256": "9a56c82963f0c36bf359dd62f7c8d0bd2c0059d5b33c9d515519e3b812eaaa21",
       "decision": "retain",
       "status": "retained",
       "reason": "전방 지정에서 열린 손바닥 제지 자세로 전환하여 무장 해제 발동을 표현. 부채꼴 범위는 엔진 이펙트가 명확하게 표시.",
-      "reviewSheetPage": 4
+      "reviewSheetPage": 4,
+      "copyRevision": "2026-09-13 · 스킬 설명 문장을 경마 표현으로 재작성. 수치·동작 변화 없음."
     },
     "sakura_bakushin_o": {
       "index": 40,
       "name": "사쿠라 바쿠신 오",
       "pattern": "tempo_banner",
-      "skillSignature": "e6dbbe03fc42ce2470f3f8a99dd204db44926a4684e9ffe1f5981de9cd2613ec",
+      "skillSignature": "a61c1b8cccb69f5c15db3108bc15d4d7836c4307bc9b536c04efb3d1e540ceb4",
       "referenceRasterSha256": "4e850134449b96d34d8723f64600824857cf6a875b058bd8c3a687235ade0bf3",
       "decision": "retain",
       "status": "retained",
       "reason": "가슴 가까이 모은 손 → 팔을 들어 신호 → 넓게 펼친 팔 → 회수로 주변 아군을 독려하는 시전과 일치.",
       "reviewSheetPage": 4,
-      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json",
+      "copyRevision": "2026-09-13 · 스킬 설명 문장을 경마 표현으로 재작성. 수치·동작 변화 없음."
     },
     "seeking_the_pearl": {
       "index": 41,
       "name": "시킹 더 펄",
       "pattern": "split_barrage",
-      "skillSignature": "62004a924865c4e5cd0575cbbaca0f81fc54de857f9e5782107d9a14401e2848",
+      "skillSignature": "9a688f8eb3c24760a281738b9b034e905823e93ed8868d07f1e13c0a0b44fa5b",
       "referenceRasterSha256": "c4a06bd87a234566f1ffdb0c6a4328bedab452f0a1c84bf731919830bfa0b5e4",
       "decision": "revise",
       "status": "integrated",
@@ -530,24 +570,26 @@
       "reviewSheetPage": 5,
       "revision": "docs/art-source/motions/skill-revisions-2026-09-11/seeking_the_pearl/review.json",
       "runtimeSha256": "f919f5d4ac539b43701d5ba60394d5cd634f6960ffa21fcae2ebf001b5137574",
-      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json",
+      "copyRevision": "2026-09-13 · 스킬 설명 문장을 경마 표현으로 재작성. 수치·동작 변화 없음."
     },
     "shinko_windy": {
       "index": 42,
       "name": "신코 윈디",
       "pattern": "relay_lantern",
-      "skillSignature": "56f1266e0966e5d3eab6889823d7b629962979e4d2ad97c739099dd9abf486b0",
+      "skillSignature": "52fcad110f1444dd1d3c05de53bc09535a46f81306b908c2299fb2a42e11e53b",
       "referenceRasterSha256": "ae6870b757b14ee1d751c73dd6e5aea2211f7eb590746c89f753443bc324bdac",
       "decision": "retain",
       "status": "retained",
       "reason": "에너지 준비 뒤 손을 바깥으로 내밀어 보호 효과를 전달하는 동작으로 유지. 아군 간 연결 전파는 별도 전투 이펙트 담당.",
-      "reviewSheetPage": 5
+      "reviewSheetPage": 5,
+      "copyRevision": "2026-09-13 · 스킬 설명 문장을 경마 표현으로 재작성. 수치·동작 변화 없음."
     },
     "sweep_tosho": {
       "index": 43,
       "name": "스윕 토쇼",
       "pattern": "crossing_echo",
-      "skillSignature": "d815a3c24e9155bc8593a8dcee3edcebe2affd4b5826a11f53a5f29a9411b443",
+      "skillSignature": "27a7902334f3b71572e00d69292d02db935ef021770db5fa6cb2e163f2d90f43",
       "referenceRasterSha256": "2efc22a26b46e1e558a2bc256bddef9e56647f96efdb06afa5b862670cb320a6",
       "decision": "revise",
       "status": "integrated",
@@ -555,25 +597,27 @@
       "reviewSheetPage": 5,
       "revision": "docs/art-source/motions/skill-revisions-2026-09-11/sweep_tosho/review.json",
       "runtimeSha256": "cc493f0d4952a3d4d2f71cfecc7443ad95ec272cdfd29d049c71b28e5b39684a",
-      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json",
+      "copyRevision": "2026-09-13 · 스킬 설명 문장을 경마 표현으로 재작성. 수치·동작 변화 없음."
     },
     "super_creek": {
       "index": 44,
       "name": "슈퍼 크릭",
       "pattern": "frost_front",
-      "skillSignature": "49228d4f4355117af0604e5716efeecbd654dff9974fd2c3170d99449315a594",
+      "skillSignature": "a7098e2754bbef94a7de4a88e815f139d387000722d005f1597683caf7bdf209",
       "referenceRasterSha256": "cac503dbdd5252df30c29d94e4fcc60a5cbdea08617cc5b351ce83a9021b9de3",
       "decision": "retain",
       "status": "retained",
       "reason": "대상 방향 지시 → 집중 → 손바닥으로 제지 → 회수로 범위 제어 발동에 적합. 서리 전파는 지역 이펙트 담당.",
       "reviewSheetPage": 5,
-      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json",
+      "copyRevision": "2026-09-13 · 스킬 설명 문장을 경마 표현으로 재작성. 수치·동작 변화 없음."
     },
     "smart_falcon": {
       "index": 45,
       "name": "스마트 팔콘",
       "pattern": "cinder_field",
-      "skillSignature": "c29c995c610c609d4747aceaf3784ffbb4dc694c66be62bbc0f299ae48b5748e",
+      "skillSignature": "a961c202485c4cb2aaea998292ee5d753966d0db785ddc6c990c4ef77a6b7871",
       "referenceRasterSha256": "b30197ae5b831c7dbdad6d83da9dba9e3a3e258ba12e370f895bf88adaa4946c",
       "decision": "revise",
       "status": "integrated",
@@ -581,110 +625,119 @@
       "reviewSheetPage": 5,
       "revision": "docs/art-source/motions/skill-revisions-2026-09-11/smart_falcon/review.json",
       "runtimeSha256": "e37bba17e92c860965683dd9cf1dcbd7775d51535e1d5824ae00d46712572fcc",
-      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json",
+      "copyRevision": "2026-09-13 · 스킬 설명 문장을 경마 표현으로 재작성. 수치·동작 변화 없음."
     },
     "zenno_rob_roy": {
       "index": 46,
       "name": "젠노 롭 로이",
       "pattern": "challenge_bastion",
-      "skillSignature": "fa7f36736f4d69e1eda7d60296f53eaed233bb20ddcde8fbbfb62f69bb04a518",
+      "skillSignature": "b3637b3967d2a2c58d36e7635c8cef0dd7ed7d99bb6b33544aef82287e140100",
       "referenceRasterSha256": "9178e44ce7106e0f260084a1715b036470ac87dce88465872f10a8a881a01392",
       "decision": "retain",
       "status": "retained",
       "reason": "가슴 앞 준비에서 넓게 팔을 펴고 버티는 자세가 자신의 방벽과 주변 도발에 적합.",
       "reviewSheetPage": 5,
-      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json",
+      "copyRevision": "2026-09-13 · 스킬 설명 문장을 경마 표현으로 재작성. 수치·동작 변화 없음."
     },
     "tosen_jordan": {
       "index": 47,
       "name": "토센 조던",
       "pattern": "bastion_growth",
-      "skillSignature": "9ce6cb2394f86fe091745fe8666ae4783ca9b0b2b82bf92330256febab4b4cc0",
+      "skillSignature": "a8c78683748990f9d44d4fede32a563c6f91a9700531aad73425fb8759584456",
       "referenceRasterSha256": "c24c12442b87a06413e60e56383cf876797e1f481dd8c45d0ffaa359b5a389c7",
       "decision": "revise",
       "status": "integrated",
       "reason": "가슴에서 팔을 펼치는 응원 동작이므로 자신에게 방어력을 축적하는 동작으로 교체.",
       "reviewSheetPage": 5,
       "revision": "docs/art-source/motions/skill-revisions-2026-09-11/tosen_jordan/review.json",
-      "runtimeSha256": "f8f1a71e432b539b72fce00f83476743426c01fafeebc3157aee5ee0bd04e8f1"
+      "runtimeSha256": "f8f1a71e432b539b72fce00f83476743426c01fafeebc3157aee5ee0bd04e8f1",
+      "copyRevision": "2026-09-13 · 스킬 설명 문장을 경마 표현으로 재작성. 수치·동작 변화 없음."
     },
     "nakayama_festa": {
       "index": 48,
       "name": "나카야마 페스타",
       "pattern": "power_link",
-      "skillSignature": "34a4b4dcdec45cdcdd3fbf348a9e17a6e9b05920c89cf279b1fae22222e3e2e4",
+      "skillSignature": "faf087965f4f56cbe67bb288fb1d760b205d35d34582130b2150469aa1554cec",
       "referenceRasterSha256": "95ad0c32d3b0a8c4a653ea30c71775fb0f6c2e8b17a7e444b57b5e638bff7687",
       "decision": "retain",
       "status": "retained",
       "reason": "가슴 앞 준비 뒤 열린 손을 아군 방향으로 내밀고 회수하여 단일 대상 회복·강화 전달에 적합.",
-      "reviewSheetPage": 5
+      "reviewSheetPage": 5,
+      "copyRevision": "2026-09-13 · 스킬 설명 문장을 경마 표현으로 재작성. 수치·동작 변화 없음."
     },
     "narita_taishin": {
       "index": 49,
       "name": "나리타 타이신",
       "pattern": "pursuit_flurry",
-      "skillSignature": "f65fe82bbf08bf9a726bb25ef411d640e4b427302940227f3711b6f777564584",
+      "skillSignature": "5ecf71c23830abf21b24bed1a84285ab87314587677df2dd1242ce35c9ab7737",
       "referenceRasterSha256": "25bc65d55166444169054c8de2fe63dfc9fa28c0973f67ee79345a3172a0b18e",
       "decision": "revise",
       "status": "integrated",
       "reason": "준비 뒤 두 프레임이 달리기여서 돌진 이후 근접 연타가 없음.",
       "reviewSheetPage": 5,
       "revision": "docs/art-source/motions/skill-revisions-2026-09-11/narita_taishin/review.json",
-      "runtimeSha256": "a750b67321a111b1ae01c7554630b65d9caee7f562044c3524956f1b302fac71"
+      "runtimeSha256": "a750b67321a111b1ae01c7554630b65d9caee7f562044c3524956f1b302fac71",
+      "copyRevision": "2026-09-13 · 스킬 설명 문장을 경마 표현으로 재작성. 수치·동작 변화 없음."
     },
     "nishino_flower": {
       "index": 50,
       "name": "니시노 플라워",
       "pattern": "dash_feint",
-      "skillSignature": "47d00b66e9650d6cd8669044f7bb38cf12ff9ed42561402524ccd0122a11b32d",
+      "skillSignature": "118b22b962343fe4ca75fd4877b23a478df2b78f14c106d9dc2c39cabbedbc2d",
       "referenceRasterSha256": "124ba850690702b15a09f56b975e30f971329f9ce8fb370b82136f8c858e2159",
       "decision": "retain",
       "status": "retained",
       "reason": "낮은 대기 자세 → 전진 → 낮은 돌진 → 착지 회수로 준비 지연과 돌진이 구분됨. 보호막은 기존 전투 이펙트가 표시.",
       "reviewSheetPage": 5,
-      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json",
+      "copyRevision": "2026-09-13 · 스킬 설명 문장을 경마 표현으로 재작성. 수치·동작 변화 없음."
     },
     "haru_urara": {
       "index": 51,
       "name": "하루 우라라",
       "pattern": "frost_front",
-      "skillSignature": "55de2f65ab9978731e81ef8285354c4dba855da7134d8974f3b1ff58edac591d",
+      "skillSignature": "acea67d672bda2d973b1f3ad9005e41327af4c06072bb4513e0ca6c58aba81c5",
       "referenceRasterSha256": "18e0d6fc52a3ba77f2bd77d679e23a5f31da9efa31ef8d39c2816806e38178c8",
       "decision": "retain",
       "status": "retained",
       "reason": "대상 방향 지시 → 집중 → 손바닥으로 제지 → 회수로 범위 제어 발동에 적합. 서리 전파는 지역 이펙트 담당.",
-      "reviewSheetPage": 6
+      "reviewSheetPage": 6,
+      "copyRevision": "2026-09-13 · 스킬 설명 문장을 경마 표현으로 재작성. 수치·동작 변화 없음."
     },
     "bamboo_memory": {
       "index": 52,
       "name": "뱀부 메모리",
       "pattern": "disarm_cone",
-      "skillSignature": "136600900b0ff02edb527de70b34921e9243cef8db7b6425b7008fbe945a21c0",
+      "skillSignature": "38f60e27fde094fdf0ae208453435f9202ea5dc78226d08441591615b5e9dba6",
       "referenceRasterSha256": "ffd3dfd188a82b0702d2ede9be56d6654247289bcafe9620614ccf553adb28f8",
       "decision": "retain",
       "status": "retained",
       "reason": "전방 지정에서 열린 손바닥 제지 자세로 전환하여 무장 해제 발동을 표현. 부채꼴 범위는 엔진 이펙트가 명확하게 표시.",
       "reviewSheetPage": 6,
-      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json",
+      "copyRevision": "2026-09-13 · 스킬 설명 문장을 경마 표현으로 재작성. 수치·동작 변화 없음."
     },
     "biko_pegasus": {
       "index": 53,
       "name": "비코 페가수스",
       "pattern": "delayed_prison",
-      "skillSignature": "c0e5cf4133d43b7074b2ef1648b3add9e74ed963a68b7707c661fbf2e2a98465",
+      "skillSignature": "a687f60a061b52063c7acca69e56791cde51f6a0b91d4f25d9f7415f4c1d16d9",
       "referenceRasterSha256": "d21d53a519a55a431ff00d94fb8305170a77c139efef0aa5d4872543a68d794e",
       "decision": "revise",
       "status": "integrated",
       "reason": "가리키기와 손바닥 내밀기만 있어 지연 설치와 결계가 닫히는 순간이 구분되지 않음.",
       "reviewSheetPage": 6,
       "revision": "docs/art-source/motions/skill-revisions-2026-09-11/biko_pegasus/review.json",
-      "runtimeSha256": "74c6b0b33314d0d7ce19394f7ba6d7fdd222e2d5b63c086997815eb185fd019b"
+      "runtimeSha256": "74c6b0b33314d0d7ce19394f7ba6d7fdd222e2d5b63c086997815eb185fd019b",
+      "copyRevision": "2026-09-13 · 스킬 설명 문장을 경마 표현으로 재작성. 수치·동작 변화 없음."
     },
     "marvelous_sunday": {
       "index": 54,
       "name": "마블러스 선데이",
       "pattern": "counter_surge",
-      "skillSignature": "a34c434c3316237774e9cc9cb1d2fbc98ee17721f1b3f679b77d04cd8dd322ea",
+      "skillSignature": "c1a96bd9fc36b92f5a9a774126b8591ff7383762dbef7909bd1ed250544c2645",
       "referenceRasterSha256": "836154a604b99b81cbc36f9958bf436d3dbc43f4017b4e61f7345777e7db6d7f",
       "decision": "revise",
       "status": "integrated",
@@ -692,47 +745,51 @@
       "reviewSheetPage": 6,
       "revision": "docs/art-source/motions/skill-revisions-2026-09-11/marvelous_sunday/review.json",
       "runtimeSha256": "1b08f915f1e61c2d317627ad85bae5eaefbdf03d22472d11870693849725ebdf",
-      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json",
+      "copyRevision": "2026-09-13 · 스킬 설명 문장을 경마 표현으로 재작성. 수치·동작 변화 없음."
     },
     "matikanefukukitaru": {
       "index": 55,
       "name": "마치카네 후쿠키타루",
       "pattern": "triage_echo",
-      "skillSignature": "c8f68c7ceec0edfd10cdf6bf0cc20fa4579ff9cbddcc42d70abd2e6dd76e25a6",
+      "skillSignature": "72289688a3e31b6c43d815173f1db669b942ffacf4e5596aa3eaebc5b7e570e3",
       "referenceRasterSha256": "bddeead9fe610707dac0a95a12ae806f827706196efe3adbe9419288ff90b58c",
       "decision": "retain",
       "status": "retained",
       "reason": "양손을 모은 뒤 손바닥을 내밀고 유지하는 중간 자세가 연속 회복 시전과 맞음.",
-      "reviewSheetPage": 6
+      "reviewSheetPage": 6,
+      "copyRevision": "2026-09-13 · 스킬 설명 문장을 경마 표현으로 재작성. 수치·동작 변화 없음."
     },
     "mr_cb": {
       "index": 56,
       "name": "미스터 시비",
       "pattern": "silence_zone",
-      "skillSignature": "1b411b3720291c52fd8e035189ef95a5a13bbbc14c53c77211b1a094e281cd36",
+      "skillSignature": "ec93fb91fd50d9c0ea9d603925e124756dc999b5b63613ccfde4fde2ece55974",
       "referenceRasterSha256": "62e1e36b5181e272ffbe27a5cfa6426faa5acd11e449d302c902d92b80ddb8af",
       "decision": "retain",
       "status": "retained",
       "reason": "대상 방향 지정과 제지하는 손바닥 발동이 침묵 부여에 적합. 지속 채널링이 아닌 즉시 지역 효과이므로 현 자세 유지.",
-      "reviewSheetPage": 6
+      "reviewSheetPage": 6,
+      "copyRevision": "2026-09-13 · 스킬 설명 문장을 경마 표현으로 재작성. 수치·동작 변화 없음."
     },
     "meisho_doto": {
       "index": 57,
       "name": "메이쇼 도토",
       "pattern": "sanctuary",
-      "skillSignature": "29b3b19c9d657014ccce8743b075aea330d5085f53c40f7099c71eb19e62c960",
+      "skillSignature": "138f8ba44eacc0c56fe95015859ad0d79da8ca1ed74b39b274bcf066c6fde54c",
       "referenceRasterSha256": "191733e4404321ab8d1e27020b3aa14548b4fcdfbc37f979ff3bd6bdc985d6b1",
       "decision": "retain",
       "status": "retained",
       "reason": "모은 손과 열린 팔을 거쳐 안정된 회수로 이어져 정화와 주변 회복의 시전 흐름에 적합.",
       "reviewSheetPage": 6,
-      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json",
+      "copyRevision": "2026-09-13 · 스킬 설명 문장을 경마 표현으로 재작성. 수치·동작 변화 없음."
     },
     "mejiro_dober": {
       "index": 58,
       "name": "메지로 도베르",
       "pattern": "crossing_echo",
-      "skillSignature": "eaa6415a831a3ad350dbe93f0c024ee8b72e69e1b8024c55039a46283d7469fb",
+      "skillSignature": "c0a984e5eccc8a778e9a36d8e6d616892b9187d86fdc750d91c5615b2c9d6539",
       "referenceRasterSha256": "75cfb15c2ac6cd05f7a47b1fcf2999e9d1efef5ab2f579bd92374371887d4d62",
       "decision": "revise",
       "status": "integrated",
@@ -740,118 +797,128 @@
       "reviewSheetPage": 6,
       "revision": "docs/art-source/motions/skill-revisions-2026-09-11/mejiro_dober/review.json",
       "runtimeSha256": "b8aba003ad507fbfd323b75ec46c000870e9e053bdb922f91f96ac1b9054bd29",
-      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json",
+      "copyRevision": "2026-09-13 · 스킬 설명 문장을 경마 표현으로 재작성. 수치·동작 변화 없음."
     },
     "nice_nature": {
       "index": 59,
       "name": "나이스 네이처",
       "pattern": "silence_zone",
-      "skillSignature": "4661cb8e6a78fce5d9000dcade9a40ecba9b3bdbfc5e5e7b285c0322bea3badc",
+      "skillSignature": "98ddae9aad37aa3e90c18932a83049ab8bb72ebf925b859d66cb7823395bcb72",
       "referenceRasterSha256": "8d3c7ee9a831996d0aa61fccdc517993f3871149a18c8383784b5d0de128e65c",
       "decision": "retain",
       "status": "retained",
       "reason": "대상 방향 지정과 제지하는 손바닥 발동이 침묵 부여에 적합. 지속 채널링이 아닌 즉시 지역 효과이므로 현 자세 유지.",
       "reviewSheetPage": 6,
-      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json",
+      "copyRevision": "2026-09-13 · 스킬 설명 문장을 경마 표현으로 재작성. 수치·동작 변화 없음."
     },
     "king_halo": {
       "index": 60,
       "name": "킹 헤일로",
       "pattern": "rescue_barrier",
-      "skillSignature": "389000e943964bd69efef095eb717c41e56e7937161e608d9bba3fdd4ea38106",
+      "skillSignature": "fb3cc732171bf54c72f67eeb3091866e3f8834afbd9fe64dc1345e96bb1ab647",
       "referenceRasterSha256": "a4536321e7ebba9377cc05f48678faf87188a6bb99540d364dfa862ea625c44c",
       "decision": "retain",
       "status": "retained",
       "reason": "모은 손에서 아군 방향으로 손을 펴는 동작이 단일 아군 회복과 보호막 전달에 적합.",
-      "reviewSheetPage": 6
+      "reviewSheetPage": 6,
+      "copyRevision": "2026-09-13 · 스킬 설명 문장을 경마 표현으로 재작성. 수치·동작 변화 없음."
     },
     "matikanetannhauser": {
       "index": 61,
       "name": "마치카네 탄호이저",
       "pattern": "draining_tether",
-      "skillSignature": "d35ef76dfdf4789d754ef66ff71d68eed99ce3f2fb2965f12a44c3f11f0236fa",
+      "skillSignature": "239aefb6f82103dd78baaa74d10fe3a24ce4cbc7471d2f5b8f39af5b2b5d55d3",
       "referenceRasterSha256": "03e4d9147878de8c4308cc205df5133615670ed0a7ce7af88dad34f48dfe5c3d",
       "decision": "retain",
       "status": "retained",
       "reason": "대상 지정 뒤 전방에 손바닥을 유지하는 동작이 단일 대상 마나 구속에 적합. 마나 제거는 즉시 적용되어 흡수 회수 동작이 필수적이지 않음.",
-      "reviewSheetPage": 7
+      "reviewSheetPage": 7,
+      "copyRevision": "2026-09-13 · 스킬 설명 문장을 경마 표현으로 재작성. 수치·동작 변화 없음."
     },
     "ikuno_dictus": {
       "index": 62,
       "name": "이쿠노 딕터스",
       "pattern": "triage_echo",
-      "skillSignature": "47a09f3bd807d49d3855c244ae11849a624548ff04d007a594e6155b12bd71e7",
+      "skillSignature": "a7996d7f342ec77d69084b2056c37e76976f6c9919509e5c334ce89790b47fc0",
       "referenceRasterSha256": "c0ec5d537a3650ba9bc3f8239b1445fa3a46afb827148e9cf7794dd15e4812be",
       "decision": "retain",
       "status": "retained",
       "reason": "양손을 모은 뒤 손바닥을 내밀고 유지하는 중간 자세가 연속 회복 시전과 맞음.",
-      "reviewSheetPage": 7
+      "reviewSheetPage": 7,
+      "copyRevision": "2026-09-13 · 스킬 설명 문장을 경마 표현으로 재작성. 수치·동작 변화 없음."
     },
     "mejiro_palmer": {
       "index": 63,
       "name": "메지로 파머",
       "pattern": "bastion_growth",
-      "skillSignature": "14a3e8af313aca65543d8bb3e37178fdecf92062c27db27148561f34f4b41ac2",
+      "skillSignature": "a7e4036dfc1c7783caef121b995f48785959387f1697c0b76c928671299efd98",
       "referenceRasterSha256": "5b290e58fb9978170330e4d23733559d90efc99ba28acd21d9d67eca3cf23265",
       "decision": "revise",
       "status": "integrated",
       "reason": "가슴에서 팔을 펼치는 응원 동작이므로 자신에게 방어력을 축적하는 동작으로 교체.",
       "reviewSheetPage": 7,
       "revision": "docs/art-source/motions/skill-revisions-2026-09-11/mejiro_palmer/review.json",
-      "runtimeSha256": "e13f8a186f89dbc02fff189a37b7f7916eafe9bbe0fea9b89b3cf11414ec1446"
+      "runtimeSha256": "e13f8a186f89dbc02fff189a37b7f7916eafe9bbe0fea9b89b3cf11414ec1446",
+      "copyRevision": "2026-09-13 · 스킬 설명 문장을 경마 표현으로 재작성. 수치·동작 변화 없음."
     },
     "daitaku_helios": {
       "index": 64,
       "name": "다이타쿠 헬리오스",
       "pattern": "tempo_banner",
-      "skillSignature": "4d1ef3adeedb98aedc4486507397a81b7b56fc2089895dbb6971cb9976214b02",
+      "skillSignature": "ba7fb06311777d8f921c7c6f3feb78821a8469ccadc193a3fc1773dd07e5a516",
       "referenceRasterSha256": "b84714694346490886bf882aeb01f8c06f01bfe948aee9dedbea550ad3052b38",
       "decision": "retain",
       "status": "retained",
       "reason": "가슴 가까이 모은 손 → 팔을 들어 신호 → 넓게 펼친 팔 → 회수로 주변 아군을 독려하는 시전과 일치.",
       "reviewSheetPage": 7,
-      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json",
+      "copyRevision": "2026-09-13 · 스킬 설명 문장을 경마 표현으로 재작성. 수치·동작 변화 없음."
     },
     "twin_turbo": {
       "index": 65,
       "name": "트윈 터보",
       "pattern": "tempo_banner",
-      "skillSignature": "765c6b69777dec6be8f4848015dbcdb85d463fede33e2e8a8fbdc7a771551993",
+      "skillSignature": "acf2f43749fd80cb381f3e184c71b0e9d16af5e2a2313f9c31eca4e0ca205e90",
       "referenceRasterSha256": "84230d6545d295ea33d1bf6de33ac9e335ed8ecd13ca1730639fec450e87b5fb",
       "decision": "retain",
       "status": "retained",
       "reason": "가슴 가까이 모은 손 → 팔을 들어 신호 → 넓게 펼친 팔 → 회수로 주변 아군을 독려하는 시전과 일치.",
-      "reviewSheetPage": 7
+      "reviewSheetPage": 7,
+      "copyRevision": "2026-09-13 · 스킬 설명 문장을 경마 표현으로 재작성. 수치·동작 변화 없음."
     },
     "satono_diamond": {
       "index": 66,
       "name": "사토노 다이아몬드",
       "pattern": "binding_line",
-      "skillSignature": "94c96e5d1c2e22cb1e582050de772ed0be37bed558ad401d8f32acc23c4a3fcb",
+      "skillSignature": "67ed1dfdfd89521a22f5f8c8d1e671459c7b1ff9f57e5c32228fb9d1a67012da",
       "referenceRasterSha256": "90ec1902d60d8ca2946a2d64a152ed72f0ed4cac0f98af15bd586971955446fa",
       "decision": "retain",
       "status": "retained",
       "reason": "대상을 가리킨 준비 → 손 모으기 → 전방 손바닥 발동 → 회수로 직선 구속 시전이 명확함.",
       "reviewSheetPage": 7,
-      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json",
+      "copyRevision": "2026-09-13 · 스킬 설명 문장을 경마 표현으로 재작성. 수치·동작 변화 없음."
     },
     "kitasan_black": {
       "index": 67,
       "name": "키타산 블랙",
       "pattern": "command_pulse",
-      "skillSignature": "3597bd37e88acfa06c10af04eda84f98f3371fd88f94c649d474970b927051e8",
+      "skillSignature": "613f3b7bfc069908069f368c9309a49b703cdc77427481cd3bba74a8830cc6ec",
       "referenceRasterSha256": "4ad3dd7401cf1b69d147f4fc060158d944277a98e87e9b1eb2d878c4dcd04879",
       "decision": "retain",
       "status": "retained",
       "reason": "준비 뒤 한쪽 팔의 지시와 열린 팔 동작이 있어 아군에게 강화 효과를 전달하는 동작으로 유지. 대상 선정은 엔진 담당.",
       "reviewSheetPage": 7,
-      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json",
+      "copyRevision": "2026-09-13 · 스킬 설명 문장을 경마 표현으로 재작성. 수치·동작 변화 없음."
     },
     "sakura_chiyono_o": {
       "index": 68,
       "name": "사쿠라 치요노 오",
       "pattern": "crossing_echo",
-      "skillSignature": "9cdf224fcf2d86cefe0ca47535346b2fabe87158a62816e0e8bff5e5b794a0d0",
+      "skillSignature": "eae22b347a40594ecd58b094fc6dc9d9d2c752403eb8e1b3f295bf0b1b78036e",
       "referenceRasterSha256": "974acc4ff5c0488b74702eb805bba361f54bbbeedfd7caf6790a3503b43621f1",
       "decision": "revise",
       "status": "integrated",
@@ -859,71 +926,77 @@
       "reviewSheetPage": 7,
       "revision": "docs/art-source/motions/skill-revisions-2026-09-11/sakura_chiyono_o/review.json",
       "runtimeSha256": "4e5bbd7a66642f0262517cabe4415b8082f804bcc36f3c2f4ab86177e42c5d8a",
-      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json",
+      "copyRevision": "2026-09-13 · 스킬 설명 문장을 경마 표현으로 재작성. 수치·동작 변화 없음."
     },
     "sirius_symboli": {
       "index": 69,
       "name": "시리우스 심볼리",
       "pattern": "silence_zone",
-      "skillSignature": "2a5bbab3bdf24309a31d18c4064380b9392c4480162bddeed01c57bba666591b",
+      "skillSignature": "6e3d5e47f3092aa0444eee178bcdb40284cab7794a16ec4c4ea44a25d12184f9",
       "referenceRasterSha256": "d81e1d0526702ef9c54f8c364b1021f5bfb1c3416c3e6c451e93f919c2818b34",
       "decision": "retain",
       "status": "retained",
       "reason": "대상 방향 지정과 제지하는 손바닥 발동이 침묵 부여에 적합. 지속 채널링이 아닌 즉시 지역 효과이므로 현 자세 유지.",
-      "reviewSheetPage": 7
+      "reviewSheetPage": 7,
+      "copyRevision": "2026-09-13 · 스킬 설명 문장을 경마 표현으로 재작성. 수치·동작 변화 없음."
     },
     "mejiro_ardan": {
       "index": 70,
       "name": "메지로 아르당",
       "pattern": "sanctuary",
-      "skillSignature": "6e02cd34aec03c5d14bfba0bf7e2bdcec187dbbd7cc09ff97283babf7bd593ca",
+      "skillSignature": "d97b61221c6a177ab128373f1ec952d132437a05d34d9d4a8ce6e8061c670311",
       "referenceRasterSha256": "cb229bdee26e064baa36170aa84061c556efbdcba5931f23cb53e19d83583858",
       "decision": "retain",
       "status": "retained",
       "reason": "모은 손과 열린 팔을 거쳐 안정된 회수로 이어져 정화와 주변 회복의 시전 흐름에 적합.",
-      "reviewSheetPage": 7
+      "reviewSheetPage": 7,
+      "copyRevision": "2026-09-13 · 스킬 설명 문장을 경마 표현으로 재작성. 수치·동작 변화 없음."
     },
     "yaeno_muteki": {
       "index": 71,
       "name": "야에노 무테키",
       "pattern": "power_link",
-      "skillSignature": "cd14728283a96ea26526161831730c54bc91c632bc1a299fa4670201579f8194",
+      "skillSignature": "6c4ab72f8fd0e54925c0109352c9c509f39164545684846283aa3e29a20807a5",
       "referenceRasterSha256": "89a40b422075b6b7e3ebd7c24321e1ad33d0906f2df2300630651e2639993d01",
       "decision": "retain",
       "status": "retained",
       "reason": "가슴 앞 준비 뒤 열린 손을 아군 방향으로 내밀고 회수하여 단일 대상 회복·강화 전달에 적합.",
       "reviewSheetPage": 8,
-      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json",
+      "copyRevision": "2026-09-13 · 스킬 설명 문장을 경마 표현으로 재작성. 수치·동작 변화 없음."
     },
     "tsurumaru_tsuyoshi": {
       "index": 72,
       "name": "츠루마루 츠요시",
       "pattern": "delayed_prison",
-      "skillSignature": "62aac5a15778224810298a4c3a663917c4da73855a628eac86fc46bf99000702",
+      "skillSignature": "adc179620e7d31fceecb22ccf3d1f02c5b3b406d05971247e9943c92256ee0f1",
       "referenceRasterSha256": "a8eec91e1402f100d502fc7a35a592821cc462afcf9e636a819211a4a40ed123",
       "decision": "revise",
       "status": "integrated",
       "reason": "가리키기와 손바닥 내밀기만 있어 지연 설치와 결계가 닫히는 순간이 구분되지 않음.",
       "reviewSheetPage": 8,
       "revision": "docs/art-source/motions/skill-revisions-2026-09-11/tsurumaru_tsuyoshi/review.json",
-      "runtimeSha256": "4181961ac3f6d991fba27a84ef728ded69a34643d13d726b3d421271b2df3284"
+      "runtimeSha256": "4181961ac3f6d991fba27a84ef728ded69a34643d13d726b3d421271b2df3284",
+      "copyRevision": "2026-09-13 · 스킬 설명 문장을 경마 표현으로 재작성. 수치·동작 변화 없음."
     },
     "mejiro_bright": {
       "index": 73,
       "name": "메지로 브라이트",
       "pattern": "frost_front",
-      "skillSignature": "030e3599cb04a909832e10bf881b6fdecdab1542cd6e9d3ec89eab5ba1e8d4d5",
+      "skillSignature": "6773643133d547d78f28a649d206e428122b340b23ee651e15f7c83885dfbc79",
       "referenceRasterSha256": "569711ce63b1ea7bce4fc1b8ecca7199295c82322f84e41e3eeee12fdbc4322d",
       "decision": "retain",
       "status": "retained",
       "reason": "대상 방향 지시 → 집중 → 손바닥으로 제지 → 회수로 범위 제어 발동에 적합. 서리 전파는 지역 이펙트 담당.",
-      "reviewSheetPage": 8
+      "reviewSheetPage": 8,
+      "copyRevision": "2026-09-13 · 스킬 설명 문장을 경마 표현으로 재작성. 수치·동작 변화 없음."
     },
     "daring_tact": {
       "index": 74,
       "name": "데어링 택트",
       "pattern": "crossing_echo",
-      "skillSignature": "02d10d076d918a58b690961a1100cea42c747a86ac6fa05e92e000386a1c5143",
+      "skillSignature": "0185608bc7e15589856cac5b33ace91d0cf6cd15652776a1c8fb15a57a9f379c",
       "referenceRasterSha256": "94df5886343b4fb85daefee992d47a00bc076fd8a7f0dcdc334b83a688cc55ba",
       "decision": "revise",
       "status": "integrated",
@@ -931,60 +1004,65 @@
       "reviewSheetPage": 8,
       "revision": "docs/art-source/motions/skill-revisions-2026-09-11/daring_tact/review.json",
       "runtimeSha256": "0431aef031821e5d920f942204cd511ce05dcbd237e79793e4ec24d9dbe9e94d",
-      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json",
+      "copyRevision": "2026-09-13 · 스킬 설명 문장을 경마 표현으로 재작성. 수치·동작 변화 없음."
     },
     "sakura_laurel": {
       "index": 75,
       "name": "사쿠라 로렐",
       "pattern": "frost_front",
-      "skillSignature": "3a43903c78ad97955da7a267594b046228a7e18caf125ed3ba755a95ac743dd9",
+      "skillSignature": "8c876c49aeff2d23e0aa2c4a75022c1cacda43d3601e144451e22df53063e9e5",
       "referenceRasterSha256": "19da18fa3a272262290e8e3bdff29ac46c58b9f7779c9f14ff67af7a2100c127",
       "decision": "retain",
       "status": "retained",
       "reason": "대상 방향 지시 → 집중 → 손바닥으로 제지 → 회수로 범위 제어 발동에 적합. 서리 전파는 지역 이펙트 담당.",
       "reviewSheetPage": 8,
-      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json",
+      "copyRevision": "2026-09-13 · 스킬 설명 문장을 경마 표현으로 재작성. 수치·동작 변화 없음."
     },
     "narita_top_road": {
       "index": 76,
       "name": "나리타 탑 로드",
       "pattern": "guardian_vow",
-      "skillSignature": "c148c84e3de91c3ee221b393fe330daf18fabfbb7669480774e363378fa6d7f1",
+      "skillSignature": "d4585a616e349e362ef39302c00f2c9c0102ac440d8073e3fb4dc973ecf8473a",
       "referenceRasterSha256": "eb5e9a5e0fbb82f10f281c598dc3aaf9a9be8a86f7c96574e94141b94a6cbdca",
       "decision": "retain",
       "status": "retained",
       "reason": "보호 준비 뒤 팔을 넓히고 한 손으로 적을 부르는 자세가 주변 아군 보호와 도발에 적합.",
       "reviewSheetPage": 8,
-      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json",
+      "copyRevision": "2026-09-13 · 스킬 설명 문장을 경마 표현으로 재작성. 수치·동작 변화 없음."
     },
     "yamanin_zephyr": {
       "index": 77,
       "name": "야마닌 제퍼",
       "pattern": "cleanse_hymn",
-      "skillSignature": "acadf897444eaa50f7eba6e9b247237fe335108b9ed7421894f8829b76d9d835",
+      "skillSignature": "05308adf69ddba46147bfcf417ca8bce2dd003b8fcb580e8d8b4b6675c66cbf3",
       "referenceRasterSha256": "b9d6d1d0684e02bd22905c57813cd857f9c3a65dd4d56df0069a918a19f1a617",
       "decision": "retain",
       "status": "retained",
       "reason": "차분한 준비에서 손을 바깥으로 펼치는 동작이 정화와 회복 전달에 맞음.",
       "reviewSheetPage": 8,
-      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json",
+      "copyRevision": "2026-09-13 · 스킬 설명 문장을 경마 표현으로 재작성. 수치·동작 변화 없음."
     },
     "furioso": {
       "index": 78,
       "name": "푸리오소",
       "pattern": "bulwark_circle",
-      "skillSignature": "68a572a5e07bf63dd3423088de6fb45e7468574335fe70cdbbbab73d30c3f112",
+      "skillSignature": "6fc4764dbe25d260d73814d2570a6e47a01db58c55f72d09fe826a24af10b746",
       "referenceRasterSha256": "325cca6b28c1889dcc5b08e7af80c0bdd8b69e5a8990a9cc71eca19024e10771",
       "decision": "retain",
       "status": "retained",
       "reason": "안쪽으로 모았다가 양팔을 넓게 펼치는 동작이 주변 방벽 부여에 적합. 지속 보호막 윤곽은 전투 이펙트가 담당.",
-      "reviewSheetPage": 8
+      "reviewSheetPage": 8,
+      "copyRevision": "2026-09-13 · 스킬 설명 문장을 경마 표현으로 재작성. 수치·동작 변화 없음."
     },
     "transcend": {
       "index": 79,
       "name": "트랜센드",
       "pattern": "twin_orbit",
-      "skillSignature": "8620375c028f2c655037403765d976c44ee6b4deb3e98d18d12eba4c3a8120af",
+      "skillSignature": "677ff5e80df3ba3952f4252d8954dcbf2f33bcb42df2018aeade0dc8b0633510",
       "referenceRasterSha256": "f45727cbd3cf89496555755d93edd2511042344cd5f0109c7b20d16036205f43",
       "decision": "revise",
       "status": "integrated",
@@ -992,37 +1070,40 @@
       "reviewSheetPage": 8,
       "revision": "docs/art-source/motions/skill-revisions-2026-09-11/transcend/review.json",
       "runtimeSha256": "f50b83c817a73d88130838c35cecdd9cacf70f9e69b68dd8cfa8e48b23de7595",
-      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json",
+      "copyRevision": "2026-09-13 · 스킬 설명 문장을 경마 표현으로 재작성. 수치·동작 변화 없음."
     },
     "north_flight": {
       "index": 80,
       "name": "노스 플라이트",
       "pattern": "dash_feint",
-      "skillSignature": "95434cfe10af4294bbf3dfe7a85f1e3cb9cd06eac1c7dc08acf137db92181fd2",
+      "skillSignature": "5cf8f28ab17f4a995af59d5245123b62249388a5e68e0908b34b7299d43fa1e8",
       "referenceRasterSha256": "b5c33e87f962327f0403ee664ba67ea0038dc047b94389cac5a0144369342b00",
       "decision": "retain",
       "status": "retained",
       "reason": "낮은 대기 자세 → 전진 → 낮은 돌진 → 착지 회수로 준비 지연과 돌진이 구분됨. 보호막은 기존 전투 이펙트가 표시.",
       "reviewSheetPage": 8,
-      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json",
+      "copyRevision": "2026-09-13 · 스킬 설명 문장을 경마 표현으로 재작성. 수치·동작 변화 없음."
     },
     "symboli_kris_s": {
       "index": 81,
       "name": "심볼리 크리스 에스",
       "pattern": "breach_line",
-      "skillSignature": "37ad4fd6818f81deab1ae1a36b83610abfc30b3acde3cb416743ebbe6a640254",
+      "skillSignature": "6972dd85f395706d83709df24be467092d38ea03db123278b9f8dc5f7ce760ed",
       "referenceRasterSha256": "9c94fa49b69c5a498c19dad3554c55394c6bc88c3be00443139f67ed305bc8cd",
       "decision": "retain",
       "status": "retained",
       "reason": "웅크린 준비 → 전진 달리기 → 낮은 직선 돌파 → 회수가 연결되어 직선 돌진과 일치. 방어 감소는 피격 대상 효과로 표시.",
       "reviewSheetPage": 9,
-      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json",
+      "copyRevision": "2026-09-13 · 스킬 설명 문장을 경마 표현으로 재작성. 수치·동작 변화 없음."
     },
     "tanino_gimlet": {
       "index": 82,
       "name": "타니노 김렛",
       "pattern": "disarm_cone",
-      "skillSignature": "2c3e69425cd2995894c857fe309a4185ca5d4bca3b33975a56b90d6194ecf85c",
+      "skillSignature": "02137ce23798ce5f31c778757133b6554f6f28cb3af3cacac2b9c17c66be1812",
       "referenceRasterSha256": "d624b6fa3936e4e3619798a111c1bb6c70862045464c3ef4e9fb8d7f6ef5be9c",
       "decision": "retain",
       "status": "retained",
@@ -1030,149 +1111,161 @@
       "reviewSheetPage": 9,
       "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json",
       "previousAugmentPatchSkillSignature": "52a8cc0d4e86c2ab926128945485067a7356a9c5ed046f5d6c88cb4c0e2b8161",
-      "augmentPatchReview": "docs/qa/augment-motion-compatibility.json"
+      "augmentPatchReview": "docs/qa/augment-motion-compatibility.json",
+      "copyRevision": "2026-09-13 · 스킬 설명 문장을 경마 표현으로 재작성. 수치·동작 변화 없음."
     },
     "daiichi_ruby": {
       "index": 83,
       "name": "다이이치 루비",
       "pattern": "seeking_bolt",
-      "skillSignature": "e83993a266d6b8aaae08b6d424e8e38533274a6a9fb8615f366a9d9c8813658a",
+      "skillSignature": "736b688edb62ddae9eeea2890ccea3b5deb003942b981b3365c3f5809887a69a",
       "referenceRasterSha256": "78dbe074d0178cb8d72d4627d47aabdf4a970088d05b57d6a2ecb7b0727cf97f",
       "decision": "revise",
       "status": "integrated",
       "reason": "비슷한 전방 손동작이 반복되어 조준과 단일 정밀 타격의 차이가 약함.",
       "reviewSheetPage": 9,
       "revision": "docs/art-source/motions/skill-revisions-2026-09-11/daiichi_ruby/review.json",
-      "runtimeSha256": "cfce230eee8a3729c56ee29950cad6006f0be1cb70adee7f7545092c36607939"
+      "runtimeSha256": "cfce230eee8a3729c56ee29950cad6006f0be1cb70adee7f7545092c36607939",
+      "copyRevision": "2026-09-13 · 스킬 설명 문장을 경마 표현으로 재작성. 수치·동작 변화 없음."
     },
     "mejiro_ramonu": {
       "index": 84,
       "name": "메지로 라모누",
       "pattern": "crossing_echo",
-      "skillSignature": "2be97b935ca963fc961ea6706d22bcb735de58d17180ae4289c57156aa329541",
+      "skillSignature": "42f40c12fe64f42a6f9bd49992dbcc040574285567904ee383c057442f2ce943",
       "referenceRasterSha256": "70f07d7b4ce77b74cb5eb4d8871c6d6a485c78618d7fb70b4aa897da27c30bdb",
       "decision": "revise",
       "status": "integrated",
       "reason": "돌진 뒤 즉시 웅크려 회수하여 후속 파동을 내보내는 별도 발동 자세가 없음.",
       "reviewSheetPage": 9,
       "revision": "docs/art-source/motions/skill-revisions-2026-09-11/mejiro_ramonu/review.json",
-      "runtimeSha256": "6d4b32c7f67a8e1b7edd90ed534d5a4556d3f6990dc07a8a9015417556fb8d78"
+      "runtimeSha256": "6d4b32c7f67a8e1b7edd90ed534d5a4556d3f6990dc07a8a9015417556fb8d78",
+      "copyRevision": "2026-09-13 · 스킬 설명 문장을 경마 표현으로 재작성. 수치·동작 변화 없음."
     },
     "aston_machan": {
       "index": 85,
       "name": "애스턴 마짱",
       "pattern": "twin_orbit",
-      "skillSignature": "f9a14d34580dd71bd5b3d23db795f75565ef4803f8e1bcc61a797624fd4406fb",
+      "skillSignature": "8ef1dae9ee5e5c49914e226f2a38f2f2a848918d9799568275dcf7e215c3d2ee",
       "referenceRasterSha256": "1b7da634747307a4c1994d30b4081c8293a3ef3d288928fcb74a5772a25e490e",
       "decision": "revise",
       "status": "integrated",
       "reason": "한 방향 손바닥 방출 뒤 종료하여 왕복 파동의 귀환을 받는 동작이 없음.",
       "reviewSheetPage": 9,
       "revision": "docs/art-source/motions/skill-revisions-2026-09-11/aston_machan/review.json",
-      "runtimeSha256": "22e1561bbac1e62ef4dd174de320531d6d87d50ff98a6d716acebdec0c770d15"
+      "runtimeSha256": "22e1561bbac1e62ef4dd174de320531d6d87d50ff98a6d716acebdec0c770d15",
+      "copyRevision": "2026-09-13 · 스킬 설명 문장을 경마 표현으로 재작성. 수치·동작 변화 없음."
     },
     "satono_crown": {
       "index": 86,
       "name": "사토노 크라운",
       "pattern": "fan_volley",
-      "skillSignature": "d3f2bc6a2a9c2aef0afbf42cd6febda2c8371c07e209588d0c688820a9761dd5",
+      "skillSignature": "592c97d8ea892eed991b16da0d419897782221350942929dab23745f978c8770",
       "referenceRasterSha256": "24b5e5e2bea0a4128d9316e9ddcda96538b9f47b3b940ad80f0cf093839450b9",
       "decision": "revise",
       "status": "integrated",
       "reason": "거의 같은 한 방향 팔 뻗기여서 부채꼴 범위와 연속 2회 발사가 드러나지 않음.",
       "reviewSheetPage": 9,
       "revision": "docs/art-source/motions/skill-revisions-2026-09-11/satono_crown/review.json",
-      "runtimeSha256": "3bbd3b92b69b2646d58ac20ade83497afdbb111d2560e7b9ee296f322dcc0061"
+      "runtimeSha256": "3bbd3b92b69b2646d58ac20ade83497afdbb111d2560e7b9ee296f322dcc0061",
+      "copyRevision": "2026-09-13 · 스킬 설명 문장을 경마 표현으로 재작성. 수치·동작 변화 없음."
     },
     "cheval_grand": {
       "index": 87,
       "name": "슈발 그랑",
       "pattern": "frost_front",
-      "skillSignature": "063f1a719bb7888994bcba9883b9d63b830e03b10fe7cf49f3153d3777b30b02",
+      "skillSignature": "3d30ee9cbcf7f87d06bc5238cb74090018bd5f74e8c8263e2b4944a2b391fc5d",
       "referenceRasterSha256": "72c0490ba8f097ddf506de3ce9ea87986779f999887f085c803c67f12ad20549",
       "decision": "retain",
       "status": "retained",
       "reason": "대상 방향 지시 → 집중 → 손바닥으로 제지 → 회수로 범위 제어 발동에 적합. 서리 전파는 지역 이펙트 담당.",
       "reviewSheetPage": 9,
-      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json",
+      "copyRevision": "2026-09-13 · 스킬 설명 문장을 경마 표현으로 재작성. 수치·동작 변화 없음."
     },
     "vivlos": {
       "index": 88,
       "name": "비블로스",
       "pattern": "crossing_echo",
-      "skillSignature": "89b3d5341e3eebf15d822aa1ea0ca516af962f1dae1952817159343f2a950c41",
+      "skillSignature": "4c82ee6e64d0435ecfcee3c2df60dd5b82ff4095e1fbab7d716231a121e36171",
       "referenceRasterSha256": "168853ad85ddb027f422aeeb6f8793ae746df586d222fc3e704507f4d29135e2",
       "decision": "revise",
       "status": "integrated",
       "reason": "돌진 뒤 즉시 웅크려 회수하여 후속 파동을 내보내는 별도 발동 자세가 없음.",
       "reviewSheetPage": 9,
       "revision": "docs/art-source/motions/skill-revisions-2026-09-11/vivlos/review.json",
-      "runtimeSha256": "b8406843098bf314b71b202d5fa0e50f3fd6c4410f77db1156a761f9323a27b7"
+      "runtimeSha256": "b8406843098bf314b71b202d5fa0e50f3fd6c4410f77db1156a761f9323a27b7",
+      "copyRevision": "2026-09-13 · 스킬 설명 문장을 경마 표현으로 재작성. 수치·동작 변화 없음."
     },
     "dantsu_flame": {
       "index": 89,
       "name": "단츠 플레임",
       "pattern": "relay_lantern",
-      "skillSignature": "4bb397b8fbd12d324c4b3b4709529ea449ac714a35f9a49cd301cb83b512f1a7",
+      "skillSignature": "781ca3a9e55509ab0c903ce9bf6ac8d914b34bc65d92bf47535eba561ff25427",
       "referenceRasterSha256": "91f6bc7be0fe9390edf96f38548d1b46de7bdeb9317c0564380ffbb20216afb7",
       "decision": "retain",
       "status": "retained",
       "reason": "에너지 준비 뒤 손을 바깥으로 내밀어 보호 효과를 전달하는 동작으로 유지. 아군 간 연결 전파는 별도 전투 이펙트 담당.",
-      "reviewSheetPage": 9
+      "reviewSheetPage": 9,
+      "copyRevision": "2026-09-13 · 스킬 설명 문장을 경마 표현으로 재작성. 수치·동작 변화 없음."
     },
     "ks_miracle": {
       "index": 90,
       "name": "케이에스 미라클",
       "pattern": "bastion_growth",
-      "skillSignature": "c3b7226663dd08f4f3bda8a45b2072e7a74a31c39c862144aa8ff475c5b09819",
+      "skillSignature": "7c9eeefcb15eb000918c1e4da544e78e27f940e19cee5e0497f89afdf8716705",
       "referenceRasterSha256": "c035dc3a6022397bcba0258d144fac5780020591b763fe4073d10d371c1cf06a",
       "decision": "revise",
       "status": "integrated",
       "reason": "가슴에서 팔을 펼치는 응원 동작이므로 자신에게 방어력을 축적하는 동작으로 교체.",
       "reviewSheetPage": 9,
       "revision": "docs/art-source/motions/skill-revisions-2026-09-11/ks_miracle/review.json",
-      "runtimeSha256": "7710dfc56e956169b6955ceba72431a2bafdfa6ef4f71748a79fb87d9acf76ae"
+      "runtimeSha256": "7710dfc56e956169b6955ceba72431a2bafdfa6ef4f71748a79fb87d9acf76ae",
+      "copyRevision": "2026-09-13 · 스킬 설명 문장을 경마 표현으로 재작성. 수치·동작 변화 없음."
     },
     "jungle_pocket": {
       "index": 91,
       "name": "정글 포켓",
       "pattern": "binding_line",
-      "skillSignature": "534d6f3887528e236f0b8b5fb934e25f9fcde96e38bf803ae7671e53f80c548c",
+      "skillSignature": "7da2c6fab1e85e8a9ec5dcead859f30b9581b634cd88fca0547dd022ade07204",
       "referenceRasterSha256": "922391836cb7b959e5e2533fa7d15014366e3e7cc3919d15efe68dc4ed12081e",
       "decision": "retain",
       "status": "retained",
       "reason": "대상을 가리킨 준비 → 손 모으기 → 전방 손바닥 발동 → 회수로 직선 구속 시전이 명확함.",
       "reviewSheetPage": 10,
-      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json",
+      "copyRevision": "2026-09-13 · 스킬 설명 문장을 경마 표현으로 재작성. 수치·동작 변화 없음."
     },
     "believe": {
       "index": 92,
       "name": "빌리브",
       "pattern": "chain_spark",
-      "skillSignature": "acbcff1acc1969c1dafb4ce6419afb71917f2bdb2c3b77fed80056c25f36b6a3",
+      "skillSignature": "ace87582a9a61f98ae9b914046200b48fb75f735a88cb1cf46d4aa92dba6fbd6",
       "referenceRasterSha256": "26e0f337ebb96c5e76ed3039ce9d340b1f9c9c16ad304427cfaf3c8c3884061e",
       "decision": "retain",
       "status": "retained",
       "reason": "집중 뒤 손을 전방으로 내미는 첫 방출이 연쇄 섬광의 출발점과 맞음. 이후 적 사이 전파는 캐릭터 재시전이 아님.",
       "reviewSheetPage": 10,
-      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json",
+      "copyRevision": "2026-09-13 · 스킬 설명 문장을 경마 표현으로 재작성. 수치·동작 변화 없음."
     },
     "no_reason": {
       "index": 93,
       "name": "노 리즌",
       "pattern": "binding_line",
-      "skillSignature": "9c116827a9efc2dc14ef8a74beddaddc59535634f579de62ab9c1c8eec08f2c0",
+      "skillSignature": "b42de9b1eae5aba8bd36fe858590cee729f8c9dbb527493923153f5b3c78ca73",
       "referenceRasterSha256": "6e29800437ff9d55ffadda59336f85b16f404d942a9f571c96aea6ac6063f786",
       "decision": "retain",
       "status": "retained",
       "reason": "대상을 가리킨 준비 → 손 모으기 → 전방 손바닥 발동 → 회수로 직선 구속 시전이 명확함.",
-      "reviewSheetPage": 10
+      "reviewSheetPage": 10,
+      "copyRevision": "2026-09-13 · 스킬 설명 문장을 경마 표현으로 재작성. 수치·동작 변화 없음."
     },
     "still_in_love": {
       "index": 94,
       "name": "스틸 인 러브",
       "pattern": "trample_wave",
-      "skillSignature": "864a9f916bf15176bf63aa16cd61fb713cb97fd429547f3396c20a1ec3bc760b",
+      "skillSignature": "935f84906ff444d6c2f8b0653ca1eba094fd673c193359e10200ccb3c094006f",
       "referenceRasterSha256": "e359e7d0a83720ecf95f62f870a0645c1d75a7cd6435be78d717c60aa1b6f81e",
       "decision": "revise",
       "status": "integrated",
@@ -1180,25 +1273,27 @@
       "reviewSheetPage": 10,
       "revision": "docs/art-source/motions/skill-revisions-2026-09-11/still_in_love/review.json",
       "runtimeSha256": "495c888ea0d79c6069a5708690bfae1989ee7491390e1b81849ae4fa26cf2a9e",
-      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json",
+      "copyRevision": "2026-09-13 · 스킬 설명 문장을 경마 표현으로 재작성. 수치·동작 변화 없음."
     },
     "copano_rickey": {
       "index": 95,
       "name": "코파노 리키",
       "pattern": "dash_feint",
-      "skillSignature": "bd2819876abd38d63a9cd60cec221f63c3c47852ac5293e2912698e2a8114fa8",
+      "skillSignature": "405cfcd60cad01813a4497c013282fe51733a50e22b89eafece2966b65ada72d",
       "referenceRasterSha256": "3c7942f8f8bae119e937a76a5d655322f19e9c8bbd5fa1abaeed378509b733f0",
       "decision": "retain",
       "status": "retained",
       "reason": "낮은 대기 자세 → 전진 → 낮은 돌진 → 착지 회수로 준비 지연과 돌진이 구분됨. 보호막은 기존 전투 이펙트가 표시.",
       "reviewSheetPage": 10,
-      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json",
+      "copyRevision": "2026-09-13 · 스킬 설명 문장을 경마 표현으로 재작성. 수치·동작 변화 없음."
     },
     "hokko_tarumae": {
       "index": 96,
       "name": "홋코 타루마에",
       "pattern": "cinder_field",
-      "skillSignature": "3554ec66f5b04c099caead29e6d812412dbe2122dd2b1167290699eaf89afd05",
+      "skillSignature": "25b6a3caf1b93574c1a83ab5b75f747de73fb514325f0eefbbc978d5a7f1938e",
       "referenceRasterSha256": "eb52294564af0791caf60c1aad48bf1b67012bf0a17400c96c37b1a5d9729fb9",
       "decision": "revise",
       "status": "integrated",
@@ -1206,69 +1301,75 @@
       "reviewSheetPage": 10,
       "revision": "docs/art-source/motions/skill-revisions-2026-09-11/hokko_tarumae/review.json",
       "runtimeSha256": "8a4b1fd073efe8e0e12c15a905cfcfd5491ebdc5f4cada0516ba24cfdc1e6b03",
-      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json",
+      "copyRevision": "2026-09-13 · 스킬 설명 문장을 경마 표현으로 재작성. 수치·동작 변화 없음."
     },
     "wonder_acute": {
       "index": 97,
       "name": "원더 어큐트",
       "pattern": "triage_echo",
-      "skillSignature": "ef74243e0d052fffb30bb3ee839f6b7ecd8292de301a073b54a34813ff254234",
+      "skillSignature": "ac220c281d8f63dc9354086ab8d1cde51d7069e32d31a6cd237bbb91acc42ada",
       "referenceRasterSha256": "f109ad18b6335bba6d91841b54eee28528f414783dc7893974dd0eaab3299a66",
       "decision": "retain",
       "status": "retained",
       "reason": "양손을 모은 뒤 손바닥을 내밀고 유지하는 중간 자세가 연속 회복 시전과 맞음.",
       "reviewSheetPage": 10,
-      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json",
+      "copyRevision": "2026-09-13 · 스킬 설명 문장을 경마 표현으로 재작성. 수치·동작 변화 없음."
     },
     "samson_big": {
       "index": 98,
       "name": "삼손 빅",
       "pattern": "draining_tether",
-      "skillSignature": "b5f65b3637c73a3ab44f52ff4f6638e3a3ee679f38acd9f73b1385de7aef6d65",
+      "skillSignature": "5fd3e78028ae85748752e38c49a9451e56f32926a327a5c7a23434badc1e5f5c",
       "referenceRasterSha256": "553726d62ff77bdb7ec81d3893e208376bd30f8fa45a23175049736655ae35fd",
       "decision": "retain",
       "status": "retained",
       "reason": "대상 지정 뒤 전방에 손바닥을 유지하는 동작이 단일 대상 마나 구속에 적합. 마나 제거는 즉시 적용되어 흡수 회수 동작이 필수적이지 않음.",
-      "reviewSheetPage": 10
+      "reviewSheetPage": 10,
+      "copyRevision": "2026-09-13 · 스킬 설명 문장을 경마 표현으로 재작성. 수치·동작 변화 없음."
     },
     "sounds_of_earth": {
       "index": 99,
       "name": "사운즈 오브 어스",
       "pattern": "draining_tether",
-      "skillSignature": "ccd830e5a385ecfa3dffd93242bdfa7bd307c91110bf9b37f50ce3821e478113",
+      "skillSignature": "2654f259ca9884f374e7eb5ace5e49abcacccf6bec1a76043e1a71749e416011",
       "referenceRasterSha256": "f18a233a1f11034d2d331beb35b26ba855147e593f43b1df0345354b59f43cdb",
       "decision": "retain",
       "status": "retained",
       "reason": "대상 지정 뒤 전방에 손바닥을 유지하는 동작이 단일 대상 마나 구속에 적합. 마나 제거는 즉시 적용되어 흡수 회수 동작이 필수적이지 않음.",
-      "reviewSheetPage": 10
+      "reviewSheetPage": 10,
+      "copyRevision": "2026-09-13 · 스킬 설명 문장을 경마 표현으로 재작성. 수치·동작 변화 없음."
     },
     "royce_and_royce": {
       "index": 100,
       "name": "로이스 앤 로이스",
       "pattern": "cleanse_hymn",
-      "skillSignature": "b4a255d605c032bffdf3f0962377ca68818fe77e38800620631fc5657252cb00",
+      "skillSignature": "5ac6f6928c14e13c98f290976e05e334cb26b4967520a88fdc373f9dfe3dc00b",
       "referenceRasterSha256": "5cc36db5534ffe1c5d5780866e74032954d2106a95781f11b7dfdd58c1e7d11a",
       "decision": "retain",
       "status": "retained",
       "reason": "차분한 준비에서 손을 바깥으로 펼치는 동작이 정화와 회복 전달에 맞음.",
-      "reviewSheetPage": 10
+      "reviewSheetPage": 10,
+      "copyRevision": "2026-09-13 · 스킬 설명 문장을 경마 표현으로 재작성. 수치·동작 변화 없음."
     },
     "katsuragi_ace": {
       "index": 101,
       "name": "카츠라기 에이스",
       "pattern": "disarm_cone",
-      "skillSignature": "f8c653528ba01efbfa134767179f10f3e52ac41a7279bea5c8aa29e1570ddca0",
+      "skillSignature": "af6e927fb2ca6ee07f9005724a9c6311388586f21a80e445953a2025ce022202",
       "referenceRasterSha256": "156db7453a66a096605afcd9918d09cac468229f3405de7e25fc6e4960271adc",
       "decision": "retain",
       "status": "retained",
       "reason": "전방 지정에서 열린 손바닥 제지 자세로 전환하여 무장 해제 발동을 표현. 부채꼴 범위는 엔진 이펙트가 명확하게 표시.",
-      "reviewSheetPage": 11
+      "reviewSheetPage": 11,
+      "copyRevision": "2026-09-13 · 스킬 설명 문장을 경마 표현으로 재작성. 수치·동작 변화 없음."
     },
     "neo_universe": {
       "index": 102,
       "name": "네오 유니버스",
       "pattern": "trample_wave",
-      "skillSignature": "a3ed456d2d9cede71b1f00d345f882642c967b8ebca931d42770dc48886cb058",
+      "skillSignature": "ae4375d74df506362797c1d9f704b51f1f47ebb46a33a724de85b1f55acec0db",
       "referenceRasterSha256": "0d1d444b91df7907e0ed9680337452dba41b373abdc964b2fb73642e7a7ce0fd",
       "decision": "revise",
       "status": "integrated",
@@ -1276,26 +1377,28 @@
       "reviewSheetPage": 11,
       "revision": "docs/art-source/motions/skill-revisions-2026-09-11/neo_universe/review.json",
       "runtimeSha256": "33d5683746f1363f0c65424ad3f1640a43c7d98334d33df8f91f0a1b0c635971",
-      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json",
+      "copyRevision": "2026-09-13 · 스킬 설명 문장을 경마 표현으로 재작성. 수치·동작 변화 없음."
     },
     "hishi_miracle": {
       "index": 103,
       "name": "히시 미라클",
       "pattern": "giant_cutter",
-      "skillSignature": "40161fbf6894ac63518283fd0969bdd358fd866251225b84041c9b071c5f96b6",
+      "skillSignature": "5a26c46b89134c12f57405183e1a43cd071b0a8f5ac4c9bd432952ba3ae9c9c4",
       "referenceRasterSha256": "4f1364ba952e048034fd5a2a2453380650915994a2ab1783eaed835f7f0121ee",
       "decision": "revise",
       "status": "integrated",
       "reason": "가리키기와 손바닥 내밀기여서 무거운 단일 절단 타격이 보이지 않음.",
       "reviewSheetPage": 11,
       "revision": "docs/art-source/motions/skill-revisions-2026-09-11/hishi_miracle/review.json",
-      "runtimeSha256": "8781d99bf23a82a842a48d5bab367084290d8b16bbb6ba4603b335b3c933dff7"
+      "runtimeSha256": "8781d99bf23a82a842a48d5bab367084290d8b16bbb6ba4603b335b3c933dff7",
+      "copyRevision": "2026-09-13 · 스킬 설명 문장을 경마 표현으로 재작성. 수치·동작 변화 없음."
     },
     "tap_dance_city": {
       "index": 104,
       "name": "탭 댄스 시티",
       "pattern": "retaliate_storm",
-      "skillSignature": "dd0bdec0d8ff659c87fb907a7a973f514a84a06c9942d8322be6304ec44a0bdd",
+      "skillSignature": "b53395d01a87cfbe8d87281742fab6faadc15224e0a4c2568faef01f1b6698ae",
       "referenceRasterSha256": "4d8be99bb61626cd2f5a53b4c2bdaf14416f8509c96bf2a796f5830a02636586",
       "decision": "revise",
       "status": "integrated",
@@ -1303,37 +1406,40 @@
       "reviewSheetPage": 11,
       "revision": "docs/art-source/motions/skill-revisions-2026-09-11/tap_dance_city/review.json",
       "runtimeSha256": "c3cb362bf1f3b6676570c25f0916ffb12755082289213a332e03d384333e20be",
-      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json",
+      "copyRevision": "2026-09-13 · 스킬 설명 문장을 경마 표현으로 재작성. 수치·동작 변화 없음."
     },
     "duramente": {
       "index": 105,
       "name": "두라멘테",
       "pattern": "breach_line",
-      "skillSignature": "c7e058aae2a24d39d06a1d40aa817b5f5eccb9ee7d972c89eb90259688100669",
+      "skillSignature": "a69f455d94290a6bd49799b397b7d1eccd2b07c4c07ce5904c7ad09796901501",
       "referenceRasterSha256": "63ae220a70d88123aada3a199aad159a05437519ad3a50ea8c6b1e38ec200fe9",
       "decision": "retain",
       "status": "retained",
       "reason": "웅크린 준비 → 전진 달리기 → 낮은 직선 돌파 → 회수가 연결되어 직선 돌진과 일치. 방어 감소는 피격 대상 효과로 표시.",
       "reviewSheetPage": 11,
-      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json",
+      "copyRevision": "2026-09-13 · 스킬 설명 문장을 경마 표현으로 재작성. 수치·동작 변화 없음."
     },
     "rhein_kraft": {
       "index": 106,
       "name": "라인 크라프트",
       "pattern": "command_pulse",
-      "skillSignature": "f69690708a4cc5210a7fd90233afd69e0c096cae2e505d6848b64bc86bd5be22",
+      "skillSignature": "e90e60fa04f38a7171e93fd1a98f3e2eb4ad1513d0b42257e727774eefc20321",
       "referenceRasterSha256": "87493a1868ab59051a7dc1a3c136e11aa4a20795fbca7b0952d016c209ace92c",
       "decision": "retain",
       "status": "retained",
       "reason": "준비 뒤 한쪽 팔의 지시와 열린 팔 동작이 있어 아군에게 강화 효과를 전달하는 동작으로 유지. 대상 선정은 엔진 담당.",
       "reviewSheetPage": 11,
-      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json",
+      "copyRevision": "2026-09-13 · 스킬 설명 문장을 경마 표현으로 재작성. 수치·동작 변화 없음."
     },
     "cesario": {
       "index": 107,
       "name": "세자리오",
       "pattern": "sanctuary",
-      "skillSignature": "8be844c39beede3e03928653e25057b988f1cc2d5ee27e339093e070fa11647a",
+      "skillSignature": "71a9933463639b2af81c4abde989601a0ba55735a82b41cec21fabf5e4286bc0",
       "referenceRasterSha256": "9f333f80edcda93b004dd1ec377b71c0823cc70e99389eee039cdd8db5b52b03",
       "decision": "retain",
       "status": "retained",
@@ -1341,59 +1447,64 @@
       "reviewSheetPage": 11,
       "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json",
       "previousAugmentPatchSkillSignature": "bcc4a82b77f7eadbc54934379cf1e5e46837c31483b6df0b46a4e8bc71cf31e3",
-      "augmentPatchReview": "docs/qa/augment-motion-compatibility.json"
+      "augmentPatchReview": "docs/qa/augment-motion-compatibility.json",
+      "copyRevision": "2026-09-13 · 스킬 설명 문장을 경마 표현으로 재작성. 수치·동작 변화 없음."
     },
     "air_messiah": {
       "index": 108,
       "name": "에어 메사이어",
       "pattern": "silence_zone",
-      "skillSignature": "c3f59424337503fa11f8fd430594e2f84f1b511f5bc3c31d226bb17a0356d22c",
+      "skillSignature": "2c558f9f546fca39806ee85c07c5418c3a126e7f512504762754906456a7dcbf",
       "referenceRasterSha256": "29173960d1bf6e7362653bb1ee4cc2c1fc47c3d6169cbb7b1284c0c6f83f9997",
       "decision": "retain",
       "status": "retained",
       "reason": "대상 방향 지정과 제지하는 손바닥 발동이 침묵 부여에 적합. 지속 채널링이 아닌 즉시 지역 효과이므로 현 자세 유지.",
       "reviewSheetPage": 11,
-      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json",
+      "copyRevision": "2026-09-13 · 스킬 설명 문장을 경마 표현으로 재작성. 수치·동작 변화 없음."
     },
     "daring_heart": {
       "index": 109,
       "name": "데어링 하트",
       "pattern": "command_pulse",
-      "skillSignature": "594b8d8b653e85d85c84f67fb62bb393ba20777241612e9821d53852322772a9",
+      "skillSignature": "c25f89441d2e584e20771a1e152d1e2c64eccdecb014838a4385e686023f7875",
       "referenceRasterSha256": "e56fbc145643453e934fe4b79cf0ea8f0f8d1a6cd856cbcdeb304c91093ae7dc",
       "decision": "retain",
       "status": "retained",
       "reason": "준비 뒤 한쪽 팔의 지시와 열린 팔 동작이 있어 아군에게 강화 효과를 전달하는 동작으로 유지. 대상 선정은 엔진 담당.",
-      "reviewSheetPage": 11
+      "reviewSheetPage": 11,
+      "copyRevision": "2026-09-13 · 스킬 설명 문장을 경마 표현으로 재작성. 수치·동작 변화 없음."
     },
     "fusaichi_pandora": {
       "index": 110,
       "name": "후사이치 판도라",
       "pattern": "sanctuary",
-      "skillSignature": "a556428f68d7c9fbff103ce0233674be7fe7538cf1cf0d255ab5699371f0ce6a",
+      "skillSignature": "3673ac616e35ac167724c61f3a17141753c4c0b9dd16b598c7bb3f8e4205b187",
       "referenceRasterSha256": "8104ce0527cab1009039d7f9be386b1626e1cd67855aeb38aa37bf463b8a3539",
       "decision": "retain",
       "status": "retained",
       "reason": "모은 손과 열린 팔을 거쳐 안정된 회수로 이어져 정화와 주변 회복의 시전 흐름에 적합.",
-      "reviewSheetPage": 11
+      "reviewSheetPage": 11,
+      "copyRevision": "2026-09-13 · 스킬 설명 문장을 경마 표현으로 재작성. 수치·동작 변화 없음."
     },
     "buena_vista": {
       "index": 111,
       "name": "부에나 비스타",
       "pattern": "execution_refund",
-      "skillSignature": "d99d2885706df0c01af99f713d590f2095cbfdea00fb252e146f0722ee862a23",
+      "skillSignature": "8144cf9f238dfa997083b21da6a61290d4bcde0cbe81152f9b6e461b014ab513",
       "referenceRasterSha256": "b34475916a9d4b4cce100901b8074f6fb4c10eb941df4a8fe6ecf88ccc2030f2",
       "decision": "retain",
       "status": "retained",
       "reason": "대상 지시 뒤 자세를 낮춘 단일 전방 타격이 마무리 공격과 일치. 처치 시 마나 반환은 별도 성공 효과.",
       "reviewSheetPage": 12,
-      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json",
+      "copyRevision": "2026-09-13 · 스킬 설명 문장을 경마 표현으로 재작성. 수치·동작 변화 없음."
     },
     "orfevre": {
       "index": 112,
       "name": "오르페브르",
       "pattern": "pursuit_flurry",
-      "skillSignature": "85f537548c23c02b581b395e6d8b87581e154c3e74d2044bfbefafea27d3a3af",
+      "skillSignature": "451ee2af1df89dbffbb13189a941f3b06da1f2d7f63432c2fb30bb322b385a77",
       "referenceRasterSha256": "8fd9f453d68b9760512e61b921d7ac6ebeaed248a0ff92720c56f717cd876c04",
       "decision": "revise",
       "status": "integrated",
@@ -1401,13 +1512,14 @@
       "reviewSheetPage": 12,
       "revision": "docs/art-source/motions/skill-revisions-2026-09-11/orfevre/review.json",
       "runtimeSha256": "055c34f21c8a4d5499599a76442c0087eb02dbdfc743d7d9c15381d9ab6403e8",
-      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json",
+      "copyRevision": "2026-09-13 · 스킬 설명 문장을 경마 표현으로 재작성. 수치·동작 변화 없음."
     },
     "gentildonna": {
       "index": 113,
       "name": "젠틸돈나",
       "pattern": "retaliate_storm",
-      "skillSignature": "ea763ad0b08b307db6c6a87db6aa21f273e34aa165274f6d0fccf72392cee505",
+      "skillSignature": "a58f45f9abd7dc7b3c6468576e34b590de65983d5e09bc29a00fb31ec614917c",
       "referenceRasterSha256": "4ca7dff800c01ae162e43fcf6a67ebb6cc29154887f364d11c605fff3e93a7ac",
       "decision": "revise",
       "status": "integrated",
@@ -1415,24 +1527,26 @@
       "reviewSheetPage": 12,
       "revision": "docs/art-source/motions/skill-revisions-2026-09-11/gentildonna/review.json",
       "runtimeSha256": "a2ec371018fcc664cd571a6bd8356df35262c99b506e1b217425ab7ff06b6a8a",
-      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json",
+      "copyRevision": "2026-09-13 · 스킬 설명 문장을 경마 표현으로 재작성. 수치·동작 변화 없음."
     },
     "win_variation": {
       "index": 114,
       "name": "윈 바리아시옹",
       "pattern": "draining_tether",
-      "skillSignature": "8cc69a0130365346666f68cd5a5e3bdcc1e8a989b13ef209cb605b37be863bd6",
+      "skillSignature": "baf655ce3b0b80ceb82060fc49fa8662ea060eb61b390981a769abb9cd16ab43",
       "referenceRasterSha256": "b993be63724615a33cbcbbd89bbe3e44993ca3199c4d40c30ad29a81d6a1711d",
       "decision": "retain",
       "status": "retained",
       "reason": "대상 지정 뒤 전방에 손바닥을 유지하는 동작이 단일 대상 마나 구속에 적합. 마나 제거는 즉시 적용되어 흡수 회수 동작이 필수적이지 않음.",
-      "reviewSheetPage": 12
+      "reviewSheetPage": 12,
+      "copyRevision": "2026-09-13 · 스킬 설명 문장을 경마 표현으로 재작성. 수치·동작 변화 없음."
     },
     "admire_groove": {
       "index": 115,
       "name": "어드마이어 그루브",
       "pattern": "drain_arc",
-      "skillSignature": "59be3b87731d11e54efab1ae622cf5911d00fc302fe3966a388e813ac791b594",
+      "skillSignature": "c0344629e42b0b7435eca72f719431c81f26fdaa108d7589de52e5b93a963c84",
       "referenceRasterSha256": "ac194c09a3576e98d925ae607ea149727f2b04e5857233c284b144e4dd61b4c4",
       "decision": "revise",
       "status": "integrated",
@@ -1440,36 +1554,39 @@
       "reviewSheetPage": 12,
       "revision": "docs/art-source/motions/skill-revisions-2026-09-11/admire_groove/review.json",
       "runtimeSha256": "d840f5e44d3705536ca95c94164d8ea66563cb5785324866bf4b9169eab202ca",
-      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json",
+      "copyRevision": "2026-09-13 · 스킬 설명 문장을 경마 표현으로 재작성. 수치·동작 변화 없음."
     },
     "dream_journey": {
       "index": 116,
       "name": "드림 저니",
       "pattern": "isolation_strike",
-      "skillSignature": "3f682286cfa611a197965cb99e00b5eb6d55467f83db18639af51db7f3e194ed",
+      "skillSignature": "71e85c06050a5aa6bdf66f851e44224237ce853a800ff6ba1a8adb0cdd377551",
       "referenceRasterSha256": "62b6dac8992b5fd9f49f624bb844d118c7c94f8785ee7ee92a0c8144d93698a7",
       "decision": "retain",
       "status": "retained",
       "reason": "집중 준비 뒤 한쪽 팔을 강하게 내미는 타격과 회수가 있어 고립 대상 단일 공격에 적합.",
       "reviewSheetPage": 12,
-      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json",
+      "copyRevision": "2026-09-13 · 스킬 설명 문장을 경마 표현으로 재작성. 수치·동작 변화 없음."
     },
     "calstone_light_o": {
       "index": 117,
       "name": "칼스톤 라이트 오",
       "pattern": "tempo_banner",
-      "skillSignature": "950a05e2fb50bec5ed8bd36e117c6d9c6bd194b4db62248c3625f708601efc04",
+      "skillSignature": "faab4046ef47f90049a64afeb5baa2518e7cf4b30bed4cd27fc1feb7132b5d8f",
       "referenceRasterSha256": "f76cca94a66ae2e3be008dcf885cf11089bb4b7aedef4b088de4371bc3b8481b",
       "decision": "retain",
       "status": "retained",
       "reason": "가슴 가까이 모은 손 → 팔을 들어 신호 → 넓게 펼친 팔 → 회수로 주변 아군을 독려하는 시전과 일치.",
-      "reviewSheetPage": 12
+      "reviewSheetPage": 12,
+      "copyRevision": "2026-09-13 · 스킬 설명 문장을 경마 표현으로 재작성. 수치·동작 변화 없음."
     },
     "durandal": {
       "index": 118,
       "name": "뒤랑달",
       "pattern": "shadow_finish",
-      "skillSignature": "ca3160d2671f1537cbbb01c2474a39112e35b2ac0b43de65b49dfc2a09e2e166",
+      "skillSignature": "39a5f7ec76b58e20fad8ae06aa23030af779d5bc04eecab00c024072c7b809fa",
       "referenceRasterSha256": "6e67973115d2cb01e2b0d1947e9432b3b1f66b7a888c02b3aeedc4c34d693cd4",
       "decision": "revise",
       "status": "integrated",
@@ -1477,26 +1594,28 @@
       "reviewSheetPage": 12,
       "revision": "docs/art-source/motions/skill-revisions-2026-09-11/durandal/review.json",
       "runtimeSha256": "b1da6e15d1d60af012b8e05fbbec04259288fbe9a9593b3fdedcaf093e15c275",
-      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json",
+      "copyRevision": "2026-09-13 · 스킬 설명 문장을 경마 표현으로 재작성. 수치·동작 변화 없음."
     },
     "genuine": {
       "index": 119,
       "name": "제뉴인",
       "pattern": "drain_arc",
-      "skillSignature": "18223b70e1da36fdaec264434c190066e85622b3b52fd23c27b62f99c3d2a93d",
+      "skillSignature": "b6aba413edebdea0c180594043f79420870491fd50c0566212f28c1a6bfc98c0",
       "referenceRasterSha256": "9e15f03b5f5a6685adc1f1deff01b66f82f5dc032b3eeee7f7396730469bf59b",
       "decision": "revise",
       "status": "integrated",
       "reason": "직선 달리기만 이어져 도착 후 부채꼴 휩쓸기와 흡수 회수가 없음.",
       "reviewSheetPage": 12,
       "revision": "docs/art-source/motions/skill-revisions-2026-09-11/genuine/review.json",
-      "runtimeSha256": "63f5f09f8bd2a481c64fd571ad278c2056e314f9251bc1e620f2c8230f914504"
+      "runtimeSha256": "63f5f09f8bd2a481c64fd571ad278c2056e314f9251bc1e620f2c8230f914504",
+      "copyRevision": "2026-09-13 · 스킬 설명 문장을 경마 표현으로 재작성. 수치·동작 변화 없음."
     },
     "bubble_gum_fellow": {
       "index": 120,
       "name": "버블검 펠로",
       "pattern": "carry_charge",
-      "skillSignature": "255b742297116d0c4b5e062f0a293041a8eb6cd562edbb2e9dcc85833833abaf",
+      "skillSignature": "65912dedd2193a7fc407c57998318a88328b39cde1c75fd1810c02dabcd3723a",
       "referenceRasterSha256": "1147a956978388470005554952d22a2c0f147cbec71b87af171ccd93a15cdf7d",
       "decision": "revise",
       "status": "integrated",
@@ -1506,13 +1625,14 @@
       "runtimeSha256": "1596ce17a4f02258a918698b347a5004767fae514883068f5bc3fc3ea7399e26",
       "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json",
       "previousAugmentPatchSkillSignature": "de14838208d85b42f8e31c7555e11f0d01a09f9f0cf84ae549a9b08f71056e0a",
-      "augmentPatchReview": "docs/qa/augment-motion-compatibility.json"
+      "augmentPatchReview": "docs/qa/augment-motion-compatibility.json",
+      "copyRevision": "2026-09-13 · 스킬 설명 문장을 경마 표현으로 재작성. 수치·동작 변화 없음."
     },
     "sakura_chitose_o": {
       "index": 121,
       "name": "사쿠라 치토세 오",
       "pattern": "delayed_prison",
-      "skillSignature": "3464da0e2c07797c68449714d05683801a02347a24e2cf73f367bdad7d1c8e43",
+      "skillSignature": "af40365cbcae241b393c44b53401dcf8369c86bd54f54ce748c3bb847453c27c",
       "referenceRasterSha256": "15197c34b8e51efc9b09f0a2a194daefeeb999719db94cf0665e60937f22b6e5",
       "decision": "revise",
       "status": "integrated",
@@ -1520,13 +1640,14 @@
       "reviewSheetPage": 13,
       "revision": "docs/art-source/motions/skill-revisions-2026-09-11/sakura_chitose_o/review.json",
       "runtimeSha256": "c0f327e9074b8ea44b9fff94ab0ed796b67941939ec161f7e38a663dee01ec64",
-      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json",
+      "copyRevision": "2026-09-13 · 스킬 설명 문장을 경마 표현으로 재작성. 수치·동작 변화 없음."
     },
     "fenomeno": {
       "index": 122,
       "name": "페노메노",
       "pattern": "crossing_echo",
-      "skillSignature": "5243873c8b6bfc3b4b719ebdea6957dbc42d4ee381d466a0a1d4a6e04c252bc8",
+      "skillSignature": "a3bc447c56926964512ae3f6d1c6f19cafdbd3b292d8af7ec346ba0e830b0e5c",
       "referenceRasterSha256": "8cbb7e5014208eefc59e3f1d0a2bf330310e0b5f9dc8ace31d63bfcd2fbadfc0",
       "decision": "revise",
       "status": "integrated",
@@ -1534,26 +1655,34 @@
       "reviewSheetPage": 13,
       "revision": "docs/art-source/motions/skill-revisions-2026-09-11/fenomeno/review.json",
       "runtimeSha256": "fc600a55cdce049ae59e683b42f98ce00d2f36aa3473d49200aedd763b579fd6",
-      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json",
+      "styleCorrection": {
+        "from": "nige",
+        "to": "senko",
+        "source": "user",
+        "reason": "사용자 지정 각질 교정. 통과 지점 표본은 선입/선행이 섞여 있고 전적 기록의 주 각질은 선두권이다. 선행으로 고정한다."
+      },
+      "copyRevision": "2026-09-13 · 스킬 설명 문장을 경마 표현으로 재작성. 수치·동작 변화 없음."
     },
     "blast_onepiece": {
       "index": 123,
       "name": "블래스트 원피스",
       "pattern": "split_barrage",
-      "skillSignature": "eb28d591b847dc06060d708153c930eca5e9127e46da1b47665dc1fee165f7a7",
+      "skillSignature": "3d29f0f96b90cb985dffcc886dfa75ae70a5abe6c9d5914767aabb4a74b22aff",
       "referenceRasterSha256": "0742726222a20e5dc697290c6215d942b96d4d07a5897a65f183d5b584771012",
       "decision": "revise",
       "status": "integrated",
       "reason": "앞으로 뻗는 손의 변화만 있고 분산 사격과 두 번째 발사의 반동이 구분되지 않음.",
       "reviewSheetPage": 13,
       "revision": "docs/art-source/motions/skill-revisions-2026-09-11/blast_onepiece/review.json",
-      "runtimeSha256": "f67b6454df33cfe986d5bb7fb77c27b5717ab4d4aaba53a37d5f7d4d8fb55bb9"
+      "runtimeSha256": "f67b6454df33cfe986d5bb7fb77c27b5717ab4d4aaba53a37d5f7d4d8fb55bb9",
+      "copyRevision": "2026-09-13 · 스킬 설명 문장을 경마 표현으로 재작성. 수치·동작 변화 없음."
     },
     "almond_eye": {
       "index": 124,
       "name": "아몬드 아이",
       "pattern": "focus_three",
-      "skillSignature": "e56991041fe9c70a7c6a6577001e0db112b6fd9c4cff6fc9f10ec89309892b91",
+      "skillSignature": "06906d0c117caf4686878a83d82612a71568123c06a092b7344f9862db2c0dc4",
       "referenceRasterSha256": "9020836a3ce86bb2153d19484b9aa2803e4c8bee9d7032b574193611a5b36399",
       "decision": "revise",
       "status": "integrated",
@@ -1561,13 +1690,14 @@
       "reviewSheetPage": 13,
       "revision": "docs/art-source/motions/skill-revisions-2026-09-11/almond_eye/review.json",
       "runtimeSha256": "ef20ac0ce5fcb396b8928d4e22fb3a4f7bffd5f6720fad94d29f61c32623380b",
-      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json",
+      "copyRevision": "2026-09-13 · 스킬 설명 문장을 경마 표현으로 재작성. 수치·동작 변화 없음."
     },
     "lucky_lilac": {
       "index": 125,
       "name": "럭키 라일락",
       "pattern": "expanding_nova",
-      "skillSignature": "53d13e9a6f8b9adae930e8504f953617b93d16027b208c243880bc77b72693fa",
+      "skillSignature": "376ee7b324018e042d2554bc0052ed08ea63fc1915302d239fd5f8464ec63edc",
       "referenceRasterSha256": "1a5a387a465a1bbb69da9af4bc17792424cb7a05bb772dead911c1ad10ad50e7",
       "decision": "revise",
       "status": "integrated",
@@ -1575,13 +1705,14 @@
       "reviewSheetPage": 13,
       "revision": "docs/art-source/motions/skill-revisions-2026-09-11/lucky_lilac/review.json",
       "runtimeSha256": "c95700bb5006906ba873306d6e6e27640b737ce98a2e7e55df6695192798b326",
-      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json",
+      "copyRevision": "2026-09-13 · 스킬 설명 문장을 경마 표현으로 재작성. 수치·동작 변화 없음."
     },
     "gran_alegria": {
       "index": 126,
       "name": "그란 알레그리아",
       "pattern": "pursuit_flurry",
-      "skillSignature": "aad70cacc6cfc1d2304abc4cd1a2b9543647abafecb354da35dd0047c1ac3415",
+      "skillSignature": "82d5ac148deb2d3c24f0e9033f6926e472b3706f7ab27689d4e822b8d40862cd",
       "referenceRasterSha256": "f94456207629f4cb2d55cadea43cc594ad9bcfb638a7e1c41fc28fbb99d50e26",
       "decision": "revise",
       "status": "integrated",
@@ -1592,24 +1723,26 @@
       "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json",
       "previousAugmentPatchSkillSignature": "db31e0d4d4d5ee882cdb44764dd43f34c933d4090972e4da6d14076e45a21b6a",
       "augmentPatchReview": "docs/qa/augment-motion-compatibility.json",
-      "balanceCompatibilityReview": "docs/qa/adaptive-balance-motion-compatibility.json"
+      "balanceCompatibilityReview": "docs/qa/adaptive-balance-motion-compatibility.json",
+      "copyRevision": "2026-09-13 · 스킬 설명 문장을 경마 표현으로 재작성. 수치·동작 변화 없음."
     },
     "loves_only_you": {
       "index": 127,
       "name": "러브즈 온리 유",
       "pattern": "draining_tether",
-      "skillSignature": "c68ef893d20a40146ab7411b7ab93e8d03a8b3776108e7abb4207a5cd01b8dc6",
+      "skillSignature": "e989517992d3b382b8eb1992ffa93f0d3efcbf730e2a53a08515dffc1edac93e",
       "referenceRasterSha256": "43b6759d19d373334eff8e5e6a199166691f18845437bfc3acee22076b45cbbb",
       "decision": "retain",
       "status": "retained",
       "reason": "대상 지정 뒤 전방에 손바닥을 유지하는 동작이 단일 대상 마나 구속에 적합. 마나 제거는 즉시 적용되어 흡수 회수 동작이 필수적이지 않음.",
-      "reviewSheetPage": 13
+      "reviewSheetPage": 13,
+      "copyRevision": "2026-09-13 · 스킬 설명 문장을 경마 표현으로 재작성. 수치·동작 변화 없음."
     },
     "chrono_genesis": {
       "index": 128,
       "name": "크로노 제네시스",
       "pattern": "trample_wave",
-      "skillSignature": "cba28bd63113c982593a92af8c23953b7440a62c9defbf3b9bb5a3e8134a1b59",
+      "skillSignature": "92be18ced85c00633d3d482f3a004b7533c66836b8cf97083715f3ddcdaecd39",
       "referenceRasterSha256": "074ec1a16e88979b9453ad3c33e9275c5946d98803c9b2e3d1b36adf3db31d3e",
       "decision": "revise",
       "status": "integrated",
@@ -1617,63 +1750,68 @@
       "reviewSheetPage": 13,
       "revision": "docs/art-source/motions/skill-revisions-2026-09-11/chrono_genesis/review.json",
       "runtimeSha256": "115ed6e515e7843128a20f1d47350bd9a86b50cef835c86c6977abf35b5fe772",
-      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json",
+      "copyRevision": "2026-09-13 · 스킬 설명 문장을 경마 표현으로 재작성. 수치·동작 변화 없음."
     },
     "curren_bouquetdor": {
       "index": 129,
       "name": "카렌 부케도르",
       "pattern": "rescue_barrier",
-      "skillSignature": "3018a59c5a8b06336d0e20fc55968b2769b179f0642de51cf941d43aa1d948ce",
+      "skillSignature": "a21be43392f11ddc93ff173a63545339ba2560a9db30c1f673bf068fb5744585",
       "referenceRasterSha256": "615fa9afff5d4a40634f151fcf9171a2d51ab0af2f09089be34dc8185fcdf1ac",
       "decision": "retain",
       "status": "retained",
       "reason": "모은 손에서 아군 방향으로 손을 펴는 동작이 단일 아군 회복과 보호막 전달에 적합.",
-      "reviewSheetPage": 13
+      "reviewSheetPage": 13,
+      "copyRevision": "2026-09-13 · 스킬 설명 문장을 경마 표현으로 재작성. 수치·동작 변화 없음."
     },
     "stay_gold": {
       "index": 130,
       "name": "스테이 골드",
       "pattern": "iron_drain",
-      "skillSignature": "d58ee4bff5943c07e9038e06458702b23924ac70a73a5ccb944c986fa01bdd63",
+      "skillSignature": "e1b1f2102aaeace7126b13e412d12f09de541fd8421a4039d18d60f6dd7cb99f",
       "referenceRasterSha256": "39b9ce263b67f40a58c1bd92fddc4aa189fb5e5538ca9be64bd55353100c2377",
       "decision": "revise",
       "status": "integrated",
       "reason": "방어 자세에서 한 손을 내미는 것으로 끝나 지속 방어와 주변 흡수의 회수가 없음.",
       "reviewSheetPage": 13,
       "revision": "docs/art-source/motions/skill-revisions-2026-09-11/stay_gold/review.json",
-      "runtimeSha256": "cb6cca2189f4de09e6a5d15fcf8f6bdf95c743e846bf9027a25f50dcc0f58f0c"
+      "runtimeSha256": "cb6cca2189f4de09e6a5d15fcf8f6bdf95c743e846bf9027a25f50dcc0f58f0c",
+      "copyRevision": "2026-09-13 · 스킬 설명 문장을 경마 표현으로 재작성. 수치·동작 변화 없음."
     },
     "red_desire": {
       "index": 131,
       "name": "레드 디자이어",
       "pattern": "delayed_prison",
-      "skillSignature": "57207a7c1f2e989d45587018ddb75b549d10893eb9b96698493ecbff3e5a7db4",
+      "skillSignature": "725615acee8cd3860aefae91ca199e8892fb12addd9f48d1a639cae457bd37af",
       "referenceRasterSha256": "6e1f0623aa15dc435f89f17257dcd058b1124b89ad76afd5d279fbb185013d89",
       "decision": "revise",
       "status": "integrated",
       "reason": "가리키기와 손바닥 내밀기만 있어 지연 설치와 결계가 닫히는 순간이 구분되지 않음.",
       "reviewSheetPage": 14,
       "revision": "docs/art-source/motions/skill-revisions-2026-09-11/red_desire/review.json",
-      "runtimeSha256": "89d16b0f71e9775b783557416a4c004d7af71e42f4b489a47cfe4126107a42d1"
+      "runtimeSha256": "89d16b0f71e9775b783557416a4c004d7af71e42f4b489a47cfe4126107a42d1",
+      "copyRevision": "2026-09-13 · 스킬 설명 문장을 경마 표현으로 재작성. 수치·동작 변화 없음."
     },
     "kiseki": {
       "index": 132,
       "name": "키세키",
       "pattern": "bastion_growth",
-      "skillSignature": "b0784ab6de5ddee4850849d8d859ab6ef286033c075ac732057a74a2246fd519",
+      "skillSignature": "f8ba6a7be3b09255517ff8216e8919b0a349452ced27c7be84d1f5a1f5b889e7",
       "referenceRasterSha256": "dfca94f6af69f2439b174c549392c8da34f66b8cbd5efe07505371e0150ebc10",
       "decision": "revise",
       "status": "integrated",
       "reason": "가슴에서 팔을 펼치는 응원 동작이므로 자신에게 방어력을 축적하는 동작으로 교체.",
       "reviewSheetPage": 14,
       "revision": "docs/art-source/motions/skill-revisions-2026-09-11/kiseki/review.json",
-      "runtimeSha256": "5a77e8dd7dfd7faf3bf7fc9923dbd78e2a680c6b959f252abef8725e5d24d768"
+      "runtimeSha256": "5a77e8dd7dfd7faf3bf7fc9923dbd78e2a680c6b959f252abef8725e5d24d768",
+      "copyRevision": "2026-09-13 · 스킬 설명 문장을 경마 표현으로 재작성. 수치·동작 변화 없음."
     },
     "forever_young": {
       "index": 133,
       "name": "포에버 영",
       "pattern": "cinder_field",
-      "skillSignature": "d7c0c42ad06666a1e93cf552418b74a33d13e17529d09a965a5c1e1b4067e54d",
+      "skillSignature": "3aa33338e75bef2e9bf126df77ff07e1deae473ec4898074f79a81ae9a4a7a5b",
       "referenceRasterSha256": "9032b6de463b49eebbaaf4af94458312224edca3aad009822c633c229407177a",
       "decision": "revise",
       "status": "integrated",
@@ -1681,50 +1819,54 @@
       "reviewSheetPage": 14,
       "revision": "docs/art-source/motions/skill-revisions-2026-09-11/forever_young/review.json",
       "runtimeSha256": "cca55531c3df747f419648c6702359e22f3651ef9c6991e2bc0b0de8d1892cce",
-      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json",
+      "copyRevision": "2026-09-13 · 스킬 설명 문장을 경마 표현으로 재작성. 수치·동작 변화 없음."
     },
     "marche_lorraine": {
       "index": 134,
       "name": "마르슈 로렌",
       "pattern": "disarm_cone",
-      "skillSignature": "e5592c3d5c1dd739ac8fdea2989cf975a5dd66b9a95031eb234cebe116f2eb09",
+      "skillSignature": "e73995e6b5c9d82ad97c6e2b12247ac3dc16764e3b5caeae1c2ac75e128804e9",
       "referenceRasterSha256": "0dd8bd06ffa484136f04113d1462d1a872ccac1c7917833fea63577c9148f689",
       "decision": "retain",
       "status": "retained",
       "reason": "전방 지정에서 열린 손바닥 제지 자세로 전환하여 무장 해제 발동을 표현. 부채꼴 범위는 엔진 이펙트가 명확하게 표시.",
       "reviewSheetPage": 14,
-      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json",
+      "copyRevision": "2026-09-13 · 스킬 설명 문장을 경마 표현으로 재작성. 수치·동작 변화 없음."
     },
     "epiphaneia": {
       "index": 135,
       "name": "에피파네이아",
       "pattern": "retaliate_storm",
-      "skillSignature": "4729e8ab9b3b238717d7e857096662fe914528fdd4f72bada30b92a57de68fc5",
+      "skillSignature": "ab0716054f685888709816dee95de238d5e2dd10280e365dd52c8b7d188f2f3f",
       "referenceRasterSha256": "917d4db9050bba71d0fc48c70216105210f91997d1966b51e74e542348e15265",
       "decision": "revise",
       "status": "integrated",
       "reason": "응원처럼 팔을 펼치며 끝나서 방어 후 주기적 반격 폭풍의 흐름이 없음.",
       "reviewSheetPage": 14,
       "revision": "docs/art-source/motions/skill-revisions-2026-09-11/epiphaneia/review.json",
-      "runtimeSha256": "6c3ef5726cd48951f5c480bb1a964442d4cd4172cc28fee349a5ae1721e3a6bf"
+      "runtimeSha256": "6c3ef5726cd48951f5c480bb1a964442d4cd4172cc28fee349a5ae1721e3a6bf",
+      "copyRevision": "2026-09-13 · 스킬 설명 문장을 경마 표현으로 재작성. 수치·동작 변화 없음."
     },
     "logotype": {
       "index": 136,
       "name": "로고타입",
       "pattern": "command_pulse",
-      "skillSignature": "49b249d3b80ee340b467d78b6b98ff47e02cab27b5b266bdde3dc0646fc4906a",
+      "skillSignature": "a79c1925c09a71bd27c67513175f796ec3c3134052005b0d23ecdf8be8b35603",
       "referenceRasterSha256": "d417b61937d4ef075c3f0ead396d64592fc8a514367e9ab3ee66bd2b6c8491ab",
       "decision": "retain",
       "status": "retained",
       "reason": "준비 뒤 한쪽 팔의 지시와 열린 팔 동작이 있어 아군에게 강화 효과를 전달하는 동작으로 유지. 대상 선정은 엔진 담당.",
       "reviewSheetPage": 14,
-      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json",
+      "copyRevision": "2026-09-13 · 스킬 설명 문장을 경마 표현으로 재작성. 수치·동작 변화 없음."
     },
     "victoire_pisa": {
       "index": 137,
       "name": "빅투아르 피사",
       "pattern": "crossing_echo",
-      "skillSignature": "f323fb2d8216c73d542f52cd7fcf7eee1372ff24035f005cc2d392c2d47beb95",
+      "skillSignature": "1de77b854075bb5d28b7140371c6ec4b272053fc7e2338b3a4dc7bc0aa822ef0",
       "referenceRasterSha256": "57a973d67d96668387a47cf3ea31f05fc01024260f08000a1845062e42b34113",
       "decision": "revise",
       "status": "integrated",
@@ -1732,50 +1874,54 @@
       "reviewSheetPage": 14,
       "revision": "docs/art-source/motions/skill-revisions-2026-09-11/victoire_pisa/review.json",
       "runtimeSha256": "8ca71dd7851437cc3ded386163c161431ef0bd087a36dadf70e3c0897555180c",
-      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json",
+      "copyRevision": "2026-09-13 · 스킬 설명 문장을 경마 표현으로 재작성. 수치·동작 변화 없음."
     },
     "rose_kingdom": {
       "index": 138,
       "name": "로즈 킹덤",
       "pattern": "trample_wave",
-      "skillSignature": "d17c483b0e08046dca1e3a2904297e0d1f942fced05f43cf3733f5e79bc9e6ab",
+      "skillSignature": "d3358adb918d0b72cc2be819dd8a7d34a5a5afc2990c3791d8fceff7290eb6e2",
       "referenceRasterSha256": "0795c0572820a8476eb80207e8a5ea130c7533b391f5cc7660554861b3d12a1e",
       "decision": "revise",
       "status": "integrated",
       "reason": "돌진 중 낮은 자세에서 바로 회수하며 도착 지점의 발 구름과 충격 방출이 없음.",
       "reviewSheetPage": 14,
       "revision": "docs/art-source/motions/skill-revisions-2026-09-11/rose_kingdom/review.json",
-      "runtimeSha256": "707cf1a8be1c0007243d6779da3c771834fb45de9071da55a9a1462e2a1ac531"
+      "runtimeSha256": "707cf1a8be1c0007243d6779da3c771834fb45de9071da55a9a1462e2a1ac531",
+      "copyRevision": "2026-09-13 · 스킬 설명 문장을 경마 표현으로 재작성. 수치·동작 변화 없음."
     },
     "rulership": {
       "index": 139,
       "name": "룰러쉽",
       "pattern": "guardian_vow",
-      "skillSignature": "0df46186b9db1e85a6db7bdab1defe53c841b4f2c553422237f50199dbe332ea",
+      "skillSignature": "714f6265d5df6251b8e4d0d7e05fb07738ec549678d8c261518c24f9f2317fb1",
       "referenceRasterSha256": "0d4f09df0f1b1f22a4c0e40a4712b4b42a908529812d59dc078d8d1948400eb0",
       "decision": "retain",
       "status": "retained",
       "reason": "보호 준비 뒤 팔을 넓히고 한 손으로 적을 부르는 자세가 주변 아군 보호와 도발에 적합.",
       "reviewSheetPage": 14,
-      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json",
+      "copyRevision": "2026-09-13 · 스킬 설명 문장을 경마 표현으로 재작성. 수치·동작 변화 없음."
     },
     "efforia": {
       "index": 140,
       "name": "에프포리아",
       "pattern": "breach_line",
-      "skillSignature": "ccf9f1495dd8ed7b548fc89fe9798de682204e20225c3616f3586cc97dcbc388",
+      "skillSignature": "a839c963135e0847bd6d88d72306727aef89d03a2ed2d157191596f04573f454",
       "referenceRasterSha256": "133aa5d7ce4d4855e4641dd1d136913c44d0ecbfc25165fe7d4bff6f7f89161f",
       "decision": "retain",
       "status": "retained",
       "reason": "웅크린 준비 → 전진 달리기 → 낮은 직선 돌파 → 회수가 연결되어 직선 돌진과 일치. 방어 감소는 피격 대상 효과로 표시.",
       "reviewSheetPage": 14,
-      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json",
+      "copyRevision": "2026-09-13 · 스킬 설명 문장을 경마 표현으로 재작성. 수치·동작 변화 없음."
     },
     "titleholder": {
       "index": 141,
       "name": "타이틀홀더",
       "pattern": "retaliate_storm",
-      "skillSignature": "9dfaa6bfc8dd249cc6594574bdbe21d2d56f155f835219962dec5964fa61a3ec",
+      "skillSignature": "f983f3e293c82a31a624b7034604819337817f27691b4d01887299a088b525df",
       "referenceRasterSha256": "0e421077039fa8232db037adf410c860cfd0ed7885d73a47b03a006037c6591f",
       "decision": "revise",
       "status": "integrated",
@@ -1785,38 +1931,41 @@
       "runtimeSha256": "51770cbc814f5dace2831305da04cb0990f10593b123f8ad0747072e15f10785",
       "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json",
       "previousAugmentPatchSkillSignature": "7b9980a1aaa8d3caebb5f3aedfb37fc566701042168e2ac4d694da67e765d6a3",
-      "augmentPatchReview": "docs/qa/augment-motion-compatibility.json"
+      "augmentPatchReview": "docs/qa/augment-motion-compatibility.json",
+      "copyRevision": "2026-09-13 · 스킬 설명 문장을 경마 표현으로 재작성. 수치·동작 변화 없음."
     },
     "phalaenopsis": {
       "index": 142,
       "name": "팔레놉시스",
       "pattern": "dash_feint",
-      "skillSignature": "8b9277fb4e530b7358d43c860912dbda85e675c2ab2d18b448c0465ab9aac33b",
+      "skillSignature": "a4eacb40a505ced6a13ec5ee54cc9ae3ae268b0fbdf86ed2a0cf25fcd2b57549",
       "referenceRasterSha256": "df2585fe4deb0dec609534bab32f30355a57b38e4de56c61e44463005a37731f",
       "decision": "retain",
       "status": "retained",
       "reason": "낮은 대기 자세 → 전진 → 낮은 돌진 → 착지 회수로 준비 지연과 돌진이 구분됨. 보호막은 기존 전투 이펙트가 표시.",
       "reviewSheetPage": 15,
-      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json",
+      "copyRevision": "2026-09-13 · 스킬 설명 문장을 경마 표현으로 재작성. 수치·동작 변화 없음."
     },
     "verxina": {
       "index": 143,
       "name": "베르시나",
       "pattern": "expanding_nova",
-      "skillSignature": "b39e7a0301924bbc0263bc24d3b9c98cf672178c22bf27d649bd5d657173c667",
+      "skillSignature": "58ce34eccc130bd306c97e929e8d4fca5856c0edd1cfd3d255fb47d3d6cb9a67",
       "referenceRasterSha256": "38c73857f7f7a3f68cd74b8bb2dd2565347edf3f64b2be86c594b323c7b43208",
       "decision": "revise",
       "status": "integrated",
       "reason": "전방 손바닥 방출 뒤 바로 중립으로 돌아와 폭발 반경의 단계적 확대가 보이지 않음.",
       "reviewSheetPage": 15,
       "revision": "docs/art-source/motions/skill-revisions-2026-09-11/verxina/review.json",
-      "runtimeSha256": "fc2dbd6919275ce6e1c6bc10974bec10e5c28c2e3b2203d04a1c5742a35cd944"
+      "runtimeSha256": "fc2dbd6919275ce6e1c6bc10974bec10e5c28c2e3b2203d04a1c5742a35cd944",
+      "copyRevision": "2026-09-13 · 스킬 설명 문장을 경마 표현으로 재작성. 수치·동작 변화 없음."
     },
     "manhattan_cafe": {
       "index": 144,
       "name": "맨하탄 카페",
       "pattern": "drain_arc",
-      "skillSignature": "c31ae5f24a59feec42f34218b24806f48f66159d04189b38a8053a726722a681",
+      "skillSignature": "a4235a740e7dc46a8f54f0a36038e210f40a70c774f7f9f351a2c42d86bd9fc9",
       "referenceRasterSha256": "4f88d03a5ee682ba1f8232361886b970cb81b5753118910e3ae043962a8fde3e",
       "decision": "revise",
       "status": "integrated",
@@ -1826,19 +1975,21 @@
       "runtimeSha256": "dc6fecf747f0ea18440a3d1e76d1891b1ef290ce03e0c3636ee4baa5bbe35c9b",
       "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json",
       "previousAugmentPatchSkillSignature": "0f130f21c00cc0f9e918ed2b562effa5a9c9fece74c75aec6d9a7405df01887c",
-      "augmentPatchReview": "docs/qa/augment-motion-compatibility.json"
+      "augmentPatchReview": "docs/qa/augment-motion-compatibility.json",
+      "copyRevision": "2026-09-13 · 스킬 설명 문장을 경마 표현으로 재작성. 수치·동작 변화 없음."
     },
     "espoir_city": {
       "index": 145,
       "name": "에스포와르 시티",
       "pattern": "bulwark_circle",
-      "skillSignature": "46e1e6b7c56b6693766fd666f584577af137ac1ebe466f3e8f53e562b7e54fa9",
+      "skillSignature": "19de7a7dc882d6d563a88e5dc465fbc105eac2c1f30debff4eda6612f77b13e0",
       "referenceRasterSha256": "acd705ed94f4d9ca2a90ef8b44c7e03165e7427f796c1db3426dce8315c32ece",
       "decision": "retain",
       "status": "retained",
       "reason": "안쪽으로 모았다가 양팔을 넓게 펼치는 동작이 주변 방벽 부여에 적합. 지속 보호막 윤곽은 전투 이펙트가 담당.",
       "reviewSheetPage": 15,
-      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json"
+      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json",
+      "copyRevision": "2026-09-13 · 스킬 설명 문장을 경마 표현으로 재작성. 수치·동작 변화 없음."
     }
   },
   "progress": {

@@ -44,10 +44,33 @@ test('phone touch supports placement, bench return, sales, equipment and respons
   }
   await page.locator('.stage').evaluate(el=>{el.scrollTop=0;});
   await page.screenshot({path:info.outputPath('phone.png')});
-  for (const viewport of [{width:390,height:844},{width:844,height:390}]) {
-    await page.setViewportSize(viewport);
-    await expect.poll(()=>page.locator('.hud-field').evaluate(el=>Math.round(el.getBoundingClientRect().width))).toBe(viewport.width);
-    expect(await page.locator('.stage').evaluate(el=>el.scrollWidth<=el.clientWidth+1)).toBe(true);
+  // Portrait stacks the HUD into one scrolling column and the board spans it.
+  // Rotated, the board becomes the middle of a grid with the panels either side,
+  // because the same stack put a 421px board inside a 390px viewport and left
+  // the shop nineteen hundred pixels below the fold. Both orientations have to
+  // stay free of horizontal scrolling; landscape has to fit vertically too,
+  // which is the whole point of the layout and the thing worth pinning.
+  await page.setViewportSize({width:390,height:844});
+  await expect.poll(()=>page.locator('.hud-field').evaluate(el=>Math.round(el.getBoundingClientRect().width))).toBe(390);
+  expect(await page.locator('.stage').evaluate(el=>el.scrollWidth<=el.clientWidth+1)).toBe(true);
+
+  await page.setViewportSize({width:844,height:390});
+  await expect.poll(()=>page.locator('.stage').evaluate(el=>el.scrollHeight<=el.clientHeight+1)).toBe(true);
+  const rotated = await page.locator('.hud-field').evaluate(el=>{
+    const box=el.getBoundingClientRect();
+    return {width:box.width,height:box.height,bottom:box.bottom,viewport:innerHeight};
+  });
+  expect(rotated.width).toBeGreaterThan(200);
+  expect(rotated.width).toBeLessThan(844);
+  expect(rotated.bottom).toBeLessThanOrEqual(rotated.viewport);
+  expect(await page.locator('.stage').evaluate(el=>el.scrollWidth<=el.clientWidth+1)).toBe(true);
+  // Shop and bench are what fell off the bottom before; both must be on screen.
+  for (const selector of ['.hud-shop','.hud-bench','.hud-footer']) {
+    const seen = await page.locator(selector).evaluate(el=>{
+      const box=el.getBoundingClientRect();
+      return box.top>=0 && box.bottom<=innerHeight+1 && box.width>0;
+    });
+    expect(seen, `${selector} must be fully on screen in landscape`).toBe(true);
   }
   await page.screenshot({path:info.outputPath('landscape.png')});
 });

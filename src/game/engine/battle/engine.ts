@@ -1,4 +1,7 @@
-import { scaleSkillSupport, skillAbilityPowerMultiplier, upgradeSkill } from './skill-scaling';
+import { isExposedCarry } from './exposed-carries';
+import {
+  scaleSkillSupport, skillAbilityPowerMultiplier, skillAttackDamageMultiplier, upgradeSkill,
+} from './skill-scaling';
 /**
  * Deterministic fixed-timestep battle simulation (spec §14).
  *
@@ -7,7 +10,7 @@ import { scaleSkillSupport, skillAbilityPowerMultiplier, upgradeSkill } from './
  */
 import {
   BATTLE_MAX_SECONDS, BATTLE_NORMAL_SECONDS, BATTLE_TICK_MS, MANA_FROM_DAMAGE_CAP,
-  MANA_LOCK_AFTER_CAST_SECONDS, ROLE_ATTACK_MANA, ROLE_MANA_REGEN, OVERTIME_ATTACK_SPEED_MULT,
+  MANA_LOCK_AFTER_CAST_SECONDS, MAX_RECAST_DEPTH, ROLE_ATTACK_MANA, ROLE_MANA_REGEN, OVERTIME_ATTACK_SPEED_MULT,
   OVERTIME_CC_MULT, OVERTIME_DAMAGE_MULT,
   fighterAttackSpeed,
 } from '../constants';
@@ -16,6 +19,15 @@ import { activeTierIndex, getTrait } from '../traits/trait-defs';
 import { augmentApplies, augmentEffects, restoreItemMemory } from '../augments/runtime';
 import { getAugment } from '../augments/augment-defs';
 import type { Rng } from '../rng';
+import { getRaceCombatPhase, laterPhase, phaseIndex, raceProgress } from '../race-plan/race-phases';
+import { RaceResourceTracker, nodeBattleEffects, raceReadBranch } from '../race-plan/runtime';
+import { findRacePlanNode } from '../race-plan/defs';
+import { DEFAULT_STYLE_RESOLUTION, resolveRunStyles, styleCurveEffects } from '../race-plan/style-curve';
+import { conditionEffects, paceStyleScale, type RaceConditions } from '../race-plan/conditions';
+import type { StyleResolution } from '../race-plan/style-curve';
+import { g1Identity } from '../race-plan/g1-identity';
+import { getG1Theme } from '../race-plan/profiles';
+import type { RaceCombatPhase, RacePlanBattleInput } from '../race-plan/types';
 import type { BattleStats, EffectDef, StatusKind, TraitId } from '../types';
 import {
   addModifier, addShield, cleanupExpired, heal, isSilenced, isStunned, isTargetable,
@@ -24,6 +36,7 @@ import {
 } from './combat-unit';
 import {
   accumulateAura, applyEffect, isAuraKind, isContinuousAura, resolveTargets, triggerHolds, procDamage, resolveEffectTargets,
+  CONTINUOUS_GATES,
   type EffectContext, type TriggerEvent,
 } from './effects';
 import {
@@ -49,6 +62,8 @@ export type BattleSideInput = {
   augments: string[];
   augmentProgress?: Record<string, number>;
   tacticianItems: string[];
+  /** Race Plan riding this side's entry unit, when it has one on the board. */
+  racePlan?: RacePlanBattleInput;
 };
 
 export type BattleResult = {
@@ -64,7 +79,7 @@ export type BattleEvent =
   | { t: number; type: 'SHIELD'; source: string; target: string; amount: number }
   | { t: number; type: 'ATTACK_START'; source: string; target: string; releaseAt: number; impactAt: number; ranged: boolean }
   | { t: number; type: 'PROJECTILE'; source: string; target: string; impactAt: number }
-  | { t: number; type: 'DAMAGE'; source: string; target: string; damage: number; absorbed: number; isSkill: boolean; crit?: boolean }
+  | { t: number; type: 'DAMAGE'; source: string; target: string; damage: number; absorbed: number; isSkill: boolean; crit?: boolean; damageType?: NonNullable<EffectDef['damageType']>; physicalRatio?: number }
   | { t: number; type: 'ATTACK'; source: string; target: string; damage: number; crit: boolean }
   | { t: number; type: 'CAST'; source: string; skill: string; target?: string; releaseAt?: number; endAt?: number }
   | { t: number; type: 'SKILL_EFFECT'; source: string; targets: string[]; kind: EffectDef['kind']; radius: number; shape?: EffectDef['shape']; effectIndex?: number }
@@ -72,14 +87,23 @@ export type BattleEvent =
   | { t: number; type: 'DEATH'; unit: string; killer?: string }
   | { t: number; type: 'REVIVE'; unit: string }
   | { t: number; type: 'OVERTIME' }
+  /** Race Plan: the fight crossed into a new phase of the race. */
+  | { t: number; type: 'RACE_PHASE'; phase: RaceCombatPhase; progress: number }
+  /** Race Plan: an entry unit's node fired, for the recap and the HUD. */
+  | { t: number; type: 'RACE_PROC'; unit: string; nodeId: string; label: string; stacks?: number }
+  | { t: number; type: 'RACE_VFX'; unit: string; key: string }
+  | { t: number; type: 'DIVE'; source: string; target: string; from: Hex; to: Hex; duration: number; style: string }
   | { t: number; type: 'END'; winner: 'A' | 'B' | null };
 
 /** Renderable snapshot of a single simulation step. */
 export type BattleFrame = {
   /** Present on the first frame, including battles with an empty board. */
   participants?: { A: string; B: string };
+  conditions?: RaceConditions;
+  styles?: Record<string, ReturnType<typeof resolveRunStyles>>;
   t: number;
   overtime: boolean;
+  race?: { phase: RaceCombatPhase; progress: number };
   units: Array<{
     id: string; team: Team; unitDefId: string; star: 1 | 2 | 3;
     q: number; r: number; fromQ: number | null; fromR: number | null; progress: number;
@@ -87,6 +111,7 @@ export type BattleFrame = {
     alive: boolean; casting: boolean; statuses: StatusKind[];
     /** Optional for old recordings; current engine always records inspection data. */
     items?: string[]; traits?: TraitId[]; stats?: BattleStats;
+    race?: { nodeIds: string[]; resources: Array<{ kind: 'LEG' | 'STAMINA'; stacks: number; max: number }> };
   }>;
   events: BattleEvent[];
 };
@@ -96,6 +121,25 @@ export type BattleOptions = {
   recordFrames?: boolean;
   maxSeconds?: number;
   stage?: number;
+  /**
+   * The round's ground. It belongs to the round rather than to either side, so
+   * both boards get exactly the same going, pace, weather and clause.
+   *
+   * Omitted means *no ground*, not a default one: a battle assembled directly —
+   * a unit test, a preview, a what-if — has no round behind it, and must not
+   * silently inherit a going and a pace nobody asked for.
+   */
+  conditions?: RaceConditions;
+  /**
+   * The lobby's GⅠ. Its 과제 applies to every unit for the whole match.
+   * Omitted means no GⅠ and no 과제, for the same reason.
+   */
+  g1ThemeId?: string;
+  /**
+   * How a unit holding two 각질 (a native one plus an emblem) runs. Defaults to
+   * `DEFAULT_STYLE_RESOLUTION`; the balance audit sets it to compare policies.
+   */
+  styleResolution?: StyleResolution;
 };
 
 /** Maximum nesting for damage that itself causes damage. */
@@ -115,6 +159,26 @@ export class BattleEngine {
   readonly frames: BattleFrame[] = [];
   private time = 0;
   private overtimeApplied = false;
+  /**
+   * Race Plan phase tracking. `racePhaseHigh` never decreases: a revive or a
+   * summon can put units back on the board, and a phase that ran backwards
+   * would replay one-shot payouts.
+   */
+  private racePhase: RaceCombatPhase = 'START';
+  private racePhaseHigh = 0;
+  private raceStartCount: Record<Team, number> = { A: 0, B: 0 };
+  private raceStartHp: Record<Team, number> = { A: 0, B: 0 };
+  readonly raceLateHealth = new Map<string, { hp: number; maxHp: number }>();
+  private readonly raceResources = new Map<string, RaceResourceTracker>();
+  /** Re-release nesting per unit, so RECAST_SKILL cannot loop. */
+  private readonly recastDepth = new Map<string, number>();
+  /** Carries that began the fight with no friendly body beside them; see diveTarget. */
+  private readonly exposedAtStart = new Set<string>();
+  /** Continuously-gated aura bindings, pre-filtered per unit; see prepare(). */
+  private readonly auraBindings = new Map<string, EffectBinding[]>();
+  /** EVERY_SECONDS bindings with their index in the full list, pre-filtered. */
+  private readonly periodicBindings = new Map<string, Array<{ b: EffectBinding; i: number }>>();
+  private readonly raceEntryIds = new Map<Team, string>();
   /** Which team resolves first each tick. Seeded once so mirror matches are fair. */
   private readonly firstTeam: Team;
   private finished = false;
@@ -135,8 +199,8 @@ export class BattleEngine {
   private readonly participants: { A: string; B: string };
 
   constructor(
-    sideA: BattleSideInput,
-    sideB: BattleSideInput,
+    private readonly sideA: BattleSideInput,
+    private readonly sideB: BattleSideInput,
     private readonly rng: Rng,
     private readonly options: BattleOptions = {},
   ) {
@@ -152,11 +216,16 @@ export class BattleEngine {
       units: this.units,
       dealDamage: (s, t, amount, type, isSkill) => this.dealDamage(s, t, amount, type ?? 'MAGIC', isSkill),
       applyStatus: (s, t, e) => this.applyStatus(s, t, e),
-      dash: (u, t, d) => this.dash(u, t, d),
+      // A dive skill aims where the dive is, not at whatever the unit last hit.
+      visual: (unit, key) => { this.events.push({ t: this.time, type: 'RACE_VFX', unit: unit.id, key }); },
+      dash: (u, t, d) => this.dash(u, this.diveTarget(u) ?? t, d),
       summon: (owner, power, duration) => this.summon(owner, power, duration),
+      raceProgress: 0,
+      recast: (u) => this.recast(u),
     };
     this.prepare(sideA, 'A');
     this.prepare(sideB, 'B');
+    this.markExposedCarries();
   }
 
   // ------------------------------------------------------------------ setup
@@ -204,6 +273,8 @@ export class BattleEngine {
 
   private prepare(side: BattleSideInput, team: Team): void {
     const counts = this.traitCounts(team);
+    const conditions = this.options.conditions;
+    const identity = this.options.g1ThemeId ? g1Identity(getG1Theme(this.options.g1ThemeId)) : null;
     const teamUnits = this.units.filter((u) => u.team === team);
 
     for (const unit of teamUnits) {
@@ -256,13 +327,104 @@ export class BattleEngine {
         });
       }
 
+      // --- the round's ground and the lobby's GⅠ, on everyone
+      // A MELEE_ONLY / RANGED_ONLY tag is resolved here rather than at fire
+      // time: a unit that cannot receive the effect simply never binds it.
+      const reachable = (effect: EffectDef): boolean =>
+        !(effect.tag === 'MELEE_ONLY' && unit.base.attackRange > 1)
+        && !(effect.tag === 'RANGED_ONLY' && unit.base.attackRange <= 1);
+      if (conditions) {
+        conditionEffects(conditions).forEach((effect, i) => {
+          if (reachable(effect)) list.push({ effect, index: i, sourceKey: 'conditions', power: 1 });
+        });
+      }
+      for (const [i, effect] of (identity?.effects ?? []).entries()) {
+        if (reachable(effect)) list.push({ effect, index: i, sourceKey: 'g1', power: 1 });
+      }
+
+      // --- 각질 phase curve, on every unit that has a running style
+      // This is not part of the race plan: a unit runs its own style whether or
+      // not the player ever drew a plan card, which is what makes 각질 a real
+      // property of the roster rather than a trait threshold. It rides on
+      // `conditions` for the same reason the GⅠ 과제 does — a fight with no
+      // round behind it is not a race, so nobody is running a 각질 in it.
+      // The pace bends the whole curve: a hard pace empties a front-runner's
+      // early lead and pays the closers more than they could buy themselves.
+      // A unit can hold more than one 각질 once emblems are in play, and it
+      // still has to run a single race: `resolveRunStyles` decides which curve
+      // or curves apply, and at what weight.
+      if (conditions) {
+        for (const { style, weight, signature } of resolveRunStyles(
+          unit.traits, unit.nativeTraits, this.options.styleResolution ?? DEFAULT_STYLE_RESOLUTION,
+        )) {
+          const scale = paceStyleScale(conditions, style) * weight;
+          styleCurveEffects(style, signature).forEach((effect, i) => {
+            const scaled = effect.value === undefined ? effect : { ...effect, value: effect.value * scale };
+            list.push({ effect: scaled, index: i, sourceKey: `style:${style}`, power: 1 });
+          });
+        }
+      }
+
+      // --- race plan, bound only to this side's GⅠ entry
+      if (side.racePlan && unit.id === this.raceUnitId(side, team)) {
+        for (const nodeId of side.racePlan.nodeIds) {
+          const node = findRacePlanNode(nodeId);
+          if (!node) continue;
+          nodeBattleEffects(node, side.racePlan.trackState).forEach((effect, i) => {
+            list.push({ effect, index: i, sourceKey: `race-plan:${node.id}`, power: 1 });
+          });
+        }
+      }
+
       this.bindings.set(unit.id, list);
+      // Both hot loops walk a filtered view of this list every tick. Partition
+      // once here instead: the race systems roughly doubled the binding count
+      // per unit, which made re-filtering it 60 times a second the single
+      // largest cost in the step loop.
+      this.auraBindings.set(unit.id, list.filter(
+        (b) => isAuraKind(b.effect.kind) && (!b.effect.trigger || CONTINUOUS_GATES.has(b.effect.trigger.when)),
+      ));
+      this.periodicBindings.set(unit.id, list.map((b, i) => ({ b, i }))
+        .filter(({ b }) => b.effect.trigger?.when === 'EVERY_SECONDS'));
     }
+
+    if (side.racePlan) {
+      const id = this.raceUnitId(side, team);
+      if (id) {
+        this.raceEntryIds.set(team, id);
+        this.raceResources.set(id, new RaceResourceTracker(side.racePlan.nodeIds));
+      }
+    }
+  }
+
+  /**
+   * Records which carries were left without a neighbour on the starting board.
+   * Read once here, never recomputed; see diveTarget for why.
+   */
+  private markExposedCarries(): void {
+    for (const unit of this.units) {
+      if (isExposedCarry(unit, this.units.filter(u => u.team === unit.team))) this.exposedAtStart.add(unit.id);
+    }
+  }
+
+  /** The combat unit id carrying this side's entry, if it made it to the board. */
+  private raceUnitId(side: BattleSideInput, team: Team): string | null {
+    const wanted = side.racePlan?.entryInstanceId;
+    if (!wanted) return null;
+    const unit = this.units.find((u) => u.team === team && u.instanceId === wanted)
+      ?? this.units.find((u) => u.team === team && u.unitDefId === side.racePlan!.entryUnitDefId);
+    return unit?.id ?? null;
   }
 
   // ------------------------------------------------------------------- loop
   /** Runs the whole battle and returns the result. */
   run(): BattleResult {
+    // Summons join later and must not make a side look like it shrank.
+    for (const team of ['A', 'B'] as Team[]) {
+      const roster = this.units.filter((u) => u.team === team && !u.id.includes('~summon'));
+      this.raceStartCount[team] = roster.length;
+      this.raceStartHp[team] = roster.reduce((n, u) => n + u.maxHp, 0);
+    }
     this.fire('COMBAT_START');
     if (this.options.recordFrames) this.recordFrame();
     const maxSeconds = this.options.maxSeconds ?? BATTLE_MAX_SECONDS;
@@ -296,6 +458,7 @@ export class BattleEngine {
     this.ctx.now = this.time;
 
     if (!this.overtimeApplied && this.time >= BATTLE_NORMAL_SECONDS) this.enterOvertime();
+    this.advanceRacePhase();
 
     // Recompute aura totals and conditional passives before anyone acts.
     for (const unit of this.units) {
@@ -338,14 +501,8 @@ export class BattleEngine {
     for (const entry of unit.timedEffects) {
       if (entry.expiresAt > this.time && triggerHolds(unit, entry.effect.trigger, this.ctx, 'RECOMPUTE', target)) accumulateAura(unit, entry.effect);
     }
-    for (const b of this.bindings.get(unit.id) ?? []) {
-      if (!isAuraKind(b.effect.kind)) continue;
+    for (const b of this.auraBindings.get(unit.id) ?? []) {
       const gate = b.effect.trigger;
-      // Aura effects with an event trigger are handled when that event fires.
-      if (gate && !['ALWAYS', 'HP_BELOW', 'HP_ABOVE', 'TARGET_HP_BELOW', 'AFTER_SECONDS',
-        'IN_FRONT_ROWS', 'IN_BACK_ROWS', 'ADJACENT_ALLIES_AT_LEAST', 'NO_ADJACENT_ALLIES'].includes(gate.when)) {
-        continue;
-      }
       if (!triggerHolds(unit, gate, this.ctx, 'RECOMPUTE', target)) continue;
       if (b.effect.tag === 'AT_MAX_STACKS') {
         const key = Object.keys(unit.stacks).find((k) => k.startsWith('count:'));
@@ -401,6 +558,45 @@ export class BattleEngine {
   }
 
   // --------------------------------------------------------------- targeting
+  /**
+   * The carry a bruiser should be going for, if any.
+   *
+   * Targeting is nearest-first for everyone, which means a melee fighter walks
+   * into the enemy front line and stays there — and since every bruiser's skill
+   * carries a DASH aimed at its current target, the dive landed on the tank it
+   * was already standing next to. The role had the animation and none of the
+   * job.
+   *
+   * A bruiser instead looks for an *exposed* carry: one that started the fight
+   * with no friendly tank or bruiser on an adjacent hex. That makes the
+   * counterplay positional and legible — put a body next to your carry and it is
+   * safe, leave it out on an edge on its own and it gets found — rather than a
+   * stat check. A screened carry is never dived, so a well-formed board is not
+   * punished for having one.
+   *
+   * The read is taken once, from the starting board, and then held. Doing it
+   * live does not work: the front line advances on contact, so every screen
+   * dissolves a second or two in and every carry ends up exposed no matter how
+   * it was placed. Placement is the decision the player actually makes, so
+   * placement is what it is judged on.
+   */
+  private diveTarget(unit: CombatUnit): CombatUnit | null {
+    if (unit.role !== 'BRUISER') return null;
+    const open = this.units.filter((u) => u.team !== unit.team && u.alive
+      && isTargetable(u, this.time) && this.exposedAtStart.has(u.id));
+    if (!open.length) return null;
+    // Nearest exposed carry, carries before supports, id last so it is stable.
+    const rank = (u: CombatUnit): number => (u.role === 'SUPPORT' ? 1 : 0);
+    open.sort((a, b) => {
+      const da = hexDistance(unit.cell, a.cell);
+      const db = hexDistance(unit.cell, b.cell);
+      if (da !== db) return da - db;
+      if (rank(a) !== rank(b)) return rank(a) - rank(b);
+      return a.id.localeCompare(b.id);
+    });
+    return open[0];
+  }
+
   /** Spec §14.2 target priority. */
   private acquireTarget(unit: CombatUnit): CombatUnit | null {
     const taunt = unit.statuses.find((s) => s.kind === 'TAUNT' && s.expiresAt > this.time);
@@ -410,6 +606,13 @@ export class BattleEngine {
         this.setTarget(unit, tauntSource);
         return tauntSource;
       }
+    }
+
+    // A bruiser goes past the front line when the front line left someone open.
+    const dive = this.diveTarget(unit);
+    if (dive) {
+      this.setTarget(unit, dive);
+      return dive;
     }
 
     const current = unit.targetId ? this.byId(unit.targetId) : null;
@@ -442,9 +645,12 @@ export class BattleEngine {
   private setTarget(unit: CombatUnit, target: CombatUnit): void {
     if (unit.targetId === target.id) return;
     if (unit.targetId) this.byId(unit.targetId)?.attackedBy.delete(unit.id);
+    const hadTarget = unit.targetId !== null;
     unit.targetId = target.id;
     unit.attacksOnCurrentTarget = 0;
     target.attackedBy.add(unit.id);
+    // Only a genuine switch counts; acquiring the first target is not a pass.
+    if (hadTarget) this.fireFor(unit, 'ON_TARGET_CHANGED', target);
   }
 
   // ------------------------------------------------------------------ moving
@@ -516,6 +722,11 @@ export class BattleEngine {
       }
     }
     if (best) {
+      if (unit.role === 'BRUISER' && this.exposedAtStart.has(target.id) && hexDistance(unit.cell, best) > 0) {
+        this.events.push({ t: this.time, type: 'DIVE', source: unit.id, target: target.id,
+          from: { ...unit.cell }, to: { ...best }, duration: 1 / Math.max(.1, stat(unit, 'moveSpeedHexPerSec', this.time)),
+          style: resolveRunStyles(unit.traits, unit.nativeTraits, this.options.styleResolution ?? DEFAULT_STYLE_RESOLUTION).find(s => s.signature)?.style ?? 'senko' });
+      }
       unit.moveFrom = unit.cell;
       unit.cell = best;
       unit.moveProgress = 0;
@@ -603,6 +814,7 @@ export class BattleEngine {
       unit.mana = Math.min(stat(unit, 'maxMana', this.time), unit.mana + ROLE_ATTACK_MANA[unit.role]);
     }
     this.fireFor(unit, 'ON_ATTACK', target);
+    this.gainRaceResource(unit, 'ATTACK');
   }
 
   /** 결승선의 일격 converts crit chance beyond 100% into crit damage. */
@@ -637,7 +849,12 @@ export class BattleEngine {
     const critChance = stat(source, 'critChance', this.time) + source.aura.critChance;
     const skillCrit = isSkill && source.aura.skillsCanCrit && this.rng.bool(Math.min(1, critChance));
     if (isSkill) {
-      amount *= source.skillMultiplier * skillAbilityPowerMultiplier(stat(source, 'abilityPower', this.time));
+      // A physical cast scales on the caster's attack damage, a magic or true
+      // one on its ability power. Both are read as "how far above your own
+      // baseline are you", so the two build paths are worth the same.
+      amount *= source.skillMultiplier * (type === 'PHYSICAL'
+        ? skillAttackDamageMultiplier(stat(source, 'attackDamage', this.time), source.base.attackDamage)
+        : skillAbilityPowerMultiplier(stat(source, 'abilityPower', this.time)));
       amount *= 1 + source.aura.skillDamageAmp;
       if (skillCrit) amount *= stat(source, 'critMultiplier', this.time) + source.aura.critDamage + this.excessCritDamage(source, critChance);
     }
@@ -667,7 +884,7 @@ export class BattleEngine {
     const postMitigation = Math.max(0, remaining);
     const visibleDamage = Math.min(target.hp, postMitigation);
     target.hp -= postMitigation;
-    this.events.push({ t: this.time, type: 'DAMAGE', source: source.id, target: target.id, damage: Math.max(0, visibleDamage), absorbed: Math.max(0, amount - remaining), isSkill, ...(skillCrit ? { crit: true } : {}) });
+    this.events.push({ t: this.time, type: 'DAMAGE', source: source.id, target: target.id, damage: Math.max(0, visibleDamage), absorbed: Math.max(0, amount - remaining), isSkill, damageType: type, ...(isSkill && type === 'PHYSICAL' ? { physicalRatio: stat(source, 'attackDamage', this.time) / Math.max(1, source.base.attackDamage) } : {}), ...(skillCrit ? { crit: true } : {}) });
 
     // Spec §14.6 — mana from taking damage.
     if (target.role === 'TANK' && this.time >= target.manaLockUntil) {
@@ -686,7 +903,10 @@ export class BattleEngine {
     }
 
     source.recentDamageTo.set(target.id, (source.recentDamageTo.get(target.id) ?? 0) + postMitigation);
-    if (postMitigation > 0) this.fireFor(target, 'ON_HIT_TAKEN', source);
+    if (postMitigation > 0) {
+      this.fireFor(target, 'ON_HIT_TAKEN', source);
+      this.gainRaceResource(target, 'HIT_TAKEN');
+    }
 
     if (target.hp <= 0) this.kill(target, source);
     if (isSkill && source.alive && target.alive && amount > 0) this.fireFor(source, 'ON_SKILL_HIT', target);
@@ -755,7 +975,30 @@ export class BattleEngine {
       releaseAt: this.time + skillWindup(unit.skill), endAt: end });
     this.casts.push({ source: unit.id, target: primary?.id ?? null, start: this.time, end, timeline: skillTimeline(unit.skill) });
     this.fireFor(unit, 'ON_CAST', primary);
+    this.gainRaceResource(unit, 'CAST');
     this.resolveCasts();
+  }
+
+  /**
+   * Releases a unit's skill again without paying mana.
+   *
+   * A re-release can itself carry a RECAST_SKILL, so the depth is capped: two
+   * extra releases from one cast is the most any card can buy, and a unit that
+   * is stunned or silenced gets nothing at all.
+   */
+  private recast(unit: CombatUnit): void {
+    if (!unit.alive || isStunned(unit, this.time) || isSilenced(unit, this.time)) return;
+    const depth = this.recastDepth.get(unit.id) ?? 0;
+    if (depth >= MAX_RECAST_DEPTH) return;
+    this.recastDepth.set(unit.id, depth + 1);
+    try {
+      const held = unit.mana;
+      this.cast(unit);
+      unit.mana = held;
+      unit.manaLockUntil = this.time;
+    } finally {
+      this.recastDepth.set(unit.id, depth);
+    }
   }
 
   private resolveCasts(): void {
@@ -873,11 +1116,12 @@ export class BattleEngine {
   private tickPeriodics(): void {
     for (const unit of this.units) {
       if (!unit.alive) continue;
+      const periodics = this.periodicBindings.get(unit.id) ?? [];
+      if (!periodics.length) continue;
       const target = unit.targetId ? this.byId(unit.targetId) : null;
-      const list = this.bindings.get(unit.id) ?? [];
-      list.forEach((b, i) => {
-        if (b.effect.trigger?.when !== 'EVERY_SECONDS') return;
-        const interval = b.effect.interval ?? b.effect.trigger.threshold ?? 1;
+      periodics.forEach(({ b, i }) => {
+        if (this.racePhase === 'OVERTIME' && b.sourceKey.startsWith('race-plan:') && b.effect.kind === 'STACKING_STAT') return;
+        const interval = b.effect.interval ?? b.effect.trigger?.threshold ?? 1;
         const key = `${unit.id}:${i}`;
         const next = this.periodicNext.get(key) ?? interval;
         if (this.time < next) return;
@@ -902,30 +1146,142 @@ export class BattleEngine {
     const list = this.bindings.get(unit.id) ?? [];
     for (let i = 0; i < list.length; i += 1) {
       const b = list[i];
-      if (isAuraKind(b.effect.kind) && isContinuousAura(b.effect)) continue;
+      if (this.racePhase === 'OVERTIME' && b.sourceKey.startsWith('race-plan:') && b.effect.kind === 'STACKING_STAT') continue;
       const gate = b.effect.trigger;
+      // RECOMPUTE runs every tick for every unit and only ever keeps
+      // AFTER_SECONDS, so decide that before paying for triggerHolds rather
+      // than after it. Same result, one cheap comparison instead of a full
+      // gate evaluation on every binding sixty times a second.
+      if (event === 'RECOMPUTE' && gate?.when !== 'AFTER_SECONDS') continue;
+      if (isAuraKind(b.effect.kind) && isContinuousAura(b.effect)) continue;
       if (event === 'COMBAT_START') {
         // At combat start, run untriggered passives plus explicit COMBAT_START effects.
         if (gate && gate.when !== 'COMBAT_START' && gate.when !== 'ALWAYS') continue;
       } else if (!gate || gate.when === 'EVERY_SECONDS' || !triggerHolds(unit, gate, this.ctx, event, target)) {
         continue;
       }
-      if (event === 'RECOMPUTE' && gate?.when !== 'AFTER_SECONDS') continue;
       // An `interval` on an event-triggered effect is a re-use cooldown.
       if (b.effect.interval && gate && gate.when !== 'EVERY_SECONDS') {
         const key = `${unit.id}:${i}${b.effect.perTargetCooldown ? `:${target?.id ?? ''}` : ''}`;
         if (this.time < (this.triggerReadyAt.get(key) ?? 0)) continue;
         this.triggerReadyAt.set(key, this.time + b.effect.interval);
       }
-      applyEffect(this.ctx, unit, gate?.when === 'AFTER_SECONDS' ? { ...b.effect, oncePerCombat: true } : b.effect, b.index, {
+      const touched = applyEffect(this.ctx, unit, gate?.when === 'AFTER_SECONDS' ? { ...b.effect, oncePerCombat: true } : b.effect, b.index, {
         power: b.power, sourceKey: b.sourceKey, currentTarget: target, event,
       });
+      if (touched > 0 && b.sourceKey.startsWith('style:') && gate?.when === 'ON_RACE_PHASE') {
+        const key = 'style_signature_' + b.sourceKey.slice(6);
+        if (!this.events.some(e => e.type === 'RACE_VFX' && e.t === this.time && e.unit === unit.id && e.key === key))
+          this.events.push({ t: this.time, type: 'RACE_VFX', unit: unit.id, key });
+      }
+      if (touched > 0 && b.sourceKey.startsWith('race-plan:')) {
+        const nodeId = b.sourceKey.slice('race-plan:'.length);
+        if (!this.events.some(e => e.t === this.time && e.type === 'RACE_PROC' && e.unit === unit.id && e.nodeId === nodeId))
+          this.events.push({ t: this.time, type: 'RACE_PROC', unit: unit.id, nodeId, label: findRacePlanNode(nodeId)?.nameKo ?? nodeId });
+      }
     }
     if (event === 'COMBAT_START') {
       unit.maxHp = stat(unit, 'hp', this.time);
       unit.hp = unit.maxHp;
       unit.mana = Math.min(stat(unit, 'maxMana', this.time), stat(unit, 'startMana', this.time));
     }
+  }
+
+  // -------------------------------------------------------------- race plan
+  /**
+   * Moves the race forward and fires the phase exactly once.
+   *
+   * Progress is the larger of the clock and the share of the starting field
+   * that has fallen, so a fight that ends in ten seconds still runs through
+   * 4코너 and 최종 직선 instead of skipping every late-race payout.
+   */
+  private advanceRacePhase(): void {
+    const sides = (['A', 'B'] as Team[]).map((team) => {
+      const living = this.units.filter((u) => u.alive && u.team === team && !u.id.includes('~summon'));
+      return {
+        alive: living.length,
+        start: this.raceStartCount[team],
+        hp: living.reduce((n, u) => n + Math.min(u.hp, u.maxHp), 0),
+        startHp: this.raceStartHp[team],
+      };
+    });
+    this.racePhaseHigh = Math.max(this.racePhaseHigh, raceProgress(this.time, sides));
+    this.ctx.raceProgress = this.racePhaseHigh;
+    const next = laterPhase(this.racePhase, getRaceCombatPhase(this.time, this.racePhaseHigh));
+    // A burst can cross multiple thresholds in a tick; resolve each once in order.
+    const phases: RaceCombatPhase[] = ['START', 'POSITIONING', 'LATE', 'LAST_3F', 'OVERTIME'];
+    for (let index = phaseIndex(this.racePhase) + 1; index <= phaseIndex(next); index++) {
+      const crossed = phases[index];
+      this.racePhase = crossed;
+      this.ctx.racePhase = crossed;
+      if (crossed === 'LATE') for (const u of this.units) this.raceLateHealth.set(u.id, { hp: u.alive ? u.hp : 0, maxHp: u.maxHp });
+      this.events.push({ t: this.time, type: 'RACE_PHASE', phase: crossed, progress: Math.round(this.racePhaseHigh * 1000) / 1000 });
+      this.fire('RACE_PHASE');
+      this.resolveRacePhasePayouts(crossed);
+    }
+    this.tickRaceResources();
+  }
+
+  private raceUnit(team: Team): CombatUnit | null {
+    const id = this.raceEntryIds.get(team);
+    return id ? this.byId(id) : null;
+  }
+
+  private applyRaceEffects(unit: CombatUnit, effects: EffectDef[], sourceKey: string): void {
+    const target = unit.targetId ? this.byId(unit.targetId) : null;
+    effects.forEach((effect, i) => {
+      applyEffect(this.ctx, unit, effect, i, {
+        power: 1, sourceKey, currentTarget: target, event: 'RACE_PHASE',
+      });
+    });
+  }
+
+  private resolveRacePhasePayouts(phase: RaceCombatPhase): void {
+    for (const team of ['A', 'B'] as Team[]) {
+      const unit = this.raceUnit(team);
+      if (!unit?.alive) continue;
+      const tracker = this.raceResources.get(unit.id);
+      for (const payout of tracker?.onPhase(phase) ?? []) {
+        this.applyRaceEffects(unit, payout.effects, `race-plan:${payout.nodeId}`);
+        this.events.push({ t: this.time, type: 'RACE_PROC', unit: unit.id, nodeId: payout.nodeId, label: payout.label, stacks: payout.stacks });
+      }
+      // 전개 읽기 resolves its one explicit branch here and keeps it.
+      if (phase === 'LATE' && this.raceHasNode(team, 'FM_RACE_READ')) {
+        const allies = this.units.filter((u) => u.alive && u.team === unit.team).length;
+        const foes = this.units.filter((u) => u.alive && u.team !== unit.team).length;
+        const { branch, effects } = raceReadBranch(allies, foes);
+        this.applyRaceEffects(unit, effects, 'race-plan:FM_RACE_READ');
+        this.events.push({ t: this.time, type: 'RACE_PROC', unit: unit.id, nodeId: 'FM_RACE_READ', label: branch === 'HOLD' ? '기다린다' : '간다' });
+      }
+    }
+  }
+
+  private raceHasNode(team: Team, nodeId: string): boolean {
+    const side = team === 'A' ? this.sideA : this.sideB;
+    return Boolean(side.racePlan?.nodeIds.includes(nodeId));
+  }
+
+  private tickRaceResources(): void {
+    for (const team of ['A', 'B'] as Team[]) {
+      const unit = this.raceUnit(team);
+      if (!unit?.alive) continue;
+      const tracker = this.raceResources.get(unit.id);
+      if (!tracker?.active) continue;
+      for (const batch of tracker.onTick(this.time, this.racePhase)) this.applyRaceEffects(unit, batch.effects, `race-plan:resource:${batch.nodeId}`);
+    }
+  }
+
+  /** Attack / cast / hit accrual for 각력 and 지구력. */
+  private gainRaceResource(unit: CombatUnit, kind: 'ATTACK' | 'CAST' | 'HIT_TAKEN'): void {
+    const tracker = this.raceResources.get(unit.id);
+    if (!unit.alive || this.racePhase === 'OVERTIME' || !tracker?.active) return;
+    for (const batch of tracker.onEvent(kind)) this.applyRaceEffects(unit, batch.effects, `race-plan:resource:${batch.nodeId}`);
+  }
+
+  /** Current gauge for the entry unit, read by the renderer. */
+  raceGauge(team: Team): { kind: 'LEG' | 'STAMINA'; stacks: number; max: number } | null {
+    const unit = this.raceUnit(team);
+    return unit ? this.raceResources.get(unit.id)?.gauge() ?? null : null;
   }
 
   // --------------------------------------------------------------- overtime
@@ -962,12 +1318,17 @@ export class BattleEngine {
 
   private recordFrame(): void {
     this.frames.push({
-      ...(this.frames.length === 0 ? { participants: this.participants } : {}),
+      ...(this.frames.length === 0 ? { participants: this.participants, ...(this.options.conditions ? { conditions: this.options.conditions, styles: Object.fromEntries(this.units.map(u => [u.id, resolveRunStyles(u.traits, u.nativeTraits, this.options.styleResolution ?? DEFAULT_STYLE_RESOLUTION)])) } : {}) } : {}),
       t: Math.round(this.time * 1000) / 1000,
       overtime: this.overtimeApplied,
+      race: { phase: this.racePhase, progress: this.racePhaseHigh },
       units: this.units.map((u) => ({
         id: u.id, team: u.team, unitDefId: u.unitDefId, star: u.star,
         items: [...u.items], traits: [...u.traits],
+        ...(this.raceEntryIds.get(u.team) === u.id ? { race: {
+          nodeIds: [...(u.team === 'A' ? this.sideA : this.sideB).racePlan!.nodeIds],
+          resources: this.raceResources.get(u.id)!.resources.map(({ kind, stacks, max }) => ({ kind, stacks, max })),
+        } } : {}),
         stats: {
           ...Object.fromEntries(Object.keys(u.base).map(key => [key, stat(u, key as keyof BattleStats, this.time)])) as BattleStats,
           armor: resistFor(u, 'PHYSICAL', this.time), magicResist: resistFor(u, 'MAGIC', this.time),

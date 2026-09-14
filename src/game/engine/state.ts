@@ -2,7 +2,12 @@
 import type { AugmentGrade, Cost, Role, Star, TraitId } from './types';
 
 export type MatchPhase =
-  | 'BOOT' | 'LOBBY' | 'ROUND_PREP' | 'AUGMENT_SELECT' | 'DRAFT' | 'BATTLE'
+  | 'BOOT' | 'LOBBY' | 'ROUND_PREP' | 'AUGMENT_SELECT'
+  /** Race Plan: 출주 계획(2-5) and 전개 수정(3-5). */
+  | 'RACE_PLAN_SELECT'
+  /** Race Plan: GⅠ 출주 등록(4-5) and the finishing move that follows it. */
+  | 'RACE_ENTRY_SELECT'
+  | 'DRAFT' | 'BATTLE'
   | 'ROUND_RESOLVE' | 'ELIMINATION' | 'GAME_OVER';
 
 export type RoundKind = 'PVE' | 'PVP' | 'DRAFT';
@@ -68,6 +73,8 @@ export type PlayerState = {
   pendingGrants: PendingGrant[];
   /** Secondary trait handed out by the 이중 적성 augment. */
   bonusTraits: Array<{ instanceId: string; trait: TraitId }>;
+  /** Race Plan state; optional so saves written before the system still load. */
+  racePlan?: import('./race-plan/types').RacePlanState;
   finalLineup?: ResultLineup;
 };
 
@@ -140,6 +147,7 @@ export type BattleOutcome = {
   survivorsLoser: number;
   durationSeconds: number;
   wentToOvertime: boolean;
+  raceLast3fReached?: boolean;
   isGhost: boolean;
 };
 
@@ -174,6 +182,12 @@ export type MatchState = {
   finalStandings: string[] | null;
   /** One immutable public-field snapshot per elimination round. */
   eliminationLineups?: Record<number, ResultLineup[]>;
+  /** The GⅠ every player in this lobby is entered for. Optional for old saves. */
+  g1ThemeId?: string;
+  /** Shared going for the current round, rolled once so both sides race the same track. */
+  racePlanTrack?: import('./race-plan/types').TrackState;
+  /** The round's full ground: going, pace, weather and any 개최 특례. */
+  raceConditions?: import('./race-plan/conditions').RaceConditions;
 };
 
 export const isAlive = (p: PlayerState): boolean => p.hp > 0 && p.eliminatedAtRound === null;

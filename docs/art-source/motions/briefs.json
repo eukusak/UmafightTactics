@@ -48,7 +48,7 @@
           }
         ],
         "vfxKey": "vfx_dash_sashi",
-        "description": "[관통 돌파] 돌진 후 직선 6칸의 최대 4명에게 방어력 20% 감소(4초)와 381 물리 피해. 근거: 1999 天皇賞(秋)(GI) 1위.",
+        "description": "[관통 돌파] 안쪽으로 파고들며 직선 6칸의 최대 4명을 제칩니다. 4초 동안 방어력이 20% 무너지고 381의 물리 피해를 입습니다. 근거: 1999 天皇賞(秋)(GI) 1위.",
         "choreography": {
           "windup": 0.3,
           "recovery": 0.3,
@@ -61,7 +61,7 @@
           "motion": "STRIKE"
         }
       },
-      "skillSignature": "39cdc44510f08756f4f041d1de916160fdb8988fa5b2721ba9813e3d26aa176b",
+      "skillSignature": "4511cda9ad1ec111a0042fc792d6f9cfb64ce5394b37a7b6c581540e69021d3f",
       "basicAttack": "원거리 조준 → 발사 준비 → 투사체 방출 → 반동 회복",
       "skillPoseDraft": [
         "낮게 웅크린 출발",
@@ -137,7 +137,7 @@
           }
         ],
         "vfxKey": "vfx_aoe_burst",
-        "description": "[지속 광선] 직선 6칸 최대 4명을 향해 0.35초 간격으로 4회 광선. 매회 65 마법 피해, 시전 중 일반 공격 불가. 근거: 1998 毎日王冠(GII) 1위.",
+        "description": "[지속 광선] 직선 6칸의 최대 4명을 향해 0.35초 간격으로 네 번 광선을 쏘아 매번 65의 마법 피해를 입힙니다. 쏘는 동안에는 기본 공격을 하지 못합니다. 근거: 1998 毎日王冠(GII) 1위.",
         "choreography": {
           "windup": 0.4,
           "recovery": 0.3,
@@ -150,7 +150,7 @@
           "motion": "CHANNEL"
         }
       },
-      "skillSignature": "c191ba1eb46d612709f7184cac45e8011e1d2f4989276c6591bbb9fe5b4521f7",
+      "skillSignature": "a4ddccc89180a4159fc973e899b7e360a8a3e2bcb0417adc1c2850c4b66f37f7",
       "basicAttack": "원거리 조준 → 발사 준비 → 투사체 방출 → 반동 회복",
       "skillPoseDraft": [
         "힘을 모으는 자세",
@@ -207,7 +207,7 @@
           }
         ],
         "vfxKey": "vfx_projectile",
-        "description": "[삼단 결정타] 한 적에게 88 → 128 → 232 물리 피해. 마지막 타격에 위력이 집중됨. 근거: 1993 有馬記念(GI) 1위.",
+        "description": "[삼단 결정타] 한 상대를 88, 128, 232의 물리 피해로 몰아붙입니다. 마지막 한 방에 힘이 실립니다. 근거: 1993 有馬記念(GI) 1위.",
         "choreography": {
           "windup": 0.45,
           "recovery": 0.3,
@@ -220,7 +220,7 @@
           "motion": "PULSE"
         }
       },
-      "skillSignature": "4a2b06f1140a510480ef4e0a38f090dbc59511d601b0a930cb93802686db0753",
+      "skillSignature": "a84d4301083e9ec0f805c470dd48431e9c3c9a38ad22b8c8ab8a5736484ff91f",
       "basicAttack": "원거리 조준 → 발사 준비 → 투사체 방출 → 반동 회복",
       "skillPoseDraft": [
         "동일 대상에 1차 발사",
@@ -274,7 +274,7 @@
           }
         ],
         "vfxKey": "vfx_buff",
-        "description": "[진군 박자] 2칸 내 최대 4명의 아군에게 4초간 공격속도 +37.2%. 자신 외 대상은 마나 8 회복. 근거: 1977 日本短波賞(OP) 1위.",
+        "description": "[진군 박자] 2칸 안의 아군 최대 4명의 공격속도를 4초 동안 +37.2% 끌어올리고, 자신을 뺀 아군은 마나를 8 회복합니다. 근거: 1977 日本短波賞(OP) 1위.",
         "choreography": {
           "windup": 0.3,
           "recovery": 0.3,
@@ -287,7 +287,7 @@
           "motion": "STRIKE"
         }
       },
-      "skillSignature": "1903827c02ce7b21a4d028bf5e433b8d2d3dd505fb359a8412b68f101f2430c1",
+      "skillSignature": "ebdadefc9181669fc022427778b710f26ca846478316a88902374b1e17403b91",
       "basicAttack": "원거리 조준 → 발사 준비 → 투사체 방출 → 반동 회복",
       "skillPoseDraft": [
         "몸 중심에 기운 모음",
@@ -350,7 +350,7 @@
           }
         ],
         "vfxKey": "vfx_aoe_burst",
-        "description": "[확장 폭발] 0.35초 간격으로 대상 중심 0·1·2칸으로 확장하는 폭발. 타격마다 최대 4명에게 108 마법 피해. 근거: 1994 朝日杯3歳S(GI) 1위.",
+        "description": "[확장 폭발] 0.35초 간격으로 대상을 중심에 두고 0칸, 1칸, 2칸까지 번지는 폭발이 일어나, 한 번에 최대 4명씩 108의 마법 피해를 입힙니다. 근거: 1994 朝日杯3歳S(GI) 1위.",
         "choreography": {
           "windup": 0.3,
           "recovery": 0.3,
@@ -363,7 +363,7 @@
           "motion": "PULSE"
         }
       },
-      "skillSignature": "e1cad23ade63c1ed8dedbaa5c12417d068055cf4fcb5c4b212d11830afb8c074",
+      "skillSignature": "cc3cce8b3a5ebaa963d0141b5afa85ef1bf9dc7cd044bec90f8bbeb2d9e2c6c7",
       "basicAttack": "원거리 조준 → 발사 준비 → 투사체 방출 → 반동 회복",
       "skillPoseDraft": [
         "힘을 모으는 자세",
@@ -407,7 +407,7 @@
           }
         ],
         "vfxKey": "vfx_aoe_burst",
-        "description": "[집중 유성] 0.9초 집중 후 밀집 지점 2칸 내 최대 5명에게 411 마법 피해. 집중 중 기절하면 취소. 근거: 1990 有馬記念(GI) 1위.",
+        "description": "[집중 유성] 0.9초 동안 힘을 모은 뒤 가장 몰려 있는 지점 2칸 안의 최대 5명에게 411의 마법 피해를 내리꽂습니다. 모으는 도중 기절하면 무산됩니다. 근거: 1990 有馬記念(GI) 1위.",
         "choreography": {
           "windup": 0.9,
           "recovery": 0.3,
@@ -420,7 +420,7 @@
           "motion": "STRIKE"
         }
       },
-      "skillSignature": "f6bcaeea8a9156ef5276d6af3e8833400229809b7d2123ad23460ae194885069",
+      "skillSignature": "70cd12616ddf32ce0513c0859296805aeb1a13cd45cfa4027cfe4bd321d15f48",
       "basicAttack": "원거리 조준 → 발사 준비 → 투사체 방출 → 반동 회복",
       "skillPoseDraft": [
         "힘을 모으는 자세",
@@ -490,7 +490,7 @@
           }
         ],
         "vfxKey": "vfx_dash_oikomi",
-        "description": "[추격 연타] 돌진 후 한 적에게 91 물리 피해를 3회, 4초간 공격속도 +21.2%. 대상 사망 시 남은 타격은 재탐색. 근거: 2012 菊花賞(GI) 1위.",
+        "description": "[추격 연타] 한 상대에게 붙어 91의 물리 피해를 세 번 몰아치고, 4초 동안 공격속도가 +21.2% 오릅니다. 상대가 먼저 쓰러지면 남은 타격은 다음 상대를 찾아갑니다. 근거: 2012 菊花賞(GI) 1위.",
         "choreography": {
           "windup": 0.45,
           "recovery": 0.3,
@@ -503,7 +503,7 @@
           "motion": "PULSE"
         }
       },
-      "skillSignature": "28605f6dddcc89ad958fe311ab4290b31995312db143814ab9486f2737eb8052",
+      "skillSignature": "6688ad2ec8ee66a14c66b60c8b57ae86a2a519d97efb02592efc58571e32bc31",
       "basicAttack": "근접 준비 → 당김 → 타격 → 회수",
       "skillPoseDraft": [
         "낮게 웅크린 출발",
@@ -559,7 +559,7 @@
           }
         ],
         "vfxKey": "vfx_projectile",
-        "description": "[분산 포격] 가까운 적에서 시작해 서로 다른 최대 3명에게 136 마법 피해. 0.35초 뒤 한 번 더 발사. 근거: 2009 ジャパンC(GI) 1위.",
+        "description": "[분산 포격] 가까운 상대부터 서로 다른 최대 3명에게 136의 마법 피해를 날리고, 0.35초 뒤 한 번 더 쏩니다. 근거: 2009 ジャパンC(GI) 1위.",
         "choreography": {
           "windup": 0.3,
           "recovery": 0.3,
@@ -572,7 +572,7 @@
           "motion": "PULSE"
         }
       },
-      "skillSignature": "858d7b1b16b25e58b343f37ed021462ccfb48ba33e05ce4c43e8f18a9f5d3833",
+      "skillSignature": "03ba8d52ed51da351192f2e7c0e136c4a6f4f432750c9cc1010ef71a17dcfdf8",
       "basicAttack": "원거리 조준 → 발사 준비 → 투사체 방출 → 반동 회복",
       "skillPoseDraft": [
         "동일 대상에 1차 발사",
@@ -642,7 +642,7 @@
           }
         ],
         "vfxKey": "vfx_aoe_burst",
-        "description": "[잔불 지대] 대상 주변 1칸 최대 4명에게 0.6초 간격으로 130 마법 피해 3회와 3초간 회복 감소 33%. 근거: 2008 有馬記念(GI) 1위.",
+        "description": "[잔불 지대] 대상 주변 1칸의 최대 4명에게 0.6초 간격으로 130의 마법 피해를 세 번 입히고, 3초 동안 회복량을 33% 줄입니다. 근거: 2008 有馬記念(GI) 1위.",
         "choreography": {
           "windup": 0.45,
           "recovery": 0.3,
@@ -655,7 +655,7 @@
           "motion": "CHANNEL"
         }
       },
-      "skillSignature": "e886716346cd00fd465e4d65e08e0d9b0ce3714f5ea74d536b64aeb66e0f87c1",
+      "skillSignature": "4d2e5f30d88d8bc0833a34703d211393eba127a4bdbcdd46e7c01f642392daa4",
       "basicAttack": "원거리 조준 → 발사 준비 → 투사체 방출 → 반동 회복",
       "skillPoseDraft": [
         "힘을 모으는 자세",
@@ -700,7 +700,7 @@
           }
         ],
         "vfxKey": "vfx_aoe_burst",
-        "description": "[연쇄 섬광] 섬광이 대상에서 3칸 내 다음 적으로 최대 4명까지 이어지며 각각 238 마법 피해. 같은 적을 재타격하지 않음. 근거: 1997 マイルチャンピオンS(GI) 1위.",
+        "description": "[연쇄 섬광] 섬광이 3칸 안의 다음 상대로 최대 4명까지 옮겨붙으며 각각 238의 마법 피해를 입힙니다. 한 번 맞은 상대는 다시 타지 않습니다. 근거: 1997 マイルチャンピオンS(GI) 1위.",
         "choreography": {
           "windup": 0.3,
           "recovery": 0.3,
@@ -713,7 +713,7 @@
           "motion": "STRIKE"
         }
       },
-      "skillSignature": "49a3a2e6fb9bedfe9a5ddbbc5c1bdc5f6735036be5e0a1e292555330ee980b73",
+      "skillSignature": "4d7f3a443e7ea8cbb69becb0bc60a4ac40e3f03a5689529e5b36827e2115f4b8",
       "basicAttack": "원거리 조준 → 발사 준비 → 투사체 방출 → 반동 회복",
       "skillPoseDraft": [
         "힘을 모으는 자세",
@@ -772,7 +772,7 @@
           }
         ],
         "vfxKey": "vfx_dash_sashi",
-        "description": "[관통 돌파] 돌진 후 직선 6칸의 최대 4명에게 방어력 20% 감소(4초)와 256 물리 피해. 근거: 1999 有馬記念(GI) 1위.",
+        "description": "[관통 돌파] 안쪽으로 파고들며 직선 6칸의 최대 4명을 제칩니다. 4초 동안 방어력이 20% 무너지고 256의 물리 피해를 입습니다. 근거: 1999 有馬記念(GI) 1위.",
         "choreography": {
           "windup": 0.45,
           "recovery": 0.3,
@@ -785,7 +785,7 @@
           "motion": "STRIKE"
         }
       },
-      "skillSignature": "af2accb4f5ed7ca493201e46d5182068b22d705c1ebadf2f812c466773c3d6db",
+      "skillSignature": "898f5759c57b3a209622444db8b869bd014d3ca5926c10755160008193d1d4ed",
       "basicAttack": "원거리 조준 → 발사 준비 → 투사체 방출 → 반동 회복",
       "skillPoseDraft": [
         "낮게 웅크린 출발",
@@ -839,7 +839,7 @@
           }
         ],
         "vfxKey": "vfx_stun",
-        "description": "[관통 구속] 직선 6칸 최대 4명에게 172 마법 피해와 1초 기절. 근거: 1994 エリザベス女王杯(GI) 1위.",
+        "description": "[관통 구속] 직선 6칸의 최대 4명에게 172의 마법 피해를 입히고 1초 동안 세워 둡니다. 근거: 1994 エリザベス女王杯(GI) 1위.",
         "choreography": {
           "windup": 0.3,
           "recovery": 0.3,
@@ -852,7 +852,7 @@
           "motion": "STRIKE"
         }
       },
-      "skillSignature": "14e1833362f33a51498138af277dd5faf896db4d96b4be665af469a8bf1abb5f",
+      "skillSignature": "3efcb1226b03b88cb8d09487f5d0fe2e502a8d7501080d9be2d54fbd44bbef96",
       "basicAttack": "원거리 조준 → 발사 준비 → 투사체 방출 → 반동 회복",
       "skillPoseDraft": [
         "대상 지점 조준",
@@ -906,7 +906,7 @@
           }
         ],
         "vfxKey": "vfx_buff",
-        "description": "[방벽 원진] 2칸 내 최대 4명의 아군에게 233 보호막과 방어력 +20을 4초간 부여. 근거: 1992 天皇賞(春)(GI) 1위.",
+        "description": "[방벽 원진] 2칸 안의 아군 최대 4명에게 233의 보호막과 방어력 +20을 4초 동안 둘러 줍니다. 근거: 1992 天皇賞(春)(GI) 1위.",
         "choreography": {
           "windup": 0.45,
           "recovery": 0.3,
@@ -919,7 +919,7 @@
           "motion": "STRIKE"
         }
       },
-      "skillSignature": "29c54eddad83a5ba9d486d1c479ac01421a171ee91ca28d4d0f6f714c90670f8",
+      "skillSignature": "a3fce7a8a96f6faa616f22db1e3b1d78e6502cc78d1457f14b22def0486ee0de",
       "basicAttack": "근접 준비 → 당김 → 타격 → 회수",
       "skillPoseDraft": [
         "몸 중심에 기운 모음",
@@ -966,7 +966,7 @@
           }
         ],
         "vfxKey": "vfx_heal",
-        "description": "[구원 방벽] 체력 비율이 가장 낮은 아군의 잃은 체력 25%를 회복하고 256 보호막(4초). 근거: 1998 ジャパンC(GI) 1위.",
+        "description": "[구원 방벽] 가장 위태로운 아군의 잃은 체력을 25% 되돌리고 4초 동안 256의 보호막을 씌웁니다. 근거: 1998 ジャパンC(GI) 1위.",
         "choreography": {
           "windup": 0.3,
           "recovery": 0.3,
@@ -979,7 +979,7 @@
           "motion": "STRIKE"
         }
       },
-      "skillSignature": "d07fa79ed6961fa205adbc262cd097a773aaee7d7615f5f31f1316256beb7126",
+      "skillSignature": "4a78f3f22fb2dcc1758e907266c840293234cf98054923b767c1c56f0a2d088c",
       "basicAttack": "원거리 조준 → 발사 준비 → 투사체 방출 → 반동 회복",
       "skillPoseDraft": [
         "아군을 향해 손 모음",
@@ -1033,7 +1033,7 @@
           }
         ],
         "vfxKey": "vfx_shield",
-        "description": "[결투 방벽] 729 보호막(4초), 1.5초 제어 면역. 주변 2칸 최대 3명을 2초 도발. 근거: 2000 有馬記念(GI) 1위.",
+        "description": "[결투 방벽] 4초 동안 729의 보호막을 두르고 1.5초 동안 어떤 방해도 받지 않으며, 주변 2칸의 최대 3명을 2초 동안 자신에게 붙잡아 둡니다. 근거: 2000 有馬記念(GI) 1위.",
         "choreography": {
           "windup": 0.45,
           "recovery": 0.3,
@@ -1046,7 +1046,7 @@
           "motion": "STRIKE"
         }
       },
-      "skillSignature": "109653cb778f21833db1e269056f0a66cc72f29504b54872857cd0dadce66cd5",
+      "skillSignature": "9a26fd4ebc423a8f31b7999b5527c3eafc655dae5165a00a6e7728c1f67b8624",
       "basicAttack": "근접 준비 → 당김 → 타격 → 회수",
       "skillPoseDraft": [
         "방어 자세 준비",
@@ -1102,7 +1102,7 @@
           }
         ],
         "vfxKey": "vfx_projectile",
-        "description": "[부채 연사] 전방 3칸 부채꼴 최대 4명에게 160 물리 피해를 0.3초 간격으로 2회. 근거: 1994 菊花賞(GI) 1위.",
+        "description": "[부채 연사] 앞쪽 부채꼴 3칸의 최대 4명을 0.3초 간격으로 두 번 훑으며 매번 160의 물리 피해를 입힙니다. 근거: 1994 菊花賞(GI) 1위.",
         "choreography": {
           "windup": 0.45,
           "recovery": 0.3,
@@ -1115,7 +1115,7 @@
           "motion": "PULSE"
         }
       },
-      "skillSignature": "526ad2b2ca8d83ff88d51f7e1400087c8bc13b1d9bcb62cadba0bb91c151bb0c",
+      "skillSignature": "1ad3bd309d9c4c80570552871b619f0917bfd585a6778680eeb2f3190c4f3fb0",
       "basicAttack": "원거리 조준 → 발사 준비 → 투사체 방출 → 반동 회복",
       "skillPoseDraft": [
         "동일 대상에 1차 발사",
@@ -1169,7 +1169,7 @@
           }
         ],
         "vfxKey": "vfx_stun",
-        "description": "[관통 구속] 직선 6칸 최대 4명에게 245 마법 피해와 1초 기절. 근거: 1985 有馬記念(GI) 1위.",
+        "description": "[관통 구속] 직선 6칸의 최대 4명에게 245의 마법 피해를 입히고 1초 동안 세워 둡니다. 근거: 1985 有馬記念(GI) 1위.",
         "choreography": {
           "windup": 0.45,
           "recovery": 0.3,
@@ -1182,7 +1182,7 @@
           "motion": "STRIKE"
         }
       },
-      "skillSignature": "7f099e60057dfa043a8cacd34ea60ee59374f05de168d718b399e7bd12e2bc17",
+      "skillSignature": "7a363fb5af26bc0221112369fedf92e410050e8285b8cbc1ec77e9fe3ee46761",
       "basicAttack": "근접 준비 → 당김 → 타격 → 회수",
       "skillPoseDraft": [
         "대상 지점 조준",
@@ -1234,7 +1234,7 @@
           }
         ],
         "vfxKey": "vfx_shield",
-        "description": "[방벽 반격] 335 보호막을 얻고 0.7초 뒤 주변 2칸 최대 4명에게 195 마법 피해. 체력 피해의 20% 회복. 근거: 1997 天皇賞(秋)(GI) 1위.",
+        "description": "[방벽 반격] 335의 보호막을 두르고 0.7초 뒤 주변 2칸의 최대 4명에게 195의 마법 피해로 되받아치며, 깎은 체력의 20%를 회복합니다. 근거: 1997 天皇賞(秋)(GI) 1위.",
         "choreography": {
           "windup": 0.3,
           "recovery": 0.3,
@@ -1247,7 +1247,7 @@
           "motion": "STRIKE"
         }
       },
-      "skillSignature": "2179dcf1a946a9ad40e8923cbb403294694b50316114c820563b1598804ffbaa",
+      "skillSignature": "d1beccd81f43574b9dd92be8fe2037d309dad1b041a26cbdfb06928dd2edde98",
       "basicAttack": "근접 준비 → 당김 → 타격 → 회수",
       "skillPoseDraft": [
         "방어 자세 준비",
@@ -1297,7 +1297,7 @@
           }
         ],
         "vfxKey": "vfx_projectile",
-        "description": "[주력 저격] 공격력이 가장 높은 적을 저격해 330 물리 피해와 공격력 15% 감소(3초). 근거: 2001 天皇賞(秋)(GI) 1위.",
+        "description": "[주력 저격] 가장 위협적인 상대를 노려 330의 물리 피해를 입히고 3초 동안 공격력을 15% 떨어뜨립니다. 근거: 2001 天皇賞(秋)(GI) 1위.",
         "choreography": {
           "windup": 0.3,
           "recovery": 0.3,
@@ -1310,7 +1310,7 @@
           "motion": "STRIKE"
         }
       },
-      "skillSignature": "aaa84344b9a75eb59066493ab6275e0b3d1c8dcaf2e413dfbe75367b5c8b54e0",
+      "skillSignature": "2763983e1e6ec313c454ae73d236d199e3f0842a2c00c4b187bbe1474026fd83",
       "basicAttack": "원거리 조준 → 발사 준비 → 투사체 방출 → 반동 회복",
       "skillPoseDraft": [
         "동일 대상에 1차 발사",
@@ -1360,7 +1360,7 @@
           }
         ],
         "vfxKey": "vfx_buff",
-        "description": "[에이스 지휘] 공격력이 가장 높은 아군 1명에게 4초간 공격속도 +47.7%와 228 보호막. 근거: 1998 菊花賞(GI) 1위.",
+        "description": "[에이스 지휘] 가장 잘 때리는 아군 한 명에게 4초 동안 공격속도 +47.7%와 228의 보호막을 실어 줍니다. 근거: 1998 菊花賞(GI) 1위.",
         "choreography": {
           "windup": 0.45,
           "recovery": 0.3,
@@ -1373,7 +1373,7 @@
           "motion": "STRIKE"
         }
       },
-      "skillSignature": "2b0ed7ed82d821feb44149b59bc3d8be36f73a3ef76e9813e81711da920e5e8e",
+      "skillSignature": "58c0eec24c1740e6909609a0c96cbdf1bc8109b69139d520def11506d71d79e4",
       "basicAttack": "근접 준비 → 당김 → 타격 → 회수",
       "skillPoseDraft": [
         "몸 중심에 기운 모음",
@@ -1424,7 +1424,7 @@
           }
         ],
         "vfxKey": "vfx_dash_senko",
-        "description": "[흡수 휩쓸기] 돌진 후 전방 3칸 부채꼴의 최대 4명에게 229 물리 피해. 실제 체력 피해의 25% 회복. 근거: 1988 天皇賞(秋)(GI) 1위.",
+        "description": "[흡수 휩쓸기] 앞으로 밀고 들어가 부채꼴 3칸의 최대 4명에게 229의 물리 피해를 입히고, 실제로 깎은 체력의 25%를 회복합니다. 근거: 1988 天皇賞(秋)(GI) 1위.",
         "choreography": {
           "windup": 0.3,
           "recovery": 0.3,
@@ -1437,7 +1437,7 @@
           "motion": "STRIKE"
         }
       },
-      "skillSignature": "179373b8259d12372221cbdf38d83a8e84e581871e38ef5a7148b388741b556f",
+      "skillSignature": "df1e1285c4a2de5892c8f49db56ce224b21aa5939c1ddc4fa0243e600ea2ec62",
       "basicAttack": "근접 준비 → 당김 → 타격 → 회수",
       "skillPoseDraft": [
         "낮게 웅크린 출발",
@@ -1500,7 +1500,7 @@
           }
         ],
         "vfxKey": "vfx_dash_nige",
-        "description": "[유인 돌진] 149 보호막을 얻고 0.25초 뒤 돌진. 대상에게 264 물리 피해와 2초 둔화. 근거: 2002 エリザベス女王杯(GI) 1위.",
+        "description": "[유인 돌진] 149의 보호막을 두르고 0.25초 뒤 뛰어들어, 상대에게 264의 물리 피해를 입히고 2초 동안 발을 묶습니다. 근거: 2002 エリザベス女王杯(GI) 1위.",
         "choreography": {
           "windup": 0.3,
           "recovery": 0.3,
@@ -1513,7 +1513,7 @@
           "motion": "STRIKE"
         }
       },
-      "skillSignature": "b342d046ab2362821e7daa8793169c56a8168dd72174abdb0081996aa0654bcc",
+      "skillSignature": "5fd7dd36b883d7aa6dcbb6091f35552ae58d509e8a9f5dbc11e5417f186077d3",
       "basicAttack": "원거리 조준 → 발사 준비 → 투사체 방출 → 반동 회복",
       "skillPoseDraft": [
         "낮게 웅크린 출발",
@@ -1557,7 +1557,7 @@
           }
         ],
         "vfxKey": "vfx_aoe_burst",
-        "description": "[집중 유성] 0.9초 집중 후 밀집 지점 2칸 내 최대 5명에게 421 마법 피해. 집중 중 기절하면 취소. 근거: 1994 宝塚記念(GI) 1위.",
+        "description": "[집중 유성] 0.9초 동안 힘을 모은 뒤 가장 몰려 있는 지점 2칸 안의 최대 5명에게 421의 마법 피해를 내리꽂습니다. 모으는 도중 기절하면 무산됩니다. 근거: 1994 宝塚記念(GI) 1위.",
         "choreography": {
           "windup": 0.9,
           "recovery": 0.3,
@@ -1570,7 +1570,7 @@
           "motion": "STRIKE"
         }
       },
-      "skillSignature": "859aff35577ad4b8f7f0476411d7677869f97278aecb66789b12d90034482b63",
+      "skillSignature": "5cbeede0d8553ee8c4ad427ca7ed80577c788b4f2e5ba1bf27f57027064dd7e2",
       "basicAttack": "원거리 조준 → 발사 준비 → 투사체 방출 → 반동 회복",
       "skillPoseDraft": [
         "힘을 모으는 자세",
@@ -1642,7 +1642,7 @@
           }
         ],
         "vfxKey": "vfx_buff",
-        "description": "[반격 폭풍] 192 보호막을 얻고 주변 2칸 최대 4명에게 0.4초 간격으로 96 마법 피해 3회. 체력 피해의 15% 회복. 근거: 1995 菊花賞(GI) 1위.",
+        "description": "[반격 폭풍] 192의 보호막을 두르고 주변 2칸의 최대 4명에게 0.4초 간격으로 96의 마법 피해를 세 번 흩뿌리며, 깎은 체력의 15%를 회복합니다. 근거: 1995 菊花賞(GI) 1위.",
         "choreography": {
           "windup": 0.45,
           "recovery": 0.3,
@@ -1655,7 +1655,7 @@
           "motion": "CHANNEL"
         }
       },
-      "skillSignature": "ab01f3d4846a6a9c6adfae3a029588366064cb18a16e7edaa31aa5cbfe01bc30",
+      "skillSignature": "5981c1e556abaf1448846334f1c9e953621b4b83a2cb81b909da990ebd87506d",
       "basicAttack": "근접 준비 → 당김 → 타격 → 회수",
       "skillPoseDraft": [
         "몸 중심에 기운 모음",
@@ -1731,7 +1731,7 @@
           }
         ],
         "vfxKey": "vfx_aoe_burst",
-        "description": "[지속 광선] 직선 6칸 최대 4명을 향해 0.35초 간격으로 4회 광선. 매회 121 마법 피해, 시전 중 일반 공격 불가. 근거: 1992 東京優駿(GI) 1위.",
+        "description": "[지속 광선] 직선 6칸의 최대 4명을 향해 0.35초 간격으로 네 번 광선을 쏘아 매번 121의 마법 피해를 입힙니다. 쏘는 동안에는 기본 공격을 하지 못합니다. 근거: 1992 東京優駿(GI) 1위.",
         "choreography": {
           "windup": 0.4,
           "recovery": 0.3,
@@ -1744,7 +1744,7 @@
           "motion": "CHANNEL"
         }
       },
-      "skillSignature": "5dc1457dc526d93fa1c92e54b67b47c816f19df2d67391970f4f164efa09ce69",
+      "skillSignature": "e8c59eaea3cde626adeee5034342aba48933c7bf1e1be9e94212c6d8a717e02b",
       "basicAttack": "원거리 조준 → 발사 준비 → 투사체 방출 → 반동 회복",
       "skillPoseDraft": [
         "힘을 모으는 자세",
@@ -1795,7 +1795,7 @@
           }
         ],
         "vfxKey": "vfx_dash_sashi",
-        "description": "[흡수 휩쓸기] 돌진 후 전방 3칸 부채꼴의 최대 4명에게 186 물리 피해. 실제 체력 피해의 25% 회복. 근거: 1991 宝塚記念(GI) 1위.",
+        "description": "[흡수 휩쓸기] 앞으로 밀고 들어가 부채꼴 3칸의 최대 4명에게 186의 물리 피해를 입히고, 실제로 깎은 체력의 25%를 회복합니다. 근거: 1991 宝塚記念(GI) 1위.",
         "choreography": {
           "windup": 0.3,
           "recovery": 0.3,
@@ -1808,7 +1808,7 @@
           "motion": "STRIKE"
         }
       },
-      "skillSignature": "92618bcf20c2e6629d79b56cf5a88ff786a0c2cb91bc4a52fab33e8a852d20d9",
+      "skillSignature": "4ca3afeaa0b546e65b25d447ce2e7705939ce51873c05fbd8b80d8873fad39a7",
       "basicAttack": "근접 준비 → 당김 → 타격 → 회수",
       "skillPoseDraft": [
         "낮게 웅크린 출발",
@@ -1862,7 +1862,7 @@
           }
         ],
         "vfxKey": "vfx_buff",
-        "description": "[방벽 원진] 2칸 내 최대 4명의 아군에게 149 보호막과 방어력 +20을 4초간 부여. 근거: 1995 スプリンターズS(GI) 1위.",
+        "description": "[방벽 원진] 2칸 안의 아군 최대 4명에게 149의 보호막과 방어력 +20을 4초 동안 둘러 줍니다. 근거: 1995 スプリンターズS(GI) 1위.",
         "choreography": {
           "windup": 0.15,
           "recovery": 0.3,
@@ -1875,7 +1875,7 @@
           "motion": "STRIKE"
         }
       },
-      "skillSignature": "6ab2e61ead057748ce120b9b8f7dea19c5d7521a95c8cc8cbf639b8a7e358d7b",
+      "skillSignature": "b2a52860a89f776bde61713460af53119c2c093353d5209d6fd0a6d515090702",
       "basicAttack": "원거리 조준 → 발사 준비 → 투사체 방출 → 반동 회복",
       "skillPoseDraft": [
         "몸 중심에 기운 모음",
@@ -1941,7 +1941,7 @@
           }
         ],
         "vfxKey": "vfx_buff",
-        "description": "[회복 성역] 2칸 내 최대 4명 아군의 제어 효과를 해제하고, 0.5초 간격으로 50씩 3회 회복. 근거: 1993 クイーンS(GIII) 1위.",
+        "description": "[회복 성역] 2칸 안의 아군 최대 4명을 묶고 있던 방해 효과를 풀어 주고, 0.5초 간격으로 50씩 세 번 회복시킵니다. 근거: 1993 クイーンS(GIII) 1위.",
         "choreography": {
           "windup": 0.3,
           "recovery": 0.3,
@@ -1954,7 +1954,7 @@
           "motion": "STRIKE"
         }
       },
-      "skillSignature": "a631e4f8808040c8db55e92a3d152655334de594ad881033f60bc43170962944",
+      "skillSignature": "27d710650a9e025c103840f53e82b5e9429b0ec4196b18fc0d40db7cb77a8d09",
       "basicAttack": "원거리 조준 → 발사 준비 → 투사체 방출 → 반동 회복",
       "skillPoseDraft": [
         "몸 중심에 기운 모음",
@@ -2026,7 +2026,7 @@
           }
         ],
         "vfxKey": "vfx_shield",
-        "description": "[흡수 요새] 4초간 받는 피해 20% 감소. 주변 1칸 최대 3명에게 82 마법 피해 3회, 체력 피해의 45% 회복. 근거: 1995 天皇賞(春)(GI) 1위.",
+        "description": "[흡수 요새] 4초 동안 받는 피해가 20% 줄고, 주변 1칸의 최대 3명에게서 82의 마법 피해를 세 번 빨아들여 깎은 체력의 45%를 회복합니다. 근거: 1995 天皇賞(春)(GI) 1위.",
         "choreography": {
           "windup": 0.45,
           "recovery": 0.3,
@@ -2039,7 +2039,7 @@
           "motion": "CHANNEL"
         }
       },
-      "skillSignature": "ae6af6fcb572b0daaca6a3b49e133ccbc9bca8737ef1dc364688550409e27ee3",
+      "skillSignature": "beb3cd691ea748d0310e7dcc44f18b74b46b7db0e601d1d8644b18c81bd2ecca",
       "basicAttack": "근접 준비 → 당김 → 타격 → 회수",
       "skillPoseDraft": [
         "방어 자세 준비",
@@ -2093,7 +2093,7 @@
           }
         ],
         "vfxKey": "vfx_buff",
-        "description": "[지구력 축적] 시전마다 최대 체력 +70(전투당 최대 4중첩). 4초간 받는 피해 18% 감소와 170 보호막. 근거: 1990 東京優駿(GI) 1위.",
+        "description": "[지구력 축적] 쓸 때마다 최대 체력이 70씩 붙어 전투당 네 번까지 쌓이고, 4초 동안 받는 피해가 18% 줄며 170의 보호막이 생깁니다. 근거: 1990 東京優駿(GI) 1위.",
         "choreography": {
           "windup": 0.3,
           "recovery": 0.3,
@@ -2106,7 +2106,7 @@
           "motion": "STRIKE"
         }
       },
-      "skillSignature": "b5e4035317a8ad27fca4163a87543f4e40bca786c805209dab4e3d644b53286b",
+      "skillSignature": "ccac02ec8dd1f51bb175869d36d84f000c54fc13b35e2b818f4bf4ff67caa11c",
       "basicAttack": "근접 준비 → 당김 → 타격 → 회수",
       "skillPoseDraft": [
         "몸 중심에 기운 모음",
@@ -2172,7 +2172,7 @@
           }
         ],
         "vfxKey": "vfx_projectile",
-        "description": "[가속 장전] 4초간 공격속도 +55.8%, 공격력 +24.8%. 장전 타격으로 119 물리 피해를 2회. 근거: 2001 皐月賞(GI) 1위.",
+        "description": "[가속 장전] 4초 동안 공격속도가 +55.8%, 공격력이 +24.8% 올라가고, 장전한 두 발이 각각 119의 물리 피해를 입힙니다. 근거: 2001 皐月賞(GI) 1위.",
         "choreography": {
           "windup": 0.15,
           "recovery": 0.3,
@@ -2185,7 +2185,7 @@
           "motion": "PULSE"
         }
       },
-      "skillSignature": "bc43fc6b353919149783f29ca249d6aa5ce56317402059ac16807d76e737134a",
+      "skillSignature": "99ad1cb051993b9a1deeea1aeaba51935751ea959b3cd0b1a67c5f32674c2026",
       "basicAttack": "원거리 조준 → 발사 준비 → 투사체 방출 → 반동 회복",
       "skillPoseDraft": [
         "동일 대상에 1차 발사",
@@ -2245,7 +2245,7 @@
           }
         ],
         "vfxKey": "vfx_dash_sashi",
-        "description": "[교차 파동] 돌진 후 직선 최대 4명에게 110 물리 피해, 0.45초 뒤 같은 방향으로 78 마법 파동. 근거: 1999 東京優駿(GI) 1위.",
+        "description": "[교차 파동] 직선상의 최대 4명을 110의 물리 피해로 밀어내고, 0.45초 뒤 같은 방향으로 78의 마법 파동을 흘려보냅니다. 근거: 1999 東京優駿(GI) 1위.",
         "choreography": {
           "windup": 0.3,
           "recovery": 0.3,
@@ -2258,7 +2258,7 @@
           "motion": "PULSE"
         }
       },
-      "skillSignature": "2c85b6b65f6b5a8697f59af818b6933ddd0768271932604e307014290a655a62",
+      "skillSignature": "0822cebcef7e9b2150bc850b0abdb7562f411ad00eb3e43d762acbdb1358538b",
       "basicAttack": "근접 준비 → 당김 → 타격 → 회수",
       "skillPoseDraft": [
         "낮게 웅크린 출발",
@@ -2328,7 +2328,7 @@
           }
         ],
         "vfxKey": "vfx_dash_oikomi",
-        "description": "[추격 연타] 돌진 후 한 적에게 72 물리 피해를 3회, 4초간 공격속도 +20%. 대상 사망 시 남은 타격은 재탐색. 근거: 1989 有馬記念(GI) 1위.",
+        "description": "[추격 연타] 한 상대에게 붙어 72의 물리 피해를 세 번 몰아치고, 4초 동안 공격속도가 +20% 오릅니다. 상대가 먼저 쓰러지면 남은 타격은 다음 상대를 찾아갑니다. 근거: 1989 有馬記念(GI) 1위.",
         "choreography": {
           "windup": 0.45,
           "recovery": 0.3,
@@ -2341,7 +2341,7 @@
           "motion": "PULSE"
         }
       },
-      "skillSignature": "70311f4c4c5ec6de97e1a2c0d0864c7f0f5f15097599623553a25d00259fdfd9",
+      "skillSignature": "2a385d19341a465e23896dff8a038e7e98d2823750de1e336bb2212bfcb9a468",
       "basicAttack": "근접 준비 → 당김 → 타격 → 회수",
       "skillPoseDraft": [
         "낮게 웅크린 출발",
@@ -2398,7 +2398,7 @@
           }
         ],
         "vfxKey": "vfx_dash_senko",
-        "description": "[충격 질주] 돌진 지점 주변 1칸 최대 4명에게 164 물리 피해와 0.65초 기절. 근거: 1993 東京優駿(GI) 1위.",
+        "description": "[충격 질주] 뛰어든 자리 1칸 안의 최대 4명에게 164의 물리 피해를 입히고 0.65초 동안 기절시킵니다. 근거: 1993 東京優駿(GI) 1위.",
         "choreography": {
           "windup": 0.3,
           "recovery": 0.3,
@@ -2411,7 +2411,7 @@
           "motion": "STRIKE"
         }
       },
-      "skillSignature": "ee855b49f573ce85a0ec1b927300287fcd15a5668e1f25fd66a4e3fa5f85fe6e",
+      "skillSignature": "6c55409e8eb60296cca6ac72e367ba39ad5e9c52d85bd482db023694ff9e539c",
       "basicAttack": "근접 준비 → 당김 → 타격 → 회수",
       "skillPoseDraft": [
         "낮게 웅크린 출발",
@@ -2463,7 +2463,7 @@
           }
         ],
         "vfxKey": "vfx_stun",
-        "description": "[침묵 지대] 대상 주변 1칸 최대 4명에게 121 마법 피해와 2초 침묵. 일반 공격과 이동은 가능. 근거: 2000 菊花賞(GI) 1위.",
+        "description": "[침묵 지대] 대상 주변 1칸의 최대 4명에게 121의 마법 피해를 입히고 2초 동안 침묵시킵니다. 기본 공격과 이동은 막지 않습니다. 근거: 2000 菊花賞(GI) 1위.",
         "choreography": {
           "windup": 0.45,
           "recovery": 0.3,
@@ -2476,7 +2476,7 @@
           "motion": "STRIKE"
         }
       },
-      "skillSignature": "7c291b5d44e8caa1b48d7b44f461e9fef63dd3638a4f2708e003bfd98afe733b",
+      "skillSignature": "87b1b345c331b92bd0433b75685e47f4262b33a346f438d9160b96aba7cc3179",
       "basicAttack": "원거리 조준 → 발사 준비 → 투사체 방출 → 반동 회복",
       "skillPoseDraft": [
         "대상 지점 조준",
@@ -2538,7 +2538,7 @@
           }
         ],
         "vfxKey": "vfx_stun",
-        "description": "[지연 봉쇄] 주변 1칸 최대 4명에게 81 마법 피해, 0.8초 뒤 103 추가 피해와 1.4초 기절. 근거: 2010 東京優駿(GI) 1위.",
+        "description": "[지연 봉쇄] 주변 1칸의 최대 4명에게 81의 마법 피해를 주고, 0.8초 뒤 103의 피해가 한 번 더 터지며 1.4초 동안 기절시킵니다. 근거: 2010 東京優駿(GI) 1위.",
         "choreography": {
           "windup": 0.3,
           "recovery": 0.3,
@@ -2551,7 +2551,7 @@
           "motion": "PULSE"
         }
       },
-      "skillSignature": "0b7af4a89c1852b0ec0b07d0e5679fed3b2a9ee768938bf9cc140b832ef757a0",
+      "skillSignature": "c04784e9827613b1eb2289496886805f1f6626b237ca0a4c7ea3bc8d70bfdec8",
       "basicAttack": "근접 준비 → 당김 → 타격 → 회수",
       "skillPoseDraft": [
         "대상 지점 조준",
@@ -2596,7 +2596,7 @@
           }
         ],
         "vfxKey": "vfx_aoe_burst",
-        "description": "[연쇄 섬광] 섬광이 대상에서 3칸 내 다음 적으로 최대 4명까지 이어지며 각각 151 마법 피해. 같은 적을 재타격하지 않음. 근거: 2012 高松宮記念(GI) 1위.",
+        "description": "[연쇄 섬광] 섬광이 3칸 안의 다음 상대로 최대 4명까지 옮겨붙으며 각각 151의 마법 피해를 입힙니다. 한 번 맞은 상대는 다시 타지 않습니다. 근거: 2012 高松宮記念(GI) 1위.",
         "choreography": {
           "windup": 0.15,
           "recovery": 0.3,
@@ -2609,7 +2609,7 @@
           "motion": "STRIKE"
         }
       },
-      "skillSignature": "cceb7cd2714fce49ff545dcb252d722cd88d8d184b1249714d02d956af8c5ee8",
+      "skillSignature": "c3f2484827cf79397a0f480009b982968a75be85b3c1c175699797a26af273ff",
       "basicAttack": "원거리 조준 → 발사 준비 → 투사체 방출 → 반동 회복",
       "skillPoseDraft": [
         "힘을 모으는 자세",
@@ -2653,7 +2653,7 @@
           }
         ],
         "vfxKey": "vfx_aoe_burst",
-        "description": "[집중 유성] 0.9초 집중 후 밀집 지점 2칸 내 최대 5명에게 228 마법 피해. 집중 중 기절하면 취소. 근거: 2006 優駿牝馬(GI) 1위.",
+        "description": "[집중 유성] 0.9초 동안 힘을 모은 뒤 가장 몰려 있는 지점 2칸 안의 최대 5명에게 228의 마법 피해를 내리꽂습니다. 모으는 도중 기절하면 무산됩니다. 근거: 2006 優駿牝馬(GI) 1위.",
         "choreography": {
           "windup": 0.9,
           "recovery": 0.3,
@@ -2666,7 +2666,7 @@
           "motion": "STRIKE"
         }
       },
-      "skillSignature": "064dacb83c556bf3cbddf79d3ed3c239310fb457170a9aedfc0ac1d6ecdca384",
+      "skillSignature": "c61421904f42e88f9c90a391935f5c17fa0a25bda882d35fd25ccb569a4b0b7a",
       "basicAttack": "원거리 조준 → 발사 준비 → 투사체 방출 → 반동 회복",
       "skillPoseDraft": [
         "힘을 모으는 자세",
@@ -2720,7 +2720,7 @@
           }
         ],
         "vfxKey": "vfx_stun",
-        "description": "[무장 해제] 전방 3칸 최대 4명에게 134 마법 피해. 1.8초간 일반 공격 봉쇄, 스킬은 사용 가능. 근거: 1986 阪神3歳S(GI) 1위.",
+        "description": "[무장 해제] 앞쪽 3칸의 최대 4명에게 134의 마법 피해를 입히고, 1.8초 동안 기본 공격을 막습니다. 스킬은 그대로 나갑니다. 근거: 1986 阪神3歳S(GI) 1위.",
         "choreography": {
           "windup": 0.3,
           "recovery": 0.3,
@@ -2733,7 +2733,7 @@
           "motion": "STRIKE"
         }
       },
-      "skillSignature": "921dc93ae7e38ca45a7711eb23caa57adae1e55ffd3f87ace46d51cebe4477a0",
+      "skillSignature": "a0cb1df3ec0fbf0ec617ac913e86d530126398ce5498c3f9104a16f979531aa7",
       "basicAttack": "원거리 조준 → 발사 준비 → 투사체 방출 → 반동 회복",
       "skillPoseDraft": [
         "대상 지점 조준",
@@ -2787,7 +2787,7 @@
           }
         ],
         "vfxKey": "vfx_buff",
-        "description": "[진군 박자] 2칸 내 최대 4명의 아군에게 4초간 공격속도 +31.8%. 자신 외 대상은 마나 8 회복. 근거: 1994 スプリンターズS(GI) 1위.",
+        "description": "[진군 박자] 2칸 안의 아군 최대 4명의 공격속도를 4초 동안 +31.8% 끌어올리고, 자신을 뺀 아군은 마나를 8 회복합니다. 근거: 1994 スプリンターズS(GI) 1위.",
         "choreography": {
           "windup": 0.15,
           "recovery": 0.3,
@@ -2800,7 +2800,7 @@
           "motion": "STRIKE"
         }
       },
-      "skillSignature": "e6dbbe03fc42ce2470f3f8a99dd204db44926a4684e9ffe1f5981de9cd2613ec",
+      "skillSignature": "a61c1b8cccb69f5c15db3108bc15d4d7836c4307bc9b536c04efb3d1e540ceb4",
       "basicAttack": "원거리 조준 → 발사 준비 → 투사체 방출 → 반동 회복",
       "skillPoseDraft": [
         "몸 중심에 기운 모음",
@@ -2856,7 +2856,7 @@
           }
         ],
         "vfxKey": "vfx_projectile",
-        "description": "[분산 포격] 가까운 적에서 시작해 서로 다른 최대 3명에게 112 마법 피해. 0.35초 뒤 한 번 더 발사. 근거: 1997 NHKマイルC(GI) 1위.",
+        "description": "[분산 포격] 가까운 상대부터 서로 다른 최대 3명에게 112의 마법 피해를 날리고, 0.35초 뒤 한 번 더 쏩니다. 근거: 1997 NHKマイルC(GI) 1위.",
         "choreography": {
           "windup": 0.3,
           "recovery": 0.3,
@@ -2869,7 +2869,7 @@
           "motion": "PULSE"
         }
       },
-      "skillSignature": "62004a924865c4e5cd0575cbbaca0f81fc54de857f9e5782107d9a14401e2848",
+      "skillSignature": "9a688f8eb3c24760a281738b9b034e905823e93ed8868d07f1e13c0a0b44fa5b",
       "basicAttack": "원거리 조준 → 발사 준비 → 투사체 방출 → 반동 회복",
       "skillPoseDraft": [
         "동일 대상에 1차 발사",
@@ -2914,7 +2914,7 @@
           }
         ],
         "vfxKey": "vfx_heal",
-        "description": "[연결 등불] 가장 위급한 아군부터 3칸 간격으로 최대 3명에게 각각 160 보호막(4초)을 연결. 근거: 1997 フェブラリーS(GI) 1위.",
+        "description": "[연결 등불] 가장 급한 아군부터 3칸 간격으로 최대 3명까지 이어 가며 각각 160의 보호막을 4초 동안 걸어 줍니다. 근거: 1997 フェブラリーS(GI) 1위.",
         "choreography": {
           "windup": 0.3,
           "recovery": 0.3,
@@ -2927,7 +2927,7 @@
           "motion": "STRIKE"
         }
       },
-      "skillSignature": "56f1266e0966e5d3eab6889823d7b629962979e4d2ad97c739099dd9abf486b0",
+      "skillSignature": "52fcad110f1444dd1d3c05de53bc09535a46f81306b908c2299fb2a42e11e53b",
       "basicAttack": "원거리 조준 → 발사 준비 → 투사체 방출 → 반동 회복",
       "skillPoseDraft": [
         "아군을 향해 손 모음",
@@ -2987,7 +2987,7 @@
           }
         ],
         "vfxKey": "vfx_dash_sashi",
-        "description": "[교차 파동] 돌진 후 직선 최대 4명에게 133 물리 피해, 0.45초 뒤 같은 방향으로 94 마법 파동. 근거: 2005 宝塚記念(GI) 1위.",
+        "description": "[교차 파동] 직선상의 최대 4명을 133의 물리 피해로 밀어내고, 0.45초 뒤 같은 방향으로 94의 마법 파동을 흘려보냅니다. 근거: 2005 宝塚記念(GI) 1위.",
         "choreography": {
           "windup": 0.3,
           "recovery": 0.3,
@@ -3000,7 +3000,7 @@
           "motion": "PULSE"
         }
       },
-      "skillSignature": "d815a3c24e9155bc8593a8dcee3edcebe2affd4b5826a11f53a5f29a9411b443",
+      "skillSignature": "27a7902334f3b71572e00d69292d02db935ef021770db5fa6cb2e163f2d90f43",
       "basicAttack": "원거리 조준 → 발사 준비 → 투사체 방출 → 반동 회복",
       "skillPoseDraft": [
         "낮게 웅크린 출발",
@@ -3061,7 +3061,7 @@
           }
         ],
         "vfxKey": "vfx_stun",
-        "description": "[서리 전선] 주변 2칸 최대 4명에게 149 마법 피해, 0.6초 기절과 3초 둔화. 근거: 1990 天皇賞(春)(GI) 1위.",
+        "description": "[서리 전선] 주변 2칸의 최대 4명에게 149의 마법 피해를 입히고 0.6초 기절시킨 뒤, 3초 동안 발을 묶습니다. 근거: 1990 天皇賞(春)(GI) 1위.",
         "choreography": {
           "windup": 0.45,
           "recovery": 0.3,
@@ -3074,7 +3074,7 @@
           "motion": "STRIKE"
         }
       },
-      "skillSignature": "49228d4f4355117af0604e5716efeecbd654dff9974fd2c3170d99449315a594",
+      "skillSignature": "a7098e2754bbef94a7de4a88e815f139d387000722d005f1597683caf7bdf209",
       "basicAttack": "근접 준비 → 당김 → 타격 → 회수",
       "skillPoseDraft": [
         "대상 지점 조준",
@@ -3144,7 +3144,7 @@
           }
         ],
         "vfxKey": "vfx_aoe_burst",
-        "description": "[잔불 지대] 대상 주변 1칸 최대 4명에게 0.6초 간격으로 111 마법 피해 3회와 3초간 회복 감소 33%. 근거: 2010 JBCクラシック(JpnI) 1위.",
+        "description": "[잔불 지대] 대상 주변 1칸의 최대 4명에게 0.6초 간격으로 111의 마법 피해를 세 번 입히고, 3초 동안 회복량을 33% 줄입니다. 근거: 2010 JBCクラシック(JpnI) 1위.",
         "choreography": {
           "windup": 0.3,
           "recovery": 0.3,
@@ -3157,7 +3157,7 @@
           "motion": "CHANNEL"
         }
       },
-      "skillSignature": "c29c995c610c609d4747aceaf3784ffbb4dc694c66be62bbc0f299ae48b5748e",
+      "skillSignature": "a961c202485c4cb2aaea998292ee5d753966d0db785ddc6c990c4ef77a6b7871",
       "basicAttack": "원거리 조준 → 발사 준비 → 투사체 방출 → 반동 회복",
       "skillPoseDraft": [
         "힘을 모으는 자세",
@@ -3211,7 +3211,7 @@
           }
         ],
         "vfxKey": "vfx_shield",
-        "description": "[결투 방벽] 517 보호막(4초), 1.5초 제어 면역. 주변 2칸 최대 3명을 2초 도발. 근거: 2004 ジャパンC(GI) 1위.",
+        "description": "[결투 방벽] 4초 동안 517의 보호막을 두르고 1.5초 동안 어떤 방해도 받지 않으며, 주변 2칸의 최대 3명을 2초 동안 자신에게 붙잡아 둡니다. 근거: 2004 ジャパンC(GI) 1위.",
         "choreography": {
           "windup": 0.3,
           "recovery": 0.3,
@@ -3224,7 +3224,7 @@
           "motion": "STRIKE"
         }
       },
-      "skillSignature": "fa7f36736f4d69e1eda7d60296f53eaed233bb20ddcde8fbbfb62f69bb04a518",
+      "skillSignature": "b3637b3967d2a2c58d36e7635c8cef0dd7ed7d99bb6b33544aef82287e140100",
       "basicAttack": "근접 준비 → 당김 → 타격 → 회수",
       "skillPoseDraft": [
         "방어 자세 준비",
@@ -3278,7 +3278,7 @@
           }
         ],
         "vfxKey": "vfx_buff",
-        "description": "[지구력 축적] 시전마다 최대 체력 +70(전투당 최대 4중첩). 4초간 받는 피해 18% 감소와 138 보호막. 근거: 2011 天皇賞(秋)(GI) 1위.",
+        "description": "[지구력 축적] 쓸 때마다 최대 체력이 70씩 붙어 전투당 네 번까지 쌓이고, 4초 동안 받는 피해가 18% 줄며 138의 보호막이 생깁니다. 근거: 2011 天皇賞(秋)(GI) 1위.",
         "choreography": {
           "windup": 0.3,
           "recovery": 0.3,
@@ -3291,7 +3291,7 @@
           "motion": "STRIKE"
         }
       },
-      "skillSignature": "9ce6cb2394f86fe091745fe8666ae4783ca9b0b2b82bf92330256febab4b4cc0",
+      "skillSignature": "a8c78683748990f9d44d4fede32a563c6f91a9700531aad73425fb8759584456",
       "basicAttack": "근접 준비 → 당김 → 타격 → 회수",
       "skillPoseDraft": [
         "몸 중심에 기운 모음",
@@ -3348,7 +3348,7 @@
           }
         ],
         "vfxKey": "vfx_heal",
-        "description": "[전력 연결] 가장 위급한 아군을 188 회복. 같은 아군에게 4초간 공격속도 +35%, 주문력 +20%. 근거: 2010 宝塚記念(GI) 1위.",
+        "description": "[전력 연결] 가장 급한 아군을 188 회복시키고, 그 아군에게 4초 동안 공격속도 +35%와 주문력 +20%를 얹어 줍니다. 근거: 2010 宝塚記念(GI) 1위.",
         "choreography": {
           "windup": 0.3,
           "recovery": 0.3,
@@ -3361,7 +3361,7 @@
           "motion": "STRIKE"
         }
       },
-      "skillSignature": "34a4b4dcdec45cdcdd3fbf348a9e17a6e9b05920c89cf279b1fae22222e3e2e4",
+      "skillSignature": "faf087965f4f56cbe67bb288fb1d760b205d35d34582130b2150469aa1554cec",
       "basicAttack": "원거리 조준 → 발사 준비 → 투사체 방출 → 반동 회복",
       "skillPoseDraft": [
         "아군을 향해 손 모음",
@@ -3431,7 +3431,7 @@
           }
         ],
         "vfxKey": "vfx_dash_oikomi",
-        "description": "[추격 연타] 돌진 후 한 적에게 74 물리 피해를 3회, 4초간 공격속도 +20%. 대상 사망 시 남은 타격은 재탐색. 근거: 1993 皐月賞(GI) 1위.",
+        "description": "[추격 연타] 한 상대에게 붙어 74의 물리 피해를 세 번 몰아치고, 4초 동안 공격속도가 +20% 오릅니다. 상대가 먼저 쓰러지면 남은 타격은 다음 상대를 찾아갑니다. 근거: 1993 皐月賞(GI) 1위.",
         "choreography": {
           "windup": 0.3,
           "recovery": 0.3,
@@ -3444,7 +3444,7 @@
           "motion": "PULSE"
         }
       },
-      "skillSignature": "f65fe82bbf08bf9a726bb25ef411d640e4b427302940227f3711b6f777564584",
+      "skillSignature": "5ecf71c23830abf21b24bed1a84285ab87314587677df2dd1242ce35c9ab7737",
       "basicAttack": "근접 준비 → 당김 → 타격 → 회수",
       "skillPoseDraft": [
         "낮게 웅크린 출발",
@@ -3507,7 +3507,7 @@
           }
         ],
         "vfxKey": "vfx_dash_senko",
-        "description": "[유인 돌진] 149 보호막을 얻고 0.25초 뒤 돌진. 대상에게 263 물리 피해와 2초 둔화. 근거: 1992 スプリンターズS(GI) 1위.",
+        "description": "[유인 돌진] 149의 보호막을 두르고 0.25초 뒤 뛰어들어, 상대에게 263의 물리 피해를 입히고 2초 동안 발을 묶습니다. 근거: 1992 スプリンターズS(GI) 1위.",
         "choreography": {
           "windup": 0.15,
           "recovery": 0.3,
@@ -3520,7 +3520,7 @@
           "motion": "STRIKE"
         }
       },
-      "skillSignature": "47d00b66e9650d6cd8669044f7bb38cf12ff9ed42561402524ccd0122a11b32d",
+      "skillSignature": "118b22b962343fe4ca75fd4877b23a478df2b78f14c106d9dc2c39cabbedbc2d",
       "basicAttack": "원거리 조준 → 발사 준비 → 투사체 방출 → 반동 회복",
       "skillPoseDraft": [
         "낮게 웅크린 출발",
@@ -3581,7 +3581,7 @@
           }
         ],
         "vfxKey": "vfx_stun",
-        "description": "[서리 전선] 주변 2칸 최대 4명에게 96 마법 피해, 0.6초 기절과 3초 둔화. 근거: 1999 C68 2위.",
+        "description": "[서리 전선] 주변 2칸의 최대 4명에게 96의 마법 피해를 입히고 0.6초 기절시킨 뒤, 3초 동안 발을 묶습니다. 근거: 1999 C68 2위.",
         "choreography": {
           "windup": 0.15,
           "recovery": 0.3,
@@ -3594,7 +3594,7 @@
           "motion": "STRIKE"
         }
       },
-      "skillSignature": "55de2f65ab9978731e81ef8285354c4dba855da7134d8974f3b1ff58edac591d",
+      "skillSignature": "acea67d672bda2d973b1f3ad9005e41327af4c06072bb4513e0ca6c58aba81c5",
       "basicAttack": "원거리 조준 → 발사 준비 → 투사체 방출 → 반동 회복",
       "skillPoseDraft": [
         "대상 지점 조준",
@@ -3648,7 +3648,7 @@
           }
         ],
         "vfxKey": "vfx_stun",
-        "description": "[무장 해제] 전방 3칸 최대 4명에게 163 마법 피해. 1.8초간 일반 공격 봉쇄, 스킬은 사용 가능. 근거: 1990 スプリンターズS(GI) 1위.",
+        "description": "[무장 해제] 앞쪽 3칸의 최대 4명에게 163의 마법 피해를 입히고, 1.8초 동안 기본 공격을 막습니다. 스킬은 그대로 나갑니다. 근거: 1990 スプリンターズS(GI) 1위.",
         "choreography": {
           "windup": 0.15,
           "recovery": 0.3,
@@ -3661,7 +3661,7 @@
           "motion": "STRIKE"
         }
       },
-      "skillSignature": "136600900b0ff02edb527de70b34921e9243cef8db7b6425b7008fbe945a21c0",
+      "skillSignature": "38f60e27fde094fdf0ae208453435f9202ea5dc78226d08441591615b5e9dba6",
       "basicAttack": "원거리 조준 → 발사 준비 → 투사체 방출 → 반동 회복",
       "skillPoseDraft": [
         "대상 지점 조준",
@@ -3723,7 +3723,7 @@
           }
         ],
         "vfxKey": "vfx_stun",
-        "description": "[지연 봉쇄] 주변 1칸 최대 4명에게 67 마법 피해, 0.8초 뒤 85 추가 피해와 1.4초 기절. 근거: 1995 セントウルS(GIII) 1위.",
+        "description": "[지연 봉쇄] 주변 1칸의 최대 4명에게 67의 마법 피해를 주고, 0.8초 뒤 85의 피해가 한 번 더 터지며 1.4초 동안 기절시킵니다. 근거: 1995 セントウルS(GIII) 1위.",
         "choreography": {
           "windup": 0.15,
           "recovery": 0.3,
@@ -3736,7 +3736,7 @@
           "motion": "PULSE"
         }
       },
-      "skillSignature": "c0e5cf4133d43b7074b2ef1648b3add9e74ed963a68b7707c661fbf2e2a98465",
+      "skillSignature": "a687f60a061b52063c7acca69e56791cde51f6a0b91d4f25d9f7415f4c1d16d9",
       "basicAttack": "원거리 조준 → 발사 준비 → 투사체 방출 → 반동 회복",
       "skillPoseDraft": [
         "대상 지점 조준",
@@ -3788,7 +3788,7 @@
           }
         ],
         "vfxKey": "vfx_shield",
-        "description": "[방벽 반격] 334 보호막을 얻고 0.7초 뒤 주변 2칸 최대 4명에게 194 마법 피해. 체력 피해의 20% 회복. 근거: 1997 宝塚記念(GI) 1위.",
+        "description": "[방벽 반격] 334의 보호막을 두르고 0.7초 뒤 주변 2칸의 최대 4명에게 194의 마법 피해로 되받아치며, 깎은 체력의 20%를 회복합니다. 근거: 1997 宝塚記念(GI) 1위.",
         "choreography": {
           "windup": 0.3,
           "recovery": 0.3,
@@ -3801,7 +3801,7 @@
           "motion": "STRIKE"
         }
       },
-      "skillSignature": "a34c434c3316237774e9cc9cb1d2fbc98ee17721f1b3f679b77d04cd8dd322ea",
+      "skillSignature": "c1a96bd9fc36b92f5a9a774126b8591ff7383762dbef7909bd1ed250544c2645",
       "basicAttack": "근접 준비 → 당김 → 타격 → 회수",
       "skillPoseDraft": [
         "방어 자세 준비",
@@ -3855,7 +3855,7 @@
           }
         ],
         "vfxKey": "vfx_heal",
-        "description": "[삼중 회복] 처음 선택한 체력 비율이 가장 낮은 아군에게 91씩 0.45초 간격으로 3회 회복. 사망하면 새 대상 선택. 근거: 1997 菊花賞(GI) 1위.",
+        "description": "[삼중 회복] 가장 위태로운 아군을 0.45초 간격으로 91씩 세 번 일으켜 세웁니다. 도중에 쓰러지면 다음으로 위태로운 아군에게 넘어갑니다. 근거: 1997 菊花賞(GI) 1위.",
         "choreography": {
           "windup": 0.45,
           "recovery": 0.3,
@@ -3868,7 +3868,7 @@
           "motion": "STRIKE"
         }
       },
-      "skillSignature": "c8f68c7ceec0edfd10cdf6bf0cc20fa4579ff9cbddcc42d70abd2e6dd76e25a6",
+      "skillSignature": "72289688a3e31b6c43d815173f1db669b942ffacf4e5596aa3eaebc5b7e570e3",
       "basicAttack": "원거리 조준 → 발사 준비 → 투사체 방출 → 반동 회복",
       "skillPoseDraft": [
         "아군을 향해 손 모음",
@@ -3920,7 +3920,7 @@
           }
         ],
         "vfxKey": "vfx_stun",
-        "description": "[침묵 지대] 대상 주변 1칸 최대 4명에게 121 마법 피해와 2초 침묵. 일반 공격과 이동은 가능. 근거: 1985 サンケイ大阪杯(GII) 2위.",
+        "description": "[침묵 지대] 대상 주변 1칸의 최대 4명에게 121의 마법 피해를 입히고 2초 동안 침묵시킵니다. 기본 공격과 이동은 막지 않습니다. 근거: 1985 サンケイ大阪杯(GII) 2위.",
         "choreography": {
           "windup": 0.3,
           "recovery": 0.3,
@@ -3933,7 +3933,7 @@
           "motion": "STRIKE"
         }
       },
-      "skillSignature": "1b411b3720291c52fd8e035189ef95a5a13bbbc14c53c77211b1a094e281cd36",
+      "skillSignature": "ec93fb91fd50d9c0ea9d603925e124756dc999b5b63613ccfde4fde2ece55974",
       "basicAttack": "근접 준비 → 당김 → 타격 → 회수",
       "skillPoseDraft": [
         "대상 지점 조준",
@@ -3999,7 +3999,7 @@
           }
         ],
         "vfxKey": "vfx_buff",
-        "description": "[회복 성역] 2칸 내 최대 4명 아군의 제어 효과를 해제하고, 0.5초 간격으로 72씩 3회 회복. 근거: 2001 宝塚記念(GI) 1위.",
+        "description": "[회복 성역] 2칸 안의 아군 최대 4명을 묶고 있던 방해 효과를 풀어 주고, 0.5초 간격으로 72씩 세 번 회복시킵니다. 근거: 2001 宝塚記念(GI) 1위.",
         "choreography": {
           "windup": 0.3,
           "recovery": 0.3,
@@ -4012,7 +4012,7 @@
           "motion": "STRIKE"
         }
       },
-      "skillSignature": "29b3b19c9d657014ccce8743b075aea330d5085f53c40f7099c71eb19e62c960",
+      "skillSignature": "138f8ba44eacc0c56fe95015859ad0d79da8ca1ed74b39b274bcf066c6fde54c",
       "basicAttack": "근접 준비 → 당김 → 타격 → 회수",
       "skillPoseDraft": [
         "몸 중심에 기운 모음",
@@ -4072,7 +4072,7 @@
           }
         ],
         "vfxKey": "vfx_dash_sashi",
-        "description": "[교차 파동] 돌진 후 직선 최대 4명에게 164 물리 피해, 0.45초 뒤 같은 방향으로 116 마법 파동. 근거: 1997 優駿牝馬(GI) 1위.",
+        "description": "[교차 파동] 직선상의 최대 4명을 164의 물리 피해로 밀어내고, 0.45초 뒤 같은 방향으로 116의 마법 파동을 흘려보냅니다. 근거: 1997 優駿牝馬(GI) 1위.",
         "choreography": {
           "windup": 0.3,
           "recovery": 0.3,
@@ -4085,7 +4085,7 @@
           "motion": "PULSE"
         }
       },
-      "skillSignature": "eaa6415a831a3ad350dbe93f0c024ee8b72e69e1b8024c55039a46283d7469fb",
+      "skillSignature": "c0a984e5eccc8a778e9a36d8e6d616892b9187d86fdc750d91c5615b2c9d6539",
       "basicAttack": "원거리 조준 → 발사 준비 → 투사체 방출 → 반동 회복",
       "skillPoseDraft": [
         "낮게 웅크린 출발",
@@ -4137,7 +4137,7 @@
           }
         ],
         "vfxKey": "vfx_stun",
-        "description": "[침묵 지대] 대상 주변 1칸 최대 4명에게 135 마법 피해와 2초 침묵. 일반 공격과 이동은 가능. 근거: 1994 高松宮杯(GII) 1위.",
+        "description": "[침묵 지대] 대상 주변 1칸의 최대 4명에게 135의 마법 피해를 입히고 2초 동안 침묵시킵니다. 기본 공격과 이동은 막지 않습니다. 근거: 1994 高松宮杯(GII) 1위.",
         "choreography": {
           "windup": 0.3,
           "recovery": 0.3,
@@ -4150,7 +4150,7 @@
           "motion": "STRIKE"
         }
       },
-      "skillSignature": "4661cb8e6a78fce5d9000dcade9a40ecba9b3bdbfc5e5e7b285c0322bea3badc",
+      "skillSignature": "98ddae9aad37aa3e90c18932a83049ab8bb72ebf925b859d66cb7823395bcb72",
       "basicAttack": "원거리 조준 → 발사 준비 → 투사체 방출 → 반동 회복",
       "skillPoseDraft": [
         "대상 지점 조준",
@@ -4197,7 +4197,7 @@
           }
         ],
         "vfxKey": "vfx_heal",
-        "description": "[구원 방벽] 체력 비율이 가장 낮은 아군의 잃은 체력 25%를 회복하고 170 보호막(4초). 근거: 2000 高松宮記念(GI) 1위.",
+        "description": "[구원 방벽] 가장 위태로운 아군의 잃은 체력을 25% 되돌리고 4초 동안 170의 보호막을 씌웁니다. 근거: 2000 高松宮記念(GI) 1위.",
         "choreography": {
           "windup": 0.15,
           "recovery": 0.3,
@@ -4210,7 +4210,7 @@
           "motion": "STRIKE"
         }
       },
-      "skillSignature": "389000e943964bd69efef095eb717c41e56e7937161e608d9bba3fdd4ea38106",
+      "skillSignature": "fb3cc732171bf54c72f67eeb3091866e3f8834afbd9fe64dc1345e96bb1ab647",
       "basicAttack": "원거리 조준 → 발사 준비 → 투사체 방출 → 반동 회복",
       "skillPoseDraft": [
         "아군을 향해 손 모음",
@@ -4265,7 +4265,7 @@
           }
         ],
         "vfxKey": "vfx_stun",
-        "description": "[마나 구속] 대상에게 157 마법 피해, 현재 마나 15 제거, 3초간 공격속도 25% 감소. 근거: 1995 高松宮杯(GII) 1위.",
+        "description": "[마나 구속] 상대에게 157의 마법 피해를 입히고 마나를 15 빼앗으며, 3초 동안 공격속도를 25% 떨어뜨립니다. 근거: 1995 高松宮杯(GII) 1위.",
         "choreography": {
           "windup": 0.3,
           "recovery": 0.3,
@@ -4278,7 +4278,7 @@
           "motion": "STRIKE"
         }
       },
-      "skillSignature": "d35ef76dfdf4789d754ef66ff71d68eed99ce3f2fb2965f12a44c3f11f0236fa",
+      "skillSignature": "239aefb6f82103dd78baaa74d10fe3a24ce4cbc7471d2f5b8f39af5b2b5d55d3",
       "basicAttack": "원거리 조준 → 발사 준비 → 투사체 방출 → 반동 회복",
       "skillPoseDraft": [
         "대상 지점 조준",
@@ -4332,7 +4332,7 @@
           }
         ],
         "vfxKey": "vfx_heal",
-        "description": "[삼중 회복] 처음 선택한 체력 비율이 가장 낮은 아군에게 91씩 0.45초 간격으로 3회 회복. 사망하면 새 대상 선택. 근거: 1992 産經賞オールカマー(GIII) 1위.",
+        "description": "[삼중 회복] 가장 위태로운 아군을 0.45초 간격으로 91씩 세 번 일으켜 세웁니다. 도중에 쓰러지면 다음으로 위태로운 아군에게 넘어갑니다. 근거: 1992 産經賞オールカマー(GIII) 1위.",
         "choreography": {
           "windup": 0.3,
           "recovery": 0.3,
@@ -4345,7 +4345,7 @@
           "motion": "STRIKE"
         }
       },
-      "skillSignature": "47a09f3bd807d49d3855c244ae11849a624548ff04d007a594e6155b12bd71e7",
+      "skillSignature": "a7996d7f342ec77d69084b2056c37e76976f6c9919509e5c334ce89790b47fc0",
       "basicAttack": "원거리 조준 → 발사 준비 → 투사체 방출 → 반동 회복",
       "skillPoseDraft": [
         "아군을 향해 손 모음",
@@ -4399,7 +4399,7 @@
           }
         ],
         "vfxKey": "vfx_buff",
-        "description": "[지구력 축적] 시전마다 최대 체력 +70(전투당 최대 4중첩). 4초간 받는 피해 18% 감소와 139 보호막. 근거: 1992 有馬記念(GI) 1위.",
+        "description": "[지구력 축적] 쓸 때마다 최대 체력이 70씩 붙어 전투당 네 번까지 쌓이고, 4초 동안 받는 피해가 18% 줄며 139의 보호막이 생깁니다. 근거: 1992 有馬記念(GI) 1위.",
         "choreography": {
           "windup": 0.45,
           "recovery": 0.3,
@@ -4412,7 +4412,7 @@
           "motion": "STRIKE"
         }
       },
-      "skillSignature": "14a3e8af313aca65543d8bb3e37178fdecf92062c27db27148561f34f4b41ac2",
+      "skillSignature": "a7e4036dfc1c7783caef121b995f48785959387f1697c0b76c928671299efd98",
       "basicAttack": "원거리 조준 → 발사 준비 → 투사체 방출 → 반동 회복",
       "skillPoseDraft": [
         "몸 중심에 기운 모음",
@@ -4466,7 +4466,7 @@
           }
         ],
         "vfxKey": "vfx_buff",
-        "description": "[진군 박자] 2칸 내 최대 4명의 아군에게 4초간 공격속도 +31.8%. 자신 외 대상은 마나 8 회복. 근거: 1992 マイルチャンピオンS(GI) 1위.",
+        "description": "[진군 박자] 2칸 안의 아군 최대 4명의 공격속도를 4초 동안 +31.8% 끌어올리고, 자신을 뺀 아군은 마나를 8 회복합니다. 근거: 1992 マイルチャンピオンS(GI) 1위.",
         "choreography": {
           "windup": 0.3,
           "recovery": 0.3,
@@ -4479,7 +4479,7 @@
           "motion": "STRIKE"
         }
       },
-      "skillSignature": "4d1ef3adeedb98aedc4486507397a81b7b56fc2089895dbb6971cb9976214b02",
+      "skillSignature": "ba7fb06311777d8f921c7c6f3feb78821a8469ccadc193a3fc1773dd07e5a516",
       "basicAttack": "원거리 조준 → 발사 준비 → 투사체 방출 → 반동 회복",
       "skillPoseDraft": [
         "몸 중심에 기운 모음",
@@ -4533,7 +4533,7 @@
           }
         ],
         "vfxKey": "vfx_buff",
-        "description": "[진군 박자] 2칸 내 최대 4명의 아군에게 4초간 공격속도 +30%. 자신 외 대상은 마나 8 회복. 근거: 1993 産經賞オールカマー(GIII) 1위.",
+        "description": "[진군 박자] 2칸 안의 아군 최대 4명의 공격속도를 4초 동안 +30% 끌어올리고, 자신을 뺀 아군은 마나를 8 회복합니다. 근거: 1993 産經賞オールカマー(GIII) 1위.",
         "choreography": {
           "windup": 0.3,
           "recovery": 0.3,
@@ -4546,7 +4546,7 @@
           "motion": "STRIKE"
         }
       },
-      "skillSignature": "765c6b69777dec6be8f4848015dbcdb85d463fede33e2e8a8fbdc7a771551993",
+      "skillSignature": "acf2f43749fd80cb381f3e184c71b0e9d16af5e2a2313f9c31eca4e0ca205e90",
       "basicAttack": "원거리 조준 → 발사 준비 → 투사체 방출 → 반동 회복",
       "skillPoseDraft": [
         "몸 중심에 기운 모음",
@@ -4600,7 +4600,7 @@
           }
         ],
         "vfxKey": "vfx_stun",
-        "description": "[관통 구속] 직선 6칸 최대 4명에게 148 마법 피해와 1초 기절. 근거: 2016 有馬記念(GI) 1위.",
+        "description": "[관통 구속] 직선 6칸의 최대 4명에게 148의 마법 피해를 입히고 1초 동안 세워 둡니다. 근거: 2016 有馬記念(GI) 1위.",
         "choreography": {
           "windup": 0.45,
           "recovery": 0.3,
@@ -4613,7 +4613,7 @@
           "motion": "STRIKE"
         }
       },
-      "skillSignature": "94c96e5d1c2e22cb1e582050de772ed0be37bed558ad401d8f32acc23c4a3fcb",
+      "skillSignature": "67ed1dfdfd89521a22f5f8c8d1e671459c7b1ff9f57e5c32228fb9d1a67012da",
       "basicAttack": "근접 준비 → 당김 → 타격 → 회수",
       "skillPoseDraft": [
         "대상 지점 조준",
@@ -4663,7 +4663,7 @@
           }
         ],
         "vfxKey": "vfx_buff",
-        "description": "[에이스 지휘] 공격력이 가장 높은 아군 1명에게 4초간 공격속도 +55.8%와 330 보호막. 근거: 2017 天皇賞(秋)(GI) 1위.",
+        "description": "[에이스 지휘] 가장 잘 때리는 아군 한 명에게 4초 동안 공격속도 +55.8%와 330의 보호막을 실어 줍니다. 근거: 2017 天皇賞(秋)(GI) 1위.",
         "choreography": {
           "windup": 0.3,
           "recovery": 0.3,
@@ -4676,7 +4676,7 @@
           "motion": "STRIKE"
         }
       },
-      "skillSignature": "3597bd37e88acfa06c10af04eda84f98f3371fd88f94c649d474970b927051e8",
+      "skillSignature": "613f3b7bfc069908069f368c9309a49b703cdc77427481cd3bba74a8830cc6ec",
       "basicAttack": "근접 준비 → 당김 → 타격 → 회수",
       "skillPoseDraft": [
         "몸 중심에 기운 모음",
@@ -4736,7 +4736,7 @@
           }
         ],
         "vfxKey": "vfx_dash_nige",
-        "description": "[교차 파동] 돌진 후 직선 최대 4명에게 131 물리 피해, 0.45초 뒤 같은 방향으로 93 마법 파동. 근거: 1988 東京優駿(GI) 1위.",
+        "description": "[교차 파동] 직선상의 최대 4명을 131의 물리 피해로 밀어내고, 0.45초 뒤 같은 방향으로 93의 마법 파동을 흘려보냅니다. 근거: 1988 東京優駿(GI) 1위.",
         "choreography": {
           "windup": 0.3,
           "recovery": 0.3,
@@ -4749,7 +4749,7 @@
           "motion": "PULSE"
         }
       },
-      "skillSignature": "9cdf224fcf2d86cefe0ca47535346b2fabe87158a62816e0e8bff5e5b794a0d0",
+      "skillSignature": "eae22b347a40594ecd58b094fc6dc9d9d2c752403eb8e1b3f295bf0b1b78036e",
       "basicAttack": "근접 준비 → 당김 → 타격 → 회수",
       "skillPoseDraft": [
         "낮게 웅크린 출발",
@@ -4801,7 +4801,7 @@
           }
         ],
         "vfxKey": "vfx_stun",
-        "description": "[침묵 지대] 대상 주변 1칸 최대 4명에게 114 마법 피해와 2초 침묵. 일반 공격과 이동은 가능. 근거: 1988 毎日王冠(GII) 2위.",
+        "description": "[침묵 지대] 대상 주변 1칸의 최대 4명에게 114의 마법 피해를 입히고 2초 동안 침묵시킵니다. 기본 공격과 이동은 막지 않습니다. 근거: 1988 毎日王冠(GII) 2위.",
         "choreography": {
           "windup": 0.3,
           "recovery": 0.3,
@@ -4814,7 +4814,7 @@
           "motion": "STRIKE"
         }
       },
-      "skillSignature": "2a5bbab3bdf24309a31d18c4064380b9392c4480162bddeed01c57bba666591b",
+      "skillSignature": "6e3d5e47f3092aa0444eee178bcdb40284cab7794a16ec4c4ea44a25d12184f9",
       "basicAttack": "원거리 조준 → 발사 준비 → 투사체 방출 → 반동 회복",
       "skillPoseDraft": [
         "대상 지점 조준",
@@ -4880,7 +4880,7 @@
           }
         ],
         "vfxKey": "vfx_buff",
-        "description": "[회복 성역] 2칸 내 최대 4명 아군의 제어 효과를 해제하고, 0.5초 간격으로 51씩 3회 회복. 근거: 1989 高松宮杯(GII) 1위.",
+        "description": "[회복 성역] 2칸 안의 아군 최대 4명을 묶고 있던 방해 효과를 풀어 주고, 0.5초 간격으로 51씩 세 번 회복시킵니다. 근거: 1989 高松宮杯(GII) 1위.",
         "choreography": {
           "windup": 0.3,
           "recovery": 0.3,
@@ -4893,7 +4893,7 @@
           "motion": "STRIKE"
         }
       },
-      "skillSignature": "6e02cd34aec03c5d14bfba0bf7e2bdcec187dbbd7cc09ff97283babf7bd593ca",
+      "skillSignature": "d97b61221c6a177ab128373f1ec952d132437a05d34d9d4a8ce6e8061c670311",
       "basicAttack": "원거리 조준 → 발사 준비 → 투사체 방출 → 반동 회복",
       "skillPoseDraft": [
         "몸 중심에 기운 모음",
@@ -4950,7 +4950,7 @@
           }
         ],
         "vfxKey": "vfx_heal",
-        "description": "[전력 연결] 가장 위급한 아군을 231 회복. 같은 아군에게 4초간 공격속도 +37.1%, 주문력 +21.2%. 근거: 1990 天皇賞(秋)(GI) 1위.",
+        "description": "[전력 연결] 가장 급한 아군을 231 회복시키고, 그 아군에게 4초 동안 공격속도 +37.1%와 주문력 +21.2%를 얹어 줍니다. 근거: 1990 天皇賞(秋)(GI) 1위.",
         "choreography": {
           "windup": 0.3,
           "recovery": 0.3,
@@ -4963,7 +4963,7 @@
           "motion": "STRIKE"
         }
       },
-      "skillSignature": "cd14728283a96ea26526161831730c54bc91c632bc1a299fa4670201579f8194",
+      "skillSignature": "6c4ab72f8fd0e54925c0109352c9c509f39164545684846283aa3e29a20807a5",
       "basicAttack": "원거리 조준 → 발사 준비 → 투사체 방출 → 반동 회복",
       "skillPoseDraft": [
         "아군을 향해 손 모음",
@@ -5025,7 +5025,7 @@
           }
         ],
         "vfxKey": "vfx_stun",
-        "description": "[지연 봉쇄] 주변 1칸 최대 4명에게 66 마법 피해, 0.8초 뒤 84 추가 피해와 1.4초 기절. 근거: 1999 京都大賞典(GII) 1위.",
+        "description": "[지연 봉쇄] 주변 1칸의 최대 4명에게 66의 마법 피해를 주고, 0.8초 뒤 84의 피해가 한 번 더 터지며 1.4초 동안 기절시킵니다. 근거: 1999 京都大賞典(GII) 1위.",
         "choreography": {
           "windup": 0.3,
           "recovery": 0.3,
@@ -5038,7 +5038,7 @@
           "motion": "PULSE"
         }
       },
-      "skillSignature": "62aac5a15778224810298a4c3a663917c4da73855a628eac86fc46bf99000702",
+      "skillSignature": "adc179620e7d31fceecb22ccf3d1f02c5b3b406d05971247e9943c92256ee0f1",
       "basicAttack": "원거리 조준 → 발사 준비 → 투사체 방출 → 반동 회복",
       "skillPoseDraft": [
         "대상 지점 조준",
@@ -5099,7 +5099,7 @@
           }
         ],
         "vfxKey": "vfx_stun",
-        "description": "[서리 전선] 주변 2칸 최대 4명에게 107 마법 피해, 0.6초 기절과 3초 둔화. 근거: 1998 天皇賞(春)(GI) 1위.",
+        "description": "[서리 전선] 주변 2칸의 최대 4명에게 107의 마법 피해를 입히고 0.6초 기절시킨 뒤, 3초 동안 발을 묶습니다. 근거: 1998 天皇賞(春)(GI) 1위.",
         "choreography": {
           "windup": 0.45,
           "recovery": 0.3,
@@ -5112,7 +5112,7 @@
           "motion": "STRIKE"
         }
       },
-      "skillSignature": "030e3599cb04a909832e10bf881b6fdecdab1542cd6e9d3ec89eab5ba1e8d4d5",
+      "skillSignature": "6773643133d547d78f28a649d206e428122b340b23ee651e15f7c83885dfbc79",
       "basicAttack": "근접 준비 → 당김 → 타격 → 회수",
       "skillPoseDraft": [
         "대상 지점 조준",
@@ -5172,7 +5172,7 @@
           }
         ],
         "vfxKey": "vfx_dash_sashi",
-        "description": "[교차 파동] 돌진 후 직선 최대 4명에게 156 물리 피해, 0.45초 뒤 같은 방향으로 110 마법 파동. 근거: 2020 優駿牝馬(GI) 1위.",
+        "description": "[교차 파동] 직선상의 최대 4명을 156의 물리 피해로 밀어내고, 0.45초 뒤 같은 방향으로 110의 마법 파동을 흘려보냅니다. 근거: 2020 優駿牝馬(GI) 1위.",
         "choreography": {
           "windup": 0.3,
           "recovery": 0.3,
@@ -5185,7 +5185,7 @@
           "motion": "PULSE"
         }
       },
-      "skillSignature": "02d10d076d918a58b690961a1100cea42c747a86ac6fa05e92e000386a1c5143",
+      "skillSignature": "0185608bc7e15589856cac5b33ace91d0cf6cd15652776a1c8fb15a57a9f379c",
       "basicAttack": "근접 준비 → 당김 → 타격 → 회수",
       "skillPoseDraft": [
         "낮게 웅크린 출발",
@@ -5246,7 +5246,7 @@
           }
         ],
         "vfxKey": "vfx_stun",
-        "description": "[서리 전선] 주변 2칸 최대 4명에게 129 마법 피해, 0.6초 기절과 3초 둔화. 근거: 1996 天皇賞(春)(GI) 1위.",
+        "description": "[서리 전선] 주변 2칸의 최대 4명에게 129의 마법 피해를 입히고 0.6초 기절시킨 뒤, 3초 동안 발을 묶습니다. 근거: 1996 天皇賞(春)(GI) 1위.",
         "choreography": {
           "windup": 0.45,
           "recovery": 0.3,
@@ -5259,7 +5259,7 @@
           "motion": "STRIKE"
         }
       },
-      "skillSignature": "3a43903c78ad97955da7a267594b046228a7e18caf125ed3ba755a95ac743dd9",
+      "skillSignature": "8c876c49aeff2d23e0aa2c4a75022c1cacda43d3601e144451e22df53063e9e5",
       "basicAttack": "근접 준비 → 당김 → 타격 → 회수",
       "skillPoseDraft": [
         "대상 지점 조준",
@@ -5310,7 +5310,7 @@
           }
         ],
         "vfxKey": "vfx_shield",
-        "description": "[수호 서약] 주변 1칸 최대 3명 아군에게 230 보호막. 주변 적 최대 3명을 1.5초 도발. 근거: 1999 菊花賞(GI) 1위.",
+        "description": "[수호 서약] 주변 1칸의 아군 최대 3명에게 230의 보호막을 씌우고, 가까운 상대 최대 3명을 1.5초 동안 자신에게 붙잡아 둡니다. 근거: 1999 菊花賞(GI) 1위.",
         "choreography": {
           "windup": 0.45,
           "recovery": 0.3,
@@ -5323,7 +5323,7 @@
           "motion": "STRIKE"
         }
       },
-      "skillSignature": "c148c84e3de91c3ee221b393fe330daf18fabfbb7669480774e363378fa6d7f1",
+      "skillSignature": "d4585a616e349e362ef39302c00f2c9c0102ac440d8073e3fb4dc973ecf8473a",
       "basicAttack": "근접 준비 → 당김 → 타격 → 회수",
       "skillPoseDraft": [
         "방어 자세 준비",
@@ -5370,7 +5370,7 @@
           }
         ],
         "vfxKey": "vfx_heal",
-        "description": "[정화 선율] 체력 비율이 낮은 아군 최대 3명의 기절·침묵·무장해제·둔화·도발을 해제하고 199 회복. 근거: 1993 天皇賞(秋)(GI) 1위.",
+        "description": "[정화 선율] 위태로운 아군 최대 3명을 붙잡고 있던 기절, 침묵, 무장 해제, 둔화, 도발을 전부 풀고 199을 회복시킵니다. 근거: 1993 天皇賞(秋)(GI) 1위.",
         "choreography": {
           "windup": 0.3,
           "recovery": 0.3,
@@ -5383,7 +5383,7 @@
           "motion": "STRIKE"
         }
       },
-      "skillSignature": "acadf897444eaa50f7eba6e9b247237fe335108b9ed7421894f8829b76d9d835",
+      "skillSignature": "05308adf69ddba46147bfcf417ca8bce2dd003b8fcb580e8d8b4b6675c66cbf3",
       "basicAttack": "원거리 조준 → 발사 준비 → 투사체 방출 → 반동 회복",
       "skillPoseDraft": [
         "아군을 향해 손 모음",
@@ -5437,7 +5437,7 @@
           }
         ],
         "vfxKey": "vfx_buff",
-        "description": "[방벽 원진] 2칸 내 최대 4명의 아군에게 166 보호막과 방어력 +20을 4초간 부여. 근거: 2010 帝王賞競走(JpnI) 1위.",
+        "description": "[방벽 원진] 2칸 안의 아군 최대 4명에게 166의 보호막과 방어력 +20을 4초 동안 둘러 줍니다. 근거: 2010 帝王賞競走(JpnI) 1위.",
         "choreography": {
           "windup": 0.3,
           "recovery": 0.3,
@@ -5450,7 +5450,7 @@
           "motion": "STRIKE"
         }
       },
-      "skillSignature": "68a572a5e07bf63dd3423088de6fb45e7468574335fe70cdbbbab73d30c3f112",
+      "skillSignature": "6fc4764dbe25d260d73814d2570a6e47a01db58c55f72d09fe826a24af10b746",
       "basicAttack": "근접 준비 → 당김 → 타격 → 회수",
       "skillPoseDraft": [
         "몸 중심에 기운 모음",
@@ -5505,7 +5505,7 @@
           }
         ],
         "vfxKey": "vfx_aoe_burst",
-        "description": "[왕복 궤도] 직선 최대 4명에게 172 마법 피해 후 0.5초 뒤 86 고정 피해의 귀환 파동. 근거: 2011 ジャパンカップダート(GI) 1위.",
+        "description": "[왕복 궤도] 직선상의 최대 4명에게 172의 마법 피해를 주고, 0.5초 뒤 되돌아오는 파동이 86의 고정 피해를 더합니다. 근거: 2011 ジャパンカップダート(GI) 1위.",
         "choreography": {
           "windup": 0.3,
           "recovery": 0.3,
@@ -5518,7 +5518,7 @@
           "motion": "PULSE"
         }
       },
-      "skillSignature": "8620375c028f2c655037403765d976c44ee6b4deb3e98d18d12eba4c3a8120af",
+      "skillSignature": "677ff5e80df3ba3952f4252d8954dcbf2f33bcb42df2018aeade0dc8b0633510",
       "basicAttack": "원거리 조준 → 발사 준비 → 투사체 방출 → 반동 회복",
       "skillPoseDraft": [
         "힘을 모으는 자세",
@@ -5581,7 +5581,7 @@
           }
         ],
         "vfxKey": "vfx_dash_senko",
-        "description": "[유인 돌진] 180 보호막을 얻고 0.25초 뒤 돌진. 대상에게 318 물리 피해와 2초 둔화. 근거: 1994 マイルチャンピオンS(GI) 1위.",
+        "description": "[유인 돌진] 180의 보호막을 두르고 0.25초 뒤 뛰어들어, 상대에게 318의 물리 피해를 입히고 2초 동안 발을 묶습니다. 근거: 1994 マイルチャンピオンS(GI) 1위.",
         "choreography": {
           "windup": 0.3,
           "recovery": 0.3,
@@ -5594,7 +5594,7 @@
           "motion": "STRIKE"
         }
       },
-      "skillSignature": "95434cfe10af4294bbf3dfe7a85f1e3cb9cd06eac1c7dc08acf137db92181fd2",
+      "skillSignature": "5cf8f28ab17f4a995af59d5245123b62249388a5e68e0908b34b7299d43fa1e8",
       "basicAttack": "원거리 조준 → 발사 준비 → 투사체 방출 → 반동 회복",
       "skillPoseDraft": [
         "낮게 웅크린 출발",
@@ -5653,7 +5653,7 @@
           }
         ],
         "vfxKey": "vfx_dash_sashi",
-        "description": "[관통 돌파] 돌진 후 직선 6칸의 최대 4명에게 방어력 20% 감소(4초)와 401 물리 피해. 근거: 2003 有馬記念(GI) 1위.",
+        "description": "[관통 돌파] 안쪽으로 파고들며 직선 6칸의 최대 4명을 제칩니다. 4초 동안 방어력이 20% 무너지고 401의 물리 피해를 입습니다. 근거: 2003 有馬記念(GI) 1위.",
         "choreography": {
           "windup": 0.45,
           "recovery": 0.3,
@@ -5666,7 +5666,7 @@
           "motion": "STRIKE"
         }
       },
-      "skillSignature": "37ad4fd6818f81deab1ae1a36b83610abfc30b3acde3cb416743ebbe6a640254",
+      "skillSignature": "6972dd85f395706d83709df24be467092d38ea03db123278b9f8dc5f7ce760ed",
       "basicAttack": "근접 준비 → 당김 → 타격 → 회수",
       "skillPoseDraft": [
         "낮게 웅크린 출발",
@@ -5720,7 +5720,7 @@
           }
         ],
         "vfxKey": "vfx_stun",
-        "description": "[무장 해제] 전방 3칸 최대 4명에게 173 마법 피해. 1.8초간 일반 공격 봉쇄, 스킬은 사용 가능. 근거: 2002 東京優駿(GI) 1위.",
+        "description": "[무장 해제] 앞쪽 3칸의 최대 4명에게 173의 마법 피해를 입히고, 1.8초 동안 기본 공격을 막습니다. 스킬은 그대로 나갑니다. 근거: 2002 東京優駿(GI) 1위.",
         "choreography": {
           "windup": 0.3,
           "recovery": 0.3,
@@ -5733,7 +5733,7 @@
           "motion": "STRIKE"
         }
       },
-      "skillSignature": "2c3e69425cd2995894c857fe309a4185ca5d4bca3b33975a56b90d6194ecf85c",
+      "skillSignature": "02137ce23798ce5f31c778757133b6554f6f28cb3af3cacac2b9c17c66be1812",
       "basicAttack": "원거리 조준 → 발사 준비 → 투사체 방출 → 반동 회복",
       "skillPoseDraft": [
         "대상 지점 조준",
@@ -5783,7 +5783,7 @@
           }
         ],
         "vfxKey": "vfx_projectile",
-        "description": "[주력 저격] 공격력이 가장 높은 적을 저격해 231 물리 피해와 공격력 15% 감소(3초). 근거: 1991 スプリンターズS(GI) 1위.",
+        "description": "[주력 저격] 가장 위협적인 상대를 노려 231의 물리 피해를 입히고 3초 동안 공격력을 15% 떨어뜨립니다. 근거: 1991 スプリンターズS(GI) 1위.",
         "choreography": {
           "windup": 0.15,
           "recovery": 0.3,
@@ -5796,7 +5796,7 @@
           "motion": "STRIKE"
         }
       },
-      "skillSignature": "e83993a266d6b8aaae08b6d424e8e38533274a6a9fb8615f366a9d9c8813658a",
+      "skillSignature": "736b688edb62ddae9eeea2890ccea3b5deb003942b981b3365c3f5809887a69a",
       "basicAttack": "원거리 조준 → 발사 준비 → 투사체 방출 → 반동 회복",
       "skillPoseDraft": [
         "동일 대상에 1차 발사",
@@ -5856,7 +5856,7 @@
           }
         ],
         "vfxKey": "vfx_dash_oikomi",
-        "description": "[교차 파동] 돌진 후 직선 최대 4명에게 121 물리 피해, 0.45초 뒤 같은 방향으로 86 마법 파동. 근거: 1986 エリザベス女王杯(GI) 1위.",
+        "description": "[교차 파동] 직선상의 최대 4명을 121의 물리 피해로 밀어내고, 0.45초 뒤 같은 방향으로 86의 마법 파동을 흘려보냅니다. 근거: 1986 エリザベス女王杯(GI) 1위.",
         "choreography": {
           "windup": 0.3,
           "recovery": 0.3,
@@ -5869,7 +5869,7 @@
           "motion": "PULSE"
         }
       },
-      "skillSignature": "2be97b935ca963fc961ea6706d22bcb735de58d17180ae4289c57156aa329541",
+      "skillSignature": "42f40c12fe64f42a6f9bd49992dbcc040574285567904ee383c057442f2ce943",
       "basicAttack": "근접 준비 → 당김 → 타격 → 회수",
       "skillPoseDraft": [
         "낮게 웅크린 출발",
@@ -5924,7 +5924,7 @@
           }
         ],
         "vfxKey": "vfx_aoe_burst",
-        "description": "[왕복 궤도] 직선 최대 4명에게 121 마법 피해 후 0.5초 뒤 61 고정 피해의 귀환 파동. 근거: 2007 スプリンターズS(GI) 1위.",
+        "description": "[왕복 궤도] 직선상의 최대 4명에게 121의 마법 피해를 주고, 0.5초 뒤 되돌아오는 파동이 61의 고정 피해를 더합니다. 근거: 2007 スプリンターズS(GI) 1위.",
         "choreography": {
           "windup": 0.15,
           "recovery": 0.3,
@@ -5937,7 +5937,7 @@
           "motion": "PULSE"
         }
       },
-      "skillSignature": "f9a14d34580dd71bd5b3d23db795f75565ef4803f8e1bcc61a797624fd4406fb",
+      "skillSignature": "8ef1dae9ee5e5c49914e226f2a38f2f2a848918d9799568275dcf7e215c3d2ee",
       "basicAttack": "원거리 조준 → 발사 준비 → 투사체 방출 → 반동 회복",
       "skillPoseDraft": [
         "힘을 모으는 자세",
@@ -5993,7 +5993,7 @@
           }
         ],
         "vfxKey": "vfx_projectile",
-        "description": "[부채 연사] 전방 3칸 부채꼴 최대 4명에게 103 물리 피해를 0.3초 간격으로 2회. 근거: 2017 宝塚記念(GI) 1위.",
+        "description": "[부채 연사] 앞쪽 부채꼴 3칸의 최대 4명을 0.3초 간격으로 두 번 훑으며 매번 103의 물리 피해를 입힙니다. 근거: 2017 宝塚記念(GI) 1위.",
         "choreography": {
           "windup": 0.3,
           "recovery": 0.3,
@@ -6006,7 +6006,7 @@
           "motion": "PULSE"
         }
       },
-      "skillSignature": "d3f2bc6a2a9c2aef0afbf42cd6febda2c8371c07e209588d0c688820a9761dd5",
+      "skillSignature": "592c97d8ea892eed991b16da0d419897782221350942929dab23745f978c8770",
       "basicAttack": "원거리 조준 → 발사 준비 → 투사체 방출 → 반동 회복",
       "skillPoseDraft": [
         "동일 대상에 1차 발사",
@@ -6067,7 +6067,7 @@
           }
         ],
         "vfxKey": "vfx_stun",
-        "description": "[서리 전선] 주변 2칸 최대 4명에게 119 마법 피해, 0.6초 기절과 3초 둔화. 근거: 2017 ジャパンC(GI) 1위.",
+        "description": "[서리 전선] 주변 2칸의 최대 4명에게 119의 마법 피해를 입히고 0.6초 기절시킨 뒤, 3초 동안 발을 묶습니다. 근거: 2017 ジャパンC(GI) 1위.",
         "choreography": {
           "windup": 0.3,
           "recovery": 0.3,
@@ -6080,7 +6080,7 @@
           "motion": "STRIKE"
         }
       },
-      "skillSignature": "063f1a719bb7888994bcba9883b9d63b830e03b10fe7cf49f3153d3777b30b02",
+      "skillSignature": "3d30ee9cbcf7f87d06bc5238cb74090018bd5f74e8c8263e2b4944a2b391fc5d",
       "basicAttack": "근접 준비 → 당김 → 타격 → 회수",
       "skillPoseDraft": [
         "대상 지점 조준",
@@ -6140,7 +6140,7 @@
           }
         ],
         "vfxKey": "vfx_dash_sashi",
-        "description": "[교차 파동] 돌진 후 직선 최대 4명에게 105 물리 피해, 0.45초 뒤 같은 방향으로 75 마법 파동. 근거: 2016 秋華賞(GI) 1위.",
+        "description": "[교차 파동] 직선상의 최대 4명을 105의 물리 피해로 밀어내고, 0.45초 뒤 같은 방향으로 75의 마법 파동을 흘려보냅니다. 근거: 2016 秋華賞(GI) 1위.",
         "choreography": {
           "windup": 0.3,
           "recovery": 0.3,
@@ -6153,7 +6153,7 @@
           "motion": "PULSE"
         }
       },
-      "skillSignature": "89b3d5341e3eebf15d822aa1ea0ca516af962f1dae1952817159343f2a950c41",
+      "skillSignature": "4c82ee6e64d0435ecfcee3c2df60dd5b82ff4095e1fbab7d716231a121e36171",
       "basicAttack": "원거리 조준 → 발사 준비 → 투사체 방출 → 반동 회복",
       "skillPoseDraft": [
         "낮게 웅크린 출발",
@@ -6198,7 +6198,7 @@
           }
         ],
         "vfxKey": "vfx_heal",
-        "description": "[연결 등불] 가장 위급한 아군부터 3칸 간격으로 최대 3명에게 각각 164 보호막(4초)을 연결. 근거: 2002 宝塚記念(GI) 1위.",
+        "description": "[연결 등불] 가장 급한 아군부터 3칸 간격으로 최대 3명까지 이어 가며 각각 164의 보호막을 4초 동안 걸어 줍니다. 근거: 2002 宝塚記念(GI) 1위.",
         "choreography": {
           "windup": 0.3,
           "recovery": 0.3,
@@ -6211,7 +6211,7 @@
           "motion": "STRIKE"
         }
       },
-      "skillSignature": "4bb397b8fbd12d324c4b3b4709529ea449ac714a35f9a49cd301cb83b512f1a7",
+      "skillSignature": "781ca3a9e55509ab0c903ce9bf6ac8d914b34bc65d92bf47535eba561ff25427",
       "basicAttack": "원거리 조준 → 발사 준비 → 투사체 방출 → 반동 회복",
       "skillPoseDraft": [
         "아군을 향해 손 모음",
@@ -6265,7 +6265,7 @@
           }
         ],
         "vfxKey": "vfx_buff",
-        "description": "[지구력 축적] 시전마다 최대 체력 +70(전투당 최대 4중첩). 4초간 받는 피해 18% 감소와 138 보호막. 근거: 1991 スワンS(GII) 1위.",
+        "description": "[지구력 축적] 쓸 때마다 최대 체력이 70씩 붙어 전투당 네 번까지 쌓이고, 4초 동안 받는 피해가 18% 줄며 138의 보호막이 생깁니다. 근거: 1991 スワンS(GII) 1위.",
         "choreography": {
           "windup": 0.15,
           "recovery": 0.3,
@@ -6278,7 +6278,7 @@
           "motion": "STRIKE"
         }
       },
-      "skillSignature": "c3b7226663dd08f4f3bda8a45b2072e7a74a31c39c862144aa8ff475c5b09819",
+      "skillSignature": "7c9eeefcb15eb000918c1e4da544e78e27f940e19cee5e0497f89afdf8716705",
       "basicAttack": "원거리 조준 → 발사 준비 → 투사체 방출 → 반동 회복",
       "skillPoseDraft": [
         "몸 중심에 기운 모음",
@@ -6332,7 +6332,7 @@
           }
         ],
         "vfxKey": "vfx_stun",
-        "description": "[관통 구속] 직선 6칸 최대 4명에게 144 마법 피해와 1초 기절. 근거: 2001 ジャパンC(GI) 1위.",
+        "description": "[관통 구속] 직선 6칸의 최대 4명에게 144의 마법 피해를 입히고 1초 동안 세워 둡니다. 근거: 2001 ジャパンC(GI) 1위.",
         "choreography": {
           "windup": 0.3,
           "recovery": 0.3,
@@ -6345,7 +6345,7 @@
           "motion": "STRIKE"
         }
       },
-      "skillSignature": "534d6f3887528e236f0b8b5fb934e25f9fcde96e38bf803ae7671e53f80c548c",
+      "skillSignature": "7da2c6fab1e85e8a9ec5dcead859f30b9581b634cd88fca0547dd022ade07204",
       "basicAttack": "근접 준비 → 당김 → 타격 → 회수",
       "skillPoseDraft": [
         "대상 지점 조준",
@@ -6390,7 +6390,7 @@
           }
         ],
         "vfxKey": "vfx_aoe_burst",
-        "description": "[연쇄 섬광] 섬광이 대상에서 3칸 내 다음 적으로 최대 4명까지 이어지며 각각 126 마법 피해. 같은 적을 재타격하지 않음. 근거: 2003 高松宮記念(GI) 1위.",
+        "description": "[연쇄 섬광] 섬광이 3칸 안의 다음 상대로 최대 4명까지 옮겨붙으며 각각 126의 마법 피해를 입힙니다. 한 번 맞은 상대는 다시 타지 않습니다. 근거: 2003 高松宮記念(GI) 1위.",
         "choreography": {
           "windup": 0.15,
           "recovery": 0.3,
@@ -6403,7 +6403,7 @@
           "motion": "STRIKE"
         }
       },
-      "skillSignature": "acbcff1acc1969c1dafb4ce6419afb71917f2bdb2c3b77fed80056c25f36b6a3",
+      "skillSignature": "ace87582a9a61f98ae9b914046200b48fb75f735a88cb1cf46d4aa92dba6fbd6",
       "basicAttack": "원거리 조준 → 발사 준비 → 투사체 방출 → 반동 회복",
       "skillPoseDraft": [
         "힘을 모으는 자세",
@@ -6457,7 +6457,7 @@
           }
         ],
         "vfxKey": "vfx_stun",
-        "description": "[관통 구속] 직선 6칸 최대 4명에게 115 마법 피해와 1초 기절. 근거: 2002 皐月賞(GI) 1위.",
+        "description": "[관통 구속] 직선 6칸의 최대 4명에게 115의 마법 피해를 입히고 1초 동안 세워 둡니다. 근거: 2002 皐月賞(GI) 1위.",
         "choreography": {
           "windup": 0.3,
           "recovery": 0.3,
@@ -6470,7 +6470,7 @@
           "motion": "STRIKE"
         }
       },
-      "skillSignature": "9c116827a9efc2dc14ef8a74beddaddc59535634f579de62ab9c1c8eec08f2c0",
+      "skillSignature": "b42de9b1eae5aba8bd36fe858590cee729f8c9dbb527493923153f5b3c78ca73",
       "basicAttack": "원거리 조준 → 발사 준비 → 투사체 방출 → 반동 회복",
       "skillPoseDraft": [
         "대상 지점 조준",
@@ -6527,7 +6527,7 @@
           }
         ],
         "vfxKey": "vfx_dash_senko",
-        "description": "[충격 질주] 돌진 지점 주변 1칸 최대 4명에게 189 물리 피해와 0.65초 기절. 근거: 2003 優駿牝馬(GI) 1위.",
+        "description": "[충격 질주] 뛰어든 자리 1칸 안의 최대 4명에게 189의 물리 피해를 입히고 0.65초 동안 기절시킵니다. 근거: 2003 優駿牝馬(GI) 1위.",
         "choreography": {
           "windup": 0.3,
           "recovery": 0.3,
@@ -6540,7 +6540,7 @@
           "motion": "STRIKE"
         }
       },
-      "skillSignature": "864a9f916bf15176bf63aa16cd61fb713cb97fd429547f3396c20a1ec3bc760b",
+      "skillSignature": "935f84906ff444d6c2f8b0653ca1eba094fd673c193359e10200ccb3c094006f",
       "basicAttack": "근접 준비 → 당김 → 타격 → 회수",
       "skillPoseDraft": [
         "낮게 웅크린 출발",
@@ -6603,7 +6603,7 @@
           }
         ],
         "vfxKey": "vfx_dash_nige",
-        "description": "[유인 돌진] 176 보호막을 얻고 0.25초 뒤 돌진. 대상에게 311 물리 피해와 2초 둔화. 근거: 2015 フェブラリーS(GI) 1위.",
+        "description": "[유인 돌진] 176의 보호막을 두르고 0.25초 뒤 뛰어들어, 상대에게 311의 물리 피해를 입히고 2초 동안 발을 묶습니다. 근거: 2015 フェブラリーS(GI) 1위.",
         "choreography": {
           "windup": 0.3,
           "recovery": 0.3,
@@ -6616,7 +6616,7 @@
           "motion": "STRIKE"
         }
       },
-      "skillSignature": "bd2819876abd38d63a9cd60cec221f63c3c47852ac5293e2912698e2a8114fa8",
+      "skillSignature": "405cfcd60cad01813a4497c013282fe51733a50e22b89eafece2966b65ada72d",
       "basicAttack": "원거리 조준 → 발사 준비 → 투사체 방출 → 반동 회복",
       "skillPoseDraft": [
         "낮게 웅크린 출발",
@@ -6686,7 +6686,7 @@
           }
         ],
         "vfxKey": "vfx_aoe_burst",
-        "description": "[잔불 지대] 대상 주변 1칸 최대 4명에게 0.6초 간격으로 88 마법 피해 3회와 3초간 회복 감소 33%. 근거: 2014 チャンピオンズC(GI) 1위.",
+        "description": "[잔불 지대] 대상 주변 1칸의 최대 4명에게 0.6초 간격으로 88의 마법 피해를 세 번 입히고, 3초 동안 회복량을 33% 줄입니다. 근거: 2014 チャンピオンズC(GI) 1위.",
         "choreography": {
           "windup": 0.3,
           "recovery": 0.3,
@@ -6699,7 +6699,7 @@
           "motion": "CHANNEL"
         }
       },
-      "skillSignature": "3554ec66f5b04c099caead29e6d812412dbe2122dd2b1167290699eaf89afd05",
+      "skillSignature": "25b6a3caf1b93574c1a83ab5b75f747de73fb514325f0eefbbc978d5a7f1938e",
       "basicAttack": "원거리 조준 → 발사 준비 → 투사체 방출 → 반동 회복",
       "skillPoseDraft": [
         "힘을 모으는 자세",
@@ -6753,7 +6753,7 @@
           }
         ],
         "vfxKey": "vfx_heal",
-        "description": "[삼중 회복] 처음 선택한 체력 비율이 가장 낮은 아군에게 115씩 0.45초 간격으로 3회 회복. 사망하면 새 대상 선택. 근거: 2012 JBCクラシック(JpnI) 1위.",
+        "description": "[삼중 회복] 가장 위태로운 아군을 0.45초 간격으로 115씩 세 번 일으켜 세웁니다. 도중에 쓰러지면 다음으로 위태로운 아군에게 넘어갑니다. 근거: 2012 JBCクラシック(JpnI) 1위.",
         "choreography": {
           "windup": 0.3,
           "recovery": 0.3,
@@ -6766,7 +6766,7 @@
           "motion": "STRIKE"
         }
       },
-      "skillSignature": "ef74243e0d052fffb30bb3ee839f6b7ecd8292de301a073b54a34813ff254234",
+      "skillSignature": "ac220c281d8f63dc9354086ab8d1cde51d7069e32d31a6cd237bbb91acc42ada",
       "basicAttack": "원거리 조준 → 발사 준비 → 투사체 방출 → 반동 회복",
       "skillPoseDraft": [
         "아군을 향해 손 모음",
@@ -6821,7 +6821,7 @@
           }
         ],
         "vfxKey": "vfx_stun",
-        "description": "[마나 구속] 대상에게 153 마법 피해, 현재 마나 15 제거, 3초간 공격속도 25% 감소. 근거: 1994 きさらぎ賞(GIII) 1위.",
+        "description": "[마나 구속] 상대에게 153의 마법 피해를 입히고 마나를 15 빼앗으며, 3초 동안 공격속도를 25% 떨어뜨립니다. 근거: 1994 きさらぎ賞(GIII) 1위.",
         "choreography": {
           "windup": 0.3,
           "recovery": 0.3,
@@ -6834,7 +6834,7 @@
           "motion": "STRIKE"
         }
       },
-      "skillSignature": "b5f65b3637c73a3ab44f52ff4f6638e3a3ee679f38acd9f73b1385de7aef6d65",
+      "skillSignature": "5fd3e78028ae85748752e38c49a9451e56f32926a327a5c7a23434badc1e5f5c",
       "basicAttack": "원거리 조준 → 발사 준비 → 투사체 방출 → 반동 회복",
       "skillPoseDraft": [
         "대상 지점 조준",
@@ -6889,7 +6889,7 @@
           }
         ],
         "vfxKey": "vfx_stun",
-        "description": "[마나 구속] 대상에게 155 마법 피해, 현재 마나 15 제거, 3초간 공격속도 25% 감소. 근거: 2014 はなみずき賞(500万下) 1위.",
+        "description": "[마나 구속] 상대에게 155의 마법 피해를 입히고 마나를 15 빼앗으며, 3초 동안 공격속도를 25% 떨어뜨립니다. 근거: 2014 はなみずき賞(500万下) 1위.",
         "choreography": {
           "windup": 0.3,
           "recovery": 0.3,
@@ -6902,7 +6902,7 @@
           "motion": "STRIKE"
         }
       },
-      "skillSignature": "ccd830e5a385ecfa3dffd93242bdfa7bd307c91110bf9b37f50ce3821e478113",
+      "skillSignature": "2654f259ca9884f374e7eb5ace5e49abcacccf6bec1a76043e1a71749e416011",
       "basicAttack": "원거리 조준 → 발사 준비 → 투사체 방출 → 반동 회복",
       "skillPoseDraft": [
         "대상 지점 조준",
@@ -6949,7 +6949,7 @@
           }
         ],
         "vfxKey": "vfx_heal",
-        "description": "[정화 선율] 체력 비율이 낮은 아군 최대 3명의 기절·침묵·무장해제·둔화·도발을 해제하고 133 회복. 근거: 1994 サロベツS(1500万下) 1위.",
+        "description": "[정화 선율] 위태로운 아군 최대 3명을 붙잡고 있던 기절, 침묵, 무장 해제, 둔화, 도발을 전부 풀고 133을 회복시킵니다. 근거: 1994 サロベツS(1500万下) 1위.",
         "choreography": {
           "windup": 0.3,
           "recovery": 0.3,
@@ -6962,7 +6962,7 @@
           "motion": "STRIKE"
         }
       },
-      "skillSignature": "b4a255d605c032bffdf3f0962377ca68818fe77e38800620631fc5657252cb00",
+      "skillSignature": "5ac6f6928c14e13c98f290976e05e334cb26b4967520a88fdc373f9dfe3dc00b",
       "basicAttack": "원거리 조준 → 발사 준비 → 투사체 방출 → 반동 회복",
       "skillPoseDraft": [
         "아군을 향해 손 모음",
@@ -7016,7 +7016,7 @@
           }
         ],
         "vfxKey": "vfx_stun",
-        "description": "[무장 해제] 전방 3칸 최대 4명에게 136 마법 피해. 1.8초간 일반 공격 봉쇄, 스킬은 사용 가능. 근거: 1984 ジャパンC(GI) 1위.",
+        "description": "[무장 해제] 앞쪽 3칸의 최대 4명에게 136의 마법 피해를 입히고, 1.8초 동안 기본 공격을 막습니다. 스킬은 그대로 나갑니다. 근거: 1984 ジャパンC(GI) 1위.",
         "choreography": {
           "windup": 0.3,
           "recovery": 0.3,
@@ -7029,7 +7029,7 @@
           "motion": "STRIKE"
         }
       },
-      "skillSignature": "f8c653528ba01efbfa134767179f10f3e52ac41a7279bea5c8aa29e1570ddca0",
+      "skillSignature": "af6e927fb2ca6ee07f9005724a9c6311388586f21a80e445953a2025ce022202",
       "basicAttack": "근접 준비 → 당김 → 타격 → 회수",
       "skillPoseDraft": [
         "대상 지점 조준",
@@ -7086,7 +7086,7 @@
           }
         ],
         "vfxKey": "vfx_dash_senko",
-        "description": "[충격 질주] 돌진 지점 주변 1칸 최대 4명에게 196 물리 피해와 0.65초 기절. 근거: 2003 東京優駿(GI) 1위.",
+        "description": "[충격 질주] 뛰어든 자리 1칸 안의 최대 4명에게 196의 물리 피해를 입히고 0.65초 동안 기절시킵니다. 근거: 2003 東京優駿(GI) 1위.",
         "choreography": {
           "windup": 0.3,
           "recovery": 0.3,
@@ -7099,7 +7099,7 @@
           "motion": "STRIKE"
         }
       },
-      "skillSignature": "a3ed456d2d9cede71b1f00d345f882642c967b8ebca931d42770dc48886cb058",
+      "skillSignature": "ae4375d74df506362797c1d9f704b51f1f47ebb46a33a724de85b1f55acec0db",
       "basicAttack": "근접 준비 → 당김 → 타격 → 회수",
       "skillPoseDraft": [
         "낮게 웅크린 출발",
@@ -7147,7 +7147,7 @@
           }
         ],
         "vfxKey": "vfx_execute",
-        "description": "[거인 절단] 체력 비율이 가장 낮은 적에게 185 + 대상 최대 체력 4.5%의 물리 피해. 근거: 2002 菊花賞(GI) 1위.",
+        "description": "[거인 절단] 가장 지쳐 있는 상대에게 185에 더해 그 상대 최대 체력의 4.5%만큼 물리 피해를 입힙니다. 근거: 2002 菊花賞(GI) 1위.",
         "choreography": {
           "windup": 0.45,
           "recovery": 0.3,
@@ -7160,7 +7160,7 @@
           "motion": "STRIKE"
         }
       },
-      "skillSignature": "40161fbf6894ac63518283fd0969bdd358fd866251225b84041c9b071c5f96b6",
+      "skillSignature": "5a26c46b89134c12f57405183e1a43cd071b0a8f5ac4c9bd432952ba3ae9c9c4",
       "basicAttack": "원거리 조준 → 발사 준비 → 투사체 방출 → 반동 회복",
       "skillPoseDraft": [
         "단일 대상 조준",
@@ -7232,7 +7232,7 @@
           }
         ],
         "vfxKey": "vfx_buff",
-        "description": "[반격 폭풍] 141 보호막을 얻고 주변 2칸 최대 4명에게 0.4초 간격으로 70 마법 피해 3회. 체력 피해의 15% 회복. 근거: 2003 ジャパンC(GI) 1위.",
+        "description": "[반격 폭풍] 141의 보호막을 두르고 주변 2칸의 최대 4명에게 0.4초 간격으로 70의 마법 피해를 세 번 흩뿌리며, 깎은 체력의 15%를 회복합니다. 근거: 2003 ジャパンC(GI) 1위.",
         "choreography": {
           "windup": 0.3,
           "recovery": 0.3,
@@ -7245,7 +7245,7 @@
           "motion": "CHANNEL"
         }
       },
-      "skillSignature": "dd0bdec0d8ff659c87fb907a7a973f514a84a06c9942d8322be6304ec44a0bdd",
+      "skillSignature": "b53395d01a87cfbe8d87281742fab6faadc15224e0a4c2568faef01f1b6698ae",
       "basicAttack": "근접 준비 → 당김 → 타격 → 회수",
       "skillPoseDraft": [
         "몸 중심에 기운 모음",
@@ -7304,7 +7304,7 @@
           }
         ],
         "vfxKey": "vfx_dash_sashi",
-        "description": "[관통 돌파] 돌진 후 직선 6칸의 최대 4명에게 방어력 20% 감소(4초)와 223 물리 피해. 근거: 2015 東京優駿(GI) 1위.",
+        "description": "[관통 돌파] 안쪽으로 파고들며 직선 6칸의 최대 4명을 제칩니다. 4초 동안 방어력이 20% 무너지고 223의 물리 피해를 입습니다. 근거: 2015 東京優駿(GI) 1위.",
         "choreography": {
           "windup": 0.3,
           "recovery": 0.3,
@@ -7317,7 +7317,7 @@
           "motion": "STRIKE"
         }
       },
-      "skillSignature": "c7e058aae2a24d39d06a1d40aa817b5f5eccb9ee7d972c89eb90259688100669",
+      "skillSignature": "a69f455d94290a6bd49799b397b7d1eccd2b07c4c07ce5904c7ad09796901501",
       "basicAttack": "근접 준비 → 당김 → 타격 → 회수",
       "skillPoseDraft": [
         "낮게 웅크린 출발",
@@ -7367,7 +7367,7 @@
           }
         ],
         "vfxKey": "vfx_buff",
-        "description": "[에이스 지휘] 공격력이 가장 높은 아군 1명에게 4초간 공격속도 +51.3%와 266 보호막. 근거: 2005 桜花賞(GI) 1위.",
+        "description": "[에이스 지휘] 가장 잘 때리는 아군 한 명에게 4초 동안 공격속도 +51.3%와 266의 보호막을 실어 줍니다. 근거: 2005 桜花賞(GI) 1위.",
         "choreography": {
           "windup": 0.3,
           "recovery": 0.3,
@@ -7380,7 +7380,7 @@
           "motion": "STRIKE"
         }
       },
-      "skillSignature": "f69690708a4cc5210a7fd90233afd69e0c096cae2e505d6848b64bc86bd5be22",
+      "skillSignature": "e90e60fa04f38a7171e93fd1a98f3e2eb4ad1513d0b42257e727774eefc20321",
       "basicAttack": "원거리 조준 → 발사 준비 → 투사체 방출 → 반동 회복",
       "skillPoseDraft": [
         "몸 중심에 기운 모음",
@@ -7446,7 +7446,7 @@
           }
         ],
         "vfxKey": "vfx_buff",
-        "description": "[회복 성역] 2칸 내 최대 4명 아군의 제어 효과를 해제하고, 0.5초 간격으로 64씩 3회 회복. 근거: 2005 優駿牝馬(GI) 1위.",
+        "description": "[회복 성역] 2칸 안의 아군 최대 4명을 묶고 있던 방해 효과를 풀어 주고, 0.5초 간격으로 64씩 세 번 회복시킵니다. 근거: 2005 優駿牝馬(GI) 1위.",
         "choreography": {
           "windup": 0.3,
           "recovery": 0.3,
@@ -7459,7 +7459,7 @@
           "motion": "STRIKE"
         }
       },
-      "skillSignature": "8be844c39beede3e03928653e25057b988f1cc2d5ee27e339093e070fa11647a",
+      "skillSignature": "71a9933463639b2af81c4abde989601a0ba55735a82b41cec21fabf5e4286bc0",
       "basicAttack": "근접 준비 → 당김 → 타격 → 회수",
       "skillPoseDraft": [
         "몸 중심에 기운 모음",
@@ -7511,7 +7511,7 @@
           }
         ],
         "vfxKey": "vfx_stun",
-        "description": "[침묵 지대] 대상 주변 1칸 최대 4명에게 141 마법 피해와 2초 침묵. 일반 공격과 이동은 가능. 근거: 2005 秋華賞(GI) 1위.",
+        "description": "[침묵 지대] 대상 주변 1칸의 최대 4명에게 141의 마법 피해를 입히고 2초 동안 침묵시킵니다. 기본 공격과 이동은 막지 않습니다. 근거: 2005 秋華賞(GI) 1위.",
         "choreography": {
           "windup": 0.3,
           "recovery": 0.3,
@@ -7524,7 +7524,7 @@
           "motion": "STRIKE"
         }
       },
-      "skillSignature": "c3f59424337503fa11f8fd430594e2f84f1b511f5bc3c31d226bb17a0356d22c",
+      "skillSignature": "2c558f9f546fca39806ee85c07c5418c3a126e7f512504762754906456a7dcbf",
       "basicAttack": "원거리 조준 → 발사 준비 → 투사체 방출 → 반동 회복",
       "skillPoseDraft": [
         "대상 지점 조준",
@@ -7574,7 +7574,7 @@
           }
         ],
         "vfxKey": "vfx_buff",
-        "description": "[에이스 지휘] 공격력이 가장 높은 아군 1명에게 4초간 공격속도 +45%와 177 보호막. 근거: 2006 府中牝馬S(GIII) 1위.",
+        "description": "[에이스 지휘] 가장 잘 때리는 아군 한 명에게 4초 동안 공격속도 +45%와 177의 보호막을 실어 줍니다. 근거: 2006 府中牝馬S(GIII) 1위.",
         "choreography": {
           "windup": 0.3,
           "recovery": 0.3,
@@ -7587,7 +7587,7 @@
           "motion": "STRIKE"
         }
       },
-      "skillSignature": "594b8d8b653e85d85c84f67fb62bb393ba20777241612e9821d53852322772a9",
+      "skillSignature": "c25f89441d2e584e20771a1e152d1e2c64eccdecb014838a4385e686023f7875",
       "basicAttack": "원거리 조준 → 발사 준비 → 투사체 방출 → 반동 회복",
       "skillPoseDraft": [
         "몸 중심에 기운 모음",
@@ -7653,7 +7653,7 @@
           }
         ],
         "vfxKey": "vfx_buff",
-        "description": "[회복 성역] 2칸 내 최대 4명 아군의 제어 효과를 해제하고, 0.5초 간격으로 50씩 3회 회복. 근거: 2006 エリザベス女王杯(GI) 1위.",
+        "description": "[회복 성역] 2칸 안의 아군 최대 4명을 묶고 있던 방해 효과를 풀어 주고, 0.5초 간격으로 50씩 세 번 회복시킵니다. 근거: 2006 エリザベス女王杯(GI) 1위.",
         "choreography": {
           "windup": 0.3,
           "recovery": 0.3,
@@ -7666,7 +7666,7 @@
           "motion": "STRIKE"
         }
       },
-      "skillSignature": "a556428f68d7c9fbff103ce0233674be7fe7538cf1cf0d255ab5699371f0ce6a",
+      "skillSignature": "3673ac616e35ac167724c61f3a17141753c4c0b9dd16b598c7bb3f8e4205b187",
       "basicAttack": "원거리 조준 → 발사 준비 → 투사체 방출 → 반동 회복",
       "skillPoseDraft": [
         "몸 중심에 기운 모음",
@@ -7709,7 +7709,7 @@
           }
         ],
         "vfxKey": "vfx_execute",
-        "description": "[마무리 순환] 체력 비율이 가장 낮은 적에게 574 물리 피해. 이 타격으로 처치하면 마나 25 회복. 근거: 2011 ジャパンC(GI) 1위.",
+        "description": "[마무리 순환] 가장 지쳐 있는 상대에게 574의 물리 피해를 꽂고, 그대로 넘어뜨리면 마나를 25 돌려받습니다. 근거: 2011 ジャパンC(GI) 1위.",
         "choreography": {
           "windup": 0.3,
           "recovery": 0.3,
@@ -7722,7 +7722,7 @@
           "motion": "STRIKE"
         }
       },
-      "skillSignature": "d99d2885706df0c01af99f713d590f2095cbfdea00fb252e146f0722ee862a23",
+      "skillSignature": "8144cf9f238dfa997083b21da6a61290d4bcde0cbe81152f9b6e461b014ab513",
       "basicAttack": "원거리 조준 → 발사 준비 → 투사체 방출 → 반동 회복",
       "skillPoseDraft": [
         "단일 대상 조준",
@@ -7792,7 +7792,7 @@
           }
         ],
         "vfxKey": "vfx_dash_sashi",
-        "description": "[추격 연타] 돌진 후 한 적에게 134 물리 피해를 3회, 4초간 공격속도 +24.8%. 대상 사망 시 남은 타격은 재탐색. 근거: 2013 有馬記念(GI) 1위.",
+        "description": "[추격 연타] 한 상대에게 붙어 134의 물리 피해를 세 번 몰아치고, 4초 동안 공격속도가 +24.8% 오릅니다. 상대가 먼저 쓰러지면 남은 타격은 다음 상대를 찾아갑니다. 근거: 2013 有馬記念(GI) 1위.",
         "choreography": {
           "windup": 0.45,
           "recovery": 0.3,
@@ -7805,7 +7805,7 @@
           "motion": "PULSE"
         }
       },
-      "skillSignature": "85f537548c23c02b581b395e6d8b87581e154c3e74d2044bfbefafea27d3a3af",
+      "skillSignature": "451ee2af1df89dbffbb13189a941f3b06da1f2d7f63432c2fb30bb322b385a77",
       "basicAttack": "원거리 조준 → 발사 준비 → 투사체 방출 → 반동 회복",
       "skillPoseDraft": [
         "낮게 웅크린 출발",
@@ -7877,7 +7877,7 @@
           }
         ],
         "vfxKey": "vfx_buff",
-        "description": "[반격 폭풍] 164 보호막을 얻고 주변 2칸 최대 4명에게 0.4초 간격으로 82 마법 피해 3회. 체력 피해의 15% 회복. 근거: 2014 有馬記念(GI) 1위.",
+        "description": "[반격 폭풍] 164의 보호막을 두르고 주변 2칸의 최대 4명에게 0.4초 간격으로 82의 마법 피해를 세 번 흩뿌리며, 깎은 체력의 15%를 회복합니다. 근거: 2014 有馬記念(GI) 1위.",
         "choreography": {
           "windup": 0.45,
           "recovery": 0.3,
@@ -7890,7 +7890,7 @@
           "motion": "CHANNEL"
         }
       },
-      "skillSignature": "ea763ad0b08b307db6c6a87db6aa21f273e34aa165274f6d0fccf72392cee505",
+      "skillSignature": "a58f45f9abd7dc7b3c6468576e34b590de65983d5e09bc29a00fb31ec614917c",
       "basicAttack": "근접 준비 → 당김 → 타격 → 회수",
       "skillPoseDraft": [
         "몸 중심에 기운 모음",
@@ -7945,7 +7945,7 @@
           }
         ],
         "vfxKey": "vfx_stun",
-        "description": "[마나 구속] 대상에게 161 마법 피해, 현재 마나 15 제거, 3초간 공격속도 25% 감소. 근거: 2014 日経賞(GII) 1위.",
+        "description": "[마나 구속] 상대에게 161의 마법 피해를 입히고 마나를 15 빼앗으며, 3초 동안 공격속도를 25% 떨어뜨립니다. 근거: 2014 日経賞(GII) 1위.",
         "choreography": {
           "windup": 0.45,
           "recovery": 0.3,
@@ -7958,7 +7958,7 @@
           "motion": "STRIKE"
         }
       },
-      "skillSignature": "8cc69a0130365346666f68cd5a5e3bdcc1e8a989b13ef209cb605b37be863bd6",
+      "skillSignature": "baf655ce3b0b80ceb82060fc49fa8662ea060eb61b390981a769abb9cd16ab43",
       "basicAttack": "근접 준비 → 당김 → 타격 → 회수",
       "skillPoseDraft": [
         "대상 지점 조준",
@@ -8009,7 +8009,7 @@
           }
         ],
         "vfxKey": "vfx_dash_sashi",
-        "description": "[흡수 휩쓸기] 돌진 후 전방 3칸 부채꼴의 최대 4명에게 180 물리 피해. 실제 체력 피해의 25% 회복. 근거: 2004 エリザベス女王杯(GI) 1위.",
+        "description": "[흡수 휩쓸기] 앞으로 밀고 들어가 부채꼴 3칸의 최대 4명에게 180의 물리 피해를 입히고, 실제로 깎은 체력의 25%를 회복합니다. 근거: 2004 エリザベス女王杯(GI) 1위.",
         "choreography": {
           "windup": 0.3,
           "recovery": 0.3,
@@ -8022,7 +8022,7 @@
           "motion": "STRIKE"
         }
       },
-      "skillSignature": "59be3b87731d11e54efab1ae622cf5911d00fc302fe3966a388e813ac791b594",
+      "skillSignature": "c0344629e42b0b7435eca72f719431c81f26fdaa108d7589de52e5b93a963c84",
       "basicAttack": "원거리 조준 → 발사 준비 → 투사체 방출 → 반동 회복",
       "skillPoseDraft": [
         "낮게 웅크린 출발",
@@ -8065,7 +8065,7 @@
           }
         ],
         "vfxKey": "vfx_execute",
-        "description": "[고립 결정타] 체력 비율이 가장 낮은 적에게 278 물리 피해. 대상 1칸 내 다른 적이 없으면 피해 40% 증가. 근거: 2009 有馬記念(GI) 1위.",
+        "description": "[고립 결정타] 가장 지쳐 있는 상대에게 278의 물리 피해를 꽂습니다. 그 상대가 1칸 안에 혼자 떨어져 있으면 피해가 40% 커집니다. 근거: 2009 有馬記念(GI) 1위.",
         "choreography": {
           "windup": 0.45,
           "recovery": 0.3,
@@ -8078,7 +8078,7 @@
           "motion": "STRIKE"
         }
       },
-      "skillSignature": "3f682286cfa611a197965cb99e00b5eb6d55467f83db18639af51db7f3e194ed",
+      "skillSignature": "71e85c06050a5aa6bdf66f851e44224237ce853a800ff6ba1a8adb0cdd377551",
       "basicAttack": "원거리 조준 → 발사 준비 → 투사체 방출 → 반동 회복",
       "skillPoseDraft": [
         "단일 대상 조준",
@@ -8132,7 +8132,7 @@
           }
         ],
         "vfxKey": "vfx_buff",
-        "description": "[진군 박자] 2칸 내 최대 4명의 아군에게 4초간 공격속도 +30%. 자신 외 대상은 마나 8 회복. 근거: 2004 スプリンターズS(GI) 1위.",
+        "description": "[진군 박자] 2칸 안의 아군 최대 4명의 공격속도를 4초 동안 +30% 끌어올리고, 자신을 뺀 아군은 마나를 8 회복합니다. 근거: 2004 スプリンターズS(GI) 1위.",
         "choreography": {
           "windup": 0.15,
           "recovery": 0.3,
@@ -8145,7 +8145,7 @@
           "motion": "STRIKE"
         }
       },
-      "skillSignature": "950a05e2fb50bec5ed8bd36e117c6d9c6bd194b4db62248c3625f708601efc04",
+      "skillSignature": "faab4046ef47f90049a64afeb5baa2518e7cf4b30bed4cd27fc1feb7132b5d8f",
       "basicAttack": "원거리 조준 → 발사 준비 → 투사체 방출 → 반동 회복",
       "skillPoseDraft": [
         "몸 중심에 기운 모음",
@@ -8201,7 +8201,7 @@
           }
         ],
         "vfxKey": "vfx_execute",
-        "description": "[잔상 마무리] 0.3초간 대상 지정 불가. 0.2초 뒤 최저 체력 비율 적에게 320 물리 피해. 4초간 공격속도 +31.8%. 근거: 2003 マイルチャンピオンS(GI) 1위.",
+        "description": "[잔상 마무리] 0.3초 동안 시야에서 사라졌다가 0.2초 뒤 가장 지쳐 있는 상대에게 320의 물리 피해로 나타나며, 4초 동안 공격속도가 +31.8% 오릅니다. 근거: 2003 マイルチャンピオンS(GI) 1위.",
         "choreography": {
           "windup": 0.3,
           "recovery": 0.3,
@@ -8214,7 +8214,7 @@
           "motion": "STRIKE"
         }
       },
-      "skillSignature": "ca3160d2671f1537cbbb01c2474a39112e35b2ac0b43de65b49dfc2a09e2e166",
+      "skillSignature": "39a5f7ec76b58e20fad8ae06aa23030af779d5bc04eecab00c024072c7b809fa",
       "basicAttack": "원거리 조준 → 발사 준비 → 투사체 방출 → 반동 회복",
       "skillPoseDraft": [
         "단일 대상 조준",
@@ -8265,7 +8265,7 @@
           }
         ],
         "vfxKey": "vfx_dash_sashi",
-        "description": "[흡수 휩쓸기] 돌진 후 전방 3칸 부채꼴의 최대 4명에게 156 물리 피해. 실제 체력 피해의 25% 회복. 근거: 1995 皐月賞(GI) 1위.",
+        "description": "[흡수 휩쓸기] 앞으로 밀고 들어가 부채꼴 3칸의 최대 4명에게 156의 물리 피해를 입히고, 실제로 깎은 체력의 25%를 회복합니다. 근거: 1995 皐月賞(GI) 1위.",
         "choreography": {
           "windup": 0.3,
           "recovery": 0.3,
@@ -8278,7 +8278,7 @@
           "motion": "STRIKE"
         }
       },
-      "skillSignature": "18223b70e1da36fdaec264434c190066e85622b3b52fd23c27b62f99c3d2a93d",
+      "skillSignature": "b6aba413edebdea0c180594043f79420870491fd50c0566212f28c1a6bfc98c0",
       "basicAttack": "원거리 조준 → 발사 준비 → 투사체 방출 → 반동 회복",
       "skillPoseDraft": [
         "낮게 웅크린 출발",
@@ -8344,7 +8344,7 @@
           }
         ],
         "vfxKey": "vfx_projectile",
-        "description": "[가속 장전] 4초간 공격속도 +51.3%, 공격력 +22.8%. 장전 타격으로 102 물리 피해를 2회. 근거: 1996 天皇賞(秋)(GI) 1위.",
+        "description": "[가속 장전] 4초 동안 공격속도가 +51.3%, 공격력이 +22.8% 올라가고, 장전한 두 발이 각각 102의 물리 피해를 입힙니다. 근거: 1996 天皇賞(秋)(GI) 1위.",
         "choreography": {
           "windup": 0.15,
           "recovery": 0.3,
@@ -8357,7 +8357,7 @@
           "motion": "PULSE"
         }
       },
-      "skillSignature": "255b742297116d0c4b5e062f0a293041a8eb6cd562edbb2e9dcc85833833abaf",
+      "skillSignature": "65912dedd2193a7fc407c57998318a88328b39cde1c75fd1810c02dabcd3723a",
       "basicAttack": "원거리 조준 → 발사 준비 → 투사체 방출 → 반동 회복",
       "skillPoseDraft": [
         "동일 대상에 1차 발사",
@@ -8419,7 +8419,7 @@
           }
         ],
         "vfxKey": "vfx_stun",
-        "description": "[지연 봉쇄] 주변 1칸 최대 4명에게 81 마법 피해, 0.8초 뒤 103 추가 피해와 1.4초 기절. 근거: 1995 天皇賞(秋)(GI) 1위.",
+        "description": "[지연 봉쇄] 주변 1칸의 최대 4명에게 81의 마법 피해를 주고, 0.8초 뒤 103의 피해가 한 번 더 터지며 1.4초 동안 기절시킵니다. 근거: 1995 天皇賞(秋)(GI) 1위.",
         "choreography": {
           "windup": 0.3,
           "recovery": 0.3,
@@ -8432,7 +8432,7 @@
           "motion": "PULSE"
         }
       },
-      "skillSignature": "3464da0e2c07797c68449714d05683801a02347a24e2cf73f367bdad7d1c8e43",
+      "skillSignature": "af40365cbcae241b393c44b53401dcf8369c86bd54f54ce748c3bb847453c27c",
       "basicAttack": "원거리 조준 → 발사 준비 → 투사체 방출 → 반동 회복",
       "skillPoseDraft": [
         "대상 지점 조준",
@@ -8491,8 +8491,8 @@
             "delay": 0.45
           }
         ],
-        "vfxKey": "vfx_dash_nige",
-        "description": "[교차 파동] 돌진 후 직선 최대 4명에게 131 물리 피해, 0.45초 뒤 같은 방향으로 93 마법 파동. 근거: 2013 天皇賞(春)(GI) 1위.",
+        "vfxKey": "vfx_dash_senko",
+        "description": "[교차 파동] 직선상의 최대 4명을 131의 물리 피해로 밀어내고, 0.45초 뒤 같은 방향으로 93의 마법 파동을 흘려보냅니다. 근거: 2013 天皇賞(春)(GI) 1위.",
         "choreography": {
           "windup": 0.45,
           "recovery": 0.3,
@@ -8505,7 +8505,7 @@
           "motion": "PULSE"
         }
       },
-      "skillSignature": "5243873c8b6bfc3b4b719ebdea6957dbc42d4ee381d466a0a1d4a6e04c252bc8",
+      "skillSignature": "a3bc447c56926964512ae3f6d1c6f19cafdbd3b292d8af7ec346ba0e830b0e5c",
       "basicAttack": "근접 준비 → 당김 → 타격 → 회수",
       "skillPoseDraft": [
         "낮게 웅크린 출발",
@@ -8561,7 +8561,7 @@
           }
         ],
         "vfxKey": "vfx_projectile",
-        "description": "[분산 포격] 가까운 적에서 시작해 서로 다른 최대 3명에게 91 마법 피해. 0.35초 뒤 한 번 더 발사. 근거: 2018 有馬記念(GI) 1위.",
+        "description": "[분산 포격] 가까운 상대부터 서로 다른 최대 3명에게 91의 마법 피해를 날리고, 0.35초 뒤 한 번 더 쏩니다. 근거: 2018 有馬記念(GI) 1위.",
         "choreography": {
           "windup": 0.45,
           "recovery": 0.3,
@@ -8574,7 +8574,7 @@
           "motion": "PULSE"
         }
       },
-      "skillSignature": "eb28d591b847dc06060d708153c930eca5e9127e46da1b47665dc1fee165f7a7",
+      "skillSignature": "3d29f0f96b90cb985dffcc886dfa75ae70a5abe6c9d5914767aabb4a74b22aff",
       "basicAttack": "원거리 조준 → 발사 준비 → 투사체 방출 → 반동 회복",
       "skillPoseDraft": [
         "동일 대상에 1차 발사",
@@ -8631,7 +8631,7 @@
           }
         ],
         "vfxKey": "vfx_projectile",
-        "description": "[삼단 결정타] 한 적에게 92 → 134 → 243 물리 피해. 마지막 타격에 위력이 집중됨. 근거: 2020 ジャパンC(GI) 1위.",
+        "description": "[삼단 결정타] 한 상대를 92, 134, 243의 물리 피해로 몰아붙입니다. 마지막 한 방에 힘이 실립니다. 근거: 2020 ジャパンC(GI) 1위.",
         "choreography": {
           "windup": 0.3,
           "recovery": 0.3,
@@ -8644,7 +8644,7 @@
           "motion": "PULSE"
         }
       },
-      "skillSignature": "e56991041fe9c70a7c6a6577001e0db112b6fd9c4cff6fc9f10ec89309892b91",
+      "skillSignature": "06906d0c117caf4686878a83d82612a71568123c06a092b7344f9862db2c0dc4",
       "basicAttack": "원거리 조준 → 발사 준비 → 투사체 방출 → 반동 회복",
       "skillPoseDraft": [
         "동일 대상에 1차 발사",
@@ -8707,7 +8707,7 @@
           }
         ],
         "vfxKey": "vfx_aoe_burst",
-        "description": "[확장 폭발] 0.35초 간격으로 대상 중심 0·1·2칸으로 확장하는 폭발. 타격마다 최대 4명에게 87 마법 피해. 근거: 2020 大阪杯(GI) 1위.",
+        "description": "[확장 폭발] 0.35초 간격으로 대상을 중심에 두고 0칸, 1칸, 2칸까지 번지는 폭발이 일어나, 한 번에 최대 4명씩 87의 마법 피해를 입힙니다. 근거: 2020 大阪杯(GI) 1위.",
         "choreography": {
           "windup": 0.3,
           "recovery": 0.3,
@@ -8720,7 +8720,7 @@
           "motion": "PULSE"
         }
       },
-      "skillSignature": "53d13e9a6f8b9adae930e8504f953617b93d16027b208c243880bc77b72693fa",
+      "skillSignature": "376ee7b324018e042d2554bc0052ed08ea63fc1915302d239fd5f8464ec63edc",
       "basicAttack": "원거리 조준 → 발사 준비 → 투사체 방출 → 반동 회복",
       "skillPoseDraft": [
         "힘을 모으는 자세",
@@ -8790,7 +8790,7 @@
           }
         ],
         "vfxKey": "vfx_dash_senko",
-        "description": "[추격 연타] 돌진 후 한 적에게 141 물리 피해를 3회, 4초간 공격속도 +24.8%. 대상 사망 시 남은 타격은 재탐색. 근거: 2020 マイルチャンピオンS(GI) 1위.",
+        "description": "[추격 연타] 한 상대에게 붙어 141의 물리 피해를 세 번 몰아치고, 4초 동안 공격속도가 +24.8% 오릅니다. 상대가 먼저 쓰러지면 남은 타격은 다음 상대를 찾아갑니다. 근거: 2020 マイルチャンピオンS(GI) 1위.",
         "choreography": {
           "windup": 0.3,
           "recovery": 0.3,
@@ -8803,7 +8803,7 @@
           "motion": "PULSE"
         }
       },
-      "skillSignature": "aad70cacc6cfc1d2304abc4cd1a2b9543647abafecb354da35dd0047c1ac3415",
+      "skillSignature": "82d5ac148deb2d3c24f0e9033f6926e472b3706f7ab27689d4e822b8d40862cd",
       "basicAttack": "원거리 조준 → 발사 준비 → 투사체 방출 → 반동 회복",
       "skillPoseDraft": [
         "낮게 웅크린 출발",
@@ -8858,7 +8858,7 @@
           }
         ],
         "vfxKey": "vfx_stun",
-        "description": "[마나 구속] 대상에게 164 마법 피해, 현재 마나 15 제거, 3초간 공격속도 25% 감소. 근거: 2019 優駿牝馬(GI) 1위.",
+        "description": "[마나 구속] 상대에게 164의 마법 피해를 입히고 마나를 15 빼앗으며, 3초 동안 공격속도를 25% 떨어뜨립니다. 근거: 2019 優駿牝馬(GI) 1위.",
         "choreography": {
           "windup": 0.3,
           "recovery": 0.3,
@@ -8871,7 +8871,7 @@
           "motion": "STRIKE"
         }
       },
-      "skillSignature": "c68ef893d20a40146ab7411b7ab93e8d03a8b3776108e7abb4207a5cd01b8dc6",
+      "skillSignature": "e989517992d3b382b8eb1992ffa93f0d3efcbf730e2a53a08515dffc1edac93e",
       "basicAttack": "근접 준비 → 당김 → 타격 → 회수",
       "skillPoseDraft": [
         "대상 지점 조준",
@@ -8928,7 +8928,7 @@
           }
         ],
         "vfxKey": "vfx_dash_senko",
-        "description": "[충격 질주] 돌진 지점 주변 1칸 최대 4명에게 291 물리 피해와 0.65초 기절. 근거: 2021 宝塚記念(GI) 1위.",
+        "description": "[충격 질주] 뛰어든 자리 1칸 안의 최대 4명에게 291의 물리 피해를 입히고 0.65초 동안 기절시킵니다. 근거: 2021 宝塚記念(GI) 1위.",
         "choreography": {
           "windup": 0.3,
           "recovery": 0.3,
@@ -8941,7 +8941,7 @@
           "motion": "STRIKE"
         }
       },
-      "skillSignature": "cba28bd63113c982593a92af8c23953b7440a62c9defbf3b9bb5a3e8134a1b59",
+      "skillSignature": "92be18ced85c00633d3d482f3a004b7533c66836b8cf97083715f3ddcdaecd39",
       "basicAttack": "근접 준비 → 당김 → 타격 → 회수",
       "skillPoseDraft": [
         "낮게 웅크린 출발",
@@ -8988,7 +8988,7 @@
           }
         ],
         "vfxKey": "vfx_heal",
-        "description": "[구원 방벽] 체력 비율이 가장 낮은 아군의 잃은 체력 25%를 회복하고 166 보호막(4초). 근거: 2019 スイートピーS(L) 1위.",
+        "description": "[구원 방벽] 가장 위태로운 아군의 잃은 체력을 25% 되돌리고 4초 동안 166의 보호막을 씌웁니다. 근거: 2019 スイートピーS(L) 1위.",
         "choreography": {
           "windup": 0.3,
           "recovery": 0.3,
@@ -9001,7 +9001,7 @@
           "motion": "STRIKE"
         }
       },
-      "skillSignature": "3018a59c5a8b06336d0e20fc55968b2769b179f0642de51cf941d43aa1d948ce",
+      "skillSignature": "a21be43392f11ddc93ff173a63545339ba2560a9db30c1f673bf068fb5744585",
       "basicAttack": "원거리 조준 → 발사 준비 → 투사체 방출 → 반동 회복",
       "skillPoseDraft": [
         "아군을 향해 손 모음",
@@ -9073,7 +9073,7 @@
           }
         ],
         "vfxKey": "vfx_shield",
-        "description": "[흡수 요새] 4초간 받는 피해 20% 감소. 주변 1칸 최대 3명에게 68 마법 피해 3회, 체력 피해의 45% 회복. 근거: 2001 日経新春杯(GII) 1위.",
+        "description": "[흡수 요새] 4초 동안 받는 피해가 20% 줄고, 주변 1칸의 최대 3명에게서 68의 마법 피해를 세 번 빨아들여 깎은 체력의 45%를 회복합니다. 근거: 2001 日経新春杯(GII) 1위.",
         "choreography": {
           "windup": 0.3,
           "recovery": 0.3,
@@ -9086,7 +9086,7 @@
           "motion": "CHANNEL"
         }
       },
-      "skillSignature": "d58ee4bff5943c07e9038e06458702b23924ac70a73a5ccb944c986fa01bdd63",
+      "skillSignature": "e1b1f2102aaeace7126b13e412d12f09de541fd8421a4039d18d60f6dd7cb99f",
       "basicAttack": "근접 준비 → 당김 → 타격 → 회수",
       "skillPoseDraft": [
         "방어 자세 준비",
@@ -9148,7 +9148,7 @@
           }
         ],
         "vfxKey": "vfx_stun",
-        "description": "[지연 봉쇄] 주변 1칸 최대 4명에게 70 마법 피해, 0.8초 뒤 88 추가 피해와 1.4초 기절. 근거: 2009 秋華賞(GI) 1위.",
+        "description": "[지연 봉쇄] 주변 1칸의 최대 4명에게 70의 마법 피해를 주고, 0.8초 뒤 88의 피해가 한 번 더 터지며 1.4초 동안 기절시킵니다. 근거: 2009 秋華賞(GI) 1위.",
         "choreography": {
           "windup": 0.3,
           "recovery": 0.3,
@@ -9161,7 +9161,7 @@
           "motion": "PULSE"
         }
       },
-      "skillSignature": "57207a7c1f2e989d45587018ddb75b549d10893eb9b96698493ecbff3e5a7db4",
+      "skillSignature": "725615acee8cd3860aefae91ca199e8892fb12addd9f48d1a639cae457bd37af",
       "basicAttack": "근접 준비 → 당김 → 타격 → 회수",
       "skillPoseDraft": [
         "대상 지점 조준",
@@ -9215,7 +9215,7 @@
           }
         ],
         "vfxKey": "vfx_buff",
-        "description": "[지구력 축적] 시전마다 최대 체력 +70(전투당 최대 4중첩). 4초간 받는 피해 18% 감소와 137 보호막. 근거: 2017 菊花賞(GI) 1위.",
+        "description": "[지구력 축적] 쓸 때마다 최대 체력이 70씩 붙어 전투당 네 번까지 쌓이고, 4초 동안 받는 피해가 18% 줄며 137의 보호막이 생깁니다. 근거: 2017 菊花賞(GI) 1위.",
         "choreography": {
           "windup": 0.45,
           "recovery": 0.3,
@@ -9228,7 +9228,7 @@
           "motion": "STRIKE"
         }
       },
-      "skillSignature": "b0784ab6de5ddee4850849d8d859ab6ef286033c075ac732057a74a2246fd519",
+      "skillSignature": "f8ba6a7be3b09255517ff8216e8919b0a349452ced27c7be84d1f5a1f5b889e7",
       "basicAttack": "원거리 조준 → 발사 준비 → 투사체 방출 → 반동 회복",
       "skillPoseDraft": [
         "몸 중심에 기운 모음",
@@ -9298,7 +9298,7 @@
           }
         ],
         "vfxKey": "vfx_aoe_burst",
-        "description": "[잔불 지대] 대상 주변 1칸 최대 4명에게 0.6초 간격으로 88 마법 피해 3회와 3초간 회복 감소 33%. 근거: 2024 東京大賞典競走(GI) 1위.",
+        "description": "[잔불 지대] 대상 주변 1칸의 최대 4명에게 0.6초 간격으로 88의 마법 피해를 세 번 입히고, 3초 동안 회복량을 33% 줄입니다. 근거: 2024 東京大賞典競走(GI) 1위.",
         "choreography": {
           "windup": 0.3,
           "recovery": 0.3,
@@ -9311,7 +9311,7 @@
           "motion": "CHANNEL"
         }
       },
-      "skillSignature": "d7c0c42ad06666a1e93cf552418b74a33d13e17529d09a965a5c1e1b4067e54d",
+      "skillSignature": "3aa33338e75bef2e9bf126df77ff07e1deae473ec4898074f79a81ae9a4a7a5b",
       "basicAttack": "원거리 조준 → 발사 준비 → 투사체 방출 → 반동 회복",
       "skillPoseDraft": [
         "힘을 모으는 자세",
@@ -9365,7 +9365,7 @@
           }
         ],
         "vfxKey": "vfx_stun",
-        "description": "[무장 해제] 전방 3칸 최대 4명에게 154 마법 피해. 1.8초간 일반 공격 봉쇄, 스킬은 사용 가능. 근거: 2021 エンプレス杯(JpnII) 1위.",
+        "description": "[무장 해제] 앞쪽 3칸의 최대 4명에게 154의 마법 피해를 입히고, 1.8초 동안 기본 공격을 막습니다. 스킬은 그대로 나갑니다. 근거: 2021 エンプレス杯(JpnII) 1위.",
         "choreography": {
           "windup": 0.3,
           "recovery": 0.3,
@@ -9378,7 +9378,7 @@
           "motion": "STRIKE"
         }
       },
-      "skillSignature": "e5592c3d5c1dd739ac8fdea2989cf975a5dd66b9a95031eb234cebe116f2eb09",
+      "skillSignature": "e73995e6b5c9d82ad97c6e2b12247ac3dc16764e3b5caeae1c2ac75e128804e9",
       "basicAttack": "원거리 조준 → 발사 준비 → 투사체 방출 → 반동 회복",
       "skillPoseDraft": [
         "대상 지점 조준",
@@ -9450,7 +9450,7 @@
           }
         ],
         "vfxKey": "vfx_buff",
-        "description": "[반격 폭풍] 122 보호막을 얻고 주변 2칸 최대 4명에게 0.4초 간격으로 61 마법 피해 3회. 체력 피해의 15% 회복. 근거: 2014 ジャパンC(GI) 1위.",
+        "description": "[반격 폭풍] 122의 보호막을 두르고 주변 2칸의 최대 4명에게 0.4초 간격으로 61의 마법 피해를 세 번 흩뿌리며, 깎은 체력의 15%를 회복합니다. 근거: 2014 ジャパンC(GI) 1위.",
         "choreography": {
           "windup": 0.3,
           "recovery": 0.3,
@@ -9463,7 +9463,7 @@
           "motion": "CHANNEL"
         }
       },
-      "skillSignature": "4729e8ab9b3b238717d7e857096662fe914528fdd4f72bada30b92a57de68fc5",
+      "skillSignature": "ab0716054f685888709816dee95de238d5e2dd10280e365dd52c8b7d188f2f3f",
       "basicAttack": "근접 준비 → 당김 → 타격 → 회수",
       "skillPoseDraft": [
         "몸 중심에 기운 모음",
@@ -9513,7 +9513,7 @@
           }
         ],
         "vfxKey": "vfx_buff",
-        "description": "[에이스 지휘] 공격력이 가장 높은 아군 1명에게 4초간 공격속도 +47.7%와 216 보호막. 근거: 2013 皐月賞(GI) 1위.",
+        "description": "[에이스 지휘] 가장 잘 때리는 아군 한 명에게 4초 동안 공격속도 +47.7%와 216의 보호막을 실어 줍니다. 근거: 2013 皐月賞(GI) 1위.",
         "choreography": {
           "windup": 0.3,
           "recovery": 0.3,
@@ -9526,7 +9526,7 @@
           "motion": "STRIKE"
         }
       },
-      "skillSignature": "49b249d3b80ee340b467d78b6b98ff47e02cab27b5b266bdde3dc0646fc4906a",
+      "skillSignature": "a79c1925c09a71bd27c67513175f796ec3c3134052005b0d23ecdf8be8b35603",
       "basicAttack": "원거리 조준 → 발사 준비 → 투사체 방출 → 반동 회복",
       "skillPoseDraft": [
         "몸 중심에 기운 모음",
@@ -9586,7 +9586,7 @@
           }
         ],
         "vfxKey": "vfx_dash_nige",
-        "description": "[교차 파동] 돌진 후 직선 최대 4명에게 136 물리 피해, 0.45초 뒤 같은 방향으로 97 마법 파동. 근거: 2010 有馬記念(GI) 1위.",
+        "description": "[교차 파동] 직선상의 최대 4명을 136의 물리 피해로 밀어내고, 0.45초 뒤 같은 방향으로 97의 마법 파동을 흘려보냅니다. 근거: 2010 有馬記念(GI) 1위.",
         "choreography": {
           "windup": 0.45,
           "recovery": 0.3,
@@ -9599,7 +9599,7 @@
           "motion": "PULSE"
         }
       },
-      "skillSignature": "f323fb2d8216c73d542f52cd7fcf7eee1372ff24035f005cc2d392c2d47beb95",
+      "skillSignature": "1de77b854075bb5d28b7140371c6ec4b272053fc7e2338b3a4dc7bc0aa822ef0",
       "basicAttack": "근접 준비 → 당김 → 타격 → 회수",
       "skillPoseDraft": [
         "낮게 웅크린 출발",
@@ -9656,7 +9656,7 @@
           }
         ],
         "vfxKey": "vfx_dash_senko",
-        "description": "[충격 질주] 돌진 지점 주변 1칸 최대 4명에게 162 물리 피해와 0.65초 기절. 근거: 2010 ジャパンC(GI) 1위.",
+        "description": "[충격 질주] 뛰어든 자리 1칸 안의 최대 4명에게 162의 물리 피해를 입히고 0.65초 동안 기절시킵니다. 근거: 2010 ジャパンC(GI) 1위.",
         "choreography": {
           "windup": 0.3,
           "recovery": 0.3,
@@ -9669,7 +9669,7 @@
           "motion": "STRIKE"
         }
       },
-      "skillSignature": "d17c483b0e08046dca1e3a2904297e0d1f942fced05f43cf3733f5e79bc9e6ab",
+      "skillSignature": "d3358adb918d0b72cc2be819dd8a7d34a5a5afc2990c3791d8fceff7290eb6e2",
       "basicAttack": "근접 준비 → 당김 → 타격 → 회수",
       "skillPoseDraft": [
         "낮게 웅크린 출발",
@@ -9720,7 +9720,7 @@
           }
         ],
         "vfxKey": "vfx_shield",
-        "description": "[수호 서약] 주변 1칸 최대 3명 아군에게 224 보호막. 주변 적 최대 3명을 1.5초 도발. 근거: 2011 金鯱賞(GII) 1위.",
+        "description": "[수호 서약] 주변 1칸의 아군 최대 3명에게 224의 보호막을 씌우고, 가까운 상대 최대 3명을 1.5초 동안 자신에게 붙잡아 둡니다. 근거: 2011 金鯱賞(GII) 1위.",
         "choreography": {
           "windup": 0.3,
           "recovery": 0.3,
@@ -9733,7 +9733,7 @@
           "motion": "STRIKE"
         }
       },
-      "skillSignature": "0df46186b9db1e85a6db7bdab1defe53c841b4f2c553422237f50199dbe332ea",
+      "skillSignature": "714f6265d5df6251b8e4d0d7e05fb07738ec549678d8c261518c24f9f2317fb1",
       "basicAttack": "근접 준비 → 당김 → 타격 → 회수",
       "skillPoseDraft": [
         "방어 자세 준비",
@@ -9792,7 +9792,7 @@
           }
         ],
         "vfxKey": "vfx_dash_senko",
-        "description": "[관통 돌파] 돌진 후 직선 6칸의 최대 4명에게 방어력 20% 감소(4초)와 249 물리 피해. 근거: 2021 有馬記念(GI) 1위.",
+        "description": "[관통 돌파] 안쪽으로 파고들며 직선 6칸의 최대 4명을 제칩니다. 4초 동안 방어력이 20% 무너지고 249의 물리 피해를 입습니다. 근거: 2021 有馬記念(GI) 1위.",
         "choreography": {
           "windup": 0.45,
           "recovery": 0.3,
@@ -9805,7 +9805,7 @@
           "motion": "STRIKE"
         }
       },
-      "skillSignature": "ccf9f1495dd8ed7b548fc89fe9798de682204e20225c3616f3586cc97dcbc388",
+      "skillSignature": "a839c963135e0847bd6d88d72306727aef89d03a2ed2d157191596f04573f454",
       "basicAttack": "근접 준비 → 당김 → 타격 → 회수",
       "skillPoseDraft": [
         "낮게 웅크린 출발",
@@ -9877,7 +9877,7 @@
           }
         ],
         "vfxKey": "vfx_buff",
-        "description": "[반격 폭풍] 120 보호막을 얻고 주변 2칸 최대 4명에게 0.4초 간격으로 60 마법 피해 3회. 체력 피해의 15% 회복. 근거: 2022 宝塚記念(GI) 1위.",
+        "description": "[반격 폭풍] 120의 보호막을 두르고 주변 2칸의 최대 4명에게 0.4초 간격으로 60의 마법 피해를 세 번 흩뿌리며, 깎은 체력의 15%를 회복합니다. 근거: 2022 宝塚記念(GI) 1위.",
         "choreography": {
           "windup": 0.3,
           "recovery": 0.3,
@@ -9890,7 +9890,7 @@
           "motion": "CHANNEL"
         }
       },
-      "skillSignature": "9dfaa6bfc8dd249cc6594574bdbe21d2d56f155f835219962dec5964fa61a3ec",
+      "skillSignature": "f983f3e293c82a31a624b7034604819337817f27691b4d01887299a088b525df",
       "basicAttack": "근접 준비 → 당김 → 타격 → 회수",
       "skillPoseDraft": [
         "몸 중심에 기운 모음",
@@ -9953,7 +9953,7 @@
           }
         ],
         "vfxKey": "vfx_dash_nige",
-        "description": "[유인 돌진] 144 보호막을 얻고 0.25초 뒤 돌진. 대상에게 255 물리 피해와 2초 둔화. 근거: 1998 桜花賞(GI) 1위.",
+        "description": "[유인 돌진] 144의 보호막을 두르고 0.25초 뒤 뛰어들어, 상대에게 255의 물리 피해를 입히고 2초 동안 발을 묶습니다. 근거: 1998 桜花賞(GI) 1위.",
         "choreography": {
           "windup": 0.3,
           "recovery": 0.3,
@@ -9966,7 +9966,7 @@
           "motion": "STRIKE"
         }
       },
-      "skillSignature": "8b9277fb4e530b7358d43c860912dbda85e675c2ab2d18b448c0465ab9aac33b",
+      "skillSignature": "a4eacb40a505ced6a13ec5ee54cc9ae3ae268b0fbdf86ed2a0cf25fcd2b57549",
       "basicAttack": "원거리 조준 → 발사 준비 → 투사체 방출 → 반동 회복",
       "skillPoseDraft": [
         "낮게 웅크린 출발",
@@ -10029,7 +10029,7 @@
           }
         ],
         "vfxKey": "vfx_aoe_burst",
-        "description": "[확장 폭발] 0.35초 간격으로 대상 중심 0·1·2칸으로 확장하는 폭발. 타격마다 최대 4명에게 61 마법 피해. 근거: 2014 ヴィクトリアマイル(GI) 1위.",
+        "description": "[확장 폭발] 0.35초 간격으로 대상을 중심에 두고 0칸, 1칸, 2칸까지 번지는 폭발이 일어나, 한 번에 최대 4명씩 61의 마법 피해를 입힙니다. 근거: 2014 ヴィクトリアマイル(GI) 1위.",
         "choreography": {
           "windup": 0.3,
           "recovery": 0.3,
@@ -10042,7 +10042,7 @@
           "motion": "PULSE"
         }
       },
-      "skillSignature": "b39e7a0301924bbc0263bc24d3b9c98cf672178c22bf27d649bd5d657173c667",
+      "skillSignature": "58ce34eccc130bd306c97e929e8d4fca5856c0edd1cfd3d255fb47d3d6cb9a67",
       "basicAttack": "원거리 조준 → 발사 준비 → 투사체 방출 → 반동 회복",
       "skillPoseDraft": [
         "힘을 모으는 자세",
@@ -10093,7 +10093,7 @@
           }
         ],
         "vfxKey": "vfx_dash_sashi",
-        "description": "[흡수 휩쓸기] 돌진 후 전방 3칸 부채꼴의 최대 4명에게 160 물리 피해. 실제 체력 피해의 25% 회복. 근거: 2001 有馬記念(GI) 1위.",
+        "description": "[흡수 휩쓸기] 앞으로 밀고 들어가 부채꼴 3칸의 최대 4명에게 160의 물리 피해를 입히고, 실제로 깎은 체력의 25%를 회복합니다. 근거: 2001 有馬記念(GI) 1위.",
         "choreography": {
           "windup": 0.45,
           "recovery": 0.3,
@@ -10106,7 +10106,7 @@
           "motion": "STRIKE"
         }
       },
-      "skillSignature": "c31ae5f24a59feec42f34218b24806f48f66159d04189b38a8053a726722a681",
+      "skillSignature": "a4235a740e7dc46a8f54f0a36038e210f40a70c774f7f9f351a2c42d86bd9fc9",
       "basicAttack": "근접 준비 → 당김 → 타격 → 회수",
       "skillPoseDraft": [
         "낮게 웅크린 출발",
@@ -10160,7 +10160,7 @@
           }
         ],
         "vfxKey": "vfx_buff",
-        "description": "[방벽 원진] 2칸 내 최대 4명의 아군에게 228 보호막과 방어력 +20을 4초간 부여. 근거: 2009 ジャパンカップダート(GI) 1위.",
+        "description": "[방벽 원진] 2칸 안의 아군 최대 4명에게 228의 보호막과 방어력 +20을 4초 동안 둘러 줍니다. 근거: 2009 ジャパンカップダート(GI) 1위.",
         "choreography": {
           "windup": 0.3,
           "recovery": 0.3,
@@ -10173,7 +10173,7 @@
           "motion": "STRIKE"
         }
       },
-      "skillSignature": "46e1e6b7c56b6693766fd666f584577af137ac1ebe466f3e8f53e562b7e54fa9",
+      "skillSignature": "19de7a7dc882d6d563a88e5dc465fbc105eac2c1f30debff4eda6612f77b13e0",
       "basicAttack": "원거리 조준 → 발사 준비 → 투사체 방출 → 반동 회복",
       "skillPoseDraft": [
         "몸 중심에 기운 모음",

@@ -45,11 +45,15 @@ it('runs the build before deployment, replaces stale output and propagates failu
       fs.mkdirSync('dist',{recursive:true});
       fs.writeFileSync('dist/index.html','new game');
       fs.writeFileSync('build.json',JSON.stringify({args:process.argv.slice(2),options:process.env.NODE_OPTIONS}));`);
-    const env = { ...process.env, ...renderYarn, NODE_ENV: '', NODE_OPTIONS: '--max-old-space-size=256', npm_execpath: runner, npm_config_omit: '', npm_config_production: '', YARN_PRODUCTION: '', FAIL_BUILD: '' };
+    // Windows env keys are case-insensitive; npm may inherit uppercase aliases.
+    // Remove those aliases so the fixture really launches the requested Yarn lifecycle.
+    const inherited = Object.fromEntries(Object.entries(process.env).filter(([key]) =>
+      !/^npm_|^(NODE_ENV|NODE_OPTIONS|RENDER|YARN_PRODUCTION|FAIL_BUILD)$/i.test(key)));
+    const env = { ...inherited, ...renderYarn, NODE_ENV: '', NODE_OPTIONS: '--max-old-space-size=256', npm_execpath: runner, npm_config_omit: '', npm_config_production: '', YARN_PRODUCTION: '', FAIL_BUILD: '' };
     const run = (overrides = {}) => spawnSync(process.execPath, ['scripts/render-postinstall.mjs'], { cwd: directory, env: { ...env, ...overrides }, encoding: 'utf8' });
     mkdirSync(path.join(directory, 'dist')); writeFileSync(path.join(directory, 'dist/index.html'), 'stale game');
     const built = run(); expect(built.status, built.stderr).toBe(0);
-    expect(readFileSync(path.join(directory, 'dist/index.html'), 'utf8')).toBe('new game');
+    expect(readFileSync(path.join(directory, 'dist/index.html'), 'utf8'), built.stdout).toBe('new game');
     expect(JSON.parse(readFileSync(path.join(directory, 'build.json'), 'utf8'))).toEqual({ args: ['run', 'build'], options: '--max-old-space-size=256 --max-old-space-size=1024' });
     expect(run({ FAIL_BUILD: '1' }).status).toBe(23);
     rmSync(path.join(directory, 'dist'), { recursive: true });

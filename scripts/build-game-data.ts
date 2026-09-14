@@ -1,6 +1,8 @@
+import raceArtCatalog from '../src/data/manual/race-art.json';
 import styleCorrections from '../src/data/manual/running-style-corrections.json';
 import traitCorrections from '../src/data/manual/trait-corrections.json';
 import { buildSeasons } from '../src/game/engine/seasons/catalog';
+import { buildRacePlanData, writeRacePlanImportReport } from './lib/build-race-plan-data';
 import { writeSeasonIcons } from './season-icons';
 /**
  * Generates every JSON file under src/data/generated/ from the vendored
@@ -713,6 +715,15 @@ const units: UnitDef[] = names.map((name) => {
   const moveSpeedHexPerSec = round2(1.65 + 0.35 * sp);
 
   // Spec §9.4 — attack range from role, with the oikomi AD-carry exception.
+  //
+  // Range is left alone deliberately. Moving AD carries back a rank to give the
+  // marksman role its own ground reads well on paper and measures badly: the
+  // four-cost tier is eight carries to two front-liners, so any buff aimed at
+  // carries lands hardest on the one board shape that is supposed to be weak.
+  // A stacked four-cost board went to 90% against a reroll deck at AD range 4,
+  // and 99% when AP carries were pulled forward to trade places. The marksman
+  // identity is built out of what the role does instead — see MARKSMAN_* in
+  // constants and the trait notes.
   const attackRange = role === 'TANK' || role === 'BRUISER' ? 1
     : role === 'AP_CARRY' ? 4
     : role === 'AD_CARRY' ? (style === 'oikomi' ? 2 : 3)
@@ -862,22 +873,40 @@ const manifest: ArtManifest = {
     'vfx_stun', 'vfx_silence', 'vfx_taunt', 'vfx_dash_nige', 'vfx_dash_senko', 'vfx_dash_sashi',
     'vfx_dash_oikomi', 'vfx_line_red', 'vfx_cone_gold', 'vfx_wedge_cyan', 'vfx_arc_violet',
     'vfx_aoe_burst', 'vfx_projectile', 'vfx_execute', 'vfx_buff', 'vfx_debuff', 'vfx_mana',
-    'vfx_item_equip',
+    'vfx_mana_fill', 'vfx_recast', 'vfx_convert_stat',
+    'vfx_item_equip', 'vfx_race_gate', 'vfx_race_late_ring', 'vfx_race_last3f',
   ].map((v) => `vfx/${v}.png`),
+  raceArt: raceArtCatalog.filter(a => a.file.startsWith('race/')).map(a => a.file),
+  battleArt: raceArtCatalog.filter(a => a.file.startsWith('battle/')).map(a => a.file),
   starVfx: ['vfx_star_2', 'vfx_star_3', 'vfx_cost5_star3'].map((v) => `vfx/${v}.png`),
   pve: ['training_dummy', 'track_golem', 'supply_robot', 'trophy_guardian', 'grand_trophy_guardian']
     .map((p) => `pve/${p}.png`),
   boards: [
     'bg_title', 'bg_main_menu', 'bg_board_turf_day', 'bg_board_turf_night', 'bg_board_dirt',
     'bg_twinkle_draft', 'bg_pve_training', 'bg_final_result',
+    'bg_race_plan_paper', 'bg_g1_entry_board', 'bg_paddock_panel',
   ].map((b) => `boards/${b}.png`),
   ui: ['ui/board_hex_tiles.png', 'ui/ui_frames.png', 'ui/ui_slots.png'],
   banners: [
     'round_start', 'preparation', 'battle', 'overtime', 'victory', 'defeat', 'draw', 'pve',
-    'draft', 'augment', 'eliminated', 'champion',
+    'draft', 'augment', 'eliminated', 'champion', 'last3f',
   ].map((b) => `ui/banner_${b}.png`),
 };
 write('art-manifest.json', manifest);
+
+// Race Plan profiles and the GⅠ calendar. Kept out of rosterHash on purpose:
+// hashing them would invalidate every save and room checkpoint on a data refresh.
+const racePlan = buildRacePlanData(
+  units.map((u) => ({ id: u.id, horseId: u.horseId, nameKo: u.nameKo })),
+  db.horses as never,
+  SRC,
+  path.join(OUT, 'race-plan'),
+  db.snapshot.sourceDb,
+);
+writeRacePlanImportReport(ROOT, racePlan);
+console.log(
+  `  wrote race-plan/ (${racePlan.matched}/${racePlan.roster} profiles, ${racePlan.themes} GⅠ themes)`,
+);
 
 const cutins = manifest.characters.filter((c) => c.cutinRequired).length;
 console.log(`data:build — OK  roster hash ${rosterHash}, ${units.length} units, ${activeUnits.length} active, ${cutins} cut-ins`);

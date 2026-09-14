@@ -1,5 +1,6 @@
 import { describe, expect, it } from 'vitest';
 import { createHash } from 'node:crypto';
+import corrections from '../src/data/manual/running-style-corrections.json';
 import { readFileSync } from 'node:fs';
 import { ALL_UNITS, SEASONS, getSeasonUnits, getUnitDef } from '../src/game/engine/roster';
 import { TRAIT_BY_ID, getTrait, activeTierIndex } from '../src/game/engine/traits/trait-defs';
@@ -23,8 +24,14 @@ describe('late trait progression', () => {
         expect(activeTierIndex(trait, trait.thresholds[i])).toBe(i);
       }
     }
-    for (const id of ['nige', 'senko', 'sashi', 'oikomi', 'middle', 'heisei_dynasty'] as const) {
+    for (const id of ['nige', 'senko', 'sashi', 'middle', 'heisei_dynasty'] as const) {
       expect(getTrait(id).thresholds).toEqual([2, 4, 6, 8, 10]);
+    }
+    // 추입은 시즌 60명 중 6~9명뿐이라 2/4/6/8/10에서는 3단계 위가 닿지 않았다.
+    expect(getTrait('oikomi').thresholds).toEqual([2, 3, 5, 7, 9]);
+    for (const season of SEASONS) {
+      const members = getSeasonUnits(season.id).filter(u => u.traits.includes('oikomi')).length;
+      expect(members).toBeGreaterThanOrEqual(getTrait('oikomi').thresholds[2]);
     }
   });
 
@@ -95,22 +102,31 @@ describe('five-cost style distribution and motion compatibility', () => {
       const balance = JSON.parse(readFileSync('docs/qa/adaptive-balance-motion-compatibility.json', 'utf8')).units[id];
       const currentSkill = balance?.before ?? unit.skill;
       const historicalSkill = latest?.before ?? currentSkill;
+      // A run-style correction moves exactly one style-derived field, the
+      // `vfx_dash_<style>` key. The reviewed poses are unaffected, so it is
+      // compared separately instead of failing the whole motion contract.
+      const correction = (corrections.units as Record<string, { from: string; to: string } | undefined>)[id];
+      const withoutStyleVfx = (a: Partial<SkillDef>, b: Partial<SkillDef>) => {
+        if (!correction || a.vfxKey === b.vfxKey) return;
+        expect([a.vfxKey, b.vfxKey].sort()).toEqual(
+          [`vfx_dash_${correction.from}`, `vfx_dash_${correction.to}`].sort(),
+        );
+        delete a.vfxKey;
+        delete b.vfxKey;
+      };
       if (latest) {
         expect(latest.oldCost).toBe(entry.toCost);
         expect(hash(currentSkill)).toBe(hash(latest.after));
         const before = motionContract(latest.before), after = motionContract(latest.after);
-        if (id === 'gran_alegria') {
-          expect(before.vfxKey).toBe('vfx_dash_nige');
-          expect(after.vfxKey).toBe('vfx_dash_senko');
-          delete before.vfxKey;
-          delete after.vfxKey;
-        }
+        withoutStyleVfx(after, before);
         expect(after).toEqual(before);
       }
       expect(Math.abs(entry.toCost - entry.fromCost)).toBeLessThanOrEqual(1);
       expect(hash(entry.previousSkill)).toBe(entry.previousSkillSignature);
       expect(hash(historicalSkill)).toBe(entry.skillSignature);
-      expect(motionContract(historicalSkill)).toEqual(motionContract(entry.previousSkill));
+      const current = motionContract(historicalSkill), previous = motionContract(entry.previousSkill);
+      withoutStyleVfx(current, previous);
+      expect(current).toEqual(previous);
     }
   });
 });

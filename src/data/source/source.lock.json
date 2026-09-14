@@ -5,13 +5,25 @@
       "sha256": "8e7c5f30a370eaa7102657e87edd3e78a3773e6664abb2d9c72cd860fb508829",
       "bytes": 1214616,
       "fetchedAt": "2026-09-07T05:53:20.057Z",
-      "origin": "local:/home/user/umarogue/data/horse-game-db.json"
+      "origin": "local:/home/user/UmaRogue/data/horse-game-db.json"
     },
     "horse-game-db.validation.json": {
       "sha256": "17d6eb38b56fe4147b6383c90449abe4620f4d78b2ba7e1d3250895cabeff382",
       "bytes": 13158,
       "fetchedAt": "2026-09-07T05:53:20.133Z",
-      "origin": "local:/home/user/umarogue/data/horse-game-db.validation.json"
+      "origin": "local:/home/user/UmaRogue/data/horse-game-db.validation.json"
+    },
+    "race-templates.json": {
+      "sha256": "976272b2f8f8257c97806ba054ea834aeb1c93ea3940d33117ea0cb797706f30",
+      "bytes": 7974,
+      "fetchedAt": "2026-09-13T09:54:56.054Z",
+      "origin": "local:/home/user/UmaRogue/data/race-templates.json"
+    },
+    "racecourses.json": {
+      "sha256": "387139a2caf6000defce84a3e2d0b2f63514caae6b4a1f79e2e0ab65d1aa1202",
+      "bytes": 7873,
+      "fetchedAt": "2026-09-13T09:54:56.125Z",
+      "origin": "local:/home/user/UmaRogue/data/racecourses.json"
     }
   }
 }

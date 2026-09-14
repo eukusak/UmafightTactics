@@ -44,133 +44,133 @@ export function buildTacticalSkill(unitId: string, base: SkillDef, cost: Cost = 
   switch (pattern) {
     case 'breach_line':
       effects.push(dash, { kind: 'SUNDER_ARMOR_PCT', value: .2, duration: 4, target, ...line }, hit(190, { damageType: 'PHYSICAL', ...line }));
-      text = `돌진 후 직선 6칸의 최대 4명에게 방어력 20% 감소(4초)와 ${n(190)} 물리 피해.`; break;
+      text = `안쪽으로 파고들며 직선 6칸의 최대 4명을 제칩니다. 4초 동안 방어력이 20% 무너지고 ${n(190)}의 물리 피해를 입습니다.`; break;
     case 'pursuit_flurry':
       effects.push(dash); pulses(hit(78, { damageType: 'PHYSICAL' }), 3); effects.push(buff('attackSpeed', .2));
-      text = `돌진 후 한 적에게 ${n(78)} 물리 피해를 3회, 4초간 공격속도 +20%. 대상 사망 시 남은 타격은 재탐색.`; break;
+      text = `한 상대에게 붙어 ${n(78)}의 물리 피해를 세 번 몰아치고, 4초 동안 공격속도가 +20% 오릅니다. 상대가 먼저 쓰러지면 남은 타격은 다음 상대를 찾아갑니다.`; break;
     case 'drain_arc':
       effects.push(dash, hit(165, { damageType: 'PHYSICAL', ...cone, leech: .25 }));
-      text = `돌진 후 전방 3칸 부채꼴의 최대 4명에게 ${n(165)} 물리 피해. 실제 체력 피해의 25% 회복.`; break;
+      text = `앞으로 밀고 들어가 부채꼴 3칸의 최대 4명에게 ${n(165)}의 물리 피해를 입히고, 실제로 깎은 체력의 25%를 회복합니다.`; break;
     case 'dash_feint':
       effects.push(shield(130), { ...dash, delay: .25 }, hit(230, { damageType: 'PHYSICAL', delay: .25 }), cc('SLOW', 2, { value: .3, delay: .25 }));
-      text = `${n(130)} 보호막을 얻고 0.25초 뒤 돌진. 대상에게 ${n(230)} 물리 피해와 2초 둔화.`; break;
+      text = `${n(130)}의 보호막을 두르고 0.25초 뒤 뛰어들어, 상대에게 ${n(230)}의 물리 피해를 입히고 2초 동안 발을 묶습니다.`; break;
     case 'trample_wave':
       effects.push(dash, hit(175, { damageType: 'PHYSICAL', ...area }), cc('STUN', .65, area));
-      text = `돌진 지점 주변 1칸 최대 4명에게 ${n(175)} 물리 피해와 0.65초 기절.`; break;
+      text = `뛰어든 자리 1칸 안의 최대 4명에게 ${n(175)}의 물리 피해를 입히고 0.65초 동안 기절시킵니다.`; break;
     case 'crossing_echo':
       effects.push(dash, hit(120, { damageType: 'PHYSICAL', ...line }), hit(85, { damageType: 'MAGIC', ...line, delay: .45 }));
-      text = `돌진 후 직선 최대 4명에게 ${n(120)} 물리 피해, 0.45초 뒤 같은 방향으로 ${n(85)} 마법 파동.`; break;
+      text = `직선상의 최대 4명을 ${n(120)}의 물리 피해로 밀어내고, 0.45초 뒤 같은 방향으로 ${n(85)}의 마법 파동을 흘려보냅니다.`; break;
     case 'chain_spark':
       effects.push(hit(115, { shape: 'CHAIN', range: 3, maxTargets: 4 }));
-      text = `섬광이 대상에서 3칸 내 다음 적으로 최대 4명까지 이어지며 각각 ${n(115)} 마법 피해. 같은 적을 재타격하지 않음.`; break;
+      text = `섬광이 3칸 안의 다음 상대로 최대 4명까지 옮겨붙으며 각각 ${n(115)}의 마법 피해를 입힙니다. 한 번 맞은 상대는 다시 타지 않습니다.`; break;
     case 'expanding_nova':
       [0, 1, 2].forEach((radius, i) => effects.push(hit(65, { radius, maxTargets: 4, delay: i * .35 })));
-      text = `0.35초 간격으로 대상 중심 0·1·2칸으로 확장하는 폭발. 타격마다 최대 4명에게 ${n(65)} 마법 피해.`; break;
+      text = `0.35초 간격으로 대상을 중심에 두고 0칸, 1칸, 2칸까지 번지는 폭발이 일어나, 한 번에 최대 4명씩 ${n(65)}의 마법 피해를 입힙니다.`; break;
     case 'comet_fall':
       effects.push(hit(250, { radius: 2, maxTargets: 5 }));
-      text = `0.9초 집중 후 밀집 지점 2칸 내 최대 5명에게 ${n(250)} 마법 피해. 집중 중 기절하면 취소.`; break;
+      text = `0.9초 동안 힘을 모은 뒤 가장 몰려 있는 지점 2칸 안의 최대 5명에게 ${n(250)}의 마법 피해를 내리꽂습니다. 모으는 도중 기절하면 무산됩니다.`; break;
     case 'orbital_beam':
       pulses(hit(58, line), 4, .35);
-      text = `직선 6칸 최대 4명을 향해 0.35초 간격으로 4회 광선. 매회 ${n(58)} 마법 피해, 시전 중 일반 공격 불가.`; break;
+      text = `직선 6칸의 최대 4명을 향해 0.35초 간격으로 네 번 광선을 쏘아 매번 ${n(58)}의 마법 피해를 입힙니다. 쏘는 동안에는 기본 공격을 하지 못합니다.`; break;
     case 'twin_orbit':
       effects.push(hit(130, line), hit(65, { ...line, damageType: 'TRUE', delay: .5 }));
-      text = `직선 최대 4명에게 ${n(130)} 마법 피해 후 0.5초 뒤 ${n(65)} 고정 피해의 귀환 파동.`; break;
+      text = `직선상의 최대 4명에게 ${n(130)}의 마법 피해를 주고, 0.5초 뒤 되돌아오는 파동이 ${n(65)}의 고정 피해를 더합니다.`; break;
     case 'cinder_field':
       pulses(hit(64, area), 3, .6); effects.push({ kind: 'WOUND', duration: 3, target, ...area });
-      text = `대상 주변 1칸 최대 4명에게 0.6초 간격으로 ${n(64)} 마법 피해 3회와 3초간 회복 감소 33%.`; break;
+      text = `대상 주변 1칸의 최대 4명에게 0.6초 간격으로 ${n(64)}의 마법 피해를 세 번 입히고, 3초 동안 회복량을 33% 줄입니다.`; break;
     case 'fan_volley':
       pulses(hit(112, { damageType: 'PHYSICAL', ...cone }), 2, .3);
-      text = `전방 3칸 부채꼴 최대 4명에게 ${n(112)} 물리 피해를 0.3초 간격으로 2회.`; break;
+      text = `앞쪽 부채꼴 3칸의 최대 4명을 0.3초 간격으로 두 번 훑으며 매번 ${n(112)}의 물리 피해를 입힙니다.`; break;
     case 'focus_three':
       [55, 80, 145].forEach((v, i) => effects.push(hit(v, { damageType: 'PHYSICAL', delay: i * p.pulseInterval })));
-      text = `한 적에게 ${n(55)} → ${n(80)} → ${n(145)} 물리 피해. 마지막 타격에 위력이 집중됨.`; break;
+      text = `한 상대를 ${n(55)}, ${n(80)}, ${n(145)}의 물리 피해로 몰아붙입니다. 마지막 한 방에 힘이 실립니다.`; break;
     case 'split_barrage':
       pulses(hit(100, { target: 'NEAREST_ENEMY', shape: 'CHAIN', range: 4, maxTargets: 3 }), 2, .35);
-      text = `가까운 적에서 시작해 서로 다른 최대 3명에게 ${n(100)} 마법 피해. 0.35초 뒤 한 번 더 발사.`; break;
+      text = `가까운 상대부터 서로 다른 최대 3명에게 ${n(100)}의 마법 피해를 날리고, 0.35초 뒤 한 번 더 쏩니다.`; break;
     case 'seeking_bolt':
       effects.push(hit(230, { target: 'HIGHEST_AD_ENEMY', damageType: 'PHYSICAL' }), buff('attackDamage', -.15, 'HIGHEST_AD_ENEMY', { duration: 3 }));
-      text = `공격력이 가장 높은 적을 저격해 ${n(230)} 물리 피해와 공격력 15% 감소(3초).`; break;
+      text = `가장 위협적인 상대를 노려 ${n(230)}의 물리 피해를 입히고 3초 동안 공격력을 15% 떨어뜨립니다.`; break;
     case 'carry_charge':
       effects.push(buff('attackSpeed', .45), buff('attackDamage', .2)); pulses(hit(75, { damageType: 'PHYSICAL' }), 2, .2);
-      text = `4초간 공격속도 +45%, 공격력 +20%. 장전 타격으로 ${n(75)} 물리 피해를 2회.`; break;
+      text = `4초 동안 공격속도가 +45%, 공격력이 +20% 올라가고, 장전한 두 발이 각각 ${n(75)}의 물리 피해를 입힙니다.`; break;
     case 'tempo_banner':
       effects.push(buff('attackSpeed', .3, 'ALL_ALLIES', nearby), { kind: 'MANA_ADD', value: 8, target: 'ALL_ALLIES', excludeSelf: true, ...nearby });
-      text = `2칸 내 최대 4명의 아군에게 4초간 공격속도 +30%. 자신 외 대상은 마나 8 회복.`; break;
+      text = `2칸 안의 아군 최대 4명의 공격속도를 4초 동안 +30% 끌어올리고, 자신을 뺀 아군은 마나를 8 회복합니다.`; break;
     case 'bulwark_circle':
       effects.push(shield(165, 'ALL_ALLIES', nearby), { kind: 'STAT_ADD', stat: 'armor', value: 20, duration: 4, refresh: true, target: 'ALL_ALLIES', ...nearby });
-      text = `2칸 내 최대 4명의 아군에게 ${n(165)} 보호막과 방어력 +20을 4초간 부여.`; break;
+      text = `2칸 안의 아군 최대 4명에게 ${n(165)}의 보호막과 방어력 +20을 4초 동안 둘러 줍니다.`; break;
     case 'sanctuary':
       pulses({ kind: 'HEAL', value: n(55), target: 'ALL_ALLIES', ...nearby }, 3, .5);
       effects.push({ kind: 'CLEANSE', target: 'ALL_ALLIES', ...nearby });
-      text = `2칸 내 최대 4명 아군의 제어 효과를 해제하고, 0.5초 간격으로 ${n(55)}씩 3회 회복.`; break;
+      text = `2칸 안의 아군 최대 4명을 묶고 있던 방해 효과를 풀어 주고, 0.5초 간격으로 ${n(55)}씩 세 번 회복시킵니다.`; break;
     case 'command_pulse':
       effects.push(buff('attackSpeed', .45, 'HIGHEST_AD_ALLY'), shield(200, 'HIGHEST_AD_ALLY'));
-      text = `공격력이 가장 높은 아군 1명에게 4초간 공격속도 +45%와 ${n(200)} 보호막.`; break;
+      text = `가장 잘 때리는 아군 한 명에게 4초 동안 공격속도 +45%와 ${n(200)}의 보호막을 실어 줍니다.`; break;
     case 'retaliate_storm':
       pulses(hit(60, { target: 'ALL_ENEMIES', radius: 2, maxTargets: 4, leech: .15 }), 3, .4);
       effects.push(shield(120));
-      text = `${n(120)} 보호막을 얻고 주변 2칸 최대 4명에게 0.4초 간격으로 ${n(60)} 마법 피해 3회. 체력 피해의 15% 회복.`; break;
+      text = `${n(120)}의 보호막을 두르고 주변 2칸의 최대 4명에게 0.4초 간격으로 ${n(60)}의 마법 피해를 세 번 흩뿌리며, 깎은 체력의 15%를 회복합니다.`; break;
     case 'bastion_growth':
       effects.push({ kind: 'STACKING_STAT', stat: 'hp', value: 70, maxStacks: 4 }, { kind: 'DAMAGE_REDUCTION', value: .18, duration: 4, target: 'SELF' }, shield(150));
-      text = `시전마다 최대 체력 +70(전투당 최대 4중첩). 4초간 받는 피해 18% 감소와 ${n(150)} 보호막.`; break;
+      text = `쓸 때마다 최대 체력이 70씩 붙어 전투당 네 번까지 쌓이고, 4초 동안 받는 피해가 18% 줄며 ${n(150)}의 보호막이 생깁니다.`; break;
     case 'binding_line':
       effects.push(hit(130, line), cc('STUN', 1, line));
-      text = `직선 6칸 최대 4명에게 ${n(130)} 마법 피해와 1초 기절.`; break;
+      text = `직선 6칸의 최대 4명에게 ${n(130)}의 마법 피해를 입히고 1초 동안 세워 둡니다.`; break;
     case 'disarm_cone':
       effects.push(hit(150, cone), cc('DISARM', 1.8, cone));
-      text = `전방 3칸 최대 4명에게 ${n(150)} 마법 피해. 1.8초간 일반 공격 봉쇄, 스킬은 사용 가능.`; break;
+      text = `앞쪽 3칸의 최대 4명에게 ${n(150)}의 마법 피해를 입히고, 1.8초 동안 기본 공격을 막습니다. 스킬은 그대로 나갑니다.`; break;
     case 'silence_zone':
       effects.push(hit(130, area), cc('SILENCE', 2, area));
-      text = `대상 주변 1칸 최대 4명에게 ${n(130)} 마법 피해와 2초 침묵. 일반 공격과 이동은 가능.`; break;
+      text = `대상 주변 1칸의 최대 4명에게 ${n(130)}의 마법 피해를 입히고 2초 동안 침묵시킵니다. 기본 공격과 이동은 막지 않습니다.`; break;
     case 'delayed_prison':
       effects.push(hit(75, area), hit(95, { ...area, delay: .8 }), cc('STUN', 1.4, { ...area, delay: .8 }));
-      text = `주변 1칸 최대 4명에게 ${n(75)} 마법 피해, 0.8초 뒤 ${n(95)} 추가 피해와 1.4초 기절.`; break;
+      text = `주변 1칸의 최대 4명에게 ${n(75)}의 마법 피해를 주고, 0.8초 뒤 ${n(95)}의 피해가 한 번 더 터지며 1.4초 동안 기절시킵니다.`; break;
     case 'draining_tether':
       effects.push(hit(175), { kind: 'MANA_DRAIN', value: 15, target }, buff('attackSpeed', -.25, target, { duration: 3 }));
-      text = `대상에게 ${n(175)} 마법 피해, 현재 마나 15 제거, 3초간 공격속도 25% 감소.`; break;
+      text = `상대에게 ${n(175)}의 마법 피해를 입히고 마나를 15 빼앗으며, 3초 동안 공격속도를 25% 떨어뜨립니다.`; break;
     case 'frost_front':
       effects.push(hit(110, { radius: 2, maxTargets: 4 }), cc('SLOW', 3, { radius: 2, maxTargets: 4, value: .3 }), cc('STUN', .6, { radius: 2, maxTargets: 4 }));
-      text = `주변 2칸 최대 4명에게 ${n(110)} 마법 피해, 0.6초 기절과 3초 둔화.`; break;
+      text = `주변 2칸의 최대 4명에게 ${n(110)}의 마법 피해를 입히고 0.6초 기절시킨 뒤, 3초 동안 발을 묶습니다.`; break;
     case 'triage_echo':
       pulses({ kind: 'HEAL', value: n(100), target: 'LOWEST_HP_ALLY' }, 3, .45);
-      text = `처음 선택한 체력 비율이 가장 낮은 아군에게 ${n(100)}씩 0.45초 간격으로 3회 회복. 사망하면 새 대상 선택.`; break;
+      text = `가장 위태로운 아군을 0.45초 간격으로 ${n(100)}씩 세 번 일으켜 세웁니다. 도중에 쓰러지면 다음으로 위태로운 아군에게 넘어갑니다.`; break;
     case 'rescue_barrier':
       effects.push({ kind: 'HEAL_MISSING_PCT', value: .25, target }, shield(185, target));
-      text = `체력 비율이 가장 낮은 아군의 잃은 체력 25%를 회복하고 ${n(185)} 보호막(4초).`; break;
+      text = `가장 위태로운 아군의 잃은 체력을 25% 되돌리고 4초 동안 ${n(185)}의 보호막을 씌웁니다.`; break;
     case 'relay_lantern':
       effects.push(shield(180, target, { shape: 'CHAIN', range: 3, maxTargets: 3 }));
-      text = `가장 위급한 아군부터 3칸 간격으로 최대 3명에게 각각 ${n(180)} 보호막(4초)을 연결.`; break;
+      text = `가장 급한 아군부터 3칸 간격으로 최대 3명까지 이어 가며 각각 ${n(180)}의 보호막을 4초 동안 걸어 줍니다.`; break;
     case 'cleanse_hymn':
       effects.push({ kind: 'CLEANSE', target: 'LOWEST_HP_ALLIES', maxTargets: 3 }, { kind: 'HEAL', value: n(150), target: 'LOWEST_HP_ALLIES', maxTargets: 3 });
-      text = `체력 비율이 낮은 아군 최대 3명의 기절·침묵·무장해제·둔화·도발을 해제하고 ${n(150)} 회복.`; break;
+      text = `위태로운 아군 최대 3명을 붙잡고 있던 기절, 침묵, 무장 해제, 둔화, 도발을 전부 풀고 ${n(150)}을 회복시킵니다.`; break;
     case 'power_link':
       effects.push({ kind: 'HEAL', value: n(210), target }, buff('attackSpeed', .35, target), buff('abilityPower', .2, target));
-      text = `가장 위급한 아군을 ${n(210)} 회복. 같은 아군에게 4초간 공격속도 +35%, 주문력 +20%.`; break;
+      text = `가장 급한 아군을 ${n(210)} 회복시키고, 그 아군에게 4초 동안 공격속도 +35%와 주문력 +20%를 얹어 줍니다.`; break;
     case 'challenge_bastion':
       effects.push(shield(320), { kind: 'TAUNT', duration: 2, target: 'ALL_ENEMIES', radius: 2, maxTargets: 3 }, { kind: 'CC_IMMUNE', duration: 1.5, target: 'SELF' });
-      text = `${n(320)} 보호막(4초), 1.5초 제어 면역. 주변 2칸 최대 3명을 2초 도발.`; break;
+      text = `4초 동안 ${n(320)}의 보호막을 두르고 1.5초 동안 어떤 방해도 받지 않으며, 주변 2칸의 최대 3명을 2초 동안 자신에게 붙잡아 둡니다.`; break;
     case 'counter_surge':
       effects.push(shield(250), hit(145, { target: 'ALL_ENEMIES', radius: 2, maxTargets: 4, delay: .7, leech: .2 }));
-      text = `${n(250)} 보호막을 얻고 0.7초 뒤 주변 2칸 최대 4명에게 ${n(145)} 마법 피해. 체력 피해의 20% 회복.`; break;
+      text = `${n(250)}의 보호막을 두르고 0.7초 뒤 주변 2칸의 최대 4명에게 ${n(145)}의 마법 피해로 되받아치며, 깎은 체력의 20%를 회복합니다.`; break;
     case 'iron_drain':
       effects.push({ kind: 'DAMAGE_REDUCTION', value: .2, duration: 4, target: 'SELF' });
       pulses(hit(75, { target: 'ALL_ENEMIES', radius: 1, maxTargets: 3, leech: .45 }), 3, .5);
-      text = `4초간 받는 피해 20% 감소. 주변 1칸 최대 3명에게 ${n(75)} 마법 피해 3회, 체력 피해의 45% 회복.`; break;
+      text = `4초 동안 받는 피해가 20% 줄고, 주변 1칸의 최대 3명에게서 ${n(75)}의 마법 피해를 세 번 빨아들여 깎은 체력의 45%를 회복합니다.`; break;
     case 'guardian_vow':
       effects.push(shield(210, 'ALL_ALLIES', { radius: 1, maxTargets: 3 }), { kind: 'TAUNT', duration: 1.5, target: 'ALL_ENEMIES', radius: 2, maxTargets: 3 });
-      text = `주변 1칸 최대 3명 아군에게 ${n(210)} 보호막. 주변 적 최대 3명을 1.5초 도발.`; break;
+      text = `주변 1칸의 아군 최대 3명에게 ${n(210)}의 보호막을 씌우고, 가까운 상대 최대 3명을 1.5초 동안 자신에게 붙잡아 둡니다.`; break;
     case 'isolation_strike':
       effects.push(hit(255, { damageType: 'PHYSICAL', isolatedMultiplier: 1.4 }));
-      text = `체력 비율이 가장 낮은 적에게 ${n(255)} 물리 피해. 대상 1칸 내 다른 적이 없으면 피해 40% 증가.`; break;
+      text = `가장 지쳐 있는 상대에게 ${n(255)}의 물리 피해를 꽂습니다. 그 상대가 1칸 안에 혼자 떨어져 있으면 피해가 40% 커집니다.`; break;
     case 'execution_refund':
       effects.push(hit(290, { damageType: 'PHYSICAL', onKillMana: 25 }));
-      text = `체력 비율이 가장 낮은 적에게 ${n(290)} 물리 피해. 이 타격으로 처치하면 마나 25 회복.`; break;
+      text = `가장 지쳐 있는 상대에게 ${n(290)}의 물리 피해를 꽂고, 그대로 넘어뜨리면 마나를 25 돌려받습니다.`; break;
     case 'giant_cutter':
       effects.push(hit(200, { damageType: 'PHYSICAL' }), { kind: 'DAMAGE_MAXHP_PCT', value: .045, damageType: 'PHYSICAL', target });
-      text = `체력 비율이 가장 낮은 적에게 ${n(200)} + 대상 최대 체력 4.5%의 물리 피해.`; break;
+      text = `가장 지쳐 있는 상대에게 ${n(200)}에 더해 그 상대 최대 체력의 4.5%만큼 물리 피해를 입힙니다.`; break;
     case 'shadow_finish':
       effects.push({ kind: 'UNTARGETABLE', duration: .3, target: 'SELF' }, hit(280, { damageType: 'PHYSICAL', delay: .2 }), buff('attackSpeed', .3));
-      text = `0.3초간 대상 지정 불가. 0.2초 뒤 최저 체력 비율 적에게 ${n(280)} 물리 피해. 4초간 공격속도 +30%.`; break;
+      text = `0.3초 동안 시야에서 사라졌다가 0.2초 뒤 가장 지쳐 있는 상대에게 ${n(280)}의 물리 피해로 나타나며, 4초 동안 공격속도가 +30% 오릅니다.`; break;
     default: throw new Error(`Unknown tactical kit: ${pattern}`);
   }
   const race = races[unitId].representative;

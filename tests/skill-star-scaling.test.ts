@@ -7,28 +7,53 @@ import { stat } from '../src/game/engine/battle/combat-unit';
 import { Rng } from '../src/game/engine/rng';
 import type { Cost, EffectDef, Star } from '../src/game/engine/types';
 
-function cast(effects: EffectDef[], star: Star = 1, cost: Cost = 1, ap = 100): BattleEngine {
+/**
+ * `ad` is the caster's attack damage *relative to its own baseline*, which is
+ * what a physical cast scales on — the mirror of ability power against its
+ * authored 100. Passing the baseline itself leaves physical casts at 1x, so the
+ * damage-type-agnostic cases below still read the authored value.
+ */
+function cast(effects: EffectDef[], star: Star = 1, cost: Cost = 1, ap = 100, ad = 100): BattleEngine {
   const side = (id: string): BattleSideInput => ({ playerId: id, augments: [], tacticianItems: [], units: [{ instanceId: '0', unitDefId: ACTIVE_BY_COST[1][0].id, star: 1, items: [], position: { q: 3, r: 0 } }] });
   const engine = new BattleEngine(side('a'), side('b'), new Rng(91), { maxSeconds: .7, recordFrames: true });
   for (const [i,u] of engine.units.entries()) {
     u.role = 'AD_CARRY'; u.base.hp = 100000; u.base.armor = u.base.magicResist = 0;
     u.base.maxMana = 10000; u.base.startMana = i === 0 ? 10000 : 0;
-    u.base.attackDamage = 0; u.base.attackSpeed = .1; u.base.attackRange = 4; u.attackCooldown = 20;
+    // Auto-attacks are already suppressed by the cooldown and the 0.7s cap, so
+    // attack damage is free to carry the physical-scaling baseline.
+    u.base.attackDamage = 100; u.base.attackSpeed = .1; u.base.attackRange = 4; u.attackCooldown = 20;
     u.cell = { q: 3, r: 3 + i };
     u.skill = { ...u.skill, effects: i === 0 ? effects : [], targetRule: 'CURRENT_TARGET', choreography: { windup: .1, recovery: .2, pulseInterval: .2, color: '#fff', variant: 'test' } };
   }
   const source = engine.units[0]; source.star = star; source.cost = cost;
   source.skillMultiplier = starSkillMultiplier(star, cost); source.base.abilityPower = ap;
+  // Set after the baseline is captured, so the ratio is ad/100 exactly as ap/100.
+  if (ad !== 100) source.modifiers.push({ stat: 'attackDamage', value: ad - 100, isMultiplier: false, expiresAt: 999 });
   engine.run(); return engine;
 }
 const damage = (engine: BattleEngine) => engine.frames.flatMap(f=>f.events).filter(e=>e.type==='DAMAGE' && e.source==='a#0').reduce((sum,e)=>sum+(e.type==='DAMAGE'?e.damage:0),0);
 
 describe('cast potency and preview agree', () => {
-  it.each(['MAGIC','PHYSICAL','TRUE'] as const)('scales %s skill damage once, including current AP', damageType => {
+  it.each(['MAGIC','TRUE'] as const)('scales %s skill damage once, including current AP', damageType => {
     const effect: EffectDef = { kind:'DAMAGE', value:200, damageType, target:'CURRENT_TARGET' };
     expect(damage(cast([effect]))).toBeCloseTo(200);
     expect(damage(cast([effect],2,1,150))).toBeCloseTo(435);
     expect(damage(cast([effect],3,5,150))).toBeCloseTo(1800);
+  });
+
+  it('scales PHYSICAL skill damage on attack damage, exactly as magic scales on AP', () => {
+    const physical: EffectDef = { kind:'DAMAGE', value:200, damageType:'PHYSICAL', target:'CURRENT_TARGET' };
+    const magic: EffectDef = { kind:'DAMAGE', value:200, damageType:'MAGIC', target:'CURRENT_TARGET' };
+    // At baseline both read the authored value.
+    expect(damage(cast([physical]))).toBeCloseTo(200);
+    // Raising attack damage moves a physical cast by the same factor that
+    // raising ability power moves a magic one. Without this an AD item improved
+    // only a physical carry's auto-attacks while an AP item improved all of a
+    // magic carry's output.
+    expect(damage(cast([physical],2,1,100,150))).toBeCloseTo(damage(cast([magic],2,1,150)));
+    expect(damage(cast([physical],3,5,100,150))).toBeCloseTo(damage(cast([magic],3,5,150)));
+    // And the other stat does nothing to it: ability power leaves it alone.
+    expect(damage(cast([physical],1,1,200,100))).toBeCloseTo(200);
   });
   it('scales max-health damage once rather than applying the flat support curve', () => {
     expect(damage(cast([{kind:'DAMAGE_MAXHP_PCT',value:.01,damageType:'TRUE',target:'CURRENT_TARGET'}],3,1,150))).toBeCloseTo(3300);

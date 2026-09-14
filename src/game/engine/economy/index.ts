@@ -37,12 +37,20 @@ export function roundIncome(player: PlayerState, stage: number, round: number, w
   return base + win + interestGold(player) + streakBonus(player);
 }
 
+/**
+ * Xp the player still owes for the next level.
+ *
+ * A level always costs at least 1 xp. 조기 승급 discounts 12, which is more than
+ * levels 2-5 cost, and a zero cost used to make addXp bail out of its loop — the
+ * player stopped levelling for the rest of the match. Returns 0 only at max level,
+ * which the shop and the level panel read as "no next level".
+ */
 export function xpToNextLevel(player: PlayerState): number {
   if (player.level >= MAX_LEVEL) return 0;
   const needed = XP_TO_LEVEL[player.level + 1] ?? 0;
   let discount = 0;
   for (const id of player.augments) discount += getAugment(id).economy?.levelXpDiscount ?? 0;
-  return Math.max(0, needed - discount);
+  return Math.max(1, needed - discount);
 }
 
 /** Adds xp and applies as many level-ups as it covers. */
@@ -52,7 +60,7 @@ export function addXp(player: PlayerState, amount: number): number {
   for (let guard = 0; guard < 32; guard += 1) {
     if (player.level >= MAX_LEVEL) { player.xp = 0; break; }
     const need = xpToNextLevel(player);
-    if (need <= 0 || player.xp < need) break;
+    if (player.xp < need) break;
     player.xp -= need;
     player.level += 1;
     levelsGained += 1;

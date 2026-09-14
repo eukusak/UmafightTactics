@@ -187,11 +187,24 @@ if (!manifestParsed.success) {
   check(m.traits.length === 24, `manifest traits ${m.traits.length} != 24`);
   check(m.augments.length === new Set(AUGMENT_DEFS.map(a=>a.iconId ?? a.id)).size, 'augment icon manifest mismatch');
   check(m.status.length === 24, `manifest status icons ${m.status.length} != 24`);
-  check(m.vfx.length === 24, `manifest vfx ${m.vfx.length} != 24`);
+  // Three arrived with the race-plan effect kinds: RECAST_SKILL, MANA_FILL and
+  // CONVERT_STAT each ask for their own flash.
+  check(m.vfx.length === 30, `manifest vfx ${m.vfx.length} != 30`);
+  // A count alone cannot tell that the *right* files are present — a renamed
+  // asset keeps the total and breaks the effect that wanted it. So every vfx
+  // key the battle code asks for has to resolve to a manifest entry.
+  const vfxIds = new Set(m.vfx.map((v) => path.basename(v)));
+  const requested = new Set<string>();
+  for (const file of ['src/game/engine/battle/effects.ts', 'src/game/phaser/BattleScene.ts']) {
+    for (const hit of readFileSync(file, 'utf8').matchAll(/'(vfx_[a-z0-9_]+)'/g)) requested.add(hit[1]);
+  }
+  for (const key of [...requested].sort()) {
+    check(vfxIds.has(`${key}.png`), `battle code requests ${key} but the art manifest has no such vfx`);
+  }
   check(m.starVfx.length === 3, `manifest star vfx ${m.starVfx.length} != 3`);
   check(m.pve.length === 5, `manifest pve ${m.pve.length} != 5`);
-  check(m.boards.length === 8, `manifest boards ${m.boards.length} != 8`);
-  check(m.banners.length === 12, `manifest banners ${m.banners.length} != 12`);
+  check(m.boards.length === 11, `manifest boards ${m.boards.length} != 11`);
+  check(m.banners.length === 13, `manifest banners ${m.banners.length} != 13`);
   const manifestIds = new Set(m.characters.map((c) => c.id));
   check(units.every((u) => manifestIds.has(u.id)), 'a unit is missing from the art manifest');
   for (const c of m.characters) {

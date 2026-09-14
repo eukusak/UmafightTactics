@@ -13,7 +13,13 @@ export function handleBattleKey(event: KeyboardEvent): void {
   if (!action) return;
   const player = store.human();
   if (!player) return;
-  const blocked = store.battleComplete || !!store.match.draft || store.match.augmentOffers.some(o => o.playerId === player.id && o.chosen === null);
+  const racePlan = player.racePlan;
+  const racePlanOpen = Boolean(
+    (racePlan?.currentOffer && racePlan.currentOffer.chosen === null)
+    || (racePlan?.offerPhase === 'ENTRY' && !racePlan.entryUnitDefId),
+  );
+  const blocked = store.battleComplete || !!store.match.draft || racePlanOpen
+    || store.match.augmentOffers.some(o => o.playerId === player.id && o.chosen === null);
   if (action === 'settings') {
     event.preventDefault();
     if (ui.draggedUnit || store.selectedUnitId) { ui.drag(null); useGameStore.setState({ selectedUnitId: null }); }

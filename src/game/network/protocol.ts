@@ -21,6 +21,12 @@ export const commandSchema = z.discriminatedUnion('action', [
   z.object({ action: z.literal('augmentReroll'), slot: z.number().int().min(0).max(2) }).strict(),
   z.object({ action: z.literal('carouselMove'), target: z.object({ x: z.number().finite().min(0).max(1100), y: z.number().finite().min(0).max(650) }).strict(), option: z.number().int().min(0).max(15).nullable() }).strict(),
   z.object({ action: z.literal('draft'), index: z.number().int().min(0).max(15) }).strict(),
+  // Race Plan. Ids are validated against the player's live offer server-side.
+  z.object({ action: z.literal('racePlan'), id }).strict(),
+  z.object({ action: z.literal('racePlanReroll'), slot: z.number().int().min(0).max(2) }).strict(),
+  z.object({ action: z.literal('raceEntry'), unit: id }).strict(),
+  z.object({ action: z.literal('raceEntryDefer') }).strict(),
+  z.object({ action: z.literal('raceTransfer'), unit: id }).strict(),
 ]);
 export type OnlineCommand = z.infer<typeof commandSchema>;
 const name = z.string().trim().min(1).max(20);

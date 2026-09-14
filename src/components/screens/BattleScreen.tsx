@@ -8,8 +8,13 @@ import { TopHud, TraitPanel, ItemPanel, Leaderboard } from '../Panels';
 import { ShopRow, BenchRow, ShopControls } from '../Shop';
 import { ArenaBackdrop, PrepBoard, BattleBoard, BattleInspectTargets } from '../BoardView';
 import { AugmentOverlay, DraftOverlay, BattleResultOverlay } from '../Overlays';
+import { RacePlanOverlay } from '../race-plan/RacePlanOverlay';
+import { G1EntryOverlay, FinishingMoveOverlay } from '../race-plan/G1EntryOverlay';
+import { RaceProgressHud } from '../race-plan/RaceProgressHud';
+import { RacePlanPanel } from '../race-plan/RacePlanPanel';
 import { DetailPanel } from '../DetailPanel';
 import { useInteractionStore } from '../../store/interactionStore';
+import { useFieldFit } from '../../game/ui/use-field-fit';
 import { handleBattleKey } from '../../game/ui/controls';
 import { roundInfo } from '../../game/engine/rounds/schedule';
 import type { UnitInstance } from '../../game/engine/state';
@@ -93,12 +98,20 @@ export function BattleScreen(): JSX.Element | null {
       useInteractionStore.getState().reset();
     };
   }, []);
+  const fieldFit = useFieldFit();
 
   if (!match || !human) return null;
   const info = roundInfo(match.stage, match.round);
   const awaitingAugment = match.augmentOffers.some((o) => o.playerId === human.id && o.chosen === null);
   const awaitingDraft = !!match.draft;
-  const modalOpen = awaitingAugment || awaitingDraft || showResult;
+  const racePlan = human.racePlan;
+  // The race plan owns the screen the same way an augment does: a pending offer,
+  // or the entry screen before a unit has been registered.
+  const awaitingRacePlan = Boolean(
+    (racePlan?.currentOffer && racePlan.currentOffer.chosen === null)
+    || (racePlan?.offerPhase === 'ENTRY' && !racePlan.entryUnitDefId),
+  );
+  const modalOpen = awaitingAugment || awaitingDraft || awaitingRacePlan || showResult;
   const exitButton = <button className="btn-ghost" onClick={exitToMainMenu}
     title="진행 상황을 저장하고 나갑니다. 전투 중에는 현재 전투를 정산합니다.">메인 메뉴</button>;
 
@@ -114,7 +127,7 @@ export function BattleScreen(): JSX.Element | null {
         <WishlistPanel />
       </div>
 
-      <div className="hud-field"><div className="field-surface">
+      <div className="hud-field" ref={fieldFit}><div className="field-surface">
         <ArenaBackdrop />
         <BattleMatchup />
         <FormationFeedback />
@@ -122,13 +135,14 @@ export function BattleScreen(): JSX.Element | null {
         {(!battleRunning || !arenaReady) && <PrepBoard onUnitContext={onUnitContext} />}
         {battleRunning && (!online || !!frames?.length) && <BattleBoard key={`${battleId ?? 'solo'}:${spectating ?? human.id}`} onReady={onArenaReady} />}
         {battleRunning && arenaReady && <BattleInspectTargets />}
+        {battleRunning && arenaReady && <div className="race-hud-slot"><RaceProgressHud /></div>}
         {(!battleRunning || arenaReady) && <BattleTelemetry />}
         {online && !battleRunning && <OnlineClock />}
-        {!online && !battleRunning && <PrepCountdown key={info.label} active={!awaitingAugment && !awaitingDraft} seconds={info.prepSeconds} />}
+        {!online && !battleRunning && <PrepCountdown key={info.label} active={!awaitingAugment && !awaitingDraft && !awaitingRacePlan} seconds={info.prepSeconds} />}
       </div></div>
 
       <div className="hud-right scroll">
-        <Leaderboard />{inspection ? <DetailPanel /> : <><div className="panel controls-help">
+        <Leaderboard />{inspection ? <DetailPanel /> : <><RacePlanPanel /><div className="panel controls-help">
           <strong>조작 안내</strong><p>기물·특성·아이템 클릭: 상세 정보</p>
           <p>기물을 상점으로 드래그: 판매</p><p>{settings.keybinds.sellHovered.toUpperCase()}: 가리킨 기물 판매 · {settings.keybinds.toggleBench.toUpperCase()}: 필드/대기석</p>
           <p>{settings.keybinds.battleInfo}: 전투 통계 · Esc: 선택 취소/닫기</p>
@@ -177,7 +191,11 @@ export function BattleScreen(): JSX.Element | null {
       {!online && modalOpen && <div className="solo-menu-exit">{exitButton}</div>}
       {lastError && <div className="toast">{lastError}</div>}
       {awaitingAugment && <AugmentOverlay />}
-      {awaitingDraft && !awaitingAugment && <DraftOverlay />}
+      {!awaitingAugment && awaitingRacePlan && racePlan?.offerPhase === 'ENTRY' && <G1EntryOverlay />}
+      {!awaitingAugment && awaitingRacePlan && racePlan?.offerPhase === 'FINISHING' && <FinishingMoveOverlay />}
+      {!awaitingAugment && awaitingRacePlan
+        && (racePlan?.offerPhase === 'PLAN' || racePlan?.offerPhase === 'EVOLUTION') && <RacePlanOverlay />}
+      {awaitingDraft && !awaitingAugment && !awaitingRacePlan && <DraftOverlay />}
       {showResult && <BattleResultOverlay onContinue={handleContinue} />}
     </>
   );

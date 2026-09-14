@@ -73,7 +73,7 @@
       "grade": "S",
       "iconId": "combat_all_stats",
       "name": "다채로운 팀워크",
-      "description": "활성 특성 하나당 아군 공격력·주문력 +2. 최대 6개 특성.",
+      "description": "활성 특성 하나당 아군 공격력·주문력 +2. 특성 10개까지 적용.",
       "activeTraitScaling": true,
       "teamEffects": [
         {
@@ -144,7 +144,7 @@
       "grade": "S",
       "iconId": "xp_small",
       "name": "정돈된 마방",
-      "description": "PvP 종료 시 대기석이 비어 있으면 경험치 +2. 장비·기물은 전투 시작 당시 기준.",
+      "description": "PvP 종료 시 대기석이 비어 있으면 경험치 +2. 장비·기물은 발주 당시 기준.",
       "teamEffects": [],
       "roundReward": {
         "condition": "EMPTY_BENCH",
@@ -156,7 +156,7 @@
       "grade": "G",
       "iconId": "bench_expand",
       "name": "북적이는 훈련장",
-      "description": "PvP 종료 시 대기석에 기물이 5명 이상이면 경험치 +3. 전투 시작 당시 기준.",
+      "description": "PvP 종료 시 대기석에 기물이 5명 이상이면 경험치 +3. 발주 당시 기준.",
       "teamEffects": [],
       "roundReward": {
         "condition": "FULL_BENCH",
@@ -1141,7 +1141,7 @@
       "id": "combat_adjacent",
       "grade": "G",
       "name": "페이스메이커",
-      "description": "전투 시작 시 인접 아군 2명 이상인 유닛 방어력/마저 +15.",
+      "description": "발주 시 인접 아군이 2명 이상인 유닛 방어력/마저 +15.",
       "teamEffects": [
         {
           "kind": "STAT_ADD",
@@ -1167,7 +1167,7 @@
       "id": "combat_isolated",
       "grade": "G",
       "name": "단독 질주",
-      "description": "전투 시작 시 인접 아군이 없는 유닛 공격력/주문력 +18%.",
+      "description": "발주 시 인접 아군이 없는 유닛 공격력/주문력 +18%.",
       "teamEffects": [
         {
           "kind": "STAT_MUL",

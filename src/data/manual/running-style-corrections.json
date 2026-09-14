@@ -1,20 +1,12 @@
 {
   "source": "running-style-evidence.json",
   "units": {
-    "gold_ship": {
-      "horseId": "H-2009102739",
-      "from": "sashi",
-      "to": "oikomi",
-      "support": 0.667,
-      "starts": 27,
-      "reason": "초반 두 통과 지점의 위치 분포를 근거로 교정. 경기별 전술 변동은 유지."
-    },
-    "taiki_shuttle": {
-      "horseId": "H-1994109686",
+    "believe": {
+      "horseId": "H-1998101038",
       "from": "nige",
       "to": "senko",
-      "support": 0.917,
-      "starts": 12,
+      "support": 0.667,
+      "starts": 27,
       "reason": "초반 두 통과 지점의 위치 분포를 근거로 교정. 경기별 전술 변동은 유지."
     },
     "biwa_hayahide": {
@@ -33,13 +25,63 @@
       "starts": 16,
       "reason": "초반 두 통과 지점의 위치 분포를 근거로 교정. 경기별 전술 변동은 유지."
     },
-    "nishino_flower": {
-      "horseId": "H-1989107262",
+    "daring_heart": {
+      "horseId": "H-2002100600",
       "from": "nige",
       "to": "senko",
-      "support": 0.688,
-      "starts": 16,
+      "support": 0.923,
+      "starts": 26,
       "reason": "초반 두 통과 지점의 위치 분포를 근거로 교정. 경기별 전술 변동은 유지."
+    },
+    "fenomeno": {
+      "horseId": "H-2009106599",
+      "from": "nige",
+      "to": "senko",
+      "source": "user",
+      "support": 0.333,
+      "starts": 18,
+      "reason": "사용자 지정 각질 교정. 통과 지점 표본은 선입/선행이 섞여 있고 전적 기록의 주 각질은 선두권이다. 선행으로 고정한다."
+    },
+    "gentildonna": {
+      "horseId": "H-2009106253",
+      "from": "nige",
+      "to": "senko",
+      "support": 0.647,
+      "starts": 17,
+      "reason": "초반 두 통과 지점의 위치 분포를 근거로 교정. 경기별 전술 변동은 유지."
+    },
+    "gold_ship": {
+      "horseId": "H-2009102739",
+      "from": "sashi",
+      "to": "oikomi",
+      "support": 0.667,
+      "starts": 27,
+      "reason": "초반 두 통과 지점의 위치 분포를 근거로 교정. 경기별 전술 변동은 유지."
+    },
+    "gran_alegria": {
+      "horseId": "H-2016104532",
+      "from": "nige",
+      "to": "senko",
+      "support": 0.5333333333333333,
+      "starts": 15,
+      "reason": "사용자 교정 및 기존 경기 분석: 도주 0, 선행 8, 선입 4, 추입 3. 최빈 각질 선행을 반영."
+    },
+    "hokko_tarumae": {
+      "horseId": "H-2009100921",
+      "from": "nige",
+      "to": "senko",
+      "support": 0.833,
+      "starts": 36,
+      "reason": "초반 두 통과 지점의 위치 분포를 근거로 교정. 경기별 전술 변동은 유지."
+    },
+    "katsuragi_ace": {
+      "horseId": "H-1980101425",
+      "from": "oikomi",
+      "to": "nige",
+      "source": "user",
+      "support": 0,
+      "starts": 0,
+      "reason": "사용자 지정 각질 교정. 통과 지점 표본이 없어 자동 판정이 archetype(TURF_MIDDLE_CLOSER)에만 의존했다. 도주로 고정한다."
     },
     "mejiro_ardan": {
       "horseId": "H-1985103406",
@@ -47,6 +89,14 @@
       "to": "senko",
       "support": 0.714,
       "starts": 14,
+      "reason": "초반 두 통과 지점의 위치 분포를 근거로 교정. 경기별 전술 변동은 유지."
+    },
+    "nishino_flower": {
+      "horseId": "H-1989107262",
+      "from": "nige",
+      "to": "senko",
+      "support": 0.688,
+      "starts": 16,
       "reason": "초반 두 통과 지점의 위치 분포를 근거로 교정. 경기별 전술 변동은 유지."
     },
     "north_flight": {
@@ -57,38 +107,6 @@
       "starts": 11,
       "reason": "초반 두 통과 지점의 위치 분포를 근거로 교정. 경기별 전술 변동은 유지."
     },
-    "hokko_tarumae": {
-      "horseId": "H-2009100921",
-      "from": "nige",
-      "to": "senko",
-      "support": 0.833,
-      "starts": 36,
-      "reason": "초반 두 통과 지점의 위치 분포를 근거로 교정. 경기별 전술 변동은 유지."
-    },
-    "daring_heart": {
-      "horseId": "H-2002100600",
-      "from": "nige",
-      "to": "senko",
-      "support": 0.923,
-      "starts": 26,
-      "reason": "초반 두 통과 지점의 위치 분포를 근거로 교정. 경기별 전술 변동은 유지."
-    },
-    "gentildonna": {
-      "horseId": "H-2009106253",
-      "from": "nige",
-      "to": "senko",
-      "support": 0.647,
-      "starts": 17,
-      "reason": "초반 두 통과 지점의 위치 분포를 근거로 교정. 경기별 전술 변동은 유지."
-    },
-    "believe": {
-      "horseId": "H-1998101038",
-      "from": "nige",
-      "to": "senko",
-      "support": 0.667,
-      "starts": 27,
-      "reason": "초반 두 통과 지점의 위치 분포를 근거로 교정. 경기별 전술 변동은 유지."
-    },
     "rhein_kraft": {
       "horseId": "H-2002100959",
       "from": "nige",
@@ -97,13 +115,13 @@
       "starts": 13,
       "reason": "초반 두 통과 지점의 위치 분포를 근거로 교정. 경기별 전술 변동은 유지."
     },
-    "gran_alegria": {
-      "horseId": "H-2016104532",
+    "taiki_shuttle": {
+      "horseId": "H-1994109686",
       "from": "nige",
       "to": "senko",
-      "support": 0.5333333333333333,
-      "starts": 15,
-      "reason": "사용자 교정 및 기존 경기 분석: 도주 0, 선행 8, 선입 4, 추입 3. 최빈 각질 선행을 반영."
+      "support": 0.917,
+      "starts": 12,
+      "reason": "초반 두 통과 지점의 위치 분포를 근거로 교정. 경기별 전술 변동은 유지."
     }
   }
 }

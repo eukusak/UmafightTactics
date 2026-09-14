@@ -1,3 +1,6 @@
+import { RaceWeather } from './race-plan/RaceWeather';
+import { ExposedMarker } from './race-plan/RaceArt';
+import { isExposedCarry } from '../game/engine/battle/exposed-carries';
 import { matchItemDescription } from '../game/ui/match-descriptions';
 /** One background and projection across preparation and recorded combat. */
 import { useEffect, useRef, useState } from 'react';
@@ -26,6 +29,7 @@ export function ArenaBackdrop(): JSX.Element {
   const background = arenaUrl(match?.stage, !!match && roundInfo(match.stage, match.round).kind === 'PVE');
   return <div className="arena-backdrop">
     <ArenaImage url={background} fallback={arenaUrl(1, false)} />
+    <RaceWeather />
     <svg className="arena-grid" width={FIELD_W} height={FIELD_H} aria-hidden="true">
       {Array.from({ length: 56 }, (_, i) => {
         const cell = { q: i % 7, r: Math.floor(i / 7) };
@@ -44,6 +48,7 @@ export function PrepBoard({ onUnitContext }: { onUnitContext: (e: React.MouseEve
   const [dragOver, setDragOver] = useState<string | null>(null);
   useGameStore((s) => s.revision);
   if (!player) return null;
+  const guards = player.board.filter(u => u.position).map(u => ({ role: getUnitDef(u.unitDefId).role, cell: u.position! }));
   const drop = (e: React.DragEvent, q: number, r: number, unit?: UnitInstance): void => {
     e.preventDefault(); setDragOver(null);
     if (spectating || running) return;
@@ -83,6 +88,7 @@ export function PrepBoard({ onUnitContext }: { onUnitContext: (e: React.MouseEve
           onDragOver={(e) => e.preventDefault()} onDrop={(e) => drop(e, unit.position!.q, unit.position!.r, unit)}
           onClick={() => click(unit.position!.q, unit.position!.r, unit)}
           onContextMenu={(e) => { e.preventDefault(); if (spectating) useInteractionStore.getState().inspect({ kind: 'unit', id: unit.instanceId, playerId: player.id }); else onUnitContext(e, unit); }}>
+          {!running && isExposedCarry({ role: def.role, cell: unit.position! }, guards) && <ExposedMarker enemy={!!spectating} />}
           <span className="arena-unit-base" style={{ borderColor: `var(--cost-${def.cost})` }} />
           <AnimatedUnit id={def.id} name={def.nameKo} className="arena-idle" />
           <span className="arena-unit-stars" >{'★'.repeat(unit.star)}</span>

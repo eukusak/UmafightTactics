@@ -1,0 +1,24 @@
+{
+  "_note": "UmaRogue vendors race-templates.json and sync:data overwrites it, so Korean race names cannot be corrected at the source. These override it at load. `nameJa` is the race's own name and is what each entry is keyed to in review; `evidence` says how the Korean spelling was established — `verified` means it was read off Korean Uma Musume material, `pattern` means it follows a convention two or more verified entries establish (記念 takes a space and an initial 타, 賞 is -상) and should be confirmed in game before it is trusted.",
+  "_source": "https://namu.wiki/w/우마무스메 프리티 더비/레이스/목록 (검색 스니펫), https://gametora.com/ko/umamusume/races",
+  "overrides": [
+    { "id": "OKA_SHO",         "nameJa": "桜花賞",        "was": "오카쇼",              "nameKo": "오카상",                    "evidence": "verified" },
+    { "id": "SATSUKI",         "nameJa": "皐月賞",        "was": "사츠키쇼",            "nameKo": "사츠키상",                  "evidence": "verified" },
+    { "id": "SHUKA",           "nameJa": "秋華賞",        "was": "슈카쇼",              "nameKo": "슈카상",                    "evidence": "verified" },
+    { "id": "KIKUKA",          "nameJa": "菊花賞",        "was": "기쿠카쇼",            "nameKo": "킷카상",                    "evidence": "verified" },
+    { "id": "TENNO_SPRING",    "nameJa": "天皇賞（春）",   "was": "덴노쇼(봄)",          "nameKo": "텐노상(봄)",                "evidence": "verified" },
+    { "id": "TENNO_AUTUMN",    "nameJa": "天皇賞（秋）",   "was": "덴노쇼(가을)",        "nameKo": "텐노상(가을)",              "evidence": "verified" },
+    { "id": "TAKARAZUKA",      "nameJa": "宝塚記念",      "was": "다카라즈카기념",       "nameKo": "타카라즈카 기념",            "evidence": "verified" },
+    { "id": "ARIMA",           "nameJa": "有馬記念",      "was": "아리마기념",          "nameKo": "아리마 기념",                "evidence": "verified" },
+    { "id": "TOKYO_DAISHOTEN", "nameJa": "東京大賞典",    "was": "도쿄 다이쇼텐",        "nameKo": "도쿄 대상전",                "evidence": "verified" },
+    { "id": "HANSHIN_JF",      "nameJa": "阪神ジュベナイルF", "was": "한신 주버나일 필리즈", "nameKo": "한신 쥬버나일 필리스",      "evidence": "verified" },
+    { "id": "ASAHI_FS",        "nameJa": "朝日杯FS",      "was": "아사히배 퓨처리티",    "nameKo": "아사히배 퓨처러티 스테이크스", "evidence": "verified" },
+    { "id": "ZENNIHON_2YO",    "nameJa": "全日本2歳優駿",  "was": "전일본 2세 유슌",      "nameKo": "전 일본 2세 우준",           "evidence": "verified" },
+
+    { "id": "TAKAMATSUNOMIYA", "nameJa": "高松宮記念",    "was": "다카마츠노미야기념",    "nameKo": "타카마츠노미야 기념",         "evidence": "pattern" },
+    { "id": "YASUDA",          "nameJa": "安田記念",      "was": "야스다기념",          "nameKo": "야스다 기념",                "evidence": "pattern" },
+    { "id": "KAWASAKI_KINEN",  "nameJa": "川崎記念",      "was": "가와사키기념",        "nameKo": "카와사키 기념",              "evidence": "pattern" },
+    { "id": "TEIO_SHO",        "nameJa": "帝王賞",        "was": "데이오쇼",            "nameKo": "제왕상",                    "evidence": "pattern" },
+    { "id": "HONG_KONG_CUP",   "nameJa": "香港カップ",     "was": "홍콩컵",             "nameKo": "홍콩 컵",                   "evidence": "verified" }
+  ]
+}

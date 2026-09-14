@@ -10,8 +10,13 @@ button { line-height: 1.35; }
   word-break: keep-all; overflow-wrap: anywhere; text-align: left; letter-spacing: 0;
 }
 .effect-copy { display: block; color: #d5e4ed; }
-.effect-sentence { display: block; }
-.effect-sentence + .effect-sentence { margin-top: .45em; }
+/*
+ * Sentences stay inline. Breaking a line at every full stop turned a two-clause
+ * description into a stack of fragments; the wrapper is kept only so a very long
+ * sentence can break between sentences rather than mid-clause.
+ */
+.effect-sentence { display: inline; }
+.effect-sentence + .effect-sentence { margin-left: .15em; }
 .description-context { display: block; margin-bottom: 8px; color: #9fc0d0; font-size: 12px; }
 .detail-heading > div, .detail-heading h3, .detail-item-link > span { min-width: 0; }
 .detail-heading h3 { line-height: 1.4; overflow-wrap: anywhere; }

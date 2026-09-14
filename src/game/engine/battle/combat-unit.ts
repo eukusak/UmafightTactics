@@ -1,6 +1,6 @@
 /** A unit as it exists inside one battle, plus all stat/effect bookkeeping. */
 import {
-  ATTACK_SPEED_CAP, DEFAULT_ABILITY_POWER, STAR_STAT_MULT, starSkillMultiplier,
+  ATTACK_SPEED_CAP, DEFAULT_ABILITY_POWER, starSkillMultiplier, starStatMultiplier,
 } from '../constants';
 import { getItem } from '../items/item-defs';
 import { getUnitDef } from '../roster';
@@ -40,6 +40,12 @@ export type CombatUnit = {
   cost: 1 | 2 | 3 | 4 | 5;
   star: 1 | 2 | 3;
   traits: TraitId[];
+  /**
+   * The traits on the unit's own roster entry, before emblems and augments.
+   * Synergy counting uses `traits`; the 각질 curve needs to tell a style the
+   * unit was born with from one an item handed it.
+   */
+  nativeTraits: TraitId[];
   items: string[];
   skill: SkillDef;
   /** Cell the unit occupies right now. */
@@ -111,7 +117,7 @@ export const emptyAura = (): AuraTotals => ({
 /** Builds the pre-combat stat block from unit def + star + items. */
 export function buildBaseStats(unitDefId: string, star: 1 | 2 | 3, items: string[]): BattleStats {
   const def = getUnitDef(unitDefId);
-  const starMul = STAR_STAT_MULT[star];
+  const starMul = starStatMultiplier(star, def.cost);
 
   const stats: BattleStats = {
     hp: def.hp * starMul,
@@ -163,6 +169,7 @@ export function makeCombatUnit(params: {
 }): CombatUnit {
   const def = getUnitDef(params.unitDefId);
   const base = buildBaseStats(params.unitDefId, params.star, params.items);
+  const nativeTraits = [...def.traits];
   const traits = [...def.traits];
   for (const t of params.extraTraits) if (!traits.includes(t)) traits.push(t);
   // Emblem items grant their trait to the holder.
@@ -181,6 +188,7 @@ export function makeCombatUnit(params: {
     cost: def.cost,
     star: params.star,
     traits,
+    nativeTraits,
     items: params.items,
     skill: def.skill,
     cell: params.cell,

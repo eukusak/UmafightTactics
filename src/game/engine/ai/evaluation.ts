@@ -2,9 +2,42 @@ import { effectUtility, unitAugmentValue, kitProfile } from './knowledge';
 /** Public board evaluation shared by formation, shopping and item planning. */
 import { getUnitDef, getUnitTraits } from '../roster';
 import { getItem } from '../items/item-defs';
+import { costStatWeight, starStatMultiplier } from '../constants';
 import { activeTierIndex, getTrait } from '../traits/trait-defs';
+import { findRacePlanNode } from '../race-plan/defs';
+import type { ItemDef } from '../types';
 import type { PlayerState, UnitInstance } from '../state';
 import type { TraitId } from '../types';
+
+/**
+ * How much this item is worth *because of the race plan*.
+ *
+ * Two things the generic item scorer cannot see: the GⅠ entry is the unit the
+ * whole plan was chosen for, so gear belongs on it; and a plan that wants, say,
+ * penetration rates a penetration item above its raw stat line.
+ */
+function racePlanItemBonus(unit: UnitInstance, item: ItemDef, player?: PlayerState): number {
+  const rp = player?.racePlan;
+  if (!rp?.entryUnitDefId || unit.unitDefId !== rp.entryUnitDefId) return 0;
+  let bonus = 4;
+  const axes = new Set(
+    [rp.planId, rp.evolutionId, rp.finishingMoveId]
+      .flatMap((id) => (id ? findRacePlanNode(id)?.fit.itemAxes ?? [] : [])),
+  );
+  if (axes.size) {
+    const tags = new Set(item.tags);
+    const wants = (axis: string): boolean => axes.has(axis as 'ad');
+    if (wants('ad') && (item.stats.attackDamage || item.pctStats?.attackDamage)) bonus += 2;
+    if (wants('ap') && (item.stats.abilityPower || item.pctStats?.abilityPower)) bonus += 2;
+    if (wants('attackSpeed') && (item.stats.attackSpeed || item.pctStats?.attackSpeed)) bonus += 2;
+    if (wants('crit') && item.stats.critChance) bonus += 2;
+    if (wants('mana') && tags.has('MANA')) bonus += 2;
+    if (wants('tank') && tags.has('TANK')) bonus += 2;
+    if (wants('penetration') && item.effects.some((e) => e.kind === 'SUNDER_ARMOR_PCT' || e.kind === 'SHRED_MR_PCT')) bonus += 2;
+    if (wants('sustain') && item.effects.some((e) => e.kind === 'OMNIVAMP' || e.kind.startsWith('HEAL'))) bonus += 2;
+  }
+  return bonus;
+}
 const traitsCache = new WeakMap<UnitInstance, { key: string; traits: TraitId[] }>();
 export function unitTraits(player: PlayerState, unit: UnitInstance): TraitId[] {
   const bonus = player.bonusTraits.filter(b => b.instanceId === unit.instanceId).map(b => b.trait);
@@ -21,7 +54,15 @@ export function lineupTraits(player: PlayerState, units: UnitInstance[]): Map<Tr
 }
 export function unitPower(unit: UnitInstance): number {
   const d = getUnitDef(unit.unitDefId);
-  return (1.6 + d.uftRating + d.cost * .38) * [0, 1, 1.8, 3.24][unit.star] + unit.items.reduce((n, id) => n + (getItem(id).isComponent ? .15 : .9), 0);
+  // Both factors read the real curves rather than copies of them. A linear
+  // `cost * .38` term said a one-star four-cost was worth less than a two-star
+  // two-cost when their stat lines are now equal, and a hardcoded star table
+  // said a second star on a four-cost was worth 1.8x when it is worth 1.28x.
+  // An AI wrong on either chases the wrong upgrades all game.
+  // The 0.38 stays a constant rather than scaling with cost: replacing the old
+  // `cost * .38` outright also shaved 1-costs, which was never the intent.
+  return (1.6 + d.uftRating + .38) * costStatWeight(d.cost) * starStatMultiplier(unit.star, d.cost)
+    + unit.items.reduce((n, id) => n + (getItem(id).isComponent ? .15 : .9), 0);
 }
 export function lineupScore(player: PlayerState, units: UnitInstance[]): number {
   let score = units.reduce((n, u) => n + unitPower(u), 0);
@@ -63,6 +104,7 @@ export function itemFit(unit: UnitInstance, itemId: string, player?: PlayerState
   if (d.role === 'AP_CARRY') score += (item.stats.abilityPower ?? 0) / 15;
   if (d.role === 'TANK') score += (item.stats.hp ?? 0) / 150 + ((item.stats.armor ?? 0) + (item.stats.magicResist ?? 0)) / 20;
   if (d.role === 'AD_CARRY') score += (item.pctStats?.attackDamage ?? 0) * 8 + (item.stats.attackDamage ?? 0) / 10;
+  score += racePlanItemBonus(unit, item, player);
   const kit=kitProfile(unit);
   const existing=unit.items.flatMap(id=>getItem(id).effects);
   for(const e of item.effects) {

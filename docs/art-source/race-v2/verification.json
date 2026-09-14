@@ -1,0 +1,630 @@
+{
+  "files": 89,
+  "frames": 447,
+  "totalBytes": 28666213,
+  "assets": [
+    {
+      "key": "exposed_marker_warn",
+      "frames": 10,
+      "bytes": 100758,
+      "maxAlpha": 255,
+      "uniqueFrames": 10
+    },
+    {
+      "key": "exposed_marker_target",
+      "frames": 10,
+      "bytes": 70943,
+      "maxAlpha": 255,
+      "uniqueFrames": 10
+    },
+    {
+      "key": "dive_trail_nige",
+      "frames": 10,
+      "bytes": 320916,
+      "maxAlpha": 255,
+      "uniqueFrames": 10
+    },
+    {
+      "key": "style_aura_nige_up",
+      "frames": 10,
+      "bytes": 65258,
+      "maxAlpha": 255,
+      "uniqueFrames": 10
+    },
+    {
+      "key": "style_aura_nige_down",
+      "frames": 10,
+      "bytes": 50480,
+      "maxAlpha": 115,
+      "uniqueFrames": 10
+    },
+    {
+      "key": "dive_trail_senko",
+      "frames": 10,
+      "bytes": 410225,
+      "maxAlpha": 255,
+      "uniqueFrames": 10
+    },
+    {
+      "key": "style_aura_senko_up",
+      "frames": 10,
+      "bytes": 91770,
+      "maxAlpha": 255,
+      "uniqueFrames": 10
+    },
+    {
+      "key": "style_aura_senko_down",
+      "frames": 10,
+      "bytes": 70500,
+      "maxAlpha": 115,
+      "uniqueFrames": 10
+    },
+    {
+      "key": "dive_trail_sashi",
+      "frames": 10,
+      "bytes": 378441,
+      "maxAlpha": 255,
+      "uniqueFrames": 10
+    },
+    {
+      "key": "style_aura_sashi_up",
+      "frames": 10,
+      "bytes": 63359,
+      "maxAlpha": 255,
+      "uniqueFrames": 10
+    },
+    {
+      "key": "style_aura_sashi_down",
+      "frames": 10,
+      "bytes": 74565,
+      "maxAlpha": 115,
+      "uniqueFrames": 10
+    },
+    {
+      "key": "dive_trail_oikomi",
+      "frames": 10,
+      "bytes": 415819,
+      "maxAlpha": 255,
+      "uniqueFrames": 10
+    },
+    {
+      "key": "style_aura_oikomi_up",
+      "frames": 10,
+      "bytes": 74907,
+      "maxAlpha": 255,
+      "uniqueFrames": 10
+    },
+    {
+      "key": "style_aura_oikomi_down",
+      "frames": 10,
+      "bytes": 68557,
+      "maxAlpha": 115,
+      "uniqueFrames": 10
+    },
+    {
+      "key": "dive_impact",
+      "frames": 12,
+      "bytes": 120973,
+      "maxAlpha": 255,
+      "uniqueFrames": 12
+    },
+    {
+      "key": "hit_physical_t1",
+      "frames": 10,
+      "bytes": 340136,
+      "maxAlpha": 255,
+      "uniqueFrames": 10
+    },
+    {
+      "key": "hit_physical_t2",
+      "frames": 10,
+      "bytes": 360886,
+      "maxAlpha": 255,
+      "uniqueFrames": 10
+    },
+    {
+      "key": "hit_physical_t3",
+      "frames": 10,
+      "bytes": 439354,
+      "maxAlpha": 255,
+      "uniqueFrames": 10
+    },
+    {
+      "key": "dive_execute",
+      "frames": 14,
+      "bytes": 1162924,
+      "maxAlpha": 255,
+      "uniqueFrames": 14
+    },
+    {
+      "key": "style_signature_nige",
+      "frames": 12,
+      "bytes": 983799,
+      "maxAlpha": 255,
+      "uniqueFrames": 12
+    },
+    {
+      "key": "style_signature_senko",
+      "frames": 12,
+      "bytes": 593106,
+      "maxAlpha": 252,
+      "uniqueFrames": 12
+    },
+    {
+      "key": "style_signature_sashi",
+      "frames": 12,
+      "bytes": 781214,
+      "maxAlpha": 255,
+      "uniqueFrames": 12
+    },
+    {
+      "key": "style_signature_oikomi",
+      "frames": 12,
+      "bytes": 636119,
+      "maxAlpha": 253,
+      "uniqueFrames": 12
+    },
+    {
+      "key": "vfx_mana_fill",
+      "frames": 10,
+      "bytes": 457250,
+      "maxAlpha": 255,
+      "uniqueFrames": 10
+    },
+    {
+      "key": "vfx_recast",
+      "frames": 10,
+      "bytes": 458738,
+      "maxAlpha": 253,
+      "uniqueFrames": 10
+    },
+    {
+      "key": "vfx_convert_stat",
+      "frames": 10,
+      "bytes": 624563,
+      "maxAlpha": 255,
+      "uniqueFrames": 10
+    },
+    {
+      "key": "phase_banner_start",
+      "frames": 12,
+      "bytes": 2023593,
+      "maxAlpha": 255,
+      "uniqueFrames": 11
+    },
+    {
+      "key": "phase_banner_positioning",
+      "frames": 12,
+      "bytes": 1672863,
+      "maxAlpha": 255,
+      "uniqueFrames": 11
+    },
+    {
+      "key": "phase_banner_late",
+      "frames": 12,
+      "bytes": 1962620,
+      "maxAlpha": 255,
+      "uniqueFrames": 11
+    },
+    {
+      "key": "phase_banner_last3f",
+      "frames": 12,
+      "bytes": 2202379,
+      "maxAlpha": 253,
+      "uniqueFrames": 11
+    },
+    {
+      "key": "phase_banner_overtime",
+      "frames": 12,
+      "bytes": 2020342,
+      "maxAlpha": 255,
+      "uniqueFrames": 11
+    },
+    {
+      "key": "cond_going_firm",
+      "frames": 1,
+      "bytes": 2703,
+      "maxAlpha": 255,
+      "uniqueFrames": 1
+    },
+    {
+      "key": "cond_going_good",
+      "frames": 1,
+      "bytes": 2478,
+      "maxAlpha": 255,
+      "uniqueFrames": 1
+    },
+    {
+      "key": "cond_going_yielding",
+      "frames": 1,
+      "bytes": 2404,
+      "maxAlpha": 255,
+      "uniqueFrames": 1
+    },
+    {
+      "key": "cond_going_soft",
+      "frames": 1,
+      "bytes": 2683,
+      "maxAlpha": 255,
+      "uniqueFrames": 1
+    },
+    {
+      "key": "cond_pace_high",
+      "frames": 1,
+      "bytes": 2902,
+      "maxAlpha": 255,
+      "uniqueFrames": 1
+    },
+    {
+      "key": "cond_pace_middle",
+      "frames": 1,
+      "bytes": 3051,
+      "maxAlpha": 255,
+      "uniqueFrames": 1
+    },
+    {
+      "key": "cond_pace_slow",
+      "frames": 1,
+      "bytes": 2244,
+      "maxAlpha": 255,
+      "uniqueFrames": 1
+    },
+    {
+      "key": "cond_weather_clear",
+      "frames": 1,
+      "bytes": 1785,
+      "maxAlpha": 255,
+      "uniqueFrames": 1
+    },
+    {
+      "key": "cond_weather_cloudy",
+      "frames": 1,
+      "bytes": 2282,
+      "maxAlpha": 255,
+      "uniqueFrames": 1
+    },
+    {
+      "key": "cond_weather_rain",
+      "frames": 1,
+      "bytes": 1848,
+      "maxAlpha": 255,
+      "uniqueFrames": 1
+    },
+    {
+      "key": "cond_weather_snow",
+      "frames": 1,
+      "bytes": 2391,
+      "maxAlpha": 255,
+      "uniqueFrames": 1
+    },
+    {
+      "key": "cond_weather_gale",
+      "frames": 1,
+      "bytes": 2578,
+      "maxAlpha": 255,
+      "uniqueFrames": 1
+    },
+    {
+      "key": "cond_clause_large_field",
+      "frames": 1,
+      "bytes": 3798,
+      "maxAlpha": 255,
+      "uniqueFrames": 1
+    },
+    {
+      "key": "cond_clause_inner_rail",
+      "frames": 1,
+      "bytes": 1986,
+      "maxAlpha": 255,
+      "uniqueFrames": 1
+    },
+    {
+      "key": "cond_clause_outer_lane",
+      "frames": 1,
+      "bytes": 3033,
+      "maxAlpha": 255,
+      "uniqueFrames": 1
+    },
+    {
+      "key": "cond_clause_long_straight",
+      "frames": 1,
+      "bytes": 2412,
+      "maxAlpha": 255,
+      "uniqueFrames": 1
+    },
+    {
+      "key": "cond_clause_false_start",
+      "frames": 1,
+      "bytes": 2281,
+      "maxAlpha": 255,
+      "uniqueFrames": 1
+    },
+    {
+      "key": "cond_clause_head_on_head",
+      "frames": 1,
+      "bytes": 3246,
+      "maxAlpha": 255,
+      "uniqueFrames": 1
+    },
+    {
+      "key": "cond_clause_tailwind_home",
+      "frames": 1,
+      "bytes": 1969,
+      "maxAlpha": 255,
+      "uniqueFrames": 1
+    },
+    {
+      "key": "cond_clause_tight_corner",
+      "frames": 1,
+      "bytes": 1510,
+      "maxAlpha": 255,
+      "uniqueFrames": 1
+    },
+    {
+      "key": "weather_clear",
+      "frames": 12,
+      "bytes": 1859471,
+      "maxAlpha": 55,
+      "uniqueFrames": 12
+    },
+    {
+      "key": "weather_cloudy",
+      "frames": 12,
+      "bytes": 1246226,
+      "maxAlpha": 58,
+      "uniqueFrames": 12
+    },
+    {
+      "key": "weather_rain",
+      "frames": 12,
+      "bytes": 1718333,
+      "maxAlpha": 54,
+      "uniqueFrames": 12
+    },
+    {
+      "key": "weather_snow",
+      "frames": 12,
+      "bytes": 1718106,
+      "maxAlpha": 56,
+      "uniqueFrames": 12
+    },
+    {
+      "key": "weather_gale",
+      "frames": 12,
+      "bytes": 1387856,
+      "maxAlpha": 56,
+      "uniqueFrames": 12
+    },
+    {
+      "key": "card_frame_pace_read",
+      "frames": 1,
+      "bytes": 88961,
+      "maxAlpha": 255,
+      "uniqueFrames": 1
+    },
+    {
+      "key": "card_frame_gamble",
+      "frames": 1,
+      "bytes": 72356,
+      "maxAlpha": 255,
+      "uniqueFrames": 1
+    },
+    {
+      "key": "card_frame_encore",
+      "frames": 1,
+      "bytes": 83491,
+      "maxAlpha": 255,
+      "uniqueFrames": 1
+    },
+    {
+      "key": "card_frame_conversion",
+      "frames": 1,
+      "bytes": 91080,
+      "maxAlpha": 255,
+      "uniqueFrames": 1
+    },
+    {
+      "key": "g1_crest_sprint",
+      "frames": 1,
+      "bytes": 70084,
+      "maxAlpha": 255,
+      "uniqueFrames": 1
+    },
+    {
+      "key": "g1_crest_long",
+      "frames": 1,
+      "bytes": 57860,
+      "maxAlpha": 255,
+      "uniqueFrames": 1
+    },
+    {
+      "key": "g1_crest_dirt",
+      "frames": 1,
+      "bytes": 69979,
+      "maxAlpha": 255,
+      "uniqueFrames": 1
+    },
+    {
+      "key": "g1_crest_short_straight",
+      "frames": 1,
+      "bytes": 64358,
+      "maxAlpha": 255,
+      "uniqueFrames": 1
+    },
+    {
+      "key": "g1_crest_long_straight",
+      "frames": 1,
+      "bytes": 64879,
+      "maxAlpha": 255,
+      "uniqueFrames": 1
+    },
+    {
+      "key": "g1_crest_classic",
+      "frames": 1,
+      "bytes": 69258,
+      "maxAlpha": 255,
+      "uniqueFrames": 1
+    },
+    {
+      "key": "g1_crest_arima",
+      "frames": 1,
+      "bytes": 70255,
+      "maxAlpha": 255,
+      "uniqueFrames": 1
+    },
+    {
+      "key": "g1_crest_arc",
+      "frames": 1,
+      "bytes": 70415,
+      "maxAlpha": 255,
+      "uniqueFrames": 1
+    },
+    {
+      "key": "g1_crest_takarazuka",
+      "frames": 1,
+      "bytes": 64458,
+      "maxAlpha": 255,
+      "uniqueFrames": 1
+    },
+    {
+      "key": "g1_crest_tenno_spring",
+      "frames": 1,
+      "bytes": 68643,
+      "maxAlpha": 255,
+      "uniqueFrames": 1
+    },
+    {
+      "key": "g1_crest_derby",
+      "frames": 1,
+      "bytes": 69737,
+      "maxAlpha": 255,
+      "uniqueFrames": 1
+    },
+    {
+      "key": "g1_crest_japan_cup",
+      "frames": 1,
+      "bytes": 71529,
+      "maxAlpha": 255,
+      "uniqueFrames": 1
+    },
+    {
+      "key": "g1_crest_dubai_wc",
+      "frames": 1,
+      "bytes": 68986,
+      "maxAlpha": 255,
+      "uniqueFrames": 1
+    },
+    {
+      "key": "g1_crest_melbourne",
+      "frames": 1,
+      "bytes": 68135,
+      "maxAlpha": 255,
+      "uniqueFrames": 1
+    },
+    {
+      "key": "g1_crest_grand_jump",
+      "frames": 1,
+      "bytes": 64743,
+      "maxAlpha": 255,
+      "uniqueFrames": 1
+    },
+    {
+      "key": "g1_crest_daishogai",
+      "frames": 1,
+      "bytes": 67758,
+      "maxAlpha": 255,
+      "uniqueFrames": 1
+    },
+    {
+      "key": "course_longchamp",
+      "frames": 1,
+      "bytes": 1139,
+      "maxAlpha": 255,
+      "uniqueFrames": 1
+    },
+    {
+      "key": "course_ascot",
+      "frames": 1,
+      "bytes": 1548,
+      "maxAlpha": 255,
+      "uniqueFrames": 1
+    },
+    {
+      "key": "course_meydan",
+      "frames": 1,
+      "bytes": 1530,
+      "maxAlpha": 255,
+      "uniqueFrames": 1
+    },
+    {
+      "key": "course_santa_anita",
+      "frames": 1,
+      "bytes": 1943,
+      "maxAlpha": 255,
+      "uniqueFrames": 1
+    },
+    {
+      "key": "course_sha_tin",
+      "frames": 1,
+      "bytes": 2115,
+      "maxAlpha": 255,
+      "uniqueFrames": 1
+    },
+    {
+      "key": "course_flemington",
+      "frames": 1,
+      "bytes": 1823,
+      "maxAlpha": 255,
+      "uniqueFrames": 1
+    },
+    {
+      "key": "course_seoul",
+      "frames": 1,
+      "bytes": 1869,
+      "maxAlpha": 255,
+      "uniqueFrames": 1
+    },
+    {
+      "key": "hud_track_bar",
+      "frames": 1,
+      "bytes": 60237,
+      "maxAlpha": 255,
+      "uniqueFrames": 1
+    },
+    {
+      "key": "hud_track_fill",
+      "frames": 1,
+      "bytes": 81054,
+      "maxAlpha": 255,
+      "uniqueFrames": 1
+    },
+    {
+      "key": "hud_marker_self",
+      "frames": 1,
+      "bytes": 3769,
+      "maxAlpha": 255,
+      "uniqueFrames": 1
+    },
+    {
+      "key": "hud_marker_enemy",
+      "frames": 1,
+      "bytes": 3680,
+      "maxAlpha": 255,
+      "uniqueFrames": 1
+    },
+    {
+      "key": "hud_gate",
+      "frames": 1,
+      "bytes": 7135,
+      "maxAlpha": 255,
+      "uniqueFrames": 1
+    },
+    {
+      "key": "hud_finish",
+      "frames": 1,
+      "bytes": 4473,
+      "maxAlpha": 255,
+      "uniqueFrames": 1
+    }
+  ]
+}

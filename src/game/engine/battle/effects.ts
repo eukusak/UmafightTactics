@@ -17,11 +17,18 @@ export type EffectContext = {
   shieldCreated?: (source: CombatUnit, target: CombatUnit, amount: number) => void;
   now: number;
   overtime: boolean;
+  /** Race Plan phase the fight has reached; see race-plan/race-phases. */
+  racePhase?: import('../race-plan/types').RaceCombatPhase;
+  /** How far the race has run, 0..1. Feeds `scaleBy: 'RACE_PROGRESS'`. */
+  raceProgress?: number;
+  /** Releases a unit's own skill again, free. Depth-guarded by the engine. */
+  recast?: (unit: CombatUnit) => void;
   units: CombatUnit[];
   /** Applies damage through the full mitigation pipeline. */
   dealDamage: (source: CombatUnit, target: CombatUnit, amount: number, type: EffectDef['damageType'], isSkill: boolean) => number;
   applyStatus: (source: CombatUnit, target: CombatUnit, effect: EffectDef) => void;
   /** Moves a unit toward a hex, respecting occupancy. */
+  visual?: (unit: CombatUnit, key: string) => void;
   dash: (unit: CombatUnit, target: CombatUnit, maxDistance: number) => void;
   summon: (owner: CombatUnit, power: number, duration: number) => void;
 };
@@ -170,6 +177,30 @@ export function triggerHolds(
       ).length;
       return n >= t;
     }
+    // Race Plan. The phase is decided by race progress, not the clock, so a
+    // ten-second stomp still passes through LATE and LAST_3F.
+    case 'ON_RACE_PHASE': {
+      if (event !== 'RACE_PHASE' || ctx.racePhase !== trigger.phase) return false;
+      const fraction = unit.hp / Math.max(1, unit.maxHp);
+      if (trigger.hpBelow !== undefined && fraction >= trigger.hpBelow) return false;
+      if (trigger.hpAbove !== undefined && fraction < trigger.hpAbove) return false;
+      return true;
+    }
+    /**
+     * Holds for as long as the race is inside the phase, so the curve a style
+     * runs can simply switch itself over at each call of the race.
+     */
+    case 'IN_RACE_PHASE': {
+      if (event !== 'PASSIVE' && event !== 'RECOMPUTE') return false;
+      const here = ctx.racePhase ?? 'START';
+      const wanted = trigger.phases ?? (trigger.phase ? [trigger.phase] : []);
+      if (wanted.length && !wanted.includes(here)) return false;
+      const fraction = unit.hp / Math.max(1, unit.maxHp);
+      if (trigger.hpBelow !== undefined && fraction >= trigger.hpBelow) return false;
+      if (trigger.hpAbove !== undefined && fraction < trigger.hpAbove) return false;
+      return true;
+    }
+    case 'ON_TARGET_CHANGED': return event === 'ON_TARGET_CHANGED';
     case 'NO_ADJACENT_ALLIES': {
       const keys = new Set(neighbours(unit.cell).map(hexKey));
       return !ctx.units.some(
@@ -184,7 +215,8 @@ export function triggerHolds(
 export type TriggerEvent =
   | 'ON_BASIC_HIT_TAKEN' | 'ON_SKILL_HIT' | 'ON_CC_APPLIED' | 'ON_SUPPORT_SKILL'
   | 'PASSIVE' | 'RECOMPUTE' | 'COMBAT_START' | 'ON_ATTACK' | 'ON_HIT_TAKEN' | 'ON_CAST'
-  | 'ON_KILL' | 'ON_ASSIST' | 'ON_DEATH' | 'TICK';
+  | 'ON_KILL' | 'ON_ASSIST' | 'ON_DEATH' | 'TICK'
+  | 'RACE_PHASE' | 'ON_TARGET_CHANGED';
 
 /**
  * Aura-shaped effects are recomputed from scratch each tick rather than applied
@@ -197,9 +229,22 @@ const AURA_KINDS = new Set([
   'EXECUTE_THRESHOLD', 'ATTACK_SPEED_CAP_ADD', 'SKILLS_CAN_CRIT',
 ]);
 
+/**
+ * Gates that stay live conditions rather than firing once.
+ *
+ * An aura under one of these is re-evaluated every tick, so it switches itself
+ * on and off; anything else is applied when its event fires and then held.
+ * The engine's recompute pass reads the same set, so the two cannot drift.
+ */
+export const CONTINUOUS_GATES: ReadonlySet<TriggerDef['when']> = new Set([
+  'ALWAYS', 'HP_BELOW', 'HP_ABOVE', 'TARGET_HP_BELOW', 'AFTER_SECONDS',
+  'IN_FRONT_ROWS', 'IN_BACK_ROWS', 'ADJACENT_ALLIES_AT_LEAST', 'NO_ADJACENT_ALLIES',
+  'IN_RACE_PHASE',
+]);
+
 /** Gates that remain conditions throughout an aura's lifetime. */
-export const isContinuousAura = (effect: EffectDef): boolean => !effect.trigger ||
-  ['ALWAYS', 'HP_BELOW', 'HP_ABOVE', 'TARGET_HP_BELOW', 'AFTER_SECONDS', 'IN_FRONT_ROWS', 'IN_BACK_ROWS', 'ADJACENT_ALLIES_AT_LEAST', 'NO_ADJACENT_ALLIES'].includes(effect.trigger.when);
+export const isContinuousAura = (effect: EffectDef): boolean =>
+  !effect.trigger || CONTINUOUS_GATES.has(effect.trigger.when);
 
 export const isAuraKind = (kind: string): boolean => AURA_KINDS.has(kind);
 
@@ -247,6 +292,34 @@ export function procDamage(self: CombatUnit, target: CombatUnit, effect: EffectD
  * Applies one non-aura effect. Returns the number of units it touched, which
  * the caller uses only for logging.
  */
+/**
+ * The live quantity an effect's `scaleBy` multiplies its value by.
+ *
+ * Counts come back as whole units and the `_PCT` sources as 0..1, so a card can
+ * say "남은 상대 한 명마다" or "잃은 체력만큼" without a bespoke effect kind.
+ * `scaleCap` bounds the result: a full wipe must not hand out a silly number.
+ */
+export function scaleFactor(ctx: EffectContext, self: CombatUnit, effect: EffectDef): number {
+  if (!effect.scaleBy) return 1;
+  const live = (team: boolean): number =>
+    ctx.units.filter((u) => (u.team === self.team) === team && u.alive && !u.id.includes('~summon')).length;
+  const dead = (team: boolean): number =>
+    ctx.units.filter((u) => (u.team === self.team) === team && !u.alive && !u.id.includes('~summon')).length;
+  let n: number;
+  switch (effect.scaleBy) {
+    case 'ENEMIES_ALIVE': n = live(false); break;
+    case 'ALLIES_ALIVE': n = live(true); break;
+    case 'ENEMIES_DEAD': n = dead(false); break;
+    case 'ALLIES_DEAD': n = dead(true); break;
+    case 'SELF_MISSING_HP_PCT': n = 1 - self.hp / Math.max(1, self.maxHp); break;
+    case 'SELF_CURRENT_HP_PCT': n = self.hp / Math.max(1, self.maxHp); break;
+    case 'RACE_PROGRESS': n = ctx.raceProgress ?? 0; break;
+    case 'SECONDS_ELAPSED': n = ctx.now; break;
+    default: n = 1;
+  }
+  return Math.max(0, Math.min(effect.scaleCap ?? Number.POSITIVE_INFINITY, n));
+}
+
 export function applyEffect(
   ctx: EffectContext, self: CombatUnit, effect: EffectDef, index: number, opts: ApplyOptions,
 ): number {
@@ -257,7 +330,10 @@ export function applyEffect(
   }
 
   const power = opts.power;
-  const value = (effect.value ?? 0) * (effect.kind === 'DAMAGE' || effect.kind === 'HEAL' || effect.kind === 'SHIELD_FLAT' ? power : 1);
+  const scale = scaleFactor(ctx, self, effect);
+  if (effect.scaleBy && scale <= 0) return 0;
+  const value = (effect.value ?? 0) * scale
+    * (effect.kind === 'DAMAGE' || effect.kind === 'HEAL' || effect.kind === 'SHIELD_FLAT' ? power : 1);
   const healScale = ctx.overtime ? OVERTIME_HEAL_MULT : 1;
   const targets = (opts.targets ?? resolveEffectTargets(ctx, self, effect, opts.currentTarget))
     .filter(t => !effect.excludeSelf || t.id !== self.id);
@@ -268,7 +344,8 @@ export function applyEffect(
   if (isAuraKind(effect.kind) && effect.kind !== 'EXECUTE_THRESHOLD') {
     for (const t of effect.target ? targets : [self]) {
       // The event already fired. Keep HP/target gates, consume event gates.
-      const activeEffect = isContinuousAura(effect) ? effect : { ...effect, trigger: undefined };
+      const scaled = effect.scaleBy ? { ...effect, value, scaleBy: undefined } : effect;
+      const activeEffect = isContinuousAura(scaled) ? scaled : { ...scaled, trigger: undefined };
       const previous = t.timedEffects.find(e => e.key === onceKey && e.expiresAt > ctx.now);
       if (previous && triggerHolds(t, previous.effect.trigger, ctx, 'RECOMPUTE', opts.currentTarget)) {
         accumulateAura(t, { ...previous.effect, value: -(previous.effect.value ?? 0) });
@@ -288,6 +365,42 @@ export function applyEffect(
     case 'PROC_DAMAGE': {
       for (const t of targets) ctx.dealDamage(self, t, procDamage(self, t, effect, ctx.now), effect.damageType ?? 'PHYSICAL', false);
       return targets.length;
+    }
+    /**
+     * Refills mana so the very next tick casts. `value` is a fraction of max;
+     * the default is the whole bar. This is what a card means by "숨을 돌린다".
+     */
+    case 'MANA_FILL': {
+      for (const t of recipients) {
+        ctx.visual?.(t, 'vfx_mana_fill');
+        t.mana = Math.min(stat(t, 'maxMana', ctx.now), stat(t, 'maxMana', ctx.now) * (effect.value ?? 1));
+        t.manaLockUntil = Math.min(t.manaLockUntil, ctx.now);
+      }
+      return recipients.length;
+    }
+    /** Releases the holder's skill again without paying for it. */
+    case 'RECAST_SKILL': {
+      if (!ctx.recast) return 0;
+      for (const t of recipients) { ctx.recast(t); ctx.visual?.(t, 'vfx_recast'); }
+      return recipients.length;
+    }
+    /**
+     * Trades one stat for another for a while: "남은 지구력을 힘으로 바꿉니다".
+     * `tag` names the source stat, `stat` the destination, `value` the share moved.
+     */
+    case 'CONVERT_STAT': {
+      const from = effect.tag as keyof BattleStats | undefined;
+      const to = effect.stat;
+      if (!from || !to) return 0;
+      const seconds = effect.duration || 999;
+      for (const t of recipients) {
+        const moved = stat(t, from, ctx.now) * value;
+        if (moved <= 0) continue;
+        ctx.visual?.(t, 'vfx_convert_stat');
+        addModifier(t, from, -moved, false, seconds, ctx.now, `${t.id}:${onceKey}:from`);
+        addModifier(t, to, moved * (effect.scaling?.cap ?? 1), false, seconds, ctx.now, `${t.id}:${onceKey}:to`);
+      }
+      return recipients.length;
     }
     case 'STAT_ADD':
     case 'STAT_MUL': {

@@ -1,6 +1,8 @@
 /** Round calendar (spec §19). */
-import { AUGMENT_ROUNDS, PREP_SECONDS } from '../constants';
+import { AUGMENT_ROUNDS, PREP_SECONDS, RACE_PLAN_ROUNDS, RACE_PLAN_SECONDS } from '../constants';
 import type { RoundKind } from '../state';
+
+export type RacePlanRoundKind = 'PLAN' | 'EVOLUTION' | 'ENTRY';
 
 export type RoundInfo = {
   stage: number;
@@ -9,6 +11,8 @@ export type RoundInfo = {
   label: string;
   prepSeconds: number;
   hasAugment: boolean;
+  /** Race Plan decision opening before this round, if any. */
+  racePlanKind: RacePlanRoundKind | null;
 };
 
 export function roundsInStage(stage: number): number {
@@ -36,17 +40,24 @@ export function hasAugmentBefore(stage: number, round: number): boolean {
   return AUGMENT_ROUNDS.some((a) => a.stage === stage && a.round === round);
 }
 
+export function racePlanKindBefore(stage: number, round: number): RacePlanRoundKind | null {
+  return RACE_PLAN_ROUNDS.find((r) => r.stage === stage && r.round === round)?.kind ?? null;
+}
+
 export function roundInfo(stage: number, round: number): RoundInfo {
   const kind = roundKind(stage, round);
   const hasAugment = hasAugmentBefore(stage, round);
+  const racePlanKind = racePlanKindBefore(stage, round);
   const prepSeconds = hasAugment
     ? PREP_SECONDS.AUGMENT
-    : kind === 'DRAFT'
-      ? PREP_SECONDS.DRAFT
-      : kind === 'PVE'
-        ? PREP_SECONDS.PVE
-        : PREP_SECONDS.PVP;
-  return { stage, round, kind, label: `${stage}-${round}`, prepSeconds, hasAugment };
+    : racePlanKind
+      ? (racePlanKind === 'ENTRY' ? RACE_PLAN_SECONDS.ENTRY : RACE_PLAN_SECONDS.PLAN)
+      : kind === 'DRAFT'
+        ? PREP_SECONDS.DRAFT
+        : kind === 'PVE'
+          ? PREP_SECONDS.PVE
+          : PREP_SECONDS.PVP;
+  return { stage, round, kind, label: `${stage}-${round}`, prepSeconds, hasAugment, racePlanKind };
 }
 
 export function nextRound(stage: number, round: number): { stage: number; round: number } {

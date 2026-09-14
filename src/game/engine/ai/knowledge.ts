@@ -68,6 +68,15 @@ function estimateEffect(unit:UnitInstance,e:EffectDef):number {
     case 'DASH':score=d.attackRange<=1?1:.3;break;
     case 'CLEANSE':score=1.2;break;
     case 'SUMMON':score=v/100;break;
+    // A free re-release is worth about as much as the unit's whole spell, so it
+    // is priced off the kit's spell share rather than as a flat bonus.
+    case 'RECAST_SKILL':score=3+k.spell*7;break;
+    // Filling the bar is one extra cast's worth of cadence, times how much this
+    // unit actually gets out of casting.
+    case 'MANA_FILL':score=(1.5+k.casts*2.5)*(v||1);break;
+    // A conversion only pays for the excess it hands back; below a cap of 1 it
+    // is a straight loss, and the AI should see that.
+    case 'CONVERT_STAT':score=v*((e.scaling?.cap??1)-1)*6;break;
     default:{const exhaustive:never=e.kind;return exhaustive;}
   }
   if((e.kind==='STAT_ADD'||e.kind==='STAT_MUL') && e.target && ['CURRENT_TARGET','ALL_ENEMIES','HIGHEST_AD_ENEMY','NEAREST_ENEMY','FARTHEST_ENEMY'].includes(e.target))score=-score;

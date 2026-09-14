@@ -12,9 +12,16 @@ export function BattleAudio():null {
     if(!running||!frames?.length){cursor.current={key:'',index:-1,time:0};return;}
     const end=frameAt(frames,time);
     if(cursor.current.key!==key||time<cursor.current.time){cursor.current={key,index:time>.25?end:-1,time};}
+    if (cursor.current.index === -1 && time <= .25 && frames[0].units.some(u => u.race)) playSound('race-gate');
     let played=0;
     for(let i=cursor.current.index+1;i<=end;i++) {
       const frame=frames[i];if(!frame||frame.t<time-.25)continue;
+      // Race phase cues take precedence over the per-tick hit budget.
+      const race = frame.events.filter(e => e.type === 'RACE_PHASE').at(-1);
+      if (race?.type === 'RACE_PHASE') {
+        if (race.phase === 'LATE') playSound('race-late');
+        else if (race.phase === 'LAST_3F') playSound('race-last3f');
+      }
       for(const e of frame.events) {
         if(played>=12)break;
         let sound:GameSound|undefined;

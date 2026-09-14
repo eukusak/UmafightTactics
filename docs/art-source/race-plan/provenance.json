@@ -1,0 +1,65 @@
+[
+  {
+    "asset": "boards/bg_race_plan_paper.png",
+    "sourceFile": "exec-96dfddf8-5ab1-4d2a-9e49-486d4baf0377.png",
+    "sourceSha256": "a814ea7a1d5a47319ebac8a77bdb6ca7d54202c15f133b2579b494f6eacd767a",
+    "sha256": "2c88cc44bf1109bed86b66c761720a595db6c49d0713d37a137bed8e9dff5d2a",
+    "tool": "builtin image_gen.imagegen",
+    "prompt": "Use case: stylized-concept. Asset type: production background texture for a dense horse-racing strategy selection UI, full-bleed landscape 1920x1080. Original premium Japanese horse-racing broadcast and race-program inspired UI asset. Modern professional sports data presentation. Modern racing-program paper, NOT antique parchment. Entire image warm off-white #f3f0e5, very subtle clean paper fibers with less than 3% contrast. Barely visible fine ruled grid only in upper left and upper right corners; center and lower 80 percent smooth unobtrusive empty paper. Flat straight-on seamless-looking plane, no photographed desk or folded sheet, no borders or drop shadows, no perspective. Palette warm ivory #f3f0e5, extremely faint warm gray rules, restrained brass #a98b4b only if barely perceptible. Clean grid hierarchy, low visual noise, readable behind dense game UI. No logos, no text, no letters, no numbers, no horse character, no jockey, no anime character, no real horse photo, no betting ticket, no watermark, no JRA branding, no Uma Musume branding, no TFT hextech frame. Flat vector-leaning shading, subtle grain only. Fully opaque.",
+    "processing": "1920x1080 cover resize"
+  },
+  {
+    "asset": "boards/bg_g1_entry_board.png",
+    "sourceFile": "exec-6a66c3ae-b4bc-4bc0-911a-8e13bb426789.png",
+    "sourceSha256": "14459f9371f96150cf9d66e0cbc31a92c1d99ad2c225b8f9bdbe1ddf5f946f4b",
+    "sha256": "3782b65b3e90889b61c6b00326bd0292793285cff09466456da34d81b2ca5e01",
+    "tool": "builtin image_gen.imagegen",
+    "prompt": "Use case: stylized-concept. Asset type: fully opaque production game UI background, landscape 1920x1080, full bleed straight-on flat data board texture. Original premium Japanese horse-racing broadcast and race-program inspired UI asset. Modern professional sports data presentation. A sophisticated empty race entry broadcast data board: deep green #10271f at top grading vertically to #1e4938 below, restrained very fine warm cream ruled lines dividing the backdrop into approximately 12 structural columns, sparse horizontal rules. Lines elegant and low contrast, lots of quiet dark surface for dense UI overlays. Faint satin board texture, no glare, no perspective, no surrounding stadium, no objects, no decorative frame. Palette: deep green #10271f / #1e4938, warm ivory #f3f0e5, restrained brass #a98b4b. Clean grid hierarchy, low visual noise, readable behind dense game UI. No logos, no text, no letters, no numbers, no horse character, no jockey, no anime character, no real horse photo, no betting ticket, no watermark, no JRA branding, no Uma Musume branding, no TFT hextech frame. Flat vector-leaning shading, subtle grain only.",
+    "processing": "1920x1080 cover resize"
+  },
+  {
+    "asset": "boards/bg_paddock_panel.png",
+    "sourceFile": "exec-8d14313d-8333-4bf9-98d4-1544e95f84f6.png",
+    "sourceSha256": "21bb198bf87bc2757aaa40b67edc91e9e78d123fcc33d5abb73f00aa0fd9e009",
+    "sha256": "d76264f5e2ec02d7767ad547607aa029b464be005c6135db31ebd5d509346fe4",
+    "tool": "builtin image_gen.imagegen",
+    "prompt": "Use case: stylized-concept. Asset type: full-bleed opaque background texture for final tactical-choice game overlay, landscape 1920x1080. Original premium Japanese horse-racing broadcast and race-program inspired UI asset. Modern professional sports data presentation. Empty paddock electronic information board material, straight-on, nearly uniform dark charcoal green #202521 with an extremely subtle small orderly LED dot matrix pattern at less than 5 percent contrast. Gentle satin surface, restrained edge vignette, uniformly dark readable central space behind dense UI. No lit symbols or bright patches. Palette: deep green #10271f / #1e4938, warm ivory #f3f0e5, restrained brass #a98b4b, but this image predominantly dark charcoal green. Clean grid hierarchy, low visual noise, readable behind dense game UI. No logos, no text, no letters, no numbers, no horse character, no jockey, no anime character, no real horse photo, no betting ticket, no watermark, no JRA branding, no Uma Musume branding, no TFT hextech frame. Flat vector-leaning shading, subtle grain only. No outer frame, no photographed environment.",
+    "processing": "1920x1080 cover resize"
+  },
+  {
+    "asset": "ui/banner_last3f.png",
+    "sourceFile": "exec-5695cd75-b3ff-404b-830c-c1681834d03e.png",
+    "sourceSha256": "23973d51e9328eddc40554bd7cd005e6679bb42ca608d7f0e0bc1f5ab038dc79",
+    "sha256": "813504d66ffc4b022d799cf3b41f4c503d4728fc836a9196cc5f74261b616649",
+    "tool": "builtin image_gen.imagegen",
+    "prompt": "Use case: stylized-concept. Asset type: transparent game race-phase banner, final target 960x180 RGBA. Input image is ONLY a silhouette and safe-margin reference (existing overtime banner); create a NEW sibling last-3-furlong banner. Keep its extremely wide low silhouette and generous transparent corners, center peak of about 15 px, thin brass outline. Replace stopwatch and blue theme with premium deep green #10271f / #1e4938 racing broadcast theme, restrained brass #a98b4b edging. A slim ivory/brass finish-line checkered strip at the horizontal center, subtle left and right speed lines flowing along the ribbon. Leave a generous dark quiet central band for code-rendered text. No stopwatch, no symbols resembling letters. Entire art must fit with transparent outer padding and fade softly at far left/right, no clipping. Original premium Japanese horse-racing broadcast and race-program inspired UI asset. Modern professional sports data presentation. Palette: deep green #10271f / #1e4938, warm ivory #f3f0e5, restrained brass #a98b4b. Clean grid hierarchy, low visual noise, readable behind dense game UI. No logos, no text, no letters, no numbers, no horse character, no jockey, no anime character, no real horse photo, no betting ticket, no watermark, no JRA branding, no Uma Musume branding, no TFT hextech frame. Flat vector-leaning shading, subtle grain only. GENUINELY TRANSPARENT BACKGROUND, preserve alpha, do not paint a checkerboard backdrop.",
+    "processing": "Transparent bounds trimmed; contained in 944x164 plus 8px margin"
+  },
+  {
+    "asset": "vfx/vfx_race_gate.png",
+    "sourceFile": "exec-c639be60-9429-470b-b44f-92a9b0c26f2c.png",
+    "sourceSha256": "1a2d5d0045427ca9719f270dec8dc5dd3459a00953637477785ea02cc2e723c5",
+    "sha256": "fa8c66c93e74160663267c24e4dcda7e304362f95f06b2b5051e3221c3150dfe",
+    "tool": "builtin image_gen.imagegen",
+    "prompt": "Use case: stylized-concept. Asset type: ONE production 2D game VFX animation contact sheet. Exactly TEN equal square animation cells, arranged precisely FIVE columns by TWO rows, read left to right then next row. Canvas aspect 5:2 (1920x768 preferred), each cell square 384x384, no gaps or drawn panel borders. Each cell has a generous 15 percent empty transparent margin; all drawings stay entirely inside their own cell. Center pivot consistent at (50%,70%) of every cell. Effect: small bronze race-start gate silhouette materializing and opening at a unit's feet, followed by a puff of dust. Frame1 faint closed three-bar gate outline, frame2 stronger closed gate, frame3 begins rising, frame4 raised halfway with tiny dust, frame5 gate lifted almost gone with dust, frame6 dust expands, frame7 dust spreads thin, frame8 dispersing dust, frame9 very faint dust, frame10 tiny last few fading dust motes (not blank). All frames same camera, no camera motion. Bronze #a98b4b with small ivory highlights. Tasteful crisp painterly pixel-friendly mobile strategy game effects, flat/isometric low-angle floor effect, no environment. Original premium Japanese horse-racing broadcast and race-program inspired UI asset. Modern professional sports data presentation. Palette: deep green #10271f / #1e4938, warm ivory #f3f0e5, restrained brass #a98b4b. Clean grid hierarchy, low visual noise. No logos, no text, no letters, no numbers, no horse character, no jockey, no anime character, no real horse photo, no betting ticket, no watermark, no JRA branding, no Uma Musume branding, no TFT hextech frame. Flat vector-leaning shading, subtle grain only. GENUINE TRANSPARENT RGBA background across every cell and all margins, no white/black background and no painted checkerboard. Do not draw a spritesheet grid, frame labels or an outer border.",
+    "processing": "5x2 source uniformly resized, 384px cells sampled in reading order, 168px content plus 12px transparent margin, 10x1 output"
+  },
+  {
+    "asset": "vfx/vfx_race_late_ring.png",
+    "sourceFile": "exec-f1702f4a-6086-4381-865b-a7d2ec8c0166.png",
+    "sourceSha256": "ba3a3cd97582bfe0eaee2cadd1b00c88e2ed0c0dbf17d42169e588ecf01734f4",
+    "sha256": "912e8fbc4f297d4c60d00dbffb63624018fec5f9dc290d128353753bb77da5a3",
+    "tool": "builtin image_gen.imagegen",
+    "prompt": "Use case: stylized-concept. Asset type: one transparent 2D tactical game VFX animation CONTACT SHEET. Exactly TEN equal square cells arranged precisely FIVE columns by TWO rows, canvas aspect 5:2 (1920x768 preferred). No visible grid or frame labels. All frames have identical center anchor at exact center of cell, transparent 20 percent safety margin on ALL four sides. Effect: red fourth-corner racing ring expanding at the character's feet, seen from a slightly raised camera as a flat ellipse with four subtle racing-corner breaks. Color subdued oxide red #a53c31, maximum opacity 70 percent. Read left to right then next row: frame1 very small thin ellipse, frame2 slightly larger thin ellipse, frame3 medium ellipse, frame4 larger thicker ring, frame5 largest firm ring with four curved corner hints, frame6 same diameter richer curved accents, frame7 same diameter fading, frame8 fading thin ring, frame9 extremely faint larger ring, frame10 just faint four arc traces. Shape stays completely inside each square, maximum diameter 60 percent of square width, so there is NO touching neighboring frames and NO clipped glow. No fire, no impact star, no opaque disc, no floor. Original premium Japanese horse-racing broadcast and race-program inspired UI asset. Modern professional sports data presentation. Palette: deep green #10271f / #1e4938, warm ivory #f3f0e5, restrained brass #a98b4b, but this effect uses oxide red. Clean hierarchy, low visual noise. No logos, no text, no letters, no numbers, no horse character, no jockey, no anime character, no real horse photo, no betting ticket, no watermark, no JRA branding, no Uma Musume branding, no TFT hextech frame. Flat vector-leaning shading, subtle grain only. GENUINELY TRANSPARENT RGBA background, no black or white fill, no painted checkerboard.",
+    "processing": "5x2 source uniformly resized, 384px cells sampled in reading order, 168px content plus 12px transparent margin, 10x1 output"
+  },
+  {
+    "asset": "vfx/vfx_race_last3f.png",
+    "sourceFile": "exec-056be222-11da-4044-a2ac-5e1b7e693010.png",
+    "sourceSha256": "a440b5dac66d5162b1eea5fb83710831d4ad05013518efaa8d3359ab9fe1151a",
+    "sha256": "f068f89255093b242177980c460901aa537a9e521e07249a38d45afbac20b045",
+    "tool": "builtin image_gen.imagegen",
+    "prompt": "Transparent PNG sprite sheet with TEN SMALL golden racing-speed VFX sprites in a precise 5-column, 2-row grid. Every cell is square. Each sprite is centered in its cell and ONLY HALF AS WIDE as the cell. At least one-quarter cell width of EMPTY ALPHA on each side. Nothing touches or crosses cell borders. Canvas ratio 5:2. Thin separated ivory-gold curved speed strokes flow diagonally upward right, around an invisible runner. No filled solid shape. Animation left to right: faint two lines, three short lines, five lines growing, five lines lengthening, five sharp peak streaks, five peak streaks, five soft streaks, three fading afterimages, two wisps, one tiny faint wisp. Same anchor each cell. Crisp elegant pixel-friendly 2D effects. No ground plane. No cell outlines. Actual alpha transparency throughout the background. Original premium Japanese horse-racing broadcast and race-program inspired UI asset. Modern professional sports data presentation. Palette: deep green #10271f / #1e4938, warm ivory #f3f0e5, restrained brass #a98b4b, golden #e8c86a light. Clean grid hierarchy, low visual noise. No logos, no text, no letters, no numbers, no horse character, no jockey, no anime character, no real horse photo, no betting ticket, no watermark, no JRA branding, no Uma Musume branding, no TFT hextech frame. Flat vector-leaning shading, subtle grain only.",
+    "processing": "5x2 source uniformly resized, 384px cells sampled in reading order, 168px content plus 12px transparent margin, 10x1 output"
+  }
+]

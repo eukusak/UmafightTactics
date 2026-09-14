@@ -92,7 +92,7 @@
           }
         ],
         "vfxKey": "vfx_shield",
-        "description": "[결투 방벽] 729 보호막(4초), 1.5초 제어 면역. 주변 2칸 최대 3명을 2초 도발. 근거: 2000 有馬記念(GI) 1위.",
+        "description": "[결투 방벽] 4초 동안 729의 보호막을 두르고 1.5초 동안 어떤 방해도 받지 않으며, 주변 2칸의 최대 3명을 2초 동안 자신에게 붙잡아 둡니다. 근거: 2000 有馬記念(GI) 1위.",
         "choreography": {
           "windup": 0.45,
           "recovery": 0.3,
@@ -106,7 +106,7 @@
         }
       },
       "beforeSignature": "6a058a7c1d3a4b1a46bb313191dd1699a9386691158a0589b36d20aaf7be369b",
-      "skillSignature": "109653cb778f21833db1e269056f0a66cc72f29504b54872857cd0dadce66cd5"
+      "skillSignature": "9a26fd4ebc423a8f31b7999b5527c3eafc655dae5165a00a6e7728c1f67b8624"
     },
     "symboli_rudolf": {
       "before": {
@@ -198,7 +198,7 @@
           }
         ],
         "vfxKey": "vfx_stun",
-        "description": "[관통 구속] 직선 6칸 최대 4명에게 245 마법 피해와 1초 기절. 근거: 1985 有馬記念(GI) 1위.",
+        "description": "[관통 구속] 직선 6칸의 최대 4명에게 245의 마법 피해를 입히고 1초 동안 세워 둡니다. 근거: 1985 有馬記念(GI) 1위.",
         "choreography": {
           "windup": 0.45,
           "recovery": 0.3,
@@ -212,7 +212,7 @@
         }
       },
       "beforeSignature": "ccd301ae7e36fa92ca4acb3b94e965cd1449c96fadbe37dfa1467b7d7763c055",
-      "skillSignature": "7f099e60057dfa043a8cacd34ea60ee59374f05de168d718b399e7bd12e2bc17"
+      "skillSignature": "7a363fb5af26bc0221112369fedf92e410050e8285b8cbc1ec77e9fe3ee46761"
     },
     "agnes_digital": {
       "before": {
@@ -296,7 +296,7 @@
           }
         ],
         "vfxKey": "vfx_projectile",
-        "description": "[주력 저격] 공격력이 가장 높은 적을 저격해 330 물리 피해와 공격력 15% 감소(3초). 근거: 2001 天皇賞(秋)(GI) 1위.",
+        "description": "[주력 저격] 가장 위협적인 상대를 노려 330의 물리 피해를 입히고 3초 동안 공격력을 15% 떨어뜨립니다. 근거: 2001 天皇賞(秋)(GI) 1위.",
         "choreography": {
           "windup": 0.3,
           "recovery": 0.3,
@@ -310,7 +310,7 @@
         }
       },
       "beforeSignature": "3c6c96dada7d38990c58d902a8428f9915c155904a6748d29e67caaa46f1ef34",
-      "skillSignature": "aaa84344b9a75eb59066493ab6275e0b3d1c8dcaf2e413dfbe75367b5c8b54e0"
+      "skillSignature": "2763983e1e6ec313c454ae73d236d199e3f0842a2c00c4b187bbe1474026fd83"
     },
     "agnes_tachyon": {
       "before": {
@@ -426,7 +426,7 @@
           }
         ],
         "vfxKey": "vfx_projectile",
-        "description": "[가속 장전] 4초간 공격속도 +55.8%, 공격력 +24.8%. 장전 타격으로 119 물리 피해를 2회. 근거: 2001 皐月賞(GI) 1위.",
+        "description": "[가속 장전] 4초 동안 공격속도가 +55.8%, 공격력이 +24.8% 올라가고, 장전한 두 발이 각각 119의 물리 피해를 입힙니다. 근거: 2001 皐月賞(GI) 1위.",
         "choreography": {
           "windup": 0.15,
           "recovery": 0.3,
@@ -440,7 +440,7 @@
         }
       },
       "beforeSignature": "3b857d50eb10c1ab2456b994e4da174eff38c1b171fd25f746ba7fa7771bbf29",
-      "skillSignature": "bc43fc6b353919149783f29ca249d6aa5ce56317402059ac16807d76e737134a"
+      "skillSignature": "99ad1cb051993b9a1deeea1aeaba51935751ea959b3cd0b1a67c5f32674c2026"
     },
     "gran_alegria": {
       "before": {
@@ -564,7 +564,7 @@
           }
         ],
         "vfxKey": "vfx_dash_senko",
-        "description": "[추격 연타] 돌진 후 한 적에게 141 물리 피해를 3회, 4초간 공격속도 +24.8%. 대상 사망 시 남은 타격은 재탐색. 근거: 2020 マイルチャンピオンS(GI) 1위.",
+        "description": "[추격 연타] 한 상대에게 붙어 141의 물리 피해를 세 번 몰아치고, 4초 동안 공격속도가 +24.8% 오릅니다. 상대가 먼저 쓰러지면 남은 타격은 다음 상대를 찾아갑니다. 근거: 2020 マイルチャンピオンS(GI) 1위.",
         "choreography": {
           "windup": 0.3,
           "recovery": 0.3,
@@ -578,7 +578,7 @@
         }
       },
       "beforeSignature": "5e134ba7ac2ef0f0fa9c0d35681fbfe188d5cab7555394469302b60a23d774d3",
-      "skillSignature": "aad70cacc6cfc1d2304abc4cd1a2b9543647abafecb354da35dd0047c1ac3415"
+      "skillSignature": "82d5ac148deb2d3c24f0e9033f6926e472b3706f7ab27689d4e822b8d40862cd"
     }
   }
 }

@@ -21,9 +21,20 @@ import { addXp, grantRoundXp, resetRoundEconomy, roundIncome, reducePlayerDamage
 import { addItemToStorage, resolveTrickGloves } from '../items/inventory';
 import { runAiPrep, ensureInitialBoard, finalizeAiFormation, resolveAiItemRewards } from '../ai';
 import { AI_PROFILE_IDS } from '../ai/profiles';
-import { BattleEngine, simulateBattle, type BattleFrame, type BattleSideInput } from '../battle/engine';
+import { BattleEngine, type BattleFrame, type BattleSideInput } from '../battle/engine';
 import { PVE_UNIT_IDS } from '../battle/pve-units';
 import { applyAugment, createAugmentOffers, rerollAugmentOffer } from '../augments/offers';
+import {
+  autoResolveRacePlans, chooseRaceEntry, chooseRacePlanOption, deferRaceEntry,
+  enforceRaceEntryDeadline, ensureRacePlanState, finishingPending, openRacePlanOffers,
+  racePlanPending, rerollRacePlanOption, resolveAiRacePlans, rollRoundTrackState,
+  transferRaceEntry, updateRecentCombat,
+} from '../race-plan/director-ops';
+import { createDefaultRacePlanState } from '../race-plan/types';
+import { provisionalEntryInstance, reconcileEntryUnit } from '../race-plan/entry';
+import { racePlanBattleInput } from '../race-plan/runtime';
+import { rollG1Theme } from '../race-plan/profiles';
+import { DEFAULT_CONDITIONS } from '../race-plan/conditions';
 import type {
   BattleOutcome, MatchState, PlayerState, RoundResolution, UnitInstance,
 } from '../state';
@@ -79,6 +90,7 @@ export function createMatch(options: CreateMatchOptions): MatchState {
       hpChangedAtRound: 0,
       pendingGrants: [],
       bonusTraits: [],
+      racePlan: createDefaultRacePlanState(),
     });
   }
 
@@ -99,10 +111,15 @@ export function createMatch(options: CreateMatchOptions): MatchState {
     lastResolution: null,
     history: [],
     finalStandings: null,
+    // One GⅠ for the whole lobby: everyone is entered for the same race.
+    g1ThemeId: rollG1Theme(options.seed),
+    racePlanTrack: 'STANDARD',
+    raceConditions: { ...DEFAULT_CONDITIONS },
   };
 }
 
 export type PendingSettlement = {
+  raceReports?: Record<string, Parameters<typeof updateRecentCombat>[1]>;
   resolution: RoundResolution;
   afterStreaks: Record<string, number>;
   pvpWinners: string[];
@@ -146,6 +163,9 @@ export class RoundDirector {
     if (interactiveDraft && state.draft && !state.draft.carousel) state.draft.carousel = createCarousel(state.draft, state.stage === 1 && state.round === 1);
     this.rngs = new RngRegistry(state.seed);
     if (Object.keys(state.rngStates).length) this.rngs.restore(state.rngStates);
+    // Saves and room checkpoints written before the Race Plan existed load with
+    // no plan state at all; give them one rather than refusing the save.
+    ensureRacePlanState(state);
   }
 
   /** Persists live RNG states back onto the match so a save replays exactly. */
@@ -173,12 +193,26 @@ export class RoundDirector {
         p.shopLocked = false;
       }
       applyCombines(s, p);
+      reconcileEntryUnit(p);
     }
 
     if (hasAugmentBefore(s.stage, s.round)) {
       s.augmentOffers = createAugmentOffers(s, this.rngs.get('augment'));
       s.phase = 'AUGMENT_SELECT';
       this.resolveAiAugments();
+    }
+
+    // --- race plan. Its rounds never collide with an augment or a draft.
+    ensureRacePlanState(s);
+    rollRoundTrackState(s, this.rngs.get('race-track'));
+    for (const p of s.players) reconcileEntryUnit(p);
+    enforceRaceEntryDeadline(s);
+    if (openRacePlanOffers(s)) {
+      resolveAiRacePlans(s, this.rngs.get('race-plan'));
+      if (racePlanPending(s)) {
+        s.phase = s.players.some((p) => isAlive(p) && p.racePlan?.offerPhase === 'ENTRY')
+          ? 'RACE_ENTRY_SELECT' : 'RACE_PLAN_SELECT';
+      }
     }
 
     // 1-1 opens with the Twinkle Start selection; later x-4 rounds are drafts.
@@ -242,6 +276,82 @@ export class RoundDirector {
     }
     this.syncRng();
     return true;
+  }
+
+  // -------------------------------------------------------------- race plan
+  /** Human picks a plan, an evolution or a finishing move from the open offer. */
+  chooseRacePlan(playerId: string, id: string): boolean {
+    const player = getPlayer(this.state, playerId);
+    if (!chooseRacePlanOption(this.state, player, id)) return false;
+    this.closeRacePlanPhaseIfDone();
+    this.syncRng();
+    return true;
+  }
+
+  rerollRacePlan(playerId: string, slot: number): boolean {
+    const player = getPlayer(this.state, playerId);
+    const ok = rerollRacePlanOption(this.state, player, slot);
+    if (ok) this.syncRng();
+    return ok;
+  }
+
+  chooseRaceEntry(playerId: string, instanceId: string): boolean {
+    const player = getPlayer(this.state, playerId);
+    if (!chooseRaceEntry(this.state, player, instanceId)) return false;
+    this.closeRacePlanPhaseIfDone();
+    this.syncRng();
+    return true;
+  }
+
+  deferRaceEntry(playerId: string): boolean {
+    const player = getPlayer(this.state, playerId);
+    if (!deferRaceEntry(this.state, player)) return false;
+    this.closeRacePlanPhaseIfDone();
+    return true;
+  }
+
+  transferRaceEntry(playerId: string, instanceId: string): boolean {
+    const player = getPlayer(this.state, playerId);
+    if (!transferRaceEntry(this.state, player, instanceId)) return false;
+    this.state.phase = 'RACE_ENTRY_SELECT';
+    this.syncRng();
+    return true;
+  }
+
+  /** Timeout handler for the server and the solo prep countdown. */
+  autoResolveRacePlans(): void {
+    autoResolveRacePlans(this.state);
+    this.closeRacePlanPhaseIfDone();
+    this.syncRng();
+  }
+
+  get racePlanPending(): boolean {
+    return racePlanPending(this.state) || finishingPending(this.state);
+  }
+
+  private closeRacePlanPhaseIfDone(): void {
+    const s = this.state;
+    if (s.phase !== 'RACE_PLAN_SELECT' && s.phase !== 'RACE_ENTRY_SELECT') return;
+    if (racePlanPending(s) || finishingPending(s)) {
+      // The entry screen hands straight over to the finishing move.
+      s.phase = finishingPending(s) || s.players.some((p) => isAlive(p) && p.racePlan?.offerPhase === 'ENTRY')
+        ? 'RACE_ENTRY_SELECT' : 'RACE_PLAN_SELECT';
+      return;
+    }
+    s.phase = s.draft ? 'DRAFT' : 'ROUND_PREP';
+  }
+
+  /**
+   * Folds each player's own fight into the profile the offer engine reads.
+   * Everything comes from events the battle already recorded.
+   */
+  private roundRaceReports = new Map<string, Parameters<typeof updateRecentCombat>[1]>();
+  private recordRaceTelemetry(pending: PendingSettlement): void {
+    if (!pending.isPve) for (const [id, report] of Object.entries(pending.raceReports ?? {})) {
+      const player = this.state.players.find(p => p.id === id);
+      if (player?.racePlan) updateRecentCombat(player, report);
+    }
+    this.roundRaceReports.clear();
   }
 
   private resolveAiDraftPicks(): void {
@@ -317,6 +427,7 @@ export class RoundDirector {
     const s = this.state;
     s.phase = 'BATTLE';
     this.roundAugmentProgress = {};
+    this.roundRaceReports.clear();
     this.lastHumanFrames = null;
     this.playerFrames.clear();
     this.lastHumanBattleWasPve = false;
@@ -348,6 +459,7 @@ export class RoundDirector {
       resolution, afterStreaks: Object.fromEntries(afterStreaks),
       pvpWinners: [...pvpWinners], isPve: kind === 'PVE',
       augmentProgress: structuredClone(this.roundAugmentProgress),
+      raceReports: structuredClone(Object.fromEntries(this.roundRaceReports)),
       rewardBenchCounts: Object.fromEntries(s.players.map(p => [p.id, p.bench.length])),
     };
     this.syncRng();
@@ -358,6 +470,7 @@ export class RoundDirector {
   settleRound(): RoundResolution | null {
     const pending = this.pendingSettlement;
     if (!pending) return this.state.lastResolution;
+    this.recordRaceTelemetry(pending);
     this.pendingSettlement = null;
     const s = this.state;
     const { resolution, afterStreaks, pvpWinners, isPve } = pending;
@@ -446,10 +559,34 @@ export class RoundDirector {
    * what the player watches is the very run that produced the result.
    */
   private runBattle(a: BattleSideInput, b: BattleSideInput, rng: Rng, record: boolean, isGhost = false) {
-    const hasGrowth = [a,b].some(side => side.augments.some(id => { const aug = getAugment(id); return aug.growth || aug.rememberItem; }));
-    if (!record && !this.recordAllBattles && !hasGrowth) return simulateBattle(a, b, rng, { stage: this.state.stage });
-    const engine = new BattleEngine(a, b, rng, { recordFrames: record || this.recordAllBattles, stage: this.state.stage });
+    // Headless AI needs the same compact telemetry as a viewed fight; no frames required.
+    const engine = new BattleEngine(a, b, rng, {
+      recordFrames: record || this.recordAllBattles,
+      stage: this.state.stage,
+      conditions: this.state.raceConditions ?? DEFAULT_CONDITIONS,
+      g1ThemeId: this.state.g1ThemeId,
+    });
     const result = engine.run();
+    if (this.info.kind !== 'PVE') for (const [side, foe, team] of [[a,b,'A'],[b,a,'B']] as const) {
+      if (team === 'B' && isGhost) continue;
+      const own = (id: string) => id.startsWith(side.playerId+'#');
+      const late = result.events.find(e => e.type === 'RACE_PHASE' && e.phase === 'LATE');
+      const mid = result.events.find(e => e.type === 'RACE_PHASE' && e.phase === 'POSITIONING');
+      const phases = result.events.filter(e => e.type === 'RACE_PHASE');
+      const end = phases.at(-1);
+      const front = side.units.filter(u => ['TANK','BRUISER'].includes(getUnitDef(u.unitDefId).role));
+      const frontIds = new Set(front.map(u => side.playerId+'#'+u.instanceId));
+      const enemyFront = foe.units.filter(u => ['TANK','BRUISER'].includes(getUnitDef(u.unitDefId).role));
+      const hp = enemyFront.map(u => engine.raceLateHealth.get(foe.playerId+'#'+u.instanceId));
+      this.roundRaceReports.set(side.playerId, {
+        duration: result.durationSeconds,
+        endProgress: end?.type === 'RACE_PHASE' ? end.progress : Math.min(1,result.durationSeconds/30),
+        overtime: result.wentToOvertime,
+        casts: result.events.filter(e => e.type === 'CAST' && own(e.source)).length,
+        frontlineLost: front.length ? result.events.filter(e => e.type === 'DEATH' && frontIds.has(e.unit) && e.t < (mid?.t ?? 5)).length/front.length : 0,
+        enemyFrontHp: late && hp.length ? hp.reduce((n,u) => n+(u ? u.hp/Math.max(1,u.maxHp) : 0),0)/hp.length : 0,
+      });
+    }
     if (this.info.kind !== 'PVE') for (const [side, team] of [[a,'A'],[b,'B']] as const) {
       if (team === 'B' && isGhost) continue;
       if (!this.state.players.some(p => p.id === side.playerId)) continue;
@@ -463,8 +600,12 @@ export class RoundDirector {
   }
 
   private sideFor(player: PlayerState): BattleSideInput {
+    // Before the GⅠ entry exists the plan rides the board's best carry, so the
+    // six rounds between 2-5 and 4-5 are not dead.
+    const provisional = provisionalEntryInstance(this.state, player)?.instanceId;
     return {
       playerId: player.id,
+      racePlan: racePlanBattleInput(player, this.state.racePlanTrack ?? 'STANDARD', provisional),
       augments: player.augments,
       augmentProgress: player.augmentProgress,
       tacticianItems: player.tacticianItems,
@@ -518,6 +659,7 @@ export class RoundDirector {
         survivorsLoser: won ? result.survivorsB : result.survivorsA,
         durationSeconds: result.durationSeconds,
         wentToOvertime: result.wentToOvertime,
+        raceLast3fReached: result.events.some(e => e.type === 'RACE_PHASE' && e.phase === 'LAST_3F'),
         isGhost: false,
       });
       // Spec §21 — losing PvE costs no player HP, only a reward tier.
@@ -573,6 +715,7 @@ export class RoundDirector {
         survivorsLoser: result.winner === 'A' ? result.survivorsB : result.survivorsA,
         durationSeconds: result.durationSeconds,
         wentToOvertime: result.wentToOvertime,
+        raceLast3fReached: result.events.some(e => e.type === 'RACE_PHASE' && e.phase === 'LAST_3F'),
         isGhost: pair.isGhost,
       });
 

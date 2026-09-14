@@ -9,6 +9,7 @@ import './styles/arena.css';
 import './styles/pixel.css';
 import './styles/mobile.css';
 import './styles/typography.css';
+import './styles/race-plan.css';
 // Registers the PvE combat bodies before any battle can be constructed.
 import './game/engine/battle/pve-units';
 

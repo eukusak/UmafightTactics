@@ -1,3 +1,4 @@
+import raceArtCatalog from '../src/data/manual/race-art.json';
 /**
  * Verifies delivered art against art-manifest.json (spec §38).
  *
@@ -39,7 +40,7 @@ function pngHasAlpha(file: string): boolean {
   try {
     const buf = readFileSync(file);
     const colourType = buf.readUInt8(25);
-    return colourType === 6 || colourType === 4;
+    return colourType === 6 || colourType === 4 || (colourType === 3 && buf.includes(Buffer.from('tRNS')));
   } catch {
     return false;
   }
@@ -66,6 +67,9 @@ for (const rel of manifest.traits) checks.push({ rel, label: '특성', priority:
 for (const rel of manifest.augments) checks.push({ rel, label: '증강', priority: 'P0', expect: { w: 96, h: 96 } });
 for (const rel of manifest.status) checks.push({ rel, label: '상태', priority: 'P0', expect: { w: 96, h: 96 } });
 for (const rel of manifest.vfx) checks.push({ rel, label: 'VFX', priority: 'P0', expect: { w: 1920, h: 192 } });
+for (const a of raceArtCatalog.filter(a => !a.file.startsWith('vfx/'))) {
+  checks.push({ rel: a.file, label:'레이스 아트', priority:'P0', expect:{w:a.w*a.cols,h:a.h*a.rows} });
+}
 for (const rel of manifest.starVfx) checks.push({ rel, label: '별 VFX', priority: 'P0', expect: { w: 1536, h: 512 } });
 for (const rel of manifest.pve) {
   const frames = FRAME_SHEETS[`pve_${path.basename(rel, '.png')}`];
@@ -99,7 +103,7 @@ for (const check of checks) {
       `${check.rel}: ${size.w}×${size.h} (기대 ${check.expect.w}×${check.expect.h})`,
     );
   }
-  if (check.rel.startsWith('boards/')) {
+  if (check.rel.startsWith('boards/') || raceArtCatalog.some(a => a.file === check.rel)) {
     try {
       await assertCompletePng(file);
     } catch (error) {
