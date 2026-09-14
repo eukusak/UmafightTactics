@@ -3,6 +3,25 @@ import type { Cost, EffectDef, SkillDef, Star } from '../types';
 
 /** 100 AP is the authored baseline. Item procs and attacks never use this path. */
 export const skillAbilityPowerMultiplier = (abilityPower: number): number => Math.max(0, abilityPower) / 100;
+
+/**
+ * The same idea for a physical cast, measured against the caster's own baseline.
+ *
+ * Every unit is authored at 100 ability power, so a magic skill grows exactly as
+ * far as its holder's AP has been pushed above that. Physical casts had no
+ * equivalent path at all: skill damage read ability power whatever its damage
+ * type, so attack damage fed auto-attacks and nothing else, and an AD item
+ * improved roughly half of a physical carry's output while an AP item improved
+ * all of a magic one's. Thirty-two of the roster's authored damage effects are
+ * physical, and none of them could be built into.
+ *
+ * Baseline is the unit's own starting attack damage rather than a constant,
+ * because unlike ability power that number already varies by cost and star. At
+ * baseline this returns 1, so nothing shifts until an item, trait or buff moves
+ * the stat — which is precisely how the ability-power path behaves.
+ */
+export const skillAttackDamageMultiplier = (attackDamage: number, baseline: number): number =>
+  Math.max(0, attackDamage) / Math.max(1, baseline);
 export function skillUtilityMultiplier(star: Star, cost: Cost): number {
   return star === 1 ? 1 : star === 2 ? 1.2 : cost === 5 ? 2.2 : cost === 4 ? 1.8 : 1.5;
 }

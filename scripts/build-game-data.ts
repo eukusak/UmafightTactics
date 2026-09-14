@@ -714,6 +714,15 @@ const units: UnitDef[] = names.map((name) => {
   const moveSpeedHexPerSec = round2(1.65 + 0.35 * sp);
 
   // Spec §9.4 — attack range from role, with the oikomi AD-carry exception.
+  //
+  // Range is left alone deliberately. Moving AD carries back a rank to give the
+  // marksman role its own ground reads well on paper and measures badly: the
+  // four-cost tier is eight carries to two front-liners, so any buff aimed at
+  // carries lands hardest on the one board shape that is supposed to be weak.
+  // A stacked four-cost board went to 90% against a reroll deck at AD range 4,
+  // and 99% when AP carries were pulled forward to trade places. The marksman
+  // identity is built out of what the role does instead — see MARKSMAN_* in
+  // constants and the trait notes.
   const attackRange = role === 'TANK' || role === 'BRUISER' ? 1
     : role === 'AP_CARRY' ? 4
     : role === 'AD_CARRY' ? (style === 'oikomi' ? 2 : 3)

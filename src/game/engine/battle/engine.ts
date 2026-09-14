@@ -1,4 +1,6 @@
-import { scaleSkillSupport, skillAbilityPowerMultiplier, upgradeSkill } from './skill-scaling';
+import {
+  scaleSkillSupport, skillAbilityPowerMultiplier, skillAttackDamageMultiplier, upgradeSkill,
+} from './skill-scaling';
 /**
  * Deterministic fixed-timestep battle simulation (spec §14).
  *
@@ -159,6 +161,8 @@ export class BattleEngine {
   private readonly raceResources = new Map<string, RaceResourceTracker>();
   /** Re-release nesting per unit, so RECAST_SKILL cannot loop. */
   private readonly recastDepth = new Map<string, number>();
+  /** Carries that began the fight with no friendly body beside them; see diveTarget. */
+  private readonly exposedAtStart = new Set<string>();
   /** Continuously-gated aura bindings, pre-filtered per unit; see prepare(). */
   private readonly auraBindings = new Map<string, EffectBinding[]>();
   /** EVERY_SECONDS bindings with their index in the full list, pre-filtered. */
@@ -201,13 +205,15 @@ export class BattleEngine {
       units: this.units,
       dealDamage: (s, t, amount, type, isSkill) => this.dealDamage(s, t, amount, type ?? 'MAGIC', isSkill),
       applyStatus: (s, t, e) => this.applyStatus(s, t, e),
-      dash: (u, t, d) => this.dash(u, t, d),
+      // A dive skill aims where the dive is, not at whatever the unit last hit.
+      dash: (u, t, d) => this.dash(u, this.diveTarget(u) ?? t, d),
       summon: (owner, power, duration) => this.summon(owner, power, duration),
       raceProgress: 0,
       recast: (u) => this.recast(u),
     };
     this.prepare(sideA, 'A');
     this.prepare(sideB, 'B');
+    this.markExposedCarries();
   }
 
   // ------------------------------------------------------------------ setup
@@ -373,6 +379,19 @@ export class BattleEngine {
     }
   }
 
+  /**
+   * Records which carries were left without a neighbour on the starting board.
+   * Read once here, never recomputed; see diveTarget for why.
+   */
+  private markExposedCarries(): void {
+    const guards = this.units.filter((u) => u.role === 'TANK' || u.role === 'BRUISER');
+    for (const unit of this.units) {
+      if (!['AD_CARRY', 'AP_CARRY', 'SUPPORT'].includes(unit.role)) continue;
+      const screened = guards.some((g) => g.team === unit.team && hexDistance(g.cell, unit.cell) <= 1);
+      if (!screened) this.exposedAtStart.add(unit.id);
+    }
+  }
+
   /** The combat unit id carrying this side's entry, if it made it to the board. */
   private raceUnitId(side: BattleSideInput, team: Team): string | null {
     const wanted = side.racePlan?.entryInstanceId;
@@ -524,6 +543,45 @@ export class BattleEngine {
   }
 
   // --------------------------------------------------------------- targeting
+  /**
+   * The carry a bruiser should be going for, if any.
+   *
+   * Targeting is nearest-first for everyone, which means a melee fighter walks
+   * into the enemy front line and stays there — and since every bruiser's skill
+   * carries a DASH aimed at its current target, the dive landed on the tank it
+   * was already standing next to. The role had the animation and none of the
+   * job.
+   *
+   * A bruiser instead looks for an *exposed* carry: one that started the fight
+   * with no friendly tank or bruiser on an adjacent hex. That makes the
+   * counterplay positional and legible — put a body next to your carry and it is
+   * safe, leave it out on an edge on its own and it gets found — rather than a
+   * stat check. A screened carry is never dived, so a well-formed board is not
+   * punished for having one.
+   *
+   * The read is taken once, from the starting board, and then held. Doing it
+   * live does not work: the front line advances on contact, so every screen
+   * dissolves a second or two in and every carry ends up exposed no matter how
+   * it was placed. Placement is the decision the player actually makes, so
+   * placement is what it is judged on.
+   */
+  private diveTarget(unit: CombatUnit): CombatUnit | null {
+    if (unit.role !== 'BRUISER') return null;
+    const open = this.units.filter((u) => u.team !== unit.team && u.alive
+      && isTargetable(u, this.time) && this.exposedAtStart.has(u.id));
+    if (!open.length) return null;
+    // Nearest exposed carry, carries before supports, id last so it is stable.
+    const rank = (u: CombatUnit): number => (u.role === 'SUPPORT' ? 1 : 0);
+    open.sort((a, b) => {
+      const da = hexDistance(unit.cell, a.cell);
+      const db = hexDistance(unit.cell, b.cell);
+      if (da !== db) return da - db;
+      if (rank(a) !== rank(b)) return rank(a) - rank(b);
+      return a.id.localeCompare(b.id);
+    });
+    return open[0];
+  }
+
   /** Spec §14.2 target priority. */
   private acquireTarget(unit: CombatUnit): CombatUnit | null {
     const taunt = unit.statuses.find((s) => s.kind === 'TAUNT' && s.expiresAt > this.time);
@@ -533,6 +591,13 @@ export class BattleEngine {
         this.setTarget(unit, tauntSource);
         return tauntSource;
       }
+    }
+
+    // A bruiser goes past the front line when the front line left someone open.
+    const dive = this.diveTarget(unit);
+    if (dive) {
+      this.setTarget(unit, dive);
+      return dive;
     }
 
     const current = unit.targetId ? this.byId(unit.targetId) : null;
@@ -764,7 +829,12 @@ export class BattleEngine {
     const critChance = stat(source, 'critChance', this.time) + source.aura.critChance;
     const skillCrit = isSkill && source.aura.skillsCanCrit && this.rng.bool(Math.min(1, critChance));
     if (isSkill) {
-      amount *= source.skillMultiplier * skillAbilityPowerMultiplier(stat(source, 'abilityPower', this.time));
+      // A physical cast scales on the caster's attack damage, a magic or true
+      // one on its ability power. Both are read as "how far above your own
+      // baseline are you", so the two build paths are worth the same.
+      amount *= source.skillMultiplier * (type === 'PHYSICAL'
+        ? skillAttackDamageMultiplier(stat(source, 'attackDamage', this.time), source.base.attackDamage)
+        : skillAbilityPowerMultiplier(stat(source, 'abilityPower', this.time)));
       amount *= 1 + source.aura.skillDamageAmp;
       if (skillCrit) amount *= stat(source, 'critMultiplier', this.time) + source.aura.critDamage + this.excessCritDamage(source, critChance);
     }
