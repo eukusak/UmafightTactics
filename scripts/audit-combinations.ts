@@ -51,17 +51,15 @@ const SKELETON = [
 ];
 
 /** `lean` biases each slot toward that 각질 where the roster allows it. */
-function buildBoard(lean: RunStyle | null, narrow: boolean): Spec[] {
+function buildBoard(lean: RunStyle | null): Spec[] {
   const used = new Set<string>();
   return SKELETON.map((slot) => {
     const fits = s1.filter((u) => u.cost === slot.cost && isFront(u.role) === slot.front && !used.has(u.id));
-    // Prefer the lean; fall back to any unit of the right cost and role. When
-    // `narrow` is set, prefer units that share traits already on the board, so
-    // the board ends up with few deep traits instead of many shallow ones.
+    // Prefer the lean; fall back to any unit of the right cost and role.
     const pick = (lean && fits.find((u) => hasStyle(u.id, lean))) ?? fits[0];
     if (!pick) throw new Error(`cannot fill ${slot.cost}${slot.front ? 'F' : 'B'}`);
     used.add(pick.id);
-    return { id: pick.id, star: (narrow ? 2 : 2) as 2, front: slot.front, items: [] };
+    return { id: pick.id, star: 2 as const, front: slot.front, items: [] };
   });
 }
 
@@ -69,13 +67,19 @@ const STYLE_LEANS: Array<[string, RunStyle | null]> = [
   ['혼합', null], ...RUN_STYLES.map((st) => [getTrait(st).name, st] as [string, RunStyle]),
 ];
 
+/**
+ * Every id here must have a live `teamEffects` entry. `trait_double` looks like
+ * the obvious partner for 특성 폭 but it is `teamEffects: []` with a prep-phase
+ * grant, so inside `simulateBattle` it does nothing at all and would have made
+ * that whole column read weak for a reason that has nothing to do with balance.
+ */
 const AUGMENT_SETS: Array<[string, string[]]> = [
   ['없음', []],
   ['앞줄 보강', ['combat_front_guard', 'armor_lesson']],
   ['후열 화력', ['combat_back_focus', 'spell_jewel']],
-  ['특성 폭', ['team_diversity', 'trait_double']],
+  ['특성 폭', ['team_diversity', 'combat_all_stats']],
   ['후반 특화', ['overtime_master', 'finisher_mana']],
-  ['처형/올스탯', ['combat_execute', 'combat_all_stats']],
+  ['처형 특화', ['combat_execute', 'spell_wound']],
 ];
 
 const PLANS: Array<[string, string[] | null]> = [
@@ -111,15 +115,17 @@ function side(tag: string, spec: Spec[], augments: string[], plan: string[] | nu
 }
 
 /** The yardstick: a neutral board with no augments and no plan. */
-const REFERENCE = buildBoard(null, false);
+const REFERENCE = buildBoard(null);
 
 type Row = {
   lean: string; augments: string; plan: string; conditions: string; rate: number;
 };
 const rows: Row[] = [];
+const TOTAL = STYLE_LEANS.length * AUGMENT_SETS.length * PLANS.length * CONDITIONS.length;
+const started = Date.now();
 
 for (const [leanName, lean] of STYLE_LEANS) {
-  const spec = buildBoard(lean, false);
+  const spec = buildBoard(lean);
   for (const [augName, augments] of AUGMENT_SETS) {
     for (const [planName, plan] of PLANS) {
       for (const [condName, cond] of CONDITIONS) {
@@ -136,6 +142,11 @@ for (const [leanName, lean] of STYLE_LEANS) {
           lean: leanName, augments: augName, plan: planName,
           conditions: condName, rate: (wins / BATTLES) * 100,
         });
+        if (rows.length % 25 === 0) {
+          const per = (Date.now() - started) / rows.length;
+          process.stderr.write(`  ${rows.length}/${TOTAL} · 남은 시간 약 `
+            + `${Math.round((per * (TOTAL - rows.length)) / 60000)}분\n`);
+        }
       }
     }
   }
