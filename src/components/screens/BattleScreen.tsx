@@ -14,6 +14,7 @@ import { RaceProgressHud } from '../race-plan/RaceProgressHud';
 import { RacePlanPanel } from '../race-plan/RacePlanPanel';
 import { DetailPanel } from '../DetailPanel';
 import { useInteractionStore } from '../../store/interactionStore';
+import { useFieldFit } from '../../game/ui/use-field-fit';
 import { handleBattleKey } from '../../game/ui/controls';
 import { roundInfo } from '../../game/engine/rounds/schedule';
 import type { UnitInstance } from '../../game/engine/state';
@@ -97,6 +98,7 @@ export function BattleScreen(): JSX.Element | null {
       useInteractionStore.getState().reset();
     };
   }, []);
+  const fieldFit = useFieldFit();
 
   if (!match || !human) return null;
   const info = roundInfo(match.stage, match.round);
@@ -125,7 +127,7 @@ export function BattleScreen(): JSX.Element | null {
         <WishlistPanel />
       </div>
 
-      <div className="hud-field"><div className="field-surface">
+      <div className="hud-field" ref={fieldFit}><div className="field-surface">
         <ArenaBackdrop />
         <BattleMatchup />
         <FormationFeedback />
