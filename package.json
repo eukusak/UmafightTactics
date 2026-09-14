@@ -43,7 +43,8 @@
     "audit:conditions": "tsx scripts/audit-conditions.ts",
     "audit:emblem-style": "tsx scripts/audit-emblem-style.ts",
     "audit:combinations": "tsx scripts/audit-combinations.ts",
-    "audit:depth-vs-breadth": "tsx scripts/audit-depth-vs-breadth.ts"
+    "audit:depth-vs-breadth": "tsx scripts/audit-depth-vs-breadth.ts",
+    "audit:style-pairs": "tsx scripts/audit-style-pairs.ts"
   },
   "dependencies": {
     "@fontsource-variable/noto-sans-kr": "^5.3.0",
