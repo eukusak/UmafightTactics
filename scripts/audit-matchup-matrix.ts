@@ -36,6 +36,16 @@ const arg = (name: string, fallback: number): number => {
   return i >= 0 ? Number(process.argv[i + 1]) || fallback : fallback;
 };
 const FIGHTS = arg('fights', 12);
+/**
+ * Give the modifiers to side A only.
+ *
+ * The symmetric sweep hands both sides the same items, augments and race plan,
+ * so anything that helps both cancels and reads as "no effect" — which is
+ * exactly what it reported for the race plan (1 point) and augments (5). That
+ * is a property of the measurement, not of the content. `--asym` gives them to
+ * one side and measures what they are actually worth.
+ */
+const ASYM = process.argv.includes('--asym');
 
 const s1 = getSeasonUnits('s1');
 const pool = (cost: number, kind: 'front' | 'carry', n: number, skip = 0) =>
@@ -144,7 +154,8 @@ for (const A of NAMES) {
               for (let seed = 0; seed < FIGHTS; seed += 1) {
                 const result = simulateBattle(
                   build('a', ARCHETYPES[A], tier, augments, plan, screened),
-                  build('b', ARCHETYPES[B], tier, augments, plan, screened),
+                  build('b', ARCHETYPES[B], ASYM ? 0 : tier, ASYM ? [] : augments,
+                    ASYM ? null : plan, screened),
                   Rng.forStream(seed * 7919 + ci, 'mx:' + A + ':' + B),
                   { conditions: cond.conditions, g1ThemeId: cond.theme },
                 );
@@ -183,7 +194,7 @@ say('matchup matrix — ' + battles.toLocaleString() + ' battles, ' + FIGHTS + '
 
 say('\n전체 승률 (모든 조건 통합)');
 const ranked = NAMES.map((n) => [n, pct(overall.get(n)!)] as const).sort((a, b) => b[1] - a[1]);
-for (const [name, value] of ranked) console.log('  ' + pad(name, 12) + value.toFixed(1).padStart(5) + '%');
+for (const [name, value] of ranked) say('  ' + pad(name, 12) + value.toFixed(1).padStart(5) + '%');
 say('  스프레드 ' + (ranked[0][1] - ranked[ranked.length - 1][1]).toFixed(1) + '포인트');
 
 say('\n매치업 표 (행이 열을 이길 확률)');
@@ -221,7 +232,7 @@ for (const [dim, m] of dims) {
   }
 }
 for (const [deck, dim, delta, lo, hi] of swings.sort((a, b) => b[2] - a[2]).slice(0, 14)) {
-  console.log('  ' + pad(deck, 12) + pad(dim, 12) + delta.toFixed(1).padStart(5) + 'p   '
+  say('  ' + pad(deck, 12) + pad(dim, 12) + delta.toFixed(1).padStart(5) + 'p   '
     + pad(lo, 20) + '→ ' + hi);
 }
 
