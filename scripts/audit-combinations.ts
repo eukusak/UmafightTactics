@@ -162,6 +162,23 @@ say('  각질 ' + STYLE_LEANS.length + ' × 증강 ' + AUGMENT_SETS.length
   + ' × 플랜 ' + PLANS.length + ' × 컨디션 ' + CONDITIONS.length);
 say('  상대는 모든 칸에서 동일 — 증강 없음, 플랜 없음, 각질 혼합. 기준선 50%.');
 say('');
+// A lean can only bias the slots the roster can actually fill. 추입 has no
+// three- or four-cost unit at all, so five of eight slots fall through to the
+// default pick — and the three it can fill happen to already be the default,
+// which makes its "board" the 혼합 board with a different label. Printed up
+// front so the 각질 column is never read as a statement about 각질 curves.
+say('0) 각질 편중이 실제로 채운 슬롯 — 이 열은 각질이 아니라 "어떤 8명이 되는가"를 잰다');
+const composition = new Map<string, string>();
+for (const [name, lean] of STYLE_LEANS) {
+  const b = buildBoard(lean);
+  const key = b.map((u) => u.id).join(',');
+  const onLean = lean ? b.filter((u) => hasStyle(u.id, lean)).length : 0;
+  const dup = [...composition].find(([, k]) => k === key);
+  composition.set(name, key);
+  say('  ' + pad(name, 8) + (lean ? `맞는 각질 ${onLean}/8` : '편중 없음   ')
+    + (dup ? `   ← ${dup[0]} 보드와 완전히 동일. 로스터가 이 각질로 보드를 못 만든다` : ''));
+}
+say('');
 
 const FACTORS: Array<[string, (r: Row) => string, string[]]> = [
   ['각질', (r) => r.lean, STYLE_LEANS.map(([n]) => n)],
