@@ -217,19 +217,25 @@ function chance(c: RaceConditions): number {
   return pick(GOING_DEFS, c.going) * pick(legalWeather, c.weather)
     * pick(PACE_DEFS, c.pace) * pick(CLAUSE_DEFS, c.clause);
 }
+// Weather is gated by going, so the stack has to step through legal ground:
+// 흐림 never falls on 불량, and a combination the roller cannot produce is not
+// worth simulating.
 const STACKS: Array<[string, RaceConditions]> = [
-  ['1축만 불리', { ...D, pace: 'HIGH' }],
-  ['2축 겹침', { ...D, going: 'SOFT', pace: 'HIGH' }],
-  ['3축 겹침', { going: 'SOFT', pace: 'HIGH', weather: 'RAIN', clause: 'NONE' }],
-  ['4축 겹침 (최악)', { going: 'SOFT', pace: 'HIGH', weather: 'RAIN', clause: 'LONG_STRAIGHT' }],
+  ['0축 — 기준', D],
+  ['1축 — 페이스만', { ...D, pace: 'HIGH' }],
+  ['2축 — 마장+날씨', { going: 'SOFT', pace: 'MIDDLE', weather: 'RAIN', clause: 'NONE' }],
+  ['3축 — +페이스', { going: 'SOFT', pace: 'HIGH', weather: 'RAIN', clause: 'NONE' }],
+  ['4축 — +특례 (최악)', { going: 'SOFT', pace: 'HIGH', weather: 'RAIN', clause: 'LONG_STRAIGHT' }],
+  ['4축 — 반대쪽 (최선)', { going: 'FIRM', pace: 'SLOW', weather: 'CLEAR', clause: 'INNER_RAIL' }],
 ];
 for (const [label, cond] of STACKS) {
-  const v = rate(cond, { pair: 'style' });
   const p = chance(cond);
-  say('  ' + pad(label, 18) + pad(describeConditions(cond), 36)
+  if (p <= 0) { say('  ' + pad(label, 20) + describeConditions(cond) + '   ← 나올 수 없는 조합'); continue; }
+  const v = rate(cond, { pair: 'style' });
+  say('  ' + pad(label, 20) + pad(describeConditions(cond), 38)
     + 'A ' + v.toFixed(1).padStart(5) + '%'
     + '   발생 ' + (p * 100).toFixed(2).padStart(5) + '%'
-    + '   (약 ' + Math.round(1 / Math.max(1e-9, p)) + '라운드에 한 번)');
+    + '   (약 ' + Math.round(1 / p).toLocaleString('en-US') + '라운드에 한 번)');
 }
 
 const out = process.argv.indexOf('--out');
