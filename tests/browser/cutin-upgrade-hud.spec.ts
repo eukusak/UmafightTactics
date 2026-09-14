@@ -6,11 +6,24 @@ test('legendary cinematic appears above the lower-left damage panel without inte
   await page.getByRole('button',{name:/전투 시작 \(/}).click();
   const cutin=page.locator('.battle-legendary-cutin');
   await expect(cutin).toBeVisible({timeout:20000});
-  await expect.poll(()=>cutin.evaluate((e:HTMLImageElement)=>e.complete && e.naturalWidth>0)).toBe(true);
-  const geometry=await cutin.evaluate(e=>{
-    const box=e.getBoundingClientRect(), panel=document.querySelector('.battle-lower-hud .battle-damage-panel')!.getBoundingClientRect(), field=document.querySelector('.field-surface')!.getBoundingClientRect();
-    return {bottom:box.bottom,panelTop:panel.top,left:box.left,panelLeft:panel.left,right:box.right,fieldMid:field.x+field.width/2,pointer:getComputedStyle(e).pointerEvents};
-  });
+  /**
+   * The cut-in is on screen for 0.85s of battle time and React then unmounts
+   * it. Decoding the image and measuring it therefore have to happen inside one
+   * window, and they have to happen together: a detached node reports a zeroed
+   * rect and an empty computed style, so measuring one that has just gone makes
+   * every comparison below pass against zeros without checking anything. The
+   * poll keeps trying — cut-ins repeat at least five seconds apart — until one
+   * capture comes back from an element that is still attached and laid out.
+   */
+  type Geometry = {connected:boolean;decoded:boolean;bottom:number;panelTop:number;left:number;panelLeft:number;right:number;fieldMid:number;pointer:string};
+  let geometry!: Geometry;
+  await expect.poll(async()=>{
+    geometry=await cutin.evaluate((e:HTMLImageElement):Geometry=>{
+      const box=e.getBoundingClientRect(), panel=document.querySelector('.battle-lower-hud .battle-damage-panel')!.getBoundingClientRect(), field=document.querySelector('.field-surface')!.getBoundingClientRect();
+      return {connected:e.isConnected,decoded:e.complete && e.naturalWidth>0,bottom:box.bottom,panelTop:panel.top,left:box.left,panelLeft:panel.left,right:box.right,fieldMid:field.x+field.width/2,pointer:getComputedStyle(e).pointerEvents};
+    });
+    return geometry.connected && geometry.decoded && geometry.bottom>0 && geometry.right>geometry.left;
+  },{timeout:20000}).toBe(true);
   expect(geometry.bottom).toBeLessThan(geometry.panelTop-2);
   expect(geometry.left).toBeLessThanOrEqual(geometry.panelLeft+2);
   expect(geometry.right).toBeLessThan(geometry.fieldMid);
