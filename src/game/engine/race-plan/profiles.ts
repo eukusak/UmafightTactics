@@ -8,6 +8,7 @@
 import profileData from '../../../data/generated/race-plan/horse-racing-profiles.json';
 import themeData from '../../../data/generated/race-plan/g1-themes.json';
 import extraThemeData from '../../../data/manual/g1-extra-themes.json';
+import nameOverrideData from '../../../data/manual/g1-name-overrides.json';
 import { Rng } from '../rng';
 import type { G1Theme, HorseRacingProfile, TrackState } from './types';
 
@@ -51,7 +52,23 @@ const EXTRA_THEMES: G1Theme[] = extra.templates.map((t) => ({
     ?? null,
 }));
 
+/**
+ * Korean race names, corrected to the ones the game actually uses.
+ *
+ * The vendored list romanises 賞 as -쇼 and runs 記念 together with the course
+ * — 사츠키쇼, 덴노쇼, 다카라즈카기념 — where Korean Uma Musume prints 사츠키상,
+ * 텐노상 and 타카라즈카 기념. It cannot be fixed at the source: `sync:data`
+ * re-vendors race-templates.json from UmaRogue and CI diffs the result, so a
+ * correction there would be reverted on the next sync. It is applied here
+ * instead, against the race's own `nameJa` so each entry stays auditable.
+ */
+const NAME_OVERRIDES = new Map(
+  (nameOverrideData as unknown as { overrides: Array<{ id: string; nameKo: string }> })
+    .overrides.map((o) => [o.id, o.nameKo]),
+);
+
 export const G1_THEMES: G1Theme[] = [...VENDORED_THEMES, ...EXTRA_THEMES]
+  .map((t) => ({ ...t, nameKo: NAME_OVERRIDES.get(t.id) ?? t.nameKo }))
   .sort((a, b) => a.id.localeCompare(b.id));
 export const G1_THEME_IDS = G1_THEMES.map((t) => t.id);
 const THEME_BY_ID = new Map(G1_THEMES.map((t) => [t.id, t]));
