@@ -234,7 +234,10 @@ button.race-take:focus-visible, button.race-reroll:focus-visible,
 .race-hud-marker { top:0; width:16px; height:14px; margin-left:-8px; border-radius:0; background:none; box-shadow:none; }
 .race-hud-marker .race-art { position:absolute; width:16px; height:19px; left:0; top:-13px; }
 .race-hud-marker .race-art + .race-art { top:8px; }
-.race-hud-banner { position:absolute; width:min(600px,75vw); top:80px; left:50%; transform:translateX(-50%); pointer-events:none; }
+/* Sized to the strip between the last board row and the damage panel it is
+   anchored to, so the call-out never lands on a unit. */
+.race-hud-banner { position:absolute; width:min(404px,32%); left:50%; bottom:calc(100% + 10px);
+  transform:translateX(-50%); pointer-events:none; filter:drop-shadow(0 3px 10px #071829cc); }
 .race-hud-banner .race-sprite { width:100%; }
 @media (prefers-reduced-motion:reduce) { .race-weather { opacity:.5; } }
 

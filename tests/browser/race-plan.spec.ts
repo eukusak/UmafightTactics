@@ -74,3 +74,31 @@ test('recorded race battle loads all frame sheets and presents progress without 
   await page.screenshot({path:testInfo.outputPath('race-combat.png')});
   expect(errors).toEqual([]);
 });
+
+test('the phase call-out sits in the strip between the last board row and the damage panel',async({page},testInfo)=>{
+  await preparedGame(page,'race-combat');
+  await page.getByRole('button',{name:/전투 시작 \(/}).click();
+  const banner=page.locator('.race-hud-banner');
+  /**
+   * The call-out is on screen for 0.6s of battle time per phase change and then
+   * unmounts, so a rect read from a node that has just gone comes back zeroed
+   * and every comparison below would pass against zeros. Read attachment and
+   * geometry in one evaluate and poll until a live, laid-out capture arrives.
+   */
+  type Box={connected:boolean;top:number;bottom:number;centre:number;fieldMid:number;boardBottom:number;panelTop:number};
+  let box!:Box;
+  await expect.poll(async()=>{
+    box=await banner.evaluate((e:HTMLElement):Box=>{
+      const b=e.getBoundingClientRect(),field=document.querySelector('.field-surface')!.getBoundingClientRect();
+      const panel=document.querySelector('.battle-lower-hud .battle-damage-panel')!.getBoundingClientRect();
+      const cells=Array.from(document.querySelectorAll('.arena-grid polygon'));
+      return {connected:e.isConnected,top:b.top,bottom:b.bottom,centre:b.x+b.width/2,fieldMid:field.x+field.width/2,
+        boardBottom:cells.reduce((m,c)=>Math.max(m,c.getBoundingClientRect().bottom),0),panelTop:panel.top};
+    }).catch(()=>null) as Box;
+    return !!box&&box.connected&&box.bottom>box.top;
+  },{timeout:20000}).toBe(true);
+  expect(box.bottom).toBeLessThanOrEqual(box.panelTop);
+  expect(box.top).toBeGreaterThanOrEqual(box.boardBottom);
+  expect(Math.abs(box.centre-box.fieldMid)).toBeLessThanOrEqual(2);
+  await page.screenshot({path:testInfo.outputPath('phase-banner.png')});
+});
