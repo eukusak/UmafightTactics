@@ -175,3 +175,10 @@
   .mobile .hud-left .wishlist-panel, .mobile .hud-right .controls-help { display:none; }
   .mobile .bench-odds { display:none; }
 }
+
+/* A phone scales the whole field down, so the phase call-out that reads
+ * comfortably on a monitor shrinks to about 24px of screen height. It cannot
+ * leave the strip between the last board row and the damage panel, so it takes
+ * the rest of that strip instead: 78px of the 86px available, against 67px on
+ * desktop, with 4px of clearance at each edge. */
+.mobile .race-hud-banner { width:min(468px,37%); bottom:calc(100% + 4px); }

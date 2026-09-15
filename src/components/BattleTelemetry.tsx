@@ -1,4 +1,5 @@
 import { LegendaryCutin } from './LegendaryCutin';
+import { RacePhaseBanner } from './race-plan/RaceProgressHud';
 import { useInteractionStore } from '../store/interactionStore';
 import { useMemo } from 'react';
 import { useGameStore } from '../store/gameStore';
@@ -40,6 +41,6 @@ export function BattleTelemetry(): JSX.Element | null {
       <div className="battle-survivors"><span>아군 {allies.filter((u) => u.alive).length}</span><span>상대 {enemies.filter((u) => u.alive).length}</span></div>
       <div className="team-vitals"><i style={{ width: `${health(allies) * 100}%` }} /><i style={{ width: `${health(enemies) * 100}%` }} /></div>
     </div>}
-    {running ? <div className="battle-lower-hud"><LegendaryCutin />{damagePanel}</div> : damagePanel}
+    {running ? <div className="battle-lower-hud"><LegendaryCutin /><RacePhaseBanner />{damagePanel}</div> : damagePanel}
   </>;
 }

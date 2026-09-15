@@ -21,11 +21,15 @@ import { getUnitDef } from '../../game/engine/roster';
 type BarPhase = Exclude<RaceCombatPhase, 'OVERTIME'>;
 const ORDER: BarPhase[] = ['START', 'POSITIONING', 'LATE', 'LAST_3F'];
 
-export function RaceProgressHud(): JSX.Element | null {
+/**
+ * Progress, phase, and how long the current phase has been on screen. The bar
+ * and the phase banner read the same numbers from different corners of the
+ * field, so the read lives here once instead of being duplicated.
+ */
+function useRaceProgress() {
   const frames = useGameStore((s) => s.viewedBattleFrames());
   const time = useGameStore((s) => s.battleTime);
   const running = useGameStore((s) => s.battleRunning);
-
 
   const current = frames?.[frameAt(frames, time)];
   let progress = current?.race?.progress ?? 0;
@@ -51,17 +55,11 @@ export function RaceProgressHud(): JSX.Element | null {
   }
   const bannerAge = time - phaseAt;
   const bannerKey = 'phase_banner_' + (phase === 'LAST_3F' ? 'last3f' : phase.toLowerCase());
+  return { frames, time, running, progress, phase, bannerKey, bannerAge };
+}
 
-  useEffect(() => {
-    if (!running) return;
-    const phases = ['start', 'positioning', 'late', 'last3f', 'overtime'];
-    const index = phases.indexOf(bannerKey.replace('phase_banner_', ''));
-    for (const name of phases.slice(Math.max(0,index), index+2)) {
-      const url = raceArtUrl('phase_banner_' + name);
-      if (url) { const image = new Image(); image.src = url; image.decode().catch(() => {}); }
-    }
-  }, [running, bannerKey]);
-
+export function RaceProgressHud(): JSX.Element | null {
+  const { frames, time, running, progress, phase } = useRaceProgress();
   if (!running || !frames?.length) return null;
   const clamped = Math.min(1, Math.max(0, progress));
 
@@ -82,9 +80,31 @@ export function RaceProgressHud(): JSX.Element | null {
         <span className={phase === 'OVERTIME' ? 'active' : ''}>GOAL</span>
       </div>
       <span className="race-clock">{time.toFixed(1)}초 · {Math.round(clamped * 100)}%</span>
-      {bannerAge >= 0 && bannerAge < .6 && <div className="race-hud-banner"><RaceSprite name={bannerKey} seconds={bannerAge} /></div>}
     </div>
   );
+}
+
+/**
+ * The "발주 / 최종 직선" call-out. It rides the damage panel's anchor rather
+ * than the progress bar's, so it lands in the empty strip between the board and
+ * the panel: front-runners climbing the field no longer have their sprites
+ * covered by it, and it needs no screen-size offsets of its own.
+ */
+export function RacePhaseBanner(): JSX.Element | null {
+  const { frames, running, bannerKey, bannerAge } = useRaceProgress();
+
+  useEffect(() => {
+    if (!running) return;
+    const phases = ['start', 'positioning', 'late', 'last3f', 'overtime'];
+    const index = phases.indexOf(bannerKey.replace('phase_banner_', ''));
+    for (const name of phases.slice(Math.max(0,index), index+2)) {
+      const url = raceArtUrl('phase_banner_' + name);
+      if (url) { const image = new Image(); image.src = url; image.decode().catch(() => {}); }
+    }
+  }, [running, bannerKey]);
+
+  if (!running || !frames?.length || bannerAge < 0 || bannerAge >= .6) return null;
+  return <div className="race-hud-banner"><RaceSprite name={bannerKey} seconds={bannerAge} /></div>;
 }
 
 /** One-line scouting summary: plan, branch, entry and finishing move. */

@@ -74,3 +74,55 @@ test('recorded race battle loads all frame sheets and presents progress without 
   await page.screenshot({path:testInfo.outputPath('race-combat.png')});
   expect(errors).toEqual([]);
 });
+
+/**
+ * The call-out is on screen for 0.6s of battle time per phase change and then
+ * unmounts, so a rect read from a node that has just gone comes back zeroed and
+ * every comparison against it would pass vacuously. Read attachment and
+ * geometry in one evaluate and poll until a live, laid-out capture arrives.
+ */
+type CallOut={connected:boolean;top:number;bottom:number;height:number;centre:number;fieldMid:number;boardBottom:number;panelTop:number};
+async function phaseCallOut(page:Page):Promise<CallOut>{
+  const banner=page.locator('.race-hud-banner');
+  let box!:CallOut;
+  await expect.poll(async()=>{
+    box=await banner.evaluate((e:HTMLElement):CallOut=>{
+      const b=e.getBoundingClientRect(),field=document.querySelector('.field-surface')!.getBoundingClientRect();
+      const panel=document.querySelector('.battle-lower-hud .battle-damage-panel')!.getBoundingClientRect();
+      const cells=Array.from(document.querySelectorAll('.arena-grid polygon'));
+      return {connected:e.isConnected,top:b.top,bottom:b.bottom,height:b.height,centre:b.x+b.width/2,
+        fieldMid:field.x+field.width/2,boardBottom:cells.reduce((m,c)=>Math.max(m,c.getBoundingClientRect().bottom),0),panelTop:panel.top};
+    }).catch(()=>null) as CallOut;
+    return !!box&&box.connected&&box.height>0;
+  },{timeout:25000}).toBe(true);
+  return box;
+}
+
+test('the phase call-out sits in the strip between the last board row and the damage panel',async({page},testInfo)=>{
+  await preparedGame(page,'race-combat');
+  await page.getByRole('button',{name:/전투 시작 \(/}).click();
+  const box=await phaseCallOut(page);
+  expect(box.bottom).toBeLessThanOrEqual(box.panelTop);
+  expect(box.top).toBeGreaterThanOrEqual(box.boardBottom);
+  expect(Math.abs(box.centre-box.fieldMid)).toBeLessThanOrEqual(2);
+  await page.screenshot({path:testInfo.outputPath('phase-banner.png')});
+});
+
+test.describe(()=>{
+  test.use({viewport:{width:844,height:390},isMobile:true,hasTouch:true});
+  /**
+   * A landscape phone scales the field down far enough that the desktop size
+   * lands at roughly 24px of screen height, so there the call-out takes most of
+   * the strip rather than the share that leaves a monitor comfortable margins.
+   */
+  test('a landscape phone gives the phase call-out most of that strip',async({page},testInfo)=>{
+    await preparedGame(page,'race-combat');
+    await page.getByRole('button',{name:/전투 시작 \(/}).click();
+    const box=await phaseCallOut(page);
+    expect(box.bottom).toBeLessThanOrEqual(box.panelTop);
+    expect(box.top).toBeGreaterThanOrEqual(box.boardBottom);
+    expect(Math.abs(box.centre-box.fieldMid)).toBeLessThanOrEqual(2);
+    expect(box.height).toBeGreaterThan((box.panelTop-box.boardBottom)*.85);
+    await page.screenshot({path:testInfo.outputPath('phase-banner-landscape.png')});
+  });
+});
