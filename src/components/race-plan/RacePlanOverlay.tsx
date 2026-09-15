@@ -14,7 +14,7 @@ import { playSound } from '../../game/ui/audio';
 import { findRacePlanNode } from '../../game/engine/race-plan/defs';
 import {
   CATEGORY_COLOR, CATEGORY_LABEL, FINISHING_COLOR, FINISHING_LABEL,
-  describeEffects, reasonText,
+  describeEffects, planSummary, reasonText,
 } from '../../game/engine/race-plan/presentation';
 import { getG1Theme } from '../../game/engine/race-plan/profiles';
 import { describeConditions } from '../../game/engine/race-plan/conditions';
@@ -48,6 +48,11 @@ export function RacePlanCard({
 }): JSX.Element {
   const band = bandStyle(node);
   const Icon = node.category ? CATEGORY_ICON[node.category] : undefined;
+  // The plain-language line leads, because a player choosing between three
+  // cards needs "when does this pay, and who does it want" before they need
+  // either the flavour or the exact numbers. `phases` stays for kinds with no
+  // fit line worth printing.
+  const summary = planSummary(node);
   const phases = node.fit.phases.map((p) => RACE_PHASE_LABEL[p]).join(' · ');
   return (
     <div className="race-card" onPointerEnter={() => playSound('race-plan-hover')} onFocus={() => playSound('race-plan-hover')}>
@@ -59,14 +64,16 @@ export function RacePlanCard({
       </div>
       <div className="race-body">
         <h3>{node.nameKo}</h3>
+        <p className="race-plainly">{summary || phases}</p>
         <p className="race-flavor">{node.descriptionKo}</p>
         <ul className="race-effects">
           {describeEffects(node).map((line, i) => <li key={i}>{line}</li>)}
         </ul>
-        <div className="race-tags">
-          <span>{phases}</span>
-          {node.guard.appliesTo !== 'ANY' && <span>{node.guard.appliesTo === 'MELEE' ? '근접 전용' : '원거리 전용'}</span>}
-        </div>
+        {node.guard.appliesTo !== 'ANY' && (
+          <div className="race-tags">
+            <span>{node.guard.appliesTo === 'MELEE' ? '근접 전용' : '원거리 전용'}</span>
+          </div>
+        )}
         <ul className="race-reasons">
           {reasons.map((r, i) => (
             <li key={i}><i className={markClass(r.mark)}>{r.mark}</i>{r.text}</li>
@@ -152,7 +159,9 @@ export function RacePlanOverlay(): JSX.Element | null {
                 key={id}
                 node={node}
                 slot={offer.slots[i] ?? String(i + 1)}
-                reasons={(offer.reasons[i] ?? []).map(reasonText)}
+                // NODE_TIMING says "힘이 실리는 구간: …", which is now the first
+                // clause of the summary line at the top of every card.
+                reasons={(offer.reasons[i] ?? []).filter((r) => r.reason !== 'NODE_TIMING').map(reasonText)}
                 rerolled={offer.rerolled[i] ?? false}
                 busy={busy}
                 onTake={() => take(id)}

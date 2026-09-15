@@ -16,7 +16,7 @@ import { g1Identity } from '../../game/engine/race-plan/g1-identity';
 import { STYLE_CURVES, RUN_STYLES } from '../../game/engine/race-plan/style-curve';
 import { getPace } from '../../game/engine/race-plan/conditions';
 import { getUnitTraits } from '../../game/engine/roster';
-import { describeEffects } from '../../game/engine/race-plan/presentation';
+import { describeEffects, planSummary } from '../../game/engine/race-plan/presentation';
 import { RACE_PLAN_ROUNDS } from '../../game/engine/constants';
 
 /** The next decision still ahead of this player, as a plain sentence. */
@@ -72,6 +72,22 @@ export function RacePlanPanel(): JSX.Element | null {
   return (
     <div className="panel race-panel-side">
       <strong>레이스 플랜</strong>
+
+      {/* What the player committed to, before anything about the lobby: it is
+          the one thing here they chose, and the thing they come back to check. */}
+      {plan && (
+        <div className="race-side-chosen">
+          <dl className="race-side-list">
+            <dt>작전</dt>
+            <dd>{plan.nameKo}{evolution ? ` → ${evolution.nameKo}` : ''}</dd>
+            {entry && <><dt>출주마</dt><dd>{entry.nameKo}</dd></>}
+            {move && <><dt>승부수</dt><dd>{move.nameKo}</dd></>}
+          </dl>
+          <p className="race-side-plainly">{planSummary(plan, evolution)}</p>
+          {plan.descriptionKo && <p className="race-side-flavour">{plan.descriptionKo}</p>}
+        </div>
+      )}
+
       <G1Crest theme={theme} />
       {match.raceConditions && <RaceConditionsStrip conditions={match.raceConditions} />}
       <p className="race-side-theme">
@@ -110,15 +126,6 @@ export function RacePlanPanel(): JSX.Element | null {
         </p>
       )}
 
-      {plan && (
-        <dl className="race-side-list">
-          <dt>작전</dt>
-          <dd>{plan.nameKo}{evolution ? ` → ${evolution.nameKo}` : ''}</dd>
-          {entry && <><dt>출주마</dt><dd>{entry.nameKo}</dd></>}
-          {move && <><dt>승부수</dt><dd>{move.nameKo}</dd></>}
-        </dl>
-      )}
-
       {plan && !entry && (
         <p className="race-side-help">
           아직 기물에 묶이지 않았습니다. 지금은 보드에서 가장 캐리에 가까운 기물이 작전을 대신 받고 있으니,
@@ -133,8 +140,8 @@ export function RacePlanPanel(): JSX.Element | null {
       )}
 
       {plan && (
-        <details className="race-side-details">
-          <summary>작전 효과 보기</summary>
+        <details className="race-side-details" open>
+          <summary>작전 효과 · 정확한 수치</summary>
           <ul className="race-effects">
             {[...describeEffects(plan), ...(evolution ? describeEffects(evolution) : []), ...(move ? describeEffects(move) : [])]
               .map((line, i) => <li key={i}>{line}</li>)}

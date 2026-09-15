@@ -14,6 +14,7 @@ import { ItemIcon, Stat, Portrait } from './common';
 import type { PlayerState } from '../game/engine/state';
 import { getItem } from '../game/engine/items/item-defs';
 import { ITEM_COMBINE_HOLD_MS } from '../game/ui/item-combine-drag';
+import { RaceTopStrip } from './race-plan/RaceTopStrip';
 
 export function TopHud(): JSX.Element | null {
   const match = useGameStore((s) => s.match);
@@ -45,6 +46,7 @@ export function TopHud(): JSX.Element | null {
         </span>
       )}
       <span className="pill">이자 +{interestGold(player)}G</span>
+      <RaceTopStrip />
       <div style={{ marginLeft: 'auto', display: 'flex', gap: 10 }}>
         {player.augments.map((id) => (
           <button type="button" key={id} className="pill augment-inspect" aria-label={(AUGMENT_BY_ID.get(id)?.name ?? id) + ' 증강 상세'} onClick={() => useInteractionStore.getState().inspect({ kind: 'augment', id, playerId: player.id })} style={{ borderColor: 'var(--violet)' }}>

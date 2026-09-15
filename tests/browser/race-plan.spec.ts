@@ -126,3 +126,33 @@ test.describe(()=>{
     await page.screenshot({path:testInfo.outputPath('phase-banner-landscape.png')});
   });
 });
+
+test('the phase call-out stays up long enough to read, and fades rather than vanishing',async({page})=>{
+  await preparedGame(page,'race-combat');
+  await page.getByRole('button',{name:/전투 시작 \(/}).click();
+  const banner=page.locator('.race-hud-banner');
+  /**
+   * The measure is the longest UNBROKEN run of samples, not the total: totals
+   * accumulate across the four phase changes, so a short window would reach any
+   * total given enough call-outs. One 1.5s window at 120ms sampling is about
+   * twelve consecutive samples; the 0.6s window this replaced could only ever
+   * reach five, so eight separates them.
+   */
+  const samples:Array<{up:boolean;opacity:number}>=[];
+  const deadline=Date.now()+14000;
+  const longestRun=():number=>{
+    let best=0,run=0;
+    for(const s of samples){ run=s.up&&s.opacity>0?run+1:0; best=Math.max(best,run); }
+    return best;
+  };
+  while(Date.now()<deadline&&longestRun()<8){
+    samples.push(await banner.evaluate((e:HTMLElement)=>({up:e.isConnected,opacity:Number(getComputedStyle(e).opacity)}))
+      .catch(()=>({up:false,opacity:0})));
+    await page.waitForTimeout(120);
+  }
+  expect(longestRun(),`samples ${JSON.stringify(samples)}`).toBeGreaterThanOrEqual(8);
+  const seen=samples.filter(s=>s.up&&s.opacity>0).map(s=>s.opacity);
+  expect(Math.max(...seen)).toBeCloseTo(1,1);
+  // The tail ramps down, so at least one sample sits strictly between.
+  expect(seen.some(o=>o>0.02&&o<0.98)).toBe(true);
+});
