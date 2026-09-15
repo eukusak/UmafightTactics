@@ -2210,7 +2210,8 @@
     "skillId": "skill_soccer_boy",
     "skillSignature": "e74b1aed6450fbee5aae627f1f5b2f79994024371fae71e039343dedf499f472",
     "skillReview": "신규 추입 유닛. 발주서 기준 24프레임(4열 6줄) 규격으로 발주했고 아직 납품 전이다. 납품 후 이 서명과 대조해 검수한다.",
-    "skillReleaseFrame": 2
+    "skillReleaseFrame": 2,
+    "pendingDelivery": true
   },
   "kurofune": {
     "file": "motions/kurofune.png",
@@ -2222,7 +2223,8 @@
     "skillId": "skill_kurofune",
     "skillSignature": "99c66afd011ad1843fa50a4e50ca4aa4146c3d682b94fff5661de28465a8e86e",
     "skillReview": "신규 추입 유닛. 발주서 기준 24프레임(4열 6줄) 규격으로 발주했고 아직 납품 전이다. 납품 후 이 서명과 대조해 검수한다.",
-    "skillReleaseFrame": 2
+    "skillReleaseFrame": 2,
+    "pendingDelivery": true
   },
   "deep_impact": {
     "file": "motions/deep_impact.png",
@@ -2234,6 +2236,7 @@
     "skillId": "skill_deep_impact",
     "skillSignature": "750e4ccad8964643011ab0e3762b24ddde4ab4885716fa54112c8edc566dd2b2",
     "skillReview": "신규 추입 유닛. 발주서 기준 24프레임(4열 6줄) 규격으로 발주했고 아직 납품 전이다. 납품 후 이 서명과 대조해 검수한다.",
-    "skillReleaseFrame": 2
+    "skillReleaseFrame": 2,
+    "pendingDelivery": true
   }
 }

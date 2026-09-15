@@ -11,7 +11,7 @@ import { assetUrl, cutinUrl, portraitUrl, standeeUrl, animationFrame, type Anima
 import { movingPoint } from '../ui/board-projection';
 import { orientSnapshot, samplePosition, effectProgress, frameAt, attackExtension } from '../ui/battle-playback';
 import { STATUS_PRESENTATION } from '../ui/status-presentation';
-import { FRAME_SHEETS, frameSheetUrl, frameGeometry, motionFrame, skillMotionFrame } from '../ui/frame-animation';
+import { FRAME_SHEETS, hasFrameSheet, frameSheetUrl, frameGeometry, motionFrame, skillMotionFrame } from '../ui/frame-animation';
 import { skillDuration } from '../engine/battle/skill-timeline';
 import { skillLabel } from '../ui/skill-presentation';
 import { drawLegendaryFeedback, legendaryFeedback, LEGENDARY_FEEDBACK_SECONDS } from '../ui/legendary-skill-feedback';
@@ -228,7 +228,7 @@ export class BattleScene extends Phaser.Scene {
     }
     const size = sheet ? 110 : fullBody ? 148 : 64;
     const body = this.add.image(0, 0, texture).setOrigin(.5, fullBody ? 440 / 512 : 1).setDisplaySize(size, size);
-    if (FRAME_SHEETS[u.unitDefId]) {
+    if (hasFrameSheet(u.unitDefId)) {
       const geometry = frameGeometry(u.unitDefId, size);
       body.setOrigin(geometry.originX, geometry.originY).setDisplaySize(geometry.width, geometry.height);
     }
@@ -255,7 +255,7 @@ export class BattleScene extends Phaser.Scene {
       container.add(badge);
       this.raceEffect(u.id, 'vfx_race_gate', 0);
     }
-    return { raceGauge, raceGaugeKey: '', hitAt: -Infinity, hitRecoil: 0, hitDirection: 1, hitTint: 0xffffff, container, body, hp, hpTrail, mana, shield, statuses, statusKey: '', action: 'idle', actionAt: 0, sheet, fullBody, frameSheet: sheet && !!FRAME_SHEETS[u.unitDefId], facing: u.team === 'B' ? -1 : 1, attackDuration: .4, attackReleaseAt: 0, bodyScaleX: body.scaleX, bodyScaleY: body.scaleY };
+    return { raceGauge, raceGaugeKey: '', hitAt: -Infinity, hitRecoil: 0, hitDirection: 1, hitTint: 0xffffff, container, body, hp, hpTrail, mana, shield, statuses, statusKey: '', action: 'idle', actionAt: 0, sheet, fullBody, frameSheet: sheet && hasFrameSheet(u.unitDefId), facing: u.team === 'B' ? -1 : 1, attackDuration: .4, attackReleaseAt: 0, bodyScaleX: body.scaleX, bodyScaleY: body.scaleY };
   }
 
   private renderActor(u: Snapshot, next: Snapshot | undefined, mix: number): void {

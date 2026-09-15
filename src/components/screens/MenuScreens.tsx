@@ -1,4 +1,5 @@
 import { AudioControls } from '../AudioControls';
+import { ACTIVE_S1_SIZE, CANONICAL_ROSTER_SIZE } from '../../game/engine/constants';
 import { bindingKey } from '../../game/ui/keybindings';
 /** Title, main menu, match setup, settings and final result screens. */
 import { useState } from 'react';
@@ -20,7 +21,7 @@ export function TitleScreen(): JSX.Element {
       <div className="menu-buttons">
         <button className="btn-primary" onClick={() => setScreen('MAIN_MENU')}>시작하기</button>
       </div>
-      <div className="hero-meta"><div><strong>145</strong><span>전체 출전 캐릭터</span></div><div><strong>5</strong><span>서로 다른 시즌</span></div><div><strong>20</strong><span>새 시즌 시너지</span></div></div>
+      <div className="hero-meta"><div><strong>{CANONICAL_ROSTER_SIZE}</strong><span>전체 출전 캐릭터</span></div><div><strong>5</strong><span>서로 다른 시즌</span></div><div><strong>20</strong><span>새 시즌 시너지</span></div></div>
       <p className="muted" style={{ position: 'absolute', bottom: 26, fontSize: 12 }}>
         본 게임은 팬 제작 비공식 작품이며 Cygames와 무관합니다.
       </p>
@@ -41,7 +42,7 @@ export function MainMenu(): JSX.Element {
         <button className="btn-primary" onClick={() => setScreen('MATCH_SETUP')}>새 게임</button>
         <button className="btn-primary" onClick={() => setScreen('ONLINE')}>온라인 대전 · 최대 8인</button>
         <button disabled={!hasSave} onClick={() => { continueMatch(); }}>이어하기</button>
-        <button onClick={() => setScreen('COLLECTION')}>도감 (145명)</button>
+        <button onClick={() => setScreen('COLLECTION')}>도감 ({CANONICAL_ROSTER_SIZE}명)</button>
         <button onClick={() => setScreen('MOTION')}>기물 모션 미리보기</button>
         <button onClick={() => setScreen('SETTINGS')}>설정</button>
         <button className="btn-ghost" onClick={() => setScreen('TITLE')}>뒤로</button>
@@ -94,7 +95,7 @@ export function MatchSetup(): JSX.Element {
           </label>
         )}
         <div className="muted" style={{ fontSize: 12, marginTop: 14, lineHeight: 1.6 }}>
-          플레이어 1명 + AI 7명 · 시작 체력 100 · {seasonId.toUpperCase()} 출전 60명
+          플레이어 1명 + AI 7명 · 시작 체력 100 · {seasonId.toUpperCase()} 출전 {ACTIVE_S1_SIZE}명
         </div>
       </div>
       <div className="menu-buttons" style={{ marginTop: 18 }}>

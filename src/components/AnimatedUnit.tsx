@@ -1,12 +1,14 @@
 import type { CSSProperties } from 'react';
-import { FRAME_SHEETS, frameSheetUrl, frameGeometry } from '../game/ui/frame-animation';
+import { FRAME_SHEETS, hasFrameSheet, frameSheetUrl, frameGeometry } from '../game/ui/frame-animation';
 
 /** Four actual poses per row, cropped from the same sheets as battle playback. */
 export function AnimatedUnit({ id, size = 148, action = 'idle', className = '', name = '' }: {
   id: string; size?: number; action?: 'idle' | 'run'; className?: string; name?: string;
 }): JSX.Element | null {
   const sheet = FRAME_SHEETS[id];
-  if (!sheet) return null;
+  // A sheet declared but not yet delivered has no image to show; the caller's
+  // own fallback takes over rather than this component painting a 404.
+  if (!sheet || !hasFrameSheet(id)) return null;
   const geometry = frameGeometry(id, size);
   const style = { width: geometry.width, height: geometry.height, position: 'absolute', left: geometry.offsetX, top: geometry.offsetY,
     backgroundImage: `url("${frameSheetUrl(id)}")`,

@@ -4,7 +4,7 @@ import Phaser from 'phaser';
 import { ManagedGame } from '../../game/phaser/ManagedGame';
 import { ALL_UNITS, getUnitDef } from '../../game/engine/roster';
 import { PVE_UNIT_IDS } from '../../game/engine/battle/pve-units';
-import { FRAME_SHEETS, frameSheetUrl, frameGeometry, motionFrame, skillMotionFrame } from '../../game/ui/frame-animation';
+import { FRAME_SHEETS, hasFrameSheet, frameSheetUrl, frameGeometry, motionFrame, skillMotionFrame } from '../../game/ui/frame-animation';
 import { skillTimeline } from '../../game/engine/battle/skill-timeline';
 import { cutinUrl, portraitUrl, standeeUrl, type AnimationName } from '../../game/ui/art';
 import { useGameStore } from '../../store/gameStore';
@@ -50,7 +50,7 @@ export function MotionScreen(): JSX.Element {
           this.echoes.push(this.add.image(360, 465, 'preview-body', 14).setOrigin(geometry.originX, geometry.originY)
             .setDisplaySize(geometry.width, geometry.height).setAlpha(0).setDepth(-1));
         }
-        if (alive) setStatus(FRAME_SHEETS[id] ? '프레임 애니메이션 · 6종 모션 · 24개 원화' : '프레임 제작 대기 · 현재 원화 미리보기');
+        if (alive) setStatus(hasFrameSheet(id) ? '프레임 애니메이션 · 6종 모션 · 24개 원화' : '프레임 제작 대기 · 현재 원화 미리보기');
       }
       override update(_t: number, dt: number): void {
         const c = control.current;
@@ -72,7 +72,7 @@ export function MotionScreen(): JSX.Element {
         });
         for (const sprite of this.sprites) {
           sprite.setFlipX(c.facing < 0);
-          if (FRAME_SHEETS[id]) sprite.setFrame(c.action === 'skill_cast'
+          if (hasFrameSheet(id)) sprite.setFrame(c.action === 'skill_cast'
             ? skillMotionFrame(skill, cycle, FRAME_SHEETS[id].skillReleaseFrame ?? 2)
             : motionFrame(c.action, cycle));
           if (c.action === 'skill_cast') {

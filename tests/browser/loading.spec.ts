@@ -1,4 +1,5 @@
 import { test, expect } from '@playwright/test';
+import { CANONICAL_ROSTER_SIZE } from '../../src/game/engine/constants';
 
 test('cold title and collection defer Phaser and do not preload all motion or music files', async ({ page }, info) => {
   const requests: string[] = []; const errors: string[] = [];
@@ -8,8 +9,8 @@ test('cold title and collection defer Phaser and do not preload all motion or mu
   expect(requests.some(url => url.includes('/motions/'))).toBe(false);
   expect(requests.filter(url => /\.mp3/.test(url)).length).toBeLessThanOrEqual(1);
   await page.getByRole('button', { name: '시작하기' }).click();
-  await page.getByRole('button', { name: /도감 \(145명\)/ }).click();
-  await expect(page.locator('.collection-card')).toHaveCount(145);
+  await page.getByRole('button', { name: new RegExp(`도감 \\(${CANONICAL_ROSTER_SIZE}명\\)`) }).click();
+  await expect(page.locator('.collection-card')).toHaveCount(CANONICAL_ROSTER_SIZE);
   expect(requests.some(url => /phaser-.*\.js/.test(url))).toBe(false);
   await expect(page.locator('.collection-card img').first()).toHaveAttribute('loading', 'lazy');
   await page.getByPlaceholder('이름 검색').fill('스페셜');
