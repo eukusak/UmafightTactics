@@ -12,7 +12,7 @@ const review = json('docs/art-source/motions/skill-scale-2026-09-12/review.json'
 it('reviews every character and leaves retained atlases unchanged', () => {
   const units = json('src/data/generated/all-units.json').units as { id: string }[];
   // Units whose artwork is still on the art request have no atlas to review.
-  const awaitingArt = new Set(pendingArt.pending.map(p => p.path));
+  const awaitingArt = new Set((pendingArt.pending as Array<{ path: string }>).map(p => p.path));
   const drawn = units.filter(u => !awaitingArt.has(FRAME_SHEETS[u.id]?.file ?? ''));
   expect(Object.keys(review.units).sort()).toEqual(drawn.map(u => u.id).sort());
   for (const { id } of drawn) {

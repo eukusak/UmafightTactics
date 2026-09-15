@@ -11,7 +11,7 @@ it('accounts for every portrait and permits only explicitly approved complete id
   const audit = json(base + '/roster-review.json');
   const units = json('src/data/generated/all-units.json').units as { id: string; skill: unknown }[];
   // Units whose artwork is still on the request have no portrait to account for.
-  const awaitingArt = new Set(pendingArt.pending.map(p => p.path));
+  const awaitingArt = new Set((pendingArt.pending as Array<{ path: string }>).map(p => p.path));
   const drawn = units.filter(u => !awaitingArt.has(FRAME_SHEETS[u.id]?.file ?? ''));
   expect(Object.keys(audit.units).sort()).toEqual(drawn.map((u) => u.id).sort());
   expect(audit.reviewedCount).toBe(drawn.length);

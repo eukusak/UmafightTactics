@@ -1,8 +1,8 @@
 {
   "format": "uft-roster-raster-review-v1",
   "referenceCommit": "3c950f3ce3476b152f2ad3d99fd296327a3c82bf",
-  "reviewedCount": 145,
-  "method": "145명 각각의 실제 skill.description과 4개 skill raster를 10명 단위 접촉 시트 15장으로 시각 대조. 템플릿 일치만으로 통과하지 않음. 공간 전파·자동 후속 효과는 엔진 VFX와 구분하되 누락된 핵심 몸동작은 재제작.",
+  "reviewedCount": 148,
+  "method": "145명 각각의 실제 skill.description과 4개 skill raster를 10명 단위 접촉 시트 15장으로 시각 대조. 템플릿 일치만으로 통과하지 않음. 공간 전파·자동 후속 효과는 엔진 VFX와 구분하되 누락된 핵심 몸동작은 재제작. 2026-09-15: 신규3명은 사용자 참고 원본과 최초24프레임 전부를 대조하여 기준본 추가.",
   "scope": "Only skill atlas frames 12–15; preserve the other 20 frames.",
   "units": {
     "special_week": {
@@ -1992,11 +1992,47 @@
       "reviewSheetPage": 15,
       "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json",
       "copyRevision": "2026-09-13 · 스킬 설명 문장을 경마 표현으로 재작성. 수치·동작 변화 없음."
+    },
+    "deep_impact": {
+      "index": 147,
+      "name": "딥 임팩트",
+      "pattern": "execution_refund",
+      "skillSignature": "3793e5191e5684ae028043dce15b6c23ad2ac7fbafac464a97ca84bfce07b289",
+      "referenceRasterSha256": "8621b484d2c4503f2da47cd492e85159ebe3bcf6a0c00206b8efccb75d5976e7",
+      "runtimeSha256": "8621b484d2c4503f2da47cd492e85159ebe3bcf6a0c00206b8efccb75d5976e7",
+      "decision": "retain",
+      "status": "retained",
+      "reason": "PR27 신규 캐릭터의 최초 IMAGEGEN 납품본입니다. 사용자 참고 외형과 스킬 준비·타격·회수 동작을 확인하여 이 원화를 기준본으로 유지합니다.",
+      "deliveryReview": "docs/art-source/roster-2026-09-15/skill-review.json"
+    },
+    "soccer_boy": {
+      "index": 145,
+      "name": "사커 보이",
+      "pattern": "shadow_finish",
+      "skillSignature": "e74b1aed6450fbee5aae627f1f5b2f79994024371fae71e039343dedf499f472",
+      "referenceRasterSha256": "7fde55af5f2140c4cba3b03e0464fc3de1504dcb1730b0b80b33d663a5942b25",
+      "runtimeSha256": "7fde55af5f2140c4cba3b03e0464fc3de1504dcb1730b0b80b33d663a5942b25",
+      "decision": "retain",
+      "status": "retained",
+      "reason": "PR27 신규 캐릭터의 최초 IMAGEGEN 납품본입니다. 사용자 참고 외형과 스킬 준비·타격·회수 동작을 확인하여 이 원화를 기준본으로 유지합니다.",
+      "deliveryReview": "docs/art-source/roster-2026-09-15/skill-review.json"
+    },
+    "kurofune": {
+      "index": 146,
+      "name": "쿠로후네",
+      "pattern": "giant_cutter",
+      "skillSignature": "83a1443030a0a07dee534024757a2ef068ad2e2cb60b9b1c80cf7c88271d46bf",
+      "referenceRasterSha256": "53469db2960ad8781408326ddcd35200bda6c74b0d7ca88956c6d0ac9dc7583f",
+      "runtimeSha256": "53469db2960ad8781408326ddcd35200bda6c74b0d7ca88956c6d0ac9dc7583f",
+      "decision": "retain",
+      "status": "retained",
+      "reason": "PR27 신규 캐릭터의 최초 IMAGEGEN 납품본입니다. 사용자 참고 외형과 스킬 준비·타격·회수 동작을 확인하여 이 원화를 기준본으로 유지합니다.",
+      "deliveryReview": "docs/art-source/roster-2026-09-15/skill-review.json"
     }
   },
   "progress": {
     "revised": 65,
-    "retained": 80,
+    "retained": 83,
     "pending": 0
   }
 }

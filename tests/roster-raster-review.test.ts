@@ -14,7 +14,7 @@ it('resolves every roster raster review and preserves all retained artwork', () 
   }[];
   const audit = readJson('docs/art-source/motions/skill-revisions-2026-09-11/roster-review.json');
   // Units whose artwork is still on the request have nothing to review yet.
-  const awaitingArt = new Set(pendingArt.pending.map(p => p.path));
+  const awaitingArt = new Set((pendingArt.pending as Array<{ path: string }>).map(p => p.path));
   const drawn = units.filter(u => !awaitingArt.has(FRAME_SHEETS[u.id]?.file ?? ''));
   expect(Object.keys(audit.units).sort()).toEqual(drawn.map((unit) => unit.id).sort());
   expect(audit.reviewedCount).toBe(drawn.length);

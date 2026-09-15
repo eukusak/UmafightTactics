@@ -2,41 +2,5 @@
   "version": 1,
   "note": "Assets that have been commissioned but not yet delivered. STRICT_ART=1 treats a listed path as outstanding work rather than as a build failure, so a roster change can land with its art request open. Everything not listed here is still a hard failure.",
   "policy": "Each entry names the request document it was commissioned in and why it is outstanding. The list is self-cleaning: check:art fails if a listed file actually exists, so a delivered asset cannot stay on the pending list and quietly keep its exemption. Nothing may sit here without a request document.",
-  "pending": [
-    {
-      "path": "portraits/soccer_boy.png",
-      "request": "docs/ART_REQUEST_ROSTER_ADDITIONS_2026-09-15.md",
-      "reason": "신규 추입 2코 유닛. 발주서 §3, §7 체크리스트."
-    },
-    {
-      "path": "motions/soccer_boy.png",
-      "request": "docs/ART_REQUEST_ROSTER_ADDITIONS_2026-09-15.md",
-      "reason": "신규 추입 2코 유닛의 24프레임 모션 시트. 발주서 §1, §3."
-    },
-    {
-      "path": "portraits/kurofune.png",
-      "request": "docs/ART_REQUEST_ROSTER_ADDITIONS_2026-09-15.md",
-      "reason": "신규 추입 4코 유닛. 발주서 §4, §7 체크리스트."
-    },
-    {
-      "path": "motions/kurofune.png",
-      "request": "docs/ART_REQUEST_ROSTER_ADDITIONS_2026-09-15.md",
-      "reason": "신규 추입 4코 유닛의 24프레임 모션 시트. 발주서 §1, §4."
-    },
-    {
-      "path": "portraits/deep_impact.png",
-      "request": "docs/ART_REQUEST_ROSTER_ADDITIONS_2026-09-15.md",
-      "reason": "신규 추입 5코 유닛. 발주서 §5, §7 체크리스트."
-    },
-    {
-      "path": "motions/deep_impact.png",
-      "request": "docs/ART_REQUEST_ROSTER_ADDITIONS_2026-09-15.md",
-      "reason": "신규 추입 5코 유닛의 24프레임 모션 시트. 발주서 §1, §5."
-    },
-    {
-      "path": "characters/cutin/deep_impact.png",
-      "request": "docs/ART_REQUEST_ROSTER_ADDITIONS_2026-09-15.md",
-      "reason": "5코 컷인. 5코 칸이 8명에서 9명으로 늘면서 새로 필요해진 한 장. 발주서 §5.5."
-    }
-  ]
+  "pending": []
 }

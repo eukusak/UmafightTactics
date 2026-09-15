@@ -19,7 +19,7 @@ describe('generated frame animation playback', () => {
     // A unit exists before its artwork does. Sheets whose PNG is still on the
     // art request are declared here so the runtime knows the format to expect,
     // but there is nothing yet to decode — they are checked when they land.
-    const awaitingArt = new Set(pendingArt.pending.map(p => p.path));
+    const awaitingArt = new Set((pendingArt.pending as Array<{ path: string }>).map(p => p.path));
     for (const [id, sheet] of Object.entries(FRAME_SHEETS)) {
       if (awaitingArt.has(sheet.file)) continue;
       const skill = getUnitDef(id).skill;

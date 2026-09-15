@@ -2217,12 +2217,12 @@
     "frameHeight": 128,
     "columns": 4,
     "rows": 6,
-    "source": "docs/ART_REQUEST_ROSTER_ADDITIONS_2026-09-15.md",
+    "source": "docs/art-source/roster-2026-09-15/soccer_boy-packing.json",
     "skillId": "skill_soccer_boy",
     "skillSignature": "e74b1aed6450fbee5aae627f1f5b2f79994024371fae71e039343dedf499f472",
-    "skillReview": "신규 추입 유닛. 발주서 기준 24프레임(4열 6줄) 규격으로 발주했고 아직 납품 전이다. 납품 후 이 서명과 대조해 검수한다.",
+    "skillReview": "2026-09-15 IMAGEGEN 신규 24프레임 납품. 사용자 외형 참고자료와 초상화를 대조하고 실제 스킬의 준비·3번째 발동·회수 동작을 검수했습니다.",
     "skillReleaseFrame": 2,
-    "pendingDelivery": true
+    "skillCompatibilityReview": "docs/art-source/roster-2026-09-15/skill-review.json"
   },
   "kurofune": {
     "file": "motions/kurofune.png",
@@ -2230,13 +2230,13 @@
     "frameHeight": 128,
     "columns": 4,
     "rows": 6,
-    "source": "docs/ART_REQUEST_ROSTER_ADDITIONS_2026-09-15.md",
+    "source": "docs/art-source/roster-2026-09-15/kurofune-packing.json",
     "skillId": "skill_kurofune",
     "skillSignature": "83a1443030a0a07dee534024757a2ef068ad2e2cb60b9b1c80cf7c88271d46bf",
-    "skillReview": "신규 추입 유닛. 발주서 기준 24프레임(4열 6줄) 규격으로 발주했고 아직 납품 전이다. 납품 후 이 서명과 대조해 검수한다.",
+    "skillReview": "2026-09-15 IMAGEGEN 신규 24프레임 납품. 사용자 외형 참고자료와 초상화를 대조하고 실제 스킬의 준비·3번째 발동·회수 동작을 검수했습니다.",
     "skillReleaseFrame": 2,
-    "pendingDelivery": true,
-    "costBalanceReview": "2026-09-15 로스터 추가 패치: 코스트 재배정으로 스킬 수치만 변경. 몸동작 계약은 동일 — docs/qa/roster-additions/cost-skill-compatibility-2026-09-15.json"
+    "costBalanceReview": "2026-09-15 로스터 추가 패치: 코스트 재배정으로 스킬 수치만 변경. 몸동작 계약은 동일 — docs/qa/roster-additions/cost-skill-compatibility-2026-09-15.json",
+    "skillCompatibilityReview": "docs/art-source/roster-2026-09-15/skill-review.json"
   },
   "deep_impact": {
     "file": "motions/deep_impact.png",
@@ -2244,12 +2244,12 @@
     "frameHeight": 128,
     "columns": 4,
     "rows": 6,
-    "source": "docs/ART_REQUEST_ROSTER_ADDITIONS_2026-09-15.md",
+    "source": "docs/art-source/roster-2026-09-15/deep_impact-packing.json",
     "skillId": "skill_deep_impact",
     "skillSignature": "3793e5191e5684ae028043dce15b6c23ad2ac7fbafac464a97ca84bfce07b289",
-    "skillReview": "신규 추입 유닛. 발주서 기준 24프레임(4열 6줄) 규격으로 발주했고 아직 납품 전이다. 납품 후 이 서명과 대조해 검수한다.",
+    "skillReview": "2026-09-15 IMAGEGEN 신규 24프레임 납품. 사용자 외형 참고자료와 초상화를 대조하고 실제 스킬의 준비·3번째 발동·회수 동작을 검수했습니다.",
     "skillReleaseFrame": 2,
-    "pendingDelivery": true,
-    "costBalanceReview": "2026-09-15 로스터 추가 패치: 코스트 재배정으로 스킬 수치만 변경. 몸동작 계약은 동일 — docs/qa/roster-additions/cost-skill-compatibility-2026-09-15.json"
+    "costBalanceReview": "2026-09-15 로스터 추가 패치: 코스트 재배정으로 스킬 수치만 변경. 몸동작 계약은 동일 — docs/qa/roster-additions/cost-skill-compatibility-2026-09-15.json",
+    "skillCompatibilityReview": "docs/art-source/roster-2026-09-15/skill-review.json"
   }
 }

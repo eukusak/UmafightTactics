@@ -1,7 +1,7 @@
 {
   "format": "uft-portrait-identity-review-v1",
   "baselineCommit": "847fc5a43eb3017d485192dec5e77812e7e4f98f",
-  "reviewedCount": 145,
+  "reviewedCount": 148,
   "targetCount": 54,
   "integratedCount": 54,
   "scope": "All six rows / 24 frames; portrait is the identity reference",
@@ -1977,6 +1977,39 @@
       "name": "에스포와르 시티",
       "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json",
       "copyRevision": "2026-09-13 · 스킬 설명 문장을 경마 표현으로 재작성. 수치·동작 변화 없음."
+    },
+    "deep_impact": {
+      "name": "딥 임팩트",
+      "decision": "retain",
+      "status": "retained",
+      "portrait": "public/assets/portraits/deep_impact.png",
+      "portraitSha256": "536b6a968cf44b1c25859e63188898c3796bf7f5dbe9285e64c823c409622c87",
+      "skillSignature": "3793e5191e5684ae028043dce15b6c23ad2ac7fbafac464a97ca84bfce07b289",
+      "baselineRuntimeSha256": "8621b484d2c4503f2da47cd492e85159ebe3bcf6a0c00206b8efccb75d5976e7",
+      "reason": "PR27 신규 납품 이미지. 사용자 외형과 일치하고24프레임에 같은 배율을 적용해 스킬만 작아지는 문제 없이 기준본으로 검수했습니다.",
+      "deliveryReview": "docs/art-source/roster-2026-09-15/skill-review.json"
+    },
+    "soccer_boy": {
+      "name": "사커 보이",
+      "decision": "retain",
+      "status": "retained",
+      "portrait": "public/assets/portraits/soccer_boy.png",
+      "portraitSha256": "34ec1409b7a581656ebb32ecce2e2aa4de209f740b089d0b1a536c1e4b3c34ae",
+      "skillSignature": "e74b1aed6450fbee5aae627f1f5b2f79994024371fae71e039343dedf499f472",
+      "baselineRuntimeSha256": "7fde55af5f2140c4cba3b03e0464fc3de1504dcb1730b0b80b33d663a5942b25",
+      "reason": "PR27 신규 납품 이미지. 사용자 외형과 일치하고24프레임에 같은 배율을 적용해 스킬만 작아지는 문제 없이 기준본으로 검수했습니다.",
+      "deliveryReview": "docs/art-source/roster-2026-09-15/skill-review.json"
+    },
+    "kurofune": {
+      "name": "쿠로후네",
+      "decision": "retain",
+      "status": "retained",
+      "portrait": "public/assets/portraits/kurofune.png",
+      "portraitSha256": "ea9d0fd758008b93c54c0d9a80a01c826fd1ea8a35481d943573511fe32b45d1",
+      "skillSignature": "83a1443030a0a07dee534024757a2ef068ad2e2cb60b9b1c80cf7c88271d46bf",
+      "baselineRuntimeSha256": "53469db2960ad8781408326ddcd35200bda6c74b0d7ca88956c6d0ac9dc7583f",
+      "reason": "PR27 신규 납품 이미지. 사용자 외형과 일치하고24프레임에 같은 배율을 적용해 스킬만 작아지는 문제 없이 기준본으로 검수했습니다.",
+      "deliveryReview": "docs/art-source/roster-2026-09-15/skill-review.json"
     }
   }
 }

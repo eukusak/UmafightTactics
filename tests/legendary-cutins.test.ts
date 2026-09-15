@@ -20,7 +20,7 @@ describe('current legendary cut-ins', () => {
       // so the list is complete the moment the roster changes rather than
       // trailing behind delivery.
       expect(Object.keys(cutins).sort()).toEqual(expected);
-      const awaitingArt = new Set(pendingArt.pending.map(p => p.path));
+      const awaitingArt = new Set((pendingArt.pending as Array<{ path: string }>).map(p => p.path));
       for (const id of expected) {
         if (awaitingArt.has('characters/cutin/' + id + '.png')) continue;
         expect(cutinUrl(id, 5)).toContain('/characters/cutin/' + id + '.png');
@@ -34,7 +34,7 @@ describe('current legendary cut-ins', () => {
     }
   });
   it('packages the reviewed full source without stretching or cropping faces', async () => {
-    const awaitingArt = new Set(pendingArt.pending.map(p => p.path));
+    const awaitingArt = new Set((pendingArt.pending as Array<{ path: string }>).map(p => p.path));
     for (const c of Object.values(cutins)) {
       if (awaitingArt.has(c.file)) continue;
       const source = readFileSync(c.source);

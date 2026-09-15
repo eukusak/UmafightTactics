@@ -97,14 +97,14 @@
   },
   "deep_impact": {
     "file": "characters/cutin/deep_impact.png",
-    "source": "docs/ART_REQUEST_ROSTER_ADDITIONS_2026-09-15.md",
-    "sourceSha256": "",
+    "source": "docs/art-source/roster-2026-09-15/deep_impact-cutin-layout.png",
+    "sourceSha256": "85db74bd0a404abb72a083859c2bf74e2ee3fa062906da82c730fdce739cd080",
     "size": [
       960,
       540
     ],
     "leftClearPixels": 75,
-    "status": "commissioned; awaiting delivery (see pending-art.json)",
-    "method": "발주서 §5.5 기준으로 디자인팀 제작 예정. 납품 후 sourceSha256과 검수 항목을 채운다."
+    "status": "generated-cinematic-skill-panel; aspect-preserving-fit; static-illustration",
+    "method": "Built-in IMAGEGEN, user reference identity, corrected complete ear tips, aspect-preserving 960x540 with75px transparent UI margin; original generator source and packing receipt retained."
   }
 }
