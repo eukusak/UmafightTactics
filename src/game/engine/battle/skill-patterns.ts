@@ -23,8 +23,10 @@ export const authoredBodyFamily = (id: string): SkillTemplate | undefined => ros
 
 export function buildTacticalSkill(unitId: string, base: SkillDef, cost: Cost = 1): SkillDef {
   const p = roster[unitId];
-  if (!p) throw new Error(`Missing authored skill: ${unitId}`);
-  if (p.bodyFamily !== base.template || p.primaryTarget !== base.targetRule) throw new Error(`${unitId}: reviewed body contract changed`);
+  if (!p) throw new Error(`Missing authored skill: ${unitId}. Add it to skill-profiles.json (body family ${base.template}, target ${base.targetRule}).`);
+  if (p.bodyFamily !== base.template || p.primaryTarget !== base.targetRule) {
+    throw new Error(`${unitId}: reviewed body contract changed — profile says ${p.bodyFamily}/${p.primaryTarget}, build derives ${base.template}/${base.targetRule}.`);
+  }
   const pattern = p.pattern, target = base.targetRule;
   const scale = base.baseValues[0] / 180 * p.powerScale;
   const n = (v: number) => Math.round(v * scale);

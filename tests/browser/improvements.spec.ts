@@ -1,5 +1,7 @@
 /// <reference lib="dom" />
 import { test, expect } from '@playwright/test';
+import { readFileSync } from 'node:fs';
+import { CANONICAL_ROSTER_SIZE } from '../../src/game/engine/constants';
 import { preparedGame } from './fixtures';
 
 test('viewport fit, resolution options and persisted music controls', async ({ page }, info) => {
@@ -51,12 +53,19 @@ test('all battle contributors, three metrics and prior round persist until next 
 });
 
 test('every portrait surface uses delivered portrait assets',async({page},info)=>{
-  await page.goto('/');await page.getByRole('button',{name:'시작하기'}).click();await page.getByRole('button',{name:'도감 (145명)'}).click();
-  await expect(page.locator('.collection-card img')).toHaveCount(145);
+  await page.goto('/');await page.getByRole('button',{name:'시작하기'}).click();await page.getByRole('button',{name:`도감 (${CANONICAL_ROSTER_SIZE}명)`}).click();
+  // A unit exists before its portrait does. Cards for units still on the art
+  // request fall back to the procedural placeholder — which is the whole point
+  // of the fallback — so they contribute a card but not an <img>.
+  const pendingArt = JSON.parse(readFileSync('src/data/manual/pending-art.json', 'utf8')) as { pending: { path: string }[] };
+  const awaitingPortraits = pendingArt.pending.filter(p => p.path.startsWith('portraits/')).length;
+  const drawn = CANONICAL_ROSTER_SIZE - awaitingPortraits;
+  await expect(page.locator('.collection-card')).toHaveCount(CANONICAL_ROSTER_SIZE);
+  await expect(page.locator('.collection-card img')).toHaveCount(drawn);
   const images=await page.locator('.collection-card img').evaluateAll(images=>images.map(i=>({src:(i as HTMLImageElement).src,width:(i as HTMLImageElement).naturalWidth})));
   expect(images.every(i=>i.src.includes('/assets/portraits/'))).toBe(true);
   // Viewport-lazy portraits load as the collection is scrolled, not all on entry.
-  for (let i=0;i<145;i+=12) {
+  for (let i=0;i<drawn;i+=12) {
     const image=page.locator('.collection-card img').nth(i);
     await image.scrollIntoViewIfNeeded();
     await expect.poll(()=>image.evaluate(el=>(el as HTMLImageElement).naturalWidth)).toBeGreaterThan(0);

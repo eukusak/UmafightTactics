@@ -20,6 +20,7 @@ import type { UnitDef } from '../src/game/engine/types';
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const GEN = path.join(ROOT, 'src', 'data', 'generated');
 const SRC = path.join(ROOT, 'src', 'data', 'source');
+const MANUAL = path.join(ROOT, 'src', 'data', 'manual');
 
 const readJson = <T>(p: string): T => JSON.parse(readFileSync(p, 'utf8')) as T;
 
@@ -32,6 +33,7 @@ console.log('data:validate — checking generated data');
 
 // ------------------------------------------------------------ source integrity
 const source = readJson<{ horses: Array<{ id: string; priority: string }> }>(path.join(SRC, 'horse-game-db.json'));
+const rosterAdditions = readJson<{ additions: unknown[] }>(path.join(MANUAL, 'roster-additions.json'));
 const validation = readJson<{ horseCount: number; p0Count: number; missingStats: number }>(
   path.join(SRC, 'horse-game-db.validation.json'),
 );
@@ -39,9 +41,11 @@ check(source.horses.length === 331, `source horses ${source.horses.length} != 33
 check(validation.horseCount === 331, `validation.horseCount ${validation.horseCount} != 331`);
 check(validation.p0Count === 145, `validation.p0Count ${validation.p0Count} != 145`);
 check(validation.missingStats === 0, `validation.missingStats ${validation.missingStats} != 0`);
+// The source still carries 145 P0 rows; the roster is those plus the seed
+// promotions in roster-additions.json, which the build lifts out of P1-SEED.
 check(
-  source.horses.filter((h) => h.priority === 'P0').length === CANONICAL_ROSTER_SIZE,
-  'source P0 count != 145',
+  source.horses.filter((h) => h.priority === 'P0').length + rosterAdditions.additions.length === CANONICAL_ROSTER_SIZE,
+  `source P0 (${source.horses.filter((h) => h.priority === 'P0').length}) + promotions (${rosterAdditions.additions.length}) != ${CANONICAL_ROSTER_SIZE}`,
 );
 
 // -------------------------------------------------------------------- units
@@ -181,8 +185,9 @@ if (!manifestParsed.success) {
   failures.push(`art-manifest.json failed schema validation: ${manifestParsed.error.issues[0]?.message}`);
 } else {
   const m = manifestParsed.data;
-  check(m.characters.length === CANONICAL_ROSTER_SIZE, `manifest characters ${m.characters.length} != 145`);
-  check(m.characters.filter((c) => c.cutinRequired).length === 8, 'manifest must mark exactly 8 cut-ins');
+  check(m.characters.length === CANONICAL_ROSTER_SIZE, `manifest characters ${m.characters.length} != ${CANONICAL_ROSTER_SIZE}`);
+  const cutins = m.characters.filter((c) => c.cutinRequired).length;
+  check(cutins === COST_UNIT_COUNTS[5], `manifest marks ${cutins} cut-ins, expected one per 5-cost unit (${COST_UNIT_COUNTS[5]})`);
   check(m.items.length === 65, `manifest items ${m.items.length} != 65`);
   check(m.traits.length === 24, `manifest traits ${m.traits.length} != 24`);
   check(m.augments.length === new Set(AUGMENT_DEFS.map(a=>a.iconId ?? a.id)).size, 'augment icon manifest mismatch');
@@ -217,16 +222,22 @@ if (!manifestParsed.success) {
 const seasonal = readJson<{ seasons: SeasonDef[] }>(path.join(GEN, 'seasons.json'));
 const expectedSeasons = buildSeasons(units as UnitDef[], active.map(u => u.id));
 check(JSON.stringify(seasonal.seasons) === JSON.stringify(expectedSeasons), 'season manifest differs from its deterministic allocation');
-check(new Set(seasonal.seasons.flatMap(s => s.unitIds)).size === CANONICAL_ROSTER_SIZE, 'seasons do not cover all 145 characters');
+check(new Set(seasonal.seasons.flatMap(s => s.unitIds)).size === CANONICAL_ROSTER_SIZE, 'seasons do not cover the whole roster');
 for (const season of seasonal.seasons) {
-  check(new Set(season.unitIds).size === 60, `${season.id} must have 60 distinct units`);
+  check(new Set(season.unitIds).size === ACTIVE_S1_SIZE, `${season.id} must have ${ACTIVE_S1_SIZE} distinct units`);
   const members = units.filter(u => season.unitIds.includes(u.id));
   for (const [cost, count] of Object.entries(SEASON_COST_COUNTS)) {
     check(members.filter(u => u.cost === Number(cost)).length === count, `${season.id} cost ${cost} budget differs`);
   }
   check(season.traits.length === 4, `${season.id} must have four exclusive traits`);
   for (const trait of season.traits) {
-    check(members.filter(u => season.unitTraits[u.id] === trait.id).length === 15, `${trait.id} needs 15 available members`);
+    // 63 units over four factions is 16/16/16/15, so the contract is an even
+    // split rather than a fixed number — every faction still clears the 10-body
+    // final breakpoint.
+    const size = members.filter(u => season.unitTraits[u.id] === trait.id).length;
+    const even = Math.floor(ACTIVE_S1_SIZE / 4);
+    check(size === even || size === even + 1, `${trait.id} has ${size} members, expected ${even} or ${even + 1}`);
+    check(size >= 10, `${trait.id} has ${size} members, below its final 10-body breakpoint`);
     check(existsSync(path.join(ROOT, 'public', 'assets', 'traits', `${trait.id}.svg`)), `${trait.id} is missing its emblem`);
   }
 }
@@ -238,5 +249,5 @@ if (failures.length) {
   process.exit(1);
 }
 console.log(
-  `data:validate — OK (145 units / 5 seasons × 60 / ${COST_UNIT_COUNTS[1]}-${COST_UNIT_COUNTS[2]}-${COST_UNIT_COUNTS[3]}-${COST_UNIT_COUNTS[4]}-${COST_UNIT_COUNTS[5]} costs / ${ALL_ITEM_DEFS.length} items / 24 shared + 20 seasonal traits / ${AUGMENT_DEFS.length} augments)`,
+  `data:validate — OK (${CANONICAL_ROSTER_SIZE} units / 5 seasons × ${ACTIVE_S1_SIZE} / ${COST_UNIT_COUNTS[1]}-${COST_UNIT_COUNTS[2]}-${COST_UNIT_COUNTS[3]}-${COST_UNIT_COUNTS[4]}-${COST_UNIT_COUNTS[5]} costs / ${ALL_ITEM_DEFS.length} items / 24 shared + 20 seasonal traits / ${AUGMENT_DEFS.length} augments)`,
 );

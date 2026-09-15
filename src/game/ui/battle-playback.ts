@@ -68,3 +68,30 @@ export function contributionTotals(frames: BattleFrame[], time: number, metric: 
   }
   return totals;
 }
+
+/**
+ * How long the race phase call-out stays up.
+ *
+ * It used to be a flat 0.6s of *battle* time, which is the wrong clock:
+ * playback runs battle time at the speed multiplier, so the same 0.6s is 0.6
+ * real seconds at 1x and 0.06 at 10x — the announcement was gone before it
+ * could be read at any speed a player actually watches at. The window is
+ * therefore expressed in real seconds and converted, with a ceiling so a 10x
+ * run does not leave 발주 still on screen at 4코너.
+ */
+const BANNER_REAL_SECONDS = 1.5;
+const BANNER_MAX_BATTLE_SECONDS = 4;
+/** Fraction of the window spent fading, so it leaves rather than vanishes. */
+const BANNER_FADE = 0.3;
+
+export function bannerWindow(speed: number): number {
+  return Math.min(BANNER_MAX_BATTLE_SECONDS, BANNER_REAL_SECONDS * Math.max(1, speed));
+}
+
+/** 1 while the call-out is fully up, ramping to 0 across the tail. */
+export function bannerOpacity(age: number, window: number): number {
+  if (age < 0 || age >= window) return 0;
+  const fadeFrom = window * (1 - BANNER_FADE);
+  if (age <= fadeFrom) return 1;
+  return Math.max(0, 1 - (age - fadeFrom) / (window - fadeFrom));
+}

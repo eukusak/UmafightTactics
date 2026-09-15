@@ -11,7 +11,7 @@ import { RaceArt, RaceSprite } from './RaceArt';
 import { raceArtUrl } from '../../game/ui/race-art';
 import type { JSX } from 'react';
 import { useGameStore } from '../../store/gameStore';
-import { frameAt } from '../../game/ui/battle-playback';
+import { bannerOpacity, bannerWindow, frameAt } from '../../game/ui/battle-playback';
 import { RACE_PHASE_AT, RACE_PHASE_LABEL, type RaceCombatPhase } from '../../game/engine/race-plan/types';
 import { getRaceCombatPhase } from '../../game/engine/race-plan/race-phases';
 import { findRacePlanNode } from '../../game/engine/race-plan/defs';
@@ -92,6 +92,7 @@ export function RaceProgressHud(): JSX.Element | null {
  */
 export function RacePhaseBanner(): JSX.Element | null {
   const { frames, running, bannerKey, bannerAge } = useRaceProgress();
+  const speed = useGameStore((s) => s.settings.battleSpeed);
 
   useEffect(() => {
     if (!running) return;
@@ -103,8 +104,14 @@ export function RacePhaseBanner(): JSX.Element | null {
     }
   }, [running, bannerKey]);
 
-  if (!running || !frames?.length || bannerAge < 0 || bannerAge >= .6) return null;
-  return <div className="race-hud-banner"><RaceSprite name={bannerKey} seconds={bannerAge} /></div>;
+  const lifespan = bannerWindow(speed);
+  const opacity = bannerOpacity(bannerAge, lifespan);
+  if (!running || !frames?.length || opacity <= 0) return null;
+  // The sheet's own animation is 0.6s and then holds its last frame, so the
+  // longer window reads as "announce, then stay up", not as a slowed animation.
+  return <div className="race-hud-banner" style={{ opacity }}>
+    <RaceSprite name={bannerKey} seconds={bannerAge} />
+  </div>;
 }
 
 /** One-line scouting summary: plan, branch, entry and finishing move. */

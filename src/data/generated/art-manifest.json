@@ -114,7 +114,7 @@
       "id": "mejiro_mcqueen",
       "nameKo": "메지로 맥퀸",
       "activeS1": true,
-      "cost": 3,
+      "cost": 4,
       "portrait": "portraits/mejiro_mcqueen.png",
       "battleSheet": "characters/mejiro_mcqueen.png",
       "cutinRequired": false
@@ -330,7 +330,7 @@
       "id": "curren_chan",
       "nameKo": "카렌짱",
       "activeS1": false,
-      "cost": 3,
+      "cost": 2,
       "portrait": "portraits/curren_chan.png",
       "battleSheet": "characters/curren_chan.png",
       "cutinRequired": false
@@ -510,7 +510,7 @@
       "id": "meisho_doto",
       "nameKo": "메이쇼 도토",
       "activeS1": false,
-      "cost": 3,
+      "cost": 2,
       "portrait": "portraits/meisho_doto.png",
       "battleSheet": "characters/meisho_doto.png",
       "cutinRequired": false
@@ -528,7 +528,7 @@
       "id": "nice_nature",
       "nameKo": "나이스 네이처",
       "activeS1": true,
-      "cost": 2,
+      "cost": 1,
       "portrait": "portraits/nice_nature.png",
       "battleSheet": "characters/nice_nature.png",
       "cutinRequired": false
@@ -653,8 +653,8 @@
     {
       "id": "mejiro_bright",
       "nameKo": "메지로 브라이트",
-      "activeS1": true,
-      "cost": 1,
+      "activeS1": false,
+      "cost": 2,
       "portrait": "portraits/mejiro_bright.png",
       "battleSheet": "characters/mejiro_bright.png",
       "cutinRequired": false
@@ -699,7 +699,7 @@
       "id": "furioso",
       "nameKo": "푸리오소",
       "activeS1": true,
-      "cost": 1,
+      "cost": 2,
       "portrait": "portraits/furioso.png",
       "battleSheet": "characters/furioso.png",
       "cutinRequired": false
@@ -734,8 +734,8 @@
     {
       "id": "tanino_gimlet",
       "nameKo": "타니노 김렛",
-      "activeS1": true,
-      "cost": 2,
+      "activeS1": false,
+      "cost": 3,
       "portrait": "portraits/tanino_gimlet.png",
       "battleSheet": "characters/tanino_gimlet.png",
       "cutinRequired": false
@@ -779,8 +779,8 @@
     {
       "id": "cheval_grand",
       "nameKo": "슈발 그랑",
-      "activeS1": false,
-      "cost": 2,
+      "activeS1": true,
+      "cost": 1,
       "portrait": "portraits/cheval_grand.png",
       "battleSheet": "characters/cheval_grand.png",
       "cutinRequired": false
@@ -852,7 +852,7 @@
       "id": "copano_rickey",
       "nameKo": "코파노 리키",
       "activeS1": true,
-      "cost": 3,
+      "cost": 2,
       "portrait": "portraits/copano_rickey.png",
       "battleSheet": "characters/copano_rickey.png",
       "cutinRequired": false
@@ -942,7 +942,7 @@
       "id": "duramente",
       "nameKo": "두라멘테",
       "activeS1": true,
-      "cost": 2,
+      "cost": 3,
       "portrait": "portraits/duramente.png",
       "battleSheet": "characters/duramente.png",
       "cutinRequired": false
@@ -1085,7 +1085,7 @@
     {
       "id": "sakura_chitose_o",
       "nameKo": "사쿠라 치토세 오",
-      "activeS1": false,
+      "activeS1": true,
       "cost": 2,
       "portrait": "portraits/sakura_chitose_o.png",
       "battleSheet": "characters/sakura_chitose_o.png",
@@ -1203,7 +1203,7 @@
       "id": "marche_lorraine",
       "nameKo": "마르슈 로렌",
       "activeS1": true,
-      "cost": 2,
+      "cost": 1,
       "portrait": "portraits/marche_lorraine.png",
       "battleSheet": "characters/marche_lorraine.png",
       "cutinRequired": false
@@ -1266,7 +1266,7 @@
       "id": "titleholder",
       "nameKo": "타이틀홀더",
       "activeS1": true,
-      "cost": 1,
+      "cost": 2,
       "portrait": "portraits/titleholder.png",
       "battleSheet": "characters/titleholder.png",
       "cutinRequired": false
@@ -1306,6 +1306,33 @@
       "portrait": "portraits/espoir_city.png",
       "battleSheet": "characters/espoir_city.png",
       "cutinRequired": false
+    },
+    {
+      "id": "soccer_boy",
+      "nameKo": "사커 보이",
+      "activeS1": true,
+      "cost": 2,
+      "portrait": "portraits/soccer_boy.png",
+      "battleSheet": "characters/soccer_boy.png",
+      "cutinRequired": false
+    },
+    {
+      "id": "kurofune",
+      "nameKo": "쿠로후네",
+      "activeS1": true,
+      "cost": 3,
+      "portrait": "portraits/kurofune.png",
+      "battleSheet": "characters/kurofune.png",
+      "cutinRequired": false
+    },
+    {
+      "id": "deep_impact",
+      "nameKo": "딥 임팩트",
+      "activeS1": true,
+      "cost": 5,
+      "portrait": "portraits/deep_impact.png",
+      "battleSheet": "characters/deep_impact.png",
+      "cutinRequired": true
     }
   ],
   "items": [

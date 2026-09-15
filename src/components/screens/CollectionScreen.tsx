@@ -1,6 +1,6 @@
 import { EffectDescription } from '../EffectDescription';
 import { SkillValues } from '../SkillValues';
-/** Collection: all 145 characters with the spec §29 filters. */
+/** Collection: the whole roster with the spec §29 filters. */
 import { useMemo, useState } from 'react';
 import { useGameStore } from '../../store/gameStore';
 import { ALL_UNITS, SEASONS, getSeason, getUnitTraits } from '../../game/engine/roster';

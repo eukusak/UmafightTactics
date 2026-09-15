@@ -4,7 +4,9 @@ import type { SkillDef } from '../engine/types';
 import { skillTimeline, skillWindup } from '../engine/battle/skill-timeline';
 import { versionedAssetUrl } from './asset-version';
 
-export type FrameSheet = { file: string; frameWidth: number; frameHeight: number; logicalFrameSize?: number; anchor?: number[]; columns: number; rows: number; source: string; skillId: string; skillSignature: string; skillReview: string; skillReleaseFrame?: number; skillCompatibilityReview?: string };
+export type FrameSheet = { file: string; frameWidth: number; frameHeight: number; logicalFrameSize?: number; anchor?: number[]; columns: number; rows: number; source: string; skillId: string; skillSignature: string; skillReview: string; skillReleaseFrame?: number; skillCompatibilityReview?: string;
+  /** Declared for the runtime, but the PNG is still on the art request. */
+  pendingDelivery?: boolean };
 export const FRAME_SHEETS: Record<string, FrameSheet> = sheetsRaw;
 
 /** Transparent effect padding must not change the unit's size or foot position. */
@@ -26,8 +28,20 @@ export const FRAME_CLIPS = {
   victory: { start: 20, count: 4, fps: 5, loop: true },
 } as const;
 
+/** A declared sheet whose PNG has actually been delivered. */
+export function hasFrameSheet(id: string): boolean {
+  const sheet = FRAME_SHEETS[id];
+  return !!sheet && !sheet.pendingDelivery;
+}
+
 export function frameSheetUrl(id: string): string | null {
-  return FRAME_SHEETS[id] ? versionedAssetUrl(`/assets/${FRAME_SHEETS[id].file}`) : null;
+  const sheet = FRAME_SHEETS[id];
+  // A sheet is declared as soon as the unit exists, so the format is pinned
+  // before anyone draws it. Asking for the file before it lands would 404 on
+  // every battle, so a pending sheet reports no URL and the unit takes the
+  // procedural fallback until the art arrives.
+  if (!sheet || sheet.pendingDelivery) return null;
+  return versionedAssetUrl(`/assets/${sheet.file}`);
 }
 
 /** Stretch the reviewed preparation/recovery poses around real release times. */

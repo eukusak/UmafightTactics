@@ -4,31 +4,35 @@ import {
   ACTIVE_UNITS, ALL_ITEM_DEFS, ALL_UNITS, ACTIVE_BY_COST, AUGMENT_DEFS, TRAIT_DEFS,
 } from '../src/game/engine/roster';
 import { COMPLETED_ITEM_DEFS, COMPONENT_DEFS, RECIPE_KEY, combine } from '../src/game/engine/items/item-defs';
-import { COST_UNIT_COUNTS, MAX_LEVEL, POOL_COPIES, SHOP_ODDS } from '../src/game/engine/constants';
+import { ACTIVE_S1_SIZE, CANONICAL_ROSTER_SIZE, COST_UNIT_COUNTS, MAX_LEVEL, POOL_COPIES, SHOP_ODDS } from '../src/game/engine/constants';
 import { UnitDefSchema } from '../src/game/engine/schema';
 import type { Cost } from '../src/game/engine/types';
 import sourceValidation from '../src/data/source/horse-game-db.validation.json';
 import sourceDb from '../src/data/source/horse-game-db.json';
+import rosterAdditions from '../src/data/manual/roster-additions.json';
 
 describe('source data', () => {
   it('vendors 331 horses with 145 P0 and no missing stats', () => {
     expect((sourceDb as { horses: unknown[] }).horses).toHaveLength(331);
     expect(sourceValidation.horseCount).toBe(331);
+    // The source still holds 145 P0 rows. The playable roster is those plus the
+    // seed promotions in roster-additions.json, which the build lifts out of P1-SEED.
     expect(sourceValidation.p0Count).toBe(145);
+    expect(sourceValidation.p0Count + rosterAdditions.additions.length).toBe(CANONICAL_ROSTER_SIZE);
     expect(sourceValidation.missingStats).toBe(0);
     expect(sourceValidation.duplicateIds).toBe(0);
   });
 });
 
 describe('unit roster', () => {
-  it('holds the full 145-character pool', () => {
-    expect(ALL_UNITS).toHaveLength(145);
-    expect(new Set(ALL_UNITS.map((u) => u.id)).size).toBe(145);
-    expect(new Set(ALL_UNITS.map((u) => u.nameKo)).size).toBe(145);
+  it('holds the whole character pool, spec roster plus seed promotions', () => {
+    expect(ALL_UNITS).toHaveLength(CANONICAL_ROSTER_SIZE);
+    expect(new Set(ALL_UNITS.map((u) => u.id)).size).toBe(CANONICAL_ROSTER_SIZE);
+    expect(new Set(ALL_UNITS.map((u) => u.nameKo)).size).toBe(CANONICAL_ROSTER_SIZE);
   });
 
   it('freezes 60 Season 1 units', () => {
-    expect(ACTIVE_UNITS).toHaveLength(60);
+    expect(ACTIVE_UNITS).toHaveLength(ACTIVE_S1_SIZE);
     expect(ACTIVE_UNITS.every((u) => u.activeS1)).toBe(true);
   });
 

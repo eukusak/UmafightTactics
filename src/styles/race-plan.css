@@ -242,3 +242,44 @@ button.race-take:focus-visible, button.race-reroll:focus-visible,
 @media (prefers-reduced-motion:reduce) { .race-weather { opacity:.5; } }
 
 .arena-unit-touch .race-exposed { left:7px; top:96px; }
+
+/* ---- top-HUD race strip ----------------------------------------------
+ * Today's GⅠ, today's ground and the plan in play, on the line the round
+ * number is on. Each chip is a button into the side panel, which holds the
+ * long form; the strip itself never wraps to a second line on a monitor.
+ */
+.race-top-strip { display:flex; align-items:stretch; gap:8px; min-width:0; }
+.race-chip { display:flex; align-items:center; gap:8px; min-width:0; max-width:290px;
+  padding:5px 10px; border:1px solid #a98b4b55; border-radius:8px; background:#10273fcc;
+  color:var(--text); font:inherit; text-align:left; cursor:pointer; }
+.race-chip:hover { border-color:var(--gold); background:#16354fdd; }
+.race-chip:focus-visible { outline:2px solid var(--race-brass-hi); outline-offset:2px; }
+.race-chip-text { display:flex; flex-direction:column; gap:1px; min-width:0; }
+.race-chip small { color:#8fa3ad; font-size:10px; letter-spacing:.08em; }
+.race-chip b { font-size:13px; font-weight:700; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+.race-chip b.muted { color:#9fc7b4; font-weight:600; }
+.race-chip em { color:#9fb3bd; font-size:10.5px; font-style:normal;
+  white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+.race-chip-art { position:relative; flex:none; width:30px; height:30px; }
+.race-chip-art > .race-art { width:30px; height:30px; }
+.race-chip-course { position:absolute; right:-4px; bottom:-2px; width:14px; height:14px;
+  border-radius:50%; background:#102336; padding:1px; }
+.race-chip-conds { display:flex; gap:7px; min-width:0; }
+.race-chip-conds b { font-size:12px; font-weight:600; color:#e7dcc0; }
+.race-chip-plan { border-color:#e8c86a55; }
+.race-chip-plan.empty { border-style:dashed; border-color:#6f8791; background:#0e1f2ecc; }
+
+/* A phone stacks the top HUD already; the strip joins that flow and the
+ * secondary lines go, since a chip that ellipsises to three glyphs says less
+ * than nothing. */
+.mobile .race-chip { max-width:none; padding:3px 7px; }
+.mobile .race-chip em, .mobile .race-chip-art { display:none; }
+.mobile .race-chip small { font-size:9px; }
+.mobile .race-chip b, .mobile .race-chip-conds b { font-size:11px; }
+.race-side-chosen { padding:9px 11px; border:1px solid #e8c86a55; border-radius:7px; background:#14322a99; }
+.race-side-chosen .race-side-list { margin:0; }
+.race-side-plainly { margin:7px 0 0; color:#e7dcc0; font-size:12.5px; line-height:1.55; }
+.race-side-flavour { margin:4px 0 0; color:#93a8ad; font-size:12px; line-height:1.55; }
+/* The card's first sentence: when it pays and who it wants, before flavour. */
+.race-plainly { margin:6px 0 0; color:var(--race-brass-hi); font-size:12.5px; font-weight:600; line-height:1.55; }
+.race-card .race-flavor { font-size:12px; }

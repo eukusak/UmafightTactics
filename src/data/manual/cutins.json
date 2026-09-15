@@ -94,5 +94,17 @@
     "leftClearPixels": 75,
     "status": "generated-cinematic-skill-panel; aspect-preserving-fit; static-illustration",
     "method": "Built-in image_gen; painted background and transparent fit padding. Original face portraits unchanged."
+  },
+  "deep_impact": {
+    "file": "characters/cutin/deep_impact.png",
+    "source": "docs/art-source/roster-2026-09-15/deep_impact-cutin-layout.png",
+    "sourceSha256": "85db74bd0a404abb72a083859c2bf74e2ee3fa062906da82c730fdce739cd080",
+    "size": [
+      960,
+      540
+    ],
+    "leftClearPixels": 75,
+    "status": "generated-cinematic-skill-panel; aspect-preserving-fit; static-illustration",
+    "method": "Built-in IMAGEGEN, user reference identity, corrected complete ear tips, aspect-preserving 960x540 with75px transparent UI margin; original generator source and packing receipt retained."
   }
 }

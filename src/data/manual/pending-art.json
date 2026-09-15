@@ -1,0 +1,6 @@
+{
+  "version": 1,
+  "note": "Assets that have been commissioned but not yet delivered. STRICT_ART=1 treats a listed path as outstanding work rather than as a build failure, so a roster change can land with its art request open. Everything not listed here is still a hard failure.",
+  "policy": "Each entry names the request document it was commissioned in and why it is outstanding. The list is self-cleaning: check:art fails if a listed file actually exists, so a delivered asset cannot stay on the pending list and quietly keep its exemption. Nothing may sit here without a request document.",
+  "pending": []
+}

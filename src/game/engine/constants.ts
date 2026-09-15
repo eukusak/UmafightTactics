@@ -3,11 +3,19 @@ import type { Cost, Role } from './types';
 
 export const GAME_VERSION = 1 as const;
 export const SAVE_KEY = 'uma-fight-tactics-save-v1';
-export const CANONICAL_ROSTER_SIZE = 145;
-export const ACTIVE_S1_SIZE = 60;
+/**
+ * 145 spec characters plus the three seed promotions in roster-additions.json.
+ *
+ * The additions exist because 추입 had no 3- or 4-cost back-line unit in any
+ * season and four in total, which made "build 추입" not a real choice and made
+ * any cost-matched style comparison impossible. They land at 2/4/5 and the
+ * brackets widened to hold them rather than displacing anyone.
+ */
+export const CANONICAL_ROSTER_SIZE = 148;
+export const ACTIVE_S1_SIZE = 63;
 
 /** Spec §7.5 — active unit *kinds* per cost. */
-export const COST_UNIT_COUNTS: Record<Cost, number> = { 1: 14, 2: 14, 3: 13, 4: 11, 5: 8 };
+export const COST_UNIT_COUNTS: Record<Cost, number> = { 1: 14, 2: 15, 3: 13, 4: 12, 5: 9 };
 /** Adopted 14.15 standard pool; see docs/TFT_PARITY_AUDIT.md for version boundaries. */
 export const POOL_COPIES: Record<Cost, number> = { 1: 30, 2: 25, 3: 18, 4: 10, 5: 9 };
 

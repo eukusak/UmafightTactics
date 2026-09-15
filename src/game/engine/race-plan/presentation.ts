@@ -8,7 +8,7 @@
  */
 import type { BattleStats, EffectDef, TriggerDef } from '../types';
 import { findRacePlanNode } from './defs';
-import { RACE_PHASE_LABEL, type FinishingCategory, type OfferReasonPayload, type RacePlanCategory, type RacePlanNode } from './types';
+import { RACE_PHASE_LABEL, type FinishingCategory, type OfferReasonPayload, type RaceCombatPhase, type RacePlanCategory, type RacePlanNode } from './types';
 
 export const CATEGORY_LABEL: Record<RacePlanCategory, string> = {
   HIGH_PACE: '하이 페이스',
@@ -203,4 +203,39 @@ export function reasonText(payload: OfferReasonPayload): { mark: string; text: s
 
 export function nodeLabel(id: string | undefined): string {
   return (id && findRacePlanNode(id)?.nameKo) ?? '';
+}
+
+/** Roles and 각질 read the same way on a card as they do on a unit. */
+const ROLE_KO: Record<string, string> = {
+  TANK: '탱커', BRUISER: '브루저', AD_CARRY: '물리 캐리', AP_CARRY: '스킬 캐리', SUPPORT: '서포터',
+};
+const STYLE_KO: Record<string, string> = {
+  nige: '도주', senko: '선행', sashi: '선입', oikomi: '추입',
+};
+
+/**
+ * One line saying what a plan actually does, as opposed to what it evokes.
+ *
+ * `descriptionKo` is flavour — "발주부터 몰아붙여 상대가 자리를 잡기 전에 흔듭니다"
+ * tells a player nothing about whether it fits the board in front of them. The
+ * three facts that decide that are already on the node, in `fit`: which phases
+ * the power lands in, which roles it wants, and which 각질 it rides with. This
+ * reads them back out, so the summary cannot drift from the card the way a
+ * hand-written second sentence would.
+ *
+ * Phases come first because that is the axis the whole system is built on, and
+ * the one a player has to match against their own board.
+ */
+export function planSummary(plan: RacePlanNode, evolution?: RacePlanNode): string {
+  const phases = new Set<RaceCombatPhase>([...plan.fit.phases, ...(evolution?.fit.phases ?? [])]);
+  const roles = new Set<string>([...(plan.fit.roles ?? []), ...(evolution?.fit.roles ?? [])]);
+  const styles = new Set<string>([...(plan.fit.styles ?? []), ...(evolution?.fit.styles ?? [])]);
+
+  const parts: string[] = [];
+  const phaseList = (['START', 'POSITIONING', 'LATE', 'LAST_3F', 'OVERTIME'] as RaceCombatPhase[])
+    .filter((p) => phases.has(p)).map((p) => RACE_PHASE_LABEL[p]);
+  if (phaseList.length) parts.push(`${phaseList.join('·')}에 힘이 실립니다`);
+  if (roles.size) parts.push(`${[...roles].map((r) => ROLE_KO[r] ?? r).join('·')}에게 잘 맞습니다`);
+  if (styles.size) parts.push(`${[...styles].map((s) => STYLE_KO[s] ?? s).join('·')} 각질과 함께 갑니다`);
+  return parts.join(' · ');
 }

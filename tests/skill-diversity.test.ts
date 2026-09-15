@@ -1,4 +1,5 @@
 import { describe, expect, it } from 'vitest';
+import { CANONICAL_ROSTER_SIZE } from '../src/game/engine/constants';
 import { BattleEngine, type BattleSideInput } from '../src/game/engine/battle/engine';
 import { applyEffect, resolveEffectTargets, type EffectContext } from '../src/game/engine/battle/effects';
 import { heal } from '../src/game/engine/battle/combat-unit';
@@ -90,7 +91,7 @@ describe('spatial skills and conditional effects', () => {
 });
 
 describe('authored roster and race evidence', () => {
-  it('casts all 145 kits at every star level without non-finite combat state', () => {
+  it('casts every kit at every star level without non-finite combat state', () => {
     for (const u of ALL_UNITS) for (const star of [1, 2, 3] as const) {
       const side = (playerId: string): BattleSideInput => ({ playerId, augments: [], tacticianItems: [],
         units: [{ instanceId: 'unit', unitDefId: u.id, star, items: [], position: { q: 3, r: 0 } }] });
@@ -102,8 +103,8 @@ describe('authored roster and race evidence', () => {
     }
   });
 
-  it('has 145 finite profiles, explicit race IDs, and truthful race results', () => {
-    expect(Object.keys(profiles.units)).toHaveLength(145);
+  it('has a finite profile per unit, explicit race IDs, and truthful race results', () => {
+    expect(Object.keys(profiles.units)).toHaveLength(CANONICAL_ROSTER_SIZE);
     for (const [id, p] of Object.entries(profiles.units)) {
       expect(Number.isFinite(p.powerScale)).toBe(true);
       const race = evidence.units[id as keyof typeof evidence.units].representative;

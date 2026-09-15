@@ -3,7 +3,8 @@ import type { Cost, EffectDef, Role, TraitDef, TraitId, UnitDef } from '../types
 export const SEASON_IDS = ['s1', 's2', 's3', 's4', 's5'] as const;
 export type SeasonId = typeof SEASON_IDS[number];
 export const DEFAULT_SEASON: SeasonId = 's1';
-export const SEASON_COST_COUNTS: Record<Cost, number> = { 1: 14, 2: 14, 3: 13, 4: 11, 5: 8 };
+/** Mirrors COST_UNIT_COUNTS: every season fields the same 63-unit shape. */
+export const SEASON_COST_COUNTS: Record<Cost, number> = { 1: 14, 2: 15, 3: 13, 4: 12, 5: 9 };
 export const isSeasonId = (value: unknown): value is SeasonId => SEASON_IDS.includes(value as SeasonId);
 
 type Theme = { id: SeasonId; name: string; subtitle: string; color: string; focus: TraitId[] };

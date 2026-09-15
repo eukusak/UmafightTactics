@@ -1,7 +1,7 @@
 {
   "version": 1,
   "sourceSnapshot": "UMA_ROGUE_JPN_DB_20260904",
-  "rosterSize": 145,
+  "rosterSize": 148,
   "profiles": {
     "special_week": {
       "unitId": "special_week",
@@ -26,20 +26,20 @@
         "oikomi": "C"
       },
       "distancePct": {
-        "sprint": 0.355,
+        "sprint": 0.361,
         "mile": 0.297,
-        "middle": 0.903,
-        "long": 0.962
+        "middle": 0.902,
+        "long": 0.959
       },
       "surfacePct": {
-        "turf": 0.876,
+        "turf": 0.875,
         "dirt": 0.321
       },
       "stylePct": {
-        "nige": 0.393,
-        "senko": 0.297,
-        "sashi": 0.89,
-        "oikomi": 0.6
+        "nige": 0.399,
+        "senko": 0.301,
+        "sashi": 0.889,
+        "oikomi": 0.595
       },
       "courses": [
         {
@@ -91,20 +91,20 @@
         "oikomi": "E"
       },
       "distancePct": {
-        "sprint": 0.355,
-        "mile": 0.734,
-        "middle": 0.59,
-        "long": 0.352
+        "sprint": 0.361,
+        "mile": 0.726,
+        "middle": 0.588,
+        "long": 0.351
       },
       "surfacePct": {
-        "turf": 0.421,
+        "turf": 0.422,
         "dirt": 0.321
       },
       "stylePct": {
-        "nige": 0.841,
-        "senko": 0.297,
-        "sashi": 0.121,
-        "oikomi": 0.148
+        "nige": 0.845,
+        "senko": 0.301,
+        "sashi": 0.118,
+        "oikomi": 0.145
       },
       "courses": [
         {
@@ -150,20 +150,20 @@
         "oikomi": "D"
       },
       "distancePct": {
-        "sprint": 0.355,
-        "mile": 0.103,
-        "middle": 0.903,
-        "long": 0.352
+        "sprint": 0.361,
+        "mile": 0.105,
+        "middle": 0.902,
+        "long": 0.351
       },
       "surfacePct": {
-        "turf": 0.421,
+        "turf": 0.422,
         "dirt": 0.321
       },
       "stylePct": {
-        "nige": 0.393,
-        "senko": 0.869,
-        "sashi": 0.4,
-        "oikomi": 0.348
+        "nige": 0.399,
+        "senko": 0.868,
+        "sashi": 0.395,
+        "oikomi": 0.345
       },
       "courses": [],
       "going": [],
@@ -208,20 +208,20 @@
         "oikomi": "C"
       },
       "distancePct": {
-        "sprint": 0.879,
-        "mile": 0.734,
-        "middle": 0.079,
-        "long": 0.048
+        "sprint": 0.882,
+        "mile": 0.726,
+        "middle": 0.078,
+        "long": 0.047
       },
       "surfacePct": {
-        "turf": 0.421,
-        "dirt": 0.903
+        "turf": 0.422,
+        "dirt": 0.902
       },
       "stylePct": {
-        "nige": 0.393,
-        "senko": 0.297,
-        "sashi": 0.4,
-        "oikomi": 0.6
+        "nige": 0.399,
+        "senko": 0.301,
+        "sashi": 0.395,
+        "oikomi": 0.595
       },
       "courses": [],
       "going": [],
@@ -257,20 +257,20 @@
         "oikomi": "D"
       },
       "distancePct": {
-        "sprint": 0.676,
-        "mile": 0.734,
-        "middle": 0.59,
-        "long": 0.352
+        "sprint": 0.682,
+        "mile": 0.726,
+        "middle": 0.588,
+        "long": 0.351
       },
       "surfacePct": {
-        "turf": 0.876,
+        "turf": 0.875,
         "dirt": 0.321
       },
       "stylePct": {
-        "nige": 0.393,
-        "senko": 0.869,
-        "sashi": 0.4,
-        "oikomi": 0.348
+        "nige": 0.399,
+        "senko": 0.868,
+        "sashi": 0.395,
+        "oikomi": 0.345
       },
       "courses": [],
       "going": [],
@@ -308,20 +308,20 @@
         "oikomi": "C"
       },
       "distancePct": {
-        "sprint": 0.676,
-        "mile": 0.938,
-        "middle": 0.903,
-        "long": 0.352
+        "sprint": 0.682,
+        "mile": 0.932,
+        "middle": 0.902,
+        "long": 0.351
       },
       "surfacePct": {
-        "turf": 0.876,
-        "dirt": 0.786
+        "turf": 0.875,
+        "dirt": 0.784
       },
       "stylePct": {
-        "nige": 0.393,
-        "senko": 0.869,
-        "sashi": 0.4,
-        "oikomi": 0.6
+        "nige": 0.399,
+        "senko": 0.868,
+        "sashi": 0.395,
+        "oikomi": 0.595
       },
       "courses": [
         {
@@ -366,20 +366,20 @@
         "oikomi": "A"
       },
       "distancePct": {
-        "sprint": 0.355,
-        "mile": 0.493,
+        "sprint": 0.361,
+        "mile": 0.49,
         "middle": 0.297,
-        "long": 0.962
+        "long": 0.959
       },
       "surfacePct": {
-        "turf": 0.421,
+        "turf": 0.422,
         "dirt": 0.321
       },
       "stylePct": {
-        "nige": 0.148,
-        "senko": 0.297,
-        "sashi": 0.89,
-        "oikomi": 0.879
+        "nige": 0.155,
+        "senko": 0.301,
+        "sashi": 0.889,
+        "oikomi": 0.868
       },
       "courses": [
         {
@@ -444,20 +444,20 @@
         "oikomi": "C"
       },
       "distancePct": {
-        "sprint": 0.355,
-        "mile": 0.938,
+        "sprint": 0.361,
+        "mile": 0.932,
         "middle": 0.297,
-        "long": 0.352
+        "long": 0.351
       },
       "surfacePct": {
-        "turf": 0.876,
+        "turf": 0.875,
         "dirt": 0.321
       },
       "stylePct": {
-        "nige": 0.655,
-        "senko": 0.869,
-        "sashi": 0.617,
-        "oikomi": 0.6
+        "nige": 0.662,
+        "senko": 0.868,
+        "sashi": 0.615,
+        "oikomi": 0.595
       },
       "courses": [
         {
@@ -521,20 +521,20 @@
         "oikomi": "E"
       },
       "distancePct": {
-        "sprint": 0.355,
-        "mile": 0.493,
-        "middle": 0.903,
-        "long": 0.352
+        "sprint": 0.361,
+        "mile": 0.49,
+        "middle": 0.902,
+        "long": 0.351
       },
       "surfacePct": {
-        "turf": 0.876,
+        "turf": 0.875,
         "dirt": 0.321
       },
       "stylePct": {
-        "nige": 0.841,
-        "senko": 0.297,
-        "sashi": 0.121,
-        "oikomi": 0.148
+        "nige": 0.845,
+        "senko": 0.301,
+        "sashi": 0.118,
+        "oikomi": 0.145
       },
       "courses": [],
       "going": [],
@@ -572,20 +572,20 @@
         "oikomi": "F"
       },
       "distancePct": {
-        "sprint": 0.879,
-        "mile": 0.938,
-        "middle": 0.079,
-        "long": 0.048
+        "sprint": 0.882,
+        "mile": 0.932,
+        "middle": 0.078,
+        "long": 0.047
       },
       "surfacePct": {
-        "turf": 0.876,
-        "dirt": 0.786
+        "turf": 0.875,
+        "dirt": 0.784
       },
       "stylePct": {
-        "nige": 0.841,
-        "senko": 0.297,
-        "sashi": 0.121,
-        "oikomi": 0.031
+        "nige": 0.845,
+        "senko": 0.301,
+        "sashi": 0.118,
+        "oikomi": 0.03
       },
       "courses": [],
       "going": [],
@@ -624,20 +624,20 @@
         "oikomi": "C"
       },
       "distancePct": {
-        "sprint": 0.879,
-        "mile": 0.938,
-        "middle": 0.59,
-        "long": 0.352
+        "sprint": 0.882,
+        "mile": 0.932,
+        "middle": 0.588,
+        "long": 0.351
       },
       "surfacePct": {
-        "turf": 0.421,
+        "turf": 0.422,
         "dirt": 0.321
       },
       "stylePct": {
-        "nige": 0.393,
-        "senko": 0.597,
-        "sashi": 0.89,
-        "oikomi": 0.6
+        "nige": 0.399,
+        "senko": 0.598,
+        "sashi": 0.889,
+        "oikomi": 0.595
       },
       "courses": [],
       "going": [],
@@ -682,20 +682,20 @@
         "oikomi": "C"
       },
       "distancePct": {
-        "sprint": 0.779,
-        "mile": 0.938,
-        "middle": 0.59,
-        "long": 0.352
+        "sprint": 0.784,
+        "mile": 0.932,
+        "middle": 0.588,
+        "long": 0.351
       },
       "surfacePct": {
-        "turf": 0.421,
-        "dirt": 0.786
+        "turf": 0.422,
+        "dirt": 0.784
       },
       "stylePct": {
-        "nige": 0.393,
-        "senko": 0.597,
-        "sashi": 0.89,
-        "oikomi": 0.6
+        "nige": 0.399,
+        "senko": 0.598,
+        "sashi": 0.889,
+        "oikomi": 0.595
       },
       "courses": [],
       "going": [],
@@ -733,20 +733,20 @@
         "oikomi": "F"
       },
       "distancePct": {
-        "sprint": 0.355,
-        "mile": 0.103,
+        "sprint": 0.361,
+        "mile": 0.105,
         "middle": 0.176,
-        "long": 0.962
+        "long": 0.959
       },
       "surfacePct": {
-        "turf": 0.876,
+        "turf": 0.875,
         "dirt": 0.703
       },
       "stylePct": {
-        "nige": 0.841,
-        "senko": 0.597,
-        "sashi": 0.121,
-        "oikomi": 0.031
+        "nige": 0.845,
+        "senko": 0.598,
+        "sashi": 0.118,
+        "oikomi": 0.03
       },
       "courses": [
         {
@@ -810,20 +810,20 @@
         "oikomi": "D"
       },
       "distancePct": {
-        "sprint": 0.779,
-        "mile": 0.734,
-        "middle": 0.59,
-        "long": 0.352
+        "sprint": 0.784,
+        "mile": 0.726,
+        "middle": 0.588,
+        "long": 0.351
       },
       "surfacePct": {
-        "turf": 0.876,
+        "turf": 0.875,
         "dirt": 0.703
       },
       "stylePct": {
-        "nige": 0.393,
-        "senko": 0.869,
-        "sashi": 0.617,
-        "oikomi": 0.348
+        "nige": 0.399,
+        "senko": 0.868,
+        "sashi": 0.615,
+        "oikomi": 0.345
       },
       "courses": [],
       "going": [],
@@ -860,20 +860,20 @@
         "oikomi": "D"
       },
       "distancePct": {
-        "sprint": 0.052,
-        "mile": 0.103,
-        "middle": 0.903,
-        "long": 0.962
+        "sprint": 0.057,
+        "mile": 0.105,
+        "middle": 0.902,
+        "long": 0.959
       },
       "surfacePct": {
-        "turf": 0.876,
+        "turf": 0.875,
         "dirt": 0.703
       },
       "stylePct": {
-        "nige": 0.393,
-        "senko": 0.869,
-        "sashi": 0.4,
-        "oikomi": 0.348
+        "nige": 0.399,
+        "senko": 0.868,
+        "sashi": 0.395,
+        "oikomi": 0.345
       },
       "courses": [],
       "going": [],
@@ -918,20 +918,20 @@
         "oikomi": "D"
       },
       "distancePct": {
-        "sprint": 0.355,
-        "mile": 0.734,
+        "sprint": 0.361,
+        "mile": 0.726,
         "middle": 0.297,
-        "long": 0.962
+        "long": 0.959
       },
       "surfacePct": {
-        "turf": 0.876,
+        "turf": 0.875,
         "dirt": 0.321
       },
       "stylePct": {
-        "nige": 0.393,
-        "senko": 0.869,
-        "sashi": 0.4,
-        "oikomi": 0.348
+        "nige": 0.399,
+        "senko": 0.868,
+        "sashi": 0.395,
+        "oikomi": 0.345
       },
       "courses": [
         {
@@ -996,20 +996,20 @@
         "oikomi": "C"
       },
       "distancePct": {
-        "sprint": 0.052,
-        "mile": 0.103,
-        "middle": 0.59,
-        "long": 0.352
+        "sprint": 0.057,
+        "mile": 0.105,
+        "middle": 0.588,
+        "long": 0.351
       },
       "surfacePct": {
-        "turf": 0.421,
+        "turf": 0.422,
         "dirt": 0.321
       },
       "stylePct": {
-        "nige": 0.393,
-        "senko": 0.297,
-        "sashi": 0.4,
-        "oikomi": 0.6
+        "nige": 0.399,
+        "senko": 0.301,
+        "sashi": 0.395,
+        "oikomi": 0.595
       },
       "courses": [],
       "going": [],
@@ -1044,20 +1044,20 @@
         "oikomi": "D"
       },
       "distancePct": {
-        "sprint": 0.355,
-        "mile": 0.493,
-        "middle": 0.903,
-        "long": 0.352
+        "sprint": 0.361,
+        "mile": 0.49,
+        "middle": 0.902,
+        "long": 0.351
       },
       "surfacePct": {
-        "turf": 0.876,
+        "turf": 0.875,
         "dirt": 0.321
       },
       "stylePct": {
-        "nige": 0.393,
-        "senko": 0.869,
-        "sashi": 0.4,
-        "oikomi": 0.348
+        "nige": 0.399,
+        "senko": 0.868,
+        "sashi": 0.395,
+        "oikomi": 0.345
       },
       "courses": [
         {
@@ -1103,20 +1103,20 @@
         "oikomi": "B"
       },
       "distancePct": {
-        "sprint": 0.355,
-        "mile": 0.938,
+        "sprint": 0.361,
+        "mile": 0.932,
         "middle": 0.014,
-        "long": 0.352
+        "long": 0.351
       },
       "surfacePct": {
-        "turf": 0.086,
-        "dirt": 0.903
+        "turf": 0.088,
+        "dirt": 0.902
       },
       "stylePct": {
-        "nige": 0.655,
-        "senko": 0.869,
-        "sashi": 0.4,
-        "oikomi": 0.797
+        "nige": 0.662,
+        "senko": 0.868,
+        "sashi": 0.395,
+        "oikomi": 0.787
       },
       "courses": [],
       "going": [],
@@ -1163,20 +1163,20 @@
         "oikomi": "E"
       },
       "distancePct": {
-        "sprint": 0.355,
+        "sprint": 0.361,
         "mile": 0.297,
-        "middle": 0.903,
-        "long": 0.648
+        "middle": 0.902,
+        "long": 0.649
       },
       "surfacePct": {
-        "turf": 0.421,
+        "turf": 0.422,
         "dirt": 0.321
       },
       "stylePct": {
-        "nige": 0.841,
-        "senko": 0.297,
-        "sashi": 0.121,
-        "oikomi": 0.148
+        "nige": 0.845,
+        "senko": 0.301,
+        "sashi": 0.118,
+        "oikomi": 0.145
       },
       "courses": [],
       "going": [],
@@ -1214,20 +1214,20 @@
         "oikomi": "A"
       },
       "distancePct": {
-        "sprint": 0.355,
+        "sprint": 0.361,
         "mile": 0.003,
-        "middle": 0.903,
-        "long": 0.821
+        "middle": 0.902,
+        "long": 0.818
       },
       "surfacePct": {
-        "turf": 0.876,
+        "turf": 0.875,
         "dirt": 0.652
       },
       "stylePct": {
-        "nige": 0.593,
-        "senko": 0.697,
-        "sashi": 0.617,
-        "oikomi": 0.879
+        "nige": 0.598,
+        "senko": 0.696,
+        "sashi": 0.615,
+        "oikomi": 0.868
       },
       "courses": [],
       "going": [
@@ -1272,20 +1272,20 @@
         "oikomi": "D"
       },
       "distancePct": {
-        "sprint": 0.355,
+        "sprint": 0.361,
         "mile": 0.297,
-        "middle": 0.903,
-        "long": 0.352
+        "middle": 0.902,
+        "long": 0.351
       },
       "surfacePct": {
-        "turf": 0.421,
+        "turf": 0.422,
         "dirt": 0.321
       },
       "stylePct": {
-        "nige": 0.841,
-        "senko": 0.297,
-        "sashi": 0.4,
-        "oikomi": 0.348
+        "nige": 0.845,
+        "senko": 0.301,
+        "sashi": 0.395,
+        "oikomi": 0.345
       },
       "courses": [
         {
@@ -1336,20 +1336,20 @@
         "oikomi": "E"
       },
       "distancePct": {
-        "sprint": 0.676,
+        "sprint": 0.682,
         "mile": 0.297,
-        "middle": 0.903,
-        "long": 0.821
+        "middle": 0.902,
+        "long": 0.818
       },
       "surfacePct": {
-        "turf": 0.876,
+        "turf": 0.875,
         "dirt": 0.321
       },
       "stylePct": {
-        "nige": 0.841,
-        "senko": 0.297,
-        "sashi": 0.121,
-        "oikomi": 0.148
+        "nige": 0.845,
+        "senko": 0.301,
+        "sashi": 0.118,
+        "oikomi": 0.145
       },
       "courses": [],
       "going": [],
@@ -1388,20 +1388,20 @@
         "oikomi": "D"
       },
       "distancePct": {
-        "sprint": 0.355,
+        "sprint": 0.361,
         "mile": 0.297,
         "middle": 0.297,
-        "long": 0.962
+        "long": 0.959
       },
       "surfacePct": {
-        "turf": 0.876,
+        "turf": 0.875,
         "dirt": 0.703
       },
       "stylePct": {
-        "nige": 0.841,
-        "senko": 0.297,
-        "sashi": 0.121,
-        "oikomi": 0.348
+        "nige": 0.845,
+        "senko": 0.301,
+        "sashi": 0.118,
+        "oikomi": 0.345
       },
       "courses": [
         {
@@ -1452,20 +1452,20 @@
         "oikomi": "E"
       },
       "distancePct": {
-        "sprint": 0.355,
-        "mile": 0.493,
-        "middle": 0.903,
-        "long": 0.648
+        "sprint": 0.361,
+        "mile": 0.49,
+        "middle": 0.902,
+        "long": 0.649
       },
       "surfacePct": {
-        "turf": 0.876,
+        "turf": 0.875,
         "dirt": 0.321
       },
       "stylePct": {
-        "nige": 0.841,
-        "senko": 0.297,
-        "sashi": 0.121,
-        "oikomi": 0.148
+        "nige": 0.845,
+        "senko": 0.301,
+        "sashi": 0.118,
+        "oikomi": 0.145
       },
       "courses": [],
       "going": [],
@@ -1509,20 +1509,20 @@
         "oikomi": "C"
       },
       "distancePct": {
-        "sprint": 0.355,
-        "mile": 0.493,
-        "middle": 0.59,
-        "long": 0.821
+        "sprint": 0.361,
+        "mile": 0.49,
+        "middle": 0.588,
+        "long": 0.818
       },
       "surfacePct": {
-        "turf": 0.421,
+        "turf": 0.422,
         "dirt": 0.321
       },
       "stylePct": {
-        "nige": 0.148,
-        "senko": 0.297,
-        "sashi": 0.89,
-        "oikomi": 0.6
+        "nige": 0.155,
+        "senko": 0.301,
+        "sashi": 0.889,
+        "oikomi": 0.595
       },
       "courses": [
         {
@@ -1587,20 +1587,20 @@
         "oikomi": "E"
       },
       "distancePct": {
-        "sprint": 0.879,
-        "mile": 0.734,
-        "middle": 0.079,
-        "long": 0.048
+        "sprint": 0.882,
+        "mile": 0.726,
+        "middle": 0.078,
+        "long": 0.047
       },
       "surfacePct": {
-        "turf": 0.421,
-        "dirt": 0.786
+        "turf": 0.422,
+        "dirt": 0.784
       },
       "stylePct": {
-        "nige": 0.841,
-        "senko": 0.297,
-        "sashi": 0.121,
-        "oikomi": 0.148
+        "nige": 0.845,
+        "senko": 0.301,
+        "sashi": 0.118,
+        "oikomi": 0.145
       },
       "courses": [
         {
@@ -1669,20 +1669,20 @@
         "oikomi": "F"
       },
       "distancePct": {
-        "sprint": 0.779,
-        "mile": 0.734,
-        "middle": 0.59,
-        "long": 0.352
+        "sprint": 0.784,
+        "mile": 0.726,
+        "middle": 0.588,
+        "long": 0.351
       },
       "surfacePct": {
-        "turf": 0.421,
+        "turf": 0.422,
         "dirt": 0.703
       },
       "stylePct": {
-        "nige": 0.841,
-        "senko": 0.297,
-        "sashi": 0.121,
-        "oikomi": 0.031
+        "nige": 0.845,
+        "senko": 0.301,
+        "sashi": 0.118,
+        "oikomi": 0.03
       },
       "courses": [],
       "going": [],
@@ -1726,20 +1726,20 @@
         "oikomi": "D"
       },
       "distancePct": {
-        "sprint": 0.052,
-        "mile": 0.103,
-        "middle": 0.079,
-        "long": 0.962
+        "sprint": 0.057,
+        "mile": 0.105,
+        "middle": 0.078,
+        "long": 0.959
       },
       "surfacePct": {
-        "turf": 0.421,
+        "turf": 0.422,
         "dirt": 0.321
       },
       "stylePct": {
-        "nige": 0.393,
-        "senko": 0.697,
-        "sashi": 0.4,
-        "oikomi": 0.348
+        "nige": 0.399,
+        "senko": 0.696,
+        "sashi": 0.395,
+        "oikomi": 0.345
       },
       "courses": [
         {
@@ -1797,20 +1797,20 @@
         "oikomi": "E"
       },
       "distancePct": {
-        "sprint": 0.355,
-        "mile": 0.734,
-        "middle": 0.59,
-        "long": 0.352
+        "sprint": 0.361,
+        "mile": 0.726,
+        "middle": 0.588,
+        "long": 0.351
       },
       "surfacePct": {
-        "turf": 0.421,
+        "turf": 0.422,
         "dirt": 0.321
       },
       "stylePct": {
-        "nige": 0.841,
-        "senko": 0.297,
-        "sashi": 0.121,
-        "oikomi": 0.148
+        "nige": 0.845,
+        "senko": 0.301,
+        "sashi": 0.118,
+        "oikomi": 0.145
       },
       "courses": [],
       "going": [
@@ -1854,20 +1854,20 @@
         "oikomi": "D"
       },
       "distancePct": {
-        "sprint": 0.052,
-        "mile": 0.103,
-        "middle": 0.903,
-        "long": 0.352
+        "sprint": 0.057,
+        "mile": 0.105,
+        "middle": 0.902,
+        "long": 0.351
       },
       "surfacePct": {
-        "turf": 0.876,
+        "turf": 0.875,
         "dirt": 0.321
       },
       "stylePct": {
-        "nige": 0.393,
-        "senko": 0.697,
-        "sashi": 0.728,
-        "oikomi": 0.348
+        "nige": 0.399,
+        "senko": 0.696,
+        "sashi": 0.726,
+        "oikomi": 0.345
       },
       "courses": [],
       "going": [],
@@ -1905,20 +1905,20 @@
         "oikomi": "B"
       },
       "distancePct": {
-        "sprint": 0.355,
-        "mile": 0.103,
-        "middle": 0.59,
-        "long": 0.352
+        "sprint": 0.361,
+        "mile": 0.105,
+        "middle": 0.588,
+        "long": 0.351
       },
       "surfacePct": {
-        "turf": 0.421,
+        "turf": 0.422,
         "dirt": 0.321
       },
       "stylePct": {
-        "nige": 0.041,
-        "senko": 0.297,
-        "sashi": 0.728,
-        "oikomi": 0.797
+        "nige": 0.044,
+        "senko": 0.301,
+        "sashi": 0.726,
+        "oikomi": 0.787
       },
       "courses": [],
       "going": [],
@@ -1956,20 +1956,20 @@
         "oikomi": "A"
       },
       "distancePct": {
-        "sprint": 0.355,
-        "mile": 0.734,
-        "middle": 0.59,
-        "long": 0.821
+        "sprint": 0.361,
+        "mile": 0.726,
+        "middle": 0.588,
+        "long": 0.818
       },
       "surfacePct": {
-        "turf": 0.421,
+        "turf": 0.422,
         "dirt": 0.321
       },
       "stylePct": {
-        "nige": 0.148,
-        "senko": 0.297,
-        "sashi": 0.728,
-        "oikomi": 0.879
+        "nige": 0.155,
+        "senko": 0.301,
+        "sashi": 0.726,
+        "oikomi": 0.868
       },
       "courses": [
         {
@@ -2011,20 +2011,20 @@
         "oikomi": "C"
       },
       "distancePct": {
-        "sprint": 0.355,
+        "sprint": 0.361,
         "mile": 0.297,
-        "middle": 0.59,
-        "long": 0.821
+        "middle": 0.588,
+        "long": 0.818
       },
       "surfacePct": {
-        "turf": 0.421,
+        "turf": 0.422,
         "dirt": 0.321
       },
       "stylePct": {
-        "nige": 0.393,
-        "senko": 0.697,
-        "sashi": 0.728,
-        "oikomi": 0.6
+        "nige": 0.399,
+        "senko": 0.696,
+        "sashi": 0.726,
+        "oikomi": 0.595
       },
       "courses": [],
       "going": [],
@@ -2069,20 +2069,20 @@
         "oikomi": "S"
       },
       "distancePct": {
-        "sprint": 0.355,
-        "mile": 0.493,
-        "middle": 0.59,
-        "long": 0.821
+        "sprint": 0.361,
+        "mile": 0.49,
+        "middle": 0.588,
+        "long": 0.818
       },
       "surfacePct": {
-        "turf": 0.421,
+        "turf": 0.422,
         "dirt": 0.321
       },
       "stylePct": {
-        "nige": 0.148,
-        "senko": 0.031,
-        "sashi": 0.4,
-        "oikomi": 0.952
+        "nige": 0.155,
+        "senko": 0.034,
+        "sashi": 0.395,
+        "oikomi": 0.946
       },
       "courses": [],
       "going": [],
@@ -2126,20 +2126,20 @@
         "oikomi": "C"
       },
       "distancePct": {
-        "sprint": 0.355,
+        "sprint": 0.361,
         "mile": 0.297,
-        "middle": 0.59,
-        "long": 0.821
+        "middle": 0.588,
+        "long": 0.818
       },
       "surfacePct": {
-        "turf": 0.421,
+        "turf": 0.422,
         "dirt": 0.321
       },
       "stylePct": {
-        "nige": 0.148,
-        "senko": 0.297,
-        "sashi": 0.89,
-        "oikomi": 0.6
+        "nige": 0.155,
+        "senko": 0.301,
+        "sashi": 0.889,
+        "oikomi": 0.595
       },
       "courses": [],
       "going": [],
@@ -2184,20 +2184,20 @@
         "oikomi": "F"
       },
       "distancePct": {
-        "sprint": 0.969,
-        "mile": 0.103,
+        "sprint": 0.97,
+        "mile": 0.105,
         "middle": 0.014,
         "long": 0.007
       },
       "surfacePct": {
-        "turf": 0.421,
-        "dirt": 0.786
+        "turf": 0.422,
+        "dirt": 0.784
       },
       "stylePct": {
-        "nige": 0.841,
-        "senko": 0.597,
-        "sashi": 0.121,
-        "oikomi": 0.031
+        "nige": 0.845,
+        "senko": 0.598,
+        "sashi": 0.118,
+        "oikomi": 0.03
       },
       "courses": [
         {
@@ -2255,20 +2255,20 @@
         "oikomi": "D"
       },
       "distancePct": {
-        "sprint": 0.779,
+        "sprint": 0.784,
         "mile": 0.297,
-        "middle": 0.59,
-        "long": 0.352
+        "middle": 0.588,
+        "long": 0.351
       },
       "surfacePct": {
-        "turf": 0.421,
+        "turf": 0.422,
         "dirt": 0.321
       },
       "stylePct": {
-        "nige": 0.593,
-        "senko": 0.869,
-        "sashi": 0.4,
-        "oikomi": 0.348
+        "nige": 0.598,
+        "senko": 0.868,
+        "sashi": 0.395,
+        "oikomi": 0.345
       },
       "courses": [],
       "going": [],
@@ -2305,20 +2305,20 @@
         "oikomi": "C"
       },
       "distancePct": {
-        "sprint": 0.676,
-        "mile": 0.734,
+        "sprint": 0.682,
+        "mile": 0.726,
         "middle": 0.297,
-        "long": 0.697
+        "long": 0.696
       },
       "surfacePct": {
-        "turf": 0.421,
-        "dirt": 0.845
+        "turf": 0.422,
+        "dirt": 0.841
       },
       "stylePct": {
-        "nige": 0.393,
-        "senko": 0.297,
-        "sashi": 0.89,
-        "oikomi": 0.6
+        "nige": 0.399,
+        "senko": 0.301,
+        "sashi": 0.889,
+        "oikomi": 0.595
       },
       "courses": [],
       "going": [],
@@ -2362,20 +2362,20 @@
         "oikomi": "F"
       },
       "distancePct": {
-        "sprint": 0.969,
-        "mile": 0.103,
-        "middle": 0.079,
-        "long": 0.048
+        "sprint": 0.97,
+        "mile": 0.105,
+        "middle": 0.078,
+        "long": 0.047
       },
       "surfacePct": {
-        "turf": 0.421,
-        "dirt": 0.845
+        "turf": 0.422,
+        "dirt": 0.841
       },
       "stylePct": {
-        "nige": 0.841,
-        "senko": 0.297,
-        "sashi": 0.121,
-        "oikomi": 0.031
+        "nige": 0.845,
+        "senko": 0.301,
+        "sashi": 0.118,
+        "oikomi": 0.03
       },
       "courses": [
         {
@@ -2428,20 +2428,20 @@
         "oikomi": "B"
       },
       "distancePct": {
-        "sprint": 0.969,
-        "mile": 0.493,
+        "sprint": 0.97,
+        "mile": 0.49,
         "middle": 0.176,
-        "long": 0.352
+        "long": 0.351
       },
       "surfacePct": {
-        "turf": 0.421,
+        "turf": 0.422,
         "dirt": 0.321
       },
       "stylePct": {
-        "nige": 0.393,
-        "senko": 0.869,
-        "sashi": 0.4,
-        "oikomi": 0.797
+        "nige": 0.399,
+        "senko": 0.868,
+        "sashi": 0.395,
+        "oikomi": 0.787
       },
       "courses": [],
       "going": [],
@@ -2492,20 +2492,20 @@
         "oikomi": "D"
       },
       "distancePct": {
-        "sprint": 0.879,
-        "mile": 0.734,
+        "sprint": 0.882,
+        "mile": 0.726,
         "middle": 0.297,
-        "long": 0.352
+        "long": 0.351
       },
       "surfacePct": {
-        "turf": 0.062,
-        "dirt": 0.903
+        "turf": 0.061,
+        "dirt": 0.902
       },
       "stylePct": {
-        "nige": 0.393,
-        "senko": 0.869,
-        "sashi": 0.728,
-        "oikomi": 0.348
+        "nige": 0.399,
+        "senko": 0.868,
+        "sashi": 0.726,
+        "oikomi": 0.345
       },
       "courses": [
         {
@@ -2562,20 +2562,20 @@
         "oikomi": "A"
       },
       "distancePct": {
-        "sprint": 0.779,
+        "sprint": 0.784,
         "mile": 0.297,
-        "middle": 0.903,
-        "long": 0.352
+        "middle": 0.902,
+        "long": 0.351
       },
       "surfacePct": {
-        "turf": 0.421,
+        "turf": 0.422,
         "dirt": 0.321
       },
       "stylePct": {
-        "nige": 0.148,
-        "senko": 0.297,
-        "sashi": 0.89,
-        "oikomi": 0.879
+        "nige": 0.155,
+        "senko": 0.301,
+        "sashi": 0.889,
+        "oikomi": 0.868
       },
       "courses": [],
       "going": [],
@@ -2614,20 +2614,20 @@
         "oikomi": "C"
       },
       "distancePct": {
-        "sprint": 0.052,
-        "mile": 0.103,
+        "sprint": 0.057,
+        "mile": 0.105,
         "middle": 0.297,
-        "long": 0.821
+        "long": 0.818
       },
       "surfacePct": {
-        "turf": 0.876,
+        "turf": 0.875,
         "dirt": 0.321
       },
       "stylePct": {
-        "nige": 0.593,
-        "senko": 0.297,
-        "sashi": 0.728,
-        "oikomi": 0.6
+        "nige": 0.598,
+        "senko": 0.301,
+        "sashi": 0.726,
+        "oikomi": 0.595
       },
       "courses": [
         {
@@ -2679,20 +2679,20 @@
         "oikomi": "E"
       },
       "distancePct": {
-        "sprint": 0.969,
+        "sprint": 0.97,
         "mile": 0.297,
-        "middle": 0.903,
-        "long": 0.352
+        "middle": 0.902,
+        "long": 0.351
       },
       "surfacePct": {
-        "turf": 0.021,
-        "dirt": 0.972
+        "turf": 0.02,
+        "dirt": 0.973
       },
       "stylePct": {
-        "nige": 0.841,
-        "senko": 0.297,
-        "sashi": 0.121,
-        "oikomi": 0.148
+        "nige": 0.845,
+        "senko": 0.301,
+        "sashi": 0.118,
+        "oikomi": 0.145
       },
       "courses": [
         {
@@ -2746,20 +2746,20 @@
         "oikomi": "D"
       },
       "distancePct": {
-        "sprint": 0.355,
-        "mile": 0.103,
-        "middle": 0.903,
-        "long": 0.697
+        "sprint": 0.361,
+        "mile": 0.105,
+        "middle": 0.902,
+        "long": 0.696
       },
       "surfacePct": {
-        "turf": 0.876,
+        "turf": 0.875,
         "dirt": 0.321
       },
       "stylePct": {
-        "nige": 0.393,
-        "senko": 0.869,
-        "sashi": 0.4,
-        "oikomi": 0.348
+        "nige": 0.399,
+        "senko": 0.868,
+        "sashi": 0.395,
+        "oikomi": 0.345
       },
       "courses": [
         {
@@ -2822,20 +2822,20 @@
         "oikomi": "D"
       },
       "distancePct": {
-        "sprint": 0.355,
-        "mile": 0.493,
+        "sprint": 0.361,
+        "mile": 0.49,
         "middle": 0.176,
-        "long": 0.821
+        "long": 0.818
       },
       "surfacePct": {
-        "turf": 0.421,
+        "turf": 0.422,
         "dirt": 0.321
       },
       "stylePct": {
-        "nige": 0.841,
-        "senko": 0.297,
-        "sashi": 0.4,
-        "oikomi": 0.348
+        "nige": 0.845,
+        "senko": 0.301,
+        "sashi": 0.395,
+        "oikomi": 0.345
       },
       "courses": [
         {
@@ -2893,20 +2893,20 @@
         "oikomi": "D"
       },
       "distancePct": {
-        "sprint": 0.355,
-        "mile": 0.734,
-        "middle": 0.59,
-        "long": 0.352
+        "sprint": 0.361,
+        "mile": 0.726,
+        "middle": 0.588,
+        "long": 0.351
       },
       "surfacePct": {
-        "turf": 0.421,
+        "turf": 0.422,
         "dirt": 0.321
       },
       "stylePct": {
-        "nige": 0.393,
-        "senko": 0.869,
-        "sashi": 0.617,
-        "oikomi": 0.348
+        "nige": 0.399,
+        "senko": 0.868,
+        "sashi": 0.615,
+        "oikomi": 0.345
       },
       "courses": [],
       "going": [],
@@ -2945,20 +2945,20 @@
         "oikomi": "S"
       },
       "distancePct": {
-        "sprint": 0.355,
+        "sprint": 0.361,
         "mile": 0.297,
-        "middle": 0.59,
-        "long": 0.352
+        "middle": 0.588,
+        "long": 0.351
       },
       "surfacePct": {
-        "turf": 0.421,
+        "turf": 0.422,
         "dirt": 0.321
       },
       "stylePct": {
-        "nige": 0.041,
-        "senko": 0.031,
-        "sashi": 0.4,
-        "oikomi": 0.952
+        "nige": 0.044,
+        "senko": 0.034,
+        "sashi": 0.395,
+        "oikomi": 0.946
       },
       "courses": [
         {
@@ -3028,20 +3028,20 @@
         "oikomi": "D"
       },
       "distancePct": {
-        "sprint": 0.969,
-        "mile": 0.493,
-        "middle": 0.079,
-        "long": 0.352
+        "sprint": 0.97,
+        "mile": 0.49,
+        "middle": 0.078,
+        "long": 0.351
       },
       "surfacePct": {
-        "turf": 0.421,
-        "dirt": 0.786
+        "turf": 0.422,
+        "dirt": 0.784
       },
       "stylePct": {
-        "nige": 0.841,
-        "senko": 0.597,
-        "sashi": 0.4,
-        "oikomi": 0.348
+        "nige": 0.845,
+        "senko": 0.598,
+        "sashi": 0.395,
+        "oikomi": 0.345
       },
       "courses": [],
       "going": [],
@@ -3086,20 +3086,20 @@
         "oikomi": "C"
       },
       "distancePct": {
-        "sprint": 0.879,
-        "mile": 0.103,
+        "sprint": 0.882,
+        "mile": 0.105,
         "middle": 0.014,
         "long": 0.007
       },
       "surfacePct": {
-        "turf": 0.021,
-        "dirt": 0.903
+        "turf": 0.02,
+        "dirt": 0.902
       },
       "stylePct": {
-        "nige": 0.393,
-        "senko": 0.297,
-        "sashi": 0.4,
-        "oikomi": 0.6
+        "nige": 0.399,
+        "senko": 0.301,
+        "sashi": 0.395,
+        "oikomi": 0.595
       },
       "courses": [],
       "going": [],
@@ -3132,20 +3132,20 @@
         "oikomi": "B"
       },
       "distancePct": {
-        "sprint": 0.879,
-        "mile": 0.734,
+        "sprint": 0.882,
+        "mile": 0.726,
         "middle": 0.297,
-        "long": 0.352
+        "long": 0.351
       },
       "surfacePct": {
-        "turf": 0.421,
+        "turf": 0.422,
         "dirt": 0.703
       },
       "stylePct": {
-        "nige": 0.393,
-        "senko": 0.297,
-        "sashi": 0.89,
-        "oikomi": 0.797
+        "nige": 0.399,
+        "senko": 0.301,
+        "sashi": 0.889,
+        "oikomi": 0.787
       },
       "courses": [
         {
@@ -3215,20 +3215,20 @@
         "oikomi": "B"
       },
       "distancePct": {
-        "sprint": 0.879,
-        "mile": 0.493,
-        "middle": 0.079,
-        "long": 0.048
+        "sprint": 0.882,
+        "mile": 0.49,
+        "middle": 0.078,
+        "long": 0.047
       },
       "surfacePct": {
-        "turf": 0.421,
-        "dirt": 0.903
+        "turf": 0.422,
+        "dirt": 0.902
       },
       "stylePct": {
-        "nige": 0.148,
-        "senko": 0.297,
-        "sashi": 0.89,
-        "oikomi": 0.797
+        "nige": 0.155,
+        "senko": 0.301,
+        "sashi": 0.889,
+        "oikomi": 0.787
       },
       "courses": [
         {
@@ -3278,20 +3278,20 @@
         "oikomi": "C"
       },
       "distancePct": {
-        "sprint": 0.355,
+        "sprint": 0.361,
         "mile": 0.297,
-        "middle": 0.903,
-        "long": 0.697
+        "middle": 0.902,
+        "long": 0.696
       },
       "surfacePct": {
-        "turf": 0.876,
+        "turf": 0.875,
         "dirt": 0.703
       },
       "stylePct": {
-        "nige": 0.393,
-        "senko": 0.869,
-        "sashi": 0.617,
-        "oikomi": 0.6
+        "nige": 0.399,
+        "senko": 0.868,
+        "sashi": 0.615,
+        "oikomi": 0.595
       },
       "courses": [],
       "going": [],
@@ -3336,20 +3336,20 @@
         "oikomi": "B"
       },
       "distancePct": {
-        "sprint": 0.676,
+        "sprint": 0.682,
         "mile": 0.297,
         "middle": 0.176,
-        "long": 0.821
+        "long": 0.818
       },
       "surfacePct": {
-        "turf": 0.421,
-        "dirt": 0.903
+        "turf": 0.422,
+        "dirt": 0.902
       },
       "stylePct": {
-        "nige": 0.593,
-        "senko": 0.869,
-        "sashi": 0.728,
-        "oikomi": 0.797
+        "nige": 0.598,
+        "senko": 0.868,
+        "sashi": 0.726,
+        "oikomi": 0.787
       },
       "courses": [
         {
@@ -3400,20 +3400,20 @@
         "oikomi": "C"
       },
       "distancePct": {
-        "sprint": 0.052,
-        "mile": 0.103,
-        "middle": 0.59,
-        "long": 0.648
+        "sprint": 0.057,
+        "mile": 0.105,
+        "middle": 0.588,
+        "long": 0.649
       },
       "surfacePct": {
-        "turf": 0.421,
+        "turf": 0.422,
         "dirt": 0.321
       },
       "stylePct": {
-        "nige": 0.393,
-        "senko": 0.297,
-        "sashi": 0.4,
-        "oikomi": 0.6
+        "nige": 0.399,
+        "senko": 0.301,
+        "sashi": 0.395,
+        "oikomi": 0.595
       },
       "courses": [],
       "going": [],
@@ -3446,20 +3446,20 @@
         "oikomi": "E"
       },
       "distancePct": {
-        "sprint": 0.355,
-        "mile": 0.103,
-        "middle": 0.903,
-        "long": 0.697
+        "sprint": 0.361,
+        "mile": 0.105,
+        "middle": 0.902,
+        "long": 0.696
       },
       "surfacePct": {
-        "turf": 0.421,
+        "turf": 0.422,
         "dirt": 0.703
       },
       "stylePct": {
-        "nige": 0.841,
-        "senko": 0.597,
-        "sashi": 0.728,
-        "oikomi": 0.148
+        "nige": 0.845,
+        "senko": 0.598,
+        "sashi": 0.726,
+        "oikomi": 0.145
       },
       "courses": [],
       "going": [],
@@ -3505,20 +3505,20 @@
         "oikomi": "C"
       },
       "distancePct": {
-        "sprint": 0.676,
-        "mile": 0.734,
-        "middle": 0.59,
-        "long": 0.352
+        "sprint": 0.682,
+        "mile": 0.726,
+        "middle": 0.588,
+        "long": 0.351
       },
       "surfacePct": {
-        "turf": 0.421,
+        "turf": 0.422,
         "dirt": 0.321
       },
       "stylePct": {
-        "nige": 0.393,
-        "senko": 0.697,
-        "sashi": 0.89,
-        "oikomi": 0.6
+        "nige": 0.399,
+        "senko": 0.696,
+        "sashi": 0.889,
+        "oikomi": 0.595
       },
       "courses": [
         {
@@ -3589,20 +3589,20 @@
         "oikomi": "S"
       },
       "distancePct": {
-        "sprint": 0.779,
-        "mile": 0.734,
-        "middle": 0.59,
-        "long": 0.821
+        "sprint": 0.784,
+        "mile": 0.726,
+        "middle": 0.588,
+        "long": 0.818
       },
       "surfacePct": {
-        "turf": 0.421,
-        "dirt": 0.903
+        "turf": 0.422,
+        "dirt": 0.902
       },
       "stylePct": {
-        "nige": 0.041,
-        "senko": 0.597,
-        "sashi": 0.728,
-        "oikomi": 0.952
+        "nige": 0.044,
+        "senko": 0.598,
+        "sashi": 0.726,
+        "oikomi": 0.946
       },
       "courses": [
         {
@@ -3671,20 +3671,20 @@
         "oikomi": "B"
       },
       "distancePct": {
-        "sprint": 0.879,
-        "mile": 0.734,
-        "middle": 0.59,
-        "long": 0.697
+        "sprint": 0.882,
+        "mile": 0.726,
+        "middle": 0.588,
+        "long": 0.696
       },
       "surfacePct": {
-        "turf": 0.421,
+        "turf": 0.422,
         "dirt": 0.652
       },
       "stylePct": {
-        "nige": 0.593,
-        "senko": 0.869,
-        "sashi": 0.617,
-        "oikomi": 0.797
+        "nige": 0.598,
+        "senko": 0.868,
+        "sashi": 0.615,
+        "oikomi": 0.787
       },
       "courses": [
         {
@@ -3748,20 +3748,20 @@
         "oikomi": "S"
       },
       "distancePct": {
-        "sprint": 0.355,
-        "mile": 0.493,
-        "middle": 0.59,
-        "long": 0.821
+        "sprint": 0.361,
+        "mile": 0.49,
+        "middle": 0.588,
+        "long": 0.818
       },
       "surfacePct": {
-        "turf": 0.421,
+        "turf": 0.422,
         "dirt": 0.321
       },
       "stylePct": {
-        "nige": 0.655,
-        "senko": 0.297,
-        "sashi": 0.4,
-        "oikomi": 0.952
+        "nige": 0.662,
+        "senko": 0.301,
+        "sashi": 0.395,
+        "oikomi": 0.946
       },
       "courses": [
         {
@@ -3806,20 +3806,20 @@
         "oikomi": "C"
       },
       "distancePct": {
-        "sprint": 0.676,
-        "mile": 0.734,
-        "middle": 0.59,
-        "long": 0.648
+        "sprint": 0.682,
+        "mile": 0.726,
+        "middle": 0.588,
+        "long": 0.649
       },
       "surfacePct": {
-        "turf": 0.421,
+        "turf": 0.422,
         "dirt": 0.321
       },
       "stylePct": {
-        "nige": 0.655,
-        "senko": 0.869,
-        "sashi": 0.617,
-        "oikomi": 0.6
+        "nige": 0.662,
+        "senko": 0.868,
+        "sashi": 0.615,
+        "oikomi": 0.595
       },
       "courses": [],
       "going": [
@@ -3870,20 +3870,20 @@
         "oikomi": "E"
       },
       "distancePct": {
-        "sprint": 0.355,
-        "mile": 0.103,
+        "sprint": 0.361,
+        "mile": 0.105,
         "middle": 0.297,
-        "long": 0.821
+        "long": 0.818
       },
       "surfacePct": {
-        "turf": 0.421,
-        "dirt": 0.786
+        "turf": 0.422,
+        "dirt": 0.784
       },
       "stylePct": {
-        "nige": 0.841,
-        "senko": 0.297,
-        "sashi": 0.121,
-        "oikomi": 0.148
+        "nige": 0.845,
+        "senko": 0.301,
+        "sashi": 0.118,
+        "oikomi": 0.145
       },
       "courses": [
         {
@@ -3954,20 +3954,20 @@
         "oikomi": "F"
       },
       "distancePct": {
-        "sprint": 0.676,
-        "mile": 0.938,
-        "middle": 0.079,
-        "long": 0.352
+        "sprint": 0.682,
+        "mile": 0.932,
+        "middle": 0.078,
+        "long": 0.351
       },
       "surfacePct": {
-        "turf": 0.421,
-        "dirt": 0.845
+        "turf": 0.422,
+        "dirt": 0.841
       },
       "stylePct": {
-        "nige": 0.841,
-        "senko": 0.297,
-        "sashi": 0.121,
-        "oikomi": 0.031
+        "nige": 0.845,
+        "senko": 0.301,
+        "sashi": 0.118,
+        "oikomi": 0.03
       },
       "courses": [
         {
@@ -4013,20 +4013,20 @@
         "oikomi": "D"
       },
       "distancePct": {
-        "sprint": 0.879,
+        "sprint": 0.882,
         "mile": 0.297,
-        "middle": 0.59,
-        "long": 0.352
+        "middle": 0.588,
+        "long": 0.351
       },
       "surfacePct": {
-        "turf": 0.421,
+        "turf": 0.422,
         "dirt": 0.321
       },
       "stylePct": {
-        "nige": 0.841,
-        "senko": 0.297,
-        "sashi": 0.121,
-        "oikomi": 0.348
+        "nige": 0.845,
+        "senko": 0.301,
+        "sashi": 0.118,
+        "oikomi": 0.345
       },
       "courses": [
         {
@@ -4088,20 +4088,20 @@
         "oikomi": "C"
       },
       "distancePct": {
-        "sprint": 0.355,
+        "sprint": 0.361,
         "mile": 0.297,
         "middle": 0.297,
-        "long": 0.962
+        "long": 0.959
       },
       "surfacePct": {
-        "turf": 0.421,
+        "turf": 0.422,
         "dirt": 0.321
       },
       "stylePct": {
-        "nige": 0.148,
-        "senko": 0.297,
-        "sashi": 0.89,
-        "oikomi": 0.6
+        "nige": 0.155,
+        "senko": 0.301,
+        "sashi": 0.889,
+        "oikomi": 0.595
       },
       "courses": [
         {
@@ -4159,20 +4159,20 @@
         "oikomi": "F"
       },
       "distancePct": {
-        "sprint": 0.355,
+        "sprint": 0.361,
         "mile": 0.297,
         "middle": 0.297,
-        "long": 0.962
+        "long": 0.959
       },
       "surfacePct": {
-        "turf": 0.876,
+        "turf": 0.875,
         "dirt": 0.321
       },
       "stylePct": {
-        "nige": 0.841,
-        "senko": 0.297,
-        "sashi": 0.121,
-        "oikomi": 0.031
+        "nige": 0.845,
+        "senko": 0.301,
+        "sashi": 0.118,
+        "oikomi": 0.03
       },
       "courses": [
         {
@@ -4235,20 +4235,20 @@
         "oikomi": "E"
       },
       "distancePct": {
-        "sprint": 0.676,
-        "mile": 0.493,
-        "middle": 0.59,
-        "long": 0.352
+        "sprint": 0.682,
+        "mile": 0.49,
+        "middle": 0.588,
+        "long": 0.351
       },
       "surfacePct": {
-        "turf": 0.421,
+        "turf": 0.422,
         "dirt": 0.321
       },
       "stylePct": {
-        "nige": 0.841,
-        "senko": 0.697,
-        "sashi": 0.121,
-        "oikomi": 0.148
+        "nige": 0.845,
+        "senko": 0.696,
+        "sashi": 0.118,
+        "oikomi": 0.145
       },
       "courses": [],
       "going": [
@@ -4300,20 +4300,20 @@
         "oikomi": "C"
       },
       "distancePct": {
-        "sprint": 0.355,
-        "mile": 0.734,
+        "sprint": 0.361,
+        "mile": 0.726,
         "middle": 0.176,
-        "long": 0.352
+        "long": 0.351
       },
       "surfacePct": {
-        "turf": 0.421,
+        "turf": 0.422,
         "dirt": 0.321
       },
       "stylePct": {
-        "nige": 0.393,
-        "senko": 0.297,
-        "sashi": 0.4,
-        "oikomi": 0.6
+        "nige": 0.399,
+        "senko": 0.301,
+        "sashi": 0.395,
+        "oikomi": 0.595
       },
       "courses": [],
       "going": [],
@@ -4346,20 +4346,20 @@
         "oikomi": "F"
       },
       "distancePct": {
-        "sprint": 0.779,
+        "sprint": 0.784,
         "mile": 0.297,
-        "middle": 0.59,
-        "long": 0.352
+        "middle": 0.588,
+        "long": 0.351
       },
       "surfacePct": {
-        "turf": 0.421,
-        "dirt": 0.845
+        "turf": 0.422,
+        "dirt": 0.841
       },
       "stylePct": {
-        "nige": 0.655,
-        "senko": 0.297,
-        "sashi": 0.121,
-        "oikomi": 0.031
+        "nige": 0.662,
+        "senko": 0.301,
+        "sashi": 0.118,
+        "oikomi": 0.03
       },
       "courses": [],
       "going": [
@@ -4410,20 +4410,20 @@
         "oikomi": "D"
       },
       "distancePct": {
-        "sprint": 0.355,
-        "mile": 0.734,
-        "middle": 0.59,
-        "long": 0.352
+        "sprint": 0.361,
+        "mile": 0.726,
+        "middle": 0.588,
+        "long": 0.351
       },
       "surfacePct": {
-        "turf": 0.421,
-        "dirt": 0.786
+        "turf": 0.422,
+        "dirt": 0.784
       },
       "stylePct": {
-        "nige": 0.393,
-        "senko": 0.869,
-        "sashi": 0.617,
-        "oikomi": 0.348
+        "nige": 0.399,
+        "senko": 0.868,
+        "sashi": 0.615,
+        "oikomi": 0.345
       },
       "courses": [
         {
@@ -4468,20 +4468,20 @@
         "oikomi": "C"
       },
       "distancePct": {
-        "sprint": 0.779,
-        "mile": 0.493,
-        "middle": 0.59,
-        "long": 0.352
+        "sprint": 0.784,
+        "mile": 0.49,
+        "middle": 0.588,
+        "long": 0.351
       },
       "surfacePct": {
-        "turf": 0.421,
-        "dirt": 0.903
+        "turf": 0.422,
+        "dirt": 0.902
       },
       "stylePct": {
-        "nige": 0.148,
-        "senko": 0.697,
-        "sashi": 0.89,
-        "oikomi": 0.6
+        "nige": 0.155,
+        "senko": 0.696,
+        "sashi": 0.889,
+        "oikomi": 0.595
       },
       "courses": [],
       "going": [],
@@ -4518,20 +4518,20 @@
         "oikomi": "S"
       },
       "distancePct": {
-        "sprint": 0.676,
+        "sprint": 0.682,
         "mile": 0.297,
         "middle": 0.176,
-        "long": 0.962
+        "long": 0.959
       },
       "surfacePct": {
-        "turf": 0.421,
+        "turf": 0.422,
         "dirt": 0.321
       },
       "stylePct": {
         "nige": 0.007,
-        "senko": 0.031,
-        "sashi": 0.4,
-        "oikomi": 0.952
+        "senko": 0.034,
+        "sashi": 0.395,
+        "oikomi": 0.946
       },
       "courses": [
         {
@@ -4595,20 +4595,20 @@
         "oikomi": "S"
       },
       "distancePct": {
-        "sprint": 0.355,
-        "mile": 0.734,
-        "middle": 0.59,
-        "long": 0.352
+        "sprint": 0.361,
+        "mile": 0.726,
+        "middle": 0.588,
+        "long": 0.351
       },
       "surfacePct": {
-        "turf": 0.421,
+        "turf": 0.422,
         "dirt": 0.321
       },
       "stylePct": {
-        "nige": 0.148,
-        "senko": 0.297,
-        "sashi": 0.89,
-        "oikomi": 0.952
+        "nige": 0.155,
+        "senko": 0.301,
+        "sashi": 0.889,
+        "oikomi": 0.946
       },
       "courses": [],
       "going": [],
@@ -4645,20 +4645,20 @@
         "oikomi": "C"
       },
       "distancePct": {
-        "sprint": 0.355,
-        "mile": 0.103,
+        "sprint": 0.361,
+        "mile": 0.105,
         "middle": 0.297,
-        "long": 0.821
+        "long": 0.818
       },
       "surfacePct": {
-        "turf": 0.421,
-        "dirt": 0.786
+        "turf": 0.422,
+        "dirt": 0.784
       },
       "stylePct": {
-        "nige": 0.148,
-        "senko": 0.597,
-        "sashi": 0.89,
-        "oikomi": 0.6
+        "nige": 0.155,
+        "senko": 0.598,
+        "sashi": 0.889,
+        "oikomi": 0.595
       },
       "courses": [
         {
@@ -4710,20 +4710,20 @@
         "oikomi": "C"
       },
       "distancePct": {
-        "sprint": 0.355,
-        "mile": 0.493,
+        "sprint": 0.361,
+        "mile": 0.49,
         "middle": 0.297,
-        "long": 0.821
+        "long": 0.818
       },
       "surfacePct": {
-        "turf": 0.421,
+        "turf": 0.422,
         "dirt": 0.321
       },
       "stylePct": {
-        "nige": 0.393,
-        "senko": 0.869,
-        "sashi": 0.728,
-        "oikomi": 0.6
+        "nige": 0.399,
+        "senko": 0.868,
+        "sashi": 0.726,
+        "oikomi": 0.595
       },
       "courses": [
         {
@@ -4787,20 +4787,20 @@
         "oikomi": "D"
       },
       "distancePct": {
-        "sprint": 0.779,
-        "mile": 0.734,
-        "middle": 0.59,
-        "long": 0.352
+        "sprint": 0.784,
+        "mile": 0.726,
+        "middle": 0.588,
+        "long": 0.351
       },
       "surfacePct": {
-        "turf": 0.876,
-        "dirt": 0.786
+        "turf": 0.875,
+        "dirt": 0.784
       },
       "stylePct": {
-        "nige": 0.393,
-        "senko": 0.869,
-        "sashi": 0.4,
-        "oikomi": 0.348
+        "nige": 0.399,
+        "senko": 0.868,
+        "sashi": 0.395,
+        "oikomi": 0.345
       },
       "courses": [
         {
@@ -4851,20 +4851,20 @@
         "oikomi": "E"
       },
       "distancePct": {
-        "sprint": 0.676,
-        "mile": 0.734,
-        "middle": 0.59,
-        "long": 0.352
+        "sprint": 0.682,
+        "mile": 0.726,
+        "middle": 0.588,
+        "long": 0.351
       },
       "surfacePct": {
-        "turf": 0.021,
-        "dirt": 0.972
+        "turf": 0.02,
+        "dirt": 0.973
       },
       "stylePct": {
-        "nige": 0.841,
-        "senko": 0.297,
-        "sashi": 0.121,
-        "oikomi": 0.148
+        "nige": 0.845,
+        "senko": 0.301,
+        "sashi": 0.118,
+        "oikomi": 0.145
       },
       "courses": [
         {
@@ -4928,20 +4928,20 @@
         "oikomi": "E"
       },
       "distancePct": {
-        "sprint": 0.355,
-        "mile": 0.734,
-        "middle": 0.59,
-        "long": 0.352
+        "sprint": 0.361,
+        "mile": 0.726,
+        "middle": 0.588,
+        "long": 0.351
       },
       "surfacePct": {
-        "turf": 0.062,
-        "dirt": 0.903
+        "turf": 0.061,
+        "dirt": 0.902
       },
       "stylePct": {
-        "nige": 0.841,
-        "senko": 0.297,
-        "sashi": 0.121,
-        "oikomi": 0.148
+        "nige": 0.845,
+        "senko": 0.301,
+        "sashi": 0.118,
+        "oikomi": 0.145
       },
       "courses": [],
       "going": [
@@ -4999,20 +4999,20 @@
         "oikomi": "D"
       },
       "distancePct": {
-        "sprint": 0.676,
-        "mile": 0.938,
+        "sprint": 0.682,
+        "mile": 0.932,
         "middle": 0.176,
-        "long": 0.352
+        "long": 0.351
       },
       "surfacePct": {
-        "turf": 0.876,
+        "turf": 0.875,
         "dirt": 0.321
       },
       "stylePct": {
-        "nige": 0.841,
-        "senko": 0.597,
-        "sashi": 0.121,
-        "oikomi": 0.348
+        "nige": 0.845,
+        "senko": 0.598,
+        "sashi": 0.118,
+        "oikomi": 0.345
       },
       "courses": [
         {
@@ -5057,20 +5057,20 @@
         "oikomi": "C"
       },
       "distancePct": {
-        "sprint": 0.355,
-        "mile": 0.103,
-        "middle": 0.903,
-        "long": 0.352
+        "sprint": 0.361,
+        "mile": 0.105,
+        "middle": 0.902,
+        "long": 0.351
       },
       "surfacePct": {
-        "turf": 0.876,
+        "turf": 0.875,
         "dirt": 0.321
       },
       "stylePct": {
-        "nige": 0.148,
-        "senko": 0.297,
-        "sashi": 0.89,
-        "oikomi": 0.6
+        "nige": 0.155,
+        "senko": 0.301,
+        "sashi": 0.889,
+        "oikomi": 0.595
       },
       "courses": [],
       "going": [],
@@ -5114,20 +5114,20 @@
         "oikomi": "S"
       },
       "distancePct": {
-        "sprint": 0.355,
-        "mile": 0.938,
-        "middle": 0.59,
-        "long": 0.352
+        "sprint": 0.361,
+        "mile": 0.932,
+        "middle": 0.588,
+        "long": 0.351
       },
       "surfacePct": {
-        "turf": 0.876,
+        "turf": 0.875,
         "dirt": 0.703
       },
       "stylePct": {
-        "nige": 0.041,
-        "senko": 0.297,
-        "sashi": 0.4,
-        "oikomi": 0.952
+        "nige": 0.044,
+        "senko": 0.301,
+        "sashi": 0.395,
+        "oikomi": 0.946
       },
       "courses": [],
       "going": [],
@@ -5165,20 +5165,20 @@
         "oikomi": "C"
       },
       "distancePct": {
-        "sprint": 0.969,
-        "mile": 0.493,
+        "sprint": 0.97,
+        "mile": 0.49,
         "middle": 0.297,
-        "long": 0.352
+        "long": 0.351
       },
       "surfacePct": {
-        "turf": 0.421,
+        "turf": 0.422,
         "dirt": 0.321
       },
       "stylePct": {
-        "nige": 0.393,
-        "senko": 0.869,
-        "sashi": 0.4,
-        "oikomi": 0.6
+        "nige": 0.399,
+        "senko": 0.868,
+        "sashi": 0.395,
+        "oikomi": 0.595
       },
       "courses": [
         {
@@ -5223,20 +5223,20 @@
         "oikomi": "C"
       },
       "distancePct": {
-        "sprint": 0.052,
-        "mile": 0.103,
-        "middle": 0.59,
-        "long": 0.352
+        "sprint": 0.057,
+        "mile": 0.105,
+        "middle": 0.588,
+        "long": 0.351
       },
       "surfacePct": {
-        "turf": 0.421,
+        "turf": 0.422,
         "dirt": 0.321
       },
       "stylePct": {
-        "nige": 0.393,
-        "senko": 0.297,
-        "sashi": 0.4,
-        "oikomi": 0.6
+        "nige": 0.399,
+        "senko": 0.301,
+        "sashi": 0.395,
+        "oikomi": 0.595
       },
       "courses": [],
       "going": [],
@@ -5272,20 +5272,20 @@
         "oikomi": "E"
       },
       "distancePct": {
-        "sprint": 0.879,
-        "mile": 0.734,
-        "middle": 0.079,
-        "long": 0.048
+        "sprint": 0.882,
+        "mile": 0.726,
+        "middle": 0.078,
+        "long": 0.047
       },
       "surfacePct": {
-        "turf": 0.421,
+        "turf": 0.422,
         "dirt": 0.321
       },
       "stylePct": {
-        "nige": 0.841,
-        "senko": 0.297,
-        "sashi": 0.121,
-        "oikomi": 0.148
+        "nige": 0.845,
+        "senko": 0.301,
+        "sashi": 0.118,
+        "oikomi": 0.145
       },
       "courses": [
         {
@@ -5330,20 +5330,20 @@
         "oikomi": "A"
       },
       "distancePct": {
-        "sprint": 0.355,
-        "mile": 0.734,
+        "sprint": 0.361,
+        "mile": 0.726,
         "middle": 0.297,
-        "long": 0.352
+        "long": 0.351
       },
       "surfacePct": {
-        "turf": 0.421,
+        "turf": 0.422,
         "dirt": 0.321
       },
       "stylePct": {
-        "nige": 0.393,
-        "senko": 0.697,
-        "sashi": 0.728,
-        "oikomi": 0.879
+        "nige": 0.399,
+        "senko": 0.696,
+        "sashi": 0.726,
+        "oikomi": 0.868
       },
       "courses": [],
       "going": [
@@ -5407,20 +5407,20 @@
         "oikomi": "C"
       },
       "distancePct": {
-        "sprint": 0.355,
-        "mile": 0.103,
+        "sprint": 0.361,
+        "mile": 0.105,
         "middle": 0.176,
-        "long": 0.962
+        "long": 0.959
       },
       "surfacePct": {
-        "turf": 0.421,
+        "turf": 0.422,
         "dirt": 0.321
       },
       "stylePct": {
-        "nige": 0.148,
-        "senko": 0.597,
-        "sashi": 0.89,
-        "oikomi": 0.6
+        "nige": 0.155,
+        "senko": 0.598,
+        "sashi": 0.889,
+        "oikomi": 0.595
       },
       "courses": [
         {
@@ -5477,20 +5477,20 @@
         "oikomi": "C"
       },
       "distancePct": {
-        "sprint": 0.355,
-        "mile": 0.103,
-        "middle": 0.59,
-        "long": 0.352
+        "sprint": 0.361,
+        "mile": 0.105,
+        "middle": 0.588,
+        "long": 0.351
       },
       "surfacePct": {
-        "turf": 0.421,
+        "turf": 0.422,
         "dirt": 0.321
       },
       "stylePct": {
-        "nige": 0.393,
-        "senko": 0.297,
-        "sashi": 0.89,
-        "oikomi": 0.6
+        "nige": 0.399,
+        "senko": 0.301,
+        "sashi": 0.889,
+        "oikomi": 0.595
       },
       "courses": [
         {
@@ -5546,20 +5546,20 @@
         "oikomi": "C"
       },
       "distancePct": {
-        "sprint": 0.879,
-        "mile": 0.734,
+        "sprint": 0.882,
+        "mile": 0.726,
         "middle": 0.297,
-        "long": 0.821
+        "long": 0.818
       },
       "surfacePct": {
-        "turf": 0.421,
+        "turf": 0.422,
         "dirt": 0.652
       },
       "stylePct": {
-        "nige": 0.393,
-        "senko": 0.869,
-        "sashi": 0.89,
-        "oikomi": 0.6
+        "nige": 0.399,
+        "senko": 0.868,
+        "sashi": 0.889,
+        "oikomi": 0.595
       },
       "courses": [
         {
@@ -5629,20 +5629,20 @@
         "oikomi": "D"
       },
       "distancePct": {
-        "sprint": 0.879,
-        "mile": 0.734,
-        "middle": 0.079,
-        "long": 0.048
+        "sprint": 0.882,
+        "mile": 0.726,
+        "middle": 0.078,
+        "long": 0.047
       },
       "surfacePct": {
-        "turf": 0.421,
+        "turf": 0.422,
         "dirt": 0.321
       },
       "stylePct": {
-        "nige": 0.655,
-        "senko": 0.297,
-        "sashi": 0.4,
-        "oikomi": 0.348
+        "nige": 0.662,
+        "senko": 0.301,
+        "sashi": 0.395,
+        "oikomi": 0.345
       },
       "courses": [
         {
@@ -5686,20 +5686,20 @@
         "oikomi": "C"
       },
       "distancePct": {
-        "sprint": 0.355,
-        "mile": 0.734,
-        "middle": 0.59,
-        "long": 0.821
+        "sprint": 0.361,
+        "mile": 0.726,
+        "middle": 0.588,
+        "long": 0.818
       },
       "surfacePct": {
-        "turf": 0.421,
+        "turf": 0.422,
         "dirt": 0.321
       },
       "stylePct": {
-        "nige": 0.148,
-        "senko": 0.297,
-        "sashi": 0.89,
-        "oikomi": 0.6
+        "nige": 0.155,
+        "senko": 0.301,
+        "sashi": 0.889,
+        "oikomi": 0.595
       },
       "courses": [
         {
@@ -5750,20 +5750,20 @@
         "oikomi": "E"
       },
       "distancePct": {
-        "sprint": 0.879,
-        "mile": 0.103,
-        "middle": 0.079,
-        "long": 0.048
+        "sprint": 0.882,
+        "mile": 0.105,
+        "middle": 0.078,
+        "long": 0.047
       },
       "surfacePct": {
-        "turf": 0.421,
+        "turf": 0.422,
         "dirt": 0.703
       },
       "stylePct": {
-        "nige": 0.841,
-        "senko": 0.297,
-        "sashi": 0.121,
-        "oikomi": 0.148
+        "nige": 0.845,
+        "senko": 0.301,
+        "sashi": 0.118,
+        "oikomi": 0.145
       },
       "courses": [],
       "going": [],
@@ -5813,20 +5813,20 @@
         "oikomi": "C"
       },
       "distancePct": {
-        "sprint": 0.355,
-        "mile": 0.734,
-        "middle": 0.59,
-        "long": 0.821
+        "sprint": 0.361,
+        "mile": 0.726,
+        "middle": 0.588,
+        "long": 0.818
       },
       "surfacePct": {
-        "turf": 0.421,
+        "turf": 0.422,
         "dirt": 0.321
       },
       "stylePct": {
-        "nige": 0.393,
-        "senko": 0.297,
-        "sashi": 0.89,
-        "oikomi": 0.6
+        "nige": 0.399,
+        "senko": 0.301,
+        "sashi": 0.889,
+        "oikomi": 0.595
       },
       "courses": [
         {
@@ -5869,20 +5869,20 @@
         "oikomi": "C"
       },
       "distancePct": {
-        "sprint": 0.879,
-        "mile": 0.493,
-        "middle": 0.59,
-        "long": 0.352
+        "sprint": 0.882,
+        "mile": 0.49,
+        "middle": 0.588,
+        "long": 0.351
       },
       "surfacePct": {
-        "turf": 0.421,
+        "turf": 0.422,
         "dirt": 0.321
       },
       "stylePct": {
-        "nige": 0.393,
-        "senko": 0.869,
-        "sashi": 0.617,
-        "oikomi": 0.6
+        "nige": 0.399,
+        "senko": 0.868,
+        "sashi": 0.615,
+        "oikomi": 0.595
       },
       "courses": [
         {
@@ -5933,20 +5933,20 @@
         "oikomi": "E"
       },
       "distancePct": {
-        "sprint": 0.676,
-        "mile": 0.493,
-        "middle": 0.903,
-        "long": 0.352
+        "sprint": 0.682,
+        "mile": 0.49,
+        "middle": 0.902,
+        "long": 0.351
       },
       "surfacePct": {
-        "turf": 0.021,
-        "dirt": 0.972
+        "turf": 0.02,
+        "dirt": 0.973
       },
       "stylePct": {
-        "nige": 0.841,
-        "senko": 0.297,
-        "sashi": 0.121,
-        "oikomi": 0.148
+        "nige": 0.845,
+        "senko": 0.301,
+        "sashi": 0.118,
+        "oikomi": 0.145
       },
       "courses": [
         {
@@ -6043,20 +6043,20 @@
         "oikomi": "E"
       },
       "distancePct": {
-        "sprint": 0.052,
-        "mile": 0.493,
-        "middle": 0.903,
-        "long": 0.352
+        "sprint": 0.057,
+        "mile": 0.49,
+        "middle": 0.902,
+        "long": 0.351
       },
       "surfacePct": {
-        "turf": 0.021,
-        "dirt": 0.972
+        "turf": 0.02,
+        "dirt": 0.973
       },
       "stylePct": {
-        "nige": 0.841,
-        "senko": 0.597,
-        "sashi": 0.121,
-        "oikomi": 0.148
+        "nige": 0.845,
+        "senko": 0.598,
+        "sashi": 0.118,
+        "oikomi": 0.145
       },
       "courses": [
         {
@@ -6128,20 +6128,20 @@
         "oikomi": "D"
       },
       "distancePct": {
-        "sprint": 0.355,
-        "mile": 0.734,
-        "middle": 0.59,
-        "long": 0.352
+        "sprint": 0.361,
+        "mile": 0.726,
+        "middle": 0.588,
+        "long": 0.351
       },
       "surfacePct": {
-        "turf": 0.062,
-        "dirt": 0.972
+        "turf": 0.061,
+        "dirt": 0.973
       },
       "stylePct": {
-        "nige": 0.593,
-        "senko": 0.869,
-        "sashi": 0.4,
-        "oikomi": 0.348
+        "nige": 0.598,
+        "senko": 0.868,
+        "sashi": 0.395,
+        "oikomi": 0.345
       },
       "courses": [
         {
@@ -6202,20 +6202,20 @@
         "oikomi": "B"
       },
       "distancePct": {
-        "sprint": 0.879,
-        "mile": 0.493,
+        "sprint": 0.882,
+        "mile": 0.49,
         "middle": 0.297,
-        "long": 0.821
+        "long": 0.818
       },
       "surfacePct": {
-        "turf": 0.062,
-        "dirt": 0.903
+        "turf": 0.061,
+        "dirt": 0.902
       },
       "stylePct": {
-        "nige": 0.393,
-        "senko": 0.297,
-        "sashi": 0.617,
-        "oikomi": 0.797
+        "nige": 0.399,
+        "senko": 0.301,
+        "sashi": 0.615,
+        "oikomi": 0.787
       },
       "courses": [
         {
@@ -6283,20 +6283,20 @@
         "oikomi": "B"
       },
       "distancePct": {
-        "sprint": 0.355,
-        "mile": 0.493,
-        "middle": 0.59,
-        "long": 0.821
+        "sprint": 0.361,
+        "mile": 0.49,
+        "middle": 0.588,
+        "long": 0.818
       },
       "surfacePct": {
-        "turf": 0.421,
+        "turf": 0.422,
         "dirt": 0.321
       },
       "stylePct": {
-        "nige": 0.148,
-        "senko": 0.697,
-        "sashi": 0.89,
-        "oikomi": 0.797
+        "nige": 0.155,
+        "senko": 0.696,
+        "sashi": 0.889,
+        "oikomi": 0.787
       },
       "courses": [
         {
@@ -6338,20 +6338,20 @@
         "oikomi": "C"
       },
       "distancePct": {
-        "sprint": 0.355,
-        "mile": 0.734,
-        "middle": 0.59,
-        "long": 0.648
+        "sprint": 0.361,
+        "mile": 0.726,
+        "middle": 0.588,
+        "long": 0.649
       },
       "surfacePct": {
-        "turf": 0.421,
-        "dirt": 0.903
+        "turf": 0.422,
+        "dirt": 0.902
       },
       "stylePct": {
-        "nige": 0.393,
-        "senko": 0.869,
-        "sashi": 0.728,
-        "oikomi": 0.6
+        "nige": 0.399,
+        "senko": 0.868,
+        "sashi": 0.726,
+        "oikomi": 0.595
       },
       "courses": [],
       "going": [],
@@ -6393,20 +6393,20 @@
         "oikomi": "C"
       },
       "distancePct": {
-        "sprint": 0.052,
-        "mile": 0.103,
-        "middle": 0.59,
-        "long": 0.352
+        "sprint": 0.057,
+        "mile": 0.105,
+        "middle": 0.588,
+        "long": 0.351
       },
       "surfacePct": {
-        "turf": 0.421,
+        "turf": 0.422,
         "dirt": 0.321
       },
       "stylePct": {
-        "nige": 0.393,
-        "senko": 0.297,
-        "sashi": 0.4,
-        "oikomi": 0.6
+        "nige": 0.399,
+        "senko": 0.301,
+        "sashi": 0.395,
+        "oikomi": 0.595
       },
       "courses": [],
       "going": [],
@@ -6441,20 +6441,20 @@
         "oikomi": "S"
       },
       "distancePct": {
-        "sprint": 0.355,
-        "mile": 0.493,
-        "middle": 0.903,
-        "long": 0.648
+        "sprint": 0.361,
+        "mile": 0.49,
+        "middle": 0.902,
+        "long": 0.649
       },
       "surfacePct": {
-        "turf": 0.421,
+        "turf": 0.422,
         "dirt": 0.321
       },
       "stylePct": {
-        "nige": 0.593,
-        "senko": 0.869,
-        "sashi": 0.4,
-        "oikomi": 0.952
+        "nige": 0.598,
+        "senko": 0.868,
+        "sashi": 0.395,
+        "oikomi": 0.946
       },
       "courses": [
         {
@@ -6499,20 +6499,20 @@
         "oikomi": "B"
       },
       "distancePct": {
-        "sprint": 0.052,
+        "sprint": 0.057,
         "mile": 0.297,
         "middle": 0.176,
-        "long": 0.821
+        "long": 0.818
       },
       "surfacePct": {
-        "turf": 0.421,
+        "turf": 0.422,
         "dirt": 0.321
       },
       "stylePct": {
-        "nige": 0.148,
+        "nige": 0.155,
         "senko": 0.003,
-        "sashi": 0.4,
-        "oikomi": 0.797
+        "sashi": 0.395,
+        "oikomi": 0.787
       },
       "courses": [
         {
@@ -6569,20 +6569,20 @@
         "oikomi": "F"
       },
       "distancePct": {
-        "sprint": 0.355,
+        "sprint": 0.361,
         "mile": 0.297,
-        "middle": 0.59,
-        "long": 0.352
+        "middle": 0.588,
+        "long": 0.351
       },
       "surfacePct": {
-        "turf": 0.421,
+        "turf": 0.422,
         "dirt": 0.321
       },
       "stylePct": {
-        "nige": 0.841,
-        "senko": 0.297,
-        "sashi": 0.121,
-        "oikomi": 0.031
+        "nige": 0.845,
+        "senko": 0.301,
+        "sashi": 0.118,
+        "oikomi": 0.03
       },
       "courses": [
         {
@@ -6628,20 +6628,20 @@
         "oikomi": "C"
       },
       "distancePct": {
-        "sprint": 0.355,
+        "sprint": 0.361,
         "mile": 0.297,
-        "middle": 0.903,
-        "long": 0.352
+        "middle": 0.902,
+        "long": 0.351
       },
       "surfacePct": {
-        "turf": 0.876,
+        "turf": 0.875,
         "dirt": 0.321
       },
       "stylePct": {
-        "nige": 0.148,
-        "senko": 0.297,
-        "sashi": 0.89,
-        "oikomi": 0.6
+        "nige": 0.155,
+        "senko": 0.301,
+        "sashi": 0.889,
+        "oikomi": 0.595
       },
       "courses": [
         {
@@ -6685,20 +6685,20 @@
         "oikomi": "E"
       },
       "distancePct": {
-        "sprint": 0.969,
-        "mile": 0.938,
-        "middle": 0.59,
-        "long": 0.352
+        "sprint": 0.97,
+        "mile": 0.932,
+        "middle": 0.588,
+        "long": 0.351
       },
       "surfacePct": {
-        "turf": 0.876,
+        "turf": 0.875,
         "dirt": 0.321
       },
       "stylePct": {
-        "nige": 0.841,
-        "senko": 0.297,
-        "sashi": 0.4,
-        "oikomi": 0.148
+        "nige": 0.845,
+        "senko": 0.301,
+        "sashi": 0.395,
+        "oikomi": 0.145
       },
       "courses": [],
       "going": [],
@@ -6736,20 +6736,20 @@
         "oikomi": "C"
       },
       "distancePct": {
-        "sprint": 0.355,
-        "mile": 0.938,
-        "middle": 0.59,
-        "long": 0.352
+        "sprint": 0.361,
+        "mile": 0.932,
+        "middle": 0.588,
+        "long": 0.351
       },
       "surfacePct": {
-        "turf": 0.876,
+        "turf": 0.875,
         "dirt": 0.321
       },
       "stylePct": {
-        "nige": 0.655,
-        "senko": 0.297,
-        "sashi": 0.4,
-        "oikomi": 0.6
+        "nige": 0.662,
+        "senko": 0.301,
+        "sashi": 0.395,
+        "oikomi": 0.595
       },
       "courses": [],
       "going": [],
@@ -6786,20 +6786,20 @@
         "oikomi": "C"
       },
       "distancePct": {
-        "sprint": 0.779,
-        "mile": 0.493,
-        "middle": 0.903,
-        "long": 0.352
+        "sprint": 0.784,
+        "mile": 0.49,
+        "middle": 0.902,
+        "long": 0.351
       },
       "surfacePct": {
-        "turf": 0.421,
+        "turf": 0.422,
         "dirt": 0.321
       },
       "stylePct": {
-        "nige": 0.148,
-        "senko": 0.597,
-        "sashi": 0.89,
-        "oikomi": 0.6
+        "nige": 0.155,
+        "senko": 0.598,
+        "sashi": 0.889,
+        "oikomi": 0.595
       },
       "courses": [],
       "going": [],
@@ -6837,20 +6837,20 @@
         "oikomi": "E"
       },
       "distancePct": {
-        "sprint": 0.676,
-        "mile": 0.734,
+        "sprint": 0.682,
+        "mile": 0.726,
         "middle": 0.014,
-        "long": 0.352
+        "long": 0.351
       },
       "surfacePct": {
-        "turf": 0.421,
-        "dirt": 0.903
+        "turf": 0.422,
+        "dirt": 0.902
       },
       "stylePct": {
-        "nige": 0.841,
-        "senko": 0.697,
-        "sashi": 0.121,
-        "oikomi": 0.148
+        "nige": 0.845,
+        "senko": 0.696,
+        "sashi": 0.118,
+        "oikomi": 0.145
       },
       "courses": [
         {
@@ -6906,20 +6906,20 @@
         "oikomi": "D"
       },
       "distancePct": {
-        "sprint": 0.355,
-        "mile": 0.103,
-        "middle": 0.59,
-        "long": 0.352
+        "sprint": 0.361,
+        "mile": 0.105,
+        "middle": 0.588,
+        "long": 0.351
       },
       "surfacePct": {
-        "turf": 0.421,
-        "dirt": 0.786
+        "turf": 0.422,
+        "dirt": 0.784
       },
       "stylePct": {
-        "nige": 0.841,
-        "senko": 0.297,
-        "sashi": 0.4,
-        "oikomi": 0.348
+        "nige": 0.845,
+        "senko": 0.301,
+        "sashi": 0.395,
+        "oikomi": 0.345
       },
       "courses": [
         {
@@ -6982,20 +6982,20 @@
         "oikomi": "S"
       },
       "distancePct": {
-        "sprint": 0.355,
-        "mile": 0.938,
-        "middle": 0.903,
-        "long": 0.352
+        "sprint": 0.361,
+        "mile": 0.932,
+        "middle": 0.902,
+        "long": 0.351
       },
       "surfacePct": {
-        "turf": 0.876,
+        "turf": 0.875,
         "dirt": 0.321
       },
       "stylePct": {
-        "nige": 0.041,
-        "senko": 0.031,
-        "sashi": 0.4,
-        "oikomi": 0.952
+        "nige": 0.044,
+        "senko": 0.034,
+        "sashi": 0.395,
+        "oikomi": 0.946
       },
       "courses": [
         {
@@ -7040,20 +7040,20 @@
         "oikomi": "B"
       },
       "distancePct": {
-        "sprint": 0.003,
+        "sprint": 0.007,
         "mile": 0.297,
-        "middle": 0.903,
-        "long": 0.648
+        "middle": 0.902,
+        "long": 0.649
       },
       "surfacePct": {
-        "turf": 0.876,
+        "turf": 0.875,
         "dirt": 0.321
       },
       "stylePct": {
-        "nige": 0.148,
-        "senko": 0.297,
-        "sashi": 0.89,
-        "oikomi": 0.797
+        "nige": 0.155,
+        "senko": 0.301,
+        "sashi": 0.889,
+        "oikomi": 0.787
       },
       "courses": [
         {
@@ -7104,20 +7104,20 @@
         "oikomi": "E"
       },
       "distancePct": {
-        "sprint": 0.355,
-        "mile": 0.493,
-        "middle": 0.903,
-        "long": 0.352
+        "sprint": 0.361,
+        "mile": 0.49,
+        "middle": 0.902,
+        "long": 0.351
       },
       "surfacePct": {
-        "turf": 0.876,
+        "turf": 0.875,
         "dirt": 0.321
       },
       "stylePct": {
-        "nige": 0.841,
-        "senko": 0.297,
-        "sashi": 0.4,
-        "oikomi": 0.148
+        "nige": 0.845,
+        "senko": 0.301,
+        "sashi": 0.395,
+        "oikomi": 0.145
       },
       "courses": [
         {
@@ -7187,20 +7187,20 @@
         "oikomi": "S"
       },
       "distancePct": {
-        "sprint": 0.355,
-        "mile": 0.493,
+        "sprint": 0.361,
+        "mile": 0.49,
         "middle": 0.297,
-        "long": 0.821
+        "long": 0.818
       },
       "surfacePct": {
-        "turf": 0.421,
+        "turf": 0.422,
         "dirt": 0.321
       },
       "stylePct": {
-        "nige": 0.041,
-        "senko": 0.031,
-        "sashi": 0.89,
-        "oikomi": 0.952
+        "nige": 0.044,
+        "senko": 0.034,
+        "sashi": 0.889,
+        "oikomi": 0.946
       },
       "courses": [
         {
@@ -7263,20 +7263,20 @@
         "oikomi": "B"
       },
       "distancePct": {
-        "sprint": 0.355,
-        "mile": 0.938,
+        "sprint": 0.361,
+        "mile": 0.932,
         "middle": 0.297,
-        "long": 0.352
+        "long": 0.351
       },
       "surfacePct": {
-        "turf": 0.421,
+        "turf": 0.422,
         "dirt": 0.321
       },
       "stylePct": {
-        "nige": 0.148,
-        "senko": 0.597,
-        "sashi": 0.89,
-        "oikomi": 0.797
+        "nige": 0.155,
+        "senko": 0.598,
+        "sashi": 0.889,
+        "oikomi": 0.787
       },
       "courses": [
         {
@@ -7335,20 +7335,20 @@
         "oikomi": "S"
       },
       "distancePct": {
-        "sprint": 0.779,
-        "mile": 0.493,
-        "middle": 0.59,
-        "long": 0.821
+        "sprint": 0.784,
+        "mile": 0.49,
+        "middle": 0.588,
+        "long": 0.818
       },
       "surfacePct": {
-        "turf": 0.421,
+        "turf": 0.422,
         "dirt": 0.321
       },
       "stylePct": {
         "nige": 0.007,
-        "senko": 0.031,
-        "sashi": 0.4,
-        "oikomi": 0.952
+        "senko": 0.034,
+        "sashi": 0.395,
+        "oikomi": 0.946
       },
       "courses": [
         {
@@ -7394,20 +7394,20 @@
         "oikomi": "E"
       },
       "distancePct": {
-        "sprint": 0.879,
+        "sprint": 0.882,
         "mile": 0.297,
-        "middle": 0.079,
-        "long": 0.048
+        "middle": 0.078,
+        "long": 0.047
       },
       "surfacePct": {
-        "turf": 0.421,
+        "turf": 0.422,
         "dirt": 0.703
       },
       "stylePct": {
-        "nige": 0.841,
-        "senko": 0.297,
-        "sashi": 0.121,
-        "oikomi": 0.148
+        "nige": 0.845,
+        "senko": 0.301,
+        "sashi": 0.118,
+        "oikomi": 0.145
       },
       "courses": [
         {
@@ -7478,20 +7478,20 @@
         "oikomi": "S"
       },
       "distancePct": {
-        "sprint": 0.969,
+        "sprint": 0.97,
         "mile": 0.297,
-        "middle": 0.079,
-        "long": 0.048
+        "middle": 0.078,
+        "long": 0.047
       },
       "surfacePct": {
-        "turf": 0.421,
+        "turf": 0.422,
         "dirt": 0.321
       },
       "stylePct": {
-        "nige": 0.041,
-        "senko": 0.031,
-        "sashi": 0.4,
-        "oikomi": 0.952
+        "nige": 0.044,
+        "senko": 0.034,
+        "sashi": 0.395,
+        "oikomi": 0.946
       },
       "courses": [],
       "going": [],
@@ -7535,20 +7535,20 @@
         "oikomi": "C"
       },
       "distancePct": {
-        "sprint": 0.779,
-        "mile": 0.734,
-        "middle": 0.59,
-        "long": 0.352
+        "sprint": 0.784,
+        "mile": 0.726,
+        "middle": 0.588,
+        "long": 0.351
       },
       "surfacePct": {
-        "turf": 0.421,
+        "turf": 0.422,
         "dirt": 0.321
       },
       "stylePct": {
-        "nige": 0.593,
-        "senko": 0.597,
-        "sashi": 0.728,
-        "oikomi": 0.6
+        "nige": 0.598,
+        "senko": 0.598,
+        "sashi": 0.726,
+        "oikomi": 0.595
       },
       "courses": [],
       "going": [],
@@ -7592,20 +7592,20 @@
         "oikomi": "D"
       },
       "distancePct": {
-        "sprint": 0.355,
-        "mile": 0.938,
-        "middle": 0.59,
-        "long": 0.352
+        "sprint": 0.361,
+        "mile": 0.932,
+        "middle": 0.588,
+        "long": 0.351
       },
       "surfacePct": {
-        "turf": 0.876,
+        "turf": 0.875,
         "dirt": 0.321
       },
       "stylePct": {
-        "nige": 0.593,
-        "senko": 0.869,
-        "sashi": 0.4,
-        "oikomi": 0.348
+        "nige": 0.598,
+        "senko": 0.868,
+        "sashi": 0.395,
+        "oikomi": 0.345
       },
       "courses": [],
       "going": [],
@@ -7643,20 +7643,20 @@
         "oikomi": "S"
       },
       "distancePct": {
-        "sprint": 0.676,
-        "mile": 0.938,
+        "sprint": 0.682,
+        "mile": 0.932,
         "middle": 0.297,
-        "long": 0.352
+        "long": 0.351
       },
       "surfacePct": {
-        "turf": 0.421,
-        "dirt": 0.786
+        "turf": 0.422,
+        "dirt": 0.784
       },
       "stylePct": {
-        "nige": 0.041,
-        "senko": 0.297,
-        "sashi": 0.4,
-        "oikomi": 0.952
+        "nige": 0.044,
+        "senko": 0.301,
+        "sashi": 0.395,
+        "oikomi": 0.946
       },
       "courses": [],
       "going": [],
@@ -7695,20 +7695,20 @@
         "oikomi": "C"
       },
       "distancePct": {
-        "sprint": 0.052,
-        "mile": 0.103,
-        "middle": 0.079,
-        "long": 0.821
+        "sprint": 0.057,
+        "mile": 0.105,
+        "middle": 0.078,
+        "long": 0.818
       },
       "surfacePct": {
-        "turf": 0.421,
+        "turf": 0.422,
         "dirt": 0.321
       },
       "stylePct": {
-        "nige": 0.655,
-        "senko": 0.697,
-        "sashi": 0.728,
-        "oikomi": 0.6
+        "nige": 0.662,
+        "senko": 0.696,
+        "sashi": 0.726,
+        "oikomi": 0.595
       },
       "courses": [
         {
@@ -7759,20 +7759,20 @@
         "oikomi": "B"
       },
       "distancePct": {
-        "sprint": 0.355,
-        "mile": 0.734,
+        "sprint": 0.361,
+        "mile": 0.726,
         "middle": 0.297,
-        "long": 0.697
+        "long": 0.696
       },
       "surfacePct": {
-        "turf": 0.421,
+        "turf": 0.422,
         "dirt": 0.321
       },
       "stylePct": {
-        "nige": 0.393,
-        "senko": 0.869,
-        "sashi": 0.617,
-        "oikomi": 0.797
+        "nige": 0.399,
+        "senko": 0.868,
+        "sashi": 0.615,
+        "oikomi": 0.787
       },
       "courses": [
         {
@@ -7837,20 +7837,20 @@
         "oikomi": "S"
       },
       "distancePct": {
-        "sprint": 0.355,
-        "mile": 0.734,
-        "middle": 0.903,
-        "long": 0.352
+        "sprint": 0.361,
+        "mile": 0.726,
+        "middle": 0.902,
+        "long": 0.351
       },
       "surfacePct": {
-        "turf": 0.876,
+        "turf": 0.875,
         "dirt": 0.321
       },
       "stylePct": {
-        "nige": 0.393,
-        "senko": 0.869,
-        "sashi": 0.4,
-        "oikomi": 0.952
+        "nige": 0.399,
+        "senko": 0.868,
+        "sashi": 0.395,
+        "oikomi": 0.946
       },
       "courses": [],
       "going": [],
@@ -7887,20 +7887,20 @@
         "oikomi": "D"
       },
       "distancePct": {
-        "sprint": 0.355,
-        "mile": 0.938,
-        "middle": 0.59,
-        "long": 0.352
+        "sprint": 0.361,
+        "mile": 0.932,
+        "middle": 0.588,
+        "long": 0.351
       },
       "surfacePct": {
-        "turf": 0.876,
+        "turf": 0.875,
         "dirt": 0.321
       },
       "stylePct": {
-        "nige": 0.393,
-        "senko": 0.869,
-        "sashi": 0.617,
-        "oikomi": 0.348
+        "nige": 0.399,
+        "senko": 0.868,
+        "sashi": 0.615,
+        "oikomi": 0.345
       },
       "courses": [],
       "going": [],
@@ -7938,20 +7938,20 @@
         "oikomi": "B"
       },
       "distancePct": {
-        "sprint": 0.969,
-        "mile": 0.938,
+        "sprint": 0.97,
+        "mile": 0.932,
         "middle": 0.176,
-        "long": 0.352
+        "long": 0.351
       },
       "surfacePct": {
-        "turf": 0.876,
+        "turf": 0.875,
         "dirt": 0.321
       },
       "stylePct": {
-        "nige": 0.841,
-        "senko": 0.297,
-        "sashi": 0.728,
-        "oikomi": 0.797
+        "nige": 0.845,
+        "senko": 0.301,
+        "sashi": 0.726,
+        "oikomi": 0.787
       },
       "courses": [],
       "going": [],
@@ -7989,20 +7989,20 @@
         "oikomi": "C"
       },
       "distancePct": {
-        "sprint": 0.355,
-        "mile": 0.103,
-        "middle": 0.59,
-        "long": 0.352
+        "sprint": 0.361,
+        "mile": 0.105,
+        "middle": 0.588,
+        "long": 0.351
       },
       "surfacePct": {
-        "turf": 0.421,
+        "turf": 0.422,
         "dirt": 0.321
       },
       "stylePct": {
-        "nige": 0.148,
-        "senko": 0.297,
-        "sashi": 0.89,
-        "oikomi": 0.6
+        "nige": 0.155,
+        "senko": 0.301,
+        "sashi": 0.889,
+        "oikomi": 0.595
       },
       "courses": [
         {
@@ -8047,20 +8047,20 @@
         "oikomi": "D"
       },
       "distancePct": {
-        "sprint": 0.355,
-        "mile": 0.493,
-        "middle": 0.903,
-        "long": 0.352
+        "sprint": 0.361,
+        "mile": 0.49,
+        "middle": 0.902,
+        "long": 0.351
       },
       "surfacePct": {
-        "turf": 0.876,
+        "turf": 0.875,
         "dirt": 0.321
       },
       "stylePct": {
-        "nige": 0.393,
-        "senko": 0.869,
-        "sashi": 0.4,
-        "oikomi": 0.348
+        "nige": 0.399,
+        "senko": 0.868,
+        "sashi": 0.395,
+        "oikomi": 0.345
       },
       "courses": [
         {
@@ -8113,20 +8113,20 @@
         "oikomi": "D"
       },
       "distancePct": {
-        "sprint": 0.355,
+        "sprint": 0.361,
         "mile": 0.297,
-        "middle": 0.59,
-        "long": 0.821
+        "middle": 0.588,
+        "long": 0.818
       },
       "surfacePct": {
-        "turf": 0.421,
+        "turf": 0.422,
         "dirt": 0.321
       },
       "stylePct": {
-        "nige": 0.593,
-        "senko": 0.869,
-        "sashi": 0.617,
-        "oikomi": 0.348
+        "nige": 0.598,
+        "senko": 0.868,
+        "sashi": 0.615,
+        "oikomi": 0.345
       },
       "courses": [],
       "going": [],
@@ -8169,20 +8169,20 @@
         "oikomi": "D"
       },
       "distancePct": {
-        "sprint": 0.052,
-        "mile": 0.103,
-        "middle": 0.59,
-        "long": 0.821
+        "sprint": 0.057,
+        "mile": 0.105,
+        "middle": 0.588,
+        "long": 0.818
       },
       "surfacePct": {
-        "turf": 0.421,
+        "turf": 0.422,
         "dirt": 0.321
       },
       "stylePct": {
-        "nige": 0.393,
-        "senko": 0.869,
-        "sashi": 0.89,
-        "oikomi": 0.348
+        "nige": 0.399,
+        "senko": 0.868,
+        "sashi": 0.889,
+        "oikomi": 0.345
       },
       "courses": [],
       "going": [],
@@ -8231,20 +8231,20 @@
         "oikomi": "B"
       },
       "distancePct": {
-        "sprint": 0.355,
-        "mile": 0.734,
-        "middle": 0.59,
-        "long": 0.352
+        "sprint": 0.361,
+        "mile": 0.726,
+        "middle": 0.588,
+        "long": 0.351
       },
       "surfacePct": {
-        "turf": 0.421,
+        "turf": 0.422,
         "dirt": 0.321
       },
       "stylePct": {
-        "nige": 0.148,
-        "senko": 0.297,
-        "sashi": 0.89,
-        "oikomi": 0.797
+        "nige": 0.155,
+        "senko": 0.301,
+        "sashi": 0.889,
+        "oikomi": 0.787
       },
       "courses": [],
       "going": [],
@@ -8288,20 +8288,20 @@
         "oikomi": "A"
       },
       "distancePct": {
-        "sprint": 0.355,
-        "mile": 0.734,
-        "middle": 0.59,
-        "long": 0.821
+        "sprint": 0.361,
+        "mile": 0.726,
+        "middle": 0.588,
+        "long": 0.818
       },
       "surfacePct": {
-        "turf": 0.421,
+        "turf": 0.422,
         "dirt": 0.321
       },
       "stylePct": {
-        "nige": 0.841,
-        "senko": 0.297,
-        "sashi": 0.121,
-        "oikomi": 0.879
+        "nige": 0.845,
+        "senko": 0.301,
+        "sashi": 0.118,
+        "oikomi": 0.868
       },
       "courses": [
         {
@@ -8363,20 +8363,20 @@
         "oikomi": "D"
       },
       "distancePct": {
-        "sprint": 0.355,
-        "mile": 0.734,
-        "middle": 0.59,
-        "long": 0.352
+        "sprint": 0.361,
+        "mile": 0.726,
+        "middle": 0.588,
+        "long": 0.351
       },
       "surfacePct": {
-        "turf": 0.021,
-        "dirt": 0.972
+        "turf": 0.02,
+        "dirt": 0.973
       },
       "stylePct": {
-        "nige": 0.841,
-        "senko": 0.597,
-        "sashi": 0.121,
-        "oikomi": 0.348
+        "nige": 0.845,
+        "senko": 0.598,
+        "sashi": 0.118,
+        "oikomi": 0.345
       },
       "courses": [],
       "going": [],
@@ -8415,20 +8415,20 @@
         "oikomi": "B"
       },
       "distancePct": {
-        "sprint": 0.355,
-        "mile": 0.493,
-        "middle": 0.59,
-        "long": 0.352
+        "sprint": 0.361,
+        "mile": 0.49,
+        "middle": 0.588,
+        "long": 0.351
       },
       "surfacePct": {
-        "turf": 0.062,
-        "dirt": 0.972
+        "turf": 0.061,
+        "dirt": 0.973
       },
       "stylePct": {
-        "nige": 0.393,
-        "senko": 0.597,
-        "sashi": 0.89,
-        "oikomi": 0.797
+        "nige": 0.399,
+        "senko": 0.598,
+        "sashi": 0.889,
+        "oikomi": 0.787
       },
       "courses": [
         {
@@ -8479,20 +8479,20 @@
         "oikomi": "D"
       },
       "distancePct": {
-        "sprint": 0.355,
+        "sprint": 0.361,
         "mile": 0.297,
-        "middle": 0.59,
-        "long": 0.821
+        "middle": 0.588,
+        "long": 0.818
       },
       "surfacePct": {
-        "turf": 0.876,
+        "turf": 0.875,
         "dirt": 0.321
       },
       "stylePct": {
-        "nige": 0.841,
-        "senko": 0.869,
-        "sashi": 0.617,
-        "oikomi": 0.348
+        "nige": 0.845,
+        "senko": 0.868,
+        "sashi": 0.615,
+        "oikomi": 0.345
       },
       "courses": [],
       "going": [],
@@ -8531,20 +8531,20 @@
         "oikomi": "E"
       },
       "distancePct": {
-        "sprint": 0.676,
-        "mile": 0.734,
+        "sprint": 0.682,
+        "mile": 0.726,
         "middle": 0.297,
-        "long": 0.352
+        "long": 0.351
       },
       "surfacePct": {
-        "turf": 0.421,
+        "turf": 0.422,
         "dirt": 0.703
       },
       "stylePct": {
-        "nige": 0.841,
-        "senko": 0.597,
-        "sashi": 0.121,
-        "oikomi": 0.148
+        "nige": 0.845,
+        "senko": 0.598,
+        "sashi": 0.118,
+        "oikomi": 0.145
       },
       "courses": [
         {
@@ -8601,20 +8601,20 @@
         "oikomi": "D"
       },
       "distancePct": {
-        "sprint": 0.355,
-        "mile": 0.493,
-        "middle": 0.59,
-        "long": 0.352
+        "sprint": 0.361,
+        "mile": 0.49,
+        "middle": 0.588,
+        "long": 0.351
       },
       "surfacePct": {
-        "turf": 0.421,
+        "turf": 0.422,
         "dirt": 0.321
       },
       "stylePct": {
-        "nige": 0.841,
-        "senko": 0.297,
-        "sashi": 0.617,
-        "oikomi": 0.348
+        "nige": 0.845,
+        "senko": 0.301,
+        "sashi": 0.615,
+        "oikomi": 0.345
       },
       "courses": [
         {
@@ -8673,20 +8673,20 @@
         "oikomi": "D"
       },
       "distancePct": {
-        "sprint": 0.355,
-        "mile": 0.734,
+        "sprint": 0.361,
+        "mile": 0.726,
         "middle": 0.176,
-        "long": 0.648
+        "long": 0.649
       },
       "surfacePct": {
-        "turf": 0.421,
+        "turf": 0.422,
         "dirt": 0.321
       },
       "stylePct": {
-        "nige": 0.393,
-        "senko": 0.869,
-        "sashi": 0.617,
-        "oikomi": 0.348
+        "nige": 0.399,
+        "senko": 0.868,
+        "sashi": 0.615,
+        "oikomi": 0.345
       },
       "courses": [],
       "going": [],
@@ -8731,20 +8731,20 @@
         "oikomi": "A"
       },
       "distancePct": {
-        "sprint": 0.355,
+        "sprint": 0.361,
         "mile": 0.297,
-        "middle": 0.59,
-        "long": 0.352
+        "middle": 0.588,
+        "long": 0.351
       },
       "surfacePct": {
-        "turf": 0.421,
+        "turf": 0.422,
         "dirt": 0.321
       },
       "stylePct": {
-        "nige": 0.393,
-        "senko": 0.869,
-        "sashi": 0.4,
-        "oikomi": 0.879
+        "nige": 0.399,
+        "senko": 0.868,
+        "sashi": 0.395,
+        "oikomi": 0.868
       },
       "courses": [],
       "going": [],
@@ -8782,20 +8782,20 @@
         "oikomi": "D"
       },
       "distancePct": {
-        "sprint": 0.355,
-        "mile": 0.493,
-        "middle": 0.59,
-        "long": 0.352
+        "sprint": 0.361,
+        "mile": 0.49,
+        "middle": 0.588,
+        "long": 0.351
       },
       "surfacePct": {
-        "turf": 0.421,
+        "turf": 0.422,
         "dirt": 0.321
       },
       "stylePct": {
-        "nige": 0.393,
-        "senko": 0.869,
-        "sashi": 0.617,
-        "oikomi": 0.348
+        "nige": 0.399,
+        "senko": 0.868,
+        "sashi": 0.615,
+        "oikomi": 0.345
       },
       "courses": [],
       "going": [],
@@ -8832,20 +8832,20 @@
         "oikomi": "E"
       },
       "distancePct": {
-        "sprint": 0.355,
-        "mile": 0.103,
+        "sprint": 0.361,
+        "mile": 0.105,
         "middle": 0.176,
-        "long": 0.821
+        "long": 0.818
       },
       "surfacePct": {
-        "turf": 0.421,
+        "turf": 0.422,
         "dirt": 0.321
       },
       "stylePct": {
-        "nige": 0.841,
-        "senko": 0.297,
-        "sashi": 0.121,
-        "oikomi": 0.148
+        "nige": 0.845,
+        "senko": 0.301,
+        "sashi": 0.118,
+        "oikomi": 0.145
       },
       "courses": [
         {
@@ -8915,20 +8915,20 @@
         "oikomi": "B"
       },
       "distancePct": {
-        "sprint": 0.676,
+        "sprint": 0.682,
         "mile": 0.297,
-        "middle": 0.59,
-        "long": 0.352
+        "middle": 0.588,
+        "long": 0.351
       },
       "surfacePct": {
-        "turf": 0.421,
-        "dirt": 0.845
+        "turf": 0.422,
+        "dirt": 0.841
       },
       "stylePct": {
-        "nige": 0.841,
-        "senko": 0.697,
-        "sashi": 0.4,
-        "oikomi": 0.797
+        "nige": 0.845,
+        "senko": 0.696,
+        "sashi": 0.395,
+        "oikomi": 0.787
       },
       "courses": [
         {
@@ -8980,20 +8980,20 @@
         "oikomi": "E"
       },
       "distancePct": {
-        "sprint": 0.052,
-        "mile": 0.734,
+        "sprint": 0.057,
+        "mile": 0.726,
         "middle": 0.176,
-        "long": 0.352
+        "long": 0.351
       },
       "surfacePct": {
-        "turf": 0.421,
+        "turf": 0.422,
         "dirt": 0.321
       },
       "stylePct": {
-        "nige": 0.841,
-        "senko": 0.297,
-        "sashi": 0.4,
-        "oikomi": 0.148
+        "nige": 0.845,
+        "senko": 0.301,
+        "sashi": 0.395,
+        "oikomi": 0.145
       },
       "courses": [
         {
@@ -9050,20 +9050,20 @@
         "oikomi": "C"
       },
       "distancePct": {
-        "sprint": 0.355,
-        "mile": 0.103,
-        "middle": 0.079,
-        "long": 0.821
+        "sprint": 0.361,
+        "mile": 0.105,
+        "middle": 0.078,
+        "long": 0.818
       },
       "surfacePct": {
-        "turf": 0.421,
+        "turf": 0.422,
         "dirt": 0.321
       },
       "stylePct": {
-        "nige": 0.148,
-        "senko": 0.297,
-        "sashi": 0.89,
-        "oikomi": 0.6
+        "nige": 0.155,
+        "senko": 0.301,
+        "sashi": 0.889,
+        "oikomi": 0.595
       },
       "courses": [],
       "going": [
@@ -9113,20 +9113,20 @@
         "oikomi": "E"
       },
       "distancePct": {
-        "sprint": 0.676,
-        "mile": 0.938,
-        "middle": 0.59,
-        "long": 0.352
+        "sprint": 0.682,
+        "mile": 0.932,
+        "middle": 0.588,
+        "long": 0.351
       },
       "surfacePct": {
-        "turf": 0.062,
-        "dirt": 0.972
+        "turf": 0.061,
+        "dirt": 0.973
       },
       "stylePct": {
-        "nige": 0.841,
-        "senko": 0.297,
-        "sashi": 0.121,
-        "oikomi": 0.148
+        "nige": 0.845,
+        "senko": 0.301,
+        "sashi": 0.118,
+        "oikomi": 0.145
       },
       "courses": [
         {
@@ -9179,6 +9179,179 @@
         "JpnI": 7,
         "GI": 2,
         "JpnIII": 1
+      }
+    },
+    "soccer_boy": {
+      "unitId": "soccer_boy",
+      "horseId": "H-1985103538",
+      "confidence": "HIGH",
+      "styleConfidence": "HIGH",
+      "starts": 11,
+      "distance": {
+        "sprint": "D",
+        "mile": "S",
+        "middle": "C",
+        "long": "D"
+      },
+      "surface": {
+        "turf": "A",
+        "dirt": "F"
+      },
+      "style": {
+        "nige": "D",
+        "senko": "C",
+        "sashi": "S",
+        "oikomi": "S"
+      },
+      "distancePct": {
+        "sprint": 0.361,
+        "mile": 0.932,
+        "middle": 0.176,
+        "long": 0.351
+      },
+      "surfacePct": {
+        "turf": 0.422,
+        "dirt": 0.321
+      },
+      "stylePct": {
+        "nige": 0.155,
+        "senko": 0.301,
+        "sashi": 0.889,
+        "oikomi": 0.946
+      },
+      "courses": [],
+      "going": [
+        {
+          "id": "GOOD",
+          "rating": "GOOD",
+          "sample": 7,
+          "delta": 0.0501
+        }
+      ],
+      "seasons": [],
+      "signatureId": "sig_1985103538",
+      "signatureName": "LEGACY · 阪神3歳S(GI)",
+      "mainWin": "88'マイルCS(G1)",
+      "gradeWins": {
+        "OTHER": 1,
+        "OP": 1,
+        "GI": 2,
+        "GIII": 2
+      }
+    },
+    "kurofune": {
+      "unitId": "kurofune",
+      "horseId": "H-1998110135",
+      "confidence": "HIGH",
+      "styleConfidence": "HIGH",
+      "starts": 10,
+      "distance": {
+        "sprint": "D",
+        "mile": "S",
+        "middle": "A",
+        "long": "D"
+      },
+      "surface": {
+        "turf": "B",
+        "dirt": "A"
+      },
+      "style": {
+        "nige": "B",
+        "senko": "S",
+        "sashi": "C",
+        "oikomi": "D"
+      },
+      "distancePct": {
+        "sprint": 0.361,
+        "mile": 0.932,
+        "middle": 0.588,
+        "long": 0.351
+      },
+      "surfacePct": {
+        "turf": 0.088,
+        "dirt": 0.902
+      },
+      "stylePct": {
+        "nige": 0.598,
+        "senko": 0.868,
+        "sashi": 0.395,
+        "oikomi": 0.345
+      },
+      "courses": [
+        {
+          "id": "TOKYO",
+          "rating": "GOOD",
+          "sample": 4,
+          "delta": 0.0565
+        }
+      ],
+      "going": [],
+      "seasons": [],
+      "signatureId": "sig_1998110135",
+      "signatureName": "LEGACY · NHKマイルC(GI)",
+      "mainWin": "01'ジャパンCダート(G1)",
+      "gradeWins": {
+        "OTHER": 2,
+        "GIII": 2,
+        "GI": 2
+      }
+    },
+    "deep_impact": {
+      "unitId": "deep_impact",
+      "horseId": "H-2002100816",
+      "confidence": "HIGH",
+      "styleConfidence": "HIGH",
+      "starts": 14,
+      "distance": {
+        "sprint": "F",
+        "mile": "D",
+        "middle": "S",
+        "long": "S"
+      },
+      "surface": {
+        "turf": "S",
+        "dirt": "F"
+      },
+      "style": {
+        "nige": "E",
+        "senko": "D",
+        "sashi": "B",
+        "oikomi": "S"
+      },
+      "distancePct": {
+        "sprint": 0.007,
+        "mile": 0.105,
+        "middle": 0.902,
+        "long": 0.959
+      },
+      "surfacePct": {
+        "turf": 0.875,
+        "dirt": 0.321
+      },
+      "stylePct": {
+        "nige": 0.044,
+        "senko": 0.034,
+        "sashi": 0.615,
+        "oikomi": 0.946
+      },
+      "courses": [],
+      "going": [],
+      "seasons": [
+        {
+          "id": "WINTER",
+          "rating": "WEAK",
+          "sample": 4,
+          "delta": -0.1615
+        }
+      ],
+      "signatureId": "sig_2002100816",
+      "signatureName": "LEGACY · 東京優駿(GI)",
+      "mainWin": "06'ジャパンC(G1)",
+      "gradeWins": {
+        "OTHER": 1,
+        "OP": 1,
+        "GII": 3,
+        "GI": 7
       }
     }
   }

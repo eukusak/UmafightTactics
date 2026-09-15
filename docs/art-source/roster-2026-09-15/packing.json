@@ -1,0 +1,1281 @@
+{
+  "generator": "built-in IMAGEGEN",
+  "matte": "IMAGEGEN isolated #00FF00; deterministic green key and despill",
+  "results": [
+    {
+      "id": "deep_impact",
+      "file": "motions/deep_impact.png",
+      "source": "docs/art-source/roster-2026-09-15/originals/deep_impact-matte.png",
+      "sourceSha256": "72cd00afd75f69f46e687334db3083c9fb3c3e67d9e168ca4d92dfb87bad30f5",
+      "sha256": "8621b484d2c4503f2da47cd492e85159ebe3bcf6a0c00206b8efccb75d5976e7",
+      "frames": [
+        {
+          "frame": 0,
+          "sourceBounds": {
+            "left": 37,
+            "top": 24,
+            "width": 205,
+            "height": 234
+          },
+          "scale": 0.40816326530612246,
+          "output": {
+            "left": 14,
+            "top": 14,
+            "width": 84,
+            "height": 96
+          },
+          "groundY": 110
+        },
+        {
+          "frame": 1,
+          "sourceBounds": {
+            "left": 40,
+            "top": 26,
+            "width": 189,
+            "height": 232
+          },
+          "scale": 0.40816326530612246,
+          "output": {
+            "left": 13,
+            "top": 15,
+            "width": 77,
+            "height": 95
+          },
+          "groundY": 110
+        },
+        {
+          "frame": 2,
+          "sourceBounds": {
+            "left": 28,
+            "top": 25,
+            "width": 190,
+            "height": 233
+          },
+          "scale": 0.40816326530612246,
+          "output": {
+            "left": 16,
+            "top": 15,
+            "width": 78,
+            "height": 95
+          },
+          "groundY": 110
+        },
+        {
+          "frame": 3,
+          "sourceBounds": {
+            "left": 16,
+            "top": 23,
+            "width": 206,
+            "height": 235
+          },
+          "scale": 0.40816326530612246,
+          "output": {
+            "left": 15,
+            "top": 14,
+            "width": 84,
+            "height": 96
+          },
+          "groundY": 110
+        },
+        {
+          "frame": 4,
+          "sourceBounds": {
+            "left": 24,
+            "top": 14,
+            "width": 227,
+            "height": 217
+          },
+          "scale": 0.40816326530612246,
+          "output": {
+            "left": 14,
+            "top": 21,
+            "width": 93,
+            "height": 89
+          },
+          "groundY": 110
+        },
+        {
+          "frame": 5,
+          "sourceBounds": {
+            "left": 30,
+            "top": 21,
+            "width": 223,
+            "height": 210
+          },
+          "scale": 0.40816326530612246,
+          "output": {
+            "left": 6,
+            "top": 24,
+            "width": 91,
+            "height": 86
+          },
+          "groundY": 110
+        },
+        {
+          "frame": 6,
+          "sourceBounds": {
+            "left": 19,
+            "top": 19,
+            "width": 226,
+            "height": 209
+          },
+          "scale": 0.40816326530612246,
+          "output": {
+            "left": 6,
+            "top": 22,
+            "width": 92,
+            "height": 85
+          },
+          "groundY": 107
+        },
+        {
+          "frame": 7,
+          "sourceBounds": {
+            "left": 10,
+            "top": 15,
+            "width": 222,
+            "height": 216
+          },
+          "scale": 0.40816326530612246,
+          "output": {
+            "left": 13,
+            "top": 22,
+            "width": 91,
+            "height": 88
+          },
+          "groundY": 110
+        },
+        {
+          "frame": 8,
+          "sourceBounds": {
+            "left": 39,
+            "top": 13,
+            "width": 205,
+            "height": 226
+          },
+          "scale": 0.40816326530612246,
+          "output": {
+            "left": 8,
+            "top": 18,
+            "width": 84,
+            "height": 92
+          },
+          "groundY": 110
+        },
+        {
+          "frame": 9,
+          "sourceBounds": {
+            "left": 39,
+            "top": 17,
+            "width": 201,
+            "height": 222
+          },
+          "scale": 0.40816326530612246,
+          "output": {
+            "left": 6,
+            "top": 19,
+            "width": 82,
+            "height": 91
+          },
+          "groundY": 110
+        },
+        {
+          "frame": 10,
+          "sourceBounds": {
+            "left": 7,
+            "top": 21,
+            "width": 244,
+            "height": 218
+          },
+          "scale": 0.40816326530612246,
+          "output": {
+            "left": 6,
+            "top": 21,
+            "width": 100,
+            "height": 89
+          },
+          "groundY": 110
+        },
+        {
+          "frame": 11,
+          "sourceBounds": {
+            "left": 27,
+            "top": 17,
+            "width": 195,
+            "height": 222
+          },
+          "scale": 0.40816326530612246,
+          "output": {
+            "left": 8,
+            "top": 19,
+            "width": 80,
+            "height": 91
+          },
+          "groundY": 110
+        },
+        {
+          "frame": 12,
+          "sourceBounds": {
+            "left": 37,
+            "top": 18,
+            "width": 219,
+            "height": 220
+          },
+          "scale": 0.40816326530612246,
+          "output": {
+            "left": 6,
+            "top": 20,
+            "width": 89,
+            "height": 90
+          },
+          "groundY": 110
+        },
+        {
+          "frame": 13,
+          "sourceBounds": {
+            "left": 9,
+            "top": 27,
+            "width": 247,
+            "height": 206
+          },
+          "scale": 0.40816326530612246,
+          "output": {
+            "left": 21,
+            "top": 26,
+            "width": 101,
+            "height": 84
+          },
+          "groundY": 110
+        },
+        {
+          "frame": 14,
+          "sourceBounds": {
+            "left": 9,
+            "top": 5,
+            "width": 247,
+            "height": 235
+          },
+          "scale": 0.40816326530612246,
+          "output": {
+            "left": 6,
+            "top": 14,
+            "width": 101,
+            "height": 96
+          },
+          "groundY": 110
+        },
+        {
+          "frame": 15,
+          "sourceBounds": {
+            "left": 34,
+            "top": 21,
+            "width": 203,
+            "height": 222
+          },
+          "scale": 0.40816326530612246,
+          "output": {
+            "left": 21,
+            "top": 19,
+            "width": 83,
+            "height": 91
+          },
+          "groundY": 110
+        },
+        {
+          "frame": 16,
+          "sourceBounds": {
+            "left": 37,
+            "top": 2,
+            "width": 194,
+            "height": 225
+          },
+          "scale": 0.40816326530612246,
+          "output": {
+            "left": 27,
+            "top": 18,
+            "width": 79,
+            "height": 92
+          },
+          "groundY": 110
+        },
+        {
+          "frame": 17,
+          "sourceBounds": {
+            "left": 25,
+            "top": 9,
+            "width": 208,
+            "height": 223
+          },
+          "scale": 0.40816326530612246,
+          "output": {
+            "left": 37,
+            "top": 19,
+            "width": 85,
+            "height": 91
+          },
+          "groundY": 110
+        },
+        {
+          "frame": 18,
+          "sourceBounds": {
+            "left": 27,
+            "top": 48,
+            "width": 206,
+            "height": 175
+          },
+          "scale": 0.40816326530612246,
+          "output": {
+            "left": 16,
+            "top": 39,
+            "width": 84,
+            "height": 71
+          },
+          "groundY": 110
+        },
+        {
+          "frame": 19,
+          "sourceBounds": {
+            "left": 18,
+            "top": 93,
+            "width": 226,
+            "height": 130
+          },
+          "scale": 0.40816326530612246,
+          "output": {
+            "left": 14,
+            "top": 57,
+            "width": 92,
+            "height": 53
+          },
+          "groundY": 110
+        },
+        {
+          "frame": 20,
+          "sourceBounds": {
+            "left": 30,
+            "top": 18,
+            "width": 209,
+            "height": 245
+          },
+          "scale": 0.40816326530612246,
+          "output": {
+            "left": 14,
+            "top": 10,
+            "width": 85,
+            "height": 100
+          },
+          "groundY": 110
+        },
+        {
+          "frame": 21,
+          "sourceBounds": {
+            "left": 31,
+            "top": 19,
+            "width": 213,
+            "height": 244
+          },
+          "scale": 0.40816326530612246,
+          "output": {
+            "left": 15,
+            "top": 10,
+            "width": 87,
+            "height": 100
+          },
+          "groundY": 110
+        },
+        {
+          "frame": 22,
+          "sourceBounds": {
+            "left": 16,
+            "top": 21,
+            "width": 212,
+            "height": 242
+          },
+          "scale": 0.40816326530612246,
+          "output": {
+            "left": 13,
+            "top": 11,
+            "width": 87,
+            "height": 99
+          },
+          "groundY": 110
+        },
+        {
+          "frame": 23,
+          "sourceBounds": {
+            "left": 16,
+            "top": 21,
+            "width": 219,
+            "height": 242
+          },
+          "scale": 0.40816326530612246,
+          "output": {
+            "left": 11,
+            "top": 11,
+            "width": 89,
+            "height": 99
+          },
+          "groundY": 110
+        }
+      ]
+    },
+    {
+      "id": "deep_impact",
+      "file": "portraits/deep_impact.png",
+      "sourceSha256": "751f0e6ffb6f5a14ae913f830ea551908c17abb45815d84517ddc8eed31d7f04",
+      "sha256": "536b6a968cf44b1c25859e63188898c3796bf7f5dbe9285e64c823c409622c87"
+    },
+    {
+      "id": "soccer_boy",
+      "file": "motions/soccer_boy.png",
+      "source": "docs/art-source/roster-2026-09-15/originals/soccer_boy-matte.png",
+      "sourceSha256": "8230ff12e78dcbb24340496fbc02f31fa2b1643004b4f4ae656dbbe1100b84b1",
+      "sha256": "7fde55af5f2140c4cba3b03e0464fc3de1504dcb1730b0b80b33d663a5942b25",
+      "frames": [
+        {
+          "frame": 0,
+          "sourceBounds": {
+            "left": 35,
+            "top": 9,
+            "width": 165,
+            "height": 236
+          },
+          "scale": 0.36764705882352944,
+          "output": {
+            "left": 31,
+            "top": 23,
+            "width": 61,
+            "height": 87
+          },
+          "groundY": 110
+        },
+        {
+          "frame": 1,
+          "sourceBounds": {
+            "left": 40,
+            "top": 10,
+            "width": 168,
+            "height": 235
+          },
+          "scale": 0.36764705882352944,
+          "output": {
+            "left": 30,
+            "top": 24,
+            "width": 62,
+            "height": 86
+          },
+          "groundY": 110
+        },
+        {
+          "frame": 2,
+          "sourceBounds": {
+            "left": 39,
+            "top": 9,
+            "width": 167,
+            "height": 235
+          },
+          "scale": 0.36764705882352944,
+          "output": {
+            "left": 30,
+            "top": 24,
+            "width": 61,
+            "height": 86
+          },
+          "groundY": 110
+        },
+        {
+          "frame": 3,
+          "sourceBounds": {
+            "left": 35,
+            "top": 9,
+            "width": 163,
+            "height": 236
+          },
+          "scale": 0.36764705882352944,
+          "output": {
+            "left": 31,
+            "top": 23,
+            "width": 60,
+            "height": 87
+          },
+          "groundY": 110
+        },
+        {
+          "frame": 4,
+          "sourceBounds": {
+            "left": 25,
+            "top": 10,
+            "width": 204,
+            "height": 225
+          },
+          "scale": 0.36764705882352944,
+          "output": {
+            "left": 31,
+            "top": 27,
+            "width": 75,
+            "height": 83
+          },
+          "groundY": 110
+        },
+        {
+          "frame": 5,
+          "sourceBounds": {
+            "left": 22,
+            "top": 10,
+            "width": 209,
+            "height": 226
+          },
+          "scale": 0.36764705882352944,
+          "output": {
+            "left": 43,
+            "top": 27,
+            "width": 77,
+            "height": 83
+          },
+          "groundY": 110
+        },
+        {
+          "frame": 6,
+          "sourceBounds": {
+            "left": 20,
+            "top": 10,
+            "width": 216,
+            "height": 215
+          },
+          "scale": 0.36764705882352944,
+          "output": {
+            "left": 13,
+            "top": 28,
+            "width": 79,
+            "height": 79
+          },
+          "groundY": 107
+        },
+        {
+          "frame": 7,
+          "sourceBounds": {
+            "left": 38,
+            "top": 14,
+            "width": 197,
+            "height": 221
+          },
+          "scale": 0.36764705882352944,
+          "output": {
+            "left": 41,
+            "top": 29,
+            "width": 72,
+            "height": 81
+          },
+          "groundY": 110
+        },
+        {
+          "frame": 8,
+          "sourceBounds": {
+            "left": 23,
+            "top": 10,
+            "width": 190,
+            "height": 239
+          },
+          "scale": 0.36764705882352944,
+          "output": {
+            "left": 36,
+            "top": 22,
+            "width": 70,
+            "height": 88
+          },
+          "groundY": 110
+        },
+        {
+          "frame": 9,
+          "sourceBounds": {
+            "left": 12,
+            "top": 0,
+            "width": 199,
+            "height": 249
+          },
+          "scale": 0.36764705882352944,
+          "output": {
+            "left": 15,
+            "top": 18,
+            "width": 73,
+            "height": 92
+          },
+          "groundY": 110
+        },
+        {
+          "frame": 10,
+          "sourceBounds": {
+            "left": 6,
+            "top": 5,
+            "width": 250,
+            "height": 240
+          },
+          "scale": 0.36764705882352944,
+          "output": {
+            "left": 15,
+            "top": 22,
+            "width": 92,
+            "height": 88
+          },
+          "groundY": 110
+        },
+        {
+          "frame": 11,
+          "sourceBounds": {
+            "left": 31,
+            "top": 5,
+            "width": 200,
+            "height": 243
+          },
+          "scale": 0.36764705882352944,
+          "output": {
+            "left": 33,
+            "top": 21,
+            "width": 74,
+            "height": 89
+          },
+          "groundY": 110
+        },
+        {
+          "frame": 12,
+          "sourceBounds": {
+            "left": 16,
+            "top": 41,
+            "width": 220,
+            "height": 185
+          },
+          "scale": 0.36764705882352944,
+          "output": {
+            "left": 14,
+            "top": 42,
+            "width": 81,
+            "height": 68
+          },
+          "groundY": 110
+        },
+        {
+          "frame": 13,
+          "sourceBounds": {
+            "left": 3,
+            "top": 7,
+            "width": 246,
+            "height": 220
+          },
+          "scale": 0.36764705882352944,
+          "output": {
+            "left": 32,
+            "top": 29,
+            "width": 90,
+            "height": 81
+          },
+          "groundY": 110
+        },
+        {
+          "frame": 14,
+          "sourceBounds": {
+            "left": 0,
+            "top": 20,
+            "width": 256,
+            "height": 204
+          },
+          "scale": 0.36764705882352944,
+          "output": {
+            "left": 28,
+            "top": 35,
+            "width": 94,
+            "height": 75
+          },
+          "groundY": 110
+        },
+        {
+          "frame": 15,
+          "sourceBounds": {
+            "left": 23,
+            "top": 9,
+            "width": 221,
+            "height": 224
+          },
+          "scale": 0.36764705882352944,
+          "output": {
+            "left": 19,
+            "top": 28,
+            "width": 81,
+            "height": 82
+          },
+          "groundY": 110
+        },
+        {
+          "frame": 16,
+          "sourceBounds": {
+            "left": 21,
+            "top": 7,
+            "width": 190,
+            "height": 236
+          },
+          "scale": 0.36764705882352944,
+          "output": {
+            "left": 30,
+            "top": 23,
+            "width": 70,
+            "height": 87
+          },
+          "groundY": 110
+        },
+        {
+          "frame": 17,
+          "sourceBounds": {
+            "left": 26,
+            "top": 14,
+            "width": 205,
+            "height": 230
+          },
+          "scale": 0.36764705882352944,
+          "output": {
+            "left": 26,
+            "top": 25,
+            "width": 75,
+            "height": 85
+          },
+          "groundY": 110
+        },
+        {
+          "frame": 18,
+          "sourceBounds": {
+            "left": 31,
+            "top": 40,
+            "width": 189,
+            "height": 196
+          },
+          "scale": 0.36764705882352944,
+          "output": {
+            "left": 35,
+            "top": 38,
+            "width": 69,
+            "height": 72
+          },
+          "groundY": 110
+        },
+        {
+          "frame": 19,
+          "sourceBounds": {
+            "left": 23,
+            "top": 94,
+            "width": 219,
+            "height": 143
+          },
+          "scale": 0.36764705882352944,
+          "output": {
+            "left": 30,
+            "top": 57,
+            "width": 81,
+            "height": 53
+          },
+          "groundY": 110
+        },
+        {
+          "frame": 20,
+          "sourceBounds": {
+            "left": 26,
+            "top": 3,
+            "width": 187,
+            "height": 272
+          },
+          "scale": 0.36764705882352944,
+          "output": {
+            "left": 35,
+            "top": 10,
+            "width": 69,
+            "height": 100
+          },
+          "groundY": 110
+        },
+        {
+          "frame": 21,
+          "sourceBounds": {
+            "left": 27,
+            "top": 13,
+            "width": 186,
+            "height": 262
+          },
+          "scale": 0.36764705882352944,
+          "output": {
+            "left": 34,
+            "top": 14,
+            "width": 68,
+            "height": 96
+          },
+          "groundY": 110
+        },
+        {
+          "frame": 22,
+          "sourceBounds": {
+            "left": 29,
+            "top": 12,
+            "width": 180,
+            "height": 263
+          },
+          "scale": 0.36764705882352944,
+          "output": {
+            "left": 38,
+            "top": 13,
+            "width": 66,
+            "height": 97
+          },
+          "groundY": 110
+        },
+        {
+          "frame": 23,
+          "sourceBounds": {
+            "left": 37,
+            "top": 7,
+            "width": 177,
+            "height": 268
+          },
+          "scale": 0.36764705882352944,
+          "output": {
+            "left": 40,
+            "top": 11,
+            "width": 65,
+            "height": 99
+          },
+          "groundY": 110
+        }
+      ]
+    },
+    {
+      "id": "soccer_boy",
+      "file": "portraits/soccer_boy.png",
+      "sourceSha256": "ced02d878c76b6086d2ec58e7442632dbd79b5048e020441ae614708f5be0185",
+      "sha256": "34ec1409b7a581656ebb32ecce2e2aa4de209f740b089d0b1a536c1e4b3c34ae"
+    },
+    {
+      "id": "kurofune",
+      "file": "motions/kurofune.png",
+      "source": "docs/art-source/roster-2026-09-15/originals/kurofune-matte.png",
+      "sourceSha256": "35850ed51bc3236f689317b0cf591751eef1d50f4c3842f5b34c131663ec512c",
+      "sha256": "53469db2960ad8781408326ddcd35200bda6c74b0d7ca88956c6d0ac9dc7583f",
+      "frames": [
+        {
+          "frame": 0,
+          "sourceBounds": {
+            "left": 36,
+            "top": 18,
+            "width": 163,
+            "height": 241
+          },
+          "scale": 0.3875968992248062,
+          "output": {
+            "left": 25,
+            "top": 17,
+            "width": 63,
+            "height": 93
+          },
+          "groundY": 110
+        },
+        {
+          "frame": 1,
+          "sourceBounds": {
+            "left": 28,
+            "top": 18,
+            "width": 167,
+            "height": 241
+          },
+          "scale": 0.3875968992248062,
+          "output": {
+            "left": 23,
+            "top": 17,
+            "width": 65,
+            "height": 93
+          },
+          "groundY": 110
+        },
+        {
+          "frame": 2,
+          "sourceBounds": {
+            "left": 27,
+            "top": 18,
+            "width": 168,
+            "height": 241
+          },
+          "scale": 0.3875968992248062,
+          "output": {
+            "left": 24,
+            "top": 17,
+            "width": 65,
+            "height": 93
+          },
+          "groundY": 110
+        },
+        {
+          "frame": 3,
+          "sourceBounds": {
+            "left": 27,
+            "top": 18,
+            "width": 168,
+            "height": 241
+          },
+          "scale": 0.3875968992248062,
+          "output": {
+            "left": 23,
+            "top": 17,
+            "width": 65,
+            "height": 93
+          },
+          "groundY": 110
+        },
+        {
+          "frame": 4,
+          "sourceBounds": {
+            "left": 21,
+            "top": 6,
+            "width": 197,
+            "height": 233
+          },
+          "scale": 0.3875968992248062,
+          "output": {
+            "left": 41,
+            "top": 20,
+            "width": 76,
+            "height": 90
+          },
+          "groundY": 110
+        },
+        {
+          "frame": 5,
+          "sourceBounds": {
+            "left": 25,
+            "top": 7,
+            "width": 191,
+            "height": 235
+          },
+          "scale": 0.3875968992248062,
+          "output": {
+            "left": 11,
+            "top": 19,
+            "width": 74,
+            "height": 91
+          },
+          "groundY": 110
+        },
+        {
+          "frame": 6,
+          "sourceBounds": {
+            "left": 25,
+            "top": 6,
+            "width": 194,
+            "height": 230
+          },
+          "scale": 0.3875968992248062,
+          "output": {
+            "left": 6,
+            "top": 18,
+            "width": 75,
+            "height": 89
+          },
+          "groundY": 107
+        },
+        {
+          "frame": 7,
+          "sourceBounds": {
+            "left": 25,
+            "top": 5,
+            "width": 196,
+            "height": 236
+          },
+          "scale": 0.3875968992248062,
+          "output": {
+            "left": 33,
+            "top": 19,
+            "width": 76,
+            "height": 91
+          },
+          "groundY": 110
+        },
+        {
+          "frame": 8,
+          "sourceBounds": {
+            "left": 29,
+            "top": 5,
+            "width": 194,
+            "height": 248
+          },
+          "scale": 0.3875968992248062,
+          "output": {
+            "left": 27,
+            "top": 14,
+            "width": 75,
+            "height": 96
+          },
+          "groundY": 110
+        },
+        {
+          "frame": 9,
+          "sourceBounds": {
+            "left": 21,
+            "top": 5,
+            "width": 196,
+            "height": 249
+          },
+          "scale": 0.3875968992248062,
+          "output": {
+            "left": 17,
+            "top": 13,
+            "width": 76,
+            "height": 97
+          },
+          "groundY": 110
+        },
+        {
+          "frame": 10,
+          "sourceBounds": {
+            "left": 7,
+            "top": 9,
+            "width": 199,
+            "height": 244
+          },
+          "scale": 0.3875968992248062,
+          "output": {
+            "left": 19,
+            "top": 15,
+            "width": 77,
+            "height": 95
+          },
+          "groundY": 110
+        },
+        {
+          "frame": 11,
+          "sourceBounds": {
+            "left": 31,
+            "top": 9,
+            "width": 172,
+            "height": 245
+          },
+          "scale": 0.3875968992248062,
+          "output": {
+            "left": 22,
+            "top": 15,
+            "width": 67,
+            "height": 95
+          },
+          "groundY": 110
+        },
+        {
+          "frame": 12,
+          "sourceBounds": {
+            "left": 28,
+            "top": 3,
+            "width": 196,
+            "height": 249
+          },
+          "scale": 0.3875968992248062,
+          "output": {
+            "left": 18,
+            "top": 13,
+            "width": 76,
+            "height": 97
+          },
+          "groundY": 110
+        },
+        {
+          "frame": 13,
+          "sourceBounds": {
+            "left": 31,
+            "top": 2,
+            "width": 195,
+            "height": 251
+          },
+          "scale": 0.3875968992248062,
+          "output": {
+            "left": 21,
+            "top": 13,
+            "width": 76,
+            "height": 97
+          },
+          "groundY": 110
+        },
+        {
+          "frame": 14,
+          "sourceBounds": {
+            "left": 14,
+            "top": 29,
+            "width": 242,
+            "height": 223
+          },
+          "scale": 0.3875968992248062,
+          "output": {
+            "left": 27,
+            "top": 24,
+            "width": 94,
+            "height": 86
+          },
+          "groundY": 110
+        },
+        {
+          "frame": 15,
+          "sourceBounds": {
+            "left": 29,
+            "top": 6,
+            "width": 195,
+            "height": 247
+          },
+          "scale": 0.3875968992248062,
+          "output": {
+            "left": 26,
+            "top": 14,
+            "width": 76,
+            "height": 96
+          },
+          "groundY": 110
+        },
+        {
+          "frame": 16,
+          "sourceBounds": {
+            "left": 35,
+            "top": 6,
+            "width": 193,
+            "height": 212
+          },
+          "scale": 0.3875968992248062,
+          "output": {
+            "left": 21,
+            "top": 28,
+            "width": 75,
+            "height": 82
+          },
+          "groundY": 110
+        },
+        {
+          "frame": 17,
+          "sourceBounds": {
+            "left": 35,
+            "top": 15,
+            "width": 176,
+            "height": 203
+          },
+          "scale": 0.3875968992248062,
+          "output": {
+            "left": 30,
+            "top": 31,
+            "width": 68,
+            "height": 79
+          },
+          "groundY": 110
+        },
+        {
+          "frame": 18,
+          "sourceBounds": {
+            "left": 22,
+            "top": 48,
+            "width": 192,
+            "height": 169
+          },
+          "scale": 0.3875968992248062,
+          "output": {
+            "left": 25,
+            "top": 44,
+            "width": 74,
+            "height": 66
+          },
+          "groundY": 110
+        },
+        {
+          "frame": 19,
+          "sourceBounds": {
+            "left": 17,
+            "top": 86,
+            "width": 210,
+            "height": 131
+          },
+          "scale": 0.3875968992248062,
+          "output": {
+            "left": 25,
+            "top": 59,
+            "width": 81,
+            "height": 51
+          },
+          "groundY": 110
+        },
+        {
+          "frame": 20,
+          "sourceBounds": {
+            "left": 40,
+            "top": 4,
+            "width": 155,
+            "height": 258
+          },
+          "scale": 0.3875968992248062,
+          "output": {
+            "left": 29,
+            "top": 10,
+            "width": 60,
+            "height": 100
+          },
+          "groundY": 110
+        },
+        {
+          "frame": 21,
+          "sourceBounds": {
+            "left": 39,
+            "top": 4,
+            "width": 157,
+            "height": 258
+          },
+          "scale": 0.3875968992248062,
+          "output": {
+            "left": 29,
+            "top": 10,
+            "width": 61,
+            "height": 100
+          },
+          "groundY": 110
+        },
+        {
+          "frame": 22,
+          "sourceBounds": {
+            "left": 36,
+            "top": 4,
+            "width": 155,
+            "height": 258
+          },
+          "scale": 0.3875968992248062,
+          "output": {
+            "left": 29,
+            "top": 10,
+            "width": 60,
+            "height": 100
+          },
+          "groundY": 110
+        },
+        {
+          "frame": 23,
+          "sourceBounds": {
+            "left": 38,
+            "top": 4,
+            "width": 156,
+            "height": 258
+          },
+          "scale": 0.3875968992248062,
+          "output": {
+            "left": 29,
+            "top": 10,
+            "width": 60,
+            "height": 100
+          },
+          "groundY": 110
+        }
+      ]
+    },
+    {
+      "id": "kurofune",
+      "file": "portraits/kurofune.png",
+      "sourceSha256": "5b1bd1b66907383e0a54e4907390c285de26dcef16b8b9e1e8789d61c7561fc3",
+      "sha256": "ea9d0fd758008b93c54c0d9a80a01c826fd1ea8a35481d943573511fe32b45d1"
+    },
+    {
+      "id": "deep_impact",
+      "file": "characters/cutin/deep_impact.png",
+      "sourceSha256": "82adb11fb05bf2b55bf94ca28ead148397818fb9b372b1e35745b194ae202356",
+      "sha256": "85db74bd0a404abb72a083859c2bf74e2ee3fa062906da82c730fdce739cd080"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "version": 1,
+  "note": "Horses promoted out of the source DB's P1-SEED pool into the playable roster. The build treats these exactly like P0 rows — stats, role, distance and skill are all still derived from horse-game-db.json — so the only hand-authored fields here are the ones a derivation cannot supply: which cost bracket the unit occupies, and the running style when it is a design decision rather than a reading of the record.",
+  "policy": "Every addition states its cost and its style with a reason. `styleMatchesSource` is false when the declared style disagrees with the horse's own historySummary.primaryStyle in horse-game-db.json; that is allowed, but it is never silent — the field and the reason are what make it auditable. The style evidence file (running-style-evidence.json) is generated from a passage database that is not committed, so additions carry no evidence row and must not claim one. nameEn is supplied here because the seed rows carry no English name, and the unit id — which every art file is named after — is derived from it.",
+  "additions": [
+    {
+      "nameKo": "사커 보이",
+      "nameJa": "サッカーボーイ",
+      "horseId": "H-1985103538",
+      "cost": 2,
+      "runStyle": "oikomi",
+      "styleMatchesSource": false,
+      "sourcePrimaryStyle": "STALKER",
+      "reason": "사용자 지정. 추입 2코스트 후열을 확보한다. 소스의 primaryStyle은 STALKER(선입)이지만 각질 적성은 stalker S · closer S로 동률이고, 88년 마일 챔피언십을 후방에서 한 번에 따라잡은 말이라 추입 쪽 해석이 기록과 충돌하지 않는다.",
+      "evidenceNote": "11전 11기록 · 주요 승리 88'マイルCS(G1) · 각질 적성 closer S / stalker S · 잔디 A · 마일 S",
+      "nameEn": "Soccer Boy"
+    },
+    {
+      "nameKo": "쿠로후네",
+      "nameJa": "クロフネ",
+      "horseId": "H-1998110135",
+      "cost": 3,
+      "runStyle": "senko",
+      "styleMatchesSource": true,
+      "sourcePrimaryStyle": "PACE",
+      "reason": "사용자 지정. 처음에는 추입 4코로 넣었으나, 소스 기록이 PACE(선행)이고 각질 적성도 pace S / closer D라 그 지정은 경기 기록과 어긋났다. 선행으로 되돌려 기록과 일치시키고, 평가값 0.58에 맞는 3코스트로 내린다. 비게 되는 추입 4코 자리는 오르페브르가 맡는다.",
+      "evidenceNote": "10전 10기록 · 주요 승리 01'ジャパンCダート(G1) · 각질 적성 pace S / front B / stalker C / closer D · 더트 A · 자동 판정과 지정이 일치한다",
+      "nameEn": "Kurofune"
+    },
+    {
+      "nameKo": "딥 임팩트",
+      "nameJa": "ディープインパクト",
+      "horseId": "H-2002100816",
+      "cost": 5,
+      "runStyle": "oikomi",
+      "styleMatchesSource": true,
+      "sourcePrimaryStyle": "CLOSER",
+      "reason": "사용자 지정. 추입 5코스트 주력을 확보한다. 소스의 primaryStyle이 CLOSER이고 각질 적성도 closer S라 기록과 일치한다. canonical-roster.json의 replacedFromSpecV1은 이 말을 씨수말이라는 이유로 제외했었고, 그 판단을 사용자가 뒤집은 것이다.",
+      "evidenceNote": "14전 12승 · GI 7승 · 주요 승리 06'ジャパンC(G1) · 각질 적성 closer S / stalker B · 잔디 S · 중거리 S / 장거리 S",
+      "nameEn": "Deep Impact"
+    }
+  ]
+}

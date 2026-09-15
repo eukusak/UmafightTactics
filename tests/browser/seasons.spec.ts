@@ -1,4 +1,5 @@
 import { test, expect, type Page } from '@playwright/test';
+import { ACTIVE_S1_SIZE, CANONICAL_ROSTER_SIZE } from '../../src/game/engine/constants';
 import { readFileSync } from 'node:fs';
 import type { SeasonDef } from '../../src/game/engine/seasons/catalog';
 
@@ -44,9 +45,14 @@ for (const season of SEASONS) {
     await inViewport(page, '.season-screen .menu-buttons');
     await page.screenshot({ path: info.outputPath(`${season.id}-setup.png`) });
 
-    await page.getByRole('button', { name: '출전 기물 60명 보기' }).click();
-    await expect(page.locator('.season-roster-units > div')).toHaveCount(60);
-    for (const group of await page.locator('.season-roster-units').all()) await expect(group.locator(':scope > div')).toHaveCount(15);
+    await page.getByRole('button', { name: `출전 기물 ${ACTIVE_S1_SIZE}명 보기` }).click();
+    await expect(page.locator('.season-roster-units > div')).toHaveCount(ACTIVE_S1_SIZE);
+    // Four factions split the season evenly: 63 units is 16/16/16/15.
+    const even = Math.floor(ACTIVE_S1_SIZE / 4);
+    for (const group of await page.locator('.season-roster-units').all()) {
+      const size = await group.locator(':scope > div').count();
+      expect(size === even || size === even + 1, `faction has ${size}, expected ${even} or ${even + 1}`).toBe(true);
+    }
     for (const image of await page.locator('.season-roster-units img').all()) {
       await expect(image).toHaveJSProperty('complete', true);
       await expect(image).toHaveJSProperty('naturalWidth', 256);
@@ -63,13 +69,16 @@ for (const season of SEASONS) {
 
 test('collection trait filters without season or era selectors', async ({ page }, info) => {
   await mainMenu(page);
-  await page.getByRole('button', { name: '도감 (145명)' }).click();
-  await expect(page.locator('.collection-card')).toHaveCount(145);
+  await page.getByRole('button', { name: `도감 (${CANONICAL_ROSTER_SIZE}명)` }).click();
+  await expect(page.locator('.collection-card')).toHaveCount(CANONICAL_ROSTER_SIZE);
   for (const season of SEASONS) {
     await expect(page.getByLabel('도감 시즌')).toHaveCount(0);
+    // Four factions split the season evenly: 63 units is 16/16/16/15.
+    const even = Math.floor(ACTIVE_S1_SIZE / 4);
     for (const trait of season.traits) {
       await page.getByLabel('특성', { exact: true }).selectOption(trait.id);
-      await expect(page.locator('.collection-card')).toHaveCount(15);
+      const size = await page.locator('.collection-card').count();
+      expect(size === even || size === even + 1, `${trait.id} has ${size}, expected ${even} or ${even + 1}`).toBe(true);
     }
   }
   await page.screenshot({ path: info.outputPath('collection.png') });

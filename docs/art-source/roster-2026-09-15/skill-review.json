@@ -1,0 +1,165 @@
+{
+  "date": "2026-09-15",
+  "scope": "Initial IMAGEGEN delivery for PR27 newcomers; no skill changes.",
+  "units": {
+    "deep_impact": {
+      "skillSignature": "3793e5191e5684ae028043dce15b6c23ad2ac7fbafac464a97ca84bfce07b289",
+      "runtimeSha256": "8621b484d2c4503f2da47cd492e85159ebe3bcf6a0c00206b8efccb75d5976e7",
+      "originalSkill": {
+        "id": "skill_deep_impact",
+        "displayName": "딥 임팩트 · 마무리 순환 (2006 ジャパンカップ(GI))",
+        "template": "SINGLE_EXECUTE",
+        "baseValues": [
+          376,
+          418,
+          32
+        ],
+        "starMultipliers": [
+          1,
+          1.45,
+          6
+        ],
+        "damageType": "PHYSICAL",
+        "targetRule": "LOWEST_HP_PCT_ENEMY",
+        "manaCost": 70,
+        "effects": [
+          {
+            "kind": "DAMAGE",
+            "value": 606,
+            "damageType": "PHYSICAL",
+            "target": "LOWEST_HP_PCT_ENEMY",
+            "onKillMana": 25
+          }
+        ],
+        "vfxKey": "vfx_execute",
+        "description": "[마무리 순환] 가장 지쳐 있는 상대에게 606의 물리 피해를 꽂고, 그대로 넘어뜨리면 마나를 25 돌려받습니다. 근거: 2006 ジャパンカップ(GI) 1위.",
+        "choreography": {
+          "windup": 0.24,
+          "recovery": 0.3,
+          "pulseInterval": 0.18,
+          "color": "#3b2a5c",
+          "variant": "execution_refund",
+          "accent": "#e8b84b",
+          "emblem": 147,
+          "label": "마무리 순환",
+          "motion": "STRIKE"
+        }
+      },
+      "originalSkillSignature": "3793e5191e5684ae028043dce15b6c23ad2ac7fbafac464a97ca84bfce07b289",
+      "approved": true,
+      "review": "Reference identity, all24poses and skill release frame14 visually reviewed; no invented weapons or unrelated effects."
+    },
+    "soccer_boy": {
+      "skillSignature": "e74b1aed6450fbee5aae627f1f5b2f79994024371fae71e039343dedf499f472",
+      "runtimeSha256": "7fde55af5f2140c4cba3b03e0464fc3de1504dcb1730b0b80b33d663a5942b25",
+      "originalSkill": {
+        "id": "skill_soccer_boy",
+        "displayName": "사커 보이 · 잔상 마무리 (1988 マイルチャンピオンシップ(GI))",
+        "template": "SINGLE_EXECUTE",
+        "baseValues": [
+          205,
+          228,
+          30
+        ],
+        "starMultipliers": [
+          1,
+          1.45,
+          2.2
+        ],
+        "damageType": "PHYSICAL",
+        "targetRule": "LOWEST_HP_PCT_ENEMY",
+        "manaCost": 70,
+        "effects": [
+          {
+            "kind": "UNTARGETABLE",
+            "duration": 0.3,
+            "target": "SELF"
+          },
+          {
+            "kind": "DAMAGE",
+            "value": 309,
+            "damageType": "PHYSICAL",
+            "target": "LOWEST_HP_PCT_ENEMY",
+            "delay": 0.2
+          },
+          {
+            "kind": "STAT_MUL",
+            "stat": "attackSpeed",
+            "value": 0.318,
+            "duration": 4,
+            "refresh": true,
+            "target": "SELF"
+          }
+        ],
+        "vfxKey": "vfx_execute",
+        "description": "[잔상 마무리] 0.3초 동안 시야에서 사라졌다가 0.2초 뒤 가장 지쳐 있는 상대에게 309의 물리 피해로 나타나며, 4초 동안 공격속도가 +31.8% 오릅니다. 근거: 1988 マイルチャンピオンシップ(GI) 1위.",
+        "choreography": {
+          "windup": 0.26,
+          "recovery": 0.3,
+          "pulseInterval": 0.2,
+          "color": "#ffd964",
+          "variant": "shadow_finish",
+          "accent": "#4f7de8",
+          "emblem": 145,
+          "label": "잔상 마무리",
+          "motion": "STRIKE"
+        }
+      },
+      "originalSkillSignature": "e74b1aed6450fbee5aae627f1f5b2f79994024371fae71e039343dedf499f472",
+      "approved": true,
+      "review": "Reference identity, all24poses and skill release frame14 visually reviewed; no invented weapons or unrelated effects."
+    },
+    "kurofune": {
+      "skillSignature": "83a1443030a0a07dee534024757a2ef068ad2e2cb60b9b1c80cf7c88271d46bf",
+      "runtimeSha256": "53469db2960ad8781408326ddcd35200bda6c74b0d7ca88956c6d0ac9dc7583f",
+      "originalSkill": {
+        "id": "skill_kurofune",
+        "displayName": "쿠로후네 · 거인 절단 (2001 ジャパンカップダート(GI))",
+        "template": "SINGLE_EXECUTE",
+        "baseValues": [
+          242,
+          269,
+          30
+        ],
+        "starMultipliers": [
+          1,
+          1.45,
+          2.2
+        ],
+        "damageType": "PHYSICAL",
+        "targetRule": "LOWEST_HP_PCT_ENEMY",
+        "manaCost": 70,
+        "effects": [
+          {
+            "kind": "DAMAGE",
+            "value": 266,
+            "damageType": "PHYSICAL",
+            "target": "LOWEST_HP_PCT_ENEMY"
+          },
+          {
+            "kind": "DAMAGE_MAXHP_PCT",
+            "value": 0.045,
+            "damageType": "PHYSICAL",
+            "target": "LOWEST_HP_PCT_ENEMY"
+          }
+        ],
+        "vfxKey": "vfx_execute",
+        "description": "[거인 절단] 가장 지쳐 있는 상대에게 266에 더해 그 상대 최대 체력의 4.5%만큼 물리 피해를 입힙니다. 근거: 2001 ジャパンカップダート(GI) 1위.",
+        "choreography": {
+          "windup": 0.32,
+          "recovery": 0.3,
+          "pulseInterval": 0.2,
+          "color": "#2b3f6b",
+          "variant": "giant_cutter",
+          "accent": "#d8c27a",
+          "emblem": 146,
+          "label": "거인 절단",
+          "motion": "STRIKE"
+        }
+      },
+      "originalSkillSignature": "83a1443030a0a07dee534024757a2ef068ad2e2cb60b9b1c80cf7c88271d46bf",
+      "approved": true,
+      "review": "Reference identity, all24poses and skill release frame14 visually reviewed; no invented weapons or unrelated effects."
+    }
+  }
+}
