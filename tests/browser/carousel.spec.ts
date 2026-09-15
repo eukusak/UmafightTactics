@@ -17,7 +17,14 @@ test('carousel requires walking, supports arrows and floor clicks, then shows an
   await page.getByRole('button', { name: '새 게임' }).click();
   await page.getByLabel('무작위 시드 사용').uncheck();
   // Freeze the simulation while checking the initial board, before AI can claim units.
-  await page.clock.install();await page.clock.pauseAt(new Date());
+  // `pauseAt(new Date())` reads the clock in Node and applies it in the page,
+  // so on a slow runner the page's clock passes that instant before pauseAt
+  // lands and Playwright rejects it as "cannot fast-forward to the past".
+  // Installing at a fixed instant and pausing just after it removes the race:
+  // the target can never already be behind.
+  const frozen = new Date('2026-01-01T00:00:00Z');
+  await page.clock.install({ time: frozen });
+  await page.clock.pauseAt(new Date(frozen.getTime() + 1000));
   await page.getByRole('button', { name: '게임 시작' }).click();
   const arena = page.locator('.carousel-arena'), me = page.locator('.carousel-trainer.mine');
   await expect(me.locator('.animated-unit')).toBeVisible();
