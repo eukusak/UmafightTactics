@@ -127,7 +127,7 @@ mkdirSync(OUT, { recursive: true });
 const record = {
   date: new Date().toISOString().slice(0, 10),
   note: '추입 로스터 추가 3인 및 그에 따른 코스트 재배정. 스킬 수치는 코스트를 따라 움직였고, 몸동작 계약(포즈·대상·타이밍)이 바뀐 유닛은 아래 motionChanged에 실린다.',
-  contract: '몸동작 계약 = 스킬에서 baseValues·starMultipliers·description과 피해/보호막/회복 수치를 제거한 나머지. 이 값이 같으면 기존 원화를 그대로 쓴다.',
+  contract: '몸동작 계약 = 스킬에서 baseValues·starMultipliers·description과 피해/보호막/회복 수치를 제거한 나머지. 각질 교정이 옮기는 vfx_dash_<각질> 키도 제외한다 — 엔진이 그리는 이펙트라 원화의 포즈와 무관하다. 이 값이 같으면 기존 원화를 그대로 쓴다.',
   added,
   costChanges: costChanges.sort((x, y) => x.nameKo.localeCompare(y.nameKo)),
   styleChanges,

@@ -14,6 +14,7 @@
  *   npx tsx scripts/build-roster-change-review.ts   # first, to produce the proof
  *   npx tsx scripts/repin-skill-signatures.ts
  */
+import { execFileSync } from 'node:child_process';
 import { createHash } from 'node:crypto';
 import { readFileSync, writeFileSync } from 'node:fs';
 import path from 'node:path';
@@ -78,4 +79,11 @@ for (const [id, record] of Object.entries(parsed.units)) {
 }
 writeFileSync(adaptive, JSON.stringify(parsed, null, 2) + '\n');
 console.log(`  docs/qa/adaptive-balance-motion-compatibility.json: moved ${moved} terminal states forward`);
+
+// briefs.json embeds the whole skill next to its signature, so re-pinning the
+// hash alone would leave it describing the previous numbers. It is generated,
+// not hand-pinned, so it is rebuilt here rather than patched — otherwise the
+// only thing that catches the drift is CI's `git diff --exit-code`.
+execFileSync('npm', ['run', '--silent', 'art:briefs'], { cwd: ROOT, stdio: 'inherit' });
+
 console.log('repin — OK (모든 몸동작 계약이 유지된 상태에서만 실행됨)');
