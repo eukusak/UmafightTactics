@@ -13561,6 +13561,111 @@
       "closingWins": 0,
       "distanceRecommendation": "miler",
       "sourceHistoryConfidence": "HIGH"
+    },
+    "soccer_boy": {
+      "horseId": "H-1985103538",
+      "name": "사커 보이",
+      "recordedRaces": 11,
+      "recordedWins": 6,
+      "selectionReason": "통과순 데이터베이스가 저장소에 포함되지 않아 horse-game-db.json의 historySummary.mainWin을 대표 경기로 사용. 착순·필드 규모는 해당 경기의 공개 기록.",
+      "evidenceSource": "horse-game-db.json historySummary.mainWin",
+      "representative": {
+        "race_id": "198805050911",
+        "race_date": "1988/11/20",
+        "race_name": "マイルチャンピオンシップ(GI)",
+        "grade": "GI",
+        "racecourse": null,
+        "surface": "Turf",
+        "distance_m": 1600,
+        "finish_rank": 1,
+        "field_size": 16,
+        "popularity": 1,
+        "margin": null,
+        "passage": null,
+        "final_3f": null,
+        "prize_10k_yen": null
+      },
+      "otherTopResults": [],
+      "distanceRecommendation": "miler",
+      "distanceWinWeights": {
+        "sprinter": 0,
+        "miler": 4,
+        "middle": 2,
+        "stayer": 0
+      },
+      "frontWins": 0,
+      "closingWins": 4,
+      "sourceHistoryConfidence": "HIGH"
+    },
+    "kurofune": {
+      "horseId": "H-1998110135",
+      "name": "쿠로후네",
+      "recordedRaces": 10,
+      "recordedWins": 6,
+      "selectionReason": "통과순 데이터베이스가 저장소에 포함되지 않아 horse-game-db.json의 historySummary.mainWin을 대표 경기로 사용. 착순·필드 규모는 해당 경기의 공개 기록.",
+      "evidenceSource": "horse-game-db.json historySummary.mainWin",
+      "representative": {
+        "race_id": "200105050411",
+        "race_date": "2001/11/24",
+        "race_name": "ジャパンカップダート(GI)",
+        "grade": "GI",
+        "racecourse": null,
+        "surface": "Dirt",
+        "distance_m": 2100,
+        "finish_rank": 1,
+        "field_size": 16,
+        "popularity": 1,
+        "margin": null,
+        "passage": null,
+        "final_3f": null,
+        "prize_10k_yen": null
+      },
+      "otherTopResults": [],
+      "distanceRecommendation": "miler",
+      "distanceWinWeights": {
+        "sprinter": 0,
+        "miler": 4,
+        "middle": 2,
+        "stayer": 0
+      },
+      "frontWins": 4,
+      "closingWins": 0,
+      "sourceHistoryConfidence": "HIGH"
+    },
+    "deep_impact": {
+      "horseId": "H-2002100816",
+      "name": "딥 임팩트",
+      "recordedRaces": 13,
+      "recordedWins": 12,
+      "selectionReason": "통과순 데이터베이스가 저장소에 포함되지 않아 horse-game-db.json의 historySummary.mainWin을 대표 경기로 사용. 착순·필드 규모는 해당 경기의 공개 기록.",
+      "evidenceSource": "horse-game-db.json historySummary.mainWin",
+      "representative": {
+        "race_id": "200605050811",
+        "race_date": "2006/11/26",
+        "race_name": "ジャパンカップ(GI)",
+        "grade": "GI",
+        "racecourse": null,
+        "surface": "Turf",
+        "distance_m": 2400,
+        "finish_rank": 1,
+        "field_size": 17,
+        "popularity": 1,
+        "margin": null,
+        "passage": null,
+        "final_3f": null,
+        "prize_10k_yen": null
+      },
+      "otherTopResults": [],
+      "distanceRecommendation": "middle",
+      "distanceWinWeights": {
+        "sprinter": 0,
+        "miler": 0,
+        "middle": 7,
+        "stayer": 5
+      },
+      "frontWins": 0,
+      "closingWins": 9,
+      "sourceHistoryConfidence": "HIGH"
     }
   }
 }

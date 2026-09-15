@@ -20,6 +20,20 @@ const MANIFEST = path.join(ROOT, 'src', 'data', 'generated', 'art-manifest.json'
 
 const STRICT = process.env.STRICT_ART === '1';
 
+/**
+ * Commissioned but undelivered art.
+ *
+ * A roster change and its artwork cannot land in the same commit — the units
+ * have to exist before anyone can draw them. Listed paths are reported as
+ * outstanding rather than failing the strict run, and the list is self-cleaning:
+ * a listed file that actually exists fails the check, so an exemption cannot
+ * outlive the delivery it was waiting for.
+ */
+const pendingArt = JSON.parse(
+  readFileSync(path.join(ROOT, 'src', 'data', 'manual', 'pending-art.json'), 'utf8'),
+) as { pending: Array<{ path: string; request: string; reason: string }> };
+const pendingPaths = new Map(pendingArt.pending.map((p) => [p.path, p]));
+
 type Check = { rel: string; label: string; priority: 'P0' | 'P1'; expect?: { w: number; h: number } };
 
 /** Reads width/height straight from the PNG IHDR chunk. */
@@ -83,15 +97,19 @@ checks.push({ rel: 'ui/ui_frames.png', label: 'UI 프레임', priority: 'P0', ex
 checks.push({ rel: 'ui/ui_slots.png', label: '슬롯/카드', priority: 'P0', expect: { w: 1536, h: 512 } });
 
 const missing = { P0: [] as string[], P1: [] as string[] };
+const pendingSeen: string[] = [];
+const pendingButDelivered: string[] = [];
 const malformed: string[] = [];
 let present = 0;
 
 for (const check of checks) {
   const file = path.join(ASSETS, check.rel);
   if (!existsSync(file) || statSync(file).size === 0) {
-    missing[check.priority].push(`${check.label} — ${check.rel}`);
+    if (pendingPaths.has(check.rel)) pendingSeen.push(`${check.label} — ${check.rel}`);
+    else missing[check.priority].push(`${check.label} — ${check.rel}`);
     continue;
   }
+  if (pendingPaths.has(check.rel)) pendingButDelivered.push(check.rel);
   present += 1;
   const size = pngSize(file);
   if (!size) {
@@ -124,6 +142,15 @@ const preview = (list: string[], n = 8): void => {
   if (list.length > n) console.log(`    … 외 ${list.length - n}건`);
 };
 
+if (pendingSeen.length) {
+  console.log(`\n  [발주 대기] 발주서에 올라가 있으나 아직 납품되지 않은 자산 ${pendingSeen.length}건:`);
+  preview(pendingSeen, 12);
+  for (const entry of new Set(pendingArt.pending.map((p) => p.request))) console.log(`    발주서: ${entry}`);
+}
+if (pendingButDelivered.length) {
+  console.log('\n  [정리 필요] 납품이 끝났는데 pending-art.json에 남아 있는 자산:');
+  preview(pendingButDelivered, 12);
+}
 if (missing.P0.length) { console.log('\n  [P0] Season 1 플레이에 필요한 누락 자산:'); preview(missing.P0); }
 if (missing.P1.length) { console.log('\n  [P1] 도감 전용 누락 자산:'); preview(missing.P1); }
 if (malformed.length) { console.log('\n  [규격] 잘못된 자산:'); preview(malformed); }
@@ -136,8 +163,16 @@ if (!STRICT) {
   process.exit(0);
 }
 
-if (missing.P0.length || missing.P1.length || malformed.length) {
-  console.error('\ncheck:art FAILED — STRICT_ART=1 에서는 모든 자산이 규격에 맞게 존재해야 합니다.');
+if (missing.P0.length || missing.P1.length || malformed.length || pendingButDelivered.length) {
+  if (pendingButDelivered.length) {
+    console.error('\ncheck:art FAILED — 납품이 끝난 자산이 pending-art.json에 남아 있습니다. 목록에서 지우세요.');
+  } else {
+    console.error('\ncheck:art FAILED — STRICT_ART=1 에서는 모든 자산이 규격에 맞게 존재해야 합니다.');
+  }
   process.exit(1);
 }
-console.log('\ncheck:art — OK (엄격 모드). 전체 납품 조건을 만족합니다.');
+if (pendingSeen.length) {
+  console.log(`\ncheck:art — OK (엄격 모드). 발주 대기 ${pendingSeen.length}건을 제외한 전체 납품 조건을 만족합니다.`);
+} else {
+  console.log('\ncheck:art — OK (엄격 모드). 전체 납품 조건을 만족합니다.');
+}

@@ -59,7 +59,7 @@
         "displayName": "티엠 오페라 오 · 결투 방벽 (2000 有馬記念(GI))",
         "template": "SHIELD_TAUNT",
         "baseValues": [
-          373,
+          372,
           414,
           32
         ],
@@ -74,7 +74,7 @@
         "effects": [
           {
             "kind": "SHIELD_FLAT",
-            "value": 729,
+            "value": 727,
             "duration": 4,
             "target": "SELF"
           },
@@ -92,7 +92,7 @@
           }
         ],
         "vfxKey": "vfx_shield",
-        "description": "[결투 방벽] 4초 동안 729의 보호막을 두르고 1.5초 동안 어떤 방해도 받지 않으며, 주변 2칸의 최대 3명을 2초 동안 자신에게 붙잡아 둡니다. 근거: 2000 有馬記念(GI) 1위.",
+        "description": "[결투 방벽] 4초 동안 727의 보호막을 두르고 1.5초 동안 어떤 방해도 받지 않으며, 주변 2칸의 최대 3명을 2초 동안 자신에게 붙잡아 둡니다. 근거: 2000 有馬記念(GI) 1위.",
         "choreography": {
           "windup": 0.45,
           "recovery": 0.3,
@@ -106,7 +106,8 @@
         }
       },
       "beforeSignature": "6a058a7c1d3a4b1a46bb313191dd1699a9386691158a0589b36d20aaf7be369b",
-      "skillSignature": "9a26fd4ebc423a8f31b7999b5527c3eafc655dae5165a00a6e7728c1f67b8624"
+      "skillSignature": "c8a9d2921ee780c20b762d3e8a7b91cef436cbb84c0dea4b1d5ad54b91ce1b26",
+      "rosterAdditionsPass": "2026-09-15 로스터 추가 패치로 코스트가 움직여 수치만 갱신됨. 몸동작 계약은 before와 동일 — docs/qa/roster-additions/cost-skill-compatibility-2026-09-15.json"
     },
     "symboli_rudolf": {
       "before": {
@@ -165,9 +166,9 @@
         "displayName": "심볼리 루돌프 · 관통 구속 (1985 有馬記念(GI))",
         "template": "CONTROL",
         "baseValues": [
-          368,
-          409,
-          32
+          367,
+          408,
+          31
         ],
         "starMultipliers": [
           1,
@@ -180,7 +181,7 @@
         "effects": [
           {
             "kind": "DAMAGE",
-            "value": 245,
+            "value": 244,
             "damageType": "MAGIC",
             "target": "LARGEST_ENEMY_CLUSTER",
             "shape": "LINE",
@@ -198,7 +199,7 @@
           }
         ],
         "vfxKey": "vfx_stun",
-        "description": "[관통 구속] 직선 6칸의 최대 4명에게 245의 마법 피해를 입히고 1초 동안 세워 둡니다. 근거: 1985 有馬記念(GI) 1위.",
+        "description": "[관통 구속] 직선 6칸의 최대 4명에게 244의 마법 피해를 입히고 1초 동안 세워 둡니다. 근거: 1985 有馬記念(GI) 1위.",
         "choreography": {
           "windup": 0.45,
           "recovery": 0.3,
@@ -212,7 +213,8 @@
         }
       },
       "beforeSignature": "ccd301ae7e36fa92ca4acb3b94e965cd1449c96fadbe37dfa1467b7d7763c055",
-      "skillSignature": "7a363fb5af26bc0221112369fedf92e410050e8285b8cbc1ec77e9fe3ee46761"
+      "skillSignature": "1ec96745bb8e9c6d4841c897ac06ff5b8d214f686f9073a5131cda251934a95b",
+      "rosterAdditionsPass": "2026-09-15 로스터 추가 패치로 코스트가 움직여 수치만 갱신됨. 몸동작 계약은 before와 동일 — docs/qa/roster-additions/cost-skill-compatibility-2026-09-15.json"
     },
     "agnes_digital": {
       "before": {
@@ -267,8 +269,8 @@
         "displayName": "아그네스 디지털 · 주력 저격 (2001 天皇賞(秋)(GI))",
         "template": "MULTI_SHOT",
         "baseValues": [
-          244,
-          271,
+          211,
+          234,
           31
         ],
         "starMultipliers": [
@@ -282,7 +284,7 @@
         "effects": [
           {
             "kind": "DAMAGE",
-            "value": 330,
+            "value": 286,
             "damageType": "PHYSICAL",
             "target": "HIGHEST_AD_ENEMY"
           },
@@ -296,7 +298,7 @@
           }
         ],
         "vfxKey": "vfx_projectile",
-        "description": "[주력 저격] 가장 위협적인 상대를 노려 330의 물리 피해를 입히고 3초 동안 공격력을 15% 떨어뜨립니다. 근거: 2001 天皇賞(秋)(GI) 1위.",
+        "description": "[주력 저격] 가장 위협적인 상대를 노려 286의 물리 피해를 입히고 3초 동안 공격력을 15% 떨어뜨립니다. 근거: 2001 天皇賞(秋)(GI) 1위.",
         "choreography": {
           "windup": 0.3,
           "recovery": 0.3,
@@ -310,7 +312,8 @@
         }
       },
       "beforeSignature": "3c6c96dada7d38990c58d902a8428f9915c155904a6748d29e67caaa46f1ef34",
-      "skillSignature": "2763983e1e6ec313c454ae73d236d199e3f0842a2c00c4b187bbe1474026fd83"
+      "skillSignature": "c86a2250a1e1f1aa5fc947d06c91a19d352584da0bb3cf0c92bb787af5ef9469",
+      "rosterAdditionsPass": "2026-09-15 로스터 추가 패치로 코스트가 움직여 수치만 갱신됨. 몸동작 계약은 before와 동일 — docs/qa/roster-additions/cost-skill-compatibility-2026-09-15.json"
     },
     "agnes_tachyon": {
       "before": {
@@ -381,7 +384,7 @@
         "displayName": "아그네스 타키온 · 가속 장전 (2001 皐月賞(GI))",
         "template": "MULTI_SHOT",
         "baseValues": [
-          308,
+          307,
           342,
           32
         ],
@@ -440,7 +443,8 @@
         }
       },
       "beforeSignature": "3b857d50eb10c1ab2456b994e4da174eff38c1b171fd25f746ba7fa7771bbf29",
-      "skillSignature": "99ad1cb051993b9a1deeea1aeaba51935751ea959b3cd0b1a67c5f32674c2026"
+      "skillSignature": "9b20240723790ea48355e96e6737742185c0a7e09933e707cdb6f158df1e9422",
+      "rosterAdditionsPass": "2026-09-15 로스터 추가 패치로 코스트가 움직여 수치만 갱신됨. 몸동작 계약은 before와 동일 — docs/qa/roster-additions/cost-skill-compatibility-2026-09-15.json"
     },
     "gran_alegria": {
       "before": {

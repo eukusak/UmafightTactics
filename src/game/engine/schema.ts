@@ -1,4 +1,5 @@
 /** Runtime Zod schemas for everything loaded from JSON (spec §3.1). */
+import { CANONICAL_ROSTER_SIZE } from './constants';
 import { z } from 'zod';
 
 export const CostSchema = z.union([z.literal(1), z.literal(2), z.literal(3), z.literal(4), z.literal(5)]);
@@ -73,7 +74,7 @@ export const SkillDefSchema = z.object({
   vfxKey: z.string().min(1),
   description: z.string().min(1),
   choreography: z.object({
-    accent: z.string().regex(/^#[0-9a-fA-F]{6}$/).optional(), emblem: z.number().int().min(0).max(144).optional(), label: z.string().optional(), motion: z.enum(['STRIKE','PULSE','CHANNEL']).optional(),
+    accent: z.string().regex(/^#[0-9a-fA-F]{6}$/).optional(), emblem: z.number().int().min(0).max(CANONICAL_ROSTER_SIZE - 1).optional(), label: z.string().optional(), motion: z.enum(['STRIKE','PULSE','CHANNEL']).optional(),
     windup: z.number().min(0).max(2), recovery: z.number().min(0).max(2),
     pulseInterval: z.number().positive().max(2), color: z.string().regex(/^#[0-9a-fA-F]{6}$/), variant: z.string().min(1),
   }).optional(),

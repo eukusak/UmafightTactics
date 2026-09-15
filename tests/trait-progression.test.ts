@@ -1,4 +1,5 @@
 import { describe, expect, it } from 'vitest';
+import { COST_UNIT_COUNTS } from '../src/game/engine/constants';
 import { createHash } from 'node:crypto';
 import corrections from '../src/data/manual/running-style-corrections.json';
 import { readFileSync } from 'node:fs';
@@ -75,16 +76,39 @@ describe('late trait progression', () => {
 });
 
 describe('five-cost style distribution and motion compatibility', () => {
-  it.each(SEASONS)('$id offers two five-cost units in each running style', season => {
+  it.each(SEASONS)('$id offers at least two five-cost units in each running style', season => {
     const five = getSeasonUnits(season.id).filter(u => u.cost === 5);
-    expect(five).toHaveLength(8);
-    for (const style of ['nige', 'senko', 'sashi', 'oikomi']) expect(five.filter(u => u.traits[0] === style)).toHaveLength(2);
-    for (const role of new Set(five.map(u => u.role))) expect(five.filter(u => u.role === role).length / 8).toBeLessThanOrEqual(.45);
+    expect(five).toHaveLength(COST_UNIT_COUNTS[5]);
+    // Nine five-costs over four styles cannot be two each. Every style still
+    // gets its two, and the spare one goes to 추입 — the style that had no
+    // 3- or 4-cost back-line at all before this pass.
+    for (const style of ['nige', 'senko', 'sashi', 'oikomi']) {
+      const own = five.filter(u => u.traits[0] === style);
+      expect(own.length, style).toBeGreaterThanOrEqual(2);
+      expect(own.length, style).toBeLessThanOrEqual(3);
+    }
+    expect(five.filter(u => u.traits[0] === 'oikomi').length).toBe(COST_UNIT_COUNTS[5] - 6);
+    for (const role of new Set(five.map(u => u.role))) {
+      expect(five.filter(u => u.role === role).length / COST_UNIT_COUNTS[5]).toBeLessThanOrEqual(.45);
+    }
   });
 
   it('changes six costs and power values without changing any animation contract', () => {
     const review = JSON.parse(readFileSync('docs/qa/trait-progression/cost-skill-compatibility.json', 'utf8')) as { units: Record<string, { fromCost: number; toCost: number; previousSkill: SkillDef; previousSkillSignature: string; skillSignature: string }> };
     const latestReview = JSON.parse(readFileSync('docs/qa/augment-motion-compatibility.json', 'utf8')) as { changes: { id: string; oldCost: number; newCost: number; before: SkillDef; after: SkillDef }[] };
+    // Each balance pass appends its own record; the newest one wins on cost.
+    // This pass added three 추입 units and re-derived the cost brackets around
+    // them, which moved some of the units earlier passes had already moved.
+    const rosterPass = JSON.parse(readFileSync('docs/qa/roster-additions/cost-skill-compatibility-2026-09-15.json', 'utf8')) as {
+      costChanges: { id: string; oldCost: number; newCost: number; before: SkillDef; after: SkillDef }[];
+      valueOnly: { id: string; before: SkillDef; after: SkillDef }[];
+      motionChanged: unknown[];
+    };
+    // The whole point of the record: a cost pass must not change any motion.
+    expect(rosterPass.motionChanged).toHaveLength(0);
+    const latestCost = (id: string): number | undefined =>
+      rosterPass.costChanges.find(c => c.id === id)?.newCost
+      ?? latestReview.changes.find(c => c.id === id)?.newCost;
     const motionContract = (skill: SkillDef) => {
       const shape: Partial<SkillDef> = structuredClone(skill);
       delete shape.baseValues;
@@ -97,8 +121,18 @@ describe('five-cost style distribution and motion compatibility', () => {
     expect(Object.values(review.units).filter(e => e.fromCost !== e.toCost)).toHaveLength(6);
     for (const [id, entry] of Object.entries(review.units)) {
       const unit = getUnitDef(id);
-      const latest = latestReview.changes.find(c => c.id === id);
-      expect(unit.cost).toBe(latest?.newCost ?? entry.toCost);
+      // Newest pass first: where this pass touched a unit again, its `after` is
+      // the current state and the older record's is history.
+      // Newest pass first. This pass is the newest link for any unit it touched
+      // — whether it moved the cost or only the numbers the cost drives — so an
+      // older record's frozen `after` is history for those units.
+      const rosterCost = rosterPass.costChanges.find(c => c.id === id);
+      const rosterValue = rosterPass.valueOnly.find(c => c.id === id);
+      const older = latestReview.changes.find(c => c.id === id);
+      const latest = rosterCost
+        ?? (rosterValue && older ? { ...older, after: rosterValue.after } : undefined)
+        ?? older;
+      expect(unit.cost, id).toBe(latestCost(id) ?? entry.toCost);
       const balance = JSON.parse(readFileSync('docs/qa/adaptive-balance-motion-compatibility.json', 'utf8')).units[id];
       const currentSkill = balance?.before ?? unit.skill;
       const historicalSkill = latest?.before ?? currentSkill;
@@ -115,18 +149,36 @@ describe('five-cost style distribution and motion compatibility', () => {
         delete b.vfxKey;
       };
       if (latest) {
-        expect(latest.oldCost).toBe(entry.toCost);
-        expect(hash(currentSkill)).toBe(hash(latest.after));
+        // The records form a chain: each pass starts from where the previous
+        // one left off. When this pass is the newest link, the one before it is
+        // the augment pass, not the original review.
+        const chainStart = rosterCost ? (older?.newCost ?? entry.toCost) : entry.toCost;
+        expect(latest.oldCost, id).toBe(chainStart);
+        expect(hash(currentSkill), id).toBe(hash(latest.after));
         const before = motionContract(latest.before), after = motionContract(latest.after);
         withoutStyleVfx(after, before);
-        expect(after).toEqual(before);
+        expect(after, id).toEqual(before);
       }
       expect(Math.abs(entry.toCost - entry.fromCost)).toBeLessThanOrEqual(1);
       expect(hash(entry.previousSkill)).toBe(entry.previousSkillSignature);
-      expect(hash(historicalSkill)).toBe(entry.skillSignature);
+
+      // The older records froze a skill hash per unit. A later balance pass
+      // moves the numbers those hashes covered, so for any unit this pass
+      // touched the frozen value is history, not the current state. What still
+      // has to hold — and the only thing the artwork depends on — is that the
+      // motion contract did not move, which is asserted from this pass's own
+      // before/after rather than from a stale signature.
+      const touched = rosterCost ?? rosterValue;
+      if (touched) {
+        const before = motionContract(touched.before), after = motionContract(touched.after);
+        withoutStyleVfx(after, before);
+        expect(after, id).toEqual(before);
+        continue;
+      }
+      expect(hash(historicalSkill), id).toBe(entry.skillSignature);
       const current = motionContract(historicalSkill), previous = motionContract(entry.previousSkill);
       withoutStyleVfx(current, previous);
-      expect(current).toEqual(previous);
+      expect(current, id).toEqual(previous);
     }
   });
 });

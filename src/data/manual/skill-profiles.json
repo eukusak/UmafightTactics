@@ -1885,6 +1885,45 @@
       "emblem": 144,
       "representativeRaceId": "200909050211",
       "designReason": "승리 중 등급·상금·최근 경기 순; 1800m / 통과순 1-1-1-1 / 1위 기록을 bulwark_circle 전술로 각색"
+    },
+    "soccer_boy": {
+      "pattern": "shadow_finish",
+      "bodyFamily": "SINGLE_EXECUTE",
+      "primaryTarget": "LOWEST_HP_PCT_ENEMY",
+      "windup": 0.26,
+      "pulseInterval": 0.2,
+      "powerScale": 0.97,
+      "color": "#ffd964",
+      "accent": "#4f7de8",
+      "emblem": 145,
+      "representativeRaceId": "198805050911",
+      "designReason": "horse-game-db.json의 historySummary.mainWin 88'マイルCS(G1)을 근거로 shadow_finish 전술로 각색. 후방에서 한 번에 사라졌다 나타나는 마무리가 이 말의 마일 챔피언십 추입과 맞는다."
+    },
+    "kurofune": {
+      "pattern": "giant_cutter",
+      "bodyFamily": "SINGLE_EXECUTE",
+      "primaryTarget": "LOWEST_HP_PCT_ENEMY",
+      "windup": 0.32,
+      "pulseInterval": 0.2,
+      "powerScale": 0.99,
+      "color": "#2b3f6b",
+      "accent": "#d8c27a",
+      "emblem": 146,
+      "representativeRaceId": "200105050411",
+      "designReason": "historySummary.mainWin 01'ジャパンCダート(G1)을 근거로 giant_cutter 전술로 각색. 더트에서 큰 체격으로 밀어붙여 이긴 말이라 최대 체력 비례 절단이 맞는다."
+    },
+    "deep_impact": {
+      "pattern": "execution_refund",
+      "bodyFamily": "SINGLE_EXECUTE",
+      "primaryTarget": "LOWEST_HP_PCT_ENEMY",
+      "windup": 0.24,
+      "pulseInterval": 0.18,
+      "powerScale": 1.0,
+      "color": "#7a4a2c",
+      "accent": "#ffe08a",
+      "emblem": 147,
+      "representativeRaceId": "200605050811",
+      "designReason": "historySummary.mainWin 06'ジャパンC(G1)을 근거로 execution_refund 전술로 각색. 넘어뜨리고 곧바로 다음 상대로 이어가는 회전이 14전 12승의 연승을 표현한다."
     }
   }
 }

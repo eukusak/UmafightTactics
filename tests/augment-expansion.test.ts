@@ -1,4 +1,5 @@
 import { describe, expect, it } from 'vitest';
+import { COST_UNIT_COUNTS } from '../src/game/engine/constants';
 import { createMatch, RoundDirector } from '../src/game/engine/rounds/director';
 import { applyAugment, createAugmentOffers, matchAugmentGrades, rollAugmentOptions, AUGMENT_SEQUENCES } from '../src/game/engine/augments/offers';
 import { getAugment } from '../src/game/engine/augments/augment-defs';
@@ -138,7 +139,7 @@ describe('authoritative augment round rewards', () => {
 describe('styles, traits and AI strategy', () => {
   it('corrects Gran Alegria without changing the eight legendary costs', () => {
     expect(getUnitDef('gran_alegria').source.primaryStyle).toBe('senko'); expect(getUnitDef('gran_alegria').cost).toBe(4);
-    for(const s of SEASON_IDS) expect(getSeasonUnits(s).filter(u=>u.cost===5)).toHaveLength(8);
+    for(const s of SEASON_IDS) expect(getSeasonUnits(s).filter(u=>u.cost===5)).toHaveLength(COST_UNIT_COUNTS[5]);
   });
   it('has no movement-speed trait bonuses', () => {
     for(const trait of [...TRAIT_DEFS,...SEASON_TRAIT_DEFS]) for(const tier of trait.tiers) expect(tier.effects.some(e=>e.stat==='moveSpeedHexPerSec')).toBe(false);

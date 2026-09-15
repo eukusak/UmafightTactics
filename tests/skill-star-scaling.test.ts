@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest';
 import { BattleEngine, type BattleSideInput } from '../src/game/engine/battle/engine';
 import { ALL_UNITS, ACTIVE_BY_COST } from '../src/game/engine/roster';
-import { starSkillMultiplier, COST_SKILL_POWER } from '../src/game/engine/constants';
+import { starSkillMultiplier, CANONICAL_ROSTER_SIZE, COST_SKILL_POWER } from '../src/game/engine/constants';
 import { skillEffectValue, scaleSkillSupport, upgradeSkill } from '../src/game/engine/battle/skill-scaling';
 import { stat } from '../src/game/engine/battle/combat-unit';
 import { Rng } from '../src/game/engine/rng';
@@ -95,8 +95,8 @@ describe('cast potency and preview agree', () => {
 });
 
 describe('roster and cost balance invariants', () => {
-  it('all 145 skills gain meaningful potency at both promotions without mutating their motion', () => {
-    expect(ALL_UNITS).toHaveLength(145);
+  it('every skill gains meaningful potency at both promotions without mutating its motion', () => {
+    expect(ALL_UNITS).toHaveLength(CANONICAL_ROSTER_SIZE);
     for(const unit of ALL_UNITS) {
       const before=JSON.stringify(unit.skill);
       const values=([1,2,3] as Star[]).map(s=>unit.skill.effects.map(e=>skillEffectValue(e,s,unit.cost)));

@@ -94,5 +94,17 @@
     "leftClearPixels": 75,
     "status": "generated-cinematic-skill-panel; aspect-preserving-fit; static-illustration",
     "method": "Built-in image_gen; painted background and transparent fit padding. Original face portraits unchanged."
+  },
+  "deep_impact": {
+    "file": "characters/cutin/deep_impact.png",
+    "source": "docs/ART_REQUEST_ROSTER_ADDITIONS_2026-09-15.md",
+    "sourceSha256": "",
+    "size": [
+      960,
+      540
+    ],
+    "leftClearPixels": 75,
+    "status": "commissioned; awaiting delivery (see pending-art.json)",
+    "method": "발주서 §5.5 기준으로 디자인팀 제작 예정. 납품 후 sourceSha256과 검수 항목을 채운다."
   }
 }

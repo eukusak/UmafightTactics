@@ -1,4 +1,5 @@
 import { describe, it, expect } from 'vitest';
+import { CANONICAL_ROSTER_SIZE } from '../src/game/engine/constants';
 import { BattleEngine, type BattleSideInput } from '../src/game/engine/battle/engine';
 import { ALL_UNITS, ACTIVE_BY_COST } from '../src/game/engine/roster';
 import { Rng } from '../src/game/engine/rng';
@@ -122,7 +123,7 @@ describe('skill timing and effect lifecycle', () => {
     expect(after.units[0].aura.critChance).toBe(0);
   });
   it('covers the whole roster with 42 mechanical variants and matching release poses', () => {
-    expect(ALL_UNITS).toHaveLength(145);
+    expect(ALL_UNITS).toHaveLength(CANONICAL_ROSTER_SIZE);
     expect(new Set(ALL_UNITS.map(u => u.skill.choreography?.variant)).size).toBe(42);
     for (const { skill } of ALL_UNITS) {
       expect(skill.choreography).toBeDefined();

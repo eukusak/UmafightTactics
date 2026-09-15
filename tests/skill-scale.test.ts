@@ -1,4 +1,5 @@
 import { createHash } from 'node:crypto';
+import pendingArt from '../src/data/manual/pending-art.json';
 import { readFileSync } from 'node:fs';
 import sharp from 'sharp';
 import { expect, it } from 'vitest';
@@ -8,10 +9,13 @@ const json = (p: string) => JSON.parse(readFileSync(p, 'utf8'));
 const hash = (b: Buffer) => createHash('sha256').update(b).digest('hex');
 const review = json('docs/art-source/motions/skill-scale-2026-09-12/review.json');
 
-it('reviews all 145 characters and leaves retained atlases unchanged', () => {
+it('reviews every character and leaves retained atlases unchanged', () => {
   const units = json('src/data/generated/all-units.json').units as { id: string }[];
-  expect(Object.keys(review.units).sort()).toEqual(units.map(u => u.id).sort());
-  for (const { id } of units) {
+  // Units whose artwork is still on the art request have no atlas to review.
+  const awaitingArt = new Set(pendingArt.pending.map(p => p.path));
+  const drawn = units.filter(u => !awaitingArt.has(FRAME_SHEETS[u.id]?.file ?? ''));
+  expect(Object.keys(review.units).sort()).toEqual(drawn.map(u => u.id).sort());
+  for (const { id } of drawn) {
     const decision = review.units[id];
     if (decision.decision === 'retain') expect(hash(readFileSync('public/assets/' + FRAME_SHEETS[id].file))).toBe(decision.baselineRuntimeSha256);
     else expect(decision.decision).toBe('normalize');

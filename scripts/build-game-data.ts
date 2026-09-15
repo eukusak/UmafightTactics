@@ -65,6 +65,20 @@ type UnitOverrides = {
   costOverride: Record<string, Cost>; roleOverride: Record<string, Role>;
   costReasons: Record<string, string>;
 };
+/**
+ * Horses promoted out of the source DB's P1-SEED pool. The build derives their
+ * stats, role, distance and skill exactly as it does for a P0 row; only the
+ * cost bracket and the running style are declared, because neither can be read
+ * off the record with the confidence the rest of the pipeline demands.
+ */
+type RosterAdditions = {
+  version: number;
+  additions: Array<{
+    nameKo: string; nameJa: string; horseId: string; cost: Cost; runStyle: RunStyle;
+    nameEn: string; styleMatchesSource: boolean; sourcePrimaryStyle: string;
+    reason: string; evidenceNote: string;
+  }>;
+};
 type LegacyTags = {
   tripleCrown: Record<string, string>;
   internationalG1: Record<string, string>;
@@ -72,6 +86,10 @@ type LegacyTags = {
 };
 
 // ------------------------------------------------------------------- utilities
+const STYLE_FROM_PRIMARY: Record<string, RunStyle> = {
+  FRONT: 'nige', PACE: 'senko', STALKER: 'sashi', CLOSER: 'oikomi',
+};
+
 const APTITUDE_VALUE: Record<string, number> = { S: 1.0, A: 0.88, B: 0.74, C: 0.58, D: 0.42, E: 0.28, F: 0.16, G: 0.05 };
 const apt = (g: string): number => APTITUDE_VALUE[g] ?? 0;
 
@@ -129,10 +147,37 @@ const aliases = readJson<AliasRow[]>(path.join(MANUAL, 'name-aliases.json'));
 const traitOverrides = readJson<TraitOverrides>(path.join(MANUAL, 'trait-overrides.json'));
 const unitOverrides = readJson<UnitOverrides>(path.join(MANUAL, 'unit-overrides.json'));
 const legacy = readJson<LegacyTags>(path.join(MANUAL, 'legacy-tags.json'));
+const rosterAdditions = readJson<RosterAdditions>(path.join(MANUAL, 'roster-additions.json'));
 
-const p0 = db.horses.filter((h) => h.priority === 'P0');
+// The seed promotions join the P0 pool before anything reads it, so every later
+// pass — rating, role, cost, traits, skills — treats them as ordinary roster
+// members rather than as a special case threaded through the pipeline.
+const promoted: Horse[] = [];
+for (const add of rosterAdditions.additions) {
+  if (!add.reason?.trim()) throw new Error(`roster-additions: ${add.nameKo} has no reason.`);
+  const horse = db.horses.find((h) => h.id === add.horseId);
+  if (!horse) throw new Error(`roster-additions: no horse ${add.horseId} (${add.nameKo}).`);
+  if (horse.nameJa !== add.nameJa) {
+    throw new Error(`roster-additions: ${add.horseId} is ${horse.nameJa}, not ${add.nameJa}.`);
+  }
+  if (horse.priority === 'P0') throw new Error(`roster-additions: ${add.nameKo} is already P0.`);
+  // The flag is the audit: it has to agree with the source, or the entry is
+  // claiming the record says something it does not.
+  const matches = horse.historySummary.primaryStyle === add.sourcePrimaryStyle;
+  if (!matches) {
+    throw new Error(`roster-additions: ${add.nameKo} says source style ${add.sourcePrimaryStyle}, DB says ${horse.historySummary.primaryStyle}.`);
+  }
+  if (add.styleMatchesSource !== (STYLE_FROM_PRIMARY[add.sourcePrimaryStyle] === add.runStyle)) {
+    throw new Error(`roster-additions: ${add.nameKo} mislabels styleMatchesSource.`);
+  }
+  // Seed rows carry no English name, and the unit id every art file is named
+  // after comes from it, so the promotion supplies one.
+  if (!add.nameEn?.trim()) throw new Error(`roster-additions: ${add.nameKo} has no nameEn.`);
+  promoted.push({ ...horse, nameEn: add.nameEn });
+}
+const p0 = [...db.horses.filter((h) => h.priority === 'P0'), ...promoted];
 if (p0.length !== CANONICAL_ROSTER_SIZE) {
-  throw new Error(`Expected ${CANONICAL_ROSTER_SIZE} P0 horses, found ${p0.length}.`);
+  throw new Error(`Expected ${CANONICAL_ROSTER_SIZE} roster horses, found ${p0.length}.`);
 }
 if (canonical.names.length !== CANONICAL_ROSTER_SIZE) {
   throw new Error(`canonical-roster.json holds ${canonical.names.length} names, expected ${CANONICAL_ROSTER_SIZE}.`);
@@ -182,7 +227,7 @@ if (leftover.length) {
       leftover.map((h) => `${h.id}/${h.nameKo}`).join(', '),
   );
 }
-console.log(`  resolved 145/145 canonical names (${aliases.length} via explicit alias)`);
+console.log(`  resolved ${resolved.size}/${canonical.names.length} canonical names (${aliases.length} via explicit alias, ${promoted.length} seed promotions)`);
 
 // ------------------------------------------------------------------ features
 const names = canonical.names;
@@ -303,15 +348,16 @@ for (const n of names) {
 }
 
 // -------------------------------------------------------------------- traits
-const STYLE_FROM_PRIMARY: Record<string, RunStyle> = {
-  FRONT: 'nige', PACE: 'senko', STALKER: 'sashi', CLOSER: 'oikomi',
-};
 const STYLE_FROM_APT: Array<[keyof Horse['aptitudes']['style'], RunStyle]> = [
   ['front', 'nige'], ['pace', 'senko'], ['stalker', 'sashi'], ['closer', 'oikomi'],
 ];
 
 /** Spec §11.1 — run style: trusted primary style, then archetype, then aptitude, then senko. */
 function styleOf(h: Horse): RunStyle {
+  // A promoted seed declares its style in roster-additions.json, with a reason
+  // and a flag saying whether that agrees with the record.
+  const declared = rosterAdditions.additions.find((a) => a.horseId === h.id);
+  if (declared) return declared.runStyle;
   const correction = Object.values(styleCorrections.units).find(c => c.horseId === h.id);
   if (correction) return correction.to as RunStyle;
   const conf = h.dataConfidence.styleConfidence;
@@ -666,11 +712,56 @@ for (let pass = 0; pass < 60; pass += 1) {
   if (!changed) break;
 }
 
+const pinnedCost = new Set<string>();
 for (const [name, cost] of Object.entries(unitOverrides.costOverride)) {
   if (!unitOverrides.costReasons?.[name]?.trim()) throw new Error(`Missing cost adjustment reason: ${name}`);
   if (!active.has(name)) throw new Error(`costOverride names "${name}", which is not in the active roster.`);
   costOf.set(name, cost);
+  pinnedCost.add(name);
 }
+
+/**
+ * Overrides move units between brackets and leave the distribution wrong by
+ * however many they moved. That used to be the author's problem: every
+ * override had to be paired by hand with a counter-move, and adding one unit
+ * anywhere meant re-deriving the whole list.
+ *
+ * The repair pass does it instead, and it moves units **one bracket at a
+ * time**. A surplus three brackets away is settled by a chain of single steps
+ * rather than by teleporting one unit across the roster: filling a 2-cost hole
+ * from a 5-cost surplus moves a 5 down to 4, a 4 down to 3 and a 3 down to 2,
+ * which lands three units next to where they already were instead of dropping
+ * one legendary into the reroll tier. Pinned units never move, so an override
+ * still means exactly what it says.
+ */
+{
+  const bracket = (c: Cost): string[] => [...active].filter((n) => costOf.get(n) === c);
+  const surplus = (c: Cost): number => bracket(c).length - COST_UNIT_COUNTS[c];
+  const moved: string[] = [];
+  for (let pass = 0; pass < 400; pass += 1) {
+    const short = ([1, 2, 3, 4, 5] as Cost[]).find((c) => surplus(c) < 0);
+    if (short === undefined) break;
+    const donor = ([1, 2, 3, 4, 5] as Cost[])
+      .filter((c) => surplus(c) > 0)
+      .sort((a, b) => Math.abs(a - short) - Math.abs(b - short))[0];
+    if (donor === undefined) throw new Error('Cost repair: no surplus bracket to draw from.');
+    // One step along the path from the surplus toward the hole.
+    const step = donor < short ? 1 : -1;
+    const from = donor as Cost;
+    const to = (donor + step) as Cost;
+    // Moving down, send the bracket's weakest; moving up, send its strongest.
+    // Either way the unit that shifts is the one whose cost was closest to a
+    // toss-up in the first place.
+    const pool = bracket(from).filter((n) => !pinnedCost.has(n))
+      .sort((a, b) => uftRating.get(a)! - uftRating.get(b)!);
+    if (!pool.length) throw new Error(`Cost repair: every ${from}-cost unit is pinned.`);
+    const pick = step > 0 ? pool[pool.length - 1] : pool[0];
+    costOf.set(pick, to);
+    moved.push(`${pick} ${from}→${to}`);
+  }
+  if (moved.length) console.log(`  cost repair: ${moved.join(', ')}`);
+}
+
 {
   const dist: Record<number, number> = { 1: 0, 2: 0, 3: 0, 4: 0, 5: 0 };
   for (const n of active) dist[costOf.get(n)!] += 1;

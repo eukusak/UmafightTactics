@@ -1,4 +1,5 @@
 import { createHash } from 'node:crypto';
+import pendingArt from '../src/data/manual/pending-art.json';
 import { readFileSync } from 'node:fs';
 import { expect, it } from 'vitest';
 import { FRAME_SHEETS } from '../src/game/ui/frame-animation';
@@ -9,11 +10,14 @@ it('accounts for every portrait and permits only explicitly approved complete id
   const base = 'docs/art-source/motions/identity-revisions-2026-09-12';
   const audit = json(base + '/roster-review.json');
   const units = json('src/data/generated/all-units.json').units as { id: string; skill: unknown }[];
-  expect(Object.keys(audit.units).sort()).toEqual(units.map((u) => u.id).sort());
-  expect(audit.reviewedCount).toBe(units.length);
+  // Units whose artwork is still on the request have no portrait to account for.
+  const awaitingArt = new Set(pendingArt.pending.map(p => p.path));
+  const drawn = units.filter(u => !awaitingArt.has(FRAME_SHEETS[u.id]?.file ?? ''));
+  expect(Object.keys(audit.units).sort()).toEqual(drawn.map((u) => u.id).sort());
+  expect(audit.reviewedCount).toBe(drawn.length);
   let targets = 0,
     integrated = 0;
-  for (const unit of units) {
+  for (const unit of drawn) {
     const entry = audit.units[unit.id],
       sheet = FRAME_SHEETS[unit.id];
     expect(sha(readFileSync(entry.portrait)), `${unit.id}: portrait changed`).toBe(

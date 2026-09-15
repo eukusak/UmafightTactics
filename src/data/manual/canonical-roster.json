@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "note": "Canonical 145-character roster for UmafightTactics. Order matches the v1.0 spec character table. See docs/DATA_NOTES.md for the 3 reconciled entries.",
+  "note": "Canonical 148-character roster for UmafightTactics. The first 145 match the v1.0 spec character table; the last three are the seed promotions in roster-additions.json, added to give 추입 a 2/4/5-cost carry it had none of. See docs/DATA_NOTES.md for the 3 reconciled entries.",
   "replacedFromSpecV1": [
     {
       "specName": "몬쥬",
@@ -10,7 +10,7 @@
     {
       "specName": "딥 임팩트",
       "replacedWith": "맨하탄 카페",
-      "reason": "Deep Impact is a stallion, not an Uma Musume character; present in source DB only as P1-SEED."
+      "reason": "Deep Impact is a stallion, not an Uma Musume character; present in source DB only as P1-SEED. Reinstated later by author decision via roster-additions.json — 맨하탄 카페 stays on the roster, so this is an addition rather than a reversal of the swap."
     },
     {
       "specName": "킹 카메하메하",
@@ -163,6 +163,9 @@
     "팔레놉시스",
     "베르시나",
     "맨하탄 카페",
-    "에스포와르 시티"
+    "에스포와르 시티",
+    "사커 보이",
+    "쿠로후네",
+    "딥 임팩트"
   ]
 }

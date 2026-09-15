@@ -1,4 +1,5 @@
 import { createHash } from 'node:crypto';
+import pendingArt from '../src/data/manual/pending-art.json';
 import { readFileSync } from 'node:fs';
 import { expect, it } from 'vitest';
 import { FRAME_SHEETS } from '../src/game/ui/frame-animation';
@@ -12,9 +13,12 @@ it('resolves every roster raster review and preserves all retained artwork', () 
     skill: unknown;
   }[];
   const audit = readJson('docs/art-source/motions/skill-revisions-2026-09-11/roster-review.json');
-  expect(Object.keys(audit.units).sort()).toEqual(units.map((unit) => unit.id).sort());
-  expect(audit.reviewedCount).toBe(units.length);
-  for (const unit of units) {
+  // Units whose artwork is still on the request have nothing to review yet.
+  const awaitingArt = new Set(pendingArt.pending.map(p => p.path));
+  const drawn = units.filter(u => !awaitingArt.has(FRAME_SHEETS[u.id]?.file ?? ''));
+  expect(Object.keys(audit.units).sort()).toEqual(drawn.map((unit) => unit.id).sort());
+  expect(audit.reviewedCount).toBe(drawn.length);
+  for (const unit of drawn) {
     const review = audit.units[unit.id];
     expect(review.skillSignature, unit.id).toBe(sha256(JSON.stringify(unit.skill)));
     expect(review.reason.length, unit.id).toBeGreaterThan(20);

@@ -1,4 +1,5 @@
 import { describe, expect, it } from 'vitest';
+import { ACTIVE_S1_SIZE } from '../src/game/engine/constants';
 import { ALL_UNITS, ACTIVE_UNIT_IDS, SEASONS, getSeasonUnits, getSeasonUnitTraits, getUnitTraits, getSeason } from '../src/game/engine/roster';
 import { SEASON_COST_COUNTS, SEASON_TRAIT_DEFS, buildSeasons } from '../src/game/engine/seasons/catalog';
 import { createMatch, RoundDirector, heldUnits } from '../src/game/engine/rounds/director';
@@ -29,7 +30,7 @@ describe('five complete season rosters', () => {
   });
   it.each(SEASONS)('$id has a viable roster and four reachable factions', season => {
     const units = getSeasonUnits(season.id);
-    expect(new Set(season.unitIds).size).toBe(60);
+    expect(new Set(season.unitIds).size).toBe(ACTIVE_S1_SIZE);
     for (const [cost, count] of Object.entries(SEASON_COST_COUNTS)) expect(units.filter(u => u.cost === Number(cost))).toHaveLength(count);
     for (const role of ['TANK', 'BRUISER', 'AD_CARRY', 'AP_CARRY', 'SUPPORT']) expect(units.filter(u => u.role === role).length).toBeGreaterThanOrEqual(5);
     for (const trait of ['nige', 'senko', 'sashi', 'oikomi', 'middle', 'miler', 'stayer', 'sprinter']) {
@@ -37,7 +38,12 @@ describe('five complete season rosters', () => {
     }
     for (const trait of season.traits) {
       const members = units.filter(u => season.unitTraits[u.id] === trait.id);
-      expect(members).toHaveLength(15);
+      // A season splits evenly across its four factions. 63 units is 16/16/16/15,
+      // so the contract is the even split rather than a fixed size — and every
+      // faction still clears its final 10-body breakpoint with room to spare.
+      const even = Math.floor(ACTIVE_S1_SIZE / 4);
+      expect(members.length, trait.id).toBeGreaterThanOrEqual(even);
+      expect(members.length, trait.id).toBeLessThanOrEqual(even + 1);
       expect(members.some(u => u.cost === 1)).toBe(true);
       expect(members.some(u => u.cost === 5)).toBe(true);
       expect(members.some(u => u.role === 'TANK' || u.role === 'BRUISER')).toBe(true);

@@ -1,4 +1,5 @@
 import { describe, expect, it } from 'vitest';
+import pendingArt from '../src/data/manual/pending-art.json';
 import { readFileSync, existsSync } from 'node:fs';
 import { createHash } from 'node:crypto';
 import sharp from 'sharp';
@@ -12,11 +13,18 @@ import { skillTimeline } from '../src/game/engine/battle/skill-timeline';
 
 const retired = ['maruzensky', 'kitasan_black', 'almond_eye'];
 describe('current legendary cut-ins', () => {
-  it('covers exactly the eight current legendary units in every season without portrait fallbacks', () => {
+  it('covers exactly the current legendary units in every season without portrait fallbacks', () => {
     for (const season of ['s1', 's2', 's3', 's4', 's5'] as const) {
       const expected = getSeasonUnits(season).filter(u => u.cost === 5).map(u => u.id).sort();
+      // Every 5-cost unit is declared here whether or not its art has arrived,
+      // so the list is complete the moment the roster changes rather than
+      // trailing behind delivery.
       expect(Object.keys(cutins).sort()).toEqual(expected);
-      for (const id of expected) expect(cutinUrl(id, 5)).toContain('/characters/cutin/' + id + '.png');
+      const awaitingArt = new Set(pendingArt.pending.map(p => p.path));
+      for (const id of expected) {
+        if (awaitingArt.has('characters/cutin/' + id + '.png')) continue;
+        expect(cutinUrl(id, 5)).toContain('/characters/cutin/' + id + '.png');
+      }
     }
     for (const c of manifest.characters) expect(c).not.toHaveProperty('cutinPortrait');
     for (const id of retired) {
@@ -26,7 +34,9 @@ describe('current legendary cut-ins', () => {
     }
   });
   it('packages the reviewed full source without stretching or cropping faces', async () => {
+    const awaitingArt = new Set(pendingArt.pending.map(p => p.path));
     for (const c of Object.values(cutins)) {
+      if (awaitingArt.has(c.file)) continue;
       const source = readFileSync(c.source);
       expect(createHash('sha256').update(source).digest('hex')).toBe(c.sourceSha256);
       const packed = sharp('public/assets/' + c.file);
