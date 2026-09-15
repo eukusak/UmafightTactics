@@ -96,7 +96,7 @@
       "id": "grass_wonder",
       "nameKo": "그래스 원더",
       "activeS1": true,
-      "cost": 2,
+      "cost": 3,
       "portrait": "portraits/grass_wonder.png",
       "battleSheet": "characters/grass_wonder.png",
       "cutinRequired": false
@@ -114,7 +114,7 @@
       "id": "mejiro_mcqueen",
       "nameKo": "메지로 맥퀸",
       "activeS1": true,
-      "cost": 3,
+      "cost": 4,
       "portrait": "portraits/mejiro_mcqueen.png",
       "battleSheet": "characters/mejiro_mcqueen.png",
       "cutinRequired": false
@@ -167,8 +167,8 @@
     {
       "id": "agnes_digital",
       "nameKo": "아그네스 디지털",
-      "activeS1": true,
-      "cost": 2,
+      "activeS1": false,
+      "cost": 3,
       "portrait": "portraits/agnes_digital.png",
       "battleSheet": "characters/agnes_digital.png",
       "cutinRequired": false
@@ -212,8 +212,8 @@
     {
       "id": "mayano_top_gun",
       "nameKo": "마야노 탑건",
-      "activeS1": true,
-      "cost": 3,
+      "activeS1": false,
+      "cost": 4,
       "portrait": "portraits/mayano_top_gun.png",
       "battleSheet": "characters/mayano_top_gun.png",
       "cutinRequired": false
@@ -329,8 +329,8 @@
     {
       "id": "curren_chan",
       "nameKo": "카렌짱",
-      "activeS1": true,
-      "cost": 1,
+      "activeS1": false,
+      "cost": 2,
       "portrait": "portraits/curren_chan.png",
       "battleSheet": "characters/curren_chan.png",
       "cutinRequired": false
@@ -465,7 +465,7 @@
       "id": "bamboo_memory",
       "nameKo": "뱀부 메모리",
       "activeS1": true,
-      "cost": 1,
+      "cost": 2,
       "portrait": "portraits/bamboo_memory.png",
       "battleSheet": "characters/bamboo_memory.png",
       "cutinRequired": false
@@ -473,7 +473,7 @@
     {
       "id": "biko_pegasus",
       "nameKo": "비코 페가수스",
-      "activeS1": false,
+      "activeS1": true,
       "cost": 1,
       "portrait": "portraits/biko_pegasus.png",
       "battleSheet": "characters/biko_pegasus.png",
@@ -662,8 +662,8 @@
     {
       "id": "daring_tact",
       "nameKo": "데어링 택트",
-      "activeS1": true,
-      "cost": 1,
+      "activeS1": false,
+      "cost": 3,
       "portrait": "portraits/daring_tact.png",
       "battleSheet": "characters/daring_tact.png",
       "cutinRequired": false
@@ -753,7 +753,7 @@
       "id": "mejiro_ramonu",
       "nameKo": "메지로 라모누",
       "activeS1": true,
-      "cost": 2,
+      "cost": 1,
       "portrait": "portraits/mejiro_ramonu.png",
       "battleSheet": "characters/mejiro_ramonu.png",
       "cutinRequired": false
@@ -779,8 +779,8 @@
     {
       "id": "cheval_grand",
       "nameKo": "슈발 그랑",
-      "activeS1": false,
-      "cost": 2,
+      "activeS1": true,
+      "cost": 1,
       "portrait": "portraits/cheval_grand.png",
       "battleSheet": "characters/cheval_grand.png",
       "cutinRequired": false
@@ -959,8 +959,8 @@
     {
       "id": "cesario",
       "nameKo": "세자리오",
-      "activeS1": false,
-      "cost": 3,
+      "activeS1": true,
+      "cost": 2,
       "portrait": "portraits/cesario.png",
       "battleSheet": "characters/cesario.png",
       "cutinRequired": false
@@ -1085,7 +1085,7 @@
     {
       "id": "sakura_chitose_o",
       "nameKo": "사쿠라 치토세 오",
-      "activeS1": false,
+      "activeS1": true,
       "cost": 2,
       "portrait": "portraits/sakura_chitose_o.png",
       "battleSheet": "characters/sakura_chitose_o.png",
@@ -1320,7 +1320,7 @@
       "id": "kurofune",
       "nameKo": "쿠로후네",
       "activeS1": true,
-      "cost": 4,
+      "cost": 3,
       "portrait": "portraits/kurofune.png",
       "battleSheet": "characters/kurofune.png",
       "cutinRequired": false

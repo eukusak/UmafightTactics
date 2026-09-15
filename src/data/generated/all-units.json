@@ -8,7 +8,7 @@
     "ratingFormulaVersion": "horse-rating-v2",
     "skillFormulaVersion": "horse-skill-v2"
   },
-  "rosterHash": "4503119296bf8197",
+  "rosterHash": "0edcc07f34607764",
   "units": [
     {
       "id": "special_week",
@@ -1172,16 +1172,16 @@
       "nameKo": "그래스 원더",
       "nameJa": "グラスワンダー",
       "nameEn": "Grass Wonder",
-      "cost": 2,
+      "cost": 3,
       "role": "AD_CARRY",
       "activeS1": true,
       "uftRating": 0.74,
-      "hp": 750,
-      "attackDamage": 59,
+      "hp": 855,
+      "attackDamage": 65,
       "abilityPower": 100,
-      "armor": 50,
-      "magicResist": 44,
-      "attackSpeed": 0.74,
+      "armor": 52,
+      "magicResist": 46,
+      "attackSpeed": 0.76,
       "attackRange": 3,
       "moveSpeedHexPerSec": 1.95,
       "critChance": 0.25,
@@ -1199,8 +1199,8 @@
         "displayName": "그래스 원더 · 관통 돌파 (1999 有馬記念(GI))",
         "template": "DASH_LINE",
         "baseValues": [
-          216,
-          240,
+          250,
+          278,
           31
         ],
         "starMultipliers": [
@@ -1228,7 +1228,7 @@
           },
           {
             "kind": "DAMAGE",
-            "value": 221,
+            "value": 256,
             "damageType": "PHYSICAL",
             "target": "CURRENT_TARGET",
             "shape": "LINE",
@@ -1237,7 +1237,7 @@
           }
         ],
         "vfxKey": "vfx_dash_sashi",
-        "description": "[관통 돌파] 안쪽으로 파고들며 직선 6칸의 최대 4명을 제칩니다. 4초 동안 방어력이 20% 무너지고 221의 물리 피해를 입습니다. 근거: 1999 有馬記念(GI) 1위.",
+        "description": "[관통 돌파] 안쪽으로 파고들며 직선 6칸의 최대 4명을 제칩니다. 4초 동안 방어력이 20% 무너지고 256의 물리 피해를 입습니다. 근거: 1999 有馬記念(GI) 1위.",
         "choreography": {
           "windup": 0.45,
           "recovery": 0.3,
@@ -1397,16 +1397,16 @@
       "nameKo": "메지로 맥퀸",
       "nameJa": "メジロマックイーン",
       "nameEn": "Mejiro McQueen",
-      "cost": 3,
+      "cost": 4,
       "role": "TANK",
       "activeS1": true,
       "uftRating": 0.83,
-      "hp": 900,
-      "attackDamage": 63,
+      "hp": 1450,
+      "attackDamage": 130,
       "abilityPower": 100,
-      "armor": 59,
-      "magicResist": 53,
-      "attackSpeed": 0.76,
+      "armor": 71,
+      "magicResist": 65,
+      "attackSpeed": 0.78,
       "attackRange": 1,
       "moveSpeedHexPerSec": 1.95,
       "critChance": 0.25,
@@ -1424,14 +1424,14 @@
         "displayName": "메지로 맥퀸 · 방벽 원진 (1992 天皇賞(春)(GI))",
         "template": "AURA",
         "baseValues": [
-          257,
-          285,
+          303,
+          337,
           32
         ],
         "starMultipliers": [
           1,
           1.45,
-          2.2
+          3.6
         ],
         "damageType": "NONE",
         "targetRule": "SELF",
@@ -1439,7 +1439,7 @@
         "effects": [
           {
             "kind": "SHIELD_FLAT",
-            "value": 233,
+            "value": 275,
             "duration": 4,
             "target": "ALL_ALLIES",
             "radius": 2,
@@ -1457,7 +1457,7 @@
           }
         ],
         "vfxKey": "vfx_buff",
-        "description": "[방벽 원진] 2칸 안의 아군 최대 4명에게 233의 보호막과 방어력 +20을 4초 동안 둘러 줍니다. 근거: 1992 天皇賞(春)(GI) 1위.",
+        "description": "[방벽 원진] 2칸 안의 아군 최대 4명에게 275의 보호막과 방어력 +20을 4초 동안 둘러 줍니다. 근거: 1992 天皇賞(春)(GI) 1위.",
         "choreography": {
           "windup": 0.45,
           "recovery": 0.3,
@@ -2048,16 +2048,16 @@
       "nameKo": "아그네스 디지털",
       "nameJa": "アグネスデジタル",
       "nameEn": "Agnes Digital",
-      "cost": 2,
+      "cost": 3,
       "role": "AD_CARRY",
-      "activeS1": true,
+      "activeS1": false,
       "uftRating": 0.61,
-      "hp": 710,
-      "attackDamage": 55,
+      "hp": 810,
+      "attackDamage": 61,
       "abilityPower": 100,
-      "armor": 44,
-      "magicResist": 43,
-      "attackSpeed": 0.72,
+      "armor": 46,
+      "magicResist": 45,
+      "attackSpeed": 0.74,
       "attackRange": 3,
       "moveSpeedHexPerSec": 1.9,
       "critChance": 0.25,
@@ -2075,8 +2075,8 @@
         "displayName": "아그네스 디지털 · 주력 저격 (2001 天皇賞(秋)(GI))",
         "template": "MULTI_SHOT",
         "baseValues": [
-          211,
-          234,
+          244,
+          271,
           31
         ],
         "starMultipliers": [
@@ -2090,7 +2090,7 @@
         "effects": [
           {
             "kind": "DAMAGE",
-            "value": 286,
+            "value": 330,
             "damageType": "PHYSICAL",
             "target": "HIGHEST_AD_ENEMY"
           },
@@ -2104,7 +2104,7 @@
           }
         ],
         "vfxKey": "vfx_projectile",
-        "description": "[주력 저격] 가장 위협적인 상대를 노려 286의 물리 피해를 입히고 3초 동안 공격력을 15% 떨어뜨립니다. 근거: 2001 天皇賞(秋)(GI) 1위.",
+        "description": "[주력 저격] 가장 위협적인 상대를 노려 330의 물리 피해를 입히고 3초 동안 공격력을 15% 떨어뜨립니다. 근거: 2001 天皇賞(秋)(GI) 1위.",
         "choreography": {
           "windup": 0.3,
           "recovery": 0.3,
@@ -2588,16 +2588,16 @@
       "nameKo": "마야노 탑건",
       "nameJa": "マヤノトップガン",
       "nameEn": "Mayano Top Gun",
-      "cost": 3,
+      "cost": 4,
       "role": "TANK",
-      "activeS1": true,
+      "activeS1": false,
       "uftRating": 0.74,
-      "hp": 885,
-      "attackDamage": 62,
+      "hp": 1425,
+      "attackDamage": 127,
       "abilityPower": 100,
-      "armor": 57,
-      "magicResist": 53,
-      "attackSpeed": 0.75,
+      "armor": 69,
+      "magicResist": 65,
+      "attackSpeed": 0.77,
       "attackRange": 1,
       "moveSpeedHexPerSec": 1.93,
       "critChance": 0.25,
@@ -2615,14 +2615,14 @@
         "displayName": "마야노 탑건 · 반격 폭풍 (1995 菊花賞(GI))",
         "template": "AURA",
         "baseValues": [
-          249,
-          277,
+          294,
+          327,
           31
         ],
         "starMultipliers": [
           1,
           1.45,
-          2.2
+          3.6
         ],
         "damageType": "NONE",
         "targetRule": "SELF",
@@ -2630,7 +2630,7 @@
         "effects": [
           {
             "kind": "DAMAGE",
-            "value": 81,
+            "value": 96,
             "damageType": "MAGIC",
             "target": "ALL_ENEMIES",
             "radius": 2,
@@ -2640,7 +2640,7 @@
           },
           {
             "kind": "DAMAGE",
-            "value": 81,
+            "value": 96,
             "damageType": "MAGIC",
             "target": "ALL_ENEMIES",
             "radius": 2,
@@ -2650,7 +2650,7 @@
           },
           {
             "kind": "DAMAGE",
-            "value": 81,
+            "value": 96,
             "damageType": "MAGIC",
             "target": "ALL_ENEMIES",
             "radius": 2,
@@ -2660,13 +2660,13 @@
           },
           {
             "kind": "SHIELD_FLAT",
-            "value": 163,
+            "value": 192,
             "duration": 4,
             "target": "SELF"
           }
         ],
         "vfxKey": "vfx_buff",
-        "description": "[반격 폭풍] 163의 보호막을 두르고 주변 2칸의 최대 4명에게 0.4초 간격으로 81의 마법 피해를 세 번 흩뿌리며, 깎은 체력의 15%를 회복합니다. 근거: 1995 菊花賞(GI) 1위.",
+        "description": "[반격 폭풍] 192의 보호막을 두르고 주변 2칸의 최대 4명에게 0.4초 간격으로 96의 마법 피해를 세 번 흩뿌리며, 깎은 체력의 15%를 회복합니다. 근거: 1995 菊花賞(GI) 1위.",
         "choreography": {
           "windup": 0.45,
           "recovery": 0.3,
@@ -4119,16 +4119,16 @@
       "nameKo": "카렌짱",
       "nameJa": "カレンチャン",
       "nameEn": "Curren Chan",
-      "cost": 1,
+      "cost": 2,
       "role": "AP_CARRY",
-      "activeS1": true,
+      "activeS1": false,
       "uftRating": 0.55,
-      "hp": 645,
-      "attackDamage": 48,
+      "hp": 715,
+      "attackDamage": 54,
       "abilityPower": 100,
-      "armor": 43,
-      "magicResist": 47,
-      "attackSpeed": 0.69,
+      "armor": 45,
+      "magicResist": 49,
+      "attackSpeed": 0.71,
       "attackRange": 4,
       "moveSpeedHexPerSec": 1.85,
       "critChance": 0.25,
@@ -4146,8 +4146,8 @@
         "displayName": "카렌짱 · 연쇄 섬광 (2012 高松宮記念(GI))",
         "template": "AOE_BURST",
         "baseValues": [
-          184,
-          204,
+          210,
+          233,
           30
         ],
         "starMultipliers": [
@@ -4161,7 +4161,7 @@
         "effects": [
           {
             "kind": "DAMAGE",
-            "value": 114,
+            "value": 130,
             "damageType": "MAGIC",
             "target": "LARGEST_ENEMY_CLUSTER",
             "shape": "CHAIN",
@@ -4170,7 +4170,7 @@
           }
         ],
         "vfxKey": "vfx_aoe_burst",
-        "description": "[연쇄 섬광] 섬광이 3칸 안의 다음 상대로 최대 4명까지 옮겨붙으며 각각 114의 마법 피해를 입힙니다. 한 번 맞은 상대는 다시 타지 않습니다. 근거: 2012 高松宮記念(GI) 1위.",
+        "description": "[연쇄 섬광] 섬광이 3칸 안의 다음 상대로 최대 4명까지 옮겨붙으며 각각 130의 마법 피해를 입힙니다. 한 번 맞은 상대는 다시 타지 않습니다. 근거: 2012 高松宮記念(GI) 1위.",
         "choreography": {
           "windup": 0.15,
           "recovery": 0.3,
@@ -5803,16 +5803,16 @@
       "nameKo": "뱀부 메모리",
       "nameJa": "バンブーメモリー",
       "nameEn": "Bamboo Memory",
-      "cost": 1,
+      "cost": 2,
       "role": "SUPPORT",
       "activeS1": true,
       "uftRating": 0.37,
-      "hp": 605,
-      "attackDamage": 46,
+      "hp": 670,
+      "attackDamage": 52,
       "abilityPower": 100,
-      "armor": 35,
-      "magicResist": 37,
-      "attackSpeed": 0.67,
+      "armor": 37,
+      "magicResist": 39,
+      "attackSpeed": 0.69,
       "attackRange": 3,
       "moveSpeedHexPerSec": 1.78,
       "critChance": 0.25,
@@ -5830,8 +5830,8 @@
         "displayName": "뱀부 메모리 · 무장 해제 (1990 スプリンターズS(GI))",
         "template": "CONTROL",
         "baseValues": [
-          175,
-          195,
+          200,
+          222,
           29
         ],
         "starMultipliers": [
@@ -5845,7 +5845,7 @@
         "effects": [
           {
             "kind": "DAMAGE",
-            "value": 143,
+            "value": 163,
             "damageType": "MAGIC",
             "target": "LARGEST_ENEMY_CLUSTER",
             "shape": "CONE",
@@ -5863,7 +5863,7 @@
           }
         ],
         "vfxKey": "vfx_stun",
-        "description": "[무장 해제] 앞쪽 3칸의 최대 4명에게 143의 마법 피해를 입히고, 1.8초 동안 기본 공격을 막습니다. 스킬은 그대로 나갑니다. 근거: 1990 スプリンターズS(GI) 1위.",
+        "description": "[무장 해제] 앞쪽 3칸의 최대 4명에게 163의 마법 피해를 입히고, 1.8초 동안 기본 공격을 막습니다. 스킬은 그대로 나갑니다. 근거: 1990 スプリンターズS(GI) 1위.",
         "choreography": {
           "windup": 0.15,
           "recovery": 0.3,
@@ -5914,7 +5914,7 @@
       "nameEn": "Biko Pegasus",
       "cost": 1,
       "role": "SUPPORT",
-      "activeS1": false,
+      "activeS1": true,
       "uftRating": 0.11,
       "hp": 580,
       "attackDamage": 44,
@@ -8250,16 +8250,16 @@
       "nameKo": "데어링 택트",
       "nameJa": "デアリングタクト",
       "nameEn": "Daring Tact",
-      "cost": 1,
+      "cost": 3,
       "role": "BRUISER",
-      "activeS1": true,
+      "activeS1": false,
       "uftRating": 0.59,
-      "hp": 670,
-      "attackDamage": 50,
+      "hp": 845,
+      "attackDamage": 63,
       "abilityPower": 100,
-      "armor": 46,
-      "magicResist": 43,
-      "attackSpeed": 0.69,
+      "armor": 50,
+      "magicResist": 47,
+      "attackSpeed": 0.74,
       "attackRange": 1,
       "moveSpeedHexPerSec": 1.87,
       "critChance": 0.25,
@@ -8277,8 +8277,8 @@
         "displayName": "데어링 택트 · 교차 파동 (2020 優駿牝馬(GI))",
         "template": "DASH_LINE",
         "baseValues": [
-          182,
-          202,
+          240,
+          267,
           30
         ],
         "starMultipliers": [
@@ -8297,7 +8297,7 @@
           },
           {
             "kind": "DAMAGE",
-            "value": 118,
+            "value": 155,
             "damageType": "PHYSICAL",
             "target": "CURRENT_TARGET",
             "shape": "LINE",
@@ -8306,7 +8306,7 @@
           },
           {
             "kind": "DAMAGE",
-            "value": 83,
+            "value": 110,
             "damageType": "MAGIC",
             "target": "CURRENT_TARGET",
             "shape": "LINE",
@@ -8316,7 +8316,7 @@
           }
         ],
         "vfxKey": "vfx_dash_sashi",
-        "description": "[교차 파동] 직선상의 최대 4명을 118의 물리 피해로 밀어내고, 0.45초 뒤 같은 방향으로 83의 마법 파동을 흘려보냅니다. 근거: 2020 優駿牝馬(GI) 1위.",
+        "description": "[교차 파동] 직선상의 최대 4명을 155의 물리 피해로 밀어내고, 0.45초 뒤 같은 방향으로 110의 마법 파동을 흘려보냅니다. 근거: 2020 優駿牝馬(GI) 1위.",
         "choreography": {
           "windup": 0.3,
           "recovery": 0.3,
@@ -9360,16 +9360,16 @@
       "nameKo": "메지로 라모누",
       "nameJa": "メジロラモーヌ",
       "nameEn": "Mejiro Ramonu",
-      "cost": 2,
+      "cost": 1,
       "role": "BRUISER",
       "activeS1": true,
       "uftRating": 0.62,
-      "hp": 745,
-      "attackDamage": 56,
+      "hp": 670,
+      "attackDamage": 50,
       "abilityPower": 100,
-      "armor": 48,
-      "magicResist": 38,
-      "attackSpeed": 0.7,
+      "armor": 46,
+      "magicResist": 36,
+      "attackSpeed": 0.68,
       "attackRange": 1,
       "moveSpeedHexPerSec": 1.81,
       "critChance": 0.25,
@@ -9387,8 +9387,8 @@
         "displayName": "메지로 라모누 · 교차 파동 (1986 エリザベス女王杯(GI))",
         "template": "DASH_LINE",
         "baseValues": [
-          213,
-          237,
+          187,
+          208,
           31
         ],
         "starMultipliers": [
@@ -9407,7 +9407,7 @@
           },
           {
             "kind": "DAMAGE",
-            "value": 138,
+            "value": 121,
             "damageType": "PHYSICAL",
             "target": "CURRENT_TARGET",
             "shape": "LINE",
@@ -9416,7 +9416,7 @@
           },
           {
             "kind": "DAMAGE",
-            "value": 98,
+            "value": 86,
             "damageType": "MAGIC",
             "target": "CURRENT_TARGET",
             "shape": "LINE",
@@ -9426,7 +9426,7 @@
           }
         ],
         "vfxKey": "vfx_dash_oikomi",
-        "description": "[교차 파동] 직선상의 최대 4명을 138의 물리 피해로 밀어내고, 0.45초 뒤 같은 방향으로 98의 마법 파동을 흘려보냅니다. 근거: 1986 エリザベス女王杯(GI) 1위.",
+        "description": "[교차 파동] 직선상의 최대 4명을 121의 물리 피해로 밀어내고, 0.45초 뒤 같은 방향으로 86의 마법 파동을 흘려보냅니다. 근거: 1986 エリザベス女王杯(GI) 1위.",
         "choreography": {
           "windup": 0.3,
           "recovery": 0.3,
@@ -9697,16 +9697,16 @@
       "nameKo": "슈발 그랑",
       "nameJa": "シュヴァルグラン",
       "nameEn": "Cheval Grand",
-      "cost": 2,
+      "cost": 1,
       "role": "TANK",
-      "activeS1": false,
+      "activeS1": true,
       "uftRating": 0.37,
-      "hp": 730,
-      "attackDamage": 52,
+      "hp": 660,
+      "attackDamage": 46,
       "abilityPower": 100,
-      "armor": 47,
-      "magicResist": 43,
-      "attackSpeed": 0.68,
+      "armor": 45,
+      "magicResist": 41,
+      "attackSpeed": 0.66,
       "attackRange": 1,
       "moveSpeedHexPerSec": 1.76,
       "critChance": 0.25,
@@ -9724,8 +9724,8 @@
         "displayName": "슈발 그랑 · 서리 전선 (2017 ジャパンC(GI))",
         "template": "CONTROL",
         "baseValues": [
-          198,
-          220,
+          174,
+          193,
           29
         ],
         "starMultipliers": [
@@ -9739,7 +9739,7 @@
         "effects": [
           {
             "kind": "DAMAGE",
-            "value": 119,
+            "value": 104,
             "damageType": "MAGIC",
             "target": "LARGEST_ENEMY_CLUSTER",
             "radius": 2,
@@ -9764,7 +9764,7 @@
           }
         ],
         "vfxKey": "vfx_stun",
-        "description": "[서리 전선] 주변 2칸의 최대 4명에게 119의 마법 피해를 입히고 0.6초 기절시킨 뒤, 3초 동안 발을 묶습니다. 근거: 2017 ジャパンC(GI) 1위.",
+        "description": "[서리 전선] 주변 2칸의 최대 4명에게 104의 마법 피해를 입히고 0.6초 기절시킨 뒤, 3초 동안 발을 묶습니다. 근거: 2017 ジャパンC(GI) 1위.",
         "choreography": {
           "windup": 0.3,
           "recovery": 0.3,
@@ -11914,16 +11914,16 @@
       "nameKo": "세자리오",
       "nameJa": "シーザリオ",
       "nameEn": "Cesario",
-      "cost": 3,
+      "cost": 2,
       "role": "TANK",
-      "activeS1": false,
+      "activeS1": true,
       "uftRating": 0.72,
-      "hp": 880,
-      "attackDamage": 65,
+      "hp": 775,
+      "attackDamage": 58,
       "abilityPower": 100,
-      "armor": 56,
-      "magicResist": 53,
-      "attackSpeed": 0.74,
+      "armor": 54,
+      "magicResist": 51,
+      "attackSpeed": 0.71,
       "attackRange": 1,
       "moveSpeedHexPerSec": 1.87,
       "critChance": 0.25,
@@ -11941,8 +11941,8 @@
         "displayName": "세자리오 · 회복 성역 (2005 優駿牝馬(GI))",
         "template": "AURA",
         "baseValues": [
-          250,
-          278,
+          216,
+          240,
           31
         ],
         "starMultipliers": [
@@ -11956,7 +11956,7 @@
         "effects": [
           {
             "kind": "HEAL",
-            "value": 74,
+            "value": 64,
             "target": "ALL_ALLIES",
             "radius": 2,
             "maxTargets": 4,
@@ -11964,7 +11964,7 @@
           },
           {
             "kind": "HEAL",
-            "value": 74,
+            "value": 64,
             "target": "ALL_ALLIES",
             "radius": 2,
             "maxTargets": 4,
@@ -11972,7 +11972,7 @@
           },
           {
             "kind": "HEAL",
-            "value": 74,
+            "value": 64,
             "target": "ALL_ALLIES",
             "radius": 2,
             "maxTargets": 4,
@@ -11986,7 +11986,7 @@
           }
         ],
         "vfxKey": "vfx_buff",
-        "description": "[회복 성역] 2칸 안의 아군 최대 4명을 묶고 있던 방해 효과를 풀어 주고, 0.5초 간격으로 74씩 세 번 회복시킵니다. 근거: 2005 優駿牝馬(GI) 1위.",
+        "description": "[회복 성역] 2칸 안의 아군 최대 4명을 묶고 있던 방해 효과를 풀어 주고, 0.5초 간격으로 64씩 세 번 회복시킵니다. 근거: 2005 優駿牝馬(GI) 1위.",
         "choreography": {
           "windup": 0.3,
           "recovery": 0.3,
@@ -12477,14 +12477,14 @@
       "armor": 71,
       "magicResist": 66,
       "attackSpeed": 0.79,
-      "attackRange": 3,
+      "attackRange": 2,
       "moveSpeedHexPerSec": 1.98,
       "critChance": 0.25,
       "critMultiplier": 1.3,
-      "startMana": 10,
+      "startMana": 15,
       "maxMana": 70,
       "traits": [
-        "sashi",
+        "oikomi",
         "middle",
         "triple_crown"
       ],
@@ -12542,7 +12542,7 @@
             "target": "SELF"
           }
         ],
-        "vfxKey": "vfx_dash_sashi",
+        "vfxKey": "vfx_dash_oikomi",
         "description": "[추격 연타] 한 상대에게 붙어 134의 물리 피해를 세 번 몰아치고, 4초 동안 공격속도가 +24.8% 오릅니다. 상대가 먼저 쓰러지면 남은 타격은 다음 상대를 찾아갑니다. 근거: 2013 有馬記念(GI) 1위.",
         "choreography": {
           "windup": 0.45,
@@ -12569,7 +12569,7 @@
         "signatureId": "sig_2008102636",
         "signatureName": "LEGACY · 皐月賞(GI)",
         "archetype": "TURF_MIDDLE_STALKER",
-        "primaryStyle": "sashi",
+        "primaryStyle": "oikomi",
         "bestDistance": "middle",
         "dataConfidence": "MEDIUM",
         "historySummary": {
@@ -13489,7 +13489,7 @@
       "nameEn": "Sakura Chitose O",
       "cost": 2,
       "role": "SUPPORT",
-      "activeS1": false,
+      "activeS1": true,
       "uftRating": 0.4,
       "hp": 700,
       "attackDamage": 53,
@@ -16481,24 +16481,24 @@
       "nameKo": "쿠로후네",
       "nameJa": "クロフネ",
       "nameEn": "Kurofune",
-      "cost": 4,
+      "cost": 3,
       "role": "AD_CARRY",
       "activeS1": true,
       "uftRating": 0.58,
-      "hp": 1320,
-      "attackDamage": 128,
+      "hp": 820,
+      "attackDamage": 62,
       "abilityPower": 100,
-      "armor": 59,
-      "magicResist": 61,
-      "attackSpeed": 0.75,
-      "attackRange": 2,
+      "armor": 47,
+      "magicResist": 49,
+      "attackSpeed": 0.73,
+      "attackRange": 3,
       "moveSpeedHexPerSec": 1.86,
       "critChance": 0.25,
       "critMultiplier": 1.3,
-      "startMana": 15,
+      "startMana": 0,
       "maxMana": 70,
       "traits": [
-        "oikomi",
+        "senko",
         "dirt_champion",
         "heisei_dynasty"
       ],
@@ -16508,14 +16508,14 @@
         "displayName": "쿠로후네 · 거인 절단 (2001 ジャパンカップダート(GI))",
         "template": "SINGLE_EXECUTE",
         "baseValues": [
-          286,
-          318,
+          242,
+          269,
           30
         ],
         "starMultipliers": [
           1,
           1.45,
-          3.6
+          2.2
         ],
         "damageType": "PHYSICAL",
         "targetRule": "LOWEST_HP_PCT_ENEMY",
@@ -16523,7 +16523,7 @@
         "effects": [
           {
             "kind": "DAMAGE",
-            "value": 315,
+            "value": 266,
             "damageType": "PHYSICAL",
             "target": "LOWEST_HP_PCT_ENEMY"
           },
@@ -16535,7 +16535,7 @@
           }
         ],
         "vfxKey": "vfx_execute",
-        "description": "[거인 절단] 가장 지쳐 있는 상대에게 315에 더해 그 상대 최대 체력의 4.5%만큼 물리 피해를 입힙니다. 근거: 2001 ジャパンカップダート(GI) 1위.",
+        "description": "[거인 절단] 가장 지쳐 있는 상대에게 266에 더해 그 상대 최대 체력의 4.5%만큼 물리 피해를 입힙니다. 근거: 2001 ジャパンカップダート(GI) 1위.",
         "choreography": {
           "windup": 0.32,
           "recovery": 0.3,
@@ -16561,7 +16561,7 @@
         "signatureId": "sig_1998110135",
         "signatureName": "LEGACY · NHKマイルC(GI)",
         "archetype": "DUAL_SURFACE_ALLROUNDER",
-        "primaryStyle": "oikomi",
+        "primaryStyle": "senko",
         "bestDistance": "miler",
         "dataConfidence": "HIGH",
         "historySummary": {
@@ -16638,9 +16638,9 @@
           "windup": 0.24,
           "recovery": 0.3,
           "pulseInterval": 0.18,
-          "color": "#7a4a2c",
+          "color": "#3b2a5c",
           "variant": "execution_refund",
-          "accent": "#ffe08a",
+          "accent": "#e8b84b",
           "emblem": 147,
           "label": "마무리 순환",
           "motion": "STRIKE"

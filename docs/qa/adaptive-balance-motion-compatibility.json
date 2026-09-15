@@ -269,8 +269,8 @@
         "displayName": "아그네스 디지털 · 주력 저격 (2001 天皇賞(秋)(GI))",
         "template": "MULTI_SHOT",
         "baseValues": [
-          211,
-          234,
+          244,
+          271,
           31
         ],
         "starMultipliers": [
@@ -284,7 +284,7 @@
         "effects": [
           {
             "kind": "DAMAGE",
-            "value": 286,
+            "value": 330,
             "damageType": "PHYSICAL",
             "target": "HIGHEST_AD_ENEMY"
           },
@@ -298,7 +298,7 @@
           }
         ],
         "vfxKey": "vfx_projectile",
-        "description": "[주력 저격] 가장 위협적인 상대를 노려 286의 물리 피해를 입히고 3초 동안 공격력을 15% 떨어뜨립니다. 근거: 2001 天皇賞(秋)(GI) 1위.",
+        "description": "[주력 저격] 가장 위협적인 상대를 노려 330의 물리 피해를 입히고 3초 동안 공격력을 15% 떨어뜨립니다. 근거: 2001 天皇賞(秋)(GI) 1위.",
         "choreography": {
           "windup": 0.3,
           "recovery": 0.3,
@@ -312,8 +312,8 @@
         }
       },
       "beforeSignature": "3c6c96dada7d38990c58d902a8428f9915c155904a6748d29e67caaa46f1ef34",
-      "skillSignature": "c86a2250a1e1f1aa5fc947d06c91a19d352584da0bb3cf0c92bb787af5ef9469",
-      "rosterAdditionsPass": "2026-09-15 로스터 추가 패치로 코스트가 움직여 수치만 갱신됨. 몸동작 계약은 before와 동일 — docs/qa/roster-additions/cost-skill-compatibility-2026-09-15.json"
+      "skillSignature": "2763983e1e6ec313c454ae73d236d199e3f0842a2c00c4b187bbe1474026fd83",
+      "rosterAdditionsPass": "2026-09-15 로스터 추가 패치: 코스트 재배정으로 스킬 수치만 변경. 몸동작 계약은 동일 — docs/qa/roster-additions/cost-skill-compatibility-2026-09-15.json"
     },
     "agnes_tachyon": {
       "before": {

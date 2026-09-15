@@ -147,13 +147,13 @@
       "index": 11,
       "name": "그래스 원더",
       "pattern": "breach_line",
-      "skillSignature": "3dfa0bbf5b311d42fb3e99dea534c85b76e4c4ff2719e68abde1b4e1562f905f",
+      "skillSignature": "898f5759c57b3a209622444db8b869bd014d3ca5926c10755160008193d1d4ed",
       "referenceRasterSha256": "858e7b0d0fb4557dadf063d2309182799ea2493cba9dd2545225f1f474303c19",
       "decision": "retain",
       "status": "retained",
       "reason": "웅크린 준비 → 전진 달리기 → 낮은 직선 돌파 → 회수가 연결되어 직선 돌진과 일치. 방어 감소는 피격 대상 효과로 표시.",
       "reviewSheetPage": 2,
-      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json",
+      "costBalanceReview": "2026-09-15 로스터 추가 패치: 코스트 재배정으로 스킬 수치만 변경. 몸동작 계약은 동일 — docs/qa/roster-additions/cost-skill-compatibility-2026-09-15.json",
       "copyRevision": "2026-09-13 · 스킬 설명 문장을 경마 표현으로 재작성. 수치·동작 변화 없음."
     },
     "hishi_amazon": {
@@ -173,13 +173,13 @@
       "index": 13,
       "name": "메지로 맥퀸",
       "pattern": "bulwark_circle",
-      "skillSignature": "a3fce7a8a96f6faa616f22db1e3b1d78e6502cc78d1457f14b22def0486ee0de",
+      "skillSignature": "10b0be9e8d14745e72ed50276865da19bfa2f4e5e5f9f6fe8c05c2e402100867",
       "referenceRasterSha256": "ccd08a0f83eb62af28173be0e100bf2804f882794de14122681a6eaaf2ff5c1b",
       "decision": "retain",
       "status": "retained",
       "reason": "안쪽으로 모았다가 양팔을 넓게 펼치는 동작이 주변 방벽 부여에 적합. 지속 보호막 윤곽은 전투 이펙트가 담당.",
       "reviewSheetPage": 2,
-      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json",
+      "costBalanceReview": "2026-09-15 로스터 추가 패치: 코스트 재배정으로 스킬 수치만 변경. 몸동작 계약은 동일 — docs/qa/roster-additions/cost-skill-compatibility-2026-09-15.json",
       "copyRevision": "2026-09-13 · 스킬 설명 문장을 경마 표현으로 재작성. 수치·동작 변화 없음."
     },
     "el_condor_pasa": {
@@ -255,7 +255,7 @@
       "index": 19,
       "name": "아그네스 디지털",
       "pattern": "seeking_bolt",
-      "skillSignature": "c86a2250a1e1f1aa5fc947d06c91a19d352584da0bb3cf0c92bb787af5ef9469",
+      "skillSignature": "2763983e1e6ec313c454ae73d236d199e3f0842a2c00c4b187bbe1474026fd83",
       "referenceRasterSha256": "673f76c0674c066b61f0b0ba94653a4ba501a2c43dd346b11660660d0439a899",
       "decision": "revise",
       "status": "integrated",
@@ -266,7 +266,8 @@
       "previousAugmentPatchSkillSignature": "98807291639a679acce31516e0bce9b9236831be08e183a7e8f86a6f95031ea6",
       "augmentPatchReview": "docs/qa/augment-motion-compatibility.json",
       "balanceCompatibilityReview": "docs/qa/adaptive-balance-motion-compatibility.json",
-      "copyRevision": "2026-09-13 · 스킬 설명 문장을 경마 표현으로 재작성. 수치·동작 변화 없음."
+      "copyRevision": "2026-09-13 · 스킬 설명 문장을 경마 표현으로 재작성. 수치·동작 변화 없음.",
+      "costBalanceReview": "2026-09-15 로스터 추가 패치: 코스트 재배정으로 스킬 수치만 변경. 몸동작 계약은 동일 — docs/qa/roster-additions/cost-skill-compatibility-2026-09-15.json"
     },
     "seiun_sky": {
       "index": 20,
@@ -328,7 +329,7 @@
       "index": 24,
       "name": "마야노 탑건",
       "pattern": "retaliate_storm",
-      "skillSignature": "d7a3643e04280d3be54cfc9503a6c1d71a4a35c6c9ce209ea2cd62457f84bf79",
+      "skillSignature": "5981c1e556abaf1448846334f1c9e953621b4b83a2cb81b909da990ebd87506d",
       "referenceRasterSha256": "f160e09800d71e03fa0ea5b91ff4af8f3631d32882747a572069b58545a94eba",
       "decision": "revise",
       "status": "integrated",
@@ -336,7 +337,7 @@
       "reviewSheetPage": 3,
       "revision": "docs/art-source/motions/skill-revisions-2026-09-11/mayano_top_gun/review.json",
       "runtimeSha256": "a288e1850528788b10dd5367281299bf9ee0dbcda8db10b27f487efad222078d",
-      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json",
+      "costBalanceReview": "2026-09-15 로스터 추가 패치: 코스트 재배정으로 스킬 수치만 변경. 몸동작 계약은 동일 — docs/qa/roster-additions/cost-skill-compatibility-2026-09-15.json",
       "copyRevision": "2026-09-13 · 스킬 설명 문장을 경마 표현으로 재작성. 수치·동작 변화 없음."
     },
     "mihono_bourbon": {
@@ -510,13 +511,13 @@
       "index": 37,
       "name": "카렌짱",
       "pattern": "chain_spark",
-      "skillSignature": "6a776d4e90fe765c785f0e7815cb078efecaeffe563f38baf5d9278ba24a1d7a",
+      "skillSignature": "e6809474e12eda699593039688b7d9f184a62cf2411073080eeb6a6c5d6095a9",
       "referenceRasterSha256": "934e017c0117cc69acd916ca452d3ff2b62682c34696ca62ae68347847d1cbe6",
       "decision": "retain",
       "status": "retained",
       "reason": "집중 뒤 손을 전방으로 내미는 첫 방출이 연쇄 섬광의 출발점과 맞음. 이후 적 사이 전파는 캐릭터 재시전이 아님.",
       "reviewSheetPage": 4,
-      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json",
+      "costBalanceReview": "2026-09-15 로스터 추가 패치: 코스트 재배정으로 스킬 수치만 변경. 몸동작 계약은 동일 — docs/qa/roster-additions/cost-skill-compatibility-2026-09-15.json",
       "copyRevision": "2026-09-13 · 스킬 설명 문장을 경마 표현으로 재작성. 수치·동작 변화 없음."
     },
     "kawakami_princess": {
@@ -710,13 +711,13 @@
       "index": 52,
       "name": "뱀부 메모리",
       "pattern": "disarm_cone",
-      "skillSignature": "69776608ad426b1be18e1d213fe3ff0c85eb1431b3683f6d334074b74bf19830",
+      "skillSignature": "c81b9a3184a2903d5175bdf7ac874d74489f363925a87d29982da6b9b02fed88",
       "referenceRasterSha256": "ffd3dfd188a82b0702d2ede9be56d6654247289bcafe9620614ccf553adb28f8",
       "decision": "retain",
       "status": "retained",
       "reason": "전방 지정에서 열린 손바닥 제지 자세로 전환하여 무장 해제 발동을 표현. 부채꼴 범위는 엔진 이펙트가 명확하게 표시.",
       "reviewSheetPage": 6,
-      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json",
+      "costBalanceReview": "2026-09-15 로스터 추가 패치: 코스트 재배정으로 스킬 수치만 변경. 몸동작 계약은 동일 — docs/qa/roster-additions/cost-skill-compatibility-2026-09-15.json",
       "copyRevision": "2026-09-13 · 스킬 설명 문장을 경마 표현으로 재작성. 수치·동작 변화 없음."
     },
     "biko_pegasus": {
@@ -996,7 +997,7 @@
       "index": 74,
       "name": "데어링 택트",
       "pattern": "crossing_echo",
-      "skillSignature": "b2a4740c04c234957ed008f99c0f941eab5973d55ddafbacd92c5d1a4d3f562d",
+      "skillSignature": "414f0667bf02442516af949d51057eeda74fd83adb73ccbdbf2c85bcea1a082d",
       "referenceRasterSha256": "94df5886343b4fb85daefee992d47a00bc076fd8a7f0dcdc334b83a688cc55ba",
       "decision": "revise",
       "status": "integrated",
@@ -1004,7 +1005,7 @@
       "reviewSheetPage": 8,
       "revision": "docs/art-source/motions/skill-revisions-2026-09-11/daring_tact/review.json",
       "runtimeSha256": "0431aef031821e5d920f942204cd511ce05dcbd237e79793e4ec24d9dbe9e94d",
-      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json",
+      "costBalanceReview": "2026-09-15 로스터 추가 패치: 코스트 재배정으로 스킬 수치만 변경. 몸동작 계약은 동일 — docs/qa/roster-additions/cost-skill-compatibility-2026-09-15.json",
       "copyRevision": "2026-09-13 · 스킬 설명 문장을 경마 표현으로 재작성. 수치·동작 변화 없음."
     },
     "sakura_laurel": {
@@ -1132,7 +1133,7 @@
       "index": 84,
       "name": "메지로 라모누",
       "pattern": "crossing_echo",
-      "skillSignature": "f6b6bd153e3d821c0be277f879373f0e9bc191869348710c44284257be3bda81",
+      "skillSignature": "42f40c12fe64f42a6f9bd49992dbcc040574285567904ee383c057442f2ce943",
       "referenceRasterSha256": "70f07d7b4ce77b74cb5eb4d8871c6d6a485c78618d7fb70b4aa897da27c30bdb",
       "decision": "revise",
       "status": "integrated",
@@ -1140,7 +1141,8 @@
       "reviewSheetPage": 9,
       "revision": "docs/art-source/motions/skill-revisions-2026-09-11/mejiro_ramonu/review.json",
       "runtimeSha256": "6d4b32c7f67a8e1b7edd90ed534d5a4556d3f6990dc07a8a9015417556fb8d78",
-      "copyRevision": "2026-09-13 · 스킬 설명 문장을 경마 표현으로 재작성. 수치·동작 변화 없음."
+      "copyRevision": "2026-09-13 · 스킬 설명 문장을 경마 표현으로 재작성. 수치·동작 변화 없음.",
+      "costBalanceReview": "2026-09-15 로스터 추가 패치: 코스트 재배정으로 스킬 수치만 변경. 몸동작 계약은 동일 — docs/qa/roster-additions/cost-skill-compatibility-2026-09-15.json"
     },
     "aston_machan": {
       "index": 85,
@@ -1174,13 +1176,13 @@
       "index": 87,
       "name": "슈발 그랑",
       "pattern": "frost_front",
-      "skillSignature": "a9bbb43fcea9ecbed243aeaf32200ca7203db93c6cb2bbaa0ce862f35b4adf4f",
+      "skillSignature": "661ff3ef5bbfd2c576afd911a083de7c8167d9dad2157e4ff3b442fa8906e579",
       "referenceRasterSha256": "72c0490ba8f097ddf506de3ce9ea87986779f999887f085c803c67f12ad20549",
       "decision": "retain",
       "status": "retained",
       "reason": "대상 방향 지시 → 집중 → 손바닥으로 제지 → 회수로 범위 제어 발동에 적합. 서리 전파는 지역 이펙트 담당.",
       "reviewSheetPage": 9,
-      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json",
+      "costBalanceReview": "2026-09-15 로스터 추가 패치: 코스트 재배정으로 스킬 수치만 변경. 몸동작 계약은 동일 — docs/qa/roster-additions/cost-skill-compatibility-2026-09-15.json",
       "copyRevision": "2026-09-13 · 스킬 설명 문장을 경마 표현으로 재작성. 수치·동작 변화 없음."
     },
     "vivlos": {
@@ -1439,13 +1441,13 @@
       "index": 107,
       "name": "세자리오",
       "pattern": "sanctuary",
-      "skillSignature": "21f402ee74d0ccbd54855aee74beb3b3a02578af28a94f3bff5237551f1941dc",
+      "skillSignature": "71a9933463639b2af81c4abde989601a0ba55735a82b41cec21fabf5e4286bc0",
       "referenceRasterSha256": "9f333f80edcda93b004dd1ec377b71c0823cc70e99389eee039cdd8db5b52b03",
       "decision": "retain",
       "status": "retained",
       "reason": "모은 손과 열린 팔을 거쳐 안정된 회수로 이어져 정화와 주변 회복의 시전 흐름에 적합.",
       "reviewSheetPage": 11,
-      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json",
+      "costBalanceReview": "2026-09-15 로스터 추가 패치: 코스트 재배정으로 스킬 수치만 변경. 몸동작 계약은 동일 — docs/qa/roster-additions/cost-skill-compatibility-2026-09-15.json",
       "previousAugmentPatchSkillSignature": "bcc4a82b77f7eadbc54934379cf1e5e46837c31483b6df0b46a4e8bc71cf31e3",
       "augmentPatchReview": "docs/qa/augment-motion-compatibility.json",
       "copyRevision": "2026-09-13 · 스킬 설명 문장을 경마 표현으로 재작성. 수치·동작 변화 없음."
@@ -1504,7 +1506,7 @@
       "index": 112,
       "name": "오르페브르",
       "pattern": "pursuit_flurry",
-      "skillSignature": "0c688e9461082c9e819e44851b029ef27646e349495444ce014f937a9862d490",
+      "skillSignature": "153e2b1389481990ffaba43053d50661d73ae9e003145c1e28119ebe4452c8e3",
       "referenceRasterSha256": "8fd9f453d68b9760512e61b921d7ac6ebeaed248a0ff92720c56f717cd876c04",
       "decision": "revise",
       "status": "integrated",
@@ -1512,7 +1514,7 @@
       "reviewSheetPage": 12,
       "revision": "docs/art-source/motions/skill-revisions-2026-09-11/orfevre/review.json",
       "runtimeSha256": "055c34f21c8a4d5499599a76442c0087eb02dbdfc743d7d9c15381d9ab6403e8",
-      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json",
+      "costBalanceReview": "2026-09-15 로스터 추가 패치: 코스트 재배정으로 스킬 수치만 변경. 몸동작 계약은 동일 — docs/qa/roster-additions/cost-skill-compatibility-2026-09-15.json",
       "copyRevision": "2026-09-13 · 스킬 설명 문장을 경마 표현으로 재작성. 수치·동작 변화 없음."
     },
     "gentildonna": {

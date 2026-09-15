@@ -19,12 +19,12 @@
       "nameKo": "쿠로후네",
       "nameJa": "クロフネ",
       "horseId": "H-1998110135",
-      "cost": 4,
-      "runStyle": "oikomi",
-      "styleMatchesSource": false,
+      "cost": 3,
+      "runStyle": "senko",
+      "styleMatchesSource": true,
       "sourcePrimaryStyle": "PACE",
-      "reason": "사용자 지정. 추입 4코스트 후열을 확보한다. 소스 기록은 PACE(선행)이고 각질 적성도 pace S · closer D라 이 지정은 경기 기록과 정면으로 어긋난다. 로스터 공백을 메우기 위한 게임 디자인 결정이며, 기록을 근거로 제시하지 않는다.",
-      "evidenceNote": "10전 10기록 · 주요 승리 01'ジャパンCダート(G1) · 각질 적성 pace S / front B / stalker C / closer D · 더트 A",
+      "reason": "사용자 지정. 처음에는 추입 4코로 넣었으나, 소스 기록이 PACE(선행)이고 각질 적성도 pace S / closer D라 그 지정은 경기 기록과 어긋났다. 선행으로 되돌려 기록과 일치시키고, 평가값 0.58에 맞는 3코스트로 내린다. 비게 되는 추입 4코 자리는 오르페브르가 맡는다.",
+      "evidenceNote": "10전 10기록 · 주요 승리 01'ジャパンCダート(G1) · 각질 적성 pace S / front B / stalker C / closer D · 더트 A · 자동 판정과 지정이 일치한다",
       "nameEn": "Kurofune"
     },
     {

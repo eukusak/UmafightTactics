@@ -146,9 +146,9 @@
       "portraitSha256": "6dfe84965d380726b4286c88852a7e675c8e4af64541a6f1e7522979e4a09597",
       "baselineRuntimeSha256": "858e7b0d0fb4557dadf063d2309182799ea2493cba9dd2545225f1f474303c19",
       "baselinePacking": "docs/art-source/motions/production-144/grass_wonder/packing.json",
-      "skillSignature": "3dfa0bbf5b311d42fb3e99dea534c85b76e4c4ff2719e68abde1b4e1562f905f",
+      "skillSignature": "898f5759c57b3a209622444db8b869bd014d3ca5926c10755160008193d1d4ed",
       "name": "그래스 원더",
-      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json",
+      "costBalanceReview": "2026-09-15 로스터 추가 패치: 코스트 재배정으로 스킬 수치만 변경. 몸동작 계약은 동일 — docs/qa/roster-additions/cost-skill-compatibility-2026-09-15.json",
       "copyRevision": "2026-09-13 · 스킬 설명 문장을 경마 표현으로 재작성. 수치·동작 변화 없음."
     },
     "hishi_amazon": {
@@ -172,9 +172,9 @@
       "portraitSha256": "45fe7d21378d27b3d40c6213ac0a2284c8988aca176c358867d86323cbd80c9d",
       "baselineRuntimeSha256": "ccd08a0f83eb62af28173be0e100bf2804f882794de14122681a6eaaf2ff5c1b",
       "baselinePacking": "docs/art-source/motions/production-144/mejiro_mcqueen/packing.json",
-      "skillSignature": "a3fce7a8a96f6faa616f22db1e3b1d78e6502cc78d1457f14b22def0486ee0de",
+      "skillSignature": "10b0be9e8d14745e72ed50276865da19bfa2f4e5e5f9f6fe8c05c2e402100867",
       "name": "메지로 맥퀸",
-      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json",
+      "costBalanceReview": "2026-09-15 로스터 추가 패치: 코스트 재배정으로 스킬 수치만 변경. 몸동작 계약은 동일 — docs/qa/roster-additions/cost-skill-compatibility-2026-09-15.json",
       "copyRevision": "2026-09-13 · 스킬 설명 문장을 경마 표현으로 재작성. 수치·동작 변화 없음."
     },
     "el_condor_pasa": {
@@ -256,14 +256,15 @@
       "portraitSha256": "b186ade2fafb02ce3f31c20f3272d8d18940359cb19b5e5181f5aae767ef1ae1",
       "baselineRuntimeSha256": "ee9a562de6408ca7c5c77792d28c4f6f848c2e2c323e7778feed5f5ddb7d4bf6",
       "baselinePacking": "docs/art-source/motions/skill-revisions-2026-09-11/agnes_digital/packing.json",
-      "skillSignature": "c86a2250a1e1f1aa5fc947d06c91a19d352584da0bb3cf0c92bb787af5ef9469",
+      "skillSignature": "2763983e1e6ec313c454ae73d236d199e3f0842a2c00c4b187bbe1474026fd83",
       "name": "아그네스 디지털",
       "revision": "docs/art-source/motions/identity-revisions-2026-09-12/agnes_digital/review.json",
       "runtimeSha256": "592b64ce0b84f3539ed09f06e6cabfb4e3e187cf978b566dc4af758d759f5cb0",
       "previousAugmentPatchSkillSignature": "98807291639a679acce31516e0bce9b9236831be08e183a7e8f86a6f95031ea6",
       "augmentPatchReview": "docs/qa/augment-motion-compatibility.json",
       "balanceCompatibilityReview": "docs/qa/adaptive-balance-motion-compatibility.json",
-      "copyRevision": "2026-09-13 · 스킬 설명 문장을 경마 표현으로 재작성. 수치·동작 변화 없음."
+      "copyRevision": "2026-09-13 · 스킬 설명 문장을 경마 표현으로 재작성. 수치·동작 변화 없음.",
+      "costBalanceReview": "2026-09-15 로스터 추가 패치: 코스트 재배정으로 스킬 수치만 변경. 몸동작 계약은 동일 — docs/qa/roster-additions/cost-skill-compatibility-2026-09-15.json"
     },
     "seiun_sky": {
       "decision": "retain",
@@ -325,9 +326,9 @@
       "portraitSha256": "11339902fe0be56205e8a845598e12e9dbac418aff15ff8596a754b5fd96221b",
       "baselineRuntimeSha256": "a288e1850528788b10dd5367281299bf9ee0dbcda8db10b27f487efad222078d",
       "baselinePacking": "docs/art-source/motions/skill-revisions-2026-09-11/mayano_top_gun/packing.json",
-      "skillSignature": "d7a3643e04280d3be54cfc9503a6c1d71a4a35c6c9ce209ea2cd62457f84bf79",
+      "skillSignature": "5981c1e556abaf1448846334f1c9e953621b4b83a2cb81b909da990ebd87506d",
       "name": "마야노 탑건",
-      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json",
+      "costBalanceReview": "2026-09-15 로스터 추가 패치: 코스트 재배정으로 스킬 수치만 변경. 몸동작 계약은 동일 — docs/qa/roster-additions/cost-skill-compatibility-2026-09-15.json",
       "copyRevision": "2026-09-13 · 스킬 설명 문장을 경마 표현으로 재작성. 수치·동작 변화 없음."
     },
     "mihono_bourbon": {
@@ -497,11 +498,11 @@
       "portraitSha256": "966b2f641e7e9af68adadb03f99b98a550bd5cb8b2b0fcbd7216dbfa3bc55aa8",
       "baselineRuntimeSha256": "934e017c0117cc69acd916ca452d3ff2b62682c34696ca62ae68347847d1cbe6",
       "baselinePacking": "docs/art-source/motions/production-144/curren_chan/packing.json",
-      "skillSignature": "6a776d4e90fe765c785f0e7815cb078efecaeffe563f38baf5d9278ba24a1d7a",
+      "skillSignature": "e6809474e12eda699593039688b7d9f184a62cf2411073080eeb6a6c5d6095a9",
       "name": "카렌짱",
       "revision": "docs/art-source/motions/identity-revisions-2026-09-12/curren_chan/review.json",
       "runtimeSha256": "b723a20b754437d6c35ad264775437e92ffa19dc98a7138bf09e91ddc1fcbc28",
-      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json",
+      "costBalanceReview": "2026-09-15 로스터 추가 패치: 코스트 재배정으로 스킬 수치만 변경. 몸동작 계약은 동일 — docs/qa/roster-additions/cost-skill-compatibility-2026-09-15.json",
       "copyRevision": "2026-09-13 · 스킬 설명 문장을 경마 표현으로 재작성. 수치·동작 변화 없음."
     },
     "kawakami_princess": {
@@ -697,12 +698,12 @@
       "portraitSha256": "12b60fe7688427bc175ac53a7dfd367e97a1906daf7fa42afd28c54530dbcd36",
       "baselineRuntimeSha256": "ffd3dfd188a82b0702d2ede9be56d6654247289bcafe9620614ccf553adb28f8",
       "baselinePacking": "docs/art-source/motions/production-144/bamboo_memory/packing.json",
-      "skillSignature": "69776608ad426b1be18e1d213fe3ff0c85eb1431b3683f6d334074b74bf19830",
+      "skillSignature": "c81b9a3184a2903d5175bdf7ac874d74489f363925a87d29982da6b9b02fed88",
       "name": "뱀부 메모리",
       "revision": "docs/art-source/motions/identity-revisions-2026-09-12/bamboo_memory/review.json",
       "runtimeSha256": "2630fe899590288020e4ae9605da4a93ed8209acac9cd29d4fa5f78e77f4cbcf",
       "detailRevision": "Short spiky chestnut hair, blue eyes, thin green headband and green bow; large white central forelock restored.",
-      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json",
+      "costBalanceReview": "2026-09-15 로스터 추가 패치: 코스트 재배정으로 스킬 수치만 변경. 몸동작 계약은 동일 — docs/qa/roster-additions/cost-skill-compatibility-2026-09-15.json",
       "copyRevision": "2026-09-13 · 스킬 설명 문장을 경마 표현으로 재작성. 수치·동작 변화 없음."
     },
     "biko_pegasus": {
@@ -990,11 +991,11 @@
       "portraitSha256": "3e25b1485d03a7c9f991aef9ce88f86831889f8340226f98bbf3beea04a1b488",
       "baselineRuntimeSha256": "0431aef031821e5d920f942204cd511ce05dcbd237e79793e4ec24d9dbe9e94d",
       "baselinePacking": "docs/art-source/motions/skill-revisions-2026-09-11/daring_tact/packing.json",
-      "skillSignature": "b2a4740c04c234957ed008f99c0f941eab5973d55ddafbacd92c5d1a4d3f562d",
+      "skillSignature": "414f0667bf02442516af949d51057eeda74fd83adb73ccbdbf2c85bcea1a082d",
       "name": "데어링 택트",
       "revision": "docs/art-source/motions/identity-revisions-2026-09-12/daring_tact/review.json",
       "runtimeSha256": "4ac5ee725835768739f0c496d1928f900f3aab051262a764830fab3a5415fdd5",
-      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json",
+      "costBalanceReview": "2026-09-15 로스터 추가 패치: 코스트 재배정으로 스킬 수치만 변경. 몸동작 계약은 동일 — docs/qa/roster-additions/cost-skill-compatibility-2026-09-15.json",
       "copyRevision": "2026-09-13 · 스킬 설명 문장을 경마 표현으로 재작성. 수치·동작 변화 없음."
     },
     "sakura_laurel": {
@@ -1139,9 +1140,10 @@
       "portraitSha256": "9bcad1bf76159df6bfac6c8b0eb8ba9eaac266eb13322b51c3b69f9cf259a1a0",
       "baselineRuntimeSha256": "6d4b32c7f67a8e1b7edd90ed534d5a4556d3f6990dc07a8a9015417556fb8d78",
       "baselinePacking": "docs/art-source/motions/skill-revisions-2026-09-11/mejiro_ramonu/packing.json",
-      "skillSignature": "f6b6bd153e3d821c0be277f879373f0e9bc191869348710c44284257be3bda81",
+      "skillSignature": "42f40c12fe64f42a6f9bd49992dbcc040574285567904ee383c057442f2ce943",
       "name": "메지로 라모누",
-      "copyRevision": "2026-09-13 · 스킬 설명 문장을 경마 표현으로 재작성. 수치·동작 변화 없음."
+      "copyRevision": "2026-09-13 · 스킬 설명 문장을 경마 표현으로 재작성. 수치·동작 변화 없음.",
+      "costBalanceReview": "2026-09-15 로스터 추가 패치: 코스트 재배정으로 스킬 수치만 변경. 몸동작 계약은 동일 — docs/qa/roster-additions/cost-skill-compatibility-2026-09-15.json"
     },
     "aston_machan": {
       "decision": "revise",
@@ -1180,9 +1182,9 @@
       "portraitSha256": "e5d2ca8419a61ab41270cb279f483f6076a076ea88394e6987acfd859c6f04d0",
       "baselineRuntimeSha256": "72c0490ba8f097ddf506de3ce9ea87986779f999887f085c803c67f12ad20549",
       "baselinePacking": "docs/art-source/motions/production-144/cheval_grand/packing.json",
-      "skillSignature": "a9bbb43fcea9ecbed243aeaf32200ca7203db93c6cb2bbaa0ce862f35b4adf4f",
+      "skillSignature": "661ff3ef5bbfd2c576afd911a083de7c8167d9dad2157e4ff3b442fa8906e579",
       "name": "슈발 그랑",
-      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json",
+      "costBalanceReview": "2026-09-15 로스터 추가 패치: 코스트 재배정으로 스킬 수치만 변경. 몸동작 계약은 동일 — docs/qa/roster-additions/cost-skill-compatibility-2026-09-15.json",
       "copyRevision": "2026-09-13 · 스킬 설명 문장을 경마 표현으로 재작성. 수치·동작 변화 없음."
     },
     "vivlos": {
@@ -1461,12 +1463,12 @@
       "portraitSha256": "f809bd86a206bdfd904a3de9eee12cc9d8e0a0a6bb5143702d0be0e034494279",
       "baselineRuntimeSha256": "9f333f80edcda93b004dd1ec377b71c0823cc70e99389eee039cdd8db5b52b03",
       "baselinePacking": "docs/art-source/motions/production-144/cesario/packing.json",
-      "skillSignature": "21f402ee74d0ccbd54855aee74beb3b3a02578af28a94f3bff5237551f1941dc",
+      "skillSignature": "71a9933463639b2af81c4abde989601a0ba55735a82b41cec21fabf5e4286bc0",
       "name": "세자리오",
       "revision": "docs/art-source/motions/identity-revisions-2026-09-12/cesario/review.json",
       "runtimeSha256": "db5964df63ae8a7b4eb78183cb5e07bf12844aa293aaeabb6f60078a8cecb285",
       "detailRevision": "Blue bob and white central fringe retained; all visible irises are lavender purple, with the orange iris removed.",
-      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json",
+      "costBalanceReview": "2026-09-15 로스터 추가 패치: 코스트 재배정으로 스킬 수치만 변경. 몸동작 계약은 동일 — docs/qa/roster-additions/cost-skill-compatibility-2026-09-15.json",
       "previousAugmentPatchSkillSignature": "bcc4a82b77f7eadbc54934379cf1e5e46837c31483b6df0b46a4e8bc71cf31e3",
       "augmentPatchReview": "docs/qa/augment-motion-compatibility.json",
       "copyRevision": "2026-09-13 · 스킬 설명 문장을 경마 표현으로 재작성. 수치·동작 변화 없음."
@@ -1531,9 +1533,9 @@
       "portraitSha256": "64fe66d3b719e3eb4b39e1a651d16b9a8b30e7293624d73d8d73e9be3da47daf",
       "baselineRuntimeSha256": "055c34f21c8a4d5499599a76442c0087eb02dbdfc743d7d9c15381d9ab6403e8",
       "baselinePacking": "docs/art-source/motions/skill-revisions-2026-09-11/orfevre/packing.json",
-      "skillSignature": "0c688e9461082c9e819e44851b029ef27646e349495444ce014f937a9862d490",
+      "skillSignature": "153e2b1389481990ffaba43053d50661d73ae9e003145c1e28119ebe4452c8e3",
       "name": "오르페브르",
-      "costBalanceReview": "docs/qa/trait-progression/cost-skill-compatibility.json",
+      "costBalanceReview": "2026-09-15 로스터 추가 패치: 코스트 재배정으로 스킬 수치만 변경. 몸동작 계약은 동일 — docs/qa/roster-additions/cost-skill-compatibility-2026-09-15.json",
       "copyRevision": "2026-09-13 · 스킬 설명 문장을 경마 표현으로 재작성. 수치·동작 변화 없음."
     },
     "gentildonna": {
