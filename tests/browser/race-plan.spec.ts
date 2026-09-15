@@ -83,19 +83,24 @@ test('recorded race battle loads all frame sheets and presents progress without 
  */
 type CallOut={connected:boolean;top:number;bottom:number;height:number;centre:number;fieldMid:number;boardBottom:number;panelTop:number};
 async function phaseCallOut(page:Page):Promise<CallOut>{
-  const banner=page.locator('.race-hud-banner');
-  let box!:CallOut;
+  let box:CallOut|null=null;
+  // page.evaluate, not locator.evaluate: a locator auto-waits for a missing
+  // element and only gives up at the action timeout, so each attempt made
+  // between two call-outs would burn ten seconds of this poll's budget and
+  // leave it about two tries. querySelector answers in a frame either way.
   await expect.poll(async()=>{
-    box=await banner.evaluate((e:HTMLElement):CallOut=>{
+    box=await page.evaluate(():CallOut|null=>{
+      const e=document.querySelector('.race-hud-banner');
+      if(!e)return null;
       const b=e.getBoundingClientRect(),field=document.querySelector('.field-surface')!.getBoundingClientRect();
       const panel=document.querySelector('.battle-lower-hud .battle-damage-panel')!.getBoundingClientRect();
       const cells=Array.from(document.querySelectorAll('.arena-grid polygon'));
       return {connected:e.isConnected,top:b.top,bottom:b.bottom,height:b.height,centre:b.x+b.width/2,
         fieldMid:field.x+field.width/2,boardBottom:cells.reduce((m,c)=>Math.max(m,c.getBoundingClientRect().bottom),0),panelTop:panel.top};
-    }).catch(()=>null) as CallOut;
+    });
     return !!box&&box.connected&&box.height>0;
   },{timeout:25000}).toBe(true);
-  return box;
+  return box!;
 }
 
 test('the phase call-out sits in the strip between the last board row and the damage panel',async({page},testInfo)=>{
@@ -130,29 +135,44 @@ test.describe(()=>{
 test('the phase call-out stays up long enough to read, and fades rather than vanishing',async({page})=>{
   await preparedGame(page,'race-combat');
   await page.getByRole('button',{name:/전투 시작 \(/}).click();
-  const banner=page.locator('.race-hud-banner');
   /**
-   * The measure is the longest UNBROKEN run of samples, not the total: totals
-   * accumulate across the four phase changes, so a short window would reach any
-   * total given enough call-outs. One 1.5s window at 120ms sampling is about
-   * twelve consecutive samples; the 0.6s window this replaced could only ever
-   * reach five, so eight separates them.
+   * Measure the WALL-CLOCK span the call-out stays continuously visible, not a
+   * count of samples. Counting samples silently encodes the sampling rate into
+   * the assertion, so a slow machine fails a correct build.
+   *
+   * Sampling goes through page.evaluate rather than locator.evaluate for the
+   * same reason: a locator auto-waits for a missing element and only gives up
+   * at the action timeout, so every sample taken between two call-outs costs
+   * ten seconds instead of one frame. querySelector just answers.
+   *
+   * battleSpeed defaults to 1, so the window is 1.5 real seconds. The 0.6s this
+   * replaced cannot reach 1.0s at any speed, so that is the bound.
    */
-  const samples:Array<{up:boolean;opacity:number}>=[];
+  const samples:Array<{t:number;up:boolean;opacity:number}>=[];
   const deadline=Date.now()+14000;
-  const longestRun=():number=>{
-    let best=0,run=0;
-    for(const s of samples){ run=s.up&&s.opacity>0?run+1:0; best=Math.max(best,run); }
-    return best;
+  const spans=():number[]=>{
+    const out:number[]=[];let from:number|null=null,last=0;
+    for(const s of samples){
+      const on=s.up&&s.opacity>0;
+      if(on){ if(from===null)from=s.t; last=s.t; }
+      else if(from!==null){ out.push(last-from); from=null; }
+    }
+    if(from!==null)out.push(last-from);
+    return out;
   };
-  while(Date.now()<deadline&&longestRun()<8){
-    samples.push(await banner.evaluate((e:HTMLElement)=>({up:e.isConnected,opacity:Number(getComputedStyle(e).opacity)}))
-      .catch(()=>({up:false,opacity:0})));
-    await page.waitForTimeout(120);
+  const faded=():boolean=>samples.some(s=>s.up&&s.opacity>0.02&&s.opacity<0.98);
+  // Stop as soon as one call-out has been seen through to its end.
+  while(Date.now()<deadline&&!(Math.max(0,...spans())>=1000&&faded())){
+    samples.push({t:Date.now(),...await page.evaluate(()=>{
+      const e=document.querySelector('.race-hud-banner');
+      return e?{up:true,opacity:Number(getComputedStyle(e).opacity)}:{up:false,opacity:0};
+    })});
+    await page.waitForTimeout(100);
   }
-  expect(longestRun(),`samples ${JSON.stringify(samples)}`).toBeGreaterThanOrEqual(8);
+  const longest=Math.max(0,...spans());
+  expect(longest,`spans(ms) ${JSON.stringify(spans())} over ${samples.length} samples`).toBeGreaterThanOrEqual(1000);
   const seen=samples.filter(s=>s.up&&s.opacity>0).map(s=>s.opacity);
   expect(Math.max(...seen)).toBeCloseTo(1,1);
   // The tail ramps down, so at least one sample sits strictly between.
-  expect(seen.some(o=>o>0.02&&o<0.98)).toBe(true);
+  expect(faded(),`opacities ${JSON.stringify(seen)}`).toBe(true);
 });
