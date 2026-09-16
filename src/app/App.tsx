@@ -7,6 +7,7 @@ const OnlineScreen = lazy(() => import('../components/screens/OnlineScreen').the
 const BattleScreen = lazy(() => import('../components/screens/BattleScreen').then(m => ({ default: m.BattleScreen })));
 const CollectionScreen = lazy(() => import('../components/screens/CollectionScreen').then(m => ({ default: m.CollectionScreen })));
 const MotionScreen = lazy(() => import('../components/screens/MotionScreen').then(m => ({ default: m.MotionScreen })));
+const GuideScreen = lazy(() => import('../components/screens/GuideScreen').then(m => ({ default: m.GuideScreen })));
 import {
   MainMenu, MatchSetup, ResultScreen, SettingsScreen, TitleScreen,
 } from '../components/screens/MenuScreens';
@@ -78,6 +79,7 @@ export function App(): JSX.Element {
     case 'BATTLE': content = <BattleScreen />; break;
     case 'COLLECTION': content = <CollectionScreen />; break;
     case 'MOTION': content = <MotionScreen />; break;
+    case 'GUIDE': content = <GuideScreen />; break;
     case 'SETTINGS': content = <SettingsScreen />; break;
     case 'RESULT': content = <ResultScreen />; break;
     default: content = <TitleScreen />;

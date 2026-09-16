@@ -29,7 +29,7 @@ import type { TraitId } from '../game/engine/types';
 
 export type Screen =
   | 'BOOT' | 'TITLE' | 'MAIN_MENU' | 'MATCH_SETUP' | 'BATTLE' | 'DRAFT'
-  | 'AUGMENT' | 'COLLECTION' | 'SETTINGS' | 'RESULT' | 'ONLINE' | 'MOTION';
+  | 'AUGMENT' | 'COLLECTION' | 'SETTINGS' | 'RESULT' | 'ONLINE' | 'MOTION' | 'GUIDE';
 
 export type Settings = {
   resolution: 'auto' | '1280x720' | '1600x900' | '1920x1080' | '2560x1440';
