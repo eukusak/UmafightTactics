@@ -102,7 +102,7 @@ export function PrepBoard({ onUnitContext }: { onUnitContext: (e: React.MouseEve
 }
 
 /** Phaser-hosted playback of the recorded battle frames. */
-export function BattleBoard({ onReady }: { onReady: () => void }): JSX.Element {
+export function BattleBoard({ onReady, onIntroDone, onLoadProgress }: { onReady: () => void; onIntroDone?: () => void; onLoadProgress?: (fraction: number) => void }): JSX.Element {
   const frames = useGameStore((s) => s.viewedBattleFrames());
   const complete = useGameStore((s) => s.battleComplete);
   const speed = useGameStore((s) => s.settings.battleSpeed);
@@ -113,7 +113,7 @@ export function BattleBoard({ onReady }: { onReady: () => void }): JSX.Element {
   useEffect(() => {
     if (!hostRef.current || gameRef.current) return;
     const state = useGameStore.getState();
-    const scene = new BattleScene(frames ?? [], state.settings.showDamageNumbers, onReady, () => {}, state.viewedPlayer()?.id ?? 'p1', state.onlinePlayerId ? undefined : () => useGameStore.getState().battleTime);
+    const scene = new BattleScene(frames ?? [], state.settings.showDamageNumbers, onReady, () => {}, state.viewedPlayer()?.id ?? 'p1', state.onlinePlayerId ? undefined : () => useGameStore.getState().battleTime, onIntroDone, onLoadProgress);
     sceneRef.current = scene;
     gameRef.current = new ManagedGame({
       type: Phaser.AUTO,

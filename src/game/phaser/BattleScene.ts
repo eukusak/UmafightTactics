@@ -50,6 +50,18 @@ type Actor = {
 };
 const tint = (value: string): number => parseInt(value.replace('#', ''), 16);
 
+/**
+ * Entrance timing, in real milliseconds.
+ *
+ * STEP is the gap between two units landing and LAND is how long one takes to
+ * arrive, so a small board reads as a deliberate roll-call. TOTAL caps the
+ * stagger: a nine-a-side board would otherwise spend 2.7s introducing itself
+ * before a round the player has already committed to.
+ */
+const INTRO_STEP_MS = 150;
+const INTRO_LAND_MS = 260;
+const INTRO_TOTAL_MS = 1200;
+
 export class BattleScene extends Phaser.Scene {
   private frames: BattleFrame[];
   private frameIndex = 0;
@@ -70,14 +82,26 @@ export class BattleScene extends Phaser.Scene {
   private dives = new Set<string>();
   private effects: Array<{ start: number; duration: number; object: Phaser.GameObjects.GameObject; update: (progress: number) => void }> = [];
   private projectiles: Array<{ image: Phaser.GameObjects.Arc; source: string; target: string; start: number; end: number; x: number; y: number }> = [];
+  /** Sheets this recording does not reference, fetched after the battle is on screen. */
+  private deferredRaceArt: string[] = [];
+  /**
+   * The entrance. Both sides land one unit at a time before the clock starts,
+   * so the player sees the board they are about to watch instead of joining a
+   * fight already in progress. Real time drives it, not playback time, because
+   * playback is deliberately held at zero until this finishes.
+   */
+  private introAt = -1;
+  private introOrder: string[] = [];
+  private introSent = false;
 
-  constructor(frames: BattleFrame[] = [], showNumbers = true, private onReady: () => void = () => {}, private onTime: (time: number) => void = () => {}, private humanId = 'p1', private matchClock?: () => number) {
+  constructor(frames: BattleFrame[] = [], showNumbers = true, private onReady: () => void = () => {}, private onTime: (time: number) => void = () => {}, private humanId = 'p1', private matchClock?: () => number, private onIntroDone: () => void = () => {}, private onLoadProgress: (fraction: number) => void = () => {}) {
     super({ key: 'BattleScene' });
     this.frames = frames;
     this.showNumbers = showNumbers;
   }
 
   preload(): void {
+    this.load.on('progress', (fraction: number) => this.onLoadProgress(fraction));
     for (const status of Object.values(STATUS_PRESENTATION)) {
       const url = status.icon ? assetUrl(`status/${status.icon}.png`) : null;
       if (url) this.load.image(`status:${status.icon}`, url);
@@ -105,12 +129,24 @@ export class BattleScene extends Phaser.Scene {
       if (event.type === 'DAMAGE' && event.isSkill && event.damageType === 'PHYSICAL')
         raceKeys.add('hit_physical_t' + ((event.physicalRatio ?? 1) >= 2 ? 3 : (event.physicalRatio ?? 1) >= 1.5 ? 2 : 1));
     }
-    // Streaming records may not yet include a later proc. These compact sheets
-    // are bounded; large weather/banner sheets are kept out of the WebGL atlas.
-    for (const key of Object.keys(RACE_ART)) if (/^(style_|dive_|hit_physical_|vfx_)/.test(key)) raceKeys.add(key);
     for (const key of raceKeys) {
       const a = RACE_ART[key], url = a && assetUrl(a.file);
       if (url) this.load.spritesheet(key, url, { frameWidth: a.w, frameHeight: a.h });
+    }
+    /**
+     * Everything above is what this recording actually references. The rest of
+     * the style/dive/hit/vfx sheets used to be queued here too, because a
+     * streaming record may add a proc the frames did not mention yet — but that
+     * is 24 sheets and 8.6MB in front of a battle the player is already
+     * watching, and every use site guards on `textures.exists`, so a sheet that
+     * has not arrived degrades to a fallback rather than breaking.
+     *
+     * So they load after `create`, off the critical path. `deferredRaceArt`
+     * holds the list; `loadDeferredArt` starts it once the scene is running.
+     */
+    for (const key of Object.keys(RACE_ART)) {
+      if (!/^(style_|dive_|hit_physical_|vfx_)/.test(key) || raceKeys.has(key)) continue;
+      this.deferredRaceArt.push(key);
     }
     const vfx = new Set([...ids].map((id) => getUnitDef(id).skill.vfxKey).concat(['vfx_heal', 'vfx_shield', 'vfx_buff', 'vfx_race_gate', 'vfx_race_late_ring', 'vfx_race_last3f']));
     for (const key of vfx) {
@@ -122,6 +158,71 @@ export class BattleScene extends Phaser.Scene {
   create(): void {
     this.ready = true;
     this.tweens.timeScale = this.speed;
+    this.loadDeferredArt();
+  }
+
+  /** Reveal everything at once and report the entrance finished. */
+  private skipIntro(): void {
+    for (const actor of this.actors.values()) actor.container.setAlpha(1).setVisible(true);
+    this.introOrder = [];
+    if (!this.introSent) { this.introSent = true; this.onIntroDone(); }
+  }
+
+  /**
+   * Order the entrance. Units land back row first with the player's side
+   * leading each pair, so the reveal reads as two teams taking the field
+   * rather than an arbitrary sequence. Board order is stable, so this is
+   * deterministic without drawing a single random number.
+   */
+  private planIntro(frame: BattleFrame): string[] {
+    const rank = (u: Snapshot): number => {
+      const own = u.id.startsWith(`${this.humanId}#`) ? 0 : 1;
+      return own + (u.r * 100 + u.q) * 2;
+    };
+    return [...frame.units].sort((a, b) => rank(a) - rank(b) || a.id.localeCompare(b.id)).map((u) => u.id);
+  }
+
+  /**
+   * Drive the entrance from real milliseconds, because playback time is held
+   * at zero until it finishes.
+   *
+   * Only container alpha is animated. The per-frame update writes position,
+   * depth and scale from the board projection, and every effect in the scene
+   * reads `container.scaleX` as its perspective factor — so animating scale
+   * here would both be clobbered on the next tick and mis-size anything that
+   * fired during the entrance. Alpha is the one channel nothing else owns.
+   */
+  private runIntro(now: number): void {
+    if (this.introSent) return;
+    if (this.reducedMotion) { this.skipIntro(); return; }
+    const count = Math.max(1, this.introOrder.length);
+    const step = Math.min(INTRO_STEP_MS, INTRO_TOTAL_MS / count);
+    const elapsed = now - this.introAt;
+    let landed = 0;
+    for (let i = 0; i < this.introOrder.length; i++) {
+      const actor = this.actors.get(this.introOrder[i]);
+      if (!actor) { landed += 1; continue; }
+      const progress = Phaser.Math.Clamp((elapsed - i * step) / INTRO_LAND_MS, 0, 1);
+      actor.container.setVisible(progress > 0).setAlpha(progress);
+      if (progress >= 1) landed += 1;
+    }
+    if (landed < this.introOrder.length) return;
+    this.skipIntro();
+  }
+
+  /**
+   * Fetch the unreferenced race sheets in the background. The scene is already
+   * running, so this competes with nothing the player is waiting on, and each
+   * sheet becomes usable the moment it lands.
+   */
+  private loadDeferredArt(): void {
+    if (!this.deferredRaceArt.length) return;
+    for (const key of this.deferredRaceArt) {
+      const a = RACE_ART[key], url = a && assetUrl(a.file);
+      if (url && !this.textures.exists(key)) this.load.spritesheet(key, url, { frameWidth: a.w, frameHeight: a.h });
+    }
+    this.deferredRaceArt = [];
+    this.load.start();
   }
 
   playBattle(frames: BattleFrame[], speed = 1, time = 0): void {
@@ -138,6 +239,9 @@ export class BattleScene extends Phaser.Scene {
     this.effects.forEach((e) => e.object.destroy()); this.effects = [];
     this.projectiles.forEach((p) => p.image.destroy()); this.projectiles = [];
     this.started = true;
+    this.introAt = -1;
+    this.introOrder = [];
+    this.introSent = false;
     for (const a of this.actors.values()) a.container.destroy();
     this.actors.clear();
   }
@@ -145,6 +249,7 @@ export class BattleScene extends Phaser.Scene {
   streamFrames(frames: BattleFrame[], time: number): void {
     if (!this.started) this.playBattle(frames, 1, Math.max(0, time - .2));
     this.streaming = true;
+    this.skipIntro();
     this.frames = frames;
     const latest = frames.at(-1)?.t ?? 0;
     if (latest - this.playbackTime > .8) this.playbackTime = Math.max(0, latest - .2);
@@ -200,6 +305,13 @@ export class BattleScene extends Phaser.Scene {
       projectile.image.setPosition(Phaser.Math.Linear(projectile.x, target.container.x, t), Phaser.Math.Linear(projectile.y, target.container.y - 38 * target.container.scaleX, t) - Math.sin(t * Math.PI) * 12);
       return true;
     });
+    if (this.introAt < 0 && !this.introSent && !this.streaming && this.actors.size) {
+      this.introOrder = this.planIntro(frame);
+      this.introAt = _time;
+      for (const actor of this.actors.values()) actor.container.setVisible(false).setAlpha(0);
+    }
+    // After the projection has written position, depth and scale for this tick.
+    if (this.introAt >= 0) this.runIntro(_time);
     if (!this.readySent) { this.readySent = true; this.onReady(); }
   }
 

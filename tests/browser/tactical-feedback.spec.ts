@@ -59,7 +59,16 @@ test('battle playback releases attack, impact and skill audio; mute stops new vo
  });
  await preparedGame(page,'cutin-hud');
  await page.getByRole('button',{name:/전투 시작 \(/}).click();
- await expect.poll(()=>page.evaluate(()=>(window as unknown as {audioVoices:number}).audioVoices)).toBeGreaterThan(8);
+ /**
+  * Count from when the battle starts, not from the click. Starting a battle
+  * now loads the arena and walks both sides on before the clock moves, so a
+  * budget measured from the button is mostly spent on a loading screen that
+  * has no audio to release — on a slow runner this reached exactly 8 of the 9
+  * voices it wants. The bound is unchanged; only the starting line moved to
+  * where the playback it is measuring actually begins.
+  */
+ await page.locator('.race-hud-slot').waitFor({state:'attached'});
+ await expect.poll(()=>page.evaluate(()=>(window as unknown as {audioVoices:number}).audioVoices),{timeout:15000}).toBeGreaterThan(8);
  await page.screenshot({path:info.outputPath('battle-impact-feedback.png')});
  await page.getByRole('button',{name:'전체 음소거',exact:true}).click();
  const before=await page.evaluate(()=>(window as unknown as {audioVoices:number}).audioVoices);

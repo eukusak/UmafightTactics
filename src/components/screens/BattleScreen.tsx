@@ -1,6 +1,9 @@
 import { FormationFeedback } from '../FormationFeedback';
 import { BattleAudio } from '../BattleAudio';
 import { BattleMatchup } from '../BattleMatchup';
+import { BattleLoading } from '../BattleLoading';
+import { warmAssets } from '../../game/ui/warm-assets';
+import { battleArtPlan } from '../../game/ui/battle-art-plan';
 /** The main play screen: prep, battle playback and all HUD panels. */
 import { useCallback, useEffect, useState } from 'react';
 import { useGameStore } from '../../store/gameStore';
@@ -50,12 +53,41 @@ export function BattleScreen(): JSX.Element | null {
   const showResult = useGameStore((s) => s.battleComplete);
   const [arenaReady, setArenaReady] = useState(false);
   const onArenaReady = useCallback(() => setArenaReady(true), []);
-  useEffect(() => { setArenaReady(false); }, [battleRunning, spectating]);
+  /**
+   * The clock used to start the moment the battle did, while the arena was
+   * still downloading the sheets it needed to draw it. On a 4Mbps connection
+   * that was measured at 21.5s against an ~18s battle — the recording was over
+   * before it was visible, which is why a fight appeared to be joined
+   * mid-way with only the effects left.
+   *
+   * `introDone` is the real gate now: assets in, both sides walked on, then
+   * time moves. Online is unaffected — its clock comes from the server and is
+   * already excluded below.
+   */
+  const [introDone, setIntroDone] = useState(false);
+  const onIntroDone = useCallback(() => setIntroDone(true), []);
+  const [loadProgress, setLoadProgress] = useState(0);
+  const onLoadProgress = useCallback((fraction: number) => setLoadProgress(fraction), []);
+  useEffect(() => {
+    setArenaReady(false); setIntroDone(false); setLoadProgress(0);
+  }, [battleRunning, spectating]);
+  /**
+   * The entrance now sits in front of the clock, so a path that never reports
+   * it finished would freeze the battle outright — worse than the late start
+   * it replaces. The scene caps the sequence at INTRO_TOTAL_MS + one landing,
+   * so anything past a couple of seconds means the report was lost rather than
+   * slow, and the battle should just begin.
+   */
+  useEffect(() => {
+    if (!battleRunning || online || !arenaReady || introDone) return;
+    const timer = window.setTimeout(() => setIntroDone(true), 2500);
+    return () => window.clearTimeout(timer);
+  }, [battleRunning, online, arenaReady, introDone]);
 
   // One match clock survives scouting switches; a short enemy battle cannot
   // settle the player’s longer fight early.
   useEffect(() => {
-    if (!battleRunning || online) return;
+    if (!battleRunning || online || !introDone) return;
     let last = performance.now();
     const timer = window.setInterval(() => {
       const now = performance.now(), game = useGameStore.getState();
@@ -67,7 +99,22 @@ export function BattleScreen(): JSX.Element | null {
       if (time >= end) game.completeBattle();
     }, 50);
     return () => window.clearInterval(timer);
-  }, [battleRunning, online]);
+  }, [battleRunning, online, introDone]);
+
+  /**
+   * Warm the coming battle's art while the player shops.
+   *
+   * Re-runs whenever the board, bench or shop changes, and `warmAssets` skips
+   * anything already fetched, so a drag costs one new sheet rather than the
+   * whole plan again. It is aborted the moment prep ends, so a battle never
+   * waits behind a speculative download.
+   */
+  useEffect(() => {
+    if (battleRunning || !human) return;
+    const controller = new AbortController();
+    void warmAssets(battleArtPlan(human), controller.signal);
+    return () => controller.abort();
+  }, [battleRunning, human]);
 
   const onUnitContext = useCallback((e: React.MouseEvent, unit: UnitInstance) => {
     e.preventDefault();
@@ -133,7 +180,8 @@ export function BattleScreen(): JSX.Element | null {
         <FormationFeedback />
         {spectating && <div className="scouting-banner" role="status">{viewed?.name} · {battleRunning ? "전투 관전" : "필드 정찰"} <button onClick={() => useGameStore.getState().inspectPlayer(null)}>내 필드로 돌아가기</button></div>}
         {(!battleRunning || !arenaReady) && <PrepBoard onUnitContext={onUnitContext} />}
-        {battleRunning && (!online || !!frames?.length) && <BattleBoard key={`${battleId ?? 'solo'}:${spectating ?? human.id}`} onReady={onArenaReady} />}
+        {battleRunning && (!online || !!frames?.length) && <BattleBoard key={`${battleId ?? 'solo'}:${spectating ?? human.id}`} onReady={onArenaReady} onIntroDone={onIntroDone} onLoadProgress={onLoadProgress} />}
+        {battleRunning && !arenaReady && <BattleLoading progress={loadProgress} />}
         {battleRunning && arenaReady && <BattleInspectTargets />}
         {battleRunning && arenaReady && <div className="race-hud-slot"><RaceProgressHud /></div>}
         {(!battleRunning || arenaReady) && <BattleTelemetry />}
