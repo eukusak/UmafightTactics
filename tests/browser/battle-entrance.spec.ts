@@ -8,20 +8,29 @@ const clock = (page: Page) => page.evaluate(() => {
 });
 
 test('the battle waits for the arena instead of starting behind it', async ({ page }) => {
+  // Deliberately slow: it has to load an arena over a throttled line to have
+  // anything to measure. The default per-test budget is 60s, and a CI runner
+  // is slower than a laptop, so it declares its own rather than dying with a
+  // bare timeout that says nothing about the behaviour under test.
+  test.slow();
   await preparedGame(page, 'race-combat');
 
   /**
    * The regression this guards: the clock used to advance from the moment the
    * battle started, while Phaser was still downloading the sheets needed to
-   * draw it — measured at 21.5s on a 4Mbps line against an ~18s battle, so the
-   * recording could be over before it was visible. Throttling makes the window
-   * wide enough to sample; the assertion is that no battle time is spent
-   * before the arena can show it.
+   * draw it. Sampled during a load with the gate removed, battleTime reached
+   * 7.45s of an 18.05s recording before anything was on screen.
+   *
+   * Throttling only widens that window so it can be sampled reliably on any
+   * machine. 4Mbps puts the load around ten seconds here — long enough that an
+   * ungated clock is unmistakably past the bound, short enough to stay well
+   * inside the budget. The earlier 700kbps left the test itself timing out,
+   * which proves nothing about the product.
    */
   const cdp = await page.context().newCDPSession(page);
   await cdp.send('Network.enable');
   await cdp.send('Network.emulateNetworkConditions', {
-    offline: false, latency: 100, downloadThroughput: 700 * 1024 / 8, uploadThroughput: 700 * 1024 / 8,
+    offline: false, latency: 80, downloadThroughput: 4 * 1024 * 1024 / 8, uploadThroughput: 4 * 1024 * 1024 / 8,
   });
 
   await page.getByRole('button', { name: /전투 시작 \(/ }).click();
@@ -30,7 +39,7 @@ test('the battle waits for the arena instead of starting behind it', async ({ pa
   await expect(page.locator('.battle-loading')).toBeVisible();
   expect(await clock(page)).toBe(-1);
 
-  await page.locator('.race-hud-slot').waitFor({ state: 'attached', timeout: 240000 });
+  await page.locator('.race-hud-slot').waitFor({ state: 'attached', timeout: 90000 });
   await expect(page.locator('.battle-loading')).toHaveCount(0);
 
   // The first reading once the arena exists must be the start of the battle,
