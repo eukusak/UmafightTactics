@@ -119,15 +119,27 @@ function magnitude(effect: EffectDef): string {
   }
 }
 
-/** One human line per effect, always carrying the real number. */
-export function describeEffects(node: RacePlanNode): string[] {
-  const lines = node.effects.map((effect) => {
+/**
+ * One human line per effect, always carrying the real number.
+ *
+ * The race guide describes 마장·페이스·날씨·특례 from the same definitions the
+ * engine applies, so it shares this formatter with the plan cards rather than
+ * restating the effects in prose: a wording that lives in two places is a
+ * wording that eventually disagrees with itself.
+ */
+export function describeEffectList(effects: readonly EffectDef[]): string[] {
+  return effects.map((effect) => {
     const when = triggerLabel(effect.trigger);
     const what = magnitude(effect);
     const duration = effect.duration ? `, ${effect.duration}초` : '';
     const once = effect.oncePerCombat ? ' (전투당 1회)' : '';
     return `${when ? `${when} ` : ''}${what}${duration}${once}`.trim();
   });
+}
+
+/** The same lines for a plan node, plus its resource and cooldown footer. */
+export function describeEffects(node: RacePlanNode): string[] {
+  const lines = describeEffectList(node.effects);
 
   if (node.resource) {
     const r = node.resource;

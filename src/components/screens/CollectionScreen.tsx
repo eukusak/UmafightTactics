@@ -8,6 +8,7 @@ import { getTrait } from '../../game/engine/traits/trait-defs';
 import { ROLE_LABELS } from '../../game/ui/palette';
 import { Portrait, costVar, RoleChip, TraitChip } from '../common';
 import type { UnitDef } from '../../game/engine/types';
+import { ItemCodex } from '../ItemCodex';
 
 export function CollectionScreen(): JSX.Element {
   const setScreen = useGameStore((s) => s.setScreen);
@@ -24,6 +25,9 @@ export function CollectionScreen(): JSX.Element {
   const [distance, setDistance] = useState('all');
   const traitOptions = [...new Set(ALL_UNITS.flatMap(u => [...u.traits, ...SEASONS.flatMap(s => s.unitTraits[u.id] ? [s.unitTraits[u.id]] : [])]))].filter(id => !['nige', 'senko', 'sashi', 'oikomi', 'sprinter', 'miler', 'middle', 'stayer', 'dirt_champion', 'all_rounder'].includes(id));
   const [selected, setSelected] = useState<UnitDef | null>(null);
+  // Units stay the default: the codex button counts the roster, and the browser
+  // suite opens straight onto the unit grid.
+  const [tab, setTab] = useState<'UNITS' | 'ITEMS'>('UNITS');
 
   const filtered = useMemo(() => ALL_UNITS.filter((u) => {
     if (query && !u.nameKo.includes(query) && !u.nameEn.toLowerCase().includes(query.toLowerCase())) return false;
@@ -39,69 +43,77 @@ export function CollectionScreen(): JSX.Element {
     <div className="collection-screen" style={{ position: 'absolute', inset: 0, display: 'flex', flexDirection: 'column' }}>
       <div className="hud-top">
         <h2 style={{ margin: 0, fontSize: 24 }}>도감</h2>
-        <span className="muted">{filtered.length} / {ALL_UNITS.length}명</span>
+        <div className="codex-tabs" role="tablist">
+          <button role="tab" aria-selected={tab === 'UNITS'} className={tab === 'UNITS' ? 'active' : ''}
+            onClick={() => setTab('UNITS')}>기물</button>
+          <button role="tab" aria-selected={tab === 'ITEMS'} className={tab === 'ITEMS' ? 'active' : ''}
+            onClick={() => setTab('ITEMS')}>아이템</button>
+        </div>
+        {tab === 'UNITS' && <span className="muted">{filtered.length} / {ALL_UNITS.length}명</span>}
         <button className="btn-ghost" style={{ marginLeft: 'auto' }}
           onClick={() => setScreen(match ? 'BATTLE' : 'MAIN_MENU')}>
           돌아가기
         </button>
       </div>
 
-      <div className="filters" style={{ marginTop: 84 }}>
-        <select aria-label="특성" value={faction} onChange={e => setFaction(e.target.value)}><option value="all">특성 전체</option>{traitOptions.map(id => <option key={id} value={id}>{getTrait(id).name}</option>)}</select>
-        <input placeholder="이름 검색" value={query} onChange={(e) => setQuery(e.target.value)} />
-        <select value={cost} onChange={(e) => setCost(e.target.value)}>
-          <option value="all">코스트 전체</option>
-          {[1, 2, 3, 4, 5].map((c) => <option key={c} value={c}>{c}코</option>)}
-        </select>
-        <select value={role} onChange={(e) => setRole(e.target.value)}>
-          <option value="all">역할 전체</option>
-          {Object.entries(ROLE_LABELS).map(([k, v]) => <option key={k} value={k}>{v}</option>)}
-        </select>
-        <select value={style} onChange={(e) => setStyle(e.target.value)}>
-          <option value="all">각질 전체</option>
-          {['nige', 'senko', 'sashi', 'oikomi'].map((s) =>
-            <option key={s} value={s}>{getTrait(s as never).name}</option>)}
-        </select>
-        <select value={distance} onChange={(e) => setDistance(e.target.value)}>
-          <option value="all">거리/주로 전체</option>
-          {['sprinter', 'miler', 'middle', 'stayer', 'dirt_champion', 'all_rounder'].map((s) =>
-            <option key={s} value={s}>{getTrait(s as never).name}</option>)}
-        </select>
+      {tab === 'UNITS' ? <>
+        <div className="filters" style={{ marginTop: 84 }}>
+          <select aria-label="특성" value={faction} onChange={e => setFaction(e.target.value)}><option value="all">특성 전체</option>{traitOptions.map(id => <option key={id} value={id}>{getTrait(id).name}</option>)}</select>
+          <input placeholder="이름 검색" value={query} onChange={(e) => setQuery(e.target.value)} />
+          <select value={cost} onChange={(e) => setCost(e.target.value)}>
+            <option value="all">코스트 전체</option>
+            {[1, 2, 3, 4, 5].map((c) => <option key={c} value={c}>{c}코</option>)}
+          </select>
+          <select value={role} onChange={(e) => setRole(e.target.value)}>
+            <option value="all">역할 전체</option>
+            {Object.entries(ROLE_LABELS).map(([k, v]) => <option key={k} value={k}>{v}</option>)}
+          </select>
+          <select value={style} onChange={(e) => setStyle(e.target.value)}>
+            <option value="all">각질 전체</option>
+            {['nige', 'senko', 'sashi', 'oikomi'].map((s) =>
+              <option key={s} value={s}>{getTrait(s as never).name}</option>)}
+          </select>
+          <select value={distance} onChange={(e) => setDistance(e.target.value)}>
+            <option value="all">거리/주로 전체</option>
+            {['sprinter', 'miler', 'middle', 'stayer', 'dirt_champion', 'all_rounder'].map((s) =>
+              <option key={s} value={s}>{getTrait(s as never).name}</option>)}
+          </select>
 
-      </div>
+        </div>
 
-      <div className="collection-grid scroll">
-        {filtered.map((u) => (
-          <div
-            key={u.id}
-            className={`collection-card${available.has(u.id) ? '' : ' inactive'}`}
-            style={{ borderColor: costVar(u.cost) }}
-            onClick={() => setSelected(u)}
-          >
-            <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
-              <div className="token" style={{ width: 42, height: 42, fontSize: 18, border: `3px solid ${costVar(u.cost)}` }}>
-                <Portrait lazy id={u.id} name={u.nameKo} size={74} />
+        <div className="collection-grid scroll">
+          {filtered.map((u) => (
+            <div
+              key={u.id}
+              className={`collection-card${available.has(u.id) ? '' : ' inactive'}`}
+              style={{ borderColor: costVar(u.cost) }}
+              onClick={() => setSelected(u)}
+            >
+              <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+                <div className="token" style={{ width: 42, height: 42, fontSize: 18, border: `3px solid ${costVar(u.cost)}` }}>
+                  <Portrait lazy id={u.id} name={u.nameKo} size={74} />
+                </div>
+                <div style={{ minWidth: 0 }}>
+                  <div style={{ fontWeight: 700, fontSize: 14, whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
+                    {u.nameKo}
+                  </div>
+                  <div className="muted" style={{ fontSize: 11 }}>
+                    {u.cost}코 · {SEASONS.filter(s => s.unitIds.includes(u.id)).map(s => s.id.toUpperCase()).join(' / ')}
+                  </div>
+                </div>
               </div>
-              <div style={{ minWidth: 0 }}>
-                <div style={{ fontWeight: 700, fontSize: 14, whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
-                  {u.nameKo}
-                </div>
-                <div className="muted" style={{ fontSize: 11 }}>
-                  {u.cost}코 · {SEASONS.filter(s => s.unitIds.includes(u.id)).map(s => s.id.toUpperCase()).join(' / ')}
-                </div>
+              <div style={{ display: 'flex', gap: 4, flexWrap: 'wrap', marginTop: 8 }}>
+                {getUnitTraits(u.id, seasonId).map((t) => (
+                  <span key={t} className="pill" style={{ fontSize: 10, padding: '1px 6px' }}>
+                    {getTrait(t).name}
+                  </span>
+                ))}
               </div>
             </div>
-            <div style={{ display: 'flex', gap: 4, flexWrap: 'wrap', marginTop: 8 }}>
-              {getUnitTraits(u.id, seasonId).map((t) => (
-                <span key={t} className="pill" style={{ fontSize: 10, padding: '1px 6px' }}>
-                  {getTrait(t).name}
-                </span>
-              ))}
-            </div>
-          </div>
-        ))}
-      </div>
+          ))}
+        </div>
 
+      </> : <ItemCodex />}
       {selected && (
         <div className="overlay" onClick={() => setSelected(null)}>
           <div className="overlay-card" style={{ maxWidth: 640 }} onClick={(e) => e.stopPropagation()}>
